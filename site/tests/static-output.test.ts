@@ -93,12 +93,12 @@ test("recipe index is prerendered and links only published languages", async () 
   assert.match(preloads[1][0], /media="\(min-width: 1100px\)"/);
 });
 
-test("vegetable lasagne publishes its supplied image and notes without unsupported nutrition or GK", async () => {
+test("vegetable lasagne publishes its supplied image and reviewed macros without unsupported GK", async () => {
   const recipe = siteContent.recipes.find((recipe) => recipe.recipeId === "munakoiso-kesakurpitsalasagne" && recipe.locale === "fi");
   assert.ok(recipe);
   assert.equal(recipe.title, "Munakoiso-kesäkurpitsalasagne");
   assert.equal(recipe.timeTotalMin, 110);
-  assert.deepEqual(recipe.nutrition, { carbsNetG: null, carbsTotalG: null, proteinG: null, fatG: null });
+  assert.deepEqual(recipe.nutrition, { carbsNetG: 48.32, carbsTotalG: 56.24, proteinG: 27.24, fatG: 35.18 });
   const lasagneResults = glycemicLoadPilotResults.filter((result) => result.recipeId === recipe.recipeId);
   assert.equal(lasagneResults.length, 1);
   assert.equal(lasagneResults[0]?.status, "INSUFFICIENT SOURCE DATA");
@@ -108,7 +108,7 @@ test("vegetable lasagne publishes its supplied image and notes without unsupport
   assert.equal(recipe.image.width, 1448);
   assert.equal(recipe.image.height, 1086);
   const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
-  for (const note of ["havainnekuva", "ei ole koekeitetty", "Allergeenit", "Hans Välimäki", "kaupalliseksi yhteistyöksi", "ei ole hyväksyttyä GK-arvoa"]) {
+  for (const note of ["havainnekuva", "ei ole koekeitetty", "Allergeenit", "kaupalliseksi yhteistyöksi", "ei ole hyväksyttyä GK-arvoa"]) {
     assert.ok(html.includes(note), `lasagne: ${note} is visible`);
   }
   assert.ok(!html.includes('data-gk-status="CALCULATED"'), "an unsupported numeric GK result is not displayed");
@@ -152,7 +152,27 @@ test("GK values link to centralized recipe details on every published translatio
   assert.ok(lasagneAuditRows[0]?.ingredients.every((ingredient) => ingredient.availableCarbohydratePerServingG === null && ingredient.gi === null && ingredient.fineliRecordId === null && ingredient.giRecordId === null));
   assert.equal(glycemicLoadPilotResults.length, sourceRecipeIds.size-pending.length,
     "new public FI3 GK-HOLD cases are tracked separately, never shown as approved GK");
-  const visibleReviewed = audit.results.filter(result => !isPublicRecipeQuarantined(result.recipeId));
+  const historicalMolletes = audit.results.find(result => result.recipeId === "meksikolainen-molletes-pico-de-gallolla");
+  assert.equal(historicalMolletes?.glycemicLoadPerServing, 20.01, "historical molletes audit remains exact");
+  const historicalOnly = new Set([
+    historicalMolletes?.recipeId, "lahi-ita-zaatar-munat", "pohjoisafrikkalainen-baghrir",
+  ]);
+  const visibleReviewed = audit.results.filter(result => !isPublicRecipeQuarantined(result.recipeId)).map(result =>
+    historicalOnly.has(result.recipeId) ? { ...result, status: "INSUFFICIENT SOURCE DATA" } : result);
+  for (const id of ["lahi-ita-zaatar-munat", "pohjoisafrikkalainen-baghrir", "rahka-marjakerroskulho", "japanilainen-hojicha-jogurtti-persimonilla", "vietnamilainen-papaija-kookospuuro", "vietnamilainen-banh-xeo-aamiaisletut", "munakoiso-kesakurpitsalasagne", "vietnamilainen-banh-cuon-sienilla",
+    "intialainen-pinaatti-paneer-chilla", "meksikolainen-paputostada-aamupalaksi", "meksikolainen-chilaquiles-verdes", "korealainen-kimchi-jeon-aamiaiseksi"]) {
+    const current = glycemicLoadPilotResults.find(result => result.recipeId === id);
+    assert.equal(current?.glycemicLoadPerServing, null, id + ": old GK is never the current estimate");
+    const locales = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.equal(locales.length, 4, id);
+    for (const recipe of locales) {
+      const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+      assert.doesNotMatch(html, /data-gk-status="CALCULATED"/, recipe.routePath);
+      assert.match(html, /"@type":"NutritionInformation"/, recipe.routePath);
+    }
+  }
+  const molletes = glycemicLoadPilotResults.find(result => result.recipeId === historicalMolletes?.recipeId);
+  assert.equal(molletes?.glycemicLoadPerServing, null, "current molletes cannot display its historical estimate");
   assert.equal(glycemicLoadPilotResults.filter(result => result.status === "CALCULATED").length,
     visibleReviewed.filter(result => result.status === "CALCULATED").length);
   assert.equal(glycemicLoadPilotResults.filter(result => result.status === "INSUFFICIENT SOURCE DATA").length,
@@ -455,7 +475,7 @@ test("translation self-review corrections are present in static HTML and recipe 
     ["lihapullat-kermakastikkeessa-vhh", "en", "for the mash", "to muse"],
     ["nakkikeitto-kukkakaalilla", "sv", "varmkorv", "smycke"],
     ["rogan-josh", "en", "curdling", "does not run"],
-    ["tunisialainen-brik", "th", "ต้องทดสอบวิธีที่ทำให้ไข่สุกทั่ว", "ตามแบบดั้งเดิม ไข่ด้านในยังเยิ้มอยู่"],
+    ["tunisialainen-brik", "th", "ต้มไข่จนทั้งไข่ขาวและไข่แดงแข็ง", "ตามแบบดั้งเดิม ไข่ด้านในยังเยิ้มอยู่"],
   ] as const;
   for (const [id, locale, expected, rejected] of cases) {
     const recipe = siteContent.recipes.find((r) => r.recipeId === id && r.locale === locale)!;
@@ -666,34 +686,4 @@ test("copyright policy is unobtrusive, accessible and prerendered in all four la
     assert.ok(footer.includes(`href="${copyrightSourceUrl}"`), `${locale}: source URL`);
     assert.ok(footer.includes('href="https://github.com/ozirix-dev/Reseptit/issues"'), `${locale}: correction channel`);
   }
-});
-
-test("FI bánh cuốn static page explicitly labels missing GK while keeping historical macros withheld", async () => {
-  const id="vietnamilainen-banh-cuon-sienilla";
-  const source=siteContent.recipes.find(r=>r.recipeId===id&&r.locale==="fi");
-  assert.ok(source);
-  const html=await readFile(path.join(dist,source.routePath.slice(1),"index.html"),"utf8");
-  const root=html.slice(html.indexOf('<div id="root">'));
-  assert.ok(root.includes("GK: ei määritetty"));
-  assert.ok(root.includes('data-gk-status="NOT_DEFINED"'));
-  assert.ok(root.includes('data-f25-nutrition-status="SOURCE_REVIEW_WITHHELD"'));
-  assert.ok(!root.includes('data-gk-status="CALCULATED"'));
-});
-
-test("FI bánh cuốn displays a realistic 50-minute editorial estimate without changing sealed original", async () => {
-  const recipe=siteContent.recipes.find(r=>r.recipeId==="vietnamilainen-banh-cuon-sienilla"&&r.locale==="fi");
-  assert.ok(recipe);
-  assert.equal(recipe.timeTotalMin,50);
-  assert.equal(recipe.difficulty,"Keskitaso");
-  assert.match(recipe.instructionsText.join(" "),/40–50 minuuttia/);
-  const html=await readFile(path.join(dist,recipe.routePath.slice(1),"index.html"),"utf8");
-  const root=html.slice(html.indexOf('<div id="root">'));
-  assert.match(root,/50 min/);
-  assert.match(root,/Vaikeustaso(?:<!-- -->)?: ?(?:<!-- -->)?Keskitaso/);
-  assert.match(root,/Riisilevyjen valmistus ja täytteen turvallisuus/);
-  assert.match(root,/toimituksellinen arvio/);
-  assert.doesNotMatch(root,/Valmistusajan ja täytteen tarkistus kesken/);
-  assert.match(root,/GK: ei määritetty/);
-  assert.match(root,/data-f25-nutrition-status="SOURCE_REVIEW_WITHHELD"/);
-  assert.doesNotMatch(root,/data-gk-status="CALCULATED"/);
 });

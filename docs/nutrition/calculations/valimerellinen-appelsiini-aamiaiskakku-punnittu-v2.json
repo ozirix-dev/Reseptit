@@ -1,0 +1,322 @@
+{
+  "recipeId": "valimerellinen-appelsiini-aamiaiskakku-punnittu-v2",
+  "sourceHash": "9a2db010040956f8ee294c9e4ae2271e5d10128a32bf59e7388bb8b9473bf7dc",
+  "calculatedAt": "2026-11-13",
+  "batchId": "batch-546",
+  "servings": 6,
+  "scope": "Adapted from Julia Turshen's yogurt and olive oil cake, with roughly half the wet ingredients for a small round tin and peeled orange purée in place of the juice. The cake is baked until fully set with no raw batter on a skewer. Six slices, with resting and cooling included in total time.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "puolikarkeaa vehnäjauhoa",
+      "amount": 150,
+      "unit": "g",
+      "state": "all-purpose wheat flour",
+      "matchEvidence": "Source 110 (all-purpose wheat flour). Edible raw quantity weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "all-purpose wheat flour",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 73.998,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      }
+    },
+    {
+      "item": "kuorittua siemenetöntä appelsiinia",
+      "amount": 65,
+      "unit": "g",
+      "state": "peeled raw orange",
+      "matchEvidence": "Source 11045 (peeled raw orange). Edible raw quantity weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-11045-release-20",
+        "name": "APPELSIINI, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11045",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "peeled raw orange",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 8.9,
+          "FIBT": 2.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 8.9,
+          "fibre": 2.4,
+          "polyols": 0,
+          "protein": 0.56,
+          "fat": 0.14
+        }
+      }
+    },
+    {
+      "item": "maustamatonta luonnonjogurttia, noin 4 % rasvaa",
+      "amount": 125,
+      "unit": "g",
+      "state": "plain unsweetened yogurt 3.9% fat",
+      "matchEvidence": "Source 620 (plain unsweetened yogurt 3.9% fat). Edible raw quantity weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-620-release-20",
+        "name": "JOGURTTI, MAUSTAMATON, BULGARIAN, RASVAA 3,9%",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/620",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain unsweetened yogurt 3.9% fat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 3.4,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 3.4,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 3.9
+        }
+      }
+    },
+    {
+      "item": "kuoretonta kananmunaa",
+      "amount": 55,
+      "unit": "g",
+      "state": "raw shelled egg",
+      "matchEvidence": "Source 858 (raw shelled egg). Edible raw quantity weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw shelled egg",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      }
+    },
+    {
+      "item": "oliiviöljyä",
+      "amount": 55,
+      "unit": "g",
+      "state": "olive oil",
+      "matchEvidence": "Source 536 (olive oil). Edible raw quantity weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-536-release-20",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "olive oil",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    },
+    {
+      "item": "sokeria",
+      "amount": 75,
+      "unit": "g",
+      "state": "granulated sugar",
+      "matchEvidence": "Source 1 (granulated sugar). Edible raw quantity weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "granulated sugar",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 99.9,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "leivinjauhetta",
+      "amount": 5,
+      "unit": "g",
+      "state": "dry baking powder",
+      "matchEvidence": "Source F000247 (dry baking powder). Edible raw quantity weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F000247-release-3",
+        "name": "Baking powder, dry powder",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "dry baking powder",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 19.8,
+          "fibre": 0.4,
+          "polyols": 0,
+          "protein": 0.8,
+          "fat": 0.3
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 1,
+      "unit": "g",
+      "state": "table salt",
+      "matchEvidence": "Source 30 (table salt). Edible raw quantity weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "table salt",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0
+        }
+      }
+    }
+  ]
+}

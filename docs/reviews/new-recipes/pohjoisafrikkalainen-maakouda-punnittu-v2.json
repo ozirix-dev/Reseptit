@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "recipe_id": "pohjoisafrikkalainen-maakouda-punnittu-v2",
+  "source_path": "reseptit/aamupalat/pohjoisafrikkalainen-maakouda-punnittu-v2.md",
+  "source_sha256": "b894933fc73799dc355dd122ea1e9e1caffc854ac7d34042d71016c1612d0d50",
+  "decision": "approved",
+  "reviewed_by": "AI editorial reviewer (GPT-6)",
+  "reviewed_at": "2026-11-13",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.cookingwithalia.com/maakouda-moroccan-potato-patties/",
+      "https://potatogoodness.com/wp-content/uploads/Worlds-Best-Potatoes-Cookbook-1.pdf"
+    ]
+  },
+  "supersedes_quarantined": {
+    "recipe_id": "pohjoisafrikkalainen-maakouda",
+    "source_path": "reseptit/aamupalat/pohjoisafrikkalainen-maakouda.md",
+    "source_git_blob_sha": "34574856132b429713948701c718b25dcd12776d"
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/pohjoisafrikkalainen-maakouda-punnittu-v2.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "The sole historical slug owner is the quarantined predecessor with the exact registered Git blob."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "All ingredients use edible gram weights. Allergen disclosures and the new illustration were checked against the ingredient list."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Potato-to-egg ratio follows the reference range. Wheat flour is measured as binder and coating, and six thin patties are cooked with weighed oil and a 71 °C endpoint. Full oil retention is modelled as an upper estimate, with 75% and 50% giving 2.25 g and 4.5 g less fat per serving."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Potatoes are fully boiled and the egg-bound patties reach 71 °C in the centre."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "2 portions with 60 minutes including the specified cooking and resting or cooling periods."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli and AFCD edible mass calculation verified against the current recipe input SHA-256. Potato-to-egg ratio follows the reference range. Wheat flour is measured as binder and coating, and six thin patties are cooked with weighed oil and a 71 °C endpoint. Full oil retention is modelled as an upper estimate, with 75% and 50% giving 2.25 g and 4.5 g less fat per serving."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "No preparation-matched glycemic load approval exists for the successor; the original is retained in historical quarantine."
+    }
+  }
+}

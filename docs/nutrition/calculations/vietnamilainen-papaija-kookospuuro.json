@@ -1,23 +1,19 @@
 {
   "recipeId": "vietnamilainen-papaija-kookospuuro",
-  "sourceHash": "d6aff10dfa2f840dddb2062e337221fa49776f6ac18ac92ec696e44c91fd784a",
-  "calculatedAt": "2026-10-25",
-  "batchId": "batch-16",
+  "sourceHash": "68a70453ed72426a37640ed122103d59b0e77c3ea3e98d8da7923b7e8eb60ce2",
+  "calculatedAt": "2026-11-14",
+  "batchId": "batch-564",
   "servings": 2,
-  "scope": "Two servings; 100 g dry tapioca pearls, 200 ml canned regular-fat coconut milk, 200 g peeled raw papaya, 15 g lime juice, 700 ml water; salt omitted.",
+  "scope": "Two equal portions. Weigh ingredients directly; coconut milk and cooking water are retained.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "tapiokahelmiä",
       "amount": 100,
       "unit": "g",
+      "item": "pieniä kuivia tapiokahelmiä",
       "state": "uncooked dry tapioca pearls",
       "matchEvidence": "AFCD Release 3 record F009090 is uncooked tapioca pearls, matching the clarified porridge ingredient.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
       "record": {
         "id": "afcd-F009090-release-3",
         "name": "Tapioca, pearl or seed style, uncooked",
@@ -36,20 +32,18 @@
           "protein": 0.2,
           "fat": 0.2
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
     },
     {
-      "item": "kookosmaito",
       "amount": 200,
-      "unit": "ml",
+      "unit": "g",
+      "item": "täysrasvaista makeuttamatonta säilykekookosmaitoa",
       "state": "regular-fat canned coconut milk as sold",
       "matchEvidence": "The recipe specifies coconut milk without a reduced-fat variant; AFCD record F002991 is canned regular-fat coconut milk.",
-      "gramsPerUnit": 0.92,
-      "conversionEvidence": "Canned regular-fat coconut milk represented at 0.92 g/ml, consistent with prior ingredient-specific batch conversions.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
       "record": {
         "id": "afcd-F002991-release-3",
         "name": "Coconut, milk, canned, regular fat",
@@ -68,18 +62,18 @@
           "protein": 1.4,
           "fat": 15.4
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
     },
     {
-      "item": "papaija",
       "amount": 200,
       "unit": "g",
+      "item": "kypsää papaijaa ilman kuorta ja siemeniä",
       "state": "peeled raw papaya",
       "matchEvidence": "AFCD Release 3 record F006528 is peeled raw papaya and supplies all required macro fields.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
       "record": {
         "id": "afcd-F006528-release-3",
         "name": "Pawpaw (papaya), peeled, raw",
@@ -98,18 +92,18 @@
           "protein": 0.4,
           "fat": 0
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
     },
     {
-      "item": "limettimehua",
       "amount": 15,
       "unit": "g",
+      "item": "limettimehua",
       "state": "undiluted lime juice",
       "matchEvidence": "AFCD Release 3 record F004729 is lime juice.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
       "record": {
         "id": "afcd-F004729-release-3",
         "name": "Juice, lime",
@@ -128,20 +122,18 @@
           "protein": 0.8,
           "fat": 0.1
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
     },
     {
-      "item": "vettä",
       "amount": 700,
-      "unit": "ml",
+      "unit": "g",
+      "item": "vettä",
       "state": "plain tap water",
       "matchEvidence": "Plain tap water; Fineli Release 20 record 922.",
-      "gramsPerUnit": 1,
-      "conversionEvidence": "Water is represented at 1 g/ml.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
       "record": {
         "id": "fineli-922-release-20",
         "name": "VESI, VESIJOHTOVESI",
@@ -170,27 +162,27 @@
           "protein": 0,
           "fat": 0
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
     },
     {
-      "item": "suolaa maun mukaan",
-      "amount": null,
-      "unit": "",
-      "state": "salt omitted; no contribution to displayed macronutrients",
-      "matchEvidence": "Sodium chloride contributes no energy, carbohydrate, fibre, protein or fat.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Salt has zero impact on the four displayed macronutrients.",
+      "amount": 1,
+      "unit": "g",
+      "item": "hienoa suolaa",
+      "state": "fine salt",
+      "matchEvidence": "Fine salt contributes none of the modeled nutrients.",
+      "excludedReason": "Fine salt contributes none of the modeled nutrients.",
+      "omissionImpactEvidence": "Fine salt contributes none of the modeled nutrients.",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
         "totalCarbohydrate": 0,
         "protein": 0,
         "fat": 0
-      },
-      "omissionImpactEvidence": "Pure salt contributes none of the displayed macronutrients."
+      }
     }
   ]
 }

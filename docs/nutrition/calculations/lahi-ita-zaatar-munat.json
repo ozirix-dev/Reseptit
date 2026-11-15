@@ -1,25 +1,19 @@
 {
   "recipeId": "lahi-ita-zaatar-munat",
-  "sourceHash": "6f8ccf4a611678d88f9b7e60454e399c72d33f1230ff995d51a01565f0cf739b",
-  "calculatedAt": "2026-10-25",
-  "batchId": "batch-15",
+  "sourceHash": "79dd53cf1fc5a5bcbc7bd88e31121194a7c10f4a45a7643be36ee1d29319e30f",
+  "calculatedAt": "2026-11-14",
+  "batchId": "batch-563",
   "servings": 2,
-  "scope": "Two servings; two medium eggs, 100 g pita bread, 100 g plain 3.9% yogurt, all listed oil retained; one teaspoon za’atar omitted under the conservative per-serving bound; salt omitted.",
+  "scope": "Two equal portions of all food and oil. Oil is served on yogurt, so no pan retention is assumed. Sumac is bounded by weighed ingredient mass.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "kananmuna",
-      "amount": 2,
-      "unit": "kpl",
+      "amount": 110,
+      "unit": "g",
+      "item": "kananmunaa ilman kuorta",
       "state": "raw edible egg, shell removed",
       "matchEvidence": "Raw edible egg; Fineli Release 20 record 858.",
-      "gramsPerUnit": 55,
-      "conversionEvidence": "Fineli record 858 medium egg portion KPL_M = 55 g edible egg without shell.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
       "record": {
         "id": "fineli-858-release-20",
         "name": "KANANMUNA, KUORETON",
@@ -48,18 +42,18 @@
           "protein": 12.61,
           "fat": 9.24
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
     },
     {
-      "item": "pita",
       "amount": 100,
       "unit": "g",
+      "item": "vehnäpitaa",
       "state": "plain wheat pita bread",
       "matchEvidence": "Plain pita bread; Fineli Release 20 record 1056.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
       "record": {
         "id": "fineli-1056-release-20",
         "name": "VAALEA LEIPÄ, PITALEIPÄ",
@@ -88,38 +82,18 @@
           "protein": 7.49,
           "fat": 0.979
         }
-      }
-    },
-    {
-      "item": "zaatar",
-      "amount": 1,
-      "unit": "tl",
-      "state": "documented bounded omission",
-      "matchEvidence": "A teaspoon is conservatively bounded as 2.5 g total blend over two servings. Energy and fat use the upper bound of pure sesame from Fineli record 385; carbohydrate, fibre, protein and fat bounds are rounded upward using the components of a dry herb-sesame mix.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "One teaspoon of unspecified za’atar is a small spice blend and can be excluded within the recipe’s per-serving uncertainty limits.",
-      "omissionImpactUpperBoundPerServing": {
-        "kcal": 8,
-        "netCarbohydrate": 0.1,
-        "totalCarbohydrate": 0.2,
-        "protein": 0.4,
-        "fat": 0.7
       },
-      "omissionImpactEvidence": "A teaspoon is conservatively bounded as 2.5 g total blend over two servings. Energy and fat use the upper bound of pure sesame from Fineli record 385; carbohydrate, fibre, protein and fat bounds are rounded upward using the components of a dry herb-sesame mix."
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
     },
     {
-      "item": "jogurtti",
       "amount": 100,
       "unit": "g",
+      "item": "maustamatonta jogurttia (rasvaa 3,9 %)",
       "state": "plain unsweetened yogurt, 3.9% fat",
       "matchEvidence": "Plain unsweetened yogurt represented by Fineli Bulgarian-style 3.9% yogurt record 620.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
       "record": {
         "id": "fineli-620-release-20",
         "name": "JOGURTTI, MAUSTAMATON, BULGARIAN, RASVAA 3,9%",
@@ -148,20 +122,18 @@
           "protein": 3,
           "fat": 3.9
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
     },
     {
-      "item": "neutraalia paistoöljyä",
-      "amount": 1,
-      "unit": "rkl",
+      "amount": 10,
+      "unit": "g",
+      "item": "rypsiöljyä",
       "state": "neutral vegetable cooking oil",
       "matchEvidence": "Average neutral cooking oil; Fineli Release 20 record 541.",
-      "gramsPerUnit": 13.5,
-      "conversionEvidence": "Fineli record 541 lists 13.5 g per tablespoon (RKL). All listed pan oil is counted as retained.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
       "record": {
         "id": "fineli-541-release-20",
         "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
@@ -190,27 +162,113 @@
           "protein": 0,
           "fat": 99.9
         }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
+    },
+    {
+      "amount": 3,
+      "unit": "g",
+      "item": "kuorittuja seesaminsiemeniä",
+      "state": "hulled white sesame seeds",
+      "matchEvidence": "Fineli Release 20 record 34245 is whole hulled white sesame seeds; black variety is not separated in the reference.",
+      "record": {
+        "id": "fineli-34245-release-20",
+        "name": "SEESAMINSIEMEN, VALKOINEN, KOKONAINEN, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34245",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "hulled white sesame seeds",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.171,
+          "FIBT": 11.3,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.171,
+          "fibre": 11.3,
+          "polyols": 0,
+          "protein": 24.6,
+          "fat": 59.7
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
+    },
+    {
+      "amount": 2,
+      "unit": "g",
+      "item": "kuivattua jauhettua timjamia",
+      "state": "dried ground thyme",
+      "matchEvidence": "AFCD Release 3 F009160 is dried ground thyme, matching the recipe seasoning.",
+      "record": {
+        "id": "afcd-F009160-release-3",
+        "name": "Thyme, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dried ground thyme",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 26.9,
+          "fibre": 37,
+          "polyols": 0,
+          "protein": 9.1,
+          "fat": 7.4
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
+    },
+    {
+      "amount": 1,
+      "unit": "g",
+      "item": "jauhettua sumakkia (ilman lisättyä suolaa)",
+      "state": "dry ground sumac, without added salt",
+      "matchEvidence": "No composition record used. At most 1 g pure ground sumac in two portions: its mass bounds any individual macronutrient, and 9 kcal/g bounds energy. No claim of zero polyols.",
+      "excludedReason": "No composition record used. At most 1 g pure ground sumac in two portions: its mass bounds any individual macronutrient, and 9 kcal/g bounds energy. No claim of zero polyols.",
+      "omissionImpactEvidence": "No composition record used. At most 1 g pure ground sumac in two portions: its mass bounds any individual macronutrient, and 9 kcal/g bounds energy. No claim of zero polyols.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 4.5,
+        "netCarbohydrate": 0.5,
+        "totalCarbohydrate": 0.5,
+        "protein": 0.5,
+        "fat": 0.5
       }
     },
     {
-      "item": "suolaa maun mukaan",
-      "amount": null,
-      "unit": "",
-      "state": "documented bounded omission",
-      "matchEvidence": "Salt (sodium chloride) contains no carbohydrate, fibre, protein or fat; its omission has zero impact on displayed macros.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Salt is sodium chloride and contributes none of the four displayed macronutrients.",
+      "amount": 1,
+      "unit": "g",
+      "item": "hienoa suolaa",
+      "state": "fine salt",
+      "matchEvidence": "Fine salt contributes none of the modeled nutrients.",
+      "excludedReason": "Fine salt contributes none of the modeled nutrients.",
+      "omissionImpactEvidence": "Fine salt contributes none of the modeled nutrients.",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
         "totalCarbohydrate": 0,
         "protein": 0,
         "fat": 0
-      },
-      "omissionImpactEvidence": "Salt (sodium chloride) contains no carbohydrate, fibre, protein or fat; its omission has zero impact on displayed macros."
+      }
     }
   ]
 }

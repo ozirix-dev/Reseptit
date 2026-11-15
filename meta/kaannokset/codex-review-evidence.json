@@ -1,4 +1,52 @@
 {
+  "kiinalainen-bao-munalla-punnittu-v2:en": {
+    "source_hash": "7caf76536fee4b41144f796c081dcb1272873ea747146baf8c810d934690d1db",
+    "translation_hash": "c223ea99b6d46076d1c387d29a50609f3da21255e4c335e8b67fa8c8b6e6293b",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-bao-munalla-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kiinalainen-bao-munalla-punnittu-v2:sv": {
+    "source_hash": "7caf76536fee4b41144f796c081dcb1272873ea747146baf8c810d934690d1db",
+    "translation_hash": "9e84c1e8d965cd3e6b83dc8e6b997d0ce73a2e0dc5f42ff7f7edca9988cf3b05",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-bao-munalla-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kiinalainen-bao-munalla-punnittu-v2:th": {
+    "source_hash": "7caf76536fee4b41144f796c081dcb1272873ea747146baf8c810d934690d1db",
+    "translation_hash": "b4ccef957de7c4ec3f4c787886025ea73a3cd2e83bdf95cc54e9a01922724e9e",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-bao-munalla-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gluteenittomat-kauralesesampylat:en": {
+    "source_hash": "984670157c3493fd2e3c017130a30b1b24b7369962182d06b8640d5441561bf7",
+    "translation_hash": "25473fb824af880715698dc814b0cc601a79ccbd95c32de88234e71dff4fac2d",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/gluteeniton/gluteenittomat-kauralesesampylat-en.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gluteenittomat-kauralesesampylat:sv": {
+    "source_hash": "984670157c3493fd2e3c017130a30b1b24b7369962182d06b8640d5441561bf7",
+    "translation_hash": "ab6e1da445546729f159136edf2f5fccf54adb48a62cea542523d90a81d4995d",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/gluteeniton/gluteenittomat-kauralesesampylat-sv.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gluteenittomat-kauralesesampylat:th": {
+    "source_hash": "984670157c3493fd2e3c017130a30b1b24b7369962182d06b8640d5441561bf7",
+    "translation_hash": "fcc929f32c0f48ab4c90062fdb832a9ab16f3d2a79dc01fc2a987e154c8dc5b9",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/gluteeniton/gluteenittomat-kauralesesampylat-th.md",
+    "outcome": "pass",
+    "findings": []
+  },
   "bibimbap:en": {
     "source_hash": "c4100317c030d79fe6748af3852ef35f8ce5e1075cc77453a4db14612027859a",
     "translation_hash": "099abda73a6ea86d6f932dd743fc8fbb7ee6ab2e929acac33d7f5f867e3f9677",
@@ -496,54 +544,44 @@
     ]
   },
   "hyderabadi-kanabiryani:en": {
-    "source_hash": "aa55df3398aaa1aef6a453675f91db9944bcf522979cf9f5ce54433f554637fe",
-    "translation_hash": "ec9e71e532bae5403e83bbfb0d7c0e7eaea7022d0ef112d47cc7c43d7fe08854",
+    "source_hash": "25d6e14e6960cfa5d4c0ac20f8f2dc926744e5ceb97a30b47f4314f2bc5f8334",
+    "translation_hash": "2ec3e7f413d9ff428efe0a2a7d5f4d859b2d77cba6f7cfbc2a890b0c721edf70",
     "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohje käyttää sahramimaitoa kaikilla kielillä, mutta maitoa tai sen määrää ei ole alkuperäisen reseptin ainesluettelossa. Erillinen GK-versio ei ratkaise alkuperäisen raaka-ainemäärää.",
-    "outcome": "human-required",
+    "reference": "docs/reviews/2026-11-13-biryani-hold-korjaus.md",
+    "outcome": "pass",
     "findings": [
       {
         "severity": "P1",
-        "status": "open",
-        "summary": "Ohje käyttää sahramimaitoa kaikilla kielillä, mutta maitoa tai sen määrää ei ole alkuperäisen reseptin ainesluettelossa. Erillinen GK-versio ei ratkaise alkuperäisen raaka-ainemäärää."
+        "status": "fixed",
+        "summary": "Added 30 g whole milk, recalculated nutrition and verified the poultry endpoint across all locales."
       }
     ]
   },
   "hyderabadi-kanabiryani:sv": {
-    "source_hash": "aa55df3398aaa1aef6a453675f91db9944bcf522979cf9f5ce54433f554637fe",
-    "translation_hash": "56be2b703a41d9b16cbe786be0b48577f55c8dc42fa3ec4d22baf30a1f4da58a",
+    "source_hash": "25d6e14e6960cfa5d4c0ac20f8f2dc926744e5ceb97a30b47f4314f2bc5f8334",
+    "translation_hash": "3a129c9cfabcc39b71ece2d879d516134f4f99fd3d6d4c2304d145c9d74416b5",
     "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohje käyttää sahramimaitoa kaikilla kielillä, mutta maitoa tai sen määrää ei ole alkuperäisen reseptin ainesluettelossa. Erillinen GK-versio ei ratkaise alkuperäisen raaka-ainemäärää.",
-    "outcome": "human-required",
+    "reference": "docs/reviews/2026-11-13-biryani-hold-korjaus.md",
+    "outcome": "pass",
     "findings": [
       {
         "severity": "P1",
-        "status": "open",
-        "summary": "Ohje käyttää sahramimaitoa kaikilla kielillä, mutta maitoa tai sen määrää ei ole alkuperäisen reseptin ainesluettelossa. Erillinen GK-versio ei ratkaise alkuperäisen raaka-ainemäärää."
+        "status": "fixed",
+        "summary": "Added 30 g whole milk, recalculated nutrition and verified the poultry endpoint across all locales."
       }
     ]
   },
   "hyderabadi-kanabiryani:th": {
-    "source_hash": "aa55df3398aaa1aef6a453675f91db9944bcf522979cf9f5ce54433f554637fe",
-    "translation_hash": "58248898574d41a60b0c875c1f3153463571fdf24e9781e427db69abdc8099a3",
+    "source_hash": "25d6e14e6960cfa5d4c0ac20f8f2dc926744e5ceb97a30b47f4314f2bc5f8334",
+    "translation_hash": "21c4a5beb8d89b84588e7930e9e408c47786f6ec10fbb1db718709ea5ebda0e5",
     "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohje käyttää sahramimaitoa kaikilla kielillä, mutta maitoa tai sen määrää ei ole alkuperäisen reseptin ainesluettelossa. Erillinen GK-versio ei ratkaise alkuperäisen raaka-ainemäärää.",
-    "outcome": "human-required",
+    "reference": "docs/reviews/2026-11-13-biryani-hold-korjaus.md",
+    "outcome": "pass",
     "findings": [
       {
         "severity": "P1",
         "status": "fixed",
-        "summary": "Riisi kuohkeutetaan eikä murskata."
-      },
-      {
-        "severity": "P1",
-        "status": "fixed",
-        "summary": "Jauhettu korianterinsiemen erotetaan tuoreesta korianterista."
-      },
-      {
-        "severity": "P1",
-        "status": "open",
-        "summary": "Ohje käyttää sahramimaitoa kaikilla kielillä, mutta maitoa tai sen määrää ei ole alkuperäisen reseptin ainesluettelossa. Erillinen GK-versio ei ratkaise alkuperäisen raaka-ainemäärää."
+        "summary": "Added 30 g whole milk, recalculated nutrition and verified the poultry endpoint across all locales."
       }
     ]
   },
@@ -8589,44 +8627,44 @@
     ]
   },
   "tunisialainen-brik:en": {
-    "source_hash": "24bddaf297f96cb46b0d091418e228b3bf2794f00a838fb09c78996644247784",
-    "translation_hash": "44d78fbaed1571ace3e0ceb3c683f16526408b2705851a8bd8693b3f953a3a79",
+    "source_hash": "0b95bac1c157496f40b20f56751270719613975fa819305be3f167d78801701a",
+    "translation_hash": "31c113d1ecf0a0262bd694f9b48f261978ff223b93ada00e14e1855430c1aa50",
     "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kahden minuutin friteeraus per puoli on tarkoitettu valuvalle munalle. Kypsälle munalle sopiva menetelmä ja filotaikinan tai malsoukan kestävyys tarvitsevat koekeittiötestin.",
-    "outcome": "human-required",
+    "reference": "docs/reviews/2026-11-13-brik-hold-korjaus.md",
+    "outcome": "pass",
     "findings": [
       {
         "severity": "P1",
-        "status": "open",
-        "summary": "Kahden minuutin friteeraus per puoli on tarkoitettu valuvalle munalle. Kypsälle munalle sopiva menetelmä ja filotaikinan tai malsoukan kestävyys tarvitsevat koekeittiötestin."
+        "status": "fixed",
+        "summary": "Eggs are hard-boiled before filling. Pastry frying, cold storage, allergens and the four-serving yield were compared with FI."
       }
     ]
   },
   "tunisialainen-brik:sv": {
-    "source_hash": "24bddaf297f96cb46b0d091418e228b3bf2794f00a838fb09c78996644247784",
-    "translation_hash": "fa52a0b27702cbae29c591e57e647edf35f2b56c959c58f20f0b9210550654b9",
+    "source_hash": "0b95bac1c157496f40b20f56751270719613975fa819305be3f167d78801701a",
+    "translation_hash": "6873f791445baf6ead4f37db8578211f1a4980ff2084b207c18c2b45f86e1e82",
     "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kahden minuutin friteeraus per puoli on tarkoitettu valuvalle munalle. Kypsälle munalle sopiva menetelmä ja filotaikinan tai malsoukan kestävyys tarvitsevat koekeittiötestin.",
-    "outcome": "human-required",
+    "reference": "docs/reviews/2026-11-13-brik-hold-korjaus.md",
+    "outcome": "pass",
     "findings": [
       {
         "severity": "P1",
-        "status": "open",
-        "summary": "Kahden minuutin friteeraus per puoli on tarkoitettu valuvalle munalle. Kypsälle munalle sopiva menetelmä ja filotaikinan tai malsoukan kestävyys tarvitsevat koekeittiötestin."
+        "status": "fixed",
+        "summary": "Eggs are hard-boiled before filling. Pastry frying, cold storage, allergens and the four-serving yield were compared with FI."
       }
     ]
   },
   "tunisialainen-brik:th": {
-    "source_hash": "24bddaf297f96cb46b0d091418e228b3bf2794f00a838fb09c78996644247784",
-    "translation_hash": "dbfdab8b17072d946dfa501378511a923f25a9c35088c8695572accd06784102",
+    "source_hash": "0b95bac1c157496f40b20f56751270719613975fa819305be3f167d78801701a",
+    "translation_hash": "c7c0d9c4be954bf297441c638a440323586c8eae4ed221d4b2e33b05271ad8da",
     "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kahden minuutin friteeraus per puoli on tarkoitettu valuvalle munalle. Kypsälle munalle sopiva menetelmä ja filotaikinan tai malsoukan kestävyys tarvitsevat koekeittiötestin.",
-    "outcome": "human-required",
+    "reference": "docs/reviews/2026-11-13-brik-hold-korjaus.md",
+    "outcome": "pass",
     "findings": [
       {
         "severity": "P1",
-        "status": "open",
-        "summary": "Kahden minuutin friteeraus per puoli on tarkoitettu valuvalle munalle. Kypsälle munalle sopiva menetelmä ja filotaikinan tai malsoukan kestävyys tarvitsevat koekeittiötestin."
+        "status": "fixed",
+        "summary": "Eggs are hard-boiled before filling. Pastry frying, cold storage, allergens and the four-serving yield were compared with FI."
       }
     ]
   },
@@ -9704,6 +9742,1158 @@
     "translation_hash": "31415ea100d5bbd5ae40c763ff41bacd0345b745c742d8d9bf45953204c9ae8c",
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-kikherne-v2-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gluteeniton-durrapizzapohja:en": {
+    "source_hash": "1c36e4d2913646df3cc32109b78c8c4b6dd777ddbc57494d92f5cab103b77d12",
+    "translation_hash": "10d864067cd737059df83bbf656573ff85a16c89570ada5a3c078211368864aa",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/gluteeniton/gluteeniton-durrapizzapohja-en.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gluteeniton-durrapizzapohja:sv": {
+    "source_hash": "1c36e4d2913646df3cc32109b78c8c4b6dd777ddbc57494d92f5cab103b77d12",
+    "translation_hash": "829c9a391104714cfb02722ff5e858dbcd45ced1d88103855004748d49e0e346",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/gluteeniton/gluteeniton-durrapizzapohja-sv.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gluteeniton-durrapizzapohja:th": {
+    "source_hash": "1c36e4d2913646df3cc32109b78c8c4b6dd777ddbc57494d92f5cab103b77d12",
+    "translation_hash": "21e77f6bd2c49a6be5763cbc15a5c744b7104fe9f3e80e96d06908ee99a8855a",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/gluteeniton/gluteeniton-durrapizzapohja-th.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-aloo-paratha-punnittu-v2:en": {
+    "source_hash": "4b77c67beb7f4470fb81f91212694f3208fd93db820b0599509c1595196fc09c",
+    "translation_hash": "9a6abcc88ddc0a5c8c4698c6fc27055850daaf4795a1f5162beb43c82565adef",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-aloo-paratha-v2-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-aloo-paratha-punnittu-v2:sv": {
+    "source_hash": "4b77c67beb7f4470fb81f91212694f3208fd93db820b0599509c1595196fc09c",
+    "translation_hash": "1a79a91c07bb49c680788b7a63e81a1bf42735618eaf2a754ee4eb9bb48d345f",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-aloo-paratha-v2-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-aloo-paratha-punnittu-v2:th": {
+    "source_hash": "4b77c67beb7f4470fb81f91212694f3208fd93db820b0599509c1595196fc09c",
+    "translation_hash": "8dd6d9b8b1f82508b5a524d940dd74d486e832e871ae44690f24ea5fb8d4bb80",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-aloo-paratha-v2-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pohjoisafrikkalainen-maakouda-punnittu-v2:en": {
+    "source_hash": "3fc569eed602011556f059963054a12feeaab780f6e524e42c52bb5e0fa71b06",
+    "translation_hash": "723341a1502b5929d8a650bbad44615662e4f6e89e4af9fdac56582e7df47be8",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-maakouda-appelsiinikakku-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pohjoisafrikkalainen-maakouda-punnittu-v2:sv": {
+    "source_hash": "3fc569eed602011556f059963054a12feeaab780f6e524e42c52bb5e0fa71b06",
+    "translation_hash": "ae6bed0ce567179269fb07a049d44eebea49ca3581d3f3cacb1a33ccbd5bac84",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-maakouda-appelsiinikakku-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pohjoisafrikkalainen-maakouda-punnittu-v2:th": {
+    "source_hash": "3fc569eed602011556f059963054a12feeaab780f6e524e42c52bb5e0fa71b06",
+    "translation_hash": "ad89a8a029ed814482fe85a2f4b27bd8d8d0dd20847c40aa08507b9725d66900",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-maakouda-appelsiinikakku-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "valimerellinen-appelsiini-aamiaiskakku-punnittu-v2:en": {
+    "source_hash": "83842fa2e495ff34fd8f29a09a77d74c837cb37aa3166bb67e7b0febcb440df8",
+    "translation_hash": "7f472e2686ca6b39908a5680248022ba48e8d445099c47014cf16bf78e0481a6",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-maakouda-appelsiinikakku-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "valimerellinen-appelsiini-aamiaiskakku-punnittu-v2:sv": {
+    "source_hash": "83842fa2e495ff34fd8f29a09a77d74c837cb37aa3166bb67e7b0febcb440df8",
+    "translation_hash": "3b23642b872020c5566759ff7d39b08d4d4a6837f25f2abfc5648ffc95c35566",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-maakouda-appelsiinikakku-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "valimerellinen-appelsiini-aamiaiskakku-punnittu-v2:th": {
+    "source_hash": "83842fa2e495ff34fd8f29a09a77d74c837cb37aa3166bb67e7b0febcb440df8",
+    "translation_hash": "4b1538ee37afe6bb062a61b556d04e0538773b8924f40e2d49a0df8a3bd60afd",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-maakouda-appelsiinikakku-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-yaki-onigiri-misolla-punnittu-v2:en": {
+    "source_hash": "a6f19d6eba20270943f2233ae029ead52c7400093fc61523d9d919c66780cda0",
+    "translation_hash": "67f2e8a44689f99abea8a8c4f795247f9d21787d8a2c9b62c47854cf2e252774",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-yaki-onigiri-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-yaki-onigiri-misolla-punnittu-v2:sv": {
+    "source_hash": "a6f19d6eba20270943f2233ae029ead52c7400093fc61523d9d919c66780cda0",
+    "translation_hash": "fb622b6ba03e4402cb6b7be96bbf66e9eeeabc9ba46bcf7b34b31887fed09b55",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-yaki-onigiri-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-yaki-onigiri-misolla-punnittu-v2:th": {
+    "source_hash": "a6f19d6eba20270943f2233ae029ead52c7400093fc61523d9d919c66780cda0",
+    "translation_hash": "ee30b09dc806bdf47cfcfaa0376d7232b40afa11e7b54e70c099a349ca756e44",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-yaki-onigiri-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-nasi-goreng-aamiaisriisi-punnittu-v2:en": {
+    "source_hash": "b8d45a01a6ef33d68175dbbefcfba3618b037007576343259a29f3227a4e6232",
+    "translation_hash": "86b7241dce655cf699f8b996b78e467b9507095c5cfaa6b998f33f44222c5c83",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-nasi-goreng-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-nasi-goreng-aamiaisriisi-punnittu-v2:sv": {
+    "source_hash": "b8d45a01a6ef33d68175dbbefcfba3618b037007576343259a29f3227a4e6232",
+    "translation_hash": "3ad1dabf3448d3d6619d6b6a37b2b72674142fcf12e97f722e6ab081a0ba2186",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-nasi-goreng-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-nasi-goreng-aamiaisriisi-punnittu-v2:th": {
+    "source_hash": "b8d45a01a6ef33d68175dbbefcfba3618b037007576343259a29f3227a4e6232",
+    "translation_hash": "91802640b45a2d40865d126ec28d1debc4f9a082fd1f4510d8d1cebf1b4b22dd",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-nasi-goreng-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pohjoisafrikkalainen-msemen-hunajalla-punnittu-v2:en": {
+    "source_hash": "24229180a2387dbce396ec2440b4412ac169fd11079c4bc80d8bb66b80589b95",
+    "translation_hash": "f8f83225827d9ec46cac3b091974b9b3cd23ef80b689936f4e835cc1d6c7f2ab",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-msemen-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pohjoisafrikkalainen-msemen-hunajalla-punnittu-v2:sv": {
+    "source_hash": "24229180a2387dbce396ec2440b4412ac169fd11079c4bc80d8bb66b80589b95",
+    "translation_hash": "d002b083cbb95bf51e821b482f147cc8512bf024f840f351503c1f0b7329791e",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-msemen-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pohjoisafrikkalainen-msemen-hunajalla-punnittu-v2:th": {
+    "source_hash": "24229180a2387dbce396ec2440b4412ac169fd11079c4bc80d8bb66b80589b95",
+    "translation_hash": "ba97de839de6165c2ad78447b641c43c3c18e23bf1fcec3a99ba024b6df14705",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-msemen-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-miso-tofu-paksoi-punnittu-v2:en": {
+    "source_hash": "554992fcfe0986a879a99d63136db281195773edc897b133b642c0cb4e720eae",
+    "translation_hash": "445762bb273325082a674b9e5261317cd245409b3541cc642626722ebbc0f715",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-miso-tofu-paksoi-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-miso-tofu-paksoi-punnittu-v2:sv": {
+    "source_hash": "554992fcfe0986a879a99d63136db281195773edc897b133b642c0cb4e720eae",
+    "translation_hash": "463080890d4a1b2029f84f9d39b5b136670181c4d3eb285ca87cc0266b642de8",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-miso-tofu-paksoi-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-miso-tofu-paksoi-punnittu-v2:th": {
+    "source_hash": "554992fcfe0986a879a99d63136db281195773edc897b133b642c0cb4e720eae",
+    "translation_hash": "3e8dc4d03195326a7853a538d4e43e986cbaf443ae25e5794cd672ce90c62396",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-miso-tofu-paksoi-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-rava-uttapam:en": {
+    "source_hash": "96c83849302bd0e88c79a79071b906631a846e8e5b820f44532ee6baae56992f",
+    "translation_hash": "5a84e2dca4f23c3a609f0d85e7872d95518388f91f87542283360c2c9965964c",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-rava-uttapam-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-rava-uttapam:sv": {
+    "source_hash": "96c83849302bd0e88c79a79071b906631a846e8e5b820f44532ee6baae56992f",
+    "translation_hash": "0cca5e80b9a5b57495cbfdadd926d01c307ac88978351d75e75235bbacb5fc0c",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-rava-uttapam-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-rava-uttapam:th": {
+    "source_hash": "96c83849302bd0e88c79a79071b906631a846e8e5b820f44532ee6baae56992f",
+    "translation_hash": "aa9e07b63af1329b35da4a07571a5e8b0452a8bdc1ca5e3f1a6b1edd0b681687",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-rava-uttapam-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-mandu-keitto-aamiaiseksi-punnittu-v2:en": {
+    "source_hash": "0bca9f004ded6859227d0d68fa2569aeb8396b5bf1bd2db975c998372bcc1d79",
+    "translation_hash": "ff950ffba584775c7147726499f924592762696caf82d7f9499c89aafca08fb9",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-mandu-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-mandu-keitto-aamiaiseksi-punnittu-v2:sv": {
+    "source_hash": "0bca9f004ded6859227d0d68fa2569aeb8396b5bf1bd2db975c998372bcc1d79",
+    "translation_hash": "eb8e59d3b080568eb06bb5835334af0ec2d9638b75b3365ea92d3d6ae1bdaa46",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-mandu-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-mandu-keitto-aamiaiseksi-punnittu-v2:th": {
+    "source_hash": "0bca9f004ded6859227d0d68fa2569aeb8396b5bf1bd2db975c998372bcc1d79",
+    "translation_hash": "fbcb5da5c71994c567190a6a53a15ea512fae63f06b94a5fd5d4e2e4368f4c0b",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-mandu-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "malesialainen-roti-canai-dhalilla-punnittu-v2:en": {
+    "source_hash": "62911037c2b23c635ed193845201c48983dc95f25767fe90dcfcda597e6ab548",
+    "translation_hash": "2e47e1344479336c923904bd63e46273d7e8e2cd79cea97702ea8b74ae28a9ec",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-roti-dhal-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "malesialainen-roti-canai-dhalilla-punnittu-v2:sv": {
+    "source_hash": "62911037c2b23c635ed193845201c48983dc95f25767fe90dcfcda597e6ab548",
+    "translation_hash": "696641691d336cfae7dc1a1ac405150ac6893b67b2e0660b5aa5a0f7014e3040",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-roti-dhal-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "malesialainen-roti-canai-dhalilla-punnittu-v2:th": {
+    "source_hash": "62911037c2b23c635ed193845201c48983dc95f25767fe90dcfcda597e6ab548",
+    "translation_hash": "69bc8f340a5640e0ad266929cd4cdf7e0798d518c54bf9d73d8871fb876d9179",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-roti-dhal-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-lontong-sayur-aamiaiseksi-punnittu-v2:en": {
+    "source_hash": "f49a47fe59d9234b747d08982509699a762894c15f59ed0a7b6f27cae25424c8",
+    "translation_hash": "01b6332b400117a756d7daa5ae14884f50547d1d0093111da771b1ae861df2ae",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-lontong-sayur-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-lontong-sayur-aamiaiseksi-punnittu-v2:sv": {
+    "source_hash": "f49a47fe59d9234b747d08982509699a762894c15f59ed0a7b6f27cae25424c8",
+    "translation_hash": "9fcf2830bee61736c38c3f948d1d1b5e2c0ac387a4848a9f45c8bfe551d5bf94",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-lontong-sayur-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-lontong-sayur-aamiaiseksi-punnittu-v2:th": {
+    "source_hash": "f49a47fe59d9234b747d08982509699a762894c15f59ed0a7b6f27cae25424c8",
+    "translation_hash": "4681bc0165ac0c09ba99f490ab00262a151b6c34b43fe3053ce87cd068ee1168",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-lontong-sayur-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-jumeokbap-merilevalla:en": {
+    "source_hash": "825e9b89191135a91914ceed7d83198dc0f815211285ddfaec3208bb6d4731c1",
+    "translation_hash": "8d5e3fca0670ec32c03ec7a14fbd9b86a89a5ded9d957b76c6032c414f5d8a20",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-jumeokbap-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-jumeokbap-merilevalla:sv": {
+    "source_hash": "825e9b89191135a91914ceed7d83198dc0f815211285ddfaec3208bb6d4731c1",
+    "translation_hash": "6f0d5ce451342ef9fe173a9c84240f6d06dba9d35062c83ce2776f6292883f29",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-jumeokbap-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-jumeokbap-merilevalla:th": {
+    "source_hash": "825e9b89191135a91914ceed7d83198dc0f815211285ddfaec3208bb6d4731c1",
+    "translation_hash": "d2ef1002b1a317a911f2363ac0409e4f93b513a2b0ac7656b05fa07e578f8fb2",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-jumeokbap-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pohjoisafrikkalainen-bissara:en": {
+    "source_hash": "d3bd0cd1f9690a53f2e79221a1cb0d8fdce72bc29083af175bfec79e26830bcd",
+    "translation_hash": "e3a9d754af4ade90a3f8b2e5d08c4c12f08788ddfabe90b8f8f45a4fc4db4681",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-bissara-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pohjoisafrikkalainen-bissara:sv": {
+    "source_hash": "d3bd0cd1f9690a53f2e79221a1cb0d8fdce72bc29083af175bfec79e26830bcd",
+    "translation_hash": "35e8d36653e6acf6bc53c3a5eda0810b33745c2c8f06839162f5be3c0ce1e00f",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-bissara-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pohjoisafrikkalainen-bissara:th": {
+    "source_hash": "d3bd0cd1f9690a53f2e79221a1cb0d8fdce72bc29083af175bfec79e26830bcd",
+    "translation_hash": "8ffebff7e5b6eed682c04902b16e1343548b936497886946dcd6cd7b219e8236",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-bissara-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-ketoprak-aamiaiskulho:en": {
+    "source_hash": "216a43b96fc359376ab9acfe47db04e1718d2a662c9733d9872361d8684f135d",
+    "translation_hash": "6e8de49cccad50a2f26162b8d0df0d77e97e3b53c4d5d4d207a5ad776cf7972a",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-ketoprak-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-ketoprak-aamiaiskulho:sv": {
+    "source_hash": "216a43b96fc359376ab9acfe47db04e1718d2a662c9733d9872361d8684f135d",
+    "translation_hash": "6c3e48ab8b7f9a1cc6d09f046e1fd50670b1992de0a88b4b7a66f17246b292d3",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-ketoprak-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-ketoprak-aamiaiskulho:th": {
+    "source_hash": "216a43b96fc359376ab9acfe47db04e1718d2a662c9733d9872361d8684f135d",
+    "translation_hash": "838137c5248a7e1ecd72e7cf2bc3e965b43b5e63ac0d7a7e3a9c8581a8133477",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-ketoprak-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "valimerellinen-pinaatti-fetashakshuka:en": {
+    "source_hash": "a9b7365c2e765eaf3d2eee5ff43913c0caed640d0cd8acb85b0e142d99a3f50b",
+    "translation_hash": "244cec6052673b7288881a460b9f80a55e02c3f33f426025feb8938398945624",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-pinaatti-fetashakshuka-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "valimerellinen-pinaatti-fetashakshuka:sv": {
+    "source_hash": "a9b7365c2e765eaf3d2eee5ff43913c0caed640d0cd8acb85b0e142d99a3f50b",
+    "translation_hash": "c0602185f85c4fbcddcc538f34ce8ea4343b97bb662be7aee78ef63431db83d4",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-pinaatti-fetashakshuka-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "valimerellinen-pinaatti-fetashakshuka:th": {
+    "source_hash": "a9b7365c2e765eaf3d2eee5ff43913c0caed640d0cd8acb85b0e142d99a3f50b",
+    "translation_hash": "3daa6f0d5edc2cc14316b3dfa03943af623f9dd9f541d9f759c056505f28254f",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-pinaatti-fetashakshuka-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vietnamilainen-banh-bao-kananmunalla-punnittu-v2:en": {
+    "source_hash": "a4e784d21246753d1e67c19e01ab1f2793572f274d9babd9f021a58f8016a487",
+    "translation_hash": "05d4c7b5263beb825284356c14adc07b4547cb5f42b3ef8c6a9bed323e66033f",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-banh-bao-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vietnamilainen-banh-bao-kananmunalla-punnittu-v2:sv": {
+    "source_hash": "a4e784d21246753d1e67c19e01ab1f2793572f274d9babd9f021a58f8016a487",
+    "translation_hash": "5f8eb3ae16310356eb5c26e1a37cccf8cc7a7e4ffc0776e43b515a3229295d0b",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-banh-bao-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vietnamilainen-banh-bao-kananmunalla-punnittu-v2:th": {
+    "source_hash": "a4e784d21246753d1e67c19e01ab1f2793572f274d9babd9f021a58f8016a487",
+    "translation_hash": "974fab22ff14776d79e0140c5c2fff6b6bd4f0ae0f1c1064b032c9df726df5af",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-banh-bao-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "malesialainen-laksa-lemak-aamiaiseksi-punnittu-v2:en": {
+    "source_hash": "06bfbbe3a61dc4bed435a059ab7a24bc00b9be04aa3ff639ac04065a6ad6cc73",
+    "translation_hash": "bb34f3f18b804c1f9a98d257384d912da54746c19fa5af5690fd33ac2fd1bfbf",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-13-laksa-lemak-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "malesialainen-laksa-lemak-aamiaiseksi-punnittu-v2:sv": {
+    "source_hash": "06bfbbe3a61dc4bed435a059ab7a24bc00b9be04aa3ff639ac04065a6ad6cc73",
+    "translation_hash": "22ef86ebcfcb439df3f1f3cf6303355ec087feb0ba135ad6de8a5967ef88ae91",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-13-laksa-lemak-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "malesialainen-laksa-lemak-aamiaiseksi-punnittu-v2:th": {
+    "source_hash": "06bfbbe3a61dc4bed435a059ab7a24bc00b9be04aa3ff639ac04065a6ad6cc73",
+    "translation_hash": "544c5c15f68ac2f7b0ab95605f5be691ea2c7e73d49d89a4795b47aeaa38318e",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-13-laksa-lemak-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "valimerellinen-menemen-fetalla:en": {
+    "source_hash": "bda7f8f2c157dfe1bde4d04bc09a29599615e9f041685f3cb404941094957a54",
+    "translation_hash": "93df907245f4c13ae8d59c2cabaa2a9840ddca120309d13c5ee9e4f761b3f039",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-menemen-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "valimerellinen-menemen-fetalla:sv": {
+    "source_hash": "bda7f8f2c157dfe1bde4d04bc09a29599615e9f041685f3cb404941094957a54",
+    "translation_hash": "63ef4d53f323f1041eb7c864053e93d140f80a174de148f27b956d1375e539d9",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-menemen-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "valimerellinen-menemen-fetalla:th": {
+    "source_hash": "bda7f8f2c157dfe1bde4d04bc09a29599615e9f041685f3cb404941094957a54",
+    "translation_hash": "5182be6fec92e07c64965b205ea5d64217ab68ef3a5d0c886b3dcd53597e10dd",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-menemen-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-tamago-kake-gohan:en": {
+    "source_hash": "6927ed8c7378436b2ca747b7691d95107116889c3715136ab98f5938698cea68",
+    "translation_hash": "a6e2d73f61357be48219a83fd296ea592da4fa4d2886dff1b3ea7d84ebf6cf6c",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-tamago-kake-gohan-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-tamago-kake-gohan:sv": {
+    "source_hash": "6927ed8c7378436b2ca747b7691d95107116889c3715136ab98f5938698cea68",
+    "translation_hash": "7d8a8f4e3e1a0e400fee073432f32fda4ffed77f8ee64fee623b05a70c70a76d",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-tamago-kake-gohan-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-tamago-kake-gohan:th": {
+    "source_hash": "6927ed8c7378436b2ca747b7691d95107116889c3715136ab98f5938698cea68",
+    "translation_hash": "b8da2599fef5635e814c1ba80d668c0e6a160cf695c776af515acd8c7adc9d4e",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-tamago-kake-gohan-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-bindaetteok-aamiaiseksi:en": {
+    "source_hash": "0e69e2977afd4b96b87f028c5b160c0545cd26e4272843e573350760af421dff",
+    "translation_hash": "9fa08e2fcfd9a31278bbdf4f427dc5c7d904af44b63a15fdb8169d7cd7fb84c3",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-bindaetteok-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-bindaetteok-aamiaiseksi:sv": {
+    "source_hash": "0e69e2977afd4b96b87f028c5b160c0545cd26e4272843e573350760af421dff",
+    "translation_hash": "681b924e38e9283cd51f98a2bf4682bd45c082eb2b3f734098dd178544cebf8a",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-bindaetteok-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-bindaetteok-aamiaiseksi:th": {
+    "source_hash": "0e69e2977afd4b96b87f028c5b160c0545cd26e4272843e573350760af421dff",
+    "translation_hash": "9a157c49999084c663d4b44a29929187980b9002b1e4ea9f9d59282224199c20",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-bindaetteok-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-natto-riisikulho:en": {
+    "source_hash": "742fd4d00148f32c634601da07e477fdb320d78b0cfe22fa37ef4136faa16055",
+    "translation_hash": "bd58f6842ec7468cfc0767daf2008795cba31707ae795421eb87f38fa4e6546d",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-natto-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-natto-riisikulho:sv": {
+    "source_hash": "742fd4d00148f32c634601da07e477fdb320d78b0cfe22fa37ef4136faa16055",
+    "translation_hash": "8af7fea39e4f732016cc32b55980fd02ae0d2805af4e390515a6f8b9f95afe3b",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-natto-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-natto-riisikulho:th": {
+    "source_hash": "742fd4d00148f32c634601da07e477fdb320d78b0cfe22fa37ef4136faa16055",
+    "translation_hash": "3a3369136edd930f82f99c29bf13833e91ceb50545798a629111b79abe3f77c0",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-natto-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "malesialainen-kookos-banaanikulho:en": {
+    "source_hash": "88742a740cfe952c43f2d795fdb5f988852c2072004b054129d3dd8ea098987c",
+    "translation_hash": "c98e439ae41d9cb37bb570cfabab7937ca12ac953f7275f90201700bfb37e478",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-kookos-banaanikulho-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "malesialainen-kookos-banaanikulho:sv": {
+    "source_hash": "88742a740cfe952c43f2d795fdb5f988852c2072004b054129d3dd8ea098987c",
+    "translation_hash": "3b7dad7b891dd0031ddcc05f22d7d61ba09e748f4aeabd52a7b95fcfb422613c",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-kookos-banaanikulho-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "malesialainen-kookos-banaanikulho:th": {
+    "source_hash": "88742a740cfe952c43f2d795fdb5f988852c2072004b054129d3dd8ea098987c",
+    "translation_hash": "ca12ecfb26fd2daa5603c99f75cc108c40fc78b0eb2ba593d47dac37e04f8402",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-kookos-banaanikulho-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-bataatti-riisikulho:en": {
+    "source_hash": "5dfa383e95879438c16da358f4dd181701cd04a65f411d0a70eadc1120aa9e88",
+    "translation_hash": "21a6c40a6d8aac03d391feb835c1ab8d75de1d0c504036de478a0bf036746ecc",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-korealaiset-riisikulhot-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-bataatti-riisikulho:sv": {
+    "source_hash": "5dfa383e95879438c16da358f4dd181701cd04a65f411d0a70eadc1120aa9e88",
+    "translation_hash": "4df5826b3f664315e2a784265b5a2c618859c6f04a8412745b058e769231b2a7",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-korealaiset-riisikulhot-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-bataatti-riisikulho:th": {
+    "source_hash": "5dfa383e95879438c16da358f4dd181701cd04a65f411d0a70eadc1120aa9e88",
+    "translation_hash": "c485015e013447b33e459be0eeedfa0630ce7c084b3fab9af37e976338f4cdda",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-korealaiset-riisikulhot-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-tofu-kimchi-aamiaiskulho:en": {
+    "source_hash": "e2ed81a7797860ae89698c6dd708dfb681b48e0104440d1cb68cfc4599883354",
+    "translation_hash": "38a8d90804d3ebd3e69626b18aec4cc93422a9eb672fb75eb82f202efa46fada",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-korealaiset-riisikulhot-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-tofu-kimchi-aamiaiskulho:sv": {
+    "source_hash": "e2ed81a7797860ae89698c6dd708dfb681b48e0104440d1cb68cfc4599883354",
+    "translation_hash": "e879a990f6c363dad30b8e61ea6462f2a5c69d1886062491f2d69da6c47912c5",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-korealaiset-riisikulhot-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-tofu-kimchi-aamiaiskulho:th": {
+    "source_hash": "e2ed81a7797860ae89698c6dd708dfb681b48e0104440d1cb68cfc4599883354",
+    "translation_hash": "7facb727dc0e69d5c46bed484c0201c141dea581116d3ed4e4a827ea85538b13",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-korealaiset-riisikulhot-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "meksikolainen-molletes-pico-de-gallolla:en": {
+    "source_hash": "26429655131f730ebb2b78728103bc4aae137ef9ee6e0b9c408074d4faa299ac",
+    "translation_hash": "2c932d6831c227b88c906204b636a198a5caa99f9a6310f210d57c9515d98b2e",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-molletes-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "meksikolainen-molletes-pico-de-gallolla:sv": {
+    "source_hash": "26429655131f730ebb2b78728103bc4aae137ef9ee6e0b9c408074d4faa299ac",
+    "translation_hash": "87f059ac122a23aac7108e0c16aa844ac39ae28d6ed7e91230656876e557a75f",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-molletes-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "meksikolainen-molletes-pico-de-gallolla:th": {
+    "source_hash": "26429655131f730ebb2b78728103bc4aae137ef9ee6e0b9c408074d4faa299ac",
+    "translation_hash": "c5139d659f6b93771fb92e4f8c84fdd560798537d3d823d338875c97a79b5c2f",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-molletes-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-dashimaki-tamago-aamiaislautasella:en": {
+    "source_hash": "9cbd81b4ddfb6dceeb16e41c28f604dcc57a73bd3eb9ab616bac29076f590e3e",
+    "translation_hash": "8db20dcd7d08d989d9643e81ae026d752fe866f8746d642033ff1ab8c87ad633",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-dashimaki-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-dashimaki-tamago-aamiaislautasella:sv": {
+    "source_hash": "9cbd81b4ddfb6dceeb16e41c28f604dcc57a73bd3eb9ab616bac29076f590e3e",
+    "translation_hash": "b8eb0a3606d645cc3ad4384ef815610311163f6d0c02fe18ccc04937eb7b1cd3",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-dashimaki-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-dashimaki-tamago-aamiaislautasella:th": {
+    "source_hash": "9cbd81b4ddfb6dceeb16e41c28f604dcc57a73bd3eb9ab616bac29076f590e3e",
+    "translation_hash": "eedab5e823a8b1c4bad9a10de60f8026c82e419f1666ea7552b99de98b47b2e7",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-dashimaki-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-kabocha-puuro:en": {
+    "source_hash": "308d522f89956a0d62e51d6071680bdf857afef9e176326e4a1e7f9329134b27",
+    "translation_hash": "1190257eb5a7d9b5813a9ec28700412bbfc5db97500d99bf28230f024cb1c3c9",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-myskikurpitsapuuro-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-kabocha-puuro:sv": {
+    "source_hash": "308d522f89956a0d62e51d6071680bdf857afef9e176326e4a1e7f9329134b27",
+    "translation_hash": "c4230eaf19464a5112eab0aab9ac0afe01f31454cee8104d9feeff081964a5eb",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-myskikurpitsapuuro-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-kabocha-puuro:th": {
+    "source_hash": "308d522f89956a0d62e51d6071680bdf857afef9e176326e4a1e7f9329134b27",
+    "translation_hash": "56173c731ed38ca543f7b715209d7ddcf18997d5e5bd9ebf6fa6b904d5f5dc16",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-myskikurpitsapuuro-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-ven-pongal:en": {
+    "source_hash": "370f58cf3ae96299cdd7c55292c12cf8f50b60ed74b7bec5a70f5e1ea9689635",
+    "translation_hash": "bf21b3f8116824634bfe23bf35c21f13d125b2eae05c8f52dcb3f3824e0dad2b",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-intialainen-ven-pongal-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-kongjuk-soijapapu-riisipuuro:en": {
+    "source_hash": "c6ba4d1ab1872d58748f16b83379cf850458ea7939e1e602b096173f05f9f5d6",
+    "translation_hash": "37cbcef1d360c05a97a45809d58ca0e99e79b52cbac95b6e4a6815ef0bdf9c1a",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-korealainen-kongjuk-soijapapu-riisipuuro-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-ven-pongal:sv": {
+    "source_hash": "370f58cf3ae96299cdd7c55292c12cf8f50b60ed74b7bec5a70f5e1ea9689635",
+    "translation_hash": "329c51eb9918a821bd1ed546471887e8fef1e83663af80015af9eb403f291810",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-intialainen-ven-pongal-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-kongjuk-soijapapu-riisipuuro:sv": {
+    "source_hash": "c6ba4d1ab1872d58748f16b83379cf850458ea7939e1e602b096173f05f9f5d6",
+    "translation_hash": "0d411585b40b53d3c3a9d5c0b733e223f896772188de9991b8c5fb29d8e647f7",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-korealainen-kongjuk-soijapapu-riisipuuro-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-ven-pongal:th": {
+    "source_hash": "370f58cf3ae96299cdd7c55292c12cf8f50b60ed74b7bec5a70f5e1ea9689635",
+    "translation_hash": "c43bc26dd6b348927d9c8b5cab45d14880bc9b65a710bed5d2b085d6c7348d41",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-intialainen-ven-pongal-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-kongjuk-soijapapu-riisipuuro:th": {
+    "source_hash": "c6ba4d1ab1872d58748f16b83379cf850458ea7939e1e602b096173f05f9f5d6",
+    "translation_hash": "c2ead56442caad16955c2c9b95dda066e062256bb890c202bf6ec627078250cf",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-korealainen-kongjuk-soijapapu-riisipuuro-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-tempeh-munakulho:en": {
+    "source_hash": "c954a94afc50a33b4dbe90b601774e8e6c4a67870699d5af3ec0c37c8489eebd",
+    "translation_hash": "3d822f953791b175fd8b146fd1acbefe29e1842735ad7d179a610e0b4a4224e0",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-indonesialainen-tempeh-munakulho-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-okayu-umeboshipluumulla:en": {
+    "source_hash": "167061d1cc9409a421ebac6724b4183dba58e34148c12144e8e8017872065abf",
+    "translation_hash": "0bed2bfce5b982a08de7bbd6f1e0c884960b5e6b620c02157842b61ba72c02a2",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-japanilainen-okayu-umeboshipluumulla-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-tempeh-munakulho:sv": {
+    "source_hash": "c954a94afc50a33b4dbe90b601774e8e6c4a67870699d5af3ec0c37c8489eebd",
+    "translation_hash": "909dd88e37cefcd5cd2cea67226c99dc48003893340f395e7ae8d77cc69d64a9",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-indonesialainen-tempeh-munakulho-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-okayu-umeboshipluumulla:sv": {
+    "source_hash": "167061d1cc9409a421ebac6724b4183dba58e34148c12144e8e8017872065abf",
+    "translation_hash": "369843c0e5d5da255fbebf6445baa4d0bf73a49683829f27f0ce6677cb82e9ae",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-japanilainen-okayu-umeboshipluumulla-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-tempeh-munakulho:th": {
+    "source_hash": "c954a94afc50a33b4dbe90b601774e8e6c4a67870699d5af3ec0c37c8489eebd",
+    "translation_hash": "51266b3c7bcdeeee9aaa9cdad0a19b46bcee73dd88d272f32e1579dd83b667df",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-indonesialainen-tempeh-munakulho-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-okayu-umeboshipluumulla:th": {
+    "source_hash": "167061d1cc9409a421ebac6724b4183dba58e34148c12144e8e8017872065abf",
+    "translation_hash": "8246c3ce2f05f12a8cf2c50fd195b085d289c6a87f028ef7791ed7f81fdbf580",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-japanilainen-okayu-umeboshipluumulla-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-masala-dosa:en": {
+    "source_hash": "7411709252248083e0bf0a48017c736c8c224b86a23a7bdb217856c37e73f5ed",
+    "translation_hash": "87208d8ac36492a52324d253815ec0c9cb8ddf0b87f0e1951b0a84ca10147330",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-intialainen-masala-dosa-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-masala-dosa:sv": {
+    "source_hash": "7411709252248083e0bf0a48017c736c8c224b86a23a7bdb217856c37e73f5ed",
+    "translation_hash": "aec51b705adcfecf0c53381f48dfc1b20f3d26bfa3420cc71f547dc708631ed2",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-intialainen-masala-dosa-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-masala-dosa:th": {
+    "source_hash": "7411709252248083e0bf0a48017c736c8c224b86a23a7bdb217856c37e73f5ed",
+    "translation_hash": "3cae378968fe0beb166ed38842d086474a8e64f924a68e5ce38d67ca2b53c259",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-intialainen-masala-dosa-kielikatselmointi.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-bubur-sumsum-punnittu-v2:en": {
+    "source_hash": "eced815ee26401e613eea71df3144b18ff7d0bfa0a7dfe2f927579fcd3fe927f",
+    "translation_hash": "5e48ddcf937b6d369fe67a9e8d6fe315936529afe01a8ad0b2fb98db26876e16",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-bubur-sumsum-v2.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-bubur-sumsum-punnittu-v2:sv": {
+    "source_hash": "eced815ee26401e613eea71df3144b18ff7d0bfa0a7dfe2f927579fcd3fe927f",
+    "translation_hash": "ed979ee9eb0e269b9a58d700a20cbdbdfd0cdb964efa16200945a44179b44177",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-bubur-sumsum-v2.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-bubur-sumsum-punnittu-v2:th": {
+    "source_hash": "eced815ee26401e613eea71df3144b18ff7d0bfa0a7dfe2f927579fcd3fe927f",
+    "translation_hash": "60c4537c52fb988a1b19230a98e968fcf739cc3af42d7a39a96e14e4fea60b51",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-bubur-sumsum-v2.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pohjoisafrikkalainen-baghrir:en": {
+    "source_hash": "9602bba1e3926f1dd93de6d5ef2aac7df177d8f40d0980005663368c8610a6c6",
+    "translation_hash": "221a17cbfa38292cc5c4dcccc5738852c1b42a16f8c05a47e8e2efbdb530cb38",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-1.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pohjoisafrikkalainen-baghrir:sv": {
+    "source_hash": "9602bba1e3926f1dd93de6d5ef2aac7df177d8f40d0980005663368c8610a6c6",
+    "translation_hash": "f830ad5e8764d38d74f3b4b01a34ce2147b1ac0280991ec9c54a04583b97a286",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-1.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pohjoisafrikkalainen-baghrir:th": {
+    "source_hash": "9602bba1e3926f1dd93de6d5ef2aac7df177d8f40d0980005663368c8610a6c6",
+    "translation_hash": "c2fbfc0105d7adf13f30a66a01c82d3624c20feebd8c27871a563f36fd0b119e",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-1.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "lahi-ita-zaatar-munat:en": {
+    "source_hash": "8696a7202d2a6f8e44ae8840c6ef0593c85e2116e97bfd540d37588ad0545139",
+    "translation_hash": "f1fac40b0cedd8b27dc0eb5e53d77b01707582dd5e6586ef78431a78b1147d03",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-1.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "lahi-ita-zaatar-munat:sv": {
+    "source_hash": "8696a7202d2a6f8e44ae8840c6ef0593c85e2116e97bfd540d37588ad0545139",
+    "translation_hash": "48ea56c20eab6774957cc65ffecf0ada419bce07653de28b012be394ad381e7d",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-1.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "lahi-ita-zaatar-munat:th": {
+    "source_hash": "8696a7202d2a6f8e44ae8840c6ef0593c85e2116e97bfd540d37588ad0545139",
+    "translation_hash": "0289e0499a1a0184519a818757af897e451a3f92fc450786cf8206a8692c9025",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-1.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vietnamilainen-papaija-kookospuuro:en": {
+    "source_hash": "326108aae92710b2c5f3a6755dabd8cf2d2dae1544c1e2b7c3e7a745721900c4",
+    "translation_hash": "d1e53cdcde18659b21a13ae2448b8599d3bed94a16e3a85f0703cda7f916852e",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-2.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vietnamilainen-papaija-kookospuuro:sv": {
+    "source_hash": "326108aae92710b2c5f3a6755dabd8cf2d2dae1544c1e2b7c3e7a745721900c4",
+    "translation_hash": "281facd9d26386f86cf26f00a18c5cab07b22b7bcab34f8c852135efc8175bda",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-2.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vietnamilainen-papaija-kookospuuro:th": {
+    "source_hash": "326108aae92710b2c5f3a6755dabd8cf2d2dae1544c1e2b7c3e7a745721900c4",
+    "translation_hash": "d0ae18080a3b98223d1ef3a63a4d7c0f35a05b4b449c92b7fd5d4b489e5f03ab",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-2.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-hojicha-jogurtti-persimonilla:en": {
+    "source_hash": "7d7fbb21533043496b10289560d1d508593c4e0b3d89adbb4b14c9ca438b9902",
+    "translation_hash": "ef357e95890df37e98a098ffa76de4bca5e8a8a7c865fc51df5176cad3bad9db",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-2.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-hojicha-jogurtti-persimonilla:sv": {
+    "source_hash": "7d7fbb21533043496b10289560d1d508593c4e0b3d89adbb4b14c9ca438b9902",
+    "translation_hash": "d569497bc9cc5bede13c57ad177f3a6f06696cc0b795b5aaa51812a22fd58bb7",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-2.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "japanilainen-hojicha-jogurtti-persimonilla:th": {
+    "source_hash": "7d7fbb21533043496b10289560d1d508593c4e0b3d89adbb4b14c9ca438b9902",
+    "translation_hash": "938566e5ec3f878a10c81df57773667e32e25b25b3b4a47619629d7085b30351",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-2.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "rahka-marjakerroskulho:en": {
+    "source_hash": "ca2af7b1ac01ee4f04fb8a68f78ca498c52ddf8732eddfc2dc0a8140adb0ad33",
+    "translation_hash": "ad9c1d78ae0216cad255e8e19d38822da938007b9a9ffa0fe7b1792b5f27ed91",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-2.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "rahka-marjakerroskulho:sv": {
+    "source_hash": "ca2af7b1ac01ee4f04fb8a68f78ca498c52ddf8732eddfc2dc0a8140adb0ad33",
+    "translation_hash": "336e0da4a7965e87149ea0e6ca74f2bfe0d75e7db2415b9fd9b0efab0e64e664",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-2.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "rahka-marjakerroskulho:th": {
+    "source_hash": "ca2af7b1ac01ee4f04fb8a68f78ca498c52ddf8732eddfc2dc0a8140adb0ad33",
+    "translation_hash": "ce6e81ea908386006117637012a7b466861f477b5b54ddf54e766a537d421c52",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-2.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vietnamilainen-banh-xeo-aamiaisletut:en": {
+    "source_hash": "ed48dcedb524cb9601fbf2011e2a976591a1b97de5f04a74095e6514085f2e29",
+    "translation_hash": "6178eff496b86a7685d892c60177a1c5661adab3f5e05f4bb92e4e85f8436ecf",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-3.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vietnamilainen-banh-xeo-aamiaisletut:sv": {
+    "source_hash": "ed48dcedb524cb9601fbf2011e2a976591a1b97de5f04a74095e6514085f2e29",
+    "translation_hash": "1dd7f016c1b2ed7ded6140ccdb05d614e35425682321c71cb5d1c3a16fd1cddb",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-3.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vietnamilainen-banh-xeo-aamiaisletut:th": {
+    "source_hash": "ed48dcedb524cb9601fbf2011e2a976591a1b97de5f04a74095e6514085f2e29",
+    "translation_hash": "54700fcb28dc81cb69147db719031b36523fd1e622dfc6b5621ecee0f4b4c9a5",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-3.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "munakoiso-kesakurpitsalasagne:en": {
+    "source_hash": "470ae9a0d07ea618b8aabe981b3f79f1c77b748fcf92adf56c97b83ffcc5e892",
+    "translation_hash": "392b06412f1263c76d44e6b906cd103bb87148e087e036aeadb3cfde7a471e9d",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-4.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "munakoiso-kesakurpitsalasagne:sv": {
+    "source_hash": "470ae9a0d07ea618b8aabe981b3f79f1c77b748fcf92adf56c97b83ffcc5e892",
+    "translation_hash": "538ae3d94cea82ff95c5091c95d136fb249c93a7f9c4c6997842227f74e9018f",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-4.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "munakoiso-kesakurpitsalasagne:th": {
+    "source_hash": "470ae9a0d07ea618b8aabe981b3f79f1c77b748fcf92adf56c97b83ffcc5e892",
+    "translation_hash": "dedcc01da063fb5429ad592ea47e50da57a78c869e3933d67d3c5aee6af69841",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-4.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vietnamilainen-banh-cuon-sienilla:en": {
+    "source_hash": "304f76ecf2e136252f0ae24010a03738ccdf2ef94ec8574d3980b24684069d1c",
+    "translation_hash": "777ff9a2de8a366dd3abb103b8be8dbe6c9323138997279cea5c178f0e904dda",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-5.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vietnamilainen-banh-cuon-sienilla:sv": {
+    "source_hash": "304f76ecf2e136252f0ae24010a03738ccdf2ef94ec8574d3980b24684069d1c",
+    "translation_hash": "793f2365a6044b29d660e193d296f59877472d164f0cff9a4024e2337521cdf4",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-5.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vietnamilainen-banh-cuon-sienilla:th": {
+    "source_hash": "304f76ecf2e136252f0ae24010a03738ccdf2ef94ec8574d3980b24684069d1c",
+    "translation_hash": "c2192e9decbe2c3c43bd0dba35f43e7836d3f893139cef6d927c91cfc76e8d58",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-batch-5.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "malesialainen-roti-jala-currykanalla-punnittu-v2:en": {
+    "source_hash": "8323c9c05c3391ab834e320a63fddb56b56432d1b2b66a74423298c031aaf620",
+    "translation_hash": "a3e1f481456eca5ebbc43023e7c24e8744c10561fafc5bd144a55a31af460738",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-roti-jala-v2.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "malesialainen-roti-jala-currykanalla-punnittu-v2:sv": {
+    "source_hash": "8323c9c05c3391ab834e320a63fddb56b56432d1b2b66a74423298c031aaf620",
+    "translation_hash": "4bc3fb870fcfe7f0be6cbea9ff3a55e0c0b8ccb1abaab3c892a03ec9c2aff96a",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-roti-jala-v2.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "malesialainen-roti-jala-currykanalla-punnittu-v2:th": {
+    "source_hash": "8323c9c05c3391ab834e320a63fddb56b56432d1b2b66a74423298c031aaf620",
+    "translation_hash": "abf03ee2f1a352fd662c2edb1615bdfbd64cd1a980fc3ece92eca7e2675d9a5a",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-roti-jala-v2.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-bakwan-jagung-kotiversio:en": {
+    "source_hash": "0895decf6f3c4fad235c208ca92a9ef2e84fd7058cbe19f9f77d0f6127cd4165",
+    "translation_hash": "f2dd6a099bc2f2be1677c8b7cc4b31d01cfc6b13dd588a8678b86229c7cf8e3c",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-bakwan-jagung-kotiversio.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-bakwan-jagung-kotiversio:sv": {
+    "source_hash": "0895decf6f3c4fad235c208ca92a9ef2e84fd7058cbe19f9f77d0f6127cd4165",
+    "translation_hash": "c2da313319f60d93e5a8d7dfffd3ab5bc16e8b7e0c748020c0acb8ab44cd5a45",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-bakwan-jagung-kotiversio.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-bakwan-jagung-kotiversio:th": {
+    "source_hash": "0895decf6f3c4fad235c208ca92a9ef2e84fd7058cbe19f9f77d0f6127cd4165",
+    "translation_hash": "ed47197b50cb2a06cf6b8099f1c94b8142f16b274f3ef2e77a550854f77e22e7",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-bakwan-jagung-kotiversio.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-pinaatti-paneer-chilla:en": {
+    "source_hash": "394c8665359f58d9a9a9a48e3891d210ad9fc2383cb8c5b22ca9bde2b4b7a48d",
+    "translation_hash": "72283b89f176efb018dede0d0ec7071b488318e17420e528f34a2736a920d125",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-final-release.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-pinaatti-paneer-chilla:sv": {
+    "source_hash": "394c8665359f58d9a9a9a48e3891d210ad9fc2383cb8c5b22ca9bde2b4b7a48d",
+    "translation_hash": "65891a589c5b968304906db4a837a159ca0839c88e289e1a4b2d2da7b6353e72",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-final-release.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-pinaatti-paneer-chilla:th": {
+    "source_hash": "394c8665359f58d9a9a9a48e3891d210ad9fc2383cb8c5b22ca9bde2b4b7a48d",
+    "translation_hash": "a47c07da23905da6ad0120abd8dc8c9f7c5132ba4b5d7663c8f4b1b6e87e94f5",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-final-release.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "meksikolainen-paputostada-aamupalaksi:en": {
+    "source_hash": "a6b22520ea8080942604b0778445f71180f6d46230b2dc507016af639ade0e67",
+    "translation_hash": "e39afea3fdd8dc5e981fffbeb46c8e25e6c5278ebbb2ba902c3055525d1a4ed1",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-final-release.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "meksikolainen-paputostada-aamupalaksi:sv": {
+    "source_hash": "a6b22520ea8080942604b0778445f71180f6d46230b2dc507016af639ade0e67",
+    "translation_hash": "220694320f50556426972ab34710f03194e04ccb6cfa6483210f7fc420d78f08",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-final-release.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "meksikolainen-paputostada-aamupalaksi:th": {
+    "source_hash": "a6b22520ea8080942604b0778445f71180f6d46230b2dc507016af639ade0e67",
+    "translation_hash": "0f38f5ba9cae1abd911cac985cf01945e43de71248f0bf65c817704e76f52b39",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-final-release.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "meksikolainen-chilaquiles-verdes:en": {
+    "source_hash": "526e7add2f70e4bed3bc14b8814c3896c782260ad9dee778643477758905c305",
+    "translation_hash": "c53a521f7395bced8cf99df973c8959e6efd2e8e72cf2193d1f555700fc97621",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-final-release.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "meksikolainen-chilaquiles-verdes:sv": {
+    "source_hash": "526e7add2f70e4bed3bc14b8814c3896c782260ad9dee778643477758905c305",
+    "translation_hash": "5a720a5be3ec7b0868edda9796fc5f561b93a1a799417c4e2451cfa93b6d0618",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-final-release.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "meksikolainen-chilaquiles-verdes:th": {
+    "source_hash": "526e7add2f70e4bed3bc14b8814c3896c782260ad9dee778643477758905c305",
+    "translation_hash": "65cd1eab7ddc8f42a833f76858bbc639fcd619a9249cd226c3381d696a1075c6",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-final-release.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-kimchi-jeon-aamiaiseksi:en": {
+    "source_hash": "6f49c410507a48e3d8d95be976c131dc940cf9ad0faf092ade6692644da8f4f3",
+    "translation_hash": "a38a08569d48970d89603b64a5d0c882a20ea34d49ddecf8107d987eb481a709",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-kimchi-jeon.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-kimchi-jeon-aamiaiseksi:sv": {
+    "source_hash": "6f49c410507a48e3d8d95be976c131dc940cf9ad0faf092ade6692644da8f4f3",
+    "translation_hash": "b4152044669a9b14df6f03c7a266927e56462e01db6919470e55dafd2080342a",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-kimchi-jeon.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-kimchi-jeon-aamiaiseksi:th": {
+    "source_hash": "6f49c410507a48e3d8d95be976c131dc940cf9ad0faf092ade6692644da8f4f3",
+    "translation_hash": "40301b2a98a529447334dff7ecddcbb4766f3f6a559c936702e2e359bb03b2cb",
+    "reviewed_at": "2026-11-14",
+    "reference": "docs/reviews/2026-11-14-f25-kimchi-jeon.md",
     "outcome": "pass",
     "findings": []
   }

@@ -5,162 +5,96 @@ url_slug: munakoiso-kesakurpitsalasagne
 category: paaruoka
 language: fi
 status: published
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
+main_ingredient:
+  - munakoiso
+  - kesäkurpitsa
+  - pasta
+  - juusto
+cooking_method:
+  - uuni
+ingredients:
+  - amount: 400
+    unit: g
+    item: "munakoisoa"
+  - amount: 400
+    unit: g
+    item: "kesäkurpitsaa"
+  - amount: 100
+    unit: g
+    item: "kuorittua keltasipulia"
+  - amount: 12
+    unit: g
+    item: "kuorittua valkosipulia"
+  - amount: 60
+    unit: g
+    item: "oliiviöljyä"
+  - amount: 3
+    unit: g
+    item: "tuoreita timjaminlehtiä"
+  - amount: 800
+    unit: g
+    item: "maustamatonta tomaattimurskaa"
+  - amount: 200
+    unit: g
+    item: "kuivia durumvehnälasagnelevyjä (ei esikeittoa)"
+  - amount: 250
+    unit: g
+    item: "valutettua tuoremozzarellaa (rasvaa noin 20 %)"
+  - amount: 80
+    unit: g
+    item: "parmesaania"
+  - amount: 10
+    unit: g
+    item: "tuoretta basilikaa"
+  - amount: 10
+    unit: g
+    item: "viinietikkaa"
+  - amount: 3
+    unit: g
+    item: "hienoa suolaa"
+  - amount: 0.5
+    unit: g
+    item: "jauhettua mustapippuria"
+  - amount: 100
+    unit: g
+    item: "vettä"
 servings: 4
 time_total_min: 110
-main_ingredient: [munakoiso, kesäkurpitsa, pasta, juusto]
-cooking_method: [uuni]
-tags: [lasagne, uuniruoka]
-translation_languages: []
-translation_status: {}
+difficulty: Helppo
+tags:
+  - "aamupala"
+  - "uuniruoka"
 image:
   src: munakoiso-kesakurpitsalasagne.webp
   alt: "Munakoiso-kesäkurpitsalasagnea lautasella, pinnalla basilikaa ja raastettua juustoa."
   width: 1448
   height: 1086
-ingredients:
-  - {amount: 400, unit: g, item: munakoiso, note: "raaka syötävä osa"}
-  - {amount: 400, unit: g, item: kesäkurpitsa, note: "raaka syötävä osa"}
-  - {amount: 100, unit: g, item: sipuli, note: "kuorittuna"}
-  - {amount: 12, unit: g, item: valkosipuli, note: "kuorittuna; noin 3 kynttä"}
-  - {amount: 60, unit: g, item: oliiviöljy, note: "50 g paahtoon, 5 g vuokaan, 5 g viimeistelyyn"}
-  - {amount: 3, unit: g, item: tuore timjami, note: "lehdet kastikkeeseen"}
-  - {amount: 800, unit: g, item: valmis italialainen tomaattikastike, note: "650 g vuokaan, 150 g tarjoiluun"}
-  - {amount: 200, unit: g, item: lasagnelevyt, note: "kuivapaino; 180 g vaihtoehto erillisessä laskentamuistiossa"}
-  - {amount: 250, unit: g, item: mozzarella, note: "valutettuna; 175 g väliin, 75 g pinnalle"}
-  - {amount: 80, unit: g, item: parmesaani tai vastaava kova juusto, note: "60 g väliin, 20 g viimeistelyyn"}
-  - {amount: 10, unit: g, item: tuore basilika, note: "5 g väliin, 5 g viimeistelyyn"}
-  - {amount: 10, unit: g, item: viinietikka, note: "tarjoilukastikkeeseen"}
-  - {amount: 3, unit: g, item: suola, note: "kasviksille; vähennä tarvittaessa kastikkeen suolaisuuden mukaan"}
-  - {amount: 0.5, unit: g, item: mustapippuri, note: "viimeistelyyn"}
-  - {amount: 100, unit: ml, item: vesi, note: "vuokakastikkeeseen; säädä tarvittaessa 50–150 ml:aan"}
+carbs_net_per_serving_g: 48.32
+carbs_total_per_serving_g: 56.24
+protein_per_serving_g: 27.24
+fat_per_serving_g: 35.18
 ---
 
 # Munakoiso-kesäkurpitsalasagne
 
-**4 henkilölle · noin 1 tunti 50 minuuttia**
-
 ## Kuvaus
 
-Hans Välimäen videon pohjalta tehty Codexin kotikeittiösovellus. Ainesmäärät,
-uunipaahto ja alla oleva aikataulu ovat tämän reseptin arvioita, eivät
-tekijän täsmällinen alkuperäisresepti. Reseptiä ei ole koekeitetty.
+Paahdetut kasvikset, tomaattikastike ja kaksi juustoa kerrostetaan lasagnelevyjen väliin. Hans Välimäen videosta tehty kotikeittiösovellus.
 
 ## Ainekset
 
-Punnitse kasvikset raakoina syötävänä osana ja juustot ilman pakkauksia tai
-säilöntälientä. Kynsien koko vaihtelee: käytä valkosipulista grammapainoa.
-
-| Aines | Määrä 4 henkilölle |
-| --- | --- |
-| Munakoiso | 400 g |
-| Kesäkurpitsa | 400 g |
-| Sipuli | 100 g kuorittuna |
-| Valkosipuli | 12 g kuorittuna, noin 3 kynttä |
-| Oliiviöljy | yhteensä 60 g: 50 g paahtoon, 5 g vuokaan, 5 g viimeistelyyn |
-| Tuore timjami | 3 g lehtiä kastikkeeseen |
-| Valmis italialainen tomaattikastike | 800 g: 650 g vuokaan, 150 g tarjoiluun |
-| Lasagnelevyt | 200 g kuivana; vaihtoehtoisesti 180 g, ks. laskentamuistio |
-| Mozzarella | 250 g valutettuna: 175 g väliin, 75 g pinnalle |
-| Parmesaani tai vastaava kova juusto | 80 g: 60 g väliin, 20 g viimeistelyyn |
-| Tuore basilika | 10 g: 5 g väliin, 5 g viimeistelyyn |
-| Viinietikka | 10 g tarjoilukastikkeeseen |
-| Suola | 3 g kasviksille; vähennä tarvittaessa kastikkeen suolaisuuden mukaan |
-| Mustapippuri | 0,5 g viimeistelyyn |
-| Vesi | oletus 100 ml vuokakastikkeeseen; säätövara yhteensä 50–150 ml |
-
-Videolla käytetään Knorr Professional Tomato Pronto Napoletana -kastiketta
-ja Knorrin lasagnelevyjä. Kotiversioon käy muu maustettu tomaattikastike,
-mutta sen paksuus ja pastan pakkauksen kypsennysohje vaikuttavat valmistukseen.
-Tässä käytetään mozzarellaa; videolla mainitaan myös burrata.
+Käytä kuivana punnittuja durumvehnälevyjä, joita ei tarvitse esikeittää, sekä maustamatonta tomaattimurskaa.
 
 ## Valmistus
 
-1. **Valmistele kasvikset ja uuni.** Kuumenna uuni 200 °C:seen kiertoilmalla.
-   Kuivaa pestyt kasvikset. Leikkaa munakoiso ja kesäkurpitsa noin ½ cm:n
-   viipaleiksi ja viipaloi sipuli. Sekoita niihin 50 g öljyä ja 3 g suolaa
-   (vähemmän, jos kastike on hyvin suolaista). Erillistä 15 minuutin
-   maustumista ja nesteen valuttamista ei tarvita tässä paahtoversiossa.
-2. **Paahda kahdella pellillä.** Levitä kasvikset yhteen väljään kerrokseen.
-   Jätä peltien väliin tilaa ilmankierrolle ja vaihda niiden paikkoja puolivälissä.
-   Paahda noin 20–25 minuuttia, kunnes viipaleet taipuvat ja saavat hieman väriä.
-   Tarkkaile ohuita sipulisuikaleita. Ilman kiertoilmaa käytä 225 °C:ta,
-   vaihda peltien paikat ja varaudu noin 25–35 minuuttiin. Älä paahda
-   valkosipulia mukana: murskaa se seuraavan vaiheen kastikkeeseen.
-   Kun nostat kasvikset pois, säädä uuni jo kokoamisen ajaksi 180 °C:seen
-   tasalämmölle. Odota ennen lasagnen paistamista, että lämpö on laskenut.
-3. **Valmistele kastike ja juustot paahtamisen aikana.** Mittaa 150 g
-   tomaattikastiketta tarjoiluun ja lisää siihen 10 g viinietikkaa. Kuumenna
-   loput 650 g kastiketta valkosipulin ja timjamin kanssa. Anna poreilla
-   hiljaa 5–10 minuuttia; vältä kokoon keittämistä. Lisää lähtökohtaisesti
-   100 ml vettä, jotta kastike leviää helposti levyjen ympärille. Käytä
-   yhteensä 50–150 ml kastikkeen paksuuden ja pastapakkauksen ohjeen mukaan.
-   Valuta mozzarella, punnitse siitä 250 g ja revi paloiksi. Raasta kova juusto.
-4. **Kokoa lasagne.** Käytä noin 3 litran vuokaa, esimerkiksi sisämitoiltaan
-   20 × 25 cm ja vähintään 6 cm syvää. Öljyä vuoka 5 g:lla öljyä. Varaa
-   vuokakastikkeesta noin neljännes pinnalle ja levitä hieman pohjalle.
-   Punnitse valitsemasi pastamäärä ennen kokoamista: oletus on 200 g,
-   vaihtoehto 180 g. Tee siitä vuoan ja levyjen mittojen mukaan 3–4
-   pastakerrosta. Käytä koko punnittu määrä; 180 g:n vaihtoehto tarkoittaa
-   hieman vähemmän pastaa, ei ylimääräisiä levyjä saumoihin. Katkaise levyt
-   tarvittaessa sopiviksi ja vältä paksuja päällekkäisiä saumoja. Muiden
-   ainesten määrät säilyvät samoina myös 180 g:n vaihtoehdossa.
-   Jaa väleihin paahdetut kasvikset, kastike, 175 g mozzarellaa, 60 g kovaa
-   juustoa ja 5 g basilikaa. Jokaisen levyn molemmille puolille ja reunoille
-   tulee kosteaa täytettä. Peitä viimeinen pastakerros varatulla
-   vuokakastikkeella ja 75 g:lla mozzarellaa. Jätä vuoan reunaan vähintään
-   1 cm kiehumisvaraa; käytä suurempaa vuokaa, jos täyte ei mahdu.
-5. **Kypsennä ja tarkista pasta.** Paista 180 °C:ssa tasalämmöllä
-   keskitasolla noin 45 minuuttia. Aika ja lämpö perustuvat
-   [Knorr GN -levyjen valmistajan ohjeeseen](https://www.unileverfoodsolutions.fi/tuotteet/knorr-lasagnelevyt-gn-mitoitus-5-kg-34-FI-354670.html);
-   valmistaja ei erittele uunitilaa, joten tasalämpö on tämän reseptin
-   kotikeittiövalinta. Toisen tuotteen kanssa noudata pakkauksen ohjetta, myös mahdollista
-   esikypsennystä. Peitä vuoka väljästi foliolla ensimmäisiksi 25–30
-   minuutiksi ja poista folio loppuajaksi. Kokeile ohuella veitsellä
-   keskeltä ja reunoilta kaikkien pastakerrosten läpi: kovaa vastusta
-   ei saa tuntua. Jatka tarvittaessa 5–10 minuuttia kerrallaan ja suojaa
-   pinta, jos se tummuu liikaa. Pelkkä ruskistunut pinta ei osoita pastan kypsyyttä.
-6. **Vetäytä ja tarjoile.** Anna levätä 15 minuuttia. Lämmitä tarjoiluun
-   erotettu kastike ja jaa se tasan neljälle lautaselle lasagnen kanssa.
-   Viimeistele yhteensä 20 g:lla kovaa juustoa, 5 g:lla basilikaa,
-   0,5 g:lla mustapippuria ja 5 g:lla öljyä.
+1. Kuumenna uuni 200 °C:seen kiertoilmalla. Leikkaa munakoiso ja kesäkurpitsa noin puolen sentin viipaleiksi ja viipaloi sipuli. Sekoita niihin 50 g öljyä ja suola. Paahda väljästi kahdella pellillä 20–25 minuuttia, kunnes kasvikset taipuvat ja saavat hieman väriä. Vaihda peltien paikkaa puolivälissä ja kerää paistoneste talteen.
+2. Varaa 150 g tomaattimurskaa tarjoiluun ja sekoita siihen viinietikka. Kuumenna loput 650 g murskaa, vesi, murskattu valkosipuli, timjami ja peltien paistoneste. Anna poreilla hiljaa 5–10 minuuttia.
+3. Säädä uuni 180 °C:seen tasalämmölle. Öljyä noin 3 litran vuoka 5 g:lla öljyä. Levitä kastiketta pohjalle. Kerrosta levyt, kasvikset, kastike, 175 g mozzarellaa, 60 g parmesaania ja 5 g basilikaa. Peitä jokaisen levyn reunat ja pinta kastikkeella. Jätä pinnalle kastiketta ja 75 g mozzarellaa.
+4. Paista noin 45 minuuttia. Peitä foliolla ensimmäisiksi 25–30 minuutiksi. Kypsennä kunnes keskusta kuplii ja veitsi kulkee kaikkien pastakerrosten läpi vaivatta. Anna vetäytyä 15 minuuttia.
+5. Lämmitä tarjoilukastike. Jaa lasagne ja kastike neljälle. Viimeistele yhteensä 20 g parmesaanilla, 5 g basilikalla, 5 g oliiviöljyllä ja mustapippurilla.
 
 ## Muistiinpanot
 
-Käyttäjän toimittama havainnekuva esittää ruokalajia; se ei ole tämän
-reseptin koekeittokuva.
-
-### Aika ja valmistuksen rajat
-
-Perusaikataulu on 15 min valmistelua ja uunin kuumennusta + 25 min paahtoa
-(kastike ja juustot samalla) + 10 min kokoamista + 45 min paistoa + 15 min
-vetäytymistä = **110 min**. Aktiivista työtä on arviolta 35–40 min.
-Varaa käytännössä noin 100–130 min; uuni, pastatuote ja lisäkypsennys
-voivat pidentää aikaa. Uunin lämpötilan laskun oletetaan tapahtuvan
-kokoamisen aikana; mahdollinen lisäodotus pidentää kokonaisaikaa.
-Erillistä maustumisaikaa ei lasketa mukaan.
-
-Videon 200 °C ja 30–35 min eivät takaa tämän kuivia levyjä käyttävän
-sovelluksen kypsyyttä. Videolla kasvikset friteerataan ja lasagne
-jäähdytetään painon alla; tässä ne paahdetaan ja ruoka tarjoillaan lämpimänä.
-Béchamelkastiketta ei käytetä. Paahdon kuivattava vaikutus, kastikkeen
-vesimäärä ja vuoan riittävyys on vielä varmistettava koekeittiössä.
-
-**Allergeenit:** vehnä/gluteeni ja maito. Tarkista myös valittujen
-valmistuotteiden pakkaukset. Kasvisruokavalioon sopivuus edellyttää molempien
-juustojen olevan ilman eläinperäistä juoksetetta. Parmigiano Reggiano
-valmistetaan [vasikanjuoksetteella](https://backend.parmigianoreggiano.com/uploads/Single_document_PR_24042025_825de2b63f.pdf),
-joten kasvisversioon valitaan vastaava sopiva kova juusto. Reseptiä ei ole
-merkitty VHH- tai keto-reseptiksi.
-
-### Lähde ja laskentatilanne
-
-[Hans Välimäki: kasvislasagne, Facebook Reel](https://www.facebook.com/reel/1137314279255893).
-Julkaisu on merkitty kaupalliseksi yhteistyöksi Unilever Food Solutionsin kanssa.
-Alkuperäistä luonnosta varten aineksia ja työvaiheita tarkistettiin videokuvista,
-kuvatekstistä ja automaattisesta litteroinnista; litteroinnissa oli tunnistusvirheitä.
-Edellä kuvatut kotikeittiöratkaisut ovat Codexin sovellusta.
-
-Reseptillä ei ole hyväksyttyä GK-arvoa eikä kattavasti todennettuja
-ravintoarvoja. Aiempi lasku ja sen puutteet on erotettu
-[laskentamuistioon](https://github.com/ozirix-dev/Reseptit/blob/main/docs/nutrition/drafts/munakoiso-kesakurpitsalasagne.md).
-Muistion havainnollistavaa skenaariota ei syötetä julkaistuun GK-järjestelmään.
+Allergeenit: vehnä (gluteeni) ja maito. Parmesaani voi sisältää eläinperäistä juoksetetta. Jäähdytä tähteet nopeasti ja siirrä jääkaappiin. Käyttäjän havainnekuva ei ole tästä annoksesta. Ohjetta ei ole koekeitetty. Alkuperäinen video merkittiin kaupalliseksi yhteistyöksi. GK: ei ole hyväksyttyä GK-arvoa.

@@ -17,9 +17,43 @@ test("queue identifies missing and draft languages and keeps quarantines out of 
   assert.ok(queue.queue.some(entry => entry.recipe_id === "draft-queue-fixture" && entry.locale === "en" && entry.reasons.includes("draft")));
   assert.ok(queue.queue.some(entry => entry.recipe_id === "draft-queue-fixture" && entry.locale === "sv" && entry.reasons.includes("missing")));
   assert.ok(!queue.queue.some(entry => queue.quarantined_recipe_ids.some(id => id === entry.recipe_id)));
-  assert.ok(queue.queue.some(entry => entry.recipe_id === "vietnamilainen-banh-cuon-sienilla" && entry.hold?.startsWith("F25_SOURCE_HOLD")));
+  assert.ok(queue.quarantined_recipe_ids.includes("karibia-plantain-aamiaislautanen"));
+  assert.ok(!queue.queue.some(entry => entry.recipe_id === "karibia-plantain-aamiaislautanen"));
   assert.ok(!queue.next_batch.some(entry => entry.hold));
-  assert.equal(new Set(queue.next_batch.map(entry => entry.recipe_id)).size, 2);
+  assert.ok(queue.next_batch.some(entry => entry.recipe_id === "draft-queue-fixture"));
+});
+
+test("queue holds the remaining unresolved sources in each translation language", () => {
+  const queue = translationQueue(review, [], 10);
+  const bakwan = "indonesialainen-bakwan-maissifritter";
+  const homeVersion = "indonesialainen-bakwan-jagung-kotiversio";
+  assert.ok(queue.quarantined_recipe_ids.includes(bakwan));
+  assert.ok(!queue.queue.some(row => row.recipe_id === bakwan || row.recipe_id === homeVersion));
+  assert.deepEqual(review.audit.publishedTranslations.filter(entry => entry.data.recipe_id === homeVersion)
+    .map(entry => entry.data.language).sort(), ["en", "sv", "th"]);
+
+  const roti = "malesialainen-roti-jala-currykanalla";
+  assert.ok(queue.quarantined_recipe_ids.includes(roti));
+  assert.ok(!queue.queue.some(row => row.recipe_id === roti || row.recipe_id === roti + "-punnittu-v2"));
+  assert.deepEqual(review.audit.publishedTranslations.filter(entry => entry.data.recipe_id === roti + "-punnittu-v2")
+    .map(entry => entry.data.language).sort(), ["en", "sv", "th"]);
+
+  const predecessor = "indonesialainen-bubur-sumsum";
+  const successor = predecessor + "-punnittu-v2";
+  assert.ok(queue.quarantined_recipe_ids.includes(predecessor));
+  assert.ok(!queue.queue.some(row => row.recipe_id === predecessor || row.recipe_id === successor));
+  assert.deepEqual(review.audit.publishedTranslations.filter(entry => entry.data.recipe_id === successor)
+    .map(entry => entry.data.language).sort(), ["en", "sv", "th"]);
+
+  const target = structuredClone(review.audit.publishedTranslations[0]);
+  target.data.recipe_id = "indonesialainen-bakwan-maissifritter";
+  const key = target.data.recipe_id + ":" + target.data.language;
+  const proof = review.rows.find(row => row.codex_review)?.codex_review;
+  assert.ok(proof);
+  const audit = {...review.audit, publishedTranslations: [...review.audit.publishedTranslations, target]};
+  assert.deepEqual(changedReviewLedgerErrors(audit, {}, {[key]: proof}), [
+    key + ": FI source has a translation HOLD (bakwan_v2_frying_yield_oil_and_nutrition_review)",
+  ]);
 });
 
 test("queue distinguishes FI source edits, stale reviews and orphaned published translations", () => {

@@ -9,6 +9,8 @@ import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import quarantineIds from './public-recipe-quarantine.json' with { type: 'json' };
+import defaultSuccessors from '../../meta/recipe-successors.json' with { type: 'json' };
 
 const ROOT = path.resolve(fileURLToPath(new URL('../..', import.meta.url)));
 const RECIPE_PATH = /^reseptit\/(?:alkuruoat|paaruoat|jalkiruoat|leivonnaiset|aamupalat|valipalat)\/(?:[^/\\]+\/)*[^/\\]+\.md$/;
@@ -16,30 +18,37 @@ const isRecipePath = (file) => RECIPE_PATH.test(file) && path.posix.normalize(fi
 const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const REQUIRED_CHECKS = ['duplicates', 'ingredients', 'method', 'food_safety', 'servings_and_time', 'nutrition', 'glycemic'];
 
-// A single, exact successor of an existing historical quarantine. Both the
-// predecessor identity and original blob SHA must match; all other duplicate
-// URL slugs remain forbidden.
-const allowedHistoricalSuccessor = Object.freeze({
-  recipe_id: 'valimerellinen-kikherne-yrttiaamiainen-punnittu-v2',
-  url_slug: 'valimerellinen-kikherne-yrttiaamiainen',
-  predecessor_id: 'valimerellinen-kikherne-yrttiaamiainen',
-  predecessor_path: 'reseptit/aamupalat/valimerellinen-kikherne-yrttiaamiainen.md',
-  predecessor_blob_sha: '33923cc854eabc27c7905db024c3b2e7d9ca44ab',
-});
+function successorRegistryErrors(entries) {
+  if (!Array.isArray(entries)) return ['successor registry must be an array'];
+  const fields = ['recipe_id', 'url_slug', 'predecessor_id', 'predecessor_path', 'predecessor_blob_sha'];
+  for (const row of entries) {
+    if (!row || Object.keys(row).length !== fields.length ||
+      !fields.every(field => typeof row[field] === 'string') ||
+      ![row.recipe_id, row.url_slug, row.predecessor_id].every(value => ID.test(value)) ||
+      !isRecipePath(row.predecessor_path) || !/^[a-f0-9]{40}$/.test(row.predecessor_blob_sha) ||
+      row.recipe_id === row.predecessor_id || quarantineIds.includes(row.recipe_id) ||
+      !quarantineIds.includes(row.predecessor_id)) {
+      return ['successor registry entry must identify a distinct public successor and a quarantined predecessor'];
+    }
+  }
+  for (const key of ['recipe_id', 'url_slug', 'predecessor_id', 'predecessor_path']) {
+    if (new Set(entries.map(row => row[key])).size !== entries.length)
+      return ['duplicate successor registry ' + key];
+  }
+  return [];
+}
 
-function reviewedHistoricalSuccessor(identity, previous, review) {
-  const fixed = allowedHistoricalSuccessor;
+function reviewedHistoricalSuccessor(identity, previous, review, entry) {
   const claim = review?.supersedes_quarantined;
-  return identity.recipe_id === fixed.recipe_id &&
-    identity.url_slug === fixed.url_slug &&
-    previous.path === fixed.predecessor_path &&
-    previous.recipe_id === fixed.predecessor_id &&
-    previous.url_slug === fixed.url_slug &&
-    previous.status === 'published' &&
-    previous.source_git_blob_sha === fixed.predecessor_blob_sha &&
-    claim?.recipe_id === fixed.predecessor_id &&
-    claim?.source_path === fixed.predecessor_path &&
-    claim?.source_git_blob_sha === fixed.predecessor_blob_sha;
+  return entry && identity.url_slug === entry.url_slug &&
+    previous.path === entry.predecessor_path &&
+    previous.recipe_id === entry.predecessor_id &&
+    previous.url_slug === entry.url_slug &&
+    previous.status === 'published' && previous.language === 'fi' &&
+    previous.source_git_blob_sha === entry.predecessor_blob_sha &&
+    claim?.recipe_id === entry.predecessor_id &&
+    claim?.source_path === entry.predecessor_path &&
+    claim?.source_git_blob_sha === entry.predecessor_blob_sha;
 }
 
 export function hashContent(value) {
@@ -73,15 +82,23 @@ function listRecipes(root) {
     .filter(isRecipePath);
 }
 
-export function validateReview(recipePath, source, review, allRecipes = []) {
+export function validateReview(recipePath, source, review, allRecipes = [], successors = defaultSuccessors) {
   const errors = [];
   let identity;
   try { identity = readRecipeIdentity(source); } catch (error) { return [String(error.message)]; }
   if (!isRecipePath(recipePath) || !ID.test(identity.recipe_id)) errors.push('invalid canonical FI recipe path or ID');
   if (identity.language !== 'fi' || identity.status !== 'published') errors.push('expected published Finnish source');
+  const registryErrors = successorRegistryErrors(successors);
+  if (registryErrors.length) return [...errors, ...registryErrors];
+  const entry = successors.find(row => row.recipe_id === identity.recipe_id);
+  const predecessor = entry && allRecipes.find(row => row.path === entry.predecessor_path);
+  if (entry || review?.supersedes_quarantined) {
+    if (!predecessor || !reviewedHistoricalSuccessor(identity, predecessor, review, entry))
+      errors.push('registered successor needs the exact quarantined predecessor and review claim');
+  }
   const occurrences = allRecipes.filter((row) => row.path !== recipePath &&
     (row.recipe_id === identity.recipe_id || row.url_slug === identity.url_slug) &&
-    !reviewedHistoricalSuccessor(identity, row, review));
+    !reviewedHistoricalSuccessor(identity, row, review, entry));
   if (occurrences.length) errors.push('recipe_id/url_slug already exists: ' + occurrences.map((r) => r.path).join(', '));
   if (!review || typeof review !== 'object' || Array.isArray(review)) return [...errors, 'review evidence missing'];
   if (review.schema_version !== 1 || review.decision !== 'approved') errors.push('review decision is not approved (schema_version=1)');
@@ -176,6 +193,11 @@ export function runCli(root = ROOT, argv = process.argv.slice(2), env = process.
     changesFromDiff(git(['diff', '--name-status', '-z', '--find-renames', base, head, '--', 'reseptit/'], root));
   const json = argv.includes('--json');
   const assessments = [];
+  const registryPath = path.join(root, 'meta', 'recipe-successors.json');
+  const successors = root === ROOT || existsSync(registryPath)
+    ? JSON.parse(readFileSync(registryPath, 'utf8')) : defaultSuccessors;
+  const registryErrors = successorRegistryErrors(successors);
+  if (registryErrors.length) throw new Error(registryErrors.join('; '));
   const all = inventory(root);
   for (const { file, previousFile } of candidates) {
     const source = readFileSync(path.join(root, file), 'utf8');
@@ -186,7 +208,7 @@ export function runCli(root = ROOT, argv = process.argv.slice(2), env = process.
     if (!single && !isNewPublication(current, oldIdentity)) continue;
     if (current.status !== 'published') continue;
     const review = reviewFile(root, file, current.recipe_id);
-    const errors = validateReview(file, source, review, all);
+    const errors = validateReview(file, source, review, all, successors);
     const code = errors.length ? 'HOLD_NEW_RECIPE_EVIDENCE' : 'EDITORIAL_EVIDENCE_CURRENT';
     assessments.push({ recipeId: current.recipe_id, path: file, code, reasons: errors });
     if (!json) {

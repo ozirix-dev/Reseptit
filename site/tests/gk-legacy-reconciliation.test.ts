@@ -1,6 +1,13 @@
+import { sourceReleaseGateDecision } from "../scripts/f25-source-release-gate";
+import { molletesHistoricalText, molletesSourcePath, molletesRecipeId } from "../scripts/molletes-reviewed-source";
+import { koreanRiceBowlHistoricalText } from "../scripts/korean-rice-bowls-reviewed-source";
+import { originalForCoconutBananaHistory } from "./coconut-banana-history";
+import {coconutBananaHistoricalBindingText, coconutBananaRecipeId, coconutBananaSourcePath} from "../scripts/coconut-banana-reviewed-source";
+import {biryaniSourceBeforeReview, biryaniSourcePath} from "../scripts/biryani-reviewed-source";
+import {parseMarkdown} from "../src/content/markdown";
 import {assertOriginalContentTransition,frozenOriginalRows,originalContentInventoryBefore,restoreBeforeOriginalContent} from './original-content-transition';
 import {p1Transition,requiresP1SourceCorrection,verifyP1SourceInputs} from './p1-source-transition';
-import {recipeTextForApprovedSnapshot} from '../scripts/approved-recipe-note-edits';
+import {recipeTextForApprovedSnapshot,reviewedRecipesWithHistoricalGk} from '../scripts/approved-recipe-note-edits';
 import {execFileSync} from 'node:child_process';
 import {strict as assert} from 'node:assert';
 import {test} from 'node:test';
@@ -21,6 +28,10 @@ import { b21CanonicalHistoryPaths, originalForB21CanonicalHistory } from "./b21-
 import { c13CanonicalHistoryPaths, originalForC13CanonicalHistory } from "./c13-canonical-historical-transition";
 import { reviewedThreeCanonicalPaths, originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
 import {fileURLToPath} from 'node:url';
+import { jumeokbapSourcePath, originalForJumeokbapHistory } from "./jumeokbap-history";
+import { historicalSources } from "./history/historical-source-reader";
+import { tamagoKakeGohanSourcePath, originalForTamagoKakeGohanHistory } from "./tamago-kake-gohan-history";
+import { ketoprakSourcePath, originalForKetoprakHistory } from "./ketoprak-history";
 import {projectTranslationAuditSource} from '../scripts/translation-audit';
 
 const root=fileURLToPath(new URL('../../',import.meta.url));
@@ -139,6 +150,33 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     return {...row,notes:(frozen.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n',lineEnding),
       source_content_hash:createHash('sha256').update(frozen).digest('hex')};
    }
+   if (row.source_path === jumeokbapSourcePath || historicalSources.has(row.source_path) || row.source_path === ketoprakSourcePath || row.source_path === tamagoKakeGohanSourcePath) {
+    const published = read(row.source_path).replaceAll('\r\n', '\n');
+    const prior = originalForKetoprakHistory(root, row.source_path, originalForJumeokbapHistory(root, row.source_path, published));
+    const frozen = historicalSources.has(row.source_path)
+      ? historicalSources.restore(row.source_path, published).text
+      : originalForTamagoKakeGohanHistory(root, row.source_path, prior);
+    assert.equal(row.source_content_hash, createHash('sha256').update(published).digest('hex'));
+    assert.equal(normalNotes, (published.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n', lineEnding));
+    return {...row, notes: (frozen.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n', lineEnding),
+      source_content_hash: createHash('sha256').update(frozen).digest('hex')};
+   }
+   if (row.recipe_id === "valimerellinen-menemen-fetalla") {
+    const published = read(row.source_path).replaceAll("\r\n", "\n");
+    const frozen = originalForC13CanonicalHistory(root, row.source_path, published);
+    const previous = parseMarkdown(frozen);
+    assert.ok(previous);
+    assert.equal(row.source_content_hash, "3bde94c1717fc9b09e442f4252bcad5ae1d1c8672e13e87dd83ccd4396789d8b");
+    assert.equal(row.status, "ESTIMATE WITH EVIDENCE");
+    assert.deepEqual(row.values, row.recalculatedValues);
+    assert.equal(row.calculationEvidence, "docs/nutrition/calculations/valimerellinen-menemen-fetalla.json");
+    const errors = ["Calculation evidence file is missing"];
+    return {...row, source_content_hash: createHash("sha256").update(frozen).digest("hex"),
+      values: Object.fromEntries(Object.keys(row.values).map(key => [key, previous.data[key]])),
+      status: "INSUFFICIENT SOURCE DATA", calculationEvidence: null, recalculatedValues: null,
+      evidenceErrors: errors, totalCarbohydrateDefinition: "NOT VERIFIED",
+      brandAndRawWeightEvidence: "NOT VERIFIED", notes: "", uncertainties: errors};
+   }
    if (c13CanonicalHistoryPaths.includes(row.source_path as (typeof c13CanonicalHistoryPaths)[number])) {
     const published=read(row.source_path).replaceAll('\r\n','\n');
     const frozen=originalForC13CanonicalHistory(root,row.source_path,published);
@@ -206,11 +244,86 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     assert.equal(normalNotes,notesOf(displayed),row.source_path+' audited public notes');
     return {...row,notes:notesOf(raw)};
    }
+   if (["reseptit/aamupalat/korealainen-bataatti-riisikulho.md", "reseptit/aamupalat/korealainen-tofu-kimchi-aamiaiskulho.md"].includes(row.source_path)) {
+    const live = read(row.source_path).replaceAll("\r\n", "\n");
+    const old = koreanRiceBowlHistoricalText(row.source_path, live);
+    assert.notEqual(live, old);
+    assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
+    return {...row, ingredients: parseMarkdown(old)!.data.ingredients, notes: "", source_content_hash: createHash("sha256").update(old).digest("hex")};
+   }
+   if (reviewedRecipesWithHistoricalGk.has(row.source_path)) {
+    const live = read(row.source_path).replaceAll("\r\n", "\n");
+    const historical = recipeTextForApprovedSnapshot(row.source_path, live);
+    assert.notEqual(live, historical);
+    assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
+    const historicalHash = createHash("sha256").update(historical).digest("hex");
+    if (sourceReleaseGateDecision(row.recipe_id).reason === "REVIEWED_SOURCE_AND_EXACT_NUTRITION_AND_GK_BINDINGS") {
+      const baseline = row.recipe_id === "japanilainen-hojicha-jogurtti-persimonilla"
+        ? json("site/tests/fixtures/f25-hojicha-previous-nutrition-audit.json")
+        : row.recipe_id === "munakoiso-kesakurpitsalasagne"
+          ? json("site/tests/fixtures/f25-lasagne-previous-nutrition-audit.json")
+          : json("docs/nutrition/audit.json").inventory.find((entry: {recipe_id:string}) => entry.recipe_id === row.recipe_id);
+      assert.equal(baseline?.source_content_hash, historicalHash, "sealed historical nutrition inventory");
+      assert.equal(row.status, "ESTIMATE WITH EVIDENCE");
+      const inventoryBeforeRelease = recipeTextForApprovedSnapshot(row.source_path, live, "original-gk");
+      if (inventoryBeforeRelease !== historical) {
+        const transition = json("docs/nutrition/gk-original-content-transition.json");
+        const sealedTransition = transition.changes[row.recipe_id]?.after?.inventory;
+        assert.ok(sealedTransition, row.recipe_id);
+        assert.equal(sealedTransition.source_content_hash, createHash("sha256").update(inventoryBeforeRelease).digest("hex"));
+        return sealedTransition;
+      }
+      return baseline;
+    }
+    return {...row, ingredients: parseMarkdown(historical)!.data.ingredients, notes: "", source_content_hash: historicalHash};
+   }
+   if (row.source_path === molletesSourcePath) {
+    const live = read(row.source_path).replaceAll("\r\n", "\n");
+    const old = molletesHistoricalText(row.source_path, live);
+    assert.notEqual(live, old);
+    assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
+    return {...row, ingredients: parseMarkdown(old)!.data.ingredients, notes: "", source_content_hash: createHash("sha256").update(old).digest("hex")};
+   }
+   if (row.source_path === coconutBananaSourcePath) {
+    const live = read(row.source_path).replaceAll("\r\n", "\n");
+    const old = originalForCoconutBananaHistory(root, row.source_path, live);
+    const before = parseMarkdown(old)!;
+    const sourceHash = (text: string) => createHash("sha256").update(text).digest("hex");
+    assert.equal(row.source_content_hash, sourceHash(live));
+    assert.deepEqual(parseMarkdown(coconutBananaHistoricalBindingText(live))!.data.ingredients, before.data.ingredients);
+    return {...row, ingredients: before.data.ingredients, notes: "", source_content_hash: sourceHash(old)};
+   }
+   if (row.source_path === "reseptit/aamupalat/japanilainen-natto-riisikulho.md") {
+    const live = read(row.source_path).replaceAll("\r\n", "\n");
+    const historical = recipeTextForApprovedSnapshot(row.source_path, live);
+    assert.notEqual(historical, live);
+    assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
+    return {...row, notes: "", source_content_hash: createHash("sha256").update(historical).digest("hex")};
+   }
    if (["reseptit/paaruoat/baozi.md", "reseptit/paaruoat/congee-riisipuuro.md"].includes(row.source_path)) {
     const live = read(row.source_path).replaceAll("\r\n", "\n");
     const historical = recipeTextForApprovedSnapshot(row.source_path, live);
     assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
     return {...row, notes: normalNotes, source_content_hash: createHash("sha256").update(historical).digest("hex")};
+   }
+   if (row.source_path === 'reseptit/alkuruoat/tunisialainen-brik.md' && row.source_content_hash === 'ba717dc99f3f78b6001fdcea43afb0e06002e6c40df2f96428e13c9008b80dfa') {
+    const baseline = execFileSync('git', ['show', 'e68d31d7321666f173ff3caf438c3f111285f275:' + row.source_path],
+      {cwd:root,encoding:'utf8'});
+    return {...row, notes:(baseline.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n',lineEnding), source_content_hash:createHash('sha256').update(baseline).digest('hex')};
+   }
+   if (row.source_path === biryaniSourcePath) {
+    const live = read(row.source_path).replaceAll('\r\n','\n');
+    const original = biryaniSourceBeforeReview(row.source_path,live);
+    if (original !== live) {
+     const beforeBiryani = parseMarkdown(original)!;
+     assert.equal(row.source_content_hash, createHash('sha256').update(live).digest('hex'));
+     assert.deepEqual(Object.values(row.values),[60.83,63.09,37.63,20.9]);
+     const values=Object.fromEntries(Object.keys(row.values).map(key=>[key,beforeBiryani.data[key]]));
+     return {...row,values,ingredients:beforeBiryani.data.ingredients,
+       recalculatedValues:{carbs_net_per_serving_g:60.47,carbs_total_per_serving_g:62.73,protein_per_serving_g:37.41,fat_per_serving_g:20.64},
+       notes:(beforeBiryani.content.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n',lineEnding),
+       source_content_hash:createHash('sha256').update(original).digest('hex')};
+    }
    }
    if (row.source_path === 'reseptit/alkuruoat/jiaozi.md') {
     const live = read(row.source_path).replaceAll('\r\n', '\n');
@@ -389,4 +502,55 @@ test('the reviewed P1 main profile forbids restoring cow-milk coconut inputs aft
  assert.doesNotThrow(()=>verifyP1SourceInputs(old,false));
  const mutated=structuredClone(old);mutated[0].ingredients[0].grams=999;
  assert.throws(()=>verifyP1SourceInputs(mutated,false),/changed/);
+});
+
+test("the new coconut banana recipe keeps the legacy GI/GK binding out of the public estimate", async () => {
+ const live = read(coconutBananaSourcePath).replaceAll("\r\n", "\n");
+ const changed = live.replace("amount: 40", "amount: 41");
+ assert.equal(coconutBananaHistoricalBindingText(changed), changed);
+ const historical = report.results.find((result: any) => result.recipeId === coconutBananaRecipeId);
+ assert.equal(historical.glycemicLoadPerServing, null);
+ const {glycemicLoadPilotResults} = await import("../src/generated/glycemic-load-pilot.generated");
+ const published = glycemicLoadPilotResults.find(result => result.recipeId === coconutBananaRecipeId)!;
+ assert.equal(published.status, "INSUFFICIENT SOURCE DATA");
+ assert.equal(published.glycemicLoadPerServing, null);
+ assert.deepEqual(published.carbohydrateSources, []);
+ assert.deepEqual(published.incompleteReasons, []);
+});
+
+test("the two new rice bowls withhold an original GK number and keep the separate tofu-kimchi estimate", async () => {
+ const {glycemicLoadPilotResults} = await import("../src/generated/glycemic-load-pilot.generated");
+ const {gkOnlyVariants} = await import("../src/generated/gk-only-variants.generated");
+ const ids = ["korealainen-bataatti-riisikulho", "korealainen-tofu-kimchi-aamiaiskulho"];
+ for (const id of ids) {
+  const file = "reseptit/aamupalat/" + id + ".md";
+  const live = read(file);
+  assert.notEqual(koreanRiceBowlHistoricalText(file, live), live);
+  const unreviewed = live.replace("amount: 100", "amount: 101");
+  assert.notEqual(unreviewed, live);
+  assert.equal(koreanRiceBowlHistoricalText(file, unreviewed), unreviewed);
+  const published = glycemicLoadPilotResults.find(result => result.recipeId === id)!;
+  assert.equal(published.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(published.glycemicLoadPerServing, null);
+  assert.deepEqual(published.carbohydrateSources, []);
+  assert.deepEqual(published.incompleteReasons, []);
+  assert.deepEqual(Object.keys(published.localeRoutes).sort(), ["en", "fi", "sv", "th"]);
+ }
+ assert.equal(gkOnlyVariants.find(variant => variant.recipeId === ids[1])?.point, 25.16);
+});
+
+test("the historical molletes GK stays in the audit and out of the current recipe and public coverage", async () => {
+ const current = read(molletesSourcePath);
+ const modified = current.replace("amount: 120", "amount: 121");
+ assert.notEqual(current, modified);
+ assert.equal(molletesHistoricalText(molletesSourcePath, modified), modified);
+ const old = report.results.find((row: any) => row.recipeId === molletesRecipeId);
+ assert.equal(old.glycemicLoadPerServing, 20.01);
+ const {glycemicLoadPilotResults} = await import("../src/generated/glycemic-load-pilot.generated");
+ const {gkVersionCoverage} = await import("../src/generated/gk-only-variants.generated");
+ const published = glycemicLoadPilotResults.find(row => row.recipeId === molletesRecipeId)!;
+ assert.equal(published.status, "INSUFFICIENT SOURCE DATA");
+ assert.equal(published.glycemicLoadPerServing, null);
+ assert.deepEqual(published.sourceReferences, []);
+ assert.ok(!gkVersionCoverage.numericRecipeIds.includes(molletesRecipeId));
 });

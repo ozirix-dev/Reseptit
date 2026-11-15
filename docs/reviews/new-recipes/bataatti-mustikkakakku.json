@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "recipe_id": "bataatti-mustikkakakku",
+  "source_path": "reseptit/leivonnaiset/bataatti-mustikkakakku.md",
+  "source_sha256": "60a130ef36932ac58e85bd9d41056fd2095a3aadeef6f3a80456757dc10ff70e",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.facebook.com/reel/2155888158647891",
+      "https://grannyruthsredflags.com/blogs/news/flourless-sweet-potato-blueberry-cake",
+      "https://earthsweetboutique.com/blogs/news/flourless-sweet-potato-and-blueberry-cake"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/bataatti-mustikkakakku.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Päähaaran reseptihakemistosta löytyi erillisiä bataattiruokia ja mustikkapiirakka, mutta ei tämän kakun ID:tä, slugia tai bataatti-mustikkakakkua. Julkinen reitti antoi HTTP 404:n ennen lisäystä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Reelissä mainitut kuusi ainesta ovat mukana. Kirjallinen vertailuohje antaa 425–450 g kypsää bataattisosetta, viisi isoa munaa ja mustikka-, mauste- sekä siirappimäärät. Grammat punnitaan ohjeen mukaan."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Vertailuohje tukee sileää kypsää jäähtynyttä bataattisosetta, marjojen lisäämistä jäisinä, 175 °C:ta sekä 35–40 minuutin paistoa ja jäähtymistä vuoassa. Riippumaton Crystal Baldwinin versio tukee samaa menetelmää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kananmuna nimetty. Keskustan on hyydyttävä ja saavutettava 71 °C. Ohje käyttää kotimaisia pakastemustikoita ja antaa Ruokaviraston keitto-ohjeen ulkomaisille pakastemarjoille."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kakku paistetaan 20 cm:n vuoassa ja jaetaan kahdeksaan yhtä suureen palaan. Aika 110 min on arvio valmiiksi kypsälle ja jäähtyneelle bataatille. Kypsennys ja bataatin jäähdytys ovat erillinen esivalmistelu."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kuuden ainesrivin Fineli- ja AFCD-lähteet sidottiin määriin ja annosmäärään. Puuttuvien polyolitietojen takia julkisia makroarvoja tai ruokavalioluokitusta ei anneta."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmiille jauhotonta bataattia, munaa, siirappia ja mustikkaa sisältävälle kakulle ei ole hyväksyttyä GI- tai GK-syötettä. GK-rekisteri sitoo julkaisuversion Git-blobin ilman numeerista arvoa."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ulkomaiset-pakastemarjat/",
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ],
+    "image_path": "kuvat/leivonnaiset/bataatti-mustikkakakku.webp",
+    "image_sha256": "b7824d018bd77cf9c280b32bd05abf7cdab3be41ea4214d300561944a961de8d",
+    "image_review": "ImageGen-havainnekuva näyttää matalan, oranssinruskean kakun ja mustikoita leikkauspinnassa.",
+    "physical_cook_test": false
+  }
+}

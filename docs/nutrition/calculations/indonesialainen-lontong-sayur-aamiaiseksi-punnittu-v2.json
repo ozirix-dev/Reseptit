@@ -1,0 +1,422 @@
+{
+  "recipeId": "indonesialainen-lontong-sayur-aamiaiseksi-punnittu-v2",
+  "sourceHash": "8a9d925cae9b4c6a5c26ae399418a20b41088b683ccd6bf8d83422a2a66ea0b1",
+  "calculatedAt": "2026-11-13",
+  "batchId": "batch-557",
+  "servings": 2,
+  "scope": "Plant-based adaptation with pressed long-grain rice, firm tofu and coconut vegetables. The compressed rice reference uses two cups water per cup rice by volume; 250 g per 100 g dry rice is a compatible weight ratio. Cook until absorbed and soft, press in a 2 cm layer, chill rapidly, then reheat once until steaming throughout. Dry rice, edible trimmed produce and drained tofu are weighed. Full cooking-oil retention. No physical trial.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kuivaa valkoista pitkäjyväistä riisiä",
+      "amount": 100,
+      "unit": "g",
+      "state": "dry white long-grain rice, composite proxy",
+      "matchEvidence": "Source F007682 (dry white long-grain rice, composite proxy). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F007682-release-3",
+        "name": "Rice, white, uncooked",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "dry white long-grain rice, composite proxy",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 74,
+          "fibre": 0.8,
+          "polyols": 0,
+          "protein": 7,
+          "fat": 0.9
+        }
+      }
+    },
+    {
+      "item": "vettä riisiin",
+      "amount": 250,
+      "unit": "g",
+      "state": "tap water for rice",
+      "matchEvidence": "Source 922 (tap water for rice). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "tap water for rice",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "kiinteää tofua valutettuna",
+      "amount": 150,
+      "unit": "g",
+      "state": "drained firm tofu, AFCD as purchased",
+      "matchEvidence": "Source F009176 (drained firm tofu, AFCD as purchased). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F009176-release-3",
+        "name": "Tofu (soy bean curd), firm, as purchased",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "drained firm tofu, AFCD as purchased",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 1,
+          "polyols": 0,
+          "protein": 12.8,
+          "fat": 8.3
+        }
+      }
+    },
+    {
+      "item": "valkokaalia, syötävää osaa",
+      "amount": 120,
+      "unit": "g",
+      "state": "raw white cabbage",
+      "matchEvidence": "Source 320 (raw white cabbage). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-320-release-20",
+        "name": "VALKOKAALI, KERÄKAALI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/320",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw white cabbage",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 4.97,
+          "FIBT": 2,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 4.97,
+          "fibre": 2,
+          "polyols": 0,
+          "protein": 1.2,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "porkkanaa kuorittuna",
+      "amount": 60,
+      "unit": "g",
+      "state": "raw carrot",
+      "matchEvidence": "Source 300 (raw carrot). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-300-release-20",
+        "name": "PORKKANA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/300",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw carrot",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 5.56,
+          "FIBT": 2.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 5.56,
+          "fibre": 2.4,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "täysrasvaista säilykekookosmaitoa",
+      "amount": 200,
+      "unit": "g",
+      "state": "canned regular coconut milk",
+      "matchEvidence": "Source F002991 (canned regular coconut milk). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F002991-release-3",
+        "name": "Coconut, milk, canned, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "canned regular coconut milk",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.7,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.4,
+          "fat": 15.4
+        }
+      }
+    },
+    {
+      "item": "mietoa käyttövalmista kasvislientä",
+      "amount": 250,
+      "unit": "g",
+      "state": "prepared diluted vegetable stock",
+      "matchEvidence": "Source 29026 (prepared diluted vegetable stock). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-29026-release-20",
+        "name": "KASVISLIEMI, LAIMENNETTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29026",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "prepared diluted vegetable stock",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0.411,
+          "FIBT": 0.055,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0.411,
+          "fibre": 0.055,
+          "polyols": 0,
+          "protein": 0.29,
+          "fat": 0.716
+        }
+      }
+    },
+    {
+      "item": "salottisipulia kuorittuna",
+      "amount": 30,
+      "unit": "g",
+      "state": "raw shallot",
+      "matchEvidence": "Source F008227 (raw shallot). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F008227-release-3",
+        "name": "Shallot, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "raw shallot",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 3.1,
+          "fibre": 2.9,
+          "polyols": 0,
+          "protein": 1.5,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "valkosipulia kuorittuna",
+      "amount": 6,
+      "unit": "g",
+      "state": "raw garlic",
+      "matchEvidence": "Source F004193 (raw garlic). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F004193-release-3",
+        "name": "Garlic, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "raw garlic",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 10.2,
+          "fibre": 16.9,
+          "polyols": 0,
+          "protein": 6.1,
+          "fat": 2.8
+        }
+      }
+    },
+    {
+      "item": "tuoretta punaista chiliä, kanta poistettuna",
+      "amount": 4,
+      "unit": "g",
+      "state": "raw red chilli",
+      "matchEvidence": "Source F002901 (raw red chilli). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F002901-release-3",
+        "name": "Chilli (chili), red, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "raw red chilli",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 7.2,
+          "polyols": 0,
+          "protein": 1.4,
+          "fat": 0.7
+        }
+      }
+    },
+    {
+      "item": "jauhettua kurkumaa",
+      "amount": 2,
+      "unit": "g",
+      "state": "ground turmeric",
+      "matchEvidence": "Source F009335 (ground turmeric). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F009335-release-3",
+        "name": "Turmeric, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "ground turmeric",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 44.4,
+          "fibre": 22.7,
+          "polyols": 0,
+          "protein": 9.7,
+          "fat": 3.2
+        }
+      }
+    },
+    {
+      "item": "rypsiöljyä",
+      "amount": 10,
+      "unit": "g",
+      "state": "canola oil, all retained",
+      "matchEvidence": "Source 535 (canola oil, all retained). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All cooking oil counted. Oil left in the pan is an unmeasured loss.",
+      "record": {
+        "id": "fineli-535-release-20",
+        "name": "RYPSIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/535",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "canola oil, all retained",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    }
+  ]
+}

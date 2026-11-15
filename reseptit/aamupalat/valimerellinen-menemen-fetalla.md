@@ -31,10 +31,10 @@ ingredients:
     unit: ""
     item: "suolaa maun mukaan"
 servings: 2
-carbs_net_per_serving_g: 5.38
-carbs_total_per_serving_g: 7.87
-protein_per_serving_g: 21.57
-fat_per_serving_g: 31.00
+carbs_net_per_serving_g: 5.35
+carbs_total_per_serving_g: 7.13
+protein_per_serving_g: 21.58
+fat_per_serving_g: 31.02
 time_total_min: 25
 difficulty: Helppo
 tags:
@@ -60,11 +60,11 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Pese ja hienonna ainesluettelon yksi tomaatti ja yksi vihreä paprika. Riko kaksi kananmunaa pieneen kulhoon ja sekoita ne haarukalla kevyesti; mittaa 150 g fetaa ja murustele se erikseen.
-2. Kuumenna pannulla luettelon koko 1 rkl neutraalia paistoöljyä. Kuullota paprikaa keskilämmöllä kunnes se pehmenee, lisää tomaatti ja jatka kypsentämistä, kunnes liika neste on haihtunut ja kastike on sakeaa.
-3. Laske lämpöä. Kaada kananmunat tomaatti-paprikaseokseen ja kääntele varovasti, kunnes ne ovat hyytyneet mutta eivät kuivahtaneet. Tarkista munan kypsyys ennen tarjoamista.
-4. Ota pannu pois liedeltä ja jaa ruoka kahteen annokseen. Murustele päälle kaikki 150 g fetaa ja lisää luettelon suolaa vain tarvittaessa. Älä lisää papuja, lihaa, sipulia tai listaamattomia mausteita.
+1. Pese ja hienonna keskikokoinen tomaatti ja vihreä paprika. Vatkaa kaksi munaa kevyesti haarukalla.
+2. Kuumenna öljy pannulla keskilämmöllä. Kuullota paprika pehmeäksi, lisää tomaatti ja kypsennä, kunnes ylimääräinen neste on haihtunut.
+3. Laske lämpöä. Lisää munat ja kääntele kasvisten joukkoon, kunnes munaseos on kauttaaltaan hyytynyt eikä nestemäistä munaa näy.
+4. Jaa kahdelle lautaselle. Murustele päälle 150 g fetaa ja lisää suolaa tarvittaessa.
 
 ## Muistiinpanot
 
-Feta on alkuperäisen version oma lisäys. Tomaatti ja paprika on ilmoitettu kappalemäärinä, ei grammoina; niiden todellinen ravintokoostumus on vielä tarkistettava.
+Sisältää kananmunaa ja maitoa. Ravintoarvio perustuu keskikokoiseen tomaattiin ja paprikaan. Annosarvot vaihtelevat kasvisten koon ja fetan mukaan.

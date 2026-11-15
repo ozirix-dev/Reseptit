@@ -3,8 +3,8 @@
 Suorita `site/`-kansiossa `npm run review:translations`.
 Komento lukee julkaistun inventaarion, nykyiset rakennetarkistukset ja
 tunnettuja virheitä etsivät semantiikkasäännöt. Se kirjoittaa paikallisen
-`tmp/translation-review/index.html`-vertailupaketin ja `registry.json`-rekisterin.
-`--snapshot` tallentaa päivätyn työn yhteydessä rekisterin myös dokumentaatioon.
+`tmp/translation-review/index.html`-vertailupaketin ja saman hakemiston
+`registry.json`-rekisterin.
 Paketti ei kuulu `site/public`- tai `site/dist`-hakemistoon eikä sivuston buildiin.
 
 Suomenkielinen lähde ja käännös näkyvät rinnakkain. Näkyvissä ovat otsikko,

@@ -68,7 +68,10 @@ ingredients:
   - amount: 1
     unit: g
     item: หญ้าฝรั่น
-    note: แช่ในนมอุ่น 2 ช้อนโต๊ะ
+  - amount: 30
+    unit: g
+    item: นมโคเต็มมันเนย
+    note: สำหรับแช่หญ้าฝรั่น
   - amount: 20
     unit: g
     item: ผักชีสด
@@ -80,10 +83,10 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/hyderabadi-kanabiryani.md
 translation_of: hyderabadi-kanabiryani
-carbs_net_per_serving_g: 60.47
-carbs_total_per_serving_g: 62.73
-protein_per_serving_g: 37.41
-fat_per_serving_g: 20.64
+carbs_net_per_serving_g: 60.83
+carbs_total_per_serving_g: 63.09
+protein_per_serving_g: 37.63
+fat_per_serving_g: 20.9
 
 ---
 
@@ -97,7 +100,7 @@ fat_per_serving_g: 20.64
 
 ## วิธีทำ
 
-1. ซาวข้าวแล้วแช่ในน้ำเย็นประมาณ 20 นาที สะเด็ดน้ำ.
+1. ซาวข้าวแล้วแช่ในน้ำเย็น 20 นาที จากนั้นสะเด็ดน้ำ อุ่นนมโคเต็มมันเนย 30 กรัม แล้วแช่หญ้าฝรั่นในนมระหว่างแช่ข้าว
 2. ผสมไก่กับโยเกิร์ต การัม มาซาล่า ยี่หร่าบด เมล็ดผักชีป่น ขมิ้น และเกลือ พักไว้ 20 นาที
 3. ผัดหัวหอมในน้ำมันจนเป็นสีเหลืองทอง ตักพักไว้ครึ่งหนึ่ง ใส่อบเชยทั้งแท่งและฝักกระวานทั้งหมดลงในหม้อ
 4. ใส่ไก่และผัดให้ผิวเริ่มเป็นสีน้ำตาล ปิดฝาและปรุงด้วยไฟอ่อน 15 นาที
@@ -107,4 +110,4 @@ fat_per_serving_g: 20.64
 
 ## หมายเหตุ
 
-- ตรวจสอบความสุกของไก่ในส่วนที่หนาที่สุดก่อนเสิร์ฟ
+- ก่อนเสิร์ฟวัดอุณหภูมิส่วนที่หนาที่สุดของไก่ให้ได้อย่างน้อย 74 °C ปรุงต่อหากจำเป็น

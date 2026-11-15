@@ -1,0 +1,198 @@
+{
+  "recipeId": "rahka-marjakerroskulho",
+  "sourceHash": "4b268c3070fde61c8f54d0ab5e37349c236801f765b221b4eab777758e7348ca",
+  "calculatedAt": "2026-11-14",
+  "batchId": "batch-564",
+  "servings": 4,
+  "scope": "Four equal glasses; all specified raw fruit, nuts and chilled dairy apportioned. No sweetener.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 250,
+      "unit": "g",
+      "item": "maustamatonta maitorahkaa (rasvaa alle 0,5 %)",
+      "state": "plain quark below 0.5% fat",
+      "matchEvidence": "Fineli Release 20 RAHKA, MAITORAHKA, MAUSTAMATON, RASVAA <0,5 %",
+      "record": {
+        "id": "fineli-622-release-20",
+        "name": "RAHKA, MAITORAHKA, MAUSTAMATON, RASVAA <0,5 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/622",
+        "retrievedAt": "2026-11-14",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "plain quark below 0.5% fat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 9.81,
+          "fat": 0.4
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "maustamatonta turkkilaista jogurttia (rasvaa 10 %)",
+      "state": "plain Turkish-style yogurt 10% fat",
+      "matchEvidence": "Fineli Release 20 JOGURTTI, TURKKILAINEN/KREIKKALAINEN, RASVAA 10 %",
+      "record": {
+        "id": "fineli-32201-release-20",
+        "name": "JOGURTTI, TURKKILAINEN/KREIKKALAINEN, RASVAA 10 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/32201",
+        "retrievedAt": "2026-11-14",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "plain Turkish-style yogurt 10% fat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.298,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4.298,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3.98,
+          "fat": 10.047
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "tuoreita mansikoita ilman kantoja",
+      "state": "raw strawberry",
+      "matchEvidence": "AFCD Release 3: Strawberry, raw",
+      "record": {
+        "id": "afcd-F008952-release-3",
+        "name": "Strawberry, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F008952",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "raw strawberry",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 5.6,
+          "fibre": 2.1,
+          "polyols": 0,
+          "protein": 0.7,
+          "fat": 0.2
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
+    },
+    {
+      "amount": 50,
+      "unit": "g",
+      "item": "tuoreita pensasmustikoita",
+      "state": "cultivated blueberry, raw",
+      "matchEvidence": "AFCD Release 3: Blueberry, raw",
+      "record": {
+        "id": "afcd-F001290-release-3",
+        "name": "Blueberry, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F001290",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "cultivated blueberry, raw",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 10.4,
+          "fibre": 3,
+          "polyols": 0,
+          "protein": 0.5,
+          "fat": 0
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
+    },
+    {
+      "amount": 20,
+      "unit": "g",
+      "item": "kuorittuja suolaamattomia hasselpähkinöitä",
+      "state": "shelled raw unsalted hazelnut",
+      "matchEvidence": "AFCD Release 3: Nut, hazelnut, raw, unsalted",
+      "record": {
+        "id": "afcd-F006098-release-3",
+        "name": "Nut, hazelnut, raw, unsalted",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006098",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "shelled raw unsalted hazelnut",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 5.1,
+          "fibre": 10.4,
+          "polyols": 0,
+          "protein": 14.8,
+          "fat": 61.4
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
+    },
+    {
+      "amount": 2,
+      "unit": "g",
+      "item": "hienoksi raastettua sitruunankuorta",
+      "state": "finely grated lemon zest",
+      "matchEvidence": "finely grated lemon zest is served; its weighed mass bounds any individual macro and 9 kcal/g bounds energy. Composition remains uncertain; no inferred zero.",
+      "excludedReason": "finely grated lemon zest is served; its weighed mass bounds any individual macro and 9 kcal/g bounds energy. Composition remains uncertain; no inferred zero.",
+      "omissionImpactEvidence": "finely grated lemon zest is served; its weighed mass bounds any individual macro and 9 kcal/g bounds energy. Composition remains uncertain; no inferred zero.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 4.5,
+        "netCarbohydrate": 0.5,
+        "totalCarbohydrate": 0.5,
+        "protein": 0.5,
+        "fat": 0.5
+      }
+    }
+  ]
+}

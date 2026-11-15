@@ -1,0 +1,190 @@
+{
+  "recipeId": "bataatti-mustikkakakku",
+  "sourceHash": "5e307bb3f55b20f32ef494555398eaf54bef3d47573a927bf64caebde89ee2db",
+  "calculatedAt": "2026-11-15",
+  "batchId": "batch-572",
+  "servings": 8,
+  "scope": "Ingredient accounting for eight equal slices. Fineli Release 20 and AFCD Release 3 reference composition. No measured cooked weight or laboratory result.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Aggregate polyol data are unverified for multiple ingredients. The public macro fields stay empty.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 440,
+      "unit": "g",
+      "item": "kypsää bataattia",
+      "record": {
+        "id": "fineli-30600",
+        "name": "BATAATTI, UUNISSA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "oven-baked peeled sweet potato flesh",
+        "basis": "per100g-prepared",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 18.293,
+          "fibre": 2.717,
+          "polyols": 0.0,
+          "protein": 1.71,
+          "fat": 0.054
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "oven-baked peeled sweet potato flesh",
+      "matchEvidence": "Fineli matches the cooked oven-baked peeled sweet potato input.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The charged ingredient mass is edible as written. The sweet potato is weighed cooked and peeled and the egg without its shell.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All weighed ingredients are folded into the batter. No baked yield or nutrient retention was measured."
+    },
+    {
+      "amount": 250,
+      "unit": "g",
+      "item": "kananmunaa ilman kuorta",
+      "record": {
+        "id": "fineli-858",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "raw edible egg without shell",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 12.61,
+          "fat": 9.24
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "raw edible egg without shell",
+      "matchEvidence": "Fineli raw edible whole egg without shell.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The charged ingredient mass is edible as written. The sweet potato is weighed cooked and peeled and the egg without its shell.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All weighed ingredients are folded into the batter. No baked yield or nutrient retention was measured."
+    },
+    {
+      "amount": 4,
+      "unit": "g",
+      "item": "leivinjauhetta",
+      "record": {
+        "id": "fineli-74",
+        "name": "LEIVINJAUHE",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/74",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "dry baking powder",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 37.8,
+          "fibre": 0.5,
+          "polyols": null,
+          "protein": 5.2,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "dry baking powder",
+      "matchEvidence": "Fineli generic baking powder; product composition may differ.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The charged ingredient mass is edible as written. The sweet potato is weighed cooked and peeled and the egg without its shell.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All weighed ingredients are folded into the batter. No baked yield or nutrient retention was measured."
+    },
+    {
+      "amount": 2.5,
+      "unit": "g",
+      "item": "jauhettua kanelia",
+      "record": {
+        "id": "afcd-F002963",
+        "name": "Cinnamon, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002963",
+        "retrievedAt": "2026-11-15",
+        "licence": "FSANZ, Australian Food Composition Database Release 3, Data User Licence Agreement based on CC BY-SA 3.0 Australia",
+        "state": "dry ground cinnamon",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 27.5,
+          "polyols": null,
+          "fibre": 53.1,
+          "protein": 4,
+          "fat": 1.2
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "dry ground cinnamon",
+      "matchEvidence": "AFCD generic ground cinnamon, source composition may differ by origin.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The charged ingredient mass is edible as written. The sweet potato is weighed cooked and peeled and the egg without its shell.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All weighed ingredients are folded into the batter. No baked yield or nutrient retention was measured."
+    },
+    {
+      "amount": 80,
+      "unit": "g",
+      "item": "puhdasta vaahterasiirappia",
+      "record": {
+        "id": "afcd-F009052",
+        "name": "Syrup, maple, pure",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009052",
+        "retrievedAt": "2026-11-15",
+        "licence": "FSANZ, Australian Food Composition Database Release 3, Data User Licence Agreement based on CC BY-SA 3.0 Australia",
+        "state": "pure maple syrup",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 67,
+          "polyols": null,
+          "fibre": 0,
+          "protein": 0,
+          "fat": 0.1
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "pure maple syrup",
+      "matchEvidence": "AFCD pure maple syrup, not pancake syrup. The data are borrowed primarily from USDA SR Legacy 169661.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The charged ingredient mass is edible as written. The sweet potato is weighed cooked and peeled and the egg without its shell.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All weighed ingredients are folded into the batter. No baked yield or nutrient retention was measured."
+    },
+    {
+      "amount": 115,
+      "unit": "g",
+      "item": "kotimaisia pakastemustikoita",
+      "record": {
+        "id": "fineli-442",
+        "name": "MUSTIKKA, METSÄMUSTIKKA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/442",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "edible Finnish bilberries, frozen unsweetened",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 10.182,
+          "fibre": 3.1,
+          "polyols": null,
+          "protein": 0.821,
+          "fat": 1.059
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "edible Finnish bilberries, frozen unsweetened",
+      "matchEvidence": "Fineli wild bilberry is used as a generic proxy for the same species frozen without added sugar.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The charged ingredient mass is edible as written. The sweet potato is weighed cooked and peeled and the egg without its shell.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All weighed ingredients are folded into the batter. No baked yield or nutrient retention was measured."
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import type { RecipeLocale } from "@/types/content";
 import { cuisines, ingredientGroups } from "@/content/recipe-facets";
+import { recipeMatchesCategory } from "@/content/recipe-categories";
 import {withholdF25Nutrition} from "./f25-nutrition-withhold";
 
 import type { RecipeSummary } from "@/content/route-data";
@@ -81,7 +82,7 @@ export function filterRecipes<T extends RecipeSummary>(recipes: T[], filters: Re
     if (filters.ingredient && !recipe.ingredientGroups?.includes(filters.ingredient)) return false;
     if (filters.gl && (withholdF25Nutrition(recipe.recipeId, locale) || glCategories[recipe.recipeId] !== filters.gl)) return false;
     if (filters.glutenFree && recipe.glutenFree !== true) return false;
-    if (filters.category !== "all" && recipe.category !== filters.category) return false;
+    if (filters.category !== "all" && !recipeMatchesCategory(recipe, filters.category)) return false;
     if (filters.diet === "keto" && recipe.dietClass !== "keto") return false;
     if (filters.diet === "vhh" && !recipe.dietClass) return false;
     if (filters.diet !== "all" && filters.diet !== "keto" && filters.diet !== "vhh" && !recipe.dietTags?.includes(filters.diet)) return false;

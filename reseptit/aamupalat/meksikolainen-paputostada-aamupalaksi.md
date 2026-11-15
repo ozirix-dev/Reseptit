@@ -1,62 +1,72 @@
 ---
-title: "Musta papu ja paistettu muna tostadan päällä"
+title: "Aamiaistostadat kidneypavuilla ja munakokkelilla"
 recipe_id: meksikolainen-paputostada-aamupalaksi
 url_slug: meksikolainen-paputostada-aamupalaksi
 category: aamupala
 language: fi
 status: published
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 main_ingredient:
-  - "musta papu"
-  - "kananmuna"
-  - "maissitortilla"
+  - kidneypapu
+  - kananmuna
+  - maissitortilla
+  - avokado
 cooking_method:
-  - "paistaminen"
+  - paistaminen
 ingredients:
-  - amount: 150
-    unit: "g"
-    item: "musta papu"
-  - amount: 2
-    unit: "kpl"
-    item: "kananmuna"
   - amount: 100
-    unit: "g"
-    item: "maissitortilla"
+    unit: g
+    item: "pehmeitä maissitortilloja"
+  - amount: 150
+    unit: g
+    item: "valutettuja punaisia kidneypapuja säilykkeestä"
+  - amount: 100
+    unit: g
+    item: "kananmunaa ilman kuorta (noin 2 kpl)"
+  - amount: 80
+    unit: g
+    item: "avokadon hedelmälihaa"
+  - amount: 8
+    unit: g
+    item: "rypsiöljyä papuseokseen"
   - amount: 1
-    unit: "kpl"
-    item: "avokado"
-  - amount: 1
-    unit: "rkl"
-    item: "neutraalia paistoöljyä"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
+    unit: g
+    item: "hienoa suolaa"
 servings: 2
 time_total_min: 25
 difficulty: Helppo
 tags:
   - "aamupala"
   - "meksikolainen"
-  - "aamiaisruoka"
 image:
-  src: aamupalat/meksikolainen-paputostada-aamupalaksi.webp
-  alt: "Musta papu ja paistettu muna tostadan päällä tarjoiltuna aamiaisella"
+  src: aamupalat/meksikolainen-paputostada-aamupalaksi-kotiversio.webp
+  alt: "Maissitostadoja, joiden päällä on murskattuja punaisia papuja, avokadoa ja munakokkelia."
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 33.36
+carbs_total_per_serving_g: 42.17
+protein_per_serving_g: 14.71
+fat_per_serving_g: 18.43
 ---
 
-# Musta papu ja paistettu muna tostadan päällä
+# Aamiaistostadat kidneypavuilla ja munakokkelilla
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan musta papu ja paistettu muna tostadan päällä. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Rapeille maissitortilloille levitetään lämmintä papuseosta, munakokkelia ja viipaloitua avokadoa.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Punnitse avokado ilman kuorta ja kiveä. Valuta kypsät säilykepavut ennen punnitsemista.
 
 ## Valmistus
 
-1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.
-2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.
-3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.
-4. Levitä maustetut pavut rapealle tostada-pohjalle ja lisää muna sekä avokado.
+1. Kuumenna uuni 200 °C:seen. Paahda tortillat pellillä yhdessä kerroksessa ilman öljyä noin 10–15 minuuttia. Käännä puolivälissä ja paahda rapeiksi.
+2. Kuumenna valutetut pavut kattilassa, kunnes ne höyryävät. Murskaa ne karkeasti haarukalla ja sekoita joukkoon kaikki rypsiöljy sekä puolet suolasta.
+3. Vatkaa munat ja loppu suola. Kypsennä tarttumattomalla pannulla keskimiedolla lämmöllä lastalla sekoittaen, kunnes kokkeli on hyytynyt ja nestemäistä munaa ei näy.
+4. Levitä papuseos rapeille tortilloille. Lisää viipaloitu avokado ja kokkeli. Jaa kahteen annokseen ja tarjoa heti.
+
+## Muistiinpanot
+
+Sisältää kananmunaa. Tarkista tortillan pakkauksesta allergeenit. Ravintoarvot ovat arvioita. GK: ei määritetty. Kuva on kuvituskuva.

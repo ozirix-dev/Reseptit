@@ -61,6 +61,9 @@ for (const historicalStatus of [null, "draft", "published"] as const) {
       const gate = path.join(root, "site/scripts/new-recipe-preflight.mjs");
       mkdirSync(path.dirname(gate), { recursive: true });
       copyFileSync(new URL("../scripts/new-recipe-preflight.mjs", import.meta.url), gate);
+      copyFileSync(new URL("../scripts/public-recipe-quarantine.json", import.meta.url), path.join(path.dirname(gate), "public-recipe-quarantine.json"));
+      mkdirSync(path.join(root, "meta"), { recursive: true });
+      writeFileSync(path.join(root, "meta/recipe-successors.json"), "[]");
       const receipt = JSON.parse(execFileSync(process.execPath, [gate, "--template=" + added], { encoding: "utf8" }));
       Object.assign(receipt, {
         decision: "approved",

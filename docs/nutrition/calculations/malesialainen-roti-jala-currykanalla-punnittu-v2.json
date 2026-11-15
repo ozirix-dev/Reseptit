@@ -1,0 +1,366 @@
+{
+  "recipeId": "malesialainen-roti-jala-currykanalla-punnittu-v2",
+  "sourceHash": "19864ca0bc8a8e0a281b190edb2e0acb9fe2e2b624c3b92966fb59a98f6b7036",
+  "calculatedAt": "2026-11-14",
+  "batchId": "batch-568",
+  "servings": 2,
+  "scope": "Two equal servings of all lace crepes and coconut chicken curry. Oil is included only in the batter, and all sauce is served. Two grams of weighed spices have a documented maximum omission bound.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "puolikarkeaa vehnäjauhoa",
+      "state": "medium wheat flour, as sold",
+      "matchEvidence": "Fineli Release 20 record 110 is medium wheat flour; the recipe amount is the dry flour mass.",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "medium wheat flour, as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 73.998,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Entire cooked batch is apportioned; no pan oil or discarded sauce"
+    },
+    {
+      "amount": 25,
+      "unit": "g",
+      "item": "valkoista riisijauhoa",
+      "state": "dry white rice flour",
+      "matchEvidence": "Fineli Release 20 JAUHO, RIISIJAUHO, RIISIHIUTALE",
+      "record": {
+        "id": "fineli-182-release-20",
+        "name": "JAUHO, RIISIJAUHO, RIISIHIUTALE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/182",
+        "retrievedAt": "2026-11-14",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "dry white rice flour",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 79.3,
+          "FIBT": 2.3,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 79.3,
+          "fibre": 2.3,
+          "polyols": 0,
+          "protein": 7.69,
+          "fat": 1.4
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Entire cooked batch is apportioned; no pan oil or discarded sauce"
+    },
+    {
+      "amount": 80,
+      "unit": "g",
+      "item": "kananmunaa ilman kuorta",
+      "state": "raw edible egg, shell removed",
+      "matchEvidence": "Raw edible egg; Fineli Release 20 record 858.",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw edible egg, shell removed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Entire cooked batch is apportioned; no pan oil or discarded sauce"
+    },
+    {
+      "amount": 120,
+      "unit": "g",
+      "item": "täysrasvaista makeuttamatonta säilykekookosmaitoa taikinaan",
+      "state": "regular-fat canned coconut milk as sold",
+      "matchEvidence": "AFCD Release 3 record F002991 is regular-fat canned coconut milk; recipe quantity is the canned product.",
+      "record": {
+        "id": "afcd-F002991-release-3",
+        "name": "Coconut, milk, canned, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "regular-fat canned coconut milk as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.7,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.4,
+          "fat": 15.4
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Entire cooked batch is apportioned; no pan oil or discarded sauce"
+    },
+    {
+      "amount": 240,
+      "unit": "g",
+      "item": "vettä taikinaan",
+      "state": "plain water",
+      "matchEvidence": "plain water supplies none of the modeled nutrients.",
+      "excludedReason": "plain water supplies none of the modeled nutrients.",
+      "omissionImpactEvidence": "plain water supplies none of the modeled nutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      }
+    },
+    {
+      "amount": 30,
+      "unit": "g",
+      "item": "rypsiöljyä taikinaan",
+      "state": "neutral vegetable cooking oil",
+      "matchEvidence": "Average neutral cooking oil; Fineli Release 20 record 541.",
+      "record": {
+        "id": "fineli-541-release-20",
+        "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/541",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "neutral vegetable cooking oil",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 99.9
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Entire cooked batch is apportioned; no pan oil or discarded sauce"
+    },
+    {
+      "amount": 0.5,
+      "unit": "g",
+      "item": "jauhettua kurkumaa",
+      "state": "ground turmeric",
+      "matchEvidence": "ground turmeric lacks exact polyol data; weighed spice mass bounds each macro to 0.25 g per serving and energy to 2.25 kcal per serving.",
+      "excludedReason": "ground turmeric lacks exact polyol data; weighed spice mass bounds each macro to 0.25 g per serving and energy to 2.25 kcal per serving.",
+      "omissionImpactEvidence": "ground turmeric lacks exact polyol data; weighed spice mass bounds each macro to 0.25 g per serving and energy to 2.25 kcal per serving.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 2.25,
+        "netCarbohydrate": 0.25,
+        "totalCarbohydrate": 0.25,
+        "protein": 0.25,
+        "fat": 0.25
+      }
+    },
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "nahatonta ja luutonta broilerin reisilihaa",
+      "state": "raw lean skinless chicken thigh flesh, boneless edible meat",
+      "matchEvidence": "AFCD Release 3 record F002806 is raw lean chicken thigh flesh; recipe specifies boneless skinless thigh meat.",
+      "record": {
+        "id": "afcd-F002806-release-3",
+        "name": "Chicken, thigh, lean flesh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw lean skinless chicken thigh flesh, boneless edible meat",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 19.1,
+          "fat": 3
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Entire cooked batch is apportioned; no pan oil or discarded sauce"
+    },
+    {
+      "amount": 50,
+      "unit": "g",
+      "item": "kuorittua keltasipulia",
+      "state": "peeled yellow onion, raw",
+      "matchEvidence": "Fineli Release 20 SIPULI, KELTASIPULI",
+      "record": {
+        "id": "fineli-335-release-20",
+        "name": "SIPULI, KELTASIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/335",
+        "retrievedAt": "2026-11-14",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "peeled yellow onion, raw",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.8,
+          "FIBT": 1.2,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 1.2,
+          "polyols": 0,
+          "protein": 1.25,
+          "fat": 0.1
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Entire cooked batch is apportioned; no pan oil or discarded sauce"
+    },
+    {
+      "amount": 120,
+      "unit": "g",
+      "item": "täysrasvaista makeuttamatonta säilykekookosmaitoa curryyn",
+      "state": "regular-fat canned coconut milk as sold",
+      "matchEvidence": "AFCD Release 3 record F002991 is regular-fat canned coconut milk; recipe quantity is the canned product.",
+      "record": {
+        "id": "afcd-F002991-release-3",
+        "name": "Coconut, milk, canned, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "regular-fat canned coconut milk as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.7,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.4,
+          "fat": 15.4
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Entire cooked batch is apportioned; no pan oil or discarded sauce"
+    },
+    {
+      "amount": 1.5,
+      "unit": "g",
+      "item": "Mauste-Sallisen Curry 100513 -jauhetta",
+      "state": "Mauste-Sallinen Curry 100513",
+      "matchEvidence": "Mauste-Sallinen Curry 100513 lacks exact polyol data; weighed spice mass bounds each macro to 0.75 g per serving and energy to 6.75 kcal per serving.",
+      "excludedReason": "Mauste-Sallinen Curry 100513 lacks exact polyol data; weighed spice mass bounds each macro to 0.75 g per serving and energy to 6.75 kcal per serving.",
+      "omissionImpactEvidence": "Mauste-Sallinen Curry 100513 lacks exact polyol data; weighed spice mass bounds each macro to 0.75 g per serving and energy to 6.75 kcal per serving.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 6.75,
+        "netCarbohydrate": 0.75,
+        "totalCarbohydrate": 0.75,
+        "protein": 0.75,
+        "fat": 0.75
+      }
+    },
+    {
+      "amount": 2,
+      "unit": "g",
+      "item": "hienoa suolaa",
+      "state": "fine salt",
+      "matchEvidence": "fine salt supplies none of the modeled nutrients.",
+      "excludedReason": "fine salt supplies none of the modeled nutrients.",
+      "omissionImpactEvidence": "fine salt supplies none of the modeled nutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      }
+    }
+  ]
+}

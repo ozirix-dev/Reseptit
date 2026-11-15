@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "recipe_id": "indonesialainen-bubur-sumsum-punnittu-v2",
+  "source_path": "reseptit/aamupalat/indonesialainen-bubur-sumsum-punnittu-v2.md",
+  "source_sha256": "06ab67e1aaf9b4a5f5bade7faa78918ff20282ba420d3f4803e96c34e2cc3a9a",
+  "decision": "approved",
+  "reviewed_by": "Codex, kirjallinen lähde- ja reseptikatselmointi",
+  "reviewed_at": "2026-11-14",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://repository.itspku.ac.id/264/1/Buku%20menu%20makanan%20sehat%20lansia.pdf",
+      "https://www.sbs.com.au/food/recipe/coconut-rice-pudding-bubur-sumsum/ws7i6xyu1",
+      "https://nutriweb.org.my/cms/picture/upload/file/hcwo-vol-3.pdf",
+      "https://www.gov.uk/government/publications/handling-flour-and-flour-products-safely/handling-flour-and-flour-products-safely"
+    ]
+  },
+  "supersedes_quarantined": {
+    "recipe_id": "indonesialainen-bubur-sumsum",
+    "source_path": "reseptit/aamupalat/indonesialainen-bubur-sumsum.md",
+    "source_git_blob_sha": "0de2ac4337a50a55d13b96d700c9dfd184d81e3d"
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/indonesialainen-bubur-sumsum-punnittu-v2.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "One public route per locale. The registry replaces only the exact predecessor with the same public slug."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Six weighed rows. The cooking water and syrup water are split explicitly. The intact fresh pandan leaf is taken out before portioning."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "The recipe follows the published rice-flour porridge and knotted pandan method. The sauce ratio comes from the Indonesian recipe. No physical trial was performed."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Bring the rice-flour mixture to a visible simmer and continue cooking before tasting. Cool and refrigerate leftovers promptly."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Four equal portions of the entire porridge and sauce batch, with 35 minutes estimated and the syrup made while the porridge cooks."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli, AFCD and PhilFCT ingredient records were checked and independently recomputed. The public values are withheld because PhilFCT does not report polyols and pandan extract retention is unquantified."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Human comparators use different rice preparations or different sugar products. No applicable numeric GK was established for this dish."
+    }
+  },
+  "supplementary_evidence": {
+    "review": "docs/reviews/2026-11-14-bubur-sumsum-v2.md",
+    "physical_cook_test": false,
+    "image_method": "Built-in ImageGen",
+    "image_sha256": "8eaa29720a67c72b14ca52d3ed1604acd2b79b2f7fed22d43085908fe170abed"
+  }
+}

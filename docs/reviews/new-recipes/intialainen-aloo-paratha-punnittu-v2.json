@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "recipe_id": "intialainen-aloo-paratha-punnittu-v2",
+  "source_path": "reseptit/aamupalat/intialainen-aloo-paratha-punnittu-v2.md",
+  "source_sha256": "071125bdd7974eae32e19b8f985219e4f24b13b11f79d0be4aaea0fc3a52fed4",
+  "decision": "approved",
+  "reviewed_by": "AI editorial reviewer (GPT-6)",
+  "reviewed_at": "2026-11-13",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://seemagetsbaked.com/recipe/aloo-paratha/"
+    ]
+  },
+  "supersedes_quarantined": {
+    "recipe_id": "intialainen-aloo-paratha",
+    "source_path": "reseptit/aamupalat/intialainen-aloo-paratha.md",
+    "source_git_blob_sha": "9ed1496a047c04668a6b219a99e22feb9146c721"
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/intialainen-aloo-paratha-punnittu-v2.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Only the exact quarantined predecessor reuses the established URL slug. The distinct public aloo-paratha recipe retains its own route."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Eight measured items reviewed, including 150 g peeled raw potato, 60 g plain 3.9% yogurt and 12 g rapeseed oil. Wheat and milk are disclosed. The generated image shows the cut potato-filled flatbread and plain yogurt."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Documented comparison covers 60% atta dough hydration, dough rest, fully cooked mashed potato, sealing the filling, rolling and griddle cooking. This version simplifies the seasoning and uses rapeseed oil."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "The potatoes cook to fork-tender before mashing; both sides and the flour dough at the seam are cooked through before serving."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Two flatbreads, 30 g yogurt each. The 65 minutes cover preparation, 20-minute dough rest with potato cooking in parallel, rolling and sequential pan frying."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli 111/922/205/535/620/30 and AFCD F003192/F003327 are bound to the current quantities. The fat estimate counts all oil and records 75% and 50% retention sensitivity. Fineli whole-wheat graham is the flour proxy. Potato leaching is unquantified."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "New whole-wheat recipe and weighed yogurt have no source-matched glycemic-load approval. The quarantined predecessor and its historical study remain intact."
+    }
+  }
+}

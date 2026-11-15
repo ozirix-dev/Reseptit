@@ -8,7 +8,7 @@ Haara: `codex/reseptit-v1-6-translation-review`.
 
 Julkaistussa inventaariossa on 119 FI-lähdettä ja 357 käännöstä:
 119 EN, 119 SV ja 119 TH. Rekisteri muodostuu inventaariosta eikä
-kovakoodatusta rivimäärästä. [Rekisterin snapshot](translation-review-registry.json)
+kovakoodatusta rivimäärästä. [Rekisterin snapshot](https://github.com/ozirix-dev/Reseptit/blob/b078228daa41ced44787309112b246411f92cbdb/docs/reports/translation-review-registry.json)
 kattaa kaikki 357 paria. Jokaisessa ovat polut, koko tiedoston SHA-256,
 rakennetarkistus, rajatun semantiikkatarkistuksen tila, ihmistarkistuksen
 tila, päivä/todiste sekä riskiperusteet.

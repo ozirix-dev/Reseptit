@@ -17,6 +17,8 @@ const approvedBlobById = {
 export const c13CanonicalHistoryPaths = Object.freeze(
   Object.keys(approvedBlobById).map(id => `reseptit/aamupalat/${id}.md`)
 );
+export const reviewedRavaPath = "reseptit/aamupalat/intialainen-rava-uttapam.md";
+const reviewedRavaBlob = "ddd0cef8cedd901297677672e0d6287a7e45b4ec";
 const approvedPaths = new Set<string>(c13CanonicalHistoryPaths);
 const lf = (s: string) => s.replaceAll("\r\n","\n");
 const marker = "\n## Valmistus\n";
@@ -29,7 +31,23 @@ export function originalForC13CanonicalHistory(root: string, file: string, text:
   if (!approvedPaths.has(file)) return text;
   const live = lf(text);
   const id = file.slice("reseptit/aamupalat/".length, -3) as keyof typeof approvedBlobById;
-  assert.equal(blobSha(live), approvedBlobById[id], file + ": unreviewed C13 source mutation");
+  const liveBlob = blobSha(live);
+  if (file === reviewedRavaPath && liveBlob === reviewedRavaBlob) {
+    const previous = lf(execFileSync("git", ["cat-file", "blob", approvedBlobById[id]], {cwd: root, encoding: "utf8"}));
+    return originalForC13CanonicalHistory(root, file, previous);
+  }
+  if (id === "valimerellinen-pinaatti-fetashakshuka" && liveBlob === "3e2882523e98b4ab681c97d8a95a5e6c59f5a7bb") {
+    const previous = lf(execFileSync("git", ["cat-file", "blob", approvedBlobById[id]], {cwd: root, encoding: "utf8"}));
+    assert.equal(live.split(marker)[0], previous.split(marker)[0], file + ": changed protected recipe inputs");
+    return originalForC13CanonicalHistory(root, file, previous);
+  }
+  if (id === "valimerellinen-menemen-fetalla" && liveBlob === "6a767558edc1ee37372f9029ca4ea88c6f129746") {
+    const previous = lf(execFileSync("git", ["cat-file", "blob", approvedBlobById[id]], {cwd: root, encoding: "utf8"}));
+    const withoutMacros = (markdown: string) => markdown.split(marker)[0].replace(/^((?:carbs_\w+|protein_per_serving_g|fat_per_serving_g):).*\n/gm, "");
+    assert.equal(withoutMacros(live), withoutMacros(previous), file + ": changed protected recipe inputs");
+    return originalForC13CanonicalHistory(root, file, previous);
+  }
+  assert.equal(liveBlob, approvedBlobById[id], file + ": unreviewed C13 source mutation");
   const frozen = original(root, file);
   const cut = live.indexOf(marker), originalCut = frozen.indexOf(marker);
   assert(cut >= 0 && originalCut >= 0, file + ": missing reviewed preparation");

@@ -1,67 +1,80 @@
 ---
-title: "Banh xeo -rapeat aamiaisletut"
+title: "Vietnamilaiset bánh xèo -letut katkaravuilla"
 recipe_id: vietnamilainen-banh-xeo-aamiaisletut
 url_slug: vietnamilainen-banh-xeo-aamiaisletut
 category: aamupala
 language: fi
 status: published
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 main_ingredient:
-  - "riisijauho"
-  - "kookosmaito"
-  - "katkarapu"
+  - riisijauho
+  - kookosmaito
+  - katkarapu
 cooking_method:
-  - "paistaminen"
+  - paistaminen
 ingredients:
   - amount: 100
-    unit: "g"
-    item: "riisijauho"
-  - amount: 200
-    unit: "ml"
-    item: "täysrasvaista kookosmaitoa"
-  - amount: 150
-    unit: "g"
-    item: "katkarapu"
-  - amount: 150
-    unit: "g"
-    item: "pavunitu"
+    unit: g
+    item: "valkoista riisijauhoa"
+  - amount: 65
+    unit: g
+    item: "täysrasvaista makeuttamatonta säilykekookosmaitoa"
+  - amount: 250
+    unit: g
+    item: "vettä"
   - amount: 1
-    unit: "rkl"
-    item: "neutraalia paistoöljyä"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
+    unit: g
+    item: "jauhettua kurkumaa"
+  - amount: 150
+    unit: g
+    item: "raakoja kuorittuja katkarapuja"
+  - amount: 150
+    unit: g
+    item: "tuoreita mungpavun ituja"
+  - amount: 8
+    unit: g
+    item: "rypsiöljyä täytteeseen"
+  - amount: 2
+    unit: g
+    item: "rypsiöljyä letuille"
+  - amount: 1
+    unit: g
+    item: "hienoa suolaa"
 servings: 2
-time_total_min: 25
+time_total_min: 60
 difficulty: Helppo
 tags:
   - "aamupala"
   - "vietnamilainen"
-  - "aamiaisruoka"
 image:
-  src: aamupalat/vietnamilainen-banh-xeo-aamiaisletut.webp
-  alt: "Banh xeo -rapeat aamiaisletut tarjoiltuna aamiaisella"
+  src: aamupalat/banh-xeo-katkaravuilla-punnittu.webp
+  alt: "Keltaisia riisilettuja, joissa on katkarapuja ja mungpavun ituja."
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 42.55
-carbs_total_per_serving_g: 44.68
-protein_per_serving_g: 17.47
-fat_per_serving_g: 23.37
-
+carbs_net_per_serving_g: 41.62
+carbs_total_per_serving_g: 43.86
+protein_per_serving_g: 16.57
+fat_per_serving_g: 10.24
 ---
 
-# Banh xeo -rapeat aamiaisletut
+# Vietnamilaiset bánh xèo -letut katkaravuilla
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan banh xeo -rapeat aamiaisletut. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Ohut kurkumalla maustettu riisilettu taitetaan kypsien katkarapujen ja mungpavun itujen päälle.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Käytä valkoista riisijauhoa, ei tahmeasta riisistä tehtyä jauhoa. Punnitse paistoöljy ja täytteen öljy erikseen.
 
 ## Valmistus
 
-1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.
-2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.
-3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.
-4. Paista ohut kurkumalla värjätty lettu rapeaksi ja täytä katkaravulla sekä iduilla.
+1. Vatkaa jauho, kookosmaito, vesi, kurkuma ja suola ohueksi taikinaksi. Anna levätä 30 minuuttia.
+2. Huuhtele idut ja valuta hyvin. Kypsennä katkaravut ja idut pannulla täytteen öljyssä, kunnes idut ovat kauttaaltaan kuumia ja ravut täysin läpikuultamattomia. Siirrä täyte kaikkine paistonesteineen puhtaaseen kulhoon.
+3. Kuumenna tarttumaton pannu keskilämmölle ja sivele sille ohuesti lettujen öljyä. Sekoita taikina aina ennen kaatamista. Levitä pieni kauhallinen hyvin ohueksi kerrokseksi ja paista kääntämättä, kunnes taikina on kauttaaltaan kypsä ja reunat ovat kuivat ja rapeat.
+4. Lisää kypsää täytettä letun toiselle puoliskolle ja taita päälle. Toista, kunnes kaikki taikina ja täyte on käytetty. Jaa tasan kahdelle ja tarjoa heti.
+
+## Muistiinpanot
+
+Sisältää äyriäisiä. Älä tarjoa ituja tai katkarapuja raakoina. Ravintoarvio ei sisällä enintään 1 g lettujen paistoöljyä annosta kohti. GK: ei määritetty. Kuva on kuvituskuva.

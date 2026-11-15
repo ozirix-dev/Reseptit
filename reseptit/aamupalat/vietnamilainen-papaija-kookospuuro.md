@@ -5,62 +5,67 @@ url_slug: vietnamilainen-papaija-kookospuuro
 category: aamupala
 language: fi
 status: published
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 main_ingredient:
-  - "tapioka"
-  - "kookosmaito"
-  - "papaija"
+  - tapioka
+  - kookosmaito
+  - papaija
 cooking_method:
-  - "keittäminen"
+  - keittäminen
 ingredients:
   - amount: 100
     unit: g
-    item: tapiokahelmiä
-  - amount: 200
-    unit: ml
-    item: kookosmaito
+    item: "pieniä kuivia tapiokahelmiä"
   - amount: 200
     unit: g
-    item: papaija
+    item: "täysrasvaista makeuttamatonta säilykekookosmaitoa"
+  - amount: 200
+    unit: g
+    item: "kypsää papaijaa ilman kuorta ja siemeniä"
   - amount: 15
     unit: g
-    item: limettimehua
+    item: "limettimehua"
   - amount: 700
-    unit: ml
-    item: vettä
-  - amount: null
-    unit: ""
-    item: suolaa maun mukaan
+    unit: g
+    item: "vettä"
+  - amount: 1
+    unit: g
+    item: "hienoa suolaa"
 servings: 2
-time_total_min: 25
+time_total_min: 35
 difficulty: Helppo
 tags:
   - "aamupala"
   - "vietnamilainen"
-  - "puuro"
 image:
-  src: aamupalat/vietnamilainen-papaija-kookospuuro.webp
-  alt: "Vietnamilainen papaija-kookospuuro tarjoiltuna aamiaisella"
+  src: aamupalat/papaija-kookospuuro-punnittu.webp
+  alt: "Kookos-tapiokapuuroa ja kuutioitua papaijaa."
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 49.7
-carbs_total_per_serving_g: 52.07
-protein_per_serving_g: 1.85
-fat_per_serving_g: 14.28
+carbs_net_per_serving_g: 49.84
+carbs_total_per_serving_g: 52.21
+protein_per_serving_g: 1.96
+fat_per_serving_g: 15.51
 ---
 
 # Vietnamilainen papaija-kookospuuro
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan vietnamilainen papaija-kookospuuro. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Pehmeät tapiokahelmet tekevät kookospuurosta sakean. Kypsä papaija ja lime lisätään vasta tarjoiltaessa.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Käytä pieniä kuivia helmiä, jotka pakkauksen mukaan voi keittää ilman esiliotusta. Käytä koko punnittu kookosmaito.
 
 ## Valmistus
 
-1. Mittaa tapioka kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.
-2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.
-3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.
-4. Keitä tapiokahelmiä vedessä, kunnes ne alkavat muuttua läpikuultaviksi. Lisää kookosmaito ja hauduta kypsiksi. Tarjoa papaijan ja limettimehun kanssa.
+1. Kuumenna vesi kiehuvaksi. Lisää helmet sekoittaen ja pienennä lämpöä.
+2. Anna poreilla 15–20 minuuttia tai pakkauksen ohjeen mukaan. Sekoita pohjaa myöten, kunnes helmet ovat läpikuultavia ja täysin pehmeitä. Älä valuta keitinvettä.
+3. Sekoita kookosmaito ja suola puuroon ja kuumenna hiljalleen. Kuutioi papaija ja sekoita siihen limettimehu.
+4. Jaa puuro ja hedelmä tasan kahteen kulhoon.
+
+## Muistiinpanot
+
+Tarkista pakkauksen allergeenit. Jäähdytä tähteet nopeasti ja siirrä jääkaappiin. GK: ei määritetty. Kuva on kuvituskuva.

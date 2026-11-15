@@ -12,30 +12,19 @@ import { isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
 const root = path.resolve(import.meta.dirname, "../..");
 const sha = (raw: string) => createHash("sha256").update(raw.replaceAll("\r\n", "\n")).digest("hex");
 const expected: Record<string,string> = {
-  "pohjoisafrikkalainen-baghrir": "465c021ba03a828a5a70f17ad6d5bce142e9cf957dc7af730bf5c1c352d8f706",
   "thai-roti-munalla-banaanilla": "01b5f49344afa698e599aa1ae8672649a18182892227ae5aa8d49b07e582c0ba",
-  "meksikolainen-chilaquiles-verdes": "84d2801095a02bb3c9a7d98b4c937653798ee84706fe032cf886365bd4ae4160",
-  "meksikolainen-paputostada-aamupalaksi": "57e8193e7457a63d270b53386c030f2b905225b851e93c7c86941aa9e27aba5b",
   "indonesialainen-nasi-goreng-aamiaisriisi": "f55e64e3d2dd6080a7cbcde3b067cac696aaf8a5595b67a5615433d7a43689d7",
-  "korealainen-kimchi-jeon-aamiaiseksi": "b7187bbba5e0e8f9632fd3e3885ddd2dd8716c27e93912836bf92eeea9fff3ef",
 
-  "intialainen-pinaatti-paneer-chilla": "c4c77740d96d341f6530dc32275426bbf5fd6ed971dcad69d7f7d4e8de46fcd2",
-  "vietnamilainen-papaija-kookospuuro": "02440d7cfaac9b9b3b79e2467ee0fc4bd26afc49a0204253accf3478992aec99",
   "uunimuna-avokadot": "7f93c5780c639a828a97932134f1568c265ba3f750c81fd62ee96d08e23d4b41",
   "intialainen-besan-chilla": "287c9e88b59c37d1ce84bb0c9021b5bc328a285dfba85a8cbba5f8d45e887010",
   "thai-kananmunat-kookoscurryssa": "1d127dee1a5b1e82c2cbbb7d71e41aac62e4d86266074d27d867197aa9e0ae83",
-  "vietnamilainen-banh-xeo-aamiaisletut": "bd4fbd1c77bd3d5383e5986c71bc87e5b2c0c0fd6ac1faa8b660b300b7b2136d",
-  "vietnamilainen-banh-cuon-sienilla": "54b5cf45d8eeff8a07d9c5e9bcac2e4db43d916fb594818c2cc72485aafa9385",
 
-  "rahka-marjakerroskulho": "c571f8f509bde4da9159bfdb4e1449f856030c9c92bf8a8ba1e2376d9c33c058",
   "karibia-mango-limejogurtti": "91fcf9425bb58e499304414a99665cc01ba7c37a1a72115262d31e04b5c93a0f",
-  "japanilainen-hojicha-jogurtti-persimonilla": "cae50573ff18898460b95e9c674d0bc39514c7cbaaaa502d4008171b14261cfe",
   "lahi-ita-pistaasijogurtti": "f9a1d41f86c92902bbda7c9f224cbc8de48900ec7726625a482f1ecea794a9e1",
   "vietnamilainen-kahvijogurtti-banaanilla": "73b5dbb717f3833c8354f1fcdfa0fdd86ca78a342d50625881133e44b3aba0e3",
   "valimerellinen-jogurttikulho-hunajalla": "d3b3fa89bf9fe3a4b04e70d3a0d0f8f4fbd957dec2a57cd786cbe8a0af00e0bb",
   "kiinalainen-soijamaito-aamiaisella": "e28b598683b1a561384eb300f6bd08d0a7603a8c2b7dc922b19ce569a51067cf",
   "korealainen-gyeranbap-riisikulho": "e9ee2e939778d57fafd4b9015b88a7b59669638f522ae7253446f531861034e8",
-  "lahi-ita-zaatar-munat": "2abaf61e4abd891bb20d3372d24fb45150566a7ff4b1750dd6db976fda0e4924",
   "kiinalainen-teehaudutetut-munat": "bae898d991ed769ae2853f2860e1ebcd3629e292e0d5ca2901244c0377d640e1",
   "japanilainen-onigiri-lohella": "71de7695fefca8a5fe6d0d84e3343380ca06858b6cbdfdb539ff32296733cdbf",
   "yrttituorejuusto-kinkkurullat": "e5649f6b71fb0131def0f4332f1522e4c96c4e90af5abeed947df8681ec25363",
@@ -45,8 +34,8 @@ const expected: Record<string,string> = {
 };
 const macros = ["carbs_net_per_serving_g","carbs_total_per_serving_g","protein_per_serving_g","fat_per_serving_g"] as const;
 
-test("SHA-pinned FI overlays correct twenty-eight dishes without nutrition changes", () => {
-  assert.equal(breakfastFiQualityPaths.length, 28);
+test("SHA-pinned FI overlays correct seventeen dishes without nutrition changes", () => {
+  assert.equal(breakfastFiQualityPaths.length, 17);
   for (const relative of breakfastFiQualityPaths) {
     const raw = readFileSync(path.join(root, relative), "utf8");
     const beforeMd = parseMarkdown(raw);
@@ -59,12 +48,7 @@ test("SHA-pinned FI overlays correct twenty-eight dishes without nutrition chang
     assert.equal(after.servings, before.servings);
     assert.equal(after.time_total_min, before.time_total_min);
     assert.deepEqual(after.ingredients, before.ingredients);
-    if (before.recipe_id === "pohjoisafrikkalainen-baghrir") {
-      assert.equal(after.image?.src,before.image?.src);
-      assert.equal(after.image?.width,before.image?.width);
-      assert.equal(after.image?.height,before.image?.height);
-      assert.equal(after.image?.alt,"Marokkolainen baghrir hunajalla tarjoiltuna aamiaisella");
-    } else if (before.recipe_id === "intialainen-besan-chilla") {
+    if (before.recipe_id === "intialainen-besan-chilla") {
       assert.equal(after.image?.src,before.image?.src);
       assert.equal(after.image?.width,before.image?.width);
       assert.equal(after.image?.height,before.image?.height);
@@ -97,26 +81,16 @@ test("SHA-pinned FI overlays correct twenty-eight dishes without nutrition chang
       assert.match(afterMd.content,/hiilihydraattia 24,2 g, proteiinia 6,1 g ja rasvaa 1,6 g/);
       assert.doesNotMatch(beforeMd.content,/katkaraputahnaa eli äyriäisallergeenin/);
     }
-    if (new Set(["pohjoisafrikkalainen-baghrir","thai-roti-munalla-banaanilla","meksikolainen-chilaquiles-verdes","meksikolainen-paputostada-aamupalaksi","indonesialainen-nasi-goreng-aamiaisriisi","korealainen-kimchi-jeon-aamiaiseksi"]).has(before.recipe_id)) {
+    if (new Set(["thai-roti-munalla-banaanilla","indonesialainen-nasi-goreng-aamiaisriisi"]).has(before.recipe_id)) {
       assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
       assert.notEqual(afterMd.content, beforeMd.content);
-      if (before.recipe_id === "pohjoisafrikkalainen-baghrir") {
-        assert.doesNotMatch(afterMd.content, /hunajavoilla/);
-        assert.match(afterMd.content, /Marokkolainen baghrir hunajalla/);
-      }
       assert.doesNotMatch(afterMd.content.split("## Valmistus")[1] ?? "",/Valmistele ainekset: paloittele kasvikset|Sekoita jauhot tai viljat ja muut kuivat ainekset|Raasta, muussaa tai hienonna pääraaka-aine|hunajavoilla/);
-    } else if (new Set(["intialainen-pinaatti-paneer-chilla","vietnamilainen-papaija-kookospuuro","uunimuna-avokadot","intialainen-besan-chilla","thai-kananmunat-kookoscurryssa","vietnamilainen-banh-xeo-aamiaisletut","vietnamilainen-banh-cuon-sienilla"]).has(before.recipe_id)) {
-      const wantSteps = ["intialainen-pinaatti-paneer-chilla","uunimuna-avokadot"].includes(before.recipe_id) ? 5 : 4;
+    } else if (new Set(["uunimuna-avokadot","intialainen-besan-chilla","thai-kananmunat-kookoscurryssa"]).has(before.recipe_id)) {
+      const wantSteps = ["uunimuna-avokadot"].includes(before.recipe_id) ? 5 : 4;
       assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, wantSteps);
       assert.notEqual(afterMd.content, beforeMd.content);
       assert.doesNotMatch(afterMd.content,/Valmistele ainekset: paloittele kasvikset|Sekoita jauhot tai viljat ja muut kuivat ainekset|Kypsennä liha tai muut täytteet kypsiksi|Tarjoa halutessasi korianterichutney/);
-    } else if (before.recipe_id === "rahka-marjakerroskulho") {
-      assert.equal(before.servings, 4);
-      assert.deepEqual(before.cooking_method, ["kypsentäminen"]);
-      assert.deepEqual(after.cooking_method, ["kylmävalmistus"]);
-      assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
-      assert.equal(afterMd.content, beforeMd.content);
-    } else if (new Set(["karibia-mango-limejogurtti","japanilainen-hojicha-jogurtti-persimonilla","lahi-ita-pistaasijogurtti","vietnamilainen-kahvijogurtti-banaanilla","valimerellinen-jogurttikulho-hunajalla","kiinalainen-soijamaito-aamiaisella","korealainen-gyeranbap-riisikulho","lahi-ita-zaatar-munat"]).has(before.recipe_id)) {
+    } else if (new Set(["karibia-mango-limejogurtti","lahi-ita-pistaasijogurtti","vietnamilainen-kahvijogurtti-banaanilla","valimerellinen-jogurttikulho-hunajalla","kiinalainen-soijamaito-aamiaisella","korealainen-gyeranbap-riisikulho"]).has(before.recipe_id)) {
       assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
       assert.doesNotMatch(afterMd.content, /Valmistele kulhon ainekset|Paloittele tuoreet kasvikset ja valmistele yrtit|Kypsennä riisi pakkauksen ohjeen mukaan\. Paista tofu|kypsennä pavut tai liha tarvittaessa erikseen/);
       assert.notEqual(afterMd.content, beforeMd.content);
@@ -173,19 +147,19 @@ test("SHA-pinned FI overlays correct twenty-eight dishes without nutrition chang
 
 test("generated FI cards use chef-corrected instructions and the reviewed noodle facet",()=>{
   const recipes = new Map(siteContent.recipes.filter(r=>r.locale==="fi").map(r=>[r.recipeId,r]));
-  for (const id of ["karibia-mango-limejogurtti","japanilainen-hojicha-jogurtti-persimonilla","lahi-ita-pistaasijogurtti","vietnamilainen-kahvijogurtti-banaanilla","valimerellinen-jogurttikulho-hunajalla","kiinalainen-soijamaito-aamiaisella","korealainen-gyeranbap-riisikulho","lahi-ita-zaatar-munat"]) {
+  for (const id of ["karibia-mango-limejogurtti","lahi-ita-pistaasijogurtti","vietnamilainen-kahvijogurtti-banaanilla","valimerellinen-jogurttikulho-hunajalla","kiinalainen-soijamaito-aamiaisella","korealainen-gyeranbap-riisikulho"]) {
     const recipe = recipes.get(id);
     assert.ok(recipe, "FI generated missing: " + id);
     assert.equal(recipe.servings, 2);
     const fullText = recipe.instructionsText.join(" ");
     assert.doesNotMatch(fullText, /Valmistele kulhon ainekset|Paloittele tuoreet kasvikset ja valmistele yrtit|Kypsennä riisi pakkauksen ohjeen mukaan\. Paista tofu|kypsennä pavut tai liha tarvittaessa erikseen/);
   }
-  for(const id of ["intialainen-pinaatti-paneer-chilla","vietnamilainen-papaija-kookospuuro","uunimuna-avokadot","intialainen-besan-chilla","thai-kananmunat-kookoscurryssa","vietnamilainen-banh-xeo-aamiaisletut","vietnamilainen-banh-cuon-sienilla"]) {
+  for(const id of ["uunimuna-avokadot","intialainen-besan-chilla","thai-kananmunat-kookoscurryssa"]) {
     const rec = recipes.get(id);
     assert.ok(rec, "Missing corrected FI recipe: "+id);
     assert.doesNotMatch(rec.instructionsText.join(" "),/Sekoita jauhot tai viljat ja muut kuivat ainekset|Kypsennä liha tai muut täytteet kypsiksi|Valmistele ainekset: paloittele kasvikset/);
   }
-  for(const id of ["pohjoisafrikkalainen-baghrir","thai-roti-munalla-banaanilla","meksikolainen-chilaquiles-verdes","meksikolainen-paputostada-aamupalaksi","indonesialainen-nasi-goreng-aamiaisriisi","korealainen-kimchi-jeon-aamiaiseksi"]) {
+  for(const id of ["thai-roti-munalla-banaanilla","indonesialainen-nasi-goreng-aamiaisriisi"]) {
     const rec=recipes.get(id);
     if (isPublicRecipeQuarantined(id)) {
       assert.equal(rec, undefined, id + ": sealed source still has overlay but is not a public recipe");
@@ -197,7 +171,7 @@ test("generated FI cards use chef-corrected instructions and the reviewed noodle
   const rahka = recipes.get("rahka-marjakerroskulho");
   assert.ok(rahka);
   assert.equal(rahka.servings, 4);
-  assert.equal(rahka.instructionsText.length, 4);
+  assert.equal(rahka.instructionsText.length, 3);
   const ham = recipes.get("yrttituorejuusto-kinkkurullat");
   assert.ok(ham);
   assert.equal(ham.servings,4);
@@ -254,28 +228,5 @@ test("F25 doujiang and Thai coconut-pancake public corrections preserve source n
     for (const macro of macros) assert.equal(shown.data[macro], original.data[macro]);
     assert.match(JSON.stringify(shown), titleOrIngredient);
     assert.match(shown.content, prep);
-  }
-});
-
-test("F25 batch A2 three real cooking method revisions are source-sealed and do not alter nutrients", () => {
-  const cases: Array<[string, RegExp, RegExp]> = [
-    ["vietnamilainen-papaija-kookospuuro", /100 g kuivia pieniä tapiokahelmiä/, /Älä.*valuta|älä valuta|älä valuta tai huuhtele/],
-    ["vietnamilainen-banh-cuon-sienilla", /75 °C/, /40–50 minuuttia/],
-    ["vietnamilainen-banh-xeo-aamiaisletut", /yhdeltä puolelta/, /kuumenna idut kauttaaltaan läpikuumiksi/],
-  ];
-  for(const [id, cooking, safety] of cases) {
-    const relative = "reseptit/aamupalat/" + id + ".md";
-    const raw = readFileSync(path.join(root, relative), "utf8");
-    const before = parseMarkdown(raw), after = parseMarkdown(projectBreakfastFiQualityDisplay(relative, raw));
-    assert.ok(before && after);
-    assert.deepEqual(after.data.ingredients, before.data.ingredients, id + ": ingredient masses");
-    assert.equal(after.data.servings, before.data.servings, id + ": servings");
-    assert.equal(after.data.time_total_min, before.data.time_total_min, id + ": historical time metadata remains sealed");
-    assert.deepEqual(after.data.image, before.data.image, id + ": image");
-    for(const key of macros) assert.equal(after.data[key],before.data[key],id + ":" + key);
-    assert.equal((after.content.match(/^\d+\. /gm)??[]).length,4);
-    assert.match(after.content,cooking,id);
-    assert.match(after.content,safety,id);
-    assert.doesNotMatch(after.content,/Sekoita jauhot tai viljat ja muut kuivat ainekset|Kypsennä liha tai muut täytteet/);
   }
 });

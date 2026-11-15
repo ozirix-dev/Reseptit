@@ -1,5 +1,5 @@
 ---
-title: "Kongjuk soijapapu-riisipuuro"
+title: "Kongjuk eli korealainen soijapapu-riisipuuro"
 recipe_id: korealainen-kongjuk-soijapapu-riisipuuro
 url_slug: korealainen-kongjuk-soijapapu-riisipuuro
 category: aamupala
@@ -31,7 +31,7 @@ ingredients:
     unit: ""
     item: suolaa maun mukaan
 servings: 2
-time_total_min: 25
+time_total_min: 660
 difficulty: Helppo
 tags:
   - "aamupala"
@@ -39,7 +39,7 @@ tags:
   - "puuro"
 image:
   src: aamupalat/korealainen-kongjuk-soijapapu-riisipuuro.webp
-  alt: "Kongjuk soijapapu-riisipuuro tarjoiltuna aamiaisella"
+  alt: "Korealaista soijapapu-riisipuuroa seesaminsiemenillä."
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 46.43
@@ -48,19 +48,23 @@ protein_per_serving_g: 28.21
 fat_per_serving_g: 18.59
 ---
 
-# Kongjuk soijapapu-riisipuuro
+# Kongjuk eli korealainen soijapapu-riisipuuro
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan kongjuk soijapapu-riisipuuro. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Tässä korealaisen kongjukin kotiversiossa soijapavut keitetään kunnolla pehmeiksi ja osa niistä soseutetaan puuroon. Seesami lisätään tarjoiltaessa.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Käytä kuivia soijapapuja, kuivaa valkoista pitkäjyväistä riisiä ja valkoisia seesaminsiemeniä. Varaa kylmää liotusvettä erikseen.
 
 ## Valmistus
 
-1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.
-2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.
-3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.
-4. Liota kuivia soijapapuja yön yli ja valuta. Keitä pavut ja riisi vedessä pehmeiksi. Soseuta pavut osittain puuroon ja viimeistele seesaminsiemenillä.
+1. Huuhtele pavut. Peitä runsaalla kylmällä vedellä ja liota jääkaapissa vähintään 8 tuntia. Kaada liotusvesi pois ja huuhtele pavut.
+2. Lisää pavut ja 700 ml tuoretta vettä tilavaan kattilaan. Kuumenna kiehuvaksi ja hauduta kansi raollaan, kunnes pavut ovat täysin kypsiä ja pehmeitä. Varaa hauduttamiseen noin 1¼–3 tuntia ja noudata pakkauksen kypsennysohjetta. Lisää tarvittaessa kuumaa vettä, jotta pavut pysyvät peitossa.
+3. Huuhtele riisi ja lisää se kypsien papujen ja keitinveden joukkoon. Hauduta 25–30 minuuttia tai kunnes riisi on hyvin pehmeää. Sekoita välillä. Murskaa osa pavuista lusikalla ja sekoita puuro tasaiseksi.
+4. Lisää aineslistan 1 tl suolaa. Tarkista maku ja lisää halutessasi suolaa. Jaa kahteen kulhoon ja ripottele päälle seesaminsiemenet.
+
+## Muistiinpanot
+
+Sisältää soijaa ja seesamia. Kokonaisaika sisältää liotuksen ja vaihtelee papujen mukaan. Jäähdytä ylijäänyt puuro nopeasti matalassa astiassa tunnin kuluessa. Säilytä jääkaapissa ja käytä 24 tunnin kuluessa. Kuumenna vain kerran kauttaaltaan höyryävän kuumaksi.

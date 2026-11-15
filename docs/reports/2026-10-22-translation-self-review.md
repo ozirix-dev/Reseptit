@@ -19,7 +19,7 @@ Tarkistuksessa oli 119 suomenkielistä lähdettä ja 357 julkaistua käännöst�
   Tarkistaja on Codex-kielimalli. Tila on `AUTOMATED SEMANTIC REVIEW` ja
   `HUMAN REVIEW PENDING`.
 
-[Koneellinen muutosten luettelo](2026-10-22-translation-self-review.json)
+[Koneellinen muutosten luettelo](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-translation-self-review.json)
 tallentaa lähtöversion, tarkistusrajauksen ja jokaisen muuttuneen version.
 Korjauksia tuli 93 reseptin 256 käännösversioon: EN 81, SV 84 ja TH 91.
 Lukumäärä sisältää myös toistuvien ainesosahuomautusten ja tunnisteiden korjaukset;

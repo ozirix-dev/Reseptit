@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { emptyRecipeFilters, filterRecipes } from "../src/features/recipes/recipe-search";
 import { createHash } from "node:crypto";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { verifyNutritionEvidence } from "../scripts/nutrition-evidence";
@@ -129,12 +130,12 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
     ["raejuusto-pesto-kasviskulho", 2.99],
     ["marjainen-chiavanukas", 3.51],
     ["paahdettu-aamiaismunakoiso", 4.35],
-    ["rahka-marjakerroskulho", 6.32],
+    ["rahka-marjakerroskulho", 5.9],
     ["savulohi-avokadokulho", 0.89],
     ["tonnikalamunakkaat-uunissa", 0.53],
     ["lahi-ita-kikherne-shakshuka", 11.17],
     ["pohjoisafrikkalainen-maakouda", 4.84],
-    ["valimerellinen-menemen-fetalla", 5.38],
+    ["valimerellinen-menemen-fetalla", 5.35],
     ["valimerellinen-tortilla-espanola-aamupalaksi", 6.14],
     ["valimerellinen-kikherne-yrttiaamiainen", 11.98],
     ["keto-mutakakku", 1.52], ["keto-suklaakeksit", 1.38],
@@ -165,6 +166,10 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
     ["valimerellinen-ricotta-persikkakulho", 8.27],
     ["korealainen-gyeran-mari-kasviksilla", 2.11],
     ["intialainen-besan-chilla", 22.78],
+    ["korealainen-kimchi-jeon-aamiaiseksi", 34.81],
+    ["intialainen-pinaatti-paneer-chilla", 21.79],
+    ["meksikolainen-chilaquiles-verdes", 26.44],
+    ["meksikolainen-paputostada-aamupalaksi", 33.36],
     ["intialainen-rava-uttapam", 36.98],
     ["kiinalainen-kevatsipulipannukakku", 38.13],
     ["indonesialainen-bubur-ayam-kanariisipuuro", 37.32],
@@ -173,7 +178,7 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
     ["intialainen-pesarattu-mungpavuista", 68.49],
     ["pohjoisafrikkalainen-bissara", 28.24],
     ["vietnamilainen-banh-mi-munalla", 30.55],
-    ["vietnamilainen-banh-xeo-aamiaisletut", 42.55],
+    ["vietnamilainen-banh-xeo-aamiaisletut", 41.62],
     ["vietnamilainen-kahvijogurtti-banaanilla", 21.39],
     ["valimerellinen-tahinipuuro", 40.33],
     ["valimerellinen-jogurttikulho-hunajalla", 11.19],
@@ -182,7 +187,7 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
     ["meksikolainen-atole-maissipuuro", 47.4],
     ["thai-maissifritterit", 55.41],
     ["karibia-mango-limejogurtti", 15.12],
-    ["vietnamilainen-banh-cuon-sienilla", 40.31],
+    ["vietnamilainen-banh-cuon-sienilla", 43.81],
     ["indonesialainen-bakwan-maissifritter", 45.19],
     ["meksikolainen-munakokkeli-pico-de-gallolla", 28.3],
     ["thai-roti-munalla-banaanilla", 50.17],
@@ -196,12 +201,12 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
     ["lahi-ita-ful-medames", 2.41],
     ["malesialainen-roti-canai-dhalilla", 61.41],
     ["korealainen-gyeranbap-riisikulho", 38.08],
-    ["pohjoisafrikkalainen-baghrir", 76.19],
+    ["pohjoisafrikkalainen-baghrir", 74.61],
     ["karibia-johnny-cake", 38.99],
     ["kiinalainen-teehaudutetut-munat", 1.02],
     ["pohjoisafrikkalainen-harcha-juustolla", 35.66],
     ["meksikolainen-kurpitsapuuro-piloncillolla", 44.63],
-    ["lahi-ita-zaatar-munat", 24.91],
+    ["lahi-ita-zaatar-munat", 25.19],
     ["karibia-maissipuuro-kookoksella", 43.8],
     ["kiinalainen-hirssipuuro-taateleilla", 37.85],
     ["kiinalainen-musta-seesamipuuro", 46.5],
@@ -210,7 +215,7 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
     ["pohjoisafrikkalainen-kuskus-aamiaiskulho", 42.52],
     ["vietnamilainen-chao-ga-kanapuuro", 37.32],
     ["vietnamilainen-pho-ga-aamuksi", 40.87],
-    ["vietnamilainen-papaija-kookospuuro", 49.7],
+    ["vietnamilainen-papaija-kookospuuro", 49.84],
     ["vietnamilainen-hu-tieu-aamiaiskeitto", 42.08],
     ["korealainen-kongjuk-soijapapu-riisipuuro", 46.43],
     ["korealainen-jumeokbap-merilevalla", 38.73],
@@ -305,7 +310,7 @@ test("the 40 recipe cards are unique and show their reviewed image bindings", as
     ["paella-valenciana", 59.13], ["bun-cha-hanoi", 76.90], ["sate-ayam", 13.59],
     ["kreikkalainen-kanavuoka-oliiveilla", 4.1], ["hunaja-sinappikana-kaalilla", 12.22],
     ["marjainen-chiavanukas", 3.51], ["kaakao-kookos-chia", 2.53],
-    ["rahka-marjakerroskulho", 6.32], ["savulohi-avokadokulho", 0.89],
+    ["rahka-marjakerroskulho", 5.9], ["savulohi-avokadokulho", 0.89],
     ["kurkku-oliivi-aamiaiskulho", 2.07], ["paahdettu-aamiaismunakoiso", 4.35],
     ["raejuusto-pesto-kasviskulho", 2.99],
     ["maksalaatikko-kukkakaalilla", 12.07],
@@ -495,7 +500,7 @@ test("batch twelve publishes recalculated macronutrients for every recipe and av
     ["nakkikastike-kukkakaalimuusi", [7.88, 10.96, 15.69, 45.87]],
     ["amritsari-kala", [10.74, 16.33, 32.17, 10.81]],
     ["kantonilainen-hoyrytetty-kala", [3.13, 4.58, 31.99, 9.04]],
-    ["hyderabadi-kanabiryani", [60.47, 62.73, 37.41, 20.64]],
+    ["hyderabadi-kanabiryani", [60.83, 63.09, 37.63, 20.9]],
     ["kana-yakitori-kaalilla", [9.16, 12.35, 27.52, 6.23]],
     ["ropa-vieja", [7.67, 9.77, 34.06, 6.77]],
     ["kerala-kalacurry", [5.54, 6.67, 28.28, 22.7]],
@@ -560,7 +565,7 @@ test("batch fourteen publishes recalculated macronutrients for every recipe and 
     ["intialainen-pesarattu-mungpavuista", [68.49, 79.38, 21.93, 8.7]],
     ["pohjoisafrikkalainen-bissara", [28.24, 42.55, 18.49, 8.59]],
     ["vietnamilainen-banh-mi-munalla", [30.55, 33.19, 11.93, 12.53]],
-    ["vietnamilainen-banh-xeo-aamiaisletut", [42.55, 44.68, 17.47, 23.37]],
+    ["vietnamilainen-banh-xeo-aamiaisletut", [41.62, 43.86, 16.57, 10.24]],
     ["vietnamilainen-kahvijogurtti-banaanilla", [21.39, 22.45, 3.8, 3.68]],
     ["valimerellinen-tahinipuuro", [40.33, 47.15, 8.13, 9.19]],
     ["valimerellinen-jogurttikulho-hunajalla", [11.19, 12.8, 6.7, 13.36]],
@@ -569,7 +574,7 @@ test("batch fourteen publishes recalculated macronutrients for every recipe and 
     ["meksikolainen-atole-maissipuuro", [47.4, 49.04, 5.85, 4.21]],
     ["thai-maissifritterit", [55.41, 59.9, 14.82, 13.59]],
     ["karibia-mango-limejogurtti", [15.12, 18.23, 2.65, 8.5]],
-    ["vietnamilainen-banh-cuon-sienilla", [40.31, 42.76, 21.37, 9.05]],
+    ["vietnamilainen-banh-cuon-sienilla", [43.81, 46.03, 19.69, 11.88]],
   ]);
   // Preserve all twenty historical nutrition rows. The one unfinished aloo
   // paratha source must not be served publicly while it awaits a source review.
@@ -604,12 +609,12 @@ test("batch fifteen publishes recalculated macronutrients for every recipe and a
     ["chow-mein", [27.51, 31.14, 26.36, 12.09]],
     ["malesialainen-roti-canai-dhalilla", [61.41, 70.01, 18.59, 22.64]],
     ["korealainen-gyeranbap-riisikulho", [38.08, 39.34, 12.07, 5.65]],
-    ["pohjoisafrikkalainen-baghrir", [76.19, 80.36, 12.49, 8.2]],
+    ["pohjoisafrikkalainen-baghrir", [74.61, 78.39, 11.95, 1.3]],
     ["karibia-johnny-cake", [38.99, 40.75, 6.81, 14.68]],
     ["kiinalainen-teehaudutetut-munat", [1.02, 1.02, 7.48, 5.09]],
     ["pohjoisafrikkalainen-harcha-juustolla", [35.66, 37.69, 10.66, 20.2]],
     ["meksikolainen-kurpitsapuuro-piloncillolla", [44.63, 52.57, 7.12, 4.89]],
-    ["lahi-ita-zaatar-munat", [24.91, 26.07, 12.18, 14.26]],
+    ["lahi-ita-zaatar-munat", [25.19, 26.89, 12.64, 13.49]],
   ]);
   // Historical batch 15 retains all 20 calculations; quarantine intentionally
   // suppresses the unverified orange cake from the public recipe card set.
@@ -639,7 +644,7 @@ test("batch sixteen publishes recalculated macronutrients for every recipe and a
     ["pohjoisafrikkalainen-kuskus-aamiaiskulho", [42.52, 45.83, 10.91, 7.18]],
     ["vietnamilainen-chao-ga-kanapuuro", [37.32, 37.87, 20.49, 1.07]],
     ["vietnamilainen-pho-ga-aamuksi", [40.87, 41.93, 18.6, 0.88]],
-    ["vietnamilainen-papaija-kookospuuro", [49.7, 52.07, 1.85, 14.28]],
+    ["vietnamilainen-papaija-kookospuuro", [49.84, 52.21, 1.96, 15.51]],
     ["vietnamilainen-hu-tieu-aamiaiskeitto", [42.08, 44.18, 21.61, 2.02]],
     ["korealainen-kongjuk-soijapapu-riisipuuro", [46.43, 62.47, 28.21, 18.59]],
     ["korealainen-jumeokbap-merilevalla", [38.73, 40.7, 4.86, 7.37]],
@@ -782,8 +787,12 @@ test("R1B corrected Koshari nutrition evidence is synchronized across published 
   }
 });
 
-test("twenty-one source-sealed withdrawals never enter public recipes or sitemap", async () => {
-  assert.equal(publicRecipeQuarantineIds.length, 21);
+test("source-sealed withdrawals never enter public recipe content", async () => {
+  const predecessor = "indonesialainen-bubur-sumsum";
+  assert.ok(isPublicRecipeQuarantined(predecessor));
+  const successor = currentSiteContent.recipes.filter(r => r.recipeId === predecessor + "-punnittu-v2");
+  assert.deepEqual(successor.map(r => r.locale).sort(), ["en", "fi", "sv", "th"]);
+  assert.ok(successor.every(r => r.slug === predecessor));
   for (const id of publicRecipeQuarantineIds) {
     assert.equal(currentSiteContent.recipes.some(r => r.recipeId === id), false);
     const source = parseMarkdown(await readFile(path.resolve(import.meta.dirname, `../../reseptit/aamupalat/${id}.md`), "utf8"));
@@ -872,4 +881,11 @@ test("three B21 preparation-time HOLDs retain exact source bytes but no public p
     assert.ok(parsed);
     assert.equal(parsed.data.status, "published", id + ": historical source retained");
   }
+});
+
+test("roti jala successor remains visible with the chicken filter in all locales", () => {
+  const id = "malesialainen-roti-jala-currykanalla-punnittu-v2";
+  const chicken = filterRecipes(currentSiteContent.recipes, { ...emptyRecipeFilters, ingredient: "chicken" }, "fi");
+  assert.deepEqual(chicken.filter(recipe => recipe.recipeId === id).map(recipe => recipe.locale).sort(),
+    ["en", "fi", "sv", "th"]);
 });

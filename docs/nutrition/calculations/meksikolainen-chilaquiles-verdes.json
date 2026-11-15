@@ -1,0 +1,330 @@
+{
+  "recipeId": "meksikolainen-chilaquiles-verdes",
+  "sourceHash": "55ab393e28e1ae1204d729dc4aa14b6944cb39dfe35b8c33a195fe1b9c11549e",
+  "calculatedAt": "2026-11-14",
+  "batchId": "batch-570",
+  "servings": 2,
+  "scope": "Two servings. All weighed salsa ingredients, dry-baked corn tortillas, scrambled egg and drained feta are served. All oil is blended into salsa. 1 g trimmed jalapeño is bounded conservatively.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "pehmeitä maissitortilloja",
+      "state": "soft plain corn tortillas as sold",
+      "matchEvidence": "AFCD Release 3: Bread, flat wrap or tortilla, corn, commercial",
+      "record": {
+        "id": "afcd-F009854-release-3",
+        "name": "Bread, flat wrap or tortilla, corn, commercial",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009854",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "soft plain corn tortillas as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 44.8,
+          "fibre": 5,
+          "polyols": 0,
+          "protein": 4.8,
+          "fat": 3.2
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "vihreää kesäkurpitsaa",
+      "state": "raw trimmed green zucchini",
+      "matchEvidence": "Fineli Release 20 KESÄKURPITSA, ZUCCHINI",
+      "record": {
+        "id": "fineli-389-release-20",
+        "name": "KESÄKURPITSA, ZUCCHINI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/389",
+        "retrievedAt": "2026-11-14",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "raw trimmed green zucchini",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 2.5,
+          "FIBT": 2,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 2.5,
+          "fibre": 2,
+          "polyols": 0,
+          "protein": 0.65,
+          "fat": 0.4
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 80,
+      "unit": "g",
+      "item": "vihreää paprikaa",
+      "state": "raw green sweet pepper without stem and seeds",
+      "matchEvidence": "AFCD Release 3: Capsicum, green, fresh, raw",
+      "record": {
+        "id": "afcd-F002239-release-3",
+        "name": "Capsicum, green, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002239",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "raw green sweet pepper without stem and seeds",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 2.5,
+          "fibre": 1.5,
+          "polyols": 0,
+          "protein": 0.9,
+          "fat": 0
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 35,
+      "unit": "g",
+      "item": "kuorittua valkoista sipulia",
+      "state": "raw peeled white onion",
+      "matchEvidence": "AFCD Release 3: Onion, mature, white skinned, peeled, fresh, raw",
+      "record": {
+        "id": "afcd-F006243-release-3",
+        "name": "Onion, mature, white skinned, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006243",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "raw peeled white onion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.7,
+          "fibre": 2.1,
+          "polyols": 0,
+          "protein": 1.7,
+          "fat": 0.1
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 15,
+      "unit": "g",
+      "item": "limen kuorittua hedelmälihaa",
+      "state": "raw peeled lime flesh used whole",
+      "matchEvidence": "AFCD Release 3: Lime, peeled, raw",
+      "record": {
+        "id": "afcd-F005199-release-3",
+        "name": "Lime, peeled, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F005199",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "raw peeled lime flesh used whole",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.2,
+          "fibre": 3.6,
+          "polyols": 0,
+          "protein": 0.8,
+          "fat": 0.1
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 1,
+      "unit": "g",
+      "item": "tuoretta jalapeñoa",
+      "state": "fresh jalapeño, trimmed",
+      "matchEvidence": "One gram of jalapeño; any individual macronutrient is bounded by the weighed ingredient mass, without assuming zero.",
+      "excludedReason": "One gram of jalapeño; any individual macronutrient is bounded by the weighed ingredient mass, without assuming zero.",
+      "omissionImpactEvidence": "One gram of jalapeño; any individual macronutrient is bounded by the weighed ingredient mass, without assuming zero.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 4.5,
+        "netCarbohydrate": 0.5,
+        "totalCarbohydrate": 0.5,
+        "protein": 0.5,
+        "fat": 0.5
+      }
+    },
+    {
+      "amount": 50,
+      "unit": "g",
+      "item": "vettä",
+      "state": "plain water",
+      "matchEvidence": "Plain water and fine salt do not contribute to the modeled nutrients.",
+      "excludedReason": "Plain water and fine salt do not contribute to the modeled nutrients.",
+      "omissionImpactEvidence": "Plain water and fine salt do not contribute to the modeled nutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      }
+    },
+    {
+      "amount": 8,
+      "unit": "g",
+      "item": "rypsiöljyä salsaan",
+      "state": "rapeseed oil in salsa",
+      "matchEvidence": "Fineli Release 20 RYPSIÖLJY",
+      "record": {
+        "id": "fineli-535-release-20",
+        "name": "RYPSIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/535",
+        "retrievedAt": "2026-11-14",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "rapeseed oil in salsa",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "kananmunaa ilman kuorta (noin 2 kpl)",
+      "state": "raw whole egg without shell",
+      "matchEvidence": "Fineli Release 20 KANANMUNA, KUORETON",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-11-14",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "raw whole egg without shell",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 50,
+      "unit": "g",
+      "item": "valutettua pastöroidusta maidosta tehtyä fetaa",
+      "state": "drained feta made with pasteurized milk",
+      "matchEvidence": "AFCD Release 3: Cheese, fetta (feta)",
+      "record": {
+        "id": "afcd-F002452-release-3",
+        "name": "Cheese, fetta (feta)",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002452",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "drained feta made with pasteurized milk",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0.4,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 16.6,
+          "fat": 20.6
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 2,
+      "unit": "g",
+      "item": "hienoa suolaa",
+      "state": "fine salt",
+      "matchEvidence": "Plain water and fine salt do not contribute to the modeled nutrients.",
+      "excludedReason": "Plain water and fine salt do not contribute to the modeled nutrients.",
+      "omissionImpactEvidence": "Plain water and fine salt do not contribute to the modeled nutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      }
+    }
+  ]
+}

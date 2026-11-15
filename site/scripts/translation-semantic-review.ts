@@ -79,7 +79,7 @@ export function preparationRegressionErrors({ data, content }: Pick<Recipe, "dat
   if (data.recipe_id === "hyderabadi-kanabiryani" && data.language === "th") {
     if (steps.some((step) => /(?:ขยี้|บดข้าว)/.test(step))) issues.push("fluff the rice without crushing it");
     const marinade = steps.find((step) => step.includes("โยเกิร์ต")) ?? "";
-    const layers = steps.find((step) => /หญ้าฝรั่น/.test(step)) ?? "";
+    const layers = steps.find((step) => /หญ้าฝรั่น/.test(step) && /ผักชีสด|ใบผักชี/.test(step)) ?? "";
     if (!/(?:เมล็ดผักชี|ลูกผักชี).*(?:ป่น|บด)/.test(marinade) || !/ผักชีสด|ใบผักชี/.test(layers)) {
       issues.push("distinguish ground coriander seed in the marinade from fresh coriander in the layers");
     }

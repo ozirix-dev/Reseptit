@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "indonesialainen-lontong-sayur-aamiaiseksi-punnittu-v2",
+  "source_path": "reseptit/aamupalat/indonesialainen-lontong-sayur-aamiaiseksi-punnittu-v2.md",
+  "source_sha256": "ce35904e789b0db661ac2b257c4dd9a901d4427dadb471e502e16414f76fb44f",
+  "decision": "approved",
+  "reviewed_by": "AI editorial reviewer (GPT-6)",
+  "reviewed_at": "2026-11-13",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://innovasidapurindonesia.com/pages/recipe-lontong-sayur",
+      "https://www.tourism.gov.my/files/uploads/Mag6_Final.pdf",
+      "https://www.nyonyacooking.com/recipes/compressed-rice-for-chicken-satay~r1TedPiwzcZ7",
+      "https://www.food.gov.uk/print/pdf/node/4286",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ruokamyrkytyksia-aiheuttavia-bakteereja/bacillus-cereus/"
+    ]
+  },
+  "supersedes_quarantined": {
+    "recipe_id": "indonesialainen-lontong-sayur-aamiaiseksi",
+    "source_path": "reseptit/aamupalat/indonesialainen-lontong-sayur-aamiaiseksi.md",
+    "source_git_blob_sha": "99891cc348f3eb0e9baa3c30095f0c61ce0af569"
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/indonesialainen-lontong-sayur-aamiaiseksi-punnittu-v2.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "The sole historical slug owner is the quarantined predecessor with the exact registered Git blob."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "All ingredients use edible gram weights. Allergen disclosures and the new illustration were checked against the ingredient list."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Plant-based adaptation with pressed long-grain rice, firm tofu and coconut vegetables. The compressed rice reference uses two cups water per cup rice by volume; 250 g per 100 g dry rice is a compatible weight ratio. Cook until absorbed and soft, press in a 2 cm layer, chill rapidly, then reheat once until steaming throughout. Dry rice, edible trimmed produce and drained tofu are weighed. Full cooking-oil retention. No physical trial."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Cool pressed rice immediately in a shallow layer within one hour, refrigerate at most 24 hours and reheat only once until steaming throughout. Disclose soy and check broth allergens."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "2 portions with 85 minutes including the specified cooking and resting or cooling periods."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli and AFCD edible mass calculation verified against the current recipe input SHA-256. Plant-based adaptation with pressed long-grain rice, firm tofu and coconut vegetables. The compressed rice reference uses two cups water per cup rice by volume; 250 g per 100 g dry rice is a compatible weight ratio. Cook until absorbed and soft, press in a 2 cm layer, chill rapidly, then reheat once until steaming throughout. Dry rice, edible trimmed produce and drained tofu are weighed. Full cooking-oil retention. No physical trial."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "No preparation-matched glycemic load approval exists for the successor; the original is retained in historical quarantine."
+    }
+  }
+}

@@ -1,12 +1,12 @@
 ---
-title: Tunisian brik with egg and tuna
+title: Tunisian brik with hard-boiled egg and tuna
 recipe_id: tunisialainen-brik
 url_slug: tunisialainen-brik
 category: alkuruoka
 language: en
 status: published
 servings: 4
-time_total_min: 30
+time_total_min: 40
 main_ingredient:
   - kananmuna
   - tonnikala
@@ -19,8 +19,8 @@ tags:
   - "egg"
   - "tuna fish"
 image:
-  src: paaruoat/tunisialainen-brik.webp
-  alt: Crispy fried Tunisian Brik with egg, tuna and parsley
+  src: paaruoat/tunisialainen-brik-kypsalla-munalla.webp
+  alt: Crisp brik triangles filled with tuna, hard-boiled egg, capers and parsley
   width: 1279
   height: 853
 ingredients:
@@ -58,23 +58,20 @@ source_recipe: reseptit/alkuruoat/tunisialainen-brik.md
 translation_of: tunisialainen-brik
 ---
 
-# Tunisian brik with egg and tuna
-
-Tuna, parsley and egg are wrapped in thin dough. Brik is quickly fried until crispy and served with lemon.
+# Tunisian brik with hard-boiled egg and tuna
 
 ## Description
 
-Tuna, parsley and egg are wrapped in thin dough. Brik is quickly fried until crispy and served with lemon.
+In this adaptation of Tunisian brik, the eggs are hard-boiled before filling. The thin malsouka wrappers are fried until crisp and served with lemon.
 
 ## Preparation
 
-1. Mix the tuna, capers, parsley and lemon juice.
-2. Place the dough on the work surface. Put a quarter of the tuna filling in the center and make a small depression in it.
-3. Crack an egg into the recess. Fold the dough into a triangle and press to close the edges.
-4. Fry the Brik one at a time in 170-degree oil for about 2 minutes on each side. Drain on paper towels.
+1. Hard-boil the eggs until both the whites and yolks are firm. Cool, peel and chop.
+2. Drain the tuna and capers. Mix them with the eggs, parsley and lemon juice. Divide the filling into four equal portions.
+3. Fill one malsouka sheet at a time. Spread one portion flat over half the sheet, leaving room around the edges. Fold into a triangle and press the edges closed. Keep the remaining sheets covered.
+4. Heat the oil to 170 °C in a deep pan. Carefully lower the brik into the oil seam-side down. Fry one at a time for about 2 minutes per side until crisp and golden. Drain on paper towels.
 5. Serve immediately with lemon wedges.
 
 ## Notes
 
-
-- The egg is traditionally left runny inside. Use fresh eggs and fry each brik immediately after filling it.
+- Prefer malsouka sheets intended for frying. If using filo, choose sheets suitable for frying and follow the package handling directions. Hard-boil all the eggs and fill each sheet just before frying. Keep the filling refrigerated if you pause. Allergens: egg and fish. Check the wrapper package for allergens. Oil absorption and nutrition per serving have not been determined.

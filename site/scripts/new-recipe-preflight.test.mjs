@@ -162,7 +162,7 @@ for (const [label, from, status, needsReview, target = recipePath] of [
   });
 }
 
-test('only the exact SHA-frozen chickpea successor may reuse a quarantined legacy slug', () => {
+test('a registered successor may reuse only its exact quarantined legacy slug', () => {
   const newId = 'valimerellinen-kikherne-yrttiaamiainen-punnittu-v2';
   const oldId = 'valimerellinen-kikherne-yrttiaamiainen';
   const oldPath = 'reseptit/aamupalat/' + oldId + '.md';
@@ -183,6 +183,27 @@ test('only the exact SHA-frozen chickpea successor may reuse a quarantined legac
   assert.deepEqual(validateReview(newPath, sourceText, reviewed, [oldRow]), []);
   assert(validateReview(newPath, sourceText, { ...reviewed, supersedes_quarantined: null }, [oldRow]).some(x => x.includes('recipe_id/url_slug already exists')));
   assert(validateReview(newPath, sourceText, reviewed, [{ ...oldRow, source_git_blob_sha: '0'.repeat(40) }]).some(x => x.includes('recipe_id/url_slug already exists')));
+  assert(validateReview(newPath, sourceText, reviewed, []).some(x => x.includes('exact quarantined predecessor')));
+  assert(validateReview(newPath, sourceText, reviewed, [oldRow], []).some(x => x.includes('exact quarantined predecessor')));
   const foreignRow = { ...oldRow, path: 'reseptit/aamupalat/unrelated.md', recipe_id: 'unrelated' };
   assert(validateReview(newPath, sourceText, reviewed, [oldRow, foreignRow]).some(x => x.includes('recipe_id/url_slug already exists')));
+});
+
+test('a second data-defined successor preserves the old URL without admitting an active predecessor', () => {
+  const predecessor = 'intialainen-aloo-paratha';
+  const id = predecessor + '-v2';
+  const originalPath = 'reseptit/aamupalat/' + predecessor + '.md';
+  const successorPath = 'reseptit/aamupalat/' + id + '.md';
+  const blob = 'a'.repeat(40);
+  const markdown = source('published', id).replace('url_slug: ' + id, 'url_slug: ' + predecessor);
+  const review = approval(markdown, successorPath);
+  review.supersedes_quarantined = { recipe_id: predecessor, source_path: originalPath, source_git_blob_sha: blob };
+  const registry = [{ recipe_id: id, url_slug: predecessor, predecessor_id: predecessor,
+    predecessor_path: originalPath, predecessor_blob_sha: blob }];
+  const previous = { recipe_id: predecessor, url_slug: predecessor, path: originalPath,
+    source_git_blob_sha: blob, language: 'fi', status: 'published' };
+  assert.deepEqual(validateReview(successorPath, markdown, review, [previous], registry), []);
+  assert.match(validateReview(successorPath, markdown, review, [previous], [...registry, ...registry])[0], /duplicate/);
+  const active = [{ ...registry[0], predecessor_id: 'omena-puuro' }];
+  assert.match(validateReview(successorPath, markdown, review, [previous], active)[0], /quarantined predecessor/);
 });

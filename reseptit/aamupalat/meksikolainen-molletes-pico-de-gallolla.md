@@ -1,5 +1,5 @@
 ---
-title: "Molletes pavulla ja pico de gallolla"
+title: "Molletes mustapavuilla ja pico de gallolla"
 recipe_id: meksikolainen-molletes-pico-de-gallolla
 url_slug: meksikolainen-molletes-pico-de-gallolla
 category: aamupala
@@ -14,22 +14,37 @@ cooking_method:
 ingredients:
   - amount: 150
     unit: "g"
-    item: "bolillosämpylä"
+    item: "bolillosämpylää"
   - amount: 150
     unit: "g"
-    item: "musta papu"
+    item: "kypsiä mustapapuja säilykkeestä, huuhdeltuna ja valutettuna"
   - amount: 100
     unit: "g"
-    item: "juusto"
+    item: "mietoa vaaleaa cheddaria"
+  - amount: 120
+    unit: "g"
+    item: "tomaattia"
+  - amount: 30
+    unit: "g"
+    item: "keltaista ruokasipulia"
+  - amount: 5
+    unit: "g"
+    item: "tuoretta vihreää chiliä"
+  - amount: 5
+    unit: "g"
+    item: "tuoretta korianteria"
+  - amount: 15
+    unit: "g"
+    item: "limettimehua"
+  - amount: 14
+    unit: "g"
+    item: "rypsiöljyä"
+  - amount: 20
+    unit: "g"
+    item: "vettä"
   - amount: 1
-    unit: "kpl"
-    item: "tomaatti"
-  - amount: 1
-    unit: "rkl"
-    item: "neutraalia paistoöljyä"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
+    unit: "g"
+    item: "suolaa"
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -39,24 +54,25 @@ tags:
   - "aamiaisruoka"
 image:
   src: aamupalat/meksikolainen-molletes-pico-de-gallolla.webp
-  alt: "Molletes pavulla ja pico de gallolla tarjoiltuna aamiaisella"
+  alt: "Pavuilla, sulaneella juustolla ja pico de gallolla täytettyjä molletes-leipiä"
   width: 1536
   height: 1024
 ---
 
-# Molletes pavulla ja pico de gallolla
+# Molletes mustapavuilla ja pico de gallolla
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan molletes pavulla ja pico de gallolla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
-
-## Ainekset
-
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Molletes on meksikolainen lämmin leipä, jonka rapealle sämpyläpohjalle levitetään paputahnaa ja sulatetaan juustoa. Tuore tomaatti-chilisalsa eli pico de gallo lisätään uunista nostetuille leiville.
 
 ## Valmistus
 
-1. Kuumenna uuni 200 asteeseen ja voitele pieni uunivuoka. Kypsennä kovemmat kasvikset tai viljat tarvittaessa ensin.
-2. Sekoita ainekset ja mausteet. Levitä tasaisesti vuokaan.
-3. Paista, kunnes pinta saa väriä ja keskusta on kypsä. Anna vetäytyä muutama minuutti ennen tarjoamista.
-4. Levitä paputahna halkaistuille sämpylöille, lisää juusto ja gratinoi.
+1. Kuumenna uuni 225 °C:seen. Halkaise sämpylät pituussuunnassa ja paahda puolikkaita leivinpaperilla leikkauspinta ylöspäin 4 minuuttia.
+2. Kuutioi tomaatti. Hienonna sipuli, chili ja korianteri. Sekoita ne limettimehun ja puolen suolamäärän kanssa.
+3. Kuumenna öljy pienellä pannulla keskilämmöllä. Lisää valutetut pavut, vesi ja loppu suola. Kuumenna 3 minuuttia ja muussaa pavut karkeaksi tahnaksi.
+4. Levitä paputahna sämpylänpuolikkaille. Raasta juusto niiden päälle ja paista 5–7 minuuttia, kunnes juusto sulaa ja saa hieman väriä.
+5. Lusikoi pico de gallo kuumille leiville ja jaa puolikkaat kahdelle annokselle.
+
+## Muistiinpanot
+
+Käytä kahta pientä bolillosämpylää. Huuhtele säilykepavut ja punnitse ne valutettuina. Sisältää vehnää ja maitoa. Kuvan avokado on tarjoiluehdotus.

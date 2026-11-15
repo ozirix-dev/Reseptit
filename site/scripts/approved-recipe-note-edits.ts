@@ -18,13 +18,244 @@ const englishPublicationSources = new Set([
   "reseptit/jalkiruoat/meheva-suklaakakku.md",
 ]);
 
-// These entries contain reviewed editorial corrections only. Reconstruct the sealed
+// Reconstruct the sealed versions after reviewed source and editorial changes. The sealed
 // versions for GK verification; the exact current hash is required before any
 // inverse edit. Other changes must go through the normal snapshot review.
 const editorialSnapshots: Readonly<Record<string, {
   currentSha256: string;
+  historicalGkText?: string;
   inverseEdits: ReadonlyArray<readonly [start: number, count: number, historical: string]>;
 }>> = {
+  "reseptit/aamupalat/pohjoisafrikkalainen-baghrir.md": {
+    "currentSha256": "e8608b647a266f666074be274774143c284c7b4e8667bfe095032fe6926e2205",
+    "inverseEdits": [
+      [
+        0,
+        74,
+        "---\ntitle: \"Marokkolainen baghrir hunajavoilla\"\nrecipe_id: pohjoisafrikkalainen-baghrir\nurl_slug: pohjoisafrikkalainen-baghrir\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"mannasuurimo\"\n  - \"vehnäjauho\"\n  - \"hiiva\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 100\n    unit: \"g\"\n    item: \"mannasuurimo\"\n  - amount: 100\n    unit: \"g\"\n    item: \"vehnäjauho\"\n  - amount: 5\n    unit: \"g\"\n    item: \"kuivahiivaa\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"hunaja\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\n  - amount: 150\n    unit: ml\n    item: lämmintä vettä\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"pohjoisafrikkalainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/pohjoisafrikkalainen-baghrir.webp\n  alt: \"Marokkolainen baghrir hunajavoilla tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\ncarbs_net_per_serving_g: 76.19\ncarbs_total_per_serving_g: 80.36\nprotein_per_serving_g: 12.49\nfat_per_serving_g: 8.2\n\n---\n\n# Marokkolainen baghrir hunajavoilla\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan marokkolainen baghrir hunajavoilla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Paista taikina toiselta puolelta, kunnes pintaan muodostuu reikiä, ja tarjoa hunajavoilla.\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/lahi-ita-zaatar-munat.md": {
+    "currentSha256": "6ac1341514c02869749ec7f86c4cc8a046331fb19050bb31a7154bed6267d370",
+    "inverseEdits": [
+      [
+        0,
+        76,
+        "---\ntitle: \"Za’atar-munat ja paahdettu pita\"\nrecipe_id: lahi-ita-zaatar-munat\nurl_slug: lahi-ita-zaatar-munat\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"kananmuna\"\n  - \"pita\"\n  - \"zaatar\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 2\n    unit: \"kpl\"\n    item: \"kananmuna\"\n  - amount: 100\n    unit: \"g\"\n    item: \"pita\"\n  - amount: 1\n    unit: \"tl\"\n    item: \"zaatar\"\n  - amount: 100\n    unit: \"g\"\n    item: \"jogurtti\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"lähi-itä\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/lahi-ita-zaatar-munat.webp\n  alt: \"Za’atar-munat ja paahdettu pita tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\ncarbs_net_per_serving_g: 24.91\ncarbs_total_per_serving_g: 26.07\nprotein_per_serving_g: 12.18\nfat_per_serving_g: 14.26\n\n---\n\n# Za’atar-munat ja paahdettu pita\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan za’atar-munat ja paahdettu pita. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.\n2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.\n3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.\n4. Paista kananmunat ja mausta za’atarilla; tarjoa jogurtin ja lämpimän pitan kanssa.\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/vietnamilainen-papaija-kookospuuro.md": {
+    "currentSha256": "46d8dcdbdcf07070fd2d69435223335d21205d3e4ac8a7826f776fd0d36f5232",
+    "inverseEdits": [
+      [
+        0,
+        71,
+        "---\ntitle: \"Vietnamilainen papaija-kookospuuro\"\nrecipe_id: vietnamilainen-papaija-kookospuuro\nurl_slug: vietnamilainen-papaija-kookospuuro\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"tapioka\"\n  - \"kookosmaito\"\n  - \"papaija\"\ncooking_method:\n  - \"keittäminen\"\ningredients:\n  - amount: 100\n    unit: g\n    item: tapiokahelmiä\n  - amount: 200\n    unit: ml\n    item: kookosmaito\n  - amount: 200\n    unit: g\n    item: papaija\n  - amount: 15\n    unit: g\n    item: limettimehua\n  - amount: 700\n    unit: ml\n    item: vettä\n  - amount: null\n    unit: \"\"\n    item: suolaa maun mukaan\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"vietnamilainen\"\n  - \"puuro\"\nimage:\n  src: aamupalat/vietnamilainen-papaija-kookospuuro.webp\n  alt: \"Vietnamilainen papaija-kookospuuro tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\ncarbs_net_per_serving_g: 49.7\ncarbs_total_per_serving_g: 52.07\nprotein_per_serving_g: 1.85\nfat_per_serving_g: 14.28\n---\n\n# Vietnamilainen papaija-kookospuuro\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan vietnamilainen papaija-kookospuuro. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Mittaa tapioka kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Keitä tapiokahelmiä vedessä, kunnes ne alkavat muuttua läpikuultaviksi. Lisää kookosmaito ja hauduta kypsiksi. Tarjoa papaijan ja limettimehun kanssa.\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md": {
+    "currentSha256": "84df92004ca62795fe83b87756233696ed33d7d06f96c921ed24ac3e163fcd41",
+    "inverseEdits": [
+      [
+        0,
+        64,
+        "---\ntitle: \"Hojicha-jogurtti persimonilla\"\nrecipe_id: japanilainen-hojicha-jogurtti-persimonilla\nurl_slug: japanilainen-hojicha-jogurtti-persimonilla\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"jogurtti\"\n  - \"persimon\"\n  - \"hojicha\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 200\n    unit: g\n    item: jogurttia\n  - amount: 150\n    unit: g\n    item: persimon\n  - amount: 2\n    unit: g\n    item: hojicha-teetä\n  - amount: 5\n    unit: g\n    item: seesaminsiemeniä\n  - amount: null\n    unit: \"\"\n    item: suolaa maun mukaan\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"japanilainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/japanilainen-hojicha-jogurtti-persimonilla.webp\n  alt: \"Hojicha-jogurtti persimonilla tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\ncarbs_net_per_serving_g: 17.03\ncarbs_total_per_serving_g: 19.34\nprotein_per_serving_g: 4.26\nfat_per_serving_g: 4.07\n\n---\n\n# Hojicha-jogurtti persimonilla\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan hojicha-jogurtti persimonilla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Valmistele kulhon ainekset; kypsennä pavut tai proteiini, jos käytät niitä kuivina tai raakana. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.\n2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.\n3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.\n4. Jauha hojicha hienoksi tai hauduta siitä vahva tee ja jäähdytä. Annostele jogurtti kulhoihin, lisää viipaloitu persimon, hojicha ja seesaminsiemenet. Tarjoa heti.\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/rahka-marjakerroskulho.md": {
+    "currentSha256": "0fd7ce591f4771322f87582b40da6dc015b0883f60dc1d691c77117d9194ba70",
+    "inverseEdits": [
+      [
+        0,
+        69,
+        "---\ntitle: Rahka-marjakerroskulho\nrecipe_id: rahka-marjakerroskulho\nurl_slug: rahka-marjakerroskulho\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - rahka\n  - marjat\ncooking_method:\n  - kypsentäminen\ntags:\n  - aamupala\n  - rahka\n  - marjat\ningredients:\n  - amount: 250\n    unit: g\n    item: maitorahkaa\n  - amount: 100\n    unit: g\n    item: maustamatonta turkkilaista jogurttia\n  - amount: 100\n    unit: g\n    item: mansikoita\n  - amount: 50\n    unit: g\n    item: mustikoita\n  - amount: 20\n    unit: g\n    item: hasselpähkinöitä\n  - amount: 1\n    unit: tl\n    item: sitruunankuorta\n  - amount: null\n    unit: \"\"\n    item: makeutusainetta maun mukaan\ncarbs_net_per_serving_g: 6.32\ncarbs_total_per_serving_g: 8.09\nprotein_per_serving_g: 8.05\nfat_per_serving_g: 6.01\nservings: 4\ntime_total_min: 10\ndifficulty: Helppo\nimage:\n  src: aamupalat/rahka-marjakerroskulho.webp\n  alt: Rahka-marjakerroskulho tarjoiltuna\n  width: 1536\n  height: 1024\n---\n# Rahka-marjakerroskulho\n\n## Kuvaus\n\nKerrostettu rahka-aamiainen yhdistää raikkaat marjat, sitruunan ja pähkinöiden rapeuden.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Sekoita rahka, jogurtti ja sitruunankuori tasaiseksi. Makeuta halutessasi.\n2. Viipaloi mansikat ja rouhi hasselpähkinät.\n3. Lusikoi lasiin vuorotellen rahkaa ja marjoja.\n4. Ripottele pähkinät pinnalle juuri ennen tarjoamista.\n\n## Muistiinpanot\n\nJos haluat kulhosta vähähiilihydraattisemman, vaihda mansikat vadelmiin ja vähennä marjojen määrää.\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/vietnamilainen-banh-xeo-aamiaisletut.md": {
+    "currentSha256": "6d3e4dec99749905d85bf839211756b5bbd9406a1cd1df33a416170c0e18bfeb",
+    "inverseEdits": [
+      [
+        0,
+        80,
+        "---\ntitle: \"Banh xeo -rapeat aamiaisletut\"\nrecipe_id: vietnamilainen-banh-xeo-aamiaisletut\nurl_slug: vietnamilainen-banh-xeo-aamiaisletut\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"riisijauho\"\n  - \"kookosmaito\"\n  - \"katkarapu\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 100\n    unit: \"g\"\n    item: \"riisijauho\"\n  - amount: 200\n    unit: \"ml\"\n    item: \"täysrasvaista kookosmaitoa\"\n  - amount: 150\n    unit: \"g\"\n    item: \"katkarapu\"\n  - amount: 150\n    unit: \"g\"\n    item: \"pavunitu\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"vietnamilainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/vietnamilainen-banh-xeo-aamiaisletut.webp\n  alt: \"Banh xeo -rapeat aamiaisletut tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\ncarbs_net_per_serving_g: 42.55\ncarbs_total_per_serving_g: 44.68\nprotein_per_serving_g: 17.47\nfat_per_serving_g: 23.37\n\n---\n\n# Banh xeo -rapeat aamiaisletut\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan banh xeo -rapeat aamiaisletut. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Paista ohut kurkumalla värjätty lettu rapeaksi ja täytä katkaravulla sekä iduilla.\n"
+      ]
+    ]
+  },
+  "reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md": {
+    "currentSha256": "c5f99e5734175d0c1230d589821743201eb80640c7724fb7b8693f636446289c",
+    "inverseEdits": [
+      [
+        0,
+        100,
+        "---\ntitle: \"Munakoiso-kesäkurpitsalasagne\"\nrecipe_id: munakoiso-kesakurpitsalasagne\nurl_slug: munakoiso-kesakurpitsalasagne\ncategory: paaruoka\nlanguage: fi\nstatus: published\nservings: 4\ntime_total_min: 110\nmain_ingredient: [munakoiso, kesäkurpitsa, pasta, juusto]\ncooking_method: [uuni]\ntags: [lasagne, uuniruoka]\ntranslation_languages: []\ntranslation_status: {}\nimage:\n  src: munakoiso-kesakurpitsalasagne.webp\n  alt: \"Munakoiso-kesäkurpitsalasagnea lautasella, pinnalla basilikaa ja raastettua juustoa.\"\n  width: 1448\n  height: 1086\ningredients:\n  - {amount: 400, unit: g, item: munakoiso, note: \"raaka syötävä osa\"}\n  - {amount: 400, unit: g, item: kesäkurpitsa, note: \"raaka syötävä osa\"}\n  - {amount: 100, unit: g, item: sipuli, note: \"kuorittuna\"}\n  - {amount: 12, unit: g, item: valkosipuli, note: \"kuorittuna; noin 3 kynttä\"}\n  - {amount: 60, unit: g, item: oliiviöljy, note: \"50 g paahtoon, 5 g vuokaan, 5 g viimeistelyyn\"}\n  - {amount: 3, unit: g, item: tuore timjami, note: \"lehdet kastikkeeseen\"}\n  - {amount: 800, unit: g, item: valmis italialainen tomaattikastike, note: \"650 g vuokaan, 150 g tarjoiluun\"}\n  - {amount: 200, unit: g, item: lasagnelevyt, note: \"kuivapaino; 180 g vaihtoehto erillisessä laskentamuistiossa\"}\n  - {amount: 250, unit: g, item: mozzarella, note: \"valutettuna; 175 g väliin, 75 g pinnalle\"}\n  - {amount: 80, unit: g, item: parmesaani tai vastaava kova juusto, note: \"60 g väliin, 20 g viimeistelyyn\"}\n  - {amount: 10, unit: g, item: tuore basilika, note: \"5 g väliin, 5 g viimeistelyyn\"}\n  - {amount: 10, unit: g, item: viinietikka, note: \"tarjoilukastikkeeseen\"}\n  - {amount: 3, unit: g, item: suola, note: \"kasviksille; vähennä tarvittaessa kastikkeen suolaisuuden mukaan\"}\n  - {amount: 0.5, unit: g, item: mustapippuri, note: \"viimeistelyyn\"}\n  - {amount: 100, unit: ml, item: vesi, note: \"vuokakastikkeeseen; säädä tarvittaessa 50–150 ml:aan\"}\n---\n\n# Munakoiso-kesäkurpitsalasagne\n\n**4 henkilölle · noin 1 tunti 50 minuuttia**\n\n## Kuvaus\n\nHans Välimäen videon pohjalta tehty Codexin kotikeittiösovellus. Ainesmäärät,\nuunipaahto ja alla oleva aikataulu ovat tämän reseptin arvioita, eivät\ntekijän täsmällinen alkuperäisresepti. Reseptiä ei ole koekeitetty.\n\n## Ainekset\n\nPunnitse kasvikset raakoina syötävänä osana ja juustot ilman pakkauksia tai\nsäilöntälientä. Kynsien koko vaihtelee: käytä valkosipulista grammapainoa.\n\n| Aines | Määrä 4 henkilölle |\n| --- | --- |\n| Munakoiso | 400 g |\n| Kesäkurpitsa | 400 g |\n| Sipuli | 100 g kuorittuna |\n| Valkosipuli | 12 g kuorittuna, noin 3 kynttä |\n| Oliiviöljy | yhteensä 60 g: 50 g paahtoon, 5 g vuokaan, 5 g viimeistelyyn |\n| Tuore timjami | 3 g lehtiä kastikkeeseen |\n| Valmis italialainen tomaattikastike | 800 g: 650 g vuokaan, 150 g tarjoiluun |\n| Lasagnelevyt | 200 g kuivana; vaihtoehtoisesti 180 g, ks. laskentamuistio |\n| Mozzarella | 250 g valutettuna: 175 g väliin, 75 g pinnalle |\n| Parmesaani tai vastaava kova juusto | 80 g: 60 g väliin, 20 g viimeistelyyn |\n| Tuore basilika | 10 g: 5 g väliin, 5 g viimeistelyyn |\n| Viinietikka | 10 g tarjoilukastikkeeseen |\n| Suola | 3 g kasviksille; vähennä tarvittaessa kastikkeen suolaisuuden mukaan |\n| Mustapippuri | 0,5 g viimeistelyyn |\n| Vesi | oletus 100 ml vuokakastikkeeseen; säätövara yhteensä 50–150 ml |\n\nVideolla käytetään Knorr Professional Tomato Pronto Napoletana -kastiketta\nja Knorrin lasagnelevyjä. Kotiversioon käy muu maustettu tomaattikastike,\nmutta sen paksuus ja pastan pakkauksen kypsennysohje vaikuttavat valmistukseen.\nTässä käytetään mozzarellaa; videolla mainitaan myös burrata.\n\n## Valmistus\n\n1. **Valmistele kasvikset ja uuni.** Kuumenna uuni 200 °C:seen kiertoilmalla.\n   Kuivaa pestyt kasvikset. Leikkaa munakoiso ja kesäkurpitsa noin ½ cm:n\n   viipaleiksi ja viipaloi sipuli. Sekoita niihin 50 g öljyä ja 3 g suolaa\n   (vähemmän, jos kastike on hyvin suolaista). Erillistä 15 minuutin\n   maustumista ja nesteen valuttamista ei tarvita tässä paahtoversiossa.\n2. **Paahda kahdella pellillä.** Levitä kasvikset yhteen väljään kerrokseen.\n   Jätä peltien väliin tilaa ilmankierrolle ja vaihda niiden paikkoja puolivälissä.\n   Paahda noin 20–25 minuuttia, kunnes viipaleet taipuvat ja saavat hieman väriä.\n   Tarkkaile ohuita sipulisuikaleita. Ilman kiertoilmaa käytä 225 °C:ta,\n   vaihda peltien paikat ja varaudu noin 25–35 minuuttiin. Älä paahda\n   valkosipulia mukana: murskaa se seuraavan vaiheen kastikkeeseen.\n   Kun nostat kasvikset pois, säädä uuni jo kokoamisen ajaksi 180 °C:seen\n   tasalämmölle. Odota ennen lasagnen paistamista, että lämpö on laskenut.\n3. **Valmistele kastike ja juustot paahtamisen aikana.** Mittaa 150 g\n   tomaattikastiketta tarjoiluun ja lisää siihen 10 g viinietikkaa. Kuumenna\n   loput 650 g kastiketta valkosipulin ja timjamin kanssa. Anna poreilla\n   hiljaa 5–10 minuuttia; vältä kokoon keittämistä. Lisää lähtökohtaisesti\n   100 ml vettä, jotta kastike leviää helposti levyjen ympärille. Käytä\n   yhteensä 50–150 ml kastikkeen paksuuden ja pastapakkauksen ohjeen mukaan.\n   Valuta mozzarella, punnitse siitä 250 g ja revi paloiksi. Raasta kova juusto.\n4. **Kokoa lasagne.** Käytä noin 3 litran vuokaa, esimerkiksi sisämitoiltaan\n   20 × 25 cm ja vähintään 6 cm syvää. Öljyä vuoka 5 g:lla öljyä. Varaa\n   vuokakastikkeesta noin neljännes pinnalle ja levitä hieman pohjalle.\n   Punnitse valitsemasi pastamäärä ennen kokoamista: oletus on 200 g,\n   vaihtoehto 180 g. Tee siitä vuoan ja levyjen mittojen mukaan 3–4\n   pastakerrosta. Käytä koko punnittu määrä; 180 g:n vaihtoehto tarkoittaa\n   hieman vähemmän pastaa, ei ylimääräisiä levyjä saumoihin. Katkaise levyt\n   tarvittaessa sopiviksi ja vältä paksuja päällekkäisiä saumoja. Muiden\n   ainesten määrät säilyvät samoina myös 180 g:n vaihtoehdossa.\n   Jaa väleihin paahdetut kasvikset, kastike, 175 g mozzarellaa, 60 g kovaa\n   juustoa ja 5 g basilikaa. Jokaisen levyn molemmille puolille ja reunoille\n   tulee kosteaa täytettä. Peitä viimeinen pastakerros varatulla\n   vuokakastikkeella ja 75 g:lla mozzarellaa. Jätä vuoan reunaan vähintään\n   1 cm kiehumisvaraa; käytä suurempaa vuokaa, jos täyte ei mahdu.\n5. **Kypsennä ja tarkista pasta.** Paista 180 °C:ssa tasalämmöllä\n   keskitasolla noin 45 minuuttia. Aika ja lämpö perustuvat\n   [Knorr GN -levyjen valmistajan ohjeeseen](https://www.unileverfoodsolutions.fi/tuotteet/knorr-lasagnelevyt-gn-mitoitus-5-kg-34-FI-354670.html);\n   valmistaja ei erittele uunitilaa, joten tasalämpö on tämän reseptin\n   kotikeittiövalinta. Toisen tuotteen kanssa noudata pakkauksen ohjetta, myös mahdollista\n   esikypsennystä. Peitä vuoka väljästi foliolla ensimmäisiksi 25–30\n   minuutiksi ja poista folio loppuajaksi. Kokeile ohuella veitsellä\n   keskeltä ja reunoilta kaikkien pastakerrosten läpi: kovaa vastusta\n   ei saa tuntua. Jatka tarvittaessa 5–10 minuuttia kerrallaan ja suojaa\n   pinta, jos se tummuu liikaa. Pelkkä ruskistunut pinta ei osoita pastan kypsyyttä.\n6. **Vetäytä ja tarjoile.** Anna levätä 15 minuuttia. Lämmitä tarjoiluun\n   erotettu kastike ja jaa se tasan neljälle lautaselle lasagnen kanssa.\n   Viimeistele yhteensä 20 g:lla kovaa juustoa, 5 g:lla basilikaa,\n   0,5 g:lla mustapippuria ja 5 g:lla öljyä.\n\n## Muistiinpanot\n\nKäyttäjän toimittama havainnekuva esittää ruokalajia; se ei ole tämän\nreseptin koekeittokuva.\n\n### Aika ja valmistuksen rajat\n\nPerusaikataulu on 15 min valmistelua ja uunin kuumennusta + 25 min paahtoa\n(kastike ja juustot samalla) + 10 min kokoamista + 45 min paistoa + 15 min\nvetäytymistä = **110 min**. Aktiivista työtä on arviolta 35–40 min.\nVaraa käytännössä noin 100–130 min; uuni, pastatuote ja lisäkypsennys\nvoivat pidentää aikaa. Uunin lämpötilan laskun oletetaan tapahtuvan\nkokoamisen aikana; mahdollinen lisäodotus pidentää kokonaisaikaa.\nErillistä maustumisaikaa ei lasketa mukaan.\n\nVideon 200 °C ja 30–35 min eivät takaa tämän kuivia levyjä käyttävän\nsovelluksen kypsyyttä. Videolla kasvikset friteerataan ja lasagne\njäähdytetään painon alla; tässä ne paahdetaan ja ruoka tarjoillaan lämpimänä.\nBéchamelkastiketta ei käytetä. Paahdon kuivattava vaikutus, kastikkeen\nvesimäärä ja vuoan riittävyys on vielä varmistettava koekeittiössä.\n\n**Allergeenit:** vehnä/gluteeni ja maito. Tarkista myös valittujen\nvalmistuotteiden pakkaukset. Kasvisruokavalioon sopivuus edellyttää molempien\njuustojen olevan ilman eläinperäistä juoksetetta. Parmigiano Reggiano\nvalmistetaan [vasikanjuoksetteella](https://backend.parmigianoreggiano.com/uploads/Single_document_PR_24042025_825de2b63f.pdf),\njoten kasvisversioon valitaan vastaava sopiva kova juusto. Reseptiä ei ole\nmerkitty VHH- tai keto-reseptiksi.\n\n### Lähde ja laskentatilanne\n\n[Hans Välimäki: kasvislasagne, Facebook Reel](https://www.facebook.com/reel/1137314279255893).\nJulkaisu on merkitty kaupalliseksi yhteistyöksi Unilever Food Solutionsin kanssa.\nAlkuperäistä luonnosta varten aineksia ja työvaiheita tarkistettiin videokuvista,\nkuvatekstistä ja automaattisesta litteroinnista; litteroinnissa oli tunnistusvirheitä.\nEdellä kuvatut kotikeittiöratkaisut ovat Codexin sovellusta.\n\nReseptillä ei ole hyväksyttyä GK-arvoa eikä kattavasti todennettuja\nravintoarvoja. Aiempi lasku ja sen puutteet on erotettu\n[laskentamuistioon](https://github.com/ozirix-dev/Reseptit/blob/main/docs/nutrition/drafts/munakoiso-kesakurpitsalasagne.md).\nMuistion havainnollistavaa skenaariota ei syötetä julkaistuun GK-järjestelmään.\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/vietnamilainen-banh-cuon-sienilla.md": {
+    "currentSha256": "1e1db19b878be1d1460628b6b0e480a229e743b8d4da6418326fdee07740ea0f",
+    "inverseEdits": [
+      [
+        0,
+        78,
+        "---\ntitle: \"Banh cuon sienitäytteellä\"\nrecipe_id: vietnamilainen-banh-cuon-sienilla\nurl_slug: vietnamilainen-banh-cuon-sienilla\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"riisijauho\"\n  - \"sieni\"\n  - \"porsaan jauheliha\"\ncooking_method:\n  - \"höyrytetty\"\ningredients:\n  - amount: 100\n    unit: \"g\"\n    item: \"riisijauho\"\n  - amount: 250\n    unit: \"ml\"\n    item: \"vettä\"\n  - amount: 100\n    unit: \"g\"\n    item: \"tuoreita herkkusieniä\"\n  - amount: 150\n    unit: \"g\"\n    item: \"porsaan jauheliha\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"kalakastike\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"vietnamilainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/vietnamilainen-banh-cuon-sienilla.webp\n  alt: \"Banh cuon sienitäytteellä tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\ncarbs_net_per_serving_g: 40.31\ncarbs_total_per_serving_g: 42.76\nprotein_per_serving_g: 21.37\nfat_per_serving_g: 9.05\n\n---\n\n# Banh cuon sienitäytteellä\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan banh cuon sienitäytteellä. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Valmistele täyte ja taikina. Liota riisi tai palkokasvit etukäteen, jos käytät niitä kuivina.\n2. Muotoile annokset tai lusikoi seos kevyesti öljyttyihin vuokiin. Jätä väliin tilaa höyryn kiertämiselle.\n3. Höyrytä kannen alla kypsäksi. Tarkista paksuimman kohdan kypsyys ennen tarjoamista.\n4. Höyrytä ohuet riisijauholevyt, täytä sienillä ja tarjoa yrttien kanssa.\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/meksikolainen-paputostada-aamupalaksi.md": {
+    "currentSha256": "aad031c9696d6a3b12876a688514a1a545b22aeac40ae0d4852142adeb3c5b7d",
+    "inverseEdits": [
+      [
+        0,
+        72,
+        "---\ntitle: \"Musta papu ja paistettu muna tostadan päällä\"\nrecipe_id: meksikolainen-paputostada-aamupalaksi\nurl_slug: meksikolainen-paputostada-aamupalaksi\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"musta papu\"\n  - \"kananmuna\"\n  - \"maissitortilla\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 150\n    unit: \"g\"\n    item: \"musta papu\"\n  - amount: 2\n    unit: \"kpl\"\n    item: \"kananmuna\"\n  - amount: 100\n    unit: \"g\"\n    item: \"maissitortilla\"\n  - amount: 1\n    unit: \"kpl\"\n    item: \"avokado\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"meksikolainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/meksikolainen-paputostada-aamupalaksi.webp\n  alt: \"Musta papu ja paistettu muna tostadan päällä tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\n---\n\n# Musta papu ja paistettu muna tostadan päällä\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan musta papu ja paistettu muna tostadan päällä. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.\n2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.\n3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.\n4. Levitä maustetut pavut rapealle tostada-pohjalle ja lisää muna sekä avokado.\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/meksikolainen-chilaquiles-verdes.md": {
+    "currentSha256": "99e5a40a65bc44160956a08deb399a870c241bc084ef161b1be4d1d15a31f4d1",
+    "inverseEdits": [
+      [
+        0,
+        88,
+        "---\ntitle: \"Chilaquiles verdes paistetulla munalla\"\nrecipe_id: meksikolainen-chilaquiles-verdes\nurl_slug: meksikolainen-chilaquiles-verdes\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"maissitortilla\"\n  - \"salsa verde\"\n  - \"kananmuna\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 100\n    unit: \"g\"\n    item: \"maissitortilla\"\n  - amount: 150\n    unit: \"g\"\n    item: \"salsa verde\"\n  - amount: 2\n    unit: \"kpl\"\n    item: \"kananmuna\"\n  - amount: 150\n    unit: \"g\"\n    item: \"queso fresco\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"meksikolainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/meksikolainen-chilaquiles-verdes.webp\n  alt: \"Chilaquiles verdes paistetulla munalla tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\n---\n\n# Chilaquiles verdes paistetulla munalla\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan chilaquiles verdes paistetulla munalla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.\n2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.\n3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.\n4. Pyöräytä tortillapalat kuumassa salsassa ja lisää päälle paistettu muna sekä queso fresco.\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/korealainen-kimchi-jeon-aamiaiseksi.md": {
+    "currentSha256": "48f4aacb8db692421fb66f9db2d2b9e3f25921893cb9b147e7c27c324cde07d0",
+    "inverseEdits": [
+      [
+        0,
+        84,
+        "---\ntitle: \"Kimchi-jeon pannukakku aamiaiseksi\"\nrecipe_id: korealainen-kimchi-jeon-aamiaiseksi\nurl_slug: korealainen-kimchi-jeon-aamiaiseksi\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"kimchi\"\n  - \"vehnäjauho\"\n  - \"kananmuna\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 150\n    unit: \"g\"\n    item: \"kimchi\"\n  - amount: 100\n    unit: \"g\"\n    item: \"vehnäjauho\"\n  - amount: 2\n    unit: \"kpl\"\n    item: \"kananmuna\"\n  - amount: 2\n    unit: \"rkl\"\n    item: \"kevätsipuli\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"korealainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/korealainen-kimchi-jeon-aamiaiseksi.webp\n  alt: \"Kimchi-jeon pannukakku aamiaiseksi tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\n---\n\n# Kimchi-jeon pannukakku aamiaiseksi\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan kimchi-jeon pannukakku aamiaiseksi. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Sekoita hienonnettu kimchi taikinaan ja paista pannukakku rapeaksi molemmin puolin.\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/intialainen-ven-pongal.md": {
+    currentSha256: "77eea5fe9f4183fd5fda93b0a0c5e5fd346535d0cffbd0399a84d8a2887d2bd8",
+    inverseEdits: [
+      [65, 7, "1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Huuhtele riisi ja mungpavut. Keitä niitä vedessä pehmeiksi ja mausta mustapippurilla. Paahda cashewpähkinät gheessä ja sekoita ne puuron joukkoon ennen tarjoamista.\n"],
+      [61, 1, "Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n"],
+      [57, 1, "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan eteläintialainen suolainen pongal. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n"],
+      [53, 1, "# Eteläintialainen suolainen pongal\n"],
+      [44, 1, "  alt: \"Eteläintialainen suolainen pongal tarjoiltuna aamiaisella\"\n"],
+      [36, 1, "time_total_min: 25\n"],
+      [1, 1, "title: \"Eteläintialainen suolainen pongal\"\n"],
+    ],
+  },
+  "reseptit/aamupalat/korealainen-kongjuk-soijapapu-riisipuuro.md": {
+    currentSha256: "f24a72e09a8402c0f7aba85f634a2d5f36b411ed6a36d9d6ecb656ed35afa98f",
+    inverseEdits: [
+      [62, 8, "1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Liota kuivia soijapapuja yön yli ja valuta. Keitä pavut ja riisi vedessä pehmeiksi. Soseuta pavut osittain puuroon ja viimeistele seesaminsiemenillä.\n"],
+      [58, 1, "Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n"],
+      [54, 1, "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan kongjuk soijapapu-riisipuuro. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n"],
+      [50, 1, "# Kongjuk soijapapu-riisipuuro\n"],
+      [41, 1, "  alt: \"Kongjuk soijapapu-riisipuuro tarjoiltuna aamiaisella\"\n"],
+      [33, 1, "time_total_min: 25\n"],
+      [1, 1, "title: \"Kongjuk soijapapu-riisipuuro\"\n"],
+    ],
+  },
+  "reseptit/aamupalat/indonesialainen-tempeh-munakulho.md": {
+    currentSha256: "f01f19e9bd317775ca2302592d707041385c679393cb763b0dac44c0462461ab",
+    inverseEdits: [
+      [55, 8, "1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.\n2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.\n3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.\n4. Paista tempeh rapeaksi ja tarjoa riisin sekä kananmunan kanssa; lisää sambalia maun mukaan.\n"],
+      [51, 1, "Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n"],
+      [47, 1, "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan tempeh- ja munakulho sambalilla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n"],
+      [38, 1, "  alt: \"Tempeh- ja munakulho sambalilla tarjoiltuna aamiaisella\"\n"],
+      [36, 0, "  - \"aamiaisruoka\"\n"],
+      [34, 1, ""],
+      [30, 1, "time_total_min: 25\n"],
+      [25, 4, "    item: \"sambal\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\n"],
+      [19, 5, "    item: \"riisi\"\n  - amount: 150\n"],
+      [16, 1, "    item: \"tempeh\"\n  - amount: 2\n    unit: \"kpl\"\n    item: \"kananmuna\"\n"],
+      [12, 1, "  - \"paistaminen\"\n"],
+      [8, 3, "  - \"tempeh\"\n  - \"kananmuna\"\n  - \"riisi\"\n"],
+    ],
+  },
+  "reseptit/aamupalat/japanilainen-okayu-umeboshipluumulla.md": {
+    currentSha256: "fee550f519ca1160300ed6a49f7952a34b910679bb11a94127974018aaf59b6a",
+    inverseEdits: [
+      [55, 7, "1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Keitä riisi runsaassa vedessä hyvin pehmeäksi ja lisää päälle umeboshi.\n"],
+      [51, 1, "Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n"],
+      [47, 1, "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan okayu-riisipuuro umeboshipluumulla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n"],
+      [43, 1, "# Okayu-riisipuuro umeboshipluumulla\n"],
+      [38, 1, "  alt: \"Okayu-riisipuuro umeboshipluumulla tarjoiltuna aamiaisella\"\n"],
+      [36, 0, "  - \"puuro\"\n"],
+      [34, 1, ""],
+      [30, 1, "time_total_min: 25\n"],
+      [28, 1, "    item: \"vettä tai mietoa lientä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\n"],
+      [22, 4, "    item: \"seesaminsiemen\"\n"],
+      [19, 2, "    item: \"umeboshi\"\n  - amount: 2\n    unit: \"rkl\"\n    item: \"kevätsipuli\"\n  - amount: 100\n"],
+      [16, 2, "    item: \"riisi\"\n  - amount: 150\n"],
+      [12, 1, "  - \"keittäminen\"\n"],
+      [8, 3, "  - \"riisi\"\n  - \"umeboshi\"\n  - \"kevätsipuli\"\n"],
+      [1, 1, "title: \"Okayu-riisipuuro umeboshipluumulla\"\n"],
+    ],
+  },
+  "reseptit/aamupalat/intialainen-masala-dosa.md": {
+    currentSha256: "4eb0f95211333cfe88128d52f6bf3824b5cc07c7ae5d8a280e19953461052e73",
+    inverseEdits: [
+      [60, 8, "1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Täytä rapea dosa maustetulla perunalla ja tarjoa sambar-kastikkeen kanssa.\n"],
+      [56, 1, "Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n"],
+      [52, 1, "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan masala dosa perunatäytteellä. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n"],
+      [48, 1, "# Masala dosa perunatäytteellä\n"],
+      [43, 1, "  alt: \"Masala dosa perunatäytteellä tarjoiltuna aamiaisella\"\n"],
+      [41, 0, "  - \"aamiaisruoka\"\n"],
+      [39, 1, ""],
+      [35, 1, "time_total_min: 25\n"],
+      [26, 8, "    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\n"],
+      [21, 4, "    item: \"sinapinsiemen\"\n"],
+      [18, 2, "    item: \"urad-linssi\"\n  - amount: 1\n    unit: \"kpl\"\n    item: \"peruna\"\n  - amount: 150\n"],
+      [15, 2, "    item: \"riisi\"\n  - amount: 100\n"],
+      [13, 1, "  - amount: 100\n"],
+      [11, 1, "  - \"paistaminen\"\n"],
+      [8, 2, "  - \"riisi\"\n  - \"urad-linssi\"\n  - \"peruna\"\n"],
+      [1, 1, "title: \"Masala dosa perunatäytteellä\"\n"],
+    ],
+  },
+  "reseptit/aamupalat/japanilainen-kabocha-puuro.md": {
+    currentSha256: "50e95cecf334bbff0d8c7b7725a02aaeafcacaa571b7a8b8cbbd8258a073774a",
+    inverseEdits: [
+      [62, 8, "1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Huuhtele riisi ja kuutioi kuorittu myskikurpitsa. Keitä riisiä ja kurpitsaa vedessä, kunnes riisi on pehmeää ja kurpitsa hajoaa puuroon. Lisää kookosmaito ja hauduta hetki. Tarjoa mustien seesaminsiementen kanssa.\n"],
+      [58, 1, "Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n"],
+      [54, 1, "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan japanilainen kurpitsapuuro kabocha. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n"],
+      [50, 1, "# Japanilainen kurpitsapuuro kabocha\n"],
+      [48, 0, "\n"],
+      [41, 1, "  alt: \"Japanilainen kurpitsapuuro kabocha tarjoiltuna aamiaisella\"\n"],
+      [36, 3, "  - \"aamupala\"\n  - \"japanilainen\"\n  - \"puuro\"\n"],
+      [33, 1, "time_total_min: 25\n"],
+      [12, 1, "  - \"keittäminen\"\n"],
+      [8, 3, "  - \"kurpitsa\"\n  - \"riisi\"\n  - \"kookosmaito\"\n"],
+      [1, 1, "title: \"Japanilainen kurpitsapuuro kabocha\"\n"],
+    ],
+  },
+  "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md": {
+    currentSha256: "2c1550984e2d193fb0a460ed5dde549b7ae94245b474a5c8ec98216548d3ef1f",
+    inverseEdits: [[0, 60, "---\ntitle: \"Dashimaki tamago aamiaislautasella\"\nrecipe_id: japanilainen-dashimaki-tamago-aamiaislautasella\nurl_slug: japanilainen-dashimaki-tamago-aamiaislautasella\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"kananmuna\"\n  - \"dashi\"\n  - \"soijakastike\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 2\n    unit: \"kpl\"\n    item: \"kananmuna\"\n  - amount: 200\n    unit: \"ml\"\n    item: \"dashi\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"soijakastike\"\n  - amount: 100\n    unit: \"g\"\n    item: \"riisi\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"japanilainen\"\n  - \"kananmuna\"\nimage:\n  src: aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.webp\n  alt: \"Dashimaki tamago aamiaislautasella tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\n---\n\n# Dashimaki tamago aamiaislautasella\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan dashimaki tamago aamiaislautasella. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Vatkaa kananmunat dashi-liemen kanssa. Mausta soijakastikkeella.\n2. Kuumenna pieni paistinpannu miedolla lämmöllä ja sipaise siihen öljyä. Kaada pannulle ohut kerros munaseosta.\n3. Kun pohja alkaa hyytyä, rullaa munakas pannun reunaan. Lisää pannulle uusi kerros seosta ja jatka rullaamista kerros kerrallaan.\n4. Paista maustettu munaseos ohuina kerroksina ja rullaa; tarjoa riisin kanssa.\n"]],
+  },
+  "reseptit/aamupalat/japanilainen-natto-riisikulho.md": {
+    currentSha256: "dd33d40c6a885904359ea14d2fd7e3f94bbc6d1e249e7753a1a9f297ecbda03e",
+    inverseEdits: [
+      [51, 8, "1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.\n2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.\n3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.\n4. Sekoita natto mausteineen ja lusikoi kuuman riisin sekä pehmeän munan päälle.\n"],
+      [47, 1, "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan natto-riisikulho pehmeällä munalla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n"],
+      [43, 1, "# Natto-riisikulho pehmeällä munalla\n"],
+      [37, 2, "  src: aamupalat/japanilainen-natto-riisikulho.webp\n  alt: \"Natto-riisikulho pehmeällä munalla tarjoiltuna aamiaisella\"\n"],
+      [33, 3, "  - \"aamupala\"\n  - \"japanilainen\"\n  - \"aamiaisruoka\"\n"],
+      [28, 1, "    item: \"suolaa maun mukaan\"\n"],
+      [24, 2, "    unit: \"rkl\"\n    item: \"kevätsipuli\"\n"],
+      [21, 2, "    unit: \"kpl\"\n    item: \"kananmuna\"\n"],
+      [18, 2, "    unit: \"g\"\n    item: \"riisi\"\n"],
+      [15, 2, "    unit: \"g\"\n    item: \"natto\"\n"],
+      [12, 1, "  - \"paistaminen\"\n"],
+      [8, 3, "  - \"natto\"\n  - \"riisi\"\n  - \"kananmuna\"\n"],
+      [1, 1, "title: \"Natto-riisikulho pehmeällä munalla\"\n"],
+    ],
+  },
   "kaannokset/en/paaruoat/baozi.md": {
     currentSha256: "e5eae99171166ac81cf07fd5866ebb5649524fa4da3d1f783406a50d83f6934c",
     inverseEdits: [
@@ -711,10 +942,16 @@ const editorialSnapshots: Readonly<Record<string, {
     ],
   },
   "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md": {
-    currentSha256: "c4c77740d96d341f6530dc32275426bbf5fd6ed971dcad69d7f7d4e8de46fcd2",
-    inverseEdits: [[61, 9, "1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Tarjoa korianterichutneyn ja sitruunalohkon kanssa.\n"], [17, 6, "  - amount: 1\n    unit: \"kpl\"\n    item: \"pinaatti\"\n"]],
-  },
-  "reseptit/paaruoat/mapo-tofu.md": {
+    historicalGkText: "---\ntitle: \"Pinaatti-paneer-chilla\"\nrecipe_id: intialainen-pinaatti-paneer-chilla\nurl_slug: intialainen-pinaatti-paneer-chilla\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"kikhernejauho\"\n  - \"pinaatti\"\n  - \"paneer\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 100\n    unit: \"g\"\n    item: \"kikhernejauho\"\n  - amount: 50\n    unit: \"g\"\n    item: \"tuoretta pinaattia\"\n  - amount: 140\n    unit: \"ml\"\n    item: \"vettä\"\n  - amount: 100\n    unit: \"g\"\n    item: \"paneer\"\n  - amount: 1\n    unit: \"tl\"\n    item: \"juustokumina\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"intialainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/intialainen-pinaatti-paneer-chilla.webp\n  alt: \"Pinaatti-paneer-chilla tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\n---\n\n# Pinaatti-paneer-chilla\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan pinaatti-paneer-chilla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Vatkaa kikhernejauho, juustokumina, suola ja vesi tasaiseksi taikinaksi. Anna levätä 10 minuuttia.\n2. Huuhtele ja kuivaa pinaatti. Hienonna se ja sekoita taikinaan. Murusta paneer täytteeksi.\n3. Kuumenna öljy pannulla keskilämmöllä. Levitä taikinaa ohuiksi letuiksi ja paista molemmin puolin.\n4. Jaa paneer lettujen päälle, taita letut ja lämmitä täytettä pannulla, kunnes se on lämmin.\n5. Tarjoa halutessasi korianterichutney ja sitruunalohkot erikseen.\n\n## Muistiinpanot\n\nTäsmennettyä ohjetta ei ole vielä koepaistettu.\n",
+    "currentSha256": "9a1e86b4033a2bd2b89ead309010bea0275a6b5d84a52db88260781439b14016",
+    "inverseEdits": [
+      [
+        0,
+        75,
+        "---\ntitle: \"Pinaatti-paneer-chilla\"\nrecipe_id: intialainen-pinaatti-paneer-chilla\nurl_slug: intialainen-pinaatti-paneer-chilla\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"kikhernejauho\"\n  - \"pinaatti\"\n  - \"paneer\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 100\n    unit: \"g\"\n    item: \"kikhernejauho\"\n  - amount: 1\n    unit: \"kpl\"\n    item: \"pinaatti\"\n  - amount: 100\n    unit: \"g\"\n    item: \"paneer\"\n  - amount: 1\n    unit: \"tl\"\n    item: \"juustokumina\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"intialainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/intialainen-pinaatti-paneer-chilla.webp\n  alt: \"Pinaatti-paneer-chilla tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\n---\n\n# Pinaatti-paneer-chilla\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan pinaatti-paneer-chilla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Tarjoa korianterichutneyn ja sitruunalohkon kanssa.\n"
+      ]
+    ]
+  },  "reseptit/paaruoat/mapo-tofu.md": {
     currentSha256: "341342cef1ea3ff375deb9504bb47e56f3837ed3991956a27ce490fb759ae433",
     inverseEdits: [[90, 1, "5. Ripottele päälle sichuaninpippuri ja kevätsipuli. Tarjoa riisin kanssa.\n"], [66, 3, "  - amount: 4\n    unit: annosta\n    item: keitettyä riisiä\n"]],
   },
@@ -732,9 +969,10 @@ const editorialSnapshots: Readonly<Record<string, {
   },
 };
 
-export function recipeTextForApprovedSnapshot(file: string, text: string): string {
+export function recipeTextForApprovedSnapshot(file: string, text: string, purpose: "historical-comparison" | "original-gk" = "historical-comparison"): string {
   const editorial = editorialSnapshots[file];
   if (editorial && createHash("sha256").update(text).digest("hex") === editorial.currentSha256) {
+    if (purpose === "original-gk" && editorial.historicalGkText) return editorial.historicalGkText;
     const lines = text.split("\n");
     for (const [start, count, historical] of editorial.inverseEdits) {
       const restored = historical ? historical.slice(0, -1).split("\n") : [];
@@ -769,3 +1007,23 @@ export function recipeTextForApprovedSnapshot(file: string, text: string): strin
   const [historical, current] = edit;
   return text.split("\n").map(line => line === current ? historical : line).join("\n");
 }
+
+// These corrected FI versions retain their old source only for GK verification.
+export const reviewedRecipesWithHistoricalGk = new Set([
+  "reseptit/aamupalat/korealainen-kimchi-jeon-aamiaiseksi.md",
+  "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md",
+  "reseptit/aamupalat/meksikolainen-paputostada-aamupalaksi.md",
+  "reseptit/aamupalat/meksikolainen-chilaquiles-verdes.md",
+  "reseptit/aamupalat/vietnamilainen-banh-cuon-sienilla.md",
+  "reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md",
+  "reseptit/aamupalat/vietnamilainen-banh-xeo-aamiaisletut.md",
+  "reseptit/aamupalat/vietnamilainen-papaija-kookospuuro.md",
+  "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md",
+  "reseptit/aamupalat/rahka-marjakerroskulho.md",
+  "reseptit/aamupalat/pohjoisafrikkalainen-baghrir.md",
+  "reseptit/aamupalat/lahi-ita-zaatar-munat.md",
+  "reseptit/aamupalat/intialainen-masala-dosa.md",
+  "reseptit/aamupalat/indonesialainen-tempeh-munakulho.md",
+  "reseptit/aamupalat/japanilainen-okayu-umeboshipluumulla.md",
+  "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md",
+]);

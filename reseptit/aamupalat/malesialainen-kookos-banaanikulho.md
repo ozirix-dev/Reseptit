@@ -6,29 +6,32 @@ category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "banaani"
-  - "kookosmaito"
-  - "palmusokeri"
+  - banaani
+  - kookosmaito
+  - palmusokeri
 cooking_method:
-  - "paistaminen"
+  - keittäminen
 ingredients:
-  - amount: 1
-    unit: "kpl"
-    item: "banaani"
   - amount: 200
-    unit: "ml"
-    item: "kookosmaito"
-  - amount: 150
-    unit: "g"
-    item: "palmusokeri"
-  - amount: 100
-    unit: "g"
-    item: "tapioka"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
+    unit: g
+    item: "kuorittu kiinteä kypsä banaani"
+  - amount: 200
+    unit: g
+    item: "täysrasvainen säilykekookosmaito"
+  - amount: 40
+    unit: g
+    item: "pienet kuivat tapiokahelmet"
+  - amount: 35
+    unit: g
+    item: "gula melaka -palmusokeri"
+  - amount: 35
+    unit: g
+    item: "vesi"
+  - amount: 1
+    unit: g
+    item: "suola"
 servings: 2
-time_total_min: 25
+time_total_min: 30
 difficulty: Helppo
 tags:
   - "aamupala"
@@ -36,7 +39,7 @@ tags:
   - "aamiaisruoka"
 image:
   src: aamupalat/malesialainen-kookos-banaanikulho.webp
-  alt: "Kookos-banaanikulho gula melakalla tarjoiltuna aamiaisella"
+  alt: "Banaaniviipaleita kookosmaidossa palmusokerisiirapin kanssa"
   width: 1536
   height: 1024
 ---
@@ -45,15 +48,15 @@ image:
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan kookos-banaanikulho gula melakalla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
-
-## Ainekset
-
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Lämpimiä banaaniviipaleita ja pehmeitä tapiokahelmiä kookosmaidossa. Päälle valutetaan tumma gula melaka -palmusokerisiirappi. Kulho on malesialaisesta pengat pisang -jälkiruoasta sovitettu muunnelma.
 
 ## Valmistus
 
-1. Kypsennä tapioka pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
-2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
-3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Tarjoa banaani ja tapioka kookosmaidossa, valuta päälle palmusokerisiirappia.
+1. Keitä tapiokahelmet runsaassa vedessä pakkauksen ohjeen mukaan. Kun helmet ovat pehmeitä ja läpikuultavia, valuta ne siivilässä. Keitinvesi tarvitaan erikseen.
+2. Sulata palmusokeri 35 grammassa vettä pienessä kattilassa miedolla lämmöllä. Sekoita tasaiseksi ja nosta kattila liedeltä.
+3. Kuumenna kookosmaito ja suola toisessa kattilassa miedolla lämmöllä. Viipaloi banaani, lisää se kookosmaitoon ja lämmitä varovasti, jotta viipaleet pysyvät ehjinä.
+4. Jaa helmet, banaaniviipaleet ja kookosmaito kahteen kulhoon. Valuta siirappi päälle ja tarjoa lämpimänä.
+
+## Huomioita
+
+Käytä pieniä helmiä, joiden pakkauksessa on keitto-ohje. Kokonaisaika riippuu helmistä. Kuvan kookoshiutaleet ovat tarjoiluehdotus.

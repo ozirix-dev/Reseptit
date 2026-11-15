@@ -1,11 +1,10 @@
+import { sourceReleaseGateDecision } from "../scripts/f25-source-release-gate";
 import { readF25GateAtCreation, readF25HistoricalBlob } from "../scripts/f25-history";
 import assert from "node:assert/strict";
 import {test} from "node:test";
 import {createHash} from "node:crypto";
 import path from "node:path";
-import {f25UnverifiedNutritionSourceIds, withholdF25Nutrition, f25ExplicitUndefinedGkLabel} from "../src/features/recipes/f25-nutrition-withhold";
-import {filterRecipes,emptyRecipeFilters} from "../src/features/recipes/recipe-search";
-import type {RecipeSummary} from "../src/content/route-data";
+import {f25UnverifiedNutritionSourceIds, withholdF25Nutrition} from "../src/features/recipes/f25-nutrition-withhold";
 import {recipeJsonLd} from "../src/features/recipes/schema";
 
 const a2 = [
@@ -26,18 +25,19 @@ const fixture=(recipeId:string,locale:"fi"|"en") => ({
   nutrition:{carbsTotalG:80,carbsNetG:77,proteinG:12,fatG:8}
 }) as unknown as Parameters<typeof recipeJsonLd>[0];
 
-test("all four F25 A2 unapproved FI sources have source-locked macro and GK withholding",()=>{
+test("F25 A2 preserves historical holds and exposes current nutrition only after the source gate",()=>{
   assert.equal(new Set(f25UnverifiedNutritionSourceIds).size,f25UnverifiedNutritionSourceIds.length);
-  assert.equal(f25UnverifiedNutritionSourceIds.length,8);
+  assert.equal(f25UnverifiedNutritionSourceIds.length,0);
   for(const id of a2){
     const record=gate.sources.find(x=>x.recipe_id===id);
     assert.ok(record,id);
     assert.equal(record.approval,null);
     const bytes=readF25HistoricalBlob(root,record.baseline_git_blob_sha);
     assert.equal(sha(bytes),record.baseline_git_blob_sha,id+" source changed");
-    assert.equal(withholdF25Nutrition(id,"fi"),true);
+    const authorized=sourceReleaseGateDecision(id).authorized;
+    assert.equal(withholdF25Nutrition(id,"fi"),!authorized);
     const json=recipeJsonLd(fixture(id,"fi"));
-    assert.ok(!Object.hasOwn(json,"nutrition"),id+" must not leak Schema.org macros");
+    assert.equal(Object.hasOwn(json,"nutrition"),authorized,id);
   }
 });
 
@@ -51,36 +51,4 @@ test("unrelated FI recipes retain nutrition, and locale check does not silently 
     proteinContent:"12 g",
     fatContent:"8 g",
   });
-});
-
-test("FI GK filter does not assign a held macro source to misleading low/medium/high classes",()=>{
-  const sample:Record<string,"low"|"medium"|"high"> = {
-    "vietnamilainen-papaija-kookospuuro":"high",
-    "vietnamilainen-banh-cuon-sienilla":"high",
-    "vietnamilainen-banh-xeo-aamiaisletut":"medium",
-    "pohjoisafrikkalainen-baghrir":"high",
-    "gluteeniton-uunipannukakku":"low",
-  };
-  const recipes=Object.keys(sample).map(recipeId=>({recipeId,title:recipeId,description:"",tags:[],ingredients:[]})) as unknown as RecipeSummary[];
-  const high={...emptyRecipeFilters,gl:"high" as const};
-  const low={...emptyRecipeFilters,gl:"low" as const};
-  assert.deepEqual(filterRecipes(recipes,high,"fi",sample).map(x=>x.recipeId),[]);
-  assert.deepEqual(filterRecipes(recipes,low,"fi",sample).map(x=>x.recipeId),["gluteeniton-uunipannukakku"]);
-  assert.deepEqual(filterRecipes(recipes,high,"en",sample).map(x=>x.recipeId),[
-    "vietnamilainen-papaija-kookospuuro","vietnamilainen-banh-cuon-sienilla","pohjoisafrikkalainen-baghrir"
-  ]);
-  assert.equal(sample["vietnamilainen-papaija-kookospuuro"],"high","historical data stays byte-identical");
-});
-
-test("banh cuon gets exact GK: ei määritetty label only on the FI held version",()=>{
-  const id="vietnamilainen-banh-cuon-sienilla";
-  assert.equal(withholdF25Nutrition(id,"fi"),true);
-  assert.equal(gate.sources.find(x=>x.recipe_id===id)?.approval,null);
-  assert.equal(f25ExplicitUndefinedGkLabel(id,"fi"),"GK: ei määritetty");
-  assert.equal(f25ExplicitUndefinedGkLabel(id,"en"),null);
-  assert.equal(f25ExplicitUndefinedGkLabel(id,"sv"),null);
-  assert.equal(f25ExplicitUndefinedGkLabel("vietnamilainen-banh-xeo-aamiaisletut","fi"),null);
-  assert.equal(f25ExplicitUndefinedGkLabel("gluteeniton-uunipannukakku","fi"),null);
-  const ld=recipeJsonLd(fixture(id,"fi"));
-  assert.equal(Object.hasOwn(ld,"nutrition"),false,"label must never authorize historical nutrition");
 });

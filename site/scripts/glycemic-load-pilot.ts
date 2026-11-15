@@ -1,3 +1,7 @@
+import { molletesHistoricalText, molletesRecipeId, molletesSourcePath } from "./molletes-reviewed-source";
+import { koreanRiceBowlHistoricalText } from "./korean-rice-bowls-reviewed-source";
+import { coconutBananaHistoricalBindingText, coconutBananaRecipeId } from "./coconut-banana-reviewed-source";
+import { biryaniSourceBeforeReview, biryaniSourcePath } from "./biryani-reviewed-source";
 import {countPublishedGkEstimates} from '../src/features/recipes/gk-estimate';
 import {publicGiSourceNote} from "./gk-source-copy";
 import {originalGlycemicLoadCategory} from './glycemic-load-filter';
@@ -11,7 +15,7 @@ import {buildThreeCurryVariants} from './gk-three-curries';
 import {buildApprovedFourVariants} from './gk-next-four';
 import {buildApprovedBVariants} from './gk-four-approved-b';
 import {buildProductAVariants} from './gk-four-product-a';
-import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
+import {recipeTextForApprovedSnapshot, reviewedRecipesWithHistoricalGk} from './approved-recipe-note-edits';
 import {buildBlueberryPieVariant} from './gk-blueberry-pie';
 import {buildPanangKimchiVariants} from './gk-panang-kimchi';
 import {buildGkOnlyVariants} from './gk149-integration';
@@ -142,10 +146,39 @@ for (const record of giRecords) {
     throw new Error(`Strong GI record must be published and ISO 26642-confirmed: ${record.id}`);
   }
 }
+const biryaniMarkdown = publishedRecipeSources.get("hyderabadi-kanabiryani")?.markdown;
+const biryaniUsesReviewedMilk = biryaniMarkdown !== undefined &&
+  biryaniSourceBeforeReview(biryaniSourcePath, biryaniMarkdown) !== biryaniMarkdown;
+
+const coconutBananaMarkdown = publishedRecipeSources.get(coconutBananaRecipeId)?.markdown;
+const coconutBananaNeedsGkReview = coconutBananaMarkdown !== undefined &&
+  coconutBananaHistoricalBindingText(coconutBananaMarkdown) !== coconutBananaMarkdown;
+
+const molletesMarkdown = publishedRecipeSources.get(molletesRecipeId)?.markdown;
+const molletesNeedsGkReview = molletesMarkdown !== undefined &&
+  molletesHistoricalText(molletesSourcePath, molletesMarkdown) !== molletesMarkdown;
+
+const koreanRiceBowlsNeedingGkReview = new Set<string>();
 const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
   const source = publishedRecipeSources.get(recipeId);
   if (!source) throw new Error("Published source recipe is missing from the current GK set: " + recipeId);
-  return [recipeId, recipeBindingHash(reviewedColdPuddingBindingText(`reseptit/aamupalat/${recipeId}.md`, source.markdown), recipeAliases.aliases)];
+  const file = recipeId === "munakoiso-kesakurpitsalasagne"
+    ? "reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md"
+    : `reseptit/aamupalat/${recipeId}.md`;
+  // The legacy inputs still describe the historical biryani recipe.
+  const markdown = recipeId === "hyderabadi-kanabiryani"
+    ? biryaniSourceBeforeReview(biryaniSourcePath, source.markdown)
+    : recipeId === coconutBananaRecipeId
+      ? coconutBananaHistoricalBindingText(source.markdown)
+      : reviewedRecipesWithHistoricalGk.has(file)
+        ? recipeTextForApprovedSnapshot(file, source.markdown, "original-gk")
+      : recipeId === molletesRecipeId
+        ? molletesHistoricalText(molletesSourcePath, source.markdown)
+        : koreanRiceBowlHistoricalText(`reseptit/aamupalat/${recipeId}.md`, source.markdown);
+  if (recipeId !== coconutBananaRecipeId && recipeId !== "hyderabadi-kanabiryani" && recipeId !== molletesRecipeId && markdown !== source.markdown) {
+    koreanRiceBowlsNeedingGkReview.add(recipeId);
+  }
+  return [recipeId, recipeBindingHash(reviewedColdPuddingBindingText(`reseptit/aamupalat/${recipeId}.md`, markdown), recipeAliases.aliases)];
 }));
 
 // Only explicitly bound new versions require whole preparation/translation text.
@@ -256,7 +289,11 @@ const publicResults = results.flatMap((result) => {
     localeRoutes: Object.fromEntries(translations.map((entry) => [entry.locale, { title: entry.title, routePath: entry.routePath }])),
   };
   // Include this recipe in search while keeping its ingredient audit internal.
-  if (result.recipeId === "maksalaatikko-kukkakaalilla") return {
+  if (result.recipeId === "maksalaatikko-kukkakaalilla" ||
+      (result.recipeId === "hyderabadi-kanabiryani" && biryaniUsesReviewedMilk) ||
+      (result.recipeId === coconutBananaRecipeId && coconutBananaNeedsGkReview) ||
+      koreanRiceBowlsNeedingGkReview.has(result.recipeId) ||
+      (result.recipeId === molletesRecipeId && molletesNeedsGkReview)) return {
     ...recipeIdentity,
     status: "INSUFFICIENT SOURCE DATA",
     glycemicLoadPerServing: null,
@@ -363,7 +400,7 @@ if (!isFixtureBuild && publicResults.length !== expectedPublicResultCount) {
 const publicGkOnlyVariants = isFixtureBuild ? [] :
   gkOnlyVariants.filter(variant => !isPublicRecipeQuarantined(variant.recipeId));
 const publicVersionCoverage = countGkVersions(
-  results.filter(result => !isPublicRecipeQuarantined(result.recipeId)),
+  isFixtureBuild ? results.filter(result => !isPublicRecipeQuarantined(result.recipeId)) : publicResults,
   publicGkOnlyVariants,
 );
 const gkOnlyModule = `/* Generated. Explicit GK-only version data; parent macros are separate. */\nimport type {GkOnlyVariant,GkVersionCoverage} from '../features/recipes/gk-only-types';\nexport const gkOnlyVariants:GkOnlyVariant[]=${JSON.stringify(publicGkOnlyVariants,null,2)};\nexport const gkVersionCoverage:GkVersionCoverage=${JSON.stringify(publicVersionCoverage,null,2)};\n`;

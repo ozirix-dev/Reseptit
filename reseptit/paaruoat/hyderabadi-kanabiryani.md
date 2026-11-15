@@ -68,7 +68,10 @@ ingredients:
   - amount: 1
     unit: g
     item: sahramia
-    note: liotettuna 2 rkl lämpimään maitoon
+  - amount: 30
+    unit: g
+    item: täysmaitoa
+    note: sahramin liotukseen
   - amount: 20
     unit: g
     item: tuoretta korianteria
@@ -82,10 +85,10 @@ translation_languages:
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
-carbs_net_per_serving_g: 60.47
-carbs_total_per_serving_g: 62.73
-protein_per_serving_g: 37.41
-fat_per_serving_g: 20.64
+carbs_net_per_serving_g: 60.83
+carbs_total_per_serving_g: 63.09
+protein_per_serving_g: 37.63
+fat_per_serving_g: 20.9
 
 ---
 
@@ -99,7 +102,7 @@ Mausteinen kanabiryani kypsyy maustetun broilerin ja tuoksuvan basmatiriisin ker
 
 ## Valmistus
 
-1. Huuhtele riisi ja liota kylmässä vedessä 20 minuuttia. Valuta.
+1. Huuhtele riisi ja liota kylmässä vedessä 20 minuuttia. Valuta. Lämmitä 30 g täysmaitoa ja liota sahramia maidossa riisin liotuksen ajan.
 2. Sekoita broileri jogurtin, garam masalan, juustokuminan, korianterin, kurkuman ja suolan kanssa. Anna maustua 20 minuuttia.
 3. Ruskista sipulit öljyssä kullanruskeiksi. Nosta puolet sivuun. Lisää kattilaan koko kanelitanko ja kaikki kardemummakodat.
 4. Lisää broileri ja ruskista pinta. Peitä ja kypsennä miedolla lämmöllä 15 minuuttia.
@@ -109,4 +112,4 @@ Mausteinen kanabiryani kypsyy maustetun broilerin ja tuoksuvan basmatiriisin ker
 
 ## Muistiinpanot
 
-- Tarkista broilerin kypsyys paksuimmasta kohdasta ennen tarjoamista.
+- Tarkista ennen tarjoamista, että broilerin sisälämpötila on paksuimmasta kohdasta vähintään 74 °C. Jatka tarvittaessa kypsennystä.

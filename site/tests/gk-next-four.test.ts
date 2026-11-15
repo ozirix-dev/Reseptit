@@ -19,6 +19,7 @@ import {buildApprovedSevenVariants} from '../scripts/gk-next-seven';
 import {digest,textHash} from '../scripts/gk149-model';
 import {countGkVersions,type GkOnlyVariant} from '../src/features/recipes/gk-only-types';
 import {GkOnlyVariantPanel,gkOnlyQuantity,gkOnlyPreparation,gkOnlyValue,gkOnlyUi,gkScopeUi} from '../src/features/recipes/GkOnlyVariantPanel';
+import {glycemicLoadPilotResults} from "../src/generated/glycemic-load-pilot.generated";
 import {gkOnlyVariants,gkVersionCoverage} from '../src/generated/gk-only-variants.generated';
 import { isPublicRecipeQuarantined } from '../scripts/public-recipe-quarantine';
 
@@ -50,7 +51,7 @@ test('the four A inputs and legacy coverage remain intact alongside authorized G
  const coverage=countGkVersions(report.results,report.gkOnlyVariants);
  assert.deepEqual(report.versionCoverage,coverage);
  assert.deepEqual(gkVersionCoverage,countGkVersions(
-   report.results.filter((r:{recipeId:string})=>!isPublicRecipeQuarantined(r.recipeId)),
+   glycemicLoadPilotResults,
    gkOnlyVariants,
  ));
  assert.ok(coverage.studyServingRecipeIds.includes(manakishStudyBinding.recipeId));

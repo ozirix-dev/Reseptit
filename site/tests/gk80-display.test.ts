@@ -90,19 +90,9 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
     assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
     assert.equal(result.glycemicLoadPerServing, null);
     assert.equal(result.glycemicLoadRangePerServing, null);
-    assert.equal(result.incompleteReasons.length, 15);
-    assert.ok(result.incompleteReasons.every(reason => reason.category === "REVIEW_PENDING"));
+    assert.deepEqual(result.incompleteReasons, [], "historical ingredient blockers are not current recipe data");
     const html = renderToStaticMarkup(createElement(MissingEstimate, { locale, result }));
-    assert.equal(html.split(pendingEvidenceText[locale]).length - 1, 1);
-    assert.equal((html.match(/<li>/g) ?? []).length, 15);
-    for (const reason of result.incompleteReasons) {
-      const name = reason.ingredientNames[locale] ?? reason.ingredientNames.fi;
-      const ingredient = renderToStaticMarkup(createElement("strong", { lang: reason.ingredientNames[locale] ? locale : "fi" }, name));
-      assert.ok(html.includes(ingredient), `ingredient retained: ${name}`);
-    }
     assert.ok(html.includes(gkCopy[locale].missing));
-    assert.ok(!html.includes(gkCopy[locale].blockers.GI));
-    assert.ok(!html.includes(gkCopy[locale].blockers.SOURCE));
     for (const category of ["REVIEW_PENDING", "GI", "SOURCE", "PORTION", "AMOUNT"] as const) {
       const unavailable = renderToStaticMarkup(createElement(MissingEstimate, {
         locale,

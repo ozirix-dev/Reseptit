@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "recipe_id": "japanilainen-miso-tofu-paksoi-punnittu-v2",
+  "source_path": "reseptit/aamupalat/japanilainen-miso-tofu-paksoi-punnittu-v2.md",
+  "source_sha256": "6f4f40f0ce8f095bbc3cccb214f00374d8be9f3cf486f003da266ef186517a89",
+  "decision": "approved",
+  "reviewed_by": "AI editorial reviewer (GPT-6)",
+  "reviewed_at": "2026-11-13",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.justonecookbook.com/homemade-miso-soup/",
+      "https://www.edenfoods.com/recipes/view.php?recipes_id=82",
+      "https://miso.or.jp/misoonline/wp-content/uploads/2012/09/miso-english-leaflet.pdf",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/"
+    ]
+  },
+  "supersedes_quarantined": {
+    "recipe_id": "japanilainen-miso-tofu-paksoi",
+    "source_path": "reseptit/aamupalat/japanilainen-miso-tofu-paksoi.md",
+    "source_git_blob_sha": "bf84422ea3cc7c2f16f5b2b95a643bfa9109f5bb"
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/japanilainen-miso-tofu-paksoi-punnittu-v2.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "The sole historical slug owner is the quarantined predecessor with the exact registered Git blob."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "All ingredients use edible gram weights. Allergen disclosures and the new illustration were checked against the ingredient list."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Vegetable-stock adaptation. Forty grams of miso in 550 g stock is close to the reference 18 g per 240 ml. Bok choy stems cook first; tender greens and soft tofu cook briefly before miso is dissolved off the heat. Wakame was omitted because its iodine content is variable. AFCD F005702 combines four miso products. No physical trial was performed."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Wash bok choy, simmer tofu in the broth and serve hot. Disclose soy and check product allergen labels."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "2 portions with 20 minutes including the specified cooking and resting or cooling periods."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli and AFCD edible mass calculation verified against the current recipe input SHA-256. Vegetable-stock adaptation. Forty grams of miso in 550 g stock is close to the reference 18 g per 240 ml. Bok choy stems cook first; tender greens and soft tofu cook briefly before miso is dissolved off the heat. Wakame was omitted because its iodine content is variable. AFCD F005702 combines four miso products. No physical trial was performed."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "No preparation-matched glycemic load approval exists for the successor; the original is retained in historical quarantine."
+    }
+  }
+}

@@ -1,67 +1,70 @@
 ---
-title: "Bissara-härkäpapukeitto aamiaiseksi"
+title: Marokkolainen bissara-härkäpapukeitto
 recipe_id: pohjoisafrikkalainen-bissara
 url_slug: pohjoisafrikkalainen-bissara
 category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "härkäpapu"
-  - "valkosipuli"
-  - "juustokumina"
+  - härkäpapu
+  - valkosipuli
+  - juustokumina
 cooking_method:
-  - "keittäminen"
+  - keittäminen
 ingredients:
   - amount: 150
-    unit: "g"
-    item: "kuivattuja härkäpapuja"
+    unit: g
+    item: kuivattuja härkäpapuja
   - amount: 1
-    unit: "tl"
-    item: "valkosipuli"
+    unit: tl
+    item: valkosipuli
   - amount: 1
-    unit: "tl"
-    item: "juustokumina"
+    unit: tl
+    item: juustokumina
   - amount: 1
-    unit: "rkl"
-    item: "oliiviöljy"
+    unit: rkl
+    item: oliiviöljy
   - amount: 700
-    unit: "ml"
-    item: "vettä"
+    unit: ml
+    item: vettä
   - amount: null
     unit: ""
-    item: "suolaa maun mukaan"
+    item: suolaa maun mukaan
 servings: 2
-time_total_min: 25
+time_total_min: 555
 difficulty: Helppo
 tags:
-  - "aamupala"
-  - "pohjoisafrikkalainen"
-  - "aamiaisruoka"
+  - aamupala
+  - pohjoisafrikkalainen
+  - aamiaisruoka
 image:
   src: aamupalat/pohjoisafrikkalainen-bissara.webp
-  alt: "Bissara-härkäpapukeitto aamiaiseksi tarjoiltuna aamiaisella"
+  alt: Kulhollinen soseutettua härkäpapukeittoa. Kuvassa on tarjoiluehdotuksena myös leipää ja yrttejä.
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 28.24
 carbs_total_per_serving_g: 42.55
 protein_per_serving_g: 18.49
 fat_per_serving_g: 8.59
-
 ---
 
-# Bissara-härkäpapukeitto aamiaiseksi
+# Marokkolainen bissara-härkäpapukeitto
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan bissara-härkäpapukeitto aamiaiseksi. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Bissara on marokkolainen sosekeitto, joka saa makunsa härkäpavuista, valkosipulista ja juustokuminasta. Oliiviöljy lisätään vasta annoksiin.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Käytä kuivattuja, kuorittuja ja halkaistuja härkäpapuja. Varaa liotukseen erikseen kylmää vettä.
 
 ## Valmistus
 
-1. Kuumenna kattilassa öljy tai liemi. Lisää aromit ja hitaammin kypsyvät ainekset; paista tai hauduta muutama minuutti.
-2. Kaada kattilaan liemi ja keitä miedosti, kunnes pääraaka-aineet ovat kypsiä.
-3. Lisää nuudelit, lehtivihannekset tai muut nopeasti kypsyvät ainekset niiden kypsymisajan mukaan.
-4. Keitä pavut hyvin pehmeiksi, soseuta ja viimeistele juustokuminalla sekä oliiviöljyllä.
+1. Huuhtele pavut. Peitä ne reilulla kylmällä vedellä ja liota jääkaapissa vähintään 8 tuntia. Kaada liotusvesi pois ja huuhtele pavut.
+2. Pane pavut, 700 ml tuoretta vettä ja hienonnettu valkosipuli kattilaan. Kiehauta. Hauduta kansi raollaan 45–60 minuuttia tai pidempään, kunnes pavut ovat kauttaaltaan hyvin pehmeitä ja hajoavat lusikalla painettaessa. Noudata myös pakkauksen liotus- ja kypsennysohjetta.
+3. Soseuta pavut kypsennysliemessään ja sekoita joukkoon juustokumina. Mausta tarvittaessa suolalla.
+4. Jaa keitto kahteen kulhoon ja valuta mitattu oliiviöljy annosten päälle.
+
+## Muistiinpanot
+
+Aika sisältää noin 8 tunnin liotuksen. Härkäpapuja tulee välttää, jos sinulla on G6PD-puutos. Kuvassa näkyy tarjoiluehdotus, jossa on myös leipää ja yrttejä.

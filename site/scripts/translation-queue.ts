@@ -21,10 +21,15 @@ type Reasons = "missing" | "draft" | "review_missing" | "review_stale" | "fi_sou
 
 const keyOf = (id: string, locale: string) => id + ":" + locale;
 const isLocale = (value: unknown): value is Locale => locales.includes(value as Locale);
+// The source remains public in Finnish while the listed recipe work is pending.
+const translationSourceHolds = new Map([
+  ["indonesialainen-bakwan-maissifritter", "bakwan_v2_frying_yield_oil_and_nutrition_review"],
+]);
+
 const holdReason = (id: string) => {
   if (editorialHoldRecipeIds.includes(id)) return "editorial_hold";
   const gate = sourceReleaseGateDecision(id);
-  return gate.authorized ? null : gate.reason;
+  return gate.authorized ? translationSourceHolds.get(id) ?? null : gate.reason;
 };
 
 async function localeFiles() {
@@ -116,6 +121,8 @@ export function changedReviewLedgerErrors(
     const source = sources.get(target.data.recipe_id);
     if (!source) return [key + ": review evidence has no published FI source"];
     const status = semanticStatus(semanticHash(source), semanticHash(target), true, current[key]);
+    const translationSourceHold = translationSourceHolds.get(target.data.recipe_id);
+    if (translationSourceHold) return [key + ": FI source has a translation HOLD (" + translationSourceHold + ")"];
     const editorialHold = editorialHoldRecipeIds.includes(target.data.recipe_id);
     if (editorialHold && status === "HUMAN REVIEW REQUIRED") return [];
     if (editorialHold && status === "REVIEW CURRENT") return [key + ": FI source has an editorial HOLD"];

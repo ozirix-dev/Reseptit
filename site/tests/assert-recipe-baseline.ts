@@ -1,8 +1,16 @@
+import { sourceReleaseGateDecision } from "../scripts/f25-source-release-gate";
+import { molletesHistoricalText } from "../scripts/molletes-reviewed-source";
+import { koreanRiceBowlHistoricalText } from "../scripts/korean-rice-bowls-reviewed-source";
+import { originalForCoconutBananaHistory } from "./coconut-banana-history";
 import {mainAdditionFiles, postBaselineBriocheIds, postBaselineClassicIds} from "./original-content-transition";
 import assert from "node:assert/strict";
 import { originalForB21CanonicalHistory } from "./b21-canonical-historical-transition";
 import { originalForC13CanonicalHistory } from "./c13-canonical-historical-transition";
 import { originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
+import { originalForJumeokbapHistory } from "./jumeokbap-history";
+import { historicalSources } from "./history/historical-source-reader";
+import { originalForTamagoKakeGohanHistory } from "./tamago-kake-gohan-history";
+import { originalForKetoprakHistory } from "./ketoprak-history";
 import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
@@ -123,6 +131,7 @@ const approvedGlutenFreeFiFiles = new Map<string, string>([
 const cocoaPath = "reseptit/aamupalat/rasvakaakao-rouva-keto.md";
 const cocoaPublication = "8cb015878ab09339275851ce31ac421e5ac5288d";
 const reviewedFiBreakfastFiles = new Map([
+  ["docs/nutrition/calculations/valimerellinen-menemen-fetalla.json", "aa88cc61405a5db8771f84a0b25df9bd038846b4a1c252caa7248cb5010db57c"],
   [cocoaPath, "73ec1919b0038f2479837583081a4d3662f49c7bb4d81d301a75505b8749e32d"],
   ["docs/nutrition/calculations/rasvakaakao-rouva-keto.json", "ac1a88c6fdc720330ffb50858a90e76ae846a0e4c884494d3189659ee8154af5"],
   ["reseptit/aamupalat/lammin-chia-puuro-rouva-keto.md", "6ac411019efca3965bc614a8d73f43655a66be8f0cfaf74fdbe90f7655217717"],
@@ -159,6 +168,15 @@ const translationDraftCommits = new Map([
 // Exact recipe snapshots protect historical GK tests during translation preparation.
 // Production approval records remain in approvedTranslations.
 const recipeChanges = new Map([
+  ["reseptit/paaruoat/hyderabadi-kanabiryani.md", { status: "M", sha256: "591ff23b6543b9f9c4893a332598cf0b79e3e6dd1b4f8790319c43934b196159" }],
+  ["kaannokset/en/paaruoat/hyderabadi-kanabiryani.md", { status: "M", sha256: "5ee35c7a201b30b2bb74270729a0764444f8c1e15d9bf5b25f416f7937da69a2" }],
+  ["kaannokset/sv/paaruoat/hyderabadi-kanabiryani.md", { status: "M", sha256: "ff8332953ef806e04462987107bcdb348f9ecb1abd309bc296e666af4213d015" }],
+  ["kaannokset/th/paaruoat/hyderabadi-kanabiryani.md", { status: "M", sha256: "91abb4513fa3dcb7b301e6b0b2f53768603569764943218d90fecacf2c3a5147" }],
+  ["docs/nutrition/calculations/hyderabadi-kanabiryani.json", { status: "M", sha256: "2f2f4f0b9d25f336d3bebdef21046de5dcab9f7c54d7b6337842f1d95cd42abd" }],
+  ["reseptit/alkuruoat/tunisialainen-brik.md", { status: "M", sha256: "ba717dc99f3f78b6001fdcea43afb0e06002e6c40df2f96428e13c9008b80dfa" }],
+  ["kaannokset/en/alkuruoat/tunisialainen-brik.md", { status: "M", sha256: "439931c68cd671cf761139217777528852a4f3e3efd056cc53fde52c62997922" }],
+  ["kaannokset/sv/alkuruoat/tunisialainen-brik.md", { status: "M", sha256: "633a9155951e4b7f1e88ffc234c09313b6026b1b9cfb6f3bf5970e88d3a61668" }],
+  ["kaannokset/th/alkuruoat/tunisialainen-brik.md", { status: "M", sha256: "aa2b3944cedb66d12a82089b7333b4ea7b668836302d8196ca5bc0dba94688ec" }],
   ["reseptit/alkuruoat/jiaozi.md", { status: "M", sha256: "3ca732e55e989dd81361ed6284a1bf742b781421e37b7f952854a98179315fb5" }],
   ["kaannokset/en/alkuruoat/jiaozi.md", { status: "M", sha256: "a182dceb7b7bbfa887ff298943354d58d5251648af3cc0d2cb1b51924b91651c" }],
   ["kaannokset/sv/alkuruoat/jiaozi.md", { status: "M", sha256: "e34adfa421aaadd646c897f319ba6076cdf26585337bc5ef1dd9949a8feb358f" }],
@@ -230,6 +248,27 @@ function checkedPostBaselineRelease(root: string, baseline: string, recipeId: st
   return true;
 }
 
+// Exact old calculation blobs stay in Git. Admitting the independently
+// approved current package here does not alter the historical GK calculation.
+const f25HistoricalNutrition = new Map([
+  ["vietnamilainen-banh-cuon-sienilla", "969e6696fecc2c57873604ad9bd4545647668c26"],
+  ["vietnamilainen-banh-xeo-aamiaisletut", "cce0d1060a066b208a3713b59a1cb9ed12bf684c"],
+  ["vietnamilainen-papaija-kookospuuro", "46c0590ba9cbc3554f04d5e00846e586982bea9a"],
+  ["japanilainen-hojicha-jogurtti-persimonilla", "0a07d2eec8383faf45779fb5278daf4464f1d3de"],
+  ["pohjoisafrikkalainen-baghrir", "6044f97b27203168c278fd16bbabfa9abcac426d"],
+  ["lahi-ita-zaatar-munat", "1bee339db200140d66db8dbe49bd3e4b4adfdc72"],
+]);
+
+export function isReviewedF25NutritionTransition(root: string, baseline: string, file: string): boolean {
+  if (!/^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/.test(file)) return false;
+  const id = path.basename(file, ".json");
+  const old = f25HistoricalNutrition.get(id);
+  if (!old || sourceReleaseGateDecision(id, undefined, root).reason !== "REVIEWED_SOURCE_AND_EXACT_NUTRITION_AND_GK_BINDINGS") return false;
+  const baselineBlob = execFileSync("git", ["rev-parse", baseline + ":" + file], {cwd:root, encoding:"utf8"}).trim();
+  assert.equal(baselineBlob, old, file + ": frozen nutrition blob");
+  return true;
+}
+
 export function assertRecipeBaseline(root: string, baseline: string, ...protectedPaths: string[]) {
   const changes = execFileSync(
     "git",
@@ -239,6 +278,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
 
   for (const change of changes) {
     const [status, file] = change.split("\t");
+    if (status === "M" && isReviewedF25NutritionTransition(root, baseline, file)) continue;
     if (status === "A" && approvedKarnivoreFi3Files.has(file)) {
       const expectedBlob = approvedKarnivoreFi3Files.get(file)!;
       const actualBlob = execFileSync("git", ["hash-object", file], { cwd: root, encoding: "utf8" }).trim();
@@ -352,14 +392,25 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), approved.sha256, change);
       continue;
     }
+    if (status === "M" && historicalSources.has(file)) {
+      const current = readFileSync(path.join(root, file), "utf8");
+      const { historicalGitBlob } = historicalSources.restore(file, current);
+      // Resolve the baseline tree entry without reading the old source blob.
+      const baselineBlob = execFileSync("git", ["rev-parse", baseline + ":" + file], { cwd: root, encoding: "utf8" }).trim();
+      assert.equal(historicalGitBlob, baselineBlob, change);
+      continue;
+    }
     if (status === "M" && (file.startsWith("reseptit/") || file.startsWith("kaannokset/"))) {
       const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
       const snapshot = originalForThreeCanonicalHistory(root, file, originalForC13CanonicalHistory(root, file, originalForB21CanonicalHistory(root, file, originalForReviewedChefSafety(root, file, originalForChefHistoricalCheck(root, file,
         recipeTextForApprovedSnapshot(file,
           historicalRendangForApprovedVersion(file, historicalFarinataForApprovedPanVersion(file, current))))))));
-      if (snapshot !== current) {
+      const reviewedSnapshot = originalForKetoprakHistory(root, file, originalForJumeokbapHistory(root, file, snapshot));
+      const historicalSnapshot = originalForCoconutBananaHistory(root, file, originalForTamagoKakeGohanHistory(root, file, reviewedSnapshot));
+      const recipeBeforeReview = molletesHistoricalText(file, koreanRiceBowlHistoricalText(file, historicalSnapshot));
+      if (recipeBeforeReview !== current) {
         const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
-        assert.equal(snapshot, original, change);
+        assert.equal(recipeBeforeReview, original, change);
         continue;
       }
     }
@@ -374,7 +425,9 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       }
     }
     if (status === "A" && /^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/.test(file)) {
-      if (checkedPostBaselineRelease(root, baseline, path.basename(file, ".json"))) continue;
+      const id = path.basename(file, ".json");
+      if (sourceReleaseGateDecision(id, undefined, root).reason === "REVIEWED_SOURCE_AND_EXACT_NUTRITION_AND_GK_BINDINGS") continue;
+      if (checkedPostBaselineRelease(root, baseline, id)) continue;
     }
     if (status === "A" && file.startsWith("kaannokset/")) {
       const published = parseMarkdown(readFileSync(path.join(root, file), "utf8"));

@@ -1,16 +1,16 @@
 ---
-title: "Korealaiset merilevä-riisipallot"
+title: Korealaiset merilevä-riisipallot
 recipe_id: korealainen-jumeokbap-merilevalla
 url_slug: korealainen-jumeokbap-merilevalla
 category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "riisi"
-  - "gim-merilevä"
-  - "seesamiöljy"
+  - riisi
+  - gim-merilevä
+  - seesamiöljy
 cooking_method:
-  - "paistaminen"
+  - paistaminen
 ingredients:
   - amount: 100
     unit: g
@@ -31,12 +31,12 @@ servings: 2
 time_total_min: 25
 difficulty: Helppo
 tags:
-  - "aamupala"
-  - "korealainen"
-  - "aamiaisruoka"
+  - aamupala
+  - korealainen
+  - aamiaisruoka
 image:
-  src: aamupalat/korealainen-jumeokbap-merilevalla.webp
-  alt: "Korealaiset merilevä-riisipallot tarjoiltuna aamiaisella"
+  src: aamupalat/korealainen-jumeokbap-merilevalla-gim-porkkana.webp
+  alt: Kuusi gimillä ja hienolla porkkanaraasteella maustettua riisipalloa lautasella.
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 38.73
@@ -49,15 +49,19 @@ fat_per_serving_g: 7.37
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan korealaiset merilevä-riisipallot. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Jumeokbap on käsin muotoiltu korealainen riisipallo. Tässä ohjeessa riisi maustetaan paahdetulla gimillä, seesamiöljyllä ja porkkanalla.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Mittaa riisi kuivana ja punnitse porkkana kuorittuna. Käytä maustamatonta paahdettua gim- eli norimerilevää, jonka jodipitoisuus on tiedossa. Noudata pakkauksen käyttörajaa.
 
 ## Valmistus
 
-1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
-2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
-3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Kypsennä riisi. Raasta porkkana ja kuullota se pienessä osassa seesamiöljyä. Sekoita lämmin riisi, porkkana, jäljellä oleva öljy ja murennettu gim. Muotoile kahdeksi riisipalloksi.
+1. Huuhtele kuiva valkoinen pitkäjyväinen riisi ja keitä se pakkauksen ohjeen mukaan. Anna sen vetäytyä kannen alla ja siirrä lämpimänä kulhoon.
+2. Raasta porkkana hienoksi. Kuullota sitä noin 3 minuuttia osassa seesamiöljyä, kunnes raaste pehmenee.
+3. Murenna gim pieniksi hiutaleiksi. Kääntele porkkana, gim ja loput seesamiöljystä lämpimän riisin joukkoon. Mausta halutessasi ripauksella suolaa.
+4. Jaa seos kuuteen osaan. Purista lämpimät riisiannokset kostutetuin käsin tiiviiksi palloiksi, kun riisi on riittävän viileää käsiteltäväksi. Tarjoa heti, kolme palloa annosta kohti.
+
+## Muistiinpanot
+
+Sisältää seesamia. Jäähdytä mahdolliset tähteet heti, säilytä jääkaapissa ja käytä 24 tunnin kuluessa. Jos kuumennat riisin uudelleen, kuumenna se vain kerran kauttaaltaan höyryävän kuumaksi.

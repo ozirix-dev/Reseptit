@@ -1,0 +1,152 @@
+{
+  "recipeId": "japanilainen-miso-tofu-paksoi-punnittu-v2",
+  "sourceHash": "18d8298c72632c32d0db7f76bddb8feccfee406dd044577af399c61bdd2146d1",
+  "calculatedAt": "2026-11-13",
+  "batchId": "batch-554",
+  "servings": 2,
+  "scope": "Vegetable-stock adaptation. Forty grams of miso in 550 g stock is close to the reference 18 g per 240 ml. Bok choy stems cook first; tender greens and soft tofu cook briefly before miso is dissolved off the heat. Wakame was omitted because its iodine content is variable. AFCD F005702 combines four miso products. No physical trial was performed.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "mietoa käyttövalmista kasvislientä",
+      "amount": 550,
+      "unit": "g",
+      "state": "diluted vegetable stock, ready to use",
+      "matchEvidence": "Source 29026 (diluted vegetable stock, ready to use). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-29026-release-20",
+        "name": "KASVISLIEMI, LAIMENNETTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29026",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "diluted vegetable stock, ready to use",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0.411,
+          "FIBT": 0.055,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0.411,
+          "fibre": 0.055,
+          "polyols": 0,
+          "protein": 0.29,
+          "fat": 0.716
+        }
+      }
+    },
+    {
+      "item": "pehmeää tofua, valutettuna",
+      "amount": 150,
+      "unit": "g",
+      "state": "soft tofu, drained",
+      "matchEvidence": "Source 33501 (soft tofu, drained). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-33501-release-20",
+        "name": "TOFU, PEHMEÄ, SOIJAVALMISTE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/33501",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "soft tofu, drained",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 1.58,
+          "FIBT": 0.3,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 1.58,
+          "fibre": 0.3,
+          "polyols": 0,
+          "protein": 8.08,
+          "fat": 4.78
+        }
+      }
+    },
+    {
+      "item": "paksoita, syötävää osaa",
+      "amount": 120,
+      "unit": "g",
+      "state": "raw edible bok choy",
+      "matchEvidence": "Source F001301 (raw edible bok choy). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F001301-release-3",
+        "name": "Bok choy, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "raw edible bok choy",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0.6,
+          "fibre": 2.4,
+          "polyols": 0,
+          "protein": 2.5,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "vaaleaa misotahnaa",
+      "amount": 40,
+      "unit": "g",
+      "state": "fermented soybean and grain paste, used as a light miso reference",
+      "matchEvidence": "Source F005702 (fermented soybean and grain paste, used as a light miso reference). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F005702-release-3",
+        "name": "Paste, soybean",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "fermented soybean and grain paste, used as a light miso reference",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 19.7,
+          "fibre": 4.3,
+          "polyols": 0,
+          "protein": 12.9,
+          "fat": 5.1
+        }
+      }
+    }
+  ]
+}

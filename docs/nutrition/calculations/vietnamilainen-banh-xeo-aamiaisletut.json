@@ -1,23 +1,19 @@
 {
   "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
-  "sourceHash": "dde4c5edfda11bb470d1bc5f9da072ac457b79f6c3d474807d87a018866daf20",
-  "calculatedAt": "2026-10-24",
-  "batchId": "batch-14",
+  "sourceHash": "ddd4900986fe47b3f2d65063fd186daf40e8408ebfcfa60155f1f049a55c1700",
+  "calculatedAt": "2026-11-14",
+  "batchId": "batch-565",
   "servings": 2,
-  "scope": "Two servings. Uses 100 g white rice flour, 200 ml regular-fat canned coconut milk, 150 g raw peeled shrimp and 150 g raw bean sprouts; listed pan oil is counted fully retained.",
+  "scope": "Two equal servings of batter and cooked filling including all pan juices. The 2 g pancake-oil input has an explicit maximum omission bound.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "riisijauho",
       "amount": 100,
       "unit": "g",
+      "item": "valkoista riisijauhoa",
       "state": "white rice flour as sold",
       "matchEvidence": "Fineli Release 20 record 182 groups rice flour and rice flakes; used as the closest local generic white rice-flour entry. The source category combines the two forms, so this is a small product-level proxy.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
       "record": {
         "id": "fineli-182-release-20",
         "name": "JAUHO, RIISIJAUHO, RIISIHIUTALE",
@@ -46,20 +42,18 @@
           "protein": 7.69,
           "fat": 1.4
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
     },
     {
-      "item": "täysrasvaista kookosmaitoa",
-      "amount": 200,
-      "unit": "ml",
+      "amount": 65,
+      "unit": "g",
+      "item": "täysrasvaista makeuttamatonta säilykekookosmaitoa",
       "state": "canned regular-fat coconut milk as sold",
       "matchEvidence": "AFCD Release 3 record F002991 is regular-fat canned coconut milk, matching the recipe wording.",
-      "gramsPerUnit": 1,
-      "conversionEvidence": "For this pourable canned coconut milk, 1 ml is represented as 1 g; all listed amount is counted.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
       "record": {
         "id": "afcd-F002991-release-3",
         "name": "Coconut, milk, canned, regular fat",
@@ -78,18 +72,64 @@
           "protein": 1.4,
           "fat": 15.4
         }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
+    },
+    {
+      "amount": 250,
+      "unit": "g",
+      "item": "vettä",
+      "state": "plain water",
+      "matchEvidence": "plain water supplies none of the modeled nutrients.",
+      "excludedReason": "plain water supplies none of the modeled nutrients.",
+      "omissionImpactEvidence": "plain water supplies none of the modeled nutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
       }
     },
     {
-      "item": "katkarapu",
+      "amount": 1,
+      "unit": "g",
+      "item": "jauhettua kurkumaa",
+      "state": "ground dried turmeric",
+      "matchEvidence": "AFCD Release 3: Turmeric, dried, ground",
+      "record": {
+        "id": "afcd-F009335-release-3",
+        "name": "Turmeric, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009335",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "ground dried turmeric",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 44.4,
+          "fibre": 22.7,
+          "polyols": 0,
+          "protein": 9.7,
+          "fat": 3.2
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
+    },
+    {
       "amount": 150,
       "unit": "g",
+      "item": "raakoja kuorittuja katkarapuja",
       "state": "raw peeled prawn flesh",
       "matchEvidence": "Generic raw peeled shrimp represented by raw prawn flesh; AFCD record F007422 has complete fibre and paired carbohydrate data.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
       "record": {
         "id": "afcd-F007422-release-3",
         "name": "Prawn, banana, wild, flesh, raw",
@@ -108,18 +148,18 @@
           "protein": 13.2,
           "fat": 0.6
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
     },
     {
-      "item": "pavunitu",
       "amount": 150,
       "unit": "g",
+      "item": "tuoreita mungpavun ituja",
       "state": "fresh raw bean sprouts",
       "matchEvidence": "AFCD Release 3 record F008806 is raw fresh bean sprouts; the recipe amount is the raw edible mass.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
       "record": {
         "id": "afcd-F008806-release-3",
         "name": "Sprout, bean, fresh, raw",
@@ -138,20 +178,18 @@
           "protein": 3.1,
           "fat": 0.1
         }
-      }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
     },
     {
-      "item": "neutraalia paistoöljyä",
-      "amount": 1,
-      "unit": "rkl",
+      "amount": 8,
+      "unit": "g",
+      "item": "rypsiöljyä täytteeseen",
       "state": "neutral vegetable cooking oil",
       "matchEvidence": "Average neutral cooking oil; Fineli Release 20 record 541.",
-      "gramsPerUnit": 13.5,
-      "conversionEvidence": "Fineli record 541 lists 13.5 g per tablespoon (RKL). All listed pan oil is counted as retained.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
       "record": {
         "id": "fineli-541-release-20",
         "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
@@ -180,27 +218,43 @@
           "protein": 0,
           "fat": 99.9
         }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible ingredient",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole ingredient is apportioned; no pan oil or discarded liquid"
+    },
+    {
+      "amount": 2,
+      "unit": "g",
+      "item": "rypsiöljyä letuille",
+      "state": "measured pan oil with unknown retention",
+      "matchEvidence": "At most 2 g pan oil is used in the entire batch. The mass bounds fat at 1 g per serving and energy at 9 kcal, even if all is retained.",
+      "excludedReason": "At most 2 g pan oil is used in the entire batch. The mass bounds fat at 1 g per serving and energy at 9 kcal, even if all is retained.",
+      "omissionImpactEvidence": "At most 2 g pan oil is used in the entire batch. The mass bounds fat at 1 g per serving and energy at 9 kcal, even if all is retained.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 9,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 1
       }
     },
     {
-      "item": "suolaa maun mukaan",
-      "amount": null,
-      "unit": "",
-      "state": "unquantified salt omitted; no meaningful contribution to the four displayed macronutrients",
-      "matchEvidence": "Salt contributes no meaningful energy, carbohydrate, protein or fat to the displayed estimate.",
-      "edibleFraction": 1,
-      "edibleEvidence": "Ingredient basis is the documented edible amount",
-      "retainedFraction": 1,
-      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
-      "excludedReason": "Omitted unquantified salt; sodium is not displayed.",
+      "amount": 1,
+      "unit": "g",
+      "item": "hienoa suolaa",
+      "state": "fine salt",
+      "matchEvidence": "fine salt supplies none of the modeled nutrients.",
+      "excludedReason": "fine salt supplies none of the modeled nutrients.",
+      "omissionImpactEvidence": "fine salt supplies none of the modeled nutrients.",
       "omissionImpactUpperBoundPerServing": {
         "kcal": 0,
         "netCarbohydrate": 0,
         "totalCarbohydrate": 0,
         "protein": 0,
         "fat": 0
-      },
-      "omissionImpactEvidence": "Plain salt has no meaningful energy or the four displayed macronutrients."
+      }
     }
   ]
 }

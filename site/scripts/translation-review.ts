@@ -155,7 +155,6 @@ if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.ar
     rows.sort((a, b) => (queue.get(a.recipe_id) ?? Infinity) - (queue.get(b.recipe_id) ?? Infinity));
     await writeReviewPack(output, audit, rows, files);
     await writeFile(path.join(output, "registry.json"), JSON.stringify(rows, null, 2) + "\n");
-    if (process.argv.includes("--snapshot")) await writeFile(path.join(root, "docs/reports/translation-review-registry.json"), JSON.stringify(rows, null, 2) + "\n");
   }
   console.log(JSON.stringify({ ...summary, errors: audit.errors }, null, 2));
   if (audit.errors.length) process.exitCode = 1;

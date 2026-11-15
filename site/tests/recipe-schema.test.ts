@@ -180,41 +180,9 @@ test("gluten-free source-evidence binding refuses missing, stale and incomplete 
 });
 
 
-test("F25 consumer-facing review notices are separate from GK-sealed recipe Markdown", () => {
-  const ids = [
-    "rahka-marjakerroskulho",
-    "intialainen-pinaatti-paneer-chilla",
-    "lahi-ita-zaatar-munat",
-    "japanilainen-hojicha-jogurtti-persimonilla",
-    "vietnamilainen-papaija-kookospuuro",
-    "vietnamilainen-banh-xeo-aamiaisletut",
-    "pohjoisafrikkalainen-baghrir",
-    "vietnamilainen-banh-cuon-sienilla",
-    "meksikolainen-chilaquiles-verdes",
-    "meksikolainen-paputostada-aamupalaksi",
-    "korealainen-kimchi-jeon-aamiaiseksi",
-    "karibia-plantain-aamiaislautanen",
-    "munakoiso-kesakurpitsalasagne",
-  ];
-  assert.deepEqual(Object.keys(sourceReviewNotices).sort(), [...ids].sort());
-  for (const id of ids) {
-    const notice = sourceReviewNotice(id);
-    assert.ok(notice, id);
-    assert.ok(notice.heading.length > 10 && notice.details.length > 35 && notice.allergens.length > 15);
-    const recipe = siteContent.recipes.find((x) => x.recipeId === id && x.locale === "fi");
-    assert.ok(recipe, id + " remains a FI source");
-    assert.equal(sourceReviewNotice("thai-roti-munalla-banaanilla"), null);
-    assert.ok(!JSON.stringify(recipe).includes(notice.heading), "separate UI notice must not rewrite recipe content");
-  }
-  assert.match(sourceReviewNotice("lahi-ita-zaatar-munat")!.allergens, /seesamia/);
-  assert.match(sourceReviewNotice("vietnamilainen-banh-cuon-sienilla")!.details, /porsaan jauhelihaa/);
-  assert.match(sourceReviewNotice("japanilainen-hojicha-jogurtti-persimonilla")!.details, /2 g/);
-  assert.match(sourceReviewNotice("pohjoisafrikkalainen-baghrir")!.details, /150 ml vettä/);
-  assert.match(sourceReviewNotice("rahka-marjakerroskulho")!.details, /ravintoarvot on piilotettu/i);
-  assert.match(sourceReviewNotice("pohjoisafrikkalainen-baghrir")!.details, /ravintoarvot on piilotettu/i);
-  assert.match(sourceReviewNotice("vietnamilainen-banh-xeo-aamiaisletut")!.allergens, /äyriäisiä/);
-  assert.match(sourceReviewNotice("vietnamilainen-papaija-kookospuuro")!.details, /15–20 minuutissa/);
-  assert.match(sourceReviewNotice("meksikolainen-chilaquiles-verdes")!.details,/51,845 g/);
-  assert.match(sourceReviewNotice("korealainen-kimchi-jeon-aamiaiseksi")!.details,/4,5 g/);
-  assert.match(sourceReviewNotice("munakoiso-kesakurpitsalasagne")!.details,/200 g kuivia/);
+test("a retired F25 recipe has no public review notice or recipe page", () => {
+  const id = "karibia-plantain-aamiaislautanen";
+  assert.equal(sourceReviewNotice(id), null);
+  assert.equal(Object.hasOwn(sourceReviewNotices, id), false);
+  assert.ok(!siteContent.recipes.some(recipe => recipe.recipeId === id));
 });

@@ -16,6 +16,7 @@ import {verifyApprovedSix} from '../scripts/gk149-approved-six';
 import {verifyFoodinRecord,FOODIN_ORIGINAL_FILE_SHA256,FOODIN_RECORD_SHA256,FOODIN_RECORD_ID} from '../scripts/gk-foodin-binding';
 import {textHash,digest} from '../scripts/gk149-model';
 import {countGkVersions} from '../src/features/recipes/gk-only-types';
+import {glycemicLoadPilotResults} from "../src/generated/glycemic-load-pilot.generated";
 import {gkOnlyVariants,gkVersionCoverage} from '../src/generated/gk-only-variants.generated';
 import { isPublicRecipeQuarantined } from '../scripts/public-recipe-quarantine';
 import {GkOnlyVariantPanel,gkOnlyUi,gkScopeUi,gkOnlyValue,gkOnlyPreparation} from '../src/features/recipes/GkOnlyVariantPanel';
@@ -33,7 +34,7 @@ test('exact seven new A versions form a distinct179-recipe candidate while the o
  const coverage=countGkVersions(original,legacy);
  assert.deepEqual(report.versionCoverage,countGkVersions(report.results,report.gkOnlyVariants));
  assert.deepEqual(gkVersionCoverage,countGkVersions(
-   report.results.filter((r:{recipeId:string})=>!isPublicRecipeQuarantined(r.recipeId)),
+   glycemicLoadPilotResults,
    gkOnlyVariants,
  ));
  assert.equal(coverage.numericRecipes,179);assert.equal(coverage.originalNumeric,156);assert.equal(coverage.additionalA,17);assert.equal(coverage.additionalB,6);assert.equal(coverage.missing,147);assert.equal(coverage.total,326);

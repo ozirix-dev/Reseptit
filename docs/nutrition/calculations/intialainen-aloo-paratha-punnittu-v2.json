@@ -1,0 +1,314 @@
+{
+  "recipeId": "intialainen-aloo-paratha-punnittu-v2",
+  "sourceHash": "295993f0983b98ed1121552883f525289d28651fdabb93dc87650a41433c2b1f",
+  "calculatedAt": "2026-11-13",
+  "batchId": "batch-544",
+  "servings": 2,
+  "reviewerStatus": "AUTOMATED ONLY",
+  "scope": "Two filled flatbreads and 60 g yogurt. Fineli and AFCD edible ingredients. All 12 g griddle oil counted as an upper retention assumption. At 75% retention subtract 1.5 g fat per serving; at 50% subtract 3 g. Potato boiled from raw peeled weight; nutrient leaching is not quantified.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "hienoksi jauhettua täysjyvävehnäjauhoa",
+      "amount": 100,
+      "unit": "g",
+      "state": "raw whole wheat flour",
+      "matchEvidence": "Fineli graham whole-wheat flour is the composition reference for finely milled whole-wheat atta.",
+      "record": {
+        "id": "fineli-111-release-20",
+        "name": "JAUHO, GRAHAMJAUHO",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/111",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw whole wheat flour",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 61.723,
+          "FIBT": 9.9,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 61.723,
+          "fibre": 9.9,
+          "polyols": 0,
+          "protein": 12.9,
+          "fat": 2.46
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient weighed at the edible recipe amount.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Model all weighed edible ingredient nutrients as retained; boiled potato nutrient loss is not separately quantified."
+    },
+    {
+      "item": "lämmintä vettä",
+      "amount": 60,
+      "unit": "ml",
+      "state": "plain tap water",
+      "matchEvidence": "Plain dough water contributes none of the four tracked nutrients.",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain tap water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      },
+      "edibleFraction": 1,
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Tap water approximated as 1 g per ml.",
+      "edibleEvidence": "Ingredient weighed at the edible recipe amount.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Model all weighed edible ingredient nutrients as retained; boiled potato nutrient loss is not separately quantified."
+    },
+    {
+      "item": "kuorittua raakaa perunaa",
+      "amount": 150,
+      "unit": "g",
+      "state": "peeled raw potato",
+      "matchEvidence": "Weighed raw and peeled. Raw edible solids are modelled as retained after boiling and draining, with small cooking losses possible.",
+      "record": {
+        "id": "fineli-205-release-20",
+        "name": "PERUNA, VANHA, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/205",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "peeled raw potato",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 15.5,
+          "FIBT": 1.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 15.5,
+          "fibre": 1.4,
+          "polyols": 0,
+          "protein": 1.88,
+          "fat": 0.114
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient weighed at the edible recipe amount.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Model all weighed edible ingredient nutrients as retained; boiled potato nutrient loss is not separately quantified."
+    },
+    {
+      "item": "tuoretta korianteria",
+      "amount": 6,
+      "unit": "g",
+      "state": "fresh coriander",
+      "matchEvidence": "AFCD F003192 raw coriander leaves and tender stems.",
+      "record": {
+        "id": "afcd-F003192-release-3",
+        "name": "Coriander, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh coriander",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.9,
+          "fibre": 3.2,
+          "polyols": 0,
+          "protein": 3.1,
+          "fat": 0.6
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient weighed at the edible recipe amount.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Model all weighed edible ingredient nutrients as retained; boiled potato nutrient loss is not separately quantified."
+    },
+    {
+      "item": "jauhettua juustokuminaa",
+      "amount": 2,
+      "unit": "g",
+      "state": "ground cumin",
+      "matchEvidence": "AFCD F003327 ground cumin.",
+      "record": {
+        "id": "afcd-F003327-release-3",
+        "name": "Cumin (cummin) seed, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground cumin",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 33.7,
+          "fibre": 10.5,
+          "polyols": 0,
+          "protein": 17.8,
+          "fat": 22.3
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient weighed at the edible recipe amount.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Model all weighed edible ingredient nutrients as retained; boiled potato nutrient loss is not separately quantified."
+    },
+    {
+      "item": "rypsiöljyä",
+      "amount": 12,
+      "unit": "g",
+      "state": "rapeseed oil",
+      "matchEvidence": "Fineli 535, edible rapeseed oil weighed directly.",
+      "record": {
+        "id": "fineli-535-release-20",
+        "name": "RYPSIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/535",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "rapeseed oil",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient weighed at the edible recipe amount.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Count 100% of the added griddle oil. Actual plate fat is lower if some oil remains in the pan."
+    },
+    {
+      "item": "maustamatonta luonnonjogurttia",
+      "amount": 60,
+      "unit": "g",
+      "state": "plain whole milk yogurt",
+      "matchEvidence": "Fineli Bulgarian-style plain unsweetened yogurt, 3.9% fat, served in full.",
+      "record": {
+        "id": "fineli-620-release-20",
+        "name": "JOGURTTI, MAUSTAMATON, BULGARIAN, RASVAA 3,9%",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/620",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain whole milk yogurt",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3.4,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3.4,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 3.9
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient weighed at the edible recipe amount.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Model all weighed edible ingredient nutrients as retained; boiled potato nutrient loss is not separately quantified."
+    },
+    {
+      "item": "suolaa",
+      "amount": 1,
+      "unit": "g",
+      "state": "iodised table salt",
+      "matchEvidence": "Fineli 30, iodised table salt, weighed directly.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "iodised table salt",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient weighed at the edible recipe amount.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Model all weighed edible ingredient nutrients as retained; boiled potato nutrient loss is not separately quantified."
+    }
+  ]
+}
