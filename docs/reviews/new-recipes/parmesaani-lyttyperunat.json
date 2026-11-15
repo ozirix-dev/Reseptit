@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "recipe_id": "parmesaani-lyttyperunat",
+  "source_path": "reseptit/alkuruoat/parmesaani-lyttyperunat.md",
+  "source_sha256": "66b71e8f2dc0af3ff35d5667e2620d0eeda575eb76a055ea0d925ec014f7a5e1",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/hygieeninen-toiminta/tuotanto--ja-kasittelyhygienia/jaahdyttaminen/",
+      "https://www.facebook.com/reel/2099371900782971",
+      "https://www.k-ruoka.fi/reseptit/litistetyt-parmesaaniperunat"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/parmesaani-lyttyperunat.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistin päähaaran otsikko-, tunniste- ja Reel-hakutulokset. Luonnos #649 on tämän reseptin pohja."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Toimituksellinen katselmointi vertasi videon ainesosia ja täydensi punnitut määrät tai tilavuudet kirjallisella vertailuohjeella."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kuivat, litistetyt perunat paahdetaan väljästi pellillä 200 °C:ssa. K-Ruoan vastaava ohje tukee keitettyjen perunoiden litistämistä ja paahtamista parmesaanin kanssa."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kotona etukäteen keitetyt perunat jäähdytetään nopeasti matalassa astiassa ja säilytetään kylmässä. Maito on merkitty allergeeniksi."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Vertailun annos on neljän hengen lisuke ja ilmoitettu aika koskee etukäteen keitettyjä perunoita."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Parmesaanille ja valkosipulijauheelle puuttuu varmennettu polyoliarvo. Julkisia makroarvoja ei anneta."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmiille reseptille ei ole hyväksyttyä GI-lähdettä. Numeerinen glykeeminen kuorma jätetään määrittämättä."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/hygieeninen-toiminta/tuotanto--ja-kasittelyhygienia/jaahdyttaminen/"
+    ],
+    "image_path": "kuvat/alkuruoat/parmesaani-lyttyperunat.webp",
+    "image_sha256": "c5a44a796aaec1857df1b4c6f5111e8f5fe725e9b6e44bd25b738006b55a85f0",
+    "image_review": "Havainnekuvituksessa on reseptin mukainen perunapelti tai lämmin latte pakastettuine kahviannoksineen.",
+    "physical_cook_test": false
+  }
+}

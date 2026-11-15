@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "recipe_id": "piparkakkulatte-hunajalla",
+  "source_path": "reseptit/aamupalat/piparkakkulatte-hunajalla.md",
+  "source_sha256": "a0975247fe7e55a6a4a3f0944e416b3ab1bdbc876091cf7cff6692fb1e9a2308",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://savannahbee.com/blogs/recipes/honey-dalgona",
+      "https://www.facebook.com/reel/1329386712576464"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/piparkakkulatte-hunajalla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistin päähaaran otsikko-, tunniste- ja Reel-hakutulokset. Luonnos #649 on tämän reseptin pohja."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Toimituksellinen katselmointi vertasi videon ainesosia ja täydensi punnitut määrät tai tilavuudet kirjallisella vertailuohjeella."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Vertailuohjeen tasatilavuussuhde pikakahville, hunajalle ja vedelle toimii vatkattavan seoksen lähtökohtana. Ohje jatkuu Reelin tapaan maustamisella, annospakastuksella ja kuumaan maitoon sekoittamisella."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Maito ilmoitetaan allergeenina ja hunajaa ei anneta alle yksivuotiaille. Kahvivaahto pakastetaan ja maito kuumennetaan annos kerrallaan."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Ohje tekee neljä pakastettavaa annosta, yksi annos sekoitetaan 2 desilitraan maitoa. Kokonaisaika sisältää vähintään kaksi tuntia pakastamista."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Pikakahvin, hunajan ja mausteiden polyolitiedot puuttuvat. Tilavuuspainot ovat annosarvioita. Julkisia makroarvoja ei anneta."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmiille reseptille ei ole hyväksyttyä GI-lähdettä. Numeerinen glykeeminen kuorma jätetään määrittämättä."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/"
+    ],
+    "image_path": "kuvat/aamupalat/piparkakkulatte-hunajalla.webp",
+    "image_sha256": "a41523d2353499e7136df1ae012011e40bdbdd225cf623965277ecf3a2f6e056",
+    "image_review": "Havainnekuvituksessa on reseptin mukainen perunapelti tai lämmin latte pakastettuine kahviannoksineen.",
+    "physical_cook_test": false
+  }
+}
