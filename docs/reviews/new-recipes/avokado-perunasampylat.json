@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "recipe_id": "avokado-perunasampylat",
+  "source_path": "reseptit/leivonnaiset/avokado-perunasampylat.md",
+  "source_sha256": "82d7dcb73a3a42a905c2a9216ef63a23da3b592e396da31c62f741909e5acfbc",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.facebook.com/reel/1129552859726321",
+      "https://www.umami.recipes/nb/recipe/kF6L9DiBi7Pa5pFrEi0S?start=true"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/avokado-perunasampylat.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistin päähaaran aiemman sisällön reseptitunnisteella, otsikolla ja Reel-tunnisteella. Tämä on PR:n #640 avokado-perunaluonnoksen julkaisuversio."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Reel ja Crosbie Fowlerin vastaava ohje tukevat perunaa, avokadoa, munaa, kreikkalaista jogurttia, leivinjauhetta, suolaa, keltuaista ja seesamia. Grammamäärät ovat tämän version sovitus."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Vertailuohje tukee uunipaistoa samalle ainesyhdistelmälle. Tässä kuusi pienempää annosta paistetaan muffinivuoissa, jotka pitävät pehmeän massan muodossa. Paistoaika on arvio ja kypsyys tarkistetaan keskustasta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Munaa sisältävän massan keskusta kypsennetään vähintään 71 °C:seen. Muna, maito ja seesami on ilmoitettu allergeeneina."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Noin 422 gramman taikinasta tulee kuusi noin 70 gramman annosta ennen kuorrutusta. 90 minuutin arvio sisältää perunan keittämisen, paiston ja jäähdytyksen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kahdeksan ainesriviä sidottu punnittuun ohjeeseen ja Fineli-lähteisiin. Leivinjauheen polyolitietoa ja voitelun toteutunutta määrää ei ole varmistettu. Julkisia makroja ei anneta."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmiille perunaa, avokadoa ja munaa sisältävälle sämpylälle ei ole osoitettu reseptiversioon soveltuvaa GI-lähdettä. Julkinen GK jää määrittämättä."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ],
+    "image_path": "kuvat/leivonnaiset/avokado-perunasampylat.webp",
+    "image_sha256": "7115f3e5324a0e2fa541f5457971172b88cd1dc9b62f107221848eacfcce2980",
+    "image_review": "Kuvitus näyttää kuvatun pyöreän, seesamipintaisen vuokasämpylän.",
+    "physical_cook_test": false
+  }
+}
