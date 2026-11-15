@@ -23,7 +23,7 @@ Cloudflare D1 ja R2 OTETAAN KÄYTTÖÖN Recipavon tuotearkkitehtuurissa. Tämä 
 - PR #243 (merged) ja docs/recipavo-cloudflare-release-plan.md määrittelevät Pagesin ja GitHub-stagingin julkaisu- ja SEO-rajat.
 - ReportHubin 15.11.2026 tuotantoavausraportin mukaan Recipavo on jo Cloudflare Pages -projektissa recipavo-site, canonical www.recipavo.com. Tarkista ajantasainen tuotanto itse.
 - PR #533 (Draft) GI/GK-arkkitehtuuriauditointi ja PR #555 (Draft) nykytilarekisteri ovat päätöspohjia, EIVÄT kilpailevia toteutuksia.
-- [PR #664](https://github.com/ozirix-dev/Reseptit/pull/664) pilotoi #555:n nykytilanäkymää. Alla oleva syötesopimus on verrattu sen katselmoituun [versioon](https://github.com/ozirix-dev/Reseptit/blob/6f1c48867fd4ab3d3e20de37e158b41b1eebbabb/docs/architecture/recipe-state-pilot.md). Toteutuksessa käytetään hyväksytystä lähdecommitista rakennettua versiota.
+- [PR #664](https://github.com/ozirix-dev/Reseptit/pull/664) toi #555:n nykytilanäkymän mainiin. Alla oleva syötesopimus on verrattu [yhdistettyyn versioon](https://github.com/ozirix-dev/Reseptit/blob/3559e340281162c50eb249d3dcac9a7af2d90941/docs/architecture/recipe-state-pilot.md). Toteutuksessa näkymä generoidaan kunkin hyväksytyn julkaisun lähdecommitista.
 - Git-inventaarion 438 WebP-pääkuvaa kuvaa lähdepuuta. Katselmoinnin tuotantoversiossa
   `be1771f4a7c56b0f07b861a37b55f248595778e9` julkinen kuvamanifesti sisälsi 389 pääkuvaa ja 1 023 varianttia. R2-tuonnin rajaus johdetaan julkaistavasta buildista. Tuotannon R2-käyttö jäi varmistamatta.
 - Vanha julkaisusuunnitelma ehdotti kuvat.recipavo.com-hostia. Älä muuta tuotantodomainia tai kuvien URL-rakennetta ennen yhteensopivuustodistusta ja julkaisupäätöstä.
