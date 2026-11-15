@@ -65,6 +65,13 @@ test("Finnish source owns the extra categories on all four language routes", () 
     const payload = contentForRoute(inherited, route);
     assert.equal(payload.recipes.length, 1);
     assert.deepEqual(parseRouteContent(JSON.parse(JSON.stringify(payload)), route), payload);
+    const invalid = JSON.parse(JSON.stringify(payload));
+    invalid.recipes[0].additionalCategories = ["not-a-category"];
+    assert.throws(() => parseRouteContent(invalid, route), /Invalid recipe page data/);
+    invalid.recipes[0].additionalCategories = ["aamupala", "aamupala"];
+    assert.throws(() => parseRouteContent(invalid, route), /Invalid recipe page data/);
+    invalid.recipes[0].additionalCategories = ["alkuruoka"];
+    assert.throws(() => parseRouteContent(invalid, route), /Invalid recipe page data/);
     assert.deepEqual(filterRecipes(payload.recipes, { ...emptyRecipeFilters, category: "aamupala" }, locale).map(item => item.recipeId), ["hummus"]);
     assert.equal(contentForRoute(inherited, recipe.routePath).recipe?.recipeId, "hummus");
   }
