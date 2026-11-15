@@ -2,10 +2,6 @@ import type { RecipeLocale } from "@/types/content";
 
 export const recipeLibraryPageSize = 24;
 
-/**
- * Future catalogue routes. Current recipe detail routes and existing language
- * indexes are intentionally unchanged until the H2 route/SEO integration.
- */
 export const recipeLibraryRoots: Readonly<Record<RecipeLocale, string>> = {
   fi: "/reseptit/",
   en: "/en/recipes/all/",
@@ -32,10 +28,11 @@ export function recipeLibraryPagePath(locale: RecipeLocale, page = 1): string {
   return `${recipeLibraryRoots[locale]}${pageSegments[locale]}/${page}/`;
 }
 
-/**
- * Exact matches only: no /page/1/, /page/02/, unknown locale or misspelt
- * path aliases. The router will use this in H2 for real 404 responses.
- */
+export function recipeLibraryPagePattern(locale: RecipeLocale): string {
+  return recipeLibraryRoots[locale] + pageSegments[locale] + "/:page";
+}
+
+// Exact canonical paths only. Page 1 uses the library root.
 export function parseRecipeLibraryPagePath(path: string): RecipeLibraryPage | null {
   const pathname = path.split(/[?#]/, 1)[0];
   if (!pathname.startsWith("/") || !pathname.endsWith("/") || pathname.includes("//")) return null;

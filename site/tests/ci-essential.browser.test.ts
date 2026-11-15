@@ -5,6 +5,7 @@ import test from "node:test";
 import { launchBrowser } from "./launch-browser";
 import { recipeUi } from "../src/features/recipes/recipe-i18n";
 import { siteContent } from "../src/generated/content.generated";
+import { paginateRecipeLibrary, recipeLibraryPagePath, recipeLibraryPageSize } from "../src/features/recipes/recipe-pagination";
 
 const base = "http://127.0.0.1:4192/Reseptit";
 const routes = ["/", "/en/recipes/", "/sv/recept/", "/th/recipes/"];
@@ -46,6 +47,7 @@ test("essential UI smoke: locales, search, a recipe, blog and no-JS navigation",
       await page.setViewportSize({ width, height: 844 });
       await page.goto(base + route + "?diet=vegan");
       await page.waitForFunction(() => document.querySelector<HTMLSelectElement>("#recipe-diet")?.value === "vegan");
+      await page.locator(".recipe-card__link").first().waitFor();
       const expectedVegan = siteContent.recipes.filter(item => item.locale === locale && item.dietTags?.includes("vegan")).length;
       assert.ok(expectedVegan >= 2, locale + " retains the pilot vegan recipes");
       assert.equal(await page.locator(".recipe-card-grid .recipe-card").count(), expectedVegan, locale + " lists only reviewed vegan recipes");
@@ -85,11 +87,48 @@ test("essential UI smoke: locales, search, a recipe, blog and no-JS navigation",
       assert.equal(await page.locator("#recipe-diet").inputValue(), "all");
       assert.equal(await page.locator("#recipe-gluten-free").isChecked(), false);
     }
+    // The cards on the first library page are independent of search ordering.
+    // Find a recipe outside the homepage in every locale by its published title.
+    for (const [index, route] of routes.entries()) {
+      const locale = (["fi", "en", "sv", "th"] as const)[index];
+      await page.goto(base + route);
+      const initialCards = await page.locator(".recipe-card__link").evaluateAll(links =>
+        links.map(link => (link as HTMLAnchorElement).pathname));
+      assert.equal(initialCards.length, recipeLibraryPageSize);
+      const outsideHome = siteContent.recipes.filter(recipe => recipe.locale === locale)
+        .reverse().find(recipe => !initialCards.includes("/Reseptit" + recipe.routePath))!;
+      assert.ok(outsideHome);
+      await page.locator("#recipe-search").fill(outsideHome.title);
+      await page.locator('.recipe-card__link[href="/Reseptit' + outsideHome.routePath + '"]').waitFor();
+      await page.goto(base + route);
+      const firstRecipeLink = (number: number) => {
+        const first = paginateRecipeLibrary(siteContent.recipes, locale, number).items[0];
+        return page.locator('.recipe-card__link[href="/Reseptit' + first.routePath + '"]');
+      };
+      await page.locator(".recipe-library-link a").click();
+      await page.waitForURL(base + recipeLibraryPagePath(locale));
+      await firstRecipeLink(1).waitFor();
+      await page.locator('.recipe-pagination a[rel="next"]').click();
+      await page.waitForURL(base + recipeLibraryPagePath(locale, 2));
+      await firstRecipeLink(2).waitFor();
+      await page.goBack();
+      await page.waitForURL(base + recipeLibraryPagePath(locale));
+      await firstRecipeLink(1).waitFor();
+    }
+
+    await page.goto(base + "/?time=90");
+    await page.locator('.recipe-pagination a[rel="next"]').click();
+    await page.waitForURL("**/?time=90&page=2");
+    await page.locator(".recipe-pagination").getByText(/^Sivu 2 /).waitFor();
+    const resultPage = await page.locator(".recipe-card__link").first().getAttribute("href");
+    await page.reload();
+    await page.locator('.recipe-card__link[href="' + resultPage + '"]').waitFor();
+
     await page.setViewportSize({ width: 390, height: 844 });
 
     await page.goto(base + "/?q=lohi");
     await page.waitForFunction(() => document.querySelector<HTMLInputElement>("#recipe-search")?.value === "lohi");
-    assert.ok(await page.locator(".recipe-card__link").count() > 0, "search has results");
+    await page.locator(".recipe-card__link").first().waitFor();
     await page.locator(".recipe-card__link").first().click();
     await page.locator(".ingredient-list li").first().waitFor();
     await page.goto(base + "/ruokaopas/");
@@ -99,6 +138,10 @@ test("essential UI smoke: locales, search, a recipe, blog and no-JS navigation",
     const noJs = await browser.newPage({ javaScriptEnabled: false });
     await noJs.goto(base + "/");
     assert.ok(await noJs.locator(".recipe-card__link").count() > 0, "prerendered recipe links");
+    await noJs.locator(".recipe-library-link a").click();
+    assert.equal(new URL(noJs.url()).pathname, "/Reseptit" + recipeLibraryPagePath("fi"));
+    await noJs.locator('.recipe-pagination a[rel="next"]').click();
+    assert.equal(new URL(noJs.url()).pathname, "/Reseptit" + recipeLibraryPagePath("fi", 2));
     await noJs.locator(".recipe-card__link").first().click();
     await noJs.locator(".ingredient-list li").first().waitFor();
     await noJs.close();

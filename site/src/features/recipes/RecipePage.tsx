@@ -1,7 +1,6 @@
 import { EstimateDetails, EstimateSummary, MissingEstimate } from "../glycemic-load/GlycemicLoadEvidence";
 import { gkCopy } from "../glycemic-load/glycemic-load-copy";
 import { ChocolateComparison } from './ChocolateComparisonFi';
-import {gkOnlyVariants} from '@/generated/gk-only-variants.generated';
 import {GkOnlyVariantPanel,gkScopeUi} from './GkOnlyVariantPanel';
 import {scopedPolyolDisclosure} from './scoped-polyol-disclosure';
 import {recoveryDisclosure} from './recovery-disclosure';
@@ -13,7 +12,6 @@ import { useContent } from "@/lib/content";
 import { glycemicLoadPath, recipeIndexPath, recipeLocaleFromPath, recipeLocaleName, recipeUi } from "./recipe-i18n";
 import { formatIngredientAmount, nextServingCount } from "./servings";
 import { toolUi } from "./recipe-tools";
-import { glycemicLoadPilotResults } from "@/generated/glycemic-load-pilot.generated";
 import { publishedGlycemicLoadForRecipe } from "./glycemic-load-display";
 import { sourceReviewNotice } from "./source-review-notices";
 import { withholdF25Nutrition, f25ExplicitUndefinedGkLabel } from "./f25-nutrition-withhold";
@@ -22,7 +20,7 @@ import { track } from "@/features/privacy/analytics";
 
 export function RecipePage() {
   const { pathname } = useLocation();
-  const { recipe, translations } = useContent();
+  const { recipe, translations, glycemicRecipe } = useContent();
   const [servings, setServings] = useState(recipe?.servings ?? 1);
   const [hydrated, setHydrated] = useState(false);
   const [completed, setCompleted] = useState<number[]>([]);
@@ -44,13 +42,14 @@ export function RecipePage() {
     : originalReviewNotice;
   const withholdNutrition = withholdF25Nutrition(recipe.recipeId,recipe.locale);
   const undefinedGkLabel = f25ExplicitUndefinedGkLabel(recipe.recipeId,recipe.locale);
-  const gkVariants = gkOnlyVariants.filter(variant => variant.recipeId === recipe.recipeId);
+  const gkVariants = glycemicRecipe?.variants ?? [];
+  const gkResult = glycemicRecipe?.result;
   const hasGkVariant = gkVariants.length > 0;
   const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale];
   const nutritionItems = (withholdNutrition ? [] : Object.entries(recipe.nutrition).filter(([, value]) => value !== null)) as [keyof typeof recipe.nutrition, number][];
   const glApprox = { fi: "noin ", en: "about ", sv: "cirka ", th: "ประมาณ " }[recipe.locale];
   const glUnit = { fi: "/ annos", en: "/ serving", sv: "/ portion", th: "/ หนึ่งที่" }[recipe.locale];
-  const glycemicLoad = withholdNutrition ? null : publishedGlycemicLoadForRecipe(recipe.recipeId, glycemicLoadPilotResults);
+  const glycemicLoad = withholdNutrition || !gkResult ? null : publishedGlycemicLoadForRecipe(recipe.recipeId, [gkResult]);
   const glFormat=(value:number)=>formatGlycemicLoadNumber(value,numberLocale,!!glycemicLoad?.assessmentType);
   const modelledLabel = { fi: "Mallinnettu", en: "Modeled", sv: "Modellerad", th: "ค่าประมาณจากแบบจำลอง" }[recipe.locale];
   const modelledNote = glycemicLoad && glycemicLoad.omittedAvailableCarbohydratePerServingG > 0
@@ -113,7 +112,7 @@ export function RecipePage() {
               glycemicLoad.boundedPolyolC ? <p>{scopedPolyolDisclosure[locale]}</p> : undefined}
           />
         </div> : <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status="UNAVAILABLE">
-          <MissingEstimate locale={locale} result={glycemicLoadPilotResults.find(result => result.recipeId === recipe.recipeId) ?? { incompleteReasons: [] }} />
+          <MissingEstimate locale={locale} result={gkResult ?? { incompleteReasons: [] }} />
         </div>}
         {recipe.dietClass ? <p className="recipe-disclosure">{tools.diet}</p> : null}</section>
       {gkVariants.map(variant => <GkOnlyVariantPanel key={variant.versionId}

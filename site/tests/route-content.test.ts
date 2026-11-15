@@ -4,16 +4,37 @@ import { readFile, readdir } from "node:fs/promises";
 import { siteContent } from "../src/generated/content.generated";
 import { contentForRoute, localeIndexes, serializeRouteContent } from "../src/content/route-data";
 import { parseRouteContent } from "../src/lib/load-content";
+import { recipeLibraryPageSize, recipeLibraryPagePath } from "../src/features/recipes/recipe-pagination";
 import { recipeJsonLd } from "../src/features/recipes/schema";
 import { f25UnverifiedNutritionSourceIds, withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 
 test("each index contains only its language's summaries and no instructions", () => {
   for (const [locale, route] of Object.entries(localeIndexes)) {
     const data = contentForRoute(siteContent.recipes, route);
-    assert.equal(data.recipes.length, siteContent.recipes.filter((r) => r.locale === locale).length);
+    assert.equal(data.recipes.length, Math.min(recipeLibraryPageSize, siteContent.recipes.filter((r) => r.locale === locale).length));
     assert.ok(data.recipes.every((r) => r.locale === locale && !("instructionsHtml" in r) && !("nutrition" in r)));
     assert.equal(data.recipe, null);
     assert.deepEqual(parseRouteContent(data, route), data);
+  }
+});
+
+test("library pages cover every published recipe exactly once in each language", () => {
+  for (const locale of Object.keys(localeIndexes) as (keyof typeof localeIndexes)[]) {
+    const first = contentForRoute(siteContent.recipes, recipeLibraryPagePath(locale));
+    assert.ok(first.pagination);
+    const all = [];
+    for (let page = 1; page <= first.pagination.totalPages; page++) {
+      const data = contentForRoute(siteContent.recipes, recipeLibraryPagePath(locale, page));
+      assert.equal(data.pagination?.page, page);
+      assert.equal(data.pagination?.previousPath, page === 1 ? null : recipeLibraryPagePath(locale, page - 1));
+      assert.equal(data.pagination?.nextPath, page === first.pagination.totalPages ? null : recipeLibraryPagePath(locale, page + 1));
+      assert.ok(data.recipes.length <= recipeLibraryPageSize);
+      all.push(...data.recipes.map(recipe => recipe.recipeId));
+    }
+    assert.deepEqual(all, siteContent.recipes.filter(recipe => recipe.locale === locale).map(recipe => recipe.recipeId).sort());
+    const missing = contentForRoute(siteContent.recipes, recipeLibraryPagePath(locale, first.pagination.totalPages + 1));
+    assert.equal(missing.pagination, undefined);
+    assert.deepEqual(missing.recipes, []);
   }
 });
 
@@ -45,7 +66,10 @@ test("client source never imports the full generated content index", async () =>
       if (entry.name === "generated") continue;
       const url = new URL(entry.name + (entry.isDirectory() ? "/" : ""), dir);
       if (entry.isDirectory()) await visit(url);
-      else if (/\.tsx?$/.test(entry.name)) assert.doesNotMatch(await readFile(url, "utf8"), /from\s+["'][^"']*content\.generated/);
+      else if (/\.tsx?$/.test(entry.name)) {
+        const source = (await readFile(url, "utf8")).replace(/^import type .*$/gm, "");
+        assert.doesNotMatch(source, /from\s+["'][^"']*(?:content|glycemic-load-pilot|gk-only-variants)\.generated/);
+      }
     }
   }
   await visit(new URL("../src/", import.meta.url));

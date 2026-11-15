@@ -74,7 +74,18 @@ export function recipeFiltersToSearch(filters: RecipeFilters): string {
   return search ? `?${search}` : "";
 }
 
-export function filterRecipes<T extends RecipeSummary>(recipes: T[], filters: RecipeFilters, locale: RecipeLocale, glCategories: Readonly<Record<string, GlycemicLoadFilterCategory>> = {}): T[] {
+export type SearchRecipe = Omit<RecipeSummary, "ingredients" | "tags"> & { searchText: string };
+
+export function recipeSearchEntry(recipe: RecipeSummary): SearchRecipe {
+  const { ingredients, tags, ...card } = recipe;
+  const searchText = normalizeSearchText([
+    recipe.title, ingredients.map(({ item, note }) => note ? item + " " + note : item).join(" "),
+    recipe.description, tags.join(" "),
+  ].join(" "), recipe.locale);
+  return { ...card, searchText };
+}
+
+export function filterRecipes<T extends RecipeSummary | SearchRecipe>(recipes: T[], filters: RecipeFilters, locale: RecipeLocale, glCategories: Readonly<Record<string, GlycemicLoadFilterCategory>> = {}): T[] {
   const terms = normalizeSearchText(filters.query, locale).split(" ").filter(Boolean);
   return recipes.filter((recipe) => {
     if (filters.maxTime && (recipe.timeTotalMin === null || recipe.timeTotalMin > filters.maxTime)) return false;
@@ -87,12 +98,7 @@ export function filterRecipes<T extends RecipeSummary>(recipes: T[], filters: Re
     if (filters.diet === "vhh" && !recipe.dietClass) return false;
     if (filters.diet !== "all" && filters.diet !== "keto" && filters.diet !== "vhh" && !recipe.dietTags?.includes(filters.diet)) return false;
     if (!terms.length) return true;
-    const haystack = normalizeSearchText([
-      recipe.title,
-      recipe.ingredients.map((ingredient) => `${ingredient.item} ${ingredient.note ?? ""}`).join(" "),
-      recipe.description,
-      recipe.tags.join(" "),
-    ].join(" "), locale);
+    const haystack = "searchText" in recipe ? recipe.searchText : recipeSearchEntry(recipe).searchText;
     return terms.every((term) => haystack.includes(term));
   });
 }

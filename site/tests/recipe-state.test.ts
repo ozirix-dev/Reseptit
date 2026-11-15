@@ -4,6 +4,8 @@ import path from "node:path";
 import { before, test } from "node:test";
 import type { RouteContent } from "../src/content/route-data";
 import { localeIndexes } from "../src/content/route-data";
+import { parseRecipeLibraryPagePath } from "../src/features/recipes/recipe-pagination";
+import type { SearchRecipe } from "../src/features/recipes/recipe-search";
 import { contentManifest } from "../src/generated/routes.generated";
 import { f25SourceGatePreflight } from "../scripts/f25-source-release-gate";
 import { publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
@@ -33,7 +35,17 @@ test("state is deterministic, and every catalog entry and recipe payload agrees 
   assert.equal(JSON.stringify(projectRecipeState(commit, await readRecipeStateInputs(commit))), JSON.stringify(state));
   const projectedRoutes = state.recipes.flatMap(row => row.languages.flatMap(locale => locale.route ? [locale.route] : []));
   const catalogs = await Promise.all(Object.values(localeIndexes).filter(route => contentManifest[route]).map(readPayload));
-  assert.deepEqual(projectedRoutes.sort(), catalogs.flatMap(catalog => catalog.recipes.map(recipe => recipe.routePath)).sort());
+  const searchIndexes = await Promise.all(catalogs.map(async ({ catalog }) => {
+    assert.ok(catalog);
+    const data: SearchRecipe[] = JSON.parse(await readFile(path.join(repoRoot, "site/public/data", catalog.searchFile), "utf8"));
+    assert.equal(data.length, catalog.total);
+    return data;
+  }));
+  const libraryPaths = Object.keys(contentManifest).filter(route => parseRecipeLibraryPagePath(route));
+  const libraryPages = await Promise.all(libraryPaths.map(readPayload));
+  const expectedRoutes = projectedRoutes.sort();
+  assert.deepEqual(searchIndexes.flat().map(recipe => recipe.routePath).sort(), expectedRoutes);
+  assert.deepEqual(libraryPages.flatMap(page => page.recipes.map(recipe => recipe.routePath)).sort(), expectedRoutes);
 
   const published = state.recipes.filter(row => row.publicSlug);
   assert.ok(published.length > 0);

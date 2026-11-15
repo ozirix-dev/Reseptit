@@ -5,6 +5,7 @@ import path from "node:path";
 import { auditSeo, expectedPages, inspectPage, inspectDiscovery, blockedByRobots, inspectNotFound, siteBase } from "../scripts/seo-audit";
 import { siteContent } from "../src/generated/content.generated";
 import { contentManifest } from "../src/generated/routes.generated";
+import { recipeLibraryPagePath } from "../src/features/recipes/recipe-pagination";
 
 const dist = path.resolve(import.meta.dirname, "../dist");
 test("HTTP 200 discovery bodies must contain the expected sitemap and crawling policy", () => {
@@ -28,7 +29,9 @@ test("all generated routes, images, sitemap and metadata match published source"
 });
 test("inventory is dynamic and duplicate URLs are rejected", async () => {
   const recipe = siteContent.recipes[0];
-  assert.equal(expectedPages([recipe]).length, 6 + 13 + 4);
+  const withOneRecipe = expectedPages([recipe]);
+  assert.equal(withOneRecipe.length, expectedPages([]).length + 3, "adds the localized index, library and recipe");
+  assert.ok(withOneRecipe.some(page => page.route === recipeLibraryPagePath(recipe.locale)));
   const report = await auditSeo(dist, [...siteContent.recipes, recipe], Object.keys(contentManifest));
   assert.ok(report.findings.some((f) => f.code === "DUPLICATE_ROUTE"));
 });

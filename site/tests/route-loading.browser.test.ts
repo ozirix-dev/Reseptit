@@ -31,7 +31,12 @@ test("bounded page data, navigation cache, failures, history and multilingual st
     page.on("pageerror", (error) => errors.push(error.message));
     page.on("console", (message) => { if (message.type() === "error") errors.push(message.text()); });
     const dataRequests: string[] = [];
-    page.on("request", (request) => { if (request.url().includes("/data/")) dataRequests.push(request.url()); });
+    const searchRequests: string[] = [];
+    page.on("request", request => {
+      const url = request.url();
+      if (url.includes("/data/search-")) searchRequests.push(url);
+      else if (url.includes("/data/")) dataRequests.push(url);
+    });
     for (const [locale, index] of Object.entries(localeIndexes)) {
       const recipe = siteContent.recipes.find((r) => r.locale === locale)!;
       for (const route of [index, recipe.routePath]) {
@@ -61,21 +66,36 @@ test("bounded page data, navigation cache, failures, history and multilingual st
       await noJs.close();
     }
     assert.equal(dataRequests.length, 0, "direct routes hydrate embedded data without a JSON waterfall");
+    assert.equal(searchRequests.length, 0, "unfiltered browsing never downloads the search index");
     await page.goto(`${base}/?q=lohi`);
     await page.waitForFunction(() => document.querySelector<HTMLInputElement>("#recipe-search")?.value === "lohi");
     await page.locator(".recipe-card__link").first().click();
     await page.locator(".ingredient-list").waitFor();
     assert.equal(dataRequests.length, 1);
+    assert.equal(searchRequests.length, 1);
+    assert.match(searchRequests[0], /search-fi-/);
     await page.goBack();
     await page.waitForFunction(() => document.querySelector<HTMLInputElement>("#recipe-search")?.value === "lohi");
     const requestsBeforeTyping = dataRequests.length;
     await page.locator("#recipe-search").fill("kukkakaali");
     await page.waitForFunction(() => location.search.includes("kukkakaali"));
     assert.equal(dataRequests.length, requestsBeforeTyping);
+    assert.equal(searchRequests.length, 1, "refining a search reuses the locale index");
     await page.locator(".site-language-nav a[lang=en]").click();
     await page.getByRole("searchbox", { name: "Search recipes" }).waitFor();
     assert.equal(dataRequests.length, requestsBeforeTyping + 1);
     assert.deepEqual(errors, []);
+
+    const retry = await context.newPage();
+    await retry.goto(base + "/");
+    await retry.route("**/data/search-fi-*.json", route => route.fulfill({ status: 503 }));
+    await retry.locator("#recipe-search").fill("lohi");
+    await retry.getByRole("alert").waitFor();
+    assert.equal(await retry.getByRole("alert").textContent(), "Hakua ei voitu ladata.");
+    await retry.unroute("**/data/search-fi-*.json");
+    await retry.getByRole("button", { name: "Yritä uudelleen" }).click();
+    await retry.locator(".recipe-card__link").first().waitFor();
+    await retry.close();
 
     // A failed JSON fetch must expose a retry link, never replace the page with blank output.
     for (const body of ["missing", "not-json", '{"path":"/sv/recept/"}']) {

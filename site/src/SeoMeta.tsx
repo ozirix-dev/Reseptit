@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { recipeJsonLd } from "@/features/recipes/schema";
+import { libraryCopy, libraryTitle } from "@/features/recipes/home-preview";
 import { isRecipavoHeroEnabled, isRecipavoHeroPreviewEnabled, recipavoHeroCopy } from "@/features/recipes/recipavo-hero";
 import { glycemicLoadMeta, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
 import { useContent } from "@/lib/content";
@@ -36,7 +37,7 @@ function normalizeRoutePath(path: string): string {
 export function SeoMeta() {
   const { pathname } = useLocation();
 
-  const { recipe, translations, locales } = useContent();
+  const { recipe, translations, locales, pagination } = useContent();
 
   useEffect(() => {
     const normalizedPath = normalizeRoutePath(pathname);
@@ -50,15 +51,15 @@ export function SeoMeta() {
     const isBlog = !!blogPost || blogIndex;
     const privacyLocale = privacyLocaleFromPath(pathname);
     const privacy = privacyLocale ? privacyCopy[privacyLocale] : null;
-    const known = privacy !== null || recipe !== null || indexExists || isPilotPage || isBlog;
+    const known = pagination !== undefined || privacy !== null || recipe !== null || indexExists || isPilotPage || isBlog;
     const branded = isRecipavoHeroEnabled();
     // Keep unknown deep links' metadata in the same locale as the visible not-found page.
-    const locale = privacyLocale ?? recipe?.locale ?? methodLocale ?? (isBlog ? "fi" : routeLocale) ?? recipeLocaleFromPath(pathname);
-    const title = privacy ? `${privacy.title} | Recipavo` : branded && indexExists ? `${recipavoHeroCopy[locale].title} | Recipavo` : blogPost ? `${blogPost.title} | Ruokaopas` : blogIndex ? "Ruokaopas | Reseptit" : isPilotPage ? glycemicLoadMeta[locale].title : known
+    const locale = privacyLocale ?? recipe?.locale ?? pagination?.locale ?? methodLocale ?? (isBlog ? "fi" : routeLocale) ?? recipeLocaleFromPath(pathname);
+    const title = pagination ? libraryTitle(locale, pagination.page) : privacy ? `${privacy.title} | Recipavo` : branded && indexExists ? `${recipavoHeroCopy[locale].title} | Recipavo` : blogPost ? `${blogPost.title} | Ruokaopas` : blogIndex ? "Ruokaopas | Reseptit" : isPilotPage ? glycemicLoadMeta[locale].title : known
       ? recipe ? `${recipe.title} | ${titleByLocale[locale]}` : `${titleByLocale[locale]} | Ozirix`
       : `${recipeUi[locale].notFound} | ${titleByLocale[locale]}`;
-    const description = privacy?.description ?? (branded && indexExists ? recipavoHeroCopy[locale].intro : blogPost?.description ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined) ?? (isPilotPage ? glycemicLoadMeta[locale].description : recipe?.description || (!known ? recipeUi[locale].notFound : recipeUi[locale].intro)));
-    const canonical = privacyLocale ? `${siteBase}${privacyPaths[privacyLocale]}` : blogPost ? `${siteBase}${articlePath(blogPost)}` : blogIndex ? `${siteBase}${blogRoot}` : isPilotPage ? `${siteBase}${methodPaths[locale]}` : recipe ? `${siteBase}${recipe.routePath}` : indexExists ? `${siteBase}${indexPath(locale)}` : null;
+    const description = (pagination ? libraryCopy[locale].description : undefined) ?? privacy?.description ?? (branded && indexExists ? recipavoHeroCopy[locale].intro : blogPost?.description ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined) ?? (isPilotPage ? glycemicLoadMeta[locale].description : recipe?.description || (!known ? recipeUi[locale].notFound : recipeUi[locale].intro)));
+    const canonical = pagination ? siteBase + pagination.canonicalPath : privacyLocale ? `${siteBase}${privacyPaths[privacyLocale]}` : blogPost ? `${siteBase}${articlePath(blogPost)}` : blogIndex ? `${siteBase}${blogRoot}` : isPilotPage ? `${siteBase}${methodPaths[locale]}` : recipe ? `${siteBase}${recipe.routePath}` : indexExists ? `${siteBase}${indexPath(locale)}` : null;
     document.title = title;
     document.documentElement.lang = locale;
     upsertMeta("name", "description", description);
@@ -79,7 +80,7 @@ export function SeoMeta() {
       canonicalLink.href = canonical;
       document.head.append(canonicalLink);
     }
-    const alternates = !known ? [] : privacy ? (Object.keys(privacyPaths) as RecipeLocale[]).map(locale => ({ locale, path: privacyPaths[locale] })) : isBlog ? [{locale: "fi" as RecipeLocale, path: blogPost ? articlePath(blogPost) : blogRoot}] : isPilotPage ? (Object.keys(methodPaths) as RecipeLocale[]).map((entryLocale) => ({ locale: entryLocale, path: methodPaths[entryLocale] })) : recipe
+    const alternates = !known ? [] : pagination ? [{ locale, path: pagination.canonicalPath }] : privacy ? (Object.keys(privacyPaths) as RecipeLocale[]).map(locale => ({ locale, path: privacyPaths[locale] })) : isBlog ? [{locale: "fi" as RecipeLocale, path: blogPost ? articlePath(blogPost) : blogRoot}] : isPilotPage ? (Object.keys(methodPaths) as RecipeLocale[]).map((entryLocale) => ({ locale: entryLocale, path: methodPaths[entryLocale] })) : recipe
       ? translations.map((entry) => ({ locale: entry.locale, path: entry.routePath }))
       : (Object.keys(baseByLocale) as RecipeLocale[])
           .filter((entryLocale) => locales.includes(entryLocale))
@@ -119,7 +120,7 @@ export function SeoMeta() {
       script.textContent = JSON.stringify(recipeJsonLd(recipe));
       document.head.append(script);
     }
-  }, [pathname, recipe, translations, locales]);
+  }, [pathname, recipe, translations, locales, pagination]);
 
   return null;
 }

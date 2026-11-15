@@ -14,6 +14,8 @@ import { GkOnlyVariantPanel, gkOnlyValue, gkOnlyPreparation, studyServingTitle }
 import { GkCoverageSummary, coverageCopy } from '../src/features/glycemic-load/GkCoverageSummary';
 import { gkCopy } from '../src/features/glycemic-load/glycemic-load-copy';
 import { RecipePage } from '../src/features/recipes/RecipePage';
+import { gkOnlyVariants } from '../src/generated/gk-only-variants.generated';
+import { glycemicLoadPilotResults } from '../src/generated/glycemic-load-pilot.generated';
 import { siteContent } from '../src/generated/content.generated';
 import { glycemicLoadFilterCategories } from '../src/generated/glycemic-load-filters.generated';
 import { filterRecipes, emptyRecipeFilters } from '../src/features/recipes/recipe-search';
@@ -33,6 +35,10 @@ function recipeMarkup(recipeId: string, locale: typeof locales[number]) {
     ?? { ...siteContent.recipes.find(r => r.recipeId === recipeId && r.locale === 'fi')!, locale, routePath: `${localeIndexes[locale]}${recipeId}/` };
   assert.ok(original.recipeId);
   const data = contentForRoute([original], original.routePath);
+  data.glycemicRecipe = {
+    result: glycemicLoadPilotResults.find(result => result.recipeId === recipeId) ?? null,
+    variants: gkOnlyVariants.filter(variant => variant.recipeId === recipeId),
+  };
   const router = createMemoryRouter([{ id:'content', path:'*', element:createElement(RecipePage) }], {
     initialEntries:[original.routePath], hydrationData:{loaderData:{content:data}},
   });

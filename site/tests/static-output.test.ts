@@ -83,8 +83,8 @@ test("localized hero copy is prerendered above the recipe filters", async () => 
 test("recipe index is prerendered and links only published languages", async () => {
   const html = await readFile(path.join(dist, "index.html"), "utf8");
   assert.match(html, /<h1>Reseptit<\/h1>/);
-  assert.match(html, /<a class="recipe-card__link" href="\/Reseptit\/kermainen-lohipata\/"[\s\S]*?<h2 class="recipe-card__title">Kermainen lohipata<\/h2>/);
-  assert.match(html, /<a class="recipe-card__link" href="\/Reseptit\/keto-kauralesesampylat\/"[\s\S]*?<h2 class="recipe-card__title">Keto-kauralesesämpylät<\/h2>/);
+  assert.equal([...html.matchAll(/class="recipe-card__link"/g)].length, 24);
+  assert.match(html, /href="\/Reseptit\/reseptit\/"/);
   assert.match(html, /<div class="recipe-card-grid">/);
   assert.doesNotMatch(html, /<form class="recipe-filters" role="search"/);
   assert.doesNotMatch(html, /id="recipe-search"/);
@@ -512,6 +512,20 @@ test("responsive image metadata reaches every route, SEO and matching preloads",
     const payloadText = await readFile(path.join(dist, "data", filename), "utf8");
     assert.equal(filename, `${createHash("sha256").update(payloadText).digest("hex").slice(0, 20)}.json`);
     const payload = JSON.parse(payloadText);
+    const embedded = html.match(/<script id="page-content" type="application\/json">([\s\S]*?)<\/script>/);
+    assert.deepEqual(JSON.parse(embedded![1]), payload, route + ": SSR and navigation data match");
+    if (recipe) {
+      assert.ok(payload.glycemicRecipe);
+      assert.ok(!payload.glycemicRecipe.result || payload.glycemicRecipe.result.recipeId === recipe.recipeId);
+      assert.ok(payload.glycemicRecipe.variants.every((item: { recipeId: string }) => item.recipeId === recipe.recipeId));
+    } else {
+      assert.equal(payload.glycemicRecipe, undefined);
+    }
+    if (["/glykeeminen-kuorma/", "/en/glycemic-load/", "/sv/glykemisk-belastning/", "/th/glycemic-load/"].includes(route)) {
+      assert.ok(payload.glycemicOverview.results.length > 0);
+    } else {
+      assert.equal(payload.glycemicOverview, undefined);
+    }
     const expected = recipe ? [recipe] : payload.recipes;
     if (route.startsWith("/ruokaopas/")) {
       assert.equal(imgs.length, route === "/ruokaopas/" ? 12 : 1);
