@@ -3,6 +3,9 @@ title: "Paahtopaistileipä piparjuurikastikkeella"
 recipe_id: "paahtopaistileipa-piparjuurikastikkeella"
 url_slug: "paahtopaistileipa-piparjuurikastikkeella"
 category: "alkuruoka"
+additional_categories:
+  - aamupala
+  - valipala
 language: "fi"
 status: "draft"
 servings: 4
