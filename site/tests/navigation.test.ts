@@ -10,12 +10,12 @@ import { resolveSiteTarget } from "../src/content/site-target";
 const dist = path.resolve(import.meta.dirname, "../dist");
 
 test("recipe route normalization follows the deployment base", () => {
-  const legacy = resolveSiteTarget();
+  const local = resolveSiteTarget();
   const preview = resolveSiteTarget("https://v1.recipavo-v1-preview.pages.dev");
-  assert.equal(normalizePath("/Reseptit/en/recipes/?q=rice", legacy.basePath), "/en/recipes/");
+  assert.equal(normalizePath("/en/recipes/?q=rice", local.basePath), "/en/recipes/");
   assert.equal(normalizePath("/en/recipes/?q=rice", preview.basePath), "/en/recipes/");
   assert.equal(normalizePath("/Reseptit/en/recipes/", preview.basePath), "/Reseptit/en/recipes/");
-  assert.equal(legacy.noIndex, true);
+  assert.equal(local.noIndex, true);
   assert.equal(preview.noIndex, true);
   assert.throws(() => resolveSiteTarget("https://www.recipavo.com"));
   assert.deepEqual(resolveSiteTarget(undefined, "production"), {
@@ -52,8 +52,8 @@ test("all locale indexes expose two separate semantic navigation groups", async 
     assert.match(html, /class="site-language-nav" aria-label="/, route);
     assert.equal((html.match(/class="site-primary-nav"/g) ?? []).length, 1, route);
     assert.equal((html.match(/class="site-language-nav"/g) ?? []).length, 1, route);
-    assert.match(html, /href="\/Reseptit\/ruokaopas\/"/);
-    assert.match(html, /href="\/Reseptit\/(glykeeminen-kuorma|en\/glycemic-load|sv\/glykemisk-belastning|th\/glycemic-load)\/"/, route);
+    assert.match(html, /href="\/ruokaopas\/"/);
+    assert.match(html, /href="\/(glykeeminen-kuorma|en\/glycemic-load|sv\/glykemisk-belastning|th\/glycemic-load)\/"/, route);
   }
 });
 

@@ -1,3 +1,4 @@
+import { siteTarget } from "../src/content/site-target";
 import assert from "node:assert/strict";
 import test from "node:test";
 import { spawn } from "node:child_process";
@@ -8,7 +9,7 @@ import { siteContent } from "../src/generated/content.generated";
 import { localeIndexes } from "../src/content/route-data";
 
 test("bounded page data, navigation cache, failures, history and multilingual static HTML", async () => {
-  const base = "http://127.0.0.1:4175/Reseptit";
+  const base = "http://127.0.0.1:4175";
   const server = spawn(process.execPath, [path.resolve("node_modules/vite/bin/vite.js"), "preview", "--host", "127.0.0.1", "--port", "4175", "--strictPort"], { stdio: "pipe" });
   let output = "";
   server.stdout.on("data", (data) => { output += data; });
@@ -24,7 +25,7 @@ test("bounded page data, navigation cache, failures, history and multilingual st
     }
     assert.ok(ready, output);
     const context = await browser.newContext();
-    await context.route("https://ozirix-dev.github.io/Reseptit/kuvat/**", async (route) => {
+    await context.route(`${siteTarget.baseUrl}/kuvat/**`, async (route) => {
       await route.fulfill({ path: path.resolve("public/kuvat", new URL(route.request().url()).pathname.split("/kuvat/")[1]) });
     });
     const page = await context.newPage();
@@ -69,7 +70,7 @@ test("bounded page data, navigation cache, failures, history and multilingual st
         assert.equal(await page.locator("img").first().evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0), true);
       }
       const noJs = await browser.newPage({ javaScriptEnabled: false });
-      await noJs.route("https://ozirix-dev.github.io/Reseptit/kuvat/**", async (route) => {
+      await noJs.route(`${siteTarget.baseUrl}/kuvat/**`, async (route) => {
         await route.fulfill({ path: path.resolve("public/kuvat", new URL(route.request().url()).pathname.split("/kuvat/")[1]) });
       });
       await noJs.goto(`${base}${index}`);
@@ -120,7 +121,7 @@ test("bounded page data, navigation cache, failures, history and multilingual st
       await failing.route("**/data/*.json", (route) => route.fulfill({ status: body === "missing" ? 404 : 200, contentType: "application/json", body }));
       await failing.locator(".site-language-nav a[lang=sv]").click();
       await failing.getByRole("heading", { name: "Sidan kunde inte laddas" }).waitFor();
-      assert.equal(await failing.getByRole("link", { name: "Försök igen" }).getAttribute("href"), "/Reseptit/sv/recept/");
+      assert.equal(await failing.getByRole("link", { name: "Försök igen" }).getAttribute("href"), "/sv/recept/");
       await failing.close();
     }
     const initialFailure = await context.newPage();

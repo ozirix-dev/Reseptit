@@ -13,7 +13,7 @@ import { privacyCopy, privacyPaths } from "../src/features/privacy/privacy-copy"
 import type { RecipeEntry, RecipeLocale } from "../src/types/content";
 import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 
-const staging = resolveSiteTarget();
+const staging = resolveSiteTarget(process.env.RECIPAVO_PREVIEW_ORIGIN);
 export const siteBase = staging.baseUrl;
 export interface SeoFinding { route: string; code: string; detail: string }
 export interface ExpectedPage { route: string; locale: RecipeLocale; title: string; description: string; h1: string; alternates: Record<string, string>; recipe?: RecipeEntry; blog?: boolean }
@@ -164,10 +164,10 @@ export function inspectDiscovery(sitemap: string, robots: string, routes: string
   const document = /^\s*<\?xml version="1\.0" encoding="UTF-8"\?>\s*<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">([\s\S]*)<\/urlset>\s*$/.exec(sitemap);
   const body = document?.[1].replace(/<url>\s*<loc>(?:[^<&]|&amp;|&lt;|&gt;|&quot;|&apos;)*<\/loc>\s*<\/url>/g, "").trim();
   if (!document || body !== "" || !isDeepStrictEqual([...urls].sort(), routes.map((r) => siteBase + r).sort())) issues.push({ route: "/sitemap.xml", code: "SITEMAP", detail: "Malformed/unsupported sitemap XML or missing, extra or duplicate URLs" });
-  const blocked = routes.some((r) => ["*", "googlebot", "googlebot-image"].some((agent) => blockedByRobots(robots, staging.basePath.slice(0, -1) + r, agent)));
+  const blocked = routes.some((r) => ["*", "googlebot", "googlebot-image"].some((agent) => blockedByRobots(robots, r, agent)));
   const directives = robots.split(/\r?\n/).map((line) => line.split("#")[0].trim());
   if (blocked || !directives.some((line) => /^user-agent\s*:\s*\*$/i.test(line)) || directives.some((line) => /^sitemap\s*:/i.test(line))) {
-    issues.push({ route: "/robots.txt", code: "ROBOTS", detail: "Project robots must allow crawlers to read noindex without advertising the staging sitemap" });
+    issues.push({ route: "/robots.txt", code: "ROBOTS", detail: "Robots must allow crawlers to read noindex without advertising the staging sitemap" });
   }
   return issues;
 }
@@ -204,8 +204,8 @@ export async function auditSeo(dist: string, recipes: RecipeEntry[], manifestRou
   for (const url of images) {
     try {
       const parsed = new URL(url);
-      if (parsed.origin !== "https://ozirix-dev.github.io" || !parsed.pathname.startsWith("/Reseptit/kuvat/") || parsed.search || parsed.hash) throw Error("Image outside Pages image root");
-      const target = path.resolve(dist, decodeURIComponent(parsed.pathname.slice("/Reseptit/".length)));
+      if (parsed.origin !== siteBase || !parsed.pathname.startsWith("/kuvat/") || parsed.search || parsed.hash) throw Error("Image outside build image root");
+      const target = path.resolve(dist, decodeURIComponent(parsed.pathname.slice(1)));
       if (!target.startsWith(path.resolve(dist) + path.sep)) throw Error("Path escape");
       const file = await readFile(target);
       if (file.toString("ascii", 0, 4) !== "RIFF" || file.toString("ascii", 8, 12) !== "WEBP") throw Error("Missing/invalid WebP");
@@ -213,10 +213,11 @@ export async function auditSeo(dist: string, recipes: RecipeEntry[], manifestRou
   }
   const missing = await readFile(path.join(dist, "404.html"), "utf8");
   findings.push(...inspectNotFound(missing));
-  const verification = await readFile(path.join(dist, "google0c6f9c0486376f0f.html"), "utf8");
-  if (verification !== "google-site-verification: google0c6f9c0486376f0f.html") add("VERIFICATION_FILE", "Verification content changed");
+  if ((await readdir(dist)).includes("google0c6f9c0486376f0f.html")) {
+    add("VERIFICATION_FILE", "Retired GitHub Pages verification file is present");
+  }
   return { mode: "offline-dist", routes: pages.length, recipes: recipes.length, imageFiles: images.size, sitemapUrls: urls.length, findings,
-    limitations: ["Checks this generator's HTML structure, not a general HTML conformance validator or Google's Rich Results Test.", "No assertion about Google ownership, indexing or rich-result appearance.", "Project robots.txt is not the origin-root robots.txt used by crawlers."],
+    limitations: ["Checks this generator's HTML structure, not a general HTML conformance validator or Google's Rich Results Test.", "No assertion about Google ownership, indexing or rich-result appearance."],
     recommendedMissing: { author: recipes.length, datePublished: recipes.length, aggregateRating: recipes.length, calories: recipes.length },
   };
 }

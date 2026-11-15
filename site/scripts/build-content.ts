@@ -179,6 +179,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
   // published paths so a changed original invalidates every locale review.
   const finnishSources = new Map<string, string>();
   const publishedImagePaths = new Set<string>();
+  const published = [];
   for (const filePath of paths) {
     const relativePath = path.relative(repoDir, filePath).replaceAll("\\", "/");
     const parsed = parseMarkdown(projectPublishedMarkdown(relativePath, await readFile(filePath, "utf8")));
@@ -188,6 +189,24 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     if (isPublicRecipeQuarantined(String(parsed.data.recipe_id ?? ""))) continue;
     if (parsed.data.status !== "published") throw new Error(`Recipe status must be draft or published: ${filePath}`);
     const data = recipeFrontmatterSchema.parse(parsed.data);
+    published.push({ filePath, relativePath, parsed, data });
+  }
+  const finnishBySlug = new Map(published.filter(({data}) => data.language === "fi")
+    .map(({data}) => [data.url_slug, data.recipe_id]));
+  const localizedRoutes = new Map(published.map(({data}) =>
+    [data.recipe_id + ":" + data.language, routeForRecipe(data.language, data.url_slug)]));
+  for (const { filePath, relativePath, parsed, data } of published) {
+    // Preserve the reviewed Markdown bytes. Resolve historical self-links in
+    // the public projection using the same published routes as the site.
+    const publicMarkdown = parsed.content.replace(
+      /https:\/\/ozirix-dev\.github\.io\/Reseptit\/([a-z0-9-]+)\//g,
+      (_, slug: string) => {
+        const id = finnishBySlug.get(slug);
+        const route = id && (localizedRoutes.get(id + ":" + data.language) ?? localizedRoutes.get(id + ":fi"));
+        if (!route) throw new Error("Historical recipe link has no published target: " + relativePath + " -> " + slug);
+        return route;
+      },
+    );
     if (data.gluten_free === true) {
       const review = data.gluten_free_review!;
       // A fabricated, missing or stale review record cannot turn a recipe into a gluten-free listing.
@@ -209,17 +228,17 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       : [];
     imagePaths.forEach((imagePath) => publishedImagePaths.add(imagePath));
     assertClassifiedRecipeSections(parsed.content, relativePath);
-    const instructions = section(parsed.content, instructionHeadings);
+    const instructions = section(publicMarkdown, instructionHeadings);
     const safetyHold = publicSafetyHold(data.recipe_id, data.language);
     const visibleHold = safetyHold ?? publicRecipeQualityHold(data.recipe_id, data.language);
     const publicInstructions = visibleHold?.instructions ?? instructions;
     if (!instructions) throw new Error(`Published recipe has no instructions: ${filePath}`);
-    const descriptionSection = section(parsed.content, descriptionHeadings);
+    const descriptionSection = section(publicMarkdown, descriptionHeadings);
     const nutritionBasis = data.language === "fi" && publicNutritionBasis.has(data.recipe_id)
-      ? section(parsed.content, [nutritionBasisHeading])
+      ? section(publicMarkdown, [nutritionBasisHeading])
       : "";
     const notes = [
-      section(parsed.content, noteHeadings),
+      section(publicMarkdown, noteHeadings),
       nutritionBasis && `### ${nutritionBasisHeading}\n\n${nutritionBasis}`,
     ].filter(Boolean).join("\n\n");
     const dietTags = await reviewedDietTagsForSource(data.recipe_id, data.language, filePath, finnishSources.get(data.recipe_id));
@@ -228,7 +247,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     recipes.push({
       kind: "recipe", recipeId: data.recipe_id, slug: data.url_slug, locale: data.language,
       title: data.title, category: data.category, ...(data.additional_categories?.length ? { additionalCategories: data.additional_categories } : {}), dietClass: data.diet_class ?? null, ...(dietTags.length ? { dietTags } : {}), ...(data.gluten_free === true ? { glutenFree: true } : {}), routePath: routeForRecipe(data.language, data.url_slug),
-      description: visibleHold?.description ?? recipeDescription(parsed.content, descriptionSection, data.language, data.ingredients), ingredients: data.ingredients,
+      description: visibleHold?.description ?? recipeDescription(publicMarkdown, descriptionSection, data.language, data.ingredients), ingredients: data.ingredients,
       ...(seoDescription ? { seoDescription } : {}),
       instructionsHtml: await renderSafeMarkdown(publicInstructions),
       instructionStepsHtml: await renderInstructionSteps(publicInstructions),

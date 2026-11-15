@@ -11,10 +11,10 @@ import { recipeLibraryPagePath } from "../src/features/recipes/recipe-pagination
 const dist = path.resolve(import.meta.dirname, "../dist");
 test("HTTP 200 discovery bodies must contain the expected sitemap and crawling policy", () => {
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${siteBase}/</loc></url></urlset>`;
-  const robots = "User-agent: *\nAllow: /Reseptit/\n";
+  const robots = "User-agent: *\nAllow: /\n";
   assert.deepEqual(inspectDiscovery(sitemap, robots, ["/"]), []);
   for (const wrong of ["<html>not XML</html>", "<urlset></urlset>", sitemap.replace("</urlset>", ""), sitemap.replace("</url>", "</broken>"), sitemap.replace("</urlset>", `<url><loc>${siteBase}/</loc></url></urlset>`)]) assert.ok(inspectDiscovery(wrong, robots, ["/"]).some((f) => f.code === "SITEMAP"));
-  for (const wrong of ["", robots + `Sitemap: ${siteBase}/sitemap.xml\n`, "User-agent: *\nDisallow: /\n", "User-agent: *\nDisallow: /Reseptit/\n", "User-agent: *\nDisallow: /Reseptit/*\n", "User-agent: *\nDisallow: /*\n"]) assert.ok(inspectDiscovery(sitemap, wrong, ["/"]).some((f) => f.code === "ROBOTS"));
+  for (const wrong of ["", robots + `Sitemap: ${siteBase}/sitemap.xml\n`, "User-agent: *\nDisallow: /\n", "User-agent: *\nDisallow: /*\n"]) assert.ok(inspectDiscovery(sitemap, wrong, ["/"]).some((f) => f.code === "ROBOTS"));
   assert.equal(blockedByRobots("User-agent: *\nDisallow: /\nAllow: /Reseptit/", "/Reseptit/test/", "googlebot"), false);
   assert.equal(blockedByRobots("User-agent: *\nAllow: /\nUser-agent: Googlebot\nDisallow: /Reseptit/*", "/Reseptit/test/", "googlebot"), true);
 });

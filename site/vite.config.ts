@@ -5,7 +5,7 @@ import { siteTarget } from "./src/content/site-target.ts";
 
 export default defineConfig(({ isPreview }) => ({
   base: siteTarget.basePath,
-  appType: isPreview && siteTarget.basePath === "/" ? "mpa" : "spa",
+  appType: isPreview ? "mpa" : "spa",
   define: { __RECIPE_SITE_TARGET__: JSON.stringify(siteTarget) },
   plugins: [react()],
   resolve: { alias: { "@": path.resolve(import.meta.dirname, "src") } },

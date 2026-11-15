@@ -3,7 +3,7 @@
 **Recipavo** on nelikielinen reseptisivusto. Tämä `Reseptit`-repo sisältää
 kanoniset Markdown-reseptit ja staattisen verkkosovelluksen.
 [Tuotanto](https://www.recipavo.com/) toimii Cloudflare Pagesissa.
-[GitHub Pages](https://ozirix-dev.github.io/Reseptit/) toimii stagingina.
+Esikatselut tehdään paikallisesti tai Cloudflare Pagesin esikatseluosoitteessa.
 [Cloudflare Pages -esikatselu](https://final-recovery.recipavo-v1-preview.pages.dev/)
 on erillinen esikatseluympäristö. Katso [julkaisuohje](docs/julkaisuarkkitehtuuri_github_pages.md).
 
@@ -153,7 +153,7 @@ annoslaskuri, haku ja query-osoitteet toimivat. Canonicalit, hreflang,
 Recipe-JSON-LD ja sitemap syntyvät julkaistusta sisällöstä.
 
 GitHub Actions tarkistaa PR:t. `main`-haaran sivustomuutokset käynnistävät
-GitHub Pages -stagingjulkaisun. Cloudflare-tuotantoon siirretään erikseen hyväksytty, testattu revisio.
+julkaisusta riippumattoman buildin ja staattiset tarkistukset. Cloudflare-tuotantoon siirretään erikseen hyväksytty, testattu revisio.
 Cloudflare Pages -esikatselu varmennetaan erikseen täsmälliseen versioon
 sidottuna. Hyväksyttävät, toisistaan riippumattomat reseptit voidaan julkaista
 mukautuvissa erissä; vaikea GK- tai turvallisuustapaus ei saa estää muita
