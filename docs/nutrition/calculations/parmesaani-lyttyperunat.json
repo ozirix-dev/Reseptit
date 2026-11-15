@@ -1,0 +1,162 @@
+{
+  "recipeId": "parmesaani-lyttyperunat",
+  "sourceHash": "e2928bf8b13fff2e6b4c3163fcfc73d7438574f7f541ba284ad08ad66408a0f0",
+  "calculatedAt": "2026-11-15",
+  "batchId": "batch-577",
+  "servings": 4,
+  "scope": "Ingredient inputs from Fineli Release 20, USDA FoodData Central and AFCD as applicable. No measured cooked yield.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Parmesaanille ja valkosipulijauheelle puuttuu varmennettu polyoliarvo.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 700,
+      "unit": "g",
+      "item": "pieniä keitettyjä perunoita",
+      "record": {
+        "id": "fineli-28955",
+        "name": "PERUNA, KUORINEEN, KEITETTY, SUOLATON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/28955",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "peruna, kuorineen, keitetty, suolaton",
+        "basis": "per100g-prepared",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 13.175,
+          "fibre": 1.19,
+          "polyols": 0.0,
+          "protein": 1.6,
+          "fat": 0.097
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Sugar alcohol value reported in pinned Fineli Release 20."
+      },
+      "state": "peruna, kuorineen, keitetty, suolaton",
+      "matchEvidence": "Matched the ingredient pieniä keitettyjä perunoita to the reference food PERUNA, KUORINEEN, KEITETTY, SUOLATON. Brand-specific values may vary.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "All quantities describe the edible charged food.",
+      "retentionEvidence": "Full charged-mass accounting. No cooked yield or retained fat measured."
+    },
+    {
+      "amount": 30,
+      "unit": "g",
+      "item": "oliiviöljyä",
+      "record": {
+        "id": "fineli-536",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "oliiviöljy",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 0.0,
+          "fat": 100.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Sugar alcohol value reported in pinned Fineli Release 20."
+      },
+      "state": "oliiviöljy",
+      "matchEvidence": "Matched the ingredient oliiviöljyä to the reference food OLIIVIÖLJY. Brand-specific values may vary.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "All quantities describe the edible charged food.",
+      "retentionEvidence": "Full charged-mass accounting. No cooked yield or retained fat measured."
+    },
+    {
+      "amount": 40,
+      "unit": "g",
+      "item": "parmesaania",
+      "record": {
+        "id": "usda-170848",
+        "name": "Cheese, parmesan, hard",
+        "sourceUrl": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170848/nutrients",
+        "retrievedAt": "2026-11-15",
+        "licence": "USDA FoodData Central SR Legacy, public domain",
+        "state": "edible reference ingredient as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "US_TOTAL_INCLUDING_FIBRE",
+        "per100g": {
+          "carbohydrate": 3.22,
+          "fibre": 0.0,
+          "polyols": null,
+          "protein": 35.75,
+          "fat": 25.0
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "edible reference ingredient as sold",
+      "matchEvidence": "Matched the ingredient parmesaania to the reference food Cheese, parmesan, hard. Brand-specific values may vary.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "All quantities describe the edible charged food.",
+      "retentionEvidence": "Full charged-mass accounting. No cooked yield or retained fat measured."
+    },
+    {
+      "amount": 2,
+      "unit": "g",
+      "item": "valkosipulijauhetta",
+      "record": {
+        "id": "usda-171325",
+        "name": "Spices, garlic powder",
+        "sourceUrl": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171325/nutrients",
+        "retrievedAt": "2026-11-15",
+        "licence": "USDA FoodData Central SR Legacy, public domain",
+        "state": "edible reference ingredient as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "US_TOTAL_INCLUDING_FIBRE",
+        "per100g": {
+          "carbohydrate": 72.73,
+          "fibre": 9.0,
+          "polyols": null,
+          "protein": 16.55,
+          "fat": 0.73
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "edible reference ingredient as sold",
+      "matchEvidence": "Matched the ingredient valkosipulijauhetta to the reference food Spices, garlic powder. Brand-specific values may vary.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "All quantities describe the edible charged food.",
+      "retentionEvidence": "Full charged-mass accounting. No cooked yield or retained fat measured."
+    },
+    {
+      "amount": 2,
+      "unit": "g",
+      "item": "hienoa merisuolaa",
+      "record": {
+        "id": "fineli-33151",
+        "name": "MERISUOLA, JODIOIMATON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/33151",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "merisuola, jodioimaton",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 0.0,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Sugar alcohol value reported in pinned Fineli Release 20."
+      },
+      "state": "merisuola, jodioimaton",
+      "matchEvidence": "Matched the ingredient hienoa merisuolaa to the reference food MERISUOLA, JODIOIMATON. Brand-specific values may vary.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "All quantities describe the edible charged food.",
+      "retentionEvidence": "Full charged-mass accounting. No cooked yield or retained fat measured."
+    }
+  ]
+}
