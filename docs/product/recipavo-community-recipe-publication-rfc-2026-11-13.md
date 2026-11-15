@@ -1,9 +1,9 @@
 # Recipavo: käyttäjien omat reseptit ja yhteisöjulkaisun automaattinen katselmointi – RFC V1
 
-**Päiväys:** 13.11.2026  
-**Täydennetty:** 15.11.2026 — yksi julkisuusvalinta tallennuksessa ja videoidean talteenotto  
-**Tila:** DRAFT / DESIGN ONLY / EI TOTEUTUS- EIKÄ JULKAISUVALTUUTUSTA  
-**Repo:** `ozirix-dev/Reseptit`  
+**Päiväys:** 13.11.2026\
+**Täydennetty:** 15.11.2026 — yksi julkisuusvalinta tallennuksessa ja videoidean talteenotto\
+**Tila:** DRAFT / DESIGN ONLY / EI TOTEUTUS- EIKÄ JULKAISUVALTUUTUSTA\
+**Repo:** `ozirix-dev/Reseptit`\
 **Tavoite:** käyttäjät saavat kasvattaa reseptikirjastoa, ja ylläpitäjän toistuva syöttö- ja tarkistustyö vähenee olennaisesti. **Recipavon V1-betan käyttöönottoa ei saa tämän ominaisuuden vuoksi viivästyttää.**
 
 ## 1. Mikä on uutta — älä toteuta vanhaa työtä toiseen kertaan
@@ -179,9 +179,9 @@ Tuotantodomain `www.recipavo.com` ja nykyinen Coming Soon -suoja jäävät täm�
 
 ## 10. Päätöskohdat ja rajaukset
 
-**Ennen C1:tä:** hyväksy nimenomaisesti lomake-UX, synteettinen testidata ja vastuu- sekä resurssirajat.  
-**Ennen C2:ta:** ratkaise tunnistus, D1/R2, tietosuoja, käyttöoikeudet, poistopyynnöt ja maksullisten palveluiden kustannuskatot.  
-**Ennen C3:a:** vahvista julkisen sisällön käyttöehdot ja kuvalisenssit, auditointi, turvaportit, moderointivastuu ja ilmoitus-/poistopolku.  
+**Ennen C1:tä:** hyväksy nimenomaisesti lomake-UX, synteettinen testidata ja vastuu- sekä resurssirajat.\
+**Ennen C2:ta:** ratkaise tunnistus, D1/R2, tietosuoja, käyttöoikeudet, poistopyynnöt ja maksullisten palveluiden kustannuskatot.\
+**Ennen C3:a:** vahvista julkisen sisällön käyttöehdot ja kuvalisenssit, auditointi, turvaportit, moderointivastuu ja ilmoitus-/poistopolku.\
 **Ennen C4:ää:** tee erillinen päätös **muutoksesta omistajan tapauskohtaiseen hyväksyntäpolitiikkaan**. Yhteisön kasvu ei saa hiljaisesti muuttaa toimituksellisesti varmennetun Recipavo-sisällön laatulupausta.
 
 ### Ei tässä PR:ssä
