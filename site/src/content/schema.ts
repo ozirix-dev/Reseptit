@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 const localeSchema = z.enum(["fi", "en", "sv", "th"]);
+const recipeCategorySchema = z.enum(["alkuruoka", "paaruoka", "jalkiruoka", "leivonnainen", "aamupala", "valipala"]);
 const imagePathSchema = z.string().min(1).refine((value) =>
   !value.startsWith("/") && !value.includes("\\") && !value.split("/").includes("..") && /^[a-z0-9][a-z0-9/_-]*\.webp$/i.test(value),
 "Recipe image paths must be relative WebP files inside kuvat/.");
@@ -9,7 +10,8 @@ export const recipeFrontmatterSchema = z.object({
   title: z.string().min(1),
   recipe_id: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
   url_slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
-  category: z.enum(["alkuruoka", "paaruoka", "jalkiruoka", "leivonnainen", "aamupala", "valipala"]),
+  category: recipeCategorySchema,
+  additional_categories: z.array(recipeCategorySchema).max(5).optional(),
   language: localeSchema,
   status: z.enum(["draft", "published"]),
   diet_class: z.enum(["keto", "vhh_tiukka", "vhh_valjempi"]).optional(),
@@ -50,6 +52,12 @@ export const recipeFrontmatterSchema = z.object({
     srcset: z.array(z.object({ src: imagePathSchema, width: z.number().int().positive() }).strict()).optional(),
   }).strict().optional(),
 }).strict().superRefine((data, ctx) => {
+  if (data.additional_categories?.includes(data.category)) {
+    ctx.addIssue({ code: "custom", message: "Secondary categories must not repeat the primary category", path: ["additional_categories"] });
+  }
+  if (data.additional_categories && new Set(data.additional_categories).size !== data.additional_categories.length) {
+    ctx.addIssue({ code: "custom", message: "Secondary categories must be unique", path: ["additional_categories"] });
+  }
   if (data.gluten_free === true && !data.gluten_free_review) {
     ctx.addIssue({ code: "custom", message: "Gluten-free claims need a recipe-specific reviewed evidence record", path: ["gluten_free_review"] });
   }
