@@ -1,6 +1,6 @@
 import { siteTarget } from "../src/content/site-target";
 import { recipeCardSizes } from "../src/features/recipes/image-layout";
-import { contentForRoute, serializeRouteContent, type RouteContent } from "../src/content/route-data";
+import { contentForRoute, localeIndexes, serializeRouteContent, type RouteContent } from "../src/content/route-data";
 import { contentManifest } from "../src/generated/routes.generated";
 import { libraryCopy, libraryTitle } from "../src/features/recipes/home-preview";
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
@@ -112,14 +112,26 @@ try {
   if (!shell.includes('<div id="root"></div>')) {
     throw new Error("Prerender requires a fresh Vite build. Run npm run build.");
   }
+  // The localized home pages use the same stylesheet as the rest of the site.
+  // Inline the built CSS here so the first paint needs no separate CSS request.
+  const stylesheet = /<link rel="stylesheet"[^>]* href="[^"]*\/(assets\/[\w.-]+\.css)"[^>]*>/.exec(shell);
+  if (!stylesheet) throw new Error("Missing Vite stylesheet in the HTML shell.");
+  const css = await readFile(path.join(distDir, stylesheet[1]), "utf8");
+  if (/<\/style/i.test(css)) throw new Error("Vite stylesheet cannot be safely inlined.");
+  const homeShell = shell.replace(stylesheet[0], () => `<style>${css}</style>`);
+  const homeRoutes = new Set(Object.values(localeIndexes));
   const routes = Object.keys(contentManifest);
   for (const route of routes) {
     const initial: RouteContent = JSON.parse(await readFile(path.join(distDir, "data", contentManifest[route]), "utf8"));
     const metadata = routeMetadata(route, initial);
     if (!metadata) throw new Error("Missing prerender metadata for " + route);
-    const router = createStaticRouter(route, initial);
+    const router = await createStaticRouter(route, initial);
     const body = renderToString(React.createElement(RouterProvider, { router }));
-    const html = replaceDocument(shell, `${metadata.head}\n<script id="page-content" type="application/json">${serializeRouteContent(initial)}</script>`, metadata.lang, body);
+    const data = `<script id="page-content" type="application/json">${serializeRouteContent(initial)}</script>`;
+    const html = homeRoutes.has(route)
+      ? replaceDocument(homeShell, metadata.head, metadata.lang, body)
+        .replace("</body>", () => `    ${data}\n  </body>`)
+      : replaceDocument(shell, `${metadata.head}\n${data}`, metadata.lang, body);
     for (const outputPath of outputPaths(route)) {
       await mkdir(path.dirname(outputPath), { recursive: true });
       await writeFile(outputPath, html, "utf8");
@@ -128,7 +140,7 @@ try {
 
   for (const [locale, directory] of [["fi", ""], ["en", "en"], ["sv", "sv"], ["th", "th"]] as const) {
     const route = directory ? "/" + directory + "/404" : "/404";
-    const router = createStaticRouter(route, contentForRoute(siteContent.recipes, route));
+    const router = await createStaticRouter(route, contentForRoute(siteContent.recipes, route));
     const body = renderToString(React.createElement(RouterProvider, { router }));
     const title = recipeUi[locale].notFound;
     const head = [

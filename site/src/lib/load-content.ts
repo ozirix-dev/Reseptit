@@ -1,5 +1,4 @@
 import type { SearchRecipe } from "../features/recipes/recipe-search";
-import { contentManifest, publishedLocales } from "../generated/routes.generated";
 import { normalizePath, type RouteContent } from "../content/route-data";
 import type { RecipeCategoryName } from "../types/content";
 import { siteTarget } from "../content/site-target";
@@ -47,6 +46,7 @@ export async function loadContent({ request }: { request: Request }): Promise<Ro
   const path = normalizePath(route, siteTarget.basePath);
   const cached = cache.get(path);
   if (cached) return cached;
+  const { contentManifest, publishedLocales } = await import("../generated/routes.generated");
   const file = contentManifest[path];
   if (!file) return { path, locales: publishedLocales, recipes: [], recipe: null, translations: [] };
   const response = await fetch(`${import.meta.env.BASE_URL}data/${file}`, { signal: request.signal });

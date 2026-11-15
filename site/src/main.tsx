@@ -7,8 +7,10 @@ import { parseRouteContent, rememberContent } from "./lib/load-content";
 
 const initial = rememberContent(parseRouteContent(JSON.parse(document.getElementById("page-content")!.textContent!), location.pathname));
 
-hydrateRoot(document.getElementById("root")!,
-  <React.StrictMode>
-    <RouterProvider router={createSiteRouter(initial)} />
-  </React.StrictMode>,
-);
+void createSiteRouter(initial).then(router => {
+  hydrateRoot(document.getElementById("root")!,
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>,
+  );
+});

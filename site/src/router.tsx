@@ -1,16 +1,13 @@
 import { createBrowserRouter, createMemoryRouter, Link, Outlet, ScrollRestoration, useLocation, type RouteObject } from "react-router-dom";
-import { RecipePage } from "@/features/recipes/RecipePage";
 import { RecipeAbout } from "@/features/recipes/recipe-tools";
 import { RecipeLibraryPage, RecipesPage } from "@/features/recipes/RecipesPage";
 import { recipeLibraryPagePattern, recipeLibraryRoots } from "@/features/recipes/recipe-pagination";
-import { GlycemicLoadPilotPage } from "@/features/glycemic-load/GlycemicLoadPilotPage";
 import { recipeIndexPath, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
 import { isRecipavoHeroEnabled, recipavoHeroCopy } from "@/features/recipes/recipavo-hero";
 import { useContent } from "@/lib/content";
 import { loadContent } from "@/lib/load-content";
 import type { RouteContent } from "@/content/route-data";
 import { SeoMeta } from "@/SeoMeta";
-import { BlogIndex, BlogArticle } from "@/features/blog/BlogPages";
 import { SiteNavigation } from "@/SiteNavigation";
 import { AnalyticsPrompt, PrivacyPage } from "@/features/privacy/Privacy";
 import { privacyCopy, privacyEmail, privacyLocaleFromPath, privacyPaths } from "@/features/privacy/privacy-copy";
@@ -64,7 +61,10 @@ function ContentError() {
   return <main className="container" lang={locale}><h1>{text[0]}</h1><a href={`${import.meta.env.BASE_URL.replace(/\/$/, "")}${pathname}`}>{text[1]}</a></main>;
 }
 
-export const siteRoutes: RouteObject[] = [
+const recipePage = async () => ({ Component: (await import("@/features/recipes/RecipePage")).RecipePage });
+const glycemicLoadPage = async () => ({ Component: (await import("@/features/glycemic-load/GlycemicLoadPilotPage")).GlycemicLoadPilotPage });
+
+const siteRoutes: RouteObject[] = [
   {
     id: "content",
     path: "/",
@@ -74,12 +74,12 @@ export const siteRoutes: RouteObject[] = [
     errorElement: <ContentError />,
     children: [
       { index: true, element: <RecipesPage locale="fi" /> },
-      { path: "glykeeminen-kuorma", element: <GlycemicLoadPilotPage /> },
-      { path: "ruokaopas", element: <BlogIndex /> },
-      { path: "ruokaopas/:slug", element: <BlogArticle /> },
-      { path: "en/glycemic-load", element: <GlycemicLoadPilotPage /> },
-      { path: "sv/glykemisk-belastning", element: <GlycemicLoadPilotPage /> },
-      { path: "th/glycemic-load", element: <GlycemicLoadPilotPage /> },
+      { path: "glykeeminen-kuorma", lazy: glycemicLoadPage },
+      { path: "ruokaopas", lazy: async () => ({ Component: (await import("@/features/blog/BlogPages")).BlogIndex }) },
+      { path: "ruokaopas/:slug", lazy: async () => ({ Component: (await import("@/features/blog/BlogPages")).BlogArticle }) },
+      { path: "en/glycemic-load", lazy: glycemicLoadPage },
+      { path: "sv/glykemisk-belastning", lazy: glycemicLoadPage },
+      { path: "th/glycemic-load", lazy: glycemicLoadPage },
       ...(Object.keys(privacyPaths) as RecipeLocale[]).map(locale => ({
         path: privacyPaths[locale].slice(1, -1),
         element: <PrivacyPage locale={locale} />,
@@ -88,27 +88,39 @@ export const siteRoutes: RouteObject[] = [
         [recipeLibraryRoots[locale], recipeLibraryPagePattern(locale)].map(path => ({
           path: path.slice(1), element: <RecipeLibraryRoute />,
         }))),
-      { path: ":slug", element: <RecipePage /> },
+      { path: ":slug", lazy: recipePage },
       { path: "en/recipes", element: <RecipesPage locale="en" /> },
-      { path: "en/recipes/:slug", element: <RecipePage /> },
+      { path: "en/recipes/:slug", lazy: recipePage },
       { path: "sv/recept", element: <RecipesPage locale="sv" /> },
-      { path: "sv/recept/:slug", element: <RecipePage /> },
+      { path: "sv/recept/:slug", lazy: recipePage },
       { path: "th/recipes", element: <RecipesPage locale="th" /> },
-      { path: "th/recipes/:slug", element: <RecipePage /> },
+      { path: "th/recipes/:slug", lazy: recipePage },
       { path: "404", element: <NotFoundPage /> },
       { path: "*", element: <NotFoundPage /> },
     ],
   },
 ];
 
+async function initializedRouter(router: ReturnType<typeof createBrowserRouter>) {
+  // Keep the prerendered HTML visible while the initial route module loads.
+  if (!router.state.initialized) await new Promise<void>(resolve => {
+    const unsubscribe = router.subscribe(state => {
+      if (!state.initialized) return;
+      unsubscribe();
+      resolve();
+    });
+  });
+  return router;
+}
+
 export function createSiteRouter(initial: RouteContent) {
-  return createBrowserRouter(siteRoutes, { basename: import.meta.env.BASE_URL, hydrationData: { loaderData: { content: initial } } });
+  return initializedRouter(createBrowserRouter(siteRoutes, { basename: import.meta.env.BASE_URL, hydrationData: { loaderData: { content: initial } } }));
 }
 
 export function createStaticRouter(route: string, initial: RouteContent) {
-  return createMemoryRouter(siteRoutes, {
+  return initializedRouter(createMemoryRouter(siteRoutes, {
     basename: import.meta.env.BASE_URL,
     hydrationData: { loaderData: { content: initial } },
     initialEntries: [`${import.meta.env.BASE_URL.replace(/\/$/, "")}${route}`],
-  });
+  }));
 }
