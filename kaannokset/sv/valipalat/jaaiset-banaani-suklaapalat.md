@@ -20,7 +20,7 @@ tags:
 - suklaa
 image:
   src: valipalat/jaaiset-banaani-suklaapalat.webp
-  alt: Isiga banan-chokladchips med ett lager choklad och rostade jordnötsgryn
+  alt: Isiga banan-chokladchips med ett lager choklad och rostade hackade jordnötter
   width: 1600
   height: 900
 carbs_total_per_serving_g: 16.42
@@ -51,13 +51,13 @@ source_recipe: reseptit/valipalat/jaaiset-banaani-suklaapalat.md
 
 ## Beskrivning
 
-Banan, jordnötssmör och mörk choklad fryser in till ett ark som går att vika bit för bit. Rostade jordnötter strös ovanpå ger crunch.
+Banan, jordnötssmör och mörk choklad fryser in till ett ark som kan brytas i bitar. Rostade jordnötter strös ovanpå ger crunch.
 
 ## Gör så här
 
 1. Klä en frysplåt med bakplåtspapper. Skala bananerna och platta till dem med en gaffel till en enhetlig skiva ca 6 mm tjock. Frys i 30 minuter tills toppen stelnat.
 2. Rör ner jordnötssmöret tills det är slätt. Om den är styv, värm den några sekunder i mikron. Bred ut jordnötssmöret på bananplåten och frys in i cirka en timme så att ytan tål chokladpåläggningen.
-3. Rosta jordnötterna lätt i en torr panna, låt svalna och mal dem. Hacka chokladen och smält den i mikron i korta skurar, rör om då och då. Bred ut chokladen tunt ovanpå jordnötssmöret och strö över muskotnöten direkt för att det ska fästa.
+3. Rosta jordnötterna lätt i en torr panna, låt dem svalna och hacka dem. Hacka chokladen och smält den i mikron i korta skurar, rör om då och då. Bred ut chokladen tunt ovanpå jordnötssmöret och strö över de hackade jordnötterna direkt för att det ska fästa.
 4. Frys i minst 4 timmar eller över natten tills plattan är helt frusen. Ta bort bakplåtspappret och vik skivan i cirka nio bitar. Servera kyld.
 
 ## Anteckningar
@@ -65,5 +65,5 @@ Banan, jordnötssmör och mörk choklad fryser in till ett ark som går att vika
 - Förvara bitarna i frysen i en tät behållare. Om biten är för hård att äta direkt från frysen, låt den mjukna i ett par minuter.
 - **Allergener** · Innehåller jordnötter. Kontrollera chokladetiketter för andra allergener, såsom mjölk eller soja.
 - Rullen använder tre bananer och är lager med jordnötssmör, mörk choklad och krossade nötter. I denna version valdes rostade jordnötter till ytan. [Daily Wellness USA:s Facebook-rulle](https://www.facebook.com/reel/1473562588250274)
-- Grammängderna för jordnötssmör och choklad är avrundade omräkningar från referensguiden. Mängden jordnötsmjöl är en uppskattning. De mellanliggande och slutliga frystiderna baseras på referensguiden och är uppskattningar. [Kelsey Kunik – Chokladjordnötssmör Bananbark](https://graciouslynourished.com/chocolate-peanut-butter-banana-bark-viral-recipe-made-easy/)
+- Grammängderna för jordnötssmör och choklad är avrundade omräkningar från referensguiden. Mängden hackade jordnötter är en uppskattning. De mellanliggande och slutliga frystiderna baseras på referensguiden och är uppskattningar. [Kelsey Kunik – Chokladjordnötssmör Bananbark](https://graciouslynourished.com/chocolate-peanut-butter-banana-bark-viral-recipe-made-easy/)
 - Bilden är en perceptionsbild gjord med artificiell intelligens.

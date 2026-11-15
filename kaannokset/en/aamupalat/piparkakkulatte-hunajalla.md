@@ -69,7 +69,7 @@ Coffee foam is whipped from instant coffee, honey and gingerbread spices. Freeze
 
 ## Notes
 
-- Sisältää maitoa. Honey is not given to children under one year old.
+- Contains milk. Do not give honey to children under one year old.
 - Reel does not give exact measurements. The volume ratio of instant coffee, honey and water is adapted from the honey-dalgona comparison guide. [Guide to the Savannah Bee Company](https://savannahbee.com/blogs/recipes/honey-dalgona)
 - [Ryan Marcon Reel](https://www.facebook.com/reel/1329386712576464)
 - The image is a perception image made with artificial intelligence.

@@ -54,7 +54,7 @@ Cooked sweet potato gives cocoa brownies a soft interior. Spread the dough in a 
 
 1. Preheat the oven to 175°C with constant heat. Line a 16 x 16 cm pan with baking paper.
 2. Mash the sweet potato until smooth. Mix in the eggs and honey. Sift in the cocoa powder and mix until smooth.
-3. Spread the dough in the pan and bake on a medium level for about 20-25 minutes. Check at 20 minutes. The edges and center must be frozen and the internal temperature must be at least 71 °C.
+3. Spread the dough in the pan and bake on the middle rack for about 20-25 minutes. Check at 20 minutes. The edges and center must be set and the internal temperature must be at least 71 °C.
 4. Cool in the tin before cutting the disc into nine pieces.
 
 ## Notes

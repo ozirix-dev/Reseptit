@@ -11167,12 +11167,18 @@
   },
   "piparkakkulatte-hunajalla:en": {
     "source_hash": "c37f4d6eaae4f89d2146296ddb3485ba5000edb4bdfebcca7f45054baf3d42c3",
-    "translation_hash": "a933b57797cf2ce3b093a91e8f90f7d48b9d5aa6e71041e604835f8f89eb6ea1",
+    "translation_hash": "de7b20144baf7b6546604f8f9396b03565faecc1d8a4b462c320d1666276e3d5",
     "reviewed_at": "2026-11-15",
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännetty maitoallergeenivaroitus englanniksi."
+      }
+    ]
   },
   "paahtopaistileipa-piparjuurikastikkeella:en": {
     "source_hash": "472da55979df519eca03f4774eb0602121e5086ea1a6c9a95f58535557a96536",
@@ -11275,12 +11281,18 @@
   },
   "bataattibrowniet:en": {
     "source_hash": "6079154ce0c3c50a574b9c266a9376ff17f2514deca41a9c1dc282866caa0eec",
-    "translation_hash": "3b97aa82e32c7ca521e399c9d970901cc7768c85721f3547cbdf517ae8b0b201",
+    "translation_hash": "643ee0e8dc788ce39df23ff6c7cbfb1c9598d2be7310e65ac37281555ad97935",
     "reviewed_at": "2026-11-15",
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Korjattu kypsyyskriteeriksi hyytyminen."
+      }
+    ]
   },
   "punajuuri-suklaakakku:en": {
     "source_hash": "0f3a9d349ef27d05c2a27bd7001ab9f4393c9de1b9f72d8daacb00c080b8e737",
@@ -11311,12 +11323,18 @@
   },
   "jaaiset-banaani-suklaapalat:en": {
     "source_hash": "6c5664420acf1aafe096aceea83c2ba359079883919a5e208d285138d15db1ee",
-    "translation_hash": "a964f5b2b76eb2fc344a2dc309d413b8a5bd5c3f24746929257d0f57218137e1",
+    "translation_hash": "6ae77ff6d4cbe0ced0380253267e7805f76d89121cf70ce0c1c85c666eb966f9",
     "reviewed_at": "2026-11-15",
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Palautettu paahdettu maapähkinärouhe valmistusohjeeseen ja täsmennetty levyn paloittelu."
+      }
+    ]
   },
   "bataattiletut:sv": {
     "source_hash": "b14a49a5311da43e836d4d7839eb1fc1b3015173417493e15f99110c1d9efadd",
@@ -11497,12 +11515,18 @@
   },
   "jaaiset-banaani-suklaapalat:sv": {
     "source_hash": "6c5664420acf1aafe096aceea83c2ba359079883919a5e208d285138d15db1ee",
-    "translation_hash": "c3632dfa6a484ba160f24fdddf8103bf5cae4fce0d4b097e65ef440311016486",
+    "translation_hash": "ccdbdac14ed5786de7cc11a95cb188af0c20aa1a656f7acd79d6a7c6ca712da4",
     "reviewed_at": "2026-11-15",
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Palautettu paahdettu maapähkinärouhe valmistusohjeeseen ja täsmennetty levyn paloittelu."
+      }
+    ]
   },
   "bataattiletut:th": {
     "source_hash": "b14a49a5311da43e836d4d7839eb1fc1b3015173417493e15f99110c1d9efadd",
@@ -11677,11 +11701,17 @@
   },
   "jaaiset-banaani-suklaapalat:th": {
     "source_hash": "6c5664420acf1aafe096aceea83c2ba359079883919a5e208d285138d15db1ee",
-    "translation_hash": "0d3d99f020531d4d343829775346db4e8ca9a8ac32a775cdf02ce839c49b9372",
+    "translation_hash": "9a13e91237055442ffc130bef1f8d579e9b823a0f981eab256a5be75225cf23c",
     "reviewed_at": "2026-11-15",
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Palautettu paahdettu maapähkinärouhe valmistusohjeeseen ja täsmennetty levyn paloittelu."
+      }
+    ]
   }
 }

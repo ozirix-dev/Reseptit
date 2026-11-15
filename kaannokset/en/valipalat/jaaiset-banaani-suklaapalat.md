@@ -20,7 +20,7 @@ tags:
 - suklaa
 image:
   src: valipalat/jaaiset-banaani-suklaapalat.webp
-  alt: Iced banana-chocolate chips showing a layer of chocolate and roasted peanut grits
+  alt: Iced banana-chocolate chips showing a layer of chocolate and roasted chopped peanuts
   width: 1600
   height: 900
 carbs_total_per_serving_g: 16.42
@@ -51,13 +51,13 @@ source_recipe: reseptit/valipalat/jaaiset-banaani-suklaapalat.md
 
 ## Description
 
-Banana, peanut butter and dark chocolate freeze into a sheet that can be folded piece by piece. Roasted peanuts sprinkled on top add crunch.
+Banana, peanut butter and dark chocolate freeze into a sheet that can be broken into pieces. Roasted peanuts sprinkled on top add crunch.
 
 ## Instructions
 
 1. Line a freezer tray with parchment paper. Peel the bananas and flatten them with a fork into a uniform disc about 6 mm thick. Freeze for 30 minutes until the top is set.
 2. Stir in the peanut butter until smooth. If it is stiff, heat it for a few seconds in the microwave. Spread the peanut butter on the banana sheet and freeze for about an hour so that the surface can withstand the chocolate spread.
-3. Lightly roast the peanuts in a dry pan, let cool and grind. Chop the chocolate and melt it in the microwave in short bursts, stirring occasionally. Spread the chocolate thinly on top of the peanut butter and sprinkle the nutmeg right away to help it stick.
+3. Lightly roast the peanuts in a dry pan, let them cool and chop them. Chop the chocolate and melt it in the microwave in short bursts, stirring occasionally. Spread the chocolate thinly on top of the peanut butter and sprinkle the chopped peanuts right away to help it stick.
 4. Freeze for at least 4 hours or overnight until the plate is completely frozen. Remove the baking paper and fold the disc into about nine pieces. Serve chilled.
 
 ## Notes
@@ -65,5 +65,5 @@ Banana, peanut butter and dark chocolate freeze into a sheet that can be folded 
 - Store the pieces in the freezer in a sealed container. If the piece is too hard to eat straight from the freezer, let it soften for a couple of minutes.
 - **Allergens** · Contains peanuts. Check chocolate labels for other allergens, such as milk or soy.
 - The reel uses three bananas and is layered with peanut butter, dark chocolate and crushed nuts. In this version, roasted peanuts were chosen for the surface. [Daily Wellness USA's Facebook reel](https://www.facebook.com/reel/1473562588250274)
-- The gram amounts for peanut butter and chocolate are rounded conversions from the reference guide. The amount of peanut meal is an estimate. The intermediate and final freezing times are based on the reference guide and are estimates. [Kelsey Kunik – Chocolate Peanut Butter Banana Bark](https://graciouslynourished.com/chocolate-peanut-butter-banana-bark-viral-recipe-made-easy/)
+- The gram amounts for peanut butter and chocolate are rounded conversions from the reference guide. The amount of chopped peanuts is an estimate. The intermediate and final freezing times are based on the reference guide and are estimates. [Kelsey Kunik – Chocolate Peanut Butter Banana Bark](https://graciouslynourished.com/chocolate-peanut-butter-banana-bark-viral-recipe-made-easy/)
 - The image is a perception image made with artificial intelligence.
