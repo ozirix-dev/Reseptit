@@ -24,11 +24,11 @@ ingredients:
   - {amount: 200, unit: ml, item: "kokosmjölk", note: "till såsen"}
   - {amount: 16, unit: g, item: "sojasås", note: "till såsen"}
   - {amount: 9, unit: g, item: "farinsocker", note: "till såsen"}
-  - {amount: 1, unit: st, item: "lime", note: "i klyftor för servering"}
-carbs_net_per_serving_g: 13.59
-carbs_total_per_serving_g: 17.87
-protein_per_serving_g: 45.52
-fat_per_serving_g: 29.69
+  - {amount: 1, unit: st, item: "lime", note: "i klyftor för servering, skalet äts inte"}
+carbs_net_per_serving_g: 13.74
+carbs_total_per_serving_g: 18.17
+protein_per_serving_g: 45.64
+fat_per_serving_g: 29.37
 
 source_language: fi
 source_recipe: reseptit/paaruoat/sate-ayam.md

@@ -6,7 +6,7 @@ category: alkuruoka
 language: en
 status: published
 servings: 4
-time_total_min: 90
+time_total_min: 345
 main_ingredient:
   - sianliha
 cooking_method:
@@ -35,7 +35,7 @@ ingredients:
     item: stock
   - amount: 5
     unit: g
-    item: gelatin
+    item: gelatin powder
   - amount: 2
     unit: piece
     item: spring onions
@@ -73,11 +73,11 @@ Homemade soup dumplings have a pork filling with chilled stock jelly that melts 
 
 ## Description
 
-Homemade soup dumplings have a pork filling with chilled stock jelly that melts into broth as they steam.
+Homemade soup dumplings have a pork filling with chilled stock jelly that melts into broth as they steam. Allow about 5 hours 45 minutes in total. If the stock jelly has already set, allow about 90 minutes to make the dumplings.
 
 ## Preparation
 
-1. Dissolve the gelatin in the stock and chill for at least 30 minutes until set, then cut into small cubes.
+1. Sprinkle the gelatin powder over 25 g of cold stock and let it bloom for 5 minutes without stirring. Heat the remaining stock until steaming hot, take the pan off the heat, then stir the bloomed gelatin into the hot stock until fully dissolved. Pour into a shallow dish, let it cool briefly, then refrigerate for at least 4 hours. Cut the stock jelly into small cubes once completely set.
 
 2. Mix pork, spring onion, soy sauce, sesame oil, ginger and salt. Gently fold in the stock jelly.
 

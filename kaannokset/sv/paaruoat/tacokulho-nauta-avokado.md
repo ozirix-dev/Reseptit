@@ -42,16 +42,17 @@ ingredients:
   - amount: 1
     unit: ""
     item: lime
+    note: "till yoghurten, cirka 44 g juice"
   - amount: null
     unit: ""
     item: salt och chili
 servings: 4
 time_total_min: 25
 difficulty: lätt
-carbs_net_per_serving_g: 2.71
-carbs_total_per_serving_g: 5.28
-protein_per_serving_g: 31.27
-fat_per_serving_g: 26.41
+carbs_net_per_serving_g: 2.79
+carbs_total_per_serving_g: 5.31
+protein_per_serving_g: 31.35
+fat_per_serving_g: 26.09
 source_language: fi
 source_recipe: reseptit/paaruoat/tacokulho-nauta-avokado.md
 translation_of: tacokulho-nauta-avokado

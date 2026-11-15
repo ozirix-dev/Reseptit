@@ -24,11 +24,11 @@ ingredients:
   - {amount: 200, unit: ml, item: "กะทิ", note: "สำหรับซอส"}
   - {amount: 16, unit: g, item: "ซีอิ๊ว", note: "สำหรับซอส"}
   - {amount: 9, unit: g, item: "น้ำตาลทรายแดง", note: "สำหรับซอส"}
-  - {amount: 1, unit: ชิ้น, item: "มะนาว", note: "หั่นเป็นเสี้ยวสำหรับเสิร์ฟ"}
-carbs_net_per_serving_g: 13.59
-carbs_total_per_serving_g: 17.87
-protein_per_serving_g: 45.52
-fat_per_serving_g: 29.69
+  - {amount: 1, unit: ลูก, item: "มะนาว", note: "หั่นเป็นเสี้ยวสำหรับเสิร์ฟ ไม่รับประทานเปลือก"}
+carbs_net_per_serving_g: 13.74
+carbs_total_per_serving_g: 18.17
+protein_per_serving_g: 45.64
+fat_per_serving_g: 29.37
 
 source_language: fi
 source_recipe: reseptit/paaruoat/sate-ayam.md

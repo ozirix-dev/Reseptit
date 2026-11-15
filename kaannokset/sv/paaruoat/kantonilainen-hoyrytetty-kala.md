@@ -45,14 +45,14 @@ ingredients:
   - amount: 1
     unit: st
     item: lime
-    note: för servering
+    note: "i klyftor för servering, skalet äts inte"
 source_language: fi
 source_recipe: reseptit/paaruoat/kantonilainen-hoyrytetty-kala.md
 translation_of: kantonilainen-hoyrytetty-kala
-carbs_net_per_serving_g: 3.13
-carbs_total_per_serving_g: 4.58
-protein_per_serving_g: 31.99
-fat_per_serving_g: 9.04
+carbs_net_per_serving_g: 3.29
+carbs_total_per_serving_g: 4.88
+protein_per_serving_g: 32.11
+fat_per_serving_g: 8.72
 
 ---
 

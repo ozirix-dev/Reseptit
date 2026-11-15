@@ -30,8 +30,8 @@ ingredients:
   - amount: 1
     unit: ""
     item: "egg"
-  - amount: 1
-    unit: tbsp
+  - amount: 16
+    unit: g
     item: "Dijon mustard"
   - amount: 2
     unit: tbsp
@@ -50,10 +50,10 @@ image:
   alt: "Lindström beef and beetroot patties with butter-fried cabbage"
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 9.54
-carbs_total_per_serving_g: 12.77
-protein_per_serving_g: 31.9
-fat_per_serving_g: 18.32
+carbs_net_per_serving_g: 9.89
+carbs_total_per_serving_g: 13.17
+protein_per_serving_g: 32.01
+fat_per_serving_g: 18.47
 
 source_language: fi
 source_recipe: reseptit/paaruoat/lindstrominpihvit-kaalilla.md

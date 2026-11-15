@@ -1,3 +1,4 @@
+import { restoreRecipeAuditSnapshot } from "./restore-recipe-audit-snapshot";
 import { createHash } from "node:crypto";
 
 // Reconstruct the approved recipe snapshot after reviewed note and locale metadata edits.
@@ -970,6 +971,7 @@ const editorialSnapshots: Readonly<Record<string, {
 };
 
 export function recipeTextForApprovedSnapshot(file: string, text: string, purpose: "historical-comparison" | "original-gk" = "historical-comparison"): string {
+  text = restoreRecipeAuditSnapshot(file, text);
   const editorial = editorialSnapshots[file];
   if (editorial && createHash("sha256").update(text).digest("hex") === editorial.currentSha256) {
     if (purpose === "original-gk" && editorial.historicalGkText) return editorial.historicalGkText;

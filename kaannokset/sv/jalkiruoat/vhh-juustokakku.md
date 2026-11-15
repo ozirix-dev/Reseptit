@@ -22,7 +22,7 @@ ingredients:
     item: naturell färskost
   - amount: 150
     unit: g
-    item: smetana
+    item: "crème fraîche (28 % fett)"
   - amount: 3
     unit: ""
     item: ägg
@@ -66,11 +66,13 @@ En fyllig bakad cheesecake med mandelbotten. Citronen balanserar sötman i färs
 
 1. Värm ugnen till 160 °C. Klä botten i en springform på 20 cm med bakplåtspapper.
 2. Blanda mandelmjöl och smält smör. Tryck ut blandningen i formen och förgrädda i 8 minuter.
-3. Blanda färskost och erytritol till en slät smet. Tillsätt smetana, äggen ett i taget, vanilj och citronsaft.
+3. Blanda färskost och erytritol till en slät smet. Tillsätt crème fraîche, äggen ett i taget, vanilj och citronsaft.
 4. Häll fyllningen över botten. Ställ formen på ugnsgallret och grädda i cirka 50 minuter. Mitten får fortfarande dallra lite.
 5. Stäng av ugnen, ställ luckan på glänt och låt kakan svalna i ugnen i 30 minuter.
 6. Kyl i kylskåpet i minst fyra timmar innan du skär upp kakan.
 
 ## Anteckningar
+
+Du kan använda tjock smetana i stället för crème fraîche. Smetana med cirka 40–42 % fett ger en fylligare fyllning. Näringsvärdena är beräknade med crème fraîche med 28 % fett.
 
 Rumstempererade fyllningsingredienser är lättare att blanda jämnt. Kakan blir fastare när den svalnar. Låt inte ytan bli mörk i ugnen.

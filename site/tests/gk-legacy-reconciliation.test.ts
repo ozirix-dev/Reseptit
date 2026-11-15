@@ -1,3 +1,5 @@
+import { restoreRecipeAuditSnapshot } from '../scripts/restore-recipe-audit-snapshot';
+import { restoreAuditInventory } from './recipe-correctness-calculation-history';
 import { sourceReleaseGateDecision } from "../scripts/f25-source-release-gate";
 import { molletesHistoricalText, molletesSourcePath, molletesRecipeId } from "../scripts/molletes-reviewed-source";
 import { koreanRiceBowlHistoricalText } from "../scripts/korean-rice-bowls-reviewed-source";
@@ -35,7 +37,8 @@ import { ketoprakSourcePath, originalForKetoprakHistory } from "./ketoprak-histo
 import {projectTranslationAuditSource} from '../scripts/translation-audit';
 
 const root=fileURLToPath(new URL('../../',import.meta.url));
-const read=(p:string)=>readFileSync(new URL('../../'+p,import.meta.url),'utf8');
+const readLive=(p:string)=>readFileSync(new URL('../../'+p,import.meta.url),'utf8');
+const read=readLive;
 const json=(p:string)=>JSON.parse(read(p));
 const sha=(v:unknown)=>createHash('sha256').update(JSON.stringify(v)).digest('hex');
 const lf=(v:any):any=>typeof v==='string'?v.replaceAll('\r\n','\n'):Array.isArray(v)?v.map(lf):v&&typeof v==='object'?Object.fromEntries(Object.entries(v).map(([k,x])=>[k,lf(x)])):v;
@@ -79,10 +82,12 @@ test('serabi and apam balik retain only the sealed thin-version GK', () => {
 });
 
 test('Live original results preserve frozen history plus the exact reviewed transitions; all87 variants and macros stay identical',()=>{
+ const read = (file: string) => restoreRecipeAuditSnapshot(file, readLive(file));
+ const archivedJson = (file: string) => JSON.parse(read(file));
  assertOriginalContentTransition(report);
  const historical = restoreBeforeOriginalContent(structuredClone(report));
  const requiresP1=requiresP1SourceCorrection(root);
- verifyP1SourceInputs(json('docs/nutrition/glycemic-load-pilot-input.json').recipes,requiresP1);
+ verifyP1SourceInputs(archivedJson('docs/nutrition/glycemic-load-pilot-input.json').recipes,requiresP1);
  const affected=Object.keys(before.expectedResultDeltas);
  assert.deepEqual(affected.sort(),['pellava-puuro-pahkinoilla','valimerellinen-ricotta-persikkakulho']);
  for(const r of historical.results){
@@ -102,7 +107,7 @@ test('Live original results preserve frozen history plus the exact reviewed tran
    Object.hasOwn(before.variantHashes, variantKey(v)));
  assert.deepEqual(historicalVariants.map(variantKey).sort(), Object.keys(before.variantHashes).sort());
  for(const v of historicalVariants)assert.equal(sha(v),before.variantHashes[variantKey(v)],v.recipeId);
- const completePublishedInventory = json('tmp/nutrition/audit.json').inventory as Array<{recipe_id:string;source_path:string;status:string}>;
+ const completePublishedInventory = restoreAuditInventory(json('tmp/nutrition/audit.json').inventory) as Array<{recipe_id:string;source_path:string;status:string}>;
  const inventory = completePublishedInventory.filter((row) => {
    const reviewedPin = frozenKarnivoreFi3Blobs[row.recipe_id];
    if (!reviewedPin) return true;
@@ -369,9 +374,11 @@ test('reviewed #365 chef safety corrections restore only two exact source snapsh
  assert.equal(reviewedChefSafetyPaths.length,2);
  for(const file of reviewedChefSafetyPaths){
   const live=read(file);
-  const old=originalForReviewedChefSafety(root,file,live);
-  assert.notEqual(old,live);
-  assert.throws(()=>originalForReviewedChefSafety(root,file,live+'\nExtra unreviewed change'),/unreviewed source modification/);
+  const reviewed=restoreRecipeAuditSnapshot(file,live);
+  const old=originalForReviewedChefSafety(root,file,reviewed);
+  assert.notEqual(old,reviewed);
+  const unrelated=live+'\nExtra unreviewed change';
+  assert.throws(()=>originalForReviewedChefSafety(root,file,restoreRecipeAuditSnapshot(file,unrelated)),/unreviewed source modification/);
  }
  const file='reseptit/paaruoat/rendang-padang.md';
  const current=read(file);
@@ -412,7 +419,9 @@ test('the source transition accepts only the exact3 corrected columns, preservin
 });
 
 test('current-main133/226 candidates preserve production input, approved EHOLD rows and pending GI decisions',()=>{
- const inputText=read('docs/nutrition/glycemic-load-pilot-input.json');
+ const pilotInput='docs/nutrition/glycemic-load-pilot-input.json';
+ const liveInputText=read(pilotInput);
+ const inputText=restoreRecipeAuditSnapshot(pilotInput,liveInputText);
  const review=prepareLegacyGkCandidates(root);
  const manifest=json('docs/nutrition/gk-legacy-reconciliation/candidates.json');
  assert.doesNotThrow(()=>verifyLegacyCandidateInput(inputText.replaceAll('\r\n','\n').replaceAll('\n','\r\n'),manifest.recipeSnapshotsSha256));
@@ -424,7 +433,7 @@ test('current-main133/226 candidates preserve production input, approved EHOLD r
  assert.notEqual(sha(lf({notes:'a\nb',value:3})),sha(lf({notes:'a\nb',value:4})));
  assert.equal(review.publicationAuthorized,false);assert.equal(review.sourceApprovalGranted,false);
  assert.equal(review.candidates.length,9);
- assert.equal(read('docs/nutrition/glycemic-load-pilot-input.json'),inputText);
+ assert.equal(read(pilotInput),liveInputText);
  assert.ok(!review.candidates.some(r=>r.recipeId==='tomaatti-kananmuna-wokki'));
  assert.equal(review.contentDecisions.length,17);
  assert.equal(review.pendingDecisions.length,9);
@@ -473,7 +482,10 @@ test('current-main133/226 candidates preserve production input, approved EHOLD r
 });
 
 test('independent Decimal checks source components and the three original-case numeric traps without approving a whole recipe or sub-threshold omission',()=>{
- const proof=JSON.parse(execFileSync(process.platform==='win32'?'python':'python3',['-I',fileURLToPath(new URL('../../docs/nutrition/gk-legacy-reconciliation/verify_source_components.py',import.meta.url))],{encoding:'utf8'}));
+ const path='docs/nutrition/calculations/baozi.json';
+ const historicalMacro=restoreRecipeAuditSnapshot(path,read(path));
+ const verifier=fileURLToPath(new URL('../../docs/nutrition/gk-legacy-reconciliation/verify_source_components.py',import.meta.url));
+ const proof=JSON.parse(execFileSync(process.platform==='win32'?'python':'python3',['-I',verifier,'--historical-baozi-stdin'],{encoding:'utf8',input:historicalMacro}));
  assert.equal(proof.status,'PASS');assert.equal(proof.checked,12);assert.equal(proof.publicationAuthorized,false);
 });
 

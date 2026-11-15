@@ -185,7 +185,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     const publicInstructions = visibleHold?.instructions ?? instructions;
     if (!instructions) throw new Error(`Published recipe has no instructions: ${filePath}`);
     const descriptionSection = section(parsed.content, ["Kuvaus", "Description", "Beskrivning", "คำอธิบาย"]);
-    const notes = section(parsed.content, ["Muistiinpanot", "Notes", "Anteckningar", "หมายเหตุ"]);
+    const notes = section(parsed.content, ["Muistiinpanot", "Huomioita", "Notes", "Anteckningar", "หมายเหตุ"]);
     const dietTags = await reviewedDietTagsForSource(data.recipe_id, data.language, filePath, finnishSources.get(data.recipe_id));
     const instructionSteps = [...publicInstructions.matchAll(/^\s*\d+[.)]\s+(.+)$/gm)].map((match) => match[1].trim());
     recipes.push({

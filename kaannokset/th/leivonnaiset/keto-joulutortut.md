@@ -29,7 +29,7 @@ ingredients:
     item: เนย
   - amount: 100
     unit: g
-    item: ครีมชีส
+    item: "ครีมชีสรสธรรมชาติชนิดปราศจากแลคโตส (ไขมัน 25%)"
   - amount: 1
     unit: kpl
     item: ไข่
@@ -39,10 +39,10 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/leivonnaiset/keto-joulutortut.md
 translation_of: keto-joulutortut
-carbs_net_per_serving_g: 3.44
-carbs_total_per_serving_g: 5.57
-protein_per_serving_g: 7.53
-fat_per_serving_g: 24.28
+carbs_net_per_serving_g: 3.78
+carbs_total_per_serving_g: 5.91
+protein_per_serving_g: 5.52
+fat_per_serving_g: 23.41
 ---
 
 # ขนมพายดาวคริสต์มาสแป้งอัลมอนด์

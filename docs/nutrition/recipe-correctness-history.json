@@ -1,0 +1,2244 @@
+{
+  "docs/nutrition/calculations/baozi.json": {
+    "currentSha256": "938518708f698c3d2ce40fc67ed3e367229b1c20331d4c722b72f766ece80cdb",
+    "historicalSha256": "61ed8001140e5d15589260780cf62d188e6ace2999ae74d767f944155ca0859b",
+    "inverseEdits": [
+      [
+        384,
+        5,
+        "          \"carbohydrate\": 81.6,\n          \"fibre\": 1.4,\n          \"polyols\": 0,\n          \"protein\": 0.06,\n          \"fat\": 0.05\n"
+      ],
+      [
+        372,
+        3,
+        "          \"CHO\": 81.6,\n          \"FIBT\": 1.4,\n          \"POLYL\": 0\n"
+      ],
+      [
+        368,
+        1,
+        "        \"state\": \"pure starch proxy\",\n"
+      ],
+      [
+        363,
+        4,
+        "        \"id\": \"fineli-162-release-20\",\n        \"name\": \"JAUHO, PERUNAJAUHO TAI -SUURIMO, PERUNATÄRKKELYS\",\n        \"sourceUrl\": \"https://fineli.fi/fineli/api/v1/foods/162\",\n        \"retrievedAt\": \"2026-10-24\",\n"
+      ],
+      [
+        354,
+        4,
+        "      \"state\": \"pure starch proxy\",\n      \"matchEvidence\": \"maissitärkkelystä maps to fineli-release-20 record 162; state: pure starch proxy.\",\n      \"gramsPerUnit\": 8,\n      \"conversionEvidence\": \"Ingredient-specific tablespoon mass: 8 g/rkl for maissitärkkelystä.\",\n"
+      ],
+      [
+        6,
+        1,
+        "  \"scope\": \"Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.\",\n"
+      ],
+      [
+        3,
+        1,
+        "  \"calculatedAt\": \"2026-10-24\",\n"
+      ]
+    ]
+  },
+  "docs/nutrition/calculations/carnitas-salaattitacot.json": {
+    "currentSha256": "bd7debcd0dc1a128bf2bb8bc4e3f9cba7b346c56f34144dfb7a5d603b22fad74",
+    "historicalSha256": "11c1c2e0d3fd2955c5080ea2fecbebc80526b381e8acd98a5b763d61ed4dad81",
+    "inverseEdits": [
+      [
+        119,
+        2,
+        "          \"protein\": 0.1,\n          \"fat\": 2.7\n"
+      ],
+      [
+        116,
+        1,
+        "          \"carbohydrate\": 0.4,\n"
+      ],
+      [
+        114,
+        1,
+        "        \"polyolsEvidence\": \"AFCD paired available carbohydrate with/without sugar alcohols\",\n"
+      ],
+      [
+        110,
+        2,
+        "        \"state\": \"raw lime\",\n        \"basis\": \"per100g-as-sold\",\n"
+      ],
+      [
+        105,
+        4,
+        "        \"id\": \"afcd-F005198-release-3\",\n        \"name\": \"Lime, native, fruit\",\n        \"sourceUrl\": \"https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd\",\n        \"retrievedAt\": \"2026-10-24\",\n"
+      ],
+      [
+        101,
+        1,
+        "      \"edibleEvidence\": \"Ingredient basis is the documented edible amount\",\n"
+      ],
+      [
+        96,
+        4,
+        "      \"state\": \"raw lime\",\n      \"matchEvidence\": \"Raw lime, peeled; AFCD record F005198.\",\n      \"gramsPerUnit\": 50,\n      \"conversionEvidence\": \"Edible portion set to 50 g per lime; portion conversion reflects peeled edible flesh.\",\n"
+      ],
+      [
+        2,
+        2,
+        "  \"sourceHash\": \"e5053823bbe1a235c09354b3ff1df57d62b2779b3ef446411c42c5a344b5f20e\",\n  \"calculatedAt\": \"2026-10-25\",\n"
+      ]
+    ]
+  },
+  "docs/nutrition/calculations/kantonilainen-hoyrytetty-kala.json": {
+    "currentSha256": "94de2cda67e0dbf5f389d02ab927ab4f18a147d17f0ca08afb8994975a3ba7cd",
+    "historicalSha256": "3cb5f37f753cec8714ece95bfec647abb7740230c2c97adce23ce3ab9365593c",
+    "inverseEdits": [
+      [
+        245,
+        2,
+        "          \"protein\": 0.1,\n          \"fat\": 2.7\n"
+      ],
+      [
+        242,
+        1,
+        "          \"carbohydrate\": 0.4,\n"
+      ],
+      [
+        240,
+        1,
+        "        \"polyolsEvidence\": \"AFCD paired available carbohydrate with/without sugar alcohols\",\n"
+      ],
+      [
+        236,
+        2,
+        "        \"state\": \"raw lime\",\n        \"basis\": \"per100g-as-sold\",\n"
+      ],
+      [
+        231,
+        4,
+        "        \"id\": \"afcd-F005198-release-3\",\n        \"name\": \"Lime, native, fruit\",\n        \"sourceUrl\": \"https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd\",\n        \"retrievedAt\": \"2026-10-24\",\n"
+      ],
+      [
+        227,
+        1,
+        "      \"edibleEvidence\": \"Ingredient basis is the documented edible amount\",\n"
+      ],
+      [
+        222,
+        4,
+        "      \"state\": \"raw lime\",\n      \"matchEvidence\": \"Raw lime, peeled; AFCD record F005198.\",\n      \"gramsPerUnit\": 50,\n      \"conversionEvidence\": \"Edible portion set to 50 g per lime; portion conversion reflects peeled edible flesh.\",\n"
+      ],
+      [
+        2,
+        2,
+        "  \"sourceHash\": \"bedabbb592a31e383953fb4c695d1f841513126cff3c1870fc82297667c3523d\",\n  \"calculatedAt\": \"2026-10-24\",\n"
+      ]
+    ]
+  },
+  "docs/nutrition/calculations/keto-joulutortut.json": {
+    "currentSha256": "7f8d1b009490e75863a5cec1c149f49fe0a6cafea8fb88a7da1c3efe333de362",
+    "historicalSha256": "5805a0fd27a7364d82439583e336efbd198c3b8ad2d4c8678e813b78498dd20e",
+    "inverseEdits": [
+      [
+        112,
+        5,
+        "          \"carbohydrate\": 0,\n          \"fibre\": 0,\n          \"polyols\": 0,\n          \"protein\": 22.31,\n          \"fat\": 32\n"
+      ],
+      [
+        100,
+        3,
+        "          \"CHO\": 0,\n          \"FIBT\": 0,\n          \"POLYL\": 0\n"
+      ],
+      [
+        96,
+        1,
+        "        \"state\": \"cream cheese, 30% fat\",\n"
+      ],
+      [
+        91,
+        4,
+        "        \"id\": \"fineli-641-release-20\",\n        \"name\": \"JUUSTO, KERMAJUUSTO, RASVAA 30 %, TURUNMAA/OLTERMANNI/KORSHOLM/MASURKKA\",\n        \"sourceUrl\": \"https://fineli.fi/fineli/api/v1/foods/641\",\n        \"retrievedAt\": \"2026-10-24\",\n"
+      ],
+      [
+        84,
+        2,
+        "      \"state\": \"cream cheese, 30% fat\",\n      \"matchEvidence\": \"Fineli Release 20 record 641 is cream cheese, closest generic match to plain cream cheese.\",\n"
+      ],
+      [
+        81,
+        1,
+        "      \"item\": \"tuorejuustoa\",\n"
+      ],
+      [
+        6,
+        1,
+        "  \"scope\": \"8 servings; measured ingredient quantities as listed: 150 g mantelijauhoa; 100 g voita; 100 g tuorejuustoa; 1 kpl kananmuna; 40 g luumuhilloa. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded.\",\n"
+      ],
+      [
+        2,
+        2,
+        "  \"sourceHash\": \"c136e12e8273a30a67ec30786dcbfe0c5c343fe6cc67560e50d6681bd6f526ad\",\n  \"calculatedAt\": \"2026-10-25\",\n"
+      ]
+    ]
+  },
+  "docs/nutrition/calculations/kookos-lime-kanacurry.json": {
+    "currentSha256": "cf884f57027ee78220fcdd75bb41c4a804c02cffae141ae2e856d0bec0a52eea",
+    "historicalSha256": "45a7852b781dc24a071d999a39b69d3de388a261d0c7421b9dfe8b7bd50a1de2",
+    "inverseEdits": [
+      [
+        239,
+        2,
+        "          \"protein\": 0.1,\n          \"fat\": 2.7\n"
+      ],
+      [
+        236,
+        1,
+        "          \"carbohydrate\": 0.4,\n"
+      ],
+      [
+        234,
+        1,
+        "        \"polyolsEvidence\": \"AFCD paired available carbohydrate with/without sugar alcohols\",\n"
+      ],
+      [
+        230,
+        2,
+        "        \"state\": \"raw lime\",\n        \"basis\": \"per100g-as-sold\",\n"
+      ],
+      [
+        225,
+        4,
+        "        \"id\": \"afcd-F005198-release-3\",\n        \"name\": \"Lime, native, fruit\",\n        \"sourceUrl\": \"https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd\",\n        \"retrievedAt\": \"2026-10-24\",\n"
+      ],
+      [
+        221,
+        1,
+        "      \"edibleEvidence\": \"Ingredient basis is the documented edible amount\",\n"
+      ],
+      [
+        216,
+        4,
+        "      \"state\": \"raw lime\",\n      \"matchEvidence\": \"Raw lime, peeled; AFCD record F005198.\",\n      \"gramsPerUnit\": 50,\n      \"conversionEvidence\": \"Edible portion set to 50 g per lime; portion conversion reflects peeled edible flesh.\",\n"
+      ],
+      [
+        2,
+        2,
+        "  \"sourceHash\": \"0b2bf8421bd70fd270c8d446cc45f6909d0714a4b0451a3b8eb9b37a34f27833\",\n  \"calculatedAt\": \"2026-10-25\",\n"
+      ]
+    ]
+  },
+  "docs/nutrition/calculations/lindstrominpihvit-kaalilla.json": {
+    "currentSha256": "16d61e9c42e87cb70170d4aa4832471688bc596e42aa0fd4a3fbc6285d5b559e",
+    "historicalSha256": "8fbadfb8b68315f30d5ce482f2e5b6fdb77fd22ece3695bcf6967ce38df25883",
+    "inverseEdits": [
+      [
+        179,
+        1,
+        "      \"matchEvidence\": \"Prepared mustard represented by Fineli mustard record 28; Dijon-specific product is not identified and the recipe quantity is small.\",\n      \"gramsPerUnit\": 6,\n      \"conversionEvidence\": \"Ingredient-specific household measure conversion: 6 g per rkl; recipe quantity converted to edible mass.\",\n"
+      ],
+      [
+        176,
+        2,
+        "      \"amount\": 1,\n      \"unit\": \"rkl\",\n"
+      ],
+      [
+        2,
+        2,
+        "  \"sourceHash\": \"35ed7d78188a1419c9a83df78dfc2629e5656a60b6c9724c289a552691ee8990\",\n  \"calculatedAt\": \"2026-10-24\",\n"
+      ]
+    ]
+  },
+  "docs/nutrition/calculations/sate-ayam.json": {
+    "currentSha256": "a31e884d6634a0bda11bf40306c6e4e58ed3a69fe426027e8ea03900573bd466",
+    "historicalSha256": "aa155524eea27cb25449b2c8336ab593c86045c221047ccc1e3336bba01e6e97",
+    "inverseEdits": [
+      [
+        417,
+        2,
+        "          \"protein\": 0.1,\n          \"fat\": 2.7\n"
+      ],
+      [
+        414,
+        1,
+        "          \"carbohydrate\": 0.4,\n"
+      ],
+      [
+        412,
+        1,
+        "        \"polyolsEvidence\": \"AFCD paired available carbohydrate with/without sugar alcohols\",\n"
+      ],
+      [
+        408,
+        2,
+        "        \"state\": \"raw lime\",\n        \"basis\": \"per100g-as-sold\",\n"
+      ],
+      [
+        403,
+        4,
+        "        \"id\": \"afcd-F005198-release-3\",\n        \"name\": \"Lime, native, fruit\",\n        \"sourceUrl\": \"https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd\",\n        \"retrievedAt\": \"2026-10-24\",\n"
+      ],
+      [
+        399,
+        1,
+        "      \"edibleEvidence\": \"Ingredient basis is the documented edible amount\",\n"
+      ],
+      [
+        394,
+        4,
+        "      \"state\": \"raw lime\",\n      \"matchEvidence\": \"Raw lime, peeled; AFCD record F005198.\",\n      \"gramsPerUnit\": 50,\n      \"conversionEvidence\": \"Edible portion set to 50 g per lime; portion conversion reflects peeled edible flesh.\",\n"
+      ],
+      [
+        2,
+        2,
+        "  \"sourceHash\": \"dcab54e07f0d4689ffb36acb319e5bbaa5385908e1bd2b19ef0a86629f281661\",\n  \"calculatedAt\": \"2026-10-25\",\n"
+      ]
+    ]
+  },
+  "docs/nutrition/calculations/tacokulho-nauta-avokado.json": {
+    "currentSha256": "71551a1ddaad92019aaed58de6fe8fe48d1ea183adcb7dbb7c5ee00b9ed7c632",
+    "historicalSha256": "0f931570a1312a828f63f9aaeb1777ea71038f336762b976df9681dbd03e1ef8",
+    "inverseEdits": [
+      [
+        333,
+        2,
+        "          \"protein\": 0.1,\n          \"fat\": 2.7\n"
+      ],
+      [
+        330,
+        1,
+        "          \"carbohydrate\": 0.4,\n"
+      ],
+      [
+        328,
+        1,
+        "        \"polyolsEvidence\": \"AFCD paired available carbohydrate with/without sugar alcohols\",\n"
+      ],
+      [
+        324,
+        2,
+        "        \"state\": \"raw lime\",\n        \"basis\": \"per100g-as-sold\",\n"
+      ],
+      [
+        319,
+        4,
+        "        \"id\": \"afcd-F005198-release-3\",\n        \"name\": \"Lime, native, fruit\",\n        \"sourceUrl\": \"https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd\",\n        \"retrievedAt\": \"2026-10-24\",\n"
+      ],
+      [
+        315,
+        1,
+        "      \"edibleEvidence\": \"Ingredient basis is the documented edible amount\",\n"
+      ],
+      [
+        310,
+        4,
+        "      \"state\": \"raw lime\",\n      \"matchEvidence\": \"Raw lime, peeled; AFCD record F005198.\",\n      \"gramsPerUnit\": 50,\n      \"conversionEvidence\": \"Edible portion set to 50 g per lime; portion conversion reflects peeled edible flesh.\",\n"
+      ],
+      [
+        2,
+        2,
+        "  \"sourceHash\": \"444372585765653a4cd9bacaf6a0b06efc67caec925e8c67892bb30b2ffeeaca\",\n  \"calculatedAt\": \"2026-10-24\",\n"
+      ]
+    ]
+  },
+  "docs/nutrition/calculations/uunimakkara-sipulipedilla.json": {
+    "currentSha256": "3a2d2eb56906873c95c4c80738f28dbc983bf77241df26890c6768ba76a663e5",
+    "historicalSha256": "391dbdd7d9cf92210bb96fbf4ad31c1e6ff95e9f0869a7883af94f63f22305a4",
+    "inverseEdits": [
+      [
+        137,
+        1,
+        "      \"matchEvidence\": \"Prepared mustard represented by Fineli mustard record 28; Dijon-specific product is not identified and the recipe quantity is small.\",\n      \"gramsPerUnit\": 6,\n      \"conversionEvidence\": \"Ingredient-specific household measure conversion: 6 g per rkl; recipe quantity converted to edible mass.\",\n"
+      ],
+      [
+        134,
+        2,
+        "      \"amount\": 2,\n      \"unit\": \"rkl\",\n"
+      ],
+      [
+        2,
+        2,
+        "  \"sourceHash\": \"2d07fd4bcd97839bc0f5bf815cf4c929d830ec2de718b7c55aa75bd1930e3b0e\",\n  \"calculatedAt\": \"2026-10-24\",\n"
+      ]
+    ]
+  },
+  "docs/nutrition/calculations/vhh-juustokakku.json": {
+    "currentSha256": "e0612bafd541f965d5bb573d6aebac63ff01ca43f643f014ecc6a53692347dd6",
+    "historicalSha256": "9c2165bc07c7c754877b8c03b1b38cc616b439805b62ac95bd5c976cbb9e0399",
+    "inverseEdits": [
+      [
+        152,
+        5,
+        "          \"carbohydrate\": 3,\n          \"fibre\": 0,\n          \"polyols\": 0,\n          \"protein\": 2,\n          \"fat\": 28\n"
+      ],
+      [
+        140,
+        3,
+        "          \"CHO\": 3,\n          \"FIBT\": 0,\n          \"POLYL\": 0\n"
+      ],
+      [
+        136,
+        1,
+        "        \"state\": \"28% creme fraiche, closest local sour-cream style record\",\n"
+      ],
+      [
+        133,
+        2,
+        "        \"sourceUrl\": \"https://fineli.fi/fineli/api/v1/foods/628\",\n        \"retrievedAt\": \"2026-10-24\",\n"
+      ],
+      [
+        124,
+        2,
+        "      \"state\": \"28% creme fraiche, closest local sour-cream style record\",\n      \"matchEvidence\": \"Ingredient mapped to fineli-release-20 record 628; source state: 28% creme fraiche, closest local sour-cream style record.\",\n"
+      ],
+      [
+        121,
+        1,
+        "      \"item\": \"smetanaa\",\n"
+      ],
+      [
+        2,
+        2,
+        "  \"sourceHash\": \"947df4785b0842d5e03c8bd3e97ca21bcc6c47ddac5d5caf63b5f7f75a855988\",\n  \"calculatedAt\": \"2026-10-24\",\n"
+      ]
+    ]
+  },
+  "docs/nutrition/calculations/xiaolongbao.json": {
+    "currentSha256": "937eae0cceebed514eaf57872a30fdbddd4c041e498fa42ee6e2ee082fd935cc",
+    "historicalSha256": "5a42517930d4e71883e57c4b66c847e84f88c3f744ba5e27ca7f37031fd8b48a",
+    "inverseEdits": [
+      [
+        2,
+        1,
+        "  \"sourceHash\": \"e6f83bef8e63f25d67036151be35b757796bd8e669b082eca45cdb7469fe3570\",\n"
+      ]
+    ]
+  },
+  "docs/nutrition/glycemic-load-pilot-input.json": {
+    "currentSha256": "c74f7be2f6e7005c71f40c87f8fd64af70cbea3a83a54a2b1f535c4bc08decad",
+    "historicalSha256": "2e1febb572bc11153e0568e0182201bcd7d98d31d5ab0348455c59d7ae65b470",
+    "inverseEdits": [
+      [
+        21900,
+        1,
+        "          \"excludedReason\": \"Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.\",\n          \"estimatedAvailableCarbohydratePerServingG\": 0,\n          \"negligibleAssumption\": \"Conservative available-carbohydrate bound 0 g per recipe; below 1 g per serving.\",\n          \"massEvidence\": \"Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount.\"\n"
+      ],
+      [
+        21893,
+        5,
+        ""
+      ],
+      [
+        21876,
+        13,
+        "          \"excludedReason\": \"No source-matched composition and preparation was resolved for “pico de galloa”; it is not treated as zero.\",\n          \"massEvidence\": \"Recipe-listed 100 g pico de galloa.\"\n"
+      ],
+      [
+        21855,
+        19,
+        "          \"name\": \"pico de galloa\",\n          \"grams\": 100,\n"
+      ],
+      [
+        21847,
+        6,
+        "          \"massEvidence\": \"Recipe lists 12 romaine leaves; individual leaf mass not specified.\"\n"
+      ],
+      [
+        21839,
+        1,
+        "          \"negligibleAssumption\": \"Plain water has zero available carbohydrate regardless of volume.\",\n          \"massEvidence\": \"Recipe-listed plain water.\"\n"
+      ],
+      [
+        21837,
+        1,
+        "          \"excludedReason\": \"Plain water contributes 0 g available carbohydrate.\",\n"
+      ],
+      [
+        21830,
+        5,
+        ""
+      ],
+      [
+        21820,
+        6,
+        "          \"massEvidence\": \"Recipe-listed 7 g, mapped to VALKOSIPULI (raw garlic).\"\n"
+      ],
+      [
+        21808,
+        6,
+        "          \"massEvidence\": \"Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount.\"\n"
+      ],
+      [
+        21793,
+        6,
+        "          \"massEvidence\": \"Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount.\"\n"
+      ],
+      [
+        21775,
+        9,
+        "          \"grams\": null,\n          \"fineliRecordId\": \"afcd-F005199-release-3\",\n          \"giRecordId\": \"fruit-category-mean-gi-51\",\n          \"excludedReason\": \"The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.\",\n          \"massEvidence\": \"Mapped food state: peeled raw lime; mass conversion unavailable.\"\n"
+      ],
+      [
+        21763,
+        9,
+        "          \"grams\": 215,\n          \"fineliRecordId\": \"fineli-11045-release-20\",\n          \"giRecordId\": \"fruit-category-mean-gi-51\",\n          \"massEvidence\": \"Recipe-listed 215 g, mapped to APPELSIINI, KUORITTU (peeled raw orange).\",\n          \"foodKey\": \"fruit-category-mean\",\n          \"preparationKey\": \"category-mean\",\n          \"giMatchEvidence\": \"Fruits and fruit products category mean: fruit category mean; used only as a broad tamarind-paste analogue; category/analogue estimate, low confidence.\"\n"
+      ],
+      [
+        21754,
+        6,
+        "          \"massEvidence\": \"Recipe-listed 800 g, mapped to SIANLIHA, KESKIARVO (average pork, available carbohydrate 0 g).\"\n"
+      ],
+      [
+        20589,
+        7,
+        "          \"giRecordId\": \"fruit-category-mean-gi-51\",\n          \"excludedReason\": \"The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.\",\n          \"massEvidence\": \"Mapped food state: peeled raw lime; mass conversion unavailable.\"\n"
+      ],
+      [
+        20587,
+        1,
+        "          \"grams\": null,\n"
+      ],
+      [
+        20583,
+        1,
+        "          \"excludedReason\": \"No source-matched composition and preparation was resolved for “kecap manis -kastiketta”; it is not treated as zero.\",\n          \"massEvidence\": \"Recipe-listed 1 rkl kecap manis -kastiketta.\"\n"
+      ],
+      [
+        20562,
+        19,
+        "          \"name\": \"kecap manis -kastiketta\",\n          \"grams\": null,\n"
+      ],
+      [
+        20555,
+        5,
+        "          \"recipeQuantity\": {\"amount\": 200, \"unit\": \"ml\", \"massGrams\": null}\n"
+      ],
+      [
+        20543,
+        1,
+        "          \"massEvidence\": \"Recipe-listed 150 g, mapped to VOI, SUOLATON (unsalted butter).\"\n"
+      ],
+      [
+        20536,
+        6,
+        "          \"fineliRecordId\": \"fineli-576-release-20\",\n"
+      ],
+      [
+        20526,
+        6,
+        "          \"massEvidence\": \"Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount.\"\n"
+      ],
+      [
+        20511,
+        6,
+        "          \"massEvidence\": \"Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount.\"\n"
+      ],
+      [
+        20496,
+        6,
+        "          \"massEvidence\": \"Recipe-listed 7 g, mapped to VALKOSIPULI (raw garlic).\"\n"
+      ],
+      [
+        20484,
+        6,
+        "          \"massEvidence\": \"Mapped food state: lime juice; mass conversion unavailable.\"\n"
+      ],
+      [
+        20476,
+        1,
+        "          \"excludedReason\": \"No source-matched composition and preparation was resolved for “kecap manis -kastiketta”; it is not treated as zero.\",\n          \"massEvidence\": \"Recipe-listed 2 rkl kecap manis -kastiketta.\"\n"
+      ],
+      [
+        20455,
+        19,
+        "          \"name\": \"kecap manis -kastiketta\",\n          \"grams\": null,\n"
+      ],
+      [
+        20447,
+        6,
+        "          \"massEvidence\": \"Recipe-listed 700 g, mapped to Chicken, thigh, lean flesh, raw (raw chicken meat).\"\n"
+      ],
+      [
+        20319,
+        4,
+        "          \"grams\": null,\n          \"fineliRecordId\": \"afcd-F005199-release-3\",\n          \"giRecordId\": \"fruit-category-mean-gi-51\",\n          \"excludedReason\": \"The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.\",\n          \"massEvidence\": \"Mapped food state: peeled raw lime; mass conversion unavailable.\"\n"
+      ],
+      [
+        20276,
+        5,
+        "          \"recipeQuantity\": {\"amount\": 400, \"unit\": \"ml\", \"massGrams\": null}\n"
+      ],
+      [
+        19804,
+        1,
+        "          \"giMatchEvidence\": \"Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence.\"\n"
+      ],
+      [
+        19801,
+        1,
+        "          \"massEvidence\": \"Recipe-listed 100 g, mapped to TUOREJUUSTO, KOTIJUUSTO, RASVAA 9-14 %, MAALAISJUUSTO (plain fresh cheese, closest generic Fineli match).\",\n"
+      ],
+      [
+        19799,
+        1,
+        "          \"fineliRecordId\": \"fineli-650-release-20\",\n"
+      ],
+      [
+        19797,
+        1,
+        "          \"name\": \"tuorejuustoa\",\n"
+      ],
+      [
+        17854,
+        1,
+        "          \"excludedReason\": \"Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.\",\n          \"estimatedAvailableCarbohydratePerServingG\": 0.125,\n          \"negligibleAssumption\": \"Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.\",\n          \"massEvidence\": \"Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount.\"\n"
+      ],
+      [
+        17847,
+        5,
+        ""
+      ],
+      [
+        17834,
+        9,
+        "          \"grams\": 24,\n          \"fineliRecordId\": \"fineli-11521-release-20\",\n          \"giRecordId\": \"rice-category-mean-gi-67\",\n          \"massEvidence\": \"Recipe-listed 24 g, mapped to RIISI PITKÄJYVÄINEN, PUUROUTUMATON (dry uncooked long-grain white rice).\",\n          \"foodKey\": \"rice-category-mean\",\n          \"preparationKey\": \"category-mean\",\n          \"giMatchEvidence\": \"Rice category mean: rice category mean; rice flour is a broad grain-form analogue; category/analogue estimate, low confidence.\"\n"
+      ],
+      [
+        17830,
+        1,
+        "          \"negligibleAssumption\": \"Plain salt has zero available carbohydrate.\",\n          \"massEvidence\": \"Recipe-listed salt; not weighed.\"\n"
+      ],
+      [
+        17828,
+        1,
+        "          \"excludedReason\": \"Plain salt contributes no available carbohydrate.\",\n"
+      ],
+      [
+        17821,
+        5,
+        ""
+      ],
+      [
+        17816,
+        1,
+        "          \"excludedReason\": \"Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.\",\n          \"estimatedAvailableCarbohydratePerServingG\": 0.125,\n          \"negligibleAssumption\": \"Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.\",\n          \"massEvidence\": \"Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount.\"\n"
+      ],
+      [
+        17809,
+        5,
+        ""
+      ],
+      [
+        17804,
+        1,
+        "          \"excludedReason\": \"Pure edible oil contributes no available carbohydrate.\",\n          \"estimatedAvailableCarbohydratePerServingG\": 0,\n          \"negligibleAssumption\": \"Pure edible oil has zero available carbohydrate.\",\n          \"massEvidence\": \"Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate.\"\n"
+      ],
+      [
+        17797,
+        5,
+        ""
+      ],
+      [
+        17792,
+        1,
+        "          \"massEvidence\": \"Recipe-listed 18 g, mapped to MAUSTEKASTIKE, SOIJAKASTIKE (soy sauce).\"\n"
+      ],
+      [
+        17784,
+        7,
+        "          \"grams\": 18,\n          \"fineliRecordId\": \"fineli-31-release-20\",\n"
+      ],
+      [
+        17780,
+        1,
+        "          \"excludedReason\": \"Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.\",\n          \"estimatedAvailableCarbohydratePerServingG\": 0.125,\n          \"negligibleAssumption\": \"Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.\",\n          \"massEvidence\": \"Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount.\"\n"
+      ],
+      [
+        17773,
+        5,
+        ""
+      ],
+      [
+        17744,
+        25,
+        "          \"excludedReason\": \"No source-matched composition and preparation was resolved for “hyytelöitynyttä lihalientä”; it is not treated as zero.\",\n          \"massEvidence\": \"Recipe-listed 150 g hyytelöitynyttä lihalientä.\"\n"
+      ],
+      [
+        17737,
+        5,
+        "          \"fineliRecordId\": \"fineli-713-release-20\",\n          \"giRecordId\": null,\n          \"massEvidence\": \"Recipe-listed 300 g, mapped to SIANLIHA, KESKIARVO (average pork, available carbohydrate 0 g).\"\n        },\n        {\n          \"name\": \"hyytelöitynyttä lihalientä\",\n          \"grams\": 150,\n"
+      ],
+      [
+        17718,
+        15,
+        "          \"excludedReason\": \"No source-matched composition and preparation was resolved for “pyöreitä dumpling-taikinalevyjä”; it is not treated as zero.\",\n          \"massEvidence\": \"Recipe-listed 24 kpl pyöreitä dumpling-taikinalevyjä.\"\n"
+      ],
+      [
+        17709,
+        7,
+        "          \"name\": \"pyöreitä dumpling-taikinalevyjä\",\n          \"grams\": null,\n"
+      ],
+      [
+        11980,
+        1,
+        "          \"massEvidence\": \"AFCD edible lime portion 50 g.\"\n"
+      ],
+      [
+        11977,
+        2,
+        "          \"grams\": 50,\n          \"fineliRecordId\": \"afcd-F005198-release-3\",\n"
+      ],
+      [
+        11659,
+        1,
+        "          \"massEvidence\": \"Edible portion set to 50 g per lime; portion conversion reflects peeled edible flesh.\"\n"
+      ],
+      [
+        11656,
+        2,
+        "          \"grams\": 50,\n          \"fineliRecordId\": \"afcd-F005198-release-3\",\n"
+      ],
+      [
+        11584,
+        1,
+        "          \"massEvidence\": \"Edible portion set to 50 g per lime; portion conversion reflects peeled edible flesh.\",\n          \"excludedReason\": \"Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.\",\n          \"estimatedAvailableCarbohydratePerServingG\": 0.05,\n          \"negligibleAssumption\": \"Calculated from the linked food record and documented recipe quantity.\"\n"
+      ],
+      [
+        11581,
+        2,
+        "          \"grams\": 50,\n          \"fineliRecordId\": \"afcd-F005198-release-3\",\n"
+      ],
+      [
+        10758,
+        1,
+        "          \"massEvidence\": \"Ingredient-specific household measure conversion: 6 g per rkl; recipe quantity converted to edible mass.\",\n          \"excludedReason\": \"Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.\",\n          \"estimatedAvailableCarbohydratePerServingG\": 0.2115,\n          \"negligibleAssumption\": \"Calculated from the linked food record and documented recipe quantity.\"\n"
+      ],
+      [
+        10755,
+        1,
+        "          \"grams\": 6,\n"
+      ],
+      [
+        10556,
+        1,
+        "          \"massEvidence\": \"Ingredient-specific household measure conversion: 6 g per rkl; recipe quantity converted to edible mass.\",\n          \"excludedReason\": \"Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.\",\n          \"estimatedAvailableCarbohydratePerServingG\": 0.423,\n          \"negligibleAssumption\": \"Calculated from the linked food record and documented recipe quantity.\"\n"
+      ],
+      [
+        10553,
+        1,
+        "          \"grams\": 12,\n"
+      ],
+      [
+        5024,
+        1,
+        "          \"massEvidence\": \"Ingredient mapped to fineli-release-20 record 628; source state: 28% creme fraiche, closest local sour-cream style record.\",\n"
+      ],
+      [
+        5020,
+        1,
+        "          \"name\": \"smetanaa\",\n"
+      ],
+      [
+        3017,
+        2,
+        "          \"massEvidence\": \"Ingredient-specific tablespoon mass: 8 g/rkl for maissitärkkelystä.\",\n          \"giMatchEvidence\": \"Potato-products category mean is not a valid match for cornstarch; remove the unrelated GI mapping.\"\n"
+      ],
+      [
+        3014,
+        2,
+        "          \"grams\": 8,\n          \"fineliRecordId\": \"fineli-162-2026-10-24\",\n"
+      ]
+    ]
+  },
+  "docs/nutrition/glycemic-load-recipe-bindings.json": {
+    "currentSha256": "ee1f15c31a2a2d40b1a3825c5df7505ddd38cfc72b140a3fbf4f0e900f014fe1",
+    "historicalSha256": "24c180056853d4725e7d490b0357b4a1d98dff5f9733d962700083ac87f410b1",
+    "inverseEdits": [
+      [
+        974,
+        1,
+        "    \"carnitas-salaattitacot\": \"db20020a8735e1a6c36d0a8bd2c82b61c0d8dad5f86270d7d5e7aeec2eb4f5b9\",\n"
+      ],
+      [
+        955,
+        1,
+        "    \"sate-ayam\": \"17ae64541eb223a108b80158f4854454c5bd339e83c87c0603cc6b23e6616a01\",\n"
+      ],
+      [
+        945,
+        1,
+        "    \"keto-joulutortut\": \"f92c0ec7d91f3022076abfc03c9c9c900b747d4f8b6e6c7c37e54f66877725c5\",\n"
+      ],
+      [
+        920,
+        1,
+        "    \"xiaolongbao\": \"7ee1c6147f902365c20d55170e80fb2b569eac92b2e50bdb97bccf2b75685008\",\n"
+      ],
+      [
+        820,
+        1,
+        "    \"pho-bo\": \"5e522582e1624e8b6041445ba9d3bf77cdfc531e79a722dad360b55dcedf1908\",\n"
+      ],
+      [
+        816,
+        2,
+        "    \"kantonilainen-hoyrytetty-kala\": \"7c0b58ad8d122340cd9e1a51bad80f5dda6b219f8f694f2638bc162a0792950c\",\n    \"tacokulho-nauta-avokado\": \"852093bf2c4abca5e5d9dd86e0104cdd4a14b841a0e7bd7732d436cbe42a33ba\",\n"
+      ],
+      [
+        708,
+        1,
+        "    \"baozi\": \"7a5938588f98ce6a27956dab1f35700029064f3fe22cf6b4199055bbdd8739eb\",\n"
+      ],
+      [
+        646,
+        1,
+        "    \"carnitas-salaattitacot\": \"8f1369a533361a2807c8cf07a0027a54a2503c3400636fea41751d624b0af7aa\",\n"
+      ],
+      [
+        627,
+        1,
+        "    \"sate-ayam\": \"ec904e136679a62223057087e9c4ccc0e8867e46f8f88f9c27294bbd59f65353\",\n"
+      ],
+      [
+        617,
+        1,
+        "    \"keto-joulutortut\": \"a8e44f6b7f8d89a63af5784504a6766bf2e27a20df7aab3b633b6fc76823a27c\",\n"
+      ],
+      [
+        592,
+        1,
+        "    \"xiaolongbao\": \"e7ea7178d9c5b609d6c5b03fc47ecc25956ae4dfb49b72381bb383ae0c08ed81\",\n"
+      ],
+      [
+        492,
+        1,
+        "    \"pho-bo\": \"29bd84c27385495445ff2542618dd6e54ee7f3212e61a502707186967b6c401a\",\n"
+      ],
+      [
+        488,
+        2,
+        "    \"kantonilainen-hoyrytetty-kala\": \"1dd0525ad2ef8bb96c0173cec68ecb7d3819c64aebaa2697482a6ae4a679e78d\",\n    \"tacokulho-nauta-avokado\": \"75f3777dedc8747bb3706501db04105f6a9b0805b94c098528d02f83a525c746\",\n"
+      ],
+      [
+        478,
+        1,
+        "    \"lindstrominpihvit-kaalilla\": \"b5556f7d215315530bfe8751395240e5f9018a92ece6c8308c914d7c99898d23\",\n"
+      ],
+      [
+        475,
+        1,
+        "    \"uunimakkara-sipulipedilla\": \"795c869528c308ded6e3af51b24581e7fbf259984e57b179e04900dc86532272\",\n"
+      ],
+      [
+        402,
+        1,
+        "    \"vhh-juustokakku\": \"bf5e310d378aa7fcdf575274b9c0969a9eb6c004d1dd8f7e918c07ad165f4b27\",\n"
+      ],
+      [
+        380,
+        1,
+        "    \"baozi\": \"49ad65ac91f6d1807789919fa73e2868f38e11d7ba08886d4e49cc39a61649ff\",\n"
+      ],
+      [
+        325,
+        1,
+        "    \"xiaolongbao\": \"a86c0c8b73c35487422b110bc4e60814279ed298d46829323c834c4042c973d9\",\n"
+      ],
+      [
+        300,
+        1,
+        "    \"vhh-juustokakku\": \"55c06ccc6f0a18e6054fd034f3142fa1505becc8be96a65708163a71da3d00f4\",\n"
+      ],
+      [
+        284,
+        1,
+        "    \"uunimakkara-sipulipedilla\": \"ac6498793d66feb753d4895720e6173edea11243429fe90fc2f5b5fe1f00ba9a\",\n"
+      ],
+      [
+        247,
+        1,
+        "    \"sate-ayam\": \"80dddf703a42d12cce72418042a13af47163a58cbce1d03b8e1dac42f0914cca\",\n"
+      ],
+      [
+        160,
+        1,
+        "    \"lindstrominpihvit-kaalilla\": \"94b2374ab86ba0b5f3c25af05986354311897005dc77e7ecb4748fba2ef8616c\",\n"
+      ],
+      [
+        106,
+        1,
+        "    \"keto-joulutortut\": \"1bfdaf44063e6ef5f96b21bf22ab56b74c903ca95c169a32cc4fb6e18e66eebe\",\n"
+      ],
+      [
+        14,
+        1,
+        "    \"carnitas-salaattitacot\": \"863ff2fb006ccfdc3fade7319be12b27ed0692155a1cab9e968c25dacabb2ca9\",\n"
+      ]
+    ]
+  },
+  "kaannokset/en/aamupalat/intialainen-besan-chilla.md": {
+    "currentSha256": "bd43b850d49ce39a18dd71fefb7a453b9c352667965e6a76d4b0625e77f92cbf",
+    "historicalSha256": "c880011af2cfb4dc1f039366d7fd91005f47dcb8c71b4b5b7956d3485c9458f9",
+    "inverseEdits": [
+      [
+        59,
+        1,
+        "A measured home-kitchen version following the Finnish source; this text is an unpublished translation draft.\n"
+      ]
+    ]
+  },
+  "kaannokset/en/aamupalat/karibia-mango-limejogurtti.md": {
+    "currentSha256": "4e64b346eac5049606c38a6084479089b697db7448e957e77c3dd65976f98b8f",
+    "historicalSha256": "c2bc29086684614e38798045ff686628e19ce017f403e7ccd7ac3bd066bcc4f8",
+    "inverseEdits": [
+      [
+        66,
+        0,
+        "## Notes\n\nThis is an ingredient-matched draft. Nutrition and glycemic-load approval require separate source review.\n\n"
+      ]
+    ]
+  },
+  "kaannokset/en/aamupalat/thai-jok-kanalla.md": {
+    "currentSha256": "9dc0b381dd1d5ffe5b18a793650e38fe3fca54a3b8f9d4d7dad0e7fe9bcfaf20",
+    "historicalSha256": "7190dccf787b6443b5312d5ee70cfd447016b84f3fbff918e53e877117c00b38",
+    "inverseEdits": [
+      [
+        61,
+        1,
+        "1. Rinse the rice and simmer it gently in water until it becomes a soft porridge. Stir occasionally.\n"
+      ],
+      [
+        57,
+        1,
+        "This home-style version makes Thai chicken rice porridge. Adjust the seasoning and toppings to taste.\n"
+      ],
+      [
+        33,
+        1,
+        "time_total_min: 25\n"
+      ]
+    ]
+  },
+  "kaannokset/en/aamupalat/thai-kananmunat-kookoscurryssa.md": {
+    "currentSha256": "aa9ceb72e8fe7519361f58419291da0d3d7850ea80bd81f73c6761b9a5a185d0",
+    "historicalSha256": "31f600d7f2ae007588bf06620f496a85d966aeaf3871ac4333c436c94928b790",
+    "inverseEdits": [
+      [
+        59,
+        1,
+        "A measured home-kitchen version following the Finnish source; this text is an unpublished translation draft.\n"
+      ]
+    ]
+  },
+  "kaannokset/en/aamupalat/thai-porsasjok.md": {
+    "currentSha256": "c18c52c0046e83497a144e735f69f6c0e8fce1b6240f569bb86cf04ce47d0158",
+    "historicalSha256": "d466699e630b82db1ee7ac978796be2f6447206a630bb33c08f0b60b21db6dff",
+    "inverseEdits": [
+      [
+        61,
+        1,
+        "1. Rinse the rice and simmer it gently in water until it becomes a soft porridge. Stir occasionally.\n"
+      ],
+      [
+        57,
+        1,
+        "This home-style version makes Thai pork jok with ginger. Adjust the seasoning and toppings to taste.\n"
+      ],
+      [
+        33,
+        1,
+        "time_total_min: 25\n"
+      ]
+    ]
+  },
+  "kaannokset/en/aamupalat/uunimuna-avokadot.md": {
+    "currentSha256": "f5e1063ad291af51ae17038a0556b865ba619d1074dc2eba9e7e19ccd5eee4c5",
+    "historicalSha256": "4888825625a3d719cbff9de99ba742cfc623fc3330365342b10e25eab59648fd",
+    "inverseEdits": [
+      [
+        55,
+        1,
+        "A measured home-kitchen version following the Finnish source; this text is an unpublished translation draft.\n"
+      ]
+    ]
+  },
+  "kaannokset/en/aamupalat/valimerellinen-jogurttikulho-hunajalla.md": {
+    "currentSha256": "3c8b6d378a30d345fa5b2c2f86fb13c3cb096ffccd9a2347f5e20aece02bd141",
+    "historicalSha256": "8510183cf6d60f97135bd8449d17bc03f40a83f09b2a9df349e1fa9170fa5d7f",
+    "inverseEdits": [
+      [
+        63,
+        0,
+        "## Notes\n\nThis is an ingredient-matched draft. Nutrition and glycemic-load approval require separate source review.\n\n"
+      ]
+    ]
+  },
+  "kaannokset/en/aamupalat/vietnamilainen-kahvijogurtti-banaanilla.md": {
+    "currentSha256": "5dbf071f368015476a4c877ec092fb9033cb6fd5083a5cb0c290b5ee285e213a",
+    "historicalSha256": "dc4afb5166262d837619a9142ea6e79d101acb74dd3b442edb4dc0c32730210c",
+    "inverseEdits": [
+      [
+        65,
+        1,
+        "The banana's edible gram weight and the particular condensed-milk product remain source-review items.\n"
+      ]
+    ]
+  },
+  "kaannokset/en/alkuruoat/xiaolongbao.md": {
+    "currentSha256": "72b6e8c557eeb7c520221e50c4f332956b49b5e72db8db3a9c6fb435f08bd2dc",
+    "historicalSha256": "8f2070324a519f7d5d08acc3b9438c21484e93f088c4d1ad1b36c30e47f0789b",
+    "inverseEdits": [
+      [
+        79,
+        1,
+        "1. Dissolve the gelatin in the stock and chill for at least 30 minutes until set, then cut into small cubes.\n"
+      ],
+      [
+        75,
+        1,
+        "Homemade soup dumplings have a pork filling with chilled stock jelly that melts into broth as they steam.\n"
+      ],
+      [
+        37,
+        1,
+        "    item: gelatin\n"
+      ],
+      [
+        8,
+        1,
+        "time_total_min: 90\n"
+      ]
+    ]
+  },
+  "kaannokset/en/jalkiruoat/keto-mutakakku.md": {
+    "currentSha256": "d8ecace2c7674f550807f655f88d6ae26193b05a61a8f4e7708231bf4dc89796",
+    "historicalSha256": "9b0c79678ffcb3bf11adb3d3618e40410b01724c2723503ab5e3a630c1910dbf",
+    "inverseEdits": [
+      [
+        67,
+        1,
+        "3. Whisk the eggs and erythritol until fluffy. Mix in the melted chocolate and butter.\n"
+      ]
+    ]
+  },
+  "kaannokset/en/jalkiruoat/vhh-juustokakku.md": {
+    "currentSha256": "3dfe87fd759f3862cb3b91e9f280d89b396e2262caca3c61a922fb5994c91e89",
+    "historicalSha256": "600feb72663bd27f1d1f408be4d47d2e0e45c8afb8e723e6aec0ec5c5831820b",
+    "inverseEdits": [
+      [
+        75,
+        2,
+        ""
+      ],
+      [
+        68,
+        1,
+        "3. Mix the cream cheese and erythritol until smooth. Add the sour cream, the eggs one at a time, the vanilla and the lemon juice.\n"
+      ],
+      [
+        24,
+        1,
+        "    item: thick sour cream (smetana)\n"
+      ]
+    ]
+  },
+  "kaannokset/en/leivonnaiset/keto-joulutortut.md": {
+    "currentSha256": "98bf141430c24885bc14bb726d4ca291a6279bf79cb11303c75a041350658619",
+    "historicalSha256": "a3c356c88bc122b83e2265020655bb5364f0c3fd19ba5ad85f003f54740b9ab1",
+    "inverseEdits": [
+      [
+        41,
+        4,
+        "carbs_net_per_serving_g: 3.44\ncarbs_total_per_serving_g: 5.57\nprotein_per_serving_g: 7.53\nfat_per_serving_g: 24.28\n"
+      ],
+      [
+        31,
+        1,
+        "    item: cream cheese\n"
+      ]
+    ]
+  },
+  "kaannokset/en/paaruoat/amritsari-kala.md": {
+    "currentSha256": "0092c9211b979fa1bf57ed6d83a6ff48311d4c2ce92db62b7fee233a769f657c",
+    "historicalSha256": "e5ea36cf2e6a274c9527b368fc56c658afa5ac640ebdb43e54ef8ee6f68b4cef",
+    "inverseEdits": [
+      [
+        80,
+        1,
+        "1. Thaw the pollock in the refrigerator. Cut into bite-sized pieces and pat dry.\n"
+      ],
+      [
+        76,
+        1,
+        "The Punjabi Amritsari fish gets its crispy crust from chickpea flour, yogurt and aromatic spices.\n"
+      ]
+    ]
+  },
+  "kaannokset/en/paaruoat/baozi.md": {
+    "currentSha256": "bb639a5801541dfbe36dbd04bda5ea0c0d3dec5acf6693a8a4785083ff199cdd",
+    "historicalSha256": "e5eae99171166ac81cf07fd5866ebb5649524fa4da3d1f783406a50d83f6934c",
+    "inverseEdits": [
+      [
+        66,
+        1,
+        "fat_per_serving_g: 14.53\n"
+      ],
+      [
+        63,
+        2,
+        "carbs_net_per_serving_g: 80.36\ncarbs_total_per_serving_g: 84.52\n"
+      ]
+    ]
+  },
+  "kaannokset/en/paaruoat/carnitas-salaattitacot.md": {
+    "currentSha256": "efc69b60eee34227a0f8ab87b1ad86c1e1b2f02561795cfbae983a1e83eecb44",
+    "historicalSha256": "b74860dd4607a1c000c648dfd2b2e8eeade7bb726c95a39466f01bf513ac8350",
+    "inverseEdits": [
+      [
+        57,
+        4,
+        "carbs_net_per_serving_g: 4.9\ncarbs_total_per_serving_g: 7.4\nprotein_per_serving_g: 36.94\nfat_per_serving_g: 30.6\n"
+      ],
+      [
+        26,
+        1,
+        ""
+      ]
+    ]
+  },
+  "kaannokset/en/paaruoat/kantonilainen-hoyrytetty-kala.md": {
+    "currentSha256": "1bc947087b5546cd4b1bd4184aa55c46fccdff6fd4266f2dc256cb2988ce23d6",
+    "historicalSha256": "48824edbfeee17d259900874071bf6ad5f9035d99e7312cd1b078135c91df10c",
+    "inverseEdits": [
+      [
+        51,
+        4,
+        "carbs_net_per_serving_g: 3.13\ncarbs_total_per_serving_g: 4.58\nprotein_per_serving_g: 31.99\nfat_per_serving_g: 9.04\n"
+      ],
+      [
+        47,
+        1,
+        "    note: for serving\n"
+      ]
+    ]
+  },
+  "kaannokset/en/paaruoat/kookos-lime-kanacurry.md": {
+    "currentSha256": "a783a018f2727489afa197e1d17ffd9a046c37d8b10c92571ddce420d04b078e",
+    "historicalSha256": "9641c5d71eba9f9f915129b533d62819ccab1d1087c25f14d4be708bf88f3954",
+    "inverseEdits": [
+      [
+        53,
+        4,
+        "carbs_net_per_serving_g: 5.66\ncarbs_total_per_serving_g: 8.63\nprotein_per_serving_g: 26.99\nfat_per_serving_g: 21.82\n"
+      ],
+      [
+        38,
+        1,
+        ""
+      ]
+    ]
+  },
+  "kaannokset/en/paaruoat/lindstrominpihvit-kaalilla.md": {
+    "currentSha256": "6546c7db00bd5a50671fbbec8617ebbca8948890256a46a2e06005cbd85179fe",
+    "historicalSha256": "e584e87321924406f71241f41e4a78def7326ae3dd00e538358b861ed1b5cf08",
+    "inverseEdits": [
+      [
+        52,
+        4,
+        "carbs_net_per_serving_g: 9.54\ncarbs_total_per_serving_g: 12.77\nprotein_per_serving_g: 31.9\nfat_per_serving_g: 18.32\n"
+      ],
+      [
+        32,
+        2,
+        "  - amount: 1\n    unit: tbsp\n"
+      ]
+    ]
+  },
+  "kaannokset/en/paaruoat/pho-bo.md": {
+    "currentSha256": "b144dc3e8d225da428c611ac593785101b76d046047d832e9ed4ead1ee2ef40f",
+    "historicalSha256": "895a9b716c1c5d1fc3d1414989c6badaa0c1b33ed53d7d6051a6ee387f98f675",
+    "inverseEdits": [
+      [
+        46,
+        2,
+        "6. Bring the strained broth back to a boil and cook the beef slices in batches in it. Check with a food thermometer that the beef reaches at least 63 °C and allow it to rest for three minutes before serving. Divide the cooked noodles and beef among bowls, pour over the hot broth and serve with bean sprouts, Thai basil, coriander and lime.\n"
+      ],
+      [
+        26,
+        1,
+        "  - {amount: 150, unit: g, item: \"bean sprouts\", note: \"for serving\"}\n"
+      ]
+    ]
+  },
+  "kaannokset/en/paaruoat/sate-ayam.md": {
+    "currentSha256": "34a9a9b057464c2ad9c8c703c16732ac1509d13f6da220553e36bac34cb71cf1",
+    "historicalSha256": "57ef4020d93ba728ffa90f1a7b77a0bbf5527d0439b52de5f99f32e9df5ce27e",
+    "inverseEdits": [
+      [
+        26,
+        5,
+        "  - {amount: 1, unit: pcs, item: \"lime\", note: \"cut into wedges for serving\"}\ncarbs_net_per_serving_g: 13.59\ncarbs_total_per_serving_g: 17.87\nprotein_per_serving_g: 45.52\nfat_per_serving_g: 29.69\n"
+      ]
+    ]
+  },
+  "kaannokset/en/paaruoat/tacokulho-nauta-avokado.md": {
+    "currentSha256": "334c01415d1021f141ac3aafb2557a51a557aaa0fa22b7915d0b070f20aa0c53",
+    "historicalSha256": "291459ac12bbb9207bf770f7e5927ba04be2565c70953e2614b7aebfd3ada671",
+    "inverseEdits": [
+      [
+        51,
+        4,
+        "carbs_net_per_serving_g: 2.71\ncarbs_total_per_serving_g: 5.28\nprotein_per_serving_g: 31.27\nfat_per_serving_g: 26.41\n"
+      ],
+      [
+        44,
+        1,
+        ""
+      ]
+    ]
+  },
+  "kaannokset/en/paaruoat/uunifetapasta-kirsikkatomaateilla.md": {
+    "currentSha256": "134dfa91212ea715c281c31ba782c497354abd88eef7b92fa0f56ba02aef0888",
+    "historicalSha256": "74fd244d7193136e9850183fdda96c01577a0a43d1024e1fafa6edf69cd48188",
+    "inverseEdits": [
+      [
+        73,
+        1,
+        "- **Background source:** https://liemessa.fi/2019/02/uunifetapasta/\n"
+      ]
+    ]
+  },
+  "kaannokset/en/paaruoat/uunimakkara-sipulipedilla.md": {
+    "currentSha256": "26eccc31708e6c84a1eeb413e8e2af18f87ecce510f348c7295756639a3aaae7",
+    "historicalSha256": "e423cbfec82b12d1b8d660c171ce8c91e9bfa0b27609e164b71f0d6b831c9e1c",
+    "inverseEdits": [
+      [
+        49,
+        4,
+        "carbs_net_per_serving_g: 12.02\ncarbs_total_per_serving_g: 12.7\nprotein_per_serving_g: 19.58\nfat_per_serving_g: 38.5\n"
+      ],
+      [
+        26,
+        2,
+        "  - amount: 2\n    unit: tbsp\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/aamupalat/intialainen-besan-chilla.md": {
+    "currentSha256": "cad52260206bd32f5a517bf4819eea5d034cef2bb9876721fbf659a6f916b6ca",
+    "historicalSha256": "6f4ca4cb98d4326c5f98cef5c41b984b47d3f0328b297e133dcb0cad633656d2",
+    "inverseEdits": [
+      [
+        59,
+        1,
+        "Ett uppvägt hemköksrecept enligt den finska källan; denna text är ett opublicerat översättningsutkast.\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/aamupalat/karibia-mango-limejogurtti.md": {
+    "currentSha256": "18ecf144e33f160eb0023d36251f7fe4d0499b6e542df366ca6834a01ce5ccd9",
+    "historicalSha256": "0d75861677fca4bff65afb55c149cb122f3ada997259e66110b58f131fbdcb64",
+    "inverseEdits": [
+      [
+        66,
+        0,
+        "## Anteckningar\n\nDetta är ett utkast som följer mängderna i den finska källan. Närings- och glykemiskt belastningsvärde kräver separat granskning.\n\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/aamupalat/malesialainen-kookos-banaanikulho.md": {
+    "currentSha256": "5376c1a4a72cfab91ee413a33042fb224fe2011d7ec72566839129f48b564441",
+    "historicalSha256": "6714f2853eb31e6623cab0976d104247c665f2baa1073c0ca12276f0ba1af511",
+    "inverseEdits": [
+      [
+        62,
+        1,
+        "## Tips\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/aamupalat/thai-jok-kanalla.md": {
+    "currentSha256": "24b05dbfab641f8a253a5ed117bb4a4d026da427f8b33fcb4e4c7754ab9cbf2d",
+    "historicalSha256": "f395fecd443fc9009b452b7c3430036a0e3b7cb35fc75ba11d7a93da0ebb4909",
+    "inverseEdits": [
+      [
+        61,
+        1,
+        "1. Skölj riset och låt det sjuda i vatten på låg värme tills det blir en mjuk gröt. Rör om då och då.\n"
+      ],
+      [
+        57,
+        1,
+        "Det här receptet för hemmaköket ger thailändsk risgröt med kyckling. Anpassa kryddning och tillbehör efter smak.\n"
+      ],
+      [
+        33,
+        1,
+        "time_total_min: 25\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/aamupalat/thai-kananmunat-kookoscurryssa.md": {
+    "currentSha256": "dee227c7e5e44deeacbeb5348d852b77c2b8d5f7302a8cc945a87d7bc2ad25ac",
+    "historicalSha256": "379ac7b231ef42eb51b6b9a6e999c2d7ba720051e079cf2bd004cd73c99daf98",
+    "inverseEdits": [
+      [
+        59,
+        1,
+        "Ett uppvägt hemköksrecept enligt den finska källan; denna text är ett opublicerat översättningsutkast.\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/aamupalat/thai-porsasjok.md": {
+    "currentSha256": "66e192fc6f26045e44cdbc3efee9ab83c98f19f322d19404c96576d34ca89597",
+    "historicalSha256": "426b8c9587cb1d32ba53486282ebed14509a2927ef48a400216cc499bbcfd095",
+    "inverseEdits": [
+      [
+        61,
+        1,
+        "1. Skölj riset och låt det sjuda i vatten på låg värme tills det blir en mjuk gröt. Rör om då och då.\n"
+      ],
+      [
+        57,
+        1,
+        "Det här receptet för hemmaköket ger thailändsk risgröt med fläskfärs och ingefära. Anpassa kryddning och tillbehör efter smak.\n"
+      ],
+      [
+        33,
+        1,
+        "time_total_min: 25\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/aamupalat/uunimuna-avokadot.md": {
+    "currentSha256": "285c2fd9b9df181f37a6462b8205793fc8b562e9189e2a70a20d0f54397a6add",
+    "historicalSha256": "e768bd64ed7b8095f78d9ed023d8164393a6a29fc915532264baecccee2291a4",
+    "inverseEdits": [
+      [
+        55,
+        1,
+        "Ett uppvägt hemköksrecept enligt den finska källan; denna text är ett opublicerat översättningsutkast.\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/aamupalat/valimerellinen-jogurttikulho-hunajalla.md": {
+    "currentSha256": "a2497cbc632f730a1c418d2fca9546feb2999649816be7c0b9c63eab13d6960e",
+    "historicalSha256": "28c5d7ab9621c3ea62cc44078314b412b1174ae64a4c857bbd974afb60a2a1b5",
+    "inverseEdits": [
+      [
+        63,
+        0,
+        "## Anteckningar\n\nDetta är ett utkast som följer mängderna i den finska källan. Närings- och glykemiskt belastningsvärde kräver separat granskning.\n\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/aamupalat/vietnamilainen-kahvijogurtti-banaanilla.md": {
+    "currentSha256": "1f43bf412db8fb19f458860efdc96d4b029668c5bda2c11108917ef29c9bea3d",
+    "historicalSha256": "5be00bc8dbad2b31de53cbabf0b83b4db4dbcd3fd7831f1b9fad2560936c7dbd",
+    "inverseEdits": [
+      [
+        65,
+        1,
+        "Bananens ätliga gramvikt och valet av kondenserad mjölk måste kontrolleras mot näringsunderlaget.\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/alkuruoat/xiaolongbao.md": {
+    "currentSha256": "87145922b656eb3a3698bad3f73ad5f9fd40dafb49ffbb2d093017ac82a25751",
+    "historicalSha256": "9759294d1d1ae44a36408d26c964bce312ed63096904b6bcd7c290ae45c1be62",
+    "inverseEdits": [
+      [
+        79,
+        1,
+        "1. Lös upp gelatinet i buljongen och kyl i minst 30 minuter tills det stelnat. Skär sedan i små tärningar.\n"
+      ],
+      [
+        75,
+        1,
+        "Hemgjorda soppdumplings har en fläskfyllning med kyld buljonggelé som smälter till buljong när de ångas.\n"
+      ],
+      [
+        37,
+        1,
+        "    item: gelatin\n"
+      ],
+      [
+        8,
+        1,
+        "time_total_min: 90\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/jalkiruoat/keto-mutakakku.md": {
+    "currentSha256": "c803347c9abab837383506f8b10966d1d17dd824f15338a6ae94d64c12e60a64",
+    "historicalSha256": "471e1117a9277c810a9af1980874bf00d177b36540590b9c15406be4ba36c5fe",
+    "inverseEdits": [
+      [
+        67,
+        1,
+        "3. Vispa äggen och erytritolen pösigt. Rör ner choklad- och smörblandningen.\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/jalkiruoat/vhh-juustokakku.md": {
+    "currentSha256": "25d1247517d0524dff60561a160279ab000b87d23812017159bd8509110d1785",
+    "historicalSha256": "70034dc850bb0d602565b590cad6366d9082690f165d50374aa0b11946bab3b2",
+    "inverseEdits": [
+      [
+        75,
+        2,
+        ""
+      ],
+      [
+        68,
+        1,
+        "3. Blanda färskost och erytritol till en slät smet. Tillsätt smetana, äggen ett i taget, vanilj och citronsaft.\n"
+      ],
+      [
+        24,
+        1,
+        "    item: smetana\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/leivonnaiset/keto-joulutortut.md": {
+    "currentSha256": "e1b82b8b82c2713fd62d297d7e377d65e9b4dd26ded38ff4ffc35b9b314eeb05",
+    "historicalSha256": "784d8ce4e19b720da9c73fc9671afabea1878c595f3b7bbea4ccc7275de31b79",
+    "inverseEdits": [
+      [
+        41,
+        4,
+        "carbs_net_per_serving_g: 3.44\ncarbs_total_per_serving_g: 5.57\nprotein_per_serving_g: 7.53\nfat_per_serving_g: 24.28\n"
+      ],
+      [
+        31,
+        1,
+        "    item: färskost\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/paaruoat/amritsari-kala.md": {
+    "currentSha256": "8640e08dcd293644d80f72997ad7e530d738f354631b963bc11799e1f51e43d8",
+    "historicalSha256": "7e8ee09b7a63357f3a89cc2c65a9111ed7964b22c158044205ec3892a7209043",
+    "inverseEdits": [
+      [
+        80,
+        1,
+        "1. Tina sejen i kylskåp. Skär fisken i munsbitar och torka dem.\n"
+      ],
+      [
+        76,
+        1,
+        "Punjabi Amritsari-fisken får sin krispiga skorpa från kikärtsmjöl, yoghurt och aromatiska kryddor.\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/paaruoat/baozi.md": {
+    "currentSha256": "a389d862bb7418849dc659ff26c95abc043f000b718dbb2df3e66f1bc56e23cb",
+    "historicalSha256": "6b76bd87fc6730763e145d473b7567dcf38e4143f85e3f24485d6f77ae68990b",
+    "inverseEdits": [
+      [
+        66,
+        1,
+        "fat_per_serving_g: 14.53\n"
+      ],
+      [
+        63,
+        2,
+        "carbs_net_per_serving_g: 80.36\ncarbs_total_per_serving_g: 84.52\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/paaruoat/carnitas-salaattitacot.md": {
+    "currentSha256": "5aaad713a540155d52b49458b968e578b95792d24564e098403858713f13fc40",
+    "historicalSha256": "fada16ada14ebf58ce2ab7c09ba97e0b401359763e7068c6d4d2bb0715208e39",
+    "inverseEdits": [
+      [
+        57,
+        4,
+        "carbs_net_per_serving_g: 4.9\ncarbs_total_per_serving_g: 7.4\nprotein_per_serving_g: 36.94\nfat_per_serving_g: 30.6\n"
+      ],
+      [
+        26,
+        1,
+        ""
+      ]
+    ]
+  },
+  "kaannokset/sv/paaruoat/kantonilainen-hoyrytetty-kala.md": {
+    "currentSha256": "6c6a52cf90160ecfce48a9269a4afe40f1727f82343708e1ef62701557074d2a",
+    "historicalSha256": "e096053cce6a1080b98c4419279571790b091b48f4c2af00bb9c08436067a437",
+    "inverseEdits": [
+      [
+        51,
+        4,
+        "carbs_net_per_serving_g: 3.13\ncarbs_total_per_serving_g: 4.58\nprotein_per_serving_g: 31.99\nfat_per_serving_g: 9.04\n"
+      ],
+      [
+        47,
+        1,
+        "    note: för servering\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/paaruoat/kookos-lime-kanacurry.md": {
+    "currentSha256": "13b122412c2bc7c57c254e3e59e317deeb7510ab9653eb6ad104ebbc8901317e",
+    "historicalSha256": "c9df55a7a1ed7f40fc9e85002c280b171b98bb2787c55224469acb1d973111b4",
+    "inverseEdits": [
+      [
+        53,
+        4,
+        "carbs_net_per_serving_g: 5.66\ncarbs_total_per_serving_g: 8.63\nprotein_per_serving_g: 26.99\nfat_per_serving_g: 21.82\n"
+      ],
+      [
+        38,
+        1,
+        ""
+      ]
+    ]
+  },
+  "kaannokset/sv/paaruoat/lindstrominpihvit-kaalilla.md": {
+    "currentSha256": "e9b65c6c7671fb49d5c1bc9f99a6079b469b496b6115778afa1c45fcb090ace1",
+    "historicalSha256": "44d98159921b57d83f613b26418642759ed586e52f2e8bca7d2bb3bc094dbd6c",
+    "inverseEdits": [
+      [
+        52,
+        4,
+        "carbs_net_per_serving_g: 9.54\ncarbs_total_per_serving_g: 12.77\nprotein_per_serving_g: 31.9\nfat_per_serving_g: 18.32\n"
+      ],
+      [
+        32,
+        2,
+        "  - amount: 1\n    unit: msk\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/paaruoat/pho-bo.md": {
+    "currentSha256": "edbbcf6236989a16f41bb73775f23288eaf6d88001a35497c4decfc9e5f433b8",
+    "historicalSha256": "f66aca6fdb3086bc03f79c49438a918f58cb4379bfe9c029a00b5ff48d581099",
+    "inverseEdits": [
+      [
+        46,
+        2,
+        "6. Koka upp den silade buljongen igen och tillaga nötköttsskivorna i omgångar i den. Kontrollera med en matlagningstermometer att köttet når minst 63 °C och låt det vila i tre minuter före servering. Fördela de kokta nudlarna och köttet i skålar, häll över den heta buljongen och servera med böngroddar, thaibasilika, koriander och lime.\n"
+      ],
+      [
+        26,
+        1,
+        "  - {amount: 150, unit: g, item: \"böngroddar\", note: \"till servering\"}\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/paaruoat/sate-ayam.md": {
+    "currentSha256": "5c1d84d255c821a008f7ae1ad8c3efc9402b2b6368a4a56e5a7e376fab31c721",
+    "historicalSha256": "79ae57f6189ba946a728a2747d57a0215671beb31524725bab6cacb37efa77ce",
+    "inverseEdits": [
+      [
+        26,
+        5,
+        "  - {amount: 1, unit: st, item: \"lime\", note: \"i klyftor för servering\"}\ncarbs_net_per_serving_g: 13.59\ncarbs_total_per_serving_g: 17.87\nprotein_per_serving_g: 45.52\nfat_per_serving_g: 29.69\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/paaruoat/tacokulho-nauta-avokado.md": {
+    "currentSha256": "30c3ec1dfb0553559729c8d23e5141fbe86067af18a609cd7abb007b1fe04c0c",
+    "historicalSha256": "c1c1949911ab942afcfaa9570fbaa32eff4038c64e600e63f83dca50c14369c7",
+    "inverseEdits": [
+      [
+        51,
+        4,
+        "carbs_net_per_serving_g: 2.71\ncarbs_total_per_serving_g: 5.28\nprotein_per_serving_g: 31.27\nfat_per_serving_g: 26.41\n"
+      ],
+      [
+        44,
+        1,
+        ""
+      ]
+    ]
+  },
+  "kaannokset/sv/paaruoat/uunifetapasta-kirsikkatomaateilla.md": {
+    "currentSha256": "6554781681b929362209db020b06fcc35a0418cb981343920aa5e43906e07a07",
+    "historicalSha256": "f7376d9131b5699ddc93916385f9601b9016b6a08d949ea6cad2d17cdb20c849",
+    "inverseEdits": [
+      [
+        73,
+        1,
+        "- **Bakgrundskälla:** https://liemessa.fi/2019/02/uunifetapasta/\n"
+      ]
+    ]
+  },
+  "kaannokset/sv/paaruoat/uunimakkara-sipulipedilla.md": {
+    "currentSha256": "445b520eff6496a5b2b5464f66895988398d33dcd960e78bc3816c35959b6ac9",
+    "historicalSha256": "e8d2c2e43ad241cedb1fc73d320bd0bb8f57cfe4d472c4605fb35c48aacadb21",
+    "inverseEdits": [
+      [
+        49,
+        4,
+        "carbs_net_per_serving_g: 12.02\ncarbs_total_per_serving_g: 12.7\nprotein_per_serving_g: 19.58\nfat_per_serving_g: 38.5\n"
+      ],
+      [
+        26,
+        2,
+        "  - amount: 2\n    unit: msk\n"
+      ]
+    ]
+  },
+  "kaannokset/th/aamupalat/intialainen-besan-chilla.md": {
+    "currentSha256": "fb9189b79bcffb2ab9dce2dfee09d2375bf1c3c582837c8ec3382ddbc8a495da",
+    "historicalSha256": "04344a412376f74e4a1fdd8ba6ac9097a97c5dc0d62e533e7e8cfd43e1c6b841",
+    "inverseEdits": [
+      [
+        59,
+        1,
+        "ฉบับดัดแปลงสำหรับครัวบ้านโดยคงปริมาณวัตถุดิบจากต้นฉบับภาษาฟินแลนด์ ยังไม่เผยแพร่\n"
+      ]
+    ]
+  },
+  "kaannokset/th/aamupalat/karibia-mango-limejogurtti.md": {
+    "currentSha256": "0eea5124c8f4824a2b9235341ce1ec1c14c6da8c80f2c7ec8e3d5e0820fee08c",
+    "historicalSha256": "eeb3a6cd0f1e0d488e3207d12f857f19aa7d18baa33520f09dee2a4a9d6fd13b",
+    "inverseEdits": [
+      [
+        66,
+        0,
+        "## หมายเหตุ\n\nฉบับร่างนี้คงปริมาณตามสูตรภาษาฟินแลนด์ ต้องตรวจสอบสารอาหารและค่าดัชนีน้ำตาลแยกต่างหากก่อนเผยแพร่\n\n"
+      ]
+    ]
+  },
+  "kaannokset/th/aamupalat/thai-jok-kanalla.md": {
+    "currentSha256": "82e5f2d2703cb7b49f37fee8b6144a658a2651a35614d610cc2042aa17a8cd54",
+    "historicalSha256": "8a561ef476e58c05359a0c2f263535fc77a55522483062c8c7a2b77d076dd3da",
+    "inverseEdits": [
+      [
+        61,
+        1,
+        "1. ซาวข้าวแล้วต้มในน้ำด้วยไฟอ่อนจนเป็นโจ๊กเนื้อนุ่ม คนเป็นระยะ\n"
+      ],
+      [
+        57,
+        1,
+        "สูตรนี้เป็นโจ๊กไก่แบบไทยสำหรับทำที่บ้าน ปรับเครื่องปรุงและเครื่องโรยหน้าได้ตามชอบ\n"
+      ],
+      [
+        33,
+        1,
+        "time_total_min: 25\n"
+      ]
+    ]
+  },
+  "kaannokset/th/aamupalat/thai-kananmunat-kookoscurryssa.md": {
+    "currentSha256": "092d259e38877dc6b0a9556e8d438841d12368e2cdbeb7b1cf56acf44640223c",
+    "historicalSha256": "f28be53bf7830ad2f2722ebaa0abb09bd9276f684ad6f1887858fc6eb4890630",
+    "inverseEdits": [
+      [
+        59,
+        1,
+        "ฉบับดัดแปลงสำหรับครัวบ้านโดยคงปริมาณวัตถุดิบจากต้นฉบับภาษาฟินแลนด์ ยังไม่เผยแพร่\n"
+      ]
+    ]
+  },
+  "kaannokset/th/aamupalat/thai-porsasjok.md": {
+    "currentSha256": "59a7c2c39c0b9ce48edaaa60155df8741d5ac5ec39261f6802fd2a6579d8cabf",
+    "historicalSha256": "ca466b0139ae8a0a7aa37b1f4cccf2b26cfc4dda01a6979c945c590a25f9f19b",
+    "inverseEdits": [
+      [
+        61,
+        1,
+        "1. ซาวข้าวแล้วต้มในน้ำด้วยไฟอ่อนจนเป็นโจ๊กเนื้อนุ่ม คนเป็นระยะ\n"
+      ],
+      [
+        57,
+        1,
+        "สูตรนี้เป็นโจ๊กหมูใส่ขิงแบบไทยสำหรับทำที่บ้าน ปรับเครื่องปรุงและเครื่องโรยหน้าได้ตามชอบ\n"
+      ],
+      [
+        33,
+        1,
+        "time_total_min: 25\n"
+      ]
+    ]
+  },
+  "kaannokset/th/aamupalat/uunimuna-avokadot.md": {
+    "currentSha256": "4b2a0516c9b65f1793f742b5ba39005c624ff469d9e5b12bd247fb976ba3be65",
+    "historicalSha256": "af51a5921a94a3371f88196a670730fa4d1e593b2a8cbc9a725f99fb2034d5a8",
+    "inverseEdits": [
+      [
+        55,
+        1,
+        "ฉบับดัดแปลงสำหรับครัวบ้านโดยคงปริมาณวัตถุดิบจากต้นฉบับภาษาฟินแลนด์ ยังไม่เผยแพร่\n"
+      ]
+    ]
+  },
+  "kaannokset/th/aamupalat/valimerellinen-jogurttikulho-hunajalla.md": {
+    "currentSha256": "c2a107f27e80ed9666a60bd55911fe6a29a195c907f53cba6b61240b5e8168bc",
+    "historicalSha256": "f2660ff8cf29fc44a1f442a5df374b5af82818eab01e84c91d73c28751736ff5",
+    "inverseEdits": [
+      [
+        63,
+        0,
+        "## หมายเหตุ\n\nฉบับร่างนี้คงปริมาณตามสูตรภาษาฟินแลนด์ ต้องตรวจสอบสารอาหารและค่าดัชนีน้ำตาลแยกต่างหากก่อนเผยแพร่\n\n"
+      ]
+    ]
+  },
+  "kaannokset/th/aamupalat/vietnamilainen-kahvijogurtti-banaanilla.md": {
+    "currentSha256": "eb249e960ee0c747b0290395f0571df13accf099b04dd02103872a5741a6c277",
+    "historicalSha256": "28c0b84b62b49c09378a198b47fb61104449294aab0db15d21520c4f9f1a33da",
+    "inverseEdits": [
+      [
+        65,
+        1,
+        "ต้องยืนยันน้ำหนักส่วนที่กินได้ของกล้วยและชนิดผลิตภัณฑ์นมข้นก่อนอนุมัติข้อมูลสารอาหาร\n"
+      ]
+    ]
+  },
+  "kaannokset/th/alkuruoat/xiaolongbao.md": {
+    "currentSha256": "6025a6c201522e97505c57e4afccfd6ffda6881d81bc78c26354338865060953",
+    "historicalSha256": "51ce4d79159ae50049ffbee1e375bcf1c98f512912efb36a202e69d81dc76cb2",
+    "inverseEdits": [
+      [
+        79,
+        1,
+        "1. ละลายเจลาตินในน้ำสต๊อกแล้วแช่เย็นอย่างน้อย 30 นาทีจนเซ็ตตัว จากนั้นหั่นเป็นชิ้นเล็ก\n"
+      ],
+      [
+        75,
+        1,
+        "เกี๊ยวน้ำทำเองสอดไส้หมูและเจลลี่น้ำสต๊อกที่ละลายเป็นน้ำซุปเมื่อนึ่ง\n"
+      ],
+      [
+        37,
+        1,
+        "    item: เจลาติน\n"
+      ],
+      [
+        8,
+        1,
+        "time_total_min: 90\n"
+      ]
+    ]
+  },
+  "kaannokset/th/jalkiruoat/keto-mutakakku.md": {
+    "currentSha256": "7ffcd19c2be6c3510c23223a9f8cf6cfa4a53d41cd167b6dd1cc44ac326d1571",
+    "historicalSha256": "fa2ca1716deb22682d95a8659ea9f584ec6dbcc5c5508a209e414a7a20a310de",
+    "inverseEdits": [
+      [
+        67,
+        1,
+        "3. ตีไข่กับอิริทริทอลจนขึ้นฟู แล้วผสมช็อกโกแลตกับเนยที่ละลายไว้ลงไป\n"
+      ]
+    ]
+  },
+  "kaannokset/th/jalkiruoat/vhh-juustokakku.md": {
+    "currentSha256": "10b85de551d0699a27c46de470feecea00759fadee1289ef2be82364abcc0a97",
+    "historicalSha256": "7abac34890219588471f51f3b5bb5ed7aa7a519546ef9dbf2492d5097c432bcf",
+    "inverseEdits": [
+      [
+        75,
+        2,
+        ""
+      ],
+      [
+        68,
+        1,
+        "3. ผสมครีมชีสกับอิริทริทอลให้เนียน ใส่สเมตานา ไข่ทีละฟอง วานิลลา และน้ำเลมอน\n"
+      ],
+      [
+        24,
+        1,
+        "    item: ซาวร์ครีมข้นแบบสเมตานา\n"
+      ]
+    ]
+  },
+  "kaannokset/th/leivonnaiset/keto-joulutortut.md": {
+    "currentSha256": "c3ae2eecc90ec5906e77187f45b0d6d03314dd3ce3016cf08d303820bc45389e",
+    "historicalSha256": "dbbccb567476e3c8370d8b2a40ce5569670122538396a2d8d97be422e6ddc40d",
+    "inverseEdits": [
+      [
+        41,
+        4,
+        "carbs_net_per_serving_g: 3.44\ncarbs_total_per_serving_g: 5.57\nprotein_per_serving_g: 7.53\nfat_per_serving_g: 24.28\n"
+      ],
+      [
+        31,
+        1,
+        "    item: ครีมชีส\n"
+      ]
+    ]
+  },
+  "kaannokset/th/paaruoat/amritsari-kala.md": {
+    "currentSha256": "e1b1f1dc60d1ebee8cc7b390a4cc96a5f4aafae68f501ddb22bf576e3d1b17a5",
+    "historicalSha256": "f4126fd56a1ff78b38687ab501b94c776b8a3a1d3960e111511c426f5d5a915a",
+    "inverseEdits": [
+      [
+        79,
+        1,
+        "1. ละลายปลาแช่แข็งในตู้เย็น หั่นเป็นชิ้นพอคำแล้วซับให้แห้ง\n"
+      ],
+      [
+        75,
+        1,
+        "ปลาอมฤตสารีปัญจาบมีเปลือกกรุบกรอบจากแป้งถั่วชิกพี โยเกิร์ต และเครื่องเทศที่มีกลิ่นหอม\n"
+      ]
+    ]
+  },
+  "kaannokset/th/paaruoat/baozi.md": {
+    "currentSha256": "88495e192db08695d43cb1cc177151525dc209e773f2ccaeb8989426055c1f02",
+    "historicalSha256": "b52643527358a97c05c0d4b920d8a873efae194891c8625c0f94852ef0900054",
+    "inverseEdits": [
+      [
+        66,
+        1,
+        "fat_per_serving_g: 14.53\n"
+      ],
+      [
+        63,
+        2,
+        "carbs_net_per_serving_g: 80.36\ncarbs_total_per_serving_g: 84.52\n"
+      ]
+    ]
+  },
+  "kaannokset/th/paaruoat/carnitas-salaattitacot.md": {
+    "currentSha256": "e46b4c3360e1873079a0ca95abfa8538b27af68e6676ca914294e741b90e33bc",
+    "historicalSha256": "84742804288e8707d4c40dc1fbdc54f70ce2129592c85fdc23a95df61c9d017b",
+    "inverseEdits": [
+      [
+        57,
+        4,
+        "carbs_net_per_serving_g: 4.9\ncarbs_total_per_serving_g: 7.4\nprotein_per_serving_g: 36.94\nfat_per_serving_g: 30.6\n"
+      ],
+      [
+        26,
+        1,
+        ""
+      ]
+    ]
+  },
+  "kaannokset/th/paaruoat/kantonilainen-hoyrytetty-kala.md": {
+    "currentSha256": "d8db2726bfdfcf0aa29523bb64234771a0e82a0bfbcff2c1c7b22dd3aecf345d",
+    "historicalSha256": "17f6272bc276623600a06bb1625904c3c107513a984cdd0e3d9c18b74725c377",
+    "inverseEdits": [
+      [
+        51,
+        4,
+        "carbs_net_per_serving_g: 3.13\ncarbs_total_per_serving_g: 4.58\nprotein_per_serving_g: 31.99\nfat_per_serving_g: 9.04\n"
+      ],
+      [
+        47,
+        1,
+        "    note: สำหรับการเสิร์ฟ\n"
+      ],
+      [
+        45,
+        1,
+        "    unit: ชิ้น\n"
+      ]
+    ]
+  },
+  "kaannokset/th/paaruoat/kookos-lime-kanacurry.md": {
+    "currentSha256": "44f089587bf1ee1fb7ecfa011126d34c0d0813c80797be4823d5ed01aac00a8e",
+    "historicalSha256": "fa37102060c062eadaa7a475a1edaaad5422a1c1da0dfffaea9af3b287f3ace2",
+    "inverseEdits": [
+      [
+        53,
+        4,
+        "carbs_net_per_serving_g: 5.66\ncarbs_total_per_serving_g: 8.63\nprotein_per_serving_g: 26.99\nfat_per_serving_g: 21.82\n"
+      ],
+      [
+        38,
+        1,
+        ""
+      ]
+    ]
+  },
+  "kaannokset/th/paaruoat/lindstrominpihvit-kaalilla.md": {
+    "currentSha256": "b0edf8bdf3531b32b12475d9611a77d21499df4c725eb4c9303fae8f130d1002",
+    "historicalSha256": "98d99d925580fdfb44d7ac5974c57218e67d48e843f8a56df0907809ee8c1c4b",
+    "inverseEdits": [
+      [
+        52,
+        4,
+        "carbs_net_per_serving_g: 9.54\ncarbs_total_per_serving_g: 12.77\nprotein_per_serving_g: 31.9\nfat_per_serving_g: 18.32\n"
+      ],
+      [
+        32,
+        2,
+        "  - amount: 1\n    unit: ช้อนโต๊ะ\n"
+      ]
+    ]
+  },
+  "kaannokset/th/paaruoat/pho-bo.md": {
+    "currentSha256": "2648e3a5e7fa5428ac3c4b64da86ed3a5986f3fa1e05438cb8260c6082fd04d3",
+    "historicalSha256": "ac5532db06c3019dbacbc82e590e3a29ad0408b06e8a9f46f2ba31eff12574fe",
+    "inverseEdits": [
+      [
+        46,
+        2,
+        "6. ต้มน้ำซุปที่กรองแล้วให้เดือดอีกครั้ง จากนั้นใส่เนื้อวัวหั่นบางลงต้มทีละส่วน ใช้เทอร์โมมิเตอร์อาหารตรวจให้เนื้อมีอุณหภูมิภายในอย่างน้อย 63 °C แล้วพักเนื้อไว้สามนาทีก่อนเสิร์ฟ แบ่งเส้นที่ต้มแล้วและเนื้อสุกลงชาม ราดน้ำซุปร้อนและเสิร์ฟกับถั่วงอก โหระพาไทย ผักชี และมะนาว\n"
+      ],
+      [
+        26,
+        1,
+        "  - {amount: 150, unit: g, item: \"ถั่วงอก\", note: \"สำหรับเสิร์ฟ\"}\n"
+      ]
+    ]
+  },
+  "kaannokset/th/paaruoat/sate-ayam.md": {
+    "currentSha256": "2056787955d78edd3ba1986e435d174c3ea765344f5bc0690ca2cbf25b7033d3",
+    "historicalSha256": "e4ddfc5754ec427869c3287df28d391a8936e287a83275f3c54120ef80a3207b",
+    "inverseEdits": [
+      [
+        26,
+        5,
+        "  - {amount: 1, unit: ชิ้น, item: \"มะนาว\", note: \"หั่นเป็นเสี้ยวสำหรับเสิร์ฟ\"}\ncarbs_net_per_serving_g: 13.59\ncarbs_total_per_serving_g: 17.87\nprotein_per_serving_g: 45.52\nfat_per_serving_g: 29.69\n"
+      ]
+    ]
+  },
+  "kaannokset/th/paaruoat/tacokulho-nauta-avokado.md": {
+    "currentSha256": "6d29ca7576e1678cf60692dd55afe42813bd18914ee97b7877c0e09e578f3f7a",
+    "historicalSha256": "26d674b0a6254fad60a0f6463b837b32df19d446e6cf8d17ca540643d11d6436",
+    "inverseEdits": [
+      [
+        51,
+        4,
+        "carbs_net_per_serving_g: 2.71\ncarbs_total_per_serving_g: 5.28\nprotein_per_serving_g: 31.27\nfat_per_serving_g: 26.41\n"
+      ],
+      [
+        44,
+        1,
+        ""
+      ]
+    ]
+  },
+  "kaannokset/th/paaruoat/uunifetapasta-kirsikkatomaateilla.md": {
+    "currentSha256": "b1cfddc6fe68df7b2bdeb4c133eff8c026c0c29067654e1ece100b87e7570fd6",
+    "historicalSha256": "624ac3feeb02e22b0d67d5e705f0111b3bb475e84849fb0635813b865b048822",
+    "inverseEdits": [
+      [
+        73,
+        1,
+        "- **แหล่งข้อมูลอ้างอิง:** https://liemessa.fi/2019/02/uunifetapasta/\n"
+      ]
+    ]
+  },
+  "kaannokset/th/paaruoat/uunimakkara-sipulipedilla.md": {
+    "currentSha256": "c2881ff15a11a64f18728e5708ebea7bf04a94b0059d34c3568adaea7dcd23d0",
+    "historicalSha256": "e7e1eb7a7ce04230b150bd31b1135eba9d35d7dc5f158271304903b18709524f",
+    "inverseEdits": [
+      [
+        49,
+        4,
+        "carbs_net_per_serving_g: 12.02\ncarbs_total_per_serving_g: 12.7\nprotein_per_serving_g: 19.58\nfat_per_serving_g: 38.5\n"
+      ],
+      [
+        26,
+        2,
+        "  - amount: 2\n    unit: ช้อนโต๊ะ\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/thai-jok-kanalla.md": {
+    "currentSha256": "41dfc47c76f6ddfa0e9dae447251c332808b1e6713bb7e6cc7d65fe8bd2e8629",
+    "historicalSha256": "9e8476e9aa500c56da7ac439a54cc41d991cec82a1c9e59dfc75352816c858df",
+    "inverseEdits": [
+      [
+        65,
+        1,
+        "1. Huuhtele riisi ja keitä se vedessä miedolla lämmöllä pehmeäksi puuroksi. Sekoita välillä.\n"
+      ],
+      [
+        57,
+        1,
+        "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan thaimaalainen kanariisipuuro. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n"
+      ],
+      [
+        35,
+        1,
+        "time_total_min: 25\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/thai-porsasjok.md": {
+    "currentSha256": "d4178de6c4521f1883d3f3ed7db49ccf88ab65fd8be5ba2d70133b2d48ce2a9f",
+    "historicalSha256": "11a68c3326993ecb61b2b04bf80da614c3717edfb12507f377278c02d720e73b",
+    "inverseEdits": [
+      [
+        65,
+        1,
+        "1. Huuhtele riisi ja keitä se vedessä miedolla lämmöllä pehmeäksi puuroksi. Sekoita välillä.\n"
+      ],
+      [
+        57,
+        1,
+        "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan thaimaalainen porsasjok inkiväärillä. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n"
+      ],
+      [
+        35,
+        1,
+        "time_total_min: 25\n"
+      ]
+    ]
+  },
+  "reseptit/alkuruoat/xiaolongbao.md": {
+    "currentSha256": "027ff7ebb3894cd41f86e66be895c5c6a6b60e0e3f83a45d5201f3f42127f115",
+    "historicalSha256": "2d0e026ce3e13ae802fb836053ee7c0b2a28a43ac0306a5ee902d59d1d2aa549",
+    "inverseEdits": [
+      [
+        93,
+        1,
+        "- Lihahyytelö valmistetaan jäähdyttämällä maustettu liha- tai kanaliemi gelatiinilla. Anna täytteen pysyä kylmänä koko kokoamisen ajan.\n"
+      ],
+      [
+        84,
+        1,
+        "1. Kuumenna lihaliemi ja liuota siihen liivatejauhe. Jäähdytä täysin jähmettyneeksi ja leikkaa pieniksi kuutioiksi.\n"
+      ],
+      [
+        80,
+        1,
+        "Shanghailaiset keittodumplingit sisältävät mausteista porsastäytettä ja lihahyytelöä, joka sulaa höyrytyksessä liemeksi.\n"
+      ],
+      [
+        35,
+        0,
+        "    note: pieninä kuutioina\n"
+      ],
+      [
+        8,
+        1,
+        "time_total_min: 90\n"
+      ]
+    ]
+  },
+  "reseptit/jalkiruoat/keto-mutakakku.md": {
+    "currentSha256": "7d90224a1cf702570332b6b2e22e3aef7778012cec6f8f8e105641f60028b3af",
+    "historicalSha256": "c20d6ea6f792a5d2b8a4110c374b9fc01b2c8570e15dd10df8d089440b4c4916",
+    "inverseEdits": [
+      [
+        73,
+        1,
+        "3. Vatkaa munat ja erytritoli kuohkeaksi. Sekoita joukkoon suklaa-voiseos.\n"
+      ]
+    ]
+  },
+  "reseptit/jalkiruoat/sienikakkupohja.md": {
+    "currentSha256": "fd18a9ec16bdbf71e3649fc50bd9074c8bdbd16aeafea710435dcf34cd49e83b",
+    "historicalSha256": "98bf1e239f7c731a6eedf19aabe6f6a649d5106d5e48f42f5bd901cb90e1b42a",
+    "inverseEdits": [
+      [
+        61,
+        1,
+        ""
+      ]
+    ]
+  },
+  "reseptit/jalkiruoat/vhh-juustokakku.md": {
+    "currentSha256": "5d20bd82b645521fc1bce2f36172f6b6f11de2beb84a5642fdc693a618fd6476",
+    "historicalSha256": "d6d79e6e9dace0348cc7cd8d3d935ca9c5040dd08864a12a429bbd9491873573",
+    "inverseEdits": [
+      [
+        58,
+        2,
+        ""
+      ],
+      [
+        51,
+        1,
+        "3. Sekoita tuorejuusto ja erytritoli tasaiseksi. Lisää smetana, kananmunat yksi kerrallaan, vanilja ja sitruunamehu.\n"
+      ],
+      [
+        16,
+        1,
+        "  - { amount: 150, unit: g, item: smetanaa }\n"
+      ]
+    ]
+  },
+  "reseptit/leivonnaiset/karjalanpiirakat-riisipuurolla.md": {
+    "currentSha256": "521e6b9717ceb37f3cebaf31b04e70a17a4942832f83eb3403d810766a100913",
+    "historicalSha256": "8b84a4b8af37eb94969095d078c390b786f1ad27c7154371f097b4d8dda431d5",
+    "inverseEdits": [
+      [
+        96,
+        1,
+        ""
+      ]
+    ]
+  },
+  "reseptit/leivonnaiset/keto-joulutortut.md": {
+    "currentSha256": "98f9e99a3915f95b9aab6983f52f47587785cc74b47df185eebd4c839b1d2a41",
+    "historicalSha256": "4b3d436f943f55c956fcf7a8301ab4da6f3f0f47a31f37c4f0382aca42eac526",
+    "inverseEdits": [
+      [
+        46,
+        4,
+        "carbs_net_per_serving_g: 3.44\ncarbs_total_per_serving_g: 5.57\nprotein_per_serving_g: 7.53\nfat_per_serving_g: 24.28\n"
+      ],
+      [
+        31,
+        1,
+        "    item: tuorejuustoa\n"
+      ]
+    ]
+  },
+  "reseptit/paaruoat/amritsari-kala.md": {
+    "currentSha256": "ad4841ff8374dd40acdb49c1fa6cdce63d6a68b77e72463f7fd2d631e9c5542b",
+    "historicalSha256": "47e7de3be40b9d6f1caeba3894eb775a6590644156eb14812fe5d6f66cf3045b",
+    "inverseEdits": [
+      [
+        81,
+        1,
+        "1. Sulata seiti jääkaapissa. Leikkaa reiluiksi suupaloiksi ja taputtele kuivaksi.\n"
+      ],
+      [
+        77,
+        1,
+        "Punjabilainen Amritsari-kala saa rapean kuorensa kikhernejauhosta, jogurtista ja aromaattisista mausteista.\n"
+      ]
+    ]
+  },
+  "reseptit/paaruoat/baozi.md": {
+    "currentSha256": "7418c113bcbc6542468d49b1a90153947985f0b533fbca8de2207b9e9d8dd349",
+    "historicalSha256": "ea030b320459bf4f52b89cc822f032c691d39a35f987d05b66bb7a274cac02e4",
+    "inverseEdits": [
+      [
+        68,
+        1,
+        "fat_per_serving_g: 14.53\n"
+      ],
+      [
+        65,
+        2,
+        "carbs_net_per_serving_g: 80.36\ncarbs_total_per_serving_g: 84.52\n"
+      ]
+    ]
+  },
+  "reseptit/paaruoat/carnitas-salaattitacot.md": {
+    "currentSha256": "c52a3bb6fa604e4b001b701083bc5b5d6ff751668014f4278c1bf057594c0400",
+    "historicalSha256": "b970133d0265652fd666780b977af158fed3eda7060f91c94e97907b76332e61",
+    "inverseEdits": [
+      [
+        57,
+        4,
+        "carbs_net_per_serving_g: 4.9\ncarbs_total_per_serving_g: 7.4\nprotein_per_serving_g: 36.94\nfat_per_serving_g: 30.6\n"
+      ],
+      [
+        26,
+        1,
+        ""
+      ]
+    ]
+  },
+  "reseptit/paaruoat/kantonilainen-hoyrytetty-kala.md": {
+    "currentSha256": "7972b28fede233958ed834151cf7afb9d3f97dd349097f603ab828e2ae23cd91",
+    "historicalSha256": "db52b3d68df183a46bc2c814956a197343dbdfcfc027c3e981e84234a8c7521d",
+    "inverseEdits": [
+      [
+        53,
+        4,
+        "carbs_net_per_serving_g: 3.13\ncarbs_total_per_serving_g: 4.58\nprotein_per_serving_g: 31.99\nfat_per_serving_g: 9.04\n"
+      ],
+      [
+        47,
+        1,
+        "    note: tarjoiluun\n"
+      ]
+    ]
+  },
+  "reseptit/paaruoat/kookos-lime-kanacurry.md": {
+    "currentSha256": "b1985a8752e7a100c8305d0b4696c1c72c1d0eb128ba3a63e273084f4b291cfa",
+    "historicalSha256": "33285cce2687729b8d484bd86269769037afb986a91263a6bc5ff1c8ae2f08de",
+    "inverseEdits": [
+      [
+        55,
+        4,
+        "carbs_net_per_serving_g: 5.66\ncarbs_total_per_serving_g: 8.63\nprotein_per_serving_g: 26.99\nfat_per_serving_g: 21.82\n"
+      ],
+      [
+        40,
+        1,
+        ""
+      ]
+    ]
+  },
+  "reseptit/paaruoat/lindstrominpihvit-kaalilla.md": {
+    "currentSha256": "983bea727befcb4f175674b3a9344496af60424d51eab03d3e1a0f9cc111651b",
+    "historicalSha256": "ea116b68468b429136a7d799a9e84530ab6d618b77aa4dcd2a18857599f77069",
+    "inverseEdits": [
+      [
+        52,
+        4,
+        "carbs_net_per_serving_g: 9.54\ncarbs_total_per_serving_g: 12.77\nprotein_per_serving_g: 31.9\nfat_per_serving_g: 18.32\n"
+      ],
+      [
+        32,
+        2,
+        "  - amount: 1\n    unit: rkl\n"
+      ]
+    ]
+  },
+  "reseptit/paaruoat/pho-bo.md": {
+    "currentSha256": "ab90b404d02b72997af9b8d6756d5a2473d7643754e021bebf79ecd3dd00bf1a",
+    "historicalSha256": "546bb35db35619cbef3e50b1fb8b6b567a64ec0126d5540daffa6d3677a73d99",
+    "inverseEdits": [
+      [
+        43,
+        2,
+        "6. Kiehauta siivilöity liemi uudelleen ja kypsennä naudanviipaleet siinä erissä. Varmista lämpömittarilla, että liha saavuttaa vähintään 63 °C ja anna sen levätä kolme minuuttia ennen tarjoilua. Jaa kypsennetyt nuudelit ja naudanliha kulhoihin, kaada kuuma liemi päälle ja tarjoa pavunitujen, thaibasilikan, korianterin ja limetin kanssa.\n"
+      ],
+      [
+        26,
+        1,
+        "  - {amount: 150, unit: g, item: pavunituja, note: tarjoiluun}\n"
+      ]
+    ]
+  },
+  "reseptit/paaruoat/sate-ayam.md": {
+    "currentSha256": "022c55778fa392b54ad8432e4408afdbb0c02c139858311b5b1537aaa8aae4bb",
+    "historicalSha256": "3ed0776b1f7a4358f11648e9311faef5018a28b758e0826c72a0f62d26dda93b",
+    "inverseEdits": [
+      [
+        26,
+        5,
+        "  - {amount: 1, unit: kpl, item: limetti, note: lohkoina tarjoiluun}\ncarbs_net_per_serving_g: 13.59\ncarbs_total_per_serving_g: 17.87\nprotein_per_serving_g: 45.52\nfat_per_serving_g: 29.69\n"
+      ]
+    ]
+  },
+  "reseptit/paaruoat/tacokulho-nauta-avokado.md": {
+    "currentSha256": "7c1443e9b260a46c86f1e412b44879f061caebde3e01c86561518d01bf62cd6f",
+    "historicalSha256": "4a5f2fc6b4af3d1fb79e64d29f55622ec555b2742ca29b89e83ea969adc62622",
+    "inverseEdits": [
+      [
+        53,
+        4,
+        "carbs_net_per_serving_g: 2.71\ncarbs_total_per_serving_g: 5.28\nprotein_per_serving_g: 31.27\nfat_per_serving_g: 26.41\n"
+      ],
+      [
+        46,
+        1,
+        ""
+      ]
+    ]
+  },
+  "reseptit/paaruoat/uunifetapasta-kirsikkatomaateilla.md": {
+    "currentSha256": "54548784939cd3325bab48d3cd6e341898c8a0c0e58d71202fa1112f7c9e936f",
+    "historicalSha256": "c58620dbe39cf849d5ecfa98c49add34d3ee436732a6bd401a569f81be99cb5f",
+    "inverseEdits": [
+      [
+        77,
+        1,
+        "- **Taustalähde:** https://liemessa.fi/2019/02/uunifetapasta/\n"
+      ]
+    ]
+  },
+  "reseptit/paaruoat/uunimakkara-sipulipedilla.md": {
+    "currentSha256": "de694667dcfa312a987c46f097149cd0b1871bb4fd8b69ae7cf03e1974613269",
+    "historicalSha256": "d2705895936c37657fe45ac18e168b4e8eb3252def668e2bf1208d1680ece37e",
+    "inverseEdits": [
+      [
+        51,
+        4,
+        "carbs_net_per_serving_g: 12.02\ncarbs_total_per_serving_g: 12.7\nprotein_per_serving_g: 19.58\nfat_per_serving_g: 38.5\n"
+      ],
+      [
+        28,
+        2,
+        "  - amount: 2\n    unit: rkl\n"
+      ]
+    ]
+  }
+}

@@ -24,6 +24,7 @@ ingredients:
   - amount: 1
     unit: kpl
     item: limetti
+    note: "haudutukseen, mehua noin 44 g"
   - amount: 1
     unit: tl
     item: juustokuminaa
@@ -54,10 +55,10 @@ ingredients:
 servings: 4
 time_total_min: 180
 difficulty: Helppo
-carbs_net_per_serving_g: 4.9
-carbs_total_per_serving_g: 7.4
-protein_per_serving_g: 36.94
-fat_per_serving_g: 30.6
+carbs_net_per_serving_g: 4.98
+carbs_total_per_serving_g: 7.43
+protein_per_serving_g: 37.02
+fat_per_serving_g: 30.28
 image:
   src: paaruoat/carnitas-salaattitacot-v2.webp
   alt: "Revittyä porsasta ja tomaattisalsaa salaatinlehdillä"

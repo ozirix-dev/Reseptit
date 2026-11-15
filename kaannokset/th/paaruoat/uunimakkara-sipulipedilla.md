@@ -24,8 +24,8 @@ ingredients:
   - amount: 1
     unit: ""
     item: หอมหัวใหญ่
-  - amount: 2
-    unit: ช้อนโต๊ะ
+  - amount: 32
+    unit: กรัม
     item: มัสตาร์ดดิจอง
   - amount: 100
     unit: กรัม
@@ -47,10 +47,10 @@ image:
   alt: ไส้กรอกอบหน้าครีมหัวหอมมัสตาร์ด
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 12.02
-carbs_total_per_serving_g: 12.7
-protein_per_serving_g: 19.58
-fat_per_serving_g: 38.5
+carbs_net_per_serving_g: 12.72
+carbs_total_per_serving_g: 13.49
+protein_per_serving_g: 19.8
+fat_per_serving_g: 38.8
 source_language: fi
 source_recipe: reseptit/paaruoat/uunimakkara-sipulipedilla.md
 translation_of: uunimakkara-sipulipedilla

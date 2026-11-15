@@ -33,7 +33,7 @@ ingredients:
     unit: ""
     item: "suolaa maun mukaan"
 servings: 2
-time_total_min: 25
+time_total_min: 60
 difficulty: Helppo
 tags:
   - "aamupala"
@@ -55,7 +55,7 @@ fat_per_serving_g: 17.38
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan thaimaalainen porsasjok inkiväärillä. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan thaimaalainen porsasjok inkiväärillä. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan. Varaa valmistukseen noin tunti. Riisin pehmenemiseen kuluva aika vaihtelee.
 
 ## Ainekset
 
@@ -63,7 +63,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Huuhtele riisi ja keitä se vedessä miedolla lämmöllä pehmeäksi puuroksi. Sekoita välillä.
+1. Huuhtele riisi ja kiehauta se vedessä. Anna hautua miedolla lämmöllä noin 45 minuuttia, kunnes jyvät hajoavat ja riisi puuroutuu. Sekoita välillä.
 2. Lisää porsaan jauheliha ja raastettu inkivääri. Kypsennä sekoittaen, kunnes liha on täysin kypsää.
 3. Kypsennä kananmunat erikseen ja tarjoa ne puuron päällä.
 4. Mausta suolalla ja tarjoa heti.

@@ -71,7 +71,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 1. Lämmitä uuni 175 asteeseen ja vuoraa halkaisijaltaan noin 20 cm vuoka leivinpaperilla.
 2. Sulata suklaa ja voi varovasti vesihauteessa tai mikrossa lyhyissä jaksoissa. Anna jäähtyä hieman.
-3. Vatkaa munat ja erytritoli kuohkeaksi. Sekoita joukkoon suklaa-voiseos.
+3. Vatkaa munat ja erytritoli kuohkeaksi. Sekoita joukkoon suklaa-voiseos ja vaniljauute.
 4. Yhdistä mantelijauho, kaakao ja suola. Kääntele kuivat aineet taikinaan.
 5. Kaada taikina vuokaan ja paista 12–16 minuuttia. Keskustan kuuluu jäädä pehmeäksi.
 6. Jäähdytä ennen leikkaamista.

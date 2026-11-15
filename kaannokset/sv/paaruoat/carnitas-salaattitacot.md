@@ -24,6 +24,7 @@ ingredients:
   - amount: 1
     unit: ""
     item: "lime"
+    note: "till bräseringen, cirka 44 g juice"
   - amount: 1
     unit: tsk
     item: "malen spiskummin"
@@ -54,10 +55,10 @@ ingredients:
 servings: 4
 time_total_min: 180
 difficulty: "Lätt"
-carbs_net_per_serving_g: 4.9
-carbs_total_per_serving_g: 7.4
-protein_per_serving_g: 36.94
-fat_per_serving_g: 30.6
+carbs_net_per_serving_g: 4.98
+carbs_total_per_serving_g: 7.43
+protein_per_serving_g: 37.02
+fat_per_serving_g: 30.28
 
 source_language: fi
 source_recipe: reseptit/paaruoat/carnitas-salaattitacot.md

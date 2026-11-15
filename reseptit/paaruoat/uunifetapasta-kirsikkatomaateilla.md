@@ -75,4 +75,4 @@ Uunifetapastan alkuperäisen idean ja vuoden 2019 suomalaisen ruoka-ilmiön teki
 - **Allergeenit:** vehnä (gluteeni) ja maito. Pasta saattaa sisältää soija- ja sinappijäämiä.
 - **Ravintoarvot ja glykeeminen kuorma:** luotettavaa reseptikohtaista laskelmaa ei ole vielä saatavilla. Puuttuva arvo ei tarkoita nollaa. Reseptiä ei luokitella ketoksi eikä vähähiilihydraattiseksi.
 - Kuva on tekoälyllä tuotettu havainnekuva, ei valokuva valmistetusta ruoasta.
-- **Taustalähde:** https://liemessa.fi/2019/02/uunifetapasta/
+- Uunifetapastan alkuperäinen ohje on [Jenni Häyrisen Liemessä-blogista](https://liemessa.fi/2019/02/uunifetapasta/).

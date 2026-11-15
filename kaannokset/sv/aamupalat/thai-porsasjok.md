@@ -31,7 +31,7 @@ ingredients:
     unit: ""
     item: salt efter smak
 servings: 2
-time_total_min: 25
+time_total_min: 60
 difficulty: lätt
 tags:
   - frukost
@@ -55,11 +55,11 @@ translation_of: thai-porsasjok
 
 ## Beskrivning
 
-Det här receptet för hemmaköket ger thailändsk risgröt med fläskfärs och ingefära. Anpassa kryddning och tillbehör efter smak.
+Det här receptet för hemmaköket ger thailändsk risgröt med fläskfärs och ingefära. Anpassa kryddning och tillbehör efter smak. Räkna med ungefär en timme. Tiden det tar för riset att mjukna kan variera.
 
 ## Tillagning
 
-1. Skölj riset och låt det sjuda i vatten på låg värme tills det blir en mjuk gröt. Rör om då och då.
+1. Skölj riset och koka upp det i vattnet. Låt sjuda på låg värme i cirka 45 minuter tills riskornen faller sönder och det blir gröt. Rör om då och då.
 2. Tillsätt fläskfärsen och riven ingefära. Tillaga under omrörning tills färsen är helt genomkokt.
 3. Tillaga äggen separat och servera dem ovanpå gröten.
 4. Smaka av med salt och servera genast.

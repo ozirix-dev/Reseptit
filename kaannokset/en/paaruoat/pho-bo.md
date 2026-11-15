@@ -24,7 +24,7 @@ ingredients:
   - {amount: 1, unit: tsp, item: "whole coriander seeds"}
   - {amount: 3, unit: tbsp, item: "fish sauce"}
   - {amount: 1, unit: tbsp, item: "cane sugar"}
-  - {amount: 150, unit: g, item: "bean sprouts", note: "for serving"}
+  - {amount: 150, unit: g, item: "bean sprouts", note: "cook thoroughly before serving"}
   - {amount: 1, unit: pot, item: "Thai basil", note: "for serving"}
   - {amount: 20, unit: g, item: "fresh coriander", note: "for serving"}
   - {amount: 1, unit: pcs, item: "lime", note: "cut into wedges for serving"}
@@ -44,7 +44,8 @@ A home-kitchen adaptation of phở bò with long-simmered beef-bone broth, roast
 3. Return the bones to the pot with 4 litres of fresh water. Bring to a boil, skim off foam and simmer gently for about 2 hours.
 4. Toast the star anise, cinnamon and coriander seeds in a dry pan until fragrant. Add to the broth with the roasted onion and ginger. Simmer another 60 minutes.
 5. Strain the broth. Season with fish sauce and cane sugar. Cook the rice noodles according to the package instructions.
-6. Bring the strained broth back to a boil and cook the beef slices in batches in it. Check with a food thermometer that the beef reaches at least 63 °C and allow it to rest for three minutes before serving. Divide the cooked noodles and beef among bowls, pour over the hot broth and serve with bean sprouts, Thai basil, coriander and lime.
+6. Boil the bean sprouts in water in a separate pan, stirring so they heat evenly. Drain them once they are steaming hot throughout.
+7. Bring the strained broth back to a boil and cook the beef slices in batches in it. Check with a food thermometer that the beef reaches at least 63 °C and allow it to rest for three minutes before serving. Divide the cooked noodles and beef among bowls, pour over the hot broth and serve with the cooked bean sprouts, Thai basil, coriander and lime.
 
 ## Notes
 

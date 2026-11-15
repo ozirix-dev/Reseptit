@@ -71,4 +71,4 @@ Feta and cherry tomatoes roast into a sauce for penne. The original Finnish bake
 - **Allergens:** wheat (gluten) and milk; the pasta may contain traces of soy and mustard.
 - **Nutrition and glycaemic load:** reliable recipe-specific values are not yet available. Missing values do not mean zero. Not classified as keto or low-carb.
 - This image is AI-generated illustration, not a photograph of the prepared dish.
-- **Background source:** https://liemessa.fi/2019/02/uunifetapasta/
+- The original baked feta pasta recipe comes from [Jenni Häyrinen’s Liemessä blog](https://liemessa.fi/2019/02/uunifetapasta/).

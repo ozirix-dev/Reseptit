@@ -57,7 +57,7 @@ translation_of: thai-kananmunat-kookoscurryssa
 
 ## Description
 
-A measured home-kitchen version following the Finnish source; this text is an unpublished translation draft.
+Boiled eggs in a red coconut curry sauce with tomato, served with rice.
 
 ## Ingredients
 
