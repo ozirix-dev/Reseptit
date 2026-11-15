@@ -4,13 +4,24 @@ Toimituksellinen, paikallinen laskentatyökalu. Sivuston build ja tiukka
 ravintoarvoauditointi varmistavat, että julkaistut luvut vastaavat dokumentoitua
 laskentaa.
 
-Suorita `site/`-kansiossa `npm run audit:nutrition`.
-Tuloksena on `tmp/nutrition/audit.json`: kaikkien julkaistujen FI-lähteiden
-inventaariorivit ja kolmen keskeneräisen pilotin aineskohtaiset puutteet. `--snapshot`
-tallentaa tarkistuskierroksen tuloksen tähän hakemistoon. Auditointikuva
-päivitettiin 24.10.2026, ja laskentamuistiot sekä Fineli- ja AFCD-
-viiteaineistot sisältyvät lähdetiivisteeseen. Uudet irralliset
-laskentamuistiot pitää lisätä lähteiden inventaarioon erikseen.
+Suorita tavallinen tarkistus `site/`-kansiossa komennolla
+`npm run audit:nutrition -- --strict`. Raportti syntyy repon juuren alle
+polkuun `tmp/nutrition/audit.json`. Kun päivität versionhallittua
+auditointisnapshotia tarkoituksella, aja
+`npm run audit:nutrition -- --strict --snapshot`. Tällöin raportti kirjoitetaan
+polkuun `docs/nutrition/audit.json`.
+
+`npm run audit:glycemic-load` kirjoittaa GK-raportin polkuun
+`tmp/nutrition/glycemic-load-pilot.json`. Kattavuusinventaarion komento
+`npm run audit:glycemic-coverage` lukee näitä kahta `tmp/nutrition/`-raporttia.
+Oletuksena se päivittää versionhallittuja
+`docs/nutrition/glycemic-coverage-current-2026-10-25.json`- ja `.md`-tiedostoja.
+Kun tuotat uuden inventaarion erilliseen tiedostopariin, anna molemmat polut
+`--output-json`- ja `--output-markdown`-valinnoilla `docs/nutrition/`-hakemiston alta.
+
+Laskentamuistiot sekä Fineli- ja AFCD-viiteaineistot sisältyvät
+lähdetiivisteeseen. Uudet irralliset laskentamuistiot pitää lisätä lähteiden
+inventaarioon erikseen.
 
 `food-records.json` sisältää vain käytetyn pienen lähdeotoksen.
 `nutrition-model.ts` erottaa lähdetietueen, ainesmäärän, tuotteen vastaavuuden,
