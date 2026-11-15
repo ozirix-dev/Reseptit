@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "recipe_id": "bataattiletut",
+  "source_path": "reseptit/aamupalat/bataattiletut.md",
+  "source_sha256": "1846dec40c0b08dc6904a78c870ced22f4f42680f06ba219f14a87069554013f",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.thekitchn.com/sweet-potato-pancakes-259059",
+      "https://www.facebook.com/reel/992043580064582"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/bataattiletut.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Otsikko, reseptitunniste ja aiempi luonnos tarkistettu. Päähaaran julkaisuhakemistossa ei ole tällä reseptitunnisteella toista lähdettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset tarkistettiin Reelistä ja kirjallisesta vertailusta. Punnitut määrät ovat reseptin sovitusta, ja pyöristykset tai vaihtoehdot ilmenevät ohjeesta."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Bataatin ja munan suhde sekä pienten lettujen kääntäminen tarkistettiin Meghan Splawnin vastaavasta ohjeesta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kypsennys, kylmäsäilytys tai pakastaminen tarkistettiin valmistustavan mukaan. Reseptin tunnetut allergeenit on ilmoitettu ja hunajan käyttö rajattu tarvittaessa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Yhdestä ohjeesta tulee 2 annosta tai palaa. Kokonaisaika on 25 minuutin arvio ja huomioi tarvittavan kypsennyksen, jäähdytyksen tai pakastuksen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Punnitut ainesrivit sidottiin ravintolähteisiin ja annosmäärään. Julkiset ravintoarvot jätetään pois kokonaispolyolien lähdepuutteen vuoksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmisteelle ei löytynyt reseptiversioon sidottua hyväksyttyä glykeemisen indeksin lähdettä. Numeerinen glykeeminen kuorma jää pois."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ],
+    "image_path": "kuvat/aamupalat/bataattiletut.webp",
+    "image_sha256": "c5cd9886e7a2373583f4b42cabea7c707adf5068a9b58e00026b6d06e60f14bd",
+    "image_review": "Tekoälyllä tehty havainnekuva vastaa ohjeen muotoa ja tarjoiluehdotusta.",
+    "physical_cook_test": false
+  }
+}

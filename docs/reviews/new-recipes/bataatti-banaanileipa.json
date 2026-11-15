@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "recipe_id": "bataatti-banaanileipa",
+  "source_path": "reseptit/leivonnaiset/bataatti-banaanileipa.md",
+  "source_sha256": "cb889544da92918c17383949d9507aa25211a8607b098ecb15e02eb6122c787e",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://empirecipes.com/flourless-banana-sweet-potato-cake/",
+      "https://www.facebook.com/reel/992043580064582"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/bataatti-banaanileipa.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Otsikko, reseptitunniste ja aiempi luonnos tarkistettu. Päähaaran julkaisuhakemistossa ei ole tällä reseptitunnisteella toista lähdettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset tarkistettiin Reelistä ja kirjallisesta vertailusta. Punnitut määrät ovat reseptin sovitusta, ja pyöristykset tai vaihtoehdot ilmenevät ohjeesta."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Taikinapohjalle, vuokapaistolle ja kypsennysajalle on kirjallinen vastine. Keskustan kypsyys tarkistetaan ennen jäähdyttämistä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kypsennys, kylmäsäilytys tai pakastaminen tarkistettiin valmistustavan mukaan. Reseptin tunnetut allergeenit on ilmoitettu ja hunajan käyttö rajattu tarvittaessa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Yhdestä ohjeesta tulee 10 annosta tai palaa. Kokonaisaika on 125 minuutin arvio ja huomioi tarvittavan kypsennyksen, jäähdytyksen tai pakastuksen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Punnitut ainesrivit sidottiin ravintolähteisiin ja annosmäärään. Julkiset ravintoarvot jätetään pois kokonaispolyolien lähdepuutteen vuoksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmisteelle ei löytynyt reseptiversioon sidottua hyväksyttyä glykeemisen indeksin lähdettä. Numeerinen glykeeminen kuorma jää pois."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ],
+    "image_path": "kuvat/leivonnaiset/bataatti-banaanileipa.webp",
+    "image_sha256": "ac58279b2af9d34bf8be69c9005b25219cae4888de6326d4deed0f2276933832",
+    "image_review": "Tekoälyllä tehty havainnekuva vastaa ohjeen muotoa ja tarjoiluehdotusta.",
+    "physical_cook_test": false
+  }
+}

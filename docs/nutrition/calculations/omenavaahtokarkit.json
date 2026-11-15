@@ -1,0 +1,105 @@
+{
+  "recipeId": "omenavaahtokarkit",
+  "sourceHash": "2a8411b88d583b6be74aeb19c53ae143839c028f13acce4e85b7afda14ae233a",
+  "calculatedAt": "2026-11-15",
+  "batchId": "batch-575",
+  "servings": 16,
+  "scope": "Ingredient accounting for the written recipe against Fineli, AFCD, USDA and CNF reference data as applicable. No prepared yield measured.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 300,
+      "unit": "g",
+      "item": "omenaa",
+      "record": {
+        "id": "fineli-11060",
+        "name": "OMENA, KOTIMAINEN, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11060",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "omena, kotimainen, kuorittu",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 8.31,
+          "fibre": 1.8,
+          "polyols": 0.0,
+          "protein": 0.19,
+          "fat": 0.1
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "omena, kotimainen, kuorittu",
+      "matchEvidence": "Ingredient 'omenaa' matched to reference OMENA, KOTIMAINEN, KUORITTU; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 50,
+      "unit": "g",
+      "item": "vettä",
+      "record": {
+        "id": "fineli-922",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "vesi, vesijohtovesi",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 0.0,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "vesi, vesijohtovesi",
+      "matchEvidence": "Ingredient 'vettä' matched to reference VESI, VESIJOHTOVESI; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 6,
+      "unit": "kpl",
+      "item": "liivatelehteä",
+      "record": {
+        "id": "fineli-25",
+        "name": "LIIVATE",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/25",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "liivate",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "fibre": 0.0,
+          "polyols": null,
+          "protein": 96.38,
+          "fat": 0.1
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "liivate",
+      "matchEvidence": "Ingredient 'liivatelehteä' matched to reference LIIVATE; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured.",
+      "gramsPerUnit": 1.67,
+      "conversionEvidence": "Reference mass 10 g per six standard gelatin sheets. Exact mass varies by brand."
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "At least one matched source lacks an aggregate polyol value. The public macro fields remain empty."
+}
