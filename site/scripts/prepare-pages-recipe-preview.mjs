@@ -9,11 +9,10 @@ const previewOrigin = `https://${branch}.${project}.pages.dev`;
 const bucket = "recipavo-r2-full-preview-e3ad6d91";
 
 async function main() {
-  const [distArg, pilotMapFile, outputArg, revision, accountId, fallbackProbe, ...extra] = process.argv.slice(2);
-  assert.ok(distArg && pilotMapFile && outputArg && revision && accountId && fallbackProbe && !extra.length,
-    "Usage: node scripts/prepare-pages-recipe-preview.mjs <dist> <pilot-map> <new-stage-dir> <commit> <account> <fallback-path>");
+  const [distArg, pilotMapFile, outputArg, revision, fallbackProbe, ...extra] = process.argv.slice(2);
+  assert.ok(distArg && pilotMapFile && outputArg && revision && fallbackProbe && !extra.length,
+    "Usage: node scripts/prepare-pages-recipe-preview.mjs <dist> <pilot-map> <new-stage-dir> <commit> <fallback-path>");
   assert.match(revision, /^[a-f0-9]{40}$/);
-  assert.match(accountId, /^[a-f0-9]{32}$/);
   const dist = path.resolve(distArg);
   const output = path.resolve(outputArg);
   assert.ok(output !== dist && !output.startsWith(dist + path.sep), "Use a stage directory outside the build");
@@ -64,7 +63,7 @@ export const onRequest = context => serveRecipeImage(context.request, map,
   context.env.RECIPE_IMAGES, () => context.next(), "${revision}", true);
 `);
   await writeFile(path.join(output, "wrangler.jsonc"), JSON.stringify({
-    name: project, account_id: accountId, compatibility_date: "2026-11-15",
+    name: project, compatibility_date: "2026-11-15",
     pages_build_output_dir: "./public", env: {
       preview: { r2_buckets: [{ binding: "RECIPE_IMAGES", bucket_name: bucket, jurisdiction: "eu" }] },
     },
