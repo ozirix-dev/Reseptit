@@ -107,11 +107,31 @@ test("recipe additions, edits, and deletions select nutrition plus GI/GK checks"
     assert.equal(plan.runNutrition, true, operation);
     assert.equal(plan.runGlycemic, true, operation);
     assert.equal(plan.runBuild, true, operation);
-    assert.equal(plan.unitTests.includes("tests/glycemic-coverage-inventory.test.ts"), true, operation);
-    assert.equal(plan.unitTests.includes("tests/glycemic-load.test.ts"), true, operation);
+    assert.deepEqual(plan.unitTests, [], operation);
     assert.equal(plan.runBrowser, false, operation);
     assert.equal(plan.full, false, operation);
   }
+});
+
+test("deduplicate only the files run by scheduled dedicated npm suites", () => {
+  const { scripts } = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8"));
+  const unitOnly = "tests/recipe-schema.test.ts";
+  const nutrition = ["tests/nutrition-model.test.ts", "tests/nutrition-evidence.test.ts"];
+  const glycemic = ["tests/glycemic-load.test.ts", "tests/glycemic-coverage-inventory.test.ts"];
+  for (const [name, expected] of [["test:nutrition", nutrition], ["test:glycemic", glycemic]]) {
+    assert.deepEqual(scripts[name].split(/\s+/), ["tsx", "--test", ...expected]);
+  }
+  const testPaths = [...nutrition, ...glycemic, unitOnly].map(file => `site/${file}`);
+  assert.deepEqual(classifyPaths(testPaths).unitTests, [...nutrition, ...glycemic, unitOnly].sort());
+  const nutritionOnly = classifyPaths(["site/scripts/nutrition-audit.ts", ...testPaths]);
+  assert.equal(nutritionOnly.runNutrition, true);
+  assert.equal(nutritionOnly.runGlycemic, false);
+  assert.deepEqual(nutritionOnly.unitTests, [...glycemic, unitOnly].sort());
+  const mixed = classifyPaths(["reseptit/paaruoat/esimerkki.md", ...testPaths]);
+  assert.equal(mixed.runNutrition, true);
+  assert.equal(mixed.runGlycemic, true);
+  assert.deepEqual(mixed.unitTests, [unitOnly]);
+  assert.deepEqual(classifyPaths(testPaths, { forceFull: true }).unitTests, ["*"]);
 });
 
 test("PR and main push both audit recipe coverage; only main push publishes", () => {
@@ -139,12 +159,7 @@ test("separately passing recipe and GI/GK PR path sets remain audited when combi
   assert.equal(recipePr.runBuild, true);
   assert.equal(giPr.runGlycemic, true);
   assert.equal(giPr.runBuild, true);
-  assert.deepEqual(combined.unitTests, [
-    "tests/glycemic-coverage-inventory.test.ts",
-    "tests/glycemic-load.test.ts",
-    "tests/nutrition-evidence.test.ts",
-    "tests/nutrition-model.test.ts",
-  ]);
+  assert.deepEqual(combined.unitTests, []);
 
   const combinedPr = applyEventPolicy(classifyPaths([...recipePrPaths, ...giPrPaths]), "pull_request");
   const combinedMainPush = applyEventPolicy(classifyPaths([...recipePrPaths, ...giPrPaths]), "push");
@@ -153,8 +168,7 @@ test("separately passing recipe and GI/GK PR path sets remain audited when combi
     assert.equal(plan.runGlycemic, true);
     assert.equal(plan.runBuild, true);
     assert.equal(plan.runStatic, true);
-    assert.equal(plan.unitTests.includes("tests/glycemic-coverage-inventory.test.ts"), true);
-    assert.equal(plan.unitTests.includes("tests/glycemic-load.test.ts"), true);
+    assert.deepEqual(plan.unitTests, []);
   }
   assert.equal(combinedPr.publish, false);
   assert.equal(combinedMainPush.publish, true);
@@ -162,10 +176,7 @@ test("separately passing recipe and GI/GK PR path sets remain audited when combi
 
 test("GI/GK model changes retain calculation regression and build audits", () => {
   const plan = classifyPaths(["site/scripts/glycemic-load-model.ts"]);
-  assert.deepEqual(plan.unitTests, [
-    "tests/glycemic-coverage-inventory.test.ts",
-    "tests/glycemic-load.test.ts",
-  ]);
+  assert.deepEqual(plan.unitTests, []);
   assert.equal(plan.runGlycemic, true);
   assert.equal(plan.runBuild, true);
   assert.equal(plan.runBrowser, false);
@@ -180,10 +191,7 @@ test("GI/GK recipe bindings, aliases, and calculation snapshots select GI/GK che
     const plan = classifyPaths([file]);
     assert.equal(plan.runGlycemic, true, file);
     assert.equal(plan.runBuild, true, file);
-    assert.deepEqual(plan.unitTests, [
-      "tests/glycemic-coverage-inventory.test.ts",
-      "tests/glycemic-load.test.ts",
-    ], file);
+    assert.deepEqual(plan.unitTests, [], file);
   }
 });
 

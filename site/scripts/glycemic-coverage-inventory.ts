@@ -1,5 +1,5 @@
 import { execFileSync } from "node:child_process";
-import { readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { GlycemicLoadRecipeInput } from "./glycemic-load-model";
 import { glycemicLoadInputHash } from "./glycemic-load-recipe-binding";
@@ -38,18 +38,25 @@ const siteDir = path.resolve(import.meta.dirname, "..");
 const root = path.resolve(siteDir, "..");
 const baselinePath = path.join(root, "docs/nutrition/glycemic-coverage-batch-2a-baseline.json");
 const args = process.argv.slice(2);
-const option = (name: string, fallback: string) => {
+const reportDirectory = "tmp/nutrition/glycemic-coverage";
+const option = (name: string, fallback: string, directory = "docs/nutrition") => {
   const index = args.indexOf(name);
   if (index < 0) return fallback ? path.resolve(root, fallback) : null;
   const value = args[index + 1];
-  if (!value || value.startsWith("--")) throw new Error(`${name} requires a path under docs/nutrition.`);
+  if (!value || value.startsWith("--")) throw new Error(`${name} requires a path under ${directory}.`);
   const resolved = path.resolve(root, value);
-  if (!resolved.startsWith(`${path.resolve(root, "docs/nutrition")}${path.sep}`)) throw new Error(`${name} must stay under docs/nutrition.`);
+  const relative = path.relative(path.resolve(root, directory), resolved);
+  if (!relative || relative === ".." || relative.startsWith(`..${path.sep}`) || path.isAbsolute(relative)) {
+    throw new Error(`${name} must stay under ${directory}.`);
+  }
   return resolved;
 };
 const baselineInputPath = option("--baseline", "docs/nutrition/glycemic-coverage-batch-2a-baseline.json")!;
-const currentOutputPath = option("--output-json", "docs/nutrition/glycemic-coverage-current-2026-10-25.json")!;
-const markdownOutputPath = option("--output-markdown", "docs/nutrition/glycemic-coverage-current-2026-10-25.md")!;
+const currentOutputPath = option("--output-json", `${reportDirectory}/current.json`, reportDirectory)!;
+const markdownOutputPath = option("--output-markdown", `${reportDirectory}/current.md`, reportDirectory)!;
+if (path.extname(currentOutputPath) !== ".json" || path.extname(markdownOutputPath) !== ".md") {
+  throw new Error("--output-json requires a .json file and --output-markdown requires a .md file.");
+}
 const batchBaselinePath = option("--capture-batch-baseline", "");
 const batch2B2BaselinePath = option("--capture-batch-2b2-baseline", "");
 const batch2B3BaselinePath = option("--capture-batch-2b3-baseline", "");
@@ -168,7 +175,7 @@ if (args.includes("--capture-approved-baseline")) {
     nutritionStatuses,
   });
   if (baseline.recipeCount !== pilot.results.length) throw new Error("Baseline capture omitted one or more source recipes.");
-  await writeFile(baselinePath, `${JSON.stringify(baseline, null, 2)}\n`, "utf8");
+  await writeImmutableBaselineFile(baselinePath, `${JSON.stringify(baseline, null, 2)}\n`);
   console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, output: baselinePath }, null, 2));
   process.exit(0);
 }
@@ -176,12 +183,6 @@ if (args.includes("--capture-approved-baseline")) {
 if (batchBaselinePath) {
   const expectedSourceCommit = "25902326b9fd89a30d8bfe48f2d1cd02879bd9df";
   if (sourceCommit !== expectedSourceCommit) throw new Error(`Batch 2B1 baseline can only be captured at ${expectedSourceCommit}; current HEAD is ${sourceCommit}.`);
-  try {
-    await readFile(batchBaselinePath, "utf8");
-    throw new Error(`Refusing to overwrite existing batch baseline: ${batchBaselinePath}`);
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
-  }
   const baseline = buildBaselineSnapshot({
     sourceCommit,
     results: pilot.results,
@@ -194,7 +195,7 @@ if (batchBaselinePath) {
     nutritionStatuses,
   });
   if (baseline.recipeCount !== 325 || baseline.calculated !== 117 || baseline.incomplete !== 208) throw new Error("Batch 2B1 baseline does not match the approved 325 / 117 / 208 starting point.");
-  await writeFile(batchBaselinePath, `${JSON.stringify(baseline, null, 2)}\n`, { encoding: "utf8", flag: "wx" });
+  await writeImmutableBaselineFile(batchBaselinePath, `${JSON.stringify(baseline, null, 2)}\n`);
   console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, output: batchBaselinePath }, null, 2));
   process.exit(0);
 }
@@ -202,12 +203,6 @@ if (batchBaselinePath) {
 if (batch2B2BaselinePath) {
   const expectedSourceCommit = "66ba0464bd0099c2318ce9b5cd1ae3ca0bd841cd";
   if (sourceCommit !== expectedSourceCommit) throw new Error(`Batch 2B2 baseline can only be captured at ${expectedSourceCommit}; current HEAD is ${sourceCommit}.`);
-  try {
-    await readFile(batch2B2BaselinePath, "utf8");
-    throw new Error(`Refusing to overwrite existing batch baseline: ${batch2B2BaselinePath}`);
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
-  }
   const baseline = buildBaselineSnapshot({
     sourceCommit,
     results: pilot.results,
@@ -222,7 +217,7 @@ if (batch2B2BaselinePath) {
   if (baseline.recipeCount !== 325 || baseline.calculated !== 117 || baseline.incomplete !== 208 || baseline.giRecordCount !== 38) {
     throw new Error("Batch 2B2 baseline does not match the approved 325 / 117 / 208 / 38 starting point.");
   }
-  await writeFile(batch2B2BaselinePath, `${JSON.stringify(baseline, null, 2)}\n`, { encoding: "utf8", flag: "wx" });
+  await writeImmutableBaselineFile(batch2B2BaselinePath, `${JSON.stringify(baseline, null, 2)}\n`);
   console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, giRecordCount: baseline.giRecordCount, output: batch2B2BaselinePath }, null, 2));
   process.exit(0);
 }
@@ -230,12 +225,6 @@ if (batch2B2BaselinePath) {
 if (batch2B3BaselinePath) {
   const expectedSourceCommit = "95b87e3eb8b41dbef0913b8532fd8af67a5e56d6";
   if (sourceCommit !== expectedSourceCommit) throw new Error(`Batch 2B3 baseline can only be captured at ${expectedSourceCommit}; current HEAD is ${sourceCommit}.`);
-  try {
-    await readFile(batch2B3BaselinePath, "utf8");
-    throw new Error(`Refusing to overwrite existing batch baseline: ${batch2B3BaselinePath}`);
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
-  }
   const baseline = buildBaselineSnapshot({
     sourceCommit,
     results: pilot.results,
@@ -250,7 +239,7 @@ if (batch2B3BaselinePath) {
   if (baseline.recipeCount !== 325 || baseline.calculated !== 118 || baseline.incomplete !== 207 || baseline.giRecordCount !== 38) {
     throw new Error("Batch 2B3 baseline does not match the accepted 325 / 118 / 207 / 38 starting point.");
   }
-  await writeFile(batch2B3BaselinePath, `${JSON.stringify(baseline, null, 2)}\n`, { encoding: "utf8", flag: "wx" });
+  await writeImmutableBaselineFile(batch2B3BaselinePath, `${JSON.stringify(baseline, null, 2)}\n`);
   console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, giRecordCount: baseline.giRecordCount, output: batch2B3BaselinePath }, null, 2));
   process.exit(0);
 }
@@ -258,12 +247,6 @@ if (batch2B3BaselinePath) {
 if (batch2B4BaselinePath) {
   const expectedSourceCommit = "3099c246d188ee0484d1cd4b36e9e14d172c3610";
   if (sourceCommit !== expectedSourceCommit) throw new Error(`Batch 2B4 baseline can only be captured at ${expectedSourceCommit}; current HEAD is ${sourceCommit}.`);
-  try {
-    await readFile(batch2B4BaselinePath, "utf8");
-    throw new Error(`Refusing to overwrite existing batch baseline: ${batch2B4BaselinePath}`);
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
-  }
   const baseline = buildBaselineSnapshot({
     sourceCommit,
     results: pilot.results,
@@ -278,7 +261,7 @@ if (batch2B4BaselinePath) {
   if (baseline.recipeCount !== 325 || baseline.calculated !== 126 || baseline.incomplete !== 199 || baseline.giRecordCount !== 38) {
     throw new Error("Batch 2B4 baseline does not match the accepted 325 / 126 / 199 / 38 starting point.");
   }
-  await writeFile(batch2B4BaselinePath, `${JSON.stringify(baseline, null, 2)}\n`, { encoding: "utf8", flag: "wx" });
+  await writeImmutableBaselineFile(batch2B4BaselinePath, `${JSON.stringify(baseline, null, 2)}\n`);
   console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, giRecordCount: baseline.giRecordCount, output: batch2B4BaselinePath }, null, 2));
   process.exit(0);
 }
@@ -286,12 +269,6 @@ if (batch2B4BaselinePath) {
 if (batch2B5BaselinePath) {
   const expectedSourceCommit = "2f9cdd844a276cb284b02a01b0f501d3cb8540fb";
   if (sourceCommit !== expectedSourceCommit) throw new Error(`Batch 2B5 baseline can only be captured at ${expectedSourceCommit}; current HEAD is ${sourceCommit}.`);
-  try {
-    await readFile(batch2B5BaselinePath, "utf8");
-    throw new Error(`Refusing to overwrite existing batch baseline: ${batch2B5BaselinePath}`);
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
-  }
   const baseline = buildBaselineSnapshot({
     sourceCommit,
     results: pilot.results,
@@ -309,7 +286,7 @@ if (batch2B5BaselinePath) {
   if (baseline.giTierCounts.STRONG !== 5 || baseline.giTierCounts.SUPPLEMENTARY !== 34) {
     throw new Error("Batch 2B5 baseline GI quality tiers do not match the accepted 5 STRONG / 34 SUPPLEMENTARY starting point.");
   }
-  await writeFile(batch2B5BaselinePath, `${JSON.stringify(baseline, null, 2)}\n`, { encoding: "utf8", flag: "wx" });
+  await writeImmutableBaselineFile(batch2B5BaselinePath, `${JSON.stringify(baseline, null, 2)}\n`);
   console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, giRecordCount: baseline.giRecordCount, output: batch2B5BaselinePath }, null, 2));
   process.exit(0);
 }
@@ -317,12 +294,6 @@ if (batch2B5BaselinePath) {
 if (batch2B6ABaselinePath) {
   const expectedSourceCommit = "21d9628db3ffc7434e4308d6ab42880d1f12bae0";
   if (sourceCommit !== expectedSourceCommit) throw new Error(`Batch 2B6A baseline can only be captured at ${expectedSourceCommit}; current HEAD is ${sourceCommit}.`);
-  try {
-    await readFile(batch2B6ABaselinePath, "utf8");
-    throw new Error(`Refusing to overwrite existing batch baseline: ${batch2B6ABaselinePath}`);
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
-  }
   const baseline = buildBaselineSnapshot({
     sourceCommit,
     results: pilot.results,
@@ -343,7 +314,7 @@ if (batch2B6ABaselinePath) {
   if (baseline.nutritionAuditCounts["ESTIMATE WITH EVIDENCE"] !== 180 || baseline.nutritionAuditCounts["INSUFFICIENT SOURCE DATA"] !== 86 || baseline.nutritionAuditCounts.MISSING !== 59 || baseline.nutritionAuditCounts["CONFLICT REQUIRES REVIEW"] !== 0) {
     throw new Error("Batch 2B6A baseline strict nutrition audit does not match the accepted 180 / 86 / 59 / 0 starting point.");
   }
-  await writeFile(batch2B6ABaselinePath, `${JSON.stringify(baseline, null, 2)}\n`, { encoding: "utf8", flag: "wx" });
+  await writeImmutableBaselineFile(batch2B6ABaselinePath, `${JSON.stringify(baseline, null, 2)}\n`);
   console.log(JSON.stringify({ sourceCommit, recipeCount: baseline.recipeCount, calculated: baseline.calculated, incomplete: baseline.incomplete, giRecordCount: baseline.giRecordCount, output: batch2B6ABaselinePath }, null, 2));
   process.exit(0);
 }
@@ -538,6 +509,8 @@ const reportLines = [
   "- Eräkohtainen vertailusnapshot käyttää sille nimettyä 325 reseptin lähtötilaa; historiallisia erä 1:n ja erän 2A tiedostoja ei korvata.",
   "",
 ];
+await mkdir(path.dirname(currentOutputPath), { recursive: true });
+await mkdir(path.dirname(markdownOutputPath), { recursive: true });
 await writeFile(currentOutputPath, `${JSON.stringify({...inventory,versionCoverage,allPublishedSummary,newPublicGkPendingSources:separatelyPending}, null, 2)}\n`, "utf8");
 await writeFile(markdownOutputPath, `${reportLines.join("\n").trimEnd()}\n`, "utf8");
 console.log(JSON.stringify({ sourceCommit, ...summary, historicalStructuralBindingCount: structural.rows.length, withOtherBlockersAtReviewStart: structural.withOtherBlockersAtReviewStart, potentiallyResolvableByBindingOnlyAtReviewStart: structural.potentiallyResolvableByBindingOnlyAtReviewStart, output: currentOutputPath, markdown: markdownOutputPath }, null, 2));

@@ -18,11 +18,10 @@ Hakemisto, haku, suodattimet ja annoslaskuri ovat käytössä.
 - `site/`: Vite/React-sovellus, sisältöbuild, esirenderöinti ja testit.
 - `meta/`: luokitukset, ravintokentät ja käännössanasto.
 - `docs/`: ylläpito-ohjeet ja päivätyt tarkistusraportit.
-- `reseptit/raakileet/`, `arkisto/`, `_mallipohjat/` ja `tmp/` eivät ole julkaisulähteitä.
+- `reseptit/raakileet/`, `arkisto/`, `reseptit/_mallipohjat/` ja `tmp/` eivät ole julkaisulähteitä.
 
-Aamupalat ja välipalat ovat omia selailukategorioita. `reseptit/valipalat/`
--kansiota ei nykyisessä mainissa ole; keskeneräisiä välipaloja säilytetään
-`status: draft` -tilassa eikä niitä julkaista automaattisesti.
+Aamupalat ja välipalat ovat omia selailukategorioita. Keskeneräisiä välipaloja
+säilytetään `status: draft` -tilassa eikä niitä julkaista automaattisesti.
 Ruokavalioluokka ja tagit tallennetaan metatietoihin.
 Pelkkä `status: published` ei ohita karanteenia, lähde- tai hyväksyntäportteja.
 
