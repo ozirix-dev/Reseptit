@@ -1,5 +1,6 @@
 import type { RecipeSummary } from "@/content/route-data";
 import type { RecipeLocale } from "@/types/content";
+import { recipeMatchesCategory } from "@/content/recipe-categories";
 
 const categoryOrder: RecipeSummary["category"][] = ["paaruoka", "leivonnainen", "aamupala", "valipala", "alkuruoka", "jalkiruoka"];
 export const homepagePickLimit = 9;
@@ -55,9 +56,9 @@ const topicOrder: HomepageTopic[] = [
   { kind: "diet", value: "vhh" },
 ];
 
-export function homepageTopics(recipes: readonly Pick<RecipeSummary, "category" | "dietClass">[]): HomepageTopic[] {
+export function homepageTopics(recipes: readonly Pick<RecipeSummary, "category" | "additionalCategories" | "dietClass">[]): HomepageTopic[] {
   return topicOrder.filter((topic) => recipes.some((recipe) => topic.kind === "category"
-    ? recipe.category === topic.value
+    ? recipeMatchesCategory(recipe, topic.value)
     : topic.value === "keto" ? recipe.dietClass === "keto" : recipe.dietClass !== null));
 }
 
