@@ -10,7 +10,8 @@ import {execFileSync} from 'node:child_process';
 import {createElement as h} from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
 import {MemoryRouter} from 'react-router-dom';
-import {buildApprovedSevenVariants,loadPadSeeEw,verifyNextSevenManifest} from '../scripts/gk-next-seven';
+import {buildApprovedSevenVariants,loadPadSeeEw,verifyNextSevenManifest,verifyNextSevenSnapshotRecords} from '../scripts/gk-next-seven';
+import { approvedRecipeSnapshotRecord } from '../scripts/approved-recipe-note-edits';
 import {buildGkOnlyVariants} from '../scripts/gk149-integration';
 import {verifyApprovedSix} from '../scripts/gk149-approved-six';
 import {verifyFoodinRecord,FOODIN_ORIGINAL_FILE_SHA256,FOODIN_RECORD_SHA256,FOODIN_RECORD_ID} from '../scripts/gk-foodin-binding';
@@ -59,6 +60,15 @@ test('Draft-only authority and exact receipts reject added recipes, widened sour
  const fixture=mkdtempSync(path.join(os.tmpdir(),'gk-seven-seal-'));
  try{mkdirSync(path.join(fixture,'docs/nutrition/gk80-next-seven'),{recursive:true});writeFileSync(path.join(fixture,'docs/nutrition/gk80-next-seven/integration.json'),JSON.stringify({...manifest,mergeAuthorized:true}));assert.throws(()=>verifyNextSevenManifest(fixture),/binding changed/);}finally{rmSync(fixture,{recursive:true,force:true});}
 });
+test("scoped snapshot binding preserves the old seven outputs and rejects used changes", () => {
+ const unrelated = "reseptit/aamupalat/unrelated-snapshot.md";
+ const used = "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md";
+ const added = { ...approvedRecipeSnapshotRecord(used), englishPublicationSource: true };
+ assert.doesNotThrow(() => verifyNextSevenSnapshotRecords(root, file => file === unrelated ? added : approvedRecipeSnapshotRecord(file)));
+ assert.throws(() => verifyNextSevenSnapshotRecords(root, file => file === used ? added : approvedRecipeSnapshotRecord(file)), /scoped recipe snapshot changed/);
+ assert.equal(digest(seven), "ceb6bed6876b24de875754da695d9032ba360d7d62f0bdf8e5e9a9d05e049956");
+});
+
 test('Foodin record refinement is proven against both exact Git snapshots without accepting a changed label',()=>{
  const binding=read('docs/nutrition/gk80-next-seven/foodin-record-binding.json');
  const originalText=execFileSync('git',['show',binding.originalSourceCommit+':'+binding.sourcePath],{cwd:root,encoding:'utf8',maxBuffer:32*1024*1024});

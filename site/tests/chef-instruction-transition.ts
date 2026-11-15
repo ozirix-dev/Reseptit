@@ -1,14 +1,13 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
+import { readHistoricalTransition } from "./history/historical-source-reader";
 
 // This is an editorial-only *historical test projection*, not GK publication
 // approval. The recipe source in the live site is never rewritten by this
 // module. Preserve the original frozen nutrition/GK audit for comparison.
 //
-// Verify proposed recipe bytes against ONE immutable PR commit, and verify
-// that the sole semantic edit is confined to "## Valmistus".
+// Verify the pinned editorial fixture and the allowed change to "## Valmistus".
 const baselineMain = "ade461048ea138cd4f6a34340e8a53df79532bd7";
-const editorProposed = "9fc0b8fd7af8ed95cd429b86fec669290d290b18";
 
 export const chefCorrectionPaths = Object.freeze([
   "reseptit/aamupalat/indonesialainen-pisang-goreng-aamiaiseksi.md",
@@ -48,7 +47,7 @@ export function originalForChefHistoricalCheck(
 ): string {
   if (!permitted.has(file)) return liveText;
   const live = lf(liveText);
-  const edited = gitText(root, editorProposed, file);
+  const edited = lf(readHistoricalTransition("chef", file));
   const historical = gitText(root, baselineMain, file);
   assert.equal(live, edited, file + ": unknown edit cannot inherit chef historical exception");
   assert.equal(withoutPreparation(edited), withoutPreparation(historical),
