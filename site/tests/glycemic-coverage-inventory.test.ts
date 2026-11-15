@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
 import { mkdtemp, readFile, rm } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
@@ -74,6 +75,20 @@ test("batch baseline capture refuses to overwrite and preserves the original sna
     assert.equal(await readFile(filePath, "utf8"), original);
   } finally {
     await rm(directory, { recursive: true, force: true });
+  }
+});
+
+test("current coverage output options reject historical fixture paths", () => {
+  for (const [option, extension] of [["--output-json", "json"], ["--output-markdown", "md"]]) {
+    const result = spawnSync(process.execPath, [
+      "--import", "tsx", "scripts/glycemic-coverage-inventory.ts",
+      option, "docs/nutrition/glycemic-coverage-current-2026-10-25." + extension,
+      // A missing input keeps the test read-only even if path validation regresses.
+      "--baseline", "docs/nutrition/no-such-coverage-test-baseline.json",
+    ], { cwd: path.resolve(import.meta.dirname, ".."), encoding: "utf8" });
+    assert.ifError(result.error);
+    assert.equal(result.status, 1, result.stderr);
+    assert.ok(result.stderr.includes(option + " must stay under tmp/nutrition/glycemic-coverage."), result.stderr);
   }
 });
 
@@ -347,7 +362,7 @@ test("batch 2B6C current inventory publishes only two evidence-ready additions",
   }
 });
 
-test("current 2A and 2B6D inventories share one generated state while keeping historical baselines distinct", async () => {
+test("pinned 2A and 2B6D snapshots share a generated state while keeping historical baselines distinct", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const [generalText, batchText] = await Promise.all([
     readFile(path.join(root, "docs/nutrition/glycemic-coverage-current-2026-10-25.json"), "utf8"),
@@ -393,7 +408,7 @@ test("current 2A and 2B6D inventories share one generated state while keeping hi
   assert.match(report, /erän 2A lähtösnapshot on historiallinen vertailupohja/i);
 });
 
-test("current inventory preserves historical values except the documented coconut and onion corrections", async () => {
+test("pinned 2B6D snapshot preserves historical values except the documented coconut and onion corrections", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const baseline = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b6d-baseline.json"), "utf8")) as {
     sourceCommit: string; recipeCount: number; calculated: number; incomplete: number; giRecordCount: number;
@@ -456,7 +471,7 @@ test("current inventory preserves historical values except the documented coconu
   assert.ok(porridge.blockingCategories.some((category) => category.startsWith("GI")));
 });
 
-test("current 326-recipe batch inventory includes the lasagne as new and incomplete", async () => {
+test("pinned 326-recipe 2B6D snapshot includes the lasagne as new and incomplete", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const baseline = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-coverage-batch-2b6d-baseline.json"), "utf8")) as {
     sourceCommit: string;
