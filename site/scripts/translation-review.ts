@@ -23,11 +23,11 @@ export const evidenceSchema = z.array(z.object({
   scope: z.array(z.enum(scopes)), status: z.enum(["in-progress", "complete"]), human_attestation: z.boolean(),
 }).strict());
 export const contentHash = (text: string) => createHash("sha256").update(text.replaceAll("\r\n", "\n")).digest("hex");
-export function humanStatus(source: string, translation: string | null, evidence?: ReviewEvidence, automatedPass = true): HumanStatus {
+export function humanStatus(source: string, translation: string | null, evidence?: ReviewEvidence, automatedPass = true, asOf = Date.now()): HumanStatus {
   if (!evidence) return translation ? "AUTOMATED REVIEW ONLY" : "NOT REVIEWED";
   if (source !== evidence.source_content_hash || translation !== evidence.translation_content_hash) return "REVIEW STALE";
   const timestamp = Date.parse(evidence.reviewed_at);
-  const date = /^\d{4}-\d{2}-\d{2}$/.test(evidence.reviewed_at) && Number.isFinite(timestamp) && new Date(timestamp).toISOString().slice(0, 10) === evidence.reviewed_at && timestamp <= Date.now();
+  const date = /^\d{4}-\d{2}-\d{2}$/.test(evidence.reviewed_at) && Number.isFinite(timestamp) && new Date(timestamp).toISOString().slice(0, 10) === evidence.reviewed_at && timestamp <= asOf;
   if (!date || !evidence.evidence_id.trim() || !evidence.human_attestation || !scopes.every((scope) => evidence.scope.includes(scope))) return "NOT REVIEWED";
   if (evidence.status === "in-progress") return "HUMAN REVIEW IN PROGRESS";
   return automatedPass && evidence.status === "complete" ? "HUMAN REVIEW COMPLETE" : "REVIEW STALE";
@@ -45,7 +45,7 @@ export function risks(text: string, locale: string) {
   const notes = reasons.filter(([pattern]) => pattern.test(text)).map(([, reason]) => reason);
   return { level: locale === "th" || notes.length >= 3 ? "high" : notes.length ? "medium" : "low", reasons: notes };
 }
-export function buildRegistry(audit: TranslationAuditResult, hashes: Record<string, string>, evidence: ReviewEvidence[], codexEvidence: SemanticEvidence = {}) {
+export function buildRegistry(audit: TranslationAuditResult, hashes: Record<string, string>, evidence: ReviewEvidence[], codexEvidence: SemanticEvidence = {}, asOf = Date.now()) {
   const keys = evidence.map((e) => `${e.recipe_id}:${e.locale}`);
   if (new Set(keys).size !== keys.length) throw Error("Duplicate review evidence; resolve explicitly");
   const rows = audit.publishedSources.flatMap((source) => (["th", "en", "sv"] as const).flatMap((locale) => {
@@ -65,7 +65,7 @@ export function buildRegistry(audit: TranslationAuditResult, hashes: Record<stri
     return [{ recipe_id: source.data.recipe_id, locale, source_path: source.path, translation_path: target?.path ?? null,
       source_content_hash: sourceHash, translation_content_hash: translationHash,
       structural_status: structural ? "PASS" : "FAIL", automated_semantic_status: !target ? "NOT RUN" : semantic.length ? "FINDINGS" : "KNOWN RULES PASS; NOT GENERAL SEMANTIC PROOF",
-      human_review_status: humanStatus(sourceHash, translationHash, proof, structural && !semantic.length),
+      human_review_status: humanStatus(sourceHash, translationHash, proof, structural && !semantic.length, asOf),
       source_semantic_hash: sourceSemanticHash, translation_semantic_hash: targetSemanticHash,
       codex_review_status: semanticStatus(sourceSemanticHash, targetSemanticHash, structural && !semantic.length, codex),
       codex_review: codex ?? null, priority_score: risk.reasons.length,
@@ -81,12 +81,12 @@ export function buildRegistry(audit: TranslationAuditResult, hashes: Record<stri
   return rows.sort((a, b) => order[a.locale] - order[b.locale] || priority[a.risk_level] - priority[b.risk_level] || a.recipe_id.localeCompare(b.recipe_id));
 }
 export const escapeHtml = (text: string) => text.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
-export async function loadCurrentReview() {
+export async function loadCurrentReview(asOf?: number) {
   const audit = await auditTranslations();
   const files: Record<string, string> = Object.fromEntries(await Promise.all([...audit.publishedSources, ...audit.publishedTranslations].map(async (r) => [r.path, await readFile(path.join(root, r.path), "utf8")] as const)));
   const hashes = Object.fromEntries(Object.entries(files).map(([name, content]) => [name, contentHash(content)]));
   const evidence = evidenceSchema.parse(JSON.parse(await readFile(path.join(root, "meta/kaannokset/human-review-evidence.json"), "utf8")));
-  return { audit, files, rows: buildRegistry(audit, hashes, evidence, await loadSemanticEvidence(root)) };
+  return { audit, files, rows: buildRegistry(audit, hashes, evidence, await loadSemanticEvidence(root), asOf) };
 }
 type RegistryRow = ReturnType<typeof buildRegistry>[number];
 
