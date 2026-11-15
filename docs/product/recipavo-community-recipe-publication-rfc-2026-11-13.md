@@ -59,9 +59,10 @@ Käyttäjä voi tallentaa Facebook-, Instagram- tai YouTube-videon URL:n ja oman
 ## 3. Katselmoinnin työnkulku ja tilat
 
 ```text
-PRIVATE_DRAFT (syntyy aina onnistuneen tallennuksen jälkeen)
-  -> PRIVATE_SAVED (rasti ei valittu tai julkinen käsittely ei ole käytössä)
-  -> SUBMITTED (rasti valittu ja käsittely käytössä; suostumus + version hash)
+SAVE_RECIPE
+  -> PRIVATE_DRAFT (oma resepti tallennetaan aina ensin)
+     -> PRIVATE_SAVED (rasti ei valittu tai julkinen käsittely ei ole käytössä)
+     -> SUBMITTED (rasti valittu ja C3 käytössä; suostumus + version hash)
   -> PREFLIGHT (rakenne, käyttöoikeudet, duplikaatit, roskaposti)
      -> NEEDS_USER_FIX -> SUBMITTED (uusi versio)
      -> HOLD_SAFETY / HOLD_EVIDENCE / HOLD_RIGHTS
@@ -74,7 +75,7 @@ PRIVATE_DRAFT (syntyy aina onnistuneen tallennuksen jälkeen)
   -> WITHDRAWN / CORRECTION_PENDING / REVERTED (myöhempi muutos)
 ```
 
-Rasti on **käyttäjän toivoma julkisuus**, ei nykyinen näkyvyys. Todellinen julkaisutieto tulee vasta hyväksytystä `PUBLISHED`-tilasta. Julkaisupyynnön tallentaminen ei saa estää tai peruuttaa yksityisen luonnoksen onnistunutta tallennusta. 
+Rasti on **käyttäjän toivoma julkisuus**, ei nykyinen näkyvyys. Todellinen julkaisutieto tulee vasta hyväksytystä `PUBLISHED`-tilasta. Julkaisupyynnön tallentaminen ei saa estää tai peruuttaa yksityisen luonnoksen onnistunutta tallennusta.
 
 Tila `REVIEW_CANDIDATE` tai koneellisesti arvioitu `PASS` ei ole `EDITORIAL_APPROVED` eikä `PUBLISH_AUTHORIZED`. FAIL CLOSED: mikä tahansa epäselvä tai vanhentunut kriittinen tarkiste pysäyttää julkaisun, **muttei poista yksityistä reseptiä**.
 
