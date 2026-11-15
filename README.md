@@ -159,6 +159,7 @@ sidottuna. Hyväksyttävät, toisistaan riippumattomat reseptit voidaan julkaist
 mukautuvissa erissä; vaikea GK- tai turvallisuustapaus ei saa estää muita
 valmiita reseptejä. Merge tehdään projektin Repo Guard -menettelyllä.
 Katso [julkaisuarkkitehtuuri](docs/julkaisuarkkitehtuuri_github_pages.md),
+[SEO-seuranta ja Search Console](docs/seo-monitoring.md),
 [eräjulkaisujen toimintatapa](docs/rinnakkaiset-codex-ajot.md) ja
 [V1.4:n historialliset suorituskykymittaukset](docs/reports/2026-10-22-v1-4-performance.md).
 

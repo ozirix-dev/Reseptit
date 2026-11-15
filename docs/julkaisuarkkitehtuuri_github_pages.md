@@ -70,7 +70,7 @@ palauttaa odotetun revision ja samat tavut.
   [GK-pending-rekisterissä](nutrition/new-public-gk-pending-sources.json).
 - Merkitykseen vaikuttava muutos edellyttää julkaistujen kieliparien
   ajantasaista vertailua. Varmista lisäksi kuvan vastaavuus ja julkaistun
-  sivun toimivuus Pages-jakelusta.
+  sivun toimivuus Cloudflare Pages -tuotannossa.
 - GK80:n ja GK149:n alkuperäisversion regressio käyttää jäädytettyä
   resepti-ID-joukkoa. Uusi riippumaton FI-luonnos ei muuta joukkoa.
   Julkaistun nykyversion esityssovitukset tehdään järjestyksessä
@@ -84,7 +84,8 @@ käyttöönotto on tehtävä ennen ensimmäistä julkaisua.
 
 ## Sivureitit ja SEO
 
-- Tuotannon hakemisto on `/` ja reseptin osoite `/<url_slug>/`.
+- Tuotannon etusivu on `/`, suomenkielinen reseptikirjasto `/reseptit/` ja
+  reseptin osoite `/<url_slug>/`.
 - Käännösten hakemistot ovat `/en/recipes/`, `/sv/recept/` ja `/th/recipes/`.
   GitHub Pages -staging lisää samoihin reitteihin `/Reseptit`-etuliitteen.
 - Hakemisto- ja reseptisivujen HTML sisältää näkyvän tekstin jo ennen JavaScriptiä.
@@ -103,9 +104,10 @@ julkaistut hakemistot ja reseptireitit. GitHub Pages -stagingin sivuilla on
 
 ### Google Search Console
 
-Käytä tuotannon ominaisuutta ja tuotannon sivukarttaa. Tarkista tarvittaessa
-tuotannon hakemisto ja yksittäinen resepti URL-tarkastuksella. Tarkista
-indeksointi ja rakenteisen datan näkyvyys Search Consolesta.
+Käytä vahvistettua verkkotunnusominaisuutta recipavo.com ja ensisijaista
+[www-sivukarttaa](https://www.recipavo.com/sitemap.xml). Tarkista sivukartan
+käsittelytila, sivujen indeksointi ja reseptien rakenteisen datan havainnot
+[SEO-seurantaohjeen](seo-monitoring.md) mukaan.
 
 ## Kuvien lisääminen
 

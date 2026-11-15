@@ -2,7 +2,8 @@
 
 Päiväys: 2026-11-06
 Tila: **toteutusohje / hyväksyttävä erikseen**, ei väite jo tehdyistä teknisistä muutoksista.
-Kohde: Reseptit (nykyinen GitHub Pages), myöhemmin Recipavo.com; reseptit ensin, blogi samaa laadunhallintaa soveltaen.
+Kohde: [Recipavon Cloudflare Pages -tuotanto](https://www.recipavo.com/).
+Suunnitelma koskee ensin reseptejä ja myöhemmin myös Ruokaopasta.
 
 ## Miksi
 
@@ -176,10 +177,10 @@ liikenteen tärkeimmät reseptit → uudet reseptit → aiempi kirjasto;
 ei kaikkien kuvien kerralla generointia. Blogi otetaan mukaan vasta
 kun blogin oma tekniikka on julkaistu ja tarkastettu.
 
-**P3 – seuranta:** GitHub Pages -vaiheessa tarkista GSC-reittinä
-`https://ozirix-dev.github.io/Reseptit/`. Kun Recipavo.com on
-oikeasti käytössä, tee oma migraation tarkistus, GSC/Sitemap, indeksointi,
-Google Images, Rich Results, Discover-impressiot (jos näkyviä).
+**P3 – seuranta:** Käytä Search Consolessa verkkotunnusominaisuutta
+`recipavo.com`. Seuraa sivukartan käsittelyä, indeksointia, kuvahakua,
+reseptien tehostettuja hakutuloksia ja saatavilla olevaa Discover-dataa.
+Tarkista julkaisun jälkeen myös kuvalinkit ja metatiedot www-tuotannossa.
 Tallenna raporttiin havaintoarvot ja päivämäärä, ei sijoituslupauksia.
 
 ## Täsmälliset lähteet (tarkistettu 2026-11-06)

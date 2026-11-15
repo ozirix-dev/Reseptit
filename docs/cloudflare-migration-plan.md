@@ -2,6 +2,11 @@
 
 Päivitetty 5.11.2026. Tila: säilytettävä suunnittelu- ja inventaariodokumentaatio, **ei toteutus- tai julkaisulupaa**.
 
+Tämän suunnitelman julkisen sivuston hosting ja URL-linjaus ovat historiallisia.
+Nykyinen tuotanto on [www.recipavo.com](https://www.recipavo.com/) Cloudflare Pagesissa.
+Katso [nykyinen julkaisuohje](julkaisuarkkitehtuuri_github_pages.md) ja
+[D1/R2-toteutusohjelma](architecture/recipavo-d1-r2-production-adoption-2026-11-15.md).
+
 **Siivouksen päätös:** PR:n dokumentaation yhdistäminen mainiin ei hyväksy SOURCE-01-lähteitä,
 D1/R2-migraatiota, kuvien julkaisua, DNS-siirtoa tai vaiheiden aloitusta.
 Kuvainventaariot ovat 2.11.2026 päivättyjä historiallisia havaintoja;
