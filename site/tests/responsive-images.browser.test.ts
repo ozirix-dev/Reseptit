@@ -12,7 +12,7 @@ test("fresh browser contexts choose correctly sized local images without duplica
   const browser = await launchBrowser();
   const rows: unknown[] = [];
   try {
-    for (const width of [320, 375, 390, 768, 1024, 1440]) for (const dpr of [1, 2, 3]) {
+    for (const width of [320, 375, 390, 412, 768, 1024, 1440]) for (const dpr of [1, 2, 3]) {
       for (const route of ["/", "/kermainen-lohipata/", "/en/recipes/"]) {
         const context = await browser.newContext({ viewport: { width, height: 900 }, deviceScaleFactor: dpr });
         const page = await context.newPage();
@@ -45,6 +45,14 @@ test("fresh browser contexts choose correctly sized local images without duplica
           assert.equal(requests.filter((url) => candidates.includes(url)).length, 1, `no fallback/preload double fetch ${width}/${dpr}/${route}`);
           if (dpr === 1 && width <= 390) assert.match(result.currentSrc, /480w\.webp$/);
           if (route === "/") {
+            if (process.env.VITE_RECIPAVO_HERO_PREVIEW === "true" && (width === 390 || width === 412)) {
+              if (dpr === 2) assert.match(result.currentSrc, /720w\.webp$/);
+              if (dpr === 3) {
+                const selectedWidth = Number(result.srcSet.split(", ")
+                  .find((candidate) => candidate.startsWith(result.currentSrc + " "))?.split(" ").at(-1)?.slice(0, -1));
+                assert.ok(selectedWidth >= result.renderedWidth * dpr, "3x gets a full-density image");
+              }
+            }
             assert.equal(await page.locator('.recipe-card img[loading="eager"]').count(), 1);
             assert.equal(await page.locator('.recipe-card img[fetchpriority="high"]').count(), 1);
           }

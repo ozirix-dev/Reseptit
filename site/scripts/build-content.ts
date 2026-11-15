@@ -24,6 +24,8 @@ import { assertQuantifiedCriticalIngredients, assertUniqueRecipes, assertSnackPu
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { inheritSourceAdditionalCategories } from "../src/content/recipe-categories";
 import { assertGlutenFreeReviewRecord } from "./gluten-free-review";
+import { homepagePicks } from "../src/features/recipes/home-preview";
+import { localeIndexes } from "../src/content/route-data";
 import { rebuildPublishedImages } from "../src/content/published-images";
 import type { RecipeEntry, RecipeLocale, SiteContentIndex } from "../src/types/content";
 
@@ -212,11 +214,18 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
   assertUniqueRecipes(recipes);
   assertQuantifiedCriticalIngredients(recipes);
   for (const recipe of recipes) Object.assign(recipe, sourceFacets.get(recipe.recipeId) ?? { cuisine: null, ingredientGroups: [] });
-  const images = await rebuildPublishedImages(imageSourceDir, path.join(siteDir, "public"), [...publishedImagePaths]);
+  const imageUrlPrefix = `${baseUrl}/kuvat/`;
+  const homepageImagePaths = new Set(Object.keys(localeIndexes).flatMap((locale) =>
+    homepagePicks(recipes.filter((recipe) => recipe.locale === locale))
+      .flatMap(({ image }) => image ? [image.src.slice(imageUrlPrefix.length)] : []),
+  ));
+  const images = await rebuildPublishedImages(
+    imageSourceDir, path.join(siteDir, "public"), [...publishedImagePaths], undefined, homepageImagePaths,
+  );
   const byPath = new Map(images.images.map((image) => [image.path, image]));
   for (const recipe of recipes) {
     if (!recipe.image) continue;
-    const source = byPath.get(recipe.image.src.slice(`${baseUrl}/kuvat/`.length))!;
+    const source = byPath.get(recipe.image.src.slice(imageUrlPrefix.length))!;
     recipe.image.width = source.width;
     recipe.image.height = source.height;
     // Keep the unchanged original as src and the largest candidate (also used by SEO).
