@@ -57,7 +57,7 @@ translation_of: thai-kananmunat-kookoscurryssa
 
 ## Beskrivning
 
-Ett uppvägt hemköksrecept enligt den finska källan; denna text är ett opublicerat översättningsutkast.
+Kokta ägg i röd currysås med kokosmjölk och tomat, serverade med ris.
 
 ## Ingredienser
 

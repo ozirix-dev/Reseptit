@@ -68,15 +68,14 @@ test("SHA-pinned FI overlays correct seventeen dishes without nutrition changes"
     for(const k of macros) assert.equal(after[k],before[k]);
     if (before.recipe_id === "vietnamilainen-kahvijogurtti-banaanilla") {
       assert.match(afterMd.content,/30 g makeutettua kondensoitua maitoa/);
-      assert.match(afterMd.content,/AFCD F005582/);
-      assert.match(afterMd.content,/Fineli 620/);
-      assert.match(afterMd.content,/Fineli 11049/);
+      assert.match(afterMd.content,/makeutettua kondensoitua lehmänmaitoa/);
+      assert.match(afterMd.content,/3,9 % rasvaa/);
       assert.match(afterMd.content,/125 g syötävää hedelmää/);
       assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length,4);
       assert.equal(after.title,before.title);
     }
     if (before.recipe_id === "thai-kananmunat-kookoscurryssa") {
-      assert.match(afterMd.content,/Tuotetarkennus ja allergeenit/);
+      assert.match(afterMd.content,/## Muistiinpanot/);
       assert.match(afterMd.content,/sisältää katkaraputahnaa eli äyriäisallergeenin/);
       assert.match(afterMd.content,/hiilihydraattia 24,2 g, proteiinia 6,1 g ja rasvaa 1,6 g/);
       assert.doesNotMatch(beforeMd.content,/katkaraputahnaa eli äyriäisallergeenin/);

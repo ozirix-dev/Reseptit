@@ -44,16 +44,17 @@ ingredients:
   - amount: 1
     unit: kpl
     item: limetti
+    note: "jogurttiin, mehua noin 44 g"
   - amount: null
     unit: ""
     item: suolaa ja chiliä
 servings: 4
 time_total_min: 25
 difficulty: Helppo
-carbs_net_per_serving_g: 2.71
-carbs_total_per_serving_g: 5.28
-protein_per_serving_g: 31.27
-fat_per_serving_g: 26.41
+carbs_net_per_serving_g: 2.79
+carbs_total_per_serving_g: 5.31
+protein_per_serving_g: 31.35
+fat_per_serving_g: 26.09
 image:
   src: paaruoat/tacokulho-nauta-avokado-v2.webp
   alt: "Tacokulho naudan jauhelihalla, avokadolla, tomaatilla ja limettijogurtilla"

@@ -2,7 +2,9 @@
 No production input, receipt, publication or source approval is written.
 """
 from decimal import Decimal as D
+from hashlib import sha256
 import json
+import sys
 from pathlib import Path
 
 folder=Path(__file__).resolve().parent
@@ -22,7 +24,15 @@ cases={
  'potato-component-conditional-gk':(component('500',fineli['205']['per100g']['available_carbohydrate_g_per_100g'],'4')*D(66)/D(100),D('12.7875')),
 }
 deep=review['deepOriginalCaseReview']['cards']
-baozi=json.loads((root/deep['baozi']['macroPath']).read_text(encoding='utf-8'))
+baozi_path=deep['baozi']['macroPath']
+if sys.argv[1:]==['--historical-baozi-stdin']:
+    old_package=sys.stdin.buffer.read().decode("utf-8")
+    manifest=json.loads((folder/'candidates.json').read_text(encoding='utf-8'))
+    pin=next(row for row in manifest['reviewTextSnapshots'] if row['path']==baozi_path)
+    assert sha256(old_package.encode('utf-8')).hexdigest()==pin['sha256Lf']
+else:
+    old_package=(root/baozi_path).read_text(encoding='utf-8')
+baozi=json.loads(old_package)
 starch=next(i for i in baozi['ingredients'] if i['item']=='maissitärkkelystä')
 assert starch['record']['id']=='fineli-162-release-20'
 old=component(str(starch['amount']*starch['gramsPerUnit']),starch['record']['per100g']['carbohydrate'],'4')

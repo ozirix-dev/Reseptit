@@ -24,7 +24,7 @@ ingredients:
   - {amount: 1, unit: tl, item: kokonaisia korianterinsiemeniä}
   - {amount: 3, unit: rkl, item: kalakastiketta}
   - {amount: 1, unit: rkl, item: ruokosokeria}
-  - {amount: 150, unit: g, item: pavunituja, note: tarjoiluun}
+  - {amount: 150, unit: g, item: pavunituja, note: läpikuumennettuna tarjoiluun}
   - {amount: 1, unit: ruukku, item: thaibasilikaa, note: tarjoiluun}
   - {amount: 20, unit: g, item: tuoretta korianteria, note: tarjoiluun}
   - {amount: 1, unit: kpl, item: limetti, note: lohkoina tarjoiluun}
@@ -41,7 +41,8 @@ Kotikeittiöön sovitettu phở bò rakentuu pitkään haudutetusta luuliemestä
 3. Lisää kattilaan luut ja 4 litraa vettä. Kiehauta, kuori pinnalle nouseva vaahto ja hauduta hiljaa noin 2 tuntia.
 4. Paahda tähtianis, kaneli ja korianterinsiemenet kuivalla pannulla tuoksuviksi. Lisää ne liemeen paahdetun sipulin ja inkiväärin kanssa. Hauduta vielä 60 minuuttia.
 5. Siivilöi liemi. Mausta kalakastikkeella ja ruokosokerilla. Keitä riisinuudelit pakkauksen ohjeen mukaan.
-6. Kiehauta siivilöity liemi uudelleen ja kypsennä naudanviipaleet siinä erissä. Varmista lämpömittarilla, että liha saavuttaa vähintään 63 °C ja anna sen levätä kolme minuuttia ennen tarjoilua. Jaa kypsennetyt nuudelit ja naudanliha kulhoihin, kaada kuuma liemi päälle ja tarjoa pavunitujen, thaibasilikan, korianterin ja limetin kanssa.
+6. Keitä pavunituja erillisessä kattilassa vedessä ja sekoita, jotta ne kuumenevat tasaisesti. Kun idut ovat kauttaaltaan höyryävän kuumia, valuta ne.
+7. Kiehauta siivilöity liemi uudelleen ja kypsennä naudanviipaleet siinä erissä. Varmista lämpömittarilla, että liha saavuttaa vähintään 63 °C ja anna sen levätä kolme minuuttia ennen tarjoilua. Jaa kypsennetyt nuudelit ja naudanliha kulhoihin, kaada kuuma liemi päälle ja tarjoa kuumennettujen pavunitujen, thaibasilikan, korianterin ja limetin kanssa.
 
 ## Muistiinpanot
 

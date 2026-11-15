@@ -37,6 +37,17 @@ test("recipe actions progressively enhance readable static pages in all four lan
   }
 });
 
+test("the FI coconut curry displays its allergen note on the static recipe page", async () => {
+  const recipe = siteContent.recipes.find(({ recipeId, locale }) =>
+    recipeId === "thai-kananmunat-kookoscurryssa" && locale === "fi");
+  assert.ok(recipe);
+  const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+  const visiblePage = html.slice(html.indexOf('<div id="root">')).split('</main>')[0];
+  assert.match(visiblePage, /sisältää katkaraputahnaa eli äyriäisallergeenin/);
+  assert.match(visiblePage, /voi sisältää myös kalajäämiä/);
+  assert.match(visiblePage, /Tarkista oman pakkauksen ainesosat/);
+});
+
 test("Italian bake estimated total time reaches visible notes and Recipe JSON-LD in every locale", async () => {
   const { siteContent } = await import("../src/generated/content.generated");
   const recipes = siteContent.recipes.filter((recipe) => recipe.recipeId === "italian-pata");

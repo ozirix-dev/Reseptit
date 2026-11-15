@@ -30,8 +30,8 @@ ingredients:
   - amount: 1
     unit: ""
     item: "ไข่ไก่"
-  - amount: 1
-    unit: ช้อนโต๊ะ
+  - amount: 16
+    unit: กรัม
     item: "มัสตาร์ดดิฌง"
   - amount: 2
     unit: ช้อนโต๊ะ
@@ -50,10 +50,10 @@ image:
   alt: "สเต๊กเนื้อบดใส่บีตรูตแบบลินด์สตรอมเสิร์ฟกับกะหล่ำปลีผัดเนย"
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 9.54
-carbs_total_per_serving_g: 12.77
-protein_per_serving_g: 31.9
-fat_per_serving_g: 18.32
+carbs_net_per_serving_g: 9.89
+carbs_total_per_serving_g: 13.17
+protein_per_serving_g: 32.01
+fat_per_serving_g: 18.47
 
 source_language: fi
 source_recipe: reseptit/paaruoat/lindstrominpihvit-kaalilla.md

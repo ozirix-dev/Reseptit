@@ -63,7 +63,3 @@ All measured ingredient quantities are in the structured list above.
 2. If desired, lightly toast all 20 g coconut in a dry pan and let it cool; add no oil or other fat.
 3. Divide the yogurt and mango equally between two cold serving bowls. Add half the measured lime juice to each; add only the listed salt if desired.
 4. Divide the coconut between the bowls (10 g per portion) and serve cold. No beans, tofu or extra sauce are part of this recipe.
-
-## Notes
-
-This is an ingredient-matched draft. Nutrition and glycemic-load approval require separate source review.

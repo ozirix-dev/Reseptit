@@ -57,7 +57,7 @@ translation_of: intialainen-besan-chilla
 
 ## Description
 
-A measured home-kitchen version following the Finnish source; this text is an unpublished translation draft.
+Besan chilla are savoury chickpea flour pancakes with tomato, onion and spices.
 
 ## Ingredients
 

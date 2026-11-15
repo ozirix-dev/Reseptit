@@ -63,4 +63,4 @@ Mängderna anges i den strukturerade ingredienslistan ovan.
 
 ## Anteckningar
 
-Bananens ätliga gramvikt och valet av kondenserad mjölk måste kontrolleras mot näringsunderlaget.
+Använd sötad kondenserad komjölk och naturell yoghurt med 3,9 % fett. Näringsvärdena är beräknade med 125 g skalad banan. Produktvalet och bananens storlek påverkar värdena.

@@ -177,10 +177,10 @@
     "findings": []
   },
   "carnitas-salaattitacot:en": {
-    "source_hash": "d50f8caa6c73b4049f39b7465f81f210b3be6ffe4683908c67d34d2561384f7f",
-    "translation_hash": "503a4bae134adc26844c0486a166ab825680ae54b11f5356af2ab555d4ca446f",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-kolme-korjattua-reseptikuvaa.md",
+    "source_hash": "3a07323194d178862e1f018094bd83be50e3f1b89520f21b0733dfe8be6cb3f6",
+    "translation_hash": "07a8c9df6784f5d9fb417f5895d87c31eae2f4ad3d231283a6e766df2570957d",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -191,10 +191,10 @@
     ]
   },
   "carnitas-salaattitacot:sv": {
-    "source_hash": "d50f8caa6c73b4049f39b7465f81f210b3be6ffe4683908c67d34d2561384f7f",
-    "translation_hash": "0c5b7ccb81f04dbbc90f270cc0faf40fc8e0af670ad4d1f089dfa81c0eb203af",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-kolme-korjattua-reseptikuvaa.md",
+    "source_hash": "3a07323194d178862e1f018094bd83be50e3f1b89520f21b0733dfe8be6cb3f6",
+    "translation_hash": "63bd6aadca15315474e0f0aa7a409549436b7c1932cab5bf227f070a8c13de51",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -205,10 +205,10 @@
     ]
   },
   "carnitas-salaattitacot:th": {
-    "source_hash": "d50f8caa6c73b4049f39b7465f81f210b3be6ffe4683908c67d34d2561384f7f",
-    "translation_hash": "e087fe3b587b94a4fd6e7bf7586e0c336045c08107e919127e3ab4d46b3d1d0b",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-kolme-korjattua-reseptikuvaa.md",
+    "source_hash": "3a07323194d178862e1f018094bd83be50e3f1b89520f21b0733dfe8be6cb3f6",
+    "translation_hash": "1b9f2350590602f8cfff3cbd3019a35e0ed7e09064090e7899eed63831bcd787",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -740,27 +740,45 @@
   },
   "intialainen-besan-chilla:en": {
     "source_hash": "68fdaf8b2b5125be987b2bc186bc08efde5916f51c41d9d5ba24a92e4eb6ea9c",
-    "translation_hash": "b94b2b1a94dfc93523e3d3422026c80ad4a8f86a35df359314573178ce697052",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-besan-coffee-six-language-release.md | AI review against SHA-locked public Finnish source and nutrition input; no human attestation",
+    "translation_hash": "0bfdbc2ab44891e627f304d55990af15dc64b20945e4315fd3d2651978cbffb5",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "The description names the chickpea pancakes, tomato and onion without draft workflow wording."
+      }
+    ]
   },
   "intialainen-besan-chilla:sv": {
     "source_hash": "68fdaf8b2b5125be987b2bc186bc08efde5916f51c41d9d5ba24a92e4eb6ea9c",
-    "translation_hash": "41cdd2d49c3b185a3d6fe3de57821b93e2f6757512eafe73d22b4a4e228a1ca4",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-besan-coffee-six-language-release.md | AI review against SHA-locked public Finnish source and nutrition input; no human attestation",
+    "translation_hash": "31b22e6098ffda27ec0a015f555b429bfc5a052dd208910cd0381cb0c62b7209",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "The description names the chickpea pancakes, tomato and onion without draft workflow wording."
+      }
+    ]
   },
   "intialainen-besan-chilla:th": {
     "source_hash": "68fdaf8b2b5125be987b2bc186bc08efde5916f51c41d9d5ba24a92e4eb6ea9c",
-    "translation_hash": "a635b59853033b1f4f97dfbb623409aaef7936a666fd3fa54bc55930b04d3b71",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-besan-coffee-six-language-release.md | AI review against SHA-locked public Finnish source and nutrition input; no human attestation",
+    "translation_hash": "55bf23ae8e963ec62b6a5d2ee424db1a000c3351343583ce5c6dd598baa12b5d",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "The description names the chickpea pancakes, tomato and onion without draft workflow wording."
+      }
+    ]
   },
   "japanilainen-curry-tofulla:en": {
     "source_hash": "b2f45afa202a8219d94aa8ffff6167dab839ec44d8d9b51bc625e3dbdd7671bb",
@@ -1188,20 +1206,18 @@
     "findings": []
   },
   "kantonilainen-hoyrytetty-kala:en": {
-    "source_hash": "9c0141414a5968e07fb2e6bf067ced7df1f8f1cc737cad648a49dba192128469",
-    "translation_hash": "495c8c355fb3e820505d55a9fab4a36f9d342b41af9a9ebc7cf694c56d79b9d4",
-    "reviewed_at": "2026-11-04",
-    "reference": "https://github.com/ozirix-dev/Reseptit/pull/262",
-    "correction_pr": 262,
+    "source_hash": "9f54cd0806e85b61881710bc0440e489bcee2b406f531a121ff805cb92b31029",
+    "translation_hash": "df7f3beae3cf3a3d806db004f4fe3e52980db1d3e66a014f51bd14d11c9c5e75",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "kantonilainen-hoyrytetty-kala:sv": {
-    "source_hash": "9c0141414a5968e07fb2e6bf067ced7df1f8f1cc737cad648a49dba192128469",
-    "translation_hash": "6cb1f8b3fca91dd489a7561cfed3d47c21e192d3295c6e8199e986083cbb795b",
-    "reviewed_at": "2026-11-04",
-    "reference": "https://github.com/ozirix-dev/Reseptit/pull/262",
-    "correction_pr": 262,
+    "source_hash": "9f54cd0806e85b61881710bc0440e489bcee2b406f531a121ff805cb92b31029",
+    "translation_hash": "1e8644bfd1af425ee3e7e2c0afb86af4eaaec03fbeb15fec6af97cb03d4ce2bb",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -1212,11 +1228,10 @@
     ]
   },
   "kantonilainen-hoyrytetty-kala:th": {
-    "source_hash": "9c0141414a5968e07fb2e6bf067ced7df1f8f1cc737cad648a49dba192128469",
-    "translation_hash": "6d04ee407f33a98f2d20de6c130cde7ca8b4dbe716cc159bacf2eed5bc78992d",
-    "reviewed_at": "2026-11-04",
-    "reference": "https://github.com/ozirix-dev/Reseptit/pull/262",
-    "correction_pr": 262,
+    "source_hash": "9f54cd0806e85b61881710bc0440e489bcee2b406f531a121ff805cb92b31029",
+    "translation_hash": "b77edc1b0f524c19a700add5f64b94ce15ee419eb8f021b9fd0b594ac0b9c43d",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
@@ -1297,52 +1312,67 @@
   },
   "karibia-mango-limejogurtti:en": {
     "source_hash": "be37513d6000af51c3b68000bf0cbf66f18416941b0109fccdcb7666e57617cc",
-    "translation_hash": "af6b2f13b126121ae97135abce0dd1bf35dae394824b9919229248db303ea47d",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-pilot3-9-release.md | AI FI-public-display source review; published numeric nutrition input recalc; no human attestation",
+    "translation_hash": "732da45f239bd7a07b5d92647f09e02a40bd498d837d83ef8f189c48cb07ffe3",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Removed obsolete draft workflow text from the published notes."
+      }
+    ]
   },
   "karibia-mango-limejogurtti:sv": {
     "source_hash": "be37513d6000af51c3b68000bf0cbf66f18416941b0109fccdcb7666e57617cc",
-    "translation_hash": "78547bf8eef89399434e8283c7ec206ce6b51c1387a72932a22b90ee5e7c4ff2",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-pilot3-9-release.md | AI FI-public-display source review; published numeric nutrition input recalc; no human attestation",
+    "translation_hash": "426783298d79bbecc8bb6c734b03db78a4ef29752bc01bcd43063c73ad063e55",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Removed obsolete draft workflow text from the published notes."
+      }
+    ]
   },
   "karibia-mango-limejogurtti:th": {
     "source_hash": "be37513d6000af51c3b68000bf0cbf66f18416941b0109fccdcb7666e57617cc",
-    "translation_hash": "dc2a150e6f69eccac6d8ecb3cbf497e5b6a07c8b844c81ce2acc3c73cf6f41bf",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-pilot3-9-release.md | AI FI-public-display source review; published numeric nutrition input recalc; no human attestation",
+    "translation_hash": "d3808a31389f81bb134c7b856f8467d2708043ebf39daa60cca32e08de06bcf9",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Removed obsolete draft workflow text from the published notes."
+      }
+    ]
   },
   "karjalanpiirakat-riisipuurolla:en": {
-    "source_hash": "2ac23fe646ac753cfddca8caf2bf7a24ef18e0c8869b25e64dd5c12c1781cbe7",
+    "source_hash": "3dd2f1827e2f115f45a86336b306f951c35f62ea74716f050aaaa665c4e59112",
     "translation_hash": "69d9648fd0423e60aad24b004787fddad2f782d85d9e7eb665fd96d673fb53a8",
-    "reviewed_at": "2026-11-07",
-    "reference": "PR #311 V9: ChatGPT FI/EN/SV/TH content comparison and automated structural CI review, 2026-11-07; not a human native-speaker review",
-    "correction_pr": 311,
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "karjalanpiirakat-riisipuurolla:sv": {
-    "source_hash": "2ac23fe646ac753cfddca8caf2bf7a24ef18e0c8869b25e64dd5c12c1781cbe7",
+    "source_hash": "3dd2f1827e2f115f45a86336b306f951c35f62ea74716f050aaaa665c4e59112",
     "translation_hash": "4f3b6b02721d59e626380b6de525c7a858249954cab6ac6d438cf44cfe0ce9dd",
-    "reviewed_at": "2026-11-07",
-    "reference": "PR #311 V9: ChatGPT FI/EN/SV/TH content comparison and automated structural CI review, 2026-11-07; not a human native-speaker review",
-    "correction_pr": 311,
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "karjalanpiirakat-riisipuurolla:th": {
-    "source_hash": "2ac23fe646ac753cfddca8caf2bf7a24ef18e0c8869b25e64dd5c12c1781cbe7",
+    "source_hash": "3dd2f1827e2f115f45a86336b306f951c35f62ea74716f050aaaa665c4e59112",
     "translation_hash": "d8d7b998a367773d7e0e912c3b85751ce7f816a21c2a7bf101bbd3690ee02b38",
-    "reviewed_at": "2026-11-07",
-    "reference": "PR #311 V9: ChatGPT FI/EN/SV/TH content comparison and automated structural CI review, 2026-11-07; not a human native-speaker review",
-    "correction_pr": 311,
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
@@ -1829,26 +1859,26 @@
     ]
   },
   "kookos-lime-kanacurry:en": {
-    "source_hash": "ee1e683b3a216af6af7b6d980f0b0c958d30f028370bddab777b3b1d485ee07c",
-    "translation_hash": "eb230dd9b4c835f8585c96967a3043244c833aade874fd391a9d328641732eb4",
-    "reviewed_at": "2026-11-05",
-    "reference": "V2 / ensimmäinen 30 käännöksen erä / lähde d9e4fdc3",
+    "source_hash": "f23cdb121ccc3779eb10ab119f58682bccac354a4400738dbeaa4320b645dc61",
+    "translation_hash": "d55b8cef79f73a0e93ed5345d1da69e677a8898463b236b06770debca9c6bdba",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "kookos-lime-kanacurry:sv": {
-    "source_hash": "ee1e683b3a216af6af7b6d980f0b0c958d30f028370bddab777b3b1d485ee07c",
-    "translation_hash": "b013801c75bb71dd4d51fb59f1988eec52be16cf4498edf52179fe8ed624a4b7",
-    "reviewed_at": "2026-11-05",
-    "reference": "V2 / ensimmäinen 30 käännöksen erä / lähde d9e4fdc3",
+    "source_hash": "f23cdb121ccc3779eb10ab119f58682bccac354a4400738dbeaa4320b645dc61",
+    "translation_hash": "799cd2a0615a2d80ed1046785fe03ac61caedddee9a7144d1997e5c0d286d394",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "kookos-lime-kanacurry:th": {
-    "source_hash": "ee1e683b3a216af6af7b6d980f0b0c958d30f028370bddab777b3b1d485ee07c",
-    "translation_hash": "c1535199b10d6613146e71aa6e6bfa7dfe5f82dd7bb1ac78da68ac821bda457d",
-    "reviewed_at": "2026-11-05",
-    "reference": "V2 / ensimmäinen 30 käännöksen erä / lähde d9e4fdc3",
+    "source_hash": "f23cdb121ccc3779eb10ab119f58682bccac354a4400738dbeaa4320b645dc61",
+    "translation_hash": "a3abd513e0d001ea894764181bdec86c7b21c20da31046c3571978acd55d7a22",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
@@ -2087,10 +2117,10 @@
     ]
   },
   "lindstrominpihvit-kaalilla:en": {
-    "source_hash": "f0c219c24b0147f8419dd96d16d82aa8f7a1871d32c4b0004e9795be8fd35736",
-    "translation_hash": "a5c43a879b7cdb02e9789b8c1aaa7bec746056e8833c12ca3405cae04dcf091f",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "source_hash": "892eff6bc07cbac08b3090c13ff3501ae8f9e1645442209ab3a994ac13a9b7dd",
+    "translation_hash": "e7885f852c7765cf3b48675318cc9f863dbfc36a164dfb64d51056455206cc78",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -2101,10 +2131,10 @@
     ]
   },
   "lindstrominpihvit-kaalilla:sv": {
-    "source_hash": "f0c219c24b0147f8419dd96d16d82aa8f7a1871d32c4b0004e9795be8fd35736",
-    "translation_hash": "1074dac92c5649c074f785ee10e391460a32f592771533b7a9a28f5d331a8848",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "source_hash": "892eff6bc07cbac08b3090c13ff3501ae8f9e1645442209ab3a994ac13a9b7dd",
+    "translation_hash": "d0c8ac8e6c4feb305e859fe6e8b8a7014a4ac43a920571aac4d428e3ba7eb4fc",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -2115,10 +2145,10 @@
     ]
   },
   "lindstrominpihvit-kaalilla:th": {
-    "source_hash": "f0c219c24b0147f8419dd96d16d82aa8f7a1871d32c4b0004e9795be8fd35736",
-    "translation_hash": "91bd666c4b99f899f7f1574c5cbb5986a2bbacb00bd383afa5c2649c4f4f76ed",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "source_hash": "892eff6bc07cbac08b3090c13ff3501ae8f9e1645442209ab3a994ac13a9b7dd",
+    "translation_hash": "9b2b026e894ea1124b7d59461dd4a05bfb2b1a9590e91c79790b520e056aa4f3",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -2925,28 +2955,46 @@
     "findings": []
   },
   "pho-bo:en": {
-    "source_hash": "c7cc56348349f0ca821b10cdae07fbbaa27620ad5a052b8b58b6774efbc07e9d",
-    "translation_hash": "499a6b100517810ee0e96fa4dddc8e5e9695f5da6eaa973b1d76a11522b73120",
-    "reviewed_at": "2026-11-09",
-    "reference": "docs/reviews/i18n-b14-12-meaning-review-2026-11-09.md | FI main ec8d5e766bc4 | ChatGPT FI–EN/SV/TH review, no human review",
+    "source_hash": "cf6d3b7ca383683ac926b7fcaf4c286d4d6b7b6f4963b5591bb1ab1d0c1af1a5",
+    "translation_hash": "7d4dadcb3aa7a63d6dbb7aa044b6dbcf9efe0f2e674520523421052c171eaf11",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Sprouts are boiled separately until steaming hot throughout, drained and served. Beef cooking and rest remain represented."
+      }
+    ]
   },
   "pho-bo:sv": {
-    "source_hash": "c7cc56348349f0ca821b10cdae07fbbaa27620ad5a052b8b58b6774efbc07e9d",
-    "translation_hash": "705a8552a5fc582a1f3d4f34f71e0593064eb192ebd03025fd7bde844d011175",
-    "reviewed_at": "2026-11-09",
-    "reference": "docs/reviews/i18n-b14-12-meaning-review-2026-11-09.md | FI main ec8d5e766bc4 | ChatGPT FI–EN/SV/TH review, no human review",
+    "source_hash": "cf6d3b7ca383683ac926b7fcaf4c286d4d6b7b6f4963b5591bb1ab1d0c1af1a5",
+    "translation_hash": "fcde9f2bdeac221e93fa4b7bd8e2b086c008ae9b5b5c5bf8399528049b0cac07",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Sprouts are boiled separately until steaming hot throughout, drained and served. Beef cooking and rest remain represented."
+      }
+    ]
   },
   "pho-bo:th": {
-    "source_hash": "c7cc56348349f0ca821b10cdae07fbbaa27620ad5a052b8b58b6774efbc07e9d",
-    "translation_hash": "a54930ecf91346eb6b65053eae805b87084d6ac344217e5e3fe68005a9db096a",
-    "reviewed_at": "2026-11-09",
-    "reference": "docs/reviews/i18n-b14-12-meaning-review-2026-11-09.md | FI main ec8d5e766bc4 | ChatGPT FI–EN/SV/TH review, no human review",
+    "source_hash": "cf6d3b7ca383683ac926b7fcaf4c286d4d6b7b6f4963b5591bb1ab1d0c1af1a5",
+    "translation_hash": "9432daf79737a4da46e1a186ffa6c8976c2f6a46470c9efd77dedb9677be5e1c",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Sprouts are boiled separately until steaming hot throughout, drained and served. Beef cooking and rest remain represented."
+      }
+    ]
   },
   "pohjoisafrikkalainen-harcha-juustolla:en": {
     "source_hash": "af5ea51362214803ae778d12a8357849b60e6934af7d5069d9169f583e7ec568",
@@ -3189,10 +3237,10 @@
     "findings": []
   },
   "sate-ayam:en": {
-    "source_hash": "8ac25ed5f06bcdb88bfdf7e9d1c76ecfe76daa00d7691a154d62fa1d7157eb99",
-    "translation_hash": "6f3507227b9444f223fc49399a2dabd61f12387fadea80296a87a9aa52535477",
-    "reviewed_at": "2026-11-09",
-    "reference": "docs/reviews/i18n-b05-15-meaning-review-2026-11-09.md | ChatGPT FI/EN/SV/TH semantic review; original FI 7a21ed52fecd",
+    "source_hash": "cec500bee1a6b58377cad79ad09a534a30342160f83e18e61c1c771e56a37849",
+    "translation_hash": "a1043e50c8acfd585130ce4c3251542b09f0e5459461cffe85588d8a75cbf6b5",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -3203,10 +3251,10 @@
     ]
   },
   "sate-ayam:sv": {
-    "source_hash": "8ac25ed5f06bcdb88bfdf7e9d1c76ecfe76daa00d7691a154d62fa1d7157eb99",
-    "translation_hash": "4e02a654201c10318eac4108d0422db9a40a11a17ec2374d19c1dab1071a2666",
-    "reviewed_at": "2026-11-09",
-    "reference": "docs/reviews/i18n-b05-15-meaning-review-2026-11-09.md | ChatGPT FI/EN/SV/TH semantic review; original FI 7a21ed52fecd",
+    "source_hash": "cec500bee1a6b58377cad79ad09a534a30342160f83e18e61c1c771e56a37849",
+    "translation_hash": "c552e3a32dd47cb03bfcd73e5267b5d4ed0a2ae948f801354ec8537b2730a349",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -3217,10 +3265,10 @@
     ]
   },
   "sate-ayam:th": {
-    "source_hash": "8ac25ed5f06bcdb88bfdf7e9d1c76ecfe76daa00d7691a154d62fa1d7157eb99",
-    "translation_hash": "8d9ebd9659c018d80f64ff0a2738d1105a8155745d8b58fcd3207a7fefe41d27",
-    "reviewed_at": "2026-11-09",
-    "reference": "docs/reviews/i18n-b05-15-meaning-review-2026-11-09.md | ChatGPT FI/EN/SV/TH semantic review; original FI 7a21ed52fecd",
+    "source_hash": "cec500bee1a6b58377cad79ad09a534a30342160f83e18e61c1c771e56a37849",
+    "translation_hash": "bd5dca1b5da4f311ff050c7832a48257d5b49a266ee2ce38e821c2bef2056cb0",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -3387,10 +3435,10 @@
     "findings": []
   },
   "tacokulho-nauta-avokado:en": {
-    "source_hash": "0dc01d3d21946adb340bfb8428b62157af068118e6dd0cbe33588a28810e8948",
-    "translation_hash": "4f1a2d81d3859bf3185febd9af3a7be33ca8f13d1ba147a6a5b91f95a5542c8a",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-kolme-korjattua-reseptikuvaa.md",
+    "source_hash": "ba006deca53a78ced285a8f9da47f46d9c67518e2fdced2bf23dfc4b0f5c853f",
+    "translation_hash": "386f21717e168817419c8a99a4540118455f851236f665e936cc64e048c3084e",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -3401,10 +3449,10 @@
     ]
   },
   "tacokulho-nauta-avokado:sv": {
-    "source_hash": "0dc01d3d21946adb340bfb8428b62157af068118e6dd0cbe33588a28810e8948",
-    "translation_hash": "135ef3c95dabcb9572671a4a65d03484186b37bcd0bdc8eca238b3da19aeb5bd",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-kolme-korjattua-reseptikuvaa.md",
+    "source_hash": "ba006deca53a78ced285a8f9da47f46d9c67518e2fdced2bf23dfc4b0f5c853f",
+    "translation_hash": "825544d8817cccca11b212526782ef59f4ad335586f8363a4a28f01814bde2c2",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -3415,10 +3463,10 @@
     ]
   },
   "tacokulho-nauta-avokado:th": {
-    "source_hash": "0dc01d3d21946adb340bfb8428b62157af068118e6dd0cbe33588a28810e8948",
-    "translation_hash": "5a122ba285d88396ff05741b07213dcf0c51b087df528964a3072a8c298a54c2",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-kolme-korjattua-reseptikuvaa.md",
+    "source_hash": "ba006deca53a78ced285a8f9da47f46d9c67518e2fdced2bf23dfc4b0f5c853f",
+    "translation_hash": "47377ed0aabf80ec2139aad59377a8ec43f740da40d956df6d98f6f1be6ed356",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -3429,26 +3477,26 @@
     ]
   },
   "thai-jok-kanalla:en": {
-    "source_hash": "e871de60258e5bd4362cf305b9e30763aad90fccdd72e7751b734cd3fc1dc34a",
-    "translation_hash": "ecd9f09dd7a6bef4d327faeb2a36b9fbe9d6768d6dda99da61d87411cc65e1ed",
-    "reviewed_at": "2026-11-05",
-    "reference": "V2 / kolmas 30 käännöksen erä / lähde 3de79f25",
+    "source_hash": "ae296d846275e3ba975e7de611dc42a0e83a407d2ad62b26fe08d19694cee7c6",
+    "translation_hash": "6a99a32a2ab5141f078f9ef8e9b49523ee1c8efb2f54f2585f7472f309175829",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "thai-jok-kanalla:sv": {
-    "source_hash": "e871de60258e5bd4362cf305b9e30763aad90fccdd72e7751b734cd3fc1dc34a",
-    "translation_hash": "d5ad8ae8dc98838d304ce1d3a7aa64b1fa906f18aa18df9a7e04fd43da66f606",
-    "reviewed_at": "2026-11-05",
-    "reference": "V2 / kolmas 30 käännöksen erä / lähde 3de79f25",
+    "source_hash": "ae296d846275e3ba975e7de611dc42a0e83a407d2ad62b26fe08d19694cee7c6",
+    "translation_hash": "0416bc087d263b50376da2c7b0c0afe19ebb8e933863a5d5ae4f22cb0d1a1fdb",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "thai-jok-kanalla:th": {
-    "source_hash": "e871de60258e5bd4362cf305b9e30763aad90fccdd72e7751b734cd3fc1dc34a",
-    "translation_hash": "e27fa54c2dfb36a93cd83a87ff3e421bda88e829316ae76b0f3ad290c1d6e7cf",
-    "reviewed_at": "2026-11-05",
-    "reference": "V2 / kolmas 30 käännöksen erä / lähde 3de79f25",
+    "source_hash": "ae296d846275e3ba975e7de611dc42a0e83a407d2ad62b26fe08d19694cee7c6",
+    "translation_hash": "67773bba1d124f61506f7709c02038d34c8813ed17d384e8972328ca67583f3a",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
@@ -3477,28 +3525,46 @@
     "findings": []
   },
   "thai-kananmunat-kookoscurryssa:en": {
-    "source_hash": "c86446ffb5aeef6b82e4942e575e5c5f9f21b1333228beeca97e0d0a6e73b279",
-    "translation_hash": "bbaa0f1451606a25cf56dcc1565daa2962d39082c8c27c969975102cbfcbb8f4",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-thai-egg-curry-three-language-release.md | AI meaning review including source-specific Mae Ploy crustacean allergen; nutrition reference matches Sainsbury's label; no human attestation",
+    "source_hash": "c11389f4a0d312e195104570f3e3579f68afceb913d03f5530142d197adf74f2",
+    "translation_hash": "4602135d2f411c455f516c23585c10698e89372f9ee57a1460c685c912efac89",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "The public notes include the shrimp/crustacean warning, possible fish traces and label check. The description now describes the served dish."
+      }
+    ]
   },
   "thai-kananmunat-kookoscurryssa:sv": {
-    "source_hash": "c86446ffb5aeef6b82e4942e575e5c5f9f21b1333228beeca97e0d0a6e73b279",
-    "translation_hash": "49ad8580efedae63214f96db995cde85de96435db089dc18a3b35f1c7feb5ef6",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-thai-egg-curry-three-language-release.md | AI meaning review including source-specific Mae Ploy crustacean allergen; nutrition reference matches Sainsbury's label; no human attestation",
+    "source_hash": "c11389f4a0d312e195104570f3e3579f68afceb913d03f5530142d197adf74f2",
+    "translation_hash": "8d605f7f19634ef95f1ed76c7323e7601d9fc832d30f07cd1a1f5e0936506b7b",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "The public notes include the shrimp/crustacean warning, possible fish traces and label check. The description now describes the served dish."
+      }
+    ]
   },
   "thai-kananmunat-kookoscurryssa:th": {
-    "source_hash": "c86446ffb5aeef6b82e4942e575e5c5f9f21b1333228beeca97e0d0a6e73b279",
-    "translation_hash": "07ed8ede74e024a63edf4aa9713add2177e9c928b484c8cf7703df183e25ed8a",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-thai-egg-curry-three-language-release.md | AI meaning review including source-specific Mae Ploy crustacean allergen; nutrition reference matches Sainsbury's label; no human attestation",
+    "source_hash": "c11389f4a0d312e195104570f3e3579f68afceb913d03f5530142d197adf74f2",
+    "translation_hash": "2c7da6a957e9e2c42b0d9d38d4946b5a37e17f42913cf3dd11395e08f26cb829",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "The public notes include the shrimp/crustacean warning, possible fish traces and label check. The description now describes the served dish."
+      }
+    ]
   },
   "thai-khao-tom-katkaravuilla:en": {
     "source_hash": "f4b140ef5029b66dd123ef7f3d2aab34121564b4710b1ec4e00ea04c73a78c6f",
@@ -3591,26 +3657,26 @@
     "findings": []
   },
   "thai-porsasjok:en": {
-    "source_hash": "50188384a09db28d264fa086ba14a2d6c8761299f0fae1fb8ee9a96e6bc51f4d",
-    "translation_hash": "876364b83e474c58b468f9b4385b447be260325c614183b2b257790bff1a3872",
-    "reviewed_at": "2026-11-05",
-    "reference": "V2 / kolmas 30 käännöksen erä / lähde 3de79f25",
+    "source_hash": "07ad9df42b1a2373d0fb2048171cc9cd58461b27b9b5ddca12798925dc3afc9b",
+    "translation_hash": "98e91d0d449bac1ab36fd651073148fd19647fae02fecac347c7a526abd101d3",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "thai-porsasjok:sv": {
-    "source_hash": "50188384a09db28d264fa086ba14a2d6c8761299f0fae1fb8ee9a96e6bc51f4d",
-    "translation_hash": "122716f0a6bfb9c16f46dac53373f26d9ec055a3b7d84f93b78e3db9823082f7",
-    "reviewed_at": "2026-11-05",
-    "reference": "V2 / kolmas 30 käännöksen erä / lähde 3de79f25",
+    "source_hash": "07ad9df42b1a2373d0fb2048171cc9cd58461b27b9b5ddca12798925dc3afc9b",
+    "translation_hash": "17509d5af869b74e55d8c070fbf6758a481f27095bdaba9948b958cac1de61c5",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "thai-porsasjok:th": {
-    "source_hash": "50188384a09db28d264fa086ba14a2d6c8761299f0fae1fb8ee9a96e6bc51f4d",
-    "translation_hash": "420be468742a8faa84b21b4c9171af96357bda43164e0a2a359792214266afca",
-    "reviewed_at": "2026-11-05",
-    "reference": "V2 / kolmas 30 käännöksen erä / lähde 3de79f25",
+    "source_hash": "07ad9df42b1a2373d0fb2048171cc9cd58461b27b9b5ddca12798925dc3afc9b",
+    "translation_hash": "9f8adc279101627b22f3518b575ea71e64a82af9cea6c58bdc3eee0b19ba1d7e",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
@@ -3716,29 +3782,26 @@
     ]
   },
   "uunifetapasta-kirsikkatomaateilla:en": {
-    "source_hash": "c65bb10175dc457e2cb2b48c54bc9f21c7096b972b9e6b862c23e09e51d75b3b",
-    "translation_hash": "7a2cdaac3f7da4b2c00db5b64a19d778315bc175608fea5f7e8eece899d15474",
-    "reviewed_at": "2026-11-07",
-    "reference": "PR #311 V9: ChatGPT FI/EN/SV/TH content comparison and automated structural CI review, 2026-11-07; not a human native-speaker review",
-    "correction_pr": 311,
+    "source_hash": "21f67ac27ec7a048003b8eba3df8968000b48b13cb1d5049d707fdf6aaa1b91f",
+    "translation_hash": "86d35d1f2c46b3edc8de48a48f5310b7c233668a2d7e2bf7987dd93dd2a7fcb3",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "uunifetapasta-kirsikkatomaateilla:sv": {
-    "source_hash": "c65bb10175dc457e2cb2b48c54bc9f21c7096b972b9e6b862c23e09e51d75b3b",
-    "translation_hash": "e64ef124aaeec260fe67b229ee6ba9d057c25aa43e891cd0e588233ef11de38a",
-    "reviewed_at": "2026-11-07",
-    "reference": "PR #311 V9: ChatGPT FI/EN/SV/TH content comparison and automated structural CI review, 2026-11-07; not a human native-speaker review",
-    "correction_pr": 311,
+    "source_hash": "21f67ac27ec7a048003b8eba3df8968000b48b13cb1d5049d707fdf6aaa1b91f",
+    "translation_hash": "41f467e5ed8089d8c4a497b4a88ead1c3d087065fd47d6daedb6a2c8676a9a27",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "uunifetapasta-kirsikkatomaateilla:th": {
-    "source_hash": "c65bb10175dc457e2cb2b48c54bc9f21c7096b972b9e6b862c23e09e51d75b3b",
-    "translation_hash": "2cc7baa4bf656008f96718e491b4ecf3b2f7af806717e873ad55b5828d71e7c2",
-    "reviewed_at": "2026-11-07",
-    "reference": "PR #311 V9: ChatGPT FI/EN/SV/TH content comparison and automated structural CI review, 2026-11-07; not a human native-speaker review",
-    "correction_pr": 311,
+    "source_hash": "21f67ac27ec7a048003b8eba3df8968000b48b13cb1d5049d707fdf6aaa1b91f",
+    "translation_hash": "45aedbd5b7c1060b2c985a4989fbdcd193134ff8865bf394a5dfa482b0c16699",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
@@ -3791,52 +3854,70 @@
     "findings": []
   },
   "uunimakkara-sipulipedilla:en": {
-    "source_hash": "56f8903ca8668625b5f2fac0c30d740813f1ee146d712ce748651dda49315063",
-    "translation_hash": "28d86306ea62ad8ee529324b7997b157c373154c8ce6302b1a292076a1d622b2",
-    "reviewed_at": "2026-11-05",
-    "reference": "V2 / toinen 30 käännöksen erä / lähde 3de79f25",
+    "source_hash": "7d6e1c4251cb2e04f1b5c103c0e5522da2d6ae2f9eb76d87462d7f4d9b0ffadb",
+    "translation_hash": "5588744192e394ec4878b680c5033de99c3a369f141944b5e9ec01d3f56faeef",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "uunimakkara-sipulipedilla:sv": {
-    "source_hash": "56f8903ca8668625b5f2fac0c30d740813f1ee146d712ce748651dda49315063",
-    "translation_hash": "14a63b68638c808c5d413dd8fa9f828df95b4f20ceee73106110caf1da4aedfc",
-    "reviewed_at": "2026-11-05",
-    "reference": "V2 / toinen 30 käännöksen erä / lähde 3de79f25",
+    "source_hash": "7d6e1c4251cb2e04f1b5c103c0e5522da2d6ae2f9eb76d87462d7f4d9b0ffadb",
+    "translation_hash": "de9b872c7a67e98bc1495f8480ce57254c05e43386aef3c7a28530258371c911",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "uunimakkara-sipulipedilla:th": {
-    "source_hash": "56f8903ca8668625b5f2fac0c30d740813f1ee146d712ce748651dda49315063",
-    "translation_hash": "b9c8bd4bd222e02654123719b9d1bbd85df047e533f76c4df0646237eee3ad5b",
-    "reviewed_at": "2026-11-05",
-    "reference": "V2 / toinen 30 käännöksen erä / lähde 3de79f25",
+    "source_hash": "7d6e1c4251cb2e04f1b5c103c0e5522da2d6ae2f9eb76d87462d7f4d9b0ffadb",
+    "translation_hash": "d8ba7e4d3f0f905fd6f9220d6fcf6e5da0e4246f01e75678dd43acf36b97c4af",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "uunimuna-avokadot:en": {
     "source_hash": "380b125776e35226fa516eedb605afa6ec7d09172d4be135b315639d5ab28eef",
-    "translation_hash": "46fb1083433932e316d4c594033c0908bafb490f5ca5a152d11546cd8f53ff06",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-pilot3-9-release.md | AI FI-public-display source review; published numeric nutrition input recalc; no human attestation",
+    "translation_hash": "9e5f99fd53a0aa70643508f80ae3560504fc9c088fd8cea36d4ccd2fd9a8904e",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "The description names the avocado, egg and lemon/chive finish without draft workflow wording."
+      }
+    ]
   },
   "uunimuna-avokadot:sv": {
     "source_hash": "380b125776e35226fa516eedb605afa6ec7d09172d4be135b315639d5ab28eef",
-    "translation_hash": "cfd50e70b2324c9df53e9b13b2bbb101959092b6aee6e532d50b6239cdc436a5",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-pilot3-9-release.md | AI FI-public-display source review; published numeric nutrition input recalc; no human attestation",
+    "translation_hash": "a807c268756e36017c599870a0becb3032bd2c8a0c91c581ff6c12c715507822",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "The description names the avocado, egg and lemon/chive finish without draft workflow wording."
+      }
+    ]
   },
   "uunimuna-avokadot:th": {
     "source_hash": "380b125776e35226fa516eedb605afa6ec7d09172d4be135b315639d5ab28eef",
-    "translation_hash": "a710186db04aa45e4fc73fa71fa7fa2f619cf520f970604dc34b4541d5392124",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-pilot3-9-release.md | AI FI-public-display source review; published numeric nutrition input recalc; no human attestation",
+    "translation_hash": "d00776a4d1da9645a58c1b7b2ef3cbf9be55795b861eb54a39ffbf8a167523c1",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "The description names the avocado, egg and lemon/chive finish without draft workflow wording."
+      }
+    ]
   },
   "uunimunat-pinaatilla:en": {
     "source_hash": "06727e6b5a69f47f547c84536115fe19e46e54b199ce00547c483a7f4e7121c0",
@@ -3891,27 +3972,45 @@
   },
   "valimerellinen-jogurttikulho-hunajalla:en": {
     "source_hash": "92d10b68843e8e022789544689c30a60df2c65b64ce53dd9307f60c4c4bb7bcb",
-    "translation_hash": "1200ae4fcb2f546dced812c7c859198276205c44997bae421d7a445f805ca84d",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-pilot3-9-release.md | AI FI-public-display source review; published numeric nutrition input recalc; no human attestation",
+    "translation_hash": "d8a6616385197563c77c6b78b3e3c008c925bf3c9690b0f194a883c2cdbb5257",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Removed obsolete draft workflow text from the published notes."
+      }
+    ]
   },
   "valimerellinen-jogurttikulho-hunajalla:sv": {
     "source_hash": "92d10b68843e8e022789544689c30a60df2c65b64ce53dd9307f60c4c4bb7bcb",
-    "translation_hash": "9de331295b64f369fec96a6be1d7870422462e47c8cbfe956c57cbc322c64bb2",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-pilot3-9-release.md | AI FI-public-display source review; published numeric nutrition input recalc; no human attestation",
+    "translation_hash": "6be8e3687788d44c3fdbd47b5b14d91f1e5a55491a4d16472b5ff797470a3f5e",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Removed obsolete draft workflow text from the published notes."
+      }
+    ]
   },
   "valimerellinen-jogurttikulho-hunajalla:th": {
     "source_hash": "92d10b68843e8e022789544689c30a60df2c65b64ce53dd9307f60c4c4bb7bcb",
-    "translation_hash": "e63019070b06b46aa04ef971e4c5e43df6ad29c62a1c4d29f352d69b812e1541",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-pilot3-9-release.md | AI FI-public-display source review; published numeric nutrition input recalc; no human attestation",
+    "translation_hash": "ef4c6d0c9d7648a8404a5c7a45631dded20e43c825705e06945030844c81c7e3",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Removed obsolete draft workflow text from the published notes."
+      }
+    ]
   },
   "valimerellinen-tahinipuuro:en": {
     "source_hash": "67c0331f00c2074b9c88e0af9824a4f5a26ab7c959a7d4fbd4ee6d3c631e68a0",
@@ -4004,10 +4103,10 @@
     ]
   },
   "vhh-juustokakku:en": {
-    "source_hash": "14b4d3258e2ca39789317d68f3393c5d0203b57b8797d19864ca714e85565ccc",
-    "translation_hash": "c75faa72db5ca3ddb1a260ed1e0aa2e8832d5f154b93d7b6d3b88ffd54d26991",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-60-uusintakatselmointi.md. Kokonaisaika 5 tuntia 30 minuuttia sisältää paiston, uunissa jäähdytyksen ja vähintään neljän tunnin kylmäjäähdytyksen.",
+    "source_hash": "031cce220c5c11cbdd6b4e72d9758c2d52fd3e66bc71992ae22621e908673392",
+    "translation_hash": "d25173dc7a213b9a0ac60612e07df5dc21f655eabea86bab2907fb2e5224f068",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -4023,10 +4122,10 @@
     ]
   },
   "vhh-juustokakku:sv": {
-    "source_hash": "14b4d3258e2ca39789317d68f3393c5d0203b57b8797d19864ca714e85565ccc",
-    "translation_hash": "a8dc08b1134dd743150dcc9e13e469fd028b1bdd454e09ec67bda956db4a2ea8",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-60-uusintakatselmointi.md. Kokonaisaika 5 tuntia 30 minuuttia sisältää paiston, uunissa jäähdytyksen ja vähintään neljän tunnin kylmäjäähdytyksen.",
+    "source_hash": "031cce220c5c11cbdd6b4e72d9758c2d52fd3e66bc71992ae22621e908673392",
+    "translation_hash": "afa3f9c7b29bdb7a2acf68f87b1816ded85f6815df045f526441075c4df64510",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -4042,10 +4141,10 @@
     ]
   },
   "vhh-juustokakku:th": {
-    "source_hash": "14b4d3258e2ca39789317d68f3393c5d0203b57b8797d19864ca714e85565ccc",
-    "translation_hash": "6b3b323df2fc613fa112c4ed8ce4fcdcd185b9033b063d891a97f977f99a88e5",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-60-uusintakatselmointi.md. Kokonaisaika 5 tuntia 30 minuuttia sisältää paiston, uunissa jäähdytyksen ja vähintään neljän tunnin kylmäjäähdytyksen.",
+    "source_hash": "031cce220c5c11cbdd6b4e72d9758c2d52fd3e66bc71992ae22621e908673392",
+    "translation_hash": "07082d125641f6d0e10fc21f184111b904dafe685357ff31a4d469f86a98763b",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -4223,26 +4322,26 @@
     ]
   },
   "vietnamilainen-kahvijogurtti-banaanilla:en": {
-    "source_hash": "870928eb42eb8661b05e96d6f3aef55410bbed21961dd52306c3fd9ff3408268",
-    "translation_hash": "8f54b00f426948b6b60018570dd13357dfb8ae74006d2b8d30477dcaa908d1ae",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-besan-coffee-six-language-release.md | AI review against SHA-locked public Finnish source and nutrition input; no human attestation",
+    "source_hash": "c8b75a72ac1d42138a7fa133b224e5d2d7636f1f888b002b481e7feb92748421",
+    "translation_hash": "2c72179046bd2f804c0da1420037033e8c1ae3445271727e62b71b599aa9ecb2",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "vietnamilainen-kahvijogurtti-banaanilla:sv": {
-    "source_hash": "870928eb42eb8661b05e96d6f3aef55410bbed21961dd52306c3fd9ff3408268",
-    "translation_hash": "8147b94e4901627ef57001d78d7eed8e0058f589c3b1bdedd722211622bd6a8d",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-besan-coffee-six-language-release.md | AI review against SHA-locked public Finnish source and nutrition input; no human attestation",
+    "source_hash": "c8b75a72ac1d42138a7fa133b224e5d2d7636f1f888b002b481e7feb92748421",
+    "translation_hash": "b7890939eed8ce2bb9ee9bcdf737665aa4d63b508b3c0e2f86ee19866f238f87",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
   "vietnamilainen-kahvijogurtti-banaanilla:th": {
-    "source_hash": "870928eb42eb8661b05e96d6f3aef55410bbed21961dd52306c3fd9ff3408268",
-    "translation_hash": "838803a1eb49493308585cc85bf438120ba4006fb761b18ae227a1d21a971fe8",
-    "reviewed_at": "2026-11-10",
-    "reference": "docs/reviews/2026-11-10-f25-besan-coffee-six-language-release.md | AI review against SHA-locked public Finnish source and nutrition input; no human attestation",
+    "source_hash": "c8b75a72ac1d42138a7fa133b224e5d2d7636f1f888b002b481e7feb92748421",
+    "translation_hash": "408cd834aa77118edd22d44b7c46350c78d7b865e95a9e750088ba27df1ad8eb",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
@@ -5417,44 +5516,59 @@
     ]
   },
   "amritsari-kala:en": {
-    "source_hash": "4a03d8353fd546ab8909a13c7813f8fb43486eb4edfa75b6aca2a519629d4519",
-    "translation_hash": "4958ca6860ebdca08dbe1fb2e1aff4c134734369c43314c24de2ba2ee061c3be",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. Seitin sulatus jääkaapissa ja rapea kikhernejauhokuori. Kala kypsennetään kauttaaltaan. Ainesmäärät ja marinointiaika samat.",
+    "source_hash": "220d32cf7f6dd1a306f4a5d741cea7a063e3f4c26a845b1f4d75c68ff97e7f41",
+    "translation_hash": "9e606e2887f0301bba5ebb863b8b1da6580d254976a9cf21c1cd89e972b644ae",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "Seitin sulatus jääkaapissa ja rapea kikhernejauhokuori. Kala kypsennetään kauttaaltaan. Ainesmäärät ja marinointiaika samat."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "40 minutes starts from thawed saithe. The fish is thawed in the refrigerator beforehand."
       }
     ]
   },
   "amritsari-kala:sv": {
-    "source_hash": "4a03d8353fd546ab8909a13c7813f8fb43486eb4edfa75b6aca2a519629d4519",
-    "translation_hash": "e8dbd432d8182a7bba2441213f8e247eae9deddf3a0a7e2a14bb1e1f0052e061",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. Seitin sulatus jääkaapissa ja rapea kikhernejauhokuori. Kala kypsennetään kauttaaltaan. Ainesmäärät ja marinointiaika samat.",
+    "source_hash": "220d32cf7f6dd1a306f4a5d741cea7a063e3f4c26a845b1f4d75c68ff97e7f41",
+    "translation_hash": "2ea3749d728cbacefce76b8abb28502a1d36134f882321ed2920562adf40dfcb",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "Seitin sulatus jääkaapissa ja rapea kikhernejauhokuori. Kala kypsennetään kauttaaltaan. Ainesmäärät ja marinointiaika samat."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "40 minutes starts from thawed saithe. The fish is thawed in the refrigerator beforehand."
       }
     ]
   },
   "amritsari-kala:th": {
-    "source_hash": "4a03d8353fd546ab8909a13c7813f8fb43486eb4edfa75b6aca2a519629d4519",
-    "translation_hash": "997736882feacff0ab4585800ff47f47df95606dcc86a3d44bb96a0e1bd5b855",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. Seitin sulatus jääkaapissa ja rapea kikhernejauhokuori. Kala kypsennetään kauttaaltaan. Ainesmäärät ja marinointiaika samat.",
+    "source_hash": "220d32cf7f6dd1a306f4a5d741cea7a063e3f4c26a845b1f4d75c68ff97e7f41",
+    "translation_hash": "75480ec1eba1a7daed445de706b60799e02b610b777181fad0ce66548dc6498d",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "Seitin sulatus jääkaapissa ja rapea kikhernejauhokuori. Kala kypsennetään kauttaaltaan. Ainesmäärät ja marinointiaika samat."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "40 minutes starts from thawed saithe. The fish is thawed in the refrigerator beforehand."
       }
     ]
   },
@@ -6107,44 +6221,59 @@
     ]
   },
   "keto-joulutortut:en": {
-    "source_hash": "fba6fcc719d9400e7e5da2457724f56f673f6db82e19062e00873172fab37ce0",
-    "translation_hash": "56f9b1caf73bb4cfdff5ab4360505dea83ae9555d574e7b64ee2c72ed90e863f",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Ohjeessa on yksi valmistusjärjestys, kahdeksan torttua ja koko 40 g:n hillomäärä. Paistoaika perustuu aiempien käännösten ohjeeseen.",
+    "source_hash": "6f70928f4d10f1a45728763d5913b0f4454624dabcd232d2270757c649c49425",
+    "translation_hash": "4d4a942cf3590f82ba351ab4b6aa7c5fd209b3da7bae8f1ec40c4992348f3a7a",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "Ohjeessa on yksi valmistusjärjestys, kahdeksan torttua ja koko 40 g:n hillomäärä. Paistoaika perustuu aiempien käännösten ohjeeseen."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Plain 25% lactose-free cream cheese and revised per-pastry nutrition values match the Finnish recipe and Fineli source."
       }
     ]
   },
   "keto-joulutortut:sv": {
-    "source_hash": "fba6fcc719d9400e7e5da2457724f56f673f6db82e19062e00873172fab37ce0",
-    "translation_hash": "2ee3fd0e38a6ee39855522302bb6aee4621a8fb96896102c115c181c64defc8c",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Ohjeessa on yksi valmistusjärjestys, kahdeksan torttua ja koko 40 g:n hillomäärä. Paistoaika perustuu aiempien käännösten ohjeeseen.",
+    "source_hash": "6f70928f4d10f1a45728763d5913b0f4454624dabcd232d2270757c649c49425",
+    "translation_hash": "786fd2ae4e03cb4ee74894d710eb090d226b85c56899f9952e7c849cf567fa7a",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "Ohjeessa on yksi valmistusjärjestys, kahdeksan torttua ja koko 40 g:n hillomäärä. Paistoaika perustuu aiempien käännösten ohjeeseen."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Plain 25% lactose-free cream cheese and revised per-pastry nutrition values match the Finnish recipe and Fineli source."
       }
     ]
   },
   "keto-joulutortut:th": {
-    "source_hash": "fba6fcc719d9400e7e5da2457724f56f673f6db82e19062e00873172fab37ce0",
-    "translation_hash": "d5762ef9a0390c098fb30225141ed2734097a57da54c793b42c6f3219f90fb54",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Ohjeessa on yksi valmistusjärjestys, kahdeksan torttua ja koko 40 g:n hillomäärä. Paistoaika perustuu aiempien käännösten ohjeeseen.",
+    "source_hash": "6f70928f4d10f1a45728763d5913b0f4454624dabcd232d2270757c649c49425",
+    "translation_hash": "50c4a3709411ce74e7de421d2306ee03bdcdc7a0d293d8604ff049ddba1aa3cb",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "Ohjeessa on yksi valmistusjärjestys, kahdeksan torttua ja koko 40 g:n hillomäärä. Paistoaika perustuu aiempien käännösten ohjeeseen."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Plain 25% lactose-free cream cheese and revised per-pastry nutrition values match the Finnish recipe and Fineli source."
       }
     ]
   },
@@ -6191,28 +6320,46 @@
     ]
   },
   "keto-mutakakku:en": {
-    "source_hash": "4520ee9b2cae1fb6af1febdc8e43c8368b037d35286c86c38292dfab191f3787",
-    "translation_hash": "3f89688c55bac3ab15a10931bf78ac943c2cdacd9676b2cb0ea6499577867534",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Nelikielinen ohje vastaa 20 cm:n vuokaa, 175 °C:n uunia ja 12–16 minuutin paistoa. Alkuperäisohjeen makrot ovat edelleen lähdetarkistuksessa.",
+    "source_hash": "a9106497e6c963a4624b4012a39f1a78a718582c6b6588436f8fbda5f9ccc1c4",
+    "translation_hash": "589dc4d1bff8a27b6beb6dc64d8e946543677a8461dbc3ef4d94c4c0e2ce7db5",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Vanilla extract is added while mixing the egg and chocolate batter."
+      }
+    ]
   },
   "keto-mutakakku:sv": {
-    "source_hash": "4520ee9b2cae1fb6af1febdc8e43c8368b037d35286c86c38292dfab191f3787",
-    "translation_hash": "d7f95b73d080fee51e3bee6e371c5f20c7fc365b98c65cf8e30404025f795631",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Nelikielinen ohje vastaa 20 cm:n vuokaa, 175 °C:n uunia ja 12–16 minuutin paistoa. Alkuperäisohjeen makrot ovat edelleen lähdetarkistuksessa.",
+    "source_hash": "a9106497e6c963a4624b4012a39f1a78a718582c6b6588436f8fbda5f9ccc1c4",
+    "translation_hash": "0ae08e0ded637adea3ac76c9d4ca01a666d854d13935125855a9c205be3434c6",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Vanilla extract is added while mixing the egg and chocolate batter."
+      }
+    ]
   },
   "keto-mutakakku:th": {
-    "source_hash": "4520ee9b2cae1fb6af1febdc8e43c8368b037d35286c86c38292dfab191f3787",
-    "translation_hash": "e00ed2a7eab8bf92b4d7dfd31beb1cedf07baf614e1b29d344023c3c0392cd95",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Nelikielinen ohje vastaa 20 cm:n vuokaa, 175 °C:n uunia ja 12–16 minuutin paistoa. Alkuperäisohjeen makrot ovat edelleen lähdetarkistuksessa.",
+    "source_hash": "a9106497e6c963a4624b4012a39f1a78a718582c6b6588436f8fbda5f9ccc1c4",
+    "translation_hash": "a34a17ec2296dd3b22fb2a69bca4475d7855d15ff84e283d77f4945659cf15a7",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Vanilla extract is added while mixing the egg and chocolate batter."
+      }
+    ]
   },
   "keto-pinaattiletut:en": {
     "source_hash": "a64d0b189d35b14e64ebf97baee81993c6a28212528f50571eb1f9b1cec55020",
@@ -8555,44 +8702,59 @@
     ]
   },
   "xiaolongbao:en": {
-    "source_hash": "80e5644452f25baa67294a10eaa218f5f52fbf44a7313477147e9b3e3104f461",
-    "translation_hash": "f16d0c64bc0d5f95bdd1f5f780a2ed98a159a996b09959e348d344244e59d8c4",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännöksiin lisättiin puuttunut taikinan valmistus ja 30 minuutin lepo. Täyte kypsennetään höyryssä, ja kuumasta liemestä varoitetaan.",
+    "source_hash": "9ab12e6ef3fcfd404ea5d61ba1763d979de8fba92b7caca5782a49b26178eb37",
+    "translation_hash": "c6cb3ecc0ceeb210b21db553ef00ea1a27457c9f1de0f1197f4dacd2a85db6fa",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "Käännöksiin lisättiin puuttunut taikinan valmistus ja 30 minuutin lepo. Täyte kypsennetään höyryssä, ja kuumasta liemestä varoitetaan."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Powder blooms in cold stock, dissolves in hot stock and sets fully before filling. Timing includes setting or starts from prepared jelly."
       }
     ]
   },
   "xiaolongbao:sv": {
-    "source_hash": "80e5644452f25baa67294a10eaa218f5f52fbf44a7313477147e9b3e3104f461",
-    "translation_hash": "e17cefec4d048376cc29c9e068988a80b5b71aef08cc922ff9e17dcbdf58e825",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännöksiin lisättiin puuttunut taikinan valmistus ja 30 minuutin lepo. Täyte kypsennetään höyryssä, ja kuumasta liemestä varoitetaan.",
+    "source_hash": "9ab12e6ef3fcfd404ea5d61ba1763d979de8fba92b7caca5782a49b26178eb37",
+    "translation_hash": "141de13dcf8c8f89fc9d52a5721778fb2419c8a8ba5acfce1faa12329db5e213",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "Käännöksiin lisättiin puuttunut taikinan valmistus ja 30 minuutin lepo. Täyte kypsennetään höyryssä, ja kuumasta liemestä varoitetaan."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Powder blooms in cold stock, dissolves in hot stock and sets fully before filling. Timing includes setting or starts from prepared jelly."
       }
     ]
   },
   "xiaolongbao:th": {
-    "source_hash": "80e5644452f25baa67294a10eaa218f5f52fbf44a7313477147e9b3e3104f461",
-    "translation_hash": "32fb023792ff4917b73c78a8ee25ba6a354ba59655b514da9608073a1c9a48b8",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännöksiin lisättiin puuttunut taikinan valmistus ja 30 minuutin lepo. Täyte kypsennetään höyryssä, ja kuumasta liemestä varoitetaan.",
+    "source_hash": "9ab12e6ef3fcfd404ea5d61ba1763d979de8fba92b7caca5782a49b26178eb37",
+    "translation_hash": "e0ff7910958aebd149865322ffb3fcb3e746df3b31627395b34aa7dfd2351e8d",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "Käännöksiin lisättiin puuttunut taikinan valmistus ja 30 minuutin lepo. Täyte kypsennetään höyryssä, ja kuumasta liemestä varoitetaan."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Powder blooms in cold stock, dissolves in hot stock and sets fully before filling. Timing includes setting or starts from prepared jelly."
       }
     ]
   },
@@ -8669,10 +8831,10 @@
     ]
   },
   "baozi:th": {
-    "source_hash": "ed18593ccf08336e43f5a80321e8d0268929c81ff6c329636bf6605f6741f622",
-    "translation_hash": "a4ead0b76c3f6386d3a997095956e04e42acb004c095749ef060ae8e3c646052",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-recipavo-kymmenen-kielikatselmointia.md",
+    "source_hash": "b4501fc2a4506572f51fc75c2ad149e3c634fd73553f249b8292a6897b47a989",
+    "translation_hash": "cd580708de64a6008ea1fc79a6e68fda8b780422ecfe7638c1cab620fcaa9d31",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -8680,14 +8842,13 @@
         "status": "fixed",
         "summary": "Porsasjauheliha yksilöity. Täytteen kypsyys tarkistetaan keskeltä vähintään 70 °C:ssa ja höyrytystä jatketaan tarvittaessa."
       }
-    ],
-    "correction_pr": 539
+    ]
   },
   "baozi:en": {
-    "source_hash": "ed18593ccf08336e43f5a80321e8d0268929c81ff6c329636bf6605f6741f622",
-    "translation_hash": "8f6f4f0494cd99db81021718fd2ad8ce55ec61c99a80c8022498bb0c9786657b",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-recipavo-kymmenen-kielikatselmointia.md",
+    "source_hash": "b4501fc2a4506572f51fc75c2ad149e3c634fd73553f249b8292a6897b47a989",
+    "translation_hash": "ad3961669da9a928190c043b7bcaa016876dcf20bd69fc15b65ddc8c54f3db52",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -8695,14 +8856,13 @@
         "status": "fixed",
         "summary": "Porsasjauheliha yksilöity. Täytteen kypsyys tarkistetaan keskeltä vähintään 70 °C:ssa ja höyrytystä jatketaan tarvittaessa."
       }
-    ],
-    "correction_pr": 539
+    ]
   },
   "baozi:sv": {
-    "source_hash": "ed18593ccf08336e43f5a80321e8d0268929c81ff6c329636bf6605f6741f622",
-    "translation_hash": "b20cf07e6c1b08cf6c6ac472d33493581b4b9410461e8365ae3604acf995a4fd",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-recipavo-kymmenen-kielikatselmointia.md",
+    "source_hash": "b4501fc2a4506572f51fc75c2ad149e3c634fd73553f249b8292a6897b47a989",
+    "translation_hash": "c9ce7cb6a34b6369648faed8e8ba0ce07a367a70e31777c97fcfab7ed03edb15",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": [
       {
@@ -8710,8 +8870,7 @@
         "status": "fixed",
         "summary": "Porsasjauheliha yksilöity. Täytteen kypsyys tarkistetaan keskeltä vähintään 70 °C:ssa ja höyrytystä jatketaan tarvittaessa."
       }
-    ],
-    "correction_pr": 539
+    ]
   },
   "caponata:th": {
     "source_hash": "300abf5ee20aff41e6f2d0e56fcfeb140d1015c9c3651cc924d9db76c39a402f",
@@ -9322,10 +9481,10 @@
     "findings": []
   },
   "sienikakkupohja:en": {
-    "source_hash": "333cee53652c3eac74d0425c982b9c4bf9a12ac25bd81ba33214bf9df0843a88",
+    "source_hash": "8fc66a381ef98078127d141d848318ebdaa1cd7b1344a364699348b4b9c099d7",
     "translation_hash": "c230bb8f3a9162b0e79a9be3ed502827edcb656ea1dedbe3b98c18b0fe948fad",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-recipavo-kieliera-3.md",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
@@ -9338,10 +9497,10 @@
     "findings": []
   },
   "sienikakkupohja:sv": {
-    "source_hash": "333cee53652c3eac74d0425c982b9c4bf9a12ac25bd81ba33214bf9df0843a88",
+    "source_hash": "8fc66a381ef98078127d141d848318ebdaa1cd7b1344a364699348b4b9c099d7",
     "translation_hash": "13471c27e4ecf86f513cb7fe66e9fb60c4e4d74387515e2a33a3a32f5bb07642",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-recipavo-kieliera-3.md",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
@@ -9354,10 +9513,10 @@
     "findings": []
   },
   "sienikakkupohja:th": {
-    "source_hash": "333cee53652c3eac74d0425c982b9c4bf9a12ac25bd81ba33214bf9df0843a88",
+    "source_hash": "8fc66a381ef98078127d141d848318ebdaa1cd7b1344a364699348b4b9c099d7",
     "translation_hash": "a0a5e7456b8960e48e659150256182699960d50decde442f3eef30fdbac92b47",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-recipavo-kieliera-3.md",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },
@@ -10283,9 +10442,9 @@
   },
   "malesialainen-kookos-banaanikulho:sv": {
     "source_hash": "88742a740cfe952c43f2d795fdb5f988852c2072004b054129d3dd8ea098987c",
-    "translation_hash": "3b7dad7b891dd0031ddcc05f22d7d61ba09e748f4aeabd52a7b95fcfb422613c",
-    "reviewed_at": "2026-11-14",
-    "reference": "docs/reviews/2026-11-14-kookos-banaanikulho-kielikatselmointi.md",
+    "translation_hash": "98c7fcb9b332f81d1b4b8e1775ace524f5c8b913a67f3944451827812a3342b9",
+    "reviewed_at": "2026-11-15",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "outcome": "pass",
     "findings": []
   },

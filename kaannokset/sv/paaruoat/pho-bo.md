@@ -24,7 +24,7 @@ ingredients:
   - {amount: 1, unit: tsk, item: "hela korianderfrön"}
   - {amount: 3, unit: msk, item: "fisksås"}
   - {amount: 1, unit: msk, item: "rörsocker"}
-  - {amount: 150, unit: g, item: "böngroddar", note: "till servering"}
+  - {amount: 150, unit: g, item: "böngroddar", note: "hettas upp ordentligt före servering"}
   - {amount: 1, unit: kruka, item: "thaibasilika", note: "till servering"}
   - {amount: 20, unit: g, item: "färsk koriander", note: "till servering"}
   - {amount: 1, unit: st, item: "lime", note: "i klyftor till servering"}
@@ -44,7 +44,8 @@ En hemlagad phở bò med länge sjuden benbuljong, rostad lök, ingefära och v
 3. Lägg tillbaka benen i kastrullen med 4 liter nytt vatten. Koka upp, skumma av och sjud försiktigt i cirka 2 timmar.
 4. Rosta stjärnanis, kanel och korianderfrön i en torr panna tills de doftar. Tillsätt kryddorna i buljongen med den rostade löken och ingefäran. Sjud ytterligare 60 minuter.
 5. Sila buljongen. Smaksätt med fisksås och rörsocker. Koka risnudlarna enligt förpackningen.
-6. Koka upp den silade buljongen igen och tillaga nötköttsskivorna i omgångar i den. Kontrollera med en matlagningstermometer att köttet når minst 63 °C och låt det vila i tre minuter före servering. Fördela de kokta nudlarna och köttet i skålar, häll över den heta buljongen och servera med böngroddar, thaibasilika, koriander och lime.
+6. Koka böngroddarna i vatten i en separat kastrull och rör om så att de värms jämnt. Häll av vattnet när groddarna är rykande heta rakt igenom.
+7. Koka upp den silade buljongen igen och tillaga nötköttsskivorna i omgångar i den. Kontrollera med en matlagningstermometer att köttet når minst 63 °C och låt det vila i tre minuter före servering. Fördela de kokta nudlarna och köttet i skålar, häll över den heta buljongen och servera med de genomvarma böngroddarna, thaibasilika, koriander och lime.
 
 ## Anteckningar
 

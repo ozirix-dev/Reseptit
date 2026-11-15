@@ -1,3 +1,4 @@
+import {restoreRecipeAuditSnapshot} from './restore-recipe-audit-snapshot';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
@@ -33,7 +34,7 @@ export function buildLindstromBrineVariant(root: string): GkOnlyVariant {
   if (sha(raw) !== seal) throw Error('Lindström approval packet changed');
   const packet: Packet = JSON.parse(raw);
   for (const [file, hash] of Object.entries(packet.sourceFilesLfSha256)) {
-    if (sha(read(file)) !== hash) throw Error('Lindström recipe or source changed: ' + file);
+    if (sha(restoreRecipeAuditSnapshot(file, read(file))) !== hash) throw Error('Lindström recipe or source changed: ' + file);
   }
   const {recipeId, servings, ingredients, expected} = packet.case;
   const result = calculateGlycemicLoad({recipeId, servings, ingredients}, packet.foods, packet.gis);

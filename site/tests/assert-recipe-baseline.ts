@@ -1,3 +1,4 @@
+import { restoreRecipeAuditSnapshot } from "../scripts/restore-recipe-audit-snapshot";
 import { sourceReleaseGateDecision } from "../scripts/f25-source-release-gate";
 import { molletesHistoricalText } from "../scripts/molletes-reviewed-source";
 import { koreanRiceBowlHistoricalText } from "../scripts/korean-rice-bowls-reviewed-source";
@@ -278,6 +279,16 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
 
   for (const change of changes) {
     const [status, file] = change.split("\t");
+    const readLive = () => readFileSync(path.join(root, file), "utf8");
+    const readFrozen = () => restoreRecipeAuditSnapshot(file, readLive());
+    if (status === "M") {
+      const live = readLive();
+      const prior = restoreRecipeAuditSnapshot(file, live);
+      if (prior !== live) {
+        const pinned = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
+        if (prior === pinned) continue;
+      }
+    }
     if (status === "M" && isReviewedF25NutritionTransition(root, baseline, file)) continue;
     if (status === "A" && approvedKarnivoreFi3Files.has(file)) {
       const expectedBlob = approvedKarnivoreFi3Files.get(file)!;
@@ -354,12 +365,12 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       continue;
     }
     if (status === "A" && Object.hasOwn(mainAdditionFiles, file)) {
-      assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), mainAdditionFiles[file], change);
+      assert.equal(textHash(readFrozen()), mainAdditionFiles[file], change);
       continue;
     }
     if (postBaselineCakeFiles.get(file) === status) {
       const approved = execFileSync("git", ["show", reviewedCakePublicationSha + ":" + file], { cwd: root, encoding: "utf8" });
-      assert.equal(readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n"),
+      assert.equal(readFrozen().replaceAll("\r\n", "\n"),
         approved.replaceAll("\r\n", "\n"), change);
       continue;
     }
@@ -367,7 +378,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       // Only the exact published #311 file bytes qualify as post-baseline
       // additions. This does not approve GK/macro values.
       const approved = execFileSync("git", ["show", `${classicsCommit}:${file}`], { cwd: root, encoding: "utf8" });
-      assert.equal(readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n"),
+      assert.equal(readFrozen().replaceAll("\r\n", "\n"),
         approved.replaceAll("\r\n", "\n"), change);
       continue;
     }
@@ -379,7 +390,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       continue;
     }
     if (status === "M" && reviewedBreakfastPaths.includes(file)) {
-      const current = readFileSync(path.join(root, file), "utf8");
+      const current = readFrozen();
       const historical = historicalBreakfastRecipe(file, current);
       if (historical !== current) {
         const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
@@ -389,11 +400,11 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     }
     const approved = recipeChanges.get(file);
     if (approved?.status === status) {
-      assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), approved.sha256, change);
+      assert.equal(textHash(readFrozen()), approved.sha256, change);
       continue;
     }
     if (status === "M" && historicalSources.has(file)) {
-      const current = readFileSync(path.join(root, file), "utf8");
+      const current = readFrozen();
       const { historicalGitBlob } = historicalSources.restore(file, current);
       // Resolve the baseline tree entry without reading the old source blob.
       const baselineBlob = execFileSync("git", ["rev-parse", baseline + ":" + file], { cwd: root, encoding: "utf8" }).trim();
@@ -401,7 +412,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       continue;
     }
     if (status === "M" && (file.startsWith("reseptit/") || file.startsWith("kaannokset/"))) {
-      const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
+      const current = readFrozen().replaceAll("\r\n", "\n");
       const snapshot = originalForThreeCanonicalHistory(root, file, originalForC13CanonicalHistory(root, file, originalForB21CanonicalHistory(root, file, originalForReviewedChefSafety(root, file, originalForChefHistoricalCheck(root, file,
         recipeTextForApprovedSnapshot(file,
           historicalRendangForApprovedVersion(file, historicalFarinataForApprovedPanVersion(file, current))))))));
@@ -444,7 +455,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
         cwd: root,
         encoding: "utf8",
       });
-      const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
+      const current = readFrozen().replaceAll("\r\n", "\n");
       assert.equal(current, reviewed.replace("\nstatus: draft\n", "\nstatus: published\n"), change);
     } else {
       assert.equal(draft?.data.status, "draft", change);

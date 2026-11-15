@@ -52,8 +52,8 @@ const editorialPatches: Readonly<Record<string, A8EditorialPatch>> = {
     ]
   },
   "reseptit/paaruoat/lindstrominpihvit-kaalilla.md": {
-    "sourceSha256": "ea116b68468b429136a7d799a9e84530ab6d618b77aa4dcd2a18857599f77069",
-    "approvalScope": "GI/GK-bound, canonical raw preserved; PR361 reviewed wording",
+    "sourceSha256": "983bea727befcb4f175674b3a9344496af60424d51eab03d3e1a0f9cc111651b",
+    "approvalScope": "PR361 reviewed wording retained after the Dijon amount correction",
     "edits": [
       [
         "2. Muotoile seoksesta kahdeksan litteää pihviä. Paista voissa keskilämmöllä noin 4 minuuttia per puoli, kunnes pihvit ovat kypsiä.\n",

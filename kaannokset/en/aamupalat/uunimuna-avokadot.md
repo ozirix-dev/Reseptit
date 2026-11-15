@@ -53,7 +53,7 @@ translation_of: uunimuna-avokadot
 
 ## Description
 
-A measured home-kitchen version following the Finnish source; this text is an unpublished translation draft.
+Avocado halves baked with egg and finished with lemon juice and chives.
 
 ## Ingredients
 

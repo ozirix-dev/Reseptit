@@ -71,4 +71,4 @@ Feta och körsbärstomater rostas till en pastasås. Den ursprungliga finska id�
 - **Allergener:** vete (gluten) och mjölk. Pastan kan innehålla spår av soja och senap.
 - **Näringsvärden och glykemisk belastning:** tillförlitliga receptspecifika värden finns ännu inte. Saknat värde betyder inte noll. Receptet är inte märkt som keto eller lågkolhydrat.
 - Bilden är AI-genererad illustration, inte ett fotografi av en tillagad rätt.
-- **Bakgrundskälla:** https://liemessa.fi/2019/02/uunifetapasta/
+- Originalreceptet på ugnsfetapasta kommer från [Jenni Häyrinens blogg Liemessä](https://liemessa.fi/2019/02/uunifetapasta/).

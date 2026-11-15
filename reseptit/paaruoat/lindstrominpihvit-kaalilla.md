@@ -30,8 +30,8 @@ ingredients:
   - amount: 1
     unit: kpl
     item: kananmuna
-  - amount: 1
-    unit: rkl
+  - amount: 16
+    unit: g
     item: Dijon-sinappia
   - amount: 2
     unit: rkl
@@ -50,10 +50,10 @@ image:
   alt: Lindströminpihvit ja voissa paistettu kaali tarjoiltuna
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 9.54
-carbs_total_per_serving_g: 12.77
-protein_per_serving_g: 31.9
-fat_per_serving_g: 18.32
+carbs_net_per_serving_g: 9.89
+carbs_total_per_serving_g: 13.17
+protein_per_serving_g: 32.01
+fat_per_serving_g: 18.47
 
 ---
 # Lindströminpihvit ja voissa paistettu kaali

@@ -60,7 +60,3 @@ All measured ingredient quantities are in the structured list above.
 2. Weigh 50 g edible fresh fig, cut it into pieces and divide evenly between the bowls.
 3. Chop all 30 g walnuts and divide between the bowls (15 g per portion).
 4. Drizzle the one listed tablespoon of honey over the two bowls in total. Serve chilled without warm fillings or additional sauces.
-
-## Notes
-
-This is an ingredient-matched draft. Nutrition and glycemic-load approval require separate source review.

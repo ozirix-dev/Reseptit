@@ -65,7 +65,7 @@ This small mud cake is rich with dark chocolate and has a soft, buttery centre. 
 
 1. Preheat the oven to 175 °C and line a round tin about 20 cm across with baking paper.
 2. Gently melt the chocolate and butter in a heatproof bowl set over a pan of simmering water or in short bursts in the microwave. Leave to cool slightly.
-3. Whisk the eggs and erythritol until fluffy. Mix in the melted chocolate and butter.
+3. Whisk the eggs and erythritol until fluffy. Mix in the melted chocolate and butter and the vanilla extract.
 4. Combine the almond flour, cocoa powder and salt. Fold the dry ingredients into the batter.
 5. Pour the batter into the tin and bake for 12–16 minutes. The centre should stay soft.
 6. Leave to cool before slicing.

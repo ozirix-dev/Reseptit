@@ -29,7 +29,7 @@ ingredients:
     item: voita
   - amount: 100
     unit: g
-    item: tuorejuustoa
+    item: "maustamatonta laktoositonta tuorejuustoa (25 % rasvaa)"
   - amount: 1
     unit: kpl
     item: kananmuna
@@ -44,10 +44,10 @@ translation_status:
   en: published
   sv: published
   th: published
-carbs_net_per_serving_g: 3.44
-carbs_total_per_serving_g: 5.57
-protein_per_serving_g: 7.53
-fat_per_serving_g: 24.28
+carbs_net_per_serving_g: 3.78
+carbs_total_per_serving_g: 5.91
+protein_per_serving_g: 5.52
+fat_per_serving_g: 23.41
 
 ---
 

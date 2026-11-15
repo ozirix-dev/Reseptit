@@ -45,16 +45,16 @@ ingredients:
   - amount: 1
     unit: kpl
     item: limeä
-    note: tarjoiluun
+    note: "lohkoina tarjoiluun, kuorta ei syödä"
 translation_languages:
   - en
   - sv
   - th
 translation_status: {en: published, sv: published, th: published}
-carbs_net_per_serving_g: 3.13
-carbs_total_per_serving_g: 4.58
-protein_per_serving_g: 31.99
-fat_per_serving_g: 9.04
+carbs_net_per_serving_g: 3.29
+carbs_total_per_serving_g: 4.88
+protein_per_serving_g: 32.11
+fat_per_serving_g: 8.72
 
 ---
 

@@ -53,7 +53,7 @@ translation_of: uunimuna-avokadot
 
 ## Beskrivning
 
-Ett uppvägt hemköksrecept enligt den finska källan; denna text är ett opublicerat översättningsutkast.
+Avokadohalvor som bakas i ugn med ägg och toppas med citronsaft och gräslök.
 
 ## Ingredienser
 

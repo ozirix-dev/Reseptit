@@ -60,7 +60,3 @@ Mängderna anges i den strukturerade ingredienslistan ovan.
 2. Väg upp 50 g ätligt färskt fikon, skär i bitar och fördela jämnt mellan skålarna.
 3. Hacka alla 30 g valnötter och fördela mellan skålarna (15 g per portion).
 4. Ringla receptets sammanlagt 1 matsked honung över de två skålarna. Servera kallt utan varma fyllningar eller extra sås.
-
-## Anteckningar
-
-Detta är ett utkast som följer mängderna i den finska källan. Närings- och glykemiskt belastningsvärde kräver separat granskning.

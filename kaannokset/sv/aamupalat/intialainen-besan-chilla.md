@@ -57,7 +57,7 @@ translation_of: intialainen-besan-chilla
 
 ## Beskrivning
 
-Ett uppvägt hemköksrecept enligt den finska källan; denna text är ett opublicerat översättningsutkast.
+Besan chilla är matiga kikärtspannkakor med tomat, lök och kryddor.
 
 ## Ingredienser
 
