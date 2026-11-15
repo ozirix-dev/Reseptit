@@ -37,4 +37,3 @@ Valmistus- ja käännösmuutokset tarkisti erillinen Codex-katselmoija.
 Ravintoaineistosta tehtiin erillinen Decimal-laskenta. Tarkastus kattoi
 lähdetietueet, massat, annosjaot, laskentasidokset ja 40 ravintoon liittyvän
 kielitiedoston luvut. Kyseessä oli lähdevertailu ja laskennallinen varmennus.
-

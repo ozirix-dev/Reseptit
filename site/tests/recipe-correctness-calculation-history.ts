@@ -42,4 +42,3 @@ export function restoreAuditInventory(rows: Array<{ recipe_id: string; notes: st
     return restore(normalized, snapshot.inventory, row.recipe_id);
   });
 }
-
