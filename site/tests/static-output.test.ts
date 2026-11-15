@@ -9,7 +9,7 @@ import path from "node:path";
 import test from "node:test";
 import { recipeLibraryPagePath, recipeLibraryPageSize } from "../src/features/recipes/recipe-pagination";
 import { parseRecipeSearch, parseRouteContent } from "../src/lib/load-content";
-import { recipeUi } from "../src/features/recipes/recipe-i18n";
+import { recipeDifficultyLabel, recipeUi } from "../src/features/recipes/recipe-i18n";
 import { copyrightSourceUrl, copyrightUi } from "../src/features/recipes/recipe-copyright";
 import { toolUi } from "../src/features/recipes/recipe-tools";
 import { siteContent } from "../src/generated/content.generated";
@@ -85,6 +85,9 @@ test("the FI coconut curry displays its allergen note on the static recipe page"
 });
 
 test("difficulty is localized in every affected recipe page and library card", async () => {
+  assert.equal(recipeDifficultyLabel("helppo", "fi"), "helppo");
+  assert.equal(recipeDifficultyLabel(null, "en"), null);
+  assert.equal(recipeDifficultyLabel("Advanced", "en"), "Advanced");
   const ids = [
     "indonesialainen-serabi-kookospannukakku", "intialainen-mannasuurimoupma", "japanilainen-soba-aamiaiskeitto",
     "kiinalainen-jianbing-munaletty", "kiinalainen-katkarapu-wontonkeitto", "malesialainen-apam-balik",

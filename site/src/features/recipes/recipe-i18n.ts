@@ -44,10 +44,10 @@ export function glycemicLoadPath(locale: RecipeLocale): string {
   return ({ fi: '/glykeeminen-kuorma/', en: '/en/glycemic-load/', sv: '/sv/glykemisk-belastning/', th: '/th/glycemic-load/' })[locale];
 }
 
-const easyDifficulty: Readonly<Record<RecipeLocale, string>> = {
-  fi: "Helppo", en: "Easy", sv: "Lätt", th: "ง่าย",
+const easyDifficulty: Readonly<Record<Exclude<RecipeLocale, "fi">, string>> = {
+  en: "Easy", sv: "Lätt", th: "ง่าย",
 };
 
 export function recipeDifficultyLabel(difficulty: string | null, locale: RecipeLocale): string | null {
-  return difficulty?.trim().toLowerCase() === "helppo" ? easyDifficulty[locale] : difficulty;
+  return locale !== "fi" && difficulty?.trim().toLowerCase() === "helppo" ? easyDifficulty[locale] : difficulty;
 }
