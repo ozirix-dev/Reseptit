@@ -11,7 +11,7 @@ import {createElement as h} from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
 import {MemoryRouter} from 'react-router-dom';
 import {buildApprovedSevenVariants,loadPadSeeEw,verifyNextSevenManifest,verifyNextSevenSnapshotRecords} from '../scripts/gk-next-seven';
-import { approvedRecipeSnapshotRecord } from '../scripts/approved-recipe-note-edits';
+import { editorialSnapshots } from '../scripts/approved-recipe-snapshot-records';
 import {buildGkOnlyVariants} from '../scripts/gk149-integration';
 import {verifyApprovedSix} from '../scripts/gk149-approved-six';
 import {verifyFoodinRecord,FOODIN_ORIGINAL_FILE_SHA256,FOODIN_RECORD_SHA256,FOODIN_RECORD_ID} from '../scripts/gk-foodin-binding';
@@ -63,9 +63,19 @@ test('Draft-only authority and exact receipts reject added recipes, widened sour
 test("scoped snapshot binding preserves the old seven outputs and rejects used changes", () => {
  const unrelated = "reseptit/aamupalat/unrelated-snapshot.md";
  const used = "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md";
- const added = { ...approvedRecipeSnapshotRecord(used), englishPublicationSource: true };
- assert.doesNotThrow(() => verifyNextSevenSnapshotRecords(root, file => file === unrelated ? added : approvedRecipeSnapshotRecord(file)));
- assert.throws(() => verifyNextSevenSnapshotRecords(root, file => file === used ? added : approvedRecipeSnapshotRecord(file)), /scoped recipe snapshot changed/);
+ const original = Object.getOwnPropertyDescriptor(editorialSnapshots, used);
+ assert.ok(original);
+ assert.equal(Object.hasOwn(editorialSnapshots, unrelated), false);
+ const changed = { ...editorialSnapshots[used], currentSha256: "0".repeat(64) };
+ try {
+  Object.defineProperty(editorialSnapshots, unrelated, { value: changed, configurable: true });
+  assert.deepEqual(buildApprovedSevenVariants(root), seven);
+  Object.defineProperty(editorialSnapshots, used, { value: changed });
+  assert.throws(() => verifyNextSevenSnapshotRecords(root), /scoped recipe snapshot changed/);
+ } finally {
+  Reflect.deleteProperty(editorialSnapshots, unrelated);
+  Object.defineProperty(editorialSnapshots, used, original);
+ }
  assert.equal(digest(seven), "ceb6bed6876b24de875754da695d9032ba360d7d62f0bdf8e5e9a9d05e049956");
 });
 

@@ -155,8 +155,12 @@ test('all326 parent GK objects,23 old variants, macro sources and recipe trees r
 });
 test('original three approval receipts stay exact and do not grant Ready/merge/deploy authority',()=>{
  const lineage=read(folder+'approval-lineage.json');assert.equal(manifest.integrationAuthorized,true);
+ // The integration commit contains the three byte-identical research receipts.
+ // Keep their original research commit in the sealed lineage.
+ const receiptIntegrationCommit = "82a3718788863b05b8289e9b17b9694542538e72";
  for(const [p,binding] of Object.entries(lineage.receiptBindings) as Array<[string,any]>){
-  const raw=readFileSync(path.join(root,p),'utf8'),pinned=execFileSync('git',['show',binding.sourceCommit+':'+p],{cwd:root,encoding:'utf8'});
+  const raw=readFileSync(path.join(root,p),'utf8'),pinned=execFileSync('git',['show',receiptIntegrationCommit+':'+p],{cwd:root,encoding:'utf8'});
+  assert.equal(binding.sourceCommit,lineage.sourceCommit);
   assert.equal(textHash(raw),textHash(pinned));assert.equal(textHash(raw),binding.sha256Lf);
   const a=JSON.parse(raw);assert.equal(a.readyAuthorized,false);assert.equal(a.mergeAuthorized,false);assert.equal(a.deployAuthorized,false);
  }

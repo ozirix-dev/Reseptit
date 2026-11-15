@@ -43,9 +43,9 @@ const snapshotPaths = [
 
 // Scope the migrated seal to the inputs used by the seven approved cases.
 // The immutable case hashes still bind the restored bytes and the arithmetic.
-export function verifyNextSevenSnapshotRecords(root: string, getRecord = approvedRecipeSnapshotRecord) {
+export function verifyNextSevenSnapshotRecords(root: string) {
   const history = read(root, "docs/nutrition/recipe-correctness-history.json");
-  const records = snapshotPaths.map(file => [file, getRecord(file), history[file] ?? null]);
+  const records = snapshotPaths.map(file => [file, approvedRecipeSnapshotRecord(file), history[file] ?? null]);
   if (digest(records) !== "ec80ffd1d07d6ed2a7fa2fb5c0024236144e4fd84895e865ff6035c522613673") {
     throw Error("Next-seven scoped recipe snapshot changed");
   }
