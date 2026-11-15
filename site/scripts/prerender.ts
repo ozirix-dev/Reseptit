@@ -69,7 +69,8 @@ function routeMetadata(route: string, content: RouteContent) {
     ? `<script id="recipe-jsonld" type="application/ld+json">${JSON.stringify(recipeJsonLd(recipe)).replaceAll("<", "\\u003c")}</script>`
     : "";
   // Match the card grid breakpoints. Do not eagerly fetch three cards on mobile.
-  const desktopImages = content.recipes.slice(1, 3).flatMap((item, index) => item.image ? [
+  // Let a picture with a mobile AVIF choose once the viewport is known.
+  const desktopImages = content.recipes.slice(1, 3).flatMap((item, index) => item.image && !(branded && indexLocale && item.image.homeAvifSrc) ? [
       `<link rel="preload" as="image" fetchpriority="high" href="${escapeHtml(item.image.src)}" media="(min-width: ${index === 0 ? 700 : 1100}px)"${item.image.srcSet ? ` imagesrcset="${escapeHtml(item.image.srcSet)}"` : ""}${item.image.srcSet ? ` imagesizes="${escapeHtml(recipeCardSizes)}"` : ""} />`,
     ] : []);
   return {

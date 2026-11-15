@@ -231,6 +231,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     // Keep the unchanged original as src and the largest candidate (also used by SEO).
     recipe.image.srcSet = [...source.variants, source]
       .map((image) => `${baseUrl}/kuvat/${image.path} ${image.width}w`).join(", ");
+    if (source.homeAvif) recipe.image.homeAvifSrc = imageUrlPrefix + source.homeAvif.path;
   }
   return inheritSourceAdditionalCategories(recipes).sort((a, b) => a.category.localeCompare(b.category) || a.title.localeCompare(b.title));
 }

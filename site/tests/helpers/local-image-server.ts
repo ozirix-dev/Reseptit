@@ -19,7 +19,7 @@ export async function localImageServer(root: string, port = 0) {
       let bytes = await readFile(file);
       const ext = path.extname(file);
       if ([".html", ".js", ".json"].includes(ext)) bytes = Buffer.from(bytes.toString().replaceAll("https://ozirix-dev.github.io/Reseptit", base));
-      const types: Record<string, string> = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json", ".webp": "image/webp", ".svg": "image/svg+xml", ".xml": "application/xml" };
+      const types: Record<string, string> = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json", ".webp": "image/webp", ".avif": "image/avif", ".svg": "image/svg+xml", ".xml": "application/xml" };
       res.writeHead(200, { "Content-Type": types[ext] ?? "text/plain", "Content-Encoding": "gzip", "Cache-Control": "public,max-age=600" });
       res.end(gzipSync(bytes));
     } catch { res.writeHead(404); res.end("not found"); }

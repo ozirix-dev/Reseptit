@@ -1,4 +1,4 @@
-import { recipeCardSizes } from "./image-layout";
+import { recipeCardAvifMedia, recipeCardSizes } from "./image-layout";
 import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContent } from "@/lib/content";
@@ -141,7 +141,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
     results = <>
       {homePreview ? <section className="home-preview__picks" aria-labelledby="home-preview-picks-heading">
         <h2 id="home-preview-picks-heading">{homeText.picks}</h2>
-        <RecipeGrid recipes={recipes} locale={locale} headingLevel={3} />
+        <RecipeGrid recipes={recipes} locale={locale} headingLevel={3} homePicks />
       </section> : <RecipeGrid recipes={recipes} locale={locale} />}
       {catalog ? <p className="recipe-library-link"><Link to={recipeLibraryPagePath(locale)} onClick={() => track("Browse More Recipes")}>{homeText.allRecipes(catalog.total)}</Link></p> : null}
     </>;
@@ -229,25 +229,45 @@ function RecipePagination({ locale, page, totalPages, previous, next }: {
   </nav>;
 }
 
-function RecipeGrid({ recipes, locale, headingLevel }: {
+function RecipeGrid({ recipes, locale, headingLevel, homePicks }: {
   recipes: (RecipeSummary | SearchRecipe)[];
   locale: RecipeLocale;
   headingLevel?: 2 | 3;
+  homePicks?: boolean;
 }) {
   return <div className="recipe-card-grid">{recipes.map((recipe, index) =>
-    <RecipeCard key={recipe.recipeId + '-' + locale} recipe={recipe} index={index} locale={locale} headingLevel={headingLevel} />
+    <RecipeCard key={recipe.recipeId + '-' + locale} recipe={recipe} index={index} locale={locale} headingLevel={headingLevel} avifSrc={homePicks ? recipe.image?.homeAvifSrc : undefined} />
   )}</div>;
 }
 
-function RecipeCard({ recipe, index, locale, headingLevel = 2 }: { recipe: RecipeSummary | SearchRecipe; index: number; locale: RecipeLocale; headingLevel?: 2 | 3 }) {
+function RecipeCard({ recipe, index, locale, headingLevel = 2, avifSrc }: {
+  recipe: RecipeSummary | SearchRecipe; index: number; locale: RecipeLocale; headingLevel?: 2 | 3; avifSrc?: string;
+}) {
   const [imageFailed, setImageFailed] = useState(false);
+  const [avifFailed, setAvifFailed] = useState(false);
   const labels = recipeUi[locale];
   const Heading = headingLevel === 3 ? "h3" : "h2";
   const dietLabel = recipe.dietClass === "keto" ? labels.keto : recipe.dietClass ? labels.vhh : null;
   const meta = [recipe.timeTotalMin ? `${recipe.timeTotalMin} ${labels.minutes}` : null, recipe.difficulty].filter(Boolean).join(" · ");
+  const webpFallback = recipe.image && !imageFailed ? <img className="recipe-card__image"
+    src={recipe.image.src} srcSet={recipe.image.srcSet ?? undefined} sizes={recipeCardSizes} alt={recipe.image.alt}
+    width={recipe.image.width} height={recipe.image.height} loading={index === 0 && !avifSrc ? "eager" : "lazy"}
+    fetchPriority={index === 0 ? "high" : undefined} decoding="async"
+    ref={avifSrc && !avifFailed ? image => {
+      // An AVIF can fail before React attaches the error listener.
+      if (image?.complete && image.naturalWidth === 0 && image.currentSrc === avifSrc) setAvifFailed(true);
+    } : undefined}
+    onError={({ currentTarget }) => {
+      if (avifSrc && currentTarget.currentSrc === avifSrc) setAvifFailed(true);
+      else setImageFailed(true);
+    }} /> : null;
   return <article className="recipe-card">
     <Link className="recipe-card__link" to={recipe.routePath}>
-      {recipe.image && !imageFailed ? <img className="recipe-card__image" src={recipe.image.src} srcSet={recipe.image.srcSet ?? undefined} sizes={recipeCardSizes} alt={recipe.image.alt} width={recipe.image.width} height={recipe.image.height} loading={index === 0 ? "eager" : "lazy"} fetchPriority={index === 0 ? "high" : undefined} decoding="async" onError={() => setImageFailed(true)} />
+      {webpFallback
+        ? avifSrc && !avifFailed ? <picture>
+          <source type="image/avif" media={recipeCardAvifMedia} srcSet={avifSrc} />
+          {webpFallback}
+        </picture> : webpFallback
         : <span className="recipe-card__image recipe-card__image--placeholder">{labels.imageUnavailable}</span>}
       <span className="recipe-card__content">
         <span className="recipe-card__badges">{[recipe.category, ...(recipe.additionalCategories ?? [])].map(category => <span key={category} className="recipe-card__category">{labels.category[category]}</span>)}{dietLabel ? <span className="recipe-card__diet">{dietLabel}</span> : null}</span>
