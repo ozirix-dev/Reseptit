@@ -1,6 +1,7 @@
 # Recipavo: käyttäjien omat reseptit ja yhteisöjulkaisun automaattinen katselmointi – RFC V1
 
 **Päiväys:** 13.11.2026  
+**Täydennetty:** 15.11.2026 — yksi julkisuusvalinta tallennuksessa ja videoidean talteenotto  
 **Tila:** DRAFT / DESIGN ONLY / EI TOTEUTUS- EIKÄ JULKAISUVALTUUTUSTA  
 **Repo:** `ozirix-dev/Reseptit`  
 **Tavoite:** käyttäjät saavat kasvattaa reseptikirjastoa, ja ylläpitäjän toistuva syöttö- ja tarkistustyö vähenee olennaisesti. **Recipavon V1-betan käyttöönottoa ei saa tämän ominaisuuden vuoksi viivästyttää.**
@@ -14,7 +15,7 @@ Tämä RFC on **jatko-osa**, ei korvike:
 - [Recipavon tuotestrategia](recipavo-product-strategy.md): yksityiset reseptit, käyttäjät ja Diary ovat myöhempi tuotevaihe, eivät nykyisen staattisen sivuston ominaisuuksia.
 - [Uuden reseptin julkaisun ennakkotarkistus](../reviews/new-recipe-publication-gate-2026-11-10.md), [uuden reseptin GK-putki](../nutrition/gk100-new-recipe-pipeline-plan.md), [tekijänoikeuskäytäntö](recipe-copyright-policy-2026-11-06.md) ja [Cloudflare-julkaisun portit](../recipavo-cloudflare-release-plan.md) jäävät voimaan.
 
-**Tässä uutena:** miten *kirjautunut käyttäjä* ylläpitää omaa reseptiään ja **vapaaehtoisesti ehdottaa sitä yhteisökirjastoon**, miten koneellinen katselmointi toimii kulultaan ja kustannuksiltaan hallitusti, miten toimituksellinen työjonotus ja palautteet toimivat, ja millä **erillisellä päätöksellä** voidaan joskus poistaa omistajalta rutiininomainen tapauskohtainen hyväksyntä.
+**Tässä uutena:** miten *kirjautunut käyttäjä* ylläpitää omaa reseptiään ja **vapaaehtoisesti ehdottaa sitä yhteisökirjastoon yhdellä rastilla tallentaessaan**, miten koneellinen katselmointi toimii kulultaan ja kustannuksiltaan hallitusti, miten toimituksellinen työjonotus ja palautteet toimivat, ja millä **erillisellä päätöksellä** voidaan joskus poistaa omistajalta rutiininomainen tapauskohtainen hyväksyntä.
 
 P0 / nykyinen V1: julkinen reseptikirjasto toimii myös **ilman kirjautumista**. Ei muokata tämän RFC:n perusteella nykyisiä reseptejä, GI/GK:tä, käännöksiä, Cloudflare-asetuksia, workflow'ta, PR:iä tai käyttäjien oikeuksia.
 
@@ -22,15 +23,45 @@ P0 / nykyinen V1: julkinen reseptikirjasto toimii myös **ilman kirjautumista**.
 
 **Yksityinen oma resepti:** kirjautunut käyttäjä voi kirjoittaa reseptin tai vahvistaa tuodun tekstin, tallentaa luonnoksen, muokata, poistaa ja myöhemmin halutessaan käyttää sitä omassa ateriapäiväkirjassa. Puuttuva GI, GK, ravintolaskenta tai kuva **ei estä yksityistä tallennusta**.
 
-**Julkiseen kirjastoon ehdottaminen:** erillinen `Ehdota julkaistavaksi` -toiminto. Näytä täsmälleen, mitä tietoa siirtyy julkisen julkaisun katselmointiin, kysy tekijä- ja kuvaoikeudet, ja lukitse lähetetty reseptiversio. Yksityinen muokkaus ei salaa muuta lähetettyä versiota. Tekijä voi vetää ehdotuksen takaisin ennen julkaisua ja korjata sen uudella versiolla.
+**Julkiseen kirjastoon ehdottaminen:** sama tallennuslomake tarjoaa **yhden vapaaehtoisen rastin** `Haluan jakaa reseptin julkisesti`. Valinta käynnistää julkaisuehdotuksen vasta, kun kyseinen toiminto on otettu käyttöön ja käyttäjä on saanut näkyvän tiedon käsittelystä sekä vahvistanut tarvitut oikeudet. Rasti ei ohita toimituksellista hyväksyntää eikä tee reseptistä heti julkista. Myöhemmin jo yksityiseksi tallennetun reseptin voi ehdottaa erillisellä `Ehdota julkaistavaksi` -toiminnolla. Lähetetty versio lukitaan; yksityinen muokkaus ei salaa muuta sitä. Tekijä voi vetää ehdotuksen takaisin ennen julkaisua ja korjata sen uudella versiolla.
 
 Julkiseen kirjastoon ei siirry automaattisesti yksityistä muistikirjaa, ateriapäiväkirjaa, profiilisähköpostia, palvelimen lokeja, GPS- tai muuta henkilökohtaista metadataa.
+
+### 2.1 Yksi tallennus, yksi julkisuusvalinta
+
+Lomakkeen ensimmäinen käyttötapaus on **pelastaa resepti talteen heti**, myös silloin, kun käyttäjä ei halua tai voi tarkistaa kaikkia määriä.
+
+```text
+Resepti: Jäiset banaani-suklaapalat
+Lähde: https://... (linkki talteen)
+[ ] Haluan jakaa tämän reseptin julkisesti
+[Tallenna resepti]
+```
+
+- **Oletus on yksityinen:** tyhjä rasti tallentaa heti omaan reseptikirjaan. Käyttäjä voi täydentää ja muokata myöhemmin; GK, ravintoarvot, kuva ja neljä kieltä eivät ole tallennusvaatimuksia.
+- **Rasti valittuna:** tallennus säilyttää oman reseptin joka tapauksessa ja *pyytää samalla* julkisen version tarkistusta. Selite näkyy ennen tallennusta: `Tallennetaan ensin omaan reseptikirjaasi. Muut näkevät reseptin vasta hyväksynnän jälkeen.` Käyttöehdot ja tekijä-/kuvaoikeuksien ilmoitus näkyvät samassa näkymässä; käyttäjän on nimenomaisesti vahvistettava tarvittavat oikeudet. Älä piilota tätä hyväksyntää pelkän visuaalisen valinnan taakse.
+- **Jos julkaisuehdotuksen käsittely ei ole vielä käytössä (C2):** rasti on selvästi pois käytöstä tai merkitty tulevaksi toiminnoksi. Älä esitä ehdotusta lähetettynä. Yksityinen tallennus toimii silti.
+- **Jos julkaisuehdotus epäonnistuu tai jää HOLDiin:** oma tallennus ei katoa; käyttäjä näkee yksiselitteisen tilan ja voi korjata tiedot tai peruuttaa ehdotuksen. Uusi julkinen versio ei muutu salaa myöhempien yksityisten muokkausten mukana.
+- **Tilat käyttäjälle:** `Oma – yksityinen`, `Julkaisua tarkistetaan`, `Korjaa ennen julkaisua`, `Julkaistu`. Käyttäjälle ei näytetä sisäistä GI/GK- tai CI-tilakonetta tallennuksen esteenä.
+- Sama hyväksytty lähetyspolku palvelee sekä tallennuslomakkeen rastia että jo tallennetun reseptin myöhempää julkaisuehdotusta. Ei toista reseptijärjestelmää, automaattista PR:ää tai deployta yksityisestä tallennuksesta.
+
+### 2.2 Video tai some-linkki ensin talteen
+
+Käyttäjä voi tallentaa Facebook-, Instagram- tai YouTube-videon URL:n ja oman lyhyen kuvauksen, vaikka videon sisältöä ei pystytä automaattisesti lukemaan. Tämä on osa olemassa olevan [PR #295:n tuontipolun](recipavo-user-recipe-import-v1.md) myöhempää UX-laajennusta, ei väite nykyisestä videoiden lukutoiminnosta.
+
+- Kun laillisesti ja teknisesti saatavilla on puhetta, tekstityksiä tai reseptitekstiä, niistä voidaan ehdottaa ainesosia ja vaiheita **käyttäjän vahvistettavaksi**. Kolmannen osapuolen videon, kuvan tai omaperäisen tekstin kopiointi ja edelleenjulkaisu ei ole automaattisesti sallittua.
+- Näytä kenttäkohtainen alkuperä: `videolla ilmoitettu`, `muusta nimetystä lähteestä`, `käyttäjän lisäämä`, `arvio` tai `tuntematon`. Esimerkiksi `3 banaania (videolta)` ja `150 g suklaata (arvio, tarkista)` eivät ole yhtä varmoja tietoja.
+- Jos linkki on kirjautumisen takana, rajoitettu, poistunut tai jäsentäminen epäonnistuu, **säilytä linkki ja käyttäjän syöttämät tiedot**. Tarjoa manuaalinen täydentäminen. Ei pakkoa ladata videota palvelimelle, kiertää pääsynhallintaa tai luoda keksittyjä määriä.
+- Tallennettu epävarma luonnos on käyttäjän oma kokeiltava versio, ei väite alkuperäisen videontekijän täsmällisestä reseptistä. Julkinen versio tarkistetaan erikseen, ja mahdolliset kuva- ja tekstioikeudet ratkaistaan ennen julkaisua.
+
+**Tuoteperiaate: pelasta ruokaidea ensin, tarkista ja viimeistele myöhemmin.**
 
 ## 3. Katselmoinnin työnkulku ja tilat
 
 ```text
-PRIVATE_DRAFT
-  -> SUBMITTED (nimenomainen käyttäjän vahvistus, version hash)
+PRIVATE_DRAFT (syntyy aina onnistuneen tallennuksen jälkeen)
+  -> PRIVATE_SAVED (rasti ei valittu tai julkinen käsittely ei ole käytössä)
+  -> SUBMITTED (rasti valittu ja käsittely käytössä; suostumus + version hash)
   -> PREFLIGHT (rakenne, käyttöoikeudet, duplikaatit, roskaposti)
      -> NEEDS_USER_FIX -> SUBMITTED (uusi versio)
      -> HOLD_SAFETY / HOLD_EVIDENCE / HOLD_RIGHTS
@@ -42,6 +73,8 @@ PRIVATE_DRAFT
   -> PUBLISHED (julkaisun jälkeen todennettu URL/versio)
   -> WITHDRAWN / CORRECTION_PENDING / REVERTED (myöhempi muutos)
 ```
+
+Rasti on **käyttäjän toivoma julkisuus**, ei nykyinen näkyvyys. Todellinen julkaisutieto tulee vasta hyväksytystä `PUBLISHED`-tilasta. Julkaisupyynnön tallentaminen ei saa estää tai peruuttaa yksityisen luonnoksen onnistunutta tallennusta. 
 
 Tila `REVIEW_CANDIDATE` tai koneellisesti arvioitu `PASS` ei ole `EDITORIAL_APPROVED` eikä `PUBLISH_AUTHORIZED`. FAIL CLOSED: mikä tahansa epäselvä tai vanhentunut kriittinen tarkiste pysäyttää julkaisun, **muttei poista yksityistä reseptiä**.
 
@@ -84,8 +117,9 @@ Vasta erikseen sovitun politiikka-, riski-, tietosuoja- ja rollback-katselmoinni
 Suunnitellut pääentiteetit:
 
 - `users` / `identity_link`: ulkoisen autentikoinnin identiteetti, ei reseptitietokannan oma salasana; vain tarpeellinen profiilitieto.
-- `private_recipes` ja `recipe_versions`: muuttumaton `version_id`, `owner_user_id`, `source_locale`, annokset, ainesosat, teksti, `content_sha256`, `visibility=PRIVATE`.
-- `publication_submissions`: `submission_id`, hyväksytty `version_id`, erillinen julkistussuostumusversio, tilakone, idempotenssiavain ja alkuperä-/lisenssiviitteet.
+- `private_recipes` ja `recipe_versions`: muuttumaton `version_id`, `owner_user_id`, `source_locale`, annokset, ainesosat, teksti, `content_sha256`, `visibility=PRIVATE` niin kauan kuin julkista versiota ei ole hyväksytty. Tallennuslomakkeen `share_publicly` on **julkaisuehdotuksen intentio**, ei näkyvyysmuutos.
+- `publication_submissions`: `submission_id`, lähetetty `version_id`, nimenomainen julkistussuostumusversio, tilakone, idempotenssiavain ja alkuperä-/lisenssiviitteet. Julkaisupyynnön epäonnistuminen ei saa peruuttaa omaa tallennusta.
+- `source_links` / reseptin lähdekenttä: alkuperäinen URL, mahdollinen palvelu, lukutila, käyttäjän täydentämät tiedot ja raaka-ainekenttien todennettava alkuperä/epävarmuus; ei oletusarvoisesti kolmannen osapuolen video- tai kuvatiedostoja.
 - `review_runs` ja `review_findings`: säännöstöversio, malliversio tarvittaessa, lähteiden tunnisteet, jokaisen kriittisen portin tulos, aikaleima sekä virheiden luokitus.
 - `review_decisions`: hyväksyjä/rooli, toimituksellinen päätös, täsmäversio, syy tai sisäinen perustelu, päätöstyyppi ja peruutus.
 - `image_assets`: omistaja, tiedostojen oikeusilmoitus, skannaustulos, R2-viite, renderöintiversiot ja korvaushistoria.
@@ -96,14 +130,16 @@ Suunnitellut pääentiteetit:
 ### API-luonnos (ei toteutusta)
 
 ```text
-POST   /api/me/recipes                   -> yksityinen luonnos, idempotent
+POST   /api/me/recipes                   -> tallenna oma luonnos; C3:ssa valinnainen julkisuuspyyntö samalla lomakkeella, idempotent
 GET    /api/me/recipes                   -> vain kirjautuneen omat
 PATCH  /api/me/recipes/{id}              -> uusi muuttumaton reseptiversio
 DELETE /api/me/recipes/{id}              -> poisto-/säilytyspolitiikan mukainen toiminto
-POST   /api/me/recipes/{id}/submit       -> erillinen eksplisiittinen julkaisuehdotus
+POST   /api/me/recipes/{id}/submit       -> jo tallennetun luonnoksen myöhempi eksplisiittinen julkaisuehdotus (sama käsittelyjono)
 GET    /api/me/submissions/{id}          -> tekijälle rajattu palaute ja tila
 POST   /api/admin/submissions/{id}/decide -> roolipohjainen, auditoitu päätös
 ```
+
+Jos samassa tallennuksessa pyydetään julkisuutta, palvelin **vahvistaa ensin oman reseptin tallennuksen** ja luo vasta sitten erillisen, versionlukitun julkaisuehdotuksen oikeusilmoituksineen. Vastaus erottaa `saved_private`- ja `submission_status`-tulokset; julkaisujonon virhe ei saa hävittää tallennusta. Sama idempotenssiavain estää tuplalähetykset. C2:ssa tämä lisätoiminto ei ole vielä aktiivinen.
 
 Kaikki omistajuustarkistukset tehdään palvelimella. Käyttäjä-ID ei saa tulla asiakkaan antamana valtuutuksen lähteenä. Admin-API:ssa erillinen rooli, CSRF-/istuntosuoja tarpeen mukaan, nopeusrajat ja auditointi. Julkaisuportti tarkistaa aina version ja hyväksynnän SHA:n, ei vain käyttäjän aiemmin saamaa vihreää rastia.
 
@@ -131,12 +167,14 @@ Tuotantodomain `www.recipavo.com` ja nykyinen Coming Soon -suoja jäävät täm�
 | Vaihe | Rajattu toimitus | Mitattava valmis-ehto | Sallitut vaikutukset |
 | --- | --- | --- | --- |
 | **C0 — nyt** | Tämä RFC, riippuvuuskartta ja tulevien vaiheiden backlog | Ei muutoksia käyttäjäsisältöön, domainiin tai CI-portteihin | Dokumentaatio vain |
-| **C1 — V1:n jälkeen** | 10–20 synteettistä/tekijänoikeudellisesti turvallista reseptiä, lomakeprototyyppi, palautekortit ja tilakone ilman henkilötietoja | Rakennetesti, turvallisuus-HOLD, oikeustarkistus, duplikaatti, tuntematon GK, uudelleenlähetyksen idempotenssi toimivat | Ei oikeaa kirjautumista |
-| **C2 — yksityinen** | T1 (PR #295): käyttäjätunnistus, D1-luonnokset, versiot, omistusoikeus, poisto/vienti; 5–20 opt-in-testaajaa | Roolieristys, ei käyttäjätietovuotoja, peruutus ja versiohistoria toimivat | Ei julkisia käyttäjäreseptejä |
-| **C3 — valvottu yhteisöpilotti** | T4: 5–20 oikeaa julkaisuehdotusta → automaattinen esikatselmointi → omistajan päätös → julkaisupaketti | 100 % julkaistuista ehdotuksista versio- ja hyväksyntäsidottuja; 0 tiedossa olevaa kriittistä turvallisuus-/oikeusohitusta; julkinen käyttöönotto erikseen | Omistaja hyväksyy |
+| **C1 — V1:n jälkeen** | 10–20 synteettistä/tekijänoikeudellisesti turvallista reseptiä, yksi tallennuslomake + julkisuusrasti, videolinkin käsin tallennettava vaihtoehto, palautekortit ja tilakone ilman henkilötietoja | Yksityinen tallennus onnistuu ilman GK:ta; julkisuusvalinta ei julkaise heti; rakenteen, turvallisuuden, oikeuksien ja uudelleenlähetyksen rajat demonstroidaan | Ei oikeaa kirjautumista |
+| **C2 — yksityinen** | T1 (PR #295): käyttäjätunnistus, D1-luonnokset, versiot, omistusoikeus, poisto/vienti; 5–20 opt-in-testaajaa; ulkoisen linkin tallennus myös ilman onnistunutta sisällön hakua | Roolieristys, ei käyttäjätietovuotoja, linkki ja oma keskeneräinen luonnos säilyvät; julkisuusrasti ei vielä lähetä ehdotusta ennen C3:a | Ei julkisia käyttäjäreseptejä |
+| **C3 — valvottu yhteisöpilotti** | T4: julkisuusrasti käyttöön tallennusnäkymään ja sama myöhempi `Ehdota`-toiminto; 5–20 oikeaa ehdotusta → automaattinen esikatselmointi → omistajan päätös → julkaisupaketti | Yksi rasti + yksi tallennus; yksityinen kopio säilyy myös HOLDissa; 100 % julkaistuista ehdotuksista versio- ja hyväksyntäsidottuja; 0 tiedossa olevaa kriittistä turvallisuus-/oikeusohitusta | Omistaja hyväksyy |
 | **C4 — hallitun automaation päätös** | Mittaa korjauskierto, läpimeno, vaaralliset virhe-ehdotukset, väärät duplikaatit, ylläpidon aika ja kustannukset | Erillinen nimenomainen päätös automaattijulkaisun säännöistä, luokista, auditoinnista ja kill switchistä | Ei automaattista lupaa C3:n perusteella |
 
-**Käyttökelpoiset KPI:t:** käsin tehtyjen korjausten minuutit / julkaistu resepti; kuinka moni ehdotus palautuu tekijälle itse korjattavaksi; turhan AI-käytön osuus; oikeat virheelliset hyväksynnät; reseptien julkaisuviive; kuvien ja käännösten oikeellisuus; asiakkaiden poistumis- ja palautetarpeet. Mittaa vasta todellisessa pilotissa, älä keksi toteutunutta säästöä etukäteen.
+**Tallennuksen ensimmäiset hyväksymisskenaariot:** (1) videolinkki ilman luettavia määriä → yksityinen luonnos tallessa, tuntemattomat kentät näkyvissä; (2) julkisuusrasti pois → oma resepti, ei julkaisujonoa; (3) rasti päällä C3:ssa → oma tallennus heti, versionlukittu julkaisuehdotus, ei julkista URL:ia ennen hyväksyntää; (4) ehdotus HOLDiin → oma kopio säilyy, syy ja korjauspolku näkyvät. Älä toteuta näitä automaattisesti tämän dokumentti-PR:n perusteella.
+
+**Käyttökelpoiset KPI:t:** yksityisen tallennuksen onnistumisaste, tallennukseen käytetyt vaiheet, videolinkin talteenoton onnistuminen, käsin tehtyjen korjausten minuutit / julkaistu resepti; kuinka moni ehdotus palautuu tekijälle itse korjattavaksi; turhan AI-käytön osuus; oikeat virheelliset hyväksynnät; reseptien julkaisuviive; kuvien ja käännösten oikeellisuus; asiakkaiden poistumis- ja palautetarpeet. Mittaa vasta todellisessa pilotissa, älä keksi toteutunutta säästöä etukäteen.
 
 ## 10. Päätöskohdat ja rajaukset
 
