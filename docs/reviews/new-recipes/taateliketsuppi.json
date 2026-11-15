@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "recipe_id": "taateliketsuppi",
+  "source_path": "reseptit/alkuruoat/taateliketsuppi.md",
+  "source_sha256": "6a95049e986a5cf2f5da4ebc5de483e6d76250d5f5f4aff28dbe4064cb6bec36",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.facebook.com/reel/4522751821280480",
+      "https://www.seattleymca.org/blog/recipe-homemade-ketchup"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/taateliketsuppi.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Otsikko, reseptitunniste ja aiempi luonnos tarkistettu. Päähaaran julkaisuhakemistossa ei ole tällä reseptitunnisteella toista lähdettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset tarkistettiin Reelistä ja kirjallisesta vertailusta. Punnitut määrät ovat reseptin sovitusta, ja pyöristykset tai vaihtoehdot ilmenevät ohjeesta."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ketsuppi tehdään pienenä kylmäsäilytettävänä eränä. Liotetut taatelit valutetaan ja soseutetaan tomaattipyreen sekä etikan kanssa."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kypsennys, kylmäsäilytys tai pakastaminen tarkistettiin valmistustavan mukaan. Reseptin tunnetut allergeenit on ilmoitettu ja hunajan käyttö rajattu tarvittaessa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Yhdestä ohjeesta tulee 8 annosta tai palaa. Kokonaisaika on 25 minuutin arvio ja huomioi tarvittavan kypsennyksen, jäähdytyksen tai pakastuksen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Punnitut ainesrivit sidottiin ravintolähteisiin ja annosmäärään. Julkiset ravintoarvot jätetään pois kokonaispolyolien lähdepuutteen vuoksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmisteelle ei löytynyt reseptiversioon sidottua hyväksyttyä glykeemisen indeksin lähdettä. Numeerinen glykeeminen kuorma jää pois."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [],
+    "image_path": "kuvat/alkuruoat/taateliketsuppi.webp",
+    "image_sha256": "0896388214a6200dd544e414bcd8bf933bf6206f2c94477cd333f52c8989de2f",
+    "image_review": "Tekoälyllä tehty havainnekuva vastaa ohjeen muotoa ja tarjoiluehdotusta.",
+    "physical_cook_test": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "recipe_id": "suklaa-raejuustokakku",
+  "source_path": "reseptit/jalkiruoat/suklaa-raejuustokakku.md",
+  "source_sha256": "fe771d2fe5bb9374f247871483f9b3d20cf36dea7ad4cfaea59b33e2d827e188",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.facebook.com/reel/1898431937811356",
+      "https://recipe-reels.com/recipes/1454",
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+      "https://divaliciousrecipes.com/chocolate-cottage-cheese-cheesecake/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/suklaa-raejuustokakku.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Otsikko, reseptitunniste ja aiempi luonnos tarkistettu. Päähaaran julkaisuhakemistossa ei ole tällä reseptitunnisteella toista lähdettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset tarkistettiin Reelistä ja kirjallisesta vertailusta. Punnitut määrät ovat reseptin sovitusta, ja pyöristykset tai vaihtoehdot ilmenevät ohjeesta."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeen 160 °C ja noin 16 cm:n vuoka vastaavat kirjallista vastaavaa kakkua. Keskusta kypsennetään 71 °C:seen ja jäähdytetään ennen leikkausta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kypsennys, kylmäsäilytys tai pakastaminen tarkistettiin valmistustavan mukaan. Reseptin tunnetut allergeenit on ilmoitettu ja hunajan käyttö rajattu tarvittaessa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Yhdestä ohjeesta tulee 4 annosta tai palaa. Kokonaisaika on 325 minuutin arvio ja huomioi tarvittavan kypsennyksen, jäähdytyksen tai pakastuksen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Punnitut ainesrivit sidottiin ravintolähteisiin ja annosmäärään. Julkiset ravintoarvot jätetään pois kokonaispolyolien lähdepuutteen vuoksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmisteelle ei löytynyt reseptiversioon sidottua hyväksyttyä glykeemisen indeksin lähdettä. Numeerinen glykeeminen kuorma jää pois."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ],
+    "image_path": "kuvat/jalkiruoat/suklaa-raejuustokakku.webp",
+    "image_sha256": "288dad9afa2a892ffe88a5fc3fe6fe145310f53cc8ee4d6a6055b223430e8047",
+    "image_review": "Tekoälyllä tehty havainnekuva vastaa ohjeen muotoa ja tarjoiluehdotusta.",
+    "physical_cook_test": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "recipeId": "mustikka-jogurttijaatelo",
+  "sourceHash": "05e49271273b02462e8f76d7541d357d44cf1e08a5cde3e2b166e194920a3076",
+  "calculatedAt": "2026-11-15",
+  "batchId": "batch-575",
+  "servings": 4,
+  "scope": "Ingredient accounting for the written recipe against Fineli, AFCD, USDA and CNF reference data as applicable. No prepared yield measured.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 240,
+      "unit": "g",
+      "item": "maustamatonta kreikkalaista jogurttia",
+      "record": {
+        "id": "fineli-32201",
+        "name": "JOGURTTI, TURKKILAINEN/KREIKKALAINEN, RASVAA 10 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/32201",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "jogurtti, turkkilainen/kreikkalainen, rasvaa 10 %",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 4.298,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 3.98,
+          "fat": 10.047
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "jogurtti, turkkilainen/kreikkalainen, rasvaa 10 %",
+      "matchEvidence": "Ingredient 'maustamatonta kreikkalaista jogurttia' matched to reference JOGURTTI, TURKKILAINEN/KREIKKALAINEN, RASVAA 10 %; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "kotimaisia pakastemustikoita",
+      "record": {
+        "id": "fineli-442",
+        "name": "MUSTIKKA, METSÄMUSTIKKA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/442",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "mustikka, metsämustikka",
+        "basis": "per100g-prepared",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 10.182,
+          "fibre": 3.1,
+          "polyols": null,
+          "protein": 0.821,
+          "fat": 1.059
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "mustikka, metsämustikka",
+      "matchEvidence": "Ingredient 'kotimaisia pakastemustikoita' matched to reference MUSTIKKA, METSÄMUSTIKKA; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 42,
+      "unit": "g",
+      "item": "juoksevaa hunajaa",
+      "record": {
+        "id": "fineli-4",
+        "name": "HUNAJA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/4",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "hunaja",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 80.8,
+          "fibre": 0.0,
+          "polyols": null,
+          "protein": 0.5,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "hunaja",
+      "matchEvidence": "Ingredient 'juoksevaa hunajaa' matched to reference HUNAJA; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 4,
+      "unit": "g",
+      "item": "vaniljauutetta",
+      "record": {
+        "id": "usda-173471",
+        "name": "Vanilla extract",
+        "sourceUrl": "https://fdc.nal.usda.gov/food-details/173471/nutrients",
+        "retrievedAt": "2026-11-15",
+        "licence": "USDA FoodData Central SR Legacy, public domain",
+        "state": "vanilla extract as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "US_TOTAL_INCLUDING_FIBRE",
+        "per100g": {
+          "carbohydrate": 12.65,
+          "fibre": 0,
+          "polyols": null,
+          "protein": 0.06,
+          "fat": 0.06
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "vanilla extract as sold",
+      "matchEvidence": "Ingredient 'vaniljauutetta' matched to reference Vanilla extract; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "At least one matched source lacks an aggregate polyol value. The public macro fields remain empty."
+}

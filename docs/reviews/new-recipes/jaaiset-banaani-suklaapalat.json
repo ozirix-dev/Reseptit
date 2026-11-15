@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "recipe_id": "jaaiset-banaani-suklaapalat",
+  "source_path": "reseptit/valipalat/jaaiset-banaani-suklaapalat.md",
+  "source_sha256": "bbef0888cb9a37051cd138faab6b9c97ea89ddcf995a7321b197f5e01b1f72a8",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.facebook.com/reel/1473562588250274",
+      "https://graciouslynourished.com/chocolate-peanut-butter-banana-bark-viral-recipe-made-easy/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/jaaiset-banaani-suklaapalat.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Otsikko, reseptitunniste ja aiempi luonnos tarkistettu. Päähaaran julkaisuhakemistossa ei ole tällä reseptitunnisteella toista lähdettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset tarkistettiin Reelistä ja kirjallisesta vertailusta. Punnitut määrät ovat reseptin sovitusta, ja pyöristykset tai vaihtoehdot ilmenevät ohjeesta."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Banaanipohja ja kerroksittainen pakastus noudattavat kirjallista vastinetta. Pähkinät punnitaan ennen kotona paahtamista."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kypsennys, kylmäsäilytys tai pakastaminen tarkistettiin valmistustavan mukaan. Reseptin tunnetut allergeenit on ilmoitettu ja hunajan käyttö rajattu tarvittaessa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Yhdestä ohjeesta tulee 9 annosta tai palaa. Kokonaisaika on 340 minuutin arvio ja huomioi tarvittavan kypsennyksen, jäähdytyksen tai pakastuksen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Finelin aineslähteet, punnitut määrät ja annosmäärä sidottu laskelmaan. Verrattain hyvä lähdekattavuus tukee annoskohtaisia arvioita."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmisteelle ei löytynyt reseptiversioon sidottua hyväksyttyä glykeemisen indeksin lähdettä. Numeerinen glykeeminen kuorma jää pois."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [],
+    "image_path": "kuvat/valipalat/jaaiset-banaani-suklaapalat.webp",
+    "image_sha256": "b3d2ba75d825a4791c8743aeabea89bfc695dfa79ff0379da9ccfa89071d1476",
+    "image_review": "Tekoälyllä tehty havainnekuva vastaa ohjeen muotoa ja tarjoiluehdotusta.",
+    "physical_cook_test": false
+  }
+}

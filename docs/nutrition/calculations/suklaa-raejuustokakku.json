@@ -1,0 +1,163 @@
+{
+  "recipeId": "suklaa-raejuustokakku",
+  "sourceHash": "96134c88faa2cce21da1db452183b8c54d481600da04c95b6eaaa6b9c528ee70",
+  "calculatedAt": "2026-11-15",
+  "batchId": "batch-575",
+  "servings": 4,
+  "scope": "Ingredient accounting for the written recipe against Fineli, AFCD, USDA and CNF reference data as applicable. No prepared yield measured.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 250,
+      "unit": "g",
+      "item": "raejuustoa",
+      "record": {
+        "id": "fineli-649",
+        "name": "RAEJUUSTO, RASVAA 2-5 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/649",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "raejuusto, rasvaa 2-5 %",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 2.5,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 15.81,
+          "fat": 2.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "raejuusto, rasvaa 2-5 %",
+      "matchEvidence": "Ingredient 'raejuustoa' matched to reference RAEJUUSTO, RASVAA 2-5 %; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "maustamatonta kreikkalaista jogurttia",
+      "record": {
+        "id": "fineli-32201",
+        "name": "JOGURTTI, TURKKILAINEN/KREIKKALAINEN, RASVAA 10 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/32201",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "jogurtti, turkkilainen/kreikkalainen, rasvaa 10 %",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 4.298,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 3.98,
+          "fat": 10.047
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "jogurtti, turkkilainen/kreikkalainen, rasvaa 10 %",
+      "matchEvidence": "Ingredient 'maustamatonta kreikkalaista jogurttia' matched to reference JOGURTTI, TURKKILAINEN/KREIKKALAINEN, RASVAA 10 %; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "kananmunaa",
+      "record": {
+        "id": "fineli-858",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "kananmuna, kuoreton",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 12.61,
+          "fat": 9.24
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "kananmuna, kuoreton",
+      "matchEvidence": "Ingredient 'kananmunaa' matched to reference KANANMUNA, KUORETON; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 16,
+      "unit": "g",
+      "item": "makeuttamatonta kaakaojauhetta",
+      "record": {
+        "id": "fineli-20",
+        "name": "KAAKAOJAUHE, EI LISÄTTYÄ SOKERIA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/20",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "kaakaojauhe, ei lisättyä sokeria",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 11.0,
+          "fibre": 30.4,
+          "polyols": 0.0,
+          "protein": 18.5,
+          "fat": 21.7
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "kaakaojauhe, ei lisättyä sokeria",
+      "matchEvidence": "Ingredient 'makeuttamatonta kaakaojauhetta' matched to reference KAAKAOJAUHE, EI LISÄTTYÄ SOKERIA; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 63,
+      "unit": "g",
+      "item": "juoksevaa hunajaa",
+      "record": {
+        "id": "fineli-4",
+        "name": "HUNAJA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/4",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "hunaja",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 80.8,
+          "fibre": 0.0,
+          "polyols": null,
+          "protein": 0.5,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "hunaja",
+      "matchEvidence": "Ingredient 'juoksevaa hunajaa' matched to reference HUNAJA; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "At least one matched source lacks an aggregate polyol value. The public macro fields remain empty."
+}
