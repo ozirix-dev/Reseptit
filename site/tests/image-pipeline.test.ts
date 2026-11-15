@@ -181,7 +181,16 @@ test("responsive variants are deterministic, deduplicated, bounded, reusable and
       assert.equal(hash(buffer), variant.sha256);
     }
     assert.deepEqual(await readFile(path.join(output, "wide.webp")), bytes);
+    const withHomepage = await rebuildPublishedImages(source, publicDir, selected, undefined, new Set(["wide.webp", "small.webp"]));
+    const homepage = withHomepage.images.find((image) => image.path === "wide.webp")!;
+    assert.deepEqual(homepage.variants.map((variant) => variant.width), [480, 720, 960, 1440]);
+    assert.deepEqual(homepage.variants.filter((variant) => variant.width !== 720), wide.variants);
+    assert.deepEqual(withHomepage.images.find((image) => image.path === "same.webp")!.variants, wide.variants);
+    assert.equal(withHomepage.images.find((image) => image.path === "small.webp")!.variants.length, 0);
+    const mobileVariant = await sharp(await readFile(path.join(output, homepage.variants[1].path))).metadata();
+    assert.equal(mobileVariant.width, 720);
     assert.deepEqual(await rebuildPublishedImages(source, publicDir, selected.reverse()), first);
+    await assert.rejects(readFile(path.join(output, homepage.variants[1].path)));
     // A damaged cached variant is repaired, never copied blindly.
     await writeFile(path.join(output, wide.variants[0].path), "corrupt");
     assert.deepEqual(await rebuildPublishedImages(source, publicDir, selected), first);

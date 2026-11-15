@@ -34,7 +34,13 @@ function assertInside(parent: string, child: string, label: string): void {
   if (child !== parent && !child.startsWith(`${parent}${path.sep}`)) throw new Error(`${label} resolves outside its allowed directory.`);
 }
 
-export async function rebuildPublishedImages(sourceDir: string, publicDir: string, relativePaths: string[], workers = imageWorkers): Promise<ImageManifest> {
+export async function rebuildPublishedImages(
+  sourceDir: string,
+  publicDir: string,
+  relativePaths: string[],
+  workers = imageWorkers,
+  homepageImagePaths: ReadonlySet<string> = new Set(),
+): Promise<ImageManifest> {
   if (!Number.isInteger(workers) || workers < 1 || workers > 4) throw new Error("Image workers must be between 1 and 4.");
   const sourceRoot = path.resolve(sourceDir);
   const publicRoot = path.resolve(publicDir);
@@ -78,7 +84,7 @@ export async function rebuildPublishedImages(sourceDir: string, publicDir: strin
   try {
     const stageReal = await realpath(stageDir);
     assertInside(publicRootReal, stageReal, "Image staging directory");
-    const generated = new Map<string, Promise<ImageVariant[]>>();
+    const generated = new Map<string, Promise<ImageVariant>>();
     const images = await boundedMap(uniquePaths, async (relativePath): Promise<PublishedImage> => {
       if (!webpPathPattern.test(relativePath) || relativePath.startsWith("/") || relativePath.includes("\\") || relativePath.split("/").includes("..")) {
         throw new Error(`Invalid published WebP path: ${relativePath}`);
@@ -102,10 +108,13 @@ export async function rebuildPublishedImages(sourceDir: string, publicDir: strin
       const sha256 = digest(bytes);
       await writeFile(targetPath, bytes);
       const key = digest(sha256 + JSON.stringify(imageSettings)).slice(0, 24);
-      if (!generated.has(key)) generated.set(key, (async () => {
-        const variants: ImageVariant[] = [];
-        for (const targetWidth of imageSettings.widths.filter((candidate) => candidate < width)) {
-          const variantPath = `_variants/${key}-${targetWidth}w.webp`;
+      const widths = homepageImagePaths.has(relativePath)
+        ? [...imageSettings.widths, 720].sort((a, b) => a - b)
+        : imageSettings.widths;
+      const variants: ImageVariant[] = [];
+      for (const targetWidth of widths.filter((candidate) => candidate < width)) {
+        const variantPath = `_variants/${key}-${targetWidth}w.webp`;
+        const variant = generated.get(variantPath) ?? (async () => {
           const prior = cached.get(variantPath);
           let data: Buffer | undefined;
           if (prior) {
@@ -125,11 +134,12 @@ export async function rebuildPublishedImages(sourceDir: string, publicDir: strin
           const destination = path.join(stageDir, variantPath);
           await mkdir(path.dirname(destination), { recursive: true });
           await writeFile(destination, data);
-          variants.push({ path: variantPath, width: info.width, height: info.height, bytes: data.length, sha256: digest(data) });
-        }
-        return variants;
-      })());
-      return { path: relativePath, width, height, bytes: bytes.length, sha256, variants: await generated.get(key)! };
+          return { path: variantPath, width: info.width, height: info.height, bytes: data.length, sha256: digest(data) };
+        })();
+        generated.set(variantPath, variant);
+        variants.push(await variant);
+      }
+      return { path: relativePath, width, height, bytes: bytes.length, sha256, variants };
     }, workers);
     const manifest: ImageManifest = { settings: imageSettings, images };
     await mkdir(path.join(stageDir, "_variants"), { recursive: true });
