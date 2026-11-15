@@ -38,7 +38,7 @@ test("one recipe appears exactly once under each applicable category and combine
     assert.equal(recipeMatchesCategory(multi, category), true);
   }
   assert.equal(recipeMatchesCategory(multi, "paaruoka"), false);
-  assert.deepEqual(filterRecipes([multi, other], { ...emptyRecipeFilters, category: "valipala", diet: "keto" }, "fi).map(item => item.recipeId), [multi.recipeId]);
+  assert.deepEqual(filterRecipes([multi, other], { ...emptyRecipeFilters, category: "valipala", diet: "keto" }, "fi").map(item => item.recipeId), [multi.recipeId]);
   const filters = parseRecipeFilters("?category=valipala&diet=keto", ["all", "valipala"]);
   assert.equal(recipeFiltersToSearch(filters), "?category=valipala&diet=keto");
   assert.deepEqual(filterRecipes([multi], filters, "fi").map(item => item.recipeId), [multi.recipeId]);
