@@ -3,8 +3,9 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { isDeepStrictEqual } from "node:util";
 import { localeIndexes, recipeLibraryRoutes } from "../src/content/route-data";
-import { parseRecipeLibraryPagePath } from "../src/features/recipes/recipe-pagination";
-import { libraryCopy, libraryTitle } from "../src/features/recipes/home-preview";
+import { recipePageTitle, siteTitle } from "../src/content/site-metadata";
+import { paginateRecipeLibrary, parseRecipeLibraryPagePath } from "../src/features/recipes/recipe-pagination";
+import { libraryCopy, librarySeoDescription, libraryTitle } from "../src/features/recipes/home-preview";
 import { resolveSiteTarget } from "../src/content/site-target";
 import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "../src/features/blog/blog-data";
 import { glycemicLoadMeta, glycemicLoadPath, recipeUi } from "../src/features/recipes/recipe-i18n";
@@ -44,21 +45,21 @@ export function expectedPages(recipes: RecipeEntry[]): ExpectedPage[] {
   const privacyPages = (Object.keys(privacyPaths) as RecipeLocale[]).map(locale => ({ locale, routePath: privacyPaths[locale] }));
   return [
     ...privacyPages.map(({ locale, routePath }) => ({
-      route: routePath, locale, h1: privacyCopy[locale].title, title: `${privacyCopy[locale].title} | Recipavo`,
+      route: routePath, locale, h1: privacyCopy[locale].title, title: siteTitle(privacyCopy[locale].title),
       description: privacyCopy[locale].description, alternates: alternateMap(privacyPages),
     })),
-    { route: blogRoot, locale: "fi" as RecipeLocale, h1: "Ruokaopas", title: "Ruokaopas | Reseptit", description: "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa.", alternates: alternateMap([{locale:"fi",routePath:blogRoot}]), blog: true },
-    ...articles.map(post => ({ route: articlePath(post), locale: "fi" as RecipeLocale, h1: post.title, title: `${post.title} | Ruokaopas`, description: post.description, alternates: alternateMap([{locale:"fi",routePath:articlePath(post)}]), blog: true })),
-    ...locales.map((locale) => ({ route: localeIndexes[locale], locale, h1: names[locale], title: `${names[locale]} | Ozirix`, description: recipeUi[locale].intro, alternates: alternateMap(indexes) })),
+    { route: blogRoot, locale: "fi" as RecipeLocale, h1: "Ruokaopas", title: siteTitle("Ruokaopas"), description: "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa.", alternates: alternateMap([{locale:"fi",routePath:blogRoot}]), blog: true },
+    ...articles.map(post => ({ route: articlePath(post), locale: "fi" as RecipeLocale, h1: post.title, title: siteTitle(post.title), description: post.description, alternates: alternateMap([{locale:"fi",routePath:articlePath(post)}]), blog: true })),
+    ...locales.map((locale) => ({ route: localeIndexes[locale], locale, h1: names[locale], title: siteTitle(names[locale]), description: recipeUi[locale].intro, alternates: alternateMap(indexes) })),
     ...recipeLibraryRoutes(recipes).map(route => {
       const { locale, page } = parseRecipeLibraryPagePath(route)!;
       return { route, locale, h1: libraryCopy[locale].title, title: libraryTitle(locale, page),
-        description: libraryCopy[locale].description, alternates: alternateMap([{ locale, routePath: route }]) };
+        description: librarySeoDescription(locale, page, paginateRecipeLibrary(recipes, locale, page).items), alternates: alternateMap([{ locale, routePath: route }]) };
     }),
     ...glycemicPages.map(({ locale, routePath }) => ({
       route: routePath, locale, ...glycemicLoadMeta[locale], alternates: alternateMap(glycemicPages),
     })),
-    ...recipes.map((recipe) => ({ route: recipe.routePath, locale: recipe.locale, h1: recipe.title, title: `${recipe.title} | ${names[recipe.locale]}`, description: recipe.description || recipeUi[recipe.locale].intro, alternates: alternateMap(recipes.filter((r) => r.recipeId === recipe.recipeId)), recipe })),
+    ...recipes.map((recipe) => ({ route: recipe.routePath, locale: recipe.locale, h1: recipe.title, title: recipePageTitle(recipe), description: recipe.seoDescription || recipe.description || recipeUi[recipe.locale].intro, alternates: alternateMap(recipes.filter((r) => r.recipeId === recipe.recipeId)), recipe })),
   ];
 }
 

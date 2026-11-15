@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { auditSeo, expectedPages, inspectPage, inspectDiscovery, blockedByRobots, inspectNotFound, siteBase } from "../scripts/seo-audit";
+import { recipeSeoDescriptions } from "../scripts/recipe-seo-descriptions";
 import { siteContent } from "../src/generated/content.generated";
 import { contentManifest } from "../src/generated/routes.generated";
 import { recipeLibraryPagePath } from "../src/features/recipes/recipe-pagination";
@@ -26,6 +27,25 @@ test("all generated routes, images, sitemap and metadata match published source"
   const report = await auditSeo(dist, siteContent.recipes, Object.keys(contentManifest));
   assert.deepEqual(report.findings, []);
   assert.equal(report.routes, Object.keys(contentManifest).length);
+});
+test("all indexable content templates use distinct descriptions and Recipavo titles", () => {
+  const pages = expectedPages(siteContent.recipes);
+  const descriptions = new Map<string, string>();
+  const titles = new Map<string, string>();
+  for (const { route, title, description } of pages) {
+    assert.match(title, / \| Recipavo$/, route);
+    assert.equal(titles.get(title), undefined, `Duplicate title on ${route} and ${titles.get(title)}`);
+    titles.set(title, route);
+    assert.ok(description.trim(), route);
+    assert.equal(descriptions.get(description), undefined, `Duplicate description on ${route} and ${descriptions.get(description)}`);
+    descriptions.set(description, route);
+  }
+  for (const [slug, localized] of Object.entries(recipeSeoDescriptions)) {
+    for (const [locale, description] of Object.entries(localized)) {
+      const page = pages.find(item => item.recipe?.slug === slug && item.locale === locale);
+      assert.equal(page?.description, description, `${locale}:${slug}`);
+    }
+  }
 });
 test("inventory is dynamic and duplicate URLs are rejected", async () => {
   const recipe = siteContent.recipes[0];

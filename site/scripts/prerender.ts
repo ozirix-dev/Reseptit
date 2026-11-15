@@ -1,8 +1,9 @@
+import { recipePageTitle, siteName, siteTitle, websiteJsonLd } from "../src/content/site-metadata";
 import { siteTarget } from "../src/content/site-target";
 import { recipeCardAvifMedia, recipeCardSizes, recipeHeroAvifMedia } from "../src/features/recipes/image-layout";
 import { contentForRoute, localeIndexes, serializeRouteContent, type RouteContent } from "../src/content/route-data";
 import { contentManifest } from "../src/generated/routes.generated";
-import { libraryCopy, libraryTitle } from "../src/features/recipes/home-preview";
+import { librarySeoDescription, libraryTitle } from "../src/features/recipes/home-preview";
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import React from "react";
@@ -48,8 +49,18 @@ function routeMetadata(route: string, content: RouteContent) {
   const locale = privacyLocale ?? recipe?.locale ?? pagination?.locale ?? methodLocale ?? indexLocale ?? "fi";
   const preview = !siteTarget.production && process.env.VITE_RECIPAVO_HERO_PREVIEW === "true";
   const branded = siteTarget.production || preview;
-  const title = pagination ? libraryTitle(locale, pagination.page) : privacy ? `${privacy.title} | Recipavo` : blogPost ? `${blogPost.title} | Ruokaopas` : blogIndex ? "Ruokaopas | Reseptit" : branded && indexLocale ? `${recipavoHeroCopy[locale].title} | Recipavo` : pilotPage ? glycemicLoadMeta[locale].title : recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
-  const description = (pagination ? libraryCopy[locale].description : undefined) ?? privacy?.description ?? blogPost?.description ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined) ?? (branded && indexLocale ? recipavoHeroCopy[locale].intro : pilotPage ? glycemicLoadMeta[locale].description : recipe?.description || recipeUi[locale].intro);
+  const title = pagination ? libraryTitle(locale, pagination.page)
+    : pilotPage ? glycemicLoadMeta[locale].title
+    : recipe ? recipePageTitle(recipe)
+    : siteTitle(privacy?.title ?? blogPost?.title ?? (blogIndex ? "Ruokaopas" : undefined)
+      ?? (branded && indexLocale ? recipavoHeroCopy[locale].tagline : undefined)
+      ?? indexNames[locale]);
+  const description = (pagination ? librarySeoDescription(locale, pagination.page, content.recipes) : undefined)
+    ?? privacy?.description ?? blogPost?.description
+    ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined)
+    ?? (branded && indexLocale ? recipavoHeroCopy[locale].intro : undefined)
+    ?? (pilotPage ? glycemicLoadMeta[locale].description : undefined)
+    ?? (recipe?.seoDescription || recipe?.description || recipeUi[locale].intro);
   const url = `${baseUrl}${route}`;
   const translations = recipe ? siteContent.recipes.filter((item) => item.recipeId === recipe.recipeId) : [];
   const publishedLocales = pagination ? [{ locale, path: route }] : privacy ? (Object.keys(privacyPaths) as RecipeLocale[]).map(locale => ({ locale, path: privacyPaths[locale] })) : isBlog ? [{locale: "fi" as RecipeLocale, path: route}] : pilotPage ? (Object.keys(methodRoutes) as RecipeLocale[]).map((itemLocale) => ({ locale: itemLocale, path: methodRoutes[itemLocale] })) : recipe
@@ -90,6 +101,7 @@ function routeMetadata(route: string, content: RouteContent) {
       `<link rel="canonical" href="${escapeHtml(url)}" />`,
       `<meta property="og:type" content="${recipe || blogPost ? "article" : "website"}" />`,
       `<meta property="og:title" content="${escapeHtml(title)}" />`,
+      `<meta property="og:site_name" content="${siteName}" />`,
       `<meta property="og:description" content="${escapeHtml(description)}" />`,
       `<meta property="og:url" content="${escapeHtml(url)}" />`,
       `<meta property="og:locale" content="${openGraphLocale[locale]}" />`,
@@ -97,6 +109,9 @@ function routeMetadata(route: string, content: RouteContent) {
       `<meta name="twitter:title" content="${escapeHtml(title)}" />`,
       `<meta name="twitter:description" content="${escapeHtml(description)}" />`,
       ...imageTags, ...(blogPost ? [`<meta property="og:image" content="${baseUrl}${blogPost.image}" />`, `<meta name="twitter:image" content="${baseUrl}${blogPost.image}" />`] : []), ...alternates, ...desktopImages, jsonLd,
+      ...(siteTarget.production && route === "/"
+        ? [`<script id="website-jsonld" type="application/ld+json">${JSON.stringify(websiteJsonLd(url))}</script>`]
+        : []),
     ].filter(Boolean).join("\n    "),
   };
 }
@@ -185,7 +200,7 @@ try {
     const body = renderToString(React.createElement(RouterProvider, { router }));
     const title = recipeUi[locale].notFound;
     const head = [
-      "<title>" + escapeHtml(title + " | " + indexNames[locale]) + "</title>",
+      "<title>" + escapeHtml(siteTitle(title)) + "</title>",
       siteTarget.noIndex ? '<meta name="robots" content="noindex, nofollow" />' : '<meta name="robots" content="noindex,follow" />',
       '<meta name="description" content="' + escapeHtml(title) + '" />',
     ].join("\n    ");

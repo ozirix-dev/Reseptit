@@ -1,3 +1,4 @@
+import { recipeSeoDescriptions } from "./recipe-seo-descriptions";
 import { siteTarget } from "../src/content/site-target";
 import { recipeDifficultyLabel } from "../src/features/recipes/recipe-i18n";
 import { createHash } from "node:crypto";
@@ -223,10 +224,12 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     ].filter(Boolean).join("\n\n");
     const dietTags = await reviewedDietTagsForSource(data.recipe_id, data.language, filePath, finnishSources.get(data.recipe_id));
     const instructionSteps = [...publicInstructions.matchAll(/^\s*\d+[.)]\s+(.+)$/gm)].map((match) => match[1].trim());
+    const seoDescription = visibleHold ? undefined : recipeSeoDescriptions[data.url_slug]?.[data.language];
     recipes.push({
       kind: "recipe", recipeId: data.recipe_id, slug: data.url_slug, locale: data.language,
       title: data.title, category: data.category, ...(data.additional_categories?.length ? { additionalCategories: data.additional_categories } : {}), dietClass: data.diet_class ?? null, ...(dietTags.length ? { dietTags } : {}), ...(data.gluten_free === true ? { glutenFree: true } : {}), routePath: routeForRecipe(data.language, data.url_slug),
       description: visibleHold?.description ?? recipeDescription(parsed.content, descriptionSection, data.language, data.ingredients), ingredients: data.ingredients,
+      ...(seoDescription ? { seoDescription } : {}),
       instructionsHtml: await renderSafeMarkdown(publicInstructions),
       instructionStepsHtml: await renderInstructionSteps(publicInstructions),
       instructionsText: instructionSteps.length ? instructionSteps : publicInstructions.split(/\n\s*\n/).filter(Boolean),

@@ -58,10 +58,10 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     page.on("console", (message) => { if (message.type() === "error") errors.push(message.text()); });
 
     const methodPages = [
-      { path: "/glykeeminen-kuorma/", locale: "fi", ogLocale: "fi_FI", title: "Reseptien glykeeminen kuorma (GK) | Reseptit", description: "Löydä reseptien glykeemisen kuorman (GK) arviot, luotettavuustiedot ja tarvittaessa tarkat laskentalähteet." },
-      { path: "/en/glycemic-load/", locale: "en", ogLocale: "en_GB", title: "Glycemic load (GL) of recipes | Recipes", description: "Explore calculated glycemic load estimates for recipes, their reliability and detailed sources." },
-      { path: "/sv/glykemisk-belastning/", locale: "sv", ogLocale: "sv_SE", title: "Receptens glykemiska belastning (GL) | Recept", description: "Hitta uppskattningar av receptens glykemiska belastning, säkerhet och detaljerade källor." },
-      { path: "/th/glycemic-load/", locale: "th", ogLocale: "th_TH", title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | สูตรอาหาร", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ" },
+      { path: "/glykeeminen-kuorma/", locale: "fi", ogLocale: "fi_FI", title: "Reseptien glykeeminen kuorma (GK) | Recipavo", description: "Löydä reseptien glykeemisen kuorman (GK) arviot, luotettavuustiedot ja tarvittaessa tarkat laskentalähteet." },
+      { path: "/en/glycemic-load/", locale: "en", ogLocale: "en_GB", title: "Glycemic load (GL) of recipes | Recipavo", description: "Explore calculated glycemic load estimates for recipes, their reliability and detailed sources." },
+      { path: "/sv/glykemisk-belastning/", locale: "sv", ogLocale: "sv_SE", title: "Receptens glykemiska belastning (GL) | Recipavo", description: "Hitta uppskattningar av receptens glykemiska belastning, säkerhet och detaljerade källor." },
+      { path: "/th/glycemic-load/", locale: "th", ogLocale: "th_TH", title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | Recipavo", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ" },
     ] as const;
     for (const [index, methodPage] of methodPages.entries()) {
       const canonical = `https://ozirix-dev.github.io${base.replace("http://127.0.0.1:4176", "")}${methodPage.path}`;
@@ -326,9 +326,9 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.equal(await page.locator('link[rel="alternate"][hreflang="x-default"]').count(), 0);
 
     for (const missingPage of [
-      { path: "/Reseptit/en/recipes/no-such-recipe/", locale: "en", heading: "Page not found", title: "Page not found | Recipes" },
-      { path: "/Reseptit/sv/recept/recept-som-inte-finns/", locale: "sv", heading: "Sidan kunde inte hittas", title: "Sidan kunde inte hittas | Recept" },
-      { path: "/Reseptit/th/recipes/no-such-recipe/", locale: "th", heading: "ไม่พบหน้านี้", title: "ไม่พบหน้านี้ | สูตรอาหาร" },
+      { path: "/Reseptit/en/recipes/no-such-recipe/", locale: "en", heading: "Page not found", title: "Page not found | Recipavo" },
+      { path: "/Reseptit/sv/recept/recept-som-inte-finns/", locale: "sv", heading: "Sidan kunde inte hittas", title: "Sidan kunde inte hittas | Recipavo" },
+      { path: "/Reseptit/th/recipes/no-such-recipe/", locale: "th", heading: "ไม่พบหน้านี้", title: "ไม่พบหน้านี้ | Recipavo" },
     ]) {
       await page.evaluate((path) => {
         history.pushState(null, "", path);
