@@ -108,8 +108,9 @@ Automaattinen läpäisy ei korvaa sisällöllistä kielikatselmointia.
 ## Kehitys ja tarkistukset
 
 Valitse ensin muutoksen riskin mukaiset kohdennetut tarkistukset.
-Käytä CI:n tavoin Node.js 22:ta. Kloonaa koko Git-historia, sillä osa
-resepti- ja käännöstesteistä lukee historiallisia Git-objekteja.
+Käytä CI:n tavoin Node.js 22:ta. Tee tavallinen klooni ilman
+`--depth`- ja `--single-branch`-rajauksia, sillä osa resepti- ja käännöstesteistä
+lukee myös historiallisia Git-objekteja muista haaroista.
 Aja komennot `site/`-kansiossa. Build generoi testien tarvitseman datan
 ja tarkistaa etusivun HTML:n ja JavaScriptin kokorajat.
 

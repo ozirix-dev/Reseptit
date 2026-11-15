@@ -5,7 +5,7 @@ import test from "node:test";
 import { launchBrowser } from "./launch-browser";
 import { recipeUi } from "../src/features/recipes/recipe-i18n";
 import { siteContent } from "../src/generated/content.generated";
-import { recipeLibraryPagePath, recipeLibraryPageSize } from "../src/features/recipes/recipe-pagination";
+import { paginateRecipeLibrary, recipeLibraryPagePath, recipeLibraryPageSize } from "../src/features/recipes/recipe-pagination";
 
 const base = "http://127.0.0.1:4192/Reseptit";
 const routes = ["/", "/en/recipes/", "/sv/recept/", "/th/recipes/"];
@@ -101,19 +101,25 @@ test("essential UI smoke: locales, search, a recipe, blog and no-JS navigation",
       await page.locator("#recipe-search").fill(outsideHome.title);
       await page.locator('.recipe-card__link[href="/Reseptit' + outsideHome.routePath + '"]').waitFor();
       await page.goto(base + route);
+      const firstRecipeLink = (number: number) => {
+        const first = paginateRecipeLibrary(siteContent.recipes, locale, number).items[0];
+        return page.locator('.recipe-card__link[href="/Reseptit' + first.routePath + '"]');
+      };
       await page.locator(".recipe-library-link a").click();
-      const first = await page.locator(".recipe-card__link").first().getAttribute("href");
-      assert.equal(new URL(page.url()).pathname, "/Reseptit" + recipeLibraryPagePath(locale));
+      await page.waitForURL(base + recipeLibraryPagePath(locale));
+      await firstRecipeLink(1).waitFor();
       await page.locator('.recipe-pagination a[rel="next"]').click();
-      assert.equal(new URL(page.url()).pathname, "/Reseptit" + recipeLibraryPagePath(locale, 2));
-      assert.notEqual(await page.locator(".recipe-card__link").first().getAttribute("href"), first);
+      await page.waitForURL(base + recipeLibraryPagePath(locale, 2));
+      await firstRecipeLink(2).waitFor();
       await page.goBack();
-      await page.locator('.recipe-card__link[href="' + first + '"]').waitFor();
+      await page.waitForURL(base + recipeLibraryPagePath(locale));
+      await firstRecipeLink(1).waitFor();
     }
 
     await page.goto(base + "/?time=90");
     await page.locator('.recipe-pagination a[rel="next"]').click();
     await page.waitForURL("**/?time=90&page=2");
+    await page.locator(".recipe-pagination").getByText(/^Sivu 2 /).waitFor();
     const resultPage = await page.locator(".recipe-card__link").first().getAttribute("href");
     await page.reload();
     await page.locator('.recipe-card__link[href="' + resultPage + '"]').waitFor();
