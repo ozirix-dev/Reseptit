@@ -5,7 +5,8 @@ import {GkOnlyVariantPanel,gkScopeUi} from './GkOnlyVariantPanel';
 import {scopedPolyolDisclosure} from './scoped-polyol-disclosure';
 import {recoveryDisclosure} from './recovery-disclosure';
 import {formatGlycemicLoadNumber} from "./gk80-format";
-import { recipeHeroSizes } from "./image-layout";
+import { recipeHeroAvifMedia, recipeHeroSizes } from "./image-layout";
+import type { RecipeImage } from "@/types/content";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useContent } from "@/lib/content";
@@ -17,6 +18,24 @@ import { sourceReviewNotice } from "./source-review-notices";
 import { withholdF25Nutrition, f25ExplicitUndefinedGkLabel } from "./f25-nutrition-withhold";
 
 import { track } from "@/features/privacy/analytics";
+
+function RecipeHeroImage({ image }: { image: RecipeImage }) {
+  const [avifFailed, setAvifFailed] = useState(false);
+  const avifSrc = avifFailed ? undefined : image.heroAvifSrc;
+  const fallback = <img className="recipe-image" src={image.src} srcSet={image.srcSet ?? undefined}
+    sizes={recipeHeroSizes} alt={image.alt} width={image.width} height={image.height}
+    fetchPriority="high" decoding="async"
+    ref={avifSrc ? element => {
+      if (element?.complete && element.naturalWidth === 0 && element.currentSrc === avifSrc) setAvifFailed(true);
+    } : undefined}
+    onError={avifSrc ? ({ currentTarget }) => {
+      if (currentTarget.currentSrc === avifSrc) setAvifFailed(true);
+    } : undefined} />;
+  return avifSrc ? <picture>
+    <source type="image/avif" media={recipeHeroAvifMedia} srcSet={avifSrc} />
+    {fallback}
+  </picture> : fallback;
+}
 
 export function RecipePage() {
   const { pathname } = useLocation();
@@ -74,7 +93,7 @@ export function RecipePage() {
       {translations.length > 1 ? <nav className="recipe-languages" aria-label={labels.languages}>{translations.map((entry) => <Link key={entry.locale} hrefLang={entry.locale} aria-current={entry.locale === recipe.locale ? "page" : undefined} to={entry.routePath}>{recipeLocaleName(entry.locale)}</Link>)}</nav> : null}
     </header>
     {reviewNotice ? <aside className="recipe-panel" role="note" data-f25-source-hold={recipe.recipeId}><h2>{reviewNotice.heading}</h2><p>{reviewNotice.details}</p><p>{reviewNotice.allergens}</p></aside> : null}
-    {recipe.image ? <img className="recipe-image" src={recipe.image.src} srcSet={recipe.image.srcSet ?? undefined} sizes={recipeHeroSizes} alt={recipe.image.alt} width={recipe.image.width} height={recipe.image.height} fetchPriority="high" decoding="async" /> : null}
+    {recipe.image ? <RecipeHeroImage key={recipe.image.src} image={recipe.image} /> : null}
     <p className="print-servings">{tools.servings}: {servings}</p>
     <div className="recipe-layout">
       <section className="recipe-panel" aria-labelledby="recipe-ingredients-title"><div className="recipe-panel__heading"><h2 id="recipe-ingredients-title">{labels.ingredients}</h2><div className="serving-control"><span>{labels.servings}</span>{hydrated ? <button type="button" aria-label={labels.decrease} disabled={servings <= 1} onClick={() => { track("Adjust Servings"); setServings((value) => nextServingCount(value, -1)); }}>−</button> : null}<output aria-live="polite">{servings}</output>{hydrated ? <button type="button" aria-label={labels.increase} onClick={() => { track("Adjust Servings"); setServings((value) => nextServingCount(value, 1)); }}>+</button> : null}</div></div>

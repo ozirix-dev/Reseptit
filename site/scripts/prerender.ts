@@ -113,13 +113,13 @@ try {
   if (!shell.includes('<div id="root"></div>')) {
     throw new Error("Prerender requires a fresh Vite build. Run npm run build.");
   }
-  // The localized home pages use the same stylesheet as the rest of the site.
-  // Inline the built CSS here so the first paint needs no separate CSS request.
+  // Inline the built CSS on home, library and optimized recipe pages so the
+  // first paint can use the existing styles before any stylesheet request.
   const stylesheet = /<link rel="stylesheet"[^>]* href="[^"]*\/(assets\/[\w.-]+\.css)"[^>]*>/.exec(shell);
   if (!stylesheet) throw new Error("Missing Vite stylesheet in the HTML shell.");
   const css = await readFile(path.join(distDir, stylesheet[1]), "utf8");
   if (/<\/style/i.test(css)) throw new Error("Vite stylesheet cannot be safely inlined.");
-  const homeShell = shell.replace(stylesheet[0], () => `<style>${css}</style>`);
+  const inlineStyleShell = shell.replace(stylesheet[0], () => `<style>${css}</style>`);
   const homeRoutes = new Set(Object.values(localeIndexes));
   const routes = Object.keys(contentManifest);
   for (const route of routes) {
@@ -129,8 +129,9 @@ try {
     const router = await createStaticRouter(route, initial);
     const body = renderToString(React.createElement(RouterProvider, { router }));
     const data = `<script id="page-content" type="application/json">${serializeRouteContent(initial)}</script>`;
-    const html = homeRoutes.has(route)
-      ? replaceDocument(homeShell, metadata.head, metadata.lang, body)
+    const inlineStyle = homeRoutes.has(route) || Boolean(initial.pagination || initial.recipe?.image?.heroAvifSrc);
+    const html = inlineStyle
+      ? replaceDocument(inlineStyleShell, metadata.head, metadata.lang, body)
         .replace("</body>", () => `    ${data}\n  </body>`)
       : replaceDocument(shell, `${metadata.head}\n${data}`, metadata.lang, body);
     for (const outputPath of outputPaths(route)) {

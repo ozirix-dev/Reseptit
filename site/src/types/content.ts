@@ -40,6 +40,7 @@ export interface RecipeImage {
   sizes: string | null;
   srcSet: string | null;
   homeAvifSrc?: string;
+  heroAvifSrc?: string;
 }
 
 export interface RecipeEntry {

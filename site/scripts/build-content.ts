@@ -232,6 +232,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     recipe.image.srcSet = [...source.variants, source]
       .map((image) => `${baseUrl}/kuvat/${image.path} ${image.width}w`).join(", ");
     if (source.homeAvif) recipe.image.homeAvifSrc = imageUrlPrefix + source.homeAvif.path;
+    if (source.heroAvif) recipe.image.heroAvifSrc = imageUrlPrefix + source.heroAvif.path;
   }
   return inheritSourceAdditionalCategories(recipes).sort((a, b) => a.category.localeCompare(b.category) || a.title.localeCompare(b.title));
 }

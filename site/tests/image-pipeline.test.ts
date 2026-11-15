@@ -216,7 +216,8 @@ test("all published source bytes and responsive dimensions match the generated m
   const expected = new Set(siteContent.recipes.flatMap((r) => r.image ? [r.image.src.split("/kuvat/")[1]] : []));
   assert.deepEqual(new Set(manifest.images.map((image: {path: string}) => image.path)), expected);
   const unique = new Set<string>();
-  const avifSources: string[] = [];
+  const homeAvifSources: string[] = [];
+  const heroAvifSources: string[] = [];
   for (const image of manifest.images) {
     const source = await readFile(path.join(repoDir, "kuvat", image.path));
     assert.equal(createHash("sha256").update(source).digest("hex"), image.sha256);
@@ -232,9 +233,10 @@ test("all published source bytes and responsive dimensions match the generated m
       assert.ok(Math.abs(v.height - image.height * v.width / image.width) <= .5);
       assert.equal(createHash("sha256").update(buffer).digest("hex"), v.sha256);
     }
-    const avif = image.homeAvif;
+    if (image.homeAvif) homeAvifSources.push(image.path);
+    if (image.heroAvif) heroAvifSources.push(image.path);
+    const avif = image.homeAvif ?? image.heroAvif;
     if (!avif) continue;
-    avifSources.push(image.path);
     unique.add(avif.path);
     const webp = image.variants.find((variant: { width: number }) => variant.width === 720);
     assert.ok(webp);
@@ -247,7 +249,8 @@ test("all published source bytes and responsive dimensions match the generated m
     assert.ok(avif.bytes < webp.bytes);
     assert.equal(createHash("sha256").update(avifBytes).digest("hex"), avif.sha256);
   }
-  assert.deepEqual(avifSources.sort(), [
+  assert.deepEqual(heroAvifSources, ["paaruoat/kermainen-lohipata.webp"]);
+  assert.deepEqual(homeAvifSources.sort(), [
     "leivonnaiset/avokado-perunasampylat.webp", "paaruoat/aloo-paratha.webp", "paaruoat/caponata.webp",
   ]);
   assert.equal((await readdir(path.join(productionSite, "dist/kuvat/_variants"))).length, unique.size + 1);
