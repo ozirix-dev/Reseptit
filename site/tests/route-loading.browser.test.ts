@@ -3,6 +3,7 @@ import test from "node:test";
 import { spawn } from "node:child_process";
 import path from "node:path";
 import { launchBrowser } from "./launch-browser";
+import { localImageServer } from "./helpers/local-image-server";
 import { siteContent } from "../src/generated/content.generated";
 import { localeIndexes } from "../src/content/route-data";
 
@@ -142,5 +143,51 @@ test("bounded page data, navigation cache, failures, history and multilingual st
   } finally {
     await browser.close();
     server.kill();
+  }
+});
+
+test("mobile entry waits for the critical image and resumes on image failure or interaction", async () => {
+  const server = await localImageServer("dist");
+  const browser = await launchBrowser();
+  try {
+    for (const action of ["load", "error", "interaction"] as const) {
+      const context = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
+      const page = await context.newPage();
+      const avif = /\/kuvat\/_variants\/[\w-]+-720w\.avif$/;
+      const entry = /\/assets\/index-[\w-]+\.js$/;
+      let finishImage!: (result: "load" | "error") => void;
+      const image = new Promise<"load" | "error">((resolve) => { finishImage = resolve; });
+      await page.route(avif, async (route) => {
+        if (await image === "load") await route.continue();
+        else await route.abort();
+      });
+      try {
+        await page.clock.install();
+        const requested = page.waitForRequest(avif);
+        let started = false;
+        page.on("request", request => { if (entry.test(request.url())) started = true; });
+        await page.goto(server.base + "/kermainen-lohipata/", { waitUntil: "domcontentloaded" });
+        await requested;
+        assert.equal(started, false, "the AVIF request starts before the entry module");
+        assert.equal(await page.locator("h1").textContent(), "Kermainen lohipata");
+        const entryRequest = page.waitForRequest(entry);
+        if (action === "interaction") await page.keyboard.press("Tab");
+        else finishImage(action);
+        await entryRequest;
+        await page.locator(".serving-control button").first().waitFor();
+        if (action === "error") {
+          await page.waitForFunction(() => {
+            const img = document.querySelector<HTMLImageElement>(".recipe-image");
+            return img?.complete && img.naturalWidth > 0 && img.currentSrc.endsWith("-720w.webp");
+          });
+        }
+      } finally {
+        finishImage("load");
+        await context.close();
+      }
+    }
+  } finally {
+    await browser.close();
+    await server.close();
   }
 });

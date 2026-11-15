@@ -238,12 +238,12 @@ function RecipeGrid({ recipes, locale, headingLevel, homePicks, library }: {
 }) {
   return <div className="recipe-card-grid">{recipes.map((recipe, index) =>
     <RecipeCard key={recipe.recipeId + '-' + locale} recipe={recipe} index={index} locale={locale} headingLevel={headingLevel}
-      eagerAvif={library && index === 0} avifSrc={homePicks || (library && index === 0) ? recipe.image?.homeAvifSrc : undefined} />
+      library={library} avifSrc={homePicks || (library && index === 0) ? recipe.image?.homeAvifSrc : undefined} />
   )}</div>;
 }
 
-function RecipeCard({ recipe, index, locale, headingLevel = 2, avifSrc, eagerAvif }: {
-  recipe: RecipeSummary | SearchRecipe; index: number; locale: RecipeLocale; headingLevel?: 2 | 3; avifSrc?: string; eagerAvif?: boolean;
+function RecipeCard({ recipe, index, locale, headingLevel = 2, avifSrc, library }: {
+  recipe: RecipeSummary | SearchRecipe; index: number; locale: RecipeLocale; headingLevel?: 2 | 3; avifSrc?: string; library?: boolean;
 }) {
   const [imageFailed, setImageFailed] = useState(false);
   const [avifFailed, setAvifFailed] = useState(false);
@@ -253,8 +253,8 @@ function RecipeCard({ recipe, index, locale, headingLevel = 2, avifSrc, eagerAvi
   const meta = [recipe.timeTotalMin ? `${recipe.timeTotalMin} ${labels.minutes}` : null, recipe.difficulty].filter(Boolean).join(" · ");
   const webpFallback = recipe.image && !imageFailed ? <img className="recipe-card__image"
     src={recipe.image.src} srcSet={recipe.image.srcSet ?? undefined} sizes={recipeCardSizes} alt={recipe.image.alt}
-    width={recipe.image.width} height={recipe.image.height} loading={index === 0 && (!avifSrc || eagerAvif) ? "eager" : "lazy"}
-    fetchPriority={index === 0 ? "high" : undefined} decoding="async"
+    width={recipe.image.width} height={recipe.image.height} loading={index === 0 && (!avifSrc || library) ? "eager" : "lazy"}
+    fetchPriority={index === 0 ? "high" : library ? "low" : undefined} decoding="async"
     ref={avifSrc && !avifFailed ? image => {
       // An AVIF can fail before React attaches the error listener.
       if (image?.complete && image.naturalWidth === 0 && image.currentSrc === avifSrc) setAvifFailed(true);
