@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "content:sync": "tsx scripts/build-content.ts",
+    "content:prepare": "npm run content:sync && npm run audit:nutrition -- --strict && npm run audit:glycemic-load && tsx scripts/prepare-routes.ts",
     "test": "node scripts/run-unit-tests.mjs",
     "typecheck": "tsc -p tsconfig.json",
     "audit:c5-market-labels": "tsx scripts/c5-market-label-audit.ts",
@@ -23,7 +24,8 @@
     "test:image": "tsx --test --test-concurrency=1 tests/image-pipeline.test.ts",
     "test:browser": "node scripts/run-browser-suites.mjs \"smoke ui routes images\"",
     "test:static": "tsx --test tests/static-output.test.ts tests/seo-audit.test.ts tests/blog.test.ts tests/navigation.test.ts",
-    "build": "npm run content:sync && npm run audit:nutrition -- --strict && npm run audit:glycemic-load && npm run typecheck && vite build && tsx scripts/prerender.ts",
+    "build": "npm run content:prepare && npm run typecheck && vite build && tsx scripts/prerender.ts && npm run check:performance",
+    "check:performance": "node scripts/check-home-size.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "report:inventory": "npm run content:sync && tsx scripts/inventory.ts",
     "audit:seo": "tsx scripts/seo-audit.ts",

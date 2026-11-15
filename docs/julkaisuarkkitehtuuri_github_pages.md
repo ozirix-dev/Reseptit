@@ -23,10 +23,10 @@ Reseptisivuston lähdekoodi on `site/`-kansiossa. Komennot suoritetaan siellä:
 
 ```powershell
 npm ci
+npm run build
 npm test
 npm run test:translations
 npm run test:image
-npm run build
 npm run test:static
 npm run test:browser
 npm audit --audit-level=low
@@ -107,22 +107,26 @@ indeksointi ja rakenteisen datan näkyvyys Search Consolesta.
 
 1. `build-content.ts` lukee julkaistut Markdownit. Täysi
    `content.generated.ts` on buildin ja testien käytössä.
-2. `contentForRoute` poimii hakemistoon vain kyseisen kielen tiivistelmät
-   (myös haun tarvitsemat ainesosanimet) tai reseptisivulle yhden reseptin.
-   Vastinkielten linkit ovat kevyitä locale/polku-pareja.
-3. Build kirjoittaa `public/data/<sha256-prefix>.json`-tiedostot ja
-   reittimanifestin. Generoitu datahakemisto rakennetaan uudelleen, jotta
-   poistunut julkaisutieto ei jää vahingossa jakeluun.
-4. Prerenderöinti upottaa saman lähtödatan HTML:n `page-content`-elementtiin.
-   `<`, U+2028 ja U+2029 escapetaan. Sivun sisältö ei tarvitse JSON-hakua
-   ensimmäisellä latauksella. Reactin alkuperäinen puu vastaa staattista HTML:ää.
-5. Routerin loader hakee navigoitaessa vain kohdereitin JSONin. Selainmuistin
-   välimuisti säilyttää enintään 24 reittiä. Query-muutos ei hae dataa uudelleen.
-   Puuttuva tai virheellinen payload näyttää lokalisoidun virheen ja retry-linkin.
+2. \`prepare-routes.ts\` yhdistää reseptien julkaistut GK-tiedot reittidataan.
+   Kokonainen GK-aineisto kuuluu vain GK-oppaan reiteille. Hakemisto sisältää
+   ensimmäiset kortit ja viitteen kielikohtaiseen hakuindeksiin, jonka selain
+   lataa, kun käyttäjä hakee tai suodattaa. Reseptikirjastossa on 24 korttia
+   sivulla ja tavalliset seuraava- ja edellinen-linkit.
+3. Build kirjoittaa reittidatan sisältötiivisteellä nimettyihin
+   \`public/data/\`-tiedostoihin ja luo reittimanifestin. Generoitu datahakemisto
+   rakennetaan uudelleen, jotta poistunut julkaisutieto poistuu jakelusta.
+4. Esirenderöinti lukee saman reittidatan ja upottaa sen HTML:n
+   \`page-content\`-elementtiin. Selain hydratoi staattisen HTML:n ilman erillistä
+   reittidatan hakua. Build tarkistaa etusivun HTML:n ja JavaScriptin
+   gzip-kokorajat.
+5. Navigoitaessa selain hakee vain kohdereitin JSONin ja pitää muistissa
+   enintään 24 reittiä. Hakuehtojen muutos käyttää samaa kielikohtaista
+   hakuindeksiä. Puuttuva tai virheellinen reittidata näyttää lokalisoidun
+   virheen ja uudelleenlatauslinkin.
 
 URL:n hakuparametrit sovelletaan vasta hydraation jälkeen: Pages ei generoi
-erillistä HTML:ää jokaiselle kyselylle. Ilman JavaScriptiä käyttäjä saa kaikki
-kortit ja linkit ilman toimimatonta hakulomaketta. JavaScriptiä tukevassa
+erillistä HTML:ää jokaiselle kyselylle. Ilman JavaScriptiä käyttäjä voi selata kaikki kortit reseptikirjaston
+sivutuslinkeillä. JavaScriptiä tukevassa
 selaimessa lomakkeelle varattu tila ehkäisee asetteluhyppyä.
 
 Manifesti ja yhteinen sovelluskoodi kuuluvat JavaScriptiin, kokonainen

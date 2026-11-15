@@ -1,7 +1,8 @@
 import { createBrowserRouter, createMemoryRouter, Link, Outlet, ScrollRestoration, useLocation, type RouteObject } from "react-router-dom";
 import { RecipePage } from "@/features/recipes/RecipePage";
 import { RecipeAbout } from "@/features/recipes/recipe-tools";
-import { RecipesPage } from "@/features/recipes/RecipesPage";
+import { RecipeLibraryPage, RecipesPage } from "@/features/recipes/RecipesPage";
+import { recipeLibraryPagePattern, recipeLibraryRoots } from "@/features/recipes/recipe-pagination";
 import { GlycemicLoadPilotPage } from "@/features/glycemic-load/GlycemicLoadPilotPage";
 import { recipeIndexPath, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
 import { isRecipavoHeroEnabled, recipavoHeroCopy } from "@/features/recipes/recipavo-hero";
@@ -47,6 +48,10 @@ function NotFoundPage() {
   return <section className="page-section"><div className="container container--narrow"><h1>{labels.notFound}</h1><p><Link to={recipeIndexPath(locale)}>{labels.backToRecipes}</Link></p></div></section>;
 }
 
+function RecipeLibraryRoute() {
+  return useContent().pagination ? <RecipeLibraryPage /> : <NotFoundPage />;
+}
+
 function ContentError() {
   const { pathname } = useLocation();
   const locale = recipeLocaleFromPath(pathname);
@@ -79,6 +84,10 @@ export const siteRoutes: RouteObject[] = [
         path: privacyPaths[locale].slice(1, -1),
         element: <PrivacyPage locale={locale} />,
       })),
+      ...(Object.keys(recipeLibraryRoots) as RecipeLocale[]).flatMap(locale =>
+        [recipeLibraryRoots[locale], recipeLibraryPagePattern(locale)].map(path => ({
+          path: path.slice(1), element: <RecipeLibraryRoute />,
+        }))),
       { path: ":slug", element: <RecipePage /> },
       { path: "en/recipes", element: <RecipesPage locale="en" /> },
       { path: "en/recipes/:slug", element: <RecipePage /> },

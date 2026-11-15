@@ -29,23 +29,9 @@
 }
 .recipe-index--home-preview .home-preview__topic-list a:hover { background: #e8f0e9; }
 .recipe-index--home-preview .home-preview__picks { margin-top: 1.2rem; }
-.recipe-index--home-preview .home-preview__more {
-  margin: 1.3rem 0 0;
-  border: 1px solid var(--line);
-  background: var(--surface);
-  border-radius: .85rem;
-  padding: .45rem .9rem .9rem;
-}
-.recipe-index--home-preview .home-preview__more > summary {
-  min-height: 44px;
-  padding-block: .5rem;
-  cursor: pointer;
-  color: var(--accent);
-  font-weight: 700;
-}
-.recipe-index--home-preview .home-preview__more[open] > summary { border-bottom: 1px solid var(--line); }
-.recipe-index--home-preview .home-preview__more .recipe-card-grid { margin-top: 1rem; }
-.recipe-index--home-preview :is(.home-preview__more summary, .home-preview__topic-list a):focus-visible {
+.recipe-library-link, .recipe-pagination { margin-top: 1.25rem; }
+.recipe-pagination { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; align-items: baseline; }
+:is(.recipe-library-link a, .recipe-pagination a, .home-preview__topic-list a):focus-visible {
   outline: 3px solid var(--focus);
   outline-offset: 3px;
 }
