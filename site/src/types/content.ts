@@ -20,6 +20,7 @@ export interface ArticleEntry {
 }
 
 export type RecipeLocale = "fi" | "en" | "sv" | "th";
+export type RecipeCategoryName = "alkuruoka" | "paaruoka" | "jalkiruoka" | "leivonnainen" | "aamupala" | "valipala";
 export type RecipeDietClass = "keto" | "vhh_tiukka" | "vhh_valjempi";
 /** Independently reviewed dietary compatibility, never inferred from keto or VHH. */
 export type RecipeDietTag = "carnivore" | "vegetarian" | "vegan" | "pescatarian";
@@ -48,7 +49,9 @@ export interface RecipeEntry {
   slug: string;
   locale: RecipeLocale;
   title: string;
-  category: "alkuruoka" | "paaruoka" | "jalkiruoka" | "leivonnainen" | "aamupala" | "valipala";
+  category: RecipeCategoryName;
+  /** Additional browsing categories inherited from the Finnish source. */
+  additionalCategories?: RecipeCategoryName[];
   dietClass: RecipeDietClass | null;
   /** Only source-pinned recipe-level reviews populate this field. */
   dietTags?: RecipeDietTag[];
