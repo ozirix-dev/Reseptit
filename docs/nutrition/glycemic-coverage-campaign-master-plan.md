@@ -777,6 +777,23 @@ npm run build
 npm run test:static
 ```
 
+Tavallisen kattavuusajon tulokset löytyvät repon juuresta poluista
+`tmp/nutrition/glycemic-coverage/current.json` ja
+`tmp/nutrition/glycemic-coverage/current.md`. Hae uusi nykytila ajamalla
+ensin yllä olevat `content:sync`-, ravinto- ja GK-auditointikomennot.
+Jos tarvitset erillisen vertailuajon, voit antaa `--baseline`-valinnalla
+vertailuun käytettävän JSON-snapshotin `docs/nutrition/`-hakemistosta ja
+`--output-json`- ja `--output-markdown`-valinnoilla uudet tulostepolut
+`tmp/nutrition/glycemic-coverage/`-hakemiston alta. Polut ovat suhteessa
+repon juureen.
+
+Päivätyt `glycemic-coverage-current-*`- ja eräkohtaiset `*-current`-tiedostot
+ovat aiempien ajojen tilannekuvia. Testit ja Run 0 -analyysi lukevat niitä
+historiallisina vertailuina. Historiallisen baselinen tallennus edellyttää
+erillistä `--capture-…-baseline`-valintaa ja sille kiinnitettyä lähdecommittia.
+Tallennus keskeytyy, jos kohdetiedosto on jo olemassa. Palauta hyväksytyn
+tilannekuvan täsmällinen tiedosto tarvittaessa Git-historiasta.
+
 Jos julkaistun reseptin sisältö muuttuu, suorita lisäksi tarvittavat käännös-, changed-content- ja selain-/julkaisutestit.
 
 Noudata CI:n riskiperusteista FAST-FIRST-valintaa, mutta varmista, että GK-laskentaa muuttava PR suorittaa myös GK-regressiot ja kattavuusauditoinnin.
