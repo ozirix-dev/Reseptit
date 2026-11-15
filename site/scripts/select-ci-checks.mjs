@@ -27,13 +27,14 @@ const planningJson = new Set([
   "docs/nutrition/gk80-run8/inventory.json",
 ]);
 
+const nutritionTests = ["tests/nutrition-model.test.ts", "tests/nutrition-evidence.test.ts"];
+const glycemicTests = ["tests/glycemic-load.test.ts", "tests/glycemic-coverage-inventory.test.ts"];
+
 function addNutritionChecks(plan) {
   plan.runNutrition = true;
   plan.runBuild = true;
   plan.runStatic = true;
   plan.needsNode = true;
-  plan.unitTests.add("tests/nutrition-model.test.ts");
-  plan.unitTests.add("tests/nutrition-evidence.test.ts");
 }
 
 function addGlycemicChecks(plan) {
@@ -41,8 +42,6 @@ function addGlycemicChecks(plan) {
   plan.runBuild = true;
   plan.runStatic = true;
   plan.needsNode = true;
-  plan.unitTests.add("tests/glycemic-load.test.ts");
-  plan.unitTests.add("tests/glycemic-coverage-inventory.test.ts");
 }
 
 function addBrowserSuite(plan, suite) {
@@ -196,12 +195,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false,
       continue;
     }
     if (file === "site/scripts/nutrition-model.ts" || file === "site/scripts/nutrition-evidence.ts") {
-      plan.runNutrition = true;
-      plan.runBuild = true;
-      plan.runStatic = true;
-      plan.needsNode = true;
-      plan.unitTests.add("tests/nutrition-model.test.ts");
-      plan.unitTests.add("tests/nutrition-evidence.test.ts");
+      addNutritionChecks(plan);
       continue;
     }
     if (file === "site/scripts/nutrition-audit.ts") {
@@ -278,6 +272,9 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false,
       plan.runImages || plan.runStatic || plan.runBrowser || plan.unitTests.size > 0) {
     plan.needsNode = true;
   }
+  // The dedicated steps already run these files, even when a test itself changed.
+  if (plan.runNutrition) for (const test of nutritionTests) plan.unitTests.delete(test);
+  if (plan.runGlycemic) for (const test of glycemicTests) plan.unitTests.delete(test);
   plan.unitTests = [...plan.unitTests].sort();
   plan.browserSuites = ["smoke", "ui", "routes", "images"].filter((suite) => plan.browserSuites.has(suite));
   return plan;

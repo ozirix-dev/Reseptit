@@ -21,6 +21,7 @@ Suorita Reseptit-repon juuresta:
 
 ```powershell
 node tools/worktree-hygiene.mjs
+New-Item -ItemType Directory -Path tmp -Force | Out-Null
 node tools/worktree-hygiene.mjs --json > tmp/worktree-hygiene.json
 node --test tools/worktree-hygiene.test.mjs
 ```
