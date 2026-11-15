@@ -1,0 +1,231 @@
+{
+  "recipeId": "piparkakkulatte-hunajalla",
+  "sourceHash": "bbae5146de1dfa961f133b60395e4377bbac6e20619c63f0a0d98d75800379d3",
+  "calculatedAt": "2026-11-15",
+  "batchId": "batch-577",
+  "servings": 4,
+  "scope": "Ingredient inputs from Fineli Release 20, USDA FoodData Central and AFCD as applicable. No measured cooked yield.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Pikakahvin, hunajan ja mausteiden polyolitiedot puuttuvat. Tilavuuspainot ovat annosarvioita.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 4,
+      "unit": "tl",
+      "item": "pikakahvijauhetta",
+      "record": {
+        "id": "usda-171893",
+        "name": "Beverages, coffee, instant, regular, powder",
+        "sourceUrl": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171893/nutrients",
+        "retrievedAt": "2026-11-15",
+        "licence": "USDA FoodData Central SR Legacy, public domain",
+        "state": "edible reference ingredient as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "US_TOTAL_INCLUDING_FIBRE",
+        "per100g": {
+          "carbohydrate": 75.4,
+          "fibre": 0.0,
+          "polyols": null,
+          "protein": 12.2,
+          "fat": 0.5
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "edible reference ingredient as sold",
+      "matchEvidence": "Matched the ingredient pikakahvijauhetta to the reference food Beverages, coffee, instant, regular, powder. Brand-specific values may vary.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "All quantities describe the edible charged food.",
+      "retentionEvidence": "Full charged-mass accounting. No cooked yield or retained fat measured.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "USDA instant coffee SR Legacy serving mass of 1 g per teaspoon."
+    },
+    {
+      "amount": 4,
+      "unit": "tl",
+      "item": "juoksevaa hunajaa",
+      "record": {
+        "id": "fineli-4",
+        "name": "HUNAJA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/4",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "hunaja",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 80.8,
+          "fibre": 0.0,
+          "polyols": null,
+          "protein": 0.5,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "hunaja",
+      "matchEvidence": "Matched the ingredient juoksevaa hunajaa to the reference food HUNAJA. Brand-specific values may vary.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "All quantities describe the edible charged food.",
+      "retentionEvidence": "Full charged-mass accounting. No cooked yield or retained fat measured.",
+      "gramsPerUnit": 7,
+      "conversionEvidence": "King Arthur Baking ingredient weight chart lists 21 g honey per 3 teaspoons."
+    },
+    {
+      "amount": 4,
+      "unit": "tl",
+      "item": "kuumaa vettä",
+      "record": {
+        "id": "fineli-922",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "vesi, vesijohtovesi",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 0.0,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Sugar alcohol value reported in pinned Fineli Release 20."
+      },
+      "state": "vesi, vesijohtovesi",
+      "matchEvidence": "Matched the ingredient kuumaa vettä to the reference food VESI, VESIJOHTOVESI. Brand-specific values may vary.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "All quantities describe the edible charged food.",
+      "retentionEvidence": "Full charged-mass accounting. No cooked yield or retained fat measured.",
+      "gramsPerUnit": 5,
+      "conversionEvidence": "One metric teaspoon of water is 5 mL, approximately 5 g."
+    },
+    {
+      "amount": 0.5,
+      "unit": "tl",
+      "item": "jauhettua kanelia",
+      "record": {
+        "id": "afcd-F002963",
+        "name": "Cinnamon, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002963",
+        "retrievedAt": "2026-11-15",
+        "licence": "FSANZ, Australian Food Composition Database Release 3, Data User Licence Agreement based on CC BY-SA 3.0 Australia",
+        "state": "dry ground cinnamon",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 27.5,
+          "polyols": null,
+          "fibre": 53.1,
+          "protein": 4,
+          "fat": 1.2
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "dry ground cinnamon",
+      "matchEvidence": "Matched the ingredient jauhettua kanelia to the reference food Cinnamon, dried, ground. Brand-specific values may vary.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "All quantities describe the edible charged food.",
+      "retentionEvidence": "Full charged-mass accounting. No cooked yield or retained fat measured.",
+      "gramsPerUnit": 2.5,
+      "conversionEvidence": "Reference estimate for a level teaspoon of ground cinnamon."
+    },
+    {
+      "amount": 0.25,
+      "unit": "tl",
+      "item": "jauhettua inkivääriä",
+      "record": {
+        "id": "fineli-11186",
+        "name": "INKIVÄÄRI, JAUHETTU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11186",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "inkivääri, jauhettu",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": null,
+          "fibre": null,
+          "polyols": null,
+          "protein": null,
+          "fat": null
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "inkivääri, jauhettu",
+      "matchEvidence": "Matched the ingredient jauhettua inkivääriä to the reference food INKIVÄÄRI, JAUHETTU. Brand-specific values may vary.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "All quantities describe the edible charged food.",
+      "retentionEvidence": "Full charged-mass accounting. No cooked yield or retained fat measured.",
+      "gramsPerUnit": 1.8,
+      "conversionEvidence": "Reference estimate for a level teaspoon of ground ginger."
+    },
+    {
+      "amount": 0.2,
+      "unit": "g",
+      "item": "jauhettua neilikkaa",
+      "record": {
+        "id": "fineli-11185",
+        "name": "NEILIKKA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11185",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "neilikka",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": null,
+          "fibre": null,
+          "polyols": null,
+          "protein": null,
+          "fat": null
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "neilikka",
+      "matchEvidence": "Matched the ingredient jauhettua neilikkaa to the reference food NEILIKKA. Brand-specific values may vary.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "All quantities describe the edible charged food.",
+      "retentionEvidence": "Full charged-mass accounting. No cooked yield or retained fat measured."
+    },
+    {
+      "amount": 8,
+      "unit": "dl",
+      "item": "kevytmaitoa",
+      "record": {
+        "id": "fineli-684",
+        "name": "MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/684",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "maito, kevytmaito, d-vitamiinia 1 ug",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 3.0,
+          "fat": 1.5
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Sugar alcohol value reported in pinned Fineli Release 20."
+      },
+      "state": "maito, kevytmaito, d-vitamiinia 1 ug",
+      "matchEvidence": "Matched the ingredient kevytmaitoa to the reference food MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG. Brand-specific values may vary.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "All quantities describe the edible charged food.",
+      "retentionEvidence": "Full charged-mass accounting. No cooked yield or retained fat measured.",
+      "gramsPerUnit": 103,
+      "conversionEvidence": "Reference density of milk near 1.03 g per mL."
+    }
+  ]
+}
