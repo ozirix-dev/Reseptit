@@ -343,7 +343,7 @@ test("GK evidence copy separates measured, comparison, modeled, and unrecognized
 
 test("prerendered recipe HTML includes useful content before JavaScript", async () => {
   const html = await readFile(path.join(dist, "kermainen-lohipata", "index.html"), "utf8");
-  const root = html.match(/<div id="root">([\s\S]*)<\/div>\s*<\/body>/);
+  const root = html.match(/<div id="root">([\s\S]*)<\/div>\s*<script id="page-content" type="application\/json">/);
   assert.ok(root, "root element contains prerendered markup");
   assert.match(root[1], /<h1>Kermainen lohipata<\/h1>/);
   assert.match(root[1], /<h2 id="recipe-ingredients-title">Ainekset<\/h2>/);
@@ -555,6 +555,14 @@ test("responsive image metadata reaches every route, SEO and matching preloads",
     }
     for (const tag of html.matchAll(/<link rel="preload" as="image"[^>]*>/g)) {
       const preload = attributes(tag[0]);
+      if (preload.type === "image/avif") {
+        const sources = [...html.matchAll(/<source\b[^>]*>/g)].map((match) => attributes(match[0]));
+        assert.ok(sources.some((source) => source.type === preload.type &&
+          source.media === preload.media && source.srcset === preload.href), 'AVIF preload must match a picture source at ' + route);
+        assert.match(preload.href, /^https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/_variants\/.+\.avif$/);
+        assert.ok((await readFile(path.join(dist, "kuvat", preload.href.split("/kuvat/")[1]))).length);
+        continue;
+      }
       const img = imgs.find((image) => image.srcset === preload.imagesrcset);
       assert.ok(img, `${route}: preload must match an image`);
       assert.equal(preload.imagesizes, img.sizes);
