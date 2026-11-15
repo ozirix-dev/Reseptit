@@ -253,6 +253,10 @@ function RecipeCard({ recipe, index, locale, headingLevel = 2, avifSrc }: {
     src={recipe.image.src} srcSet={recipe.image.srcSet ?? undefined} sizes={recipeCardSizes} alt={recipe.image.alt}
     width={recipe.image.width} height={recipe.image.height} loading={index === 0 && !avifSrc ? "eager" : "lazy"}
     fetchPriority={index === 0 ? "high" : undefined} decoding="async"
+    ref={avifSrc && !avifFailed ? image => {
+      // An AVIF can fail before React attaches the error listener.
+      if (image?.complete && image.naturalWidth === 0 && image.currentSrc === avifSrc) setAvifFailed(true);
+    } : undefined}
     onError={({ currentTarget }) => {
       if (avifSrc && currentTarget.currentSrc === avifSrc) setAvifFailed(true);
       else setImageFailed(true);

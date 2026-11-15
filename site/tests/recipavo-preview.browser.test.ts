@@ -78,6 +78,37 @@ test("branded HTML keeps the target indexing policy, search and library working 
       }
       await page.close();
     }
+    const fallback = await browser.newPage({ viewport: { width: 412, height: 900 }, deviceScaleFactor: 2, isMobile: true });
+    try {
+      let allowHydration!: () => void;
+      const beforeHydration = new Promise<void>(resolve => { allowHydration = resolve; });
+      await fallback.route(/\/assets\/index-[\w-]+\.js$/, async route => {
+        await beforeHydration;
+        await route.continue();
+      });
+      await fallback.route(/\/kuvat\/.+\.webp$/, async route => {
+        const file = new URL(route.request().url()).pathname.split("/kuvat/")[1];
+        await route.fulfill({ path: path.resolve("dist/kuvat", file), contentType: "image/webp" });
+      });
+      await fallback.route("**/*.avif", route => route.fulfill({ status: 404 }));
+      try {
+        await fallback.goto(base + "/", { waitUntil: "commit" });
+        await fallback.locator(".home-preview__picks .recipe-card__link").first().scrollIntoViewIfNeeded();
+        await fallback.waitForFunction(() => {
+          const img = document.querySelector<HTMLImageElement>(".home-preview__picks .recipe-card__image");
+          return img?.currentSrc.endsWith(".avif") && img.complete && img.naturalWidth === 0;
+        });
+      } finally {
+        allowHydration();
+      }
+      await fallback.waitForFunction(() => {
+        const img = document.querySelector<HTMLImageElement>(".home-preview__picks .recipe-card__image");
+        return img?.currentSrc.endsWith("-720w.webp") && img.complete && img.naturalWidth > 0;
+      });
+    } finally {
+      await fallback.close();
+    }
+
     const fi = await browser.newPage();
     fi.on("pageerror", (error) => errors.push(`FI blog: ${error.message}`));
     await fi.goto(base + "/ruokaopas/");
