@@ -1,0 +1,202 @@
+{
+  "recipeId": "pinaatti-raejuustopaistos",
+  "sourceHash": "8c78714812962edca6080540a8b02b369c1a6f62fc631e8f24c33851b3cde146",
+  "calculatedAt": "2026-11-15",
+  "batchId": "batch-578",
+  "servings": 6,
+  "scope": "Fineli Release 20 edible ingredient estimates. Small seasoning omission bounded by edible mass. No measured final yield.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 60,
+      "unit": "g",
+      "item": "tuoretta pinaattia",
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptin määrä on syötävä määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko syötävä erä käytetään. Kypsennyssaantoa ei ole mitattu.",
+      "record": {
+        "id": "fineli-33456-2026-10-25",
+        "name": "PINAATTI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/33456?c=2034&c2=2168",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL, Fineli Rel20, CC BY 4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.25,
+          "fibre": 1.3,
+          "polyols": 0,
+          "protein": 2.1,
+          "fat": 0.56
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Rel20 POLYL component"
+      },
+      "state": "RAW",
+      "matchEvidence": "tuoretta pinaattia verrattiin Finelin tietueeseen PINAATTI. Tuotekohtainen koostumus voi vaihdella."
+    },
+    {
+      "amount": 200,
+      "unit": "g",
+      "item": "kananmunaa ilman kuorta",
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptin määrä on syötävä määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko syötävä erä käytetään. Kypsennyssaantoa ei ole mitattu.",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw edible egg, shell removed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      },
+      "state": "raw edible egg, shell removed",
+      "matchEvidence": "kananmunaa ilman kuorta verrattiin Finelin tietueeseen KANANMUNA, KUORETON. Tuotekohtainen koostumus voi vaihdella."
+    },
+    {
+      "amount": 225,
+      "unit": "g",
+      "item": "raejuustoa",
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptin määrä on syötävä määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko syötävä erä käytetään. Kypsennyssaantoa ei ole mitattu.",
+      "record": {
+        "id": "fineli-649-2026-10-25",
+        "name": "RAEJUUSTO, RASVAA 2-5 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/649?c=2034&c2=2168",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL, Fineli Rel20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 2.5,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 15.81,
+          "fat": 2
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component"
+      },
+      "state": "IND",
+      "matchEvidence": "raejuustoa verrattiin Finelin tietueeseen RAEJUUSTO, RASVAA 2-5 %. Tuotekohtainen koostumus voi vaihdella."
+    },
+    {
+      "amount": 60,
+      "unit": "g",
+      "item": "mozzarellaa",
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptin määrä on syötävä määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko syötävä erä käytetään. Kypsennyssaantoa ei ole mitattu.",
+      "record": {
+        "id": "fineli-29239-release-20",
+        "name": "JUUSTO, MOZZARELLA, RASVAA 20 %, TUOREJUUSTO",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/29239",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh mozzarella, 20% fat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 18.6,
+          "fat": 20.7
+        }
+      },
+      "state": "fresh mozzarella, 20% fat",
+      "matchEvidence": "mozzarellaa verrattiin Finelin tietueeseen JUUSTO, MOZZARELLA, RASVAA 20 %, TUOREJUUSTO. Tuotekohtainen koostumus voi vaihdella."
+    },
+    {
+      "amount": 1,
+      "unit": "g",
+      "item": "savupaprikajauhetta",
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptin määrä on syötävä määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko syötävä erä käytetään. Kypsennyssaantoa ei ole mitattu.",
+      "state": "Punnittu kuiva mauste",
+      "matchEvidence": "Mausteen ravintovaikutus on rajattu kokonaismassasta.",
+      "excludedReason": "Vähäinen mausteosuus rajataan ilman oletusta polyolipitoisuudesta.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 1.53,
+        "netCarbohydrate": 0.17,
+        "totalCarbohydrate": 0.17,
+        "protein": 0.17,
+        "fat": 0.17
+      },
+      "omissionImpactEvidence": "1 g jaetaan 6 annokseen. Yksittäisen ravintoaineen massa ei ylitä mausteen massaa. Energia on rajattu 9 kcal/g."
+    },
+    {
+      "amount": 1.5,
+      "unit": "g",
+      "item": "hienoa merisuolaa",
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptin määrä on syötävä määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko syötävä erä käytetään. Kypsennyssaantoa ei ole mitattu.",
+      "record": {
+        "id": "fineli-33151",
+        "name": "MERISUOLA, JODIOIMATON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/33151",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "merisuola, jodioimaton",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 0.0,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Sugar alcohol value reported in pinned Fineli Release 20."
+      },
+      "state": "merisuola, jodioimaton",
+      "matchEvidence": "hienoa merisuolaa verrattiin Finelin tietueeseen MERISUOLA, JODIOIMATON. Tuotekohtainen koostumus voi vaihdella."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "recipe_id": "ananas-kanelijuoma-sitruunalla",
+  "source_path": "reseptit/valipalat/ananas-kanelijuoma-sitruunalla.md",
+  "source_sha256": "7cf8c7af4e0c163f073467974c77236e5cbfe75cb47c914d1adb4a74b744d329",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.facebook.com/reel/862663536867684",
+      "https://atelizabethstable.com/pineapple-cinnamon-wellness-shots/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/ananas-kanelijuoma-sitruunalla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Päähaarasta tarkistettiin otsikko, tunniste ja Reel-linkki. Ainoa samaan videoon sidottu osuma oli tämän PR:n luonnos."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Litteraatti vahvistaa ananaksen, sitruunan, veden ja kanelin. Lasin koko ja mieto kanelimäärä ovat sovituksia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ainekset soseutetaan tasaiseksi lähdevideon tapaan. Hedelmäliha säilyy juomassa."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Hedelmät huuhdellaan ennen leikkaamista. Resepti tarjoaa juoman kylmänä heti valmistamisen jälkeen."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Sose jaetaan kahteen lasiin. Kymmenen minuuttia kattaa hedelmien valmistelun ja soseutuksen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Arvot laskettiin Finelin lähdetietueista. Kanelin pieni osuus on rajattu dokumentoidusti massan perusteella."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmiille reseptille ei ole tähän julkaisuun hyväksyttyä GI-lähdettä. Numeerista glykeemistä kuormaa ei julkaista."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [],
+    "image_path": "kuvat/valipalat/ananas-kanelijuoma-sitruunalla.webp",
+    "image_sha256": "c0f35c1f2ac6ad402281d7b3e7c47467afe99496de184a5a2362d20e0df6885b",
+    "image_review": "Tekoälykuvituksessa näkyy vaalea ananasjuoma ja sen raaka-aineet.",
+    "physical_cook_test": false
+  }
+}
