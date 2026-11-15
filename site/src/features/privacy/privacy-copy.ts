@@ -73,4 +73,3 @@ export const privacyCopy = {
     enabled: "เบราว์เซอร์นี้อนุญาตการวิเคราะห์แล้ว", disabled: "เบราว์เซอร์นี้ปิดการวิเคราะห์อยู่",
   },
 } satisfies Record<RecipeLocale, Record<string, string>>;
-

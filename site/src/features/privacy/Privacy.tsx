@@ -60,4 +60,3 @@ export function PrivacyPage({ locale }: { locale: RecipeLocale }) {
     <p>{labels.exercise} <a href="https://tietosuoja.fi/">{labels.regulator}</a></p>
   </div></article>;
 }
-

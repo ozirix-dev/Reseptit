@@ -98,4 +98,3 @@ export function trackPageview(previous: string | null) {
   if (page && page !== previous) send("pageview", page);
   return page;
 }
-
