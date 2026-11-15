@@ -40,10 +40,10 @@ ingredients:
   - amount: 2
     unit: g
     item: hienoa suolaa
-  - amount: 1
-    unit: kpl
-    item: keltuainen
-    note: pinnan voiteluun
+  - amount: 17
+    unit: g
+    item: kananmunan keltuaista
+    note: noin yksi keltuainen, pinnan voiteluun
   - amount: 8
     unit: g
     item: kuorittuja seesaminsiemeniä
