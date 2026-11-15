@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContent } from "@/lib/content";
 import type { RecipeLocale } from "@/types/content";
-import { glycemicLoadPath, recipeDifficultyLabel, recipeIndexPath, recipeUi } from "./recipe-i18n";
+import { glycemicLoadPath, recipeIndexPath, recipeUi } from "./recipe-i18n";
 import { homepageLabels, libraryCopy } from "./home-preview";
 import { recipeLibraryPagePath, recipeLibraryPageSize } from "./recipe-pagination";
 import { loadRecipeSearch } from "@/lib/load-content";
@@ -244,7 +244,7 @@ function RecipeCard({ recipe, index, locale, headingLevel = 2 }: { recipe: Recip
   const labels = recipeUi[locale];
   const Heading = headingLevel === 3 ? "h3" : "h2";
   const dietLabel = recipe.dietClass === "keto" ? labels.keto : recipe.dietClass ? labels.vhh : null;
-  const meta = [recipe.timeTotalMin ? `${recipe.timeTotalMin} ${labels.minutes}` : null, recipeDifficultyLabel(recipe.difficulty, locale)].filter(Boolean).join(" · ");
+  const meta = [recipe.timeTotalMin ? `${recipe.timeTotalMin} ${labels.minutes}` : null, recipe.difficulty].filter(Boolean).join(" · ");
   return <article className="recipe-card">
     <Link className="recipe-card__link" to={recipe.routePath}>
       {recipe.image && !imageFailed ? <img className="recipe-card__image" src={recipe.image.src} srcSet={recipe.image.srcSet ?? undefined} sizes={recipeCardSizes} alt={recipe.image.alt} width={recipe.image.width} height={recipe.image.height} loading={index === 0 ? "eager" : "lazy"} fetchPriority={index === 0 ? "high" : undefined} decoding="async" onError={() => setImageFailed(true)} />

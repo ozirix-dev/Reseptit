@@ -1,4 +1,5 @@
 import { siteTarget } from "../src/content/site-target";
+import { recipeDifficultyLabel } from "../src/features/recipes/recipe-i18n";
 import { createHash } from "node:crypto";
 import { publicRecipeQualityHold } from "./recipe-quality-holds";
 import { projectSafeWontonFiDisplay } from "./wonton-fi-public-display";
@@ -231,7 +232,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       instructionsText: instructionSteps.length ? instructionSteps : publicInstructions.split(/\n\s*\n/).filter(Boolean),
       notesHtml: await renderSafeMarkdown(!safetyHold && visibleHold ? "" : notes), servings: data.servings,
       timeTotalMin: data.time_total_min ?? null,
-      difficulty: data.difficulty ?? null, tags: data.tags,
+      difficulty: recipeDifficultyLabel(data.difficulty ?? null, data.language), tags: data.tags,
       image: data.image ? {
         src: `${baseUrl}/kuvat/${data.image.src}`,
         alt: data.image.alt, width: data.image.width, height: data.image.height,
