@@ -4,18 +4,54 @@ import { gkVariantScope } from '../src/features/recipes/gk-estimate-scope';
 import {loadAuthorizedGk100Variants} from '../scripts/gk100-approval-release';
 import {gkOnlyUi,gkOnlyValue,gkScopeUi,studyServingTitle} from '../src/features/recipes/GkOnlyVariantPanel';
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
+import { recipeLibraryPagePath, recipeLibraryPageSize } from "../src/features/recipes/recipe-pagination";
+import { parseRecipeSearch, parseRouteContent } from "../src/lib/load-content";
 import { recipeUi } from "../src/features/recipes/recipe-i18n";
 import { copyrightSourceUrl, copyrightUi } from "../src/features/recipes/recipe-copyright";
 import { toolUi } from "../src/features/recipes/recipe-tools";
 import { siteContent } from "../src/generated/content.generated";
+import { contentManifest } from "../src/generated/routes.generated";
 import { glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
 import { isPublicRecipeQuarantined, publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
 import { f25ExplicitUndefinedGkLabel, withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 
 const dist = path.resolve(import.meta.dirname, "../dist");
+
+test("generated route and search data satisfy the browser parser contracts", async () => {
+  const dir = path.join(dist, "data");
+  const files = await readdir(dir);
+  const searches = files.filter(file => /^search-/.test(file) && file.endsWith(".json"));
+  assert.equal(searches.length, 4);
+  let recipePage: unknown;
+  let searchIndex: unknown;
+  let pages = 0;
+  const routeFiles = new Set(Object.values(contentManifest));
+  for (const file of [...searches, ...routeFiles]) {
+    const payload = JSON.parse(await readFile(path.join(dir, file), "utf8"));
+    if (searches.includes(file)) {
+      assert.ok(parseRecipeSearch(payload).length > 0, file);
+      searchIndex ??= payload;
+    } else {
+      assert.equal(parseRouteContent(payload, "/Reseptit" + payload.path).path, payload.path, file);
+      pages++;
+      if (payload.recipe) recipePage ??= payload;
+    }
+  }
+  assert.equal(pages, routeFiles.size);
+  assert.ok(pages >= siteContent.recipes.length);
+  assert.ok(recipePage);
+  assert.ok(Array.isArray(searchIndex) && searchIndex.length);
+  const first = searchIndex[0];
+  for (const change of [{ locale: "xx" }, { category: "unknown" }, { dietTags: 42 }]) {
+    assert.throws(() => parseRecipeSearch([{ ...first, ...change }]), /Invalid recipe search index/);
+  }
+  const invalid = structuredClone(recipePage) as { path: string; recipe: { ingredients: unknown[] } };
+  invalid.recipe.ingredients = [null];
+  assert.throws(() => parseRouteContent(invalid, "/Reseptit" + invalid.path), /Invalid recipe page data/);
+});
 
 test("recipe actions progressively enhance readable static pages in all four languages", async () => {
   const { siteContent } = await import("../src/generated/content.generated");
@@ -46,6 +82,52 @@ test("the FI coconut curry displays its allergen note on the static recipe page"
   assert.match(visiblePage, /sisältää katkaraputahnaa eli äyriäisallergeenin/);
   assert.match(visiblePage, /voi sisältää myös kalajäämiä/);
   assert.match(visiblePage, /Tarkista oman pakkauksen ainesosat/);
+});
+
+test("difficulty is localized in every affected recipe page and library card", async () => {
+  const ids = [
+    "indonesialainen-serabi-kookospannukakku", "intialainen-mannasuurimoupma", "japanilainen-soba-aamiaiskeitto",
+    "kiinalainen-jianbing-munaletty", "kiinalainen-katkarapu-wontonkeitto", "malesialainen-apam-balik",
+    "malesialainen-kaya-paahtoleipa", "meksikolainen-aamiais-tacot-mustapavuilla", "meksikolainen-huevos-divorciados",
+  ];
+  for (const [locale, label] of [["en", "Easy"], ["sv", "Lätt"], ["th", "ง่าย"]] as const) {
+    const recipes = siteContent.recipes.filter(recipe => recipe.locale === locale)
+      .sort((a, b) => a.recipeId < b.recipeId ? -1 : a.recipeId > b.recipeId ? 1 : 0);
+    for (const id of ids) {
+      const index = recipes.findIndex(recipe => recipe.recipeId === id);
+      const context = `${locale}/${id}`;
+      assert.ok(index >= 0, context);
+      const recipe = recipes[index];
+      const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+      assert.ok(html.replaceAll("<!-- -->", "").includes(`${recipeUi[locale].difficulty}: ${label}</span>`), context);
+      const libraryPath = recipeLibraryPagePath(locale, Math.floor(index / recipeLibraryPageSize) + 1);
+      const library = await readFile(path.join(dist, libraryPath.slice(1), "index.html"), "utf8");
+      const card = library.split('<article class="recipe-card">').slice(1)
+        .map(fragment => fragment.split("</article>", 1)[0])
+        .find(fragment => fragment.includes(`href="/Reseptit${recipe.routePath}"`));
+      assert.ok(card, context);
+      assert.ok(card.includes(`${label}</span>`), context);
+      assert.doesNotMatch(card, /Helppo/, context);
+    }
+  }
+});
+
+test("the three carnivore recipes show their published nutrition calculation basis", async () => {
+  for (const [id, product] of [
+    ["karnivore-jauhelihakulho-munalla", "Snellman Kunnon naudan jauheliha 20 % EAN 6409620011856"],
+    ["karnivore-steak-and-eggs", "HK Naudan entrecôte 1824"],
+    ["karnivore-voilohi-pannulla", "Kalaneuvos Atlantin lohifilee"],
+  ]) {
+    const recipe = siteContent.recipes.find(entry => entry.recipeId === id && entry.locale === "fi");
+    assert.ok(recipe, id);
+    const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+    const visiblePage = html.slice(html.indexOf('<div id="root">')).split("</main>", 1)[0];
+    for (const output of [recipe.notesHtml, visiblePage]) {
+      assert.ok(output.includes("Ravintoarvojen laskentaperuste"), id);
+      assert.ok(output.includes("raaka-ainepanoksen arvioita per annos"), id);
+      assert.ok(output.includes(product), id);
+    }
+  }
 });
 
 test("Italian bake estimated total time reaches visible notes and Recipe JSON-LD in every locale", async () => {

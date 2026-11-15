@@ -122,6 +122,22 @@ test("bounded page data, navigation cache, failures, history and multilingual st
       assert.equal(await failing.getByRole("link", { name: "Försök igen" }).getAttribute("href"), "/Reseptit/sv/recept/");
       await failing.close();
     }
+    const initialFailure = await context.newPage();
+    const englishHome = `${base}/en/recipes/`;
+    await initialFailure.route(englishHome, async route => {
+      const response = await route.fetch();
+      const html = (await response.text()).replace(/(<script\b[^>]*id="page-content"[^>]*>)[\s\S]*?(<\/script>)/, "$1{$2");
+      await route.fulfill({ response, body: html });
+    }, { times: 1 });
+    await initialFailure.goto(englishHome);
+    const reload = initialFailure.getByRole("link", { name: "Try again" });
+    await reload.waitFor();
+    assert.ok(await initialFailure.locator(".recipe-card__link").count() > 0);
+    assert.equal(await initialFailure.locator(".recipe-filters--placeholder").count(), 1);
+    await reload.click();
+    await initialFailure.getByRole("searchbox", { name: "Search recipes" }).waitFor();
+    await initialFailure.close();
+
     await context.close();
   } finally {
     await browser.close();

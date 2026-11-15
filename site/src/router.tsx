@@ -49,15 +49,17 @@ function RecipeLibraryRoute() {
   return useContent().pagination ? <RecipeLibraryPage /> : <NotFoundPage />;
 }
 
+export const contentErrorCopy = {
+  fi: ["Sisällön lataaminen epäonnistui", "Yritä uudelleen"],
+  en: ["Could not load this page", "Try again"],
+  sv: ["Sidan kunde inte laddas", "Försök igen"],
+  th: ["โหลดเนื้อหาไม่สำเร็จ", "ลองอีกครั้ง"],
+} as const;
+
 function ContentError() {
   const { pathname } = useLocation();
   const locale = recipeLocaleFromPath(pathname);
-  const text = {
-    fi: ["Sisällön lataaminen epäonnistui", "Yritä uudelleen"],
-    en: ["Could not load this page", "Try again"],
-    sv: ["Sidan kunde inte laddas", "Försök igen"],
-    th: ["โหลดเนื้อหาไม่สำเร็จ", "ลองอีกครั้ง"],
-  }[locale];
+  const text = contentErrorCopy[locale];
   return <main className="container" lang={locale}><h1>{text[0]}</h1><a href={`${import.meta.env.BASE_URL.replace(/\/$/, "")}${pathname}`}>{text[1]}</a></main>;
 }
 
