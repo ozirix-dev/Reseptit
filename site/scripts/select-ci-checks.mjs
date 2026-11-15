@@ -273,6 +273,10 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false,
     plan.needsNode = true;
   }
   // The dedicated steps already run these files, even when a test itself changed.
+  if (plan.runTranslationReview) {
+    plan.unitTests.delete("tests/translation-batch-partition.test.ts");
+    plan.unitTests.delete("tests/f25-source-release-gate.test.ts");
+  }
   if (plan.runNutrition) for (const test of nutritionTests) plan.unitTests.delete(test);
   if (plan.runGlycemic) for (const test of glycemicTests) plan.unitTests.delete(test);
   plan.unitTests = [...plan.unitTests].sort();

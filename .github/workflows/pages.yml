@@ -44,10 +44,10 @@ jobs:
       contents: read
       pages: write
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v7
+      - uses: actions/setup-node@v7.1.0
         with:
           node-version: 22
           cache: npm
@@ -60,23 +60,34 @@ jobs:
         run: node --test site/scripts/run-browser-suites.test.mjs
 
       - name: Verify the tested revision
+        id: revision
         shell: bash
         env:
           PR_HEAD: ${{ github.event.pull_request.head.sha }}
-          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          PR_BASE_SNAPSHOT: ${{ github.event.pull_request.base.sha }}
+          PR_BASE_REF: ${{ github.event.pull_request.base.ref }}
           TESTED_SHA: ${{ github.sha }}
         run: |
           test "$(git rev-parse HEAD)" = "$TESTED_SHA"
+          pr_base=""
           if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
-            test "$(git rev-parse HEAD^1)" = "$PR_BASE"
             test "$(git rev-parse HEAD^2)" = "$PR_HEAD"
+            base_ref="refs/heads/$PR_BASE_REF"
+            git check-ref-format "$base_ref"
+            pr_base="$(git rev-parse HEAD^1)"
+            # The payload can retain the base SHA from when the PR was opened.
+            # Verify the merge parent against the current ref on this repository.
+            current_base="$(git ls-remote --exit-code origin "$base_ref" | cut -f1)"
+            test "$pr_base" = "$current_base"
+            git merge-base --is-ancestor "$PR_BASE_SNAPSHOT" "$pr_base"
           fi
-          printf 'Tested commit: %s\nPR head: %s\nPR base: %s\n' "$TESTED_SHA" "$PR_HEAD" "$PR_BASE" >> "$GITHUB_STEP_SUMMARY"
+          printf 'pr_base=%s\n' "$pr_base" >> "$GITHUB_OUTPUT"
+          printf 'Tested commit: %s\nPR head: %s\nPR base: %s\n' "$TESTED_SHA" "$PR_HEAD" "$pr_base" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Select risk-based checks
         id: select
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
+          BASE_SHA: ${{ steps.revision.outputs.pr_base || github.event.before || github.sha }}
           HEAD_SHA: ${{ github.sha }}
           EVENT_NAME: ${{ github.event_name }}
           FORCE_FULL: ${{ inputs.full_suite || false }}
@@ -90,7 +101,7 @@ jobs:
       - name: Check Git whitespace
         shell: pwsh
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
+          BASE_SHA: ${{ steps.revision.outputs.pr_base || github.event.before || github.sha }}
           HEAD_SHA: ${{ github.sha }}
           EVENT_NAME: ${{ github.event_name }}
         run: |
@@ -146,7 +157,7 @@ jobs:
 
       - name: Save chef quality pilot evidence
         if: steps.chef_pilot.outcome == 'success'
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: chef-quality-pilot-five
           path: |
@@ -185,7 +196,7 @@ jobs:
         shell: pwsh
         env:
           CHANGED_PATHS: ${{ steps.select.outputs.changed_paths }}
-          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
+          BASE_SHA: ${{ steps.revision.outputs.pr_base || github.event.before || github.sha }}
           HEAD_SHA: ${{ github.sha }}
         run: |
           $paths = @($env:CHANGED_PATHS -split "`n" | Where-Object { $_ })
@@ -197,13 +208,13 @@ jobs:
       - name: Check translation approvals and generate the work queue
         if: steps.select.outputs.run_content == 'true' || steps.select.outputs.run_translation_review == 'true'
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
+          BASE_SHA: ${{ steps.revision.outputs.pr_base || github.event.before || github.sha }}
         run: npm run queue:translations -- --base="$BASE_SHA"
         working-directory: site
 
       - name: Upload the translation work queue
         if: ${{ !cancelled() && (steps.select.outputs.run_content == 'true' || steps.select.outputs.run_translation_review == 'true') }}
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: translation-queue
           path: tmp/translation-review/queue.json
@@ -213,7 +224,7 @@ jobs:
       - name: Check new recipes for semantic duplicates (advisory)
         if: steps.select.outputs.run_content == 'true'
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
+          BASE_SHA: ${{ steps.revision.outputs.pr_base || github.event.before || github.sha }}
           HEAD_SHA: ${{ github.sha }}
         run: |
           npm run audit:similarity -- --changed --limit=20 --output=site/similarity-review.md
@@ -229,7 +240,7 @@ jobs:
 
       - name: Upload full duplicate audit for editorial review
         if: contains(steps.select.outputs.changed_paths, 'recipe-similarity')
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: recipe-similarity-inventory
           path: |
@@ -300,9 +311,18 @@ jobs:
           PLAYWRIGHT_BROWSER_CHANNEL: chrome
           BROWSER_SUITES: ${{ steps.select.outputs.browser_suites }}
 
-      - uses: actions/configure-pages@v6
+      - name: Preserve browser diagnostics on failure, if present
+        if: failure()
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: recipe-site-browser-diagnostics
+          path: tmp/v15/
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - uses: actions/configure-pages@v6.0.0
         if: steps.select.outputs.publish == 'true'
-      - uses: actions/upload-pages-artifact@v5
+      - uses: actions/upload-pages-artifact@v5.0.0
         if: steps.select.outputs.publish == 'true'
         with:
           path: site/dist
@@ -319,4 +339,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v5.0.1

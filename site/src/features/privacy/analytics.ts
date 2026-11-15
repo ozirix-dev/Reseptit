@@ -89,6 +89,7 @@ function currentPage() {
 }
 
 export function track(event: AnalyticsEvent) {
+  if (!analyticsEvents.includes(event)) return;
   const page = currentPage();
   if (page) send(event, page);
 }

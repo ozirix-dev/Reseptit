@@ -1,4 +1,5 @@
 import { siteTarget } from "../src/content/site-target";
+import { recipeDifficultyLabel } from "../src/features/recipes/recipe-i18n";
 import { createHash } from "node:crypto";
 import { publicRecipeQualityHold } from "./recipe-quality-holds";
 import { projectSafeWontonFiDisplay } from "./wonton-fi-public-display";
@@ -51,6 +52,32 @@ async function markdownFiles(dir: string): Promise<string[]> {
     return entry.isFile() && entry.name.endsWith(".md") ? [fullPath] : [];
   }));
   return files.flat();
+}
+
+const instructionHeadings = ["Valmistus", "Preparation", "Instructions", "Tillagning", "Gör så här", "การทำ", "วิธีทำ"];
+const descriptionHeadings = ["Kuvaus", "Description", "Beskrivning", "คำอธิบาย"];
+const noteHeadings = ["Muistiinpanot", "Huomioita", "Notes", "Anteckningar", "หมายเหตุ"];
+const nutritionBasisHeading = "Ravintoarvojen laskentaperuste";
+const publicNutritionBasis = new Set([
+  "karnivore-jauhelihakulho-munalla",
+  "karnivore-steak-and-eggs",
+  "karnivore-voilohi-pannulla",
+]);
+const sourceOnlyHeadings = [
+  "Ainekset", "Ingredients", "Ingredienser", "ส่วนผสม", "วัตถุดิบ",
+  "Täytteet ja kuorrutteet", "Annostus", "Perinne, lähde ja nimeäminen",
+  "Tausta ja erottuvuus", "Tausta", "Toimituksellinen alkuperä", "Tekijän tunnustus",
+];
+const classifiedHeadings = new Set([
+  ...instructionHeadings, ...descriptionHeadings, ...noteHeadings, ...sourceOnlyHeadings, nutritionBasisHeading,
+].map(heading => heading.toLowerCase()));
+
+function assertClassifiedRecipeSections(markdown: string, file: string): void {
+  for (const [, heading] of markdown.matchAll(/^##[ \t]+([^\r\n]+)$/gm)) {
+    if (!classifiedHeadings.has(heading.trim().toLowerCase())) {
+      throw new Error(`Unclassified public recipe section in ${file}: ${heading.trim()}`);
+    }
+  }
 }
 
 function section(markdown: string, titles: string[]): string {
@@ -180,13 +207,20 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       ? [data.image.src, ...(data.image.srcset ?? []).map((item) => item.src)]
       : [];
     imagePaths.forEach((imagePath) => publishedImagePaths.add(imagePath));
-    const instructions = section(parsed.content, ["Valmistus", "Preparation", "Instructions", "Tillagning", "Gör så här", "การทำ", "วิธีทำ"]);
+    assertClassifiedRecipeSections(parsed.content, relativePath);
+    const instructions = section(parsed.content, instructionHeadings);
     const safetyHold = publicSafetyHold(data.recipe_id, data.language);
     const visibleHold = safetyHold ?? publicRecipeQualityHold(data.recipe_id, data.language);
     const publicInstructions = visibleHold?.instructions ?? instructions;
     if (!instructions) throw new Error(`Published recipe has no instructions: ${filePath}`);
-    const descriptionSection = section(parsed.content, ["Kuvaus", "Description", "Beskrivning", "คำอธิบาย"]);
-    const notes = section(parsed.content, ["Muistiinpanot", "Huomioita", "Notes", "Anteckningar", "หมายเหตุ"]);
+    const descriptionSection = section(parsed.content, descriptionHeadings);
+    const nutritionBasis = data.language === "fi" && publicNutritionBasis.has(data.recipe_id)
+      ? section(parsed.content, [nutritionBasisHeading])
+      : "";
+    const notes = [
+      section(parsed.content, noteHeadings),
+      nutritionBasis && `### ${nutritionBasisHeading}\n\n${nutritionBasis}`,
+    ].filter(Boolean).join("\n\n");
     const dietTags = await reviewedDietTagsForSource(data.recipe_id, data.language, filePath, finnishSources.get(data.recipe_id));
     const instructionSteps = [...publicInstructions.matchAll(/^\s*\d+[.)]\s+(.+)$/gm)].map((match) => match[1].trim());
     recipes.push({
@@ -198,7 +232,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       instructionsText: instructionSteps.length ? instructionSteps : publicInstructions.split(/\n\s*\n/).filter(Boolean),
       notesHtml: await renderSafeMarkdown(!safetyHold && visibleHold ? "" : notes), servings: data.servings,
       timeTotalMin: data.time_total_min ?? null,
-      difficulty: data.difficulty ?? null, tags: data.tags,
+      difficulty: recipeDifficultyLabel(data.difficulty ?? null, data.language), tags: data.tags,
       image: data.image ? {
         src: `${baseUrl}/kuvat/${data.image.src}`,
         alt: data.image.alt, width: data.image.width, height: data.image.height,

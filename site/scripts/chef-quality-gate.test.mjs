@@ -35,12 +35,12 @@ test("pilot routes all five observed cases without publishing anything automatic
   assert.deepEqual(states, {
     "indonesialainen-serabi-kookospannukakku": "EDITORIAL_REVIEW",
     "indonesialainen-bakwan-maissifritter": "HOLD_MATERIAL_EVIDENCE",
-    "pohjoisafrikkalainen-bissara": "HOLD_TIME_SAFETY",
+    "pohjoisafrikkalainen-bissara": "EDITORIAL_REVIEW",
     "japanilainen-yaki-onigiri-misolla": "HOLD_MULTI_AXIS",
     "indialainen-poha-maapahkinoilla": "HOLD_TRANSLATION_SYNC",
   });
   assert.equal(result.textRepairCandidates, 0);
-  assert.equal(result.holdCases, 4);
+  assert.equal(result.holdCases, 3);
   const serabi = result.results.find((r) => r.recipe_id === "indonesialainen-serabi-kookospannukakku");
   assert.deepEqual(serabi.assessment.blockers, []);
   assert.equal(serabi.findings.find((finding) => finding.kind === "generic_instruction").status, "fixed");
@@ -70,7 +70,10 @@ test("bakwan remains on HOLD for material evidence after its generic instruction
 test("confirmed amounts and stated times are checked from source, not guessed", async () => {
   const result = await runPilot(await load(), root);
   const bissara = result.results.find((r) => r.recipe_id === "pohjoisafrikkalainen-bissara");
-  assert.ok(bissara.probes.some((p) => p.probe === "time_equals" && p.observed === 25));
+  assert.ok(bissara.probes.some((p) => p.probe === "time_equals" && p.observed === 555 && p.pass));
+  assert.equal(bissara.probes.filter((p) => p.probe === "instruction_contains" && p.pass).length, 3);
+  assert.ok(bissara.findings.every((finding) => finding.status === "fixed"));
+  assert.equal(bissara.releaseEligible, false);
   const onigiri = result.results.find((r) => r.recipe_id === "japanilainen-yaki-onigiri-misolla");
   assert.equal(onigiri.probes.filter((p) => p.probe === "ratio_at_least" && p.pass).length, 2);
   assert.ok(onigiri.probes.every((p) => p.pass));

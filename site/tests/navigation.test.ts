@@ -38,6 +38,13 @@ test("language switching preserves translated content and keeps Finnish-only blo
   assert.equal(languageDestination("th", "/en/glycemic-load/", []), "/th/glycemic-load/");
 });
 
+test("language switching keeps readers in the recipe library", () => {
+  assert.equal(languageDestination("en", "/reseptit/sivu/2/", []), "/en/recipes/all/");
+  assert.equal(languageDestination("sv", "/en/recipes/all/", []), "/sv/recept/alla/");
+  assert.equal(languageDestination("th", "/sv/recept/alla/sida/2", []), "/th/recipes/all/");
+  assert.equal(languageDestination("fi", "/th/recipes/all/page/2/", []), "/reseptit/");
+});
+
 test("all locale indexes expose two separate semantic navigation groups", async () => {
   for (const route of ["", "en/recipes", "sv/recept", "th/recipes", "ruokaopas"]) {
     const html = await readFile(path.join(dist, route, "index.html"), "utf8");

@@ -30,6 +30,7 @@
     "report:inventory": "npm run content:sync && tsx scripts/inventory.ts",
     "audit:seo": "tsx scripts/seo-audit.ts",
     "audit:seo:public": "tsx scripts/seo-public.ts",
+    "verify:production": "tsx scripts/verify-production-release.ts",
     "nutrition:batch": "tsx scripts/nutrition-batch-builder.ts",
     "audit:nutrition": "tsx scripts/nutrition-audit.ts",
     "audit:glycemic-load": "tsx scripts/glycemic-load-pilot.ts && tsx scripts/prepare-routes.ts",

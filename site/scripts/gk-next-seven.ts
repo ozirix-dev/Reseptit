@@ -1,4 +1,4 @@
-import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
+import {approvedRecipeSnapshotRecord,recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
 import {acceptsReviewedNutritionModelBinding} from './reviewed-nutrition-model-binding';
 /** Seven exact, content-approved A versions. This adapter grants no release authority. */
 import {readFileSync} from 'node:fs';
@@ -14,46 +14,61 @@ const read=(root:string,p:string)=>JSON.parse(readFileSync(path.join(root,p),'ut
 const text=(root:string,p:string)=>readFileSync(path.join(root,p),'utf8');
 const locales=['fi','en','sv','th'] as const;
 const localized=(v:any):LocalizedText=>{if(!v||!locales.every(l=>typeof v[l]==='string'&&v[l].trim()))throw Error('Missing next-seven locale');return v;};
+const snapshotModule = "site/scripts/approved-recipe-note-edits.ts";
+const approvedSnapshotSeal = "4d22f06928a0702bef9b556c32273f7e988e1369da1800c9152b9e7a40864c7d";
+const scopedLogic = {
+  [snapshotModule]: "1795584d070b0ebf3c7c54aadf0f413a9207ba1ce76cc1367e1fc644a3dcd7c7",
+  "site/scripts/restore-recipe-audit-snapshot.ts": "9c883849e1227367a2666e7dca04d10f00274444890ea7f48806c4b7fbba8ce6",
+  "site/scripts/biryani-reviewed-source.ts": "3f43a2102ba328f53137e0be691d1d37aca8b7786dab9646808e34ff2ec30f9b",
+  "site/scripts/gk149-approved-six.ts": "a6c105ce0191aa004e7e1b1ee5941aa933ad1d7ebba48ff928556181f122b5f3",
+};
+const snapshotPaths = [
+  "kaannokset/en/paaruoat/chettinad-kana.md",
+  "kaannokset/en/paaruoat/pad-kee-mao-vhh-konjac.md",
+  "kaannokset/en/paaruoat/pad-see-ew-vhh-konjac.md",
+  "kaannokset/sv/paaruoat/chettinad-kana.md",
+  "kaannokset/sv/paaruoat/pad-kee-mao-vhh-konjac.md",
+  "kaannokset/sv/paaruoat/pad-see-ew-vhh-konjac.md",
+  "kaannokset/th/paaruoat/chettinad-kana.md",
+  "kaannokset/th/paaruoat/pad-kee-mao-vhh-konjac.md",
+  "kaannokset/th/paaruoat/pad-see-ew-vhh-konjac.md",
+  "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md",
+  "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md",
+  "reseptit/aamupalat/japanilainen-natto-riisikulho.md",
+  "reseptit/aamupalat/vietnamilainen-kahvijogurtti-banaanilla.md",
+  "reseptit/paaruoat/chettinad-kana.md",
+  "reseptit/paaruoat/pad-kee-mao-vhh-konjac.md",
+  "reseptit/paaruoat/pad-see-ew-vhh-konjac.md",
+] as const;
+
+// Scope the migrated seal to the inputs used by the seven approved cases.
+// The immutable case hashes still bind the restored bytes and the arithmetic.
+export function verifyNextSevenSnapshotRecords(root: string) {
+  const history = read(root, "docs/nutrition/recipe-correctness-history.json");
+  const records = snapshotPaths.map(file => [file, approvedRecipeSnapshotRecord(file), history[file] ?? null]);
+  if (digest(records) !== "ec80ffd1d07d6ed2a7fa2fb5c0024236144e4fd84895e865ff6035c522613673") {
+    throw Error("Next-seven scoped recipe snapshot changed");
+  }
+  for (const [file, expected] of Object.entries(scopedLogic)) {
+    if (textHash(text(root, file)) !== expected) throw Error("Next-seven snapshot logic changed: " + file);
+  }
+}
+
 export function verifyNextSevenManifest(root:string){
  const raw=text(root,folder+'integration.json');
  if(textHash(raw)!=='fde6fea10c41df71f766d19ea5346ec0af97f761952e9f507169c5c0c9667194')throw Error('Next-seven integration binding changed');
  const m=JSON.parse(raw);
  if(m.integrationAuthorized!==true||m.readyAuthorized!==false||m.mergeAuthorized!==false||m.deployAuthorized!==false||Object.keys(m.approvedInputs).length!==7)throw Error('Next-seven scope changed');
+ if (m.filesLfSha256[snapshotModule] !== approvedSnapshotSeal) throw Error('Next-seven original snapshot seal changed');
+ verifyNextSevenSnapshotRecords(root);
  for (const [file, expected] of Object.entries(m.filesLfSha256)) {
+  if (file === snapshotModule) continue;
   const actual = textHash(text(root, file));
   if (actual === expected) continue;
   // The exact biryani adapter verifies historical recipe text before hashing.
   if (file === 'site/scripts/gk149-model.ts'
    && expected === 'ee9615ea8bf02e7a16179f9abb3c4af2e505e114e98c452e46c2ab38b1167844'
    && actual === '714262e43544516409517528686fc91c0bf1b394b3220d4d363fecdd1f9b0b5c') continue;
-  // Exact editorial adapter revisions for published translations and reviewed wording corrections.
-  // Keep the original manifest and the approved recipe and calculation hashes intact.
-  if (file === 'site/scripts/approved-recipe-note-edits.ts'
-   && expected === '4d22f06928a0702bef9b556c32273f7e988e1369da1800c9152b9e7a40864c7d'
-   && (actual === 'da00bd58b38b52c85b949de24ef35c352c3883d132b9672a72b984cbf8958477'
-    || actual === '0a1ef13a8e17b968a325444588f3922986962341d30f2d27c8ef3c4a01180004'
-    || actual === 'ea05d0f87e85189df63f1b7a21aa1c46c2e5390cc66a56735299d77f30dd5cd7'
-    || actual === '703b8e8fa1ee9dc20853a0cd7e14078e6f610d9daad23645832bcd12557a6e76'
-    || actual === 'fe52f310b87930d55f02e09e09006fbb0989d76141fcaf54a45255defecf61da'
-    || actual === '3635d51074b13cff4d8d3889b5ab40bc29cb9b27f328869bb413e38ed3a77c63'
-    || actual === '6482b7fb650e362cc02282dbf7a24d77b1ef268dcb6caf25cfcdcddd4ad5db84'
-    || actual === '17225036f790fd77bc5de97be391b4f559ea050f6dc58bd7bb0ca13dff9149a4'
-    || actual === '4a5141b2fd318e3a3e004e1ae01ab69e38f92d2ed60da12909558fb5336a0779'
-    || actual === '9c95348cb8bc3f1fc9496dbe5726d78830f79812e0ce4d0941e71da14a2ac48d'
-    || actual === 'afd3d05e9b3ea35c5a5a4080210f1df5c082f69f6e3b86a2a651c51bd7316348'
-    || actual === '6b845abc4a9670cec62ee9e7c2daaad51276114f28de38dfc7df5963c558d0ab'
-    || actual === 'c6005f1b038b2eecda65a26ecce6e5b7c6cba9c71c1a076bdb1ab1d961b811cd'
-    || actual === 'de0aa67bb0e402c852fcda748f5f3e4c2a3212e10e789c58a3815da9e78a78fc'
-    || actual === '3da760eba1024f55beae98b244a43f92a015973d93cbdd2b1ca9baf56978c241'
-    || actual === '7772777ca2775cec1adb4d70613c3546b0a9be9c3a765d64a5f327bc3ee843ab'
-    || actual === '71599e3c90602a084340e79a851aed8ede77a438a4dd84ba39db82288d15cd53'
-    || actual === '2c1ba0273520e0f63f62ca4e2f4d27bc9dbbc52c6d947f66875e5bb36e8f893e'
-    || actual === '4aae041b64fca74c37b925db880afbd0a275cb4c88ac0cc238c82766a19b8ba3'
-    || actual === '9f9fb7f6a446cbe170e8dd4039d631129296ddf33c5b894b04d54860d0204743'
-    || actual === '7426f38f2371cb4f6726b3fb0e007d402d4c2f54b74a788b6dc756b5e6388461'
-    || actual === 'bfc5e67d8e044c30a73db16b7fdf855e816adced896f5a1f9921a20a52ea15e3'
-    || actual === 'f85d22b9e1defdfc54e52e09e3b666563c4ef7295f50545bf9f32d755decccba'
-    || actual === '29de4f8abb3d536156bcd3080c5c4d4c7c0dc8a9f2b6abc0a1162c9e0450af8f')) continue;
   throw Error('Next-seven file changed: '+file);
  }
  return m;

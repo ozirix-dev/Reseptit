@@ -117,12 +117,12 @@
     {
       "recipe_id": "pohjoisafrikkalainen-bissara",
       "path": "reseptit/aamupalat/pohjoisafrikkalainen-bissara.md",
-      "source_blob_sha": "f64ad230f209daf4c1125edd09ede4c734e4e620",
-      "summary": "150 g dried fava beans, 25 min total time and generic broth/noodles instructions cannot produce a reliably soft puréed bissara. Whole versus split peeled dried beans are not specified. Need ingredient-state and timing review, not a cosmetic rewrite.",
+      "source_blob_sha": "1c7fb66e7512d91bd986d3de8c20a4a5ee0251c6",
+      "summary": "The reviewed FI recipe uses 150 g dried, peeled split fava beans. The 555-minute estimate includes soaking. The method specifies discarded soaking water and a fully soft cooking endpoint. The linked FI/EN/SV/TH review is docs/reviews/2026-11-13-bissara-kielikatselmointi.md.",
       "probes": [
         {
           "kind": "time_equals",
-          "minutes": 25
+          "minutes": 555
         },
         {
           "kind": "ingredient_amount",
@@ -132,7 +132,15 @@
         },
         {
           "kind": "instruction_contains",
-          "text": "Lisää nuudelit"
+          "text": "liota jääkaapissa vähintään 8 tuntia"
+        },
+        {
+          "kind": "instruction_contains",
+          "text": "Kaada liotusvesi pois"
+        },
+        {
+          "kind": "instruction_contains",
+          "text": "kauttaaltaan hyvin pehmeitä ja hajoavat lusikalla painettaessa"
         },
         {
           "kind": "ingredient_absent",
@@ -143,20 +151,20 @@
         {
           "kind": "unrealistic_time",
           "severity": "P1",
-          "status": "open",
-          "explanation": "Declared 25 minutes cannot generally cover dried fava soaking and simmering to a smooth puree; bean processing is unspecified."
+          "status": "fixed",
+          "explanation": "The revised total time explicitly accounts for the 8-hour soak and the simmer."
         },
         {
           "kind": "unsafe_or_incomplete_handling",
           "severity": "P1",
-          "status": "open",
-          "explanation": "The bean type (split/peeled versus whole) and the fully-soft cooking endpoint are missing."
+          "status": "fixed",
+          "explanation": "The published source specifies peeled split beans, chilled soaking, fresh cooking water and a fully soft endpoint."
         },
         {
           "kind": "generic_instruction",
           "severity": "P1",
-          "status": "open",
-          "explanation": "Stock, noodles and leafy greens appear only in generic instructions, not in this bean soup's actual ingredient list."
+          "status": "fixed",
+          "explanation": "The revised steps use the stated ingredients and describe the actual cooking and puréeing method."
         }
       ],
       "references": [
@@ -171,7 +179,7 @@
       ],
       "proposed_change": {
         "kind": "ingredients_method_time",
-        "next_step": "Choose peeled/split or whole fava bean form with source basis, define correct soft endpoint and time; update translations and GI/GL provenance as needed."
+        "next_step": "Keep the existing source and four-language review linked. Any new formulation, method or claim goes through the applicable review."
       }
     },
     {

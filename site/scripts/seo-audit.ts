@@ -29,7 +29,7 @@ const activeMarkup = (html: string) => activeDocument(html).replace(/<(script|st
 const activeScripts = (html: string) => [...activeDocument(html).matchAll(/<(script|style|textarea|title|xmp|iframe|noembed|noframes|noscript)\b([^>]*)>([\s\S]*?)(?:<\/\1\s*>|$)/gi)]
   .filter((match) => match[1].toLowerCase() === "script")
   .map((match) => ({ attributes: attrs(match[2]), content: match[3] }));
-const tags = (html: string, name: string) => [...activeMarkup(html).matchAll(new RegExp(`<${name}\\b[^>]*>`, "gi"))].map((m) => attrs(m[0]));
+export const tags = (html: string, name: string) => [...activeMarkup(html).matchAll(new RegExp(`<${name}\\b[^>]*>`, "gi"))].map((m) => attrs(m[0]));
 const texts = (html: string, name: string) => [...activeMarkup(html).matchAll(new RegExp(`<${name}\\b[^>]*>([\\s\\S]*?)</${name}>`, "gi"))].map((m) => decodeHtml(m[1].replace(/<[^>]+>/g, "")).trim());
 
 export function expectedPages(recipes: RecipeEntry[]): ExpectedPage[] {

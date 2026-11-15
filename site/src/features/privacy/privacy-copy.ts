@@ -25,7 +25,7 @@ export const privacyCopy = {
     exercise: "Voit pyytää pääsyä tietoihisi, tietojen oikaisua tai poistamista ja käsittelyn rajoittamista. Soveltuvin osin voit vastustaa käsittelyä tai pyytää tietojen siirtämistä. Voit peruuttaa analytiikkasuostumuksesi milloin tahansa. Peruuttaminen koskee tulevaa käsittelyä. Lähetä tietosuojapyyntö yllä olevaan osoitteeseen. Voit tehdä valituksen tietosuojavaltuutetun toimistolle.",
     regulator: "Tietosuojavaltuutetun toimisto", allow: "Salli analytiikka", deny: "Hylkää analytiikka",
     consent: "Saammeko mitata Recipavon käyttöä Plausiblella? Valinta on vapaaehtoinen.",
-    enabled: "Analytiikka on sallittu tässä selaimessa.", disabled: "Analytiikka on pois käytöstä tässä selaimessa.",
+    enabled: "Plausible-analytiikka on sallittu tässä selaimessa.", disabled: "Plausible-analytiikka on pois käytöstä tässä selaimessa.",
   },
   en: {
     title: "Privacy and contact", description: "How Recipavo handles data when you browse or get in touch. You can also change your analytics choice here.",
@@ -40,7 +40,7 @@ export const privacyCopy = {
     exercise: "You can request access, correction, deletion or restriction of your data. Where applicable, you can object to processing or request data portability. You can withdraw analytics consent at any time for future processing. Email the address above to exercise your rights. You can lodge a complaint with Finland’s Data Protection Ombudsman.",
     regulator: "Office of the Data Protection Ombudsman", allow: "Allow analytics", deny: "Reject analytics",
     consent: "May we use Plausible to measure how Recipavo is used? This is optional.",
-    enabled: "Analytics is allowed in this browser.", disabled: "Analytics is off in this browser.",
+    enabled: "Plausible Analytics is enabled in this browser.", disabled: "Plausible Analytics is off in this browser.",
   },
   sv: {
     title: "Integritet och kontakt", description: "Så behandlar Recipavo uppgifter när du besöker webbplatsen eller kontaktar oss. Här kan du också ändra ditt val för analys.",
@@ -55,7 +55,7 @@ export const privacyCopy = {
     exercise: "Du kan begära tillgång till, rättelse eller radering av dina uppgifter samt begränsning av behandlingen. När det är tillämpligt kan du invända mot behandlingen eller begära dataportabilitet. Du kan när som helst återkalla ditt samtycke till analys för framtida behandling. Skicka din begäran till adressen ovan. Du kan lämna in ett klagomål till dataombudsmannens byrå i Finland.",
     regulator: "Dataombudsmannens byrå", allow: "Tillåt analys", deny: "Avvisa analys",
     consent: "Får vi mäta hur Recipavo används med Plausible? Valet är frivilligt.",
-    enabled: "Analys är tillåten i den här webbläsaren.", disabled: "Analys är avstängd i den här webbläsaren.",
+    enabled: "Plausible-analys är tillåten i den här webbläsaren.", disabled: "Plausible-analys är avstängd i den här webbläsaren.",
   },
   th: {
     title: "ความเป็นส่วนตัวและการติดต่อ", description: "วิธีที่ Recipavo ใช้ข้อมูลเมื่อคุณเข้าชมเว็บไซต์หรือติดต่อเรา และวิธีเปลี่ยนการตั้งค่าการวิเคราะห์การใช้งาน",
@@ -70,6 +70,6 @@ export const privacyCopy = {
     exercise: "คุณขอเข้าถึง แก้ไข ลบ หรือจำกัดการประมวลผลข้อมูลของคุณได้ และมีสิทธิคัดค้านหรือขอโอนย้ายข้อมูลเมื่อเข้าเงื่อนไข คุณถอนความยินยอมได้ทุกเมื่อสำหรับการประมวลผลในอนาคต โปรดส่งคำขอไปยังอีเมลด้านบน คุณร้องเรียนต่อสำนักงานผู้ตรวจการคุ้มครองข้อมูลของฟินแลนด์ได้",
     regulator: "สำนักงานผู้ตรวจการคุ้มครองข้อมูลของฟินแลนด์", allow: "อนุญาตการวิเคราะห์", deny: "ไม่อนุญาตการวิเคราะห์",
     consent: "คุณอนุญาตให้เราใช้ Plausible วัดการใช้งาน Recipavo หรือไม่ คุณเลือกได้ตามสมัครใจ",
-    enabled: "เบราว์เซอร์นี้อนุญาตการวิเคราะห์แล้ว", disabled: "เบราว์เซอร์นี้ปิดการวิเคราะห์อยู่",
+    enabled: "เบราว์เซอร์นี้อนุญาตการวิเคราะห์ด้วย Plausible แล้ว", disabled: "เบราว์เซอร์นี้ปิดการวิเคราะห์ด้วย Plausible อยู่",
   },
 } satisfies Record<RecipeLocale, Record<string, string>>;

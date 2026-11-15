@@ -249,6 +249,18 @@ test("static and browser tests build the output before their focused runners", (
   assert.deepEqual(browserPlan.unitTests, []);
 });
 
+test("translation partition and F25 checks run on direct edits or in the selected translation suite", () => {
+  const tests = ["tests/translation-batch-partition.test.ts", "tests/f25-source-release-gate.test.ts"];
+  const changedTests = tests.map(file => "site/" + file);
+  const targeted = classifyPaths(changedTests);
+  assert.equal(targeted.runTranslationReview, false);
+  assert.deepEqual(targeted.unitTests, [...tests].sort());
+  const mixed = classifyPaths([...changedTests, "meta/kaannokset/codex-review-evidence.json"]);
+  assert.equal(mixed.runTranslationReview, true);
+  assert.ok(tests.every(file => !mixed.unitTests.includes(file)));
+  assert.equal(classifyPaths(changedTests, { forceFull: true }).runTranslationReview, true);
+});
+
 test("workflow and classification failures select the full fallback", () => {
   assert.equal(classifyPaths([".github/workflows/pages.yml"]).full, true);
   assert.equal(classifyPaths([], { classificationFailed: true }).full, true);

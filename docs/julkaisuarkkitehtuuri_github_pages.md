@@ -44,6 +44,19 @@ GitHub Pages -stagingiin projektipolun `/Reseptit/` alle. Tuotantojulkaisu
 Cloudflare Pagesiin edellyttää erikseen hyväksyttyä, testattua commit-SHA:ta.
 Tuotannon reitit alkavat verkkotunnuksen juuresta.
 
+Varmenna Cloudflare-promootion jälkeen www-revisio käyttämällä sen testattua
+tuotantoartefaktia, jonka `_headers` sisältää julkaistavan commitin:
+
+```powershell
+npm run verify:production -- <commit-sha> https://www.recipavo.com <julkaisun-dist>
+```
+
+Tarkistus käyttää vain GET-pyyntöjä. Se tarkistaa www:n revision, HTML- ja
+SEO-otoksen sekä robots.txt:n, sivukartan ja JS-entryn sisällön.
+`cachedMetadata` kertoo, että tavallisen pyynnön revisio-otsake poikkeaa
+odotetusta, mutta sisältö vastaa artefaktia ja revisiokohtainen pyyntö
+palauttaa odotetun revision ja samat tavut.
+
 ### Reseptiversion julkaisu
 
 - Tarkista uuden FI-lähteen kirjattu toimituksellinen näyttö ajamalla

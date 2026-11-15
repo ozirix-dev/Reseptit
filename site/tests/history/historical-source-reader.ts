@@ -79,3 +79,18 @@ export const historicalSources = createHistoricalSourceReader(
   file => readFileSync(new URL(file, import.meta.url)),
   ["pohjoisafrikkalainen-bissara", "korealainen-bindaetteok-aamiaiseksi", "japanilainen-kabocha-puuro", "intialainen-ven-pongal", "korealainen-kongjuk-soijapapu-riisipuuro"],
 );
+
+type TransitionFixture = { fixture: string; blob: string; sha256: string };
+const transitions: Record<"chef" | "brioche", { sourceCommit: string; files: Record<string, TransitionFixture> }> =
+  JSON.parse(readFileSync(new URL("./transition-manifest.json", import.meta.url), "utf8"));
+
+export function readHistoricalTransition(group: keyof typeof transitions, file: string): string {
+  const { sourceCommit, files } = transitions[group];
+  const record = files[file];
+  const context = `${sourceCommit}:${file}`;
+  assert.ok(record, context + ": missing historical fixture");
+  const bytes = readFileSync(new URL(record.fixture, import.meta.url));
+  assert.equal(createHash("sha256").update(bytes).digest("hex"), record.sha256, context);
+  assert.equal(gitBlob(bytes), record.blob, context);
+  return bytes.toString("utf8");
+}

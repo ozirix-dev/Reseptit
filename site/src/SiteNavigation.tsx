@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { glycemicLoadPath, recipeIndexPath } from "@/features/recipes/recipe-i18n";
+import { parseRecipeLibraryPagePath, recipeLibraryPagePath } from "@/features/recipes/recipe-pagination";
 import type { RecipeLocale } from "@/types/content";
 import type { TranslationLink } from "@/content/route-data";
 import { privacyLocaleFromPath, privacyPaths } from "@/features/privacy/privacy-copy";
@@ -30,6 +31,7 @@ export function languageDestination(target: RecipeLocale, pathname: string, tran
   if (privacyLocaleFromPath(pathname)) return privacyPaths[target];
   if (isMethod(pathname)) return glycemicLoadPath(target);
   if (isBlog(pathname)) return target === "fi" ? pathname : recipeIndexPath(target);
+  if (parseRecipeLibraryPagePath(pathname.replace(/\/?$/, "/"))) return recipeLibraryPagePath(target);
   return translations.find(t => t.locale === target)?.routePath ?? recipeIndexPath(target);
 }
 

@@ -9,7 +9,7 @@ import { originalForB21CanonicalHistory } from "./b21-canonical-historical-trans
 import { originalForC13CanonicalHistory } from "./c13-canonical-historical-transition";
 import { originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
 import { originalForJumeokbapHistory } from "./jumeokbap-history";
-import { historicalSources } from "./history/historical-source-reader";
+import { historicalSources, readHistoricalTransition } from "./history/historical-source-reader";
 import { originalForTamagoKakeGohanHistory } from "./tamago-kake-gohan-history";
 import { originalForKetoprakHistory } from "./ketoprak-history";
 import { execFileSync } from "node:child_process";
@@ -32,7 +32,6 @@ import { historicalBreakfastRecipe, reviewedBreakfastPaths } from "../scripts/gk
 // PR #302 introduced three recipes after the frozen 326-recipe GK baseline.
 // The separately approved P0 image/ingredient correction is pinned to one
 // exact commit without mutating any of the old 326 recipe calculation inputs.
-const briocheImageCorrectionSha = "992cf1f4f623da0d4ee596770ce7c211e8c31a89";
 const classicsCommit = "068c8e540534a5177c2e4daa52dcf7357dab5693";
 const classicCategory: Record<string, string> = {
   "karjalanpiirakat-riisipuurolla": "leivonnaiset",
@@ -385,7 +384,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     if (status === "A" && briochePublishedFiles.has(file)) {
       // Prove that these are the *exact* approved P0-corrected files, not
       // arbitrary new recipe additions admitted into historical baselines.
-      const published = execFileSync("git", ["show", `${briocheImageCorrectionSha}:${file}`], { cwd: root, encoding: "utf8" });
+      const published = readHistoricalTransition("brioche", file);
       assert.equal(readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n"), published.replaceAll("\r\n", "\n"), change);
       continue;
     }
