@@ -23,6 +23,7 @@ import path from "node:path";
 import { parseMarkdown, renderSafeMarkdown, renderInstructionSteps } from "../src/content/markdown";
 import { assertQuantifiedCriticalIngredients, assertUniqueRecipes, assertSnackPublicationReady } from "../src/content/recipe-validation";
 import { recipeFrontmatterSchema } from "../src/content/schema";
+import { inheritSourceAdditionalCategories } from "../src/content/recipe-categories";
 import { assertGlutenFreeReviewRecord } from "./gluten-free-review";
 import { rebuildPublishedImages } from "../src/content/published-images";
 import type { RecipeEntry, RecipeLocale, SiteContentIndex } from "../src/types/content";
@@ -189,7 +190,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     const instructionSteps = [...publicInstructions.matchAll(/^\s*\d+[.)]\s+(.+)$/gm)].map((match) => match[1].trim());
     recipes.push({
       kind: "recipe", recipeId: data.recipe_id, slug: data.url_slug, locale: data.language,
-      title: data.title, category: data.category, dietClass: data.diet_class ?? null, ...(dietTags.length ? { dietTags } : {}), ...(data.gluten_free === true ? { glutenFree: true } : {}), routePath: routeForRecipe(data.language, data.url_slug),
+      title: data.title, category: data.category, ...(data.additional_categories?.length ? { additionalCategories: data.additional_categories } : {}), dietClass: data.diet_class ?? null, ...(dietTags.length ? { dietTags } : {}), ...(data.gluten_free === true ? { glutenFree: true } : {}), routePath: routeForRecipe(data.language, data.url_slug),
       description: visibleHold?.description ?? recipeDescription(parsed.content, descriptionSection, data.language, data.ingredients), ingredients: data.ingredients,
       instructionsHtml: await renderSafeMarkdown(publicInstructions),
       instructionStepsHtml: await renderInstructionSteps(publicInstructions),
@@ -223,7 +224,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     recipe.image.srcSet = [...source.variants, source]
       .map((image) => `${baseUrl}/kuvat/${image.path} ${image.width}w`).join(", ");
   }
-  return recipes.sort((a, b) => a.category.localeCompare(b.category) || a.title.localeCompare(b.title));
+  return inheritSourceAdditionalCategories(recipes).sort((a, b) => a.category.localeCompare(b.category) || a.title.localeCompare(b.title));
 }
 
 function xmlEscape(value: string): string {
