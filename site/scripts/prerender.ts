@@ -81,7 +81,7 @@ function routeMetadata(route: string, content: RouteContent) {
     ] : []);
   return {
     lang: locale,
-    prioritizeImage: Boolean(avifSrc),
+    priorityImageMedia: avifSrc ? avifMedia : undefined,
     head: [
       `<title>${escapeHtml(title)}</title>`,
       avifPreload,
@@ -99,6 +99,32 @@ function routeMetadata(route: string, content: RouteContent) {
       ...imageTags, ...(blogPost ? [`<meta property="og:image" content="${baseUrl}${blogPost.image}" />`, `<meta name="twitter:image" content="${baseUrl}${blogPost.image}" />`] : []), ...alternates, ...desktopImages, jsonLd,
     ].filter(Boolean).join("\n    "),
   };
+}
+
+function imagePriorityEntry(entrySrc: string, media: string): string {
+  // This module runs after parsing so the responsive picture and payload exist.
+  // Let the image finish first, with a bounded wait and an immediate interaction path.
+  return `<script type="module">
+    const image = matchMedia(${JSON.stringify(media)}).matches &&
+      document.querySelector("#root img[fetchpriority=high]");
+    const importEntry = () => { void import(${JSON.stringify(entrySrc)}); };
+    if (!image || image.complete) {
+      importEntry();
+    } else {
+      const listeners = new AbortController();
+      const start = () => {
+        listeners.abort();
+        clearTimeout(timeout);
+        importEntry();
+      };
+      const options = { signal: listeners.signal };
+      const timeout = setTimeout(start, 1000);
+      image.addEventListener("load", start, options);
+      image.addEventListener("error", start, options);
+      document.addEventListener("pointerdown", start, { ...options, capture: true });
+      document.addEventListener("keydown", start, { ...options, capture: true });
+    }
+  </script>`;
 }
 
 function replaceDocument(shell: string, head: string, locale: string, body: string): string {
@@ -128,8 +154,8 @@ try {
   const css = await readFile(path.join(distDir, stylesheet[1]), "utf8");
   if (/<\/style/i.test(css)) throw new Error("Vite stylesheet cannot be safely inlined.");
   const inlineStyleShell = shell.replace(stylesheet[0], () => `<style>${css}</style>`);
-  // Let the first visible image use the connection before the client entry.
-  const imagePriorityShell = inlineStyleShell.replace('<script type="module"', '<script type="module" fetchpriority="low"');
+  const entry = /<script type="module"[^>]* src="([^"]+)"[^>]*><\/script>/.exec(shell);
+  if (!entry) throw new Error("Missing Vite entry module in the HTML shell.");
   const homeRoutes = new Set(Object.values(localeIndexes));
   const routes = Object.keys(contentManifest);
   for (const route of routes) {
@@ -139,7 +165,9 @@ try {
     const router = await createStaticRouter(route, initial);
     const body = renderToString(React.createElement(RouterProvider, { router }));
     const data = `<script id="page-content" type="application/json">${serializeRouteContent(initial)}</script>`;
-    const routeShell = metadata.prioritizeImage ? imagePriorityShell
+    const { priorityImageMedia } = metadata;
+    const routeShell = priorityImageMedia
+      ? inlineStyleShell.replace(entry[0], () => imagePriorityEntry(entry[1], priorityImageMedia))
       : homeRoutes.has(route) || initial.pagination ? inlineStyleShell : shell;
     const html = routeShell !== shell
       ? replaceDocument(routeShell, metadata.head, metadata.lang, body)
