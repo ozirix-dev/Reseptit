@@ -15,7 +15,7 @@ node --import tsx scripts/recipe-state-cli.ts
 ```
 
 Komento regeneroi sisältö- ja auditointisyötteet ja tallentaa
-`tmp/recipe-state/current.json`-tiedoston repon juureen. Aja saman työpuun
+`tmp/recipe-state/current.json`-tiedoston repon juureen suhteutetulla polulla. Aja saman työpuun
 buildit ja auditoinnit peräkkäin, sillä niiden välituotteilla on yhteiset polut.
 Tarkista `sourceCommit` ennen tuloksen käyttöä. Jos ajo keskeytyy, levyllä voi
 olla edellisen onnistuneen ajon projektio. Git ohittaa projektion ja
@@ -93,6 +93,10 @@ Nämä tapaukset jäävät Git-historian varaan.
   GK-auditoinnissa vaihtui ajoaikaleima. Ravintoauditoinnin laskelmat ja
   tilat täsmäsivät, kun ajoaika ja koodin provenienssi jätettiin vertailusta
   pois. Projektioajo muutti 0 versionhallittua tiedostoa.
+- GK149-regressio lukee viisi [PR:ssä #663](https://github.com/ozirix-dev/Reseptit/pull/663)
+  arkistoitua Markdownia varmennetusta palautuscommitista ja tunnistaa kahden
+  käyttöohjeen yhdistetyt tiedostoversiot. Testin tulos- ja laskentalukot
+  käyttävät alkuperäistä lähtöversiota.
 
 ## GK-erädelta ja julkinen paketti
 

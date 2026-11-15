@@ -2,13 +2,41 @@ import {restoreBeforeAfcdCorrection,afcdSourceBeforeCorrection} from './restore-
 import {isP1CoconutHold,assertP1CoconutHold,assertOnlyP1CoconutInputChanges} from './p1-coconut-hold-guard';
 import {assertRecipeBaseline,isReviewedF25NutritionTransition} from "./assert-recipe-baseline";
 import test from 'node:test';import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';import {execFileSync} from 'node:child_process';import {fileURLToPath} from 'node:url';import path from 'node:path';
+import {existsSync,readFileSync} from 'node:fs';import {execFileSync} from 'node:child_process';import {fileURLToPath} from 'node:url';import path from 'node:path';
 import {ACTIVATION,loadPilot,evaluate,summarize,formatResult,digest,verifyCase,verifyComposition,type Case,type Result} from '../scripts/gk149-model';
 import {MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G,CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G} from '../scripts/glycemic-load-model';
 const root=fileURLToPath(new URL('../../',import.meta.url)),folder='docs/nutrition/gk80-operation149/';
 const json=(p:string)=>JSON.parse(readFileSync(path.join(root,p),'utf8'));
 const {pack,cases,comps,gis}=loadPilot(root),results=cases.map(c=>evaluate(c,comps,gis));
 const seal=(c:Case)=>{const {inputSha256:_,...b}=c;return {...b,inputSha256:digest(b)} as Case;};
+
+// The already merged documentation updates (#659, #662) and report archive
+// (#663) changed Markdown outside the calculation inputs. Bind those precise
+// revisions while still comparing archived bytes and all numerical inputs.
+const archiveMerge = '5eab296998caa06143b06e1adf3f09f9d7dfed6d';
+const revisedGuides = new Set([
+ 'docs/nutrition/README.md',
+ 'docs/nutrition/glycemic-coverage-campaign-master-plan.md',
+]);
+const archivedReports = new Set([
+ 'docs/nutrition/glycemic-coverage-batch-2b1-current.md',
+ 'docs/nutrition/glycemic-coverage-batch-2b5-current.md',
+ 'docs/nutrition/glycemic-coverage-batch-2b6a-current.md',
+ 'docs/nutrition/glycemic-coverage-batch-2b6b-current.md',
+ 'docs/nutrition/glycemic-coverage-batch-2b6c-current.md',
+]);
+const normalized = (text:string) => text.replaceAll('\r\n','\n');
+const nutritionTextAt = (commit:string, file:string) => normalized(execFileSync(
+ 'git',['show',commit+':'+file],{cwd:root,encoding:'utf8',maxBuffer:32*1024*1024},
+));
+
+function nutritionTextForBaseline(file:string, pinned:string):string {
+ const absolute = path.join(root,file);
+ if (archivedReports.has(file) && !existsSync(absolute)) return nutritionTextAt(archiveMerge+'^1',file);
+ const live = normalized(readFileSync(absolute,'utf8'));
+ if (revisedGuides.has(file) && live === nutritionTextAt(archiveMerge,file)) return pinned;
+ return normalized(afcdSourceBeforeCorrection(file,live));
+}
 
 test('closed pilot reports its actual16 results, not the30 target or classes as numbers',()=>{
  const s=summarize(results);assert.equal(ACTIVATION,false);assert.equal(pack.activation,false);assert.equal(s.numericA,10);assert.equal(s.numericB,6);assert.equal(s.classOnly,0);assert.equal(s.targetMet,false);assert.equal(s.candidateTotal,172);assert.equal(s.productionUnchanged,156);
@@ -61,7 +89,13 @@ test('parent recipe/macro sources and all326 original-version results stay uncha
  // recipes, translations and nutrition sources remain immutable and distinct.
  assertRecipeBaseline(root,base.main);
  // New batch evidence may be added; existing nutrition sources may not be modified, removed or renamed.
- const changed=execFileSync('git',['diff','--name-only','--diff-filter=DMRT',base.main,'--','docs/nutrition'],{cwd:root,encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean).filter(p=>!p.startsWith(folder)&&p!=='docs/nutrition/glycemic-load-pilot-input.json');for(const p of changed){if(isReviewedF25NutritionTransition(root,base.main,p))continue;const live=afcdSourceBeforeCorrection(p,readFileSync(path.join(root,p),'utf8'));const pinned=execFileSync('git',['show',base.main+':'+p],{cwd:root,encoding:'utf8',maxBuffer:32*1024*1024});assert.equal(live.replaceAll('\r\n','\n'),pinned.replaceAll('\r\n','\n'),p);}
+ const changed=execFileSync('git',['diff','--name-only','--diff-filter=DMRT',base.main,'--','docs/nutrition'],{cwd:root,encoding:'utf8'})
+  .trim().split(/\r?\n/).filter(p=>p && !p.startsWith(folder) && p!=='docs/nutrition/glycemic-load-pilot-input.json');
+ for(const file of changed){
+  if(isReviewedF25NutritionTransition(root,base.main,file))continue;
+  const pinned=nutritionTextAt(base.main,file);
+  assert.equal(nutritionTextForBaseline(file,pinned),pinned,file);
+ }
  assertOnlyP1CoconutInputChanges(root);
  const report=restoreBeforeAfcdCorrection(json('tmp/nutrition/glycemic-load-pilot.json'));assert.equal(report.summary.calculated,156);assert.equal(report.results.length,326);for(const r of report.results){
   if(isP1CoconutHold(r.recipeId))assertP1CoconutHold(r);
