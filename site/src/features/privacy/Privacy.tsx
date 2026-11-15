@@ -39,7 +39,7 @@ export function AnalyticsPrompt({ locale }: { locale: RecipeLocale }) {
   }, [pathname, choice, onPrivacyPage]);
 
   if (onPrivacyPage) return null;
-  return <div className="container"><AnalyticsChoice locale={locale} prompt /></div>;
+  return <div className="container analytics-prompt"><AnalyticsChoice locale={locale} prompt /></div>;
 }
 
 export function PrivacyPage({ locale }: { locale: RecipeLocale }) {
