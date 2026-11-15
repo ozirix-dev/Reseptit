@@ -36,6 +36,11 @@ button { font: inherit; }
 .site-nav a { padding: .45rem .75rem; border-radius: 99px; color: var(--ink-soft); text-decoration: none; }
 .site-nav a:hover { color: var(--accent); background: #e8f0e9; }
 .site-nav a[aria-current="page"] { color: var(--accent); background: #e8f0e9; font-weight: 700; }
+.site-footer__contact { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
+.privacy-choice { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1rem; padding: .75rem 1rem; border: 1px solid var(--line); background: var(--surface); border-radius: .75rem; margin-block: 1rem; }
+.privacy-choice p { margin: 0; }
+.privacy-choice .recipe-actions { margin: 0; }
+.privacy-choice button[aria-pressed="true"] { border-color: var(--accent); font-weight: 700; }
 .site-footer { padding: 1.5rem 0; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: .9rem; }
 .glycemic-pilot__intro { gap: .65rem; margin-bottom: 1.4rem; }
 .glycemic-pilot__method-link { justify-self: start; color: var(--accent); min-height: 44px; padding-block: .5rem; }
@@ -162,7 +167,7 @@ button { font: inherit; }
 @media (max-width: 520px) { .site-header__inner { align-items: flex-start; } .site-nav { width: 100%; } .site-nav a { padding-inline: .45rem; } .recipe-panel { padding: .95rem; } .recipe-panel__heading { align-items: flex-start; } }
 @media print {
   :root, body { background: #fff; color: #000; }
-  .site-header, .site-footer, .skip-link, .article-breadcrumbs, .recipe-languages, .serving-control { display: none !important; }
+  .site-header, .site-footer, .privacy-choice, .skip-link, .article-breadcrumbs, .recipe-languages, .serving-control { display: none !important; }
   .page-section { padding: 0; }
   .container, .container--narrow { width: 100%; max-width: none; }
   .recipe-layout { display: block; }

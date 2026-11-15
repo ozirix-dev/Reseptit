@@ -7,6 +7,7 @@ import { useContent } from "@/lib/content";
 import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "@/features/blog/blog-data";
 import type { RecipeLocale } from "@/types/content";
 import { siteTarget } from "@/content/site-target";
+import { privacyCopy, privacyLocaleFromPath, privacyPaths } from "@/features/privacy/privacy-copy";
 
 const siteBase = siteTarget.baseUrl;
 const baseByLocale: Record<RecipeLocale, string> = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" };
@@ -47,15 +48,17 @@ export function SeoMeta() {
     const blogPost = articles.find(post => normalizeRoutePath(articlePath(post)) === normalizedPath);
     const blogIndex = normalizedPath === normalizeRoutePath(blogRoot);
     const isBlog = !!blogPost || blogIndex;
-    const known = recipe !== null || indexExists || isPilotPage || isBlog;
+    const privacyLocale = privacyLocaleFromPath(pathname);
+    const privacy = privacyLocale ? privacyCopy[privacyLocale] : null;
+    const known = privacy !== null || recipe !== null || indexExists || isPilotPage || isBlog;
     const branded = isRecipavoHeroEnabled();
     // Keep unknown deep links' metadata in the same locale as the visible not-found page.
-    const locale = recipe?.locale ?? methodLocale ?? (isBlog ? "fi" : routeLocale) ?? recipeLocaleFromPath(pathname);
-    const title = branded && indexExists ? `${recipavoHeroCopy[locale].title} | Recipavo` : blogPost ? `${blogPost.title} | Ruokaopas` : blogIndex ? "Ruokaopas | Reseptit" : isPilotPage ? glycemicLoadMeta[locale].title : known
+    const locale = privacyLocale ?? recipe?.locale ?? methodLocale ?? (isBlog ? "fi" : routeLocale) ?? recipeLocaleFromPath(pathname);
+    const title = privacy ? `${privacy.title} | Recipavo` : branded && indexExists ? `${recipavoHeroCopy[locale].title} | Recipavo` : blogPost ? `${blogPost.title} | Ruokaopas` : blogIndex ? "Ruokaopas | Reseptit" : isPilotPage ? glycemicLoadMeta[locale].title : known
       ? recipe ? `${recipe.title} | ${titleByLocale[locale]}` : `${titleByLocale[locale]} | Ozirix`
       : `${recipeUi[locale].notFound} | ${titleByLocale[locale]}`;
-    const description = branded && indexExists ? recipavoHeroCopy[locale].intro : blogPost?.description ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined) ?? (isPilotPage ? glycemicLoadMeta[locale].description : recipe?.description || (!known ? recipeUi[locale].notFound : recipeUi[locale].intro));
-    const canonical = blogPost ? `${siteBase}${articlePath(blogPost)}` : blogIndex ? `${siteBase}${blogRoot}` : isPilotPage ? `${siteBase}${methodPaths[locale]}` : recipe ? `${siteBase}${recipe.routePath}` : indexExists ? `${siteBase}${indexPath(locale)}` : null;
+    const description = privacy?.description ?? (branded && indexExists ? recipavoHeroCopy[locale].intro : blogPost?.description ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined) ?? (isPilotPage ? glycemicLoadMeta[locale].description : recipe?.description || (!known ? recipeUi[locale].notFound : recipeUi[locale].intro)));
+    const canonical = privacyLocale ? `${siteBase}${privacyPaths[privacyLocale]}` : blogPost ? `${siteBase}${articlePath(blogPost)}` : blogIndex ? `${siteBase}${blogRoot}` : isPilotPage ? `${siteBase}${methodPaths[locale]}` : recipe ? `${siteBase}${recipe.routePath}` : indexExists ? `${siteBase}${indexPath(locale)}` : null;
     document.title = title;
     document.documentElement.lang = locale;
     upsertMeta("name", "description", description);
@@ -76,7 +79,7 @@ export function SeoMeta() {
       canonicalLink.href = canonical;
       document.head.append(canonicalLink);
     }
-    const alternates = !known ? [] : isBlog ? [{locale: "fi" as RecipeLocale, path: blogPost ? articlePath(blogPost) : blogRoot}] : isPilotPage ? (Object.keys(methodPaths) as RecipeLocale[]).map((entryLocale) => ({ locale: entryLocale, path: methodPaths[entryLocale] })) : recipe
+    const alternates = !known ? [] : privacy ? (Object.keys(privacyPaths) as RecipeLocale[]).map(locale => ({ locale, path: privacyPaths[locale] })) : isBlog ? [{locale: "fi" as RecipeLocale, path: blogPost ? articlePath(blogPost) : blogRoot}] : isPilotPage ? (Object.keys(methodPaths) as RecipeLocale[]).map((entryLocale) => ({ locale: entryLocale, path: methodPaths[entryLocale] })) : recipe
       ? translations.map((entry) => ({ locale: entry.locale, path: entry.routePath }))
       : (Object.keys(baseByLocale) as RecipeLocale[])
           .filter((entryLocale) => locales.includes(entryLocale))

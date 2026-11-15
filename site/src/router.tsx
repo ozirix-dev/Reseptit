@@ -11,10 +11,13 @@ import type { RouteContent } from "@/content/route-data";
 import { SeoMeta } from "@/SeoMeta";
 import { BlogIndex, BlogArticle } from "@/features/blog/BlogPages";
 import { SiteNavigation } from "@/SiteNavigation";
+import { AnalyticsPrompt, PrivacyPage } from "@/features/privacy/Privacy";
+import { privacyCopy, privacyEmail, privacyLocaleFromPath, privacyPaths } from "@/features/privacy/privacy-copy";
+import type { RecipeLocale } from "@/types/content";
 
 function SiteLayout() {
   const { pathname } = useLocation();
-  const locale = recipeLocaleFromPath(pathname);
+  const locale = privacyLocaleFromPath(pathname) ?? recipeLocaleFromPath(pathname);
   const labels = recipeUi[locale];
   const previewCopy = isRecipavoHeroEnabled() ? recipavoHeroCopy[locale] : null;
   const brand = previewCopy?.brand ?? labels.brand;
@@ -29,8 +32,9 @@ function SiteLayout() {
           <SiteNavigation pathname={pathname} locale={locale} availableLocales={availableLocales} translations={translations} />
         </div>
       </header>
+      <AnalyticsPrompt locale={locale} />
       <main id="main" className="site-main"><Outlet /></main>
-      <footer className="site-footer"><div className="container"><p>{previewCopy?.footer ?? labels.footer}</p><RecipeAbout locale={locale} /></div></footer>
+      <footer className="site-footer"><div className="container"><p>{previewCopy?.footer ?? labels.footer}</p><p className="site-footer__contact"><Link to={privacyPaths[locale]}>{privacyCopy[locale].title}</Link><a href={`mailto:${privacyEmail}`}>{privacyEmail}</a></p><RecipeAbout locale={locale} /></div></footer>
       <ScrollRestoration />
     </div>
   );
@@ -71,6 +75,10 @@ export const siteRoutes: RouteObject[] = [
       { path: "en/glycemic-load", element: <GlycemicLoadPilotPage /> },
       { path: "sv/glykemisk-belastning", element: <GlycemicLoadPilotPage /> },
       { path: "th/glycemic-load", element: <GlycemicLoadPilotPage /> },
+      ...(Object.keys(privacyPaths) as RecipeLocale[]).map(locale => ({
+        path: privacyPaths[locale].slice(1, -1),
+        element: <PrivacyPage locale={locale} />,
+      })),
       { path: ":slug", element: <RecipePage /> },
       { path: "en/recipes", element: <RecipesPage locale="en" /> },
       { path: "en/recipes/:slug", element: <RecipePage /> },

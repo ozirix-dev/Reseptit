@@ -35,6 +35,8 @@ export function EstimateSummary({ result, locale }: { result: EvidenceResult; lo
   </>;
 }
 
+import { track } from "@/features/privacy/analytics";
+
 export function EstimateDetails({ result, locale, notes, technicalNotes }: {
   result: EvidenceResult;
   locale: RecipeLocale;
@@ -44,7 +46,7 @@ export function EstimateDetails({ result, locale, notes, technicalNotes }: {
   const text = gkCopy[locale];
   const kinds = [...new Set(result.sourceReferences.map(evidenceLabel))];
   return <>
-    <details className="gk-evidence__details">
+    <details className="gk-evidence__details" onToggle={event => { if (event.currentTarget.open) track("Open Glycemic Evidence"); }}>
       <summary>{text.how}</summary>
       <p>{text.personal}</p>
       {result.ingredientEvidence?.length ? (
