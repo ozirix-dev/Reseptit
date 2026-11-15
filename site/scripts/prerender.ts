@@ -93,6 +93,7 @@ function routeMetadata(route: string, content: RouteContent) {
   return {
     lang: locale,
     priorityImageMedia: avifSrc ? avifMedia : undefined,
+    waitForImagePaint: pagination?.locale === "en",
     head: [
       `<title>${escapeHtml(title)}</title>`,
       avifPreload,
@@ -116,25 +117,33 @@ function routeMetadata(route: string, content: RouteContent) {
   };
 }
 
-function imagePriorityEntry(entrySrc: string, media: string): string {
+function imagePriorityEntry(entrySrc: string, media: string, waitForPaint: boolean): string {
   // This module runs after parsing so the responsive picture and payload exist.
   // Let the image finish first, with a bounded wait and an immediate interaction path.
+  // The English library also gives the decoded image a rendering opportunity.
   return `<script type="module">
     const image = matchMedia(${JSON.stringify(media)}).matches &&
       document.querySelector("#root img[fetchpriority=high]");
     const importEntry = () => { void import(${JSON.stringify(entrySrc)}); };
-    if (!image || image.complete) {
+    const waitForPaint = ${JSON.stringify(waitForPaint)};
+    if (!image || (image.complete && !waitForPaint)) {
       importEntry();
     } else {
       const listeners = new AbortController();
       const start = () => {
+        if (listeners.signal.aborted) return;
         listeners.abort();
         clearTimeout(timeout);
         importEntry();
       };
       const options = { signal: listeners.signal };
       const timeout = setTimeout(start, 1000);
-      image.addEventListener("load", start, options);
+      const onLoad = waitForPaint && typeof image.decode === "function"
+        ? () => { void image.decode().then(
+          () => requestAnimationFrame(() => requestAnimationFrame(start)), start); }
+        : start;
+      if (image.complete) onLoad();
+      else image.addEventListener("load", onLoad, options);
       image.addEventListener("error", start, options);
       document.addEventListener("pointerdown", start, { ...options, capture: true });
       document.addEventListener("keydown", start, { ...options, capture: true });
@@ -182,7 +191,7 @@ try {
     const data = `<script id="page-content" type="application/json">${serializeRouteContent(initial)}</script>`;
     const { priorityImageMedia } = metadata;
     const routeShell = priorityImageMedia
-      ? inlineStyleShell.replace(entry[0], () => imagePriorityEntry(entry[1], priorityImageMedia))
+      ? inlineStyleShell.replace(entry[0], () => imagePriorityEntry(entry[1], priorityImageMedia, metadata.waitForImagePaint))
       : homeRoutes.has(route) || initial.pagination ? inlineStyleShell : shell;
     const html = routeShell !== shell
       ? replaceDocument(routeShell, metadata.head, metadata.lang, body)

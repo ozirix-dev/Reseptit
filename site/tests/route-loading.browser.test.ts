@@ -191,3 +191,38 @@ test("mobile entry waits for the critical image and resumes on image failure or 
     await server.close();
   }
 });
+
+test("English mobile library gives the decoded first image a rendering opportunity", async () => {
+  const server = await localImageServer("dist");
+  const browser = await launchBrowser();
+  try {
+    const context = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
+    const page = await context.newPage();
+    await page.addInitScript(() => {
+      const decode = HTMLImageElement.prototype.decode;
+      HTMLImageElement.prototype.decode = function () {
+        if (!this.matches(".recipe-card:first-child img")) return decode.call(this);
+        document.documentElement.dataset.testDecoding = "pending";
+        return new Promise<void>((resolve, reject) => {
+          window.addEventListener("test-release-card-decode", () => {
+            void decode.call(this).then(resolve, reject);
+          }, { once: true });
+        });
+      };
+    });
+    const entry = /\/assets\/index-[\w-]+\.js$/;
+    let started = false;
+    page.on("request", (request) => { if (entry.test(request.url())) started = true; });
+    await page.goto(server.base + "/en/recipes/all/", { waitUntil: "domcontentloaded" });
+    await page.locator('html[data-test-decoding="pending"]').waitFor();
+    assert.equal(started, false, "the entry waits while the loaded first image is decoding");
+    assert.equal(await page.locator("h1").textContent(), "Recipe library");
+    const entryResponse = page.waitForResponse(entry);
+    await page.evaluate(() => window.dispatchEvent(new Event("test-release-card-decode")));
+    assert.equal((await entryResponse).ok(), true);
+    await context.close();
+  } finally {
+    await browser.close();
+    await server.close();
+  }
+});
