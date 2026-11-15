@@ -6,6 +6,9 @@ const html = await readFile(new URL("index.html", dist));
 const urls = [...html.toString("utf8").matchAll(
   /<(?:script\b(?=[^>]*\btype="module")|link\b(?=[^>]*\brel="modulepreload"))[^>]*\b(?:src|href)="([^"]+)"/g,
 )].map(match => match[1]);
+for (const [, url] of html.toString("utf8").matchAll(/const importEntry = \(\) => \{ void import\("([^"]+)"\); \};/g)) {
+  urls.push(url);
+}
 if (!urls.length) throw new Error("No JavaScript entry points in the prerendered home page");
 
 const gzipBytes = bytes => gzipSync(bytes, { level: 9 }).length;

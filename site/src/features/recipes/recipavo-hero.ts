@@ -9,9 +9,9 @@ interface RecipavoHeroCopy {
   brand: string;
   brandHome: string;
   tagline: string;
-  eyebrow: string;
   title: string;
   intro: string;
+  details: string;
   footer: string;
 }
 
@@ -20,36 +20,36 @@ export const recipavoHeroCopy: Record<RecipeLocale, RecipavoHeroCopy> = {
     brand: "Recipavo",
     brandHome: "Recipavo, etusivu",
     tagline: "Maailman reseptit arkeen",
-    eyebrow: "Recipavo · Reseptikirjasto",
     title: "Maailman reseptit. Sinun arkeesi.",
-    intro: "Löydä kokattavaa eri puolilta maailmaa. Hae reseptiä nimellä tai aineksella ja rajaa tuloksia ruokalajin, ruokavalion tai valmistusajan mukaan.",
+    intro: "Kokkaa ruokia eri puolilta maailmaa selkeillä ohjeilla ja säädä annosmäärä tarpeen mukaan. Hae aineksella ja rajaa ruokavalion tai valmistusajan mukaan.",
+    details: "Reseptejä suomeksi, englanniksi, ruotsiksi ja thaiksi. Ravintoarvot ja glykeemisen kuorman (GK) arviot näytetään, kun tietoja on riittävästi.",
     footer: "Recipavo · Reseptikirjasto",
   },
   en: {
     brand: "Recipavo",
     brandHome: "Recipavo, home",
     tagline: "Recipes from around the world",
-    eyebrow: "Recipavo · Recipe library",
     title: "Recipes from around the world. Made for everyday life.",
-    intro: "Discover dishes from around the world. Search by name or ingredient, then filter by category, diet or cooking time.",
+    intro: "Cook dishes from around the world with clear instructions and adjustable servings. Search by ingredient and filter by diet or cooking time.",
+    details: "Find recipes in Finnish, English, Swedish and Thai. Nutrition information and estimated glycemic load (GL) are shown where enough data is available.",
     footer: "Recipavo · Recipe library",
   },
   sv: {
     brand: "Recipavo",
     brandHome: "Recipavo, startsida",
     tagline: "Recept från hela världen",
-    eyebrow: "Recipavo · Receptsamling",
     title: "Recept från hela världen. För din vardag.",
-    intro: "Upptäck maträtter från olika delar av världen. Sök på namn eller ingrediens och filtrera efter kategori, kost eller tillagningstid.",
+    intro: "Laga mat från hela världen med tydliga instruktioner och anpassa antalet portioner. Sök på ingrediens och filtrera efter kost eller tillagningstid.",
+    details: "Här finns recept på finska, engelska, svenska och thailändska. Näringsvärden och uppskattad glykemisk belastning (GL) visas när underlaget räcker.",
     footer: "Recipavo · Receptsamling",
   },
   th: {
     brand: "Recipavo",
     brandHome: "Recipavo หน้าหลัก",
     tagline: "สูตรอาหารจากทั่วโลก",
-    eyebrow: "Recipavo · คลังสูตรอาหาร",
     title: "สูตรอาหารจากทั่วโลก สำหรับทุกวันของคุณ",
-    intro: "ค้นพบเมนูจากทั่วโลก ค้นหาสูตรอาหารด้วยชื่อหรือวัตถุดิบ แล้วกรองตามหมวดหมู่ รูปแบบอาหาร หรือเวลาปรุง",
+    intro: "ทำอาหารจากทั่วโลกด้วยวิธีทำที่เข้าใจง่ายและปรับจำนวนที่ได้ ค้นหาตามวัตถุดิบและกรองตามรูปแบบอาหารหรือเวลาปรุง",
+    details: "มีสูตรอาหารภาษาฟินแลนด์ อังกฤษ สวีเดน และไทย พร้อมข้อมูลโภชนาการและค่าประมาณภาระน้ำตาล (GL) เมื่อมีข้อมูลเพียงพอ",
     footer: "Recipavo · คลังสูตรอาหาร",
   },
 };
