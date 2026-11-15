@@ -213,8 +213,9 @@ export async function auditSeo(dist: string, recipes: RecipeEntry[], manifestRou
   }
   const missing = await readFile(path.join(dist, "404.html"), "utf8");
   findings.push(...inspectNotFound(missing));
-  const verification = await readFile(path.join(dist, "google0c6f9c0486376f0f.html"), "utf8");
-  if (verification !== "google-site-verification: google0c6f9c0486376f0f.html") add("VERIFICATION_FILE", "Verification content changed");
+  if ((await readdir(dist)).includes("google0c6f9c0486376f0f.html")) {
+    add("VERIFICATION_FILE", "Retired GitHub Pages verification file is present");
+  }
   return { mode: "offline-dist", routes: pages.length, recipes: recipes.length, imageFiles: images.size, sitemapUrls: urls.length, findings,
     limitations: ["Checks this generator's HTML structure, not a general HTML conformance validator or Google's Rich Results Test.", "No assertion about Google ownership, indexing or rich-result appearance."],
     recommendedMissing: { author: recipes.length, datePublished: recipes.length, aggregateRating: recipes.length, calories: recipes.length },

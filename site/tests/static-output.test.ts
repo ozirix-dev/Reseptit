@@ -522,7 +522,7 @@ test("localized 404 pages never hydrate a recipe or emit indexable metadata", as
   }
 });
 
-test("staging sitemap keeps the Pages paths and robots lets crawlers read noindex", async () => {
+test("local sitemap uses root paths and robots lets crawlers read noindex", async () => {
   const sitemap = await readFile(path.join(dist, "sitemap.xml"), "utf8");
   const robots = await readFile(path.join(dist, "robots.txt"), "utf8");
   assert.match(sitemap, new RegExp(String.raw`${buildOriginPattern}/kermainen-lohipata\/`));
@@ -533,14 +533,12 @@ test("staging sitemap keeps the Pages paths and robots lets crawlers read noinde
   assert.doesNotMatch(sitemap, new RegExp(String.raw`${buildOriginPattern}/kaalilaatikko\/`));
   assert.doesNotMatch(sitemap, /raakileet|\.md/);
   assert.doesNotMatch(sitemap, /\?(?:q|category|diet)=/);
-  assert.match(robots, /Project-path robots\.txt/);
   assert.match(robots, /Allow: \//);
   assert.doesNotMatch(robots, /^Sitemap:/mi);
 });
 
-test("Google Search Console ownership verification file is published at the Pages root", async () => {
-  const verification = await readFile(path.join(dist, "google0c6f9c0486376f0f.html"), "utf8");
-  assert.equal(verification, "google-site-verification: google0c6f9c0486376f0f.html");
+test("the root build omits the retired GitHub Pages ownership file", async () => {
+  await assert.rejects(readFile(path.join(dist, "google0c6f9c0486376f0f.html")), { code: "ENOENT" });
 });
 
 test("P2/P3 corrections reach static titles, route data and Recipe JSON-LD", async () => {
