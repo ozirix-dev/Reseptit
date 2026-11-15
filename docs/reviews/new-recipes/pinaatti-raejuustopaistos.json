@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "recipe_id": "pinaatti-raejuustopaistos",
+  "source_path": "reseptit/aamupalat/pinaatti-raejuustopaistos.md",
+  "source_sha256": "e36fd1b2dc2ccabc9f714c02641c2422b67a2563b2ec245f411876b8b8a9b780",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.facebook.com/reel/1608544407107199",
+      "https://cookingkitchn.com/recipes/cheesy-spinach-egg-casserole"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/pinaatti-raejuustopaistos.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Päähaarasta tarkistettiin otsikko, tunniste ja Reel-linkki. Ainoa samaan videoon sidottu osuma oli tämän PR:n luonnos."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Litteraatti vahvistaa neljä munaa, raejuuston, pinaatin, mozzarellan, savupaprikan ja suolan. Kouralliset on mitoitettu grammoiksi."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Massa sekoitetaan vuokaan ja osa juustosta lisätään pinnalle. Epäselvä uunilämpö korvattiin kirjallisen vastineen 190 asteen asetuksella."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Maito ja muna ilmoitetaan allergeeneina. Kananmunapaistos kypsennetään keskeltä vähintään 71 °C:seen."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Vuoka jaetaan kuuteen palaan. Kokonaisaika sisältää arvioidun paiston ja lyhyen levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Arvot laskettiin Finelin lähdetietueista. Savupaprikan pieni osuus on rajattu dokumentoidusti massan perusteella."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmiille reseptille ei ole tähän julkaisuun hyväksyttyä GI-lähdettä. Numeerista glykeemistä kuormaa ei julkaista."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ],
+    "image_path": "kuvat/aamupalat/pinaatti-raejuustopaistos.webp",
+    "image_sha256": "204f6b3b01a03d95ff72ab36ad11d47d56a23be1c44b6720013c8abbc6aca29e",
+    "image_review": "Tekoälykuvituksessa näkyvät pinaattinen paistos, ruskistunut mozzarella ja kuuteen leikattu vuoka.",
+    "physical_cook_test": false
+  }
+}
