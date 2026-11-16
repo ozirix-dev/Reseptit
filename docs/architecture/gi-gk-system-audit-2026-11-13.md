@@ -186,3 +186,28 @@ Tämä tutkimus on tehty **GitHubin lähdetiedostoista** ja aiemmista julkaisuto
 **Päätösportit ja täsmälliset myöhemmät työpaketit:** [gi-gk-future-implementation-gates-2026-11-13.md](gi-gk-future-implementation-gates-2026-11-13.md).
 
 **Vahvistettujen lähtötietojen JSON:** [gi-gk-evidence-2026-11-13.json](gi-gk-evidence-2026-11-13.json).
+
+## Nykytilan tarkistus 16.11.2026
+
+Tämä lisäys kuvaa Reseptien main-revisiota
+`3b6e5b9c1eabe867065c09143d812e836fbbd323`. Yllä oleva alkuperäinen tarkastus
+säilyttää oman lähtörevisionsa. GI-rekisterissä on 64 tietuetta ja 11 lähdettä.
+Koostumusrekisterissä on 604 tietuetta. Perussidoksia on 326; nämä määrät
+kuvaavat eri aineistoja. `glycemic-load-pilot.ts` käyttää lisäksi historiallisia
+ja eräkohtaisia portteja ennen julkista tulostetta.
+
+| Aineisto | Omistaja ja päivitys | Lukija ja vaikutus |
+| --- | --- | --- |
+| `docs/nutrition/glycemic-index-records.json` | Reseptien GI-lähdekatselmointi Git-PR:ssä | GK-laskenta ja paikallinen SQLite. Lähdemuutos voi vaikuttaa laskentaan. |
+| `docs/nutrition/food-records.json` | Reseptien koostumuslähteiden katselmointi | GK-laskenta ja koostumuksen paikallinen haku. Asteikko, yksikkö ja valmistustila vaikuttavat laskentaan. |
+| `glycemic-load-pilot-input.json` ja `glycemic-load-recipe-bindings.json` | Toimituksellinen reseptikohtainen katselmointi | Laskentasyöte ja perushyväksynnän tiivisteet ohjaavat laskentaa sekä näyttöä. |
+| GK80/GK100-hyväksyntäpaketit ja historialukot | Päätös kirjataan kyseisen erän katselmoinnissa | Julkisen laskentaversion portit. Käyttö tarkistetaan koodiviitteestä ennen siirtoa. |
+| Tutkimusmuistiot, eräraportit ja kokeiden tulokset | Tutkimus- ja auditointihistoria | Tukevat katselmointia. Merkitse selvitettäväksi, jos laskentaviitettä ei tunneta. |
+| SQLite, sisäinen audit-JSON ja julkinen GK-yhteenveto | Build tai hakutyökalu generoi | SQLite ja audit-JSON ovat ylläpidolle. Julkinen yhteenveto palvelee sivustoa staattisesti. |
+| Tuotannon D1-katalogi | Reseptien versionhallinnasta generoitu julkaisu | Sisältää reseptien GK-tilaa ja julkaistut payloadit. Julkinen sivusto käyttää staattista buildia. GI/GK-lähteiden erillinen D1-pilotti odottaa hyväksyntää. |
+
+Aktiivisten polkujen tarkistus tehdään työpuusta `git grep` -haulla ja
+nykyisellä buildilla. Viitteen puuttuminen merkitään selvitettäväksi eikä
+tarkoita lupaa poistaa tiedostoa. Kaikkien 64 GI-tietueen koneluettava kartta
+generoidaan ylläpitotyökalulla. Hakukokeessa mitataan lähteen jäljitys,
+vaikutusreseptien haku ja GK-hyväksynnän tarkistus ennen ja jälkeen.
