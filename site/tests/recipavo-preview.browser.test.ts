@@ -70,16 +70,33 @@ test("branded HTML keeps the target indexing policy, search and library working 
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `${locale}: horizontal overflow`);
       if (homePicksExpected) {
         assert.equal(await page.locator(".home-preview__picks > .recipe-card-grid .recipe-card").count(), 9, locale);
-        assert.ok(await page.locator(".home-preview__topic-list a").count() >= 4, locale);
+        const firstCard = page.locator(".home-preview__picks .recipe-card__link").first();
+        const firstTitle = (await firstCard.locator("h3").textContent())!;
+        assert.equal(await firstCard.getByRole("heading", { name: firstTitle, exact: true }).count(), 1, locale);
+        assert.equal(await page.getByRole("link", { name: firstTitle, exact: true }).count(), 1, locale);
         const cards = await page.locator(".recipe-card__link").evaluateAll(links =>
           links.map(link => (link as HTMLAnchorElement).pathname));
         const outsideHome = siteContent.recipes.find(recipe => recipe.locale === locale && !cards.includes(recipe.routePath))!;
         await page.locator("#recipe-search").fill(outsideHome.title);
         await page.locator('.recipe-card__link[href="' + outsideHome.routePath + '"]').waitFor();
         await page.goto(base + route);
-        await page.locator(".home-preview__topic-list a").first().click();
-        await page.waitForFunction(() => !document.querySelector(".home-preview__picks") && !!document.querySelector(".recipe-result-count"));
-        assert.ok(page.url().includes("category=") || page.url().includes("diet="), `${locale}: topic filtering`);
+        await page.locator("#recipe-category").selectOption("paaruoka");
+        await page.locator(".recipe-result-count").waitFor();
+        assert.equal(await page.locator(".home-preview__picks").count(), 0, locale);
+        assert.equal(new URL(page.url()).searchParams.get("category"), "paaruoka", locale);
+        await page.locator(".recipe-more-filters > summary").press("Enter");
+        await page.locator("#recipe-gluten-free").check();
+        await page.waitForURL(url => url.searchParams.has("gluten_free"));
+        const target = locale === "en" ? "fi" : "en";
+        const selected = new URL(page.url()).search;
+        await page.reload();
+        await page.locator(`.site-language-menu a[href="${indexes[target]}${selected}"]`).waitFor({ state: "attached" });
+        const menu = page.locator(".site-language-menu");
+        if (await menu.locator("summary").isVisible()) await menu.locator("summary").click();
+        await menu.locator(`a[hreflang="${target}"]`).click();
+        await page.waitForURL(url => url.pathname === indexes[target] && url.search === selected);
+        await page.locator(".recipe-result-count").waitFor();
+        assert.equal(await page.locator("#recipe-category").inputValue(), "paaruoka", locale);
       }
       await page.close();
     }

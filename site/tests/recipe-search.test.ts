@@ -232,7 +232,7 @@ test("Recipavo homepage preview examples are deterministic, localized and all li
     assert.ok(topics.length >= 4 && topics.length <= 7, locale);
     assert.ok(topics.every((topic) => recipes.some((item) => topic.kind === "category"
       ? item.category === topic.value || item.additionalCategories?.includes(topic.value) : topic.value === "keto" ? item.dietClass === "keto" : item.dietClass !== null)), locale);
-    assert.ok(homepageLabels[locale].topics && homepageLabels[locale].picks && homepageLabels[locale].allRecipes(recipes.length), locale);
+    assert.ok(homepageLabels[locale].any && homepageLabels[locale].picks && homepageLabels[locale].allRecipes(recipes.length), locale);
   }
 });
 

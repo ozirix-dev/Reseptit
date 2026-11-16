@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { glycemicLoadPath, recipeIndexPath } from "@/features/recipes/recipe-i18n";
 import { parseRecipeLibraryPagePath, recipeLibraryPagePath } from "@/features/recipes/recipe-pagination";
 import type { RecipeLocale } from "@/types/content";
@@ -36,6 +36,12 @@ export function languageDestination(target: RecipeLocale, pathname: string, tran
 }
 
 export function SiteNavigation({ pathname, locale, availableLocales, translations }: SiteNavigationProps) {
+  const { search } = useLocation();
+  const [hydrated, setHydrated] = useState(false);
+  // Prerendered index pages have no query. Apply it after hydration so the
+  // real href also works when the language link is copied or opened in a new tab.
+  useEffect(() => setHydrated(true), []);
+  const recipeSearch = hydrated && pathname === recipeIndexPath(locale) ? search : "";
   const primary = useRef<HTMLDetailsElement>(null);
   const languages = useRef<HTMLDetailsElement>(null);
 
@@ -82,7 +88,7 @@ export function SiteNavigation({ pathname, locale, availableLocales, translation
       <summary aria-label={labels.languages + ": " + localeNames[locale]}>{localeShort[locale]}<span aria-hidden="true"> ▾</span></summary>
       <nav className="site-language-nav" aria-label={labels.languages}>
         {localeOrder.filter(code => availableLocales.includes(code)).map(code =>
-          <Link key={code} lang={code} hrefLang={code} to={languageDestination(code, pathname, translations)} onClick={() => {
+          <Link key={code} lang={code} hrefLang={code} to={languageDestination(code, pathname, translations) + recipeSearch} onClick={() => {
             if (code !== locale) track("Switch Language");
             closeMobileMenus();
           }} aria-current={locale === code ? "page" : undefined}>{localeNames[code]}</Link>

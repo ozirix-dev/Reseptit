@@ -1,5 +1,5 @@
 import { recipeCardAvifMedia, recipeCardSizes } from "./image-layout";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useId, useMemo, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContent } from "@/lib/content";
 import type { RecipeLocale } from "@/types/content";
@@ -147,7 +147,15 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
     </>;
   }
 
+  const glutenFreeFilter = <div className="recipe-special-filters">
+    <label htmlFor="recipe-gluten-free">
+      <input id="recipe-gluten-free" type="checkbox" checked={!!filters.glutenFree} onChange={(event) => updateFilters({ glutenFree: event.currentTarget.checked || undefined })} />
+      {labels.glutenFree}
+    </label>
+  </div>;
+
   return <section className={homePreviewEnabled ? "page-section recipe-index recipe-index--home-preview" : "page-section recipe-index"}><div className="container recipe-index__container">
+    <div className="recipe-index__finder">
     <div className={heroCopy ? "page-intro recipavo-hero" : "page-intro"}>
       {!heroCopy ? <p className="eyebrow">{labels.eyebrow}</p> : null}
       <h1>{heroCopy?.title ?? labels.indexTitle}</h1>
@@ -165,26 +173,28 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
       <div className="recipe-filter-select">
         <label htmlFor="recipe-category">{labels.categoryFilter}</label>
         <select id="recipe-category" value={filters.category} onChange={(event) => updateFilters({ category: event.currentTarget.value as RecipeCategory })}>
-          <option value="all">{labels.allCategories}</option>
+          <option value="all">{heroCopy ? homeText.any : labels.allCategories}</option>
           {availableCategories.map((category) => <option key={category} value={category}>{labels.category[category]}</option>)}
         </select>
       </div>
       {availableDiets.length ? <div className="recipe-filter-select">
         <label htmlFor="recipe-diet">{labels.dietFilter}</label>
         <select id="recipe-diet" value={filters.diet} onChange={(event) => updateFilters({ diet: event.currentTarget.value as RecipeDietFilter })}>
-          <option value="all">{labels.allDiets}</option>
+          <option value="all">{heroCopy ? homeText.any : labels.allDiets}</option>
           {availableDiets.map((diet) => <option key={diet} value={diet}>{dietLabels[diet]}</option>)}
         </select>
       </div> : null}
-      <div className="recipe-special-filters"><label htmlFor="recipe-gluten-free"><input id="recipe-gluten-free" type="checkbox" checked={!!filters.glutenFree} onChange={(event) => updateFilters({ glutenFree: event.currentTarget.checked || undefined })} /> {labels.glutenFree}</label></div>
+      {heroCopy ? null : glutenFreeFilter}
       <details className="recipe-more-filters"><summary>{tools.moreFilters}</summary><div>
+      {heroCopy ? glutenFreeFilter : null}
       <div className="recipe-filter-select"><label htmlFor="recipe-time">{tools.time}</label><select id="recipe-time" value={filters.maxTime ?? ""} onChange={(event) => updateFilters({ maxTime: Number(event.currentTarget.value) || undefined })}><option value="">{tools.anyTime}</option>{[30, 60, 90].map(time => <option key={time} value={time}>{time} {labels.minutes}</option>)}</select></div>
       <div className="recipe-filter-select"><label htmlFor="recipe-cuisine">{tools.cuisine}</label><select id="recipe-cuisine" value={filters.cuisine ?? ""} onChange={(event) => updateFilters({ cuisine: event.currentTarget.value || undefined })}><option value="">{tools.anyCuisine}</option>{cuisines.filter(cuisine => catalog?.cuisines.includes(cuisine)).map(cuisine => <option key={cuisine} value={cuisine}>{tools.cuisines[cuisine]}</option>)}</select></div>
       <div className="recipe-filter-select"><label htmlFor="recipe-ingredient">{tools.ingredient}</label><select id="recipe-ingredient" value={filters.ingredient ?? ""} onChange={(event) => updateFilters({ ingredient: event.currentTarget.value || undefined })}><option value="">{tools.anyIngredient}</option>{ingredientGroups.filter(group => catalog?.ingredientGroups.includes(group)).map(group => <option key={group} value={group}>{tools.ingredients[group]}</option>)}</select></div>
       {catalog?.hasGlycemicLoad ? <div className="recipe-filter-select"><label htmlFor="recipe-gl">{tools.gl}</label><select id="recipe-gl" value={filters.gl ?? ""} onChange={(event) => updateFilters({ gl: (event.currentTarget.value || undefined) as GlycemicLoadFilterCategory | undefined })}><option value="">{tools.anyGl}</option><option value="low">{tools.lowGl}</option><option value="medium">{tools.mediumGl}</option><option value="high">{tools.highGl}</option></select></div> : null}
       </div></details>
       {hasActiveFilters && hasSearchResults ? <button type="button" className="recipe-filter-reset" onClick={resetFilters}>{labels.resetFilters}</button> : null}
-    </form> : <div className="recipe-filters recipe-filters--placeholder" aria-hidden="true"><div className="recipe-search-field"><span className="placeholder-label">{labels.search}</span><span className="placeholder-input" /></div>{[labels.categoryFilter, ...(availableDiets.length ? [labels.dietFilter] : [])].map((label) => <div className="recipe-filter-select" key={label}><span className="placeholder-label">{label}</span><span className="placeholder-input" /></div>)}<div className="recipe-special-filters"><span className="placeholder-label">{labels.glutenFree}</span></div><details className="recipe-more-filters"><summary>{tools.moreFilters}</summary></details></div>}
+    </form> : <div className="recipe-filters recipe-filters--placeholder" aria-hidden="true"><div className="recipe-search-field"><span className="placeholder-label">{labels.search}</span><span className="placeholder-input" /></div>{[labels.categoryFilter, ...(availableDiets.length ? [labels.dietFilter] : [])].map((label) => <div className="recipe-filter-select" key={label}><span className="placeholder-label">{label}</span><span className="placeholder-input" /></div>)}{heroCopy ? null : <div className="recipe-special-filters"><span className="placeholder-label">{labels.glutenFree}</span></div>}<details className="recipe-more-filters"><summary>{tools.moreFilters}</summary></details></div>}
+    </div>
     {hydrated && (filters.diet === "keto" || filters.diet === "vhh") ? <p className="recipe-disclosure">{tools.diet}</p> : null}
     {hydrated && filters.diet !== "all" && filters.diet !== "keto" && filters.diet !== "vhh" ? <p className="recipe-disclosure">{labels.dietaryReviewNote}</p> : null}
     {hydrated && filters.glutenFree ? <p className="recipe-disclosure">{labels.glutenFreeNote}</p> : null}
@@ -194,14 +204,6 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
     </p> : null}
     {hydrated && hasActiveFilters ? <div className="recipe-active-filters" aria-label={tools.activeFilters}>{activeFilters.map((chip) => <button key={chip.key} type="button" className="recipe-filter-chip" aria-label={`${tools.removeFilter}: ${chip.label}`} onClick={(event) => removeFilter(chip.clear, event.currentTarget)}>{chip.label}<span className="recipe-filter-chip__remove" aria-hidden="true">×</span></button>)}</div> : null}
     {results}
-    {homePreview ? <section className="home-preview__topics" aria-labelledby="home-preview-topics-heading">
-      <h2 id="home-preview-topics-heading">{homeText.topics}</h2>
-      <ul className="home-preview__topic-list">{(catalog?.topics ?? []).map((topic) => {
-        const search = recipeFiltersToSearch({ ...emptyRecipeFilters, ...(topic.kind === "category" ? { category: topic.value } : { diet: topic.value }) });
-        const label = topic.kind === "category" ? labels.category[topic.value] : topic.value === "keto" ? labels.keto : labels.vhh;
-        return <li key={`${topic.kind}-${topic.value}`}><Link to={`${recipeIndexPath(locale)}${search}`}>{label}</Link></li>;
-      })}</ul>
-    </section> : null}
   </div></section>;
 }
 
@@ -243,17 +245,19 @@ function RecipeGrid({ recipes, locale, headingLevel, homePicks, library }: {
 }) {
   return <div className="recipe-card-grid">{recipes.map((recipe, index) =>
     <RecipeCard key={recipe.recipeId + '-' + locale} recipe={recipe} index={index} locale={locale} headingLevel={headingLevel}
-      library={library} avifSrc={homePicks || (library && index === 0) ? recipe.image?.homeAvifSrc : undefined} />
+      library={library} homePick={homePicks} avifSrc={homePicks || (library && index === 0) ? recipe.image?.homeAvifSrc : undefined} />
   )}</div>;
 }
 
-function RecipeCard({ recipe, index, locale, headingLevel = 2, avifSrc, library }: {
-  recipe: RecipeSummary | SearchRecipe; index: number; locale: RecipeLocale; headingLevel?: 2 | 3; avifSrc?: string; library?: boolean;
+function RecipeCard({ recipe, index, locale, headingLevel = 2, avifSrc, library, homePick }: {
+  recipe: RecipeSummary | SearchRecipe; index: number; locale: RecipeLocale; headingLevel?: 2 | 3; avifSrc?: string; library?: boolean; homePick?: boolean;
 }) {
   const [imageFailed, setImageFailed] = useState(false);
   const [avifFailed, setAvifFailed] = useState(false);
   const labels = recipeUi[locale];
   const Heading = headingLevel === 3 ? "h3" : "h2";
+  const titleId = useId();
+  const title = <Heading className="recipe-card__title" id={homePick ? titleId : undefined}>{recipe.title}</Heading>;
   const dietLabel = recipe.dietClass === "keto" ? labels.keto : recipe.dietClass ? labels.vhh : null;
   const meta = [recipe.timeTotalMin ? `${recipe.timeTotalMin} ${labels.minutes}` : null, recipe.difficulty].filter(Boolean).join(" · ");
   const webpFallback = recipe.image && !imageFailed ? <img className="recipe-card__image"
@@ -269,19 +273,20 @@ function RecipeCard({ recipe, index, locale, headingLevel = 2, avifSrc, library 
       else setImageFailed(true);
     }} /> : null;
   return <article className="recipe-card">
-    <Link className="recipe-card__link" to={recipe.routePath}>
+    <Link className="recipe-card__link" to={recipe.routePath} aria-labelledby={homePick ? titleId : undefined}>
       {webpFallback
         ? avifSrc && !avifFailed ? <picture>
           <source type="image/avif" media={recipeCardAvifMedia} srcSet={avifSrc} />
           {webpFallback}
         </picture> : webpFallback
         : <span className="recipe-card__image recipe-card__image--placeholder">{labels.imageUnavailable}</span>}
-      <span className="recipe-card__content">
+      <div className="recipe-card__content">
+        {homePick ? title : null}
         <span className="recipe-card__badges">{[recipe.category, ...(recipe.additionalCategories ?? [])].map(category => <span key={category} className="recipe-card__category">{labels.category[category]}</span>)}{dietLabel ? <span className="recipe-card__diet">{dietLabel}</span> : null}</span>
         {meta ? <span className="recipe-card__meta">{meta}</span> : null}
-        <Heading className="recipe-card__title">{recipe.title}</Heading>
+        {homePick ? null : title}
         <span className="recipe-card__description">{recipe.description}</span>
-      </span>
+      </div>
     </Link>
   </article>;
 }
