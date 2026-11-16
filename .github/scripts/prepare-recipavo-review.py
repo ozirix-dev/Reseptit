@@ -59,7 +59,12 @@ def pr_snapshot(pr_number):
     head, base = pr["head"]["sha"], pr["base"]["sha"]
     if not all(re.fullmatch(SHA, sha) for sha in (head, base)):
         raise ValueError("Invalid pull request revisions.")
-    command("git", "fetch", "--no-tags", "origin", f"refs/pull/{pr_number}/head", base)
+    # The checkout can be shallow even when both requested tips are available.
+    # The three-dot diff also needs the history connecting them.
+    history = []
+    if command("git", "rev-parse", "--is-shallow-repository").strip() == b"true":
+        history.append("--unshallow")
+    command("git", "fetch", "--no-tags", *history, "origin", f"refs/pull/{pr_number}/head", base)
     fetched = command("git", "rev-parse", "FETCH_HEAD").decode().strip()
     if head != fetched:
         raise ValueError("The PR head changed while preparing the review. Start a new run.")
