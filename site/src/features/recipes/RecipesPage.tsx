@@ -148,7 +148,12 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   }
 
   return <section className={homePreviewEnabled ? "page-section recipe-index recipe-index--home-preview" : "page-section recipe-index"}><div className="container recipe-index__container">
-    <div className={heroCopy ? "page-intro recipavo-hero" : "page-intro"}><p className="eyebrow">{heroCopy?.eyebrow ?? labels.eyebrow}</p><h1>{heroCopy?.title ?? labels.indexTitle}</h1><p className="page-intro__description">{heroCopy?.intro ?? labels.intro}</p></div>
+    <div className={heroCopy ? "page-intro recipavo-hero" : "page-intro"}>
+      {!heroCopy ? <p className="eyebrow">{labels.eyebrow}</p> : null}
+      <h1>{heroCopy?.title ?? labels.indexTitle}</h1>
+      <p className="page-intro__description">{heroCopy?.intro ?? labels.intro}</p>
+      {heroCopy ? <p className="recipavo-hero__details">{heroCopy.details}</p> : null}
+    </div>
     {hydrated ? <form className="recipe-filters" role="search" aria-label={labels.search} onSubmit={(event) => event.preventDefault()}>
       <div className="recipe-search-field">
         <label htmlFor="recipe-search">{labels.search}</label>
@@ -179,11 +184,16 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
       {catalog?.hasGlycemicLoad ? <div className="recipe-filter-select"><label htmlFor="recipe-gl">{tools.gl}</label><select id="recipe-gl" value={filters.gl ?? ""} onChange={(event) => updateFilters({ gl: (event.currentTarget.value || undefined) as GlycemicLoadFilterCategory | undefined })}><option value="">{tools.anyGl}</option><option value="low">{tools.lowGl}</option><option value="medium">{tools.mediumGl}</option><option value="high">{tools.highGl}</option></select></div> : null}
       </div></details>
       {hasActiveFilters && hasSearchResults ? <button type="button" className="recipe-filter-reset" onClick={resetFilters}>{labels.resetFilters}</button> : null}
-    </form> : <div className="recipe-filters recipe-filters--placeholder" aria-hidden="true">{[labels.search, labels.categoryFilter, ...(availableDiets.length ? [labels.dietFilter] : []), labels.glutenFree].map((label) => <div className="recipe-filter-select" key={label}><span className="placeholder-label">{label}</span><span className="placeholder-input" /></div>)}<details className="recipe-more-filters"><summary>{tools.moreFilters}</summary></details></div>}
+    </form> : <div className="recipe-filters recipe-filters--placeholder" aria-hidden="true"><div className="recipe-search-field"><span className="placeholder-label">{labels.search}</span><span className="placeholder-input" /></div>{[labels.categoryFilter, ...(availableDiets.length ? [labels.dietFilter] : [])].map((label) => <div className="recipe-filter-select" key={label}><span className="placeholder-label">{label}</span><span className="placeholder-input" /></div>)}<div className="recipe-special-filters"><span className="placeholder-label">{labels.glutenFree}</span></div><details className="recipe-more-filters"><summary>{tools.moreFilters}</summary></details></div>}
     {hydrated && (filters.diet === "keto" || filters.diet === "vhh") ? <p className="recipe-disclosure">{tools.diet}</p> : null}
     {hydrated && filters.diet !== "all" && filters.diet !== "keto" && filters.diet !== "vhh" ? <p className="recipe-disclosure">{labels.dietaryReviewNote}</p> : null}
     {hydrated && filters.glutenFree ? <p className="recipe-disclosure">{labels.glutenFreeNote}</p> : null}
     {hydrated && filters.gl ? <p className="recipe-disclosure recipe-gl-disclosure">{tools.glNote} <Link to={glycemicLoadPath(locale)}>{labels.glycemicLoadMethod}</Link></p> : null}
+    {!homePreview && (!hasActiveFilters || filteredRecipes) ? <p className={hydrated ? "recipe-result-count" : "recipe-result-count recipe-result-placeholder"} role={hydrated ? "status" : undefined} aria-hidden={!hydrated || undefined}>
+      {labels.results(filteredRecipes?.length ?? catalog?.total ?? recipes.length)}
+    </p> : null}
+    {hydrated && hasActiveFilters ? <div className="recipe-active-filters" aria-label={tools.activeFilters}>{activeFilters.map((chip) => <button key={chip.key} type="button" className="recipe-filter-chip" aria-label={`${tools.removeFilter}: ${chip.label}`} onClick={(event) => removeFilter(chip.clear, event.currentTarget)}>{chip.label}<span className="recipe-filter-chip__remove" aria-hidden="true">×</span></button>)}</div> : null}
+    {results}
     {homePreview ? <section className="home-preview__topics" aria-labelledby="home-preview-topics-heading">
       <h2 id="home-preview-topics-heading">{homeText.topics}</h2>
       <ul className="home-preview__topic-list">{(catalog?.topics ?? []).map((topic) => {
@@ -192,11 +202,6 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
         return <li key={`${topic.kind}-${topic.value}`}><Link to={`${recipeIndexPath(locale)}${search}`}>{label}</Link></li>;
       })}</ul>
     </section> : null}
-    {!homePreview && (!hasActiveFilters || filteredRecipes) ? <p className={hydrated ? "recipe-result-count" : "recipe-result-count recipe-result-placeholder"} role={hydrated ? "status" : undefined} aria-hidden={!hydrated || undefined}>
-      {labels.results(filteredRecipes?.length ?? catalog?.total ?? recipes.length)}
-    </p> : null}
-    {hydrated && hasActiveFilters ? <div className="recipe-active-filters" aria-label={tools.activeFilters}>{activeFilters.map((chip) => <button key={chip.key} type="button" className="recipe-filter-chip" aria-label={`${tools.removeFilter}: ${chip.label}`} onClick={(event) => removeFilter(chip.clear, event.currentTarget)}>{chip.label}<span className="recipe-filter-chip__remove" aria-hidden="true">×</span></button>)}</div> : null}
-    {results}
   </div></section>;
 }
 
@@ -253,7 +258,7 @@ function RecipeCard({ recipe, index, locale, headingLevel = 2, avifSrc, library 
   const meta = [recipe.timeTotalMin ? `${recipe.timeTotalMin} ${labels.minutes}` : null, recipe.difficulty].filter(Boolean).join(" · ");
   const webpFallback = recipe.image && !imageFailed ? <img className="recipe-card__image"
     src={recipe.image.src} srcSet={recipe.image.srcSet ?? undefined} sizes={recipeCardSizes} alt={recipe.image.alt}
-    width={recipe.image.width} height={recipe.image.height} loading={index === 0 && (!avifSrc || library) ? "eager" : "lazy"}
+    width={recipe.image.width} height={recipe.image.height} loading={index === 0 ? "eager" : "lazy"}
     fetchPriority={index === 0 ? "high" : library ? "low" : undefined} decoding="async"
     ref={avifSrc && !avifFailed ? image => {
       // An AVIF can fail before React attaches the error listener.

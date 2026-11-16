@@ -1,4 +1,26 @@
-/* Staging-only homepage sections. Scoped to the preview class: default site stays unchanged. */
+/* Recipavo home layout, shared by production and the opt-in preview. */
+.recipe-index.recipe-index--home-preview.page-section { padding-top: clamp(1rem, 2vw, 1.5rem); }
+.recipe-index.recipe-index--home-preview .recipavo-hero { max-width: none; }
+.recipe-index.recipe-index--home-preview .recipavo-hero h1 { max-width: 34ch; text-wrap: balance; }
+.recipe-index.recipe-index--home-preview .recipavo-hero .page-intro__description { max-width: 68ch; font-size: 1rem; }
+.recipavo-hero__details { max-width: 76ch; color: var(--ink-soft); font-size: .9rem; }
+.recipe-index.recipe-index--home-preview .recipe-filters { padding: .65rem .85rem; gap: .45rem .7rem; }
+.recipe-index--home-preview .recipe-special-filters { min-height: 44px; }
+.recipe-index--home-preview .recipe-more-filters > summary { width: fit-content; }
+
+@media (max-width: 699px) {
+  .recipe-index--home-preview .recipe-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .recipe-index--home-preview .recipe-search-field { grid-column: 1 / -1; }
+}
+
+@media (min-width: 900px) {
+  .recipe-index--home-preview .recipe-filters {
+    grid-template-columns: minmax(14rem, 1fr) repeat(2, minmax(10rem, .55fr)) auto;
+  }
+
+  .recipe-index--home-preview .recipe-special-filters { grid-column: -2 / -1; }
+}
+
 .recipe-index--home-preview .home-preview__topics { margin: 1.2rem 0 1.35rem; }
 .recipe-index--home-preview .home-preview__topics h2,
 .recipe-index--home-preview .home-preview__picks h2 {

@@ -209,9 +209,9 @@ test("Recipavo phase-1 preview copy is localized and never promises unavailable 
   for (const locale of ["fi", "en", "sv", "th"] as const) {
     const hero = recipavoHeroCopy[locale];
     assert.equal(hero.brand, "Recipavo");
-    assert.ok(hero.brandHome && hero.tagline && hero.eyebrow && hero.title && hero.intro && hero.footer, locale);
+    assert.ok(hero.brandHome && hero.tagline && hero.title && hero.intro && hero.details && hero.footer, locale);
     assert.ok(hero.title.length < 90 && hero.intro.length < 250, locale);
-    assert.ok(!/Plus|Päiväkirja|Diary|สมัครสมาชิก/i.test([hero.title, hero.intro].join(" ")), locale);
+    assert.ok(!/Plus|Päiväkirja|Diary|สมัครสมาชิก/i.test([hero.title, hero.intro, hero.details].join(" ")), locale);
   }
   // The feature must remain disabled in ordinary builds, including plain Node tests.
   if (!import.meta.env?.VITE_RECIPAVO_HERO_PREVIEW) assert.equal(isRecipavoHeroPreviewEnabled(), false);

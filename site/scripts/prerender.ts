@@ -72,7 +72,8 @@ function routeMetadata(route: string, content: RouteContent) {
     `<link rel="alternate" hreflang="${altLocale}" href="${escapeHtml(`${baseUrl}${altPath}`)}" />`);
   const defaultAlternate = publishedLocales.find((item) => item.locale === "fi") ?? publishedLocales[0];
   if (defaultAlternate) alternates.push(`<link rel="alternate" hreflang="x-default" href="${escapeHtml(`${baseUrl}${defaultAlternate.path}`)}" />`);
-  const cardAvifSrc = pagination ? content.recipes[0]?.image?.homeAvifSrc : undefined;
+  const brandedHome = branded && !!indexLocale;
+  const cardAvifSrc = pagination || brandedHome ? content.recipes[0]?.image?.homeAvifSrc : undefined;
   const avifSrc = recipe?.image?.heroAvifSrc ?? cardAvifSrc;
   const avifMedia = cardAvifSrc ? recipeCardAvifMedia : recipeHeroAvifMedia;
   const avifPreload = avifSrc
@@ -93,7 +94,7 @@ function routeMetadata(route: string, content: RouteContent) {
   return {
     lang: locale,
     priorityImageMedia: avifSrc ? avifMedia : undefined,
-    waitForImagePaint: pagination?.locale === "en",
+    waitForImagePaint: brandedHome || pagination?.locale === "en",
     head: [
       `<title>${escapeHtml(title)}</title>`,
       avifPreload,
@@ -120,7 +121,7 @@ function routeMetadata(route: string, content: RouteContent) {
 function imagePriorityEntry(entrySrc: string, media: string, waitForPaint: boolean): string {
   // This module runs after parsing so the responsive picture and payload exist.
   // Let the image finish first, with a bounded wait and an immediate interaction path.
-  // The English library also gives the decoded image a rendering opportunity.
+  // The home pages and English library give the decoded image a chance to paint.
   return `<script type="module">
     const image = matchMedia(${JSON.stringify(media)}).matches &&
       document.querySelector("#root img[fetchpriority=high]");
