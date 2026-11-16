@@ -22,7 +22,7 @@ tags:
 - mustikka
 image:
   src: aamupalat/makea-banaanimunakas.webp
-  alt: A golden brown banana omelet folded into half moons, blueberries and honey
+  alt: Golden banana omelette folded in half with blueberries and honey
   width: 1600
   height: 900
 ingredients:
@@ -63,17 +63,17 @@ source_recipe: reseptit/aamupalat/makea-banaanimunakas.md
 
 ## Description
 
-A ripe banana sweetens a pan-fried omelette. Cinnamon and vanilla spice it up like a poor knight. Serve folded into half moons with blueberries and honey.
+Ripe banana sweetens this pan-fried omelette. Cinnamon and vanilla give it a flavour reminiscent of French toast. Serve it folded in half with blueberries and honey.
 
 ## Instructions
 
 1. Mash the banana with a fork until smooth. Whisk in the eggs, cinnamon and vanilla extract.
 2. Heat the oil in a non-stick pan of about 20 cm on medium heat. Pour the mixture into the pan and spread evenly.
-3. Turn the heat down to quite low. Cover the pan with a lid and bake for about 4-6 minutes, until the surface has congealed all over. If there is still a runny mixture in the center, continue cooking under the lid.
-4. Fold the omelet with a spatula into half moons and transfer to a plate. Add blueberries and drizzle with honey.
+3. Reduce the heat to low. Cover the pan and cook for about 4–6 minutes, until the top is set all over. If the centre is still runny, keep cooking with the lid on.
+4. Use a spatula to fold the omelette in half and slide it onto a plate. Add blueberries and drizzle with honey.
 
 ## Notes
 
 - Contains egg.
 - The vanilla powder in the video has been replaced with vanilla extract. Serving with blueberries and honey is an adjustment made based on the picture. [Wellness Tips USA's Facebook Reel](https://www.facebook.com/reel/1111232558038849)
-- The image is a perception image made with artificial intelligence.
+- The picture is an AI-generated illustration.

@@ -22,7 +22,7 @@ tags:
 - mustikka
 image:
   src: aamupalat/makea-banaanimunakas.webp
-  alt: En gyllenbrun bananomelett viks till halvmånar, blåbär och honung
+  alt: Gyllenbrun bananomelett vikt till en halvmåne, med blåbär och honung
   width: 1600
   height: 900
 ingredients:
@@ -63,14 +63,14 @@ source_recipe: reseptit/aamupalat/makea-banaanimunakas.md
 
 ## Beskrivning
 
-En mogen banan sötar en stekt omelett. Kanel och vanilj kryddar det som en fattig riddare. Servera vikta till halvmånar med blåbär och honung.
+Mogen banan ger omeletten sötma, och kanel och vanilj för tankarna till fattiga riddare. Vik omeletten på mitten och servera med blåbär och honung.
 
 ## Gör så här
 
 1. Mosa bananen med en gaffel tills den är slät. Vispa i ägg, kanel och vaniljextrakt.
 2. Hetta upp oljan i en non-stick panna på ca 20 cm på medelvärme. Häll blandningen i pannan och fördela jämnt.
-3. Sänk värmen till ganska låg. Täck formen med ett lock och grädda i ca 4-6 minuter, tills ytan stelnat överallt. Om det fortfarande finns en rinnig blandning i mitten fortsätter du att laga mat under lock.
-4. Vik omeletten med en spatel till halvmånar och överför till en tallrik. Tillsätt blåbär och ringla över honung.
+3. Sänk till låg värme. Lägg lock på stekpannan och stek i cirka 4–6 minuter tills hela ytan har stelnat. Fortsätt steka under lock om mitten fortfarande är rinnig.
+4. Vik omeletten på mitten med en stekspade och låt den glida över på en tallrik. Tillsätt blåbär och ringla över honung.
 
 ## Anteckningar
 
