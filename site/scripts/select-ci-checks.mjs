@@ -124,6 +124,11 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false,
       addGlycemicChecks(plan);
       continue;
     }
+    if (/^site\/(?:scripts|tests)\/(?:test_)?gi_(?:sqlite[^/]*|gk_maintainer)\.(?:py|mjs)$/.test(file)) {
+      addNutritionChecks(plan);
+      addGlycemicChecks(plan);
+      continue;
+    }
     if (glycemicDataFiles.has(file) || /^docs\/nutrition\/glycemic-[a-z0-9-]+\.json$/i.test(file) ||
         file === "site/scripts/glycemic-load-model.ts" ||
         file === "site/scripts/glycemic-load-pilot.ts" ||

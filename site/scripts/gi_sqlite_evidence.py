@@ -410,18 +410,22 @@ def main():
                 from gi_sqlite_asset_map import asset_map
                 result = asset_map(maintainer.checked_folder(folder))
             elif mode == "benchmark":
-                result = maintainer.benchmark()
+                result = maintainer.benchmark(folder, sys.modules[__name__])
             else:
                 db_path, snapshot = maintainer.open_pilot(folder, sys.modules[__name__])
                 with maintainer.checked_database(db_path, snapshot) as db:
                     if mode == "export":
-                        result = maintainer.export_preview(db, snapshot, folder)
+                        manifest, _, _ = maintainer.load_capture(folder)
+                        result = maintainer.export_preview(db, snapshot, folder, manifest)
                     elif mode == "cases":
                         result = maintainer.cases(db, snapshot)
                     else:
                         result = maintainer.lookup(db, snapshot, mode, args.id, args.after, args.limit)
                 if mode in {"source", "impact", "approval"}:
-                    result["revision"] = json.loads((folder / "manifest.json").read_bytes())["revision"]
+                    manifest = json.loads((folder / "manifest.json").read_bytes())
+                    if maintainer.digest(maintainer.encode(manifest)) != snapshot:
+                        raise ValueError("Capture changed during lookup: retry after capture finishes")
+                    result["revision"] = manifest["revision"]
         elif args.requests:
             if args.recipe:
                 parser.error("--recipe applies only to --inventory and --pilot")
@@ -438,7 +442,8 @@ def main():
         for row in result["rows"]:
             print("- " + " | ".join(f"{key}: {value}" for key,value in row.items() if key != "snapshot" and value is not None))
         if not result["rows"]:
-            print("Ei osumia tällä revisiolla.")
+            print("Kartoituksesta ei löytynyt linkkejä." if args.maintainer == "impact"
+                  else "Ei osumia tällä revisiolla.")
         if result.get("scope"):
             print(result["scope"])
         if result["next"]:

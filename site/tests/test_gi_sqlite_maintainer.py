@@ -1,3 +1,4 @@
+import json
 import sqlite3
 import sys
 import unittest
@@ -87,18 +88,30 @@ class MaintainerQueries(unittest.TestCase):
             self.assertEqual((unpublished["gk"], unpublished["range_kind"]), (2, "UNKNOWN"))
             self.assertIsNone(unpublished["public_range_min"])
 
+    def test_observation_aliases_require_the_same_source_evidence(self):
+        registry = json.loads(pilot.index.DEFAULT_SOURCE.read_bytes())["records"]
+        legacy = "tomato-cherry-raw-analogue-gi-22"
+        ids = pilot.observation_ids(registry)
+        self.assertEqual(ids[legacy], pilot.TOMATO)
+        self.assertNotEqual(ids[pilot.CASES["preparation"]], ids["potato-fried-evoo-spunta-gi-83"])
+        row = next(r for r in registry if r["id"] == legacy)
+        self.assertEqual(pilot.observation_kind(row), "SECONDARY_REFERENCE")
+        self.assertEqual(row["matchKind"], "ANALOG")
+        row["source"]["table"] = "Unrelated table in the same publication"
+        self.assertEqual(pilot.observation_ids(registry)[legacy], legacy)
+
     def test_portable_export_removes_value_bearing_ids_and_keeps_links(self):
-        snapshot = "test-snapshot"
+        capture = {"revision": "test-revision", "tree": "test-tree", "activeInputs": {}}
+        snapshot = pilot.digest(pilot.encode(capture))
         ids = pilot.CASES
         with TemporaryDirectory() as directory, sqlite3.connect(":memory:") as db:
             folder = Path(directory)
-            pilot.save(folder / "manifest.json", {"revision": "test-revision"})
             db.executescript(pilot.INDEXED)
             for case, legacy in ids.items():
                 observation = ids["direct"] if case == "analogue" else legacy
                 preparation = legacy if case == "imputed" else "preparation"
                 db.execute("INSERT INTO maintainer_source VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
-                    snapshot, legacy, observation, "https://example.org/study", "private locator",
+                    snapshot, legacy, observation, pilot.PREVIEW_LINKS.get(legacy, "https://example.org/study"), "private locator",
                     "HUMAN_GI", None, 114, "GLUCOSE_100", "food", preparation, None, None, None, None,
                 ))
             db.execute("INSERT INTO maintainer_dependency VALUES (?,?,?,?,?)", (
@@ -110,11 +123,30 @@ class MaintainerQueries(unittest.TestCase):
                 snapshot, pilot.CHAIN_RECIPE, "original", "A", 1.0, None, None, None,
                 "PUBLISHED_AND_BASELINE_BINDING_MATCHES", "private-approval", "ORIGINAL_RECIPE", "audit", 1.0,
             ))
-            self.assertEqual(pilot.export_preview(db, snapshot, folder)["localReplayWrites"], 0)
-            sql = (folder / "d1-preview/import.sql").read_text(encoding="utf-8")
+            db.execute(
+                f"INSERT INTO maintainer_calculation ({pilot.CALCULATION_COLUMNS},scope,calculation_reference,public_gk) "
+                "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)", (
+                    snapshot, pilot.VARIANT_RECIPE, "v1", "A", 0, None, "private-hash", None,
+                    "PUBLISHED_VARIANT", "private-approval", "RECIPE_VARIANT", "audit", 0,
+                ),
+            )
+            result = pilot.export_preview(db, snapshot, folder, capture)
+            self.assertEqual(result["localReplayWrites"], 0)
+            self.assertTrue(result["localInterruptionRolledBack"])
+            output = folder / "d1-preview"
+            manifest = json.loads((output / "manifest.json").read_bytes())
+            self.assertIn("import.sql", pilot.read_preview(output, manifest))
+            sql = (output / "import.sql").read_text(encoding="utf-8")
+            (output / "import.sql").write_text("SELECT 1;", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "checksum"):
+                pilot.read_preview(output, manifest)
+            (output / "manifest.json").write_text("nope", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "Unreadable"):
+                pilot.read_preview(output, manifest)
             for legacy in ids.values():
                 self.assertNotIn(legacy, sql)
             self.assertNotIn("private locator", sql)
             self.assertNotIn("private-approval", sql)
+            self.assertNotIn("private-hash", sql)
             self.assertIn("whole-tomato-raw", sql)
             self.assertIn("tomato-raw-cooked-sauce-analogue", sql)

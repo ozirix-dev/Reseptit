@@ -12,7 +12,6 @@ import subprocess
 import time
 from contextlib import closing
 from tempfile import TemporaryDirectory
-from urllib.parse import urlsplit
 
 import gi_sqlite_index as index
 
@@ -36,6 +35,11 @@ GENERATED = (
 )
 MAINTAINER_SCHEMA_VERSION = "3"
 VARIANT_CASES, VARIANT_GI, VARIANT_APPROVAL = INPUTS[-3:]
+NEXT_FOUR = "docs/nutrition/gk80-next-four/"
+PAD_CASES = "docs/research/afcd-polyol-03/noodle-campaign/"
+PAD_APPROVAL = "docs/research/afcd-polyol-03/pad-see-ew-approval.json"
+INPUTS += (NEXT_FOUR + "integration.json", NEXT_FOUR + "cases.json", NEXT_FOUR + "sources.json",
+           PAD_APPROVAL, PAD_CASES + "cases.json", PAD_CASES + "sources.json")
 INDEXED = """
 CREATE TABLE maintainer_source (
   snapshot TEXT NOT NULL, legacy_id TEXT NOT NULL, observation_id TEXT NOT NULL,
@@ -76,6 +80,13 @@ PREVIEW_SOURCE_IDS = {
     CASES["imputed"]: "vegetable-imputation",
 }
 TOMATO = "whole-tomato-raw-gi-22"
+# The three tomato locators refer to the same whole/raw row in the 2021 tables.
+# Pin the locator strings as well as the GI/scale/food checks below.
+TOMATO_LOCATORS = {
+    TOMATO: "Supplemental Table 1; article Results also reports the value",
+    "tomato-cherry-raw-analogue-gi-22": "Supplemental Table 1; whole tomatoes, raw, GI 22",
+    "tomato-raw-cooked-sauce-analogue-gi-22": "Supplemental Table 1; whole tomato, raw",
+}
 OBSERVATION_ALIASES = {
     "tomato-cherry-raw-analogue-gi-22": TOMATO,
     "tomato-raw-cooked-sauce-analogue-gi-22": TOMATO,
@@ -96,23 +107,36 @@ CALCULATION_COLUMNS = (
     "snapshot,recipe_id,version_id,status,gk,recipe_sha256,input_sha256,evidence_sha256,"
     "approval,review_reference"
 )
-PREVIEW_SCHEMA = """CREATE TABLE maintainer_source (
-  snapshot TEXT NOT NULL, legacy_id TEXT NOT NULL, observation_id TEXT NOT NULL,
-  source_url TEXT NOT NULL, locator TEXT, kind TEXT NOT NULL, applicability TEXT,
-  gi REAL, reference_scale TEXT NOT NULL, food_key TEXT NOT NULL, preparation_key TEXT NOT NULL,
+PREVIEW_SCHEMA_VERSION = 2
+PREVIEW_SCHEMA = """CREATE TABLE preview_snapshots (id TEXT PRIMARY KEY, revision TEXT NOT NULL);
+CREATE TABLE preview_active (
+  slot INTEGER PRIMARY KEY CHECK(slot=1),
+  snapshot TEXT NOT NULL REFERENCES preview_snapshots(id)
+);
+CREATE TABLE maintainer_source (
+  snapshot TEXT NOT NULL REFERENCES preview_snapshots(id),
+  legacy_id TEXT NOT NULL, observation_id TEXT NOT NULL, source_url TEXT NOT NULL,
+  kind TEXT NOT NULL, applicability TEXT, reference_scale TEXT NOT NULL,
+  food_key TEXT NOT NULL, preparation_key TEXT NOT NULL,
   PRIMARY KEY (snapshot, legacy_id)
 );
 CREATE TABLE maintainer_dependency (
   snapshot TEXT NOT NULL, legacy_id TEXT NOT NULL, recipe_id TEXT NOT NULL, role TEXT NOT NULL,
-  PRIMARY KEY (snapshot, legacy_id, recipe_id, role)
+  PRIMARY KEY (snapshot, legacy_id, recipe_id, role),
+  FOREIGN KEY (snapshot, legacy_id) REFERENCES maintainer_source(snapshot, legacy_id)
 );
 CREATE TABLE maintainer_calculation (
-  snapshot TEXT NOT NULL, recipe_id TEXT NOT NULL, version_id TEXT NOT NULL,
-  status TEXT NOT NULL, gk REAL, recipe_sha256 TEXT, input_sha256 TEXT, evidence_sha256 TEXT,
-  approval TEXT NOT NULL, review_reference TEXT,
+  snapshot TEXT NOT NULL REFERENCES preview_snapshots(id),
+  recipe_id TEXT NOT NULL, version_id TEXT NOT NULL, gk REAL NOT NULL,
   PRIMARY KEY (snapshot, recipe_id, version_id)
 );
 """
+PREVIEW_LINKS = {
+    CASES["preparation"]: FRIED_POTATO_STUDY,
+    CASES["direct"]: "https://doi.org/10.1093/ajcn/nqab233",
+    CASES["analogue"]: "https://doi.org/10.1093/ajcn/nqab233",
+    CASES["imputed"]: "https://doi.org/10.2337/dc08-1239",
+}
 
 
 def encode(value):
@@ -270,27 +294,58 @@ def observation_ids(records):
         if alias not in by_id or primary not in by_id:
             continue
         row, measured = by_id[alias], by_id[primary]
+        same_locator = (
+            all(by_id[key]["source"]["table"] == TOMATO_LOCATORS[key] for key in (alias, primary))
+            if primary == TOMATO else row["source"]["table"] == measured["source"]["table"]
+        )
         if (row.get("matchKind") == "ANALOG"
                 and all(row[key] == measured[key] for key in ("gi", "foodKey", "preparationKey", "referenceScale"))
                 and row["source"]["url"] == measured["source"]["url"]
-                and (primary == TOMATO or row["source"]["table"] == measured["source"]["table"])):
+                and same_locator):
             result[alias] = primary
     return result
 
 
 def variant_packet(root):
-    cases = json.loads((root / VARIANT_CASES).read_bytes())["cases"]
-    gi = json.loads((root / VARIANT_GI).read_bytes())["records"]
-    receipt = json.loads((root / VARIANT_APPROVAL).read_bytes())["approvedInputs"]
-    native_ids = {row["id"]: row["nativeId"] for row in gi if row.get("path") == INPUTS[0]}
-    # The build verifies the packet and seals those exact inputs before capture.
-    return {
-        (case["recipeId"], case["inputSha256"]): (
-            (case.get("recipeSha256") or {}).get("fi"),
-            {native_ids[row["giId"]] for row in case["candidateIngredients"] if row.get("giId") in native_ids},
-        )
-        for case in cases if receipt.get(case["recipeId"]) == case["inputSha256"]
-    }
+    def read(path):
+        return json.loads((root / path).read_bytes())
+
+    packet = {}
+
+    def add(case, approval, expected, gi_rows, default_source=None):
+        if expected is None or expected != case["inputSha256"]:
+            return
+        native_ids = {
+            row["id"]: row["nativeId"] for row in gi_rows
+            if (row.get("path") or row.get("sourcePath") or default_source) == INPUTS[0]
+        }
+        recipe = case["recipeId"]
+        recipe_hash = (case.get("recipeSha256") or case.get("recipeSha256Lf") or {}).get("fi")
+        exact_ids = {native_ids[row["giId"]] for row in case["candidateIngredients"] if row.get("giId") in native_ids}
+        packet[(recipe, expected)] = (recipe_hash, exact_ids, approval)
+
+    # Each reader below follows the same file/path contract the build verifies
+    # before generating the captured variant and its input hash.
+    gi = read(VARIANT_GI)["records"]
+    approved = read(VARIANT_APPROVAL)["approvedInputs"]
+    for case in read(VARIANT_CASES)["cases"]:
+        add(case, VARIANT_APPROVAL, approved.get(case["recipeId"]), gi)
+
+    approval = NEXT_FOUR + "integration.json"
+    approved = read(approval)["approvedInputs"]
+    groups = read(NEXT_FOUR + "cases.json")
+    contexts = read(NEXT_FOUR + "sources.json")["contexts"]
+    for case in groups["cases"]:
+        recipe = case["recipeId"]
+        add(case, approval, approved.get(recipe), contexts[groups["caseContexts"][recipe]]["giBindings"],
+            default_source=INPUTS[0])
+
+    receipt = read(PAD_APPROVAL)
+    gi = read(PAD_CASES + "sources.json")["giBindings"]
+    for case in read(PAD_CASES + "cases.json")["cases"]:
+        if case["recipeId"] == receipt["recipeId"]:
+            add(case, PAD_APPROVAL, receipt["approvedCaseInputSha256"], gi)
+    return packet
 
 
 def inventory():
@@ -403,7 +458,7 @@ def collect(db, snapshot, registry, audit, public, bindings, packet=None):
             "UNPUBLISHED_STUDY_COMPARISON" if study else "UNPUBLISHED_VARIANT"
         )
         pack = (packet or {}).get((variant["recipeId"], variant["inputSha256"]))
-        recipe_hash, exact_ids = pack if pack else (variant.get("recipeSha256"), set())
+        recipe_hash, exact_ids, review_ref = pack if pack else (variant.get("recipeSha256"), set(), None)
         for legacy_id in exact_ids:
             if legacy_id not in observations:
                 raise ValueError("Approved variant refers to missing canonical GI ID: " + legacy_id)
@@ -419,7 +474,7 @@ def collect(db, snapshot, registry, audit, public, bindings, packet=None):
         db.execute(insert, (
             snapshot, *key, variant["level"], variant.get("point"), recipe_hash,
             variant["inputSha256"], variant.get("evidenceSha256"), approval,
-            VARIANT_APPROVAL if pack else GENERATED[2] if shown else None, *calculated_range,
+            (review_ref or GENERATED[2]) if shown else review_ref, *calculated_range,
             "CALCULATED" if shown else None, shown.get("point"), *shown_range,
             scope, None, GENERATED[0],
             *range_fields(variant.get("sensitivity"), (variant.get("sensitivity") or {}).get("kind")),
@@ -598,136 +653,205 @@ def sql_value(value):
     return json.dumps(value, allow_nan=False)
 
 
-def export_preview(db, snapshot, folder):
-    # Project-derived identifiers and citations only. Exclude numeric GI, passage
-    # locators and records with unresolved rights. Cloud import needs separate approval.
+def preview_rows(db, snapshot):
+    sources = []
+    for legacy, observation, url, kind, applicability, scale, food, preparation in db.execute(
+        "SELECT legacy_id,observation_id,source_url,kind,applicability,reference_scale,food_key,preparation_key "
+        "FROM maintainer_source WHERE snapshot=? ORDER BY legacy_id", (snapshot,),
+    ):
+        if legacy not in PREVIEW_SOURCE_IDS:
+            continue
+        if url != PREVIEW_LINKS[legacy] or observation not in PREVIEW_SOURCE_IDS:
+            raise ValueError("Preview citation or observation changed; review its allowlist: " + legacy)
+        sources.append((snapshot, PREVIEW_SOURCE_IDS[legacy], PREVIEW_SOURCE_IDS[observation], url, kind,
+                        applicability, scale, food, PREVIEW_SOURCE_IDS[legacy]))
+    if set(row[1] for row in sources) != set(PREVIEW_SOURCE_IDS.values()):
+        raise ValueError("Preview source allowlist is incomplete")
+    dependencies = [
+        (snapshot, PREVIEW_SOURCE_IDS[legacy], recipe, "public-original")
+        for legacy, recipe in db.execute(
+            "SELECT legacy_id,recipe_id FROM maintainer_dependency WHERE snapshot=? AND role='public-original' "
+            "ORDER BY legacy_id,recipe_id", (snapshot,),
+        )
+        if legacy in PREVIEW_SOURCE_IDS
+    ]
+    calculations = []
+    for recipe, version, point, range_min, approval in db.execute(
+        "SELECT recipe_id,version_id,public_gk,public_range_min,approval FROM maintainer_calculation "
+        "WHERE snapshot=? ORDER BY recipe_id,version_id", (snapshot,),
+    ):
+        if (recipe == VARIANT_RECIPE and approval == "PUBLISHED_VARIANT") or (
+            recipe == CHAIN_RECIPE and version == "original" and approval == "PUBLISHED_AND_BASELINE_BINDING_MATCHES"
+        ):
+            if point is None or range_min is not None:
+                raise ValueError("The current preview allows point-only GK; review its field scope: " + recipe)
+            calculations.append((snapshot, recipe, version, point))
+    if {row[1] for row in calculations} != {CHAIN_RECIPE, VARIANT_RECIPE}:
+        raise ValueError("Preview is missing a permitted published calculation")
+    return dict(zip(TABLES, (sources, dependencies, calculations)))
+
+
+def read_preview(output, expected):
+    try:
+        manifest = json.loads((output / "manifest.json").read_bytes())
+        if manifest != expected or manifest.get("schemaVersion") != PREVIEW_SCHEMA_VERSION:
+            raise ValueError("Preview manifest does not match the verified local export")
+        files = {}
+        for name in ("schema.sql", "import.sql"):
+            raw = (output / name).read_bytes()
+            if digest(raw) != manifest["sha256"][name]:
+                raise ValueError("Preview SQL checksum failed: " + name)
+            files[name] = raw.decode("utf-8")
+    except (OSError, json.JSONDecodeError) as exc:
+        raise ValueError("Unreadable preview export: " + str(exc)) from exc
+    if files["schema.sql"] != PREVIEW_SCHEMA:
+        raise ValueError("Unknown preview schema")
+    return files
+
+
+def import_preview(db, sql):
+    # SQLite local rehearsal. D1 would execute these statements in one API batch.
+    try:
+        db.executescript("BEGIN IMMEDIATE;\n" + sql + "\nCOMMIT;")
+    except sqlite3.Error:
+        db.rollback()
+        raise
+
+
+def activate_preview(db, snapshot, expected_active):
+    if expected_active is None:
+        result = db.execute("INSERT INTO preview_active VALUES (1,?) ON CONFLICT(slot) DO NOTHING", (snapshot,))
+    else:
+        result = db.execute("UPDATE preview_active SET snapshot=? WHERE slot=1 AND snapshot=?",
+                            (snapshot, expected_active))
+    return result.rowcount == 1
+
+
+def export_preview(db, snapshot, folder, capture_manifest):
     output = folder / "d1-preview"
     output.mkdir(exist_ok=True)
-    def rows(query):
-        return [tuple(row) for row in db.execute(query, (snapshot,))]
-    by_table = {
-        "maintainer_source": [
-            (s, PREVIEW_SOURCE_IDS[legacy], PREVIEW_SOURCE_IDS[observation], url, None, kind, applicability, None,
-             scale, food, "vegetable-imputation" if legacy == CASES["imputed"] else preparation)
-            for s, legacy, observation, url, _locator, kind, applicability, _gi, scale, food, preparation
-            in rows("SELECT snapshot,legacy_id,observation_id,source_url,locator,kind,applicability,"
-                        "gi,reference_scale,food_key,preparation_key FROM maintainer_source "
-                        "WHERE snapshot=? ORDER BY legacy_id")
-            if legacy in PREVIEW_SOURCE_IDS and urlsplit(url).scheme == "https"
-        ],
-        "maintainer_dependency": [
-            (s, PREVIEW_SOURCE_IDS[legacy], recipe, role)
-            for s, legacy, recipe, role in rows(
-                "SELECT snapshot,legacy_id,recipe_id,role FROM maintainer_dependency WHERE snapshot=? ORDER BY legacy_id,recipe_id,role")
-            if legacy in PREVIEW_SOURCE_IDS and role == "public-original"
-        ],
-        "maintainer_calculation": [
-            row for row in rows(
-                "SELECT snapshot,recipe_id,version_id,status,public_gk,NULL,NULL,NULL,approval,NULL "
-                "FROM maintainer_calculation WHERE snapshot=? ORDER BY recipe_id,version_id")
-            if (row[1] == VARIANT_RECIPE and row[8] == "PUBLISHED_VARIANT")
-            or (row[1] == CHAIN_RECIPE and row[2] == "original"
-                and row[8] == "PUBLISHED_AND_BASELINE_BINDING_MATCHES")
-        ],
-    }
-    schema = ("CREATE TABLE preview_snapshots (id TEXT PRIMARY KEY, revision TEXT NOT NULL);\n"
-              "CREATE TABLE preview_active (slot INTEGER PRIMARY KEY CHECK(slot=1), snapshot TEXT NOT NULL REFERENCES preview_snapshots(id));\n"
-              + PREVIEW_SCHEMA)
-    (output / "schema.sql").write_text(schema, encoding="utf-8", newline="\n")
-    revision = json.loads((folder / "manifest.json").read_bytes())["revision"]
+    by_table = preview_rows(db, snapshot)
+    if snapshot != digest(encode(capture_manifest)):
+        raise ValueError("Preview and verified capture revisions differ")
+    revision = capture_manifest["revision"]
+
     def insert(table, row):
         return f"INSERT INTO {table} VALUES ({','.join(map(sql_value, row))}) ON CONFLICT DO NOTHING;\n"
+
     sql = insert("preview_snapshots", (snapshot, revision))
-    for table in TABLES:
-        sql += "".join(insert(table, row) for row in by_table[table])
+    for table, rows in by_table.items():
+        sql += "".join(insert(table, row) for row in rows)
     if any(legacy_id in sql for legacy_id in CASES.values()):
         raise ValueError("Preview contains a local GI identifier")
-    (output / "import.sql").write_text(sql, encoding="utf-8", newline="\n")
-    with closing(sqlite3.connect(":memory:")) as restored:
+    files = {"schema.sql": PREVIEW_SCHEMA.encode(), "import.sql": sql.encode()}
+    manifest = {
+        "schemaVersion": PREVIEW_SCHEMA_VERSION, "revision": revision, "tree": capture_manifest["tree"],
+        "snapshot": snapshot, "inputSha256": capture_manifest["activeInputs"],
+        "tables": {k: len(v) for k, v in by_table.items()},
+        "sha256": {name: digest(raw) for name, raw in files.items()},
+        "remoteApprovalRequired": True,
+    }
+    for name, raw in files.items():
+        (output / name).write_bytes(raw)
+    save(output / "manifest.json", manifest)
+    restored_files = read_preview(output, manifest)
+    with TemporaryDirectory() as scratch, closing(sqlite3.connect(Path(scratch) / "restored.sqlite")) as restored:
         restored.execute("PRAGMA foreign_keys=ON")
-        restored.executescript(schema)
-        restored.executescript(sql)
+        restored.executescript(restored_files["schema.sql"])
+        previous = "local-rollback-fixture"
+        restored.execute("INSERT INTO preview_snapshots VALUES (?,?)", (previous, "fixture"))
+        if not activate_preview(restored, previous, None):
+            raise ValueError("Local initial activation failed")
+        restored.commit()
+        sql = restored_files["import.sql"]
+        try:
+            import_preview(restored, sql + "INSERT INTO missing_table VALUES (1);")
+        except sqlite3.Error:
+            if restored.execute("SELECT 1 FROM preview_snapshots WHERE id=?", (snapshot,)).fetchone():
+                raise ValueError("Interrupted import left a partial snapshot")
+        else:
+            raise ValueError("Interrupted import test did not fail")
+        import_preview(restored, sql)
         before = restored.total_changes
-        restored.executescript(sql)
+        import_preview(restored, sql)
         if before != restored.total_changes or restored.execute("PRAGMA foreign_key_check").fetchall():
             raise ValueError("Portable SQL replay or foreign key check failed")
         for table, expected in by_table.items():
             if sorted(restored.execute(f"SELECT * FROM {table}").fetchall()) != sorted(expected):
                 raise ValueError("Restored projection differs: " + table)
-        preview_ids = {row[0] for row in restored.execute("SELECT legacy_id FROM maintainer_source")}
-        if preview_ids != set(PREVIEW_SOURCE_IDS.values()) or restored.execute(
-            "SELECT 1 FROM maintainer_source WHERE gi IS NOT NULL OR locator IS NOT NULL"
-        ).fetchone():
-            raise ValueError("Preview sources differ from the permitted projection")
-        alias = PREVIEW_SOURCE_IDS[CASES["analogue"]]
-        source = lookup(restored, snapshot, "source", alias)["rows"]
-        if len(source) != 1 or source[0]["observation_id"] != PREVIEW_SOURCE_IDS[CASES["direct"]]:
-            raise ValueError("Portable lookup lost the shared source observation")
-        if not restored.execute(
-            "SELECT 1 FROM maintainer_dependency WHERE snapshot=? AND legacy_id=? AND recipe_id=?",
-            (snapshot, alias, CHAIN_RECIPE),
-        ).fetchone():
-            raise ValueError("Portable impact lookup lost the linked recipe")
-        if len(lookup(restored, snapshot, "approval", CHAIN_RECIPE)["rows"]) != 1:
-            raise ValueError("Portable lookup lost the approved calculation")
-        if restored.execute("SELECT snapshot FROM preview_active").fetchall():
+        if restored.execute("SELECT snapshot FROM preview_active WHERE slot=1").fetchone() != (previous,):
             raise ValueError("A D1 import must stay passive")
-        # Synthetic predecessor is used only for the local rollback exercise.
-        previous = "local-rollback-fixture"
-        restored.execute("INSERT INTO preview_snapshots VALUES (?,?)", (previous, "fixture"))
-        restored.execute("INSERT INTO preview_active VALUES (1,?)", (previous,))
-        swap = "UPDATE preview_active SET snapshot=? WHERE slot=1 AND snapshot=?"
-        if restored.execute(swap, (snapshot, "stale")).rowcount != 0:
-            raise ValueError("A stale activation overwrote the active version")
-        if restored.execute(swap, (snapshot, previous)).rowcount != 1:
-            raise ValueError("Local activation failed")
-        if restored.execute(swap, (previous, snapshot)).rowcount != 1:
-            raise ValueError("Local rollback failed")
+        if (activate_preview(restored, snapshot, "stale") or not activate_preview(restored, snapshot, previous)
+                or not activate_preview(restored, previous, snapshot)):
+            raise ValueError("Local activation or rollback failed")
         if restored.execute("SELECT snapshot FROM preview_active WHERE slot=1").fetchone() != (previous,):
             raise ValueError("Local rollback did not restore active version")
-    manifest = {"schemaVersion": 1, "revision": revision, "snapshot": snapshot,
-                "tables": {k: len(v) for k,v in by_table.items()}, "localReplayWrites": 0,
-                "remoteApprovalRequired": True, "localActivationAndRollbackVerified": True,
-                "sha256": {n: digest((output / n).read_bytes()) for n in ("schema.sql", "import.sql")}}
-    save(output / "manifest.json", manifest)
-    return manifest
+    return {**manifest, "localReplayWrites": 0, "localInterruptionRolledBack": True,
+            "localActivationAndRollbackVerified": True}
 
 
-def benchmark():
+def measure_queries(db, snapshot):
+    queries = {}
+    for mode, table, key in (
+        ("source", "maintainer_source", "legacy_id"),
+        ("impact", "maintainer_source", "legacy_id"),
+        ("approval", "maintainer_calculation", "recipe_id"),
+    ):
+        keys = [row[0] for row in db.execute(
+            f"SELECT DISTINCT {key} FROM {table} WHERE snapshot=? ORDER BY {key}", (snapshot,),
+        )]
+        statements = []
+        db.set_trace_callback(statements.append)
+        try:
+            lookup(db, snapshot, mode, keys[0])
+        finally:
+            db.set_trace_callback(None)
+        plans = [
+            [row[3] for row in db.execute("EXPLAIN QUERY PLAN " + sql)]
+            for sql in statements
+        ]
+        timings = []
+        for i in range(100):
+            key_value = keys[(i * 977) % len(keys)]
+            start = time.perf_counter_ns()
+            lookup(db, snapshot, mode, key_value)
+            timings.append((time.perf_counter_ns() - start) / 1_000_000)
+        queries[mode] = {
+            "medianMs": statistics.median(timings), "p95Ms": sorted(timings)[94],
+            "queryPlans": plans,
+        }
+    return queries
+
+
+def benchmark(folder, evidence):
     reports = []
-    for n in (64, 10_000, 100_000):
-        with closing(sqlite3.connect(":memory:")) as db:
-            started = time.perf_counter_ns()
-            db.executescript(INDEXED)
-            db.executemany("INSERT INTO maintainer_source VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
-                           (("bench", f"i{i:06}", f"o{i:06}", "", None, "synthetic", None, None, "glucose", "food", "raw", None, None, None, None) for i in range(n)))
-            db.executemany("INSERT INTO maintainer_dependency VALUES (?,?,?,?,?)",
-                           (("bench", f"i{i:06}", f"r{i:06}", "synthetic", "original") for i in range(n)))
-            db.executemany(
-                f"INSERT INTO maintainer_calculation ({CALCULATION_COLUMNS},scope,calculation_reference) "
-                "VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
-                           (("bench", f"r{i:06}", "original", "synthetic", None, None, None, None, "synthetic", None, "ORIGINAL_RECIPE", "synthetic") for i in range(n)))
-            build_ms = (time.perf_counter_ns() - started) / 1_000_000
-            times = {}
-            for mode in ("source", "impact", "approval"):
-                samples = []
-                for i in range(100):
-                    suffix = (i * 977) % n
-                    key = f'{"r" if mode == "approval" else "i"}{suffix:06}'
-                    start = time.perf_counter_ns()
-                    result = lookup(db, "bench", mode, key)
-                    samples.append((time.perf_counter_ns() - start) / 1_000_000)
-                    if len(result["rows"]) != 1:
-                        raise ValueError("Synthetic query result differs")
-                times[mode] = {"medianMs": statistics.median(samples), "p95Ms": sorted(samples)[94]}
-            query_plans = [
-                db.execute("EXPLAIN QUERY PLAN SELECT * FROM " + table + " WHERE snapshot=? AND " + key + "=?",
-                           ("bench", "i000000")).fetchall()
-                for table,key in zip(TABLES, ("legacy_id","legacy_id","recipe_id"))
-            ]
-            if any(not all("SEARCH" in row[3] for row in plan) for plan in query_plans):
-                raise ValueError("A maintainer lookup scans its table")
-            pages, page_size = (db.execute("PRAGMA "+key).fetchone()[0] for key in ("page_count", "page_size"))
-            reports.append({"observations": n, "representativeSqliteBytes": pages * page_size,
-                            "buildMs": build_ms, "queryMs": times, "queryPlans": query_plans})
+    with TemporaryDirectory() as scratch:
+        path = Path(scratch) / "actual.sqlite"
+        start = time.perf_counter_ns()
+        destination, snapshot = open_pilot(folder, evidence, path)
+        elapsed = (time.perf_counter_ns() - start) / 1_000_000
+        with checked_database(destination, snapshot) as db:
+            count = db.execute("SELECT COUNT(*) FROM maintainer_source WHERE snapshot=?", (snapshot,)).fetchone()[0]
+            reports.append({"dataset": "actual", "observations": count, "sqliteBytes": path.stat().st_size,
+                            "buildMs": elapsed, "queries": measure_queries(db, snapshot)})
+        for n in (10_000, 100_000):
+            path = Path(scratch) / f"synthetic-{n}.sqlite"
+            with closing(sqlite3.connect(path)) as db:
+                started = time.perf_counter_ns()
+                db.executescript(INDEXED)
+                db.executemany("INSERT INTO maintainer_source VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                               (("bench", f"i{i:06}", f"o{i:06}", "", None, "synthetic", None, None,
+                                 "glucose", "food", "raw", None, None, None, None) for i in range(n)))
+                db.executemany("INSERT INTO maintainer_dependency VALUES (?,?,?,?,?)",
+                               (("bench", f"i{i:06}", f"r{i:06}", "synthetic", "original") for i in range(n)))
+                db.executemany(
+                    f"INSERT INTO maintainer_calculation ({CALCULATION_COLUMNS},scope,calculation_reference) "
+                    "VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
+                    (("bench", f"r{i:06}", "original", "synthetic", None, None, None, None, "synthetic", None,
+                      "ORIGINAL_RECIPE", "synthetic") for i in range(n)),
+                )
+                db.commit()
+                elapsed = (time.perf_counter_ns() - started) / 1_000_000
+                reports.append({"dataset": "synthetic", "observations": n, "sqliteBytes": path.stat().st_size,
+                                "buildMs": elapsed, "queries": measure_queries(db, "bench")})
     return reports
