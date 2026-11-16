@@ -89,13 +89,15 @@ export const reviewedDietFilters: Readonly<Record<string, ReviewedDietSource>> =
       th: "1477cb4f48bc18baa2e45c1cb16492150f672aa7",
     },
   },
+  // PR #682 changed wording, including the oven instruction. Ingredients
+  // and quantities were rechecked against the previous EN and TH sources.
   "kermainen-lohipata": {
     tags: ["pescatarian"],
     sourceBlobShas: {
       fi: "b22e39b5d034debf7203b7a7129a021970cba925",
-      en: "4a0eb25207e102e5a2bbb9535eb3d9aff4dd5782",
+      en: "7a65bd94ff9c1e6d3d42764bb440023b7ad290be",
       sv: "93557e26d465775c70933afcc244e93b2bd4c9c9",
-      th: "cad8468700cf5afc7a5d17d4038fe645542be1ba",
+      th: "7ac9560cf1045f7bff2c4b7cdaf1031ec614f3ea",
     },
   },
   "medu-vada": {
