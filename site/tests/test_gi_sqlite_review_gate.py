@@ -9,7 +9,7 @@ spec.loader.exec_module(gate)
 
 def review(sha="current", author=gate.CODEX_BOT_ID, kind="Bot", state="COMMENTED", body=gate.RECEIPT):
     return {"commit_id": sha, "user": {"id": author, "type": kind}, "state": state, "body": body,
-            "author_association": "COLLABORATOR", "html_url": "review-url"}
+            "maintainer_access": True, "html_url": "review-url"}
 
 
 class ReviewGateTests(unittest.TestCase):
@@ -31,5 +31,7 @@ class ReviewGateTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "No SHA-bound"):
             gate.review_state("current", 1, [own], 0)
         self.assertEqual(gate.review_state("current", 1, [other], 0)["independentApprovals"], ["review-url"])
+        with self.assertRaisesRegex(ValueError, "No SHA-bound"):
+            gate.review_state("current", 1, [{**other, "maintainer_access": False}], 0)
         with self.assertRaisesRegex(ValueError, "No SHA-bound"):
             gate.review_state("current", 1, [other, {**other, "state": "DISMISSED"}], 0)

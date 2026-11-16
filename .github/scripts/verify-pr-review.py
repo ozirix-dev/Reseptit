@@ -35,7 +35,7 @@ def review_state(head, author, reviews, unresolved):
                 and (review["body"] or "").lstrip().startswith(RECEIPT)):
             receipt = review["html_url"]
         if (user["id"] != author and user["type"] == "User"
-                and review["author_association"] in {"OWNER", "MEMBER", "COLLABORATOR"}
+                and review.get("maintainer_access")
                 and state in {"APPROVED", "CHANGES_REQUESTED", "DISMISSED"}):
             latest_approvals[user["id"]] = (state, review["html_url"])
     if unresolved or any(state == "CHANGES_REQUESTED" for state, _ in latest_approvals.values()):
@@ -58,6 +58,20 @@ def check(number, head):
     reviews = []
     for page in api("--paginate", "--slurp", path + "/reviews?per_page=100"):
         reviews.extend(page)
+    permissions = {}
+    for review in reviews:
+        user = review["user"]
+        if (review["commit_id"] != head or user["id"] == pr["user"]["id"] or user["type"] != "User"
+                or review["state"] not in {"APPROVED", "CHANGES_REQUESTED", "DISMISSED"}
+                or review["author_association"] not in {"OWNER", "MEMBER", "COLLABORATOR"}):
+            continue
+        login = user["login"]
+        if not re.fullmatch(r"[a-zA-Z0-9-]{1,39}", login):
+            raise ValueError("Invalid review author login")
+        if login not in permissions:
+            access = api(f"repos/{OWNER}/{REPO}/collaborators/{login}/permission")
+            permissions[login] = access["permission"] in {"write", "maintain", "admin"}
+        review["maintainer_access"] = permissions[login]
     cursor = None
     unresolved = 0
     while True:

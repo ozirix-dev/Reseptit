@@ -136,6 +136,8 @@ class MaintainerQueries(unittest.TestCase):
             output = folder / "d1-preview"
             manifest = json.loads((output / "manifest.json").read_bytes())
             self.assertIn("import.sql", pilot.read_preview(output, manifest))
+            with self.assertRaisesRegex(ValueError, "does not match"):
+                pilot.read_preview(output, {**manifest, "revision": "another-revision"})
             sql = (output / "import.sql").read_text(encoding="utf-8")
             (output / "import.sql").write_text("SELECT 1;", encoding="utf-8")
             with self.assertRaisesRegex(ValueError, "checksum"):

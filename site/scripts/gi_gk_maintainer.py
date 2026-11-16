@@ -10,8 +10,9 @@ import sqlite3
 import statistics
 import subprocess
 import time
+import sys
 from contextlib import closing
-from tempfile import TemporaryDirectory
+from tempfile import NamedTemporaryFile, TemporaryDirectory
 
 import gi_sqlite_index as index
 
@@ -149,7 +150,19 @@ def digest(value):
 
 
 def save(path, value):
-    path.write_bytes(encode(value) + b"\n")
+    write_atomic(path, encode(value) + b"\n")
+
+
+def write_atomic(path, raw):
+    with NamedTemporaryFile(dir=path.parent, prefix="." + path.name + "-", delete=False) as scratch:
+        temporary = Path(scratch.name)
+        try:
+            scratch.write(raw)
+            scratch.close()
+            os.replace(temporary, path)
+        finally:
+            scratch.close()
+            temporary.unlink(missing_ok=True)
 
 
 def git(*args):
@@ -158,7 +171,7 @@ def git(*args):
 
 def current_revision():
     revision = git("rev-parse", "HEAD")
-    if git("status", "--porcelain", "--untracked-files=no"):
+    if git("status", "--porcelain", "--untracked-files=normal"):
         raise ValueError("A clean checkout is required to bind the audit to a revision")
     return revision
 
@@ -196,6 +209,10 @@ def capture(folder):
             trace["site/scripts/" + script] = json.loads(trace_file.read_bytes())
     if current_revision() != revision:
         raise ValueError("Checkout changed during capture")
+    tracked = set(git("ls-files", "--", "docs/nutrition", "docs/research").splitlines())
+    untracked = set().union(*trace.values()) - tracked
+    if untracked:
+        raise ValueError("Capture read files outside the tracked nutrition and research inputs: " + str(sorted(untracked)))
     folder.mkdir(parents=True, exist_ok=True)
     report = json.loads((ROOT / GENERATED[0]).read_bytes())
     report.pop("generatedAt", None)
@@ -228,7 +245,9 @@ def load_capture(folder):
             "version", "revision", "tree", "activeInputs", "auditSha256", "publicSha256", "publicModuleSha256",
         }:
             raise ValueError("Invalid capture manifest fields")
-        if (manifest["version"] != 2 or manifest["revision"] != current_revision()
+        if type(manifest["version"]) is not int or manifest["version"] != 2:
+            raise ValueError("Unsupported GI/GK capture format: run capture again")
+        if (manifest["revision"] != current_revision()
                 or manifest["tree"] != git("rev-parse", "HEAD^{tree}")):
             raise ValueError("Stale GI/GK capture: run capture for this revision")
         expected_inputs = manifest["activeInputs"]
@@ -534,9 +553,10 @@ def open_pilot(folder, evidence, destination=None):
         try:
             with checked_database(destination, snapshot) as db:
                 evidence._verify(db, expected, digest(composition))
+                verify_public_projection(db, snapshot, public)
                 return destination, snapshot
-        except (index.StaleIndexError, sqlite3.DatabaseError):
-            pass
+        except (ValueError, sqlite3.DatabaseError) as exc:
+            print(f"Rebuilding outdated or damaged GI/GK index from verified capture: {exc}", file=sys.stderr)
     def extend(db, sources, records):
         evidence._extend_index(db, sources, records, composition, digest(composition))
         db.executescript(INDEXED)
@@ -636,7 +656,8 @@ def cases(db, snapshot):
         "imputation_not_measurement": imputed["kind"] == "PUBLISHED_IMPUTATION",
         "same_observation_two_legacy_applications": direct["observation_id"] == analogue["observation_id"]
             and direct["legacy_id"] != analogue["legacy_id"],
-        "reference_only_excluded_from_cloud_export": rights["legacy_id"] == CASES["rights"],
+        "reference_only_excluded_from_cloud_export": rights["calculation_use"] == "REFERENCE_ONLY"
+            and rights["legacy_id"] not in PREVIEW_SOURCE_IDS,
         "missing_not_zero": sql_value(None) == "NULL" and sql_value(0) == "0",
         "approved_variant": any(row["approval"] == "PUBLISHED_VARIANT" and row["input_sha256"]
                                 for row in lookup(db, snapshot, "approval", VARIANT_RECIPE)["rows"]),
@@ -752,7 +773,7 @@ def export_preview(db, snapshot, folder, capture_manifest):
         "remoteApprovalRequired": True,
     }
     for name, raw in files.items():
-        (output / name).write_bytes(raw)
+        write_atomic(output / name, raw)
     save(output / "manifest.json", manifest)
     restored_files = read_preview(output, manifest)
     with TemporaryDirectory() as scratch, closing(sqlite3.connect(Path(scratch) / "restored.sqlite")) as restored:
