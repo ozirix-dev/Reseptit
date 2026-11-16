@@ -16,6 +16,7 @@ test("production verification distinguishes stale headers from wrong bytes or pa
   const pages = [["fi", "/"], ["en", "/en/recipes/"], ["sv", "/sv/recept/"], ["th", "/th/recipes/"], ["fi", "/reseptit/sivu/2/"]];
   const asset = "/assets/index-abcd.js";
   const entry = `<script type="module" src="${asset}"></script>`;
+  const bootstrap = `<script type="module">const importEntry = () => { void import("${asset}"); }; importEntry();</script>`;
   const library = "/reseptit/sivu/2/";
   const english = "/en/recipes/";
   for (const [locale, route] of pages) {
@@ -24,7 +25,7 @@ test("production verification distinguishes stale headers from wrong bytes or pa
     files.set(route + "index.html", [
       `<html lang="${locale}"><head><link rel="canonical" href="${url}">`,
       `<link rel="alternate" hreflang="${locale}" href="${url}">`,
-      entry + "</head>",
+      (route === "/" ? bootstrap : entry) + "</head>",
       `<body><div id="root"><h1>Recipes</h1>${article}</div></body></html>`,
     ].join(""));
   }
@@ -38,7 +39,8 @@ test("production verification distinguishes stale headers from wrong bytes or pa
     await writeFile(destination, body, "utf8");
   }
 
-  type Fault = "entry-mismatch" | "entry-missing" | "js-mime" | "cached-js-mime" |
+  type Fault = "entry-mismatch" | "entry-missing" | "bootstrap-mismatch" | "bootstrap-hidden" |
+    "js-mime" | "cached-js-mime" |
     "robots-bytes" | "robots-revision" | "html-revision";
   const requestWithFault = (fault?: Fault): typeof fetch => async input => {
     const { pathname, search } = new URL(String(input));
@@ -58,6 +60,12 @@ test("production verification distinguishes stale headers from wrong bytes or pa
     const file = pathname.endsWith("/") ? pathname + "index.html" : pathname;
     const body = files.get(file);
     assert.ok(body !== undefined, file);
+    if (pathname === "/" && fault === "bootstrap-mismatch") {
+      return new Response(body.replace("importEntry();</script>", "</script>"), { headers });
+    }
+    if (pathname === "/" && fault === "bootstrap-hidden") {
+      return new Response(body.replace(bootstrap, `<template>${bootstrap}</template>`), { headers });
+    }
     if (pathname === library && fault === "entry-mismatch") {
       return new Response(body.replace(asset, "/assets/index-missing.js"), { headers });
     }
@@ -83,6 +91,10 @@ test("production verification distinguishes stale headers from wrong bytes or pa
     assert.deepEqual(result.summaries.filter(entry => entry.route === asset), [{ route: asset, revision: sha }]);
   });
 
+  await t.test("rejects a modified or inactive inline home bootstrap", async () => {
+    await assert.rejects(verify("bootstrap-mismatch"), /live module entry differs from artifact/);
+    await assert.rejects(verify("bootstrap-hidden"), /expected one first-party module entry/);
+  });
   await t.test("rejects a mismatched library module entry", async () => {
     await assert.rejects(verify("entry-mismatch"), /\/reseptit\/sivu\/2\/.*live module entry/);
   });
