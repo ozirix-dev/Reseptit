@@ -386,12 +386,40 @@ def main():
     inputs = parser.add_mutually_exclusive_group(required=True)
     inputs.add_argument("--requests", type=Path, help="JSON array of evidence search requests")
     inputs.add_argument("--inventory", type=Path, help="GK100 Evidence Recovery JSONL inventory")
+    inputs.add_argument("--maintainer", choices=("capture", "inventory", "source", "impact", "approval", "cases", "export", "benchmark"))
+    parser.add_argument("--maintainer-dir", type=Path, default=index.ROOT / "tmp/gi-gk")
+    parser.add_argument("--id")
+    parser.add_argument("--after", default="")
+    parser.add_argument("--limit", type=int, default=50)
+    parser.add_argument("--format", choices=("json", "text"), default="json")
     inputs.add_argument("--pilot", type=Path, help="normalized GK calculation pilot JSON")
     parser.add_argument("--recipe", action="append", default=[])
     args = parser.parse_args()
     context = {"source": args.gi_source, "composition": args.composition_source, "destination": args.db}
     try:
-        if args.requests:
+        if args.maintainer:
+            import gi_gk_maintainer as maintainer
+            mode, folder = args.maintainer, args.maintainer_dir
+            if args.recipe or (mode in {"source", "impact", "approval"} and not args.id):
+                parser.error("maintainer lookups require --id and use no --recipe")
+            if mode == "capture":
+                result = maintainer.capture(folder)
+            elif mode == "inventory":
+                result = maintainer.inventory()
+            elif mode == "benchmark":
+                result = maintainer.benchmark()
+            else:
+                db_path, snapshot = maintainer.open_pilot(folder, sys.modules[__name__])
+                with closing(index._open_index(db_path)) as db:
+                    if mode == "export":
+                        result = maintainer.export_preview(db, snapshot, folder)
+                    elif mode == "cases":
+                        result = maintainer.cases(db, snapshot)
+                    else:
+                        result = maintainer.lookup(db, snapshot, mode, args.id, args.after, args.limit)
+                if mode in {"source", "impact", "approval"}:
+                    result["revision"] = json.loads((folder / "manifest.json").read_bytes())["revision"]
+        elif args.requests:
             if args.recipe:
                 parser.error("--recipe applies only to --inventory and --pilot")
             result = lookup_gi_batch(json.loads(args.requests.read_bytes()), **context)
@@ -402,7 +430,18 @@ def main():
     except (OSError, ValueError, sqlite3.Error) as exc:
         parser.exit(1, f"GI evidence search failed: {exc}\n")
     sys.stdout.reconfigure(encoding="utf-8")
-    print(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False))
+    if args.maintainer in {"source", "impact", "approval"} and args.format == "text":
+        print(f"{result['query']} / {result['id']} — Git {result['revision'][:12]}")
+        for row in result["rows"]:
+            print("- " + " | ".join(f"{key}: {value}" for key,value in row.items() if key != "snapshot" and value is not None))
+        if not result["rows"]:
+            print("Ei osumia tällä revisiolla.")
+        if result.get("scope"):
+            print(result["scope"])
+        if result["next"]:
+            print("Seuraava sivu: --after " + result["next"])
+    else:
+        print(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False))
 
 
 if __name__ == "__main__":
