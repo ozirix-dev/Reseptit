@@ -25,7 +25,7 @@ tags:
   - low carb
 image:
   src: paaruoat/kermainen-lohipata.webp
-  alt: Creamy salmon casserole with salmon chunks, spinach and dill
+  alt: Creamy salmon stew with salmon chunks, spinach and dill
   width: 1254
   height: 1254
 ingredients:
@@ -77,11 +77,11 @@ Creamy salmon stew is an easy and filling everyday main dish.
 
 ## Description
 
-Salmon, spinach and soft cream sauce cook in the oven at the same time. Serve the casserole on its own or with a vegetable side dish.
+Salmon, spinach and soft cream sauce cook in the oven at the same time. Serve the stew on its own or with a vegetable side dish.
 
 ## Preparation
 
-1. Preheat the oven to 200 °C.
+1. Heat the oven to 200 degrees.
 2. Chop the onion and garlic. Sauté them in butter in a pan.
 3. Add cream cheese, whipping cream, lemon juice, mustard and spices. Mix into a smooth sauce.
 4. Quickly fold the spinach into the sauce.
