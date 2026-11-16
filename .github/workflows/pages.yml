@@ -76,6 +76,9 @@ jobs:
           printf 'pr_base=%s\n' "$pr_base" >> "$GITHUB_OUTPUT"
           printf 'Tested commit: %s\nPR head: %s\nPR base: %s\n' "$TESTED_SHA" "$PR_HEAD" "$pr_base" >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Check gh-aw review preparation
+        run: python3 -B -m unittest discover -v -s .github/scripts -p 'test_prepare_recipavo_review.py'
+
       - name: Select risk-based checks
         id: select
         env:
