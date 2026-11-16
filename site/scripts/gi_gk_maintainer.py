@@ -29,6 +29,7 @@ GENERATED = (
     "site/src/generated/gk-only-variants.generated.ts",
     "site/src/generated/glycemic-load-filters.generated.ts",
 )
+MAINTAINER_SCHEMA_VERSION = "2"
 INDEXED = """
 CREATE TABLE maintainer_source (
   snapshot TEXT NOT NULL, legacy_id TEXT NOT NULL, observation_id TEXT NOT NULL,
@@ -45,6 +46,10 @@ CREATE TABLE maintainer_calculation (
   snapshot TEXT NOT NULL, recipe_id TEXT NOT NULL, version_id TEXT NOT NULL,
   status TEXT NOT NULL, gk REAL, recipe_sha256 TEXT, input_sha256 TEXT, evidence_sha256 TEXT,
   approval TEXT NOT NULL, review_reference TEXT,
+  range_min REAL, range_max REAL, range_kind TEXT,
+  public_status TEXT, public_gk REAL, public_range_min REAL, public_range_max REAL, public_range_kind TEXT,
+  scope TEXT NOT NULL, blocker_categories TEXT, calculation_reference TEXT NOT NULL,
+  sensitivity_min REAL, sensitivity_max REAL, sensitivity_kind TEXT,
   PRIMARY KEY (snapshot, recipe_id, version_id)
 );
 """
@@ -66,6 +71,17 @@ TOMATO = "whole-tomato-raw-gi-22"
 VARIANT_RECIPE = "keto-mutakakku"
 CHAIN_RECIPE = "gazpacho"
 TABLES = ("maintainer_source", "maintainer_dependency", "maintainer_calculation")
+CALCULATION_COLUMNS = (
+    "snapshot,recipe_id,version_id,status,gk,recipe_sha256,input_sha256,evidence_sha256,"
+    "approval,review_reference"
+)
+PREVIEW_SCHEMA = INDEXED[:INDEXED.index("CREATE TABLE maintainer_calculation")] + """CREATE TABLE maintainer_calculation (
+  snapshot TEXT NOT NULL, recipe_id TEXT NOT NULL, version_id TEXT NOT NULL,
+  status TEXT NOT NULL, gk REAL, recipe_sha256 TEXT, input_sha256 TEXT, evidence_sha256 TEXT,
+  approval TEXT NOT NULL, review_reference TEXT,
+  PRIMARY KEY (snapshot, recipe_id, version_id)
+);
+"""
 
 
 def encode(value):
@@ -206,23 +222,110 @@ def collect(db, snapshot, registry, audit, public, bindings):
                 if ingredient.get("giRecordId"):
                     uses.add((snapshot, ingredient["giRecordId"], row["recipeId"], label))
     db.executemany("INSERT INTO maintainer_dependency VALUES (?,?,?,?)", sorted(uses))
-    public_ids = {r["recipeId"] for r in public["originals"] if r["status"] == "CALCULATED"}
-    review_path = INPUTS[3]
+    public_originals = {r["recipeId"]: r for r in public["originals"]}
+    mismatches = set().union(*(audit.get(key, []) for key in (
+        "recipeBindingMismatches", "calculationInputMismatches", "calculationEvidenceMismatches",
+    )))
+    insert = (
+        f"INSERT INTO maintainer_calculation ({CALCULATION_COLUMNS},"
+        "range_min,range_max,range_kind,public_status,public_gk,public_range_min,public_range_max,"
+        "public_range_kind,scope,blocker_categories,calculation_reference,"
+        "sensitivity_min,sensitivity_max,sensitivity_kind) VALUES (" + ",".join("?" * 24) + ")"
+    )
     for row in audit["results"]:
         recipe = row["recipeId"]
-        hashes = tuple(audit[key].get(recipe) for key in ("sourceHashes", "calculationInputHashes", "calculationEvidenceHashes"))
-        bound = all(h and bindings.get(key, {}).get(recipe) == h for key, h in
-                    zip(("recipes", "calculationInputs", "calculationEvidence"), hashes))
-        state = "PUBLISHED_AND_BASELINE_BINDING_MATCHES" if recipe in public_ids and bound else (
-            "PUBLISHED_CHECK_RELEASE_PATH" if recipe in public_ids else "NO_PUBLISHED_NUMERIC_ORIGINAL")
-        db.execute("INSERT INTO maintainer_calculation VALUES (?,?,?,?,?,?,?,?,?,?)",
-                   (snapshot, recipe, "original", row["status"], row["glycemicLoadPerServing"], *hashes,
-                    state, review_path if bound else "site/scripts/glycemic-load-pilot.ts"))
-    for variant in public["variants"]:
-        db.execute("INSERT INTO maintainer_calculation VALUES (?,?,?,?,?,?,?,?,?,?)",
-                   (snapshot, variant["recipeId"], variant["versionId"], variant["level"], variant.get("point"),
-                    None, variant["inputSha256"], None, "PUBLISHED_VARIANT",
-                    "site/src/generated/gk-only-variants.generated.ts"))
+        hashes = tuple(audit[key].get(recipe) for key in (
+            "sourceHashes", "calculationInputHashes", "calculationEvidenceHashes",
+        ))
+        bound = recipe not in mismatches and all(
+            h and bindings.get(key, {}).get(recipe) == h for key, h in
+            zip(("recipes", "calculationInputs", "calculationEvidence"), hashes)
+        )
+        shown = public_originals.get(recipe, {})
+        numeric = shown.get("status") == "CALCULATED"
+        if numeric:
+            state = "PUBLISHED_AND_BASELINE_BINDING_MATCHES" if bound else "PUBLISHED_CHECK_RELEASE_PATH"
+        elif recipe in mismatches:
+            state = "NO_PUBLISHED_NUMERIC_ORIGINAL_BINDING_MISMATCH"
+        else:
+            state = "NO_PUBLISHED_NUMERIC_ORIGINAL"
+        blockers = sorted({reason["category"] for reason in shown.get("incompleteReasons", [])})
+        db.execute(insert, (
+            snapshot, recipe, "original", row["status"], row["glycemicLoadPerServing"], *hashes,
+            state, INPUTS[3] if bound else None,
+            *range_fields(row.get("glycemicLoadRangePerServing"), row.get("modelScenario")),
+            shown.get("status"), shown.get("glycemicLoadPerServing"),
+            *range_fields(shown.get("glycemicLoadRangePerServing"), shown.get("modelScenario")),
+            "ORIGINAL_RECIPE", ",".join(blockers), GENERATED[0], None, None, None,
+        ))
+    public_variants = {(r["recipeId"], r["versionId"]): r for r in public["variants"]}
+    audited_variants = audit.get("gkOnlyVariants", [])
+    study_recipes = set(audit.get("versionCoverage", {}).get("studyServingRecipeIds", []))
+    explicit_study_recipes = {r["recipeId"] for r in audited_variants if r.get("studyServing")}
+    legacy_study_recipes = study_recipes - explicit_study_recipes
+    for recipe in legacy_study_recipes:
+        if sum(r["recipeId"] == recipe for r in audited_variants) != 1:
+            raise ValueError("Ambiguous study comparison version for " + recipe)
+    for variant in audited_variants:
+        key = (variant["recipeId"], variant["versionId"])
+        shown = public_variants.pop(key, {})
+        # The build reports study scope separately, including sealed legacy study servings.
+        study = variant.get("studyServing") or variant["recipeId"] in legacy_study_recipes
+        scope = "STUDY_COMPARISON" if study else "RECIPE_VARIANT"
+        shown_range = range_fields(shown.get("scenarioRange"), shown.get("rangeKind"))
+        calculated_range = range_fields(variant.get("scenarioRange"), variant.get("rangeKind"))
+        if shown and (variant.get("point"), calculated_range, variant["inputSha256"], variant["level"]) != (
+            shown.get("point"), shown_range, shown["inputSha256"], shown["level"],
+        ):
+            raise ValueError("Public GK variant differs from the audited result: " + str(key))
+        approval = ("PUBLISHED_STUDY_COMPARISON" if study else "PUBLISHED_VARIANT") if shown else (
+            "UNPUBLISHED_STUDY_COMPARISON" if study else "UNPUBLISHED_VARIANT"
+        )
+        db.execute(insert, (
+            snapshot, *key, variant["level"], variant.get("point"), variant.get("recipeSha256"),
+            variant["inputSha256"], variant.get("evidenceSha256"), approval,
+            GENERATED[2] if shown else None, *calculated_range,
+            "CALCULATED" if shown else None, shown.get("point"), *shown_range,
+            scope, None, GENERATED[0],
+            *range_fields(variant.get("sensitivity"), (variant.get("sensitivity") or {}).get("kind")),
+        ))
+    if public_variants:
+        raise ValueError("Public GK variants missing from the audit: " + str(sorted(public_variants)))
+
+    verify_public_projection(db, snapshot, public)
+
+
+def verify_public_projection(db, snapshot, public):
+    originals = {
+        (r["recipeId"], "original"): (
+            r["status"], r["glycemicLoadPerServing"],
+            *range_fields(r.get("glycemicLoadRangePerServing"), r.get("modelScenario")),
+        )
+        for r in public["originals"]
+    }
+    variants = {
+        (r["recipeId"], r["versionId"]): (
+            "CALCULATED", r.get("point"), *range_fields(r.get("scenarioRange"), r.get("rangeKind")),
+        )
+        for r in public["variants"]
+    }
+    rows = db.execute(
+        "SELECT recipe_id,version_id,public_status,public_gk,public_range_min,public_range_max,public_range_kind "
+        "FROM maintainer_calculation WHERE snapshot=? AND public_status IS NOT NULL",
+        (snapshot,),
+    )
+    projected = {(recipe, version): tuple(result) for recipe, version, *result in rows}
+    expected = originals | variants
+    if projected != expected:
+        differences = sorted(key for key in projected.keys() | expected.keys() if projected.get(key) != expected.get(key))
+        raise ValueError("Public GK projection differs for " + str(differences[:10]))
+    return {"originals": len(originals), "variants": len(variants)}
+
+
+def range_fields(interval, kind):
+    if interval is None:
+        return None, None, None
+    return interval["min"], interval["max"], kind or "UNKNOWN"
 
 
 def open_pilot(folder, evidence):
@@ -237,7 +340,8 @@ def open_pilot(folder, evidence):
         with closing(index._open_index(destination)) as db:
             try:
                 meta = evidence._verify(db, expected, digest(composition))
-                if meta.get("maintainer_snapshot") == snapshot:
+                if (meta.get("maintainer_snapshot") == snapshot
+                        and meta.get("maintainer_schema_version") == MAINTAINER_SCHEMA_VERSION):
                     return destination, snapshot
             except index.StaleIndexError:
                 pass
@@ -245,7 +349,9 @@ def open_pilot(folder, evidence):
         evidence._extend_index(db, sources, records, composition, digest(composition))
         db.executescript(INDEXED)
         collect(db, snapshot, {"records": records}, audit, public, json.loads((ROOT / INPUTS[3]).read_bytes()))
-        db.execute("INSERT INTO metadata VALUES ('maintainer_snapshot',?)", (snapshot,))
+        db.executemany("INSERT INTO metadata VALUES (?,?)", (
+            ("maintainer_snapshot", snapshot), ("maintainer_schema_version", MAINTAINER_SCHEMA_VERSION),
+        ))
     index._build_index(index.DEFAULT_SOURCE, destination, raw, expected, extend=extend, replace_attempts=3)
     return destination, snapshot
 
@@ -344,7 +450,9 @@ def export_preview(db, snapshot, folder):
             if legacy in PREVIEW_SOURCE_IDS and role == "public-original"
         ],
         "maintainer_calculation": [
-            row for row in rows("SELECT * FROM maintainer_calculation WHERE snapshot=? ORDER BY recipe_id,version_id")
+            row for row in rows(
+                "SELECT snapshot,recipe_id,version_id,status,public_gk,NULL,NULL,NULL,approval,NULL "
+                "FROM maintainer_calculation WHERE snapshot=? ORDER BY recipe_id,version_id")
             if (row[1] == VARIANT_RECIPE and row[8] == "PUBLISHED_VARIANT")
             or (row[1] == CHAIN_RECIPE and row[2] == "original"
                 and row[8] == "PUBLISHED_AND_BASELINE_BINDING_MATCHES")
@@ -352,7 +460,7 @@ def export_preview(db, snapshot, folder):
     }
     schema = ("CREATE TABLE preview_snapshots (id TEXT PRIMARY KEY, revision TEXT NOT NULL);\n"
               "CREATE TABLE preview_active (slot INTEGER PRIMARY KEY CHECK(slot=1), snapshot TEXT NOT NULL REFERENCES preview_snapshots(id));\n"
-              + INDEXED)
+              + PREVIEW_SCHEMA)
     (output / "schema.sql").write_text(schema, encoding="utf-8", newline="\n")
     revision = json.loads((folder / "manifest.json").read_bytes())["revision"]
     def insert(table, row):
@@ -421,8 +529,10 @@ def benchmark():
                            (("bench", f"i{i:06}", f"o{i:06}", "", None, "synthetic", None, None, "glucose", "food", "raw") for i in range(n)))
             db.executemany("INSERT INTO maintainer_dependency VALUES (?,?,?,?)",
                            (("bench", f"i{i:06}", f"r{i:06}", "synthetic") for i in range(n)))
-            db.executemany("INSERT INTO maintainer_calculation VALUES (?,?,?,?,?,?,?,?,?,?)",
-                           (("bench", f"r{i:06}", "original", "synthetic", None, None, None, None, "synthetic", None) for i in range(n)))
+            db.executemany(
+                f"INSERT INTO maintainer_calculation ({CALCULATION_COLUMNS},scope,calculation_reference) "
+                "VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
+                           (("bench", f"r{i:06}", "original", "synthetic", None, None, None, None, "synthetic", None, "ORIGINAL_RECIPE", "synthetic") for i in range(n)))
             build_ms = (time.perf_counter_ns() - started) / 1_000_000
             times = {}
             for mode in ("source", "impact", "approval"):
