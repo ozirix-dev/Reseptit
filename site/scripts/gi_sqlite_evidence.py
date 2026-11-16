@@ -386,7 +386,7 @@ def main():
     inputs = parser.add_mutually_exclusive_group(required=True)
     inputs.add_argument("--requests", type=Path, help="JSON array of evidence search requests")
     inputs.add_argument("--inventory", type=Path, help="GK100 Evidence Recovery JSONL inventory")
-    inputs.add_argument("--maintainer", choices=("capture", "inventory", "source", "impact", "approval", "cases", "export", "benchmark"))
+    inputs.add_argument("--maintainer", choices=("capture", "inventory", "map", "source", "impact", "approval", "cases", "export", "benchmark"))
     parser.add_argument("--maintainer-dir", type=Path, default=index.ROOT / "tmp/gi-gk")
     parser.add_argument("--id")
     parser.add_argument("--after", default="")
@@ -406,11 +406,14 @@ def main():
                 result = maintainer.capture(folder)
             elif mode == "inventory":
                 result = maintainer.inventory()
+            elif mode == "map":
+                from gi_sqlite_asset_map import asset_map
+                result = asset_map(maintainer.checked_folder(folder))
             elif mode == "benchmark":
                 result = maintainer.benchmark()
             else:
                 db_path, snapshot = maintainer.open_pilot(folder, sys.modules[__name__])
-                with closing(index._open_index(db_path)) as db:
+                with maintainer.checked_database(db_path, snapshot) as db:
                     if mode == "export":
                         result = maintainer.export_preview(db, snapshot, folder)
                     elif mode == "cases":
