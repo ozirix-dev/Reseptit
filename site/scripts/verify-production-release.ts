@@ -24,19 +24,26 @@ function moduleEntry(html: string, origin: string, route: string, source: "live"
   const pageUrl = origin + route;
   const declaredBase = tags(html, "base").find(tag => tag.href !== undefined)?.href;
   const baseUrl = URL.parse(declaredBase ?? pageUrl, pageUrl) ?? pageUrl;
-  const entries: URL[] = [];
+  const entries: { url: URL; bootstrap?: string }[] = [];
   const label = `${route} ${source} module entry`;
-  for (const { attributes: { type, src } } of activeScripts(html)) {
-    if (type?.toLowerCase() !== "module" || !src?.trim()) continue;
-    const url = URL.parse(src, baseUrl);
-    assert.ok(url, `${label}: invalid URL ${src}`);
-    if (url.origin === origin) entries.push(url);
+  for (const { attributes: { type, src }, content } of activeScripts(html)) {
+    if (type?.toLowerCase() !== "module") continue;
+    // The image-priority bootstrap in prerender.ts defers loading the same Vite entry.
+    const imports = src === undefined
+      ? [...content.matchAll(/const importEntry = \(\) => \{ void import\("([^"]+)"\); \};/g)]
+      : [];
+    assert.ok(imports.length <= 1, label + ": ambiguous inline module");
+    const entry = src ?? imports[0]?.[1];
+    if (!entry?.trim()) continue;
+    const url = URL.parse(entry, baseUrl);
+    assert.ok(url, label + ": invalid URL " + entry);
+    if (url.origin === origin) entries.push({ url, bootstrap: imports.length ? content : undefined });
   }
-  assert.equal(entries.length, 1, `${label}: expected one first-party external module script`);
-  const [entry] = entries;
-  assert.match(entry.pathname, /^\/assets\/[\w.-]+\.js$/, `${label}: expected a generated JavaScript asset`);
-  assert.equal(entry.href, origin + entry.pathname, `${label}: expected a plain asset URL`);
-  return entry.pathname;
+  assert.equal(entries.length, 1, label + ": expected one first-party module entry");
+  const [{ url, bootstrap }] = entries;
+  assert.match(url.pathname, /^\/assets\/[\w.-]+\.js$/, label + ": expected a generated JavaScript asset");
+  assert.equal(url.href, origin + url.pathname, label + ": expected a plain asset URL");
+  return { path: url.pathname, bootstrap };
 }
 
 export async function verifyProductionRelease(expectedSha: string, origin: string, dist: string, request = fetch) {
@@ -104,8 +111,8 @@ export async function verifyProductionRelease(expectedSha: string, origin: strin
       noIndex(tag.content ?? "")), route + " must be indexable");
     const expectedEntry = moduleEntry(localHtml, origin, route, "artifact");
     const liveEntry = moduleEntry(html, origin, route, "live");
-    assert.equal(liveEntry, expectedEntry, route + " live module entry differs from artifact");
-    entries.add(liveEntry);
+    assert.deepEqual(liveEntry, expectedEntry, route + " live module entry differs from artifact");
+    entries.add(liveEntry.path);
   }
   assert.deepEqual(inspectNotFound(await checkHtml(notFound, 404)), []);
 
