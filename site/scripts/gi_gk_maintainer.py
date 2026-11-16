@@ -57,6 +57,7 @@ CASES = {
 }
 TOMATO = "whole-tomato-raw-gi-22"
 VARIANT_RECIPE = "keto-mutakakku"
+CHAIN_RECIPE = "gazpacho"
 TABLES = ("maintainer_source", "maintainer_dependency", "maintainer_calculation")
 
 
@@ -280,6 +281,15 @@ def cases(db, snapshot):
         return rows[0]
     direct, preparation, analogue, imputed, rights = (
         source(name) for name in ("direct", "preparation", "analogue", "imputed", "rights"))
+    chain = lookup(db, snapshot, "approval", CHAIN_RECIPE)["rows"]
+    original = next((row for row in chain if row["version_id"] == "original"), None)
+    linked = ("gazpacho", "public-original") in {
+        (row["recipe_id"], row["role"])
+        for row in lookup(db, snapshot, "impact", analogue["legacy_id"], limit=100)["rows"]
+    }
+    if not (linked and original and original["approval"] == "PUBLISHED_AND_BASELINE_BINDING_MATCHES"
+            and all(original[name] for name in ("recipe_sha256", "input_sha256", "evidence_sha256"))):
+        raise ValueError("Pilot has no complete approved source-to-calculation chain")
     results = {
         "source_and_reported_value": bool(direct["locator"]) and direct["gi"] == 22,
         "measured_preparation": preparation["kind"] == "HUMAN_GI" and preparation["gi"] == 114
@@ -295,7 +305,7 @@ def cases(db, snapshot):
     }
     if not all(results.values()):
         raise ValueError("Pilot case failed: " + str(results))
-    return {"snapshot": snapshot, "cases": results}
+    return {"snapshot": snapshot, "cases": results, "linkedApprovedRecipe": CHAIN_RECIPE}
 
 def sql_value(value):
     if value is None:
@@ -325,8 +335,10 @@ def export_preview(db, snapshot, folder):
             if row[1] in selected and row[3] == "public-original"
         ],
         "maintainer_calculation": [
-            row for row in rows("maintainer_calculation", "SELECT * FROM maintainer_calculation WHERE snapshot=? AND approval='PUBLISHED_VARIANT' ORDER BY recipe_id,version_id")
-            if row[1] == VARIANT_RECIPE
+            row for row in rows("maintainer_calculation", "SELECT * FROM maintainer_calculation WHERE snapshot=? ORDER BY recipe_id,version_id")
+            if (row[1] == VARIANT_RECIPE and row[8] == "PUBLISHED_VARIANT")
+            or (row[1] == CHAIN_RECIPE and row[2] == "original"
+                and row[8] == "PUBLISHED_AND_BASELINE_BINDING_MATCHES")
         ],
     }
     schema = ("CREATE TABLE preview_snapshots (id TEXT PRIMARY KEY, revision TEXT NOT NULL);\n"
@@ -354,6 +366,12 @@ def export_preview(db, snapshot, folder):
         if restored.execute("SELECT legacy_id FROM maintainer_source WHERE legacy_id=? OR gi IS NOT NULL",
                             (CASES["rights"],)).fetchall():
             raise ValueError("Preview contains restricted evidence")
+        if not any(row["recipe_id"] == CHAIN_RECIPE for row in lookup(restored, snapshot, "impact", CASES["analogue"])["rows"]):
+            raise ValueError("Portable impact lookup lost the linked recipe")
+        if len(lookup(restored, snapshot, "source", CASES["analogue"])["rows"]) != 1:
+            raise ValueError("Portable lookup lost the source record")
+        if len(lookup(restored, snapshot, "approval", CHAIN_RECIPE)["rows"]) != 1:
+            raise ValueError("Portable lookup lost the approved calculation")
         if restored.execute("SELECT snapshot FROM preview_active").fetchall():
             raise ValueError("A D1 import must stay passive")
         # Synthetic predecessor is used only for the local rollback exercise.
