@@ -30,4 +30,3 @@ class MaintainerQueries(unittest.TestCase):
         self.assertEqual(pilot.generated_array(raw, "example"), [{"gi": None}, {"gi": 0}])
         with self.assertRaises(ValueError):
             pilot.generated_array(raw, "missing")
-

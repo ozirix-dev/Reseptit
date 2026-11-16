@@ -57,4 +57,3 @@ tuotantokatalogiin. Mittaa SQL-aika, kokonaisvaste ja luetut rivit erikseen.
 `schema.sql` sisältää aktiivisen version osoittimen; version vaihto kirjataan
 erilliseksi operaatioksi. Nykytilan vertailut ja tiedostojen omistajat löytyvät
 [GI/GK-auditoinnista #533](https://github.com/ozirix-dev/Reseptit/pull/533).
-

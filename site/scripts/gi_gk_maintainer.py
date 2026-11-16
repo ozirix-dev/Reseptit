@@ -431,4 +431,3 @@ def benchmark():
             reports.append({"observations": n, "representativeSqliteBytes": pages * page_size,
                             "buildMs": build_ms, "queryMs": times, "queryPlans": query_plans})
     return reports
-
