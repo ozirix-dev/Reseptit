@@ -45,9 +45,10 @@ python -B site/scripts/gi_sqlite_evidence.py --maintainer export
 
 Oletushakemisto on `tmp/gi-gk/`. Vienti tekee `d1-preview/`-kansioon
 SQL-skeeman, passiivisen tuonnin ja manifestin. Komento palauttaa SQL:n
-paikallisesti ja toistaa tuonnin. Vientiin tulee rajattu näyte, jonka GI-arvot
-ja lähdeotteiden sijainnit on jätetty pois. Julkaistun variantin arvo kuuluu
-näytteeseen. Pidä hakemisto versionhallinnan ja sivuston buildin ulkopuolella.
+paikallisesti ja toistaa tuonnin. Vienti käyttää näytteessä omia tunnisteita,
+koska vanhat tunnisteet sisältävät GI-arvoja. Näytteessä säilyvät lähdelinkit
+ja julkaistun variantin GK-arvo. GI-arvot ja lähdeotteiden paikantimet jäävät
+paikalliseen aineistoon. Pidä hakemisto versionhallinnan ja sivuston buildin ulkopuolella.
 
 Mahdollisen pilottikannan nimi on `recipavo-gi-gk-preview` ja sen jurisdiktio
 on EU. Ennen pilveä hyväksytään tarkka paketti, kenttien käyttöoikeudet, rajattu

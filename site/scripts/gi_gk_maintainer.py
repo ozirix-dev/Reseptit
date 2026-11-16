@@ -55,6 +55,13 @@ CASES = {
     "imputed": "op142-vegetable-imputation40",
     "rights": "red-pepper-literature-analogue-gi-40",
 }
+# Fixed aliases keep legacy identifiers that encode GI values in Git and SQLite.
+PREVIEW_SOURCE_IDS = {
+    CASES["preparation"]: "potato-fried-evoo-lady-rosetta",
+    CASES["analogue"]: "tomato-raw-cooked-sauce-analogue",
+    CASES["direct"]: "whole-tomato-raw",
+    CASES["imputed"]: "vegetable-imputation",
+}
 TOMATO = "whole-tomato-raw-gi-22"
 VARIANT_RECIPE = "keto-mutakakku"
 CHAIN_RECIPE = "gazpacho"
@@ -320,22 +327,24 @@ def export_preview(db, snapshot, folder):
     # locators and records with unresolved rights. Cloud import needs separate approval.
     output = folder / "d1-preview"
     output.mkdir(exist_ok=True)
-    selected = {value for key, value in CASES.items() if key != "rights"}
-    def rows(table, query):
+    def rows(query):
         return [tuple(row) for row in db.execute(query, (snapshot,))]
     by_table = {
         "maintainer_source": [
-            (s, legacy, observation, url, None, kind, applicability, None, scale, food, preparation)
-            for s, legacy, observation, url, locator, kind, applicability, gi, scale, food, preparation
-            in rows("maintainer_source", "SELECT * FROM maintainer_source WHERE snapshot=? ORDER BY legacy_id")
-            if legacy in selected and urlsplit(url).scheme == "https"
+            (s, PREVIEW_SOURCE_IDS[legacy], PREVIEW_SOURCE_IDS[observation], url, None, kind, applicability, None,
+             scale, food, "vegetable-imputation" if legacy == CASES["imputed"] else preparation)
+            for s, legacy, observation, url, _locator, kind, applicability, _gi, scale, food, preparation
+            in rows("SELECT * FROM maintainer_source WHERE snapshot=? ORDER BY legacy_id")
+            if legacy in PREVIEW_SOURCE_IDS and urlsplit(url).scheme == "https"
         ],
         "maintainer_dependency": [
-            row for row in rows("maintainer_dependency", "SELECT * FROM maintainer_dependency WHERE snapshot=? ORDER BY legacy_id,recipe_id,role")
-            if row[1] in selected and row[3] == "public-original"
+            (s, PREVIEW_SOURCE_IDS[legacy], recipe, role)
+            for s, legacy, recipe, role in rows(
+                "SELECT * FROM maintainer_dependency WHERE snapshot=? ORDER BY legacy_id,recipe_id,role")
+            if legacy in PREVIEW_SOURCE_IDS and role == "public-original"
         ],
         "maintainer_calculation": [
-            row for row in rows("maintainer_calculation", "SELECT * FROM maintainer_calculation WHERE snapshot=? ORDER BY recipe_id,version_id")
+            row for row in rows("SELECT * FROM maintainer_calculation WHERE snapshot=? ORDER BY recipe_id,version_id")
             if (row[1] == VARIANT_RECIPE and row[8] == "PUBLISHED_VARIANT")
             or (row[1] == CHAIN_RECIPE and row[2] == "original"
                 and row[8] == "PUBLISHED_AND_BASELINE_BINDING_MATCHES")
@@ -351,6 +360,8 @@ def export_preview(db, snapshot, folder):
     sql = insert("preview_snapshots", (snapshot, revision))
     for table in TABLES:
         sql += "".join(insert(table, row) for row in by_table[table])
+    if any(legacy_id in sql for legacy_id in CASES.values()):
+        raise ValueError("Preview contains a local GI identifier")
     (output / "import.sql").write_text(sql, encoding="utf-8", newline="\n")
     with closing(sqlite3.connect(":memory:")) as restored:
         restored.execute("PRAGMA foreign_keys=ON")
@@ -363,13 +374,18 @@ def export_preview(db, snapshot, folder):
         for table, expected in by_table.items():
             if sorted(restored.execute(f"SELECT * FROM {table}").fetchall()) != sorted(expected):
                 raise ValueError("Restored projection differs: " + table)
-        if restored.execute("SELECT legacy_id FROM maintainer_source WHERE legacy_id=? OR gi IS NOT NULL",
-                            (CASES["rights"],)).fetchall():
-            raise ValueError("Preview contains restricted evidence")
-        if not any(row["recipe_id"] == CHAIN_RECIPE for row in lookup(restored, snapshot, "impact", CASES["analogue"])["rows"]):
+        preview_ids = {row[0] for row in restored.execute("SELECT legacy_id FROM maintainer_source")}
+        if preview_ids != set(PREVIEW_SOURCE_IDS.values()) or restored.execute(
+            "SELECT 1 FROM maintainer_source WHERE gi IS NOT NULL OR locator IS NOT NULL"
+        ).fetchone():
+            raise ValueError("Preview sources differ from the permitted projection")
+        alias = PREVIEW_SOURCE_IDS[CASES["analogue"]]
+        source = lookup(restored, snapshot, "source", alias)["rows"]
+        if len(source) != 1 or source[0]["observation_id"] != PREVIEW_SOURCE_IDS[CASES["direct"]]:
+            raise ValueError("Portable lookup lost the shared source observation")
+        impact = lookup(restored, snapshot, "impact", alias)["rows"]
+        if not any(row["recipe_id"] == CHAIN_RECIPE for row in impact):
             raise ValueError("Portable impact lookup lost the linked recipe")
-        if len(lookup(restored, snapshot, "source", CASES["analogue"])["rows"]) != 1:
-            raise ValueError("Portable lookup lost the source record")
         if len(lookup(restored, snapshot, "approval", CHAIN_RECIPE)["rows"]) != 1:
             raise ValueError("Portable lookup lost the approved calculation")
         if restored.execute("SELECT snapshot FROM preview_active").fetchall():

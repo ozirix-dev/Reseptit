@@ -436,6 +436,8 @@ def main():
             print("- " + " | ".join(f"{key}: {value}" for key,value in row.items() if key != "snapshot" and value is not None))
         if not result["rows"]:
             print("Ei osumia tällä revisiolla.")
+        if result.get("scope"):
+            print(result["scope"])
         if result["next"]:
             print("Seuraava sivu: --after " + result["next"])
     else:
