@@ -557,6 +557,19 @@ def open_pilot(folder, evidence, destination=None):
                 return destination, snapshot
         except (ValueError, sqlite3.DatabaseError) as exc:
             print(f"Rebuilding outdated or damaged GI/GK index from verified capture: {exc}", file=sys.stderr)
+            try:
+                with closing(index._open_index(destination)) as db:
+                    index._index_metadata(db)
+            except (ValueError, sqlite3.DatabaseError):
+                # The common publisher intentionally protects unknown files.
+                # Preserve this one and try a separate revision-bound index.
+                recovered = destination.with_name(f"maintainer-recovered-{snapshot[:16]}.sqlite")
+                if recovered == destination:
+                    raise ValueError(
+                        f"Neither index is usable. Use a fresh --maintainer-dir: {destination.parent}"
+                    ) from exc
+                print(f"Preserving {destination.name}; using {recovered.name}", file=sys.stderr)
+                return open_pilot(folder, evidence, recovered)
     def extend(db, sources, records):
         evidence._extend_index(db, sources, records, composition, digest(composition))
         db.executescript(INDEXED)

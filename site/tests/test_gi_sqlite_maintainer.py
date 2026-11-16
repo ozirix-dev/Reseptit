@@ -1,7 +1,10 @@
+from contextlib import closing, redirect_stderr
+from io import StringIO
 import json
 import sqlite3
 import sys
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
@@ -12,7 +15,7 @@ import gi_gk_maintainer as pilot
 
 class MaintainerQueries(unittest.TestCase):
     def test_pagination_keeps_distinct_roles_and_revision(self):
-        with sqlite3.connect(":memory:") as db:
+        with closing(sqlite3.connect(":memory:")) as db:
             db.executescript(pilot.INDEXED)
             db.executemany("INSERT INTO maintainer_dependency VALUES (?,?,?,?,?)", [
                 ("one", "gi", "r1", "audit-result", "original"), ("one", "gi", "r1", "public-original", "original"),
@@ -61,7 +64,7 @@ class MaintainerQueries(unittest.TestCase):
             {**original("missing", None, "INSUFFICIENT SOURCE DATA"), "incompleteReasons": [{"category": "GI"}]},
             original("stale", None, "INSUFFICIENT SOURCE DATA"),
         ], "variants": [variant]}
-        with sqlite3.connect(":memory:") as db:
+        with closing(sqlite3.connect(":memory:")) as db:
             db.executescript(pilot.INDEXED)
             pilot.collect(db, "test", {"records": []}, audit, public, bindings)
 
@@ -100,11 +103,36 @@ class MaintainerQueries(unittest.TestCase):
         row["source"]["table"] = "Unrelated table in the same publication"
         self.assertEqual(pilot.observation_ids(registry)[legacy], legacy)
 
+    def test_corrupt_cache_uses_a_separate_index(self):
+        with TemporaryDirectory() as directory:
+            folder = Path(directory)
+            destination = folder / "maintainer.sqlite"
+            bad = b"unrecognized contents"
+            destination.write_bytes(bad)
+            captured = {
+                "activeInputs": {
+                    p: pilot.input_digest(pilot.ROOT / p) for p in pilot.INPUTS[:2]
+                }
+            }
+            import gi_sqlite_evidence as evidence
+
+            stderr = StringIO()
+            with (
+                patch.object(pilot, "load_capture", return_value=(captured, {}, {})),
+                patch.object(pilot.index, "_build_index") as build,
+                redirect_stderr(stderr),
+            ):
+                recovered, snapshot = pilot.open_pilot(folder, evidence)
+            self.assertIn("Preserving maintainer.sqlite", stderr.getvalue())
+            self.assertEqual(recovered.name, f"maintainer-recovered-{snapshot[:16]}.sqlite")
+            self.assertEqual(build.call_args.args[1], recovered)
+            self.assertEqual(destination.read_bytes(), bad)
+
     def test_portable_export_removes_value_bearing_ids_and_keeps_links(self):
         capture = {"revision": "test-revision", "tree": "test-tree", "activeInputs": {}}
         snapshot = pilot.digest(pilot.encode(capture))
         ids = pilot.CASES
-        with TemporaryDirectory() as directory, sqlite3.connect(":memory:") as db:
+        with TemporaryDirectory() as directory, closing(sqlite3.connect(":memory:")) as db:
             folder = Path(directory)
             db.executescript(pilot.INDEXED)
             for case, legacy in ids.items():
