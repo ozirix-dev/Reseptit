@@ -145,7 +145,27 @@ export function publicSafetyHold(recipeId: string, locale: RecipeLocale): { desc
   return copy[locale];
 }
 
+// Cooking temperatures were checked against the Finnish originals. Keep the
+// historical translation bytes used by the dietary and GK review records.
+const englishOvenSourceHashes: Readonly<Record<string, string>> = {
+  "kaannokset/en/paaruoat/kermainen-lohipata.md": "fbe274281b5509cafb20c042cec154369a47d32d68496d3109df7a10bb17bb60",
+  "kaannokset/en/paaruoat/kreikkalainen-moussaka.md": "e0bfcb4ba808c042741c98a19a37ac00ca3e297c73ebbdc506ec3c07f2f968d3",
+};
+
+function projectEnglishOvenTemperatures(relativePath: string, raw: string): string {
+  const expectedHash = englishOvenSourceHashes[relativePath];
+  if (!expectedHash) return raw;
+  const normalized = raw.replaceAll("\r\n", "\n");
+  if (createHash("sha256").update(normalized).digest("hex") !== expectedHash) {
+    throw new Error("English oven temperature source requires review: " + relativePath);
+  }
+  return normalized
+    .replace("\n1. Heat the oven to 200 degrees.", "\n1. Heat the oven to 200 °C.")
+    .replace("\n5. Bake at 190 degrees for", "\n5. Bake at 190 °C for");
+}
+
 const editorialProjections = [
+  projectEnglishOvenTemperatures,
   projectHuevosFiPublicPreparation,
   projectJianbingC5FiPublicNote,
   projectReviewedFiEditorialSource,

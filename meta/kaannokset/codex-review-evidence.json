@@ -6210,17 +6210,11 @@
   },
   "kermainen-lohipata:en": {
     "source_hash": "98316bae2f848de8889c21a773fce82120600b863132f845543d846d94f27ffc",
-    "translation_hash": "0dcae48d341737a3bd07f28347d09a533c21fe578157d3459e99bfb94f216250",
-    "reviewed_at": "2026-11-16",
-    "reference": "Recipavon reseptitekstien otos 2026-11-16 / ReportHub",
+    "translation_hash": "90eaf8e05fb9c62baf679219cb2375be532546481e5feba52f6491f3013543be",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Pinaatti sekoitetaan Thai-ohjeessa kastikkeeseen ennen uunia. Kaikissa kielissä filee kypsyy kastikkeessa 200 °C:ssa.",
     "outcome": "pass",
-    "findings": [
-      {
-        "severity": "P3",
-        "status": "fixed",
-        "summary": "Uunilämpöön lisätty yksikkö ja uuniruoan nimitys yhtenäistetty."
-      }
-    ]
+    "findings": []
   },
   "kermainen-lohipata:sv": {
     "source_hash": "98316bae2f848de8889c21a773fce82120600b863132f845543d846d94f27ffc",
@@ -6232,20 +6226,15 @@
   },
   "kermainen-lohipata:th": {
     "source_hash": "98316bae2f848de8889c21a773fce82120600b863132f845543d846d94f27ffc",
-    "translation_hash": "ad9b61d61255bbf66c27dce10b16f264b8087db65d4345dd3a99fed35a5e663f",
-    "reviewed_at": "2026-11-16",
-    "reference": "Recipavon reseptitekstien otos 2026-11-16 / ReportHub",
+    "translation_hash": "ffd3a77eea395687bf57e8691c04ddfb0bf39759d5ca46a2373e714c2b95b34b",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Pinaatti sekoitetaan Thai-ohjeessa kastikkeeseen ennen uunia. Kaikissa kielissä filee kypsyy kastikkeessa 200 °C:ssa.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "Pinaatti sekoitetaan Thai-ohjeessa kastikkeeseen ennen uunia. Kaikissa kielissä filee kypsyy kastikkeessa 200 °C:ssa."
-      },
-      {
-        "severity": "P3",
-        "status": "fixed",
-        "summary": "Ruokalajin nimi ja kuvaus vastaavat uunissa kypsennettävää kalaa. Uunilämpöön lisätty yksikkö."
       }
     ]
   },
@@ -6500,20 +6489,15 @@
   },
   "kreikkalainen-moussaka:en": {
     "source_hash": "fd299ae83914e33fdab44b57ce4aabae95fe3d4cfd5dd247ac64a22e8f13c02c",
-    "translation_hash": "f06824c6418cd1988ebee1764fd92a93ca1660f4bb9f185a71d982844f345012",
-    "reviewed_at": "2026-11-16",
-    "reference": "Recipavon reseptitekstien otos 2026-11-16 / ReportHub",
+    "translation_hash": "7ab05a1acd5afed2da558281e35904818801c520414c53c278d7dead81658fe1",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Käännöksissä erotetaan kasvisten paahtaminen pellillä ja kerrosten kokoaminen uunivuokaan. Béchamelin muna lisätään vasta, kun kastike on pois liedeltä.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "Käännöksissä erotetaan kasvisten paahtaminen pellillä ja kerrosten kokoaminen uunivuokaan. Béchamelin muna lisätään vasta, kun kastike on pois liedeltä."
-      },
-      {
-        "severity": "P3",
-        "status": "fixed",
-        "summary": "Lisätty Celsius-yksikkö molempiin uunilämpötiloihin."
       }
     ]
   },
@@ -6533,20 +6517,15 @@
   },
   "kreikkalainen-moussaka:th": {
     "source_hash": "fd299ae83914e33fdab44b57ce4aabae95fe3d4cfd5dd247ac64a22e8f13c02c",
-    "translation_hash": "cb236fbc337e1f581567f8477cab67d97f28c768c79f9eb154ae0210bdb50e49",
-    "reviewed_at": "2026-11-16",
-    "reference": "Recipavon reseptitekstien otos 2026-11-16 / ReportHub",
+    "translation_hash": "2d7f17919cca5113c5435833496096d3886542c4f2937be6613c92258212084b",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Käännöksissä erotetaan kasvisten paahtaminen pellillä ja kerrosten kokoaminen uunivuokaan. Béchamelin muna lisätään vasta, kun kastike on pois liedeltä.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "Käännöksissä erotetaan kasvisten paahtaminen pellillä ja kerrosten kokoaminen uunivuokaan. Béchamelin muna lisätään vasta, kun kastike on pois liedeltä."
-      },
-      {
-        "severity": "P3",
-        "status": "fixed",
-        "summary": "Béchamelin astia korjattu kattilaksi ja jälkimmäiseen uunilämpöön lisätty Celsius-yksikkö."
       }
     ]
   },

@@ -76,6 +76,21 @@ test("recipe actions progressively enhance readable static pages in all four lan
   }
 });
 
+test("the English oven recipes display explicit Celsius units in the rendered instructions", async () => {
+  for (const [slug, steps] of [
+    ["kermainen-lohipata", ["Heat the oven to 200 °C."]],
+    ["kreikkalainen-moussaka", ["Heat the oven to 200 °C.", "Bake at 190 °C for about 35 minutes"]],
+  ] as const) {
+    const html = await readFile(path.join(dist, "en/recipes", slug, "index.html"), "utf8");
+    const start = html.indexOf('id="recipe-instructions"');
+    const end = html.indexOf("</section>", start);
+    assert.ok(start >= 0 && end > start, slug);
+    const instructions = html.slice(start, end);
+    for (const step of steps) assert.ok(instructions.includes(step), slug + ": " + step);
+    assert.doesNotMatch(instructions, /(?:190|200) degrees/);
+  }
+});
+
 test("the FI coconut curry displays its allergen note on the static recipe page", async () => {
   const recipe = siteContent.recipes.find(({ recipeId, locale }) =>
     recipeId === "thai-kananmunat-kookoscurryssa" && locale === "fi");
