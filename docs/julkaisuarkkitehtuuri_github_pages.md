@@ -63,7 +63,10 @@ palauttaa odotetun revision ja samat tavut.
   HOLD palauttaa virhekoodin ja reseptikohtaiset syyt. Käytä samaa porttia
   ennen ensimmäistä pushia.
 - Valmistuksen, ruokaturvallisuuden, ainesosien ja ravinnon katselmointi
-  kiinnitetään lähdeversioon. Ravinnon todiste tarkastaa laskentasyötteen
+  kiinnitetään lähdeversioon. Koekeittiötestit eivät kuulu julkaisuporttiin.
+  Katselmoi kirjallisesti valmistuksen toistettavuus, kypsyyden tunnusmerkit
+  ja säilytys. Merkitse vahvistamattomat ajat, annossaannot ja hävikit arvioiksi.
+  Ravinnon todiste tarkastaa laskentasyötteen
   erikseen. GK voi olla perustellusti määrittämätön. Erikseen käsiteltävän
   julkaistun GK-pending-lähteen Git-blob on
   [GK-pending-rekisterissä](nutrition/new-public-gk-pending-sources.json).
