@@ -415,3 +415,11 @@ test("an added TypeScript test requires typechecking without a browser build", (
     rmSync(fixture, { recursive: true, force: true });
   }
 });
+
+test("local GI/GK projection changes run calculation and nutrition regressions", () => {
+  for (const path of ["site/scripts/gi_gk_maintainer.py", "site/scripts/gi_sqlite_capture_reads.mjs",
+                      "site/scripts/gi_sqlite_asset_map.py", "site/tests/test_gi_sqlite_maintainer.py"]) {
+    const plan = classifyPaths([path]);
+    assert.ok(plan.runGlycemic && plan.runNutrition && plan.needsNode, path);
+  }
+});
