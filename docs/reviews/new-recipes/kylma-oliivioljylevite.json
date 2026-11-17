@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kylma-oliivioljylevite",
+  "source_path": "reseptit/alkuruoat/kylma-oliivioljylevite.md",
+  "source_sha256": "e95891c6cc9df70834136a004abbaa1f03957a131fcf964d5f62df82f4819e40",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-17",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.facebook.com/reel/2874350132947821",
+      "https://wollundrygroveolives.com.au/recipes/2017/9/16/extra-virgin-olive-oil-spread"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kylma-oliivioljylevite.json",
+  "checks": {
+    "duplicates": {
+      "notes": "Kylmälle oliiviöljylevitteelle ei löytynyt julkaistua vastinetta nimellä, resepti-ID:llä tai reitillä.",
+      "status": "pass"
+    },
+    "ingredients": {
+      "notes": "Levitteessä on vain 150 g ekstraneitsytoliiviöljyä. Leipä on tarjoiluehdotus.",
+      "status": "pass"
+    },
+    "method": {
+      "notes": "Wollundry Groven vertailuohje vahvistaa öljyn pakastamisen levitteeksi. Jähmettymistä arvioidaan rakenteesta.",
+      "status": "pass"
+    },
+    "food_safety": {
+      "notes": "Puhdas öljy pakastetaan kuivassa, suljetussa pakastusastiassa. Ohjeessa ei säilytetä öljyssä muita aineksia.",
+      "status": "pass"
+    },
+    "servings_and_time": {
+      "notes": "150 g jaettuna 15 annokseen on 10 g annosta kohti. Kokonaisaika on arvio yön yli pakastamisesta.",
+      "status": "pass"
+    },
+    "nutrition": {
+      "notes": "Annoksen neljä makroarvoa perustuvat Fineli Release 20:n oliiviöljytietueeseen ja 10 gramman annokseen.",
+      "status": "pass"
+    },
+    "glycemic": {
+      "notes": "Puhtaalla oliiviöljyllä ei ole mitattavaa hiilihydraattiannosta GI-määritykseen. Julkinen GK jätetään määrittämättä.",
+      "status": "unavailable"
+    }
+  },
+  "supplementary_evidence": {
+    "storage_source": "https://www.internationaloliveoil.org/wp-content/uploads/2020/12/COI-CBPS-Doc.-n%C2%BA-1-ENG.pdf",
+    "image_path": "kuvat/alkuruoat/kylma-oliivioljylevite.webp",
+    "image_sha256": "051a1526f0f75e5b1cf50ec913c19ca73401bec23b9fb9a8df0bd718768400a6",
+    "image_review": "1600 × 900 WebP esittää vaaleaa levitettä kulhossa ja tarjoiluehdotuksena leivällä.",
+    "physical_cook_test": false
+  }
+}
