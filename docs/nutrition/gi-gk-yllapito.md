@@ -113,8 +113,11 @@ yhdistämisreiteille tarvittava palvelinesto edellyttää `main`-rulesetiin
 asetuksia **Require review thread resolution**, **Require approvals = 1**,
 **Dismiss stale pull request approvals when new commits are pushed** ja
 **Require approval of the most recent reviewable push**, sekä bypass-oikeuksien
-rajausta. Jos Codex-kuittaus halutaan hyväksyä koneellisesti, sääntöön
+rajausta. Jos Codex-kuittaus halutaan hyväksyä GitHubin yhdistämisportissa,
+sääntöön
 tarvitaan lisäksi luotetun integraation tarkalle HEADille julkaisema
-pakollinen tarkistus. Nykyinen paikallinen esitarkistus lukee GitHubista
-kuittaukset ja avoimet ketjut muuttamatta PR:ää.
+pakollinen tarkistus. Paikallinen esitarkistus lukee Codex-sovelluksen
+PR-yhteenvedon tilan, ylläpitäjien hyväksynnät ja avoimet katselmointiketjut.
+Jos yhteenveto koskee aiempaa committia, pyydä katselmointi GitHubissa
+kommentilla `@codex review` ja odota päivitettyä kuittausta.
 [GitHubin ruleset-säännöt](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets)

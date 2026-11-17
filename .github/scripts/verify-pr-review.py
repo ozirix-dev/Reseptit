@@ -7,7 +7,9 @@ import subprocess
 OWNER = "ozirix-dev"
 REPO = "Reseptit"
 CODEX_BOT_ID = 199175422
-RECEIPT = "<!-- codex-review-receipt:v1 -->"
+CODEX_APP_ID = 1144995
+SUMMARY = "<!-- codex-pull-request-review-summary -->"
+SUMMARY_STATE = re.compile(r"<!-- codex-review-state:v1 (\{[^\n]+\}) -->")
 THREADS = """
 query($number:Int!, $cursor:String) {
   repository(owner:"ozirix-dev", name:"Reseptit") {
@@ -23,23 +25,48 @@ query($number:Int!, $cursor:String) {
 """
 
 
-def review_state(head, author, reviews, unresolved):
+def codex_receipt(head, comments):
+    summaries = []
+    for comment in comments:
+        user = comment["user"]
+        app = comment.get("performed_via_github_app") or {}
+        body = (comment["body"] or "").splitlines()
+        if (user["id"] == CODEX_BOT_ID and user["type"] == "Bot"
+                and app.get("id") == CODEX_APP_ID and body and body[0] == SUMMARY):
+            summaries.append(comment)
+    if not summaries:
+        return None
+    latest = max(summaries, key=lambda comment: (comment["updated_at"], comment["id"]))
+    body = latest["body"].splitlines()
+    match = SUMMARY_STATE.fullmatch(body[1]) if len(body) > 1 else None
+    if not match:
+        raise ValueError("Codex review summary has an unrecognized state marker")
+    states = json.loads(match[1])
+    for kind in ("code_review", "security_review"):
+        state = states[kind]
+        if state["commit_sha"] != head:
+            continue
+        if state["status"] != "completed" or state["has_unresolved_findings"] is not False:
+            raise ValueError(f"Codex {kind} for {head} is incomplete or has unresolved findings")
+    if states["code_review"]["commit_sha"] == head:
+        return latest["html_url"]
+    return None
+
+
+def review_state(head, author, reviews, unresolved, comments=()):
     latest_approvals = {}
-    receipt = None
     for review in reviews:
         if review["commit_id"] != head:
             continue
         user = review["user"]
         state = review["state"]
-        if (user["id"] == CODEX_BOT_ID and user["type"] == "Bot" and state == "COMMENTED"
-                and (review["body"] or "").lstrip().startswith(RECEIPT)):
-            receipt = review["html_url"]
         if (user["id"] != author and user["type"] == "User"
                 and review.get("maintainer_access")
                 and state in {"APPROVED", "CHANGES_REQUESTED", "DISMISSED"}):
             latest_approvals[user["id"]] = (state, review["html_url"])
     if unresolved or any(state == "CHANGES_REQUESTED" for state, _ in latest_approvals.values()):
         raise ValueError("Current PR has unresolved review threads or requested changes")
+    receipt = codex_receipt(head, comments)
     independent = [url for state, url in latest_approvals.values() if state == "APPROVED"]
     if not receipt and not independent:
         raise ValueError("No SHA-bound Codex receipt or independent maintainer approval for " + head)
@@ -89,7 +116,15 @@ def check(number, head):
         if not threads["pageInfo"]["hasNextPage"]:
             break
         cursor = threads["pageInfo"]["endCursor"]
-    return review_state(head, pr["user"]["id"], reviews, unresolved)
+    comments = [
+        comment
+        for page in api("--paginate", "--slurp", f"repos/{OWNER}/{REPO}/issues/{number}/comments?per_page=100")
+        for comment in page
+    ]
+    latest = api(path)
+    if latest["state"] != "open" or latest["draft"] or latest["head"]["sha"] != head:
+        raise ValueError("PR state or HEAD changed during review verification")
+    return review_state(head, pr["user"]["id"], reviews, unresolved, comments)
 
 
 def main():
