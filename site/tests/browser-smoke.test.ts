@@ -1,3 +1,6 @@
+import { portionCopy } from "../src/features/recipes/RecipePortionSummary";
+import { glycemicLoadPath } from "../src/features/recipes/recipe-i18n";
+import { siteContent } from "../src/generated/content.generated";
 import { siteTarget } from "../src/content/site-target";
 import { gkCopy } from "../src/features/glycemic-load/glycemic-load-copy";
 import assert from "node:assert/strict";
@@ -349,6 +352,18 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.setViewportSize({ width: 320, height: 800 });
     await page.goto(`${base}/hummus/`);
     assert.match(await page.locator(".recipe-glycemic-load").innerText(), /GK-arvio[\s\S]*noin 6 \/ annos/);
+    const perPortion = page.locator("[data-portion-gk]");
+    const originalValue = await perPortion.innerText();
+    await page.getByRole("button", { name: recipeUi.fi.increase, exact: true }).click();
+    assert.equal(await perPortion.innerText(), originalValue, "changing the batch leaves the eaten portion alone");
+    const eatenPortion = page.getByLabel(portionCopy.fi.title, { exact: true });
+    await page.keyboard.press("Tab");
+    await eatenPortion.focus();
+    assert.equal(await eatenPortion.evaluate(element => element.matches(":focus-visible")), true);
+    await eatenPortion.selectOption("1.5");
+    assert.notEqual(await perPortion.innerText(), originalValue);
+    await eatenPortion.selectOption("1");
+    assert.equal(await perPortion.innerText(), originalValue);
     const methodLink = page.locator(".recipe-glycemic-load__caption a");
     await methodLink.focus();
     assert.equal(await methodLink.evaluate((element) => element.matches(":focus-visible")), true);
@@ -378,6 +393,34 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.setViewportSize({ width: 320, height: 800 });
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
 
+    for (const [index, locale] of (["fi", "en", "sv", "th"] as const).entries()) {
+      await page.setViewportSize({ width: [320, 360, 768, 1440][index]!, height: 844 });
+      await page.goto(base + glycemicLoadPath(locale));
+      assert.equal(await page.locator('[data-gk-coverage="WHOLE_PORTION_CARBS"]').count(), 1);
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+      const recipe = siteContent.recipes.find(recipe => recipe.locale === locale && recipe.recipeId === "kermainen-lohipata")!;
+      await page.goto(base + recipe.routePath);
+      assert.equal(await page.getByLabel(portionCopy[locale].title, { exact: true }).inputValue(), "1");
+      await page.getByLabel(portionCopy[locale].title, { exact: true }).selectOption("2");
+      assert.equal(await page.locator("[data-portion-gk]").count(), 1);
+    }
+
+    for (const [id, selector, copy] of [
+      ["taytetyt-kananmunat-yrteilla", '[data-gk-status="QUALITATIVE"]', portionCopy.fi.class.LOW],
+      ["kylma-oliivioljylevite", '.recipe-portion', "Tarjoiluleipä ei sisälly arvioon"],
+      ["tonnikalatayte-kurkkukupeissa", '[data-portion-carbohydrate]', "1,2"],
+      ["kebab-munakasrulla", '.recipe-portion', "Vehnäjauho"],
+      ["vhh-kaalikaarryleet", '.recipe-glycemic-load__class', "kasvisryhmän keskiarvo"],
+    ]) {
+      const recipe = siteContent.recipes.find(recipe => recipe.locale === "fi" && recipe.recipeId === id)!;
+      await page.goto(base + recipe.routePath);
+      assert.ok((await page.locator(selector).innerText()).includes(copy), id);
+      if (id === "taytetyt-kananmunat-yrteilla") {
+        await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+        assert.equal(await page.getByText(portionCopy.fi.class.LOW, { exact: true }).count(), 0);
+        assert.equal(await page.getByText(portionCopy.fi.baseOnly, { exact: true }).count(), 1);
+      }
+    }
     await page.goto(`${base}/`);
     const searchbox = page.getByRole("searchbox", { name: "Hae reseptejä" });
     await searchbox.focus();

@@ -1,11 +1,14 @@
+import { publicGkLowMax, publicGkHighMin } from "../recipes/gk-estimate";
 import { EstimateDetails, EstimateSummary, MissingEstimate } from "./GlycemicLoadEvidence";
 import { gkCopy } from "./glycemic-load-copy";
 import { gkVariantScope } from '../recipes/gk-estimate-scope';
 import { GkCoverageSummary } from './GkCoverageSummary';
+import { GlycemicLoadGuide } from './GlycemicLoadGuide';
 import {GkOnlyVariantPanel,gkOnlyUi,gkScopeUi} from '../recipes/GkOnlyVariantPanel';
 import {scopedPolyolDisclosure} from '../recipes/scoped-polyol-disclosure';
 import {recoveryDisclosure} from '../recipes/recovery-disclosure';
 import {formatGlycemicLoadNumber} from '../recipes/gk80-format';
+import {verbalGkForPortion} from '../recipes/gk-portion';
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useContent } from "@/lib/content";
@@ -54,9 +57,31 @@ const sources = [
 const pageSize = 24;
 const liverRecipeId = "maksalaatikko-kukkakaalilla";
 
+const portionCopy = {
+  fi: {
+    grams: (amount: string) => `Imeytyviä hiilihydraatteja noin ${amount} g annoksessa.`,
+    classes: { LOW: "Arvioitu GK on pieni", MEDIUM: "Arvioitu GK on keskisuuri", HIGH: "Arvioitu GK on suuri" },
+  },
+  en: {
+    grams: (amount: string) => `About ${amount} g of available carbohydrate per serving.`,
+    classes: { LOW: "Estimated GL is low", MEDIUM: "Estimated GL is moderate", HIGH: "Estimated GL is high" },
+  },
+  sv: {
+    grams: (amount: string) => `Cirka ${amount} g tillgängliga kolhydrater per portion.`,
+    classes: { LOW: "Uppskattat GL är lågt", MEDIUM: "Uppskattat GL är medelhögt", HIGH: "Uppskattat GL är högt" },
+  },
+  th: {
+    grams: (amount: string) => `คาร์โบไฮเดรตที่ร่างกายใช้ได้ประมาณ ${amount} กรัมต่อหนึ่งที่`,
+    classes: { LOW: "ค่า GL โดยประมาณอยู่ในระดับต่ำ", MEDIUM: "ค่า GL โดยประมาณอยู่ในระดับปานกลาง", HIGH: "ค่า GL โดยประมาณอยู่ในระดับสูง" },
+  },
+} satisfies Record<RecipeLocale, {
+  grams: (amount: string) => string;
+  classes: Record<"LOW" | "MEDIUM" | "HIGH", string>;
+}>;
+
 const uxCopy = {
   fi: {
-    intro: "Glykeeminen kuorma (GK) arvioi, kuinka paljon annoksen hiilihydraatit voivat nostaa verensokeria. Suurempi GK tarkoittaa suurempaa arvioitua vaikutusta.",
+    intro: "Glykeeminen kuorma (GK) auttaa vertaamaan annoksia. Recipavon arvio yhdistää annoksen hiilihydraattimäärän ja käytettävissä olevan GI-tiedon ainesosista.",
     title: "Löydä reseptin GK-arvio",
     search: "Hae reseptiä nimellä",
     only: "Vain alkuperäisen reseptin GK-arviot",
@@ -70,7 +95,7 @@ const uxCopy = {
     count: (shown: string, total: string) => `Näytetään ${shown} / ${total} tulosta`,
   },
   en: {
-    intro: "Glycemic load (GL) estimates how much the carbohydrate in a serving may raise blood sugar. A higher GL means a larger estimated effect.",
+    intro: "Glycemic load (GL) helps you compare servings. Recipavo’s estimate combines the amount of carbohydrate in a serving with the available GI data for its ingredients.",
     title: "Find a recipe’s GL estimate",
     search: "Search by recipe name",
     only: "Only original-recipe GL estimates",
@@ -84,7 +109,7 @@ const uxCopy = {
     count: (shown: string, total: string) => `Showing ${shown} of ${total} results`,
   },
   sv: {
-    intro: "Glykemisk belastning (GL) uppskattar hur mycket kolhydraterna i en portion kan höja blodsockret. Högre GL betyder en större uppskattad påverkan.",
+    intro: "Glykemisk belastning (GL) hjälper dig att jämföra portioner. Recipavos uppskattning kombinerar mängden kolhydrater i portionen med de GI-uppgifter som finns för ingredienserna.",
     title: "Hitta receptets GL-värde",
     search: "Sök på receptnamn",
     only: "Visa bara GL-uppskattningar för originalrecept",
@@ -98,7 +123,7 @@ const uxCopy = {
     count: (shown: string, total: string) => `Visar ${shown} av ${total} resultat`,
   },
   th: {
-    intro: "ภาระน้ำตาลในเลือด (GL) เป็นค่าประมาณว่าคาร์โบไฮเดรตในอาหารหนึ่งที่อาจทำให้น้ำตาลในเลือดสูงขึ้นเพียงใด ยิ่งค่า GL สูง ผลที่คาดก็ยิ่งมากขึ้น",
+    intro: "ค่าภาระน้ำตาลในเลือด (GL) ช่วยให้เปรียบเทียบอาหารแต่ละที่ได้ Recipavo ประมาณค่านี้จากปริมาณคาร์โบไฮเดรตต่อหนึ่งที่และข้อมูลดัชนีน้ำตาล (GI) ที่มีของวัตถุดิบ",
     title: "ค้นหาค่า GL ของสูตรอาหาร",
     search: "ค้นหาตามชื่อสูตร",
     only: "แสดงเฉพาะค่าประมาณ GL ของสูตรเดิม",
@@ -128,7 +153,7 @@ export function GlycemicLoadPilotPage() {
 }
 
 function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycemicOverview"]> }) {
-  const { results, variants, coverage, reviewedCount } = data;
+  const { results, variants, coverage, portionCoverage, portions, reviewedCount } = data;
   const { recipeEstimateVariants, studyServingVariants } = useMemo(() => ({
     recipeEstimateVariants: new Map(variants.filter(variant => gkVariantScope(variant) === "RECIPE_VARIANT").map(variant => [variant.recipeId, variant])),
     studyServingVariants: new Map(variants.filter(variant => gkVariantScope(variant) === "STUDY_COMPARISON").map(variant => [variant.recipeId, variant])),
@@ -137,7 +162,7 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
   const locale = recipeLocaleFromPath(pathname);
   const [enhanced, setEnhanced] = useState(false);
   const [search, setSearch] = useState("");
-  const [showCalculatedOnly, setShowCalculatedOnly] = useState(false);
+  const [showEstimatesOnly, setShowEstimatesOnly] = useState(false);
   const [visibleLimit, setVisibleLimit] = useState(pageSize);
   const nextResultId = useRef<string>(null);
   const targetId = enhanced ? decodeHash(hash) : "";
@@ -146,7 +171,7 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
   useEffect(() => {
     setEnhanced(true);
     setSearch("");
-    setShowCalculatedOnly(false);
+    setShowEstimatesOnly(false);
     setVisibleLimit(pageSize);
   }, [locale]);
 
@@ -158,7 +183,9 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
       disclosure.open = true;
       disclosure.querySelector("summary")?.focus({ preventScroll: true });
     }
-    if (target.matches(".glycemic-pilot__recipe")) target.focus({ preventScroll: true });
+    if (target.matches(".glycemic-pilot__recipe, #glycemic-pilot-recipes")) {
+      target.focus({ preventScroll: true });
+    }
     target.scrollIntoView({ behavior: "instant" });
   }, [locale, targetId]);
 
@@ -170,20 +197,26 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
 
   const text = copy[locale];
   const ux = uxCopy[locale];
+  const portionText = portionCopy[locale];
   const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[locale];
   const number = new Intl.NumberFormat(numberLocale, { maximumSignificantDigits: 1, minimumSignificantDigits: 1 });
+  const grams = new Intl.NumberFormat(numberLocale, { maximumFractionDigits: 1 });
   const count = new Intl.NumberFormat(numberLocale);
   const modelled = { fi: "Mallinnettu", en: "Modeled", sv: "Modellerad", th: "ค่าประมาณจากแบบจำลอง" }[locale];
   const displayNumber = (value: number, modeled: boolean) => formatGlycemicLoadNumber(value, numberLocale, modeled);
   const titleFor = (result: GlycemicLoadPilotPublicResult) =>
     result.localeRoutes[locale]?.title
     ?? (result.recipeId === liverRecipeId ? text.liverTitle : result.title);
+  const portionFor = (result: GlycemicLoadPilotPublicResult) =>
+    portions?.[result.recipeId] ?? result.portionEvidence;
+  const hasEstimate = (result: GlycemicLoadPilotPublicResult) =>
+    result.status === "CALCULATED" || verbalGkForPortion(portionFor(result)?.verbal, 1) !== null;
   const searchKey = (value: string) => value.normalize("NFC").toLocaleLowerCase(numberLocale);
   const query = searchKey(search.trim());
   // Search both the published localized title and the established liver name:
   // adding a translation must not make the existing search term disappear.
   const matching = results.filter((result) =>
-    (!showCalculatedOnly || result.status === "CALCULATED")
+    (!showEstimatesOnly || hasEstimate(result))
     && (searchKey(titleFor(result)).includes(query)
         || (result.recipeId === liverRecipeId && searchKey(text.liverTitle).includes(query)))
   );
@@ -215,12 +248,21 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
     const isLiverRecipe = result.recipeId === liverRecipeId;
     const variant = recipeEstimateVariants.get(result.recipeId);
     const studyServing = studyServingVariants.get(result.recipeId);
+    const portion = portionFor(result);
+    const verbal = portion?.verbal;
+    const category = verbalGkForPortion(verbal, 1);
+    const carbs = portion?.availableCarbs;
+    const amount = carbs ? grams.format(carbs.min) : null;
+    const maxAmount = carbs ? grams.format(carbs.max) : null;
     return <li key={result.recipeId} id={result.recipeId} className="glycemic-pilot__recipe" tabIndex={-1}>
       {result === linked ? <p className="eyebrow">{ux.linked}</p> : null}
       <h3><Link to={localized?.routePath ?? result.routePath} lang={isLiverRecipe ? locale : localized ? recipeLocaleFromPath(localized.routePath) : "fi"}>{titleFor(result)}</Link></h3>
       <p className="gk-evidence__scope">{ux.original}</p>
+      {amount !== null ? <p>{portionText.grams(amount === maxAmount ? amount : `${amount}–${maxAmount}`)}</p> : null}
       {result.status === "CALCULATED" ? <>
         <p className="gk-evidence__value"><strong>{text.value} · {formatValue(result)}</strong></p>
+        {portion?.condition ? <p>{portion.condition[locale]}</p> : null}
+        {portion?.classLimitation ? <p>{portion.classLimitation[locale]}</p> : null}
         <EstimateSummary result={result} locale={locale} />
         <EstimateDetails result={result} locale={locale}
           notes={<>
@@ -230,6 +272,10 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
           technicalNotes={result.closedRecoveryC ? <p>{recoveryDisclosure[locale]}</p> :
             result.boundedPolyolC ? <p>{scopedPolyolDisclosure[locale]}</p> : undefined}
         />
+      </> : verbal && category ? <>
+        <p className="gk-evidence__value" data-gk-estimate="VERBAL"><strong>{portionText.classes[category]}</strong></p>
+        <p>{verbal.rationale[locale]}</p>
+        {verbal.condition ? <p>{verbal.condition[locale]}</p> : null}
       </> : <MissingEstimate result={result} locale={locale} explanation={isLiverRecipe ? text.liver : undefined} />}
       {variant ? <GkOnlyVariantPanel variant={variant} locale={locale} compact /> : null}
       {studyServing ? <GkOnlyVariantPanel variant={studyServing} locale={locale} compact /> : null}
@@ -242,9 +288,10 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
         <h1>{glycemicLoadMeta[locale].h1}</h1>
         <p className="page-intro__description">{ux.intro}</p>
       </header>
-      <GkCoverageSummary coverage={coverage} locale={locale} />
+      <GlycemicLoadGuide locale={locale} />
+      <GkCoverageSummary coverage={coverage} portionCoverage={portionCoverage} locale={locale} />
       <section className="glycemic-pilot__recipes" aria-labelledby="glycemic-pilot-recipes">
-        <h2 id="glycemic-pilot-recipes">{ux.title}</h2>
+        <h2 id="glycemic-pilot-recipes" tabIndex={-1}>{ux.title}</h2>
         {enhanced ? <>
           <label className="glycemic-pilot__search-label" htmlFor="gk-recipe-search">{ux.search}</label>
           <input id="gk-recipe-search" type="search" autoComplete="off" value={search} onChange={(event) => {
@@ -252,8 +299,8 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
             setVisibleLimit(pageSize);
           }} />
           <label className="glycemic-pilot__filter">
-            <input type="checkbox" checked={showCalculatedOnly} onChange={(event) => {
-              setShowCalculatedOnly(event.target.checked);
+            <input type="checkbox" checked={showEstimatesOnly} onChange={(event) => {
+              setShowEstimatesOnly(event.target.checked);
               setVisibleLimit(pageSize);
             }} />
             {ux.only}
@@ -273,7 +320,12 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
       </section>
       <details className="glycemic-pilot__method glycemic-pilot__disclosure" id="gk-only-method"><summary>{ux.background}</summary><p>{reviewedCount} {text.total}</p><p>{gkOnlyUi[locale].methodText}</p><ul data-gk-coverage="version-aware"><li><strong>{coverage.numericRecipes}</strong> / {coverage.total} — {gkOnlyUi[locale].coverage}</li><li>A: {coverage.additionalA} — {gkOnlyUi[locale].aCount}</li><li>B: {coverage.additionalB} — {gkOnlyUi[locale].bCount}</li><li>C: {coverage.classOnly} — {gkOnlyUi[locale].cCount}</li><li data-gk-coverage="original"><strong>{coverage.originalNumeric}</strong> — {gkScopeUi[locale].originalCoverage}</li><li><strong>{coverage.total - coverage.originalNumeric}</strong> — {gkScopeUi[locale].originalMissing}</li><li><strong>{coverage.missing}</strong> — {gkScopeUi[locale].versionMissing}</li><li><strong>{coverage.studyServingRecipeIds.length}</strong> — {gkScopeUi[locale].studyCoverage}</li></ul></details>
       <details className="glycemic-pilot__method glycemic-pilot__disclosure" aria-labelledby="glycemic-pilot-method"><summary>{ux.method}</summary>
-        <h2 id="glycemic-pilot-method">{text.method}</h2><p><strong>{text.formula}</strong></p><p>{text.fineli}</p><p>{text.gi}</p><p>{text.interpretation}</p><p data-method="gk80-modelled">{modelledMethod[locale]}</p>
+        <h2 id="glycemic-pilot-method">{text.method}</h2><p><strong>{text.formula}</strong></p><p>{{
+        fi: `GK on pieni enintään arvolla ${publicGkLowMax}, suuri arvosta ${publicGkHighMin} alkaen ja keskisuuri niiden välissä.`,
+        en: `GL is low up to and including ${publicGkLowMax}, high from ${publicGkHighMin}, and medium in between.`,
+        sv: `GL är låg till och med ${publicGkLowMax}, hög från ${publicGkHighMin} och medelhög däremellan.`,
+        th: `ค่า GL ไม่เกิน ${publicGkLowMax} อยู่ในระดับต่ำ ตั้งแต่ ${publicGkHighMin} อยู่ในระดับสูง และค่าระหว่างนี้อยู่ในระดับปานกลาง`,
+      }[locale]}</p><p>{text.fineli}</p><p>{text.gi}</p><p>{text.interpretation}</p><p data-method="gk80-modelled">{modelledMethod[locale]}</p>
         <h3>{text.sources}</h3><ul className="glycemic-pilot__sources">{sources.map(([title, url]) => <li key={url}><a href={url} rel="noopener noreferrer">{title}</a></li>)}</ul>
       </details>
     </div>

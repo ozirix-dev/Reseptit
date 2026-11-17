@@ -187,6 +187,11 @@ button { font: inherit; }
 .recipe-step-text { padding-block: .5rem; min-width: 0; }
 .recipe-steps [data-complete="true"] .recipe-step-text { text-decoration: line-through; color: var(--ink-soft); }
 .recipe-disclosure { color: var(--ink-soft); font-size: .9rem; }
+.recipe-portion { margin-top: 1rem; }
+.recipe-portion__control { display: flex; flex-wrap: wrap; gap: .4rem .75rem; align-items: center; font-weight: 700; }
+.recipe-portion__control select { font: inherit; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: .35rem; min-height: 2.5rem; padding-inline: .5rem; max-width: 100%; }
+.recipe-portion__control select:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.recipe-portion p { margin-block: .4rem; }
 .recipe-glycemic-load { display: grid; gap: .35rem; margin-top: .5rem; padding-top: .45rem; border-top: 1px solid var(--line); }
 .recipe-glycemic-load__sources { display: grid; gap: .25rem; margin: 0; padding-left: 1.2rem; font-size: .88rem; }
 .recipe-glycemic-load a { color: var(--accent); }

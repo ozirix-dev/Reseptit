@@ -1,0 +1,89 @@
+{
+  "kylma-oliivioljylevite": {
+    "recipeBindingSha256": "6d3c4aa0fce74b3ed85f3c8ccc23b5d922a70a5d8ab47bf9f56b270c4c099e11",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "150 g plain extra virgin olive oil / 15 portions = about 10 g each. Known zero available carbohydrate in the sole ingredient gives an empty positive-GK sum. No assigned or measured zero GI. Validate pure oil and excluded bread upon meaningful ingredient, preparation or serving changes.",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+    "nutritionSha256": "89cb5e50e5ed6f2351345cbcbd68e8c393033aa77f4859b9fab12a37b85f46ca",
+    "portionGrams": 10,
+    "condition": {
+      "fi": "Arvio koskee pelkkää oliiviöljylevitettä. Tarjoiluleipä ei sisälly arvioon.",
+      "en": "The estimate covers the olive oil spread alone. It excludes the bread used for serving.",
+      "sv": "Uppskattningen gäller bara olivoljepålägget. Brödet till serveringen ingår inte.",
+      "th": "ค่าประมาณนี้ใช้กับสเปรดน้ำมันมะกอกเท่านั้น ไม่รวมขนมปังที่เสิร์ฟคู่กัน"
+    },
+    "zeroCarbohydrate": true
+  },
+  "taytetyt-kananmunat-yrteilla": {
+    "recipeBindingSha256": "bb831a7b2007e9c68638e39f4fc76593e84f12d10f67da21d43113af74c09e95",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "Recipe-specific directional estimate. University of Sydney identifies egg as a group with negligible carbohydrate and little expected glycaemic effect in isolation. All named and weighed condiments and chives are included, using composition matches for ordinary prepared mustard and full-fat mayonnaise. Total about 0.50 g available carbohydrate. No sweet glaze, extra sauce or carbohydrate side is included. Class at precisely two halves and current food composition only. Fall back to carb information at other multiples. No universal low-carb rule, GI proxy, biological upper bound or clinical claim.",
+    "source": "https://glycemicindex.com/faqs/",
+    "nutritionSha256": "8615a5863af5807424af4ca88c4a8ffd8c3f72b1c7597ded2288cb49276b099d",
+    "piecesPerServing": 2,
+    "verbal": {
+      "category": "LOW",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Kananmuna muodostaa annoksen perustan. Ohjeen mukainen pieni määrä sinappia ja majoneesia tuo annokseen vain vähän hiilihydraattia. Sanallinen arvio koskee kahta munanpuolikasta ohjeen mukaisella sinapilla ja majoneesilla.",
+        "en": "Egg makes up most of this serving. The small amount of mustard and mayonnaise in the recipe adds little carbohydrate. This estimate applies to two egg halves with the mustard and mayonnaise amounts in the recipe.",
+        "sv": "Ägget utgör huvuddelen av portionen. De små mängderna senap och majonnäs i receptet bidrar med lite kolhydrater. Uppskattningen gäller två ägghalvor med de mängder senap och majonnäs som anges i receptet.",
+        "th": "ไข่เป็นส่วนหลักของหนึ่งหน่วยบริโภค ส่วนมัสตาร์ดและมายองเนสปริมาณเล็กน้อยตามสูตรเพิ่มคาร์โบไฮเดรตเพียงเล็กน้อย ค่าประมาณนี้ใช้กับไข่สองซีกที่ใช้มัสตาร์ดและมายองเนสตามปริมาณในสูตร"
+      }
+    }
+  },
+  "tonnikalatayte-kurkkukupeissa": {
+    "recipeBindingSha256": "75740154debe0a7495b0af525a0b80d4d60d4e5e7c6003d74ec2b48d59a72700",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "Raw cucumber and unflavoured tuna in water are the two largest components. University of Sydney food-group guidance covers fish and low-carbohydrate salad vegetables. Known post-scooping cucumber mass, weighed small amounts of full-fat mayonnaise, celery, undiluted lemon juice and dill. Available carbohydrate from cucumber 0.90g/serving out of 1.16g. No carbohydrate side or sweetening. If editorial gate stays open use carbohydrate-only with cucumber driver.",
+    "source": "https://fineli.fi/fineli/content/file/8/Fineli_data_file_instructions",
+    "nutritionSha256": "bce2e85c4a0e6f97e10924f40f02ab408024cf489c916a26355aa8800c7b2769",
+    "piecesPerServing": 3,
+    "condition": {
+      "fi": "Sanallinen arvio koskee kolmea ohjeen mukaan tehtyä täytettyä kurkkukuppia.",
+      "en": "This estimate applies to three filled cucumber cups made as directed.",
+      "sv": "Uppskattningen gäller tre fyllda gurkkoppar tillagade enligt receptet.",
+      "th": "ค่าประมาณนี้ใช้กับแตงกวาสอดไส้สามถ้วยที่เตรียมตามสูตร"
+    }
+  },
+  "kaali-omenasalaatti": {
+    "recipeBindingSha256": "d8a90a56bf174ba682570cb621198fd817d3e9d0e8eb3cb9cd22994dc684a0d5",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "Caesar dressing is part of the salad. Fineli covers raw cabbage 2.485g, peeled apple 2.0775g, carrot 0.9267g, about 5.49g available carbohydrate combined per serving, but 1 dl dressing has unresolved product composition and weight. This partial sum cannot be shown as whole-portion data. No point or class.",
+    "source": "https://fineli.fi/fineli/content/file/8/Fineli_data_file_instructions",
+    "nutritionSha256": "48feeebabd57625bbb4ed92649d159435d7fcf2b727084514c96b7ceba21ec34",
+    "condition": {
+      "fi": "Koko annoksen hiilihydraattimäärä riippuu valitusta Caesar-kastikkeesta.",
+      "en": "The whole serving’s carbohydrate amount depends on the Caesar dressing used.",
+      "sv": "Kolhydratmängden för hela portionen beror på vilken caesardressing du använder.",
+      "th": "ปริมาณคาร์โบไฮเดรตของทั้งหน่วยบริโภคขึ้นอยู่กับน้ำสลัดซีซาร์ที่ใช้"
+    }
+  },
+  "kebab-munakasrulla": {
+    "recipeBindingSha256": "9b88b33a974dcc4bcba1f13e3b672696ab90558d08fd20f5a1ee296b3f326125",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "Wheat flour 1.5 dl × 65 g/dl × .73998 / 5 = 14.42961g per one-fifth of roll. Milk 4.8g/serving. The declared carbohydrate in kebab and sauces may include unknown polyols and pepperoni drained product basis is unverified. Preserve WITHHELD gate. No whole-portion estimates.",
+    "source": "https://fineli.fi/fineli/content/file/8/Fineli_data_file_instructions",
+    "nutritionSha256": "1f9aa3398e727c71855edba6968e76af550403f279ca287561ab55ece613fc7c",
+    "condition": {
+      "fi": "Vehnäjauho on suurin tunnettu hiilihydraatin lähde. Kastikkeiden ja valutettujen pepperonien koostumus vaikuttaa kokonaismäärään.",
+      "en": "Wheat flour is the largest known source of carbohydrate. The sauces and drained pickled peppers affect the total.",
+      "sv": "Vetemjölet är den största kända kolhydratkällan. Såserna och de avrunna inlagda paprikorna påverkar totalmängden.",
+      "th": "แป้งสาลีเป็นแหล่งคาร์โบไฮเดรตที่ทราบว่ามากที่สุด ซอสและพริกดองที่สะเด็ดน้ำแล้วมีผลต่อปริมาณรวม"
+    }
+  },
+  "vhh-kaalikaarryleet": {
+    "recipeBindingSha256": "6b7573adb0ef818192ac8e8bbc3b0b35909a3d0af1a6de056c178e2a0cd16bee",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "Full GK 9.24 is white cabbage 12.5g available carbohydrate × 0.66 = 8.25, plus riced cauliflower 1.5g × 0.66 = 0.99. An additional known 1.578025g available carbohydrate is omitted under editorial rule. This is not a confidence interval or a calculated opposite scenario. Retain point with visible qualification. Avoid new numerical estimates or stable verbal class without suitable evidence.",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "classLimitation": {
+      "fi": "Arvio on lähellä pienen ja keskisuuren kuorman rajaa. Kaalin ja kukkakaalin vaikutus perustuu kasvisryhmän keskiarvoon.",
+      "en": "The estimate is close to the boundary between low and medium load. Cabbage and cauliflower are estimated using a vegetable group average.",
+      "sv": "Uppskattningen ligger nära gränsen mellan låg och medelhög belastning. Värdena för kål och blomkål bygger på ett genomsnitt för en grupp grönsaker.",
+      "th": "ค่าประมาณอยู่ใกล้เส้นแบ่งระหว่างภาระน้ำตาลระดับต่ำและปานกลาง ค่าของกะหล่ำปลีและกะหล่ำดอกอ้างอิงค่าเฉลี่ยของกลุ่มผัก"
+    }
+  }
+}

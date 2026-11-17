@@ -1,0 +1,122 @@
+import type { RecipeEntry } from "../../types/content";
+import { eatenPortions, scalePortionRange, verbalGkForPortion, type PortionCarbs, type PortionEvidence } from "./gk-portion";
+import type { GkRange } from "./gk-estimate";
+
+export const portionCopy = {
+  fi: {
+    title: "Oma syötävä annos", batch: "Valmistettavat annokset", single: "1 reseptin annos", carbs: "Hiilihydraatit annoksessa", available: "Ilman kuitua ja polyoleja",
+    total: "Reseptin ilmoittama kokonaismäärä, kuitu ja polyolit mukana", net: "Reseptin ilmoittamat nettohiilihydraatit",
+    scope: "Arvio koskee reseptin ainesluetteloa. Huomioi erikseen lisätyt lisukkeet ja juomat.",
+    fraction: (n: string) => `${n} reseptin annosta`, pieces: (n: string) => `${n} kpl`,
+    main: (name: string) => `Suurin osa imeytyvistä hiilihydraateista tulee aineksesta: ${name}.`,
+    known: (name: string) => `Tunnettu hiilihydraatin lähde: ${name}.`, about: "noin",
+    missingCarbs: "Koko annoksen hiilihydraattimäärää ei ole voitu vahvistaa.",
+    pending: "Tämän reseptin GI-lähteet odottavat katselmointia.",
+    baseOnly: "Sanallinen GK-arvio koskee reseptin tavallista annosta.",
+    class: { LOW: "Pieni arvioitu GK", MEDIUM: "Keskisuuri arvioitu GK", HIGH: "Suuri arvioitu GK" },
+    crossing: "Vaihteluväli ulottuu useaan GK-luokkaan.", rounding: "Arvio on lähellä GK-luokan rajaa.",
+    omitted: "Laskelmasta puuttuu pieniä hiilihydraattiosuuksia. Tulos ei riitä varmistamaan GK-luokkaa.",
+  },
+  en: {
+    title: "Portion you eat", batch: "Servings to make", single: "1 recipe serving", carbs: "Carbohydrate in your portion", available: "Excludes fibre and polyols",
+    total: "Recipe total, including fibre and polyols", net: "Net carbs as listed in the recipe",
+    scope: "The estimate covers the listed ingredients. Count any extra sides and drinks separately.",
+    fraction: (n: string) => `${n} recipe servings`, pieces: (n: string) => `${n} pieces`,
+    main: (name: string) => `Most of the available carbohydrate comes from this ingredient: ${name}.`,
+    known: (name: string) => `A known source of carbohydrate: ${name}.`, about: "about",
+    missingCarbs: "The carbohydrate content of the full portion could not be confirmed.",
+    pending: "The GI sources for this recipe are awaiting review.",
+    baseOnly: "The verbal GL estimate applies to the recipe's standard serving.",
+    class: { LOW: "Estimated low GL", MEDIUM: "Estimated medium GL", HIGH: "Estimated high GL" },
+    crossing: "The range spans more than one GL category.", rounding: "The estimate is close to a GL category boundary.",
+    omitted: "The calculation leaves out small amounts of carbohydrate, so the GL category is uncertain.",
+  },
+  sv: {
+    title: "Portionen du äter", batch: "Portioner att laga", single: "1 receptportion", carbs: "Kolhydrater i din portion", available: "Utan fiber och polyoler",
+    total: "Receptets totala kolhydrater, inklusive fiber och polyoler", net: "Nettokolhydrater enligt receptet",
+    scope: "Uppskattningen gäller ingredienserna i listan. Räkna tillbehör och drycker som du lägger till separat.",
+    fraction: (n: string) => `${n} receptportioner`, pieces: (n: string) => `${n} st.`,
+    main: (name: string) => `Det mesta av de tillgängliga kolhydraterna kommer från den här ingrediensen: ${name}.`,
+    known: (name: string) => `En känd kolhydratkälla: ${name}.`, about: "cirka",
+    missingCarbs: "Kolhydratmängden i hela portionen har inte kunnat bekräftas.",
+    pending: "GI-källorna för receptet väntar på granskning.",
+    baseOnly: "Den beskrivande GL-uppskattningen gäller receptets ordinarie portion.",
+    class: { LOW: "Uppskattad låg GL", MEDIUM: "Uppskattad medelhög GL", HIGH: "Uppskattad hög GL" },
+    crossing: "Intervallet sträcker sig över flera GL-kategorier.", rounding: "Uppskattningen ligger nära en GL-gräns.",
+    omitted: "Små mängder kolhydrater saknas i beräkningen. Därför är GL-kategorin osäker.",
+  },
+  th: {
+    title: "ปริมาณที่คุณรับประทาน", batch: "จำนวนที่ทำ", single: "1 ที่ตามสูตร", carbs: "คาร์โบไฮเดรตในส่วนที่รับประทาน", available: "ไม่รวมใยอาหารและโพลิออล",
+    total: "คาร์โบไฮเดรตรวมตามสูตร รวมใยอาหารและโพลิออล", net: "คาร์โบไฮเดรตสุทธิตามที่ระบุในสูตร",
+    scope: "ค่าประมาณครอบคลุมวัตถุดิบในรายการเท่านั้น โปรดคิดเครื่องเคียงและเครื่องดื่มที่เพิ่มแยกต่างหาก",
+    fraction: (n: string) => `${n} ที่ตามสูตร`, pieces: (n: string) => `${n} ชิ้น`,
+    main: (name: string) => `วัตถุดิบที่ให้คาร์โบไฮเดรตที่ใช้ได้มากกว่าครึ่งคือ ${name}`,
+    known: (name: string) => `แหล่งคาร์โบไฮเดรตที่ทราบคือ ${name}`, about: "ประมาณ",
+    missingCarbs: "ยังยืนยันปริมาณคาร์โบไฮเดรตของอาหารทั้งส่วนไม่ได้",
+    pending: "แหล่งข้อมูล GI ของสูตรนี้ยังรอการตรวจสอบ",
+    baseOnly: "คำอธิบายระดับ GL ใช้กับอาหารหนึ่งที่ตามสูตรเท่านั้น",
+    class: { LOW: "ค่า GL โดยประมาณอยู่ในระดับต่ำ", MEDIUM: "ค่า GL โดยประมาณอยู่ในระดับปานกลาง", HIGH: "ค่า GL โดยประมาณอยู่ในระดับสูง" },
+    crossing: "ช่วงค่าครอบคลุมมากกว่าหนึ่งระดับ GL", rounding: "ค่าประมาณอยู่ใกล้จุดแบ่งระดับ GL",
+    omitted: "การคำนวณไม่รวมคาร์โบไฮเดรตบางส่วนที่มีปริมาณเล็กน้อย จึงยังยืนยันระดับ GL ไม่ได้",
+  },
+} as const;
+
+function formatCarbs(value: number, locale: string) {
+  if (value > 0 && value < 0.1) return "<" + new Intl.NumberFormat(locale).format(0.1);
+  return new Intl.NumberFormat(locale, { maximumFractionDigits: 1 }).format(value);
+}
+
+function describeCarbs({ min, max }: GkRange, locale: string) {
+  const lower = formatCarbs(min, locale), upper = formatCarbs(max, locale);
+  return lower === upper ? lower : `${lower}–${upper}`;
+}
+
+export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, onChange }: {
+  recipe: RecipeEntry;
+  evidence?: PortionEvidence;
+  carbs: PortionCarbs | null;
+  multiplier: number;
+  onChange?: (multiplier: number) => void;
+}) {
+  const { locale } = recipe;
+  const t = portionCopy[locale];
+  const format = new Intl.NumberFormat(locale).format;
+  const ingredient = evidence?.driver && recipe.ingredients[evidence.driver.ingredientIndex]?.item;
+  return <div className="recipe-portion">
+    {onChange ? <div className="recipe-portion__control">
+      <label htmlFor="eaten-recipe-portion">{t.title}</label>
+      <select id="eaten-recipe-portion" value={multiplier} onChange={event => onChange(Number(event.currentTarget.value))}>
+        {eatenPortions.map(count => <option key={count} value={count}>{count === 1 ? t.single : t.fraction(format(count))}</option>)}
+      </select>
+    </div> : <p><strong>{t.title}</strong> · {multiplier === 1 ? t.single : t.fraction(format(multiplier))}</p>}
+    <div aria-live="polite">
+      {evidence?.gramsPerServing ? <p>{t.about} {format(evidence.gramsPerServing * multiplier)} {locale === "th" ? "กรัม" : "g"}</p> : null}
+      {evidence?.piecesPerServing ? <p>{t.pieces(format(evidence.piecesPerServing * multiplier))}</p> : null}
+      {carbs ? <dl className="nutrition-list">
+        <div><dt>{t.carbs}</dt><dd data-portion-carbohydrate={carbs.definition}>{t.about} {describeCarbs(scalePortionRange(carbs.range, multiplier), locale)} {locale === "th" ? "กรัม" : "g"}</dd></div>
+      </dl> : <p className="recipe-disclosure">{t.missingCarbs}</p>}
+      {carbs ? <p className="recipe-disclosure">{t[carbs.definition]}</p> : null}
+    </div>
+    {ingredient ? <p>{evidence?.driver?.coversMajority ? t.main(ingredient) : t.known(ingredient)}</p> : null}
+    <p className="recipe-disclosure">{evidence?.condition?.[locale] ?? t.scope}</p>
+  </div>;
+}
+
+export function VerbalPortionEstimate({ evidence, recipe, multiplier }: {
+  evidence: PortionEvidence;
+  recipe: RecipeEntry;
+  multiplier: number;
+}) {
+  const { locale } = recipe;
+  const t = portionCopy[locale];
+  const category = verbalGkForPortion(evidence.verbal, multiplier);
+  if (!category) return <p>{t.baseOnly}</p>;
+  return <>
+    <p><strong>{t.class[category]}</strong></p>
+    {evidence.verbal?.condition ? <p>{evidence.verbal.condition[locale]}</p> : null}
+    <details className="gk-evidence__details">
+      <summary>{ { fi: "Mihin arvio perustuu?", en: "What is the estimate based on?", sv: "Vad bygger uppskattningen på?", th: "ใช้ข้อมูลอะไรในการประมาณค่า" }[locale] }</summary>
+      <p>{evidence.verbal?.rationale[locale]}</p>
+    </details>
+  </>;
+}

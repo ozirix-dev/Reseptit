@@ -1,20 +1,26 @@
-export type GlycemicLoadFilterCategory = 'low' | 'medium' | 'high';
+import { classifyPublicGk, gkEstimate, gkEstimateClass } from "../src/features/recipes/gk-estimate";
+import { classLimitedByOmission, verbalGkForPortion, type PortionEvidence } from "../src/features/recipes/gk-portion";
+
+export type GlycemicLoadFilterCategory = "low" | "medium" | "high";
 interface OriginalEstimate {
   status: string;
   confidence: string | null;
   glycemicLoadPerServing: number | null;
-  glycemicLoadRangePerServing: {min: number; max: number} | null;
+  unroundedGlycemicLoadPerServing?: number | null;
+  glycemicLoadRangePerServing: { min: number; max: number } | null;
+  omittedAvailableCarbohydratePerServingG?: number;
 }
 
-/** Listing categories only: never recalculate or substitute a modified GK-only version. */
-export function originalGlycemicLoadCategory(result: OriginalEstimate): GlycemicLoadFilterCategory | null {
-  const point = result.glycemicLoadPerServing;
-  if (result.status !== 'CALCULATED' || result.confidence === null || point === null) return null;
-  const min = result.glycemicLoadRangePerServing?.min ?? point;
-  const max = result.glycemicLoadRangePerServing?.max ?? point;
-  if (![point, min, max].every(value => Number.isFinite(value) && value >= 0)
-      || min > max) return null;
-  // Rounded points may sit just outside an unrounded scenario range. Both must fit the class.
-  const lower = Math.min(point, min), upper = Math.max(point, max);
-  return upper <= 10 ? 'low' : lower > 10 && upper < 20 ? 'medium' : lower >= 20 ? 'high' : null;
+/** Listing categories use the original recipe at its listed serving size. */
+export function originalGlycemicLoadCategory(result?: OriginalEstimate, evidence?: PortionEvidence): GlycemicLoadFilterCategory | null {
+  if (result?.status !== "CALCULATED" || result.confidence === null) {
+    const verbal = evidence?.verbal;
+    const category = !evidence?.condition && !verbal?.condition ? verbalGkForPortion(verbal, 1) : null;
+    return category ? category.toLowerCase() as GlycemicLoadFilterCategory : null;
+  }
+  const point = result.unroundedGlycemicLoadPerServing ?? result.glycemicLoadPerServing;
+  if (point === null || !Number.isFinite(point) || point < 0 || evidence?.classLimitation) return null;
+  const category = gkEstimateClass(gkEstimate(point, result.glycemicLoadRangePerServing));
+  if (!category || category !== classifyPublicGk(point) || classLimitedByOmission(category, result.omittedAvailableCarbohydratePerServingG)) return null;
+  return category.toLowerCase() as GlycemicLoadFilterCategory;
 }

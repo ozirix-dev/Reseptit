@@ -15,7 +15,7 @@ import { GkCoverageSummary, coverageCopy } from '../src/features/glycemic-load/G
 import { gkCopy } from '../src/features/glycemic-load/glycemic-load-copy';
 import { RecipePage } from '../src/features/recipes/RecipePage';
 import { gkOnlyVariants } from '../src/generated/gk-only-variants.generated';
-import { glycemicLoadPilotResults } from '../src/generated/glycemic-load-pilot.generated';
+import { glycemicLoadAdditionalResults, glycemicLoadPilotResults } from '../src/generated/glycemic-load-pilot.generated';
 import { siteContent } from '../src/generated/content.generated';
 import { glycemicLoadFilterCategories } from '../src/generated/glycemic-load-filters.generated';
 import { filterRecipes, emptyRecipeFilters } from '../src/features/recipes/recipe-search';
@@ -83,7 +83,7 @@ test('study scope correction is pinned, immutable, and cannot be reused by a cha
 
 test('coverage copy shows original target and independent variant/study counts in every language', () => {
   for(const locale of locales){
-    const html=renderToStaticMarkup(createElement(GkCoverageSummary,{coverage:counts,locale}));
+    const html=renderToStaticMarkup(createElement(GkCoverageSummary,{coverage:counts,portionCoverage:{ originalNumeric: counts.originalNumeric, total: counts.total, originalVerbal: 0, wholePortionCarbs: 0, carbOnly: 0, foodNoteOnly: 0, limited: counts.total - counts.originalNumeric, pending: 0, useful: counts.originalNumeric },locale}));
     assert.ok(html.includes(coverageCopy[locale].title));
     assert.ok(html.includes(counts.originalNumeric + '/' + counts.total));
     assert.ok(html.includes('data-gk-coverage="VARIANT_COVERAGE"><strong>' + counts.variantNumeric + '</strong>'));
@@ -130,6 +130,7 @@ test('variant amounts and preparation are openly compared with the original; stu
 });
 
 test('directory GK filters exclude missing original estimates, variants and studies while ordinary recipes remain searchable in all languages', () => {
+  const supplementIds = glycemicLoadAdditionalResults.map(result => result.recipeId);
   for(const locale of locales){
     const recipes=siteContent.recipes.filter(r=>r.locale===locale);
     const unfiltered=filterRecipes(recipes,emptyRecipeFilters,locale,glycemicLoadFilterCategories);
@@ -139,7 +140,7 @@ test('directory GK filters exclude missing original estimates, variants and stud
     }
     for(const gl of ['low','medium','high'] as const){
       const filtered=filterRecipes(recipes,{...emptyRecipeFilters,gl},locale,glycemicLoadFilterCategories);
-      assert.ok(filtered.every(r=>counts.originalRecipeIds.includes(r.recipeId)));
+      assert.ok(filtered.every(r => counts.originalRecipeIds.includes(r.recipeId) || supplementIds.includes(r.recipeId)));
     }
   }
 });

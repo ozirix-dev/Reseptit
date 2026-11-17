@@ -7,7 +7,6 @@ import { recipeFacets } from "../src/content/recipe-facets";
 import { isRecipavoHeroPreviewEnabled, recipavoHeroCopy } from "../src/features/recipes/recipavo-hero";
 import { homepageLabels, homepagePickLimit, homepagePicks, homepageTopics } from "../src/features/recipes/home-preview";
 import { glycemicLoadFilterCategories } from "../src/generated/glycemic-load-filters.generated";
-import { glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
 
 const finnishRecipes = siteContent.recipes.filter((recipe) => recipe.locale === "fi");
 
@@ -167,19 +166,12 @@ test("GK filter excludes missing values and combines with category and time", ()
   assert.deepEqual(filterRecipes(sample, { ...emptyRecipeFilters, gl: "low", maxTime: 30 }, "fi", categories).every(recipe => recipe.timeTotalMin !== null && recipe.timeTotalMin <= 30), true);
 });
 
-test("GK index never exposes incomplete estimates or boundary-spanning ranges", () => {
+test("GK index only exposes supported original categories", () => {
   assert.ok(Object.keys(glycemicLoadFilterCategories).length > 0);
-  for (const result of glycemicLoadPilotResults) {
-    const category = glycemicLoadFilterCategories[result.recipeId];
-    if (result.status !== "CALCULATED" || result.confidence === null || result.glycemicLoadPerServing === null) {
-      assert.equal(category, undefined, result.recipeId);
-      continue;
-    }
-    const min = Math.min(result.glycemicLoadPerServing, result.glycemicLoadRangePerServing?.min ?? result.glycemicLoadPerServing);
-    const max = Math.max(result.glycemicLoadPerServing, result.glycemicLoadRangePerServing?.max ?? result.glycemicLoadPerServing);
-    const expected = max <= 10 ? "low" : min > 10 && max < 20 ? "medium" : min >= 20 ? "high" : undefined;
-    assert.equal(category, expected, result.recipeId);
-  }
+  assert.equal(glycemicLoadFilterCategories["vhh-kaalikaarryleet"], undefined, "keeps the published estimate, but its modeled class is unstable");
+  assert.equal(glycemicLoadFilterCategories["taytetyt-kananmunat-yrteilla"], "low", "reviewed verbal class participates at one serving");
+  assert.equal(glycemicLoadFilterCategories["tonnikalatayte-kurkkukupeissa"], undefined, "carbohydrate information alone does not establish a GK class");
+  assert.equal(glycemicLoadFilterCategories["kebab-munakasrulla"], undefined, "withheld sources never enter the filter");
   const calculated = finnishRecipes.find(recipe => glycemicLoadFilterCategories[recipe.recipeId]);
   assert.ok(calculated);
   for (const locale of ["fi", "en", "sv", "th"] as const) {

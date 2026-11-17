@@ -3,13 +3,15 @@ import { writeFile } from "node:fs/promises";
 import path from "node:path";
 import { siteContent } from "../src/generated/content.generated";
 import { gkOnlyVariants, gkVersionCoverage } from "../src/generated/gk-only-variants.generated";
-import { glycemicLoadPilotResults, glycemicLoadPilotReviewedRecipeCount } from "../src/generated/glycemic-load-pilot.generated";
+import { glycemicLoadAdditionalResults, glycemicLoadPendingRecipeIds, glycemicLoadPilotResults, glycemicLoadPilotReviewedRecipeCount, glycemicLoadPortions } from "../src/generated/glycemic-load-pilot.generated";
 import { glycemicLoadFilterCategories } from "../src/generated/glycemic-load-filters.generated";
 import { contentForRoute, localeIndexes, recipeLibraryRoutes, summarizeRecipe, type RecipeCatalog, type RouteContent } from "../src/content/route-data";
 import { siteTarget } from "../src/content/site-target";
 import { articles, articlePath, blogRoot } from "../src/features/blog/blog-data";
 import { privacyPaths } from "../src/features/privacy/privacy-copy";
 import { homepageTopics } from "../src/features/recipes/home-preview";
+import { countGkPortionCoverage, originalPortionCarbs } from "../src/features/recipes/gk-portion";
+import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 import { glycemicLoadPath } from "../src/features/recipes/recipe-i18n";
 import { recipeSearchEntry, supportedRecipeDiets } from "../src/features/recipes/recipe-search";
 import type { RecipeLocale } from "../src/types/content";
@@ -56,12 +58,25 @@ for (const locale of locales) {
   });
 }
 
-const resultsByRecipe = new Map(glycemicLoadPilotResults.map(result => [result.recipeId, result]));
+const results = [...glycemicLoadPilotResults, ...glycemicLoadAdditionalResults];
+const resultsByRecipe = new Map(results.map(result => [result.recipeId, result]));
+const pending = new Set(glycemicLoadPendingRecipeIds);
+const portionCoverage = countGkPortionCoverage(recipes.filter(recipe => recipe.locale === "fi").map(recipe => {
+  const evidence = glycemicLoadPortions[recipe.recipeId];
+  const withheld = withholdF25Nutrition(recipe.recipeId, recipe.locale);
+  return {
+    numeric: !withheld && resultsByRecipe.get(recipe.recipeId)?.status === "CALCULATED",
+    carbs: withheld ? null : originalPortionCarbs(recipe.nutrition, evidence),
+    evidence: withheld && evidence ? { driver: evidence.driver } : evidence,
+    pending: pending.has(recipe.recipeId),
+  };
+}));
 const overview: RouteContent["glycemicOverview"] = {
-  results: glycemicLoadPilotResults,
+  results,
   variants: gkOnlyVariants,
   coverage: gkVersionCoverage,
   reviewedCount: glycemicLoadPilotReviewedRecipeCount,
+  portionCoverage,
 };
 const manifest: Record<string, string> = {};
 for (const route of routes) {
@@ -72,6 +87,8 @@ for (const route of routes) {
     const id = data.recipe.recipeId;
     data.glycemicRecipe = {
       result: resultsByRecipe.get(id) ?? null,
+      portionEvidence: glycemicLoadPortions[id],
+      pending: pending.has(id),
       variants: gkOnlyVariants.filter(variant => variant.recipeId === id),
     };
   }

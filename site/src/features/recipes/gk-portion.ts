@@ -1,0 +1,94 @@
+import type { RecipeEntry, RecipeLocale } from "../../types/content";
+import { classifyPublicGk, gkEstimate, gkEstimateClass, type GkRange } from "./gk-estimate";
+import type { GlycemicLoadDisplayCandidate } from "./glycemic-load-display";
+
+export type GkClass = ReturnType<typeof classifyPublicGk>;
+export type LocalizedText = Record<RecipeLocale, string>;
+
+/** Reviewed language refers to the original listed serving, never a separate version. */
+export interface VerbalGk {
+  category: GkClass;
+  portions: number[];
+  rationale: LocalizedText;
+  condition?: LocalizedText;
+}
+
+export interface PortionEvidence {
+  availableCarbs?: GkRange;
+  driver?: { ingredientIndex: number; coversMajority: boolean };
+  verbal?: VerbalGk;
+  condition?: LocalizedText;
+  classLimitation?: LocalizedText;
+  piecesPerServing?: number;
+  gramsPerServing?: number;
+}
+
+export type PortionCarbs = { range: GkRange; definition: "available" | "total" | "net" };
+
+export function originalPortionCarbs(nutrition: RecipeEntry["nutrition"], evidence?: PortionEvidence): PortionCarbs | null {
+  if (evidence?.availableCarbs) return { range: evidence.availableCarbs, definition: "available" };
+  for (const [value, definition] of [[nutrition.carbsTotalG, "total"], [nutrition.carbsNetG, "net"]] as const) {
+    if (value !== null && Number.isFinite(value) && value >= 0) return { range: { min: value, max: value }, definition };
+  }
+  return null;
+}
+
+export const eatenPortions = [0.5, 1, 1.5, 2] as const;
+
+export function scalePortionRange(range: GkRange, multiplier: number): GkRange {
+  return { min: range.min * multiplier, max: range.max * multiplier };
+}
+
+export function verbalGkForPortion(verbal: VerbalGk | undefined, multiplier: number): GkClass | null {
+  return verbal?.portions.includes(multiplier) ? verbal.category : null;
+}
+
+export function classLimitedByOmission(category: GkClass | "CROSSES_BOUNDARY" | null, omitted = 0): boolean {
+  // An omission does not erase the calculation. Without independent bounds for its
+  // glycemic contribution, a low or medium modeled class is not a stable filter.
+  return omitted > 0 && (category === "LOW" || category === "MEDIUM");
+}
+
+export function originalPortionGk(result: GlycemicLoadDisplayCandidate, multiplier = 1) {
+  const point = (result.unroundedGlycemicLoadPerServing ?? result.glycemicLoadPerServing);
+  const range = result.glycemicLoadRangePerServing;
+  const estimate = gkEstimate(point === null ? null : point * multiplier, range && scalePortionRange(range, multiplier));
+  const category = gkEstimateClass(estimate);
+  const omissionLimitsClass = classLimitedByOmission(category, result.omittedAvailableCarbohydratePerServingG);
+  return { estimate, category, omissionLimitsClass };
+}
+
+export interface GkPortionCoverage {
+  originalNumeric: number;
+  originalVerbal: number;
+  wholePortionCarbs: number;
+  carbOnly: number;
+  foodNoteOnly: number;
+  limited: number;
+  pending: number;
+  useful: number;
+  total: number;
+}
+
+export function countGkPortionCoverage(rows: {
+  numeric: boolean;
+  carbs: PortionCarbs | null;
+  evidence?: PortionEvidence;
+  pending: boolean;
+}[]): GkPortionCoverage {
+  const counts: GkPortionCoverage = {
+    originalNumeric: 0, originalVerbal: 0, wholePortionCarbs: 0,
+    carbOnly: 0, foodNoteOnly: 0, limited: 0, pending: 0, useful: 0, total: rows.length,
+  };
+  for (const row of rows) {
+    if (row.carbs) counts.wholePortionCarbs++;
+    if (row.pending) counts.pending++;
+    if (row.numeric) counts.originalNumeric++;
+    else if (verbalGkForPortion(row.evidence?.verbal, 1)) counts.originalVerbal++;
+    else if (row.carbs) counts.carbOnly++;
+    else if (row.evidence?.driver) counts.foodNoteOnly++;
+    else counts.limited++;
+  }
+  counts.useful = counts.total - counts.limited;
+  return counts;
+}
