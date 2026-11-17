@@ -14,6 +14,7 @@ export interface VerbalGk {
 }
 
 export interface PortionEvidence {
+  reviewedSource?: string;
   availableCarbs?: GkRange;
   driver?: { ingredientIndex: number; coversMajority: boolean };
   verbal?: VerbalGk;
@@ -49,13 +50,21 @@ export function classLimitedByOmission(category: GkClass | "CROSSES_BOUNDARY" | 
   return omitted > 0 && (category === "LOW" || category === "MEDIUM");
 }
 
-export function originalPortionGk(result: GlycemicLoadDisplayCandidate, multiplier = 1) {
+type PortionGkValues = Pick<GlycemicLoadDisplayCandidate,
+  "unroundedGlycemicLoadPerServing" | "glycemicLoadPerServing" | "glycemicLoadRangePerServing" | "omittedAvailableCarbohydratePerServingG">;
+
+export function originalPortionGk(result: PortionGkValues, multiplier = 1) {
   const point = (result.unroundedGlycemicLoadPerServing ?? result.glycemicLoadPerServing);
   const range = result.glycemicLoadRangePerServing;
   const estimate = gkEstimate(point === null ? null : point * multiplier, range && scalePortionRange(range, multiplier));
-  const category = gkEstimateClass(estimate);
+  const numericCategory = gkEstimateClass(estimate);
+  const pointCategory = point !== null && Number.isFinite(point) && point >= 0
+    ? classifyPublicGk(point * multiplier) : null;
+  const inconsistent = estimate.type === "ESTIMATED_RANGE" && numericCategory !== "CROSSES_BOUNDARY"
+    && numericCategory !== pointCategory;
+  const category = inconsistent ? null : numericCategory;
   const omissionLimitsClass = classLimitedByOmission(category, result.omittedAvailableCarbohydratePerServingG);
-  return { estimate, category, omissionLimitsClass };
+  return { estimate, category, inconsistent, omissionLimitsClass };
 }
 
 export interface GkPortionCoverage {

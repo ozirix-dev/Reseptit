@@ -170,7 +170,9 @@ test("GK index only exposes supported original categories", () => {
   assert.ok(Object.keys(glycemicLoadFilterCategories).length > 0);
   assert.equal(glycemicLoadFilterCategories["vhh-kaalikaarryleet"], undefined, "keeps the published estimate, but its modeled class is unstable");
   assert.equal(glycemicLoadFilterCategories["taytetyt-kananmunat-yrteilla"], "low", "reviewed verbal class participates at one serving");
-  assert.equal(glycemicLoadFilterCategories["tonnikalatayte-kurkkukupeissa"], undefined, "carbohydrate information alone does not establish a GK class");
+  assert.equal(glycemicLoadFilterCategories["tonnikalatayte-kurkkukupeissa"], "low", "the measured recipe serving has a reviewed verbal class");
+  assert.equal(glycemicLoadFilterCategories["herne-auringonkukkalevite"], undefined, "a bread-excluded estimate does not categorize the serving suggestion");
+  assert.equal(glycemicLoadFilterCategories["linssimakaronilaatikko"], undefined, "a known carbohydrate ingredient does not establish a GK class");
   assert.equal(glycemicLoadFilterCategories["kebab-munakasrulla"], undefined, "withheld sources never enter the filter");
   const calculated = finnishRecipes.find(recipe => glycemicLoadFilterCategories[recipe.recipeId]);
   assert.ok(calculated);

@@ -1,4 +1,4 @@
-import type { RecipeEntry } from "../../types/content";
+import type { RecipeEntry, RecipeLocale } from "../../types/content";
 import { eatenPortions, scalePortionRange, verbalGkForPortion, type PortionCarbs, type PortionEvidence } from "./gk-portion";
 import type { GkRange } from "./gk-estimate";
 
@@ -11,6 +11,9 @@ export const portionCopy = {
     main: (name: string) => `Suurin osa imeytyvistä hiilihydraateista tulee aineksesta: ${name}.`,
     known: (name: string) => `Tunnettu hiilihydraatin lähde: ${name}.`, about: "noin",
     missingCarbs: "Koko annoksen hiilihydraattimäärää ei ole voitu vahvistaa.",
+    scopeSource: "Katso arvion tai ruokakohtaisen huomion lähde",
+    batchShare: (n: string) => n === "1" ? "Yksi annos vastaa koko valmistettavaa erää." : `Yksi annos on 1/${n} valmistettavasta erästä.`,
+    inconsistent: "Pistearvio ja skenaarioväli eivät anna samaa GK-luokkaa.",
     pending: "Tämän reseptin GI-lähteet odottavat katselmointia.",
     baseOnly: "Sanallinen GK-arvio koskee reseptin tavallista annosta.",
     class: { LOW: "Pieni arvioitu GK", MEDIUM: "Keskisuuri arvioitu GK", HIGH: "Suuri arvioitu GK" },
@@ -25,6 +28,9 @@ export const portionCopy = {
     main: (name: string) => `Most of the available carbohydrate comes from this ingredient: ${name}.`,
     known: (name: string) => `A known source of carbohydrate: ${name}.`, about: "about",
     missingCarbs: "The carbohydrate content of the full portion could not be confirmed.",
+    scopeSource: "See the source for this estimate or ingredient note",
+    batchShare: (n: string) => n === "1" ? "One serving is the whole batch." : `One serving is 1/${n} of the batch you make.`,
+    inconsistent: "The point estimate and the scenario range give different GL categories.",
     pending: "The GI sources for this recipe are awaiting review.",
     baseOnly: "The verbal GL estimate applies to the recipe's standard serving.",
     class: { LOW: "Estimated low GL", MEDIUM: "Estimated medium GL", HIGH: "Estimated high GL" },
@@ -39,6 +45,9 @@ export const portionCopy = {
     main: (name: string) => `Det mesta av de tillgängliga kolhydraterna kommer från den här ingrediensen: ${name}.`,
     known: (name: string) => `En känd kolhydratkälla: ${name}.`, about: "cirka",
     missingCarbs: "Kolhydratmängden i hela portionen har inte kunnat bekräftas.",
+    scopeSource: "Se källan till uppskattningen eller råvaruuppgiften",
+    batchShare: (n: string) => n === "1" ? "En portion motsvarar hela satsen." : `En portion är 1/${n} av satsen du lagar.`,
+    inconsistent: "Punktuppskattningen och intervallet ger olika GL-kategorier.",
     pending: "GI-källorna för receptet väntar på granskning.",
     baseOnly: "Den beskrivande GL-uppskattningen gäller receptets ordinarie portion.",
     class: { LOW: "Uppskattad låg GL", MEDIUM: "Uppskattad medelhög GL", HIGH: "Uppskattad hög GL" },
@@ -53,6 +62,9 @@ export const portionCopy = {
     main: (name: string) => `วัตถุดิบที่ให้คาร์โบไฮเดรตที่ใช้ได้มากกว่าครึ่งคือ ${name}`,
     known: (name: string) => `แหล่งคาร์โบไฮเดรตที่ทราบคือ ${name}`, about: "ประมาณ",
     missingCarbs: "ยังยืนยันปริมาณคาร์โบไฮเดรตของอาหารทั้งส่วนไม่ได้",
+    scopeSource: "ดูแหล่งข้อมูลของค่าประมาณหรือข้อสังเกตเรื่องวัตถุดิบ",
+    batchShare: (n: string) => n === "1" ? "อาหารหนึ่งที่เท่ากับทั้งหมดที่ทำ" : `อาหารหนึ่งที่เท่ากับ 1/${n} ของทั้งหมดที่ทำ`,
+    inconsistent: "ค่าประมาณแบบตัวเลขเดียวกับช่วงค่าจากตัวเลือกให้ระดับ GL ต่างกัน",
     pending: "แหล่งข้อมูล GI ของสูตรนี้ยังรอการตรวจสอบ",
     baseOnly: "คำอธิบายระดับ GL ใช้กับอาหารหนึ่งที่ตามสูตรเท่านั้น",
     class: { LOW: "ค่า GL โดยประมาณอยู่ในระดับต่ำ", MEDIUM: "ค่า GL โดยประมาณอยู่ในระดับปานกลาง", HIGH: "ค่า GL โดยประมาณอยู่ในระดับสูง" },
@@ -66,16 +78,21 @@ function formatCarbs(value: number, locale: string) {
   return new Intl.NumberFormat(locale, { maximumFractionDigits: 1 }).format(value);
 }
 
-function describeCarbs({ min, max }: GkRange, locale: string) {
+export function describeCarbs({ min, max }: GkRange, locale: string) {
   const lower = formatCarbs(min, locale), upper = formatCarbs(max, locale);
   return lower === upper ? lower : `${lower}–${upper}`;
 }
 
-export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, onChange }: {
+export function ReviewedPortionSource({ source, locale }: { source: string; locale: RecipeLocale }) {
+  return <a href={source} rel="noopener noreferrer">{portionCopy[locale].scopeSource}</a>;
+}
+
+export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batchServings, onChange }: {
   recipe: RecipeEntry;
   evidence?: PortionEvidence;
   carbs: PortionCarbs | null;
   multiplier: number;
+  batchServings: number;
   onChange?: (multiplier: number) => void;
 }) {
   const { locale } = recipe;
@@ -90,6 +107,7 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, onCh
       </select>
     </div> : <p><strong>{t.title}</strong> · {multiplier === 1 ? t.single : t.fraction(format(multiplier))}</p>}
     <div aria-live="polite">
+      {!evidence?.gramsPerServing && !evidence?.piecesPerServing ? <p>{t.batchShare(format(batchServings))}</p> : null}
       {evidence?.gramsPerServing ? <p>{t.about} {format(evidence.gramsPerServing * multiplier)} {locale === "th" ? "กรัม" : "g"}</p> : null}
       {evidence?.piecesPerServing ? <p>{t.pieces(format(evidence.piecesPerServing * multiplier))}</p> : null}
       {carbs ? <dl className="nutrition-list">
@@ -99,6 +117,9 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, onCh
     </div>
     {ingredient ? <p>{evidence?.driver?.coversMajority ? t.main(ingredient) : t.known(ingredient)}</p> : null}
     <p className="recipe-disclosure">{evidence?.condition?.[locale] ?? t.scope}</p>
+    {evidence?.reviewedSource && !evidence.verbal ? <p className="recipe-disclosure">
+      <ReviewedPortionSource source={evidence.reviewedSource} locale={locale} />
+    </p> : null}
   </div>;
 }
 
@@ -117,6 +138,7 @@ export function VerbalPortionEstimate({ evidence, recipe, multiplier }: {
     <details className="gk-evidence__details">
       <summary>{ { fi: "Mihin arvio perustuu?", en: "What is the estimate based on?", sv: "Vad bygger uppskattningen på?", th: "ใช้ข้อมูลอะไรในการประมาณค่า" }[locale] }</summary>
       <p>{evidence.verbal?.rationale[locale]}</p>
+      {evidence.reviewedSource ? <ReviewedPortionSource source={evidence.reviewedSource} locale={locale} /> : null}
     </details>
   </>;
 }

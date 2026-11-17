@@ -20,7 +20,8 @@ Lähteet: [ADA Standards of Care 2026](https://diabetesjournals.org/care/article
 Lähtökohta on alkuperäisen reseptin yksi annos. Aineslistan annosmäärä
 skaalaa valmistettavan erän, jolloin annosarvio pysyy samana. Syötävän
 annoksen valinta skaalaa tämän annoksen lukuarvoja ja lähteistettyä
-kappalemäärää. Sanallinen arvio näkyy vain sille katselmoiduilla annoskoilla.
+kappalemäärää. Jos painoa tai kappalemäärää ei ole varmennettu, näkymä
+kertoo yhden annoksen osuuden valitusta valmistettavasta erästä. Sanallinen arvio näkyy vain sille katselmoiduilla annoskoilla.
 Erillisversion hiilihydraatteja ja tutkimusannoksen tuloksia ei yhdistetä
 alkuperäiseen annokseen.
 
@@ -37,13 +38,16 @@ alkuperäiseen annokseen.
 
 Rakenteinen, katselmoitu näyttö tallennetaan tiedostoon
 [gk-reviewed-portions.json](gk-reviewed-portions.json). Se sitoo väitteen
-rakenteiseen annos-, ainesosa- ja valmistustietoon, lähteeseen ja soveltuvissa
-tapauksissa ravintolaskelman tarkisteeseen. Muuttunut sidos pysäyttää
-ehdotetun arvion ennen buildia. Otsikon tai ingressin toimituksellinen
-muutos ei muuta rakenteista sidosta. Jos olennainen valmistus tai lisuke
-muuttuu proosassa, ylläpitäjän on päivitettävä myös rakenteinen
-valmistustieto ja katselmoitava arvio. Vanhat GK-sidokset,
-aineistot ja hyväksynnät pidetään toistettavina.
+rakenteiseen annos- ja ainesosatietoon, lähteeseen ja soveltuvissa
+tapauksissa ravintolaskelman tarkisteeseen. Sanallisen arvion, nimetyn
+annoskoon ja soveltamisrajauksen sidokseen kuuluvat myös ainesosahuomiot
+sekä valmistus- ja tarjoiluohjeet. Välilyönnit normalisoidaan. Valmistuksen
+tai tarjoilun sisällön muutos pysäyttää ehdotetun arvion ennen buildia.
+Otsikon tai ingressin toimituksellinen muutos ei muuta sidosta. Vanhan
+laskennan pohjalta nimetyn ainesosan on vastattava myös ajantasaista
+reseptiä. Pakkaustietoon tukeutuva ainesosanäyttö sitoo nimen, määrän,
+yksikön ja viivakoodin reseptiin. Se kertoo yksittäisestä ainesosasta.
+Vanhat GK-sidokset, aineistot ja hyväksynnät pidetään toistettavina.
 
 ## Hiilihydraattitiedon merkitys
 
@@ -53,6 +57,11 @@ Vanhoissa resepteissä käytetään olemassa olevaa koko annoksen ilmoitettua
 ravintolukua ja sen omaa nimeä. Recipavon kokonaishiilihydraatti sisältää
 kuidun ja polyolit. Reseptin ilmoittama nettoarvo säilyttää oman nimensä.
 Sivun kieli ei muuta kenttien ravintoarvoperustaa.
+
+Kaikki hiilihydraattityypit näytetään samalla periaatteella reseptisivulla
+ja oppaan hakutuloksissa. Annoskohtainen lähdelinkki kertoo sanallisen
+arvion tai nimetyn aineksen perustasta. Ainesosan ravintoarvolähde ei ole
+valmiin annoksen GK-mittaus.
 
 Finelin CHOAVL ja AFCD:n hiilihydraatti ilman sokerialkoholeja ovat valmiiksi
 normalisoituja. EU:n polyolit sisältävästä luvusta voidaan vähentää lähteistetty
@@ -67,7 +76,8 @@ polyolien mahdollinen glykeeminen vaikutus ovat eri kysymyksiä.
 Julkiset luokat käyttävät pyöristämätöntä lukua silloin kun se on tiedossa:
 pieni on enintään 10, keskisuuri on yli 10 mutta alle 20, suuri on vähintään
 20. Esitystarkkuuden osuminen toiselle puolelle rajaa näytetään rajatapauksena.
-Jos väli ylittää sallitun luokan rajan, luokkasuodatin ei valitse arviota.
+Jos väli ylittää luokan rajan tai piste ja väli tukevat eri luokkia,
+reseptinäkymä ja opas kertovat rajauksesta. Luokkasuodatin ei valitse arviota.
 Sanallinen luokka voi osallistua, kun se koskee listauksen vakioannosta.
 Hakutulokset säilyttävät nykyisen järjestyksensä, ja oppaan haku käyttää
 osuvuutta ja nimeä. Kumpikaan ei käytä puuttuvaa lukua nollana.

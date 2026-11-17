@@ -4,10 +4,9 @@ import { ChocolateComparison } from './ChocolateComparisonFi';
 import {GkOnlyVariantPanel,gkScopeUi} from './GkOnlyVariantPanel';
 import {scopedPolyolDisclosure} from './scoped-polyol-disclosure';
 import {recoveryDisclosure} from './recovery-disclosure';
-import { classifyPublicGk } from "./gk-estimate";
 import { originalPortionCarbs, originalPortionGk } from "./gk-portion";
 import { portionCopy, RecipePortionSummary, VerbalPortionEstimate } from "./RecipePortionSummary";
-import {formatGlycemicLoadNumber} from "./gk80-format";
+import { formatOriginalPortionGk } from "./gk80-format";
 import { recipeHeroAvifMedia, recipeHeroSizes } from "./image-layout";
 import type { RecipeImage } from "@/types/content";
 import { useEffect, useState } from "react";
@@ -78,7 +77,6 @@ export function RecipePage() {
   const glApprox = { fi: "noin ", en: "about ", sv: "cirka ", th: "ประมาณ " }[recipe.locale];
   const glUnit = { fi: "/ annos", en: "/ serving", sv: "/ portion", th: "/ หนึ่งที่" }[recipe.locale];
   const glycemicLoad = withholdNutrition || !gkResult ? null : publishedGlycemicLoadForRecipe(recipe.recipeId, [gkResult]);
-  const glFormat=(value:number)=>formatGlycemicLoadNumber(value,numberLocale,!!glycemicLoad?.assessmentType);
   const modeledGlLabel = { fi: "Mallinnettu GK-arvio", en: "Modeled GL estimate", sv: "Modellerad GL-uppskattning", th: "ค่าประมาณ GL จากแบบจำลอง" }[recipe.locale];
   const modelledNote = glycemicLoad && glycemicLoad.omittedAvailableCarbohydratePerServingG > 0
     ? {
@@ -92,22 +90,20 @@ export function RecipePage() {
   const portionWords = portionCopy[locale];
   const portionCarbs = withholdNutrition ? null : originalPortionCarbs(recipe.nutrition, portionEvidence);
   const scaled = glycemicLoad ? originalPortionGk(glycemicLoad, eatenPortion) : null;
-  const estimate = scaled?.estimate;
-  const glValue = estimate?.type === "ESTIMATED_RANGE"
-    ? `${glApprox}${glFormat(estimate.range.min)}–${glFormat(estimate.range.max)}`
-    : estimate?.type === "EXACT_MODEL" ? `${glApprox}${glFormat(estimate.value)}` : "";
-  const boundaryValues = estimate?.type === "ESTIMATED_RANGE" ? [estimate.range.min, estimate.range.max]
-    : estimate?.type === "EXACT_MODEL" ? [estimate.value] : [];
-  const roundingHitsBoundary = boundaryValues.some(value => {
-    const displayed = glycemicLoad?.assessmentType ? Math.round(value) : Number(value.toPrecision(1));
-    return classifyPublicGk(displayed) !== classifyPublicGk(value);
-  });
+  const display = scaled ? formatOriginalPortionGk(scaled.estimate, numberLocale, !!glycemicLoad?.assessmentType) : null;
+  const glValue = display?.value ? `${glApprox}${display.value}` : "";
   const category = scaled?.category;
   const classText = portionEvidence?.classLimitation?.[locale] ?? (
-    scaled?.omissionLimitsClass ? portionWords.omitted
+    scaled?.inconsistent ? portionWords.inconsistent
+      : scaled?.omissionLimitsClass ? portionWords.omitted
       : category === "CROSSES_BOUNDARY" ? portionWords.crossing
         : category ? portionWords.class[category] : null
   );
+  // Preserve the sealed recipe's source text. Qualify its legacy note in the
+  // public view only when this recipe carries an independently reviewed verbal estimate.
+  const notesHtml = portionEvidence?.verbal && locale === "fi"
+    ? recipe.notesHtml.replace("<strong>GK: ei määritetty.</strong>", "<strong>Numeerista GK-arvoa ei ole määritetty.</strong>")
+    : recipe.notesHtml;
   return <article className="page-section recipe-page"><div className="container container--narrow">
     <nav className="article-breadcrumbs" aria-label={labels.breadcrumb}><Link to={recipe.locale === "fi" ? "/" : `/${recipe.locale === "sv" ? "sv/recept" : `${recipe.locale}/recipes`}/`}>{labels.indexTitle}</Link><span aria-hidden="true">/</span><span>{recipe.title}</span></nav>
     <header className="recipe-header"><p className="eyebrow">{[recipe.category, ...(recipe.additionalCategories ?? [])].map(category => labels.category[category]).join(" · ")}</p><h1>{recipe.title}</h1><p className="article-excerpt">{recipe.description}</p>
@@ -119,7 +115,7 @@ export function RecipePage() {
     {recipe.image ? <RecipeHeroImage key={recipe.image.src} image={recipe.image} /> : null}
     <p className="print-servings">{tools.servings}: {servings}</p>
     <div className="recipe-layout">
-      <section className="recipe-panel" aria-labelledby="recipe-ingredients-title"><div className="recipe-panel__heading"><h2 id="recipe-ingredients-title">{labels.ingredients}</h2><div className="serving-control"><span>{portionWords.batch}</span>{hydrated ? <button type="button" aria-label={labels.decrease} disabled={servings <= 1} onClick={() => { track("Adjust Servings"); setServings((value) => nextServingCount(value, -1)); }}>−</button> : null}<output aria-live="polite">{servings}</output>{hydrated ? <button type="button" aria-label={labels.increase} onClick={() => { track("Adjust Servings"); setServings((value) => nextServingCount(value, 1)); }}>+</button> : null}</div></div>
+      <section className="recipe-panel" aria-labelledby="recipe-ingredients-title"><div className="recipe-panel__heading"><h2 id="recipe-ingredients-title">{labels.ingredients}</h2><div className="serving-control" role="group" aria-labelledby="recipe-batch-label"><span id="recipe-batch-label">{portionWords.batch}</span>{hydrated ? <button type="button" aria-label={labels.decrease} disabled={servings <= 1} onClick={() => { track("Adjust Servings"); setServings((value) => nextServingCount(value, -1)); }}>−</button> : null}<output aria-live="polite">{servings}</output>{hydrated ? <button type="button" aria-label={labels.increase} onClick={() => { track("Adjust Servings"); setServings((value) => nextServingCount(value, 1)); }}>+</button> : null}</div></div>
         <ul className="ingredient-list">{ingredients.map((ingredient, index) =>
           <li key={`${ingredient.item}-${index}`}>{formatRecipeIngredient(ingredient, servings, recipe.servings, locale)}</li>)}</ul>
         {ingredients.some(ingredient => hasFractionalEgg(ingredient, servings, recipe.servings))
@@ -138,14 +134,14 @@ export function RecipePage() {
       </section>
       <section className="recipe-panel" data-nutrition-scope="ORIGINAL_RECIPE"><h2>{hasGkVariant?gkScopeUi[locale].originalNutrition:labels.nutrition}</h2>{hasGkVariant?<p className="recipe-disclosure" data-macro-separation="gk-only"><strong>{gkScopeUi[locale].macroNotice}</strong></p>:null}
         <RecipePortionSummary recipe={recipe} evidence={portionEvidence} carbs={portionCarbs}
-          multiplier={eatenPortion} onChange={hydrated && (portionCarbs || glycemicLoad || portionEvidence?.verbal) ? setEatenPortion : undefined} />
+          multiplier={eatenPortion} batchServings={servings} onChange={hydrated && (portionCarbs || glycemicLoad || portionEvidence?.verbal) ? setEatenPortion : undefined} />
         {withholdNutrition ? <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status={undefinedGkLabel ? "NOT_DEFINED" : "WITHHELD_SOURCE_REVIEW"}><p className="recipe-disclosure">{undefinedGkLabel ? <><strong>{undefinedGkLabel}</strong>. Tähän valmistusversioon ei ole riittävästi luotettavaa GI-lähdetietoa GK:n laskentaan.</> : "GK-arviota ei näytetä ennen tämän reseptin raaka-aine- ja ravintoarvoperustan uudelleentarkistusta."}</p></div> : glycemicLoad ? <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status="CALCULATED">
           <dl className="nutrition-list"><div>
             <dt>{glycemicLoad.assessmentType ? modeledGlLabel : labels.glycemicLoad}</dt>
             <dd aria-live="polite" data-portion-gk>{glValue}{eatenPortion === 1 ? ` ${glUnit}` : ""}</dd>
           </div></dl>
           {classText ? <p className="recipe-glycemic-load__class">{classText}</p> : null}
-          {roundingHitsBoundary && !scaled?.omissionLimitsClass ? <p className="recipe-disclosure">{portionWords.rounding}</p> : null}
+          {display?.roundingHitsBoundary && !scaled?.inconsistent && !scaled?.omissionLimitsClass ? <p className="recipe-disclosure">{portionWords.rounding}</p> : null}
           <p className="recipe-glycemic-load__caption">
             <Link to={`${glycemicLoadPath(locale)}#${recipe.recipeId}`} aria-label={`${gkCopy[locale].see} · ${recipe.title}`}>
               {gkCopy[locale].see} ↗
@@ -176,7 +172,7 @@ export function RecipePage() {
       {gkVariants.map(variant => <GkOnlyVariantPanel key={variant.versionId}
         variant={variant} locale={recipe.locale} servings={servings} originalHasGk={Boolean(glycemicLoad || portionEvidence?.verbal)} originalRecipe={recipe} />)}
       <ChocolateComparison recipeId={recipe.recipeId} locale={recipe.locale} hasGlVariant={hasGkVariant} />
-      {recipe.notesHtml ? <section className="recipe-panel"><h2>{labels.notes}</h2><div className="rich-text" dangerouslySetInnerHTML={{ __html: recipe.notesHtml }} /></section> : null}
+      {notesHtml ? <section className="recipe-panel"><h2>{labels.notes}</h2><div className="rich-text" dangerouslySetInnerHTML={{ __html: notesHtml }} /></section> : null}
       {relatedGuides.length > 0 && <section className="recipe-panel" aria-labelledby="related-guides-title">
         <h2 id="related-guides-title">Aiheesta Ruokaoppaassa</h2>
         <ul>{relatedGuides.map(article => <li key={article.slug}><Link to={articlePath(article)}>{article.title}</Link></li>)}</ul>

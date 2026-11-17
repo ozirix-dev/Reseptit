@@ -12,7 +12,8 @@
       "sv": "Uppskattningen gäller bara olivoljepålägget. Brödet till serveringen ingår inte.",
       "th": "ค่าประมาณนี้ใช้กับสเปรดน้ำมันมะกอกเท่านั้น ไม่รวมขนมปังที่เสิร์ฟคู่กัน"
     },
-    "zeroCarbohydrate": true
+    "zeroCarbohydrate": true,
+    "preparationSha256": "c1d462873fc6630aa3e61e8b1e6b0bb40002db47ff17e11dc0dcb4812844a427"
   },
   "taytetyt-kananmunat-yrteilla": {
     "recipeBindingSha256": "bb831a7b2007e9c68638e39f4fc76593e84f12d10f67da21d43113af74c09e95",
@@ -32,21 +33,29 @@
         "sv": "Ägget utgör huvuddelen av portionen. De små mängderna senap och majonnäs i receptet bidrar med lite kolhydrater. Uppskattningen gäller två ägghalvor med de mängder senap och majonnäs som anges i receptet.",
         "th": "ไข่เป็นส่วนหลักของหนึ่งหน่วยบริโภค ส่วนมัสตาร์ดและมายองเนสปริมาณเล็กน้อยตามสูตรเพิ่มคาร์โบไฮเดรตเพียงเล็กน้อย ค่าประมาณนี้ใช้กับไข่สองซีกที่ใช้มัสตาร์ดและมายองเนสตามปริมาณในสูตร"
       }
-    }
+    },
+    "preparationSha256": "9c260e4552d8d3a8ad5a921a522bc09d8000efb56ba0e7d7d374d6ef286f6c55"
   },
   "tonnikalatayte-kurkkukupeissa": {
     "recipeBindingSha256": "75740154debe0a7495b0af525a0b80d4d60d4e5e7c6003d74ec2b48d59a72700",
     "reviewedAt": "2026-11-18",
-    "reasoning": "Raw cucumber and unflavoured tuna in water are the two largest components. University of Sydney food-group guidance covers fish and low-carbohydrate salad vegetables. Known post-scooping cucumber mass, weighed small amounts of full-fat mayonnaise, celery, undiluted lemon juice and dill. Available carbohydrate from cucumber 0.90g/serving out of 1.16g. No carbohydrate side or sweetening. If editorial gate stays open use carbohydrate-only with cucumber driver.",
-    "source": "https://fineli.fi/fineli/content/file/8/Fineli_data_file_instructions",
     "nutritionSha256": "bce2e85c4a0e6f97e10924f40f02ab408024cf489c916a26355aa8800c7b2769",
+    "reasoning": "Original standard serving is three cups (one quarter of the batch). Composition verified for 75 g hollowed raw cucumber (0.90 g available carbohydrate) and 37.5 g drained unflavoured water-packed tuna (0 g in the AFCD record), plus 10 g full-fat mayonnaise, 10 g celery, 2.5 g undiluted lemon juice and 1.25 g dill. Full available carbohydrate about 1.16 g. Sydney GI Research Service discusses the small glycaemic impact of unflavoured fish and low-carbohydrate salad vegetables as foods. Plate is uncooked and does not involve breading, a sweetened filling or an extra side. Food-group evidence combined with the identified ingredient portions supports a directional estimate for three cups. No numerical GI/GK inferred or universal threshold assumed. Re-review changing product, cucumber preparation, number of cups or served sides.",
+    "source": "https://glycemicindex.com/faqs/",
     "piecesPerServing": 3,
-    "condition": {
-      "fi": "Hiilihydraattitieto perustuu ohjeen mukaan tehtyihin kurkkukuppeihin.",
-      "en": "The carbohydrate amount is based on the cucumber cups made as directed.",
-      "sv": "Kolhydratmängden gäller gurkkoppar tillagade enligt receptet.",
-      "th": "ปริมาณคาร์โบไฮเดรตอ้างอิงจากแตงกวาสอดไส้ที่ทำตามสูตร"
-    }
+    "verbal": {
+      "category": "LOW",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Arvio koskee kolmea kurkkukuppia. Täyte tehdään vedessä säilötystä tonnikalasta ja tavallisesta majoneesista. Suurin osa annoksen hiilihydraateista tulee raa’asta kurkusta.",
+        "en": "The estimate applies to three cucumber cups. The filling uses tuna packed in water and regular mayonnaise. Most of the serving’s carbohydrate comes from raw cucumber.",
+        "sv": "Uppskattningen gäller tre gurkkoppar. Fyllningen görs med tonfisk i vatten och vanlig majonnäs. Det mesta av portionens kolhydrater kommer från rå gurka.",
+        "th": "ค่าประมาณนี้ใช้กับแตงกวาสอดไส้สามชิ้น ไส้ทำจากทูน่าในน้ำและมายองเนสแบบปกติ คาร์โบไฮเดรตส่วนใหญ่มาจากแตงกวาดิบ"
+      }
+    },
+    "preparationSha256": "c346b0b1b724ade2a334bd28db565564d40b2a9052de77dd3dc0987346bf1090"
   },
   "kaali-omenasalaatti": {
     "recipeBindingSha256": "d8a90a56bf174ba682570cb621198fd817d3e9d0e8eb3cb9cd22994dc684a0d5",
@@ -59,7 +68,8 @@
       "en": "The whole serving’s carbohydrate amount depends on the Caesar dressing used.",
       "sv": "Kolhydratmängden för hela portionen beror på vilken caesardressing du använder.",
       "th": "ปริมาณคาร์โบไฮเดรตของทั้งหน่วยบริโภคขึ้นอยู่กับน้ำสลัดซีซาร์ที่ใช้"
-    }
+    },
+    "preparationSha256": "5fa7fe4e55a4042a196d995f703655be26e24e64849927cbb2dfbce34e8f8252"
   },
   "kebab-munakasrulla": {
     "recipeBindingSha256": "9b88b33a974dcc4bcba1f13e3b672696ab90558d08fd20f5a1ee296b3f326125",
@@ -72,7 +82,8 @@
       "en": "Wheat flour is the largest known source of carbohydrate. The sauces and drained pickled peppers affect the total.",
       "sv": "Vetemjölet är den största kända kolhydratkällan. Såserna och de avrunna inlagda paprikorna påverkar totalmängden.",
       "th": "แป้งสาลีเป็นแหล่งคาร์โบไฮเดรตที่ทราบว่ามากที่สุด ซอสและพริกดองที่สะเด็ดน้ำแล้วมีผลต่อปริมาณรวม"
-    }
+    },
+    "preparationSha256": "4419d71f610cdeba6a92d49c259498bd909f88e5d7d5bf29738be924cbde9267"
   },
   "vhh-kaalikaarryleet": {
     "recipeBindingSha256": "6b7573adb0ef818192ac8e8bbc3b0b35909a3d0af1a6de056c178e2a0cd16bee",
@@ -80,11 +91,12 @@
     "reasoning": "Full GK 9.24 is white cabbage 12.5g available carbohydrate × 0.66 = 8.25, plus riced cauliflower 1.5g × 0.66 = 0.99. An additional known 1.578025g available carbohydrate is omitted under editorial rule. This is not a confidence interval or a calculated opposite scenario. Retain point with visible qualification. Avoid new numerical estimates or stable verbal class without suitable evidence.",
     "source": "https://doi.org/10.1093/ajcn/nqab233",
     "classLimitation": {
-      "fi": "Arvio on lähellä pienen ja keskisuuren kuorman rajaa. Kaalin ja kukkakaalin vaikutus perustuu kasvisryhmän keskiarvoon.",
-      "en": "The estimate is close to the boundary between low and medium load. Cabbage and cauliflower are estimated using a vegetable group average.",
-      "sv": "Uppskattningen ligger nära gränsen mellan låg och medelhög belastning. Värdena för kål och blomkål bygger på ett genomsnitt för en grupp grönsaker.",
-      "th": "ค่าประมาณอยู่ใกล้เส้นแบ่งระหว่างภาระน้ำตาลระดับต่ำและปานกลาง ค่าของกะหล่ำปลีและกะหล่ำดอกอ้างอิงค่าเฉลี่ยของกลุ่มผัก"
-    }
+      "fi": "Kaalin ja kukkakaalin osuus perustuu kasvisryhmän keskiarvoon. Puuttuvat osuudet lisäävät epävarmuutta.",
+      "en": "Cabbage and cauliflower use a vegetable group average. Omitted ingredients add uncertainty.",
+      "sv": "Kål och blomkål bygger på ett genomsnitt för en grönsaksgrupp. Utelämnade bidrag ökar osäkerheten.",
+      "th": "คำนวณส่วนของกะหล่ำปลีและดอกกะหล่ำจากค่าเฉลี่ยของกลุ่มผัก รายการที่ไม่ได้คำนวณทำให้ค่าประมาณไม่แน่นอนขึ้น"
+    },
+    "preparationSha256": "f774277735ed556bb11c74c5441cacb7ef987bd1496875b1eed4c5a7cffad471"
   },
   "bibimbap": {
     "recipeBindingSha256": "e6e7b8eaf2085a32d44382c7605296053ff5bb9768dd0664b005413a70b0af7c",
@@ -140,7 +152,8 @@
     "reviewedAt": "2026-11-18",
     "reasoning": "The legacy source-bound analysis includes mungpapu at 31.43 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
     "source": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-    "knownCarbIngredient": "mungpapu"
+    "knownCarbIngredient": "mungpapu",
+    "publicSource": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F000446"
   },
   "japanilainen-natto-riisikulho": {
     "recipeBindingSha256": "c4752a610195954481f743e8cade1ae052e5c8e643b36471a8254a7c92960254",
@@ -155,5 +168,300 @@
     "reasoning": "The legacy source-bound analysis includes kypsää pitkäjyväistä riisiä at 35.34 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
     "source": "https://fineli.fi/fineli/api/v1/foods/30346",
     "knownCarbIngredient": "kypsää pitkäjyväistä riisiä"
+  },
+  "fetavaahto-kasvistikuilla": {
+    "recipeBindingSha256": "a28e734689a2d40cd613dab84a7ed17233b07f94fa5473c559a9b1bf05299df5",
+    "reviewedAt": "2026-11-18",
+    "nutritionSha256": "0814606f3503bddb510984856bf2c4502dd72621967800dcd8763a8eeadd06c3",
+    "reasoning": "One fourth of the cold feta dip and both raw vegetables: four served portions, 30 g drained goat feta, 25 g plain lactose-free 7% Greek yogurt, 2.5 g undiluted lemon juice, 1.25 g dill, 50 g cucumber and 37.5 g raw red pepper per serving; all edible parts counted. Identified available carbohydrate sources: pepper 1.6875 g, yogurt 0.72925 g, cucumber 0.70 g, feta 0.36 g, lemon/dill together about 0.05 g. The Sydney GI Research Service FAQ explains small expected glycaemic impact of low-carbohydrate salad vegetables. Atkinson et al. 2021 (https://doi.org/10.1093/ajcn/nqab233) report generally low GI in the measured dairy group. That group is supporting context, not an exact lactose-free yogurt product result. No added sweetener, starch or bread in the served recipe. Do not use the rejected generic Pepper GI 40 assignment. Re-review changes to dairy product, vegetable or other serving components.",
+    "source": "https://glycemicindex.com/faqs/",
+    "verbal": {
+      "category": "LOW",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Arvio sisältää sekä fetavaahdon että kurkku- ja paprikatikut. Paprika on annoksen suurin hiilihydraattilähde. Vaahto tehdään maustamattomasta jogurtista.",
+        "en": "The estimate includes both the whipped feta and the cucumber and pepper sticks. Red pepper contributes more carbohydrate than any other ingredient. The dip uses plain yogurt.",
+        "sv": "Uppskattningen omfattar både fetakrämen och gurk- och paprikastavarna. Röd paprika är portionens största kolhydratkälla. Krämen görs med naturell yoghurt.",
+        "th": "ค่าประมาณนี้รวมทั้งดิปเฟต้าและแตงกวากับพริกหวานแดงหั่นแท่ง พริกหวานแดงให้คาร์โบไฮเดรตมากที่สุดในบรรดาส่วนผสม ดิปใช้โยเกิร์ตรสธรรมชาติ"
+      }
+    },
+    "preparationSha256": "cb32f5b10fba7da31a53e14319865bb9d90877cac8eca75fd326f5730faf5dc5"
+  },
+  "pinaatti-raejuustopaistos": {
+    "recipeBindingSha256": "c57b1f01e25c7b89a0e6d94f9334dc1879a408415c5cd89ea607c8d6ed1d5fce",
+    "reviewedAt": "2026-11-18",
+    "nutritionSha256": "2bca8da3d60d09fe05650d7edee3da89249d4c533098e1622ed916d8cd798784",
+    "reasoning": "Original standard serving is one of six pieces of the baked egg mixture, with no side. Edible ingredients per piece before baking: 10 g spinach, 33.33 g eggs without shell, 37.5 g plain cottage cheese, 10 g mozzarella, 0.167 g smoked paprika and 0.25 g sea salt. Of the modeled about 1.06 g available carbohydrate, plain cottage cheese contributes 0.9375 g, eggs 0.10 g, spinach 0.025 g. Source nutrition estimate documents that the entire paprika mass is at most 0.167 g/serving; do not treat it as zero. Sydney GI team covers leafy vegetables and eggs as groups with small glycaemic impact. Diabetes Canada (https://www.diabetes.ca/DiabetesCanadaWebsite/media/Managing-My-Diabetes/Tools%20and%20Resources/glycemic-index-food-guide.pdf) lists cottage cheese in its low-GI group. The evidence supports directional classification of the portion of the egg and dairy dish as baked, without assigning an unmeasured ingredient or whole-dish GI. Re-review changing dairy/sweetened product, spices, preparation, pieces or additions.",
+    "source": "https://glycemicindex.com/faqs/",
+    "piecesPerServing": 1,
+    "verbal": {
+      "category": "LOW",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Arvio koskee yhtä paistospalaa kuudesta. Annos koostuu kananmunasta, pinaatista ja juustosta. Suurin osa annoksen hiilihydraateista tulee maustamattomasta raejuustosta.",
+        "en": "The estimate applies to one of six pieces. The bake is made with eggs, spinach and cheese. Most of the serving’s carbohydrate comes from plain cottage cheese.",
+        "sv": "Uppskattningen gäller en av sex bitar. Rätten består av ägg, spenat och ost. Det mesta av portionens kolhydrater kommer från naturell cottage cheese.",
+        "th": "ค่าประมาณนี้ใช้กับหนึ่งชิ้นจากทั้งหมดหกชิ้น อาหารอบนี้มีไข่ ผักโขม และชีส คาร์โบไฮเดรตส่วนใหญ่มาจากคอตเทจชีสรสธรรมชาติ"
+      }
+    },
+    "preparationSha256": "6f3610ff68be07d41af20fd500f8ff3194d4dcc17305c072c4cc7559f0375118"
+  },
+  "herne-auringonkukkalevite": {
+    "recipeBindingSha256": "d2afff22c978926b78e321718883fb479e7dc86e9a0031dda53f238da77a84e5",
+    "reviewedAt": "2026-11-18",
+    "nutritionSha256": "a2d6b2e51bc8d62b4c013107a610682f01d5c80cf05e7a5e041baca7953c9ee1",
+    "reasoning": "One quarter of the spread only. Per serving: 50 g plain frozen green peas before heating by packet instructions, then drained, cooled and blended; 5 g sunflower seeds weighed before dry-toasting; 3.75 g undiluted lemon juice; 6.75 g rapeseed oil; small weighed salt and black pepper. Fineli green peas supply 4.68 g available carbohydrate of the approximately 4.90 g total. Dodd et al. 2011 Table 2 measured GI 29 (95% CI 25–34; 25 g available carbohydrate test portion) for a different brand of cooked plain frozen green peas. This directly tested the primary food family while blending, cultivar, brand and serving conditions preclude carrying that point to the spread. The qualitative estimate applies to the specified small portion and excludes suggested bread. Re-review boiled/canned substitutions, blending, recipe share or served sides. Product-specific GI or a clinical response is not assigned.",
+    "source": "https://doi.org/10.3945/ajcn.111.012138",
+    "verbal": {
+      "category": "LOW",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Hiilihydraatit tulevat pääosin herneistä. Saman tyyppisistä kuumennetuista pakasteherneistä on mitattu pieni glykeeminen indeksi. Levitteen soseutusta ei tutkittu.",
+        "en": "Peas provide most of the carbohydrate. A study found a low glycemic index for a similar type of cooked frozen peas. It did not test the blended spread.",
+        "sv": "Ärtorna står för det mesta av kolhydraterna. Liknande tillagade frysta ärter hade lågt glykemiskt index i en studie. Den mixade röran undersöktes inte.",
+        "th": "คาร์โบไฮเดรตส่วนใหญ่มาจากถั่วลันเตา งานวิจัยพบว่าถั่วลันเตาแช่แข็งชนิดใกล้เคียงกันที่ปรุงสุกแล้วมีดัชนีน้ำตาลต่ำ โดยไม่ได้ทดสอบสเปรดที่ปั่นแล้ว"
+      },
+      "condition": {
+        "fi": "Arvio koskee neljäsosaa levitteestä. Tarjoiluleipä ei sisälly arvioon.",
+        "en": "The estimate covers a quarter of the spread. Bread served with it is extra.",
+        "sv": "Uppskattningen gäller en fjärdedel av röran. Bröd till serveringen ingår inte.",
+        "th": "ค่าประมาณนี้ใช้กับสเปรดหนึ่งในสี่ของสูตร ไม่รวมขนมปังที่เสิร์ฟคู่กัน"
+      }
+    },
+    "preparationSha256": "955b185a3d2894fbdf14ecb693828a274f6bc0b7591714cf0f1512f696cbec46"
+  },
+  "meksikolainen-huevos-divorciados": {
+    "recipeBindingSha256": "267c7f1e8c89109c43c9e6542135b347136d907ed07f43ab43bb14e7272847fb",
+    "knownCarbIngredient": "musta papu",
+    "source": "https://fineli.fi/fineli/api/v1/foods/35638",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "150 g cooked black beans enter the two portions. Fineli canned drained black beans is a reasonable composition match; green salsa remains unverified."
+  },
+  "japanilainen-soba-aamiaiskeitto": {
+    "recipeBindingSha256": "3d739c70a0a9d46fe9b0ed9771673115d81c8d9af5f68bc88fa7efb94bd9621a",
+    "knownCarbIngredient": "soba-nuudeli",
+    "source": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The 100 g measured dry soba noodle input is in the soup. AFCD dry soba is a food/state match; broth alternatives are not included in this row.",
+    "publicSource": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
+  },
+  "paneer-tikka": {
+    "recipeBindingSha256": "9d580191eaa24235b6a6ac70936302fffa11603183f5d83cd01c61eb5137eb0c",
+    "knownCarbIngredient": "punaista paprikaa",
+    "source": "https://fineli.fi/fineli/api/v1/foods/386",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The recipe uses red bell pepper. The Fineli row is specifically red capsicum; 170 g is a standard piece conversion and will vary. Present the named food only, without its assumed amount, a claim that it is biggest, or a pepper GI claim."
+  },
+  "idli-sambar": {
+    "recipeBindingSha256": "1cb1b68509281556e0dc5ffd8fd59e50a5a6d1e5e62b28d1a970e6cad6c57916",
+    "knownCarbIngredient": "punaisia linssejä",
+    "source": "https://fineli.fi/fineli/api/v1/foods/31219?c=2034&c2=2168",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The 200 g red lentils are measured dry and cooked in the sambar consumed with the idlis. The note is robust to either recipe-listed rice alternative. Do not transfer any separate GI value to the lentil or idli."
+  },
+  "japanilainen-curry-tofulla": {
+    "recipeBindingSha256": "fb3442e0e6601a2a0c29768b5e52337356f1525b5a28cd687907821d84c303a3",
+    "knownCarbIngredient": "kukkakaali",
+    "source": "https://fineli.fi/fineli/api/v1/foods/322",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The recipe uses ordinary cauliflower and serves it with the curry after ricing and steaming. Raw Fineli cauliflower is the relevant composition basis, 600 g is a piece estimate. The note applies to cauliflower as a contributing ingredient; curry roux remains unverified."
+  },
+  "vhh-pyttipannu": {
+    "recipeBindingSha256": "f02fc0fec01bfeb3fa356ac353b4009ae954efffbc4831d853b64c2007d79d56",
+    "knownCarbIngredient": "lanttua",
+    "source": "https://fineli.fi/fineli/api/v1/foods/303",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "Recipe uses measured 200 g raw rutabaga. Fineli raw rutabaga maps directly to the diced vegetable. No claim about sausage or whole serving total."
+  },
+  "linssimakaronilaatikko": {
+    "recipeBindingSha256": "a6a5ce87f65fcbc1667b1f6ff2297aaa81a2c864d6261a96334f215108ec8079",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "68 g EU declaration per 100 g dry; 220 g dry for 6 portions gives a source-accounting input of 24.93 g label carbohydrate per portion. Statement is about macaroni contribution, not cooked retention, lens composition or GK.",
+    "source": "https://www.myllynparas.fi/tuotteet/makaroni-400-g",
+    "ingredientProduct": {
+      "index": 0,
+      "item": "Myllyn Paras Makaroni -sarvimakaronia, kuivapaino",
+      "amount": 220,
+      "unit": "g",
+      "ean": "6417700050725"
+    },
+    "condition": {
+      "fi": "Reseptissä nimetty pasta on hiilihydraatin lähde. Jos vaihdat tuotetta, vertaa kuivapastan hiilihydraattimäärää pakkauksesta.",
+      "en": "The named pasta contributes carbohydrate. If you switch products, compare the dry pasta’s carbohydrate on the label.",
+      "sv": "Pastan som anges i receptet bidrar med kolhydrater. Om du byter produkt, jämför kolhydratmängden för torr pasta på förpackningen.",
+      "th": "พาสต้าที่ระบุในสูตรมีคาร์โบไฮเดรต หากเปลี่ยนผลิตภัณฑ์ ให้เปรียบเทียบคาร์โบไฮเดรตของพาสต้าแห้งบนฉลาก"
+    },
+    "preparationSha256": "52d88cce7ca88fecb469eab6d74c92dae0030042d131a056320720b65a142983"
+  },
+  "marry-me-kanapasta": {
+    "recipeBindingSha256": "c25a1ed42e6a979727e62453585dd3f5aa73de4fa355741a355bc710443e9b11",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "Manufacturer standard durum spaghetti no. 12 reports 69 g label carbohydrate per 100 g dry. Recipe 240 g for 4 portions gives 41.4 g label carbohydrate per portion at that label. EU-market variations occur. No cooked retention or whole-portion number.",
+    "source": "https://shop.dececco.com/en-ie/product/spaghetti-n-12-pasta-shop-de-cecco",
+    "ingredientProduct": {
+      "index": 1,
+      "item": "De Cecco Spaghetti n°12 -pastaa, kuivapaino",
+      "amount": 240,
+      "unit": "g",
+      "ean": "8001250120120"
+    },
+    "condition": {
+      "fi": "Reseptissä nimetty pasta on hiilihydraatin lähde. Jos vaihdat tuotetta, vertaa kuivapastan hiilihydraattimäärää pakkauksesta.",
+      "en": "The named pasta contributes carbohydrate. If you switch products, compare the dry pasta’s carbohydrate on the label.",
+      "sv": "Pastan som anges i receptet bidrar med kolhydrater. Om du byter produkt, jämför kolhydratmängden för torr pasta på förpackningen.",
+      "th": "พาสต้าที่ระบุในสูตรมีคาร์โบไฮเดรต หากเปลี่ยนผลิตภัณฑ์ ให้เปรียบเทียบคาร์โบไฮเดรตของพาสต้าแห้งบนฉลาก"
+    },
+    "preparationSha256": "3bb590c97760cd37181e25f7a53049eb014fc0c81dc85934bf155b905ef66d9b"
+  },
+  "uunifetapasta-kirsikkatomaateilla": {
+    "recipeBindingSha256": "75f35680a5b210356e52b080def272b4aa0302e043ee80e8cf84112748ba8ade",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "Barilla Norway 71 g per 100 g matches pinned Finnish recipe label; Barilla France and Sweden use 71.2, UK uses 71.7. The named EAN is confirmed by Barilla Finland official campaign. The 240 g for 4 portions is a known ingredient contribution; omit exact amount on the public view due to market variation and no finished ratio.",
+    "source": "https://www.barilla.com/nn-no/produkter/pasta/klassikere/penne-rigate",
+    "ingredientProduct": {
+      "index": 0,
+      "item": "Barilla Penne Rigate n°73 -pastaa, kuivapaino",
+      "amount": 240,
+      "unit": "g",
+      "ean": "8076802085738"
+    },
+    "condition": {
+      "fi": "Reseptissä nimetty pasta on hiilihydraatin lähde. Jos vaihdat tuotetta, vertaa kuivapastan hiilihydraattimäärää pakkauksesta.",
+      "en": "The named pasta contributes carbohydrate. If you switch products, compare the dry pasta’s carbohydrate on the label.",
+      "sv": "Pastan som anges i receptet bidrar med kolhydrater. Om du byter produkt, jämför kolhydratmängden för torr pasta på förpackningen.",
+      "th": "พาสต้าที่ระบุในสูตรมีคาร์โบไฮเดรต หากเปลี่ยนผลิตภัณฑ์ ให้เปรียบเทียบคาร์โบไฮเดรตของพาสต้าแห้งบนฉลาก"
+    },
+    "preparationSha256": "b1e3dfcf987a87d6217780edda9db8e18a5f74f4841c981aaab905979beffa3f"
+  },
+  "kiinalainen-katkarapu-wontonkeitto": {
+    "recipeBindingSha256": "b2040e47a37ff64357776b270930f063cf4594434cf7bfcf26c742e57d51d5a0",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "kiinalainen-katkarapu-wontonkeitto: wonton-taikina: No source-matched composition and preparation was resolved for “wonton-taikina”; it is not treated as zero.",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md",
+    "condition": {
+      "fi": "Hiilihydraattimäärä riippuu käytetystä wonton-taikinasta. Tarkista sen ravintoarvo pakkauksesta.",
+      "en": "The carbohydrate amount depends on the wonton wrappers used. Check the nutrition label on the pack.",
+      "sv": "Kolhydratmängden beror på vilka wontonplattor du använder. Kontrollera näringsvärdet på förpackningen.",
+      "th": "ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับแผ่นเกี๊ยวที่ใช้ ดูข้อมูลโภชนาการบนบรรจุภัณฑ์"
+    },
+    "preparationSha256": "d626b5b4566259323a19771f8c757911f514b0f2acaaceec5e30ae57da745ab4"
+  },
+  "lahi-ita-labneh-kulho-zaatarilla": {
+    "recipeBindingSha256": "8f09eb69a046a19fa136bef99febae7cf3fc58317b931ebffc4de50bed3893a9",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "lahi-ita-labneh-kulho-zaatarilla: labneh: No source-matched composition and preparation was resolved for “labneh”; it is not treated as zero.",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/aamupalat/lahi-ita-labneh-kulho-zaatarilla.md",
+    "condition": {
+      "fi": "Koko annoksen hiilihydraattiarviosta puuttuu käytetyn labnehin ravintoarvo.",
+      "en": "The whole-serving estimate needs nutrition information for the labneh used.",
+      "sv": "För att uppskatta kolhydraterna i hela portionen behövs näringsvärdet för den labneh som används.",
+      "th": "การประมาณคาร์โบไฮเดรตของทั้งหน่วยบริโภคต้องใช้ข้อมูลโภชนาการของลาบเนห์ที่เลือก"
+    },
+    "preparationSha256": "9c982c7499365fb3b163bc687382d99c9a3f5e79d26583cf0a0cfe7dccd82477"
+  },
+  "tunisialainen-brik": {
+    "recipeBindingSha256": "f7286245bf2dc41705649815a36c023ab67e30f2452b6c4c7dd2d11361b844b9",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "tunisialainen-brik: filo- tai malsouka-taikinaa: No source-matched composition and preparation was resolved for “filo- tai malsouka-taikinaa”; it is not treated as zero.",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/alkuruoat/tunisialainen-brik.md",
+    "condition": {
+      "fi": "Hiilihydraattimäärä riippuu siitä, käytätkö filo- vai malsouka-taikinaa ja paljonko yksi levy painaa.",
+      "en": "The carbohydrate amount depends on the choice of filo or malsouka and how much each sheet weighs.",
+      "sv": "Kolhydratmängden beror på om du väljer filo- eller malsoukadeg och på hur mycket varje ark väger.",
+      "th": "ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับชนิดแป้งที่เลือก ระหว่างฟิโลกับมาลซูกา และน้ำหนักของแต่ละแผ่น"
+    },
+    "preparationSha256": "23e5e8708b02b73dbad226491b0f0add620233d66d598a1468264108cee10b6a"
+  },
+  "kimchi-jjigae": {
+    "recipeBindingSha256": "30694611f6c22e9d9907ae989c41673517e94de3303efc32616df107339bf9d8",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "kimchi-jjigae: kypsää kimchiä: No source-matched composition and preparation was resolved for “kypsää kimchiä”; it is not treated as zero.",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/paaruoat/kimchi-jjigae.md",
+    "condition": {
+      "fi": "Kimchin ja gochujangin hiilihydraattimäärä vaihtelee tuotteittain. Tarkista molemmat pakkauksesta.",
+      "en": "The carbohydrate content of kimchi and gochujang varies by product. Check both packs.",
+      "sv": "Kolhydratinnehållet i kimchi och gochujang varierar mellan produkter. Kontrollera båda förpackningarna.",
+      "th": "ปริมาณคาร์โบไฮเดรตในกิมจิและโคชูจังต่างกันตามผลิตภัณฑ์ ตรวจฉลากทั้งสองอย่าง"
+    },
+    "preparationSha256": "82727566b77439ed30545281fb13a46fbac8720a5d1b388f52d717255a8e7006"
+  },
+  "pekingin-ankka": {
+    "recipeBindingSha256": "263c2a37e3349dab4de875689582e6275cf7f7473bb63b53a1fd1e202e3f9cfd",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "pekingin-ankka: kiinalaisia vehnälettuja: No source-matched composition and preparation was resolved for “kiinalaisia vehnälettuja”; it is not treated as zero.",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/paaruoat/pekingin-ankka.md",
+    "condition": {
+      "fi": "Annoksen hiilihydraattimäärä riippuu vehnälettujen koosta ja käytetystä hoisinkastikkeesta.",
+      "en": "The carbohydrate amount depends on the size of the wheat pancakes and the hoisin sauce used.",
+      "sv": "Kolhydratmängden beror på vetepannkakornas storlek och vilken hoisinsås som används.",
+      "th": "ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับขนาดแผ่นแป้งสาลีและซอสฮอยซินที่ใช้"
+    },
+    "preparationSha256": "e88534985730ddcdb7bdd5003742b62aa0280143c822ee64f7178ac90b03d10d"
+  },
+  "sichuan-hot-pot": {
+    "recipeBindingSha256": "d4fc8cf8898861fd79613644daf364d0e420a84624f871962cfff33d2d66a199",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "sichuan-hot-pot: nuudeleita: No source-matched composition and preparation was resolved for “nuudeleita”; it is not treated as zero.",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/paaruoat/sichuan-hot-pot.md",
+    "condition": {
+      "fi": "Hiilihydraattimäärä riippuu valituista nuudeleista. Tarkista, koskeeko pakkauksen ravintoarvo kuivaa vai kypsää tuotetta.",
+      "en": "The carbohydrate amount depends on your noodles. Check whether the label refers to dry or cooked noodles.",
+      "sv": "Kolhydratmängden beror på vilka nudlar du väljer. Kontrollera om näringsvärdet gäller torra eller tillagade nudlar.",
+      "th": "ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับเส้นที่เลือก ตรวจว่าข้อมูลบนฉลากใช้กับเส้นแห้งหรือเส้นที่ปรุงแล้ว"
+    },
+    "preparationSha256": "8fde142ab308d77558437871a1807502b1d5c1ca2c0b9254a0808c066492d577"
+  },
+  "hummus": {
+    "recipeBindingSha256": "0ce1d5130f86d5dc9911ff0eaf1b12b0cf1884e48f87c25b934b1fd5739d86a8",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/alkuruoat/hummus.md",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The ingredient list and preparation cover the chickpea spread. Bread and vegetables in the serving suggestions are separate foods.",
+    "condition": {
+      "fi": "Arvio koskee hummusannosta. Tarjoiluleipä ja dippivihannekset eivät sisälly.",
+      "en": "The estimate is for the hummus. Bread and vegetables served for dipping are extra.",
+      "sv": "Uppskattningen gäller hummusen. Bröd och grönsaker att dippa ingår inte.",
+      "th": "ค่าประมาณนี้สำหรับฮัมมุสเท่านั้น ไม่รวมขนมปังหรือผักที่กินคู่กัน"
+    },
+    "preparationSha256": "2de33761b7e06a0e3d6af3b06228685bce2404ca8b647070b4fd68884f461779"
+  },
+  "bulgogi": {
+    "recipeBindingSha256": "c03fecdf4eb07fc0e016f250e3156c7af3e75751617d1b2e52abf4285ad76028",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/paaruoat/bulgogi.md",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "Rice is included in the structured recipe and cooked at step 3. The text distinguishes the rice in the recipe from other additions.",
+    "condition": {
+      "fi": "Annoksen hiilihydraateissa on mukana ohjeessa keitetty riisi.",
+      "en": "The carbohydrate amount includes the rice cooked as directed.",
+      "sv": "Kolhydratmängden omfattar riset som kokas enligt receptet.",
+      "th": "ปริมาณคาร์โบไฮเดรตรวมข้าวที่หุงตามสูตร"
+    },
+    "preparationSha256": "04d6243e9d053c49704f82cae035881157fc97a5c4da32512a55027fdbdeee45"
+  },
+  "malesialainen-nasi-lemak-aamiaisella": {
+    "recipeBindingSha256": "0b7386392120657cfb074bf3c742787bfd3046fbc1bae61c154626675c806111",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/docs/nutrition/gk80-release-2/recipes.json",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The approved named range compares basmati and jasmine rice alternatives. The serving includes coconut rice, egg and cucumber, and excludes the other sides per the preparation.",
+    "condition": {
+      "fi": "Vaihteluväli kuvaa basmati- ja jasmiiniriisin vaihtoehtoja. Mukana ovat kookosriisi, kananmuna ja kurkku. Sambal, anjovikset ja pähkinät eivät sisälly.",
+      "en": "The range compares basmati and jasmine rice. It includes coconut rice, egg and cucumber. Sambal, anchovies and nuts are extra.",
+      "sv": "Intervallet jämför basmati- och jasminris. Kokosris, ägg och gurka ingår. Sambal, ansjovis och nötter ingår inte.",
+      "th": "ช่วงค่านี้เปรียบเทียบข้าวบาสมาทีกับข้าวหอมมะลิ รวมข้าวหุงกะทิ ไข่ และแตงกวา ไม่รวมซัมบัล ปลาแอนโชวี หรือถั่ว"
+    },
+    "preparationSha256": "501886d5c527ba36c06ea698ce61afabe30b210c2b59fd4022c884909f643767"
+  },
+  "xiaolongbao": {
+    "recipeBindingSha256": "2db6fc7f6f29149dd0f52a66534f4015109c75b4e4d4eb44dfdf60eb2f38ec4a",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/alkuruoat/xiaolongbao.md",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The recipe makes 24 dumplings and declares four servings. No size-independent mass or GK is inferred.",
+    "piecesPerServing": 6,
+    "preparationSha256": "e2209a5cc8adc21ee01881601172d2ae5844b5ee486dbfcf3064edf2035ba545"
   }
 }

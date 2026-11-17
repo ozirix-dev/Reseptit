@@ -77,22 +77,25 @@ const pendingRows = originalRecipes.filter(recipe => pending.has(recipe.recipeId
   confidence: null, carbohydrateSources: [], sourceReferences: [],
   portionEvidence: glycemicLoadPortions[recipe.recipeId],
 }));
-const portionCoverage = countGkPortionCoverage(originalRecipes.map(recipe => {
+const coverageRows = originalRecipes.map(recipe => {
   const evidence = glycemicLoadPortions[recipe.recipeId];
   const withheld = withholdF25Nutrition(recipe.recipeId, recipe.locale);
   return {
+    recipeId: recipe.recipeId,
     numeric: !withheld && resultsByRecipe.get(recipe.recipeId)?.status === "CALCULATED",
     carbs: withheld ? null : originalPortionCarbs(recipe.nutrition, evidence),
     evidence: withheld && evidence ? { driver: evidence.driver } : evidence,
     pending: pending.has(recipe.recipeId),
   };
-}));
+});
+const portionCoverage = countGkPortionCoverage(coverageRows);
 const overview: RouteContent["glycemicOverview"] = {
   results: [...results, ...pendingRows],
   variants: gkOnlyVariants,
   coverage: gkVersionCoverage,
   reviewedCount: glycemicLoadPilotReviewedRecipeCount,
   portionCoverage,
+  carbsByRecipe: Object.fromEntries(coverageRows.flatMap(row => row.carbs ? [[row.recipeId, row.carbs]] : [])),
 };
 const manifest: Record<string, string> = {};
 for (const route of routes) {

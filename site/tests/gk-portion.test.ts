@@ -3,7 +3,7 @@ import test from "node:test";
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { projectPortionEvidence } from "../scripts/gk-portion-projection";
+import { portionPreparationHash, projectPortionEvidence } from "../scripts/gk-portion-projection";
 import { originalPortionGk, verbalGkForPortion } from "../src/features/recipes/gk-portion";
 import { originalGlycemicLoadCategory } from "../scripts/glycemic-load-filter";
 import { recipeBindingHash } from "../scripts/glycemic-load-recipe-binding";
@@ -19,6 +19,11 @@ test("rounded UI values cannot change the original GK category", () => {
   assert.equal(originalGlycemicLoadCategory(candidate), "medium");
   assert.equal(originalPortionGk(candidate, 1).category, "MEDIUM");
   assert.equal(originalPortionGk(candidate, 2).category, "HIGH");
+  const contradictoryRange = { ...candidate, glycemicLoadPerServing: 9.99,
+    unroundedGlycemicLoadPerServing: 9.99, glycemicLoadRangePerServing: { min: 10.01, max: 10.02 } };
+  assert.equal(originalPortionGk(contradictoryRange).category, null);
+  assert.equal(originalPortionGk(contradictoryRange).inconsistent, true);
+  assert.equal(originalGlycemicLoadCategory(contradictoryRange), null);
   const withOmission = { ...candidate, omittedAvailableCarbohydratePerServingG: 0.4 };
   assert.equal(originalGlycemicLoadCategory(withOmission), null);
   assert.equal(originalPortionGk(withOmission, 1).omissionLimitsClass, true);
@@ -31,11 +36,16 @@ test("reviewed verbal GK only applies to the approved recipe portion and current
   const reviews = JSON.parse(await readFile(path.join(root, "docs/nutrition/gk-reviewed-portions.json"), "utf8"));
   const { portion } = await projectPortionEvidence(root, recipeId, markdown, reviews[recipeId]);
   assert.deepEqual(portion.availableCarbs, { min: 0.5, max: 0.5 });
+  assert.equal(portion.reviewedSource, "https://glycemicindex.com/faqs/");
   assert.equal(verbalGkForPortion(portion.verbal, 1), "LOW");
   assert.equal(verbalGkForPortion(portion.verbal, 1.5), null);
   assert.equal(originalGlycemicLoadCategory(undefined, portion), "low");
   assert.equal(originalGlycemicLoadCategory(undefined, { availableCarbs: portion.availableCarbs }), null);
   assert.equal(recipeBindingHash(markdown.replace(/^title: .+$/m, 'title: "Toimitettu kuvaus"')), recipeBindingHash(markdown));
+  const changedInstructions = markdown.replace("## Valmistus", "## Valmistus\n\nLisää tarjoiluun leipä.");
+  assert.equal(recipeBindingHash(changedInstructions), recipeBindingHash(markdown));
+  assert.notEqual(portionPreparationHash(changedInstructions), portionPreparationHash(markdown));
+  await assert.rejects(projectPortionEvidence(root, recipeId, changedInstructions, reviews[recipeId]), /preparation or serving notes changed/);
   await assert.rejects(projectPortionEvidence(root, recipeId, markdown.replace("servings: 6", "servings: 7"), reviews[recipeId]), /no longer matches the recipe/);
   await assert.rejects(projectPortionEvidence(root, recipeId, markdown, {
     ...reviews[recipeId], nutritionSha256: createHash("sha256").update("changed").digest("hex"),

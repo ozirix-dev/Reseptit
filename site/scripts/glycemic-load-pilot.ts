@@ -433,7 +433,8 @@ const portions = await Promise.all(originals.map(async recipe => {
   const projection = await projectPortionEvidence(root, recipe.recipeId, source.markdown, review);
   const knownCarbIngredient = review?.knownCarbIngredient;
   if (review && knownCarbIngredient && !projection.portion.driver) {
-    const verified = currentLegacyInputs.get(recipe.recipeId)?.ingredients.find(row => row.name === knownCarbIngredient
+    const actualBinding = recipeBindingHash(source.markdown, recipeAliases.aliases);
+    const verified = (actualBinding === sourceHashes[recipe.recipeId] ? currentLegacyInputs.get(recipe.recipeId) : undefined)?.ingredients.find(row => row.name === knownCarbIngredient
       && row.grams !== null && row.fineliRecordId && row.availableCarbohydratePerServingG !== null
       && row.availableCarbohydratePerServingG > 0 && !row.availableCarbohydratePerServingRangeG && !row.excludedReason);
     const record = foodRecords.find(record => record.id === verified?.fineliRecordId);

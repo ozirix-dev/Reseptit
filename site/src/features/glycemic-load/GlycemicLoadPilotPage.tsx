@@ -7,8 +7,9 @@ import { GlycemicLoadGuide } from './GlycemicLoadGuide';
 import {GkOnlyVariantPanel,gkOnlyUi,gkScopeUi} from '../recipes/GkOnlyVariantPanel';
 import {scopedPolyolDisclosure} from '../recipes/scoped-polyol-disclosure';
 import {recoveryDisclosure} from '../recipes/recovery-disclosure';
-import {formatGlycemicLoadNumber} from '../recipes/gk80-format';
-import {verbalGkForPortion} from '../recipes/gk-portion';
+import { formatOriginalPortionGk } from "../recipes/gk80-format";
+import { describeCarbs, portionCopy as recipePortionCopy, ReviewedPortionSource } from "../recipes/RecipePortionSummary";
+import {originalPortionGk, verbalGkForPortion} from '../recipes/gk-portion';
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useContent } from "@/lib/content";
@@ -59,19 +60,19 @@ const liverRecipeId = "maksalaatikko-kukkakaalilla";
 
 const portionCopy = {
   fi: {
-    grams: (amount: string) => `Imeytyviä hiilihydraatteja noin ${amount} g annoksessa.`,
+    grams: (amount: string) => `Hiilihydraatteja noin ${amount} g annoksessa.`,
     classes: { LOW: "Arvioitu GK on pieni", MEDIUM: "Arvioitu GK on keskisuuri", HIGH: "Arvioitu GK on suuri" },
   },
   en: {
-    grams: (amount: string) => `About ${amount} g of available carbohydrate per serving.`,
+    grams: (amount: string) => `About ${amount} g of carbohydrate per serving.`,
     classes: { LOW: "Estimated GL is low", MEDIUM: "Estimated GL is moderate", HIGH: "Estimated GL is high" },
   },
   sv: {
-    grams: (amount: string) => `Cirka ${amount} g tillgängliga kolhydrater per portion.`,
+    grams: (amount: string) => `Cirka ${amount} g kolhydrater per portion.`,
     classes: { LOW: "Uppskattat GL är lågt", MEDIUM: "Uppskattat GL är medelhögt", HIGH: "Uppskattat GL är högt" },
   },
   th: {
-    grams: (amount: string) => `คาร์โบไฮเดรตที่ร่างกายใช้ได้ประมาณ ${amount} กรัมต่อหนึ่งที่`,
+    grams: (amount: string) => `คาร์โบไฮเดรตประมาณ ${amount} กรัมต่อหนึ่งที่`,
     classes: { LOW: "ค่า GL โดยประมาณอยู่ในระดับต่ำ", MEDIUM: "ค่า GL โดยประมาณอยู่ในระดับปานกลาง", HIGH: "ค่า GL โดยประมาณอยู่ในระดับสูง" },
   },
 } satisfies Record<RecipeLocale, {
@@ -153,7 +154,7 @@ export function GlycemicLoadPilotPage() {
 }
 
 function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycemicOverview"]> }) {
-  const { results, variants, coverage, portionCoverage, portions, reviewedCount } = data;
+  const { results, variants, coverage, portionCoverage, portions, carbsByRecipe, reviewedCount } = data;
   const { recipeEstimateVariants, studyServingVariants } = useMemo(() => ({
     recipeEstimateVariants: new Map(variants.filter(variant => gkVariantScope(variant) === "RECIPE_VARIANT").map(variant => [variant.recipeId, variant])),
     studyServingVariants: new Map(variants.filter(variant => gkVariantScope(variant) === "STUDY_COMPARISON").map(variant => [variant.recipeId, variant])),
@@ -200,10 +201,8 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
   const portionText = portionCopy[locale];
   const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[locale];
   const number = new Intl.NumberFormat(numberLocale, { maximumSignificantDigits: 1, minimumSignificantDigits: 1 });
-  const grams = new Intl.NumberFormat(numberLocale, { maximumFractionDigits: 1 });
   const count = new Intl.NumberFormat(numberLocale);
   const modelled = { fi: "Mallinnettu", en: "Modeled", sv: "Modellerad", th: "ค่าประมาณจากแบบจำลอง" }[locale];
-  const displayNumber = (value: number, modeled: boolean) => formatGlycemicLoadNumber(value, numberLocale, modeled);
   const titleFor = (result: GlycemicLoadPilotPublicResult) =>
     result.localeRoutes[locale]?.title
     ?? (result.recipeId === liverRecipeId ? text.liverTitle : result.title);
@@ -240,9 +239,6 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
     setVisibleLimit(limit);
   }
 
-  const formatValue = (result: GlycemicLoadPilotPublicResult) => result.glycemicLoadRangePerServing
-    ? `${result.assessmentType ? modelled + " " : ""}${text.about} ${displayNumber(result.glycemicLoadRangePerServing.min,!!result.assessmentType)}–${displayNumber(result.glycemicLoadRangePerServing.max,!!result.assessmentType)} ${text.perServing}`
-    : result.glycemicLoadPerServing === null ? text.incomplete : `${result.assessmentType ? modelled + " " : ""}${text.about} ${displayNumber(result.glycemicLoadPerServing,!!result.assessmentType)} ${text.perServing}`;
   function renderRecipe(result: GlycemicLoadPilotPublicResult) {
     const localized = result.localeRoutes[locale] ?? result.localeRoutes.fi;
     const isLiverRecipe = result.recipeId === liverRecipeId;
@@ -251,18 +247,27 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
     const portion = portionFor(result);
     const verbal = portion?.verbal;
     const category = verbalGkForPortion(verbal, 1);
-    const carbs = portion?.availableCarbs;
-    const amount = carbs ? grams.format(carbs.min) : null;
-    const maxAmount = carbs ? grams.format(carbs.max) : null;
+    const carbs = carbsByRecipe?.[result.recipeId];
+    const base = result.status === "CALCULATED" ? originalPortionGk(result) : null;
+    const display = base ? formatOriginalPortionGk(base.estimate, numberLocale, !!result.assessmentType) : null;
+    const numericText = display?.value
+      ? `${result.assessmentType ? modelled + " " : ""}${text.about} ${display.value} ${text.perServing}`
+      : text.incomplete;
+    const portionWords = recipePortionCopy[locale];
     return <li key={result.recipeId} id={result.recipeId} className="glycemic-pilot__recipe" tabIndex={-1}>
       {result === linked ? <p className="eyebrow">{ux.linked}</p> : null}
       <h3><Link to={localized?.routePath ?? result.routePath} lang={isLiverRecipe ? locale : localized ? recipeLocaleFromPath(localized.routePath) : "fi"}>{titleFor(result)}</Link></h3>
       <p className="gk-evidence__scope">{ux.original}</p>
-      {amount !== null ? <p>{portionText.grams(amount === maxAmount ? amount : `${amount}–${maxAmount}`)}</p> : null}
+      {carbs ? <p>{portionText.grams(describeCarbs(carbs.range, numberLocale))} · {portionWords[carbs.definition]}</p> : null}
       {portion?.condition ? <p>{portion.condition[locale]}</p> : null}
+      {portion?.reviewedSource && !verbal && !base ? <p><ReviewedPortionSource source={portion.reviewedSource} locale={locale} /></p> : null}
       {result.status === "CALCULATED" ? <>
-        <p className="gk-evidence__value"><strong>{text.value} · {formatValue(result)}</strong></p>
-        {portion?.classLimitation ? <p>{portion.classLimitation[locale]}</p> : null}
+        <p className="gk-evidence__value"><strong>{text.value} · {numericText}</strong></p>
+        {portion?.classLimitation ? <p>{portion.classLimitation[locale]}</p>
+          : base?.inconsistent ? <p>{portionWords.inconsistent}</p>
+          : base?.omissionLimitsClass ? <p>{portionWords.omitted}</p>
+          : base?.category === "CROSSES_BOUNDARY" ? <p>{portionWords.crossing}</p>
+          : display?.roundingHitsBoundary ? <p>{portionWords.rounding}</p> : null}
         <EstimateSummary result={result} locale={locale} />
         <EstimateDetails result={result} locale={locale}
           notes={<>
@@ -276,6 +281,7 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
         <p className="gk-evidence__value" data-gk-estimate="VERBAL"><strong>{portionText.classes[category]}</strong></p>
         <p>{verbal.rationale[locale]}</p>
         {verbal.condition ? <p>{verbal.condition[locale]}</p> : null}
+        {portion?.reviewedSource ? <p><ReviewedPortionSource source={portion.reviewedSource} locale={locale} /></p> : null}
       </> : <MissingEstimate result={result} locale={locale} explanation={isLiverRecipe ? text.liver : undefined} />}
       {variant ? <GkOnlyVariantPanel variant={variant} locale={locale} compact /> : null}
       {studyServing ? <GkOnlyVariantPanel variant={studyServing} locale={locale} compact /> : null}

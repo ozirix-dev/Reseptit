@@ -1,5 +1,4 @@
-import { classifyPublicGk, gkEstimate, gkEstimateClass } from "../src/features/recipes/gk-estimate";
-import { classLimitedByOmission, verbalGkForPortion, type PortionEvidence } from "../src/features/recipes/gk-portion";
+import { originalPortionGk, verbalGkForPortion, type PortionEvidence } from "../src/features/recipes/gk-portion";
 
 export type GlycemicLoadFilterCategory = "low" | "medium" | "high";
 interface OriginalEstimate {
@@ -18,9 +17,7 @@ export function originalGlycemicLoadCategory(result?: OriginalEstimate, evidence
     const category = !evidence?.condition && !verbal?.condition ? verbalGkForPortion(verbal, 1) : null;
     return category ? category.toLowerCase() as GlycemicLoadFilterCategory : null;
   }
-  const point = result.unroundedGlycemicLoadPerServing ?? result.glycemicLoadPerServing;
-  if (point === null || !Number.isFinite(point) || point < 0 || evidence?.classLimitation) return null;
-  const category = gkEstimateClass(gkEstimate(point, result.glycemicLoadRangePerServing));
-  if (!category || category !== classifyPublicGk(point) || classLimitedByOmission(category, result.omittedAvailableCarbohydratePerServingG)) return null;
+  const { category, omissionLimitsClass } = originalPortionGk(result);
+  if (!category || category === "CROSSES_BOUNDARY" || omissionLimitsClass || evidence?.classLimitation) return null;
   return category.toLowerCase() as GlycemicLoadFilterCategory;
 }

@@ -354,8 +354,13 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.match(await page.locator(".recipe-glycemic-load").innerText(), /GK-arvio[\s\S]*noin 6 \/ annos/);
     const perPortion = page.locator("[data-portion-gk]");
     const originalValue = await perPortion.innerText();
+    const batch = page.getByRole("group", { name: portionCopy.fi.batch, exact: true });
+    assert.equal(await batch.count(), 1);
+    assert.match(await page.locator(".recipe-portion").innerText(), /1\/4.*erästä/);
+    assert.match(await page.locator(".recipe-portion").innerText(), /Tarjoiluleipä ja dippivihannekset eivät sisälly/);
     await page.getByRole("button", { name: recipeUi.fi.increase, exact: true }).click();
     assert.equal(await perPortion.innerText(), originalValue, "changing the batch leaves the eaten portion alone");
+    assert.match(await page.locator(".recipe-portion").innerText(), /1\/5.*erästä/);
     const eatenPortion = page.getByLabel(portionCopy.fi.title, { exact: true });
     await page.keyboard.press("Tab");
     await eatenPortion.focus();
@@ -376,6 +381,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     const researchLink = technical.locator("a").first();
     assert.equal(await researchLink.isVisible(), false);
     assert.match(await hummus.innerText(), /Luotettavuus/);
+    assert.match(await hummus.innerText(), /Hiilihydraatteja noin 25,2 g annoksessa.*kuitu ja polyolit mukana/);
     assert.doesNotMatch(await hummus.innerText(), /HUMAN_GI|CATEGORY_MEAN|CALCULATION_POLICY/);
     const calculation = hummus.locator(".gk-evidence__details").first();
     await calculation.locator("summary").focus();
@@ -410,12 +416,15 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     const pendingGk = page.locator("#fetavaahto-kasvistikuilla");
     await pendingGk.waitFor();
     assert.match(await pendingGk.innerText(), /3,5/);
-    assert.equal(await pendingGk.locator(".gk-evidence__value").count(), 0);
+    assert.equal(await pendingGk.locator('[data-gk-estimate="VERBAL"]').count(), 1);
+    assert.match(await pendingGk.getByRole("link", { name: portionCopy.fi.scopeSource }).getAttribute("href") ?? "", /^https:/);
 
     for (const [id, selector, copy] of [
       ["taytetyt-kananmunat-yrteilla", '[data-gk-status="QUALITATIVE"]', portionCopy.fi.class.LOW],
       ["kylma-oliivioljylevite", '.recipe-portion', "Tarjoiluleipä ei sisälly arvioon"],
       ["tonnikalatayte-kurkkukupeissa", '[data-portion-carbohydrate]', "1,2"],
+      ["malesialainen-nasi-lemak-aamiaisella", ".recipe-portion", "basmati- ja jasmiiniriisin"],
+      ["linssimakaronilaatikko", ".recipe-portion", "Myllyn Paras Makaroni"],
       ["kebab-munakasrulla", '.recipe-portion', "Vehnäjauho"],
       ["mapo-tofu", ".recipe-portion", "kypsää pitkäjyväistä riisiä"],
       ["vhh-kaalikaarryleet", '.recipe-glycemic-load__class', "kasvisryhmän keskiarvo"],
@@ -425,6 +434,10 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       assert.ok((await page.locator(selector).innerText()).includes(copy), id);
       if (id === "mapo-tofu") assert.equal(await page.locator("[data-portion-carbohydrate]").count(), 0);
       if (id === "taytetyt-kananmunat-yrteilla") {
+        const why = page.locator('[data-gk-status="QUALITATIVE"] details');
+        await why.locator("summary").focus();
+        await page.keyboard.press("Enter");
+        assert.equal(await why.getByRole("link").getAttribute("href"), "https://glycemicindex.com/faqs/");
         await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
         assert.equal(await page.getByText(portionCopy.fi.class.LOW, { exact: true }).count(), 0);
         assert.equal(await page.getByText(portionCopy.fi.baseOnly, { exact: true }).count(), 1);

@@ -1,4 +1,4 @@
-import type { GkPortionCoverage, PortionEvidence } from "../features/recipes/gk-portion";
+import type { GkPortionCoverage, PortionCarbs, PortionEvidence } from "../features/recipes/gk-portion";
 import type { GlycemicLoadPilotPublicResult } from "../generated/glycemic-load-pilot.generated";
 import type { GkOnlyVariant, GkVersionCoverage } from "../features/recipes/gk-only-types";
 import { homepagePicks, type HomepageTopic } from "../features/recipes/home-preview";
@@ -35,6 +35,7 @@ export interface RouteContent {
     coverage: GkVersionCoverage;
     reviewedCount: number;
     portionCoverage: GkPortionCoverage;
+    carbsByRecipe?: Record<string, PortionCarbs>;
     portions?: Record<string, PortionEvidence>;
   };
 }
