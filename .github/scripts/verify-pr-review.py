@@ -10,6 +10,7 @@ CODEX_BOT_ID = 199175422
 CODEX_APP_ID = 1144995
 SUMMARY = "<!-- codex-pull-request-review-summary -->"
 SUMMARY_STATE = re.compile(r"<!-- codex-review-state:v1 (\{[^\n]+\}) -->")
+REVIEW_DECISIONS = {"APPROVED", "CHANGES_REQUESTED"}
 THREADS = """
 query($number:Int!, $cursor:String) {
   repository(owner:"ozirix-dev", name:"Reseptit") {
@@ -54,20 +55,22 @@ def codex_receipt(head, comments):
 
 
 def review_state(head, author, reviews, unresolved, comments=()):
-    latest_approvals = {}
+    latest_decisions = {}
+    # GitHub lists reviews chronologically. A new push does not resolve a change request.
     for review in reviews:
-        if review["commit_id"] != head:
-            continue
         user = review["user"]
         state = review["state"]
         if (user["id"] != author and user["type"] == "User"
                 and review.get("maintainer_access")
-                and state in {"APPROVED", "CHANGES_REQUESTED", "DISMISSED"}):
-            latest_approvals[user["id"]] = (state, review["html_url"])
-    if unresolved or any(state == "CHANGES_REQUESTED" for state, _ in latest_approvals.values()):
+                and state in REVIEW_DECISIONS):
+            latest_decisions[user["id"]] = review
+    if unresolved or any(review["state"] == "CHANGES_REQUESTED" for review in latest_decisions.values()):
         raise ValueError("Current PR has unresolved review threads or requested changes")
     receipt = codex_receipt(head, comments)
-    independent = [url for state, url in latest_approvals.values() if state == "APPROVED"]
+    independent = [
+        review["html_url"] for review in latest_decisions.values()
+        if review["state"] == "APPROVED" and review["commit_id"] == head
+    ]
     if not receipt and not independent:
         raise ValueError("No SHA-bound Codex receipt or independent maintainer approval for " + head)
     return {"head": head, "codexReceipt": receipt, "independentApprovals": independent}
@@ -88,8 +91,8 @@ def check(number, head):
     permissions = {}
     for review in reviews:
         user = review["user"]
-        if (review["commit_id"] != head or user["id"] == pr["user"]["id"] or user["type"] != "User"
-                or review["state"] not in {"APPROVED", "CHANGES_REQUESTED", "DISMISSED"}
+        if (user["id"] == pr["user"]["id"] or user["type"] != "User"
+                or review["state"] not in REVIEW_DECISIONS
                 or review["author_association"] not in {"OWNER", "MEMBER", "COLLABORATOR"}):
             continue
         login = user["login"]

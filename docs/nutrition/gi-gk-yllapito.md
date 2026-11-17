@@ -28,7 +28,9 @@ SQLite-välimuistin uudelleen tarkistetusta capturesta.
 JSON sisältää Git-blobit, elinkaariluokat, ajonaikaiset lukijat ja
 testiviitteet. Ajonaikainen seuranta löytää myös hakemistoista ja
 rekistereistä johdetut lukupolut. Historiallisten Git-hakujen ja muiden
-ajopolkujen kattavuus on rajallinen. `UNRESOLVED`-merkintä tarkoittaa, että
+ajopolkujen kattavuus on rajallinen. Kartta sisältää `docs/research`-polun
+tiedoston silloin, kun capture-ajossa havaittiin luku tai koodista löytyi
+viite. `UNRESOLVED`-merkintä tarkoittaa, että
 tiedoston rooli edellyttää selvitystä ennen siirtoa. Historiallinen
 [13.11.2026 auditointi](../architecture/gi-gk-system-audit-2026-11-13.md)
 säilyttää alkuperäiset lähderevisionsa.
@@ -78,6 +80,13 @@ paikalliseen ylläpitohakuun.
 
 ### Ehdotus myöhempää pilottipäätöstä varten
 
+- Rajaa nykyinen vienti tiedonsiirron ja palautuksen harjoitukseen. Jos
+  pilotissa arvioidaan GI-lähteen soveltuvuutta, hyväksy ensin vientiin
+  rekisterin `qualityTier` ja `calculationUse` tai niiden merkityksen
+  säilyttävä esitystapa. Nykyisen viennin `HUMAN_GI` kuvaa havaintotyyppiä.
+  Esimerkiksi Lady Rosettan mittaus kuuluu rekisterissä
+  `SUPPLEMENTARY`-tasolle, ja tämä rajoitus pitää säilyttää käyttöliittymässä
+  ja kyselyissä.
 - Eristä `recipavo-gi-gk-preview` EU-jurisdiktioon. Käytä erillistä
   Cloudflare-tiliä, jos käyttöoikeuksia ei voi rajata pois
   tuotantokatalogista. Tuontioikeus on tilapäinen. Lukuasiakkaalle
@@ -106,6 +115,8 @@ Edellytä tarkalle HEADille Codexin katselmointikuittausta tai riippumattoman
 ylläpitäjän GitHub-hyväksyntää. Ratkaise avoimet katselmointiketjut ja aja
 vaadittu CI ajantasaiselle yhdistettävälle revisiolle. Varmista sen jälkeen
 yhdistämisvaltuus erikseen. Codexin pelkkä 👍 ei kerro katselmoitua SHA:ta.
+Aiempaan committiin jätetty muutospyyntö estää yhdistämisen, kunnes sen
+tekijä hyväksyy muutoksen tai GitHubissa hylätään kyseinen katselmointi.
 
 PR #685 yhdistettiin 2 minuuttia 48 sekuntia ennen Codexin kuittausta.
 Haaran nykyinen GitHub-sääntö vaatii vain `build`-tarkistuksen. Kaikille

@@ -2,6 +2,7 @@ from importlib.util import module_from_spec, spec_from_file_location
 import json
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 
 spec = spec_from_file_location("verify_pr_review", Path(__file__).resolve().parents[2] / ".github/scripts/verify-pr-review.py")
 gate = module_from_spec(spec)
@@ -49,6 +50,34 @@ class ReviewGateTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "requested changes"):
             gate.review_state("current", 1, [review(state="CHANGES_REQUESTED")], 0, [summary()])
 
+    def test_previous_change_request_survives_new_head_and_other_approval(self):
+        request = review(sha="previous", state="CHANGES_REQUESTED")
+        for later in (review(author=3), review(state="COMMENTED"), review(state="DISMISSED")):
+            with self.subTest(later=later), self.assertRaisesRegex(ValueError, "requested changes"):
+                gate.review_state("current", 1, [request, later], 0, [summary()])
+        self.assertEqual(
+            gate.review_state("current", 1, [request, review()], 0)["independentApprovals"],
+            ["review-url"],
+        )
+        with self.assertRaisesRegex(ValueError, "No SHA-bound"):
+            gate.review_state("current", 1, [request, review(sha="intermediate")], 0)
+
+    def test_check_verifies_permissions_for_change_request_from_earlier_commit(self):
+        pr = {"state": "open", "draft": False, "head": {"sha": "current"}, "user": {"id": 1}}
+        request = review(sha="previous", state="CHANGES_REQUESTED")
+        request.pop("maintainer_access")
+        request["user"]["login"] = "maintainer"
+        request["author_association"] = "COLLABORATOR"
+        threads = {"data": {"repository": {"pullRequest": {
+            "headRefOid": "current",
+            "reviewThreads": {"nodes": [], "pageInfo": {"hasNextPage": False}},
+        }}}}
+        with patch.object(gate, "api", side_effect=[pr, [[request]], {"permission": "write"},
+                                                   threads, [[summary()]], pr]) as api:
+            with self.assertRaisesRegex(ValueError, "requested changes"):
+                gate.check(688, "current")
+        api.assert_any_call("repos/ozirix-dev/Reseptit/collaborators/maintainer/permission")
+
     def test_empty_codex_review_requires_an_exact_independent_approval(self):
         own = review(author=1)
         other = review()
@@ -60,4 +89,4 @@ class ReviewGateTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "No SHA-bound"):
             gate.review_state("current", 1, [{**other, "maintainer_access": False}], 0)
         with self.assertRaisesRegex(ValueError, "No SHA-bound"):
-            gate.review_state("current", 1, [other, {**other, "state": "DISMISSED"}], 0)
+            gate.review_state("current", 1, [{**other, "state": "DISMISSED"}], 0)
