@@ -450,11 +450,12 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     const danDan = page.locator('[data-gk-version="gk-operation80-review-ad22de231e93"]');
     assert.match(await danDan.locator("[data-gk-alternatives]").innerText(), /Tuore udon\s+noin 18,5[\s\S]+Hakubaku Somen\s+noin 25/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+    assert.match(await danDan.innerText(), /Lähdearvion erän annosmäärä · 4/);
+
     await page.goto(base + routeFor("pohjoisafrikkalainen-msemen-hunajalla-punnittu-v2", "en"));
     assert.match(await page.locator('[data-gk-status="QUALITATIVE"]').innerText(), /Estimated high GL/);
     assert.match(await page.locator(".recipe-portion").innerText(), /2 pieces/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);
-    assert.match(await danDan.innerText(), /Lähdearvion erän annosmäärä · 4/);
 
     await page.goto(base + routeFor("briossisampylat-joshua-weissman"));
     assert.match(await page.locator('[data-gk-status="QUALITATIVE"]').innerText(), /Suuri arvioitu GK/);

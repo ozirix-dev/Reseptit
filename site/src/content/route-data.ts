@@ -28,7 +28,13 @@ export interface RouteContent {
   translations: TranslationLink[];
   catalog?: RecipeCatalog;
   pagination?: Omit<RecipeLibraryPageData<RecipeSummary>, "items">;
-  glycemicRecipe?: { result: GlycemicLoadPilotPublicResult | null; variants: GkOnlyVariant[]; portionEvidence?: PortionEvidence; pending?: boolean };
+  glycemicRecipe?: {
+    result: GlycemicLoadPilotPublicResult | null;
+    variants: GkOnlyVariant[];
+    portionEvidence?: PortionEvidence;
+    pending?: boolean;
+    reviewedNotesHtml?: string;
+  };
   glycemicOverview?: {
     results: GlycemicLoadPilotPublicResult[];
     variants: GkOnlyVariant[];

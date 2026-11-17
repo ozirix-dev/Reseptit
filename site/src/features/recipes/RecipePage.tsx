@@ -106,8 +106,10 @@ export function RecipePage() {
   );
   // Preserve the sealed recipe's source text. Qualify its legacy note in the
   // public view only when this recipe carries an independently reviewed verbal estimate.
-  const notesHtml = portionEvidence?.verbal && locale === "fi"
-    ? recipe.notesHtml.replace("<strong>GK: ei määritetty.</strong>", "<strong>Numeerista GK-arvoa ei ole määritetty.</strong>")
+  const notesHtml = !withholdNutrition && portionEvidence?.verbal
+    ? glycemicRecipe?.reviewedNotesHtml ?? (locale === "fi"
+      ? recipe.notesHtml.replace("<strong>GK: ei määritetty.</strong>", "<strong>Numeerista GK-arvoa ei ole määritetty.</strong>")
+      : recipe.notesHtml)
     : recipe.notesHtml;
   return <article className="page-section recipe-page"><div className="container container--narrow">
     <nav className="article-breadcrumbs" aria-label={labels.breadcrumb}><Link to={recipe.locale === "fi" ? "/" : `/${recipe.locale === "sv" ? "sv/recept" : `${recipe.locale}/recipes`}/`}>{labels.indexTitle}</Link><span aria-hidden="true">/</span><span>{recipe.title}</span></nav>

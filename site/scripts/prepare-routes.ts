@@ -110,15 +110,17 @@ for (const route of routes) {
     const { recipeId: id, locale, notesHtml } = data.recipe;
     const portionEvidence = glycemicLoadPortions[id];
     const note = reviewedPortions[id]?.verbalNoteEdits?.[locale];
+    let reviewedNotesHtml: string | undefined;
     if (note && portionEvidence?.verbal && !withholdF25Nutrition(id, locale)) {
       if (!note.before || !note.after || /<(?!\/?strong>)/.test(note.after) || notesHtml.split(note.before).length !== 2) {
         throw new Error(`${id}/${locale}: the original GK note changed; review the current wording.`);
       }
-      data.recipe = { ...data.recipe, notesHtml: notesHtml.replace(note.before, () => note.after) };
+      reviewedNotesHtml = notesHtml.replace(note.before, () => note.after);
     }
     data.glycemicRecipe = {
       result: resultsByRecipe.get(id) ?? null,
       portionEvidence,
+      reviewedNotesHtml,
       pending: pending.has(id),
       variants: gkOnlyVariants.filter(variant => variant.recipeId === id),
     };
