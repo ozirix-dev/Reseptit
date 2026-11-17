@@ -14,6 +14,8 @@
 - Muille kategorioille ei aseteta uusia vaatimuksia. Historiallisia reseptejä ja GK-sinettejä ei avata.
 
 ## Erilliset toimitukselliset portit
-Koepaisto/koevalmistus, tuotepakkauksen täsmäys, kuvassa näkyvien ainesten oikeellisuus, käännösten merkityskatselmointi ja omistajan hyväksyntä tehdään ennen lopullista mergeä. Kooditesti ei voi todistaa fyysistä ruoanvalmistusta eikä kuvan ainesosien todellisuutta.
+Katselmoi valmistustapa, annossaanto, hävikkiarviot ja ruokaturvallisuus kirjallisesti. Koekeittiötestit eivät kuulu julkaisuporttiin. Kirjaa arvioiden perusteet ja jätä julkaisu odottamaan, jos olennainen epävarmuus jää ratkaisematta.
+
+Tuotepakkauksen täsmäys, kuvan vastaavuus, julkaistavien käännösten merkityskatselmointi ja omistajan hyväksyntä tarkistetaan ennen yhdistämistä. Tätä ohjetta sovelletaan myös aiemmin laadittuihin välipalaluonnoksiin ja katselmointijonoihin.
 
 Seuranta: [Välipalat – Issue #333](https://github.com/ozirix-dev/Reseptit/issues/333). Tämä tekninen portti ei ole itsessään uusien reseptien julkaisu.

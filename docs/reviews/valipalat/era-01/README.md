@@ -6,7 +6,7 @@ Päiväys: 2026-11-06. **Sisällöt DRAFT; eivät julkaistuja.**
 
 | Resepti | Annosta | Annos | Tilanne |
 | --- | ---: | --- | --- |
-| Rapeat cheddarjuustonaksut | 4 | 3 naksua 12 kappaleesta | Koepaisto ja savupaprika/rasvahävikki |
+| Rapeat cheddarjuustonaksut | 4 | 3 naksua 12 kappaleesta | Paisto-ohje ja savupaprika/rasvahävikki |
 | Yrttiset täytetyt kananmunat | 6 | 2 munanpuolikasta | Majoneesin ja sinapin tuotetiedot, kuoritun munan paino |
 | Yrttinen fetavaahto ja kasvistikkuja | 4 | 1/4 dipistä ja kaikista vihanneksista | Tuotetäsmäys ja kuvat |
 
@@ -18,7 +18,7 @@ Päiväys: 2026-11-06. **Sisällöt DRAFT; eivät julkaistuja.**
 
 ## Julkaisuportit
 
-1. **Koekeittiö**: todellinen massa, ajastus, paiston hävikki, lopputuloksen rakenne.
+1. **Valmistuksen kirjallinen katselmointi**: massa- ja hävikkiarvioiden perusteet, ajastus, rakenteen ja kypsyyden tunnusmerkit sekä turvallisuus. Noudata [voimassa olevaa julkaisuporttia](../release-policy-v1.md).
 2. **Lähteet**: ylläpidettyjen Fineli- ja AFCD-lähteiden täsmäosumat, tuotevalinnat ja ravintoarvot; ks. tämän erän näyttömuistio.
 3. **GK**: laskenta vasta hyväksytyistä GI-lähteistä; muuten näkyviin erillisen politiikan mukainen puuttumistila.
 4. **Kuvat**: yksi kunkin reseptin todellista annosta vastaava alkuperäinen WebP, tarvittavat kuvasuhteet ja laatutarkastus.
