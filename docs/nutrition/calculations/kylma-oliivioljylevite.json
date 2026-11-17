@@ -1,0 +1,42 @@
+{
+  "recipeId": "kylma-oliivioljylevite",
+  "sourceHash": "ba28b699810e6f5720fdcfbf5ccc6cc747493aeca580065babd408371d8f0b2a",
+  "calculatedAt": "2026-11-17",
+  "servings": 15,
+  "scope": "Charged-mass accounting for 15 portions of plain olive-oil spread. The serving bread is excluded.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "ekstraneitsytoliiviöljyä",
+      "record": {
+        "id": "fineli-536",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+        "retrievedAt": "2026-11-17",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "pure olive oil before freezing",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 0.0,
+          "fat": 100.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "The Fineli Release 20 record reports 0 g sugar alcohols for this oil."
+      },
+      "state": "pure olive oil before freezing",
+      "matchEvidence": "The generic olive oil record is a proxy for the macronutrients of pure extra-virgin olive oil.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The whole specified oil mass is edible.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Freezing leaves the ingredient mass unchanged. Accounting excludes any handling loss."
+    }
+  ],
+  "batchId": "batch-653"
+}
