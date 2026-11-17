@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kebab-munakasrulla",
+  "source_path": "reseptit/paaruoat/kebab-munakasrulla.md",
+  "source_sha256": "b35efad551a0502724c3b50d1682d4ac1d7a3ae029ab92a9a132cfb33d698bcc",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-17",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://snellman.fi/fi/reseptit/kebab-munakasrulla/",
+      "https://www.facebook.com/reel/4394458864199285"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kebab-munakasrulla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste, URL ja otsikko tarkistettu main 97f9b0a6:n resepteistä. Pinaatti-tuorejuustotäytteinen munakasrulla on eri resepti. Avoimissa PR:issä ei ole tämän reseptin lisäystä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Määrät ja ainesosat verrattu Snellmanin kirjalliseen reseptiin ja talteen saatuun puheeseen. Käyttäjä valitsi Göransin kastikkeet. Kappalepainot on ilmoitettu arvioina, kastikkeet ja viimeistelyainekset punnittavina määrinä. Painohuomautukset ilmoittavat yksikkö- tai kappalepainon; ne eivät jää annoslaskurin mukana skaalautumattomiksi kokonaispainoiksi."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Taikina lepää 20 minuuttia ja paistetaan 225 asteessa noin 15 minuuttia täysin hyytyneeksi. Kypsät kebablastut kuumennetaan pannulla noin neljässä minuutissa. Rullaus lyhyeltä sivulta, kastikkeista puolet täytteeseen ja puolet päälle."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kananmunapohja kypsennetään kauttaaltaan hyytyneeksi; salaatti, kasvikset ja persilja pestään. Täyte käyttää valmiiksi kypsää Snellman-kebabia. Muna, maito, vehnä, kastikkeiden sinappi ja säilykkeen mahdolliset sulfiitit on huomioitu."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Viisi yhtä suurta annosta ja noin 40 minuutin kokonaisaika alkuperäisen ohjeen mukaan. Täytteen kuumennus ja kasvisten valmistelu tehdään munakkaan paistuessa. Annos ei ole valmistajan erillisen ravintotaulukon 200 gramman annos."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Laskentasyöte tarkistettu riippumattomasti valmistajien etiketeistä ja Fineli Release 20 -tietueista. Puuttuvat tuotepolyolit ja pepperonin lähdevastaavuus on säilytetty avoimina. Kaikki neljä julkista makrokenttää ovat null; erillistä vertailuskenaariota ei julkaista ravintoarvoina."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Käyttäjän päätös: GK jätetään määrittämättä. Tämän muna-maito-vehnäjauhopohjan uunikypsennystä vastaavaa GI-lähdettä ei vahvistettu. Eri lettujen GI-tuloksia ei siirretä tähän eikä tuntematonta GI:tä merkitä nollaksi."
+    }
+  },
+  "supplementary_evidence": {
+    "image_path": "kuvat/paaruoat/kebab-munakasrulla.webp",
+    "image_sha256": "1edb07487e653883fd30da27b201e6fe379f049f72470b2722b4d9782075bfbc",
+    "image_review": "Tekstitön tekoälyhavainne: munakasrulla, naudan kebab, salaatti ja kasvikset, valkoinen ja punainen kastike, miedot pepperonit ja lehtipersilja. Ei Facebook-käyttöliittymää tai logoja.",
+    "physical_cook_test": false,
+    "owner_content_decision": "Käyttäjä 17.11.2026: lisätään resepti ja kuva lopullisena; Göransin kastikkeet; ravintoarvojen laskenta; GK määrittämättä.",
+    "nutrition_scope_decision": "Ravintomenetelmää ei muuteta eikä lähdepuutteita ohiteta. Laskelma säilytetään, julkiset makrot pidätetään."
+  }
+}
