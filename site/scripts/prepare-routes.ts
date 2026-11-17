@@ -61,6 +61,11 @@ for (const locale of locales) {
 const results = [...glycemicLoadPilotResults, ...glycemicLoadAdditionalResults];
 const resultsByRecipe = new Map(results.map(result => [result.recipeId, result]));
 const pending = new Set(glycemicLoadPendingRecipeIds);
+for (const result of results) {
+  if (result.status !== "CALCULATED" && result.incompleteReasons.some(reason => reason.category === "REVIEW_PENDING")) {
+    pending.add(result.recipeId);
+  }
+}
 const originalRecipes = recipes.filter(recipe => recipe.locale === "fi");
 const pendingRows = originalRecipes.filter(recipe => pending.has(recipe.recipeId) && !resultsByRecipe.has(recipe.recipeId)).map(recipe => ({
   recipeId: recipe.recipeId, title: recipe.title, routePath: recipe.routePath,
