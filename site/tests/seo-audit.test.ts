@@ -103,3 +103,13 @@ test("JSON-LD and hydration require active scripts outside inert content", async
     }
   }
 });
+
+test("ingredient markup and JSON-LD must both use the base kitchen quantity", async () => {
+  const page = expectedPages(siteContent.recipes).find(item => item.route === "/avokado-perunasampylat/")!;
+  const html = await readFile(path.join(dist, page.route.slice(1), "index.html"), "utf8");
+  assert.deepEqual(inspectPage(html, page), []);
+  const visible = html.replace("<li>2 kananmunaa</li>", "<li>100 g kananmunaa</li>");
+  assert.ok(inspectPage(visible, page).some(finding => finding.code === "INGREDIENT_SOURCE"));
+  const structured = html.replace('"2 kananmunaa"', '"100 g kananmunaa"');
+  assert.ok(inspectPage(structured, page).some(finding => finding.code === "JSONLD_SOURCE"));
+});

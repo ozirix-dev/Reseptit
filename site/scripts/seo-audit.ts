@@ -11,6 +11,7 @@ import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "../src/f
 import { glycemicLoadMeta, glycemicLoadPath, recipeUi } from "../src/features/recipes/recipe-i18n";
 import { privacyCopy, privacyPaths } from "../src/features/privacy/privacy-copy";
 import type { RecipeEntry, RecipeLocale } from "../src/types/content";
+import { formatRecipeIngredient } from "../src/features/recipes/servings";
 import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 
 const staging = resolveSiteTarget(process.env.RECIPAVO_PREVIEW_ORIGIN);
@@ -94,6 +95,11 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
     return issues;
   }
   const recipe = expected.recipe;
+  const expectedIngredients = (recipe.kitchenIngredients ?? recipe.ingredients).map(ingredient =>
+    formatRecipeIngredient(ingredient, recipe.servings, recipe.servings, recipe.locale));
+  const ingredientList = activeMarkup(html).match(/<ul class="ingredient-list">([\s\S]*?)<\/ul>/i);
+  check(Boolean(ingredientList) && isDeepStrictEqual(texts(ingredientList?.[1] ?? "", "li"), expectedIngredients),
+    "INGREDIENT_SOURCE", "Visible ingredients must match the projected base recipe");
   check(jsonScripts.length === (recipe.image ? 1 : 0), "JSONLD_COUNT", "Recipe JSON-LD requires a recipe image");
   if (recipe.image && jsonScripts.length === 1) try {
     const data = JSON.parse(jsonScripts[0].content);
@@ -103,8 +109,9 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
       "@context": "https://schema.org", "@type": "Recipe", name: recipe.title, description: recipe.description || undefined,
       inLanguage: recipe.locale, recipeCategory: recipe.category, keywords: recipe.tags.length ? recipe.tags.join(", ") : undefined,
       ...(recipe.image ? { image: [recipe.image.src] } : {}), recipeYield: String(recipe.servings),
-      recipeIngredient: recipe.ingredients.map((i) => [i.amount, i.unit, i.item, i.note].filter((v) => v !== null && v !== undefined && v !== "").join(" ")),
-      recipeInstructions: recipe.instructionsText.map((text) => ({ "@type": "HowToStep", text })),
+      recipeIngredient: expectedIngredients,
+      recipeInstructions: [...(recipe.ingredientPreparation ?? []), ...recipe.instructionsText]
+        .map(text => ({ "@type": "HowToStep", text })),
       totalTime: recipe.timeTotalMin ? `PT${recipe.timeTotalMin}M` : undefined,
       ...(Object.keys(nutrition).length ? { nutrition: { "@type": "NutritionInformation", ...nutrition } } : {}),
     }));
