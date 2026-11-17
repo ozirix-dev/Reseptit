@@ -3,8 +3,8 @@ import test from "node:test";
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { portionPreparationHash, projectPortionEvidence } from "../scripts/gk-portion-projection";
-import { originalPortionGk, verbalGkForPortion } from "../src/features/recipes/gk-portion";
+import { loadReviewedPortions, portionPreparationHash, projectPortionEvidence } from "../scripts/gk-portion-projection";
+import { countGkPortionCoverage, originalPortionGk, verbalGkForPortion } from "../src/features/recipes/gk-portion";
 import { originalGlycemicLoadCategory } from "../scripts/glycemic-load-filter";
 import { recipeBindingHash } from "../scripts/glycemic-load-recipe-binding";
 
@@ -50,4 +50,35 @@ test("reviewed verbal GK only applies to the approved recipe portion and current
   await assert.rejects(projectPortionEvidence(root, recipeId, markdown, {
     ...reviews[recipeId], nutritionSha256: createHash("sha256").update("changed").digest("hex"),
   }), /nutrition evidence changed/);
+});
+
+test("partial ingredient quantities remain separate from the whole portion and its GK class", async () => {
+  const reviews = await loadReviewedPortions(root);
+  const bananaId = "malesialainen-kookos-banaanikulho";
+  const banana = readFile(path.join(root, "reseptit/aamupalat", `${bananaId}.md`), "utf8");
+  const brikId = "tunisialainen-brik";
+  const brik = readFile(path.join(root, "reseptit/alkuruoat", `${brikId}.md`), "utf8");
+  const [bananaSource, brikSource] = await Promise.all([banana, brik]);
+  const { portion } = await projectPortionEvidence(root, bananaId, bananaSource, reviews[bananaId]);
+  const { portion: brikPortion } = await projectPortionEvidence(root, brikId, brikSource, reviews[brikId]);
+  assert.equal(portion.ingredientPortion?.amountPerServing, 100);
+  assert.equal(portion.ingredientPortion?.unit, "g");
+  assert.equal(portion.ingredientPortion?.availableCarbsGPerServing, 18.3);
+  assert.equal(brikPortion.ingredientPortion?.amountPerServing, 1);
+  assert.equal(brikPortion.ingredientPortion?.unit, "arkkia");
+  assert.equal(brikPortion.ingredientPortion?.availableCarbsGPerServing, undefined);
+  assert.equal(portion.availableCarbs, undefined);
+  assert.equal(originalGlycemicLoadCategory(undefined, portion), null);
+  const coverage = countGkPortionCoverage([{ numeric: false, carbs: null, evidence: portion, pending: true }]);
+  assert.equal(coverage.foodNoteOnly, 1);
+  assert.equal(coverage.wholePortionCarbs, 0);
+  assert.equal(coverage.pending, 1);
+  const review = reviews[bananaId];
+  const ingredient = review.ingredientPortion!;
+  await assert.rejects(projectPortionEvidence(root, bananaId, bananaSource, {
+    ...review, ingredientPortion: { ...ingredient, ingredientSha256: "changed" },
+  }), /partial ingredient amount no longer matches/);
+  await assert.rejects(projectPortionEvidence(root, bananaId, bananaSource, {
+    ...review, ingredientPortion: { ...ingredient, sourceReview: { ...ingredient.sourceReview!, sha256: "changed" } },
+  }), /source review for the partial ingredient changed/);
 });

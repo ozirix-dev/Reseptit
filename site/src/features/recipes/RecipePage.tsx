@@ -5,7 +5,7 @@ import {GkOnlyVariantPanel,gkScopeUi} from './GkOnlyVariantPanel';
 import {scopedPolyolDisclosure} from './scoped-polyol-disclosure';
 import {recoveryDisclosure} from './recovery-disclosure';
 import { originalPortionCarbs, originalPortionGk } from "./gk-portion";
-import { portionCopy, RecipePortionSummary, VerbalPortionEstimate } from "./RecipePortionSummary";
+import { GkAlternatives, portionCopy, RecipePortionSummary, VerbalPortionEstimate } from "./RecipePortionSummary";
 import { formatOriginalPortionGk } from "./gk80-format";
 import { recipeHeroAvifMedia, recipeHeroSizes } from "./image-layout";
 import type { RecipeImage } from "@/types/content";
@@ -134,13 +134,14 @@ export function RecipePage() {
       </section>
       <section className="recipe-panel" data-nutrition-scope="ORIGINAL_RECIPE"><h2>{hasGkVariant?gkScopeUi[locale].originalNutrition:labels.nutrition}</h2>{hasGkVariant?<p className="recipe-disclosure" data-macro-separation="gk-only"><strong>{gkScopeUi[locale].macroNotice}</strong></p>:null}
         <RecipePortionSummary recipe={recipe} evidence={portionEvidence} carbs={portionCarbs}
-          multiplier={eatenPortion} batchServings={servings} onChange={hydrated && (portionCarbs || glycemicLoad || portionEvidence?.verbal) ? setEatenPortion : undefined} />
+          multiplier={eatenPortion} batchServings={servings} onChange={hydrated && (portionCarbs || glycemicLoad || portionEvidence?.verbal || portionEvidence?.ingredientPortion) ? setEatenPortion : undefined} />
         {withholdNutrition ? <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status={undefinedGkLabel ? "NOT_DEFINED" : "WITHHELD_SOURCE_REVIEW"}><p className="recipe-disclosure">{undefinedGkLabel ? <><strong>{undefinedGkLabel}</strong>. Tähän valmistusversioon ei ole riittävästi luotettavaa GI-lähdetietoa GK:n laskentaan.</> : "GK-arviota ei näytetä ennen tämän reseptin raaka-aine- ja ravintoarvoperustan uudelleentarkistusta."}</p></div> : glycemicLoad ? <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status="CALCULATED">
           <dl className="nutrition-list"><div>
             <dt>{glycemicLoad.assessmentType ? modeledGlLabel : labels.glycemicLoad}</dt>
             <dd aria-live="polite" data-portion-gk>{glValue}{eatenPortion === 1 ? ` ${glUnit}` : ""}</dd>
           </div></dl>
           {classText ? <p className="recipe-glycemic-load__class">{classText}</p> : null}
+          {portionEvidence?.alternatives ? <GkAlternatives choices={portionEvidence.alternatives} locale={locale} multiplier={eatenPortion} /> : null}
           {display?.roundingHitsBoundary && !scaled?.inconsistent && !scaled?.omissionLimitsClass ? <p className="recipe-disclosure">{portionWords.rounding}</p> : null}
           <p className="recipe-glycemic-load__caption">
             <Link to={`${glycemicLoadPath(locale)}#${recipe.recipeId}`} aria-label={`${gkCopy[locale].see} · ${recipe.title}`}>
@@ -170,7 +171,8 @@ export function RecipePage() {
         </details>
         {recipe.dietClass ? <p className="recipe-disclosure">{tools.diet}</p> : null}</section>
       {gkVariants.map(variant => <GkOnlyVariantPanel key={variant.versionId}
-        variant={variant} locale={recipe.locale} servings={servings} originalHasGk={Boolean(glycemicLoad || portionEvidence?.verbal)} originalRecipe={recipe} />)}
+        variant={variant} locale={recipe.locale} servings={servings} originalHasGk={Boolean(glycemicLoad || portionEvidence?.verbal)}
+        originalRecipe={recipe} alternatives={portionEvidence?.versionAlternatives} />)}
       <ChocolateComparison recipeId={recipe.recipeId} locale={recipe.locale} hasGlVariant={hasGkVariant} />
       {notesHtml ? <section className="recipe-panel"><h2>{labels.notes}</h2><div className="rich-text" dangerouslySetInnerHTML={{ __html: notesHtml }} /></section> : null}
       {relatedGuides.length > 0 && <section className="recipe-panel" aria-labelledby="related-guides-title">

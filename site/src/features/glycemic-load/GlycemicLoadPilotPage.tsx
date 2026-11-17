@@ -8,7 +8,7 @@ import {GkOnlyVariantPanel,gkOnlyUi,gkScopeUi} from '../recipes/GkOnlyVariantPan
 import {scopedPolyolDisclosure} from '../recipes/scoped-polyol-disclosure';
 import {recoveryDisclosure} from '../recipes/recovery-disclosure';
 import { formatOriginalPortionGk } from "../recipes/gk80-format";
-import { describeCarbs, portionCopy as recipePortionCopy, ReviewedPortionSource } from "../recipes/RecipePortionSummary";
+import { describeCarbs, GkAlternatives, IngredientPortionDetails, portionCopy as recipePortionCopy, ReviewedPortionSource } from "../recipes/RecipePortionSummary";
 import {originalPortionGk, verbalGkForPortion} from '../recipes/gk-portion';
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
@@ -259,8 +259,9 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
       <h3><Link to={localized?.routePath ?? result.routePath} lang={isLiverRecipe ? locale : localized ? recipeLocaleFromPath(localized.routePath) : "fi"}>{titleFor(result)}</Link></h3>
       <p className="gk-evidence__scope">{ux.original}</p>
       {carbs ? <p>{portionText.grams(describeCarbs(carbs.range, numberLocale))} · {portionWords[carbs.definition]}</p> : null}
+      {portion?.ingredientPortion ? <IngredientPortionDetails ingredient={portion.ingredientPortion} locale={locale} /> : null}
       {portion?.condition ? <p>{portion.condition[locale]}</p> : null}
-      {portion?.reviewedSource && portion.condition && !verbal && !base ? <p><ReviewedPortionSource source={portion.reviewedSource} locale={locale} /></p> : null}
+      {portion?.reviewedSource && (portion.condition || portion.ingredientPortion) && !verbal && !base ? <p><ReviewedPortionSource source={portion.reviewedSource} locale={locale} /></p> : null}
       {result.status === "CALCULATED" ? <>
         <p className="gk-evidence__value"><strong>{text.value} · {numericText}</strong></p>
         {portion?.classLimitation ? <p>{portion.classLimitation[locale]}</p>
@@ -268,6 +269,7 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
           : base?.omissionLimitsClass ? <p>{portionWords.omitted}</p>
           : base?.category === "CROSSES_BOUNDARY" ? <p>{portionWords.crossing}</p>
           : display?.roundingHitsBoundary ? <p>{portionWords.rounding}</p> : null}
+        {portion?.alternatives ? <GkAlternatives choices={portion.alternatives} locale={locale} /> : null}
         <EstimateSummary result={result} locale={locale} />
         <EstimateDetails result={result} locale={locale}
           notes={<>
@@ -283,7 +285,7 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
         {verbal.condition ? <p>{verbal.condition[locale]}</p> : null}
         {portion?.reviewedSource ? <p><ReviewedPortionSource source={portion.reviewedSource} locale={locale} /></p> : null}
       </> : <MissingEstimate result={result} locale={locale} explanation={isLiverRecipe ? text.liver : undefined} />}
-      {variant ? <GkOnlyVariantPanel variant={variant} locale={locale} compact /> : null}
+      {variant ? <GkOnlyVariantPanel variant={variant} locale={locale} compact alternatives={portion?.versionAlternatives} /> : null}
       {studyServing ? <GkOnlyVariantPanel variant={studyServing} locale={locale} compact /> : null}
     </li>;
   }

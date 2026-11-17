@@ -342,80 +342,146 @@
   "kiinalainen-katkarapu-wontonkeitto": {
     "recipeBindingSha256": "b2040e47a37ff64357776b270930f063cf4594434cf7bfcf26c742e57d51d5a0",
     "reviewedAt": "2026-11-18",
-    "reasoning": "kiinalainen-katkarapu-wontonkeitto: wonton-taikina: No source-matched composition and preparation was resolved for “wonton-taikina”; it is not treated as zero.",
-    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md",
+    "reasoning": "Current step 2 uses all 150 g dough; step 4 distributes all wontons and broth into two. Specific product and confirmed carbohydrate definition remain missing, e.g. some manufacturers use sorbitol. Source is representative product only.",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md",
     "condition": {
-      "fi": "Hiilihydraattimäärä riippuu käytetystä wonton-taikinasta. Tarkista sen ravintoarvo pakkauksesta.",
-      "en": "The carbohydrate amount depends on the wonton wrappers used. Check the nutrition label on the pack.",
-      "sv": "Kolhydratmängden beror på vilka wontonplattor du använder. Kontrollera näringsvärdet på förpackningen.",
-      "th": "ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับแผ่นเกี๊ยวที่ใช้ ดูข้อมูลโภชนาการบนบรรจุภัณฑ์"
+      "fi": "Tarkista hiilihydraatit käytetyn wonton-taikinan pakkauksesta. Myös kasvis- tai kanaliemen valinta vaikuttaa annokseen.",
+      "en": "Check the carbohydrate amount on the wonton dough pack. The choice of vegetable or chicken stock also affects the serving.",
+      "sv": "Kontrollera kolhydratmängden på förpackningen till wontondegen. Valet av grönsaks- eller kycklingbuljong påverkar också portionen.",
+      "th": "ตรวจปริมาณคาร์โบไฮเดรตบนบรรจุภัณฑ์แป้งเกี๊ยว การเลือกน้ำซุปผักหรือไก่ก็มีผลต่อหน่วยบริโภค"
     },
-    "preparationSha256": "d626b5b4566259323a19771f8c757911f514b0f2acaaceec5e30ae57da745ab4"
+    "preparationSha256": "d626b5b4566259323a19771f8c757911f514b0f2acaaceec5e30ae57da745ab4",
+    "ingredientPortion": {
+      "index": 1,
+      "ingredientSha256": "04a8a53893947814ad0172d266930877a50bcc451a545d632404ec1870acd743",
+      "labels": {
+        "fi": "wonton-taikinaa",
+        "en": "wonton wrapper dough",
+        "sv": "wontondeg",
+        "th": "แป้งแผ่นเกี๊ยว"
+      },
+      "unit": "g"
+    }
   },
   "lahi-ita-labneh-kulho-zaatarilla": {
     "recipeBindingSha256": "8f09eb69a046a19fa136bef99febae7cf3fc58317b931ebffc4de50bed3893a9",
     "reviewedAt": "2026-11-18",
-    "reasoning": "lahi-ita-labneh-kulho-zaatarilla: labneh: No source-matched composition and preparation was resolved for “labneh”; it is not treated as zero.",
-    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/aamupalat/lahi-ita-labneh-kulho-zaatarilla.md",
+    "reasoning": "100 g labneh for two portions; recipe lacks product/strain. Almarai example names the food group, not a specified brand or authorized substitute.",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/aamupalat/lahi-ita-labneh-kulho-zaatarilla.md",
     "condition": {
-      "fi": "Koko annoksen hiilihydraattiarviosta puuttuu käytetyn labnehin ravintoarvo.",
-      "en": "The whole-serving estimate needs nutrition information for the labneh used.",
-      "sv": "För att uppskatta kolhydraterna i hela portionen behövs näringsvärdet för den labneh som används.",
-      "th": "การประมาณคาร์โบไฮเดรตของทั้งหน่วยบริโภคต้องใช้ข้อมูลโภชนาการของลาบเนห์ที่เลือก"
+      "fi": "Tarkista käytetyn labnehin hiilihydraatit pakkauksesta.",
+      "en": "Check the carbohydrate amount on the pack of your labneh.",
+      "sv": "Kontrollera kolhydratmängden på förpackningen till den labneh du använder.",
+      "th": "ตรวจปริมาณคาร์โบไฮเดรตบนบรรจุภัณฑ์ลาบเนห์ที่เลือก"
     },
-    "preparationSha256": "9c982c7499365fb3b163bc687382d99c9a3f5e79d26583cf0a0cfe7dccd82477"
+    "preparationSha256": "9c982c7499365fb3b163bc687382d99c9a3f5e79d26583cf0a0cfe7dccd82477",
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "8e54d338abc0140fc1bc003e13c6488dd37b957058aac0ecf6623b3ea448989c",
+      "labels": {
+        "fi": "labnehia",
+        "en": "labneh",
+        "sv": "labneh",
+        "th": "ลาบเนห์"
+      },
+      "unit": "g"
+    }
   },
   "tunisialainen-brik": {
     "recipeBindingSha256": "f7286245bf2dc41705649815a36c023ab67e30f2452b6c4c7dd2d11361b844b9",
     "reviewedAt": "2026-11-18",
-    "reasoning": "tunisialainen-brik: filo- tai malsouka-taikinaa: No source-matched composition and preparation was resolved for “filo- tai malsouka-taikinaa”; it is not treated as zero.",
-    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/alkuruoat/tunisialainen-brik.md",
+    "reasoning": "Four sheets across four portions. No sheet mass or product specified; FSANZ record applies to commercial filo only, explicitly not malsouka. Frying oil retention remains unresolved.",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/alkuruoat/tunisialainen-brik.md",
     "condition": {
-      "fi": "Hiilihydraattimäärä riippuu siitä, käytätkö filo- vai malsouka-taikinaa ja paljonko yksi levy painaa.",
-      "en": "The carbohydrate amount depends on the choice of filo or malsouka and how much each sheet weighs.",
-      "sv": "Kolhydratmängden beror på om du väljer filo- eller malsoukadeg och på hur mycket varje ark väger.",
-      "th": "ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับชนิดแป้งที่เลือก ระหว่างฟิโลกับมาลซูกา และน้ำหนักของแต่ละแผ่น"
+      "fi": "Valitse paistamiseen sopivat arkit ja tarkista yhden levyn paino ja ravintoarvo pakkauksesta.",
+      "en": "Choose sheets suitable for frying and check the weight and nutrition information per sheet.",
+      "sv": "Välj ark som lämpar sig för fritering. Kontrollera vikten och näringsvärdet per ark.",
+      "th": "เลือกแผ่นแป้งที่ใช้ทอดได้และตรวจน้ำหนักกับข้อมูลโภชนาการต่อแผ่น"
     },
-    "preparationSha256": "23e5e8708b02b73dbad226491b0f0add620233d66d598a1468264108cee10b6a"
+    "preparationSha256": "23e5e8708b02b73dbad226491b0f0add620233d66d598a1468264108cee10b6a",
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "e80a842fab20b938c7becc137476c6f552844b417f14a4d23e03e3bf62137700",
+      "labels": {
+        "fi": "filo- tai malsouka-taikinalevy",
+        "en": "sheet of filo or malsouka pastry",
+        "sv": "ark filo- eller malsoukadeg",
+        "th": "แผ่นแป้งฟิโลหรือมาลซูกา"
+      },
+      "unit": "arkkia"
+    }
   },
   "kimchi-jjigae": {
     "recipeBindingSha256": "30694611f6c22e9d9907ae989c41673517e94de3303efc32616df107339bf9d8",
     "reviewedAt": "2026-11-18",
-    "reasoning": "kimchi-jjigae: kypsää kimchiä: No source-matched composition and preparation was resolved for “kypsää kimchiä”; it is not treated as zero.",
-    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/paaruoat/kimchi-jjigae.md",
+    "reasoning": "400 g well-fermented kimchi across four portions; unclear brand/composition of kimchi and gochujang and water-versus-stock choice. No substitution with raw cabbage or generic assumed zero.",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/paaruoat/kimchi-jjigae.md",
     "condition": {
-      "fi": "Kimchin ja gochujangin hiilihydraattimäärä vaihtelee tuotteittain. Tarkista molemmat pakkauksesta.",
-      "en": "The carbohydrate content of kimchi and gochujang varies by product. Check both packs.",
-      "sv": "Kolhydratinnehållet i kimchi och gochujang varierar mellan produkter. Kontrollera båda förpackningarna.",
-      "th": "ปริมาณคาร์โบไฮเดรตในกิมจิและโคชูจังต่างกันตามผลิตภัณฑ์ ตรวจฉลากทั้งสองอย่าง"
+      "fi": "Tarkista sekä kimchin että gochujangin hiilihydraatit käytetyistä pakkauksista.",
+      "en": "Check the carbohydrate amount on both the kimchi and gochujang packs.",
+      "sv": "Kontrollera kolhydratmängden på förpackningarna till både kimchin och gochujangen.",
+      "th": "ตรวจปริมาณคาร์โบไฮเดรตบนบรรจุภัณฑ์กิมจิและโคชูจัง"
     },
-    "preparationSha256": "82727566b77439ed30545281fb13a46fbac8720a5d1b388f52d717255a8e7006"
+    "preparationSha256": "82727566b77439ed30545281fb13a46fbac8720a5d1b388f52d717255a8e7006",
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "ca9573737a02d30b3bf5bf07aa3f94108007926e25b2307b5c975907b6dfb08a",
+      "labels": {
+        "fi": "kypsää kimchiä",
+        "en": "well-fermented kimchi",
+        "sv": "välfermenterad kimchi",
+        "th": "กิมจิหมักจนได้ที่"
+      },
+      "unit": "g"
+    }
   },
   "pekingin-ankka": {
     "recipeBindingSha256": "263c2a37e3349dab4de875689582e6275cf7f7473bb63b53a1fd1e202e3f9cfd",
     "reviewedAt": "2026-11-18",
-    "reasoning": "pekingin-ankka: kiinalaisia vehnälettuja: No source-matched composition and preparation was resolved for “kiinalaisia vehnälettuja”; it is not treated as zero.",
-    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/paaruoat/pekingin-ankka.md",
+    "reasoning": "12 pancakes across four servings; no flour mass per pancake or exact commercial food. Hoisin and retained honey glaze are not established. Existing condition may be reused. Do not count numerical honey input as consumed.",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/paaruoat/pekingin-ankka.md",
     "condition": {
-      "fi": "Annoksen hiilihydraattimäärä riippuu vehnälettujen koosta ja käytetystä hoisinkastikkeesta.",
-      "en": "The carbohydrate amount depends on the size of the wheat pancakes and the hoisin sauce used.",
-      "sv": "Kolhydratmängden beror på vetepannkakornas storlek och vilken hoisinsås som används.",
-      "th": "ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับขนาดแผ่นแป้งสาลีและซอสฮอยซินที่ใช้"
+      "fi": "Lettujen koko ja käytetty hoisinkastike vaikuttavat hiilihydraattimäärään.",
+      "en": "Pancake size and the hoisin sauce used affect the carbohydrate amount.",
+      "sv": "Vetepannkakornas storlek och hoisinsåsen som används påverkar kolhydratmängden.",
+      "th": "ขนาดแผ่นแป้งและซอสฮอยซินที่เลือกมีผลต่อปริมาณคาร์โบไฮเดรต"
     },
-    "preparationSha256": "e88534985730ddcdb7bdd5003742b62aa0280143c822ee64f7178ac90b03d10d"
+    "preparationSha256": "e88534985730ddcdb7bdd5003742b62aa0280143c822ee64f7178ac90b03d10d",
+    "ingredientPortion": {
+      "index": 4,
+      "ingredientSha256": "70d0e3f3eaacd7035038c24b05431779de695b7e02f4cc479d2417f71ac87d45",
+      "labels": {
+        "fi": "kiinalaista vehnälettua",
+        "en": "Chinese wheat pancakes",
+        "sv": "kinesiska vetepannkakor",
+        "th": "แผ่นแป้งสาลีจีน"
+      },
+      "unit": "kpl"
+    }
   },
   "sichuan-hot-pot": {
     "recipeBindingSha256": "d4fc8cf8898861fd79613644daf364d0e420a84624f871962cfff33d2d66a199",
     "reviewedAt": "2026-11-18",
-    "reasoning": "sichuan-hot-pot: nuudeleita: No source-matched composition and preparation was resolved for “nuudeleita”; it is not treated as zero.",
-    "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/paaruoat/sichuan-hot-pot.md",
+    "reasoning": "Four shares of 150 g noodles before cooking in the broth; recipe does not specify dry or fresh so no dry-equivalent. Shared pot distribution and stock/chilli paste remain variable. Preserve limitation.",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/paaruoat/sichuan-hot-pot.md",
     "condition": {
-      "fi": "Hiilihydraattimäärä riippuu valituista nuudeleista. Tarkista, koskeeko pakkauksen ravintoarvo kuivaa vai kypsää tuotetta.",
-      "en": "The carbohydrate amount depends on your noodles. Check whether the label refers to dry or cooked noodles.",
-      "sv": "Kolhydratmängden beror på vilka nudlar du väljer. Kontrollera om näringsvärdet gäller torra eller tillagade nudlar.",
-      "th": "ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับเส้นที่เลือก ตรวจว่าข้อมูลบนฉลากใช้กับเส้นแห้งหรือเส้นที่ปรุงแล้ว"
+      "fi": "Määrä perustuu erän jakamiseen neljään yhtä suureen osaan. Yhteisestä padasta otettu nuudeliannos voi olla erikokoinen. Tarkista, koskeeko pakkauksen ravintoarvo kuivaa vai kypsää tuotetta.",
+      "en": "The amount assumes the batch is split into four equal portions. You may take a different amount of noodles from the shared pot. Check whether the label describes dry or cooked noodles.",
+      "sv": "Mängden förutsätter att satsen delas i fyra lika stora portioner. Mängden nudlar du tar ur den gemensamma grytan kan variera. Kontrollera om näringsvärdet gäller torra eller tillagade nudlar.",
+      "th": "ปริมาณนี้คิดจากการแบ่งสูตรเป็นสี่ส่วนเท่า ๆ กัน ปริมาณเส้นที่ตักจากหม้อรวมอาจต่างกัน ตรวจว่าข้อมูลโภชนาการบนฉลากใช้กับเส้นแห้งหรือเส้นสุก"
     },
-    "preparationSha256": "8fde142ab308d77558437871a1807502b1d5c1ca2c0b9254a0808c066492d577"
+    "preparationSha256": "8fde142ab308d77558437871a1807502b1d5c1ca2c0b9254a0808c066492d577",
+    "ingredientPortion": {
+      "index": 12,
+      "ingredientSha256": "474103100e9dc43eb4c2838a22aec5726901b9e337c9126975529d55c0f2376b",
+      "labels": {
+        "fi": "nuudeleita ennen kypsentämistä",
+        "en": "noodles before cooking",
+        "sv": "nudlar före tillagning",
+        "th": "เส้นก่อนปรุง"
+      },
+      "unit": "g"
+    }
   },
   "hummus": {
     "recipeBindingSha256": "0ce1d5130f86d5dc9911ff0eaf1b12b0cf1884e48f87c25b934b1fd5739d86a8",
@@ -454,7 +520,21 @@
       "sv": "Intervallet jämför basmati- och jasminris. Kokosris, ägg och gurka ingår. Sambal, ansjovis och nötter ingår inte.",
       "th": "ช่วงค่านี้เปรียบเทียบข้าวบาสมาทีกับข้าวหอมมะลิ รวมข้าวหุงกะทิ ไข่ และแตงกวา ไม่รวมซัมบัล ปลาแอนโชวี หรือถั่ว"
     },
-    "preparationSha256": "501886d5c527ba36c06ea698ce61afabe30b210c2b59fd4022c884909f643767"
+    "preparationSha256": "501886d5c527ba36c06ea698ce61afabe30b210c2b59fd4022c884909f643767",
+    "alternativeLabels": {
+      "basmati-hot-grain": {
+        "fi": "Basmatiriisi",
+        "en": "Basmati rice",
+        "sv": "Basmatiris",
+        "th": "ข้าวบาสมาที"
+      },
+      "jasmine-hot-grain": {
+        "fi": "Jasmiiniriisi",
+        "en": "Jasmine rice",
+        "sv": "Jasminris",
+        "th": "ข้าวหอมมะลิ"
+      }
+    }
   },
   "xiaolongbao": {
     "recipeBindingSha256": "2db6fc7f6f29149dd0f52a66534f4015109c75b4e4d4eb44dfdf60eb2f38ec4a",
@@ -463,5 +543,570 @@
     "reasoning": "The recipe makes 24 dumplings and declares four servings. No size-independent mass or GK is inferred.",
     "piecesPerServing": 6,
     "preparationSha256": "e2209a5cc8adc21ee01881601172d2ae5844b5ee486dbfcf3064edf2035ba545"
+  },
+  "malesialainen-kookos-banaanikulho": {
+    "recipeBindingSha256": "481813a22745a5217380ebc6d355eeb290fd81d61c30d819196ff7422498a232",
+    "preparationSha256": "12b8e76b3e41c8aeb2a85c396822077c324aea73fb4a8e02a62c7a4dee46ea48",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11049",
+    "reasoning": "The current two-serving dish uses 200 g peeled banana, 40 g dry tapioca pearls and 35 g gula melaka. The historic fingerprint substituted one whole banana, 100 g generic tapioca and 150 g palm sugar. Tapioca flour is not matched to cooked pearl GI, and palm sugar composition/combined portion remains unverified. Fineli Release 20 #11049, peeled fresh banana, 18.3 g available carbohydrate per 100 g. No ripeness-specific GI.",
+    "condition": {
+      "fi": "Tapiokahelmet ja palmusokerisiirappi vaikuttavat myös hiilihydraattimäärään.",
+      "en": "The tapioca pearls and palm sugar syrup also affect the carbohydrate amount.",
+      "sv": "Tapiokapärlorna och palmsockersirapen påverkar också kolhydratmängden.",
+      "th": "เม็ดมันสำปะหลังและน้ำเชื่อมน้ำตาลปาล์มมีผลต่อปริมาณคาร์โบไฮเดรตด้วย"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "fef67e5d19a293201833bb6b000d36dafd4191f71a5e4fce094c376911fbac89",
+      "labels": {
+        "fi": "Kuorittu banaani",
+        "en": "Peeled banana",
+        "sv": "Skalad banan",
+        "th": "กล้วยปอกเปลือก"
+      },
+      "unit": "g",
+      "sourceReview": {
+        "file": "docs/reviews/2026-11-14-kookos-banaanikulho-kielikatselmointi.md",
+        "sha256": "b185ff88c3b357d5f2a7f27098681307e730327dd1aa5b902a1d6edbe56ac4c2"
+      },
+      "availableCarbsGPer100g": 18.3
+    }
+  },
+  "intialainen-masala-dosa": {
+    "recipeBindingSha256": "4bc597a00a7343a5b4006783afa2a749b13f36d11ee891385452204e20fed88c",
+    "preparationSha256": "5fa3e06db74ddd58b855bf7fd454c1b93a7ec26039532cfb5ff332e47fbf4691",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/205",
+    "reasoning": "Current recipe uses 250 g store-bought chilled batter and 250 g peeled potatoes, for two. The legacy raw-rice/urad ratio and separate filling quantities cannot be carried over. Named gap is the actual batter product; use label instead of old ingredient or GI assumptions. Fineli #205 raw, peeled mature potato. Generic composition, not cultivar-specific; prepared batter has no exact current source.",
+    "condition": {
+      "fi": "Valmista dosataikinaa käytettäessä tarkista sen hiilihydraatit pakkauksesta.",
+      "en": "Check the carbohydrate amount on the pack of ready-made dosa batter.",
+      "sv": "Kontrollera kolhydratmängden på förpackningen till den färdiga dosasmeten.",
+      "th": "ตรวจปริมาณคาร์โบไฮเดรตของแป้งโดซาสำเร็จรูปบนบรรจุภัณฑ์"
+    },
+    "ingredientPortion": {
+      "index": 1,
+      "ingredientSha256": "34d47aca18ec260f42cc4a301d4fcae6ea3ecaf676a8dce4e8fd0be46fe1b85b",
+      "labels": {
+        "fi": "Kuorittu peruna (raaka)",
+        "en": "Peeled potato (raw)",
+        "sv": "Skalad potatis (rå)",
+        "th": "มันฝรั่งดิบปอกเปลือก"
+      },
+      "unit": "g",
+      "sourceReview": {
+        "file": "docs/reviews/2026-11-14-intialainen-masala-dosa-kielikatselmointi.md",
+        "sha256": "e3d7532c06914dccd23ceb1f2b07858ff79a8e412bc5afaa375efd1bbf67fc30"
+      }
+    }
+  },
+  "meksikolainen-molletes-pico-de-gallolla": {
+    "recipeBindingSha256": "e94d6d261104c9f72b4f7b2ce7e157da9e390d202a4097a1b5f5260f794cb00d",
+    "preparationSha256": "2c7612c40efbf0e1b3db31b25ac04889abade523de1151ef72e29ba3a03dbde9",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fdc.nal.usda.gov/food-details/2644285/nutrients",
+    "reasoning": "The two-serving 150 g drained bean row is intentionally preserved in the new recipe. The legacy 20.01 point belongs to earlier ingredient/preparation binding; bolillo composition and product/bread GI correspondence must be reviewed separately. Do not promote the soft wheat bread roll proxy to current bolillo. USDA Foundation Foods FDC 2644285 confirms the drained and rinsed form, as recorded in the current recipe review. Polyol information is absent. Use only as a known ingredient; do not use an ingredient or whole-portion carbohydrate number.",
+    "condition": {
+      "fi": "Annoksen hiilihydraattimäärä riippuu myös käytetystä bolillosämpylästä.",
+      "en": "The carbohydrate amount also depends on the bolillo roll used.",
+      "sv": "Kolhydratmängden beror också på vilket bolillobröd som används.",
+      "th": "ปริมาณคาร์โบไฮเดรตยังขึ้นอยู่กับขนมปังโบลิโยที่ใช้"
+    },
+    "ingredientPortion": {
+      "index": 1,
+      "ingredientSha256": "13ad2872849b129544eeba52cd3cd8b7955ef450daaa3e926d868ad645c0dff6",
+      "labels": {
+        "fi": "Valutetut mustapavut",
+        "en": "Drained black beans",
+        "sv": "Avrunna svarta bönor",
+        "th": "ถั่วดำสะเด็ดน้ำ"
+      },
+      "unit": "g",
+      "sourceReview": {
+        "file": "docs/reviews/2026-11-14-molletes-kielikatselmointi.md",
+        "sha256": "b7924dcc9ba739c00233785080d60ac2ac22ea83b67f1ffbbc496c53a7a6a5f8"
+      }
+    }
+  },
+  "korealainen-bataatti-riisikulho": {
+    "recipeBindingSha256": "a921e5295485b36490d7545565049201e69e2f82894474d15bcd5f364c615f7b",
+    "preparationSha256": "ccaa3a7d33c1108a378ad7f458353f052fec6dcaa59d4c47fbb6e9a0a979fe84",
+    "reviewedAt": "2026-11-18",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg20.pdf",
+    "reasoning": "Current white rice is short-grain. Old inputs used dry long-grain rice, 130 g rather than 250 g peeled sweet potato, and 150 g rather than 20 g gochujang. Cultivar and roasting state of sweet potato, and the paste label, remain unresolved. USDA SR28 NDB 20452 raw white unenriched short-grain rice. Carbohydrate by difference; no normalized or numerical public claim.",
+    "condition": {
+      "fi": "Myös bataatti ja valittu gochujang vaikuttavat hiilihydraattimäärään.",
+      "en": "The sweet potato and the gochujang used also affect the carbohydrate amount.",
+      "sv": "Även sötpotatisen och den gochujang som används påverkar kolhydratmängden.",
+      "th": "มันเทศและโคชูจังที่เลือกมีผลต่อปริมาณคาร์โบไฮเดรตด้วย"
+    },
+    "ingredientPortion": {
+      "index": 1,
+      "ingredientSha256": "7c8781bdd152e16b296db17c638143df0de6534ca2eea0636940bd918400e254",
+      "labels": {
+        "fi": "Lyhytjyväinen riisi (kuivapaino)",
+        "en": "Short-grain rice (dry weight)",
+        "sv": "Rundkornigt ris (torrvikt)",
+        "th": "ข้าวเมล็ดสั้น (น้ำหนักก่อนหุง)"
+      },
+      "unit": "g",
+      "sourceReview": {
+        "file": "docs/reviews/2026-11-14-korealaiset-riisikulhot-kielikatselmointi.md",
+        "sha256": "1afea527c54c9fd60294ac49542a89915423e07f3425a01ff3326e9e118a687e"
+      }
+    }
+  },
+  "japanilainen-dashimaki-tamago-aamiaislautasella": {
+    "recipeBindingSha256": "328d19ffcf9668c120d854e2ede4afe306eb10fb04b74bd0377a8e5b1a8fc62e",
+    "preparationSha256": "7ce3028c07c739a362b1def5ab815649a60f58ab3c1be3827663c9d53e724ddb",
+    "reviewedAt": "2026-11-18",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg20.pdf",
+    "reasoning": "Use 100 g short-grain rice in two portions, 30 ml ready-made dashi and 5 ml soy sauce. Historical 200 ml dashi or broth reconstituted per a particular powder formula and long-grain rice are separate. Do not reuse study version carbohydrate or GK. USDA SR28 NDB 20452 raw white unenriched short-grain rice. Carbohydrate by difference; no normalized or numerical public claim.",
+    "condition": {
+      "fi": "Koko annoksen arvioon tarvitaan myös käytetyn dashiliemen ravintoarvo.",
+      "en": "The whole-serving estimate also needs nutrition information for the dashi used.",
+      "sv": "För hela portionen behövs även näringsvärdet för den dashibuljong som används.",
+      "th": "การประมาณทั้งหน่วยบริโภคต้องใช้ข้อมูลโภชนาการของน้ำซุปดาชิด้วย"
+    },
+    "ingredientPortion": {
+      "index": 3,
+      "ingredientSha256": "7c8781bdd152e16b296db17c638143df0de6534ca2eea0636940bd918400e254",
+      "labels": {
+        "fi": "Lyhytjyväinen riisi (kuivapaino)",
+        "en": "Short-grain rice (dry weight)",
+        "sv": "Rundkornigt ris (torrvikt)",
+        "th": "ข้าวเมล็ดสั้น (น้ำหนักก่อนหุง)"
+      },
+      "unit": "g",
+      "sourceReview": {
+        "file": "docs/reviews/2026-11-14-dashimaki-kielikatselmointi.md",
+        "sha256": "8587cb71c4f4211acedfa7f830fd1594c8ad1fc5308975623bd69824979f9bab"
+      }
+    }
+  },
+  "korealainen-tofu-kimchi-aamiaiskulho": {
+    "recipeBindingSha256": "0c4854b0e0e345934f13a4bf6c5d178030742dcd3e3f0e7c6bde616a5f86e8d1",
+    "preparationSha256": "1402d24efb9094ca209934a2a2e6d90f94071e839aebbab14c4396caf8476ce2",
+    "reviewedAt": "2026-11-18",
+    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg20.pdf",
+    "reasoning": "Current uses 200 g drained tofu, 150 g napa cabbage kimchi, 100 g raw white short-grain rice and 6 g sesame across two portions. Historic inputs include 100 g tofu and 100 g sesame, with dry long-grain rice. Kimchi product composition and preparation-specific GI availability remain unknown. USDA SR28 NDB 20452 raw white unenriched short-grain rice. Carbohydrate by difference; no normalized or numerical public claim.",
+    "condition": {
+      "fi": "Tarkista käytetyn kimchin hiilihydraattimäärä pakkauksesta.",
+      "en": "Check the carbohydrate amount on the pack of the kimchi you use.",
+      "sv": "Kontrollera kolhydratmängden på förpackningen till den kimchi du använder.",
+      "th": "ตรวจปริมาณคาร์โบไฮเดรตของกิมจิที่เลือกบนบรรจุภัณฑ์"
+    },
+    "ingredientPortion": {
+      "index": 2,
+      "ingredientSha256": "7c8781bdd152e16b296db17c638143df0de6534ca2eea0636940bd918400e254",
+      "labels": {
+        "fi": "Lyhytjyväinen riisi (kuivapaino)",
+        "en": "Short-grain rice (dry weight)",
+        "sv": "Rundkornigt ris (torrvikt)",
+        "th": "ข้าวเมล็ดสั้น (น้ำหนักก่อนหุง)"
+      },
+      "unit": "g",
+      "sourceReview": {
+        "file": "docs/reviews/2026-11-14-korealaiset-riisikulhot-kielikatselmointi.md",
+        "sha256": "1afea527c54c9fd60294ac49542a89915423e07f3425a01ff3326e9e118a687e"
+      }
+    }
+  },
+  "japanilainen-okayu-umeboshipluumulla": {
+    "recipeBindingSha256": "27cbfae6067e0d2ba635b50d46a9c54978f1879ee70e353524a913b4e32db040",
+    "preparationSha256": "31326687977ae5a93574e7794f3a0fa9e75c70a24777c1eab21d616e6b522cbf",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/156",
+    "reasoning": "Current two-serving recipe is 100 g dry white rice and 700 ml water cooked softly for 45 minutes with 10 g pitted salted umeboshi, 20 g scallion and 8 g sesame. The legacy liquid blocker is obsolete because current source explicitly specifies water; it does not establish a replacement GK. Umeboshi composition and porridge-appropriate rice GI remain unknown. Fineli Release 20 #156 raw porridge rice gives a representative carbohydrate source for porridge. The recipe specifies no cultivar so no numerical transfer.",
+    "condition": {
+      "fi": "Riisi keitetään vedessä. Myös käytetty umeboshi vaikuttaa koko annoksen hiilihydraattimäärään.",
+      "en": "The rice is cooked in water. The umeboshi used also affects the carbohydrate content of the full portion.",
+      "sv": "Riset kokas i vatten. Vilken umeboshi du använder påverkar också kolhydratmängden i hela portionen.",
+      "th": "หุงข้าวด้วยน้ำ อุเมะโบชิที่ใช้มีผลต่อปริมาณคาร์โบไฮเดรตของทั้งหน่วยบริโภคด้วย"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "de735cbc1fa3b1e41946d16a0be3125fc59b0385dfd2925d01d846cb609e7825",
+      "labels": {
+        "fi": "Valkoinen riisi (kuivapaino)",
+        "en": "White rice (dry weight)",
+        "sv": "Vitt ris (torrvikt)",
+        "th": "ข้าวขาว (น้ำหนักก่อนหุง)"
+      },
+      "unit": "g",
+      "sourceReview": {
+        "file": "docs/reviews/2026-11-14-japanilainen-okayu-umeboshipluumulla-kielikatselmointi.md",
+        "sha256": "30699da052f11aea0271bb305feaecc67d2fe1ddae00a00c0f1698458985e015"
+      }
+    }
+  },
+  "indonesialainen-tempeh-munakulho": {
+    "recipeBindingSha256": "2dd59e289e7786333b7277f98935cc9de52dfbb7e38948206dee2d7eeb3d70dc",
+    "preparationSha256": "90635192f6f28fb0bebb7ab043c560d5b0dfed89ea91e51be84d18729b90cb37",
+    "reviewedAt": "2026-11-18",
+    "source": "https://matvaretabellen.mattilsynet.io/en/rice-jasmin-uncooked/",
+    "reasoning": "Current two-serving dish names dry jasmine rice, 100 g soy tempeh, 2 eggs and 10 g sambal oelek. Legacy dry long-grain generic rice does not certify current cultivar/preparation GI. Exact sambal composition and suitable soy-tempeh preparation GI evidence are unresolved. Norwegian Food Composition Table, uncooked jasmine rice, 79.6 g carbohydrate per 100 g, dietary fibre separate. Supports a named rice contribution.",
+    "condition": {
+      "fi": "Tarkista käytetyn sambal oelekin hiilihydraattimäärä pakkauksesta.",
+      "en": "Check the carbohydrate amount on the pack of the sambal oelek used.",
+      "sv": "Kontrollera kolhydratmängden på förpackningen till den sambal oelek som används.",
+      "th": "ตรวจปริมาณคาร์โบไฮเดรตของซัมบัลโอเล็กที่เลือกบนบรรจุภัณฑ์"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "5403e381ac97f27e4b71a3db3b0d535a26e5b191186ba1d84075135920679e56",
+      "labels": {
+        "fi": "Jasmiiniriisi (kuivapaino)",
+        "en": "Jasmine rice (dry weight)",
+        "sv": "Jasminris (torrvikt)",
+        "th": "ข้าวหอมมะลิ (น้ำหนักก่อนหุง)"
+      },
+      "unit": "g",
+      "sourceReview": {
+        "file": "docs/reviews/2026-11-14-indonesialainen-tempeh-munakulho-kielikatselmointi.md",
+        "sha256": "5c505aa83b0dc61ff0d69af8a851aa49e90f03a6fd36bda69865efaac4a76351"
+      }
+    }
+  },
+  "dim-sum": {
+    "recipeBindingSha256": "54ff478450fa93d4cee4bef9c74352075f85fc341b08f7f6c712a97bbf311f46",
+    "preparationSha256": "c1171d00eb176b367f01873e56e38cf684df1ab86c3a421a00be9f0e1af155c3",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/alkuruoat/dim-sum.md",
+    "reasoning": "Recipe uses 12 wrappers and eight bao in four servings, but neither wrapper mass/supplier nor bao weight and matching composition are specified. Source is only an example of wheat-based wrappers. No grams or total from a generic piece mass.",
+    "condition": {
+      "fi": "Annokseen kuuluu myös bao-sämpylöitä. Tarkista kuorien ja sämpylöiden ravintoarvot pakkauksista.",
+      "en": "The serving also includes bao buns. Check both packs for the wrappers’ and buns’ nutrition information.",
+      "sv": "Portionen innehåller också baobröd. Kontrollera näringsvärdena för plattorna och bröden på förpackningarna.",
+      "th": "หนึ่งหน่วยบริโภคมีซาลาเปาด้วย ตรวจข้อมูลโภชนาการของแผ่นเกี๊ยวและซาลาเปาบนบรรจุภัณฑ์"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "f6800041751d0ad78be431fdcd7d9db067c831e42aeb5721a9447385dfdad72e",
+      "labels": {
+        "fi": "dumpling-taikinalevyä",
+        "en": "dumpling wrappers",
+        "sv": "dumplingplattor",
+        "th": "แผ่นเกี๊ยว"
+      },
+      "unit": "kpl"
+    }
+  },
+  "tangyuan": {
+    "recipeBindingSha256": "39a11b2935aea0ac434d1d055d918e7c0dfcc308156ac1456e6758ae1bd11ed4",
+    "preparationSha256": "dcc80c29c4ab9e0dc3fc1a5807f44a44806eec617f817c3ba4208cea697edd9f",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/jalkiruoat/tangyuan.md",
+    "reasoning": "Recipe weighs 250 g glutinous rice flour for four servings (16 balls). Official composition identifies flour. Recipe has 50 g sugar in filling and 60 g ginger broth, with no apportioned broth intake or matching cooked-ball GI. No ingredient or whole-portion carb result implied by the mass.",
+    "condition": {
+      "fi": "Täytteessä on myös sokeria. Inkivääriliemestä tuleva määrä riippuu siitä, paljonko lientä syöt.",
+      "en": "The filling also contains sugar. The amount from the ginger broth depends on how much of it you have.",
+      "sv": "Fyllningen innehåller också socker. Mängden från lagen beror på hur mycket ingefärslag du äter.",
+      "th": "ไส้มีน้ำตาลด้วย ปริมาณจากน้ำขิงขึ้นอยู่กับปริมาณน้ำขิงที่รับประทาน"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "f922fbf3b28ba857b40005ff4e852b02371daae66b7fa33857541af46547fb64",
+      "labels": {
+        "fi": "tahmeaa riisijauhoa",
+        "en": "glutinous rice flour",
+        "sv": "klibbigt rismjöl",
+        "th": "แป้งข้าวเหนียว"
+      },
+      "unit": "g"
+    }
+  },
+  "nasi-lemak": {
+    "recipeBindingSha256": "46e8adf3e40b3a578826e4e3d043129957880ff4dd3ff119711292cf89e0e40c",
+    "preparationSha256": "9e0635a18b41366e3814c58fbdf41e33ef0729b340eee565482ecdb995831636",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/paaruoat/nasi-lemak.md",
+    "reasoning": "300 g dry-input jasmine rice across four servings. The official dry jasmine row supports source identification only. Need cooked rice+coconut match, sambal formulation and apportioned sides for full estimate.",
+    "condition": {
+      "fi": "Riisi kypsennetään kookosmaidossa. Myös annokseen kuuluva sambal vaikuttaa hiilihydraattimäärään.",
+      "en": "The rice is cooked in coconut milk. The sambal served with it also affects the carbohydrate amount.",
+      "sv": "Riset kokas i kokosmjölk. Sambalen som serveras till påverkar också kolhydratmängden.",
+      "th": "ข้าวหุงในกะทิ ซัมบัลที่เสิร์ฟด้วยมีผลต่อปริมาณคาร์โบไฮเดรตเช่นกัน"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "dbed970eb5cdf8b64559757e596816c59ce1af4dcc88997fd4061383535f5867",
+      "labels": {
+        "fi": "jasmiiniriisiä kuivapainona",
+        "en": "jasmine rice by dry weight",
+        "sv": "jasminris i torrvikt",
+        "th": "ข้าวหอมมะลิน้ำหนักแห้ง"
+      },
+      "unit": "g"
+    }
+  },
+  "dal-makhani": {
+    "recipeBindingSha256": "9d1199d32b4e8a01784221c293d6b13887a72af5506e06f25e02050cda23658f",
+    "preparationSha256": "c402ce74edf844d840dec0256c8e27087a5d62d0a888b600d6d03f672dbfcdee",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/paaruoat/dal-makhani.md",
+    "reasoning": "Recipe says both legumes are soaked overnight and starts with rinsing the soaked beans. Input weight is ambiguous. Legacy kidney bean mapping uses boiled composition on 80 g without a matching state, and urad-dal has no matching source. Do not show a numeric per-portion pulse weight as dry or cooked.",
+    "condition": {
+      "fi": "Varmista, punnitsetko urad-dalin ja kidneypavut ennen vai jälkeen liotuksen. Tarvitset ravintoarvon samalle punnitustavalle.",
+      "en": "Check whether you weighed the urad dal and kidney beans before or after soaking. Use nutrition information for that same state.",
+      "sv": "Kontrollera om urad dal och kidneybönorna vägdes före eller efter blötläggning. Använd näringsvärde för samma tillstånd.",
+      "th": "ตรวจว่าชั่งถั่วอูรัดและถั่วแดงก่อนหรือหลังแช่น้ำ ใช้ข้อมูลโภชนาการที่ตรงกับสภาพตอนชั่ง"
+    }
+  },
+  "mala-xiang-guo": {
+    "recipeBindingSha256": "827a115cb3ecb6478e6b3b153881f2b91dc7ba01e2473a58aa663552083bc670",
+    "preparationSha256": "4ac03ca08120ae1818361b90c591f0eeb94988e77c8a4dd4be700df3a78448e8",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/paaruoat/mala-xiang-guo.md",
+    "reasoning": "Optional one lotus root; exact edible mass and consumption unresolved. USDA supports the food/state but gives no mass for the actual root. No generic per-piece estimate.",
+    "condition": {
+      "fi": "Jos käytät valinnaista lootusjuurta, punnitse viipaloitu syötävä osa. Ohjeen kappalemäärä ei kerro sen painoa.",
+      "en": "If you use the optional lotus root, weigh the sliced edible part. The recipe’s piece count does not give its weight.",
+      "sv": "Om du använder den valfria lotusroten, väg den skivade ätliga delen. Antalet säger inte hur mycket den väger.",
+      "th": "หากใส่รากบัว ให้ชั่งส่วนที่หั่นและรับประทานได้ จำนวนชิ้นในสูตรไม่ได้ระบุน้ำหนัก"
+    }
+  },
+  "pellava-puuro-pahkinoilla": {
+    "recipeBindingSha256": "87221d992744cfeaf6e4aebd706a1e1e81af78550f0a681a013f8f53670231f5",
+    "preparationSha256": "4e1e26cb4fd110ee3f0be8800fd342457e518d954c789ed51ad2929459710913",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/aamupalat/pellava-puuro-pahkinoilla.md",
+    "reasoning": "Four portions use 20 g coconut flour. Example label lists fibre separately. Existing legacy record incorrectly uses cow milk for almond drink, so C/GK evidence must not be repurposed.",
+    "condition": {
+      "fi": "Tarkista kookosjauhon ja makeuttamattoman mantelijuoman ravintoarvot käyttämistäsi pakkauksista.",
+      "en": "Check the labels for the coconut flour and unsweetened almond drink you use.",
+      "sv": "Kontrollera näringsvärdena på förpackningarna till ditt kokosmjöl och din osötade mandeldryck.",
+      "th": "ตรวจข้อมูลโภชนาการบนบรรจุภัณฑ์แป้งมะพร้าวและนมอัลมอนด์ไม่หวานที่ใช้"
+    },
+    "ingredientPortion": {
+      "index": 1,
+      "ingredientSha256": "7f7202976bf73d5771f41f2fc454b28e11c4c0f10f2141d628b30d4a6ee0ad68",
+      "labels": {
+        "fi": "kookosjauhoa",
+        "en": "coconut flour",
+        "sv": "kokosmjöl",
+        "th": "แป้งมะพร้าว"
+      },
+      "unit": "g"
+    }
+  },
+  "kana-tagine-sitruunalla": {
+    "recipeBindingSha256": "fa3e306b7b4d628d3f03aae5021c6bf8e9748fb336fbbab62470cb1f470318d1",
+    "preparationSha256": "b24575f021093db39e3d8ab131652940c3d3871ccfb268c23cd90fc377a568b0",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/paaruoat/kana-tagine-sitruunalla.md",
+    "reasoning": "Plausible ingredient carb drivers in the chicken dish are small. Missing consumed side amount/type is much more actionable. Step 5 explicitly suggests couscous or bread separately. No invented serving of either.",
+    "condition": {
+      "fi": "Tarjoiluun ehdotettu couscous tai leipä ei sisälly ohjeen ainesmääriin. Huomioi valitsemasi lisuke erikseen.",
+      "en": "The couscous or bread suggested for serving has no quantity in the recipe. Consider the side you choose separately.",
+      "sv": "Couscous eller bröd föreslås till servering utan angiven mängd. Räkna med ditt valda tillbehör separat.",
+      "th": "สูตรแนะนำให้เสิร์ฟกับคูสคูสหรือขนมปังโดยไม่ระบุปริมาณ ให้พิจารณาเครื่องเคียงที่เลือกแยกต่างหาก"
+    }
+  },
+  "palak-paneer": {
+    "recipeBindingSha256": "6cb4001a9d66c4b9d00a08e6b120095a3917be3b4a08e78173dfb6eaf4d8a694",
+    "preparationSha256": "05a01716a6a19925dbb50be2851a2f2f1ab9bc2b1e072db7b549820ea4e326bd",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/paaruoat/palak-paneer.md",
+    "reasoning": "250 g paneer for four portions. Exact product unspecified; legacy Finnish fresh-cheese proxy is not validated for paneer and spice sources remain unresolved. The named example confirms category, not an exact recipe ingredient.",
+    "condition": {
+      "fi": "Tarkista käytetyn paneerin hiilihydraatit pakkauksesta.",
+      "en": "Check the carbohydrate amount on the pack of the paneer you use.",
+      "sv": "Kontrollera kolhydratmängden på förpackningen till den paneer du använder.",
+      "th": "ตรวจปริมาณคาร์โบไฮเดรตบนบรรจุภัณฑ์พาเนียร์ที่ใช้"
+    },
+    "ingredientPortion": {
+      "index": 1,
+      "ingredientSha256": "f7361330133ce2df20dc048158cbf2dac2af85e40e733574efd31a449e43b6f1",
+      "labels": {
+        "fi": "paneer-juustoa",
+        "en": "paneer cheese",
+        "sv": "paneerost",
+        "th": "ชีสพาเนียร์"
+      },
+      "unit": "g"
+    }
+  },
+  "lammin-chia-puuro-rouva-keto": {
+    "recipeBindingSha256": "7d18d4b251fede1f57adbe5744be34420bab94018d572811a7c7ce74d2aba183",
+    "preparationSha256": "fec300567cd8ffb8cbe2a15555226392ab2fef7da27a07db6983fe9a2acf6886",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/aamupalat/lammin-chia-puuro-rouva-keto.md",
+    "reasoning": "Exact known 7.5 g chocolate per portion. Explicit whole macro WITHHELD gate: chia polyols and chocolate fibre/polyols are unconfirmed. The 14 g label carbohydrate per 100 g does not provide net/available GL carbohydrate evidence.",
+    "condition": {
+      "fi": "Jos vaihdat suklaata, tarkista sen hiilihydraatit pakkauksesta.",
+      "en": "If you use a different chocolate, check the carbohydrate amount on its label.",
+      "sv": "Om du byter choklad, kontrollera kolhydratmängden på förpackningen.",
+      "th": "หากเปลี่ยนช็อกโกแลต ให้ตรวจปริมาณคาร์โบไฮเดรตบนฉลาก"
+    },
+    "ingredientPortion": {
+      "index": 3,
+      "ingredientSha256": "a13e67461474d8425956a8bd47cbe237037a11ad89898cb1e0a4ce2ef7c6c3a4",
+      "labels": {
+        "fi": "Lindt Excellence 90 % -tummaa suklaata",
+        "en": "Lindt Excellence 90% dark chocolate",
+        "sv": "Lindt Excellence 90 % mörk choklad",
+        "th": "ดาร์กช็อกโกแลต Lindt Excellence 90%"
+      },
+      "unit": "g"
+    }
+  },
+  "rasvakaakao-rouva-keto": {
+    "recipeBindingSha256": "4dce5612fd79c917c51a68b89f5daae83235963e9f4bd756f602c87c6f835b2e",
+    "preparationSha256": "70b75e375f4da29c9ff2a3510d1aed61d0f43a3e57b740ccf809dc208c0e6a5c",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/aamupalat/rasvakaakao-rouva-keto.md",
+    "reasoning": "Exact known 15 g chocolate per cup. Whole macros explicitly WITHHELD because fibre and polyol composition is incomplete. No label carbohydrate transfer to available/GK.",
+    "condition": {
+      "fi": "Jos vaihdat suklaata, tarkista sen hiilihydraatit pakkauksesta.",
+      "en": "If you use a different chocolate, check the carbohydrate amount on its label.",
+      "sv": "Om du byter choklad, kontrollera kolhydratmängden på förpackningen.",
+      "th": "หากเปลี่ยนช็อกโกแลต ให้ตรวจปริมาณคาร์โบไฮเดรตบนฉลาก"
+    },
+    "ingredientPortion": {
+      "index": 4,
+      "ingredientSha256": "a13e67461474d8425956a8bd47cbe237037a11ad89898cb1e0a4ce2ef7c6c3a4",
+      "labels": {
+        "fi": "Lindt Excellence 90 % -tummaa suklaata",
+        "en": "Lindt Excellence 90% dark chocolate",
+        "sv": "Lindt Excellence 90 % mörk choklad",
+        "th": "ดาร์กช็อกโกแลต Lindt Excellence 90%"
+      },
+      "unit": "g"
+    }
+  },
+  "karjalanpiirakat-riisipuurolla": {
+    "recipeBindingSha256": "222e71d3610d011b348597905e3dae2c0b7459e2f82bf5116a596383791553b2",
+    "preparationSha256": "f120a602c688163f86b1216a69651cb4b460688568dda0ba4804409fc735676d",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/leivonnaiset/karjalanpiirakat-riisipuurolla.md",
+    "reasoning": "200 g dry rice ÷ 24 pastries is 8⅓ g input per piece at even distribution; label exact for candidate product. Filling yield, adhered flour and butter retention unresolved. Existing GK hold on product/cooking equivalence stays; no claim of cooked weight, finished whole carb or GK.",
+    "condition": {
+      "fi": "Piirakan kuori vaikuttaa myös hiilihydraattimäärään. Kaulintajauhoista osa jää käyttämättä.",
+      "en": "The crust also contributes carbohydrate. Some of the flour used for rolling is left over.",
+      "sv": "Skalet bidrar också med kolhydrater. En del av mjölet som används vid kavling blir över.",
+      "th": "แป้งหุ้มก็ให้คาร์โบไฮเดรต แป้งสำหรับคลึงบางส่วนจะเหลือ"
+    },
+    "ingredientPortion": {
+      "index": 5,
+      "ingredientSha256": "589100408578dfb77d3d6f7559a3b9ac98c2fa41b59d191b4e68e210bb54c199",
+      "labels": {
+        "fi": "puuroriisiä kuivapainona",
+        "en": "porridge rice by dry weight",
+        "sv": "grötris i torrvikt",
+        "th": "ข้าวสำหรับทำโจ๊กน้ำหนักแห้ง"
+      },
+      "unit": "g"
+    }
+  },
+  "raejuustobagelit-ilman-kohotusta": {
+    "recipeBindingSha256": "424e2aed53cb7809cf4617b652b13cb9ee437d1b81f6f75b16d79189e583d14f",
+    "preparationSha256": "51f3c2a6a16ff8923bc885be0ae1a65abace12c0666c586cd0a0cf8b4b044e8a",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/leivonnaiset/raejuustobagelit-ilman-kohotusta.md",
+    "reasoning": "300 g dry flour evenly across six. Recipe has explicit no reliable whole macro/GK yet, uncertain baking powder/egg glaze retention and no source-match baked bagel GI. Valio 6408430043019 confirms named cottage product, but no clinical classification.",
+    "condition": {
+      "fi": "Myös raejuusto vaikuttaa hiilihydraattimäärään. Tarkista käytetyn tuotteen ravintoarvo pakkauksesta.",
+      "en": "Cottage cheese also contributes carbohydrate. Check its nutrition label.",
+      "sv": "Keso bidrar också med kolhydrater. Kontrollera näringsvärdet på förpackningen.",
+      "th": "คอตเทจชีสก็ให้คาร์โบไฮเดรต ตรวจข้อมูลโภชนาการบนบรรจุภัณฑ์"
+    },
+    "ingredientPortion": {
+      "index": 1,
+      "ingredientSha256": "2b46a4d4d30e5855c63cf3265a95854f7bd1385ea386ad5e6fa1b3a7bef2d375",
+      "labels": {
+        "fi": "puolikarkeaa vehnäjauhoa kuivapainona",
+        "en": "medium-ground wheat flour by dry weight",
+        "sv": "halvgrovt vetemjöl i torrvikt",
+        "th": "แป้งสาลีบดปานกลางน้ำหนักแห้ง"
+      },
+      "unit": "g"
+    }
+  },
+  "briossisampylat-joshua-weissman": {
+    "recipeBindingSha256": "62323fc8aa1afd60f9bb8e585276e14fd8080319ad6abf7159daed55c32cfec9",
+    "preparationSha256": "0b2d6f88fa2387aa2166a03494e50b1b031ac18ebf4b500d0504ae31f3fbbf04",
+    "reviewedAt": "2026-11-18",
+    "nutritionSha256": "499b7a0de98cbfcb6cab42ae1d688b986a6643474298df98bc616d472fa35e5c",
+    "reasoning": "Directional review for one of nine buns as published, no burger fillings. Exact source weighs 30 g wheat flour with milk and water for a heated tangzhong, then 480 g additional wheat flour, milk, yeast, sugar, salt, eggs/yolk and butter. Two rises; 190 C for 16–20 min; listed egg wash and melted butter included, no sesame. Verified available carbohydrate 49.46 g per bun, of which the two wheat flour additions supply about 41.93 g; sugar about 5.88 g. Englyst et al. 2003 primary Table 1 (p. 331), French bakery brioche 101 g test portion, GI 70 (SEM 18), and Pasquier pain au lait 94 g, GI 63 (SEM 10), for whole comparators on the glucose scale. Kim et al. 2019 (doi:10.1017/S0007114518003446, Tables 1 and 2) commercial soft wheat roll, GI 56.2 (SEM 11.1), offers a structurally similar leaner comparator. Applying each separate point to 49.46 g gives comparison-only GK 34.62, 31.16, 27.80. Different tangzhong, ingredients, baking and moisture conditions prevent transfer of a point; no comparator is a measured match or a biological bound. The source-specific comparison and 49.46 g in the defined bare bun support a likely high load, not numeric approval. Do not assign whole bun GI to flour or add the same sugar twice. Re-review on ingredient, coating, cooking or size changes. Numeric GK remains withheld in the historic research-of-record.",
+    "source": "https://doi.org/10.1079/BJN2002786",
+    "piecesPerServing": 1,
+    "verbal": {
+      "category": "HIGH",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Arvio koskee yhtä tämän ohjeen yhdeksästä sämpylästä voiteluineen. Se perustuu annoksen hiilihydraatteihin ja samantyyppisen briossin mittaukseen. Tämän esitaikinan vaikutusta ei ole mitattu. Hampurilaisen täytteet eivät sisälly arvioon.",
+        "en": "The estimate covers one of the nine buns, including the egg wash and butter finish. It combines this serving’s carbohydrate amount with a measurement from a similar brioche. The effect of this recipe’s cooked starter has not been measured. Burger fillings are outside the estimate.",
+        "sv": "Uppskattningen gäller en av de nio bullarna, med äggpensling och smör. Den bygger på portionens kolhydratmängd och mätning av en liknande brioche. Effekten av den upphettade fördegen i receptet har inte mätts. Hamburgarfyllningen ingår inte.",
+        "th": "ค่าประมาณนี้ใช้กับขนมปังหนึ่งชิ้นจากทั้งหมดเก้าชิ้น รวมไข่และเนยที่ทาหน้า โดยอ้างอิงปริมาณคาร์โบไฮเดรตต่อหน่วยบริโภคและผลวัดจากบริออชชนิดใกล้เคียง ยังไม่ได้วัดผลของแป้งกวนในสูตรนี้ ไม่รวมไส้เบอร์เกอร์"
+      }
+    }
+  },
+  "hampurilaissampylat-moomie": {
+    "recipeBindingSha256": "3e6789378f609c398272f3fb63b302ac079e222f20c1582d0abc3571f22143b2",
+    "preparationSha256": "c28577fafb18714e970eaff5319d22b3b125919f6d5390e150348f5b031cc0bf",
+    "reviewedAt": "2026-11-18",
+    "nutritionSha256": "69331ed61a6af0d076a0c6037e4fbda9d5f7a014358760edb5031707117c5a3b",
+    "reasoning": "Directional review for one of nine buns as published, no burger fillings. Exact recipe: 473 g semi-coarse wheat flour, 223 g water, 32 g dough butter, 55 g shell-free egg, 56 g sugar, 8 g salt and 10 g dry yeast, two rises, 190 C for 15–18 min, with 48 g butter before and after bake and 9 g sesame topping included. The retained calculation scope incorrectly mentions an egg wash, but rows and recipe agree that the weighed 55 g egg goes in dough and only butter/sesame go on top; no second egg is modeled. Available carbohydrate 45.33 g per bun includes ~38.89 g from refined wheat flour and ~6.22 g sugar. Best independent comparisons: Scazzina et al. 2016 commercial Pagnottelle soft wheat flour roll with sugar (mean GI 62, also reported by study author slide no.22), Kim et al. 2019 (doi:10.1017/S0007114518003446, Tables 1 and 2) soft roll with wheat flour, sugar, milk/fat and yeast (GI 56.2), Wolever et al. 1994 Toronto hamburger bun (mean bread-scale GI 87, glucose-scale ~62 per 2021 supplementary table no. 2212; differing participants and protocol; no double-counting tables as separate studies). The food comparisons translate to comparison-only GK around 28.1 and 25.5. Choice of flour, absence of commercial milk formulation, sugar, butter finish and sesame limit equivalence. Scazzina studied a deliberately high-fibre low-GI sliced bread (41) that would cross the boundary here, but this bun does not replace wheat flour with a fibre-enriched material. No guarantee or lower bound is inferred. No final baked match or numeric approval. Re-review size, recipe, fat finish, sides or process changes.",
+    "source": "https://doi.org/10.1017/S0007114518003446",
+    "piecesPerServing": 1,
+    "verbal": {
+      "category": "HIGH",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Arvio koskee yhtä ohjeen sämpylää, jossa on voita ja seesaminsiemeniä pinnalla. Se perustuu annoksen hiilihydraatteihin ja samantyyppisten vaaleiden sämpylöiden mittauksiin. Hampurilaisen täytteet eivät sisälly arvioon.",
+        "en": "The estimate covers one bun with its butter and sesame topping. It draws on this serving’s carbohydrate amount and measurements from similar white rolls. Burger fillings are outside the estimate.",
+        "sv": "Uppskattningen gäller en bulle med smör och sesamfrön på ytan. Den bygger på portionens kolhydratmängd och mätningar av liknande ljusa bröd. Hamburgarfyllningen ingår inte.",
+        "th": "ค่าประมาณนี้ใช้กับขนมปังหนึ่งชิ้นที่ทาเนยและโรยงา โดยอ้างอิงปริมาณคาร์โบไฮเดรตต่อหน่วยบริโภคและผลวัดจากขนมปังขาวชนิดใกล้เคียง ไม่รวมไส้เบอร์เกอร์"
+      }
+    }
+  },
+  "kevyet-briossisampylat-clever-carrot": {
+    "recipeBindingSha256": "d807f6938b5177c82caab959b7a4077ff826b77ed197c1f90054dd2676042eb9",
+    "preparationSha256": "491e04e6bb3ed50f268194b5bb927ee37c8c52c6df87aaf7d1c02fc450184939",
+    "reviewedAt": "2026-11-18",
+    "nutritionSha256": "3f92e1902da5911f3c31ee7489b906cfd900ba751d2a0e7c402eb59dcb95cf45",
+    "reasoning": "Directional review for one of nine buns as published, no burger fillings. Exact source uses 405 g strong and 45 g semi-coarse wheat flour with water, milk, yeast, sugar, egg, salt and butter. Two rises; 205 C for 15–20 minutes, optional oven steam, listed egg wash included, no sesame or post-bake butter. Verified available carbohydrate 41.27 g per bun, ~37.0 g from flour, ~3.89 g from sugar. Englyst et al. 2003 primary Table 1 p. 331 pain au lait (GI 63) and bakery brioche (GI 70) support a comparison only; both tested products were richer in fat by available carbohydrate than this lighter recipe. Independent alternatives for a less enriched matrix: Scazzina et al. 2016 soft wheat flour roll with sugar GI 62, Kim et al. 2019 soft wheat roll GI 56.2; their comparison-only GK at this portion is 25.59 and 23.19 respectively. Differences in fat, strong flour, raises and optional steam prevent a point assignment. The 20 boundary would correspond to GI about 48.46; Scazzina's deliberately high-fibre sliced bread GI 41 is a real contrary food design, inapplicable to this recipe's conventional white flour and low fibre. Moderate load cannot be ruled out biologically; likely high is a qualitative judgement for the exact published bare bun. Do not present an interval from comparator points or SEM. Keep the numeric HOLD. Re-review flour, steam, size and serving scope changes.",
+    "source": "https://doi.org/10.1079/BJN2002786",
+    "piecesPerServing": 1,
+    "verbal": {
+      "category": "HIGH",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Arvio koskee yhtä ohjeen sämpylää. Se perustuu annoksen hiilihydraatteihin sekä maitosämpylöiden ja vaaleiden sämpylöiden mittauksiin. Keveämpi taikina poikkeaa tutkimusten tuotteista. Täytteet eivät sisälly arvioon.",
+        "en": "The estimate applies to one bun from the recipe. It draws on this serving’s carbohydrate amount and measurements from milk rolls and other soft white rolls. The recipe’s lighter dough differs from those products. Fillings are outside the estimate.",
+        "sv": "Uppskattningen gäller en bulle enligt receptet. Den bygger på portionens kolhydratmängd och mätningar av mjölkbröd och andra ljusa bullar. Den lättare degen skiljer sig från de undersökta produkterna. Fyllning ingår inte.",
+        "th": "ค่าประมาณนี้ใช้กับขนมปังหนึ่งชิ้นตามสูตร โดยอ้างอิงปริมาณคาร์โบไฮเดรตต่อหน่วยบริโภคและผลวัดจากขนมปังนมกับขนมปังขาวเนื้อนุ่ม สูตรนี้ใช้แป้งโดที่เบากว่าผลิตภัณฑ์ที่ศึกษา ไม่รวมไส้"
+      }
+    }
+  },
+  "dan-dan-nuudelit": {
+    "recipeBindingSha256": "fb32ed22ff6c3a4e5e28180a66f38e80830114e0496f70e1a39512bf27397d36",
+    "preparationSha256": "42b7e59545225eb5a491ae57fcaea4365708b412170d48931e15292733132719",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1017/S0007114518003446",
+    "reasoning": "The two values belong only to the approved separate version gk-operation80-review-ad22de231e93. The approved Method A supplement explicitly assigns the fresh udon scenario to the lower endpoint and dry Hakubaku Somen to the upper endpoint. The optional pak choi side is outside both scenarios.",
+    "versionAlternativeLabels": {
+      "versionId": "gk-operation80-review-ad22de231e93",
+      "lower": {
+        "fi": "Tuore udon",
+        "en": "Fresh udon",
+        "sv": "Färsk udon",
+        "th": "อุด้งสด"
+      },
+      "upper": {
+        "fi": "Kuiva Hakubaku Somen",
+        "en": "Dry Hakubaku Somen",
+        "sv": "Torr Hakubaku Somen",
+        "th": "โซเม็งแห้ง Hakubaku"
+      }
+    }
   }
 }

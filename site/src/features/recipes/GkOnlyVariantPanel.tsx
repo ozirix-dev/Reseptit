@@ -7,6 +7,8 @@ import type {RecipeLocale, RecipeEntry} from '@/types/content';
 import type {GkOnlyVariant} from './gk-only-types';
 import {glycemicLoadPath} from './recipe-i18n';
 import { gkVariantScope } from './gk-estimate-scope';
+import type { PortionEvidence } from './gk-portion';
+import { GkAlternatives } from './RecipePortionSummary';
 
 export const gkOnlyUi={
  fi:{title:'Vakioidun version GK',scope:'Arvio koskee vain alla ilmoitettuja määriä ja valmistustarkennuksia. Tälle versiolle ei ole vahvistettu omia ravintoarvoja.',a:'Laskettu GK',b:'Mallinnettu GK-arvio',low:'Luottamus: matala. Ainesosista johdettu arvio, ei valmiin ruoan mittaus.',per:'/ annos',details:'Erillisversion määrät ja valmistus',original:'alkuperäisen ohjeen määrä',prepare:'Valmista alkuperäisen ohjeen mukaan näillä tarkennuksilla.',omission:'Imeytyvää hiilihydraattia ilman vastaavaa GI-arvoa jäi laskelman ulkopuolelle enintään',omissionEnd:'g/annos. Pois jätetyn osuuden vaikutusta ei tulkita nollaksi.',range:'Väli kuvaa vain nimettyjä vertailuskenaarioita. Se ei ole koko ruoan biologinen vaihteluväli tai luottamusväli.',plant:'Kookosmaidolle oletetaan GI-arvo 50. Arvoa ei ole mitattu, eikä lähde rajaa oletuksen epävarmuutta.',trace:'Menetelmä B käyttää erikseen nimetyille pienille mauste- ja siemenmäärille oletettua GI-arvoa 50. Arvoa ei ole mitattu.',sensitivity:'Oletusherkkyys',sensitivityNote:'Koe käyttää valituille epävarmoille osuuksille GI-oletuksia 0–150. Se ei aseta fysiologista ylärajaa eikä kuvaa tilastollista luottamusväliä.',sources:'Lähteet ja rajaukset',method:'GK-menetelmä',coverage:'Kotireseptit, joilla on numeerinen GK alkuperäiselle ohjeelle tai erillisversiolle',aCount:'laskettu arvio (A)',bCount:'mallinnettu arvio (B)',cCount:'vain GK-luokka (C)',missing:'numeerinen GK puuttuu',methodText:'Erillisversion GK-arvio ja alkuperäisen reseptin ravintoarvot koskevat eri ohjeita. Menetelmässä A ainesosan voi jättää pois, jos sille ei löydy vastaavaa GI-arvoa ja siitä tulee alle 1 g imeytyvää hiilihydraattia annosta kohti. Pois jätetyistä aineksista saa kertyä yhteensä alle 2 g imeytyvää hiilihydraattia annosta kohti. Menetelmä B sisällyttää malliin myös erikseen nimetyt pienet määrät. Lähteisiin perustuvat vertailut ja oletusherkkyys esitetään erikseen. Ruokaryhmän yleinen GI-keskiarvo ei yksin riitä erillisversion arvion perusteeksi. Kukin resepti lasketaan kattavuuteen vain kerran.'},
@@ -56,11 +58,13 @@ export const studyServingTitle = {
  th: 'ค่า GL ของอาหารทดลองหนึ่งส่วน',
 };
 
-export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false,originalHasGk=false,originalRecipe}:{variant:GkOnlyVariant;locale:RecipeLocale;servings?:number;compact?:boolean;originalHasGk?:boolean;originalRecipe?:Pick<RecipeEntry,'ingredients'|'kitchenIngredients'|'instructionsText'|'servings'>}){
+export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false,originalHasGk=false,originalRecipe,alternatives}:{variant:GkOnlyVariant;locale:RecipeLocale;servings?:number;compact?:boolean;originalHasGk?:boolean;originalRecipe?:Pick<RecipeEntry,'ingredients'|'kitchenIngredients'|'instructionsText'|'servings'>;alternatives?:PortionEvidence['versionAlternatives']}){
  const t=gkOnlyUi[locale],n=new Intl.NumberFormat(locale,{maximumFractionDigits:3}),Heading=compact?'h4':'h2';
  const text = gkCopy[locale];
  const study = gkVariantScope(v) === 'STUDY_COMPARISON';
  const displayedServings = study ? v.servings : (servings ?? v.servings);
+ const choices = !study && alternatives?.versionId === v.versionId ? alternatives.choices : undefined;
+ const standardBatch = { fi: 'Lähdearvion erän annosmäärä', en: 'Servings in the batch used for the source estimate', sv: 'Antal portioner i satsen från källunderlaget', th: 'จำนวนที่ในสูตรที่ใช้คำนวณค่าประมาณ' }[locale];
  const modelAssumptions = <>
   {v.codingKinds.includes('PLANT50') ? <p>{t.plant}</p> : null}
   {v.codingKinds.includes('TRACE50') ? <p>{t.trace}</p> : null}
@@ -70,6 +74,7 @@ export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false,orig
   {!compact && !originalHasGk ? <p className="gk-evidence__scope">{gkScopeUi[locale].originalMissing}</p> : null}
   {v.limitation ? <p data-gk-limitation="exact-version">{study ? v.limitation[locale] : text.variantLimit}</p> : null}
   <p className="gk-evidence__value"><strong>{study || v.level === 'A' ? t.a : t.b} · {gkOnlyValue(v, locale)} {t.per}</strong></p>
+  {choices ? <GkAlternatives choices={choices} locale={locale} separateVersion /> : null}
   <EstimateConfidence locale={locale} confidence={v.confidence} />
   {study ? null : <p>{v.level === 'A' ? text.modifiedA : text.modifiedB}{v.omittedCho > 0 ? ` ${text.omitted}` : ''}</p>}
   {v.point !== null && v.point < 1 && v.omittedCho > 0 ? <p>{gkScopeUi[locale].partial}</p> : null}
@@ -77,7 +82,10 @@ export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false,orig
   <details className="gk-evidence__details" open={!compact}>
     <summary>{text.how}</summary>
     {study ? null : <p>{t.scope}</p>}
-    {v.limitation && !study ? <p><strong>{v.limitation[locale]}</strong></p> : null}
+    {v.limitation && !study ? <div>
+      {choices ? <p>{standardBatch} · {n.format(v.servings)}</p> : null}
+      <p><strong>{v.limitation[locale]}</strong></p>
+    </div> : null}
     {v.omittedCho > 0 ? <p data-gk-omission="available-cho">{t.omission} {n.format(Math.ceil(v.omittedCho * 10) / 10)} {t.omissionEnd}</p> : null}
     {study ? null : <p>{t.low}</p>}
     {v.sources.some((source) => source.kind === 'HUMAN_GI') ? <p>{text.kinds.published}</p> : null}

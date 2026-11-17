@@ -13,7 +13,22 @@ export interface VerbalGk {
   condition?: LocalizedText;
 }
 
+export interface IngredientPortion {
+  name: LocalizedText;
+  amountPerServing: number;
+  unit: "g" | "kpl" | "arkkia";
+  availableCarbsGPerServing?: number;
+}
+
+export interface NamedGkAlternative {
+  label: LocalizedText;
+  gkPerServing: number;
+}
+
 export interface PortionEvidence {
+  ingredientPortion?: IngredientPortion;
+  alternatives?: NamedGkAlternative[];
+  versionAlternatives?: { versionId: string; choices: NamedGkAlternative[] };
   reviewedSource?: string;
   availableCarbs?: GkRange;
   driver?: { ingredientIndex: number; coversMajority: boolean };
@@ -95,7 +110,7 @@ export function countGkPortionCoverage(rows: {
     if (row.numeric) counts.originalNumeric++;
     else if (verbalGkForPortion(row.evidence?.verbal, 1)) counts.originalVerbal++;
     else if (row.carbs) counts.carbOnly++;
-    else if (row.evidence?.driver) counts.foodNoteOnly++;
+    else if (row.evidence?.driver || row.evidence?.ingredientPortion) counts.foodNoteOnly++;
     else counts.limited++;
   }
   counts.useful = counts.total - counts.limited;

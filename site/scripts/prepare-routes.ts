@@ -62,7 +62,9 @@ const results = [...glycemicLoadPilotResults, ...glycemicLoadAdditionalResults];
 const resultsByRecipe = new Map(results.map(result => [result.recipeId, result]));
 const pending = new Set(glycemicLoadPendingRecipeIds);
 for (const result of results) {
-  if (result.status !== "CALCULATED" && result.incompleteReasons.some(reason => reason.category === "REVIEW_PENDING")) {
+  if (result.portionEvidence?.verbal?.portions.includes(1)) {
+    pending.delete(result.recipeId);
+  } else if (result.status !== "CALCULATED" && result.incompleteReasons.some(reason => reason.category === "REVIEW_PENDING")) {
     pending.add(result.recipeId);
   }
 }
@@ -84,7 +86,7 @@ const coverageRows = originalRecipes.map(recipe => {
     recipeId: recipe.recipeId,
     numeric: !withheld && resultsByRecipe.get(recipe.recipeId)?.status === "CALCULATED",
     carbs: withheld ? null : originalPortionCarbs(recipe.nutrition, evidence),
-    evidence: withheld && evidence ? { driver: evidence.driver } : evidence,
+    evidence: withheld && evidence ? { driver: evidence.driver, ingredientPortion: evidence.ingredientPortion } : evidence,
     pending: pending.has(recipe.recipeId),
   };
 });

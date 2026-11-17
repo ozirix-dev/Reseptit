@@ -1,6 +1,7 @@
 import type { RecipeEntry, RecipeLocale } from "../../types/content";
-import { eatenPortions, scalePortionRange, verbalGkForPortion, type PortionCarbs, type PortionEvidence } from "./gk-portion";
+import { eatenPortions, scalePortionRange, verbalGkForPortion, type IngredientPortion, type NamedGkAlternative, type PortionCarbs, type PortionEvidence } from "./gk-portion";
 import type { GkRange } from "./gk-estimate";
+import { formatGlycemicLoadNumber } from "./gk80-format";
 
 export const portionCopy = {
   fi: {
@@ -8,9 +9,14 @@ export const portionCopy = {
     total: "Reseptin ilmoittama kokonaismäärä, kuitu ja polyolit mukana", net: "Reseptin ilmoittamat nettohiilihydraatit",
     scope: "Arvio koskee reseptin ainesluetteloa. Huomioi erikseen lisätyt lisukkeet ja juomat.",
     fraction: (n: string) => `${n} reseptin annosta`, pieces: (n: string) => `${n} kpl`,
+    sheets: (n: string) => n === "1" ? "1 arkki" : `${n} arkkia`,
     main: (name: string) => `Suurin osa imeytyvistä hiilihydraateista tulee aineksesta: ${name}.`,
     known: (name: string) => `Tunnettu hiilihydraatin lähde: ${name}.`, about: "noin",
     missingCarbs: "Koko annoksen hiilihydraattimäärää ei ole voitu vahvistaa.",
+    ingredientAmount: "Ainesosan määrä ohjeen mukaan",
+    ingredientCarbs: "Imeytyvät hiilihydraatit tässä aineksessa ennen valmistusta",
+    alternatives: "Lasketut GK-vaihtoehdot tässä annoksessa",
+    versionAlternatives: "GK nuudelivalinnan mukaan, yksi erillisversion annos",
     scopeSource: "Katso arvion tai ruokakohtaisen huomion lähde",
     batchShare: (n: string) => n === "1" ? "Yksi annos vastaa koko valmistettavaa erää." : `Yksi annos on 1/${n} valmistettavasta erästä.`,
     inconsistent: "Pistearvio ja skenaarioväli eivät anna samaa GK-luokkaa.",
@@ -24,10 +30,15 @@ export const portionCopy = {
     title: "Portion you eat", batch: "Servings to make", single: "1 recipe serving", carbs: "Carbohydrate in your portion", available: "Excludes fibre and polyols",
     total: "Recipe total, including fibre and polyols", net: "Net carbs as listed in the recipe",
     scope: "The estimate covers the listed ingredients. Count any extra sides and drinks separately.",
-    fraction: (n: string) => `${n} recipe servings`, pieces: (n: string) => `${n} pieces`,
+    fraction: (n: string) => `${n} recipe servings`, pieces: (n: string) => n === "1" ? "1 piece" : `${n} pieces`,
+    sheets: (n: string) => n === "1" ? "1 sheet" : `${n} sheets`,
     main: (name: string) => `Most of the available carbohydrate comes from this ingredient: ${name}.`,
     known: (name: string) => `A known source of carbohydrate: ${name}.`, about: "about",
     missingCarbs: "The carbohydrate content of the full portion could not be confirmed.",
+    ingredientAmount: "Ingredient amount from the recipe",
+    ingredientCarbs: "Available carbohydrate in this ingredient before preparation",
+    alternatives: "Calculated GL alternatives for this portion",
+    versionAlternatives: "GL by noodle choice for one serving of this version",
     scopeSource: "See the source for this estimate or ingredient note",
     batchShare: (n: string) => n === "1" ? "One serving is the whole batch." : `One serving is 1/${n} of the batch you make.`,
     inconsistent: "The point estimate and the scenario range give different GL categories.",
@@ -42,9 +53,14 @@ export const portionCopy = {
     total: "Receptets totala kolhydrater, inklusive fiber och polyoler", net: "Nettokolhydrater enligt receptet",
     scope: "Uppskattningen gäller ingredienserna i listan. Räkna tillbehör och drycker som du lägger till separat.",
     fraction: (n: string) => `${n} receptportioner`, pieces: (n: string) => `${n} st.`,
+    sheets: (n: string) => `${n} ark`,
     main: (name: string) => `Det mesta av de tillgängliga kolhydraterna kommer från den här ingrediensen: ${name}.`,
     known: (name: string) => `En känd kolhydratkälla: ${name}.`, about: "cirka",
     missingCarbs: "Kolhydratmängden i hela portionen har inte kunnat bekräftas.",
+    ingredientAmount: "Mängd av ingrediensen enligt receptet",
+    ingredientCarbs: "Tillgängliga kolhydrater i den här ingrediensen före tillagning",
+    alternatives: "Beräknade GL-alternativ för den här portionen",
+    versionAlternatives: "GL efter nudelval för en portion av den här versionen",
     scopeSource: "Se källan till uppskattningen eller råvaruuppgiften",
     batchShare: (n: string) => n === "1" ? "En portion motsvarar hela satsen." : `En portion är 1/${n} av satsen du lagar.`,
     inconsistent: "Punktuppskattningen och intervallet ger olika GL-kategorier.",
@@ -59,9 +75,14 @@ export const portionCopy = {
     total: "คาร์โบไฮเดรตรวมตามสูตร รวมใยอาหารและโพลิออล", net: "คาร์โบไฮเดรตสุทธิตามที่ระบุในสูตร",
     scope: "ค่าประมาณครอบคลุมวัตถุดิบในรายการเท่านั้น โปรดคิดเครื่องเคียงและเครื่องดื่มที่เพิ่มแยกต่างหาก",
     fraction: (n: string) => `${n} ที่ตามสูตร`, pieces: (n: string) => `${n} ชิ้น`,
+    sheets: (n: string) => `${n} แผ่น`,
     main: (name: string) => `วัตถุดิบที่ให้คาร์โบไฮเดรตที่ใช้ได้มากกว่าครึ่งคือ ${name}`,
     known: (name: string) => `แหล่งคาร์โบไฮเดรตที่ทราบคือ ${name}`, about: "ประมาณ",
     missingCarbs: "ยังยืนยันปริมาณคาร์โบไฮเดรตของอาหารทั้งส่วนไม่ได้",
+    ingredientAmount: "ปริมาณวัตถุดิบตามสูตร",
+    ingredientCarbs: "คาร์โบไฮเดรตที่ใช้ได้ในวัตถุดิบนี้ก่อนปรุง",
+    alternatives: "ค่า GL ที่คำนวณได้สำหรับแต่ละตัวเลือกในส่วนนี้",
+    versionAlternatives: "ค่า GL ตามชนิดเส้นสำหรับหนึ่งที่ของสูตรเวอร์ชันนี้",
     scopeSource: "ดูแหล่งข้อมูลของค่าประมาณหรือข้อสังเกตเรื่องวัตถุดิบ",
     batchShare: (n: string) => n === "1" ? "อาหารหนึ่งที่เท่ากับทั้งหมดที่ทำ" : `อาหารหนึ่งที่เท่ากับ 1/${n} ของทั้งหมดที่ทำ`,
     inconsistent: "ค่าประมาณแบบตัวเลขเดียวกับช่วงค่าจากตัวเลือกให้ระดับ GL ต่างกัน",
@@ -81,6 +102,46 @@ function formatCarbs(value: number, locale: string) {
 export function describeCarbs({ min, max }: GkRange, locale: string) {
   const lower = formatCarbs(min, locale), upper = formatCarbs(max, locale);
   return lower === upper ? lower : `${lower}–${upper}`;
+}
+
+export function IngredientPortionDetails({ ingredient, locale, multiplier = 1 }: {
+  ingredient: IngredientPortion;
+  locale: RecipeLocale;
+  multiplier?: number;
+}) {
+  const t = portionCopy[locale];
+  const gram = locale === "th" ? "กรัม" : "g";
+  const amount = formatCarbs(ingredient.amountPerServing * multiplier, locale);
+  const quantity = { g: `${amount} ${gram}`, kpl: t.pieces(amount), arkkia: t.sheets(amount) }[ingredient.unit];
+  return <dl className="nutrition-list" data-ingredient-portion>
+    <div>
+      <dt>{t.ingredientAmount}</dt>
+      <dd>{ingredient.name[locale]} · {quantity}</dd>
+    </div>
+    {ingredient.availableCarbsGPerServing !== undefined ? <div>
+      <dt>{t.ingredientCarbs}</dt>
+      <dd>{t.about} {formatCarbs(ingredient.availableCarbsGPerServing * multiplier, locale)} {gram}</dd>
+    </div> : null}
+  </dl>;
+}
+
+export function GkAlternatives({ choices, locale, multiplier = 1, separateVersion = false }: {
+  choices: NamedGkAlternative[];
+  locale: RecipeLocale;
+  multiplier?: number;
+  separateVersion?: boolean;
+}) {
+  const t = portionCopy[locale];
+  return <div data-gk-alternatives aria-live="polite" aria-atomic="true">
+    <p>{separateVersion ? t.versionAlternatives : t.alternatives}</p>
+    <dl className="nutrition-list">
+      {choices.map(choice => <div key={choice.label[locale]}>
+        <dt>{choice.label[locale]}</dt>
+        <dd>{t.about} {separateVersion ? formatCarbs(choice.gkPerServing, locale)
+          : formatGlycemicLoadNumber(choice.gkPerServing * multiplier, locale, true)}</dd>
+      </div>)}
+    </dl>
+  </div>;
 }
 
 export function ReviewedPortionSource({ source, locale }: { source: string; locale: RecipeLocale }) {
@@ -114,10 +175,11 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batc
         <div><dt>{t.carbs}</dt><dd data-portion-carbohydrate={carbs.definition}>{t.about} {describeCarbs(scalePortionRange(carbs.range, multiplier), locale)} {locale === "th" ? "กรัม" : "g"}</dd></div>
       </dl> : <p className="recipe-disclosure">{t.missingCarbs}</p>}
       {carbs ? <p className="recipe-disclosure">{t[carbs.definition]}</p> : null}
+      {evidence?.ingredientPortion ? <IngredientPortionDetails ingredient={evidence.ingredientPortion} locale={locale} multiplier={multiplier} /> : null}
     </div>
     {ingredient ? <p>{evidence?.driver?.coversMajority ? t.main(ingredient) : t.known(ingredient)}</p> : null}
     <p className="recipe-disclosure">{evidence?.condition?.[locale] ?? t.scope}</p>
-    {evidence?.reviewedSource && !evidence.verbal ? <p className="recipe-disclosure">
+    {evidence?.reviewedSource && !evidence.verbal && (evidence.condition || ingredient || evidence.ingredientPortion) ? <p className="recipe-disclosure">
       <ReviewedPortionSource source={evidence.reviewedSource} locale={locale} />
     </p> : null}
   </div>;

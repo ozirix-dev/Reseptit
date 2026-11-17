@@ -235,7 +235,8 @@ const legacyResults = rawResults.map((result) => {
     giRecords.find((record) => record.id === ingredient.giRecordId)?.evidenceKind === "PUBLISHED_IMPUTATION");
   return usesImputation ? {...result, assessmentType: "PUBLISHED_IMPUTATION" as const, modelScenario: "POINT_SCENARIO" as const} : result;
 });
-const results = await applyScopedPolyolC(root, await applyRecovery(root, await withdrawQ09Tea(root, await applyGk80Release(root, legacyResults))));
+const namedScenarios = new Map<string, ReadonlyMap<string, number>>();
+const results = await applyScopedPolyolC(root, await applyRecovery(root, await withdrawQ09Tea(root, await applyGk80Release(root, legacyResults, namedScenarios))));
 const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root),buildBlueberryPieVariant(root),...buildThreeCurryVariants(root),buildLindstromBrineVariant(root),...buildReviewedGkVariants(root),...buildPohaHoneyMustardVariants(root),...buildTehoajoVariants(root),...buildTwoAlmondPieVariants(root),...loadAuthorizedGk100Variants(root)];
 const versionCoverage = countGkVersions(results,gkOnlyVariants);
 const report = {
@@ -426,11 +427,36 @@ const gkOnlyModule = `/* Generated. Explicit GK-only version data; parent macros
 await writeFile(path.join(siteDir,'src/generated/gk-only-variants.generated.ts'),gkOnlyModule,'utf8');
 const reviewedPortions = await loadReviewedPortions(root);
 const originals = siteContent.recipes.filter(recipe => recipe.locale === "fi");
+const legacyPublicByRecipe = new Map(legacyPublicResults.map(result => [result.recipeId, result]));
 const portions = await Promise.all(originals.map(async recipe => {
   const source = publishedRecipeSources.get(recipe.recipeId);
   if (isFixtureBuild || !source) return { recipe, projection: null };
   const review = reviewedPortions[recipe.recipeId];
   const projection = await projectPortionEvidence(root, recipe.recipeId, source.markdown, review);
+  if (review?.alternativeLabels) {
+    const scenarios = namedScenarios.get(recipe.recipeId);
+    const labels = Object.entries(review.alternativeLabels);
+    const publicResult = legacyPublicByRecipe.get(recipe.recipeId);
+    const range = publicResult?.glycemicLoadRangePerServing;
+    if (publicResult?.status !== "CALCULATED" || !("modelScenario" in publicResult) || publicResult.modelScenario !== "NAMED_SCENARIO_RANGE"
+      || !range || !scenarios || scenarios.size !== labels.length
+      || Math.min(...scenarios.values()) !== range.min || Math.max(...scenarios.values()) !== range.max
+      || labels.some(([id]) => !scenarios.has(id))) {
+      throw new Error(`${recipe.recipeId}: alternative labels must match the released GK scenarios.`);
+    }
+    projection.portion.alternatives = labels.map(([id, label]) => ({ label, gkPerServing: scenarios.get(id)! }));
+  }
+  if (review?.versionAlternativeLabels) {
+    const { versionId, lower, upper } = review.versionAlternativeLabels;
+    const approved = publicGkOnlyVariants.find(variant => variant.recipeId === recipe.recipeId && variant.versionId === versionId);
+    if (!approved?.scenarioRange || approved.point !== null || !approved.limitation) {
+      throw new Error(`${recipe.recipeId}: the reviewed separate-version comparison is unavailable.`);
+    }
+    const { min, max } = approved.scenarioRange;
+    projection.portion.versionAlternatives = { versionId, choices: [
+      { label: lower, gkPerServing: min }, { label: upper, gkPerServing: max },
+    ] };
+  }
   const knownCarbIngredient = review?.knownCarbIngredient;
   if (review && knownCarbIngredient && !projection.portion.driver) {
     const actualBinding = recipeBindingHash(source.markdown, recipeAliases.aliases);
@@ -451,7 +477,7 @@ const publicPortions = Object.fromEntries(portions.flatMap(({ recipe, projection
   projection && Object.keys(projection.portion).length ? [[recipe.recipeId, projection.portion]] : []));
 const additional = portions.flatMap(({ recipe, projection }) => {
   if (!projection || !projection.zeroCarbohydrate && !projection.portion.verbal) return [];
-  if (legacyPublicResults.some(result => result.recipeId === recipe.recipeId)) return [];
+  if (legacyPublicByRecipe.has(recipe.recipeId)) return [];
   const localeRoutes = Object.fromEntries(siteContent.recipes.filter(entry => entry.recipeId === recipe.recipeId)
     .map(({ locale, title, routePath }) => [locale, { title, routePath }]));
   return [{

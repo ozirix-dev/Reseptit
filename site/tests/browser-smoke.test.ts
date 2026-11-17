@@ -419,6 +419,38 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.equal(await pendingGk.locator('[data-gk-estimate="VERBAL"]').count(), 1);
     assert.match(await pendingGk.getByRole("link", { name: portionCopy.fi.scopeSource }).getAttribute("href") ?? "", /^https:/);
 
+    const routeFor = (id: string, locale = "fi") => siteContent.recipes.find(recipe => recipe.locale === locale && recipe.recipeId === id)!.routePath;
+    await page.goto(base + routeFor("malesialainen-kookos-banaanikulho"));
+    const ingredientPortion = page.locator("[data-ingredient-portion]");
+    assert.match(await ingredientPortion.innerText(), /Kuorittu banaani.*100 g[\s\S]+18,3 g/);
+    assert.equal(await page.locator("[data-portion-carbohydrate], [data-portion-gk]").count(), 0);
+    await page.getByRole("button", { name: recipeUi.fi.increase, exact: true }).click();
+    assert.match(await ingredientPortion.innerText(), /100 g[\s\S]+18,3 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await ingredientPortion.innerText(), /150 g[\s\S]+27,5 g/);
+    await page.goto(base + glycemicLoadPath("fi") + "#malesialainen-kookos-banaanikulho");
+    assert.match(await page.locator("#malesialainen-kookos-banaanikulho [data-ingredient-portion]").innerText(), /100 g[\s\S]+18,3 g/);
+    await page.goto(base + routeFor("tunisialainen-brik", "en"));
+    assert.match(await page.locator("[data-ingredient-portion]").innerText(), /1 sheet\b/);
+
+    await page.goto(base + routeFor("malesialainen-nasi-lemak-aamiaisella"));
+    const alternatives = page.locator("[data-gk-alternatives]");
+    assert.match(await alternatives.innerText(), /Basmatiriisi\s+noin 22[\s\S]+Jasmiiniriisi\s+noin 26/);
+    await page.getByRole("button", { name: recipeUi.fi.increase, exact: true }).click();
+    assert.match(await alternatives.innerText(), /noin 22[\s\S]+noin 26/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await alternatives.innerText(), /noin 34[\s\S]+noin 40/);
+
+    await page.goto(base + routeFor("dan-dan-nuudelit"));
+    const danDan = page.locator('[data-gk-version="gk-operation80-review-ad22de231e93"]');
+    assert.match(await danDan.locator("[data-gk-alternatives]").innerText(), /Tuore udon\s+noin 18,5[\s\S]+Hakubaku Somen\s+noin 25/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+    assert.match(await danDan.innerText(), /Lähdearvion erän annosmäärä · 4/);
+
+    await page.goto(base + routeFor("briossisampylat-joshua-weissman"));
+    assert.match(await page.locator('[data-gk-status="QUALITATIVE"]').innerText(), /Suuri arvioitu GK/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+
     for (const [id, selector, copy] of [
       ["taytetyt-kananmunat-yrteilla", '[data-gk-status="QUALITATIVE"]', portionCopy.fi.class.LOW],
       ["kylma-oliivioljylevite", '.recipe-portion', "Tarjoiluleipä ei sisälly arvioon"],

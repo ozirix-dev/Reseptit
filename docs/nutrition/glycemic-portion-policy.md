@@ -36,6 +36,21 @@ alkuperäiseen annokseen.
    tai rajaa tieto nimettyyn tunnettuun ainekseen tai puuttuvaan lähteeseen.
    Älä näytä osasummaa annoksen kokonaismääränä.
 
+Nimetyn aineksen punnittu määrä tai kappalemäärä voidaan kertoa silloinkin,
+kun koko annoksen hiilihydraattiarvio puuttuu. Määrä tulee katselmoidusta
+ainesosarivistä ja alkuperäisestä annosmäärästä. Kerro punnitustapa, kun se
+muuttaa tulkintaa. Imeytyvän hiilihydraatin osuus voidaan lisätä saman aineksen
+yhteyteen, kun lähde vastaa ainesosaa sen punnitustavassa. Osuus näkyy
+reseptissä ja oppaassa ainesosan omalla nimellä. Annoksen laskennan tai
+GI-lähteiden avoin katselmointi säilyy näkyvissä.
+
+Nimetty riisi- tai nuudelivaihtoehto voidaan yhdistää lukuun, jos hyväksytty
+laskelma yksilöi sekä vaihtoehdon että sen oman tuloksen. Reseptin vaihtoehdot
+skaalautuvat syötävän annoskoon mukana. Erillisversion vaihtoehdot koskevat
+version yhtä annosta. Version lähdearvion eräkoko näytetään erikseen, kun
+selite sisältää alkuperäiset eräkohtaiset määrät. Yleisiä vertailuruokia ei
+merkitä käyttäjän valittaviksi ainesosiksi.
+
 Rakenteinen, katselmoitu näyttö tallennetaan tiedostoon
 [gk-reviewed-portions.json](gk-reviewed-portions.json). Se sitoo väitteen
 rakenteiseen annos- ja ainesosatietoon, lähteeseen ja soveltuvissa
