@@ -44,6 +44,12 @@ yhteyteen, kun lähde vastaa ainesosaa sen punnitustavassa. Osuus näkyy
 reseptissä ja oppaassa ainesosan omalla nimellä. Annoksen laskennan tai
 GI-lähteiden avoin katselmointi säilyy näkyvissä.
 
+Sanallisen arvion yhteydessä vanha huomautus määrittämättömästä GK:sta
+voidaan täsmentää koskemaan numeerista arvoa. Katselmoitu sanamuoto on
+kielikohtainen ja kytketty hyväksyttyyn annokseen. Sivuston koostaminen
+pysähtyy, jos korvattava huomautus muuttuu. Alkuperäiset lähdereseptit ja
+numeeristen arvioiden tila säilyvät historiassa.
+
 Nimetty riisi- tai nuudelivaihtoehto voidaan yhdistää lukuun, jos hyväksytty
 laskelma yksilöi sekä vaihtoehdon että sen oman tuloksen. Reseptin vaihtoehdot
 skaalautuvat syötävän annoskoon mukana. Erillisversion vaihtoehdot koskevat

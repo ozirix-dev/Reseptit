@@ -15,6 +15,7 @@ import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-with
 import { glycemicLoadPath } from "../src/features/recipes/recipe-i18n";
 import { recipeSearchEntry, supportedRecipeDiets } from "../src/features/recipes/recipe-search";
 import type { RecipeLocale } from "../src/types/content";
+import { loadReviewedPortions } from "./gk-portion-projection";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
 const publicDir = path.join(siteDir, "public");
@@ -99,16 +100,25 @@ const overview: RouteContent["glycemicOverview"] = {
   portionCoverage,
   carbsByRecipe: Object.fromEntries(coverageRows.flatMap(row => row.carbs ? [[row.recipeId, row.carbs]] : [])),
 };
+const reviewedPortions = await loadReviewedPortions(path.resolve(siteDir, ".."));
 const manifest: Record<string, string> = {};
 for (const route of routes) {
   const data = contentForRoute(recipes, route, featured);
   const locale = indexLocales.get(route);
   if (locale) data.catalog = catalogs.get(locale)!;
   if (data.recipe) {
-    const id = data.recipe.recipeId;
+    const { recipeId: id, locale, notesHtml } = data.recipe;
+    const portionEvidence = glycemicLoadPortions[id];
+    const note = reviewedPortions[id]?.verbalNoteEdits?.[locale];
+    if (note && portionEvidence?.verbal && !withholdF25Nutrition(id, locale)) {
+      if (!note.before || !note.after || /<(?!\/?strong>)/.test(note.after) || notesHtml.split(note.before).length !== 2) {
+        throw new Error(`${id}/${locale}: the original GK note changed; review the current wording.`);
+      }
+      data.recipe = { ...data.recipe, notesHtml: notesHtml.replace(note.before, () => note.after) };
+    }
     data.glycemicRecipe = {
       result: resultsByRecipe.get(id) ?? null,
-      portionEvidence: glycemicLoadPortions[id],
+      portionEvidence,
       pending: pending.has(id),
       variants: gkOnlyVariants.filter(variant => variant.recipeId === id),
     };

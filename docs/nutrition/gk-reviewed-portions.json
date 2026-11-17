@@ -578,12 +578,12 @@
     "preparationSha256": "5fa3e06db74ddd58b855bf7fd454c1b93a7ec26039532cfb5ff332e47fbf4691",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/205",
-    "reasoning": "Current recipe uses 250 g store-bought chilled batter and 250 g peeled potatoes, for two. The legacy raw-rice/urad ratio and separate filling quantities cannot be carried over. Named gap is the actual batter product; use label instead of old ingredient or GI assumptions. Fineli #205 raw, peeled mature potato. Generic composition, not cultivar-specific; prepared batter has no exact current source.",
+    "reasoning": "Current recipe uses 250 g store-bought chilled batter and 250 g peeled potatoes, for two. The legacy raw-rice/urad ratio and separate filling quantities cannot be carried over. Named gap is the actual batter product; use label instead of old ingredient or GI assumptions. Fineli #205 raw, peeled mature potato. Generic composition, not cultivar-specific; prepared batter has no exact current source. Fineli 205 describes raw peeled mature potatoes. It provides a food-composition reference estimate for the ingredient before cooking. The actual variety may differ and no cooked retention is claimed.",
     "condition": {
-      "fi": "Valmista dosataikinaa käytettäessä tarkista sen hiilihydraatit pakkauksesta.",
-      "en": "Check the carbohydrate amount on the pack of ready-made dosa batter.",
-      "sv": "Kontrollera kolhydratmängden på förpackningen till den färdiga dosasmeten.",
-      "th": "ตรวจปริมาณคาร์โบไฮเดรตของแป้งโดซาสำเร็จรูปบนบรรจุภัณฑ์"
+      "fi": "Punnitse peruna raakana ja kuorittuna. Lajike voi vaikuttaa arvioon. Tarkista valmiin dosa-taikinan hiilihydraatit pakkauksesta.",
+      "en": "Weigh the raw peeled potato. Variety can affect the estimate. Check the ready-made dosa batter label for carbohydrate.",
+      "sv": "Väg potatisen rå och skalad. Sorten kan påverka uppskattningen. Kontrollera kolhydratmängden på förpackningen till den färdiga dosasmeten.",
+      "th": "ชั่งมันฝรั่งดิบที่ปอกเปลือกแล้ว พันธุ์มันฝรั่งอาจมีผลต่อค่าประมาณ ตรวจคาร์โบไฮเดรตของแป้งโดซาสำเร็จรูปบนฉลาก"
     },
     "ingredientPortion": {
       "index": 1,
@@ -598,7 +598,8 @@
       "sourceReview": {
         "file": "docs/reviews/2026-11-14-intialainen-masala-dosa-kielikatselmointi.md",
         "sha256": "e3d7532c06914dccd23ceb1f2b07858ff79a8e412bc5afaa375efd1bbf67fc30"
-      }
+      },
+      "availableCarbsGPer100g": 15.5
     }
   },
   "meksikolainen-molletes-pico-de-gallolla": {
@@ -1004,8 +1005,8 @@
     "recipeBindingSha256": "424e2aed53cb7809cf4617b652b13cb9ee437d1b81f6f75b16d79189e583d14f",
     "preparationSha256": "51f3c2a6a16ff8923bc885be0ae1a65abace12c0666c586cd0a0cf8b4b044e8a",
     "reviewedAt": "2026-11-18",
-    "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/leivonnaiset/raejuustobagelit-ilman-kohotusta.md",
-    "reasoning": "300 g dry flour evenly across six. Recipe has explicit no reliable whole macro/GK yet, uncertain baking powder/egg glaze retention and no source-match baked bagel GI. Valio 6408430043019 confirms named cottage product, but no clinical classification.",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
+    "reasoning": "300 g dry flour evenly across six. Recipe has explicit no reliable whole macro/GK yet, uncertain baking powder/egg glaze retention and no source-match baked bagel GI. Valio 6408430043019 confirms named cottage product, but no clinical classification. The current recipe identifies 300 g dry medium wheat flour and six equal portions. Fineli 110 identifies the same grade, 74.0 g available carbohydrate per 100 g with no reported polyols. The known flour contribution is separate from the whole recipe and the unverified egg glaze.",
     "condition": {
       "fi": "Myös raejuusto vaikuttaa hiilihydraattimäärään. Tarkista käytetyn tuotteen ravintoarvo pakkauksesta.",
       "en": "Cottage cheese also contributes carbohydrate. Check its nutrition label.",
@@ -1021,7 +1022,8 @@
         "sv": "halvgrovt vetemjöl i torrvikt",
         "th": "แป้งสาลีบดปานกลางน้ำหนักแห้ง"
       },
-      "unit": "g"
+      "unit": "g",
+      "availableCarbsGPer100g": 74.0
     }
   },
   "briossisampylat-joshua-weissman": {
@@ -1107,6 +1109,263 @@
         "sv": "Torr Hakubaku Somen",
         "th": "โซเม็งแห้ง Hakubaku"
       }
+    }
+  },
+  "pohjoisafrikkalainen-msemen-hunajalla-punnittu-v2": {
+    "recipeBindingSha256": "69d302482f3bc24e89299e69c6c18335535a85109f7149a58d19b0514819029f",
+    "preparationSha256": "549a950f985d76f7be154a94e5d242859acbb9ed1bc868fefeb8f7f84fba730e",
+    "reviewedAt": "2026-11-18",
+    "nutritionSha256": "4b4a4806ef7196367c0632ab1b30c079629a8685675503546d2fbfa1f2b191ad",
+    "reasoning": "Scoped nonnumeric review of current V2 successor, two of four pan-cooked laminated squares with 10 g of the listed serving honey; no other spread/topping. Half-batch inputs: 83.5 g refined wheat flour, 22.5 g durum semolina (including dusting used in lamination), 66.5 g water, 1.5 g salt, 16 g rapeseed oil and 14 g butter. The actual ingredient-based carbohydrate model is verified at 82.99 g/portion; the bread accounts for about 75.76 g, the 10 g honey for about 7.23 g. Published human food comparators for the bread, not its honey topping: Devindra Shakappa et al. (2022), DOI 10.1007/s13197-022-05368-6, Table 2, parota 62.48 (50 g carbohydrate test; glucose reference), a layered pan-cooked wheat flatbread, gives 47.34 comparison-only load applied to the bread's 75.76 g. Shobana et al. (2022), DOI 10.4103/ijmr.IJMR_1935_19, Table 3, methi paratha 60.2 gives 45.61; it contains fenugreek/curd and is only a secondary wheat-flatbread analogy. Vijayakumar et al. Kerala breakfast paper (2017), Table 3, reports a competing lower porotta GI 37.98 (referenced by PMC7791047, row 696), giving 28.77 under the same bread-only check. These are independent comparison points, not a physiological bound or a range for the recipe. The tests do not measure this Moroccan formulation, wheat/semolina proportions, folded oil/butter, cooking method, or honey. A directionally high estimate is supported at exactly two squares with the listed honey. Do not assign a component or whole meal GI number, estimate insulin or response, or transfer the quarantined predecessor's GK100 number. Numeric GK approval and original quarantine stay in place. Re-review ingredient, pan prep, folded fat, honey and serving changes.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9304465/",
+    "piecesPerServing": 2,
+    "verbal": {
+      "category": "HIGH",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Arvio koskee kahta ohjeen mukaista kerrosleipää ja 10 g hunajaa. Suurin osa hiilihydraateista tulee leipien jauhoista. Arvio hyödyntää samantyyppisten pannulla kypsennettyjen vehnäleipien mittauksia.",
+        "en": "The estimate covers two of the layered flatbreads and 10 g of honey. Most of the carbohydrate comes from the flour in the bread. The estimate draws on measurements from similar pan-cooked wheat flatbreads.",
+        "sv": "Uppskattningen gäller två skiktade tunnbröd med 10 g honung. Det mesta av kolhydraterna kommer från mjölet i brödet. Uppskattningen bygger på mätningar av liknande pannstekta vetetunnbröd.",
+        "th": "ค่าประมาณนี้ใช้กับแผ่นแป้งซ้อนชั้นสองชิ้นและน้ำผึ้ง 10 กรัม คาร์โบไฮเดรตส่วนใหญ่มาจากแป้งในขนมปัง โดยใช้ผลวัดจากแผ่นแป้งสาลีชนิดใกล้เคียงที่ปรุงในกระทะ"
+      }
+    },
+    "verbalNoteEdits": {
+      "sv": {
+        "before": "<strong>Glykemisk belastning: ej fastställd.</strong>",
+        "after": "<strong>Ett numeriskt GL-värde har inte fastställts.</strong>"
+      },
+      "fi": {
+        "before": "<strong>GK: ei määritetty.</strong>",
+        "after": "<strong>Numeerista GK-arvoa ei ole määritetty.</strong>"
+      },
+      "en": {
+        "before": "<strong>Glycemic load: undetermined.</strong>",
+        "after": "<strong>A numerical GL value has not been determined.</strong>"
+      },
+      "th": {
+        "before": "<strong>ค่าภาระน้ำตาล (GL) ยังไม่ได้กำหนด</strong>",
+        "after": "<strong>ยังไม่ได้กำหนดค่าภาระน้ำตาลเป็นตัวเลข</strong>"
+      }
+    }
+  },
+  "karnivore-voilohi-pannulla": {
+    "recipeBindingSha256": "bf868b5cb1820218b19be86076684358a7ca19fb801c06438c5dcfcb738b2670",
+    "preparationSha256": "a584460004ebe59e2ef77895db3ecf155ada453d26469f38ba953c0db61f129b",
+    "reviewedAt": "2026-11-18",
+    "nutritionSha256": "90bf320e4ba33441d60b30819bf1b42c21f6ad1de14bee6dfb01a4a925de99ab",
+    "reasoning": "One of two plain portions of the listed pan-fried skin-on salmon, with all of its allocated cooking fat and butter, without breading, sauce or side. Raw baseline per portion: 200 g skin-on boneless unsauced Atlantic salmon (Kalaneuvos + AFCD F007827), 17.5 g ordinary butter (Fineli Release 20 no. 500, 0.8 g available CHO per 100 g), 1.5 g salt (Fineli 30). The approximately 0.14 g available carbohydrate contribution recorded here is mainly the butter by recipe composition; label zero does not imply exact laboratory zero. University of Sydney GI research FAQ #11 supports a small expected glycaemic effect of unflavoured fish eaten alone; Holt et al. 1997 (doi 10.1093/ajcn/66.5.1264, Table 3) independently reported a low mean glucose score for its tested fish serving, not a salmon GI and not a serving-ratio proxy. There is no starch, glaze or side within the reviewed mass and preparation. This meets a directional LOW estimate for one plain portion by food-specific evidence plus complete composition. No numeric GI/GK, GK-zero, insulin demand, or individual response is assigned. Re-evaluate coating, sides, portion, product, and retained pan-fat instructions. Preserve the prior numeric approval status and recipe blobs.",
+    "source": "https://glycemicindex.com/faqs/",
+    "verbal": {
+      "category": "LOW",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Arvio koskee yhtä annosta voissa paistettua lohta ja annokselle lusikoitua paistorasvaa. Lohessa ei ole panerointia. Ohjeen pieni hiilihydraattimäärä tulee pääosin voista. Mahdolliset lisukkeet arvioidaan erikseen.",
+        "en": "The estimate covers one portion of butter-fried salmon and the pan fat spooned over it. The salmon is unbreaded. Most of the small amount of carbohydrate comes from the butter. Any sides are separate.",
+        "sv": "Uppskattningen gäller en portion smörstekt lax och stekfettet som skedas över. Laxen är opanerad. Det mesta av den lilla kolhydratmängden kommer från smöret. Eventuella tillbehör bedöms separat.",
+        "th": "ค่าประมาณนี้ใช้กับแซลมอนทอดเนยหนึ่งที่ รวมไขมันในกระทะที่ตักราด ปลาไม่ได้ชุบแป้ง คาร์โบไฮเดรตที่มีเพียงเล็กน้อยมาจากเนยเป็นหลัก ให้พิจารณาเครื่องเคียงแยกต่างหาก"
+      }
+    },
+    "verbalNoteEdits": {
+      "en": {
+        "before": "GI and GL are undetermined; an animal-based dish is not automatically GL 0.",
+        "after": "Numerical GI and GL values have not been determined. An animal-based dish is not automatically GL 0."
+      },
+      "sv": {
+        "before": "GI och GL är inte fastställda.",
+        "after": "Numeriska GI- och GL-värden har inte fastställts."
+      },
+      "fi": {
+        "before": "Glykeemistä indeksiä tai glykeemistä kuormaa <strong>ei ole määritetty</strong>.",
+        "after": "Numeerista GI- tai GK-arvoa <strong>ei ole määritetty</strong>."
+      },
+      "th": {
+        "before": "ยังไม่ได้กำหนด GI หรือ GL",
+        "after": "ยังไม่ได้กำหนดค่า GI หรือ GL เป็นตัวเลข"
+      }
+    }
+  },
+  "karnivore-lammaskyljykset-voissa": {
+    "recipeBindingSha256": "fb1fb58916b75d75ae51083e33a6af05d2afdd6aca5b1f2f0b7baa588324c81e",
+    "preparationSha256": "b76fccc6efcbda5f9011bd70431205f8694158a6ade56bf19929c6eceecd53a5",
+    "reviewedAt": "2026-11-18",
+    "nutritionSha256": "a23f49d66ac73ed9cf644dfead358740fcba94876d52da3f31e74ee672acd9ac",
+    "reasoning": "Exactly half of this published batch of unbreaded lamb-and-butter, with all its allocated edible butter, pan fat and resting juices, no side. Recipe computes AFCD F004923 untrimmed raw bone-in lamb 600 g × 70.8% edible basis and divides by two; this is about 212.4 g edible raw input per portion, not cooked weight, and not a fixed number of chops. Salt 2 g per portion, 12.5 g Fineli no. 500 ordinary butter at 0.8 g available carbohydrate per 100 g gives about 0.10 g modeled available carbohydrate per portion. The declared meat composition represents plain lamb. University of Sydney FAQ #11 explains the small expected glycaemic effect of unflavoured meat-only food, and Foster-Powell et al. 2002 (doi 10.1093/ajcn/76.1.5) explains the distinction between absent/untestable GI and small food-group effect for plain meats. Source evidence supports a small directional load for the weighed unsauced portion; this is not a measured lamb or dish GI, GK=0, a claim about all animal-based recipes, or a blood glucose or insulin prediction. The historical exact-blob file remains sealed with numeric GK undetermined. Re-review after a change to portion, coating, product, side, or retained butter/juices.",
+    "source": "https://glycemicindex.com/faqs/",
+    "verbal": {
+      "category": "LOW",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Arvio koskee puolta ohjeen erästä, mukana annokselle jaettu voi, paistorasva ja lihasneste. Kyljyksiä ei paneroida. Ohjeen pieni hiilihydraattimäärä tulee pääosin voista. Mahdolliset lisukkeet arvioidaan erikseen.",
+        "en": "The estimate covers half the recipe, including its share of the butter, drippings and resting juices. The chops are unbreaded. Most of the small amount of carbohydrate comes from the butter. Any sides are separate.",
+        "sv": "Uppskattningen gäller halva receptet, inklusive portionens andel av smör, stekfett och köttsaft. Kotletterna är opanerade. Det mesta av den lilla kolhydratmängden kommer från smöret. Eventuella tillbehör bedöms separat.",
+        "th": "ค่าประมาณนี้ใช้กับอาหารครึ่งหนึ่งของสูตร รวมเนย ไขมันจากการทอด และน้ำเนื้อที่แบ่งใส่จาน เนื้อแกะไม่ได้ชุบแป้ง คาร์โบไฮเดรตที่มีเพียงเล็กน้อยมาจากเนยเป็นหลัก ให้พิจารณาเครื่องเคียงแยกต่างหาก"
+      }
+    },
+    "verbalNoteEdits": {
+      "en": {
+        "before": "GL is undetermined.",
+        "after": "A numerical GL value has not been determined."
+      },
+      "fi": {
+        "before": "<strong>GK: ei määritetty.</strong>",
+        "after": "<strong>Numeerista GK-arvoa ei ole määritetty.</strong>"
+      },
+      "sv": {
+        "before": "GL är inte fastställd.",
+        "after": "Ett numeriskt GL-värde har inte fastställts."
+      },
+      "th": {
+        "before": "ยังไม่ได้กำหนดค่า GL",
+        "after": "ยังไม่ได้กำหนดค่าภาระน้ำตาลเป็นตัวเลข"
+      }
+    }
+  },
+  "karnivore-jauhelihakulho-munalla": {
+    "recipeBindingSha256": "4d0c3d9abd3e9e1b35948110d39f9def286394227aaaa3c360c4ce0951436532",
+    "preparationSha256": "ac84be4a9a8241bf518267d6ead807b297fc53156251d145eb482a198794a8a2",
+    "reviewedAt": "2026-11-18",
+    "nutritionSha256": "691bcf1d374d9dc6e29a2f15f7c0d4d276bd7f9dd18271d0b67854a1c737f3df",
+    "reasoning": "Half the weighed finished dish, not a general karnivore classification: plain beef mince (200 g raw input at Snellman 20% 6409620011856 with AFCD F000678 fibre/polyol basis), 55 g shell-free egg (Fineli 858, 0.3 g available CHO per 100 g), 2 g salt. Cooking uses fat rendered from the plain mince, not additional butter in the actual ingredient list; retained nourishment is assigned by count of two portions. The documented model is 0.165 g (display 0.17 g) available carbohydrate, primarily from the egg; manufacture label zero is not treated as exact measured zero. University of Sydney GI Research FAQ #11 identifies plain beef and eggs as having small expected glycaemic impact in isolation, supported qualitatively by Holt et al. 1997 (doi 10.1093/ajcn/66.5.1264, Table 3) separate beef/egg glucose scores. Neither amounts nor scores are a GI match and no insulin claim is made. No starchy item, glaze, bun or side is present; the recipe-specific known portion supports a directional LOW class. Numeric GK stays on HOLD and no old or ingredient-level GI is supplied. Re-review for sauces or recipe product, preparation, portion or side changes.",
+    "source": "https://glycemicindex.com/faqs/",
+    "verbal": {
+      "category": "LOW",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Arvio koskee yhtä annosta maustamatonta naudan jauhelihaa ja paistettua kananmunaa ilman kastiketta tai lisukkeita. Ohjeen pieni hiilihydraattimäärä tulee pääosin kananmunasta.",
+        "en": "The estimate covers one portion of plain beef mince with a fried egg, without sauce or sides. Most of the small amount of carbohydrate comes from the egg.",
+        "sv": "Uppskattningen gäller en portion naturell nötfärs med stekt ägg, utan sås eller tillbehör. Det mesta av den lilla kolhydratmängden kommer från ägget.",
+        "th": "ค่าประมาณนี้ใช้กับเนื้อวัวบดไม่ปรุงรสและไข่ดาวหนึ่งที่ ไม่รวมซอสหรือเครื่องเคียง คาร์โบไฮเดรตที่มีเพียงเล็กน้อยมาจากไข่เป็นหลัก"
+      }
+    },
+    "verbalNoteEdits": {
+      "fi": {
+        "before": "Glykeemistä indeksiä tai glykeemistä kuormaa <strong>ei ole määritetty</strong>.",
+        "after": "Numeerista GI- tai GK-arvoa <strong>ei ole määritetty</strong>."
+      },
+      "en": {
+        "before": "GI and GL are undetermined.",
+        "after": "Numerical GI and GL values have not been determined."
+      },
+      "sv": {
+        "before": "GI och GL är inte fastställda.",
+        "after": "Numeriska GI- och GL-värden har inte fastställts."
+      },
+      "th": {
+        "before": "ยังไม่ได้กำหนด GI หรือ GL",
+        "after": "ยังไม่ได้กำหนดค่า GI หรือ GL เป็นตัวเลข"
+      }
+    }
+  },
+  "indonesialainen-bakwan-jagung-kotiversio": {
+    "recipeBindingSha256": "5ac74aa8de102fa95a54cfa17ed1460e2978e47e0a491f2184d81f0e357c4178",
+    "preparationSha256": "b975d192994971c30c98d33fe2d1d73e83b02f9176d0ed656998a30c8f5fe53b",
+    "nutritionSha256": "038816609a85122e7aa0d864316952876e529bec8fe878b05bc7961baf961999",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
+    "reasoning": "Fineli Release 20 record 110 is medium wheat flour; the recipe amount is the dry flour mass. Whole batter is used and split into two. Oil retention stays unresolved. The value uses available carbohydrate in the matched ingredient before the recipe is prepared. Whole-serving release remains governed by the existing nutrition record. Unmeasured loss and retention of 30 g frying oil prevent publication of numerical nutrition values for the prepared fritters.",
+    "condition": {
+      "fi": "Maissista ja muista aineksista tulee lisäksi hiilihydraatteja.",
+      "en": "Corn and the other ingredients also contribute carbohydrate.",
+      "sv": "Majs och övriga ingredienser bidrar också med kolhydrater.",
+      "th": "ข้าวโพดและวัตถุดิบอื่นมีคาร์โบไฮเดรตด้วย"
+    },
+    "ingredientPortion": {
+      "index": 1,
+      "ingredientSha256": "ca981c49161a672929d3a792af65d69a2cf43ad14c5008d62c3e4218b0d6b4ec",
+      "labels": {
+        "fi": "Puolikarkea vehnäjauho (kuivapaino)",
+        "en": "Medium-ground wheat flour (dry weight)",
+        "sv": "Halvgrovt vetemjöl (torrvikt)",
+        "th": "แป้งสาลีบดปานกลาง (น้ำหนักแห้ง)"
+      },
+      "unit": "g",
+      "availableCarbsGPer100g": 73.998
+    }
+  },
+  "makea-banaanimunakas": {
+    "recipeBindingSha256": "6c03fdd12e5c5a191e01f5a8722364ff98842079d4a778aeb23e700b87b72b51",
+    "preparationSha256": "a661f2772cd7b9864fa28370c9d28ed4a908ccf4661acde18de1dc395d15bdfa",
+    "nutritionSha256": "a2de6bc9600172436aec68989068435b46054edb41d562b284ad3c44c029a7a6",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11049",
+    "reasoning": "Generic peeled banana, cultivar and ripeness vary. Peeled ripe banana blended into one serving. Toppings, vanilla and oil remain outside the component estimate. The value uses available carbohydrate in the matched ingredient before the recipe is prepared. Whole-serving release remains governed by the existing nutrition record. Vaniljauutteen, kanelin, mustikoiden ja hunajan polyolitietoa puuttuu ja paistoöljyn toteutunutta määrää ei mitattu.",
+    "condition": {
+      "fi": "Banaanin lajike ja kypsyys vaikuttavat arvioon. Huomioi mustikat ja hunaja erikseen.",
+      "en": "Banana variety and ripeness affect the estimate. Count blueberries and honey separately.",
+      "sv": "Banansort och mognad påverkar uppskattningen. Räkna blåbär och honung separat.",
+      "th": "พันธุ์และความสุกของกล้วยมีผลต่อค่าประมาณ ให้คิดบลูเบอร์รีและน้ำผึ้งแยกต่างหาก"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "559d5c44b4459eb1065037278457b57fd042a6d396100d15041e1a9cb51276b3",
+      "labels": {
+        "fi": "Kuorittu banaani",
+        "en": "Peeled banana",
+        "sv": "Skalad banan",
+        "th": "กล้วยปอกเปลือก"
+      },
+      "unit": "g",
+      "availableCarbsGPer100g": 18.3
+    }
+  },
+  "avokado-banaanijaatelo": {
+    "recipeBindingSha256": "deea6ea585cd0be869e0c72a3e170b38c17e9259222c709d543a2a05438c5433",
+    "preparationSha256": "0582c19012d7ba4128c3740a4aca81cc723ac8616a38bb9c2f9459696deb9994",
+    "nutritionSha256": "9325d67e254cc58c2c311a7822f00f1ee58699f197657fcf3619774b4f2cf41c",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11049",
+    "reasoning": "Ingredient 'kypsää banaania' matched to reference BANAANI, KUORITTU; brand or variety may differ. 230 g peeled banana / 3; blended full retention. Remaining ingredients and polyols are not represented. The value uses available carbohydrate in the matched ingredient before the recipe is prepared. Whole-serving release remains governed by the existing nutrition record. At least one matched source lacks an aggregate polyol value. The public macro fields remain empty.",
+    "condition": {
+      "fi": "Banaanin lajike ja kypsyys vaikuttavat arvioon. Koko annoksen määrä riippuu myös muista aineksista.",
+      "en": "Banana variety and ripeness affect the estimate. The full serving also depends on the other ingredients.",
+      "sv": "Banansort och mognad påverkar uppskattningen. Den totala mängden beror även på övriga ingredienser.",
+      "th": "พันธุ์และความสุกของกล้วยมีผลต่อค่าประมาณ ปริมาณคาร์โบไฮเดรตของทั้งที่ยังขึ้นอยู่กับวัตถุดิบอื่น"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "4e26ff97a8219b940bd2d21846b573523ad971147c5993f26d946dbb460ef9ec",
+      "labels": {
+        "fi": "Kuorittu banaani",
+        "en": "Peeled banana",
+        "sv": "Skalad banan",
+        "th": "กล้วยปอกเปลือก"
+      },
+      "unit": "g",
+      "availableCarbsGPer100g": 18.3
+    }
+  },
+  "parmesaani-lyttyperunat": {
+    "recipeBindingSha256": "2204393a2c90141fb06bd63b64e8042842e86d4b303b0032f45740982b5d9d04",
+    "preparationSha256": "76727886d1676a43aae48400f830da66f60f3f443e3c19209b8ef0f5bdca1aea",
+    "nutritionSha256": "a54c392cb9680a8f85cd2a485a4878dd313b5ade74001e0e99cd0d586e8c0f70",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/28955",
+    "reasoning": "Matched the ingredient pieniä keitettyjä perunoita to the reference food PERUNA, KUORINEEN, KEITETTY, SUOLATON. Brand-specific values may vary. 700 g already boiled small potatoes / 4. Fineli cooked potato with skin; finishing roast and cultivar limit transfer. Parmesan and garlic polyols remain unknown. The value uses available carbohydrate in the matched ingredient before the recipe is prepared. Whole-serving release remains governed by the existing nutrition record. Parmesaanille ja valkosipulijauheelle puuttuu varmennettu polyoliarvo.",
+    "condition": {
+      "fi": "Perunat punnitaan keitettyinä kuorineen ennen uunissa viimeistelyä. Lajike voi vaikuttaa arvioon.",
+      "en": "Weigh the cooked potatoes with their skins on before finishing them in the oven. Variety may affect the estimate.",
+      "sv": "Väg den kokta potatisen med skal före tillagningen i ugnen. Sorten kan påverka uppskattningen.",
+      "th": "ชั่งมันฝรั่งที่ต้มแล้วทั้งเปลือกก่อนนำเข้าอบ พันธุ์มันฝรั่งอาจมีผลต่อค่าประมาณ"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "de68e8614c2ade8fc72db82442f391843e7be1124b8c299292c165b6cf7b4016",
+      "labels": {
+        "fi": "Keitetty kuorellinen peruna",
+        "en": "Cooked skin-on potato",
+        "sv": "Kokt potatis med skal",
+        "th": "มันฝรั่งต้มทั้งเปลือก"
+      },
+      "unit": "g",
+      "availableCarbsGPer100g": 13.175
     }
   }
 }

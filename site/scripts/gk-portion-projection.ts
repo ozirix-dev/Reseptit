@@ -25,6 +25,7 @@ interface ReviewedPortion {
   ingredientProduct?: { index: number; item: string; amount: number; unit: string; ean: string };
   reasoning: string;
   reviewedAt: string;
+  verbalNoteEdits?: Partial<Record<keyof LocalizedText, { before: string; after: string }>>;
   portionGrams?: number;
   knownCarbIngredient?: string;
   nutritionSha256?: string;
@@ -87,6 +88,9 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
   if (review?.nutritionSha256 && (!raw || review.nutritionSha256 !== hash(raw))) {
     throw new Error(`${recipeId}: reviewed GK portion's nutrition evidence changed and requires review.`);
   }
+  if (review?.verbalNoteEdits && !review.verbal) {
+    throw new Error(`${recipeId}: a numerical-only GK notice requires a current verbal estimate.`);
+  }
   if (raw) {
     const input = JSON.parse(raw) as Calculation;
     // These two approved methodologies have separate accounting scopes.
@@ -130,6 +134,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
     }
     const amountPerServing = ingredient.amount / data.servings;
     portion.ingredientPortion = { name: labels, amountPerServing, unit };
+    if (portion.driver?.ingredientIndex === index && !portion.driver.coversMajority) delete portion.driver;
     if (availableCarbsGPer100g !== undefined) {
       if (unit !== "g" || !Number.isFinite(availableCarbsGPer100g) || availableCarbsGPer100g < 0 || availableCarbsGPer100g > 100) {
         throw new Error(`${recipeId}: invalid partial ingredient carbohydrate composition.`);

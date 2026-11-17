@@ -50,6 +50,9 @@ test("reviewed verbal GK only applies to the approved recipe portion and current
   await assert.rejects(projectPortionEvidence(root, recipeId, markdown, {
     ...reviews[recipeId], nutritionSha256: createHash("sha256").update("changed").digest("hex"),
   }), /nutrition evidence changed/);
+  await assert.rejects(projectPortionEvidence(root, recipeId, markdown, {
+    ...reviews[recipeId], verbal: undefined, verbalNoteEdits: { fi: { before: "GK", after: "Numeerinen GK" } },
+  }), /notice requires a current verbal estimate/);
 });
 
 test("partial ingredient quantities remain separate from the whole portion and its GK class", async () => {

@@ -22,8 +22,35 @@ import { contentManifest } from "../src/generated/routes.generated";
 import { glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
 import { isPublicRecipeQuarantined, publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
 import { f25ExplicitUndefinedGkLabel, withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
+import { loadReviewedPortions } from "../scripts/gk-portion-projection";
 
 const dist = path.resolve(import.meta.dirname, "../dist");
+
+test("new verbal estimates qualify the legacy numerical notices in all published languages", async () => {
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  const checked = [
+    ["pohjoisafrikkalainen-msemen-hunajalla-punnittu-v2", "HIGH"],
+    ["karnivore-voilohi-pannulla", "LOW"],
+    ["karnivore-lammaskyljykset-voissa", "LOW"],
+    ["karnivore-jauhelihakulho-munalla", "LOW"],
+  ] as const;
+  for (const [id, category] of checked) {
+    const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.equal(entries.length, 4, id);
+    for (const recipe of entries) {
+      const { locale, routePath } = recipe;
+      const note = reviews[id]?.verbalNoteEdits?.[locale];
+      assert.ok(note, `${id}/${locale}: reviewed notice`);
+      const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+      assert.match(html, /data-gk-status="QUALITATIVE"/);
+      assert.doesNotMatch(html, /data-portion-gk/);
+      assert.ok(html.includes(note.after), `${id}/${locale}: numerical limitation`);
+      assert.ok(!html.includes(note.before), `${id}/${locale}: no conflicting old notice`);
+      assert.ok(html.includes(portionCopy[locale].class[category]), `${id}/${locale}: reviewed class`);
+      assert.ok(html.includes(`${glycemicLoadPath(locale)}#${id}`), `${id}/${locale}: guide link`);
+    }
+  }
+});
 
 test("generated route and search data satisfy the browser parser contracts", async () => {
   const dir = path.join(dist, "data");

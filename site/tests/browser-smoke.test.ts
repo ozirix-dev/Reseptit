@@ -428,6 +428,11 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.match(await ingredientPortion.innerText(), /100 g[\s\S]+18,3 g/);
     await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
     assert.match(await ingredientPortion.innerText(), /150 g[\s\S]+27,5 g/);
+    await page.goto(base + routeFor("indonesialainen-bakwan-jagung-kotiversio"));
+    assert.match(await ingredientPortion.innerText(), /Puolikarkea vehnäjauho.*40 g[\s\S]+29,6 g/);
+    assert.equal(await page.locator("[data-portion-carbohydrate], [data-portion-gk]").count(), 0);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await ingredientPortion.innerText(), /60 g[\s\S]+44,4 g/);
     await page.goto(base + glycemicLoadPath("fi") + "#malesialainen-kookos-banaanikulho");
     assert.match(await page.locator("#malesialainen-kookos-banaanikulho [data-ingredient-portion]").innerText(), /100 g[\s\S]+18,3 g/);
     await page.goto(base + routeFor("tunisialainen-brik", "en"));
@@ -444,6 +449,10 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.goto(base + routeFor("dan-dan-nuudelit"));
     const danDan = page.locator('[data-gk-version="gk-operation80-review-ad22de231e93"]');
     assert.match(await danDan.locator("[data-gk-alternatives]").innerText(), /Tuore udon\s+noin 18,5[\s\S]+Hakubaku Somen\s+noin 25/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+    await page.goto(base + routeFor("pohjoisafrikkalainen-msemen-hunajalla-punnittu-v2", "en"));
+    assert.match(await page.locator('[data-gk-status="QUALITATIVE"]').innerText(), /Estimated high GL/);
+    assert.match(await page.locator(".recipe-portion").innerText(), /2 pieces/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);
     assert.match(await danDan.innerText(), /Lähdearvion erän annosmäärä · 4/);
 
