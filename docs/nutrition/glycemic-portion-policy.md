@@ -1,0 +1,143 @@
+# Julkisen annoksen GK ja hiilihydraattitieto
+
+Toteutus ja ehdotetut julkaisut tässä katselmoitavassa työhaarassa,
+18.11.2026. Lähtövertailu: `e8ed43ed525a9cb6abbe61b94bc1c036153979c7`.
+Tämä kuvaa käyttöön ehdotetun ratkaisun. Historiallinen
+[R0-ehdotus](glycemic-user-purpose-policy-v2.md) säilyy alkuperäisenä.
+
+## Tarkoitus
+
+GK tukee annosten vertailua. Esitä perusteltu tieto imeytyvistä hiilihydraateista annosta kohti, sopiva GK-esitystapa tai ymmärrettävä syy tiedon puutteelle. GK on ainesosien laskennallinen summa, ei valmistetun aterian mittaus eikä yksilöllinen verensokeriennuste. Tavoite ei ole mahdollisimman monta desimaalia.
+
+ADA 2026 korostaa yksilöllistä ravitsemushoitoa ja glykeemisen vaikutuksen huomioimista henkilön tarpeisiin ja insuliinisuunnitelmaan. Terveyskirjasto/Terveyskylä kuvaavat hiilihydraattimäärän ja hoitomuodon yksilöllistä merkitystä. Diabetes UK toteaa GI:n sivuuttavan annoskoon ja käsittelyn, kypsyyden, lajikkeen sekä aterian koostumuksen vaikuttavan tulkintaan. Nämä periaatteet eivät ole henkilökohtaisia hoito-ohjeita.
+
+Ei insuliiniannoksen määrittämiseen eikä yksilölliseksi verensokeriennusteeksi. Älä kehota lääkitysmuutoksiin.
+
+Lähteet: [ADA Standards of Care 2026](https://diabetesjournals.org/care/article/49/Supplement_1/S89/163932); [Diabetes UK](https://www.diabetes.org.uk/living-with-diabetes/eating/carbohydrates-and-diabetes/glycaemic-index-and-diabetes); [Terveyskirjasto](https://www.terveyskirjasto.fi/dlk01273); [Terveyskylä](https://www.terveyskyla.fi/diabetestalo/diabeteksen-omahoito/tyypin-1-diabeteksen-insuliinihoito/ateriainsuliini-ja-hiilihydraatit).
+
+## Mitä käyttäjälle näytetään
+
+Lähtökohta on alkuperäisen reseptin yksi annos. Aineslistan annosmäärä
+skaalaa valmistettavan erän, jolloin annosarvio pysyy samana. Syötävän
+annoksen valinta skaalaa tämän annoksen lukuarvoja ja lähteistettyä
+kappalemäärää. Sanallinen arvio näkyy vain sille katselmoiduilla annoskoilla.
+Erillisversion hiilihydraatteja ja tutkimusannoksen tuloksia ei yhdistetä
+alkuperäiseen annokseen.
+
+1. Näytä hyväksytty ainesosapohjainen piste tai nimetty skenaarioväli.
+   Säilytä perusteltu likiarvo myös pienellä luottamuksella. Kerro rajaus,
+   kun tuote, lisuke tai mittaustiedon vastaavuus vaikuttaa tulkintaan.
+2. Sanallinen GK-luokka vaatii reseptikohtaisen perustelun
+   glykeemisestä kuormasta, tunnetun annoksen, olennaisten ainesosien
+   määrät, vertailutiedon ja soveltamisrajauksen. Pelkkä vähäinen
+   hiilihydraatti tai reseptitunniste ei tuota luokkaa.
+3. Jos GK jää avoimeksi, näytä varmennettu koko annoksen hiilihydraattitieto
+   tai rajaa tieto nimettyyn tunnettuun ainekseen tai puuttuvaan lähteeseen.
+   Älä näytä osasummaa annoksen kokonaismääränä.
+
+Rakenteinen, katselmoitu näyttö tallennetaan tiedostoon
+[gk-reviewed-portions.json](gk-reviewed-portions.json). Se sitoo väitteen
+rakenteiseen annos-, ainesosa- ja valmistustietoon, lähteeseen ja soveltuvissa
+tapauksissa ravintolaskelman tarkisteeseen. Muuttunut sidos pysäyttää
+ehdotetun arvion ennen buildia. Otsikon tai ingressin toimituksellinen
+muutos ei muuta rakenteista sidosta. Jos olennainen valmistus tai lisuke
+muuttuu proosassa, ylläpitäjän on päivitettävä myös rakenteinen
+valmistustieto ja katselmoitava arvio. Vanhat GK-sidokset,
+aineistot ja hyväksynnät pidetään toistettavina.
+
+## Hiilihydraattitiedon merkitys
+
+Uusi annosnäkymä käyttää ensisijaisesti ruokakohtaisesti varmennettua koko
+annoksen imeytyvän hiilihydraatin arviota. Se ei sisällä kuitua eikä polyoleja.
+Vanhoissa resepteissä käytetään olemassa olevaa koko annoksen ilmoitettua
+ravintolukua ja sen omaa nimeä. Recipavon kokonaishiilihydraatti sisältää
+kuidun ja polyolit. Reseptin ilmoittama nettoarvo säilyttää oman nimensä.
+Sivun kieli ei muuta kenttien ravintoarvoperustaa.
+
+Finelin CHOAVL ja AFCD:n hiilihydraatti ilman sokerialkoholeja ovat valmiiksi
+normalisoituja. EU:n polyolit sisältävästä luvusta voidaan vähentää lähteistetty
+polyolimäärä, mutta kuitua ei vähennetä. US:n kokonaishiilihydraattiluvusta
+poistetaan varmennettu kuitu ja tarvittaessa varmennetut polyolit. Lähteen
+puuttuvaa arvoa ei tulkita nollaksi eikä vähennyksiä tehdä uudelleen
+käyttöliittymässä. GK-mallissa lähdetiedon imeytyvä hiilihydraatti ja
+polyolien mahdollinen glykeeminen vaikutus ovat eri kysymyksiä.
+
+## Luokittelu ja poisjättö
+
+Julkiset luokat käyttävät pyöristämätöntä lukua silloin kun se on tiedossa:
+pieni on enintään 10, keskisuuri on yli 10 mutta alle 20, suuri on vähintään
+20. Esitystarkkuuden osuminen toiselle puolelle rajaa näytetään rajatapauksena.
+Jos väli ylittää sallitun luokan rajan, luokkasuodatin ei valitse arviota.
+Sanallinen luokka voi osallistua, kun se koskee listauksen vakioannosta.
+Hakutulokset säilyttävät nykyisen järjestyksensä, ja oppaan haku käyttää
+osuvuutta ja nimeä. Kumpikaan ei käytä puuttuvaa lukua nollana.
+
+Historiallisen laskennan yksittäinen alle 1 g:n ja yhteenlaskettu alle 2 g:n
+poisjättöraja säilyttää jo hyväksytyt likiarvot. Vaille lähteistettyä ylärajaa
+jäävä positiivinen poisjättö tekee pienen tai keskisuuren luokan epävarmaksi.
+Reseptissä näkyy edelleen piste ja rajaus, mutta luokkaa ei käytetä
+suodattimessa. Positiivinen lisäys ei siirrä jo suuren arvion alarajaa
+pienempään luokkaan. Poisjätetyille aineksille ei anneta yleistä GI-arvoa.
+
+Kaalikääryleiden 9,24 säilytettiin. Kaalin ja kukkakaalin osuudet perustuvat
+kasvisryhmän GI 66 -keskiarvoon, ja noin 1,58 g imeytyvää hiilihydraattia
+jää laskelman ulkopuolelle. Katsausarvo ei ole kaalin tai kukkakaalin mittaus.
+[Górecka ym.](https://phmd.hirszfeld.pl/wp-content/uploads/2023/06/01.3001.0014.2493.pdf)
+vertaavat erisuuruisia hiilihydraattikuormia.
+[Fernandes ym.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3650508/) raportoima
+kukkakaaliluku on valmistukseltaan tuntemattomasta verkkolähteestä.
+Kumpikaan ei perustele mittausarvon vaihtamista.
+
+## Kattavuus
+
+Nimittäjä tulee nykyisistä julkisista suomenkielisistä alkuperäisistä.
+Käännökset ja karanteenissa olevat eivät kasvata nimittäjää.
+Numero/väli, sanallinen GK, pelkkä hiilihydraatti, nimetty tieto ja
+pelkkä puute ovat toisensa poissulkevat esitystilat. Koko annoksen
+hiilihydraattitiedon ja odottavan GI-katselmoinnin luvut voivat limittyä
+näiden kanssa. Hyödyllisen tiedon määrä laskee reseptin kerran.
+Erillisversiot ja tutkimusvertailut raportoidaan omina lukuinaan.
+
+## Ulkoinen vertailu mitattuun ateria-GI:hin
+
+[Dodd ym. (2011), taulukot 1–3](https://doi.org/10.3945/ajcn.111.012138) mittasivat
+seitsemän ainesosan ja kolmen 50 gramman hiilihydraattiannoksen GI:n 30 terveellä
+aikuisella. Syötimme Recipavon laskentaan tutkimuksen ilmoittamat annoskohtaiset
+imeytyvät hiilihydraatit sekä samassa kokeessa mitatut ainesosien GI:t.
+Vertailuarvo on mitattu koko aterian GI × 50/100. Vertailu käyttää julkaistuja
+ryhmäpisteitä eikä toista tutkijoiden mallia osallistujatasolla.
+
+| Tutkimusateria | Ainesosista laskettu GK | Mitatusta ateria-GI:stä johdettu GK (95 %:n LV) | Erotus | GK-luokat, laskettu / vertailu |
+| --- | ---: | ---: | ---: | --- |
+| Perunasoseateria | 31,29 | 26,5 (23–31) | +4,79 | suuri / suuri |
+| Riisiateria | 25,29 | 19 (16,5–22,5) | +6,29 | suuri / kohtalainen |
+| Spagettiateria | 27,29 | 19 (16,5–22) | +8,29 | suuri / kohtalainen |
+
+Jokaisessa annoksessa perunasose, riisi tai spagetti toi 25 g hiilihydraattia
+(GI 72, 48 tai 56). Muut osuudet olivat bataatti 10 g × GI 84, herneet 4 g × GI 29,
+porkkana 3 g × GI 31 ja tomaattikastike 8 g × GI 35. Tutkimus kirjasi 50 g
+paistetulle kanalle 0 g hiilihydraattia. Kaava on summa(ainesosan GI ×
+ainesosan imeytyvät hiilihydraatit) / 100. Laskenta käyttää taulukon ilmoittamia
+annosgrammoja suoraan. Annoksen pyöristetystä massasta ja prosenttiosuudesta
+yhteen laskettu hiilihydraattimäärä voi poiketa näistä grammoista.
+
+Keskimääräinen harha oli +6,46 GK-yksikköä ja keskimääräinen absoluuttinen virhe
+6,46 yksikköä. Pistearvosta laskettu luokka osui yhteen 1/3 tapauksessa (rajat
+≤ 10, > 10 ja < 20, ≥ 20). Riisi- ja spagettiaterian mitatusta GI:stä
+johdetut luottamusvälit ylittävät GK 20:n rajan. Ne kuvaavat tutkimuksen
+ryhmäarvion epävarmuutta, eivät Recipavon reseptien skenaariovälejä.
+
+[Wolever ym. (2006), taulukko 3 ja kuva 2](https://doi.org/10.1093/ajcn/83.6.1306)
+löysivät 14 aamiaisaterialla yhteyden lasketun GK:n ja mitatun keskimääräisen
+glukoosivasteen pinta-alan välillä (r = 0,95). Tulos tukee annosten keskinäistä
+vertailua tässä aineistossa. Glukoosivasteen pinta-ala (mmol × min/l) on eri
+suure kuin GK. Tutkimus ilmoitti GK:n laskennallisena eikä tarjonnut samalle
+annokselle mitattua ateria-GI:tä GK-virheen vertailukohdaksi.
+
+Doddin kolme ateriaa vaihtelivat lähinnä pääasiallisen hiilihydraattilähteen osalta.
+Tulokset koskevat näitä tutkimusannoksia ja ryhmätason vertailua. Ne eivät mittaa
+Recipavon lähdeanalogioiden virhettä, koko reseptikirjaston GK-luokittelun
+osuvuutta tai yksilöllistä vastetta. Aineistoon ei sovitettu korjauskerrointa.
+Laajempi ulkoinen arviointi vaatii erillisen aineiston, jossa samoihin annoksiin
+on saatavilla sekä ainesosien tunnistettavat määrät ja hiilihydraattiperusta
+että mitattu, samalla viitteellä skaalattu ateria-GI.

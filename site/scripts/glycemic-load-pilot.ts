@@ -209,6 +209,7 @@ for (const [recipeId, binding] of Object.entries(recipeBindings.exactRecipeText 
 const rawResults = inputs.map((recipe) => calculateGlycemicLoad(recipe, foodRecords, giRecords));
 const calculationInputHashes = Object.fromEntries(inputs.map((recipe) => [recipe.recipeId, glycemicLoadInputHash(recipe)]));
 const calculationEvidenceHashes = Object.fromEntries(inputs.map((recipe) => [recipe.recipeId, glycemicLoadEvidenceHash(recipe, foodRecords, giRecords)]));
+const currentLegacyInputs = new Map<string, (typeof rawResults)[number]>();
 const legacyResults = rawResults.map((result) => {
   const boundHash = recipeBindings.recipes[result.recipeId];
   const recipeChanged = !recipeBindingMatches(boundHash, sourceHashes[result.recipeId]) || exactTextMismatches.has(result.recipeId);
@@ -229,6 +230,7 @@ const legacyResults = rawResults.map((result) => {
       ],
     };
   }
+  currentLegacyInputs.set(result.recipeId, result);
   const usesImputation = result.ingredients.some((ingredient) =>
     giRecords.find((record) => record.id === ingredient.giRecordId)?.evidenceKind === "PUBLISHED_IMPUTATION");
   return usesImputation ? {...result, assessmentType: "PUBLISHED_IMPUTATION" as const, modelScenario: "POINT_SCENARIO" as const} : result;
@@ -427,7 +429,22 @@ const originals = siteContent.recipes.filter(recipe => recipe.locale === "fi");
 const portions = await Promise.all(originals.map(async recipe => {
   const source = publishedRecipeSources.get(recipe.recipeId);
   if (isFixtureBuild || !source) return { recipe, projection: null };
-  return { recipe, projection: await projectPortionEvidence(root, recipe.recipeId, source.markdown, reviewedPortions[recipe.recipeId]) };
+  const review = reviewedPortions[recipe.recipeId];
+  const projection = await projectPortionEvidence(root, recipe.recipeId, source.markdown, review);
+  const knownCarbIngredient = review?.knownCarbIngredient;
+  if (review && knownCarbIngredient && !projection.portion.driver) {
+    const verified = currentLegacyInputs.get(recipe.recipeId)?.ingredients.find(row => row.name === knownCarbIngredient
+      && row.grams !== null && row.fineliRecordId && row.availableCarbohydratePerServingG !== null
+      && row.availableCarbohydratePerServingG > 0 && !row.availableCarbohydratePerServingRangeG && !row.excludedReason);
+    const record = foodRecords.find(record => record.id === verified?.fineliRecordId);
+    const index = recipe.ingredients.findIndex(row => row.item === applyCopyEdits(knownCarbIngredient,
+      reviewedRecipeCopy(recipe.recipeId, "fi")?.ingredientItem));
+    if (!verified || record?.sourceUrl !== review.source || index < 0) {
+      throw new Error(`${recipe.recipeId}: named carbohydrate source must be reviewed against current evidence.`);
+    }
+    projection.portion.driver = { ingredientIndex: index, coversMajority: false };
+  }
+  return { recipe, projection };
 }));
 const publicPortions = Object.fromEntries(portions.flatMap(({ recipe, projection }) =>
   projection && Object.keys(projection.portion).length ? [[recipe.recipeId, projection.portion]] : []));

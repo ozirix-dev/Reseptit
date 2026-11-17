@@ -417,11 +417,13 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       ["kylma-oliivioljylevite", '.recipe-portion', "Tarjoiluleipä ei sisälly arvioon"],
       ["tonnikalatayte-kurkkukupeissa", '[data-portion-carbohydrate]', "1,2"],
       ["kebab-munakasrulla", '.recipe-portion', "Vehnäjauho"],
+      ["mapo-tofu", ".recipe-portion", "kypsää pitkäjyväistä riisiä"],
       ["vhh-kaalikaarryleet", '.recipe-glycemic-load__class', "kasvisryhmän keskiarvo"],
     ]) {
       const recipe = siteContent.recipes.find(recipe => recipe.locale === "fi" && recipe.recipeId === id)!;
       await page.goto(base + recipe.routePath);
       assert.ok((await page.locator(selector).innerText()).includes(copy), id);
+      if (id === "mapo-tofu") assert.equal(await page.locator("[data-portion-carbohydrate]").count(), 0);
       if (id === "taytetyt-kananmunat-yrteilla") {
         await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
         assert.equal(await page.getByText(portionCopy.fi.class.LOW, { exact: true }).count(), 0);

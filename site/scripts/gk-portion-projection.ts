@@ -14,6 +14,7 @@ interface ReviewedPortion {
   reasoning: string;
   reviewedAt: string;
   portionGrams?: number;
+  knownCarbIngredient?: string;
   nutritionSha256?: string;
   source: string;
   piecesPerServing?: number;

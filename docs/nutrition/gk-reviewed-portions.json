@@ -85,5 +85,75 @@
       "sv": "Uppskattningen ligger nära gränsen mellan låg och medelhög belastning. Värdena för kål och blomkål bygger på ett genomsnitt för en grupp grönsaker.",
       "th": "ค่าประมาณอยู่ใกล้เส้นแบ่งระหว่างภาระน้ำตาลระดับต่ำและปานกลาง ค่าของกะหล่ำปลีและกะหล่ำดอกอ้างอิงค่าเฉลี่ยของกลุ่มผัก"
     }
+  },
+  "bibimbap": {
+    "recipeBindingSha256": "e6e7b8eaf2085a32d44382c7605296053ff5bb9768dd0664b005413a70b0af7c",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The legacy source-bound analysis includes jasmiiniriisiä at 59.25 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "source": "https://fineli.fi/fineli/api/v1/foods/11521?c=2034&c2=2168",
+    "knownCarbIngredient": "jasmiiniriisiä"
+  },
+  "goi-cuon": {
+    "recipeBindingSha256": "962c3f641e57749057bf618aebb2e91ba73796d190ac0a212e039ff515c77170",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The legacy source-bound analysis includes kuivattuja riisivermisellejä at 30.61 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "source": "https://fineli.fi/fineli/api/v1/foods/29055?c=2034&c2=2168",
+    "knownCarbIngredient": "kuivattuja riisivermisellejä"
+  },
+  "pho-bo": {
+    "recipeBindingSha256": "c751a99a19b279ac6f044b740c786b2170fbf06069c9bd165df10bd9e84056c6",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The legacy source-bound analysis includes kuivattuja litteitä riisinuudeleita at 54.43 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "source": "https://fineli.fi/fineli/api/v1/foods/29055",
+    "knownCarbIngredient": "kuivattuja litteitä riisinuudeleita"
+  },
+  "hernekeitto-savupotkalla": {
+    "recipeBindingSha256": "1fe85d58263088f6e9ba1b37b356a17e49145c4254f5e43c3cc8bc31ee7cc845",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The legacy source-bound analysis includes kuivattuja herneitä at 33.96 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "source": "https://fineli.fi/fineli/api/v1/foods/371",
+    "knownCarbIngredient": "kuivattuja herneitä"
+  },
+  "lanzhou-naudanliha-nuudelikeitto": {
+    "recipeBindingSha256": "10ab2672f8d5ee25a325b152f7f71c23f6f94edbb859280501aeacd36cf92a6a",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The legacy source-bound analysis includes vehnänuudeleita at 58.10 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "source": "https://fineli.fi/fineli/api/v1/foods/120",
+    "knownCarbIngredient": "vehnänuudeleita"
+  },
+  "roujiamo": {
+    "recipeBindingSha256": "01a189b5f94981ee6e4e38806e1cff826fe5b6926a0babaaaaf2856f194683d7",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The legacy source-bound analysis includes vehnäjauhoja at 55.50 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "source": "https://fineli.fi/fineli/api/v1/foods/110",
+    "knownCarbIngredient": "vehnäjauhoja"
+  },
+  "masala-dosa": {
+    "recipeBindingSha256": "89524ae09e1a2eb7aa4805a9a68b9c1a946ccdfd847d44e5994f1c702c29c876",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The legacy source-bound analysis includes basmatiriisiä at 49.38 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "source": "https://fineli.fi/fineli/api/v1/foods/11521",
+    "knownCarbIngredient": "basmatiriisiä"
+  },
+  "korealainen-bindaetteok-aamiaiseksi": {
+    "recipeBindingSha256": "e94ed26fd8e16d3033cf8126ef13de06e29dd5bd2879d5c869875d7ae7c188c2",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The legacy source-bound analysis includes mungpapu at 31.43 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "source": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+    "knownCarbIngredient": "mungpapu"
+  },
+  "japanilainen-natto-riisikulho": {
+    "recipeBindingSha256": "c4752a610195954481f743e8cade1ae052e5c8e643b36471a8254a7c92960254",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The legacy source-bound analysis includes riisi at 39.50 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "source": "https://fineli.fi/fineli/api/v1/foods/11521",
+    "knownCarbIngredient": "riisi"
+  },
+  "mapo-tofu": {
+    "recipeBindingSha256": "274445d43d46987ab7ee181e1b00161fc33faf52cebd129a69ba5f731d073c27",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The legacy source-bound analysis includes kypsää pitkäjyväistä riisiä at 35.34 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "source": "https://fineli.fi/fineli/api/v1/foods/30346",
+    "knownCarbIngredient": "kypsää pitkäjyväistä riisiä"
   }
 }
