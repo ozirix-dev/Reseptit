@@ -2,10 +2,46 @@ import type { RecipeLocale } from '@/types/content';
 import type { GkVersionCoverage } from '../recipes/gk-only-types';
 
 export const coverageCopy = {
-  fi: { title: 'Alkuperäisten reseptien GK-kattavuus', original: 'Alkuperäiseen reseptiin sidottu arvio', variants: 'Erillinen GK-versio, alkuperäisen arvio puuttuu', studies: 'Tutkimusvertailut', combined: 'Alkuperäinen arvio tai erillinen reseptiversio', target: 'Alkuperäisten reseptien 80 %:n tavoite', gap: 'Puuttuvia alkuperäisreseptien arvioita tavoitteeseen', note: 'Kattavuus kuvaa nykyisiä reseptisidoksia. Se ei ole laskelmien uusi tieteellinen hyväksyntä. Erillisversiot ja tutkimusvertailut eivät kasvata alkuperäisten reseptien kattavuutta.' },
-  en: { title: 'GL coverage of original recipes', original: 'Estimate bound to the original recipe', variants: 'Separate GL version; original estimate unavailable', studies: 'Study comparisons', combined: 'Original estimate or separate recipe version', target: '80% target for original recipes', gap: 'Original-recipe estimates still needed', note: 'Coverage describes current recipe bindings, not a new scientific approval of the calculations. Separate versions and study comparisons do not increase original-recipe coverage.' },
-  sv: { title: 'GL-täckning för originalrecept', original: 'Uppskattning knuten till originalreceptet', variants: 'Separat GL-version; originalets uppskattning saknas', studies: 'Forskningsjämförelser', combined: 'Originalets uppskattning eller separat receptversion', target: '80-procentsmål för originalrecept', gap: 'Ytterligare uppskattningar för originalrecept som behövs', note: 'Täckningen beskriver nuvarande receptkopplingar, inte ett nytt vetenskapligt godkännande av beräkningarna. Separata versioner och forskningsjämförelser ökar inte originalreceptens täckning.' },
-  th: { title: 'สัดส่วนสูตรเดิมที่มีค่าประมาณ GL', original: 'ค่าประมาณที่ผูกกับสูตรเดิม', variants: 'มีค่า GL ของสูตรเวอร์ชันแยก แต่ยังไม่มีค่าของสูตรเดิม', studies: 'อาหารจากงานวิจัยสำหรับเปรียบเทียบ', combined: 'มีค่าของสูตรเดิมหรือสูตรเวอร์ชันแยก', target: 'เป้าหมาย 80% สำหรับสูตรเดิม', gap: 'จำนวนสูตรเดิมที่ยังต้องมีค่าประมาณเพื่อให้ถึงเป้าหมาย', note: 'สัดส่วนนี้แสดงการผูกข้อมูลกับสูตรในปัจจุบัน ไม่ใช่การรับรองการคำนวณทางวิทยาศาสตร์ครั้งใหม่ สูตรเวอร์ชันแยกและอาหารเปรียบเทียบจากงานวิจัยไม่เพิ่มสัดส่วนของสูตรเดิม' },
+  fi: {
+    title: 'Alkuperäisten reseptien GK-kattavuus',
+    original: 'Alkuperäiset reseptit, joilla on julkaistu GK-arvio',
+    variants: 'Erillisversiot, joilla on GK-arvio ja joiden alkuperäisestä reseptistä arvio puuttuu',
+    studies: 'Tutkimusannosvertailut',
+    combined: 'Reseptit, joilla on GK-arvio alkuperäiselle tai erillisversiolle',
+    target: 'Alkuperäisten reseptien 80 %:n tavoite',
+    gap: 'Alkuperäisten reseptien arvioita tarvitaan vielä tavoitteeseen',
+    note: 'Osuus kertoo, kuinka monella alkuperäisellä reseptillä on julkaistu GK-arvio. Laskelmien luotettavuus arvioidaan erikseen. Erillisversiot ja tutkimusannosvertailut eivät kasvata tätä osuutta.',
+  },
+  en: {
+    title: 'GL coverage of original recipes',
+    original: 'Original recipes with a published GL estimate',
+    variants: 'Separate versions with a GL estimate where the original recipe has none',
+    studies: 'Study serving comparisons',
+    combined: 'Recipes with a GL estimate for the original or a separate version',
+    target: '80% target for original recipes',
+    gap: 'More original-recipe estimates needed to reach the target',
+    note: 'This share shows how many original recipes have a published GL estimate. The reliability of the calculations is assessed separately. Separate versions and study serving comparisons do not count towards this share.',
+  },
+  sv: {
+    title: 'GL-täckning för originalrecept',
+    original: 'Originalrecept med en publicerad GL-uppskattning',
+    variants: 'Separata versioner med GL-uppskattning där originalreceptet saknar en uppskattning',
+    studies: 'Jämförelser med studieportioner',
+    combined: 'Recept med en GL-uppskattning för originalet eller en separat version',
+    target: 'Mål på 80 % för originalrecept',
+    gap: 'Fler originalrecept som behöver en uppskattning för att nå målet',
+    note: 'Andelen visar hur många originalrecept som har en publicerad GL-uppskattning. Beräkningarnas tillförlitlighet bedöms separat. Separata versioner och jämförelser med studieportioner räknas inte in i den här andelen.',
+  },
+  th: {
+    title: 'สัดส่วนสูตรเดิมที่มีค่าประมาณ GL',
+    original: 'สูตรเดิมที่เผยแพร่ค่าประมาณ GL แล้ว',
+    variants: 'สูตรที่ปรับแยกต่างหากและมีค่าประมาณ GL โดยสูตรเดิมยังไม่มีค่าประมาณ',
+    studies: 'การเปรียบเทียบกับหนึ่งหน่วยบริโภคในงานวิจัย',
+    combined: 'สูตรที่มีค่าประมาณ GL สำหรับสูตรเดิมหรือสูตรที่ปรับแยกต่างหาก',
+    target: 'เป้าหมาย 80% สำหรับสูตรเดิม',
+    gap: 'จำนวนสูตรเดิมที่ยังต้องมีค่าประมาณเพื่อให้ถึงเป้าหมาย',
+    note: 'สัดส่วนนี้แสดงว่ามีสูตรเดิมกี่สูตรที่เผยแพร่ค่าประมาณ GL แล้ว ความน่าเชื่อถือของการคำนวณประเมินแยกต่างหาก สัดส่วนนี้ไม่นับสูตรที่ปรับแยกต่างหากหรือการเปรียบเทียบกับหนึ่งหน่วยบริโภคในงานวิจัย',
+  },
 } satisfies Record<RecipeLocale, Record<string, string>>;
 
 export function GkCoverageSummary({ coverage: c, locale }: { coverage: GkVersionCoverage; locale: RecipeLocale }) {

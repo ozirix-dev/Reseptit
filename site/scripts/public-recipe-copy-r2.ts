@@ -16,9 +16,29 @@ interface ReviewedRecipeCopy {
 // Display-only edits. Canonical ingredients, release evidence and calculation inputs
 // stay in their source files. Edits match the approved display text before this pass.
 const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
+  "ananas-kanelijuoma-sitruunalla/en": {
+    "description": "Blend fresh pineapple, lemon juice, cold water and a pinch of cinnamon for a refreshing drink. The blended pineapple pulp gives it body."
+  },
+  "ananas-kanelijuoma-sitruunalla/sv": {
+    "description": "Mixa färsk ananas, citronsaft, kallt vatten och en nypa kanel till en frisk dryck. Fruktköttet får vara kvar och ger drycken fyllighet.",
+    "method": [
+      ["Skär och väg 330 g massa. Pressa citronsaft.", "Skär ananasen i bitar och väg upp 330 g fruktkött. Pressa citronen."],
+      ["Puré tills drinken är så slät som möjligt.", "Mixa tills drycken är så slät som möjligt."],
+      ["Dela i två glas och servera kallt. Rör eventuellt om i drinken innan servering, eftersom kanelen kan sjunka till botten.", "Fördela drycken i två glas och servera kall. Rör om före servering vid behov, eftersom kanelen kan sjunka till botten."]
+    ]
+  },
   "ananas-kanelijuoma-sitruunalla/th": {
     "method": [
-      ["ล้างสับปะรดและมะนาวก่อนหั่น ปอกเปลือกและแข็งตรงกลางของสับปะรดออก ตัดและชั่งน้ำหนักเยื่อกระดาษ 330 กรัม บีบน้ำมะนาว.", "ล้างสับปะรดและมะนาวก่อนหั่น ปอกเปลือกสับปะรดและตัดแกนแข็งออก หั่นเนื้อสับปะรดแล้วชั่ง 330 กรัม จากนั้นคั้นมะนาว"]
+      ["ล้างสับปะรดและมะนาวก่อนหั่น ปอกเปลือกและแข็งตรงกลางของสับปะรดออก ตัดและชั่งน้ำหนักเยื่อกระดาษ 330 กรัม บีบน้ำมะนาว.", "ล้างสับปะรดและมะนาวก่อนหั่น ปอกเปลือกสับปะรดและตัดแกนแข็งออก หั่นเนื้อสับปะรดแล้วชั่ง 330 กรัม จากนั้นคั้นมะนาว"],
+      ["ล้างสับปะรดและมะนาวก่อนหั่น", "ล้างสับปะรดและเลมอนก่อนหั่น"],
+      ["จากนั้นคั้นมะนาว", "จากนั้นคั้นน้ำเลมอน"],
+      ["ตวงน้ำและน้ำมะนาวลงในเครื่องปั่น เพิ่มชิ้นสับปะรดและอบเชย บดจนเครื่องดื่มเนียนที่สุด", "ตวงน้ำกับน้ำเลมอนใส่เครื่องปั่น ใส่สับปะรดที่หั่นไว้และอบเชย แล้วปั่นให้เนียนที่สุด"]
+    ],
+    "description": "ปั่นสับปะรดสดกับน้ำเลมอน น้ำเย็น และอบเชยเล็กน้อยเป็นเครื่องดื่มรสสดชื่น เนื้อสับปะรดที่ปั่นรวมลงไปทำให้เครื่องดื่มมีเนื้อสัมผัส"
+  },
+  "avokado-banaanijaatelo/sv": {
+    "method": [
+      ["Puré tills den är slät.", "Mixa tills blandningen är slät."]
     ]
   },
   "avokado-perunasampylat/en": {
@@ -50,9 +70,39 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
       ["น้ำหนักเยื่อกระดาษ", "น้ำหนักเฉพาะเนื้ออะโวคาโด"]
     ]
   },
+  "bataatti-banaanileipa/en": {
+    "method": [
+      ["Preheat the oven to 175°C with constant heat.", "Preheat the oven to 175 °C using top and bottom heat."]
+    ]
+  },
+  "bataatti-banaanileipa/sv": {
+    "method": [
+      ["Värm ugnen till 175°C med konstant värme.", "Värm ugnen till 175 °C med över- och undervärme."]
+    ]
+  },
   "bataatti-banaanileipa/th": {
     "ingredientNote": [
       ["เยื่อกระดาษที่ปอกเปลือกและเย็น", "เนื้อมันเทศที่ปอกเปลือกและพักให้เย็นแล้ว"]
+    ]
+  },
+  "bataatti-mustikkakakku/en": {
+    "method": [
+      ["Preheat the oven to 175°C with constant heat.", "Preheat the oven to 175 °C using top and bottom heat."]
+    ]
+  },
+  "bataatti-mustikkakakku/sv": {
+    "method": [
+      ["Värm ugnen till 175°C med konstant värme.", "Värm ugnen till 175 °C med över- och undervärme."]
+    ]
+  },
+  "bataattibrowniet/en": {
+    "method": [
+      ["Preheat the oven to 175°C with constant heat.", "Preheat the oven to 175 °C using top and bottom heat."]
+    ]
+  },
+  "bataattibrowniet/sv": {
+    "method": [
+      ["Värm ugnen till 175°C med konstant värme.", "Värm ugnen till 175 °C med över- och undervärme."]
     ]
   },
   "bataattibrowniet/th": {
@@ -229,6 +279,11 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
       ["Lisää 200 g täysmaitoa,2,6 g jauhettua kanelia ja 5 g nimettyä vaniljauutetta. Syö mausteet kokonaan; ei siivilöintiä.", "Lisää 200 g täysmaitoa, 2,6 g jauhettua kanelia ja 5 g nimettyä vaniljauutetta. Syö mausteet kokonaan; ei siivilöintiä."]
     ]
   },
+  "mustikka-jogurttijaatelo/sv": {
+    "method": [
+      ["Puré tills den är slät.", "Mixa tills blandningen är slät."]
+    ]
+  },
   "nakkikastike-kukkakaalimuusi/fi": {
     "ingredientItem": [
       ["kuohukermaa,38%", "kuohukermaa, 38 %"]
@@ -243,7 +298,8 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
     "description": "Sear the whole cut of beef in a pan, then roast it gently in the oven using a meat thermometer. Slice against the grain to serve warm, or refrigerate the roast and slice it once chilled for sandwiches.",
     "method": [
       ["Grease the surface of the roast for a while with pan grease.", "Briefly baste the roast with the fat in the pan."],
-      ["cut the meat crosswise into thin slices.", "slice the meat thinly against the grain."]
+      ["cut the meat crosswise into thin slices.", "slice the meat thinly against the grain."],
+      ["Preheat the oven to 125°C with constant heat.", "Preheat the oven to 125 °C using top and bottom heat."]
     ],
     "notes": [
       ["If meat is recommended for the diner, prepare a portion cooked all over.", "If the diner has been advised to eat fully cooked meat, make sure their portion is cooked all the way through."],
@@ -254,7 +310,8 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
     "description": "Bryn rostbiffen hel i stekpanna och tillaga den sedan på låg ugnsvärme med stektermometer. Skär tvärs över muskelfibrerna och servera varm, eller kyl steken i kylskåp innan du skivar den till smörgåsar.",
     "method": [
       ["Smörj stekens yta en stund med pannfett.", "Ös steken en kort stund med fettet i pannan."],
-      ["skär köttet på tvären i tunna skivor.", "skär köttet i tunna skivor tvärs över muskelfibrerna."]
+      ["skär köttet på tvären i tunna skivor.", "skär köttet i tunna skivor tvärs över muskelfibrerna."],
+      ["Värm ugnen till 125°C med konstant värme.", "Värm ugnen till 125 °C med över- och undervärme."]
     ],
     "notes": [
       ["Om kött rekommenderas för diner, förbered en del tillagad överallt.", "Om den som ska äta rekommenderas genomstekt kött, tillaga personens portion så att den blir genomstekt."],
@@ -265,7 +322,9 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
     "description": "จี่เนื้อวัวทั้งชิ้นในกระทะให้ผิวเป็นสีน้ำตาล แล้วอบด้วยไฟอ่อนโดยใช้เทอร์โมมิเตอร์วัดอุณหภูมิเนื้อ หั่นขวางเส้นใยแล้วเสิร์ฟอุ่น หรือแช่ตู้เย็นก่อนหั่นสำหรับทำแซนด์วิช",
     "method": [
       ["ทาจาระบีที่พื้นผิวของเนื้อย่างสักครู่ด้วยจาระบีกระทะ", "ตักไขมันในกระทะราดบนเนื้อสักครู่"],
-      ["ปล่อยให้พักไว้ประมาณ 15-20 นาทีก่อนตัด", "คลุมเนื้อหลวม ๆ แล้วพักประมาณ 15–20 นาทีก่อนหั่น"]
+      ["ปล่อยให้พักไว้ประมาณ 15-20 นาทีก่อนตัด", "คลุมเนื้อหลวม ๆ แล้วพักประมาณ 15–20 นาทีก่อนหั่น"],
+      ["ตั้งน้ำมันเรพซีดในกระทะและย่างให้ทั่วรวมทั้งส่วนปลายด้วย ในตอนท้าย ใส่เนย กานพลูกระเทียมบด และไธม์ลงไป", "ตั้งน้ำมันเรพซีดในกระทะให้ร้อน จี่เนื้อให้เป็นสีน้ำตาลทั่วชิ้นรวมทั้งด้านหัวท้าย ช่วงท้ายใส่เนย กลีบกระเทียมบุบ และไธม์"],
+      ["โอนย่างไปยังจานอบ สอดปลายเทอร์โมมิเตอร์เข้าตรงกลางส่วนที่หนาที่สุด อบที่ระดับกลางของเตาอบจนกระทั่งเทอร์โมมิเตอร์อ่านได้อย่างน้อย 63 °C คุณสามารถเผื่อเวลาไว้ 1½–2½ ชั่วโมงสำหรับการย่างประมาณ 1 กิโลกรัม รูปร่างและอุณหภูมิเริ่มต้นส่งผลต่อเวลา", "ย้ายชิ้นเนื้อลงในภาชนะสำหรับอบ เสียบปลายเทอร์โมมิเตอร์วัดอุณหภูมิเนื้อให้ถึงกึ่งกลางของส่วนที่หนาที่สุด อบบนชั้นกลางจนวัดได้อย่างน้อย 63 °C สำหรับเนื้อหนักประมาณ 1 กิโลกรัม เผื่อเวลาอบไว้ 1½–2½ ชั่วโมง ระยะเวลาขึ้นอยู่กับรูปทรงและอุณหภูมิของเนื้อก่อนเข้าเตา"]
     ],
     "notes": [
       ["[แชมป์](https://www.valio.fi/", "[Valio](https://www.valio.fi/"]
@@ -315,25 +374,47 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
     "method": [
       ["Skära [mogen, kyld rostbiff](/sv/recept/naudan-paahtopaisti-uunissa/) i tunna skivor och väg 240 g. Skär de avsvalnade havreklirullarna på mitten och lägg halvorna med snittsidan uppåt. Du kan rosta bottnarna lätt. Låt dem svalna innan de fylls.", "Skär [tillagad, kyld rostbiff](/sv/recept/naudan-paahtopaisti-uunissa/) i tunna skivor och väg 240 g. Skär de avsvalnade havreklifrallorna på mitten och lägg halvorna med snittsidan uppåt. Du kan rosta bottnarna lätt. Låt dem svalna innan de fylls."],
       ["Blanda smetana, majonnäs, dijonsenap och citronsaft. Riv först 12 g pepparrot. Smaka av och tillsätt mer rivet om så önskas upp till max 20 gram. Krydda med svartpeppar.", "Blanda smetana, majonnäs, dijonsenap och citronsaft. Riv ner 12 g pepparrot. Smaka av och tillsätt vid behov mer riven pepparrot, upp till 20 g totalt. Krydda med svartpeppar."],
-      ["Bred ut såsen på bottnarna och tillsätt ruccola. Vik 60 g rostbiff på varje brödbit. Avsluta med saltgurka, lök och kapris. Erbjud nu.", "Bred såsen på brödet och lägg på rucola. Lägg 60 g rostbiff i veck på varje brödbit. Toppa med saltgurka, lök och kapris. Servera genast."]
+      ["Bred ut såsen på bottnarna och tillsätt ruccola. Vik 60 g rostbiff på varje brödbit. Avsluta med saltgurka, lök och kapris. Erbjud nu.", "Bred såsen på brödet och lägg på rucola. Lägg 60 g rostbiff i veck på varje brödbit. Toppa med saltgurka, lök och kapris. Servera genast."],
+      ["Skär de avsvalnade havreklifrallorna på mitten och lägg halvorna med snittsidan uppåt. Du kan rosta bottnarna lätt. Låt dem svalna innan de fylls.", "Dela de avsvalnade havreklifrallorna och lägg halvorna med snittytan uppåt. Rosta dem lätt om du vill och låt dem svalna före montering."],
+      ["Bred såsen på brödet och lägg på rucola. Lägg 60 g rostbiff i veck på varje brödbit.", "Bred såsen på frallhalvorna och lägg på rucola. Lägg 60 g rostbiff i veck på varje halva."],
+      ["Skölj och torka ruccolan. Skiva den inlagda gurkan och rödlöken tunt. Häll av saltgurkan och kaprisen.", "Skölj och torka rucolan. Skiva saltgurkan och rödlöken tunt. Låt saltgurkan och kaprisen rinna av."]
     ],
     "notes": [
-      ["färdiga sulor och moget kallt kött", "färdigt bröd och tillagad, kyld rostbiff"]
-    ]
+      ["färdiga sulor och moget kallt kött", "färdigt bröd och tillagad, kyld rostbiff"],
+      ["Använder du sesamfrön i rullarna är de också ett allergen.", "Använder du sesamfrön i frallorna är de också ett allergen."],
+      ["De är grunden [havrekli rullar](/sv/recept/keto-kauralesesampylat/). Samma fyllningar är också lämpliga [till rågbröd](/sv/recept/paahtopaistileipa-piparjuurikastikkeella/).", "Använd [havreklifrallor](/sv/recept/keto-kauralesesampylat/) som bas. Samma pålägg passar också [på rågbröd](/sv/recept/paahtopaistileipa-piparjuurikastikkeella/)."]
+    ],
+    "description": "Lägg skivad kall rostbiff, smetanasås med pepparrot och rucola på halverade havreklifrallor. Saltgurka, kapris och lök ger syra och krispighet."
   },
   "paahtopaistileivat-kauralesesampyloilla/th": {
     "method": [
       ["ตัด [เนื้อย่างสุกแช่เย็น](/th/recipes/naudan-paahtopaisti-uunissa/) เป็นชิ้นบางๆ หนัก 240 กรัม ตัดรำข้าวโอ๊ตโรลที่เย็นแล้วลงครึ่งหนึ่งแล้ววางครึ่งหนึ่งโดยหงายขึ้น คุณสามารถปิ้งฐานเบาๆ ปล่อยให้เย็นก่อนเติม", "หั่น [เนื้ออบที่ปรุงสุกและแช่เย็นแล้ว](/th/recipes/naudan-paahtopaisti-uunissa/) เป็นชิ้นบางๆ หนัก 240 กรัม ตัดรำข้าวโอ๊ตโรลที่เย็นแล้วลงครึ่งหนึ่งแล้ววางครึ่งหนึ่งโดยหงายขึ้น คุณสามารถปิ้งฐานเบาๆ ปล่อยให้เย็นก่อนเติม"],
       ["ผสมครีมเปรี้ยว มายองเนส มัสตาร์ดดีชง และน้ำมะนาว ขั้นแรกขูดฮอร์สแรดิช 12 กรัม ชิมรสและเติมตะแกรงเพิ่มหากต้องการ สูงสุดถึง 20 กรัม ปรุงรสด้วยพริกไทยดำ", "ผสมครีมเปรี้ยว มายองเนส มัสตาร์ดดีฌง และน้ำมะนาว ขูดฮอร์สแรดิช 12 กรัมลงไปก่อน ชิมแล้วเติมฮอร์สแรดิชขูดได้ตามชอบ แต่ให้ใช้รวมไม่เกิน 20 กรัม ปรุงรสด้วยพริกไทยดำ"],
-      ["ทาซอสที่ก้นและเพิ่ม arugula ตะล่อมเนื้อย่าง 60 กรัมลงบนขนมปังแต่ละชิ้น ปิดท้ายด้วยแตงกวาดอง หัวหอม และเคเปอร์ เสนอตอนนี้.", "ทาซอสบนขนมปังแล้วใส่ผักร็อกเก็ต พับเนื้ออบวางบนขนมปังชิ้นละ 60 กรัม โรยหน้าด้วยแตงกวาดอง หัวหอม และเคเปอร์ เสิร์ฟทันที"]
+      ["ทาซอสที่ก้นและเพิ่ม arugula ตะล่อมเนื้อย่าง 60 กรัมลงบนขนมปังแต่ละชิ้น ปิดท้ายด้วยแตงกวาดอง หัวหอม และเคเปอร์ เสนอตอนนี้.", "ทาซอสบนขนมปังแล้วใส่ผักร็อกเก็ต พับเนื้ออบวางบนขนมปังชิ้นละ 60 กรัม โรยหน้าด้วยแตงกวาดอง หัวหอม และเคเปอร์ เสิร์ฟทันที"],
+      ["ตัดรำข้าวโอ๊ตโรลที่เย็นแล้วลงครึ่งหนึ่งแล้ววางครึ่งหนึ่งโดยหงายขึ้น คุณสามารถปิ้งฐานเบาๆ ปล่อยให้เย็นก่อนเติม", "ผ่าขนมปังรำข้าวโอ๊ตที่เย็นแล้วเป็นสองซีก วางให้ด้านที่ผ่าหงายขึ้น จะปิ้งขนมปังพอเกรียมก็ได้ พักให้เย็นก่อนวางเครื่อง"],
+      ["ทาซอสบนขนมปังแล้วใส่ผักร็อกเก็ต พับเนื้ออบวางบนขนมปังชิ้นละ 60 กรัม", "ทาซอสบนขนมปังที่ผ่าครึ่งแล้ววางผักร็อกเก็ต พับเนื้ออบวางบนขนมปังซีกละ 60 กรัม"],
+      ["ล้างและทำให้ arugula แห้ง หั่นแตงกวาดองและหัวหอมหัวใหญ่แดงเป็นชิ้นบาง ๆ ระบายแตงกวาดองและเคเปอร์", "ล้างผักร็อกเก็ตแล้วซับให้แห้ง หั่นแตงกวาดองและหอมหัวใหญ่สีแดงเป็นแผ่นบาง ๆ สะเด็ดน้ำแตงกวาดองและเคเปอร์"]
     ],
     "notes": [
-      ["พื้นรองเท้าสำเร็จรูปและเนื้อเย็นที่สุก", "ขนมปังที่เตรียมไว้กับเนื้ออบที่ปรุงสุกและแช่เย็นแล้ว"]
-    ]
+      ["พื้นรองเท้าสำเร็จรูปและเนื้อเย็นที่สุก", "ขนมปังที่เตรียมไว้กับเนื้ออบที่ปรุงสุกและแช่เย็นแล้ว"],
+      ["หากคุณใช้เมล็ดงาในโรล ก็อาจเป็นสารก่อภูมิแพ้ได้เช่นกัน", "หากใส่งาในขนมปังรำข้าวโอ๊ต งาก็เป็นสารก่อภูมิแพ้เช่นกัน"],
+      ["พวกเขาเป็นพื้นฐาน [ม้วนรำข้าวโอ๊ต](/th/recipes/keto-kauralesesampylat/). การอุดแบบเดียวกันก็เหมาะสมเช่นกัน [สำหรับขนมปังข้าวไรย์](/th/recipes/paahtopaistileipa-piparjuurikastikkeella/).", "ใช้ [ขนมปังรำข้าวโอ๊ต](/th/recipes/keto-kauralesesampylat/) เป็นฐาน เครื่องหน้าแบบเดียวกันใช้กับ [ขนมปังข้าวไรย์](/th/recipes/paahtopaistileipa-piparjuurikastikkeella/) ได้ด้วย"]
+    ],
+    "description": "วางเนื้ออบเย็นหั่นบาง ซอสครีมเปรี้ยวผสมฮอร์สแรดิช และผักร็อกเก็ตบนขนมปังรำข้าวโอ๊ตที่ผ่าครึ่งเป็นแซนด์วิชเปิดหน้า แตงกวาดอง เคเปอร์ และหอมหัวใหญ่เพิ่มรสเปรี้ยวและความกรอบ"
   },
   "paprikainen-vhh-gulassi/fi": {
     "method": [
       ["Lisää 0,5 g mustapippuria ja 10 g persiljaa. Tarjoa koko pata kastikkeineen ja rasvoineen 150 g noin 40-prosenttista smetanaa kanssa neljänä annoksena. Erilliset lisukkeet eivät kuulu annokseen.", "Lisää 0,5 g mustapippuria ja 10 g persiljaa. Jaa koko pata kastikkeineen ja rasvoineen neljään annokseen. Tarjoa niiden kanssa yhteensä 150 g noin 40-prosenttista smetanaa. Erilliset lisukkeet eivät kuulu annoksiin."]
+    ]
+  },
+  "parmesaani-lyttyperunat/en": {
+    "method": [
+      ["Preheat the oven to 200 °C with constant heat.", "Preheat the oven to 200 °C using top and bottom heat."]
+    ]
+  },
+  "parmesaani-lyttyperunat/sv": {
+    "method": [
+      ["Värm ugnen till 200 °C med konstant värme.", "Värm ugnen till 200 °C med över- och undervärme."]
     ]
   },
   "pasta-alla-norma/en": {
@@ -351,6 +432,16 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
   "perinteinen-mansikkataytekakku-sienikakkupohjalla/en": {
     "description": "A traditional strawberry cake with a light hot-water sponge, strawberry jam, fresh strawberries and vanilla whipped cream. The recipe makes one 24 cm cake, about 10 slices."
   },
+  "pinaatti-raejuustopaistos/en": {
+    "method": [
+      ["Preheat the oven to 190 °C with constant heat.", "Preheat the oven to 190 °C using top and bottom heat."]
+    ]
+  },
+  "pinaatti-raejuustopaistos/sv": {
+    "method": [
+      ["Värm ugnen till 190 °C med konstant värme.", "Värm ugnen till 190 °C med över- och undervärme."]
+    ]
+  },
   "pohjoisafrikkalainen-minttutee-kaurapuuro/en": {
     "description": "Whole milk makes the oat porridge creamy, and honey sweetens it. Stir in chopped mint leaves and eat them with the porridge.",
     "title": "Mint oat porridge with milk and honey"
@@ -367,6 +458,16 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
     "description": "นมเต็มมันเนยทำให้โจ๊กข้าวโอ๊ตเนื้อนุ่ม น้ำผึ้งให้ความหวาน ส่วนใบสะระแหน่สดที่สับแล้วกินได้พร้อมโจ๊ก",
     "title": "โจ๊กข้าวโอ๊ตใส่สะระแหน่ นม และน้ำผึ้ง"
   },
+  "punajuuri-suklaakakku/en": {
+    "method": [
+      ["Preheat the oven to 175°C with constant heat.", "Preheat the oven to 175 °C using top and bottom heat."]
+    ]
+  },
+  "punajuuri-suklaakakku/sv": {
+    "method": [
+      ["Värm ugnen till 175°C med konstant värme.", "Värm ugnen till 175 °C med över- och undervärme."]
+    ]
+  },
   "ropa-vieja/fi": {
     "ingredientItem": [
       ["laakerinlehteä,1 pieni kokonainen lehti", "laakerinlehteä, 1 pieni kokonainen lehti"]
@@ -381,7 +482,8 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
     "description": "Blended cottage cheese and Greek yogurt give this crustless cake a smooth texture. Cocoa gives it a chocolate flavour, and honey softens the bitterness. Chill the cake before slicing for neat pieces.",
     "method": [
       ["Puree the cottage cheese, yogurt, eggs, cocoa and honey in a blender until the mass is smooth. Pour into a pan.", "Blend the cottage cheese, yogurt, eggs, cocoa and honey until smooth. Pour the batter into the prepared springform pan."],
-      ["Bake on a medium level for approximately 35–45 minutes. Check the cake for the first time at 35 minutes. The edges should be set and the center should still vibrate a little when moving the pan. Use a thermometer to make sure the center has reached 71°C.", "Bake on the middle rack for about 35–45 minutes. Check the cake at 35 minutes. The edges should be set and the centre should still wobble slightly when you gently move the pan. Check with a thermometer that the centre has reached 71 °C."]
+      ["Bake on a medium level for approximately 35–45 minutes. Check the cake for the first time at 35 minutes. The edges should be set and the center should still vibrate a little when moving the pan. Use a thermometer to make sure the center has reached 71°C.", "Bake on the middle rack for about 35–45 minutes. Check the cake at 35 minutes. The edges should be set and the centre should still wobble slightly when you gently move the pan. Check with a thermometer that the centre has reached 71 °C."],
+      ["Preheat the oven to 160 °C with constant heat.", "Preheat the oven to 160 °C using top and bottom heat."]
     ]
   },
   "suklaa-raejuustokakku/sv": {
@@ -389,7 +491,8 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
     "method": [
       ["Mixa keso, yoghurt, ägg, kakao och honung i en mixer tills massan är slät. Häll i en kastrull.", "Mixa keso, yoghurt, ägg, kakao och honung till en slät smet. Häll smeten i den förberedda springformen."],
       ["Grädda på medelhög nivå i cirka 35–45 minuter. Kontrollera kakan första gången vid 35 minuter. Kanterna ska vara ställda och mitten ska fortfarande vibrera lite när man flyttar pannan. Använd en termometer för att kontrollera att mitten har nått 71°C.", "Grädda mitt i ugnen i cirka 35–45 minuter. Kontrollera kakan efter 35 minuter. Kanterna ska ha stelnat medan mitten fortfarande ska dallra lite när du försiktigt rör på formen. Kontrollera med termometer att mitten har nått 71 °C."],
-      ["Låt kakan svalna i formen på galler i ca 30 minuter. Lägg i kylen i minst 4 timmar. Ta bort från pannan när den är kall och skär i fyra bitar.", "Låt kakan svalna i formen på galler i cirka 30 minuter. Ställ den i kylskåp i minst 4 timmar. Lossa den kalla kakan från formen och skär den i fyra bitar."]
+      ["Låt kakan svalna i formen på galler i ca 30 minuter. Lägg i kylen i minst 4 timmar. Ta bort från pannan när den är kall och skär i fyra bitar.", "Låt kakan svalna i formen på galler i cirka 30 minuter. Ställ den i kylskåp i minst 4 timmar. Lossa den kalla kakan från formen och skär den i fyra bitar."],
+      ["Värm ugnen till 160 °C med konstant värme.", "Värm ugnen till 160 °C med över- och undervärme."]
     ]
   },
   "suklaa-raejuustokakku/th": {
