@@ -98,7 +98,7 @@ export const moreBlogPosts: BlogPost[] = [
         "heading": "Miksi versioita on niin paljon?",
         "paragraphs": [
           "Pad thaihin käytetään usein tofua, kananmunaa, kuivattuja katkarapuja ja ituja. Ruohosipuli, maapähkinät ja limetti täydentävät annosta. Ainekset vaihtelevat reseptin ja alueen mukaan.",
-          "Jos jätät kalakastikkeen tai kuivatut katkaravut pois, saat mahdollisesti hyvän muunnelman, mutta maku ei ole sama. Ilmoita reseptissä muutokset selkeästi."
+          "Kalakastikkeen tai kuivattujen katkarapujen pois jättäminen muuttaa pad thain makua. Jos jätät jommankumman pois, maista nuudeleita ennen tarjoilua."
         ]
       },
       {
@@ -217,7 +217,7 @@ export const moreBlogPosts: BlogPost[] = [
         "heading": "Käytä vaakaa oikeassa vaiheessa",
         "paragraphs": [
           "Punnitse ainekset silloin, kun reseptin määrä on tarkoitettu mitattavaksi. Jos resepti käyttää kuorittua perunaa, älä syötä saman määrän arvoksi kuorineen punnittua kokonaista perunaa.",
-          "Jos laskit koko erän ravintoarvot aineksista, punnitse valmis erä ja oma annoksesi. Jos annoksesi painaa neljäsosan koko erästä, kirjaa sille neljäsosa erän ravintoarvoista."
+          "Jos laskit koko erän ravintoarvot aineksista, punnitse valmis erä ja oma annoksesi. Jos ainekset jakautuvat annoksiin tasaisesti ja annoksesi painaa neljäsosan koko erästä, voit kirjata sille noin neljäsosan erän ravintoarvoista."
         ]
       },
       {
@@ -465,14 +465,14 @@ export const moreBlogPosts: BlogPost[] = [
         ]
       },
       {
-        "heading": "Raejuusto muuttaa kosteutta ja proteiinia",
+        "heading": "Raejuusto tuo pohjaan kosteutta",
         "paragraphs": [
           "Raejuustopohjassa maitotuote tuo rakennetta, makua ja kosteutta. Kananmuna ja kaurajauho voivat auttaa sitomaan massaa. Lopputulos ei ole klassisen hiivataikinan kopio.",
           "Raejuustopohja kannattaa kypsentää ohjeen mukaan ennen kosteiden täytteiden lisäämistä, jos rakenne muuten jää pehmeäksi. Oikeat määrät tulevat aina reseptistä, eivät tästä vertailuartikkelista."
         ]
       },
       {
-        "heading": "Mitä kannattaa vertailla oikeasti?",
+        "heading": "Näin vertailet pizzapohjia",
         "paragraphs": [
           "Vertaa pohjan painoa, paistoaikaa ja makua. Kokeile myös, kuinka helppo pohjaa on käsitellä ja kuinka hyvin se kestää täytteet. Ravintoarvoissa tarkastele samaa annoskokoa — ei esimerkiksi kokonaista ohutta pizzaa vastaan puolikasta paksupohjaista.",
           "Vertailu perustuu aineksiin ja valmistustapoihin. Pohjia ei ole koepaistettu tai maistettu rinnakkain. Katso paisto-ohje ja ravintoarvio valitsemastasi reseptistä."
@@ -595,7 +595,7 @@ export const moreBlogPosts: BlogPost[] = [
         "heading": "Suurimmat epävarmuudet ovat usein lähtötiedoissa",
         "paragraphs": [
           "Raaka-aineen tuotemerkki, rasvapitoisuus, kuorinta, paisto ja käytetty määrä voivat kaikki vaikuttaa tulokseen. Jos tärkeän ainesosan paino puuttuu, koko annoksen tarkkuutta ei voi taata.",
-          "Kypsennetyn ruoan vesimäärä voi muuttaa ravintosisältöä sataa grammaa kohti. Punnittu annos ja lähdekohtaisesti määritelty raakatuote kuuluvat yhteen."
+          "Kypsennetyn ruoan vesimäärä voi muuttaa ravintosisältöä sataa grammaa kohti. Valitse laskurista sama elintarvike siinä muodossa, jossa punnitsit sen. Käytä esimerkiksi keitetylle riisille kypsän riisin arvoja."
         ]
       },
       {
