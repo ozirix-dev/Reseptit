@@ -656,6 +656,11 @@
         "severity": "P2",
         "status": "open",
         "summary": "Raw FI source remains sealed by GK80, while public FI display is corrected by #373."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Esittely kertoo samassa puurossa kypsyvästä broilerista ja jasmiiniriisistä, revitystä kanasta, inkivääristä ja kevätsipulista sekä kahdesta lämpimästä annoksesta. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -670,6 +675,11 @@
         "severity": "P2",
         "status": "open",
         "summary": "Raw FI source remains sealed by GK80, while public FI display is corrected by #373."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Esittely kertoo samassa puurossa kypsyvästä broilerista ja jasmiiniriisistä, revitystä kanasta, inkivääristä ja kevätsipulista sekä kahdesta lämpimästä annoksesta. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -684,6 +694,11 @@
         "severity": "P2",
         "status": "open",
         "summary": "Raw FI source remains sealed by GK80, while public FI display is corrected by #373."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Esittely kertoo samassa puurossa kypsyvästä broilerista ja jasmiiniriisistä, revitystä kanasta, inkivääristä ja kevätsipulista sekä kahdesta lämpimästä annoksesta. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -1562,7 +1577,13 @@
     "reviewed_at": "2026-11-04",
     "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Pohjan juusto, tuorejuusto ja muna sitovat taikinan. Punnitut täytteet ovat 50 g kutakin kinkkua, paprikaa ja herkkusieniä kuten FI-esittelyssä. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "ketopizza-pofiber-pohjalla:sv": {
     "source_hash": "37abeb2d7628f0bcf36c09674ca284c974fb2a9cc2cd600057ab123e111c4b9b",
@@ -1570,7 +1591,13 @@
     "reviewed_at": "2026-11-04",
     "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Pohjan juusto, tuorejuusto ja muna sitovat taikinan. Punnitut täytteet ovat 50 g kutakin kinkkua, paprikaa ja herkkusieniä kuten FI-esittelyssä. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "ketopizza-pofiber-pohjalla:th": {
     "source_hash": "37abeb2d7628f0bcf36c09674ca284c974fb2a9cc2cd600057ab123e111c4b9b",
@@ -1578,7 +1605,13 @@
     "reviewed_at": "2026-11-04",
     "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Pohjan juusto, tuorejuusto ja muna sitovat taikinan. Punnitut täytteet ovat 50 g kutakin kinkkua, paprikaa ja herkkusieniä kuten FI-esittelyssä. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "khao-kha-moo-vhh:en": {
     "source_hash": "4aac5d1df526ef6186a26aa4e5c18326732b10459dd233ec6435d44f24c97cf1",
@@ -4362,6 +4395,11 @@
         "severity": "P2",
         "status": "open",
         "summary": "FI raw steps retained in approved GK80 pack; public #373 projection specifies parallel chicken cooking and 75 C."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Esittely säilyttää samassa jasmiiniriisipuurossa kypsyvän ja siihen revityn kanan sekä lopuksi lisättävän raastetun inkiväärin ja kevätsipulin. Ohje on kahdelle. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -4376,6 +4414,11 @@
         "severity": "P2",
         "status": "open",
         "summary": "FI raw steps retained in approved GK80 pack; public #373 projection specifies parallel chicken cooking and 75 C."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Esittely säilyttää samassa jasmiiniriisipuurossa kypsyvän ja siihen revityn kanan sekä lopuksi lisättävän raastetun inkiväärin ja kevätsipulin. Ohje on kahdelle. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -4390,6 +4433,11 @@
         "severity": "P2",
         "status": "open",
         "summary": "FI raw steps retained in approved GK80 pack; public #373 projection specifies parallel chicken cooking and 75 C."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Esittely säilyttää samassa jasmiiniriisipuurossa kypsyvän ja siihen revityn kanan sekä lopuksi lisättävän raastetun inkiväärin ja kevätsipulin. Ohje on kahdelle. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -4690,7 +4738,13 @@
     "reviewed_at": "2026-11-12",
     "reference": "E20, FI Git blob 1dccd27c6aeb5d88df437a358b6b52a01d37f25c. 100 g kauraa, 500 g vettä, 200 g täysmaitoa, lehdet syödään. Matala GK-luottamus. Ei suodatetun teen GK:ta.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Otsikko ja esittely kuvaavat kaurapuuroa. Käytössä ovat täysmaito ja hunaja, ja hienonnettu minttu syödään puuron mukana. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "pohjoisafrikkalainen-minttutee-kaurapuuro:sv": {
     "source_hash": "c6c4d0a46470842891d7efb25d61a060225a040af49f892857ed1cd75e6e2f20",
@@ -4698,7 +4752,13 @@
     "reviewed_at": "2026-11-12",
     "reference": "E20, FI Git blob 1dccd27c6aeb5d88df437a358b6b52a01d37f25c. 100 g kauraa, 500 g vettä, 200 g täysmaitoa, lehdet syödään. Matala GK-luottamus. Ei suodatetun teen GK:ta.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Otsikko ja esittely kuvaavat kaurapuuroa. Käytössä ovat täysmaito ja hunaja, ja hienonnettu minttu syödään puuron mukana. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "pohjoisafrikkalainen-minttutee-kaurapuuro:th": {
     "source_hash": "c6c4d0a46470842891d7efb25d61a060225a040af49f892857ed1cd75e6e2f20",
@@ -4706,7 +4766,13 @@
     "reviewed_at": "2026-11-12",
     "reference": "E20, FI Git blob 1dccd27c6aeb5d88df437a358b6b52a01d37f25c. 100 g kauraa, 500 g vettä, 200 g täysmaitoa, lehdet syödään. Matala GK-luottamus. Ei suodatetun teen GK:ta.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Otsikko ja esittely kuvaavat kaurapuuroa. Käytössä ovat täysmaito ja hunaja, ja hienonnettu minttu syödään puuron mukana. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "malesialainen-mee-goreng-aamunuudeleilla:en": {
     "source_hash": "503bee889a4e3af1f626cf69af8c14d05c3bda44d16e2adf7c5dd5cf1246a679",
@@ -4738,7 +4804,13 @@
     "reviewed_at": "2026-11-12",
     "reference": "E20, FI Git blob b5eca7502f5f067c345a6076117d6366007f1b70. Kuiva riisinuudeli, täysin kypsä porsas, kuumat idut, koko 700 g keitinnestettä, kaksi annosta. GK:n matala luottamus.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Esittely kuvaa riisinuudeleita, porsasta, pavunituja ja korianteria. Koko keitinliemi tarjoillaan edelleen. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "vietnamilainen-hu-tieu-aamiaiskeitto:sv": {
     "source_hash": "f4aac3d88d8eff21fa8a5515c53ae056681d905a640bce4f8f53cf1fa21be932",
@@ -4746,7 +4818,13 @@
     "reviewed_at": "2026-11-12",
     "reference": "E20, FI Git blob b5eca7502f5f067c345a6076117d6366007f1b70. Kuiva riisinuudeli, täysin kypsä porsas, kuumat idut, koko 700 g keitinnestettä, kaksi annosta. GK:n matala luottamus.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Esittely kuvaa riisinuudeleita, porsasta, pavunituja ja korianteria. Koko keitinliemi tarjoillaan edelleen. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "vietnamilainen-hu-tieu-aamiaiskeitto:th": {
     "source_hash": "f4aac3d88d8eff21fa8a5515c53ae056681d905a640bce4f8f53cf1fa21be932",
@@ -4754,7 +4832,13 @@
     "reviewed_at": "2026-11-12",
     "reference": "E20, FI Git blob b5eca7502f5f067c345a6076117d6366007f1b70. Kuiva riisinuudeli, täysin kypsä porsas, kuumat idut, koko 700 g keitinnestettä, kaksi annosta. GK:n matala luottamus.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Esittely kuvaa riisinuudeleita, porsasta, pavunituja ja korianteria. Koko keitinliemi tarjoillaan edelleen. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "pinaattikeitto:en": {
     "source_hash": "a78b518ec383ceebdb05f008324a26655e9951625ea702716f919107d0e5bce5",
@@ -5986,7 +6070,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. 17-prosenttinen naudan jauheliha, käyttövalmis lihaliemi ja tomaattimurska. Kaikki neste ja rasva kuuteen annokseen. Mallinnetun GK:n rajaus.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Julkinen esittely kuvaa kaalia, jauhelihaa, sipulia ja tomaattista lihalientä. Olennaiset aines- ja suolarajaukset näkyvät valmistuksessa tai huomautuksissa. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "jauheliha-kaalikeitto-vhh:sv": {
     "source_hash": "bdb89a05bc0fecfc27740e85657aee6b41bb176a7a774a045cef158dcd099acf",
@@ -5994,7 +6084,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. 17-prosenttinen naudan jauheliha, käyttövalmis lihaliemi ja tomaattimurska. Kaikki neste ja rasva kuuteen annokseen. Mallinnetun GK:n rajaus.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Julkinen esittely kuvaa kaalia, jauhelihaa, sipulia ja tomaattista lihalientä. Olennaiset aines- ja suolarajaukset näkyvät valmistuksessa tai huomautuksissa. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "jauheliha-kaalikeitto-vhh:th": {
     "source_hash": "bdb89a05bc0fecfc27740e85657aee6b41bb176a7a774a045cef158dcd099acf",
@@ -6002,7 +6098,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. 17-prosenttinen naudan jauheliha, käyttövalmis lihaliemi ja tomaattimurska. Kaikki neste ja rasva kuuteen annokseen. Mallinnetun GK:n rajaus.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Julkinen esittely kuvaa kaalia, jauhelihaa, sipulia ja tomaattista lihalientä. Olennaiset aines- ja suolarajaukset näkyvät valmistuksessa tai huomautuksissa. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "jauheliha-makaronilaatikko:en": {
     "source_hash": "daa5640721db39728455a59150bfa4bc4f7e2e55d850be5d9e25251c31dc56f3",
@@ -6785,6 +6887,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "Käännökset erottavat taikinan kerman kastikkeen kermasta ja ohjaavat kypsentämään lihapullat kauttaaltaan ennen niiden palauttamista kastikkeeseen."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Mantelijauho, kukkakaalimuusi ja kermakastike säilyvät esittelyssä. Lihaliemi vaikuttaa suolaisuuteen, joten suolaa lisätään maltillisesti. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -6799,6 +6906,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "Käännökset erottavat taikinan kerman kastikkeen kermasta ja ohjaavat kypsentämään lihapullat kauttaaltaan ennen niiden palauttamista kastikkeeseen."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Mantelijauho, kukkakaalimuusi ja kermakastike säilyvät esittelyssä. Lihaliemi vaikuttaa suolaisuuteen, joten suolaa lisätään maltillisesti. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -6813,6 +6925,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "Käännökset erottavat taikinan kerman kastikkeen kermasta ja ohjaavat kypsentämään lihapullat kauttaaltaan ennen niiden palauttamista kastikkeeseen."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Mantelijauho, kukkakaalimuusi ja kermakastike säilyvät esittelyssä. Lihaliemi vaikuttaa suolaisuuteen, joten suolaa lisätään maltillisesti. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -6864,7 +6981,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Kaikki kielet käyttävät punnitut 400 g juuri kypsennettyjä kikherneitä ja jakavat koko padan liemineen neljään annokseen. Alkuperäisversion makrot puuttuvat.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Esittely kertoo couscousista, paistileikkeestä, kasviksista ja mausteista. Kaikki liemi käytetään, kikherneet lisätään erikseen keitettyinä ja kuumina. Nimetty kuiva couscous, rajattu GI-vertailu, matala luottamus ja polyolitiedon puuttuminen säilyvät. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "marokkolainen-couscous:sv": {
     "source_hash": "f66e64f223f2a46c9ec58f7ff5ecf0ee26e21c654f76026844a63c43443078fc",
@@ -6872,7 +6995,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Kaikki kielet käyttävät punnitut 400 g juuri kypsennettyjä kikherneitä ja jakavat koko padan liemineen neljään annokseen. Alkuperäisversion makrot puuttuvat.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Esittely kertoo couscousista, paistileikkeestä, kasviksista ja mausteista. Kaikki liemi käytetään, kikherneet lisätään erikseen keitettyinä ja kuumina. Nimetty kuiva couscous, rajattu GI-vertailu, matala luottamus ja polyolitiedon puuttuminen säilyvät. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "marokkolainen-couscous:th": {
     "source_hash": "f66e64f223f2a46c9ec58f7ff5ecf0ee26e21c654f76026844a63c43443078fc",
@@ -6880,7 +7009,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Kaikki kielet käyttävät punnitut 400 g juuri kypsennettyjä kikherneitä ja jakavat koko padan liemineen neljään annokseen. Alkuperäisversion makrot puuttuvat.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Esittely kertoo couscousista, paistileikkeestä, kasviksista ja mausteista. Kaikki liemi käytetään, kikherneet lisätään erikseen keitettyinä ja kuumina. Nimetty kuiva couscous, rajattu GI-vertailu, matala luottamus ja polyolitiedon puuttuminen säilyvät. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "masala-dosa:en": {
     "source_hash": "a3ec3ca7c431dae8c1e9a92b7f21d3fe8e6556c333d7efef0fa6ba172ae4b2ce",
@@ -7506,7 +7641,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu lihaliemi, smetana ja koko padan jakaminen neljään vastaavat kaikilla kielillä. Alkuperäisen makrot puuttuvat.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Valmistuksessa käytetään kaikki kastike ja rasva, smetanaa on noin 40 % rasvaa ja yhteensä 150 g neljälle. Lisukkeita koskeva rajaus säilyy. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "paprikainen-vhh-gulassi:sv": {
     "source_hash": "f74e4286ebb3ff59537bc24203ed11125b597a82d97b81a3233dcaaef132b445",
@@ -7514,7 +7655,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu lihaliemi, smetana ja koko padan jakaminen neljään vastaavat kaikilla kielillä. Alkuperäisen makrot puuttuvat.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Valmistuksessa käytetään kaikki kastike ja rasva, smetanaa on noin 40 % rasvaa ja yhteensä 150 g neljälle. Lisukkeita koskeva rajaus säilyy. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "paprikainen-vhh-gulassi:th": {
     "source_hash": "f74e4286ebb3ff59537bc24203ed11125b597a82d97b81a3233dcaaef132b445",
@@ -7522,7 +7669,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu lihaliemi, smetana ja koko padan jakaminen neljään vastaavat kaikilla kielillä. Alkuperäisen makrot puuttuvat.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Valmistuksessa käytetään kaikki kastike ja rasva, smetanaa on noin 40 % rasvaa ja yhteensä 150 g neljälle. Lisukkeita koskeva rajaus säilyy. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "parsakaali-sinihomejuustofrittata:en": {
     "source_hash": "9c58dbeb45b5b550e0c80242acce7b90a97c166b0511a5698f448681ba7c7b23",
@@ -7554,7 +7707,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Nimetyt pasta ja pecorino, 11 minuutin keitto ja 100 ml:n talteen otettava keitinvesi vastaavat kaikilla kielillä. Makrot puuttuvat.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Esittely alkaa pennepastasta, munakoisosta ja tomaattikastikkeesta, joiden kanssa käytetään basilikaa ja pecorinoa. Nimetyn pennetuotteen 11 minuutin keitto, rajaukset muille versioille sekä juuston puuttuva polyolitieto ovat edelleen mukana. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "pasta-alla-norma:sv": {
     "source_hash": "209ca3061176ba7d5ca2115c4baeb716c3988745c9bc34fbca890ef59b5966fd",
@@ -7562,7 +7721,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Nimetyt pasta ja pecorino, 11 minuutin keitto ja 100 ml:n talteen otettava keitinvesi vastaavat kaikilla kielillä. Makrot puuttuvat.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Esittely alkaa pennepastasta, munakoisosta ja tomaattikastikkeesta, joiden kanssa käytetään basilikaa ja pecorinoa. Nimetyn pennetuotteen 11 minuutin keitto, rajaukset muille versioille sekä juuston puuttuva polyolitieto ovat edelleen mukana. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "pasta-alla-norma:th": {
     "source_hash": "209ca3061176ba7d5ca2115c4baeb716c3988745c9bc34fbca890ef59b5966fd",
@@ -7570,7 +7735,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Nimetyt pasta ja pecorino, 11 minuutin keitto ja 100 ml:n talteen otettava keitinvesi vastaavat kaikilla kielillä. Makrot puuttuvat.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, julkisen esittelyn vertailu FI-ohjeeseen. Esittely alkaa pennepastasta, munakoisosta ja tomaattikastikkeesta, joiden kanssa käytetään basilikaa ja pecorinoa. Nimetyn pennetuotteen 11 minuutin keitto, rajaukset muille versioille sekä juuston puuttuva polyolitieto ovat edelleen mukana. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "pav-bhaji:en": {
     "source_hash": "f80f741104a71066c6c1b1c9c01346a1aa05916bf0605278a5f0aaa7eb461659",
@@ -8346,7 +8517,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu jasmiiniriisi valmistetaan riisinkeittimessä ja jaetaan koko kastikkeen kanssa heti kolmeen annokseen.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. 150 g kuivaa nimettyä pussiriisiä kolmelle, riisinkeitin, pakkauksen vesimäärä ja koko erän tarjoilu heti kuumana ovat valmistuksessa kaikissa kielissä. Jäähdytys- ja uudelleenpaistorajaus säilyy. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "tomaatti-kananmuna-wokki:sv": {
     "source_hash": "f2aa407f7b62b326a60714aee75e6eb073d3c00996b35f540a2d1c40636c01d8",
@@ -8354,7 +8531,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu jasmiiniriisi valmistetaan riisinkeittimessä ja jaetaan koko kastikkeen kanssa heti kolmeen annokseen.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. 150 g kuivaa nimettyä pussiriisiä kolmelle, riisinkeitin, pakkauksen vesimäärä ja koko erän tarjoilu heti kuumana ovat valmistuksessa kaikissa kielissä. Jäähdytys- ja uudelleenpaistorajaus säilyy. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "tomaatti-kananmuna-wokki:th": {
     "source_hash": "f2aa407f7b62b326a60714aee75e6eb073d3c00996b35f540a2d1c40636c01d8",
@@ -8362,7 +8545,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu jasmiiniriisi valmistetaan riisinkeittimessä ja jaetaan koko kastikkeen kanssa heti kolmeen annokseen.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. 150 g kuivaa nimettyä pussiriisiä kolmelle, riisinkeitin, pakkauksen vesimäärä ja koko erän tarjoilu heti kuumana ovat valmistuksessa kaikissa kielissä. Jäähdytys- ja uudelleenpaistorajaus säilyy. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "tortilla-de-patatas:en": {
     "source_hash": "d3fff5a8844b19533c7fff1e849fada32a8bb6bc072d5b933066c1d94aad6468",
@@ -8544,7 +8733,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnitut kaali ja jauheliha sekä kerman ja munan kypsyys vastaavat lähdettä. Koko vuoka nesteineen jaetaan kuuteen.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Julkinen esittely kuvaa valkokaalia, jauhelihaa, kermaa ja munaa sisältävää riisitöntä uuniruokaa. Olennaiset aines- ja suolarajaukset näkyvät valmistuksessa tai huomautuksissa. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "vhh-kaalilaatikko:sv": {
     "source_hash": "19b107ff847cf01ca877ffc6ea96a4b98767d9cbdc977c9f5bbe7f7c7de082d6",
@@ -8552,7 +8747,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnitut kaali ja jauheliha sekä kerman ja munan kypsyys vastaavat lähdettä. Koko vuoka nesteineen jaetaan kuuteen.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Julkinen esittely kuvaa valkokaalia, jauhelihaa, kermaa ja munaa sisältävää riisitöntä uuniruokaa. Olennaiset aines- ja suolarajaukset näkyvät valmistuksessa tai huomautuksissa. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "vhh-kaalilaatikko:th": {
     "source_hash": "19b107ff847cf01ca877ffc6ea96a4b98767d9cbdc977c9f5bbe7f7c7de082d6",
@@ -8560,7 +8761,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnitut kaali ja jauheliha sekä kerman ja munan kypsyys vastaavat lähdettä. Koko vuoka nesteineen jaetaan kuuteen.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Julkinen esittely kuvaa valkokaalia, jauhelihaa, kermaa ja munaa sisältävää riisitöntä uuniruokaa. Olennaiset aines- ja suolarajaukset näkyvät valmistuksessa tai huomautuksissa. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "vhh-korvapuustit:en": {
     "source_hash": "70f6bdae3ff48b0f121dce9903f81f81a4d3cfc9a9a861e93805792673417dfb",
@@ -9236,6 +9443,11 @@
         "severity": "P1",
         "status": "fixed",
         "summary": "Corrected wrapper and filling yield; verified four servings and the 71 °C ground-pork endpoint against the Finnish source."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kohdekieliset esittelyt ilmaisevat jo noin 40 nyyttiä ja noin 10 per annos. FI:n puuttuva yksikkö on täydennetty. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -9250,6 +9462,11 @@
         "severity": "P1",
         "status": "fixed",
         "summary": "Corrected wrapper and filling yield; verified four servings and the 71 °C ground-pork endpoint against the Finnish source."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kohdekieliset esittelyt ilmaisevat jo noin 40 nyyttiä ja noin 10 per annos. FI:n puuttuva yksikkö on täydennetty. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -9264,6 +9481,11 @@
         "severity": "P1",
         "status": "fixed",
         "summary": "Corrected wrapper and filling yield; verified four servings and the 71 °C ground-pork endpoint against the Finnish source."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kohdekieliset esittelyt ilmaisevat jo noin 40 nyyttiä ja noin 10 per annos. FI:n puuttuva yksikkö on täydennetty. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -9585,7 +9807,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-recipavo-kieliera-3.md",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Vaniljavaahdon nimessä oli toisto. Esittelyn täytteet, kakun koko ja palamäärä vastaavat FI-ohjetta. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "sienikakkupohja:en": {
     "source_hash": "8fc66a381ef98078127d141d848318ebdaa1cd7b1344a364699348b4b9c099d7",
@@ -10020,7 +10248,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/gluteeniton/gluteeniton-durrapizzapohja-en.md",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kohdekieliset huomautukset edellyttävät jo käyttöpakkauksesta tarkistettavia gluteenittomuusmerkintöjä. FI:n huomautus erottaa dokumentoidun tuotetarkistuksen kotikokin tekemästä pakkaustarkistuksesta. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "gluteeniton-durrapizzapohja:sv": {
     "source_hash": "1c36e4d2913646df3cc32109b78c8c4b6dd777ddbc57494d92f5cab103b77d12",
@@ -10028,7 +10262,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/gluteeniton/gluteeniton-durrapizzapohja-sv.md",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kohdekieliset huomautukset edellyttävät jo käyttöpakkauksesta tarkistettavia gluteenittomuusmerkintöjä. FI:n huomautus erottaa dokumentoidun tuotetarkistuksen kotikokin tekemästä pakkaustarkistuksesta. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "gluteeniton-durrapizzapohja:th": {
     "source_hash": "1c36e4d2913646df3cc32109b78c8c4b6dd777ddbc57494d92f5cab103b77d12",
@@ -10036,7 +10276,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/gluteeniton/gluteeniton-durrapizzapohja-th.md",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kohdekieliset huomautukset edellyttävät jo käyttöpakkauksesta tarkistettavia gluteenittomuusmerkintöjä. FI:n huomautus erottaa dokumentoidun tuotetarkistuksen kotikokin tekemästä pakkaustarkistuksesta. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "intialainen-aloo-paratha-punnittu-v2:en": {
     "source_hash": "4b77c67beb7f4470fb81f91212694f3208fd93db820b0599509c1595196fc09c",
@@ -11179,6 +11425,16 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "Korjattu kuvan alt-tekstissä lohkoiksi kääntynyt lettujen nimitys."
+      },
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Taikina paistetaan pannulla pieniksi, halkaisijaltaan noin 7–8 cm:n letuiksi. Mustikat ja vaahterasiirappi säilyvät tarjoilussa. Thain ainestieto tarkoittaa kuorittua, jäähtynyttä bataatin syötävää osaa. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -11203,7 +11459,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "piparkakkulatte-hunajalla:en": {
     "source_hash": "c37f4d6eaae4f89d2146296ddb3485ba5000edb4bdfebcca7f45054baf3d42c3",
@@ -11217,6 +11479,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "Käännetty maitoallergeenivaroitus englanniksi."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -11227,7 +11494,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kypsä, jäähdytetty paisti. Kastikkeeseen raastetaan 12 g piparjuurta ja lisätään maun mukaan yhteensä enintään 20 grammaan. 240 g paistia ja 60 g leivälle; tarjoilu heti. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "paahtopaistileivat-kauralesesampyloilla:en": {
     "source_hash": "d27cdb46452b1345552bc1eb9db1013ee8b2ac6b603b502b8c5b34c1aae8bdaa",
@@ -11236,7 +11514,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kypsä, jäähdytetty paisti. Kastikkeeseen raastetaan 12 g piparjuurta ja lisätään maun mukaan yhteensä enintään 20 grammaan. 240 g paistia ja 60 g leivälle; tarjoilu heti. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "parmesaani-lyttyperunat:en": {
     "source_hash": "166df8d114b97e2b61119e458c2245fce3ee12e99455c81ad2b8c462cadf2326",
@@ -11245,7 +11534,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "taateliketsuppi:en": {
     "source_hash": "05cbc349098885e4649047820c1249c7da43163a353461df17bba3240da1e363",
@@ -11254,7 +11549,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "avokado-banaanijaatelo:en": {
     "source_hash": "f6fe7539e199daf51e4575e19c9c46df2077b526fbcb46cc01400416c5ea7798",
@@ -11263,7 +11564,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "mustikka-jogurttijaatelo:en": {
     "source_hash": "fc3476bbd09d887bcc60895e6510850f27fb5cc95a349822f9fecc7b130a09dc",
@@ -11281,7 +11588,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "suklaa-raejuustokakku:en": {
     "source_hash": "02be34af7f62fcbebefed9d7940c3f701d723619cffd8caab9177c8fe3fe2b2a",
@@ -11290,7 +11603,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Pohjaton kakku, valmisteltu irtopohjavuoka, hyytyneet reunat ja hieman hyllyvä keskusta. Vertailtu 71 °C:n tavoite, paisto- ja jäähdytysajat sekä hunajahuomautus. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "avokado-perunasampylat:en": {
     "source_hash": "d6a21725203cda793f025a59b6448b610e2e4d8d19f27c11ec97a48aaee159c2",
@@ -11299,7 +11623,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuusi muffinivuokaa tai paperivuoilla vuorattua koloa, keltuaisvoitelu ja seesaminsiemenet. Paistoarvot ja levähdys säilyvät. Thain huomautus tarkoittaa avokadon syötävää osaa. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "bataatti-banaanileipa:en": {
     "source_hash": "76f0d71b648862fcd531067bb6e1585145c7d2b9418079cf5af670628fa79b38",
@@ -11308,7 +11643,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "bataatti-mustikkakakku:en": {
     "source_hash": "4ea445bcb6c371cbb8a00d37e4fa2c38ee6f15f96985436c60cf972d527333a9",
@@ -11317,7 +11658,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "bataattibrowniet:en": {
     "source_hash": "6079154ce0c3c50a574b9c266a9376ff17f2514deca41a9c1dc282866caa0eec",
@@ -11331,6 +11678,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "Korjattu kypsyyskriteeriksi hyytyminen."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -11341,7 +11693,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "naudan-paahtopaisti-uunissa:en": {
     "source_hash": "74ada33b709c6a3aaadc453a6ac5c696e7f518457eff0fdc7576d7ecd0d17df3",
@@ -11350,7 +11708,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Leikkuu poikkisyin, pannurasvalla valelu ja kylmän paistin jäähdytys ennen viipalointia. Läpikypsyyden ehtolause on mukana kaikissa kielissä. Lämpö, lepo, hygienia ja lähdeosoitteet säilyvät; Valio on erisnimi. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "ananas-kanelijuoma-sitruunalla:en": {
     "source_hash": "6071329b31527cc8851c29c59a4d0600510958bb0d38d30a4c76ed658baca685",
@@ -11359,7 +11728,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "jaaiset-banaani-suklaapalat:en": {
     "source_hash": "6c5664420acf1aafe096aceea83c2ba359079883919a5e208d285138d15db1ee",
@@ -11373,6 +11748,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "Palautettu paahdettu maapähkinärouhe valmistusohjeeseen ja täsmennetty levyn paloittelu."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -11388,6 +11768,16 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "Korjattu kuvan alt-tekstissä lohkoiksi kääntynyt lettujen nimitys."
+      },
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Taikina paistetaan pannulla pieniksi, halkaisijaltaan noin 7–8 cm:n letuiksi. Mustikat ja vaahterasiirappi säilyvät tarjoilussa. Thain ainestieto tarkoittaa kuorittua, jäähtynyttä bataatin syötävää osaa. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -11402,6 +11792,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "Stekpannan ja kannen käyttö sekä yhden munakkaan taittaminen korjattu."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -11412,7 +11807,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "piparkakkulatte-hunajalla:sv": {
     "source_hash": "c37f4d6eaae4f89d2146296ddb3485ba5000edb4bdfebcca7f45054baf3d42c3",
@@ -11421,7 +11822,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "paahtopaistileipa-piparjuurikastikkeella:sv": {
     "source_hash": "472da55979df519eca03f4774eb0602121e5086ea1a6c9a95f58535557a96536",
@@ -11430,7 +11837,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kypsä, jäähdytetty paisti. Kastikkeeseen raastetaan 12 g piparjuurta ja lisätään maun mukaan yhteensä enintään 20 grammaan. 240 g paistia ja 60 g leivälle; tarjoilu heti. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "paahtopaistileivat-kauralesesampyloilla:sv": {
     "source_hash": "d27cdb46452b1345552bc1eb9db1013ee8b2ac6b603b502b8c5b34c1aae8bdaa",
@@ -11439,7 +11857,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kypsä, jäähdytetty paisti. Kastikkeeseen raastetaan 12 g piparjuurta ja lisätään maun mukaan yhteensä enintään 20 grammaan. 240 g paistia ja 60 g leivälle; tarjoilu heti. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "parmesaani-lyttyperunat:sv": {
     "source_hash": "166df8d114b97e2b61119e458c2245fce3ee12e99455c81ad2b8c462cadf2326",
@@ -11448,7 +11877,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "taateliketsuppi:sv": {
     "source_hash": "05cbc349098885e4649047820c1249c7da43163a353461df17bba3240da1e363",
@@ -11457,7 +11892,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "avokado-banaanijaatelo:sv": {
     "source_hash": "f6fe7539e199daf51e4575e19c9c46df2077b526fbcb46cc01400416c5ea7798",
@@ -11466,7 +11907,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "mustikka-jogurttijaatelo:sv": {
     "source_hash": "fc3476bbd09d887bcc60895e6510850f27fb5cc95a349822f9fecc7b130a09dc",
@@ -11484,7 +11931,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "suklaa-raejuustokakku:sv": {
     "source_hash": "02be34af7f62fcbebefed9d7940c3f701d723619cffd8caab9177c8fe3fe2b2a",
@@ -11493,7 +11946,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Pohjaton kakku, valmisteltu irtopohjavuoka, hyytyneet reunat ja hieman hyllyvä keskusta. Vertailtu 71 °C:n tavoite, paisto- ja jäähdytysajat sekä hunajahuomautus. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "avokado-perunasampylat:sv": {
     "source_hash": "d6a21725203cda793f025a59b6448b610e2e4d8d19f27c11ec97a48aaee159c2",
@@ -11502,7 +11966,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuusi muffinivuokaa tai paperivuoilla vuorattua koloa, keltuaisvoitelu ja seesaminsiemenet. Paistoarvot ja levähdys säilyvät. Thain huomautus tarkoittaa avokadon syötävää osaa. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "bataatti-banaanileipa:sv": {
     "source_hash": "76f0d71b648862fcd531067bb6e1585145c7d2b9418079cf5af670628fa79b38",
@@ -11511,7 +11986,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "bataatti-mustikkakakku:sv": {
     "source_hash": "4ea445bcb6c371cbb8a00d37e4fa2c38ee6f15f96985436c60cf972d527333a9",
@@ -11520,7 +12001,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "bataattibrowniet:sv": {
     "source_hash": "6079154ce0c3c50a574b9c266a9376ff17f2514deca41a9c1dc282866caa0eec",
@@ -11529,7 +12016,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "punajuuri-suklaakakku:sv": {
     "source_hash": "0f3a9d349ef27d05c2a27bd7001ab9f4393c9de1b9f72d8daacb00c080b8e737",
@@ -11538,7 +12031,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "naudan-paahtopaisti-uunissa:sv": {
     "source_hash": "74ada33b709c6a3aaadc453a6ac5c696e7f518457eff0fdc7576d7ecd0d17df3",
@@ -11547,7 +12046,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Leikkuu poikkisyin, pannurasvalla valelu ja kylmän paistin jäähdytys ennen viipalointia. Läpikypsyyden ehtolause on mukana kaikissa kielissä. Lämpö, lepo, hygienia ja lähdeosoitteet säilyvät; Valio on erisnimi. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "ananas-kanelijuoma-sitruunalla:sv": {
     "source_hash": "6071329b31527cc8851c29c59a4d0600510958bb0d38d30a4c76ed658baca685",
@@ -11556,7 +12066,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "jaaiset-banaani-suklaapalat:sv": {
     "source_hash": "6c5664420acf1aafe096aceea83c2ba359079883919a5e208d285138d15db1ee",
@@ -11570,6 +12086,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "Palautettu paahdettu maapähkinärouhe valmistusohjeeseen ja täsmennetty levyn paloittelu."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   },
@@ -11580,7 +12101,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Taikina paistetaan pannulla pieniksi, halkaisijaltaan noin 7–8 cm:n letuiksi. Mustikat ja vaahterasiirappi säilyvät tarjoilussa. Thain ainestieto tarkoittaa kuorittua, jäähtynyttä bataatin syötävää osaa. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "makea-banaanimunakas:th": {
     "source_hash": "36ba91afa5a76f90c20fb53a50eb35d22a83bae4d8d40e091d03e7ead2950d8b",
@@ -11603,7 +12135,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "piparkakkulatte-hunajalla:th": {
     "source_hash": "c37f4d6eaae4f89d2146296ddb3485ba5000edb4bdfebcca7f45054baf3d42c3",
@@ -11612,7 +12150,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "paahtopaistileipa-piparjuurikastikkeella:th": {
     "source_hash": "472da55979df519eca03f4774eb0602121e5086ea1a6c9a95f58535557a96536",
@@ -11621,7 +12165,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kypsä, jäähdytetty paisti. Kastikkeeseen raastetaan 12 g piparjuurta ja lisätään maun mukaan yhteensä enintään 20 grammaan. 240 g paistia ja 60 g leivälle; tarjoilu heti. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "paahtopaistileivat-kauralesesampyloilla:th": {
     "source_hash": "d27cdb46452b1345552bc1eb9db1013ee8b2ac6b603b502b8c5b34c1aae8bdaa",
@@ -11630,7 +12185,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kypsä, jäähdytetty paisti. Kastikkeeseen raastetaan 12 g piparjuurta ja lisätään maun mukaan yhteensä enintään 20 grammaan. 240 g paistia ja 60 g leivälle; tarjoilu heti. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "parmesaani-lyttyperunat:th": {
     "source_hash": "166df8d114b97e2b61119e458c2245fce3ee12e99455c81ad2b8c462cadf2326",
@@ -11639,7 +12205,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "taateliketsuppi:th": {
     "source_hash": "05cbc349098885e4649047820c1249c7da43163a353461df17bba3240da1e363",
@@ -11648,7 +12220,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "avokado-banaanijaatelo:th": {
     "source_hash": "f6fe7539e199daf51e4575e19c9c46df2077b526fbcb46cc01400416c5ea7798",
@@ -11657,7 +12235,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "mustikka-jogurttijaatelo:th": {
     "source_hash": "fc3476bbd09d887bcc60895e6510850f27fb5cc95a349822f9fecc7b130a09dc",
@@ -11675,7 +12259,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "suklaa-raejuustokakku:th": {
     "source_hash": "02be34af7f62fcbebefed9d7940c3f701d723619cffd8caab9177c8fe3fe2b2a",
@@ -11684,7 +12274,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Pohjaton kakku, valmisteltu irtopohjavuoka, hyytyneet reunat ja hieman hyllyvä keskusta. Vertailtu 71 °C:n tavoite, paisto- ja jäähdytysajat sekä hunajahuomautus. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "avokado-perunasampylat:th": {
     "source_hash": "d6a21725203cda793f025a59b6448b610e2e4d8d19f27c11ec97a48aaee159c2",
@@ -11693,7 +12294,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuusi muffinivuokaa tai paperivuoilla vuorattua koloa, keltuaisvoitelu ja seesaminsiemenet. Paistoarvot ja levähdys säilyvät. Thain huomautus tarkoittaa avokadon syötävää osaa. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "bataatti-banaanileipa:th": {
     "source_hash": "76f0d71b648862fcd531067bb6e1585145c7d2b9418079cf5af670628fa79b38",
@@ -11702,7 +12314,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Thain ainestieto tarkoittaa kuorittua, jäähtynyttä bataatin syötävää osaa. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "bataatti-mustikkakakku:th": {
     "source_hash": "4ea445bcb6c371cbb8a00d37e4fa2c38ee6f15f96985436c60cf972d527333a9",
@@ -11711,7 +12334,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "bataattibrowniet:th": {
     "source_hash": "6079154ce0c3c50a574b9c266a9376ff17f2514deca41a9c1dc282866caa0eec",
@@ -11720,7 +12349,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Thain ainestieto tarkoittaa kuorittua, jäähtynyttä bataatin syötävää osaa. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "punajuuri-suklaakakku:th": {
     "source_hash": "0f3a9d349ef27d05c2a27bd7001ab9f4393c9de1b9f72d8daacb00c080b8e737",
@@ -11729,7 +12369,13 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "naudan-paahtopaisti-uunissa:th": {
     "source_hash": "74ada33b709c6a3aaadc453a6ac5c696e7f518457eff0fdc7576d7ecd0d17df3",
@@ -11738,7 +12384,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Leikkuu poikkisyin, pannurasvalla valelu ja kylmän paistin jäähdytys ennen viipalointia. Läpikypsyyden ehtolause on mukana kaikissa kielissä. Lämpö, lepo, hygienia ja lähdeosoitteet säilyvät; Valio on erisnimi. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "ananas-kanelijuoma-sitruunalla:th": {
     "source_hash": "6071329b31527cc8851c29c59a4d0600510958bb0d38d30a4c76ed658baca685",
@@ -11747,7 +12404,18 @@
     "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
     "correction_pr": 668,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Thain ohjeessa kuori ja kova keskiosa poistetaan ja syötävää ananaksen hedelmälihaa punnitaan 330 g. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      }
+    ]
   },
   "jaaiset-banaani-suklaapalat:th": {
     "source_hash": "6c5664420acf1aafe096aceea83c2ba359079883919a5e208d285138d15db1ee",
@@ -11761,6 +12429,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "Palautettu paahdettu maapähkinärouhe valmistusohjeeseen ja täsmennetty levyn paloittelu."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
       }
     ]
   }

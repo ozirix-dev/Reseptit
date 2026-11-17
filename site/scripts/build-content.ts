@@ -1,4 +1,5 @@
 import { recipeSeoDescriptions } from "./recipe-seo-descriptions";
+import { applyCopyEdits, reviewedRecipeCopy, reviewedImageNote } from "./public-recipe-copy-r2";
 import { projectPublicRecipeMethodCopy, publicIngredientNote, publicRecipeDescription, publicRecipeTitle } from "./public-recipe-copy";
 import { siteTarget } from "../src/content/site-target";
 import { recipeDifficultyLabel } from "../src/features/recipes/recipe-i18n";
@@ -279,18 +280,28 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       section(publicMarkdown, noteHeadings),
       nutritionBasis && `### ${nutritionBasisHeading}\n\n${nutritionBasis}`,
     ].filter(Boolean).join("\n\n");
+    const copy = reviewedRecipeCopy(data.recipe_id, data.language);
     const methodCopy = projectPublicRecipeMethodCopy(data.recipe_id, data.language, instructions, notes);
-    const publicInstructions = visibleHold?.instructions ?? methodCopy.instructions;
-    const publicIngredients = data.ingredients.map(ingredient => ingredient.note
-      ? { ...ingredient, note: publicIngredientNote(data.recipe_id, data.language, ingredient.note) }
-      : ingredient);
+    const publicMethod = applyCopyEdits(methodCopy.instructions, copy?.method);
+    const reviewedNotes = reviewedImageNote(applyCopyEdits(methodCopy.notes, copy?.notes), data.language);
+    const publicNotes = [reviewedNotes, copy?.nutritionBasis].filter(Boolean).join("\n\n");
+    const publicInstructions = visibleHold?.instructions ?? publicMethod;
+    const publicIngredients = data.ingredients.map(ingredient => ({
+      ...ingredient,
+      item: applyCopyEdits(ingredient.item, copy?.ingredientItem),
+      ...(ingredient.note ? {
+        note: applyCopyEdits(publicIngredientNote(data.recipe_id, data.language, ingredient.note), copy?.ingredientNote),
+      } : {}),
+    }));
     const dietTags = await reviewedDietTagsForSource(data.recipe_id, data.language, filePath, finnishSources.get(data.recipe_id));
     const instructionSteps = [...publicInstructions.matchAll(/^\s*\d+[.)]\s+(.+)$/gm)].map((match) => match[1].trim());
-    const editorialDescription = publicRecipeDescription(data.recipe_id, data.url_slug, data.language);
     const seoDescription = visibleHold ? undefined : recipeSeoDescriptions[data.url_slug]?.[data.language];
+    const editorialDescription = copy?.description
+      ?? (copy?.useSeoDescription ? seoDescription : undefined)
+      ?? publicRecipeDescription(data.recipe_id, data.url_slug, data.language);
     recipes.push({
       kind: "recipe", recipeId: data.recipe_id, slug: data.url_slug, locale: data.language,
-      title: publicRecipeTitle(data.recipe_id, data.language, data.title), category: data.category, ...(data.additional_categories?.length ? { additionalCategories: data.additional_categories } : {}), dietClass: data.diet_class ?? null, ...(dietTags.length ? { dietTags } : {}), ...(data.gluten_free === true ? { glutenFree: true } : {}), routePath: routeForRecipe(data.language, data.url_slug),
+      title: copy?.title ?? publicRecipeTitle(data.recipe_id, data.language, data.title), category: data.category, ...(data.additional_categories?.length ? { additionalCategories: data.additional_categories } : {}), dietClass: data.diet_class ?? null, ...(dietTags.length ? { dietTags } : {}), ...(data.gluten_free === true ? { glutenFree: true } : {}), routePath: routeForRecipe(data.language, data.url_slug),
       description: recipeDescription(publicMarkdown, descriptionSection, data.language, data.ingredients, {
         hold: visibleHold?.description, editorial: editorialDescription, fallback: seoDescription,
       }),
@@ -299,7 +310,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       instructionsHtml: await renderSafeMarkdown(publicInstructions),
       instructionStepsHtml: await renderInstructionSteps(publicInstructions),
       instructionsText: instructionSteps.length ? instructionSteps : publicInstructions.split(/\n\s*\n/).filter(Boolean),
-      notesHtml: await renderSafeMarkdown(!safetyHold && visibleHold ? "" : methodCopy.notes), servings: data.servings,
+      notesHtml: await renderSafeMarkdown(!safetyHold && visibleHold ? "" : publicNotes), servings: data.servings,
       timeTotalMin: data.time_total_min ?? null,
       difficulty: recipeDifficultyLabel(data.difficulty ?? null, data.language), tags: data.tags,
       image: data.image ? {

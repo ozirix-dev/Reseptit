@@ -216,3 +216,13 @@ test("published editorial copy reaches the recipe and JSON-LD without bypassing 
   }), hold);
   assert.equal(find("intialainen-idli-kookoschutneylla"), undefined);
 });
+
+test("reviewed cabbage descriptions are selected in EN, SV and TH", () => {
+  for (const recipeId of ["vhh-kaalilaatikko", "jauheliha-kaalikeitto-vhh"]) {
+    for (const locale of ["en", "sv", "th"]) {
+      const recipe = siteContent.recipes.find(entry => entry.recipeId === recipeId && entry.locale === locale);
+      assert.ok(recipe?.seoDescription, recipeId + "/" + locale);
+      assert.equal(recipe.description, recipe.seoDescription);
+    }
+  }
+});
