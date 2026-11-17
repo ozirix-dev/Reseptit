@@ -1,0 +1,225 @@
+{
+  "recipeId": "avokado-perunasampylat-pellilla",
+  "sourceHash": "0298fd2a103e922b509611058ca90218bbf1c90100eda21a110ca337830a5e69",
+  "calculatedAt": "2026-11-17",
+  "batchId": "batch-690",
+  "servings": 6,
+  "scope": "Independent Fineli Release 20 ingredient accounting for six sheet-pan avocado-potato buns. Includes estimated edible egg weight; actual baked yield was not measured.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "The Fineli baking-powder record has no measured polyol value. Public macro fields stay empty.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 250,
+      "unit": "g",
+      "item": "keitettyä jauhoista perunaa",
+      "record": {
+        "id": "fineli-11511",
+        "name": "PERUNA, KUORITTU, KEITETTY, SUOLATON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11511",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "peeled potato, boiled without salt and drained",
+        "basis": "per100g-prepared",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 15.5,
+          "fibre": 1.4,
+          "polyols": 0.0,
+          "protein": 1.88,
+          "fat": 0.114
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "peeled potato, boiled without salt and drained",
+      "matchEvidence": "Generic peeled boiled unsalted potato is a proxy for the floury variety.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Mass represents the edible ingredient charged to the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Charged-mass accounting assumes full retention. Actual sesame topping loss and baked yield are unmeasured."
+    },
+    {
+      "amount": 90,
+      "unit": "g",
+      "item": "kypsää avokadoa",
+      "record": {
+        "id": "fineli-11057",
+        "name": "AVOKADO, KUORITTU, KIVETÖN",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11057",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "raw avocado flesh without peel or pit",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.77,
+          "fibre": 3.6,
+          "polyols": 0.0,
+          "protein": 2.63,
+          "fat": 19.4
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "raw avocado flesh without peel or pit",
+      "matchEvidence": "The recipe weighs only the edible flesh.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Mass represents the edible ingredient charged to the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Charged-mass accounting assumes full retention. Actual sesame topping loss and baked yield are unmeasured."
+    },
+    {
+      "amount": 1,
+      "unit": "kpl",
+      "item": "kananmuna",
+      "record": {
+        "id": "fineli-858",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "raw whole egg without shell",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 12.61,
+          "fat": 9.24
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "raw whole egg without shell",
+      "matchEvidence": "Raw whole egg matches the ingredient before mixing.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Mass represents the edible ingredient charged to the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Charged-mass accounting assumes full retention. Actual sesame topping loss and baked yield are unmeasured.",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Recipe estimates one egg at 55 g of edible egg without shell."
+    },
+    {
+      "amount": 20,
+      "unit": "g",
+      "item": "paksua maustamatonta kreikkalaista jogurttia",
+      "record": {
+        "id": "fineli-32201",
+        "name": "JOGURTTI, TURKKILAINEN/KREIKKALAINEN, RASVAA 10 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/32201",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "plain thick Greek-style yogurt as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 4.298,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 3.98,
+          "fat": 10.047
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "plain thick Greek-style yogurt as sold",
+      "matchEvidence": "Generic 10% Greek/Turkish-style yogurt is a proxy. Actual values depend on the product.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Mass represents the edible ingredient charged to the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Charged-mass accounting assumes full retention. Actual sesame topping loss and baked yield are unmeasured."
+    },
+    {
+      "amount": 4,
+      "unit": "g",
+      "item": "leivinjauhetta",
+      "record": {
+        "id": "fineli-74",
+        "name": "LEIVINJAUHE",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/74",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "dry baking powder",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 37.8,
+          "fibre": 0.5,
+          "polyols": null,
+          "protein": 5.2,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "dry baking powder",
+      "matchEvidence": "Generic baking powder is a proxy for the product used.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Mass represents the edible ingredient charged to the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Charged-mass accounting assumes full retention. Actual sesame topping loss and baked yield are unmeasured."
+    },
+    {
+      "amount": 2,
+      "unit": "g",
+      "item": "hienoa suolaa",
+      "record": {
+        "id": "fineli-30",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "fine table salt",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 0.63,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "fine table salt",
+      "matchEvidence": "Generic iodized table salt is a proxy for fine table salt.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Mass represents the edible ingredient charged to the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Charged-mass accounting assumes full retention. Actual sesame topping loss and baked yield are unmeasured."
+    },
+    {
+      "amount": 8,
+      "unit": "g",
+      "item": "seesaminsiemeniä",
+      "record": {
+        "id": "fineli-34245",
+        "name": "SEESAMINSIEMEN, VALKOINEN, KOKONAINEN, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34245",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "whole hulled white sesame seed",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 1.171,
+          "fibre": 11.3,
+          "polyols": 0.0,
+          "protein": 24.6,
+          "fat": 59.7
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "whole hulled white sesame seed",
+      "matchEvidence": "The record matches hulled white sesame seeds used on the surface.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Mass represents the edible ingredient charged to the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Charged-mass accounting assumes full retention. Actual sesame topping loss and baked yield are unmeasured."
+    }
+  ]
+}

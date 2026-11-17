@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "recipe_id": "avokado-perunasampylat-pellilla",
+  "source_path": "reseptit/leivonnaiset/avokado-perunasampylat-pellilla.md",
+  "source_sha256": "777149a4f8008a9720b03e371d59e4977469e8d74596e02fb8096d54e04278ee",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-17",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.facebook.com/reel/3602957666541942",
+      "https://www.umami.recipes/nb/recipe/kF6L9DiBi7Pa5pFrEi0S?start=true"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/avokado-perunasampylat-pellilla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Resepti-ID ja reitti ovat uudet. Julkaistu avokado-perunasämpylä kypsennetään muffinivuoassa 2 kananmunalla ja keltuaisvoitelulla. Tässä perunapainotteinen, yhden munan taikina muotoillaan pellille ilman voitelua."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Reelin puhe vahvistaa perunan, avokadon, kananmunan, kreikkalaisen jogurtin, leivinjauheen, suolan ja seesamin. Grammamäärät ovat peltisovituksen omat. Kananmunan punnittu vastine on laskennassa arvio."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Reel näyttää pellillä muotoilun ja kullanruskean pinnan. Crosbie Fowler kuvaa samaa ainesyhdistelmää pellillä eri mittasuhteilla. Perunapainotteisempi sovitus annostellaan pieniksi keoiksi, kypsyys tarkistetaan ja löysälle taikinalle annetaan vuokavaihtoehto. Sovitusta ei ole koeleivottu."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kananmunaa sisältävän taikinan keskusta kypsennetään vähintään 71 °C:seen FoodSafety.govin munaruokien ohjearvon mukaan. Kananmuna, maito ja seesami on ilmoitettu."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Noin 421 gramman taikinasta annostellaan kuusi noin 70 gramman sämpylää. Paistoaika on vaihteluväli ja 90 minuutin kokonaisarvio sisältää perunan keittämisen ja jäähtymiset."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Seitsemän ainesriviä sidottiin reseptin mittoihin ja Fineli Release 20 -lähteisiin. Leivinjauheen polyolitieto on tuntematon, joten julkiset makrot jätetään tyhjiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Peltiversion valmiille tuotteelle ei ole osoitettu soveltuvaa GI-lähdettä. Pidetään julkinen GK määrittämättömänä."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ],
+    "image_path": "kuvat/leivonnaiset/avokado-perunasampylat-pellilla.webp",
+    "image_sha256": "982ef4c0b2f64de44cf2c0eb6a1aaac1b0ee761d479888daeb1100d55d137440",
+    "image_review": "Havainnekuvassa on kuusi pellillä paistettua seesamipintaista sämpylää, joista yksi on avattu.",
+    "physical_cook_test": false
+  }
+}
