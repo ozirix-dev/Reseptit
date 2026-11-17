@@ -376,12 +376,13 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
       ["Blanda smetana, majonnäs, dijonsenap och citronsaft. Riv först 12 g pepparrot. Smaka av och tillsätt mer rivet om så önskas upp till max 20 gram. Krydda med svartpeppar.", "Blanda smetana, majonnäs, dijonsenap och citronsaft. Riv ner 12 g pepparrot. Smaka av och tillsätt vid behov mer riven pepparrot, upp till 20 g totalt. Krydda med svartpeppar."],
       ["Bred ut såsen på bottnarna och tillsätt ruccola. Vik 60 g rostbiff på varje brödbit. Avsluta med saltgurka, lök och kapris. Erbjud nu.", "Bred såsen på brödet och lägg på rucola. Lägg 60 g rostbiff i veck på varje brödbit. Toppa med saltgurka, lök och kapris. Servera genast."],
       ["Skär de avsvalnade havreklifrallorna på mitten och lägg halvorna med snittsidan uppåt. Du kan rosta bottnarna lätt. Låt dem svalna innan de fylls.", "Dela de avsvalnade havreklifrallorna och lägg halvorna med snittytan uppåt. Rosta dem lätt om du vill och låt dem svalna före montering."],
-      ["Bred såsen på brödet och lägg på rucola. Lägg 60 g rostbiff i veck på varje brödbit.", "Bred såsen på frallhalvorna och lägg på rucola. Lägg 60 g rostbiff i veck på varje halva."]
+      ["Bred såsen på brödet och lägg på rucola. Lägg 60 g rostbiff i veck på varje brödbit.", "Bred såsen på frallhalvorna och lägg på rucola. Lägg 60 g rostbiff i veck på varje halva."],
+      ["Skölj och torka ruccolan. Skiva den inlagda gurkan och rödlöken tunt. Häll av saltgurkan och kaprisen.", "Skölj och torka rucolan. Skiva saltgurkan och rödlöken tunt. Låt saltgurkan och kaprisen rinna av."]
     ],
     "notes": [
       ["färdiga sulor och moget kallt kött", "färdigt bröd och tillagad, kyld rostbiff"],
       ["Använder du sesamfrön i rullarna är de också ett allergen.", "Använder du sesamfrön i frallorna är de också ett allergen."],
-      ["[havrekli rullar]", "[havreklifrallor]"]
+      ["De är grunden [havrekli rullar](/sv/recept/keto-kauralesesampylat/). Samma fyllningar är också lämpliga [till rågbröd](/sv/recept/paahtopaistileipa-piparjuurikastikkeella/).", "Använd [havreklifrallor](/sv/recept/keto-kauralesesampylat/) som bas. Samma pålägg passar också [på rågbröd](/sv/recept/paahtopaistileipa-piparjuurikastikkeella/)."]
     ],
     "description": "Lägg skivad kall rostbiff, smetanasås med pepparrot och rucola på halverade havreklifrallor. Saltgurka, kapris och lök ger syra och krispighet."
   },
@@ -391,12 +392,13 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
       ["ผสมครีมเปรี้ยว มายองเนส มัสตาร์ดดีชง และน้ำมะนาว ขั้นแรกขูดฮอร์สแรดิช 12 กรัม ชิมรสและเติมตะแกรงเพิ่มหากต้องการ สูงสุดถึง 20 กรัม ปรุงรสด้วยพริกไทยดำ", "ผสมครีมเปรี้ยว มายองเนส มัสตาร์ดดีฌง และน้ำมะนาว ขูดฮอร์สแรดิช 12 กรัมลงไปก่อน ชิมแล้วเติมฮอร์สแรดิชขูดได้ตามชอบ แต่ให้ใช้รวมไม่เกิน 20 กรัม ปรุงรสด้วยพริกไทยดำ"],
       ["ทาซอสที่ก้นและเพิ่ม arugula ตะล่อมเนื้อย่าง 60 กรัมลงบนขนมปังแต่ละชิ้น ปิดท้ายด้วยแตงกวาดอง หัวหอม และเคเปอร์ เสนอตอนนี้.", "ทาซอสบนขนมปังแล้วใส่ผักร็อกเก็ต พับเนื้ออบวางบนขนมปังชิ้นละ 60 กรัม โรยหน้าด้วยแตงกวาดอง หัวหอม และเคเปอร์ เสิร์ฟทันที"],
       ["ตัดรำข้าวโอ๊ตโรลที่เย็นแล้วลงครึ่งหนึ่งแล้ววางครึ่งหนึ่งโดยหงายขึ้น คุณสามารถปิ้งฐานเบาๆ ปล่อยให้เย็นก่อนเติม", "ผ่าขนมปังรำข้าวโอ๊ตที่เย็นแล้วเป็นสองซีก วางให้ด้านที่ผ่าหงายขึ้น จะปิ้งขนมปังพอเกรียมก็ได้ พักให้เย็นก่อนวางเครื่อง"],
-      ["ทาซอสบนขนมปังแล้วใส่ผักร็อกเก็ต พับเนื้ออบวางบนขนมปังชิ้นละ 60 กรัม", "ทาซอสบนขนมปังที่ผ่าครึ่งแล้ววางผักร็อกเก็ต พับเนื้ออบวางบนขนมปังซีกละ 60 กรัม"]
+      ["ทาซอสบนขนมปังแล้วใส่ผักร็อกเก็ต พับเนื้ออบวางบนขนมปังชิ้นละ 60 กรัม", "ทาซอสบนขนมปังที่ผ่าครึ่งแล้ววางผักร็อกเก็ต พับเนื้ออบวางบนขนมปังซีกละ 60 กรัม"],
+      ["ล้างและทำให้ arugula แห้ง หั่นแตงกวาดองและหัวหอมหัวใหญ่แดงเป็นชิ้นบาง ๆ ระบายแตงกวาดองและเคเปอร์", "ล้างผักร็อกเก็ตแล้วซับให้แห้ง หั่นแตงกวาดองและหอมหัวใหญ่สีแดงเป็นแผ่นบาง ๆ สะเด็ดน้ำแตงกวาดองและเคเปอร์"]
     ],
     "notes": [
       ["พื้นรองเท้าสำเร็จรูปและเนื้อเย็นที่สุก", "ขนมปังที่เตรียมไว้กับเนื้ออบที่ปรุงสุกและแช่เย็นแล้ว"],
       ["หากคุณใช้เมล็ดงาในโรล ก็อาจเป็นสารก่อภูมิแพ้ได้เช่นกัน", "หากใส่งาในขนมปังรำข้าวโอ๊ต งาก็เป็นสารก่อภูมิแพ้เช่นกัน"],
-      ["[ม้วนรำข้าวโอ๊ต]", "[ขนมปังรำข้าวโอ๊ต]"]
+      ["พวกเขาเป็นพื้นฐาน [ม้วนรำข้าวโอ๊ต](/th/recipes/keto-kauralesesampylat/). การอุดแบบเดียวกันก็เหมาะสมเช่นกัน [สำหรับขนมปังข้าวไรย์](/th/recipes/paahtopaistileipa-piparjuurikastikkeella/).", "ใช้ [ขนมปังรำข้าวโอ๊ต](/th/recipes/keto-kauralesesampylat/) เป็นฐาน เครื่องหน้าแบบเดียวกันใช้กับ [ขนมปังข้าวไรย์](/th/recipes/paahtopaistileipa-piparjuurikastikkeella/) ได้ด้วย"]
     ],
     "description": "วางเนื้ออบเย็นหั่นบาง ซอสครีมเปรี้ยวผสมฮอร์สแรดิช และผักร็อกเก็ตบนขนมปังรำข้าวโอ๊ตที่ผ่าครึ่งเป็นแซนด์วิชเปิดหน้า แตงกวาดอง เคเปอร์ และหอมหัวใหญ่เพิ่มรสเปรี้ยวและความกรอบ"
   },
