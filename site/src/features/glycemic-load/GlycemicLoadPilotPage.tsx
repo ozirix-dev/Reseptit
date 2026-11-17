@@ -259,9 +259,9 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
       <h3><Link to={localized?.routePath ?? result.routePath} lang={isLiverRecipe ? locale : localized ? recipeLocaleFromPath(localized.routePath) : "fi"}>{titleFor(result)}</Link></h3>
       <p className="gk-evidence__scope">{ux.original}</p>
       {amount !== null ? <p>{portionText.grams(amount === maxAmount ? amount : `${amount}–${maxAmount}`)}</p> : null}
+      {portion?.condition ? <p>{portion.condition[locale]}</p> : null}
       {result.status === "CALCULATED" ? <>
         <p className="gk-evidence__value"><strong>{text.value} · {formatValue(result)}</strong></p>
-        {portion?.condition ? <p>{portion.condition[locale]}</p> : null}
         {portion?.classLimitation ? <p>{portion.classLimitation[locale]}</p> : null}
         <EstimateSummary result={result} locale={locale} />
         <EstimateDetails result={result} locale={locale}

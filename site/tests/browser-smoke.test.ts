@@ -405,6 +405,13 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       assert.equal(await page.locator("[data-portion-gk]").count(), 1);
     }
 
+    await page.goto(base + glycemicLoadPath("fi"));
+    await page.locator("#gk-recipe-search").fill("Fetavaahto");
+    const pendingGk = page.locator("#fetavaahto-kasvistikuilla");
+    await pendingGk.waitFor();
+    assert.match(await pendingGk.innerText(), /3,5/);
+    assert.equal(await pendingGk.locator(".gk-evidence__value").count(), 0);
+
     for (const [id, selector, copy] of [
       ["taytetyt-kananmunat-yrteilla", '[data-gk-status="QUALITATIVE"]', portionCopy.fi.class.LOW],
       ["kylma-oliivioljylevite", '.recipe-portion', "Tarjoiluleipä ei sisälly arvioon"],

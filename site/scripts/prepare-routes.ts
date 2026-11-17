@@ -61,7 +61,18 @@ for (const locale of locales) {
 const results = [...glycemicLoadPilotResults, ...glycemicLoadAdditionalResults];
 const resultsByRecipe = new Map(results.map(result => [result.recipeId, result]));
 const pending = new Set(glycemicLoadPendingRecipeIds);
-const portionCoverage = countGkPortionCoverage(recipes.filter(recipe => recipe.locale === "fi").map(recipe => {
+const originalRecipes = recipes.filter(recipe => recipe.locale === "fi");
+const pendingRows = originalRecipes.filter(recipe => pending.has(recipe.recipeId) && !resultsByRecipe.has(recipe.recipeId)).map(recipe => ({
+  recipeId: recipe.recipeId, title: recipe.title, routePath: recipe.routePath,
+  localeRoutes: Object.fromEntries(recipes.filter(entry => entry.recipeId === recipe.recipeId)
+    .map(({ locale, title, routePath }) => [locale, { title, routePath }])),
+  status: "INSUFFICIENT SOURCE DATA" as const,
+  incompleteReasons: [{ ingredientIndex: -1, ingredientNames: {}, category: "REVIEW_PENDING" as const }],
+  glycemicLoadPerServing: null, glycemicLoadRangePerServing: null, omittedAvailableCarbohydratePerServingG: 0,
+  confidence: null, carbohydrateSources: [], sourceReferences: [],
+  portionEvidence: glycemicLoadPortions[recipe.recipeId],
+}));
+const portionCoverage = countGkPortionCoverage(originalRecipes.map(recipe => {
   const evidence = glycemicLoadPortions[recipe.recipeId];
   const withheld = withholdF25Nutrition(recipe.recipeId, recipe.locale);
   return {
@@ -72,7 +83,7 @@ const portionCoverage = countGkPortionCoverage(recipes.filter(recipe => recipe.l
   };
 }));
 const overview: RouteContent["glycemicOverview"] = {
-  results,
+  results: [...results, ...pendingRows],
   variants: gkOnlyVariants,
   coverage: gkVersionCoverage,
   reviewedCount: glycemicLoadPilotReviewedRecipeCount,
