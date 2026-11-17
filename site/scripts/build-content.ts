@@ -1,6 +1,6 @@
 import { recipeSeoDescriptions } from "./recipe-seo-descriptions";
 import { applyCopyEdits, reviewedRecipeCopy, reviewedImageNote } from "./public-recipe-copy-r2";
-import { projectPublicRecipeMethodCopy, publicIngredientNote, publicRecipeDescription, publicRecipeTitle } from "./public-recipe-copy";
+import { projectPublicRecipeIngredient, projectPublicRecipeMethodCopy, publicIngredientNote, publicRecipeDescription, publicRecipeTitle } from "./public-recipe-copy";
 import { siteTarget } from "../src/content/site-target";
 import { recipeDifficultyLabel } from "../src/features/recipes/recipe-i18n";
 import { createHash } from "node:crypto";
@@ -286,7 +286,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     const reviewedNotes = reviewedImageNote(applyCopyEdits(methodCopy.notes, copy?.notes), data.language);
     const publicNotes = [reviewedNotes, copy?.nutritionBasis].filter(Boolean).join("\n\n");
     const publicInstructions = visibleHold?.instructions ?? publicMethod;
-    const publicIngredients = data.ingredients.map(ingredient => ({
+    const publicIngredients = data.ingredients.map(ingredient => projectPublicRecipeIngredient(data.recipe_id, data.language, {
       ...ingredient,
       item: applyCopyEdits(ingredient.item, copy?.ingredientItem),
       ...(ingredient.note ? {

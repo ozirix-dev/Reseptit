@@ -1,4 +1,4 @@
-import type { RecipeLocale } from "../src/types/content";
+import type { RecipeIngredient, RecipeLocale } from "../src/types/content";
 import { recipeSeoDescriptions } from "./recipe-seo-descriptions";
 
 // Public display copy for recipes whose protected sources also back nutrition,
@@ -834,6 +834,20 @@ const pastaIngredientNotes: Readonly<Record<string, string>> = {
   "EAN 5201194037031; julkinen ravintoarvo 16 g CHO/100 g; tarkista että pakkausarvo koskee valutettua syötävää massaa":
     "EAN 5201194037031. Tuotetiedoissa on 16 g hiilihydraattia / 100 g. Tarkista pakkauksesta, koskeeko arvo valutettua tuotetta.",
 };
+
+export function projectPublicRecipeIngredient(id: string, locale: RecipeLocale, ingredient: RecipeIngredient): RecipeIngredient {
+  if (id !== "avokado-perunasampylat-pellilla" || locale !== "fi") return ingredient;
+
+  const { amount, unit, item, note } = ingredient;
+  // The published recipe documents 55 g as the edible weight of its one egg.
+  if (amount === 1 && unit === "kpl" && item === "kananmuna" && note === "noin 55 g ilman kuorta") {
+    return { amount: 55, unit: "g", item: "kananmunaa ilman kuorta" };
+  }
+  if (item === "kypsää avokadoa" && note === "hedelmälihan paino") {
+    return { amount, unit, item: "kypsän avokadon hedelmälihaa" };
+  }
+  return ingredient;
+}
 
 export function publicIngredientNote(id: string, locale: RecipeLocale, note: string): string {
   return id === "marry-me-kanapasta" && locale === "fi" ? pastaIngredientNotes[note] ?? note : note;

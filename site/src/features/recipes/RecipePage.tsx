@@ -101,7 +101,15 @@ export function RecipePage() {
     <p className="print-servings">{tools.servings}: {servings}</p>
     <div className="recipe-layout">
       <section className="recipe-panel" aria-labelledby="recipe-ingredients-title"><div className="recipe-panel__heading"><h2 id="recipe-ingredients-title">{labels.ingredients}</h2><div className="serving-control"><span>{labels.servings}</span>{hydrated ? <button type="button" aria-label={labels.decrease} disabled={servings <= 1} onClick={() => { track("Adjust Servings"); setServings((value) => nextServingCount(value, -1)); }}>−</button> : null}<output aria-live="polite">{servings}</output>{hydrated ? <button type="button" aria-label={labels.increase} onClick={() => { track("Adjust Servings"); setServings((value) => nextServingCount(value, 1)); }}>+</button> : null}</div></div>
-        <ul className="ingredient-list">{recipe.ingredients.map((ingredient, index) => <li key={`${ingredient.item}-${index}`}><span>{ingredient.amount === null ? "" : `${formatIngredientAmount(ingredient.amount, servings, recipe.servings, numberLocale)}${ingredient.unit ? ` ${ingredient.unit}` : ""} `}{ingredient.item}</span>{ingredient.note ? <span className="ingredient-note">{ingredient.note}</span> : null}</li>)}</ul>
+        <ul className="ingredient-list">{recipe.ingredients.map((ingredient, index) => {
+          const amount = formatIngredientAmount(ingredient.amount, servings, recipe.servings, numberLocale);
+          const quantity = amount ? `${amount}${ingredient.unit ? ` ${ingredient.unit}` : ""} ` : "";
+          const note = ingredient.note?.trim();
+          const noteScope = note && servings !== recipe.servings && /\p{N}/u.test(note)
+            ? `${tools.originalIngredientNote(recipe.servings)} · `
+            : "";
+          return <li key={`${ingredient.item}-${index}`}>{quantity}{ingredient.item}{note ? ` (${noteScope}${note})` : null}</li>;
+        })}</ul>
       </section>
       <section className="recipe-panel" aria-labelledby="recipe-instructions"><h2 id="recipe-instructions" tabIndex={-1}>{labels.instructions}</h2>
         {servings !== recipe.servings ? <p className="recipe-disclosure recipe-scaled-note">{tools.scaled(recipe.servings)}</p> : null}

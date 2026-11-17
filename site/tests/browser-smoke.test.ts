@@ -156,6 +156,31 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       assert.match(await page.locator('meta[name="robots"]').getAttribute("content") ?? "", /noindex\s*,\s*nofollow/, `${methodPage.locale}: no-slash route keeps staging noindex`);
     }
 
+    // Ingredient notes should stay readable inline, including preparation and frying instructions.
+    const ingredientNotes = [
+      { locale: "fi", route: "/medu-vada/", preparation: "kuorittuja ja halkaistuja", scoped: "Perusohje (4 annosta)" },
+      { locale: "en", route: "/en/recipes/medu-vada/", preparation: "peeled and split", scoped: "Original recipe (4 servings)" },
+      { locale: "sv", route: "/sv/recept/medu-vada/", preparation: "skalas och delas", scoped: "Grundrecept (4 portioner)" },
+      { locale: "th", route: "/th/recipes/medu-vada/", preparation: "ปอกเปลือกและแยกออก", scoped: "สูตรเดิมสำหรับ 4 ที่" },
+    ] as const;
+    for (const { locale, route, preparation, scoped } of ingredientNotes) {
+      await page.goto(`${base}${route}`);
+      const rows = page.locator(".ingredient-list li");
+      assert.ok((await rows.first().innerText()).endsWith(` (${preparation})`));
+      assert.equal(await rows.last().locator("*").count(), 0);
+      assert.ok(!(await rows.last().innerText()).includes(scoped));
+      await page.getByRole("button", { name: recipeUi[locale].increase, exact: true }).click();
+      assert.ok((await rows.last().innerText()).includes(`(${scoped} · `));
+      assert.ok((await rows.first().innerText()).endsWith(` (${preparation})`));
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+    }
+
+    await page.goto(`${base}/avokado-perunasampylat-pellilla/`);
+    const egg = page.locator(".ingredient-list li").filter({ hasText: "kananmunaa ilman kuorta" });
+    assert.equal(await egg.innerText(), "55 g kananmunaa ilman kuorta");
+    await page.getByRole("button", { name: recipeUi.fi.increase, exact: true }).click();
+    assert.equal(await egg.innerText(), "64,17 g kananmunaa ilman kuorta");
+
     await page.goto(`${base}/kermainen-lohipata/`);
     await page.getByRole("button", { name: "Lisää annosmäärää", exact: true }).click();
     assert.equal(await page.locator(".serving-control output").innerText(), "5");
