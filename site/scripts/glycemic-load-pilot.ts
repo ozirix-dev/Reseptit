@@ -40,6 +40,7 @@ import {
 } from "./glycemic-load-model";
 import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches, exactRecipeTextBindingMatches, reviewedColdPuddingBindingText } from "./glycemic-load-recipe-binding";
 import { siteContent } from "../src/generated/content.generated";
+import { applyCopyEdits, reviewedRecipeCopy } from "./public-recipe-copy-r2";
 import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 import { parseMarkdown } from "../src/content/markdown";
 import { completePublishedRecipeInputs, type PublishedRecipeInputSource } from "./glycemic-load-pilot-input";
@@ -335,6 +336,13 @@ const publicResults = results.flatMap((result) => {
       note: `Unmatched portions totalling ${result.omittedAvailableCarbohydratePerServingG.toFixed(3)} g available carbohydrate per serving were omitted within the cumulative ${CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G} g editorial tolerance.`,
     });
   }
+  // Evidence refers to the canonical ingredient names. Locate their display
+  // rows using the same wording as the recipe builder before localizing them.
+  const ingredientItemEdits = reviewedRecipeCopy(recipe.recipeId, "fi")?.ingredientItem;
+  const findIngredientIndex = (canonicalName: string) => {
+    const displayName = applyCopyEdits(canonicalName, ingredientItemEdits);
+    return recipe.ingredients.findIndex((entry) => entry.item === displayName);
+  };
   const incompleteReasons = result.blockers.map((blocker) => {
     const detail = blocker.startsWith(`${result.recipeId}: `) ? blocker.slice(result.recipeId.length + 2) : blocker;
     const separator = detail.indexOf(": ");
@@ -347,14 +355,14 @@ const publicResults = results.flatMap((result) => {
       : /allows materially different|alternative|selected liquid|variant/i.test(reason) ? "VARIANT"
       : /amount|quantity|mass is missing|unweighed|implausible|unit or decimal/i.test(reason) ? "AMOUNT"
       : "SOURCE";
-    const ingredientIndex = recipe.ingredients.findIndex((entry) => entry.item === ingredient);
+    const ingredientIndex = findIngredientIndex(ingredient);
     const ingredientNames = Object.fromEntries(translations.map((entry) => [entry.locale, ingredientIndex >= 0 ? entry.ingredients[ingredientIndex]?.item : undefined]));
     return { ingredientIndex, ingredientNames, category };
   });
   const ingredientEvidence = result.status === "CALCULATED" ? result.ingredients.flatMap((ingredient) => {
     if (!ingredient.matchKind || !ingredient.giRecordId || ingredient.gi === null) return [];
     const source = giRecords.find((record) => record.id === ingredient.giRecordId);
-    const index = recipe.ingredients.findIndex((entry) => entry.item === ingredient.name);
+    const index = findIngredientIndex(ingredient.name);
     const ingredientNames = Object.fromEntries(translations.map((entry) => [entry.locale, index >= 0 ? entry.ingredients[index]?.item : undefined]));
     return [{
       name: ingredient.name,
