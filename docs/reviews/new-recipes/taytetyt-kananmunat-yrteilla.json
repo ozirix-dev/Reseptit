@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "recipe_id": "taytetyt-kananmunat-yrteilla",
+  "source_path": "reseptit/valipalat/taytetyt-kananmunat-yrteilla.md",
+  "source_sha256": "ac4895c4f17f61c660397546dfe480c0df5c618d178de4a7cb474025f58610cd",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-17",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://eggs.ca/recipes/herbed-devilled-eggs/",
+      "https://ask.fsis.usda.gov/article/How-long-does-it-take-to--hard-cook-an-egg",
+      "https://ask.fsis.usda.gov/article/How-do-you-handle-and-store-eggs-safely"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/taytetyt-kananmunat-yrteilla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "The source slug is new. The prior same-name text is in the editorial review directory."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Sivulla kuusi kananmunaa näytetään kappaleina. Ravintoarvion 55 g/munan syötävä paino on Fineli 8513:n laskennallinen vastine. Muut ainekset punnitaan."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Six medium eggs at the Fineli 8513 edible portion of 55 g each give a 330 g reference batch for the estimate; the actual peeled weight varies. Use all six eggs for twelve filled halves. Use commercial full-fat mayonnaise and prepared mustard rather than brand-specific products whose fibre or polyol values are unavailable. The seasoning uses fresh chives. No physical preparation trial was performed."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Both white and yolk are cooked until firm. Cool under cold water, chill the prepared portions promptly and store in the refrigerator."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "6 portions with 35 minutes including the specified cooking and resting or cooling periods."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli edible mass calculation verified against the current recipe input SHA-256. Six medium eggs at the Fineli 8513 edible portion of 55 g each give a 330 g reference batch for the estimate; the actual peeled weight varies. Use all six eggs for twelve filled halves. Use commercial full-fat mayonnaise and prepared mustard rather than brand-specific products whose fibre or polyol values are unavailable. The seasoning uses fresh chives. No physical preparation trial was performed."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "No approved glycemic load estimate exists for this recipe."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/"
+    ],
+    "image_path": "kuvat/valipalat/taytetyt-kananmunat-yrteilla.webp",
+    "image_sha256": "60674e6f2e743ee1aa75479216528f62ae880630a1fd7fdcc40ab515dfedd431",
+    "image_review": "Kaksitoista munanpuolikasta ja hienonnettu ruohosipuli vastaavat annostelua.",
+    "physical_cook_test": false
+  }
+}
