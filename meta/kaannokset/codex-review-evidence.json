@@ -11608,9 +11608,9 @@
   },
   "suklaa-raejuustokakku:en": {
     "source_hash": "02be34af7f62fcbebefed9d7940c3f701d723619cffd8caab9177c8fe3fe2b2a",
-    "translation_hash": "035e531bd62e09b31e6c5d81ed9d33c5e0c077ada402106319ad41b85a5e6305",
-    "reviewed_at": "2026-11-15",
-    "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
+    "translation_hash": "b4e3179709d1a7c199d723137c40653617caa07dd09f825c9f5281324bd211a3",
+    "reviewed_at": "2026-11-17",
+    "reference": "https://github.com/ozirix-dev/Reseptit/compare/main...codex/ananas-copy-viimeistely",
     "correction_pr": 668,
     "outcome": "pass",
     "findings": [
@@ -11628,6 +11628,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "17.11.2026, toisen copykierroksen jatkotarkistus. R2-L03. Uuniohjeen 160 °C ja FI:n tasalämpö vastaavat ylä- ja alalämpöä. Muut paisto- ja kypsyysehdot säilyvät. Tarkistettu julkinen teksti: site/scripts/public-recipe-copy-r2.ts. Näyttötekstin korjaus-PR #698."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026. Kohdennetun jatkohaun todettu osuma. Huomautuksen kirjaimellinen mitoitus-käännös korjattu kertomaan, että vuoan koko, annosmäärä sekä paisto- ja jäähdytysajat on valittu tätä reseptiä varten. Muuttunut EN-huomautus verrattu FI-lähteeseen. Muu muodostettu reseptiteksti ja ainesosat, ajat, lämpötilat, ravintoarvot sekä lähdeosoitteet tarkistettu aiempaa main-sisältöä vasten."
       }
     ]
   },
@@ -11763,9 +11768,9 @@
   },
   "ananas-kanelijuoma-sitruunalla:en": {
     "source_hash": "6071329b31527cc8851c29c59a4d0600510958bb0d38d30a4c76ed658baca685",
-    "translation_hash": "1d4b9728a73bb701a22935835a0c598eb3139fac13bd7194d3aa788c0fdccf36",
-    "reviewed_at": "2026-11-15",
-    "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
+    "translation_hash": "8be20cd8a656bf5acb89fae66488719346ed851c0eaf6c92ac65743a75cd06e4",
+    "reviewed_at": "2026-11-17",
+    "reference": "https://github.com/ozirix-dev/Reseptit/compare/main...codex/ananas-copy-viimeistely",
     "correction_pr": 668,
     "outcome": "pass",
     "findings": [
@@ -11778,6 +11783,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "17.11.2026, toisen copykierroksen jatkotarkistus. R2-L07. Esittelyssä ananaksen hedelmäliha jää juomaan ja antaa sille täyteläisyyttä. Valmistuksessa säilyvät 330 g hedelmälihaa, sitruuna, kaksi lasia, kylmänä tarjoilu ja kanelia koskeva sekoitusohje. Tarkistettu julkinen teksti: site/scripts/public-recipe-copy-r2.ts. Näyttötekstin korjaus-PR #698."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026. Tuotannon huomautusten copykorjaus ja muodostetun EN-tekstin vertailu FI-lähteeseen. Vesi- ja kanelimäärän valinta, inkivääriä sisältävän vertailureseptin siivilöinti sekä kanelin ravintoarvojen poisjättö ja 0,35 g/annos on tarkistettu laskenta-aineistosta (0,7 g / 2). TH:n sitruuna on เลมอน myös huomautuksessa ja alt-tekstissä. Aiemmat esittely- ja valmistusohjekorjaukset on verrattu mainin muodostettuun sisältöön. Ainesosat, määrät, työvaiheet, ravintoarvot ja lähdeosoitteet on verrattu FI-lähteeseen. Avoimia havaintoja ei ole."
       }
     ]
   },
@@ -12012,9 +12022,9 @@
   },
   "suklaa-raejuustokakku:sv": {
     "source_hash": "02be34af7f62fcbebefed9d7940c3f701d723619cffd8caab9177c8fe3fe2b2a",
-    "translation_hash": "e1a9c127cd2db6d31818062a9fe36666ba4c431576f0eebe7716f19ba25f6ddb",
-    "reviewed_at": "2026-11-15",
-    "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
+    "translation_hash": "ee4ed835bbce4dcb5fb12ff7f6ca73e557aa1f53b49ef31a224280b14db271e7",
+    "reviewed_at": "2026-11-17",
+    "reference": "https://github.com/ozirix-dev/Reseptit/compare/main...codex/ananas-copy-viimeistely",
     "correction_pr": 668,
     "outcome": "pass",
     "findings": [
@@ -12032,6 +12042,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "17.11.2026, toisen copykierroksen jatkotarkistus. R2-L03. Uuniohjeen 160 °C ja FI:n tasalämpö vastaavat ylä- ja alalämpöä. Muut paisto- ja kypsyysehdot säilyvät. Tarkistettu julkinen teksti: site/scripts/public-recipe-copy-r2.ts. Näyttötekstin korjaus-PR #698."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026. Kohdennetun jatkohaun todettu osuma. Huomautuksen kirjaimellinen mitoitus-käännös korjattu kertomaan, että vuoan koko, annosmäärä sekä paisto- ja jäähdytysajat on valittu tätä reseptiä varten. Muuttunut SV-huomautus verrattu FI-lähteeseen. Muu muodostettu reseptiteksti ja ainesosat, ajat, lämpötilat, ravintoarvot sekä lähdeosoitteet tarkistettu aiempaa main-sisältöä vasten."
       }
     ]
   },
@@ -12162,9 +12177,9 @@
   },
   "ananas-kanelijuoma-sitruunalla:sv": {
     "source_hash": "6071329b31527cc8851c29c59a4d0600510958bb0d38d30a4c76ed658baca685",
-    "translation_hash": "de980465fcb7d7ddde2aa69bf3d4d4c692efcd608b6a724826c1a13b25758308",
-    "reviewed_at": "2026-11-15",
-    "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
+    "translation_hash": "39720bf2af9d55279110597a54f13d7865171eb372063025970021402c5c6cba",
+    "reviewed_at": "2026-11-17",
+    "reference": "https://github.com/ozirix-dev/Reseptit/compare/main...codex/ananas-copy-viimeistely",
     "correction_pr": 668,
     "outcome": "pass",
     "findings": [
@@ -12177,6 +12192,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "17.11.2026, toisen copykierroksen jatkotarkistus. R2-L07. Esittelyssä ananaksen hedelmäliha jää juomaan ja antaa sille täyteläisyyttä. Valmistuksessa säilyvät 330 g hedelmälihaa, sitruuna, kaksi lasia, kylmänä tarjoilu ja kanelia koskeva sekoitusohje. Tarkistettu julkinen teksti: site/scripts/public-recipe-copy-r2.ts. Näyttötekstin korjaus-PR #698."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026. Tuotannon huomautusten copykorjaus ja muodostetun SV-tekstin vertailu FI-lähteeseen. Vesi- ja kanelimäärän valinta, inkivääriä sisältävän vertailureseptin siivilöinti sekä kanelin ravintoarvojen poisjättö ja 0,35 g/annos on tarkistettu laskenta-aineistosta (0,7 g / 2). TH:n sitruuna on เลมอน myös huomautuksessa ja alt-tekstissä. Aiemmat esittely- ja valmistusohjekorjaukset on verrattu mainin muodostettuun sisältöön. Ainesosat, määrät, työvaiheet, ravintoarvot ja lähdeosoitteet on verrattu FI-lähteeseen. Avoimia havaintoja ei ole."
       }
     ]
   },
@@ -12380,9 +12400,9 @@
   },
   "suklaa-raejuustokakku:th": {
     "source_hash": "02be34af7f62fcbebefed9d7940c3f701d723619cffd8caab9177c8fe3fe2b2a",
-    "translation_hash": "1650594c90919de9ce74a49725b4fdfbe2f5ef9dcd75b2e7b77cf205ae140672",
-    "reviewed_at": "2026-11-15",
-    "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
+    "translation_hash": "94b011c727268fd7b61a5996ecee2ae3ad8f9695b339f694480ed9763b95ef8a",
+    "reviewed_at": "2026-11-17",
+    "reference": "https://github.com/ozirix-dev/Reseptit/compare/main...codex/ananas-copy-viimeistely",
     "correction_pr": 668,
     "outcome": "pass",
     "findings": [
@@ -12395,6 +12415,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026. Kohdennetun jatkohaun todettu osuma. Huomautuksen kirjaimellinen mitoitus-käännös korjattu kertomaan, että vuoan koko, annosmäärä sekä paisto- ja jäähdytysajat on valittu tätä reseptiä varten. Muuttunut TH-huomautus verrattu FI-lähteeseen. Muu muodostettu reseptiteksti ja ainesosat, ajat, lämpötilat, ravintoarvot sekä lähdeosoitteet tarkistettu aiempaa main-sisältöä vasten."
       }
     ]
   },
@@ -12515,9 +12540,9 @@
   },
   "ananas-kanelijuoma-sitruunalla:th": {
     "source_hash": "6071329b31527cc8851c29c59a4d0600510958bb0d38d30a4c76ed658baca685",
-    "translation_hash": "9a4b13f492c64d9f07c6c0f2896e118c89f6b089611ab213566b8c7f6709ceb3",
-    "reviewed_at": "2026-11-15",
-    "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
+    "translation_hash": "794d0cd5f9805d88e67c172353a21df6304d9c87f455bf6e45586e3508e7998d",
+    "reviewed_at": "2026-11-17",
+    "reference": "https://github.com/ozirix-dev/Reseptit/compare/main...codex/ananas-copy-viimeistely",
     "correction_pr": 668,
     "outcome": "pass",
     "findings": [
@@ -12535,6 +12560,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "17.11.2026, toisen copykierroksen jatkotarkistus. R2-L07. Esittelyssä ananaksen hedelmäliha jää juomaan ja antaa sille täyteläisyyttä. Valmistuksessa säilyvät 330 g hedelmälihaa, sitruuna, kaksi lasia, kylmänä tarjoilu ja kanelia koskeva sekoitusohje. Tarkistettu julkinen teksti: site/scripts/public-recipe-copy-r2.ts. Näyttötekstin korjaus-PR #698."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026. Tuotannon huomautusten copykorjaus ja muodostetun TH-tekstin vertailu FI-lähteeseen. Vesi- ja kanelimäärän valinta, inkivääriä sisältävän vertailureseptin siivilöinti sekä kanelin ravintoarvojen poisjättö ja 0,35 g/annos on tarkistettu laskenta-aineistosta (0,7 g / 2). TH:n sitruuna on เลมอน myös huomautuksessa ja alt-tekstissä. Aiemmat esittely- ja valmistusohjekorjaukset on verrattu mainin muodostettuun sisältöön. Ainesosat, määrät, työvaiheet, ravintoarvot ja lähdeosoitteet on verrattu FI-lähteeseen. Avoimia havaintoja ei ole."
       }
     ]
   },

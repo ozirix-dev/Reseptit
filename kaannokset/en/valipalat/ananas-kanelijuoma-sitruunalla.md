@@ -59,7 +59,7 @@ Fresh pineapple, lemon juice, cold water and a pinch of cinnamon are pureed into
 
 ## Notes
 
-- The video uses two cups of pineapple, half a lemon, a glass of water and a spoonful of cinnamon. The amount of water and a mild dose of cinnamon are the dimensions of this version. [Original Facebook Reel](https://www.facebook.com/reel/862663536867684)
-- The same main flavors can be found in the written comparison instructions, where pineapple is also mixed with ginger and the drink is strained. [Comparison guide](https://atelizabethstable.com/pineapple-cinnamon-wellness-shots/)
+- The video uses two cups of pineapple, half a lemon, a glass of water and a spoonful of cinnamon. The water quantity and small amount of cinnamon were chosen for this version. [Original Facebook Reel](https://www.facebook.com/reel/862663536867684)
+- The written comparison recipe uses the same main flavors. The pineapple is also blended with ginger and the drink is strained. [Comparison recipe](https://atelizabethstable.com/pineapple-cinnamon-wellness-shots/)
 - The image is a perception image made with artificial intelligence.
-- Nutritional values ​​are estimates based on raw material quantities. The small portion of cinnamon is limited in the calculation.
+- Nutritional values are estimates based on ingredient quantities. Cinnamon is excluded from the nutrition calculation. The recipe contains 0.35 g of cinnamon per serving.

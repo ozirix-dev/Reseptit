@@ -59,7 +59,7 @@ Färsk ananas, citronsaft, kallt vatten och en nypa kanel mosas till en uppfrisk
 
 ## Anteckningar
 
-- Videon använder två koppar ananas, en halv citron, ett glas vatten och en sked kanel. Mängden vatten och en mild dos kanel är dimensionerna för denna version. [Original Facebook-rulle](https://www.facebook.com/reel/862663536867684)
-- Samma huvudsmaker finns i de skriftliga jämförelseanvisningarna, där även ananas blandas med ingefära och drycken silas. [Jämförelseguide](https://atelizabethstable.com/pineapple-cinnamon-wellness-shots/)
+- I videon används två koppar ananas, en halv citron, ett glas vatten och en sked kanel. Mängden vatten och den lilla mängden kanel har valts för den här versionen. [Original Facebook-rulle](https://www.facebook.com/reel/862663536867684)
+- Samma huvudsmaker finns i jämförelsereceptet, där ananas också mixas med ingefära och drycken silas. [Jämförelserecept](https://atelizabethstable.com/pineapple-cinnamon-wellness-shots/)
 - Bilden är en perceptionsbild gjord med artificiell intelligens.
-- Näringsvärden är uppskattningar baserade på råvarukvantiteter. Den lilla portionen kanel är begränsad i beräkningen.
+- Näringsvärdena är uppskattningar baserade på mängderna av ingredienserna. Kanelens näringsvärden ingår inte i beräkningen. Receptet innehåller 0,35 g kanel per portion.

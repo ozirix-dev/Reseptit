@@ -16,6 +16,12 @@ interface ReviewedRecipeCopy {
 // Display-only edits. Canonical ingredients, release evidence and calculation inputs
 // stay in their source files. Edits match the approved display text before this pass.
 const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
+  "ananas-kanelijuoma-sitruunalla/fi": {
+    "notes": [
+      ["Vesimäärä ja mieto kaneliannos ovat tämän version mitoituksia.", "Vesimäärä ja pieni kanelimäärä on valittu tätä versiota varten."],
+      ["Kanelin pieni osuus on rajattu laskelmassa.", "Kanelin ravintoarvoja ei ole laskettu mukaan. Reseptissä on 0,35 g kanelia annosta kohti."]
+    ]
+  },
   "ananas-kanelijuoma-sitruunalla/en": {
     "description": "Blend fresh pineapple, lemon juice, cold water and a pinch of cinnamon for a refreshing drink. The blended pineapple pulp gives it body."
   },
