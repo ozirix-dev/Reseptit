@@ -4,6 +4,8 @@ const buildOriginPattern = siteTarget.baseUrl.replace(/[.*+?^${}()|[\]\\]/g, "\\
 import { estimateBasis, evidenceLabel, gkCopy, missingReason } from "../src/features/glycemic-load/glycemic-load-copy";
 import {gkOnlyVariants,gkVersionCoverage} from '../src/generated/gk-only-variants.generated';
 import { gkVariantScope } from '../src/features/recipes/gk-estimate-scope';
+import { verbalGkForPortion } from '../src/features/recipes/gk-portion';
+import { portionCopy } from '../src/features/recipes/RecipePortionSummary';
 import {loadAuthorizedGk100Variants} from '../scripts/gk100-approval-release';
 import {gkOnlyUi,gkOnlyValue,gkScopeUi,studyServingTitle} from '../src/features/recipes/GkOnlyVariantPanel';
 import assert from "node:assert/strict";
@@ -12,7 +14,7 @@ import path from "node:path";
 import test from "node:test";
 import { recipeLibraryPagePath, recipeLibraryPageSize } from "../src/features/recipes/recipe-pagination";
 import { parseRecipeSearch, parseRouteContent } from "../src/lib/load-content";
-import { recipeDifficultyLabel, recipeUi } from "../src/features/recipes/recipe-i18n";
+import { glycemicLoadPath, recipeDifficultyLabel, recipeUi } from "../src/features/recipes/recipe-i18n";
 import { copyrightSourceUrl, copyrightUi } from "../src/features/recipes/recipe-copyright";
 import { toolUi } from "../src/features/recipes/recipe-tools";
 import { siteContent } from "../src/generated/content.generated";
@@ -342,10 +344,12 @@ test("GK values link to centralized recipe details on every published translatio
         assert.ok(html.includes(undefinedLabel ?? "GK-arviota ei näytetä"), result.recipeId + ": withholding notice is visible");
         continue;
       }
+      const methodPath = `${glycemicLoadPath(recipe.locale)}#${result.recipeId}`;
+      const verbalClass = verbalGkForPortion(result.portionEvidence?.verbal, 1);
       if (result.status === "CALCULATED" && result.glycemicLoadPerServing !== null) {
         assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoad));
         assert.ok(html.includes(gkCopy[recipe.locale].see));
-        assert.ok(html.includes(`${recipe.locale === "fi" ? "/glykeeminen-kuorma/" : recipe.locale === "en" ? "/en/glycemic-load/" : recipe.locale === "sv" ? "/sv/glykemisk-belastning/" : "/th/glycemic-load/"}#${result.recipeId}`));
+        assert.ok(html.includes(methodPath));
         assert.ok(result.confidence && html.includes(gkCopy[recipe.locale].levelNotes[result.confidence]), `${result.recipeId}/${recipe.locale}: confidence is visible`);
         if (result.omittedAvailableCarbohydratePerServingG > 0) assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoadOmission(new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumSignificantDigits: 1 }).format(result.omittedAvailableCarbohydratePerServingG))), `${result.recipeId}/${recipe.locale}: omitted small carbohydrate is disclosed`);
         const displayNumber = new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], result.assessmentType ? {maximumFractionDigits:0} : {maximumSignificantDigits:1,minimumSignificantDigits:1});
@@ -354,6 +358,13 @@ test("GK values link to centralized recipe details on every published translatio
           : displayNumber.format(result.glycemicLoadPerServing);
         assert.ok(html.includes(displayed), `${result.recipeId}/${recipe.locale}: displayed GL value`);
         assert.ok(result.sourceReferences.length > 0, `${result.recipeId}: calculated result has source references`);
+      } else if (verbalClass) {
+        assert.equal(result.glycemicLoadPerServing, null, `${result.recipeId}: verbal class leaves numeric GK withheld`);
+        assert.match(html, /data-gk-status="QUALITATIVE"/);
+        assert.doesNotMatch(html, /data-portion-gk/);
+        assert.ok(html.includes(methodPath), `${result.recipeId}/${recipe.locale}: verbal estimate links to its guide card`);
+        assert.ok(html.includes(portionCopy[recipe.locale].class[verbalClass]), `${result.recipeId}/${recipe.locale}: standard portion class is visible`);
+        assert.ok(result.portionEvidence?.reviewedSource && html.includes(result.portionEvidence.reviewedSource), `${result.recipeId}/${recipe.locale}: verbal estimate has a reviewed source`);
       } else {
         if(gkOnlyVariants.some(v=>v.recipeId===result.recipeId)){
           assert.ok(html.includes('data-macro-scope="NO_MACRO_PACKAGE_FOR_THIS_VERSION"'),`${result.recipeId}/${recipe.locale}: separately approved GK-only version is explicit`);

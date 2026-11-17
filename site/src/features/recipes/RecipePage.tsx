@@ -87,6 +87,11 @@ export function RecipePage() {
     }[recipe.locale]
     : {"fi": "Kaikki imeytyvät hiilihydraatit ovat mukana. Ei pieniä pois jätettyjä osuuksia. Mallinnettu ainesosalaskelma, ei aterialla mitattu vaste. Numeerista biologista epävarmuusväliä ei tunneta.", "en": "The estimate includes all available carbohydrate. This is a modeled ingredient estimate, not a measured meal response. Biological uncertainty has not been quantified.", "sv": "Alla tillgängliga kolhydrater ingår utan utelämnade små mängder. Detta är en modellerad ingrediensberäkning, inte ett uppmätt måltidssvar. Biologisk osäkerhet har inte kvantifierats.", "th": "รวมคาร์โบไฮเดรตที่ใช้ได้ทั้งหมดโดยไม่ตัดส่วนเล็กน้อยออก เป็นค่าประมาณจากวัตถุดิบ ไม่ใช่ผลตอบสนองจากมื้ออาหารที่วัดจริง ยังไม่ทราบช่วงความไม่แน่นอนทางชีวภาพเป็นตัวเลข"}[recipe.locale];
   const portionEvidence = glycemicRecipe?.portionEvidence;
+  const gkMethodLink = <p className="recipe-glycemic-load__caption">
+    <Link to={`${glycemicLoadPath(locale)}#${recipe.recipeId}`} aria-label={`${gkCopy[locale].see} · ${recipe.title}`}>
+      {gkCopy[locale].see} ↗
+    </Link>
+  </p>;
   const portionWords = portionCopy[locale];
   const portionCarbs = withholdNutrition ? null : originalPortionCarbs(recipe.nutrition, portionEvidence);
   const scaled = glycemicLoad ? originalPortionGk(glycemicLoad, eatenPortion) : null;
@@ -143,11 +148,7 @@ export function RecipePage() {
           {classText ? <p className="recipe-glycemic-load__class">{classText}</p> : null}
           {portionEvidence?.alternatives ? <GkAlternatives choices={portionEvidence.alternatives} locale={locale} multiplier={eatenPortion} /> : null}
           {display?.roundingHitsBoundary && !scaled?.inconsistent && !scaled?.omissionLimitsClass ? <p className="recipe-disclosure">{portionWords.rounding}</p> : null}
-          <p className="recipe-glycemic-load__caption">
-            <Link to={`${glycemicLoadPath(locale)}#${recipe.recipeId}`} aria-label={`${gkCopy[locale].see} · ${recipe.title}`}>
-              {gkCopy[locale].see} ↗
-            </Link>
-          </p>
+          {gkMethodLink}
           <EstimateDetails result={glycemicLoad} locale={locale}
             notes={<>
               <EstimateSummary result={glycemicLoad} locale={locale} />
@@ -162,6 +163,7 @@ export function RecipePage() {
           />
         </div> : portionEvidence?.verbal ? <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status="QUALITATIVE" aria-live="polite">
           <VerbalPortionEstimate evidence={portionEvidence} recipe={recipe} multiplier={eatenPortion} />
+          {gkMethodLink}
         </div> : <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status="UNAVAILABLE">
           {glycemicRecipe?.pending ? <p>{portionWords.pending}</p> : null}
           <MissingEstimate locale={locale} result={gkResult ?? { incompleteReasons: [] }} />
