@@ -1,3 +1,4 @@
+import { formatRecipeIngredient } from "./servings";
 import { EstimateConfidence } from "../glycemic-load/GlycemicLoadEvidence";
 import { publicGkOnlySourceNote } from "./gk-only-public-note";
 import { gkCopy } from "../glycemic-load/glycemic-load-copy";
@@ -55,7 +56,7 @@ export const studyServingTitle = {
  th: 'ค่า GL ของอาหารทดลองหนึ่งส่วน',
 };
 
-export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false,originalHasGk=false,originalRecipe}:{variant:GkOnlyVariant;locale:RecipeLocale;servings?:number;compact?:boolean;originalHasGk?:boolean;originalRecipe?:Pick<RecipeEntry,'ingredients'|'instructionsText'|'servings'>}){
+export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false,originalHasGk=false,originalRecipe}:{variant:GkOnlyVariant;locale:RecipeLocale;servings?:number;compact?:boolean;originalHasGk?:boolean;originalRecipe?:Pick<RecipeEntry,'ingredients'|'kitchenIngredients'|'instructionsText'|'servings'>}){
  const t=gkOnlyUi[locale],n=new Intl.NumberFormat(locale,{maximumFractionDigits:3}),Heading=compact?'h4':'h2';
  const text = gkCopy[locale];
  const study = gkVariantScope(v) === 'STUDY_COMPARISON';
@@ -83,7 +84,7 @@ export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false,orig
     {v.sources.some((source) => source.kind === 'PUBLISHED_CODING' || source.kind === 'B_CODING') ? <p>{text.kinds.model}</p> : null}
     {!study && originalRecipe ? <div data-gk-original-comparison="amounts-and-preparation">
       <p><strong>{{fi:'Alkuperäisen reseptin määrät ja valmistus',en:'Original recipe amounts and preparation',sv:'Originalreceptets mängder och tillagning',th:'ปริมาณและวิธีปรุงของสูตรเดิม'}[locale]}</strong></p>
-      <ul>{originalRecipe.ingredients.map((ingredient,index) => <li key={index}>{ingredient.amount === null ? '' : `${n.format(ingredient.amount * displayedServings / originalRecipe.servings)} ${ingredient.unit} · `}{ingredient.item}</li>)}</ul>
+      <ul>{(originalRecipe.kitchenIngredients ?? originalRecipe.ingredients).map((ingredient,index) => <li key={index}>{formatRecipeIngredient(ingredient, displayedServings, originalRecipe.servings, locale)}</li>)}</ul>
       <p>{originalRecipe.instructionsText.join(' ')}</p>
     </div> : null}
     <p data-gk-differences="amounts-and-preparation"><strong>{t.details}</strong></p>

@@ -30,6 +30,7 @@ export interface RecipeIngredient {
   unit: string;
   item: string;
   note?: string;
+  eggSingular?: string;
 }
 
 export interface RecipeImage {
@@ -64,6 +65,9 @@ export interface RecipeEntry {
   description: string;
   seoDescription?: string;
   ingredients: RecipeIngredient[];
+  /** Public kitchen amounts and names when different from the source accounting inputs. */
+  kitchenIngredients?: RecipeIngredient[];
+  ingredientPreparation?: string[];
   instructionsHtml: string;
   instructionStepsHtml?: string[] | null;
   instructionsText: string[];

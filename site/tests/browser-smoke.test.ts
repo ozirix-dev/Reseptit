@@ -41,6 +41,10 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.ok(await noJs.locator(".recipe-card-grid .recipe-card").count() > 0);
     assert.equal(await noJs.getByRole("search").count(), 0);
     assert.ok(await noJs.locator(".recipe-card-grid .recipe-card__link").count() > 0);
+    await noJs.goto(`${base}/avokado-perunasampylat/`);
+    const staticIngredients = await noJs.locator(".ingredient-list li").allTextContents();
+    assert.deepEqual(staticIngredients.slice(0, 3), ["180 g keitettyä jauhoista perunaa", "100 g kypsän avokadon hedelmälihaa", "2 kananmunaa"]);
+
     await noJs.goto(`${base}/kermainen-lohipata/`);
     assert.equal(await noJs.locator(".recipe-actions button, .serving-control button, .recipe-steps input").count(), 0);
     assert.ok(await noJs.locator(".rich-text ol li").count() > 0);
@@ -156,30 +160,71 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       assert.match(await page.locator('meta[name="robots"]').getAttribute("content") ?? "", /noindex\s*,\s*nofollow/, `${methodPage.locale}: no-slash route keeps staging noindex`);
     }
 
-    // Ingredient notes should stay readable inline, including preparation and frying instructions.
-    const ingredientNotes = [
-      { locale: "fi", route: "/medu-vada/", preparation: "kuorittuja ja halkaistuja", scoped: "Perusohje (4 annosta)" },
-      { locale: "en", route: "/en/recipes/medu-vada/", preparation: "peeled and split", scoped: "Original recipe (4 servings)" },
-      { locale: "sv", route: "/sv/recept/medu-vada/", preparation: "skalas och delas", scoped: "Grundrecept (4 portioner)" },
-      { locale: "th", route: "/th/recipes/medu-vada/", preparation: "ปอกเปลือกและแยกออก", scoped: "สูตรเดิมสำหรับ 4 ที่" },
+    const rollRecipes = [
+      { locale: "fi", route: "/avokado-perunasampylat/", baseEgg: "2 kananmunaa", baseYolk: "1 keltuainen, voiteluun", nextEgg: "2 ⅓ kananmunaa", nextYolk: "1 ⅙ keltuaista, voiteluun", doubleEgg: "4 kananmunaa", doubleYolk: "2 keltuaista, voiteluun" },
+      { locale: "en", route: "/en/recipes/avokado-perunasampylat/", baseEgg: "2 eggs", baseYolk: "1 egg yolk, for brushing", nextEgg: "2 ⅓ eggs", nextYolk: "1 ⅙ egg yolks, for brushing", doubleEgg: "4 eggs", doubleYolk: "2 egg yolks, for brushing" },
+      { locale: "sv", route: "/sv/recept/avokado-perunasampylat/", baseEgg: "2 ägg", baseYolk: "1 äggula, till pensling", nextEgg: "2 ⅓ ägg", nextYolk: "1 ⅙ äggulor, till pensling", doubleEgg: "4 ägg", doubleYolk: "2 äggulor, till pensling" },
+      { locale: "th", route: "/th/recipes/avokado-perunasampylat/", baseEgg: "ไข่ไก่ 2 ฟอง", baseYolk: "ไข่แดง 1 ฟอง สำหรับทาหน้า", nextEgg: "ไข่ไก่ 2 ⅓ ฟอง", nextYolk: "ไข่แดง 1 ⅙ ฟอง สำหรับทาหน้า", doubleEgg: "ไข่ไก่ 4 ฟอง", doubleYolk: "ไข่แดง 2 ฟอง สำหรับทาหน้า" },
+      { locale: "fi", route: "/avokado-perunasampylat-pellilla/", baseEgg: "1 kananmuna", baseYolk: null, nextEgg: "1 ⅙ kananmunaa", nextYolk: null, doubleEgg: "2 kananmunaa", doubleYolk: null },
     ] as const;
-    for (const { locale, route, preparation, scoped } of ingredientNotes) {
-      await page.goto(`${base}${route}`);
+    for (const recipe of rollRecipes) {
+      await page.goto(`${base}${recipe.route}`);
       const rows = page.locator(".ingredient-list li");
-      assert.ok((await rows.first().innerText()).endsWith(` (${preparation})`));
-      assert.equal(await rows.last().locator("*").count(), 0);
-      assert.ok(!(await rows.last().innerText()).includes(scoped));
-      await page.getByRole("button", { name: recipeUi[locale].increase, exact: true }).click();
-      assert.ok((await rows.last().innerText()).includes(`(${scoped} · `));
-      assert.ok((await rows.first().innerText()).endsWith(` (${preparation})`));
+      const increased = page.getByRole("button", { name: recipeUi[recipe.locale].increase, exact: true });
+      const decreased = page.getByRole("button", { name: recipeUi[recipe.locale].decrease, exact: true });
+      const eggLines = async (egg: string, yolk: string | null) => {
+        assert.equal(await rows.nth(2).innerText(), egg, recipe.route);
+        if (yolk) assert.equal(await rows.nth(6).innerText(), yolk, recipe.route);
+      };
+      await eggLines(recipe.baseEgg, recipe.baseYolk);
+      await increased.click();
+      await eggLines(recipe.nextEgg, recipe.nextYolk);
+      assert.ok(await page.getByText(toolUi[recipe.locale].eggFraction, { exact: true }).isVisible());
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+      const structured = JSON.parse((await page.locator("#recipe-jsonld").textContent())!);
+      assert.equal(structured.recipeIngredient[2], recipe.baseEgg);
+      assert.equal(structured.recipeYield, "6");
+      if (recipe.baseYolk) assert.equal(structured.recipeIngredient[6], recipe.baseYolk);
+      await page.emulateMedia({ media: "print" });
+      await eggLines(recipe.nextEgg, recipe.nextYolk);
+      assert.match(await page.locator(".print-servings").innerText(), /7/);
+      await page.emulateMedia({ media: "screen" });
+      for (let i = 7; i < 12; i++) await increased.click();
+      await eggLines(recipe.doubleEgg, recipe.doubleYolk);
+      assert.equal(await page.getByText(toolUi[recipe.locale].eggFraction, { exact: true }).count(), 0);
+      for (let i = 12; i > 6; i--) await decreased.click();
+      await eggLines(recipe.baseEgg, recipe.baseYolk);
     }
 
-    await page.goto(`${base}/avokado-perunasampylat-pellilla/`);
-    const egg = page.locator(".ingredient-list li").filter({ hasText: "kananmunaa ilman kuorta" });
-    assert.equal(await egg.innerText(), "55 g kananmunaa ilman kuorta");
-    await page.getByRole("button", { name: recipeUi.fi.increase, exact: true }).click();
-    assert.equal(await egg.innerText(), "64,17 g kananmunaa ilman kuorta");
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto(`${base}/gluteeniton-uunipannukakku/`);
+    const milk = page.locator(".ingredient-list li").first();
+    const increaseFi = page.getByRole("button", { name: recipeUi.fi.increase, exact: true });
+    assert.equal(await milk.innerText(), "800 g Valio kevytmaitoa, 1,5 % rasvaa");
+    await increaseFi.click();
+    assert.match(await milk.innerText(), /Valio kevytmaitoa, 1,5 % rasvaa$/);
+    assert.doesNotMatch(await milk.innerText(), /8 dl/);
+    await page.goto(`${base}/gluteeniton-perunajauhokakkupohja/`);
+    await increaseFi.click();
+    const flour = page.locator(".ingredient-list li").filter({ hasText: "Finnamyl Helmi" });
+    assert.match(await flour.innerText(), /500 g pakkaus EAN 6430024961201/);
+    await page.goto(`${base}/bataatti-mustikkakakku/`);
+    assert.equal(await page.locator(".ingredient-list li").nth(1).innerText(), "5 isoa kananmunaa");
+
+    await page.goto(`${base}/medu-vada/`);
+    assert.match(await page.locator(".ingredient-list li").first().innerText(), /urad-dal-linssejä, kuorittuja ja halkaistuja/);
+    assert.equal(await page.locator(".ingredient-list li").last().innerText(), "öljyä friteeraukseen");
+    assert.ok(await page.getByText(/Varaa friteeraukseen noin litra öljyä/).isVisible());
+    assert.ok(await page.getByText(/ravintoarviossa friteerausöljyä oletetaan imeytyvän 50 g/).isVisible());
+    await increaseFi.click();
+    assert.equal(await page.locator(".ingredient-list li").last().innerText(), "öljyä friteeraukseen");
+    await page.goto(`${base}/idli-sambar/`);
+    const water = page.locator(".ingredient-list li").filter({ hasText: /^vettä, tarpeen mukaan/ });
+    assert.equal(await water.innerText(), "vettä, tarpeen mukaan");
+    await increaseFi.click();
+    assert.equal(await water.innerText(), "vettä, tarpeen mukaan");
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+    await page.setViewportSize({ width: 320, height: 800 });
 
     await page.goto(`${base}/kermainen-lohipata/`);
     await page.getByRole("button", { name: "Lisää annosmäärää", exact: true }).click();

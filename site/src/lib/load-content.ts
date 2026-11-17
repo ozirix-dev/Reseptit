@@ -61,9 +61,14 @@ export function parseRouteContent(value: unknown, route: string): RouteContent {
       !data.recipes.every(item => validCard(item) && validIngredients(item.ingredients) && isStrings(item.tags)) ||
       (data.recipe !== null && (!data.recipe || !validCard(data.recipe) || data.recipe.routePath !== data.path ||
         !validIngredients(data.recipe.ingredients) ||
+        (data.recipe.kitchenIngredients !== undefined && (!validIngredients(data.recipe.kitchenIngredients) ||
+          data.recipe.kitchenIngredients.length !== data.recipe.ingredients.length ||
+          !data.recipe.kitchenIngredients.every(item => isNullableNumber(item.amount) && typeof item.unit === "string" &&
+            (item.eggSingular === undefined || (typeof item.eggSingular === "string" && item.amount !== null))))) ||
         !data.recipe.ingredients.every(item => isNullableNumber(item.amount) && typeof item.unit === "string") ||
         typeof data.recipe.instructionsHtml !== "string" || typeof data.recipe.notesHtml !== "string" ||
         !isStrings(data.recipe.instructionsText) ||
+        (data.recipe.ingredientPreparation !== undefined && !isStrings(data.recipe.ingredientPreparation)) ||
         (data.recipe.instructionStepsHtml != null && !isStrings(data.recipe.instructionStepsHtml)) ||
         !data.recipe.nutrition || !["carbsNetG", "carbsTotalG", "proteinG", "fatG"].every(
           key => isNullableNumber(data.recipe!.nutrition[key as keyof NonNullable<RouteContent["recipe"]>["nutrition"]])) ||

@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useContent } from "@/lib/content";
 import { glycemicLoadPath, recipeIndexPath, recipeLocaleFromPath, recipeLocaleName, recipeUi } from "./recipe-i18n";
-import { formatIngredientAmount, nextServingCount } from "./servings";
+import { formatIngredientAmount, formatRecipeIngredient, hasFractionalEgg, ingredientNumberLocales, nextServingCount } from "./servings";
 import { toolUi } from "./recipe-tools";
 import { publishedGlycemicLoadForRecipe } from "./glycemic-load-display";
 import { sourceReviewNotice } from "./source-review-notices";
@@ -68,7 +68,8 @@ export function RecipePage() {
   const gkVariants = glycemicRecipe?.variants ?? [];
   const gkResult = glycemicRecipe?.result;
   const hasGkVariant = gkVariants.length > 0;
-  const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale];
+  const numberLocale = ingredientNumberLocales[recipe.locale];
+  const ingredients = recipe.kitchenIngredients ?? recipe.ingredients;
   const nutritionItems = (withholdNutrition ? [] : Object.entries(recipe.nutrition).filter(([, value]) => value !== null)) as [keyof typeof recipe.nutrition, number][];
   const glApprox = { fi: "noin ", en: "about ", sv: "cirka ", th: "ประมาณ " }[recipe.locale];
   const glUnit = { fi: "/ annos", en: "/ serving", sv: "/ portion", th: "/ หนึ่งที่" }[recipe.locale];
@@ -101,18 +102,17 @@ export function RecipePage() {
     <p className="print-servings">{tools.servings}: {servings}</p>
     <div className="recipe-layout">
       <section className="recipe-panel" aria-labelledby="recipe-ingredients-title"><div className="recipe-panel__heading"><h2 id="recipe-ingredients-title">{labels.ingredients}</h2><div className="serving-control"><span>{labels.servings}</span>{hydrated ? <button type="button" aria-label={labels.decrease} disabled={servings <= 1} onClick={() => { track("Adjust Servings"); setServings((value) => nextServingCount(value, -1)); }}>−</button> : null}<output aria-live="polite">{servings}</output>{hydrated ? <button type="button" aria-label={labels.increase} onClick={() => { track("Adjust Servings"); setServings((value) => nextServingCount(value, 1)); }}>+</button> : null}</div></div>
-        <ul className="ingredient-list">{recipe.ingredients.map((ingredient, index) => {
-          const amount = formatIngredientAmount(ingredient.amount, servings, recipe.servings, numberLocale);
-          const quantity = amount ? `${amount}${ingredient.unit ? ` ${ingredient.unit}` : ""} ` : "";
-          const note = ingredient.note?.trim();
-          const noteScope = note && servings !== recipe.servings && /\p{N}/u.test(note)
-            ? `${tools.originalIngredientNote(recipe.servings)} · `
-            : "";
-          return <li key={`${ingredient.item}-${index}`}>{quantity}{ingredient.item}{note ? ` (${noteScope}${note})` : null}</li>;
-        })}</ul>
+        <ul className="ingredient-list">{ingredients.map((ingredient, index) =>
+          <li key={`${ingredient.item}-${index}`}>{formatRecipeIngredient(ingredient, servings, recipe.servings, locale)}</li>)}</ul>
+        {ingredients.some(ingredient => hasFractionalEgg(ingredient, servings, recipe.servings))
+          ? <p>{tools.eggFraction}</p> : null}
       </section>
       <section className="recipe-panel" aria-labelledby="recipe-instructions"><h2 id="recipe-instructions" tabIndex={-1}>{labels.instructions}</h2>
         {servings !== recipe.servings ? <p className="recipe-disclosure recipe-scaled-note">{tools.scaled(recipe.servings)}</p> : null}
+        {recipe.ingredientPreparation?.length ? <div className="rich-text">
+          <h3>{tools.ingredientPreparation}</h3>
+          <ul>{recipe.ingredientPreparation.map(note => <li key={note}>{note}</li>)}</ul>
+        </div> : null}
         {hydrated && recipe.instructionStepsHtml?.length ? <><div className="step-controls"><p aria-live="polite">{tools.progress}: {completed.length}/{recipe.instructionStepsHtml.length}</p><button type="button" onClick={() => setCompleted([])}>{tools.reset}</button></div><div className="rich-text"><ol className="recipe-steps">{recipe.instructionStepsHtml.map((step, index) => <li key={index} data-complete={completed.includes(index)}><div><label className="recipe-step-toggle"><input type="checkbox" aria-label={`${tools.completed}: ${index + 1}`} checked={completed.includes(index)} onChange={(event) => { const checked = event.currentTarget.checked;
           if (checked && completed.length === 0) track("Start Cooking");
           if (checked && completed.length + 1 === recipe.instructionStepsHtml?.length) track("Complete Recipe");
