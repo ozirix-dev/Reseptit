@@ -68,6 +68,7 @@ const descriptions: LocalizedCopy = {
   },
   "japanilainen-soba-aamiaiskeitto": {
     fi: "Dashi maustaa sobanuudelikeiton, johon lisätään pinaattia ja kypsennetty kananmuna.",
+    th: "เส้นโซบะกับผักโขมในน้ำซุปผสมดาชิ เสิร์ฟพร้อมไข่ที่ลวกในน้ำซุป",
   },
   "kana-enchilada-kukkakaalivuoka": {
     fi: "Broileri ja kukkakaali paistetaan uunissa itse tehdyn limetti-chilisalsan, ranskankerman ja cheddarin kanssa.",
@@ -113,6 +114,9 @@ const descriptions: LocalizedCopy = {
   },
   "karibia-mango-limejogurtti": {
     fi: "Limemehu raikastaa kylmän mango-jogurttikulhon. Pinnalle ripotellaan kookoshiutaleita.",
+    en: "Lime brightens these chilled mango yogurt bowls, topped with coconut flakes.",
+    sv: "Lime ger frisk smak åt den kalla mangoyoghurten som toppas med kokosflingor.",
+    th: "โยเกิร์ตมะม่วงเย็น ๆ เติมน้ำมะนาวให้รสสดชื่น แล้วโรยมะพร้าวขูดแห้ง",
   },
   "karjalanpiirakat-riisipuurolla": {
     fi: "Ohut, rypytetty ruiskuori ympäröi maitoon keitettyä riisipuuroa. Määrien toimivuus odottaa koeleivontaa, ja Aito perinteinen tuote (APT) -vaatimusten täyttyminen on vielä tarkistamatta.",
@@ -355,6 +359,7 @@ const descriptions: LocalizedCopy = {
   },
   "pohjoisafrikkalainen-harcha-juustolla": {
     fi: "Mannasuurimotaikinasta taputellut leipäkiekot paistetaan pannulla ja tarjoillaan maustamattoman tuorejuuston kanssa.",
+    th: "ฮาร์ชาสไตล์แอฟริกาเหนือทำจากแป้งเซโมลินา จี่ในกระทะแล้วเสิร์ฟกับครีมชีส",
   },
   "pohjoisafrikkalainen-harissa-shakshuka": {
     fi: "Munat kypsyvät tomaatti-paprikapohjassa, jolle tuoreesta chilistä ja valkosipulista tehty harissa antaa potkua.",
