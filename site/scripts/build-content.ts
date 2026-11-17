@@ -287,7 +287,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     const dietTags = await reviewedDietTagsForSource(data.recipe_id, data.language, filePath, finnishSources.get(data.recipe_id));
     const instructionSteps = [...publicInstructions.matchAll(/^\s*\d+[.)]\s+(.+)$/gm)].map((match) => match[1].trim());
     const editorialDescription = publicRecipeDescription(data.recipe_id, data.url_slug, data.language);
-    const seoDescription = visibleHold || editorialDescription ? undefined : recipeSeoDescriptions[data.url_slug]?.[data.language];
+    const seoDescription = visibleHold ? undefined : recipeSeoDescriptions[data.url_slug]?.[data.language];
     recipes.push({
       kind: "recipe", recipeId: data.recipe_id, slug: data.url_slug, locale: data.language,
       title: publicRecipeTitle(data.recipe_id, data.language, data.title), category: data.category, ...(data.additional_categories?.length ? { additionalCategories: data.additional_categories } : {}), dietClass: data.diet_class ?? null, ...(dietTags.length ? { dietTags } : {}), ...(data.gluten_free === true ? { glutenFree: true } : {}), routePath: routeForRecipe(data.language, data.url_slug),

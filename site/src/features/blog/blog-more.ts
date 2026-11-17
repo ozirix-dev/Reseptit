@@ -204,7 +204,7 @@ export const moreBlogPosts: BlogPost[] = [
     "dateModified": "2026-11-17",
     "author": "Reseptit-toimitus",
     "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/annoskoon-mittaaminen.svg",
-    "imageAlt": "Keittiövaaka, kulho ja mitta-astioita",
+    "imageAlt": "Riisikulho keittiövaa’alla",
     "sections": [
       {
         "heading": "Valitse ensin mittausperuste",

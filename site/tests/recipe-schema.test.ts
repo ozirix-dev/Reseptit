@@ -207,7 +207,7 @@ test("published editorial copy reaches the recipe and JSON-LD without bypassing 
   assert.ok(muffins);
   assert.match(muffins.description, /pekonia, pinaattia ja cheddaria/);
   assert.equal(recipeJsonLd(muffins).description, muffins.description);
-  assert.equal(muffins.seoDescription, undefined);
+  assert.match(muffins.seoDescription ?? "", /pekonista, pinaatista ja cheddarista/);
   assert.match(muffins.notesHtml ?? "", /talteen otettu pekonirasva/);
   assert.doesNotMatch(muffins.instructionsHtml, /Syö kaikki luetellut/);
   const hold = "Älä valmista ruokaa tämän version mukaan.";

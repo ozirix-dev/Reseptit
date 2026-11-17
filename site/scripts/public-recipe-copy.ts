@@ -833,4 +833,3 @@ const pastaIngredientNotes: Readonly<Record<string, string>> = {
 export function publicIngredientNote(id: string, locale: RecipeLocale, note: string): string {
   return id === "marry-me-kanapasta" && locale === "fi" ? pastaIngredientNotes[note] ?? note : note;
 }
-

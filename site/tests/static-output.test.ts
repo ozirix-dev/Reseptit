@@ -401,7 +401,7 @@ test("localized central GL pages render complete SEO metadata with canonical and
   const pages = [
     { route: "glykeeminen-kuorma", locale: "fi", ogLocale: "fi_FI", title: "Reseptien glykeeminen kuorma (GK) | Recipavo", description: "Löydä reseptien glykeemisen kuorman (GK) arviot, luotettavuustiedot ja tarvittaessa tarkat laskentalähteet.", canonical: `${siteTarget.baseUrl}/glykeeminen-kuorma/` },
     { route: "en/glycemic-load", locale: "en", ogLocale: "en_GB", title: "Glycemic load (GL) of recipes | Recipavo", description: "Explore calculated glycemic load estimates for recipes, their reliability and detailed sources.", canonical: `${siteTarget.baseUrl}/en/glycemic-load/` },
-    { route: "sv/glykemisk-belastning", locale: "sv", ogLocale: "sv_SE", title: "Receptens glykemiska belastning (GL) | Recipavo", description: "Hitta uppskattningar av receptens glykemiska belastning, säkerhet och detaljerade källor.", canonical: `${siteTarget.baseUrl}/sv/glykemisk-belastning/` },
+    { route: "sv/glykemisk-belastning", locale: "sv", ogLocale: "sv_SE", title: "Receptens glykemiska belastning (GL) | Recipavo", description: "Hitta uppskattningar av receptens glykemiska belastning, tillförlitlighet och detaljerade källor.", canonical: `${siteTarget.baseUrl}/sv/glykemisk-belastning/` },
     { route: "th/glycemic-load", locale: "th", ogLocale: "th_TH", title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | Recipavo", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ", canonical: `${siteTarget.baseUrl}/th/glycemic-load/` },
   ];
   for (const page of pages) {
@@ -699,7 +699,7 @@ test('all twelve candidate recipe pages show the modeled label and carbohydrate 
 test('modeled calculation details disclose omissions in every locale and retain omission-free controls',async()=>{
   const copy={
     fi:{omitted:'Dokumentoituja pieniä osuuksia on jätetty pois',none:'Ei pieniä pois jätettyjä osuuksia',method:'Mahdolliset pienet poisrajaukset',path:'glykeeminen-kuorma',oldMethod:'Tässä polussa kaikki imeytyvät hiilihydraatit lasketaan mukaan eikä pieniä osuuksia jätetä pois.'},
-    en:{omitted:'Documented small portions are omitted',none:'no small portions omitted',method:'Any small portions omitted',path:'en/glycemic-load',oldMethod:'This path includes all available carbohydrate and omits no small portions.'},
+    en:{omitted:'Small amounts of available carbohydrate are left out',none:'The estimate includes all available carbohydrate',method:'Each recipe shows the total amount of available carbohydrate left out',path:'en/glycemic-load',oldMethod:'This path includes all available carbohydrate and omits no small portions.'},
     sv:{omitted:'Dokumenterade små mängder har utelämnats',none:'utan utelämnade små mängder',method:'Eventuella utelämnade små mängder',path:'sv/glykemisk-belastning',oldMethod:'Här räknas alla tillgängliga kolhydrater med utan utelämnade små mängder.'},
     th:{omitted:'การคำนวณนี้ไม่รวมส่วนผสมปริมาณเล็กน้อย',none:'โดยไม่ตัดส่วนเล็กน้อยออก',method:'หากมีส่วนผสมปริมาณเล็กน้อยที่ไม่รวมในการคำนวณ',path:'th/glycemic-load',oldMethod:'แนวทางนี้รวมคาร์โบไฮเดรตที่ใช้ได้ทั้งหมดโดยไม่ตัดส่วนเล็กน้อยออก'},
   };
@@ -714,6 +714,10 @@ test('modeled calculation details disclose omissions in every locale and retain 
     }
     assert.ok(omitted>=10,locale+': all ten new omission cases covered');assert.ok(complete>0,locale+': real omission-free control covered');
     const method=await readFile(path.join(dist,expected.path,'index.html'),'utf8');assert.ok(method.includes(expected.method),locale);assert.ok(!method.includes(expected.oldMethod),locale+': central method is consistent');
+    if (locale === 'en') {
+      assert.match(method, /without a matching GI value.*less than 1 g of available carbohydrate per serving.*below 2 g per serving/);
+      assert.match(method, /The amount left out is shown/);
+    }
   }
 });
 
