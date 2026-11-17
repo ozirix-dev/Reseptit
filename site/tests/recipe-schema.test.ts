@@ -6,12 +6,35 @@ import { assertQuantifiedCriticalIngredients, assertUniqueRecipes, assertSnackPu
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { assertGlutenFreeReviewRecord } from "../scripts/gluten-free-review";
 import { siteContent } from "../src/generated/content.generated";
+import { reviewedEggCounts, weighedEggRows } from "../scripts/reviewed-egg-counts";
 import { recipeJsonLd } from "../src/features/recipes/schema";
 import { sourceReviewNotice, sourceReviewNotices } from "../src/features/recipes/source-review-notices";
 
 test("Recipe yield is Schema.org Text and preserves the source serving count", () => {
   for (const recipe of siteContent.recipes) {
     assert.equal(recipeJsonLd(recipe).recipeYield, String(recipe.servings));
+  }
+});
+
+test("kitchen egg counts preserve the original weighed inputs in all published languages", () => {
+  for (const recipe of siteContent.recipes) {
+    const kitchen = recipe.kitchenIngredients ?? recipe.ingredients;
+    const json = recipeJsonLd(recipe);
+    const structured = json.recipeIngredient as string[];
+    for (const [index, measurement] of Object.entries(reviewedEggCounts[recipe.recipeId] ?? {})) {
+      assert.ok(measurement);
+      const [grams, count] = measurement;
+      const row = Number(index);
+      assert.equal(recipe.ingredients[row].amount, grams, `${recipe.recipeId}/${recipe.locale}`);
+      assert.equal(kitchen[row].amount, count);
+      assert.ok(kitchen[row].eggSingular);
+      assert.ok(!/\b(?:g|กรัม)\b/u.test(structured[row]));
+    }
+    for (const row of weighedEggRows[recipe.recipeId] ?? []) {
+      assert.equal(kitchen[row].unit, recipe.ingredients[row].unit);
+      assert.equal(kitchen[row].amount, recipe.ingredients[row].amount);
+      assert.equal(kitchen[row].eggSingular, undefined);
+    }
   }
 });
 

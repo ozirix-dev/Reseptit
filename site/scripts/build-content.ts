@@ -1,6 +1,7 @@
 import { recipeSeoDescriptions } from "./recipe-seo-descriptions";
 import { applyCopyEdits, reviewedRecipeCopy, reviewedImageNote } from "./public-recipe-copy-r2";
-import { projectPublicRecipeIngredient, projectPublicRecipeMethodCopy, publicIngredientNote, publicRecipeDescription, publicRecipeTitle } from "./public-recipe-copy";
+import { projectPublicRecipeMethodCopy, publicIngredientNote, publicRecipeDescription, publicRecipeTitle } from "./public-recipe-copy";
+import { projectEggMethod, projectIngredientList } from "./public-ingredient-list";
 import { siteTarget } from "../src/content/site-target";
 import { recipeDifficultyLabel } from "../src/features/recipes/recipe-i18n";
 import { createHash } from "node:crypto";
@@ -233,6 +234,11 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
   }
   const finnishBySlug = new Map(published.filter(({data}) => data.language === "fi")
     .map(({data}) => [data.url_slug, data.recipe_id]));
+  const finnishIngredients = new Map(published.filter(({ data }) => data.language === "fi")
+    .map(({ data }) => [data.recipe_id, data.ingredients.map(ingredient => ({
+      ...ingredient,
+      ...(ingredient.note ? { note: publicIngredientNote(data.recipe_id, "fi", ingredient.note) } : {}),
+    }))]));
   const localizedRoutes = new Map(published.map(({data}) =>
     [data.recipe_id + ":" + data.language, routeForRecipe(data.language, data.url_slug)]));
   for (const { filePath, relativePath, parsed, data } of published) {
@@ -284,15 +290,29 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     const methodCopy = projectPublicRecipeMethodCopy(data.recipe_id, data.language, instructions, notes);
     const publicMethod = applyCopyEdits(methodCopy.instructions, copy?.method);
     const reviewedNotes = reviewedImageNote(applyCopyEdits(methodCopy.notes, copy?.notes), data.language);
-    const publicNotes = [reviewedNotes, copy?.nutritionBasis].filter(Boolean).join("\n\n");
-    const publicInstructions = visibleHold?.instructions ?? publicMethod;
-    const publicIngredients = data.ingredients.map(ingredient => projectPublicRecipeIngredient(data.recipe_id, data.language, {
+    const publicInstructions = visibleHold?.instructions ?? projectEggMethod(data.recipe_id, data.language, publicMethod);
+    const publicIngredients = data.ingredients.map(ingredient => ({
       ...ingredient,
       item: applyCopyEdits(ingredient.item, copy?.ingredientItem),
       ...(ingredient.note ? {
         note: applyCopyEdits(publicIngredientNote(data.recipe_id, data.language, ingredient.note), copy?.ingredientNote),
       } : {}),
     }));
+    const ingredientList = projectIngredientList(data.recipe_id, data.language, publicIngredients,
+      finnishIngredients.get(data.recipe_id) ?? []);
+    const kitchenIngredients = ingredientList.items.some((item, index) => {
+      const original = publicIngredients[index];
+      return item.amount !== original.amount || item.unit !== original.unit || item.item !== original.item ||
+        item.note !== original.note || item.eggSingular !== undefined;
+    }) ? ingredientList.items : undefined;
+    const nutritionNotesTitle = {
+      fi: "Ainesten ravintolaskenta", en: "Ingredient nutrition estimates",
+      sv: "Näringsberäkning för ingredienser", th: "การคำนวณโภชนาการของวัตถุดิบ",
+    }[data.language];
+    const ingredientNutrition = ingredientList.nutrition.length
+      ? `### ${nutritionNotesTitle}\n\n${ingredientList.nutrition.map(note => `- ${note.replace(/\s+/g, " ")}`).join("\n")}`
+      : "";
+    const publicNotes = [reviewedNotes, copy?.nutritionBasis, ingredientNutrition].filter(Boolean).join("\n\n");
     const dietTags = await reviewedDietTagsForSource(data.recipe_id, data.language, filePath, finnishSources.get(data.recipe_id));
     const instructionSteps = [...publicInstructions.matchAll(/^\s*\d+[.)]\s+(.+)$/gm)].map((match) => match[1].trim());
     const seoDescription = visibleHold ? undefined : recipeSeoDescriptions[data.url_slug]?.[data.language];
@@ -306,6 +326,8 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
         hold: visibleHold?.description, editorial: editorialDescription, fallback: seoDescription,
       }),
       ingredients: publicIngredients,
+      ...(kitchenIngredients ? { kitchenIngredients } : {}),
+      ...(!visibleHold && ingredientList.preparation.length ? { ingredientPreparation: ingredientList.preparation } : {}),
       ...(seoDescription ? { seoDescription } : {}),
       instructionsHtml: await renderSafeMarkdown(publicInstructions),
       instructionStepsHtml: await renderInstructionSteps(publicInstructions),

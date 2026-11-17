@@ -3,7 +3,8 @@ import { RecipeCopyright } from "./recipe-copyright";
 
 export const toolUi = {
   fi: {
-    originalIngredientNote: (base: number) => `Perusohje (${base === 1 ? "1 annos" : `${base} annosta`})`,
+    ingredientPreparation: "Ainesten valmistelu",
+    eggFraction: "Jos tarvitset osan munasta, sekoita muna tasaiseksi ja käytä tarvittava osuus. Tee samoin keltuaiselle tai valkuaiselle.",
     scaled: (base: number) => `Aineslista on skaalattu. Ohjeen tekstissä mainitut määrät koskevat ${base} annosta. Kypsennysaika ei skaalaudu suoraan annosmäärän mukaan.`,
     moreFilters: "Lisäsuodattimet",
     jump: "Siirry valmistusohjeeseen", print: "Tulosta resepti", completed: "Vaihe valmis", reset: "Nollaa työvaiheet", progress: "Valmiita työvaiheita",
@@ -19,7 +20,8 @@ export const toolUi = {
     feedback: "Ilmoita korjattavasta kohdasta GitHubissa", servings: "Tulosteen annosmäärä",
   },
   en: {
-    originalIngredientNote: (base: number) => `Original recipe (${base === 1 ? "1 serving" : `${base} servings`})`,
+    ingredientPreparation: "Prepare the ingredients",
+    eggFraction: "For a fraction of an egg, beat it and use the amount shown. Do the same for a yolk or white.",
     scaled: (base: number) => `The ingredient list has been scaled. Quantities written in the method refer to ${base} servings. Cooking time does not scale directly with the number of servings.`,
     moreFilters: "More filters",
     jump: "Jump to method", print: "Print recipe", completed: "Step complete", reset: "Reset steps", progress: "Completed steps",
@@ -35,7 +37,8 @@ export const toolUi = {
     feedback: "Report a correction on GitHub", servings: "Servings in this printout",
   },
   sv: {
-    originalIngredientNote: (base: number) => `Grundrecept (${base === 1 ? "1 portion" : `${base} portioner`})`,
+    ingredientPreparation: "Förbered ingredienserna",
+    eggFraction: "Om du behöver en del av ett ägg, vispa ihop det och använd den angivna andelen. Gör likadant med äggula eller äggvita.",
     scaled: (base: number) => `Ingredienslistan har räknats om. Mängder i tillagningstexten gäller ${base} portioner. Tillagningstiden ändras inte proportionellt med antalet portioner.`,
     moreFilters: "Fler filter",
     jump: "Till tillagningen", print: "Skriv ut receptet", completed: "Steget är klart", reset: "Återställ stegen", progress: "Klara steg",
@@ -51,7 +54,8 @@ export const toolUi = {
     feedback: "Rapportera en rättelse på GitHub", servings: "Portioner i utskriften",
   },
   th: {
-    originalIngredientNote: (base: number) => `สูตรเดิมสำหรับ ${base} ที่`,
+    ingredientPreparation: "เตรียมวัตถุดิบ",
+    eggFraction: "หากใช้ไข่ไม่เต็มฟอง ให้ตีไข่ให้เข้ากันแล้วตวงตามสัดส่วนที่ระบุ ใช้วิธีเดียวกันกับไข่แดงหรือไข่ขาว",
     scaled: (base: number) => `ปรับปริมาณในรายการวัตถุดิบแล้ว ปริมาณที่ระบุในข้อความวิธีทำยังเป็นปริมาณสำหรับ ${base} ที่ เวลาในการปรุงไม่ได้เปลี่ยนตามสัดส่วนของจำนวนที่โดยตรง`,
     moreFilters: "ตัวกรองเพิ่มเติม",
     jump: "ไปที่วิธีทำ", print: "พิมพ์สูตรอาหาร", completed: "ทำขั้นตอนนี้แล้ว", reset: "ล้างเครื่องหมายขั้นตอน", progress: "ขั้นตอนที่ทำแล้ว",

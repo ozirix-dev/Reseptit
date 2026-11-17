@@ -1,4 +1,5 @@
 import type { RecipeEntry } from "../../types/content";
+import { formatRecipeIngredient } from "./servings";
 import { withholdF25Nutrition } from "./f25-nutrition-withhold";
 
 export function recipeJsonLd(recipe: RecipeEntry): Record<string, unknown> {
@@ -12,9 +13,9 @@ export function recipeJsonLd(recipe: RecipeEntry): Record<string, unknown> {
     keywords: recipe.tags.length ? recipe.tags.join(", ") : undefined,
     ...(recipe.image ? { image: [recipe.image.src] } : {}),
     recipeYield: String(recipe.servings),
-    recipeIngredient: recipe.ingredients.map((item) => [item.amount, item.unit, item.item, item.note]
-      .filter((value) => value !== null && value !== undefined && value !== "").join(" ")),
-    recipeInstructions: recipe.instructionsText.map((text) => ({ "@type": "HowToStep", text })),
+    recipeIngredient: (recipe.kitchenIngredients ?? recipe.ingredients).map(item => formatRecipeIngredient(item, recipe.servings, recipe.servings, recipe.locale)),
+    recipeInstructions: [...(recipe.ingredientPreparation ?? []), ...recipe.instructionsText]
+      .map(text => ({ "@type": "HowToStep", text })),
     totalTime: recipe.timeTotalMin ? `PT${recipe.timeTotalMin}M` : undefined,
     ...(Object.keys(nutrition).length ? { nutrition: { "@type": "NutritionInformation", ...nutrition } } : {}),
   };
