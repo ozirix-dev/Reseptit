@@ -66,7 +66,7 @@ Keso och grekisk yoghurt mosas till en mjuk kakmassa. Kakao ger den grundlösa k
 
 - **Allergener** · Innehåller mjölk och ägg.
 - Videon nämner 250 g keso, 150 g yoghurt, 2 ägg och en stektemperatur på 160 °C. Fotot på den färdiga tårtan visar också det mörka bottenlagret. Instruktionerna följer de fem ingredienserna som nämns i videon och ger en bottenlös kaka. [Cravique Studios Facebook-rulle](https://www.facebook.com/reel/1898431937811356)
-- Mängderna kakao och honung är uppskattningar. Rättens storlek, antalet portioner, gräddningstiden och kyltiderna är receptets praktiska dimensioner. Gräddningstiden är en uppskattning. [Recept Reels ingrediens recensioner](https://recipe-reels.com/recipes/1454)
+- Mängderna kakao och honung är uppskattningar. Formens storlek, antalet portioner, gräddningstiden och tiderna för avsvalning och kylning har valts för det här receptet. Gräddningstiden är en uppskattning. [Recept Reels ingrediens recensioner](https://recipe-reels.com/recipes/1454)
 - Innertemperaturen baseras på tillagningsinstruktionerna för äggrätter. [FoodSafety.gov](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)
 - Bakning och kylning jämfördes med motsvarande keso-kakaokaka. [Jämförelseguide](https://divaliciousrecipes.com/chocolate-cottage-cheese-cheesecake/)
 - Honung ges inte till barn under ett år.

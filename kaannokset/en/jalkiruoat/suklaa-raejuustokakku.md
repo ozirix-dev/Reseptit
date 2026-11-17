@@ -66,7 +66,7 @@ Cottage cheese and Greek yogurt are pureed into a soft cake mass. Cocoa gives th
 
 - **Allergens** · Contains milk and egg.
 - The video mentions 250 g of cottage cheese, 150 g of yogurt, 2 eggs and a frying temperature of 160 °C. The photo of the finished cake also shows the dark bottom layer. The instructions follow the five ingredients mentioned in the video and produce a bottomless cake. [Cravique Studio's Facebook reel](https://www.facebook.com/reel/1898431937811356)
-- The amounts of cocoa and honey are estimates. The size of the dish, the number of servings, the baking time and the cooling times are the practical dimensions of the recipe. Baking time is an estimate. [Recipe Reels ingredient reviews](https://recipe-reels.com/recipes/1454)
+- The amounts of cocoa and honey are estimates. The pan size, number of servings, baking time and cooling times were chosen for this recipe. Baking time is an estimate. [Recipe Reels ingredient reviews](https://recipe-reels.com/recipes/1454)
 - The internal temperature is based on the cooking instructions for egg dishes. [FoodSafety.gov](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)
 - Baking and cooling were compared to the corresponding cottage cheese-cocoa cake. [Comparison guide](https://divaliciousrecipes.com/chocolate-cottage-cheese-cheesecake/)
 - Honey is not given to children under one year old.
