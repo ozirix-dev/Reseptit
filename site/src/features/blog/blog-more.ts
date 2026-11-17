@@ -198,7 +198,7 @@ export const moreBlogPosts: BlogPost[] = [
     "routePath": "/ruokaopas/annoskoon-mittaaminen/",
     "title": "Annoskoko grammoina: miksi raakapaino ja kypsäpaino eivät ole sama asia?",
     "seoTitle": "Annoskoko grammoina: miksi raakapaino ja kypsäpaino eivät ole sama asia? | Ruokaopas",
-    "excerpt": "Riisi imee keittäessä vettä, joten 100 g kuivaa riisiä vastaa eri määrää ruokaa kuin 100 g kypsää riisiä. Valitse laskuriin punnitusta vastaava tietue.",
+    "excerpt": "Riisi imee keittäessä vettä, joten 100 g kuivaa riisiä vastaa eri määrää ruokaa kuin 100 g kypsää riisiä. Valitse laskurista ruoka siinä muodossa, jossa punnitsit sen.",
     "category": "Ravitsemus ja GK",
     "datePublished": "2026-11-06",
     "dateModified": "2026-11-17",
@@ -210,14 +210,14 @@ export const moreBlogPosts: BlogPost[] = [
         "heading": "Valitse ensin mittausperuste",
         "paragraphs": [
           "Kuivatuotteisiin merkitty 100 gramman ravintoarvo voi tarkoittaa tuotetta ennen kypsennystä. Vettä imevän ruoan paino muuttuu kypsentäessä, vaikka samasta alkuperäisestä raaka-aineesta olisi edelleen kyse.",
-          "Reseptilaskennassa on päätettävä, kirjataanko raaka-ainemäärät ennen kypsennystä vai mitataanko valmis annos ja käytetään valmiin ruoan tietuetta. Näitä ei pidä vaihtaa kesken laskun."
+          "Valitse laskurista kuivan riisin ravintoarvot, jos punnitsit riisin ennen keittämistä. Käytä keitetyn riisin ravintoarvoja, jos punnitsit riisin kypsänä."
         ]
       },
       {
         "heading": "Käytä vaakaa oikeassa vaiheessa",
         "paragraphs": [
           "Punnitse ainekset silloin, kun reseptin määrä on tarkoitettu mitattavaksi. Jos resepti käyttää kuorittua perunaa, älä syötä saman määrän arvoksi kuorineen punnittua kokonaista perunaa.",
-          "Kotimittauksessa helppo menetelmä on punnita koko valmistunut erä, jakaa se todellisiin annoksiin ja kirjata yhdelle annokselle sen osuus. Tämä edellyttää, että laskennan lähtötiedot on sidottu samaan erään."
+          "Jos laskit koko erän ravintoarvot aineksista, punnitse valmis erä ja oma annoksesi. Jos annoksesi painaa neljäsosan koko erästä, kirjaa sille neljäsosa erän ravintoarvoista."
         ]
       },
       {
@@ -228,7 +228,7 @@ export const moreBlogPosts: BlogPost[] = [
         ]
       },
       {
-        "heading": "Miksi tämä liittyy Recipavoon?",
+        "heading": "Merkitse punnitustapa ruokapäiväkirjaan",
         "paragraphs": [
           "Merkitse ruokapäiväkirjaan, punnitsitko ruoan raakana vai kypsänä. Käytä laskurissa samaa painoperustetta.",
           "Ruokaviraston mukaan ravintoarvot esitetään yleensä 100 g:aa tai 100 ml:aa kohti. Annosarvokin on mahdollinen, kun annos on määritelty."
@@ -269,7 +269,7 @@ export const moreBlogPosts: BlogPost[] = [
         "heading": "Ensimmäinen ero on usein elintarvikkeen valinta",
         "paragraphs": [
           "Yhdessä tietokannassa on merkintä raa'alle tuotteelle, toisessa keitetylle. Myös rasvapitoisuus, tuotenimi, lajike ja valmistajan resepti voivat poiketa toisistaan.",
-          "Pelkkä teksti kana, riisi tai jogurtti ei riitä yksiselitteiseen vertailuun. Kunkin laskurin pitäisi kertoa täsmälleen, mitä tietuetta se käytti."
+          "Tarkista, käyttävätkö laskurit esimerkiksi kuivan vai keitetyn riisin arvoja ja onko jogurtin rasvapitoisuus sama."
         ]
       },
       {
@@ -289,7 +289,7 @@ export const moreBlogPosts: BlogPost[] = [
       {
         "heading": "Näin vertailet laskureita järkevästi",
         "paragraphs": [
-          "Kirjaa ensin ainesosien grammapainot ja raaka/kypsä-tila, valitse vastaavat tietueet ja tarkastele laskennan lähteitä. Vertaa vasta tämän jälkeen tuloksia.",
+          "Kirjaa kunkin aineksen paino grammoina ja merkitse, punnitsitko sen raakana vai kypsänä. Valitse laskurista vastaavat ruoat ja tarkista tietojen lähteet ennen tulosten vertailua.",
           "Ruokavirasto sallii ravintoarvojen perustuvan analyysiin tai hyväksyttäviin ainesosatietoihin pohjautuviin laskelmiin. Lähdenäytön laadulla on siis väliä."
         ]
       }
@@ -474,7 +474,7 @@ export const moreBlogPosts: BlogPost[] = [
       {
         "heading": "Mitä kannattaa vertailla oikeasti?",
         "paragraphs": [
-          "Vertaa pohjan painoa, kypsennysaikaa, käsiteltävyyttä, kuormitettavuutta ja makua. Ravintoarvoissa tarkastele samaa annoskokoa — ei esimerkiksi kokonaista ohutta pizzaa vastaan puolikasta paksupohjaista.",
+          "Vertaa pohjan painoa, paistoaikaa ja makua. Kokeile myös, kuinka helppo pohjaa on käsitellä ja kuinka hyvin se kestää täytteet. Ravintoarvoissa tarkastele samaa annoskokoa — ei esimerkiksi kokonaista ohutta pizzaa vastaan puolikasta paksupohjaista.",
           "Vertailu perustuu aineksiin ja valmistustapoihin. Pohjia ei ole koepaistettu tai maistettu rinnakkain. Katso paisto-ohje ja ravintoarvio valitsemastasi reseptistä."
         ]
       }
@@ -518,7 +518,7 @@ export const moreBlogPosts: BlogPost[] = [
     "imageAlt": "Sitruunaruoho, galangal, chiliä ja limetti",
     "sections": [
       {
-        "heading": "Kolme samannäköistä mutta eri tarkoituksen aromia",
+        "heading": "Sitruunaruoho, galangal ja makrutlimetin lehdet",
         "paragraphs": [
           "Sitruunaruoho antaa ruokiin sitrusmaista tuoksua ilman samaa happamuutta kuin limetin mehu. Galangal on juurakko, jota käytetään esimerkiksi keittojen maustamiseen; sen aromi poikkeaa selvästi inkivääristä.",
           "Makrutlimetin lehdet taas antavat oman, hyvin tunnistettavan tuoksunsa. Tavallisen limetin kuori voi tuoda samansuuntaista sitruksisuutta mutta se ei ole täysin sama raaka-aine."
@@ -542,7 +542,7 @@ export const moreBlogPosts: BlogPost[] = [
         "heading": "Mitä hankkia ensin?",
         "paragraphs": [
           "Aloita yhdestä reseptistä ja sen keskeisistä raaka-aineista. Pad thaihin tarvitaan ensisijaisesti oikeanlainen tamarindi ja nuudeli; tom yumissa taas sitruunaruoho, galangal ja lehdet ovat keskeisempiä.",
-          "Muista ilmoittaa korvaus selvästi reseptissä, jotta lukija tietää, missä kohdin maku poikkeaa alkuperäisestä. Hyvä sovitus ei edellytä teeskentelyä, että kaikki raaka-aineet ovat samoja."
+          "Jos kokeilet korvaavaa ainesta, merkitse itsellesi käyttämäsi määrä ja miltä lopputulos maistui. Se helpottaa maustamista seuraavalla kerralla."
         ]
       }
     ],

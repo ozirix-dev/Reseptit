@@ -17,7 +17,7 @@ interface SiteNavigationProps {
 const copy: Record<RecipeLocale, { sections: string; menu: string; recipes: string; blog: string; method: string; languages: string }> = {
   fi: { sections: "Sivuston osiot", menu: "Valikko", recipes: "Reseptit", blog: "Ruokaopas", method: "GK-opas", languages: "Kielet" },
   en: { sections: "Site sections", menu: "Menu", recipes: "Recipes", blog: "Food guide (FI)", method: "GL guide", languages: "Languages" },
-  sv: { sections: "Webbplatsens delar", menu: "Meny", recipes: "Recept", blog: "Matguide (FI)", method: "GK-guide", languages: "Språk" },
+  sv: { sections: "Webbplatsens delar", menu: "Meny", recipes: "Recept", blog: "Matguide (FI)", method: "GL-guide", languages: "Språk" },
   th: { sections: "ส่วนต่าง ๆ ของเว็บไซต์", menu: "เมนู", recipes: "สูตรอาหาร", blog: "คู่มืออาหาร (FI)", method: "คู่มือ GL", languages: "ภาษา" }
 };
 const localeNames: Record<RecipeLocale, string> = { fi: "Suomi", en: "English", sv: "Svenska", th: "ไทย" };

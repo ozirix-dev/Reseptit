@@ -106,7 +106,7 @@ export const blogPosts: BlogPost[] = [
     routePath: "/ruokaopas/glykeeminen-indeksi-ja-kuorma/",
     title: "GI ja GK käytännössä – miksi annoskoko ratkaisee?",
     seoTitle: "GI ja GK: mitä eroa niillä on ja miksi annoskoko ratkaisee? | Ruokaopas",
-    excerpt: "Glykeeminen indeksi (GI) kuvaa hiilihydraattia sisältävän ruoan vaikutusta verensokeriin. Glykeeminen kuorma (GK) huomioi myös annoksen hiilihydraattimäärän. Puuroesimerkki näyttää, miten annoskoko muuttaa arviota.",
+    excerpt: "Glykeeminen indeksi (GI) kuvaa hiilihydraattia sisältävän ruoan vaikutusta verensokeriin. Glykeeminen kuorma (GK) huomioi myös annoksen hiilihydraattimäärän. Laskuesimerkki näyttää, miten annoskoko muuttaa arviota.",
     category: "Ravitsemus ja GK",
     datePublished: "2026-11-06",
     dateModified: "2026-11-17",

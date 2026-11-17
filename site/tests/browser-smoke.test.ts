@@ -157,7 +157,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     }
 
     await page.goto(`${base}/kermainen-lohipata/`);
-    await page.getByRole("button", { name: "Lisää annos" }).click();
+    await page.getByRole("button", { name: "Lisää annosmäärää", exact: true }).click();
     assert.equal(await page.locator(".serving-control output").innerText(), "5");
     assert.match(await page.locator(".ingredient-list").innerText(), /750 g lohifilee/);
     assert.equal(await page.locator(".recipe-scaled-note").innerText(), toolUi.fi.scaled(4));
@@ -347,9 +347,9 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.waitForFunction(() => Boolean(document.querySelector('link[rel="canonical"]')));
 
     const localizedRecipes = [
-      { route: "/en/recipes/high-protein-beef-macaroni-bake/", title: "High-Protein Beef Macaroni Bake", locale: "en", increase: "Increase servings" },
-      { route: "/sv/recept/proteinrik-makaronilada-med-kottfars/", title: "Proteinrik makaronilåda med köttfärs", locale: "sv", increase: "Öka portioner" },
-      { route: "/th/recipes/makaroni-op-nuea-bot-protein-sung/", title: "มักกะโรนีอบเนื้อบดโปรตีนสูง", locale: "th", increase: "เพิ่มจำนวนที่" },
+      { route: "/en/recipes/high-protein-beef-macaroni-bake/", title: "High-Protein Beef Macaroni Bake", locale: "en", increase: "Increase the number of servings" },
+      { route: "/sv/recept/proteinrik-makaronilada-med-kottfars/", title: "Proteinrik makaronilåda med köttfärs", locale: "sv", increase: "Öka antalet portioner" },
+      { route: "/th/recipes/makaroni-op-nuea-bot-protein-sung/", title: "มักกะโรนีอบเนื้อบดโปรตีนสูง", locale: "th", increase: "เพิ่มจำนวนเสิร์ฟ" },
     ];
     for (const recipe of localizedRecipes) {
       await page.goto(`${base}${recipe.route}`);
@@ -360,7 +360,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       assert.equal(await page.getByRole("button", { name: toolUi[recipe.locale as "en" | "sv" | "th"].print }).count(), 1);
       await page.getByRole("checkbox").first().check();
       assert.equal(await page.getByRole("checkbox").first().isChecked(), true);
-      const increase = page.getByRole("button", { name: recipe.increase });
+      const increase = page.getByRole("button", { name: recipe.increase, exact: true });
       await increase.focus();
       await page.keyboard.press("Enter");
       assert.equal(await page.locator(".serving-control output").innerText(), "9");

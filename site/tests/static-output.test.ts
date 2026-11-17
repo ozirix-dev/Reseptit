@@ -838,3 +838,12 @@ test("reviewed historical recipe links resolve to public routes in the reader's 
     }
   }
 });
+
+test("GL evidence keeps localized names when a Finnish ingredient is reformatted", () => {
+  const result = glycemicLoadPilotResults.find(entry => entry.recipeId === "jauhelihapihvit-vhh-kermakastikkeella");
+  const cream = result?.ingredientEvidence?.find(ingredient => ingredient.ingredientNames.fi === "kuohukermaa pihveihin, 38 %");
+  assert.ok(cream, "the reformatted cream still has a GL evidence row");
+  for (const locale of ["en", "sv", "th"] as const) {
+    assert.ok(cream.ingredientNames[locale], "missing cream label for " + locale);
+  }
+});
