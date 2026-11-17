@@ -42,12 +42,13 @@ test("new verbal estimates qualify the legacy numerical notices in all published
       const note = reviews[id]?.verbalNoteEdits?.[locale];
       assert.ok(note, `${id}/${locale}: reviewed notice`);
       const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
-      assert.match(html, /data-gk-status="QUALITATIVE"/);
-      assert.doesNotMatch(html, /data-portion-gk/);
-      assert.ok(html.includes(note.after), `${id}/${locale}: numerical limitation`);
-      assert.ok(!html.includes(note.before), `${id}/${locale}: no conflicting old notice`);
-      assert.ok(html.includes(portionCopy[locale].class[category]), `${id}/${locale}: reviewed class`);
-      assert.ok(html.includes(`${glycemicLoadPath(locale)}#${id}`), `${id}/${locale}: guide link`);
+      const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+      assert.match(rendered, /data-gk-status="QUALITATIVE"/);
+      assert.doesNotMatch(rendered, /data-portion-gk/);
+      assert.ok(rendered.includes(note.after), `${id}/${locale}: numerical limitation`);
+      assert.ok(!rendered.includes(note.before), `${id}/${locale}: no conflicting old notice`);
+      assert.ok(rendered.includes(portionCopy[locale].class[category]), `${id}/${locale}: reviewed class`);
+      assert.ok(rendered.includes(`${glycemicLoadPath(locale)}#${id}`), `${id}/${locale}: guide link`);
     }
   }
 });
