@@ -154,7 +154,6 @@ button { font: inherit; }
 .serving-control output { min-width: 1.5rem; text-align: center; font-weight: 700; }
 .ingredient-list { display: grid; gap: .55rem; margin: 0; padding-left: 1.2rem; }
 .ingredient-list li { padding-left: .15rem; }
-.ingredient-note { display: block; color: var(--ink-soft); font-size: .92rem; }
 .nutrition-list { display: grid; gap: .2rem; margin: 0; }
 .nutrition-list > div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; padding: .45rem 0; border-bottom: 1px solid var(--line); }
 .nutrition-list dd { margin: 0; font-weight: 650; }

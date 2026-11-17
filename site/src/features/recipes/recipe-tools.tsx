@@ -3,6 +3,7 @@ import { RecipeCopyright } from "./recipe-copyright";
 
 export const toolUi = {
   fi: {
+    originalIngredientNote: (base: number) => `Perusohje (${base === 1 ? "1 annos" : `${base} annosta`})`,
     scaled: (base: number) => `Aineslista on skaalattu. Ohjeen tekstissä mainitut määrät koskevat ${base} annosta. Kypsennysaika ei skaalaudu suoraan annosmäärän mukaan.`,
     moreFilters: "Lisäsuodattimet",
     jump: "Siirry valmistusohjeeseen", print: "Tulosta resepti", completed: "Vaihe valmis", reset: "Nollaa työvaiheet", progress: "Valmiita työvaiheita",
@@ -18,6 +19,7 @@ export const toolUi = {
     feedback: "Ilmoita korjattavasta kohdasta GitHubissa", servings: "Tulosteen annosmäärä",
   },
   en: {
+    originalIngredientNote: (base: number) => `Original recipe (${base === 1 ? "1 serving" : `${base} servings`})`,
     scaled: (base: number) => `The ingredient list has been scaled. Quantities written in the method refer to ${base} servings. Cooking time does not scale directly with the number of servings.`,
     moreFilters: "More filters",
     jump: "Jump to method", print: "Print recipe", completed: "Step complete", reset: "Reset steps", progress: "Completed steps",
@@ -33,6 +35,7 @@ export const toolUi = {
     feedback: "Report a correction on GitHub", servings: "Servings in this printout",
   },
   sv: {
+    originalIngredientNote: (base: number) => `Grundrecept (${base === 1 ? "1 portion" : `${base} portioner`})`,
     scaled: (base: number) => `Ingredienslistan har räknats om. Mängder i tillagningstexten gäller ${base} portioner. Tillagningstiden ändras inte proportionellt med antalet portioner.`,
     moreFilters: "Fler filter",
     jump: "Till tillagningen", print: "Skriv ut receptet", completed: "Steget är klart", reset: "Återställ stegen", progress: "Klara steg",
@@ -48,6 +51,7 @@ export const toolUi = {
     feedback: "Rapportera en rättelse på GitHub", servings: "Portioner i utskriften",
   },
   th: {
+    originalIngredientNote: (base: number) => `สูตรเดิมสำหรับ ${base} ที่`,
     scaled: (base: number) => `ปรับปริมาณในรายการวัตถุดิบแล้ว ปริมาณที่ระบุในข้อความวิธีทำยังเป็นปริมาณสำหรับ ${base} ที่ เวลาในการปรุงไม่ได้เปลี่ยนตามสัดส่วนของจำนวนที่โดยตรง`,
     moreFilters: "ตัวกรองเพิ่มเติม",
     jump: "ไปที่วิธีทำ", print: "พิมพ์สูตรอาหาร", completed: "ทำขั้นตอนนี้แล้ว", reset: "ล้างเครื่องหมายขั้นตอน", progress: "ขั้นตอนที่ทำแล้ว",
