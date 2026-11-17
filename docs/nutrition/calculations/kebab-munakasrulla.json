@@ -1,0 +1,472 @@
+{
+  "recipeId": "kebab-munakasrulla",
+  "sourceHash": "ad1a9f50fb249bda1401357d85b560f8f6eccef2e86272c1bfe7db725d364e28",
+  "calculatedAt": "2026-11-17",
+  "servings": 5,
+  "scope": "Five equal portions of the specified ingredient inputs. Full edible retention is an accounting assumption; no physical cook test or cooked yield measured. Product polyols and pickled-pepper source correspondence remain unresolved.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kananmunaa",
+      "amount": 6,
+      "unit": "kpl",
+      "state": "KANANMUNA, KUORETON",
+      "matchEvidence": "Fineli reference matches the stated raw edible ingredient. No cooked yield is inferred.",
+      "record": {
+        "id": "fineli-858-release20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+        "retrievedAt": "2026-11-17",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "KANANMUNA, KUORETON",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported aggregate sugar alcohol value in Fineli Release 20."
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Edible charged ingredient only; egg shells and onion peel excluded. Pepperoni is weighed after draining.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Source-accounting assumption: the omelette, cooked kebab, edible pan juices, oil, vegetables, sauces and garnish are all divided equally and consumed. No cooked weight or physical retention measurement.",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Fineli Release 20 food-specific portion mass: 55 g per listed unit; salt uses 6.5 g per teaspoon. Piece masses are reference estimates, not measurements."
+    },
+    {
+      "item": "kevytmaitoa",
+      "amount": 5,
+      "unit": "dl",
+      "state": "MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG",
+      "matchEvidence": "Fineli reference matches the stated raw edible ingredient. No cooked yield is inferred.",
+      "record": {
+        "id": "fineli-684-release20",
+        "name": "MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/684",
+        "retrievedAt": "2026-11-17",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 1.5
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported aggregate sugar alcohol value in Fineli Release 20."
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Edible charged ingredient only; egg shells and onion peel excluded. Pepperoni is weighed after draining.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Source-accounting assumption: the omelette, cooked kebab, edible pan juices, oil, vegetables, sauces and garnish are all divided equally and consumed. No cooked weight or physical retention measurement.",
+      "gramsPerUnit": 100,
+      "conversionEvidence": "Fineli Release 20 food-specific portion mass: 100 g per listed unit; salt uses 6.5 g per teaspoon. Piece masses are reference estimates, not measurements."
+    },
+    {
+      "item": "puolikarkeita vehnäjauhoja",
+      "amount": 1.5,
+      "unit": "dl",
+      "state": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+      "matchEvidence": "Fineli reference matches the stated raw edible ingredient. No cooked yield is inferred.",
+      "record": {
+        "id": "fineli-110-release20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
+        "retrievedAt": "2026-11-17",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported aggregate sugar alcohol value in Fineli Release 20."
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Edible charged ingredient only; egg shells and onion peel excluded. Pepperoni is weighed after draining.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Source-accounting assumption: the omelette, cooked kebab, edible pan juices, oil, vegetables, sauces and garnish are all divided equally and consumed. No cooked weight or physical retention measurement.",
+      "gramsPerUnit": 65,
+      "conversionEvidence": "Fineli Release 20 food-specific portion mass: 65 g per listed unit; salt uses 6.5 g per teaspoon. Piece masses are reference estimates, not measurements."
+    },
+    {
+      "item": "suolaa",
+      "amount": 0.25,
+      "unit": "tl",
+      "state": "RUOKASUOLA, JODIOITU",
+      "matchEvidence": "Fineli reference matches the stated raw edible ingredient. No cooked yield is inferred.",
+      "record": {
+        "id": "fineli-30-release20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+        "retrievedAt": "2026-11-17",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "RUOKASUOLA, JODIOITU",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported aggregate sugar alcohol value in Fineli Release 20."
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Edible charged ingredient only; egg shells and onion peel excluded. Pepperoni is weighed after draining.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Source-accounting assumption: the omelette, cooked kebab, edible pan juices, oil, vegetables, sauces and garnish are all divided equally and consumed. No cooked weight or physical retention measurement.",
+      "gramsPerUnit": 6.5,
+      "conversionEvidence": "Fineli Release 20 food-specific portion mass: 6.5 g per listed unit; salt uses 6.5 g per teaspoon. Piece masses are reference estimates, not measurements."
+    },
+    {
+      "item": "Snellman Grillattu kebab original -lastuja",
+      "amount": 300,
+      "unit": "g",
+      "state": "prepared product as sold",
+      "matchEvidence": "Exact selected brand label supplies reported nutrients; aggregate polyols are unresolved.",
+      "record": {
+        "id": "label-kebab-20261117",
+        "name": "Snellman Grillattu kebab original 300 g",
+        "sourceUrl": "https://snellman.fi/fi/tuotteet/grillattu-kebab-original-300-g/",
+        "retrievedAt": "2026-11-17",
+        "licence": "Public manufacturer nutrition declaration; pepper comparison from distributor product declaration",
+        "state": "prepared product as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "per100g": {
+          "kcal": 248,
+          "protein": 18,
+          "fat": 19,
+          "carbohydrate": 1.2,
+          "fibre": 0,
+          "sugars": 0.9,
+          "polyols": null
+        },
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "Aggregate polyols are not declared. No zero, available-carbohydrate or net-carbohydrate inference is made."
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Edible charged ingredient only; egg shells and onion peel excluded. Pepperoni is weighed after draining.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Source-accounting assumption: the omelette, cooked kebab, edible pan juices, oil, vegetables, sauces and garnish are all divided equally and consumed. No cooked weight or physical retention measurement."
+    },
+    {
+      "item": "rypsiöljyä",
+      "amount": 1,
+      "unit": "tl",
+      "state": "RYPSIÖLJY",
+      "matchEvidence": "Fineli reference matches the stated raw edible ingredient. No cooked yield is inferred.",
+      "record": {
+        "id": "fineli-535-release20",
+        "name": "RYPSIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/535",
+        "retrievedAt": "2026-11-17",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "RYPSIÖLJY",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported aggregate sugar alcohol value in Fineli Release 20."
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Edible charged ingredient only; egg shells and onion peel excluded. Pepperoni is weighed after draining.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Source-accounting assumption: the omelette, cooked kebab, edible pan juices, oil, vegetables, sauces and garnish are all divided equally and consumed. No cooked weight or physical retention measurement.",
+      "gramsPerUnit": 4.5,
+      "conversionEvidence": "Fineli Release 20 food-specific portion mass: 4.5 g per listed unit; salt uses 6.5 g per teaspoon. Piece masses are reference estimates, not measurements."
+    },
+    {
+      "item": "punasipulia",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "SIPULI, PUNASIPULI",
+      "matchEvidence": "Fineli reference matches the stated raw edible ingredient. No cooked yield is inferred.",
+      "record": {
+        "id": "fineli-34234-release20",
+        "name": "SIPULI, PUNASIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34234",
+        "retrievedAt": "2026-11-17",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "SIPULI, PUNASIPULI",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 5.447,
+          "fibre": 1.2,
+          "polyols": 0,
+          "protein": 1.506,
+          "fat": 0.114
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported aggregate sugar alcohol value in Fineli Release 20."
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Edible charged ingredient only; egg shells and onion peel excluded. Pepperoni is weighed after draining.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Source-accounting assumption: the omelette, cooked kebab, edible pan juices, oil, vegetables, sauces and garnish are all divided equally and consumed. No cooked weight or physical retention measurement.",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Fineli Release 20 food-specific portion mass: 55 g per listed unit; salt uses 6.5 g per teaspoon. Piece masses are reference estimates, not measurements."
+    },
+    {
+      "item": "tomaattia",
+      "amount": 2,
+      "unit": "kpl",
+      "state": "TOMAATTI",
+      "matchEvidence": "Fineli reference matches the stated raw edible ingredient. No cooked yield is inferred.",
+      "record": {
+        "id": "fineli-352-release20",
+        "name": "TOMAATTI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/352",
+        "retrievedAt": "2026-11-17",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "TOMAATTI",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 3.45,
+          "fibre": 0.4,
+          "polyols": 0,
+          "protein": 0.55,
+          "fat": 0.3
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported aggregate sugar alcohol value in Fineli Release 20."
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Edible charged ingredient only; egg shells and onion peel excluded. Pepperoni is weighed after draining.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Source-accounting assumption: the omelette, cooked kebab, edible pan juices, oil, vegetables, sauces and garnish are all divided equally and consumed. No cooked weight or physical retention measurement.",
+      "gramsPerUnit": 125,
+      "conversionEvidence": "Fineli Release 20 food-specific portion mass: 125 g per listed unit; salt uses 6.5 g per teaspoon. Piece masses are reference estimates, not measurements."
+    },
+    {
+      "item": "kurkkua",
+      "amount": 0.5,
+      "unit": "kpl",
+      "state": "KURKKU",
+      "matchEvidence": "Fineli reference matches the stated raw edible ingredient. No cooked yield is inferred.",
+      "record": {
+        "id": "fineli-346-release20",
+        "name": "KURKKU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/346",
+        "retrievedAt": "2026-11-17",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "KURKKU",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 1.4,
+          "fibre": 1.1,
+          "polyols": 0,
+          "protein": 0.65,
+          "fat": 0.1
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported aggregate sugar alcohol value in Fineli Release 20."
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Edible charged ingredient only; egg shells and onion peel excluded. Pepperoni is weighed after draining.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Source-accounting assumption: the omelette, cooked kebab, edible pan juices, oil, vegetables, sauces and garnish are all divided equally and consumed. No cooked weight or physical retention measurement.",
+      "gramsPerUnit": 400,
+      "conversionEvidence": "Fineli Release 20 food-specific portion mass: 400 g per listed unit; salt uses 6.5 g per teaspoon. Piece masses are reference estimates, not measurements."
+    },
+    {
+      "item": "jääsalaattia",
+      "amount": 100,
+      "unit": "g",
+      "state": "JÄÄSALAATTI",
+      "matchEvidence": "Fineli reference matches the stated raw edible ingredient. No cooked yield is inferred.",
+      "record": {
+        "id": "fineli-34231-release20",
+        "name": "JÄÄSALAATTI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34231",
+        "retrievedAt": "2026-11-17",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "JÄÄSALAATTI",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 1.035,
+          "fibre": 1.2,
+          "polyols": 0,
+          "protein": 0.936,
+          "fat": 0.121
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported aggregate sugar alcohol value in Fineli Release 20."
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Edible charged ingredient only; egg shells and onion peel excluded. Pepperoni is weighed after draining.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Source-accounting assumption: the omelette, cooked kebab, edible pan juices, oil, vegetables, sauces and garnish are all divided equally and consumed. No cooked weight or physical retention measurement."
+    },
+    {
+      "item": "Göransin kebabkastiketta",
+      "amount": 100,
+      "unit": "g",
+      "state": "prepared product as sold",
+      "matchEvidence": "Exact selected brand label supplies reported nutrients; aggregate polyols are unresolved.",
+      "record": {
+        "id": "label-red-20261117",
+        "name": "Görans Kebabkastike 400 ml, EAN 6416345004476",
+        "sourceUrl": "https://gorans.fi/tuotteet/kebabkastike/",
+        "retrievedAt": "2026-11-17",
+        "licence": "Public manufacturer nutrition declaration; pepper comparison from distributor product declaration",
+        "state": "prepared product as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "per100g": {
+          "kcal": 322,
+          "protein": 0.8,
+          "fat": 31,
+          "carbohydrate": 10,
+          "fibre": 0.8,
+          "sugars": 6.8,
+          "polyols": null
+        },
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "Aggregate polyols are not declared. No zero, available-carbohydrate or net-carbohydrate inference is made."
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Edible charged ingredient only; egg shells and onion peel excluded. Pepperoni is weighed after draining.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Source-accounting assumption: the omelette, cooked kebab, edible pan juices, oil, vegetables, sauces and garnish are all divided equally and consumed. No cooked weight or physical retention measurement."
+    },
+    {
+      "item": "Göransin valkosipulikastiketta",
+      "amount": 100,
+      "unit": "g",
+      "state": "prepared product as sold",
+      "matchEvidence": "Exact selected brand label supplies reported nutrients; aggregate polyols are unresolved.",
+      "record": {
+        "id": "label-white-20261117",
+        "name": "Görans Valkosipulikastike 400 ml, EAN 6416345004537",
+        "sourceUrl": "https://gorans.fi/tuotteet/valkosipulikastike/",
+        "retrievedAt": "2026-11-17",
+        "licence": "Public manufacturer nutrition declaration; pepper comparison from distributor product declaration",
+        "state": "prepared product as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "per100g": {
+          "kcal": 276,
+          "protein": 0.2,
+          "fat": 25,
+          "carbohydrate": 12,
+          "fibre": 0.1,
+          "sugars": 7.7,
+          "polyols": null
+        },
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "Aggregate polyols are not declared. No zero, available-carbohydrate or net-carbohydrate inference is made."
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Edible charged ingredient only; egg shells and onion peel excluded. Pepperoni is weighed after draining.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Source-accounting assumption: the omelette, cooked kebab, edible pan juices, oil, vegetables, sauces and garnish are all divided equally and consumed. No cooked weight or physical retention measurement."
+    },
+    {
+      "item": "mietoja pepperoneja etikkaliemessä",
+      "amount": 60,
+      "unit": "g",
+      "state": "prepared product as sold",
+      "matchEvidence": "Label comparison only: mild pickled yellow chilli; drained/as-sold basis and exact pepperoni product are unverified. This is a separate source-accounting scenario, not accepted final composition.",
+      "record": {
+        "id": "label-pepper-20261117",
+        "name": "Santa Maria Yellow Chili 215/110 g, EAN 7311310039493; comparison for mild pickled pepper",
+        "sourceUrl": "https://www.k-ruoka.fi/kauppa/tuote/santa-maria-tex-mex-kelt-chili-215110g-7311310039493",
+        "retrievedAt": "2026-11-17",
+        "licence": "Public manufacturer nutrition declaration; pepper comparison from distributor product declaration",
+        "state": "prepared product as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "per100g": {
+          "kcal": 20,
+          "protein": 0.9,
+          "fat": 0,
+          "carbohydrate": 2.7,
+          "fibre": 1.8,
+          "sugars": 2.7,
+          "polyols": null
+        },
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "Aggregate polyols are not declared. No zero, available-carbohydrate or net-carbohydrate inference is made."
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Edible charged ingredient only; egg shells and onion peel excluded. Pepperoni is weighed after draining.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Source-accounting assumption: the omelette, cooked kebab, edible pan juices, oil, vegetables, sauces and garnish are all divided equally and consumed. No cooked weight or physical retention measurement."
+    },
+    {
+      "item": "lehtipersiljaa",
+      "amount": 20,
+      "unit": "g",
+      "state": "PERSILJA",
+      "matchEvidence": "Fineli reference matches the stated raw edible ingredient. No cooked yield is inferred.",
+      "record": {
+        "id": "fineli-333-release20",
+        "name": "PERSILJA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/333",
+        "retrievedAt": "2026-11-17",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "PERSILJA",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 1.1,
+          "fibre": 2.9,
+          "polyols": 0,
+          "protein": 1.38,
+          "fat": 0.2
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported aggregate sugar alcohol value in Fineli Release 20."
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Edible charged ingredient only; egg shells and onion peel excluded. Pepperoni is weighed after draining.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Source-accounting assumption: the omelette, cooked kebab, edible pan juices, oil, vegetables, sauces and garnish are all divided equally and consumed. No cooked weight or physical retention measurement."
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "The exact kebab and Görans labels do not declare aggregate polyols. EU label carbohydrate cannot be relabelled as available/net carbohydrate. The pickled-pepper product/drained-weight composition also needs verification. All four public macro fields remain null; no substitution with generic zero-polyol sauce records.",
+  "sourceRevision": "97f9b0a643a05b5acb2fe8a9cd2a3f4e2b8ea080",
+  "sourceAccountingScenario": {
+    "status": "REFERENCE_SCENARIO_ONLY_NOT_PUBLIC_NUTRITION",
+    "servings": 5,
+    "carbohydrateDefinition": "Sum of Fineli available carbohydrate and EU label carbohydrate; mixed definitions, never net or total carbohydrate.",
+    "perServing": {
+      "carbohydrateAsReported": 28.01,
+      "protein": 25.64,
+      "fat": 31.64,
+      "fibre": 2.21
+    },
+    "approximateEnergyFromReportedMacrosKcal": 499.3,
+    "notAPreparedMealMeasurement": true
+  },
+  "batchId": "batch-691"
+}
