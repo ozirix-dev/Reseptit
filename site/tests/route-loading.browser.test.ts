@@ -107,7 +107,7 @@ test("bounded page data, navigation cache, failures, history and multilingual st
     await retry.route("**/data/search-fi-*.json", route => route.fulfill({ status: 503 }));
     await retry.locator("#recipe-search").fill("lohi");
     await retry.getByRole("alert").waitFor();
-    assert.equal(await retry.getByRole("alert").textContent(), "Hakua ei voitu ladata.");
+    assert.equal(await retry.getByRole("alert").textContent(), "Reseptiluetteloa ei voitu ladata.");
     await retry.unroute("**/data/search-fi-*.json");
     await retry.getByRole("button", { name: "Yritä uudelleen" }).click();
     await retry.locator(".recipe-card__link").first().waitFor();

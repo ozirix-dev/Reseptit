@@ -1,7 +1,9 @@
 import { recipeSeoDescriptions } from "./recipe-seo-descriptions";
+import { projectPublicRecipeMethodCopy, publicIngredientNote, publicRecipeDescription, publicRecipeTitle } from "./public-recipe-copy";
 import { siteTarget } from "../src/content/site-target";
 import { recipeDifficultyLabel } from "../src/features/recipes/recipe-i18n";
 import { createHash } from "node:crypto";
+import { marked } from "marked";
 import { publicRecipeQualityHold } from "./recipe-quality-holds";
 import { projectSafeWontonFiDisplay } from "./wonton-fi-public-display";
 import { projectMaterial21FiDisplay } from "./material21-fi-public-display";
@@ -94,14 +96,31 @@ function stripHtml(value: string): string {
   return value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 }
 
-function recipeDescription(markdown: string, descriptionSection: string, locale: RecipeLocale, ingredients: { item: string }[]): string {
-  const paragraphs = markdown.replace(/^\s*#\s+.*$/m, "").split(/\n\s*\n/);
-  const lead = paragraphs.find((paragraph) => paragraph.trim() && !paragraph.trim().startsWith("##"));
+function firstDescriptionParagraph(markdown: string): string {
+  const first = marked.lexer(markdown).find(token => token.type !== "space");
+  if (first?.type !== "paragraph") return "";
+  const value = stripHtml(first.text);
+  // Weighing protocols and internal fields are instructions or evidence.
+  if (/^(?:Punnitse|Weigh|Väg)\b|^ชั่ง|\bcarbs_\w+\b/i.test(value) || /\bHOLD\b/.test(value)) return "";
+  return value;
+}
+
+export function recipeDescription(
+  markdown: string,
+  descriptionSection: string,
+  locale: RecipeLocale,
+  ingredients: { item: string }[],
+  { hold, editorial, fallback }: { hold?: string; editorial?: string; fallback?: string } = {},
+): string {
+  if (hold !== undefined) return hold;
+  if (editorial !== undefined) return editorial;
+  const lead = markdown.replace(/^\s*#[ \t]+[^\r\n]+/m, "").split(/^#{1,6}[ \t]+/m, 1)[0];
   const isBoilerplate = (value: string) => /familiar finnish (?:food|dish)|rewritten to suit your own kitchen|familiar taste in food is built from simple ingredients|vegetables and creamy ingredients bring juiciness|portion size can be adjusted with the portion counter|tuttu suomalainen ruoka vähähiilihydraattisena kotiversiona|kirjoitettu uudelleen omaan keittiöön sopivaksi|tuttu maku rakentuu yksinkertaisista raaka-aineista|annoskokoa voi säätää reseptin annoslaskurilla/i.test(value);
   // Prefer a useful explicit description, then a useful lead. Older files often
   // contain the same generic copy in both places, so fall back to actual ingredients.
-  const useful = [descriptionSection, lead].map((value) => stripHtml(value ?? "")).find((value) => value && !isBoilerplate(value));
+  const useful = [descriptionSection, lead].map(firstDescriptionParagraph).find((value) => value && !isBoilerplate(value));
   if (useful) return useful;
+  if (fallback) return fallback;
   const mainIngredients = ingredients.slice(0, 3).map(({ item }) => item);
   const list = mainIngredients.length > 1
     ? `${mainIngredients.slice(0, -1).join(", ")} ${locale === "fi" ? "ja" : locale === "sv" ? "och" : locale === "th" ? "และ" : "and"} ${mainIngredients.at(-1)}`
@@ -251,7 +270,6 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     const instructions = section(publicMarkdown, instructionHeadings);
     const safetyHold = publicSafetyHold(data.recipe_id, data.language);
     const visibleHold = safetyHold ?? publicRecipeQualityHold(data.recipe_id, data.language);
-    const publicInstructions = visibleHold?.instructions ?? instructions;
     if (!instructions) throw new Error(`Published recipe has no instructions: ${filePath}`);
     const descriptionSection = section(publicMarkdown, descriptionHeadings);
     const nutritionBasis = data.language === "fi" && publicNutritionBasis.has(data.recipe_id)
@@ -261,18 +279,27 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       section(publicMarkdown, noteHeadings),
       nutritionBasis && `### ${nutritionBasisHeading}\n\n${nutritionBasis}`,
     ].filter(Boolean).join("\n\n");
+    const methodCopy = projectPublicRecipeMethodCopy(data.recipe_id, data.language, instructions, notes);
+    const publicInstructions = visibleHold?.instructions ?? methodCopy.instructions;
+    const publicIngredients = data.ingredients.map(ingredient => ingredient.note
+      ? { ...ingredient, note: publicIngredientNote(data.recipe_id, data.language, ingredient.note) }
+      : ingredient);
     const dietTags = await reviewedDietTagsForSource(data.recipe_id, data.language, filePath, finnishSources.get(data.recipe_id));
     const instructionSteps = [...publicInstructions.matchAll(/^\s*\d+[.)]\s+(.+)$/gm)].map((match) => match[1].trim());
+    const editorialDescription = publicRecipeDescription(data.recipe_id, data.url_slug, data.language);
     const seoDescription = visibleHold ? undefined : recipeSeoDescriptions[data.url_slug]?.[data.language];
     recipes.push({
       kind: "recipe", recipeId: data.recipe_id, slug: data.url_slug, locale: data.language,
-      title: data.title, category: data.category, ...(data.additional_categories?.length ? { additionalCategories: data.additional_categories } : {}), dietClass: data.diet_class ?? null, ...(dietTags.length ? { dietTags } : {}), ...(data.gluten_free === true ? { glutenFree: true } : {}), routePath: routeForRecipe(data.language, data.url_slug),
-      description: visibleHold?.description ?? recipeDescription(publicMarkdown, descriptionSection, data.language, data.ingredients), ingredients: data.ingredients,
+      title: publicRecipeTitle(data.recipe_id, data.language, data.title), category: data.category, ...(data.additional_categories?.length ? { additionalCategories: data.additional_categories } : {}), dietClass: data.diet_class ?? null, ...(dietTags.length ? { dietTags } : {}), ...(data.gluten_free === true ? { glutenFree: true } : {}), routePath: routeForRecipe(data.language, data.url_slug),
+      description: recipeDescription(publicMarkdown, descriptionSection, data.language, data.ingredients, {
+        hold: visibleHold?.description, editorial: editorialDescription, fallback: seoDescription,
+      }),
+      ingredients: publicIngredients,
       ...(seoDescription ? { seoDescription } : {}),
       instructionsHtml: await renderSafeMarkdown(publicInstructions),
       instructionStepsHtml: await renderInstructionSteps(publicInstructions),
       instructionsText: instructionSteps.length ? instructionSteps : publicInstructions.split(/\n\s*\n/).filter(Boolean),
-      notesHtml: await renderSafeMarkdown(!safetyHold && visibleHold ? "" : notes), servings: data.servings,
+      notesHtml: await renderSafeMarkdown(!safetyHold && visibleHold ? "" : methodCopy.notes), servings: data.servings,
       timeTotalMin: data.time_total_min ?? null,
       difficulty: recipeDifficultyLabel(data.difficulty ?? null, data.language), tags: data.tags,
       image: data.image ? {

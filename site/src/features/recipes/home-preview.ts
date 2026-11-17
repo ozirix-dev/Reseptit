@@ -74,10 +74,10 @@ export const homepageLabels: Record<RecipeLocale, {
 };
 
 export const libraryCopy = {
-  fi: { title: "Reseptikirjasto", description: "Selaa kaikkia suomenkielisiä reseptejä.", page: "Sivu", previous: "Edellinen sivu", next: "Seuraava sivu", loading: "Ladataan hakua…", failed: "Hakua ei voitu ladata.", retry: "Yritä uudelleen" },
-  en: { title: "Recipe library", description: "Browse all recipes available in English.", page: "Page", previous: "Previous page", next: "Next page", loading: "Loading search…", failed: "Could not load search.", retry: "Try again" },
-  sv: { title: "Receptbibliotek", description: "Bläddra bland alla recept på svenska.", page: "Sida", previous: "Föregående sida", next: "Nästa sida", loading: "Laddar sökningen…", failed: "Sökningen kunde inte laddas.", retry: "Försök igen" },
-  th: { title: "คลังสูตรอาหาร", description: "เรียกดูสูตรอาหารทั้งหมดที่มีในภาษาไทย", page: "หน้า", previous: "หน้าก่อนหน้า", next: "หน้าถัดไป", loading: "กำลังโหลดการค้นหา…", failed: "โหลดการค้นหาไม่สำเร็จ", retry: "ลองอีกครั้ง" },
+  fi: { title: "Reseptikirjasto", description: "Selaa kaikkia suomenkielisiä reseptejä.", page: "Sivu", previous: "Edellinen sivu", next: "Seuraava sivu", loading: "Ladataan reseptiluetteloa…", failed: "Reseptiluetteloa ei voitu ladata.", retry: "Yritä uudelleen" },
+  en: { title: "Recipe library", description: "Browse all recipes available in English.", page: "Page", previous: "Previous page", next: "Next page", loading: "Loading recipes…", failed: "Could not load the recipe list.", retry: "Try again" },
+  sv: { title: "Receptbibliotek", description: "Bläddra bland alla recept på svenska.", page: "Sida", previous: "Föregående sida", next: "Nästa sida", loading: "Laddar receptlistan…", failed: "Det gick inte att ladda receptlistan.", retry: "Försök igen" },
+  th: { title: "คลังสูตรอาหาร", description: "เรียกดูสูตรอาหารทั้งหมดที่มีในภาษาไทย", page: "หน้า", previous: "หน้าก่อนหน้า", next: "หน้าถัดไป", loading: "กำลังโหลดรายการสูตรอาหาร…", failed: "โหลดรายการสูตรอาหารไม่สำเร็จ", retry: "ลองอีกครั้ง" },
 } satisfies Record<RecipeLocale, Record<string, string>>;
 
 export function libraryTitle(locale: RecipeLocale, page: number): string {

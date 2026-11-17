@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { recipeDescription } from "../scripts/build-content";
 import { parseMarkdown } from "../src/content/markdown";
 import { assertQuantifiedCriticalIngredients, assertUniqueRecipes, assertSnackPublicationReady, snackPublicationErrors } from "../src/content/recipe-validation";
 import { recipeFrontmatterSchema } from "../src/content/schema";
@@ -185,4 +186,33 @@ test("a retired F25 recipe has no public review notice or recipe page", () => {
   assert.equal(sourceReviewNotice(id), null);
   assert.equal(Object.hasOwn(sourceReviewNotices, id), false);
   assert.ok(!siteContent.recipes.some(recipe => recipe.recipeId === id));
+});
+
+test("recipe descriptions come from the lead or description, with reviewed copy as a fallback", () => {
+  const ingredients = [{ item: "tomato" }, { item: "eggs" }];
+  const fallback = "Eggs simmer in a tomato and pepper sauce.";
+  const lead = "# Shakshuka\n\nEggs cook in a tomato sauce.\n\n## Instructions\n\n1. Chop the onion.";
+  assert.equal(recipeDescription(lead, "", "en", ingredients, { fallback }), "Eggs cook in a tomato sauce.");
+  assert.equal(recipeDescription(lead, "The sauce has a little smoked paprika.", "en", ingredients),
+    "The sauce has a little smoked paprika.");
+  assert.equal(recipeDescription("# Eggs\n\n## Instructions\n\n1. Chop the onion.", "", "en", ingredients, { fallback }), fallback);
+  assert.equal(recipeDescription("# Eggs\n\nWeigh the eggs without their shells.\n\n## Notes\n\nCheck the package.", "", "en", ingredients), "Made with tomato and eggs.");
+  assert.equal(recipeDescription("# Falafel\n\nChickpeas and herbs hold together as they bake.", "", "en", ingredients),
+    "Chickpeas and herbs hold together as they bake.");
+});
+
+test("published editorial copy reaches the recipe and JSON-LD without bypassing holds", () => {
+  const find = (id: string) => siteContent.recipes.find(recipe => recipe.recipeId === id && recipe.locale === "fi");
+  const muffins = find("munakasmuffinit");
+  assert.ok(muffins);
+  assert.match(muffins.description, /pekonia, pinaattia ja cheddaria/);
+  assert.equal(recipeJsonLd(muffins).description, muffins.description);
+  assert.match(muffins.seoDescription ?? "", /pekonista, pinaatista ja cheddarista/);
+  assert.match(muffins.notesHtml ?? "", /talteen otettu pekonirasva/);
+  assert.doesNotMatch(muffins.instructionsHtml, /Syö kaikki luetellut/);
+  const hold = "Älä valmista ruokaa tämän version mukaan.";
+  assert.equal(recipeDescription("# Recipe\n\nA good lead.", "", "fi", [], {
+    hold, editorial: "Public copy", fallback: "Search copy",
+  }), hold);
+  assert.equal(find("intialainen-idli-kookoschutneylla"), undefined);
 });

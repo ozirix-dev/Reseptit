@@ -61,7 +61,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     const methodPages = [
       { path: "/glykeeminen-kuorma/", locale: "fi", ogLocale: "fi_FI", title: "Reseptien glykeeminen kuorma (GK) | Recipavo", description: "Löydä reseptien glykeemisen kuorman (GK) arviot, luotettavuustiedot ja tarvittaessa tarkat laskentalähteet." },
       { path: "/en/glycemic-load/", locale: "en", ogLocale: "en_GB", title: "Glycemic load (GL) of recipes | Recipavo", description: "Explore calculated glycemic load estimates for recipes, their reliability and detailed sources." },
-      { path: "/sv/glykemisk-belastning/", locale: "sv", ogLocale: "sv_SE", title: "Receptens glykemiska belastning (GL) | Recipavo", description: "Hitta uppskattningar av receptens glykemiska belastning, säkerhet och detaljerade källor." },
+      { path: "/sv/glykemisk-belastning/", locale: "sv", ogLocale: "sv_SE", title: "Receptens glykemiska belastning (GL) | Recipavo", description: "Hitta uppskattningar av receptens glykemiska belastning, tillförlitlighet och detaljerade källor." },
       { path: "/th/glycemic-load/", locale: "th", ogLocale: "th_TH", title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | Recipavo", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ" },
     ] as const;
     for (const [index, methodPage] of methodPages.entries()) {
