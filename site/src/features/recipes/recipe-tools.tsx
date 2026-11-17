@@ -5,7 +5,7 @@ export const toolUi = {
   fi: {
     scaled: (base: number) => `Aineslista on skaalattu. Ohjeen tekstissä mainitut määrät koskevat ${base} annosta. Kypsennysaika ei skaalaudu suoraan annosmäärän mukaan.`,
     moreFilters: "Lisäsuodattimet",
-    jump: "Siirry ohjeeseen", print: "Tulosta resepti", completed: "Vaihe valmis", reset: "Nollaa työvaiheet", progress: "Valmiita työvaiheita",
+    jump: "Siirry valmistusohjeeseen", print: "Tulosta resepti", completed: "Vaihe valmis", reset: "Nollaa työvaiheet", progress: "Valmiita työvaiheita",
     time: "Kokonaisaika enintään", anyTime: "Kaikki ajat", gl: "Alkuperäisen reseptin GK / annos", anyGl: "Kaikki GK-luokat", lowGl: "Matala GK (≤ 10)", mediumGl: "Keskitasoinen GK (> 10, < 20)", highGl: "Korkea GK (≥ 20)", activeFilters: "Aktiiviset rajaukset", removeFilter: "Poista rajaus", glNote: "Suodatin käyttää alkuperäisen reseptin julkaistua GK-arviota. Muokattujen GK-versioiden arvoja ei käytetä tässä rajauksessa. Puuttuvat pistearviot ja luokkarajan ylittävät vaihteluvälit jäävät pois.", cuisine: "Ruokakulttuuri", anyCuisine: "Kaikki ruokakulttuurit", ingredient: "Pääraaka-aine", anyIngredient: "Kaikki pääraaka-aineet",
     cuisines: { thai: "Thaimaalainen", indian: "Intialainen", chinese: "Kiinalainen", mediterranean: "Välimerellinen", mexican: "Meksikolainen", japanese: "Japanilainen", korean: "Korealainen", vietnamese: "Vietnamilainen", indonesian: "Indonesialainen", malaysian: "Malesialainen", caribbean: "Karibia", "middle-eastern": "Lähi-itä", "north-african": "Pohjoisafrikkalainen" },
     ingredients: { fish: "Kala ja äyriäiset", chicken: "Kana", meat: "Liha", vegetables: "Kasvikset", legumes: "Palkokasvit", eggs: "Kananmuna", cheese: "Juusto" },
@@ -20,7 +20,7 @@ export const toolUi = {
   en: {
     scaled: (base: number) => `The ingredient list has been scaled. Quantities written in the method refer to ${base} servings. Cooking time does not scale directly with the number of servings.`,
     moreFilters: "More filters",
-    jump: "Jump to recipe", print: "Print recipe", completed: "Step complete", reset: "Reset steps", progress: "Completed steps",
+    jump: "Jump to method", print: "Print recipe", completed: "Step complete", reset: "Reset steps", progress: "Completed steps",
     time: "Total time at most", anyTime: "Any time", gl: "Original recipe GL / serving", anyGl: "All GL categories", lowGl: "Low GL (≤ 10)", mediumGl: "Medium GL (> 10, < 20)", highGl: "High GL (≥ 20)", activeFilters: "Active filters", removeFilter: "Remove filter", glNote: "This filter uses the published GL estimate for the original recipe. Modified GL-only versions are excluded. Missing point estimates and ranges crossing a category boundary are excluded.", cuisine: "Cuisine", anyCuisine: "All cuisines", ingredient: "Main ingredient", anyIngredient: "All main ingredients",
     cuisines: { thai: "Thai", indian: "Indian", chinese: "Chinese", mediterranean: "Mediterranean", mexican: "Mexican", japanese: "Japanese", korean: "Korean", vietnamese: "Vietnamese", indonesian: "Indonesian", malaysian: "Malaysian", caribbean: "Caribbean", "middle-eastern": "Middle Eastern", "north-african": "North African" },
     ingredients: { fish: "Fish and seafood", chicken: "Chicken", meat: "Meat", vegetables: "Vegetables", legumes: "Legumes", eggs: "Eggs", cheese: "Cheese" },
@@ -35,8 +35,8 @@ export const toolUi = {
   sv: {
     scaled: (base: number) => `Ingredienslistan har räknats om. Mängder i tillagningstexten gäller ${base} portioner. Tillagningstiden ändras inte proportionellt med antalet portioner.`,
     moreFilters: "Fler filter",
-    jump: "Till receptet", print: "Skriv ut receptet", completed: "Steget är klart", reset: "Återställ stegen", progress: "Klara steg",
-    time: "Total tid högst", anyTime: "Alla tider", gl: "Originalreceptets GB / portion", anyGl: "Alla GB-kategorier", lowGl: "Låg GB (≤ 10)", mediumGl: "Medelhög GB (> 10, < 20)", highGl: "Hög GB (≥ 20)", activeFilters: "Aktiva filter", removeFilter: "Ta bort filter", glNote: "Filtret använder det publicerade GB-estimatet för originalreceptet. Ändrade GB-versioner ingår inte. Saknade punktestimat och intervall som korsar en kategorigräns utelämnas.", cuisine: "Matkultur", anyCuisine: "Alla matkulturer", ingredient: "Huvudingrediens", anyIngredient: "Alla huvudingredienser",
+    jump: "Till tillagningen", print: "Skriv ut receptet", completed: "Steget är klart", reset: "Återställ stegen", progress: "Klara steg",
+    time: "Total tid högst", anyTime: "Alla tider", gl: "Originalreceptets GL per portion", anyGl: "Alla GL-kategorier", lowGl: "Låg GL (≤ 10)", mediumGl: "Medelhög GL (> 10, < 20)", highGl: "Hög GL (≥ 20)", activeFilters: "Aktiva filter", removeFilter: "Ta bort filter", glNote: "Filtret använder det publicerade GL-uppskattningen för originalreceptet. Ändrade GL-versioner ingår inte. Saknade punktuppskattningar och intervall som korsar en kategorigräns utelämnas.", cuisine: "Matkultur", anyCuisine: "Alla matkulturer", ingredient: "Huvudingrediens", anyIngredient: "Alla huvudingredienser",
     cuisines: { thai: "Thailändsk", indian: "Indisk", chinese: "Kinesisk", mediterranean: "Medelhavsmat", mexican: "Mexikansk", japanese: "Japansk", korean: "Koreansk", vietnamese: "Vietnamesisk", indonesian: "Indonesisk", malaysian: "Malaysisk", caribbean: "Karibisk", "middle-eastern": "Mellanöstern", "north-african": "Nordafrikansk" },
     ingredients: { fish: "Fisk och skaldjur", chicken: "Kyckling", meat: "Kött", vegetables: "Grönsaker", legumes: "Baljväxter", eggs: "Ägg", cheese: "Ost" },
     about: "Om recepten", owner: "Ozirix underhåller den här receptsamlingen.",

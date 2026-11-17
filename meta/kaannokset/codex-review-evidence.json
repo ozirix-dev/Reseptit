@@ -1371,7 +1371,13 @@
     "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "correction_pr": 656,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026 verrattu julkista esittelyä ja kaulintahuomiota FI-ohjeeseen. Koeleivonta ja APT-vaatimusten tarkistus ovat kesken. Enintään 20 g kaulintajauhoa, 24 piirakkaa ja munavoin erillisyys säilyvät. Julkinen teksti muodostuu tiedostossa site/scripts/public-recipe-copy.ts."
+      }
+    ]
   },
   "karjalanpiirakat-riisipuurolla:sv": {
     "source_hash": "3dd2f1827e2f115f45a86336b306f951c35f62ea74716f050aaaa665c4e59112",
@@ -1380,7 +1386,13 @@
     "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "correction_pr": 656,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026 verrattu julkista esittelyä ja kaulintahuomiota FI-ohjeeseen. Koeleivonta ja APT-vaatimusten tarkistus ovat kesken. Enintään 20 g kaulintajauhoa, 24 piirakkaa ja munavoin erillisyys säilyvät. Julkinen teksti muodostuu tiedostossa site/scripts/public-recipe-copy.ts."
+      }
+    ]
   },
   "karjalanpiirakat-riisipuurolla:th": {
     "source_hash": "3dd2f1827e2f115f45a86336b306f951c35f62ea74716f050aaaa665c4e59112",
@@ -1389,7 +1401,13 @@
     "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
     "correction_pr": 656,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "17.11.2026 verrattu julkista esittelyä ja kaulintahuomiota FI-ohjeeseen. Koeleivonta ja APT-vaatimusten tarkistus ovat kesken. Enintään 20 g kaulintajauhoa, 24 piirakkaa ja munavoin erillisyys säilyvät. Julkinen teksti muodostuu tiedostossa site/scripts/public-recipe-copy.ts."
+      }
+    ]
   },
   "keltainen-kanacurry-vhh:en": {
     "source_hash": "ef0e01433ec55e40f3f122c551c2dfe0eac5e7caadaeb13e66911ed1b20092ac",
@@ -6214,7 +6232,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Pinaatti sekoitetaan Thai-ohjeessa kastikkeeseen ennen uunia. Kaikissa kielissä filee kypsyy kastikkeessa 200 °C:ssa.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "17.11.2026 verrattu julkista esittelyä FI-ohjeeseen. Lohi ja pinaatti kypsyvät kermakastikkeessa uunissa. Kasvislisuke on valinnainen. Julkinen teksti muodostuu tiedostossa site/scripts/public-recipe-copy.ts."
+      }
+    ]
   },
   "kermainen-lohipata:sv": {
     "source_hash": "98316bae2f848de8889c21a773fce82120600b863132f845543d846d94f27ffc",
@@ -6222,7 +6246,13 @@
     "reviewed_at": "2026-11-13",
     "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Pinaatti sekoitetaan Thai-ohjeessa kastikkeeseen ennen uunia. Kaikissa kielissä filee kypsyy kastikkeessa 200 °C:ssa.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "17.11.2026 verrattu julkista esittelyä FI-ohjeeseen. Lohi ja pinaatti kypsyvät kermakastikkeessa uunissa. Kasvislisuke on valinnainen. Julkinen teksti muodostuu tiedostossa site/scripts/public-recipe-copy.ts."
+      }
+    ]
   },
   "kermainen-lohipata:th": {
     "source_hash": "98316bae2f848de8889c21a773fce82120600b863132f845543d846d94f27ffc",
@@ -6235,6 +6265,11 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "Pinaatti sekoitetaan Thai-ohjeessa kastikkeeseen ennen uunia. Kaikissa kielissä filee kypsyy kastikkeessa 200 °C:ssa."
+      },
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "17.11.2026 verrattu julkista esittelyä FI-ohjeeseen. Lohi ja pinaatti kypsyvät kermakastikkeessa uunissa. Kasvislisuke on valinnainen. Julkinen teksti muodostuu tiedostossa site/scripts/public-recipe-copy.ts."
       }
     ]
   },

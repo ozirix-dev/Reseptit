@@ -20,7 +20,6 @@ export interface BlogPost {
   author: string;
   image: string;
   imageAlt: string;
-  readingMinutes: number;
   sections: BlogSection[];
   sources: BlogSource[];
   related: { title: string; path: string }[];
@@ -33,14 +32,13 @@ export const blogPosts: BlogPost[] = [
     routePath: "/ruokaopas/briossisampylan-onnistuminen/",
     title: "Näin onnistuu briossisämpylä – viisi ratkaisevaa vaihetta",
     seoTitle: "Briossisämpylän onnistuminen: 5 tärkeää vaihetta | Ruokaopas",
-    excerpt: "Miksi toinen briossisämpylä on ilmava ja toinen raskas? Käymme läpi taikinan, voin, kohotuksen, muotoilun ja paiston ilman keksittyjä koepaistotuloksia.",
+    excerpt: "Miksi toinen briossisämpylä on ilmava ja toinen raskas? Taikinan vaivaus, voin lisääminen, kohotus ja paisto vaikuttavat rakenteeseen.",
     category: "Leivonnan tekniikat",
     datePublished: "2026-11-06",
-    dateModified: "2026-11-06",
+    dateModified: "2026-11-17",
     author: "Reseptit-toimitus",
     image: `${siteBase}/ruokaopas/briossi.svg`,
     imageAlt: "Piirrettyjä kullanruskeita briossisämpylöitä",
-    readingMinutes: 5,
     sections: [
       {
         heading: "Briossi on tavallista sämpylää rikkaampi taikina",
@@ -74,7 +72,7 @@ export const blogPosts: BlogPost[] = [
         heading: "4. Yhdeksän sämpylää voi olla sopiva määrä pellille",
         paragraphs: [
           "Yhdeksän kappaletta on käytännöllinen jaettava erä yhdelle pellille, jos sämpylät ovat sopivan kokoisia ja väliin jää kohoamisvaraa. Jaa taikina vaa'alla yhdeksään yhtä painavaan osaan. Muotoile tasaisesti pingottamalla pintaa kevyesti.",
-          "Tämä on annoskokoehdotus, ei väite siitä, että esimerkiksi kuuden sämpylän alkuperäisresepti toimisi muuttumattomana yhdeksällä kappaleella. Pienempi koko voi muuttaa paistoaikaa. Seuraa väriä ja kypsyyttä."
+          "Jos jaat kuuden sämpylän taikinan yhdeksään osaan, sämpylöistä tulee pienempiä ja paistoaika voi muuttua. Seuraa väriä ja kypsyyttä."
         ]
       },
       {
@@ -88,7 +86,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Mitä kannattaa vertailla seuraavaksi?",
         paragraphs: [
           "Reseptit-sivustolla on nyt kolme yhdeksän sämpylän ohjetta: Joshua Weissmanin tangzhong-tyylinen briossi, Moomien legendaariset hampurilaissämpylät ja The Clever Carrotin kevyempi versio. Erot liittyvät etenkin taikinan rakenteeseen, valmistustapaan ja voin määrään.",
-          "Reseptikortit ovat lähteistettyjä, omiksi kirjoitettuja sovituksia. Niitä ei esitetä toimituksen koepaistoina, eikä yhtä versiota nimetä parhaaksi ilman vertailukelpoista testiä. Jokaisen reseptin muistiossa on tiedot lähteistä ja tunnettuudesta."
+          "Vertailu perustuu reseptien aineksiin ja valmistustapoihin. Näitä kolmea sovitusta ei ole koepaistettu rinnakkain. Reseptien muistiinpanoista löydät alkuperäiset lähteet."
         ]
       }
     ],
@@ -108,14 +106,13 @@ export const blogPosts: BlogPost[] = [
     routePath: "/ruokaopas/glykeeminen-indeksi-ja-kuorma/",
     title: "GI ja GK käytännössä – miksi annoskoko ratkaisee?",
     seoTitle: "GI ja GK: mitä eroa niillä on ja miksi annoskoko ratkaisee? | Ruokaopas",
-    excerpt: "Glykeeminen indeksi (GI) kertoo hiilihydraatin laadusta, glykeeminen kuorma (GK) ottaa mukaan myös määrän. Esimerkki havainnollistaa eron.",
+    excerpt: "Glykeeminen indeksi (GI) kuvaa hiilihydraattia sisältävän ruoan vaikutusta verensokeriin. Glykeeminen kuorma (GK) huomioi myös annoksen hiilihydraattimäärän. Puuroesimerkki näyttää, miten annoskoko muuttaa arviota.",
     category: "Ravitsemus ja GK",
     datePublished: "2026-11-06",
-    dateModified: "2026-11-06",
+    dateModified: "2026-11-17",
     author: "Reseptit-toimitus",
     image: `${siteBase}/ruokaopas/gk.svg`,
-    imageAlt: "Piirretty kaurapuurokulho marjoilla. Ei kuva kahdesta annoksesta",
-    readingMinutes: 5,
+    imageAlt: "Kaurapuurokulho ja marjoja",
     sections: [
       {
         heading: "GI ja GK vastaavat eri kysymyksiin",
@@ -143,7 +140,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Miksi reseptin GK on vaikeampi kuin yksittäisen ruoan?",
         paragraphs: [
           "Reseptissä on usein useita hiilihydraatin lähteitä, joiden määrät, valmistusmuodot ja GI-lähteiden soveltuvuus vaihtelevat. Liemet, kastikkeet ja epätarkat määrät voivat estää luotettavan laskennan, vaikka itse kaava olisi helppo.",
-          "Reseptit-sivuston periaate on näyttää epävarmuus eikä korvata puuttuvia merkittäviä tietoja nollilla. Samasta syystä kaikki reseptit eivät vielä näytä GK-lukua."
+          "Jos laskennasta puuttuu olennainen tieto, reseptin GK-luku voi jäädä puuttumaan. Puuttuva arvio ei tarkoita nollaa."
         ]
       },
       {
@@ -181,7 +178,7 @@ export function blogJsonLd(post: BlogPost) {
 /** Adapter to existing blog UI and SEO while keeping the richer, source-linked pilot data. */
 export interface Article {
   slug: string; routePath: string; title: string; description: string; image: string; alt: string;
-  category: string; datePublished: string; dateModified: string; author: string; readingMinutes: number;
+  category: string; datePublished: string; dateModified: string; author: string;
   sections: {heading:string; text:string[]; points?:string[]}[];
   sources: BlogSource[]; related: {title:string;path:string}[];
 }
@@ -190,7 +187,6 @@ export const articles: Article[] = blogPosts.map(post => ({
   slug: post.slug, routePath: post.routePath, title: post.title, description: post.excerpt,
   image: post.image.replace(siteBase, ""), alt: post.imageAlt, category: post.category,
   datePublished: post.datePublished, dateModified: post.dateModified, author: post.author,
-  readingMinutes: post.readingMinutes,
   sections: post.sections.map(section => ({
     heading:section.heading, text:section.paragraphs ?? [], ...(section.points ? {points:section.points} : {})
   })),

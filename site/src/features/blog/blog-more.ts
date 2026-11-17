@@ -9,14 +9,13 @@ export const moreBlogPosts: BlogPost[] = [
     "routePath": "/ruokaopas/hiivataikina-ei-kohoa/",
     "title": "Miksi hiivataikina ei kohoa? Näin selvität syyn",
     "seoTitle": "Miksi hiivataikina ei kohoa? Näin selvität syyn | Ruokaopas",
-    "excerpt": "Lämpö, hiivan kunto ja taikinan koostumus ratkaisevat paljon. Tunnista ongelma ennen kuin lisäät turhaan jauhoja tai hiivaa.",
+    "excerpt": "Jos taikina pysyy litteänä, tarkista ensin lämpötila, hiivan kunto ja koostumus. Osa taikinoista tarvitsee vain lisää aikaa.",
     "category": "Leivonnan tekniikat",
     "datePublished": "2026-11-06",
-    "dateModified": "2026-11-06",
+    "dateModified": "2026-11-17",
     "author": "Reseptit-toimitus",
     "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/hiivataikina-ei-kohoa.svg",
-    "imageAlt": "Havainnekuva hiivataikinasta ja kohoavasta leivästä",
-    "readingMinutes": 5,
+    "imageAlt": "Hiivataikina ja kohoava leipä",
     "sections": [
       {
         "heading": "Ensin selvitä, onko taikina vain hidas",
@@ -73,14 +72,13 @@ export const moreBlogPosts: BlogPost[] = [
     "routePath": "/ruokaopas/pad-thai-ainesosat/",
     "title": "Pad thai kotona: mitkä ainekset tekevät siitä pad thain?",
     "seoTitle": "Pad thai kotona: mitkä ainekset tekevät siitä pad thain? | Ruokaopas",
-    "excerpt": "Tamarindi, kalakastike, makeus ja riisinuudelin käsittely ovat annoksen ytimessä. Kaikki versiot eivät ole samanlaisia.",
+    "excerpt": "Tamarindi, kalakastike ja palmusokeri tuovat pad thaihin happamuutta, suolaa ja makeutta. Riisinuudelien käsittely ratkaisee, pysyvätkö ne paistettaessa irtonaisina.",
     "category": "Maailman ruokakulttuurit",
     "datePublished": "2026-11-06",
-    "dateModified": "2026-11-06",
+    "dateModified": "2026-11-17",
     "author": "Reseptit-toimitus",
     "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/pad-thai-ainesosat.svg",
-    "imageAlt": "Havainnekuva thaimaalaisesta nuudeliannoksesta ja limetistä",
-    "readingMinutes": 5,
+    "imageAlt": "Nuudeliannos ja limetti",
     "sections": [
       {
         "heading": "Maku rakentuu happamasta, suolaisesta ja makeasta",
@@ -99,7 +97,7 @@ export const moreBlogPosts: BlogPost[] = [
       {
         "heading": "Miksi versioita on niin paljon?",
         "paragraphs": [
-          "Tofu, muna, kuivattu katkarapu, itu, ruohosipuli, maapähkinä ja limetti ovat tunnettuja osia, mutta proteiinivalinnat ja paikalliset käytännöt vaihtelevat. Yhtä ainoaa kotikeittiön mallia ei pidä esittää kaikkien thaimaalaisten ainoana oikeana reseptinä.",
+          "Pad thaihin käytetään usein tofua, kananmunaa, kuivattuja katkarapuja ja ituja. Ruohosipuli, maapähkinät ja limetti täydentävät annosta. Ainekset vaihtelevat reseptin ja alueen mukaan.",
           "Jos jätät kalakastikkeen tai kuivatut katkaravut pois, saat mahdollisesti hyvän muunnelman, mutta maku ei ole sama. Ilmoita reseptissä muutokset selkeästi."
         ]
       },
@@ -107,7 +105,7 @@ export const moreBlogPosts: BlogPost[] = [
         "heading": "Suomalaisen keittiön toimiva lähtökohta",
         "paragraphs": [
           "Hanki oikeantyyppinen tamarindi ja riisinuudeli ensin. Valmistele seuraavaksi kastike, lisukkeet ja proteiini. Näin pannuvaihe ei keskeydy puuttuvan ainesosan etsimiseen.",
-          "Vertaa lähteitä ennen kuin nimeät reseptin aidoksi. Tässä artikkelissa kuvataan valmistuksen periaatteita, ei toimituksen koepaistotuloksia."
+          "Tarkista riisinuudelipakkauksesta, tarvitaanko liotusta. Valuta liotetut nuudelit ennen kuin ne menevät pannulle."
         ]
       }
     ],
@@ -137,14 +135,13 @@ export const moreBlogPosts: BlogPost[] = [
     "routePath": "/ruokaopas/riisin-keitto-eri-lajikkeet/",
     "title": "Jasmiini-, basmati- ja puuroriisi: miksi sama keitto-ohje ei toimi kaikille?",
     "seoTitle": "Jasmiini-, basmati- ja puuroriisi: miksi sama keitto-ohje ei toimi kaikille? | Ruokaopas",
-    "excerpt": "Riisilajike, huuhtelu ja vesimäärä vaikuttavat rakenteeseen. Opi erottamaan irtonainen riisi ja puuroksi tarkoitettu riisi.",
+    "excerpt": "Valitse riisi sen mukaan, haluatko irtonaisen lisukkeen vai pehmeän puuron. Säädä huuhtelu ja vesimäärä valitsemasi riisin mukaan.",
     "category": "Ruoanlaiton perusteet",
     "datePublished": "2026-11-06",
-    "dateModified": "2026-11-06",
+    "dateModified": "2026-11-17",
     "author": "Reseptit-toimitus",
     "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/riisin-keitto-eri-lajikkeet.svg",
-    "imageAlt": "Havainnekuva kahdesta erityyppisestä riisikulhosta",
-    "readingMinutes": 5,
+    "imageAlt": "Kaksi kulhollista erilaista riisiä",
     "sections": [
       {
         "heading": "Lajike määrää tavoitellun rakenteen",
@@ -201,14 +198,13 @@ export const moreBlogPosts: BlogPost[] = [
     "routePath": "/ruokaopas/annoskoon-mittaaminen/",
     "title": "Annoskoko grammoina: miksi raakapaino ja kypsäpaino eivät ole sama asia?",
     "seoTitle": "Annoskoko grammoina: miksi raakapaino ja kypsäpaino eivät ole sama asia? | Ruokaopas",
-    "excerpt": "Ravintoarvolaskennassa 100 g kuivaa riisiä ja 100 g valmista riisiä ovat eri asioita. Näin pidät annostiedot selkeinä.",
+    "excerpt": "Riisi imee keittäessä vettä, joten 100 g kuivaa riisiä vastaa eri määrää ruokaa kuin 100 g kypsää riisiä. Valitse laskuriin punnitusta vastaava tietue.",
     "category": "Ravitsemus ja GK",
     "datePublished": "2026-11-06",
-    "dateModified": "2026-11-06",
+    "dateModified": "2026-11-17",
     "author": "Reseptit-toimitus",
     "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/annoskoon-mittaaminen.svg",
-    "imageAlt": "Havainnekuva keittiövaa'asta, kulhosta ja mitta-astioista",
-    "readingMinutes": 5,
+    "imageAlt": "Keittiövaaka, kulho ja mitta-astioita",
     "sections": [
       {
         "heading": "Valitse ensin mittausperuste",
@@ -228,13 +224,13 @@ export const moreBlogPosts: BlogPost[] = [
         "heading": "Vesi muuttaa painoa, ei ravintoaineita samalla suhteella",
         "paragraphs": [
           "Keittäminen voi lisätä ruoan vesimäärää, uunissa paistaminen taas haihduttaa sitä. Siksi ravintoarvo per 100 g saattaa muuttua ilman, että kaikki ravintoaineet muuttuvat samassa suhteessa.",
-          "Lisäksi osa ravintotekijöistä voi siirtyä keitinveteen tai muuttua valmistuksessa. Tarkka arvionti vaatii soveltuvan menetelmän eikä pelkkää painokerrointa."
+          "Lisäksi osa ravintotekijöistä voi siirtyä keitinveteen tai muuttua valmistuksessa. Tarkka arviointi ottaa painon lisäksi huomioon myös valmistuksen vaikutukset ravintoaineisiin."
         ]
       },
       {
         "heading": "Miksi tämä liittyy Recipavoon?",
         "paragraphs": [
-          "Tulevan ateriapäiväkirjan pitäisi kertoa näkyvästi, onko annos 100 g raakaa vai 100 g valmista ruokaa. Muuten sama kirjaus näyttää täsmälliseltä mutta voi perustua väärään painotilaan.",
+          "Merkitse ruokapäiväkirjaan, punnitsitko ruoan raakana vai kypsänä. Käytä laskurissa samaa painoperustetta.",
           "Ruokaviraston mukaan ravintoarvot esitetään yleensä 100 g:aa tai 100 ml:aa kohti. Annosarvokin on mahdollinen, kun annos on määritelty."
         ]
       }
@@ -261,14 +257,13 @@ export const moreBlogPosts: BlogPost[] = [
     "routePath": "/ruokaopas/ravintoarvolaskurit-eri-tulokset/",
     "title": "Miksi kaksi ravintoarvolaskuria antaa samasta ruoasta eri luvut?",
     "seoTitle": "Miksi kaksi ravintoarvolaskuria antaa samasta ruoasta eri luvut? | Ruokaopas",
-    "excerpt": "Erot voivat johtua raaka-ainetietueista, kuidusta, kypsennyshävikistä ja annoskoon tulkinnasta – eivät vain laskukaavasta.",
+    "excerpt": "Jos kaksi laskuria näyttää eri luvut, vertaa ensin raaka-aineiden tietoja, annoskokoja ja sitä, lasketaanko kuitu mukaan hiilihydraatteihin.",
     "category": "Ravitsemus ja GK",
     "datePublished": "2026-11-06",
-    "dateModified": "2026-11-06",
+    "dateModified": "2026-11-17",
     "author": "Reseptit-toimitus",
     "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/ravintoarvolaskurit-eri-tulokset.svg",
-    "imageAlt": "Havainnekuva kahdesta ravintolaskelman tuloskortista ja raaka-aineista",
-    "readingMinutes": 5,
+    "imageAlt": "Kaksi ravintolaskelmaa ja ruoka-aineita",
     "sections": [
       {
         "heading": "Ensimmäinen ero on usein elintarvikkeen valinta",
@@ -321,14 +316,13 @@ export const moreBlogPosts: BlogPost[] = [
     "routePath": "/ruokaopas/airfryer-vai-uuni/",
     "title": "Airfryer vai uuni? Valitse valmistusmenetelmä ruoan mukaan",
     "seoTitle": "Airfryer vai uuni? Valitse valmistusmenetelmä ruoan mukaan | Ruokaopas",
-    "excerpt": "Pieni ilmankiertolaite kypsentää usein nopeasti, mutta iso pelti kannattaa tehdä uunissa. Turvallinen kypsyys tarkistetaan kummassakin.",
+    "excerpt": "Pieni erä kypsyy usein nopeasti airfryerissa. Uuniin mahtuu kerralla koko pellillinen. Tarkista ruoan kypsyys laitteesta riippumatta.",
     "category": "Ruoanlaiton perusteet",
     "datePublished": "2026-11-06",
-    "dateModified": "2026-11-06",
+    "dateModified": "2026-11-17",
     "author": "Reseptit-toimitus",
     "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/airfryer-vai-uuni.svg",
-    "imageAlt": "Havainnekuva kiertoilmakypsentimestä ja uunista",
-    "readingMinutes": 5,
+    "imageAlt": "Airfryer ja uuni vierekkäin",
     "sections": [
       {
         "heading": "Molemmat perustuvat kuumaan ilmaan",
@@ -381,14 +375,13 @@ export const moreBlogPosts: BlogPost[] = [
     "routePath": "/ruokaopas/keto-vhh-ero/",
     "title": "Keto ja VHH eivät tarkoita samaa asiaa",
     "seoTitle": "Keto ja VHH eivät tarkoita samaa asiaa | Ruokaopas",
-    "excerpt": "Vähähiilihydraattisen ruokavalion raja vaihtelee määritelmän mukaan. Ketogeeninen on tavallisesti tiukempi, eikä yksittäinen resepti todista ketoosia.",
+    "excerpt": "Vähähiilihydraattiselle ruokavaliolle on useita määritelmiä. Ketogeenisessä ruokavaliossa hiilihydraatteja rajoitetaan yleensä tiukemmin. Ketoosia ei voi päätellä yksittäisestä reseptistä.",
     "category": "Ravitsemus ja GK",
     "datePublished": "2026-11-06",
-    "dateModified": "2026-11-06",
+    "dateModified": "2026-11-17",
     "author": "Reseptit-toimitus",
     "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/keto-vhh-ero.svg",
-    "imageAlt": "Havainnekuva avokadosta, kananmunasta, kasviksista ja muista ruoista",
-    "readingMinutes": 5,
+    "imageAlt": "Avokado, kananmuna ja kasviksia",
     "sections": [
       {
         "heading": "VHH on laaja käsite",
@@ -449,14 +442,13 @@ export const moreBlogPosts: BlogPost[] = [
     "routePath": "/ruokaopas/pizzapohjien-vertailu/",
     "title": "Pizzapohjien erot: hiivataikina, kaurapohja ja raejuustopohja",
     "seoTitle": "Pizzapohjien erot: hiivataikina, kaurapohja ja raejuustopohja | Ruokaopas",
-    "excerpt": "Kaikilla pizzapohjilla ei tavoitella samaa rakennetta. Vertailu auttaa valitsemaan rapeuden, maun ja käyttötarkoituksen mukaan.",
+    "excerpt": "Hiiva tekee taikinasta ilmavaa, kaura tuo pohjaan oman makunsa ja raejuusto lisää kosteutta. Valitse pohja sen mukaan, millaisen pizzan haluat.",
     "category": "Reseptivertailut",
     "datePublished": "2026-11-06",
-    "dateModified": "2026-11-06",
+    "dateModified": "2026-11-17",
     "author": "Reseptit-toimitus",
     "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/pizzapohjien-vertailu.svg",
-    "imageAlt": "Havainnekuva kolmesta erilaisesta pizzapohjasta",
-    "readingMinutes": 5,
+    "imageAlt": "Kolme erilaista pizzapohjaa",
     "sections": [
       {
         "heading": "Hiivataikinassa syntyy venyvä rakenne",
@@ -483,7 +475,7 @@ export const moreBlogPosts: BlogPost[] = [
         "heading": "Mitä kannattaa vertailla oikeasti?",
         "paragraphs": [
           "Vertaa pohjan painoa, kypsennysaikaa, käsiteltävyyttä, kuormitettavuutta ja makua. Ravintoarvoissa tarkastele samaa annoskokoa — ei esimerkiksi kokonaista ohutta pizzaa vastaan puolikasta paksupohjaista.",
-          "Tässä artikkelissa ei väitetä kolmea pohjaa sokkomaistetuksi tai koepaistetuksi. Reseptin oma valmistusohje ja dokumentoitu ravintolaskenta ovat ratkaisevat."
+          "Vertailu perustuu aineksiin ja valmistustapoihin. Pohjia ei ole koepaistettu tai maistettu rinnakkain. Katso paisto-ohje ja ravintoarvio valitsemastasi reseptistä."
         ]
       }
     ],
@@ -517,14 +509,13 @@ export const moreBlogPosts: BlogPost[] = [
     "routePath": "/ruokaopas/thaimaalaiset-raaka-aineet-suomessa/",
     "title": "Thaimaalaiset raaka-aineet Suomessa: mitä voi korvata ja mitä ei?",
     "seoTitle": "Thaimaalaiset raaka-aineet Suomessa: mitä voi korvata ja mitä ei? | Ruokaopas",
-    "excerpt": "Sitruunaruoho, galangal ja makrutlimetin lehdet antavat erilaiset aromit. Pakaste voi olla parempi ratkaisu kuin väärä tuore korvike.",
+    "excerpt": "Jos tuoretta sitruunaruohoa, galangalia tai makrutlimetin lehtiä ei löydy, etsi ensin samaa ainesta pakasteena. Näillä aineksilla on kullakin oma arominsa.",
     "category": "Maailman ruokakulttuurit",
     "datePublished": "2026-11-06",
-    "dateModified": "2026-11-06",
+    "dateModified": "2026-11-17",
     "author": "Reseptit-toimitus",
     "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/thaimaalaiset-raaka-aineet-suomessa.svg",
-    "imageAlt": "Havainnekuva sitruunaruohosta, galangalista, chilistä ja limetistä",
-    "readingMinutes": 5,
+    "imageAlt": "Sitruunaruoho, galangal, chiliä ja limetti",
     "sections": [
       {
         "heading": "Kolme samannäköistä mutta eri tarkoituksen aromia",
@@ -585,20 +576,19 @@ export const moreBlogPosts: BlogPost[] = [
     "routePath": "/ruokaopas/ravintoarvio-epavarmuus/",
     "title": "Voiko reseptin ravintoarvoon luottaa, jos se on arvio?",
     "seoTitle": "Voiko reseptin ravintoarvoon luottaa, jos se on arvio? | Ruokaopas",
-    "excerpt": "Lähteistetty laskennallinen arvo on usein hyödyllinen, mutta se ei ole automaattisesti valmisruoan laboratoriomittaus.",
+    "excerpt": "Ravintoarvio kertoo, paljonko annoksessa on laskelman mukaan ravintoaineita. Katso, mihin ainesosiin ja annoskokoon arvio perustuu.",
     "category": "Ravitsemus ja GK",
     "datePublished": "2026-11-06",
-    "dateModified": "2026-11-06",
+    "dateModified": "2026-11-17",
     "author": "Reseptit-toimitus",
     "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/ravintoarvio-epavarmuus.svg",
-    "imageAlt": "Havainnekuva ravintoarvomerkinnästä ja keittiövaa'asta",
-    "readingMinutes": 5,
+    "imageAlt": "Ravintoarvomerkintä ja keittiövaaka",
     "sections": [
       {
-        "heading": "Arvio voi olla asiallinen ilman laboratoriota",
+        "heading": "Mihin ravintoarvio perustuu?",
         "paragraphs": [
           "Ruokaviraston mukaan ravintoarvot voivat perustua analyysin lisäksi hyväksyttyihin koostumustietoihin ja laskelmiin. Tällöin laskennan luotettavuus riippuu ennen muuta siitä, vastaavatko lähtötiedot oikeaa ruokaa ja annosta.",
-          "Selkeästi lähteistetty keskiarvo ei ole sama asia kuin arvaus. Toisaalta laskurin monta desimaalia eivät tee arvosta mitattua tai yksilöllisesti tarkkaa."
+          "Lähteen avulla voit tarkistaa, vastaako laskennassa käytetty elintarvike omaa ainestasi. Desimaalien määrä kertoo esitystarkkuudesta, ei arvion luotettavuudesta."
         ]
       },
       {
@@ -612,14 +602,14 @@ export const moreBlogPosts: BlogPost[] = [
         "heading": "Puuttuvaa tietoa ei saa korvata nollalla",
         "paragraphs": [
           "Jos tarvittavaa tietoa ei ole, arvion on kerrottava se. Tämä koskee erityisesti glykeemistä kuormaa: ilman soveltuvaa GI-arvoa tai hiilihydraattimäärää kokonais-GK voi jäädä laskematta.",
-          "Nolla kertoo mitatun tai lähteistetyn nollan vasta, jos sille on riittävä peruste. Tuntematon on tuntematon, vaikka käyttöliittymässä nolla olisi helppo näyttää."
+          "Nolla voidaan näyttää, kun mittaus tai muu luotettava lähde antaa arvoksi nollan. Muuten puuttuva arvo jätetään avoimeksi."
         ]
       },
       {
         "heading": "Näin lukija käyttää arviota oikein",
         "paragraphs": [
           "Vertaile samanlaisin perustein laskettuja annoksia. Katso lähteet, määrät, arvioinnin luonne ja mahdolliset puuttuvat osuudet. Älä tee terveyspäätöstä yhden arvioluvun perusteella.",
-          "Recipavon tavoite on pitää näkyvillä ero mitatun, laskennallisen ja puuttuvan tiedon välillä. Laskennan ulkoasu ei saa piilottaa tätä eroa."
+          "Tarkista vertailussa, perustuuko kukin luku mittaukseen vai laskelmaan ja kattaako laskelma kaikki annoksen olennaiset ainekset."
         ]
       }
     ],
