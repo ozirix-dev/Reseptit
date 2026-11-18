@@ -47,6 +47,13 @@ export interface NamedGkAlternative {
 
 export type CarbohydrateComparison = Pick<RecipeEntry, "title" | "routePath"> & { range: GkRange };
 
+export interface SideCarbohydrate {
+  name: LocalizedText;
+  availableCarbsGPer100g: number;
+  source: string;
+  weightsG: readonly number[];
+}
+
 export interface PortionEvidence {
   ingredientPortion?: IngredientPortion;
   alternatives?: NamedGkAlternative[];
@@ -54,6 +61,7 @@ export interface PortionEvidence {
   reviewedSource?: string;
   availableCarbs?: GkRange;
   carbohydrateComparisons?: Partial<Record<RecipeLocale, CarbohydrateComparison>>;
+  sideCarbohydrate?: SideCarbohydrate;
   wholeCarbohydrateChoices?: CarbohydrateChoice[];
   driver?: { ingredientIndex: number; coversMajority: boolean };
   verbal?: VerbalGk;

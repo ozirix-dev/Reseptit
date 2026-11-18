@@ -704,6 +704,33 @@ test("modeled GL with withheld whole-serving carbohydrates shows the scaled ingr
   }
 });
 
+test("optional side references remain separate from original nutrition on recipe and guide pages", async () => {
+  const cases = { "kerala-kalacurry": 23.561, "dal-makhani": 23.561, "kana-tagine-sitruunalla": 63.6 };
+  for (const [id, amount] of Object.entries(cases)) {
+    const evidence: PortionEvidence | undefined = glycemicLoadPortions[id];
+    const side = evidence?.sideCarbohydrate;
+    assert.ok(side, id);
+    assert.equal(side.availableCarbsGPer100g, amount, id);
+    const locales = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.equal(locales.length, 4, id);
+    for (const { locale, routePath } of locales) {
+      const [recipe, guide] = await Promise.all([
+        readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8"),
+        readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8"),
+      ]);
+      const start = guide.indexOf(`id="${id}" class="glycemic-pilot__recipe"`);
+      assert.ok(start >= 0, routePath);
+      const row = guide.slice(start, guide.indexOf("<li ", start + 1));
+      assert.match(recipe, /data-side-comparison="true"/, routePath);
+      for (const html of [recipe, row]) {
+        const reference = html.match(/<p data-side-reference="true"[^>]*>(.*?)<\/p>/s)?.[1];
+        assert.ok(reference?.includes(side.name[locale]) && reference.includes(`href="${side.source}"`), routePath);
+        assert.doesNotMatch(html, /data-side-combined-carbohydrate=|id="recipe-side-weight"/, routePath);
+      }
+    }
+  }
+});
+
 test("whole-portion comparisons link to the exact other recipe in each shared language", async () => {
   for (const [[left, leftAmount], [right, rightAmount]] of [
     [["paahtopaistileivat-kauralesesampyloilla", 4.57], ["paahtopaistileipa-piparjuurikastikkeella", 22.70]],

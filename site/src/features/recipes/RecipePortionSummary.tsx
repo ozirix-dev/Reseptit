@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import { useId, useState } from "react";
 import type { RecipeEntry, RecipeLocale } from "../../types/content";
-import { eatenPortions, scalePortionRange, verbalGkForPortion, type CarbohydrateChoice, type CarbohydrateComparison, type IngredientPortion, type NamedGkAlternative, type originalPortionGk, type PortionCarbs, type PortionEvidence } from "./gk-portion";
+import { eatenPortions, scalePortionRange, verbalGkForPortion, type CarbohydrateChoice, type CarbohydrateComparison, type IngredientPortion, type NamedGkAlternative, type originalPortionGk, type PortionCarbs, type PortionEvidence, type SideCarbohydrate } from "./gk-portion";
 import type { GkRange } from "./gk-estimate";
 import { formatGlycemicLoadNumber } from "./gk80-format";
 
@@ -252,6 +253,75 @@ export function OriginalCarbohydrateComparison({ comparison, locale, multiplier 
     <Link to={comparison.routePath}>{comparison.title}</Link>
     {" · "}<span aria-live="polite" aria-atomic="true">{text.about} {comparisonCopy[locale](amount)} · {serving}</span>
   </p>;
+}
+
+const sideCopy = {
+  fi: {
+    title: "Vertaa lisukkeen määrää", weight: "Lisukkeen paino", without: "Ei lisuketta", separate: "Lisuke erikseen",
+    reference: (amount: string) => `noin ${amount} g imeytyvää hiilihydraattia / 100 g`,
+    component: "Imeytyvää hiilihydraattia lisukkeessa", total: "Imeytyvää hiilihydraattia pääruoassa ja lisukkeessa yhteensä",
+    scope: "Mahdollinen alkuperäisen reseptin GK-arvio koskee pääruokaa sellaisenaan. Lisukkeelle käytetään Finelin viitearvoa ilman lisättyjä aineksia.",
+  },
+  en: {
+    title: "Compare side portions", weight: "Side weight", without: "No side", separate: "Side counted separately",
+    reference: (amount: string) => `about ${amount} g of available carbohydrate per 100 g`,
+    component: "Available carbohydrate in the side", total: "Available carbohydrate in the main dish and side combined",
+    scope: "Any GL estimate for the original recipe applies to the main dish alone. The side uses Fineli's reference value for the plain food.",
+  },
+  sv: {
+    title: "Jämför mängder av tillbehöret", weight: "Tillbehörets vikt", without: "Inget tillbehör", separate: "Tillbehöret räknas separat",
+    reference: (amount: string) => `cirka ${amount} g tillgängliga kolhydrater per 100 g`,
+    component: "Tillgängliga kolhydrater i tillbehöret", total: "Tillgängliga kolhydrater i huvudrätten och tillbehöret tillsammans",
+    scope: "En eventuell GL-uppskattning för originalreceptet gäller huvudrätten som den är. Tillbehöret använder Finelis referensvärde för livsmedlet utan tillsatser.",
+  },
+  th: {
+    title: "เปรียบเทียบปริมาณเครื่องเคียง", weight: "น้ำหนักเครื่องเคียง", without: "ไม่ใส่เครื่องเคียง", separate: "คิดเครื่องเคียงแยกต่างหาก",
+    reference: (amount: string) => `คาร์โบไฮเดรตที่ย่อยได้ประมาณ ${amount} กรัมต่อ 100 กรัม`,
+    component: "คาร์โบไฮเดรตที่ย่อยได้ในเครื่องเคียง", total: "คาร์โบไฮเดรตที่ย่อยได้รวมในอาหารจานหลักและเครื่องเคียง",
+    scope: "หากมีค่าประมาณ GL สำหรับสูตรต้นฉบับ ค่านั้นใช้กับจานหลักอย่างเดียว ค่าของเครื่องเคียงอ้างอิงจาก Fineli สำหรับอาหารที่ไม่เติมวัตถุดิบอื่น",
+  },
+};
+
+export function SideCarbohydrateReference({ side, locale, id }: { side: SideCarbohydrate; locale: RecipeLocale; id?: string }) {
+  const copy = sideCopy[locale];
+  return <p data-side-reference id={id}>{copy.separate} · {side.name[locale]} · {copy.reference(formatCarbs(side.availableCarbsGPer100g, locale))}{" · "}
+    <a href={side.source} rel="noopener noreferrer">Fineli</a>
+  </p>;
+}
+
+export function SideCarbohydrateComparison({ side, locale, carbs, multiplier, interactive }: {
+  side: SideCarbohydrate;
+  locale: RecipeLocale;
+  carbs: PortionCarbs | null;
+  multiplier: number;
+  interactive: boolean;
+}) {
+  const [weight, setWeight] = useState(0);
+  const referenceId = useId();
+  const copy = sideCopy[locale];
+  const gram = locale === "th" ? "กรัม" : "g";
+  const available = side.availableCarbsGPer100g * weight / 100;
+  const dish = carbs?.definition === "available" && !carbs.choices ? scalePortionRange(carbs.range, multiplier) : null;
+  const total = dish ? { min: dish.min + available, max: dish.max + available } : null;
+  const about = portionCopy[locale].about;
+  return <details className="gk-evidence__details" data-side-comparison>
+    <summary>{copy.title}</summary>
+    <SideCarbohydrateReference side={side} locale={locale} id={referenceId} />
+    {interactive ? <div className="recipe-portion__control">
+      <label htmlFor="recipe-side-weight">{copy.weight}</label>
+      <select id="recipe-side-weight" aria-describedby={referenceId} value={weight} onChange={event => setWeight(Number(event.currentTarget.value))}>
+        <option value={0}>{copy.without}</option>
+        {side.weightsG.map(value => <option key={value} value={value}>{formatCarbs(value, locale)} {gram}</option>)}
+      </select>
+    </div> : null}
+    <div aria-live="polite" aria-atomic="true">
+      {weight > 0 ? <dl className="nutrition-list">
+        <div><dt>{copy.component}</dt><dd data-side-carbohydrate>{about} {formatCarbs(available, locale)} {gram}</dd></div>
+        {total ? <div><dt>{copy.total}</dt><dd data-side-combined-carbohydrate>{about} {describeCarbs(total, locale)} {gram}</dd></div> : null}
+      </dl> : null}
+    </div>
+    <p className="recipe-disclosure">{copy.scope}</p>
+  </details>;
 }
 
 export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batchServings, onChange }: {

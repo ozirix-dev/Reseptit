@@ -1154,7 +1154,7 @@
     "preparationSha256": "c402ce74edf844d840dec0256c8e27087a5d62d0a888b600d6d03f672dbfcdee",
     "reviewedAt": "2026-11-18",
     "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/paaruoat/dal-makhani.md",
-    "reasoning": "Four portions use 400 g crushed tomatoes. The sauce is simmered and retained. THL Fineli Release 20 #398 lists 3.45 g available carbohydrate per 100 g of canned crushed tomatoes (food page rounds to 3.5 g). This estimates only that weighed ingredient. Original and current recipe describe both pulses as soaked overnight but neither identifies whether 250 g urad dal and 80 g kidney beans are weighed before or after soaking. The legacy cooked kidney bean entry is not a match for soaked weight. Rice or naan has no fixed type or amount.",
+    "reasoning": "Four portions use 400 g crushed tomatoes. The sauce is simmered and retained. THL Fineli Release 20 #398 lists 3.45 g available carbohydrate per 100 g of canned crushed tomatoes (food page rounds to 3.5 g). This estimates only that weighed ingredient. Original and current recipe describe both pulses as soaked overnight but neither identifies whether 250 g urad dal and 80 g kidney beans are weighed before or after soaking. The legacy cooked kidney bean entry is not a match for soaked weight. Rice or naan has no fixed type or amount. The side is optional and outside the listed recipe ingredients. The side calculator uses a reviewed Fineli reference for the selected weight. It neither assumes a side mass nor changes original or variant GK.",
     "condition": {
       "fi": "Kirjaa, punnitsetko urad-dalin ja kidneypavut ennen vai jälkeen liotuksen. Käytä samalle punnitustavalle annettuja ravintoarvoja. Huomioi riisi tai naan erikseen.",
       "en": "Note whether you weigh the urad dal and kidney beans before or after soaking. Use nutrition values for the same weighing state. Count rice or naan separately.",
@@ -1173,6 +1173,10 @@
         "sv": "Krossade tomater",
         "th": "มะเขือเทศบด"
       }
+    },
+    "sideCarbohydrate": {
+      "foodId": "fineli-30346-release-20",
+      "foodSha256": "954a98bd538c9cd3fda5f076626d5f09685bc018bd8e1164ddc1c39c6ea3c5fe"
     }
   },
   "mala-xiang-guo": {
@@ -1229,12 +1233,12 @@
     "preparationSha256": "b24575f021093db39e3d8ab131652940c3d3871ccfb268c23cd90fc377a568b0",
     "reviewedAt": "2026-11-18",
     "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/paaruoat/kana-tagine-sitruunalla.md",
-    "reasoning": "Serving step 5 suggests couscous or bread but fixes neither product nor quantity. THL Fineli Release 20 #29208 plain dry wheat couscous provides 63.6 g available carbohydrate per 100 g dry input. This is a conditional side-only concentration with no adopted serving mass and no reference for cooked or pearl couscous or any bread. The existing exact GK version fixes the side and changes the prescribed preserved-lemon peel and stock, so its GK stays inside that version. Original held details include edible preserved lemon rind mass and its matched composition, actual ready-to-use stock and olive drained edible basis. Ingredient row 7 supplies 120 g green olives for four servings. Step 4 adds the olives. No pitting or draining amount, match to a specified olive product, or label composition is given. 30 g is the ingredient amount as written, not the weight of flesh after accounting for pits or brine. Fineli #34972 describes an average pitted green olive in brine and lists 0 g available carbohydrate per 100 g for that record only. Hold this comparison out of the recipe's numerical outputs. The preserved lemon row supplies one fruit and uses only the peel, optionally rinsed: the drained/rinsed rind weight and matched composition remain unknown. The onion is one unspecified onion. Stock dilution and side choice/amount remain unresolved. The approved separate GK version fixes multiple quantities and ingredients and cannot be widened.",
+    "reasoning": "Serving step 5 suggests couscous or bread but fixes neither product nor quantity. THL Fineli Release 20 #29208 plain dry wheat couscous provides 63.6 g available carbohydrate per 100 g dry input. This is a conditional side-only concentration with no adopted serving mass and no reference for cooked or pearl couscous or any bread. The existing exact GK version fixes the side and changes the prescribed preserved-lemon peel and stock, so its GK stays inside that version. Original held details include edible preserved lemon rind mass and its matched composition, actual ready-to-use stock and olive drained edible basis. Ingredient row 7 supplies 120 g green olives for four servings. Step 4 adds the olives. No pitting or draining amount, match to a specified olive product, or label composition is given. 30 g is the ingredient amount as written, not the weight of flesh after accounting for pits or brine. Fineli #34972 describes an average pitted green olive in brine and lists 0 g available carbohydrate per 100 g for that record only. Hold this comparison out of the recipe's numerical outputs. The preserved lemon row supplies one fruit and uses only the peel, optionally rinsed: the drained/rinsed rind weight and matched composition remain unknown. The onion is one unspecified onion. Stock dilution and side choice/amount remain unresolved. The approved separate GK version fixes multiple quantities and ingredients and cannot be widened. The side is optional and outside the listed recipe ingredients. The side calculator uses a reviewed Fineli reference for the selected weight. It neither assumes a side mass nor changes original or variant GK.",
     "condition": {
-      "fi": "Huomioi lisuke erikseen. Tavallisessa vehnäkuskusissa on noin 64 g imeytyvää hiilihydraattia 100 grammaa kuivaa kuskusia kohti. Jos punnitset kuskusin kypsänä tai valitset leivän, käytä kyseisen lisukkeen ravintoarvoa. Oliivien ravintoarvioon tarvitset syötävän painon ilman kiviä tai säilytyslientä.",
-      "en": "Count the side separately. Plain wheat couscous has about 64 g of available carbohydrate per 100 g dry. If you weigh cooked couscous or choose bread, use nutrition values for the side you serve. For the olives, use their edible weight without pits or brine to estimate their carbohydrate.",
-      "sv": "Räkna med tillbehöret separat. Vanlig vetecouscous innehåller cirka 64 g tillgängliga kolhydrater per 100 g torr vikt. Om du väger kokt couscous eller väljer bröd, använd näringsvärdet för tillbehöret du serverar. Använd olivernas ätliga vikt utan kärnor eller lag när du uppskattar kolhydraterna.",
-      "th": "คิดเครื่องเคียงแยกต่างหาก คูสคูสข้าวสาลีแบบธรรมดา 100 กรัมก่อนปรุงมีคาร์โบไฮเดรตที่ย่อยได้ประมาณ 64 กรัม หากชั่งคูสคูสหลังปรุงหรือเลือกขนมปัง ให้ใช้ข้อมูลโภชนาการของเครื่องเคียงที่เสิร์ฟจริง หากต้องการประมาณคาร์โบไฮเดรตจากมะกอก ให้ชั่งส่วนที่กินได้โดยไม่รวมเมล็ดหรือน้ำเกลือ"
+      "fi": "Huomioi lisuke erikseen. Jos punnitset kuskusin kypsänä tai valitset leivän, käytä kyseisen lisukkeen ravintoarvoa. Oliivien ravintoarvioon tarvitset syötävän painon ilman kiviä tai säilytyslientä.",
+      "en": "Count the side separately. If you weigh cooked couscous or choose bread, use nutrition values for the side you serve. For the olives, use their edible weight without pits or brine to estimate their carbohydrate.",
+      "sv": "Räkna med tillbehöret separat. Om du väger kokt couscous eller väljer bröd, använd näringsvärdet för tillbehöret du serverar. Använd olivernas ätliga vikt utan kärnor eller lag när du uppskattar kolhydraterna.",
+      "th": "คิดเครื่องเคียงแยกต่างหาก หากชั่งคูสคูสหลังปรุงหรือเลือกขนมปัง ให้ใช้ข้อมูลโภชนาการของเครื่องเคียงที่เสิร์ฟจริง หากต้องการประมาณคาร์โบไฮเดรตจากมะกอก ให้ชั่งส่วนที่กินได้โดยไม่รวมเมล็ดหรือน้ำเกลือ"
     },
     "publicSource": "https://fineli.fi/fineli/fi/elintarvikkeet/29208",
     "ingredientPortion": {
@@ -1247,6 +1251,10 @@
         "th": "มะกอกเขียวตามปริมาณในสูตร"
       },
       "unit": "g"
+    },
+    "sideCarbohydrate": {
+      "foodId": "fineli-29208-release-20",
+      "foodSha256": "e9b4082b9adb2bc58724deb7e10cb426f60816fb6446cd03347842f22ae1618c"
     }
   },
   "palak-paneer": {
@@ -5708,6 +5716,18 @@
         "sv": "Ansad grön sparris före ugnsstekning",
         "th": "หน่อไม้ฝรั่งสีเขียวตัดแต่งก่อนอบ"
       }
+    }
+  },
+  "kerala-kalacurry": {
+    "recipeBindingSha256": "fc34527a362935c734605dfd8922063b927de48322d1742c99f5ccc0bc930813",
+    "preparationSha256": "cf7e4a4f4ff5cb0ffd0eeb66e974c124e13ccc9755889265444c238f979ecfa5",
+    "nutritionSha256": "cb24229a965e9535976f132390fda5e36546babf233300a14248676dc896feec",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/api/v1/foods/30346",
+    "reasoning": "Published carbohydrate applies to the original curry only. The preparation suggests serving rice separately. The Fineli record applies to plain cooked long-grain rice weighed after cooking. Preserve all current original assessment and release gates.",
+    "sideCarbohydrate": {
+      "foodId": "fineli-30346-release-20",
+      "foodSha256": "954a98bd538c9cd3fda5f076626d5f09685bc018bd8e1164ddc1c39c6ea3c5fe"
     }
   }
 }

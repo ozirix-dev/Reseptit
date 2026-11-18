@@ -126,6 +126,29 @@ test("volume-only ingredient evidence cannot carry a per-100-gram carbohydrate v
   }
 });
 
+test("an optional side stays outside the recipe and is bound to its exact food and preparation", async () => {
+  const id = "kerala-kalacurry";
+  const [reviews, markdown] = await Promise.all([
+    loadReviewedPortions(root),
+    readFile(path.join(root, "reseptit/paaruoat", `${id}.md`), "utf8"),
+  ]);
+  const review = reviews[id];
+  const original = await projectPortionEvidence(root, id, markdown);
+  const { portion } = await projectPortionEvidence(root, id, markdown, review);
+  assert.deepEqual(portion.availableCarbs, original.portion.availableCarbs);
+  assert.equal(portion.sideCarbohydrate?.availableCarbsGPer100g, 23.561);
+  assert.equal(portion.sideCarbohydrate?.name.fi, "Keitetty pitkäjyväinen riisi");
+  assert.deepEqual(portion.sideCarbohydrate?.weightsG, [50, 100, 150, 200]);
+  assert.equal(portion.ingredientPortion, undefined);
+  assert.equal(portion.verbal, undefined);
+  const side = review.sideCarbohydrate!;
+  await assert.rejects(projectPortionEvidence(root, id, markdown, {
+    ...review, sideCarbohydrate: { ...side, foodSha256: "changed" },
+  }), /side carbohydrate needs the exact reviewed food composition/);
+  await assert.rejects(projectPortionEvidence(root, id, markdown.replace("6. Maista ja säädä suola. Tarjoa riisin kanssa.",
+    "6. Maista ja säädä suola. Tarjoa leivän kanssa."), review), /preparation or serving notes changed/);
+});
+
 test("a package label projects only the named ingredient's carbohydrate", async () => {
   const id = "gluteeniton-siemenvuokaleipa";
   const [reviews, markdown] = await Promise.all([

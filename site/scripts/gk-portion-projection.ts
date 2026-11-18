@@ -1,7 +1,7 @@
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import type { IngredientPortion, PortionEvidence, LocalizedText, VerbalGk } from "../src/features/recipes/gk-portion";
+import type { IngredientPortion, PortionEvidence, LocalizedText, SideCarbohydrate, VerbalGk } from "../src/features/recipes/gk-portion";
 import type { RecipeEntry } from "../src/types/content";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeBindingHash } from "./glycemic-load-recipe-binding";
@@ -12,6 +12,17 @@ import { isScopedPolyolEvidence } from "./gk80-polyol-c";
 
 type CompositionMatch = { index: number } & Partial<Omit<IngredientInput, "item" | "amount" | "unit">>;
 type NutritionRecipe = Parameters<typeof verifyNutritionEvidence>[0];
+
+const sideFoods = {
+  "fineli-30346-release-20": {
+    name: { fi: "Keitetty pitkäjyväinen riisi", en: "Cooked long-grain rice", sv: "Kokt långkornigt ris", th: "ข้าวเมล็ดยาวที่หุงสุก" },
+    weightsG: [50, 100, 150, 200],
+  },
+  "fineli-29208-release-20": {
+    name: { fi: "Vehnäkuskus, kuivapaino", en: "Wheat couscous, dry weight", sv: "Vetecouscous, torrvikt", th: "คูสคูสข้าวสาลี น้ำหนักก่อนปรุง" },
+    weightsG: [25, 50, 75, 100],
+  },
+} satisfies Record<string, Pick<SideCarbohydrate, "name" | "weightsG">>;
 
 interface CountedRecipeIngredient {
   index: number;
@@ -52,6 +63,7 @@ interface ReviewedPortion {
     localizedScopeSha256?: Partial<LocalizedText>;
   };
   carbohydrateComparisonRecipeId?: string;
+  sideCarbohydrate?: { foodId: keyof typeof sideFoods; foodSha256: string };
   portionGrams?: number;
   knownCarbIngredient?: string;
   nutritionSha256?: string;
@@ -218,7 +230,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
   if (review && (review.verbal || review.condition || review.carbohydrateScope || review.legacyGkHold || review.ingredientProduct || review.classLimitation
       || review.ingredientPortion || review.alternativeLabels || review.versionAlternativeLabels
       || review.zeroCarbohydrate || review.wholeCarbohydrateOnly || review.declaredLabelIngredientIndices
-      || review.portionGrams || review.piecesPerServing)
+      || review.portionGrams || review.piecesPerServing || review.sideCarbohydrate)
       && review.preparationSha256 !== portionPreparationHash(markdown)) {
     throw new Error(`${recipeId}: reviewed preparation or serving notes changed; re-review the public portion information.`);
   }
@@ -229,6 +241,19 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
   });
   if (review?.nutritionSha256 && (!raw || review.nutritionSha256 !== hash(raw))) {
     throw new Error(`${recipeId}: reviewed GK portion's nutrition evidence changed and requires review.`);
+  }
+  if (review?.sideCarbohydrate) {
+    const { foodId, foodSha256 } = review.sideCarbohydrate;
+    const side = Object.hasOwn(sideFoods, foodId) ? sideFoods[foodId] : undefined;
+    const records = JSON.parse(await readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8")) as FoodRecord[];
+    const source = records.find(record => record.id === foodId);
+    const carbohydrates = source?.per100g.carbohydrate;
+    if (!side || !source || hash(JSON.stringify(source)) !== foodSha256 || !httpsSource(source.sourceUrl)
+        || source.carbohydrateDefinition !== "EU_AVAILABLE" || typeof carbohydrates !== "number"
+        || !Number.isFinite(carbohydrates) || carbohydrates <= 0 || carbohydrates > 100) {
+      throw new Error(`${recipeId}: side carbohydrate needs the exact reviewed food composition.`);
+    }
+    portion.sideCarbohydrate = { ...side, availableCarbsGPer100g: carbohydrates, source: source.sourceUrl };
   }
   if (review?.verbalNoteEdits && !review.verbal) {
     throw new Error(`${recipeId}: a numerical-only GK notice requires a current verbal estimate.`);

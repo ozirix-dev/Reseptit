@@ -5,7 +5,7 @@ import {GkOnlyVariantPanel,gkScopeUi} from './GkOnlyVariantPanel';
 import {scopedPolyolDisclosure} from './scoped-polyol-disclosure';
 import {recoveryDisclosure} from './recovery-disclosure';
 import { originalPortionCarbs, originalPortionGk } from "./gk-portion";
-import { GkAlternatives, originalGkClassDisclosure, portionCopy, RecipePortionSummary, VerbalPortionEstimate } from "./RecipePortionSummary";
+import { GkAlternatives, originalGkClassDisclosure, portionCopy, RecipePortionSummary, SideCarbohydrateComparison, VerbalPortionEstimate } from "./RecipePortionSummary";
 import { formatOriginalPortionGk } from "./gk80-format";
 import { recipeHeroAvifMedia, recipeHeroSizes } from "./image-layout";
 import type { RecipeImage } from "@/types/content";
@@ -169,6 +169,8 @@ export function RecipePage() {
           {glycemicRecipe?.pending ? <p>{portionWords.pending}</p> : null}
           <MissingEstimate locale={locale} result={gkResult ?? { incompleteReasons: [] }} />
         </div>}
+        {!withholdNutrition && portionEvidence?.sideCarbohydrate ? <SideCarbohydrateComparison key={`${recipe.recipeId}:${locale}`}
+          side={portionEvidence.sideCarbohydrate} locale={locale} carbs={portionCarbs} multiplier={eatenPortion} interactive={hydrated} /> : null}
         <details className="gk-evidence__details"><summary>{nutritionItems.length ? tools.nutritionPerRecipeServing : labels.nutrition}</summary>
           <p className="recipe-disclosure" data-f25-nutrition-status={withholdNutrition ? "SOURCE_REVIEW_WITHHELD" : undefined}>{withholdNutrition ? "Ravintoarvojen julkaisu on keskeytetty, koska annoksen ainesosakohtainen laskenta tai tuotematch ei ole vielä hyväksyttävä. Lähtöarvoja ei näytetä virheellisen tarkkoina. Katso reseptin lähdehuomautus." : nutritionItems.length ? tools.nutrition : tools.missing}</p>{nutritionItems.length ? <dl className="nutrition-list">{nutritionItems.map(([key, value]) => <div key={key}><dt>{labels.nutrients[key]}</dt><dd>{formatIngredientAmount(value, 1, 1, numberLocale)} g</dd></div>)}</dl> : null}
         </details>
