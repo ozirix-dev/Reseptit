@@ -168,6 +168,7 @@ const c13AuditPaths = [
   "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md",
   "reseptit/aamupalat/intialainen-mannasuurimoupma.md",
   "reseptit/aamupalat/malesialainen-kaya-paahtoleipa.md",
+  "reseptit/aamupalat/vietnamilainen-pho-ga-aamuksi.md",
 ];
 
 export function projectTranslationAuditSource(file: string, raw: string): string {

@@ -1,3 +1,6 @@
+import { portionCopy } from "../src/features/recipes/RecipePortionSummary";
+import { glycemicLoadPath } from "../src/features/recipes/recipe-i18n";
+import { siteContent } from "../src/generated/content.generated";
 import { siteTarget } from "../src/content/site-target";
 import { gkCopy } from "../src/features/glycemic-load/glycemic-load-copy";
 import assert from "node:assert/strict";
@@ -349,6 +352,30 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.setViewportSize({ width: 320, height: 800 });
     await page.goto(`${base}/hummus/`);
     assert.match(await page.locator(".recipe-glycemic-load").innerText(), /GK-arvio[\s\S]*noin 6 \/ annos/);
+    const perPortion = page.locator("[data-portion-gk]");
+    const originalValue = await perPortion.innerText();
+    const batch = page.getByRole("group", { name: portionCopy.fi.batch, exact: true });
+    assert.equal(await batch.count(), 1);
+    assert.match(await page.locator(".recipe-portion").innerText(), /1\/4.*erästä/);
+    assert.match(await page.locator(".recipe-portion").innerText(), /Tarjoiluleipä ja dippivihannekset eivät sisälly/);
+    await page.getByRole("button", { name: recipeUi.fi.increase, exact: true }).click();
+    assert.equal(await perPortion.innerText(), originalValue, "changing the batch leaves the eaten portion alone");
+    assert.match(await page.locator(".recipe-portion").innerText(), /1\/5.*erästä/);
+    const eatenPortion = page.getByLabel(portionCopy.fi.title, { exact: true });
+    const nutritionDetails = page.locator("details").filter({ has: page.getByText(toolUi.fi.nutritionPerRecipeServing, { exact: true }) });
+    await nutritionDetails.locator("summary").click();
+    const recipeServingNutrition = await nutritionDetails.locator("dl").innerText();
+    const selectedPortionCarbs = page.locator("[data-portion-carbohydrate]");
+    const originalPortionCarbs = await selectedPortionCarbs.innerText();
+    await page.keyboard.press("Tab");
+    await eatenPortion.focus();
+    assert.equal(await eatenPortion.evaluate(element => element.matches(":focus-visible")), true);
+    await eatenPortion.selectOption("1.5");
+    assert.notEqual(await perPortion.innerText(), originalValue);
+    assert.notEqual(await selectedPortionCarbs.innerText(), originalPortionCarbs);
+    assert.equal(await nutritionDetails.locator("dl").innerText(), recipeServingNutrition);
+    await eatenPortion.selectOption("1");
+    assert.equal(await perPortion.innerText(), originalValue);
     const methodLink = page.locator(".recipe-glycemic-load__caption a");
     await methodLink.focus();
     assert.equal(await methodLink.evaluate((element) => element.matches(":focus-visible")), true);
@@ -361,6 +388,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     const researchLink = technical.locator("a").first();
     assert.equal(await researchLink.isVisible(), false);
     assert.match(await hummus.innerText(), /Luotettavuus/);
+    assert.match(await hummus.innerText(), /Hiilihydraatteja noin 25,2 g annoksessa.*kuitu ja polyolit mukana/);
     assert.doesNotMatch(await hummus.innerText(), /HUMAN_GI|CATEGORY_MEAN|CALCULATION_POLICY/);
     const calculation = hummus.locator(".gk-evidence__details").first();
     await calculation.locator("summary").focus();
@@ -378,6 +406,285 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.setViewportSize({ width: 320, height: 800 });
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
 
+    for (const [index, locale] of (["fi", "en", "sv", "th"] as const).entries()) {
+      await page.setViewportSize({ width: [320, 360, 768, 1440][index]!, height: 844 });
+      await page.goto(base + glycemicLoadPath(locale));
+      assert.equal(await page.locator('[data-gk-coverage="WHOLE_PORTION_CARBS"]').count(), 1);
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+      const recipe = siteContent.recipes.find(recipe => recipe.locale === locale && recipe.recipeId === "kermainen-lohipata")!;
+      await page.goto(base + recipe.routePath);
+      assert.equal(await page.getByLabel(portionCopy[locale].title, { exact: true }).inputValue(), "1");
+      await page.getByLabel(portionCopy[locale].title, { exact: true }).selectOption("2");
+      assert.equal(await page.locator("[data-portion-gk]").count(), 1);
+    }
+
+    await page.goto(base + glycemicLoadPath("fi"));
+    await page.locator("#gk-recipe-search").fill("Fetavaahto");
+    const pendingGk = page.locator("#fetavaahto-kasvistikuilla");
+    await pendingGk.waitFor();
+    assert.match(await pendingGk.innerText(), /3,5/);
+    assert.equal(await pendingGk.locator('[data-gk-estimate="VERBAL"]').count(), 1);
+    assert.match(await pendingGk.getByRole("link", { name: portionCopy.fi.scopeSource }).getAttribute("href") ?? "", /^https:/);
+
+    const routeFor = (id: string, locale = "fi") => siteContent.recipes.find(recipe => recipe.locale === locale && recipe.recipeId === id)!.routePath;
+    const yogurtId = "valimerellinen-jogurttikulho-hunajalla";
+    await page.goto(base + routeFor(yogurtId));
+    const yogurtClass = page.locator("[data-original-gk-class]");
+    assert.equal(await yogurtClass.getAttribute("data-original-gk-class"), "LOW");
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.equal(await yogurtClass.getAttribute("data-original-gk-class"), "MEDIUM");
+    await page.goto(base + glycemicLoadPath("fi") + "#" + yogurtId);
+    assert.equal(await page.locator(`#${yogurtId} [data-original-gk-class]`).getAttribute("data-original-gk-class"), "LOW");
+
+    await page.goto(base + routeFor("malesialainen-kookos-banaanikulho"));
+    const ingredientPortion = page.locator("[data-ingredient-portion]");
+    assert.match(await ingredientPortion.innerText(), /Kuorittu banaani.*100 g[\s\S]+18,3 g/);
+    assert.equal(await page.locator("[data-portion-carbohydrate], [data-portion-gk]").count(), 0);
+    await page.getByRole("button", { name: recipeUi.fi.increase, exact: true }).click();
+    assert.match(await ingredientPortion.innerText(), /100 g[\s\S]+18,3 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await ingredientPortion.innerText(), /150 g[\s\S]+27,5 g/);
+    await page.goto(base + routeFor("indonesialainen-bakwan-jagung-kotiversio"));
+    assert.match(await ingredientPortion.innerText(), /Puolikarkea vehnäjauho.*40 g[\s\S]+29,6 g/);
+    const bakwanCarbs = page.locator('[data-portion-carbohydrate="available"]');
+    assert.match(await bakwanCarbs.innerText(), /42,4 g/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await ingredientPortion.innerText(), /60 g[\s\S]+44,4 g/);
+    assert.match(await bakwanCarbs.innerText(), /63,6 g/);
+    await page.goto(base + glycemicLoadPath("fi") + "#malesialainen-kookos-banaanikulho");
+    assert.match(await page.locator("#malesialainen-kookos-banaanikulho [data-ingredient-portion]").innerText(), /100 g[\s\S]+18,3 g/);
+    await page.goto(base + routeFor("tunisialainen-brik", "en"));
+    assert.match(await page.locator("[data-ingredient-portion]").innerText(), /1 sheet\b/);
+
+    await page.goto(base + routeFor("malesialainen-nasi-lemak-aamiaisella"));
+    const alternatives = page.locator("[data-gk-alternatives]");
+    assert.match(await alternatives.innerText(), /Basmatiriisi\s+noin 22[\s\S]+Jasmiiniriisi\s+noin 26/);
+    await page.getByRole("button", { name: recipeUi.fi.increase, exact: true }).click();
+    assert.match(await alternatives.innerText(), /noin 22[\s\S]+noin 26/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await alternatives.innerText(), /noin 34[\s\S]+noin 40/);
+
+    await page.goto(base + routeFor("dan-dan-nuudelit"));
+    const danDan = page.locator('[data-gk-version="gk-operation80-review-ad22de231e93"]');
+    assert.match(await danDan.locator("[data-gk-alternatives]").innerText(), /Tuore udon\s+noin 18,5[\s\S]+Hakubaku Somen\s+noin 25/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+    assert.match(await danDan.innerText(), /Lähdearvion erän annosmäärä · 4/);
+
+    await page.goto(base + routeFor("pohjoisafrikkalainen-msemen-hunajalla-punnittu-v2", "en"));
+    assert.match(await page.locator('[data-gk-status="QUALITATIVE"]').innerText(), /Estimated high GL/);
+    assert.match(await page.locator(".recipe-portion").innerText(), /2 pieces/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+
+    await page.setViewportSize({ width: 320, height: 800 });
+    await page.goto(base + routeFor("indonesialainen-nasi-goreng-aamiaisriisi-punnittu-v2"));
+    const nasiGoreng = page.locator('[data-gk-status="QUALITATIVE"]');
+    assert.match(await nasiGoreng.locator("[data-verbal-portion-scope]").innerText(), /150 g pitkäjyväistä valkoista riisiä punnittuna kypsänä ja kylmänä/);
+    assert.ok(await nasiGoreng.evaluate(element => element.getBoundingClientRect().right <= innerWidth));
+    assert.match(await page.locator("[data-portion-carbohydrate]").innerText(), /61 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.equal(await nasiGoreng.locator("[data-verbal-portion-scope]").count(), 0);
+    assert.match(await page.locator("[data-portion-carbohydrate]").innerText(), /121,9 g/);
+
+    await page.goto(base + routeFor("dal-makhani"));
+    assert.match(await ingredientPortion.innerText(), /100 g[\s\S]+3,5 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await ingredientPortion.innerText(), /150 g[\s\S]+5,2 g/);
+    assert.equal(await page.locator("[data-portion-carbohydrate], [data-portion-gk]").count(), 0);
+
+    await page.goto(base + routeFor("gluteeniton-siemenvuokaleipa"));
+    const declaredCarbs = ingredientPortion.locator('[data-ingredient-carbohydrate="declared"]');
+    assert.match(await ingredientPortion.innerText(), /17,5 g/);
+    assert.match(await declaredCarbs.innerText(), /pakkauksen mukaan[\s\S]+13,1 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.match(await ingredientPortion.innerText(), /35 g/);
+    assert.match(await declaredCarbs.innerText(), /26,3 g/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+
+    await page.goto(base + routeFor("jauheliha-kaalikeitto-vhh"));
+    const roundedEstimate = page.locator("[data-portion-gk]");
+    assert.match(await roundedEstimate.innerText(), /5/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.equal(await roundedEstimate.count(), 0);
+    assert.equal(await page.getByText(portionCopy.fi.roundedServingOnly, { exact: true }).count(), 1);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1");
+    assert.match(await roundedEstimate.innerText(), /5/);
+
+    await page.goto(base + routeFor("uuniriisipuuro"));
+    const ovenRiceCarbs = page.locator('[data-portion-carbohydrate="available"]');
+    assert.match(await ovenRiceCarbs.innerText(), /44,2 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await ovenRiceCarbs.innerText(), /66,2 g/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+
+    await page.goto(base + routeFor("bataattiletut"));
+    const preparations = page.locator('[data-carbohydrate-choice="whole"]');
+    assert.match((await preparations.allInnerTexts()).join(" "), /30,3 g[\s\S]+28,8 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match((await preparations.allInnerTexts()).join(" "), /45,5 g[\s\S]+43,2 g/);
+    assert.equal(await page.locator("[data-portion-gk], [data-ingredient-carb-alternative]").count(), 0);
+
+    await page.goto(base + routeFor("bataatti-banaanileipa"));
+    const loafPortion = page.locator(".recipe-portion");
+    assert.match(await loafPortion.innerText(), /Callebaut 811[\s\S]+14,1 g[\s\S]+13,8 g/);
+    const ingredientPreparations = page.locator("[data-ingredient-carb-alternative]");
+    assert.match((await ingredientPreparations.allInnerTexts()).join(" "), /4,4 g[\s\S]+4 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await loafPortion.innerText(), /21,2 g[\s\S]+20,7 g[\s\S]+6,6 g[\s\S]+6,1 g/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+
+    await page.goto(base + routeFor("porkkanaletut"));
+    const carrotPortion = page.locator(".recipe-portion");
+    assert.match(await carrotPortion.innerText(), /kotitekoista sosetta[\s\S]+51 g[\s\S]+7,1 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await carrotPortion.innerText(), /76,5 g[\s\S]+10,7 g/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+
+    await page.goto(base + routeFor("paahtopaistileivat-kauralesesampyloilla"));
+    const sandwichCarbs = page.locator('[data-portion-carbohydrate="available"]');
+    const rollCarbs = page.locator('[data-ingredient-carbohydrate="available"]');
+    const comparison = page.locator("[data-compared-carbohydrates]");
+    assert.match(await sandwichCarbs.innerText(), /4,6 g/);
+    assert.match(await rollCarbs.innerText(), /1,6 g/);
+    assert.match(await comparison.innerText(), /22,7 g/);
+    assert.equal(await comparison.getByRole("link").getAttribute("href"), routeFor("paahtopaistileipa-piparjuurikastikkeella"));
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await sandwichCarbs.innerText(), /6,9 g/);
+    assert.match(await rollCarbs.innerText(), /2,4 g/);
+    assert.match(await comparison.innerText(), /34,1 g/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+
+    await page.goto(base + routeFor("karjalanpiirakat-riisipuurolla"));
+    const riceLabelCarbs = page.locator('[data-ingredient-carbohydrate="declared"]');
+    assert.match(await riceLabelCarbs.innerText(), /6,4 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await riceLabelCarbs.innerText(), /9,6 g/);
+    assert.equal(await page.locator("[data-portion-carbohydrate], [data-portion-gk]").count(), 0);
+
+    await page.goto(base + routeFor("munakasrulla-pinaatti-tuorejuustolla"));
+    const gkCoverage = page.locator("[data-original-gk-coverage]");
+    assert.match(await gkCoverage.locator('[data-gk-contributor="all"]').innerText(), /tuorejuustoa/);
+    assert.match(await gkCoverage.locator("[data-gk-omissions]").innerText(), /1,1 g/);
+    assert.equal(await gkCoverage.locator("[data-gk-omission-assumptions]").count(), 1);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.match(await gkCoverage.locator("[data-gk-omissions]").innerText(), /2,1 g/);
+    assert.match(await page.locator(".recipe-glycemic-load__class").innerText(), /epävarma/);
+
+    await page.goto(base + routeFor("caponata"));
+    const caponataOmission = page.locator("[data-gk-omissions]");
+    assert.match(await caponataOmission.innerText(), /yläraja on 0,12 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.match(await caponataOmission.innerText(), /yläraja on 0,23 g/);
+
+    await page.goto(base + routeFor("hummus"));
+    assert.match(await page.locator("[data-gk-omissions]").innerText(), /0,42 g/);
+    assert.equal(await page.locator("[data-gk-omission-assumptions]").count(), 1);
+
+    await page.goto(base + routeFor("briossisampylat-joshua-weissman"));
+    assert.match(await page.locator('[data-gk-status="QUALITATIVE"]').innerText(), /Suuri arvioitu GK/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+
+    for (const [id, selector, copy] of [
+      ["taytetyt-kananmunat-yrteilla", '[data-gk-status="QUALITATIVE"]', portionCopy.fi.class.LOW],
+      ["kylma-oliivioljylevite", '.recipe-portion', "Tarjoiluleipä ei sisälly arvioon"],
+      ["tonnikalatayte-kurkkukupeissa", '[data-portion-carbohydrate]', "1,2"],
+      ["malesialainen-nasi-lemak-aamiaisella", ".recipe-portion", "basmati- ja jasmiiniriisin"],
+      ["linssimakaronilaatikko", ".recipe-portion", "Myllyn Paras Makaroni"],
+      ["kebab-munakasrulla", '.recipe-portion', "Vehnäjauho"],
+      ["mapo-tofu", "[data-ingredient-portion]", "Pitkäjyväinen riisi, kypsäpaino"],
+      ["vhh-kaalikaarryleet", '.recipe-glycemic-load__class', "kasvisryhmän keskiarvo"],
+    ]) {
+      const recipe = siteContent.recipes.find(recipe => recipe.locale === "fi" && recipe.recipeId === id)!;
+      await page.goto(base + recipe.routePath);
+      assert.ok((await page.locator(selector).innerText()).includes(copy), id);
+      if (id === "mapo-tofu") assert.equal(await page.locator("[data-portion-carbohydrate]").count(), 0);
+      if (id === "taytetyt-kananmunat-yrteilla") {
+        const source = page.locator('[data-gk-status="QUALITATIVE"]').getByRole("link", { name: portionCopy.fi.scopeSource });
+        await source.focus();
+        assert.equal(await source.getAttribute("href"), "https://glycemicindex.com/faqs/");
+        await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+        assert.equal(await page.getByText(portionCopy.fi.class.LOW, { exact: true }).count(), 0);
+        assert.equal(await page.getByText(portionCopy.fi.baseOnly, { exact: true }).count(), 1);
+      }
+    }
+    for (const [id, values] of [
+      ["timjami-uunijuurekset", ["12,5", "25,1", "37,6", "50,1"]],
+      ["palsternakkasosekeitto", ["15,3", "30,6", "45,9", "61,2"]],
+    ] as const) {
+      await page.goto(base + routeFor(id));
+      const serving = page.getByLabel(portionCopy.fi.title, { exact: true });
+      const scope = page.locator('.recipe-portion .recipe-disclosure').first();
+      const baseScope = await scope.innerText();
+      for (const [index, multiplier] of ["0.5", "1", "1.5", "2"].entries()) {
+        await serving.selectOption(multiplier);
+        assert.match(await page.locator('[data-portion-carbohydrate="available"]').innerText(), new RegExp(`${values[index]} g$`));
+        assert.equal(await scope.innerText(), baseScope);
+        assert.equal(await page.locator("[data-portion-gk], [data-original-gk-class]").count(), 0);
+      }
+    }
+    const soupComparison = page.locator("[data-compared-carbohydrates]");
+    assert.match(await soupComparison.innerText(), /43,6 g/);
+    assert.equal(await soupComparison.getByRole("link").getAttribute("href"), routeFor("pinaattikeitto"));
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("0.5");
+    assert.match(await soupComparison.innerText(), /10,9 g/);
+    await page.goto(base + routeFor("mustaherukkavispipuuro"));
+    assert.match(await page.locator(".recipe-portion").innerText(), /200 g[\s\S]*140 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.match(await page.locator('[data-portion-carbohydrate="available"]').innerText(), /58 g$/);
+    assert.equal(await page.locator("[data-portion-gk], [data-original-gk-class]").count(), 0);
+    await page.goto(base + routeFor("omenavaahtokarkit"));
+    assert.match(await page.locator(".recipe-portion").innerText(), /1 kpl/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await page.locator(".recipe-portion").innerText(), /1,5 kpl/);
+    assert.match(await page.locator('[data-portion-carbohydrate="available"]').innerText(), /2,3 g$/);
+    assert.equal(await page.locator("[data-portion-gk], [data-original-gk-class]").count(), 0);
+    await page.goto(base + routeFor("paneer-tikka"));
+    const pepperAmount = page.locator("[data-ingredient-portion] dd");
+    assert.match(await pepperAmount.innerText(), /0,25 kpl$/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("0.5");
+    assert.match(await pepperAmount.innerText(), /0,125 kpl$/);
+    assert.equal(await page.locator("[data-ingredient-carbohydrate], [data-portion-carbohydrate], [data-portion-gk]").count(), 0);
+    await page.goto(base + routeFor("linssimakaronilaatikko"));
+    const macaroniCarbs = page.locator('[data-ingredient-carbohydrate="declared"] dd');
+    assert.match(await macaroniCarbs.innerText(), /24,9 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("0.5");
+    assert.match(await macaroniCarbs.innerText(), /12,5 g/);
+    await page.goto(base + routeFor("punajuuririsotto"));
+    const riceVolume = page.locator("[data-ingredient-portion] dd");
+    assert.match(await riceVolume.innerText(), /0,8 dl$/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.match(await riceVolume.innerText(), /1,6 dl$/);
+    assert.equal(await page.locator("[data-ingredient-carbohydrate], [data-portion-carbohydrate], [data-portion-gk]").count(), 0);
+    await page.goto(base + routeFor("marokkolainen-couscous"));
+    const couscousWeight = page.locator("[data-ingredient-portion] dd");
+    assert.match(await couscousWeight.innerText(), /62,5 g$/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await couscousWeight.innerText(), /93,8 g$/);
+    assert.equal(await page.locator("[data-ingredient-carbohydrate], [data-portion-carbohydrate]").count(), 0);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 1);
+    await page.goto(base + routeFor("kerala-kalacurry"));
+    const side = page.locator("[data-side-comparison]");
+    await side.locator("summary").focus();
+    await page.keyboard.press("Enter");
+    const sideWeight = side.getByLabel("Lisukkeen paino");
+    assert.equal(await sideWeight.getAttribute("aria-describedby"), await side.locator("[data-side-reference]").getAttribute("id"));
+    const curryCarbs = page.locator("[data-portion-carbohydrate]");
+    const originalCurryCarbs = await curryCarbs.innerText();
+    await sideWeight.selectOption("100");
+    assert.match(await side.locator("[data-side-carbohydrate]").innerText(), /23,6 g$/);
+    assert.match(await side.locator("[data-side-combined-carbohydrate]").innerText(), /29,1 g$/);
+    assert.equal(await curryCarbs.innerText(), originalCurryCarbs);
+    assert.equal(await side.locator("[data-portion-gk], [data-original-gk-class]").count(), 0);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await side.locator("[data-side-carbohydrate]").innerText(), /23,6 g$/);
+    assert.match(await side.locator("[data-side-combined-carbohydrate]").innerText(), /31,9 g$/);
+    await sideWeight.selectOption("0");
+    assert.equal(await side.locator("[data-side-combined-carbohydrate]").count(), 0);
+    await page.goto(base + routeFor("kana-tagine-sitruunalla", "en"));
+    await side.locator("summary").click();
+    await side.getByLabel("Side weight").selectOption("50");
+    assert.match(await side.locator("[data-side-carbohydrate]").innerText(), /31\.8 g$/);
+    assert.equal(await side.locator("[data-side-combined-carbohydrate]").count(), 0);
     await page.goto(`${base}/`);
     const searchbox = page.getByRole("searchbox", { name: "Hae reseptejä" });
     await searchbox.focus();
@@ -427,7 +734,9 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       assert.equal(await page.locator("html").getAttribute("lang"), recipe.locale);
       assert.equal(await page.locator(".recipe-languages a").count(), 4);
       assert.equal(await page.locator(".ingredient-list li").count(), 14);
-      assert.equal(await page.getByRole("button", { name: toolUi[recipe.locale as "en" | "sv" | "th"].print }).count(), 1);
+      const print = page.getByRole("button", { name: toolUi[recipe.locale as "en" | "sv" | "th"].print });
+      await print.waitFor();
+      assert.equal(await print.count(), 1);
       await page.getByRole("checkbox").first().check();
       assert.equal(await page.getByRole("checkbox").first().isChecked(), true);
       const increase = page.getByRole("button", { name: recipe.increase, exact: true });

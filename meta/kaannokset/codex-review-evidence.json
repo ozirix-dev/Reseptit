@@ -5561,28 +5561,49 @@
     "findings": []
   },
   "vietnamilainen-pho-ga-aamuksi:en": {
-    "source_hash": "ffc5abe3becb28bdd879e45fceb309f0554f2f4da4a0c52d5c6367431192fe56",
-    "translation_hash": "d917fc6b558e6a5c2621c641bb1c4bab22c70fc5844960f1f89f8e41ea47b85b",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. Kuivat riisinuudelit 100 g vahvistuvat laskentatiedostosta. Broilerin lämpöraja, raakojen välineiden pesu, kaksi annosta, kuvan yrtit erillään.",
+    "source_hash": "fcbdf71ea797c4af041a2a6499846c03ab240bbfede9aa1469b8f653dca685f0",
+    "translation_hash": "326eb46d592a6c48aab146c50519ee330e8262686d9b66dd26cfeaf1ee50b328",
+    "reviewed_at": "2026-11-18",
+    "correction_pr": 706,
+    "reference": "Reseptit #706. Broilerin paksuimman kohdan vähintään 75 °C ja lämpömittari vastaavat suomenkielistä julkista ohjetta. https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/hygieeninen-toiminta/tuotanto--ja-kasittelyhygienia/kypsentaminen/ Aiempi vertailu: docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. Riisinuudelien kuivapaino on laskentaoletus.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Broilerin paksuimman kohdan vähintään 75 °C ja lämpömittari vastaavat suomenkielistä julkista ohjetta."
+      }
+    ]
   },
   "vietnamilainen-pho-ga-aamuksi:sv": {
-    "source_hash": "ffc5abe3becb28bdd879e45fceb309f0554f2f4da4a0c52d5c6367431192fe56",
-    "translation_hash": "a2c7bc4d0f39544e26c92b360ea26fb1cbfbba2a746eafd9fb5446c8ae0dcb6f",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. Kuivat riisinuudelit 100 g vahvistuvat laskentatiedostosta. Broilerin lämpöraja, raakojen välineiden pesu, kaksi annosta, kuvan yrtit erillään.",
+    "source_hash": "fcbdf71ea797c4af041a2a6499846c03ab240bbfede9aa1469b8f653dca685f0",
+    "translation_hash": "f6cbb635d80688f9062ea6df224cccee9a4774a5414f07ba59bb869b11c01d87",
+    "reviewed_at": "2026-11-18",
+    "correction_pr": 706,
+    "reference": "Reseptit #706. Broilerin paksuimman kohdan vähintään 75 °C ja lämpömittari vastaavat suomenkielistä julkista ohjetta. https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/hygieeninen-toiminta/tuotanto--ja-kasittelyhygienia/kypsentaminen/ Aiempi vertailu: docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. Riisinuudelien kuivapaino on laskentaoletus.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Broilerin paksuimman kohdan vähintään 75 °C ja lämpömittari vastaavat suomenkielistä julkista ohjetta."
+      }
+    ]
   },
   "vietnamilainen-pho-ga-aamuksi:th": {
-    "source_hash": "ffc5abe3becb28bdd879e45fceb309f0554f2f4da4a0c52d5c6367431192fe56",
-    "translation_hash": "8dfee24a60437a13dbc9ebc9529b2562c0f9556540f310098a24a404cd449d23",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. Kuivat riisinuudelit 100 g vahvistuvat laskentatiedostosta. Broilerin lämpöraja, raakojen välineiden pesu, kaksi annosta, kuvan yrtit erillään.",
+    "source_hash": "fcbdf71ea797c4af041a2a6499846c03ab240bbfede9aa1469b8f653dca685f0",
+    "translation_hash": "c8bc9be5384c13003009e69ad4cec2fc94855e28e0df204943f22771b4d040b0",
+    "reviewed_at": "2026-11-18",
+    "correction_pr": 706,
+    "reference": "Reseptit #706. Broilerin paksuimman kohdan vähintään 75 °C ja lämpömittari vastaavat suomenkielistä julkista ohjetta. https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/hygieeninen-toiminta/tuotanto--ja-kasittelyhygienia/kypsentaminen/ Aiempi vertailu: docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. Riisinuudelien kuivapaino on laskentaoletus.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Broilerin paksuimman kohdan vähintään 75 °C ja lämpömittari vastaavat suomenkielistä julkista ohjetta."
+      }
+    ]
   },
   "valimerellinen-halloumi-tomaattileipa:en": {
     "source_hash": "14825dbded8cfaf57e418c66d75eed8941fa2de31cca62e83d67ab445be906b0",
@@ -10003,12 +10024,19 @@
     "findings": []
   },
   "malesialainen-kaya-paahtoleipa:en": {
-    "source_hash": "276bf99ccf744b76ebfb17b1d4e4449e93e591eea135cda0925634e999c24ca8",
+    "source_hash": "5c91b0864deefd64f9c2283fd6718a465aa73f8e77ce32da7ff3fd6ebe127b4b",
     "translation_hash": "795def41fcff4e40af978bef2c0ecc5741f06a279d665610623b01642368ec12",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-recipavo-seuraavat-kymmenen-kielikatselmointia.md",
+    "reviewed_at": "2026-11-18",
+    "correction_pr": 706,
+    "reference": "Reseptit #706. Kayan 71 °C ja lisukemunan hyytynyt keltuainen ja valkuainen vastaavat täsmennettyä suomenkielistä ohjetta. https://www.foodsafety.gov/print/pdf/node/10 Aiempi vertailu: docs/reviews/2026-11-13-recipavo-seuraavat-kymmenen-kielikatselmointia.md",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Kayan 71 °C ja lisukemunan hyytynyt keltuainen ja valkuainen vastaavat täsmennettyä suomenkielistä ohjetta."
+      }
+    ]
   },
   "meksikolainen-aamiais-tacot-mustapavuilla:en": {
     "source_hash": "1ae17b9a8ac9f93af482a45c271aa51c1d3490d7d954a2dba0b3e45bf0f20ab4",
@@ -10083,12 +10111,19 @@
     "findings": []
   },
   "malesialainen-kaya-paahtoleipa:sv": {
-    "source_hash": "276bf99ccf744b76ebfb17b1d4e4449e93e591eea135cda0925634e999c24ca8",
+    "source_hash": "5c91b0864deefd64f9c2283fd6718a465aa73f8e77ce32da7ff3fd6ebe127b4b",
     "translation_hash": "8568a9c2b127c612b70297329cf7d7342fbe3500be9c4e994f5864c0b540b3cc",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-recipavo-seuraavat-kymmenen-kielikatselmointia.md",
+    "reviewed_at": "2026-11-18",
+    "correction_pr": 706,
+    "reference": "Reseptit #706. Kayan 71 °C ja lisukemunan hyytynyt keltuainen ja valkuainen vastaavat täsmennettyä suomenkielistä ohjetta. https://www.foodsafety.gov/print/pdf/node/10 Aiempi vertailu: docs/reviews/2026-11-13-recipavo-seuraavat-kymmenen-kielikatselmointia.md",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Kayan 71 °C ja lisukemunan hyytynyt keltuainen ja valkuainen vastaavat täsmennettyä suomenkielistä ohjetta."
+      }
+    ]
   },
   "meksikolainen-aamiais-tacot-mustapavuilla:sv": {
     "source_hash": "1ae17b9a8ac9f93af482a45c271aa51c1d3490d7d954a2dba0b3e45bf0f20ab4",
@@ -10163,12 +10198,19 @@
     "findings": []
   },
   "malesialainen-kaya-paahtoleipa:th": {
-    "source_hash": "276bf99ccf744b76ebfb17b1d4e4449e93e591eea135cda0925634e999c24ca8",
+    "source_hash": "5c91b0864deefd64f9c2283fd6718a465aa73f8e77ce32da7ff3fd6ebe127b4b",
     "translation_hash": "12dbac7038411631943c65a219f67fae0e586cc53e16f9427b41afcd277d581f",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-recipavo-seuraavat-kymmenen-kielikatselmointia.md",
+    "reviewed_at": "2026-11-18",
+    "correction_pr": 706,
+    "reference": "Reseptit #706. Kayan 71 °C ja lisukemunan hyytynyt keltuainen ja valkuainen vastaavat täsmennettyä suomenkielistä ohjetta. https://www.foodsafety.gov/print/pdf/node/10 Aiempi vertailu: docs/reviews/2026-11-13-recipavo-seuraavat-kymmenen-kielikatselmointia.md",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Kayan 71 °C ja lisukemunan hyytynyt keltuainen ja valkuainen vastaavat täsmennettyä suomenkielistä ohjetta."
+      }
+    ]
   },
   "meksikolainen-aamiais-tacot-mustapavuilla:th": {
     "source_hash": "1ae17b9a8ac9f93af482a45c271aa51c1d3490d7d954a2dba0b3e45bf0f20ab4",

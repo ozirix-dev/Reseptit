@@ -5,7 +5,73 @@ import { estimateBasis, evidenceLabel, gkCopy, missingReason } from "./glycemic-
 
 type EvidenceResult = Pick<GlycemicLoadPilotPublicResult,
   "assessmentType" | "sourceReferences" | "carbohydrateSources" | "confidence" |
-  "omittedAvailableCarbohydratePerServingG" | "glycemicLoadRangePerServing" | "ingredientEvidence">;
+  "omittedAvailableCarbohydratePerServingG" | "glycemicLoadRangePerServing" | "ingredientEvidence" | "originalGkCoverage">;
+
+const coverageCopy = {
+  fi: {
+    all: "Ainesosa, josta GK-luku muodostuu",
+    majority: "Ainesosa, josta tulee yli puolet GK-luvusta",
+    group: "Ainesosan GI perustuu ruokaryhmän keskiarvoon.",
+    estimated: (value: string) => `Malliin on kirjattu, että GK-laskelmasta jäi pois arviolta ${value} g imeytyvää hiilihydraattia.`,
+    upperBound: (value: string) => `GK-laskelmasta pois rajatuille osuuksille kirjattu yläraja on ${value} g imeytyvää hiilihydraattia.`,
+    additionalBound: (value: string) => `Muille pois rajatuille osuuksille kirjattu yläraja on ${value} g.`,
+    assumptions: "GK-malli käyttää laskentaoletuksia, kun pois rajatun aineksen paino tai koostumus puuttuu.",
+  },
+  en: {
+    all: "Ingredient that accounts for the GL figure",
+    majority: "Ingredient that accounts for more than half of the GL figure",
+    group: "The ingredient’s GI uses an average for its food group.",
+    estimated: (value: string) => `The GL model records an estimated ${value} g of available carbohydrate left out of the calculation.`,
+    upperBound: (value: string) => `The GL model records an upper limit of ${value} g of available carbohydrate for the omitted amounts.`,
+    additionalBound: (value: string) => `The upper limit for the other recorded omissions is ${value} g.`,
+    assumptions: "The GL model uses assumptions for omitted amounts with missing composition or weight data.",
+  },
+  sv: {
+    all: "Ingrediensen som står för hela GL-värdet",
+    majority: "Ingrediensen som står för mer än hälften av GL-värdet",
+    group: "Ingrediensens GI bygger på ett genomsnitt för livsmedelsgruppen.",
+    estimated: (value: string) => `GL-modellen redovisar uppskattningsvis ${value} g tillgängliga kolhydrater som utelämnats ur beräkningen.`,
+    upperBound: (value: string) => `GL-modellen redovisar en övre gräns på ${value} g tillgängliga kolhydrater för de utelämnade mängderna.`,
+    additionalBound: (value: string) => `Den övre gränsen för övriga dokumenterade utelämnade mängder är ${value} g.`,
+    assumptions: "GL-modellen använder antaganden för utelämnade mängder när vikt eller sammansättning saknas.",
+  },
+  th: {
+    all: "ส่วนผสมที่ให้ค่า GL ทั้งหมด",
+    majority: "ส่วนผสมที่ให้ค่า GL มากกว่าครึ่ง",
+    group: "ค่า GI ของส่วนผสมนี้อ้างอิงค่าเฉลี่ยของกลุ่มอาหาร",
+    estimated: (value: string) => `แบบจำลอง GL บันทึกว่ามีคาร์โบไฮเดรตที่ย่อยได้ประมาณ ${value} กรัมที่เว้นจากการคำนวณ`,
+    upperBound: (value: string) => `แบบจำลอง GL บันทึกขีดจำกัดบนของคาร์โบไฮเดรตที่ย่อยได้ที่เว้นจากการคำนวณไว้ที่ ${value} กรัม`,
+    additionalBound: (value: string) => `ขีดจำกัดบนของปริมาณอื่นที่บันทึกว่าเว้นไว้คือ ${value} กรัม`,
+    assumptions: "แบบจำลอง GL ใช้ค่าที่สมมติขึ้นสำหรับส่วนที่เว้นไว้เมื่อไม่มีข้อมูลน้ำหนักหรือองค์ประกอบอาหาร",
+  },
+};
+
+export function OriginalGkCoverageNote({ coverage, locale, multiplier = 1 }: {
+  coverage: EvidenceResult["originalGkCoverage"];
+  locale: RecipeLocale;
+  multiplier?: number;
+}) {
+  if (!coverage) return null;
+  const { mainIngredient, estimatedOmissionG, upperBoundOmissionG, hasOmissionAssumptions } = coverage;
+  const text = coverageCopy[locale];
+  const main = mainIngredient?.names[locale];
+  const format = new Intl.NumberFormat(locale, { maximumSignificantDigits: 2 });
+  const bound = new Intl.NumberFormat(locale, { maximumFractionDigits: 2 })
+    .format(Math.ceil(upperBoundOmissionG * multiplier * 100) / 100);
+  return <div data-original-gk-coverage>
+    {main && mainIngredient ? <p className="recipe-disclosure" data-gk-contributor={mainIngredient.share}>
+      {text[mainIngredient.share]} · <strong>{main}</strong>
+      {mainIngredient.categoryMean ? <>. {text.group}</> : null}
+    </p> : null}
+    <p className="recipe-disclosure" data-gk-omissions aria-live="polite" aria-atomic="true">
+      {estimatedOmissionG > 0 ? text.estimated(format.format(estimatedOmissionG * multiplier)) : null}
+      {upperBoundOmissionG > 0 ? estimatedOmissionG > 0 ? ` ${text.additionalBound(bound)}` : text.upperBound(bound) : null}
+      {hasOmissionAssumptions ? <span data-gk-omission-assumptions>
+        {estimatedOmissionG > 0 || upperBoundOmissionG > 0 ? " " : null}{text.assumptions}
+      </span> : null}
+    </p>
+  </div>;
+}
 
 export function EstimateConfidence({ locale, confidence }: {
   locale: RecipeLocale;
@@ -29,7 +95,7 @@ export function EstimateSummary({ result, locale }: { result: EvidenceResult; lo
         const kind = evidenceLabel(source);
         return kind === "comparison" || kind === "categoryMean";
       }) ? ` ${text.basis.comparison}` : ""}
-      {result.omittedAvailableCarbohydratePerServingG > 0 ? ` ${text.omitted}` : ""}
+      {result.omittedAvailableCarbohydratePerServingG > 0 && !result.originalGkCoverage ? ` ${text.omitted}` : ""}
       {result.glycemicLoadRangePerServing ? ` ${text.range}` : ""}
     </p>
   </>;

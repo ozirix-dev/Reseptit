@@ -91,6 +91,7 @@ export function parseRouteContent(value: unknown, route: string): RouteContent {
           number => Number.isSafeInteger(number) && number > 0) ||
         !isNullableString(pagination.previousPath) || !isNullableString(pagination.nextPath))) ||
       (data.glycemicRecipe && (!data.recipe || !Array.isArray(data.glycemicRecipe.variants) ||
+        (data.glycemicRecipe.reviewedNotesHtml !== undefined && typeof data.glycemicRecipe.reviewedNotesHtml !== "string") ||
         (data.glycemicRecipe.result && data.glycemicRecipe.result.recipeId !== data.recipe.recipeId))) ||
       (data.glycemicOverview && (!Array.isArray(data.glycemicOverview.results) ||
         !Array.isArray(data.glycemicOverview.variants) || !data.glycemicOverview.coverage))) {

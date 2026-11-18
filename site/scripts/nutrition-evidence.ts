@@ -3,6 +3,7 @@ import {calculateRecovery,isRecoveryEvidence} from "./gk80-uunikanapasta";
 import { createHash } from "node:crypto";
 import type { Calculation } from "./nutrition-model";
 import { calculate } from "./nutrition-model";
+import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 
 // Owner-approved AFCD9837 withdrawal: suppress only these two exact historical
 // evidence objects. This neither validates their old polyol claim nor relaxes
@@ -18,6 +19,12 @@ const nutritionKeys = [
   "protein_per_serving_g",
   "fat_per_serving_g",
 ] as const;
+
+// The successor keeps a pinned copy of this predecessor. Keep its historical
+// recipe and calculation available for provenance and withhold all four values.
+const alooParathaPredecessor = "intialainen-aloo-paratha";
+const alooParathaHistoricalEvidence = "b08e21b98e814c08dac66a84a7e7db12909ff21e2bcc634ca1c6d04ca6b7ab29";
+const alooParathaWithholdingReason = "Fineli #310 (MAA-ARTISOKKA) was used for peeled potato. The predecessor also lacks a defined potato preparation and a weighed amount of serving yoghurt.";
 
 type RecipeForEvidence = {
   recipe_id: string;
@@ -49,6 +56,10 @@ export function verifyNutritionEvidence(
   const hasValues = Object.values(values).some((value) => value !== null);
   const withdrawnHash = Object.hasOwn(withdrawnEvidenceHashes, recipe.recipe_id) ? withdrawnEvidenceHashes[recipe.recipe_id] : undefined;
   if (withdrawnHash && !evidence) return { status: "CONFLICT REQUIRES REVIEW", errors: ["Withdrawn package must retain its exact historical calculation evidence"], calculated: null, values };
+  if (!evidence && recipe.recipe_id === alooParathaPredecessor) {
+    return { status: "CONFLICT REQUIRES REVIEW", errors: ["Historical aloo paratha calculation evidence is missing"],
+      calculated: null, values: Object.fromEntries(nutritionKeys.map(key => [key, null])), withholdingReason: alooParathaWithholdingReason };
+  }
   if (!evidence) return { status: hasValues ? "INSUFFICIENT SOURCE DATA" : "MISSING", errors: ["Calculation evidence file is missing"], calculated: null, values };
 
   if (evidence.recipeId !== recipe.recipe_id) errors.push(`recipe ID mismatch: ${evidence.recipeId}`);
@@ -70,6 +81,28 @@ export function verifyNutritionEvidence(
     if (translation.data.recipe_id !== recipe.recipe_id) errors.push(`${translation.path}: recipe ID mismatch`);
     for (const key of nutritionKeys) {
       if ((translation.data[key] ?? null) !== (recipe[key] ?? null)) errors.push(`${translation.path}: ${key} differs from Finnish source`);
+    }
+  }
+
+  if (recipe.recipe_id === alooParathaPredecessor) {
+    if (!isPublicRecipeQuarantined(recipe.recipe_id)) errors.push("Historical source error requires public quarantine");
+    if (createHash("sha256").update(JSON.stringify(evidence)).digest("hex") !== alooParathaHistoricalEvidence) {
+      errors.push("Historical aloo paratha evidence changed; separate review required");
+    }
+    return {
+      status: errors.length ? "CONFLICT REQUIRES REVIEW" : "INSUFFICIENT SOURCE DATA",
+      errors,
+      calculated: null,
+      values: Object.fromEntries(nutritionKeys.map(key => [key, null])),
+      withholdingReason: alooParathaWithholdingReason,
+    };
+  }
+
+  for (const { item, record, excludedReason } of evidence.ingredients) {
+    if (excludedReason || !record || !/\bperun(?:a|aa|at|oita)\b/i.test(item)) continue;
+    if (/^fineli-310(?:-|$)/i.test(record.id) || /^maa-artisokka\b/i.test(record.name)) {
+      errors.push(`${item}: Fineli #310 identifies Jerusalem artichoke, not potato`);
+      return { status: "CONFLICT REQUIRES REVIEW", errors, calculated: null, values: Object.fromEntries(nutritionKeys.map(key => [key, null])) };
     }
   }
 

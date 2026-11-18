@@ -82,6 +82,23 @@ test("withdrawn cassava source still carries a safety warning in four languages"
   }
 });
 
+test("pho ga and kaya give the reviewed cooking endpoints in all four languages", () => {
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const pho = siteContent.recipes.find(recipe => recipe.recipeId === "vietnamilainen-pho-ga-aamuksi" && recipe.locale === locale);
+    const kaya = siteContent.recipes.find(recipe => recipe.recipeId === "malesialainen-kaya-paahtoleipa" && recipe.locale === locale);
+    assert.ok(pho && kaya, locale);
+    assert.match(pho.instructionsText[1], /75 °C/, locale);
+    assert.doesNotMatch(pho.instructionsText.join(" "), /74 °C/, locale);
+    assert.match(kaya.instructionsText[1], /71 °C/, locale);
+    assert.match(kaya.instructionsText[3], {
+      fi: /sekä valkuainen että keltuainen ovat hyytyneet/,
+      en: /both the white and yolk are firm/,
+      sv: /både vitan och gulan är fasta/,
+      th: /ไข่ขาวและไข่แดงสุกอยู่ตัว/,
+    }[locale], locale);
+  }
+});
+
 test("corrected shrimp wonton is published without an unfinished-recipe hold", async () => {
   const recipe = siteContent.recipes.find((entry) => entry.recipeId === "kiinalainen-katkarapu-wontonkeitto" && entry.locale === "fi");
   assert.ok(recipe);

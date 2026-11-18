@@ -10,12 +10,13 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { createMemoryRouter, RouterProvider, MemoryRouter } from 'react-router-dom';
 import { countGkVersions } from '../src/features/recipes/gk-only-types';
 import { gkVariantScope, manakishStudyBinding } from '../src/features/recipes/gk-estimate-scope';
+import { verbalGkForPortion } from '../src/features/recipes/gk-portion';
 import { GkOnlyVariantPanel, gkOnlyValue, gkOnlyPreparation, studyServingTitle } from '../src/features/recipes/GkOnlyVariantPanel';
 import { GkCoverageSummary, coverageCopy } from '../src/features/glycemic-load/GkCoverageSummary';
 import { gkCopy } from '../src/features/glycemic-load/glycemic-load-copy';
 import { RecipePage } from '../src/features/recipes/RecipePage';
 import { gkOnlyVariants } from '../src/generated/gk-only-variants.generated';
-import { glycemicLoadPilotResults } from '../src/generated/glycemic-load-pilot.generated';
+import { glycemicLoadAdditionalResults, glycemicLoadPilotResults } from '../src/generated/glycemic-load-pilot.generated';
 import { siteContent } from '../src/generated/content.generated';
 import { glycemicLoadFilterCategories } from '../src/generated/glycemic-load-filters.generated';
 import { filterRecipes, emptyRecipeFilters } from '../src/features/recipes/recipe-search';
@@ -83,7 +84,7 @@ test('study scope correction is pinned, immutable, and cannot be reused by a cha
 
 test('coverage copy shows original target and independent variant/study counts in every language', () => {
   for(const locale of locales){
-    const html=renderToStaticMarkup(createElement(GkCoverageSummary,{coverage:counts,locale}));
+    const html=renderToStaticMarkup(createElement(GkCoverageSummary,{coverage:counts,portionCoverage:{ originalNumeric: counts.originalNumeric, numericIngredientSubset: 0, numericWithRecordedOmissions: 0, total: counts.total, originalVerbal: 0, wholePortionCarbs: 0, carbOnly: 0, foodNoteOnly: 0, limited: counts.total - counts.originalNumeric, pending: 0, useful: counts.originalNumeric },locale}));
     assert.ok(html.includes(coverageCopy[locale].title));
     assert.ok(html.includes(counts.originalNumeric + '/' + counts.total));
     assert.ok(html.includes('data-gk-coverage="VARIANT_COVERAGE"><strong>' + counts.variantNumeric + '</strong>'));
@@ -129,17 +130,26 @@ test('variant amounts and preparation are openly compared with the original; stu
   }
 });
 
-test('directory GK filters exclude missing original estimates, variants and studies while ordinary recipes remain searchable in all languages', () => {
+test('directory GK filters use the original standard portion in every language', () => {
+  const publicResults = [...glycemicLoadPilotResults, ...glycemicLoadAdditionalResults];
+  const eligible = new Set(publicResults.filter(result => {
+    if (result.status === 'CALCULATED') return true;
+    const evidence = result.portionEvidence;
+    return !evidence?.condition && !evidence?.verbal?.condition && !!verbalGkForPortion(evidence?.verbal, 1);
+  }).map(result => result.recipeId));
+  for (const id of ['briossisampylat-joshua-weissman','hampurilaissampylat-moomie','kevyet-briossisampylat-clever-carrot']) {
+    assert.equal(glycemicLoadFilterCategories[id], 'high', `${id}: the reviewed standard bun can be found in its class`);
+  }
   for(const locale of locales){
     const recipes=siteContent.recipes.filter(r=>r.locale===locale);
     const unfiltered=filterRecipes(recipes,emptyRecipeFilters,locale,glycemicLoadFilterCategories);
     assert.equal(unfiltered.length,recipes.length);
     for(const v of variants){
-      if(!counts.originalRecipeIds.includes(v.recipeId)) assert.equal(glycemicLoadFilterCategories[v.recipeId],undefined,v.recipeId);
+      if(!eligible.has(v.recipeId)) assert.equal(glycemicLoadFilterCategories[v.recipeId],undefined,v.recipeId);
     }
     for(const gl of ['low','medium','high'] as const){
       const filtered=filterRecipes(recipes,{...emptyRecipeFilters,gl},locale,glycemicLoadFilterCategories);
-      assert.ok(filtered.every(r=>counts.originalRecipeIds.includes(r.recipeId)));
+      assert.ok(filtered.every(r => eligible.has(r.recipeId)), `${locale}/${gl}: filters cannot use missing original estimates, variants or studies`);
     }
   }
 });

@@ -18,12 +18,18 @@ export function gkEstimate(point: number | null, range?: GkRange | null): GkEsti
     : { type: "INSUFFICIENT_DATA" };
 }
 
-export function gkEstimateClass(estimate: GkEstimate) {
+export const publicGkLowMax = 10;
+export const publicGkHighMin = 20;
+
+export function classifyPublicGk(value: number): "LOW" | "MEDIUM" | "HIGH" {
+  return value <= publicGkLowMax ? "LOW" : value < publicGkHighMin ? "MEDIUM" : "HIGH";
+}
+
+export function gkEstimateClass(estimate: GkEstimate): ReturnType<typeof classifyPublicGk> | "CROSSES_BOUNDARY" | null {
   if (estimate.type === "INSUFFICIENT_DATA") return null;
-  const classify = (value: number) => value <= 10 ? "LOW" : value < 20 ? "MEDIUM" : "HIGH";
-  if (estimate.type === "EXACT_MODEL") return classify(estimate.value);
-  const low = classify(estimate.range.min);
-  return low === classify(estimate.range.max) ? low : "CROSSES_BOUNDARY";
+  if (estimate.type === "EXACT_MODEL") return classifyPublicGk(estimate.value);
+  const low = classifyPublicGk(estimate.range.min);
+  return low === classifyPublicGk(estimate.range.max) ? low : "CROSSES_BOUNDARY";
 }
 
 /** Home-recipe points and ranges; study servings remain a separate comparison scope. */

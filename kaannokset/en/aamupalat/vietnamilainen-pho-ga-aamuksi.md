@@ -57,7 +57,7 @@ A quick home-style chicken noodle soup with ginger and star anise.
 ## Preparation
 
 1. Bring 700 ml water to the boil. Add 2 g fresh ginger and 1 g star anise. Lower the heat, cover and simmer briefly to flavour the water. Add no oil or prepared stock.
-2. Put all 150 g raw skinless chicken breast into the aromatic water. Simmer gently until the thickest part reaches at least 74 °C on a food thermometer. Transfer to a clean cutting board, rest briefly and slice thinly.
+2. Put all 150 g raw skinless chicken breast into the aromatic water. Simmer gently until the thickest part reaches at least 75 °C on a food thermometer. Transfer to a clean cutting board, rest briefly and slice thinly.
 3. Cook 100 g rice noodles in a separate pot according to the packet, drain and divide between two bowls. Wash utensils that touched the raw chicken before using them on cooked food.
 4. Ladle the hot aromatic cooking liquid over the noodles and divide the cooked chicken between the bowls. Add the listed salt if needed and serve immediately.
 

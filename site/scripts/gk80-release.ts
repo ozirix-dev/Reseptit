@@ -34,13 +34,17 @@ export async function validateGk80Candidate(root:string,recipeId:string):Promise
  }
  return false;
 }
-export async function applyGk80Release(root:string,legacy:GlycemicLoadResult[]):Promise<Extended[]>{
+export async function applyGk80Release(root:string,legacy:GlycemicLoadResult[],
+ namedScenarios?: Map<string, ReadonlyMap<string, number>>):Promise<Extended[]>{
  const out:Extended[]=[...legacy];
  for(const {recipes,sources,comps,golden} of await loadPacks(root)){
  for(const r of recipes){
   const current=createHash('sha256').update((await readFile(path.join(root,r.sourcePath),'utf8')).replaceAll('\r\n','\n')).digest('hex');
   const expected=golden.find((g:{recipeId:string})=>g.recipeId===r.recipeId);
   const result=calculate(r,sources,current,expected.inputHash,comps);if(!result.numericProposal)throw Error('GK80_RELEASE_INCOMPLETE');
+  if (namedScenarios && result.scenarios.length > 1) {
+   namedScenarios.set(r.recipeId, new Map(result.scenarios.map(scenario => [scenario.id, scenario.wholeGk!])));
+  }
   const index=out.findIndex(x=>x.recipeId===r.recipeId);if(index<0)throw Error('GK80_RELEASE_UNKNOWN_ID');
   const s=result.scenarios[0],map=new Map(sources.map(x=>[x.id,x]));
   const used=[...new Set(r.scenarios.flatMap(s=>s.ingredients.flatMap(i=>i.giId?[i.giId]:i.impact?[i.impact.sourceId]:[])))];
