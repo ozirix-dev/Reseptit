@@ -107,7 +107,16 @@ test('Live original results preserve frozen history, the 87 variants and exact r
    Object.hasOwn(before.variantHashes, variantKey(v)));
  assert.deepEqual(historicalVariants.map(variantKey).sort(), Object.keys(before.variantHashes).sort());
  for(const v of historicalVariants)assert.equal(sha(v),before.variantHashes[variantKey(v)],v.recipeId);
- const completePublishedInventory = restoreAuditInventory(json('tmp/nutrition/audit.json').inventory) as Array<{recipe_id:string;source_path:string;status:string}>;
+ const completePublishedInventory = restoreAuditInventory(json('tmp/nutrition/audit.json').inventory) as Array<{
+  recipe_id: string;
+  source_path: string;
+  status: string;
+  calculationEvidence: string | null;
+  values: Record<string, number | null>;
+  recalculatedValues: Record<string, number | null> | null;
+  evidenceErrors: string[];
+  uncertainties: string[];
+ }>;
  const alooParathaId = 'intialainen-aloo-paratha';
  const historicalAlooParatha = archivedJson('docs/nutrition/audit.json').inventory.find((row: {recipe_id: string}) => row.recipe_id === alooParathaId);
  assert.ok(historicalAlooParatha);
@@ -122,6 +131,18 @@ test('Live original results preserve frozen history, the 87 variants and exact r
    assert.equal(row.status, 'ESTIMATE WITH EVIDENCE', `${row.recipe_id}: nutrition evidence must pass`);
    return false;
  }).map((row) => {
+   if (row.recipe_id === "japanilainen-okayu-umeboshipluumulla" && row.calculationEvidence !== null) {
+    // Only the scoped carbohydrate estimate was added. The macro inventory remains withheld.
+    assert.equal(row.calculationEvidence, "docs/nutrition/calculations/japanilainen-okayu-umeboshipluumulla.json");
+    assert.equal(row.status, "INSUFFICIENT SOURCE DATA");
+    assert.deepEqual(row.recalculatedValues, row.values);
+    assert.ok(Object.values(row.values).every(value => value === null));
+    assert.deepEqual(row.evidenceErrors, []);
+    assert.deepEqual(row.uncertainties, []);
+    const errors = ["Calculation evidence file is missing"];
+    return {...row, status: "MISSING", calculationEvidence: null,
+      recalculatedValues: null, evidenceErrors: errors, uncertainties: errors};
+   }
    if (row.recipe_id !== alooParathaId) return row;
    const keys = Object.keys(historicalAlooParatha.values);
    assert.deepEqual(row, {
