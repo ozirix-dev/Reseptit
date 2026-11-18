@@ -1,4 +1,15 @@
 {
+  "docs/nutrition/batches/batch-11.json": {
+    "currentSha256": "86dee342557eb51db079370ccd1f8420257bc54aad07d63cb18b537f3fe1729f",
+    "historicalSha256": "e7cfdd7d6ccf7daa9a6e61952f0710f3ba0516cedd4da606be1bec793f3b1a52",
+    "inverseEdits": [
+      [
+        91,
+        1,
+        "      \"scope\": \"Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.\",\n"
+      ]
+    ]
+  },
   "docs/nutrition/calculations/baozi.json": {
     "currentSha256": "938518708f698c3d2ce40fc67ed3e367229b1c20331d4c722b72f766ece80cdb",
     "historicalSha256": "61ed8001140e5d15589260780cf62d188e6ace2999ae74d767f944155ca0859b",
@@ -288,6 +299,22 @@
         2,
         2,
         "  \"sourceHash\": \"dcab54e07f0d4689ffb36acb319e5bbaa5385908e1bd2b19ef0a86629f281661\",\n  \"calculatedAt\": \"2026-10-25\",\n"
+      ]
+    ]
+  },
+  "docs/nutrition/calculations/spanakopita.json": {
+    "currentSha256": "9cac5af8a755040634a1a91e5390019f66579370909ecc0c5bfbe36684c68682",
+    "historicalSha256": "9cc6eb4c54fca84c5cd0e8b03c4dd074a84bba9d17837553681250c2b8e4f782",
+    "inverseEdits": [
+      [
+        19,
+        1,
+        "      \"retentionEvidence\": \"All ingredient mass is included; no discarded cooking liquid or fat\",\n"
+      ],
+      [
+        6,
+        1,
+        "  \"scope\": \"Complete recipe divided by listed servings; the couscous uses the listed thigh option and congee uses jasmine rice with chicken stock. Added fat is counted as retained; no preparation loss is assumed.\",\n"
       ]
     ]
   },
