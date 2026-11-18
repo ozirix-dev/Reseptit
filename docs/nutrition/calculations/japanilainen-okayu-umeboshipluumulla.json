@@ -1,0 +1,167 @@
+{
+  "recipeId": "japanilainen-okayu-umeboshipluumulla",
+  "sourceHash": "b5713057c8c1cce2045e8ce06b832ddc1bfa7def317540e652f728ead5fbf208",
+  "calculatedAt": "2026-11-18",
+  "batchId": "batch-692",
+  "servings": 2,
+  "scope": "Original two equal Okayu portions with the listed toppings. Uses ingredient reference values for dry porridge rice, plain salted umeboshi, raw spring onion and unhulled sesame. The rinse loss for rice is not measured. The only calculated public nutrient in this scope is available carbohydrate.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Whole-portion available carbohydrate uses native composition fields. Separate total carbohydrate and other macros remain withheld because polyols in the rice and complete macro/fibre values in the umeboshi are not verified.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "kuivaa valkoista riisiä",
+      "record": {
+        "id": "fineli-156-release-20",
+        "name": "RIISI PUUROUTUVA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/156",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "dry uncooked short-grain rice",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 75.6,
+          "FIBT": 2.3,
+          "POLYL": null
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "Fineli Rel20 has no reported polyol value for this record.",
+        "per100g": {
+          "carbohydrate": 75.6,
+          "fibre": 2.3,
+          "polyols": null,
+          "protein": 6.06,
+          "fat": 0.7
+        }
+      },
+      "state": "dry uncooked short-grain rice",
+      "matchEvidence": "Reference for the original dry white rice when made with porridge rice.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The recipe weight represents the edible ingredient; pitted weight is used for umeboshi.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All rice assigned to the two bowls from raw input. No measured correction for rinse loss."
+    },
+    {
+      "amount": 10,
+      "unit": "g",
+      "item": "kivetöntä suolattua umeboshia",
+      "record": {
+        "id": "mext-07022-available-mass",
+        "name": "Salted umeboshi, edible pitted portion",
+        "sourceUrl": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=7_07022_7&MODE=7",
+        "retrievedAt": "2026-11-18",
+        "licence": "MEXT: 日本食品標準成分表（八訂）増補2023年から引用",
+        "state": "plain salt-preserved umeboshi, edible portion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "MEXT 07022 sorbitol 0.4 g/100 g is in its own column; available carbohydrate uses the mass sum (計).",
+        "per100g": {
+          "carbohydrate": 0.9,
+          "polyols": 0.4
+        }
+      },
+      "state": "plain salt-preserved umeboshi, edible portion",
+      "matchEvidence": "Whole plain salted umeboshi matches the generic salt-preserved edible-fruit reference. Sweetened products are outside scope.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The recipe weight represents the edible ingredient; pitted weight is used for umeboshi.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All 10 g edible topping is divided between bowls without heating or discard."
+    },
+    {
+      "amount": 20,
+      "unit": "g",
+      "item": "kevätsipulia",
+      "record": {
+        "id": "afcd-F006250-release-3",
+        "name": "Onion, spring, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw spring onion",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.6,
+          "fibre": 1.9,
+          "polyols": 0,
+          "protein": 1.7,
+          "fat": 0.2
+        }
+      },
+      "state": "raw spring onion",
+      "matchEvidence": "AFCD F006250 represents fresh raw spring onion, weighed as edible chopped topping.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The recipe weight represents the edible ingredient; pitted weight is used for umeboshi.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All 20 g edible topping is divided between bowls."
+    },
+    {
+      "amount": 8,
+      "unit": "g",
+      "item": "seesaminsiemeniä",
+      "record": {
+        "id": "fineli-385-release-20",
+        "name": "SEESAMINSIEMEN, KUORINEEN",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/385",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "whole unhulled sesame seeds",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.9,
+          "FIBT": 4.9,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.9,
+          "fibre": 4.9,
+          "polyols": 0,
+          "protein": 23.5,
+          "fat": 54.8
+        }
+      },
+      "state": "whole unhulled sesame seeds",
+      "matchEvidence": "Fineli 385 represents unhulled sesame; this estimate uses that reference for the weighed seed topping.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The recipe weight represents the edible ingredient; pitted weight is used for umeboshi.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All 8 g edible topping is divided between bowls."
+    },
+    {
+      "amount": 700,
+      "unit": "ml",
+      "item": "vettä",
+      "state": "plain water",
+      "matchEvidence": "Cooking water",
+      "excludedReason": "Plain water supplies no nutrients counted in the recipe carbohydrate model.",
+      "omissionImpactEvidence": "Plain cooking water does not contribute carbohydrate, fibre, fat, protein or energy.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      }
+    }
+  ]
+}
