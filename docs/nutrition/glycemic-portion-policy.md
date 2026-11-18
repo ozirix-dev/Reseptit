@@ -174,6 +174,13 @@ koostumuslähde ensin kuivattuja ja sitten keitettyjä papuja.
 [Tuoreena keitetyt pavut (AFCD)](https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F000418) ·
 [Kuivattuina keitetyt pavut (Fineli)](https://fineli.fi/fineli/fi/elintarvikkeet/31233)
 
+Kun hyväksytyn alkuperäisen pistelaskelman aineksista jää imeytyvää
+hiilihydraattia GK:n ulkopuolelle, määrä näkyy luvun yhteydessä.
+Arvio ja dokumentoitu yläraja esitetään omina lukuinaan.
+Jos yhden aineksen osuus on yli puolet tiedossa olevasta GK-summasta,
+näytetään myös aines ja mahdollinen ruokaryhmän GI-keskiarvo.
+Reseptikohtainen katselmoitu rajaus on ensisijainen.
+
 Kaalikääryleiden 9,24 säilytettiin. Kaalin ja kukkakaalin osuudet perustuvat
 kasvisryhmän GI 66 -keskiarvoon, ja noin 1,58 g imeytyvää hiilihydraattia
 jää laskelman ulkopuolelle. Katsausarvo ei ole kaalin tai kukkakaalin mittaus.

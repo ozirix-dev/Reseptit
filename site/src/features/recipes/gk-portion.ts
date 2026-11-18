@@ -5,6 +5,16 @@ import type { GlycemicLoadDisplayCandidate } from "./glycemic-load-display";
 export type GkClass = ReturnType<typeof classifyPublicGk>;
 export type LocalizedText = Record<RecipeLocale, string>;
 
+export interface OriginalGkCoverage {
+  estimatedOmissionG: number;
+  upperBoundOmissionG: number;
+  mainIngredient?: {
+    names: Partial<LocalizedText>;
+    share: "all" | "majority";
+    categoryMean: boolean;
+  };
+}
+
 export interface CarbohydrateChoice {
   label: LocalizedText;
   availableCarbsGPerServing: number;

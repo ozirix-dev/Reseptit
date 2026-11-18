@@ -29,6 +29,7 @@ export const portionCopy = {
     class: { LOW: "Pieni arvioitu GK", MEDIUM: "Keskisuuri arvioitu GK", HIGH: "Suuri arvioitu GK" },
     crossing: "Vaihteluväli ulottuu useaan GK-luokkaan.", rounding: "Arvio on lähellä GK-luokan rajaa.",
     omitted: "Laskelmasta puuttuu pieniä hiilihydraattiosuuksia. Tulos ei riitä varmistamaan GK-luokkaa.",
+    omittedClass: "Annoksen GK-luokka on epävarma.",
   },
   en: {
     title: "Portion you eat", batch: "Servings to make", single: "1 recipe serving", carbs: "Carbohydrate in your portion", available: "Excludes fibre and polyols",
@@ -55,6 +56,7 @@ export const portionCopy = {
     class: { LOW: "Estimated low GL", MEDIUM: "Estimated medium GL", HIGH: "Estimated high GL" },
     crossing: "The range spans more than one GL category.", rounding: "The estimate is close to a GL category boundary.",
     omitted: "The calculation leaves out small amounts of carbohydrate, so the GL category is uncertain.",
+    omittedClass: "The serving’s GL category is uncertain.",
   },
   sv: {
     title: "Portionen du äter", batch: "Portioner att laga", single: "1 receptportion", carbs: "Kolhydrater i din portion", available: "Utan fiber och polyoler",
@@ -81,6 +83,7 @@ export const portionCopy = {
     class: { LOW: "Uppskattad låg GL", MEDIUM: "Uppskattad medelhög GL", HIGH: "Uppskattad hög GL" },
     crossing: "Intervallet sträcker sig över flera GL-kategorier.", rounding: "Uppskattningen ligger nära en GL-gräns.",
     omitted: "Små mängder kolhydrater saknas i beräkningen. Därför är GL-kategorin osäker.",
+    omittedClass: "Portionens GL-kategori är osäker.",
   },
   th: {
     title: "ปริมาณที่คุณรับประทาน", batch: "จำนวนที่ทำ", single: "1 ที่ตามสูตร", carbs: "คาร์โบไฮเดรตในส่วนที่รับประทาน", available: "ไม่รวมใยอาหารและโพลิออล",
@@ -107,6 +110,7 @@ export const portionCopy = {
     class: { LOW: "ค่า GL โดยประมาณอยู่ในระดับต่ำ", MEDIUM: "ค่า GL โดยประมาณอยู่ในระดับปานกลาง", HIGH: "ค่า GL โดยประมาณอยู่ในระดับสูง" },
     crossing: "ช่วงค่าครอบคลุมมากกว่าหนึ่งระดับ GL", rounding: "ค่าประมาณอยู่ใกล้จุดแบ่งระดับ GL",
     omitted: "การคำนวณไม่รวมคาร์โบไฮเดรตบางส่วนที่มีปริมาณเล็กน้อย จึงยังยืนยันระดับ GL ไม่ได้",
+    omittedClass: "ระดับ GL ของอาหารหนึ่งที่ยังไม่แน่นอน",
   },
 } as const;
 

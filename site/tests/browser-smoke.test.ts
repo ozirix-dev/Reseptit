@@ -541,6 +541,20 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.match(await riceLabelCarbs.innerText(), /9,6 g/);
     assert.equal(await page.locator("[data-portion-carbohydrate], [data-portion-gk]").count(), 0);
 
+    await page.goto(base + routeFor("munakasrulla-pinaatti-tuorejuustolla"));
+    const gkCoverage = page.locator("[data-original-gk-coverage]");
+    assert.match(await gkCoverage.locator('[data-gk-contributor="all"]').innerText(), /tuorejuustoa/);
+    assert.match(await gkCoverage.locator("[data-gk-omissions]").innerText(), /1,2 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.match(await gkCoverage.locator("[data-gk-omissions]").innerText(), /2,4 g/);
+    assert.match(await page.locator(".recipe-glycemic-load__class").innerText(), /epävarma/);
+
+    await page.goto(base + routeFor("caponata"));
+    const caponataOmission = page.locator("[data-gk-omissions]");
+    assert.match(await caponataOmission.innerText(), /yläraja on 0,12 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.match(await caponataOmission.innerText(), /yläraja on 0,23 g/);
+
     await page.goto(base + routeFor("briossisampylat-joshua-weissman"));
     assert.match(await page.locator('[data-gk-status="QUALITATIVE"]').innerText(), /Suuri arvioitu GK/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);

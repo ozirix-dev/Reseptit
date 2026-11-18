@@ -1,4 +1,4 @@
-import { EstimateDetails, EstimateSummary, MissingEstimate } from "../glycemic-load/GlycemicLoadEvidence";
+import { EstimateDetails, EstimateSummary, MissingEstimate, OriginalGkCoverageNote } from "../glycemic-load/GlycemicLoadEvidence";
 import { gkCopy } from "../glycemic-load/glycemic-load-copy";
 import { ChocolateComparison } from './ChocolateComparisonFi';
 import {GkOnlyVariantPanel,gkScopeUi} from './GkOnlyVariantPanel';
@@ -100,7 +100,7 @@ export function RecipePage() {
   const category = scaled?.category;
   const classText = scaled?.standardServingOnly ? null : portionEvidence?.classLimitation?.[locale] ?? (
     scaled?.inconsistent ? portionWords.inconsistent
-      : scaled?.omissionLimitsClass ? portionWords.omitted
+      : scaled?.omissionLimitsClass ? (glycemicLoad?.originalGkCoverage ? portionWords.omittedClass : portionWords.omitted)
       : category === "CROSSES_BOUNDARY" ? portionWords.crossing
         : category ? portionWords.class[category] : null
   );
@@ -147,6 +147,7 @@ export function RecipePage() {
             <dd aria-live="polite" data-portion-gk>{glValue}{eatenPortion === 1 ? ` ${glUnit}` : ""}</dd>
           </div></dl>}
           {classText ? <p className="recipe-glycemic-load__class">{classText}</p> : null}
+          <OriginalGkCoverageNote coverage={glycemicLoad.originalGkCoverage} locale={locale} multiplier={eatenPortion} />
           {portionEvidence?.alternatives ? <GkAlternatives choices={portionEvidence.alternatives} locale={locale} multiplier={eatenPortion} /> : null}
           {display?.roundingHitsBoundary && !scaled?.inconsistent && !scaled?.omissionLimitsClass ? <p className="recipe-disclosure">{portionWords.rounding}</p> : null}
           {gkMethodLink}
@@ -155,7 +156,7 @@ export function RecipePage() {
               <EstimateSummary result={glycemicLoad} locale={locale} />
               {glycemicLoad.assessmentType && !glycemicLoad.closedRecoveryC && !glycemicLoad.boundedPolyolC ? <p>{modelledNote}</p> : null}
               {!glycemicLoad.assessmentType ? <p>{labels.glycemicLoadNote}</p> : null}
-              {glycemicLoad.omittedAvailableCarbohydratePerServingG > 0
+              {glycemicLoad.omittedAvailableCarbohydratePerServingG > 0 && !glycemicLoad.originalGkCoverage
                 ? <p>{labels.glycemicLoadOmission(new Intl.NumberFormat(numberLocale, { maximumSignificantDigits: 1 }).format(glycemicLoad.omittedAvailableCarbohydratePerServingG))}</p>
                 : null}
             </>}

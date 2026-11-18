@@ -1,5 +1,5 @@
 import { publicGkLowMax, publicGkHighMin } from "../recipes/gk-estimate";
-import { EstimateDetails, EstimateSummary, MissingEstimate } from "./GlycemicLoadEvidence";
+import { EstimateDetails, EstimateSummary, MissingEstimate, OriginalGkCoverageNote } from "./GlycemicLoadEvidence";
 import { gkCopy } from "./glycemic-load-copy";
 import { gkVariantScope } from '../recipes/gk-estimate-scope';
 import { GkCoverageSummary } from './GkCoverageSummary';
@@ -275,14 +275,15 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
         <p className="gk-evidence__value"><strong>{text.value} · {numericText}</strong></p>
         {portion?.classLimitation ? <p>{portion.classLimitation[locale]}</p>
           : base?.inconsistent ? <p>{portionWords.inconsistent}</p>
-          : base?.omissionLimitsClass ? <p>{portionWords.omitted}</p>
+          : base?.omissionLimitsClass ? <p>{result.originalGkCoverage ? portionWords.omittedClass : portionWords.omitted}</p>
           : base?.category === "CROSSES_BOUNDARY" ? <p>{portionWords.crossing}</p>
           : display?.roundingHitsBoundary ? <p>{portionWords.rounding}</p> : null}
+        <OriginalGkCoverageNote coverage={result.originalGkCoverage} locale={locale} />
         {portion?.alternatives ? <GkAlternatives choices={portion.alternatives} locale={locale} /> : null}
         <EstimateSummary result={result} locale={locale} />
         <EstimateDetails result={result} locale={locale}
           notes={<>
-            {result.omittedAvailableCarbohydratePerServingG > 0 ? <p>{omissionCopy[locale](number.format(result.omittedAvailableCarbohydratePerServingG))}</p> : null}
+            {result.omittedAvailableCarbohydratePerServingG > 0 && !result.originalGkCoverage ? <p>{omissionCopy[locale](number.format(result.omittedAvailableCarbohydratePerServingG))}</p> : null}
             {result.recipeId === "massaman-curry-kanalla-vhh" ? <p>{text.massaman}</p> : null}
           </>}
           technicalNotes={result.closedRecoveryC ? <p>{recoveryDisclosure[locale]}</p> :

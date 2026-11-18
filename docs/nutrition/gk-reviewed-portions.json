@@ -5033,5 +5033,19 @@
       "sv": "7f57361d2685564cff72eda4387009e016b93fe7753be8467157120648de6c1f",
       "th": "28157931a287dfd76f71eb9b7ce2a559f78109e578957ff95453933d9de4cbfb"
     }
+  },
+  "keto-pannukakku": {
+    "recipeBindingSha256": "8c35a18f3b8c380c59d9f56742b83c1950938be83ab671090c911b0aa61b933d",
+    "preparationSha256": "d9772c0dcd4f4417e478186129dcc4735d2c1ef15877ad9adb5e194a4ecfabf7",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/15f0c28055bb6805b3549a9958fb3cfe1f273d59/reseptit/jalkiruoat/keto-pannukakku.md",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/15f0c28055bb6805b3549a9958fb3cfe1f273d59/docs/nutrition/glycemic-load-pilot-input.json#L8162",
+    "reasoning": "The exact bound recipe uses all listed whipping cream in the batter. Its approved GK includes the whipping cream and cream cheese. The berries and whipped cream shown as garnish are outside the listed ingredients. The existing partial point and uncertain class remain at the same serving.",
+    "classLimitation": {
+      "fi": "GK-luku muodostuu pannukakkutaikinan kermasta ja tuorejuustosta. Tarjoilussa lisättävien marjojen ja kermavaahdon hiilihydraatit lasketaan erikseen.",
+      "en": "The GL figure comes from the cream and cream cheese in the pancake batter. Count the carbohydrate in any berries and whipped cream added when serving separately.",
+      "sv": "GL-värdet bygger på grädden och färskosten i pannkakssmeten. Räkna kolhydraterna från eventuella bär och vispad grädde till serveringen separat.",
+      "th": "ค่า GL มาจากครีมและครีมชีสในแป้งแพนเค้ก ให้คิดคาร์โบไฮเดรตจากเบอร์รีและวิปครีมที่เติมตอนเสิร์ฟแยกต่างหาก"
+    }
   }
 }
