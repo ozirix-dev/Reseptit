@@ -259,11 +259,12 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
       <h3><Link to={localized?.routePath ?? result.routePath} lang={isLiverRecipe ? locale : localized ? recipeLocaleFromPath(localized.routePath) : "fi"}>{titleFor(result)}</Link></h3>
       <p className="gk-evidence__scope">{ux.original}</p>
       {carbs?.choices ? <>
+        {portion?.condition ? <p>{portion.condition[locale]}</p> : null}
         <WholeCarbohydrateChoices choices={carbs.choices} locale={locale} />
         <p>{portionWords[carbs.definition]}</p>
       </> : carbs ? <p>{portionText.grams(describeCarbs(carbs.range, numberLocale))} · {portionWords[carbs.definition]}</p> : null}
       {portion?.ingredientPortion ? <IngredientPortionDetails ingredient={portion.ingredientPortion} locale={locale} /> : null}
-      {portion?.condition ? <p>{portion.condition[locale]}</p> : null}
+      {!carbs?.choices && portion?.condition ? <p>{portion.condition[locale]}</p> : null}
       {portion?.reviewedSource && !verbal && (portion.condition || portion.classLimitation || (!base && portion.ingredientPortion))
         && !carbs?.choices?.some(choice => choice.source === portion.reviewedSource)
         && !portion.ingredientPortion?.carbohydrateAlternatives?.some(choice => choice.source === portion.reviewedSource)

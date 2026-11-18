@@ -196,10 +196,18 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
     const preparations = standaloneReview?.preparationChoices;
     if (preparations) {
       const { index, choices } = preparations;
-      if (review?.ingredientPortion?.index !== index || review?.ingredientPortion?.carbohydrateAlternatives
+      if (review?.ingredientPortion?.index !== index
           || matches.some(match => match.index === index) || !distinctChoiceLabels(choices)
           || new Set(choices.map(choice => choice.record?.sourceUrl)).size !== choices.length) {
         throw new Error(`${recipeId}: whole-portion preparations require distinct labels and sources for the same ingredient.`);
+      }
+      const ingredientChoices = review?.ingredientPortion?.carbohydrateAlternatives;
+      if (ingredientChoices && (ingredientChoices.length !== choices.length || ingredientChoices.some((ingredient, i) => {
+        const record = choices[i].record;
+        return record?.sourceUrl !== ingredient.source || record.carbohydrateDefinition !== "EU_AVAILABLE"
+          || record.per100g.carbohydrate !== ingredient.availableCarbsGPer100g;
+      }))) {
+        throw new Error(`${recipeId}: ingredient and whole-portion preparations must agree on composition evidence.`);
       }
       const scenarios = choices.map(({ label, ...match }) => {
         const candidate = applyCompositionMatches(reviewedInput, [{ index, ...match }], labelIndices);

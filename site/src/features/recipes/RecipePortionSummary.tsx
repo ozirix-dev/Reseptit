@@ -196,6 +196,7 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batc
   const t = portionCopy[locale];
   const format = new Intl.NumberFormat(locale).format;
   const ingredient = evidence?.driver && recipe.ingredients[evidence.driver.ingredientIndex]?.item;
+  const preparationScope = carbs?.choices && evidence?.condition?.[locale];
   return <div className="recipe-portion">
     {onChange ? <div className="recipe-portion__control">
       <label htmlFor="eaten-recipe-portion">{t.title}</label>
@@ -207,6 +208,7 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batc
       {!evidence?.gramsPerServing && !evidence?.piecesPerServing ? <p>{t.batchShare(format(batchServings))}</p> : null}
       {evidence?.gramsPerServing ? <p>{t.about} {format(evidence.gramsPerServing * multiplier)} {locale === "th" ? "กรัม" : "g"}</p> : null}
       {evidence?.piecesPerServing ? <p>{t.pieces(format(evidence.piecesPerServing * multiplier))}</p> : null}
+      {preparationScope ? <p className="recipe-disclosure">{preparationScope}</p> : null}
       {carbs?.choices ? <WholeCarbohydrateChoices choices={carbs.choices} locale={locale} multiplier={multiplier} /> : carbs ? <dl className="nutrition-list">
         <div><dt>{t.carbs}</dt><dd data-portion-carbohydrate={carbs.definition}>{t.about} {describeCarbs(scalePortionRange(carbs.range, multiplier), locale)} {locale === "th" ? "กรัม" : "g"}</dd></div>
       </dl> : <p className="recipe-disclosure">{t.missingCarbs}</p>}
@@ -214,7 +216,7 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batc
       {evidence?.ingredientPortion ? <IngredientPortionDetails ingredient={evidence.ingredientPortion} locale={locale} multiplier={multiplier} /> : null}
     </div>
     {ingredient ? <p>{evidence?.driver?.coversMajority ? t.main(ingredient) : t.known(ingredient)}</p> : null}
-    <p className="recipe-disclosure">{evidence?.condition?.[locale] ?? t.scope}</p>
+    {!preparationScope ? <p className="recipe-disclosure">{evidence?.condition?.[locale] ?? t.scope}</p> : null}
     {evidence?.reviewedSource && !evidence.verbal && (evidence.condition || evidence.classLimitation || ingredient || evidence.ingredientPortion)
       && !carbs?.choices?.some(choice => choice.source === evidence.reviewedSource)
       && !evidence.ingredientPortion?.carbohydrateAlternatives?.some(choice => choice.source === evidence.reviewedSource) ? <p className="recipe-disclosure">

@@ -179,7 +179,7 @@ test("reviewed preparations scale only the same weighed ingredient", async () =>
     loadReviewedPortions(root),
     readFile(path.join(root, "reseptit/leivonnaiset", id + ".md"), "utf8"),
   ]);
-  const review = reviews[id];
+  const review = { ...reviews[id], wholeCarbohydrateOnly: undefined };
   const ingredient = review.ingredientPortion!;
   const { portion } = await projectPortionEvidence(root, id, markdown, review);
   assert.equal(portion.ingredientPortion?.amountPerServing, 24);
@@ -199,6 +199,7 @@ test("whole-portion comparisons require a complete calculation for each named pr
   const reviews = await loadReviewedPortions(root);
   for (const [id, category, baked, boiled] of [
     ["bataattiletut", "aamupalat", 30.33, 28.79], ["bataattibrowniet", "leivonnaiset", 10.05, 9.68],
+    ["bataatti-banaanileipa", "leivonnaiset", 14.14, 13.79],
   ] as const) {
     const markdown = await readFile(path.join(root, "reseptit", category, id + ".md"), "utf8");
     const review = reviews[id];
@@ -206,7 +207,7 @@ test("whole-portion comparisons require a complete calculation for each named pr
     assert.deepEqual(portion.availableCarbs, { min: boiled, max: baked });
     assert.deepEqual(portion.wholeCarbohydrateChoices?.map(choice => [choice.source.split("/").at(-1), choice.availableCarbsGPerServing]),
       [["30600", baked], ["30602", boiled]]);
-    assert.equal(portion.ingredientPortion?.carbohydrateAlternatives, undefined);
+    assert.equal(Boolean(portion.ingredientPortion?.carbohydrateAlternatives), id === "bataatti-banaanileipa");
     assert.equal(portion.verbal, undefined);
     assert.equal(originalGlycemicLoadCategory(undefined, portion), null);
 
@@ -215,6 +216,10 @@ test("whole-portion comparisons require a complete calculation for each named pr
     choices[1].record.carbohydrateDefinition = "EU_TOTAL_INCLUDING_POLYOLS";
     choices[1].record.per100g.polyols = null;
     choices[1].record.polyolsSourceVerified = false;
+    if (id === "bataatti-banaanileipa") {
+      await assert.rejects(projectPortionEvidence(root, id, markdown, broken), /ingredient and whole-portion preparations must agree/);
+      delete broken.ingredientPortion!.carbohydrateAlternatives;
+    }
     await assert.rejects(projectPortionEvidence(root, id, markdown, broken), /whole-portion preparation requires evidence for every ingredient/);
     const duplicate = structuredClone(review);
     duplicate.wholeCarbohydrateOnly!.preparationChoices!.choices[1].label.en = choices[0].label.en;
@@ -245,6 +250,8 @@ test("reviewed standalone composition uses its pinned historical input without r
     ["mustikka-jogurttijaatelo", "jalkiruoat", 15.01],
     ["parmesaani-lyttyperunat", "alkuruoat", 23.37],
     ["makea-banaanimunakas", "aamupalat", 32.43],
+    ["piparkakkulatte-hunajalla", "aamupalat", 15.75],
+    ["paahtopaistileipa-piparjuurikastikkeella", "alkuruoat", 22.7],
   ] as const) {
     const markdown = await readFile(path.join(root, "reseptit", category, id + ".md"), "utf8");
     const review = reviews[id];

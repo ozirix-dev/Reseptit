@@ -1849,12 +1849,12 @@
     "nutritionSha256": "027334ce46357e10adf46a51a13cc9d2939c164f1c732f69b33bc2b07c5fa5d4",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31824",
-    "reasoning": "One weighed 50 g rye-loaf slice in each of four sandwiches. Fineli Release 20 31824 was used in the current audit as a reference rye loaf (Fazer Oululainen Jälkiuunivuoka, wholegrain rye flour and bran), with 39.455 g available CHO per 100 g and verified polyols. This historical reference is not a claim about current availability or the formulation of any current Fazer variety. Optional light toasting does not redefine the as-sold weighed input. Smetana and capers still lack verified polyols, and final filling yield was unmeasured.",
+    "reasoning": "The recipe equips four weighed slices with 60 g beef each and divides the sauce and vegetables between them. All listed topping amounts are included, using drained weights for cucumber and capers. AFCD F002220 reports directly available carbohydrate without sugar alcohols for drained capers and resolves the last unknown available-carbohydrate input. Fineli #31824 is a specific reference rye loaf for the estimate and can differ from a chosen bread; #630 is approximately 40% fat smetana. The point uses the explicitly permitted 20 g horseradish option. At 12 g instead the estimate would be about 0.28 g lower per sandwich. The two endpoint recipes are preparation choices, and distribution and final yield were not measured.",
     "condition": {
-      "fi": "Yhteen annokseen tulee yksi viipale. Arvio perustuu Finelin jälkiuunivuokaleipään. Tarkista oman leipäsi hiilihydraatit pakkauksesta.",
-      "en": "One serving uses one slice. The estimate uses Fineli’s Jälkiuunivuoka rye loaf as a reference. Check the carbohydrate on your bread’s label.",
-      "sv": "En portion innehåller en skiva. Uppskattningen bygger på rågformbrödet Jälkiuunivuoka i Fineli. Kontrollera kolhydratmängden på ditt bröds förpackning.",
-      "th": "หนึ่งที่ใช้ขนมปังหนึ่งแผ่น ค่าประมาณอ้างอิงขนมปังไรย์ Jälkiuunivuoka ในฐานข้อมูล Fineli ตรวจสอบปริมาณคาร์โบไฮเดรตบนฉลากขนมปังที่ใช้"
+      "fi": "Arvio koskee yhtä leipää, jossa on noin 50 g ruisvuokaleipää, 60 g paistia ja neljännes kaikista täytteistä. Laskelmassa käytetään 20 g piparjuurta koko kastike-erään ja punnitaan suolakurkku ja kaprikset valutettuina. Jos kastike-erään käytetään 12 g piparjuurta, yhden leivän määrä on noin 0,3 g pienempi.",
+      "en": "The estimate is for one sandwich with about 50 g of rye loaf, 60 g of beef and a quarter of all toppings. It uses smetana (about 40% fat), 20 g of horseradish for the batch, and the drained weights of the pickles and capers. Using 12 g of horseradish in the batch reduces the amount for one sandwich by about 0.3 g.",
+      "sv": "Uppskattningen gäller en smörgås med cirka 50 g rågformbröd, 60 g rostbiff och en fjärdedel av alla pålägg. Beräkningen använder smetana, 20 g pepparrot till hela såsen samt avrunnen vikt för gurkan och kaprisen. Med 12 g pepparrot i såsen blir mängden per smörgås cirka 0,3 g lägre.",
+      "th": "ค่าประมาณสำหรับแซนด์วิชหนึ่งชิ้น ใช้ขนมปังไรย์ประมาณ 50 กรัม เนื้ออบ 60 กรัม และเครื่องหน้าหนึ่งในสี่ของสูตร คำนวณโดยใช้สเมตานา (ครีมเปรี้ยวไขมันประมาณ 40%) ฮอร์สแรดิช 20 กรัมสำหรับซอสทั้งสูตร และชั่งแตงกวาดองกับเคเปอร์หลังสะเด็ดน้ำ หากใช้ฮอร์สแรดิช 12 กรัมในซอสทั้งสูตร คาร์โบไฮเดรตต่อแซนด์วิชหนึ่งชิ้นจะลดลงประมาณ 0.3 กรัม"
     },
     "ingredientPortion": {
       "index": 1,
@@ -1867,6 +1867,41 @@
       },
       "unit": "g",
       "availableCarbsGPer100g": 39.455
+    },
+    "publicSource": "https://fineli.fi/fineli/fi/elintarvikkeet/31824",
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "5ee9cd4355b95e03e46b8508af7f1feb4300cc7b393e098ca28f69ace01894f0",
+        "en": "a5c3fec682952a280a4032c052ea28e885cf4dba15a46e9c5cd11e22dfdb05ef",
+        "sv": "1d137f1a4492b2259dc03142ad44faca2e50373699a164ed5d792b4d5ed5e9b6",
+        "th": "974c4a8b171310e32a0ca7502833545df0d4e7257b795f0dfd11cd8625293d74"
+      },
+      "compositionMatches": [
+        {
+          "index": 10,
+          "state": "drained bottled or canned pickled capers",
+          "matchEvidence": "FSANZ AFCD Release 3 F002220 matches this ingredient's physical form and reports 1.7 g available carbohydrate without sugar alcohols per 100 g (nutrient workbook row 1320). ",
+          "record": {
+            "id": "afcd-F002220-release-3",
+            "name": "Capers, pickled, canned, drained",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002220",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "state": "drained bottled or canned pickled capers",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "The AFCD workbook directly reports available carbohydrate without sugar alcohols. An independent aggregate polyol value was not established.",
+            "per100g": {
+              "carbohydrate": 1.7,
+              "fibre": 3.2,
+              "polyols": null,
+              "protein": 2.4,
+              "fat": 0.9
+            }
+          }
+        }
+      ]
     }
   },
   "bataattiletut": {
@@ -3216,12 +3251,12 @@
     "nutritionSha256": "80c7e901c05c4bb32752ff4e759915bf77eb38a5e1763adef5d386bb1c6424a6",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
-    "reasoning": "The weighed edible input is already cooked and cooled; original leaves pre-cooking open. Fineli Release 20 #30600 oven-baked peeled sweet potato gives 18.293 g CHOAVL per 100 g, and #30602 peeled sweet potato boiled without salt gives 16.83 g CHOAVL per 100 g. These are distinct ingredient references, not the recipe's uncertainty interval. The original uses 240 g prepared sweet potato. Keeping the baseline chocolate formula constant gives internal whole-input scenarios of 14.73 g baked and 14.38 g boiled per 1/10. The stated ingredient is unspecified dark chocolate chips, for which the pinned generic dark bar provides composition comparison only. Neither the chosen chocolate nor the sweet-potato pre-cook is fixed, so retain the component in public and both limitations in the audit.",
+    "reasoning": "Two ingredient-accounting scenarios for one of ten equal slices, both specifically using 80 g Callebaut 811 54.5% dark chocolate callets SKU 811-E0-D94. Manufacturer specification matches the official product page and reports independent 0.0 g polyols and 45.8 g available carbohydrate per 100 g. All flourless loaf inputs and surface toppings are included. The two choices apply Fineli #30600 oven-baked and #30602 unsalted-boiled to exactly 240 g cooked peeled cooled sweet potato. Fineli reference peanut spread without added salt is used for smooth peanut butter. The recipes can use a different dark chip, but these numeric estimates apply to the expressly scoped Callebaut product. This is a recipe-input estimate with no baked yield or nutrient loss measurement. The archived macro inputs and holds, and the original GK approval remain untouched.",
     "condition": {
-      "fi": "Punnitse bataatti kuorittuna ja jäähtyneenä. Vertailu koskee samaa bataattimäärää kummallakin valmistustavalla. Banaani ja suklaahiput tuovat lisää hiilihydraatteja.",
-      "en": "Weigh the sweet potato peeled and cooled. The comparison uses the same weight for both preparations. Bananas and chocolate chips add carbohydrate.",
-      "sv": "Väg sötpotatisen skalad och avsvalnad. Jämförelsen använder samma vikt för båda tillagningssätten. Banan och chokladknappar bidrar med ytterligare kolhydrater.",
-      "th": "ชั่งมันเทศที่ปอกเปลือกแล้วและพักให้เย็น การเปรียบเทียบใช้มันเทศน้ำหนักเท่ากันทั้งสองวิธี กล้วยและช็อกโกแลตชิปให้คาร์โบไฮเดรตเพิ่ม"
+      "fi": "Arviot koskevat yhtä kymmenesosaa leivästä, kun käytät 80 g Callebaut 811 -tummasuklaahippuja (54,5 % kaakaota) koko taikinaan ja pinnalle. Punnitse bataatti kypsänä, kuorittuna ja jäähtyneenä. Muiden suklaahippujen hiilihydraattimäärä voi poiketa.",
+      "en": "The estimates are for one tenth of the loaf, using 80 g of Callebaut 811 dark chocolate callets (54.5% cocoa) in the batter and on top. Weigh the sweet potato cooked, peeled and cooled. Other chocolate chips may contain a different amount of carbohydrate.",
+      "sv": "Uppskattningarna gäller en tiondel av brödet med 80 g mörka chokladknappar Callebaut 811 (54,5 % kakao) i smeten och ovanpå. Väg sötpotatisen tillagad, skalad och avsvalnad. Andra chokladknappar kan innehålla en annan mängd kolhydrater.",
+      "th": "ค่าประมาณสำหรับขนมปังหนึ่งในสิบของสูตร เมื่อใช้ช็อกโกแลตชิปดำ Callebaut 811 (โกโก้ 54.5%) รวม 80 กรัมในแป้งและโรยหน้า ชั่งมันเทศหลังทำให้สุก ปอกเปลือกและพักให้เย็น ช็อกโกแลตชิปชนิดอื่นอาจมีคาร์โบไฮเดรตต่างกัน"
     },
     "ingredientPortion": {
       "index": 0,
@@ -3255,6 +3290,104 @@
           "availableCarbsGPer100g": 16.83
         }
       ]
+    },
+    "publicSource": "https://www.callebaut.com/en-GB/products/callebaut/darkchocolaterecipe811/811-E0-D94",
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "25eab041fda077e9bf156ffd349e129c819636eff1062628aefc6a9324842cc9",
+        "en": "077cb3fb1fba428617ba48399285eced6b8f3856634d07a832566a81a8adbd7a",
+        "sv": "aa066a7414ae7996e06b2688faf9afcdad34e263d7850c66b2bdfd378c9328e7",
+        "th": "0c6d2bbb96bcc25620814522f316b00e04da51101156b8a319edf2362fe89b40"
+      },
+      "compositionMatches": [
+        {
+          "index": 6,
+          "state": "Callebaut 811 54.5% dark chocolate callets SKU 811-E0-D94 as sold",
+          "matchEvidence": "The optional 80 g of exact Callebaut 811 Dark Chocolate Callets 54.5% SKU 811-E0-D94 (EAN 5410522556605) supplies 45.8 g available carbohydrate per 100 g. The manufacturer's dated technical specification pp. 1–2 reports 45.8 g available carbohydrate and explicitly 0.0 g polyols. The manufacturer's current product page identifies the same SKU and confirms 45.8 g per 100 g. Both the batter and topping chips are included.",
+          "record": {
+            "id": "callebaut-811-e0-d94-eu-2021",
+            "name": "Callebaut 811 Dark Chocolate Callets 54.5%, 400 g",
+            "sourceUrl": "https://www.cfw.co.uk/Media/PDF%20Spec%20Sheets/Callebaut/Spec-Sheet-Callebaut-Dark-Callets-400g-%28811-E0-D94%29.pdf",
+            "retrievedAt": "2026-11-18",
+            "licence": "Barry Callebaut published product specification dated 2021-09-27",
+            "state": "Callebaut 811 54.5% dark chocolate callets SKU 811-E0-D94 as sold",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": true,
+            "polyolsEvidence": "Barry Callebaut technical specification for article 811-E0-D94 p.2 states POLYOLS 0.0 g per 100 g independently of AVAILABLE CARBOHYDRATES 45.8 g.",
+            "per100g": {
+              "carbohydrate": 45.8,
+              "fibre": 8.1,
+              "polyols": 0,
+              "protein": 5.1,
+              "fat": 36.6
+            }
+          }
+        }
+      ],
+      "preparationChoices": {
+        "index": 0,
+        "choices": [
+          {
+            "state": "Oven-baked sweet potato weighed cooled and peeled",
+            "record": {
+              "id": "fineli-30600",
+              "name": "BATAATTI, UUNISSA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
+              "retrievedAt": "2026-11-15",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "state": "Oven-baked sweet potato weighed cooled and peeled",
+              "basis": "per100g-prepared",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "per100g": {
+                "carbohydrate": 18.293,
+                "fibre": 2.717,
+                "polyols": 0,
+                "protein": 1.71,
+                "fat": 0.054
+              },
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+            },
+            "matchEvidence": "THL Fineli Release 20 #30600 oven-baked sweet potato gives 18.293 g available carbohydrate per 100 g. The 240 g weighed recipe input excludes the skin and is already cooked and cooled.",
+            "label": {
+              "fi": "Uunissa kypsennetty",
+              "en": "Oven-baked",
+              "sv": "Ugnsbakad",
+              "th": "อบจนสุก"
+            }
+          },
+          {
+            "state": "Sweet potato boiled without salt, weighed cooled and peeled",
+            "matchEvidence": "THL Fineli Release 20 #30602 is peeled sweet potato boiled without salt and gives 16.83 g available carbohydrate per 100 g. The 240 g input is already cooked and cooled.",
+            "record": {
+              "id": "fineli-30602-release-20",
+              "name": "BATAATTI, KUORITTU, KEITETTY, SUOLATON",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30602",
+              "retrievedAt": "2026-11-18",
+              "licence": "THL Fineli Release 20; CC BY 4.0",
+              "state": "Sweet potato boiled without salt, weighed cooled and peeled",
+              "basis": "per100g-prepared",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli #30602 Sugar alcohols (SUGOH) reference gives 0 by recipe calculation.",
+              "per100g": {
+                "carbohydrate": 16.83,
+                "fibre": 2.5,
+                "polyols": 0,
+                "protein": 1.57,
+                "fat": 0.05
+              }
+            },
+            "label": {
+              "fi": "Suolatta keitetty",
+              "en": "Boiled without salt",
+              "sv": "Kokt utan salt",
+              "th": "ต้มโดยไม่ใส่เกลือ"
+            }
+          }
+        ]
+      }
     }
   },
   "perunarieskat-ohrajauhoilla": {
@@ -3590,5 +3723,269 @@
       "th": "หนึ่งที่คือแพนเค้กหนึ่งแผ่นจากสองแผ่น ใช้แป้งถั่วชิกพีแห้ง 50 กรัม ค่า GL ส่วนของแป้งใช้ค่า GI เฉลี่ยของกลุ่มถั่วเมล็ดแห้ง"
     },
     "reasoning": "Two thin fresh pancakes made from 100 g dry chickpea flour, 120 mL water, raw onion, parsley, cumin and pan oil. The batter rests 10 minutes and is pan-fried, with no fermentation. AFCD F003986 gives 19.25 g available carbohydrate from the dry flour in one pancake. Using the nearby measured cheela GI 42 only as sensitivity stays below 10. The tested flour preparation differs from the finished dish and the separate farinata approval cannot move to this recipe. Atkinson et al. 2021 Table 1 reports legumes GI 34 (glucose=100; 32 entries, SD 14). This group accounts for 88% of the existing GK. Omission handling already suppresses the model's low category."
+  },
+  "piparkakkulatte-hunajalla": {
+    "recipeBindingSha256": "4608f5ab405dbdf4672e17db3d3e62a20c82839020d0bdab2ac5400132bfe472",
+    "preparationSha256": "3a6b20a6295bb27cdb72ad994ec04f58dcf34f193196692b759b9070ec4e1ac1",
+    "nutritionSha256": "4362e2a8ff92fd567eaf2029b3f3449d43c36918a16a88d8e00799479c0a0761",
+    "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+    "publicSource": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "All seven ingredients are retained as charged and the recipe divides the coffee foam into four equal portions, each with 2 dl plain 1.5% milk. AFCD F003060, F004210 and F002970 directly report available carbohydrate without sugar alcohols for the three previously incomplete ingredients. A teaspoon of honey is estimated at 7 g from King Arthur Baking's 21 g per tablespoon. The FAO reports milk density around 1.031 g/mL. USDA food-specific volume references support instant coffee and ground ginger; the ground cinnamon approximation of 2.5 g differs from USDA 2.6 g by about 0.003 g carbohydrate per cup. This remains an ingredient input estimate. Aggregate polyols and macro/GK publication holds stay as recorded.",
+    "condition": {
+      "fi": "Arvio koskee yhtä mukillista, jossa on 2 dl 1,5-prosenttista maitoa ja neljännes ohjeen hunajaisesta kahvivaahdosta. Teelusikoiden painot ovat arvioita.",
+      "en": "The estimate is for one mug with 200 ml of milk with 1.5% fat and one quarter of the honey coffee foam. Teaspoon weights are approximate.",
+      "sv": "Uppskattningen gäller en kopp med 2 dl mjölk med 1,5 procent fett och en fjärdedel av kaffeskummet med honung. Teskedsvikterna är ungefärliga.",
+      "th": "ค่าประมาณสำหรับหนึ่งแก้ว ใช้นมไขมัน 1.5% ปริมาณ 200 มิลลิลิตรและโฟมกาแฟผสมน้ำผึ้งหนึ่งในสี่ของที่ทำได้ น้ำหนักของส่วนผสมที่ตวงด้วยช้อนชาเป็นค่าโดยประมาณ"
+    },
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "ac2f3b1d6df0dc9c235f75653faaa457921ab07577d5a5076fadb7f66032b2a1",
+        "en": "04f8cc4816ab26633fba02d8d2cdd17b99a3ae630c02eac2575b074299840b47",
+        "sv": "b32c49cbd52cf6d980e7727e40039cc4bcf986ff3c82981a296b11af46cfcf87",
+        "th": "406423183e27f661b8137869bdce71bf3386b10827548226ddc92d67433f4547"
+      },
+      "compositionMatches": [
+        {
+          "index": 0,
+          "state": "regular unsweetened dry instant coffee powder or granules",
+          "matchEvidence": "FSANZ AFCD Release 3 F003060 matches this ingredient's physical form and reports 3.6 g available carbohydrate without sugar alcohols per 100 g (nutrient workbook row 74). Eight composite samples in 2014; FSANZ cautions about the low proximate total. Only 1 g per cup contributes 0.036 g to this estimate.",
+          "record": {
+            "id": "afcd-F003060-release-3",
+            "name": "Coffee, instant, dry powder or granules",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F003060",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "state": "regular unsweetened dry instant coffee powder or granules",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "The AFCD workbook directly reports available carbohydrate without sugar alcohols. An independent aggregate polyol value was not established.",
+            "per100g": {
+              "carbohydrate": 3.6,
+              "fibre": 20.6,
+              "polyols": null,
+              "protein": 18,
+              "fat": 0.3
+            }
+          }
+        },
+        {
+          "index": 4,
+          "state": "dry ground ginger",
+          "matchEvidence": "FSANZ AFCD Release 3 F004210 matches this ingredient's physical form and reports 57.5 g available carbohydrate without sugar alcohols per 100 g (nutrient workbook row 12). ",
+          "record": {
+            "id": "afcd-F004210-release-3",
+            "name": "Ginger, dried, ground",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F004210",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "state": "dry ground ginger",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "The AFCD workbook directly reports available carbohydrate without sugar alcohols. An independent aggregate polyol value was not established.",
+            "per100g": {
+              "carbohydrate": 57.5,
+              "fibre": 14.1,
+              "polyols": null,
+              "protein": 9,
+              "fat": 4.2
+            }
+          }
+        },
+        {
+          "index": 5,
+          "state": "dry ground cloves",
+          "matchEvidence": "FSANZ AFCD Release 3 F002970 matches this ingredient's physical form and reports 31.6 g available carbohydrate without sugar alcohols per 100 g (nutrient workbook row 7). ",
+          "record": {
+            "id": "afcd-F002970-release-3",
+            "name": "Cloves, dried, ground",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002970",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "state": "dry ground cloves",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "The AFCD workbook directly reports available carbohydrate without sugar alcohols. An independent aggregate polyol value was not established.",
+            "per100g": {
+              "carbohydrate": 31.6,
+              "fibre": 33.9,
+              "polyols": null,
+              "protein": 6,
+              "fat": 13
+            }
+          }
+        }
+      ]
+    }
+  },
+  "kantonilainen-hoyrytetty-kala": {
+    "recipeBindingSha256": "0f2ee27a95b927f3807589913c2e0e3bdd1ada0861ddf64b238527dc3e7016f9",
+    "preparationSha256": "782a2defb90e806987be5994f42da563850e319203205d685700f9a647a3f951",
+    "nutritionSha256": "94de2cda67e0dbf5f389d02ab927ab4f18a147d17f0ca08afb8994975a3ba7cd",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/7579b3c5e028e2a3dc7ab14e6fa8c1e89b003bfd/docs/nutrition/calculations/kantonilainen-hoyrytetty-kala.json",
+    "reasoning": "Recipe step 5 explicitly serves fish with lime and rice. Unquantified rice is absent from both approved models; the measured lime garnish has composition but its GI contribution is omitted, as are ginger and soy sauce. This one-fourth plate estimate therefore excludes rice. Source-reference low confidence and tracked 0.9855 g omission already hide the low badge and filter.",
+    "condition": {
+      "fi": "Arvio koskee yhtä neljäsosaa höyrytetystä kalasta ohjeen mausteineen. Tarjoiluun ehdotettu riisi ei sisälly GK-arvioon eikä annoksen hiilihydraattimäärään.",
+      "en": "The estimate covers one quarter of the steamed fish with the recipe’s seasonings. The rice suggested for serving is excluded from both the GL estimate and the serving’s carbohydrate amount.",
+      "sv": "Uppskattningen gäller en fjärdedel av den ångade fisken med kryddningen enligt receptet. Riset som föreslås till servering ingår varken i GL-uppskattningen eller i portionens kolhydratmängd.",
+      "th": "ค่าประมาณนี้ใช้กับปลานึ่งพร้อมเครื่องปรุงตามสูตรหนึ่งในสี่ส่วน ข้าวที่แนะนำให้เสิร์ฟคู่กันไม่รวมอยู่ในค่าประมาณ GL หรือปริมาณคาร์โบไฮเดรตต่อหนึ่งที่"
+    }
+  },
+  "larb-moo-vhh": {
+    "recipeBindingSha256": "479b4c5addc0ca37d963fc134c73d782113259b0e436d418123c6be4b881f327",
+    "preparationSha256": "0636d819fd083ed3bb1062e91e97955d2fc70e573ea2d0b59751bbda0f15c557",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/7579b3c5e028e2a3dc7ab14e6fa8c1e89b003bfd/docs/nutrition/glycemic-load-pilot-input.json#L2256",
+    "reasoning": "The exact legacy input lists just 8 g toasted rice powder (Fineli #182 plain rice flour as composition analogue, rice-group GI 67) and 250 g white cabbage. The powder accounts for GK 1.06262 (34.00% of 3.12512), cabbage 2.0625. The recipe declares 9 g optional powder, with 200 g cucumber for serving and other ingredients absent from the legacy GK input. There is no bound separate modern nutrition calculation and legacy front matter 9.61 g is explicitly total. Legacy zero omission means no flagged omitted rows among the two modeled ingredients, not zero carbohydrate in the remainder. Preserve legacy numeric provenance while suppressing unsupported whole-serving low badge and filter. Do not calculate either the flour-free preparation or the updated 9 g version from these data.",
+    "condition": {
+      "fi": "Yhden annoksen GK-luku perustuu 2 grammaan paahdettua riisijauhetta ja noin 63 grammaan valkokaalia. Ohjeen neljälle annokselle on merkitty 9 g valinnaista riisijauhetta. Tarjoilukurkku jää GK-laskelman ulkopuolelle.",
+      "en": "The GL estimate for one serving uses 2 g of roasted rice powder and about 63 g of white cabbage. The recipe lists 9 g of optional rice powder for four servings. The GL calculation excludes the cucumber served with the dish.",
+      "sv": "GL-uppskattningen för en portion bygger på 2 g rostat rispulver och cirka 63 g vitkål. Receptet anger 9 g valfritt rispulver för fyra portioner. Gurkan som serveras till ingår inte i GL-beräkningen.",
+      "th": "ค่า GL ต่อหนึ่งที่คำนวณจากผงข้าวคั่ว 2 กรัมและกะหล่ำปลีขาวประมาณ 63 กรัม สูตรสำหรับ 4 ที่ระบุผงข้าวคั่ว 9 กรัมที่เลือกใส่ได้ แตงกวาที่เสิร์ฟคู่กันไม่รวมในการคำนวณ GL"
+    },
+    "classLimitation": {
+      "fi": "Koko annoksen GK-luokkaa ei näytetä, koska laskelmassa on mukana vain riisijauhe ja valkokaali.",
+      "en": "A GL class for the whole serving is withheld because the calculation includes only the rice powder and white cabbage.",
+      "sv": "Ingen GL-klass visas för hela portionen eftersom beräkningen bara omfattar rispulvret och vitkålen.",
+      "th": "ไม่แสดงระดับ GL ของทั้งจาน เนื่องจากการคำนวณครอบคลุมเฉพาะผงข้าวคั่วและกะหล่ำปลีขาว"
+    }
+  },
+  "pohjoisafrikkalainen-kuskus-aamiaiskulho": {
+    "recipeBindingSha256": "fcf0008b590d5bacb9328337515e41572ec9b425e75595c5a3aa930f1edee4f4",
+    "preparationSha256": "83687ac37920a25aa6e85b9e5bf23973caea1ca2760be981f23b7f54b918887e",
+    "nutritionSha256": "cb2728f82bb2f74f5d17d7b00c4442e068a9c9686e774f659d5e8a6eac4e9e4c",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.32394/rpzh.2020.0101",
+    "publicSource": "https://roczniki.pzh.gov.pl/pdf-182600-103096?filename=Assessment-of-the-glycemi.pdf",
+    "reasoning": "Couscous accounts for GK 31.482 (91.63% of 34.35692). Różańska et al. 2020 Tables 2 and 4 tested a Polish market product alone after a 3-minute hydration with boiling water, 78 g as sold per 50 g available CHO, matched glucose, n=8. GI mean 99 ±36 SD; not a GK interval. Recipe uses 5 minutes, no named product and add-ins. A separate valid 42.52 g available CHO estimate uses AFCD F003239 (36.8 g from couscous) and Fineli 620 (1.7 g from yogurt); sealed GK model subtotal 38.32 g uses Fineli 29208 (31.8 g) and 619 (2.5 g). The pinned R1A review explicitly says CLASS_ONLY is not demonstrated. Copy limits the legacy point and suppresses the high class without replacing either approved number.",
+    "condition": {
+      "fi": "Yksi annos sisältää 50 g kuivaa kuskusia, joka turvotetaan vedessä, sekä taateleita, mantelia ja jogurttia. GK-arvio nojaa tutkimuksessa testattuun kuskusiin. Ohjeessa käytettyä tuotetta ei ole määritelty. Annoksen hiilihydraattiluku perustuu eri koostumustietoon kuin GK-laskelma.",
+      "en": "One serving includes 50 g dry couscous rehydrated in water, with dates, almonds and yogurt. The GL estimate uses a couscous tested in a study. The recipe does not specify a product. The serving’s carbohydrate figure and the GL calculation use different composition sources.",
+      "sv": "En portion innehåller 50 g torr couscous som får svälla i vatten samt dadlar, mandel och yoghurt. GL-uppskattningen bygger på couscous som testats i en studie. Receptet anger ingen särskild produkt. Portionens kolhydratvärde och GL-beräkningen bygger på olika källor för näringsinnehåll.",
+      "th": "หนึ่งที่ใช้คูสคูสแห้ง 50 กรัมที่ทำให้นิ่มด้วยน้ำ พร้อมอินทผลัม อัลมอนด์ และโยเกิร์ต ค่าประมาณ GL อ้างอิงคูสคูสที่ทดสอบในงานวิจัย สูตรนี้ไม่ได้ระบุผลิตภัณฑ์ ตัวเลขคาร์โบไฮเดรตต่อหนึ่งที่และการคำนวณ GL ใช้ข้อมูลส่วนประกอบอาหารจากคนละแหล่ง"
+    },
+    "classLimitation": {
+      "fi": "Kuskustuotteen valinta vaikuttaa arvioon. GK-luokkaa ei näytetä, koska reseptin tuotetta ei tunneta ja tutkimuksessa mitatut arvot vaihtelivat paljon.",
+      "en": "The choice of couscous affects the estimate. The GL class is withheld because the recipe’s product is unspecified and the study measurements varied widely.",
+      "sv": "Valet av couscous påverkar uppskattningen. Ingen GL-klass visas eftersom receptet inte anger en produkt och studiens mätvärden varierade mycket.",
+      "th": "ชนิดของคูสคูสมีผลต่อค่าประมาณ จึงไม่แสดงระดับ GL เพราะสูตรไม่ได้ระบุผลิตภัณฑ์และค่าที่วัดได้ในงานวิจัยแตกต่างกันมาก"
+    }
+  },
+  "ropa-vieja": {
+    "recipeBindingSha256": "d4094a1765dcd3386793f5d696e8ae8c30b9bc098b96dad578c7749b745ade7b",
+    "preparationSha256": "61414c884b765ed84f074eb588e13ea764686750fe6471854be938e38a2198a4",
+    "nutritionSha256": "700b33e9d0108eb93ef4cbf7c8624c1c1369eff30b9fbde992c3a7bfb57ce9ed",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1016/j.jfca.2007.02.004",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/7579b3c5e028e2a3dc7ab14e6fa8c1e89b003bfd/docs/nutrition/calculations/ropa-vieja.json",
+    "reasoning": "The intro instructs serving with rice and the notes suggest rice and black beans. Neither side has an amount or ingredient row in the recipe, sealed GK or separately verified nutrition. The pinned recipe explicitly excludes suggested sides and retains all meat stock/sauce in the six portions. The numbers cover the stew, not the plated suggestion. Tracked 0.3071966666666667 g GK omission already suppresses low class.",
+    "condition": {
+      "fi": "Arvio koskee yhtä kuudesosaa naudanlihapadasta kastikkeineen. Tarjoiluun ehdotetut riisi ja mustapavut eivät sisälly GK-arvioon eivätkä annoksen hiilihydraattimäärään.",
+      "en": "The estimate covers one sixth of the beef stew with its sauce. The rice and black beans suggested for serving are excluded from both the GL estimate and the serving’s carbohydrate amount.",
+      "sv": "Uppskattningen gäller en sjättedel av nötköttsgrytan med sås. Riset och de svarta bönorna som föreslås till servering ingår varken i GL-uppskattningen eller i portionens kolhydratmängd.",
+      "th": "ค่าประมาณนี้ใช้กับสตูว์เนื้อพร้อมซอสหนึ่งในหกส่วน ข้าวและถั่วดำที่แนะนำให้เสิร์ฟคู่กันไม่รวมอยู่ในค่าประมาณ GL หรือปริมาณคาร์โบไฮเดรตต่อหนึ่งที่"
+    }
+  },
+  "amritsari-kala": {
+    "recipeBindingSha256": "8c44a49abb536425bab814c21213ed8c28b650ace645e46cf9e7fafda20587c6",
+    "preparationSha256": "33d6a99df8705662cfb97fa7e59edb9bcd4cdfc74e5f2090ede6f2cd8029c2bb",
+    "nutritionSha256": "872e096c33243c912f5564b10b2f892768db0a3bcbb431d6ad22f7094c7698cf",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/7579b3c5e028e2a3dc7ab14e6fa8c1e89b003bfd/docs/nutrition/calculations/amritsari-kala.json",
+    "reasoning": "Recipe step 6 suggests unweighed mint chutney and lemon wedges. Neither is listed in the exact ingredient accounting or the nutrition source. The fixed estimate uses all 100 g chickpea flour for four portions (AFCD F003986, 9.625 g available CHO per portion) and the measured 15 g batch lemon juice in the coating is within scope but has no GI contribution. Chickpea flour uses legumes category GI 34 and contributes the entire point 3.2725. Tracked 1.61425 g omission already withholds class.",
+    "condition": {
+      "fi": "Yhden annoksen laskelmassa on 25 g kikhernejauhoa kalan kuorrutteessa. Hiilihydraattilukuun kuuluu myös taikinan sitruunamehu. Tarjoilun sitruunalohkot ja minttuchutney jäävät arvioiden ulkopuolelle.",
+      "en": "The calculation uses 25 g of chickpea flour in the coating for one serving. The carbohydrate estimate includes the lemon juice in the batter. Both estimates exclude the lemon wedges and mint chutney served on the side.",
+      "sv": "Beräkningen använder 25 g kikärtsmjöl i paneringen per portion. Kolhydratuppskattningen omfattar citronsaften i smeten. Citronklyftorna och mintchutneyn som serveras till ingår inte i uppskattningarna.",
+      "th": "การคำนวณใช้แป้งถั่วชิกพี 25 กรัมต่อหนึ่งที่สำหรับเคลือบปลา ค่าคาร์โบไฮเดรตรวมน้ำเลมอนในแป้ง ค่าประมาณทั้งสองไม่รวมเลมอนหั่นชิ้นและชัทนีย์สะระแหน่ที่เสิร์ฟคู่กัน"
+    }
+  },
+  "kiinalainen-hirssipuuro-taateleilla": {
+    "recipeBindingSha256": "9177981d3f69ac131068daa7a8042258c16883599cec219d6efacf0003f57937",
+    "preparationSha256": "baa2c32bb75a4b643f37ce7a822690e6281aac2d9ef332c39b8c91c5e8f6a734",
+    "nutritionSha256": "6d79e00830a0e08a3855ece1e201454a24937066008db9ed398db783b0fba1cd",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.32394/rpzh.2020.0101",
+    "publicSource": "https://roczniki.pzh.gov.pl/pdf-182600-103096?filename=Assessment-of-the-glycemi.pdf",
+    "reasoning": "Różańska et al. 2020 Tables 2 and 4, glucose scale with matched 50 g available-carbohydrate portion, n=8, measured GI 56.2 ±20.6 SD. The market groats tested used 77 g dry until water was absorbed in about 15 min, cooked mass 223 g mean. The recipe uses 50 g dry per portion simmered into soft porridge with ginger and 350 ml water per serving plus more if needed, topped with dates and sesame. The examined product is not specified in the recipe. The model assigns 34.4 g available CHO to the grain, which contributes GK 19.3328 (91.25% of 21.18752). Holding the other modeled contributions fixed, GI of about 52.7479 gives GK 20. The study SD is not a recipe range. Keep the pinned number and existing independent carbohydrate, suppress unsupported high classification.",
+    "condition": {
+      "fi": "Yhteen annokseen käytetään 50 g kuivaa hirssiä. Ohjeessa hirssi keitetään pehmeäksi puuroksi. GK-arvio käyttää tutkimuksessa erikseen keitetyn hirssin GI-arvoa.",
+      "en": "One serving uses 50 g of dry millet, cooked into soft porridge. The GL estimate uses the GI of millet groats cooked separately in a study.",
+      "sv": "En portion innehåller 50 g torr hirs som kokas till en mjuk gröt. GL-uppskattningen bygger på GI för hirsgryn som kokades separat i en studie.",
+      "th": "หนึ่งที่ใช้ข้าวฟ่างแห้ง 50 กรัมต้มเป็นโจ๊กเนื้อนุ่ม ค่าประมาณ GL ใช้ค่า GI ของเมล็ดข้าวฟ่างที่ต้มแยกในงานวิจัย"
+    },
+    "classLimitation": {
+      "fi": "Annos on lähellä korkean GK:n rajaa. Luokkaa ei näytetä, koska hirssi keitettiin tutkimuksessa eri tavalla eikä ohjeessa määritellä hirssituotetta.",
+      "en": "The serving’s estimate is close to the high GL threshold. The class is withheld because the study used a different millet preparation and the recipe leaves the product unspecified.",
+      "sv": "Uppskattningen ligger nära gränsen för hög GL. Ingen klass visas eftersom tillagningen skiljer sig från studien och receptet inte anger någon viss hirsprodukt.",
+      "th": "ค่าประมาณต่อหนึ่งที่อยู่ใกล้เกณฑ์ GL สูง จึงไม่แสดงระดับ GL เพราะวิธีปรุงต่างจากในงานวิจัยและสูตรไม่ได้ระบุผลิตภัณฑ์ข้าวฟ่าง"
+    }
+  },
+  "lihapullat-kermakastikkeessa-vhh": {
+    "recipeBindingSha256": "d0754e6a473783c925c821a8af936501f1cb307b4f5865592e00274ecfe61515",
+    "preparationSha256": "860bdf912a64bd5639769c99e73b78205a103567670a1ca80a3d41065a06dc85",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/d9723205e01dfdde464a9e0abaa1fa8250164de9/docs/nutrition/glycemic-load-pilot-input.json#L2152",
+    "reasoning": "The sealed four-serving calculation includes only whipping cream, 300 g from 3 dl split between the mixture and sauce; and 700 g cauliflower (175 g input per portion) boiled, drained and mashed. Fineli 631 and 322 group GI 35 and 66 respectively, contributions 0.76125 and 2.772. Recipe also lists one small onion, 2 tbsp almond flour, 1 dl stock and other rows; optional lingonberries or salad are mentioned. Neither present nor captured by omission accounting. No separate modern calculation JSON. Retain existing numeric as scoped historical output and suppress unsupported whole-serving low classification.",
+    "condition": {
+      "fi": "GK-laskelma kattaa neljän annoksen erässä 3 dl kuohukermaa ja 700 g kukkakaalia. Laskelmasta puuttuvat esimerkiksi lihapullien sipuli ja mantelijauho sekä kastikkeen lihaliemi.",
+      "en": "The GL calculation covers 300 ml whipping cream and 700 g cauliflower for four servings. It leaves out the onion and almond flour in the meatballs and the stock in the sauce.",
+      "sv": "GL-beräkningen omfattar 3 dl vispgrädde och 700 g blomkål för fyra portioner. Löken och mandelmjölet i köttbullarna samt buljongen i såsen ingår inte.",
+      "th": "การคำนวณ GL ครอบคลุมวิปปิงครีม 300 มล. และดอกกะหล่ำ 700 กรัมสำหรับ 4 ที่ โดยไม่รวมหอมหัวใหญ่และแป้งอัลมอนด์ในลูกชิ้น รวมถึงน้ำซุปเนื้อในซอส"
+    },
+    "classLimitation": {
+      "fi": "Koko annoksen GK-luokkaa ei näytetä, koska laskelma kattaa vain kerman ja kukkakaalin.",
+      "en": "A GL class for the whole serving is withheld because the calculation covers only the cream and cauliflower.",
+      "sv": "Ingen GL-klass visas för hela portionen eftersom beräkningen bara omfattar grädden och blomkålen.",
+      "th": "ไม่แสดงระดับ GL ของทั้งจาน เนื่องจากการคำนวณครอบคลุมเฉพาะครีมและดอกกะหล่ำ"
+    }
+  },
+  "jauhelihakastike-kesakurpitsanuudeleilla": {
+    "recipeBindingSha256": "c6f28d21334d646994e7869a0f869299fb344ab4199a1bb4d8c430f3f269e1ab",
+    "preparationSha256": "bc227914c7979a3989219eedffab9018eb90b082eea43b76e5e5d946c02318a8",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/d9723205e01dfdde464a9e0abaa1fa8250164de9/docs/nutrition/glycemic-load-pilot-input.json#L2278",
+    "reasoning": "Two zucchini pieces are modeled as 700 g total, pan-cooked 2–3 min; 2 dl cream modeled as 200 g. Fineli 389 and 631 with category mean GI66/35 contribute GK 2.8875/0.5075, 85% from zucchini. The recipe contains one whole onion and 1 tbsp tomato paste as sauce components but neither is in the sealed two-row input or captured by omission accounting. No separate modern calculation JSON. Keep published recipe figures scoped to their respective methodologies and suppress low classification.",
+    "condition": {
+      "fi": "GK-laskelma käyttää neljän annoksen erässä 700 g kesäkurpitsaa ja 2 dl kuohukermaa. Kastikkeen sipuli ja tomaattipyree jäävät laskelman ulkopuolelle.",
+      "en": "The GL calculation uses 700 g zucchini and 200 ml whipping cream for four servings. It leaves out the onion and tomato paste in the sauce.",
+      "sv": "GL-beräkningen bygger på 700 g zucchini och 2 dl vispgrädde för fyra portioner. Löken och tomatpurén i såsen ingår inte.",
+      "th": "การคำนวณ GL ใช้ซูกินี 700 กรัมและวิปปิงครีม 200 มล. สำหรับ 4 ที่ โดยไม่รวมหอมหัวใหญ่และมะเขือเทศเข้มข้นในซอส"
+    },
+    "classLimitation": {
+      "fi": "Koko annoksen GK-luokkaa ei näytetä, koska laskelma kattaa vain kesäkurpitsan ja kerman.",
+      "en": "A GL class for the whole serving is withheld because the calculation covers only the zucchini and cream.",
+      "sv": "Ingen GL-klass visas för hela portionen eftersom beräkningen bara omfattar zucchinin och grädden.",
+      "th": "ไม่แสดงระดับ GL ของทั้งจาน เนื่องจากการคำนวณครอบคลุมเฉพาะซูกินีและครีม"
+    }
+  },
+  "kanakorma-kukkakaaliriisilla": {
+    "recipeBindingSha256": "9c3a9bdf62873e0a38e0724cf07f4064909ca76388834194ce7b0c95d7023742",
+    "preparationSha256": "dbabf2b616a07fedf3492153a333bca35d30128e4effc67d7ee21ddb5d879a9e",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/d9723205e01dfdde464a9e0abaa1fa8250164de9/docs/nutrition/glycemic-load-pilot-input.json#L2174",
+    "reasoning": "Four servings of korma with grated cauliflower fried 4–5 min, never a rice grain. The sealed input includes only 600 g cauliflower, 200 g whipping cream and 150 g Turkish yogurt, Fineli 322/631/32201. Cauliflower group GI66 contributes 2.376 (69% of 3.447875), dairy group GI35 supplies remaining 1.071875. Current recipe includes one whole onion and two teaspoons korma seasoning for sauce, not tracked among omissions. No separate modern calculation JSON. Keep historical value scoped and suppress low classification.",
+    "condition": {
+      "fi": "GK-laskelma kattaa neljän annoksen erässä 600 g kukkakaalia, 2 dl kuohukermaa ja 150 g jogurttia. Kastikkeen sipuli ja kormamauste jäävät laskelman ulkopuolelle.",
+      "en": "The GL calculation covers 600 g cauliflower, 200 ml whipping cream and 150 g yogurt for four servings. It leaves out the onion and korma seasoning in the sauce.",
+      "sv": "GL-beräkningen omfattar 600 g blomkål, 2 dl vispgrädde och 150 g yoghurt för fyra portioner. Löken och kormakryddan i såsen ingår inte.",
+      "th": "การคำนวณ GL ครอบคลุมดอกกะหล่ำ 600 กรัม วิปปิงครีม 200 มล. และโยเกิร์ต 150 กรัมสำหรับ 4 ที่ โดยไม่รวมหอมหัวใหญ่และเครื่องเทศคอร์มาในซอส"
+    },
+    "classLimitation": {
+      "fi": "Koko annoksen GK-luokkaa ei näytetä, koska laskelma kattaa vain kukkakaalin, kerman ja jogurtin.",
+      "en": "A GL class for the whole serving is withheld because the calculation covers only the cauliflower, cream and yogurt.",
+      "sv": "Ingen GL-klass visas för hela portionen eftersom beräkningen bara omfattar blomkålen, grädden och yoghurten.",
+      "th": "ไม่แสดงระดับ GL ของทั้งจาน เนื่องจากการคำนวณครอบคลุมเฉพาะดอกกะหล่ำ ครีม และโยเกิร์ต"
+    }
   }
 }

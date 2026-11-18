@@ -161,11 +161,13 @@ test("standalone carbohydrate and source warnings follow reviewed quantities and
       const preparations = review.wholeCarbohydrateOnly!.preparationChoices;
       if (preparations) {
         assert.equal([...rendered.matchAll(/data-carbohydrate-choice="whole"/g)].length, preparations.choices.length, routePath);
+        assert.ok(rendered.indexOf(review.condition![locale]) < rendered.indexOf('data-portion-preparations'), routePath);
         for (const choice of preparations.choices) {
           assert.ok(rendered.includes(choice.label[locale]), routePath);
           assert.ok(rendered.includes('href="' + choice.record.sourceUrl + '"'), routePath);
         }
-        assert.doesNotMatch(rendered, /data-ingredient-carb-alternative=/, routePath);
+        assert.equal([...rendered.matchAll(/data-ingredient-carb-alternative=/g)].length,
+          review.ingredientPortion?.carbohydrateAlternatives?.length ?? 0, routePath);
       }
     }
   }
@@ -187,23 +189,10 @@ test("standalone carbohydrate and source warnings follow reviewed quantities and
 
 test("preparation and optional-side evidence stays visibly scoped", async () => {
   const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
-  for (const id of ["bataatti-banaanileipa"]) {
-    const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
-    assert.equal(entries.length, 4, id);
-    for (const { locale, routePath } of entries) {
-      const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
-      const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
-      assert.match(rendered, /data-ingredient-carbohydrate="available-alternatives"/);
-      assert.equal([...rendered.matchAll(/data-ingredient-carb-alternative=/g)].length, 2, routePath);
-      for (const choice of reviews[id].ingredientPortion!.carbohydrateAlternatives!) {
-        assert.ok(rendered.includes(choice.label[locale]), routePath);
-        assert.ok(rendered.includes('href="' + choice.source + '"'), routePath);
-      }
-      assert.doesNotMatch(rendered, /data-portion-carbohydrate=|data-portion-gk=|data-gk-status="(?:QUALITATIVE|CALCULATED)"/);
-    }
-  }
   for (const id of ["gazpacho", "medu-vada", "marjakiisseli-vaniljakastikkeella", "malesialainen-mee-goreng-aamunuudeleilla",
-    "pannacotta-marjakastikkeella", "lahi-ita-kikhernejauho-yrttilettu"]) {
+    "pannacotta-marjakastikkeella", "lahi-ita-kikhernejauho-yrttilettu", "kantonilainen-hoyrytetty-kala",
+    "larb-moo-vhh", "pohjoisafrikkalainen-kuskus-aamiaiskulho", "ropa-vieja", "amritsari-kala", "kiinalainen-hirssipuuro-taateleilla",
+    "lihapullat-kermakastikkeessa-vhh", "jauhelihakastike-kesakurpitsanuudeleilla", "kanakorma-kukkakaaliriisilla"]) {
     assert.equal(glycemicLoadFilterCategories[id], undefined, id);
     for (const { locale, routePath } of siteContent.recipes.filter(recipe => recipe.recipeId === id)) {
       const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");

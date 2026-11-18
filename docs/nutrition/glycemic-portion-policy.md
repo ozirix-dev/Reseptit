@@ -154,6 +154,13 @@ Reseptissä näkyy edelleen piste ja rajaus, mutta luokkaa ei käytetä
 suodattimessa. Positiivinen lisäys ei siirrä jo suuren arvion alarajaa
 pienempään luokkaan. Poisjätetyille aineksille ei anneta yleistä GI-arvoa.
 
+Vanhan laskelman ainesosarivit verrataan nykyiseen reseptiin myös silloin,
+kun laskelmaan kirjattu poisjättö on nolla. Jos hiilihydraattia sisältävä
+ainesosa tai tarjoiluun kuuluva ruoka puuttuu laskelmasta, käyttäjälle
+kerrotaan, mitä luku kattaa. Puutteellisen annoksen GK-piste voi näkyä
+rajattuna, ja koko annoksen luokka jätetään pois. Myös hallitsevan
+GI-lähteen poikkeava tuote tai valmistus voi tehdä luokasta liian epävarman.
+
 Kaalikääryleiden 9,24 säilytettiin. Kaalin ja kukkakaalin osuudet perustuvat
 kasvisryhmän GI 66 -keskiarvoon, ja noin 1,58 g imeytyvää hiilihydraattia
 jää laskelman ulkopuolelle. Katsausarvo ei ole kaalin tai kukkakaalin mittaus.
