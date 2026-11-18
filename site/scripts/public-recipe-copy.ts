@@ -809,6 +809,15 @@ const gulabJamunOilScope: Readonly<Record<RecipeLocale, { before: string; after:
   th: { before: "ตั้งน้ำมันให้ร้อนด้วยไฟอ่อน", after: "เตรียมน้ำมันประมาณ 1 ลิตรสำหรับทอดแบบน้ำมันท่วม แล้วค่อย ๆ อุ่นด้วยไฟอ่อน ปริมาณน้ำมัน 30 กรัมในรายการส่วนผสมเป็นเพียงค่าประมาณที่ขนมทั้งสูตรดูดซึม ไม่ใช่ปริมาณน้ำมันที่ต้องเทลงหม้อ", note: "การประเมินโภชนาการสมมติว่าขนมทั้งสูตรดูดซึมน้ำมัน 30 กรัม ตัวเลขนี้เป็นค่าประมาณ ไม่ใช่ผลการชั่งวัดจริง ใช้น้ำมันประมาณ 1 ลิตรสำหรับทอดและสะเด็ดน้ำมันส่วนเกิน ปริมาณที่ดูดซึมจริงอาจต่างจากค่าประมาณ" },
 };
 
+// #327 Tangyuan: the original recipe's litre is ginger broth, while separate
+// cooking water is drained. Sealed ingredients and historical GK evidence stay unchanged.
+const tangyuanCookingWaterScope: Readonly<Record<RecipeLocale, { before: string; after: string; note: string }>> = {
+  fi: { before: "Keitä riisipalloja erissä miedosti poreilevassa vedessä 5–6 minuuttia, kunnes ne nousevat pintaan. Nosta kulhoihin ja kaada päälle inkiväärilientä.", after: "Kiehauta toisessa kattilassa riittävästi tavallista vettä riisipallojen keittämiseen; tämä on erillistä vettä eikä edellisen vaiheen 1 litra inkiväärilientä. Keitä riisipalloja erissä miedosti poreilevassa vedessä 5–6 minuuttia, kunnes ne nousevat pintaan. Nosta pallot reikäkauhalla kulhoihin, valuta erillinen keitinvesi pois ja kaada päälle inkiväärilientä.", note: "Ainesluettelon 1 litra vettä ja 60 g sokeria kuuluvat tarjottavaan inkivääriliemeen. Riisipallojen keittämiseen käytetään lisäksi tarvittava määrä tavallista vettä, joka valutetaan pois eikä ole osa liemen määrää. Tarjotun liemen syötyä osuutta ei ole erikseen mitattu." },
+  en: { before: "Cook the rice balls in batches in a separate pot of gently simmering water for 5–6 minutes, until they float. Lift into bowls and pour over the sweet ginger syrup.", after: "Bring enough plain water to a gentle simmer in a separate pot. This is additional cooking water, not the 1 litre used for the ginger broth. Cook the rice balls in batches for 5–6 minutes until they float, then lift them out with a slotted spoon. Drain off the separate cooking water, place the balls in bowls and pour over the sweet ginger broth.", note: "The listed 1 litre of water and 60 g of sugar are for the ginger broth served with the rice balls. Use additional plain water as needed to boil the balls separately; drain it away rather than count it as served broth. The amount of broth actually consumed has not been measured." },
+  sv: { before: "Koka risbollarna i omgångar i en separat kastrull med sjudande vatten i 5–6 minuter tills de flyter upp. Lägg dem i skålar och häll över den söta ingefärslagen.", after: "Koka upp tillräckligt med vanligt vatten i en separat kastrull och låt det sjuda. Det är extra kokvatten, inte den 1 liter som används till ingefärslagen. Koka risbollarna i omgångar i 5–6 minuter tills de flyter upp. Lyft upp dem med hålslev, låt det separata kokvattnet rinna av, lägg bollarna i skålar och häll över den söta ingefärslagen.", note: "Den angivna litern vatten och 60 g socker används till ingefärslagen som serveras med risbollarna. Använd dessutom vanligt vatten för att koka bollarna separat och häll bort detta kokvatten. Hur mycket av lagen som faktiskt äts har inte mätts." },
+  th: { before: "ต้มลูกแป้งทีละชุดในหม้อน้ำอีกใบที่เดือดเบา ๆ ประมาณ 5–6 นาทีจนลอย ตักใส่ชามแล้วราดด้วยน้ำขิงหวาน", after: "ต้มน้ำเปล่าในหม้ออีกใบให้เดือดเบา ๆ โดยใช้น้ำมากพอสำหรับต้มลูกแป้ง น้ำส่วนนี้เป็นน้ำสำหรับต้มแยกต่างหาก ไม่ใช่น้ำ 1 ลิตรที่ใช้ทำน้ำขิงหวาน ต้มลูกแป้งทีละชุดประมาณ 5–6 นาทีจนลอย ใช้กระชอนตักขึ้น สะเด็ดน้ำต้มแยกทิ้ง ใส่ชามแล้วราดด้วยน้ำขิงหวาน", note: "น้ำ 1 ลิตรและน้ำตาล 60 กรัมในรายการส่วนผสมใช้ทำน้ำขิงหวานสำหรับเสิร์ฟ ต้องใช้น้ำเปล่าเพิ่มเติมสำหรับต้มลูกแป้งในหม้ออีกใบ แล้วสะเด็ดน้ำต้มส่วนนั้นทิ้ง ไม่รวมเป็นน้ำขิงหวานที่เสิร์ฟ ปริมาณน้ำขิงหวานที่กินจริงยังไม่ได้วัด" },
+};
+
 export function projectPublicRecipeMethodCopy(
   id: string, locale: RecipeLocale, instructions: string, notes: string,
 ): { instructions: string; notes: string } {
@@ -826,6 +835,14 @@ export function projectPublicRecipeMethodCopy(
       if (id === "vhh-lihamureke") instructions = instructions.replace(eatInstruction[locale], "");
       notes = [notes, estimateNote[locale]].filter(Boolean).join("\n\n");
     }
+  }
+  if (id === "tangyuan") {
+    const scope = tangyuanCookingWaterScope[locale];
+    if (instructions.split(scope.before).length !== 2) {
+      throw new Error("TANGYUAN_COOKING_WATER_SOURCE_DRIFT: " + locale);
+    }
+    instructions = instructions.replace(scope.before, scope.after);
+    notes = [notes, "- " + scope.note].filter(Boolean).join("\n");
   }
   if (id === "gulab-jamun") {
     const scope = gulabJamunOilScope[locale];
