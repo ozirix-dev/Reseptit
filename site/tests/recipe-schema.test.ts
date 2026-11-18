@@ -9,7 +9,7 @@ import { assertGlutenFreeReviewRecord } from "../scripts/gluten-free-review";
 import { siteContent } from "../src/generated/content.generated";
 import { reviewedEggCounts, weighedEggRows } from "../scripts/reviewed-egg-counts";
 import { recipeJsonLd } from "../src/features/recipes/schema";
-import { formatRecipeIngredient } from "../src/features/recipes/servings";
+import { formatRecipeIngredient, ingredientNumberLocales } from "../src/features/recipes/servings";
 import { sourceReviewNotice, sourceReviewNotices } from "../src/features/recipes/source-review-notices";
 
 test("Recipe yield is Schema.org Text and preserves the source serving count", () => {
@@ -19,23 +19,28 @@ test("Recipe yield is Schema.org Text and preserves the source serving count", (
 });
 
 test("kitchen egg counts preserve the original weighed inputs in all published languages", () => {
+  const weighedLocales = new Map<string, Set<string>>();
   for (const recipe of siteContent.recipes) {
     const kitchen = recipe.kitchenIngredients ?? recipe.ingredients;
     const json = recipeJsonLd(recipe);
     const structured = json.recipeIngredient as string[];
     for (const [index, measurement] of Object.entries(reviewedEggCounts[recipe.recipeId] ?? {})) {
       assert.ok(measurement);
-      const [grams, count] = measurement;
+      const [grams, count, weightShown] = measurement;
       const row = Number(index);
       assert.equal(recipe.ingredients[row].amount, grams, `${recipe.recipeId}/${recipe.locale}`);
       assert.equal(kitchen[row].amount, count);
       assert.ok(kitchen[row].eggSingular);
-      const weightShown = recipe.recipeId === "tortilla-de-patatas" || recipe.recipeId === "yangzhou-paistettu-riisi";
       assert.equal(kitchen[row].eggWeightWithoutShellG, weightShown ? grams : undefined);
       if (weightShown) {
-        assert.ok(structured[row].includes(`(${grams} ${recipe.locale === "th" ? "กรัม" : "g"}`));
-        const half = formatRecipeIngredient(kitchen[row], recipe.servings / 2, recipe.servings, recipe.locale);
-        assert.ok(half.includes(`(${grams / 2} ${recipe.locale === "th" ? "กรัม" : "g"}`));
+        const format = new Intl.NumberFormat(ingredientNumberLocales[recipe.locale], { maximumFractionDigits: 2 }).format;
+        const unit = recipe.locale === "th" ? "กรัม" : "g";
+        assert.ok(structured[row].includes(`(${format(grams)} ${unit}`));
+        const doubled = formatRecipeIngredient(kitchen[row], recipe.servings * 2, recipe.servings, recipe.locale);
+        assert.ok(doubled.includes(`(${format(grams * 2)} ${unit}`));
+        const locales = weighedLocales.get(recipe.recipeId) ?? new Set<string>();
+        locales.add(recipe.locale);
+        weighedLocales.set(recipe.recipeId, locales);
         if (recipe.recipeId === "yangzhou-paistettu-riisi" && recipe.locale === "en") {
           assert.equal(formatRecipeIngredient(kitchen[row], 1, recipe.servings, "en"), "½ egg (27.5 g without shells)");
         }
@@ -49,6 +54,8 @@ test("kitchen egg counts preserve the original weighed inputs in all published l
       assert.equal(kitchen[row].eggSingular, undefined);
     }
   }
+  assert.equal(weighedLocales.size, 23);
+  for (const locales of weighedLocales.values()) assert.deepEqual(locales, new Set(["fi", "en", "sv", "th"]));
 });
 
 test("malformed frontmatter and unsupported fields are rejected", () => {
