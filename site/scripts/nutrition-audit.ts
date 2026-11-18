@@ -41,15 +41,15 @@ for (const translation of audit.publishedTranslations) {
   translationsByRecipe.set(translation.data.recipe_id, group);
 }
 const inventory = audit.publishedSources.map((recipe) => {
-  const values = Object.fromEntries(keys.map((key) => [key, recipe.data[key] ?? null]));
   const translations = translationsByRecipe.get(recipe.data.recipe_id) ?? [];
   const checked = verifyNutritionEvidence(recipe.data, evidenceByRecipe.get(recipe.data.recipe_id) ?? null, translations);
+  const { values } = checked;
   const evidence = evidenceByRecipe.get(recipe.data.recipe_id);
   const batchErrors = evidence && (!evidence.batchId || !batches.get(evidence.batchId)?.has(recipe.data.recipe_id))
     ? [`calculation evidence is not listed in a matching batch manifest (${evidence.batchId ?? "missing batchId"})`]
     : [];
   const evidenceErrors = [...checked.errors, ...batchErrors];
-  const conflicts = recipe.data.carbs_net_per_serving_g != null && recipe.data.carbs_total_per_serving_g != null && recipe.data.carbs_net_per_serving_g > recipe.data.carbs_total_per_serving_g;
+  const conflicts = values.carbs_net_per_serving_g != null && values.carbs_total_per_serving_g != null && values.carbs_net_per_serving_g > values.carbs_total_per_serving_g;
   const status = conflicts || (evidence !== undefined && evidenceErrors.length > 0) ? "CONFLICT REQUIRES REVIEW" : checked.status;
   const evidencePath = evidenceByRecipe.has(recipe.data.recipe_id) ? `docs/nutrition/calculations/${recipe.data.recipe_id}.json` : null;
   return { recipe_id: recipe.data.recipe_id, source_path: recipe.path, source_content_hash: sourceHashes[recipe.path], values, servings: recipe.data.servings,
@@ -57,13 +57,16 @@ const inventory = audit.publishedSources.map((recipe) => {
     calculationEvidence: evidencePath,
     recalculatedValues: checked.calculated ? { carbs_net_per_serving_g: checked.calculated.perServing.netCarbohydrate, carbs_total_per_serving_g: checked.calculated.totalCarbohydratePerServingG, protein_per_serving_g: checked.calculated.perServing.protein, fat_per_serving_g: checked.calculated.perServing.fat } : null,
     evidenceErrors,
-    carbohydrateDefinition: recipe.data.carbs_net_per_serving_g == null ? "NOT DOCUMENTED" : "AVAILABLE_EXCLUDING_FIBRE",
+    carbohydrateDefinition: values.carbs_net_per_serving_g == null ? "NOT DOCUMENTED" : "AVAILABLE_EXCLUDING_FIBRE",
     totalCarbohydrateDefinition: evidence && isScopedPolyolEvidence(evidence) ? "STABLE_ROUNDED_SOURCE_ACCOUNTING_SCENARIO" : evidencePath && status === "ESTIMATE WITH EVIDENCE" ? "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS" : "NOT VERIFIED",
     portionBasis: "metadata fields per serving", brandAndRawWeightEvidence: status === "ESTIMATE WITH EVIDENCE" ? evidencePath : "NOT VERIFIED",
-    missingFields: keys.filter((key) => recipe.data[key] == null),
+    missingFields: keys.filter((key) => values[key] == null),
     ingredients: recipe.data.ingredients,
     notes: recipe.content.split("## Muistiinpanot")[1]?.trim() ?? "",
-    uncertainties: evidence && isScopedPolyolEvidence(evidence) ? ["Unknown aggregate polyols retained; owner-approved conditional source-accounting model, response scenario 0–150 and full GK width ≤0.10/serving. Not a biological bound."] : status === "ESTIMATE WITH EVIDENCE" ? [] : evidenceErrors,
+    uncertainties: evidence && isScopedPolyolEvidence(evidence) ? ["Unknown aggregate polyols retained; owner-approved conditional source-accounting model, response scenario 0–150 and full GK width ≤0.10/serving. Not a biological bound."] : status === "ESTIMATE WITH EVIDENCE" ? [] : [
+      ...evidenceErrors,
+      ...(checked.withholdingReason ? [checked.withholdingReason] : []),
+    ],
   };
 });
 const blockers: Record<string, string[]> = {

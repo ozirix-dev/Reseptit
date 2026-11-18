@@ -56,6 +56,36 @@ test("nutrition evidence must reproduce all four published values", () => {
   assert.deepEqual(result.errors, []);
 });
 
+test("the archived aloo paratha source mismatch is withheld and cannot be reused", () => {
+  const id = "intialainen-aloo-paratha";
+  const markdown = readFileSync(new URL(`../../reseptit/aamupalat/${id}.md`, import.meta.url), "utf8");
+  const historical = JSON.parse(readFileSync(new URL(`../../docs/nutrition/calculations/${id}.json`, import.meta.url), "utf8")) as Calculation;
+  const source = recipeFrontmatterSchema.parse(parseMarkdown(markdown)?.data);
+
+  const otherRecipe = { ...source, recipe_id: "other-potato-recipe" };
+  const incorrect = verifyNutritionEvidence(otherRecipe, { ...historical, recipeId: otherRecipe.recipe_id });
+  assert.equal(incorrect.status, "CONFLICT REQUIRES REVIEW");
+  assert.equal(incorrect.calculated, null);
+  assert.match(incorrect.errors.join(), /Fineli #310 identifies Jerusalem artichoke/);
+
+  const archived = verifyNutritionEvidence(source, historical);
+  assert.equal(archived.status, "INSUFFICIENT SOURCE DATA");
+  assert.deepEqual(archived.errors, []);
+  assert.deepEqual(Object.values(archived.values), [null, null, null, null]);
+  assert.match(archived.withholdingReason!, /MAA-ARTISOKKA/);
+  assert.equal(verifyNutritionEvidence(source, { ...historical, scope: "changed" }).status, "CONFLICT REQUIRES REVIEW");
+  assert.equal(verifyNutritionEvidence(source, null).status, "CONFLICT REQUIRES REVIEW");
+
+  const successorId = `${id}-punnittu-v2`;
+  const successorMarkdown = readFileSync(new URL(`../../reseptit/aamupalat/${successorId}.md`, import.meta.url), "utf8");
+  const successor = JSON.parse(readFileSync(new URL(`../../docs/nutrition/calculations/${successorId}.json`, import.meta.url), "utf8")) as Calculation;
+  const successorSource = recipeFrontmatterSchema.parse(parseMarkdown(successorMarkdown)?.data);
+  const current = verifyNutritionEvidence(successorSource, successor);
+  assert.equal(current.status, "ESTIMATE WITH EVIDENCE");
+  assert.equal(current.values.carbs_net_per_serving_g, 43.9);
+  assert.equal(successor.ingredients.find(row => row.item === "kuorittua raakaa perunaa")?.record?.id, "fineli-205-release-20");
+});
+
 test("stale recipe ingredients and changed nutrition values are detected", () => {
   const staleSource = published();
   staleSource.ingredients[0]!.amount = 210;
