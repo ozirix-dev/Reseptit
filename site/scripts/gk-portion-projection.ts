@@ -27,6 +27,7 @@ interface ReviewedPortion {
   reasoning: string;
   reviewedAt: string;
   verbalNoteEdits?: Partial<Record<keyof LocalizedText, { before: string; after: string }>>;
+  wholeCarbohydrateOnly?: { noteEdits: Record<keyof LocalizedText, { before: string; after: string }> };
   portionGrams?: number;
   knownCarbIngredient?: string;
   nutritionSha256?: string;
@@ -77,7 +78,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
   }
   if (review && (review.verbal || review.condition || review.ingredientProduct || review.classLimitation
       || review.ingredientPortion || review.alternativeLabels || review.versionAlternativeLabels
-      || review.zeroCarbohydrate || review.portionGrams || review.piecesPerServing)
+      || review.zeroCarbohydrate || review.wholeCarbohydrateOnly || review.portionGrams || review.piecesPerServing)
       && review.preparationSha256 !== portionPreparationHash(markdown)) {
     throw new Error(`${recipeId}: reviewed preparation or serving notes changed; re-review the public portion information.`);
   }
@@ -92,6 +93,12 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
   if (review?.verbalNoteEdits && !review.verbal) {
     throw new Error(`${recipeId}: a numerical-only GK notice requires a current verbal estimate.`);
   }
+  if (review?.wholeCarbohydrateOnly && (!review.nutritionSha256 || review.verbal || review.zeroCarbohydrate
+      || !(["fi", "en", "sv", "th"] as const).every(locale => review.condition?.[locale]?.trim()
+        && review.wholeCarbohydrateOnly?.noteEdits?.[locale]?.before?.trim()
+        && review.wholeCarbohydrateOnly.noteEdits[locale]?.after?.trim()))) {
+    throw new Error(`${recipeId}: standalone carbohydrate evidence requires reviewed nutrition, serving scope and no GK promotion.`);
+  }
   if (raw) {
     const input = JSON.parse(raw) as Calculation;
     // These two approved methodologies have separate accounting scopes.
@@ -99,7 +106,22 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
       const verified = verifyNutritionEvidence(data, input);
       if (!verified.errors.length) {
         const calculation = calculate(input);
-        const available = verified.status === "ESTIMATE WITH EVIDENCE" ? calculation.perServing.carbohydrate : null;
+        // An opt-in can use the reviewed carbohydrate calculation when another
+        // nutrient is still unknown and every excluded row has a zero carb bound.
+        const completeCarbohydrate = review?.wholeCarbohydrateOnly
+          && input.publicationStatus === "WITHHELD_SOURCE_INCOMPLETE"
+          && calculation.rows.every((row, index) => {
+            const ingredient = input.ingredients[index];
+            if (ingredient.excludedReason) {
+              return Boolean(ingredient.omissionImpactEvidence?.trim())
+                && ingredient.omissionImpactUpperBoundPerServing?.netCarbohydrate === 0
+                && ingredient.omissionImpactUpperBoundPerServing.totalCarbohydrate === 0;
+            }
+            return row.values.carbohydrate !== null && row.issues.every(issue =>
+              issue === "Unknown nutrient fat" || issue === "Unknown nutrient protein");
+          });
+        const fullAvailableCarbohydrate = review?.wholeCarbohydrateOnly ? completeCarbohydrate : verified.status === "ESTIMATE WITH EVIDENCE";
+        const available = fullAvailableCarbohydrate ? calculation.perServing.carbohydrate : null;
         if (available !== null) portion.availableCarbs = { min: available, max: available };
         const amounts = calculation.rows.map(row => row.issues.length === 0 ? row.values.carbohydrate : null);
         const max = Math.max(0, ...amounts.map(value => value ?? 0));
@@ -111,6 +133,9 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
           && amounts.length > 0 && amounts.every(value => value === 0);
       }
     }
+  }
+  if (review?.wholeCarbohydrateOnly && !portion.availableCarbs) {
+    throw new Error(`${recipeId}: reviewed standalone carbohydrate requires evidence for every ingredient.`);
   }
   if (review?.zeroCarbohydrate && !zeroCarbohydrate) throw new Error(`${recipeId}: exact zero carbohydrate is no longer supported.`);
   if (review?.verbal) {

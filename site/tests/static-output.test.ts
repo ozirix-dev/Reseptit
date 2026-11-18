@@ -41,6 +41,9 @@ test("new verbal estimates qualify the legacy numerical notices in all published
     ["malesialainen-roti-canai-dhalilla-punnittu-v2", "HIGH"],
     ["japanilainen-yaki-onigiri-misolla-punnittu-v2", "HIGH"],
     ["intialainen-aloo-paratha-punnittu-v2", "HIGH"],
+    ["karnivore-smashburger", "LOW"],
+    ["karnivore-meatza", "LOW"],
+    ["japanilainen-miso-tofu-paksoi-punnittu-v2", "LOW"],
   ] as const;
   for (const [id, category] of checked) {
     const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
@@ -94,8 +97,47 @@ test("incomplete recipes keep ingredient weights and optional foods separate fro
       const source = review.publicSource?.replaceAll("&", "&amp;");
       assert.ok(source && rendered.includes(`href="${source}"`), routePath);
       assert.doesNotMatch(rendered, /data-portion-carbohydrate=|data-gk-status="(?:CALCULATED|QUALITATIVE)"|data-portion-gk=/);
-      assert.equal(rendered.includes("data-ingredient-portion="), id === "dal-makhani", routePath);
+      assert.match(rendered, /data-ingredient-portion="true"/, routePath);
+      assert.equal(rendered.includes('data-ingredient-carbohydrate="available"'), id === "dal-makhani", routePath);
     }
+  }
+});
+
+test("a pending GL leaves the reviewed whole-serving and ingredient carbohydrate visible", async () => {
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  const id = "malesialainen-laksa-lemak-aamiaiseksi-punnittu-v2";
+  const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+  assert.equal(entries.length, 4, id);
+  for (const { locale, routePath } of entries) {
+    const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+    const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+    assert.match(rendered, /data-portion-carbohydrate="available"/);
+    assert.match(rendered, /data-ingredient-carbohydrate="available"/);
+    assert.doesNotMatch(rendered, /data-portion-gk=|data-gk-status="(?:QUALITATIVE|CALCULATED)"/);
+    assert.ok(rendered.includes(gkCopy[locale].missingBasis), routePath);
+    assert.ok(rendered.includes(reviews[id].condition![locale]), routePath);
+  }
+});
+
+test("an independently reviewed carb estimate does not publish the other nutrition values or GL", async () => {
+  const id = "indonesialainen-bakwan-jagung-kotiversio";
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+  assert.equal(entries.length, 4, id);
+  for (const recipe of entries) {
+    const { locale, routePath } = recipe;
+    for (const key of ["carbsNetG", "carbsTotalG", "fatG", "proteinG"] as const) {
+      assert.equal(recipe.nutrition[key], null, routePath);
+    }
+    const note = reviews[id].wholeCarbohydrateOnly!.noteEdits[locale];
+    assert.ok(recipe.notesHtml.includes(note.before), routePath);
+    const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+    const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+    assert.ok(rendered.includes(note.after), routePath);
+    assert.ok(!rendered.includes(note.before), routePath);
+    assert.match(rendered, /data-portion-carbohydrate="available"/);
+    assert.match(rendered, /data-ingredient-carbohydrate="available"/);
+    assert.doesNotMatch(rendered, /data-portion-gk=|data-gk-status="(?:QUALITATIVE|CALCULATED)"/);
   }
 });
 

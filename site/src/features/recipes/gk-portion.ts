@@ -70,8 +70,11 @@ type PortionGkValues = Pick<GlycemicLoadDisplayCandidate,
   "unroundedGlycemicLoadPerServing" | "glycemicLoadPerServing" | "glycemicLoadRangePerServing" | "omittedAvailableCarbohydratePerServingG">;
 
 export function originalPortionGk(result: PortionGkValues, multiplier = 1) {
-  const point = (result.unroundedGlycemicLoadPerServing ?? result.glycemicLoadPerServing);
   const range = result.glycemicLoadRangePerServing;
+  // An explicitly absent unrounded point can certify a rounded serving value
+  // without certifying enough precision to extrapolate to another portion.
+  const standardServingOnly = multiplier !== 1 && result.unroundedGlycemicLoadPerServing === null && range === null;
+  const point = standardServingOnly ? null : result.unroundedGlycemicLoadPerServing ?? result.glycemicLoadPerServing;
   const estimate = gkEstimate(point === null ? null : point * multiplier, range && scalePortionRange(range, multiplier));
   const numericCategory = gkEstimateClass(estimate);
   const pointCategory = point !== null && Number.isFinite(point) && point >= 0
@@ -80,7 +83,7 @@ export function originalPortionGk(result: PortionGkValues, multiplier = 1) {
     && numericCategory !== pointCategory;
   const category = inconsistent ? null : numericCategory;
   const omissionLimitsClass = classLimitedByOmission(category, result.omittedAvailableCarbohydratePerServingG);
-  return { estimate, category, inconsistent, omissionLimitsClass };
+  return { estimate, category, inconsistent, omissionLimitsClass, standardServingOnly };
 }
 
 export interface GkPortionCoverage {

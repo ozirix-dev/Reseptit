@@ -109,11 +109,13 @@ for (const route of routes) {
   if (data.recipe) {
     const { recipeId: id, locale, notesHtml } = data.recipe;
     const portionEvidence = glycemicLoadPortions[id];
-    const note = reviewedPortions[id]?.verbalNoteEdits?.[locale];
+    const review = reviewedPortions[id];
+    const note = portionEvidence?.verbal ? review?.verbalNoteEdits?.[locale]
+      : portionEvidence?.availableCarbs ? review?.wholeCarbohydrateOnly?.noteEdits[locale] : undefined;
     let reviewedNotesHtml: string | undefined;
-    if (note && portionEvidence?.verbal && !withholdF25Nutrition(id, locale)) {
+    if (note && !withholdF25Nutrition(id, locale)) {
       if (!note.before || !note.after || /<(?!\/?strong>)/.test(note.after) || notesHtml.split(note.before).length !== 2) {
-        throw new Error(`${id}/${locale}: the original GK note changed; review the current wording.`);
+        throw new Error(`${id}/${locale}: the original portion note changed; review the current wording.`);
       }
       reviewedNotesHtml = notesHtml.replace(note.before, () => note.after);
     }

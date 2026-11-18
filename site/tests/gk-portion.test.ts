@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { createHash } from "node:crypto";
-import { readFile } from "node:fs/promises";
+import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
 import path from "node:path";
 import { loadReviewedPortions, portionPreparationHash, projectPortionEvidence } from "../scripts/gk-portion-projection";
 import { countGkPortionCoverage, originalPortionGk, verbalGkForPortion } from "../src/features/recipes/gk-portion";
@@ -28,6 +29,12 @@ test("rounded UI values cannot change the original GK category", () => {
   assert.equal(originalGlycemicLoadCategory(withOmission), null);
   assert.equal(originalPortionGk(withOmission, 1).omissionLimitsClass, true);
   assert.equal(originalPortionGk(withOmission, 2).omissionLimitsClass, false);
+  const roundedStandard = { ...candidate, unroundedGlycemicLoadPerServing: null, glycemicLoadPerServing: 4 };
+  assert.deepEqual(originalPortionGk(roundedStandard, 1).estimate, { type: "EXACT_MODEL", value: 4 });
+  assert.equal(originalPortionGk(roundedStandard, 2).standardServingOnly, true);
+  assert.equal(originalPortionGk(roundedStandard, 2).category, null);
+  const withRange = { ...roundedStandard, glycemicLoadRangePerServing: { min: 4, max: 5 } };
+  assert.deepEqual(originalPortionGk(withRange, 2).estimate, { type: "ESTIMATED_RANGE", range: { min: 8, max: 10 } });
 });
 
 test("reviewed verbal GK only applies to the approved recipe portion and current evidence", async () => {
@@ -106,4 +113,35 @@ test("a package label projects only the named ingredient's carbohydrate", async 
   await assert.rejects(projectPortionEvidence(root, id, markdown, {
     ...review, ingredientPortion: { ...ingredient, declaredCarbsGPer100g: 101 },
   }), /invalid partial ingredient carbohydrate composition/);
+});
+
+test("a standalone carbohydrate estimate requires a proved zero bound on every omitted ingredient", async (t) => {
+  const id = "indonesialainen-bakwan-jagung-kotiversio";
+  const calculationPath = path.join("docs/nutrition/calculations", id + ".json");
+  const [reviews, markdown, raw] = await Promise.all([
+    loadReviewedPortions(root),
+    readFile(path.join(root, "reseptit/aamupalat", id + ".md"), "utf8"),
+    readFile(path.join(root, calculationPath), "utf8"),
+  ]);
+  const review = reviews[id];
+  const { portion } = await projectPortionEvidence(root, id, markdown, review);
+  assert.deepEqual(portion.availableCarbs, { min: 42.38, max: 42.38 });
+  assert.equal(portion.verbal, undefined);
+  const { portion: historical } = await projectPortionEvidence(root, id, markdown, {
+    ...review, wholeCarbohydrateOnly: undefined,
+  });
+  assert.equal(historical.availableCarbs, undefined);
+
+  const fixture = await mkdtemp(path.join(tmpdir(), "recipavo-carbohydrate-"));
+  t.after(() => rm(fixture, { recursive: true, force: true }));
+  const file = path.join(fixture, calculationPath);
+  await mkdir(path.dirname(file), { recursive: true });
+  const evidence = JSON.parse(raw);
+  const oil = evidence.ingredients.find((ingredient: { item: string }) => ingredient.item === "rypsiöljyä paistamiseen");
+  oil.omissionImpactUpperBoundPerServing.totalCarbohydrate = 0.1;
+  const changed = JSON.stringify(evidence);
+  await writeFile(file, changed, "utf8");
+  await assert.rejects(projectPortionEvidence(fixture, id, markdown, {
+    ...review, nutritionSha256: createHash("sha256").update(changed).digest("hex"),
+  }), /reviewed standalone carbohydrate requires evidence for every ingredient/);
 });

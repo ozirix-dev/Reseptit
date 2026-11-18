@@ -44,6 +44,18 @@ yhteyteen, kun lähde vastaa ainesosaa sen punnitustavassa. Osuus näkyy
 reseptissä ja oppaassa ainesosan omalla nimellä. Annoksen laskennan tai
 GI-lähteiden avoin katselmointi säilyy näkyvissä.
 
+Koko annoksen imeytyvän hiilihydraatin arvio voidaan julkaista
+annosnäkymässä, kun laskelma kattaa kaikki hiilihydraattilähteet ja muun
+ravintotekijän epävarmuus estää ravintoarvotaulukon julkaisun. Katselmointi
+sitoutuu reseptiin, valmistukseen ja laskelmaan. Jokaisella pois jätetyllä
+aineksella on lähteistetty nollan hiilihydraattivaikutus. Kerro arvioon
+kuuluvat punnitut ainekset ja annosjako. Muut ravintoarvot ja GK vaativat
+omat julkaisuperusteensa.
+
+Jos hyväksyntä kattaa vain vakioannoksen pyöristetyn GK-luvun, luku
+näytetään yhdelle reseptiannokselle. Muilla annoskoilla näkyvät
+laskettavissa olevat hiilihydraatit ja annosrajaus.
+
 Pakkausselosteen hiilihydraattimäärän voi kertoa nimetylle tuotteelle,
 kun tuote ja reseptiin punnittava määrä on yksilöity. Kerro lähde ja
 pakkaustiedon tuoterajaus. Annosvalitsin skaalaa tuotteen määrän ja siitä

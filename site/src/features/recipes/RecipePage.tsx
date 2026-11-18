@@ -98,16 +98,15 @@ export function RecipePage() {
   const display = scaled ? formatOriginalPortionGk(scaled.estimate, numberLocale, !!glycemicLoad?.assessmentType) : null;
   const glValue = display?.value ? `${glApprox}${display.value}` : "";
   const category = scaled?.category;
-  const classText = portionEvidence?.classLimitation?.[locale] ?? (
+  const classText = scaled?.standardServingOnly ? null : portionEvidence?.classLimitation?.[locale] ?? (
     scaled?.inconsistent ? portionWords.inconsistent
       : scaled?.omissionLimitsClass ? portionWords.omitted
       : category === "CROSSES_BOUNDARY" ? portionWords.crossing
         : category ? portionWords.class[category] : null
   );
-  // Preserve the sealed recipe's source text. Qualify its legacy note in the
-  // public view only when this recipe carries an independently reviewed verbal estimate.
-  const notesHtml = !withholdNutrition && portionEvidence?.verbal
-    ? glycemicRecipe?.reviewedNotesHtml ?? (locale === "fi"
+  // Qualify reviewed notices in the public view while retaining the recipe source.
+  const notesHtml = !withholdNutrition
+    ? glycemicRecipe?.reviewedNotesHtml ?? (portionEvidence?.verbal && locale === "fi"
       ? recipe.notesHtml.replace("<strong>GK: ei määritetty.</strong>", "<strong>Numeerista GK-arvoa ei ole määritetty.</strong>")
       : recipe.notesHtml)
     : recipe.notesHtml;
@@ -143,10 +142,10 @@ export function RecipePage() {
         <RecipePortionSummary recipe={recipe} evidence={portionEvidence} carbs={portionCarbs}
           multiplier={eatenPortion} batchServings={servings} onChange={hydrated && (portionCarbs || glycemicLoad || portionEvidence?.verbal || portionEvidence?.ingredientPortion) ? setEatenPortion : undefined} />
         {withholdNutrition ? <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status={undefinedGkLabel ? "NOT_DEFINED" : "WITHHELD_SOURCE_REVIEW"}><p className="recipe-disclosure">{undefinedGkLabel ? <><strong>{undefinedGkLabel}</strong>. Tähän valmistusversioon ei ole riittävästi luotettavaa GI-lähdetietoa GK:n laskentaan.</> : "GK-arviota ei näytetä ennen tämän reseptin raaka-aine- ja ravintoarvoperustan uudelleentarkistusta."}</p></div> : glycemicLoad ? <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status="CALCULATED">
-          <dl className="nutrition-list"><div>
+          {scaled?.standardServingOnly ? <p aria-live="polite">{portionWords.roundedServingOnly}</p> : <dl className="nutrition-list"><div>
             <dt>{glycemicLoad.assessmentType ? modeledGlLabel : labels.glycemicLoad}</dt>
             <dd aria-live="polite" data-portion-gk>{glValue}{eatenPortion === 1 ? ` ${glUnit}` : ""}</dd>
-          </div></dl>
+          </div></dl>}
           {classText ? <p className="recipe-glycemic-load__class">{classText}</p> : null}
           {portionEvidence?.alternatives ? <GkAlternatives choices={portionEvidence.alternatives} locale={locale} multiplier={eatenPortion} /> : null}
           {display?.roundingHitsBoundary && !scaled?.inconsistent && !scaled?.omissionLimitsClass ? <p className="recipe-disclosure">{portionWords.rounding}</p> : null}

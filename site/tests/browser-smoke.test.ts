@@ -430,9 +430,12 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.match(await ingredientPortion.innerText(), /150 g[\s\S]+27,5 g/);
     await page.goto(base + routeFor("indonesialainen-bakwan-jagung-kotiversio"));
     assert.match(await ingredientPortion.innerText(), /Puolikarkea vehnäjauho.*40 g[\s\S]+29,6 g/);
-    assert.equal(await page.locator("[data-portion-carbohydrate], [data-portion-gk]").count(), 0);
+    const bakwanCarbs = page.locator('[data-portion-carbohydrate="available"]');
+    assert.match(await bakwanCarbs.innerText(), /42,4 g/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
     await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
     assert.match(await ingredientPortion.innerText(), /60 g[\s\S]+44,4 g/);
+    assert.match(await bakwanCarbs.innerText(), /63,6 g/);
     await page.goto(base + glycemicLoadPath("fi") + "#malesialainen-kookos-banaanikulho");
     assert.match(await page.locator("#malesialainen-kookos-banaanikulho [data-ingredient-portion]").innerText(), /100 g[\s\S]+18,3 g/);
     await page.goto(base + routeFor("tunisialainen-brik", "en"));
@@ -481,6 +484,15 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.match(await ingredientPortion.innerText(), /35 g/);
     assert.match(await declaredCarbs.innerText(), /26,3 g/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+
+    await page.goto(base + routeFor("jauheliha-kaalikeitto-vhh"));
+    const roundedEstimate = page.locator("[data-portion-gk]");
+    assert.match(await roundedEstimate.innerText(), /5/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.equal(await roundedEstimate.count(), 0);
+    assert.equal(await page.getByText(portionCopy.fi.roundedServingOnly, { exact: true }).count(), 1);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1");
+    assert.match(await roundedEstimate.innerText(), /5/);
 
     await page.goto(base + routeFor("briossisampylat-joshua-weissman"));
     assert.match(await page.locator('[data-gk-status="QUALITATIVE"]').innerText(), /Suuri arvioitu GK/);

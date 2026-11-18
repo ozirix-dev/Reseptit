@@ -880,14 +880,25 @@
     "preparationSha256": "4ac03ca08120ae1818361b90c591f0eeb94988e77c8a4dd4be700df3a78448e8",
     "reviewedAt": "2026-11-18",
     "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/paaruoat/mala-xiang-guo.md",
-    "reasoning": "Raw, edible, trimmed and peeled Nelumbo nucifera rhizome has 13.0 g available carbohydrate by mass per 100 g in Japan MEXT Standard Tables of Food Composition, eighth revised edition, 2023 supplement, #06317. Credit: 日本食品標準成分表（八訂）増補2023年から引用. The 14.2 g monosaccharide-equivalent column is not used. This raw-input reference requires weighing the actual optional raw portion before blanching; no root mass, cooked retention, recipe total or lotus-root GI is assigned. Earlier documented scenarios of 120 g boiled/drained root and 30 g specific Toban Djan chilli paste are examples, not recipe quantities. If it is used, the paste must be checked from the actual product.",
+    "reasoning": "Raw, edible, trimmed and peeled Nelumbo nucifera rhizome has 13.0 g available carbohydrate by mass per 100 g in Japan MEXT Standard Tables of Food Composition, eighth revised edition, 2023 supplement, #06317. Credit: 日本食品標準成分表（八訂）増補2023年から引用. The 14.2 g monosaccharide-equivalent column is not used. This raw-input reference requires weighing the actual optional raw portion before blanching; no root mass, cooked retention, recipe total or lotus-root GI is assigned. Earlier documented scenarios of 120 g boiled/drained root and 30 g specific Toban Djan chilli paste are examples, not recipe quantities. If it is used, the paste must be checked from the actual product. Ingredient row 2 supplies 150 g broccoli in small florets for four servings. Preparation starts by boiling and draining them, so 37.5 g is the original pre-blanching input allocation. Japan MEXT Standard Tables of Food Composition, eighth edition 2023 supplement, 06263 matches fresh raw edible broccoli inflorescences and gives 2.3 g available carbohydrate by mass per 100 g (0.8625 g per allocated raw input), distinct from 2.4 g monosaccharide equivalent and any cooked value. Credit: 日本食品標準成分表（八訂）増補2023年から引用. Ingredient carb projection remains text-only unless its separate source can be exposed together with the retained lotus-root link. Generic doubanjiang has a volume but the current recipe lacks chosen product, weighed amount or hot-pot-base identity.",
     "condition": {
       "fi": "Jos käytät tuoretta lootusjuurta, punnitse syötävät viipaleet ennen ryöppäämistä. Japanin MEXTin mukaan 100 g raakaa lootusjuurta sisältää noin 13 g imeytyvää hiilihydraattia. Tahnan osuuden arvioon tarvitset käyttämäsi määrän ja pakkauksen hiilihydraattiarvon.",
       "en": "If you add fresh lotus root, weigh the edible slices before blanching. MEXT in Japan lists about 13 g of available carbohydrate per 100 g of raw lotus root. For the doubanjiang paste, use the amount you add and its carbohydrate label.",
       "sv": "Om du använder färsk lotusrot, väg de ätliga skivorna före förvällningen. Japans MEXT anger cirka 13 g tillgängliga kolhydrater per 100 g rå lotusrot. För doubanjiangpastan, använd mängden du tillsätter och kolhydratvärdet på förpackningen.",
       "th": "หากใช้รากบัวสด ให้ชั่งส่วนที่กินได้หลังหั่นและก่อนลวก ตารางโภชนาการของ MEXT ญี่ปุ่นระบุว่ารากบัวดิบ 100 กรัมมีคาร์โบไฮเดรตที่ย่อยได้ประมาณ 13 กรัม สำหรับเต้าเจี้ยวเผ็ดโต้วป้านเจี้ยง ให้ใช้ปริมาณที่ใส่จริงและค่าคาร์โบไฮเดรตบนฉลาก"
     },
-    "publicSource": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06317_7&MODE=7"
+    "publicSource": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06317_7&MODE=7",
+    "ingredientPortion": {
+      "index": 2,
+      "ingredientSha256": "18033e19b4336ca5542dea240929a3a74c17444c0ed2adca9fead284ee3ffab2",
+      "labels": {
+        "fi": "Parsakaalikukinnot ennen ryöppäystä",
+        "en": "Broccoli florets before blanching",
+        "sv": "Broccolibuketter före förvällning",
+        "th": "ดอกบรอกโคลีก่อนลวก"
+      },
+      "unit": "g"
+    }
   },
   "pellava-puuro-pahkinoilla": {
     "recipeBindingSha256": "87221d992744cfeaf6e4aebd706a1e1e81af78550f0a681a013f8f53670231f5",
@@ -918,14 +929,25 @@
     "preparationSha256": "b24575f021093db39e3d8ab131652940c3d3871ccfb268c23cd90fc377a568b0",
     "reviewedAt": "2026-11-18",
     "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/paaruoat/kana-tagine-sitruunalla.md",
-    "reasoning": "Serving step 5 suggests couscous or bread but fixes neither product nor quantity. THL Fineli Release 20 #29208 plain dry wheat couscous provides 63.6 g available carbohydrate per 100 g dry input. This is a conditional side-only concentration with no adopted serving mass and no reference for cooked or pearl couscous or any bread. The existing exact GK version fixes the side and changes the prescribed preserved-lemon peel and stock, so its GK stays inside that version. Original held details include edible preserved lemon rind mass and its matched composition, actual ready-to-use stock and olive drained edible basis.",
+    "reasoning": "Serving step 5 suggests couscous or bread but fixes neither product nor quantity. THL Fineli Release 20 #29208 plain dry wheat couscous provides 63.6 g available carbohydrate per 100 g dry input. This is a conditional side-only concentration with no adopted serving mass and no reference for cooked or pearl couscous or any bread. The existing exact GK version fixes the side and changes the prescribed preserved-lemon peel and stock, so its GK stays inside that version. Original held details include edible preserved lemon rind mass and its matched composition, actual ready-to-use stock and olive drained edible basis. Ingredient row 7 supplies 120 g green olives for four servings. Step 4 adds the olives. No pitting or draining amount, match to a specified olive product, or label composition is given. 30 g is the ingredient amount as written, not the weight of flesh after accounting for pits or brine. Fineli #34972 describes an average pitted green olive in brine and lists 0 g available carbohydrate per 100 g for that record only. Hold this comparison out of the recipe's numerical outputs. The preserved lemon row supplies one fruit and uses only the peel, optionally rinsed: the drained/rinsed rind weight and matched composition remain unknown. The onion is one unspecified onion. Stock dilution and side choice/amount remain unresolved. The approved separate GK version fixes multiple quantities and ingredients and cannot be widened.",
     "condition": {
-      "fi": "Huomioi lisuke erikseen. Tavallisessa vehnäkuskusissa on noin 64 g imeytyvää hiilihydraattia 100 grammaa kuivaa kuskusia kohti. Jos punnitset kuskusin kypsänä tai valitset leivän, käytä kyseisen lisukkeen ravintoarvoa.",
-      "en": "Count the side separately. Plain wheat couscous has about 64 g of available carbohydrate per 100 g dry. If you weigh cooked couscous or choose bread, use nutrition values for the side you serve.",
-      "sv": "Räkna med tillbehöret separat. Vanlig vetecouscous innehåller cirka 64 g tillgängliga kolhydrater per 100 g torr vikt. Om du väger kokt couscous eller väljer bröd, använd näringsvärdet för tillbehöret du serverar.",
-      "th": "คิดเครื่องเคียงแยกต่างหาก คูสคูสข้าวสาลีแบบธรรมดา 100 กรัมก่อนปรุงมีคาร์โบไฮเดรตที่ย่อยได้ประมาณ 64 กรัม หากชั่งคูสคูสหลังปรุงหรือเลือกขนมปัง ให้ใช้ข้อมูลโภชนาการของเครื่องเคียงที่เสิร์ฟจริง"
+      "fi": "Huomioi lisuke erikseen. Tavallisessa vehnäkuskusissa on noin 64 g imeytyvää hiilihydraattia 100 grammaa kuivaa kuskusia kohti. Jos punnitset kuskusin kypsänä tai valitset leivän, käytä kyseisen lisukkeen ravintoarvoa. Oliivien ravintoarvioon tarvitset syötävän painon ilman kiviä tai säilytyslientä.",
+      "en": "Count the side separately. Plain wheat couscous has about 64 g of available carbohydrate per 100 g dry. If you weigh cooked couscous or choose bread, use nutrition values for the side you serve. For the olives, use their edible weight without pits or brine to estimate their carbohydrate.",
+      "sv": "Räkna med tillbehöret separat. Vanlig vetecouscous innehåller cirka 64 g tillgängliga kolhydrater per 100 g torr vikt. Om du väger kokt couscous eller väljer bröd, använd näringsvärdet för tillbehöret du serverar. Använd olivernas ätliga vikt utan kärnor eller lag när du uppskattar kolhydraterna.",
+      "th": "คิดเครื่องเคียงแยกต่างหาก คูสคูสข้าวสาลีแบบธรรมดา 100 กรัมก่อนปรุงมีคาร์โบไฮเดรตที่ย่อยได้ประมาณ 64 กรัม หากชั่งคูสคูสหลังปรุงหรือเลือกขนมปัง ให้ใช้ข้อมูลโภชนาการของเครื่องเคียงที่เสิร์ฟจริง หากต้องการประมาณคาร์โบไฮเดรตจากมะกอก ให้ชั่งส่วนที่กินได้โดยไม่รวมเมล็ดหรือน้ำเกลือ"
     },
-    "publicSource": "https://fineli.fi/fineli/fi/elintarvikkeet/29208"
+    "publicSource": "https://fineli.fi/fineli/fi/elintarvikkeet/29208",
+    "ingredientPortion": {
+      "index": 7,
+      "ingredientSha256": "a0813be5c652b997f6e1fa6825139497c477ab2fe211d173a53bd5f3f3289414",
+      "labels": {
+        "fi": "Vihreät oliivit, ohjeen määrä",
+        "en": "Green olives, recipe quantity",
+        "sv": "Gröna oliver, receptets mängd",
+        "th": "มะกอกเขียวตามปริมาณในสูตร"
+      },
+      "unit": "g"
+    }
   },
   "palak-paneer": {
     "recipeBindingSha256": "6cb4001a9d66c4b9d00a08e6b120095a3917be3b4a08e78173dfb6eaf4d8a694",
@@ -1177,7 +1199,7 @@
     "preparationSha256": "a584460004ebe59e2ef77895db3ecf155ada453d26469f38ba953c0db61f129b",
     "reviewedAt": "2026-11-18",
     "nutritionSha256": "90bf320e4ba33441d60b30819bf1b42c21f6ad1de14bee6dfb01a4a925de99ab",
-    "reasoning": "One of two plain portions of the listed pan-fried skin-on salmon, with all of its allocated cooking fat and butter, without breading, sauce or side. Raw baseline per portion: 200 g skin-on boneless unsauced Atlantic salmon (Kalaneuvos + AFCD F007827), 17.5 g ordinary butter (Fineli Release 20 no. 500, 0.8 g available CHO per 100 g), 1.5 g salt (Fineli 30). The approximately 0.14 g available carbohydrate contribution recorded here is mainly the butter by recipe composition; label zero does not imply exact laboratory zero. University of Sydney GI research FAQ #11 supports a small expected glycaemic effect of unflavoured fish eaten alone; Holt et al. 1997 (doi 10.1093/ajcn/66.5.1264, Table 3) independently reported a low mean glucose score for its tested fish serving, not a salmon GI and not a serving-ratio proxy. There is no starch, glaze or side within the reviewed mass and preparation. This meets a directional LOW estimate for one plain portion by food-specific evidence plus complete composition. No numeric GI/GK, GK-zero, insulin demand, or individual response is assigned. Re-evaluate coating, sides, portion, product, and retained pan-fat instructions. Preserve the prior numeric approval status and recipe blobs.",
+    "reasoning": "One of two plain portions of the listed pan-fried skin-on salmon, with all of its allocated cooking fat and butter, without breading, sauce or side. Raw baseline per portion: 200 g skin-on boneless unsauced Atlantic salmon (Kalaneuvos + AFCD F007827), 17.5 g ordinary butter (Fineli Release 20 no. 500, 0.8 g available CHO per 100 g), 1.5 g salt (Fineli 30). The approximately 0.14 g available carbohydrate contribution recorded here is mainly the butter by recipe composition; label zero does not imply exact laboratory zero. University of Sydney GI research FAQ #11 supports a small expected glycaemic effect of unflavoured fish eaten alone; Holt et al. 1997 (doi 10.1093/ajcn/66.5.1264, Table 4) independently reported a low mean glucose score for its tested fish serving, not a salmon GI and not a serving-ratio proxy. There is no starch, glaze or side within the reviewed mass and preparation. This meets a directional LOW estimate for one plain portion by food-specific evidence plus complete composition. No numeric GI/GK, GK-zero, insulin demand, or individual response is assigned. Re-evaluate coating, sides, portion, product, and retained pan-fat instructions. Preserve the prior numeric approval status and recipe blobs.",
     "source": "https://glycemicindex.com/faqs/",
     "verbal": {
       "category": "LOW",
@@ -1253,7 +1275,7 @@
     "preparationSha256": "ac84be4a9a8241bf518267d6ead807b297fc53156251d145eb482a198794a8a2",
     "reviewedAt": "2026-11-18",
     "nutritionSha256": "691bcf1d374d9dc6e29a2f15f7c0d4d276bd7f9dd18271d0b67854a1c737f3df",
-    "reasoning": "Half the weighed finished dish, not a general karnivore classification: plain beef mince (200 g raw input at Snellman 20% 6409620011856 with AFCD F000678 fibre/polyol basis), 55 g shell-free egg (Fineli 858, 0.3 g available CHO per 100 g), 2 g salt. Cooking uses fat rendered from the plain mince, not additional butter in the actual ingredient list; retained nourishment is assigned by count of two portions. The documented model is 0.165 g (display 0.17 g) available carbohydrate, primarily from the egg; manufacture label zero is not treated as exact measured zero. University of Sydney GI Research FAQ #11 identifies plain beef and eggs as having small expected glycaemic impact in isolation, supported qualitatively by Holt et al. 1997 (doi 10.1093/ajcn/66.5.1264, Table 3) separate beef/egg glucose scores. Neither amounts nor scores are a GI match and no insulin claim is made. No starchy item, glaze, bun or side is present; the recipe-specific known portion supports a directional LOW class. Numeric GK stays on HOLD and no old or ingredient-level GI is supplied. Re-review for sauces or recipe product, preparation, portion or side changes.",
+    "reasoning": "Half the weighed finished dish, not a general karnivore classification: plain beef mince (200 g raw input at Snellman 20% 6409620011856 with AFCD F000678 fibre/polyol basis), 55 g shell-free egg (Fineli 858, 0.3 g available CHO per 100 g), 2 g salt. Cooking uses fat rendered from the plain mince, not additional butter in the actual ingredient list; retained nourishment is assigned by count of two portions. The documented model is 0.165 g (display 0.17 g) available carbohydrate, primarily from the egg; manufacture label zero is not treated as exact measured zero. University of Sydney GI Research FAQ #11 identifies plain beef and eggs as having small expected glycaemic impact in isolation, supported qualitatively by Holt et al. 1997 (doi 10.1093/ajcn/66.5.1264, Table 4) separate beef/egg glucose scores. Neither amounts nor scores are a GI match and no insulin claim is made. No starchy item, glaze, bun or side is present; the recipe-specific known portion supports a directional LOW class. Numeric GK stays on HOLD and no old or ingredient-level GI is supplied. Re-review for sauces or recipe product, preparation, portion or side changes.",
     "source": "https://glycemicindex.com/faqs/",
     "verbal": {
       "category": "LOW",
@@ -1292,12 +1314,12 @@
     "nutritionSha256": "038816609a85122e7aa0d864316952876e529bec8fe878b05bc7961baf961999",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
-    "reasoning": "Fineli Release 20 record 110 is medium wheat flour; the recipe amount is the dry flour mass. Whole batter is used and split into two. Oil retention stays unresolved. The value uses available carbohydrate in the matched ingredient before the recipe is prepared. Whole-serving release remains governed by the existing nutrition record. Unmeasured loss and retention of 30 g frying oil prevent publication of numerical nutrition values for the prepared fritters.",
+    "reasoning": "The full weighed batter is cooked and shared equally between two servings. AFCD F003209 raw edible kernels (200 g at 12.5 g/100 g), Fineli 110 medium-ground wheat flour (80 g at 73.998 g/100 g), and AFCD F006250 raw spring onion (12 g at 4.6 g/100 g) contribute 42.3752 g available carbohydrate per serving. The recipe uses plain water and salt. Pure rapeseed oil has zero available carbohydrate (Fineli 535, https://fineli.fi/fineli/fi/elintarvikkeet/535) regardless of retention. Oil retention affects fat and energy. The matching calculation remains withheld for the four published nutrition fields. The ingredient-input calculation supports an independent whole-serving carbohydrate estimate without publishing numerical or verbal GK.",
     "condition": {
-      "fi": "Maissista ja muista aineksista tulee lisäksi hiilihydraatteja.",
-      "en": "Corn and the other ingredients also contribute carbohydrate.",
-      "sv": "Majs och övriga ingredienser bidrar också med kolhydrater.",
-      "th": "ข้าวโพดและวัตถุดิบอื่นมีคาร์โบไฮเดรตด้วย"
+      "fi": "Yksi annos on puolet ohjeen frittereistä. Hiilihydraattiarvio perustuu punnittuihin taikina-aineksiin. Paistoöljy ei lisää hiilihydraatteja.",
+      "en": "One serving is half the fritters from the recipe. The carbohydrate estimate uses the weighed batter ingredients. Frying oil adds no carbohydrate.",
+      "sv": "En portion är hälften av majsbiffarna i receptet. Kolhydraterna uppskattas utifrån de vägda ingredienserna i smeten. Stekoljan tillför inga kolhydrater.",
+      "th": "หนึ่งที่คือครึ่งหนึ่งของข้าวโพดทอดที่ได้จากสูตร ค่าประมาณคาร์โบไฮเดรตคำนวณจากวัตถุดิบที่ชั่งสำหรับผสมแป้ง น้ำมันทอดไม่เพิ่มคาร์โบไฮเดรต"
     },
     "ingredientPortion": {
       "index": 1,
@@ -1310,6 +1332,27 @@
       },
       "unit": "g",
       "availableCarbsGPer100g": 73.998
+    },
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/fecc6cc3f06299baf31a7a2aa99d31c2a875d973/docs/nutrition/calculations/indonesialainen-bakwan-jagung-kotiversio.json",
+    "wholeCarbohydrateOnly": {
+      "noteEdits": {
+        "fi": {
+          "before": "Ravintoarvoja ei ole määritetty.",
+          "after": "Täydellinen ravintoarvio puuttuu, koska frittereihin imeytyneen paistoöljyn määrää ei ole mitattu."
+        },
+        "en": {
+          "before": "Nutrition values are undetermined.",
+          "after": "A full nutrition estimate is unavailable because the amount of frying oil absorbed was not measured."
+        },
+        "sv": {
+          "before": "Näringsvärdena är ej fastställda.",
+          "after": "En fullständig näringsuppskattning saknas eftersom mängden stekolja som biffarna tog upp inte har mätts."
+        },
+        "th": {
+          "before": "ยังไม่ได้กำหนดค่าสารอาหารและค่าภาระน้ำตาล",
+          "after": "ยังไม่มีค่าประมาณสารอาหารครบถ้วน เพราะไม่ได้วัดปริมาณน้ำมันที่ชิ้นข้าวโพดทอดดูดซับ ยังไม่ได้กำหนดค่าภาระน้ำตาล"
+        }
+      }
     }
   },
   "makea-banaanimunakas": {
@@ -1434,7 +1477,7 @@
     "preparationSha256": "4b9411677814a3814f3f9c2b74c8056072af4ec14fbf82f3b5fff6e4310b45f8",
     "nutritionSha256": "482c34252c4a7c128119642a46dbc7291f7d6eb202df500c0265d4ee3ae008b1",
     "source": "https://glycemicindex.com/faqs/",
-    "reasoning": "One quarter of 1,200 g raw plain bone-in short ribs, 400 g water and 7 g salt, with all apportioned broth and rendered fat. USDA SR28 13147 / FDC 169439 supports raw edible beef, 27% raw bone refuse, 219 g modeled edible beef per portion and 0 by difference in the normalized composition. No starchy ingredient, glaze or side supplies additional carbohydrate to this recipe. Sydney GI Research FAQ #11 and Holt et al. 1997 Table 3 (https://doi.org/10.1093/ajcn/66.5.1264, beef fixed-energy glucose score, no GI) support the small expected glycaemic impact in this tightly specified portion. Numeric GK remains on HOLD. Scope excludes a glaze or separately served sides.",
+    "reasoning": "One quarter of 1,200 g raw plain bone-in short ribs, 400 g water and 7 g salt, with all apportioned broth and rendered fat. USDA SR28 13147 / FDC 169439 supports raw edible beef, 27% raw bone refuse, 219 g modeled edible beef per portion and 0 by difference in the normalized composition. No starchy ingredient, glaze or side supplies additional carbohydrate to this recipe. Sydney GI Research FAQ #11 and Holt et al. 1997 Table 4 (https://doi.org/10.1093/ajcn/66.5.1264, beef fixed-energy glucose score, no GI) support the small expected glycaemic impact in this tightly specified portion. Numeric GK remains on HOLD. Scope excludes a glaze or separately served sides.",
     "verbal": {
       "category": "LOW",
       "portions": [
@@ -1510,7 +1553,7 @@
     "preparationSha256": "48b2d4752c912ed1f9e4a43c28ac0a887b50bd87cab7438cddb6c652d17ce71d",
     "nutritionSha256": "133afd87af6bc509f68ebc4db3df6d02b0641944d9a2ebf4bfb0ad7476ee78ea",
     "source": "https://glycemicindex.com/faqs/",
-    "reasoning": "One of two weighed portions contains a 180 g raw trimmed edible HK 1824 entrecôte steak, 110 g shell-free egg, 10 g butter, 1.5 g salt and the serving share of cooking juices. Audited available CHO 0.41 g, from 0.33 g in Fineli 858 egg and 0.08 g in Fineli 500 butter. Meat label rounded zero is corroborated qualitatively by AFCD and is not a measured GK. Sydney GI Research FAQ #11 plus Holt et al. 1997 Table 3 (https://doi.org/10.1093/ajcn/66.5.1264) fixed-energy beef and egg glucose scores support a directional LOW for the exact ungarnished serving. These are separate tests, not recipe GI or numeric GK. Existing numeric hold continues. A different accompaniment, recipe, product or portion needs re-review.",
+    "reasoning": "One of two weighed portions contains a 180 g raw trimmed edible HK 1824 entrecôte steak, 110 g shell-free egg, 10 g butter, 1.5 g salt and the serving share of cooking juices. Audited available CHO 0.41 g, from 0.33 g in Fineli 858 egg and 0.08 g in Fineli 500 butter. Meat label rounded zero is corroborated qualitatively by AFCD and is not a measured GK. Sydney GI Research FAQ #11 plus Holt et al. 1997 Table 4 (https://doi.org/10.1093/ajcn/66.5.1264) fixed-energy beef and egg glucose scores support a directional LOW for the exact ungarnished serving. These are separate tests, not recipe GI or numeric GK. Existing numeric hold continues. A different accompaniment, recipe, product or portion needs re-review.",
     "verbal": {
       "category": "LOW",
       "portions": [
@@ -2085,6 +2128,367 @@
       "en": "The label for Hungry Chef’s regular 260 g pizza sauce lists 7.8 g of carbohydrate per 100 g. Check the sauce you use. The crust and other toppings also contribute carbohydrate.",
       "sv": "Näringsdeklarationen för Hungry Chefs vanliga pizzasås på 260 g anger 7,8 g kolhydrater per 100 g. Kontrollera förpackningen på såsen du använder. Botten och de övriga påläggen bidrar också med kolhydrater.",
       "th": "ฉลากซอสพิซซ่าสูตรปกติ Hungry Chef ขนาด 260 กรัมระบุคาร์โบไฮเดรต 7.8 กรัมต่อซอส 100 กรัม ตรวจฉลากซอสที่ใช้ แป้งพิซซ่าและหน้าอื่น ๆ ก็มีผลต่อคาร์โบไฮเดรตทั้งหน่วยบริโภค"
+    }
+  },
+  "taateliketsuppi": {
+    "recipeBindingSha256": "13881c7573e78f01e829695b0290569d3f18d6eda8c3332be7b4ed7996532f26",
+    "preparationSha256": "fe94281f56d5579952b6658f273719ecab252de7e5793ee771d8a54f750afabb",
+    "nutritionSha256": "7aca49e9d14a37f8f1ac777e594ccc7423620b4f8a9b59759d20f15c18aefc54",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/354",
+    "reasoning": "The declared 140 g tomato paste is blended into eight servings, so 17.5 g supplies 1.39125 g available carbohydrate at the Fineli Release 20 #354 generic tomato purée/paste reference (7.95 g/100 g). Other strengths vary. The recipe weighs 45 g pitted dates before soaking and discards the soak water. An AFCD dried-date record can inform a specifically matched pre-soak product, not the retained contribution. Vinegar definition/polyols for the prior record are unresolved.",
+    "condition": {
+      "fi": "Tomaattipyreen arvio perustuu Finelin keskiarvoon. Jos käytät tiivistetympää pyreetä, käytä sen pakkauksen arvoa. Taatelit liotetaan ja liotusvesi kaadetaan pois.",
+      "en": "The tomato paste estimate uses the Fineli average. If you use a more concentrated paste, use the value from its label. The dates are soaked and the soaking water is discarded.",
+      "sv": "Uppskattningen för tomatpurén bygger på Finelis genomsnitt. Om du använder en mer koncentrerad tomatpuré, använd värdet på förpackningen. Dadlarna blötläggs och blötläggningsvattnet hälls bort.",
+      "th": "ค่าประมาณสำหรับมะเขือเทศเข้มข้นใช้ค่าเฉลี่ยจาก Fineli หากใช้ชนิดที่เข้มข้นกว่า ให้ใช้ค่าบนฉลาก แช่อินทผลัมในน้ำแล้วเทน้ำที่ใช้แช่ทิ้ง"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "90b2a452fdef0b2592f04594692fced889624b7112a9c5801b2301849dd6f3f2",
+      "labels": {
+        "fi": "Tomaattipyree",
+        "en": "Tomato paste",
+        "sv": "Tomatpuré",
+        "th": "มะเขือเทศเข้มข้น"
+      },
+      "unit": "g",
+      "availableCarbsGPer100g": 7.95
+    }
+  },
+  "mustaherukkavispipuuro": {
+    "recipeBindingSha256": "013e8a90ed2bacaaeb6132b2bb19cb8afaa7f55a4a76fbcda6186e685332e95f",
+    "preparationSha256": "9e667b27c92f4da090d3d4498ceb902a6a6935a0fa6e422cd88dd07da1ee37d6",
+    "nutritionSha256": "c585b98cca34196f22b428a6a77e4cc12ac7c80cd2b5c0bae2a9c5ef3529bd48",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/444",
+    "reasoning": "The whole 250 g of blackcurrants are puréed and added without straining into eight servings. Fineli #444 Release 20 reports 9.716 g/100 g CHOAVL from its carbohydrate components, giving 3.03625 g per 31.25 g raw-input allotment with the fresh reference. It does not report aggregate polyols. The recipe permits frozen berries in its preparation note. Published whole-food chemistry confirms variable blackcurrant polyol profiles and cannot fill this recipe's exact aggregate field. Dark semolina #113 also lacks a polyol entry. No prepared porridge composition or whole CHO claim.",
+    "condition": {
+      "fi": "Arvio käyttää tuoreiden mustaherukoiden koostumusta ennen kypsennystä. Mannasuurimoiden ja lisätyn sokerin hiilihydraatit tulevat lisäksi.",
+      "en": "The estimate uses the composition of fresh blackcurrants before cooking. The semolina and added sugar contribute additional carbohydrate.",
+      "sv": "Uppskattningen använder sammansättningen för färska svarta vinbär före kokning. Mannagrynen och det tillsatta sockret bidrar med ytterligare kolhydrater.",
+      "th": "ค่าประมาณอ้างอิงองค์ประกอบของแบล็กเคอร์แรนต์สดก่อนต้ม เซโมลินาและน้ำตาลที่เติมลงไปยังให้คาร์โบไฮเดรตเพิ่มเติม"
+    },
+    "ingredientPortion": {
+      "index": 2,
+      "ingredientSha256": "cb843b977d483a5d9f5ca07f8d32b6544e4c97742cb04dc165826d85c965c6fa",
+      "labels": {
+        "fi": "Mustaherukat ennen keittämistä",
+        "en": "Blackcurrants before cooking",
+        "sv": "Svarta vinbär före kokning",
+        "th": "แบล็กเคอร์แรนต์ก่อนต้ม"
+      },
+      "unit": "g",
+      "availableCarbsGPer100g": 9.716
+    }
+  },
+  "kookos-linssikeitto": {
+    "recipeBindingSha256": "87ff06579a41b2e193aaab49f2700fef0a632d51d26bf25001f96b8146e40f6b",
+    "preparationSha256": "2ac3c228eca0cab0108e0a7ead1e96bf6f75a71d89442b2ddd13247d43d19755",
+    "nutritionSha256": "edc699a471a2ef8794f8daca64a1f610c423c815135f483c31c703b0153fb382",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31219",
+    "reasoning": "The 160 g dry red lentils in the four-serving original are weighed before rinsing. The reported Fineli #31219 CHOAVL of 45.8 g/100 g gives 18.32 g per raw input serving. Independent AFCD F005184 red hulled dry is 45.7 g without sugar alcohols per 100 g, but individual polyols are blank in the paired AFCD record. Original wording does not specify hulling; keep Fineli as the primary reference. Red lentil studies show nonzero variable polyols and losses during processing cannot be represented by assuming zero or pretending a retained mass was measured. F002991 and F009222/F010071 resolve coconut milk and canned whole peeled undrained tomatoes for component estimates in the audit. Therefore preserve the whole-portion hold.",
+    "condition": {
+      "fi": "Linssien arvio perustuu kuivapainoon ennen huuhtelua. Kookosmaito, tomaatit ja muut ainekset tuovat lisää hiilihydraattia.",
+      "en": "The lentil estimate uses their dry weight before rinsing. Coconut milk, tomatoes and other ingredients contribute additional carbohydrate.",
+      "sv": "Uppskattningen för linserna bygger på torrvikten före sköljning. Kokosmjölk, tomater och övriga ingredienser bidrar med ytterligare kolhydrater.",
+      "th": "ค่าประมาณของถั่วเลนทิลใช้ค่าน้ำหนักแห้งก่อนล้าง กะทิ มะเขือเทศ และส่วนผสมอื่น ๆ ให้คาร์โบไฮเดรตเพิ่มเติม"
+    },
+    "ingredientPortion": {
+      "index": 6,
+      "ingredientSha256": "feb740d6a1e1a85116017924617a4053f5f8e441fe1c47bce51e114a1fc33f9f",
+      "labels": {
+        "fi": "Kuivat punaiset linssit ennen huuhtelua",
+        "en": "Dried red lentils before rinsing",
+        "sv": "Torkade röda linser före sköljning",
+        "th": "ถั่วเลนทิลแดงแห้งก่อนล้าง"
+      },
+      "unit": "g",
+      "availableCarbsGPer100g": 45.8
+    }
+  },
+  "uuniriisipuuro": {
+    "recipeBindingSha256": "f7b68fc050cbc2ea2e3b6bb17ee75ddc7d44acb88cfcdfac24a4cca89ce9d523",
+    "preparationSha256": "039c13a4d1174b7a0227b7de261ae29175055a617f8691cd3717220fa596bf2f",
+    "nutritionSha256": "0ef1a88e198d96edbd5ce02e3b90235006255db76bbdf4774540356c0f55ff92",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/avoin-data",
+    "reasoning": "Two decilitres of dry pudding rice are baked with milk and divided into four, 0.5 dl dry rice for one serving from the original. The matched Fineli Release 20 #156 home measure is 85 g per dl and CHOAVL is 75.6 g/100 g, demonstrated 42.5 g and 32.13 g respectively for the conditional comparison. Current recipe supplies a volume, so 42.5 g is an approximate conversion, not an actual weighed mass, and public condition offers weighing for the chosen product. The primary item-specific Fineli record does not quantify aggregate polyols. AFCD F007682 includes rice types other than pudding rice and MEXT #01083 also has no separate sugar-alcohol number. Retain numeric holds.",
+    "condition": {
+      "fi": "Yhteen annokseen käytetään ½ dl kuivaa puuroriisiä, Finelin kotitalousmitalla noin 43 g. Punnitse riisi, jos haluat käyttää oman tuotteesi pakkausarvoa.",
+      "en": "One serving uses ½ dl (50 mL) of dry pudding rice, about 43 g using Fineli's household measure. Weigh the rice to use the value from your own product label.",
+      "sv": "Till en portion används ½ dl torrt grötris, cirka 43 g enligt Finelis hushållsmått. Väg riset om du vill använda värdet på din förpackning.",
+      "th": "หนึ่งหน่วยบริโภคใช้ข้าวสารสำหรับทำโจ๊ก 50 มล. หรือประมาณ 43 กรัมตามปริมาณอ้างอิงของ Fineli หากต้องการคำนวณจากฉลากของผลิตภัณฑ์ที่ใช้ ให้ชั่งข้าวสาร"
+    }
+  },
+  "karnivore-smashburger": {
+    "recipeBindingSha256": "5c0bdf4dead328325da9334a0adc8f3e0860bf79cd55c12008f27e8905ff6b40",
+    "preparationSha256": "0b3dd4ae4e11f9074f413126cb2dd7f11289018a9e1dbdb4b36269410623865c",
+    "nutritionSha256": "6099c9577b7b392e1bc45281c098f830af8116df8ed7f16af5580ce3252bc54a",
+    "reviewedAt": "2026-11-18",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/29920213/",
+    "reasoning": "One serving is two of four pan-cooked patties. Exact reviewed input per serving is 250 g raw plain Snellman 20% beef EAN 6409620011856, 5 g rendered beef tallow USDA FDC 171400, 2 g salt and half the edible pan fat and juices. The ingredient evidence estimates 0 g available carbohydrate using a rounded pack label and source-reported fibre and sugar alcohol composition. Conn and Newburgh 1936 (doi 10.1172/JCI100818) directly served separately pan-fried lean minced beef patties with minimal butter in a historical much larger weight-scaled design; the glucose response was small relative to the carbohydrate meal. Modern human data from Gaudichon et al. 2018 (doi 10.1152/ajpendo.00157.2018, n=13) find no significant rise after 120 g bovine meat alone. Holt et al. 1997 Table 4 notes a low relative glucose response for a grilled plain beef serving. Different fat levels, preparation and servings limit transfer. The exact plain recipe and measured comparison support a directional LOW only. Scope excludes buns, sides and sauces. No numeric GK, exact zero or individual response is assigned. Published batch-487 is source accounting only; its separate GK gate remains active.",
+    "verbal": {
+      "category": "LOW",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Yksi annos on kaksi pihviä. Arvio koskee ohjeen naudanlihapihvejä, jotka paistetaan naudan talissa ja tarjotaan paistinliemineen. Sämpylä, kastike ja lisukkeet arvioidaan erikseen.",
+        "en": "One serving is two patties. The estimate covers the recipe’s beef patties pan-cooked in beef tallow and served with their cooking juices. A bun, sauce and sides are considered separately.",
+        "sv": "En portion är två biffar. Uppskattningen gäller receptets nötfärsbiffar, stekta i nöttalg och serverade med stekskyn. Bröd, sås och tillbehör bedöms separat.",
+        "th": "หนึ่งที่มีเนื้อบดปั้นแบนสองชิ้น ค่าประมาณนี้ใช้กับเนื้อวัวบดแผ่นตามสูตรที่จี่ในไขมันวัวและเสิร์ฟพร้อมน้ำจากการทอด ให้พิจารณาขนมปัง ซอส และเครื่องเคียงแยกต่างหาก"
+      }
+    },
+    "verbalNoteEdits": {
+      "fi": {
+        "before": "<strong>GK: ei määritetty.</strong>",
+        "after": "<strong>Numeerista GK-arvoa ei ole määritetty.</strong>"
+      },
+      "en": {
+        "before": "GL is undetermined.",
+        "after": "A numerical GL has not been determined."
+      },
+      "sv": {
+        "before": "GL är inte fastställd.",
+        "after": "Ett numeriskt GL-värde har inte fastställts."
+      },
+      "th": {
+        "before": "ยังไม่ได้กำหนด GL",
+        "after": "ยังไม่ได้กำหนดค่าภาระน้ำตาลเป็นตัวเลข"
+      }
+    },
+    "piecesPerServing": 2,
+    "condition": {
+      "fi": "Käytetyn naudanlihan pakkaus ilmoittaa pyöristetyn arvon 0 g hiilihydraattia. Annosarvio koskee pihvejä ja paistinlientä.",
+      "en": "The beef label gives a rounded carbohydrate value of 0 g. The serving estimate covers the patties and their cooking juices.",
+      "sv": "Nötköttets förpackning anger ett avrundat kolhydratvärde på 0 g. Uppskattningen gäller biffarna och stekskyn.",
+      "th": "ฉลากเนื้อวัวระบุคาร์โบไฮเดรต 0 กรัมหลังการปัดเศษ ค่าประมาณนี้ครอบคลุมชิ้นเนื้อบดและน้ำที่ออกมาระหว่างทอด"
+    }
+  },
+  "karnivore-meatza": {
+    "recipeBindingSha256": "afe4c9d8866fe0587b145d6550e0f6289650109bd2454db010f4da656c87cab8",
+    "preparationSha256": "28732c2bdd2adb3e8b0a4e557ae2c50e30fa79d252e77da75dc3ebe84f44ed24",
+    "nutritionSha256": "2d8eee05cac28ffa0c4147d3002c742707db914f80140b5198d92274aebda423",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/66.5.1264",
+    "reasoning": "The serving is one third of the finished plain meat base with the matching weighed bacon and mozzarella plus the assigned edible drippings. Raw input per serving: 166.67 g Snellman 20% plain beef mince EAN 6409620011856, 30 g Pirkka bacon EAN 6410402012312, 30 g drained Coop mozzarella EAN 7340191148918, and 1 g salt. Estimated available CHO 0.60 g consists of 0.30 g each from bacon and mozzarella: the named labels report 1 g per 100 g and the pinned AFCD profiles support fibre/sugar-alcohol matching. Holt et al. 1997 measured plain grilled beef and a different low-carbohydrate cheese (cheddar) separately in equal-energy portions. Table 4 carbohydrate-unmatched glucose scores 21 ± 8 and 55 ± 18 relative to white bread are supportive physiological observations, not ingredient GI values or proof of a combined response. Gaudichon et al. 2018 provides independent human data for beef alone. The entire recipe is audited and there is no dough, glaze or sauce. Wide margin in the very small available carbohydrate supports directional LOW for one unmodified serving. Product changes and any sauce or side need separate review. Batch-503 permitted source accounting, retaining the numerical GK gate.",
+    "verbal": {
+      "category": "LOW",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Yksi annos on kolmasosa pitsasta. Arvio koskee jauhelihapohjaa sekä ohjeessa nimettyä pekonia ja valutettua mozzarellaa paistorasvoineen. Mahdollinen kastike ja lisukkeet arvioidaan erikseen.",
+        "en": "One serving is one third of the pizza. The estimate covers the beef base, the bacon and drained mozzarella specified in the recipe, and the cooking drippings. Any sauce and sides are considered separately.",
+        "sv": "En portion är en tredjedel av pizzan. Uppskattningen gäller nötfärsbottnen, baconet och den avrunna mozzarellan som anges i receptet samt stekfettet. Eventuell sås och tillbehör bedöms separat.",
+        "th": "หนึ่งที่คือหนึ่งในสามของพิซซ่า ค่าประมาณนี้ใช้กับฐานเนื้อวัวบด เบคอนและมอซซาเรลลาสะเด็ดน้ำตามสูตร รวมไขมันจากการปรุง ให้พิจารณาซอสและเครื่องเคียงแยกต่างหาก"
+      }
+    },
+    "verbalNoteEdits": {
+      "fi": {
+        "before": "<strong>GK: ei määritetty.</strong>",
+        "after": "<strong>Numeerista GK-arvoa ei ole määritetty.</strong>"
+      },
+      "en": {
+        "before": "GL is undetermined.",
+        "after": "A numerical GL has not been determined."
+      },
+      "sv": {
+        "before": "GL är inte fastställd.",
+        "after": "Ett numeriskt GL-värde har inte fastställts."
+      },
+      "th": {
+        "before": "ยังไม่ได้กำหนดค่า GL",
+        "after": "ยังไม่ได้กำหนดค่าภาระน้ำตาลเป็นตัวเลข"
+      }
+    }
+  },
+  "japanilainen-miso-tofu-paksoi-punnittu-v2": {
+    "recipeBindingSha256": "005f34b8b9ac87546150fd74d657707edbda43255e41a6108c559c88a9cbe582",
+    "preparationSha256": "642a9b86582538a6bb1ac617caa2377724f5915ac311e7918b0d70391b2e6618",
+    "nutritionSha256": "1eed0dacf0944e0b6de9e5f06c4cb8f55b897aeaeb14d26106add9c65b95b08b",
+    "reviewedAt": "2026-11-18",
+    "source": "https://www.jstage.jst.go.jp/article/fstr/16/3/16_3_247/_article",
+    "reasoning": "One of two bowls contains 20 g light miso, 275 g mild vegetable stock, 75 g drained soft tofu and 60 g bok choy. Audited 6.62 g available CHO comes from 3.94 g miso (AFCD F005702 composite), 1.185 g tofu, 1.1275 g stock and 0.36 g bok choy. Miso dissolves off heat as directed and all of the bowl is served. Kawamura, Furukawa & Gomyo 2010 (doi 10.3136/fstr.16.247, Methods subsection c) state that a preliminary stand-alone soup check showed no detected glucose effect. Their dose-proximate soup used around 18 g paste per 200 mL hot water. The preliminary sample size and results are not shown, and the separate main 59-person rice-with-soup comparison does not provide a stand-alone miso GI or a causal mechanism for this recipe. Phase, miso, stock and adjuncts differ, and the direct supporting statement does not itself establish this recipe's response. The small audited bowl and its similar miso quantity support a directional LOW review candidate only for the single bowl as written. Keep numerical GK on HOLD. A side of rice/noodles, sweetened miso or added ingredients are outside this assessment.",
+    "verbal": {
+      "category": "LOW",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Arvio koskee yhtä kulhollista, jossa on 20 g vaaleaa misotahnaa, kasvislientä, pehmeää tofua ja paksoita. Mahdollinen riisi- tai nuudelilisuke arvioidaan erikseen. Vertailutieto on alustavasta, yksinkertaisemman misokeiton kokeesta.",
+        "en": "The estimate covers one bowl with 20 g of light miso paste, vegetable stock, soft tofu and bok choy. Any rice or noodle side is considered separately. The comparison comes from a preliminary test of a simpler miso soup.",
+        "sv": "Uppskattningen gäller en skål med 20 g ljus misopasta, grönsaksbuljong, mjuk tofu och pak choi. Eventuella tillbehör med ris eller nudlar bedöms separat. Jämförelsen bygger på ett preliminärt försök med en enklare misosoppa.",
+        "th": "ค่าประมาณนี้ใช้กับซุปหนึ่งชามที่มีมิโซะสีอ่อน 20 กรัม น้ำซุปผัก เต้าหู้อ่อน และผักกวางตุ้งฮ่องเต้ ให้พิจารณาข้าวหรือเส้นที่เสิร์ฟเป็นเครื่องเคียงแยกต่างหาก ข้อมูลเปรียบเทียบมาจากการทดสอบเบื้องต้นของซุปมิโซะสูตรที่ง่ายกว่า"
+      }
+    },
+    "verbalNoteEdits": {
+      "fi": {
+        "before": "<strong>GK: ei määritetty.</strong>",
+        "after": "<strong>Numeerista GK-arvoa ei ole määritetty.</strong>"
+      },
+      "en": {
+        "before": "<strong>Glycemic load: undetermined.</strong>",
+        "after": "<strong>A numerical GL has not been determined.</strong>"
+      },
+      "sv": {
+        "before": "<strong>Glykemisk belastning: ej fastställd.</strong>",
+        "after": "<strong>Ett numeriskt GL-värde har inte fastställts.</strong>"
+      },
+      "th": {
+        "before": "<strong>ค่าภาระน้ำตาล (GL) ยังไม่ได้กำหนด</strong>",
+        "after": "<strong>ยังไม่ได้กำหนดค่าภาระน้ำตาลเป็นตัวเลข</strong>"
+      }
+    }
+  },
+  "malesialainen-laksa-lemak-aamiaiseksi-punnittu-v2": {
+    "recipeBindingSha256": "75648b53af22efe57b6743a963951e40e7c56f51759bdba9b7d768ecf7d6b38a",
+    "preparationSha256": "426033826f6ab9aa982ccf8820573d96debcc0beb43b649a932b0a8517f6443d",
+    "nutritionSha256": "9dea8c50e3e85672d2f0935886d0b17c37d51e085190929100264bddac31d45f",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/29055",
+    "reasoning": "One of two bowls contains 50 g rice noodles weighed dry before separate boiling/draining plus the full share of coconut, tofu, sprouts and broth. Exact available CHO 46.39 g for the original serving. Fineli Release 20 record 29055 gives 81.64 g available CHO, 2.07 g fibre and 0 g source-reported polyols per 100 g of the dry ingredient; 40.82 g available CHO from the weighed noodle component. The comparator of Sun et al. 2015 Table 2 is tested rice vermicelli Beehoon with GI 35 ± 3 (SEM) in 11 healthy participants. The paper names other tested boiled rice-noodle products at substantially different GI (37–68). Dry rice noodle form and brand, cooking method and complete coconut broth meal may shift the class. The current generic noodle recipe does not identify the study formulation. Preserve HOLD and provide scope for the verified dry ingredient instead of numerical or verbal GK of the entire meal.",
+    "condition": {
+      "fi": "Punnitse riisinuudelit kuivina ja keitä ne pakkauksen ohjeella. Jos vaihdat tuotetta, tarkista sen hiilihydraattimäärä pakkauksesta.",
+      "en": "Weigh the rice noodles dry and cook them as directed on the package. If you switch products, check the carbohydrate on the label.",
+      "sv": "Väg risnudlarna torra och koka dem enligt förpackningen. Om du byter produkt, kontrollera kolhydratmängden på förpackningen.",
+      "th": "ชั่งเส้นข้าวก่อนต้ม แล้วต้มตามวิธีบนบรรจุภัณฑ์ หากเปลี่ยนยี่ห้อ ให้ตรวจสอบปริมาณคาร์โบไฮเดรตบนฉลาก"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "744cbb448cb2ddd8e85120a702cf4461fbe0a8cfbaf61b8daf2c74eb7125b512",
+      "labels": {
+        "fi": "Riisinuudelit (kuivapaino)",
+        "en": "Rice noodles (dry weight)",
+        "sv": "Risnudlar (torrvikt)",
+        "th": "เส้นข้าว (น้ำหนักแห้ง)"
+      },
+      "unit": "g",
+      "availableCarbsGPer100g": 81.64
+    }
+  },
+  "valimerellinen-appelsiini-aamiaiskakku-punnittu-v2": {
+    "recipeBindingSha256": "15e73459755d3989874187c67031ea9e1102e4b0774a3fdc6aec0242357e1491",
+    "preparationSha256": "f7621bb60574c5248a2061332c9a7f8e8fe8f27937c0200e0af4be9f12efc80c",
+    "nutritionSha256": "129648d98d5f94b5cf0ee39d14de522a4caf01a77793fc733db2ac1b038d80fd",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
+    "reasoning": "The current baked yogurt, olive-oil and orange cake is divided into six portions. Each portion allocates 25 g medium wheat flour, 12.5 g added sugar, and one sixth of the remaining recipe. Fineli Release 20 food 110 gives 73.998 g available CHO per 100 g flour, with a source-defined fibre and sugar alcohol row, yielding 18.4995 g available CHO from the weighed flour. Sucrose contributes about 12.49 g available CHO in the same piece; the full estimate is 32.85 g. Vrolix and Mensink 2010 showed experimentally that changing the carbohydrate constituents of otherwise broadly comparable cakes shifted the GI from 51 ± 12 to 20 ± 4. A 2022 Korean human study reported 44 ± 11 SD for one commercial sponge cake with an 18 g carbohydrate commercial portion. Neither cake formulation matches current yogurt, citrus, oil and wheat amounts; this packet identifies the weight and portion with no GK class or numerical transfer.",
+    "condition": {
+      "fi": "Jaa jäähtynyt kakku kuuteen yhtä suureen palaan. Yhtä palaa kohti taikinassa on myös 12,5 g lisättyä sokeria.",
+      "en": "Cut the cooled cake into six equal pieces. The batter also contains 12.5 g of added sugar per piece.",
+      "sv": "Dela den avsvalnade kakan i sex lika stora bitar. Smeten innehåller också 12,5 g tillsatt socker per bit.",
+      "th": "พักเค้กให้เย็นแล้วแบ่งเป็นหกชิ้นเท่า ๆ กัน ในส่วนผสมมีน้ำตาลที่เติม 12.5 กรัมต่อชิ้น"
+    },
+    "piecesPerServing": 1,
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "4e65b7277639a2d0347bc887aabdb6cf8af2b9e63dfe3696baa94cd41525bde9",
+      "labels": {
+        "fi": "Puolikarkea vehnäjauho (kuivapaino)",
+        "en": "Medium-ground wheat flour (dry weight)",
+        "sv": "Halvgrovt vetemjöl (torrvikt)",
+        "th": "แป้งสาลีบดปานกลาง (น้ำหนักแห้ง)"
+      },
+      "unit": "g",
+      "availableCarbsGPer100g": 73.998
+    }
+  },
+  "kiinalainen-bao-munalla-punnittu-v2": {
+    "recipeBindingSha256": "c911019ddc7ee0d2caeb8836cb9bf8f905cc51e59547de0898b5049c8823f236",
+    "preparationSha256": "df2c5e9f3aecdbfc739e375fff0e9e4e82e46a2766f27a363f5c98c0182647a7",
+    "nutritionSha256": "d8d81a4715ada8b650bc9c8ce40322c32956e44d884bc1024c48b4839495d542",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
+    "reasoning": "One of two open folded buns comprises dough with 50 g weighed dry medium wheat flour and 2.5 g sugar, followed after steaming by 50 g hard-boiled egg, 50 g cucumber and 7.5 g hoisin. Fineli Release 20 110 gives about 37.0 g available CHO from the flour input, 43.20 g whole. The amount is for the dry ingredient before preparation. Yang 2006 found markedly different 2 h glucose-scale GI for refined steamed wheat bread versus meat-filled steamed bun. The comparable 2022 unfilled wheat steamed bun control was about 69; Sun et al. measured different prepared pork-filled pau. Dough structure, hoisin and after-steam filling are specific here. Original numerically pending successor cannot import a baked, unfilled or enclosed bun GI. Only the dry flour component and one open folded bun serving are proposed.",
+    "condition": {
+      "fi": "Jaa muna, kurkku ja hoisin tasan kahteen höyrysämpylään. Jos käytät valmista baota tai vaihdat kastiketta, tarkista hiilihydraatit pakkauksista.",
+      "en": "Divide the egg, cucumber and hoisin evenly between the two steamed buns. If you use ready-made bao or change the sauce, check the carbohydrate on the labels.",
+      "sv": "Fördela ägg, gurka och hoisinsås jämnt mellan de två ångade bullarna. Kontrollera kolhydratmängden på förpackningarna om du använder färdig bao eller byter sås.",
+      "th": "แบ่งไข่ แตงกวา และซอสฮอยซินเท่า ๆ กันใส่แป้งเปานึ่งสองชิ้น หากใช้แป้งเปาสำเร็จรูปหรือเปลี่ยนซอส ให้ตรวจสอบปริมาณคาร์โบไฮเดรตบนฉลาก"
+    },
+    "piecesPerServing": 1,
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "8ba1cdfcb82b5b72d28b9bcb11876d77f555eafb1553b24b2ca84ed204ad67d6",
+      "labels": {
+        "fi": "Puolikarkea vehnäjauho (kuivapaino)",
+        "en": "Medium-ground wheat flour (dry weight)",
+        "sv": "Halvgrovt vetemjöl (torrvikt)",
+        "th": "แป้งสาลีบดปานกลาง (น้ำหนักแห้ง)"
+      },
+      "unit": "g",
+      "availableCarbsGPer100g": 73.998
+    }
+  },
+  "korealainen-mandu-keitto-aamiaiseksi-punnittu-v2": {
+    "recipeBindingSha256": "f1e06b99b845f04e67f9af1a1cee43549c91d35bc79f7555485004965083776d",
+    "preparationSha256": "6a9f9d523d94f2fdd2d08cbcbf720a19539c92a99c5edda82812ec92005938b9",
+    "nutritionSha256": "d8737dced4bfc8397fefc51c6470d1a61df57e4a998655b3cb2ca5b4a8964424",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
+    "reasoning": "One serving contains six of the twelve equal wheat-wrapper dumplings and one half of the stock and egg ribbons. The 100 g dry medium wheat flour batch includes the dough and flour allocated for rolling. Fineli Release 20 record 110 gives 73.998 g available CHO per 100 g, so the modeled flour input contributes about 37.0 g per serving out of 39.52 g. This is input allocation, not measured wrapper carryover or broth leaching. The 2022 Korean commercial foods study directly tested packaged microwave-heated meat dumplings (mean GI 58 ± 12 SD) and kimchi dumplings (31 ± 12 SD), against glucose. Yang et al. found a shallot/meat dumpling had GI 28.0 ± 9.9 SD. Recipe shell, pork/cabbage filling and stock with egg differ, making direction uncertain. The six-count serving and the amount of weighed flour are independently actionable. Existing numeric GK hold and historical version protections remain.",
+    "condition": {
+      "fi": "Annokseen kuuluu myös puolet liemestä ja kananmunanauhoista. Arvio perustuu ohjeen kotitekoisiin nyyttikuoriin.",
+      "en": "The serving also includes half the broth and egg ribbons. The estimate uses the homemade wrappers in the recipe.",
+      "sv": "Portionen innehåller också hälften av buljongen och äggstrimlorna. Uppskattningen bygger på de hemgjorda degskalen i receptet.",
+      "th": "หนึ่งที่รวมถึงน้ำซุปและไข่เส้นครึ่งสูตร ค่าประมาณอิงแผ่นเกี๊ยวที่ทำเองตามสูตร"
+    },
+    "piecesPerServing": 6,
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "491688861ff35f8c0a8f24c82eb3f6a45c32f820c226f0178bc1d19aaab25cf0",
+      "labels": {
+        "fi": "Vehnäjauho nyyttikuoriin ja kaulimiseen (kuivapaino)",
+        "en": "Wheat flour for wrappers and rolling (dry weight)",
+        "sv": "Vetemjöl till deg och utkavling (torrvikt)",
+        "th": "แป้งสาลีสำหรับทำและรีดแผ่นเกี๊ยว (น้ำหนักแห้ง)"
+      },
+      "unit": "g",
+      "availableCarbsGPer100g": 73.998
+    }
+  },
+  "pohjoisafrikkalainen-maakouda-punnittu-v2": {
+    "recipeBindingSha256": "9269ac2260fa3869427e0599392f44d993abbdf6462d7ba8a530c429842278bb",
+    "preparationSha256": "b1249900a88ffafdf0d75e0e4438278812218faafcb258b4c9358ff534888f44",
+    "nutritionSha256": "0dd0be9c36a434b0b4a831bb7e6a834ba03739bb6d4ee2dded9b12b0e180933a",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/205",
+    "reasoning": "One serving contains three of six pan-cooked patties, with 200 g peeled raw floury potato allocated from the 400 g batch. Fineli Release 20 record 205 reports 15.5 g available CHO per 100 g of the weighed raw edible ingredient, so it contributes 31 g out of 38.11 g estimated CHO per serving. Flour binder and coating contribute another roughly 6.66 g. This estimate is the raw potato contribution before boiling, draining, mashing, short chilling and skillet cooking. Primary human trials of Leeman et al., Fernandes et al. and Tahvonen et al. show substantial preparation and variety effects: their simple potato dishes, cold/reheated cubes and casseroles do not match this mashed patty with flour and egg. No prepared GK or numerical category is proposed. The held file and current release gate stay active independently of the weighed component.",
+    "condition": {
+      "fi": "Punnitse peruna kuorittuna ennen keittämistä. Myös pihvimassasta ja pinnasta löytyvä vehnäjauho tuo annokseen hiilihydraatteja.",
+      "en": "Weigh the potato peeled before boiling. The wheat flour in the patties and on their surface also contributes carbohydrate.",
+      "sv": "Väg potatisen skalad före kokning. Vetemjölet i och utanpå biffarna bidrar också med kolhydrater.",
+      "th": "ปอกเปลือกมันฝรั่งแล้วชั่งก่อนต้ม แป้งสาลีทั้งที่ผสมในแผ่นและที่โรยเคลือบผิวก็ให้คาร์โบไฮเดรตเช่นกัน"
+    },
+    "piecesPerServing": 3,
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "4bb1cae1141b1df0b1fec5a988342ebb7f241e38ed3eb0a3b45d26e818db5a9e",
+      "labels": {
+        "fi": "Jauhoinen peruna (kuorittu raakapaino)",
+        "en": "Floury potato (peeled raw weight)",
+        "sv": "Mjölig potatis (rå vikt utan skal)",
+        "th": "มันฝรั่งเนื้อร่วน (น้ำหนักดิบหลังปอกเปลือก)"
+      },
+      "unit": "g",
+      "availableCarbsGPer100g": 15.5
+    }
+  },
+  "puolukkakiisseli": {
+    "recipeBindingSha256": "2e4f7ce5cdd18134e9c1301b17f7586a89ee069f815799d971dde35161258019",
+    "preparationSha256": "f03e886f3a1bf5d57d41f534dfb4bb350b671077e41824be6c3507ecaee426db",
+    "nutritionSha256": "68b1e6871c0f0f7db24e26954f9b7e49b3cd9c077964ec004e9add2b4dd9a2e6",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/1",
+    "reasoning": "One portion is one sixth of the entire cooked and potato-starch-thickened lingonberry dessert. Fineli 1 food-specific conversion 85 g/dL makes the recipe 1.75 dL sugar estimate 148.75 g for the batch or 24.7917 g sugar ingredient per serving. Its source composition is 99.9 g available carbohydrate per 100 g, contributing about 24.77 g per serving; the volume-based weight is approximate. The portion also has 50 g frozen lingonberries and potato starch, with 34.36 g whole available CHO. Törrönen et al. 2012 primary crossover compared 150 g lingonberry purée or its nectar with 35 g added sucrose, versus sucrose dissolved in water. The berry-sucrose result reports an altered time profile and does not test this much smaller berry proportion or cooked potato starch. A later trial also tested invert-sugar nectar rather than thickened kissel. Keep the exact volume-to-mass estimate as a short scope fact rather than an exact gram component or transferable GI/GK.",
+    "condition": {
+      "fi": "Jaa kiisseli kuuteen yhtä suureen annokseen. Ohjeen sokerimäärästä tulee noin 25 g hiilihydraattia annosta kohti. Myös puolukat ja perunajauho tuovat hiilihydraatteja.",
+      "en": "Divide the kissel into six equal servings. The sugar in the recipe provides about 25 g of carbohydrate per serving. The lingonberries and potato starch also contribute.",
+      "sv": "Dela krämen i sex lika stora portioner. Sockret i receptet ger cirka 25 g kolhydrater per portion. Lingonen och potatismjölet bidrar också.",
+      "th": "แบ่งขนมลิงกอนเบอร์รีข้นเป็นหกที่เท่า ๆ กัน น้ำตาลตามสูตรให้คาร์โบไฮเดรตประมาณ 25 กรัมต่อที่ ผลลิงกอนเบอร์รีและแป้งมันฝรั่งก็ให้คาร์โบไฮเดรตเช่นกัน"
     }
   }
 }

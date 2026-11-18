@@ -40,7 +40,7 @@ export const gkCopy = {
     modifiedA: "Arvio perustuu tämän version raaka-aineisiin ja määriin sekä käytettävissä oleviin lähdetietoihin.",
     modifiedB: "Tämän version arviossa käytettiin myös laskennallisia oletuksia.",
     missing: "GK-arviota ei voida laskea luotettavasti.",
-    missingBasis: "Yhden tai useamman raaka-aineen tietoja puuttuu tai laskennan perusteissa on epävarmuutta. Koko annoksen arviota ei voi julkaista luotettavasti.",
+    missingBasis: "Ainesosa- tai laskentatiedot eivät riitä luotettavaan koko annoksen GK-arvioon.",
     why: "Miksi arvio puuttuu?",
     pendingReviewGroup: "Näiden raaka-aineiden GK-arvioon tarvittavaa näyttöä ei ole vielä katselmoitu.",
     blockers: {
@@ -95,7 +95,7 @@ export const gkCopy = {
     modifiedA: "The estimate uses the ingredients and amounts in this version and the available source data.",
     modifiedB: "The estimate for this version also uses modeled assumptions.",
     missing: "A reliable glycemic load estimate is not available.",
-    missingBasis: "Some ingredient data or calculation inputs could not be verified, so there is no reliable estimate for the whole serving.",
+    missingBasis: "The ingredient or calculation data are insufficient for a reliable GL estimate for the whole serving.",
     why: "Why is the estimate missing?",
     pendingReviewGroup: "The evidence needed to estimate the glycemic load of these ingredients has not yet been reviewed.",
     blockers: {
@@ -150,7 +150,7 @@ export const gkCopy = {
     modifiedA: "Uppskattningen bygger på ingredienserna och mängderna i den här versionen samt tillgängliga källor.",
     modifiedB: "Uppskattningen för den här versionen bygger också på antaganden i en modell.",
     missing: "En tillförlitlig uppskattning av glykemisk belastning är inte tillgänglig.",
-    missingBasis: "Vissa ingrediensuppgifter eller delar av beräkningsunderlaget kunde inte verifieras, så en tillförlitlig uppskattning för hela portionen saknas.",
+    missingBasis: "Uppgifterna om ingredienserna eller beräkningsunderlaget räcker inte för en tillförlitlig GL-uppskattning för hela portionen.",
     why: "Varför saknas en uppskattning?",
     pendingReviewGroup: "Underlaget som behövs för att uppskatta dessa ingrediensers glykemiska belastning har ännu inte granskats.",
     blockers: {
@@ -205,7 +205,7 @@ export const gkCopy = {
     modifiedA: "ค่าประมาณนี้อิงจากวัตถุดิบ ปริมาณในสูตรที่ปรับแล้ว และแหล่งข้อมูลที่มี",
     modifiedB: "ค่าประมาณของสูตรที่ปรับแล้วใช้สมมติฐานของแบบจำลองด้วย",
     missing: "ยังไม่สามารถประมาณค่าภาระน้ำตาลได้อย่างน่าเชื่อถือ",
-    missingBasis: "ข้อมูลวัตถุดิบหรือข้อมูลที่ใช้คำนวณบางส่วนยังยืนยันไม่ได้ จึงยังไม่มีค่าประมาณที่เชื่อถือได้สำหรับอาหารหนึ่งที่",
+    missingBasis: "ข้อมูลวัตถุดิบหรือข้อมูลที่ใช้คำนวณยังไม่เพียงพอสำหรับประมาณค่า GL ของอาหารทั้งส่วนอย่างน่าเชื่อถือ",
     why: "ทำไมจึงยังไม่มีค่าประมาณ",
     pendingReviewGroup: "ยังไม่ได้ทบทวนหลักฐานที่จำเป็นต่อการประมาณค่าภาระน้ำตาลของวัตถุดิบเหล่านี้",
     blockers: {
