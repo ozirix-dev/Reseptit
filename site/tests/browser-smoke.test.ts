@@ -645,10 +645,17 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.match(await pepperAmount.innerText(), /0,125 kpl$/);
     assert.equal(await page.locator("[data-ingredient-carbohydrate], [data-portion-carbohydrate], [data-portion-gk]").count(), 0);
     await page.goto(base + routeFor("linssimakaronilaatikko"));
-    const macaroniCarbs = page.locator('[data-ingredient-carbohydrate="declared"] dd');
+    const macaroniIngredients = page.locator("[data-ingredient-portion]");
+    const macaroniCarbs = macaroniIngredients.filter({ hasText: "Myllyn Paras Makaroni" })
+      .locator('[data-ingredient-carbohydrate="declared"] dd');
+    const lentilCarbs = macaroniIngredients.filter({ hasText: "Coopin vihreitä linssejä kuivana" })
+      .locator('[data-ingredient-carbohydrate="declared"] dd');
     assert.match(await macaroniCarbs.innerText(), /24,9 g/);
+    assert.match(await lentilCarbs.innerText(), /10,8 g/);
     await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("0.5");
     assert.match(await macaroniCarbs.innerText(), /12,5 g/);
+    assert.match(await lentilCarbs.innerText(), /5,4 g/);
+    assert.equal(await page.locator("[data-portion-carbohydrate], [data-portion-gk]").count(), 0);
     await page.goto(base + routeFor("punajuuririsotto"));
     const riceVolume = page.locator("[data-ingredient-portion] dd");
     assert.match(await riceVolume.innerText(), /0,8 dl$/);
