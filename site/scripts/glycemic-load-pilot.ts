@@ -513,10 +513,23 @@ const portions = await Promise.all(originals.map(async recipe => {
     const record = foodRecords.find(record => record.id === verified?.fineliRecordId);
     const index = recipe.ingredients.findIndex(row => row.item === applyCopyEdits(knownCarbIngredient,
       reviewedRecipeCopy(recipe.recipeId, "fi")?.ingredientItem));
-    if (!verified || record?.sourceUrl !== review.source || index < 0) {
+    if (!verified || verified.grams === null || record?.sourceUrl !== review.source || index < 0) {
       throw new Error(`${recipe.recipeId}: named carbohydrate source must be reviewed against current evidence.`);
     }
-    projection.portion.driver = { ingredientIndex: index, coversMajority: false };
+    const partial = projection.portion.ingredientPortion;
+    if (partial && review.ingredientPortion?.index === index) {
+      const matchesWeight = partial.unit === "g"
+        && Math.abs(partial.amountPerServing * source.input.servings - verified.grams) < 1e-9;
+      const verifiedCarbs = verified.availableCarbohydratePerServingG;
+      const matchesCarbs = partial.availableCarbsGPerServing === undefined
+        || (partial.source === (review.publicSource ?? review.source) && verifiedCarbs !== null
+          && Math.abs(partial.availableCarbsGPerServing - verifiedCarbs) < 1e-9);
+      if (!matchesWeight || !matchesCarbs || partial.declaredCarbsGPerServing !== undefined || partial.carbohydrateAlternatives) {
+        throw new Error(`${recipe.recipeId}: partial carbohydrate amount must match the reviewed named source.`);
+      }
+    } else {
+      projection.portion.driver = { ingredientIndex: index, coversMajority: false };
+    }
   }
   return { recipe, projection };
 }));

@@ -115,30 +115,90 @@
   "bibimbap": {
     "recipeBindingSha256": "e6e7b8eaf2085a32d44382c7605296053ff5bb9768dd0664b005413a70b0af7c",
     "reviewedAt": "2026-11-18",
-    "reasoning": "The legacy source-bound analysis includes jasmiiniriisiä at 59.25 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "reasoning": "Dry jasmine rice input; generic dry long-grain white rice is a composition analogue. The projection covers one ingredient contribution per recipe serving.",
     "source": "https://fineli.fi/fineli/api/v1/foods/11521?c=2034&c2=2168",
-    "knownCarbIngredient": "jasmiiniriisiä"
+    "knownCarbIngredient": "jasmiiniriisiä",
+    "preparationSha256": "22e7055fdaa19aa59220ea4ab9a12c64b390851df28dfb3177b30e1741560567",
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "e1d3a4eeeec3d9eec33ecf173b6c0f1b7152c69435a453ba2229e17a5d607096",
+      "labels": {
+        "fi": "Jasmiiniriisi, kuivapaino",
+        "en": "Jasmine rice, dry weight",
+        "sv": "Jasminris, torrvikt",
+        "th": "ข้าวหอมมะลิ น้ำหนักก่อนหุง"
+      },
+      "unit": "g",
+      "source": "https://fineli.fi/fineli/api/v1/foods/11521?c=2034&c2=2168",
+      "availableCarbsGPer100g": 79
+    },
+    "condition": {
+      "fi": "Hiilihydraattiarvio perustuu tavallisen kuivan, pitkäjyväisen valkoisen riisin Fineli-arvoon.",
+      "en": "The carbohydrate estimate uses Fineli’s value for dry long-grain white rice.",
+      "sv": "Kolhydratmängden uppskattas med Finelis värde för torrt långkornigt vitt ris.",
+      "th": "ค่าคาร์โบไฮเดรตโดยประมาณอ้างอิงข้อมูลข้าวขาวเมล็ดยาวแบบแห้งจาก Fineli"
+    }
   },
   "goi-cuon": {
     "recipeBindingSha256": "962c3f641e57749057bf618aebb2e91ba73796d190ac0a212e039ff515c77170",
     "reviewedAt": "2026-11-18",
-    "reasoning": "The legacy source-bound analysis includes kuivattuja riisivermisellejä at 30.61 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "reasoning": "Dry rice vermicelli input; the rice paper is a separate ingredient. The projection covers one ingredient contribution per recipe serving.",
     "source": "https://fineli.fi/fineli/api/v1/foods/29055?c=2034&c2=2168",
-    "knownCarbIngredient": "kuivattuja riisivermisellejä"
+    "knownCarbIngredient": "kuivattuja riisivermisellejä",
+    "preparationSha256": "4e2657d6475cef6b725c6b1aee2c8fba58bf1843fe8e6615b3fc35cbd81197ee",
+    "ingredientPortion": {
+      "index": 2,
+      "ingredientSha256": "b0f0ba4e8d4ed81659bd133b8e82cfdc3262008d8e22cd57f7d7900577019b0a",
+      "labels": {
+        "fi": "Riisivermisellit, kuivapaino",
+        "en": "Rice vermicelli, dry weight",
+        "sv": "Risvermicelli, torrvikt",
+        "th": "เส้นหมี่ข้าว น้ำหนักแห้ง"
+      },
+      "unit": "g",
+      "source": "https://fineli.fi/fineli/api/v1/foods/29055?c=2034&c2=2168",
+      "availableCarbsGPer100g": 81.64
+    }
   },
   "pho-bo": {
     "recipeBindingSha256": "c751a99a19b279ac6f044b740c786b2170fbf06069c9bd165df10bd9e84056c6",
     "reviewedAt": "2026-11-18",
-    "reasoning": "The legacy source-bound analysis includes kuivattuja litteitä riisinuudeleita at 54.43 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "reasoning": "Dry flat rice-noodle input; stock and toppings are separate ingredients. The projection covers one ingredient contribution per recipe serving.",
     "source": "https://fineli.fi/fineli/api/v1/foods/29055",
-    "knownCarbIngredient": "kuivattuja litteitä riisinuudeleita"
+    "knownCarbIngredient": "kuivattuja litteitä riisinuudeleita",
+    "preparationSha256": "fe720dd5f65c359e217deb84ea98a844e0cabe92eb01e82086e0b19959d81aab",
+    "ingredientPortion": {
+      "index": 3,
+      "ingredientSha256": "1b291085a07a735562ceff3f9324c99570d059b4a532254a4fa2ecb2b0a90f30",
+      "labels": {
+        "fi": "Litteät riisinuudelit, kuivapaino",
+        "en": "Flat rice noodles, dry weight",
+        "sv": "Platta risnudlar, torrvikt",
+        "th": "เส้นก๋วยเตี๋ยวแบน น้ำหนักแห้ง"
+      },
+      "unit": "g",
+      "source": "https://fineli.fi/fineli/api/v1/foods/29055",
+      "availableCarbsGPer100g": 81.64
+    }
   },
   "hernekeitto-savupotkalla": {
     "recipeBindingSha256": "1fe85d58263088f6e9ba1b37b356a17e49145c4254f5e43c3cc8bc31ee7cc845",
     "reviewedAt": "2026-11-18",
-    "reasoning": "The legacy source-bound analysis includes kuivattuja herneitä at 33.96 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "reasoning": "Measured dry pea input only. The soaking water is discarded and retention is unverified. The projection covers one ingredient contribution per recipe serving.",
     "source": "https://fineli.fi/fineli/api/v1/foods/371",
-    "knownCarbIngredient": "kuivattuja herneitä"
+    "knownCarbIngredient": "kuivattuja herneitä",
+    "preparationSha256": "d72881476c53564cb8073cd430411b47b7aa29492bbac189873311931bca04cf",
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "2c9ab7316c7d56dd7b161727d9838d78fed75bedee112c08f9487fbc515a8700",
+      "labels": {
+        "fi": "Kuivat herneet ennen liotusta",
+        "en": "Dried peas before soaking",
+        "sv": "Torkade ärter före blötläggning",
+        "th": "ถั่วลันเตาแห้งก่อนแช่น้ำ"
+      },
+      "unit": "g"
+    }
   },
   "lanzhou-naudanliha-nuudelikeitto": {
     "recipeBindingSha256": "10ab2672f8d5ee25a325b152f7f71c23f6f94edbb859280501aeacd36cf92a6a",
@@ -150,9 +210,23 @@
   "roujiamo": {
     "recipeBindingSha256": "01a189b5f94981ee6e4e38806e1cff826fe5b6926a0babaaaaf2856f194683d7",
     "reviewedAt": "2026-11-18",
-    "reasoning": "The legacy source-bound analysis includes vehnäjauhoja at 55.50 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "reasoning": "Wheat flour input to one bun; the semi-coarse wheat flour record gives the composition estimate. The projection covers one ingredient contribution per recipe serving.",
     "source": "https://fineli.fi/fineli/api/v1/foods/110",
-    "knownCarbIngredient": "vehnäjauhoja"
+    "knownCarbIngredient": "vehnäjauhoja",
+    "preparationSha256": "ba68bb4046a3a3ebd24db4c8889e3f39e8e67dd205cc4c23a7981fd3723ff04f",
+    "ingredientPortion": {
+      "index": 8,
+      "ingredientSha256": "a15a1e4596a347453bd959482e5751d6b78039fc1d183afa2303bf97bff513a7",
+      "labels": {
+        "fi": "Sämpylän vehnäjauhot",
+        "en": "Wheat flour in the bun",
+        "sv": "Vetemjöl i brödet",
+        "th": "แป้งสาลีในขนมปัง"
+      },
+      "unit": "g",
+      "source": "https://fineli.fi/fineli/api/v1/foods/110",
+      "availableCarbsGPer100g": 73.998
+    }
   },
   "masala-dosa": {
     "recipeBindingSha256": "89524ae09e1a2eb7aa4805a9a68b9c1a946ccdfd847d44e5994f1c702c29c876",
@@ -172,16 +246,50 @@
   "japanilainen-natto-riisikulho": {
     "recipeBindingSha256": "c4752a610195954481f743e8cade1ae052e5c8e643b36471a8254a7c92960254",
     "reviewedAt": "2026-11-18",
-    "reasoning": "The legacy source-bound analysis includes riisi at 39.50 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "reasoning": "Step 1 specifies dry white jasmine rice; generic dry long-grain white rice is a composition analogue. The projection covers one ingredient contribution per recipe serving.",
     "source": "https://fineli.fi/fineli/api/v1/foods/11521",
-    "knownCarbIngredient": "riisi"
+    "knownCarbIngredient": "riisi",
+    "preparationSha256": "39809c02bf762caa20e1af961b6153c6c704ebec9cdd1e49c347722b504faef9",
+    "ingredientPortion": {
+      "index": 1,
+      "ingredientSha256": "fe01481a2dce53ef6cbe63c86405afce7c19e566b7dad177bcff7732d9ddc357",
+      "labels": {
+        "fi": "Jasmiiniriisi, kuivapaino",
+        "en": "Jasmine rice, dry weight",
+        "sv": "Jasminris, torrvikt",
+        "th": "ข้าวหอมมะลิ น้ำหนักก่อนหุง"
+      },
+      "unit": "g",
+      "source": "https://fineli.fi/fineli/api/v1/foods/11521",
+      "availableCarbsGPer100g": 79
+    },
+    "condition": {
+      "fi": "Hiilihydraattiarvio perustuu tavallisen kuivan, pitkäjyväisen valkoisen riisin Fineli-arvoon.",
+      "en": "The carbohydrate estimate uses Fineli’s value for dry long-grain white rice.",
+      "sv": "Kolhydratmängden uppskattas med Finelis värde för torrt långkornigt vitt ris.",
+      "th": "ค่าคาร์โบไฮเดรตโดยประมาณอ้างอิงข้อมูลข้าวขาวเมล็ดยาวแบบแห้งจาก Fineli"
+    }
   },
   "mapo-tofu": {
     "recipeBindingSha256": "274445d43d46987ab7ee181e1b00161fc33faf52cebd129a69ba5f731d073c27",
     "reviewedAt": "2026-11-18",
-    "reasoning": "The legacy source-bound analysis includes kypsää pitkäjyväistä riisiä at 35.34 g modeled available carbohydrate per serving. This is a major identified food source, not a complete whole-portion sum or a GI match.",
+    "reasoning": "Plain cooked long-grain rice served alongside the tofu. The projection covers one ingredient contribution per recipe serving.",
     "source": "https://fineli.fi/fineli/api/v1/foods/30346",
-    "knownCarbIngredient": "kypsää pitkäjyväistä riisiä"
+    "knownCarbIngredient": "kypsää pitkäjyväistä riisiä",
+    "preparationSha256": "8c1084f4b0a3ceb4fb7b5b1d196d4461a0d8c19cb8c442f4e6925e58f83a6735",
+    "ingredientPortion": {
+      "index": 12,
+      "ingredientSha256": "f9cf4254836ced287ab4ec0312e931080377815cb865ded61adce0da1311aae2",
+      "labels": {
+        "fi": "Pitkäjyväinen riisi, kypsäpaino",
+        "en": "Long-grain rice, cooked weight",
+        "sv": "Långkornigt ris, kokt vikt",
+        "th": "ข้าวเมล็ดยาว น้ำหนักหลังหุง"
+      },
+      "unit": "g",
+      "source": "https://fineli.fi/fineli/api/v1/foods/30346",
+      "availableCarbsGPer100g": 23.561
+    }
   },
   "fetavaahto-kasvistikuilla": {
     "recipeBindingSha256": "a28e734689a2d40cd613dab84a7ed17233b07f94fa5473c559a9b1bf05299df5",
@@ -277,7 +385,21 @@
     "knownCarbIngredient": "punaisia linssejä",
     "source": "https://fineli.fi/fineli/api/v1/foods/31219?c=2034&c2=2168",
     "reviewedAt": "2026-11-18",
-    "reasoning": "The 200 g red lentils are measured dry and cooked in the sambar consumed with the idlis. The note is robust to either recipe-listed rice alternative. Do not transfer any separate GI value to the lentil or idli."
+    "reasoning": "Red lentils as a dry input to the sambar; estimate uses recorded available carbohydrate. The projection covers one ingredient contribution per recipe serving.",
+    "preparationSha256": "7bba72a4a97e5ab7f53871c1cf68cd59d27dbfc2de4e850708601438e6280970",
+    "ingredientPortion": {
+      "index": 3,
+      "ingredientSha256": "5b70f7fcf3b8c63c31e09f97097b4aad94dbfc7f205045c56d5577cc3d30a440",
+      "labels": {
+        "fi": "Sambarin punaiset linssit, kuivapaino",
+        "en": "Red lentils in the sambar, dry weight",
+        "sv": "Röda linser i sambarn, torrvikt",
+        "th": "ถั่วเลนทิลแดงในซัมบาร์ น้ำหนักแห้ง"
+      },
+      "unit": "g",
+      "source": "https://fineli.fi/fineli/api/v1/foods/31219?c=2034&c2=2168",
+      "availableCarbsGPer100g": 45.8
+    }
   },
   "japanilainen-curry-tofulla": {
     "recipeBindingSha256": "fb3442e0e6601a2a0c29768b5e52337356f1525b5a28cd687907821d84c303a3",
@@ -291,7 +413,21 @@
     "knownCarbIngredient": "lanttua",
     "source": "https://fineli.fi/fineli/api/v1/foods/303",
     "reviewedAt": "2026-11-18",
-    "reasoning": "Recipe uses measured 200 g raw rutabaga. Fineli raw rutabaga maps directly to the diced vegetable. No claim about sausage or whole serving total."
+    "reasoning": "Raw rutabaga and its input composition before boiling and draining. The projection covers one ingredient contribution per recipe serving.",
+    "preparationSha256": "4a60610e96e240844b7fd1a52e7db7ae4f292983f6fd32a6e78b8fde77180897",
+    "ingredientPortion": {
+      "index": 2,
+      "ingredientSha256": "c85647d6a30942f074c4d59cbd41153d411ca3f5b46a7622a4497d41283d5966",
+      "labels": {
+        "fi": "Lanttu ennen keittämistä",
+        "en": "Rutabaga before boiling",
+        "sv": "Kålrot före kokning",
+        "th": "หัวรูตาบากาก่อนต้ม"
+      },
+      "unit": "g",
+      "source": "https://fineli.fi/fineli/api/v1/foods/303",
+      "availableCarbsGPer100g": 5.88
+    }
   },
   "linssimakaronilaatikko": {
     "recipeBindingSha256": "a6a5ce87f65fcbc1667b1f6ff2297aaa81a2c864d6261a96334f215108ec8079",

@@ -579,7 +579,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       ["malesialainen-nasi-lemak-aamiaisella", ".recipe-portion", "basmati- ja jasmiiniriisin"],
       ["linssimakaronilaatikko", ".recipe-portion", "Myllyn Paras Makaroni"],
       ["kebab-munakasrulla", '.recipe-portion', "Vehnäjauho"],
-      ["mapo-tofu", ".recipe-portion", "kypsää pitkäjyväistä riisiä"],
+      ["mapo-tofu", "[data-ingredient-portion]", "Pitkäjyväinen riisi, kypsäpaino"],
       ["vhh-kaalikaarryleet", '.recipe-glycemic-load__class', "kasvisryhmän keskiarvo"],
     ]) {
       const recipe = siteContent.recipes.find(recipe => recipe.locale === "fi" && recipe.recipeId === id)!;
@@ -593,6 +593,21 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
         await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
         assert.equal(await page.getByText(portionCopy.fi.class.LOW, { exact: true }).count(), 0);
         assert.equal(await page.getByText(portionCopy.fi.baseOnly, { exact: true }).count(), 1);
+      }
+    }
+    for (const [id, values] of [
+      ["timjami-uunijuurekset", ["12,5", "25,1", "37,6", "50,1"]],
+      ["palsternakkasosekeitto", ["15,3", "30,6", "45,9", "61,2"]],
+    ] as const) {
+      await page.goto(base + routeFor(id));
+      const serving = page.getByLabel(portionCopy.fi.title, { exact: true });
+      const scope = page.locator('.recipe-portion .recipe-disclosure').first();
+      const baseScope = await scope.innerText();
+      for (const [index, multiplier] of ["0.5", "1", "1.5", "2"].entries()) {
+        await serving.selectOption(multiplier);
+        assert.match(await page.locator('[data-portion-carbohydrate="available"]').innerText(), new RegExp(`${values[index]} g$`));
+        assert.equal(await scope.innerText(), baseScope);
+        assert.equal(await page.locator("[data-portion-gk], [data-original-gk-class]").count(), 0);
       }
     }
     await page.goto(`${base}/`);

@@ -196,6 +196,13 @@ export function IngredientPortionDetails({ ingredient, locale, multiplier = 1 }:
   </dl>;
 }
 
+export function ingredientPortionLinksTo(ingredient: IngredientPortion | undefined, source: string) {
+  if (!ingredient) return false;
+  return (ingredient.source === source
+      && (ingredient.availableCarbsGPerServing !== undefined || ingredient.declaredCarbsGPerServing !== undefined))
+    || ingredient.carbohydrateAlternatives?.some(choice => choice.source === source) === true;
+}
+
 export function GkAlternatives({ choices, locale, multiplier = 1, separateVersion = false }: {
   choices: NamedGkAlternative[];
   locale: RecipeLocale;
@@ -279,7 +286,7 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batc
       ? <p className="recipe-disclosure">{evidence?.condition?.[locale] ?? t.scope}</p> : null}
     {evidence?.reviewedSource && !evidence.verbal && (evidence.condition || evidence.carbohydrateScope || evidence.classLimitation || ingredient || evidence.ingredientPortion)
       && !carbs?.choices?.some(choice => choice.source === evidence.reviewedSource)
-      && !evidence.ingredientPortion?.carbohydrateAlternatives?.some(choice => choice.source === evidence.reviewedSource) ? <p className="recipe-disclosure">
+      && !ingredientPortionLinksTo(evidence.ingredientPortion, evidence.reviewedSource) ? <p className="recipe-disclosure">
       <ReviewedPortionSource source={evidence.reviewedSource} locale={locale} />
     </p> : null}
   </div>;
