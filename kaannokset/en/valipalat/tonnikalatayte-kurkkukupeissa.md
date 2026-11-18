@@ -69,4 +69,4 @@ Weigh the ingredients as listed before you start.
 
 One 200/150 g can is enough if its drained weight is 150 g. This recipe contains fish, celery and egg from the mayonnaise. Check the mayonnaise packaging for any other allergens. Refrigerate leftovers immediately and use them within 24 hours. The nutrition estimate uses average food composition values.
 
-**GL has not been determined.** The illustration was made to show the recipe.
+**No numerical GL has been determined.** The illustration was made to show the recipe.

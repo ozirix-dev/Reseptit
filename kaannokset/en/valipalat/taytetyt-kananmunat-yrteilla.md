@@ -62,4 +62,4 @@ Use six medium eggs and weigh the other filling ingredients.
 
 Contains egg and mustard. Check the mayonnaise and mustard labels for allergens. Refrigerate leftovers immediately and eat them within two days. The nutrition estimate assumes a total weight of 330 g for the six cooked, peeled eggs. The actual weight varies. Use all six eggs. The other nutrition values use average products from Fineli.
 
-**GL: undetermined.** This illustration was created from the recipe.
+**No numerical GL has been determined.** This illustration was created from the recipe.

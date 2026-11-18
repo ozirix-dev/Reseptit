@@ -69,4 +69,4 @@ Weigh the feta after draining and the vegetables after trimming.
 
 **Contains milk.** The nutrition estimates use drained goat’s milk feta with 25% fat and plain Greek yogurt with 7% fat. Nutrition values may vary by product.
 
-**GL: undetermined.** This illustration was created from the recipe.
+**No numerical GL has been determined.** This illustration was created from the recipe.

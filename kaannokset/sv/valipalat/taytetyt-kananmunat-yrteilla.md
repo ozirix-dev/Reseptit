@@ -62,4 +62,4 @@ Använd sex medelstora ägg och väg de övriga ingredienserna till fyllningen.
 
 Receptet innehåller ägg och senap. Kontrollera allergenerna på majonnäsens och senapens förpackningar. Ställ resterna i kylskåp direkt och ät dem inom två dygn. Näringsberäkningen utgår från att sex kokta och skalade ägg väger sammanlagt 330 g. Den faktiska vikten varierar. Använd alla sex ägg. Övriga näringsvärden bygger på genomsnittsprodukter i Fineli.
 
-**GL: ej fastställd.** Bilden är en illustration gjord utifrån receptet.
+**Inget numeriskt GL-värde har fastställts.** Bilden är en illustration gjord utifrån receptet.

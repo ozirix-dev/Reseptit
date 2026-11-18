@@ -69,4 +69,4 @@ Väg fetan efter avrinning och grönsakerna när de har ansats.
 
 **Innehåller mjölk.** Näringsvärdena är beräknade med avrunnen fetaost av getmjölk med 25 % fett och naturell grekisk yoghurt med 7 % fett. Näringsvärdena kan variera mellan olika produkter.
 
-**GL: ej fastställd.** Bilden är en illustration gjord utifrån receptet.
+**Inget numeriskt GL-värde har fastställts.** Bilden är en illustration gjord utifrån receptet.

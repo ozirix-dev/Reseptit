@@ -18,3 +18,6 @@ Käännöksiä verrattiin FI-lähteisiin ainesosittain ja työvaiheittain.
 Tarkistuksessa säilytettiin allergeenit, tarjoilu- ja säilytysohjeet,
 annosjako, lähdeviitteet, ravintoarvot ja puuttuvien GK-arvioiden rajat.
 Kanonisten FI-tiedostojen tiivisteet säilytetään julkaisuindeksillä.
+
+Kolmen välipalan käännöksissä muistiinpano rajaa puuttuvan arvioinnin
+numeeriseen GK-lukuun. Hyväksytty sanallinen GK-arvio näkyy annoskortissa.

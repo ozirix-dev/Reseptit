@@ -69,4 +69,4 @@ Väg ingredienserna enligt ingredienslistan innan du börjar.
 
 En burk på 200/150 g räcker om avrunnen vikt är 150 g. Receptet innehåller fisk, selleri och ägg från majonnäsen. Kontrollera majonnäsförpackningen för andra allergener. Ställ genast in resterna i kylskåpet och använd dem inom ett dygn. Näringsuppskattningen bygger på livsmedlens genomsnittliga sammansättning.
 
-**GK har inte fastställts.** Illustrationen visar rätten enligt receptet.
+**Inget numeriskt GL-värde har fastställts.** Illustrationen visar rätten enligt receptet.
