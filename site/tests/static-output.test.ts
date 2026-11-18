@@ -859,6 +859,7 @@ test("recipe actions progressively enhance readable static pages in all four lan
     assert.ok(root.indexOf('<h1>') < root.indexOf('class="recipe-image"'));
     assert.ok(root.includes(toolUi[recipe.locale].jump));
     assert.ok(root.includes(toolUi[recipe.locale].nutrition));
+    assert.ok(root.includes(`<summary>${toolUi[recipe.locale].nutritionPerRecipeServing}</summary>`), recipe.routePath);
     assert.ok(root.includes(toolUi[recipe.locale].about));
     assert.ok(root.includes('id="recipe-instructions"'));
     assert.doesNotMatch(root, /<button|type="checkbox"/);

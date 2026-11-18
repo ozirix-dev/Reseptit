@@ -362,11 +362,18 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.equal(await perPortion.innerText(), originalValue, "changing the batch leaves the eaten portion alone");
     assert.match(await page.locator(".recipe-portion").innerText(), /1\/5.*erästä/);
     const eatenPortion = page.getByLabel(portionCopy.fi.title, { exact: true });
+    const nutritionDetails = page.locator("details").filter({ has: page.getByText(toolUi.fi.nutritionPerRecipeServing, { exact: true }) });
+    await nutritionDetails.locator("summary").click();
+    const recipeServingNutrition = await nutritionDetails.locator("dl").innerText();
+    const selectedPortionCarbs = page.locator("[data-portion-carbohydrate]");
+    const originalPortionCarbs = await selectedPortionCarbs.innerText();
     await page.keyboard.press("Tab");
     await eatenPortion.focus();
     assert.equal(await eatenPortion.evaluate(element => element.matches(":focus-visible")), true);
     await eatenPortion.selectOption("1.5");
     assert.notEqual(await perPortion.innerText(), originalValue);
+    assert.notEqual(await selectedPortionCarbs.innerText(), originalPortionCarbs);
+    assert.equal(await nutritionDetails.locator("dl").innerText(), recipeServingNutrition);
     await eatenPortion.selectOption("1");
     assert.equal(await perPortion.innerText(), originalValue);
     const methodLink = page.locator(".recipe-glycemic-load__caption a");
