@@ -655,6 +655,13 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
     assert.match(await riceVolume.innerText(), /1,6 dl$/);
     assert.equal(await page.locator("[data-ingredient-carbohydrate], [data-portion-carbohydrate], [data-portion-gk]").count(), 0);
+    await page.goto(base + routeFor("marokkolainen-couscous"));
+    const couscousWeight = page.locator("[data-ingredient-portion] dd");
+    assert.match(await couscousWeight.innerText(), /62,5 g$/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await couscousWeight.innerText(), /93,8 g$/);
+    assert.equal(await page.locator("[data-ingredient-carbohydrate], [data-portion-carbohydrate]").count(), 0);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 1);
     await page.goto(`${base}/`);
     const searchbox = page.getByRole("searchbox", { name: "Hae reseptejä" });
     await searchbox.focus();

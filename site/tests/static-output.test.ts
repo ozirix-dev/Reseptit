@@ -668,6 +668,42 @@ test("weighed or measured ingredient portions remain separate from whole-serving
   }
 });
 
+test("modeled GL with withheld whole-serving carbohydrates shows the scaled ingredient and its evidence limit", async () => {
+  const cases = {
+    "janssoninkiusaus-juuriselleri": 175, "marokkolainen-couscous": 62.5,
+    "paprikainen-vhh-gulassi": 75, "pasta-alla-norma": 87.5, "sitruuna-yrttikana-parsa": 100,
+  };
+  for (const [id, amount] of Object.entries(cases)) {
+    const evidence: PortionEvidence | undefined = glycemicLoadPortions[id];
+    assert.equal(evidence?.ingredientPortion?.amountPerServing, amount, id);
+    assert.equal(evidence?.ingredientPortion?.availableCarbsGPerServing, undefined, id);
+    assert.equal(evidence?.ingredientPortion?.declaredCarbsGPerServing, undefined, id);
+    assert.equal(evidence?.availableCarbs, undefined, id);
+    const locales = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.equal(locales.length, 4, id);
+    for (const { locale, routePath, nutrition } of locales) {
+      const [recipe, guide] = await Promise.all([
+        readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8"),
+        readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8"),
+      ]);
+      assert.ok(Object.values(nutrition).every(value => value === null), routePath);
+      assert.match(recipe, /data-gk-status="CALCULATED"/, routePath);
+      assert.match(recipe, /data-portion-gk=/, routePath);
+      const start = guide.indexOf(`id="${id}" class="glycemic-pilot__recipe"`);
+      assert.ok(start >= 0, routePath);
+      const row = guide.slice(start, guide.indexOf("<li ", start + 1));
+      const condition: string | undefined = evidence?.condition?.[locale];
+      assert.ok(condition, routePath);
+      const scope = renderToStaticMarkup(createElement("span", null, condition)).slice(6, -7);
+      for (const html of [recipe, row]) {
+        assert.match(html, /data-ingredient-portion="true"/, routePath);
+        assert.ok(html.includes(scope), routePath);
+        assert.doesNotMatch(html, /data-portion-carbohydrate=|data-ingredient-carbohydrate=/, routePath);
+      }
+    }
+  }
+});
+
 test("whole-portion comparisons link to the exact other recipe in each shared language", async () => {
   for (const [[left, leftAmount], [right, rightAmount]] of [
     [["paahtopaistileivat-kauralesesampyloilla", 4.57], ["paahtopaistileipa-piparjuurikastikkeella", 22.70]],

@@ -5584,5 +5584,130 @@
       "sv": "Kontrollera kolhydratmängden på förpackningarna till mandelmjölet och chokladen.",
       "th": "ตรวจปริมาณคาร์โบไฮเดรตบนฉลากแป้งอัลมอนด์และช็อกโกแลตที่ใช้"
     }
+  },
+  "janssoninkiusaus-juuriselleri": {
+    "recipeBindingSha256": "67cdcf71b2300a81894f598742d0ab359b4247c1d5c536024495904f4ed4559e",
+    "preparationSha256": "50559a4d1e16e3aee5b762fcb7825bc3d03addfce3d69c923cbf1fb66ee491cc",
+    "nutritionSha256": "b5c13beee264a8e984ae77201e28ce5f69a36221d65cb37bce61f06862a078c7",
+    "source": "https://fdc.nal.usda.gov/food-details/174183/nutrients",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The original lists 700 g of juuriselleriä for four portions. Amount-only display. USDA174183125g drained oil-canned anchovy has totalCHO0 and fibre0 but no separately reported polyol value. Do not turn missing polyols into0 or replace the fish with sweetened Nordic ansjovis. Pepper also lacks complete source composition. Published separate modeled GK is retained and its evidence hash is a6cddd40db241b6e31344ddb39a4e8e71b4936b1733c114d4701168717d33ab3.",
+    "condition": {
+      "fi": "Juuriselleri antaa laskelman suurimman GK-osuuden. Ohjeessa käytetään öljyyn säilöttyjä, valutettuja anjovisfileitä. Niille ei lasketa GK-osuutta. Koko annoksen hiilihydraattiluku odottaa tietoa anjovisfileiden polyoleista ja pippurin koostumuksesta.",
+      "en": "Celeriac contributes most to the modeled GL. The recipe uses drained anchovy fillets in oil. The model leaves out their GL contribution. The whole-serving carbohydrate figure awaits data on anchovy polyols and pepper composition.",
+      "sv": "Rotsellerin står för det största beräknade GL-bidraget. Receptet använder avrunna sardellfiléer i olja. Modellen räknar inte med något GL-bidrag från dem. Kolhydratvärdet för hela portionen kräver uppgifter om sardellfiléernas polyoler och pepparns sammansättning.",
+      "th": "เซเลอรีแอคมีส่วนต่อค่า GL ที่คำนวณมากที่สุด สูตรใช้เนื้อปลาแอนโชวีแช่น้ำมันที่สะเด็ดน้ำมันแล้ว แบบจำลองไม่รวมค่า GL จากปลาส่วนนี้ ปริมาณคาร์โบไฮเดรตของทั้งที่ยังต้องอาศัยข้อมูลโพลิออลในปลาและองค์ประกอบของพริกไทย"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "unit": "g",
+      "ingredientSha256": "2c4481a3d83f294193c7b4d1a633d1a8625abc598d5f53afe9ae6b743315353d",
+      "labels": {
+        "fi": "Kuorittu juuriselleri ennen paistoa",
+        "en": "Peeled celeriac before baking",
+        "sv": "Skalad rotselleri före gräddning",
+        "th": "เซเลอรีแอคปอกเปลือกก่อนอบ"
+      }
+    }
+  },
+  "marokkolainen-couscous": {
+    "recipeBindingSha256": "beefd8c5c6a8e5e129a1c66a3c9e2394aed4511224a74a0abd11ffb04df760e9",
+    "preparationSha256": "c690b2c908809ac2721555d3384dac0cb760366ac3ac32072aad3a101b7bd541",
+    "nutritionSha256": "13c354cd22007a435db10131603d64de98c9fbe60fbc323f09e339cf23d2cb06",
+    "source": "https://sanremo.com.au/products/couscous/",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The original lists 250 g of San Remo CousCous -durumcouscousia, kuivana for four portions. Amount-only display. San Remo dry product label defines available carbohydrate72g/100g, fibre3, protein12.5, fat2, but does not quantify polyols. Existing strict model therefore cannot verify net/total carbohydrate or a complete four-macro package. Do not import Fineli polyols0 or publish partial macros. All four outputs withheld; GK uses separately supported available carbohydrate. Published separate modeled GK is retained and its evidence hash is b1a159db25cb8be53cc3904e049f65eac950051c36da16a0338d0de6a37f06d1.",
+    "condition": {
+      "fi": "Kuskus antaa laskelman suurimman GK-osuuden. Mukana ovat myös juuri keitetyt, valutetut kikherneet. Kuskuksen pakkaus ei erittele polyoleja, joten koko annoksen hiilihydraattiluku jää avoimeksi.",
+      "en": "Couscous contributes most to the modeled GL. The estimate also includes freshly cooked, drained chickpeas. The couscous label does not list polyols separately, so the whole-serving carbohydrate figure remains unavailable.",
+      "sv": "Couscousen står för det största beräknade GL-bidraget. Nykokta, avrunna kikärter ingår också. Förpackningen anger inte polyoler separat, så kolhydratvärdet för hela portionen är fortfarande öppet.",
+      "th": "คูสคูสมีส่วนต่อค่า GL ที่คำนวณมากที่สุด ค่าประมาณรวมถั่วชิกพีต้มใหม่ที่สะเด็ดน้ำแล้วด้วย ฉลากคูสคูสไม่ได้แยกปริมาณโพลิออล จึงยังไม่มีค่าคาร์โบไฮเดรตของทั้งที่"
+    },
+    "ingredientPortion": {
+      "index": 1,
+      "unit": "g",
+      "ingredientSha256": "51f9d1ef48a23bd2e0e08a4ddca6854b4168a9d9494e092600b1a0cffed12c46",
+      "labels": {
+        "fi": "San Remo -durumkuskus kuivana",
+        "en": "San Remo durum couscous, dry weight",
+        "sv": "San Remo durumcouscous, torrvikt",
+        "th": "คูสคูสดูรัม San Remo น้ำหนักแห้ง"
+      }
+    }
+  },
+  "paprikainen-vhh-gulassi": {
+    "recipeBindingSha256": "25cffd0eb8a44dcb8ac45e598cbb5b9fd08b4a3c4ab821102532ec05f5d3a89b",
+    "preparationSha256": "cf078a9c1e788742b08d837c356ac0ca9cbd31c1934199d49d09a5ae03958a0d",
+    "nutritionSha256": "ceb44a4abb457f30aee9a8c9051b13fadbc618ae7addc27a2420a43577ba2f2d",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/630",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The original lists 300 g of lihalientä for four portions. Amount-only display. Fineli630 smetana150g has no reported total polyols; Fineli11182 paprika9g also lacks polyols. Neither can be hidden as an insignificant whole-ingredient omission. Butter21g is now explicit, but does not resolve these source gaps. Published separate modeled GK is retained and its evidence hash is b4468675ed9df700b809481b16f682aff61d14bd98a740dcf9aa8eff165c9d22.",
+    "condition": {
+      "fi": "Tarkista käyttämäsi lihaliemen hiilihydraatit pakkauksesta, sillä tuotteet vaihtelevat. Koko annoksen hiilihydraattiluku odottaa tietoa smetanan ja paprikajauheen polyoleista.",
+      "en": "Check the carbohydrate content on the broth you use, as products vary. The whole-serving carbohydrate figure awaits polyol data for smetana and ground paprika.",
+      "sv": "Kontrollera kolhydratmängden i buljongen du använder, eftersom produkter varierar. Kolhydratvärdet för hela portionen kräver uppgifter om polyoler i smetana och paprikapulver.",
+      "th": "ตรวจปริมาณคาร์โบไฮเดรตบนฉลากน้ำซุปที่ใช้ เพราะแต่ละผลิตภัณฑ์อาจต่างกัน ปริมาณคาร์โบไฮเดรตของทั้งที่ยังต้องอาศัยข้อมูลโพลิออลในสเมตานาและผงปาปริกา"
+    },
+    "ingredientPortion": {
+      "index": 9,
+      "unit": "g",
+      "ingredientSha256": "9a7b76c241402d287a80ef128d356ad7ed03f00a4f9a016bdd446b3597f2e5b3",
+      "labels": {
+        "fi": "Käyttövalmis lihaliemi",
+        "en": "Ready-to-use meat broth",
+        "sv": "Färdigblandad köttbuljong",
+        "th": "น้ำซุปเนื้อพร้อมใช้"
+      }
+    }
+  },
+  "pasta-alla-norma": {
+    "recipeBindingSha256": "50ee093a7d92b8070064e11ac5ec54adf5af3f7ecffa2cb21ad1588171bb5ecf",
+    "preparationSha256": "75d1f42e3aa4f043a8418a04045028e43cd1da908312cbdb033cf507e98f3cc5",
+    "nutritionSha256": "fff218d7fabef1a8d3fa2d37eb6038e0942a938702bf4675fcba65671be1daa1",
+    "source": "https://www.auricchio.it/marchi-e-prodotti/riserva-esclusiva/pecorino-romano-dop",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The original lists 350 g of De Cecco Penne Mezzane Lisce n.140 -pastaa, kuivana for four portions. Amount-only display. Named Pecorino label reports carbohydrate<0.5 and fibre0 but no polyol measurement; threshold label is not a point. Cheese contributes4g fat and3g protein per serving so whole-cheese omission is impermissible. Withhold all four macros, retain source values and small GK carbohydrate ceiling. Published separate modeled GK is retained and its evidence hash is e683245a729a08dc23d40a0161cc1d076c1a429d0c0a44234fcedfd2421c61e4.",
+    "condition": {
+      "fi": "Pasta antaa laskelman suurimman GK-osuuden. Juuston pakkausarvo kertoo hiilihydraatin ylärajan. Koko annoksen hiilihydraattilaskelma odottaa tarkempaa koostumustietoa.",
+      "en": "Pasta contributes most to the modeled GL. The cheese label gives an upper limit for carbohydrate. The whole-serving carbohydrate calculation awaits more complete composition data.",
+      "sv": "Pastan står för det största beräknade GL-bidraget. Ostens etikett anger en övre gräns för kolhydrater. Beräkningen för hela portionen kräver mer fullständiga uppgifter om sammansättningen.",
+      "th": "พาสต้ามีส่วนต่อค่า GL ที่คำนวณมากที่สุด ฉลากชีสระบุขีดจำกัดบนของปริมาณคาร์โบไฮเดรต การคำนวณคาร์โบไฮเดรตของทั้งที่ยังต้องอาศัยข้อมูลองค์ประกอบที่ครบถ้วนขึ้น"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "unit": "g",
+      "ingredientSha256": "218c7754720b837f0164b40bc0f7f774f3f70bba0b087d985025674d24f86fdc",
+      "labels": {
+        "fi": "De Cecco Penne Mezzane Lisce n.140 kuivana",
+        "en": "De Cecco Penne Mezzane Lisce No. 140, dry weight",
+        "sv": "De Cecco Penne Mezzane Lisce nr 140, torrvikt",
+        "th": "พาสต้า De Cecco Penne Mezzane Lisce เบอร์ 140 น้ำหนักแห้ง"
+      }
+    }
+  },
+  "sitruuna-yrttikana-parsa": {
+    "recipeBindingSha256": "3ec7b01c01a8354b75114175edd57e6456c52d5448568c5754858b2d0d142f86",
+    "preparationSha256": "33bc99e8100278cdf4831d0e140949fe7179c51701337262db43af4c7020de0e",
+    "nutritionSha256": "499c2476163976e259236edd2b63d9ba955434c083a0f0e3d413e604abdd9d45",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11689",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The original lists 400 g of vihreää parsaa for four portions. Amount-only display. Known weighed thyme2g, garlic powder3.1g, pepper0.5g and zest2g still have unknown source polyols and/or complete macro composition. Conservative same-source total-CHO caps sum1.043295g/serving, exceeding the existing1g macro omission limit; no P0 or changed quantities. Published separate modeled GK is retained and its evidence hash is b05880c3be7e8db3eb98bfb81980c6f847588477744e4e7ce85186052ddf1483.",
+    "condition": {
+      "fi": "Parsa antaa laskelman suurimman GK-osuuden. Koko annoksen hiilihydraattiluku odottaa tarkempaa tietoa timjamista, valkosipulijauheesta, mustapippurista ja sitruunankuoresta.",
+      "en": "Asparagus contributes most to the modeled GL. The whole-serving carbohydrate figure awaits more complete data on thyme, garlic powder, black pepper and lemon zest.",
+      "sv": "Sparrisen står för det största beräknade GL-bidraget. Kolhydratvärdet för hela portionen kräver mer fullständiga uppgifter om timjan, vitlökspulver, svartpeppar och citronskal.",
+      "th": "หน่อไม้ฝรั่งมีส่วนต่อค่า GL ที่คำนวณมากที่สุด ปริมาณคาร์โบไฮเดรตของทั้งที่ยังต้องอาศัยข้อมูลที่ครบถ้วนขึ้นของไทม์ ผงกระเทียม พริกไทยดำ และผิวเลมอน"
+    },
+    "ingredientPortion": {
+      "index": 1,
+      "unit": "g",
+      "ingredientSha256": "2f6dbf6c50c67d0da21e137425aabbbd0eb54313d1a8c65bf4751fb8df8b21ae",
+      "labels": {
+        "fi": "Siistitty vihreä parsa ennen paistoa",
+        "en": "Trimmed green asparagus before roasting",
+        "sv": "Ansad grön sparris före ugnsstekning",
+        "th": "หน่อไม้ฝรั่งสีเขียวตัดแต่งก่อนอบ"
+      }
+    }
   }
 }
