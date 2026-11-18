@@ -261,7 +261,9 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
       {carbs ? <p>{portionText.grams(describeCarbs(carbs.range, numberLocale))} · {portionWords[carbs.definition]}</p> : null}
       {portion?.ingredientPortion ? <IngredientPortionDetails ingredient={portion.ingredientPortion} locale={locale} /> : null}
       {portion?.condition ? <p>{portion.condition[locale]}</p> : null}
-      {portion?.reviewedSource && (portion.condition || portion.ingredientPortion) && !verbal && !base ? <p><ReviewedPortionSource source={portion.reviewedSource} locale={locale} /></p> : null}
+      {portion?.reviewedSource && !verbal && (portion.condition || portion.classLimitation || (!base && portion.ingredientPortion))
+        && !portion.ingredientPortion?.carbohydrateAlternatives?.some(choice => choice.source === portion.reviewedSource)
+        ? <p><ReviewedPortionSource source={portion.reviewedSource} locale={locale} /></p> : null}
       {result.status === "CALCULATED" ? <>
         <p className="gk-evidence__value"><strong>{text.value} · {numericText}</strong></p>
         {portion?.classLimitation ? <p>{portion.classLimitation[locale]}</p>

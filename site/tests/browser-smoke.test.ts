@@ -501,6 +501,13 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.match(await ovenRiceCarbs.innerText(), /66,2 g/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);
 
+    await page.goto(base + routeFor("bataattiletut"));
+    const preparations = page.locator("[data-ingredient-carb-alternative]");
+    assert.match((await preparations.allInnerTexts()).join(" "), /19,2 g[\s\S]+17,7 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match((await preparations.allInnerTexts()).join(" "), /28,8 g[\s\S]+26,5 g/);
+    assert.equal(await page.locator("[data-portion-carbohydrate], [data-portion-gk]").count(), 0);
+
     await page.goto(base + routeFor("briossisampylat-joshua-weissman"));
     assert.match(await page.locator('[data-gk-status="QUALITATIVE"]').innerText(), /Suuri arvioitu GK/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);

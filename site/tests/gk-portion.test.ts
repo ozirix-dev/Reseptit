@@ -172,3 +172,39 @@ test("a missing polyol value is safe only when normalization yields available ca
     ...review, nutritionSha256: createHash("sha256").update(changed).digest("hex"),
   }), /reviewed standalone carbohydrate requires evidence for every ingredient/);
 });
+
+test("reviewed preparations scale only the same weighed ingredient", async () => {
+  const id = "bataattiletut";
+  const [reviews, markdown] = await Promise.all([
+    loadReviewedPortions(root),
+    readFile(path.join(root, "reseptit/aamupalat", id + ".md"), "utf8"),
+  ]);
+  const review = reviews[id];
+  const ingredient = review.ingredientPortion!;
+  const { portion } = await projectPortionEvidence(root, id, markdown, review);
+  assert.equal(portion.ingredientPortion?.amountPerServing, 105);
+  const choices = portion.ingredientPortion?.carbohydrateAlternatives;
+  assert.equal(choices?.length, 2);
+  assert.ok(Math.abs(choices![0].availableCarbsGPerServing - 19.20765) < 1e-9);
+  assert.ok(Math.abs(choices![1].availableCarbsGPerServing - 17.6715) < 1e-9);
+  assert.equal(portion.availableCarbs, undefined);
+  assert.equal(portion.verbal, undefined);
+  await assert.rejects(projectPortionEvidence(root, id, markdown, {
+    ...review,
+    ingredientPortion: { ...ingredient, declaredCarbsGPer100g: 25 },
+  }), /partial ingredient carbohydrate must use one composition basis/);
+});
+
+test("manufacturer-label carbohydrates do not become standalone available carbohydrates", async () => {
+  const reviews = await loadReviewedPortions(root);
+  for (const [id, expected] of [["lammin-chia-puuro-rouva-keto", 1.05], ["rasvakaakao-rouva-keto", 2.1]] as const) {
+    const markdown = await readFile(path.join(root, "reseptit/aamupalat", id + ".md"), "utf8");
+    const review = reviews[id];
+    const { portion } = await projectPortionEvidence(root, id, markdown, review);
+    assert.equal(portion.ingredientPortion?.declaredCarbsGPerServing, expected);
+    assert.equal(portion.availableCarbs, undefined);
+    await assert.rejects(projectPortionEvidence(root, id, markdown, {
+      ...review, wholeCarbohydrateOnly: {},
+    }), /reviewed standalone carbohydrate requires evidence for every ingredient/);
+  }
+});

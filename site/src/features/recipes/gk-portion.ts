@@ -19,6 +19,7 @@ export interface IngredientPortion {
   unit: "g" | "kpl" | "arkkia";
   availableCarbsGPerServing?: number;
   declaredCarbsGPerServing?: number;
+  carbohydrateAlternatives?: { label: LocalizedText; availableCarbsGPerServing: number; source: string }[];
 }
 
 export interface NamedGkAlternative {

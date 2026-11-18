@@ -70,6 +70,14 @@ pakkaustiedon tuoterajaus. Annosvalitsin skaalaa tuotteen määrän ja siitä
 lasketun hiilihydraattimäärän. Julkinen näkymä nimeää arvon pakkauksen
 ilmoittamaksi ja käyttää omaa kenttää imeytyvän hiilihydraatin arviolle.
 
+EU-pakkausmerkinnän hiilihydraatteihin voivat sisältyä polyolit.
+Laskentatiedon määritelmä vastaa lähteen käyttämää määritelmää.
+[EU:n elintarviketietoasetus, liite I](https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng)
+
+Kun samalle punnitulle ainesosalle on kaksi perusteltua valmistustapaa,
+kumpikin voidaan näyttää omalla lähteellään. Annosvalitsin skaalaa
+molemmat luvut valitun annoskoon ainesmäärälle.
+
 Sanallisen arvion yhteydessä vanha huomautus määrittämättömästä GK:sta
 voidaan täsmentää koskemaan numeerista arvoa. Katselmoitu sanamuoto on
 kielikohtainen ja kytketty hyväksyttyyn annokseen. Sivuston koostaminen

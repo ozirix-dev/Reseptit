@@ -21,6 +21,7 @@ interface ReviewedPortion {
     sourceReview?: { file: string; sha256: string };
     availableCarbsGPer100g?: number;
     declaredCarbsGPer100g?: number;
+    carbohydrateAlternatives?: { label: LocalizedText; availableCarbsGPer100g: number; source: string }[];
   };
   alternativeLabels?: Record<string, LocalizedText>;
   versionAlternativeLabels?: { versionId: string; lower: LocalizedText; upper: LocalizedText };
@@ -75,6 +76,10 @@ function httpsSource(value: string): boolean {
   } catch {
     return false;
   }
+}
+
+function validCarbohydrateRate(value: unknown): value is number {
+  return typeof value === "number" && Number.isFinite(value) && value >= 0 && value <= 100;
 }
 
 export async function loadReviewedPortions(root: string): Promise<Record<string, ReviewedPortion>> {
@@ -156,7 +161,8 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
     portion.verbal = review.verbal;
   }
   if (review?.ingredientPortion) {
-    const { index, ingredientSha256, labels, unit, sourceReview, availableCarbsGPer100g, declaredCarbsGPer100g } = review.ingredientPortion;
+    const { index, ingredientSha256, labels, unit, sourceReview, availableCarbsGPer100g, declaredCarbsGPer100g,
+      carbohydrateAlternatives } = review.ingredientPortion;
     const ingredient = data.ingredients[index];
     if (!["g", "kpl", "arkkia"].includes(unit) || !ingredient || ingredient.unit !== unit || typeof ingredient.amount !== "number"
         || !Number.isFinite(ingredient.amount) || ingredient.amount <= 0
@@ -176,15 +182,29 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
     if (portion.driver?.ingredientIndex === index && !portion.driver.coversMajority) delete portion.driver;
     const carbsGPer100g = availableCarbsGPer100g ?? declaredCarbsGPer100g;
     if (availableCarbsGPer100g !== undefined || declaredCarbsGPer100g !== undefined) {
-      if (availableCarbsGPer100g !== undefined && declaredCarbsGPer100g !== undefined) {
+      if (carbohydrateAlternatives || (availableCarbsGPer100g !== undefined && declaredCarbsGPer100g !== undefined)) {
         throw new Error(`${recipeId}: partial ingredient carbohydrate must use one composition basis.`);
       }
-      if (unit !== "g" || typeof carbsGPer100g !== "number" || !Number.isFinite(carbsGPer100g) || carbsGPer100g < 0 || carbsGPer100g > 100) {
+      if (unit !== "g" || !validCarbohydrateRate(carbsGPer100g)) {
         throw new Error(`${recipeId}: invalid partial ingredient carbohydrate composition.`);
       }
       const carbsGPerServing = amountPerServing * carbsGPer100g / 100;
       if (availableCarbsGPer100g !== undefined) portion.ingredientPortion.availableCarbsGPerServing = carbsGPerServing;
       else portion.ingredientPortion.declaredCarbsGPerServing = carbsGPerServing;
+    }
+    if (carbohydrateAlternatives) {
+      if (unit !== "g" || carbohydrateAlternatives.length < 2 || !carbohydrateAlternatives.every(choice =>
+        validCarbohydrateRate(choice.availableCarbsGPer100g) && httpsSource(choice.source))
+        || !(["fi", "en", "sv", "th"] as const).every(locale => {
+          const labels = carbohydrateAlternatives.map(choice => choice.label[locale]?.trim());
+          return labels.every(Boolean) && new Set(labels).size === labels.length;
+        })) {
+        throw new Error(`${recipeId}: invalid partial ingredient carbohydrate alternatives.`);
+      }
+      portion.ingredientPortion.carbohydrateAlternatives = carbohydrateAlternatives.map(choice => ({
+        label: choice.label, source: choice.source,
+        availableCarbsGPerServing: amountPerServing * choice.availableCarbsGPer100g / 100,
+      }));
     }
   }
   if (review?.ingredientProduct) {

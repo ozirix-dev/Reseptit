@@ -74,16 +74,29 @@
   "kebab-munakasrulla": {
     "recipeBindingSha256": "9b88b33a974dcc4bcba1f13e3b672696ab90558d08fd20f5a1ee296b3f326125",
     "reviewedAt": "2026-11-18",
-    "reasoning": "Wheat flour 1.5 dl × 65 g/dl × .73998 / 5 = 14.42961g per one-fifth of roll. Milk 4.8g/serving. The declared carbohydrate in kebab and sauces may include unknown polyols and pepperoni drained product basis is unverified. Preserve WITHHELD gate. No whole-portion estimates.",
-    "source": "https://fineli.fi/fineli/content/file/8/Fineli_data_file_instructions",
+    "reasoning": "The user-approved original names the exact Görans garlic sauce and uses 100 g for five equal parts, split between filling and topping. The manufacturer identifies 400 mL EAN 6416345004537, 12 g carbohydrate / 100 g. EU label carbohydrate can include polyols; show it as declared for this one ingredient. The distinct Görans red kebab sauce contributes 2.0 g labelled carbohydrate from its own 20 g per serving. Do not confuse regular garlic sauce with the separate white kebab sauce. Historical nutritional package and explicit GK not determined approval stay. The red kebab sauce label is at https://gorans.fi/tuotteet/kebabkastike/.",
+    "source": "https://gorans.fi/tuotteet/valkosipulikastike/",
     "nutritionSha256": "1f9aa3398e727c71855edba6968e76af550403f279ca287561ab55ece613fc7c",
     "condition": {
-      "fi": "Vehnäjauho on suurin tunnettu hiilihydraatin lähde. Kastikkeiden ja valutettujen pepperonien koostumus vaikuttaa kokonaismäärään.",
-      "en": "Wheat flour is the largest known source of carbohydrate. The sauces and drained pickled peppers affect the total.",
-      "sv": "Vetemjölet är den största kända kolhydratkällan. Såserna och de avrunna inlagda paprikorna påverkar totalmängden.",
-      "th": "แป้งสาลีเป็นแหล่งคาร์โบไฮเดรตที่ทราบว่ามากที่สุด ซอสและพริกดองที่สะเด็ดน้ำแล้วมีผลต่อปริมาณรวม"
+      "fi": "Valmistajan pakkausarvo koskee Göransin valkosipulikastiketta. Yhtä reseptiannosta kohti käytetään lisäksi 20 g Göransin kebabkastiketta, josta tulee valmistajan mukaan 2 g pakkauksen hiilihydraattia.",
+      "en": "The label estimate is for Görans garlic sauce. One recipe serving also uses 20 g of Görans kebab sauce, with 2 g of labelled carbohydrate according to its manufacturer.",
+      "sv": "Paketuppgiften gäller Görans vitlökssås. En receptportion innehåller dessutom 20 g Görans kebabsås, vilket enligt tillverkaren bidrar med 2 g kolhydrater enligt förpackningen.",
+      "th": "ค่าบนฉลากนี้ใช้กับซอสกระเทียม Görans หนึ่งที่ตามสูตรยังใช้ซอสเคบับ Görans อีก 20 กรัม ซึ่งผู้ผลิตระบุว่าให้คาร์โบไฮเดรตตามฉลาก 2 กรัม"
     },
-    "preparationSha256": "4419d71f610cdeba6a92d49c259498bd909f88e5d7d5bf29738be924cbde9267"
+    "preparationSha256": "4419d71f610cdeba6a92d49c259498bd909f88e5d7d5bf29738be924cbde9267",
+    "ingredientPortion": {
+      "index": 11,
+      "ingredientSha256": "375064ceb9d77c4259b5161377286f60bfbf72c1d11caa1176a0864afa63e99e",
+      "labels": {
+        "fi": "Göransin valkosipulikastike",
+        "en": "Görans garlic sauce",
+        "sv": "Görans vitlökssås",
+        "th": "ซอสกระเทียม Görans"
+      },
+      "unit": "g",
+      "declaredCarbsGPer100g": 12
+    },
+    "publicSource": "https://gorans.fi/kastikkeet/"
   },
   "vhh-kaalikaarryleet": {
     "recipeBindingSha256": "6b7573adb0ef818192ac8e8bbc3b0b35909a3d0af1a6de056c178e2a0cd16bee",
@@ -978,7 +991,7 @@
     "preparationSha256": "fec300567cd8ffb8cbe2a15555226392ab2fef7da27a07db6983fe9a2acf6886",
     "reviewedAt": "2026-11-18",
     "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/aamupalat/lammin-chia-puuro-rouva-keto.md",
-    "reasoning": "Exact known 7.5 g chocolate per portion. Explicit whole macro WITHHELD gate: chia polyols and chocolate fibre/polyols are unconfirmed. The 14 g label carbohydrate per 100 g does not provide net/available GL carbohydrate evidence.",
+    "reasoning": "Original recipe names Lindt Excellence 90% and the prior nutrition packet verifies Finnish-market GTIN 3046920029759. Manufacturer label reports 14 g carbohydrate per 100 g. This is EU label carbohydrate per ingredient (Regulation 1169/2011 Annex I includes polyols in the carbohydrate declaration) and cannot provide an independent aggregate-polyol or net/available value. One original serving is one of two bowls. Chia 12 g per bowl is already in the preparation note. The physical mass and identity of the Lindt product are exact in all four texts. Chia and dairy brands are confirmed reference products from the calculation, but are not required by the public recipe.",
     "condition": {
       "fi": "Jos vaihdat suklaata, tarkista sen hiilihydraatit pakkauksesta.",
       "en": "If you use a different chocolate, check the carbohydrate amount on its label.",
@@ -994,15 +1007,22 @@
         "sv": "Lindt Excellence 90 % mörk choklad",
         "th": "ดาร์กช็อกโกแลต Lindt Excellence 90%"
       },
-      "unit": "g"
-    }
+      "unit": "g",
+      "sourceReview": {
+        "file": "docs/reviews/2026-11-11-lammin-suklaa-chia-puuro-fi.md",
+        "sha256": "1b8206319da41b655b97ddbaba91d0a04df88a26e2b779ea7b528ecd33190d4c"
+      },
+      "declaredCarbsGPer100g": 14
+    },
+    "nutritionSha256": "ad2e423300f3e13fb2ab648df78398a7b1a91df4f024ee4111a3fa95258fc113",
+    "publicSource": "https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759"
   },
   "rasvakaakao-rouva-keto": {
     "recipeBindingSha256": "4dce5612fd79c917c51a68b89f5daae83235963e9f4bd756f602c87c6f835b2e",
     "preparationSha256": "70b75e375f4da29c9ff2a3510d1aed61d0f43a3e57b740ccf809dc208c0e6a5c",
     "reviewedAt": "2026-11-18",
     "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/aamupalat/rasvakaakao-rouva-keto.md",
-    "reasoning": "Exact known 15 g chocolate per cup. Whole macros explicitly WITHHELD because fibre and polyol composition is incomplete. No label carbohydrate transfer to available/GK.",
+    "reasoning": "Original recipe names Lindt Excellence 90% and the prior nutrition packet verifies Finnish-market GTIN 3046920029759. Manufacturer label reports 14 g carbohydrate per 100 g. This is EU label carbohydrate per ingredient (Regulation 1169/2011 Annex I includes polyols in the carbohydrate declaration) and cannot provide an independent aggregate-polyol or net/available value. One original serving is the one cup. The physical mass and identity of the Lindt product are exact in all four texts. The Foodin cocoa and Valio dairy products are reference products, but not required by the public recipe.",
     "condition": {
       "fi": "Jos vaihdat suklaata, tarkista sen hiilihydraatit pakkauksesta.",
       "en": "If you use a different chocolate, check the carbohydrate amount on its label.",
@@ -1018,8 +1038,15 @@
         "sv": "Lindt Excellence 90 % mörk choklad",
         "th": "ดาร์กช็อกโกแลต Lindt Excellence 90%"
       },
-      "unit": "g"
-    }
+      "unit": "g",
+      "sourceReview": {
+        "file": "docs/reviews/2026-11-11-rasvakaakao-ja-chia-fi.md",
+        "sha256": "6986a432fa035a08b55e8a1871ed594bc75f688ba2613cf7ece9b8ab88b79fb0"
+      },
+      "declaredCarbsGPer100g": 14
+    },
+    "nutritionSha256": "60e2ef00d90d79b88c8e6c158a1300f1f15804f43f9d04224553bfd53f5a07e6",
+    "publicSource": "https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759"
   },
   "karjalanpiirakat-riisipuurolla": {
     "recipeBindingSha256": "222e71d3610d011b348597905e3dae2c0b7459e2f82bf5116a596383791553b2",
@@ -1419,15 +1446,15 @@
   "parmesaani-lyttyperunat": {
     "recipeBindingSha256": "2204393a2c90141fb06bd63b64e8042842e86d4b303b0032f45740982b5d9d04",
     "preparationSha256": "76727886d1676a43aae48400f830da66f60f3f443e3c19209b8ef0f5bdca1aea",
-    "nutritionSha256": "a54c392cb9680a8f85cd2a485a4878dd313b5ade74001e0e99cd0d586e8c0f70",
+    "nutritionSha256": "dda1af34ee3e5f81081aed8e780f0782dd4811b45fb393f70f14df47a72890ef",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/28955",
-    "reasoning": "Matched the ingredient pieniä keitettyjä perunoita to the reference food PERUNA, KUORINEEN, KEITETTY, SUOLATON. Brand-specific values may vary. 700 g already boiled small potatoes / 4. Fineli cooked potato with skin; finishing roast and cultivar limit transfer. Parmesan and garlic polyols remain unknown. The value uses available carbohydrate in the matched ingredient before the recipe is prepared. Whole-serving release remains governed by the existing nutrition record. Parmesaanille ja valkosipulijauheelle puuttuu varmennettu polyoliarvo.",
+    "reasoning": "Use one quarter of the original batch: 175 g cooled whole small potatoes weighed after boiling with skins, 10 g finely grated hard Parmesan, 0.5 g dry garlic powder, olive oil and salt. Fineli #28955 preserves the existing state-matched potato input; the separate #F002479 available carbohydrate and powder-specific #06.154 no longer depend on USDA total-by-difference. The estimate is ingredient-based from the amounts added before oven finishing. Scraps/coating losses and composition by potato cultivar/season are not represented.",
     "condition": {
-      "fi": "Perunat punnitaan keitettyinä kuorineen ennen uunissa viimeistelyä. Lajike voi vaikuttaa arvioon.",
-      "en": "Weigh the cooked potatoes with their skins on before finishing them in the oven. Variety may affect the estimate.",
-      "sv": "Väg den kokta potatisen med skal före tillagningen i ugnen. Sorten kan påverka uppskattningen.",
-      "th": "ชั่งมันฝรั่งที่ต้มแล้วทั้งเปลือกก่อนนำเข้าอบ พันธุ์มันฝรั่งอาจมีผลต่อค่าประมาณ"
+      "fi": "Arvio koskee neljäsosaa erästä. Perunat punnitaan keitettyinä ja kuorineen, ja laskenta sisältää ohjeen parmesaanin ja valkosipulijauheen.",
+      "en": "The estimate is for one quarter of the batch. The potatoes are weighed boiled with their skins on, and the estimate includes the recipe’s Parmesan and garlic powder.",
+      "sv": "Uppskattningen gäller en fjärdedel av satsen. Potatisen vägs kokt med skalet kvar, och beräkningen omfattar receptets parmesan och vitlökspulver.",
+      "th": "ค่าประมาณสำหรับหนึ่งในสี่ของปริมาณที่ทำได้ ชั่งมันฝรั่งหลังต้มโดยยังไม่ปอกเปลือก ค่าประมาณรวมพาร์เมซานและผงกระเทียมตามสูตร"
     },
     "ingredientPortion": {
       "index": 0,
@@ -1440,6 +1467,14 @@
       },
       "unit": "g",
       "availableCarbsGPer100g": 13.175
+    },
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "c2a38c6fd67c74dc88b84340385b724faade90afd2f39b8b22e3f171a287931f",
+        "en": "d7224cf73fbf7177c71378dae3f2a8d0af968254847363762a85a669f1156c8e",
+        "sv": "be3f38293e01f3571b081127ec2da8233c6e6f41e7e05ead6da2e55ddb37167c",
+        "th": "b3292367ccba9392f0f3d5e98828c7c402a08bcc414e35e9594014324c4bb23a"
+      }
     }
   },
   "karnivore-rapeat-kananreisipalat": {
@@ -1742,24 +1777,45 @@
     "nutritionSha256": "9320d68eea6a7f951b1e72a2b91d3326d1d0b9632b86f3105c886816827ee175",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
-    "reasoning": "The recipe weighs 210 g already cooked, peeled and cooled sweet potato flesh, mixed into batter and split into two; cooked raw-input method is unspecified. Fineli Release 20 30600 gives 18.293 g available CHO per 100 g of oven-baked sweet potato with a verified polyol value. This component estimate applies to that baking method and edible weighed state only. It expresses charged ingredient contribution. Other ingredient polyols remain incomplete, including topping coverage.",
+    "reasoning": "The weighed edible input is already cooked and cooled; original leaves pre-cooking open. Fineli Release 20 #30600 oven-baked peeled sweet potato gives 18.293 g CHOAVL per 100 g, and #30602 peeled sweet potato boiled without salt gives 16.83 g CHOAVL per 100 g. These are distinct ingredient references, not the recipe's uncertainty interval. The original portions include 30 g fresh cultivated blueberries and 10 g maple syrup on top, per serving. Current nutrition equation uses generic as-written composition and gives 30.33 g in the baked input scenario, including both. The 5 g pan oil carries no carbohydrate and its retained fat is unknown. Approximate scenario math never covers other preparation or products.",
     "condition": {
-      "fi": "Arvio pätee uunissa kypsennettyyn bataattiin, joka punnitaan kuorittuna ja jäähtyneenä. Myös mustikoista ja vaahterasiirapista tulee hiilihydraatteja.",
-      "en": "This estimate uses oven-baked sweet potato weighed peeled and cooled. Blueberries and maple syrup also contribute carbohydrate.",
-      "sv": "Uppskattningen gäller ugnsbakad sötpotatis vägd skalad och avsvalnad. Blåbär och lönnsirap bidrar också med kolhydrater.",
-      "th": "ค่าประมาณนี้ใช้กับมันเทศอบที่ชั่งหลังเอาเปลือกออกและพักให้เย็น บลูเบอร์รีและน้ำเชื่อมเมเปิลก็ให้คาร์โบไฮเดรตเช่นกัน"
+      "fi": "Punnitse bataatti kuorittuna ja jäähtyneenä. Vertailu koskee samaa bataattimäärää kummallakin valmistustavalla. Mustikoista ja vaahterasiirapista tulee lisää hiilihydraatteja.",
+      "en": "Weigh the sweet potato peeled and cooled. The comparison uses the same weight for both preparations. Blueberries and maple syrup add carbohydrate.",
+      "sv": "Väg sötpotatisen skalad och avsvalnad. Jämförelsen använder samma vikt för båda tillagningssätten. Blåbären och lönnsirapen bidrar med ytterligare kolhydrater.",
+      "th": "ชั่งมันเทศที่ปอกเปลือกแล้วและพักให้เย็น การเปรียบเทียบใช้มันเทศน้ำหนักเท่ากันทั้งสองวิธี บลูเบอร์รีและเมเปิลไซรัปให้คาร์โบไฮเดรตเพิ่ม"
     },
     "ingredientPortion": {
       "index": 0,
       "ingredientSha256": "0555b47bd5cf9908d8b00d854e750cf5175b78d80946730c288ced56da69618d",
-      "labels": {
-        "fi": "Uunissa kypsennetty kuorittu bataatti",
-        "en": "Peeled oven-baked sweet potato",
-        "sv": "Skalad ugnsbakad sötpotatis",
-        "th": "เนื้อมันเทศอบที่เอาเปลือกออกแล้ว"
-      },
       "unit": "g",
-      "availableCarbsGPer100g": 18.293
+      "labels": {
+        "fi": "Kypsä kuorittu bataatti",
+        "en": "Cooked peeled sweet potato",
+        "sv": "Tillagad skalad sötpotatis",
+        "th": "เนื้อมันเทศสุกปอกเปลือก"
+      },
+      "carbohydrateAlternatives": [
+        {
+          "label": {
+            "fi": "Uunissa kypsennetty",
+            "en": "Oven-baked",
+            "sv": "Ugnsbakad",
+            "th": "อบจนสุก"
+          },
+          "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
+          "availableCarbsGPer100g": 18.293
+        },
+        {
+          "label": {
+            "fi": "Suolatta keitetty",
+            "en": "Boiled without salt",
+            "sv": "Kokt utan salt",
+            "th": "ต้มโดยไม่ใส่เกลือ"
+          },
+          "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30602",
+          "availableCarbsGPer100g": 16.83
+        }
+      ]
     }
   },
   "indonesialainen-bubur-sumsum-punnittu-v2": {
@@ -2826,6 +2882,418 @@
       "en": "The estimate includes the recipe’s cauliflower mash. The cauliflower’s contribution to GL uses an average GI for the vegetable group.",
       "sv": "Uppskattningen omfattar receptets blomkålspuré. I beräkningen av blomkålens bidrag till GL används ett genomsnittligt GI för grönsaksgruppen.",
       "th": "ค่าประมาณรวมดอกกะหล่ำบดตามสูตร การคำนวณค่า GL ส่วนของดอกกะหล่ำใช้ค่า GI เฉลี่ยของกลุ่มผัก"
+    }
+  },
+  "gazpacho": {
+    "recipeBindingSha256": "4d279dc21066c63ceed3f945530d601c6b0fa8ca7137b306d38c24163a690f65",
+    "preparationSha256": "6ccd10dbc11116d067e485b6aa2f48e0235c09820e8502199c9ae3b2672372f5",
+    "nutritionSha256": "365e702c22110297084bde298377e22642cf3528dc0290a9b2d6c4bbe1b2bfc5",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/gazpacho.json",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "The recipe offers two optional slices of light bread blended into a four-serving batch. Retained Fineli 1107 includes both slices (25 g each, 12.5 g input per serving) in the sealed nutrition calculation and original GL. The bread's group GI is not specific to a named product or blended soup. Scope the existing values to their with-bread preparation; no estimate for a separate breadless preparation is approved. Atkinson et al. 2021 Table 1 reports bread group GI 64 from 214 food entries (SD 14). The chosen group's contribution is 51% of the approved model point. Keep the existing nutrient amounts, modeling and approvals. The sealed nutrition input uses two 25 g slices with 53.348 g available carbohydrate per 100 g in a batch for four, so the bread supplies 6.6685 g available carbohydrate to one original serving.",
+    "condition": {
+      "fi": "Arvio sisältää kaksi valinnaista vaalean leivän viipaletta neljän annoksen erässä. Leipä tuo noin 6,7 g imeytyvää hiilihydraattia yhtä reseptiannosta kohti. Ilman leipää annoksen hiilihydraatit ja GK ovat pienemmät. Leivän GK-osuus käyttää leipäryhmän GI-keskiarvoa.",
+      "en": "The estimate includes two optional slices of white bread in the four-serving batch. The bread adds about 6.7 g of available carbohydrate per recipe serving. Leaving it out lowers the carbohydrate and GL. The bread calculation uses an average GI for bread.",
+      "sv": "Uppskattningen omfattar två valfria skivor ljust bröd i satsen på fyra portioner. Brödet bidrar med cirka 6,7 g tillgängliga kolhydrater per receptportion. Utan brödet blir kolhydratmängden och GL lägre. Beräkningen använder ett genomsnittligt GI för bröd.",
+      "th": "ค่าประมาณรวมขนมปังขาว 2 แผ่นที่เลือกใส่ได้ในซุปสำหรับ 4 ที่ ขนมปังให้คาร์โบไฮเดรตที่ใช้ได้ประมาณ 6.7 กรัมต่อหนึ่งที่ตามสูตร ถ้าไม่ใส่ขนมปัง ทั้งคาร์โบไฮเดรตและค่า GL จะลดลง โดยส่วนของขนมปังใช้ค่า GI เฉลี่ยของกลุ่มขนมปัง"
+    }
+  },
+  "vietnamilainen-banh-mi-munalla": {
+    "recipeBindingSha256": "a2f67d75046143fd2727769c2adff67c18684e8e2cf9bf1482f105b50d3ce3c5",
+    "preparationSha256": "778cb1e5b2f5afedf6bbfcb839da3f44d4df2d0946a19b31b8a41b9d2efcbec8",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "The original splits 100 g ready-made baguette between two servings, briefly warming the bread before adding egg, fresh carrot and cucumber. The approved model uses the broad 2021 bread group GI as a proxy for a generic baguette. At fixed modeled contributions, substituting GI 65.81 for 64 puts the model point at the 20 boundary; this algebra is a sensitivity check, not a new approved scenario. Atkinson et al. 2021 Table 1 reports bread group GI 64 from 214 food entries (SD 14). The chosen group's contribution is 92% of the approved model point. Keep the existing nutrient amounts, modeling and approvals.",
+    "condition": {
+      "fi": "Yhteen annokseen kuuluu 50 g valmista patonkia, joka lämmitetään ennen täyttämistä. Patongin GK-osuus perustuu leipäryhmän GI-keskiarvoon, joten leipävalinta voi muuttaa arviota.",
+      "en": "One serving includes 50 g of ready-made baguette, warmed before filling. The baguette’s GL contribution uses an average GI for bread, so the bread you choose can change the estimate.",
+      "sv": "En portion innehåller 50 g färdig baguette som värms före fyllning. Baguettens bidrag till GL bygger på ett genomsnittligt GI för bröd. Brödvalet kan påverka uppskattningen.",
+      "th": "หนึ่งที่มีบาแก็ตสำเร็จรูป 50 กรัม อุ่นก่อนใส่ไส้ ค่า GL ส่วนของบาแก็ตคำนวณจากค่า GI เฉลี่ยของกลุ่มขนมปัง ชนิดขนมปังที่เลือกอาจทำให้ค่าประมาณเปลี่ยนได้"
+    }
+  },
+  "souvlaki": {
+    "recipeBindingSha256": "014c7b0c6ada8049a0f6fa6e5261ccd715e0b7ddb3fcd95d095151012001b4c8",
+    "preparationSha256": "abd08aa0a87ac15006e114cd0a4b7af0addf97472527adb6f6cb70ae17c49e6b",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "Four warmed pita breads are served with chicken skewers, tomato and tzatziki across four portions. Fineli #1056 supplies the existing nominal 55 g pita in the GL calculation; recipe measures one individual pita, whose weight can vary. At fixed modeled contributions substituting GI 72.28 for 64 puts the point at 20. The ingredient's actual product and heat handling are not measured for the group average. Atkinson et al. 2021 Table 1 reports bread group GI 64 from 214 food entries (SD 14). The chosen group's contribution is 91% of the approved model point. Keep the existing nutrient amounts, modeling and approvals.",
+    "condition": {
+      "fi": "Annokseen kuuluu yksi lämmitetty pitaleipä vartaiden, tomaatin ja tzatzikin kanssa. Pitan GK-osuus perustuu leipäryhmän GI-keskiarvoon. Pitan koko ja tuote voivat muuttaa arviota.",
+      "en": "The serving includes one warmed pita with the skewers, tomato and tzatziki. The pita’s GL contribution uses an average GI for bread. The size and type of pita can change the estimate.",
+      "sv": "En portion innehåller ett uppvärmt pitabröd med spetten, tomaten och tzatzikin. Pitabrödets bidrag till GL bygger på ett genomsnittligt GI för bröd. Pitabrödets storlek och sort kan påverka uppskattningen.",
+      "th": "หนึ่งที่รวมขนมปังพิต้าอุ่นหนึ่งแผ่นกับไก่เสียบไม้ มะเขือเทศ และซาซิกิ ค่า GL ส่วนของพิต้าคำนวณจากค่า GI เฉลี่ยของกลุ่มขนมปัง ขนาดและชนิดของพิต้าอาจทำให้ค่าประมาณเปลี่ยนได้"
+    }
+  },
+  "lahi-ita-fattet-hummus": {
+    "recipeBindingSha256": "b9fc5a443598e2ddbf1135c8fc433a2884121be874796eaa7dab6187fec1167b",
+    "preparationSha256": "194ac920ce0ff45da8eedf311cce99d4d08cfff04dce35f2362395327f4139de",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "One of two bowls uses 50 g pita before dry-pan toasting, warm cooked/drained chickpeas, and plain yogurt mixed with tahini. A broad bread group GI contributes the largest part of the original model; at fixed modeled contributions GI 71.24 instead of 64 reaches the 20 boundary. No result for a different pita preparation is approved here. Atkinson et al. 2021 Table 1 reports bread group GI 64 from 214 food entries (SD 14). The chosen group's contribution is 80% of the approved model point. Keep the existing nutrient amounts, modeling and approvals.",
+    "condition": {
+      "fi": "Yhteen kulholliseen tulee 50 g pitaleipää ennen pannulla paahtamista sekä kikherneet ja tahinijogurtti. Pitan GK-osuus perustuu leipäryhmän GI-keskiarvoon. Leipävalinta voi muuttaa arviota.",
+      "en": "One bowl includes 50 g of pita weighed before dry-pan toasting, along with chickpeas and tahini yogurt. The pita’s GL contribution uses an average GI for bread. The bread you choose can change the estimate.",
+      "sv": "En skål innehåller 50 g pitabröd vägt före rostning i torr panna samt kikärter och tahiniyoghurt. Pitabrödets bidrag till GL bygger på ett genomsnittligt GI för bröd. Brödvalet kan påverka uppskattningen.",
+      "th": "หนึ่งชามมีขนมปังพิต้า 50 กรัมที่ชั่งก่อนปิ้งในกระทะแห้ง พร้อมถั่วชิกพีและโยเกิร์ตผสมทาฮินี ค่า GL ส่วนของพิต้าคำนวณจากค่า GI เฉลี่ยของกลุ่มขนมปัง ชนิดขนมปังที่เลือกอาจทำให้ค่าประมาณเปลี่ยนได้"
+    }
+  },
+  "tandoorikana": {
+    "recipeBindingSha256": "9121bdc74b16fc806de1abc5f8a4a57b357cd3a60ab402d1118917a48411c660",
+    "preparationSha256": "e8ad05eca4a8c84c71e7e32da125f1b700c1b6bf71b3c8be0921da884c945420",
+    "nutritionSha256": "a3d06b88c98319a44c606d6e1ae1d9198c145b20066041b8c535caa005916585",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/tandoorikana.json",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "The original prepares a plain-yogurt marinade with 200 g yogurt for four servings. Fineli 619 and the sealed calculation count all the input with retainedFraction 1. The instructions instead lift the chicken onto the roasting rack and provide no quantity for residual or adherent marinade. All positive modeled GL comes from the yogurt's broad dairy group proxy, and other small carbohydrate inputs were omitted. Present the published estimate as input-based and make marinade carryover visible without changing the approved calculation or recipe. Atkinson et al. 2021 Table 1 reports dairy product group GI 35 (SD 11). The chosen group's contribution is 100% of the approved model point. Keep the existing nutrient amounts, modeling and approvals.",
+    "condition": {
+      "fi": "Ainesosapohjainen arvio sisältää ohjeen jogurttimäärän marinadissa. Jogurtin GK-osuus perustuu maitotuoteryhmän GI-keskiarvoon. Annokseen päätyvä marinadin määrä riippuu siitä, paljonko sitä jää kanan pintaan.",
+      "en": "The ingredient-based estimate includes the full amount of yogurt listed for the marinade. The yogurt’s GL contribution uses an average GI for dairy products. The amount of marinade served depends on how much clings to the chicken.",
+      "sv": "Den ingrediensbaserade uppskattningen inkluderar hela mängden yoghurt som anges för marinaden. Yoghurten bidrar till GL med ett genomsnittligt GI för mejeriprodukter. Mängden marinad i portionen beror på hur mycket som fastnar på kycklingen.",
+      "th": "ค่าประมาณจากวัตถุดิบรวมโยเกิร์ตทั้งหมดที่ระบุไว้ในส่วนผสมหมัก ค่า GL ส่วนของโยเกิร์ตคำนวณจากค่า GI เฉลี่ยของกลุ่มผลิตภัณฑ์นม ปริมาณส่วนผสมหมักที่เสิร์ฟขึ้นอยู่กับว่าติดอยู่บนเนื้อไก่มากเท่าใด"
+    }
+  },
+  "khao-kha-moo-vhh": {
+    "recipeBindingSha256": "d669bc648a7eebc4fa18f0418c8f6db2489841475e177c0141044eb664515256",
+    "preparationSha256": "13e9a35e77422e0946e019af35a2ab1c247566619483d258d8e78e4b9c4ba336",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "Per serving, the original apportions 125 g cauliflower rice and 75 g Chinese cabbage or bok choy. The cabbage is briefly boiled or steamed and the cauliflower rice heated in a pan. The numeric model uses Fineli 322 cauliflower and 359 Chinese cabbage. All positive calculated GL is from an average of a diverse vegetable group that includes sweet potatoes. No matched bok choy GI or substituted grain-rice estimate is claimed. The broad proxy alone does not move this far-below-threshold point close to a class boundary; preserve present categorical behavior. Atkinson et al. 2021 Table 1 reports GI 66 for vegetables other than potatoes, including sweet potatoes (91 entries, SD 19). The chosen group's contribution is 100% of the approved model point. Keep the existing nutrient amounts, modeling and approvals.",
+    "condition": {
+      "fi": "Annokseen kuuluu 125 g kukkakaaliriisiä ja 75 g kiinankaalia tai paksoita. Kasvisten GK-osuus perustuu kasvisryhmän GI-keskiarvoon.",
+      "en": "The serving includes 125 g of cauliflower rice and 75 g of Chinese cabbage or bok choy. The vegetables’ GL contribution uses an average GI for the vegetable group.",
+      "sv": "En portion innehåller 125 g blomkålsris och 75 g kinakål eller pak choi. Grönsakernas bidrag till GL bygger på ett genomsnittligt GI för grönsaksgruppen.",
+      "th": "หนึ่งที่มีข้าวดอกกะหล่ำ 125 กรัม และผักกาดขาวหรือผักกวางตุ้งฮ่องเต้ 75 กรัม ค่า GL ส่วนของผักคำนวณจากค่า GI เฉลี่ยของกลุ่มผัก"
+    }
+  },
+  "bataattibrowniet": {
+    "recipeBindingSha256": "9b41b48ad5938df44742ae133f27522ae37e53278cfdbb1769df2e593446711e",
+    "preparationSha256": "ce74aa578d5ac214abe8c83a7c4d92df53b00102e0fd41140db9c789d6ad104c",
+    "nutritionSha256": "9259caed53da3b05fea3ea7c3240dc39cae9b33b66296094f53a9ba560a9028a",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
+    "reasoning": "The weighed edible input is already cooked and cooled; original leaves pre-cooking open. Fineli Release 20 #30600 oven-baked peeled sweet potato gives 18.293 g CHOAVL per 100 g, and #30602 peeled sweet potato boiled without salt gives 16.83 g CHOAVL per 100 g. These are distinct ingredient references, not the recipe's uncertainty interval. The tray is divided into nine pieces. The remaining ingredients are included in the internal scenario calculation as listed and weighed. The cited Bake It Paleo comparison steams the sweet potato with skin and was used for ingredient ratios only, so its steaming instruction does not resolve this recipe's choice. Honey's available source and unknown aggregate polyol remain exactly as in the evidence; no public whole available CHO baseline.",
+    "condition": {
+      "fi": "Punnitse bataatti kuorittuna ja jäähtyneenä. Vertailu koskee samaa bataattimäärää kummallakin valmistustavalla. Taikinan muut ainekset tuovat lisää hiilihydraatteja.",
+      "en": "Weigh the sweet potato peeled and cooled. The comparison uses the same weight for both preparations. The other batter ingredients add carbohydrate.",
+      "sv": "Väg sötpotatisen skalad och avsvalnad. Jämförelsen använder samma vikt för båda tillagningssätten. Övriga ingredienser i smeten bidrar med ytterligare kolhydrater.",
+      "th": "ชั่งมันเทศที่ปอกเปลือกแล้วและพักให้เย็น การเปรียบเทียบใช้มันเทศน้ำหนักเท่ากันทั้งสองวิธี วัตถุดิบอื่นในแป้งให้คาร์โบไฮเดรตเพิ่ม"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "e32f0fd87512f5322c31693dcc1756502248c7d6a2d80a85a7942193009ed7b3",
+      "unit": "g",
+      "labels": {
+        "fi": "Kypsä kuorittu bataatti",
+        "en": "Cooked peeled sweet potato",
+        "sv": "Tillagad skalad sötpotatis",
+        "th": "เนื้อมันเทศสุกปอกเปลือก"
+      },
+      "carbohydrateAlternatives": [
+        {
+          "label": {
+            "fi": "Uunissa kypsennetty",
+            "en": "Oven-baked",
+            "sv": "Ugnsbakad",
+            "th": "อบจนสุก"
+          },
+          "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
+          "availableCarbsGPer100g": 18.293
+        },
+        {
+          "label": {
+            "fi": "Suolatta keitetty",
+            "en": "Boiled without salt",
+            "sv": "Kokt utan salt",
+            "th": "ต้มโดยไม่ใส่เกลือ"
+          },
+          "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30602",
+          "availableCarbsGPer100g": 16.83
+        }
+      ]
+    }
+  },
+  "bataatti-banaanileipa": {
+    "recipeBindingSha256": "71d80899adc398c1ddfc1a217d1ba3febdd3b40e50f7b4e9228d37627581f3b0",
+    "preparationSha256": "0aa39aa81d967ea81a8642598b3be67f92813ce0debe4c84bbe237a20a27fe19",
+    "nutritionSha256": "80c7e901c05c4bb32752ff4e759915bf77eb38a5e1763adef5d386bb1c6424a6",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
+    "reasoning": "The weighed edible input is already cooked and cooled; original leaves pre-cooking open. Fineli Release 20 #30600 oven-baked peeled sweet potato gives 18.293 g CHOAVL per 100 g, and #30602 peeled sweet potato boiled without salt gives 16.83 g CHOAVL per 100 g. These are distinct ingredient references, not the recipe's uncertainty interval. The original uses 240 g prepared sweet potato. Keeping the baseline chocolate formula constant gives internal whole-input scenarios of 14.73 g baked and 14.38 g boiled per 1/10. The stated ingredient is unspecified dark chocolate chips, for which the pinned generic dark bar provides composition comparison only. Neither the chosen chocolate nor the sweet-potato pre-cook is fixed, so retain the component in public and both limitations in the audit.",
+    "condition": {
+      "fi": "Punnitse bataatti kuorittuna ja jäähtyneenä. Vertailu koskee samaa bataattimäärää kummallakin valmistustavalla. Banaani ja suklaahiput tuovat lisää hiilihydraatteja.",
+      "en": "Weigh the sweet potato peeled and cooled. The comparison uses the same weight for both preparations. Bananas and chocolate chips add carbohydrate.",
+      "sv": "Väg sötpotatisen skalad och avsvalnad. Jämförelsen använder samma vikt för båda tillagningssätten. Banan och chokladknappar bidrar med ytterligare kolhydrater.",
+      "th": "ชั่งมันเทศที่ปอกเปลือกแล้วและพักให้เย็น การเปรียบเทียบใช้มันเทศน้ำหนักเท่ากันทั้งสองวิธี กล้วยและช็อกโกแลตชิปให้คาร์โบไฮเดรตเพิ่ม"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "6881a372a935c83dde96355c8fe4e49b41b1162199141f341d9145072d20ced9",
+      "unit": "g",
+      "labels": {
+        "fi": "Kypsä kuorittu bataatti",
+        "en": "Cooked peeled sweet potato",
+        "sv": "Tillagad skalad sötpotatis",
+        "th": "เนื้อมันเทศสุกปอกเปลือก"
+      },
+      "carbohydrateAlternatives": [
+        {
+          "label": {
+            "fi": "Uunissa kypsennetty",
+            "en": "Oven-baked",
+            "sv": "Ugnsbakad",
+            "th": "อบจนสุก"
+          },
+          "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
+          "availableCarbsGPer100g": 18.293
+        },
+        {
+          "label": {
+            "fi": "Suolatta keitetty",
+            "en": "Boiled without salt",
+            "sv": "Kokt utan salt",
+            "th": "ต้มโดยไม่ใส่เกลือ"
+          },
+          "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30602",
+          "availableCarbsGPer100g": 16.83
+        }
+      ]
+    }
+  },
+  "perunarieskat-ohrajauhoilla": {
+    "recipeBindingSha256": "ad53312ca461ebbf384087815d7eaf827bd2d7a565e4ddb16ccffbe1b3fc9ea5",
+    "preparationSha256": "f2a286542e2800d89e95784fcffa113172a4213c2bd138082758bcf523296add",
+    "nutritionSha256": "d2a9d127a33f00daba65ea4fb8a6adf36243b9ca7b47b4b1034d481837a36027",
+    "piecesPerServing": 1,
+    "condition": {
+      "fi": "Jaa taikina kymmeneen yhtä suureen nokareeseen. Annosarvio koskee yhtä rieskaa.",
+      "en": "Divide the dough into ten equal mounds. The estimate covers one flatbread.",
+      "sv": "Dela degen i tio lika stora klickar. Uppskattningen gäller ett tunnbröd.",
+      "th": "แบ่งแป้งเป็นสิบกองเท่า ๆ กัน ค่าประมาณนี้สำหรับขนมปังแผ่นหนึ่งชิ้น"
+    },
+    "reasoning": "The equal split and weighed sources anchor the serving. Fresh versus cooled mash, its exact formulation, and barley cultivar/flour baking can change the response. Carbohydrate estimated from the recipe measures as a whole, without toppings.",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/perunarieskat-ohrajauhoilla.json",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/perunarieskat-ohrajauhoilla.json"
+  },
+  "pinaattikeitto": {
+    "recipeBindingSha256": "e3766c3973f5da10149deaadda6905de831b940a3611f0725b65d7fcc2274739",
+    "preparationSha256": "9fb28740d1a51199291cc0b81690c4b60ad8179a5fc51ac0ca4de44273e20e64",
+    "nutritionSha256": "c679c19eeb6a1b5a8a5dd3e24d214e64921dc5d2ce8c4c6e230176e40c4032ce",
+    "condition": {
+      "fi": "Jaa keitto neljään yhtä suureen kulhoon. Yhteen kulhoon tulee reseptin kevytmaidosta 2,5 dl ja osa vehnäjauhosuuruksesta.",
+      "en": "Divide the soup among four equal bowls. Each bowl contains 250 mL of the recipe’s semi-skimmed milk and a share of the flour thickener.",
+      "sv": "Fördela soppan i fyra lika stora skålar. Varje skål innehåller 2,5 dl av receptets mellanmjölk och en del av mjölredningen.",
+      "th": "แบ่งซุปเป็นสี่ชามเท่า ๆ กัน แต่ละชามใช้นมพร่องมันเนย 250 มล. และมีแป้งสาลีที่ใช้ทำให้ซุปข้น"
+    },
+    "reasoning": "Milk supplies 12 g of 21.82 g available carbohydrate per bowl. Roux flour supplies 9.01850625 g. The milk trials cannot fix the response of boiling flour in a milk and butter roux; applying plausible flour comparisons can cross GK 10.",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/pinaattikeitto.json",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/pinaattikeitto.json"
+  },
+  "ruis-puolukkapuuro": {
+    "recipeBindingSha256": "b5c6a3539902bfd3d357efb4a1d6aa001e23b7e5bb6ef348af53a126cbe2a1f9",
+    "preparationSha256": "2260bec72aaa382f0db66432d404e3d76820d7bb43551fb183ccfcb623b10264",
+    "nutritionSha256": "1ebb2831f91cf4c947d9dba5f92ba93e64f39b58e57642a69f82eb2787933201",
+    "condition": {
+      "fi": "Yksi annos on neljäsosa valmiista puurosta. Siihen tulee noin 38 g täysjyväruisjauhoja. Määrä on laskettu Finelin kotitalousmitalla.",
+      "en": "One serving is one quarter of the cooked porridge and uses about 38 g of wholegrain rye flour. The weight is estimated from Fineli’s household measure.",
+      "sv": "En portion är en fjärdedel av den färdiga gröten och innehåller cirka 38 g fullkornsrågmjöl. Vikten är beräknad med Finelis hushållsmått.",
+      "th": "หนึ่งที่คือหนึ่งในสี่ของโจ๊กที่ปรุงเสร็จ และใช้แป้งไรย์โฮลเกรนประมาณ 38 กรัม น้ำหนักนี้ประมาณจากหน่วยตวงในครัวเรือนของ Fineli"
+    },
+    "reasoning": "Dry flour mass is inferred from the Finland food-specific 55 g/dL factor, not a weighed recipe input. Available carbohydrate from rye and sugar total 38.378784375 g of 43.03 g. Neither study directly measures the combined boiled recipe or gives a glucose-scale GI for that whole serving.",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/ruis-puolukkapuuro.json",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/ruis-puolukkapuuro.json"
+  },
+  "raparperikiisseli": {
+    "recipeBindingSha256": "cdf131883373085211a76ac9c233a7b1611adbb5c3a564ea80d92980a67be1cc",
+    "preparationSha256": "ae63d29e188edb44d765962d04315a9b73589ee9b38f85a8354f90baf7643a3d",
+    "nutritionSha256": "e9cbf02151e7f4af55176b676cdf183170215116b9924974e466c1061a9cfe89",
+    "condition": {
+      "fi": "Jaa valmis kiisseli kahdeksaan yhtä suureen annokseen. Ohjeen sokerista tulee yhteen annokseen noin 21 g. Määrä on laskettu Finelin kotitalousmitalla.",
+      "en": "Divide the finished kissel into eight equal servings. Each serving contains about 21 g of the sugar added in the recipe. The weight is estimated from Fineli’s household measure.",
+      "sv": "Fördela den färdiga krämen i åtta lika stora portioner. Varje portion innehåller cirka 21 g av sockret som tillsätts enligt receptet. Vikten är beräknad med Finelis hushållsmått.",
+      "th": "แบ่งของหวานรูบาร์บที่ปรุงเสร็จเป็นแปดส่วนเท่า ๆ กัน น้ำตาลที่เติมตามสูตรคิดเป็นประมาณ 21 กรัมต่อหนึ่งที่ น้ำหนักนี้ประมาณจากหน่วยตวงในครัวเรือนของ Fineli"
+    },
+    "reasoning": "Fineli sugar measure uses 85 g/dL, so recipe sugar is about 21.25 g per serving and contributes 21.22875 g available carbohydrate. This is a volume-to-weight reference. The potato starch cook, rhubarb and matrix lack a comparable human preparation.",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/raparperikiisseli.json",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/raparperikiisseli.json"
+  },
+  "belgialainen-proteiini-vohveli": {
+    "recipeBindingSha256": "56bde9ad79d3fd255d0baa1beab052045cc513e46267adb1a033685d357f1ff6",
+    "preparationSha256": "1541c573facdef7a10c1f464ee847b42519302c24e8cc59dd94a8c9490670c1d",
+    "nutritionSha256": "87c991beb5e5128eb9e8b6b9cca9f8fff019ef1ddb33987973468a5be85f2f99",
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "004a8ed2fcc7bcd293ac4f86fd3897e5a4bcf07eb4a43f4e9dbfef260e5a0190",
+      "unit": "g",
+      "labels": {
+        "fi": "Kaurajauhoja",
+        "en": "Oat flour",
+        "sv": "Havremjöl",
+        "th": "แป้งข้าวโอ๊ต"
+      },
+      "availableCarbsGPer100g": 63.877
+    },
+    "condition": {
+      "fi": "Jaa kaikki paistetut vohvelit kahteen yhtä suureen annokseen. Vohvelien määrä riippuu raudan koosta.",
+      "en": "Divide all the cooked waffles into two equal servings. The number of waffles depends on the size of the iron.",
+      "sv": "Fördela alla gräddade våfflor i två lika stora portioner. Antalet våfflor beror på järnets storlek.",
+      "th": "แบ่งวาฟเฟิลที่ทำเสร็จทั้งหมดเป็นสองส่วนเท่า ๆ กัน จำนวนชิ้นขึ้นอยู่กับขนาดเตาวาฟเฟิล"
+    },
+    "reasoning": "One serving is half the batter cooked on the waffle iron, irrespective of count. The two named flour inputs together give 37.76047 of 40.39 g available carbohydrate per serving. The oven-baked single-flour muffin and coconut-milk pandan waffle cannot determine a class for the oat/wheat flour batter made with eggs, heavy cream and butter on the waffle iron.",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30190",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/belgialainen-proteiini-vohveli.json"
+  },
+  "omena-kaurapaistos": {
+    "recipeBindingSha256": "79aa386c3c88925b8c0d74c93ff4b0934f509ab0ae0e83788e162610022b74c1",
+    "preparationSha256": "0ea4b4d1c6d85a918fb33179f2cd65a55d7833a132bc0c6106a3be1f85bc09c8",
+    "nutritionSha256": "bb16f11c023388483e1043c612668b3ec374582cac1dae8284792734cfee1f41",
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "4b039a7c628ba6f903fb9231a3a09e04686eade49bb01cc615c5c71166f5cbdd",
+      "unit": "g",
+      "labels": {
+        "fi": "Omenaa kuorittuna ja siemenkota poistettuna",
+        "en": "Peeled and cored apple",
+        "sv": "Skalat och urkärnat äpple",
+        "th": "แอปเปิลปอกเปลือกและเอาแกนออก"
+      },
+      "availableCarbsGPer100g": 8.31
+    },
+    "condition": {
+      "fi": "Jaa paistos neljään yhtä suureen annokseen niin, että jokaiseen tulee omenoita ja kauramurua. Annosarvio kattaa paistoksen sellaisenaan.",
+      "en": "Divide the crumble into four equal servings, each with apples and oat topping. The estimate covers the crumble on its own.",
+      "sv": "Dela smulpajen i fyra lika stora portioner med äpple och havresmul i alla. Uppskattningen gäller pajen utan tillbehör.",
+      "th": "แบ่งแอปเปิลครัมเบิลเป็นสี่ส่วนเท่า ๆ กัน ให้ทุกส่วนมีทั้งแอปเปิลและครัมเบิลข้าวโอ๊ต ค่าประมาณครอบคลุมเฉพาะตัวครัมเบิลตามสูตร"
+    },
+    "reasoning": "Whole portion 45 g available carbohydrate includes 17.65875 g from apples, 16.35 g from dry rolled oats and 10.614375 g from granulated sugar. Fruit must be weighed after peeling and coring. Divide both layers evenly. The recipe is baked at 200 C for 20–25 minutes. Available carbohydrate reflects the crumble without added sides. No prepared apple/oat/sugar/butter GI or GK class is assigned.",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11060",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/omena-kaurapaistos.json"
+  },
+  "proteiinivihannes-sose": {
+    "recipeBindingSha256": "d9ecff481ff5d8884b185d5b4d08b99e386a03ee0f915e112b7e60302c5ba805",
+    "preparationSha256": "c337f09b077967955006950402018d7f1458d59529036124508e8370032892df",
+    "nutritionSha256": "16d976fe8a9c8b62f98991f03694dfd924514ce25cd45caa648f3d4369735995",
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "bf68adda99fd8493db02c3a807f000b27d37fa78e3fad0be611b05c7981b241d",
+      "unit": "g",
+      "labels": {
+        "fi": "Keitettyä ja valutettua perunaa",
+        "en": "Boiled and drained potato",
+        "sv": "Kokt och avrunnen potatis",
+        "th": "มันฝรั่งต้มที่สะเด็ดน้ำแล้ว"
+      },
+      "availableCarbsGPer100g": 15.5
+    },
+    "condition": {
+      "fi": "Jaa uunivuoka neljään yhtä suureen annokseen. Punnitse perunat keitettyinä ja valutettuina ennen survomista.",
+      "en": "Divide the casserole into four equal servings. Weigh the potatoes after boiling and draining, before mashing them.",
+      "sv": "Dela gratängen i fyra lika stora portioner. Väg potatisen efter kokning och avrinning, innan du mosar den.",
+      "th": "แบ่งอาหารอบเป็นสี่ส่วนเท่า ๆ กัน ชั่งมันฝรั่งหลังต้มและสะเด็ดน้ำก่อนบด"
+    },
+    "reasoning": "The recipe weighs 400 g of potato after boiling and draining. Fineli 11511 matches boiled unsalted potato at 15.5 g available carbohydrate per 100 g. One quarter of the prepared dish therefore accounts for 100 g of that cooked potato and 15.5 of 23.70 g available carbohydrate. Separate potato and mixed-potato studies do not resolve the dish with cauliflower, carrot, cottage cheese, cream, pork and egg.",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11511",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/proteiinivihannes-sose.json"
+  },
+  "kesakurpitsa-perunapata": {
+    "recipeBindingSha256": "02feed67f9036b1ac28f30256ad5449d8a3c266e21618906f9ff41f86a64be70",
+    "preparationSha256": "5a7b0f4587c41b79dca80fa1c279b5087c9969599c73ada107084fdc915271cb",
+    "nutritionSha256": "deab957b84760e37a25bde554a0f10dc2002e8864cb1385cab67da749ae35c97",
+    "ingredientPortion": {
+      "index": 1,
+      "ingredientSha256": "85c755154e999bd4315334fa305328cd34fa080b5fc51e621d4097ac6dc3c594",
+      "unit": "g",
+      "labels": {
+        "fi": "Kiinteää perunaa kuorittuna ennen kypsennystä",
+        "en": "Firm potato, peeled and weighed raw",
+        "sv": "Fast potatis, skalad och vägd rå",
+        "th": "มันฝรั่งเนื้อแน่น ปอกเปลือกและชั่งขณะดิบ"
+      },
+      "availableCarbsGPer100g": 15.5
+    },
+    "condition": {
+      "fi": "Jaa valmis pata kuuteen yhtä suureen annokseen. Jaa perunaviipaleet tasan annoksiin.",
+      "en": "Divide the finished stew into six equal servings. Distribute the potato slices evenly among them.",
+      "sv": "Fördela den färdiga grytan i sex lika stora portioner. Fördela potatisskivorna jämnt mellan portionerna.",
+      "th": "แบ่งสตูที่ปรุงเสร็จเป็นหกส่วนเท่า ๆ กัน กระจายมันฝรั่งหั่นแผ่นให้เท่ากันทุกส่วน"
+    },
+    "reasoning": "One of six servings contains about 133.33 g raw peeled firm potato input, or 20.6667 of 31.26 g available carbohydrate at Fineli 205 values. The raw weighing state anchors the carbohydrate estimate. The cooked mixed matrix and potato cultivar remain unresolved for GK.",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/205",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/kesakurpitsa-perunapata.json"
+  },
+  "medu-vada": {
+    "recipeBindingSha256": "aa3e9b70f93d1bf23392480de8646232e27ffa701d030ee4bdbfb8c9618c0e57",
+    "preparationSha256": "8925157a3a4306a71686f5f3af8d9610723c7189015c0d9bf77432dd8c61354c",
+    "reviewedAt": "2026-11-18",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9304465/",
+    "reasoning": "Urad dal contributes approximately 90% of the recipe's approved modeled GK 10.7739 using the broad Atkinson legume mean of 34, just above the medium boundary. User portion has one quarter of the fried rings. No sambar or chutney is in the ingredient accounting. Shakappa et al. test vada served with sambar at a standardized 50 g carbohydrate load against glucose; that is a separate mixed meal with different scope and its GI must not replace the plain recipe estimate. Retain the approved model value, identify the food and scope, and withhold its otherwise unconditional category.",
+    "condition": {
+      "fi": "Arvio koskee neljäsosaa reseptin friteeratuista linssirenkaista. Laske sambar tai chutney erikseen.",
+      "en": "The estimate covers one quarter of the fried lentil rings from the recipe. Count any sambar or chutney separately.",
+      "sv": "Uppskattningen gäller en fjärdedel av receptets friterade linsringar. Räkna sambar eller chutney separat.",
+      "th": "ค่าประมาณนี้ครอบคลุมหนึ่งในสี่ของขนมถั่วอูรัดทอดตามสูตร คิดซัมบาร์หรือชัทนีย์ที่เสิร์ฟแยกต่างหาก"
+    },
+    "classLimitation": {
+      "fi": "Urad-dalin osuus perustuu palkokasviryhmän GI-keskiarvoon. Vertailututkimuksessa mitattiin vadaa sambarin kanssa. Reseptin omien renkaiden GK-luokka jää avoimeksi.",
+      "en": "The urad dal contribution uses an average GI for legumes. The comparison study tested vada served with sambar. The GL category of the rings in this recipe remains uncertain.",
+      "sv": "Bidraget från urad dal bygger på ett genomsnittligt GI för baljväxter. I jämförelsestudien testades vada serverad med sambar. GL-kategorin för ringarna i receptet är osäker.",
+      "th": "ส่วนของถั่วอูรัดใช้ค่า GI เฉลี่ยของกลุ่มถั่ว งานวิจัยที่ใช้เปรียบเทียบทดสอบวาดาที่เสิร์ฟกับซัมบาร์ ระดับ GL ของขนมถั่วทอดตามสูตรนี้ยังไม่แน่ชัด"
+    }
+  },
+  "mustikka-jogurttijaatelo": {
+    "recipeBindingSha256": "059b4f0bd622c9a227ca6089cc7ae5874aabb775ba373519cb241dcb21c13125",
+    "preparationSha256": "a4d6f28ba6d55b9abc07293bb36774f3c472b65c251916be0e089de3e2033494",
+    "nutritionSha256": "70448d46c440f220ce6a77e615e20a4ffdeb7c58effe35b48e9d155aff1359b7",
+    "reviewedAt": "2026-11-18",
+    "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009350",
+    "publicSource": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009350",
+    "reasoning": "The four weighed ingredients are blended and frozen with all solids and juices retained, then counted as one of four original portions. Use Finland's Fineli #442 wild bilberry as a whole-unsweetened Finnish reference; the recipe blends the berries while frozen without discarding any liquid. Comparable varieties/country sources range around the value and the prepared dessert is not assayed. AFCD F009350 formally reports available CHO without sugar alcohols for an alcohol-based extract, regardless of unavailable separate polyols. Recipe is explicitly scoped to ordinary runny honey and 10%-fat plain Greek yoghurt for the input estimate. Macro endpoints and GK remain held.",
+    "condition": {
+      "fi": "Arvio koskee neljäsosaa jäätelöerästä. Laskenta käyttää 10-prosenttista maustamatonta kreikkalaista jogurttia, kotimaisia sokeroimattomia pakastemetsämustikoita, tavallista hunajaa ja alkoholipohjaista vaniljauutetta. Vaniljauutteen koostumustieto on Australian elintarviketietokannasta.",
+      "en": "The estimate is for one quarter of the batch. It uses plain 10%-fat Greek yogurt, unsweetened frozen Finnish bilberries, ordinary honey and an alcohol-based vanilla extract. The vanilla extract data come from the Australian Food Composition Database.",
+      "sv": "Uppskattningen gäller en fjärdedel av satsen och bygger på naturell grekisk yoghurt med 10 % fett, osötade frysta finska skogsblåbär, vanlig honung och alkoholbaserat vaniljextrakt. Uppgiften om vaniljextrakt kommer från Australiens livsmedelsdatabas.",
+      "th": "ค่าประมาณสำหรับหนึ่งในสี่ของไอศกรีมที่ทำได้ คำนวณจากโยเกิร์ตกรีกรสธรรมชาติไขมัน 10% บิลเบอร์รีป่าแช่แข็งจากฟินแลนด์ชนิดไม่เติมน้ำตาล น้ำผึ้งธรรมดา และสารสกัดวานิลลาที่ใช้แอลกอฮอล์ ข้อมูลของสารสกัดวานิลลามาจากฐานข้อมูลองค์ประกอบอาหารของออสเตรเลีย"
+    },
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "48b749207f57af66ea7c84483d48ea5cdebddcd8501e018318ea0ffeeae94b57",
+        "en": "e4a39bfdea0182cf55fa1cd606d60e4b6c0b9069bb3d87f7fff77525c0986247",
+        "sv": "9f35992ff0b4a647dd725ddb08fbaff36a518adafd89325750e661ea579d5018",
+        "th": "5425360049af61d13ce0ff430723d8e46d31c46f5590c02ea44f1d65f4db1ef5"
+      }
+    }
+  },
+  "porkkanaletut": {
+    "recipeBindingSha256": "8e9edf20ddeef3193d517ceb109dcf948c6cb9616f86483a36c53713d53163aa",
+    "preparationSha256": "d1fd0ae6c1ddb2f5036141102f3fc7991dda722ecaa05b5b7b6692dc60d8fc8b",
+    "nutritionSha256": "aa6657109a51b114f9d8aeb1de0d8845884f5722ce14fcf5ff996c6a40317136",
+    "reviewedAt": "2026-11-18",
+    "source": "https://apetit.fi/tuotteet/apetit-kotimainen-porkkanasose-paloina-45-kg/",
+    "reasoning": "Recipe weighs 500 g plain pureed carrot and divides the complete batter into four. The source-backed conditional comparison uses Apetit exact unsweetened 100% carrot frozen purée 1.5 kg, EAN 6430104951641, which declares 5.7 g label carbohydrate / 100 g. The recipe does not name a product or specify how homemade purée was prepared. Therefore keep 125 g as the structured measured ingredient and the 7.1 g label figure as an explicitly named conditional example. Preserve original instructions and require following package preparation when using that product.",
+    "condition": {
+      "fi": "Jos käytät Apetitin maustamatonta pakasteporkkanasosetta (EAN 6430104951641), yhdelle reseptiannokselle käytettävässä 125 grammassa on pakkauksen mukaan noin 7,1 g hiilihydraattia. Noudata pakkauksen kuumennusohjetta.",
+      "en": "If you use Apetit plain frozen carrot purée (EAN 6430104951641), its label gives about 7.1 g of carbohydrate in the 125 g used per recipe serving. Follow the heating instructions on the pack.",
+      "sv": "Om du använder Apetits naturella frysta morotspuré (EAN 6430104951641) ger de 125 g som används per receptportion enligt förpackningen cirka 7,1 g kolhydrater. Följ värmningsanvisningen på förpackningen.",
+      "th": "หากใช้แครอตบดแช่แข็งไม่ปรุงรส Apetit (EAN 6430104951641) ปริมาณ 125 กรัมต่อหนึ่งที่ตามสูตรให้คาร์โบไฮเดรตตามฉลากประมาณ 7.1 กรัม ให้ทำตามคำแนะนำในการให้ความร้อนบนบรรจุภัณฑ์"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "d039318ea1eb2dc792bdee056bd4e0a6c5f47935d996f1e0a29b1ab9920225d5",
+      "labels": {
+        "fi": "Maustamaton porkkanasose",
+        "en": "Plain carrot purée",
+        "sv": "Naturell morotspuré",
+        "th": "แครอตบดไม่ปรุงรส"
+      },
+      "unit": "g"
     }
   }
 }

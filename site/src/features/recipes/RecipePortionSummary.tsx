@@ -132,6 +132,13 @@ export function IngredientPortionDetails({ ingredient, locale, multiplier = 1 }:
       <dt>{declared ? t.declaredIngredientCarbs : t.ingredientCarbs}</dt>
       <dd>{t.about} {formatCarbs(carbohydrate * multiplier, locale)} {gram}</dd>
     </div> : null}
+    {ingredient.carbohydrateAlternatives ? <div data-ingredient-carbohydrate="available-alternatives">
+      <dt>{t.ingredientCarbs}</dt>
+      {ingredient.carbohydrateAlternatives.map(choice => <dd key={choice.label[locale]} data-ingredient-carb-alternative>
+        <a href={choice.source} rel="noopener noreferrer">{choice.label[locale]}</a>
+        {" · "}{t.about} {formatCarbs(choice.availableCarbsGPerServing * multiplier, locale)} {gram}
+      </dd>)}
+    </div> : null}
   </dl>;
 }
 
@@ -189,7 +196,8 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batc
     </div>
     {ingredient ? <p>{evidence?.driver?.coversMajority ? t.main(ingredient) : t.known(ingredient)}</p> : null}
     <p className="recipe-disclosure">{evidence?.condition?.[locale] ?? t.scope}</p>
-    {evidence?.reviewedSource && !evidence.verbal && (evidence.condition || ingredient || evidence.ingredientPortion) ? <p className="recipe-disclosure">
+    {evidence?.reviewedSource && !evidence.verbal && (evidence.condition || evidence.classLimitation || ingredient || evidence.ingredientPortion)
+      && !evidence.ingredientPortion?.carbohydrateAlternatives?.some(choice => choice.source === evidence.reviewedSource) ? <p className="recipe-disclosure">
       <ReviewedPortionSource source={evidence.reviewedSource} locale={locale} />
     </p> : null}
   </div>;
