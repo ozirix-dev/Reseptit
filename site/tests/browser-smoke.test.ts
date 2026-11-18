@@ -610,6 +610,16 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
         assert.equal(await page.locator("[data-portion-gk], [data-original-gk-class]").count(), 0);
       }
     }
+    const soupComparison = page.locator("[data-compared-carbohydrates]");
+    assert.match(await soupComparison.innerText(), /43,6 g/);
+    assert.equal(await soupComparison.getByRole("link").getAttribute("href"), routeFor("pinaattikeitto"));
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("0.5");
+    assert.match(await soupComparison.innerText(), /10,9 g/);
+    await page.goto(base + routeFor("mustaherukkavispipuuro"));
+    assert.match(await page.locator(".recipe-portion").innerText(), /200 g[\s\S]*140 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.match(await page.locator('[data-portion-carbohydrate="available"]').innerText(), /58 g$/);
+    assert.equal(await page.locator("[data-portion-gk], [data-original-gk-class]").count(), 0);
     await page.goto(base + routeFor("paneer-tikka"));
     const pepperAmount = page.locator("[data-ingredient-portion] dd");
     assert.match(await pepperAmount.innerText(), /0,25 kpl$/);

@@ -571,6 +571,7 @@ test("whole-portion comparisons link to the exact other recipe in each shared la
   for (const [[left, leftAmount], [right, rightAmount]] of [
     [["paahtopaistileivat-kauralesesampyloilla", 4.57], ["paahtopaistileipa-piparjuurikastikkeella", 22.70]],
     [["avokado-perunasampylat", 5.42], ["avokado-perunasampylat-pellilla", 7.01]],
+    [["pinaattikeitto", 21.82], ["palsternakkasosekeitto", 30.59]],
   ] as const) {
     for (const [id, other, amount] of [[left, right, rightAmount], [right, left, leftAmount]] as const) {
       for (const { locale, routePath } of siteContent.recipes.filter(recipe => recipe.recipeId === id)) {
@@ -635,7 +636,42 @@ test("reviewed seasoning, syrup and dressing quantities stay scoped to their nam
       assert.ok(html.includes(renderToStaticMarkup(createElement("p", {className: "recipe-disclosure"}, condition))), routePath);
       assert.ok(html.includes('href="' + reviews[id].publicSource + '"'), routePath);
       assert.doesNotMatch(html, /data-portion-carbohydrate=|data-portion-gk=|data-gk-status="(?:CALCULATED|QUALITATIVE)"/, routePath);
+      if (id === "kaali-omenasalaatti") {
+        assert.ok(condition.includes(new Intl.NumberFormat(locale).format(5.5)), routePath);
+        const guide = await readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8");
+        const start = guide.indexOf(`id="${id}"`);
+        const row = guide.slice(start, guide.indexOf("<li ", start + 1));
+        assert.ok(row.includes(renderToStaticMarkup(createElement("p", null, condition))), routePath);
+        assert.doesNotMatch(row, /gk-evidence__value|data-original-gk-class=/, routePath);
+      }
     }
+  }
+});
+
+test("the dark semolina measure is visible before the whole porridge estimate in all locales", async () => {
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  const id = "mustaherukkavispipuuro";
+  for (const recipe of siteContent.recipes.filter(entry => entry.recipeId === id)) {
+    const { locale, routePath } = recipe;
+    const [html, guide] = await Promise.all([
+      readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8"),
+      readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8"),
+    ]);
+    const scope = reviews[id].carbohydrateScope![locale];
+    const start = guide.indexOf(`id="${id}"`);
+    const row = guide.slice(start, guide.indexOf("<li ", start + 1));
+    const escaped = renderToStaticMarkup(createElement("p", null, scope)).slice(3, -4);
+    for (const markup of [html, row]) {
+      assert.match(scope, /200/);
+      assert.match(scope, /140/);
+      const estimate = locale === "th" ? /29(?:<!-- -->|\s)+กรัม/ : /29(?:<!-- -->|\s)+g/;
+      const scopeIndex = markup.indexOf(escaped);
+      assert.ok(scopeIndex >= 0 && scopeIndex < markup.search(estimate), routePath);
+      assert.ok(markup.includes('href="' + reviews[id].publicSource + '"'), routePath);
+      assert.ok(markup.includes('href="' + reviews[id].ingredientPortion!.source + '"'), routePath);
+    }
+    assert.doesNotMatch(html, /data-portion-gk=|data-gk-status="(?:CALCULATED|QUALITATIVE)"/, routePath);
+    assert.doesNotMatch(row, /gk-evidence__value|data-original-gk-class=/, routePath);
   }
 });
 

@@ -64,10 +64,10 @@
     "source": "https://fineli.fi/fineli/content/file/8/Fineli_data_file_instructions",
     "nutritionSha256": "48feeebabd57625bbb4ed92649d159435d7fcf2b727084514c96b7ceba21ec34",
     "condition": {
-      "fi": "Kun 1 dl Felix Caesar -salaattikastiketta (EAN 6417808290610) jaetaan kuuteen annokseen, kastikkeesta tulee valmistajan mukaan noin 1,3 g hiilihydraattia annosta kohti.",
-      "en": "If you use Felix Caesar dressing (EAN 6417808290610), the recipe’s 100 ml adds about 1.3 g carbohydrate from the dressing per sixth of the salad, using the manufacturer’s nutrition information.",
-      "sv": "Om du använder Felix caesardressing (EAN 6417808290610) bidrar receptets 1 dl med cirka 1,3 g kolhydrater från dressingen per portion när salladen delas i sex enligt tillverkarens näringsuppgifter.",
-      "th": "หากใช้น้ำสลัดซีซาร์ Felix (EAN 6417808290610) น้ำสลัด 100 มิลลิลิตรตามสูตรให้คาร์โบไฮเดรตจากน้ำสลัดประมาณ 1.3 กรัมต่อหนึ่งในหกของสลัด ตามข้อมูลโภชนาการของผู้ผลิต"
+      "fi": "Finelin koostumustiedoilla laskettuna kaalista, omenasta ja porkkanasta tulee noin 5,5 g imeytyvää hiilihydraattia yhtä kuudesta reseptiannoksesta kohti. Kastikkeen hiilihydraatit tulevat lisäksi. Kun 1 dl Felix Caesar -salaattikastiketta (EAN 6417808290610) jaetaan kuuteen annokseen, kastikkeesta tulee valmistajan mukaan noin 1,3 g hiilihydraattia annosta kohti. Jos käytät muuta kastiketta, tarkista sen hiilihydraatit pakkauksesta.",
+      "en": "Using Fineli’s composition data, cabbage, apple and carrot provide about 5.5 g of available carbohydrate per one sixth of the recipe. Add any carbohydrate from the dressing separately. If you use Felix Caesar dressing (EAN 6417808290610), the recipe’s 100 ml adds about 1.3 g carbohydrate from the dressing per sixth of the salad, using the manufacturer’s nutrition information. If you use another dressing, check its carbohydrate content on the label.",
+      "sv": "Med Finelis näringsvärden ger kål, äpple och morot cirka 5,5 g tillgängliga kolhydrater i en sjättedel av receptet. Dressingen bidrar med ytterligare kolhydrater. Om du använder Felix caesardressing (EAN 6417808290610) bidrar receptets 1 dl med cirka 1,3 g kolhydrater från dressingen per portion när salladen delas i sex enligt tillverkarens näringsuppgifter. Om du använder en annan dressing, kontrollera kolhydratmängden på förpackningen.",
+      "th": "เมื่อคำนวณด้วยข้อมูลองค์ประกอบอาหารของ Fineli กะหล่ำปลี แอปเปิล และแครอตให้คาร์โบไฮเดรตที่ย่อยได้ประมาณ 5.5 กรัมต่อหนึ่งในหกของสูตร คิดคาร์โบไฮเดรตจากน้ำสลัดเพิ่มแยกต่างหาก หากใช้น้ำสลัดซีซาร์ Felix (EAN 6417808290610) น้ำสลัด 100 มิลลิลิตรตามสูตรให้คาร์โบไฮเดรตจากน้ำสลัดประมาณ 1.3 กรัมต่อหนึ่งในหกของสลัด ตามข้อมูลโภชนาการของผู้ผลิต หากใช้น้ำสลัดชนิดอื่น ให้ตรวจปริมาณคาร์โบไฮเดรตบนฉลาก"
     },
     "preparationSha256": "5fa7fe4e55a4042a196d995f703655be26e24e64849927cbb2dfbce34e8f8252",
     "publicSource": "https://www.felix.fi/tuote/felix-caesar-salaattikastike-375-g/"
@@ -1759,7 +1759,8 @@
         "th": "มันฝรั่งต้มทั้งเปลือก"
       },
       "unit": "g",
-      "availableCarbsGPer100g": 13.175
+      "availableCarbsGPer100g": 13.175,
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/28955"
     },
     "wholeCarbohydrateOnly": {
       "localizedScopeSha256": {
@@ -1818,7 +1819,8 @@
           "matchEvidence": "Norway Matvaretabellen #06.154 finely ground dried garlic matches the recipe's powder. The food reports 63.7 g available carbohydrate as 61.3 g starch + 2.4 g sugar. It excludes fibre and separate polyols by the CHO component method MI0181."
         }
       ]
-    }
+    },
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/655a7a12d5b1edc69e6c5344c1108684bcc29b60/docs/nutrition/gk-reviewed-portions.json#L1499"
   },
   "karnivore-rapeat-kananreisipalat": {
     "reviewedAt": "2026-11-18",
@@ -2795,8 +2797,8 @@
     "preparationSha256": "9e667b27c92f4da090d3d4498ceb902a6a6935a0fa6e422cd88dd07da1ee37d6",
     "nutritionSha256": "c585b98cca34196f22b428a6a77e4cc12ac7c80cd2b5c0bae2a9c5ef3529bd48",
     "reviewedAt": "2026-11-18",
-    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/444",
-    "reasoning": "One eighth of the entire cooked and whipped preparation including the whole unstrained blackcurrant puree. The base counts dark semolina, unsweetened blackcurrants and both sugars using Fineli food-specific weights and available-carbohydrate records. Reference berry composition is for fresh unsweetened berries. Fresh or unsweetened frozen berries supply roughly the same input scope; no milk or added serving sugar is listed.",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/mustaherukkavispipuuro.json",
+    "reasoning": "One eighth of the entire cooked and whipped preparation including the whole unstrained blackcurrant puree. The base counts dark semolina, unsweetened blackcurrants and both sugars using Fineli food-specific weights and available-carbohydrate records. Reference berry composition is for fresh unsweetened berries. Fresh or unsweetened frozen berries supply roughly the same input scope; no milk or added serving sugar is listed. The Fineli #113 household conversion assigns 100 g/dL and 59.4 g/100 g available carbohydrate. The 2025 Lantmännen Cerealia food-service catalogue p. 14 separately gives 700 g/L for the named Myllyn Paras dark 5 kg product (supplier 142322, GTIN 6417700051258). The 140 g batch is a product-specific volume example. It does not replace the Fineli estimate for unspecified dark semolina. The product’s declared carbohydrate and the Fineli available-carbohydrate reference are distinct.",
     "condition": {
       "fi": "Jaa valmis puuro kahdeksaan yhtä suureen annokseen. Arvio sisältää tummat mannasuurimot, mustaherukat ja ohjeen sokerit. Laske erikseen tarjoiluun lisättävä maito tai sokeri.",
       "en": "Divide the finished pudding into eight equal portions. The estimate includes dark semolina, blackcurrants and the sugars in the recipe. Count any milk or sugar added at serving separately.",
@@ -2813,9 +2815,10 @@
         "th": "แบล็กเคอร์แรนต์ก่อนต้ม"
       },
       "unit": "g",
-      "availableCarbsGPer100g": 9.716
+      "availableCarbsGPer100g": 9.716,
+      "source": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/mustaherukkavispipuuro.json"
     },
-    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/mustaherukkavispipuuro.json",
+    "publicSource": "https://www.lantmannencerealia.fi/siteassets/3.-produkter/fi/produktkatalog/lmc_food-service_tuotekuvasto_2025_syksy.pdf#page=14",
     "wholeCarbohydrateOnly": {
       "localizedScopeSha256": {
         "fi": "92fa9c42a4d369bcabe46c5bcf36ca29014600468c05683bd6d1b643d9a50ef9",
@@ -2823,6 +2826,18 @@
         "en": "b60241e18684b23218573c00f1561631d5e9501d6e67457b2393668d6810a74f",
         "th": "b9db20a3d781f74c68dafde6dbcbb3e62b801f7aed36b44d55b6a457f2b45574"
       }
+    },
+    "carbohydrateScope": {
+      "fi": "Annosarvio käyttää Finelin kotitalousmittaa. Sen mukaan alkuperäisen ohjeen 2 dl kuivia tummia mannasuurimoita painaa 200 g. Myllyn Parhaan tumman 5 kg:n tuotteen valmistajamitta antaa samalle tilavuudelle noin 140 g. Punnitse käyttämäsi suurimot kuivina ja tarkista pakkauksen hiilihydraatit.",
+      "en": "The serving estimate uses Fineli’s household measure of 200 g for the original recipe’s 200 mL of dry dark semolina. The manufacturer lists about 140 g for the same volume of Myllyn Paras dark semolina from the 5 kg pack. Weigh your semolina dry and check the carbohydrate content on its label.",
+      "sv": "Portionsuppskattningen använder Finelis hushållsmått, där satsens 2 dl torra mörka mannagryn väger 200 g. Enligt tillverkaren väger samma volym av Myllyn Paras mörka mannagryn i 5 kg-förpackningen cirka 140 g. Väg dina gryn torra och kontrollera kolhydratmängden på förpackningen.",
+      "th": "ค่าประมาณต่อหนึ่งที่ใช้เกณฑ์ตวงของ Fineli ซึ่งคิดว่าเซโมลินาสีเข้มแบบแห้ง 200 มิลลิลิตรสำหรับทั้งสูตรหนัก 200 กรัม ผู้ผลิตระบุว่าผลิตภัณฑ์ Myllyn Paras ชนิดสีเข้มบรรจุ 5 กิโลกรัมในปริมาตรเท่ากันหนักประมาณ 140 กรัม ชั่งเซโมลินาที่ใช้ขณะยังแห้งและตรวจปริมาณคาร์โบไฮเดรตบนฉลาก"
+    },
+    "localizedScopeSha256": {
+      "fi": "92fa9c42a4d369bcabe46c5bcf36ca29014600468c05683bd6d1b643d9a50ef9",
+      "sv": "a91427e5838e2982136ac924388947dbb4bd83175e2f8f0b31dac49d6b90f789",
+      "en": "b60241e18684b23218573c00f1561631d5e9501d6e67457b2393668d6810a74f",
+      "th": "b9db20a3d781f74c68dafde6dbcbb3e62b801f7aed36b44d55b6a457f2b45574"
     }
   },
   "kookos-linssikeitto": {
@@ -3966,7 +3981,8 @@
     "reasoning": "Milk supplies 12 g of 21.82 g available carbohydrate per bowl. Roux flour supplies 9.01850625 g. The milk trials cannot fix the response of boiling flour in a milk and butter roux; applying plausible flour comparisons can cross GK 10.",
     "reviewedAt": "2026-11-18",
     "source": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/pinaattikeitto.json",
-    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/pinaattikeitto.json"
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/4f61594582e46cf83cd186d13cea866d310941c0/docs/nutrition/calculations/pinaattikeitto.json",
+    "carbohydrateComparisonRecipeId": "palsternakkasosekeitto"
   },
   "ruis-puolukkapuuro": {
     "recipeBindingSha256": "b5c6a3539902bfd3d357efb4a1d6aa001e23b7e5bb6ef348af53a126cbe2a1f9",
@@ -5419,7 +5435,8 @@
       "en": "One serving is a quarter of the soup, including the cream. Weigh the parsnips and potatoes after peeling and before cooking. The parsnips and potatoes each contribute about 14 g of carbohydrate per serving.",
       "sv": "En portion är en fjärdedel av soppan med grädde. Väg palsternackan och potatisen efter skalning och före kokning. Palsternackan och potatisen bidrar med cirka 14 g kolhydrater vardera per portion.",
       "th": "หนึ่งที่คือหนึ่งในสี่ของซุปรวมครีม ชั่งพาร์สนิปและมันฝรั่งหลังปอกเปลือกและก่อนต้ม พาร์สนิปและมันฝรั่งให้คาร์โบไฮเดรตอย่างละประมาณ 14 กรัมต่อหนึ่งที่"
-    }
+    },
+    "carbohydrateComparisonRecipeId": "pinaattikeitto"
   },
   "keto-mutakakku": {
     "recipeBindingSha256": "61ba06885129ef05d9e2b696c02f5569383e49bec368d8ddb7b6284ca50c4a7e",
