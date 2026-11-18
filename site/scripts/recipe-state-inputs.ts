@@ -1,6 +1,7 @@
 import { execFileSync } from "node:child_process";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import { isDeepStrictEqual } from "node:util";
 import { z } from "zod";
 import { parseMarkdown, renderInstructionSteps, renderSafeMarkdown } from "../src/content/markdown";
 import type { GkOnlyVariant } from "../src/features/recipes/gk-only-types";
@@ -42,6 +43,17 @@ interface GlycemicReport {
   gkOnlyVariants: GkOnlyVariant[];
 }
 
+type ReleasePresentationDifference = "effective-source" | "servings" | "ingredients" | "preparation" | "notes";
+
+export function onlyCookingMethodMetadataChanged(raw: string, projected: string) {
+  const original = parseMarkdown(raw);
+  const effective = parseMarkdown(projected);
+  if (!original || !effective || original.content !== effective.content) return false;
+  const { cooking_method: originalMethod, ...originalMetadata } = original.data;
+  const { cooking_method: effectiveMethod, ...effectiveMetadata } = effective.data;
+  return !isDeepStrictEqual(originalMethod, effectiveMethod) && isDeepStrictEqual(originalMetadata, effectiveMetadata);
+}
+
 export async function readRecipeStateInputs(sourceCommit: string) {
   const blobs = new Map(git("ls-tree", "-rz", sourceCommit, "--", "reseptit", "kaannokset", "kuvat").split("\0")
     .filter(Boolean).map(entry => {
@@ -73,29 +85,42 @@ export async function readRecipeStateInputs(sourceCommit: string) {
     .map(recipe => [recipe.recipeId, recipe]));
   const ingredientScope = (rows: RecipeEntry["ingredients"]) =>
     JSON.stringify(rows.map(row => [row.item, row.amount, row.unit, row.note ?? null]));
-  const verifiedOriginalReleasePresentation = new Set((await Promise.all(
+  const presentationChecks = await Promise.all(
     Object.entries(glycemic.originalReleaseBindings ?? {}).map(async ([id, binding]) => {
       const current = fiPublic.get(id);
       const source = sources.find(row => row.language === "fi" && row.recipe_id === id && row.file === binding.sourcePath);
-      if (!current || !source || source.hash !== binding.sourceSha256 || source.effectiveHash !== source.hash) return null;
-      const markdown = await readFile(path.join(repoRoot, source.file), "utf8");
+      if (!current || !source || source.hash !== binding.sourceSha256) return null;
+      const markdown = (await readFile(path.join(repoRoot, source.file), "utf8")).replaceAll("\r\n", "\n");
       if (contentHash(markdown) !== source.hash) return null;
       const parsed = parseMarkdown(markdown);
-      const ingredients = parsed?.data.ingredients;
-      const { instructions, notes } = recipePreparationSections(markdown.replaceAll("\r\n", "\n"));
+      if (!parsed) return null;
+      const differences: ReleasePresentationDifference[] = [];
+      if (source.effectiveHash !== source.hash) {
+        const projected = projectPublishedMarkdown(source.file, markdown);
+        if (contentHash(projected) !== source.effectiveHash || !onlyCookingMethodMetadataChanged(markdown, projected)) {
+          differences.push("effective-source");
+        }
+      }
+      const ingredients = parsed.data.ingredients;
+      const { instructions, notes } = recipePreparationSections(markdown);
       const reviewedInstructions = applyReviewedGramListSpacing(instructions, reviewedRecipeCopy(id, "fi")?.method);
       const [instructionsHtml, steps, notesHtml] = await Promise.all([
         renderSafeMarkdown(reviewedInstructions), renderInstructionSteps(reviewedInstructions), renderSafeMarkdown(notes),
       ]);
-      return parsed?.data.servings === current.servings && Array.isArray(ingredients) &&
-        ingredientScope(ingredients) === ingredientScope(current.kitchenIngredients ?? current.ingredients) &&
-        !current.ingredientPreparation?.length && instructionsHtml === current.instructionsHtml &&
-        JSON.stringify(steps) === JSON.stringify(current.instructionStepsHtml) &&
-        notesHtml === current.notesHtml ? id : null;
+      if (parsed.data.servings !== current.servings) differences.push("servings");
+      if (!Array.isArray(ingredients) ||
+          ingredientScope(ingredients) !== ingredientScope(current.kitchenIngredients ?? current.ingredients)) {
+        differences.push("ingredients");
+      }
+      if (current.ingredientPreparation?.length || instructionsHtml !== current.instructionsHtml ||
+          !isDeepStrictEqual(steps, current.instructionStepsHtml)) differences.push("preparation");
+      if (notesHtml !== current.notesHtml) differences.push("notes");
+      return [id, differences] as const;
     }),
-  )).filter((id): id is string => id !== null));
-  return { sources, review, nutrition, glycemic, publicRecipes: siteContent.recipes,
-    verifiedOriginalReleasePresentation, publicGk: glycemicLoadPilotResults, publicVariants: gkOnlyVariants, f25: f25SourceGatePreflight().rows, blobs };
+  );
+  const originalReleasePresentationDifferences = new Map(presentationChecks.filter(check => check !== null));
+  return { sources, review, nutrition, glycemic, publicRecipes: siteContent.recipes, originalReleasePresentationDifferences,
+    publicGk: glycemicLoadPilotResults, publicVariants: gkOnlyVariants, f25: f25SourceGatePreflight().rows, blobs };
 }
 
 export type RecipeStateInputs = Awaited<ReturnType<typeof readRecipeStateInputs>>;

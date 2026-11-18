@@ -54,8 +54,12 @@ vanhan reseptisidonnan ero säilyy kentässä
 alkuperäisen poikkeaman. Ohjeen vertailu hyväksyy katselmoidun
 pilkkuvälin lisäyksen grammoina ilmoitettujen ainesmäärien luetteloon,
 kun molemmat näkyvät valmistusohjeet täsmäävät sen jälkeen.
-Muuttunut julkaistu ohje, puuttuva varmennus sekä laskentasyötteen ja
-lähdeaineiston erot kuuluvat `bindingDifferences`-kenttään.
+Pelkkä `cooking_method`-luokituksen muutos sallitaan, jos muu
+lähdesisältö ja näkyvä valmistus täsmäävät. Muuttunut julkaistu ohje,
+puuttuva varmennus sekä laskentasyötteen ja lähdeaineiston erot
+kuuluvat `bindingDifferences`-kenttään. Kun alkuperäinen julkaisulähde
+täsmää, `releasePresentationDifferences` näyttää, poikkeavatko näkyvä
+lähdeversio, annosmäärä, ainekset, valmistus tai muistiinpanot.
 
 ## Lähtömittaus
 

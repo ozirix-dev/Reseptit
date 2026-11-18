@@ -10,7 +10,7 @@ import { contentManifest } from "../src/generated/routes.generated";
 import { f25SourceGatePreflight } from "../scripts/f25-source-release-gate";
 import { publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
 import { applyReviewedGramListSpacing } from "../scripts/public-recipe-copy-r2";
-import { git, readRecipeStateInputs, repoRoot, type RecipeStateInputs } from "../scripts/recipe-state-inputs";
+import { git, onlyCookingMethodMetadataChanged, readRecipeStateInputs, repoRoot, type RecipeStateInputs } from "../scripts/recipe-state-inputs";
 import { projectRecipeState } from "../scripts/recipe-state";
 import { buildRegistry, contentHash } from "../scripts/translation-review";
 
@@ -142,6 +142,14 @@ test("reviewed gram-list punctuation cannot change gram amounts, decimal commas 
   }
 });
 
+test("cooking-method metadata alone is independent of the recipe content used for GK", () => {
+  const original = "---\ncooking_method: [paistaminen]\nservings: 2\n---\n\n## Valmistus\n\nKeitä 20 minuuttia.";
+  const corrected = original.replace("paistaminen", "keittäminen");
+  assert.equal(onlyCookingMethodMetadataChanged(original, corrected), true);
+  assert.equal(onlyCookingMethodMetadataChanged(original, corrected.replace("20 minuuttia", "10 minuuttia")), false);
+  assert.equal(onlyCookingMethodMetadataChanged(original, corrected.replace("servings: 2", "servings: 3")), false);
+});
+
 test("current release pins distinguish historical source differences from open publication checks", () => {
   for (const id of ["koshari", "jauheliha-kaalikeitto-vhh", "uunikanapasta-kesakurpitsa",
     "harira", "karibia-maissipuuro-kookoksella"]) {
@@ -156,8 +164,15 @@ test("current release pins distinguish historical source differences from open p
   const editorial = withId("thai-kookosriisi-mangolla");
   assert.ok(editorial.effectiveContentHash);
   assert.ok(editorial.glycemicLoadStatus.verifiedRawGkRelease);
-  assert.ok(editorial.glycemicLoadStatus.bindingDifferences.includes("source"));
-  assert.equal(editorial.glycemicLoadStatus.historicalSourceBindingDifference, undefined);
+  assert.ok(!editorial.glycemicLoadStatus.bindingDifferences.includes("source"));
+  assert.equal(editorial.glycemicLoadStatus.historicalSourceBindingDifference, true);
+  assert.equal(editorial.glycemicLoadStatus.releasePresentationDifferences, undefined);
+  assert.deepEqual(withId("indonesialainen-bubur-ayam-kanariisipuuro").glycemicLoadStatus.releasePresentationDifferences,
+    ["effective-source", "preparation"]);
+  assert.deepEqual(withId("yangzhou-paistettu-riisi").glycemicLoadStatus.releasePresentationDifferences,
+    ["ingredients", "preparation"]);
+  assert.deepEqual(withId("uuniporsas-kermakastikkeessa-vhh").glycemicLoadStatus.releasePresentationDifferences,
+    ["preparation", "notes"]);
   for (const id of ["indonesialainen-bubur-ayam-kanariisipuuro", "yangzhou-paistettu-riisi"]) {
     const status = withId(id).glycemicLoadStatus;
     assert.ok(status.verifiedRawGkRelease, id);
@@ -166,7 +181,7 @@ test("current release pins distinguish historical source differences from open p
   }
 
   const id = "koshari";
-  const unverified = projectRecipeState(commit, { ...inputs, verifiedOriginalReleasePresentation: new Set<string>() });
+  const unverified = projectRecipeState(commit, { ...inputs, originalReleasePresentationDifferences: new Map() });
   const unverifiedStatus = unverified.recipes.find(row => row.sourceRecipeId === id)!.glycemicLoadStatus;
   assert.ok(unverifiedStatus.bindingDifferences.includes("source"));
   assert.ok(unverifiedStatus.verifiedRawGkRelease);

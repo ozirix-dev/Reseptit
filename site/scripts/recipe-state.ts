@@ -142,8 +142,8 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
       releasedRange?.min === release.range?.min && release.range?.min === visibleRange?.min &&
       releasedRange?.max === release.range?.max && release.range?.max === visibleRange?.max;
     const legacySourceDifference = inputs.glycemic.recipeBindingMismatches.includes(id);
-    const historicalSourceDifference = legacySourceDifference && releaseMatchesPublic &&
-      inputs.verifiedOriginalReleasePresentation.has(id);
+    const presentationDifferences = inputs.originalReleasePresentationDifferences.get(id);
+    const historicalSourceDifference = legacySourceDifference && releaseMatchesPublic && presentationDifferences?.length === 0;
     const bindingDifferences = [
       ...(legacySourceDifference && !historicalSourceDifference ? ["source"] : []),
       ...(inputs.glycemic.calculationInputMismatches.includes(id) ? ["input"] : []),
@@ -177,6 +177,8 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
         bindingDifferences,
         ...(historicalSourceDifference ? { historicalSourceBindingDifference: true } : {}),
         ...(releaseMatchesPublic ? { verifiedRawGkRelease: release } : {}),
+        ...(legacySourceDifference && rawReleaseMatches && publicState === "visible" && presentationDifferences?.length
+          ? { releasePresentationDifferences: presentationDifferences } : {}),
         variants,
       },
       imageStatus: { state: imageState, path: imagePath, gitBlob: imageBlob },
