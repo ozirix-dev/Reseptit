@@ -783,6 +783,26 @@ test("guide and recipe show the unresolved whole-serving inputs for each reviewe
       const guideRow = guide.slice(start, guide.indexOf("<li ", start + 1));
       assert.ok(guideRow.includes(renderToStaticMarkup(createElement("p", null, condition))), routePath);
       assert.ok(guideRow.includes('href="' + (review.publicSource ?? review.source) + '"'), routePath);
+
+      if (id === "karjalanpiirakat-riisipuurolla" || id === "raejuustobagelit-ilman-kohotusta") {
+        const filename = contentManifest[routePath];
+        assert.ok(filename, routePath);
+        const payload = parseRouteContent(JSON.parse(await readFile(path.join(dist, "data", filename), "utf8")), routePath);
+        const evidence = payload.glycemicRecipe?.portionEvidence;
+        assert.equal(evidence?.piecesPerServing, 1, routePath);
+        assert.ok(html.includes(portionCopy[locale].pieces("1")), routePath);
+        assert.equal(payload.recipe?.servings, id === "karjalanpiirakat-riisipuurolla" ? 24 : 6, routePath);
+        assert.equal(evidence?.availableCarbs, undefined, routePath);
+        assert.equal(evidence?.ingredientPortion?.availableCarbsGPerServing, undefined, routePath);
+        if (id === "raejuustobagelit-ilman-kohotusta") {
+          const [cheese] = evidence?.additionalIngredientPortions ?? [];
+          assert.equal(evidence?.ingredientPortion?.amountPerServing, 50, routePath);
+          assert.equal(evidence?.ingredientPortion?.declaredCarbsGPerServing, 33, routePath);
+          assert.ok(Math.abs((cheese?.declaredCarbsGPerServing ?? 0) - 1.2) < 1e-10, routePath);
+          assert.ok(html.includes('href="https://www.myllynparas.fi/tuotteet/emannan-puolikarkea-vehnajauho-1-kg"'), routePath);
+          assert.ok(html.includes('href="https://www.valio.fi/tuotteet/valio-raejuusto/"'), routePath);
+        }
+      }
     }
   }
 });

@@ -556,9 +556,22 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
 
     await page.goto(base + routeFor("karjalanpiirakat-riisipuurolla"));
     const riceLabelCarbs = page.locator('[data-ingredient-carbohydrate="declared"]');
+    assert.ok((await page.locator(".recipe-portion").innerText()).includes(portionCopy.fi.pieces("1")));
     assert.match(await riceLabelCarbs.innerText(), /6,4 g/);
     await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
     assert.match(await riceLabelCarbs.innerText(), /9,6 g/);
+    assert.equal(await page.locator("[data-portion-carbohydrate], [data-portion-gk]").count(), 0);
+
+    await page.goto(base + routeFor("raejuustobagelit-ilman-kohotusta"));
+    const bagelPortion = page.locator(".recipe-portion");
+    const bagelFlour = bagelPortion.locator("[data-ingredient-portion]").filter({ hasText: "Myllyn Paras" });
+    const cheese = bagelPortion.locator("[data-ingredient-portion]").filter({ hasText: "Valio" });
+    assert.ok((await bagelPortion.innerText()).includes(portionCopy.fi.pieces("1")));
+    assert.match(await bagelFlour.locator('[data-ingredient-carbohydrate="declared"]').innerText(), /33 g/);
+    assert.match(await cheese.locator('[data-ingredient-carbohydrate="declared"]').innerText(), /1,2 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await bagelFlour.locator('[data-ingredient-carbohydrate="declared"]').innerText(), /49,5 g/);
+    assert.match(await cheese.locator('[data-ingredient-carbohydrate="declared"]').innerText(), /1,8 g/);
     assert.equal(await page.locator("[data-portion-carbohydrate], [data-portion-gk]").count(), 0);
 
     await page.goto(base + routeFor("munakasrulla-pinaatti-tuorejuustolla"));

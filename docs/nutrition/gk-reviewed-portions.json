@@ -1438,12 +1438,12 @@
     "preparationSha256": "f120a602c688163f86b1216a69651cb4b460688568dda0ba4804409fc735676d",
     "reviewedAt": "2026-11-18",
     "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/leivonnaiset/karjalanpiirakat-riisipuurolla.md",
-    "reasoning": "200 g dry rice ÷ 24 pastries is 8⅓ g input per piece at even distribution; label exact for candidate product. Filling yield, adhered flour and butter retention unresolved. Existing GK hold on product/cooking equivalence stays; no claim of cooked weight, finished whole carb or GK. The 77 g per 100 g declaration gives 6.4166667 g of declared carbohydrate per pastry from this raw rice.",
+    "reasoning": "200 g dry rice ÷ 24 pastries is 8⅓ g input per piece at even distribution; label exact for candidate product. Filling yield, adhered flour and butter retention unresolved. Existing GK hold on product/cooking equivalence stays; no claim of cooked weight, finished whole carb or GK. The 77 g per 100 g declaration gives 6.4166667 g of declared carbohydrate per pastry from this raw rice. One of 24 equal pastries is the original serving, excluding separately served egg butter.",
     "condition": {
-      "fi": "Yksi reseptiannos on yksi piirakka ilman munavoita. Myös kuoritaikinan ruis- ja vehnäjauhoista tulee hiilihydraatteja. Pakkausarvio koskee Pirkka-puuroriisiä (EAN 6410405257864). Koko piirakan arvioon tarvitaan riisin hiilihydraattiarvo ilman polyoleja sekä tieto piirakoihin päätyneestä kaulintajauhosta ja voista.",
-      "en": "One recipe serving is one pie without egg butter. The rye and wheat flour in the crust also contribute carbohydrate. The label estimate applies to Pirkka porridge rice (EAN 6410405257864). A whole-pastry estimate needs the rice’s carbohydrate content excluding polyols and the amounts of rolling flour and butter that end up on the pastries.",
-      "sv": "En receptportion är en pirog utan äggsmör. Även råg- och vetemjölet i degen bidrar med kolhydrater. Uppskattningen enligt förpackningen gäller Pirkka-grötris (EAN 6410405257864). För att uppskatta hela pirogen behövs risets kolhydratmängd utan polyoler och mängden kavlingsmjöl och smör som blir kvar på pirogerna.",
-      "th": "หนึ่งที่ตามสูตรคือพายหนึ่งชิ้น ไม่รวมเนยผสมไข่ต้ม แป้งไรย์และแป้งสาลีในตัวแป้งพายก็ให้คาร์โบไฮเดรตด้วย ค่าประมาณจากฉลากใช้กับข้าวสำหรับทำโจ๊ก Pirkka (EAN 6410405257864) การประมาณทั้งชิ้นต้องทราบปริมาณคาร์โบไฮเดรตของข้าวที่ไม่รวมโพลิออล รวมถึงปริมาณแป้งนวลและเนยที่ติดอยู่บนขนม"
+      "fi": "Yksi reseptiannos on yksi piirakka ilman munavoita. Pakkausarvio koskee vain Pirkka-puuroriisiä (EAN 6410405257864). Myös ruis- ja vehnäjauhot sekä maito tuovat hiilihydraatteja. Koko piirakan arvioon tarvitaan riisin polyolit erottelevat ja muiden ainesosien kanssa vertailukelpoiset koostumustiedot ja punnitus siitä, paljonko kaulintajauhoa ja voita päätyy piirakoihin.",
+      "en": "One recipe serving is one pie without egg butter. The label estimate covers only Pirkka porridge rice (EAN 6410405257864). Rye flour, wheat flour and milk also contribute carbohydrate. A whole-pie estimate needs comparable ingredient composition data that account for any polyols in the rice and the measured amounts of rolling flour and butter that end up on the pies.",
+      "sv": "En receptportion är en pirog utan äggsmör. Förpackningsvärdet gäller bara Pirkka-grötris (EAN 6410405257864). Rågmjöl, vetemjöl och mjölk bidrar också med kolhydrater. För att uppskatta hela pirogen behövs jämförbara näringsuppgifter där eventuella polyoler i riset redovisas separat och vägning av det kavlingsmjöl och smör som blir kvar på pirogerna.",
+      "th": "หนึ่งที่ตามสูตรคือพายหนึ่งชิ้นโดยไม่รวมเนยผสมไข่ต้ม ค่าจากฉลากครอบคลุมเฉพาะข้าวสำหรับทำโจ๊ก Pirkka (EAN 6410405257864) แป้งไรย์ แป้งสาลี และนมก็ให้คาร์โบไฮเดรตเช่นกัน หากจะประมาณทั้งชิ้น ต้องใช้ข้อมูลส่วนประกอบอาหารที่เทียบกันได้และแยกโพลิออลในข้าวหากมีและชั่งปริมาณแป้งนวลกับเนยที่ติดอยู่บนพาย"
     },
     "ingredientPortion": {
       "index": 5,
@@ -1457,34 +1457,35 @@
       "unit": "g",
       "declaredCarbsGPer100g": 77,
       "source": "https://www.k-ruoka.fi/kauppa/tuote/pirkka-puuroriisi-1kg-6410405257864"
-    }
+    },
+    "piecesPerServing": 1
   },
   "raejuustobagelit-ilman-kohotusta": {
     "recipeBindingSha256": "424e2aed53cb7809cf4617b652b13cb9ee437d1b81f6f75b16d79189e583d14f",
     "preparationSha256": "51f3c2a6a16ff8923bc885be0ae1a65abace12c0666c586cd0a0cf8b4b044e8a",
     "reviewedAt": "2026-11-18",
-    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
-    "reasoning": "300 g dry flour evenly across six. Recipe has explicit no reliable whole macro/GK yet, uncertain baking powder/egg glaze retention and no source-match baked bagel GI. Valio 6408430043019 confirms named cottage product, but no clinical classification. The current recipe identifies 300 g dry medium wheat flour and six equal portions. Fineli 110 identifies the same grade, 74.0 g available carbohydrate per 100 g with no reported polyols. The known flour contribution is separate from the whole recipe and the unverified egg glaze. The separate Valio declaration of 1.8 g carbohydrate per 100 g gives 1.2 g from 400 g across six bagels.",
+    "source": "https://www.myllynparas.fi/tuotteet/emannan-puolikarkea-vehnajauho-1-kg",
+    "reasoning": "The recipe uses 300 g dry medium-ground wheat flour in six equal dough rings: 50 g flour per bagel. The named Myllyn Paras 1 kg product (EAN 6417700053030) declares 66 g carbohydrate and 4.5 g fibre per 100 g, so its flour contributes 33 g label carbohydrate per bagel when used. The generic Fineli 110 reference has 74.0 g available carbohydrate per 100 g (37 g per bagel); it is not the composition of this product. Other brands can differ. The separate Valio EAN 6408430043019 declaration gives 1.2 g label carbohydrate from 400 g undrained cheese across six bagels. No sum of these component values, whole-bagel estimate or GK is supported by these rows. Baking powder and egg wash retention remain unresolved.",
     "condition": {
-      "fi": "Koko bagelin arvioon tarvitaan raejuuston hiilihydraattiarvo ilman polyoleja, käytetyn leivinjauheen ravintotieto ja pinnalle jäävän munavoitelun määrä.",
-      "en": "A whole-bagel estimate needs the cheese’s carbohydrate content excluding polyols, the nutrition information for the baking powder used and the amount of egg wash that remains on the bagel.",
-      "sv": "För att uppskatta hela bageln behövs kesons kolhydratmängd utan polyoler, näringsuppgifter för bakpulvret som används och mängden ägg från penslingen som blir kvar.",
-      "th": "การประมาณทั้งชิ้นต้องทราบปริมาณคาร์โบไฮเดรตของชีสที่ไม่รวมโพลิออล ข้อมูลโภชนาการของผงฟูที่ใช้ และปริมาณไข่ที่ทาหน้าและติดอยู่บนเบเกิลหลังอบ"
+      "fi": "Yksi reseptiannos on yksi bagel. Jauhon arvio koskee Myllyn Paras -puolikarkeaa vehnäjauhoa. Jos käytät muuta jauhoa, tarkista oman pakkauksesi hiilihydraatit. Koko bagelin arvioon tarvitaan raejuuston hiilihydraattiarvo ilman polyoleja, käytetyn leivinjauheen ravintotieto ja pinnalle jäävän munavoitelun määrä.",
+      "en": "One recipe serving is one bagel. The flour estimate applies to Myllyn Paras medium-ground wheat flour. If you use a different flour, check the carbohydrate value on its label. A whole-bagel estimate needs the cottage cheese’s carbohydrate content excluding polyols, nutrition information for the baking powder used and the amount of egg wash that remains on the bagel.",
+      "sv": "En receptportion är en bagel. Mjöluppskattningen gäller Myllyn Paras halvgrova vetemjöl. Om du använder ett annat mjöl, kontrollera kolhydratvärdet på förpackningen. För hela bageln behövs kesons kolhydratmängd utan polyoler, näringsuppgifter för bakpulvret som används och uppgift om hur mycket ägg från penslingen som blir kvar.",
+      "th": "หนึ่งที่ตามสูตรคือเบเกิลหนึ่งชิ้น ค่าประมาณของแป้งอ้างอิงแป้งสาลีบดปานกลาง Myllyn Paras หากใช้แป้งชนิดอื่น ให้ดูค่าคาร์โบไฮเดรตบนฉลากของแป้งนั้น การประมาณทั้งชิ้นต้องใช้ปริมาณคาร์โบไฮเดรตของคอตเทจชีสที่ไม่รวมโพลิออล ข้อมูลโภชนาการของผงฟูที่ใช้ และปริมาณไข่ที่ทาหน้าและติดอยู่บนเบเกิลหลังอบ"
     },
     "ingredientPortion": {
       "index": 1,
       "ingredientSha256": "2b46a4d4d30e5855c63cf3265a95854f7bd1385ea386ad5e6fa1b3a7bef2d375",
       "labels": {
-        "fi": "puolikarkeaa vehnäjauhoa kuivapainona",
-        "en": "medium-ground wheat flour by dry weight",
-        "sv": "halvgrovt vetemjöl i torrvikt",
-        "th": "แป้งสาลีบดปานกลางน้ำหนักแห้ง"
+        "fi": "Puolikarkea vehnäjauho kuivapainona, jos käytät Myllyn Parasta",
+        "en": "Medium-ground wheat flour by dry weight, if using Myllyn Paras",
+        "sv": "Halvgrovt vetemjöl i torrvikt, om du använder Myllyn Paras",
+        "th": "แป้งสาลีบดปานกลาง น้ำหนักแห้ง (หากใช้ Myllyn Paras)"
       },
       "unit": "g",
-      "availableCarbsGPer100g": 74,
-      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/110"
+      "source": "https://www.myllynparas.fi/tuotteet/emannan-puolikarkea-vehnajauho-1-kg",
+      "declaredCarbsGPer100g": 66
     },
-    "publicSource": "https://www.valio.fi/tuotteet/valio-raejuusto/",
+    "publicSource": "https://www.myllynparas.fi/tuotteet/emannan-puolikarkea-vehnajauho-1-kg",
     "additionalIngredientPortions": [
       {
         "index": 0,
@@ -1499,7 +1500,8 @@
         "declaredCarbsGPer100g": 1.8,
         "source": "https://www.valio.fi/tuotteet/valio-raejuusto/"
       }
-    ]
+    ],
+    "piecesPerServing": 1
   },
   "briossisampylat-joshua-weissman": {
     "recipeBindingSha256": "62323fc8aa1afd60f9bb8e585276e14fd8080319ad6abf7159daed55c32cfec9",
