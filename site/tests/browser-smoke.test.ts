@@ -610,6 +610,12 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
         assert.equal(await page.locator("[data-portion-gk], [data-original-gk-class]").count(), 0);
       }
     }
+    await page.goto(base + routeFor("paneer-tikka"));
+    const pepperAmount = page.locator("[data-ingredient-portion] dd");
+    assert.match(await pepperAmount.innerText(), /0,25 kpl$/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("0.5");
+    assert.match(await pepperAmount.innerText(), /0,125 kpl$/);
+    assert.equal(await page.locator("[data-ingredient-carbohydrate], [data-portion-carbohydrate], [data-portion-gk]").count(), 0);
     await page.goto(`${base}/`);
     const searchbox = page.getByRole("searchbox", { name: "Hae reseptejä" });
     await searchbox.focus();

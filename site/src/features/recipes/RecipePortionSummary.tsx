@@ -172,7 +172,9 @@ export function IngredientPortionDetails({ ingredient, locale, multiplier = 1 }:
 }) {
   const t = portionCopy[locale];
   const gram = locale === "th" ? "กรัม" : "g";
-  const amount = formatCarbs(ingredient.amountPerServing * multiplier, locale);
+  const scaledAmount = ingredient.amountPerServing * multiplier;
+  const amount = ingredient.unit === "g" ? formatCarbs(scaledAmount, locale)
+    : new Intl.NumberFormat(locale, { maximumFractionDigits: 3 }).format(scaledAmount);
   const quantity = { g: `${amount} ${gram}`, kpl: t.pieces(amount), arkkia: t.sheets(amount) }[ingredient.unit];
   const carbohydrate = ingredient.availableCarbsGPerServing ?? ingredient.declaredCarbsGPerServing;
   const declared = ingredient.declaredCarbsGPerServing !== undefined;

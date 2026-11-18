@@ -322,50 +322,15 @@ test("reviewed ingredient contributions and the dry risotto rice amount are visi
   }
 });
 
-test("the GK guide shows a known ingredient when the recipe supplies that name as its available portion information", async () => {
-  const ids = [
-    "japanilainen-curry-tofulla", "japanilainen-soba-aamiaiskeitto", "keto-mutakakku", "keto-suklaakeksit",
-    "korealainen-bindaetteok-aamiaiseksi", "lanzhou-naudanliha-nuudelikeitto", "masala-dosa",
-    "meksikolainen-huevos-divorciados", "paneer-tikka",
-  ];
-  for (const locale of ["fi", "en", "sv", "th"] as const) {
-    const route = glycemicLoadPath(locale);
-    const [html, raw] = await Promise.all([
-      readFile(path.join(dist, route.slice(1), "index.html"), "utf8"),
-      readFile(path.join(dist, "data", contentManifest[route]), "utf8"),
-    ]);
-    const guide = parseRouteContent(JSON.parse(raw), route).glycemicOverview;
-    assert.ok(guide?.knownIngredientNames, locale);
-    assert.deepEqual(Object.keys(guide.knownIngredientNames).sort(), ids, locale);
-    assert.equal(html.match(/data-gk-known-ingredient="true"/g)?.length, ids.length, locale);
-    for (const id of ids) {
-      const recipe = siteContent.recipes.find(entry => entry.recipeId === id && entry.locale === locale);
-      const result: GlycemicLoadPilotPublicResult | undefined = guide.results.find(entry => entry.recipeId === id);
-      const index: number | undefined = result?.portionEvidence?.driver?.ingredientIndex;
-      assert.ok(recipe && index !== undefined, `${id}/${locale}`);
-      const name: string = recipe.ingredients[index].item;
-      assert.equal(guide.knownIngredientNames[id][locale], name);
-      assert.equal(guide.carbsByRecipe?.[id], undefined);
-      assert.equal(glycemicLoadFilterCategories[id], undefined);
-      const scope = portionCopy[locale].known(name);
-      const start = html.indexOf(`id="${id}" class="glycemic-pilot__recipe"`);
-      assert.ok(start >= 0, recipe.routePath);
-      const end = html.indexOf('class="glycemic-pilot__recipe"', start + `id="${id}" class="glycemic-pilot__recipe"`.length);
-      const row = html.slice(start, end < 0 ? undefined : end);
-      const original = row.split('<section class="gk-only-variant"', 1)[0];
-      assert.ok(original.includes(renderToStaticMarkup(createElement("p", { "data-gk-known-ingredient": true }, scope))), recipe.routePath);
-      assert.doesNotMatch(original, /gk-evidence__value|data-original-gk-class=/, recipe.routePath);
-      const recipeHtml = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
-      assert.ok(recipeHtml.includes(renderToStaticMarkup(createElement("p", null, scope))), recipe.routePath);
-    }
-  }
-});
-
 test("reviewed ingredient quantities retain their own scope on recipes and in the GK guide", async () => {
   const expected = {
     bibimbap: [75, 59.25], "goi-cuon": [37.5, 30.615], "hernekeitto-savupotkalla": [125, undefined],
     "idli-sambar": [50, 22.9], "japanilainen-natto-riisikulho": [50, 39.5], "mapo-tofu": [150, 35.3415],
     "pho-bo": [400 / 6, 54.42666666666667], roujiamo: [75, 55.4985], "vhh-pyttipannu": [50, 2.94],
+    "japanilainen-curry-tofulla": [0.25, undefined, "kpl"], "japanilainen-soba-aamiaiskeitto": [50, undefined],
+    "keto-mutakakku": [18.75, undefined], "keto-suklaakeksit": [18, undefined],
+    "korealainen-bindaetteok-aamiaiseksi": [75, undefined], "lanzhou-naudanliha-nuudelikeitto": [87.5, undefined],
+    "masala-dosa": [62.5, undefined], "meksikolainen-huevos-divorciados": [75, 7.2375], "paneer-tikka": [0.25, undefined, "kpl"],
   } as const;
   const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
   for (const locale of ["fi", "en", "sv", "th"] as const) {
@@ -376,13 +341,13 @@ test("reviewed ingredient quantities retain their own scope on recipes and in th
     ]);
     const guide = parseRouteContent(JSON.parse(raw), route).glycemicOverview;
     assert.ok(guide, locale);
-    for (const [id, [grams, carbs]] of Object.entries(expected)) {
+    for (const [id, [amount, carbs, unit = "g"]] of Object.entries(expected)) {
       const recipe = siteContent.recipes.find(entry => entry.recipeId === id && entry.locale === locale);
       const result: GlycemicLoadPilotPublicResult | undefined = guide.results.find(entry => entry.recipeId === id);
       const ingredient: IngredientPortion | undefined = result?.portionEvidence?.ingredientPortion;
       assert.ok(recipe && ingredient, `${id}/${locale}`);
-      assert.equal(ingredient.amountPerServing, grams, recipe.routePath);
-      assert.equal(ingredient.unit, "g", recipe.routePath);
+      assert.equal(ingredient.amountPerServing, amount, recipe.routePath);
+      assert.equal(ingredient.unit, unit, recipe.routePath);
       assert.equal(ingredient.name[locale], reviews[id].ingredientPortion?.labels[locale], recipe.routePath);
       if (carbs === undefined) {
         assert.equal(ingredient.availableCarbsGPerServing, undefined, recipe.routePath);
@@ -403,6 +368,11 @@ test("reviewed ingredient quantities retain their own scope on recipes and in th
       const recipeHtml = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
       assert.ok(recipeHtml.replaceAll("<!-- -->", "").includes(detail), recipe.routePath);
       assert.doesNotMatch(recipeHtml, /data-portion-carbohydrate=|data-portion-gk=|data-original-gk-class=/, recipe.routePath);
+      const scope: string | undefined = reviews[id].condition?.[locale];
+      if (scope) {
+        assert.ok(row.includes(renderToStaticMarkup(createElement("p", null, scope))), recipe.routePath);
+        assert.ok(recipeHtml.includes(renderToStaticMarkup(createElement("p", { className: "recipe-disclosure" }, scope))), recipe.routePath);
+      }
       if (ingredient.source) {
         const href: string = `href="${ingredient.source.replaceAll("&", "&amp;")}"`;
         assert.equal(row.split(href).length, 2, recipe.routePath);

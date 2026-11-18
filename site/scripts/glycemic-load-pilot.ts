@@ -518,13 +518,12 @@ const portions = await Promise.all(originals.map(async recipe => {
     }
     const partial = projection.portion.ingredientPortion;
     if (partial && review.ingredientPortion?.index === index) {
-      const matchesWeight = partial.unit === "g"
-        && Math.abs(partial.amountPerServing * source.input.servings - verified.grams) < 1e-9;
       const verifiedCarbs = verified.availableCarbohydratePerServingG;
       const matchesCarbs = partial.availableCarbsGPerServing === undefined
-        || (partial.source === (review.publicSource ?? review.source) && verifiedCarbs !== null
+        || (partial.unit === "g" && Math.abs(partial.amountPerServing * source.input.servings - verified.grams) < 1e-9
+          && partial.source === (review.publicSource ?? review.source) && verifiedCarbs !== null
           && Math.abs(partial.availableCarbsGPerServing - verifiedCarbs) < 1e-9);
-      if (!matchesWeight || !matchesCarbs || partial.declaredCarbsGPerServing !== undefined || partial.carbohydrateAlternatives) {
+      if (!matchesCarbs || partial.declaredCarbsGPerServing !== undefined || partial.carbohydrateAlternatives) {
         throw new Error(`${recipe.recipeId}: partial carbohydrate amount must match the reviewed named source.`);
       }
     } else {
