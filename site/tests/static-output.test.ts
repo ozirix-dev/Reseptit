@@ -783,6 +783,26 @@ test("guide and recipe show the unresolved whole-serving inputs for each reviewe
       const guideRow = guide.slice(start, guide.indexOf("<li ", start + 1));
       assert.ok(guideRow.includes(renderToStaticMarkup(createElement("p", null, condition))), routePath);
       assert.ok(guideRow.includes('href="' + (review.publicSource ?? review.source) + '"'), routePath);
+
+      if (id === "karjalanpiirakat-riisipuurolla" || id === "raejuustobagelit-ilman-kohotusta") {
+        const filename = contentManifest[routePath];
+        assert.ok(filename, routePath);
+        const payload = parseRouteContent(JSON.parse(await readFile(path.join(dist, "data", filename), "utf8")), routePath);
+        const evidence = payload.glycemicRecipe?.portionEvidence;
+        assert.equal(evidence?.piecesPerServing, 1, routePath);
+        assert.ok(html.includes(portionCopy[locale].pieces("1")), routePath);
+        assert.equal(payload.recipe?.servings, id === "karjalanpiirakat-riisipuurolla" ? 24 : 6, routePath);
+        assert.equal(evidence?.availableCarbs, undefined, routePath);
+        assert.equal(evidence?.ingredientPortion?.availableCarbsGPerServing, undefined, routePath);
+        if (id === "raejuustobagelit-ilman-kohotusta") {
+          const [cheese] = evidence?.additionalIngredientPortions ?? [];
+          assert.equal(evidence?.ingredientPortion?.amountPerServing, 50, routePath);
+          assert.equal(evidence?.ingredientPortion?.declaredCarbsGPerServing, 33, routePath);
+          assert.ok(Math.abs((cheese?.declaredCarbsGPerServing ?? 0) - 1.2) < 1e-10, routePath);
+          assert.ok(html.includes('href="https://www.myllynparas.fi/tuotteet/emannan-puolikarkea-vehnajauho-1-kg"'), routePath);
+          assert.ok(html.includes('href="https://www.valio.fi/tuotteet/valio-raejuusto/"'), routePath);
+        }
+      }
     }
   }
 });
@@ -875,10 +895,21 @@ test("a fresh egg pasta reference estimate stays scoped to the uncooked ingredie
   assert.match(html, /data-ingredient-portion=/);
   assert.match(html, /Tuore kananmunafettuccine ennen keittämistä/);
   assert.match(html, /Luku koskee tuoretta kananmunapastaa/);
-  assert.match(html, /Koko annoksen arvioon tarvitaan pastan ja parsan painot kypsennyksen ja valutuksen jälkeen/);
+  assert.match(html, /valutetun pastan ja lautaselle päätyvän kypsän parsan painot ja niitä vastaavat koostumustiedot/);
+  assert.match(html, /paljonko parsan keitinvettä päätyy annokseen, ja punnitse sitruunankuoriraaste/);
   assert.match(html, /href="https:\/\/fineli\.fi\/fineli\/fi\/elintarvikkeet\/31256"/);
   assert.match(html, /href="https:\/\/fineli\.fi\/fineli\/fi\/elintarvikkeet\/31257"/);
   assert.doesNotMatch(html, /data-portion-carbohydrate=|data-portion-gk=/);
+});
+
+test("the Finnish roast pork serving includes its share of the whole cream sauce", async () => {
+  const recipe = siteContent.recipes.find(entry => entry.recipeId === "uuniporsas-kermakastikkeessa-vhh" && entry.locale === "fi");
+  assert.ok(recipe);
+  assert.equal(recipe.servings, 6);
+  const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+  assert.match(html, /Jaa kaikki liha ja kastike kuuteen yhtä suureen annokseen/);
+  const result = glycemicLoadPilotResults.find(row => row.recipeId === recipe.recipeId);
+  assert.equal(result?.glycemicLoadPerServing, 0.51);
 });
 
 test("generated route and search data satisfy the browser parser contracts", async () => {
@@ -1465,6 +1496,75 @@ test("P2/P3 corrections reach static titles, route data and Recipe JSON-LD", asy
   }
 });
 
+
+test("published serving instructions keep baked portions and retained ingredients with the GL estimate", async () => {
+  const cases = [
+    ["munakasmuffinit", "fi", 3, "Yksi annos on kaksi muffinssia."],
+    ["munakasmuffinit", "en", 3, "six muffins, two per serving."],
+    ["munakasmuffinit", "sv", 3, "sex muffins, två per portion."],
+    ["munakasmuffinit", "th", 3, "มัฟฟิน 6 ชิ้น เสิร์ฟที่ละ 2 ชิ้น"],
+    ["tonnikalamunakkaat-uunissa", "fi", 3, "Yksi annos on kaksi pientä munakasta."],
+    ["tonnikalamunakkaat-uunissa", "en", 3, "six mini omelettes, two per serving."],
+    ["tonnikalamunakkaat-uunissa", "sv", 3, "sex små omeletter, två per portion."],
+    ["tonnikalamunakkaat-uunissa", "th", 3, "ไข่อบ 6 ชิ้น เสิร์ฟที่ละ 2 ชิ้น"],
+    ["uunimuna-avokadot", "fi", 2, "Säästä kaikki koverrettu hedelmäliha tarjoiluun.",
+      "kahteen yhtä suureen annokseen. Ota mukaan myös erillisessä vuoassa kypsennetty muna."],
+    ["vhh-lihamureke", "fi", 6, "koko mureke ja paistoneste kuuteen yhtä suureen annokseen."],
+    ["vhh-lihamureke", "en", 6, "the meatloaf and all the cooking juices into six equal portions."],
+    ["vhh-lihamureke", "sv", 6, "hela limpan och all steksky på sex lika stora portioner."],
+    ["vhh-lihamureke", "th", 6, "พร้อมน้ำจากการอบทั้งหมดเป็น 6 ส่วนเท่า ๆ กัน"],
+  ] as const;
+  for (const [id, locale, servings, ...copy] of cases) {
+    const recipe = siteContent.recipes.find(row => row.recipeId === id && row.locale === locale);
+    assert.ok(recipe, id + "/" + locale);
+    const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+    const markup = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+    const filename = contentManifest[recipe.routePath];
+    assert.ok(filename, recipe.routePath);
+    const payload = parseRouteContent(JSON.parse(await readFile(path.join(dist, "data", filename), "utf8")), recipe.routePath);
+    assert.ok(payload?.recipe, recipe.routePath);
+    assert.equal(payload.recipe.servings, servings, recipe.routePath);
+    assert.match(markup, /data-portion-gk=/, recipe.routePath);
+    for (const line of copy) {
+      assert.ok(markup.includes(line), recipe.routePath + " prerendered instruction");
+      assert.ok(payload.recipe.instructionsHtml.includes(line), recipe.routePath + " interactive route");
+      if (payload.recipe.instructionStepsHtml?.length) {
+        assert.ok(payload.recipe.instructionStepsHtml.some(step => step.includes(line)), recipe.routePath + " checklist");
+      }
+    }
+  }
+});
+
+test("portion cards show the baked-piece equivalence and the jasmine rice preparation limit", async () => {
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  const pieceRecipes = ["munakasmuffinit", "tonnikalamunakkaat-uunissa"];
+  const rice = "indonesialainen-nasi-uduk-aamiaisella";
+  for (const id of [...pieceRecipes, rice]) {
+    const recipes = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.equal(recipes.length, 4, id);
+    for (const { routePath, locale } of recipes) {
+      const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+      const visible = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+      const filename = contentManifest[routePath];
+      assert.ok(filename, routePath);
+      const payload = parseRouteContent(JSON.parse(await readFile(path.join(dist, "data", filename), "utf8")), routePath);
+      const portion = payload.glycemicRecipe?.portionEvidence;
+      assert.match(visible, /data-portion-gk=/, routePath);
+      assert.match(visible, /data-portion-carbohydrate="available"/, routePath);
+      if (id === rice) {
+        const condition = reviews[id].condition?.[locale];
+        assert.ok(condition && visible.includes(condition), routePath);
+        assert.equal(portion?.condition?.[locale], condition, routePath);
+        assert.equal(payload.glycemicRecipe?.result?.glycemicLoadPerServing, 26.37, routePath);
+        assert.equal(portion?.reviewedSource, "https://doi.org/10.1186/1475-2891-13-50", routePath);
+      } else {
+        assert.equal(portion?.piecesPerServing, 2, routePath);
+        assert.ok(visible.includes(portionCopy[locale].pieces("2")), routePath);
+        assert.equal(payload.recipe?.servings, 3, routePath);
+      }
+    }
+  }
+});
 
 test("translation self-review corrections are present in static HTML and recipe metadata", async () => {
   const { siteContent } = await import("../src/generated/content.generated");

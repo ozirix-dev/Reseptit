@@ -31,6 +31,7 @@ export interface RecipeIngredient {
   item: string;
   note?: string;
   eggSingular?: string;
+  eggWeightWithoutShellG?: number;
 }
 
 export interface RecipeImage {
