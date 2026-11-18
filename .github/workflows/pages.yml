@@ -7,6 +7,7 @@ on:
       - "reseptit/**"
       - "kaannokset/**"
       - "kuvat/**"
+      - "assets/images.manifest.json"
       - "site/**"
       - "docs/nutrition/**"
       - "docs/research/**"
@@ -44,6 +45,15 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: site/package-lock.json
+
+      - name: Verify or restore manifest image inputs
+        shell: pwsh
+        env:
+          IMAGE_CI_ACCESS_KEY_ID: ${{ secrets.IMAGE_CI_ACCESS_KEY_ID }}
+          IMAGE_CI_SECRET_ACCESS_KEY: ${{ secrets.IMAGE_CI_SECRET_ACCESS_KEY }}
+        run: |
+          python3 -B site/scripts/restore-image-inputs.py --manifest assets/images.manifest.json --project ozirix-dev/Reseptit --auto-root kuvat --github-env
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
 
       - name: Verify changed-path selector
         run: node site/scripts/select-ci-checks.test.mjs

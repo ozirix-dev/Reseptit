@@ -39,7 +39,9 @@ const siteDir = path.resolve(import.meta.dirname, "..");
 const repoDir = path.resolve(process.env.RECIPE_SOURCE_ROOT ?? path.resolve(siteDir, ".."));
 const outputDir = path.join(siteDir, "src", "generated");
 const baseUrl = siteTarget.baseUrl;
-const imageSourceDir = path.join(repoDir, "kuvat");
+const imageSourceDir = process.env.PROJECT_IMAGE_ROOT
+  ? path.resolve(process.env.PROJECT_IMAGE_ROOT)
+  : path.join(repoDir, "kuvat");
 const localeBase: Record<RecipeLocale, string> = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" };
 
 function routeForRecipe(locale: RecipeLocale, slug: string): string {

@@ -118,7 +118,15 @@ for (const relativePath of recipePaths) {
   }
   if (data.image) {
     const sources = [data.image.src, ...(data.image.srcset ?? []).map((item) => item.src)];
-    for (const source of sources) await access(resolveRepoFile(`kuvat/${source}`));
+    const imageRoot = path.resolve(process.env.PROJECT_IMAGE_ROOT || path.join(repoRoot, "kuvat"));
+    for (const source of sources) {
+      const target = path.resolve(imageRoot, source);
+      const relative = path.relative(imageRoot, target);
+      if (relative.startsWith("..") || path.isAbsolute(relative)) {
+        throw new Error(`Image source escapes its root: ${source}`);
+      }
+      await access(target);
+    }
   }
   changedRecipes.push({ path: relativePath, data, markdown });
 }

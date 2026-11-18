@@ -1,0 +1,47 @@
+# Kuvien Proton-arkisto ja ulkoinen build-lähde
+
+`assets/images.manifest.json` on tarkistussummiin sidottu kuvaluettelo.
+Manifesti kattaa 395 julkaistua lähdekuvaa. Muut 48 kuvatiedostoa odottavat luokittelua.
+Se ei todista, että alkuperäiset suuret PNG-masterit olisi saatu talteen.
+
+Yhteinen toimintatapa on Masterin `handbook/image-lifecycle.md` ja toteutus
+Windows-repon `docs/IMAGE-ASSET-LIFECYCLE.md`. Hyväksytyt alkuperäiset
+arkistoidaan Protoniin; tuotanto käyttää nykyistä Cloudflare-jakelua.
+Manifestit ja erikseen sallitut pienet UI-kuvat kuuluvat Gitiin.
+
+## Build ja palautus
+
+Nykyinen CI-tila on `tracked`: kuvien olemassaolo ja SHA-256 tarkistetaan ennen
+buildia. Nykyisiä Git-kuvia, tuotantoa tai backup-käytäntöjä ei muuteta.
+Testaa ulkoinen kuvalähde erilliseen hallittuun hakemistoon tehdyn Proton-
+palautuksen tai varmennetun CI-paketin avulla:
+
+```powershell
+python site/scripts/restore-image-inputs.py --manifest assets/images.manifest.json --project ozirix-dev/Reseptit --verify-root <palautettu-kuvajuuri>
+$env:PROJECT_IMAGE_ROOT = '<palautettu-kuvajuuri>'
+cd site; npm run build
+```
+
+Puhtaan kloonin build ei saa riippua tämän koneen D:-asemasta tai käyttäjän
+Proton-istunnosta. Tuleva `ci.mode: r2` käyttää yksityistä projektikohtaista
+CI-pakettia, tarkistaa paketin ja kuvien SHA-256:t ja asettaa saman kuvajuuren.
+Adapteri on Windows-repon `restore_image_bundle.py`:n identtinen kopio.
+Sen muutokset pitää päivittää ja testata molemmissa omistajissa.
+
+Aktivointi vaatii yksityisen bucketin, vain kyseisen bucketin Object Read-only
+CI-tunnuksen, todennetun upload/readback-kuitin ja manifestiin lukitut
+`bundleSha256`/`key`-arvot. Henkilökohtaisia Proton-tunnuksia ei anneta CI:lle.
+Erillinen puhtaan kloonin koe ja poistohyväksyntä tarvitaan ennen Git-kuvien
+poistoa. Git-historia säilyy; tämä muutos ei pienennä vanhoja Git-objekteja.
+
+## Uudet kuvat
+
+Aloita ImageAssets `init` vahvistetulle projektille `ozirix-dev/Reseptit` ja aseta
+`PROJECT_IMAGE_WORK_ROOT` palautettuun `generationRoot`-hakemistoon.
+Hyväksy vain projektissa tarvittavat alkuperäiset `seal`-toiminnolla.
+Arkistoinnin pitää läpäistä tiedostoluettelo, erillinen palautus ja SHA-256:t.
+Sulje työ vasta tarvittavan julkaisutodisteen jälkeen. Rekisteröidyt kokeilut
+ja ylimääräiset paikalliskopiot tulevat siivottaviksi seitsemän päivän kuluttua.
+Tuntematon tiedosto tai epäselvä versio jää tarkistettavaksi.
+Synkronoidun Proton-tiedoston poistaminen voi poistaa pilvikopionkin;
+cloud-only-tilaan siirrytään **Free up space** -toiminnolla.
