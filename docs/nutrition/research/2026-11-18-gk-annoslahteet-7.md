@@ -50,13 +50,13 @@ osa. Lukuja ei lasketa yhteen.
 | [Rasvakaakao](https://www.recipavo.com/rasvakaakao-rouva-keto/), yksi muki | noin 2,1 g | noin 4,4 g |
 | [Lämmin suklaa-chia-puuro](https://www.recipavo.com/lammin-chia-puuro-rouva-keto/), puolet kattilallisesta | noin 1,0 g | noin 1,6 g |
 
-Vertailu käyttää tarkkoja viitetuotteita ja reseptien punnittuja
-ainesmääriä. Kerma, voi, kaakaojauhe ja chia voivat olla kotona eri
+Vertailu käyttää tarkkoja viitetuotteita ja reseptien grammoina
+ilmoitettuja ainesmääriä. Kerma, voi, kaakaojauhe ja chia voivat olla kotona eri
 tuotteita. Vesi ja suola ovat koostumuslähteen nollarivejä.
 Pakkausarvot ovat ilmoitettuja keskiarvoja, joten vertailun luvut
 eivät kuvaa mitattua vaihtelua. Reseptin ravintomalli jätti
 molemmissa laskelmissa imeytyvän hiilihydraatin, nettohiilihydraatin
-ja kokonaishiilihydraatin avoimiksi. Laskentatoistossa pakkauksien
+ja kokonaishiilihydraatin avoimiksi. Laskentatoistossa pakkausten
 ilmoitukset käsiteltiin EU-hiilihydraattina. Vahvistamaton
 polyoliarvo säilyi puuttuvana.
 [Foodin kaakao](https://foodin.fi/tuote/kaakaojauhe-luomu-raaka-250g/) ·
