@@ -157,7 +157,7 @@ test("standalone carbohydrate and source warnings follow reviewed quantities and
       assert.match(rendered, /data-portion-carbohydrate="available"/);
       assert.doesNotMatch(rendered, /data-portion-gk=|data-gk-status="(?:QUALITATIVE|CALCULATED)"/);
       assert.ok(rendered.includes(review.condition![locale]), routePath);
-      assert.ok(rendered.includes('href="' + review.publicSource + '"'), routePath);
+      assert.ok(rendered.includes('href="' + (review.publicSource ?? review.source) + '"'), routePath);
     }
   }
 
