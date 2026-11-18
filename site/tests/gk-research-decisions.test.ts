@@ -2,7 +2,8 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { test } from "node:test";
 import {
-  gkResearchDecisionPath, gkResearchDisposition, gkResearchRecipeHash, gkResearchRegistry, researchTextHash,
+  gkResearchCalculationContextHash, gkResearchDecisionPath, gkResearchDisposition, gkResearchRecipeBinding,
+  gkResearchRegistry, researchTextHash,
 } from "../scripts/gk-research-decisions";
 
 const recipe = `---
@@ -35,7 +36,8 @@ Annostele kypsänä.
 
 const current = {
   sourceRecipeId: "sample",
-  recipeSha256: gkResearchRecipeHash(recipe),
+  recipeSha256: gkResearchRecipeBinding(recipe).recipeSha256,
+  contextSha256: "5".repeat(64),
   calculationInputSha256: "1".repeat(64),
   calculationEvidenceSha256: "2".repeat(64),
   hasPublicEstimate: false,
@@ -52,6 +54,7 @@ const decision = {
   recipeSha256: current.recipeSha256,
   calculationInputSha256: current.calculationInputSha256,
   calculationEvidenceSha256: current.calculationEvidenceSha256,
+  contextSha256: current.contextSha256,
   reviewedAt: "2026-11-18",
   reason: "Different food and preparation",
   evidence: [reviewed],
@@ -73,7 +76,7 @@ test("changes in preparation, product, quantity, input and bound source reopen r
     recipe.replace("tuotteen A", "tuotteen B"),
     recipe.replace("amount: 100", "amount: 150"),
   ]) {
-    assert.equal(gkResearchDisposition({ ...current, recipeSha256: gkResearchRecipeHash(changed) },
+    assert.equal(gkResearchDisposition({ ...current, recipeSha256: gkResearchRecipeBinding(changed).recipeSha256 },
       reread(), verified).status, "reopened");
   }
   for (const changed of [
@@ -85,8 +88,19 @@ test("changes in preparation, product, quantity, input and bound source reopen r
   }
   for (const changed of [recipe.replace("title: Annos", "title: Ruoka").replace("# Annos", "# Ruoka"), recipe.replace("Arkiruoka", "Nopea arkiruoka"),
     recipe.replaceAll("\n", "\r\n")]) {
-    assert.equal(gkResearchRecipeHash(changed), current.recipeSha256);
+    assert.equal(gkResearchRecipeBinding(changed).recipeSha256, current.recipeSha256);
   }
+});
+
+test("serving-scope and source-rationale changes require a review before repeating research", () => {
+  const description = recipe.replace("Arkiruoka.", "Tarjoile ilman lisuketta.");
+  assert.notEqual(gkResearchRecipeBinding(description).narrativeSha256, gkResearchRecipeBinding(recipe).narrativeSha256);
+  const input = { recipeId: "sample", servings: 4, ingredients: [
+    { name: "rice", grams: 100, giRecordId: null, fineliRecordId: null, massEvidence: "punnittu raakana" },
+  ] };
+  const newInput = { ...input, ingredients: [{ ...input.ingredients[0], massEvidence: "punnittu kypsänä" }] };
+  assert.notEqual(gkResearchCalculationContextHash(input), gkResearchCalculationContextHash(newInput));
+  assert.equal(gkResearchDisposition({ ...current, contextSha256: "6".repeat(64) }, reread(), verified).status, "review");
 });
 
 test("a cited, verified and previously unreviewed source or review decision reopens research", () => {
@@ -108,6 +122,8 @@ test("public estimates stay approved and priority or unclear cases never skip", 
   assert.equal(gkResearchDisposition(current, reread(), () => false).status, "review");
   assert.equal(gkResearchDisposition({ ...current, bindingConflict: true }, reread(), verified).status, "review");
   assert.equal(gkResearchDisposition({ ...current, bindingConflict: true }, undefined, verified).status, "review");
+  assert.equal(gkResearchDisposition({ ...current, bindingConflict: true, hasPublicEstimate: true }, reread(), verified).status,
+    "approved");
   assert.equal(gkResearchDisposition({ ...current, bindingConflict: true, calculationEvidenceSha256: "4".repeat(64) },
     reread(), verified).status, "reopened");
   assert.throws(() => gkResearchRegistry.parse({ schemaVersion: 1, decisions: [decision, decision] }),

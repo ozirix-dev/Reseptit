@@ -2,6 +2,7 @@ import successors from "../../meta/recipe-successors.json";
 import { gkVariantScope } from "../src/features/recipes/gk-estimate-scope";
 import { publicSafetyHold } from "./build-content";
 import { f25SourceReleaseGatePath } from "./f25-source-release-gate";
+import { gkResearchCalculationContextHash } from "./gk-research-decisions";
 import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 import { indexPublicRecipes, recipeLocales } from "./recipe-public-state";
 import { publicRecipeQualityHold } from "./recipe-quality-holds";
@@ -55,6 +56,7 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
   const reviews = new Map(inputs.review.rows.map(row => [`${row.recipe_id}:${row.locale}`, row]));
   const nutrition = new Map(inputs.nutrition.inventory.map(row => [row.recipe_id, row]));
   const gkResults = new Map(inputs.glycemic.results.map(row => [row.recipeId, row]));
+  const gkInputById = new Map(inputs.glycemic.calculationInputs.map(row => [row.recipeId, row]));
   const gkPending = new Map(inputs.glycemic.newPublicGkPendingSources.map(row => [row.recipeId, row]));
   const gkPublic = new Map(inputs.publicGk.map(row => [row.recipeId, row]));
   const gkVariants = groupBy(inputs.glycemic.gkOnlyVariants, row => row.recipeId);
@@ -122,6 +124,7 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
         } : null };
     });
     const gk = gkResults.get(id);
+    const gkInput = gkInputById.get(id);
     const pending = gkPending.get(id);
     const visibleGk = gkPublic.get(id);
     if (fi && !visibleGk && !pending) conflicts.push({ recipeId: id, code: "missing-public-gk-disposition", paths: [source.file] });
@@ -156,6 +159,7 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
         auditedSourceHash: inputs.glycemic.sourceHashes[id] ?? null,
         calculationInputSha256: inputs.glycemic.calculationInputHashes[id] ?? null,
         calculationEvidenceSha256: inputs.glycemic.calculationEvidenceHashes[id] ?? null,
+        calculationContextSha256: gkInput ? gkResearchCalculationContextHash(gkInput) : null,
         bindingDifferences, variants,
       },
       imageStatus: { state: imageState, path: imagePath, gitBlob: imageBlob },

@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { z } from "zod";
 import { parseMarkdown } from "../src/content/markdown";
+import type { GlycemicLoadRecipeInput } from "./glycemic-load-model";
 
 export const gkResearchDecisionPath = "docs/nutrition/glycemic-research-decisions.json";
 const id = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
@@ -19,6 +20,7 @@ const decision = z.strictObject({
   recipeSha256: hash,
   calculationInputSha256: hash.nullable(),
   calculationEvidenceSha256: hash.nullable(),
+  contextSha256: hash,
   reviewedAt: z.iso.date(),
   reason: text,
   evidence: z.array(evidence).min(1),
@@ -42,15 +44,17 @@ export function researchTextHash(text: string): string {
   return createHash("sha256").update(text.replaceAll("\r\n", "\n")).digest("hex");
 }
 
-export function gkResearchRecipeHash(markdown: string): string {
+const normalize = (text: string) => text.normalize("NFC").replace(/\s+/g, " ").trim();
+
+export function gkResearchRecipeBinding(markdown: string) {
   const parsed = parseMarkdown(markdown);
   if (!parsed || parsed.data.language !== "fi" || !Number.isInteger(parsed.data.servings) ||
     !Array.isArray(parsed.data.ingredients)) {
     throw Error("GK research requires a Finnish original with structured ingredients and integer servings");
   }
-  const normalize = (text: string) => text.normalize("NFC").replace(/\s+/g, " ").trim();
-  const recipeSections = parsed.content.split(/^##[ \t]+/m).slice(1).filter(section =>
-    section.split("\n", 1)[0].trim().toLowerCase() !== "kuvaus");
+  const [intro, ...sections] = parsed.content.split(/^##[ \t]+/m);
+  const isDescription = (section: string) => section.split("\n", 1)[0].trim().toLowerCase() === "kuvaus";
+  const recipeSections = sections.filter(section => !isDescription(section));
   const ingredients = parsed.data.ingredients.map(ingredient => {
     if (!ingredient || typeof ingredient !== "object" || Array.isArray(ingredient)) {
       throw Error("Invalid structured ingredient in GK research");
@@ -61,12 +65,25 @@ export function gkResearchRecipeHash(markdown: string): string {
   if (!recipeSections.some(section => /^Valmistus\s*$/im.test(section.split("\n", 1)[0]))) {
     throw Error("GK research requires a classified preparation section");
   }
-  return researchTextHash(JSON.stringify({
-    servings: parsed.data.servings,
-    ingredients,
-    cookingMethod: parsed.data.cooking_method ?? null,
-    sections: recipeSections.map(normalize),
-  }));
+  return {
+    recipeSha256: researchTextHash(JSON.stringify({
+      servings: parsed.data.servings,
+      ingredients,
+      cookingMethod: parsed.data.cooking_method ?? null,
+      sections: recipeSections.map(normalize),
+    })),
+    narrativeSha256: researchTextHash(JSON.stringify([
+      normalize(intro.replace(/^#[ \t]+[^\r\n]+$/m, "")),
+      ...sections.filter(isDescription).map(normalize),
+    ])),
+  };
+}
+
+export function gkResearchCalculationContextHash(input: GlycemicLoadRecipeInput): string {
+  return researchTextHash(JSON.stringify(input.ingredients.map(row => [
+    row.massEvidence, row.giMatchEvidence, row.excludedReason, row.availableCarbohydratePer100gRange?.evidence,
+    row.upperBoundEvidence, row.negligibleAssumption,
+  ].map(value => normalize(value ?? "")))));
 }
 
 export function gkResearchDisposition(
@@ -75,6 +92,7 @@ export function gkResearchDisposition(
     recipeSha256: string | null;
     calculationInputSha256: string | null;
     calculationEvidenceSha256: string | null;
+    contextSha256: string | null;
     hasPublicEstimate: boolean;
     ambiguous: boolean;
     bindingConflict: boolean;
@@ -87,9 +105,9 @@ export function gkResearchDisposition(
   if (current.ambiguous) return { status: "review", reason: "Unclear original recipe binding" } as const;
   const conflict = { status: "review", reason: "Conflicting published calculation bindings" } as const;
   if (current.hasPublicEstimate) {
-    return current.bindingConflict ? conflict : { status: "approved", reason: "Existing public original estimate" } as const;
+    return { status: "approved", reason: "Existing public original estimate" } as const;
   }
-  if (!current.recipeSha256) return { status: "review", reason: "Missing recipe/preparation binding" } as const;
+  if (!current.recipeSha256 || !current.contextSha256) return { status: "review", reason: "Missing recipe/preparation binding" } as const;
   if (!decision) return current.bindingConflict ? conflict : { status: "new", reason: "No current research decision" } as const;
   if (decision.sourceRecipeId !== current.sourceRecipeId || decision.recipeSha256 !== current.recipeSha256) {
     return { status: "reopened", reason: "Original recipe or preparation changed" } as const;
@@ -106,6 +124,9 @@ export function gkResearchDisposition(
       : { status: "review", reason: "Reopening evidence is unverified or already reviewed" } as const;
   }
   if (current.bindingConflict) return conflict;
+  if (current.contextSha256 !== decision.contextSha256) {
+    return { status: "review", reason: "Serving description or source rationale changed" } as const;
+  }
   if (!decision.evidence.every(evidenceMatches)) return { status: "review", reason: "Reviewed evidence cannot be verified" } as const;
   return { status: "skip", reason: decision.reason } as const;
 }

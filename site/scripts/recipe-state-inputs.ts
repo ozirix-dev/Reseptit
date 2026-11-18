@@ -4,7 +4,7 @@ import path from "node:path";
 import { z } from "zod";
 import { parseMarkdown } from "../src/content/markdown";
 import type { GkOnlyVariant } from "../src/features/recipes/gk-only-types";
-import type { GlycemicLoadResult } from "./glycemic-load-model";
+import type { GlycemicLoadRecipeInput, GlycemicLoadResult } from "./glycemic-load-model";
 import { projectPublishedMarkdown } from "./build-content";
 import { f25SourceGatePreflight } from "./f25-source-release-gate";
 import { contentHash, loadCurrentReview } from "./translation-review";
@@ -28,6 +28,7 @@ interface GlycemicReport {
   results: Pick<GlycemicLoadResult, "recipeId" | "status" | "blockers">[];
   newPublicGkPendingSources: { recipeId: string; sourceBlobSha: string; reason: string }[];
   sourceHashes: Record<string, string>;
+  calculationInputs: GlycemicLoadRecipeInput[];
   calculationInputHashes: Record<string, string>;
   calculationEvidenceHashes: Record<string, string>;
   recipeBindingMismatches: string[];

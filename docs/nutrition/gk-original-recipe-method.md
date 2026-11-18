@@ -86,14 +86,17 @@ node --import tsx scripts/gk-research-queue.ts 10 idli-sambar vhh-mansikkakakku
 Kirjaa tarkistettu `NO_RELIABLE_GK` omaan haaraan
 [tutkimuspäätöksiin](glycemic-research-decisions.json). Rivi sitoo kanonisen
 ID:n nykyiseen alkuperäislähteeseen, valmistukseen ja reseptikohtaisiin
-laskenta- ja lähdetiivisteisiin. Kopioi nykyiset tiivisteet jonotarkistuksen
+laskenta-, lähde- ja kontekstitiivisteisiin. Konteksti kattaa annoksen
+kuvauksen ja laskennan lähdeperustelut. Kopioi tiivisteet jonotarkistuksen
 `binding`-kentästä. Merkitse päätöspäivä, täsmällinen este sekä Gitissä oleva
 katselmointiviite, sen LF-normalisoitu SHA-256 ja kohta, joka yksilöi
 tarkistetut lähteet. Hyväksytyt GK- ja F25-aineistot säilyvät omissa
 rekistereissään. Vanhat HOLDit eivät siirry automaattisesti tutkimuspäätöksiksi.
 
 Reseptin olennainen muutos tai reseptiin sidotun laskenta- tai
-lähdeaineiston muutos avaa tutkimuksen uudelleen. Jos soveltuva uusi
+lähdeaineiston muutos avaa tutkimuksen uudelleen. Pelkkä kontekstitiivisteen
+muutos ohjaa tarkistamaan lähteen soveltuvuuden tai annoksen rajauksen.
+Jos soveltuva uusi
 GI- tai koostumuslähde ei vielä ole laskentasyötteessä, tai on muu
 nimenomainen uudelleenkatselmointipäätös, lisää vanhalle riville `reopen`.
 Käytä tyyppiä `applicable-gi`, `applicable-composition` tai

@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import { gkResearchDecisionPath, gkResearchDisposition, gkResearchRecipeHash, gkResearchRegistry, researchTextHash } from "./gk-research-decisions";
+import { gkResearchDecisionPath, gkResearchDisposition, gkResearchRecipeBinding, gkResearchRegistry, researchTextHash } from "./gk-research-decisions";
 import { git, repoRoot } from "./recipe-state-inputs";
 import { projectPublishedMarkdown } from "./build-content";
 import type { projectRecipeState } from "./recipe-state";
@@ -38,11 +38,16 @@ const results = ids.flatMap(requestedId => {
     (conflict.recipeId === row?.sourceRecipeId || conflict.recipeId === canonicalId) &&
     ["ambiguous-fi-source", "unverified-successor", "missing-public-gk-disposition"].includes(conflict.code));
   let recipeSha256: string | null = null;
+  let contextSha256: string | null = null;
   if (row && !unclear) {
     try {
       const source = readAtHead(row.sourcePath);
       if (researchTextHash(source) === row.contentHash) {
-        recipeSha256 = gkResearchRecipeHash(projectPublishedMarkdown(row.sourcePath, source));
+        const binding = gkResearchRecipeBinding(projectPublishedMarkdown(row.sourcePath, source));
+        recipeSha256 = binding.recipeSha256;
+        contextSha256 = researchTextHash(JSON.stringify([
+          binding.narrativeSha256, row.glycemicLoadStatus.calculationContextSha256,
+        ]));
       }
     } catch {
       // A recipe that cannot be bound stays available for manual review.
@@ -55,10 +60,12 @@ const results = ids.flatMap(requestedId => {
     recipeSha256,
     calculationInputSha256: row?.glycemicLoadStatus.calculationInputSha256 ?? null,
     calculationEvidenceSha256: row?.glycemicLoadStatus.calculationEvidenceSha256 ?? null,
+    contextSha256,
     hasPublicEstimate: published,
     bindingConflict: Boolean(row?.glycemicLoadStatus.bindingDifferences.length),
     ambiguous: unclear || (row?.glycemicLoadStatus.calculationInputSha256 === undefined) ||
-      (row?.glycemicLoadStatus.calculationEvidenceSha256 === undefined),
+      row?.glycemicLoadStatus.calculationEvidenceSha256 === undefined ||
+      row?.glycemicLoadStatus.calculationContextSha256 === undefined,
     priority,
   }, currentDecision, evidence => {
     try {
@@ -68,10 +75,11 @@ const results = ids.flatMap(requestedId => {
     }
   });
   return [{ recipeId: canonicalId, sourceRecipeId: row?.sourceRecipeId ?? null, ...disposition,
-    binding: { recipeSha256, calculationInputSha256: row?.glycemicLoadStatus.calculationInputSha256 ?? null,
+    bindingDifferences: row?.glycemicLoadStatus.bindingDifferences ?? [],
+    binding: { recipeSha256, contextSha256, calculationInputSha256: row?.glycemicLoadStatus.calculationInputSha256 ?? null,
       calculationEvidenceSha256: row?.glycemicLoadStatus.calculationEvidenceSha256 ?? null },
     decision: currentDecision ? { reviewedAt: currentDecision.reviewedAt, recipeSha256: currentDecision.recipeSha256,
-      evidence: currentDecision.evidence } : null }];
+      evidence: currentDecision.evidence, reopen: currentDecision.reopen } : null }];
 });
 
 const statuses = ["new", "reopened", "skip", "approved", "review", "priority"] as const;
