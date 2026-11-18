@@ -81,7 +81,7 @@ test('serabi and apam balik retain only the sealed thin-version GK', () => {
  }
 });
 
-test('Live original results preserve frozen history plus the exact reviewed transitions; all87 variants and macros stay identical',()=>{
+test('Live original results preserve frozen history, the 87 variants and exact reviewed transitions',()=>{
  const read = (file: string) => restoreRecipeAuditSnapshot(file, readLive(file));
  const archivedJson = (file: string) => JSON.parse(read(file));
  assertOriginalContentTransition(report);
@@ -108,6 +108,10 @@ test('Live original results preserve frozen history plus the exact reviewed tran
  assert.deepEqual(historicalVariants.map(variantKey).sort(), Object.keys(before.variantHashes).sort());
  for(const v of historicalVariants)assert.equal(sha(v),before.variantHashes[variantKey(v)],v.recipeId);
  const completePublishedInventory = restoreAuditInventory(json('tmp/nutrition/audit.json').inventory) as Array<{recipe_id:string;source_path:string;status:string}>;
+ const alooParathaId = 'intialainen-aloo-paratha';
+ const historicalAlooParatha = archivedJson('docs/nutrition/audit.json').inventory.find((row: {recipe_id: string}) => row.recipe_id === alooParathaId);
+ assert.ok(historicalAlooParatha);
+ assert.equal(completePublishedInventory.filter(row => row.recipe_id === alooParathaId).length, 1);
  const inventory = completePublishedInventory.filter((row) => {
    const reviewedPin = frozenKarnivoreFi3Blobs[row.recipe_id];
    if (!reviewedPin) return true;
@@ -117,6 +121,21 @@ test('Live original results preserve frozen history plus the exact reviewed tran
    assert.equal(actualBlob, reviewedPin, `${row.recipe_id}: reviewed source blob changed`);
    assert.equal(row.status, 'ESTIMATE WITH EVIDENCE', `${row.recipe_id}: nutrition evidence must pass`);
    return false;
+ }).map((row) => {
+   if (row.recipe_id !== alooParathaId) return row;
+   const keys = Object.keys(historicalAlooParatha.values);
+   assert.deepEqual(row, {
+     ...historicalAlooParatha,
+     values: Object.fromEntries(keys.map(key => [key, null])),
+     status: 'INSUFFICIENT SOURCE DATA',
+     recalculatedValues: null,
+     carbohydrateDefinition: 'NOT DOCUMENTED',
+     totalCarbohydrateDefinition: 'NOT VERIFIED',
+     brandAndRawWeightEvidence: 'NOT VERIFIED',
+     missingFields: keys,
+     uncertainties: ['Fineli #310 (MAA-ARTISOKKA) was used for peeled potato. The predecessor also lacks a defined potato preparation and a weighed amount of serving yoghurt.'],
+   });
+   return historicalAlooParatha;
  });
  for (const id of Object.keys(frozenKarnivoreFi3Blobs)) {
    assert.equal(completePublishedInventory.filter(row => row.recipe_id === id).length, 1, id);
