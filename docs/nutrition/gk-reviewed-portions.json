@@ -3703,10 +3703,10 @@
     "nutritionSha256": "d2a9d127a33f00daba65ea4fb8a6adf36243b9ca7b47b4b1034d481837a36027",
     "piecesPerServing": 1,
     "condition": {
-      "fi": "Jaa taikina kymmeneen yhtä suureen nokareeseen. Annosarvio koskee yhtä rieskaa.",
-      "en": "Divide the dough into ten equal mounds. The estimate covers one flatbread.",
-      "sv": "Dela degen i tio lika stora klickar. Uppskattningen gäller ett tunnbröd.",
-      "th": "แบ่งแป้งเป็นสิบกองเท่า ๆ กัน ค่าประมาณนี้สำหรับขนมปังแผ่นหนึ่งชิ้น"
+      "fi": "Jaa taikina kymmeneen yhtä suureen nokareeseen. Yksi reseptiannos on yksi rieska. Yhden rieskan hiilihydraateista noin 8,9 g tulee ohrajauhosta ja 5,5 g maidolla tehdystä perunasoseesta. Laske päälliset erikseen.",
+      "en": "Divide the dough into ten equal mounds. One recipe serving is one flatbread. In one flatbread, the barley flour contributes about 8.9 g of carbohydrate and the potatoes mashed with milk about 5.5 g. Count toppings separately.",
+      "sv": "Dela degen i tio lika stora klickar. En receptportion är ett tunnbröd. I ett tunnbröd ger kornmjölet cirka 8,9 g kolhydrater och potatismoset med mjölk cirka 5,5 g. Räkna pålägget för sig.",
+      "th": "แบ่งแป้งเป็นสิบกองเท่า ๆ กัน หนึ่งที่ตามสูตรคือขนมปังแผ่นหนึ่งชิ้น ในขนมปังแผ่นหนึ่งชิ้น แป้งข้าวบาร์เลย์ให้คาร์โบไฮเดรตประมาณ 8.9 กรัม และมันฝรั่งบดผสมนมประมาณ 5.5 กรัม ให้คิดหน้าขนมปังแยกต่างหาก"
     },
     "reasoning": "The equal split and weighed sources anchor the serving. Fresh versus cooled mash, its exact formulation, and barley cultivar/flour baking can change the response. Carbohydrate estimated from the recipe measures as a whole, without toppings.",
     "reviewedAt": "2026-11-18",
@@ -3718,10 +3718,10 @@
     "preparationSha256": "9fb28740d1a51199291cc0b81690c4b60ad8179a5fc51ac0ca4de44273e20e64",
     "nutritionSha256": "c679c19eeb6a1b5a8a5dd3e24d214e64921dc5d2ce8c4c6e230176e40c4032ce",
     "condition": {
-      "fi": "Jaa keitto neljään yhtä suureen kulhoon. Yhteen kulhoon tulee reseptin kevytmaidosta 2,5 dl ja osa vehnäjauhosuuruksesta.",
-      "en": "Divide the soup among four equal bowls. Each bowl contains 250 mL of the recipe’s semi-skimmed milk and a share of the flour thickener.",
-      "sv": "Fördela soppan i fyra lika stora skålar. Varje skål innehåller 2,5 dl av receptets mellanmjölk och en del av mjölredningen.",
-      "th": "แบ่งซุปเป็นสี่ชามเท่า ๆ กัน แต่ละชามใช้นมพร่องมันเนย 250 มล. และมีแป้งสาลีที่ใช้ทำให้ซุปข้น"
+      "fi": "Jaa keitto neljään yhtä suureen kulhoon. Yhteen kulhoon tulee reseptin kevytmaidosta 2,5 dl ja osa vehnäjauhosuuruksesta. Yhden kulhon hiilihydraateista tulee noin 12 g maidosta ja 9 g vehnäjauhosta.",
+      "en": "Divide the soup among four equal bowls. Each bowl contains 250 mL of the recipe’s semi-skimmed milk and a share of the flour thickener. The milk contributes about 12 g of carbohydrate per bowl and the wheat flour about 9 g.",
+      "sv": "Fördela soppan i fyra lika stora skålar. Varje skål innehåller 2,5 dl av receptets mellanmjölk och en del av mjölredningen. Mjölken ger cirka 12 g kolhydrater per skål och vetemjölet cirka 9 g.",
+      "th": "แบ่งซุปเป็นสี่ชามเท่า ๆ กัน แต่ละชามใช้นมพร่องมันเนย 250 มล. และมีแป้งสาลีที่ใช้ทำให้ซุปข้น คาร์โบไฮเดรตต่อชามมาจากนมประมาณ 12 กรัม และแป้งสาลีประมาณ 9 กรัม"
     },
     "reasoning": "Milk supplies 12 g of 21.82 g available carbohydrate per bowl. Roux flour supplies 9.01850625 g. The milk trials cannot fix the response of boiling flour in a milk and butter roux; applying plausible flour comparisons can cross GK 10.",
     "reviewedAt": "2026-11-18",
@@ -3733,10 +3733,10 @@
     "preparationSha256": "2260bec72aaa382f0db66432d404e3d76820d7bb43551fb183ccfcb623b10264",
     "nutritionSha256": "1ebb2831f91cf4c947d9dba5f92ba93e64f39b58e57642a69f82eb2787933201",
     "condition": {
-      "fi": "Yksi annos on neljäsosa valmiista puurosta. Siihen tulee noin 38 g täysjyväruisjauhoja. Määrä on laskettu Finelin kotitalousmitalla.",
-      "en": "One serving is one quarter of the cooked porridge and uses about 38 g of wholegrain rye flour. The weight is estimated from Fineli’s household measure.",
-      "sv": "En portion är en fjärdedel av den färdiga gröten och innehåller cirka 38 g fullkornsrågmjöl. Vikten är beräknad med Finelis hushållsmått.",
-      "th": "หนึ่งที่คือหนึ่งในสี่ของโจ๊กที่ปรุงเสร็จ และใช้แป้งไรย์โฮลเกรนประมาณ 38 กรัม น้ำหนักนี้ประมาณจากหน่วยตวงในครัวเรือนของ Fineli"
+      "fi": "Yksi annos on neljäsosa valmiista puurosta. Siihen tulee noin 38 g täysjyväruisjauhoja. Määrä on laskettu Finelin kotitalousmitalla. Yhden annoksen hiilihydraateista tulee noin 22 g ruisjauhoista ja 16 g lisätystä sokerista.",
+      "en": "One serving is one quarter of the cooked porridge and uses about 38 g of wholegrain rye flour. The weight is estimated from Fineli’s household measure. The rye flour contributes about 22 g of carbohydrate per serving and the added sugar about 16 g.",
+      "sv": "En portion är en fjärdedel av den färdiga gröten och innehåller cirka 38 g fullkornsrågmjöl. Vikten är beräknad med Finelis hushållsmått. Rågmjölet ger cirka 22 g kolhydrater per portion och det tillsatta sockret cirka 16 g.",
+      "th": "หนึ่งที่คือหนึ่งในสี่ของโจ๊กที่ปรุงเสร็จ และใช้แป้งไรย์โฮลเกรนประมาณ 38 กรัม น้ำหนักนี้ประมาณจากหน่วยตวงในครัวเรือนของ Fineli คาร์โบไฮเดรตต่อหนึ่งที่มาจากแป้งไรย์ประมาณ 22 กรัม และน้ำตาลที่เติมประมาณ 16 กรัม"
     },
     "reasoning": "Dry flour mass is inferred from the Finland food-specific 55 g/dL factor, not a weighed recipe input. Available carbohydrate from rye and sugar total 38.378784375 g of 43.03 g. Neither study directly measures the combined boiled recipe or gives a glucose-scale GI for that whole serving.",
     "reviewedAt": "2026-11-18",
@@ -3802,10 +3802,10 @@
       "availableCarbsGPer100g": 8.31
     },
     "condition": {
-      "fi": "Jaa paistos neljään yhtä suureen annokseen niin, että jokaiseen tulee omenoita ja kauramurua. Annosarvio kattaa paistoksen sellaisenaan.",
-      "en": "Divide the crumble into four equal servings, each with apples and oat topping. The estimate covers the crumble on its own.",
-      "sv": "Dela smulpajen i fyra lika stora portioner med äpple och havresmul i alla. Uppskattningen gäller pajen utan tillbehör.",
-      "th": "แบ่งแอปเปิลครัมเบิลเป็นสี่ส่วนเท่า ๆ กัน ให้ทุกส่วนมีทั้งแอปเปิลและครัมเบิลข้าวโอ๊ต ค่าประมาณครอบคลุมเฉพาะตัวครัมเบิลตามสูตร"
+      "fi": "Jaa paistos neljään yhtä suureen annokseen niin, että jokaiseen tulee omenoita ja kauramurua. Annosarvio kattaa paistoksen sellaisenaan. Yhden annoksen hiilihydraateista noin 16 g tulee kaurahiutaleista ja 11 g lisätystä sokerista. Laske mahdollinen vaniljakastike tai jäätelö erikseen.",
+      "en": "Divide the crumble into four equal servings, each with apples and oat topping. The estimate covers the crumble on its own. The oats contribute about 16 g of carbohydrate per serving and the added sugar about 11 g. Count any custard or ice cream separately.",
+      "sv": "Dela smulpajen i fyra lika stora portioner med äpple och havresmul i alla. Uppskattningen gäller pajen utan tillbehör. Havregrynen ger cirka 16 g kolhydrater per portion och det tillsatta sockret cirka 11 g. Räkna eventuell vaniljsås eller glass för sig.",
+      "th": "แบ่งแอปเปิลครัมเบิลเป็นสี่ส่วนเท่า ๆ กัน ให้ทุกส่วนมีทั้งแอปเปิลและครัมเบิลข้าวโอ๊ต ค่าประมาณครอบคลุมเฉพาะตัวครัมเบิลตามสูตร คาร์โบไฮเดรตต่อหนึ่งที่มาจากข้าวโอ๊ตประมาณ 16 กรัม และน้ำตาลที่เติมประมาณ 11 กรัม คิดซอสวานิลลาหรือไอศกรีมที่เสิร์ฟคู่กันแยกต่างหาก"
     },
     "reasoning": "Whole portion 45 g available carbohydrate includes 17.65875 g from apples, 16.35 g from dry rolled oats and 10.614375 g from granulated sugar. Fruit must be weighed after peeling and coring. Divide both layers evenly. The recipe is baked at 200 C for 20–25 minutes. Available carbohydrate reflects the crumble without added sides. No prepared apple/oat/sugar/butter GI or GK class is assigned.",
     "reviewedAt": "2026-11-18",
@@ -5089,10 +5089,96 @@
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30382",
     "reasoning": "Fineli Release 20 #30382 reports 8.163 g available carbohydrate per 100 g of cooked unsalted beet. The original 500 g figure is whole raw purchase weight measured with the peel. An original whole-portion estimate needs the cooked, peeled and drained beet weight, measured dry risotto rice and compatible composition, and the actual retained stock concentrate/food-composition match. No original portion quantity, macros or GK projection is added.",
     "condition": {
-      "fi": "Finelin keitetyssä punajuuressa on noin 8,2 g imeytyvää hiilihydraattia 100 grammassa. Koko annoksen arvioon tarvitaan keitetyn ja kuoritun punajuuren paino, kuivan riisin punnittu määrä ja käytetyn kasvisfondin hiilihydraattitieto.",
-      "en": "Fineli lists about 8.2 g of available carbohydrate per 100 g of boiled beetroot. A whole-serving estimate needs the weight of the beetroot after boiling and peeling, the weight of the dry rice, and the carbohydrate content of the vegetable stock concentrate used.",
-      "sv": "Fineli anger cirka 8,2 g tillgängliga kolhydrater per 100 g kokt rödbeta. För att uppskatta hela portionen behövs vikten på rödbetorna efter kokning och skalning, vikten på det torra riset och kolhydratmängden i grönsaksfonden som används.",
-      "th": "Fineli ระบุว่าบีตรูตต้มมีคาร์โบไฮเดรตที่ย่อยได้ประมาณ 8.2 กรัมต่อ 100 กรัม การประมาณทั้งที่ต้องใช้น้ำหนักบีตรูตหลังต้มและปอกเปลือก น้ำหนักข้าวสาร และข้อมูลคาร์โบไฮเดรตของน้ำสต๊อกผักเข้มข้นที่ใช้"
+      "fi": "Finelin keitetyssä punajuuressa on noin 8,2 g imeytyvää hiilihydraattia 100 grammassa. Koko annoksen arvioon tarvitaan keitetyn ja kuoritun punajuuren paino, kuivan riisin punnittu määrä ja käytetyn kasvisfondin hiilihydraattitieto. Yhteen reseptiannokseen käytetään 0,8 dl kuivaa risottoriisiä.",
+      "en": "Fineli lists about 8.2 g of available carbohydrate per 100 g of boiled beetroot. A whole-serving estimate needs the weight of the beetroot after boiling and peeling, the weight of the dry rice, and the carbohydrate content of the vegetable stock concentrate used. One recipe serving uses 80 mL of dry risotto rice.",
+      "sv": "Fineli anger cirka 8,2 g tillgängliga kolhydrater per 100 g kokt rödbeta. För att uppskatta hela portionen behövs vikten på rödbetorna efter kokning och skalning, vikten på det torra riset och kolhydratmängden i grönsaksfonden som används. Till en receptportion går det åt 0,8 dl torrt risottoris.",
+      "th": "Fineli ระบุว่าบีตรูตต้มมีคาร์โบไฮเดรตที่ย่อยได้ประมาณ 8.2 กรัมต่อ 100 กรัม การประมาณทั้งที่ต้องใช้น้ำหนักบีตรูตหลังต้มและปอกเปลือก น้ำหนักข้าวสาร และข้อมูลคาร์โบไฮเดรตของน้ำสต๊อกผักเข้มข้นที่ใช้ หนึ่งที่ตามสูตรใช้ข้าวสารสำหรับริซอตโต 80 มิลลิลิตร"
+    }
+  },
+  "valimerellinen-kikherne-yrttiaamiainen-punnittu-v2": {
+    "recipeBindingSha256": "ac34691702602f5d32b77c009ece3a4f589e9a5a5df7ebc58bcc1e0817adcc0c",
+    "preparationSha256": "a71b2c8fee7efe550361a3a28a95aec1d5953912f0d0d626b79548510acc938b",
+    "nutritionSha256": "c96375af10e1a396296314cd0bb08fbe02234c877c5ddb8b9e639347fa39a5af",
+    "localizedScopeSha256": {
+      "fi": "06823261dc26ba55a5d619a7969698b19e781d810c41326b61cc09411d5cac27",
+      "en": "e0d6b4d2d71bc55d36e7f11d691bb231b4d8263bf18802ef4de4e3650c1e0356",
+      "sv": "80f5de9faed351a0f66ae85f6b5dd8487c874ce8810e2173bf24140f634c757a",
+      "th": "d251cb0256c8d6f58653208a82b0ef6dcea12155b3f0f77e6502d8294b35b5f5"
+    },
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/655a7a12d5b1edc69e6c5344c1108684bcc29b60/docs/nutrition/calculations/valimerellinen-kikherne-yrttiaamiainen-punnittu-v2.json",
+    "reasoning": "The approved Fineli-based calculation covers one of two bowls, each with 50 g chickpeas weighed after cooking in unsalted water and draining, one hard-boiled egg, and its share of all lemon-oil dressing. Available carbohydrate remains the existing 10.20 g. The historical parent recipe and its evidence remain quarantined. Current V2 editorial decision and preparation applicability do not support verbal or numerical GK.",
+    "carbohydrateScope": {
+      "fi": "Yhdessä kulhossa on 50 g kypsää, valutettua kikhernettä ja yksi kovaksi keitetty muna. Sitruuna-öljykastike kuuluu annokseen.",
+      "en": "One bowl contains 50 g of cooked, drained chickpeas and one hard-boiled egg. The serving includes the lemon and oil dressing.",
+      "sv": "En skål innehåller 50 g kokta, avrunna kikärter och ett hårdkokt ägg. Citron- och oljedressingen ingår i portionen.",
+      "th": "หนึ่งชามมีถั่วลูกไก่ที่ต้มและสะเด็ดน้ำแล้ว 50 กรัม ไข่ต้มสุก 1 ฟอง และน้ำสลัดเลมอนผสมน้ำมัน"
+    },
+    "condition": {
+      "fi": "Tähän valmistus- ja tarjoilutapaan sopiva kikherneen GI-lähde on vielä vahvistamatta.",
+      "en": "A suitable GI source for chickpeas prepared and served this way has yet to be confirmed.",
+      "sv": "En lämplig GI-källa för kikärter som tillagas och serveras på det här sättet återstår att bekräfta.",
+      "th": "ยังไม่ได้ยืนยันแหล่งข้อมูลค่า GI สำหรับถั่วลูกไก่ที่ปรุงและเสิร์ฟแบบนี้"
+    }
+  },
+  "karnivore-maksa-ja-pekoni": {
+    "recipeBindingSha256": "a06e6becf7be4d79418f25746dde1a671896c9a9169a5834fcc17b2f6c52f076",
+    "preparationSha256": "13f64724bcdfbd11690637deaf30f74a830cb069dc47a3b51dfc56bd7df85a89",
+    "nutritionSha256": "196b1ea43f70ba307b1b2a35df773ddae523ea1d865bc0c876fbb58891b21a99",
+    "localizedScopeSha256": {
+      "fi": "5387cac4af6d1ca5d5eec44ebcce7baf7d52b8cd4dd4df22d6679ce5f4a9b209",
+      "en": "efb02368941f919a5c46a1dd31ab3d607df35d8338f6e1954477d05069e122d9",
+      "sv": "863c4290392cc34fc74d461900818f6586b43045def790525870e2b05d880827",
+      "th": "8d7b35a142ba05c31c542d7f07831a014b22ae6e7649bb726b1efcb9560e9c56"
+    },
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/655a7a12d5b1edc69e6c5344c1108684bcc29b60/docs/nutrition/calculations/karnivore-maksa-ja-pekoni.json",
+    "reasoning": "The exact published calculation uses trimmed raw beef liver, a named pork-and-salt reference bacon, butter and salt. One of three portions includes its share of all edible pan fat and juices. Full existing available amount and source driver stay in place. Neither a liver GI nor a whole mixed meal GK is assigned.",
+    "carbohydrateScope": {
+      "fi": "Yksi annos on kolmasosa maksasta, pekonista sekä kaikesta syötävästä paistorasvasta ja paistonesteestä.",
+      "en": "One serving is a third of the liver, bacon and all edible fat and juices from the pan.",
+      "sv": "En portion är en tredjedel av levern, baconet och allt ätbart fett och all sky från pannan.",
+      "th": "หนึ่งที่คือหนึ่งในสามของตับ เบคอน และไขมันกับน้ำเนื้อส่วนที่กินได้ทั้งหมดจากกระทะ"
+    }
+  },
+  "timjami-uunijuurekset": {
+    "recipeBindingSha256": "bad178b7d5509aba418b8826a9c2da2bd837cf2ef3db71a8dade26277530fa22",
+    "preparationSha256": "fe59e485251855d978db46f3720de7818e8a96c5fe415914eb07f5823e2da9d1",
+    "nutritionSha256": "61f8e98339df0cd1a1f28d1292c6b5cf6cc56c5cb618fb9499b8dd5022a0d078",
+    "localizedScopeSha256": {
+      "fi": "7ce35644e47cb0e7017193bf15dbe20bab0ceac19c6ddec73763ae97a989d01c",
+      "en": "f0f16dd373d3fd6191ff551a741a9eb0db200ffa5e0111be72cbf569b194258f",
+      "sv": "124649488775efbb1ab4e2b9f6d8f48e7665f186f5e6907b5b42adbf09dcecba",
+      "th": "dfd0858bd938e2463b31e51d1000eedf3f16487424430e8ed64370612084c244"
+    },
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/655a7a12d5b1edc69e6c5344c1108684bcc29b60/docs/nutrition/calculations/timjami-uunijuurekset.json",
+    "reasoning": "One of four equal shares uses 100 g carrot, 75 g parsnip and 75 g firm potato weighed peeled before roasting. The entire existing input-based Fineli/AFCD calculation includes listed seasonings. Potato is the largest single contributor with less than half of available carbohydrate. No serving yield, side or new GK is claimed.",
+    "carbohydrateScope": {
+      "fi": "Yhteen annokseen käytetään 100 g porkkanaa, 75 g palsternakkaa ja 75 g perunaa. Juurekset punnitaan kuorittuina ennen paahtamista. Yhden annoksen hiilihydraateista tulee noin 11,6 g perunasta, 7,7 g palsternakasta ja 5,6 g porkkanasta.",
+      "en": "One serving uses 100 g of carrot, 75 g of parsnip and 75 g of potato. Weigh the vegetables after peeling and before roasting. In one serving, the potatoes contribute about 11.6 g of carbohydrate, the parsnips about 7.7 g and the carrots about 5.6 g.",
+      "sv": "Till en portion går det åt 100 g morot, 75 g palsternacka och 75 g potatis. Väg rotfrukterna efter skalning och före rostning. I en portion ger potatisen cirka 11,6 g kolhydrater, palsternackan cirka 7,7 g och moroten cirka 5,6 g.",
+      "th": "หนึ่งที่ใช้แครอต 100 กรัม พาร์สนิป 75 กรัม และมันฝรั่ง 75 กรัม ชั่งหลังปอกเปลือกและก่อนอบ คาร์โบไฮเดรตต่อหนึ่งที่มาจากมันฝรั่งประมาณ 11.6 กรัม พาร์สนิปประมาณ 7.7 กรัม และแครอตประมาณ 5.6 กรัม"
+    }
+  },
+  "palsternakkasosekeitto": {
+    "recipeBindingSha256": "494139afbf0878af76325c9b64a50891e99530c8f6c3d22a110df2800312d58f",
+    "preparationSha256": "a167afe70ffbe25df22e367df268e71aa367a346b07b520cfb1fed571bfc4126",
+    "nutritionSha256": "aa32fab7281f3ef6d72cf9e0167229b4e07790ae25b96ffdd1ed96579f2a052f",
+    "localizedScopeSha256": {
+      "fi": "6b5fc611b00367cd8f657c1b41d7e603f82c6f84d37e99ba10f4ffe1a308e3e8",
+      "en": "d24be7c9ee593f8df63314a68492888b216761ce1a412317045a35ede11a5fd6",
+      "sv": "aaf5c7a260f4389e4201d5972f81f2414bf5cb1be1bf571c4f701228a762b787",
+      "th": "346e8cbd2f16fad2d83bb1816770cb346caf5e4ec06c4cd531eb381f8cdbf3c8"
+    },
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/655a7a12d5b1edc69e6c5344c1108684bcc29b60/docs/nutrition/calculations/palsternakkasosekeitto.json",
+    "reasoning": "One of four bowls includes the quarter share of all cooked root vegetables, cooking water, cream and listed seasonings. Parsnip and potato are weighed peeled before cooking. Neither root alone supplies a majority. Excludes unspecified extras; no prepared volume, GK or health claim.",
+    "carbohydrateScope": {
+      "fi": "Yksi annos on neljännes keitosta kermoineen. Palsternakka ja peruna punnitaan kuorittuina ennen keittämistä. Palsternakasta ja perunasta tulee kummastakin noin 14 g hiilihydraattia yhtä annosta kohti.",
+      "en": "One serving is a quarter of the soup, including the cream. Weigh the parsnips and potatoes after peeling and before cooking. The parsnips and potatoes each contribute about 14 g of carbohydrate per serving.",
+      "sv": "En portion är en fjärdedel av soppan med grädde. Väg palsternackan och potatisen efter skalning och före kokning. Palsternackan och potatisen bidrar med cirka 14 g kolhydrater vardera per portion.",
+      "th": "หนึ่งที่คือหนึ่งในสี่ของซุปรวมครีม ชั่งพาร์สนิปและมันฝรั่งหลังปอกเปลือกและก่อนต้ม พาร์สนิปและมันฝรั่งให้คาร์โบไฮเดรตอย่างละประมาณ 14 กรัมต่อหนึ่งที่"
     }
   }
 }

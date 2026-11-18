@@ -241,6 +241,13 @@ test("preparation and optional-side evidence stays visibly scoped", async () => 
 
 test("carbohydrate and GL describe their separate recipe assumptions before and beside the respective amounts", async () => {
   const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  const numeric = new Set([...glycemicLoadPilotResults, ...glycemicLoadAdditionalResults]
+    .filter(result => result.status === "CALCULATED").map(result => result.recipeId));
+  for (const id of ["karnivore-maksa-ja-pekoni", "palsternakkasosekeitto", "timjami-uunijuurekset", "valimerellinen-kikherne-yrttiaamiainen-punnittu-v2"]) {
+    assert.ok(reviews[id]?.carbohydrateScope, id);
+    assert.ok(!numeric.has(id), id);
+    assert.equal(glycemicLoadFilterCategories[id], undefined, id);
+  }
   for (const [id, review] of Object.entries(reviews).filter(([, review]) => review.carbohydrateScope)) {
     const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
     assert.equal(entries.length, 4, id);
@@ -252,28 +259,67 @@ test("carbohydrate and GL describe their separate recipe assumptions before and 
       const start = guide.indexOf(`id="${id}"`);
       const row = guide.slice(start, guide.indexOf("<li ", start + 1));
       const carbsScope = review.carbohydrateScope![locale];
+      const recipeCarbs = html.indexOf('data-portion-carbohydrate="available"');
+      const recipeScope = renderToStaticMarkup(createElement("p", {className: "recipe-disclosure"}, carbsScope));
+      const guideScope = renderToStaticMarkup(createElement("p", {"data-portion-preparation-scope": true}, carbsScope));
+      assert.ok(html.includes(recipeScope), routePath);
+      assert.ok(html.indexOf(recipeScope) < recipeCarbs, routePath);
+      assert.ok(row.includes(guideScope), routePath);
+      assert.ok(row.includes('href="' + (review.publicSource ?? review.source) + '"'), routePath);
+      if (!numeric.has(id)) {
+        assert.doesNotMatch(html, /data-portion-gk|data-original-gk-class=/, routePath);
+        assert.doesNotMatch(row, /class="gk-evidence__value"(?! data-gk-estimate="VERBAL")|data-original-gk-class=/, routePath);
+        continue;
+      }
       const limitation = review.classLimitation?.[locale];
       const glScope = limitation ?? review.condition?.[locale];
       assert.ok(glScope, routePath);
-      const recipeCarbs = html.indexOf('data-portion-carbohydrate="available"');
       const recipeGl = html.indexOf("data-portion-gk");
       const recipeGlScope = html.indexOf(renderToStaticMarkup(createElement("p", {
         className: limitation ? "recipe-glycemic-load__class" : "recipe-disclosure",
       }, glScope)));
       const guideGlScope = row.indexOf(renderToStaticMarkup(createElement("p", null, glScope)));
       const guideGl = row.indexOf("gk-evidence__value");
-      const recipeScope = renderToStaticMarkup(createElement("p", {className: "recipe-disclosure"}, carbsScope));
-      const guideScope = renderToStaticMarkup(createElement("p", {"data-portion-preparation-scope": true}, carbsScope));
-      assert.ok(html.includes(recipeScope), routePath);
-      assert.ok(html.indexOf(recipeScope) < recipeCarbs && recipeCarbs < recipeGl, routePath);
-      assert.ok(row.includes(guideScope), routePath);
+      assert.ok(recipeCarbs < recipeGl, routePath);
       assert.ok(guideGl > row.indexOf(guideScope), routePath);
       assert.ok(recipeGlScope > recipeCarbs && (limitation ? recipeGlScope > recipeGl : recipeGlScope < recipeGl), routePath);
       assert.ok(guideGlScope > row.indexOf(guideScope) && (limitation ? guideGlScope > guideGl : guideGlScope < guideGl), routePath);
-      assert.ok(row.includes('href="' + (review.publicSource ?? review.source) + '"'), routePath);
     }
   }
   assert.equal(glycemicLoadFilterCategories["valimerellinen-jogurttikulho-hunajalla"], "low");
+});
+
+test("reviewed ingredient contributions and the dry risotto rice amount are visible beside the supported portion information", async () => {
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  const expected = {
+    "pinaattikeitto": /12.*9/,
+    "perunarieskat-ohrajauhoilla": /8[,.]9.*5[,.]5/,
+    "ruis-puolukkapuuro": /22.*16/,
+    "omena-kaurapaistos": /16.*11/,
+    "punajuuririsotto": /0,8 dl|80 mL|80 มิลลิลิตร/,
+  };
+  const guides = new Map(await Promise.all((["fi", "en", "sv", "th"] as const).map(async locale =>
+    [locale, await readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8")] as const)));
+  for (const [id, ingredients] of Object.entries(expected)) {
+    const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.equal(entries.length, 4, id);
+    assert.equal(glycemicLoadFilterCategories[id], undefined, id);
+    for (const { locale, routePath } of entries) {
+      const note = reviews[id]?.condition?.[locale];
+      assert.ok(note && ingredients.test(note), routePath);
+      const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+      const guide = guides.get(locale)!;
+      const start = guide.indexOf(`id="${id}" class="glycemic-pilot__recipe"`);
+      assert.ok(start >= 0, routePath);
+      const row = guide.slice(start, guide.indexOf("<li ", start + 1));
+      assert.ok(html.includes(renderToStaticMarkup(createElement("p", { className: "recipe-disclosure" }, note))), routePath);
+      assert.ok(row.includes(renderToStaticMarkup(createElement("p", null, note)))
+        || row.includes(renderToStaticMarkup(createElement("p", { "data-portion-preparation-scope": true }, note))), routePath);
+      assert.doesNotMatch(html, /data-portion-gk|data-original-gk-class=/, routePath);
+      assert.doesNotMatch(row, /class="gk-evidence__value"/);
+      if (id === "punajuuririsotto") assert.doesNotMatch(html, /data-portion-carbohydrate=/, routePath);
+    }
+  }
 });
 
 test("reviewed legacy portions name the applicable GI group on the recipe and in the guide", async () => {
