@@ -61,6 +61,7 @@ export interface PortionEvidence {
   versionAlternatives?: { versionId: string; choices: NamedGkAlternative[] };
   reviewedSource?: string;
   availableCarbs?: GkRange;
+  modeledNetCarbs?: number;
   carbohydrateComparisons?: Partial<Record<RecipeLocale, CarbohydrateComparison>>;
   sideCarbohydrate?: SideCarbohydrate;
   wholeCarbohydrateChoices?: CarbohydrateChoice[];
@@ -85,6 +86,10 @@ export function originalPortionCarbs(nutrition: RecipeEntry["nutrition"], eviden
     range: evidence.availableCarbs, definition: "available",
     ...(evidence.wholeCarbohydrateChoices && { choices: evidence.wholeCarbohydrateChoices }),
   };
+  if (evidence?.modeledNetCarbs !== undefined) {
+    const value = evidence.modeledNetCarbs;
+    return { range: { min: value, max: value }, definition: "net" };
+  }
   for (const [value, definition] of [[nutrition.carbsTotalG, "total"], [nutrition.carbsNetG, "net"]] as const) {
     if (value !== null && Number.isFinite(value) && value >= 0) return { range: { min: value, max: value }, definition };
   }

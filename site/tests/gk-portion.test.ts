@@ -5,11 +5,29 @@ import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { loadReviewedPortions, portionPreparationHash, projectPortionEvidence } from "../scripts/gk-portion-projection";
-import { countGkPortionCoverage, originalPortionGk, reviewedIngredientPortions, verbalGkForPortion } from "../src/features/recipes/gk-portion";
+import { countGkPortionCoverage, originalPortionCarbs, originalPortionGk, reviewedIngredientPortions, verbalGkForPortion } from "../src/features/recipes/gk-portion";
 import { originalGlycemicLoadCategory } from "../scripts/glycemic-load-filter";
 import { recipeBindingHash } from "../scripts/glycemic-load-recipe-binding";
 
 const root = path.resolve(import.meta.dirname, "../..");
+
+test("approved recipe-specific net models take precedence over total carbohydrate", async () => {
+  const cases = [
+    ["jauheliha-kaalikeitto-vhh", "jauheliha-kaalikeitto-vhh", 10.21, 12],
+    ["vhh-kaalilaatikko", "kaalilaatikko", 9.52, 13],
+    ["uunikanapasta-kesakurpitsa", "uunikanapasta-kesakurpitsa", 7.4, 10.4],
+  ] as const;
+  for (const [id, filename, net, total] of cases) {
+    const markdown = await readFile(path.join(root, "reseptit/paaruoat", filename + ".md"), "utf8");
+    const { portion } = await projectPortionEvidence(root, id, markdown);
+    assert.equal(portion.availableCarbs, undefined);
+    assert.deepEqual(Object.keys(portion.carbohydrateScope ?? {}).sort(), ["en", "fi", "sv", "th"]);
+    const nutrition = { carbsTotalG: total, carbsNetG: net, fatG: null, proteinG: null };
+    assert.deepEqual(originalPortionCarbs(nutrition, portion), { range: { min: net, max: net }, definition: "net" });
+    assert.deepEqual(originalPortionCarbs(nutrition), { range: { min: total, max: total }, definition: "total" });
+    await assert.rejects(projectPortionEvidence(root, id, markdown + "\n"), /approved net carbohydrate model/);
+  }
+});
 
 test("rounded UI values cannot change the original GK category", () => {
   const candidate = {
