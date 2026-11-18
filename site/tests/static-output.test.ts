@@ -347,6 +347,36 @@ test("numeric original GK follows the same class on the recipe, in the guide and
   assert.deepEqual([...checkedClasses].sort(), ["HIGH", "LOW", "MEDIUM"]);
 });
 
+test("khao kha moo identifies the vegetable-side GK and withholds the whole-serving class", async () => {
+  const id = "khao-kha-moo-vhh";
+  const result = glycemicLoadPilotResults.find(row => row.recipeId === id);
+  assert.ok(result);
+  assert.equal(result.status, "CALCULATED");
+  assert.equal(result.unroundedGlycemicLoadPerServing, 2.7769500000000003);
+  assert.equal(result.omittedAvailableCarbohydratePerServingG, 0);
+  assert.equal(glycemicLoadFilterCategories[id], undefined);
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+  assert.equal(entries.length, 4);
+  for (const { locale, routePath } of entries) {
+    const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+    const guide = await readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8");
+    const start = guide.indexOf(`<li id="${id}" class="glycemic-pilot__recipe"`);
+    assert.ok(start > -1, routePath);
+    const end = guide.indexOf('class="glycemic-pilot__recipe"', start + `<li id="${id}" class="glycemic-pilot__recipe"`.length);
+    const row = guide.slice(start, end < 0 ? undefined : end);
+    const condition = reviews[id]?.condition?.[locale];
+    const limitation = reviews[id]?.classLimitation?.[locale];
+    assert.ok(condition && limitation, routePath);
+    assert.ok(html.indexOf(condition) >= 0 && html.indexOf(condition) < html.indexOf("data-portion-gk"), routePath);
+    assert.ok(row.indexOf(condition) >= 0 && row.indexOf(condition) < row.indexOf("gk-evidence__value"), routePath);
+    for (const surface of [html, row]) {
+      assert.ok(surface.includes(limitation), routePath);
+      assert.doesNotMatch(surface, /data-original-gk-class=/, routePath);
+    }
+  }
+});
+
 test("legacy GL coverage uses the approved ingredient sum and distinguishes estimated omissions from bounds", async () => {
   const file = path.resolve(import.meta.dirname, "../../tmp/nutrition/glycemic-load-pilot.json");
   const audit = JSON.parse(await readFile(file, "utf8")) as { results: GlycemicLoadResult[] };

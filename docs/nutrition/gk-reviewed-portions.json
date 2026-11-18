@@ -3440,12 +3440,18 @@
     "preparationSha256": "13e9a35e77422e0946e019af35a2ab1c247566619483d258d8e78e4b9c4ba336",
     "reviewedAt": "2026-11-18",
     "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
-    "reasoning": "Per serving, the original apportions 125 g cauliflower rice and 75 g Chinese cabbage or bok choy. The cabbage is briefly boiled or steamed and the cauliflower rice heated in a pan. The numeric model uses Fineli 322 cauliflower and 359 Chinese cabbage. All positive calculated GL is from an average of a diverse vegetable group that includes sweet potatoes. No matched bok choy GI or substituted grain-rice estimate is claimed. The broad proxy alone does not move this far-below-threshold point close to a class boundary; preserve present categorical behavior. Atkinson et al. 2021 Table 1 reports GI 66 for vegetables other than potatoes, including sweet potatoes (91 entries, SD 19). The chosen group's contribution is 100% of the approved model point. Keep the existing nutrient amounts, modeling and approvals.",
+    "reasoning": "Per serving, the original apportions 125 g cauliflower rice and 75 g Chinese cabbage or bok choy. The cabbage is briefly boiled or steamed and the cauliflower rice heated in a pan. The numeric model uses Fineli 322 cauliflower and 359 Chinese cabbage. All positive calculated GL is from an average of a diverse vegetable group that includes sweet potatoes. No matched bok choy GI or substituted grain-rice estimate is claimed. The group-GI sensitivity concerns only the two modeled vegetable sides. The served pork, eggs and braising broth introduce 11 recipe ingredient rows absent from the sealed calculation, so its tracked omission of 0 g does not establish whole-serving coverage. The exact light soy sauce and second fish sauce are unspecified, and the amount of sauce and broth consumed per serving is unmeasured. Retain the original numeric point as a vegetable-side estimate and withhold the whole-serving class. Atkinson et al. 2021 Table 1 reports GI 66 for vegetables other than potatoes, including sweet potatoes (91 entries, SD 19). The chosen group's contribution is 100% of the approved model point. Keep the existing nutrient amounts, modeling and approvals.",
     "condition": {
-      "fi": "Annokseen kuuluu 125 g kukkakaaliriisiä ja 75 g kiinankaalia tai paksoita. Kasvisten GK-osuus perustuu kasvisryhmän GI-keskiarvoon.",
-      "en": "The serving includes 125 g of cauliflower rice and 75 g of Chinese cabbage or bok choy. The vegetables’ GL contribution uses an average GI for the vegetable group.",
-      "sv": "En portion innehåller 125 g blomkålsris och 75 g kinakål eller pak choi. Grönsakernas bidrag till GL bygger på ett genomsnittligt GI för grönsaksgruppen.",
-      "th": "หนึ่งที่มีข้าวดอกกะหล่ำ 125 กรัม และผักกาดขาวหรือผักกวางตุ้งฮ่องเต้ 75 กรัม ค่า GL ส่วนของผักคำนวณจากค่า GI เฉลี่ยของกลุ่มผัก"
+      "fi": "GK-laskelma käyttää annosta kohti 125 g kukkakaaliriisiä ja 75 g kiinankaalia. Ohje sallii myös paksoin. Laskelma käyttää kasvisten GI-keskiarvoa.",
+      "en": "The GL calculation uses 125 g of cauliflower rice and 75 g of Chinese cabbage per serving. The recipe also allows bok choy. The calculation uses the average GI for vegetables.",
+      "sv": "GL-beräkningen använder 125 g blomkålsris och 75 g kinakål per portion. Receptet tillåter även pak choi. Beräkningen använder genomsnittligt GI för grönsaker.",
+      "th": "การคำนวณ GL ต่อหนึ่งที่ใช้ข้าวดอกกะหล่ำ 125 กรัมและผักกาดขาว 75 กรัม สูตรใช้ผักกวางตุ้งฮ่องเต้แทนได้ การคำนวณใช้ค่า GI เฉลี่ยของผัก"
+    },
+    "classLimitation": {
+      "fi": "Tarjoiluun kuuluva haudutusliemi kastikkeineen sekä porsas ja kananmunat jäävät laskelman ulkopuolelle. Koko annoksen GK-luokka jää avoimeksi.",
+      "en": "The braising broth with its sauces, the pork and the eggs are served with the vegetables and fall outside the calculation. The GL category of the whole serving remains open.",
+      "sv": "Kokspadet med såserna, fläsket och äggen serveras till grönsakerna och ingår inte i beräkningen. Hela portionens GL-klass är därför öppen.",
+      "th": "การคำนวณไม่รวมน้ำตุ๋นที่ปรุงด้วยซอส เนื้อหมู และไข่ที่เสิร์ฟกับผัก จึงยังระบุระดับ GL ของทั้งจานไม่ได้"
     }
   },
   "bataattibrowniet": {
