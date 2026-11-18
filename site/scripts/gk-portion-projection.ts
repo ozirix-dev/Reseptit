@@ -51,6 +51,7 @@ interface ReviewedPortion {
     noteEdits?: Partial<Record<keyof LocalizedText, { before: string; after: string }>>;
     localizedScopeSha256?: Partial<LocalizedText>;
   };
+  carbohydrateComparisonRecipeId?: string;
   portionGrams?: number;
   knownCarbIngredient?: string;
   nutritionSha256?: string;

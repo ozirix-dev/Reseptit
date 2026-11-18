@@ -327,6 +327,61 @@ test("legacy GL coverage uses the approved ingredient sum and distinguishes esti
   }
 });
 
+test("whole-portion comparisons link to the exact other recipe in each shared language", async () => {
+  for (const [[left, leftAmount], [right, rightAmount]] of [
+    [["paahtopaistileivat-kauralesesampyloilla", 4.57], ["paahtopaistileipa-piparjuurikastikkeella", 22.70]],
+    [["avokado-perunasampylat", 5.42], ["avokado-perunasampylat-pellilla", 7.01]],
+  ] as const) {
+    for (const [id, other, amount] of [[left, right, rightAmount], [right, left, leftAmount]] as const) {
+      for (const { locale, routePath } of siteContent.recipes.filter(recipe => recipe.recipeId === id)) {
+        const partner = siteContent.recipes.find(recipe => recipe.recipeId === other && recipe.locale === locale);
+        const recipe = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+        const guide = await readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8");
+        const start = guide.indexOf(`id="${id}"`);
+        const guideRow = guide.slice(start, guide.indexOf("<li ", start + 1));
+        for (const html of [recipe, guideRow]) {
+          const note = html.match(/<p[^>]*data-compared-carbohydrates="true"[^>]*>([\s\S]*?)<\/p>/)?.[1];
+          if (!partner) {
+            assert.equal(note, undefined, routePath);
+            continue;
+          }
+          assert.ok(note, routePath);
+          assert.ok(note.includes('href="' + partner.routePath + '"'), routePath);
+          assert.ok(note.includes(new Intl.NumberFormat(locale, { maximumFractionDigits: 1 }).format(amount)), routePath);
+          assert.doesNotMatch(note, /data-portion-gk=/, routePath);
+        }
+      }
+    }
+  }
+});
+
+test("guide and recipe show the unresolved whole-serving inputs for each reviewed preparation", async () => {
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  const ids = [
+    "sitruuna-parsapasta", "taateliketsuppi", "punajuuririsotto", "lammin-chia-puuro-rouva-keto",
+    "rasvakaakao-rouva-keto", "uunifetapasta-kirsikkatomaateilla", "raejuustobagelit-ilman-kohotusta",
+    "karjalanpiirakat-riisipuurolla", "marry-me-kanapasta", "linssimakaronilaatikko",
+  ];
+  const guides = new Map(await Promise.all((["fi", "en", "sv", "th"] as const).map(async locale =>
+    [locale, await readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8")] as const)));
+  for (const id of ids) {
+    const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.equal(entries.length, 4, id);
+    for (const { locale, routePath } of entries) {
+      const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+      const review = reviews[id];
+      const condition = review.condition![locale];
+      assert.ok(html.includes(renderToStaticMarkup(createElement("p", { className: "recipe-disclosure" }, condition))), routePath);
+      assert.doesNotMatch(html, /data-portion-carbohydrate=|data-portion-gk=|data-gk-status="(?:CALCULATED|QUALITATIVE)"/, routePath);
+      const guide = guides.get(locale)!;
+      const start = guide.indexOf(`id="${id}"`);
+      const guideRow = guide.slice(start, guide.indexOf("<li ", start + 1));
+      assert.ok(guideRow.includes(renderToStaticMarkup(createElement("p", null, condition))), routePath);
+      assert.ok(guideRow.includes('href="' + (review.publicSource ?? review.source) + '"'), routePath);
+    }
+  }
+});
+
 test("reviewed seasoning, syrup and dressing quantities stay scoped to their named inputs", async () => {
   const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
   const amounts = { "naudan-paahtopaisti-uunissa": 0.4, "indonesialainen-bubur-sumsum-punnittu-v2": 23.5, "kaali-omenasalaatti": 1.3 };
@@ -380,7 +435,7 @@ test("a fresh egg pasta reference estimate stays scoped to the uncooked ingredie
   assert.match(html, /data-ingredient-portion=/);
   assert.match(html, /Tuore kananmunafettuccine ennen keittämistä/);
   assert.match(html, /Luku koskee tuoretta kananmunapastaa/);
-  assert.match(html, /Koko annoksen arvioon tarvitaan valutetun pastan paino/);
+  assert.match(html, /Koko annoksen arvioon tarvitaan pastan ja parsan painot kypsennyksen ja valutuksen jälkeen/);
   assert.match(html, /href="https:\/\/fineli\.fi\/fineli\/fi\/elintarvikkeet\/31256"/);
   assert.match(html, /href="https:\/\/fineli\.fi\/fineli\/fi\/elintarvikkeet\/31257"/);
   assert.doesNotMatch(html, /data-portion-carbohydrate=|data-portion-gk=/);

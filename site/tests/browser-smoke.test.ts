@@ -527,11 +527,15 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.goto(base + routeFor("paahtopaistileivat-kauralesesampyloilla"));
     const sandwichCarbs = page.locator('[data-portion-carbohydrate="available"]');
     const rollCarbs = page.locator('[data-ingredient-carbohydrate="available"]');
+    const comparison = page.locator("[data-compared-carbohydrates]");
     assert.match(await sandwichCarbs.innerText(), /4,6 g/);
     assert.match(await rollCarbs.innerText(), /1,6 g/);
+    assert.match(await comparison.innerText(), /22,7 g/);
+    assert.equal(await comparison.getByRole("link").getAttribute("href"), routeFor("paahtopaistileipa-piparjuurikastikkeella"));
     await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
     assert.match(await sandwichCarbs.innerText(), /6,9 g/);
     assert.match(await rollCarbs.innerText(), /2,4 g/);
+    assert.match(await comparison.innerText(), /34,1 g/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);
 
     await page.goto(base + routeFor("karjalanpiirakat-riisipuurolla"));

@@ -4,7 +4,8 @@ import { coconutBananaHistoricalBindingText, coconutBananaRecipeId } from "./coc
 import { biryaniSourceBeforeReview, biryaniSourcePath } from "./biryani-reviewed-source";
 import {countPublishedGkEstimates} from '../src/features/recipes/gk-estimate';
 import { loadReviewedPortions, projectPortionEvidence } from "./gk-portion-projection";
-import type { OriginalGkCoverage } from "../src/features/recipes/gk-portion";
+import type { OriginalGkCoverage, PortionEvidence } from "../src/features/recipes/gk-portion";
+import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 import {publicGiSourceNote} from "./gk-source-copy";
 import {originalGlycemicLoadCategory} from './glycemic-load-filter';
 import { loadAuthorizedGk100Variants } from './gk100-approval-release';
@@ -513,8 +514,26 @@ const portions = await Promise.all(originals.map(async recipe => {
   }
   return { recipe, projection };
 }));
-const publicPortions = Object.fromEntries(portions.flatMap(({ recipe, projection }) =>
+const publicPortions: Record<string, PortionEvidence> = Object.fromEntries(portions.flatMap(({ recipe, projection }) =>
   projection && Object.keys(projection.portion).length ? [[recipe.recipeId, projection.portion]] : []));
+if (!isFixtureBuild) {
+  for (const [id, review] of Object.entries(reviewedPortions)) {
+    const otherId = review.carbohydrateComparisonRecipeId;
+    if (otherId === undefined) continue;
+    const local = publicPortions[id];
+    const other = publicPortions[otherId];
+    if (id === otherId || reviewedPortions[otherId]?.carbohydrateComparisonRecipeId !== id
+        || !local?.availableCarbs || !other?.availableCarbs || local.wholeCarbohydrateChoices || other.wholeCarbohydrateChoices) {
+      throw new Error(`${id}: paired recipe comparison needs two reciprocal whole-serving carbohydrate estimates.`);
+    }
+    const range = other.availableCarbs;
+    local.carbohydrateComparisons = Object.fromEntries(siteContent.recipes.flatMap(({ recipeId, locale, title, routePath }) =>
+      recipeId === otherId && !withholdF25Nutrition(id, locale) && !withholdF25Nutrition(otherId, locale)
+        && siteContent.recipes.some(entry => entry.recipeId === id && entry.locale === locale)
+        ? [[locale, { title, routePath, range }]] : []));
+    if (!local.carbohydrateComparisons.fi) throw new Error(`${id}: paired carbohydrate comparison is missing its public original.`);
+  }
+}
 const additional = portions.flatMap(({ recipe, projection }) => {
   if (!projection || !projection.zeroCarbohydrate && !projection.portion.verbal) return [];
   if (legacyPublicByRecipe.has(recipe.recipeId)) return [];

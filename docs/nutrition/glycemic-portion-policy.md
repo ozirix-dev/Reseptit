@@ -91,6 +91,11 @@ version yhtä annosta. Version lähdearvion eräkoko näytetään erikseen, kun
 selite sisältää alkuperäiset eräkohtaiset määrät. Yleisiä vertailuruokia ei
 merkitä käyttäjän valittaviksi ainesosiksi.
 
+Kahden reseptin annoksia voi verrata, kun kummallekin on varmennettu
+koko annoksen imeytyvän hiilihydraatin arvio. Vertailu näyttää kummankin
+reseptin määrän samalla annoskertoimella. Linkki vie vertailureseptin
+omaan ohjeeseen, ja linkki näkyy yhteisillä julkaisukielillä.
+
 Rakenteinen, katselmoitu näyttö tallennetaan tiedostoon
 [gk-reviewed-portions.json](gk-reviewed-portions.json). Se sitoo väitteen
 rakenteiseen annos- ja ainesosatietoon, lähteeseen ja soveltuvissa

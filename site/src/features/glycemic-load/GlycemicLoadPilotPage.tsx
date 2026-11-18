@@ -8,7 +8,7 @@ import {GkOnlyVariantPanel,gkOnlyUi,gkScopeUi} from '../recipes/GkOnlyVariantPan
 import {scopedPolyolDisclosure} from '../recipes/scoped-polyol-disclosure';
 import {recoveryDisclosure} from '../recipes/recovery-disclosure';
 import { formatOriginalPortionGk } from "../recipes/gk80-format";
-import { describeCarbs, GkAlternatives, IngredientPortionDetails, portionCopy as recipePortionCopy, ReviewedPortionSource, WholeCarbohydrateChoices } from "../recipes/RecipePortionSummary";
+import { describeCarbs, GkAlternatives, IngredientPortionDetails, OriginalCarbohydrateComparison, portionCopy as recipePortionCopy, ReviewedPortionSource, WholeCarbohydrateChoices } from "../recipes/RecipePortionSummary";
 import {originalPortionGk, verbalGkForPortion} from '../recipes/gk-portion';
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
@@ -267,6 +267,7 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
       </> : carbs ? <p>{portionText.grams(describeCarbs(carbs.range, numberLocale))} · {portionWords[carbs.definition]}</p> : null}
       {portion?.ingredientPortion ? <IngredientPortionDetails ingredient={portion.ingredientPortion} locale={locale} /> : null}
       {!preparationScope && portion?.condition ? <p>{portion.condition[locale]}</p> : null}
+      <OriginalCarbohydrateComparison comparison={portion?.carbohydrateComparisons?.[locale]} locale={locale} />
       {portion?.reviewedSource && !verbal && (portion.condition || portion.carbohydrateScope || portion.classLimitation || (!base && portion.ingredientPortion))
         && !carbs?.choices?.some(choice => choice.source === portion.reviewedSource)
         && !portion.ingredientPortion?.carbohydrateAlternatives?.some(choice => choice.source === portion.reviewedSource)

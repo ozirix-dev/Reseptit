@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import type { RecipeEntry, RecipeLocale } from "../../types/content";
-import { eatenPortions, scalePortionRange, verbalGkForPortion, type CarbohydrateChoice, type IngredientPortion, type NamedGkAlternative, type PortionCarbs, type PortionEvidence } from "./gk-portion";
+import { eatenPortions, scalePortionRange, verbalGkForPortion, type CarbohydrateChoice, type CarbohydrateComparison, type IngredientPortion, type NamedGkAlternative, type PortionCarbs, type PortionEvidence } from "./gk-portion";
 import type { GkRange } from "./gk-estimate";
 import { formatGlycemicLoadNumber } from "./gk80-format";
 
@@ -200,6 +201,28 @@ export function ReviewedPortionSource({ source, locale }: { source: string; loca
   return <a href={source} rel="noopener noreferrer">{portionCopy[locale].scopeSource}</a>;
 }
 
+const comparisonCopy = {
+  fi: (amount: string) => `${amount} g imeytyvää hiilihydraattia vertailureseptissä`,
+  en: (amount: string) => `${amount} g of available carbohydrate in the comparison recipe`,
+  sv: (amount: string) => `${amount} g tillgängliga kolhydrater i jämförelsereceptet`,
+  th: (amount: string) => `คาร์โบไฮเดรตที่ย่อยได้ ${amount} กรัมในสูตรที่ใช้เปรียบเทียบ`,
+};
+
+export function OriginalCarbohydrateComparison({ comparison, locale, multiplier = 1 }: {
+  comparison?: CarbohydrateComparison;
+  locale: RecipeLocale;
+  multiplier?: number;
+}) {
+  if (!comparison) return null;
+  const text = portionCopy[locale];
+  const serving = multiplier === 1 ? text.single : text.fraction(new Intl.NumberFormat(locale).format(multiplier));
+  const amount = describeCarbs(scalePortionRange(comparison.range, multiplier), locale);
+  return <p className="recipe-disclosure" data-compared-carbohydrates>
+    <Link to={comparison.routePath}>{comparison.title}</Link>
+    {" · "}<span aria-live="polite" aria-atomic="true">{text.about} {comparisonCopy[locale](amount)} · {serving}</span>
+  </p>;
+}
+
 export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batchServings, onChange }: {
   recipe: RecipeEntry;
   evidence?: PortionEvidence;
@@ -232,6 +255,7 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batc
       {carbs ? <p className="recipe-disclosure">{t[carbs.definition]}</p> : null}
       {evidence?.ingredientPortion ? <IngredientPortionDetails ingredient={evidence.ingredientPortion} locale={locale} multiplier={multiplier} /> : null}
     </div>
+    <OriginalCarbohydrateComparison comparison={evidence?.carbohydrateComparisons?.[locale]} locale={locale} multiplier={multiplier} />
     {ingredient ? <p>{evidence?.driver?.coversMajority ? t.main(ingredient) : t.known(ingredient)}</p> : null}
     {!preparationScope && (evidence?.condition?.[locale] || !carbohydrateScope)
       ? <p className="recipe-disclosure">{evidence?.condition?.[locale] ?? t.scope}</p> : null}
