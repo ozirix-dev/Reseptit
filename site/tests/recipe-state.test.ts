@@ -4,6 +4,7 @@ import path from "node:path";
 import { before, test } from "node:test";
 import type { RouteContent } from "../src/content/route-data";
 import { localeIndexes } from "../src/content/route-data";
+import { originalPortionCarbs } from "../src/features/recipes/gk-portion";
 import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 import { parseRecipeLibraryPagePath } from "../src/features/recipes/recipe-pagination";
 import type { SearchRecipe } from "../src/features/recipes/recipe-search";
@@ -119,6 +120,10 @@ test("effective FI and evidence statuses preserve the build, including absent or
     assert.equal(row.glycemicLoadStatus.publicOriginal?.point ?? null, original?.glycemicLoadPerServing ?? null);
     assert.deepEqual(row.glycemicLoadStatus.publicOriginal?.range ?? null, original?.glycemicLoadRangePerServing ?? null);
     assert.equal(row.nutritionStatus, inputs.nutrition.inventory.find(item => item.recipe_id === row.sourceRecipeId)?.status ?? "NOT AUDITED");
+    const fi = inputs.publicRecipes.find(recipe => recipe.recipeId === row.sourceRecipeId && recipe.locale === "fi");
+    const carbs = fi && !withholdF25Nutrition(row.sourceRecipeId, "fi")
+      ? originalPortionCarbs(fi.nutrition, inputs.publicGkPortions[row.sourceRecipeId]) : null;
+    assert.equal(row.glycemicLoadStatus.hasWholePortionCarbs, row.publicState === "visible" && carbs !== null, row.sourceRecipeId);
   }
   for (const pending of inputs.glycemic.newPublicGkPendingSources) {
     const row = state.recipes.find(row => row.sourceRecipeId === pending.recipeId);

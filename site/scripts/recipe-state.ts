@@ -1,7 +1,7 @@
 import successors from "../../meta/recipe-successors.json";
 import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 import { gkVariantScope } from "../src/features/recipes/gk-estimate-scope";
-import { verbalGkForPortion } from "../src/features/recipes/gk-portion";
+import { originalPortionCarbs, verbalGkForPortion } from "../src/features/recipes/gk-portion";
 import { publicSafetyHold } from "./build-content";
 import { f25SourceReleaseGatePath } from "./f25-source-release-gate";
 import { gkResearchCalculationContextHash } from "./gk-research-decisions";
@@ -130,6 +130,8 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
     const gkInput = gkInputById.get(id);
     const pending = gkPending.get(id);
     const nutritionWithheld = withholdF25Nutrition(id, "fi");
+    const hasWholePortionCarbs = publicState === "visible" && !nutritionWithheld && !!fi &&
+      originalPortionCarbs(fi.nutrition, inputs.publicGkPortions[id]) !== null;
     const visibleGk = nutritionWithheld ? undefined : gkPublic.get(id);
     const publicOriginalVerbalGk = publicState === "visible" && visibleGk?.status === "INSUFFICIENT SOURCE DATA"
       ? verbalGkForPortion(inputs.publicGkPortions[id]?.verbal, 1) : null;
@@ -180,6 +182,7 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
         publicOriginal: visibleGk ? { status: visibleGk.status, point: visibleGk.glycemicLoadPerServing,
           range: visibleGk.glycemicLoadRangePerServing, blockerCategories: [...new Set(visibleGk.incompleteReasons.map(r => r.category))].sort() } : null,
         ...(publicOriginalVerbalGk !== null ? { publicOriginalVerbalGk } : {}),
+        hasWholePortionCarbs,
         auditStatus: gk?.status ?? (pending ? "PENDING REVIEW" : "NOT AUDITED"),
         auditedSourceHash: inputs.glycemic.sourceHashes[id] ?? null,
         calculationInputSha256: inputs.glycemic.calculationInputHashes[id] ?? null,

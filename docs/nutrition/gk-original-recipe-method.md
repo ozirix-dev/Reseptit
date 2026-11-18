@@ -57,22 +57,27 @@ uudelleen. [15 ehdokkaan arvio ja kattavuuden korjaussuunnitelma](gk100-original
 ## Pysyvä tutkimuspäätös ja jonon tarkistus
 
 `laskeGK N` ja `laskeGK jatka` käyttävät alla olevaa tarkistusta ennen
-GI/GK-lähdehakua. Käytä nykyisen reseptitilaprojektion ja avointen korjaus-
-ja tutkimusjonojen perusteella järjestettyjä alkuperäisten reseptien ID:itä.
-Merkitse tiedossa olevat P0/P1-tapaukset, myös issue #404:n oikeaan resepti-
-versioon kohdistuvat tapaukset, muodossa `--priority=resepti-id`.
-Tarkista lista ennen kuin rajaat sen N aloittavaan reseptiin.
+GI/GK-lähdehakua. Uusi erä käyttää `--catalog`-valintaa. Se tarkistaa
+nykyiset julkiset alkuperäisreseptit ja painottaa koko annoksen
+hiilihydraattitiedon puutteita. Jatkoerälle annetaan sen jäljellä olevat
+tunnisteet aiemmassa järjestyksessä. Merkitse tiedossa olevat P0/P1-tapaukset,
+myös issue #404:n oikeaan versioon kohdistuvat tapaukset, muodossa
+`--priority=resepti-id`. Anna toiselle ajolle varatut tunnisteet muodossa
+`--exclude=resepti-id`. Ne näkyvät tuloksissa, mutta jäävät `next`-listan
+ulkopuolelle ja säilyttävät mahdollisen P0/P1-tilan.
 
 Aja `site/`-hakemistossa. Päivitä projektio, kun se puuttuu tai HEAD vaihtuu.
 
 ```sh
 node --import tsx scripts/recipe-state-cli.ts
+node --import tsx scripts/gk-research-queue.ts 10 --catalog
 node --import tsx scripts/gk-research-queue.ts 10 idli-sambar vhh-mansikkakakku
 ```
 
 - `next` sisältää enintään N uutta tai uudelleen avattua tapausta annetussa
-  järjestyksessä. `counts.skip` laskee samalla sidonnalla ohitetut
-  uusintatutkimukset. Raportoi käsitellyt tapaukset vasta tutkimuksen jälkeen.
+  järjestyksessä. `counts` kuvaa koko tarkistettua joukkoa, myös varattuja
+  rivejä. `counts.skip` laskee samalla sidonnalla ohitetut tapaukset
+  tästä joukosta. Raportoi erässä käsitellyt tapaukset tutkimuksen jälkeen.
 - `priority` ohjaa turvallisuus- ja lähdevirheet korjausjonoon. `review`
   vaatii sidonnan tai päätösnäytön käsintarkistuksen. Karanteenia tai
   epäselvää alkuperäistä reseptiversiota ei hyväksytä tutkimusohitukseksi.
