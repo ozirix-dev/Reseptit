@@ -16,6 +16,21 @@ interface ReviewedRecipeCopy {
 // Display-only edits. Canonical ingredients, release evidence and calculation inputs
 // stay in their source files. Edits match the approved display text before this pass.
 const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
+  // #327 bibimbap: Food Authority (Ruokavirasto) recommends sprouts thoroughly
+  // heated before eating. Keep sealed FI/EN/SV/TH source and GK evidence intact.
+  // https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/kasvikset-ja-hedelmat/huomioitavaa-itujen-kasittelyssa-ja-valmistamisessa-kotikeittiossa/
+  "bibimbap/fi": {
+    method: [["Ryöppää pinaatti ja pavunidut nopeasti kiehuvassa vedessä, valuta ja mausta tilkalla seesamiöljyä.", "Ryöppää pinaatti nopeasti kiehuvassa vedessä. Kuumenna pavunidut erikseen kiehuvassa vedessä kunnolla kauttaaltaan; pelkkä nopea kastaminen ei riitä. Valuta molemmat ja mausta tilkalla seesamiöljyä."]],
+  },
+  "bibimbap/en": {
+    method: [["Quickly blanch the spinach and bean sprouts in boiling water, drain and dress with a little sesame oil.", "Briefly blanch the spinach in boiling water. Cook the bean sprouts separately in boiling water until thoroughly heated through; a quick dip is not enough. Drain both and dress with a little sesame oil."]],
+  },
+  "bibimbap/sv": {
+    method: [["Förväll spenat och böngroddar snabbt i kokande vatten, låt rinna av och smaksätt med lite sesamolja.", "Förväll spenaten snabbt i kokande vatten. Koka böngroddarna separat i kokande vatten tills de är ordentligt genomhetta; en snabb doppning räcker inte. Låt båda rinna av och smaksätt med lite sesamolja."]],
+  },
+  "bibimbap/th": {
+    method: [["ลวกผักโขมกับถั่วงอกในน้ำเดือดสั้น ๆ สะเด็ดน้ำแล้วคลุกน้ำมันงาเล็กน้อย", "ลวกผักโขมในน้ำเดือดสั้น ๆ จากนั้นต้มถั่วงอกแยกในน้ำเดือดให้ร้อนทั่วถึงอย่างเพียงพอ ไม่ใช่แค่จุ่มน้ำเดือดอย่างรวดเร็ว สะเด็ดน้ำผักทั้งสองชนิดแล้วคลุกน้ำมันงาเล็กน้อย"]],
+  },
   "ananas-kanelijuoma-sitruunalla/fi": {
     "notes": [
       ["Vesimäärä ja mieto kaneliannos ovat tämän version mitoituksia.", "Vesimäärä ja pieni kanelimäärä on valittu tätä versiota varten."],
