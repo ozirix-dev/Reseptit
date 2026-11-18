@@ -142,6 +142,11 @@ const { recipes: inputs, autoIncludedRecipeIds } = completePublishedRecipeInputs
   publishedSourceRows,
 );
 
+// Auto-generated coverage rows have no previously reviewed calculation to conflict with.
+const unreviewedAutoIncludedRecipeIds = autoIncludedRecipeIds.filter((recipeId) =>
+  ![recipeBindings.recipes, recipeBindings.calculationInputs, recipeBindings.calculationEvidence,
+    recipeBindings.exactRecipeText].some(bindings => bindings && Object.hasOwn(bindings, recipeId)));
+
 const giRecords = giSource.records as GlycemicIndexRecord[];
 if (!Array.isArray(giSource.sources) || new Set(giRecords.map((record) => record.id)).size !== giRecords.length) {
   throw new Error("GI source catalog and uniquely identified GI records are required.");
@@ -250,6 +255,7 @@ const report = {
   giSourcePolicy: `Published, traceable glucose-scale GI values may support a public ingredient estimate as a direct match, justified analogue, or category mean. Match quality is separate from study quality: analogues and category means force LOW confidence. A missing GI match for an individual contribution below ${MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G} g available carbohydrate per serving may be omitted only while all such recipe contributions sum to less than ${CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G} g per serving; larger known carbohydrate contributions require GI evidence. An assigned but invalid or mismatched GI record remains blocking regardless of contribution size, and unknown carbohydrate remains blocking. The cumulative value is a user-centered editorial tolerance, not a clinical precision threshold.`,
   recipeBindingBaseline: recipeBindings.baselineCommit,
   autoIncludedRecipeIds,
+  unreviewedAutoIncludedRecipeIds,
   newPublicGkPendingSources: separatelyTrackedPublishedGk,
   newPublicGkPendingCount: separatelyTrackedPublishedGk.length,
   publicRecipeCountIncludingPending: results.length + separatelyTrackedPublishedGk.length,

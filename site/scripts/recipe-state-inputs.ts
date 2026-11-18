@@ -42,6 +42,7 @@ interface GlycemicReport {
   recipeBindingMismatches: string[];
   calculationInputMismatches: string[];
   calculationEvidenceMismatches: string[];
+  unreviewedAutoIncludedRecipeIds?: string[];
   gkOnlyVariants: GkOnlyVariant[];
 }
 

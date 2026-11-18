@@ -55,6 +55,7 @@ const results = ids.flatMap(requestedId => {
   }
   const original = row?.glycemicLoadStatus.publicOriginal;
   const published = original != null && (original.point != null || original.range != null);
+  const unreviewedAutoIncluded = !published && row?.glycemicLoadStatus.unreviewedAutoIncluded === true;
   const disposition = gkResearchDisposition({
     sourceRecipeId: row?.sourceRecipeId ?? requestedId,
     recipeSha256,
@@ -62,7 +63,7 @@ const results = ids.flatMap(requestedId => {
     calculationEvidenceSha256: row?.glycemicLoadStatus.calculationEvidenceSha256 ?? null,
     contextSha256,
     hasPublicEstimate: published,
-    bindingConflict: Boolean(row?.glycemicLoadStatus.bindingDifferences.length),
+    bindingConflict: Boolean(row?.glycemicLoadStatus.bindingDifferences.length) && !unreviewedAutoIncluded,
     ambiguous: unclear || (row?.glycemicLoadStatus.calculationInputSha256 === undefined) ||
       row?.glycemicLoadStatus.calculationEvidenceSha256 === undefined ||
       row?.glycemicLoadStatus.calculationContextSha256 === undefined,
@@ -77,6 +78,7 @@ const results = ids.flatMap(requestedId => {
   return [{ recipeId: canonicalId, sourceRecipeId: row?.sourceRecipeId ?? null, ...disposition,
     hasPublicEstimate: published,
     bindingDifferences: row?.glycemicLoadStatus.bindingDifferences ?? [],
+    ...(unreviewedAutoIncluded ? { unreviewedAutoIncluded } : {}),
     historicalSourceBindingDifference: row?.glycemicLoadStatus.historicalSourceBindingDifference ?? false,
     verifiedRawGkRelease: row?.glycemicLoadStatus.verifiedRawGkRelease ?? null,
     releasePresentationDifferences: row?.glycemicLoadStatus.releasePresentationDifferences ?? null,

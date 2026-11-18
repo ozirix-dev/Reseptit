@@ -59,6 +59,7 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
   const gkInputById = new Map(inputs.glycemic.calculationInputs.map(row => [row.recipeId, row]));
   const gkPending = new Map(inputs.glycemic.newPublicGkPendingSources.map(row => [row.recipeId, row]));
   const gkPublic = new Map(inputs.publicGk.map(row => [row.recipeId, row]));
+  const unreviewedGkInputs = new Set(inputs.glycemic.unreviewedAutoIncludedRecipeIds);
   const gkVariants = groupBy(inputs.glycemic.gkOnlyVariants, row => row.recipeId);
   const publicVariantIds = new Set(inputs.publicVariants.map(row => row.versionId));
   const f25 = new Map(inputs.f25.map(row => [row.recipe_id, row]));
@@ -149,6 +150,10 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
       ...(inputs.glycemic.calculationInputMismatches.includes(id) ? ["input"] : []),
       ...(inputs.glycemic.calculationEvidenceMismatches.includes(id) ? ["evidence"] : []),
     ];
+    const unreviewedAutoIncluded = unreviewedGkInputs.has(id) && publicState === "visible" &&
+      release === undefined && pending === undefined && bindingDifferences.length === 3 &&
+      gk?.status === "INSUFFICIENT SOURCE DATA" && gk.glycemicLoadPerServing === null && releasedRange === null &&
+      visibleGk?.status === "INSUFFICIENT SOURCE DATA" && visibleGk.glycemicLoadPerServing === null && visibleRange === null;
     const variants = (gkVariants.get(id) ?? []).map(variant => ({
       versionId: variant.versionId, inputSha256: variant.inputSha256, scope: gkVariantScope(variant),
       level: variant.level, public: publicVariantIds.has(variant.versionId),
@@ -175,6 +180,7 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
         calculationEvidenceSha256: inputs.glycemic.calculationEvidenceHashes[id] ?? null,
         calculationContextSha256: gkInput ? gkResearchCalculationContextHash(gkInput) : null,
         bindingDifferences,
+        ...(unreviewedAutoIncluded ? { unreviewedAutoIncluded: true } : {}),
         ...(historicalSourceDifference ? { historicalSourceBindingDifference: true } : {}),
         ...(releaseMatchesPublic ? { verifiedRawGkRelease: release } : {}),
         ...(legacySourceDifference && rawReleaseMatches && publicState === "visible" && presentationDifferences?.length

@@ -294,6 +294,36 @@ test("current release pins distinguish historical source differences from open p
   assert.ok(oldReport.recipes.find(row => row.sourceRecipeId === id)?.glycemicLoadStatus.bindingDifferences.includes("source"));
 });
 
+test("only unbound automatic coverage without an original estimate is marked as unreviewed", () => {
+  const id = "gluteeniton-durrapizzapohja";
+  const status = withId(id).glycemicLoadStatus;
+  assert.equal(status.unreviewedAutoIncluded, true);
+  assert.deepEqual(status.bindingDifferences, ["source", "input", "evidence"]);
+  assert.equal(status.auditStatus, "INSUFFICIENT SOURCE DATA");
+  assert.equal(status.publicOriginal?.point, null);
+  assert.equal(status.publicOriginal?.range, null);
+
+  const findStatus = (changedInputs: RecipeStateInputs) =>
+    projectRecipeState(commit, changedInputs).recipes.find(row => row.sourceRecipeId === id)!.glycemicLoadStatus;
+  const oldReport = findStatus({ ...inputs, glycemic: { ...inputs.glycemic, unreviewedAutoIncludedRecipeIds: undefined } });
+  assert.equal(oldReport.unreviewedAutoIncluded, undefined);
+  assert.deepEqual(oldReport.bindingDifferences, status.bindingDifferences);
+
+  const audited = inputs.glycemic.results.map(row => row.recipeId === id
+    ? { ...row, status: "CALCULATED" as const, glycemicLoadPerServing: 0 }
+    : row);
+  assert.equal(findStatus({ ...inputs, glycemic: { ...inputs.glycemic, results: audited } }).unreviewedAutoIncluded, undefined);
+  const publicGk = inputs.publicGk.map(row => row.recipeId === id
+    ? { ...row, glycemicLoadRangePerServing: { min: 2, max: 3 } }
+    : row);
+  assert.equal(findStatus({ ...inputs, publicGk }).unreviewedAutoIncluded, undefined);
+
+  const trueConflictId = "indonesialainen-nasi-uduk-aamiaisella";
+  const trueConflict = withId(trueConflictId).glycemicLoadStatus;
+  assert.equal(trueConflict.unreviewedAutoIncluded, undefined);
+  assert.ok(trueConflict.bindingDifferences.includes("source"));
+});
+
 test("verified batch preparation and notes are accepted only as the exact reviewed presentation", async () => {
   const id = "munakokkeli";
   const row = withId(id);
