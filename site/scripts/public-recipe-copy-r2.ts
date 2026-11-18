@@ -16,9 +16,6 @@ interface ReviewedRecipeCopy {
 // Display-only edits. Canonical ingredients, release evidence and calculation inputs
 // stay in their source files. Edits match the approved display text before this pass.
 const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
-  "piparkakkulatte-hunajalla/en": {
-    method: [["Vatkaa vielä hetki.", "Beat again briefly."]],
-  },
   "ananas-kanelijuoma-sitruunalla/fi": {
     "notes": [
       ["Vesimäärä ja mieto kaneliannos ovat tämän version mitoituksia.", "Vesimäärä ja pieni kanelimäärä on valittu tätä versiota varten."],
@@ -628,6 +625,9 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
   },
   "vietnamilainen-hu-tieu-aamiaiskeitto/sv": {
     "description": "Strimlat fläsk och risnudlar kokas i samma kastrull. Böngroddar och färsk koriander ger smak åt frukostsoppan för två. Servera med hela kokspadet."
+  },
+  "piparkakkulatte-hunajalla/en": {
+    method: [["Vatkaa vielä hetki.", "Beat again briefly."]],
   },
   "vietnamilainen-hu-tieu-aamiaiskeitto/th": {
     "description": "ต้มหมูสันนอกหั่นเส้นและเส้นก๋วยเตี๋ยวในหม้อเดียวกัน เติมถั่วงอกกับผักชีสด เสิร์ฟเป็นอาหารเช้าสองที่พร้อมน้ำซุปทั้งหมด"
