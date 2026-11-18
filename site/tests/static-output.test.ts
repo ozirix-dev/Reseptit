@@ -20,6 +20,7 @@ import { toolUi } from "../src/features/recipes/recipe-tools";
 import { siteContent } from "../src/generated/content.generated";
 import { contentManifest } from "../src/generated/routes.generated";
 import { glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
+import { glycemicLoadFilterCategories } from "../src/generated/glycemic-load-filters.generated";
 import { isPublicRecipeQuarantined, publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
 import { f25ExplicitUndefinedGkLabel, withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 import { loadReviewedPortions } from "../scripts/gk-portion-projection";
@@ -129,7 +130,7 @@ test("an independently reviewed carb estimate does not publish the other nutriti
     for (const key of ["carbsNetG", "carbsTotalG", "fatG", "proteinG"] as const) {
       assert.equal(recipe.nutrition[key], null, routePath);
     }
-    const note = reviews[id].wholeCarbohydrateOnly!.noteEdits[locale];
+    const note = reviews[id].wholeCarbohydrateOnly!.noteEdits![locale]!;
     assert.ok(recipe.notesHtml.includes(note.before), routePath);
     const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
     const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
@@ -138,6 +139,40 @@ test("an independently reviewed carb estimate does not publish the other nutriti
     assert.match(rendered, /data-portion-carbohydrate="available"/);
     assert.match(rendered, /data-ingredient-carbohydrate="available"/);
     assert.doesNotMatch(rendered, /data-portion-gk=|data-gk-status="(?:QUALITATIVE|CALCULATED)"/);
+  }
+});
+
+test("standalone carbohydrate and source warnings follow reviewed quantities and locales", async () => {
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  const whole = Object.entries(reviews).filter(([, review]) => review.wholeCarbohydrateOnly?.localizedScopeSha256);
+  assert.ok(whole.some(([id]) => id === "uuniriisipuuro"));
+  assert.ok(whole.some(([id]) => id === "avokado-perunasampylat-pellilla"));
+  for (const [id, review] of whole) {
+    const entries = siteContent.recipes.filter(entry => entry.recipeId === id);
+    assert.deepEqual(entries.map(recipe => recipe.locale).sort(), Object.keys(review.wholeCarbohydrateOnly!.localizedScopeSha256!).sort());
+    for (const { locale, routePath, nutrition } of entries) {
+      assert.ok(Object.values(nutrition).every(value => value === null), routePath);
+      const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+      const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+      assert.match(rendered, /data-portion-carbohydrate="available"/);
+      assert.doesNotMatch(rendered, /data-portion-gk=|data-gk-status="(?:QUALITATIVE|CALCULATED)"/);
+      assert.ok(rendered.includes(review.condition![locale]), routePath);
+      assert.ok(rendered.includes('href="' + review.publicSource + '"'), routePath);
+    }
+  }
+
+  for (const id of ["thai-jok-kanalla", "japanilainen-onigiri-lohella", "korealainen-yachaejuk-kasvisjuk"]) {
+    const result = glycemicLoadPilotResults.find(row => row.recipeId === id);
+    assert.equal(result?.status, "CALCULATED", id);
+    assert.equal(glycemicLoadFilterCategories[id], undefined, id);
+    assert.ok(result?.sourceReferences.some(source => source.note.includes("rice-product group mean")), id);
+    for (const { locale, routePath } of siteContent.recipes.filter(entry => entry.recipeId === id)) {
+      const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+      const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+      assert.match(rendered, /data-portion-gk=/, routePath);
+      assert.ok(rendered.includes(reviews[id].classLimitation![locale]), routePath);
+      assert.ok(!rendered.includes(portionCopy[locale].class.HIGH), routePath);
+    }
   }
 });
 

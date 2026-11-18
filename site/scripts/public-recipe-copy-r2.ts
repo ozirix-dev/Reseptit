@@ -47,6 +47,36 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
       ["Puré tills den är slät.", "Mixa tills blandningen är slät."]
     ]
   },
+  "avokado-banaanijaatelo/th": {
+    "description": "ปั่นกล้วยแช่แข็งกับอะโวคาโดสุกให้เนียนเป็นไอศกรีม โยเกิร์ตรสธรรมชาติและน้ำเลมอนช่วยตัดความหวานของกล้วย",
+    "method": [
+      ["น้ำมะนาว", "น้ำเลมอน"]
+    ],
+    "ingredientNote": [
+      ["ประมาณหนึ่งมะนาว", "ประมาณหนึ่งผล"]
+    ]
+  },
+  "omenavaahtokarkit/en": {
+    "ingredientNote": [
+      ["peeled and without seed coat", "peeled and cored"]
+    ]
+  },
+  "omenavaahtokarkit/sv": {
+    "ingredientNote": [
+      ["skalad och utan fröskal", "skalade och urkärnade"]
+    ]
+  },
+  "omenavaahtokarkit/th": {
+    "ingredientNote": [
+      ["ปอกเปลือกและไม่มีเปลือกหุ้มเมล็ด", "ปอกเปลือกและเอาแกนกับเมล็ดออก"]
+    ]
+  },
+  "bataatti-mustikkakakku/th": {
+    "notes": [
+      ["จนกระทั่งส้อมจิ้มเข้าไปในมอลต์ได้ง่าย", "จนใช้ส้อมจิ้มเนื้อมันเทศได้ง่าย"],
+      ["ตักมอลต์ออกแล้วชั่งน้ำหนัก 440 กรัม", "ตักเนื้อมันเทศออกแล้วชั่ง 440 กรัม"]
+    ]
+  },
   "avokado-perunasampylat/en": {
     "description": "Potato, avocado and Greek yogurt make six small rolls. Brush the tops with egg yolk and sprinkle with sesame seeds before baking.",
     "method": [
@@ -465,11 +495,23 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
     "title": "โจ๊กข้าวโอ๊ตใส่สะระแหน่ นม และน้ำผึ้ง"
   },
   "punajuuri-suklaakakku/en": {
+    "ingredientNote": [
+      ["weighed when ripe and drained", "weighed cooked and drained"]
+    ],
+    "notes": [
+      ["300 grams when ripe", "300 g of cooked beetroot"]
+    ],
     "method": [
       ["Preheat the oven to 175°C with constant heat.", "Preheat the oven to 175 °C using top and bottom heat."]
     ]
   },
   "punajuuri-suklaakakku/sv": {
+    "ingredientNote": [
+      ["vägda när de är mogna och avrunna", "vägda kokta och avrunna"]
+    ],
+    "notes": [
+      ["300 gram när de är mogna", "300 g kokta rödbetor"]
+    ],
     "method": [
       ["Värm ugnen till 175°C med konstant värme.", "Värm ugnen till 175 °C med över- och undervärme."]
     ]

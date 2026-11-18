@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import type { IngredientPortion, PortionEvidence, LocalizedText, VerbalGk } from "../src/features/recipes/gk-portion";
+import type { RecipeEntry } from "../src/types/content";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeBindingHash } from "./glycemic-load-recipe-binding";
 import { calculate, type Calculation } from "./nutrition-model";
@@ -27,7 +28,10 @@ interface ReviewedPortion {
   reasoning: string;
   reviewedAt: string;
   verbalNoteEdits?: Partial<Record<keyof LocalizedText, { before: string; after: string }>>;
-  wholeCarbohydrateOnly?: { noteEdits: Record<keyof LocalizedText, { before: string; after: string }> };
+  wholeCarbohydrateOnly?: {
+    noteEdits?: Partial<Record<keyof LocalizedText, { before: string; after: string }>>;
+    localizedScopeSha256?: Partial<LocalizedText>;
+  };
   portionGrams?: number;
   knownCarbIngredient?: string;
   nutritionSha256?: string;
@@ -42,6 +46,15 @@ interface ReviewedPortion {
 
 function hash(text: string) {
   return createHash("sha256").update(text.replaceAll("\r\n", "\n")).digest("hex");
+}
+
+export function wholeCarbohydrateLocaleHash(recipe: Pick<RecipeEntry, "servings" | "ingredients" | "kitchenIngredients" | "instructionsHtml" | "notesHtml">): string {
+  return hash(JSON.stringify({
+    servings: recipe.servings,
+    ingredients: recipe.kitchenIngredients ?? recipe.ingredients,
+    instructions: recipe.instructionsHtml,
+    notes: recipe.notesHtml,
+  }));
 }
 
 /** Product notes, preparation and serving instructions can change even when
@@ -93,10 +106,8 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
   if (review?.verbalNoteEdits && !review.verbal) {
     throw new Error(`${recipeId}: a numerical-only GK notice requires a current verbal estimate.`);
   }
-  if (review?.wholeCarbohydrateOnly && (!review.nutritionSha256 || review.verbal || review.zeroCarbohydrate
-      || !(["fi", "en", "sv", "th"] as const).every(locale => review.condition?.[locale]?.trim()
-        && review.wholeCarbohydrateOnly?.noteEdits?.[locale]?.before?.trim()
-        && review.wholeCarbohydrateOnly.noteEdits[locale]?.after?.trim()))) {
+  const standaloneReview = review?.wholeCarbohydrateOnly;
+  if (standaloneReview && (!review.nutritionSha256 || review.verbal || review.zeroCarbohydrate || !review.condition?.fi?.trim())) {
     throw new Error(`${recipeId}: standalone carbohydrate evidence requires reviewed nutrition, serving scope and no GK promotion.`);
   }
   if (raw) {
@@ -108,22 +119,24 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
         const calculation = calculate(input);
         // An opt-in can use the reviewed carbohydrate calculation when another
         // nutrient is still unknown and every excluded row has a zero carb bound.
-        const completeCarbohydrate = review?.wholeCarbohydrateOnly
-          && input.publicationStatus === "WITHHELD_SOURCE_INCOMPLETE"
-          && calculation.rows.every((row, index) => {
+        const standaloneAmounts = standaloneReview && input.publicationStatus === "WITHHELD_SOURCE_INCOMPLETE"
+          ? calculation.rows.map((row, index) => {
             const ingredient = input.ingredients[index];
             if (ingredient.excludedReason) {
               return Boolean(ingredient.omissionImpactEvidence?.trim())
                 && ingredient.omissionImpactUpperBoundPerServing?.netCarbohydrate === 0
-                && ingredient.omissionImpactUpperBoundPerServing.totalCarbohydrate === 0;
+                && ingredient.omissionImpactUpperBoundPerServing.totalCarbohydrate === 0 ? 0 : null;
             }
-            return row.values.carbohydrate !== null && row.issues.every(issue =>
-              issue === "Unknown nutrient fat" || issue === "Unknown nutrient protein");
-          });
-        const fullAvailableCarbohydrate = review?.wholeCarbohydrateOnly ? completeCarbohydrate : verified.status === "ESTIMATE WITH EVIDENCE";
+            // Normalization returns null for available carbs if it needs an
+            // unknown fibre or polyol value. Other nutrient gaps do not erase it.
+            return row.issues.every(issue => /^Unknown nutrient (fat|protein|fibre|polyols|netCarbohydrate)$/.test(issue))
+              ? row.values.carbohydrate : null;
+          }) : undefined;
+        const fullAvailableCarbohydrate = standaloneReview
+          ? standaloneAmounts?.every(value => value !== null) : verified.status === "ESTIMATE WITH EVIDENCE";
         const available = fullAvailableCarbohydrate ? calculation.perServing.carbohydrate : null;
         if (available !== null) portion.availableCarbs = { min: available, max: available };
-        const amounts = calculation.rows.map(row => row.issues.length === 0 ? row.values.carbohydrate : null);
+        const amounts = standaloneAmounts ?? calculation.rows.map(row => row.issues.length === 0 ? row.values.carbohydrate : null);
         const max = Math.max(0, ...amounts.map(value => value ?? 0));
         if (max > 0) {
           const sum = amounts.reduce<number>((accumulated, value) => accumulated + (value ?? 0), 0);

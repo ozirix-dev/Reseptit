@@ -494,6 +494,13 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1");
     assert.match(await roundedEstimate.innerText(), /5/);
 
+    await page.goto(base + routeFor("uuniriisipuuro"));
+    const ovenRiceCarbs = page.locator('[data-portion-carbohydrate="available"]');
+    assert.match(await ovenRiceCarbs.innerText(), /44,2 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await ovenRiceCarbs.innerText(), /66,2 g/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+
     await page.goto(base + routeFor("briossisampylat-joshua-weissman"));
     assert.match(await page.locator('[data-gk-status="QUALITATIVE"]').innerText(), /Suuri arvioitu GK/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);

@@ -15,7 +15,7 @@ import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-with
 import { glycemicLoadPath } from "../src/features/recipes/recipe-i18n";
 import { recipeSearchEntry, supportedRecipeDiets } from "../src/features/recipes/recipe-search";
 import type { RecipeLocale } from "../src/types/content";
-import { loadReviewedPortions } from "./gk-portion-projection";
+import { loadReviewedPortions, wholeCarbohydrateLocaleHash } from "./gk-portion-projection";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
 const publicDir = path.join(siteDir, "public");
@@ -110,10 +110,17 @@ for (const route of routes) {
     const { recipeId: id, locale, notesHtml } = data.recipe;
     const portionEvidence = glycemicLoadPortions[id];
     const review = reviewedPortions[id];
-    const note = portionEvidence?.verbal ? review?.verbalNoteEdits?.[locale]
-      : portionEvidence?.availableCarbs ? review?.wholeCarbohydrateOnly?.noteEdits[locale] : undefined;
+    const standalone = portionEvidence?.availableCarbs ? review?.wholeCarbohydrateOnly : undefined;
+    const standaloneNote = standalone?.noteEdits?.[locale];
+    const localeHash = standalone?.localizedScopeSha256?.[locale];
+    const withheld = withholdF25Nutrition(id, locale);
+    if (standalone && !withheld && (!review?.condition?.[locale]?.trim()
+        || (localeHash ? localeHash !== wholeCarbohydrateLocaleHash(data.recipe) : !standaloneNote))) {
+      throw new Error(`${id}/${locale}: review the current localized scope of the standalone carbohydrate estimate.`);
+    }
+    const note = portionEvidence?.verbal ? review?.verbalNoteEdits?.[locale] : standaloneNote;
     let reviewedNotesHtml: string | undefined;
-    if (note && !withholdF25Nutrition(id, locale)) {
+    if (note && !withheld) {
       if (!note.before || !note.after || /<(?!\/?strong>)/.test(note.after) || notesHtml.split(note.before).length !== 2) {
         throw new Error(`${id}/${locale}: the original portion note changed; review the current wording.`);
       }

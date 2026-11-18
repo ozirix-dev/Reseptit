@@ -6,6 +6,8 @@ const genericNotes: Record<string, string> = {
     "Low-confidence dairy-product group mean; not a measured GI for this recipe's specific dairy ingredient or preparation.",
   "fruit-category-mean-gi-51":
     "Low-confidence fruit-product group mean; not a measured GI for this recipe's specific fruit or preparation.",
+  "rice-category-mean-gi-67":
+    "Low-confidence rice-product group mean; the GI varies by rice type and preparation.",
   "nuts-category-mean-gi-22":
     "Low-confidence nut-group mean from few observations; not measured for this recipe's nut ingredient or flour preparation.",
 };

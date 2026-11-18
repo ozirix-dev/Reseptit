@@ -145,3 +145,30 @@ test("a standalone carbohydrate estimate requires a proved zero bound on every o
     ...review, nutritionSha256: createHash("sha256").update(changed).digest("hex"),
   }), /reviewed standalone carbohydrate requires evidence for every ingredient/);
 });
+
+test("a missing polyol value is safe only when normalization yields available carbohydrate", async (t) => {
+  const id = "uuniriisipuuro";
+  const calculationPath = path.join("docs/nutrition/calculations", id + ".json");
+  const [reviews, markdown, raw] = await Promise.all([
+    loadReviewedPortions(root),
+    readFile(path.join(root, "reseptit/aamupalat", id + ".md"), "utf8"),
+    readFile(path.join(root, calculationPath), "utf8"),
+  ]);
+  const review = reviews[id];
+  const { portion } = await projectPortionEvidence(root, id, markdown, review);
+  assert.deepEqual(portion.availableCarbs, { min: 44.15, max: 44.15 });
+  assert.deepEqual(portion.driver, { ingredientIndex: 1, coversMajority: true });
+  assert.equal(portion.verbal, undefined);
+
+  const fixture = await mkdtemp(path.join(tmpdir(), "recipavo-unknown-polyols-"));
+  t.after(() => rm(fixture, { recursive: true, force: true }));
+  const file = path.join(fixture, calculationPath);
+  await mkdir(path.dirname(file), { recursive: true });
+  const evidence = JSON.parse(raw);
+  evidence.ingredients[1].record.carbohydrateDefinition = "EU_TOTAL_INCLUDING_POLYOLS";
+  const changed = JSON.stringify(evidence);
+  await writeFile(file, changed, "utf8");
+  await assert.rejects(projectPortionEvidence(fixture, id, markdown, {
+    ...review, nutritionSha256: createHash("sha256").update(changed).digest("hex"),
+  }), /reviewed standalone carbohydrate requires evidence for every ingredient/);
+});

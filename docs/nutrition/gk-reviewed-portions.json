@@ -1387,12 +1387,12 @@
     "nutritionSha256": "9325d67e254cc58c2c311a7822f00f1ee58699f197657fcf3619774b4f2cf41c",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11049",
-    "reasoning": "Ingredient 'kypsää banaania' matched to reference BANAANI, KUORITTU; brand or variety may differ. 230 g peeled banana / 3; blended full retention. Remaining ingredients and polyols are not represented. The value uses available carbohydrate in the matched ingredient before the recipe is prepared. Whole-serving release remains governed by the existing nutrition record. At least one matched source lacks an aggregate polyol value. The public macro fields remain empty.",
+    "reasoning": "Divide every input in the published weighed, peeled-fruit recipe among three. Freezing and blending do not add carbohydrate or remove any listed portion. The figure is an ingredient estimate for 1/3 of the batch. Fineli #4 gives 80.8 g/100 g directly available CHO from the sum of sugars, with no independent aggregate-polyol number; no extra subtraction. Plain 2.5%-fat low-lactose yoghurt and pure lemon juice are generic reference foods; the recipe does not specify yoghurt brand/fat. The Reel cup and spoon values do not replace the published gram quantities.",
     "condition": {
-      "fi": "Banaanin lajike ja kypsyys vaikuttavat arvioon. Koko annoksen määrä riippuu myös muista aineksista.",
-      "en": "Banana variety and ripeness affect the estimate. The full serving also depends on the other ingredients.",
-      "sv": "Banansort och mognad påverkar uppskattningen. Den totala mängden beror även på övriga ingredienser.",
-      "th": "พันธุ์และความสุกของกล้วยมีผลต่อค่าประมาณ ปริมาณคาร์โบไฮเดรตของทั้งที่ยังขึ้นอยู่กับวัตถุดิบอื่น"
+      "fi": "Yksi annos on kolmasosa jäätelöerästä. Arvio perustuu ohjeen punnittuihin aineksiin, ja jogurtin ja hunajan koostumus voi vaihdella tuotteittain.",
+      "en": "One serving is one third of the ice cream batch. The estimate uses the weighed recipe ingredients, and the yogurt and honey may vary by product.",
+      "sv": "En portion är en tredjedel av glassatsen. Uppskattningen bygger på receptets vägda ingredienser. Yoghurtens och honungens sammansättning kan variera mellan produkter.",
+      "th": "หนึ่งหน่วยบริโภคคือหนึ่งในสามของไอศกรีมที่ทำได้ ค่าประมาณอิงจากน้ำหนักส่วนผสมตามสูตร องค์ประกอบของโยเกิร์ตและน้ำผึ้งอาจต่างกันตามผลิตภัณฑ์"
     },
     "ingredientPortion": {
       "index": 0,
@@ -1405,7 +1405,16 @@
       },
       "unit": "g",
       "availableCarbsGPer100g": 18.3
-    }
+    },
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "ddb892320a0d3e8371aa99b9fd9741793f554d8a75a47597a972dae04b69b55f",
+        "en": "4b30a64736681084594d4b4a15ad843e6c686fbbf11318c79e5ea2cf1cc8db53",
+        "sv": "e103c3551bb9665b2c4e6172bfce6c35bfeaba39e6fa7b434ed2c73c859aa47d",
+        "th": "b0ff5a159adb7be11c4950a703b090686212b5ae9d84cffd45a13e613f2a47b8"
+      }
+    },
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/avokado-banaanijaatelo.json"
   },
   "parmesaani-lyttyperunat": {
     "recipeBindingSha256": "2204393a2c90141fb06bd63b64e8042842e86d4b303b0032f45740982b5d9d04",
@@ -1785,12 +1794,12 @@
     "nutritionSha256": "11c05ade9b5fe0366cf5893b39b7c9cf382681798a938166a77ffb859b0c8bfe",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
-    "reasoning": "Matched to Fineli Release 20 30600 baked peeled sweet potato, 18.293 g available CHO per 100 g with verified fibre and polyols. The recipe weighs 440 g cooled edible flesh after oven cooking and splits the batter into eight servings. Uses the weighed baked ingredient before mixing, so no baked-cake yield or carbohydrate retention is asserted. Multiple other ingredients lack verified polyols.",
+    "reasoning": "The preparation pins the sweet potato to 440 g cooled peeled flesh after oven-baking. The explicit eight slices cover the entire cake. The readily available carbohydrate model uses Fineli baked sweet potato and unsweetened bilberry and AFCD pure maple syrup and cinnamon, together with other listed batter ingredients. No exact polyol value is inferred and no alternative point is attributed to boiled sweet potato.",
     "condition": {
-      "fi": "Punnitse uunissa kypsennetty bataatti kuorittuna ja jäähtyneenä ennen taikinaan lisäämistä. Myös mustikoista ja vaahterasiirapista tulee hiilihydraatteja.",
-      "en": "Weigh the peeled, cooled flesh of the baked sweet potato before mixing the batter. Blueberries and maple syrup also contribute carbohydrate.",
-      "sv": "Väg det skalade, avsvalnade fruktköttet från den ugnsbakade sötpotatisen innan det blandas i smeten. Blåbär och lönnsirap bidrar också med kolhydrater.",
-      "th": "ชั่งเนื้อมันเทศอบหลังเอาเปลือกออกและพักให้เย็นก่อนผสมแป้งเค้ก บลูเบอร์รีและน้ำเชื่อมเมเปิลก็ให้คาร์โบไฮเดรตเช่นกัน"
+      "fi": "Leikkaa kakku kahdeksaan yhtä suureen palaan. Arvio perustuu uunissa kypsennettyyn bataattiin, joka punnitaan kuorittuna ja jäähtyneenä. Mukana ovat ohjeen vaahterasiirappi ja mustikat.",
+      "en": "Cut the cake into eight equal slices. The estimate uses oven-baked sweet potato, weighed peeled and cooled, and includes the maple syrup and bilberries in the recipe.",
+      "sv": "Skär kakan i åtta lika stora bitar. Uppskattningen bygger på ugnsbakad sötpotatis som vägs skalad och avsvalnad. Receptets lönnsirap och blåbär ingår.",
+      "th": "ตัดเค้กเป็นแปดชิ้นเท่า ๆ กัน ค่าประมาณใช้มันเทศอบที่ปอกเปลือกและชั่งหลังเย็นลง รวมทั้งเมเปิลไซรัปและบลูเบอร์รีตามสูตร"
     },
     "ingredientPortion": {
       "index": 0,
@@ -1803,6 +1812,16 @@
       },
       "unit": "g",
       "availableCarbsGPer100g": 18.293
+    },
+    "piecesPerServing": 1,
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/bataatti-mustikkakakku.json",
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "en": "909f377b0d25d42f53841fe584b319860e950fb893dc72668594de1cb6602e69",
+        "fi": "f81aebf5be0c0380a5a0a3775c55fce13618cc4828f70f28213e1f6808ccfbd9",
+        "sv": "5a87735cdb67f59c49c06cdcff70f6e1739f7c29f4c9cf242bdf5fa81277addc",
+        "th": "e31f85994d4734e6c2d04de43a6f8c0f064c8089287ad23440fdbbbd36b64259"
+      }
     }
   },
   "papu-myskikurpitsapelti": {
@@ -2162,12 +2181,12 @@
     "nutritionSha256": "c585b98cca34196f22b428a6a77e4cc12ac7c80cd2b5c0bae2a9c5ef3529bd48",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/444",
-    "reasoning": "The whole 250 g of blackcurrants are puréed and added without straining into eight servings. Fineli #444 Release 20 reports 9.716 g/100 g CHOAVL from its carbohydrate components, giving 3.03625 g per 31.25 g raw-input allotment with the fresh reference. It does not report aggregate polyols. The recipe permits frozen berries in its preparation note. Published whole-food chemistry confirms variable blackcurrant polyol profiles and cannot fill this recipe's exact aggregate field. Dark semolina #113 also lacks a polyol entry. No prepared porridge composition or whole CHO claim.",
+    "reasoning": "One eighth of the entire cooked and whipped preparation including the whole unstrained blackcurrant puree. The base counts dark semolina, unsweetened blackcurrants and both sugars using Fineli food-specific weights and available-carbohydrate records. Reference berry composition is for fresh unsweetened berries. Fresh or unsweetened frozen berries supply roughly the same input scope; no milk or added serving sugar is listed.",
     "condition": {
-      "fi": "Arvio käyttää tuoreiden mustaherukoiden koostumusta ennen kypsennystä. Mannasuurimoiden ja lisätyn sokerin hiilihydraatit tulevat lisäksi.",
-      "en": "The estimate uses the composition of fresh blackcurrants before cooking. The semolina and added sugar contribute additional carbohydrate.",
-      "sv": "Uppskattningen använder sammansättningen för färska svarta vinbär före kokning. Mannagrynen och det tillsatta sockret bidrar med ytterligare kolhydrater.",
-      "th": "ค่าประมาณอ้างอิงองค์ประกอบของแบล็กเคอร์แรนต์สดก่อนต้ม เซโมลินาและน้ำตาลที่เติมลงไปยังให้คาร์โบไฮเดรตเพิ่มเติม"
+      "fi": "Jaa valmis puuro kahdeksaan yhtä suureen annokseen. Arvio sisältää tummat mannasuurimot, mustaherukat ja ohjeen sokerit. Laske erikseen tarjoiluun lisättävä maito tai sokeri.",
+      "en": "Divide the finished pudding into eight equal portions. The estimate includes dark semolina, blackcurrants and the sugars in the recipe. Count any milk or sugar added at serving separately.",
+      "sv": "Dela den färdiga vispgröten i åtta lika stora portioner. Uppskattningen omfattar mörka mannagryn, svarta vinbär och sockret i receptet. Räkna mjölk eller socker som du tillsätter vid servering separat.",
+      "th": "แบ่งโจ๊กที่ตีเสร็จแล้วเป็นแปดส่วนเท่า ๆ กัน ค่าประมาณรวมเซโมลินาสีเข้ม แบล็กเคอร์แรนต์ และน้ำตาลตามสูตร คิดนมหรือน้ำตาลที่เติมตอนเสิร์ฟแยกต่างหาก"
     },
     "ingredientPortion": {
       "index": 2,
@@ -2180,6 +2199,15 @@
       },
       "unit": "g",
       "availableCarbsGPer100g": 9.716
+    },
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/mustaherukkavispipuuro.json",
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "92fa9c42a4d369bcabe46c5bcf36ca29014600468c05683bd6d1b643d9a50ef9",
+        "sv": "a91427e5838e2982136ac924388947dbb4bd83175e2f8f0b31dac49d6b90f789",
+        "en": "b60241e18684b23218573c00f1561631d5e9501d6e67457b2393668d6810a74f",
+        "th": "b9db20a3d781f74c68dafde6dbcbb3e62b801f7aed36b44d55b6a457f2b45574"
+      }
     }
   },
   "kookos-linssikeitto": {
@@ -2213,13 +2241,22 @@
     "preparationSha256": "039c13a4d1174b7a0227b7de261ae29175055a617f8691cd3717220fa596bf2f",
     "nutritionSha256": "0ef1a88e198d96edbd5ce02e3b90235006255db76bbdf4774540356c0f55ff92",
     "reviewedAt": "2026-11-18",
-    "source": "https://fineli.fi/fineli/fi/avoin-data",
-    "reasoning": "Two decilitres of dry pudding rice are baked with milk and divided into four, 0.5 dl dry rice for one serving from the original. The matched Fineli Release 20 #156 home measure is 85 g per dl and CHOAVL is 75.6 g/100 g, demonstrated 42.5 g and 32.13 g respectively for the conditional comparison. Current recipe supplies a volume, so 42.5 g is an approximate conversion, not an actual weighed mass, and public condition offers weighing for the chosen product. The primary item-specific Fineli record does not quantify aggregate polyols. AFCD F007682 includes rice types other than pudding rice and MEXT #01083 also has no separate sugar-alcohol number. Retain numeric holds.",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/156",
+    "reasoning": "Estimate from the entire original's dry rice, whole milk, salt and butter divided into four. Fineli Release 20 #156 supplies 0.85 g/mL household dry rice (2 dl approximately 170 g) and 75.6 g/100 g direct CHOAVL despite unknown independent polyols. #689 supplies 100 g/dl whole milk and 4.8 g/100 g CHOAVL. Butter is applied to the dish, 10 g modeled at full charge contributes at most 0.02 g per serving; salt has zero CHO. Volumetric conversion is approximate. Martat's example fruit soup serving is outside the product recipe.",
     "condition": {
-      "fi": "Yhteen annokseen käytetään ½ dl kuivaa puuroriisiä, Finelin kotitalousmitalla noin 43 g. Punnitse riisi, jos haluat käyttää oman tuotteesi pakkausarvoa.",
-      "en": "One serving uses ½ dl (50 mL) of dry pudding rice, about 43 g using Fineli's household measure. Weigh the rice to use the value from your own product label.",
-      "sv": "Till en portion används ½ dl torrt grötris, cirka 43 g enligt Finelis hushållsmått. Väg riset om du vill använda värdet på din förpackning.",
-      "th": "หนึ่งหน่วยบริโภคใช้ข้าวสารสำหรับทำโจ๊ก 50 มล. หรือประมาณ 43 กรัมตามปริมาณอ้างอิงของ Fineli หากต้องการคำนวณจากฉลากของผลิตภัณฑ์ที่ใช้ ให้ชั่งข้าวสาร"
+      "fi": "Arvio koskee neljäsosaa puurosta ja käyttää Finelin kotitalousmittoja. Yhteen annokseen kuluu puoli desilitraa kuivaa puuroriisiä, noin 43 g.",
+      "en": "The estimate is for a quarter of the porridge and uses Fineli household measures. Each serving uses 50 mL of dry pudding rice, about 43 g.",
+      "sv": "Uppskattningen gäller en fjärdedel av gröten och använder Finelis hushållsmått. Till en portion går det åt en halv deciliter torrt grötris, cirka 43 g.",
+      "th": "ค่าประมาณสำหรับหนึ่งในสี่ของข้าวต้มนมอิงจากปริมาณอ้างอิงของ Fineli หนึ่งหน่วยบริโภคใช้ข้าวสารสำหรับทำข้าวต้มนม 50 มล. หรือประมาณ 43 กรัม"
+    },
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/uuniriisipuuro.json",
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "dd253df9cac46ec384d3cf7ce3e7a234426ff0007514769da59e554d094e09ae",
+        "en": "3ab33fd88f75fd3d2e85a3e55a2602de4f6b02de1e1c235d2b5aab4ec2f34ae8",
+        "sv": "010ea4875a82e2dabb7ecc6b38766c410af95c3ea53f2dff46f8cb21258a0073",
+        "th": "1d2bd3e22c8ee733a8444187be6c86fae7595984357eb58eace9641bf81c203c"
+      }
     }
   },
   "karnivore-smashburger": {
@@ -2489,6 +2526,306 @@
       "en": "Divide the kissel into six equal servings. The sugar in the recipe provides about 25 g of carbohydrate per serving. The lingonberries and potato starch also contribute.",
       "sv": "Dela krämen i sex lika stora portioner. Sockret i receptet ger cirka 25 g kolhydrater per portion. Lingonen och potatismjölet bidrar också.",
       "th": "แบ่งขนมลิงกอนเบอร์รีข้นเป็นหกที่เท่า ๆ กัน น้ำตาลตามสูตรให้คาร์โบไฮเดรตประมาณ 25 กรัมต่อที่ ผลลิงกอนเบอร์รีและแป้งมันฝรั่งก็ให้คาร์โบไฮเดรตเช่นกัน"
+    }
+  },
+  "suklaa-raejuustokakku": {
+    "recipeBindingSha256": "abd5091795020c28da589d63ab67eba88346c93b61233dfb2867d0d0caf733b4",
+    "preparationSha256": "c29269c39073197719155ba2b5de350d966e538d70f75c76570dd3843c07d15a",
+    "nutritionSha256": "a17c8b427b77fb6d68244d97464a6a18331e100f0f51fdb23560c722f7e40fc7",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/4",
+    "reasoning": "Five weighed ingredients are blended and baked in a lined form, then divided into four. Scope is the original recipe's crustless cake, regardless of the dark base visible in the source Reel. The honey is 63 g for the batch and Fineli #4 reports directly available carbohydrate (80.8 g/100 g) without the aggregate polyol field. Cocoa and honey are practical adaptation quantities; the ingredient numbers are not video measurements. Fineli references generic plain dairy and unsweetened cocoa; formulation can change the result.",
+    "condition": {
+      "fi": "Yksi annos on neljäsosa ohjeen pohjattomasta kakusta. Arvio perustuu viiteen punnittuun ainekseen.",
+      "en": "One serving is one quarter of the crustless cake in the recipe. The estimate uses its five weighed ingredients.",
+      "sv": "En portion är en fjärdedel av kakan utan botten i receptet. Uppskattningen bygger på de fem vägda ingredienserna.",
+      "th": "หนึ่งหน่วยบริโภคคือหนึ่งในสี่ของเค้กแบบไม่มีฐานตามสูตร ค่าประมาณอิงจากส่วนผสมที่ชั่งทั้งห้าอย่าง"
+    },
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "fd5423cf3623cb9d89c624355ad44fe8ed4318d3cabf9e686c84ce72c70b5925",
+        "en": "e23d396f012a8c42e441af6c4f4bab1a5a9f2762736d59bfbb64dbd7651d0c10",
+        "sv": "cb3ade6dfb1050e4c980e314fa3cdba1d9c7d51940a65e8d152739d8034e7d1c",
+        "th": "5c0511649ad19d5d84bd5c341659fb6deac55c89cddfa1b3f7ef2ffd3c07fed1"
+      }
+    },
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/suklaa-raejuustokakku.json"
+  },
+  "omenavaahtokarkit": {
+    "recipeBindingSha256": "655183a0dc94e2932d9fef912fabc6ac75835a3abbb7bc3cf34db78510199e84",
+    "preparationSha256": "f909aa1266488e29c48edef21680384e68e868976dd74eb5b9986e7fd317a30f",
+    "nutritionSha256": "b84c0249b1deec085d920f62873a39c735faf4da1f879640fb8ef25de69310a1",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11060",
+    "reasoning": "Weighed 300 g peeled cored apple is cooked in water and puréed with no draining. All purée is whipped and cut into 16 pieces. Fineli #11060 peeled apple CHOAVL 8.31 g/100 g gives 1.558125 g per 1/16. Fineli #25 plain gelatine and #922 water directly report zero available CHO. Leaf weight/retention and missing independently measured gelatine polyols do not affect that direct zero. Recipe scope is ordinary plain gelatine leaf, which a manufacturer also lists as one ingredient. Added carbohydrate in a substituted flavoured dessert mix is outside the recipe.",
+    "condition": {
+      "fi": "Arvio koskee yhtä palaa, kun jaat erän 16 palaan. Käytä reseptin tavallisia liivatelehtiä ja punnitse omenat kuorittuina ja ilman siemenkotaa.",
+      "en": "The estimate is for one of 16 pieces. Use plain gelatine leaves and weigh the apples after peeling and coring.",
+      "sv": "Uppskattningen gäller en av 16 bitar. Använd vanliga gelatinblad och väg äpplena efter skalning och urkärning.",
+      "th": "ค่าประมาณสำหรับหนึ่งชิ้นเมื่อแบ่งเป็น 16 ชิ้น ใช้เจลาตินแผ่นชนิดไม่ปรุงแต่ง และชั่งแอปเปิ้ลหลังปอกเปลือกและเอาแกนออก"
+    },
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "66265391827c262e36ebe1ac681943ef8039ba7d4b6170f7756b682f79a7b74a",
+        "en": "22e9edb39e886e26dfbb2907eb5a6c0183b2231f373234370671bf0fa1280d0b",
+        "sv": "a3f18ba6ecae52546fdb7c220737287ace90e45a2c480d8243a69aa6b8f799dd",
+        "th": "c87e12f157a7448e56622f6afed84dc2d89b885d4af11ebcbd5ba0b2c880b04a"
+      }
+    },
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/omenavaahtokarkit.json"
+  },
+  "avokado-perunasampylat": {
+    "recipeBindingSha256": "4967492609e442ac342c84d5bc3e920ae1b43ebc63d98a90b5ffbe46e2b3895f",
+    "preparationSha256": "7ee3799f4e5474c24d52bb115a5c4409238ee6b11a09bb0920d2a054ef451a65",
+    "nutritionSha256": "9cd61cbb524b49e555f47bfebd78a1e87e4d9b3efe28de4195d7e58ef0f899df",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11511",
+    "reasoning": "Original is six rolls baked in a lined muffin pan. Potato is weighed cooked, peeled, boiled without salt, drained and cooled. Fineli #11511 is heat-state matched generic boiled peeled unsalted potato, 15.5 g/100 g. Fineli #74 independently reports baking-powder starch/CHOAVL at 37.8 g/100 g; its separate polyols remain missing. Weighed listed ingredients cover the batch, including the brush-on yolk and sesame topping as added. Unmeasured adherence of the whole yolk and seeds affects available carbohydrate by up to 0.005667 and 0.015613 g per roll in the reference model. No final mass or retention given.",
+    "condition": {
+      "fi": "Arvio koskee yhtä vuoassa paistettua sämpylää, kun jaat taikinan kuuteen. Mukana ovat reseptin keltuaisella sivelty pinta ja seesaminsiemenet.",
+      "en": "The estimate is for one of six rolls baked in a muffin tin. It includes the listed egg-yolk glaze and sesame seeds.",
+      "sv": "Uppskattningen gäller en av sex småfrallor gräddade i muffinsform. Den inkluderar äggulan till pensling och sesamfröna i receptet.",
+      "th": "ค่าประมาณสำหรับขนมปังหนึ่งชิ้นจากทั้งหมดหกชิ้นที่อบในพิมพ์มัฟฟิน รวมไข่แดงที่ทาหน้าและงาตามสูตร"
+    },
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "e3408f520dccb5c9e8ec59c8891e65dedd0a609bf2b5f7374311fc5d5715858b",
+        "en": "14a90fcd3868206e135e7984a4118783da39900eaa282ec3b346c6a3e9b847c0",
+        "sv": "015a113e3ccc70841474ef11ec44a64451d62416691e907615e8d4065bf1adc4",
+        "th": "6d0d7d05e7f3935954ab01a66a8d582cad9fb90e37b9560a0cc7f3d4cfb0b8ee"
+      }
+    },
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/avokado-perunasampylat.json"
+  },
+  "avokado-perunasampylat-pellilla": {
+    "recipeBindingSha256": "35af177f2e3dac9b6112b7fe7ce04d5ef2d90bdc9c57050e74f7987b8380c259",
+    "preparationSha256": "db69752db0d27b8ba58be740eba014a8ff3927b8ec42ee14f4692859c355053b",
+    "nutritionSha256": "ff238485a2e02957fa2bf8559e6fab418adb040543d4238499234e49fc9a65d7",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11511",
+    "reasoning": "Original is six rolls distributed from one batter. 250 g peeled, unsalted boiled, drained and cooled floury potato plus 90 g avocado pulp, 20 g yoghurt, 4 g baking powder, 2 g fine salt, 8 g sesame and one edible egg. The recipe gives 55 g shell-free egg as approximate; Fineli #858 Release 20 supplies 55 g for a medium egg and direct available carbohydrate of 0.3 g/100 g. Fineli #74 directly reports baking-powder starch/CHOAVL despite unknown aggregate polyol field. All written ingredients are used and 8 g sesame is applied across all six; finished weight is unspecified.",
+    "condition": {
+      "fi": "Arvio koskee yhtä peltisämpylää, kun jaat taikinan kuuteen. Laskelmassa yksi kuoreton kananmuna painaa noin 55 g. Mukana ovat päälle ripoteltavat seesaminsiemenet.",
+      "en": "The estimate applies to one tray-baked roll when the dough is divided into six. The calculation uses about 55 g for one egg without the shell and includes the sesame topping.",
+      "sv": "Uppskattningen gäller en plåtgräddad fralla när degen delas i sex delar. I beräkningen väger ett ägg utan skal cirka 55 g. Sesamfröna ovanpå ingår.",
+      "th": "ค่าประมาณนี้ใช้กับขนมปังอบถาดหนึ่งชิ้นเมื่อแบ่งแป้งเป็นหกส่วน การคำนวณใช้ไข่ไม่รวมเปลือกประมาณ 55 กรัมและรวมงาที่โรยหน้า"
+    },
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "e15ca6d0b0bdc344d3b05ab4b49cbbc92d903f755be04633c6448c664f7c6b2d"
+      }
+    },
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/avokado-perunasampylat-pellilla.json"
+  },
+  "kaurakeksit": {
+    "piecesPerServing": 1,
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/153",
+    "condition": {
+      "fi": "Arvio koskee yhtä kauralastua, kun jaat taikinan 30 yhtä suureen nokareeseen.",
+      "en": "The estimate is for one oat crisp when you divide the dough into 30 equal scoops.",
+      "sv": "Uppskattningen gäller ett havreflarn när du delar degen i 30 lika stora klickar.",
+      "th": "ค่าประมาณนี้สำหรับคุกกี้ข้าวโอ๊ตหนึ่งชิ้น เมื่อแบ่งแป้งเป็น 30 ส่วนเท่า ๆ กัน"
+    },
+    "reasoning": "The original recipe uses the whole batter for about 30 oat crisps. Account for an equal thirtieth. Fineli reports available carbohydrate for the ordinary oats, flour, baking powder and vanilla sugar with food-specific tablespoon and teaspoon masses for the volume ingredients. Missing aggregate polyol or net quantities do not change the separately defined available carbohydrate. Oil or frosting is not added.",
+    "recipeBindingSha256": "fe6c6aa27f4cce728683388654179a96bf177a14b06e8edba81faab1e4052d61",
+    "preparationSha256": "04d5e0399afb08c20268faf72a05f7c751d1891218753086cf23eada04fed81a",
+    "nutritionSha256": "8ddd28b0621d58c57cea67b0429e75c90b87fc74b7885ee277cc0e6973af1a1e",
+    "reviewedAt": "2026-11-18",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/kaurakeksit.json",
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "en": "388ec6b7466a57cdb684e118be5a18a592a57894ad5bf02e6e8b2b964c12961e",
+        "sv": "5cc39baeb21f3df2cf9617857be651f5977ba2dc879df2d8566d965f7d83d784",
+        "fi": "12adbf2108ec3a5cc4993ecd0a808cba91cda36d80ee623169641c5dcfae1551",
+        "th": "941f8772e701b222e89ddb292dfc890f7075da0b52aa0c1f60430a8284e478dc"
+      }
+    }
+  },
+  "punajuuri-suklaakakku": {
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/4",
+    "condition": {
+      "fi": "Yksi annos on kymmenesosa kakusta. Arviossa on ohjeen mukaan kypsänä punnittu punajuuri ja taikinaan käytetty juokseva hunaja.",
+      "en": "One serving is one tenth of the cake. The estimate includes the beetroot weighed after cooking and the runny honey in the batter.",
+      "sv": "En portion är en tiondel av kakan. Uppskattningen omfattar rödbetorna vägda efter kokning och den flytande honungen i smeten.",
+      "th": "หนึ่งที่คือหนึ่งในสิบของเค้ก ค่าประมาณรวมบีตรูตที่ชั่งหลังต้ม และน้ำผึ้งเหลวที่ผสมในแป้งเค้ก"
+    },
+    "reasoning": "Boiled beetroot is weighed at 300 g after boiling, before blending and baking. The model covers one tenth of the baked cake from all the batter. It uses Fineli ingredient rows, including source #4 as a reference for 168 g ordinary runny honey and full-fat almonds as the plain ground almond composition. The missing separate polyol values in honey and baking powder do not erase their Fineli available-carbohydrate values.",
+    "recipeBindingSha256": "0955ecb72101f75458d00751ed7f799c0f6b7694a630909632b0e61cc5027433",
+    "preparationSha256": "457f6de5bbf0781c9bb6ab348784a1018ff05176518ce2bc7f5a092493d8a113",
+    "nutritionSha256": "4522017bcd180a821b0e4778739994000747092a3273e9f5bb8da37b83a197c2",
+    "reviewedAt": "2026-11-18",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/punajuuri-suklaakakku.json",
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "en": "68475b71ed605f855d5c7a1ecfcecbf08858e6d053a3eee340af716590f61240",
+        "sv": "79aceccbee87db3df4249317b8ed74ed146d77b7666a4a4a2b23a4d4ca0a5f69",
+        "fi": "8fcbf23540a7717a4b069b122677dafde42977430609a32fa47973714e2e6920",
+        "th": "fc81f3bb66e9a1f5ad7f6688cd96e462cea22b6755e237b7ace7775c6c479387"
+      }
+    }
+  },
+  "thai-jok-kanalla": {
+    "recipeBindingSha256": "9ca6ef4ce76fa92b37db501c7d3365cbf791b0dc10050363d65ce945e801a985",
+    "preparationSha256": "a893e169a2923049aeee7ab578d5b30cd309a9a25d03a7f9c5b913056b5eadfe",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "Rinsed dry long-grain white rice is simmered in water for about 45 minutes until it breaks down into chicken porridge. The cooked egg tops the serving. Atkinson et al. 2021, Table 1, provides the rice category mean GI 67 across 128 food entries (SD 17). The applied group mean accounts for 100% of the current modeled GL point. Keep the published numeric result in its existing lane.",
+    "classLimitation": {
+      "fi": "Laskelmassa käytetään riisiryhmän GI-keskiarvoa. Riisilaji ja pitkä haudutus puuroksi voivat muuttaa annoksen GK-luokkaa.",
+      "en": "The calculation uses an average GI for rice. The rice variety and the long simmer used to make this porridge can change the serving’s GL category.",
+      "sv": "I beräkningen används ett genomsnittligt GI för ris. Rissort och lång sjudning till gröt kan ändra portionens GL-kategori.",
+      "th": "การคำนวณใช้ค่า GI เฉลี่ยของกลุ่มข้าว ชนิดข้าวและการเคี่ยวนานจนข้นเป็นโจ๊กอาจทำให้ระดับ GL ต่อหนึ่งที่เปลี่ยนได้"
+    }
+  },
+  "japanilainen-onigiri-lohella": {
+    "recipeBindingSha256": "63a4a6f6e4ed5be088b5ad5f71636b649b440aef3e7799bcb9052dde5267ce19",
+    "preparationSha256": "c4a0b3d0a9ea1c80dd1555575e9c1eba3fcba71cf10dc91ebb4f7f71bec28d95",
+    "nutritionSha256": "780a42c9645c1c04da8575c7096e2784cc70f7623f28c4c240153005e685139e",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/japanilainen-onigiri-lohella.json",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "Cook rice, split the warm cooked rice into two, fill with salmon and form two triangles. The current available-carbohydrate estimate (37.06 g) uses 50 g dry rice per original serving from AFCD F007682 (37.0 g rice carbohydrate). The legacy GL point uses Fineli 11521 at 39.5 g rice carbohydrate per original serving. Both approved source bases remain, and the ingredient/preparation-specific rice GI has not been established. Atkinson et al. 2021, Table 1, provides the rice category mean GI 67 across 128 food entries (SD 17). The applied group mean accounts for 100% of the current modeled GL point. Keep the published numeric result in its existing lane.",
+    "classLimitation": {
+      "fi": "Riisipallojen GK-arvio perustuu riisiryhmän GI-keskiarvoon. Riisilaji ja kypsennystapa voivat muuttaa annoksen GK-luokkaa.",
+      "en": "The rice balls’ GL estimate uses an average GI for rice. The rice variety and cooking method can change the serving’s GL category.",
+      "sv": "GL-uppskattningen för risbollarna bygger på ett genomsnittligt GI för ris. Rissort och tillagningssätt kan ändra portionens GL-kategori.",
+      "th": "ค่าประมาณ GL ของข้าวปั้นใช้ค่า GI เฉลี่ยของกลุ่มข้าว ชนิดข้าวและวิธีหุงอาจทำให้ระดับ GL ต่อหนึ่งที่เปลี่ยนได้"
+    },
+    "condition": {
+      "fi": "Annoksen hiilihydraattiarvio käyttää AFCD:n riisitietoa. Aiemman GK-laskelman riisitieto on Finelistä.",
+      "en": "The serving’s carbohydrate estimate uses rice composition from AFCD. The earlier GL calculation uses rice composition from Fineli.",
+      "sv": "Kolhydratuppskattningen för portionen använder uppgifter om ris från AFCD. Den tidigare GL-beräkningen använder uppgifter om ris från Fineli.",
+      "th": "ค่าประมาณคาร์โบไฮเดรตต่อหนึ่งที่ใช้ข้อมูลส่วนประกอบของข้าวจาก AFCD ส่วนค่า GL ที่คำนวณไว้ก่อนหน้านี้ใช้ข้อมูลส่วนประกอบของข้าวจาก Fineli"
+    }
+  },
+  "korealainen-yachaejuk-kasvisjuk": {
+    "recipeBindingSha256": "430bf9049e0a3570d8f7183b31c75b7e25b88f10c89c2ad65a976c688176b7a6",
+    "preparationSha256": "bc38ce6032d948057bd364b5d5cdbaf323bd714a2d2d6047035e24f1e1f274ef",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "Long-grain white rice simmers to a thick porridge. Finely chopped carrot and courgette are added as the rice nears tenderness. Rice uses the rice group mean and both vegetables use the broad vegetable group mean. Atkinson et al. 2021, Table 1, provides the rice category mean GI 67 across 128 food entries (SD 17). The applied group mean accounts for 87% of the current modeled GL point. Keep the published numeric result in its existing lane.",
+    "classLimitation": {
+      "fi": "Laskelma käyttää riisille ja kasviksille ryhmien GI-keskiarvoja. Riisilaji ja puuron valmistustapa voivat muuttaa annoksen GK-luokkaa.",
+      "en": "The calculation uses group GI averages for the rice and vegetables. The rice variety and how the porridge is cooked can change the serving’s GL category.",
+      "sv": "I beräkningen används genomsnittliga GI-värden för grupperna ris och grönsaker. Rissort och tillagning till gröt kan ändra portionens GL-kategori.",
+      "th": "การคำนวณใช้ค่า GI เฉลี่ยของกลุ่มข้าวและกลุ่มผัก ชนิดข้าวและวิธีต้มเป็นโจ๊กอาจทำให้ระดับ GL ต่อหนึ่งที่เปลี่ยนได้"
+    }
+  },
+  "malesialainen-congee-inkivaarilla": {
+    "recipeBindingSha256": "8372e09902da502ced678cf8d2129bd2242b27722eb6786f45aa21675dd532e0",
+    "preparationSha256": "256eaa24ddc6e2de2206e7a35d620c412113b65356931ab22984244a82dc93a1",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "Rinsed long-grain rice is simmered in the cooking water until soft and thickened, then divided into bowls and served with spring onion. Atkinson et al. 2021, Table 1, provides the rice category mean GI 67 across 128 food entries (SD 17). The applied group mean accounts for 99% of the current modeled GL point. Keep the published numeric result in its existing lane.",
+    "classLimitation": {
+      "fi": "Laskelmassa käytetään riisiryhmän GI-keskiarvoa. Riisilaji ja puuron valmistustapa voivat muuttaa annoksen GK-luokkaa.",
+      "en": "The calculation uses an average GI for rice. The rice variety and how the porridge is cooked can change the serving’s GL category.",
+      "sv": "I beräkningen används ett genomsnittligt GI för ris. Rissort och tillagning till gröt kan ändra portionens GL-kategori.",
+      "th": "การคำนวณใช้ค่า GI เฉลี่ยของกลุ่มข้าว ชนิดข้าวและวิธีต้มเป็นโจ๊กอาจทำให้ระดับ GL ต่อหนึ่งที่เปลี่ยนได้"
+    }
+  },
+  "kiinalainen-tomaattimunakas-riisilla": {
+    "recipeBindingSha256": "02bac3771e690ab0d874f829d094fa7a875e91b5d2b66fdc79056d03595b8d0c",
+    "preparationSha256": "9be28f92b08ace3f9080065269c84b44f37de790f97cc2f7b04a0ef0c02b3f73",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "Dry long-grain white rice is cooked according to the package and served under a cooked tomato and egg mixture; cooking water is outside the serving. Atkinson et al. 2021, Table 1, provides the rice category mean GI 67 across 128 food entries (SD 17). The applied group mean accounts for 94% of the current modeled GL point. Keep the published numeric result in its existing lane.",
+    "classLimitation": {
+      "fi": "Tomaatti-munaseoksen alla tarjottavan riisin GK-osuus perustuu riisiryhmän GI-keskiarvoon. Riisilaji ja kypsennystapa voivat muuttaa annoksen GK-luokkaa.",
+      "en": "The rice served under the tomato and egg mixture uses an average GI for rice. The rice variety and cooking method can change the serving’s GL category.",
+      "sv": "För riset som serveras under tomat- och äggblandningen används ett genomsnittligt GI för ris. Rissort och tillagningssätt kan ändra portionens GL-kategori.",
+      "th": "ข้าวที่เสิร์ฟกับไข่ผัดมะเขือเทศใช้ค่า GI เฉลี่ยของกลุ่มข้าวในการคำนวณ ชนิดข้าวและวิธีหุงอาจทำให้ระดับ GL ต่อหนึ่งที่เปลี่ยนได้"
+    }
+  },
+  "kiinalainen-riisipuuro-kananmunalla": {
+    "recipeBindingSha256": "77e20dfaa3a6d7dd20dffc4660d40082f61f18dfceb764e0dfab4cb660f50e98",
+    "preparationSha256": "5f5dc4283f7b65f14b2a4f406b7b282fa5397126bfadf1a703b92b6299a1d448",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "Rinsed long-grain white rice is simmered in water until a soft porridge, then continues simmering with grated ginger. The eggs cook separately and top the porridge. Atkinson et al. 2021, Table 1, provides the rice category mean GI 67 across 128 food entries (SD 17). The applied group mean accounts for 99% of the current modeled GL point. Keep the published numeric result in its existing lane.",
+    "classLimitation": {
+      "fi": "Laskelmassa käytetään riisiryhmän GI-keskiarvoa. Riisilaji ja puuron valmistustapa voivat muuttaa annoksen GK-luokkaa.",
+      "en": "The calculation uses an average GI for rice. The rice variety and how the porridge is cooked can change the serving’s GL category.",
+      "sv": "I beräkningen används ett genomsnittligt GI för ris. Rissort och tillagning till gröt kan ändra portionens GL-kategori.",
+      "th": "การคำนวณใช้ค่า GI เฉลี่ยของกลุ่มข้าว ชนิดข้าวและวิธีต้มเป็นโจ๊กอาจทำให้ระดับ GL ต่อหนึ่งที่เปลี่ยนได้"
+    }
+  },
+  "thai-porsasjok": {
+    "recipeBindingSha256": "e9e6100eadec3e8b857a42f756da22430080934702cfd9fd57d97a4d9d17be40",
+    "preparationSha256": "7f946609382af4c24491356106e3c6eef9ec47e850f8c48b9879e0462eababa4",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "Rinsed long-grain white rice is simmered in water for about 45 minutes and breaks down into porridge. The cooked egg tops the serving. Atkinson et al. 2021, Table 1, provides the rice category mean GI 67 across 128 food entries (SD 17). The applied group mean accounts for 100% of the current modeled GL point. Keep the published numeric result in its existing lane.",
+    "classLimitation": {
+      "fi": "Laskelmassa käytetään riisiryhmän GI-keskiarvoa. Riisilaji ja pitkä haudutus puuroksi voivat muuttaa annoksen GK-luokkaa.",
+      "en": "The calculation uses an average GI for rice. The rice variety and the long simmer used to make this porridge can change the serving’s GL category.",
+      "sv": "I beräkningen används ett genomsnittligt GI för ris. Rissort och lång sjudning till gröt kan ändra portionens GL-kategori.",
+      "th": "การคำนวณใช้ค่า GI เฉลี่ยของกลุ่มข้าว ชนิดข้าวและการเคี่ยวนานจนข้นเป็นโจ๊กอาจทำให้ระดับ GL ต่อหนึ่งที่เปลี่ยนได้"
+    }
+  },
+  "korealainen-gyeranbap-riisikulho": {
+    "recipeBindingSha256": "216fec240a1a6a0cb8fa39a6a4a3faeecf0690d421c4ee8c3370b4e8707ffa5c",
+    "preparationSha256": "a2fb4ba8009e746b82ec8e6c8077d4b36be8a2c86a92493a282dd0a6fcd080ff",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "Dry white rice cooks by package directions and is divided into two warm bowls with one fried egg each and shared seasonings. Atkinson et al. 2021, Table 1, provides the rice category mean GI 67 across 128 food entries (SD 17). The applied group mean accounts for 100% of the current modeled GL point. Keep the published numeric result in its existing lane.",
+    "classLimitation": {
+      "fi": "Riisikulhon GK-arvio perustuu riisiryhmän GI-keskiarvoon. Riisilaji ja kypsennystapa voivat muuttaa annoksen GK-luokkaa.",
+      "en": "The rice bowl’s GL estimate uses an average GI for rice. The rice variety and cooking method can change the serving’s GL category.",
+      "sv": "GL-uppskattningen för risskålen bygger på ett genomsnittligt GI för ris. Rissort och tillagningssätt kan ändra portionens GL-kategori.",
+      "th": "ค่าประมาณ GL ของข้าวหนึ่งชามใช้ค่า GI เฉลี่ยของกลุ่มข้าว ชนิดข้าวและวิธีหุงอาจทำให้ระดับ GL ต่อหนึ่งที่เปลี่ยนได้"
+    }
+  },
+  "korealainen-jumeokbap-merilevalla": {
+    "recipeBindingSha256": "544bb2277037e8b246adcb9f953643f9b66c78dd68f71f121d5dcde300673dc0",
+    "preparationSha256": "1fbd2715807610c247441216c8fa319d719a4a9bedcdd4a92beab5b37e28a8fd",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "Dry white long-grain rice cooks by package directions and rests under a lid. Warm rice is mixed with carrot, gim and sesame oil and shaped into six balls, three per original serving. Atkinson et al. 2021, Table 1, provides the rice category mean GI 67 across 128 food entries (SD 17). The applied group mean accounts for 96% of the current modeled GL point. Keep the published numeric result in its existing lane.",
+    "classLimitation": {
+      "fi": "Riisipallojen GK-arvio perustuu riisiryhmän GI-keskiarvoon. Riisilaji ja kypsennystapa voivat muuttaa annoksen GK-luokkaa.",
+      "en": "The rice balls’ GL estimate uses an average GI for rice. The rice variety and cooking method can change the serving’s GL category.",
+      "sv": "GL-uppskattningen för risbollarna bygger på ett genomsnittligt GI för ris. Rissort och tillagningssätt kan ändra portionens GL-kategori.",
+      "th": "ค่าประมาณ GL ของข้าวปั้นใช้ค่า GI เฉลี่ยของกลุ่มข้าว ชนิดข้าวและวิธีหุงอาจทำให้ระดับ GL ต่อหนึ่งที่เปลี่ยนได้"
+    }
+  },
+  "japanilainen-tamago-kake-gohan": {
+    "recipeBindingSha256": "37cc1f2951091effc0e59c4340c2066691cb8a0bcd16288790c242e994633588",
+    "preparationSha256": "10375aeb7cf39bee0085222041393359936d1236da9c468bb9b05a78bc9df8e2",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "Rinsed rice cooks by package directions and is divided into two hot bowls. Both documented egg preparation paths use the same rice dose and preparation; no egg safety recommendation is inferred by the GK notice. Atkinson et al. 2021, Table 1, provides the rice category mean GI 67 across 128 food entries (SD 17). The applied group mean accounts for 100% of the current modeled GL point. Keep the published numeric result in its existing lane.",
+    "classLimitation": {
+      "fi": "Riisikulhon GK-arvio perustuu riisiryhmän GI-keskiarvoon. Riisilaji ja kypsennystapa voivat muuttaa annoksen GK-luokkaa.",
+      "en": "The rice bowl’s GL estimate uses an average GI for rice. The rice variety and cooking method can change the serving’s GL category.",
+      "sv": "GL-uppskattningen för risskålen bygger på ett genomsnittligt GI för ris. Rissort och tillagningssätt kan ändra portionens GL-kategori.",
+      "th": "ค่าประมาณ GL ของข้าวหนึ่งชามใช้ค่า GI เฉลี่ยของกลุ่มข้าว ชนิดข้าวและวิธีหุงอาจทำให้ระดับ GL ต่อหนึ่งที่เปลี่ยนได้"
+    }
+  },
+  "pad-kra-pao-vhh": {
+    "recipeBindingSha256": "e19b6d125b5f4cf6178875d70bb44bd30c9d87d289e881e5b4be152893472de3",
+    "preparationSha256": "48d2a82cb61d884fcf3376485614b4f00df116e59f9ebaae13db3be01cc9f21f",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "The listed cauliflower rice is cooked in a pan and served with the minced meat and fried egg. Its applied GI is a broad vegetable group proxy. Keep the existing omitted-carbohydrate warning and already limited class. Atkinson et al. 2021, Table 1, provides the vegetables other than potatoes category mean GI 66 across 91 entries (SD 19), including sweet potatoes. The applied group mean accounts for 95% of the current modeled GL point. Keep the published numeric result in its existing lane.",
+    "condition": {
+      "fi": "Arvio koskee ohjetta kukkakaaliriisillä. Kukkakaaliriisin GK-osuus perustuu kasvisryhmän GI-keskiarvoon.",
+      "en": "The estimate applies to the recipe with cauliflower rice. Its contribution to GL uses an average GI for the vegetable group.",
+      "sv": "Uppskattningen gäller receptet med blomkålsris. I beräkningen av blomkålsrisets bidrag till GL används ett genomsnittligt GI för grönsaksgruppen.",
+      "th": "ค่าประมาณนี้ใช้กับสูตรที่เสิร์ฟกับข้าวดอกกะหล่ำ การคำนวณค่า GL ส่วนของข้าวดอกกะหล่ำใช้ค่า GI เฉลี่ยของกลุ่มผัก"
+    }
+  },
+  "poronkaristys-kukkakaalimuusilla": {
+    "recipeBindingSha256": "f87ecb627da94eef072788b24768070fdee35834650d14c8a2b54a7f3cafa071",
+    "preparationSha256": "afd15f8bd402877a08efeff32daa62d818984604c0019a0aa54bcb6b73ac6f7a",
+    "reviewedAt": "2026-11-18",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "reasoning": "The serving includes cauliflower boiled and drained then puréed with cream. The cauliflower itself uses the vegetable group proxy. Cream is a separate dairy calculation input. Keep the existing omitted-carbohydrate warning and already limited class. Atkinson et al. 2021, Table 1, provides the vegetables other than potatoes category mean GI 66 across 91 entries (SD 19), including sweet potatoes. The applied group mean accounts for 92% of the current modeled GL point. Keep the published numeric result in its existing lane.",
+    "condition": {
+      "fi": "Arvio sisältää ohjeen kukkakaalimuusin. Muusin kukkakaalin GK-osuus perustuu kasvisryhmän GI-keskiarvoon.",
+      "en": "The estimate includes the recipe’s cauliflower mash. The cauliflower’s contribution to GL uses an average GI for the vegetable group.",
+      "sv": "Uppskattningen omfattar receptets blomkålspuré. I beräkningen av blomkålens bidrag till GL används ett genomsnittligt GI för grönsaksgruppen.",
+      "th": "ค่าประมาณรวมดอกกะหล่ำบดตามสูตร การคำนวณค่า GL ส่วนของดอกกะหล่ำใช้ค่า GI เฉลี่ยของกลุ่มผัก"
     }
   }
 }

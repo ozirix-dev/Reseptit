@@ -52,6 +52,14 @@ aineksella on lähteistetty nollan hiilihydraattivaikutus. Kerro arvioon
 kuuluvat punnitut ainekset ja annosjako. Muut ravintoarvot ja GK vaativat
 omat julkaisuperusteensa.
 
+Finelin CHOAVL on sokereiden ja tärkkelyksen summa. Sitä voi käyttää
+sellaisenaan, vaikka samalta riviltä puuttuisi erillinen kuitu- tai
+polyolitieto. Jos lähteen luku sisältää kuitua tai polyoleja, käytä
+imeytyvää määrää vain, kun tarvittava vähennys voidaan tehdä lähdetiedosta.
+Julkaistun kieliversion annos, ainesosat ja valmistus on tarkistettava.
+Uusi tai sisällöltään muuttunut kieliversio tarvitsee oman katselmoinnin.
+[Finelin aineistokuvaus](https://fineli.fi/fineli/content/file/7)
+
 Jos hyväksyntä kattaa vain vakioannoksen pyöristetyn GK-luvun, luku
 näytetään yhdelle reseptiannokselle. Muilla annoskoilla näkyvät
 laskettavissa olevat hiilihydraatit ja annosrajaus.
@@ -177,7 +185,7 @@ Keskimääräinen harha oli +6,46 GK-yksikköä ja keskimääräinen absoluuttin
 johdetut luottamusvälit ylittävät GK 20:n rajan. Ne kuvaavat tutkimuksen
 ryhmäarvion epävarmuutta, eivät Recipavon reseptien skenaariovälejä.
 
-### Toinen mitattu seka-ateria
+### Perunamuusi, kurkku ja rypsiöljy
 
 [Hätönen ym. (2011), taulukot 1–2](https://doi.org/10.1017/S0007114511000080)
 mittasivat glukoosiviitteisen GI:n 11 terveellä aikuisella. Vertailuannos
@@ -190,6 +198,36 @@ Mitatusta GI:stä 71 johdettu GK on 35,5. Ero on +18,5 GK-yksikköä.
 Molemmat ryhmäpisteet kuuluvat suureen luokkaan. Yhdessä annosvertailussa
 luokka voi täsmätä, vaikka arvojen ero on suuri. Tuloksesta ei johdeta
 öljyn vaikutukselle yleistä kerrointa.
+
+### Vaalea leipä, tonnikala ja voi
+
+[Meng ym. (2017), kokeet 2–3 ja kuva 1](https://doi.org/10.3945/ajcn.116.144162)
+mittasivat vaaleaa leipää yksin sekä tonnikalan tai voin kanssa.
+Vertailujuoma sisälsi 50 g glukoosia. Jokaisessa annoksessa imeytyvät
+hiilihydraatit tulivat leivästä, yhteensä 50 g. Tonnikalalla lisättiin
+12,5, 25 tai 50 g proteiinia 22 osallistujan kokeessa. Voilla lisättiin
+5,6, 11,1 tai 22,2 g rasvaa 20 osallistujan kokeessa.
+
+Otimme [Ballancen ym. taulukosta 3](https://doi.org/10.1007/s00394-018-1813-z)
+Mengin tulokset ja korjaamattoman ainesosa-GI:n. Kerroimme kunkin GI:n
+50 grammalla ja jaoimme sadalla. Tonnikala ja voi eivät lisänneet
+imeytyviä hiilihydraatteja.
+
+| Leivän täydennys | Laskettu GK | Mitatusta GI:stä johdettu GK | Erotus |
+| --- | ---: | ---: | ---: |
+| 12,5 g proteiinia tonnikalasta | 29,5 | 29 | +0,5 |
+| 25 g proteiinia tonnikalasta | 29,5 | 26 | +3,5 |
+| 50 g proteiinia tonnikalasta | 29,5 | 21,5 | +8 |
+| 5,6 g rasvaa voista | 27,5 | 31,5 | −4 |
+| 11,1 g rasvaa voista | 27,5 | 29 | −1,5 |
+| 22,2 g rasvaa voista | 27,5 | 27,5 | 0 |
+
+Kaikissa kuudessa vertailussa molemmat ryhmäpisteet kuuluvat suureen luokkaan.
+Yhteenvedossa ovat Doddin kolme ateriaa, Hätösen öljyannos ja Mengin
+kuusi tonnikala- tai voiannosta. Kymmenen yhtä painotetun ryhmäpisteparin
+harha oli +4,44 GK-yksikköä, absoluuttinen keskivirhe 5,54 ja luokkaosuvuus
+8/10. Osa annoksista mitattiin samoilla osallistujilla. Yhteenveto kuvaa
+näitä koeannoksia.
 
 ### Annosskaalaus mitattua glukoosiannosta vasten
 
@@ -204,9 +242,9 @@ oli taulukon 2 mittauksista glukoosin annosvastekäyrällä saatu GK.
 | Kaikki 15 annosta | +2,59 | 3,03 | 13/15 |
 | 10 annosta GI:n määrityksessä käytettyjen annosten ulkopuolella | +2,74 | 3,40 | 8/10 |
 
-Viiden elintarvikkeen annosskaalaus on erillinen vertailu Doddin ja
-Hätösen seka-aterioista. Vertailut perustuvat tutkimusten
-ryhmätason mittauksia. Tuloksia ei yhdistetä yhteiseksi kirjaston virheluvuksi.
+Viiden elintarvikkeen annosskaalaus on erillinen vertailu seka-aterioista.
+Kaikki vertailut perustuvat ryhmätason mittauksiin ja aineistossa
+käytettyihin annoksiin.
 
 [Wolever ym. (2006), taulukko 3 ja kuva 2](https://doi.org/10.1093/ajcn/83.6.1306)
 löysivät 14 aamiaisaterialla yhteyden lasketun GK:n ja mitatun keskimääräisen
