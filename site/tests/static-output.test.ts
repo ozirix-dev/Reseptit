@@ -21,7 +21,7 @@ import { copyrightSourceUrl, copyrightUi } from "../src/features/recipes/recipe-
 import { toolUi } from "../src/features/recipes/recipe-tools";
 import { siteContent } from "../src/generated/content.generated";
 import { contentManifest } from "../src/generated/routes.generated";
-import { glycemicLoadAdditionalResults, glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
+import { glycemicLoadAdditionalResults, glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults, type GlycemicLoadPilotPublicResult } from "../src/generated/glycemic-load-pilot.generated";
 import { glycemicLoadFilterCategories } from "../src/generated/glycemic-load-filters.generated";
 import { isPublicRecipeQuarantined, publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
 import { f25ExplicitUndefinedGkLabel, withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
@@ -318,6 +318,46 @@ test("reviewed ingredient contributions and the dry risotto rice amount are visi
       assert.doesNotMatch(html, /data-portion-gk|data-original-gk-class=/, routePath);
       assert.doesNotMatch(row, /class="gk-evidence__value"/);
       if (id === "punajuuririsotto") assert.doesNotMatch(html, /data-portion-carbohydrate=/, routePath);
+    }
+  }
+});
+
+test("the GK guide shows a known ingredient when the recipe supplies that name as its available portion information", async () => {
+  const ids = [
+    "bibimbap", "goi-cuon", "hernekeitto-savupotkalla", "idli-sambar", "japanilainen-curry-tofulla",
+    "japanilainen-natto-riisikulho", "japanilainen-soba-aamiaiskeitto", "keto-mutakakku", "keto-suklaakeksit",
+    "korealainen-bindaetteok-aamiaiseksi", "lanzhou-naudanliha-nuudelikeitto", "mapo-tofu", "masala-dosa",
+    "meksikolainen-huevos-divorciados", "paneer-tikka", "pho-bo", "roujiamo", "vhh-pyttipannu",
+  ];
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const route = glycemicLoadPath(locale);
+    const [html, raw] = await Promise.all([
+      readFile(path.join(dist, route.slice(1), "index.html"), "utf8"),
+      readFile(path.join(dist, "data", contentManifest[route]), "utf8"),
+    ]);
+    const guide = parseRouteContent(JSON.parse(raw), route).glycemicOverview;
+    assert.ok(guide?.knownIngredientNames, locale);
+    assert.deepEqual(Object.keys(guide.knownIngredientNames).sort(), ids, locale);
+    assert.equal(html.match(/data-gk-known-ingredient="true"/g)?.length, ids.length, locale);
+    for (const id of ids) {
+      const recipe = siteContent.recipes.find(entry => entry.recipeId === id && entry.locale === locale);
+      const result: GlycemicLoadPilotPublicResult | undefined = guide.results.find(entry => entry.recipeId === id);
+      const index: number | undefined = result?.portionEvidence?.driver?.ingredientIndex;
+      assert.ok(recipe && index !== undefined, `${id}/${locale}`);
+      const name: string = recipe.ingredients[index].item;
+      assert.equal(guide.knownIngredientNames[id][locale], name);
+      assert.equal(guide.carbsByRecipe?.[id], undefined);
+      assert.equal(glycemicLoadFilterCategories[id], undefined);
+      const scope = portionCopy[locale].known(name);
+      const start = html.indexOf(`id="${id}" class="glycemic-pilot__recipe"`);
+      assert.ok(start >= 0, recipe.routePath);
+      const end = html.indexOf('class="glycemic-pilot__recipe"', start + `id="${id}" class="glycemic-pilot__recipe"`.length);
+      const row = html.slice(start, end < 0 ? undefined : end);
+      const original = row.split('<section class="gk-only-variant"', 1)[0];
+      assert.ok(original.includes(renderToStaticMarkup(createElement("p", { "data-gk-known-ingredient": true }, scope))), recipe.routePath);
+      assert.doesNotMatch(original, /gk-evidence__value|data-original-gk-class=/, recipe.routePath);
+      const recipeHtml = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+      assert.ok(recipeHtml.includes(renderToStaticMarkup(createElement("p", null, scope))), recipe.routePath);
     }
   }
 });

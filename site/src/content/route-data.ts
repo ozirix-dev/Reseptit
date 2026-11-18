@@ -42,6 +42,7 @@ export interface RouteContent {
     reviewedCount: number;
     portionCoverage: GkPortionCoverage;
     carbsByRecipe?: Record<string, PortionCarbs>;
+    knownIngredientNames?: Record<string, Partial<Record<RecipeLocale, string>>>;
     portions?: Record<string, PortionEvidence>;
   };
 }

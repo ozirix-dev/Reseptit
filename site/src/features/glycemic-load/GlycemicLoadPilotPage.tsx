@@ -154,7 +154,7 @@ export function GlycemicLoadPilotPage() {
 }
 
 function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycemicOverview"]> }) {
-  const { results, variants, coverage, portionCoverage, portions, carbsByRecipe, reviewedCount } = data;
+  const { results, variants, coverage, portionCoverage, portions, carbsByRecipe, knownIngredientNames, reviewedCount } = data;
   const { recipeEstimateVariants, studyServingVariants } = useMemo(() => ({
     recipeEstimateVariants: new Map(variants.filter(variant => gkVariantScope(variant) === "RECIPE_VARIANT").map(variant => [variant.recipeId, variant])),
     studyServingVariants: new Map(variants.filter(variant => gkVariantScope(variant) === "STUDY_COMPARISON").map(variant => [variant.recipeId, variant])),
@@ -259,6 +259,7 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
       ? `${result.assessmentType ? modelled + " " : ""}${text.about} ${display.value} ${text.perServing}`
       : text.incomplete;
     const portionWords = recipePortionCopy[locale];
+    const knownIngredient = knownIngredientNames?.[result.recipeId]?.[locale];
     const preparationScope = carbs && !portion?.carbohydrateScope && (carbs.choices || portion?.ingredientPortion?.source) && portion?.condition?.[locale];
     const carbohydrateScope = carbs && (portion?.carbohydrateScope?.[locale] || preparationScope);
     return <li key={result.recipeId} id={result.recipeId} className="glycemic-pilot__recipe" tabIndex={-1}>
@@ -271,9 +272,10 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
         <p>{portionWords[carbs.definition]}</p>
       </> : carbs ? <p>{portionText.grams(describeCarbs(carbs.range, numberLocale))} · {portionWords[carbs.definition]}</p> : null}
       {portion?.ingredientPortion ? <IngredientPortionDetails ingredient={portion.ingredientPortion} locale={locale} /> : null}
+      {knownIngredient ? <p data-gk-known-ingredient>{portionWords.known(knownIngredient)}</p> : null}
       {!preparationScope && portion?.condition ? <p>{portion.condition[locale]}</p> : null}
       <OriginalCarbohydrateComparison comparison={portion?.carbohydrateComparisons?.[locale]} locale={locale} />
-      {portion?.reviewedSource && !verbal && (portion.condition || portion.carbohydrateScope || portion.classLimitation || (!base && portion.ingredientPortion))
+      {portion?.reviewedSource && !verbal && (portion.condition || portion.carbohydrateScope || portion.classLimitation || knownIngredient || (!base && portion.ingredientPortion))
         && !carbs?.choices?.some(choice => choice.source === portion.reviewedSource)
         && !portion.ingredientPortion?.carbohydrateAlternatives?.some(choice => choice.source === portion.reviewedSource)
         ? <p><ReviewedPortionSource source={portion.reviewedSource} locale={locale} /></p> : null}

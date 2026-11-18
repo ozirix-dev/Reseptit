@@ -10,7 +10,7 @@ import { siteTarget } from "../src/content/site-target";
 import { articles, articlePath, blogRoot } from "../src/features/blog/blog-data";
 import { privacyPaths } from "../src/features/privacy/privacy-copy";
 import { homepageTopics } from "../src/features/recipes/home-preview";
-import { countGkPortionCoverage, originalPortionCarbs } from "../src/features/recipes/gk-portion";
+import { countGkPortionCoverage, originalPortionCarbs, verbalGkForPortion } from "../src/features/recipes/gk-portion";
 import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 import { glycemicLoadPath } from "../src/features/recipes/recipe-i18n";
 import { recipeSearchEntry, supportedRecipeDiets } from "../src/features/recipes/recipe-search";
@@ -94,6 +94,20 @@ const coverageRows = originalRecipes.map(recipe => {
   };
 });
 const portionCoverage = countGkPortionCoverage(coverageRows);
+const knownIngredientNames = Object.fromEntries(coverageRows.flatMap(({ recipeId, numeric, carbs, evidence }) => {
+  if (!evidence?.driver || numeric || carbs || evidence.ingredientPortion || evidence.condition || verbalGkForPortion(evidence.verbal, 1)) return [];
+  const { ingredientIndex } = evidence.driver;
+  const entries = recipes.filter(recipe => recipe.recipeId === recipeId);
+  const original = entries.find(recipe => recipe.locale === "fi");
+  const source = original?.ingredients[ingredientIndex];
+  if (!original || !source) return [];
+  const names = Object.fromEntries(entries.flatMap(({ locale, ingredients }) => {
+    const entry = ingredients[ingredientIndex];
+    // Unit labels can be localized. Use the corresponding row and amount.
+    return entry && ingredients.length === original.ingredients.length && entry.amount === source.amount ? [[locale, entry.item]] : [];
+  }));
+  return [[recipeId, names]];
+}));
 const overview: RouteContent["glycemicOverview"] = {
   results: [...results, ...pendingRows],
   variants: gkOnlyVariants,
@@ -101,6 +115,7 @@ const overview: RouteContent["glycemicOverview"] = {
   reviewedCount: glycemicLoadPilotReviewedRecipeCount,
   portionCoverage,
   carbsByRecipe: Object.fromEntries(coverageRows.flatMap(row => row.carbs ? [[row.recipeId, row.carbs]] : [])),
+  knownIngredientNames,
 };
 const reviewedPortions = await loadReviewedPortions(path.resolve(siteDir, ".."));
 const manifest: Record<string, string> = {};
