@@ -57,7 +57,7 @@ Snabb kycklingnudelsoppa med ingefära och stjärnanis.
 ## Tillagning
 
 1. Koka upp 700 ml vatten. Tillsätt 2 g färsk ingefära och 1 g stjärnanis. Sänk värmen, täck och sjud en stund så att vattnet tar smak. Tillsätt ingen olja eller färdig buljong.
-2. Lägg i alla 150 g rå skinnfri kycklingbröstfilé. Sjud tills den tjockaste delen når minst 74 °C. Kontrollera med termometer. Flytta till en ren skärbräda, låt vila en stund och skiva tunt.
+2. Lägg i alla 150 g rå skinnfri kycklingbröstfilé. Sjud tills den tjockaste delen når minst 75 °C. Kontrollera med termometer. Flytta till en ren skärbräda, låt vila en stund och skiva tunt.
 3. Koka 100 g risnudlar i en separat kastrull enligt förpackningen. Låt rinna av och fördela i två skålar. Diska redskap som har rört den råa kycklingen innan de används till tillagad mat.
 4. Häll den heta kryddiga kokvätskan över nudlarna och fördela kycklingen. Salta vid behov och servera genast.
 

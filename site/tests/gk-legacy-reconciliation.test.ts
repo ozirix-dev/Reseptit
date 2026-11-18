@@ -212,6 +212,14 @@ test('Live original results preserve frozen history, the 87 variants and exact r
     return {...row,notes:(frozen.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n',lineEnding),
       source_content_hash:createHash('sha256').update(frozen).digest('hex')};
    }
+   if (row.source_path === 'reseptit/aamupalat/vietnamilainen-pho-ga-aamuksi.md') {
+    const original = read(row.source_path).replaceAll('\r\n', '\n');
+    const displayed = projectTranslationAuditSource(row.source_path, original);
+    assert.equal(row.source_content_hash, createHash('sha256').update(original).digest('hex'));
+    assert.match(displayed, /vähintään 75 °C/);
+    assert.equal(normalNotes, displayed.split('## Muistiinpanot')[1]!.trim().replaceAll('\n', lineEnding));
+    return {...row, notes: (original.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n', lineEnding)};
+   }
    if (b21CanonicalHistoryPaths.some(file => file === row.source_path)) {
     const published=read(row.source_path).replaceAll('\r\n','\n');
     const frozen=originalForB21CanonicalHistory(root,row.source_path,published);
