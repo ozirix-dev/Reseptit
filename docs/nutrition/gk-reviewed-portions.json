@@ -562,7 +562,7 @@
   "linssimakaronilaatikko": {
     "recipeBindingSha256": "a6a5ce87f65fcbc1667b1f6ff2297aaa81a2c864d6261a96334f215108ec8079",
     "reviewedAt": "2026-11-18",
-    "reasoning": "68 g EU declaration per 100 g dry; 220 g dry for 6 portions gives a source-accounting input of 24.93 g label carbohydrate per portion. Statement is about macaroni contribution, not cooked retention, lens composition or GK. The original notes and manufacturer declaration agree at 68 g per 100 g for EAN 6417700050725. The label applies to the dry quantity before parboiling and draining.",
+    "reasoning": "68 g EU declaration per 100 g dry; 220 g dry for 6 portions gives a source-accounting input of 24.93 g label carbohydrate per portion. Statement is about macaroni contribution, not cooked retention, lens composition or GK. The original notes and manufacturer declaration agree at 68 g per 100 g for EAN 6417700050725. The label applies to the dry quantity before parboiling and draining. Coop EAN 7340191132238 declares 43 g carbohydrate per 100 g dry. The 150 g dry input divided into six portions is 25 g and 10.75 g declared carbohydrate per portion before parboiling and draining. The two dry label values do not estimate the whole cooked serving.",
     "source": "https://www.myllynparas.fi/tuotteet/makaroni-400-g",
     "ingredientProduct": {
       "index": 0,
@@ -572,10 +572,10 @@
       "ean": "6417700050725"
     },
     "condition": {
-      "fi": "Pakkauksen hiilihydraattitieto koskee kuivaa makaronia. Koko annoksen arvioon tarvitaan makaronin ja linssien painot sekä niiden hiilihydraattitiedot erillisen esikeiton ja valutuksen jälkeen.",
-      "en": "The label gives the carbohydrate content of dry macaroni. A whole-serving estimate needs weights and carbohydrate values for the macaroni and lentils after they have been parboiled separately and drained.",
-      "sv": "Förpackningen anger kolhydratmängden i torra makaroner. För att uppskatta hela portionen behövs vikt och kolhydratvärden för både makaronerna och linserna efter att de förkokats var för sig och fått rinna av.",
-      "th": "ฉลากระบุปริมาณคาร์โบไฮเดรตของมักกะโรนีแห้ง การประมาณทั้งที่ต้องทราบน้ำหนักและปริมาณคาร์โบไฮเดรตของมักกะโรนีและถั่วเลนทิล หลังจากต้มพอเกือบสุกแยกกันและสะเด็ดน้ำ"
+      "fi": "Pakkausten hiilihydraattitiedot koskevat kuivia makaroneja ja linssejä. Koko annoksen arvioon tarvitaan makaronin ja linssien painot sekä niiden hiilihydraattitiedot erillisen esikeiton ja valutuksen jälkeen.",
+      "en": "The labels give the carbohydrate content of dry macaroni and lentils. A whole-serving estimate needs weights and carbohydrate values for the macaroni and lentils after they have been parboiled separately and drained.",
+      "sv": "Förpackningarna anger kolhydratmängden i torra makaroner och linser. För att uppskatta hela portionen behövs vikt och kolhydratvärden för både makaronerna och linserna efter att de förkokats var för sig och fått rinna av.",
+      "th": "ฉลากระบุปริมาณคาร์โบไฮเดรตของมักกะโรนีและถั่วเลนทิลในสภาพแห้ง การประมาณทั้งที่ต้องทราบน้ำหนักและปริมาณคาร์โบไฮเดรตของมักกะโรนีและถั่วเลนทิล หลังจากต้มพอเกือบสุกแยกกันและสะเด็ดน้ำ"
     },
     "preparationSha256": "52d88cce7ca88fecb469eab6d74c92dae0030042d131a056320720b65a142983",
     "ingredientPortion": {
@@ -590,7 +590,22 @@
       },
       "source": "https://www.myllynparas.fi/tuotteet/makaroni-400-g",
       "declaredCarbsGPer100g": 68
-    }
+    },
+    "additionalIngredientPortions": [
+      {
+        "index": 1,
+        "ingredientSha256": "fcd6a410d386695368f9367bad631e7026e586f3e3d7a8ae69e348e131b3f873",
+        "labels": {
+          "fi": "Coopin vihreitä linssejä kuivana",
+          "en": "Coop green lentils, dry weight",
+          "sv": "Coop gröna linser, torrvikt",
+          "th": "ถั่วเลนทิลเขียว Coop น้ำหนักแห้ง"
+        },
+        "unit": "g",
+        "declaredCarbsGPer100g": 43,
+        "source": "https://www.s-kaupat.fi/tuote/coop-vihreat-linssit-400-g/7340191132238"
+      }
+    ]
   },
   "marry-me-kanapasta": {
     "recipeBindingSha256": "c25a1ed42e6a979727e62453585dd3f5aa73de4fa355741a355bc710443e9b11",
@@ -626,7 +641,7 @@
   "uunifetapasta-kirsikkatomaateilla": {
     "recipeBindingSha256": "75f35680a5b210356e52b080def272b4aa0302e043ee80e8cf84112748ba8ade",
     "reviewedAt": "2026-11-18",
-    "reasoning": "Barilla Norway 71 g per 100 g matches pinned Finnish recipe label; Barilla France and Sweden use 71.2, UK uses 71.7. The named EAN is confirmed by Barilla Finland official campaign. The 240 g for 4 portions is a known ingredient contribution; omit exact amount on the public view due to market variation and no finished ratio. The listed dry weight remains valid across markets; the prior decision to hold an exact product carbohydrate value remains in force.",
+    "reasoning": "Barilla Norway 71 g per 100 g matches pinned Finnish recipe label; Barilla France and Sweden use 71.2, UK uses 71.7. The named EAN is confirmed by Barilla Finland official campaign. The 240 g for 4 portions is a known ingredient contribution; omit exact amount on the public view due to market variation and no finished ratio. The listed dry weight remains valid across markets; the prior decision to hold an exact product carbohydrate value remains in force. AFCD Release 3 F009190 gives 3.5 g available carbohydrate per 100 g of raw cherry tomatoes, excluding sugar alcohols. 450 g divided into four portions is a raw ingredient amount before roasting and cannot be added to dry penne to obtain the finished serving.",
     "source": "https://www.barilla.com/nn-no/produkter/pasta/klassikere/penne-rigate",
     "ingredientProduct": {
       "index": 0,
@@ -652,7 +667,22 @@
         "sv": "Barilla Penne Rigate nr 73, torrvikt",
         "th": "เพนเนริกาเต Barilla เบอร์ 73 น้ำหนักแห้ง"
       }
-    }
+    },
+    "additionalIngredientPortions": [
+      {
+        "index": 2,
+        "ingredientSha256": "382645ba7242f8daa8c778fabffac13b6bdb1b6e47229f87f76801465346ad73",
+        "labels": {
+          "fi": "Kirsikkatomaattia ennen paahtamista",
+          "en": "Cherry tomatoes before roasting",
+          "sv": "Körsbärstomater före rostning",
+          "th": "มะเขือเทศเชอร์รีก่อนอบ"
+        },
+        "unit": "g",
+        "availableCarbsGPer100g": 3.5,
+        "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009190"
+      }
+    ]
   },
   "kiinalainen-katkarapu-wontonkeitto": {
     "recipeBindingSha256": "b2040e47a37ff64357776b270930f063cf4594434cf7bfcf26c742e57d51d5a0",
@@ -2156,10 +2186,10 @@
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31256",
     "reasoning": "Fineli Release 20 31256 gives 54.034 g available carbohydrate per 100 g of uncooked fresh egg pasta, with explicit fibre and sugar alcohols. The 250 g input is divided three ways. This is the weighed fresh-pasta component before cooking and draining. The recipe permits fresh pasta with or without egg, so the estimate is scoped to the egg-pasta reference; brand and moisture can matter. Asparagus water retention, lemon zest, Parmesan and black pepper still prevent the whole-portion estimate.",
     "condition": {
-      "fi": "Luku koskee tuoretta kananmunapastaa. Jos käytät muuta fettuccinea, tarkista hiilihydraatit pakkauksesta. Finelin keitetyssä tuoreessa kananmunapastassa on noin 16,2 g imeytyvää hiilihydraattia 100 grammassa. Koko annoksen arvioon tarvitaan pastan ja parsan painot kypsennyksen ja valutuksen jälkeen.",
-      "en": "This estimate applies to fresh egg pasta. For other fettuccine, check the pack. Fineli lists about 16.2 g of available carbohydrate per 100 g of cooked fresh egg pasta. For a whole-serving estimate, weigh the pasta and asparagus after cooking and draining.",
-      "sv": "Uppskattningen gäller färsk äggpasta. Kontrollera förpackningen om du använder annan fettuccine. Fineli anger cirka 16,2 g tillgängliga kolhydrater per 100 g kokt färsk äggpasta. För att uppskatta hela portionen behövs vikten på pastan och sparrisen efter kokning och avrinning.",
-      "th": "ค่าประมาณนี้ใช้กับเส้นสดผสมไข่ หากใช้เส้นเฟตตูชินีแบบอื่น ให้ตรวจฉลาก Fineli ระบุว่าเส้นสดผสมไข่ที่ต้มแล้วมีคาร์โบไฮเดรตที่ย่อยได้ประมาณ 16.2 กรัมต่อ 100 กรัม หากต้องการประมาณทั้งที่ ให้ชั่งเส้นและหน่อไม้ฝรั่งหลังต้มและสะเด็ดน้ำ"
+      "fi": "Luku koskee tuoretta kananmunapastaa. Jos käytät muuta fettuccinea, tarkista hiilihydraatit pakkauksesta. Finelin keitetyssä tuoreessa kananmunapastassa on noin 16,2 g imeytyvää hiilihydraattia 100 grammassa. Koko annoksen arvioon tarvitaan valutetun pastan ja lautaselle päätyvän kypsän parsan painot ja niitä vastaavat koostumustiedot. Kirjaa, paljonko parsan keitinvettä päätyy annokseen, ja punnitse sitruunankuoriraaste.",
+      "en": "This estimate applies to fresh egg pasta. For other fettuccine, check the pack. Fineli lists about 16.2 g of available carbohydrate per 100 g of cooked fresh egg pasta. A whole-serving estimate needs the weights and matching composition data for the drained pasta and the cooked asparagus that goes on the plate. Record how much asparagus cooking water goes into the serving and weigh the lemon zest.",
+      "sv": "Uppskattningen gäller färsk äggpasta. Kontrollera förpackningen om du använder annan fettuccine. Fineli anger cirka 16,2 g tillgängliga kolhydrater per 100 g kokt färsk äggpasta. För en uppskattning av hela portionen behövs vikt och motsvarande näringsdata för den avrunna pastan och den kokta sparris som hamnar på tallriken. Notera hur mycket av sparrisens kokvatten som följer med och väg det rivna citronskalet.",
+      "th": "ค่าประมาณนี้ใช้กับเส้นสดผสมไข่ หากใช้เส้นเฟตตูชินีแบบอื่น ให้ตรวจฉลาก Fineli ระบุว่าเส้นสดผสมไข่ที่ต้มแล้วมีคาร์โบไฮเดรตที่ย่อยได้ประมาณ 16.2 กรัมต่อ 100 กรัม การประมาณทั้งที่ต้องทราบน้ำหนักและข้อมูลโภชนาการที่ตรงกับเส้นที่สะเด็ดน้ำแล้วและหน่อไม้ฝรั่งสุกที่ใส่จาน จดปริมาณน้ำต้มหน่อไม้ฝรั่งที่ใส่ในจานและชั่งผิวเลมอนขูด"
     },
     "ingredientPortion": {
       "index": 1,

@@ -134,6 +134,25 @@ test("two reviewed sauce portions keep separate label values and fail on stale o
   }), /additional ingredient carbohydrate requires its own source/);
 });
 
+test("raw pasta accompaniments keep their own source and never become a whole serving", async () => {
+  const reviews = await loadReviewedPortions(root);
+  for (const [id, weight, available, declared] of [
+    ["uunifetapasta-kirsikkatomaateilla", 112.5, 3.9375, undefined],
+    ["linssimakaronilaatikko", 25, undefined, 10.75],
+  ] as const) {
+    const markdown = await readFile(path.join(root, "reseptit", "paaruoat", id + ".md"), "utf8");
+    const { portion } = await projectPortionEvidence(root, id, markdown, reviews[id]);
+    const [pasta, ingredient] = reviewedIngredientPortions(portion);
+    assert.ok(pasta.amountPerServing > 0);
+    assert.equal(ingredient.amountPerServing, weight);
+    assert.equal(ingredient.availableCarbsGPerServing, available);
+    assert.equal(ingredient.declaredCarbsGPerServing, declared);
+    assert.ok(ingredient.source?.startsWith("https://"));
+    assert.equal(portion.availableCarbs, undefined);
+    assert.equal(originalGlycemicLoadCategory(undefined, portion), null);
+  }
+});
+
 test("volume-only ingredient evidence cannot carry a per-100-gram carbohydrate value", async () => {
   const id = "punajuuririsotto";
   const [reviews, markdown] = await Promise.all([
