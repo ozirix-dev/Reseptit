@@ -1,4 +1,36 @@
 {
+  "munakasmuffinit": {
+    "recipeBindingSha256": "088c1a29d6e9cd08c07fac8b9fec40b0d79b270f3c45681b1f87ad6bbea47f18",
+    "preparationSha256": "3f3acd82ec993ce1ab5198e7f3cdfe238cb87078a9ef7dcb77b1ddaeffd07c1e",
+    "nutritionSha256": "e052ba6ed76a4e90f6e80db6c30d01475a4087538d1d26f1d6c413d1cf04f8d2",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/e8ed43ed525a9cb6abbe61b94bc1c036153979c7/docs/nutrition/gk80-release-4/recipes.json#L202",
+    "reasoning": "The weighed batch is split evenly across six cups. Release-4 uses three servings, so two muffins correspond to one nutritional serving. The full bacon fat remains in the batch. No cooked gram weight or new GI is inferred.",
+    "piecesPerServing": 2
+  },
+  "tonnikalamunakkaat-uunissa": {
+    "recipeBindingSha256": "50020a6c607bcb1952b82b240fb27d1145eaa940ec9cf0ab7b94f3991ca3b18d",
+    "preparationSha256": "6ba0480349109d8ef791b119ae64d4e6186f502c7d79838d476391a2fcce4b27",
+    "nutritionSha256": "c980ad7688a4ae242d486cf2d2b5f5db5782ec05711cf5708bca5d1b6841f199",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/e8ed43ed525a9cb6abbe61b94bc1c036153979c7/docs/nutrition/gk80-release-4/recipes.json#L1365",
+    "reasoning": "The weighed batch with drained tuna is split evenly across six cups. Release-4 uses three servings, so two mini omelettes correspond to one nutritional serving. No cooked gram weight or new GI is inferred.",
+    "piecesPerServing": 2
+  },
+  "indonesialainen-nasi-uduk-aamiaisella": {
+    "recipeBindingSha256": "5077a82da71b7d1dd7766340e1b62eb69e0eb01295b869d4381fe9281fa23be2",
+    "preparationSha256": "43e011463fa51005e504a85bf104419f8a1be1a08e7a396dd04239c31d30a152",
+    "nutritionSha256": "db80c5a04398b5fbbe1484836ea50c9fdd3f78d41b5aabe01d73356bd7d32c6b",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1186/1475-2891-13-50",
+    "reasoning": "Release-3 uses rice-jasmine68 as a low-confidence cooked jasmine-rice comparison for the intact rice in the two-serving coconut rice recipe. The C20 preparation may add an unspecified amount of water. The reference study does not validate this coconut-rice cooking method or the effect of the extra water. This disclosure does not change the accepted ingredient-sum model or convert the comparison into a measured meal GI.",
+    "condition": {
+      "fi": "Arvio käyttää keitetyn jasmiiniriisin GI-vertailua. Vertailututkimuksessa ei mitattu tämän kookosriisin valmistustapaa eikä lisäveden vaikutusta.",
+      "en": "The estimate uses GI data for cooked jasmine rice. The reference study did not test this coconut rice cooking method or the effect of adding extra water.",
+      "sv": "Uppskattningen använder GI-data för kokt jasminris. Referensstudien undersökte varken den här tillagningen med kokosmjölk eller effekten av att tillsätta extra vatten.",
+      "th": "ค่าประมาณนี้ใช้ข้อมูล GI ของข้าวหอมมะลิที่หุงสุก งานวิจัยที่ใช้อ้างอิงไม่ได้ทดสอบการหุงด้วยกะทิตามสูตรนี้หรือผลของการเติมน้ำเพิ่ม"
+    }
+  },
   "kylma-oliivioljylevite": {
     "recipeBindingSha256": "6d3c4aa0fce74b3ed85f3c8ccc23b5d922a70a5d8ab47bf9f56b270c4c099e11",
     "reviewedAt": "2026-11-18",

@@ -1515,6 +1515,37 @@ test("published serving instructions keep baked portions and retained ingredient
   }
 });
 
+test("portion cards show the baked-piece equivalence and the jasmine rice preparation limit", async () => {
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  const pieceRecipes = ["munakasmuffinit", "tonnikalamunakkaat-uunissa"];
+  const rice = "indonesialainen-nasi-uduk-aamiaisella";
+  for (const id of [...pieceRecipes, rice]) {
+    const recipes = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.equal(recipes.length, 4, id);
+    for (const { routePath, locale } of recipes) {
+      const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+      const visible = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+      const filename = contentManifest[routePath];
+      assert.ok(filename, routePath);
+      const payload = parseRouteContent(JSON.parse(await readFile(path.join(dist, "data", filename), "utf8")), routePath);
+      const portion = payload.glycemicRecipe?.portionEvidence;
+      assert.match(visible, /data-portion-gk=/, routePath);
+      assert.match(visible, /data-portion-carbohydrate="available"/, routePath);
+      if (id === rice) {
+        const condition = reviews[id].condition?.[locale];
+        assert.ok(condition && visible.includes(condition), routePath);
+        assert.equal(portion?.condition?.[locale], condition, routePath);
+        assert.equal(payload.glycemicRecipe?.result?.glycemicLoadPerServing, 26.37, routePath);
+        assert.equal(portion?.reviewedSource, "https://doi.org/10.1186/1475-2891-13-50", routePath);
+      } else {
+        assert.equal(portion?.piecesPerServing, 2, routePath);
+        assert.ok(visible.includes(portionCopy[locale].pieces("2")), routePath);
+        assert.equal(payload.recipe?.servings, 3, routePath);
+      }
+    }
+  }
+});
+
 test("translation self-review corrections are present in static HTML and recipe metadata", async () => {
   const { siteContent } = await import("../src/generated/content.generated");
   const cases = [
