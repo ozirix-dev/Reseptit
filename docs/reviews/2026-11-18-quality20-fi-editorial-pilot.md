@@ -1,7 +1,7 @@
 # Recipavo #327: 20 julkaistun FI-reseptin kirjallinen laatupilotti (18.11.2026)
 
-**Tila:** `AUDIT / korjausehdotukset, ei julkaisu- eikä ravintohyväksyntä`  
-**Lähde:** `ozirix-dev/Reseptit`, lukittu `main` **`e8ed43ed525a9cb6abbe61b94bc1c036153979c7`**  
+**Tila:** `AUDIT / korjausehdotukset, ei julkaisu- eikä ravintohyväksyntä`
+**Lähde:** `ozirix-dev/Reseptit`, lukittu `main` **`e8ed43ed525a9cb6abbe61b94bc1c036153979c7`**
 **Työn rajaus:** Vain uusi katselmointiraportti, ei ainoatakaan muutosta resepteihin, käännöksiin, kuviin, ravinto-/GK-aineistoon tai julkaisuun.
 
 ## Menetelmä ja kattavuus
