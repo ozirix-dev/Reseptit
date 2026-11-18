@@ -53,3 +53,56 @@ Nämä ovat pysyvä viestisopimus. Käyttöliittymän kytkentä ja vanhojen
 julkaisujen luokkasiirrot toteutetaan erikseen katselmoidussa vaiheessa.
 Nykyisiä hyväksyntämanifesteja, tarkisteita tai tutkimushistoriaa ei kirjoiteta
 uudelleen. [15 ehdokkaan arvio ja kattavuuden korjaussuunnitelma](gk100-original-recipe-audit-2026-11-05.md)
+
+## Pysyvä tutkimuspäätös ja jonon tarkistus
+
+`laskeGK N` ja `laskeGK jatka` käyttävät alla olevaa tarkistusta ennen
+GI/GK-lähdehakua. Käytä nykyisen reseptitilaprojektion ja avointen korjaus-
+ja tutkimusjonojen perusteella järjestettyjä alkuperäisten reseptien ID:itä.
+Merkitse tiedossa olevat P0/P1-tapaukset, myös issue #404:n oikeaan resepti-
+versioon kohdistuvat tapaukset, muodossa `--priority=resepti-id`.
+Tarkista lista ennen kuin rajaat sen N aloittavaan reseptiin.
+
+Aja `site/`-hakemistossa. Päivitä projektio, kun se puuttuu tai HEAD vaihtuu.
+
+```sh
+node --import tsx scripts/recipe-state-cli.ts
+node --import tsx scripts/gk-research-queue.ts 10 idli-sambar vhh-mansikkakakku
+```
+
+- `next` sisältää enintään N uutta tai uudelleen avattua tapausta annetussa
+  järjestyksessä. `counts.skip` laskee samalla sidonnalla ohitetut
+  uusintatutkimukset. Raportoi käsitellyt tapaukset vasta tutkimuksen jälkeen.
+- `priority` ohjaa turvallisuus- ja lähdevirheet korjausjonoon. `review`
+  vaatii sidonnan tai päätösnäytön käsintarkistuksen. Karanteenia tai
+  epäselvää alkuperäistä reseptiversiota ei hyväksytä tutkimusohitukseksi.
+- `approved` säilyttää julkisessa näkymässä olevan alkuperäisen numeerisen
+  arvion tai vaihteluvälin. Käytä muissa jo hyväksytyissä tuloksissa myös
+  nykyisiä hyväksyntärekistereitä, kuten tähän asti.
+- `skip` koskee vain saman GI/GK-lähdetutkimuksen toistamista. Se ei estä
+  hiilihydraatti-, annos- tai ainesosatiedon parantamista, turvallisuus-
+  korjausta eikä reseptin julkaisua nykyisten porttien mukaisesti.
+
+Kirjaa tarkistettu `NO_RELIABLE_GK` omaan haaraan
+[tutkimuspäätöksiin](glycemic-research-decisions.json). Rivi sitoo kanonisen
+ID:n nykyiseen alkuperäislähteeseen, valmistukseen ja reseptikohtaisiin
+laskenta- ja lähdetiivisteisiin. Kopioi nykyiset tiivisteet jonotarkistuksen
+`binding`-kentästä. Merkitse päätöspäivä, täsmällinen este sekä Gitissä oleva
+katselmointiviite, sen LF-normalisoitu SHA-256 ja kohta, joka yksilöi
+tarkistetut lähteet. Hyväksytyt GK- ja F25-aineistot säilyvät omissa
+rekistereissään. Vanhat HOLDit eivät siirry automaattisesti tutkimuspäätöksiksi.
+
+Reseptin olennainen muutos tai reseptiin sidotun laskenta- tai
+lähdeaineiston muutos avaa tutkimuksen uudelleen. Jos soveltuva uusi
+GI- tai koostumuslähde ei vielä ole laskentasyötteessä, tai on muu
+nimenomainen uudelleenkatselmointipäätös, lisää vanhalle riville `reopen`.
+Käytä tyyppiä `applicable-gi`, `applicable-composition` tai
+`documented-review`. Kirjaa perustelu ja uusi, varmennettava Git-viite
+tiivisteineen. Kirjaa lopputulos katselmoinnin jälkeen ja poista käsitelty
+`reopen` samalla. Kielteinen tulos saa päivitetyn päätösrivin ja vanha
+versio jää Git-historiaan. Hyväksyttävä tulos kulkee nykyisten
+hyväksyntäporttien kautta. Ajan kuluminen yksin ei avaa tutkimusta.
+
+Ohitukset säilyvät Git-commitissa. Keskeytyksestä jatkettaessa käytä
+omistetun haaran viimeistä tarkistettua commitia, luo tarvittaessa
+reseptitilaprojektio uudelleen ja tarkista sama jono.

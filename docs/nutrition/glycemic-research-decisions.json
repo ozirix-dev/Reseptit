@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "decisions": [
+    {
+      "canonicalRecipeId": "idli-sambar",
+      "sourceRecipeId": "idli-sambar",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "recipeSha256": "8044f83452e864eafd1089e8642bd872193215b64fb0c93963dc88760fbf8486",
+      "calculationInputSha256": "f485628440e78c2e9a4368c953047e2c900c57b1f45374f833f963abaa4847cf",
+      "calculationEvidenceSha256": "8f7af67a45bff905b051c7029aee13610c23607ecc0d853482e20844c355901e",
+      "reviewedAt": "2026-11-18",
+      "reason": "GI 62,45:n vertailu käyttää riisin ja uradin suhdetta 3:1 ja 8 tunnin liotusta. Kotireseptin suhde on 2,5:1 ja liotus 4 tuntia. Kuivapanoksen hiilihydraatin säilymistä liotuksessa ja fermentoinnissa sekä kasvisten lähdevastaavuutta ei ole osoitettu.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/gk100-original-recipe-audit-2026-11-05.json",
+          "sha256": "590634387ec90dd3f5eeace66f4200ae835273becd59d7bd4aa660f34d095dff",
+          "locator": "recipeId=idli-sambar: GI 62,45, originalPath, originalSha256, giApplicabilityFinding"
+        }
+      ]
+    },
+    {
+      "canonicalRecipeId": "vhh-mansikkakakku",
+      "sourceRecipeId": "vhh-mansikkakakku",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "recipeSha256": "17d5a611961a764f2a3dba58bee9e79ebe63238955b5000aaec56d18085493ea",
+      "calculationInputSha256": "d1f5d5df763189ac7d0fdcd8a8b2ab63a0b539e1fe46a7045c9076ba7ebd7fde",
+      "calculationEvidenceSha256": "319ad604da829502e51706615c54dc0374f9f3992dd2102709b0bf4e889a0255",
+      "reviewedAt": "2026-11-18",
+      "reason": "Mansikan, kuohukerman ja maitorahkan ryhmä-GI:n soveltuvuutta ei osoitettu. AFCD F008952:n mukaan mansikkaa vastaava 1,4 g imeytyvää hiilihydraattia annoksessa ylittää yksittäisen poisjätön rajan. Vuoden 2002 julkaisematon mansikkahavainto ei ratkaise estettä; vaniljauutteen tuotekoostumus jää erikseen avoimeksi.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/gk-original-batch02-research-findings.md",
+          "sha256": "ed5f9054df4aa03cdfaedf5bcfc9056158c8083d75986637d6a15b3505b1ea63",
+          "locator": "VHH-mansikkakakun alkuperäisohje: AFCD F008952, Atkinson 2002, #292, CNF 216"
+        }
+      ]
+    }
+  ]
+}

@@ -28,6 +28,8 @@ interface GlycemicReport {
   results: Pick<GlycemicLoadResult, "recipeId" | "status" | "blockers">[];
   newPublicGkPendingSources: { recipeId: string; sourceBlobSha: string; reason: string }[];
   sourceHashes: Record<string, string>;
+  calculationInputHashes: Record<string, string>;
+  calculationEvidenceHashes: Record<string, string>;
   recipeBindingMismatches: string[];
   calculationInputMismatches: string[];
   calculationEvidenceMismatches: string[];
