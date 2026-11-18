@@ -11,7 +11,7 @@ import { f25SourceGatePreflight } from "../scripts/f25-source-release-gate";
 import { publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
 import { applyReviewedGramListSpacing } from "../scripts/public-recipe-copy-r2";
 import { projectEggWeightReferences } from "../scripts/public-ingredient-list";
-import { git, matchesReviewedReleasePresentation, onlyCookingMethodMetadataChanged, readRecipeStateInputs, recipePresentationDifferences, repoRoot, verifiedFiEggPresentationWeights, type RecipeStateInputs } from "../scripts/recipe-state-inputs";
+import { git, matchesReviewedReleasePresentation, onlyCookingMethodMetadataChanged, readRecipeStateInputs, recipePresentationDifferences, repoRoot, reviewedReleasePresentation, verifiedFiEggPresentationWeights, type RecipeStateInputs } from "../scripts/recipe-state-inputs";
 import { projectRecipeState } from "../scripts/recipe-state";
 import { buildRegistry, contentHash } from "../scripts/translation-review";
 
@@ -248,11 +248,22 @@ test("current release pins distinguish historical source differences from open p
     assert.equal(yangzhouStatus.historicalSourceBindingDifference, undefined);
   }
 
-  const pork = withId("uuniporsas-kermakastikkeessa-vhh").glycemicLoadStatus;
+  const porkId = "uuniporsas-kermakastikkeessa-vhh";
+  const pork = withId(porkId).glycemicLoadStatus;
+  const porkRecipe = inputs.publicRecipes.find(row => row.recipeId === porkId && row.locale === "fi")!;
   assert.ok(pork.verifiedRawGkRelease);
-  assert.deepEqual(pork.releasePresentationDifferences, ["preparation", "notes"]);
-  assert.ok(pork.bindingDifferences.includes("source"));
-  assert.equal(pork.historicalSourceBindingDifference, undefined);
+  if (porkRecipe.instructionsHtml.includes("Jaa kaikki liha ja kastike kuuteen yhtä suureen annokseen.")) {
+    assert.equal(pork.historicalSourceBindingDifference, true);
+    assert.equal(pork.releasePresentationDifferences, undefined);
+  } else {
+    assert.deepEqual(pork.releasePresentationDifferences, ["preparation", "notes"]);
+    assert.ok(pork.bindingDifferences.includes("source"));
+    assert.equal(pork.historicalSourceBindingDifference, undefined);
+  }
+  const nasi = withId("indonesialainen-nasi-uduk-aamiaisella").glycemicLoadStatus;
+  assert.ok(nasi.releasePresentationDifferences?.includes("effective-source"));
+  assert.ok(nasi.releasePresentationDifferences?.includes("preparation"));
+  assert.ok(nasi.bindingDifferences.includes("source"));
 
   const id = "koshari";
   const unverified = projectRecipeState(commit, { ...inputs, originalReleasePresentationDifferences: new Map() });
@@ -281,6 +292,32 @@ test("current release pins distinguish historical source differences from open p
     ...inputs.glycemic, originalReleaseBindings: undefined,
   } });
   assert.ok(oldReport.recipes.find(row => row.sourceRecipeId === id)?.glycemicLoadStatus.bindingDifferences.includes("source"));
+});
+
+test("verified batch preparation and notes are accepted only as the exact reviewed presentation", async () => {
+  const id = "munakokkeli";
+  const row = withId(id);
+  const receipt = row.glycemicLoadStatus.verifiedRawGkRelease!;
+  const recipe = inputs.publicRecipes.find(candidate => candidate.recipeId === id && candidate.locale === "fi")!;
+  const source = await readFile(path.join(repoRoot, row.sourcePath), "utf8");
+  const evidence = contentHash(await readFile(path.join(repoRoot, receipt.evidencePath), "utf8"));
+  const proof = reviewedReleasePresentation(row.sourcePath, receipt.evidencePath, evidence, contentHash(source))?.[2];
+  assert.ok(proof);
+  const exact = await recipePresentationDifferences(id, source, recipe, proof);
+  assert.ok(exact && !exact.includes("preparation") && !exact.includes("notes"));
+  const wrongEvidence = reviewedReleasePresentation(row.sourcePath, receipt.evidencePath, "0".repeat(64), contentHash(source));
+  assert.equal(wrongEvidence, undefined);
+
+  const updated = [
+    { ...recipe, notesHtml: recipe.notesHtml + "<p>Leave the cooking fat behind.</p>" },
+    { ...recipe, instructionsHtml: recipe.instructionsHtml + "<p>Discard the egg.</p>" },
+    { ...recipe, instructionStepsHtml: ["Discard the egg."] },
+    { ...recipe, ingredientPreparation: ["Discard the butter."] },
+  ];
+  for (const [index, altered] of updated.entries()) {
+    const differences = await recipePresentationDifferences(id, source, altered, proof);
+    assert.ok(differences?.includes(index === 0 ? "notes" : "preparation"));
+  }
 });
 
 test("draft translations and stale pair reviews stay distinct from publication", () => {

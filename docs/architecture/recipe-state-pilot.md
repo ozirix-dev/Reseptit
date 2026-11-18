@@ -55,8 +55,8 @@ alkuperäisen poikkeaman. Ohjeen vertailu hyväksyy katselmoidun
 pilkkuvälin lisäyksen grammoina ilmoitettujen ainesmäärien luetteloon,
 kun molemmat näkyvät valmistusohjeet täsmäävät sen jälkeen.
 Pelkkä `cooking_method`-luokituksen muutos sallitaan, jos muu
-lähdesisältö ja näkyvä valmistus täsmäävät. Seitsemälle aiemmin
-katselmoidulle FI-esityskorjaukselle vertailu käyttää korjattua versiota,
+lähdesisältö ja näkyvä valmistus täsmäävät. Katselmoidulle
+FI-esityskorjaukselle vertailu käyttää korjattua versiota,
 kun sekä koko esitysversio että alkuperäinen julkaisutodiste vastaavat
 kirjattuja SHA-256-tiivisteitä. Annosjako, ainekset, molemmat
 valmistusohjeen esitystavat ja muistiinpanot tarkistetaan myös näille.
@@ -65,6 +65,18 @@ vain, jos näkyvässä ainesrivissä näkyy myös sama kuoreton kokonaispaino.
 Tällöin valmistuksen viittaus samaan ainesriviin vastaa grammoina annettua
 ohjetta. Muut ainekset, erilliset valmistustoimet ja muistiinpanot
 tarkistetaan edelleen.
+
+Kahdeksassa release-4-reseptissä myös annosjakoa ja syötävän erän
+säilyttämistä koskevat ohjeet sekä laskentaoletukset muistiinpanoissa
+on sidottu alkuperäiseen julkaisupakettiin ja näkyvän valmistusosion
+tiivisteeseen. Muffineissa ja tonnikalamunakkaissa kolme annosta
+vastaa kahta kappaletta annosta kohti. Avokadomunissa jaetaan myös
+koverrettu hedelmäliha ja erikseen kypsennetty muna. Porsaan ja
+lihamurekkeen annosjako sisältää kastikkeen tai paistonesteen.
+Nasi uduk pysyy käsintarkistuksessa. Vertailussa käytetty jasmiiniriisin
+GI-lähde ei varmista ehdollisen lisäveden ja kannellisen kypsennyksen
+vastaavuutta mitattuun valmistukseen.
+
 Muuttunut julkaistu ohje, puuttuva varmennus sekä
 laskentasyötteen ja lähdeaineiston erot
 kuuluvat `bindingDifferences`-kenttään. Kun alkuperäinen julkaisulähde

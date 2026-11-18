@@ -49,7 +49,8 @@ type ReleasePresentationDifference = "effective-source" | "servings" | "ingredie
 
 // These published FI overlays were already reviewed against their sealed GK serving scope.
 // The pins are used for queue diagnostics only, after verifying the original raw release.
-const reviewedReleasePresentations = new Map([
+type ReviewedReleasePresentation = readonly [pack: string, sourceSha: string, servingSha?: string];
+const reviewedReleasePresentations = new Map<string, ReviewedReleasePresentation>([
   // gk80-fi-editorial-display-pilot: dry rice, chicken and retained broth in two portions.
   ["reseptit/aamupalat/vietnamilainen-chao-ga-kanapuuro.md", ["gk80-release-1",
     "2468c93fa4f1391f327a366775895a12a7868a0326f768123c30460470ca0620"]],
@@ -66,24 +67,67 @@ const reviewedReleasePresentations = new Map([
     "42563d373a73be18c8c85548c9c11090ba51c3efa0c221afd8df65c5117ef8a0"]],
   ["reseptit/aamupalat/pohjoisafrikkalainen-harissa-shakshuka.md", ["gk80-release-6",
     "049f9f2af7e74c36efce86a08cff98cc0fff649d66d8242327402c898c7d2b06"]],
+  // Release-4 preparation and serving checks retain the complete weighed batch.
+  // six equal cups, all bacon fat and two muffins per serving.
+  ["reseptit/aamupalat/munakasmuffinit.md", ["gk80-release-4",
+    "65afd469eca8f049e276edf3b51e8ffac1199c4bc5da7721079b07e19f85b5bd",
+    "dad60a3ab8b912a76c763a312193ce828daaab3e25c6187fdf5b52303622e518"]],
+  // two servings using the listed butter.
+  ["reseptit/aamupalat/munakokkeli.md", ["gk80-release-4",
+    "73b70be874882bb17388243182623522ee3411596115ec0443f9fe8bc87e2420",
+    "32a44096d3fcb3cf41390afdb2c3188ca765a54619260feb93533c6eb55730fc"]],
+  // two servings, 10 g of rapeseed oil included in the estimate.
+  ["reseptit/aamupalat/thai-kai-jiao-yrteilla.md", ["gk80-release-4",
+    "eeb0a0f1144002bebf46019403e5a2632217c16479cbfc01a482d5b9936c613e",
+    "42c9e18a0689555d396df8e6fe6fa540fee70b44cf53252dd468f20af725006b"]],
+  // six equal cups, drained tuna and two omelettes per serving.
+  ["reseptit/aamupalat/tonnikalamunakkaat-uunissa.md", ["gk80-release-4",
+    "4d4146f05c46dd4a3fbc95549eac4e6309c85d11028bc406dba489edb1683a61",
+    "4683b9ea7e43192f421c5855e5b3197e49c91978abb1fed0dede6c18c8799a01"]],
+  // all edible avocado and eggs in two equal servings.
+  ["reseptit/aamupalat/uunimuna-avokadot.md", ["gk80-release-4",
+    "56f5467028835328447e427fb0d226314180b920101205d88c4a2e3297f07546",
+    "be090da8d4fcf18fffd774a149f02fd78c75dd1bac30cc28dc5ab73d2af37b5a"]],
+  // two ramekins using the listed butter.
+  ["reseptit/aamupalat/uunimunat-pinaatilla.md", ["gk80-release-4",
+    "f9a686ffdb677d17ebeda6c06f90dd04734d8d0c2a544194ade2ab251d754ff6",
+    "d3f5d63a25c5da04a766205bb2e04cbe6fec6394e03ea367da7dd7b59d0745c7"]],
+  // six equal servings of all the pork and pan sauce.
+  ["reseptit/paaruoat/uuniporsas-kermakastikkeessa-vhh.md", ["gk80-release-4",
+    "540781106356ae605314d1fc849ea40277ba0da7db6afef4effd6fbb9ef43293",
+    "a05e466256c885c0ae34e930b647e51a9a0ddca7f41979551568f90d21c6d160"]],
+  // unpressed zucchini and six equal servings including all the cooking juices.
+  ["reseptit/paaruoat/vhh-lihamureke.md", ["gk80-release-4",
+    "4f759af39411b2253278348fd02abb4710a8d4fd6c2b67b463db7dcebc1ae4d7",
+    "281cfedc780b515ff3cc7b0407dbff80c4c68929347f0d58d99d55781a6a0959"]],
   // FI breakfast quality overlay: four cold portions as in the sealed calculation.
   ["reseptit/aamupalat/yrttituorejuusto-kinkkurullat.md", ["gk80-release-2",
     "843ec4e3120c3d15cc03f9d6046345c5d5bd8a0dc60f5a579764cd6dca91b537"]],
 ]);
 
 const reviewedGoldenHashes = new Map([
+  ["docs/nutrition/gk80-release-4/golden.json", "11c689fd455dbe5a8164261c23fa5cf4cf401ec540f415595acea9b9423dc831"],
   ["docs/nutrition/gk80-release-6/golden.json", "b3f8cf53f6421133b4dd73b8b1e8846f76a57dc7e368a541a3cb228315b77483"],
   ["docs/nutrition/gk80-release-1/golden.json", "e3d3bdff7371ea597ec793e2b170ffbf89566e5053fc0ba21f80bbf68fbd9b32"],
   ["docs/nutrition/gk80-release-2/golden.json", "e460c7754833adbf7672bd1070910be85b98cd0dd342e526f590abdae0ac808d"],
   ["docs/nutrition/gk80-release-3/golden.json", "0165778d3eb2bd2924930ff80c96a1740ec2bc71df3eb66e73ddd7a9d4b67247"],
 ]);
 
-export function matchesReviewedReleasePresentation(
+export function reviewedReleasePresentation(
   sourcePath: string, evidencePath: string, evidenceHash: string | undefined, effectiveHash: string,
 ) {
   const reviewed = reviewedReleasePresentations.get(sourcePath);
-  return reviewed !== undefined && evidencePath === `docs/nutrition/${reviewed[0]}/golden.json` &&
-    evidenceHash !== undefined && evidenceHash === reviewedGoldenHashes.get(evidencePath) && effectiveHash === reviewed[1];
+  if (reviewed && evidencePath === `docs/nutrition/${reviewed[0]}/golden.json` &&
+      evidenceHash !== undefined && evidenceHash === reviewedGoldenHashes.get(evidencePath) && effectiveHash === reviewed[1]) {
+    return reviewed;
+  }
+  return undefined;
+}
+
+export function matchesReviewedReleasePresentation(
+  sourcePath: string, evidencePath: string, evidenceHash: string | undefined, effectiveHash: string,
+) {
+  return reviewedReleasePresentation(sourcePath, evidencePath, evidenceHash, effectiveHash) !== undefined;
 }
 
 export function onlyCookingMethodMetadataChanged(raw: string, projected: string) {
@@ -128,7 +172,9 @@ export function verifiedFiEggPresentationWeights(
     row.eggSingular === expected[index].eggSingular) ? weights : [];
 }
 
-export async function recipePresentationDifferences(id: string, markdown: string, current: RecipeEntry) {
+export async function recipePresentationDifferences(
+  id: string, markdown: string, current: RecipeEntry, reviewedServingSha?: string,
+) {
   const differences: ReleasePresentationDifference[] = [];
   const parsed = parseMarkdown(markdown);
   if (!parsed) return null;
@@ -147,9 +193,13 @@ export async function recipePresentationDifferences(id: string, markdown: string
         !isDeepStrictEqual(ingredients.map(ingredientScope), kitchen.map(ingredientScope))))) {
     differences.push("ingredients");
   }
-  if (current.ingredientPreparation?.length || instructionsHtml !== current.instructionsHtml ||
-      !isDeepStrictEqual(steps, current.instructionStepsHtml)) differences.push("preparation");
-  if (notesHtml !== current.notesHtml) differences.push("notes");
+  const matchesReviewedServing = reviewedServingSha !== undefined && !current.ingredientPreparation?.length &&
+    contentHash(JSON.stringify([current.instructionsHtml, current.instructionStepsHtml ?? null, current.notesHtml])) === reviewedServingSha;
+  if (!matchesReviewedServing) {
+    if (current.ingredientPreparation?.length || instructionsHtml !== current.instructionsHtml ||
+        !isDeepStrictEqual(steps, current.instructionStepsHtml)) differences.push("preparation");
+    if (notesHtml !== current.notesHtml) differences.push("notes");
+  }
   return differences;
 }
 
@@ -195,19 +245,16 @@ export async function readRecipeStateInputs(sourceCommit: string) {
       const markdown = (await readFile(path.join(repoRoot, source.file), "utf8")).replaceAll("\r\n", "\n");
       if (contentHash(markdown) !== source.hash) return null;
       const differences: ReleasePresentationDifference[] = [];
-      let presentation = markdown;
-      if (source.effectiveHash !== source.hash) {
-        const projected = projectPublishedMarkdown(source.file, markdown);
-        const projectedHash = contentHash(projected);
-        if (projectedHash === source.effectiveHash &&
-            matchesReviewedReleasePresentation(source.file, binding.evidencePath,
-              goldenHashes.get(binding.evidencePath), projectedHash)) {
-          presentation = projected;
-        } else if (projectedHash !== source.effectiveHash || !onlyCookingMethodMetadataChanged(markdown, projected)) {
-          differences.push("effective-source");
-        }
+      const projected = source.effectiveHash === source.hash ? markdown : projectPublishedMarkdown(source.file, markdown);
+      const projectedHash = contentHash(projected);
+      const reviewed = projectedHash === source.effectiveHash ? reviewedReleasePresentation(
+        source.file, binding.evidencePath, goldenHashes.get(binding.evidencePath), projectedHash) : undefined;
+      if (source.effectiveHash !== source.hash && !reviewed &&
+          (projectedHash !== source.effectiveHash || !onlyCookingMethodMetadataChanged(markdown, projected))) {
+        differences.push("effective-source");
       }
-      const renderedDifferences = await recipePresentationDifferences(id, presentation, current);
+      const renderedDifferences = await recipePresentationDifferences(
+        id, reviewed ? projected : markdown, current, reviewed?.[2]);
       if (!renderedDifferences) return null;
       differences.push(...renderedDifferences);
       return [id, differences] as const;
