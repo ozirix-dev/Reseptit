@@ -1,6 +1,6 @@
 import { recipeSeoDescriptions } from "./recipe-seo-descriptions";
 import { applyCopyEdits, reviewedRecipeCopy, reviewedImageNote } from "./public-recipe-copy-r2";
-import { projectPublicRecipeMethodCopy, publicIngredientNote, publicRecipeDescription, publicRecipeTitle } from "./public-recipe-copy";
+import { projectPublicRecipeMethodCopy, publicIngredientNote, publicRecipeDescription, publicRecipeTitle, reviewedPublicCookingMethod } from "./public-recipe-copy";
 import { projectEggMethod, projectIngredientList } from "./public-ingredient-list";
 import { siteTarget } from "../src/content/site-target";
 import { recipeDifficultyLabel } from "../src/features/recipes/recipe-i18n";
@@ -319,9 +319,11 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     const editorialDescription = copy?.description
       ?? (copy?.useSeoDescription ? seoDescription : undefined)
       ?? publicRecipeDescription(data.recipe_id, data.url_slug, data.language);
+    const publicCookingMethod = reviewedPublicCookingMethod(data.recipe_id, data.cooking_method);
     recipes.push({
       kind: "recipe", recipeId: data.recipe_id, slug: data.url_slug, locale: data.language,
       title: copy?.title ?? publicRecipeTitle(data.recipe_id, data.language, data.title), category: data.category, ...(data.additional_categories?.length ? { additionalCategories: data.additional_categories } : {}), dietClass: data.diet_class ?? null, ...(dietTags.length ? { dietTags } : {}), ...(data.gluten_free === true ? { glutenFree: true } : {}), routePath: routeForRecipe(data.language, data.url_slug),
+      ...(publicCookingMethod ? { cookingMethod: publicCookingMethod } : {}),
       description: recipeDescription(publicMarkdown, descriptionSection, data.language, data.ingredients, {
         hold: visibleHold?.description, editorial: editorialDescription, fallback: seoDescription,
       }),

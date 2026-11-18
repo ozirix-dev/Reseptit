@@ -793,6 +793,49 @@ const flourNote: Record<RecipeLocale, string> = {
   th: "หากแป้งสำหรับรีด 20 กรัมไม่พอ ต้องทดลองอบเพื่อยืนยันปริมาณที่ต้องใช้",
 };
 
+const gazpachoBreadScope: Readonly<Record<RecipeLocale, { before: string; after: string; note: string }>> = {
+  fi: { before: "Lisää halutessasi leipä.", after: "Leipä on valinnainen. Näytetyt ravintoarvot on laskettu leivän sisältävälle neljän annoksen peruserälle.", note: "Ilmoitetut ravintoarvot sisältävät koko neljän annoksen peruserän kaksi vaalean leivän viipaletta (yhteensä 50 g). Jos jätät leivän pois, näytetyt hiilihydraattimäärät ja mahdollinen GK-arvio eivät sellaisinaan kuvaa leivätöntä annosta." },
+  en: { before: "Add bread if you want.", after: "Add bread if you wish. The displayed nutrition figures are calculated for the four-serving batch with bread included.", note: "The displayed nutrition figures include two slices of white bread (50 g total) in the original four-serving batch. If you omit the bread, the shown carbohydrate values and any glycemic load estimate do not directly describe the bread-free serving." },
+  sv: { before: "Lägg till bröd om du vill.", after: "Tillsätt bröd om du vill. De visade näringsvärdena har beräknats för en sats på fyra portioner där brödet ingår.", note: "De visade näringsvärdena omfattar två skivor vitt bröd (sammanlagt 50 g) i grundsatsen på fyra portioner. Utan bröd gäller de angivna kolhydratvärdena och en eventuell uppskattning av glykemisk belastning inte direkt för portionen." },
+  th: { before: "เพิ่มขนมปังถ้าคุณต้องการ", after: "จะใส่ขนมปังหรือไม่ก็ได้ แต่ข้อมูลโภชนาการที่แสดงคำนวณจากสูตรพื้นฐานสำหรับ 4 ที่ซึ่งใส่ขนมปัง", note: "ข้อมูลโภชนาการที่แสดงรวมขนมปังขาว 2 แผ่น (รวม 50 กรัม) สำหรับสูตรพื้นฐาน 4 ที่ หากไม่ใส่ขนมปัง ปริมาณคาร์โบไฮเดรตและค่าประมาณภาระน้ำตาลที่อาจแสดงอยู่จะไม่ใช่ค่าของสูตรที่ไม่ใส่ขนมปังโดยตรง" },
+};
+
+// Gulab jamun: distinguish the frying oil supply from the estimated oil retained
+// in the nutrition calculation. Do not modify nutrition/GK-sealed source files.
+const gulabJamunOilScope: Readonly<Record<RecipeLocale, { before: string; after: string; note: string }>> = {
+  fi: { before: "Kuumenna öljy miedolle lämmölle.", after: "Varaa alkuperäisen neljän annoksen erän friteeraukseen noin litra öljyä ja kuumenna se varovasti miedolle lämmölle. Alkuperäisen neljän annoksen erän ravintoarviossa 30 g on öljyn arvioitu imeytymismäärä, ei friteerausastian öljymäärä.", note: "Ravintoarvio olettaa alkuperäisen neljän annoksen erän imevän yhteensä 30 g öljyä. Se on arvio, ei mitattu imeytymä. Noin litra on friteeraukseen käytettävä öljymäärä, josta ylimääräinen valutetaan pois; toteutunut imeytymä voi poiketa arviosta." },
+  en: { before: "Heat the oil gently.", after: "For the original four-serving batch, use about 1 litre of oil for deep-frying and heat it gently over low heat. For the original four-serving batch, the 30 g in the nutrition estimate is the assumed total oil absorption, not the amount of oil to put in the pan.", note: "For the original four-serving batch, the nutrition estimate assumes 30 g of oil is absorbed in total. This is an estimate, not a measured absorption. About 1 litre of oil is used for deep-frying, with excess oil drained off; actual absorption may differ." },
+  sv: { before: "Värm oljan försiktigt.", after: "Använd cirka 1 liter olja för friteringen av grundsatsen på fyra portioner och värm den försiktigt på låg värme. För grundsatsen på fyra portioner är 30 g olja ett uppskattat totalt upptag i näringsberäkningen, inte den mängd som ska hällas i kastrullen.", note: "Näringsvärdet för grundsatsen på fyra portioner bygger på ett uppskattat totalt oljeupptag på 30 g. Det är en uppskattning, inte en uppmätt mängd. Cirka 1 liter används vid friteringen och överflödig olja får rinna av; den verkliga upptagningen kan avvika." },
+  th: { before: "ตั้งน้ำมันให้ร้อนด้วยไฟอ่อน", after: "สำหรับสูตรพื้นฐาน 4 ที่ เตรียมน้ำมันประมาณ 1 ลิตรสำหรับทอดแบบน้ำมันท่วม แล้วค่อย ๆ อุ่นด้วยไฟอ่อน น้ำมัน 30 กรัมเป็นค่าประมาณที่ขนมสูตรพื้นฐาน 4 ที่ดูดซึมรวมกัน ไม่ใช่ปริมาณน้ำมันที่ต้องเทลงหม้อทอด", note: "การประเมินโภชนาการของสูตรพื้นฐาน 4 ที่สมมติว่าขนมดูดซึมน้ำมันรวม 30 กรัม ตัวเลขนี้เป็นค่าประมาณ ไม่ใช่ผลการชั่งวัดจริง ใช้น้ำมันประมาณ 1 ลิตรสำหรับทอดและสะเด็ดน้ำมันส่วนเกิน ปริมาณที่ดูดซึมจริงอาจต่างจากค่าประมาณ" },
+};
+
+// #327 Tangyuan: the original recipe's litre is ginger broth, while separate
+// cooking water is drained. Sealed ingredients and historical GK evidence stay unchanged.
+const tangyuanCookingWaterScope: Readonly<Record<RecipeLocale, { before: string; after: string; note: string }>> = {
+  fi: { before: "Keitä riisipalloja erissä miedosti poreilevassa vedessä 5–6 minuuttia, kunnes ne nousevat pintaan. Nosta kulhoihin ja kaada päälle inkiväärilientä.", after: "Kiehauta toisessa kattilassa riittävästi tavallista vettä riisipallojen keittämiseen; tämä on erillistä vettä eikä ainesluettelossa inkivääriliemeen varattua vettä. Keitä riisipalloja erissä miedosti poreilevassa vedessä 5–6 minuuttia, kunnes ne nousevat pintaan. Nosta pallot reikäkauhalla kulhoihin, valuta erillinen keitinvesi pois ja kaada päälle inkiväärilientä.", note: "Alkuperäisen neljän annoksen perusohjeen ainesluettelon 1 litra vettä ja 60 g sokeria kuuluvat tarjottavaan inkivääriliemeen. Riisipallojen keittämiseen käytetään lisäksi tarvittava määrä tavallista vettä, joka valutetaan pois eikä ole osa liemen määrää. Tarjotun liemen syötyä osuutta ei ole erikseen mitattu." },
+  en: { before: "Cook the rice balls in batches in a separate pot of gently simmering water for 5–6 minutes, until they float. Lift into bowls and pour over the sweet ginger syrup.", after: "Bring enough plain water to a gentle simmer in a separate pot. This is additional cooking water, separate from the water reserved for ginger broth in the ingredient list. Cook the rice balls in batches for 5–6 minutes until they float, then lift them out with a slotted spoon. Drain off the separate cooking water, place the balls in bowls and pour over the sweet ginger broth.", note: "In the original four-serving batch, the listed 1 litre of water and 60 g of sugar are for the ginger broth served with the rice balls. Use additional plain water as needed to boil the balls separately; drain it away rather than count it as served broth. The amount of broth actually consumed has not been measured." },
+  sv: { before: "Koka risbollarna i omgångar i en separat kastrull med sjudande vatten i 5–6 minuter tills de flyter upp. Lägg dem i skålar och häll över den söta ingefärslagen.", after: "Koka upp tillräckligt med vanligt vatten i en separat kastrull och låt det sjuda. Det är extra kokvatten, skilt från vattnet som enligt ingredienslistan används till ingefärslagen. Koka risbollarna i omgångar i 5–6 minuter tills de flyter upp. Lyft upp dem med hålslev, låt det separata kokvattnet rinna av, lägg bollarna i skålar och häll över den söta ingefärslagen.", note: "I grundsatsen på fyra portioner används den angivna litern vatten och 60 g socker till ingefärslagen som serveras med risbollarna. Använd dessutom vanligt vatten för att koka bollarna separat och häll bort detta kokvatten. Hur mycket av lagen som faktiskt äts har inte mätts." },
+  th: { before: "ต้มลูกแป้งทีละชุดในหม้อน้ำอีกใบที่เดือดเบา ๆ ประมาณ 5–6 นาทีจนลอย ตักใส่ชามแล้วราดด้วยน้ำขิงหวาน", after: "ต้มน้ำเปล่าในหม้ออีกใบให้เดือดเบา ๆ โดยใช้น้ำมากพอสำหรับต้มลูกแป้ง น้ำส่วนนี้เป็นน้ำสำหรับต้มแยกต่างหาก ไม่ใช่น้ำที่ระบุไว้สำหรับทำน้ำขิงหวานในรายการส่วนผสม ต้มลูกแป้งทีละชุดประมาณ 5–6 นาทีจนลอย ใช้กระชอนตักขึ้น สะเด็ดน้ำต้มแยกทิ้ง ใส่ชามแล้วราดด้วยน้ำขิงหวาน", note: "น้ำ 1 ลิตรและน้ำตาล 60 กรัมในรายการส่วนผสมของสูตรพื้นฐาน 4 ที่ใช้ทำน้ำขิงหวานสำหรับเสิร์ฟ ต้องใช้น้ำเปล่าเพิ่มเติมสำหรับต้มลูกแป้งในหม้ออีกใบ แล้วสะเด็ดน้ำต้มส่วนนั้นทิ้ง ไม่รวมเป็นน้ำขิงหวานที่เสิร์ฟ ปริมาณน้ำขิงหวานที่กินจริงยังไม่ได้วัด" },
+};
+
+// #327: the natto bowl's historical source records paistaminen, but all four
+// reviewed preparation methods boil the rice and egg. Correct the *public*
+// recipe metadata and explanation without rewriting version-sealed sources.
+const nattoRiceCookingReview: Readonly<Record<RecipeLocale, { evidence: readonly string[]; note: string }>> = {
+  fi: { evidence: ["100 g kuivaa valkoista jasmiiniriisiä ja keitä se pakkauksen ohjeen mukaan", "Keitä munat"], note: "Valmistustapa: keittäminen. Ainesluettelon riisimäärä on kuivapaino. Riisi ja munat keitetään, ja maustamaton nattō lisätään valmiiseen kulhoon; mitään ei paisteta." },
+  en: { evidence: ["100 g of dry white jasmine rice and cook it according to the packet instructions", "Boil the eggs"], note: "Cooking method: boiling. The ingredient list gives the dry weight of the rice. The rice and eggs are boiled, then plain natto is added to the finished bowl; nothing is fried." },
+  sv: { evidence: ["100 g torrt vitt jasminris och koka det enligt förpackningens anvisningar", "Koka äggen"], note: "Tillagningssätt: kokning. Mängden ris i ingredienslistan avser torrvikt. Riset och äggen kokas, och naturell natto läggs i den färdiga skålen; ingenting steks." },
+  th: { evidence: ["ซาวข้าวหอมมะลิขาวดิบ 100 กรัม แล้วหุงตามวิธีบนบรรจุภัณฑ์", "ต้มไข่"], note: "วิธีปรุง: การต้ม ปริมาณข้าวในรายการส่วนผสมเป็นน้ำหนักข้าวดิบก่อนหุง ข้าวและไข่ต้มให้สุก แล้วใส่นัตโตะแบบไม่ปรุงรสในชาม ไม่ได้ทอดส่วนผสมใด" },
+};
+
+export function reviewedPublicCookingMethod(recipeId: string, rawMethod: readonly string[] | undefined): string[] | undefined {
+  if (recipeId !== "japanilainen-natto-riisikulho") return undefined;
+  if (JSON.stringify(rawMethod) !== JSON.stringify(["paistaminen"])) {
+    throw new Error("NATTO_COOKING_METHOD_SOURCE_DRIFT");
+  }
+  return ["keittäminen"];
+}
+
 export function projectPublicRecipeMethodCopy(
   id: string, locale: RecipeLocale, instructions: string, notes: string,
 ): { instructions: string; notes: string } {
@@ -810,6 +853,37 @@ export function projectPublicRecipeMethodCopy(
       if (id === "vhh-lihamureke") instructions = instructions.replace(eatInstruction[locale], "");
       notes = [notes, estimateNote[locale]].filter(Boolean).join("\n\n");
     }
+  }
+  if (id === "japanilainen-natto-riisikulho") {
+    const reviewed = nattoRiceCookingReview[locale];
+    if (!reviewed.evidence.every(part => instructions.includes(part))) {
+      throw new Error("NATTO_COOKING_METHOD_TEXT_DRIFT: " + locale);
+    }
+    notes = [notes, "- " + reviewed.note].filter(Boolean).join("\n");
+  }
+  if (id === "tangyuan") {
+    const scope = tangyuanCookingWaterScope[locale];
+    if (instructions.split(scope.before).length !== 2) {
+      throw new Error("TANGYUAN_COOKING_WATER_SOURCE_DRIFT: " + locale);
+    }
+    instructions = instructions.replace(scope.before, scope.after);
+    notes = [notes, "- " + scope.note].filter(Boolean).join("\n");
+  }
+  if (id === "gulab-jamun") {
+    const scope = gulabJamunOilScope[locale];
+    if (instructions.split(scope.before).length !== 2) {
+      throw new Error("GULAB_JAMUN_OIL_SCOPE_SOURCE_DRIFT: " + locale);
+    }
+    instructions = instructions.replace(scope.before, scope.after);
+    notes = [notes, "- " + scope.note].filter(Boolean).join("\n");
+  }
+  if (id === "gazpacho") {
+    const scope = gazpachoBreadScope[locale];
+    if (instructions.split(scope.before).length !== 2) {
+      throw new Error("GAZPACHO_BREAD_SCOPE_SOURCE_DRIFT: " + locale);
+    }
+    instructions = instructions.replace(scope.before, scope.after);
+    notes = [notes, "- " + scope.note].filter(Boolean).join("\n");
   }
   if (id === "karjalanpiirakat-riisipuurolla") {
     if (locale === "fi") {

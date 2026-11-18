@@ -10,6 +10,9 @@ export function recipeJsonLd(recipe: RecipeEntry): Record<string, unknown> {
   return {
     "@context": "https://schema.org", "@type": "Recipe", name: recipe.title,
     description: recipe.description || undefined, inLanguage: recipe.locale, recipeCategory: recipe.category,
+    ...(recipe.cookingMethod?.includes("keittäminen")
+      ? { cookingMethod: { fi: "Keittäminen", en: "Boiling", sv: "Kokning", th: "การต้ม" }[recipe.locale] }
+      : {}),
     keywords: recipe.tags.length ? recipe.tags.join(", ") : undefined,
     ...(recipe.image ? { image: [recipe.image.src] } : {}),
     recipeYield: String(recipe.servings),

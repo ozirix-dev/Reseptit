@@ -53,6 +53,8 @@ export interface RecipeEntry {
   locale: RecipeLocale;
   title: string;
   category: RecipeCategoryName;
+  /** Version-reviewed public cooking method, only present for exact source-bound corrections. */
+  cookingMethod?: string[];
   /** Additional browsing categories inherited from the Finnish source. */
   additionalCategories?: RecipeCategoryName[];
   dietClass: RecipeDietClass | null;

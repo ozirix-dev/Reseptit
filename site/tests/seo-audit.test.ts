@@ -28,6 +28,24 @@ test("all generated routes, images, sitemap and metadata match published source"
   assert.deepEqual(report.findings, []);
   assert.equal(report.routes, Object.keys(contentManifest).length);
 });
+test("natto cookingMethod is independently checked against public notes in FI/EN/SV/TH", async () => {
+  const pages = expectedPages(siteContent.recipes);
+  const methods = { fi: "Keittäminen", en: "Boiling", sv: "Kokning", th: "การต้ม" } as const;
+  for (const [locale, label] of Object.entries(methods)) {
+    const page = pages.find(item => item.recipe?.recipeId === "japanilainen-natto-riisikulho" && item.locale === locale);
+    assert.ok(page?.recipe, locale + ": published review page");
+    const html = await readFile(path.join(dist, page.route.slice(1), "index.html"), "utf8");
+    assert.deepEqual(inspectPage(html, page), [], locale + ": approved method must survive SEO audit");
+    const correct = '"cookingMethod":"' + label + '"';
+    assert.ok(html.includes(correct), locale + ": localized JSON-LD method present");
+    assert.ok(inspectPage(html.replace(correct, '"cookingMethod":"Frying"'), page)
+      .some(item => item.code === "JSONLD_SOURCE"), locale + ": unsupported metadata is rejected");
+    const unreviewed = { ...page, recipe: { ...page.recipe, notesHtml: "" } };
+    assert.ok(inspectPage(html, unreviewed).some(item => item.code === "COOKING_METHOD_SOURCE"),
+      locale + ": method cannot be claimed without visible supporting review notes");
+  }
+});
+
 test("all indexable content templates use distinct descriptions and Recipavo titles", () => {
   const pages = expectedPages(siteContent.recipes);
   const descriptions = new Map<string, string>();
