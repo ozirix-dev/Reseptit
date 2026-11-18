@@ -875,7 +875,8 @@ test("a fresh egg pasta reference estimate stays scoped to the uncooked ingredie
   assert.match(html, /data-ingredient-portion=/);
   assert.match(html, /Tuore kananmunafettuccine ennen keittämistä/);
   assert.match(html, /Luku koskee tuoretta kananmunapastaa/);
-  assert.match(html, /Koko annoksen arvioon tarvitaan pastan ja parsan painot kypsennyksen ja valutuksen jälkeen/);
+  assert.match(html, /valutetun pastan ja lautaselle päätyvän kypsän parsan painot ja niitä vastaavat koostumustiedot/);
+  assert.match(html, /paljonko parsan keitinvettä päätyy annokseen, ja punnitse sitruunankuoriraaste/);
   assert.match(html, /href="https:\/\/fineli\.fi\/fineli\/fi\/elintarvikkeet\/31256"/);
   assert.match(html, /href="https:\/\/fineli\.fi\/fineli\/fi\/elintarvikkeet\/31257"/);
   assert.doesNotMatch(html, /data-portion-carbohydrate=|data-portion-gk=/);
