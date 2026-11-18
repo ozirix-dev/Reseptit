@@ -558,7 +558,9 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       assert.equal(await page.locator("html").getAttribute("lang"), recipe.locale);
       assert.equal(await page.locator(".recipe-languages a").count(), 4);
       assert.equal(await page.locator(".ingredient-list li").count(), 14);
-      assert.equal(await page.getByRole("button", { name: toolUi[recipe.locale as "en" | "sv" | "th"].print }).count(), 1);
+      const print = page.getByRole("button", { name: toolUi[recipe.locale as "en" | "sv" | "th"].print });
+      await print.waitFor();
+      assert.equal(await print.count(), 1);
       await page.getByRole("checkbox").first().check();
       assert.equal(await page.getByRole("checkbox").first().isChecked(), true);
       const increase = page.getByRole("button", { name: recipe.increase, exact: true });
