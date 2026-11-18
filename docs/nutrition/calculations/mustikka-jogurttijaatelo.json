@@ -23,8 +23,8 @@
         "carbohydrateDefinition": "EU_AVAILABLE",
         "per100g": {
           "carbohydrate": 4.298,
-          "fibre": 0,
-          "polyols": 0,
+          "fibre": 0.0,
+          "polyols": 0.0,
           "protein": 3.98,
           "fat": 10.047
         },
@@ -82,10 +82,10 @@
         "carbohydrateDefinition": "EU_AVAILABLE",
         "per100g": {
           "carbohydrate": 80.8,
-          "fibre": 0,
+          "fibre": 0.0,
           "polyols": null,
           "protein": 0.5,
-          "fat": 0
+          "fat": 0.0
         },
         "polyolsSourceVerified": false
       },
@@ -101,26 +101,25 @@
       "unit": "g",
       "item": "vaniljauutetta",
       "record": {
-        "id": "afcd-F009350-release-3",
-        "name": "Vanilla bean extract",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009350",
-        "retrievedAt": "2026-11-18",
-        "licence": "Food Standards Australia New Zealand, Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+        "id": "usda-173471",
+        "name": "Vanilla extract",
+        "sourceUrl": "https://fdc.nal.usda.gov/food-details/173471/nutrients",
+        "retrievedAt": "2026-11-15",
+        "licence": "USDA FoodData Central SR Legacy, public domain",
+        "state": "vanilla extract as sold",
         "basis": "per100g-as-sold",
-        "carbohydrateDefinition": "EU_AVAILABLE",
-        "polyolsSourceVerified": false,
-        "polyolsEvidence": "Direct available carbohydrate without sugar alcohols from AFCD Release 3. Separate mannitol, sorbitol and glycerol cells are empty, so the aggregate is unverified.",
+        "carbohydrateDefinition": "US_TOTAL_INCLUDING_FIBRE",
         "per100g": {
-          "carbohydrate": 12.6,
+          "carbohydrate": 12.65,
           "fibre": 0,
           "polyols": null,
-          "protein": 0.1,
-          "fat": 0.1
+          "protein": 0.06,
+          "fat": 0.06
         },
-        "state": "Plain alcohol-based vanilla bean extract as sold"
+        "polyolsSourceVerified": false
       },
-      "state": "Plain alcohol-based vanilla bean extract as sold",
-      "matchEvidence": "AFCD Release 3 F009350 identifies a vanilla bean extract in alcohol and reports carbohydrate directly without sugar alcohols. Recipe uses 4 g vanilla extract; alcohol-free, glycerine-based, imitation extracts and vanilla sugar are outside this estimate.",
+      "state": "vanilla extract as sold",
+      "matchEvidence": "Ingredient 'vaniljauutetta' matched to reference Vanilla extract; brand or variety may differ.",
       "edibleFraction": 1,
       "retainedFraction": 1,
       "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",

@@ -1014,8 +1014,14 @@
       },
       "declaredCarbsGPer100g": 14
     },
-    "nutritionSha256": "ad2e423300f3e13fb2ab648df78398a7b1a91df4f024ee4111a3fa95258fc113",
-    "publicSource": "https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759"
+    "nutritionSha256": "0fd0d79150c72ce4bfeaac9ca8780783d825bd4ee543bb1915822aee35bd5336",
+    "publicSource": "https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759",
+    "declaredLabelIngredientIndices": [
+      0,
+      1,
+      2,
+      3
+    ]
   },
   "rasvakaakao-rouva-keto": {
     "recipeBindingSha256": "4dce5612fd79c917c51a68b89f5daae83235963e9f4bd756f602c87c6f835b2e",
@@ -1045,8 +1051,15 @@
       },
       "declaredCarbsGPer100g": 14
     },
-    "nutritionSha256": "60e2ef00d90d79b88c8e6c158a1300f1f15804f43f9d04224553bfd53f5a07e6",
-    "publicSource": "https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759"
+    "nutritionSha256": "ac1a88c6fdc720330ffb50858a90e76ae846a0e4c884494d3189659ee8154af5",
+    "publicSource": "https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759",
+    "declaredLabelIngredientIndices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
   },
   "karjalanpiirakat-riisipuurolla": {
     "recipeBindingSha256": "222e71d3610d011b348597905e3dae2c0b7459e2f82bf5116a596383791553b2",
@@ -1446,7 +1459,7 @@
   "parmesaani-lyttyperunat": {
     "recipeBindingSha256": "2204393a2c90141fb06bd63b64e8042842e86d4b303b0032f45740982b5d9d04",
     "preparationSha256": "76727886d1676a43aae48400f830da66f60f3f443e3c19209b8ef0f5bdca1aea",
-    "nutritionSha256": "dda1af34ee3e5f81081aed8e780f0782dd4811b45fb393f70f14df47a72890ef",
+    "nutritionSha256": "a54c392cb9680a8f85cd2a485a4878dd313b5ade74001e0e99cd0d586e8c0f70",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/28955",
     "reasoning": "Use one quarter of the original batch: 175 g cooled whole small potatoes weighed after boiling with skins, 10 g finely grated hard Parmesan, 0.5 g dry garlic powder, olive oil and salt. Fineli #28955 preserves the existing state-matched potato input; the separate #F002479 available carbohydrate and powder-specific #06.154 no longer depend on USDA total-by-difference. The estimate is ingredient-based from the amounts added before oven finishing. Scraps/coating losses and composition by potato cultivar/season are not represented.",
@@ -1474,7 +1487,57 @@
         "en": "d7224cf73fbf7177c71378dae3f2a8d0af968254847363762a85a669f1156c8e",
         "sv": "be3f38293e01f3571b081127ec2da8233c6e6f41e7e05ead6da2e55ddb37167c",
         "th": "b3292367ccba9392f0f3d5e98828c7c402a08bcc414e35e9594014324c4bb23a"
-      }
+      },
+      "compositionMatches": [
+        {
+          "index": 2,
+          "record": {
+            "id": "afcd-F002479-release-3",
+            "name": "Cheese, parmesan, fresh, regular fat",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002479",
+            "retrievedAt": "2026-11-18",
+            "licence": "Food Standards Australia New Zealand, Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "Direct available carbohydrate without sugar alcohols is 0 g; individual sugar alcohol cells are blank.",
+            "per100g": {
+              "carbohydrate": 0,
+              "fibre": 0,
+              "polyols": null,
+              "protein": 32,
+              "fat": 27
+            },
+            "state": "Hard regular-fat Parmesan as sold, grated at home"
+          },
+          "state": "Hard regular-fat Parmesan as sold, grated at home",
+          "matchEvidence": "AFCD Release 3 F002479 describes fresh regular-fat hard Parmesan, matching cheese weighed and grated for the recipe. Norway's Parmigiano Reggiano reports the same direct available carbohydrate rate. Generic cheese is a reference, no product-specific result."
+        },
+        {
+          "index": 3,
+          "record": {
+            "id": "matvaretabellen-06-154",
+            "name": "Garlic powder",
+            "sourceUrl": "https://www.matvaretabellen.no/en/garlic-powder/",
+            "retrievedAt": "2026-11-18",
+            "licence": "Matvaretabellen, Norwegian Food Safety Authority, CC BY 4.0",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "The reported carbohydrate sums starch and sugar directly. No aggregate polyol quantity is reported.",
+            "per100g": {
+              "carbohydrate": 63.7,
+              "fibre": 9,
+              "polyols": null,
+              "protein": 16.6,
+              "fat": 0.7
+            },
+            "state": "Dried garlic powder as sold"
+          },
+          "state": "Dried garlic powder as sold",
+          "matchEvidence": "Norway Matvaretabellen #06.154 finely ground dried garlic matches the recipe's powder. The food reports 63.7 g available carbohydrate as 61.3 g starch + 2.4 g sugar. It excludes fibre and separate polyols by the CHO component method MI0181."
+        }
+      ]
     }
   },
   "karnivore-rapeat-kananreisipalat": {
@@ -3251,7 +3314,7 @@
   "mustikka-jogurttijaatelo": {
     "recipeBindingSha256": "059b4f0bd622c9a227ca6089cc7ae5874aabb775ba373519cb241dcb21c13125",
     "preparationSha256": "a4d6f28ba6d55b9abc07293bb36774f3c472b65c251916be0e089de3e2033494",
-    "nutritionSha256": "70448d46c440f220ce6a77e615e20a4ffdeb7c58effe35b48e9d155aff1359b7",
+    "nutritionSha256": "ad41c689ebf3068ec143e81451cf4a0fd4232db02ceb63003ffac1a572592524",
     "reviewedAt": "2026-11-18",
     "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009350",
     "publicSource": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009350",
@@ -3268,7 +3331,33 @@
         "en": "e4a39bfdea0182cf55fa1cd606d60e4b6c0b9069bb3d87f7fff77525c0986247",
         "sv": "9f35992ff0b4a647dd725ddb08fbaff36a518adafd89325750e661ea579d5018",
         "th": "5425360049af61d13ce0ff430723d8e46d31c46f5590c02ea44f1d65f4db1ef5"
-      }
+      },
+      "compositionMatches": [
+        {
+          "index": 3,
+          "record": {
+            "id": "afcd-F009350-release-3",
+            "name": "Vanilla bean extract",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009350",
+            "retrievedAt": "2026-11-18",
+            "licence": "Food Standards Australia New Zealand, Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "Direct available carbohydrate without sugar alcohols from AFCD Release 3. Separate mannitol, sorbitol and glycerol cells are empty, so the aggregate is unverified.",
+            "per100g": {
+              "carbohydrate": 12.6,
+              "fibre": 0,
+              "polyols": null,
+              "protein": 0.1,
+              "fat": 0.1
+            },
+            "state": "Plain alcohol-based vanilla bean extract as sold"
+          },
+          "state": "Plain alcohol-based vanilla bean extract as sold",
+          "matchEvidence": "AFCD Release 3 F009350 identifies a vanilla bean extract in alcohol and reports carbohydrate directly without sugar alcohols. Recipe uses 4 g vanilla extract; alcohol-free, glycerine-based, imitation extracts and vanilla sugar are outside this estimate."
+        }
+      ]
     }
   },
   "porkkanaletut": {

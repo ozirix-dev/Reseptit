@@ -5,7 +5,7 @@ import type { IngredientPortion, PortionEvidence, LocalizedText, VerbalGk } from
 import type { RecipeEntry } from "../src/types/content";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeBindingHash } from "./glycemic-load-recipe-binding";
-import { calculate, type Calculation } from "./nutrition-model";
+import { calculate, type Calculation, type FoodRecord } from "./nutrition-model";
 import { verifyNutritionEvidence } from "./nutrition-evidence";
 import { isRecoveryEvidence } from "./gk80-uunikanapasta";
 import { isScopedPolyolEvidence } from "./gk80-polyol-c";
@@ -26,10 +26,12 @@ interface ReviewedPortion {
   alternativeLabels?: Record<string, LocalizedText>;
   versionAlternativeLabels?: { versionId: string; lower: LocalizedText; upper: LocalizedText };
   ingredientProduct?: { index: number; item: string; amount: number; unit: string; ean: string };
+  declaredLabelIngredientIndices?: number[];
   reasoning: string;
   reviewedAt: string;
   verbalNoteEdits?: Partial<Record<keyof LocalizedText, { before: string; after: string }>>;
   wholeCarbohydrateOnly?: {
+    compositionMatches?: { index: number; record: FoodRecord; state: string; matchEvidence: string }[];
     noteEdits?: Partial<Record<keyof LocalizedText, { before: string; after: string }>>;
     localizedScopeSha256?: Partial<LocalizedText>;
   };
@@ -96,7 +98,8 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
   }
   if (review && (review.verbal || review.condition || review.ingredientProduct || review.classLimitation
       || review.ingredientPortion || review.alternativeLabels || review.versionAlternativeLabels
-      || review.zeroCarbohydrate || review.wholeCarbohydrateOnly || review.portionGrams || review.piecesPerServing)
+      || review.zeroCarbohydrate || review.wholeCarbohydrateOnly || review.declaredLabelIngredientIndices
+      || review.portionGrams || review.piecesPerServing)
       && review.preparationSha256 !== portionPreparationHash(markdown)) {
     throw new Error(`${recipeId}: reviewed preparation or serving notes changed; re-review the public portion information.`);
   }
@@ -115,8 +118,34 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
   if (standaloneReview && (!review.nutritionSha256 || review.verbal || review.zeroCarbohydrate || !review.condition?.fi?.trim())) {
     throw new Error(`${recipeId}: standalone carbohydrate evidence requires reviewed nutrition, serving scope and no GK promotion.`);
   }
+  if (review?.declaredLabelIngredientIndices && (!raw || !review.nutritionSha256)) {
+    throw new Error(`${recipeId}: a carbohydrate label correction requires the pinned nutrition evidence.`);
+  }
   if (raw) {
     const input = JSON.parse(raw) as Calculation;
+    const labelIndices = review?.declaredLabelIngredientIndices ?? [];
+    const matches = standaloneReview?.compositionMatches ?? [];
+    const indices = [...labelIndices, ...matches.map(match => match.index)];
+    // Amend only the portion view. Macro and GK approvals still use the original evidence.
+    if (indices.length && (input.publicationStatus !== "WITHHELD_SOURCE_INCOMPLETE"
+        || new Set(indices).size !== indices.length
+        || indices.some(index => !Number.isInteger(index) || !input.ingredients[index]))) {
+      throw new Error(`${recipeId}: invalid reviewed portion composition indices or publication status.`);
+    }
+    for (const { index, record, state, matchEvidence } of matches) {
+      if (!record || !httpsSource(record.sourceUrl) || !state?.trim() || !matchEvidence?.trim()) {
+        throw new Error(`${recipeId}: a reviewed composition match requires a source and preparation evidence.`);
+      }
+      Object.assign(input.ingredients[index], { record, state, matchEvidence });
+    }
+    for (const index of labelIndices) {
+      const record = input.ingredients[index].record;
+      if (!record || record.licence !== "Manufacturer's published product information"
+          || record.carbohydrateDefinition !== "EU_AVAILABLE") {
+        throw new Error(`${recipeId}: the carbohydrate label correction requires a previously misclassified manufacturer record.`);
+      }
+      record.carbohydrateDefinition = "EU_TOTAL_INCLUDING_POLYOLS";
+    }
     // These two approved methodologies have separate accounting scopes.
     if (!isRecoveryEvidence(input) && !isScopedPolyolEvidence(input)) {
       const verified = verifyNutritionEvidence(data, input);

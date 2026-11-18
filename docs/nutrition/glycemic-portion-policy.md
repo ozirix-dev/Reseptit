@@ -104,6 +104,11 @@ reseptiä. Pakkaustietoon tukeutuva ainesosanäyttö sitoo nimen, määrän ja
 yksikön reseptiin. Tuotetiedon viivakoodi tarkistetaan, kun se on tiedossa
 ja merkitty ainesosariville. Pakkaustieto koskee yksittäistä ainesosaa.
 Vanhat GK-sidokset, aineistot ja hyväksynnät pidetään toistettavina.
+Annosarvion uudet ainesosien koostumustiedot tallennetaan
+`gk-reviewed-portions.json`-aineistoon. Tieto sidotaan alkuperäiseen
+laskentatiedostoon ja ainesosariviin. Näin annosnäkymä voi käyttää
+tarkempaa lähdettä tai korjattua pakkausarvon määritelmää. Reseptin
+ravintotiedot ja GK-hyväksyntä käyttävät edelleen omia laskenta-aineistojaan.
 
 ## Hiilihydraattitiedon merkitys
 

@@ -204,7 +204,34 @@ test("manufacturer-label carbohydrates do not become standalone available carboh
     assert.equal(portion.ingredientPortion?.declaredCarbsGPerServing, expected);
     assert.equal(portion.availableCarbs, undefined);
     await assert.rejects(projectPortionEvidence(root, id, markdown, {
+      ...review, declaredLabelIngredientIndices: [100],
+    }), /invalid reviewed portion composition indices/);
+    await assert.rejects(projectPortionEvidence(root, id, markdown, {
       ...review, wholeCarbohydrateOnly: {},
     }), /reviewed standalone carbohydrate requires evidence for every ingredient/);
+  }
+});
+
+test("reviewed standalone composition uses its pinned historical input without releasing macro or GL data", async () => {
+  const reviews = await loadReviewedPortions(root);
+  for (const [id, category, expected] of [
+    ["mustikka-jogurttijaatelo", "jalkiruoat", 15.01],
+    ["parmesaani-lyttyperunat", "alkuruoat", 23.37],
+  ] as const) {
+    const markdown = await readFile(path.join(root, "reseptit", category, id + ".md"), "utf8");
+    const review = reviews[id];
+    const { portion } = await projectPortionEvidence(root, id, markdown, review);
+    assert.deepEqual(portion.availableCarbs, { min: expected, max: expected });
+    assert.equal(portion.verbal, undefined);
+    assert.equal(originalGlycemicLoadCategory(undefined, portion), null);
+    const { portion: archived } = await projectPortionEvidence(root, id, markdown, {
+      ...review, wholeCarbohydrateOnly: undefined,
+    });
+    assert.equal(archived.availableCarbs, undefined);
+    const { compositionMatches } = review.wholeCarbohydrateOnly!;
+    const match = compositionMatches![0];
+    await assert.rejects(projectPortionEvidence(root, id, markdown, {
+      ...review, wholeCarbohydrateOnly: { compositionMatches: [match, match] },
+    }), /invalid reviewed portion composition indices/);
   }
 });
