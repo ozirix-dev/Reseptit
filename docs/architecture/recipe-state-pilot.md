@@ -51,8 +51,11 @@ nykyistä lähdettä ja näkyvää arviota ja buildin annosjako, ainesosat,
 valmistus ja muistiinpanot täsmäävät tarkistettuun FI-lähteeseen,
 vanhan reseptisidonnan ero säilyy kentässä
 `historicalSourceBindingDifference`. Raakalaskennan auditointi säilyttää
-alkuperäisen poikkeaman. Muuttunut julkaistu ohje, puuttuva varmennus sekä
-laskentasyötteen ja lähdeaineiston erot kuuluvat `bindingDifferences`-kenttään.
+alkuperäisen poikkeaman. Ohjeen vertailu hyväksyy katselmoidun
+pilkkuvälin lisäyksen grammoina ilmoitettujen ainesmäärien luetteloon,
+kun molemmat näkyvät valmistusohjeet täsmäävät sen jälkeen.
+Muuttunut julkaistu ohje, puuttuva varmennus sekä laskentasyötteen ja
+lähdeaineiston erot kuuluvat `bindingDifferences`-kenttään.
 
 ## Lähtömittaus
 

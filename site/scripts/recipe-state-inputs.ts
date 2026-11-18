@@ -8,6 +8,7 @@ import type { GlycemicLoadRecipeInput, GlycemicLoadResult } from "./glycemic-loa
 import type { OriginalGkReleaseBinding } from "./gk80-release";
 import { projectPublishedMarkdown, recipePreparationSections } from "./build-content";
 import { f25SourceGatePreflight } from "./f25-source-release-gate";
+import { applyReviewedGramListSpacing, reviewedRecipeCopy } from "./public-recipe-copy-r2";
 import { contentHash, loadCurrentReview } from "./translation-review";
 import type { RecipeEntry } from "../src/types/content";
 
@@ -82,8 +83,9 @@ export async function readRecipeStateInputs(sourceCommit: string) {
       const parsed = parseMarkdown(markdown);
       const ingredients = parsed?.data.ingredients;
       const { instructions, notes } = recipePreparationSections(markdown.replaceAll("\r\n", "\n"));
+      const reviewedInstructions = applyReviewedGramListSpacing(instructions, reviewedRecipeCopy(id, "fi")?.method);
       const [instructionsHtml, steps, notesHtml] = await Promise.all([
-        renderSafeMarkdown(instructions), renderInstructionSteps(instructions), renderSafeMarkdown(notes),
+        renderSafeMarkdown(reviewedInstructions), renderInstructionSteps(reviewedInstructions), renderSafeMarkdown(notes),
       ]);
       return parsed?.data.servings === current.servings && Array.isArray(ingredients) &&
         ingredientScope(ingredients) === ingredientScope(current.kitchenIngredients ?? current.ingredients) &&

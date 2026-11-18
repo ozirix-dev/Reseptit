@@ -9,6 +9,7 @@ import type { SearchRecipe } from "../src/features/recipes/recipe-search";
 import { contentManifest } from "../src/generated/routes.generated";
 import { f25SourceGatePreflight } from "../scripts/f25-source-release-gate";
 import { publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
+import { applyReviewedGramListSpacing } from "../scripts/public-recipe-copy-r2";
 import { git, readRecipeStateInputs, repoRoot, type RecipeStateInputs } from "../scripts/recipe-state-inputs";
 import { projectRecipeState } from "../scripts/recipe-state";
 import { buildRegistry, contentHash } from "../scripts/translation-review";
@@ -124,8 +125,26 @@ test("effective FI and evidence statuses preserve the build, including absent or
   }
 });
 
+test("reviewed gram-list punctuation cannot change gram amounts, decimal commas or preparation", () => {
+  const raw = "Lisää kookosmaito,2,6 g kanelia ja 5 g vaniljaa.";
+  const spaced = "Lisää kookosmaito, 2,6 g kanelia ja 5 g vaniljaa.";
+  assert.equal(applyReviewedGramListSpacing(raw), raw);
+  assert.equal(applyReviewedGramListSpacing(raw, [[raw, spaced]]), spaced);
+  const literal = raw.replace("kookosmaito", () => "$&-tuote");
+  const spacedLiteral = spaced.replace("kookosmaito", () => "$&-tuote");
+  assert.equal(applyReviewedGramListSpacing(literal, [[literal, spacedLiteral]]), spacedLiteral);
+  for (const changed of [
+    "Lisää kookosmaito, 2, 6 g kanelia ja 5 g vaniljaa.",
+    "Lisää kookosmaito, 26 g kanelia ja 5 g vaniljaa.",
+    "Keitä kookosmaito, 2,6 g kanelia ja 5 g vaniljaa.",
+  ]) {
+    assert.equal(applyReviewedGramListSpacing(raw, [[raw, changed]]), raw);
+  }
+});
+
 test("current release pins distinguish historical source differences from open publication checks", () => {
-  for (const id of ["koshari", "jauheliha-kaalikeitto-vhh", "uunikanapasta-kesakurpitsa"]) {
+  for (const id of ["koshari", "jauheliha-kaalikeitto-vhh", "uunikanapasta-kesakurpitsa",
+    "harira", "karibia-maissipuuro-kookoksella"]) {
     const row = withId(id);
     const status = row.glycemicLoadStatus;
     assert.equal(status.historicalSourceBindingDifference, true, id);
@@ -139,6 +158,12 @@ test("current release pins distinguish historical source differences from open p
   assert.ok(editorial.glycemicLoadStatus.verifiedRawGkRelease);
   assert.ok(editorial.glycemicLoadStatus.bindingDifferences.includes("source"));
   assert.equal(editorial.glycemicLoadStatus.historicalSourceBindingDifference, undefined);
+  for (const id of ["indonesialainen-bubur-ayam-kanariisipuuro", "yangzhou-paistettu-riisi"]) {
+    const status = withId(id).glycemicLoadStatus;
+    assert.ok(status.verifiedRawGkRelease, id);
+    assert.ok(status.bindingDifferences.includes("source"), id);
+    assert.equal(status.historicalSourceBindingDifference, undefined, id);
+  }
 
   const id = "koshari";
   const unverified = projectRecipeState(commit, { ...inputs, verifiedOriginalReleasePresentation: new Set<string>() });
