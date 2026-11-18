@@ -822,10 +822,10 @@ const tangyuanCookingWaterScope: Readonly<Record<RecipeLocale, { before: string;
 // reviewed preparation methods boil the rice and egg. Correct the *public*
 // recipe metadata and explanation without rewriting version-sealed sources.
 const nattoRiceCookingReview: Readonly<Record<RecipeLocale, { evidence: readonly string[]; note: string }>> = {
-  fi: { evidence: ["100 g kuivaa valkoista jasmiiniriisiä", "Keitä munat"], note: "Valmistustapa: keittäminen. Riisin 100 g tarkoittaa kuivapainoa. Riisi ja munat keitetään, ja maustamaton nattō lisätään valmiiseen kulhoon; mitään ei paisteta." },
-  en: { evidence: ["100 g of dry white jasmine rice", "Boil the eggs"], note: "Cooking method: boiling. The listed 100 g of rice is its dry weight. The rice and eggs are boiled, then plain natto is added to the finished bowl; nothing is fried." },
-  sv: { evidence: ["100 g torrt vitt jasminris", "Koka äggen"], note: "Tillagningssätt: kokning. De angivna 100 g ris är torrvikt. Riset och äggen kokas, och naturell natto läggs i den färdiga skålen; ingenting steks." },
-  th: { evidence: ["100 กรัม", "ต้มไข่"], note: "วิธีปรุง: การต้ม ข้าวหอมมะลิ 100 กรัมเป็นน้ำหนักข้าวดิบก่อนหุง ข้าวและไข่ต้มให้สุก แล้วใส่นัตโตะแบบไม่ปรุงรสในชาม ไม่ได้ทอดส่วนผสมใด" },
+  fi: { evidence: ["100 g kuivaa valkoista jasmiiniriisiä ja keitä se pakkauksen ohjeen mukaan", "Keitä munat"], note: "Valmistustapa: keittäminen. Ainesluettelon riisimäärä on kuivapaino. Riisi ja munat keitetään, ja maustamaton nattō lisätään valmiiseen kulhoon; mitään ei paisteta." },
+  en: { evidence: ["100 g of dry white jasmine rice and cook it according to the packet instructions", "Boil the eggs"], note: "Cooking method: boiling. The ingredient list gives the dry weight of the rice. The rice and eggs are boiled, then plain natto is added to the finished bowl; nothing is fried." },
+  sv: { evidence: ["100 g torrt vitt jasminris och koka det enligt förpackningens anvisningar", "Koka äggen"], note: "Tillagningssätt: kokning. Mängden ris i ingredienslistan avser torrvikt. Riset och äggen kokas, och naturell natto läggs i den färdiga skålen; ingenting steks." },
+  th: { evidence: ["ซาวข้าวหอมมะลิขาวดิบ 100 กรัม แล้วหุงตามวิธีบนบรรจุภัณฑ์", "ต้มไข่"], note: "วิธีปรุง: การต้ม ปริมาณข้าวในรายการส่วนผสมเป็นน้ำหนักข้าวดิบก่อนหุง ข้าวและไข่ต้มให้สุก แล้วใส่นัตโตะแบบไม่ปรุงรสในชาม ไม่ได้ทอดส่วนผสมใด" },
 };
 
 export function reviewedPublicCookingMethod(recipeId: string, rawMethod: readonly string[] | undefined): string[] | undefined {

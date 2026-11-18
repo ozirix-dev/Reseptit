@@ -37,10 +37,10 @@ Julkinen `siteContent` ei lähtöversiossa välitä `cooking_method`-kenttää l
 
 ## Riippuvuus ja portit
 
-Muutos pinotaan PR:n [#735](https://github.com/ozirix-dev/Reseptit/pull/735) päälle; ketju on **#731 → #733 → #735 → tämä PR**, koska `site/scripts/public-recipe-copy.ts` on yhteinen esityskerroksen tiedosto. Tässä PR:ssä tarvittava `build-content.ts`-lisäys on pieni ja rajattu yhteen reseptiin; Codexin omaan GK-haaraan ei kirjoiteta. Kun vanhemmat PR:t yhdistetään, tarkista uudet rebase-/base-ref-sidonnat ja anna GitHub CI:n sekä riippumattoman katselmoinnin vahvistaa lopullinen SHA.
+PR #737 kokoaa #731:n, #733:n ja #735:n laatukorjaukset ja vertautuu `main`-haaraan. Nattōn kuivapainohuomautus viittaa annosvalitsimen skaalaamaan ainesluetteloon. Lähdetarkistus edellyttää kuivana mitatun riisin keittämisohjetta kaikilla neljällä kielellä. JSON-LD kuvaa kahden annoksen perusreseptiä.
 
 Toteutuksen julkaisu edellyttää tarkkaa GitHub CI -tulosta, riippumatonta nelikielisen merkityksen ja näkyvän valmistustavan tarkistusta, Repo Guard -porttia ja erillistä merge-/julkaisupäätöstä. Tämä raportti ei myönnä niitä eikä sulje laajaa issuea #327.
 
 ## Katselmoinnin P3-korjaus (integraatio-PR)
 
-Katselmointi huomasi, ettei uusi `RecipeEntry.cookingMethod`-kenttä siirtynyt alun perin sivun käyttämään strukturoituun dataan. Integraatio täydentää `site/src/features/recipes/schema.ts`-funktion `recipeJsonLd` käyttämään `cookingMethod`-ominaisuutta **vain katselmoidussa nattō-tietueessa**, neljällä kielellä: FI `Keittäminen`, EN `Boiling`, SV `Kokning`, TH `การต้ม`. Se on Schema.org `Recipe`-tyypin tuettu tekstikenttä. Käyttäjän näkyvään lukutekstiin jää jo lisätty nelikielinen valmistustapaa ja 100 g:n kuivapainoa selittävä muistiinpano. Muille resepteille ei ilmesty uutta kenttää tai käyttöliittymäelementtiä; regressiotesti tarkistaa myös JSON-LD-tuloksen.
+Katselmointi huomasi, ettei uusi `RecipeEntry.cookingMethod`-kenttä siirtynyt alun perin sivun käyttämään strukturoituun dataan. Integraatio täydentää `site/src/features/recipes/schema.ts`-funktion `recipeJsonLd` käyttämään `cookingMethod`-ominaisuutta **vain katselmoidussa nattō-tietueessa**, neljällä kielellä: FI `Keittäminen`, EN `Boiling`, SV `Kokning`, TH `การต้ม`. Se on Schema.org `Recipe`-tyypin tuettu tekstikenttä. Käyttäjän näkyvään lukutekstiin jää jo lisätty nelikielinen valmistustapaa ja ainesluettelon riisin kuivapainoa selittävä muistiinpano. Muille resepteille ei ilmesty uutta kenttää tai käyttöliittymäelementtiä; regressiotesti tarkistaa myös JSON-LD-tuloksen.

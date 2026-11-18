@@ -7,6 +7,7 @@ import { projectPublicRecipeMethodCopy, reviewedPublicCookingMethod } from "../s
 import { parseMarkdown } from "../src/content/markdown";
 import { siteContent } from "../src/generated/content.generated";
 import { recipeJsonLd } from "../src/features/recipes/schema";
+import { scaleIngredient } from "../src/features/recipes/servings";
 
 const root = path.resolve(import.meta.dirname, "../..");
 const id = "japanilainen-natto-riisikulho";
@@ -18,7 +19,8 @@ const cases = [
     "blob": "941d0724416d00338277c9a2c2bd22ef981b8fc1",
     "riceName": "riisi",
     "methodPhrase": "Valmistustapa: keittäminen.",
-    "dryPhrase": "Riisin 100 g tarkoittaa kuivapainoa.",
+    "dryPhrase": "Ainesluettelon riisimäärä on kuivapaino.",
+    "riceCookingPhrase": "100 g kuivaa valkoista jasmiiniriisiä ja keitä se pakkauksen ohjeen mukaan",
     "boilPhrase": "Keitä munat"
   },
   {
@@ -28,7 +30,8 @@ const cases = [
     "blob": "89727a0502a63aac3ece88ab1a28cef4194f4123",
     "riceName": "rice",
     "methodPhrase": "Cooking method: boiling.",
-    "dryPhrase": "The listed 100 g of rice is its dry weight.",
+    "dryPhrase": "The ingredient list gives the dry weight of the rice.",
+    "riceCookingPhrase": "100 g of dry white jasmine rice and cook it according to the packet instructions",
     "boilPhrase": "Boil the eggs"
   },
   {
@@ -38,7 +41,8 @@ const cases = [
     "blob": "454c43a19b6fa7c302bc8f245057dea86a30680f",
     "riceName": "ris",
     "methodPhrase": "Tillagningssätt: kokning.",
-    "dryPhrase": "De angivna 100 g ris är torrvikt.",
+    "dryPhrase": "Mängden ris i ingredienslistan avser torrvikt.",
+    "riceCookingPhrase": "100 g torrt vitt jasminris och koka det enligt förpackningens anvisningar",
     "boilPhrase": "Koka äggen"
   },
   {
@@ -48,7 +52,8 @@ const cases = [
     "blob": "1218f9c352528dec894f02a99a230bfee8c20260",
     "riceName": "ข้าว",
     "methodPhrase": "วิธีปรุง: การต้ม",
-    "dryPhrase": "ข้าวหอมมะลิ 100 กรัมเป็นน้ำหนักข้าวดิบก่อนหุง",
+    "dryPhrase": "ปริมาณข้าวในรายการส่วนผสมเป็นน้ำหนักข้าวดิบก่อนหุง",
+    "riceCookingPhrase": "ซาวข้าวหอมมะลิขาวดิบ 100 กรัม แล้วหุงตามวิธีบนบรรจุภัณฑ์",
     "boilPhrase": "ต้มไข่"
   }
 ] as const;
@@ -80,11 +85,21 @@ test("natto's reviewed boiling method replaces frying metadata only in the publi
       fixture.locale + ": the culinary steps themselves must remain unchanged");
     assert.ok(projected.notes.includes(fixture.methodPhrase), fixture.locale);
     assert.ok(projected.notes.includes(fixture.dryPhrase), fixture.locale);
+    assert.doesNotMatch(projected.notes, /100\s*(?:g|กรัม)/u, fixture.locale + ": dry-weight note has no fixed gram amount");
+    assert.throws(() => projectPublicRecipeMethodCopy(id, fixture.locale,
+      parsed.content.replace(fixture.riceCookingPhrase, "100 g / 100 กรัม"), ""),
+    /NATTO_COOKING_METHOD_TEXT_DRIFT/, fixture.locale + ": quantity and boiled egg alone do not establish the rice method");
 
     const recipe = published.find(item => item.locale === fixture.locale);
     assert.ok(recipe);
     assert.deepEqual(recipe.cookingMethod, ["keittäminen"], fixture.locale + ": generated public metadata");
-    assert.equal(recipeJsonLd(recipe).cookingMethod, fixture.schemaMethod, fixture.locale + ": localized Schema.org Recipe cookingMethod");
+    const structured = recipeJsonLd(recipe);
+    assert.equal(structured.cookingMethod, fixture.schemaMethod, fixture.locale + ": localized Schema.org Recipe cookingMethod");
+    assert.equal(structured.recipeYield, "2", fixture.locale + ": structured data describes the original yield");
+    const publicRice = (recipe.kitchenIngredients ?? recipe.ingredients).find(item => item.item === fixture.riceName);
+    assert.ok(publicRice);
+    assert.deepEqual([2, 4, 8].map(servings => scaleIngredient(publicRice, servings, recipe.servings).amount),
+      [100, 200, 400], fixture.locale + ": dry rice scales with the ingredient list");
     assert.ok(recipe.instructionsText.join("\n").includes(fixture.boilPhrase), fixture.locale);
     assert.ok(recipe.notesHtml.includes(fixture.methodPhrase), fixture.locale + ": public reading view");
     assert.ok(recipe.notesHtml.includes(fixture.dryPhrase), fixture.locale + ": dry rice guidance");
