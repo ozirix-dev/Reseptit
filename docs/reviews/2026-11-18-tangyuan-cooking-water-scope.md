@@ -41,3 +41,7 @@ Riippumattomat valmistuslähteet tukevat kahden kattilan menetelmää. [The Kitc
 ## Portit ja integraatio
 
 Tämä on julkaisematon Draft-korjausehdotus. PR-CI:n onnistuminen kirjataan vasta toteutuneelta täsmä-HEADilta. Nelikielisen merkityksen riippumaton katselmointi, Repo Guard sekä erillinen merge- ja tuotantojulkaisupäätös jäävät pakollisiksi. Muutosten vertailu rajataan oman PR:n ja vanhemman #733:n välille. #733:n ja #731:n hyväksytyn integraation jälkeen tämän jatko-PR:n perusta siirretään tarvittaessa `main`iin ja CI/HEAD-katselmointi uusitaan. Codexin GI/GK-haaroihin ei kosketa.
+
+## Katselmoinnin P2-korjaus (integraatio-PR)
+
+Julkinen FI/EN/SV/TH-keitinvesiohje käyttää annosvalitsimen kannalta neutraalia ilmausta **"ainesluettelossa inkivääriliemeen varattu vesi"**. Yksi litra vettä ja 60 g sokeria mainitaan muistiinpanoissa vain **alkuperäisen neljän annoksen peruserän** yhteydessä. Tämä välttää ristiriidan, jossa valitaan kahdeksan annosta ja aineslista skaalaa liemiveden 2 litraan. `site/tests/tangyuan-cooking-water-scope.test.ts` tarkistaa 2/4/8 annoksen liemiveden skaalausta ja näkyvän perusversion kuvauksen. Erillisen keitinveden tarvetta ei numeerisesti arvioida eikä se saa GK-/ravintolukua.
