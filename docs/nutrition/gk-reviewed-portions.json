@@ -3452,7 +3452,8 @@
       "en": "The braising broth with its sauces, the pork and the eggs are served with the vegetables and fall outside the calculation. The GL category of the whole serving remains open.",
       "sv": "Kokspadet med såserna, fläsket och äggen serveras till grönsakerna och ingår inte i beräkningen. Hela portionens GL-klass är därför öppen.",
       "th": "การคำนวณไม่รวมน้ำตุ๋นที่ปรุงด้วยซอส เนื้อหมู และไข่ที่เสิร์ฟกับผัก จึงยังระบุระดับ GL ของทั้งจานไม่ได้"
-    }
+    },
+    "ingredientGkEvidenceSha256": "33b49c3640f2a2b4683084798836c32be0511e2c401f89b8a39566926bbf5e6f"
   },
   "bataattibrowniet": {
     "recipeBindingSha256": "9b41b48ad5938df44742ae133f27522ae37e53278cfdbb1769df2e593446711e",
@@ -3872,17 +3873,18 @@
     "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9304465/",
     "reasoning": "Urad dal contributes approximately 90% of the recipe's approved modeled GK 10.7739 using the broad Atkinson legume mean of 34, just above the medium boundary. User portion has one quarter of the fried rings. No sambar or chutney is in the ingredient accounting. Shakappa et al. test vada served with sambar at a standardized 50 g carbohydrate load against glucose; that is a separate mixed meal with different scope and its GI must not replace the plain recipe estimate. Retain the approved model value, identify the food and scope, and withhold its otherwise unconditional category.",
     "condition": {
-      "fi": "Arvio koskee neljäsosaa reseptin friteeratuista linssirenkaista. Laske sambar tai chutney erikseen.",
-      "en": "The estimate covers one quarter of the fried lentil rings from the recipe. Count any sambar or chutney separately.",
-      "sv": "Uppskattningen gäller en fjärdedel av receptets friterade linsringar. Räkna sambar eller chutney separat.",
-      "th": "ค่าประมาณนี้ครอบคลุมหนึ่งในสี่ของขนมถั่วอูรัดทอดตามสูตร คิดซัมบาร์หรือชัทนีย์ที่เสิร์ฟแยกต่างหาก"
+      "fi": "GK-luku koskee neljäsosaa renkaista ja perustuu urad-daliin ja riisijauhoon. Chili, inkivääri ja valinnaiset currylehdet jäävät laskelmasta pois. Laske sambar tai chutney erikseen.",
+      "en": "The GL figure covers one quarter of the rings and uses only the urad dal and rice flour. It excludes the chili, ginger and optional curry leaves. Count any sambar or chutney separately.",
+      "sv": "GL-värdet gäller en fjärdedel av ringarna och bygger på urad dal och rismjöl. Chili, ingefära och valfria curryblad ingår inte i beräkningen. Räkna sambar eller chutney separat.",
+      "th": "ค่า GL สำหรับหนึ่งในสี่ของขนมทอดรูปวงคำนวณจากถั่วอูรัดและแป้งข้าวเจ้า ไม่รวมพริก ขิง และใบกะหรี่ที่ใส่ได้ตามชอบ หากเสิร์ฟกับซัมบาร์หรือชัทนีย์ให้คิดแยก"
     },
     "classLimitation": {
       "fi": "Urad-dalin osuus perustuu palkokasviryhmän GI-keskiarvoon. Vertailututkimuksessa mitattiin vadaa sambarin kanssa. Reseptin omien renkaiden GK-luokka jää avoimeksi.",
       "en": "The urad dal contribution uses an average GI for legumes. The comparison study tested vada served with sambar. The GL category of the rings in this recipe remains uncertain.",
       "sv": "Bidraget från urad dal bygger på ett genomsnittligt GI för baljväxter. I jämförelsestudien testades vada serverad med sambar. GL-kategorin för ringarna i receptet är osäker.",
       "th": "ส่วนของถั่วอูรัดใช้ค่า GI เฉลี่ยของกลุ่มถั่ว งานวิจัยที่ใช้เปรียบเทียบทดสอบวาดาที่เสิร์ฟกับซัมบาร์ ระดับ GL ของขนมถั่วทอดตามสูตรนี้ยังไม่แน่ชัด"
-    }
+    },
+    "ingredientGkEvidenceSha256": "c154d2fe9b60beb2fc7e77143c94dc5c7fe07f7762f6c9c4ac1d2d49b805b126"
   },
   "mustikka-jogurttijaatelo": {
     "recipeBindingSha256": "059b4f0bd622c9a227ca6089cc7ae5874aabb775ba373519cb241dcb21c13125",
@@ -4213,7 +4215,8 @@
       "en": "A GL class for the whole serving is withheld because the calculation includes only the rice powder and white cabbage.",
       "sv": "Ingen GL-klass visas för hela portionen eftersom beräkningen bara omfattar rispulvret och vitkålen.",
       "th": "ไม่แสดงระดับ GL ของทั้งจาน เนื่องจากการคำนวณครอบคลุมเฉพาะผงข้าวคั่วและกะหล่ำปลีขาว"
-    }
+    },
+    "ingredientGkEvidenceSha256": "c9cb6d2c6340242b411ec6144f3ea6458c97887011ace8635701fbd30273f9b0"
   },
   "pohjoisafrikkalainen-kuskus-aamiaiskulho": {
     "recipeBindingSha256": "fcf0008b590d5bacb9328337515e41572ec9b425e75595c5a3aa930f1edee4f4",
@@ -4305,7 +4308,8 @@
       "en": "A GL class for the whole serving is withheld because the calculation covers only the cream and cauliflower.",
       "sv": "Ingen GL-klass visas för hela portionen eftersom beräkningen bara omfattar grädden och blomkålen.",
       "th": "ไม่แสดงระดับ GL ของทั้งจาน เนื่องจากการคำนวณครอบคลุมเฉพาะครีมและดอกกะหล่ำ"
-    }
+    },
+    "ingredientGkEvidenceSha256": "074308c3931effb48f83c3815d23a63d7671bcd3bb1d824d72318e15d4d8c707"
   },
   "jauhelihakastike-kesakurpitsanuudeleilla": {
     "recipeBindingSha256": "c6f28d21334d646994e7869a0f869299fb344ab4199a1bb4d8c430f3f269e1ab",
@@ -4325,7 +4329,8 @@
       "en": "A GL class for the whole serving is withheld because the calculation covers only the zucchini and cream.",
       "sv": "Ingen GL-klass visas för hela portionen eftersom beräkningen bara omfattar zucchinin och grädden.",
       "th": "ไม่แสดงระดับ GL ของทั้งจาน เนื่องจากการคำนวณครอบคลุมเฉพาะซูกินีและครีม"
-    }
+    },
+    "ingredientGkEvidenceSha256": "aa22d0ddb4bb787ce9e6131806099a43278f8cf3a1239c4abd947345d9e1d656"
   },
   "kanakorma-kukkakaaliriisilla": {
     "recipeBindingSha256": "9c3a9bdf62873e0a38e0724cf07f4064909ca76388834194ce7b0c95d7023742",
@@ -4345,7 +4350,8 @@
       "en": "A GL class for the whole serving is withheld because the calculation covers only the cauliflower, cream and yogurt.",
       "sv": "Ingen GL-klass visas för hela portionen eftersom beräkningen bara omfattar blomkålen, grädden och yoghurten.",
       "th": "ไม่แสดงระดับ GL ของทั้งจาน เนื่องจากการคำนวณครอบคลุมเฉพาะดอกกะหล่ำ ครีม และโยเกิร์ต"
-    }
+    },
+    "ingredientGkEvidenceSha256": "562060c84a07e51387d84b4e966bc9812ce32df89b58062b0f150e157969fb36"
   },
   "uunibataatit-fetalla": {
     "recipeBindingSha256": "f20d7c5ed23a8c5ac6850d187ccd993d571eb28fbd7acab707347877a99459c5",
@@ -4664,7 +4670,8 @@
       "en": "The calculation uses the average GI for vegetables for the cabbage and spring onion.",
       "sv": "Beräkningen använder genomsnittligt GI för grönsaker för kålen och vårlöken.",
       "th": "การคำนวณใช้ค่า GI เฉลี่ยของผักสำหรับกะหล่ำปลีและต้นหอม"
-    }
+    },
+    "ingredientGkEvidenceSha256": "94cdb866d2e81854ffb41256ace380d9b8971475b07922e116713e67f33a4f08"
   },
   "lahi-ita-ful-medames": {
     "recipeBindingSha256": "17b06696047cf64c715b484769d5484afc3f8565af7d1e8d22cf4299ee8b9894",
@@ -4685,7 +4692,8 @@
       "en": "The GL figure covers the broad beans. It uses the composition of beans boiled from dried and an average GI for legumes.",
       "sv": "GL-värdet gäller bondbönorna. Det bygger på sammansättningen hos kokta, tidigare torkade bönor och på genomsnittligt GI för baljväxter.",
       "th": "ค่า GL แสดงเฉพาะส่วนของถั่วปากอ้า โดยใช้ข้อมูลองค์ประกอบของถั่วแห้งที่นำไปต้มและค่า GI เฉลี่ยของกลุ่มถั่วเมล็ดแห้ง"
-    }
+    },
+    "ingredientGkEvidenceSha256": "1f71d7a0494161d677660f76aec7c44ba9b858090779d5dfc13946259ccd83cd"
   },
   "kiinalainen-soijamaito-aamiaisella": {
     "recipeBindingSha256": "94a2ee10260ed651439f5aba3756a1d9fc4c0cb2272760e41963f7bc6f8b3d40",
@@ -4706,7 +4714,8 @@
       "en": "The GL figure covers the soy drink. It uses the composition of a calcium-fortified soy drink and an average GI for legumes.",
       "sv": "GL-värdet gäller sojadrycken. Det bygger på sammansättningen hos kalciumberikad sojadryck och på genomsnittligt GI för baljväxter.",
       "th": "ค่า GL แสดงเฉพาะส่วนของเครื่องดื่มถั่วเหลือง โดยใช้ข้อมูลองค์ประกอบของเครื่องดื่มถั่วเหลืองเสริมแคลเซียมและค่า GI เฉลี่ยของกลุ่มถั่วเมล็ดแห้ง"
-    }
+    },
+    "ingredientGkEvidenceSha256": "e15380800f899c0fad395278a8229120c3d0ba5def307a851bce90e5115d7f44"
   },
   "naudan-paahtopaisti-uunissa": {
     "recipeBindingSha256": "3fb63e41f390c928b2df4f32e9d8fb493dfb08f5e119ab8b85fe3814758ceae7",
@@ -4796,11 +4805,12 @@
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/glycemic-load-pilot-input.json#L5814",
     "reasoning": "A four-serving recipe serves pan-fried cauliflower rice, sliced cucumber and ginger-soybean paste sauce with the chicken. The sealed GK 3.6675 includes 2.772 from Fineli 322 cauliflower (175 g raw recipe weight and 4.2 g available CHO per serving) and 0.462 from Fineli 346 cucumber (50 g and 0.7 g); both use Atkinson 2021 Table 1 vegetable mean GI 66. The named Healthy Boy paste in the sauce supplies the remaining 0.4335 from 7.5 g paste and 1.275 g available CHO per serving using the legume mean GI 34. The recipe may serve extra cooking liquid separately. The specified stock is tracked as 0.015 g of the 0.6605 g omitted for the original recipe, and there is no positive GK from stock or from the rest of the sauce. No estimate for an extra bowl of broth. Legacy available CHO remains unverified; the published 11.16 g point is total carbohydrate.",
     "condition": {
-      "fi": "Arvio koskee annosta, jossa on 175 g kukkakaaliriisiä ennen paistamista ja 50 g kurkkua. GK-arvioon vaikuttaa myös kastikkeen Healthy Boy -soijapaputahna. Kukkakaaliriisin ja kurkun GK-osuudet käyttävät kasvisten GI-keskiarvoa. Tahnan osuus käyttää palkokasvien keskiarvoa.",
-      "en": "The estimate applies to a serving with 175 g of cauliflower rice weighed before frying and 50 g of cucumber. The Healthy Boy soybean paste in the sauce also contributes to the GL estimate. The cauliflower rice and cucumber use the average GI for vegetables. The soybean paste uses the average GI for legumes.",
-      "sv": "Uppskattningen gäller en portion med 175 g blomkålsris vägt före stekning och 50 g gurka. Sojabönspastan Healthy Boy i såsen bidrar också till GL-uppskattningen. Blomkålsriset och gurkan beräknas med genomsnittligt GI för grönsaker. Sojabönspastan beräknas med genomsnittet för baljväxter.",
-      "th": "ค่าประมาณนี้ใช้กับหนึ่งที่ที่มีข้าวดอกกะหล่ำ 175 กรัมชั่งก่อนผัด และแตงกวา 50 กรัม เต้าเจี้ยว Healthy Boy ในซอสมีส่วนในค่าประมาณ GL ด้วย ข้าวดอกกะหล่ำและแตงกวาใช้ค่า GI เฉลี่ยของผัก ส่วนเต้าเจี้ยวใช้ค่าเฉลี่ยของถั่วเมล็ดแห้ง"
-    }
+      "fi": "GK-laskelma käyttää annokseen 175 g kukkakaaliriisiä ennen paistamista ja 50 g kurkkua. Niille käytetään kasvisten GI-keskiarvoa ja kastikkeen Healthy Boy -soijapaputahnalle palkokasvien keskiarvoa. Liemen ja kastikkeen muiden ainesten GK-osuutta ei ole laskettu.",
+      "en": "The GL calculation uses 175 g of cauliflower rice weighed before frying and 50 g of cucumber per serving. It uses the average GI for vegetables for them and the average for legumes for the Healthy Boy soybean paste in the sauce. It does not calculate a GL contribution for the broth or the other sauce ingredients.",
+      "sv": "GL-beräkningen använder 175 g blomkålsris vägt före stekning och 50 g gurka per portion. För dem används genomsnittligt GI för grönsaker och för såsens sojabönspasta från Healthy Boy genomsnittet för baljväxter. Buljongen och såsens övriga ingredienser har inget beräknat GL-bidrag.",
+      "th": "การคำนวณ GL ต่อหนึ่งที่ใช้ข้าวดอกกะหล่ำ 175 กรัมชั่งก่อนผัดและแตงกวา 50 กรัม โดยใช้ค่า GI เฉลี่ยของกลุ่มผัก ส่วนเต้าเจี้ยว Healthy Boy ในซอสใช้ค่าเฉลี่ยของกลุ่มถั่วเมล็ดแห้ง การคำนวณไม่รวมส่วนของน้ำซุปและส่วนผสมอื่นในซอส"
+    },
+    "ingredientGkEvidenceSha256": "a1e412ad70f77dd4cd6dd32bd56fa0d7870f0797fe1a5fb0465a40d14ce058ca"
   },
   "gai-yang-vhh": {
     "recipeBindingSha256": "bfed6da30db5bcb5ab8c9e06d0148e8a7e114fe1ca47371bac5994f3a6397f04",
@@ -4810,11 +4820,12 @@
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/glycemic-load-pilot-input.json#L7232",
     "reasoning": "The four-serving marinated grilled or oven-cooked chicken includes 500 g cauliflower rice heated in the pan and 200 g cucumber sliced as sides. The sealed GK 2.40075 is entirely Fineli 322 cauliflower (1.93875) and Fineli 346 cucumber (0.462), each using the Atkinson 2021 Table 1 broad vegetable mean GI 66. The ingredient model tracks 1.3465 g omitted from the marinade and herbs, principally fish sauce, soy sauce and garlic. The listed erythritol is Foodin pure erythritol. No quantified sauce retention adjustment; the public carbohydrate value of 9.45 g is historical total carbohydrate.",
     "condition": {
-      "fi": "GK-arvio muodostuu lisukkeista, joihin käytetään annosta kohti 125 g kukkakaaliriisiä ja 50 g kurkkua. Laskennassa lisukkeille käytetään kasvisten GI-keskiarvoa.",
-      "en": "The GL estimate comes from the sides, which use 125 g of cauliflower rice and 50 g of cucumber per serving. The calculation uses an average GI for vegetables.",
-      "sv": "GL-uppskattningen bygger på tillbehören, 125 g blomkålsris och 50 g gurka per portion. Beräkningen använder ett genomsnittligt GI för grönsaker.",
-      "th": "ค่าประมาณ GL คำนวณจากเครื่องเคียง โดยหนึ่งที่ใช้ข้าวดอกกะหล่ำ 125 กรัม และแตงกวา 50 กรัม การคำนวณใช้ค่า GI เฉลี่ยของผัก"
-    }
+      "fi": "GK-laskelmassa on annosta kohti 125 g kukkakaaliriisiä ja 50 g kurkkua, joille käytetään kasvisten GI-keskiarvoa. Marinadin ainekset jäävät GK-summan ulkopuolelle.",
+      "en": "The GL calculation uses 125 g of cauliflower rice and 50 g of cucumber per serving, with the average GI for vegetables. The marinade ingredients are outside the GL sum.",
+      "sv": "GL-beräkningen använder 125 g blomkålsris och 50 g gurka per portion, med genomsnittligt GI för grönsaker. Ingredienserna i marinaden ingår inte i GL-summan.",
+      "th": "การคำนวณ GL ต่อหนึ่งที่ใช้ข้าวดอกกะหล่ำ 125 กรัมและแตงกวา 50 กรัม โดยใช้ค่า GI เฉลี่ยของกลุ่มผัก ส่วนผสมในน้ำหมักไม่รวมอยู่ในผลรวม GL"
+    },
+    "ingredientGkEvidenceSha256": "9f56087a0cdc646229ed4f830fc8558b7d9a1788407cf6da4e4241321c375462"
   },
   "kai-jiew-vhh": {
     "recipeBindingSha256": "5378555d4ab3d6bf268d3f487e7718f3c94f7976015119e624af51344d52950b",

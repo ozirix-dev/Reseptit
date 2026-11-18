@@ -83,9 +83,11 @@ const pendingRows = originalRecipes.filter(recipe => pending.has(recipe.recipeId
 const coverageRows = originalRecipes.map(recipe => {
   const evidence = glycemicLoadPortions[recipe.recipeId];
   const withheld = withholdF25Nutrition(recipe.recipeId, recipe.locale);
+  const result = resultsByRecipe.get(recipe.recipeId);
   return {
     recipeId: recipe.recipeId,
-    numeric: !withheld && resultsByRecipe.get(recipe.recipeId)?.status === "CALCULATED",
+    numeric: !withheld && result?.status === "CALCULATED",
+    recordedOmissions: (result?.omittedAvailableCarbohydratePerServingG ?? 0) > 0,
     carbs: withheld ? null : originalPortionCarbs(recipe.nutrition, evidence),
     evidence: withheld && evidence ? { driver: evidence.driver, ingredientPortion: evidence.ingredientPortion } : evidence,
     pending: pending.has(recipe.recipeId),

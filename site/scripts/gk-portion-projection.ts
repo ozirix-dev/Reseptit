@@ -62,6 +62,7 @@ interface ReviewedPortion {
   carbohydrateScope?: LocalizedText;
   localizedScopeSha256?: LocalizedText;
   classLimitation?: LocalizedText;
+  ingredientGkEvidenceSha256?: string;
   verbal?: VerbalGk;
   zeroCarbohydrate?: true;
 }
@@ -236,6 +237,10 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
     locale => review.condition?.[locale]?.trim()))) {
     throw new Error(`${recipeId}: the current original GK hold requires a localized explanation and cannot publish original GK alternatives.`);
   }
+  if (review?.ingredientGkEvidenceSha256 !== undefined && !(["fi", "en", "sv", "th"] as const).every(
+    locale => (review.condition ?? review.classLimitation)?.[locale]?.trim())) {
+    throw new Error(`${recipeId}: a GK subtotal requires a localized ingredient scope.`);
+  }
   const standaloneReview = review?.wholeCarbohydrateOnly;
   let counted: Awaited<ReturnType<typeof countedIngredientAmount>> | undefined;
   if (standaloneReview && (!review.nutritionSha256 || review.verbal || review.zeroCarbohydrate || !review.condition?.fi?.trim())) {
@@ -378,6 +383,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
   }
   if (review) portion.reviewedSource = review.publicSource ?? review.source;
   if (review?.classLimitation) portion.classLimitation = review.classLimitation;
+  if (review?.ingredientGkEvidenceSha256 !== undefined) portion.gkIngredientSubset = true;
   if (review?.condition) portion.condition = review.condition;
   if (review?.portionGrams) portion.gramsPerServing = review.portionGrams;
   if (review?.piecesPerServing) portion.piecesPerServing = review.piecesPerServing;

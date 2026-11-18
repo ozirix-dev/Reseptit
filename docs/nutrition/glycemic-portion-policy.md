@@ -28,6 +28,9 @@ alkuperäiseen annokseen.
 1. Näytä hyväksytty ainesosapohjainen piste tai nimetty skenaarioväli.
    Säilytä perusteltu likiarvo myös pienellä luottamuksella. Kerro rajaus,
    kun tuote, lisuke tai mittaustiedon vastaavuus vaikuttaa tulkintaan.
+   Kun luku kattaa vain osan ohjeen aineksista, nimeä ne ja näytä
+   rajaus GK-luvun yhteydessä reseptissä ja oppaassa. Sido rajaus
+   katselmoidun laskenta-aineiston tarkisteeseen.
 2. Sanallinen GK-luokka vaatii reseptikohtaisen perustelun
    glykeemisestä kuormasta, tunnetun annoksen, olennaisten ainesosien
    määrät, vertailutiedon ja soveltamisrajauksen. Pelkkä vähäinen
@@ -35,6 +38,11 @@ alkuperäiseen annokseen.
 3. Jos GK jää avoimeksi, näytä varmennettu koko annoksen hiilihydraattitieto
    tai rajaa tieto nimettyyn tunnettuun ainekseen tai puuttuvaan lähteeseen.
    Älä näytä osasummaa annoksen kokonaismääränä.
+
+Oppaan kattavuuden GK-luku tai vaihteluväli sisältää myös rajatut arviot.
+Nimetyille aineksille rajatut arviot ja dokumentoidun poisjätön sisältävät
+laskelmat näkyvät kahtena numeerisen kattavuuden alaryhmänä. Sama resepti
+voi kuulua molempiin.
 
 Nimetyn aineksen punnittu määrä tai kappalemäärä voidaan kertoa silloinkin,
 kun koko annoksen hiilihydraattiarvio puuttuu. Määrä tulee katselmoidusta

@@ -59,6 +59,7 @@ export interface PortionEvidence {
   condition?: LocalizedText;
   carbohydrateScope?: LocalizedText;
   classLimitation?: LocalizedText;
+  gkIngredientSubset?: true;
   piecesPerServing?: number;
   gramsPerServing?: number;
 }
@@ -114,6 +115,8 @@ export function originalPortionGk(result: PortionGkValues, multiplier = 1) {
 
 export interface GkPortionCoverage {
   originalNumeric: number;
+  numericIngredientSubset: number;
+  numericWithRecordedOmissions: number;
   originalVerbal: number;
   wholePortionCarbs: number;
   carbOnly: number;
@@ -126,18 +129,24 @@ export interface GkPortionCoverage {
 
 export function countGkPortionCoverage(rows: {
   numeric: boolean;
+  recordedOmissions?: boolean;
   carbs: PortionCarbs | null;
   evidence?: PortionEvidence;
   pending: boolean;
 }[]): GkPortionCoverage {
   const counts: GkPortionCoverage = {
-    originalNumeric: 0, originalVerbal: 0, wholePortionCarbs: 0,
+    originalNumeric: 0, numericIngredientSubset: 0, numericWithRecordedOmissions: 0,
+    originalVerbal: 0, wholePortionCarbs: 0,
     carbOnly: 0, foodNoteOnly: 0, limited: 0, pending: 0, useful: 0, total: rows.length,
   };
   for (const row of rows) {
     if (row.carbs) counts.wholePortionCarbs++;
     if (row.pending) counts.pending++;
-    if (row.numeric) counts.originalNumeric++;
+    if (row.numeric) {
+      counts.originalNumeric++;
+      if (row.evidence?.gkIngredientSubset) counts.numericIngredientSubset++;
+      if (row.recordedOmissions) counts.numericWithRecordedOmissions++;
+    }
     else if (verbalGkForPortion(row.evidence?.verbal, 1)) counts.originalVerbal++;
     else if (row.carbs) counts.carbOnly++;
     else if (row.evidence?.driver || row.evidence?.ingredientPortion) counts.foodNoteOnly++;

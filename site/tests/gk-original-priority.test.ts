@@ -84,7 +84,7 @@ test('study scope correction is pinned, immutable, and cannot be reused by a cha
 
 test('coverage copy shows original target and independent variant/study counts in every language', () => {
   for(const locale of locales){
-    const html=renderToStaticMarkup(createElement(GkCoverageSummary,{coverage:counts,portionCoverage:{ originalNumeric: counts.originalNumeric, total: counts.total, originalVerbal: 0, wholePortionCarbs: 0, carbOnly: 0, foodNoteOnly: 0, limited: counts.total - counts.originalNumeric, pending: 0, useful: counts.originalNumeric },locale}));
+    const html=renderToStaticMarkup(createElement(GkCoverageSummary,{coverage:counts,portionCoverage:{ originalNumeric: counts.originalNumeric, numericIngredientSubset: 0, numericWithRecordedOmissions: 0, total: counts.total, originalVerbal: 0, wholePortionCarbs: 0, carbOnly: 0, foodNoteOnly: 0, limited: counts.total - counts.originalNumeric, pending: 0, useful: counts.originalNumeric },locale}));
     assert.ok(html.includes(coverageCopy[locale].title));
     assert.ok(html.includes(counts.originalNumeric + '/' + counts.total));
     assert.ok(html.includes('data-gk-coverage="VARIANT_COVERAGE"><strong>' + counts.variantNumeric + '</strong>'));

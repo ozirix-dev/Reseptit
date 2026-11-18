@@ -6,6 +6,8 @@ export const coverageCopy = {
   fi: {
     title: 'Mitä tietoa resepteistä löytyy?',
     original: 'Alkuperäisreseptit, joilla on GK-luku tai vaihteluväli',
+    ingredientSubset: 'Näistä reseptit, joiden GK-luku kuvaa nimettyjen ainesten osuutta',
+    recordedOmissions: 'Näistä reseptit, joiden laskelmassa on kirjattu pois jätetyn hiilihydraatin määrä tai yläraja',
     verbal: 'Reseptit, joilla on sanallinen GK-arvio',
     carbs: 'Reseptit, joilla on koko annoksen hiilihydraattimäärä',
     carbsOnly: 'Näistä reseptit, joilla ei ole GK-arviota',
@@ -19,11 +21,13 @@ export const coverageCopy = {
     combined: 'Reseptit, joilla on GK-arvio alkuperäiselle tai erillisversiolle',
     target: 'Alkuperäisten reseptien 80 %:n tavoite',
     gap: 'Alkuperäisten reseptien arvioita tarvitaan vielä tavoitteeseen',
-    note: 'Luvut koskevat julkisia alkuperäisreseptejä. Sama resepti voi näkyä usealla rivillä, esimerkiksi GK-lukuna ja hiilihydraattimääränä. Yhteismäärässä kukin resepti lasketaan kerran. Erillisversiot ja tutkimusvertailut näytetään erikseen.',
+    note: 'Luvut koskevat julkisia alkuperäisreseptejä. Sama resepti voi näkyä usealla rivillä, esimerkiksi kun GK-luku koskee nimettyjä aineksia ja poisjättö on kirjattu. Yhteismäärässä kukin resepti lasketaan kerran. Erillisversiot ja tutkimusvertailut näytetään erikseen.',
   },
   en: {
     title: 'What information is available for recipes?',
     original: 'Original recipes with a GL number or range',
+    ingredientSubset: 'Of these, recipes with a GL estimate for selected ingredients',
+    recordedOmissions: 'Of these, recipes with a recorded amount or upper bound for carbohydrate left out of the calculation',
     verbal: 'Recipes with a GL estimate in words',
     carbs: 'Recipes with a carbohydrate amount for the whole serving',
     carbsOnly: 'Of these, recipes without a GL estimate',
@@ -37,11 +41,13 @@ export const coverageCopy = {
     combined: 'Recipes with a GL estimate for the original or a separate version',
     target: '80% target for original recipes',
     gap: 'More original-recipe estimates needed to reach the target',
-    note: 'These figures cover public original recipes. A recipe may appear on multiple lines, for example under both a GL number and carbohydrate amount. Each recipe is counted once in the combined figure. Separate versions and study comparisons are listed separately.',
+    note: 'These figures cover public original recipes. A recipe may appear on multiple lines, for example when GL covers selected ingredients and the omissions are recorded. Each recipe is counted once in the combined figure. Separate versions and study comparisons are listed separately.',
   },
   sv: {
     title: 'Vilken information finns för recepten?',
     original: 'Originalrecept med GL-värde eller GL-intervall',
+    ingredientSubset: 'Av dessa: recept där GL-värdet gäller vissa angivna ingredienser',
+    recordedOmissions: 'Av dessa: recept där mängden eller den övre gränsen för utelämnade kolhydrater har angetts',
     verbal: 'Recept med en GL-uppskattning i ord',
     carbs: 'Recept med kolhydratmängd för hela portionen',
     carbsOnly: 'Av dessa: recept utan GL-uppskattning',
@@ -55,11 +61,13 @@ export const coverageCopy = {
     combined: 'Recept med en GL-uppskattning för originalet eller en separat version',
     target: 'Mål på 80 % för originalrecept',
     gap: 'Fler originalrecept som behöver en uppskattning för att nå målet',
-    note: 'Siffrorna gäller publicerade originalrecept. Ett recept kan stå på flera rader, till exempel både under GL-värde och kolhydratmängd. I den sammanlagda siffran räknas varje recept en gång. Separata versioner och jämförelser med studieportioner redovisas för sig.',
+    note: 'Siffrorna gäller publicerade originalrecept. Ett recept kan stå på flera rader, till exempel när GL gäller vissa angivna ingredienser och utelämnade mängder har angetts. I den sammanlagda siffran räknas varje recept en gång. Separata versioner och jämförelser med studieportioner redovisas för sig.',
   },
   th: {
     title: 'มีข้อมูลอะไรบ้างสำหรับแต่ละสูตร',
     original: 'สูตรต้นฉบับที่มีค่า GL เป็นตัวเลขหรือช่วงค่า',
+    ingredientSubset: 'ในจำนวนนี้เป็นสูตรที่ค่าประมาณ GL ครอบคลุมเฉพาะวัตถุดิบที่ระบุ',
+    recordedOmissions: 'ในจำนวนนี้เป็นสูตรที่ระบุปริมาณหรือขีดจำกัดบนของคาร์โบไฮเดรตที่ตัดออกจากการคำนวณ',
     verbal: 'สูตรที่อธิบายระดับ GL เป็นคำพูด',
     carbs: 'สูตรที่ระบุปริมาณคาร์โบไฮเดรตสำหรับอาหารทั้งหนึ่งที่',
     carbsOnly: 'ในจำนวนนี้มีสูตรที่ยังไม่มีค่าประมาณ GL',
@@ -73,7 +81,7 @@ export const coverageCopy = {
     combined: 'สูตรที่มีค่าประมาณ GL สำหรับสูตรเดิมหรือสูตรที่ปรับแยกต่างหาก',
     target: 'เป้าหมาย 80% สำหรับสูตรเดิม',
     gap: 'จำนวนสูตรเดิมที่ยังต้องมีค่าประมาณเพื่อให้ถึงเป้าหมาย',
-    note: 'ตัวเลขนี้นับเฉพาะสูตรต้นฉบับที่เผยแพร่แล้ว สูตรเดียวกันอาจอยู่ได้หลายรายการ เช่น มีทั้งค่า GL และปริมาณคาร์โบไฮเดรต แต่ในยอดรวมจะนับสูตรละหนึ่งครั้ง สูตรเวอร์ชันแยกและการเปรียบเทียบกับหน่วยบริโภคในงานวิจัยแสดงแยกต่างหาก',
+    note: 'ตัวเลขนี้นับเฉพาะสูตรต้นฉบับที่เผยแพร่แล้ว สูตรเดียวกันอาจอยู่ได้หลายรายการ เช่น เมื่อค่า GL ครอบคลุมเฉพาะวัตถุดิบที่ระบุและมีข้อมูลปริมาณที่ตัดออก ยอดรวมนับสูตรละหนึ่งครั้ง สูตรเวอร์ชันแยกและการเปรียบเทียบกับหน่วยบริโภคในงานวิจัยแสดงแยกต่างหาก',
   },
 } satisfies Record<RecipeLocale, Record<string, string>>;
 
@@ -89,6 +97,8 @@ export function GkCoverageSummary({ coverage: c, portionCoverage: p, locale }: {
     <summary id="gk-original-coverage-title">{t.title}</summary>
     <p data-gk-coverage="ORIGINAL_COVERAGE"><strong>{p.originalNumeric}/{p.total} ({percent.format(p.total ? p.originalNumeric / p.total : 0)})</strong> — {t.original}</p>
     <ul>
+      {p.numericIngredientSubset > 0 ? <li data-gk-coverage="NUMERIC_INGREDIENT_SUBSET"><strong>{p.numericIngredientSubset}</strong> — {t.ingredientSubset}</li> : null}
+      {p.numericWithRecordedOmissions > 0 ? <li data-gk-coverage="NUMERIC_RECORDED_OMISSIONS"><strong>{p.numericWithRecordedOmissions}</strong> — {t.recordedOmissions}</li> : null}
       <li data-gk-coverage="ORIGINAL_VERBAL"><strong>{p.originalVerbal}/{p.total}</strong> — {t.verbal}</li>
       <li data-gk-coverage="WHOLE_PORTION_CARBS"><strong>{p.wholePortionCarbs}/{p.total}</strong> — {t.carbs}</li>
       <li data-gk-coverage="CARBS_ONLY"><strong>{p.carbOnly}</strong> — {t.carbsOnly}</li>

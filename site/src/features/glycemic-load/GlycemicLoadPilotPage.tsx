@@ -278,7 +278,9 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
         && !portion.ingredientPortion?.carbohydrateAlternatives?.some(choice => choice.source === portion.reviewedSource)
         ? <p><ReviewedPortionSource source={portion.reviewedSource} locale={locale} /></p> : null}
       {result.status === "CALCULATED" ? <>
-        <p className="gk-evidence__value"><strong>{text.value} · {numericText}</strong></p>
+        <p className="gk-evidence__value" data-gk-ingredient-subset={portion?.gkIngredientSubset}>
+          <strong>{portion?.gkIngredientSubset ? portionWords.ingredientGk : text.value} · {numericText}</strong>
+        </p>
         {gkClass.text ? <p data-original-gk-class={gkClass.category}>{gkClass.text}</p> : null}
         <OriginalGkCoverageNote coverage={result.originalGkCoverage} locale={locale} />
         {portion?.alternatives ? <GkAlternatives choices={portion.alternatives} locale={locale} /> : null}

@@ -85,8 +85,9 @@ export function RecipePage() {
       sv: "Dokumenterade små mängder har utelämnats ur beräkningen. Deras sammanlagda mängd eller dokumenterade övre gräns redovisas separat. Detta är en modellerad ingrediensberäkning, inte ett uppmätt måltidssvar. Biologisk osäkerhet har inte kvantifierats.",
       th: "การคำนวณนี้ไม่รวมส่วนผสมปริมาณเล็กน้อยที่มีการบันทึกไว้ โดยแสดงปริมาณรวมหรือขีดจำกัดบนที่มีข้อมูลรองรับแยกไว้ เป็นค่าประมาณจากวัตถุดิบ ไม่ใช่ผลตอบสนองจากมื้ออาหารที่วัดจริง ยังไม่ทราบช่วงความไม่แน่นอนทางชีวภาพเป็นตัวเลข",
     }[recipe.locale]
-    : {"fi": "Kaikki imeytyvät hiilihydraatit ovat mukana. Ei pieniä pois jätettyjä osuuksia. Mallinnettu ainesosalaskelma, ei aterialla mitattu vaste. Numeerista biologista epävarmuusväliä ei tunneta.", "en": "The estimate includes all available carbohydrate. This is a modeled ingredient estimate, not a measured meal response. Biological uncertainty has not been quantified.", "sv": "Alla tillgängliga kolhydrater ingår utan utelämnade små mängder. Detta är en modellerad ingrediensberäkning, inte ett uppmätt måltidssvar. Biologisk osäkerhet har inte kvantifierats.", "th": "รวมคาร์โบไฮเดรตที่ใช้ได้ทั้งหมดโดยไม่ตัดส่วนเล็กน้อยออก เป็นค่าประมาณจากวัตถุดิบ ไม่ใช่ผลตอบสนองจากมื้ออาหารที่วัดจริง ยังไม่ทราบช่วงความไม่แน่นอนทางชีวภาพเป็นตัวเลข"}[recipe.locale];
+    : {"fi": "Laskelma kattaa ohjeen ainesluettelon imeytyvät hiilihydraatit. Tulos perustuu ainesosien mallinnukseen. Numeerista biologista epävarmuusväliä ei tunneta.", "en": "The calculation covers the available carbohydrate in the listed ingredients. It models their contributions. Biological uncertainty has not been quantified.", "sv": "Beräkningen omfattar de tillgängliga kolhydraterna i de angivna ingredienserna. Resultatet bygger på en ingrediensmodell. Biologisk osäkerhet har inte kvantifierats.", "th": "การคำนวณครอบคลุมคาร์โบไฮเดรตที่ใช้ได้ในวัตถุดิบตามรายการ ผลเป็นค่าจากแบบจำลองวัตถุดิบ ยังไม่ทราบช่วงความไม่แน่นอนทางชีวภาพเป็นตัวเลข"}[recipe.locale];
   const portionEvidence = glycemicRecipe?.portionEvidence;
+  const ingredientGk = portionEvidence?.gkIngredientSubset;
   const gkMethodLink = <p className="recipe-glycemic-load__caption">
     <Link to={`${glycemicLoadPath(locale)}#${recipe.recipeId}`} aria-label={`${gkCopy[locale].see} · ${recipe.title}`}>
       {gkCopy[locale].see} ↗
@@ -141,7 +142,7 @@ export function RecipePage() {
           multiplier={eatenPortion} batchServings={servings} onChange={hydrated && (portionCarbs || glycemicLoad || portionEvidence?.verbal || portionEvidence?.ingredientPortion) ? setEatenPortion : undefined} />
         {withholdNutrition ? <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status={undefinedGkLabel ? "NOT_DEFINED" : "WITHHELD_SOURCE_REVIEW"}><p className="recipe-disclosure">{undefinedGkLabel ? <><strong>{undefinedGkLabel}</strong>. Tähän valmistusversioon ei ole riittävästi luotettavaa GI-lähdetietoa GK:n laskentaan.</> : "GK-arviota ei näytetä ennen tämän reseptin raaka-aine- ja ravintoarvoperustan uudelleentarkistusta."}</p></div> : glycemicLoad ? <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status="CALCULATED">
           {scaled?.standardServingOnly ? <p aria-live="polite">{portionWords.roundedServingOnly}</p> : <dl className="nutrition-list"><div>
-            <dt>{glycemicLoad.assessmentType ? modeledGlLabel : labels.glycemicLoad}</dt>
+            <dt data-gk-ingredient-subset={ingredientGk}>{ingredientGk ? portionWords.ingredientGk : glycemicLoad.assessmentType ? modeledGlLabel : labels.glycemicLoad}</dt>
             <dd aria-live="polite" data-portion-gk>{glValue}{eatenPortion === 1 ? ` ${glUnit}` : ""}</dd>
           </div></dl>}
           {gkClass.text ? <p className="recipe-glycemic-load__class" data-original-gk-class={gkClass.category}>{gkClass.text}</p> : null}
@@ -152,7 +153,7 @@ export function RecipePage() {
           <EstimateDetails result={glycemicLoad} locale={locale}
             notes={<>
               <EstimateSummary result={glycemicLoad} locale={locale} />
-              {glycemicLoad.assessmentType && !glycemicLoad.closedRecoveryC && !glycemicLoad.boundedPolyolC ? <p>{modelledNote}</p> : null}
+              {glycemicLoad.assessmentType && !ingredientGk && !glycemicLoad.closedRecoveryC && !glycemicLoad.boundedPolyolC ? <p>{modelledNote}</p> : null}
               {!glycemicLoad.assessmentType ? <p>{labels.glycemicLoadNote}</p> : null}
               {glycemicLoad.omittedAvailableCarbohydratePerServingG > 0 && !glycemicLoad.originalGkCoverage
                 ? <p>{labels.glycemicLoadOmission(new Intl.NumberFormat(numberLocale, { maximumSignificantDigits: 1 }).format(glycemicLoad.omittedAvailableCarbohydratePerServingG))}</p>

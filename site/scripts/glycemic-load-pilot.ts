@@ -390,6 +390,12 @@ const legacyPublicResults = results.flatMap((result) => {
     }];
   }) : [];
   const review = reviewedPortions[result.recipeId];
+  if (review?.ingredientGkEvidenceSha256 !== undefined && (
+    result.status !== "CALCULATED" || result.ingredients !== currentLegacyInputs.get(result.recipeId)?.ingredients
+    || review.ingredientGkEvidenceSha256 !== calculationEvidenceHashes[result.recipeId]
+  )) {
+    throw new Error(`${result.recipeId}: re-review the GK subtotal against the current calculation evidence.`);
+  }
   const omission = result.omittedAvailableCarbohydratePerServingG;
   const upperBound = result.omittedAvailableCarbohydrateUpperBoundPerServingG;
   let originalGkCoverage: OriginalGkCoverage | undefined;

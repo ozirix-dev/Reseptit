@@ -62,6 +62,20 @@ test("reviewed verbal GK only applies to the approved recipe portion and current
   }), /notice requires a current verbal estimate/);
 });
 
+test("reviewed ingredient GK subtotals require a preparation-bound scope in every language", async () => {
+  const id = "khao-kha-moo-vhh";
+  const recipe = await readFile(path.join(root, "reseptit/paaruoat", `${id}.md`), "utf8");
+  const review = (await loadReviewedPortions(root))[id];
+  const { portion } = await projectPortionEvidence(root, id, recipe, review);
+  assert.equal(portion.gkIngredientSubset, true);
+  await assert.rejects(projectPortionEvidence(root, id, recipe, {
+    ...review, condition: { ...review.condition!, th: "" },
+  }), /subtotal requires a localized ingredient scope/);
+  await assert.rejects(projectPortionEvidence(root, id, recipe, {
+    ...review, preparationSha256: "changed",
+  }), /preparation or serving notes changed/);
+});
+
 test("partial ingredient quantities remain separate from the whole portion and its GK class", async () => {
   const reviews = await loadReviewedPortions(root);
   const bananaId = "malesialainen-kookos-banaanikulho";

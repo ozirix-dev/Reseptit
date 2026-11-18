@@ -347,6 +347,39 @@ test("numeric original GK follows the same class on the recipe, in the guide and
   assert.deepEqual([...checkedClasses].sort(), ["HIGH", "LOW", "MEDIUM"]);
 });
 
+test("guide coverage and recipe labels distinguish documented GK ingredient subsets from recorded omissions", async () => {
+  const subsets = [
+    "gai-yang-vhh", "jauhelihakastike-kesakurpitsanuudeleilla", "kana-yakitori-kaalilla",
+    "kanakorma-kukkakaaliriisilla", "khao-kha-moo-vhh", "khao-man-gai-vhh",
+    "kiinalainen-soijamaito-aamiaisella", "lahi-ita-ful-medames", "larb-moo-vhh",
+    "lihapullat-kermakastikkeessa-vhh", "medu-vada",
+  ];
+  const numeric = [...glycemicLoadPilotResults, ...glycemicLoadAdditionalResults].filter(row => row.status === "CALCULATED");
+  const tagged = numeric.filter(row => row.portionEvidence?.gkIngredientSubset);
+  assert.deepEqual(tagged.map(row => row.recipeId).sort(), subsets);
+  assert.ok(tagged.some(row => row.omittedAvailableCarbohydratePerServingG === 0));
+  assert.ok(tagged.some(row => row.omittedAvailableCarbohydratePerServingG > 0));
+  const omissionCount = numeric.filter(row => row.omittedAvailableCarbohydratePerServingG > 0).length;
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const guide = await readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8");
+    assert.ok(guide.includes(`data-gk-coverage="NUMERIC_INGREDIENT_SUBSET"><strong>${subsets.length}</strong>`), locale);
+    assert.ok(guide.includes(`data-gk-coverage="NUMERIC_RECORDED_OMISSIONS"><strong>${omissionCount}</strong>`), locale);
+    assert.equal(guide.match(/data-gk-ingredient-subset="true"/g)?.length, subsets.length, locale);
+    for (const recipeId of subsets) {
+      const recipe = siteContent.recipes.find(row => row.recipeId === recipeId && row.locale === locale);
+      assert.ok(recipe, `${recipeId}/${locale}`);
+      const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+      assert.ok(html.includes(`<dt data-gk-ingredient-subset="true">${portionCopy[locale].ingredientGk}</dt>`), recipe.routePath);
+      const start = guide.indexOf(`<li id="${recipeId}" class="glycemic-pilot__recipe"`);
+      assert.ok(start > -1, recipe.routePath);
+      const end = guide.indexOf('class="glycemic-pilot__recipe"', start + `<li id="${recipeId}" class="glycemic-pilot__recipe"`.length);
+      const row = guide.slice(start, end < 0 ? undefined : end);
+      assert.ok(row.includes(`data-gk-ingredient-subset="true"><strong>${portionCopy[locale].ingredientGk}`), recipe.routePath);
+      assert.equal(glycemicLoadFilterCategories[recipeId], undefined, recipe.routePath);
+    }
+  }
+});
+
 test("khao kha moo identifies the vegetable-side GK and withholds the whole-serving class", async () => {
   const id = "khao-kha-moo-vhh";
   const result = glycemicLoadPilotResults.find(row => row.recipeId === id);
@@ -1245,10 +1278,10 @@ test('all twelve candidate recipe pages show the modeled label and carbohydrate 
 
 test('modeled calculation details disclose omissions in every locale and retain omission-free controls',async()=>{
   const copy={
-    fi:{omitted:'Dokumentoituja pieniä osuuksia on jätetty pois',none:'Ei pieniä pois jätettyjä osuuksia',method:'Mahdolliset pienet poisrajaukset',path:'glykeeminen-kuorma',oldMethod:'Tässä polussa kaikki imeytyvät hiilihydraatit lasketaan mukaan eikä pieniä osuuksia jätetä pois.'},
-    en:{omitted:'Small amounts of available carbohydrate are left out',none:'The estimate includes all available carbohydrate',method:'Each recipe shows the total amount of available carbohydrate left out',path:'en/glycemic-load',oldMethod:'This path includes all available carbohydrate and omits no small portions.'},
-    sv:{omitted:'Dokumenterade små mängder har utelämnats',none:'utan utelämnade små mängder',method:'Eventuella utelämnade små mängder',path:'sv/glykemisk-belastning',oldMethod:'Här räknas alla tillgängliga kolhydrater med utan utelämnade små mängder.'},
-    th:{omitted:'การคำนวณนี้ไม่รวมส่วนผสมปริมาณเล็กน้อย',none:'โดยไม่ตัดส่วนเล็กน้อยออก',method:'หากมีส่วนผสมปริมาณเล็กน้อยที่ไม่รวมในการคำนวณ',path:'th/glycemic-load',oldMethod:'แนวทางนี้รวมคาร์โบไฮเดรตที่ใช้ได้ทั้งหมดโดยไม่ตัดส่วนเล็กน้อยออก'},
+    fi:{omitted:'Dokumentoituja pieniä osuuksia on jätetty pois',none:'Laskelma kattaa ohjeen ainesluettelon imeytyvät hiilihydraatit',method:'Mahdolliset pienet poisrajaukset',path:'glykeeminen-kuorma',oldMethod:'Tässä polussa kaikki imeytyvät hiilihydraatit lasketaan mukaan eikä pieniä osuuksia jätetä pois.'},
+    en:{omitted:'Small amounts of available carbohydrate are left out',none:'The calculation covers the available carbohydrate in the listed ingredients',method:'Each recipe shows the total amount of available carbohydrate left out',path:'en/glycemic-load',oldMethod:'This path includes all available carbohydrate and omits no small portions.'},
+    sv:{omitted:'Dokumenterade små mängder har utelämnats',none:'Beräkningen omfattar de tillgängliga kolhydraterna i de angivna ingredienserna',method:'Eventuella utelämnade små mängder',path:'sv/glykemisk-belastning',oldMethod:'Här räknas alla tillgängliga kolhydrater med utan utelämnade små mängder.'},
+    th:{omitted:'การคำนวณนี้ไม่รวมส่วนผสมปริมาณเล็กน้อย',none:'การคำนวณครอบคลุมคาร์โบไฮเดรตที่ใช้ได้ในวัตถุดิบตามรายการ',method:'หากมีส่วนผสมปริมาณเล็กน้อยที่ไม่รวมในการคำนวณ',path:'th/glycemic-load',oldMethod:'แนวทางนี้รวมคาร์โบไฮเดรตที่ใช้ได้ทั้งหมดโดยไม่ตัดส่วนเล็กน้อยออก'},
   };
   for(const locale of ['fi','en','sv','th'] as const){
     let omitted=0,complete=0;const expected=copy[locale];
