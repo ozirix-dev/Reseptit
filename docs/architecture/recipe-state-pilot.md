@@ -45,6 +45,15 @@ ulkopuolelle. Epäselvä seuraajasidos ilmoitetaan `conflicts`-listassa ja
 lähdetunnukset säilyvät erillisinä, kunnes omistava rekisteri ratkaisee sidoksen.
 `publicState`, käännöskatselmointi ja `currentBlockers` kuvaavat eri päätöksiä.
 
+`verifiedRawGkRelease` kertoo käytössä olevan julkaisulaskennan tarkistaman
+FI-lähdepolun, tiivisteen, tuloksen ja evidenssitiedoston. Kun ne vastaavat
+nykyistä lähdettä ja näkyvää arviota ja buildin annosjako, ainesosat,
+valmistus ja muistiinpanot täsmäävät tarkistettuun FI-lähteeseen,
+vanhan reseptisidonnan ero säilyy kentässä
+`historicalSourceBindingDifference`. Raakalaskennan auditointi säilyttää
+alkuperäisen poikkeaman. Muuttunut julkaistu ohje, puuttuva varmennus sekä
+laskentasyötteen ja lähdeaineiston erot kuuluvat `bindingDifferences`-kenttään.
+
 ## Lähtömittaus
 
 Lähtöcommit `5eab296998caa06143b06e1adf3f09f9d7dfed6d`. Projektion

@@ -124,6 +124,51 @@ test("effective FI and evidence statuses preserve the build, including absent or
   }
 });
 
+test("current release pins distinguish historical source differences from open publication checks", () => {
+  for (const id of ["koshari", "jauheliha-kaalikeitto-vhh", "uunikanapasta-kesakurpitsa"]) {
+    const row = withId(id);
+    const status = row.glycemicLoadStatus;
+    assert.equal(status.historicalSourceBindingDifference, true, id);
+    assert.ok(!status.bindingDifferences.includes("source"), id);
+    assert.equal(status.verifiedRawGkRelease?.sourcePath, row.sourcePath, id);
+    assert.equal(status.verifiedRawGkRelease?.sourceSha256, row.contentHash, id);
+    assert.equal(status.verifiedRawGkRelease?.point, status.publicOriginal?.point, id);
+  }
+  const editorial = withId("thai-kookosriisi-mangolla");
+  assert.ok(editorial.effectiveContentHash);
+  assert.ok(editorial.glycemicLoadStatus.verifiedRawGkRelease);
+  assert.ok(editorial.glycemicLoadStatus.bindingDifferences.includes("source"));
+  assert.equal(editorial.glycemicLoadStatus.historicalSourceBindingDifference, undefined);
+
+  const id = "koshari";
+  const unverified = projectRecipeState(commit, { ...inputs, verifiedOriginalReleasePresentation: new Set<string>() });
+  const unverifiedStatus = unverified.recipes.find(row => row.sourceRecipeId === id)!.glycemicLoadStatus;
+  assert.ok(unverifiedStatus.bindingDifferences.includes("source"));
+  assert.ok(unverifiedStatus.verifiedRawGkRelease);
+  assert.equal(unverifiedStatus.historicalSourceBindingDifference, undefined);
+  const releases = inputs.glycemic.originalReleaseBindings!;
+  const exact = releases[id];
+  for (const invalid of [
+    { ...exact, sourcePath: "reseptit/paaruoat/different-source.md" },
+    { ...exact, sourceSha256: "0".repeat(64) },
+    { ...exact, point: (exact.point ?? 0) + 1 },
+    { ...exact, servings: exact.servings + 1 },
+  ]) {
+    const changed = projectRecipeState(commit, { ...inputs, glycemic: {
+      ...inputs.glycemic, originalReleaseBindings: { ...releases, [id]: invalid },
+    } });
+    const status = changed.recipes.find(row => row.sourceRecipeId === id)!.glycemicLoadStatus;
+    assert.ok(status.bindingDifferences.includes("source"));
+    assert.equal(status.historicalSourceBindingDifference, undefined);
+    assert.equal(status.verifiedRawGkRelease, undefined);
+    assert.deepEqual(status.publicOriginal, withId(id).glycemicLoadStatus.publicOriginal);
+  }
+  const oldReport = projectRecipeState(commit, { ...inputs, glycemic: {
+    ...inputs.glycemic, originalReleaseBindings: undefined,
+  } });
+  assert.ok(oldReport.recipes.find(row => row.sourceRecipeId === id)?.glycemicLoadStatus.bindingDifferences.includes("source"));
+});
+
 test("draft translations and stale pair reviews stay distinct from publication", () => {
   const reviewed = inputs.review.rows.find(row => row.codex_review_status === "REVIEW CURRENT" && row.codex_review)!;
   const candidate = state.recipes.find(row => row.publicSlug && row.sourceRecipeId !== reviewed.recipe_id)!;

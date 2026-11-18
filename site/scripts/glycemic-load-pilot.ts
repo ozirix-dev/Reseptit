@@ -22,6 +22,7 @@ import {buildGkOnlyVariants} from './gk149-integration';
 import {buildApprovedSevenVariants} from './gk-next-seven';
 import {countGkVersions} from '../src/features/recipes/gk-only-types';
 import {catalogSourceApplication} from "./gk80-source-classification";
+import type { OriginalGkReleaseBinding } from "./gk80-release";
 import {applyScopedPolyolC} from './gk80-polyol-c';
 import {applyRecovery} from './gk80-uunikanapasta';
 import {withdrawQ09Tea} from './gk80-q09-withdrawal';
@@ -232,7 +233,10 @@ const legacyResults = rawResults.map((result) => {
     giRecords.find((record) => record.id === ingredient.giRecordId)?.evidenceKind === "PUBLISHED_IMPUTATION");
   return usesImputation ? {...result, assessmentType: "PUBLISHED_IMPUTATION" as const, modelScenario: "POINT_SCENARIO" as const} : result;
 });
-const results = await applyScopedPolyolC(root, await applyRecovery(root, await withdrawQ09Tea(root, await applyGk80Release(root, legacyResults))));
+const originalReleaseBindings = new Map<string, OriginalGkReleaseBinding>();
+const gk80Results = await applyGk80Release(root, legacyResults, originalReleaseBindings);
+const recoveredResults = await applyRecovery(root, await withdrawQ09Tea(root, gk80Results), originalReleaseBindings);
+const results = await applyScopedPolyolC(root, recoveredResults, originalReleaseBindings);
 const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root),buildBlueberryPieVariant(root),...buildThreeCurryVariants(root),buildLindstromBrineVariant(root),...buildReviewedGkVariants(root),...buildPohaHoneyMustardVariants(root),...buildTehoajoVariants(root),...buildTwoAlmondPieVariants(root),...loadAuthorizedGk100Variants(root)];
 const versionCoverage = countGkVersions(results,gkOnlyVariants);
 const report = {
@@ -258,6 +262,7 @@ const report = {
   sourceHashes,
   calculationInputHashes,
   calculationEvidenceHashes,
+  originalReleaseBindings: Object.fromEntries(originalReleaseBindings),
   results,
   gkOnlyVariants,
   versionCoverage,

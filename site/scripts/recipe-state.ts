@@ -130,8 +130,22 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
     if (fi && !visibleGk && !pending) conflicts.push({ recipeId: id, code: "missing-public-gk-disposition", paths: [source.file] });
     if (pending && pending.sourceBlobSha !== source.blob) throw Error(`GK pending source mismatch: ${source.file}`);
     if (pending) currentBlockers.push({ scope: "glycemic-load", code: pending.reason });
+    const release = inputs.glycemic.originalReleaseBindings?.[id];
+    const rawReleaseMatches = release?.sourcePath === source.file && release.sourceSha256 === source.hash;
+    const releasedRange = gk?.glycemicLoadRangePerServing;
+    const visibleRange = visibleGk?.glycemicLoadRangePerServing;
+    const releaseMatchesPublic = rawReleaseMatches && publicState === "visible" &&
+      gk?.status === "CALCULATED" && visibleGk?.status === "CALCULATED" &&
+      (visibleGk.glycemicLoadPerServing != null || visibleRange != null) &&
+      release.servings === gk.servings && release.servings === fi?.servings &&
+      gk.glycemicLoadPerServing === release.point && release.point === visibleGk.glycemicLoadPerServing &&
+      releasedRange?.min === release.range?.min && release.range?.min === visibleRange?.min &&
+      releasedRange?.max === release.range?.max && release.range?.max === visibleRange?.max;
+    const legacySourceDifference = inputs.glycemic.recipeBindingMismatches.includes(id);
+    const historicalSourceDifference = legacySourceDifference && releaseMatchesPublic &&
+      inputs.verifiedOriginalReleasePresentation.has(id);
     const bindingDifferences = [
-      ...(inputs.glycemic.recipeBindingMismatches.includes(id) ? ["source"] : []),
+      ...(legacySourceDifference && !historicalSourceDifference ? ["source"] : []),
       ...(inputs.glycemic.calculationInputMismatches.includes(id) ? ["input"] : []),
       ...(inputs.glycemic.calculationEvidenceMismatches.includes(id) ? ["evidence"] : []),
     ];
@@ -160,7 +174,10 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
         calculationInputSha256: inputs.glycemic.calculationInputHashes[id] ?? null,
         calculationEvidenceSha256: inputs.glycemic.calculationEvidenceHashes[id] ?? null,
         calculationContextSha256: gkInput ? gkResearchCalculationContextHash(gkInput) : null,
-        bindingDifferences, variants,
+        bindingDifferences,
+        ...(historicalSourceDifference ? { historicalSourceBindingDifference: true } : {}),
+        ...(releaseMatchesPublic ? { verifiedRawGkRelease: release } : {}),
+        variants,
       },
       imageStatus: { state: imageState, path: imagePath, gitBlob: imageBlob },
       currentBlockers,
@@ -173,6 +190,7 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
         ...(languages.some(l => l.review) ? [semanticEvidencePath, humanReviewPath] : []),
         ...(nutritionRow?.calculationEvidence ? [nutritionRow.calculationEvidence] : []),
         ...(gk || variants.length ? [gkBindingPath] : []), ...(pending ? [gkPendingPath] : []),
+        ...(releaseMatchesPublic ? [release.evidencePath] : []),
         ...(f25Decision || previousF25 ? [f25SourceReleaseGatePath] : []),
         ...(imageBlob && imagePath ? [imagePath] : [])],
     }];

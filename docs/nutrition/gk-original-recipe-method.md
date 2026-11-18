@@ -80,7 +80,9 @@ node --import tsx scripts/gk-research-queue.ts 10 idli-sambar vhh-mansikkakakku
   numeerista arviota tai vaihteluväliä, jonka sidonnassa ei ole havaittu
   ristiriitaa. Julkisen arvion sidontaristiriita ohjataan `review`-jonoon
   nykyiseen julkaisulähteiden auditointiin. `hasPublicEstimate` kertoo
-  erikseen, näkyykö arvio jo julkisessa näkymässä.
+  erikseen, näkyykö arvio jo julkisessa näkymässä. Tarkka uudempi
+  julkaisusidonta voi osoittaa vanhan lähde-eron historialliseksi, kun myös
+  näkyvä ohje ja tulos täsmäävät. Jono näyttää tämän tiedon erikseen.
   Käytä myös nykyisiä hyväksyntärekistereitä, kuten tähän asti.
 - `skip` koskee vain saman GI/GK-lähdetutkimuksen toistamista. Se ei estä
   hiilihydraatti-, annos- tai ainesosatiedon parantamista, turvallisuus-
