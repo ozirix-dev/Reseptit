@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-18",
+  "main": "e8ed43ed525a9cb6abbe61b94bc1c036153979c7",
+  "candidate": "cc85ff7abad6f253158b658d22dfbe27b1bf42bf",
+  "status": "RESEARCH_ONLY",
+  "euDefinitions": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A02011R1169-20250401",
+  "recipes": [
+    {
+      "recipeId": "punajuuririsotto",
+      "sourcePath": "reseptit/paaruoat/punajuuririsotto.md",
+      "originalSha256": "72f1044762cdf14df4861cc665f2b34236f4868766fad8a5f917b05700b176eb",
+      "blob": "77c50774f6ab3dfd2044cbba465d92ef37f37628",
+      "servings": 5,
+      "researchStatus": "HOLD_SOURCE",
+      "approvedAvailableCarbohydrateGPerServing": null,
+      "approvedGk": null
+    },
+    {
+      "recipeId": "marry-me-kanapasta",
+      "sourcePath": "reseptit/paaruoat/marry-me-kanapasta.md",
+      "originalSha256": "fb715841d6057416b6f7b1edbee62f610f6ed2b6933239ed8cd3dfc6499bd2fb",
+      "blob": "58aab0422b0cd5d272b128a22e2964ae1dca9569",
+      "servings": 4,
+      "researchStatus": "HOLD_SOURCE",
+      "approvedAvailableCarbohydrateGPerServing": null,
+      "approvedGk": null
+    },
+    {
+      "recipeId": "sitruuna-parsapasta",
+      "sourcePath": "reseptit/paaruoat/sitruuna-parsapasta.md",
+      "originalSha256": "7ffb454b194eab5be351e136c0c76bf99f2f53acca5d6286e3a23b2d4785f44d",
+      "blob": "8c09a091d9ef1a41a6cefa1129846230c8bd6706",
+      "servings": 3,
+      "researchStatus": "HOLD_SOURCE",
+      "approvedAvailableCarbohydrateGPerServing": null,
+      "approvedGk": null
+    },
+    {
+      "recipeId": "linssimakaronilaatikko",
+      "sourcePath": "reseptit/paaruoat/linssimakaronilaatikko.md",
+      "originalSha256": "212bfd0d62d373a88de0263b06b094377fee0017968027ccae7f1bf0ac3c05d2",
+      "blob": "f198838138c9d64b5220286413631e0514dba2e6",
+      "servings": 6,
+      "researchStatus": "HOLD_SOURCE",
+      "approvedAvailableCarbohydrateGPerServing": null,
+      "approvedGk": null
+    },
+    {
+      "recipeId": "uunifetapasta-kirsikkatomaateilla",
+      "sourcePath": "reseptit/paaruoat/uunifetapasta-kirsikkatomaateilla.md",
+      "originalSha256": "54548784939cd3325bab48d3cd6e341898c8a0c0e58d71202fa1112f7c9e936f",
+      "blob": "5dfcaff08cbe68a286bd67681b4c08c307b6fe60",
+      "servings": 4,
+      "researchStatus": "HOLD_SOURCE",
+      "approvedAvailableCarbohydrateGPerServing": null,
+      "approvedGk": null
+    },
+    {
+      "recipeId": "rasvakaakao-rouva-keto",
+      "sourcePath": "reseptit/aamupalat/rasvakaakao-rouva-keto.md",
+      "originalSha256": "cee8e96ca2cf02ccbafadb92d5d02ffa5755975cfc1bd3f6d519e29d60634299",
+      "blob": "6406a8e8451b973b4b70c9009b5815ca63f5e1aa",
+      "servings": 1,
+      "researchStatus": "HOLD_SOURCE",
+      "approvedAvailableCarbohydrateGPerServing": null,
+      "approvedGk": null,
+      "inputPath": "docs/nutrition/calculations/rasvakaakao-rouva-keto.json",
+      "inputSha256": "ac1a88c6fdc720330ffb50858a90e76ae846a0e4c884494d3189659ee8154af5",
+      "ingredientInputs": [
+        {
+          "item": "makeuttamatonta kaakaojauhetta",
+          "gramsPerBatch": 6,
+          "recordId": "foodin-raw-cocoa-250g",
+          "source": "https://foodin.fi/tuote/kaakaojauhe-luomu-raaka-250g/",
+          "basis": "EU_LABEL_PER_100_G_AS_SOLD",
+          "labelOrReferenceCarbohydrateGPer100g": 22,
+          "labelOrReferenceSugarsGPer100g": 0.8,
+          "verifiedPolyolsGPer100g": null,
+          "sugarsGPerServing": 0.048,
+          "labelOrReferenceCarbohydrateGPerServing": 1.32
+        },
+        {
+          "item": "suolatonta voita",
+          "gramsPerBatch": 8,
+          "recordId": "valio-6408430030026",
+          "source": "https://www.valio.fi/tuotteet/valio-voi-suolaamaton/",
+          "basis": "EU_LABEL_PER_100_G_AS_SOLD",
+          "labelOrReferenceCarbohydrateGPer100g": 0.8,
+          "labelOrReferenceSugarsGPer100g": 0.8,
+          "verifiedPolyolsGPer100g": null,
+          "sugarsGPerServing": 0.064,
+          "labelOrReferenceCarbohydrateGPerServing": 0.064
+        },
+        {
+          "item": "neitsytkookosöljyä",
+          "gramsPerBatch": 8,
+          "recordId": "foodin-virgin-coconut-oil-1l",
+          "source": "https://foodin.fi/tuote/kylmapuristettu-neitsytkookosoljy-1l/",
+          "basis": "EU_LABEL_PER_100_G_AS_SOLD",
+          "labelOrReferenceCarbohydrateGPer100g": 0,
+          "labelOrReferenceSugarsGPer100g": 0,
+          "verifiedPolyolsGPer100g": null,
+          "sugarsGPerServing": 0,
+          "labelOrReferenceCarbohydrateGPerServing": 0
+        },
+        {
+          "item": "kuohukermaa (35 % rasvaa)",
+          "gramsPerBatch": 30,
+          "recordId": "valio-6408430001538",
+          "source": "https://www.valio.fi/tuotteet/valio-keittion-kuohukerma-laktoositon/2-dl-tolkki/",
+          "basis": "EU_LABEL_PER_100_G_AS_SOLD",
+          "labelOrReferenceCarbohydrateGPer100g": 3,
+          "labelOrReferenceSugarsGPer100g": 3,
+          "verifiedPolyolsGPer100g": null,
+          "sugarsGPerServing": 0.9,
+          "labelOrReferenceCarbohydrateGPerServing": 0.9
+        },
+        {
+          "item": "Lindt Excellence 90 % -tummaa suklaata",
+          "gramsPerBatch": 15,
+          "recordId": "lindt-3046920029759",
+          "source": "https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759",
+          "basis": "EU_LABEL_PER_100_G_AS_SOLD",
+          "labelOrReferenceCarbohydrateGPer100g": 14,
+          "labelOrReferenceSugarsGPer100g": 7,
+          "verifiedPolyolsGPer100g": null,
+          "sugarsGPerServing": 1.05,
+          "labelOrReferenceCarbohydrateGPerServing": 2.1
+        },
+        {
+          "item": "vettä",
+          "gramsPerBatch": 200,
+          "recordId": "usda-sr-173647",
+          "source": "https://fdc.nal.usda.gov/food-details/173647/nutrients",
+          "basis": "ZERO_COMPOSITION_REFERENCE",
+          "labelOrReferenceCarbohydrateGPer100g": 0,
+          "labelOrReferenceSugarsGPer100g": 0,
+          "verifiedPolyolsGPer100g": 0,
+          "sugarsGPerServing": 0,
+          "labelOrReferenceCarbohydrateGPerServing": 0
+        }
+      ],
+      "referenceProductsOnly": {
+        "sugarsGPerServing": 2.062,
+        "euDeclaredCarbohydrateGPerServing": 4.384
+      },
+      "nutritionModel": {
+        "status": "INSUFFICIENT SOURCE DATA",
+        "availableCarbohydrateGPerServing": null,
+        "netCarbohydrateGPerServing": null,
+        "totalCarbohydrateGPerServing": null
+      }
+    },
+    {
+      "recipeId": "lammin-chia-puuro-rouva-keto",
+      "sourcePath": "reseptit/aamupalat/lammin-chia-puuro-rouva-keto.md",
+      "originalSha256": "6ac411019efca3965bc614a8d73f43655a66be8f0cfaf74fdbe90f7655217717",
+      "blob": "9d62d5d6ce17c69a29505df954c7ab4f4b5008a5",
+      "servings": 2,
+      "researchStatus": "HOLD_SOURCE",
+      "approvedAvailableCarbohydrateGPerServing": null,
+      "approvedGk": null,
+      "inputPath": "docs/nutrition/calculations/lammin-chia-puuro-rouva-keto.json",
+      "inputSha256": "0fd0d79150c72ce4bfeaac9ca8780783d825bd4ee543bb1915822aee35bd5336",
+      "ingredientInputs": [
+        {
+          "item": "chiansiemeniä",
+          "gramsPerBatch": 24,
+          "recordId": "foodin-chia-250g",
+          "source": "https://foodin.fi/tuote/chia-siemen-luomu-raaka-250g/",
+          "basis": "EU_LABEL_PER_100_G_AS_SOLD",
+          "labelOrReferenceCarbohydrateGPer100g": 0.2,
+          "labelOrReferenceSugarsGPer100g": 0,
+          "verifiedPolyolsGPer100g": null,
+          "sugarsGPerServing": 0,
+          "labelOrReferenceCarbohydrateGPerServing": 0.024
+        },
+        {
+          "item": "kuohukermaa (35 % rasvaa)",
+          "gramsPerBatch": 30,
+          "recordId": "valio-6408430001538",
+          "source": "https://www.valio.fi/tuotteet/valio-keittion-kuohukerma-laktoositon/2-dl-tolkki/",
+          "basis": "EU_LABEL_PER_100_G_AS_SOLD",
+          "labelOrReferenceCarbohydrateGPer100g": 3,
+          "labelOrReferenceSugarsGPer100g": 3,
+          "verifiedPolyolsGPer100g": null,
+          "sugarsGPerServing": 0.45,
+          "labelOrReferenceCarbohydrateGPerServing": 0.45
+        },
+        {
+          "item": "suolatonta voita",
+          "gramsPerBatch": 10,
+          "recordId": "valio-6408430030026",
+          "source": "https://www.valio.fi/tuotteet/valio-voi-suolaamaton/",
+          "basis": "EU_LABEL_PER_100_G_AS_SOLD",
+          "labelOrReferenceCarbohydrateGPer100g": 0.8,
+          "labelOrReferenceSugarsGPer100g": 0.8,
+          "verifiedPolyolsGPer100g": null,
+          "sugarsGPerServing": 0.04,
+          "labelOrReferenceCarbohydrateGPerServing": 0.04
+        },
+        {
+          "item": "Lindt Excellence 90 % -tummaa suklaata",
+          "gramsPerBatch": 15,
+          "recordId": "lindt-3046920029759",
+          "source": "https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759",
+          "basis": "EU_LABEL_PER_100_G_AS_SOLD",
+          "labelOrReferenceCarbohydrateGPer100g": 14,
+          "labelOrReferenceSugarsGPer100g": 7,
+          "verifiedPolyolsGPer100g": null,
+          "sugarsGPerServing": 0.525,
+          "labelOrReferenceCarbohydrateGPerServing": 1.05
+        },
+        {
+          "item": "vettä",
+          "gramsPerBatch": 160,
+          "recordId": "usda-sr-173647",
+          "source": "https://fdc.nal.usda.gov/food-details/173647/nutrients",
+          "basis": "ZERO_COMPOSITION_REFERENCE",
+          "labelOrReferenceCarbohydrateGPer100g": 0,
+          "labelOrReferenceSugarsGPer100g": 0,
+          "verifiedPolyolsGPer100g": 0,
+          "sugarsGPerServing": 0,
+          "labelOrReferenceCarbohydrateGPerServing": 0
+        },
+        {
+          "item": "jodioitua ruokasuolaa",
+          "gramsPerBatch": 0.5,
+          "recordId": "fineli-30",
+          "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+          "basis": "ZERO_COMPOSITION_REFERENCE",
+          "labelOrReferenceCarbohydrateGPer100g": 0,
+          "labelOrReferenceSugarsGPer100g": 0,
+          "verifiedPolyolsGPer100g": 0,
+          "sugarsGPerServing": 0,
+          "labelOrReferenceCarbohydrateGPerServing": 0
+        }
+      ],
+      "referenceProductsOnly": {
+        "sugarsGPerServing": 1.015,
+        "euDeclaredCarbohydrateGPerServing": 1.564
+      },
+      "nutritionModel": {
+        "status": "INSUFFICIENT SOURCE DATA",
+        "availableCarbohydrateGPerServing": null,
+        "netCarbohydrateGPerServing": null,
+        "totalCarbohydrateGPerServing": null
+      }
+    }
+  ]
+}
