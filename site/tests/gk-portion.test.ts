@@ -174,25 +174,52 @@ test("a missing polyol value is safe only when normalization yields available ca
 });
 
 test("reviewed preparations scale only the same weighed ingredient", async () => {
-  const id = "bataattiletut";
+  const id = "bataatti-banaanileipa";
   const [reviews, markdown] = await Promise.all([
     loadReviewedPortions(root),
-    readFile(path.join(root, "reseptit/aamupalat", id + ".md"), "utf8"),
+    readFile(path.join(root, "reseptit/leivonnaiset", id + ".md"), "utf8"),
   ]);
   const review = reviews[id];
   const ingredient = review.ingredientPortion!;
   const { portion } = await projectPortionEvidence(root, id, markdown, review);
-  assert.equal(portion.ingredientPortion?.amountPerServing, 105);
+  assert.equal(portion.ingredientPortion?.amountPerServing, 24);
   const choices = portion.ingredientPortion?.carbohydrateAlternatives;
   assert.equal(choices?.length, 2);
-  assert.ok(Math.abs(choices![0].availableCarbsGPerServing - 19.20765) < 1e-9);
-  assert.ok(Math.abs(choices![1].availableCarbsGPerServing - 17.6715) < 1e-9);
+  assert.ok(Math.abs(choices![0].availableCarbsGPerServing - 4.39032) < 1e-9);
+  assert.ok(Math.abs(choices![1].availableCarbsGPerServing - 4.0392) < 1e-9);
   assert.equal(portion.availableCarbs, undefined);
   assert.equal(portion.verbal, undefined);
   await assert.rejects(projectPortionEvidence(root, id, markdown, {
     ...review,
     ingredientPortion: { ...ingredient, declaredCarbsGPer100g: 25 },
   }), /partial ingredient carbohydrate must use one composition basis/);
+});
+
+test("whole-portion comparisons require a complete calculation for each named preparation", async () => {
+  const reviews = await loadReviewedPortions(root);
+  for (const [id, category, baked, boiled] of [
+    ["bataattiletut", "aamupalat", 30.33, 28.79], ["bataattibrowniet", "leivonnaiset", 10.05, 9.68],
+  ] as const) {
+    const markdown = await readFile(path.join(root, "reseptit", category, id + ".md"), "utf8");
+    const review = reviews[id];
+    const { portion } = await projectPortionEvidence(root, id, markdown, review);
+    assert.deepEqual(portion.availableCarbs, { min: boiled, max: baked });
+    assert.deepEqual(portion.wholeCarbohydrateChoices?.map(choice => [choice.source.split("/").at(-1), choice.availableCarbsGPerServing]),
+      [["30600", baked], ["30602", boiled]]);
+    assert.equal(portion.ingredientPortion?.carbohydrateAlternatives, undefined);
+    assert.equal(portion.verbal, undefined);
+    assert.equal(originalGlycemicLoadCategory(undefined, portion), null);
+
+    const broken = structuredClone(review);
+    const choices = broken.wholeCarbohydrateOnly!.preparationChoices!.choices;
+    choices[1].record.carbohydrateDefinition = "EU_TOTAL_INCLUDING_POLYOLS";
+    choices[1].record.per100g.polyols = null;
+    choices[1].record.polyolsSourceVerified = false;
+    await assert.rejects(projectPortionEvidence(root, id, markdown, broken), /whole-portion preparation requires evidence for every ingredient/);
+    const duplicate = structuredClone(review);
+    duplicate.wholeCarbohydrateOnly!.preparationChoices!.choices[1].label.en = choices[0].label.en;
+    await assert.rejects(projectPortionEvidence(root, id, markdown, duplicate), /whole-portion preparations require distinct labels/);
+  }
 });
 
 test("manufacturer-label carbohydrates do not become standalone available carbohydrates", async () => {
@@ -217,6 +244,7 @@ test("reviewed standalone composition uses its pinned historical input without r
   for (const [id, category, expected] of [
     ["mustikka-jogurttijaatelo", "jalkiruoat", 15.01],
     ["parmesaani-lyttyperunat", "alkuruoat", 23.37],
+    ["makea-banaanimunakas", "aamupalat", 32.43],
   ] as const) {
     const markdown = await readFile(path.join(root, "reseptit", category, id + ".md"), "utf8");
     const review = reviews[id];

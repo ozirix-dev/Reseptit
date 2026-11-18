@@ -8,7 +8,7 @@ import {GkOnlyVariantPanel,gkOnlyUi,gkScopeUi} from '../recipes/GkOnlyVariantPan
 import {scopedPolyolDisclosure} from '../recipes/scoped-polyol-disclosure';
 import {recoveryDisclosure} from '../recipes/recovery-disclosure';
 import { formatOriginalPortionGk } from "../recipes/gk80-format";
-import { describeCarbs, GkAlternatives, IngredientPortionDetails, portionCopy as recipePortionCopy, ReviewedPortionSource } from "../recipes/RecipePortionSummary";
+import { describeCarbs, GkAlternatives, IngredientPortionDetails, portionCopy as recipePortionCopy, ReviewedPortionSource, WholeCarbohydrateChoices } from "../recipes/RecipePortionSummary";
 import {originalPortionGk, verbalGkForPortion} from '../recipes/gk-portion';
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
@@ -258,10 +258,14 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
       {result === linked ? <p className="eyebrow">{ux.linked}</p> : null}
       <h3><Link to={localized?.routePath ?? result.routePath} lang={isLiverRecipe ? locale : localized ? recipeLocaleFromPath(localized.routePath) : "fi"}>{titleFor(result)}</Link></h3>
       <p className="gk-evidence__scope">{ux.original}</p>
-      {carbs ? <p>{portionText.grams(describeCarbs(carbs.range, numberLocale))} · {portionWords[carbs.definition]}</p> : null}
+      {carbs?.choices ? <>
+        <WholeCarbohydrateChoices choices={carbs.choices} locale={locale} />
+        <p>{portionWords[carbs.definition]}</p>
+      </> : carbs ? <p>{portionText.grams(describeCarbs(carbs.range, numberLocale))} · {portionWords[carbs.definition]}</p> : null}
       {portion?.ingredientPortion ? <IngredientPortionDetails ingredient={portion.ingredientPortion} locale={locale} /> : null}
       {portion?.condition ? <p>{portion.condition[locale]}</p> : null}
       {portion?.reviewedSource && !verbal && (portion.condition || portion.classLimitation || (!base && portion.ingredientPortion))
+        && !carbs?.choices?.some(choice => choice.source === portion.reviewedSource)
         && !portion.ingredientPortion?.carbohydrateAlternatives?.some(choice => choice.source === portion.reviewedSource)
         ? <p><ReviewedPortionSource source={portion.reviewedSource} locale={locale} /></p> : null}
       {result.status === "CALCULATED" ? <>

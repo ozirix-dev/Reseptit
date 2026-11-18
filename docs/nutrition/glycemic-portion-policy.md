@@ -109,6 +109,10 @@ Annosarvion uudet ainesosien koostumustiedot tallennetaan
 laskentatiedostoon ja ainesosariviin. Näin annosnäkymä voi käyttää
 tarkempaa lähdettä tai korjattua pakkausarvon määritelmää. Reseptin
 ravintotiedot ja GK-hyväksyntä käyttävät edelleen omia laskenta-aineistojaan.
+Kun saman ainesosan valmistustavoille on lähteistetyt koostumustiedot,
+koko annos lasketaan jokaiselle vaihtoehdolle erikseen. Nimetyt luvut ja
+niiden lähteet näkyvät reseptissä ja oppaassa. Annosvalinta skaalaa
+molemmat, ja koko resepti lasketaan kattavuuteen yhtenä reseptinä.
 
 ## Hiilihydraattitiedon merkitys
 

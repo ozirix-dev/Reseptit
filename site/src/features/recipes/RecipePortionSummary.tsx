@@ -1,5 +1,5 @@
 import type { RecipeEntry, RecipeLocale } from "../../types/content";
-import { eatenPortions, scalePortionRange, verbalGkForPortion, type IngredientPortion, type NamedGkAlternative, type PortionCarbs, type PortionEvidence } from "./gk-portion";
+import { eatenPortions, scalePortionRange, verbalGkForPortion, type CarbohydrateChoice, type IngredientPortion, type NamedGkAlternative, type PortionCarbs, type PortionEvidence } from "./gk-portion";
 import type { GkRange } from "./gk-estimate";
 import { formatGlycemicLoadNumber } from "./gk80-format";
 
@@ -112,6 +112,28 @@ export function describeCarbs({ min, max }: GkRange, locale: string) {
   return lower === upper ? lower : `${lower}–${upper}`;
 }
 
+function carbohydrateChoiceRows(choices: CarbohydrateChoice[], locale: RecipeLocale, multiplier: number, scope: "whole" | "ingredient") {
+  const gram = locale === "th" ? "กรัม" : "g";
+  return choices.map(choice => <dd key={choice.label[locale]} data-carbohydrate-choice={scope}
+    data-ingredient-carb-alternative={scope === "ingredient" ? true : undefined}>
+    <a href={choice.source} rel="noopener noreferrer">{choice.label[locale]}</a>
+    {" · "}{portionCopy[locale].about} {formatCarbs(choice.availableCarbsGPerServing * multiplier, locale)} {gram}
+  </dd>);
+}
+
+export function WholeCarbohydrateChoices({ choices, locale, multiplier = 1 }: {
+  choices: CarbohydrateChoice[];
+  locale: RecipeLocale;
+  multiplier?: number;
+}) {
+  return <dl className="nutrition-list">
+    <div data-portion-carbohydrate="available" data-portion-preparations>
+      <dt>{portionCopy[locale].carbs}</dt>
+      {carbohydrateChoiceRows(choices, locale, multiplier, "whole")}
+    </div>
+  </dl>;
+}
+
 export function IngredientPortionDetails({ ingredient, locale, multiplier = 1 }: {
   ingredient: IngredientPortion;
   locale: RecipeLocale;
@@ -134,10 +156,7 @@ export function IngredientPortionDetails({ ingredient, locale, multiplier = 1 }:
     </div> : null}
     {ingredient.carbohydrateAlternatives ? <div data-ingredient-carbohydrate="available-alternatives">
       <dt>{t.ingredientCarbs}</dt>
-      {ingredient.carbohydrateAlternatives.map(choice => <dd key={choice.label[locale]} data-ingredient-carb-alternative>
-        <a href={choice.source} rel="noopener noreferrer">{choice.label[locale]}</a>
-        {" · "}{t.about} {formatCarbs(choice.availableCarbsGPerServing * multiplier, locale)} {gram}
-      </dd>)}
+      {carbohydrateChoiceRows(ingredient.carbohydrateAlternatives, locale, multiplier, "ingredient")}
     </div> : null}
   </dl>;
 }
@@ -188,7 +207,7 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batc
       {!evidence?.gramsPerServing && !evidence?.piecesPerServing ? <p>{t.batchShare(format(batchServings))}</p> : null}
       {evidence?.gramsPerServing ? <p>{t.about} {format(evidence.gramsPerServing * multiplier)} {locale === "th" ? "กรัม" : "g"}</p> : null}
       {evidence?.piecesPerServing ? <p>{t.pieces(format(evidence.piecesPerServing * multiplier))}</p> : null}
-      {carbs ? <dl className="nutrition-list">
+      {carbs?.choices ? <WholeCarbohydrateChoices choices={carbs.choices} locale={locale} multiplier={multiplier} /> : carbs ? <dl className="nutrition-list">
         <div><dt>{t.carbs}</dt><dd data-portion-carbohydrate={carbs.definition}>{t.about} {describeCarbs(scalePortionRange(carbs.range, multiplier), locale)} {locale === "th" ? "กรัม" : "g"}</dd></div>
       </dl> : <p className="recipe-disclosure">{t.missingCarbs}</p>}
       {carbs ? <p className="recipe-disclosure">{t[carbs.definition]}</p> : null}
@@ -197,6 +216,7 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batc
     {ingredient ? <p>{evidence?.driver?.coversMajority ? t.main(ingredient) : t.known(ingredient)}</p> : null}
     <p className="recipe-disclosure">{evidence?.condition?.[locale] ?? t.scope}</p>
     {evidence?.reviewedSource && !evidence.verbal && (evidence.condition || evidence.classLimitation || ingredient || evidence.ingredientPortion)
+      && !carbs?.choices?.some(choice => choice.source === evidence.reviewedSource)
       && !evidence.ingredientPortion?.carbohydrateAlternatives?.some(choice => choice.source === evidence.reviewedSource) ? <p className="recipe-disclosure">
       <ReviewedPortionSource source={evidence.reviewedSource} locale={locale} />
     </p> : null}

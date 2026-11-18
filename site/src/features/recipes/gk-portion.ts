@@ -5,6 +5,12 @@ import type { GlycemicLoadDisplayCandidate } from "./glycemic-load-display";
 export type GkClass = ReturnType<typeof classifyPublicGk>;
 export type LocalizedText = Record<RecipeLocale, string>;
 
+export interface CarbohydrateChoice {
+  label: LocalizedText;
+  availableCarbsGPerServing: number;
+  source: string;
+}
+
 /** Reviewed language refers to the original listed serving, never a separate version. */
 export interface VerbalGk {
   category: GkClass;
@@ -19,7 +25,7 @@ export interface IngredientPortion {
   unit: "g" | "kpl" | "arkkia";
   availableCarbsGPerServing?: number;
   declaredCarbsGPerServing?: number;
-  carbohydrateAlternatives?: { label: LocalizedText; availableCarbsGPerServing: number; source: string }[];
+  carbohydrateAlternatives?: CarbohydrateChoice[];
 }
 
 export interface NamedGkAlternative {
@@ -33,6 +39,7 @@ export interface PortionEvidence {
   versionAlternatives?: { versionId: string; choices: NamedGkAlternative[] };
   reviewedSource?: string;
   availableCarbs?: GkRange;
+  wholeCarbohydrateChoices?: CarbohydrateChoice[];
   driver?: { ingredientIndex: number; coversMajority: boolean };
   verbal?: VerbalGk;
   condition?: LocalizedText;
@@ -41,10 +48,13 @@ export interface PortionEvidence {
   gramsPerServing?: number;
 }
 
-export type PortionCarbs = { range: GkRange; definition: "available" | "total" | "net" };
+export type PortionCarbs = { range: GkRange; definition: "available" | "total" | "net"; choices?: CarbohydrateChoice[] };
 
 export function originalPortionCarbs(nutrition: RecipeEntry["nutrition"], evidence?: PortionEvidence): PortionCarbs | null {
-  if (evidence?.availableCarbs) return { range: evidence.availableCarbs, definition: "available" };
+  if (evidence?.availableCarbs) return {
+    range: evidence.availableCarbs, definition: "available",
+    ...(evidence.wholeCarbohydrateChoices && { choices: evidence.wholeCarbohydrateChoices }),
+  };
   for (const [value, definition] of [[nutrition.carbsTotalG, "total"], [nutrition.carbsNetG, "net"]] as const) {
     if (value !== null && Number.isFinite(value) && value >= 0) return { range: { min: value, max: value }, definition };
   }

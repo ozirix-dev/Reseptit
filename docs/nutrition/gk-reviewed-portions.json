@@ -1401,12 +1401,12 @@
     "nutritionSha256": "a2de6bc9600172436aec68989068435b46054edb41d562b284ad3c44c029a7a6",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11049",
-    "reasoning": "Generic peeled banana, cultivar and ripeness vary. Peeled ripe banana blended into one serving. Toppings, vanilla and oil remain outside the component estimate. The value uses available carbohydrate in the matched ingredient before the recipe is prepared. Whole-serving release remains governed by the existing nutrition record. Vaniljauutteen, kanelin, mustikoiden ja hunajan polyolitietoa puuttuu ja paistoöljyn toteutunutta määrää ei mitattu.",
+    "reasoning": "All seven recipe amounts are given by weight and the single serving includes fresh highbush blueberries and honey as written. AFCD F009350 separates available carbohydrate from potentially unknown polyols, and 2 g of alcohol-based extract accounts for 0.252 g. Fineli #535 supplies a documented zero-carbohydrate bound for the 5 g frying-oil input; do not impute its retained fat. The preparation scopes the same ordinary ripe peeled banana and excludes any substitutions or different toppings. Do not add a recipe GK class. The canonical amount of pure oil stays in the portion calculation at the original charged upper bound and has zero available carbohydrate at either retention limit. No retained-fat value is exposed.",
     "condition": {
-      "fi": "Banaanin lajike ja kypsyys vaikuttavat arvioon. Huomioi mustikat ja hunaja erikseen.",
-      "en": "Banana variety and ripeness affect the estimate. Count blueberries and honey separately.",
-      "sv": "Banansort och mognad påverkar uppskattningen. Räkna blåbär och honung separat.",
-      "th": "พันธุ์และความสุกของกล้วยมีผลต่อค่าประมาณ ให้คิดบลูเบอร์รีและน้ำผึ้งแยกต่างหาก"
+      "fi": "Arvio koskee yhtä ohjeen munakasta mustikoineen ja hunajineen. Se käyttää alkoholipohjaista vaniljauutetta, 40 g tuoreita pensasmustikoita ja 7 g hunajaa. Vaniljauutteen koostumustieto on Australian elintarviketietokannasta.",
+      "en": "The estimate is for one omelette with the toppings in the recipe. It uses alcohol-based vanilla extract, 40 g fresh highbush blueberries and 7 g honey. The vanilla extract data come from the Australian Food Composition Database.",
+      "sv": "Uppskattningen gäller en omelett med tillbehören i receptet. Den använder alkoholbaserat vaniljextrakt, 40 g färska amerikanska blåbär och 7 g honung. Uppgiften om vaniljextrakt kommer från Australiens livsmedelsdatabas.",
+      "th": "ค่าประมาณสำหรับไข่เจียวหนึ่งที่พร้อมเครื่องโรยตามสูตร คำนวณจากสารสกัดวานิลลาที่ใช้แอลกอฮอล์ บลูเบอร์รีพันธุ์พุ่มสูงสด 40 กรัม และน้ำผึ้ง 7 กรัม ข้อมูลของสารสกัดวานิลลามาจากฐานข้อมูลองค์ประกอบอาหารของออสเตรเลีย"
     },
     "ingredientPortion": {
       "index": 0,
@@ -1419,6 +1419,41 @@
       },
       "unit": "g",
       "availableCarbsGPer100g": 18.3
+    },
+    "publicSource": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009350",
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "74c1f8fbd682b8dfd809b66359c55db948883d533451a5e7045b2dc7887e2512",
+        "en": "cf7575cba720ec3b2eb6c1d1d2b0971620758fbe871bafd67050ed5b380a8486",
+        "sv": "092372a390dcf3795b018c82668ada545700027a260fe7c1dee1ed36348fe06e",
+        "th": "7bb1bc720ee43c15ccf067fcb2c679c4d65466e7edc48e0c5d53fe8dca5e25cf"
+      },
+      "compositionMatches": [
+        {
+          "index": 3,
+          "record": {
+            "id": "afcd-F009350-release-3",
+            "name": "Vanilla bean extract",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009350",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "state": "Plain alcohol-based vanilla bean extract as sold",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "Direct available carbohydrate without sugar alcohols from AFCD Release 3 workbook. Individual mannitol, sorbitol and glycerol are not stated.",
+            "per100g": {
+              "carbohydrate": 12.6,
+              "fibre": 0,
+              "polyols": null,
+              "protein": 0.1,
+              "fat": 0.1
+            }
+          },
+          "state": "Plain alcohol-based vanilla bean extract as sold",
+          "matchEvidence": "AFCD Release 3 F009350 is the alcoholic extract of a vanilla bean and reports available carbohydrate without sugar alcohols as 12.6 g per 100 g. The recipe uses 2 g. Alcohol-free, glycerine-based or imitation extract is not represented."
+        }
+      ]
     }
   },
   "avokado-banaanijaatelo": {
@@ -1840,12 +1875,12 @@
     "nutritionSha256": "9320d68eea6a7f951b1e72a2b91d3326d1d0b9632b86f3105c886816827ee175",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
-    "reasoning": "The weighed edible input is already cooked and cooled; original leaves pre-cooking open. Fineli Release 20 #30600 oven-baked peeled sweet potato gives 18.293 g CHOAVL per 100 g, and #30602 peeled sweet potato boiled without salt gives 16.83 g CHOAVL per 100 g. These are distinct ingredient references, not the recipe's uncertainty interval. The original portions include 30 g fresh cultivated blueberries and 10 g maple syrup on top, per serving. Current nutrition equation uses generic as-written composition and gives 30.33 g in the baked input scenario, including both. The 5 g pan oil carries no carbohydrate and its retained fat is unknown. Approximate scenario math never covers other preparation or products.",
+    "reasoning": "The Finnish recipe weighs cooked, peeled, cooled sweet potato without specifying its preparation. Calculate each whole serving independently with Fineli Release 20 #30600 or #30602. Both use the same edible mass and the other listed ingredients. Only available carbohydrate is released. The macronutrient package and GK have separate approval.",
     "condition": {
-      "fi": "Punnitse bataatti kuorittuna ja jäähtyneenä. Vertailu koskee samaa bataattimäärää kummallakin valmistustavalla. Mustikoista ja vaahterasiirapista tulee lisää hiilihydraatteja.",
-      "en": "Weigh the sweet potato peeled and cooled. The comparison uses the same weight for both preparations. Blueberries and maple syrup add carbohydrate.",
-      "sv": "Väg sötpotatisen skalad och avsvalnad. Jämförelsen använder samma vikt för båda tillagningssätten. Blåbären och lönnsirapen bidrar med ytterligare kolhydrater.",
-      "th": "ชั่งมันเทศที่ปอกเปลือกแล้วและพักให้เย็น การเปรียบเทียบใช้มันเทศน้ำหนักเท่ากันทั้งสองวิธี บลูเบอร์รีและเมเปิลไซรัปให้คาร์โบไฮเดรตเพิ่ม"
+      "fi": "Arvio sisältää puolet lettuerästä sekä ohjeen 30 g tuoreita pensasmustikoita ja 10 g puhdasta vaahterasiirappia. Punnitse bataatti kuorittuna ja jäähtyneenä.",
+      "en": "The estimate includes half the batch of pancakes with the recipe’s 30 g of fresh highbush blueberries and 10 g of pure maple syrup. Weigh the sweet potato peeled and cooled.",
+      "sv": "Uppskattningen omfattar halva satsen plättar med receptets 30 g färska amerikanska blåbär och 10 g ren lönnsirap. Väg sötpotatisen skalad och avsvalnad.",
+      "th": "ค่าประมาณรวมแพนเค้กครึ่งหนึ่งของที่ทำได้ พร้อมบลูเบอร์รีพันธุ์พุ่มสูงสด 30 กรัมและเมเปิลไซรัปแท้ 10 กรัมตามสูตร ชั่งมันเทศหลังปอกเปลือกและพักให้เย็น"
     },
     "ingredientPortion": {
       "index": 0,
@@ -1856,29 +1891,78 @@
         "en": "Cooked peeled sweet potato",
         "sv": "Tillagad skalad sötpotatis",
         "th": "เนื้อมันเทศสุกปอกเปลือก"
+      }
+    },
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "c0c610f380af4eb030170e3851dba1ec33c3145b594eff85ebb5aca0bda1a0f0",
+        "en": "ba978d3c82967a56b96388dc1e0d8a55c1987eb4aceb444afff4c9dc9f41a679",
+        "sv": "ed15756131e6d77a72ff50119311c2f6207b3d914fc9b30a4a6103ebd14c60e2",
+        "th": "62c1ef765debba14533e285ae895751532e5776fb22a1f5831a63e40f68ea10e"
       },
-      "carbohydrateAlternatives": [
-        {
-          "label": {
-            "fi": "Uunissa kypsennetty",
-            "en": "Oven-baked",
-            "sv": "Ugnsbakad",
-            "th": "อบจนสุก"
+      "preparationChoices": {
+        "index": 0,
+        "choices": [
+          {
+            "label": {
+              "fi": "Bataatti uunissa kypsennettynä",
+              "en": "With oven-baked sweet potato",
+              "sv": "Med ugnsbakad sötpotatis",
+              "th": "ใช้มันเทศอบสุก"
+            },
+            "record": {
+              "id": "fineli-30600",
+              "name": "BATAATTI, UUNISSA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
+              "retrievedAt": "2026-11-15",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "state": "bataatti, uunissa",
+              "basis": "per100g-prepared",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "per100g": {
+                "carbohydrate": 18.293,
+                "fibre": 2.717,
+                "polyols": 0,
+                "protein": 1.71,
+                "fat": 0.054
+              },
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+            },
+            "state": "bataatti, uunissa",
+            "matchEvidence": "Ingredient 'kypsää bataattia' matched to reference BATAATTI, UUNISSA; brand or variety may differ."
           },
-          "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
-          "availableCarbsGPer100g": 18.293
-        },
-        {
-          "label": {
-            "fi": "Suolatta keitetty",
-            "en": "Boiled without salt",
-            "sv": "Kokt utan salt",
-            "th": "ต้มโดยไม่ใส่เกลือ"
-          },
-          "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30602",
-          "availableCarbsGPer100g": 16.83
-        }
-      ]
+          {
+            "label": {
+              "fi": "Bataatti suolatta keitettynä",
+              "en": "With sweet potato boiled without salt",
+              "sv": "Med sötpotatis kokt utan salt",
+              "th": "ใช้มันเทศต้มโดยไม่ใส่เกลือ"
+            },
+            "record": {
+              "id": "fineli-30602-release-20",
+              "name": "BATAATTI, KUORITTU, KEITETTY, SUOLATON",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30602",
+              "retrievedAt": "2026-11-18",
+              "licence": "THL Fineli Release 20; CC BY 4.0",
+              "state": "Peeled sweet potato boiled without salt, cooled and weighed edible",
+              "basis": "per100g-prepared",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli #30602 Sugar alcohols (SUGOH) reference gives 0 by recipe calculation.",
+              "per100g": {
+                "carbohydrate": 16.83,
+                "fibre": 2.5,
+                "polyols": 0,
+                "protein": 1.57,
+                "fat": 0.05
+              }
+            },
+            "state": "Peeled sweet potato boiled without salt, cooled and weighed edible",
+            "matchEvidence": "THL Fineli Release 20 #30602 boiled peeled sweet potato without salt matches this explicitly scoped preparation."
+          }
+        ]
+      }
     }
   },
   "indonesialainen-bubur-sumsum-punnittu-v2": {
@@ -3035,12 +3119,12 @@
     "nutritionSha256": "9259caed53da3b05fea3ea7c3240dc39cae9b33b66296094f53a9ba560a9028a",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
-    "reasoning": "The weighed edible input is already cooked and cooled; original leaves pre-cooking open. Fineli Release 20 #30600 oven-baked peeled sweet potato gives 18.293 g CHOAVL per 100 g, and #30602 peeled sweet potato boiled without salt gives 16.83 g CHOAVL per 100 g. These are distinct ingredient references, not the recipe's uncertainty interval. The tray is divided into nine pieces. The remaining ingredients are included in the internal scenario calculation as listed and weighed. The cited Bake It Paleo comparison steams the sweet potato with skin and was used for ingredient ratios only, so its steaming instruction does not resolve this recipe's choice. Honey's available source and unknown aggregate polyol remain exactly as in the evidence; no public whole available CHO baseline.",
+    "reasoning": "The Finnish recipe weighs cooked, peeled, cooled sweet potato without specifying its preparation. Calculate each whole serving independently with Fineli Release 20 #30600 or #30602. Both use the same edible mass and the other listed ingredients. Only available carbohydrate is released. The macronutrient package and GK have separate approval.",
     "condition": {
-      "fi": "Punnitse bataatti kuorittuna ja jäähtyneenä. Vertailu koskee samaa bataattimäärää kummallakin valmistustavalla. Taikinan muut ainekset tuovat lisää hiilihydraatteja.",
-      "en": "Weigh the sweet potato peeled and cooled. The comparison uses the same weight for both preparations. The other batter ingredients add carbohydrate.",
-      "sv": "Väg sötpotatisen skalad och avsvalnad. Jämförelsen använder samma vikt för båda tillagningssätten. Övriga ingredienser i smeten bidrar med ytterligare kolhydrater.",
-      "th": "ชั่งมันเทศที่ปอกเปลือกแล้วและพักให้เย็น การเปรียบเทียบใช้มันเทศน้ำหนักเท่ากันทั้งสองวิธี วัตถุดิบอื่นในแป้งให้คาร์โบไฮเดรตเพิ่ม"
+      "fi": "Arvio sisältää yhden yhdeksästä palasta ja kaikki ohjeen ainekset. Punnitse bataatti kuorittuna ja jäähtyneenä.",
+      "en": "The estimate is for one of nine pieces and includes all the ingredients in the recipe. Weigh the sweet potato peeled and cooled.",
+      "sv": "Uppskattningen gäller en av nio bitar och omfattar alla ingredienser i receptet. Väg sötpotatisen skalad och avsvalnad.",
+      "th": "ค่าประมาณสำหรับหนึ่งชิ้นจากทั้งหมดเก้าชิ้น รวมส่วนผสมทุกอย่างตามสูตร ชั่งมันเทศหลังปอกเปลือกและพักให้เย็น"
     },
     "ingredientPortion": {
       "index": 0,
@@ -3051,30 +3135,80 @@
         "en": "Cooked peeled sweet potato",
         "sv": "Tillagad skalad sötpotatis",
         "th": "เนื้อมันเทศสุกปอกเปลือก"
+      }
+    },
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "41d8f790584ff58e77e8ccc95acd1911cf5755b0c0bb825d2e666163d14e89f9",
+        "en": "bbe23358c55a2b9747775796ff0464bc2a4e70489bbe93b397715148473ccc48",
+        "sv": "978364884445d44fe46d6de1a08409a88d8065e42f9473e17e54f6135b67ba64",
+        "th": "7bccc5abadc2fd1c01c2828eb126437e2c96b3171a31533baf82e1948231fdec"
       },
-      "carbohydrateAlternatives": [
-        {
-          "label": {
-            "fi": "Uunissa kypsennetty",
-            "en": "Oven-baked",
-            "sv": "Ugnsbakad",
-            "th": "อบจนสุก"
+      "preparationChoices": {
+        "index": 0,
+        "choices": [
+          {
+            "label": {
+              "fi": "Bataatti uunissa kypsennettynä",
+              "en": "With oven-baked sweet potato",
+              "sv": "Med ugnsbakad sötpotatis",
+              "th": "ใช้มันเทศอบสุก"
+            },
+            "record": {
+              "id": "fineli-30600",
+              "name": "BATAATTI, UUNISSA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
+              "retrievedAt": "2026-11-15",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "state": "bataatti, uunissa",
+              "basis": "per100g-prepared",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "per100g": {
+                "carbohydrate": 18.293,
+                "fibre": 2.717,
+                "polyols": 0,
+                "protein": 1.71,
+                "fat": 0.054
+              },
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+            },
+            "state": "bataatti, uunissa",
+            "matchEvidence": "Ingredient 'kypsää bataattia' matched to reference BATAATTI, UUNISSA; brand or variety may differ."
           },
-          "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
-          "availableCarbsGPer100g": 18.293
-        },
-        {
-          "label": {
-            "fi": "Suolatta keitetty",
-            "en": "Boiled without salt",
-            "sv": "Kokt utan salt",
-            "th": "ต้มโดยไม่ใส่เกลือ"
-          },
-          "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30602",
-          "availableCarbsGPer100g": 16.83
-        }
-      ]
-    }
+          {
+            "label": {
+              "fi": "Bataatti suolatta keitettynä",
+              "en": "With sweet potato boiled without salt",
+              "sv": "Med sötpotatis kokt utan salt",
+              "th": "ใช้มันเทศต้มโดยไม่ใส่เกลือ"
+            },
+            "record": {
+              "id": "fineli-30602-release-20",
+              "name": "BATAATTI, KUORITTU, KEITETTY, SUOLATON",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30602",
+              "retrievedAt": "2026-11-18",
+              "licence": "THL Fineli Release 20; CC BY 4.0",
+              "state": "Peeled sweet potato boiled without salt, cooled and weighed edible",
+              "basis": "per100g-prepared",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli #30602 Sugar alcohols (SUGOH) reference gives 0 by recipe calculation.",
+              "per100g": {
+                "carbohydrate": 16.83,
+                "fibre": 2.5,
+                "polyols": 0,
+                "protein": 1.57,
+                "fat": 0.05
+              }
+            },
+            "state": "Peeled sweet potato boiled without salt, cooled and weighed edible",
+            "matchEvidence": "THL Fineli Release 20 #30602 boiled peeled sweet potato without salt matches this explicitly scoped preparation."
+          }
+        ]
+      }
+    },
+    "piecesPerServing": 1
   },
   "bataatti-banaanileipa": {
     "recipeBindingSha256": "71d80899adc398c1ddfc1a217d1ba3febdd3b40e50f7b4e9228d37627581f3b0",
@@ -3384,5 +3518,77 @@
       },
       "unit": "g"
     }
+  },
+  "marjakiisseli-vaniljakastikkeella": {
+    "recipeBindingSha256": "70e8ca27c953fb92030b439e3cf99a7a51ee67486351cd7222d7e7fdf91c8741",
+    "preparationSha256": "cce95969d3330df0503b307dbeb9ba7a80ae00f830a870234ddb87110bb1ab14",
+    "nutritionSha256": "3821acbd8d704c2688eb54829adb52a011ae8d30a01bcf58a64a6608c26a02f9",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "condition": {
+      "fi": "Yksi annos sisältää kuudesosan kiisselistä ja vaniljakastikkeesta. Sokerin GK-osuus perustuu sokereiden ja siirappien GI-keskiarvoon. Jos ripottelet pinnalle sokeria mitattujen määrien lisäksi, annoksen hiilihydraattimäärä kasvaa.",
+      "en": "One serving includes one sixth of the berry kissel and vanilla sauce. The sugar’s GL contribution uses the average GI of sugars and syrups. Sprinkling sugar on top in addition to the measured amounts increases the serving’s carbohydrate content.",
+      "sv": "En portion innehåller en sjättedel av bärkrämen och vaniljsåsen. Sockrets bidrag till GL bygger på genomsnittligt GI för socker och sirap. Om du strör extra socker ovanpå utöver de uppmätta mängderna ökar kolhydratmängden per portion.",
+      "th": "หนึ่งที่ประกอบด้วยวุ้นผลไม้ตระกูลเบอร์รีและซอสวานิลลาอย่างละหนึ่งในหก ค่า GL ส่วนของน้ำตาลใช้ค่า GI เฉลี่ยของกลุ่มน้ำตาลและน้ำเชื่อม หากโรยน้ำตาลเพิ่มจากปริมาณที่ตวงไว้ ปริมาณคาร์โบไฮเดรตต่อหนึ่งที่จะเพิ่มขึ้น"
+    },
+    "reasoning": "Six servings share the same starch-thickened chilled berry kissel and dairy/egg vanilla sauce. The point includes 80 g sugar in the kissel, 40 g in the sauce and 4 g from the measured teaspoon of vanilla sugar. The recipe instruction mentions sugar sprinkled on top without a separately weighed amount. Raw GK lies 0.07044 below 20. Jenkins sucrose GI 59, if used only in a fixed-input sensitivity check, crosses 20. The dominant sugar grouping is only a proxy and does not imply the same for plain sugar in the cooked mixture. Atkinson et al. 2021 Table 1 reports sugars and syrups GI 58 (glucose=100; 50 entries, SD 21). This group accounts for 60% of the existing GK. Omission handling already suppresses the model's medium category.",
+    "classLimitation": {
+      "fi": "Vakioannoksen tulos on lähellä GK-luokkarajaa. Sokerin GI-arvion vaihtelu voi muuttaa luokkaa.",
+      "en": "The standard serving is close to a GL category boundary. A different GI estimate for sugar can change the category.",
+      "sv": "Standardportionen ligger nära en gräns mellan GL-klasser. Ett annat GI-värde för socker kan ändra klassen.",
+      "th": "ค่า GL ของหนึ่งที่ตามสูตรอยู่ใกล้จุดแบ่งระดับ หากใช้ค่า GI ของน้ำตาลต่างกัน ระดับอาจเปลี่ยนได้"
+    }
+  },
+  "malesialainen-mee-goreng-aamunuudeleilla": {
+    "recipeBindingSha256": "b4ec62be2475dda840dd9f7431a1a22b9cc36377cb261c11f8efdd44c9f6f54c",
+    "preparationSha256": "1302bdc790b981f30f8525102f071c78ef94d83bde0c4be303157955fd168493",
+    "nutritionSha256": "7a099fede759b0eacd637538c81ff590cbc22c8986be2904c865b95e7a524234",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "condition": {
+      "fi": "Arvio perustuu 50 grammaan kuivaa vehnänuudelia annosta kohti. Nuudelien GK-osuus käyttää pastaryhmän GI-keskiarvoa, joten nuudelivalinta voi muuttaa arviota. GK-laskelma on tehty ilman soijakastiketta.",
+      "en": "The estimate uses 50 g of dry wheat noodles per serving. Their GL contribution uses the average GI of pasta, so the noodles you choose can change the estimate. The GL calculation excludes soy sauce.",
+      "sv": "Uppskattningen bygger på 50 g torra vetenudlar per portion. Nudlarnas bidrag till GL bygger på genomsnittligt GI för pasta, så valet av nudlar kan påverka uppskattningen. GL-beräkningen är gjord utan sojasås.",
+      "th": "ค่าประมาณใช้บะหมี่แป้งสาลีแห้ง 50 กรัมต่อหนึ่งที่ ค่า GL ส่วนของบะหมี่ใช้ค่า GI เฉลี่ยของพาสต้า ชนิดบะหมี่ที่เลือกอาจทำให้ค่าประมาณเปลี่ยนได้ การคำนวณ GL ไม่รวมซีอิ๊ว"
+    },
+    "reasoning": "Two servings share 100 g dry wheat noodles boiled according to package instructions and later stir-fried with tofu, sprouts and egg. The current recipe and its separate carbohydrate calculation include one tablespoon soy sauce; the sealed GK input has no soy sauce row. Fineli 31 supplies 0.855 g available carbohydrate per serving from it in the nutrition accounting, outside the 0.165 g tracked omission of the approved GK model. A large cooking and preparation mismatch remains between a pasta group mean, the human mee pok and an unspecified dry wheat noodle used in a stir fry. The numerical scope note identifies the omission and never assigns the researched GI to this dish. Atkinson et al. 2021 Table 1 reports pasta GI 52 (glucose=100; 77 entries, SD 12). This group accounts for 93% of the existing GK. Omission handling already suppresses the model's medium category.",
+    "classLimitation": {
+      "fi": "GK-luokka jää avoimeksi. Vehnänuudeleista mitatut GI-arvot vaihtelevat tuotteen mukaan.",
+      "en": "The GL category remains uncertain. Measured GI values for wheat noodles vary with the product.",
+      "sv": "GL-klassen är osäker. Uppmätta GI-värden för vetenudlar varierar mellan produkter.",
+      "th": "ระดับ GL ยังไม่แน่นอน ค่า GI ที่วัดได้ของบะหมี่แป้งสาลีแตกต่างกันตามผลิตภัณฑ์"
+    }
+  },
+  "pannacotta-marjakastikkeella": {
+    "recipeBindingSha256": "b7887c43932911d8626c626401081cae056871328903ceb22bd4c88869886d72",
+    "preparationSha256": "4b61c955967b4e3d897a6584b61a165072c7f213771336b9f5b2c64af64a7cf0",
+    "nutritionSha256": "3ff9f44d6789bb8c269a5404459fd8f7d2359bbf0286a669b0f2ceaa93ce587c",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "condition": {
+      "fi": "Yksi annos sisältää kuudesosan pannacottasta ja keitetystä marjakastikkeesta. Arvio käyttää ohjeen sokerimääriä molemmissa. Sokerin GK-osuus perustuu sokereiden ja siirappien GI-keskiarvoon.",
+      "en": "One serving includes one sixth of the panna cotta and cooked berry sauce. The estimate uses the recipe’s sugar amounts in both. The sugar’s GL contribution uses the average GI of sugars and syrups.",
+      "sv": "En portion innehåller en sjättedel av pannacottan och den kokta bärsåsen. Uppskattningen bygger på receptets sockermängder i båda delarna. Sockrets bidrag till GL bygger på genomsnittligt GI för socker och sirap.",
+      "th": "หนึ่งที่ประกอบด้วยพานาคอตตาและซอสเบอร์รีที่ต้มแล้วอย่างละหนึ่งในหก ค่าประมาณใช้ปริมาณน้ำตาลตามสูตรในทั้งสองส่วน ค่า GL ส่วนของน้ำตาลใช้ค่า GI เฉลี่ยของกลุ่มน้ำตาลและน้ำเชื่อม"
+    },
+    "reasoning": "Six servings share the chilled set cream-milk base and separately cooked berry sauce. The point uses 70 g sugar in the base, 4 g vanilla sugar, and 25 g estimated from the two tablespoons of sugar in the sauce. Replacing the group mean of 58 with the specific sucrose point 59 by itself would not cross the lower boundary. The lower cutoff sensitivity is a screen, not evidence that the category flips. No omission fix or formula change is proposed. Atkinson et al. 2021 Table 1 reports sugars and syrups GI 58 (glucose=100; 50 entries, SD 21). This group accounts for 76% of the existing GK. Omission handling already suppresses the model's medium category."
+  },
+  "lahi-ita-kikhernejauho-yrttilettu": {
+    "recipeBindingSha256": "1cf4a0e0eceffbcbcda02cbbbcba162fda3ee4a3bb281ac079c9a5cfe04e6e1a",
+    "preparationSha256": "8d74dff5cedf46e28dfd5efefa0a5d8936f7c73cbadcc8521576873bd619f517",
+    "nutritionSha256": "b5a09a4a04c5e91fa262ef011da11d25234f0426e92fb99bfad8c116e5509786",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
+    "condition": {
+      "fi": "Yksi annos on yksi kahdesta letusta. Siihen käytetään 50 g kuivaa kikhernejauhoa. Jauhon GK-osuus perustuu palkokasvien GI-keskiarvoon.",
+      "en": "One serving is one of the two pancakes and uses 50 g of dry chickpea flour. The flour’s GL contribution uses the average GI of legumes.",
+      "sv": "En portion är en av de två pannkakorna och innehåller 50 g torrt kikärtsmjöl. Mjölets bidrag till GL bygger på genomsnittligt GI för baljväxter.",
+      "th": "หนึ่งที่คือแพนเค้กหนึ่งแผ่นจากสองแผ่น ใช้แป้งถั่วชิกพีแห้ง 50 กรัม ค่า GL ส่วนของแป้งใช้ค่า GI เฉลี่ยของกลุ่มถั่วเมล็ดแห้ง"
+    },
+    "reasoning": "Two thin fresh pancakes made from 100 g dry chickpea flour, 120 mL water, raw onion, parsley, cumin and pan oil. The batter rests 10 minutes and is pan-fried, with no fermentation. AFCD F003986 gives 19.25 g available carbohydrate from the dry flour in one pancake. Using the nearby measured cheela GI 42 only as sensitivity stays below 10. The tested flour preparation differs from the finished dish and the separate farinata approval cannot move to this recipe. Atkinson et al. 2021 Table 1 reports legumes GI 34 (glucose=100; 32 entries, SD 14). This group accounts for 88% of the existing GK. Omission handling already suppresses the model's low category."
   }
 }

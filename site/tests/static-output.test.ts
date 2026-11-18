@@ -158,6 +158,15 @@ test("standalone carbohydrate and source warnings follow reviewed quantities and
       assert.doesNotMatch(rendered, /data-portion-gk=|data-gk-status="(?:QUALITATIVE|CALCULATED)"/);
       assert.ok(rendered.includes(review.condition![locale]), routePath);
       assert.ok(rendered.includes('href="' + (review.publicSource ?? review.source) + '"'), routePath);
+      const preparations = review.wholeCarbohydrateOnly!.preparationChoices;
+      if (preparations) {
+        assert.equal([...rendered.matchAll(/data-carbohydrate-choice="whole"/g)].length, preparations.choices.length, routePath);
+        for (const choice of preparations.choices) {
+          assert.ok(rendered.includes(choice.label[locale]), routePath);
+          assert.ok(rendered.includes('href="' + choice.record.sourceUrl + '"'), routePath);
+        }
+        assert.doesNotMatch(rendered, /data-ingredient-carb-alternative=/, routePath);
+      }
     }
   }
 
@@ -178,7 +187,7 @@ test("standalone carbohydrate and source warnings follow reviewed quantities and
 
 test("preparation and optional-side evidence stays visibly scoped", async () => {
   const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
-  for (const id of ["bataattiletut", "bataattibrowniet", "bataatti-banaanileipa"]) {
+  for (const id of ["bataatti-banaanileipa"]) {
     const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
     assert.equal(entries.length, 4, id);
     for (const { locale, routePath } of entries) {
@@ -193,14 +202,15 @@ test("preparation and optional-side evidence stays visibly scoped", async () => 
       assert.doesNotMatch(rendered, /data-portion-carbohydrate=|data-portion-gk=|data-gk-status="(?:QUALITATIVE|CALCULATED)"/);
     }
   }
-  for (const id of ["gazpacho", "medu-vada"]) {
+  for (const id of ["gazpacho", "medu-vada", "marjakiisseli-vaniljakastikkeella", "malesialainen-mee-goreng-aamunuudeleilla",
+    "pannacotta-marjakastikkeella", "lahi-ita-kikhernejauho-yrttilettu"]) {
     assert.equal(glycemicLoadFilterCategories[id], undefined, id);
     for (const { locale, routePath } of siteContent.recipes.filter(recipe => recipe.recipeId === id)) {
       const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
       const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
       assert.match(rendered, /data-portion-gk=/, routePath);
       assert.ok(rendered.includes(reviews[id].condition![locale]), routePath);
-      if (id === "medu-vada") assert.ok(rendered.includes(reviews[id].classLimitation![locale]), routePath);
+      if (reviews[id].classLimitation) assert.ok(rendered.includes(reviews[id].classLimitation[locale]), routePath);
     }
   }
 });

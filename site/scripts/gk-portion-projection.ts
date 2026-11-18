@@ -10,6 +10,9 @@ import { verifyNutritionEvidence } from "./nutrition-evidence";
 import { isRecoveryEvidence } from "./gk80-uunikanapasta";
 import { isScopedPolyolEvidence } from "./gk80-polyol-c";
 
+type CompositionMatch = { index: number; record: FoodRecord; state: string; matchEvidence: string };
+type NutritionRecipe = Parameters<typeof verifyNutritionEvidence>[0];
+
 interface ReviewedPortion {
   recipeBindingSha256: string;
   preparationSha256?: string;
@@ -31,7 +34,8 @@ interface ReviewedPortion {
   reviewedAt: string;
   verbalNoteEdits?: Partial<Record<keyof LocalizedText, { before: string; after: string }>>;
   wholeCarbohydrateOnly?: {
-    compositionMatches?: { index: number; record: FoodRecord; state: string; matchEvidence: string }[];
+    compositionMatches?: CompositionMatch[];
+    preparationChoices?: { index: number; choices: (Omit<CompositionMatch, "index"> & { label: LocalizedText })[] };
     noteEdits?: Partial<Record<keyof LocalizedText, { before: string; after: string }>>;
     localizedScopeSha256?: Partial<LocalizedText>;
   };
@@ -84,12 +88,66 @@ function validCarbohydrateRate(value: unknown): value is number {
   return typeof value === "number" && Number.isFinite(value) && value >= 0 && value <= 100;
 }
 
+function distinctChoiceLabels(choices: { label: LocalizedText }[]): boolean {
+  return choices.length >= 2 && (["fi", "en", "sv", "th"] as const).every(locale => {
+    const labels = choices.map(choice => choice.label[locale]?.trim());
+    return labels.every(Boolean) && new Set(labels).size === labels.length;
+  });
+}
+
+function applyCompositionMatches(input: Calculation, matches: CompositionMatch[], labelIndices: number[]) {
+  const indices = [...labelIndices, ...matches.map(match => match.index)];
+  if (indices.length && (input.publicationStatus !== "WITHHELD_SOURCE_INCOMPLETE"
+      || new Set(indices).size !== indices.length
+      || indices.some(index => !Number.isInteger(index) || !input.ingredients[index]))) {
+    throw new Error(`${input.recipeId}: invalid reviewed portion composition indices or publication status.`);
+  }
+  if (matches.length === 0) return input;
+  const ingredients = [...input.ingredients];
+  for (const { index, record, state, matchEvidence } of matches) {
+    if (!record || !httpsSource(record.sourceUrl) || !state?.trim() || !matchEvidence?.trim()) {
+      throw new Error(`${input.recipeId}: a reviewed composition match requires a source and preparation evidence.`);
+    }
+    ingredients[index] = { ...ingredients[index], record, state, matchEvidence };
+  }
+  return { ...input, ingredients };
+}
+
+function portionFromNutrition(data: NutritionRecipe, input: Calculation, standalone: boolean) {
+  // These two approved methodologies have separate accounting scopes.
+  if (isRecoveryEvidence(input) || isScopedPolyolEvidence(input)) return null;
+  const verified = verifyNutritionEvidence(data, input);
+  if (verified.errors.length) return null;
+  const calculation = calculate(input);
+  // A carbohydrate-only estimate needs evidence for every row, including a
+  // zero-carbohydrate bound for any excluded ingredient.
+  const standaloneAmounts = standalone && input.publicationStatus === "WITHHELD_SOURCE_INCOMPLETE"
+    ? calculation.rows.map((row, index) => {
+      const ingredient = input.ingredients[index];
+      if (ingredient.excludedReason) {
+        return Boolean(ingredient.omissionImpactEvidence?.trim())
+          && ingredient.omissionImpactUpperBoundPerServing?.netCarbohydrate === 0
+          && ingredient.omissionImpactUpperBoundPerServing.totalCarbohydrate === 0 ? 0 : null;
+      }
+      // Normalization handles unknown fibre and polyols for each source basis.
+      return row.issues.every(issue => /^Unknown nutrient (fat|protein|fibre|polyols|netCarbohydrate)$/.test(issue))
+        ? row.values.carbohydrate : null;
+    }) : undefined;
+  const complete = standalone ? standaloneAmounts?.every(value => value !== null) : verified.status === "ESTIMATE WITH EVIDENCE";
+  const available = complete ? calculation.perServing.carbohydrate : null;
+  const amounts = standaloneAmounts ?? calculation.rows.map(row => row.issues.length === 0 ? row.values.carbohydrate : null);
+  const max = Math.max(0, ...amounts.map(value => value ?? 0));
+  const sum = amounts.reduce<number>((total, value) => total + (value ?? 0), 0);
+  const driver = max > 0 ? { ingredientIndex: amounts.indexOf(max), coversMajority: available !== null && max > sum / 2 } : undefined;
+  return { available, driver, zeroCarbohydrate: available === 0 && amounts.length > 0 && amounts.every(value => value === 0) };
+}
+
 export async function loadReviewedPortions(root: string): Promise<Record<string, ReviewedPortion>> {
   return JSON.parse(await readFile(path.join(root, "docs/nutrition/gk-reviewed-portions.json"), "utf8"));
 }
 
 export async function projectPortionEvidence(root: string, recipeId: string, markdown: string, review?: ReviewedPortion) {
-  const data = parseMarkdown(markdown)!.data as Parameters<typeof verifyNutritionEvidence>[0];
+  const data = parseMarkdown(markdown)!.data as NutritionRecipe;
   const portion: PortionEvidence = {};
   let zeroCarbohydrate = false;
   if (review && (review.recipeBindingSha256 !== recipeBindingHash(markdown) || !httpsSource(review.source)
@@ -125,19 +183,8 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
     const input = JSON.parse(raw) as Calculation;
     const labelIndices = review?.declaredLabelIngredientIndices ?? [];
     const matches = standaloneReview?.compositionMatches ?? [];
-    const indices = [...labelIndices, ...matches.map(match => match.index)];
     // Amend only the portion view. Macro and GK approvals still use the original evidence.
-    if (indices.length && (input.publicationStatus !== "WITHHELD_SOURCE_INCOMPLETE"
-        || new Set(indices).size !== indices.length
-        || indices.some(index => !Number.isInteger(index) || !input.ingredients[index]))) {
-      throw new Error(`${recipeId}: invalid reviewed portion composition indices or publication status.`);
-    }
-    for (const { index, record, state, matchEvidence } of matches) {
-      if (!record || !httpsSource(record.sourceUrl) || !state?.trim() || !matchEvidence?.trim()) {
-        throw new Error(`${recipeId}: a reviewed composition match requires a source and preparation evidence.`);
-      }
-      Object.assign(input.ingredients[index], { record, state, matchEvidence });
-    }
+    const reviewedInput = applyCompositionMatches(input, matches, labelIndices);
     for (const index of labelIndices) {
       const record = input.ingredients[index].record;
       if (!record || record.licence !== "Manufacturer's published product information"
@@ -146,38 +193,31 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
       }
       record.carbohydrateDefinition = "EU_TOTAL_INCLUDING_POLYOLS";
     }
-    // These two approved methodologies have separate accounting scopes.
-    if (!isRecoveryEvidence(input) && !isScopedPolyolEvidence(input)) {
-      const verified = verifyNutritionEvidence(data, input);
-      if (!verified.errors.length) {
-        const calculation = calculate(input);
-        // An opt-in can use the reviewed carbohydrate calculation when another
-        // nutrient is still unknown and every excluded row has a zero carb bound.
-        const standaloneAmounts = standaloneReview && input.publicationStatus === "WITHHELD_SOURCE_INCOMPLETE"
-          ? calculation.rows.map((row, index) => {
-            const ingredient = input.ingredients[index];
-            if (ingredient.excludedReason) {
-              return Boolean(ingredient.omissionImpactEvidence?.trim())
-                && ingredient.omissionImpactUpperBoundPerServing?.netCarbohydrate === 0
-                && ingredient.omissionImpactUpperBoundPerServing.totalCarbohydrate === 0 ? 0 : null;
-            }
-            // Normalization returns null for available carbs if it needs an
-            // unknown fibre or polyol value. Other nutrient gaps do not erase it.
-            return row.issues.every(issue => /^Unknown nutrient (fat|protein|fibre|polyols|netCarbohydrate)$/.test(issue))
-              ? row.values.carbohydrate : null;
-          }) : undefined;
-        const fullAvailableCarbohydrate = standaloneReview
-          ? standaloneAmounts?.every(value => value !== null) : verified.status === "ESTIMATE WITH EVIDENCE";
-        const available = fullAvailableCarbohydrate ? calculation.perServing.carbohydrate : null;
-        if (available !== null) portion.availableCarbs = { min: available, max: available };
-        const amounts = standaloneAmounts ?? calculation.rows.map(row => row.issues.length === 0 ? row.values.carbohydrate : null);
-        const max = Math.max(0, ...amounts.map(value => value ?? 0));
-        if (max > 0) {
-          const sum = amounts.reduce<number>((accumulated, value) => accumulated + (value ?? 0), 0);
-          portion.driver = { ingredientIndex: amounts.indexOf(max), coversMajority: available !== null && max > sum / 2 };
+    const preparations = standaloneReview?.preparationChoices;
+    if (preparations) {
+      const { index, choices } = preparations;
+      if (review?.ingredientPortion?.index !== index || review?.ingredientPortion?.carbohydrateAlternatives
+          || matches.some(match => match.index === index) || !distinctChoiceLabels(choices)
+          || new Set(choices.map(choice => choice.record?.sourceUrl)).size !== choices.length) {
+        throw new Error(`${recipeId}: whole-portion preparations require distinct labels and sources for the same ingredient.`);
+      }
+      const scenarios = choices.map(({ label, ...match }) => {
+        const candidate = applyCompositionMatches(reviewedInput, [{ index, ...match }], labelIndices);
+        const result = portionFromNutrition(data, candidate, true);
+        if (!result || result.available === null) {
+          throw new Error(`${recipeId}: whole-portion preparation requires evidence for every ingredient.`);
         }
-        zeroCarbohydrate = review?.zeroCarbohydrate === true && available === 0
-          && amounts.length > 0 && amounts.every(value => value === 0);
+        return { label, source: match.record.sourceUrl, availableCarbsGPerServing: result.available };
+      });
+      const amounts = scenarios.map(choice => choice.availableCarbsGPerServing);
+      portion.availableCarbs = { min: Math.min(...amounts), max: Math.max(...amounts) };
+      portion.wholeCarbohydrateChoices = scenarios;
+    } else {
+      const result = portionFromNutrition(data, reviewedInput, Boolean(standaloneReview));
+      if (result) {
+        if (result.available !== null) portion.availableCarbs = { min: result.available, max: result.available };
+        if (result.driver) portion.driver = result.driver;
+        zeroCarbohydrate = review?.zeroCarbohydrate === true && result.zeroCarbohydrate;
       }
     }
   }
@@ -222,12 +262,8 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
       else portion.ingredientPortion.declaredCarbsGPerServing = carbsGPerServing;
     }
     if (carbohydrateAlternatives) {
-      if (unit !== "g" || carbohydrateAlternatives.length < 2 || !carbohydrateAlternatives.every(choice =>
-        validCarbohydrateRate(choice.availableCarbsGPer100g) && httpsSource(choice.source))
-        || !(["fi", "en", "sv", "th"] as const).every(locale => {
-          const labels = carbohydrateAlternatives.map(choice => choice.label[locale]?.trim());
-          return labels.every(Boolean) && new Set(labels).size === labels.length;
-        })) {
+      if (unit !== "g" || !distinctChoiceLabels(carbohydrateAlternatives) || !carbohydrateAlternatives.every(choice =>
+        validCarbohydrateRate(choice.availableCarbsGPer100g) && httpsSource(choice.source))) {
         throw new Error(`${recipeId}: invalid partial ingredient carbohydrate alternatives.`);
       }
       portion.ingredientPortion.carbohydrateAlternatives = carbohydrateAlternatives.map(choice => ({
