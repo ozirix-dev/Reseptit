@@ -149,6 +149,7 @@ test("standalone carbohydrate and source warnings follow reviewed quantities and
   const whole = Object.entries(reviews).filter(([, review]) => review.wholeCarbohydrateOnly?.localizedScopeSha256);
   assert.ok(whole.some(([id]) => id === "uuniriisipuuro"));
   assert.ok(whole.some(([id]) => id === "avokado-perunasampylat-pellilla"));
+  assert.ok(whole.some(([id]) => id === "paahtopaistileivat-kauralesesampyloilla"));
   for (const [id, review] of whole) {
     const entries = siteContent.recipes.filter(entry => entry.recipeId === id);
     assert.deepEqual(entries.map(recipe => recipe.locale).sort(), Object.keys(review.wholeCarbohydrateOnly!.localizedScopeSha256!).sort());
@@ -182,6 +183,12 @@ test("standalone carbohydrate and source warnings follow reviewed quantities and
       if (id === "piparkakkulatte-hunajalla" && locale === "en") {
         assert.match(rendered, /Beat again briefly\./, routePath);
         assert.doesNotMatch(rendered, /Vatkaa vielä hetki/, routePath);
+      }
+      if (id === "paahtopaistileivat-kauralesesampyloilla") {
+        const wholeCarbs = rendered.match(/data-portion-carbohydrate="available"[^>]*>([\s\S]*?)<\/div>/)?.[1];
+        const rollCarbs = rendered.match(/data-ingredient-carbohydrate="available"[^>]*>([\s\S]*?)<\/div>/)?.[1];
+        assert.ok(wholeCarbs?.includes(new Intl.NumberFormat(locale).format(4.6)), routePath);
+        assert.ok(rollCarbs?.includes(new Intl.NumberFormat(locale).format(1.6)), routePath);
       }
     }
   }
@@ -231,7 +238,7 @@ test("preparation and optional-side evidence stays visibly scoped", async () => 
 test("labelled ingredient totals and a low tomato estimate stay in their reviewed scopes", async () => {
   const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
   const tomatoId = "metabolic-boost-tomaattisoseella";
-  for (const id of [tomatoId, "gluteeniton-uunipannukakku", "gluteeniton-siemenvuokaleipa", "gluteenittomat-kauralesesampylat", "gluteeniton-durrapizzapohja"]) {
+  for (const id of [tomatoId, "gluteeniton-uunipannukakku", "gluteeniton-siemenvuokaleipa", "gluteenittomat-kauralesesampylat", "gluteeniton-durrapizzapohja", "karjalanpiirakat-riisipuurolla"]) {
     const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
     assert.equal(entries.length, 4, id);
     for (const { locale, routePath } of entries) {
@@ -247,6 +254,11 @@ test("labelled ingredient totals and a low tomato estimate stay in their reviewe
         assert.match(rendered, /data-ingredient-carbohydrate="declared"/);
         assert.ok(rendered.includes(portionCopy[locale].declaredIngredientCarbs), routePath);
         assert.doesNotMatch(rendered, /data-ingredient-carbohydrate="available"|data-gk-status="(?:CALCULATED|QUALITATIVE)"/);
+        if (id === "karjalanpiirakat-riisipuurolla") {
+          assert.doesNotMatch(rendered, /data-portion-carbohydrate=/);
+          assert.ok(rendered.includes(new Intl.NumberFormat(locale).format(6.4)), routePath);
+          assert.ok(rendered.includes('href="' + reviews[id].ingredientPortion!.source + '"'), routePath);
+        }
       }
     }
   }

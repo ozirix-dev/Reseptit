@@ -524,6 +524,23 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.match(await carrotPortion.innerText(), /76,5 g[\s\S]+10,7 g/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);
 
+    await page.goto(base + routeFor("paahtopaistileivat-kauralesesampyloilla"));
+    const sandwichCarbs = page.locator('[data-portion-carbohydrate="available"]');
+    const rollCarbs = page.locator('[data-ingredient-carbohydrate="available"]');
+    assert.match(await sandwichCarbs.innerText(), /4,6 g/);
+    assert.match(await rollCarbs.innerText(), /1,6 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await sandwichCarbs.innerText(), /6,9 g/);
+    assert.match(await rollCarbs.innerText(), /2,4 g/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+
+    await page.goto(base + routeFor("karjalanpiirakat-riisipuurolla"));
+    const riceLabelCarbs = page.locator('[data-ingredient-carbohydrate="declared"]');
+    assert.match(await riceLabelCarbs.innerText(), /6,4 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await riceLabelCarbs.innerText(), /9,6 g/);
+    assert.equal(await page.locator("[data-portion-carbohydrate], [data-portion-gk]").count(), 0);
+
     await page.goto(base + routeFor("briossisampylat-joshua-weissman"));
     assert.match(await page.locator('[data-gk-status="QUALITATIVE"]').innerText(), /Suuri arvioitu GK/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);

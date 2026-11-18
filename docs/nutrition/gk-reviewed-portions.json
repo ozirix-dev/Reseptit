@@ -1066,23 +1066,25 @@
     "preparationSha256": "f120a602c688163f86b1216a69651cb4b460688568dda0ba4804409fc735676d",
     "reviewedAt": "2026-11-18",
     "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/leivonnaiset/karjalanpiirakat-riisipuurolla.md",
-    "reasoning": "200 g dry rice ÷ 24 pastries is 8⅓ g input per piece at even distribution; label exact for candidate product. Filling yield, adhered flour and butter retention unresolved. Existing GK hold on product/cooking equivalence stays; no claim of cooked weight, finished whole carb or GK.",
+    "reasoning": "200 g dry rice ÷ 24 pastries is 8⅓ g input per piece at even distribution; label exact for candidate product. Filling yield, adhered flour and butter retention unresolved. Existing GK hold on product/cooking equivalence stays; no claim of cooked weight, finished whole carb or GK. The 77 g per 100 g declaration gives 6.4166667 g of declared carbohydrate per pastry from this raw rice.",
     "condition": {
-      "fi": "Piirakan kuori vaikuttaa myös hiilihydraattimäärään. Kaulintajauhoista osa jää käyttämättä.",
-      "en": "The crust also contributes carbohydrate. Some of the flour used for rolling is left over.",
-      "sv": "Skalet bidrar också med kolhydrater. En del av mjölet som används vid kavling blir över.",
-      "th": "แป้งหุ้มก็ให้คาร์โบไฮเดรต แป้งสำหรับคลึงบางส่วนจะเหลือ"
+      "fi": "Pakkausarvio koskee Pirkka-puuroriisiä (EAN 6410405257864). Myös kuori sisältää hiilihydraattia. Osa kaulintajauhoista jää käyttämättä.",
+      "en": "The label estimate uses Pirkka porridge rice (EAN 6410405257864). The crust also contains carbohydrate. Some of the flour used for rolling is left over.",
+      "sv": "Uppgiften från förpackningen gäller Pirkka grötris (EAN 6410405257864). Skalet innehåller också kolhydrater. En del av kavlingsmjölet blir över.",
+      "th": "ค่าจากฉลากใช้ข้าวสำหรับทำโจ๊ก Pirkka (EAN 6410405257864) แป้งหุ้มก็มีคาร์โบไฮเดรต และแป้งสำหรับคลึงบางส่วนจะเหลือ"
     },
     "ingredientPortion": {
       "index": 5,
       "ingredientSha256": "589100408578dfb77d3d6f7559a3b9ac98c2fa41b59d191b4e68e210bb54c199",
       "labels": {
-        "fi": "puuroriisiä kuivapainona",
-        "en": "porridge rice by dry weight",
-        "sv": "grötris i torrvikt",
-        "th": "ข้าวสำหรับทำโจ๊กน้ำหนักแห้ง"
+        "fi": "Pirkka-puuroriisi kuivapainona",
+        "en": "Pirkka porridge rice by dry weight",
+        "sv": "Pirkka grötris i torrvikt",
+        "th": "ข้าวสำหรับทำโจ๊ก Pirkka น้ำหนักแห้ง"
       },
-      "unit": "g"
+      "unit": "g",
+      "declaredCarbsGPer100g": 77,
+      "source": "https://www.k-ruoka.fi/kauppa/tuote/pirkka-puuroriisi-1kg-6410405257864"
     }
   },
   "raejuustobagelit-ilman-kohotusta": {
@@ -1090,12 +1092,12 @@
     "preparationSha256": "51f3c2a6a16ff8923bc885be0ae1a65abace12c0666c586cd0a0cf8b4b044e8a",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
-    "reasoning": "300 g dry flour evenly across six. Recipe has explicit no reliable whole macro/GK yet, uncertain baking powder/egg glaze retention and no source-match baked bagel GI. Valio 6408430043019 confirms named cottage product, but no clinical classification. The current recipe identifies 300 g dry medium wheat flour and six equal portions. Fineli 110 identifies the same grade, 74.0 g available carbohydrate per 100 g with no reported polyols. The known flour contribution is separate from the whole recipe and the unverified egg glaze.",
+    "reasoning": "300 g dry flour evenly across six. Recipe has explicit no reliable whole macro/GK yet, uncertain baking powder/egg glaze retention and no source-match baked bagel GI. Valio 6408430043019 confirms named cottage product, but no clinical classification. The current recipe identifies 300 g dry medium wheat flour and six equal portions. Fineli 110 identifies the same grade, 74.0 g available carbohydrate per 100 g with no reported polyols. The known flour contribution is separate from the whole recipe and the unverified egg glaze. The separate Valio declaration of 1.8 g carbohydrate per 100 g gives 1.2 g from 400 g across six bagels.",
     "condition": {
-      "fi": "Myös raejuusto vaikuttaa hiilihydraattimäärään. Tarkista käytetyn tuotteen ravintoarvo pakkauksesta.",
-      "en": "Cottage cheese also contributes carbohydrate. Check its nutrition label.",
-      "sv": "Keso bidrar också med kolhydrater. Kontrollera näringsvärdet på förpackningen.",
-      "th": "คอตเทจชีสก็ให้คาร์โบไฮเดรต ตรวจข้อมูลโภชนาการบนบรรจุภัณฑ์"
+      "fi": "Valio 2 % -raejuustosta (EAN 6408430043019) kertyy pakkauksen mukaan lisäksi noin 1,2 g hiilihydraattia per bageli. Tarkista käyttämäsi raejuuston pakkaus.",
+      "en": "According to its label, Valio 2% cottage cheese (EAN 6408430043019) adds about 1.2 g of carbohydrate per bagel. Check the label on the cheese you use.",
+      "sv": "Enligt förpackningen bidrar Valio 2 %-grynost (EAN 6408430043019) med cirka 1,2 g kolhydrater per bagel. Kontrollera förpackningen till den grynost du använder.",
+      "th": "ตามฉลาก คอตเทจชีส Valio ไขมัน 2% (EAN 6408430043019) ให้คาร์โบไฮเดรตเพิ่มประมาณ 1.2 กรัมต่อเบเกิล ตรวจฉลากของชีสที่ใช้"
     },
     "ingredientPortion": {
       "index": 1,
@@ -1107,8 +1109,10 @@
         "th": "แป้งสาลีบดปานกลางน้ำหนักแห้ง"
       },
       "unit": "g",
-      "availableCarbsGPer100g": 74.0
-    }
+      "availableCarbsGPer100g": 74.0,
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/110"
+    },
+    "publicSource": "https://www.valio.fi/tuotteet/valio-raejuusto/"
   },
   "briossisampylat-joshua-weissman": {
     "recipeBindingSha256": "62323fc8aa1afd60f9bb8e585276e14fd8080319ad6abf7159daed55c32cfec9",
@@ -4446,12 +4450,12 @@
     "source": "https://github.com/ozirix-dev/Reseptit/blob/a9fb21b71cd1ca0c75010ce95deb1cbf85f47937/docs/nutrition/estimates-2026-10-24-batch-9.md",
     "reviewedAt": "2026-11-18",
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/a9fb21b71cd1ca0c75010ce95deb1cbf85f47937/docs/nutrition/estimates-2026-10-24-batch-9.md",
-    "reasoning": "The linked bun batch yields eight, and the sandwich recipe uses two cooled baked buns for four servings. For the Batch9 ingredients including 8 g of sesame seeds in the batch, the available carbohydrate in a half bun is 1.59528125 g. Source records use direct available carbohydrate and no GF, macro or GK change.",
+    "reasoning": "The linked Batch 9 recipe yields eight rolls with 25.5245 g available carbohydrate per batch. Two rolls split between four sandwiches contribute 1.59528125 g per sandwich. The fitting AFCD F002220 source covers drained capers. One quarter of the other filling ingredients adds 2.976575 g with 20 g horseradish per sauce batch and 0.28122 g less with 12 g. The whole sandwich estimate uses the 20 g option and displays the difference for 12 g. Roast beef, mayonnaise, 40% smetana, mustard, lemon juice, arugula, drained pickles, onion and black pepper use the pinned sandwich calculation. No cooked bread weight or measured mixed-food GI is inferred.",
     "condition": {
-      "fi": "Yhden annoksen puolikkaassa kauralesesämpylässä on arviolta 1,6 g imeytyvää hiilihydraattia, kun taikina jaetaan kahdeksaan ja pinnalle käytetään yhteensä 8 g seesaminsiemeniä. Täytteet tuovat lisää hiilihydraattia.",
-      "en": "The half oat bran roll contributes about 1.6 g of available carbohydrate when the dough is divided into eight rolls and topped with 8 g of sesame seeds in total. The toppings add carbohydrate.",
-      "sv": "En halv havreklifralla ger cirka 1,6 g tillgängliga kolhydrater när degen delas i åtta frallor som toppas med sammanlagt 8 g sesamfrön. Påläggen bidrar med ytterligare kolhydrater.",
-      "th": "ขนมปังรำข้าวโอ๊ตครึ่งชิ้นให้คาร์โบไฮเดรตที่ย่อยได้ประมาณ 1.6 กรัม เมื่อแบ่งแป้งเป็นแปดชิ้นและโรยงารวม 8 กรัม เครื่องหน้าให้คาร์โบไฮเดรตเพิ่มเติม"
+      "fi": "Annokseen kuuluu puolikas kauralesesämpylä, noin 60 g paahtopaistia ja neljännes kastikkeesta ja muista täytteistä. Arviossa on 8 g seesaminsiemeniä kahdeksan sämpylän erässä, 40-prosenttista smetanaa, valutetut suolakurkut ja kaprikset sekä 20 g piparjuurta koko kastike-erässä. Jos käytät kastikkeeseen 12 g piparjuurta, annoksessa on noin 0,3 g vähemmän imeytyvää hiilihydraattia.",
+      "en": "One serving includes half an oat bran roll, about 60 g of roast beef and a quarter of the sauce and other toppings. The estimate uses 8 g of sesame seeds for eight rolls, 40% smetana, drained pickles and capers, and 20 g of horseradish in the sauce batch. Using 12 g of horseradish in the batch lowers available carbohydrate by about 0.3 g per serving.",
+      "sv": "En portion innehåller en halv havreklifralla, cirka 60 g rostbiff och en fjärdedel av såsen och övriga pålägg. Uppskattningen utgår från 8 g sesamfrön till åtta frallor, 40-procentig smetana, avrunnen saltgurka och kapris samt 20 g pepparrot i hela såsen. Med 12 g pepparrot i såsen blir mängden tillgängliga kolhydrater cirka 0,3 g lägre per portion.",
+      "th": "หนึ่งที่มีขนมปังรำข้าวโอ๊ตครึ่งชิ้น เนื้ออบประมาณ 60 กรัม และซอสกับเครื่องหน้าหนึ่งในสี่ของสูตร ค่านี้ใช้งา 8 กรัมต่อขนมปังแปดชิ้น สเมตานาที่มีไขมัน 40% แตงกวาดองและเคเปอร์ที่สะเด็ดน้ำแล้ว และฮอร์สแรดิช 20 กรัมต่อซอสทั้งสูตร หากใช้ฮอร์สแรดิช 12 กรัม คาร์โบไฮเดรตที่ย่อยได้จะลดลงประมาณ 0.3 กรัมต่อที่"
     },
     "ingredientPortion": {
       "index": 0,
@@ -4462,6 +4466,91 @@
         "en": "Prepared oat bran roll",
         "sv": "Färdig havreklifralla",
         "th": "ขนมปังรำข้าวโอ๊ตที่อบแล้ว"
+      },
+      "source": "https://github.com/ozirix-dev/Reseptit/blob/a9fb21b71cd1ca0c75010ce95deb1cbf85f47937/docs/nutrition/estimates-2026-10-24-batch-9.md"
+    },
+    "wholeCarbohydrateOnly": {
+      "compositionMatches": [
+        {
+          "index": 10,
+          "state": "drained bottled or canned pickled capers",
+          "matchEvidence": "FSANZ AFCD Release 3 F002220 matches this ingredient's physical form and reports 1.7 g available carbohydrate without sugar alcohols per 100 g (nutrient workbook row 1320). ",
+          "record": {
+            "id": "afcd-F002220-release-3",
+            "name": "Capers, pickled, canned, drained",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002220",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "state": "drained bottled or canned pickled capers",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "The AFCD workbook directly reports available carbohydrate without sugar alcohols. An independent aggregate polyol value was not established.",
+            "per100g": {
+              "carbohydrate": 1.7,
+              "fibre": 3.2,
+              "polyols": null,
+              "protein": 2.4,
+              "fat": 0.9
+            }
+          }
+        }
+      ],
+      "countedIngredient": {
+        "index": 0,
+        "recipeFile": "reseptit/leivonnaiset/keto-kauralesesampylat.md",
+        "recipeSha256": "440af17791363cba9823f3ab38fbd4ba813ba45e3a5f468084b86d91603d46c8",
+        "calculationFile": "docs/nutrition/estimates-2026-10-24-batch-9.md",
+        "calculationSha256": "103ca782f6d2f8e8aa0594e22008ae07ce7c9607e4126faaa97557a0d2faaa1a",
+        "components": [
+          {
+            "availableCarbsGPer100g": 0.3,
+            "source": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+            "gramsPerPiece": 55
+          },
+          {
+            "availableCarbsGPer100g": 2.5,
+            "source": "https://fineli.fi/fineli/fi/elintarvikkeet/649"
+          },
+          {
+            "availableCarbsGPer100g": 5.4,
+            "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006077"
+          },
+          {
+            "availableCarbsGPer100g": 52.19,
+            "source": "https://fineli.fi/fineli/fi/elintarvikkeet/170"
+          },
+          {
+            "availableCarbsGPer100g": 0,
+            "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31681"
+          },
+          {
+            "availableCarbsGPer100g": 2.9,
+            "source": "https://fineli.fi/fineli/fi/elintarvikkeet/631"
+          },
+          {
+            "availableCarbsGPer100g": 0.8,
+            "source": "https://fineli.fi/fineli/fi/elintarvikkeet/500"
+          },
+          {
+            "availableCarbsGPer100g": 19.8,
+            "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F000247"
+          },
+          {
+            "availableCarbsGPer100g": 0,
+            "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30"
+          },
+          {
+            "availableCarbsGPer100g": 0.9,
+            "source": "https://fineli.fi/fineli/fi/elintarvikkeet/385"
+          }
+        ]
+      },
+      "localizedScopeSha256": {
+        "fi": "f4d102ca671118d7074793116893fd21f02975804288813219cbc544ce1e1b70",
+        "en": "cb4253c9c54aa8fe1b4052c0c4445b0261299ac47ddda5e198bd2c807617f0c9",
+        "sv": "cae7557e8622f34272414fa0e0d81af9f0ad077eb9f105c422b2879ff43d18ba",
+        "th": "6e8e89fdf4867e792cb74360024e335cc3e2e13a3faaa5ea39be5e89bf7d22a3"
       }
     }
   },

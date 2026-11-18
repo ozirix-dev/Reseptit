@@ -5,13 +5,22 @@ import type { IngredientPortion, PortionEvidence, LocalizedText, VerbalGk } from
 import type { RecipeEntry } from "../src/types/content";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeBindingHash } from "./glycemic-load-recipe-binding";
-import { calculate, type Calculation, type FoodRecord, type IngredientInput } from "./nutrition-model";
+import { calculate, round, type Calculation, type FoodRecord, type IngredientInput } from "./nutrition-model";
 import { verifyNutritionEvidence } from "./nutrition-evidence";
 import { isRecoveryEvidence } from "./gk80-uunikanapasta";
 import { isScopedPolyolEvidence } from "./gk80-polyol-c";
 
 type CompositionMatch = { index: number } & Partial<Omit<IngredientInput, "item" | "amount" | "unit">>;
 type NutritionRecipe = Parameters<typeof verifyNutritionEvidence>[0];
+
+interface CountedRecipeIngredient {
+  index: number;
+  recipeFile: string;
+  recipeSha256: string;
+  calculationFile: string;
+  calculationSha256: string;
+  components: { availableCarbsGPer100g: number; source: string; gramsPerPiece?: number }[];
+}
 
 interface ReviewedPortion {
   recipeBindingSha256: string;
@@ -36,6 +45,7 @@ interface ReviewedPortion {
   verbalNoteEdits?: Partial<Record<keyof LocalizedText, { before: string; after: string }>>;
   wholeCarbohydrateOnly?: {
     compositionMatches?: CompositionMatch[];
+    countedIngredient?: CountedRecipeIngredient;
     preparationChoices?: { index: number; choices: { label: LocalizedText; record: FoodRecord; state: string; matchEvidence: string }[] };
     noteEdits?: Partial<Record<keyof LocalizedText, { before: string; after: string }>>;
     localizedScopeSha256?: Partial<LocalizedText>;
@@ -118,7 +128,46 @@ function applyCompositionMatches(input: Calculation, matches: CompositionMatch[]
   return { ...input, ingredients };
 }
 
-function portionFromNutrition(data: NutritionRecipe, input: Calculation, standalone: boolean) {
+async function countedIngredientAmount(root: string, markdown: string, input: Calculation, review: CountedRecipeIngredient) {
+  const ingredient = input.ingredients[review.index];
+  const recipeId = path.posix.basename(review.recipeFile, ".md");
+  const sourceUrl = "https://ozirix-dev.github.io/Reseptit/" + recipeId + "/";
+  if (!/^reseptit\/[a-z0-9-]+\/[a-z0-9-]+\.md$/.test(review.recipeFile)
+      || !/^docs\/nutrition\/estimates-[a-z0-9-]+\.md$/.test(review.calculationFile)
+      || input.publicationStatus !== "WITHHELD_SOURCE_INCOMPLETE"
+      || !ingredient?.excludedReason || ingredient.unit !== "kpl" || typeof ingredient.amount !== "number"
+      || !Number.isInteger(ingredient.amount) || ingredient.amount <= 0
+      || !("sourceUrl" in ingredient) || ingredient.sourceUrl !== sourceUrl || !markdown.includes(`](${sourceUrl})`)) {
+    throw new Error(`${input.recipeId}: counted ingredient must match the referenced recipe and reviewed piece count.`);
+  }
+  const [recipeText, calculationText] = await Promise.all([
+    readFile(path.join(root, review.recipeFile), "utf8"),
+    readFile(path.join(root, review.calculationFile), "utf8"),
+  ]);
+  const recipe = parseMarkdown(recipeText)?.data as NutritionRecipe | undefined;
+  if (hash(recipeText) !== review.recipeSha256 || hash(calculationText) !== review.calculationSha256
+      || recipe?.recipe_id !== recipeId || !Number.isInteger(recipe.servings) || recipe.servings <= 0
+      || !recipe.ingredients.length || recipe.ingredients.length !== review.components.length) {
+    throw new Error(`${input.recipeId}: counted ingredient's recipe or source calculation requires review.`);
+  }
+  const batch = recipe.ingredients.reduce((total, component, index) => {
+    const { availableCarbsGPer100g, source, gramsPerPiece } = review.components[index];
+    let grams = component.unit === "g" && gramsPerPiece === undefined ? component.amount : null;
+    if (component.unit === "kpl" && typeof component.amount === "number" && Number.isInteger(component.amount)
+        && typeof gramsPerPiece === "number" && gramsPerPiece > 0) {
+      grams = component.amount * gramsPerPiece;
+    }
+    if (typeof grams !== "number" || !Number.isFinite(grams) || grams <= 0
+        || !validCarbohydrateRate(availableCarbsGPer100g) || !httpsSource(source)) {
+      throw new Error(`${input.recipeId}: invalid composition for counted ingredient component ${index + 1}.`);
+    }
+    return total + grams * availableCarbsGPer100g / 100;
+  }, 0);
+  return { index: review.index, batchCarbohydrate: batch * ingredient.amount / recipe.servings };
+}
+
+function portionFromNutrition(data: NutritionRecipe, input: Calculation, standalone: boolean,
+                              counted?: { index: number; batchCarbohydrate: number }) {
   // These two approved methodologies have separate accounting scopes.
   if (isRecoveryEvidence(input) || isScopedPolyolEvidence(input)) return null;
   const verified = verifyNutritionEvidence(data, input);
@@ -130,6 +179,7 @@ function portionFromNutrition(data: NutritionRecipe, input: Calculation, standal
     ? calculation.rows.map((row, index) => {
       const ingredient = input.ingredients[index];
       if (ingredient.excludedReason) {
+        if (counted?.index === index) return counted.batchCarbohydrate;
         return Boolean(ingredient.omissionImpactEvidence?.trim())
           && ingredient.omissionImpactUpperBoundPerServing?.netCarbohydrate === 0
           && ingredient.omissionImpactUpperBoundPerServing.totalCarbohydrate === 0 ? 0 : null;
@@ -139,12 +189,13 @@ function portionFromNutrition(data: NutritionRecipe, input: Calculation, standal
         ? row.values.carbohydrate : null;
     }) : undefined;
   const complete = standalone ? standaloneAmounts?.every(value => value !== null) : verified.status === "ESTIMATE WITH EVIDENCE";
-  const available = complete ? calculation.perServing.carbohydrate : null;
   const amounts = standaloneAmounts ?? calculation.rows.map(row => row.issues.length === 0 ? row.values.carbohydrate : null);
   const max = Math.max(0, ...amounts.map(value => value ?? 0));
   const sum = amounts.reduce<number>((total, value) => total + (value ?? 0), 0);
-  const driver = max > 0 ? { ingredientIndex: amounts.indexOf(max), coversMajority: available !== null && max > sum / 2 } : undefined;
-  return { available, driver, zeroCarbohydrate: available === 0 && amounts.length > 0 && amounts.every(value => value === 0) };
+  const available = complete ? calculation.perServing.carbohydrate : null;
+  const wholeCarbohydrate = complete && counted ? round(sum / input.servings) : available;
+  const driver = max > 0 ? { ingredientIndex: amounts.indexOf(max), coversMajority: wholeCarbohydrate !== null && max > sum / 2 } : undefined;
+  return { available: wholeCarbohydrate, driver, zeroCarbohydrate: wholeCarbohydrate === 0 && amounts.length > 0 && amounts.every(value => value === 0) };
 }
 
 export async function loadReviewedPortions(root: string): Promise<Record<string, ReviewedPortion>> {
@@ -178,6 +229,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
     throw new Error(`${recipeId}: a numerical-only GK notice requires a current verbal estimate.`);
   }
   const standaloneReview = review?.wholeCarbohydrateOnly;
+  let counted: Awaited<ReturnType<typeof countedIngredientAmount>> | undefined;
   if (standaloneReview && (!review.nutritionSha256 || review.verbal || review.zeroCarbohydrate || !review.condition?.fi?.trim())) {
     throw new Error(`${recipeId}: standalone carbohydrate evidence requires reviewed nutrition, serving scope and no GK promotion.`);
   }
@@ -199,6 +251,14 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
       record.carbohydrateDefinition = "EU_TOTAL_INCLUDING_POLYOLS";
     }
     const preparations = standaloneReview?.preparationChoices;
+    if (standaloneReview?.countedIngredient) {
+      const specification = standaloneReview.countedIngredient;
+      if (preparations || matches.some(match => match.index === specification.index) || labelIndices.includes(specification.index)
+          || review?.ingredientPortion?.index !== specification.index) {
+        throw new Error(`${recipeId}: counted ingredient requires a single matching piece-based portion.`);
+      }
+      counted = await countedIngredientAmount(root, markdown, reviewedInput, specification);
+    }
     if (preparations) {
       const { index, choices } = preparations;
       if (review?.ingredientPortion?.index !== index
@@ -226,7 +286,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
       portion.availableCarbs = { min: Math.min(...amounts), max: Math.max(...amounts) };
       portion.wholeCarbohydrateChoices = scenarios;
     } else {
-      const result = portionFromNutrition(data, reviewedInput, Boolean(standaloneReview));
+      const result = portionFromNutrition(data, reviewedInput, Boolean(standaloneReview), counted);
       if (result) {
         if (result.available !== null) portion.availableCarbs = { min: result.available, max: result.available };
         if (result.driver) portion.driver = result.driver;
@@ -264,6 +324,12 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
     portion.ingredientPortion = { name: labels, amountPerServing, unit, ...(source && { source }) };
     if (portion.driver?.ingredientIndex === index && !portion.driver.coversMajority) delete portion.driver;
     const carbsGPer100g = availableCarbsGPer100g ?? declaredCarbsGPer100g;
+    if (counted) {
+      if (unit !== "kpl" || carbohydrateAlternatives || carbsGPer100g !== undefined) {
+        throw new Error(`${recipeId}: counted ingredient carbohydrate must use the reviewed recipe yield.`);
+      }
+      portion.ingredientPortion.availableCarbsGPerServing = counted.batchCarbohydrate / data.servings;
+    }
     if (availableCarbsGPer100g !== undefined || declaredCarbsGPer100g !== undefined) {
       if (carbohydrateAlternatives || (availableCarbsGPer100g !== undefined && declaredCarbsGPer100g !== undefined)) {
         throw new Error(`${recipeId}: partial ingredient carbohydrate must use one composition basis.`);
