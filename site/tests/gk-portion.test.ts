@@ -107,6 +107,25 @@ test("partial ingredient quantities remain separate from the whole portion and i
   }), /source review for the partial ingredient changed/);
 });
 
+test("volume-only ingredient evidence cannot carry a per-100-gram carbohydrate value", async () => {
+  const id = "punajuuririsotto";
+  const [reviews, markdown] = await Promise.all([
+    loadReviewedPortions(root),
+    readFile(path.join(root, "reseptit/paaruoat", `${id}.md`), "utf8"),
+  ]);
+  const review = reviews[id];
+  const ingredient = review.ingredientPortion!;
+  const { portion } = await projectPortionEvidence(root, id, markdown, review);
+  assert.equal(portion.ingredientPortion?.unit, "dl");
+  assert.equal(portion.ingredientPortion?.amountPerServing, 0.8);
+  assert.equal(portion.availableCarbs, undefined);
+  for (const compositionKey of ["availableCarbsGPer100g", "declaredCarbsGPer100g"] as const) {
+    await assert.rejects(projectPortionEvidence(root, id, markdown, {
+      ...review, ingredientPortion: { ...ingredient, source: review.source, [compositionKey]: 75 },
+    }), /invalid partial ingredient carbohydrate composition/);
+  }
+});
+
 test("a package label projects only the named ingredient's carbohydrate", async () => {
   const id = "gluteeniton-siemenvuokaleipa";
   const [reviews, markdown] = await Promise.all([

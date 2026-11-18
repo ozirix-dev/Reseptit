@@ -33,7 +33,7 @@ export interface VerbalGk {
 export interface IngredientPortion {
   name: LocalizedText;
   amountPerServing: number;
-  unit: "g" | "kpl" | "arkkia";
+  unit: "g" | "dl" | "kpl" | "arkkia";
   source?: string;
   availableCarbsGPerServing?: number;
   declaredCarbsGPerServing?: number;

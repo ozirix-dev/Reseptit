@@ -296,7 +296,7 @@ test("reviewed ingredient contributions and the dry risotto rice amount are visi
     "perunarieskat-ohrajauhoilla": /8[,.]9.*5[,.]5/,
     "ruis-puolukkapuuro": /22.*16/,
     "omena-kaurapaistos": /16.*11/,
-    "punajuuririsotto": /0,8 dl|80 mL|80 มิลลิลิตร/,
+    "punajuuririsotto": /0,8 dl|80 mL|80 มล\./,
   };
   const guides = new Map(await Promise.all((["fi", "en", "sv", "th"] as const).map(async locale =>
     [locale, await readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8")] as const)));
@@ -306,7 +306,7 @@ test("reviewed ingredient contributions and the dry risotto rice amount are visi
     assert.equal(glycemicLoadFilterCategories[id], undefined, id);
     for (const { locale, routePath } of entries) {
       const note = reviews[id]?.condition?.[locale];
-      assert.ok(note && ingredients.test(note), routePath);
+      assert.ok(note, routePath);
       const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
       const guide = guides.get(locale)!;
       const start = guide.indexOf(`id="${id}" class="glycemic-pilot__recipe"`);
@@ -317,7 +317,13 @@ test("reviewed ingredient contributions and the dry risotto rice amount are visi
         || row.includes(renderToStaticMarkup(createElement("p", { "data-portion-preparation-scope": true }, note))), routePath);
       assert.doesNotMatch(html, /data-portion-gk|data-original-gk-class=/, routePath);
       assert.doesNotMatch(row, /class="gk-evidence__value"/);
-      if (id === "punajuuririsotto") assert.doesNotMatch(html, /data-portion-carbohydrate=/, routePath);
+      if (id === "punajuuririsotto") {
+        assert.match(html.replaceAll("<!-- -->", ""), ingredients, routePath);
+        assert.match(row.replaceAll("<!-- -->", ""), ingredients, routePath);
+        assert.doesNotMatch(html, /data-portion-carbohydrate=/, routePath);
+      } else {
+        assert.match(note, ingredients, routePath);
+      }
     }
   }
 });
@@ -616,6 +622,47 @@ test("research handoff portions keep plain apple, tomato and honey in their supp
         if (evidence.ingredientPortion?.source) assert.ok(markup.includes(`href="${evidence.ingredientPortion.source}"`), routePath);
         if (id === "taateliketsuppi") assert.ok(markup.includes('href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/168191/nutrients"'), routePath);
         if (id === "ananas-kanelijuoma-sitruunalla") assert.ok(markup.includes(new Intl.NumberFormat(locale).format(0.35)), routePath);
+      }
+    }
+  }
+});
+
+test("weighed or measured ingredient portions remain separate from whole-serving carbohydrates", async () => {
+  const cases = {
+    linssimakaronilaatikko: [220 / 6, "g"], "marry-me-kanapasta": [60, "g"],
+    "uunifetapasta-kirsikkatomaateilla": [60, "g"], punajuuririsotto: [0.8, "dl"], "kaali-omenasalaatti": [1 / 6, "dl"],
+  } as const;
+  for (const [id, [amount, unit]] of Object.entries(cases)) {
+    const evidence: PortionEvidence | undefined = glycemicLoadPortions[id];
+    assert.equal(evidence?.ingredientPortion?.amountPerServing, amount, id);
+    assert.equal(evidence?.ingredientPortion?.unit, unit, id);
+    assert.equal(evidence?.availableCarbs, undefined, id);
+    assert.equal(evidence?.verbal, undefined, id);
+    assert.equal(glycemicLoadFilterCategories[id], undefined, id);
+    const hasLabel = id === "linssimakaronilaatikko";
+    assert.equal(evidence?.ingredientPortion?.availableCarbsGPerServing, undefined, id);
+    if (hasLabel) {
+      assert.ok(Math.abs((evidence?.ingredientPortion?.declaredCarbsGPerServing ?? Infinity) - 220 / 6 * 0.68) < 1e-9, id);
+    } else {
+      assert.equal(evidence?.ingredientPortion?.declaredCarbsGPerServing, undefined, id);
+    }
+    for (const { locale, routePath } of siteContent.recipes.filter(recipe => recipe.recipeId === id)) {
+      const [recipe, guide] = await Promise.all([
+        readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8"),
+        readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8"),
+      ]);
+      const start = guide.indexOf(`id="${id}" class="glycemic-pilot__recipe"`);
+      assert.ok(start >= 0, routePath);
+      const row = guide.slice(start, guide.indexOf("<li ", start + 1));
+      for (const html of [recipe, row]) {
+        assert.match(html, /data-ingredient-portion="true"/, routePath);
+        assert.equal(html.includes('data-ingredient-carbohydrate="declared"'), hasLabel, routePath);
+        assert.doesNotMatch(html, /data-portion-carbohydrate=|data-portion-gk=|data-original-gk-class=/, routePath);
+        if (unit === "dl") {
+          const metricUnit = { fi: "dl", en: "mL", sv: "dl", th: "มล." }[locale];
+          const details = html.match(/data-ingredient-portion="true"[^>]*>(.*?)<\/dl>/s)?.[1];
+          assert.ok(details?.includes(`${metricUnit}</dd>`), routePath);
+        }
       }
     }
   }

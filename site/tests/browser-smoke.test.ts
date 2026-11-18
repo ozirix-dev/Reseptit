@@ -637,6 +637,17 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("0.5");
     assert.match(await pepperAmount.innerText(), /0,125 kpl$/);
     assert.equal(await page.locator("[data-ingredient-carbohydrate], [data-portion-carbohydrate], [data-portion-gk]").count(), 0);
+    await page.goto(base + routeFor("linssimakaronilaatikko"));
+    const macaroniCarbs = page.locator('[data-ingredient-carbohydrate="declared"] dd');
+    assert.match(await macaroniCarbs.innerText(), /24,9 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("0.5");
+    assert.match(await macaroniCarbs.innerText(), /12,5 g/);
+    await page.goto(base + routeFor("punajuuririsotto"));
+    const riceVolume = page.locator("[data-ingredient-portion] dd");
+    assert.match(await riceVolume.innerText(), /0,8 dl$/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.match(await riceVolume.innerText(), /1,6 dl$/);
+    assert.equal(await page.locator("[data-ingredient-carbohydrate], [data-portion-carbohydrate], [data-portion-gk]").count(), 0);
     await page.goto(`${base}/`);
     const searchbox = page.getByRole("searchbox", { name: "Hae reseptejä" });
     await searchbox.focus();

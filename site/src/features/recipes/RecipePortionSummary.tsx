@@ -175,7 +175,11 @@ export function IngredientPortionDetails({ ingredient, locale, multiplier = 1 }:
   const scaledAmount = ingredient.amountPerServing * multiplier;
   const amount = ingredient.unit === "g" ? formatCarbs(scaledAmount, locale)
     : new Intl.NumberFormat(locale, { maximumFractionDigits: 3 }).format(scaledAmount);
-  const quantity = { g: `${amount} ${gram}`, kpl: t.pieces(amount), arkkia: t.sheets(amount) }[ingredient.unit];
+  const useDecilitres = locale === "fi" || locale === "sv";
+  const volumeUnit = useDecilitres ? "dl" : locale === "th" ? "มล." : "mL";
+  const quantity = ingredient.unit === "dl"
+    ? `${new Intl.NumberFormat(locale, { maximumFractionDigits: useDecilitres ? 2 : 1 }).format(scaledAmount * (useDecilitres ? 1 : 100))} ${volumeUnit}`
+    : { g: `${amount} ${gram}`, kpl: t.pieces(amount), arkkia: t.sheets(amount) }[ingredient.unit];
   const carbohydrate = ingredient.availableCarbsGPerServing ?? ingredient.declaredCarbsGPerServing;
   const declared = ingredient.declaredCarbsGPerServing !== undefined;
   return <dl className="nutrition-list" data-ingredient-portion>

@@ -326,7 +326,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
     const { index, ingredientSha256, labels, unit, source, sourceReview, availableCarbsGPer100g, declaredCarbsGPer100g,
       carbohydrateAlternatives } = review.ingredientPortion;
     const ingredient = data.ingredients[index];
-    if (!["g", "kpl", "arkkia"].includes(unit) || !ingredient || ingredient.unit !== unit || typeof ingredient.amount !== "number"
+    if (!["g", "dl", "kpl", "arkkia"].includes(unit) || !ingredient || ingredient.unit !== unit || typeof ingredient.amount !== "number"
         || !Number.isFinite(ingredient.amount) || ingredient.amount <= 0
         || !Number.isInteger(data.servings) || data.servings <= 0
         || (source !== undefined && !httpsSource(source))
@@ -379,7 +379,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
         || !/^\d{13}$/.test(ean) || !ingredient.note?.includes(ean)) {
       throw new Error(`${recipeId}: product note does not match the reviewed ingredient and barcode.`);
     }
-    portion.driver ??= { ingredientIndex: index, coversMajority: false };
+    if (review.ingredientPortion?.index !== index) portion.driver ??= { ingredientIndex: index, coversMajority: false };
   }
   if (review) portion.reviewedSource = review.publicSource ?? review.source;
   if (review?.classLimitation) portion.classLimitation = review.classLimitation;
