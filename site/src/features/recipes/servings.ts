@@ -44,15 +44,25 @@ function formatEggCount(numerator: number, denominator: number, locale: string):
 export function formatRecipeIngredient(
   ingredient: RecipeIngredient, servings: number, original: number, locale: RecipeLocale,
 ): string {
-  const { amount, unit, item, eggSingular, note } = ingredient;
+  const { amount, unit, item, eggSingular, eggWeightWithoutShellG, note } = ingredient;
   const numberLocale = ingredientNumberLocales[locale];
   if (amount === null) return note ? `${item}, ${note}` : item;
   const quantity = eggSingular
     ? formatEggCount(amount * servings, original, numberLocale)
     : formatIngredientAmount(amount, servings, original, numberLocale);
-  const name = eggSingular && amount * servings === original ? eggSingular : item;
+  const eggUnits = amount * servings;
+  const singularEgg = eggUnits === original || (locale === "en" && eggWeightWithoutShellG !== undefined && eggUnits < original);
+  const name = eggSingular && singularEgg ? eggSingular : item;
   const line = locale === "th" && eggSingular
     ? `${name} ${quantity} ${unit}`
     : [quantity, unit, name].filter(Boolean).join(" ");
-  return note ? `${line}${locale === "th" ? " " : ", "}${note}` : line;
+  const weight = eggWeightWithoutShellG === undefined ? "" :
+    formatIngredientAmount(eggWeightWithoutShellG, servings, original, numberLocale);
+  const weighed = weight ? `${line} (${{
+    fi: `${weight} g ilman kuorta`,
+    en: `${weight} g without shells`,
+    sv: `${weight} g utan skal`,
+    th: `${weight} กรัม ไม่รวมเปลือก`,
+  }[locale]})` : line;
+  return note ? `${weighed}${locale === "th" ? " " : ", "}${note}` : weighed;
 }

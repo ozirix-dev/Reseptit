@@ -89,6 +89,7 @@ export function projectIngredientList(
   ingredients: RecipeIngredient[],
   sourceIngredients: RecipeIngredient[],
 ) {
+  const showWeighedEgg = recipeId === "tortilla-de-patatas" || recipeId === "yangzhou-paistettu-riisi";
   const preparation: string[] = [];
   const nutrition: string[] = [];
   const aligned = ingredients.length === sourceIngredients.length &&
@@ -156,6 +157,7 @@ export function projectIngredientList(
       unit: locale === "th" ? "ฟอง" : "",
       item: plural,
       eggSingular: singular,
+      ...(showWeighedEgg && part === "whole" && reviewed ? { eggWeightWithoutShellG: reviewed[0] } : {}),
       ...(detail ? { note: detail } : {}),
     };
   });

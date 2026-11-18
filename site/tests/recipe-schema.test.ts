@@ -9,6 +9,7 @@ import { assertGlutenFreeReviewRecord } from "../scripts/gluten-free-review";
 import { siteContent } from "../src/generated/content.generated";
 import { reviewedEggCounts, weighedEggRows } from "../scripts/reviewed-egg-counts";
 import { recipeJsonLd } from "../src/features/recipes/schema";
+import { formatRecipeIngredient } from "../src/features/recipes/servings";
 import { sourceReviewNotice, sourceReviewNotices } from "../src/features/recipes/source-review-notices";
 
 test("Recipe yield is Schema.org Text and preserves the source serving count", () => {
@@ -29,7 +30,18 @@ test("kitchen egg counts preserve the original weighed inputs in all published l
       assert.equal(recipe.ingredients[row].amount, grams, `${recipe.recipeId}/${recipe.locale}`);
       assert.equal(kitchen[row].amount, count);
       assert.ok(kitchen[row].eggSingular);
-      assert.ok(!/\b(?:g|กรัม)\b/u.test(structured[row]));
+      const weightShown = recipe.recipeId === "tortilla-de-patatas" || recipe.recipeId === "yangzhou-paistettu-riisi";
+      assert.equal(kitchen[row].eggWeightWithoutShellG, weightShown ? grams : undefined);
+      if (weightShown) {
+        assert.ok(structured[row].includes(`(${grams} ${recipe.locale === "th" ? "กรัม" : "g"}`));
+        const half = formatRecipeIngredient(kitchen[row], recipe.servings / 2, recipe.servings, recipe.locale);
+        assert.ok(half.includes(`(${grams / 2} ${recipe.locale === "th" ? "กรัม" : "g"}`));
+        if (recipe.recipeId === "yangzhou-paistettu-riisi" && recipe.locale === "en") {
+          assert.equal(formatRecipeIngredient(kitchen[row], 1, recipe.servings, "en"), "½ egg (27.5 g without shells)");
+        }
+      } else {
+        assert.ok(!/\b(?:g|กรัม)\b/u.test(structured[row]));
+      }
     }
     for (const row of weighedEggRows[recipe.recipeId] ?? []) {
       assert.equal(kitchen[row].unit, recipe.ingredients[row].unit);
