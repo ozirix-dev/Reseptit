@@ -1,10 +1,10 @@
 # laskeGK 10 — riippumaton ChatGPT-lähdekatselmointi
 
-**Tila:** RESEARCH HANDOFF / ei GI/GK-julkaisuhyväksyntää  
-**Päivä:** 18.11.2026 (Europe/Helsinki)  
-**Lähderepo:** `ozirix-dev/Reseptit`  
-**Lähtömain:** `e8ed43ed525a9cb6abbe61b94bc1c036153979c7`  
-**Tarkastelujoukko:** 10 alkuperäistä, `status: published` -reseptiä, jotka ovat lisäksi mainin GK-pending-rekisterissä.  
+**Tila:** RESEARCH HANDOFF / ei GI/GK-julkaisuhyväksyntää
+**Päivä:** 18.11.2026 (Europe/Helsinki)
+**Lähderepo:** `ozirix-dev/Reseptit`
+**Lähtömain:** `e8ed43ed525a9cb6abbe61b94bc1c036153979c7`
+**Tarkastelujoukko:** 10 alkuperäistä, `status: published` -reseptiä, jotka ovat lisäksi mainin GK-pending-rekisterissä.
 **Rinnakkaisuus:** #706 on erikseen omistettu Codexin GI/GK-toteutushaara. Tämä erä on pelkkä riippumaton tutkimus- ja luovutusaineisto: **älä yhdistä tai kirjoita #706:n lähde-, laskenta- ja hyväksyntärekistereihin tämän raportin perusteella ilman sen omistajan katselmointia.**
 
 ## 1. Menetelmä, aineiston rajaus ja käsittelymäärät
