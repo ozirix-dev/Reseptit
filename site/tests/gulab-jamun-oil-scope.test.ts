@@ -5,6 +5,7 @@ import path from "node:path";
 import test from "node:test";
 import { projectPublicRecipeMethodCopy } from "../scripts/public-recipe-copy";
 import { parseMarkdown } from "../src/content/markdown";
+import { scaleIngredient } from "../src/features/recipes/servings";
 import { siteContent } from "../src/generated/content.generated";
 
 const root = path.resolve(import.meta.dirname, "../..");
@@ -14,8 +15,8 @@ const cases = [
     "path": "reseptit/jalkiruoat/gulab-jamun.md",
     "blob": "9454f0e89b8c738a20fdeb0f2cf56481062e742a",
     "before": "Kuumenna öljy miedolle lämmölle.",
-    "methodPhrase": "Varaa friteeraukseen noin litra öljyä",
-    "notePhrase": "Ravintoarvio olettaa koko erän imevän 30 g öljyä.",
+    "methodPhrase": "Varaa alkuperäisen neljän annoksen erän friteeraukseen noin litra öljyä",
+    "notePhrase": "Ravintoarvio olettaa alkuperäisen neljän annoksen erän imevän yhteensä 30 g öljyä.",
     "quantityPhrase": "30 g"
   },
   {
@@ -23,8 +24,8 @@ const cases = [
     "path": "kaannokset/en/jalkiruoat/gulab-jamun.md",
     "blob": "fa8e4f8eede0a2ac4eb273a0a81ce83d1a492717",
     "before": "Heat the oil gently.",
-    "methodPhrase": "Use about 1 litre of oil for deep-frying",
-    "notePhrase": "The nutrition estimate assumes 30 g of oil is absorbed by the whole batch.",
+    "methodPhrase": "For the original four-serving batch, use about 1 litre of oil for deep-frying",
+    "notePhrase": "For the original four-serving batch, the nutrition estimate assumes 30 g of oil is absorbed in total.",
     "quantityPhrase": "30 g"
   },
   {
@@ -32,8 +33,8 @@ const cases = [
     "path": "kaannokset/sv/jalkiruoat/gulab-jamun.md",
     "blob": "13bb0c692822c93f936d7fb62d33a85a91445229",
     "before": "Värm oljan försiktigt.",
-    "methodPhrase": "Använd cirka 1 liter olja för friteringen",
-    "notePhrase": "Näringsvärdet bygger på att hela satsen beräknas ta upp 30 g olja.",
+    "methodPhrase": "Använd cirka 1 liter olja för friteringen av grundsatsen på fyra portioner",
+    "notePhrase": "Näringsvärdet för grundsatsen på fyra portioner bygger på ett uppskattat totalt oljeupptag på 30 g.",
     "quantityPhrase": "30 g"
   },
   {
@@ -41,8 +42,8 @@ const cases = [
     "path": "kaannokset/th/jalkiruoat/gulab-jamun.md",
     "blob": "7e8f4e8fe02e6fd1ee1c47a87bdf6c70cfc71e49",
     "before": "ตั้งน้ำมันให้ร้อนด้วยไฟอ่อน",
-    "methodPhrase": "เตรียมน้ำมันประมาณ 1 ลิตรสำหรับทอดแบบน้ำมันท่วม",
-    "notePhrase": "การประเมินโภชนาการสมมติว่าขนมทั้งสูตรดูดซึมน้ำมัน 30 กรัม",
+    "methodPhrase": "สำหรับสูตรพื้นฐาน 4 ที่ เตรียมน้ำมันประมาณ 1 ลิตรสำหรับทอดแบบน้ำมันท่วม",
+    "notePhrase": "การประเมินโภชนาการของสูตรพื้นฐาน 4 ที่สมมติว่าขนมดูดซึมน้ำมันรวม 30 กรัม",
     "quantityPhrase": "30 กรัม"
   }
 ] as const;
@@ -64,6 +65,9 @@ test("gulab jamun displays frying oil separately from the unmeasured 30 g absorp
       .find(item => /^(?:öljyä|oil|olja|น้ำมัน)$/.test(item.item));
     assert.ok(oil, fixture.locale + ": original oil ingredient");
     assert.equal(oil.amount, 30);
+    assert.equal(scaleIngredient(oil, 2, 4).amount, 15, fixture.locale + ": scaled two-serving ingredient");
+    assert.equal(scaleIngredient(oil, 4, 4).amount, 30, fixture.locale + ": original four-serving ingredient");
+    assert.ok(projectPublicRecipeMethodCopy("gulab-jamun", fixture.locale, parsed.content, "").notes.includes(fixture.notePhrase), fixture.locale + ": fixed quantity must explicitly belong to base batch");
     assert.equal(oil.unit, fixture.locale === "th" ? "g" : "g");
     assert.ok(oil.note?.includes(fixture.locale === "th" ? "1 ลิตร" : "1 l") ||
       (fixture.locale === "en" && oil.note?.includes("1 L")) ||
