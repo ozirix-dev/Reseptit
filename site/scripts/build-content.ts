@@ -94,6 +94,10 @@ function section(markdown: string, titles: string[]): string {
   return markdown.slice(start, next < 0 ? undefined : start + next).trim();
 }
 
+export function recipePreparationSections(markdown: string) {
+  return { instructions: section(markdown, instructionHeadings), notes: section(markdown, noteHeadings) };
+}
+
 function stripHtml(value: string): string {
   return value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 }
@@ -274,7 +278,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       : [];
     imagePaths.forEach((imagePath) => publishedImagePaths.add(imagePath));
     assertClassifiedRecipeSections(parsed.content, relativePath);
-    const instructions = section(publicMarkdown, instructionHeadings);
+    const { instructions, notes: sourceNotes } = recipePreparationSections(publicMarkdown);
     const safetyHold = publicSafetyHold(data.recipe_id, data.language);
     const visibleHold = safetyHold ?? publicRecipeQualityHold(data.recipe_id, data.language);
     if (!instructions) throw new Error(`Published recipe has no instructions: ${filePath}`);
@@ -283,7 +287,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       ? section(publicMarkdown, [nutritionBasisHeading])
       : "";
     const notes = [
-      section(publicMarkdown, noteHeadings),
+      sourceNotes,
       nutritionBasis && `### ${nutritionBasisHeading}\n\n${nutritionBasis}`,
     ].filter(Boolean).join("\n\n");
     const copy = reviewedRecipeCopy(data.recipe_id, data.language);

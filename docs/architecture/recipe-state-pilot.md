@@ -45,6 +45,49 @@ ulkopuolelle. Epäselvä seuraajasidos ilmoitetaan `conflicts`-listassa ja
 lähdetunnukset säilyvät erillisinä, kunnes omistava rekisteri ratkaisee sidoksen.
 `publicState`, käännöskatselmointi ja `currentBlockers` kuvaavat eri päätöksiä.
 
+`verifiedRawGkRelease` kertoo käytössä olevan julkaisulaskennan tarkistaman
+FI-lähdepolun, tiivisteen, tuloksen ja evidenssitiedoston. Kun ne vastaavat
+nykyistä lähdettä ja näkyvää arviota ja buildin annosjako, ainesosat,
+valmistus ja muistiinpanot täsmäävät tarkistettuun FI-lähteeseen,
+vanhan reseptisidonnan ero säilyy kentässä
+`historicalSourceBindingDifference`. Raakalaskennan auditointi säilyttää
+alkuperäisen poikkeaman. Ohjeen vertailu hyväksyy katselmoidun
+pilkkuvälin lisäyksen grammoina ilmoitettujen ainesmäärien luetteloon,
+kun molemmat näkyvät valmistusohjeet täsmäävät sen jälkeen.
+Pelkkä `cooking_method`-luokituksen muutos sallitaan, jos muu
+lähdesisältö ja näkyvä valmistus täsmäävät. Katselmoidulle
+FI-esityskorjaukselle vertailu käyttää korjattua versiota,
+kun sekä koko esitysversio että alkuperäinen julkaisutodiste vastaavat
+kirjattuja SHA-256-tiivisteitä. Annosjako, ainekset, molemmat
+valmistusohjeen esitystavat ja muistiinpanot tarkistetaan myös näille.
+Katselmoitu kananmunan kappalemäärä täsmää grammoina annettuun lähderiviin
+vain, jos näkyvässä ainesrivissä näkyy myös sama kuoreton kokonaispaino.
+Tällöin valmistuksen viittaus samaan ainesriviin vastaa grammoina annettua
+ohjetta. Muut ainekset, erilliset valmistustoimet ja muistiinpanot
+tarkistetaan edelleen.
+
+Kahdeksassa release-4-reseptissä myös annosjakoa ja syötävän erän
+säilyttämistä koskevat ohjeet sekä laskentaoletukset muistiinpanoissa
+on sidottu alkuperäiseen julkaisupakettiin ja näkyvän valmistusosion
+tiivisteeseen. Muffineissa ja tonnikalamunakkaissa kolme annosta
+vastaa kahta kappaletta annosta kohti. Avokadomunissa jaetaan myös
+koverrettu hedelmäliha ja erikseen kypsennetty muna. Porsaan ja
+lihamurekkeen annosjako sisältää kastikkeen tai paistonesteen.
+Nasi uduk pysyy käsintarkistuksessa. Vertailussa käytetty jasmiiniriisin
+GI-lähde ei varmista ehdollisen lisäveden ja kannellisen kypsennyksen
+vastaavuutta mitattuun valmistukseen.
+
+Muuttunut julkaistu ohje, puuttuva varmennus sekä
+laskentasyötteen ja lähdeaineiston erot
+kuuluvat `bindingDifferences`-kenttään. Kun alkuperäinen julkaisulähde
+täsmää, `releasePresentationDifferences` näyttää, poikkeavatko näkyvä
+lähdeversio, annosmäärä, ainekset, valmistus tai muistiinpanot.
+
+Vakioannoksen sanallinen GK kirjataan kenttään `publicOriginalVerbalGk`
+samasta annosprojektiosta kuin reseptisivulla. Julkisen arvion rinnalla
+auditointi säilyttää oman `PENDING REVIEW` -tilansa, kun vanha
+laskentajono on vielä avoinna. F25:n pidätys estää julkisen arvion.
+
 ## Lähtömittaus
 
 Lähtöcommit `5eab296998caa06143b06e1adf3f09f9d7dfed6d`. Projektion

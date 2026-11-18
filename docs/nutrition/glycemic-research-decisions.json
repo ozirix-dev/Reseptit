@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "decisions": [
+    {
+      "canonicalRecipeId": "idli-sambar",
+      "sourceRecipeId": "idli-sambar",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "recipeSha256": "8044f83452e864eafd1089e8642bd872193215b64fb0c93963dc88760fbf8486",
+      "calculationInputSha256": "f485628440e78c2e9a4368c953047e2c900c57b1f45374f833f963abaa4847cf",
+      "calculationEvidenceSha256": "8f7af67a45bff905b051c7029aee13610c23607ecc0d853482e20844c355901e",
+      "reviewedAt": "2026-11-18",
+      "reason": "GI 62,45:n vertailu käyttää riisin ja uradin suhdetta 3:1 ja 8 tunnin liotusta. Kotireseptin suhde on 2,5:1 ja liotus 4 tuntia. Kuivapanoksen hiilihydraatin säilymistä liotuksessa ja fermentoinnissa sekä kasvisten lähdevastaavuutta ei ole osoitettu.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/gk100-original-recipe-audit-2026-11-05.json",
+          "sha256": "590634387ec90dd3f5eeace66f4200ae835273becd59d7bd4aa660f34d095dff",
+          "locator": "recipeId=idli-sambar: GI 62,45, originalPath, originalSha256, giApplicabilityFinding"
+        }
+      ],
+      "contextSha256": "9cc785a432ea6d52ff771e4e3946c33df53d96ce12ae4bc041180db96b46c39c"
+    },
+    {
+      "canonicalRecipeId": "vhh-mansikkakakku",
+      "sourceRecipeId": "vhh-mansikkakakku",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "recipeSha256": "17d5a611961a764f2a3dba58bee9e79ebe63238955b5000aaec56d18085493ea",
+      "calculationInputSha256": "d1f5d5df763189ac7d0fdcd8a8b2ab63a0b539e1fe46a7045c9076ba7ebd7fde",
+      "calculationEvidenceSha256": "319ad604da829502e51706615c54dc0374f9f3992dd2102709b0bf4e889a0255",
+      "reviewedAt": "2026-11-18",
+      "reason": "Mansikan, kuohukerman ja maitorahkan ryhmä-GI:n soveltuvuutta ei osoitettu. AFCD F008952:n mukaan mansikkaa vastaava 1,4 g imeytyvää hiilihydraattia annoksessa ylittää yksittäisen poisjätön rajan. Vuoden 2002 julkaisematon mansikkahavainto ei ratkaise estettä; vaniljauutteen tuotekoostumus jää erikseen avoimeksi.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/gk-original-batch02-research-findings.md",
+          "sha256": "ed5f9054df4aa03cdfaedf5bcfc9056158c8083d75986637d6a15b3505b1ea63",
+          "locator": "VHH-mansikkakakun alkuperäisohje: AFCD F008952, Atkinson 2002, #292, CNF 216"
+        }
+      ],
+      "contextSha256": "16208f9e5edea02dfb95cc792a9d75f698d8184ec22460b55e4dbf2836e86558"
+    },
+    {
+      "canonicalRecipeId": "punajuuririsotto",
+      "sourceRecipeId": "punajuuririsotto",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Kuivan risottoriisin punnittu määrä ja sitä vastaava koostumus, kuoritun kypsän punajuuren syötävä paino ja fondin tuotetieto puuttuvat. Myös timjamin, sitruunanmehun ja parmesaanin koostumus jää avoimeksi.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-riisi-parsapasta-paatokset.md",
+          "sha256": "65e7418f07b2c28d4c9507813314c2c785bde4c354c2662a95ad395271a65c4f",
+          "locator": "Punajuuririsotto"
+        }
+      ],
+      "recipeSha256": "6e50556a97a86a882f73ef8355296f697c1701a5af253bb8bc30c37970950613",
+      "contextSha256": "f0a1c50f39c5dc2463a3aeb4f96ad6895174f087708709df55e08b02704a1847",
+      "calculationInputSha256": null,
+      "calculationEvidenceSha256": null
+    },
+    {
+      "canonicalRecipeId": "sitruuna-parsapasta",
+      "sourceRecipeId": "sitruuna-parsapasta",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Käytetty tuore fettuccine sekä valutetun pastan ja annokseen päätyvän kypsän parsan syötävät määrät ja niitä vastaava koostumus puuttuvat. Parsan keitinveden käsittely sekä sitruunankuoriraasteen massa ja koostumus ovat avoinna.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-riisi-parsapasta-paatokset.md",
+          "sha256": "65e7418f07b2c28d4c9507813314c2c785bde4c354c2662a95ad395271a65c4f",
+          "locator": "Sitruuna-parsapasta"
+        }
+      ],
+      "recipeSha256": "eeae8f37e8ab70efda7d41321921461a041819f27a241951b765018efb2ebee3",
+      "contextSha256": "68e6b2bc64f208dd9c45408b78d329c2a2c0b02cdc52fa14cc218292c24ee3eb",
+      "calculationInputSha256": null,
+      "calculationEvidenceSha256": null
+    },
+    {
+      "canonicalRecipeId": "gluteeniton-durrapizzapohja",
+      "sourceRecipeId": "gluteeniton-durrapizzapohja",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Koko pizzan arvio tarvitsee durrajauhon punnituksen tai tuotekohtaisen tilavuusmuunnoksen, jogurtin massan, valutetun mozzarellan tuote- ja painotiedot sekä tomaatin ja basilikan koostumustiedot. Nykyiselle paistetulle pohjalle tarvitaan soveltuva GI.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-automaattiset-lahdepaatokset.md",
+          "sha256": "7d75dbaef0486d88e05d56f39cd7f49441ce07697259b3a56a591735a142ae23",
+          "locator": "gluteeniton-durrapizzapohja"
+        }
+      ],
+      "recipeSha256": "2ed0318b63d01d3fc9db6de714ae5c74d4faa5ebeee2809b96305eb4fdd418d2",
+      "contextSha256": "3b4d25948a4024afc5c88715aa7a088fb5eafbb3d07e7680ced592133f3b605c",
+      "calculationInputSha256": "5689c621996c73a40c34c9c86579acdaea154cbf118f669652eeda6494155a7f",
+      "calculationEvidenceSha256": "f1297c80823467c2bc966d2d153498f98fc492db588a3d822c5af152dcfecece"
+    },
+    {
+      "canonicalRecipeId": "gluteeniton-perunajauhokakkupohja",
+      "sourceRecipeId": "gluteeniton-perunajauhokakkupohja",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Kuivan perunajauhon tuotetieto ei ratkaise valmiin paistetun tai jäähdytetyn pohjan imeytyvää tärkkelystä. Tarvitaan kyseisen valmistustavan koostumus- ja GI-näyttöä. Kuivan jauhon resistenttiä tärkkelystä ei vähennetä valmiin ruoan arvosta ilman sitä.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-automaattiset-lahdepaatokset.md",
+          "sha256": "7d75dbaef0486d88e05d56f39cd7f49441ce07697259b3a56a591735a142ae23",
+          "locator": "gluteeniton-perunajauhokakkupohja"
+        }
+      ],
+      "recipeSha256": "97ec551bbce0d75638e1b67a31c471f2bf8174869776759e643ff6ae378aa098",
+      "contextSha256": "7fbcec83a7e7a3d04010e8f8787a00ca36945ce1c1530c71d775e0661445506a",
+      "calculationInputSha256": "9a9349a26ae20d3fec18104c009c8b245735956cf7200b799958399f6cb55ac2",
+      "calculationEvidenceSha256": "f1297c80823467c2bc966d2d153498f98fc492db588a3d822c5af152dcfecece"
+    },
+    {
+      "canonicalRecipeId": "gluteeniton-siemenvuokaleipa",
+      "sourceRecipeId": "gluteeniton-siemenvuokaleipa",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Nykyinen taikina käyttää jauhoseoksia 210 g ja 180 g. Erän muut ainesosat tarvitsevat normalisoidut koostumustiedot ja paistettu leipä soveltuvan GI:n. Muistilauseen historiallinen 60 g/dl kuuluu toimitukselliseen tarkistukseen.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-automaattiset-lahdepaatokset.md",
+          "sha256": "7d75dbaef0486d88e05d56f39cd7f49441ce07697259b3a56a591735a142ae23",
+          "locator": "gluteeniton-siemenvuokaleipa"
+        }
+      ],
+      "recipeSha256": "711802253f95bcfef7e7435cabf1ae11f3a7233ea79214e68d1d5cd4cfa4507c",
+      "contextSha256": "2cd9d6832c572116e356291f28f24f693b7dd4c6321df5e98f0345f74057c3a5",
+      "calculationInputSha256": "4b0f9d623f0877b7b54c2a7f2c7131d0c2a8f46b94af3f7f1ac3a4945ff541ac",
+      "calculationEvidenceSha256": "f1297c80823467c2bc966d2d153498f98fc492db588a3d822c5af152dcfecece"
+    },
+    {
+      "canonicalRecipeId": "gluteeniton-uunipannukakku",
+      "sourceRecipeId": "gluteeniton-uunipannukakku",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Tutkimussyöte sisältää taikinan, marjat ja kerman 13 annokselle. Imeytyvä hiilihydraatti edellyttää käytetyn kerman ja pakkausrivien polyolien vahvistamista. GK edellyttää lisäksi valmistustapaa vastaavaa GI-näyttöä.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-automaattiset-lahdepaatokset.md",
+          "sha256": "7d75dbaef0486d88e05d56f39cd7f49441ce07697259b3a56a591735a142ae23",
+          "locator": "gluteeniton-uunipannukakku"
+        }
+      ],
+      "recipeSha256": "515187b25b6168de342de46853c55a7e5cb3b134563453733cecf4027e02a39c",
+      "contextSha256": "9427aec6840a8da8490858d7d5ea5f005a743117922621960bf86b8939391f96",
+      "calculationInputSha256": "91c1686b7f06facee806dea7dcc1469cc1728cccc48dca543475b8f35d5a6f81",
+      "calculationEvidenceSha256": "f1297c80823467c2bc966d2d153498f98fc492db588a3d822c5af152dcfecece"
+    },
+    {
+      "canonicalRecipeId": "gluteenittomat-kauralesesampylat",
+      "sourceRecipeId": "gluteenittomat-kauralesesampylat",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Nykyisessä erässä on 43 g Pofiberiä ja 5 g pintakauraa. Tarvitaan käytetyn siirapin tuotekohtainen koostumus ja paistettuun reseptiin soveltuva GI-näyttö.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-automaattiset-lahdepaatokset.md",
+          "sha256": "7d75dbaef0486d88e05d56f39cd7f49441ce07697259b3a56a591735a142ae23",
+          "locator": "gluteenittomat-kauralesesampylat"
+        }
+      ],
+      "recipeSha256": "c2239daff685635b7c8701ec4436200cc1c233d9fd2f7efa5042abea7a450b3e",
+      "contextSha256": "c12ffccd144474c5af7c863b6776b6d0a45717bda5ed39fd34c470d7cad082e4",
+      "calculationInputSha256": "c4a6df50195a73f9a525f0a46dde98ff53cfd2ba38560ca034de6eb127e90567",
+      "calculationEvidenceSha256": "f1297c80823467c2bc966d2d153498f98fc492db588a3d822c5af152dcfecece"
+    },
+    {
+      "canonicalRecipeId": "perinteinen-mansikkataytekakku-sienikakkupohjalla",
+      "sourceRecipeId": "perinteinen-mansikkataytekakku-sienikakkupohjalla",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Täytetyn kakun laskentaan tarvitaan käytetyn hillon ja kerman koostumustiedot sekä sokerin punnittu massa tai tuotekohtainen muunnos. Arvio tarvitsee näyttöä, joka kattaa paistetun pohjan ja annokseen kuuluvat täytteet.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-automaattiset-lahdepaatokset.md",
+          "sha256": "7d75dbaef0486d88e05d56f39cd7f49441ce07697259b3a56a591735a142ae23",
+          "locator": "perinteinen-mansikkataytekakku-sienikakkupohjalla"
+        }
+      ],
+      "recipeSha256": "f8daa9d742240793167d6065b4490d9ed1dd56407a27a16642b3ce9a0ecba3ec",
+      "contextSha256": "077b98e38c37c8eadd77f6dbe1d536684bec47ed26a1b165cad54157bb574e9e",
+      "calculationInputSha256": "fa0b6552ffeffe81d79e36d9a1de2a1fdcfb421599090d1f12d33f9c9599a34a",
+      "calculationEvidenceSha256": "f1297c80823467c2bc966d2d153498f98fc492db588a3d822c5af152dcfecece"
+    },
+    {
+      "canonicalRecipeId": "sienikakkupohja",
+      "sourceRecipeId": "sienikakkupohja",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Pohjan sokerin, jauhon ja kuorettomien munien painot tarvitsevat punnituksen tai hyväksyttävän muunnoksen. GI-näytön on vastattava paistettua pohjaa. Täytteiden osuudet kuuluvat täytekakun omaan laskentaan.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-automaattiset-lahdepaatokset.md",
+          "sha256": "7d75dbaef0486d88e05d56f39cd7f49441ce07697259b3a56a591735a142ae23",
+          "locator": "sienikakkupohja"
+        }
+      ],
+      "recipeSha256": "d1ac2b4f60dcfbfae2d088cabca827be846dfc974382591b528f8f09192ff303",
+      "contextSha256": "267188f3481f9c5a3bb4abe729724a80f1c6ba32f9ee6b2d5058548a72485882",
+      "calculationInputSha256": "7c76817b747fe40eab96105d12d1910ad99e2e0a3e02e3e82007662694735fe2",
+      "calculationEvidenceSha256": "f1297c80823467c2bc966d2d153498f98fc492db588a3d822c5af152dcfecece"
+    },
+    {
+      "canonicalRecipeId": "marry-me-kanapasta",
+      "sourceRecipeId": "marry-me-kanapasta",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Tarvitaan käytetty De Cecco -markkinapakkaus, keitetyn ja valutetun pastan syötävä saanto ja koostumus sekä Royal-tomaatin pakkaustiedon painoperuste. Valmistukseen sopiva GI on vahvistettava.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-automaattiset-lahdepaatokset.md",
+          "sha256": "7d75dbaef0486d88e05d56f39cd7f49441ce07697259b3a56a591735a142ae23",
+          "locator": "marry-me-kanapasta"
+        }
+      ],
+      "recipeSha256": "4e26fd14ec86455892a6253b0e219b04d6c7f9e21a53130f79acccefb8faaf0c",
+      "contextSha256": "2c0c4949e9290269041006932b2056ed0e6ec5c02c059a3db611c4f8072e8e7c",
+      "calculationInputSha256": "38bc247f8d1b25eed2607ff34cc87d3ab05f095e710ea368fa8a317ccd48c9e4",
+      "calculationEvidenceSha256": "f1297c80823467c2bc966d2d153498f98fc492db588a3d822c5af152dcfecece"
+    },
+    {
+      "canonicalRecipeId": "linssimakaronilaatikko",
+      "sourceRecipeId": "linssimakaronilaatikko",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Makaroni ja linssit keitetään erikseen. Tarvitaan kummankin valutettu saanto sekä valmistukseen sopiva koostumus tai osoitettu hiilihydraatin säilyminen ja soveltuva GI.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-automaattiset-lahdepaatokset.md",
+          "sha256": "7d75dbaef0486d88e05d56f39cd7f49441ce07697259b3a56a591735a142ae23",
+          "locator": "linssimakaronilaatikko"
+        }
+      ],
+      "recipeSha256": "c548e0bca57d411463420977878f9e38d7e1a90d93c15e1b5d9d9c7d67c8cbcc",
+      "contextSha256": "77bfb1092f5f1953996fc9508094bbc4c91fe0f9c168128500d0c9d508a4f5f1",
+      "calculationInputSha256": "0e147b6b9ad3b620ae93a737dc4e98cb4c61a2ef938cc53d5c86888fab06a275",
+      "calculationEvidenceSha256": "f1297c80823467c2bc966d2d153498f98fc492db588a3d822c5af152dcfecece"
+    },
+    {
+      "canonicalRecipeId": "uunifetapasta-kirsikkatomaateilla",
+      "sourceRecipeId": "uunifetapasta-kirsikkatomaateilla",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Tarvitaan kypsän ja valutetun pennen saanto ja koostumus, varmistus Mevgal-fetan pakkausarvon painoperusteesta sekä valmistettuun annokseen soveltuva GI.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-automaattiset-lahdepaatokset.md",
+          "sha256": "7d75dbaef0486d88e05d56f39cd7f49441ce07697259b3a56a591735a142ae23",
+          "locator": "uunifetapasta-kirsikkatomaateilla"
+        }
+      ],
+      "recipeSha256": "687e9364c10e3a32ba5d5e09c2173f18d49dc68f934b5db0e6f67b7ae1b8864d",
+      "contextSha256": "fa0322f08b6f7cb6eaa868a100b90f8d5d197bb57f34943fc4cc68d2a2e41e33",
+      "calculationInputSha256": "97c5d4fb2a39263a2c58b1b3f4d931a8fb36544341c847db1d6b2b34c4f34901",
+      "calculationEvidenceSha256": "f1297c80823467c2bc966d2d153498f98fc492db588a3d822c5af152dcfecece"
+    },
+    {
+      "canonicalRecipeId": "rasvakaakao-rouva-keto",
+      "sourceRecipeId": "rasvakaakao-rouva-keto",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Yhden mukin viiteluvut koskevat pakkaushiilihydraattia ja sokereita erikseen. GK vaatii käytettyjen kaakaon, kerman ja voin tuotetiedot, hiilihydraattimääritelmien ja mahdollisten polyolien selvityksen sekä soveltuvan näytön glykeemisestä kuormasta.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-automaattiset-lahdepaatokset.md",
+          "sha256": "7d75dbaef0486d88e05d56f39cd7f49441ce07697259b3a56a591735a142ae23",
+          "locator": "rasvakaakao-rouva-keto"
+        }
+      ],
+      "recipeSha256": "febe6cf50e5e5d713bd6e23e672dabb76f405287341b71f06f9fb134cfc73cb6",
+      "contextSha256": "dfe4f601191df2a34c6073e210dd909aafb04f36da6a8cb4ecd216eb45316c3a",
+      "calculationInputSha256": "9b08e0ef42f0fb81d39f5ff88b00408c26cfc1febd0998ee744f7cf8bf36f556",
+      "calculationEvidenceSha256": "f1297c80823467c2bc966d2d153498f98fc492db588a3d822c5af152dcfecece"
+    },
+    {
+      "canonicalRecipeId": "lammin-chia-puuro-rouva-keto",
+      "sourceRecipeId": "lammin-chia-puuro-rouva-keto",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Puolen valmistuserän viiteluvut koskevat pakkaushiilihydraattia ja sokereita erikseen. Tarvitaan käytettyjen tuotteiden ja valmistuksen vahvistus, hiilihydraattimääritelmien ja mahdollisten polyolien selvitys sekä soveltuva GI.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-automaattiset-lahdepaatokset.md",
+          "sha256": "7d75dbaef0486d88e05d56f39cd7f49441ce07697259b3a56a591735a142ae23",
+          "locator": "lammin-chia-puuro-rouva-keto"
+        }
+      ],
+      "recipeSha256": "ffce665b8dc56de6ac5e63800092a47f78232944722dae95d5c93d60b988fc8d",
+      "contextSha256": "cc6b2e297339c2042eb3fdd4c184a0f77c9eac2ad325df99c26aeb676114711f",
+      "calculationInputSha256": "95bc8fd0fd404386323ef09ff67c2fa932de2081984c11b5f496f9bda02b7256",
+      "calculationEvidenceSha256": "f1297c80823467c2bc966d2d153498f98fc492db588a3d822c5af152dcfecece"
+    }
+  ]
+}
