@@ -10,7 +10,8 @@ import { contentManifest } from "../src/generated/routes.generated";
 import { f25SourceGatePreflight } from "../scripts/f25-source-release-gate";
 import { publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
 import { applyReviewedGramListSpacing } from "../scripts/public-recipe-copy-r2";
-import { git, matchesReviewedReleasePresentation, onlyCookingMethodMetadataChanged, readRecipeStateInputs, repoRoot, type RecipeStateInputs } from "../scripts/recipe-state-inputs";
+import { projectEggWeightReferences } from "../scripts/public-ingredient-list";
+import { git, matchesReviewedReleasePresentation, onlyCookingMethodMetadataChanged, readRecipeStateInputs, recipePresentationDifferences, repoRoot, verifiedFiEggPresentationWeights, type RecipeStateInputs } from "../scripts/recipe-state-inputs";
 import { projectRecipeState } from "../scripts/recipe-state";
 import { buildRegistry, contentHash } from "../scripts/translation-review";
 
@@ -142,6 +143,46 @@ test("reviewed gram-list punctuation cannot change gram amounts, decimal commas 
   }
 });
 
+test("GK presentation accepts the reviewed whole-egg count only alongside its exact edible weight", async () => {
+  const id = "karibia-callaloo-munakas";
+  const recipe = inputs.publicRecipes.find(row => row.recipeId === id && row.locale === "fi")!;
+  const source = recipe.ingredients;
+  const unweighed = recipe.kitchenIngredients!.map(row => {
+    const withoutWeight = { ...row };
+    Reflect.deleteProperty(withoutWeight, "eggWeightWithoutShellG");
+    return withoutWeight;
+  });
+  const weighedEgg = { ...unweighed[2], eggWeightWithoutShellG: 110 };
+  const withEgg = (egg: typeof weighedEgg) => unweighed.map((row, index) => index === 2 ? egg : row);
+  const weighed = { ...recipe, kitchenIngredients: withEgg(weighedEgg) };
+  const proof = verifiedFiEggPresentationWeights(id, source, weighed);
+  assert.deepEqual(proof, [[110, 2]]);
+  assert.deepEqual(verifiedFiEggPresentationWeights(id, source, { ...recipe, kitchenIngredients: unweighed }), []);
+  for (const egg of [
+    { ...weighedEgg, eggWeightWithoutShellG: 109 },
+    { ...weighedEgg, item: "valkuaista" },
+    { ...weighedEgg, amount: 3 },
+    { ...weighedEgg, note: "jaa muna kahtia" },
+  ]) assert.deepEqual(verifiedFiEggPresentationWeights(id, source, { ...recipe, kitchenIngredients: withEgg(egg) }), []);
+  const changed = weighed.kitchenIngredients.map((row, index) => index === 0 ? { ...row, amount: 1 } : row);
+  assert.deepEqual(verifiedFiEggPresentationWeights(id, source, { ...recipe, kitchenIngredients: changed }), []);
+  const rawScope = withId(id).sourcePath;
+  const raw = await readFile(path.join(repoRoot, rawScope), "utf8");
+  const strayWeight = source.map((row, index) => index === 0 ? { ...row, eggWeightWithoutShellG: 200 } : row);
+  for (const current of [{ ...recipe, kitchenIngredients: strayWeight },
+    { ...recipe, ingredients: strayWeight, kitchenIngredients: source }]) {
+    assert.ok((await recipePresentationDifferences(id, raw, current))?.includes("ingredients"));
+  }
+  const instructions = "Vatkaa 110 g kuoretonta kananmunaa. Lisää 110 g tomaattia. Kypsennä kauttaaltaan.";
+  assert.equal(projectEggWeightReferences("fi", instructions, proof),
+    "Vatkaa aineslistan kananmunat. Lisää 110 g tomaattia. Kypsennä kauttaaltaan.");
+  for (const otherAmount of ["0,110", "0, 110", "0.110", "1 110", "1  110", "1110", "1/110", "100–110", "100—110",
+    "100 – 110", "100 tai 110", "2 × 110", "+110", "-110", "−110", "±110", "≥110", "noin 110", "vähintään 110"]) {
+    const other = instructions.replace("110 g", otherAmount + " g");
+    assert.equal(projectEggWeightReferences("fi", other, proof), other);
+  }
+});
+
 test("cooking-method metadata alone is independent of the recipe content used for GK", () => {
   const original = "---\ncooking_method: [paistaminen]\nservings: 2\n---\n\n## Valmistus\n\nKeitä 20 minuuttia.";
   const corrected = original.replace("paistaminen", "keittäminen");
@@ -184,16 +225,34 @@ test("current release pins distinguish historical source differences from open p
     assert.equal(status.historicalSourceBindingDifference, true, id);
     assert.equal(status.releasePresentationDifferences, undefined, id);
   }
-  assert.deepEqual(withId("yangzhou-paistettu-riisi").glycemicLoadStatus.releasePresentationDifferences,
-    ["ingredients", "preparation"]);
-  assert.deepEqual(withId("uuniporsas-kermakastikkeessa-vhh").glycemicLoadStatus.releasePresentationDifferences,
-    ["preparation", "notes"]);
-  for (const id of ["yangzhou-paistettu-riisi", "uuniporsas-kermakastikkeessa-vhh"]) {
-    const status = withId(id).glycemicLoadStatus;
-    assert.ok(status.verifiedRawGkRelease, id);
-    assert.ok(status.bindingDifferences.includes("source"), id);
-    assert.equal(status.historicalSourceBindingDifference, undefined, id);
+  for (const id of ["lanttulaatikko-kermainen", "pohjoisafrikkalainen-harissa-shakshuka"]) {
+    const row = withId(id);
+    const { evidencePath } = row.glycemicLoadStatus.verifiedRawGkRelease!;
+    const evidenceHash = contentHash(await readFile(path.join(repoRoot, evidencePath), "utf8"));
+    assert.ok(row.effectiveContentHash, id);
+    assert.ok(matchesReviewedReleasePresentation(row.sourcePath, evidencePath, evidenceHash, row.effectiveContentHash), id);
+    assert.ok(!row.glycemicLoadStatus.releasePresentationDifferences?.includes("effective-source"), id);
   }
+  const yangzhouId = "yangzhou-paistettu-riisi";
+  const yangzhou = inputs.publicRecipes.find(row => row.recipeId === yangzhouId && row.locale === "fi")!;
+  const yangzhouStatus = withId(yangzhouId).glycemicLoadStatus;
+  assert.ok(yangzhouStatus.verifiedRawGkRelease);
+  const showsWeight = yangzhou.kitchenIngredients?.some(row =>
+    "eggWeightWithoutShellG" in row && row.eggWeightWithoutShellG === 110);
+  if (showsWeight) {
+    assert.equal(yangzhouStatus.historicalSourceBindingDifference, true);
+    assert.equal(yangzhouStatus.releasePresentationDifferences, undefined);
+  } else {
+    assert.deepEqual(yangzhouStatus.releasePresentationDifferences, ["ingredients", "preparation"]);
+    assert.ok(yangzhouStatus.bindingDifferences.includes("source"));
+    assert.equal(yangzhouStatus.historicalSourceBindingDifference, undefined);
+  }
+
+  const pork = withId("uuniporsas-kermakastikkeessa-vhh").glycemicLoadStatus;
+  assert.ok(pork.verifiedRawGkRelease);
+  assert.deepEqual(pork.releasePresentationDifferences, ["preparation", "notes"]);
+  assert.ok(pork.bindingDifferences.includes("source"));
+  assert.equal(pork.historicalSourceBindingDifference, undefined);
 
   const id = "koshari";
   const unverified = projectRecipeState(commit, { ...inputs, originalReleasePresentationDifferences: new Map() });

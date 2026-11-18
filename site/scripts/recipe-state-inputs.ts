@@ -11,7 +11,9 @@ import { projectPublishedMarkdown, recipePreparationSections } from "./build-con
 import { f25SourceGatePreflight } from "./f25-source-release-gate";
 import { applyReviewedGramListSpacing, reviewedRecipeCopy } from "./public-recipe-copy-r2";
 import { contentHash, loadCurrentReview } from "./translation-review";
-import type { RecipeEntry } from "../src/types/content";
+import { projectEggWeightReferences, projectIngredientList } from "./public-ingredient-list";
+import { reviewedEggCounts } from "./reviewed-egg-counts";
+import type { RecipeEntry, RecipeIngredient } from "../src/types/content";
 
 export const repoRoot = path.resolve(import.meta.dirname, "../..");
 export const git = (...args: string[]) => execFileSync("git", args, { cwd: repoRoot, encoding: "utf8" });
@@ -59,12 +61,18 @@ const reviewedReleasePresentations = new Map([
   // d30-whole-milk-fi-display: the sealed calculation already specifies whole milk.
   ["reseptit/aamupalat/pohjoisafrikkalainen-minttutee-kaurapuuro.md", ["gk80-release-1",
     "f36d39e0a35112562f4d55925cb2aceed07b009281775ca4ea1432f671ebef1e"]],
+  // A8 and GK80 editorial reviews: only the label for the same weighed, shelled egg changed.
+  ["reseptit/paaruoat/lanttulaatikko-kermainen.md", ["gk80-release-6",
+    "42563d373a73be18c8c85548c9c11090ba51c3efa0c221afd8df65c5117ef8a0"]],
+  ["reseptit/aamupalat/pohjoisafrikkalainen-harissa-shakshuka.md", ["gk80-release-6",
+    "049f9f2af7e74c36efce86a08cff98cc0fff649d66d8242327402c898c7d2b06"]],
   // FI breakfast quality overlay: four cold portions as in the sealed calculation.
   ["reseptit/aamupalat/yrttituorejuusto-kinkkurullat.md", ["gk80-release-2",
     "843ec4e3120c3d15cc03f9d6046345c5d5bd8a0dc60f5a579764cd6dca91b537"]],
 ]);
 
 const reviewedGoldenHashes = new Map([
+  ["docs/nutrition/gk80-release-6/golden.json", "b3f8cf53f6421133b4dd73b8b1e8846f76a57dc7e368a541a3cb228315b77483"],
   ["docs/nutrition/gk80-release-1/golden.json", "e3d3bdff7371ea597ec793e2b170ffbf89566e5053fc0ba21f80bbf68fbd9b32"],
   ["docs/nutrition/gk80-release-2/golden.json", "e460c7754833adbf7672bd1070910be85b98cd0dd342e526f590abdae0ac808d"],
   ["docs/nutrition/gk80-release-3/golden.json", "0165778d3eb2bd2924930ff80c96a1740ec2bc71df3eb66e73ddd7a9d4b67247"],
@@ -85,6 +93,64 @@ export function onlyCookingMethodMetadataChanged(raw: string, projected: string)
   const { cooking_method: originalMethod, ...originalMetadata } = original.data;
   const { cooking_method: effectiveMethod, ...effectiveMetadata } = effective.data;
   return !isDeepStrictEqual(originalMethod, effectiveMethod) && isDeepStrictEqual(originalMetadata, effectiveMetadata);
+}
+
+const ingredientScope = ({ item, amount, unit, note }: RecipeIngredient) =>
+  [item, amount, unit, note ?? null];
+
+export function verifiedFiEggPresentationWeights(
+  id: string, source: RecipeIngredient[], current: Pick<RecipeEntry, "ingredients" | "kitchenIngredients">,
+): (readonly [grams: number, count: number])[] {
+  const kitchen = current.kitchenIngredients;
+  if (!kitchen?.some(row => "eggWeightWithoutShellG" in row) || kitchen.length !== source.length ||
+      current.ingredients.some(row => "eggWeightWithoutShellG" in row) ||
+      !isDeepStrictEqual(source.map(ingredientScope), current.ingredients.map(ingredientScope))) return [];
+
+  const weights: (readonly [number, number])[] = [];
+  const equivalent = source.every((ingredient, index) => {
+    const row = kitchen[index];
+    if (isDeepStrictEqual(ingredientScope(ingredient), ingredientScope(row))) {
+      return !("eggWeightWithoutShellG" in row);
+    }
+    const measurement = reviewedEggCounts[id]?.[index];
+    if (!measurement || ingredient.unit !== "g" ||
+        !/^(?:kuoretonta )?kananmunaa?(?: kuoretta| kuorettomana)?$/iu.test(ingredient.item) ||
+        !("eggWeightWithoutShellG" in row) ||
+        row.eggWeightWithoutShellG !== measurement[0] || ingredient.amount !== measurement[0] ||
+        row.amount !== measurement[1]) return false;
+    weights.push([measurement[0], measurement[1]]);
+    return true;
+  });
+  if (!equivalent || !weights.length) return [];
+
+  const expected = projectIngredientList(id, "fi", source, source).items;
+  return kitchen.every((row, index) => isDeepStrictEqual(ingredientScope(row), ingredientScope(expected[index])) &&
+    row.eggSingular === expected[index].eggSingular) ? weights : [];
+}
+
+export async function recipePresentationDifferences(id: string, markdown: string, current: RecipeEntry) {
+  const differences: ReleasePresentationDifference[] = [];
+  const parsed = parseMarkdown(markdown);
+  if (!parsed) return null;
+  const ingredients = parsed.data.ingredients;
+  const { instructions, notes } = recipePreparationSections(markdown);
+  const weights = Array.isArray(ingredients) ? verifiedFiEggPresentationWeights(id, ingredients, current) : [];
+  const reviewedInstructions = projectEggWeightReferences("fi",
+    applyReviewedGramListSpacing(instructions, reviewedRecipeCopy(id, "fi")?.method), weights);
+  const [instructionsHtml, steps, notesHtml] = await Promise.all([
+    renderSafeMarkdown(reviewedInstructions), renderInstructionSteps(reviewedInstructions), renderSafeMarkdown(notes),
+  ]);
+  if (parsed.data.servings !== current.servings) differences.push("servings");
+  const kitchen = current.kitchenIngredients ?? current.ingredients;
+  if (!Array.isArray(ingredients) || (!weights.length &&
+      ([...current.ingredients, ...kitchen].some(row => "eggWeightWithoutShellG" in row) ||
+        !isDeepStrictEqual(ingredients.map(ingredientScope), kitchen.map(ingredientScope))))) {
+    differences.push("ingredients");
+  }
+  if (current.ingredientPreparation?.length || instructionsHtml !== current.instructionsHtml ||
+      !isDeepStrictEqual(steps, current.instructionStepsHtml)) differences.push("preparation");
+  if (notesHtml !== current.notesHtml) differences.push("notes");
+  return differences;
 }
 
 export async function readRecipeStateInputs(sourceCommit: string) {
@@ -116,8 +182,6 @@ export async function readRecipeStateInputs(sourceCommit: string) {
   ]);
   const fiPublic = new Map(siteContent.recipes.filter(recipe => recipe.locale === "fi")
     .map(recipe => [recipe.recipeId, recipe]));
-  const ingredientScope = (rows: RecipeEntry["ingredients"]) =>
-    JSON.stringify(rows.map(row => [row.item, row.amount, row.unit, row.note ?? null]));
   const releases = Object.entries(glycemic.originalReleaseBindings ?? {});
   const currentReviewedEvidence = new Set(releases.map(([, binding]) => binding.evidencePath)
     .filter(file => reviewedGoldenHashes.has(file)));
@@ -143,22 +207,9 @@ export async function readRecipeStateInputs(sourceCommit: string) {
           differences.push("effective-source");
         }
       }
-      const parsed = parseMarkdown(presentation);
-      if (!parsed) return null;
-      const ingredients = parsed.data.ingredients;
-      const { instructions, notes } = recipePreparationSections(presentation);
-      const reviewedInstructions = applyReviewedGramListSpacing(instructions, reviewedRecipeCopy(id, "fi")?.method);
-      const [instructionsHtml, steps, notesHtml] = await Promise.all([
-        renderSafeMarkdown(reviewedInstructions), renderInstructionSteps(reviewedInstructions), renderSafeMarkdown(notes),
-      ]);
-      if (parsed.data.servings !== current.servings) differences.push("servings");
-      if (!Array.isArray(ingredients) ||
-          ingredientScope(ingredients) !== ingredientScope(current.kitchenIngredients ?? current.ingredients)) {
-        differences.push("ingredients");
-      }
-      if (current.ingredientPreparation?.length || instructionsHtml !== current.instructionsHtml ||
-          !isDeepStrictEqual(steps, current.instructionStepsHtml)) differences.push("preparation");
-      if (notesHtml !== current.notesHtml) differences.push("notes");
+      const renderedDifferences = await recipePresentationDifferences(id, presentation, current);
+      if (!renderedDifferences) return null;
+      differences.push(...renderedDifferences);
       return [id, differences] as const;
     }),
   );

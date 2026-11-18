@@ -55,11 +55,16 @@ alkuperäisen poikkeaman. Ohjeen vertailu hyväksyy katselmoidun
 pilkkuvälin lisäyksen grammoina ilmoitettujen ainesmäärien luetteloon,
 kun molemmat näkyvät valmistusohjeet täsmäävät sen jälkeen.
 Pelkkä `cooking_method`-luokituksen muutos sallitaan, jos muu
-lähdesisältö ja näkyvä valmistus täsmäävät. Viidelle aiemmin
+lähdesisältö ja näkyvä valmistus täsmäävät. Seitsemälle aiemmin
 katselmoidulle FI-esityskorjaukselle vertailu käyttää korjattua versiota,
 kun sekä koko esitysversio että alkuperäinen julkaisutodiste vastaavat
 kirjattuja SHA-256-tiivisteitä. Annosjako, ainekset, molemmat
 valmistusohjeen esitystavat ja muistiinpanot tarkistetaan myös näille.
+Katselmoitu kananmunan kappalemäärä täsmää grammoina annettuun lähderiviin
+vain, jos näkyvässä ainesrivissä näkyy myös sama kuoreton kokonaispaino.
+Tällöin valmistuksen viittaus samaan ainesriviin vastaa grammoina annettua
+ohjetta. Muut ainekset, erilliset valmistustoimet ja muistiinpanot
+tarkistetaan edelleen.
 Muuttunut julkaistu ohje, puuttuva varmennus sekä
 laskentasyötteen ja lähdeaineiston erot
 kuuluvat `bindingDifferences`-kenttään. Kun alkuperäinen julkaisulähde
