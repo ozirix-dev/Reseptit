@@ -60,16 +60,17 @@
   "kaali-omenasalaatti": {
     "recipeBindingSha256": "d8a90a56bf174ba682570cb621198fd817d3e9d0e8eb3cb9cd22994dc684a0d5",
     "reviewedAt": "2026-11-18",
-    "reasoning": "Caesar dressing is part of the salad. Fineli covers raw cabbage 2.485g, peeled apple 2.0775g, carrot 0.9267g, about 5.49g available carbohydrate combined per serving, but 1 dl dressing has unresolved product composition and weight. This partial sum cannot be shown as whole-portion data. No point or class.",
+    "reasoning": "Caesar dressing is part of the salad. Fineli covers raw cabbage 2.485g, peeled apple 2.0775g, carrot 0.9267g, about 5.49g available carbohydrate combined per serving, but 1 dl dressing has unresolved product composition and weight. This partial sum cannot be shown as whole-portion data. No point or class. If the cook selects Felix EAN 6417808290610, its 2.3 g carbohydrate per 30 ml scales to 1.2778 g declared dressing carbohydrate per serving without assuming a density.",
     "source": "https://fineli.fi/fineli/content/file/8/Fineli_data_file_instructions",
     "nutritionSha256": "48feeebabd57625bbb4ed92649d159435d7fcf2b727084514c96b7ceba21ec34",
     "condition": {
-      "fi": "Koko annoksen hiilihydraattimäärä riippuu valitusta Caesar-kastikkeesta.",
-      "en": "The whole serving’s carbohydrate amount depends on the Caesar dressing used.",
-      "sv": "Kolhydratmängden för hela portionen beror på vilken caesardressing du använder.",
-      "th": "ปริมาณคาร์โบไฮเดรตของทั้งหน่วยบริโภคขึ้นอยู่กับน้ำสลัดซีซาร์ที่ใช้"
+      "fi": "Kun 1 dl Felix Caesar -salaattikastiketta (EAN 6417808290610) jaetaan kuuteen annokseen, kastikkeesta tulee valmistajan mukaan noin 1,3 g hiilihydraattia annosta kohti.",
+      "en": "If you use Felix Caesar dressing (EAN 6417808290610), the recipe’s 100 ml adds about 1.3 g carbohydrate from the dressing per sixth of the salad, using the manufacturer’s nutrition information.",
+      "sv": "Om du använder Felix caesardressing (EAN 6417808290610) bidrar receptets 1 dl med cirka 1,3 g kolhydrater från dressingen per portion när salladen delas i sex enligt tillverkarens näringsuppgifter.",
+      "th": "หากใช้น้ำสลัดซีซาร์ Felix (EAN 6417808290610) น้ำสลัด 100 มิลลิลิตรตามสูตรให้คาร์โบไฮเดรตจากน้ำสลัดประมาณ 1.3 กรัมต่อหนึ่งในหกของสลัด ตามข้อมูลโภชนาการของผู้ผลิต"
     },
-    "preparationSha256": "5fa7fe4e55a4042a196d995f703655be26e24e64849927cbb2dfbce34e8f8252"
+    "preparationSha256": "5fa7fe4e55a4042a196d995f703655be26e24e64849927cbb2dfbce34e8f8252",
+    "publicSource": "https://www.felix.fi/tuote/felix-caesar-salaattikastike-375-g/"
   },
   "kebab-munakasrulla": {
     "recipeBindingSha256": "9b88b33a974dcc4bcba1f13e3b672696ab90558d08fd20f5a1ee296b3f326125",
@@ -2012,12 +2013,12 @@
     "nutritionSha256": "679c6840b52d03b75e799652865aa610992370863f48ef001052f148e63624a8",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/182",
-    "reasoning": "The 70 g dry white rice flour is cooked into the porridge and divided equally among four bowls. Fineli Release 20 182 supplies 79.3 g available CHO per 100 g with verified fibre and polyols, and groups rice flour and rice flakes. The verified batch source explicitly documents this composition proxy. The component label identifies the actual flour and explains the matching limit. PhilFCT M051 coconut-palm sugar still lacks polyol evidence and the extraction from pandan remains unquantified.",
+    "reasoning": "The 70 g dry white rice flour is cooked into the porridge and divided equally among four bowls. Fineli Release 20 182 supplies 79.3 g available CHO per 100 g with verified fibre and polyols, and groups rice flour and rice flakes. The verified batch source explicitly documents this composition proxy. The component label identifies the actual flour and explains the matching limit. PhilFCT M051 coconut-palm sugar still lacks polyol evidence and the extraction from pandan remains unquantified. The official M051 total sugars field reports 94.1 g/100 g. All 100 g coconut palm sugar goes into the syrup for four bowls, so a standard share contributes approximately 23.5 g sugars from the syrup according to the source. Keep the rice flour component.",
     "condition": {
-      "fi": "Finelin vertailuarvo kattaa riisijauhon ja riisihiutaleet. Myös päälle lusikoitava kookospalmusokerisiirappi tuo hiilihydraatteja.",
-      "en": "Fineli’s reference covers rice flour and rice flakes. The coconut palm sugar syrup spooned on top also contributes carbohydrate.",
-      "sv": "Finelis referensvärde gäller rismjöl och risflingor. Sirapen av kokospalmsocker som läggs ovanpå bidrar också med kolhydrater.",
-      "th": "ค่าอ้างอิงของ Fineli ครอบคลุมทั้งแป้งข้าวและข้าวแผ่น น้ำเชื่อมจากน้ำตาลดอกมะพร้าวที่ราดหน้าก็ให้คาร์โบไฮเดรตเช่นกัน"
+      "fi": "Riisijauhon osuus perustuu Finelin vertailuarvoon riisijauhosta ja -hiutaleista. Kun koko siirappi jaetaan tasan neljään kulhoon, kookospalmusokerista tulee noin 23,5 g sokereita kulhoa kohti.",
+      "en": "The rice flour estimate uses Fineli’s reference for rice flour and flakes. Dividing all the syrup equally among four bowls gives about 23.5 g of sugars from the coconut palm sugar per bowl.",
+      "sv": "Beräkningen för rismjölet bygger på Finelis referensvärde för rismjöl och risflingor. När all sirap delas lika mellan fyra skålar ger kokospalmsockret cirka 23,5 g sockerarter per skål.",
+      "th": "ค่าของแป้งข้าวอิงข้อมูลของ Fineli สำหรับแป้งข้าวและข้าวแผ่น เมื่อแบ่งน้ำเชื่อมทั้งหมดเท่า ๆ กันในสี่ชาม น้ำตาลมะพร้าวให้ปริมาณน้ำตาลประมาณ 23.5 กรัมต่อชาม"
     },
     "ingredientPortion": {
       "index": 0,
@@ -2029,8 +2030,10 @@
         "th": "แป้งข้าวขาว (น้ำหนักแห้ง)"
       },
       "unit": "g",
-      "availableCarbsGPer100g": 79.3
-    }
+      "availableCarbsGPer100g": 79.3,
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/182"
+    },
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/408bd3a8a6003e820bb0583f9496dcb9eef3c00e/docs/nutrition/calculations/indonesialainen-bubur-sumsum-punnittu-v2.json#L108-L134"
   },
   "bataatti-mustikkakakku": {
     "recipeBindingSha256": "78b0a5f7547537c5ab2be8c6d7d9c6af7dc06f416097822146180bb944b6d5d1",
@@ -4624,6 +4627,149 @@
       "en": "The GL class is withheld because the recipe leaves the potato variety open and studies have found different GI values for different varieties.",
       "sv": "Ingen GL-klass visas eftersom receptet inte anger en potatissort och studier har funnit olika GI för olika sorter.",
       "th": "ไม่แสดงระดับ GL เพราะสูตรไม่ได้ระบุพันธุ์มันฝรั่ง และงานวิจัยพบว่าค่า GI แตกต่างกันตามพันธุ์"
+    }
+  },
+  "kana-yakitori-kaalilla": {
+    "recipeBindingSha256": "90764856a3e0baf79c5c831d6fb6b0f461a4990c64af1e030f31afc4063fefc4",
+    "preparationSha256": "4e0911d22849f86ce7ecbf0359617a2d32c49ad2ceb88ef45b10b42d0968557a",
+    "nutritionSha256": "6025885f1448bf6ef75e486d8fb4f87aabbb1c5d4c7c02b36f8cb7c73be467eb",
+    "reviewedAt": "2026-11-18",
+    "source": "https://www.kikkoman.co.jp/products/K10/detail/K100505.html",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/408bd3a8a6003e820bb0583f9496dcb9eef3c00e/docs/nutrition/calculations/kana-yakitori-kaalilla.json",
+    "reasoning": "The four-serving recipe uses one tablespoon mirin in brushed glaze, mixing it with soy and ginger, brushing the chicken lightly and allowing separate clean sauce reserved before contact with raw chicken for any further basting. Whole-ingredient retention is a calculation assumption, not a weighed result. Sealed original GK uses 15 g AFCD F005701 (26.6 g available CHO/100 g), equals 0.9975 g per serving, 0.0025 g below strict less-than-1 g ingredient omission. Tracked total is 1.89225 g, below strict less-than-2 g. Kikkoman Manjo Hon Mirin K100505 declares 9.2 g carbohydrate and 0.0 g fibre per 15 mL, and Manjo domestic rice Hon Mirin K100550 declares 7.8 g and 0.0 g fibre per 15 mL. Dividing the pre-cook ingredient dose by four gives declared carbohydrate 2.30 g or 1.95 g/portion. With everything retained and other omissions fixed, omission arithmetic would instead total 3.19475 or 2.84475, respectively. These are sensitivity cases at the threshold, not available carbohydrate approval for a specific product or measured retention. Japan MEXT 16025 shows 26.6 mass-sum available, 26.8 monosaccharide equivalents, and 43.3 available by difference. The last is an alternate analytical basis, not a measured product difference. Original estimated GK 4.7982 comes entirely from cabbage and spring onion with Atkinson vegetable group GI 66 and no assigned GK for glaze. Public class already withheld. Exact current reviewed nutrition assumes all sauce, including mirin, retained.",
+    "carbohydrateScope": {
+      "fi": "Hiilihydraattiarvio sisältää koko ohjeen kastikemäärän, myös mirinin. Tarkista mirinin hiilihydraattimäärä pakkauksesta ja huomioi vartaisiin jäävä kastike.",
+      "en": "The carbohydrate estimate includes all the sauce in the recipe, including the mirin. Check the mirin label and consider how much sauce stays on the skewers.",
+      "sv": "Kolhydratberäkningen omfattar hela mängden sås i receptet, inklusive mirin. Kontrollera kolhydraterna på mirinförpackningen och tänk på hur mycket sås som blir kvar på spetten.",
+      "th": "ค่าประมาณคาร์โบไฮเดรตรวมซอสทั้งหมดตามสูตร รวมถึงมิริน ตรวจปริมาณคาร์โบไฮเดรตบนฉลากมิรินและพิจารณาปริมาณซอสที่ติดอยู่บนไก่เสียบไม้"
+    },
+    "classLimitation": {
+      "fi": "GK-luku kattaa kaalin ja kevätsipulin. Kastikkeen vaikutus riippuu mirinistä ja vartaisiin jäävän kastikkeen määrästä.",
+      "en": "The GL figure covers the cabbage and spring onions. The effect of the sauce depends on the mirin and how much sauce stays on the skewers.",
+      "sv": "GL-värdet gäller kålen och vårlöken. Såsens påverkan beror på val av mirin och hur mycket sås som blir kvar på spetten.",
+      "th": "ค่า GL ครอบคลุมกะหล่ำปลีและต้นหอม ผลของซอสขึ้นอยู่กับชนิดของมิรินและปริมาณซอสที่ติดอยู่บนไก่เสียบไม้"
+    }
+  },
+  "lahi-ita-ful-medames": {
+    "recipeBindingSha256": "17b06696047cf64c715b484769d5484afc3f8565af7d1e8d22cf4299ee8b9894",
+    "preparationSha256": "8dfedc826e3384c3310010b3dd3e94ceb7d64ee483376242ed367e6387d67ef3",
+    "nutritionSha256": "ac5358cc3a58f2d421f46c90af37ed002349ef5d4c3f72fe9a1f2e5c6a629f6a",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31233",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/408bd3a8a6003e820bb0583f9496dcb9eef3c00e/docs/nutrition/calculations/lahi-ita-ful-medames.json",
+    "reasoning": "Recipe requires 150 g already cooked and drained faba/broad beans for two servings, heated and partially crushed; it leaves the original fresh or dried input state open. Legacy Fineli #31233 is broad bean dried, then boiled, salted, 14.13 g available CHO/100 g: 10.5975 g per serving. Applied broad legumes mean GI34 contributes all GK 3.60315. Nutrition source AFCD F000418 fresh then boiled and drained shows 2.4 g available CHO/100 g, 1.800 g beans per 75 g plus smaller recipe ingredients for verified 2.41 g whole-serving available. A fixed-rate sensitivity using the fresh composition alone yields 0.612, difference -2.99115 and no class crossing at 10 from either fixed model point, but it is not a valid alternate GK because the GI match remains unproved. Itkonen et al. 2025 tested 250 g dehulled cooked mash in 9 volunteers with postprandial and digestibility endpoints, no standardized matched glucose GI or recipe-equivalence. Preserve existing sealed points and no class; show the exact food-state difference. Do not introduce a dried ingredient carb alternative solely from the legacy record: verified polyols were missing.",
+    "carbohydrateScope": {
+      "fi": "Yhteen annokseen tulee 75 g kypsiä, valutettuja härkäpapuja. Hiilihydraattiarvio koskee annosta, kun pavut keitetään tuoreina.",
+      "en": "One serving uses 75 g of cooked, drained broad beans. The carbohydrate estimate applies when the beans are boiled from fresh.",
+      "sv": "En portion innehåller 75 g kokta och avrunna bondbönor. Kolhydratberäkningen gäller när bönorna kokas färska.",
+      "th": "หนึ่งที่ใช้ถั่วปากอ้าสุกที่สะเด็ดน้ำแล้ว 75 กรัม ค่าประมาณคาร์โบไฮเดรตใช้กับกรณีที่นำถั่วสดไปต้ม"
+    },
+    "classLimitation": {
+      "fi": "GK-luku kuvaa härkäpapujen osuutta. Laskelma käyttää ensin kuivattujen ja sitten keitettyjen papujen koostumusta sekä palkokasvien GI-keskiarvoa.",
+      "en": "The GL figure covers the broad beans. It uses the composition of beans boiled from dried and an average GI for legumes.",
+      "sv": "GL-värdet gäller bondbönorna. Det bygger på sammansättningen hos kokta, tidigare torkade bönor och på genomsnittligt GI för baljväxter.",
+      "th": "ค่า GL แสดงเฉพาะส่วนของถั่วปากอ้า โดยใช้ข้อมูลองค์ประกอบของถั่วแห้งที่นำไปต้มและค่า GI เฉลี่ยของกลุ่มถั่วเมล็ดแห้ง"
+    }
+  },
+  "kiinalainen-soijamaito-aamiaisella": {
+    "recipeBindingSha256": "94a2ee10260ed651439f5aba3756a1d9fc4c0cb2272760e41963f7bc6f8b3d40",
+    "preparationSha256": "db77101dbc5378f4166d8fce8395549728fa086bfafff086146573538f23de75",
+    "nutritionSha256": "6a3c68729ab1685237253b8ad9d4dbe850d4a6e5c197a872a508b7160febf214",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30207",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/408bd3a8a6003e820bb0583f9496dcb9eef3c00e/docs/nutrition/calculations/kiinalainen-soijamaito-aamiaisella.json",
+    "reasoning": "The two-serving recipe heats 200 mL unsweetened soy drink until steaming, then curdles it slightly with vinegar. The separate verified nutrition maps Fineli #31247 (explicit no-added-sugar) at 1.03 g available CHO/100 g, using 1 g/mL in the calculation. A serving contains 1.03 g from drink and 1.31 g whole available CHO. The approved legacy GK maps calcium-fortified Fineli #30207, with no confirmation that its identity is the required unsweetened version, 1.96 g available CHO from 100 g as sold. Atkinson broad legumes GI 34 applied to a processed soy drink gives all 0.6664 GK. Same-GI composition sensitivity yields 0.3502 and stays far below the low threshold; no numerical replacement is asserted. Public class is already withheld by 0.35 g tracked omissions. Use accurate practical scope rather than promote a GI for the curdled bowl.",
+    "carbohydrateScope": {
+      "fi": "Annoksen hiilihydraattiarviossa on mukana ohjeen 100 ml makeuttamatonta soijajuomaa.",
+      "en": "The carbohydrate estimate for one serving includes the recipe’s 100 mL of unsweetened soy drink.",
+      "sv": "Portionens kolhydratberäkning omfattar receptets 100 ml osötad sojadryck.",
+      "th": "ค่าประมาณคาร์โบไฮเดรตต่อหนึ่งที่รวมเครื่องดื่มถั่วเหลืองไม่เติมน้ำตาล 100 มิลลิลิตรตามสูตร"
+    },
+    "classLimitation": {
+      "fi": "GK-luku kuvaa soijajuoman osuutta. Laskelma käyttää kalsiumilla täydennetyn soijajuoman koostumusta ja palkokasvien GI-keskiarvoa.",
+      "en": "The GL figure covers the soy drink. It uses the composition of a calcium-fortified soy drink and an average GI for legumes.",
+      "sv": "GL-värdet gäller sojadrycken. Det bygger på sammansättningen hos kalciumberikad sojadryck och på genomsnittligt GI för baljväxter.",
+      "th": "ค่า GL แสดงเฉพาะส่วนของเครื่องดื่มถั่วเหลือง โดยใช้ข้อมูลองค์ประกอบของเครื่องดื่มถั่วเหลืองเสริมแคลเซียมและค่า GI เฉลี่ยของกลุ่มถั่วเมล็ดแห้ง"
+    }
+  },
+  "naudan-paahtopaisti-uunissa": {
+    "recipeBindingSha256": "3fb63e41f390c928b2df4f32e9d8fb493dfb08f5e119ab8b85fe3814758ceae7",
+    "preparationSha256": "8ee49d8c60b93d899d83aa6cef97696b8ecb2fe38bc91deb699681ad90171585",
+    "nutritionSha256": "a26864bcdb70f0bccb835b3e4cf078f71041d2b7d52f5d59a7e8c4e5b29f155f",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/0455e1b9f026142ec833837abc955347ed0def2e/reseptit/paaruoat/naudan-paahtopaisti-uunissa.md",
+    "reviewedAt": "2026-11-18",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0455e1b9f026142ec833837abc955347ed0def2e/docs/nutrition/calculations/naudan-paahtopaisti-uunissa.json",
+    "reasoning": "All listed charges total 2.8462 g estimated available CHO per batch (0.355775 g per eighth) before cooking. AFCD F006618 gives 0.3565 g as a sensitivity check. Garlic, pepper, butter and thyme retained after searing, basting and transferring are unmeasured. No fixed amount per slice, cooked serving, or 100 g. Exclude sandwiches, drinks and sides.",
+    "condition": {
+      "fi": "Voin, valkosipulin, mustapippurin ja timjamin laskennallinen osuus on noin 0,4 g imeytyvää hiilihydraattia yhtä kahdeksasosaa kohti, kun kaikki raaka-aineet lasketaan mukaan ennen kypsennystä. Paistiin jäävää määrää ei ole mitattu. Mahdolliset lisukkeet ja leivät lasketaan erikseen.",
+      "en": "Counting all the butter, garlic, pepper and thyme before cooking gives about 0.4 g available carbohydrate for one eighth of the recipe. The amount left on the roast has not been measured. Count any sides and bread separately.",
+      "sv": "Om allt smör, all vitlök, svartpeppar och timjan räknas före tillagningen blir det cirka 0,4 g tillgängliga kolhydrater per åttondel av satsen. Mängden som blir kvar på steken har inte mätts. Räkna eventuella tillbehör och bröd separat.",
+      "th": "หากคิดเนย กระเทียม พริกไทยดำ และไทม์ทั้งหมดก่อนปรุง หนึ่งในแปดของสูตรจะมีคาร์โบไฮเดรตที่ย่อยได้ประมาณ 0.4 กรัม ปริมาณที่ติดอยู่บนเนื้อหลังอบยังไม่ได้วัด ให้คิดเครื่องเคียงและขนมปังแยกต่างหาก"
+    }
+  },
+  "indonesialainen-ketoprak-aamiaiskulho": {
+    "recipeBindingSha256": "6eda4df2911227d0dd8f2b6a5fa8dc71e5c885a349973496a1542137fb897ed6",
+    "preparationSha256": "2f2b6c9d1b3b2e5d080f27c3fb6c465d3470ff043158f5acfb2e9ea758e75066",
+    "nutritionSha256": "2115307044d3a069a82011e86320c857385810ceff5990e5411bf374a36ba74e",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1038/sj.ejcn.1601265",
+    "publicSource": "https://doi.org/10.1017/S0007114514004425",
+    "reasoning": "The two-serving recipe boils 100 g dry rice noodles according to unspecified package instructions and notes that the photo shows extra vegetables and crispy sides. Fineli 29055 at 81.64 g available CHO/100 g assigns 40.82 g available CHO to 50 g dry noodles. Chan et al. 2001 Table 2 measured GI 61 ± 6 SEM, n=12, against the 50 g glucose reference for dried rice noodles that were boiled for the study, not the full Ketoprak dish. This contributes 24.9002 of original 26.66845 GK (93.4%). Sprouts and peanuts contribute 1.287 and 0.48125 respectively. Sun et al. 2015 Methods and Table 2 measured a different rice vermicelli (Beehoon) after 1.5 min boiling at GI 35, with a 50 g available-carbohydrate test dose and a matched 50 g glucose reference. At fixed model composition and other rows, GI 35 would give 16.05525 and GK 20 corresponds to noodle GI 44.66377. This is between-food sensitivity, not a replacement GK or confidence interval. The modern audited 44.21 g whole-serving available CHO uses the same rice noodles but raw AFCD F008806 bean sprouts rather than Fineli 384 (1.2 vs 1.95 g/serving); it also excludes the photographed sides. Preserve original reference-based point, and suppress category across unspecified qualifying noodles.",
+    "condition": {
+      "fi": "Yhteen kulhoon punnitaan 50 g kuivia riisinuudeleita ennen keittämistä. Kuvan ylimääräiset kasvikset ja rapeat lisukkeet lasketaan erikseen.",
+      "en": "Weigh 50 g of rice noodles dry before cooking for one bowl. Count the extra vegetables and crispy sides in the photo separately.",
+      "sv": "Väg upp 50 g torra risnudlar före kokning till en portion. Räkna grönsakerna och de krispiga tillbehören på bilden som visas utöver receptet separat.",
+      "th": "หนึ่งชามใช้เส้นก๋วยเตี๋ยวข้าวแห้ง 50 กรัม ชั่งก่อนต้ม ให้คิดผักและเครื่องเคียงกรอบที่เพิ่มในภาพแยกต่างหาก"
+    },
+    "classLimitation": {
+      "fi": "GK-arvio käyttää tutkimuksessa kuivasta keitettyjen riisinuudelien GI-arvoa. Riisinuudelien mitatut GI-arvot vaihtelevat niin paljon, että annoksen GK-luokka voi muuttua.",
+      "en": "The GL estimate uses a study of rice noodles boiled from dry. Measured GI values vary enough between rice noodles to change the serving’s GL category.",
+      "sv": "GL-uppskattningen använder en studie av torra risnudlar som kokats. Uppmätta GI-värden för olika risnudlar varierar så mycket att portionens GL-klass kan ändras.",
+      "th": "ค่าประมาณ GL ใช้ค่า GI จากงานวิจัยที่ทดสอบเส้นก๋วยเตี๋ยวข้าวแห้งที่นำไปต้ม ค่า GI ที่วัดได้ของเส้นแต่ละชนิดต่างกันมากพอที่จะทำให้ระดับ GL ต่อหนึ่งที่เปลี่ยนได้"
+    }
+  },
+  "valimerellinen-pinaatti-fetashakshuka": {
+    "recipeBindingSha256": "9fba1a9c4cfdeedd11637ed23953d3fe556e647d68a84f4c624f597f6510265d",
+    "preparationSha256": "73e8e584553bd2804af3ec6083c1a0b17498fd5a5bbc33ae4eeae032137d75ae",
+    "nutritionSha256": "26e16c9c59efa3b99d37614fd8c4351265f6ebb0c17403ae44e65c2d5fde5438",
+    "reviewedAt": "2026-11-18",
+    "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F008749",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/408bd3a8a6003e820bb0583f9496dcb9eef3c00e/docs/nutrition/calculations/valimerellinen-pinaatti-fetashakshuka.json",
+    "reasoning": "The two-serving recipe explicitly identifies extra bread, herbs and seeds in the photo as serving suggestions with no amounts, and they are absent from both sealed inputs. Original GK 0.789375 is 0.474375 for tomato (Fineli 352, tomato analogue GI 22, 60.1% of GK) and 0.315 for feta (Fineli 11211, generalized dairy GI 35, 39.9%). Fineli 858 egg is a separate low-impact tracked omission (0.165 g available CHO). Cooked fresh spinach is modeled using AFCD F008749 raw baby leaves at 0 available CHO, while the independently verified composition uses F008761 raw mature leaves at 0.6 g/100 g, 0.3 g for one serving. Total audited serving available CHO is 3.52 g (rounded) versus 3.22125 g reconstructed in the sealed legacy input before rounded display. No whole-item correction or quantity for photographed extras follows without bread identity and gram weights.",
+    "condition": {
+      "fi": "GK-arvio muodostuu tomaatista ja fetasta. Kuvan leipä, ylimääräiset yrtit ja siemenet lasketaan erikseen.",
+      "en": "The GL estimate comes from the tomato and feta. Count the bread and extra herbs and seeds pictured separately.",
+      "sv": "GL-uppskattningen bygger på tomat och fetaost. Räkna brödet och de extra örterna och fröna på bilden separat.",
+      "th": "ค่าประมาณ GL คำนวณจากมะเขือเทศและเฟตา ให้คิดขนมปัง สมุนไพร และเมล็ดพืชที่เพิ่มในภาพแยกต่างหาก"
+    }
+  },
+  "karjalanpaisti-vhh": {
+    "recipeBindingSha256": "7285d74534c2270bd870ab7d8761d46f4ef5e159ae1e50aad9158c14f530351f",
+    "preparationSha256": "9fb3133b57e07dfa795b93e7e275680119803865c7957abc557da48179e00f06",
+    "nutritionSha256": "554557f3c12652f21f9eca83334e8d781a4a49e6a4e384b446caecf1a6266956",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/408bd3a8a6003e820bb0583f9496dcb9eef3c00e/docs/nutrition/calculations/karjalanpaisti-vhh.json",
+    "reasoning": "The six-serving recipe separately roasts 700 g white cabbage, 116.667 g raw cabbage per serving, then serves it with beef and pork stew. The sealed original GK 3.8269 comes wholly from this side via Fineli 320 at 4.97 g available CHO/100 g (5.798333 g/serving) and Atkinson et al. 2021 Table 1 vegetable group GI 66 ± 19 SD. The group includes sweet potatoes and is not a direct roasted white-cabbage measurement. Fineli 335 onion contributes 0.8 g/serving included in the independent 6.60 g whole-serving CHO; its GI contribution was omitted with low-impact seasoning assumptions in the 1.6 g total model omission. The optional carrot is named separately with no amount. It is absent from both estimates. Neither source represents plain meat stew or a serving with carrot or an alternate side. Existing original category already withheld.",
+    "condition": {
+      "fi": "Arvio sisältää paahdetun valkokaalilisukkeen. GK-luku kuvaa kaalin osuutta kasvisten GI-keskiarvolla. Laske mahdollinen porkkana erikseen.",
+      "en": "The estimate includes the roasted white cabbage side. The GL figure covers the cabbage, using an average GI for vegetables. Count any optional carrot separately.",
+      "sv": "Det rostade vitkålstillbehöret ingår i uppskattningen. GL-värdet gäller vitkålen och bygger på ett genomsnittligt GI för grönsaker. Räkna eventuell morot separat.",
+      "th": "ค่าประมาณรวมกะหล่ำปลีขาวอบที่เสิร์ฟคู่กัน ค่า GL แสดงส่วนของกะหล่ำปลีโดยใช้ค่า GI เฉลี่ยของผัก ให้คิดแครอตแยกหากใส่เพิ่ม"
+    }
+  },
+  "keto-pinaattiletut": {
+    "recipeBindingSha256": "d566e9f4524e9ec8cefa6a5f4d60566916c4fa8ae958e38dfcde5820cc448bd5",
+    "preparationSha256": "a7a4be49150ab14aa6f9e37c0a40d1589b613ddd86aa4a568554cfc11e65b7c9",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11571",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/408bd3a8a6003e820bb0583f9496dcb9eef3c00e/docs/nutrition/glycemic-load-pilot-input.json#L8445",
+    "reasoning": "Three servings use 100 g cream cheese and offer an unspecified savoury filling as an alternative at serving. Original GK includes only the 33.333 g/serving cream cheese modelled with Fineli 11571 plain 11% fat cream cheese (1.333333 g available CHO/serving) and Atkinson et al. 2021 Table 1 dairy mean GI 35 ± 11 SD. Original GK 0.466667. The tracked omitted 0.877 g combines egg 0.165, spinach 0.2, almond meal 0.44 and butter 0.072 g/serving. The optional filling is outside recipe and model. Public published legacy 3.71 g is total carbohydrate on the original recipe, not independently verified available carbohydrate. No extra ingredient value served from this proposed scope and no class change.",
+    "condition": {
+      "fi": "Arvio koskee lettuja sellaisenaan. GK-arvio muodostuu taikinan tuorejuustosta. Laske mahdollinen suolainen täyte erikseen.",
+      "en": "The estimate applies to the pancakes on their own. The GL estimate comes from the cream cheese in the batter. Count any savoury filling separately.",
+      "sv": "Uppskattningen gäller plättarna som de är. GL-uppskattningen bygger på färskosten i smeten. Räkna eventuell salt fyllning separat.",
+      "th": "ค่าประมาณใช้กับแพนเค้กเปล่า ค่า GL คำนวณจากครีมชีสในแป้ง ให้คิดไส้คาวแยกหากใส่เพิ่ม"
     }
   }
 }

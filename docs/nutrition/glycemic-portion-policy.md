@@ -166,6 +166,14 @@ kerrotaan, mitä luku kattaa. Puutteellisen annoksen GK-piste voi näkyä
 rajattuna, ja koko annoksen luokka jätetään pois. Myös hallitsevan
 GI-lähteen poikkeava tuote tai valmistus voi tehdä luokasta liian epävarman.
 
+Jos hiilihydraattiarvio ja GK kattavat eri ainekset tai käyttävät eri
+tuotetta tai valmistustapaa, resepti ja opas kertovat hiilihydraatin
+oletuksen ennen grammalukua ja GK:n oletuksen arvion vieressä. Ful medamesin
+hiilihydraattiarvio koskee tuoreena keitettyjä härkäpapuja ja GK:n
+koostumuslähde ensin kuivattuja ja sitten keitettyjä papuja.
+[Tuoreena keitetyt pavut (AFCD)](https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F000418) ·
+[Kuivattuina keitetyt pavut (Fineli)](https://fineli.fi/fineli/fi/elintarvikkeet/31233)
+
 Kaalikääryleiden 9,24 säilytettiin. Kaalin ja kukkakaalin osuudet perustuvat
 kasvisryhmän GI 66 -keskiarvoon, ja noin 1,58 g imeytyvää hiilihydraattia
 jää laskelman ulkopuolelle. Katsausarvo ei ole kaalin tai kukkakaalin mittaus.

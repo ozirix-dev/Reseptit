@@ -254,19 +254,20 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
       ? `${result.assessmentType ? modelled + " " : ""}${text.about} ${display.value} ${text.perServing}`
       : text.incomplete;
     const portionWords = recipePortionCopy[locale];
-    const preparationScope = carbs && (carbs.choices || portion?.ingredientPortion?.source) && portion?.condition?.[locale];
+    const preparationScope = carbs && !portion?.carbohydrateScope && (carbs.choices || portion?.ingredientPortion?.source) && portion?.condition?.[locale];
+    const carbohydrateScope = carbs && (portion?.carbohydrateScope?.[locale] || preparationScope);
     return <li key={result.recipeId} id={result.recipeId} className="glycemic-pilot__recipe" tabIndex={-1}>
       {result === linked ? <p className="eyebrow">{ux.linked}</p> : null}
       <h3><Link to={localized?.routePath ?? result.routePath} lang={isLiverRecipe ? locale : localized ? recipeLocaleFromPath(localized.routePath) : "fi"}>{titleFor(result)}</Link></h3>
       <p className="gk-evidence__scope">{ux.original}</p>
-      {preparationScope ? <p data-portion-preparation-scope>{preparationScope}</p> : null}
+      {carbohydrateScope ? <p data-portion-preparation-scope>{carbohydrateScope}</p> : null}
       {carbs?.choices ? <>
         <WholeCarbohydrateChoices choices={carbs.choices} locale={locale} />
         <p>{portionWords[carbs.definition]}</p>
       </> : carbs ? <p>{portionText.grams(describeCarbs(carbs.range, numberLocale))} · {portionWords[carbs.definition]}</p> : null}
       {portion?.ingredientPortion ? <IngredientPortionDetails ingredient={portion.ingredientPortion} locale={locale} /> : null}
       {!preparationScope && portion?.condition ? <p>{portion.condition[locale]}</p> : null}
-      {portion?.reviewedSource && !verbal && (portion.condition || portion.classLimitation || (!base && portion.ingredientPortion))
+      {portion?.reviewedSource && !verbal && (portion.condition || portion.carbohydrateScope || portion.classLimitation || (!base && portion.ingredientPortion))
         && !carbs?.choices?.some(choice => choice.source === portion.reviewedSource)
         && !portion.ingredientPortion?.carbohydrateAlternatives?.some(choice => choice.source === portion.reviewedSource)
         ? <p><ReviewedPortionSource source={portion.reviewedSource} locale={locale} /></p> : null}

@@ -44,6 +44,7 @@ export interface PortionEvidence {
   driver?: { ingredientIndex: number; coversMajority: boolean };
   verbal?: VerbalGk;
   condition?: LocalizedText;
+  carbohydrateScope?: LocalizedText;
   classLimitation?: LocalizedText;
   piecesPerServing?: number;
   gramsPerServing?: number;

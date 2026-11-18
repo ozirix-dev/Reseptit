@@ -57,6 +57,7 @@ interface ReviewedPortion {
   publicSource?: string;
   piecesPerServing?: number;
   condition?: LocalizedText;
+  carbohydrateScope?: LocalizedText;
   classLimitation?: LocalizedText;
   verbal?: VerbalGk;
   zeroCarbohydrate?: true;
@@ -210,7 +211,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
       || (review.publicSource && !httpsSource(review.publicSource)) || !review.reasoning)) {
     throw new Error(`${recipeId}: reviewed GK portion no longer matches the recipe. Re-review the amount, preparation and sides.`);
   }
-  if (review && (review.verbal || review.condition || review.ingredientProduct || review.classLimitation
+  if (review && (review.verbal || review.condition || review.carbohydrateScope || review.ingredientProduct || review.classLimitation
       || review.ingredientPortion || review.alternativeLabels || review.versionAlternativeLabels
       || review.zeroCarbohydrate || review.wholeCarbohydrateOnly || review.declaredLabelIngredientIndices
       || review.portionGrams || review.piecesPerServing)
@@ -296,6 +297,13 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
   }
   if (review?.wholeCarbohydrateOnly && !portion.availableCarbs) {
     throw new Error(`${recipeId}: reviewed standalone carbohydrate requires evidence for every ingredient.`);
+  }
+  if (review?.carbohydrateScope) {
+    if (!review.nutritionSha256 || !portion.availableCarbs || !(["fi", "en", "sv", "th"] as const).every(
+      locale => review.carbohydrateScope?.[locale]?.trim())) {
+      throw new Error(`${recipeId}: carbohydrate scope requires reviewed whole-portion evidence and all four languages.`);
+    }
+    portion.carbohydrateScope = review.carbohydrateScope;
   }
   if (review?.zeroCarbohydrate && !zeroCarbohydrate) throw new Error(`${recipeId}: exact zero carbohydrate is no longer supported.`);
   if (review?.verbal) {

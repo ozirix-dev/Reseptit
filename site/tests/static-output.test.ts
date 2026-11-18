@@ -216,7 +216,8 @@ test("preparation and optional-side evidence stays visibly scoped", async () => 
     "pannacotta-marjakastikkeella", "lahi-ita-kikhernejauho-yrttilettu", "kantonilainen-hoyrytetty-kala",
     "larb-moo-vhh", "pohjoisafrikkalainen-kuskus-aamiaiskulho", "ropa-vieja", "amritsari-kala", "kiinalainen-hirssipuuro-taateleilla",
     "lihapullat-kermakastikkeessa-vhh", "jauhelihakastike-kesakurpitsanuudeleilla", "kanakorma-kukkakaaliriisilla",
-    "lohikeitto-kuohukermalla", "tortilla-de-patatas"]) {
+    "lohikeitto-kuohukermalla", "tortilla-de-patatas", "indonesialainen-ketoprak-aamiaiskulho",
+    "valimerellinen-pinaatti-fetashakshuka", "karjalanpaisti-vhh", "keto-pinaattiletut"]) {
     assert.equal(glycemicLoadFilterCategories[id], undefined, id);
     for (const { locale, routePath } of siteContent.recipes.filter(recipe => recipe.recipeId === id)) {
       const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
@@ -233,6 +234,50 @@ test("preparation and optional-side evidence stays visibly scoped", async () => 
       const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
       assert.match(rendered, /data-portion-gk=/, routePath);
       assert.ok(rendered.includes(reviews[id].condition![locale]), routePath);
+    }
+  }
+});
+
+test("carbohydrate and GL describe their separate recipe assumptions before and beside the respective amounts", async () => {
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  for (const id of ["kana-yakitori-kaalilla", "lahi-ita-ful-medames", "kiinalainen-soijamaito-aamiaisella"]) {
+    const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.equal(entries.length, 4, id);
+    assert.equal(glycemicLoadFilterCategories[id], undefined, id);
+    for (const { locale, routePath } of entries) {
+      const html = (await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8"))
+        .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+      const guide = await readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8");
+      const start = guide.indexOf(`id="${id}"`);
+      const row = guide.slice(start, guide.indexOf("<li ", start + 1));
+      const carbsScope = reviews[id].carbohydrateScope![locale];
+      const glScope = reviews[id].classLimitation![locale];
+      const recipeCarbs = html.indexOf('data-portion-carbohydrate="available"');
+      const recipeGl = html.indexOf("data-portion-gk");
+      assert.ok(html.includes(renderToStaticMarkup(createElement("p", {className: "recipe-disclosure"}, carbsScope))), routePath);
+      assert.ok(html.indexOf(carbsScope) < recipeCarbs && recipeCarbs < recipeGl, routePath);
+      assert.ok(html.indexOf(glScope) > recipeGl, routePath);
+      assert.ok(row.includes(renderToStaticMarkup(createElement("p", {"data-portion-preparation-scope": true}, carbsScope))), routePath);
+      assert.ok(row.indexOf("gk-evidence__value") > row.indexOf(carbsScope), routePath);
+      assert.ok(row.indexOf(glScope) > row.indexOf("gk-evidence__value"), routePath);
+      assert.ok(row.includes('href="' + reviews[id].publicSource + '"'), routePath);
+    }
+  }
+});
+
+test("reviewed seasoning, syrup and dressing quantities stay scoped to their named inputs", async () => {
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  const amounts = { "naudan-paahtopaisti-uunissa": 0.4, "indonesialainen-bubur-sumsum-punnittu-v2": 23.5, "kaali-omenasalaatti": 1.3 };
+  for (const [id, amount] of Object.entries(amounts)) {
+    const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.equal(entries.length, 4, id);
+    for (const { locale, routePath } of entries) {
+      const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+      const condition = reviews[id].condition![locale];
+      assert.ok(condition.includes(new Intl.NumberFormat(locale).format(amount)), routePath);
+      assert.ok(html.includes(renderToStaticMarkup(createElement("p", {className: "recipe-disclosure"}, condition))), routePath);
+      assert.ok(html.includes('href="' + reviews[id].publicSource + '"'), routePath);
+      assert.doesNotMatch(html, /data-portion-carbohydrate=|data-portion-gk=|data-gk-status="(?:CALCULATED|QUALITATIVE)"/, routePath);
     }
   }
 });
