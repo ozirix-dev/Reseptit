@@ -113,7 +113,7 @@ test("a cited, verified and previously unreviewed source or review decision reop
   }
 });
 
-test("public estimates stay approved and priority or unclear cases never skip", () => {
+test("clear public estimates are approved and conflicting, priority or unclear cases never skip", () => {
   assert.equal(gkResearchDisposition({ ...current, hasPublicEstimate: true }, reread(), verified).status, "approved");
   assert.equal(gkResearchDisposition({ ...current, hasPublicEstimate: true, priority: true }, reread(), verified).status,
     "priority");
@@ -123,7 +123,7 @@ test("public estimates stay approved and priority or unclear cases never skip", 
   assert.equal(gkResearchDisposition({ ...current, bindingConflict: true }, reread(), verified).status, "review");
   assert.equal(gkResearchDisposition({ ...current, bindingConflict: true }, undefined, verified).status, "review");
   assert.equal(gkResearchDisposition({ ...current, bindingConflict: true, hasPublicEstimate: true }, reread(), verified).status,
-    "approved");
+    "review");
   assert.equal(gkResearchDisposition({ ...current, bindingConflict: true, calculationEvidenceSha256: "4".repeat(64) },
     reread(), verified).status, "reopened");
   assert.throws(() => gkResearchRegistry.parse({ schemaVersion: 1, decisions: [decision, decision] }),

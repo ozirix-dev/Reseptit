@@ -105,7 +105,7 @@ export function gkResearchDisposition(
   if (current.ambiguous) return { status: "review", reason: "Unclear original recipe binding" } as const;
   const conflict = { status: "review", reason: "Conflicting published calculation bindings" } as const;
   if (current.hasPublicEstimate) {
-    return { status: "approved", reason: "Existing public original estimate" } as const;
+    return current.bindingConflict ? conflict : { status: "approved", reason: "Existing public original estimate" } as const;
   }
   if (!current.recipeSha256 || !current.contextSha256) return { status: "review", reason: "Missing recipe/preparation binding" } as const;
   if (!decision) return current.bindingConflict ? conflict : { status: "new", reason: "No current research decision" } as const;

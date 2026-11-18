@@ -75,6 +75,7 @@ const results = ids.flatMap(requestedId => {
     }
   });
   return [{ recipeId: canonicalId, sourceRecipeId: row?.sourceRecipeId ?? null, ...disposition,
+    hasPublicEstimate: published,
     bindingDifferences: row?.glycemicLoadStatus.bindingDifferences ?? [],
     binding: { recipeSha256, contextSha256, calculationInputSha256: row?.glycemicLoadStatus.calculationInputSha256 ?? null,
       calculationEvidenceSha256: row?.glycemicLoadStatus.calculationEvidenceSha256 ?? null },

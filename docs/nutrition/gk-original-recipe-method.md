@@ -76,9 +76,12 @@ node --import tsx scripts/gk-research-queue.ts 10 idli-sambar vhh-mansikkakakku
 - `priority` ohjaa turvallisuus- ja lähdevirheet korjausjonoon. `review`
   vaatii sidonnan tai päätösnäytön käsintarkistuksen. Karanteenia tai
   epäselvää alkuperäistä reseptiversiota ei hyväksytä tutkimusohitukseksi.
-- `approved` säilyttää julkisessa näkymässä olevan alkuperäisen numeerisen
-  arvion tai vaihteluvälin. Käytä muissa jo hyväksytyissä tuloksissa myös
-  nykyisiä hyväksyntärekistereitä, kuten tähän asti.
+- `approved` tarkoittaa julkisessa näkymässä olevaa alkuperäistä
+  numeerista arviota tai vaihteluväliä, jonka sidonnassa ei ole havaittu
+  ristiriitaa. Julkisen arvion sidontaristiriita ohjataan `review`-jonoon
+  nykyiseen julkaisulähteiden auditointiin. `hasPublicEstimate` kertoo
+  erikseen, näkyykö arvio jo julkisessa näkymässä.
+  Käytä myös nykyisiä hyväksyntärekistereitä, kuten tähän asti.
 - `skip` koskee vain saman GI/GK-lähdetutkimuksen toistamista. Se ei estä
   hiilihydraatti-, annos- tai ainesosatiedon parantamista, turvallisuus-
   korjausta eikä reseptin julkaisua nykyisten porttien mukaisesti.
