@@ -1477,6 +1477,44 @@ test("P2/P3 corrections reach static titles, route data and Recipe JSON-LD", asy
 });
 
 
+test("published serving instructions keep baked portions and retained ingredients with the GL estimate", async () => {
+  const cases = [
+    ["munakasmuffinit", "fi", 3, "Yksi annos on kaksi muffinssia."],
+    ["munakasmuffinit", "en", 3, "six muffins, two per serving."],
+    ["munakasmuffinit", "sv", 3, "sex muffins, två per portion."],
+    ["munakasmuffinit", "th", 3, "มัฟฟิน 6 ชิ้น เสิร์ฟที่ละ 2 ชิ้น"],
+    ["tonnikalamunakkaat-uunissa", "fi", 3, "Yksi annos on kaksi pientä munakasta."],
+    ["tonnikalamunakkaat-uunissa", "en", 3, "six mini omelettes, two per serving."],
+    ["tonnikalamunakkaat-uunissa", "sv", 3, "sex små omeletter, två per portion."],
+    ["tonnikalamunakkaat-uunissa", "th", 3, "ไข่อบ 6 ชิ้น เสิร์ฟที่ละ 2 ชิ้น"],
+    ["uunimuna-avokadot", "fi", 2, "Säästä kaikki koverrettu hedelmäliha tarjoiluun.",
+      "kahteen yhtä suureen annokseen. Ota mukaan myös erillisessä vuoassa kypsennetty muna."],
+    ["vhh-lihamureke", "fi", 6, "koko mureke ja paistoneste kuuteen yhtä suureen annokseen."],
+    ["vhh-lihamureke", "en", 6, "the meatloaf and all the cooking juices into six equal portions."],
+    ["vhh-lihamureke", "sv", 6, "hela limpan och all steksky på sex lika stora portioner."],
+    ["vhh-lihamureke", "th", 6, "พร้อมน้ำจากการอบทั้งหมดเป็น 6 ส่วนเท่า ๆ กัน"],
+  ] as const;
+  for (const [id, locale, servings, ...copy] of cases) {
+    const recipe = siteContent.recipes.find(row => row.recipeId === id && row.locale === locale);
+    assert.ok(recipe, id + "/" + locale);
+    const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+    const markup = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+    const filename = contentManifest[recipe.routePath];
+    assert.ok(filename, recipe.routePath);
+    const payload = parseRouteContent(JSON.parse(await readFile(path.join(dist, "data", filename), "utf8")), recipe.routePath);
+    assert.ok(payload?.recipe, recipe.routePath);
+    assert.equal(payload.recipe.servings, servings, recipe.routePath);
+    assert.match(markup, /data-portion-gk=/, recipe.routePath);
+    for (const line of copy) {
+      assert.ok(markup.includes(line), recipe.routePath + " prerendered instruction");
+      assert.ok(payload.recipe.instructionsHtml.includes(line), recipe.routePath + " interactive route");
+      if (payload.recipe.instructionStepsHtml?.length) {
+        assert.ok(payload.recipe.instructionStepsHtml.some(step => step.includes(line)), recipe.routePath + " checklist");
+      }
+    }
+  }
+});
+
 test("translation self-review corrections are present in static HTML and recipe metadata", async () => {
   const { siteContent } = await import("../src/generated/content.generated");
   const cases = [
