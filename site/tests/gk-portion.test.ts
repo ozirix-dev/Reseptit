@@ -11,6 +11,26 @@ import { recipeBindingHash } from "../scripts/glycemic-load-recipe-binding";
 
 const root = path.resolve(import.meta.dirname, "../..");
 
+test("three legacy totals retain their definition alongside weighed ingredient estimates", async () => {
+  const reviews = await loadReviewedPortions(root);
+  const cases = [
+    ["hummus", "alkuruoat", 100, 17.6, 25.16, 18.54],
+    ["vhh-kaalikaarryleet", "paaruoat", 62.5, 1.46875, 23.34, 15.48],
+    ["chole-bhature", "paaruoat", 87.5, 64.74825, 118.4, 105.3],
+  ] as const;
+  for (const [id, category, mass, carbs, total, net] of cases) {
+    const markdown = await readFile(path.join(root, "reseptit", category, id + ".md"), "utf8");
+    const { portion } = await projectPortionEvidence(root, id, markdown, reviews[id]);
+    const [ingredient] = reviewedIngredientPortions(portion);
+    assert.equal(ingredient.amountPerServing, mass);
+    assert.ok(Math.abs(ingredient.availableCarbsGPerServing! - carbs) < 1e-9);
+    assert.match(ingredient.source!, /^https:\/\/fineli\.fi\/fineli\/api\/v1\/foods\//);
+    assert.deepEqual(Object.keys(ingredient.name).sort(), ["en", "fi", "sv", "th"]);
+    assert.deepEqual(originalPortionCarbs({ carbsTotalG: total, carbsNetG: net, fatG: null, proteinG: null }, portion),
+      { range: { min: total, max: total }, definition: "total" });
+  }
+});
+
 test("approved recipe-specific net models take precedence over total carbohydrate", async () => {
   const cases = [
     ["jauheliha-kaalikeitto-vhh", "jauheliha-kaalikeitto-vhh", 10.21, 12],
