@@ -5,12 +5,12 @@ import type { IngredientPortion, PortionEvidence, LocalizedText, VerbalGk } from
 import type { RecipeEntry } from "../src/types/content";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeBindingHash } from "./glycemic-load-recipe-binding";
-import { calculate, type Calculation, type FoodRecord } from "./nutrition-model";
+import { calculate, type Calculation, type FoodRecord, type IngredientInput } from "./nutrition-model";
 import { verifyNutritionEvidence } from "./nutrition-evidence";
 import { isRecoveryEvidence } from "./gk80-uunikanapasta";
 import { isScopedPolyolEvidence } from "./gk80-polyol-c";
 
-type CompositionMatch = { index: number; record: FoodRecord; state: string; matchEvidence: string };
+type CompositionMatch = { index: number } & Partial<Omit<IngredientInput, "item" | "amount" | "unit">>;
 type NutritionRecipe = Parameters<typeof verifyNutritionEvidence>[0];
 
 interface ReviewedPortion {
@@ -21,6 +21,7 @@ interface ReviewedPortion {
     ingredientSha256: string;
     labels: LocalizedText;
     unit: IngredientPortion["unit"];
+    source?: string;
     sourceReview?: { file: string; sha256: string };
     availableCarbsGPer100g?: number;
     declaredCarbsGPer100g?: number;
@@ -35,7 +36,7 @@ interface ReviewedPortion {
   verbalNoteEdits?: Partial<Record<keyof LocalizedText, { before: string; after: string }>>;
   wholeCarbohydrateOnly?: {
     compositionMatches?: CompositionMatch[];
-    preparationChoices?: { index: number; choices: (Omit<CompositionMatch, "index"> & { label: LocalizedText })[] };
+    preparationChoices?: { index: number; choices: { label: LocalizedText; record: FoodRecord; state: string; matchEvidence: string }[] };
     noteEdits?: Partial<Record<keyof LocalizedText, { before: string; after: string }>>;
     localizedScopeSha256?: Partial<LocalizedText>;
   };
@@ -104,11 +105,15 @@ function applyCompositionMatches(input: Calculation, matches: CompositionMatch[]
   }
   if (matches.length === 0) return input;
   const ingredients = [...input.ingredients];
-  for (const { index, record, state, matchEvidence } of matches) {
-    if (!record || !httpsSource(record.sourceUrl) || !state?.trim() || !matchEvidence?.trim()) {
+  for (const { index, ...amendment } of matches) {
+    if ("item" in amendment || "amount" in amendment || "unit" in amendment) {
+      throw new Error(`${input.recipeId}: a reviewed ingredient amendment cannot change the recipe quantity.`);
+    }
+    const amended = { ...ingredients[index], ...amendment };
+    if (!amended.excludedReason && (!amended.record || !httpsSource(amended.record.sourceUrl) || !amended.state?.trim() || !amended.matchEvidence?.trim())) {
       throw new Error(`${input.recipeId}: a reviewed composition match requires a source and preparation evidence.`);
     }
-    ingredients[index] = { ...ingredients[index], record, state, matchEvidence };
+    ingredients[index] = amended;
   }
   return { ...input, ingredients };
 }
@@ -238,12 +243,13 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
     portion.verbal = review.verbal;
   }
   if (review?.ingredientPortion) {
-    const { index, ingredientSha256, labels, unit, sourceReview, availableCarbsGPer100g, declaredCarbsGPer100g,
+    const { index, ingredientSha256, labels, unit, source, sourceReview, availableCarbsGPer100g, declaredCarbsGPer100g,
       carbohydrateAlternatives } = review.ingredientPortion;
     const ingredient = data.ingredients[index];
     if (!["g", "kpl", "arkkia"].includes(unit) || !ingredient || ingredient.unit !== unit || typeof ingredient.amount !== "number"
         || !Number.isFinite(ingredient.amount) || ingredient.amount <= 0
         || !Number.isInteger(data.servings) || data.servings <= 0
+        || (source !== undefined && !httpsSource(source))
         || hash(JSON.stringify(ingredient)) !== ingredientSha256
         || !(["fi", "en", "sv", "th"] as const).every(locale => labels[locale]?.trim())) {
       throw new Error(`${recipeId}: reviewed partial ingredient amount no longer matches the recipe.`);
@@ -255,7 +261,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
       }
     }
     const amountPerServing = ingredient.amount / data.servings;
-    portion.ingredientPortion = { name: labels, amountPerServing, unit };
+    portion.ingredientPortion = { name: labels, amountPerServing, unit, ...(source && { source }) };
     if (portion.driver?.ingredientIndex === index && !portion.driver.coversMajority) delete portion.driver;
     const carbsGPer100g = availableCarbsGPer100g ?? declaredCarbsGPer100g;
     if (availableCarbsGPer100g !== undefined || declaredCarbsGPer100g !== undefined) {

@@ -1825,10 +1825,10 @@
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31256",
     "reasoning": "Fineli Release 20 31256 gives 54.034 g available carbohydrate per 100 g of uncooked fresh egg pasta, with explicit fibre and sugar alcohols. The 250 g input is divided three ways. This is the weighed fresh-pasta component before cooking and draining. The recipe permits fresh pasta with or without egg, so the estimate is scoped to the egg-pasta reference; brand and moisture can matter. Asparagus water retention, lemon zest, Parmesan and black pepper still prevent the whole-portion estimate.",
     "condition": {
-      "fi": "Luku koskee tuoretta kananmunapastaa. Jos käytät muuta fettuccinea, tarkista hiilihydraatit pakkauksesta.",
-      "en": "This estimate applies to fresh egg pasta. If you use another fettuccine, check its carbohydrate content on the pack.",
-      "sv": "Uppskattningen gäller färsk äggpasta. Om du använder annan fettuccine, kontrollera kolhydratmängden på förpackningen.",
-      "th": "ค่าประมาณนี้ใช้กับเส้นสดผสมไข่ หากใช้เส้นเฟตตูชินีแบบอื่น ให้ตรวจปริมาณคาร์โบไฮเดรตบนฉลาก"
+      "fi": "Luku koskee tuoretta kananmunapastaa. Jos käytät muuta fettuccinea, tarkista hiilihydraatit pakkauksesta. Finelin keitetyssä ja valutetussa tuoreessa kananmunapastassa on noin 16,2 g imeytyvää hiilihydraattia 100 grammassa. Koko annoksen arvioon tarvitaan valutetun pastan paino.",
+      "en": "This estimate applies to fresh egg pasta. If you use another fettuccine, check its carbohydrate content on the pack. Fineli’s cooked, drained fresh egg pasta has about 16.2 g of available carbohydrate per 100 g. A whole-serving estimate requires the drained pasta weight.",
+      "sv": "Uppskattningen gäller färsk äggpasta. Om du använder annan fettuccine, kontrollera kolhydratmängden på förpackningen. Finelis kokta och avrunna färska äggpasta innehåller cirka 16,2 g tillgängliga kolhydrater per 100 g. För att uppskatta hela portionen behövs pastans avrunna vikt.",
+      "th": "ค่าประมาณนี้ใช้กับเส้นสดผสมไข่ หากใช้เส้นเฟตตูชินีแบบอื่น ให้ตรวจปริมาณคาร์โบไฮเดรตบนฉลาก ข้อมูล Fineli ระบุว่าเส้นสดผสมไข่ที่ต้มและสะเด็ดน้ำแล้วมีคาร์โบไฮเดรตที่ย่อยได้ประมาณ 16.2 กรัมต่อ 100 กรัม หากต้องการประมาณทั้งที่ ต้องทราบน้ำหนักเส้นหลังสะเด็ดน้ำ"
     },
     "ingredientPortion": {
       "index": 1,
@@ -1840,8 +1840,10 @@
         "th": "เส้นเฟตตูชินีสดผสมไข่ก่อนต้ม"
       },
       "unit": "g",
-      "availableCarbsGPer100g": 54.034
-    }
+      "availableCarbsGPer100g": 54.034,
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31256"
+    },
+    "publicSource": "https://fineli.fi/fineli/fi/elintarvikkeet/31257"
   },
   "paahtopaistileipa-piparjuurikastikkeella": {
     "recipeBindingSha256": "6114aa486402d4fc5eca2ab29091153abb66841515a66b17aa4df9277cca29b2",
@@ -2067,13 +2069,13 @@
     "preparationSha256": "ff3af0f905081bb38f1ea43b3a7ba67e7b57b9f1ea32a3972b734f50874a460d",
     "nutritionSha256": "67ea9742e0765682a9fc66283f14c89cc477d28636c003c286e1ca63494cf0a0",
     "reviewedAt": "2026-11-18",
-    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/395",
-    "reasoning": "Recipe weighs 230 g drained, cooked white canned beans across four portions, 57.5 g each. Current audit uses Fineli Release 20 395, generic boiled white common beans, 14.0 g available CHO per 100 g with source-recorded sugar alcohols. The same case uses a boiled-bean reference rather than a specific can; brand and drained result can alter composition. Remaining unverified product and spice matches and peeled squash composition block the whole portion.",
+    "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/ausnut/data-files",
+    "reasoning": "All ten ingredient amounts are accounted for, including all dressing and weighed edible vegetables. AFCD's butternut record matches peeled raw weight; AUSNUT 2023 provides canned drained white haricot/cannellini and natural unflavoured soy yoghurt reference (3.8 g available carbohydrate per 100 g, 2.6 g added sugar). 230 g drained beans refer to weight after the recipe rinse. Norway's fresh lemon peel and USDA's teaspoon measure support an explicit 2 g of raw zest. Water loss during roasting and any minor rinsing losses were not measured. This uses ingredients as charged and preserves all macro and GK holds.",
     "condition": {
-      "fi": "Punnitse pavut valutettuina. Arvio perustuu Finelin keitettyihin valkopapuihin. Myös kurpitsa tuo hiilihydraatteja.",
-      "en": "Weigh the beans after draining. The estimate uses Fineli’s boiled white beans as a reference. Squash also contributes carbohydrate.",
-      "sv": "Väg bönorna efter avrinning. Uppskattningen bygger på Finelis värde för kokta vita bönor. Pumpan bidrar också med kolhydrater.",
-      "th": "ชั่งถั่วหลังสะเด็ดน้ำ ค่าประมาณอ้างอิงถั่วขาวต้มในฐานข้อมูล Fineli ฟักทองก็ให้คาร์โบไฮเดรตเช่นกัน"
+      "fi": "Reseptin yksi annos on neljäsosa pellillisestä ja kastikkeesta. Punnitse ruusukaalit kovien kantojen poiston jälkeen ja valkopavut huuhdeltuina ja valutettuina. Laskelmassa käytetään miedosti makeutettua maustamatonta soijajogurttia ja 2 g sitruunankuoriraastetta koko erään.",
+      "en": "One recipe serving is one quarter of the tray and dressing. Weigh the Brussels sprouts after trimming the tough bases and the white beans after rinsing and draining. It uses lightly sweetened plain soy yoghurt and 2 g of lemon zest for the whole batch.",
+      "sv": "En portion enligt receptet är en fjärdedel av plåten och såsen. Väg brysselkålen efter att de hårda rotfästena tagits bort. Väg de vita bönorna efter sköljning och avrinning. Beräkningen använder lättsötad naturell sojayoghurt och 2 g rivet citronskal till hela satsen.",
+      "th": "หนึ่งที่ตามสูตรคืออาหารอบและซอสอย่างละหนึ่งในสี่ของที่ทำได้ ชั่งกะหล่ำดาวหลังตัดโคนแข็งออก และชั่งถั่วขาวหลังล้างและสะเด็ดน้ำ คำนวณโดยใช้โยเกิร์ตถั่วเหลืองรสธรรมชาติที่เติมน้ำตาลเล็กน้อยและผิวเลมอนขูด 2 กรัมสำหรับทั้งสูตร"
     },
     "ingredientPortion": {
       "index": 2,
@@ -2085,7 +2087,134 @@
         "th": "ถั่วขาวกระป๋องสะเด็ดน้ำ"
       },
       "unit": "g",
-      "availableCarbsGPer100g": 14
+      "availableCarbsGPer100g": 12.2
+    },
+    "publicSource": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/ausnut/data-files",
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "937ad77eb72923a9013c1721b5f3b423ea4c065e10c6228499118c8a0c67e8e0",
+        "en": "5456c047b61ceef5c5d175338fb3fc96d7b41ee7bc0bc615c649ce3621bb7960",
+        "sv": "95c55432545168e04ac8b6bd87bcea49b85491646c3c8559ffe66fd47790ae94",
+        "th": "a9d30995c3cc36d38cc3716f9e49e403e0e834a69dc6ed8f5e50cbc0c4658a9c"
+      },
+      "compositionMatches": [
+        {
+          "index": 0,
+          "state": "Raw peeled and deseeded butternut squash before roasting",
+          "matchEvidence": "FSANZ AFCD F007535 raw peeled edible butternut, 6.9 g available without sugar alcohols per 100 g. Includes the written 700 g edible mass, with no use of a baked-weight composition against raw grams.",
+          "record": {
+            "id": "afcd-F007535-release-3",
+            "name": "Pumpkin, butternut, peeled, fresh, raw",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F007535",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "state": "Raw peeled and deseeded butternut squash before roasting",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "AFCD states available carbohydrate without sugar alcohols independently. No aggregate polyol value was established.",
+            "per100g": {
+              "carbohydrate": 6.9,
+              "fibre": 1.8,
+              "polyols": null,
+              "protein": 2.1,
+              "fat": 0.6
+            }
+          },
+          "edibleFraction": 1,
+          "retainedFraction": 1,
+          "edibleEvidence": "Weight represents the edible charged input in the explicitly stated preparation.",
+          "retentionEvidence": "All edible food added to the batter or soup is included as weighed. This ingredient-input scenario does not measure cooked yield or nutrient change."
+        },
+        {
+          "index": 1,
+          "edibleEvidence": "For the scoped recipe scenario, weigh 300 g edible Brussels sprouts once the hard bases have been trimmed off. Use the Finnish raw edible reference."
+        },
+        {
+          "index": 2,
+          "state": "Canned cooked white haricot or cannellini beans, drained",
+          "matchEvidence": "FSANZ AUSNUT 2023 Survey ID 25102004, public key F000423, row 3218. The matched record corresponds to cooked white haricot or cannellini canned in brine and drained. Count the weighed 230 g after rinsing and draining. The Italian CREA independent canned drained cannellini comparator is 12.5 g per 100 g, while the former generic Fineli boiled-food record is a broader preparation.",
+          "edibleEvidence": "Weight represents the edible charged input in the explicitly stated preparation.",
+          "retentionEvidence": "All edible food added to the batter or soup is included as weighed. This ingredient-input scenario does not measure cooked yield or nutrient change.",
+          "record": {
+            "id": "ausnut-2023-F000423",
+            "name": "Bean, haricot or cannellini, canned, drained",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/ausnut/data-files",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ AUSNUT 2023 published direct nutrient profiles",
+            "state": "Canned cooked white haricot or cannellini beans, drained",
+            "basis": "per100g-prepared",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "Use the explicitly reported 'Available carbohydrate, without sugar alcohols (g)' on Food nutrient profiles row 3218. Same rounded with/without results do not independently establish aggregate polyols.",
+            "per100g": {
+              "carbohydrate": 12.2,
+              "fibre": 6.4,
+              "polyols": null,
+              "protein": 6.2,
+              "fat": 0.6
+            }
+          }
+        },
+        {
+          "index": 7,
+          "state": "Natural, unflavoured cultured soy yoghurt with slight sweetening",
+          "matchEvidence": "FSANZ AUSNUT 2023 Survey ID 20501005, public key F009879, row 2503, identifies the plain cultured soy yoghurt subtype without fruit or flavourings. The official reference reports 3.8 g available carbohydrate per 100 g (including 2.6 g added sugars). Recipe only requires unflavoured. The estimate explicitly scopes the lightly sweetened reference; other versions can differ.",
+          "record": {
+            "id": "ausnut-2023-F009879",
+            "name": "Yoghurt, soy based, natural",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/ausnut/data-files",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ AUSNUT 2023 published direct nutrient profiles",
+            "state": "Natural, unflavoured cultured soy yoghurt with slight sweetening",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "Use the explicitly reported 'Available carbohydrate, without sugar alcohols (g)' on Food nutrient profiles row 2503. Same rounded with/without results do not independently establish aggregate polyols.",
+            "per100g": {
+              "carbohydrate": 3.8,
+              "fibre": 0,
+              "polyols": null,
+              "protein": 5,
+              "fat": 4.2
+            }
+          },
+          "edibleFraction": 1,
+          "retainedFraction": 1,
+          "edibleEvidence": "Weight represents the edible charged input in the explicitly stated preparation.",
+          "retentionEvidence": "All edible food added to the batter or soup is included as weighed. This ingredient-input scenario does not measure cooked yield or nutrient change."
+        },
+        {
+          "index": 9,
+          "state": "Fresh raw lemon zest from an ordinary lemon",
+          "matchEvidence": "The serving uses raw grated zest from a washed lemon. Matvaretabellen lemon peel is a raw edible peel reference with 5.4 g available per 100 g, based on sugars and starch. USDA SR28 NDB 09156 household measure provides 2.0 g per teaspoon of raw lemon peel. Fine zest texture can give a different mass, so 2 g is explicitly scoped.",
+          "record": {
+            "id": "matvaretabellen-lemon-peel",
+            "name": "Lemon peel",
+            "sourceUrl": "https://www.matvaretabellen.no/en/lemon-peel/",
+            "retrievedAt": "2026-11-18",
+            "licence": "Matvaretabellen, Norwegian Food Safety Authority and University of Oslo published food profile",
+            "state": "Fresh raw lemon zest from an ordinary lemon",
+            "basis": "per100g-edible",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "Matvaretabellen source method MI0181 sums sugars and starch and reports 5.4 g available carbohydrate; aggregate polyols were not independently reported.",
+            "per100g": {
+              "carbohydrate": 5.4,
+              "fibre": 11,
+              "polyols": null,
+              "protein": 1.5,
+              "fat": 0.3
+            }
+          },
+          "edibleFraction": 1,
+          "retainedFraction": 1,
+          "edibleEvidence": "Weight represents the edible charged input in the explicitly stated preparation.",
+          "retentionEvidence": "All edible food added to the batter or soup is included as weighed. This ingredient-input scenario does not measure cooked yield or nutrient change.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "USDA Standard Reference Release 28, NDB 09156 raw lemon peel, measure 2 equals 2.0 g/teaspoon. https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg09.pdf"
+        }
+      ]
     }
   },
   "japanilainen-yaki-onigiri-misolla-punnittu-v2": {
@@ -2454,12 +2583,12 @@
     "nutritionSha256": "edc699a471a2ef8794f8daca64a1f610c423c815135f483c31c703b0153fb382",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31219",
-    "reasoning": "The 160 g dry red lentils in the four-serving original are weighed before rinsing. The reported Fineli #31219 CHOAVL of 45.8 g/100 g gives 18.32 g per raw input serving. Independent AFCD F005184 red hulled dry is 45.7 g without sugar alcohols per 100 g, but individual polyols are blank in the paired AFCD record. Original wording does not specify hulling; keep Fineli as the primary reference. Red lentil studies show nonzero variable polyols and losses during processing cannot be represented by assuming zero or pretending a retained mass was measured. F002991 and F009222/F010071 resolve coconut milk and canned whole peeled undrained tomatoes for component estimates in the audit. Therefore preserve the whole-portion hold.",
+    "reasoning": "Fineli accounts for the 160 g dry red lentils at 45.8 g directly available CHO per 100 g. AFCD F002991 accounts for 400 mL full-fat canned coconut milk, F009222 for 800 g peeled whole canned tomatoes retaining all juice, and F003337, F003327 and F004210 for the fully used curry, ground cumin and ground ginger. The whole pot is blended, and the serving is a quarter. The recipe is a brief rinse before soup cooking, without a soaking or draining after boiling step. Volumes and spice blends vary. Keep independent polyols and all four published macros withheld. No GK is established.",
     "condition": {
-      "fi": "Linssien arvio perustuu kuivapainoon ennen huuhtelua. Kookosmaito, tomaatit ja muut ainekset tuovat lisää hiilihydraattia.",
-      "en": "The lentil estimate uses their dry weight before rinsing. Coconut milk, tomatoes and other ingredients contribute additional carbohydrate.",
-      "sv": "Uppskattningen för linserna bygger på torrvikten före sköljning. Kokosmjölk, tomater och övriga ingredienser bidrar med ytterligare kolhydrater.",
-      "th": "ค่าประมาณของถั่วเลนทิลใช้ค่าน้ำหนักแห้งก่อนล้าง กะทิ มะเขือเทศ และส่วนผสมอื่น ๆ ให้คาร์โบไฮเดรตเพิ่มเติม"
+      "fi": "Reseptin yksi annos on neljäsosa keitosta. Linssit punnitaan kuivina ennen huuhtelua. Keittoon käytetään täysrasvaista säilykekookosmaitoa ja kuorittuja säilyketomaatteja mehuineen. Arvio käyttää 4 g curryjauhetta, 4 g juustokuminaa ja 1,8 g inkivääriä koko kattilaan.",
+      "en": "One recipe serving is a quarter of the soup. The estimate uses the lentils' dry weight before rinsing, full-fat canned coconut milk and the peeled canned tomatoes with all their juice. It uses 4 g of curry powder, 4 g of ground cumin and 1.8 g of ground ginger for the whole pot.",
+      "sv": "En portion enligt receptet är en fjärdedel av soppan. Linserna vägs torra före sköljning. Beräkningen använder helfet kokosmjölk på burk, skalade konserverade tomater med allt spad samt 4 g currypulver, 4 g malen spiskummin och 1,8 g malen ingefära till hela kastrullen.",
+      "th": "หนึ่งที่ตามสูตรคือซุปหนึ่งในสี่ของที่ทำได้ ใช้น้ำหนักถั่วเลนทิลแห้งก่อนล้าง ใช้กะทิกระป๋องไขมันเต็ม และใช้มะเขือเทศกระป๋องปอกเปลือกพร้อมน้ำทั้งหมด คำนวณโดยใช้ผงกะหรี่ 4 กรัม ยี่หร่าป่น 4 กรัม และขิงป่น 1.8 กรัมสำหรับซุปทั้งหม้อ"
     },
     "ingredientPortion": {
       "index": 6,
@@ -2472,6 +2601,167 @@
       },
       "unit": "g",
       "availableCarbsGPer100g": 45.8
+    },
+    "publicSource": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "ea08975c9d8356341971f6fe014cf69de55b54cc014db68f2cec8c1fb42b5526",
+        "en": "1d11ca1828edced4771094ca5fe2b5ce3eefe1d41629308f6f4544e85585f092",
+        "sv": "359811cb38a05f622a2878070141aa4d622feda3a8bc95708f8c00f7194be482",
+        "th": "699cb745c203cae18aa938020a821fe0b7b03a6e1da44def7bf99a679d1de2fe"
+      },
+      "compositionMatches": [
+        {
+          "index": 3,
+          "state": "Plain dry curry powder spice blend",
+          "matchEvidence": "FSANZ AFCD Release 3 F003337 dry curry powder reference contains 2.8 g available carbohydrate without sugar alcohols per 100 g. Blend varies with manufacturer.",
+          "record": {
+            "id": "afcd-F003337-release-3",
+            "name": "Curry powder",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F003337",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "state": "Plain dry curry powder spice blend",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "AFCD states available carbohydrate without sugar alcohols independently. No aggregate polyol value was established.",
+            "per100g": {
+              "carbohydrate": 2.8,
+              "fibre": 53.2,
+              "polyols": null,
+              "protein": 14.3,
+              "fat": 14
+            }
+          },
+          "edibleFraction": 1,
+          "retainedFraction": 1,
+          "edibleEvidence": "Weight represents the edible charged input in the explicitly stated preparation.",
+          "retentionEvidence": "All edible food added to the batter or soup is included as weighed. This ingredient-input scenario does not measure cooked yield or nutrient change.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "USDA SR 28 NDB 02015 has 2.0 g per teaspoon of curry powder. https://ods.od.nih.gov/pubs/usdandb/DHA-Food.pdf"
+        },
+        {
+          "index": 4,
+          "state": "Dried mature cumin seed, ground",
+          "matchEvidence": "FSANZ AFCD Release 3 F003327, dried ground cumin seed, gives 33.7 g available carbohydrate without sugar alcohols per 100 g.",
+          "record": {
+            "id": "afcd-F003327-release-3",
+            "name": "Cumin (cummin) seed, dried, ground",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F003327",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "state": "Dried mature cumin seed, ground",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "AFCD states available carbohydrate without sugar alcohols independently. No aggregate polyol value was established.",
+            "per100g": {
+              "carbohydrate": 33.7,
+              "fibre": 10.5,
+              "polyols": null,
+              "protein": 17.8,
+              "fat": 22.3
+            }
+          },
+          "edibleFraction": 1,
+          "retainedFraction": 1,
+          "edibleEvidence": "Weight represents the edible charged input in the explicitly stated preparation.",
+          "retentionEvidence": "All edible food added to the batter or soup is included as weighed. This ingredient-input scenario does not measure cooked yield or nutrient change.",
+          "gramsPerUnit": 2,
+          "conversionEvidence": "Ground cumin reference is 2 g per level teaspoon in Lamb Weston's weighed development recipe. Use an explicitly scoped 4 g input for two teaspoons. https://www.lambweston.com/en/recipes/chipotle-chili-con-carne-dip-with-loaded-potato-skins.pdf.html"
+        },
+        {
+          "index": 5,
+          "state": "Dried ground ginger",
+          "matchEvidence": "FSANZ AFCD Release 3 F004210 ground ginger contains 57.5 g available carbohydrate without sugar alcohols per 100 g.",
+          "edibleEvidence": "Weight represents the edible charged input in the explicitly stated preparation.",
+          "retentionEvidence": "All edible food added to the batter or soup is included as weighed. This ingredient-input scenario does not measure cooked yield or nutrient change.",
+          "record": {
+            "id": "afcd-F004210-release-3",
+            "name": "Ginger, dried, ground",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F004210",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "state": "Dried ground ginger",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "AFCD states available carbohydrate without sugar alcohols independently. No aggregate polyol value was established.",
+            "per100g": {
+              "carbohydrate": 57.5,
+              "fibre": 14.1,
+              "polyols": null,
+              "protein": 9,
+              "fat": 4.2
+            }
+          },
+          "gramsPerUnit": 1.8,
+          "conversionEvidence": "USDA SR 28 NDB 02021 reports 1.8 g per teaspoon ground ginger. https://ods.od.nih.gov/pubs/usdandb/DHA-Food.pdf"
+        },
+        {
+          "index": 6,
+          "retentionEvidence": "Counts the dry red lentil input before the specified brief rinse in a sieve. No separate soaking or cooking water is discarded; the whole soup is served. Any solids lost in the brief rinse were not measured."
+        },
+        {
+          "index": 7,
+          "state": "Stirred full-fat canned coconut milk",
+          "matchEvidence": "FSANZ AFCD F002991 regular-fat canned coconut milk uses the whole homogenized can contents. The weighed report is 1.7 g available carbohydrate per 100 g; separate volume row is 1.7 g per 100 mL at one decimal. The per-gram path uses the matching database specific gravity.",
+          "record": {
+            "id": "afcd-F002991-release-3",
+            "name": "Coconut, milk, canned, regular fat",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002991",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "state": "Stirred full-fat canned coconut milk",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "AFCD states available carbohydrate without sugar alcohols independently. No aggregate polyol value was established.",
+            "per100g": {
+              "carbohydrate": 1.7,
+              "fibre": 0,
+              "polyols": null,
+              "protein": 1.4,
+              "fat": 15.4
+            }
+          },
+          "edibleFraction": 1,
+          "retainedFraction": 1,
+          "edibleEvidence": "Weight represents the edible charged input in the explicitly stated preparation.",
+          "retentionEvidence": "All edible food added to the batter or soup is included as weighed. This ingredient-input scenario does not measure cooked yield or nutrient change.",
+          "gramsPerUnit": 1.02,
+          "conversionEvidence": "FSANZ AFCD Release 3 F002991 Food Details Specific Gravity 1.02. The measured recipe volume 400 mL corresponds to about 408 g."
+        },
+        {
+          "index": 8,
+          "state": "Canned whole peeled tomatoes in tomato juice, undrained",
+          "matchEvidence": "FSANZ AFCD Release 3 F009222 matches whole peeled canned tomatoes with the liquid from the cans included. The unsalted comparator F010071 gives the same 3.0 g available carbohydrate without sugar alcohols per 100 g.",
+          "record": {
+            "id": "afcd-F009222-release-3",
+            "name": "Tomato, whole, canned in tomato juice, undrained",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009222",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "state": "Canned whole peeled tomatoes in tomato juice, undrained",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "AFCD states available carbohydrate without sugar alcohols independently. No aggregate polyol value was established.",
+            "per100g": {
+              "carbohydrate": 3,
+              "fibre": 1,
+              "polyols": null,
+              "protein": 0.9,
+              "fat": 0
+            }
+          },
+          "edibleFraction": 1,
+          "retainedFraction": 1,
+          "edibleEvidence": "Weight represents the edible charged input in the explicitly stated preparation.",
+          "retentionEvidence": "All edible food added to the batter or soup is included as weighed. This ingredient-input scenario does not measure cooked yield or nutrient change."
+        }
+      ]
     }
   },
   "uuniriisipuuro": {
@@ -3632,24 +3922,77 @@
     "preparationSha256": "d1fd0ae6c1ddb2f5036141102f3fc7991dda722ecaa05b5b7b6692dc60d8fc8b",
     "nutritionSha256": "aa6657109a51b114f9d8aeb1de0d8845884f5722ce14fcf5ff996c6a40317136",
     "reviewedAt": "2026-11-18",
-    "source": "https://apetit.fi/tuotteet/apetit-kotimainen-porkkanasose-paloina-45-kg/",
-    "reasoning": "Recipe weighs 500 g plain pureed carrot and divides the complete batter into four. The source-backed conditional comparison uses Apetit exact unsweetened 100% carrot frozen purée 1.5 kg, EAN 6430104951641, which declares 5.7 g label carbohydrate / 100 g. The recipe does not name a product or specify how homemade purée was prepared. Therefore keep 125 g as the structured measured ingredient and the 7.1 g label figure as an explicitly named conditional example. Preserve original instructions and require following package preparation when using that product.",
+    "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002275",
+    "reasoning": "500 g refers to the ready carrot purée without liquid or another ingredient. FSANZ AFCD F002275 and the Norwegian Food Composition Table both report 5.1 g available carbohydrate per 100 g for boiled drained carrot. Use Fineli's ingredient-specific volume conversions. Both the batter and the pan use the exact zero-available-carbohydrate Sunnuntai liquid rapeseed margarine referenced in Fineli #32431. The frying-fat omission has verified zero available and total carbohydrate, with maximum 3 g fat per serving. The original approval holds and packaged-purée example do not qualify this scenario for macros or GK.",
     "condition": {
-      "fi": "Jos käytät Apetitin maustamatonta pakasteporkkanasosetta (EAN 6430104951641), yhdelle reseptiannokselle käytettävässä 125 grammassa on pakkauksen mukaan noin 7,1 g hiilihydraattia. Noudata pakkauksen kuumennusohjetta.",
-      "en": "If you use Apetit plain frozen carrot purée (EAN 6430104951641), its label gives about 7.1 g of carbohydrate in the 125 g used per recipe serving. Follow the heating instructions on the pack.",
-      "sv": "Om du använder Apetits naturella frysta morotspuré (EAN 6430104951641) ger de 125 g som används per receptportion enligt förpackningen cirka 7,1 g kolhydrater. Följ värmningsanvisningen på förpackningen.",
-      "th": "หากใช้แครอตบดแช่แข็งไม่ปรุงรส Apetit (EAN 6430104951641) ปริมาณ 125 กรัมต่อหนึ่งที่ตามสูตรให้คาร์โบไฮเดรตตามฉลากประมาณ 7.1 กรัม ให้ทำตามคำแนะนำในการให้ความร้อนบนบรรจุภัณฑ์"
+      "fi": "Reseptin yksi annos on neljäsosa letuista. Koko annoksen arvio käyttää erään 500 g kotitekoista sosetta kuorituista, keitetyistä ja valutetuista porkkanoista ilman lisättyä nestettä. Taikinaan ja paistamiseen käytetään Sunnuntain juoksevaa rypsiöljyvalmistetta. Apetitin pakastesoseen luku koskee pelkkää sosetta. Noudata sen pakkauksen kuumennusohjetta.",
+      "en": "One recipe serving is a quarter of the pancakes. The whole-serving estimate uses 500 g of homemade purée per batch made from peeled, boiled and drained carrots with no added liquid, and Sunnuntai liquid rapeseed margarine in the batter and for frying. The Apetit figure refers to its frozen purée alone. Follow its pack heating instructions.",
+      "sv": "En portion enligt receptet är en fjärdedel av plättarna. Beräkningen för hela portionen använder 500 g hemlagad puré till satsen av skalade, kokta och avrunna morötter utan tillsatt vätska samt flytande Sunnuntai-rapsmargarin i smeten och vid stekning. Värdet för Apetit gäller bara den frysta purén. Följ värmningsanvisningen på förpackningen.",
+      "th": "หนึ่งที่ตามสูตรคือแพนเค้กหนึ่งในสี่ของที่ทำได้ ค่าของทั้งที่ใช้แครอตบดทำเอง 500 กรัมสำหรับแป้งทั้งสูตร จากแครอตปอกเปลือก ต้ม และสะเด็ดน้ำโดยไม่เติมของเหลว ใช้มาการีนเหลวจากน้ำมันเรพซีด Sunnuntai ผสมแป้งและทอด ตัวเลขของ Apetit ใช้กับแครอตบดแช่แข็งเท่านั้น ให้ทำตามคำแนะนำการอุ่นบนบรรจุภัณฑ์"
     },
     "ingredientPortion": {
       "index": 0,
       "ingredientSha256": "d039318ea1eb2dc792bdee056bd4e0a6c5f47935d996f1e0a29b1ab9920225d5",
       "labels": {
-        "fi": "Maustamaton porkkanasose",
-        "en": "Plain carrot purée",
-        "sv": "Naturell morotspuré",
-        "th": "แครอตบดไม่ปรุงรส"
+        "fi": "Apetitin pakasteporkkanasose (EAN 6430104951641)",
+        "en": "Apetit frozen carrot purée (EAN 6430104951641)",
+        "sv": "Apetits frysta morotspuré (EAN 6430104951641)",
+        "th": "แครอตบดแช่แข็ง Apetit (EAN 6430104951641)"
       },
-      "unit": "g"
+      "unit": "g",
+      "source": "https://apetit.fi/tuotteet/apetit-kotimainen-porkkanasose-paloina-45-kg/",
+      "declaredCarbsGPer100g": 5.7
+    },
+    "publicSource": "https://www.matvaretabellen.no/en/carrot-cooked/",
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "f7398d8017ecf8bf4a603be46b803b052df2c87c2a6b0b937d512f5d87e9c265",
+        "en": "0d6214c5bc97841d41237299baf101ef2197e3cc543b43967f8d8a68419fef83",
+        "sv": "2bff07482057a20229f7856d4f7ad2d378f1f629a728bea1c6d1686bbe78910d",
+        "th": "a27afe9f1e94ca812be5d0183e33d70fcd932a663879bb6424431df8ade96913"
+      },
+      "compositionMatches": [
+        {
+          "index": 0,
+          "state": "Homemade plain purée of cooked peeled drained mature carrots, with no added liquid",
+          "matchEvidence": "The 500 g is the completed carrot purée made by blending or mashing only peeled, boiled and drained mature carrots. AFCD F002275 explicitly gives 5.1 g available carbohydrate without sugar alcohols per 100 g. Matvaretabellen estimates the same value for boiled drained carrot. This does not cover a prepared purée with added liquid, oil or other ingredients, or the former separately labeled frozen product.",
+          "record": {
+            "id": "afcd-F002275-release-3",
+            "name": "Carrot, mature, peeled, fresh, boiled, drained",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002275",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "state": "Homemade plain purée of cooked peeled drained mature carrots, with no added liquid",
+            "basis": "per100g-prepared",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "AFCD states available carbohydrate without sugar alcohols independently. No aggregate polyol value was established.",
+            "per100g": {
+              "carbohydrate": 5.1,
+              "fibre": 3.3,
+              "polyols": null,
+              "protein": 1.1,
+              "fat": 0.3
+            }
+          },
+          "edibleFraction": 1,
+          "retainedFraction": 1,
+          "edibleEvidence": "Weight represents the edible charged input in the explicitly stated preparation.",
+          "retentionEvidence": "All edible food added to the batter or soup is included as weighed. This ingredient-input scenario does not measure cooked yield or nutrient change."
+        },
+        {
+          "index": 7,
+          "excludedReason": "The portion of the pan's liquid margarine retained by the pancakes was not measured.",
+          "omissionImpactEvidence": "Under the explicitly stated Sunnuntai liquid rapeseed margarine scope, Fineli Release 20 #32431 reports zero available carbohydrate, fibre and sugar alcohols. Manufacturer Bunge Sunnuntai liquid rapeseed oil product page confirms 0 g carbohydrate, 0 g fibre, 0 g protein and 80 g fat per 100 g (500 mL pack EAN 6438207011781). The absolute upper bound is that all 15 g used for frying is retained across four servings. This only bounds the possible fat and energy.",
+          "omissionImpactUpperBoundPerServing": {
+            "kcal": 27,
+            "netCarbohydrate": 0,
+            "totalCarbohydrate": 0,
+            "protein": 0,
+            "fat": 3
+          }
+        }
+      ]
     }
   },
   "marjakiisseli-vaniljakastikkeella": {
@@ -3741,7 +4084,7 @@
     "wholeCarbohydrateOnly": {
       "localizedScopeSha256": {
         "fi": "ac2f3b1d6df0dc9c235f75653faaa457921ab07577d5a5076fadb7f66032b2a1",
-        "en": "04f8cc4816ab26633fba02d8d2cdd17b99a3ae630c02eac2575b074299840b47",
+        "en": "368657212f3527e9bbdeecfb1dcb7c664b40e55bb715776dcdf4a2fb4149d229",
         "sv": "b32c49cbd52cf6d980e7727e40039cc4bcf986ff3c82981a296b11af46cfcf87",
         "th": "406423183e27f661b8137869bdce71bf3386b10827548226ddc92d67433f4547"
       },
@@ -3986,6 +4329,212 @@
       "en": "A GL class for the whole serving is withheld because the calculation covers only the cauliflower, cream and yogurt.",
       "sv": "Ingen GL-klass visas för hela portionen eftersom beräkningen bara omfattar blomkålen, grädden och yoghurten.",
       "th": "ไม่แสดงระดับ GL ของทั้งจาน เนื่องจากการคำนวณครอบคลุมเฉพาะดอกกะหล่ำ ครีม และโยเกิร์ต"
+    }
+  },
+  "uunibataatit-fetalla": {
+    "recipeBindingSha256": "f20d7c5ed23a8c5ac6850d187ccd993d571eb28fbd7acab707347877a99459c5",
+    "preparationSha256": "dbd617e0a5fbefc67419efe7f79ec54a7235fec03419c65770921b8374a0978a",
+    "nutritionSha256": "b4f8bbef7240614ba667e9b0a2f66aa2e07f71d6b58226cf1f9d9d5120368478",
+    "reviewedAt": "2026-11-18",
+    "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/ausnut/data-files",
+    "publicSource": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/ausnut/data-files",
+    "reasoning": "All four orange-fleshed potatoes are weighed raw with the skins, then baked as eight halves served with all toppings. Two similarly sized halves provide one fourth of the weighed ingredient inputs. AUSNUT F010942 is the scoped raw unpeeled food reference; its available-carbohydrate value was transferred from the reference for orange-fleshed peeled sweet potato, while unpeeled moisture/fibre were analysed. The estimate only applies to the cooked skin-eaten scenario. AFCD resolves chilli and edible spring onion. The small whole unhulled sesame reference matches seed form and is not a black-cultivar analysis. No finished yield, exact nutrient retention or original GK was measured.",
+    "condition": {
+      "fi": "Yksi reseptiannos on kaksi samankokoista uunissa paahdettua puolikasta täytteineen. Se käyttää noin 350 g raakaa oranssimaltoista bataattia annosta kohti, ja myös kuori syödään.",
+      "en": "One recipe serving is two similarly sized roasted halves with the toppings. It uses about 350 g of raw orange-fleshed sweet potato per serving and includes the skin.",
+      "sv": "En portion enligt receptet är två ungefär lika stora ugnsrostade halvor med fyllning. Den räknar med cirka 350 g rå sötpotatis med orange fruktkött per portion, och skalet ingår.",
+      "th": "หนึ่งที่ตามสูตรคือมันเทศอบสองซีกขนาดใกล้เคียงกันพร้อมเครื่องโรย คำนวณจากมันเทศเนื้อสีส้มดิบประมาณ 350 กรัมต่อที่ และรวมเปลือกที่รับประทานด้วย"
+    },
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "fi": "0a81021947fda83c84545f3e7d37fab106750f8aaa3f3930d7b3d30ba96f5b99",
+        "en": "554c1939e6321c636b0557e148f760889a2cd7ad0f91c81c3886ef4747fffcf0",
+        "sv": "dabe0ca9d5ecf4eca08dd0840e9a6f6b078fda8d640f25303ae81f9dd830d462",
+        "th": "9f0e5dec6fc9d2cc8903ec69204df0177efae23f6a559b6893b1a22c6f79401a"
+      },
+      "compositionMatches": [
+        {
+          "index": 0,
+          "edibleEvidence": "Weight represents the edible charged input in the explicitly stated preparation.",
+          "retentionEvidence": "All edible food added to the batter or soup is included as weighed. This ingredient-input scenario does not measure cooked yield or nutrient change.",
+          "state": "Whole raw orange-fleshed sweet potato with edible skin",
+          "matchEvidence": "FSANZ AUSNUT 2023 key F010942 Survey ID 24302023 reports 13.2 g directly available carbohydrate per 100 g for raw unpeeled orange-fleshed sweet potato with edible portion 1. The carbohydrate value was imputed from matched orange-fleshed peeled ingredients; moisture and fibre come from a national analysis of unpeeled specimens. The original 1,400 g is weighed raw with washed skins, cut into halves and roasted. The model scopes eating cooked skins and divides four equal input masses. It does not substitute a baked-per-100-g value on the raw weight.",
+          "record": {
+            "id": "ausnut-2023-F010942",
+            "name": "Sweet potato, orange flesh, unpeeled, raw",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/ausnut/data-files",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ AUSNUT 2023 published direct nutrient profiles",
+            "state": "Whole raw orange-fleshed sweet potato with edible skin",
+            "basis": "per100g-edible",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "Use the explicitly reported 'Available carbohydrate, without sugar alcohols (g)' on Food nutrient profiles row 3084. Same rounded with/without results do not independently establish aggregate polyols.",
+            "per100g": {
+              "carbohydrate": 13.2,
+              "fibre": 2.7,
+              "polyols": null,
+              "protein": 1.4,
+              "fat": 0.2
+            }
+          },
+          "edibleFraction": 1
+        },
+        {
+          "index": 3,
+          "edibleEvidence": "Weight represents the edible charged input in the explicitly stated preparation.",
+          "retentionEvidence": "All edible food added to the batter or soup is included as weighed. This ingredient-input scenario does not measure cooked yield or nutrient change.",
+          "state": "Raw red chilli, edible portion",
+          "matchEvidence": "AFCD F002901 direct available carbohydrate for raw red chilli, currently used as the mild red chilli reference. The 10 g refers to the quantity sliced and served.",
+          "record": {
+            "id": "afcd-F002901-release-3",
+            "name": "Chilli (chili), red, raw",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002901",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "state": "Raw red chilli, edible portion",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "AFCD states available carbohydrate without sugar alcohols independently. No aggregate polyol value was established.",
+            "per100g": {
+              "carbohydrate": 4.8,
+              "fibre": 7.2,
+              "polyols": null,
+              "protein": 1.4,
+              "fat": 0.7
+            }
+          }
+        },
+        {
+          "index": 4,
+          "edibleEvidence": "Weight represents the edible charged input in the explicitly stated preparation.",
+          "retentionEvidence": "All edible food added to the batter or soup is included as weighed. This ingredient-input scenario does not measure cooked yield or nutrient change.",
+          "state": "Raw spring onion edible bulb and green stems",
+          "matchEvidence": "AFCD F006250 is the edible bulb and stem basis. The scope uses 20 g trimmed edible fresh spring onion.",
+          "record": {
+            "id": "afcd-F006250-release-3",
+            "name": "Onion, spring, fresh, raw",
+            "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250",
+            "retrievedAt": "2026-11-18",
+            "licence": "FSANZ Australian Food Composition Database Release 3; CC BY-SA 3.0 Australia",
+            "state": "Raw spring onion edible bulb and green stems",
+            "basis": "per100g-as-sold",
+            "carbohydrateDefinition": "EU_AVAILABLE",
+            "polyolsSourceVerified": false,
+            "polyolsEvidence": "AFCD states available carbohydrate without sugar alcohols independently. No aggregate polyol value was established.",
+            "per100g": {
+              "carbohydrate": 4.6,
+              "fibre": 1.9,
+              "polyols": null,
+              "protein": 1.7,
+              "fat": 0.2
+            }
+          }
+        },
+        {
+          "index": 5,
+          "matchEvidence": "Fineli #385 reference for dry whole unhulled sesame, 0.9 g available per 100 g and 8.5 g/tablespoon. The black cultivar is not distinguished in Fineli. Thai FCD C128 oven-dried black sesame reports a different 2.75 g by difference which would change the whole estimate by 0.02 g, so this component's limited variation is not a dominant uncertainty."
+        }
+      ]
+    }
+  },
+  "paahtopaistileivat-kauralesesampyloilla": {
+    "recipeBindingSha256": "ef2963a6dbd170a02784db7b238bb13fade4759035926f0b0818111553233507",
+    "preparationSha256": "7a2ece10da4715fef555167f8fa92b51c9402fde31c820ef86d1de19d1464c55",
+    "nutritionSha256": "c4cd6d0fbed40bc820320da72d0a3b71f37ebf3830a8e6128f99fe91631892c0",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/a9fb21b71cd1ca0c75010ce95deb1cbf85f47937/docs/nutrition/estimates-2026-10-24-batch-9.md",
+    "reviewedAt": "2026-11-18",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/a9fb21b71cd1ca0c75010ce95deb1cbf85f47937/docs/nutrition/estimates-2026-10-24-batch-9.md",
+    "reasoning": "The linked bun batch yields eight, and the sandwich recipe uses two cooled baked buns for four servings. For the Batch9 ingredients including 8 g of sesame seeds in the batch, the available carbohydrate in a half bun is 1.59528125 g. Source records use direct available carbohydrate and no GF, macro or GK change.",
+    "condition": {
+      "fi": "Yhden annoksen puolikkaassa kauralesesämpylässä on arviolta 1,6 g imeytyvää hiilihydraattia, kun taikina jaetaan kahdeksaan ja pinnalle käytetään yhteensä 8 g seesaminsiemeniä. Täytteet tuovat lisää hiilihydraattia.",
+      "en": "The half oat bran roll contributes about 1.6 g of available carbohydrate when the dough is divided into eight rolls and topped with 8 g of sesame seeds in total. The toppings add carbohydrate.",
+      "sv": "En halv havreklifralla ger cirka 1,6 g tillgängliga kolhydrater när degen delas i åtta frallor som toppas med sammanlagt 8 g sesamfrön. Påläggen bidrar med ytterligare kolhydrater.",
+      "th": "ขนมปังรำข้าวโอ๊ตครึ่งชิ้นให้คาร์โบไฮเดรตที่ย่อยได้ประมาณ 1.6 กรัม เมื่อแบ่งแป้งเป็นแปดชิ้นและโรยงารวม 8 กรัม เครื่องหน้าให้คาร์โบไฮเดรตเพิ่มเติม"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "2e1cac62d62d00e8b3681bf1b700450d892e144202d9cf9c2b0f55a5a9481171",
+      "unit": "kpl",
+      "labels": {
+        "fi": "Valmis kauralesesämpylä",
+        "en": "Prepared oat bran roll",
+        "sv": "Färdig havreklifralla",
+        "th": "ขนมปังรำข้าวโอ๊ตที่อบแล้ว"
+      }
+    }
+  },
+  "doner-kebab": {
+    "recipeBindingSha256": "53cbfdcdbe37734600f8c70866f959592a70232fddb1777601742158d403a455",
+    "preparationSha256": "2864026fabbb694c2b9bd050691dd8de800825d296f08cb691797bdea80b96fa",
+    "nutritionSha256": "ff6b1682277ff57d820716290982a4f1d0b741aa19ebcf466748642aa8dcadc6",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1079/BJN20051594",
+    "publicSource": "https://doi.org/10.1079/BJN20051594",
+    "reasoning": "Four named 60 g Tesco White Plain pitas from ambient, heated 1–2 min per pack, supply the four original portions. Each is filled with the corresponding share of the 17% beef, meat liquid, yogurt sauce and the specified dressed cabbage salad. Henry et al. 2005 Table 2 row 9 tested regular white Value pitta (GI 69 ±20 SEM, n=10, glucose). Current Tesco identity/category and ordinary portion size are fixed by the release; the trial does not establish identity with current formulation or toaster duration. The GK model uses Fineli 1056 as the explicitly scoped composition proxy: 27.648 g available carb per 60 g pita and 19.07712 of GK 20.65587. The owner-approved numerical output and high class stay scoped to the named recipe; no SEM-derived range.",
+    "condition": {
+      "fi": "Yksi annos sisältää yhden 60 g:n Tesco White Plain -pitaleivän. Lämmitä se leivänpaahtimessa 1–2 minuuttia. Leivän GK-osuus perustuu tutkimuksessa testattuun tavalliseen valkoiseen pitaleipään.",
+      "en": "One serving includes one 60 g Tesco White Plain pitta, toasted for 1–2 minutes. Its GL contribution uses a study of regular white pitta.",
+      "sv": "En portion innehåller ett Tesco White Plain-pitabröd på 60 g som värms i brödrost i 1–2 minuter. Brödets bidrag till GL bygger på en studie av vanligt vitt pitabröd.",
+      "th": "หนึ่งที่ใช้ขนมปังพิต้าขาว Tesco White Plain 1 แผ่น หนัก 60 กรัม อุ่นในเครื่องปิ้งขนมปัง 1–2 นาที ค่า GL ส่วนของขนมปังอ้างอิงจากพิต้าขาวขนาดปกติที่ทดสอบในงานวิจัย"
+    }
+  },
+  "pohjoisafrikkalainen-lablabi": {
+    "recipeBindingSha256": "5cc46aa239acedb8d3fa811281d5e5f9cf095c7d038bfedc72c56939b83dda29",
+    "preparationSha256": "da634cc79ed166c912220bf9825f086cb60876f983fc4576443828314faa36bc",
+    "nutritionSha256": "27246cd252537602ca6395b6ca4c96c4085679532fb6ab1bf086eecfd473f903",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1079/BJN20051594",
+    "publicSource": "https://doi.org/10.1079/BJN20051594",
+    "reasoning": "A two-serving batch contains 100 g ready-made white pita, 100 g cooked drained chickpeas, two eggs and 700 g ready-to-use chicken stock, with all the bread and soup divided equally. Recipe gives no brand. Sealed evidence uses Fineli 1056 (23.04 g available CHO per 50 g of pita) and pita-white68-r4. Atkinson 2021 Supplemental Table 1 row 347 reproduces Henry et al. 2005 Table 2 row 8, white mini pitta GI 68 ±5 SEM, glucose, n=10. This is an analogue for the soup ingredient; bread is cut up then served underneath the hot soup, and no mixed dish was measured. Its contribution is 15.6672 of 19.12945. Preserve the existing point and medium category for the whole scoped bowl, including all 50 g of bread.",
+    "condition": {
+      "fi": "Yhteen annokseen tulee 50 g valmista valkoista pitaleipää. Paloittele leipä kulhoon ja lisää sen päälle kuuma kikhernekeitto ja kananmuna. Leivän GK-osuus käyttää valkoisen minipitan tutkimusarvoa.",
+      "en": "One serving uses 50 g of ready-made white pitta. Tear the bread into the bowl and add the hot chickpea soup and egg. The bread’s GL contribution uses a study value for mini white pitta.",
+      "sv": "En portion innehåller 50 g färdigt vitt pitabröd. Dela brödet i skålen och tillsätt den varma kikärtssoppan och ägget. Brödets bidrag till GL bygger på ett studievärde för vitt minipitabröd.",
+      "th": "หนึ่งที่ใช้ขนมปังพิต้าขาวสำเร็จรูป 50 กรัม ฉีกใส่ชามแล้วเติมซุปถั่วชิกพีร้อนกับไข่ ค่า GL ส่วนของขนมปังใช้ค่าจากงานวิจัยพิต้าขาวขนาดเล็ก"
+    }
+  },
+  "lohikeitto-kuohukermalla": {
+    "recipeBindingSha256": "015d6ad16c1d520028568aa3d92ef5654a3ccdb17ce442cbba1b077e89545ba5",
+    "preparationSha256": "8743b77e2ac9255da7641129207bbb0a94beeb525cbb653c05caeb7cd1a59751",
+    "nutritionSha256": "7d1415ab7f26ac878b588eeff2219e59c29f1c40aa5ea779a6bf8a18fc2d44b4",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1079/BJN20051571",
+    "publicSource": "https://doi.org/10.1079/BJN20051571",
+    "reasoning": "The approved water-without-stock recipe uses 360 g peeled raw potato in four servings, retains all liquid, and names no variety. Fineli raw potato composition supplies 13.95 g available CHO per portion. The approved current GI 66 is a LOW analogue for an unspecified boiled potato recorded in gk80 release 7 (Atkinson 2021 row cited by the reviewed registry). It contributes GK 9.207, about 88% of 10.457325. Fixed-other modeled contributions give cutoff GI 62.72168 for GK 10. Henry et al. 2005 Table 1 demonstrates measured freshly boiled Marfona GI 56 and Nicola GI 59 and several varieties above 66 in the same 50 g CHO/glucose protocol. Pure internal sensitivity gives 9.062325 or 9.480825, not a second estimate, range or a substitution recommendation. The independent evidence defeats an unconditional class for the unknown variety; leave locked point and carbohydrate untouched.",
+    "condition": {
+      "fi": "Yhteen annokseen käytetään 90 g kuorittua raakaa perunaa. Peruna keitetään keitossa, ja liemi kuuluu annokseen. GK-arvio käyttää erikseen keitetyn perunan tutkimusarvoa.",
+      "en": "One serving uses 90 g of peeled raw potato, boiled in the soup. The serving includes the cooking liquid. The GL estimate uses a study value for separately boiled potato.",
+      "sv": "En portion innehåller 90 g skalad rå potatis som kokas i soppan. Kokvätskan ingår. GL-uppskattningen bygger på ett studievärde för potatis som kokats separat.",
+      "th": "หนึ่งที่ใช้มันฝรั่งดิบปอกเปลือก 90 กรัมต้มในซุป และรวมน้ำซุปในหนึ่งที่ ค่าประมาณ GL ใช้ค่าจากงานวิจัยที่ต้มมันฝรั่งแยก"
+    },
+    "classLimitation": {
+      "fi": "Arvio on lähellä matalan ja keskisuuren GK:n rajaa. Luokkaa ei näytetä, koska tutkimuksissa keitetyn perunan GI vaihtelee lajikkeen mukaan eikä ohjeessa nimetä lajiketta.",
+      "en": "The estimate is close to the boundary between low and medium GL. The class is withheld because studies found different GI values for different boiled potato varieties and the recipe leaves the variety open.",
+      "sv": "Uppskattningen ligger nära gränsen mellan låg och medelhög GL. Ingen klass visas eftersom studier har funnit olika GI för olika kokta potatissorter och receptet inte anger någon sort.",
+      "th": "ค่าประมาณอยู่ใกล้เส้นแบ่งระหว่าง GL ต่ำกับปานกลาง จึงไม่แสดงระดับ GL เพราะงานวิจัยพบว่ามันฝรั่งต้มต่างพันธุ์มีค่า GI ต่างกัน และสูตรไม่ได้ระบุพันธุ์"
+    }
+  },
+  "tortilla-de-patatas": {
+    "recipeBindingSha256": "f0feaeccec89e5db04afe0534166842f7479eac66dd7dae26f8ae2e07bb11693",
+    "preparationSha256": "378dbb4c8dff381f9432a4422833450bcdad598bcb73f67e65da0868697c10e6",
+    "nutritionSha256": "99747866d1788ded0aacf72705e271ad3316a1f0c71b9b80013f2420dd7d793c",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1079/BJN20051571",
+    "publicSource": "https://doi.org/10.1079/BJN20051571",
+    "reasoning": "Recipe uses 600 g peeled raw potato across four servings, first boiled and drained, then added to eggs and finished until set. Potato GI66 from gk80 release 7 is the existing LOW analogue, not a measured mixed tortilla. Potato supplies 23.25 g available CHO and 15.345 GK (97.39% of GK 15.756875); fixed-other cutoff GI is 84.25 for GK 20. Henry et al. 2005 Table 1 used matched glucose and 50 g CHO, freshly boiled peeled quartered varieties, reports Maris Piper 85 and Maris Peer 94 alongside others below the threshold; using only as internal sensitivity gives 20.174375 and 22.266875. The recipe specifies no potato variety and a subsequent cooking step, and the figures are not a recipe range or usable replacement. The evidence supports withholding the class while preserving the existing approved scoped figures.",
+    "condition": {
+      "fi": "Yhteen annokseen käytetään 150 g kuorittua raakaa perunaa. Ohjeessa perunat keitetään ensin ja valutetaan ennen paistamista munaseoksessa. GK-arvio käyttää keitetyn perunan tutkimusarvoa.",
+      "en": "One serving uses 150 g of peeled raw potato. The recipe boils and drains the potatoes before finishing them in the egg mixture. The GL estimate uses a study value for boiled potato.",
+      "sv": "En portion innehåller 150 g skalad rå potatis. Potatisen kokas och får rinna av innan den tillagas färdigt i äggblandningen. GL-uppskattningen bygger på ett studievärde för kokt potatis.",
+      "th": "หนึ่งที่ใช้มันฝรั่งดิบปอกเปลือก 150 กรัม สูตรให้ต้มและสะเด็ดน้ำก่อนนำไปปรุงต่อกับไข่ ค่าประมาณ GL ใช้ค่าจากงานวิจัยมันฝรั่งต้ม"
+    },
+    "classLimitation": {
+      "fi": "GK-luokkaa ei näytetä, koska ohjeessa ei nimetä perunalajiketta ja tutkimuksissa lajikkeiden GI-arvot vaihtelevat.",
+      "en": "The GL class is withheld because the recipe leaves the potato variety open and studies have found different GI values for different varieties.",
+      "sv": "Ingen GL-klass visas eftersom receptet inte anger en potatissort och studier har funnit olika GI för olika sorter.",
+      "th": "ไม่แสดงระดับ GL เพราะสูตรไม่ได้ระบุพันธุ์มันฝรั่ง และงานวิจัยพบว่าค่า GI แตกต่างกันตามพันธุ์"
     }
   }
 }

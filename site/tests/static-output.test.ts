@@ -169,6 +169,17 @@ test("standalone carbohydrate and source warnings follow reviewed quantities and
         assert.equal([...rendered.matchAll(/data-ingredient-carb-alternative=/g)].length,
           review.ingredientPortion?.carbohydrateAlternatives?.length ?? 0, routePath);
       }
+      if (id === "porkkanaletut") {
+        assert.ok(rendered.indexOf(review.condition![locale]) < rendered.indexOf('data-portion-carbohydrate="available"'), routePath);
+        assert.match(rendered, /data-ingredient-carbohydrate="declared"/, routePath);
+        assert.match(rendered, /href="https:\/\/apetit\.fi\/tuotteet\//, routePath);
+        assert.match(rendered, /href="https:\/\/www\.matvaretabellen\.no\/en\/carrot-cooked\//, routePath);
+        assert.ok(rendered.includes(portionCopy[locale].declaredIngredientCarbsSource), routePath);
+      }
+      if (id === "piparkakkulatte-hunajalla" && locale === "en") {
+        assert.match(rendered, /Beat again briefly\./, routePath);
+        assert.doesNotMatch(rendered, /Vatkaa vielä hetki/, routePath);
+      }
     }
   }
 
@@ -192,7 +203,8 @@ test("preparation and optional-side evidence stays visibly scoped", async () => 
   for (const id of ["gazpacho", "medu-vada", "marjakiisseli-vaniljakastikkeella", "malesialainen-mee-goreng-aamunuudeleilla",
     "pannacotta-marjakastikkeella", "lahi-ita-kikhernejauho-yrttilettu", "kantonilainen-hoyrytetty-kala",
     "larb-moo-vhh", "pohjoisafrikkalainen-kuskus-aamiaiskulho", "ropa-vieja", "amritsari-kala", "kiinalainen-hirssipuuro-taateleilla",
-    "lihapullat-kermakastikkeessa-vhh", "jauhelihakastike-kesakurpitsanuudeleilla", "kanakorma-kukkakaaliriisilla"]) {
+    "lihapullat-kermakastikkeessa-vhh", "jauhelihakastike-kesakurpitsanuudeleilla", "kanakorma-kukkakaaliriisilla",
+    "lohikeitto-kuohukermalla", "tortilla-de-patatas"]) {
     assert.equal(glycemicLoadFilterCategories[id], undefined, id);
     for (const { locale, routePath } of siteContent.recipes.filter(recipe => recipe.recipeId === id)) {
       const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
@@ -200,6 +212,15 @@ test("preparation and optional-side evidence stays visibly scoped", async () => 
       assert.match(rendered, /data-portion-gk=/, routePath);
       assert.ok(rendered.includes(reviews[id].condition![locale]), routePath);
       if (reviews[id].classLimitation) assert.ok(rendered.includes(reviews[id].classLimitation[locale]), routePath);
+    }
+  }
+  for (const [id, classification] of [["doner-kebab", "high"], ["pohjoisafrikkalainen-lablabi", "medium"]] as const) {
+    assert.equal(glycemicLoadFilterCategories[id], classification, id);
+    for (const { locale, routePath } of siteContent.recipes.filter(recipe => recipe.recipeId === id)) {
+      const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+      const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+      assert.match(rendered, /data-portion-gk=/, routePath);
+      assert.ok(rendered.includes(reviews[id].condition![locale]), routePath);
     }
   }
 });
@@ -235,6 +256,9 @@ test("a fresh egg pasta reference estimate stays scoped to the uncooked ingredie
   assert.match(html, /data-ingredient-portion=/);
   assert.match(html, /Tuore kananmunafettuccine ennen keittämistä/);
   assert.match(html, /Luku koskee tuoretta kananmunapastaa/);
+  assert.match(html, /Koko annoksen arvioon tarvitaan valutetun pastan paino/);
+  assert.match(html, /href="https:\/\/fineli\.fi\/fineli\/fi\/elintarvikkeet\/31256"/);
+  assert.match(html, /href="https:\/\/fineli\.fi\/fineli\/fi\/elintarvikkeet\/31257"/);
   assert.doesNotMatch(html, /data-portion-carbohydrate=|data-portion-gk=/);
 });
 

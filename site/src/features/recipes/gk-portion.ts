@@ -23,6 +23,7 @@ export interface IngredientPortion {
   name: LocalizedText;
   amountPerServing: number;
   unit: "g" | "kpl" | "arkkia";
+  source?: string;
   availableCarbsGPerServing?: number;
   declaredCarbsGPerServing?: number;
   carbohydrateAlternatives?: CarbohydrateChoice[];

@@ -252,6 +252,10 @@ test("reviewed standalone composition uses its pinned historical input without r
     ["makea-banaanimunakas", "aamupalat", 32.43],
     ["piparkakkulatte-hunajalla", "aamupalat", 15.75],
     ["paahtopaistileipa-piparjuurikastikkeella", "alkuruoat", 22.7],
+    ["porkkanaletut", "paaruoat", 51.03],
+    ["kookos-linssikeitto", "paaruoat", 29.87],
+    ["papu-myskikurpitsapelti", "paaruoat", 24.22],
+    ["uunibataatit-fetalla", "paaruoat", 47.01],
   ] as const) {
     const markdown = await readFile(path.join(root, "reseptit", category, id + ".md"), "utf8");
     const review = reviews[id];
@@ -266,7 +270,18 @@ test("reviewed standalone composition uses its pinned historical input without r
     const { compositionMatches } = review.wholeCarbohydrateOnly!;
     const match = compositionMatches![0];
     await assert.rejects(projectPortionEvidence(root, id, markdown, {
+      ...review, wholeCarbohydrateOnly: { compositionMatches: [Object.assign({}, match, { amount: 999 })] },
+    }), /cannot change the recipe quantity/);
+    await assert.rejects(projectPortionEvidence(root, id, markdown, {
       ...review, wholeCarbohydrateOnly: { compositionMatches: [match, match] },
     }), /invalid reviewed portion composition indices/);
+    if (id === "porkkanaletut") {
+      assert.equal(portion.ingredientPortion?.declaredCarbsGPerServing, 7.125);
+      assert.match(portion.ingredientPortion?.source ?? "", /^https:\/\/apetit\.fi\//);
+      const unbounded = structuredClone(review);
+      const oil = unbounded.wholeCarbohydrateOnly!.compositionMatches!.find(row => row.excludedReason)!;
+      oil.omissionImpactUpperBoundPerServing!.totalCarbohydrate = 0.1;
+      await assert.rejects(projectPortionEvidence(root, id, markdown, unbounded), /requires evidence for every ingredient/);
+    }
   }
 });

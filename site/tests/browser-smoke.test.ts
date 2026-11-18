@@ -517,6 +517,13 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.match(await loafPortion.innerText(), /21,2 g[\s\S]+20,7 g[\s\S]+6,6 g[\s\S]+6,1 g/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);
 
+    await page.goto(base + routeFor("porkkanaletut"));
+    const carrotPortion = page.locator(".recipe-portion");
+    assert.match(await carrotPortion.innerText(), /kotitekoista sosetta[\s\S]+51 g[\s\S]+7,1 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await carrotPortion.innerText(), /76,5 g[\s\S]+10,7 g/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+
     await page.goto(base + routeFor("briossisampylat-joshua-weissman"));
     assert.match(await page.locator('[data-gk-status="QUALITATIVE"]').innerText(), /Suuri arvioitu GK/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);

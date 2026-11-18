@@ -16,6 +16,8 @@ export const portionCopy = {
     ingredientAmount: "Ainesosan määrä ohjeen mukaan",
     ingredientCarbs: "Imeytyvät hiilihydraatit tästä aineksesta",
     declaredIngredientCarbs: "Hiilihydraatit tästä aineksesta pakkauksen mukaan",
+    ingredientCarbsSource: "Ainesosaluvun lähde",
+    declaredIngredientCarbsSource: "Pakkaustiedon lähde",
     alternatives: "Lasketut GK-vaihtoehdot tässä annoksessa",
     versionAlternatives: "GK nuudelivalinnan mukaan, yksi erillisversion annos",
     scopeSource: "Katso arvion tai ruokakohtaisen huomion lähde",
@@ -40,6 +42,8 @@ export const portionCopy = {
     ingredientAmount: "Ingredient amount from the recipe",
     ingredientCarbs: "Available carbohydrate in this ingredient",
     declaredIngredientCarbs: "Labelled carbohydrate in this ingredient",
+    ingredientCarbsSource: "Ingredient estimate source",
+    declaredIngredientCarbsSource: "Package information source",
     alternatives: "Calculated GL alternatives for this portion",
     versionAlternatives: "GL by noodle choice for one serving of this version",
     scopeSource: "See the source for this estimate or ingredient note",
@@ -64,6 +68,8 @@ export const portionCopy = {
     ingredientAmount: "Mängd av ingrediensen enligt receptet",
     ingredientCarbs: "Tillgängliga kolhydrater i den här ingrediensen",
     declaredIngredientCarbs: "Kolhydrater i ingrediensen enligt förpackningen",
+    ingredientCarbsSource: "Källa för ingrediensvärdet",
+    declaredIngredientCarbsSource: "Källa för förpackningsuppgiften",
     alternatives: "Beräknade GL-alternativ för den här portionen",
     versionAlternatives: "GL efter nudelval för en portion av den här versionen",
     scopeSource: "Se källan till uppskattningen eller råvaruuppgiften",
@@ -88,6 +94,8 @@ export const portionCopy = {
     ingredientAmount: "ปริมาณวัตถุดิบตามสูตร",
     ingredientCarbs: "คาร์โบไฮเดรตที่ใช้ได้จากวัตถุดิบนี้",
     declaredIngredientCarbs: "คาร์โบไฮเดรตจากวัตถุดิบนี้ตามฉลาก",
+    ingredientCarbsSource: "แหล่งข้อมูลของวัตถุดิบ",
+    declaredIngredientCarbsSource: "แหล่งข้อมูลบนฉลาก",
     alternatives: "ค่า GL ที่คำนวณได้สำหรับแต่ละตัวเลือกในส่วนนี้",
     versionAlternatives: "ค่า GL ตามชนิดเส้นสำหรับหนึ่งที่ของสูตรเวอร์ชันนี้",
     scopeSource: "ดูแหล่งข้อมูลของค่าประมาณหรือข้อสังเกตเรื่องวัตถุดิบ",
@@ -152,7 +160,11 @@ export function IngredientPortionDetails({ ingredient, locale, multiplier = 1 }:
     </div>
     {carbohydrate !== undefined ? <div data-ingredient-carbohydrate={declared ? "declared" : "available"}>
       <dt>{declared ? t.declaredIngredientCarbs : t.ingredientCarbs}</dt>
-      <dd>{t.about} {formatCarbs(carbohydrate * multiplier, locale)} {gram}</dd>
+      <dd>{t.about} {formatCarbs(carbohydrate * multiplier, locale)} {gram}
+        {ingredient.source ? <> · <a href={ingredient.source} rel="noopener noreferrer">
+          {declared ? t.declaredIngredientCarbsSource : t.ingredientCarbsSource}
+        </a></> : null}
+      </dd>
     </div> : null}
     {ingredient.carbohydrateAlternatives ? <div data-ingredient-carbohydrate="available-alternatives">
       <dt>{t.ingredientCarbs}</dt>
@@ -196,7 +208,7 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batc
   const t = portionCopy[locale];
   const format = new Intl.NumberFormat(locale).format;
   const ingredient = evidence?.driver && recipe.ingredients[evidence.driver.ingredientIndex]?.item;
-  const preparationScope = carbs?.choices && evidence?.condition?.[locale];
+  const preparationScope = carbs && (carbs.choices || evidence?.ingredientPortion?.source) && evidence?.condition?.[locale];
   return <div className="recipe-portion">
     {onChange ? <div className="recipe-portion__control">
       <label htmlFor="eaten-recipe-portion">{t.title}</label>

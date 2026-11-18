@@ -109,6 +109,11 @@ Annosarvion uudet ainesosien koostumustiedot tallennetaan
 laskentatiedostoon ja ainesosariviin. Näin annosnäkymä voi käyttää
 tarkempaa lähdettä tai korjattua pakkausarvon määritelmää. Reseptin
 ravintotiedot ja GK-hyväksyntä käyttävät edelleen omia laskenta-aineistojaan.
+Jos lähde tarkentaa tilavuuden painoksi, syötävää osaa tai paistohävikkiä,
+annosarvio liittää perustelun samaan ainesosariviin. Ohjeen ainesosa,
+yksikkö ja määrä tulevat alkuperäisestä reseptistä. Koko annoksen arvio
+voi sivuuttaa esimerkiksi pannulle jäävän rasvan, jos poisjätön
+hiilihydraattimäärän yläraja on lähteen perusteella nolla.
 Kun saman ainesosan valmistustavoille on lähteistetyt koostumustiedot,
 koko annos lasketaan jokaiselle vaihtoehdolle erikseen. Nimetyt luvut ja
 niiden lähteet näkyvät reseptissä ja oppaassa. Annosvalinta skaalaa

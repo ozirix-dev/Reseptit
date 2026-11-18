@@ -16,6 +16,9 @@ interface ReviewedRecipeCopy {
 // Display-only edits. Canonical ingredients, release evidence and calculation inputs
 // stay in their source files. Edits match the approved display text before this pass.
 const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
+  "piparkakkulatte-hunajalla/en": {
+    method: [["Vatkaa vielä hetki.", "Beat again briefly."]],
+  },
   "ananas-kanelijuoma-sitruunalla/fi": {
     "notes": [
       ["Vesimäärä ja mieto kaneliannos ovat tämän version mitoituksia.", "Vesimäärä ja pieni kanelimäärä on valittu tätä versiota varten."],
