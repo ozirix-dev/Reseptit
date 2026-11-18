@@ -81,4 +81,3 @@ pannukakku, jonka muistio on jo sidottu nykyisiin reseptitavuihin.
 Lähteiden sitominen ja valmistustapaa vastaava GK-näyttö ovat
 eri hyväksyntöjä. Aiemman netto-HH-tiedon voi säilyttää näiden
 katselmointien ajan lähde- ja tuoterajauksineen.
-
