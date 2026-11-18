@@ -4183,10 +4183,10 @@
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/7579b3c5e028e2a3dc7ab14e6fa8c1e89b003bfd/docs/nutrition/calculations/kantonilainen-hoyrytetty-kala.json",
     "reasoning": "Recipe step 5 explicitly serves fish with lime and rice. Unquantified rice is absent from both approved models; the measured lime garnish has composition but its GI contribution is omitted, as are ginger and soy sauce. This one-fourth plate estimate therefore excludes rice. Source-reference low confidence and tracked 0.9855 g omission already hide the low badge and filter.",
     "condition": {
-      "fi": "Arvio koskee yhtä neljäsosaa höyrytetystä kalasta ohjeen mausteineen. Tarjoiluun ehdotettu riisi ei sisälly GK-arvioon eikä annoksen hiilihydraattimäärään.",
-      "en": "The estimate covers one quarter of the steamed fish with the recipe’s seasonings. The rice suggested for serving is excluded from both the GL estimate and the serving’s carbohydrate amount.",
-      "sv": "Uppskattningen gäller en fjärdedel av den ångade fisken med kryddningen enligt receptet. Riset som föreslås till servering ingår varken i GL-uppskattningen eller i portionens kolhydratmängd.",
-      "th": "ค่าประมาณนี้ใช้กับปลานึ่งพร้อมเครื่องปรุงตามสูตรหนึ่งในสี่ส่วน ข้าวที่แนะนำให้เสิร์ฟคู่กันไม่รวมอยู่ในค่าประมาณ GL หรือปริมาณคาร์โบไฮเดรตต่อหนึ่งที่"
+      "fi": "Arvio koskee yhtä neljäsosaa höyrytetystä kalasta ohjeen mausteineen. Tarjoiluun ehdotettu riisi ei sisälly GK-arvioon eikä annoksen hiilihydraattimäärään. GK-luku muodostuu kevätsipulista, jolle käytetään kasvisten GI-keskiarvoa.",
+      "en": "The estimate covers one quarter of the steamed fish with the recipe’s seasonings. The rice suggested for serving is excluded from both the GL estimate and the serving’s carbohydrate amount. The GL estimate comes from the spring onion, using the average GI for vegetables.",
+      "sv": "Uppskattningen gäller en fjärdedel av den ångade fisken med kryddningen enligt receptet. Riset som föreslås till servering ingår varken i GL-uppskattningen eller i portionens kolhydratmängd. GL-uppskattningen bygger på vårlöken och ett genomsnittligt GI för grönsaker.",
+      "th": "ค่าประมาณนี้ใช้กับปลานึ่งพร้อมเครื่องปรุงตามสูตรหนึ่งในสี่ส่วน ข้าวที่แนะนำให้เสิร์ฟคู่กันไม่รวมอยู่ในค่าประมาณ GL หรือปริมาณคาร์โบไฮเดรตต่อหนึ่งที่ ค่าประมาณ GL มาจากต้นหอม โดยใช้ค่า GI เฉลี่ยของผัก"
     }
   },
   "larb-moo-vhh": {
@@ -4197,10 +4197,10 @@
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/7579b3c5e028e2a3dc7ab14e6fa8c1e89b003bfd/docs/nutrition/glycemic-load-pilot-input.json#L2256",
     "reasoning": "The exact legacy input lists just 8 g toasted rice powder (Fineli #182 plain rice flour as composition analogue, rice-group GI 67) and 250 g white cabbage. The powder accounts for GK 1.06262 (34.00% of 3.12512), cabbage 2.0625. The recipe declares 9 g optional powder, with 200 g cucumber for serving and other ingredients absent from the legacy GK input. There is no bound separate modern nutrition calculation and legacy front matter 9.61 g is explicitly total. Legacy zero omission means no flagged omitted rows among the two modeled ingredients, not zero carbohydrate in the remainder. Preserve legacy numeric provenance while suppressing unsupported whole-serving low badge and filter. Do not calculate either the flour-free preparation or the updated 9 g version from these data.",
     "condition": {
-      "fi": "Yhden annoksen GK-luku perustuu 2 grammaan paahdettua riisijauhetta ja noin 63 grammaan valkokaalia. Ohjeen neljälle annokselle on merkitty 9 g valinnaista riisijauhetta. Tarjoilukurkku jää GK-laskelman ulkopuolelle.",
-      "en": "The GL estimate for one serving uses 2 g of roasted rice powder and about 63 g of white cabbage. The recipe lists 9 g of optional rice powder for four servings. The GL calculation excludes the cucumber served with the dish.",
-      "sv": "GL-uppskattningen för en portion bygger på 2 g rostat rispulver och cirka 63 g vitkål. Receptet anger 9 g valfritt rispulver för fyra portioner. Gurkan som serveras till ingår inte i GL-beräkningen.",
-      "th": "ค่า GL ต่อหนึ่งที่คำนวณจากผงข้าวคั่ว 2 กรัมและกะหล่ำปลีขาวประมาณ 63 กรัม สูตรสำหรับ 4 ที่ระบุผงข้าวคั่ว 9 กรัมที่เลือกใส่ได้ แตงกวาที่เสิร์ฟคู่กันไม่รวมในการคำนวณ GL"
+      "fi": "Yhden annoksen GK-luku perustuu 2 grammaan paahdettua riisijauhetta ja noin 63 grammaan valkokaalia. Ohjeen neljälle annokselle on merkitty 9 g valinnaista riisijauhetta. Tarjoilukurkku jää GK-laskelman ulkopuolelle. Valkokaalille käytetään kasvisten GI-keskiarvoa ja riisijauheelle riisiryhmän keskiarvoa. Riisijauheen koostumusviite on tavallinen riisijauho.",
+      "en": "The GL estimate for one serving uses 2 g of roasted rice powder and about 63 g of white cabbage. The recipe lists 9 g of optional rice powder for four servings. The GL calculation excludes the cucumber served with the dish. The white cabbage uses the average GI for vegetables and the toasted rice powder uses the average for rice. Plain rice flour is the composition reference for the powder.",
+      "sv": "GL-uppskattningen för en portion bygger på 2 g rostat rispulver och cirka 63 g vitkål. Receptet anger 9 g valfritt rispulver för fyra portioner. Gurkan som serveras till ingår inte i GL-beräkningen. Vitkålen beräknas med genomsnittligt GI för grönsaker och det rostade rispulvret med genomsnittet för ris. Sammansättningen för pulvret skattas utifrån vanligt rismjöl.",
+      "th": "ค่า GL ต่อหนึ่งที่คำนวณจากผงข้าวคั่ว 2 กรัมและกะหล่ำปลีขาวประมาณ 63 กรัม สูตรสำหรับ 4 ที่ระบุผงข้าวคั่ว 9 กรัมที่เลือกใส่ได้ แตงกวาที่เสิร์ฟคู่กันไม่รวมในการคำนวณ GL กะหล่ำปลีขาวใช้ค่า GI เฉลี่ยของผัก ส่วนข้าวคั่วใช้ค่าเฉลี่ยของกลุ่มข้าว โดยอ้างอิงองค์ประกอบจากแป้งข้าวเจ้าธรรมดา"
     },
     "classLimitation": {
       "fi": "Koko annoksen GK-luokkaa ei näytetä, koska laskelmassa on mukana vain riisijauhe ja valkokaali.",
@@ -4254,10 +4254,10 @@
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/7579b3c5e028e2a3dc7ab14e6fa8c1e89b003bfd/docs/nutrition/calculations/amritsari-kala.json",
     "reasoning": "Recipe step 6 suggests unweighed mint chutney and lemon wedges. Neither is listed in the exact ingredient accounting or the nutrition source. The fixed estimate uses all 100 g chickpea flour for four portions (AFCD F003986, 9.625 g available CHO per portion) and the measured 15 g batch lemon juice in the coating is within scope but has no GI contribution. Chickpea flour uses legumes category GI 34 and contributes the entire point 3.2725. Tracked 1.61425 g omission already withholds class.",
     "condition": {
-      "fi": "Yhden annoksen laskelmassa on 25 g kikhernejauhoa kalan kuorrutteessa. Hiilihydraattilukuun kuuluu myös taikinan sitruunamehu. Tarjoilun sitruunalohkot ja minttuchutney jäävät arvioiden ulkopuolelle.",
-      "en": "The calculation uses 25 g of chickpea flour in the coating for one serving. The carbohydrate estimate includes the lemon juice in the batter. Both estimates exclude the lemon wedges and mint chutney served on the side.",
-      "sv": "Beräkningen använder 25 g kikärtsmjöl i paneringen per portion. Kolhydratuppskattningen omfattar citronsaften i smeten. Citronklyftorna och mintchutneyn som serveras till ingår inte i uppskattningarna.",
-      "th": "การคำนวณใช้แป้งถั่วชิกพี 25 กรัมต่อหนึ่งที่สำหรับเคลือบปลา ค่าคาร์โบไฮเดรตรวมน้ำเลมอนในแป้ง ค่าประมาณทั้งสองไม่รวมเลมอนหั่นชิ้นและชัทนีย์สะระแหน่ที่เสิร์ฟคู่กัน"
+      "fi": "Yhden annoksen laskelmassa on 25 g kikhernejauhoa kalan kuorrutteessa. Hiilihydraattilukuun kuuluu myös taikinan sitruunamehu. Tarjoilun sitruunalohkot ja minttuchutney jäävät arvioiden ulkopuolelle. GK-luku muodostuu kikhernejauhosta, jolle käytetään palkokasvien GI-keskiarvoa.",
+      "en": "The calculation uses 25 g of chickpea flour in the coating for one serving. The carbohydrate estimate includes the lemon juice in the batter. Both estimates exclude the lemon wedges and mint chutney served on the side. The GL estimate comes from the chickpea flour, using the average GI for legumes.",
+      "sv": "Beräkningen använder 25 g kikärtsmjöl i paneringen per portion. Kolhydratuppskattningen omfattar citronsaften i smeten. Citronklyftorna och mintchutneyn som serveras till ingår inte i uppskattningarna. GL-uppskattningen bygger på kikärtsmjölet och ett genomsnittligt GI för baljväxter.",
+      "th": "การคำนวณใช้แป้งถั่วชิกพี 25 กรัมต่อหนึ่งที่สำหรับเคลือบปลา ค่าคาร์โบไฮเดรตรวมน้ำเลมอนในแป้ง ค่าประมาณทั้งสองไม่รวมเลมอนหั่นชิ้นและชัทนีย์สะระแหน่ที่เสิร์ฟคู่กัน ค่าประมาณ GL มาจากแป้งถั่วลูกไก่ โดยใช้ค่า GI เฉลี่ยของถั่วเมล็ดแห้ง"
     }
   },
   "kiinalainen-hirssipuuro-taateleilla": {
@@ -4289,10 +4289,10 @@
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/d9723205e01dfdde464a9e0abaa1fa8250164de9/docs/nutrition/glycemic-load-pilot-input.json#L2152",
     "reasoning": "The sealed four-serving calculation includes only whipping cream, 300 g from 3 dl split between the mixture and sauce; and 700 g cauliflower (175 g input per portion) boiled, drained and mashed. Fineli 631 and 322 group GI 35 and 66 respectively, contributions 0.76125 and 2.772. Recipe also lists one small onion, 2 tbsp almond flour, 1 dl stock and other rows; optional lingonberries or salad are mentioned. Neither present nor captured by omission accounting. No separate modern calculation JSON. Retain existing numeric as scoped historical output and suppress unsupported whole-serving low classification.",
     "condition": {
-      "fi": "GK-laskelma kattaa neljän annoksen erässä 3 dl kuohukermaa ja 700 g kukkakaalia. Laskelmasta puuttuvat esimerkiksi lihapullien sipuli ja mantelijauho sekä kastikkeen lihaliemi.",
-      "en": "The GL calculation covers 300 ml whipping cream and 700 g cauliflower for four servings. It leaves out the onion and almond flour in the meatballs and the stock in the sauce.",
-      "sv": "GL-beräkningen omfattar 3 dl vispgrädde och 700 g blomkål för fyra portioner. Löken och mandelmjölet i köttbullarna samt buljongen i såsen ingår inte.",
-      "th": "การคำนวณ GL ครอบคลุมวิปปิงครีม 300 มล. และดอกกะหล่ำ 700 กรัมสำหรับ 4 ที่ โดยไม่รวมหอมหัวใหญ่และแป้งอัลมอนด์ในลูกชิ้น รวมถึงน้ำซุปเนื้อในซอส"
+      "fi": "GK-laskelma kattaa neljän annoksen erässä 3 dl kuohukermaa ja 700 g kukkakaalia. Laskelmasta puuttuvat esimerkiksi lihapullien sipuli ja mantelijauho sekä kastikkeen lihaliemi. Kukkakaalille käytetään kasvisten GI-keskiarvoa ja kuohukermalle maitotuotteiden keskiarvoa.",
+      "en": "The GL calculation covers 300 ml whipping cream and 700 g cauliflower for four servings. It leaves out the onion and almond flour in the meatballs and the stock in the sauce. The cauliflower uses the average GI for vegetables and the whipping cream uses the average for dairy products.",
+      "sv": "GL-beräkningen omfattar 3 dl vispgrädde och 700 g blomkål för fyra portioner. Löken och mandelmjölet i köttbullarna samt buljongen i såsen ingår inte. Blomkålen beräknas med genomsnittligt GI för grönsaker och vispgrädden med genomsnittet för mejeriprodukter.",
+      "th": "การคำนวณ GL ครอบคลุมวิปปิงครีม 300 มล. และดอกกะหล่ำ 700 กรัมสำหรับ 4 ที่ โดยไม่รวมหอมหัวใหญ่และแป้งอัลมอนด์ในลูกชิ้น รวมถึงน้ำซุปเนื้อในซอส ดอกกะหล่ำใช้ค่า GI เฉลี่ยของผัก ส่วนวิปปิงครีมใช้ค่าเฉลี่ยของผลิตภัณฑ์นม"
     },
     "classLimitation": {
       "fi": "Koko annoksen GK-luokkaa ei näytetä, koska laskelma kattaa vain kerman ja kukkakaalin.",
@@ -4309,10 +4309,10 @@
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/d9723205e01dfdde464a9e0abaa1fa8250164de9/docs/nutrition/glycemic-load-pilot-input.json#L2278",
     "reasoning": "Two zucchini pieces are modeled as 700 g total, pan-cooked 2–3 min; 2 dl cream modeled as 200 g. Fineli 389 and 631 with category mean GI66/35 contribute GK 2.8875/0.5075, 85% from zucchini. The recipe contains one whole onion and 1 tbsp tomato paste as sauce components but neither is in the sealed two-row input or captured by omission accounting. No separate modern calculation JSON. Keep published recipe figures scoped to their respective methodologies and suppress low classification.",
     "condition": {
-      "fi": "GK-laskelma käyttää neljän annoksen erässä 700 g kesäkurpitsaa ja 2 dl kuohukermaa. Kastikkeen sipuli ja tomaattipyree jäävät laskelman ulkopuolelle.",
-      "en": "The GL calculation uses 700 g zucchini and 200 ml whipping cream for four servings. It leaves out the onion and tomato paste in the sauce.",
-      "sv": "GL-beräkningen bygger på 700 g zucchini och 2 dl vispgrädde för fyra portioner. Löken och tomatpurén i såsen ingår inte.",
-      "th": "การคำนวณ GL ใช้ซูกินี 700 กรัมและวิปปิงครีม 200 มล. สำหรับ 4 ที่ โดยไม่รวมหอมหัวใหญ่และมะเขือเทศเข้มข้นในซอส"
+      "fi": "GK-laskelma käyttää neljän annoksen erässä 700 g kesäkurpitsaa ja 2 dl kuohukermaa. Kastikkeen sipuli ja tomaattipyree jäävät laskelman ulkopuolelle. Kesäkurpitsalle käytetään kasvisten GI-keskiarvoa ja kuohukermalle maitotuotteiden keskiarvoa.",
+      "en": "The GL calculation uses 700 g zucchini and 200 ml whipping cream for four servings. It leaves out the onion and tomato paste in the sauce. The zucchini uses the average GI for vegetables and the whipping cream uses the average for dairy products.",
+      "sv": "GL-beräkningen bygger på 700 g zucchini och 2 dl vispgrädde för fyra portioner. Löken och tomatpurén i såsen ingår inte. Zucchinin beräknas med genomsnittligt GI för grönsaker och vispgrädden med genomsnittet för mejeriprodukter.",
+      "th": "การคำนวณ GL ใช้ซูกินี 700 กรัมและวิปปิงครีม 200 มล. สำหรับ 4 ที่ โดยไม่รวมหอมหัวใหญ่และมะเขือเทศเข้มข้นในซอส ซูกินีใช้ค่า GI เฉลี่ยของผัก ส่วนวิปปิงครีมใช้ค่าเฉลี่ยของผลิตภัณฑ์นม"
     },
     "classLimitation": {
       "fi": "Koko annoksen GK-luokkaa ei näytetä, koska laskelma kattaa vain kesäkurpitsan ja kerman.",
@@ -4329,10 +4329,10 @@
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/d9723205e01dfdde464a9e0abaa1fa8250164de9/docs/nutrition/glycemic-load-pilot-input.json#L2174",
     "reasoning": "Four servings of korma with grated cauliflower fried 4–5 min, never a rice grain. The sealed input includes only 600 g cauliflower, 200 g whipping cream and 150 g Turkish yogurt, Fineli 322/631/32201. Cauliflower group GI66 contributes 2.376 (69% of 3.447875), dairy group GI35 supplies remaining 1.071875. Current recipe includes one whole onion and two teaspoons korma seasoning for sauce, not tracked among omissions. No separate modern calculation JSON. Keep historical value scoped and suppress low classification.",
     "condition": {
-      "fi": "GK-laskelma kattaa neljän annoksen erässä 600 g kukkakaalia, 2 dl kuohukermaa ja 150 g jogurttia. Kastikkeen sipuli ja kormamauste jäävät laskelman ulkopuolelle.",
-      "en": "The GL calculation covers 600 g cauliflower, 200 ml whipping cream and 150 g yogurt for four servings. It leaves out the onion and korma seasoning in the sauce.",
-      "sv": "GL-beräkningen omfattar 600 g blomkål, 2 dl vispgrädde och 150 g yoghurt för fyra portioner. Löken och kormakryddan i såsen ingår inte.",
-      "th": "การคำนวณ GL ครอบคลุมดอกกะหล่ำ 600 กรัม วิปปิงครีม 200 มล. และโยเกิร์ต 150 กรัมสำหรับ 4 ที่ โดยไม่รวมหอมหัวใหญ่และเครื่องเทศคอร์มาในซอส"
+      "fi": "GK-laskelma kattaa neljän annoksen erässä 600 g kukkakaalia, 2 dl kuohukermaa ja 150 g jogurttia. Kastikkeen sipuli ja kormamauste jäävät laskelman ulkopuolelle. Kukkakaalille käytetään kasvisten GI-keskiarvoa. Kerman ja jogurtin GK-osuudet käyttävät maitotuotteiden keskiarvoa.",
+      "en": "The GL calculation covers 600 g cauliflower, 200 ml whipping cream and 150 g yogurt for four servings. It leaves out the onion and korma seasoning in the sauce. The cauliflower uses the average GI for vegetables. The cream and yogurt use the average for dairy products.",
+      "sv": "GL-beräkningen omfattar 600 g blomkål, 2 dl vispgrädde och 150 g yoghurt för fyra portioner. Löken och kormakryddan i såsen ingår inte. Blomkålen beräknas med genomsnittligt GI för grönsaker. Grädden och yoghurten beräknas med genomsnittet för mejeriprodukter.",
+      "th": "การคำนวณ GL ครอบคลุมดอกกะหล่ำ 600 กรัม วิปปิงครีม 200 มล. และโยเกิร์ต 150 กรัมสำหรับ 4 ที่ โดยไม่รวมหอมหัวใหญ่และเครื่องเทศคอร์มาในซอส ดอกกะหล่ำใช้ค่า GI เฉลี่ยของผัก ส่วนครีมและโยเกิร์ตใช้ค่าเฉลี่ยของผลิตภัณฑ์นม"
     },
     "classLimitation": {
       "fi": "Koko annoksen GK-luokkaa ei näytetä, koska laskelma kattaa vain kukkakaalin, kerman ja jogurtin.",
@@ -4652,6 +4652,12 @@
       "en": "The GL figure covers the cabbage and spring onions. The effect of the sauce depends on the mirin and how much sauce stays on the skewers.",
       "sv": "GL-värdet gäller kålen och vårlöken. Såsens påverkan beror på val av mirin och hur mycket sås som blir kvar på spetten.",
       "th": "ค่า GL ครอบคลุมกะหล่ำปลีและต้นหอม ผลของซอสขึ้นอยู่กับชนิดของมิรินและปริมาณซอสที่ติดอยู่บนไก่เสียบไม้"
+    },
+    "condition": {
+      "fi": "Kaalille ja kevätsipulille käytetään kasvisten GI-keskiarvoa.",
+      "en": "The calculation uses the average GI for vegetables for the cabbage and spring onion.",
+      "sv": "Beräkningen använder genomsnittligt GI för grönsaker för kålen och vårlöken.",
+      "th": "การคำนวณใช้ค่า GI เฉลี่ยของผักสำหรับกะหล่ำปลีและต้นหอม"
     }
   },
   "lahi-ita-ful-medames": {
@@ -4770,10 +4776,10 @@
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/408bd3a8a6003e820bb0583f9496dcb9eef3c00e/docs/nutrition/glycemic-load-pilot-input.json#L8445",
     "reasoning": "Three servings use 100 g cream cheese and offer an unspecified savoury filling as an alternative at serving. Original GK includes only the 33.333 g/serving cream cheese modelled with Fineli 11571 plain 11% fat cream cheese (1.333333 g available CHO/serving) and Atkinson et al. 2021 Table 1 dairy mean GI 35 ± 11 SD. Original GK 0.466667. The tracked omitted 0.877 g combines egg 0.165, spinach 0.2, almond meal 0.44 and butter 0.072 g/serving. The optional filling is outside recipe and model. Public published legacy 3.71 g is total carbohydrate on the original recipe, not independently verified available carbohydrate. No extra ingredient value served from this proposed scope and no class change.",
     "condition": {
-      "fi": "Arvio koskee lettuja sellaisenaan. GK-arvio muodostuu taikinan tuorejuustosta. Laske mahdollinen suolainen täyte erikseen.",
-      "en": "The estimate applies to the pancakes on their own. The GL estimate comes from the cream cheese in the batter. Count any savoury filling separately.",
-      "sv": "Uppskattningen gäller plättarna som de är. GL-uppskattningen bygger på färskosten i smeten. Räkna eventuell salt fyllning separat.",
-      "th": "ค่าประมาณใช้กับแพนเค้กเปล่า ค่า GL คำนวณจากครีมชีสในแป้ง ให้คิดไส้คาวแยกหากใส่เพิ่ม"
+      "fi": "Arvio koskee lettuja sellaisenaan. GK-arvio muodostuu taikinan tuorejuustosta. Laske mahdollinen suolainen täyte erikseen. Tuorejuustolle käytetään maitotuotteiden GI-keskiarvoa.",
+      "en": "The estimate applies to the pancakes on their own. The GL estimate comes from the cream cheese in the batter. Count any savoury filling separately. The cream cheese uses the average GI for dairy products.",
+      "sv": "Uppskattningen gäller plättarna som de är. GL-uppskattningen bygger på färskosten i smeten. Räkna eventuell salt fyllning separat. Färskosten beräknas med genomsnittligt GI för mejeriprodukter.",
+      "th": "ค่าประมาณใช้กับแพนเค้กเปล่า ค่า GL คำนวณจากครีมชีสในแป้ง ให้คิดไส้คาวแยกหากใส่เพิ่ม ครีมชีสใช้ค่า GI เฉลี่ยของผลิตภัณฑ์นม"
     }
   },
   "khao-man-gai-vhh": {
@@ -4784,10 +4790,10 @@
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/glycemic-load-pilot-input.json#L5814",
     "reasoning": "A four-serving recipe serves pan-fried cauliflower rice, sliced cucumber and ginger-soybean paste sauce with the chicken. The sealed GK 3.6675 includes 2.772 from Fineli 322 cauliflower (175 g raw recipe weight and 4.2 g available CHO per serving) and 0.462 from Fineli 346 cucumber (50 g and 0.7 g); both use Atkinson 2021 Table 1 vegetable mean GI 66. The named Healthy Boy paste in the sauce supplies the remaining 0.4335 from 7.5 g paste and 1.275 g available CHO per serving using the legume mean GI 34. The recipe may serve extra cooking liquid separately. The specified stock is tracked as 0.015 g of the 0.6605 g omitted for the original recipe, and there is no positive GK from stock or from the rest of the sauce. No estimate for an extra bowl of broth. Legacy available CHO remains unverified; the published 11.16 g point is total carbohydrate.",
     "condition": {
-      "fi": "Arvio koskee annosta, jossa on 175 g kukkakaaliriisiä ennen paistamista ja 50 g kurkkua. GK-arvioon vaikuttaa myös kastikkeen Healthy Boy -soijapaputahna.",
-      "en": "The estimate applies to a serving with 175 g of cauliflower rice weighed before frying and 50 g of cucumber. The Healthy Boy soybean paste in the sauce also contributes to the GL estimate.",
-      "sv": "Uppskattningen gäller en portion med 175 g blomkålsris vägt före stekning och 50 g gurka. Sojabönspastan Healthy Boy i såsen bidrar också till GL-uppskattningen.",
-      "th": "ค่าประมาณนี้ใช้กับหนึ่งที่ที่มีข้าวดอกกะหล่ำ 175 กรัมชั่งก่อนผัด และแตงกวา 50 กรัม เต้าเจี้ยว Healthy Boy ในซอสมีส่วนในค่าประมาณ GL ด้วย"
+      "fi": "Arvio koskee annosta, jossa on 175 g kukkakaaliriisiä ennen paistamista ja 50 g kurkkua. GK-arvioon vaikuttaa myös kastikkeen Healthy Boy -soijapaputahna. Kukkakaaliriisin ja kurkun GK-osuudet käyttävät kasvisten GI-keskiarvoa. Tahnan osuus käyttää palkokasvien keskiarvoa.",
+      "en": "The estimate applies to a serving with 175 g of cauliflower rice weighed before frying and 50 g of cucumber. The Healthy Boy soybean paste in the sauce also contributes to the GL estimate. The cauliflower rice and cucumber use the average GI for vegetables. The soybean paste uses the average GI for legumes.",
+      "sv": "Uppskattningen gäller en portion med 175 g blomkålsris vägt före stekning och 50 g gurka. Sojabönspastan Healthy Boy i såsen bidrar också till GL-uppskattningen. Blomkålsriset och gurkan beräknas med genomsnittligt GI för grönsaker. Sojabönspastan beräknas med genomsnittet för baljväxter.",
+      "th": "ค่าประมาณนี้ใช้กับหนึ่งที่ที่มีข้าวดอกกะหล่ำ 175 กรัมชั่งก่อนผัด และแตงกวา 50 กรัม เต้าเจี้ยว Healthy Boy ในซอสมีส่วนในค่าประมาณ GL ด้วย ข้าวดอกกะหล่ำและแตงกวาใช้ค่า GI เฉลี่ยของผัก ส่วนเต้าเจี้ยวใช้ค่าเฉลี่ยของถั่วเมล็ดแห้ง"
     }
   },
   "gai-yang-vhh": {
@@ -4812,10 +4818,10 @@
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/glycemic-load-pilot-input.json#L8794",
     "reasoning": "The recipe uses 440 g eggs, with 15 g spring onion explicitly optional and 150 g cucumber as a side across four servings. Sealed GK 0.46035 comprises 0.3465 for Fineli 346 cucumber and 0.11385 for AFCD F006250 spring onion, both using Atkinson 2021 Table 1 broad vegetable mean GI 66. Consequently the optional spring onion contributes almost a quarter (24.7%) of the model point. The model scope is the original mixture with onion; no alternative numerical estimate is published. Egg 0.33 g, named fish sauce 0.085 g and coriander 0.006312 g form the 0.421312 g in tracked omissions. Published 1.66 g is legacy total CHO, not separately verified available CHO.",
     "condition": {
-      "fi": "GK-arvio sisältää kurkkulisukkeen ja ohjeessa valinnaisen kevätsipulin. Arvio vastaa annosta, jossa kevätsipuli on mukana.",
-      "en": "The GL estimate includes the cucumber side and assumes you add the optional spring onion to the omelette.",
-      "sv": "GL-uppskattningen omfattar gurktillbehöret och utgår från att den valfria vårlöken tillsätts i omeletten.",
-      "th": "ค่าประมาณ GL รวมแตงกวาที่เสิร์ฟคู่กัน และคำนวณโดยใส่ต้นหอมที่ระบุว่าเลือกใส่ได้ลงในไข่เจียว"
+      "fi": "GK-arvio sisältää kurkkulisukkeen ja ohjeessa valinnaisen kevätsipulin. Arvio vastaa annosta, jossa kevätsipuli on mukana. Kurkun ja kevätsipulin GK-osuudet käyttävät kasvisten GI-keskiarvoa.",
+      "en": "The GL estimate includes the cucumber side and assumes you add the optional spring onion to the omelette. The cucumber and spring onion use the average GI for vegetables.",
+      "sv": "GL-uppskattningen omfattar gurktillbehöret och utgår från att den valfria vårlöken tillsätts i omeletten. Gurkan och vårlöken beräknas med genomsnittligt GI för grönsaker.",
+      "th": "ค่าประมาณ GL รวมแตงกวาที่เสิร์ฟคู่กัน และคำนวณโดยใส่ต้นหอมที่ระบุว่าเลือกใส่ได้ลงในไข่เจียว แตงกวาและต้นหอมใช้ค่า GI เฉลี่ยของผัก"
     }
   },
   "kermainen-lohipata": {
@@ -4826,10 +4832,10 @@
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/glycemic-load-pilot-input.json#L7133",
     "reasoning": "The four-serving tray-bake calls for 200 g of 11% plain cream cheese and 200 g of 38% whipping cream (50 g each per serving) and allows a separate vegetable side with no specification. Fineli 11571 cream cheese and Fineli 631 whipping cream contribute 0.7 and 0.5075 of the legacy GK 1.257 (96.1% combined), using the Atkinson 2021 Table 1 dairy mean GI 35. Fineli 33456 spinach contributes the remaining 0.0495 using the generic vegetable mean GI 66. Onion and garlic remain tracked omissions within 1.49935 g per serving; no measured meal GI or side estimates. The displayed 6.08 g is the legacy total carbohydrate from the tray-bake only.",
     "condition": {
-      "fi": "GK-arvio koskee lohipataa sellaisenaan. Se muodostuu pääosin tuorejuustosta ja kuohukermasta. Erikseen tarjottu kasvislisuke jää arvion ulkopuolelle.",
-      "en": "The GL estimate covers the salmon bake on its own and comes mainly from the cream cheese and whipping cream. A separately served vegetable side is outside the estimate.",
-      "sv": "GL-uppskattningen gäller laxgratängen som den är och bygger främst på färskosten och vispgrädden. Grönsakstillbehör som serveras separat ingår inte.",
-      "th": "ค่าประมาณ GL ใช้กับแซลมอนอบตามสูตร โดยส่วนใหญ่มาจากครีมชีสและวิปปิงครีม ไม่รวมผักที่เสิร์ฟแยกเป็นเครื่องเคียง"
+      "fi": "GK-arvio koskee lohipataa sellaisenaan. Se muodostuu pääosin tuorejuustosta ja kuohukermasta. Erikseen tarjottu kasvislisuke jää arvion ulkopuolelle. Tuorejuustolle ja kuohukermalle käytetään maitotuotteiden GI-keskiarvoa ja pinaatille kasvisten keskiarvoa.",
+      "en": "The GL estimate covers the salmon bake on its own and comes mainly from the cream cheese and whipping cream. A separately served vegetable side is outside the estimate. The cream cheese and whipping cream use the average GI for dairy products and the spinach uses the average for vegetables.",
+      "sv": "GL-uppskattningen gäller laxgratängen som den är och bygger främst på färskosten och vispgrädden. Grönsakstillbehör som serveras separat ingår inte. Färskosten och vispgrädden beräknas med genomsnittligt GI för mejeriprodukter och spenaten med genomsnittet för grönsaker.",
+      "th": "ค่าประมาณ GL ใช้กับแซลมอนอบตามสูตร โดยส่วนใหญ่มาจากครีมชีสและวิปปิงครีม ไม่รวมผักที่เสิร์ฟแยกเป็นเครื่องเคียง ครีมชีสและวิปปิงครีมใช้ค่า GI เฉลี่ยของผลิตภัณฑ์นม ส่วนผักโขมใช้ค่าเฉลี่ยของผัก"
     }
   },
   "yum-woon-sen-vhh": {
@@ -4855,10 +4861,10 @@
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/calculations/vhh-brita-kakku.json",
     "reasoning": "Eight servings use 70 g erythritol in the base and 60 g in the meringue. Both the historical GK model and reviewed composition use the Foodin pure erythritol label; CHO=100 g/100 g and verified polyols=100 g/100 g on the EU label are handled as zero available CHO for this product, not a general class inference. Original GK 0.78925 consists of 0.5355 for 18.75 g strawberries and 0.25375 for 25 g cream per serving, using the 2021 Table 1 fruit and dairy means. The 1.07875 g tracked GK omissions include almond meal, egg, butter and a baking-powder bound. The verified available CHO 2.72 g remains the original recipe with erythritol; no substitutions are calculated.",
     "condition": {
-      "fi": "GK-arvio muodostuu täytteen mansikoista ja kermavaahdosta.",
-      "en": "The GL estimate comes from the strawberries and whipped cream in the filling.",
-      "sv": "GL-uppskattningen bygger på jordgubbarna och vispgrädden i fyllningen.",
-      "th": "ค่าประมาณ GL มาจากสตรอว์เบอร์รีและวิปครีมในไส้"
+      "fi": "GK-arvio muodostuu täytteen mansikoista ja kermavaahdosta. Mansikoille käytetään hedelmien GI-keskiarvoa ja kermalle maitotuotteiden keskiarvoa.",
+      "en": "The GL estimate comes from the strawberries and whipped cream in the filling. The strawberries use the average GI for fruit and the cream uses the average for dairy products.",
+      "sv": "GL-uppskattningen bygger på jordgubbarna och vispgrädden i fyllningen. Jordgubbarna beräknas med genomsnittligt GI för frukt och grädden med genomsnittet för mejeriprodukter.",
+      "th": "ค่าประมาณ GL มาจากสตรอว์เบอร์รีและวิปครีมในไส้ สตรอว์เบอร์รีใช้ค่า GI เฉลี่ยของผลไม้ ส่วนครีมใช้ค่าเฉลี่ยของผลิตภัณฑ์นม"
     },
     "carbohydrateScope": {
       "fi": "Hiilihydraattiarvio koskee ohjetta, jossa sekä pohja että marenki on makeutettu erytritolilla.",
@@ -4876,10 +4882,10 @@
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/calculations/vhh-mokkapalat.json",
     "reasoning": "Twelve servings use 70 g erythritol in the base and 100 g powdered erythritol in the icing; the sealed records map both to the same Foodin pure erythritol label. The 0.084583333 GK comes entirely from Fineli 631 cream (0.241667 g available CHO/serving), using the broad dairy mean GI 35. The 1.02375 g tracked omissions include 0.54 g from almond meal, cocoa and raising agent bounds, egg and butter. The independent 1.15 g available CHO calculation retains almonds and cocoa, which are absent from the GK sum. No new carb or GK estimate for chocolate, sweetener blend or sugar substitution.",
     "condition": {
-      "fi": "Laskettu GK-osuus tulee pohjan kuohukermasta. Mantelijauhon ja kaakaon hiilihydraatit sisältyvät hiilihydraattiarvioon.",
-      "en": "The cream in the base supplies the calculated GL. The carbohydrate estimate includes carbohydrate from both the almond meal and cocoa.",
-      "sv": "Vispgrädden i bottnen står för den beräknade GL-belastningen. Kolhydratberäkningen omfattar kolhydraterna från både mandelmjöl och kakao.",
-      "th": "ค่า GL ที่คำนวณได้มาจากวิปปิงครีมในตัวเค้ก ค่าประมาณคาร์โบไฮเดรตรวมทั้งส่วนของแป้งอัลมอนด์และโกโก้"
+      "fi": "Laskettu GK-osuus tulee pohjan kuohukermasta. Mantelijauhon ja kaakaon hiilihydraatit sisältyvät hiilihydraattiarvioon. Pohjan kuohukermalle käytetään maitotuotteiden GI-keskiarvoa.",
+      "en": "The cream in the base supplies the calculated GL. The carbohydrate estimate includes carbohydrate from both the almond meal and cocoa. The whipping cream in the base uses the average GI for dairy products.",
+      "sv": "Vispgrädden i bottnen står för den beräknade GL-belastningen. Kolhydratberäkningen omfattar kolhydraterna från både mandelmjöl och kakao. Vispgrädden i bottnen beräknas med genomsnittligt GI för mejeriprodukter.",
+      "th": "ค่า GL ที่คำนวณได้มาจากวิปปิงครีมในตัวเค้ก ค่าประมาณคาร์โบไฮเดรตรวมทั้งส่วนของแป้งอัลมอนด์และโกโก้ วิปปิงครีมในตัวเค้กใช้ค่า GI เฉลี่ยของผลิตภัณฑ์นม"
     },
     "carbohydrateScope": {
       "fi": "Hiilihydraattiarvio koskee ohjetta, jossa sekä pohja että kuorrute on makeutettu erytritolilla.",
@@ -5050,6 +5056,12 @@
       "en": "The GL figure comes from the cream and cream cheese in the pancake batter. Count the carbohydrate in any berries and whipped cream added when serving separately.",
       "sv": "GL-värdet bygger på grädden och färskosten i pannkakssmeten. Räkna kolhydraterna från eventuella bär och vispad grädde till serveringen separat.",
       "th": "ค่า GL มาจากครีมและครีมชีสในแป้งแพนเค้ก ให้คิดคาร์โบไฮเดรตจากเบอร์รีและวิปครีมที่เติมตอนเสิร์ฟแยกต่างหาก"
+    },
+    "condition": {
+      "fi": "Taikinan kermalle ja tuorejuustolle käytetään maitotuotteiden GI-keskiarvoa.",
+      "en": "The cream and cream cheese in the batter use the average GI for dairy products.",
+      "sv": "Grädden och färskosten i smeten beräknas med genomsnittligt GI för mejeriprodukter.",
+      "th": "ครีมและครีมชีสในแป้งใช้ค่า GI เฉลี่ยของผลิตภัณฑ์นม"
     }
   },
   "punajuuririsotto": {

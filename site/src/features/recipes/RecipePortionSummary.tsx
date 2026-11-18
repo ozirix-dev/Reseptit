@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import type { RecipeEntry, RecipeLocale } from "../../types/content";
-import { eatenPortions, scalePortionRange, verbalGkForPortion, type CarbohydrateChoice, type CarbohydrateComparison, type IngredientPortion, type NamedGkAlternative, type PortionCarbs, type PortionEvidence } from "./gk-portion";
+import { eatenPortions, scalePortionRange, verbalGkForPortion, type CarbohydrateChoice, type CarbohydrateComparison, type IngredientPortion, type NamedGkAlternative, type originalPortionGk, type PortionCarbs, type PortionEvidence } from "./gk-portion";
 import type { GkRange } from "./gk-estimate";
 import { formatGlycemicLoadNumber } from "./gk80-format";
 
@@ -114,6 +114,20 @@ export const portionCopy = {
     omittedClass: "ระดับ GL ของอาหารหนึ่งที่ยังไม่แน่นอน",
   },
 } as const;
+
+export function originalGkClassDisclosure(assessment: ReturnType<typeof originalPortionGk> | null, locale: RecipeLocale, {
+  limitation, detailedOmissions, roundingHitsBoundary,
+}: { limitation?: string; detailedOmissions: boolean; roundingHitsBoundary?: boolean }) {
+  const words = portionCopy[locale];
+  if (!assessment || assessment.standardServingOnly) return { text: null };
+  const { category, inconsistent, omissionLimitsClass } = assessment;
+  const rounding = roundingHitsBoundary && !inconsistent && !omissionLimitsClass ? words.rounding : undefined;
+  if (limitation) return { text: limitation, rounding };
+  if (inconsistent) return { text: words.inconsistent };
+  if (omissionLimitsClass) return { text: detailedOmissions ? words.omittedClass : words.omitted };
+  if (category === "CROSSES_BOUNDARY") return { text: words.crossing, rounding };
+  return { text: category ? words.class[category] : null, category, rounding };
+}
 
 function formatCarbs(value: number, locale: string) {
   if (value > 0 && value < 0.1) return "<" + new Intl.NumberFormat(locale).format(0.1);

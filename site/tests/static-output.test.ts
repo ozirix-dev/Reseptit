@@ -21,7 +21,7 @@ import { copyrightSourceUrl, copyrightUi } from "../src/features/recipes/recipe-
 import { toolUi } from "../src/features/recipes/recipe-tools";
 import { siteContent } from "../src/generated/content.generated";
 import { contentManifest } from "../src/generated/routes.generated";
-import { glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
+import { glycemicLoadAdditionalResults, glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
 import { glycemicLoadFilterCategories } from "../src/generated/glycemic-load-filters.generated";
 import { isPublicRecipeQuarantined, publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
 import { f25ExplicitUndefinedGkLabel, withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
@@ -274,6 +274,77 @@ test("carbohydrate and GL describe their separate recipe assumptions before and 
     }
   }
   assert.equal(glycemicLoadFilterCategories["valimerellinen-jogurttikulho-hunajalla"], "low");
+});
+
+test("reviewed legacy portions name the applicable GI group on the recipe and in the guide", async () => {
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  const groups = {
+    "vegetables-category-mean-gi-66": [
+      "kana-yakitori-kaalilla", "khao-man-gai-vhh", "jauhelihakastike-kesakurpitsanuudeleilla",
+      "lihapullat-kermakastikkeessa-vhh", "kanakorma-kukkakaaliriisilla", "larb-moo-vhh",
+      "kai-jiew-vhh", "kantonilainen-hoyrytetty-kala",
+    ],
+    "dairy-category-mean-gi-35": ["kermainen-lohipata", "keto-pannukakku", "keto-pinaattiletut", "vhh-mokkapalat"],
+    "fruit-category-mean-gi-51": ["vhh-brita-kakku"],
+    "legumes-category-mean-gi-34": ["amritsari-kala"],
+  };
+  const guides = new Map(await Promise.all((["fi", "en", "sv", "th"] as const).map(async locale =>
+    [locale, await readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8")] as const)));
+  const groupWords = {
+    fi: /GI.*keskiarvo|keskiarvo.*GI/u, en: /(?:average|mean).*GI|GI.*(?:average|mean)/u,
+    sv: /genomsnitt.*GI|GI.*genomsnitt/u, th: /GI.*เฉลี่ย|เฉลี่ย.*GI/u,
+  };
+  for (const [sourceId, ids] of Object.entries(groups)) {
+    for (const id of ids) {
+      const result = glycemicLoadPilotResults.find(row => row.recipeId === id);
+      assert.ok(result, id);
+      assert.equal(result.status, "CALCULATED", id);
+      assert.ok(result.ingredientEvidence?.some(row => row.giRecordId === sourceId), id);
+      assert.equal(glycemicLoadFilterCategories[id], undefined, id);
+      const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+      assert.equal(entries.length, 4, id);
+      for (const { locale, routePath } of entries) {
+        const limit = reviews[id].classLimitation?.[locale];
+        const condition = reviews[id].condition?.[locale];
+        const disclosure = [condition, limit].find(value => value && groupWords[locale].test(value));
+        assert.ok(disclosure, routePath);
+        const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+        const guide = guides.get(locale)!;
+        const start = guide.indexOf(`id="${id}"`);
+        const row = guide.slice(start, guide.indexOf("<li ", start + 1));
+        const className = disclosure === limit ? "recipe-glycemic-load__class" : "recipe-disclosure";
+        assert.ok(html.includes(renderToStaticMarkup(createElement("p", { className }, disclosure))), routePath);
+        assert.ok(row.includes(renderToStaticMarkup(createElement("p", null, disclosure)))
+          || row.includes(renderToStaticMarkup(createElement("p", { "data-portion-preparation-scope": true }, disclosure))), routePath);
+      }
+    }
+  }
+});
+
+test("numeric original GK follows the same class on the recipe, in the guide and in the catalog", async () => {
+  const results = new Map([...glycemicLoadPilotResults, ...glycemicLoadAdditionalResults]
+    .filter(result => result.status === "CALCULATED").map(result => [result.recipeId, result]));
+  const checkedClasses = new Set<string>();
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const guide = await readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8");
+    const rows = [...guide.matchAll(/<li id="([^"]+)" class="glycemic-pilot__recipe"/g)];
+    const guideByRecipe = new Map(rows.map((row, index) => [row[1], guide.slice(row.index, rows[index + 1]?.index)]));
+    for (const { recipeId, routePath } of siteContent.recipes.filter(recipe => recipe.locale === locale && results.has(recipe.recipeId))) {
+      const html = (await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8"))
+        .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+      const row = guideByRecipe.get(recipeId);
+      assert.ok(row, `${routePath}: guide row`);
+      const category = glycemicLoadFilterCategories[recipeId]?.toUpperCase() as keyof (typeof portionCopy)[typeof locale]["class"] | undefined;
+      for (const surface of [html, row]) {
+        const classes = [...surface.matchAll(/data-original-gk-class="([A-Z]+)"/g)].map(match => match[1]);
+        assert.deepEqual(classes, category ? [category] : [], routePath);
+        if (category) assert.ok(surface.includes(portionCopy[locale].class[category]), routePath);
+      }
+      if (category) checkedClasses.add(category);
+      assert.equal(row.includes(portionCopy[locale].rounding), html.includes(portionCopy[locale].rounding), routePath);
+    }
+  }
+  assert.deepEqual([...checkedClasses].sort(), ["HIGH", "LOW", "MEDIUM"]);
 });
 
 test("legacy GL coverage uses the approved ingredient sum and distinguishes estimated omissions from bounds", async () => {

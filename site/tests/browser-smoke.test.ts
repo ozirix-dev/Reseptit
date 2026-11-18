@@ -420,6 +420,15 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.match(await pendingGk.getByRole("link", { name: portionCopy.fi.scopeSource }).getAttribute("href") ?? "", /^https:/);
 
     const routeFor = (id: string, locale = "fi") => siteContent.recipes.find(recipe => recipe.locale === locale && recipe.recipeId === id)!.routePath;
+    const yogurtId = "valimerellinen-jogurttikulho-hunajalla";
+    await page.goto(base + routeFor(yogurtId));
+    const yogurtClass = page.locator("[data-original-gk-class]");
+    assert.equal(await yogurtClass.getAttribute("data-original-gk-class"), "LOW");
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.equal(await yogurtClass.getAttribute("data-original-gk-class"), "MEDIUM");
+    await page.goto(base + glycemicLoadPath("fi") + "#" + yogurtId);
+    assert.equal(await page.locator(`#${yogurtId} [data-original-gk-class]`).getAttribute("data-original-gk-class"), "LOW");
+
     await page.goto(base + routeFor("malesialainen-kookos-banaanikulho"));
     const ingredientPortion = page.locator("[data-ingredient-portion]");
     assert.match(await ingredientPortion.innerText(), /Kuorittu banaani.*100 g[\s\S]+18,3 g/);

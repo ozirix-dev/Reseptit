@@ -8,7 +8,7 @@ import {GkOnlyVariantPanel,gkOnlyUi,gkScopeUi} from '../recipes/GkOnlyVariantPan
 import {scopedPolyolDisclosure} from '../recipes/scoped-polyol-disclosure';
 import {recoveryDisclosure} from '../recipes/recovery-disclosure';
 import { formatOriginalPortionGk } from "../recipes/gk80-format";
-import { describeCarbs, GkAlternatives, IngredientPortionDetails, OriginalCarbohydrateComparison, portionCopy as recipePortionCopy, ReviewedPortionSource, WholeCarbohydrateChoices } from "../recipes/RecipePortionSummary";
+import { describeCarbs, GkAlternatives, IngredientPortionDetails, OriginalCarbohydrateComparison, originalGkClassDisclosure, portionCopy as recipePortionCopy, ReviewedPortionSource, WholeCarbohydrateChoices } from "../recipes/RecipePortionSummary";
 import {originalPortionGk, verbalGkForPortion} from '../recipes/gk-portion';
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
@@ -250,6 +250,11 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
     const carbs = carbsByRecipe?.[result.recipeId];
     const base = result.status === "CALCULATED" ? originalPortionGk(result) : null;
     const display = base ? formatOriginalPortionGk(base.estimate, numberLocale, !!result.assessmentType) : null;
+    const gkClass = originalGkClassDisclosure(base, locale, {
+      limitation: portion?.classLimitation?.[locale],
+      detailedOmissions: !!result.originalGkCoverage,
+      roundingHitsBoundary: display?.roundingHitsBoundary,
+    });
     const numericText = display?.value
       ? `${result.assessmentType ? modelled + " " : ""}${text.about} ${display.value} ${text.perServing}`
       : text.incomplete;
@@ -274,13 +279,10 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
         ? <p><ReviewedPortionSource source={portion.reviewedSource} locale={locale} /></p> : null}
       {result.status === "CALCULATED" ? <>
         <p className="gk-evidence__value"><strong>{text.value} · {numericText}</strong></p>
-        {portion?.classLimitation ? <p>{portion.classLimitation[locale]}</p>
-          : base?.inconsistent ? <p>{portionWords.inconsistent}</p>
-          : base?.omissionLimitsClass ? <p>{result.originalGkCoverage ? portionWords.omittedClass : portionWords.omitted}</p>
-          : base?.category === "CROSSES_BOUNDARY" ? <p>{portionWords.crossing}</p>
-          : display?.roundingHitsBoundary ? <p>{portionWords.rounding}</p> : null}
+        {gkClass.text ? <p data-original-gk-class={gkClass.category}>{gkClass.text}</p> : null}
         <OriginalGkCoverageNote coverage={result.originalGkCoverage} locale={locale} />
         {portion?.alternatives ? <GkAlternatives choices={portion.alternatives} locale={locale} /> : null}
+        {gkClass.rounding ? <p>{gkClass.rounding}</p> : null}
         <EstimateSummary result={result} locale={locale} />
         <EstimateDetails result={result} locale={locale}
           notes={<>

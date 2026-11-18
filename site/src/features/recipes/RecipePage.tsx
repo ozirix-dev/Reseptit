@@ -5,7 +5,7 @@ import {GkOnlyVariantPanel,gkScopeUi} from './GkOnlyVariantPanel';
 import {scopedPolyolDisclosure} from './scoped-polyol-disclosure';
 import {recoveryDisclosure} from './recovery-disclosure';
 import { originalPortionCarbs, originalPortionGk } from "./gk-portion";
-import { GkAlternatives, portionCopy, RecipePortionSummary, VerbalPortionEstimate } from "./RecipePortionSummary";
+import { GkAlternatives, originalGkClassDisclosure, portionCopy, RecipePortionSummary, VerbalPortionEstimate } from "./RecipePortionSummary";
 import { formatOriginalPortionGk } from "./gk80-format";
 import { recipeHeroAvifMedia, recipeHeroSizes } from "./image-layout";
 import type { RecipeImage } from "@/types/content";
@@ -97,13 +97,11 @@ export function RecipePage() {
   const scaled = glycemicLoad ? originalPortionGk(glycemicLoad, eatenPortion) : null;
   const display = scaled ? formatOriginalPortionGk(scaled.estimate, numberLocale, !!glycemicLoad?.assessmentType) : null;
   const glValue = display?.value ? `${glApprox}${display.value}` : "";
-  const category = scaled?.category;
-  const classText = scaled?.standardServingOnly ? null : portionEvidence?.classLimitation?.[locale] ?? (
-    scaled?.inconsistent ? portionWords.inconsistent
-      : scaled?.omissionLimitsClass ? (glycemicLoad?.originalGkCoverage ? portionWords.omittedClass : portionWords.omitted)
-      : category === "CROSSES_BOUNDARY" ? portionWords.crossing
-        : category ? portionWords.class[category] : null
-  );
+  const gkClass = originalGkClassDisclosure(scaled, locale, {
+    limitation: portionEvidence?.classLimitation?.[locale],
+    detailedOmissions: !!glycemicLoad?.originalGkCoverage,
+    roundingHitsBoundary: display?.roundingHitsBoundary,
+  });
   // Qualify reviewed notices in the public view while retaining the recipe source.
   const notesHtml = !withholdNutrition
     ? glycemicRecipe?.reviewedNotesHtml ?? (portionEvidence?.verbal && locale === "fi"
@@ -146,10 +144,10 @@ export function RecipePage() {
             <dt>{glycemicLoad.assessmentType ? modeledGlLabel : labels.glycemicLoad}</dt>
             <dd aria-live="polite" data-portion-gk>{glValue}{eatenPortion === 1 ? ` ${glUnit}` : ""}</dd>
           </div></dl>}
-          {classText ? <p className="recipe-glycemic-load__class">{classText}</p> : null}
+          {gkClass.text ? <p className="recipe-glycemic-load__class" data-original-gk-class={gkClass.category}>{gkClass.text}</p> : null}
           <OriginalGkCoverageNote coverage={glycemicLoad.originalGkCoverage} locale={locale} multiplier={eatenPortion} />
           {portionEvidence?.alternatives ? <GkAlternatives choices={portionEvidence.alternatives} locale={locale} multiplier={eatenPortion} /> : null}
-          {display?.roundingHitsBoundary && !scaled?.inconsistent && !scaled?.omissionLimitsClass ? <p className="recipe-disclosure">{portionWords.rounding}</p> : null}
+          {gkClass.rounding ? <p className="recipe-disclosure">{gkClass.rounding}</p> : null}
           {gkMethodLink}
           <EstimateDetails result={glycemicLoad} locale={locale}
             notes={<>
