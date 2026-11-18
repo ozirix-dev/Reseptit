@@ -818,6 +818,24 @@ const tangyuanCookingWaterScope: Readonly<Record<RecipeLocale, { before: string;
   th: { before: "ต้มลูกแป้งทีละชุดในหม้อน้ำอีกใบที่เดือดเบา ๆ ประมาณ 5–6 นาทีจนลอย ตักใส่ชามแล้วราดด้วยน้ำขิงหวาน", after: "ต้มน้ำเปล่าในหม้ออีกใบให้เดือดเบา ๆ โดยใช้น้ำมากพอสำหรับต้มลูกแป้ง น้ำส่วนนี้เป็นน้ำสำหรับต้มแยกต่างหาก ไม่ใช่น้ำ 1 ลิตรที่ใช้ทำน้ำขิงหวาน ต้มลูกแป้งทีละชุดประมาณ 5–6 นาทีจนลอย ใช้กระชอนตักขึ้น สะเด็ดน้ำต้มแยกทิ้ง ใส่ชามแล้วราดด้วยน้ำขิงหวาน", note: "น้ำ 1 ลิตรและน้ำตาล 60 กรัมในรายการส่วนผสมใช้ทำน้ำขิงหวานสำหรับเสิร์ฟ ต้องใช้น้ำเปล่าเพิ่มเติมสำหรับต้มลูกแป้งในหม้ออีกใบ แล้วสะเด็ดน้ำต้มส่วนนั้นทิ้ง ไม่รวมเป็นน้ำขิงหวานที่เสิร์ฟ ปริมาณน้ำขิงหวานที่กินจริงยังไม่ได้วัด" },
 };
 
+// #327: the natto bowl's historical source records paistaminen, but all four
+// reviewed preparation methods boil the rice and egg. Correct the *public*
+// recipe metadata and explanation without rewriting version-sealed sources.
+const nattoRiceCookingReview: Readonly<Record<RecipeLocale, { evidence: readonly string[]; note: string }>> = {
+  fi: { evidence: ["100 g kuivaa valkoista jasmiiniriisiä", "Keitä munat"], note: "Valmistustapa: keittäminen. Riisin 100 g tarkoittaa kuivapainoa. Riisi ja munat keitetään, ja maustamaton nattō lisätään valmiiseen kulhoon; mitään ei paisteta." },
+  en: { evidence: ["100 g of dry white jasmine rice", "Boil the eggs"], note: "Cooking method: boiling. The listed 100 g of rice is its dry weight. The rice and eggs are boiled, then plain natto is added to the finished bowl; nothing is fried." },
+  sv: { evidence: ["100 g torrt vitt jasminris", "Koka äggen"], note: "Tillagningssätt: kokning. De angivna 100 g ris är torrvikt. Riset och äggen kokas, och naturell natto läggs i den färdiga skålen; ingenting steks." },
+  th: { evidence: ["100 กรัม", "ต้มไข่"], note: "วิธีปรุง: การต้ม ข้าวหอมมะลิ 100 กรัมเป็นน้ำหนักข้าวดิบก่อนหุง ข้าวและไข่ต้มให้สุก แล้วใส่นัตโตะแบบไม่ปรุงรสในชาม ไม่ได้ทอดส่วนผสมใด" },
+};
+
+export function reviewedPublicCookingMethod(recipeId: string, rawMethod: readonly string[] | undefined): string[] | undefined {
+  if (recipeId !== "japanilainen-natto-riisikulho") return undefined;
+  if (JSON.stringify(rawMethod) !== JSON.stringify(["paistaminen"])) {
+    throw new Error("NATTO_COOKING_METHOD_SOURCE_DRIFT");
+  }
+  return ["keittäminen"];
+}
+
 export function projectPublicRecipeMethodCopy(
   id: string, locale: RecipeLocale, instructions: string, notes: string,
 ): { instructions: string; notes: string } {
@@ -835,6 +853,13 @@ export function projectPublicRecipeMethodCopy(
       if (id === "vhh-lihamureke") instructions = instructions.replace(eatInstruction[locale], "");
       notes = [notes, estimateNote[locale]].filter(Boolean).join("\n\n");
     }
+  }
+  if (id === "japanilainen-natto-riisikulho") {
+    const reviewed = nattoRiceCookingReview[locale];
+    if (!reviewed.evidence.every(part => instructions.includes(part))) {
+      throw new Error("NATTO_COOKING_METHOD_TEXT_DRIFT: " + locale);
+    }
+    notes = [notes, "- " + reviewed.note].filter(Boolean).join("\n");
   }
   if (id === "tangyuan") {
     const scope = tangyuanCookingWaterScope[locale];
