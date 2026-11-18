@@ -56,6 +56,7 @@ export interface SideCarbohydrate {
 
 export interface PortionEvidence {
   ingredientPortion?: IngredientPortion;
+  additionalIngredientPortions?: IngredientPortion[];
   alternatives?: NamedGkAlternative[];
   versionAlternatives?: { versionId: string; choices: NamedGkAlternative[] };
   reviewedSource?: string;
@@ -71,6 +72,10 @@ export interface PortionEvidence {
   gkIngredientSubset?: true;
   piecesPerServing?: number;
   gramsPerServing?: number;
+}
+
+export function reviewedIngredientPortions(evidence?: PortionEvidence): IngredientPortion[] {
+  return evidence?.ingredientPortion ? [evidence.ingredientPortion, ...(evidence.additionalIngredientPortions ?? [])] : [];
 }
 
 export type PortionCarbs = { range: GkRange; definition: "available" | "total" | "net"; choices?: CarbohydrateChoice[] };

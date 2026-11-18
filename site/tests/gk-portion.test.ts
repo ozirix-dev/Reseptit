@@ -5,7 +5,7 @@ import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { loadReviewedPortions, portionPreparationHash, projectPortionEvidence } from "../scripts/gk-portion-projection";
-import { countGkPortionCoverage, originalPortionGk, verbalGkForPortion } from "../src/features/recipes/gk-portion";
+import { countGkPortionCoverage, originalPortionGk, reviewedIngredientPortions, verbalGkForPortion } from "../src/features/recipes/gk-portion";
 import { originalGlycemicLoadCategory } from "../scripts/glycemic-load-filter";
 import { recipeBindingHash } from "../scripts/glycemic-load-recipe-binding";
 
@@ -105,6 +105,33 @@ test("partial ingredient quantities remain separate from the whole portion and i
   await assert.rejects(projectPortionEvidence(root, bananaId, bananaSource, {
     ...review, ingredientPortion: { ...ingredient, sourceReview: { ...ingredient.sourceReview!, sha256: "changed" } },
   }), /source review for the partial ingredient changed/);
+});
+
+test("two reviewed sauce portions keep separate label values and fail on stale or duplicate evidence", async () => {
+  const id = "kebab-munakasrulla";
+  const markdown = await readFile(path.join(root, "reseptit/paaruoat", `${id}.md`), "utf8");
+  const review = (await loadReviewedPortions(root))[id];
+  const { portion } = await projectPortionEvidence(root, id, markdown, review);
+  const rows = reviewedIngredientPortions(portion);
+  assert.deepEqual(rows.map(item => item.amountPerServing), [20, 20]);
+  assert.deepEqual(rows.map(item => item.declaredCarbsGPerServing), [2.4, 2]);
+  assert.ok(rows.every(item => item.availableCarbsGPerServing === undefined));
+  assert.equal(portion.availableCarbs, undefined);
+  assert.equal(originalGlycemicLoadCategory(undefined, portion), null);
+  const second = review.additionalIngredientPortions![0];
+  await assert.rejects(projectPortionEvidence(root, id, markdown, {
+    ...review, additionalIngredientPortions: [{ ...second, ingredientSha256: "changed" }],
+  }), /partial ingredient amount no longer matches/);
+  await assert.rejects(projectPortionEvidence(root, id, markdown, {
+    ...review, additionalIngredientPortions: [review.ingredientPortion!],
+  }), /distinct ingredients/);
+  const repeatedWithStringIndex = { ...review.ingredientPortion!, index: String(review.ingredientPortion!.index) as unknown as number };
+  await assert.rejects(projectPortionEvidence(root, id, markdown, {
+    ...review, additionalIngredientPortions: [repeatedWithStringIndex],
+  }), /partial ingredient amount no longer matches/);
+  await assert.rejects(projectPortionEvidence(root, id, markdown, {
+    ...review, additionalIngredientPortions: [{ ...second, source: undefined }],
+  }), /additional ingredient carbohydrate requires its own source/);
 });
 
 test("volume-only ingredient evidence cannot carry a per-100-gram carbohydrate value", async () => {

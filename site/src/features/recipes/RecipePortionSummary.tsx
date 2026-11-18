@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useId, useState } from "react";
 import type { RecipeEntry, RecipeLocale } from "../../types/content";
-import { eatenPortions, scalePortionRange, verbalGkForPortion, type CarbohydrateChoice, type CarbohydrateComparison, type IngredientPortion, type NamedGkAlternative, type originalPortionGk, type PortionCarbs, type PortionEvidence, type SideCarbohydrate } from "./gk-portion";
+import { eatenPortions, reviewedIngredientPortions, scalePortionRange, verbalGkForPortion, type CarbohydrateChoice, type CarbohydrateComparison, type IngredientPortion, type NamedGkAlternative, type originalPortionGk, type PortionCarbs, type PortionEvidence, type SideCarbohydrate } from "./gk-portion";
 import type { GkRange } from "./gk-estimate";
 import { formatGlycemicLoadNumber } from "./gk80-format";
 
@@ -336,6 +336,8 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batc
   const t = portionCopy[locale];
   const format = new Intl.NumberFormat(locale).format;
   const ingredient = evidence?.driver && recipe.ingredients[evidence.driver.ingredientIndex]?.item;
+  const ingredientPortions = reviewedIngredientPortions(evidence);
+  const reviewedSource = evidence?.reviewedSource;
   const preparationScope = carbs && !evidence?.carbohydrateScope && (carbs.choices || evidence?.ingredientPortion?.source) && evidence?.condition?.[locale];
   const carbohydrateScope = carbs && (evidence?.carbohydrateScope?.[locale] || preparationScope);
   return <div className="recipe-portion">
@@ -354,16 +356,17 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batc
         <div><dt>{t.carbs}</dt><dd data-portion-carbohydrate={carbs.definition}>{t.about} {describeCarbs(scalePortionRange(carbs.range, multiplier), locale)} {locale === "th" ? "กรัม" : "g"}</dd></div>
       </dl> : <p className="recipe-disclosure">{t.missingCarbs}</p>}
       {carbs ? <p className="recipe-disclosure">{t[carbs.definition]}</p> : null}
-      {evidence?.ingredientPortion ? <IngredientPortionDetails ingredient={evidence.ingredientPortion} locale={locale} multiplier={multiplier} /> : null}
+      {ingredientPortions.map((ingredientPortion, index) =>
+        <IngredientPortionDetails key={index} ingredient={ingredientPortion} locale={locale} multiplier={multiplier} />)}
     </div>
     <OriginalCarbohydrateComparison comparison={evidence?.carbohydrateComparisons?.[locale]} locale={locale} multiplier={multiplier} />
     {ingredient ? <p>{evidence?.driver?.coversMajority ? t.main(ingredient) : t.known(ingredient)}</p> : null}
     {!preparationScope && (evidence?.condition?.[locale] || !carbohydrateScope)
       ? <p className="recipe-disclosure">{evidence?.condition?.[locale] ?? t.scope}</p> : null}
-    {evidence?.reviewedSource && !evidence.verbal && (evidence.condition || evidence.carbohydrateScope || evidence.classLimitation || ingredient || evidence.ingredientPortion)
-      && !carbs?.choices?.some(choice => choice.source === evidence.reviewedSource)
-      && !ingredientPortionLinksTo(evidence.ingredientPortion, evidence.reviewedSource) ? <p className="recipe-disclosure">
-      <ReviewedPortionSource source={evidence.reviewedSource} locale={locale} />
+    {evidence && reviewedSource && !evidence.verbal && (evidence.condition || evidence.carbohydrateScope || evidence.classLimitation || ingredient || evidence.ingredientPortion)
+      && !carbs?.choices?.some(choice => choice.source === reviewedSource)
+      && !ingredientPortions.some(item => ingredientPortionLinksTo(item, reviewedSource)) ? <p className="recipe-disclosure">
+      <ReviewedPortionSource source={reviewedSource} locale={locale} />
     </p> : null}
   </div>;
 }

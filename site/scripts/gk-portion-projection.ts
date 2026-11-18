@@ -33,20 +33,23 @@ interface CountedRecipeIngredient {
   components: { availableCarbsGPer100g: number; source: string; gramsPerPiece?: number }[];
 }
 
+interface ReviewedIngredientPortion {
+  index: number;
+  ingredientSha256: string;
+  labels: LocalizedText;
+  unit: IngredientPortion["unit"];
+  source?: string;
+  sourceReview?: { file: string; sha256: string };
+  availableCarbsGPer100g?: number;
+  declaredCarbsGPer100g?: number;
+  carbohydrateAlternatives?: { label: LocalizedText; availableCarbsGPer100g: number; source: string }[];
+}
+
 interface ReviewedPortion {
   recipeBindingSha256: string;
   preparationSha256?: string;
-  ingredientPortion?: {
-    index: number;
-    ingredientSha256: string;
-    labels: LocalizedText;
-    unit: IngredientPortion["unit"];
-    source?: string;
-    sourceReview?: { file: string; sha256: string };
-    availableCarbsGPer100g?: number;
-    declaredCarbsGPer100g?: number;
-    carbohydrateAlternatives?: { label: LocalizedText; availableCarbsGPer100g: number; source: string }[];
-  };
+  ingredientPortion?: ReviewedIngredientPortion;
+  additionalIngredientPortions?: ReviewedIngredientPortion[];
   alternativeLabels?: Record<string, LocalizedText>;
   versionAlternativeLabels?: { versionId: string; lower: LocalizedText; upper: LocalizedText };
   legacyGkHold?: true;
@@ -228,7 +231,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
     throw new Error(`${recipeId}: reviewed GK portion no longer matches the recipe. Re-review the amount, preparation and sides.`);
   }
   if (review && (review.verbal || review.condition || review.carbohydrateScope || review.legacyGkHold || review.ingredientProduct || review.classLimitation
-      || review.ingredientPortion || review.alternativeLabels || review.versionAlternativeLabels
+      || review.ingredientPortion || review.additionalIngredientPortions?.length || review.alternativeLabels || review.versionAlternativeLabels
       || review.zeroCarbohydrate || review.wholeCarbohydrateOnly || review.declaredLabelIngredientIndices
       || review.portionGrams || review.piecesPerServing || review.sideCarbohydrate)
       && review.preparationSha256 !== portionPreparationHash(markdown)) {
@@ -347,11 +350,18 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
     if (!review.nutritionSha256 || !portion.availableCarbs) throw new Error(`${recipeId}: verbal GK requires reviewed whole-portion carbohydrate evidence.`);
     portion.verbal = review.verbal;
   }
-  if (review?.ingredientPortion) {
+  const primaryIngredient = review?.ingredientPortion;
+  const additionalIngredients = review?.additionalIngredientPortions ?? [];
+  const ingredients = primaryIngredient ? [primaryIngredient, ...additionalIngredients] : [];
+  if ((!primaryIngredient && additionalIngredients.length) ||
+      new Set(ingredients.map(ingredient => ingredient.index)).size !== ingredients.length) {
+    throw new Error(`${recipeId}: reviewed partial portions require a primary ingredient and distinct ingredients.`);
+  }
+  for (const ingredientReview of ingredients) {
     const { index, ingredientSha256, labels, unit, source, sourceReview, availableCarbsGPer100g, declaredCarbsGPer100g,
-      carbohydrateAlternatives } = review.ingredientPortion;
+      carbohydrateAlternatives } = ingredientReview;
     const ingredient = data.ingredients[index];
-    if (!["g", "dl", "kpl", "arkkia"].includes(unit) || !ingredient || ingredient.unit !== unit || typeof ingredient.amount !== "number"
+    if (!Number.isInteger(index) || !["g", "dl", "kpl", "arkkia"].includes(unit) || !ingredient || ingredient.unit !== unit || typeof ingredient.amount !== "number"
         || !Number.isFinite(ingredient.amount) || ingredient.amount <= 0
         || !Number.isInteger(data.servings) || data.servings <= 0
         || (source !== undefined && !httpsSource(source))
@@ -366,14 +376,19 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
       }
     }
     const amountPerServing = ingredient.amount / data.servings;
-    portion.ingredientPortion = { name: labels, amountPerServing, unit, ...(source && { source }) };
+    const ingredientPortion: IngredientPortion = { name: labels, amountPerServing, unit, ...(source && { source }) };
+    if (ingredientReview === primaryIngredient) portion.ingredientPortion = ingredientPortion;
+    else (portion.additionalIngredientPortions ??= []).push(ingredientPortion);
     if (portion.driver?.ingredientIndex === index && !portion.driver.coversMajority) delete portion.driver;
     const carbsGPer100g = availableCarbsGPer100g ?? declaredCarbsGPer100g;
-    if (counted) {
+    if (ingredientReview !== primaryIngredient && carbsGPer100g !== undefined && !source) {
+      throw new Error(`${recipeId}: additional ingredient carbohydrate requires its own source.`);
+    }
+    if (counted && ingredientReview === primaryIngredient) {
       if (unit !== "kpl" || carbohydrateAlternatives || carbsGPer100g !== undefined) {
         throw new Error(`${recipeId}: counted ingredient carbohydrate must use the reviewed recipe yield.`);
       }
-      portion.ingredientPortion.availableCarbsGPerServing = counted.batchCarbohydrate / data.servings;
+      ingredientPortion.availableCarbsGPerServing = counted.batchCarbohydrate / data.servings;
     }
     if (availableCarbsGPer100g !== undefined || declaredCarbsGPer100g !== undefined) {
       if (carbohydrateAlternatives || (availableCarbsGPer100g !== undefined && declaredCarbsGPer100g !== undefined)) {
@@ -383,15 +398,15 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
         throw new Error(`${recipeId}: invalid partial ingredient carbohydrate composition.`);
       }
       const carbsGPerServing = amountPerServing * carbsGPer100g / 100;
-      if (availableCarbsGPer100g !== undefined) portion.ingredientPortion.availableCarbsGPerServing = carbsGPerServing;
-      else portion.ingredientPortion.declaredCarbsGPerServing = carbsGPerServing;
+      if (availableCarbsGPer100g !== undefined) ingredientPortion.availableCarbsGPerServing = carbsGPerServing;
+      else ingredientPortion.declaredCarbsGPerServing = carbsGPerServing;
     }
     if (carbohydrateAlternatives) {
       if (unit !== "g" || !distinctChoiceLabels(carbohydrateAlternatives) || !carbohydrateAlternatives.every(choice =>
         validCarbohydrateRate(choice.availableCarbsGPer100g) && httpsSource(choice.source))) {
         throw new Error(`${recipeId}: invalid partial ingredient carbohydrate alternatives.`);
       }
-      portion.ingredientPortion.carbohydrateAlternatives = carbohydrateAlternatives.map(choice => ({
+      ingredientPortion.carbohydrateAlternatives = carbohydrateAlternatives.map(choice => ({
         label: choice.label, source: choice.source,
         availableCarbsGPerServing: amountPerServing * choice.availableCarbsGPer100g / 100,
       }));
@@ -404,7 +419,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
         || !/^\d{13}$/.test(ean) || !ingredient.note?.includes(ean)) {
       throw new Error(`${recipeId}: product note does not match the reviewed ingredient and barcode.`);
     }
-    if (review.ingredientPortion?.index !== index) portion.driver ??= { ingredientIndex: index, coversMajority: false };
+    if (!ingredients.some(ingredient => ingredient.index === index)) portion.driver ??= { ingredientIndex: index, coversMajority: false };
   }
   if (review) portion.reviewedSource = review.publicSource ?? review.source;
   if (review?.classLimitation) portion.classLimitation = review.classLimitation;

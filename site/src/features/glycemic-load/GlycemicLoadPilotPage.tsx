@@ -9,7 +9,7 @@ import {scopedPolyolDisclosure} from '../recipes/scoped-polyol-disclosure';
 import {recoveryDisclosure} from '../recipes/recovery-disclosure';
 import { formatOriginalPortionGk } from "../recipes/gk80-format";
 import { describeCarbs, GkAlternatives, IngredientPortionDetails, ingredientPortionLinksTo, OriginalCarbohydrateComparison, originalGkClassDisclosure, portionCopy as recipePortionCopy, ReviewedPortionSource, SideCarbohydrateReference, WholeCarbohydrateChoices } from "../recipes/RecipePortionSummary";
-import {originalPortionGk, verbalGkForPortion} from '../recipes/gk-portion';
+import {originalPortionGk, reviewedIngredientPortions, verbalGkForPortion} from '../recipes/gk-portion';
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useContent } from "@/lib/content";
@@ -260,6 +260,8 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
       : text.incomplete;
     const portionWords = recipePortionCopy[locale];
     const knownIngredient = knownIngredientNames?.[result.recipeId]?.[locale];
+    const ingredientPortions = reviewedIngredientPortions(portion);
+    const reviewedSource = portion?.reviewedSource;
     const preparationScope = carbs && !portion?.carbohydrateScope && (carbs.choices || portion?.ingredientPortion?.source) && portion?.condition?.[locale];
     const carbohydrateScope = carbs && (portion?.carbohydrateScope?.[locale] || preparationScope);
     return <li key={result.recipeId} id={result.recipeId} className="glycemic-pilot__recipe" tabIndex={-1}>
@@ -271,15 +273,16 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
         <WholeCarbohydrateChoices choices={carbs.choices} locale={locale} />
         <p>{portionWords[carbs.definition]}</p>
       </> : carbs ? <p>{portionText.grams(describeCarbs(carbs.range, numberLocale))} · {portionWords[carbs.definition]}</p> : null}
-      {portion?.ingredientPortion ? <IngredientPortionDetails ingredient={portion.ingredientPortion} locale={locale} /> : null}
+      {ingredientPortions.map((ingredientPortion, index) =>
+        <IngredientPortionDetails key={index} ingredient={ingredientPortion} locale={locale} />)}
       {knownIngredient ? <p data-gk-known-ingredient>{portionWords.known(knownIngredient)}</p> : null}
       {!preparationScope && portion?.condition ? <p>{portion.condition[locale]}</p> : null}
       <OriginalCarbohydrateComparison comparison={portion?.carbohydrateComparisons?.[locale]} locale={locale} />
       {portion?.sideCarbohydrate ? <SideCarbohydrateReference side={portion.sideCarbohydrate} locale={locale} /> : null}
-      {portion?.reviewedSource && !verbal && (portion.condition || portion.carbohydrateScope || portion.classLimitation || knownIngredient || (!base && portion.ingredientPortion))
-        && !carbs?.choices?.some(choice => choice.source === portion.reviewedSource)
-        && !ingredientPortionLinksTo(portion.ingredientPortion, portion.reviewedSource)
-        ? <p><ReviewedPortionSource source={portion.reviewedSource} locale={locale} /></p> : null}
+      {portion && reviewedSource && !verbal && (portion.condition || portion.carbohydrateScope || portion.classLimitation || knownIngredient || (!base && portion.ingredientPortion))
+        && !carbs?.choices?.some(choice => choice.source === reviewedSource)
+        && !ingredientPortions.some(item => ingredientPortionLinksTo(item, reviewedSource))
+        ? <p><ReviewedPortionSource source={reviewedSource} locale={locale} /></p> : null}
       {result.status === "CALCULATED" ? <>
         <p className="gk-evidence__value" data-gk-ingredient-subset={portion?.gkIngredientSubset}>
           <strong>{portion?.gkIngredientSubset ? portionWords.ingredientGk : text.value} · {numericText}</strong>
