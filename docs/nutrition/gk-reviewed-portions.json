@@ -1110,7 +1110,7 @@
         "th": "แป้งสาลีบดปานกลางน้ำหนักแห้ง"
       },
       "unit": "g",
-      "availableCarbsGPer100g": 74.0,
+      "availableCarbsGPer100g": 74,
       "source": "https://fineli.fi/fineli/fi/elintarvikkeet/110"
     },
     "publicSource": "https://www.valio.fi/tuotteet/valio-raejuusto/"
@@ -4770,6 +4770,268 @@
       "en": "The estimate applies to the pancakes on their own. The GL estimate comes from the cream cheese in the batter. Count any savoury filling separately.",
       "sv": "Uppskattningen gäller plättarna som de är. GL-uppskattningen bygger på färskosten i smeten. Räkna eventuell salt fyllning separat.",
       "th": "ค่าประมาณใช้กับแพนเค้กเปล่า ค่า GL คำนวณจากครีมชีสในแป้ง ให้คิดไส้คาวแยกหากใส่เพิ่ม"
+    }
+  },
+  "khao-man-gai-vhh": {
+    "recipeBindingSha256": "c7ab9efc380e12f09e7c00d93e7463259d423648015e1c2677e897fdaa1a09ff",
+    "preparationSha256": "5244ae4646c7fb3af8fb3f72e61c0d3c1dd4d10389f5a295271a6e24f2982d1c",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/glycemic-load-pilot-input.json#L5814",
+    "reasoning": "A four-serving recipe serves pan-fried cauliflower rice, sliced cucumber and ginger-soybean paste sauce with the chicken. The sealed GK 3.6675 includes 2.772 from Fineli 322 cauliflower (175 g raw recipe weight and 4.2 g available CHO per serving) and 0.462 from Fineli 346 cucumber (50 g and 0.7 g); both use Atkinson 2021 Table 1 vegetable mean GI 66. The named Healthy Boy paste in the sauce supplies the remaining 0.4335 from 7.5 g paste and 1.275 g available CHO per serving using the legume mean GI 34. The recipe may serve extra cooking liquid separately. The specified stock is tracked as 0.015 g of the 0.6605 g omitted for the original recipe, and there is no positive GK from stock or from the rest of the sauce. No estimate for an extra bowl of broth. Legacy available CHO remains unverified; the published 11.16 g point is total carbohydrate.",
+    "condition": {
+      "fi": "Arvio koskee annosta, jossa on 175 g kukkakaaliriisiä ennen paistamista ja 50 g kurkkua. GK-arvioon vaikuttaa myös kastikkeen Healthy Boy -soijapaputahna.",
+      "en": "The estimate applies to a serving with 175 g of cauliflower rice weighed before frying and 50 g of cucumber. The Healthy Boy soybean paste in the sauce also contributes to the GL estimate.",
+      "sv": "Uppskattningen gäller en portion med 175 g blomkålsris vägt före stekning och 50 g gurka. Sojabönspastan Healthy Boy i såsen bidrar också till GL-uppskattningen.",
+      "th": "ค่าประมาณนี้ใช้กับหนึ่งที่ที่มีข้าวดอกกะหล่ำ 175 กรัมชั่งก่อนผัด และแตงกวา 50 กรัม เต้าเจี้ยว Healthy Boy ในซอสมีส่วนในค่าประมาณ GL ด้วย"
+    }
+  },
+  "gai-yang-vhh": {
+    "recipeBindingSha256": "bfed6da30db5bcb5ab8c9e06d0148e8a7e114fe1ca47371bac5994f3a6397f04",
+    "preparationSha256": "a053a2195245122cbb09bd6d72008f685f76668b4a7717697d767b2e2d02566a",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/glycemic-load-pilot-input.json#L7232",
+    "reasoning": "The four-serving marinated grilled or oven-cooked chicken includes 500 g cauliflower rice heated in the pan and 200 g cucumber sliced as sides. The sealed GK 2.40075 is entirely Fineli 322 cauliflower (1.93875) and Fineli 346 cucumber (0.462), each using the Atkinson 2021 Table 1 broad vegetable mean GI 66. The ingredient model tracks 1.3465 g omitted from the marinade and herbs, principally fish sauce, soy sauce and garlic. The listed erythritol is Foodin pure erythritol. No quantified sauce retention adjustment; the public carbohydrate value of 9.45 g is historical total carbohydrate.",
+    "condition": {
+      "fi": "GK-arvio muodostuu lisukkeista, joihin käytetään annosta kohti 125 g kukkakaaliriisiä ja 50 g kurkkua. Laskennassa lisukkeille käytetään kasvisten GI-keskiarvoa.",
+      "en": "The GL estimate comes from the sides, which use 125 g of cauliflower rice and 50 g of cucumber per serving. The calculation uses an average GI for vegetables.",
+      "sv": "GL-uppskattningen bygger på tillbehören, 125 g blomkålsris och 50 g gurka per portion. Beräkningen använder ett genomsnittligt GI för grönsaker.",
+      "th": "ค่าประมาณ GL คำนวณจากเครื่องเคียง โดยหนึ่งที่ใช้ข้าวดอกกะหล่ำ 125 กรัม และแตงกวา 50 กรัม การคำนวณใช้ค่า GI เฉลี่ยของผัก"
+    }
+  },
+  "kai-jiew-vhh": {
+    "recipeBindingSha256": "5378555d4ab3d6bf268d3f487e7718f3c94f7976015119e624af51344d52950b",
+    "preparationSha256": "f27502a87b4a7f3565ea93c4223830d203c51b4440c8ab825f251312ae86cd31",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/glycemic-load-pilot-input.json#L8794",
+    "reasoning": "The recipe uses 440 g eggs, with 15 g spring onion explicitly optional and 150 g cucumber as a side across four servings. Sealed GK 0.46035 comprises 0.3465 for Fineli 346 cucumber and 0.11385 for AFCD F006250 spring onion, both using Atkinson 2021 Table 1 broad vegetable mean GI 66. Consequently the optional spring onion contributes almost a quarter (24.7%) of the model point. The model scope is the original mixture with onion; no alternative numerical estimate is published. Egg 0.33 g, named fish sauce 0.085 g and coriander 0.006312 g form the 0.421312 g in tracked omissions. Published 1.66 g is legacy total CHO, not separately verified available CHO.",
+    "condition": {
+      "fi": "GK-arvio sisältää kurkkulisukkeen ja ohjeessa valinnaisen kevätsipulin. Arvio vastaa annosta, jossa kevätsipuli on mukana.",
+      "en": "The GL estimate includes the cucumber side and assumes you add the optional spring onion to the omelette.",
+      "sv": "GL-uppskattningen omfattar gurktillbehöret och utgår från att den valfria vårlöken tillsätts i omeletten.",
+      "th": "ค่าประมาณ GL รวมแตงกวาที่เสิร์ฟคู่กัน และคำนวณโดยใส่ต้นหอมที่ระบุว่าเลือกใส่ได้ลงในไข่เจียว"
+    }
+  },
+  "kermainen-lohipata": {
+    "recipeBindingSha256": "d628a9d72bd46f070546af371fa1a58aea5a640fdad370324d22ac593df23ece",
+    "preparationSha256": "0d989910e35c1577e543a724e3947fe255d5ff7e5a09940d6ab93a941237e83a",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/glycemic-load-pilot-input.json#L7133",
+    "reasoning": "The four-serving tray-bake calls for 200 g of 11% plain cream cheese and 200 g of 38% whipping cream (50 g each per serving) and allows a separate vegetable side with no specification. Fineli 11571 cream cheese and Fineli 631 whipping cream contribute 0.7 and 0.5075 of the legacy GK 1.257 (96.1% combined), using the Atkinson 2021 Table 1 dairy mean GI 35. Fineli 33456 spinach contributes the remaining 0.0495 using the generic vegetable mean GI 66. Onion and garlic remain tracked omissions within 1.49935 g per serving; no measured meal GI or side estimates. The displayed 6.08 g is the legacy total carbohydrate from the tray-bake only.",
+    "condition": {
+      "fi": "GK-arvio koskee lohipataa sellaisenaan. Se muodostuu pääosin tuorejuustosta ja kuohukermasta. Erikseen tarjottu kasvislisuke jää arvion ulkopuolelle.",
+      "en": "The GL estimate covers the salmon bake on its own and comes mainly from the cream cheese and whipping cream. A separately served vegetable side is outside the estimate.",
+      "sv": "GL-uppskattningen gäller laxgratängen som den är och bygger främst på färskosten och vispgrädden. Grönsakstillbehör som serveras separat ingår inte.",
+      "th": "ค่าประมาณ GL ใช้กับแซลมอนอบตามสูตร โดยส่วนใหญ่มาจากครีมชีสและวิปปิงครีม ไม่รวมผักที่เสิร์ฟแยกเป็นเครื่องเคียง"
+    }
+  },
+  "yum-woon-sen-vhh": {
+    "recipeBindingSha256": "6e2f2d681b58d338628cb8221464daf76e9ddefcdeb37855bd8189ec8688e5ef",
+    "preparationSha256": "64dc5b58b11c56e368fefdc0abab194d55d099149ed5a7198504918792abf85d",
+    "reviewedAt": "2026-11-18",
+    "source": "https://www.koro.com/fi/detail/3b5494aabff551ca99b988b15da2b5ab",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/glycemic-load-pilot-input.json#L8352",
+    "reasoning": "Four servings use 400 g of specifically named prepared KoRo konjac noodles. The approved label snapshot has zero declared available carbohydrate for the prepared product, not a tested GI or a claim for other konjac products. Tomato (Fineli 352 and tomato analogue GI 22) supplies the whole 0.2371875 GK. Red onion, fish sauce, lime, chilli, coriander and celery account for 1.1332 g tracked omissions. The recipe allows celery or Chinese celery. Legacy uses the celery composition; assessing any alternative noodles or celery composition still requires its own evidence. The historical 6.88 g value is total carbohydrate.",
+    "condition": {
+      "fi": "Yhteen annokseen käytetään 100 g ohjeessa nimettyjä kypsiä KoRo-konjaknuudeleita. Laskettu GK-osuus tulee tomaatista. Jos vaihdat nuudelit, tarkista uuden tuotteen hiilihydraatit pakkauksesta.",
+      "en": "One serving uses 100 g of the prepared KoRo konjac noodles specified in the recipe. The tomato supplies the calculated GL. Check the package for carbohydrate information if you change noodles.",
+      "sv": "En portion använder 100 g färdiga konjaknudlar från KoRo enligt receptet. Tomaten står för den beräknade GL-belastningen. Kontrollera kolhydratinnehållet på förpackningen om du byter nudlar.",
+      "th": "หนึ่งที่ใช้เส้นบุกปรุงสุก KoRo ตามสูตร 100 กรัม ค่า GL ที่คำนวณได้มาจากมะเขือเทศ หากเปลี่ยนเส้น ให้ตรวจปริมาณคาร์โบไฮเดรตบนฉลากของผลิตภัณฑ์ใหม่"
+    }
+  },
+  "vhh-brita-kakku": {
+    "recipeBindingSha256": "95f010a7e946062b698dc94ac1f7d54b2f263619719feaa1c7f4c6fbeee7f1a5",
+    "preparationSha256": "0a19b02357e216c6278ea4357e02186a081135db0db0e0dd9623042fea1691f8",
+    "nutritionSha256": "3c6ffef816e417b7212c56c6ef5b5b42a3dc95fc350b221a52849f6f14bde0b9",
+    "reviewedAt": "2026-11-18",
+    "source": "https://foodin.fi/tuote/erytritoli-luomu-200g-2/",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/calculations/vhh-brita-kakku.json",
+    "reasoning": "Eight servings use 70 g erythritol in the base and 60 g in the meringue. Both the historical GK model and reviewed composition use the Foodin pure erythritol label; CHO=100 g/100 g and verified polyols=100 g/100 g on the EU label are handled as zero available CHO for this product, not a general class inference. Original GK 0.78925 consists of 0.5355 for 18.75 g strawberries and 0.25375 for 25 g cream per serving, using the 2021 Table 1 fruit and dairy means. The 1.07875 g tracked GK omissions include almond meal, egg, butter and a baking-powder bound. The verified available CHO 2.72 g remains the original recipe with erythritol; no substitutions are calculated.",
+    "condition": {
+      "fi": "GK-arvio muodostuu täytteen mansikoista ja kermavaahdosta.",
+      "en": "The GL estimate comes from the strawberries and whipped cream in the filling.",
+      "sv": "GL-uppskattningen bygger på jordgubbarna och vispgrädden i fyllningen.",
+      "th": "ค่าประมาณ GL มาจากสตรอว์เบอร์รีและวิปครีมในไส้"
+    },
+    "carbohydrateScope": {
+      "fi": "Hiilihydraattiarvio koskee ohjetta, jossa sekä pohja että marenki on makeutettu erytritolilla.",
+      "en": "The carbohydrate estimate applies to the recipe with erythritol in both the base and the meringue.",
+      "sv": "Kolhydratberäkningen gäller receptet med erytritol i både bottnen och marängen.",
+      "th": "ค่าประมาณคาร์โบไฮเดรตใช้กับสูตรที่ใช้เอริทริทอลทั้งในตัวเค้กและเมอแรงก์"
+    }
+  },
+  "vhh-mokkapalat": {
+    "recipeBindingSha256": "bcae6a2d92dc1bd0a9796a02c4b59f71bcc919aa80554000ead86c4993bd39eb",
+    "preparationSha256": "4b811e9af11afe7bcaa38ebde403a43e05e67e52b56f75ae16637a0248cf8098",
+    "nutritionSha256": "59297d394db97433db66b3d8eb0b2d6d2a12243cf953c7ae033a9317f8b5ca74",
+    "reviewedAt": "2026-11-18",
+    "source": "https://foodin.fi/tuote/erytritoli-luomu-200g-2/",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/calculations/vhh-mokkapalat.json",
+    "reasoning": "Twelve servings use 70 g erythritol in the base and 100 g powdered erythritol in the icing; the sealed records map both to the same Foodin pure erythritol label. The 0.084583333 GK comes entirely from Fineli 631 cream (0.241667 g available CHO/serving), using the broad dairy mean GI 35. The 1.02375 g tracked omissions include 0.54 g from almond meal, cocoa and raising agent bounds, egg and butter. The independent 1.15 g available CHO calculation retains almonds and cocoa, which are absent from the GK sum. No new carb or GK estimate for chocolate, sweetener blend or sugar substitution.",
+    "condition": {
+      "fi": "Laskettu GK-osuus tulee pohjan kuohukermasta. Mantelijauhon ja kaakaon hiilihydraatit sisältyvät hiilihydraattiarvioon.",
+      "en": "The cream in the base supplies the calculated GL. The carbohydrate estimate includes carbohydrate from both the almond meal and cocoa.",
+      "sv": "Vispgrädden i bottnen står för den beräknade GL-belastningen. Kolhydratberäkningen omfattar kolhydraterna från både mandelmjöl och kakao.",
+      "th": "ค่า GL ที่คำนวณได้มาจากวิปปิงครีมในตัวเค้ก ค่าประมาณคาร์โบไฮเดรตรวมทั้งส่วนของแป้งอัลมอนด์และโกโก้"
+    },
+    "carbohydrateScope": {
+      "fi": "Hiilihydraattiarvio koskee ohjetta, jossa sekä pohja että kuorrute on makeutettu erytritolilla.",
+      "en": "The carbohydrate estimate applies to the recipe with erythritol in both the base and the icing.",
+      "sv": "Kolhydratberäkningen gäller receptet med erytritol i både bottnen och glasyren.",
+      "th": "ค่าประมาณคาร์โบไฮเดรตใช้กับสูตรที่ใช้เอริทริทอลทั้งในตัวเค้กและหน้าเค้ก"
+    }
+  },
+  "keto-joulutortut": {
+    "recipeBindingSha256": "721f6b1d556a4a631ab969a3a0c6b0216ef7d120525d5c15beae3450d9f723d7",
+    "preparationSha256": "5193b3588dc229b78d66bd237be36ede57d1cf4afd03f41e9d133ec32d3fcdd5",
+    "nutritionSha256": "7f8d1b009490e75863a5cec1c149f49fe0a6cafea8fb88a7da1c3efe333de362",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/calculations/keto-joulutortut.json",
+    "reasoning": "The recipe divides 40 g jam between eight pastries. Both the sealed GK and audited 3.78 g available CHO use Fineli 32744 plum jam at 46.066 g/100 g, hence 2.3033 g available CHO in the 5 g of reference jam. Applying the 2021 Table 1 GI 58 average for sugars and syrups yields 1.335914, 77.3% of the sealed 1.727339 GK. The remainder comes from almond meal and cream cheese. The legacy almond row uses Fineli 379 (1.2375 g available CHO/serving), whereas the audited composition uses AFCD F006077 (1.0125 g) without changing public carbohydrate or GK numbers. The recipe already specifies product variation; no direct jam GI or numerical substitute is inferred.",
+    "condition": {
+      "fi": "Luumuhillo muodostaa suurimman osan GK-arviosta. Laskelmassa hillolle käytetään sokereiden ja siirappien GI-keskiarvoa.",
+      "en": "Plum jam accounts for most of the GL estimate. The calculation uses an average GI for sugars and syrups for the jam.",
+      "sv": "Plommonsylten står för huvuddelen av GL-uppskattningen. Beräkningen använder ett genomsnittligt GI för socker och sirap som ersättningsvärde för sylten.",
+      "th": "แยมพลัมเป็นส่วนหลักของค่าประมาณ GL การคำนวณใช้ค่า GI เฉลี่ยของกลุ่มน้ำตาลและน้ำเชื่อมแทนค่า GI ของแยม"
+    },
+    "carbohydrateScope": {
+      "fi": "Yhdessä tortussa on 5 g luumuhilloa. Tarkista valitsemasi hillon hiilihydraatit pakkauksesta, sillä tuotteiden pitoisuudet vaihtelevat.",
+      "en": "One pastry contains 5 g of plum jam. Check the carbohydrate content on the package, as it varies between jams.",
+      "sv": "En stjärntårta innehåller 5 g plommonsylt. Kontrollera kolhydratinnehållet på förpackningen, eftersom det varierar mellan olika sylter.",
+      "th": "ขนมหนึ่งชิ้นใช้แยมพลัม 5 กรัม ตรวจปริมาณคาร์โบไฮเดรตบนฉลาก เพราะแยมแต่ละผลิตภัณฑ์มีปริมาณต่างกัน"
+    }
+  },
+  "meksikolainen-munakokkeli-pico-de-gallolla": {
+    "recipeBindingSha256": "77b7a75d4b5d14bbfc1e29a673325405294f9ea1d24650890aadb9553d01dc36",
+    "preparationSha256": "e7a23319b19efa49858104934217a00e0a808843334c64d0043ac4a405343d4d",
+    "nutritionSha256": "117c96cb376b035012371d3e0b1a6c8a7b3b8cb0421ea962207822c3fe795dcd",
+    "reviewedAt": "2026-11-18",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/10824718/",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/calculations/meksikolainen-munakokkeli-pico-de-gallolla.json",
+    "reasoning": "The two-serving recipe divides 100 g ready corn tortilla warmed in a dry pan. Fineli 35554 commercial corn tortilla contributes 25.9225 g available CHO/serving and 13.58339 of sealed 14.057765 GK (96.6%). The bound Noriega et al. human food study (2000, 8 participants, bread reference, 3 h) gives 73.8 ± 6.5 bread GI, converted with 0.71 and stored as 52.4 on the glucose scale. Tomato provides 0.474375 and the egg and coriander tracked omissions sum to 0.415 g. Separate audited 28.30 g available CHO uses the same tortilla composition. No data for other tortilla products or sides; adjacent black-bean taco recipe has an independent explicit dry/cooked bean review hold.",
+    "condition": {
+      "fi": "Maissitortilla muodostaa lähes koko GK-arvion. Laskelma käyttää tutkimuksessa testatun maissitortillan GI-arvoa, joka on muunnettu glukoosiasteikolle.",
+      "en": "The corn tortilla accounts for nearly all of the GL estimate. The calculation uses the GI of a tested corn tortilla, converted to the glucose scale.",
+      "sv": "Majstortillan står för nästan hela GL-uppskattningen. Beräkningen använder GI för en majstortilla i en studie, omräknat till glukosskalan.",
+      "th": "แผ่นตอร์ติญาข้าวโพดคิดเป็นเกือบทั้งหมดของค่าประมาณ GL การคำนวณใช้ค่า GI ของแผ่นตอร์ติญาข้าวโพดจากงานวิจัยที่แปลงเป็นสเกลอ้างอิงกลูโคส"
+    },
+    "carbohydrateScope": {
+      "fi": "Yhteen annokseen käytetään 50 g maissitortillaa, joka lämmitetään kuivalla pannulla. Jos vaihdat tortillaa, tarkista hiilihydraatit pakkauksesta.",
+      "en": "One serving uses 50 g of corn tortilla, warmed in a dry pan. Check the package for carbohydrate information if you change tortillas.",
+      "sv": "En portion innehåller 50 g majstortilla som värms i en torr stekpanna. Kontrollera kolhydratinnehållet på förpackningen om du byter tortilla.",
+      "th": "หนึ่งที่ใช้แผ่นตอร์ติญาข้าวโพด 50 กรัม อุ่นในกระทะแห้ง หากเปลี่ยนแผ่นตอร์ติญา ให้ตรวจปริมาณคาร์โบไฮเดรตบนฉลาก"
+    }
+  },
+  "meksikolainen-aamiais-tacot-mustapavuilla": {
+    "recipeBindingSha256": "58d8f338a868ca8dd7403bb602e7248de4f715e0deca71344765ffb495ae1132",
+    "preparationSha256": "56fb7b3df8dc18648168dba006d7e99763cdbf37800e9883e989795188c09eb1",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/reseptit/aamupalat/meksikolainen-aamiais-tacot-mustapavuilla.md#L64-L66",
+    "reviewedAt": "2026-11-18",
+    "reasoning": "The current C13 public preparation uses cooked black beans but the source explicitly keeps whole-recipe carbohydrate and GK on hold until the historical 150 g basis is resolved. The legacy GK 16.04414 used 150 g boiled beans and retains its sealed audit entry. This review projects only the ready-to-use tortilla example: 100 g in the two-serving recipe, 50 g per serving and 25.9225 g of available carbohydrate with Fineli Release 20 #35554. The same public preparation warms ready-made corn tortillas and the exact comparison product is a commercial gluten-free tortilla.",
+    "legacyGkHold": true,
+    "condition": {
+      "fi": "Ohjeessa pavut kuumennetaan kypsinä. Koko annoksen arvio edellyttää tietoa siitä, koskeeko alkuperäinen 150 g:n määrä kuivia vai kypsiä papuja. Tortillan osuus perustuu Finelin gluteenittomaan maissitortillaan. Tarkista käyttämäsi tortillan pakkaus.",
+      "en": "The recipe reheats cooked beans. A whole-serving estimate needs confirmation of whether the original 150 g was weighed dry or cooked. The tortilla figure uses Fineli’s gluten-free corn tortilla. Check the nutrition label for the tortilla you use.",
+      "sv": "I receptet värms redan kokta bönor. För en uppskattning av hela portionen behöver det klargöras om de ursprungliga 150 grammen avsåg torra eller kokta bönor. Uppgiften bygger på Finelis glutenfria majstortilla. Kontrollera näringsvärdet på förpackningen till tortillan du använder.",
+      "th": "สูตรนี้นำถั่วที่สุกแล้วมาอุ่น ก่อนประเมินทั้งที่ต้องยืนยันว่าปริมาณเดิม 150 กรัมหมายถึงถั่วแห้งหรือถั่วสุก ตัวเลขอ้างอิงตอร์ติญาข้าวโพดปราศจากกลูเตนของ Fineli ตรวจข้อมูลโภชนาการบนฉลากตอร์ติญาที่ใช้"
+    },
+    "ingredientPortion": {
+      "index": 3,
+      "ingredientSha256": "dd36bd3f7a845090b40b98b954d3c332ff28768ca069e3080682174def9d6592",
+      "labels": {
+        "fi": "Valmis maissitortilla",
+        "en": "Ready-made corn tortilla",
+        "sv": "Färdig majstortilla",
+        "th": "ตอร์ติญาข้าวโพดสำเร็จรูป"
+      },
+      "unit": "g",
+      "source": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/fineli-release-20-reference.json#L192879-L192892",
+      "availableCarbsGPer100g": 51.845
+    }
+  },
+  "karibia-mango-limejogurtti": {
+    "recipeBindingSha256": "815b9ba687e318866b61e8c0aa70efb0261fd898d2b4aec0f90c924249eeb816",
+    "preparationSha256": "2d056ec8c714e99893f0c9de2ca04ae4c7cef5320778c3dfdf21bff2c9cbf030",
+    "nutritionSha256": "a471a66145c43ef7d1490006366eb7c546968aa521610e389853bcb9e877bdc2",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/76.1.5",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/calculations/karibia-mango-limejogurtti.json",
+    "reasoning": "F25 review and all four built public language routes agree on two cold servings with 100 g fresh peeled mango, 50 g yogurt, 7.5 g lime juice and 10 g unsweetened dry coconut per serving. Only the coconut is optionally dry-toasted with no oil and allowed to cool. The sealed GK 7.301 is 6.426 (88.0%) from the mango raw GI 51 reference and 0.875 from plain 2.5% Fineli 619 yogurt at 5 g available CHO/100 g, using the broad dairy mean GI 35. Independently audited 15.12 g available CHO uses plain Bulgarian-type 3.9% Fineli 620 at 3.4 g/100 g, i.e. 1.70 rather than 2.50 g yogurt CHO per serving. It uses AFCD F002987 coconut instead of Fineli 382 (0.73 rather than 0.64 g coconut CHO per serving). Coconut and 0.09 g lime juice are tracked but omitted from legacy GK, 0.73 g omitted total. The raw FI generic warm-bowl steps are replaced by the SHA-locked FI projection. The public note gives each calculation’s own food reference without introducing a new point or comparing all yogurts.",
+    "condition": {
+      "fi": "Suurin osa GK-arviosta tulee 100 grammasta tuoretta kuorittua mangoa. GK-laskennassa jogurtin viitetuote on maustamaton 2,5-prosenttinen jogurtti.",
+      "en": "Most of the GL estimate comes from 100 g of fresh peeled mango. The GL calculation uses plain 2.5%-fat yogurt as its reference.",
+      "sv": "Större delen av GL-uppskattningen kommer från 100 g färsk skalad mango. GL-beräkningen använder naturell yoghurt med 2,5 % fett som referens.",
+      "th": "ค่าประมาณ GL ส่วนใหญ่มาจากมะม่วงสดปอกเปลือก 100 กรัม การคำนวณใช้โยเกิร์ตรสธรรมชาติไขมัน 2.5% เป็นค่าอ้างอิง"
+    },
+    "carbohydrateScope": {
+      "fi": "Kylmän annoksen hiilihydraattiarviossa jogurtin viitetuote on maustamaton 3,9-prosenttinen jogurtti. Kookoshiutaleet punnitaan kuivina ja ne voi paahtaa ilman öljyä.",
+      "en": "The carbohydrate estimate for the cold bowl uses plain 3.9%-fat yogurt as its reference. Weigh the coconut flakes dry and toast them without oil if desired.",
+      "sv": "Kolhydratberäkningen för den kalla portionen använder naturell yoghurt med 3,9 % fett som referens. Väg kokosflingorna torra och rosta dem utan olja om du vill.",
+      "th": "ค่าประมาณคาร์โบไฮเดรตของชามเย็นนี้ใช้โยเกิร์ตรสธรรมชาติไขมัน 3.9% เป็นค่าอ้างอิง ชั่งมะพร้าวขูดแบบแห้ง แล้วคั่วโดยไม่ใส่น้ำมันได้ตามชอบ"
+    },
+    "localizedScopeSha256": {
+      "fi": "a4edca4c06cb34301b62d794b55905870f99aeb1bff308369fb9d973d8295a3c",
+      "en": "ae52930559f10cc67f2c3cb3507f6ae6395d863c4384e4226742769d60b7e558",
+      "sv": "661570a0edcde97dda2ba69d1835b4feebfaf72017d63a07ab023c69b790f305",
+      "th": "6180c072015dad4fc9e8724eba38ac3d27c034794a2c48db1a2651fc0c21c088"
+    }
+  },
+  "valimerellinen-jogurttikulho-hunajalla": {
+    "recipeBindingSha256": "923c9bc0c03814380fc7a91428354355bca3efc8d5ca1bf50bd32c971fe970d8",
+    "preparationSha256": "db7ce507ceb7df76897f57e575293cc65c34b0d0c8f068f73ca80e601d28129e",
+    "nutritionSha256": "7546690c16b87ae313ca7d6e0a86f300ca13d9236d4d20c34697f2740ebaba23",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/76.1.5",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/calculations/valimerellinen-jogurttikulho-hunajalla.json",
+    "reasoning": "The F25-approved FI overlay and all translations make two cold servings from 100 g plain 7% Greek yogurt, 30 g walnut kernels, 50 g edible fresh fig and a single tablespoon of honey split equally. The underlying Fineli 4 reference converts one tablespoon to 20 g for the entire recipe, 10 g per serving, in both calculations. Separate audited CHO 11.19 g per serving uses AFCD F004380 at 72.3 g/100 g and counts 7.23 g available CHO for the honey. Original GK 6.092825 uses Fineli 4 at 80.8 g/100 g, giving 8.08 g available CHO in the sealed model and 4.444 GK (72.9%) using the mean of eleven honeys GI 55 from the existing 2002 primary-table reference. The same-GI sensitivity for the CHO sources would shift the point by 0.4675, far from the original low/medium boundary, without establishing a replacement. Source field means composition/model difference at the same recipe dose, not different servings or an alternative public value.",
+    "condition": {
+      "fi": "Hunaja muodostaa suurimman osan GK-arviosta. Laskennassa käytetään Finelin hunajan koostumustietoa ja tutkimuksissa mitattujen hunajien GI-keskiarvoa.",
+      "en": "Most of the GL estimate comes from honey. The calculation combines the Fineli honey composition with an average of measured GI values for honey.",
+      "sv": "Honungen står för större delen av GL-uppskattningen. Beräkningen utgår från Finelis honungssammansättning och ett genomsnitt av uppmätta GI-värden för honung.",
+      "th": "ค่าประมาณ GL ส่วนใหญ่มาจากน้ำผึ้ง โดยใช้ข้อมูลองค์ประกอบของน้ำผึ้งจาก Fineli และค่า GI เฉลี่ยจากการวัดน้ำผึ้งหลายชนิด"
+    },
+    "carbohydrateScope": {
+      "fi": "Hunaja jaetaan kahden kylmän annoksen kesken. Hiilihydraattiarvio käyttää Australian elintarviketietokannan hunajaviitettä ja laskee annokseen 10 g hunajaa.",
+      "en": "Divide the honey between the two cold bowls. The carbohydrate estimate uses the Australian food composition database’s honey reference and counts 10 g of honey per bowl.",
+      "sv": "Fördela honungen mellan de två kalla skålarna. Kolhydratberäkningen använder den australiska livsmedelsdatabasens honungsreferens och räknar med 10 g honung per skål.",
+      "th": "แบ่งน้ำผึ้งให้เท่ากันทั้งสองชามเย็น ค่าประมาณคาร์โบไฮเดรตใช้ข้อมูลน้ำผึ้งจากฐานข้อมูลองค์ประกอบอาหารของออสเตรเลีย โดยคิดน้ำผึ้งชามละ 10 กรัม"
+    },
+    "localizedScopeSha256": {
+      "fi": "a6f685395a68129f72dae1b0b22d01f08f6dd14d65e8570d4296a723793eb85b",
+      "en": "197857f5f8f547dcdb6c19245860f57e6fb807b3e1e83ecee5d437e17ef3d6f9",
+      "sv": "7f47a4a9da2eb58fb6558c0660fc7f7e75ae480a6c31a4c0e3e2776b93f146d0",
+      "th": "5e6812ddb5d0a9c343027d052ec32d8189001d28cf1bc8f8952abed27f050e13"
+    }
+  },
+  "valimerellinen-ricotta-persikkakulho": {
+    "recipeBindingSha256": "63535e9d7b24b3589c9b498bbb601be9de5f5c4bfda34938bcc156f603bd410c",
+    "preparationSha256": "bdd28fbc9b2161f6ae5bcb38ade36837a73b6c43a960bbd02b732f1003c8d2ce",
+    "nutritionSha256": "e5921125f32c7a2649cb433f081cca23f065e30012e191a2eccdd62a29415a38",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1093/ajcn/nqab233",
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/892bcd7702b7bbb2f803ab80e572ea10fcdd32f3/docs/nutrition/calculations/valimerellinen-ricotta-persikkakulho.json",
+    "reasoning": "The SHA-locked FI overlay and the E20-reviewed EN, SV and TH versions all divide plain, unheated ricotta and fresh pitted peach between two bowls, share the listed undiluted lemon juice and 30 g unsalted pistachio kernels, and serve cold. Oil and sauces are outside the approved public scope. Sealed GK 3.96885 is 2.94525 (74.2%) from 75 g raw unpeeled yellow peach AFCD F006573 using the Atkinson 2021 Table 1 broad fruit GI 51, 0.5511 from Fineli 31212 general pistachio with the nuts GI 22 mean, and 0.4725 from ricotta with the dairy GI 35 mean. The independently audited 8.27 g available CHO uses F006571 raw pitted peach at 7.5 g/100 g (5.625 vs sealed 5.775 g per serving) and AFCD F006113 raw unsalted pistachio kernels at 7.8 g/100 g (1.17 vs sealed 2.505 g per serving). This is a difference in source selection. It is not evidence of a measured effect of cooking or salting, or a direct GI for the recipe. The 0.12 g from lemon juice is retained in the whole CHO calculation and tracked as a GK omission. Existing source-approved values are preserved.",
+    "condition": {
+      "fi": "Suurin osa GK-arviosta tulee tuoreesta persikasta. Persikalle käytetään laskennassa hedelmien GI-keskiarvoa.",
+      "en": "Fresh peach accounts for most of the GL estimate. The calculation uses an average GI for fruit for the peach.",
+      "sv": "Färsk persika står för större delen av GL-uppskattningen. Beräkningen använder ett genomsnittligt GI för frukt för persikan.",
+      "th": "ลูกพีชสดเป็นส่วนหลักของค่าประมาณ GL การคำนวณใช้ค่า GI เฉลี่ยของกลุ่มผลไม้แทนค่า GI ของลูกพีช"
+    },
+    "carbohydrateScope": {
+      "fi": "Yhden kylmän annoksen hiilihydraattiarviossa on 75 g tuoretta kivetöntä persikkaa ja 15 g suolaamattomia pistaasinsydämiä.",
+      "en": "The carbohydrate estimate for one cold bowl includes 75 g of fresh pitted peach and 15 g of unsalted pistachio kernels.",
+      "sv": "Kolhydratberäkningen för en kall portion omfattar 75 g färsk urkärnad persika och 15 g osaltade pistagekärnor.",
+      "th": "ค่าประมาณคาร์โบไฮเดรตต่อชามเย็นรวมลูกพีชสดเอาเมล็ดออก 75 กรัมและเมล็ดพิสตาชิโอไม่ใส่เกลือ 15 กรัม"
+    },
+    "localizedScopeSha256": {
+      "fi": "86c14aff2ebf66326ecd93f61f0c06084e9f0b6e6540186916ae4c1315b6410d",
+      "en": "90fbda592f7149ba381ad9e11c92660449c9a43b8c9f0e5125b9478ed0a8e864",
+      "sv": "7f57361d2685564cff72eda4387009e016b93fe7753be8467157120648de6c1f",
+      "th": "28157931a287dfd76f71eb9b7ce2a559f78109e578957ff95453933d9de4cbfb"
     }
   }
 }

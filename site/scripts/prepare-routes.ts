@@ -114,6 +114,10 @@ for (const route of routes) {
     const standaloneNote = standalone?.noteEdits?.[locale];
     const localeHash = standalone?.localizedScopeSha256?.[locale];
     const withheld = withholdF25Nutrition(id, locale);
+    if (review?.localizedScopeSha256 && !withheld
+        && review.localizedScopeSha256[locale] !== wholeCarbohydrateLocaleHash(data.recipe)) {
+      throw new Error(`${id}/${locale}: review the current published preparation and serving scope.`);
+    }
     if (standalone && !withheld && (!review?.condition?.[locale]?.trim()
         || (localeHash ? localeHash !== wholeCarbohydrateLocaleHash(data.recipe) : !standaloneNote))) {
       throw new Error(`${id}/${locale}: review the current localized scope of the standalone carbohydrate estimate.`);

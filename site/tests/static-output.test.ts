@@ -240,29 +240,39 @@ test("preparation and optional-side evidence stays visibly scoped", async () => 
 
 test("carbohydrate and GL describe their separate recipe assumptions before and beside the respective amounts", async () => {
   const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
-  for (const id of ["kana-yakitori-kaalilla", "lahi-ita-ful-medames", "kiinalainen-soijamaito-aamiaisella"]) {
+  for (const [id, review] of Object.entries(reviews).filter(([, review]) => review.carbohydrateScope)) {
     const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
     assert.equal(entries.length, 4, id);
-    assert.equal(glycemicLoadFilterCategories[id], undefined, id);
+    if (review.classLimitation) assert.equal(glycemicLoadFilterCategories[id], undefined, id);
     for (const { locale, routePath } of entries) {
       const html = (await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8"))
         .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
       const guide = await readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8");
       const start = guide.indexOf(`id="${id}"`);
       const row = guide.slice(start, guide.indexOf("<li ", start + 1));
-      const carbsScope = reviews[id].carbohydrateScope![locale];
-      const glScope = reviews[id].classLimitation![locale];
+      const carbsScope = review.carbohydrateScope![locale];
+      const limitation = review.classLimitation?.[locale];
+      const glScope = limitation ?? review.condition?.[locale];
+      assert.ok(glScope, routePath);
       const recipeCarbs = html.indexOf('data-portion-carbohydrate="available"');
       const recipeGl = html.indexOf("data-portion-gk");
-      assert.ok(html.includes(renderToStaticMarkup(createElement("p", {className: "recipe-disclosure"}, carbsScope))), routePath);
-      assert.ok(html.indexOf(carbsScope) < recipeCarbs && recipeCarbs < recipeGl, routePath);
-      assert.ok(html.indexOf(glScope) > recipeGl, routePath);
-      assert.ok(row.includes(renderToStaticMarkup(createElement("p", {"data-portion-preparation-scope": true}, carbsScope))), routePath);
-      assert.ok(row.indexOf("gk-evidence__value") > row.indexOf(carbsScope), routePath);
-      assert.ok(row.indexOf(glScope) > row.indexOf("gk-evidence__value"), routePath);
-      assert.ok(row.includes('href="' + reviews[id].publicSource + '"'), routePath);
+      const recipeGlScope = html.indexOf(renderToStaticMarkup(createElement("p", {
+        className: limitation ? "recipe-glycemic-load__class" : "recipe-disclosure",
+      }, glScope)));
+      const guideGlScope = row.indexOf(renderToStaticMarkup(createElement("p", null, glScope)));
+      const guideGl = row.indexOf("gk-evidence__value");
+      const recipeScope = renderToStaticMarkup(createElement("p", {className: "recipe-disclosure"}, carbsScope));
+      const guideScope = renderToStaticMarkup(createElement("p", {"data-portion-preparation-scope": true}, carbsScope));
+      assert.ok(html.includes(recipeScope), routePath);
+      assert.ok(html.indexOf(recipeScope) < recipeCarbs && recipeCarbs < recipeGl, routePath);
+      assert.ok(row.includes(guideScope), routePath);
+      assert.ok(guideGl > row.indexOf(guideScope), routePath);
+      assert.ok(recipeGlScope > recipeCarbs && (limitation ? recipeGlScope > recipeGl : recipeGlScope < recipeGl), routePath);
+      assert.ok(guideGlScope > row.indexOf(guideScope) && (limitation ? guideGlScope > guideGl : guideGlScope < guideGl), routePath);
+      assert.ok(row.includes('href="' + (review.publicSource ?? review.source) + '"'), routePath);
     }
   }
+  assert.equal(glycemicLoadFilterCategories["valimerellinen-jogurttikulho-hunajalla"], "low");
 });
 
 test("reviewed seasoning, syrup and dressing quantities stay scoped to their named inputs", async () => {
@@ -571,7 +581,25 @@ test("GK values link to centralized recipe details on every published translatio
   assert.equal(historicalMolletes?.glycemicLoadPerServing, 20.01, "historical molletes audit remains exact");
   const historicalOnly = new Set([
     historicalMolletes?.recipeId, "lahi-ita-zaatar-munat", "pohjoisafrikkalainen-baghrir",
+    "meksikolainen-aamiais-tacot-mustapavuilla",
   ]);
+  const tacosId = "meksikolainen-aamiais-tacot-mustapavuilla";
+  const archivedTacos = audit.results.find(result => result.recipeId === tacosId);
+  assert.equal(archivedTacos?.glycemicLoadPerServing, 16.04);
+  const publicTacos = glycemicLoadPilotResults.find(result => result.recipeId === tacosId);
+  assert.equal(publicTacos?.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(publicTacos?.glycemicLoadPerServing, null);
+  assert.equal(glycemicLoadFilterCategories[tacosId], undefined);
+  assert.equal(publicTacos?.portionEvidence?.ingredientPortion?.availableCarbsGPerServing, 25.9225);
+  const tacosRoutes = siteContent.recipes.filter(recipe => recipe.recipeId === tacosId);
+  assert.equal(tacosRoutes.length, 4);
+  for (const recipe of tacosRoutes) {
+    const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+    assert.ok(Object.values(recipe.nutrition).every(value => value === null), recipe.routePath);
+    assert.doesNotMatch(html, /data-portion-carbohydrate=|data-portion-gk=|data-gk-status="(?:CALCULATED|QUALITATIVE)"/, recipe.routePath);
+    assert.match(html, /data-ingredient-carbohydrate="available"/, recipe.routePath);
+    assert.ok(html.includes(publicTacos.portionEvidence!.condition![recipe.locale]), recipe.routePath);
+  }
   const visibleReviewed = audit.results.filter(result => !isPublicRecipeQuarantined(result.recipeId)).map(result =>
     historicalOnly.has(result.recipeId) ? { ...result, status: "INSUFFICIENT SOURCE DATA" } : result);
   for (const id of ["lahi-ita-zaatar-munat", "pohjoisafrikkalainen-baghrir", "rahka-marjakerroskulho", "japanilainen-hojicha-jogurtti-persimonilla", "vietnamilainen-papaija-kookospuuro", "vietnamilainen-banh-xeo-aamiaisletut", "munakoiso-kesakurpitsalasagne", "vietnamilainen-banh-cuon-sienilla",

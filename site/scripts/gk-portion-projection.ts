@@ -38,6 +38,7 @@ interface ReviewedPortion {
   };
   alternativeLabels?: Record<string, LocalizedText>;
   versionAlternativeLabels?: { versionId: string; lower: LocalizedText; upper: LocalizedText };
+  legacyGkHold?: true;
   ingredientProduct?: { index: number; item: string; amount: number; unit: string; ean: string };
   declaredLabelIngredientIndices?: number[];
   reasoning: string;
@@ -58,6 +59,7 @@ interface ReviewedPortion {
   piecesPerServing?: number;
   condition?: LocalizedText;
   carbohydrateScope?: LocalizedText;
+  localizedScopeSha256?: LocalizedText;
   classLimitation?: LocalizedText;
   verbal?: VerbalGk;
   zeroCarbohydrate?: true;
@@ -211,7 +213,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
       || (review.publicSource && !httpsSource(review.publicSource)) || !review.reasoning)) {
     throw new Error(`${recipeId}: reviewed GK portion no longer matches the recipe. Re-review the amount, preparation and sides.`);
   }
-  if (review && (review.verbal || review.condition || review.carbohydrateScope || review.ingredientProduct || review.classLimitation
+  if (review && (review.verbal || review.condition || review.carbohydrateScope || review.legacyGkHold || review.ingredientProduct || review.classLimitation
       || review.ingredientPortion || review.alternativeLabels || review.versionAlternativeLabels
       || review.zeroCarbohydrate || review.wholeCarbohydrateOnly || review.declaredLabelIngredientIndices
       || review.portionGrams || review.piecesPerServing)
@@ -228,6 +230,10 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
   }
   if (review?.verbalNoteEdits && !review.verbal) {
     throw new Error(`${recipeId}: a numerical-only GK notice requires a current verbal estimate.`);
+  }
+  if (review?.legacyGkHold && (review.verbal || review.alternativeLabels || !(["fi", "en", "sv", "th"] as const).every(
+    locale => review.condition?.[locale]?.trim()))) {
+    throw new Error(`${recipeId}: the current original GK hold requires a localized explanation and cannot publish original GK alternatives.`);
   }
   const standaloneReview = review?.wholeCarbohydrateOnly;
   let counted: Awaited<ReturnType<typeof countedIngredientAmount>> | undefined;

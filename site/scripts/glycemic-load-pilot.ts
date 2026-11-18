@@ -281,6 +281,7 @@ await mkdir(outputDir, { recursive: true });
 const outputPath = path.join(outputDir, "glycemic-load-pilot.json");
 await writeFile(outputPath, JSON.stringify(report, null, 2) + "\n");
 const isFixtureBuild = process.env.RECIPE_SOURCE_ROOT !== undefined;
+const reviewedPortions = await loadReviewedPortions(root);
 const legacyPublicResults = results.flatMap((result) => {
   const recipe = siteContent.recipes.find((entry) => entry.recipeId === result.recipeId && entry.locale === "fi");
   if (!recipe) {
@@ -302,6 +303,7 @@ const legacyPublicResults = results.flatMap((result) => {
   };
   // Include this recipe in search while keeping its ingredient audit internal.
   if (result.recipeId === "maksalaatikko-kukkakaalilla" ||
+      reviewedPortions[result.recipeId]?.legacyGkHold === true ||
       (result.recipeId === "hyderabadi-kanabiryani" && biryaniUsesReviewedMilk) ||
       (result.recipeId === coconutBananaRecipeId && coconutBananaNeedsGkReview) ||
       koreanRiceBowlsNeedingGkReview.has(result.recipeId) ||
@@ -425,7 +427,6 @@ const publicVersionCoverage = countGkVersions(
 );
 const gkOnlyModule = `/* Generated. Explicit GK-only version data; parent macros are separate. */\nimport type {GkOnlyVariant,GkVersionCoverage} from '../features/recipes/gk-only-types';\nexport const gkOnlyVariants:GkOnlyVariant[]=${JSON.stringify(publicGkOnlyVariants,null,2)};\nexport const gkVersionCoverage:GkVersionCoverage=${JSON.stringify(publicVersionCoverage,null,2)};\n`;
 await writeFile(path.join(siteDir,'src/generated/gk-only-variants.generated.ts'),gkOnlyModule,'utf8');
-const reviewedPortions = await loadReviewedPortions(root);
 const originals = siteContent.recipes.filter(recipe => recipe.locale === "fi");
 const legacyPublicByRecipe = new Map(legacyPublicResults.map(result => [result.recipeId, result]));
 const portions = await Promise.all(originals.map(async recipe => {
