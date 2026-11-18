@@ -14,7 +14,7 @@ export const portionCopy = {
     known: (name: string) => `Tunnettu hiilihydraatin lähde: ${name}.`, about: "noin",
     missingCarbs: "Koko annoksen hiilihydraattimäärää ei ole voitu vahvistaa.",
     ingredientAmount: "Ainesosan määrä ohjeen mukaan",
-    ingredientCarbs: "Imeytyvät hiilihydraatit tässä aineksessa ennen valmistusta",
+    ingredientCarbs: "Imeytyvät hiilihydraatit tästä aineksesta",
     alternatives: "Lasketut GK-vaihtoehdot tässä annoksessa",
     versionAlternatives: "GK nuudelivalinnan mukaan, yksi erillisversion annos",
     scopeSource: "Katso arvion tai ruokakohtaisen huomion lähde",
@@ -36,7 +36,7 @@ export const portionCopy = {
     known: (name: string) => `A known source of carbohydrate: ${name}.`, about: "about",
     missingCarbs: "The carbohydrate content of the full portion could not be confirmed.",
     ingredientAmount: "Ingredient amount from the recipe",
-    ingredientCarbs: "Available carbohydrate in this ingredient before preparation",
+    ingredientCarbs: "Available carbohydrate in this ingredient",
     alternatives: "Calculated GL alternatives for this portion",
     versionAlternatives: "GL by noodle choice for one serving of this version",
     scopeSource: "See the source for this estimate or ingredient note",
@@ -58,7 +58,7 @@ export const portionCopy = {
     known: (name: string) => `En känd kolhydratkälla: ${name}.`, about: "cirka",
     missingCarbs: "Kolhydratmängden i hela portionen har inte kunnat bekräftas.",
     ingredientAmount: "Mängd av ingrediensen enligt receptet",
-    ingredientCarbs: "Tillgängliga kolhydrater i den här ingrediensen före tillagning",
+    ingredientCarbs: "Tillgängliga kolhydrater i den här ingrediensen",
     alternatives: "Beräknade GL-alternativ för den här portionen",
     versionAlternatives: "GL efter nudelval för en portion av den här versionen",
     scopeSource: "Se källan till uppskattningen eller råvaruuppgiften",
@@ -80,7 +80,7 @@ export const portionCopy = {
     known: (name: string) => `แหล่งคาร์โบไฮเดรตที่ทราบคือ ${name}`, about: "ประมาณ",
     missingCarbs: "ยังยืนยันปริมาณคาร์โบไฮเดรตของอาหารทั้งส่วนไม่ได้",
     ingredientAmount: "ปริมาณวัตถุดิบตามสูตร",
-    ingredientCarbs: "คาร์โบไฮเดรตที่ใช้ได้ในวัตถุดิบนี้ก่อนปรุง",
+    ingredientCarbs: "คาร์โบไฮเดรตที่ใช้ได้จากวัตถุดิบนี้",
     alternatives: "ค่า GL ที่คำนวณได้สำหรับแต่ละตัวเลือกในส่วนนี้",
     versionAlternatives: "ค่า GL ตามชนิดเส้นสำหรับหนึ่งที่ของสูตรเวอร์ชันนี้",
     scopeSource: "ดูแหล่งข้อมูลของค่าประมาณหรือข้อสังเกตเรื่องวัตถุดิบ",
@@ -197,10 +197,7 @@ export function VerbalPortionEstimate({ evidence, recipe, multiplier }: {
   return <>
     <p><strong>{t.class[category]}</strong></p>
     {evidence.verbal?.condition ? <p>{evidence.verbal.condition[locale]}</p> : null}
-    <details className="gk-evidence__details">
-      <summary>{ { fi: "Mihin arvio perustuu?", en: "What is the estimate based on?", sv: "Vad bygger uppskattningen på?", th: "ใช้ข้อมูลอะไรในการประมาณค่า" }[locale] }</summary>
-      <p>{evidence.verbal?.rationale[locale]}</p>
-      {evidence.reviewedSource ? <ReviewedPortionSource source={evidence.reviewedSource} locale={locale} /> : null}
-    </details>
+    <p data-verbal-portion-scope>{evidence.verbal?.rationale[locale]}</p>
+    {evidence.reviewedSource ? <p><ReviewedPortionSource source={evidence.reviewedSource} locale={locale} /></p> : null}
   </>;
 }

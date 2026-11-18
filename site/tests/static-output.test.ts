@@ -33,6 +33,12 @@ test("new verbal estimates qualify the legacy numerical notices in all published
     ["karnivore-voilohi-pannulla", "LOW"],
     ["karnivore-lammaskyljykset-voissa", "LOW"],
     ["karnivore-jauhelihakulho-munalla", "LOW"],
+    ["karnivore-rapeat-kananreisipalat", "LOW"],
+    ["karnivore-naudan-lyhytkylki", "LOW"],
+    ["karnivore-rapea-porsaan-kylki", "LOW"],
+    ["karnivore-steak-and-eggs", "LOW"],
+    ["indonesialainen-nasi-goreng-aamiaisriisi-punnittu-v2", "HIGH"],
+    ["malesialainen-roti-canai-dhalilla-punnittu-v2", "HIGH"],
   ] as const;
   for (const [id, category] of checked) {
     const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
@@ -48,9 +54,36 @@ test("new verbal estimates qualify the legacy numerical notices in all published
       assert.ok(rendered.includes(note.after), `${id}/${locale}: numerical limitation`);
       assert.ok(!rendered.includes(note.before), `${id}/${locale}: no conflicting old notice`);
       assert.ok(rendered.includes(portionCopy[locale].class[category]), `${id}/${locale}: reviewed class`);
+      assert.match(rendered, /data-verbal-portion-scope/);
       assert.ok(rendered.includes(`${glycemicLoadPath(locale)}#${id}`), `${id}/${locale}: guide link`);
     }
   }
+});
+
+test("reviewed portion notes preserve carbohydrate-only estimates when comparison foods disagree", async () => {
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  for (const id of ["raejuustopizza-kaurajauhopohjalla", "xiaolongbao"]) {
+    const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.equal(entries.length, 4, id);
+    for (const { locale, routePath } of entries) {
+      const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+      const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+      const scope = reviews[id]?.condition?.[locale];
+      assert.ok(scope && rendered.includes(scope), `${id}/${locale}: reviewed scope`);
+      assert.match(rendered, /data-portion-carbohydrate/);
+      assert.doesNotMatch(rendered, /data-gk-status="(?:CALCULATED|QUALITATIVE)"|data-portion-gk/);
+    }
+  }
+});
+
+test("a fresh egg pasta reference estimate stays scoped to the uncooked ingredient", async () => {
+  const recipe = siteContent.recipes.find(entry => entry.recipeId === "sitruuna-parsapasta" && entry.locale === "fi");
+  assert.ok(recipe);
+  const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+  assert.match(html, /data-ingredient-portion=/);
+  assert.match(html, /Tuore kananmunafettuccine ennen keittämistä/);
+  assert.match(html, /Luku koskee tuoretta kananmunapastaa/);
+  assert.doesNotMatch(html, /data-portion-carbohydrate=|data-portion-gk=/);
 });
 
 test("generated route and search data satisfy the browser parser contracts", async () => {

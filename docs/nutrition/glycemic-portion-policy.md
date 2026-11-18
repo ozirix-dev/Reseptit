@@ -158,6 +158,37 @@ Keskimääräinen harha oli +6,46 GK-yksikköä ja keskimääräinen absoluuttin
 johdetut luottamusvälit ylittävät GK 20:n rajan. Ne kuvaavat tutkimuksen
 ryhmäarvion epävarmuutta, eivät Recipavon reseptien skenaariovälejä.
 
+### Toinen mitattu seka-ateria
+
+[Hätönen ym. (2011), taulukot 1–2](https://doi.org/10.1017/S0007114511000080)
+mittasivat glukoosiviitteisen GI:n 11 terveellä aikuisella. Vertailuannos
+sisälsi 362 g perunamuusia ja 40 g kurkkua. Siinä oli 50 g imeytyviä
+hiilihydraatteja ja mitattu GI oli 108. Rypsiöljyllä täydennettyyn annokseen
+lisättiin 30 g öljyä. Hiilihydraattimäärä pysyi 50 grammassa.
+
+Recipavon ainesosasumma antaa öljyä sisältävälle annokselle GK:n 54.
+Mitatusta GI:stä 71 johdettu GK on 35,5. Ero on +18,5 GK-yksikköä.
+Molemmat ryhmäpisteet kuuluvat suureen luokkaan. Yhdessä annosvertailussa
+luokka voi täsmätä, vaikka arvojen ero on suuri. Tuloksesta ei johdeta
+öljyn vaikutukselle yleistä kerrointa.
+
+### Annosskaalaus mitattua glukoosiannosta vasten
+
+[Venn ym. (2006), taulukot 1–2](https://doi.org/10.1093/jn/136.5.1377)
+mittasivat viittä elintarviketta kolmella annoskoolla 20 terveellä
+aikuisella. Kerroimme taulukon 1 elintarvikekohtaisen GI:n kunkin
+annoksen imeytyvillä hiilihydraateilla ja jaoimme sadalla. Vertailukohtana
+oli taulukon 2 mittauksista glukoosin annosvastekäyrällä saatu GK.
+
+| Aineisto | Harha | Absoluuttinen keskivirhe | Samat GK-luokat ryhmäpisteillä |
+| --- | ---: | ---: | ---: |
+| Kaikki 15 annosta | +2,59 | 3,03 | 13/15 |
+| 10 annosta GI:n määrityksessä käytettyjen annosten ulkopuolella | +2,74 | 3,40 | 8/10 |
+
+Viiden elintarvikkeen annosskaalaus on erillinen vertailu Doddin ja
+Hätösen seka-aterioista. Vertailut perustuvat tutkimusten
+ryhmätason mittauksia. Tuloksia ei yhdistetä yhteiseksi kirjaston virheluvuksi.
+
 [Wolever ym. (2006), taulukko 3 ja kuva 2](https://doi.org/10.1093/ajcn/83.6.1306)
 löysivät 14 aamiaisaterialla yhteyden lasketun GK:n ja mitatun keskimääräisen
 glukoosivasteen pinta-alan välillä (r = 0,95). Tulos tukee annosten keskinäistä

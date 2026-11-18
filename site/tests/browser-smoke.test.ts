@@ -457,6 +457,16 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.match(await page.locator(".recipe-portion").innerText(), /2 pieces/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);
 
+    await page.setViewportSize({ width: 320, height: 800 });
+    await page.goto(base + routeFor("indonesialainen-nasi-goreng-aamiaisriisi-punnittu-v2"));
+    const nasiGoreng = page.locator('[data-gk-status="QUALITATIVE"]');
+    assert.match(await nasiGoreng.locator("[data-verbal-portion-scope]").innerText(), /150 g pitkäjyväistä valkoista riisiä punnittuna kypsänä ja kylmänä/);
+    assert.ok(await nasiGoreng.evaluate(element => element.getBoundingClientRect().right <= innerWidth));
+    assert.match(await page.locator("[data-portion-carbohydrate]").innerText(), /61 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.equal(await nasiGoreng.locator("[data-verbal-portion-scope]").count(), 0);
+    assert.match(await page.locator("[data-portion-carbohydrate]").innerText(), /121,9 g/);
+
     await page.goto(base + routeFor("briossisampylat-joshua-weissman"));
     assert.match(await page.locator('[data-gk-status="QUALITATIVE"]').innerText(), /Suuri arvioitu GK/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);
@@ -476,10 +486,9 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       assert.ok((await page.locator(selector).innerText()).includes(copy), id);
       if (id === "mapo-tofu") assert.equal(await page.locator("[data-portion-carbohydrate]").count(), 0);
       if (id === "taytetyt-kananmunat-yrteilla") {
-        const why = page.locator('[data-gk-status="QUALITATIVE"] details');
-        await why.locator("summary").focus();
-        await page.keyboard.press("Enter");
-        assert.equal(await why.getByRole("link").getAttribute("href"), "https://glycemicindex.com/faqs/");
+        const source = page.locator('[data-gk-status="QUALITATIVE"]').getByRole("link", { name: portionCopy.fi.scopeSource });
+        await source.focus();
+        assert.equal(await source.getAttribute("href"), "https://glycemicindex.com/faqs/");
         await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
         assert.equal(await page.getByText(portionCopy.fi.class.LOW, { exact: true }).count(), 0);
         assert.equal(await page.getByText(portionCopy.fi.baseOnly, { exact: true }).count(), 1);
