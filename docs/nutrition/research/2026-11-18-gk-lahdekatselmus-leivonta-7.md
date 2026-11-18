@@ -71,6 +71,31 @@ varmentaa, jos laskelma sidotaan uuteen rakenteiseen syötteeseen.
 [Raision jauho](https://www.raisiofoodsolutions.fi/tuotteet/sunnuntai-puolikarkea-vehnajauho-4kg) ·
 [Kesko/Pirkka-hillo](https://www.k-ruoka.fi/kauppa/tuote/pirkka-mansikkahillo-400g-6410405112873)
 
+## Uunipannukakun koneellisesti tarkistettu lähdesyöte
+
+[Kymmenen ainesosariviä ja ravintomallin tarkistustulos](gluteeniton-uunipannukakku-lahdesyote.json)
+on sidottu nykyisen reseptin tiivisteeseen ja 13 annoksen jakoon.
+Painot sisältävät taikinan, marjat ja kermavaahdon. Kolmen munan
+kuoreton 150 g on laskentaoletus. Kerman vertailutuote on muistion
+laktoositon Valio 35 %, EAN 6408430014477. Resepti ei nimeä EANia.
+[Valion tuotetiedot](https://www.valio.fi/tuotteet/valio-keittion-kuohukerma-laktoositon/)
+
+Finelin imeytyvän hiilihydraatin luku ja EU-pakkauksen
+ilmoittama hiilihydraatti on kirjattu eri määritelmillä. Tarkemmalla
+metsämustikan Fineli-luvulla 10,182 g/100 g vertailusumma on
+201,332 g / erä eli noin 15,49 g annosta kohti. Vertailu toistaa
+julkaistun arvioidun luvun kahden desimaalin tarkkuudella. Kun
+syöte ajetaan nykyisellä ravintomallilla, pakkausrivien vahvistamattomat
+polyolit jättävät imeytyvän hiilihydraatin normalisoidun annostuloksen
+avoimeksi. Puuttuva kuitutieto estää erillisen kokonaishiilihydraatin
+laskennan. Keijun pakkaus ilmoittaa 0 g hiilihydraattia.
+[Fineli 442](https://fineli.fi/fineli/fi/elintarvikkeet/442) ·
+[Keijun tuotetiedot](https://www.keiju.fi/tuote/keiju-juokseva-rypsioljyvalmiste/)
+
+Syöte on tutkimushakemistossa. Se voidaan ottaa uuteen katselmointiin,
+kun puuttuvat koostumuskomponentit ja käytetty kermaversio on
+todennettu. GK-arvio edellyttää lisäksi valmistukseen sopivaa GI-näyttöä.
+
 ## Erän lopputila
 
 Seitsemän nykyistä julkista reseptiä varmennettiin. Neljälle

@@ -1,0 +1,407 @@
+{
+  "purpose": "Research-only candidate input and audit, not a publication or approval record.",
+  "sourceCommit": "e8ed43ed525a9cb6abbe61b94bc1c036153979c7",
+  "recipePath": "reseptit/jalkiruoat/gluteeniton-uunipannukakku.md",
+  "recipeSha256": "c0f00b3f1d99e6489f3fb2c8cad6299db3fb1da6bca9e2290b553bd7edfde5ee",
+  "sourceReferences": {
+    "nativeFoodRecords": "docs/nutrition/food-records.json",
+    "originalMemo": "docs/nutrition/gluteeniton-uunipannukakku-fi-2026-11-11.md",
+    "originalReview": "docs/reviews/gluteeniton/gluteeniton-uunipannukakku.md"
+  },
+  "calculation": {
+    "recipeId": "gluteeniton-uunipannukakku",
+    "sourceHash": "9ab95980c2c6d737f05fcf9945c8d58cf882193a4af17c8f5c95c50a6a782f4b",
+    "calculatedAt": "2026-11-18",
+    "servings": 13,
+    "reviewerStatus": "AUTOMATED ONLY",
+    "scope": "Research candidate: all listed batter and toppings divided into 13 servings. Label carbohydrate and native Fineli available carbohydrate are accounted for separately until normalization is supported.",
+    "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+    "ingredients": [
+      {
+        "item": "Valio kevytmaitoa",
+        "amount": 800,
+        "unit": "g",
+        "state": "as sold",
+        "matchEvidence": "Recipe-specified Valio 1.5% milk, weighed.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Recipe weight for edible input.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Raw input retained in the batter as a modelling assumption; no baking retention was measured.",
+        "record": {
+          "id": "valio-kevytmaito-15-2026-11-18",
+          "name": "Valio kevytmaito 1,5 %",
+          "sourceUrl": "https://www.valio.fi/tuotteet/valio-kevytmaito/",
+          "retrievedAt": "2026-11-18",
+          "licence": "Retailer or manufacturer's published product information",
+          "state": "as sold",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+          "per100g": {
+            "carbohydrate": 4.8,
+            "fibre": null,
+            "polyols": null,
+            "protein": 3.2,
+            "fat": 1.5
+          }
+        }
+      },
+      {
+        "item": "kananmunaa",
+        "amount": 3,
+        "unit": "kpl",
+        "state": "raw edible egg, shell removed",
+        "matchEvidence": "Fineli raw edible egg; the recipe memo estimates 50 g without shell per egg.",
+        "gramsPerUnit": 50,
+        "conversionEvidence": "Recipe note and original memo approximate 150 g edible mass for 3 eggs.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Conversion is already for the edible egg, without shell.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Raw input retained in the batter as a modelling assumption; no baking retention was measured.",
+        "record": {
+          "id": "fineli-858-release-20",
+          "name": "KANANMUNA, KUORETON",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "raw edible egg, shell removed",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0.3,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0.3,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 12.61,
+            "fat": 9.24
+          }
+        }
+      },
+      {
+        "item": "suolaa",
+        "amount": 0.667,
+        "unit": "tl",
+        "state": "plain table salt",
+        "matchEvidence": "Plain table salt only. Omission concerns nutrient totals, not salt or sodium intake.",
+        "excludedReason": "Plain salt contributes no energy or macronutrients.",
+        "omissionImpactUpperBoundPerServing": {
+          "kcal": 0,
+          "netCarbohydrate": 0,
+          "totalCarbohydrate": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "omissionImpactEvidence": "Salt contributes none of the four published macronutrients; sodium is not displayed."
+      },
+      {
+        "item": "Pirkka tummaa gluteenitonta jauhoseosta",
+        "amount": 90,
+        "unit": "g",
+        "state": "as sold",
+        "matchEvidence": "Recipe and retailer agree on EAN 6410405221872 and dry state.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Recipe weight for edible input.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Raw input retained in the batter as a modelling assumption; no baking retention was measured.",
+        "record": {
+          "id": "pirkka-6410405221872-2026-11-18",
+          "name": "Pirkka tumma gluteeniton jauhoseos",
+          "sourceUrl": "https://www.k-ruoka.fi/kauppa/tuote/pirkka-tumma-jauhoseos-1kg-gluteeniton-6410405221872",
+          "retrievedAt": "2026-11-18",
+          "licence": "Retailer or manufacturer's published product information",
+          "state": "as sold",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+          "per100g": {
+            "carbohydrate": 70,
+            "fibre": 5,
+            "polyols": null,
+            "protein": 7,
+            "fat": 4.3
+          }
+        }
+      },
+      {
+        "item": "Myllärin gluteenitonta kaurajauhoa",
+        "amount": 120,
+        "unit": "g",
+        "state": "as sold",
+        "matchEvidence": "Recipe and manufacturer agree on EAN 6415000163565 and dry state.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Recipe weight for edible input.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Raw input retained in the batter as a modelling assumption; no baking retention was measured.",
+        "record": {
+          "id": "myllarin-6415000163565-2026-11-18",
+          "name": "Myllärin gluteeniton kaurajauho",
+          "sourceUrl": "https://myllarin.fi/tuotteet/myllarin-gluteeniton-kaurajauho-950-g/",
+          "retrievedAt": "2026-11-18",
+          "licence": "Retailer or manufacturer's published product information",
+          "state": "as sold",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+          "per100g": {
+            "carbohydrate": 58,
+            "fibre": 11,
+            "polyols": null,
+            "protein": 14,
+            "fat": 6.5
+          }
+        }
+      },
+      {
+        "item": "Keiju Juoksevaa rypsiöljyvalmistetta",
+        "amount": 90,
+        "unit": "g",
+        "state": "as sold",
+        "matchEvidence": "Recipe and original review identify the 500 ml Keiju Juokseva product. Its declared carbohydrate is zero; no independent polyol value is reported.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Recipe weight for edible input.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Raw input retained in the batter as a modelling assumption; no baking retention was measured.",
+        "record": {
+          "id": "keiju-6438207019008-2026-11-18",
+          "name": "Keiju Juokseva rypsiöljyvalmiste",
+          "sourceUrl": "https://www.keiju.fi/tuote/keiju-juokseva-rypsioljyvalmiste/",
+          "retrievedAt": "2026-11-18",
+          "licence": "Retailer or manufacturer's published product information",
+          "state": "as sold",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+          "per100g": {
+            "carbohydrate": 0,
+            "fibre": null,
+            "polyols": null,
+            "protein": 0,
+            "fat": 80
+          }
+        }
+      },
+      {
+        "item": "mansikoita",
+        "amount": 100,
+        "unit": "g",
+        "state": "raw edible strawberry",
+        "matchEvidence": "Fineli fresh edible strawberry, washed and served raw.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Recipe weight for edible input.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Recipe distributes all of the topping among the 13 servings.",
+        "record": {
+          "id": "fineli-447-2026-10-24",
+          "name": "Mansikka",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/447",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli, CC BY 4.0",
+          "state": "raw edible strawberry",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 7.7,
+            "FIBT": 1.9,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "per100g": {
+            "carbohydrate": 7.7,
+            "fibre": 1.9,
+            "polyols": 0,
+            "protein": 0.5,
+            "fat": 0.3
+          }
+        }
+      },
+      {
+        "item": "metsämustikoita",
+        "amount": 100,
+        "unit": "g",
+        "state": "RAW",
+        "matchEvidence": "Fineli wild bilberry, served raw. The pinned reference gives 10.182 g available carbohydrate per 100 g.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Recipe weight for edible input.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Recipe distributes all of the topping among the 13 servings.",
+        "record": {
+          "id": "fineli-442-2026-10-25",
+          "name": "MUSTIKKA, METSÄMUSTIKKA",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/442?c=2034&c2=2168",
+          "retrievedAt": "2026-10-25",
+          "licence": "THL, Fineli Rel20, CC BY 4.0",
+          "state": "RAW",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "per100g": {
+            "carbohydrate": 10.182,
+            "fibre": 3.1,
+            "polyols": null,
+            "protein": 0.821,
+            "fat": 1.059
+          },
+          "polyolsSourceVerified": false
+        }
+      },
+      {
+        "item": "Valio Keittiön kuohukermaa",
+        "amount": 100,
+        "unit": "g",
+        "state": "as sold",
+        "matchEvidence": "Reference product from original review, EAN 6408430014477. The recipe names the brand and 35% fat but does not specify lactose-free or the EAN.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Recipe weight for edible input.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Recipe distributes all of the topping among the 13 servings.",
+        "record": {
+          "id": "valio-6408430014477-2026-11-18",
+          "name": "Valio Keittiön laktoositon kuohukerma 35 %",
+          "sourceUrl": "https://www.valio.fi/tuotteet/valio-keittion-kuohukerma-laktoositon/",
+          "retrievedAt": "2026-11-18",
+          "licence": "Retailer or manufacturer's published product information",
+          "state": "as sold",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+          "per100g": {
+            "carbohydrate": 3,
+            "fibre": null,
+            "polyols": null,
+            "protein": 2.2,
+            "fat": 35
+          }
+        }
+      },
+      {
+        "item": "Dansukker-tomusokeria",
+        "amount": 9,
+        "unit": "g",
+        "state": "as sold",
+        "matchEvidence": "Recipe specifies Dansukker powdered sugar, weighed before folding into cream.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Recipe weight for edible input.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Recipe distributes all of the topping among the 13 servings.",
+        "record": {
+          "id": "dansukker-tomusokeri-2026-11-18",
+          "name": "Dansukker Tomusokeri",
+          "sourceUrl": "https://www.dansukker.fi/fi/tuotteet/kaikki-tuotteet/tomusokeri",
+          "retrievedAt": "2026-11-18",
+          "licence": "Retailer or manufacturer's published product information",
+          "state": "as sold",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+          "per100g": {
+            "carbohydrate": 100,
+            "fibre": null,
+            "polyols": null,
+            "protein": 0,
+            "fat": 0
+          }
+        }
+      }
+    ]
+  },
+  "result": {
+    "status": "INSUFFICIENT SOURCE DATA",
+    "mixedDeclarationReplayGPerBatch": 201.332,
+    "mixedDeclarationReplayGPerServing": 15.487076923076923,
+    "normalizedAvailableCarbohydrateGPerServing": null,
+    "netCarbohydrateGPerServing": null,
+    "totalCarbohydrateGPerServing": null,
+    "rows": [
+      {
+        "item": "Valio kevytmaitoa",
+        "grams": 800,
+        "issues": [
+          "Unknown nutrient carbohydrate",
+          "Unknown nutrient fibre",
+          "Unknown nutrient polyols",
+          "Unknown nutrient netCarbohydrate"
+        ]
+      },
+      {
+        "item": "kananmunaa",
+        "grams": 150,
+        "issues": []
+      },
+      {
+        "item": "suolaa",
+        "grams": null,
+        "issues": []
+      },
+      {
+        "item": "Pirkka tummaa gluteenitonta jauhoseosta",
+        "grams": 90,
+        "issues": [
+          "Unknown nutrient carbohydrate",
+          "Unknown nutrient polyols",
+          "Unknown nutrient netCarbohydrate"
+        ]
+      },
+      {
+        "item": "Myllärin gluteenitonta kaurajauhoa",
+        "grams": 120,
+        "issues": [
+          "Unknown nutrient carbohydrate",
+          "Unknown nutrient polyols",
+          "Unknown nutrient netCarbohydrate"
+        ]
+      },
+      {
+        "item": "Keiju Juoksevaa rypsiöljyvalmistetta",
+        "grams": 90,
+        "issues": [
+          "Unknown nutrient carbohydrate",
+          "Unknown nutrient fibre",
+          "Unknown nutrient polyols",
+          "Unknown nutrient netCarbohydrate"
+        ]
+      },
+      {
+        "item": "mansikoita",
+        "grams": 100,
+        "issues": []
+      },
+      {
+        "item": "metsämustikoita",
+        "grams": 100,
+        "issues": [
+          "Unknown nutrient polyols",
+          "Unknown nutrient netCarbohydrate"
+        ]
+      },
+      {
+        "item": "Valio Keittiön kuohukermaa",
+        "grams": 100,
+        "issues": [
+          "Unknown nutrient carbohydrate",
+          "Unknown nutrient fibre",
+          "Unknown nutrient polyols",
+          "Unknown nutrient netCarbohydrate"
+        ]
+      },
+      {
+        "item": "Dansukker-tomusokeria",
+        "grams": 9,
+        "issues": [
+          "Unknown nutrient carbohydrate",
+          "Unknown nutrient fibre",
+          "Unknown nutrient polyols",
+          "Unknown nutrient netCarbohydrate"
+        ]
+      }
+    ],
+    "ifUsedAsCanonicalEvidence": "CONFLICT REQUIRES REVIEW"
+  }
+}
