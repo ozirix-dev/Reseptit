@@ -6,12 +6,14 @@ import test from "node:test";
 import { projectPublicRecipeMethodCopy, reviewedPublicCookingMethod } from "../scripts/public-recipe-copy";
 import { parseMarkdown } from "../src/content/markdown";
 import { siteContent } from "../src/generated/content.generated";
+import { recipeJsonLd } from "../src/features/recipes/schema";
 
 const root = path.resolve(import.meta.dirname, "../..");
 const id = "japanilainen-natto-riisikulho";
 const cases = [
   {
     "locale": "fi",
+    "schemaMethod": "Keittäminen",
     "path": "reseptit/aamupalat/japanilainen-natto-riisikulho.md",
     "blob": "941d0724416d00338277c9a2c2bd22ef981b8fc1",
     "riceName": "riisi",
@@ -21,6 +23,7 @@ const cases = [
   },
   {
     "locale": "en",
+    "schemaMethod": "Boiling",
     "path": "kaannokset/en/aamupalat/japanilainen-natto-riisikulho.md",
     "blob": "89727a0502a63aac3ece88ab1a28cef4194f4123",
     "riceName": "rice",
@@ -30,6 +33,7 @@ const cases = [
   },
   {
     "locale": "sv",
+    "schemaMethod": "Kokning",
     "path": "kaannokset/sv/aamupalat/japanilainen-natto-riisikulho.md",
     "blob": "454c43a19b6fa7c302bc8f245057dea86a30680f",
     "riceName": "ris",
@@ -39,6 +43,7 @@ const cases = [
   },
   {
     "locale": "th",
+    "schemaMethod": "การต้ม",
     "path": "kaannokset/th/aamupalat/japanilainen-natto-riisikulho.md",
     "blob": "1218f9c352528dec894f02a99a230bfee8c20260",
     "riceName": "ข้าว",
@@ -79,6 +84,7 @@ test("natto's reviewed boiling method replaces frying metadata only in the publi
     const recipe = published.find(item => item.locale === fixture.locale);
     assert.ok(recipe);
     assert.deepEqual(recipe.cookingMethod, ["keittäminen"], fixture.locale + ": generated public metadata");
+    assert.equal(recipeJsonLd(recipe).cookingMethod, fixture.schemaMethod, fixture.locale + ": localized Schema.org Recipe cookingMethod");
     assert.ok(recipe.instructionsText.join("\n").includes(fixture.boilPhrase), fixture.locale);
     assert.ok(recipe.notesHtml.includes(fixture.methodPhrase), fixture.locale + ": public reading view");
     assert.ok(recipe.notesHtml.includes(fixture.dryPhrase), fixture.locale + ": dry rice guidance");
@@ -87,6 +93,9 @@ test("natto's reviewed boiling method replaces frying metadata only in the publi
       fixture.locale + ": no new nutrition value");
   }
 
+  const unrelated = siteContent.recipes.find(recipe => recipe.recipeId === "gazpacho" && recipe.locale === "fi");
+  assert.ok(unrelated);
+  assert.equal(recipeJsonLd(unrelated).cookingMethod, undefined, "unrelated recipes should not gain metadata");
   assert.equal(reviewedPublicCookingMethod("unrelated", ["paistaminen"]), undefined,
     "unrelated recipes retain their existing metadata semantics");
   assert.throws(() => reviewedPublicCookingMethod(id, ["keittäminen"]),
