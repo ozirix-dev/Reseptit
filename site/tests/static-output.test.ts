@@ -882,6 +882,16 @@ test("a fresh egg pasta reference estimate stays scoped to the uncooked ingredie
   assert.doesNotMatch(html, /data-portion-carbohydrate=|data-portion-gk=/);
 });
 
+test("the Finnish roast pork serving includes its share of the whole cream sauce", async () => {
+  const recipe = siteContent.recipes.find(entry => entry.recipeId === "uuniporsas-kermakastikkeessa-vhh" && entry.locale === "fi");
+  assert.ok(recipe);
+  assert.equal(recipe.servings, 6);
+  const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+  assert.match(html, /Jaa kaikki liha ja kastike kuuteen yhtä suureen annokseen/);
+  const result = glycemicLoadPilotResults.find(row => row.recipeId === recipe.recipeId);
+  assert.equal(result?.glycemicLoadPerServing, 0.51);
+});
+
 test("generated route and search data satisfy the browser parser contracts", async () => {
   const dir = path.join(dist, "data");
   const files = await readdir(dir);

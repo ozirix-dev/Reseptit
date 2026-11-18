@@ -579,6 +579,11 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
       ["หุงข้าวสาร 150 กรัมในหม้อหุงข้าวตามคำแนะนำด้านบน", "ตวงข้าวหอมมะลิ SunRice Jasmine Fragrant แบบแห้ง 150 กรัมสำหรับสามที่ ใช้ข้าวสารแบบถุงและหลีกเลี่ยงข้าวสำเร็จรูปสำหรับไมโครเวฟ หุงในหม้อหุงข้าวโดยใช้น้ำตามปริมาณที่ระบุบนถุง เสิร์ฟข้าวทั้งหม้อทันทีขณะยังร้อน"]
     ]
   },
+  "uuniporsas-kermakastikkeessa-vhh/fi": {
+    "method": [
+      ["Viipaloi porsas ja tarjoa kastikkeen kanssa.", "Viipaloi porsas. Jaa kaikki liha ja kastike kuuteen yhtä suureen annokseen."]
+    ]
+  },
   "vhh-kaalilaatikko/en": {
     "useSeoDescription": true,
     "nutritionBasis": "Use the exact ingredient compositions and edible weights listed. Keep all liquid, fat and spices in the dish. The salt quantity is unchanged from the original recipe."
