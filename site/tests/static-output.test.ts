@@ -11,6 +11,8 @@ import {gkOnlyUi,gkOnlyValue,gkScopeUi,studyServingTitle} from '../src/features/
 import assert from "node:assert/strict";
 import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
 import test from "node:test";
 import { recipeLibraryPagePath, recipeLibraryPageSize } from "../src/features/recipes/recipe-pagination";
 import { parseRecipeSearch, parseRouteContent } from "../src/lib/load-content";
@@ -156,12 +158,13 @@ test("standalone carbohydrate and source warnings follow reviewed quantities and
       const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
       assert.match(rendered, /data-portion-carbohydrate="available"/);
       assert.doesNotMatch(rendered, /data-portion-gk=|data-gk-status="(?:QUALITATIVE|CALCULATED)"/);
-      assert.ok(rendered.includes(review.condition![locale]), routePath);
+      const condition = renderToStaticMarkup(createElement("p", { className: "recipe-disclosure" }, review.condition![locale]));
+      assert.ok(rendered.includes(condition), routePath);
       assert.ok(rendered.includes('href="' + (review.publicSource ?? review.source) + '"'), routePath);
       const preparations = review.wholeCarbohydrateOnly!.preparationChoices;
       if (preparations) {
         assert.equal([...rendered.matchAll(/data-carbohydrate-choice="whole"/g)].length, preparations.choices.length, routePath);
-        assert.ok(rendered.indexOf(review.condition![locale]) < rendered.indexOf('data-portion-preparations'), routePath);
+        assert.ok(rendered.indexOf(condition) < rendered.indexOf('data-portion-preparations'), routePath);
         for (const choice of preparations.choices) {
           assert.ok(rendered.includes(choice.label[locale]), routePath);
           assert.ok(rendered.includes('href="' + choice.record.sourceUrl + '"'), routePath);
@@ -170,7 +173,7 @@ test("standalone carbohydrate and source warnings follow reviewed quantities and
           review.ingredientPortion?.carbohydrateAlternatives?.length ?? 0, routePath);
       }
       if (id === "porkkanaletut") {
-        assert.ok(rendered.indexOf(review.condition![locale]) < rendered.indexOf('data-portion-carbohydrate="available"'), routePath);
+        assert.ok(rendered.indexOf(condition) < rendered.indexOf('data-portion-carbohydrate="available"'), routePath);
         assert.match(rendered, /data-ingredient-carbohydrate="declared"/, routePath);
         assert.match(rendered, /href="https:\/\/apetit\.fi\/tuotteet\//, routePath);
         assert.match(rendered, /href="https:\/\/www\.matvaretabellen\.no\/en\/carrot-cooked\//, routePath);
