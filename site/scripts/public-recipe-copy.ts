@@ -800,6 +800,15 @@ const gazpachoBreadScope: Readonly<Record<RecipeLocale, { before: string; after:
   th: { before: "เพิ่มขนมปังถ้าคุณต้องการ", after: "จะใส่ขนมปังหรือไม่ก็ได้ แต่ข้อมูลโภชนาการที่แสดงคำนวณจากสูตรพื้นฐานสำหรับ 4 ที่ซึ่งใส่ขนมปัง", note: "ข้อมูลโภชนาการที่แสดงรวมขนมปังขาว 2 แผ่น (รวม 50 กรัม) สำหรับสูตรพื้นฐาน 4 ที่ หากไม่ใส่ขนมปัง ปริมาณคาร์โบไฮเดรตและค่าประมาณภาระน้ำตาลที่อาจแสดงอยู่จะไม่ใช่ค่าของสูตรที่ไม่ใส่ขนมปังโดยตรง" },
 };
 
+// Gulab jamun: distinguish the frying oil supply from the estimated oil retained
+// in the nutrition calculation. Do not modify nutrition/GK-sealed source files.
+const gulabJamunOilScope: Readonly<Record<RecipeLocale, { before: string; after: string; note: string }>> = {
+  fi: { before: "Kuumenna öljy miedolle lämmölle.", after: "Varaa friteeraukseen noin litra öljyä ja kuumenna se varovasti miedolle lämmölle. Ainesluettelon 30 g on arvio koko erän imeyttämästä öljystä, ei friteerausastian öljymäärä.", note: "Ravintoarvio olettaa koko erän imevän 30 g öljyä. Se on arvio, ei mitattu imeytymä. Noin litra on friteeraukseen käytettävä öljymäärä, josta ylimääräinen valutetaan pois; toteutunut imeytymä voi poiketa arviosta." },
+  en: { before: "Heat the oil gently.", after: "Use about 1 litre of oil for deep-frying and heat it gently over low heat. The 30 g in the ingredient list is an estimate of oil absorbed by the whole batch, not the amount of oil to put in the pan.", note: "The nutrition estimate assumes 30 g of oil is absorbed by the whole batch. This is an estimate, not a measured absorption. About 1 litre of oil is used for deep-frying, with excess oil drained off; actual absorption may differ." },
+  sv: { before: "Värm oljan försiktigt.", after: "Använd cirka 1 liter olja för friteringen och värm den försiktigt på låg värme. De 30 g olja som står i ingredienslistan är en uppskattning av vad hela satsen tar upp, inte den mängd som ska hällas i kastrullen.", note: "Näringsvärdet bygger på att hela satsen beräknas ta upp 30 g olja. Det är en uppskattning, inte en uppmätt mängd. Cirka 1 liter används vid friteringen och överflödig olja får rinna av; den verkliga upptagningen kan avvika." },
+  th: { before: "ตั้งน้ำมันให้ร้อนด้วยไฟอ่อน", after: "เตรียมน้ำมันประมาณ 1 ลิตรสำหรับทอดแบบน้ำมันท่วม แล้วค่อย ๆ อุ่นด้วยไฟอ่อน ปริมาณน้ำมัน 30 กรัมในรายการส่วนผสมเป็นเพียงค่าประมาณที่ขนมทั้งสูตรดูดซึม ไม่ใช่ปริมาณน้ำมันที่ต้องเทลงหม้อ", note: "การประเมินโภชนาการสมมติว่าขนมทั้งสูตรดูดซึมน้ำมัน 30 กรัม ตัวเลขนี้เป็นค่าประมาณ ไม่ใช่ผลการชั่งวัดจริง ใช้น้ำมันประมาณ 1 ลิตรสำหรับทอดและสะเด็ดน้ำมันส่วนเกิน ปริมาณที่ดูดซึมจริงอาจต่างจากค่าประมาณ" },
+};
+
 export function projectPublicRecipeMethodCopy(
   id: string, locale: RecipeLocale, instructions: string, notes: string,
 ): { instructions: string; notes: string } {
@@ -817,6 +826,14 @@ export function projectPublicRecipeMethodCopy(
       if (id === "vhh-lihamureke") instructions = instructions.replace(eatInstruction[locale], "");
       notes = [notes, estimateNote[locale]].filter(Boolean).join("\n\n");
     }
+  }
+  if (id === "gulab-jamun") {
+    const scope = gulabJamunOilScope[locale];
+    if (instructions.split(scope.before).length !== 2) {
+      throw new Error("GULAB_JAMUN_OIL_SCOPE_SOURCE_DRIFT: " + locale);
+    }
+    instructions = instructions.replace(scope.before, scope.after);
+    notes = [notes, "- " + scope.note].filter(Boolean).join("\n");
   }
   if (id === "gazpacho") {
     const scope = gazpachoBreadScope[locale];
