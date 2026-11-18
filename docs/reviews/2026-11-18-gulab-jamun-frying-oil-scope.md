@@ -43,3 +43,7 @@ Käytetään olemassa olevaa `site/scripts/public-recipe-copy.ts`-esitystoiminto
 Testin todellinen tulos, täsmä-HEAD ja CI merkitään PR-kuvaukseen ajon valmistuttua. Riippumaton neljän kielen merkitys- ja ravintorajaustarkistus, Repo Guard sekä omistajan yhdistämis-/julkaisupäätös ovat erillisiä portteja.
 
 **Integraatiojärjestys:** tämä työ on pinottu PR:n #731 päälle, koska sama `public-recipe-copy.ts`-tiedosto muuttuu. #731:n hyväksynnän ja yhdistämisen jälkeen tämän PR:n vertailuhaara kohdistetaan tarvittaessa `main`iin ja varmennetaan uudelleen. Edeltävän PR:n CI ei sellaisenaan hyväksy tätä uutta HEADia. Codexin aktiiviset GK-/R2-projektiohaarat eivät ole tämän haaran kirjoituskohteita.
+
+## Katselmoinnin P2-korjaus (integraatio-PR)
+
+Käyttöliittymän annossäädin skaalaa aineslistan, mutta ei valmistusohjeen tekstiä. Julkisten FI/EN/SV/TH-tekstien **1 l friteerausöljyä ja 30 g laskennallista imeytymää** on tämän vuoksi rajattu nimenomaisesti **alkuperäisen neljän annoksen peruserään**. Näitä kiinteitä lukuja ei esitetä valitun annosmäärän automaattisesti skaalattuina määrinä. `site/tests/gulab-jamun-oil-scope.test.ts` vertaa kahden ja neljän annoksen ainesrivien 15/30 g -skaalausta sekä näkyvän tekstin perusversiorajausta. Friteerausastian vaatimaa öljymäärää ei johdeta 30 g:n imeytymisoletuksesta.
