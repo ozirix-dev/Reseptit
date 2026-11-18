@@ -8,6 +8,7 @@ export type LocalizedText = Record<RecipeLocale, string>;
 export interface OriginalGkCoverage {
   estimatedOmissionG: number;
   upperBoundOmissionG: number;
+  hasOmissionAssumptions?: true;
   mainIngredient?: {
     names: Partial<LocalizedText>;
     share: "all" | "majority";

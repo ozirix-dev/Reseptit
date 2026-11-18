@@ -4,7 +4,7 @@ const buildOriginPattern = siteTarget.baseUrl.replace(/[.*+?^${}()|[\]\\]/g, "\\
 import { estimateBasis, evidenceLabel, gkCopy, missingReason } from "../src/features/glycemic-load/glycemic-load-copy";
 import {gkOnlyVariants,gkVersionCoverage} from '../src/generated/gk-only-variants.generated';
 import { gkVariantScope } from '../src/features/recipes/gk-estimate-scope';
-import { verbalGkForPortion, type IngredientPortion } from '../src/features/recipes/gk-portion';
+import { verbalGkForPortion, type IngredientPortion, type OriginalGkCoverage, type PortionEvidence } from '../src/features/recipes/gk-portion';
 import { IngredientPortionDetails, portionCopy } from '../src/features/recipes/RecipePortionSummary';
 import {loadAuthorizedGk100Variants} from '../scripts/gk100-approval-release';
 import {gkOnlyUi,gkOnlyValue,gkScopeUi,studyServingTitle} from '../src/features/recipes/GkOnlyVariantPanel';
@@ -21,7 +21,7 @@ import { copyrightSourceUrl, copyrightUi } from "../src/features/recipes/recipe-
 import { toolUi } from "../src/features/recipes/recipe-tools";
 import { siteContent } from "../src/generated/content.generated";
 import { contentManifest } from "../src/generated/routes.generated";
-import { glycemicLoadAdditionalResults, glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults, type GlycemicLoadPilotPublicResult } from "../src/generated/glycemic-load-pilot.generated";
+import { glycemicLoadAdditionalResults, glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults, glycemicLoadPortions, type GlycemicLoadPilotPublicResult } from "../src/generated/glycemic-load-pilot.generated";
 import { glycemicLoadFilterCategories } from "../src/generated/glycemic-load-filters.generated";
 import { isPublicRecipeQuarantined, publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
 import { f25ExplicitUndefinedGkLabel, withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
@@ -520,6 +520,8 @@ test("legacy GL coverage uses the approved ingredient sum and distinguishes esti
   const file = path.resolve(import.meta.dirname, "../../tmp/nutrition/glycemic-load-pilot.json");
   const audit = JSON.parse(await readFile(file, "utf8")) as { results: GlycemicLoadResult[] };
   const scoped = glycemicLoadPilotResults.filter(result => result.originalGkCoverage);
+  assert.equal(scoped.length, 80);
+  assert.equal(scoped.filter(result => result.originalGkCoverage?.hasOmissionAssumptions).length, 22);
   for (const [id, unit] of [
     ["munakasrulla-pinaatti-tuorejuustolla", "all"],
     ["valimerellinen-menemen-fetalla", "majority"],
@@ -532,10 +534,20 @@ test("legacy GL coverage uses the approved ingredient sum and distinguishes esti
   assert.ok(scoped.some(result => result.originalGkCoverage!.upperBoundOmissionG > 0));
   assert.ok(scoped.some(result => result.originalGkCoverage!.estimatedOmissionG > 0));
   const pancake = glycemicLoadPilotResults.find(result => result.recipeId === "keto-pannukakku");
-  assert.equal(pancake?.originalGkCoverage, undefined);
+  assert.ok(pancake?.originalGkCoverage);
+  assert.equal(pancake.originalGkCoverage.mainIngredient, undefined);
+  assert.ok(Math.abs(pancake.originalGkCoverage.estimatedOmissionG - 0.555) < 1e-9);
+  const assumptionsOnly = ["kukkakaaligratiini-pekonilla", "kiinalainen-soijamaito-aamiaisella"];
+  for (const id of assumptionsOnly) {
+    const coverage: OriginalGkCoverage | undefined = scoped.find(result => result.recipeId === id)?.originalGkCoverage;
+    assert.ok(coverage, id);
+    assert.equal(coverage.estimatedOmissionG, 0, id);
+    assert.equal(coverage.upperBoundOmissionG, 0, id);
+    assert.equal(coverage.hasOmissionAssumptions, true, id);
+  }
   for (const { locale, routePath } of siteContent.recipes.filter(recipe => recipe.recipeId === pancake?.recipeId)) {
     const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
-    const limitation = pancake!.portionEvidence!.classLimitation![locale];
+    const limitation: string = pancake.portionEvidence!.classLimitation![locale];
     assert.ok(html.includes(renderToStaticMarkup(createElement("p", { className: "recipe-glycemic-load__class" }, limitation))), routePath);
   }
   const guides = await Promise.all((["fi", "en", "sv", "th"] as const).map(async locale =>
@@ -548,7 +560,12 @@ test("legacy GL coverage uses the approved ingredient sum and distinguishes esti
     assert.equal(result.unroundedGlycemicLoadPerServing, archived.unroundedGlycemicLoadPerServing, id);
     const coverage = result.originalGkCoverage!;
     assert.equal(coverage.upperBoundOmissionG, archived.omittedAvailableCarbohydrateUpperBoundPerServingG, id);
-    assert.equal(coverage.estimatedOmissionG, archived.omittedAvailableCarbohydratePerServingG - coverage.upperBoundOmissionG, id);
+    const omitted = archived.omittedAvailableCarbohydratePerServingG;
+    if (coverage.hasOmissionAssumptions) {
+      assert.ok(coverage.estimatedOmissionG + coverage.upperBoundOmissionG < omitted, id);
+    } else {
+      assert.ok(Math.abs(coverage.estimatedOmissionG + coverage.upperBoundOmissionG - omitted) < 1e-9, id);
+    }
     for (const { locale, routePath } of siteContent.recipes.filter(recipe => recipe.recipeId === id)) {
       const recipeHtml = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
       const guide = guideByLocale.get(locale)!;
@@ -558,10 +575,47 @@ test("legacy GL coverage uses the approved ingredient sum and distinguishes esti
       for (const markup of [section, guideRow]) {
         const note = markup.indexOf('data-original-gk-coverage="true"');
         assert.ok(note >= 0 && note < markup.indexOf("<details"), routePath);
-        assert.match(markup, /data-gk-omissions="true" aria-live="polite"/, routePath);
+        const omissions: string | undefined = markup.match(/data-gk-omissions="true" aria-live="polite"[^>]*>([\s\S]*?)<\/p>/)?.[1];
+        assert.ok(omissions, routePath);
+        assert.equal(omissions.includes('data-gk-omission-assumptions="true"'), coverage.hasOmissionAssumptions === true, routePath);
+        if (assumptionsOnly.includes(id)) assert.doesNotMatch(omissions, /[0-9]/, routePath);
         if (coverage.mainIngredient?.names[locale]) {
           assert.ok(markup.includes(renderToStaticMarkup(createElement("strong", null, coverage.mainIngredient.names[locale]))), routePath);
         }
+      }
+    }
+  }
+});
+
+test("research handoff portions keep plain apple, tomato and honey in their supported scopes", async () => {
+  const cases = {
+    "suklaa-raejuustokakku": [12.726, true], "punajuuri-suklaakakku": [13.5744, true],
+    "mustikka-jogurttijaatelo": [8.484, true], taateliketsuppi: [1.39125, false], omenavaahtokarkit: [null, true],
+    "ananas-kanelijuoma-sitruunalla": [null, true],
+  } as const;
+  for (const [id, [ingredientG, whole]] of Object.entries(cases)) {
+    const evidence: PortionEvidence | undefined = glycemicLoadPortions[id];
+    assert.ok(evidence, id);
+    assert.equal(glycemicLoadFilterCategories[id], undefined, id);
+    assert.equal(Boolean(evidence.availableCarbs), whole, id);
+    assert.equal(evidence.verbal, undefined, id);
+    if (ingredientG !== null) assert.ok(Math.abs((evidence.ingredientPortion?.availableCarbsGPerServing ?? Infinity) - ingredientG) < 1e-9, id);
+    if (id === "omenavaahtokarkit") assert.equal(evidence.piecesPerServing, 1, id);
+    for (const { locale, routePath } of siteContent.recipes.filter(recipe => recipe.recipeId === id)) {
+      const [recipe, guide] = await Promise.all([
+        readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8"),
+        readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8"),
+      ]);
+      const start = guide.indexOf(`id="${id}" class="glycemic-pilot__recipe"`);
+      assert.ok(start >= 0, routePath);
+      const row = guide.slice(start, guide.indexOf("<li ", start + 1));
+      assert.doesNotMatch(recipe, /data-portion-gk=|data-gk-status="(?:CALCULATED|QUALITATIVE)"/, routePath);
+      assert.doesNotMatch(row, /gk-evidence__value|data-original-gk-class=/, routePath);
+      assert.equal(recipe.includes('data-portion-carbohydrate="available"'), whole, routePath);
+      for (const markup of [recipe, row]) {
+        if (evidence.ingredientPortion?.source) assert.ok(markup.includes(`href="${evidence.ingredientPortion.source}"`), routePath);
+        if (id === "taateliketsuppi") assert.ok(markup.includes('href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/168191/nutrients"'), routePath);
+        if (id === "ananas-kanelijuoma-sitruunalla") assert.ok(markup.includes(new Intl.NumberFormat(locale).format(0.35)), routePath);
       }
     }
   }

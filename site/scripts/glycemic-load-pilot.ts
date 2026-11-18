@@ -401,14 +401,30 @@ const legacyPublicResults = results.flatMap((result) => {
   let originalGkCoverage: OriginalGkCoverage | undefined;
   if (result.status === "CALCULATED" && result.ingredients === currentLegacyInputs.get(result.recipeId)?.ingredients
       && result.unroundedGlycemicLoadPerServing !== null && !result.glycemicLoadRangePerServing
-      && omission > 0 && upperBound >= 0 && upperBound <= omission
-      && !review?.condition && !review?.carbohydrateScope && !review?.classLimitation) {
-    originalGkCoverage = { estimatedOmissionG: omission - upperBound, upperBoundOmissionG: upperBound };
+      && omission > 0 && upperBound >= 0 && upperBound <= omission) {
+    let estimatedOmissionG = 0;
+    let assumedOmissionG = 0;
+    for (const row of result.ingredients) {
+      const amount = row.availableCarbohydratePerServingG;
+      if (row.giContribution !== null || amount === null || amount <= 0
+          || (row.availableCarbohydrateUpperBoundPerServingG ?? 0) > 0) continue;
+      if (row.excludedReason && (row.grams === null || !row.fineliRecordId)) assumedOmissionG += amount;
+      else estimatedOmissionG += amount;
+    }
+    if (Math.abs(estimatedOmissionG + assumedOmissionG + upperBound - omission) > 1e-9) {
+      throw new Error(`${result.recipeId}: public GK omissions must reconcile with the recorded calculation.`);
+    }
+    originalGkCoverage = {
+      estimatedOmissionG,
+      upperBoundOmissionG: upperBound,
+      ...(assumedOmissionG > 0 && { hasOmissionAssumptions: true }),
+    };
     const positive = result.ingredients.filter(row => row.giContribution !== null && row.giContribution > 0);
     const total = result.unroundedGlycemicLoadPerServing;
     const main = positive.find(row => total !== null && row.giContribution! > total / 2);
     const totalByIngredient = positive.reduce((sum, row) => sum + row.giContribution!, 0);
-    if (main && total !== null && Math.abs(total - totalByIngredient) < 1e-9) {
+    if (!review?.condition && !review?.carbohydrateScope && !review?.classLimitation
+        && main && total !== null && Math.abs(total - totalByIngredient) < 1e-9) {
       const canonical = coverageIngredientNames[result.recipeId]?.[main.name] ?? main.name;
       const displayName = applyCopyEdits(canonical, ingredientItemEdits);
       const index = findIngredientIndex(canonical);

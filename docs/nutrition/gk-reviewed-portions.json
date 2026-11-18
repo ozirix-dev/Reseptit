@@ -2644,10 +2644,10 @@
     "source": "https://flfn.wyb.ac.lk/wp-content/uploads/2019/FLFN/Abstract/Abstact-2019.pdf#page=67",
     "reasoning": "One of two equal glasses uses 165 g fresh pineapple flesh weighed after removing peel and core. All pulp remains; 15 g fresh squeezed lemon and water are included. The original audited value is 18.72 g available CHO excluding at most 0.35 g weighed cinnamon per serving; 18.48 g comes from pineapple. Sandeepani and Rathnayake 2019 undergraduate symposium abstract (page numbered 49) describes a randomized five-condition crossover in 12 healthy adults comparing intact pineapple, nutrient-extractor blended pineapple and glucose. The presented points differ substantially (48 ± 7.7 SEM blended, 83 ± 10.1 SEM whole). This preliminary study does not give full ingredient, cultivar or equipment matching, and sits near a directional boundary at the recipe serving. Human whole-pineapple studies also differ across sampling; the published Redfern et al. extraction study included pineapple only within a multiple-fruit mixture and did not isolate it. Keep GK pending and publish the actual fruit weight and retained pulp scope, with no account adjustment for straining or use of juice.",
     "condition": {
-      "fi": "Yhteen lasilliseen tulee 165 g ananaksen hedelmälihaa. Punnitse ananas ilman kuorta ja kovaa keskiosaa ja jätä kaikki hedelmäliha juomaan.",
-      "en": "One glass uses 165 g of pineapple flesh. Weigh the pineapple without the peel or hard core and keep all the pulp in the drink.",
-      "sv": "Ett glas innehåller 165 g ananasfruktkött. Väg ananasen utan skal och hård mittdel och låt allt fruktkött vara kvar i drycken.",
-      "th": "หนึ่งแก้วใช้เนื้อสับปะรด 165 กรัม ชั่งหลังปอกเปลือกและเอาแกนแข็งออก แล้วเก็บเนื้อที่ปั่นไว้ทั้งหมดในเครื่องดื่ม"
+      "fi": "Yhteen lasilliseen tulee 165 g ananaksen hedelmälihaa. Punnitse ananas ilman kuorta ja kovaa keskiosaa ja jätä kaikki hedelmäliha juomaan. Hiilihydraattiluku kattaa ananaksen ja sitruunamehun. Lasillisen 0,35 g kanelia jää laskelman ulkopuolelle.",
+      "en": "One glass uses 165 g of pineapple flesh. Weigh the pineapple without the peel or hard core and keep all the pulp in the drink. The carbohydrate estimate covers the pineapple and lemon juice. The 0.35 g of cinnamon in each glass is outside that estimate.",
+      "sv": "Ett glas innehåller 165 g ananasfruktkött. Väg ananasen utan skal och hård mittdel och låt allt fruktkött vara kvar i drycken. Kolhydratberäkningen omfattar ananasen och citronsaften. De 0,35 g kanel som finns i varje glas ingår inte i beräkningen.",
+      "th": "หนึ่งแก้วใช้เนื้อสับปะรด 165 กรัม ชั่งหลังปอกเปลือกและเอาแกนแข็งออก แล้วเก็บเนื้อที่ปั่นไว้ทั้งหมดในเครื่องดื่ม ค่าประมาณคาร์โบไฮเดรตครอบคลุมสับปะรดและน้ำเลมอน ไม่รวมอบเชย 0.35 กรัมที่อยู่ในแต่ละแก้ว"
     },
     "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/2ad48fa4a2bfb187b8bc1add90daf89b0fe53aaa/docs/nutrition/calculations/ananas-kanelijuoma-sitruunalla.json"
   },
@@ -2772,12 +2772,12 @@
     "nutritionSha256": "7aca49e9d14a37f8f1ac777e594ccc7423620b4f8a9b59759d20f15c18aefc54",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/354",
-    "reasoning": "The declared 140 g tomato paste is blended into eight servings, so 17.5 g supplies 1.39125 g available carbohydrate at the Fineli Release 20 #354 generic tomato purée/paste reference (7.95 g/100 g). Other strengths vary. The recipe weighs 45 g pitted dates before soaking and discards the soak water. An AFCD dried-date record can inform a specifically matched pre-soak product, not the retained contribution. Vinegar definition/polyols for the prior record are unresolved.",
+    "reasoning": "The declared 140 g tomato paste is blended into eight servings, so 17.5 g supplies 1.39125 g available carbohydrate at the Fineli Release 20 #354 generic tomato purée/paste reference (7.95 g/100 g). Other strengths vary. The recipe weighs 45 g pitted dates before soaking and discards the soak water. An AFCD dried-date record can inform a specifically matched pre-soak product, not the retained contribution. Vinegar definition/polyols for the prior record are unresolved. USDA FDC 168191 reports carbohydrate by difference including fibre (74.97 g/100 g, fibre 6.7 g/100 g), with aggregate polyols unverified. Subtracting fibre alone is insufficient under the existing model, and discarding the soak water leaves the retained carbohydrate unresolved.",
     "condition": {
-      "fi": "Tomaattipyreen arvio perustuu Finelin keskiarvoon. Jos käytät tiivistetympää pyreetä, tarkista pakkaus. Koko annoksen arvioon tarvitaan tieto siitä, paljonko hiilihydraattia jää taateleihin liotuksen ja valutuksen jälkeen.",
-      "en": "The tomato paste estimate uses the Fineli average. If you use a more concentrated paste, check the pack. A whole-serving estimate needs the amount of carbohydrate left in the dates after soaking and draining.",
-      "sv": "Uppskattningen för tomatpurén bygger på Finelis genomsnitt. Kontrollera förpackningen om du använder en mer koncentrerad puré. För att uppskatta hela portionen behöver man veta hur mycket kolhydrater som finns kvar i dadlarna efter blötläggning och avrinning.",
-      "th": "ค่าประมาณของมะเขือเทศเข้มข้นใช้ค่าเฉลี่ยของ Fineli หากใช้ชนิดที่เข้มข้นกว่า ให้ตรวจฉลาก การประมาณทั้งที่ต้องทราบว่ามีคาร์โบไฮเดรตเหลืออยู่ในอินทผลัมเท่าไรหลังแช่และสะเด็ดน้ำ"
+      "fi": "Tomaattipyreen arvio perustuu Finelin keskiarvoon. Jos käytät tiivistetympää pyreetä, tarkista pakkaus. USDA:n kuivattujen Medjool-taatelien hiilihydraattiluku sisältää kuidun. Koko annoksen arvioon tarvitaan käytetyn taatelin koostumus sekä tieto siitä, paljonko hiilihydraattia jää taateleihin liotuksen ja valutuksen jälkeen.",
+      "en": "The tomato paste estimate uses the Fineli average. If you use a more concentrated paste, check the pack. The USDA carbohydrate figure for dried Medjool dates includes fibre. A whole-serving estimate needs the composition of the dates used and the carbohydrate remaining after soaking and draining.",
+      "sv": "Uppskattningen för tomatpurén bygger på Finelis genomsnitt. Kontrollera förpackningen om du använder en mer koncentrerad puré. USDA:s kolhydratvärde för torkade Medjooldadlar omfattar fiber. Hela portionens uppskattning kräver uppgifter om de använda dadlarnas sammansättning och hur mycket kolhydrat som återstår efter blötläggning och avrinning.",
+      "th": "ค่าประมาณของมะเขือเทศเข้มข้นใช้ค่าเฉลี่ยของ Fineli หากใช้ชนิดที่เข้มข้นกว่า ให้ตรวจฉลาก ค่าคาร์โบไฮเดรตของอินทผลัมเมดจูลแห้งจาก USDA รวมใยอาหาร การประมาณทั้งที่ต้องทราบองค์ประกอบของอินทผลัมที่ใช้และปริมาณคาร์โบไฮเดรตที่เหลือหลังแช่และสะเด็ดน้ำ"
     },
     "ingredientPortion": {
       "index": 0,
@@ -2789,8 +2789,10 @@
         "th": "มะเขือเทศเข้มข้น"
       },
       "unit": "g",
-      "availableCarbsGPer100g": 7.95
-    }
+      "availableCarbsGPer100g": 7.95,
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/354"
+    },
+    "publicSource": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168191/nutrients"
   },
   "mustaherukkavispipuuro": {
     "recipeBindingSha256": "013e8a90ed2bacaaeb6132b2bb19cb8afaa7f55a4a76fbcda6186e685332e95f",
@@ -3340,7 +3342,20 @@
         "th": "5c0511649ad19d5d84bd5c341659fb6deac55c89cddfa1b3f7ef2ffd3c07fed1"
       }
     },
-    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/suklaa-raejuustokakku.json"
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/suklaa-raejuustokakku.json",
+    "ingredientPortion": {
+      "index": 4,
+      "ingredientSha256": "3c7efa727cd4f297809c5e4f790d89f7389a32fc0d567ed473703e826275bba1",
+      "labels": {
+        "fi": "Juokseva hunaja",
+        "en": "Runny honey",
+        "sv": "Flytande honung",
+        "th": "น้ำผึ้งเหลว"
+      },
+      "unit": "g",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/4",
+      "availableCarbsGPer100g": 80.8
+    }
   },
   "omenavaahtokarkit": {
     "recipeBindingSha256": "655183a0dc94e2932d9fef912fabc6ac75835a3abbb7bc3cf34db78510199e84",
@@ -3348,12 +3363,12 @@
     "nutritionSha256": "b84c0249b1deec085d920f62873a39c735faf4da1f879640fb8ef25de69310a1",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11060",
-    "reasoning": "Weighed 300 g peeled cored apple is cooked in water and puréed with no draining. All purée is whipped and cut into 16 pieces. Fineli #11060 peeled apple CHOAVL 8.31 g/100 g gives 1.558125 g per 1/16. Fineli #25 plain gelatine and #922 water directly report zero available CHO. Leaf weight/retention and missing independently measured gelatine polyols do not affect that direct zero. Recipe scope is ordinary plain gelatine leaf, which a manufacturer also lists as one ingredient. Added carbohydrate in a substituted flavoured dessert mix is outside the recipe.",
+    "reasoning": "Weighed 300 g peeled cored apple is cooked in water and puréed with no draining. All purée is whipped and cut into 16 pieces. Fineli #11060 peeled apple CHOAVL 8.31 g/100 g gives 1.558125 g per 1/16. Fineli #25 plain gelatine and #922 water directly report zero available CHO. Leaf weight/retention and missing independently measured gelatine polyols do not affect that direct zero. Recipe scope is ordinary plain gelatine leaf, which a manufacturer also lists as one ingredient. Added carbohydrate in a substituted flavoured dessert mix is outside the recipe. Lecerf et al. 2025 (doi:10.1002/fsn3.70844) tested two commercial apple purées without added sugar in ten healthy adults. Their glucose-scale GI averages were 42 and 46, each with SEM 3. The comparison supports cooked apple purée as a useful analogue, but those products did not use this recipe’s gelatin, whipping or cold set. The current whole-carbohydrate-only review and its F25 boundary support portion carbohydrate, with qualitative GK held pending a separate applicable review.",
     "condition": {
-      "fi": "Arvio koskee yhtä palaa, kun jaat erän 16 palaan. Käytä reseptin tavallisia liivatelehtiä ja punnitse omenat kuorittuina ja ilman siemenkotaa.",
-      "en": "The estimate is for one of 16 pieces. Use plain gelatine leaves and weigh the apples after peeling and coring.",
-      "sv": "Uppskattningen gäller en av 16 bitar. Använd vanliga gelatinblad och väg äpplena efter skalning och urkärning.",
-      "th": "ค่าประมาณสำหรับหนึ่งชิ้นเมื่อแบ่งเป็น 16 ชิ้น ใช้เจลาตินแผ่นชนิดไม่ปรุงแต่ง และชั่งแอปเปิ้ลหลังปอกเปลือกและเอาแกนออก"
+      "fi": "Jaa erä 16 yhtä suureen palaan. Käytä tavallisia liivatelehtiä ja punnitse omenat kuorittuina ja ilman siemenkotaa.",
+      "en": "Divide the batch into 16 equal pieces. Use plain gelatine leaves and weigh the apples after peeling and coring.",
+      "sv": "Dela satsen i 16 lika stora bitar. Använd vanliga gelatinblad och väg äpplena efter skalning och urkärning.",
+      "th": "แบ่งขนมเป็น 16 ชิ้นขนาดเท่ากัน ใช้เจลาตินแผ่นชนิดไม่ปรุงแต่ง และชั่งแอปเปิ้ลหลังปอกเปลือกและเอาแกนออก"
     },
     "wholeCarbohydrateOnly": {
       "localizedScopeSha256": {
@@ -3363,7 +3378,8 @@
         "th": "c87e12f157a7448e56622f6afed84dc2d89b885d4af11ebcbd5ba0b2c880b04a"
       }
     },
-    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/omenavaahtokarkit.json"
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/0ea9dce64ea0ea95d5915726802035685568358b/docs/nutrition/calculations/omenavaahtokarkit.json",
+    "piecesPerServing": 1
   },
   "avokado-perunasampylat": {
     "recipeBindingSha256": "4967492609e442ac342c84d5bc3e920ae1b43ebc63d98a90b5ffbe46e2b3895f",
@@ -3455,6 +3471,19 @@
         "fi": "8fcbf23540a7717a4b069b122677dafde42977430609a32fa47973714e2e6920",
         "th": "fc81f3bb66e9a1f5ad7f6688cd96e462cea22b6755e237b7ace7775c6c479387"
       }
+    },
+    "ingredientPortion": {
+      "index": 4,
+      "ingredientSha256": "8bd02051a7cb5e0d96d79ab555e7d49870fb5ce6254b92f29b01d11c5f31ce0f",
+      "labels": {
+        "fi": "Juokseva hunaja",
+        "en": "Runny honey",
+        "sv": "Flytande honung",
+        "th": "น้ำผึ้งเหลว"
+      },
+      "unit": "g",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/4",
+      "availableCarbsGPer100g": 80.8
     }
   },
   "thai-jok-kanalla": {
@@ -4189,6 +4218,19 @@
           "matchEvidence": "AFCD Release 3 F009350 identifies a vanilla bean extract in alcohol and reports carbohydrate directly without sugar alcohols. Recipe uses 4 g vanilla extract; alcohol-free, glycerine-based, imitation extracts and vanilla sugar are outside this estimate."
         }
       ]
+    },
+    "ingredientPortion": {
+      "index": 2,
+      "ingredientSha256": "15c27df7c2a341f080b5db91d14cb7f532e24d12245d79a031146a8e5cf09977",
+      "labels": {
+        "fi": "Juokseva hunaja",
+        "en": "Runny honey",
+        "sv": "Flytande honung",
+        "th": "น้ำผึ้งเหลว"
+      },
+      "unit": "g",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/4",
+      "availableCarbsGPer100g": 80.8
     }
   },
   "porkkanaletut": {
@@ -4298,10 +4340,10 @@
     "source": "https://doi.org/10.1093/ajcn/nqab233",
     "publicSource": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
     "condition": {
-      "fi": "Arvio perustuu 50 grammaan kuivaa vehnänuudelia annosta kohti. Nuudelien GK-osuus käyttää pastaryhmän GI-keskiarvoa, joten nuudelivalinta voi muuttaa arviota. Soijakastike sisältyy annoksen hiilihydraattiarvioon. GK-laskelmasta se puuttuu.",
-      "en": "The estimate uses 50 g of dry wheat noodles per serving. Their GL contribution uses the average GI of pasta, so the noodles you choose can change the estimate. The serving’s carbohydrate estimate includes soy sauce. The GL calculation excludes it.",
-      "sv": "Uppskattningen bygger på 50 g torra vetenudlar per portion. Nudlarnas bidrag till GL bygger på genomsnittligt GI för pasta, så valet av nudlar kan påverka uppskattningen. Sojasåsen ingår i portionens kolhydratuppskattning. Den ingår inte i GL-beräkningen.",
-      "th": "ค่าประมาณใช้บะหมี่แป้งสาลีแห้ง 50 กรัมต่อหนึ่งที่ ค่า GL ส่วนของบะหมี่ใช้ค่า GI เฉลี่ยของพาสต้า ชนิดบะหมี่ที่เลือกอาจทำให้ค่าประมาณเปลี่ยนได้ ค่าประมาณคาร์โบไฮเดรตต่อหนึ่งที่รวมซีอิ๊ว การคำนวณ GL ไม่รวมซีอิ๊ว"
+      "fi": "Arvio perustuu 50 grammaan kuivaa vehnänuudelia annosta kohti. Nuudelien GK-osuus käyttää pastaryhmän GI-keskiarvoa, joten nuudelivalinta voi muuttaa arviota. Annoksen hiilihydraattiarvio sisältää soijakastikkeen. GK-mallin kirjattu poisjättö koskee kananmunaa. Soijakastikkeen GK-osuus jää avoimeksi.",
+      "en": "The estimate uses 50 g of dry wheat noodles per serving. Their GL contribution uses the average GI of pasta, so the noodles you choose can change the estimate. The serving’s carbohydrate estimate includes soy sauce. The recorded omission in the GL model is egg; the GL contribution from soy sauce is unresolved.",
+      "sv": "Uppskattningen bygger på 50 g torra vetenudlar per portion. Nudlarnas bidrag till GL bygger på genomsnittligt GI för pasta, så valet av nudlar kan påverka uppskattningen. Sojasåsen ingår i portionens kolhydratuppskattning. Den dokumenterade utelämnade ingrediensen i GL-modellen är ägg. Sojasåsens bidrag till GL är fortfarande osäkert.",
+      "th": "ค่าประมาณใช้บะหมี่แป้งสาลีแห้ง 50 กรัมต่อหนึ่งที่ ค่า GL ส่วนของบะหมี่ใช้ค่า GI เฉลี่ยของพาสต้า ชนิดบะหมี่ที่เลือกอาจทำให้ค่าประมาณเปลี่ยนได้ ค่าประมาณคาร์โบไฮเดรตต่อหนึ่งที่รวมซีอิ๊ว ส่วนที่บันทึกว่าเว้นไว้ในแบบจำลอง GL คือไข่ ส่วนค่า GL จากซีอิ๊วยังไม่ทราบ"
     },
     "reasoning": "Two servings share 100 g dry wheat noodles boiled according to package instructions and later stir-fried with tofu, sprouts and egg. The current recipe and its separate carbohydrate calculation include one tablespoon soy sauce; the sealed GK input has no soy sauce row. Fineli 31 supplies 0.855 g available carbohydrate per serving from it in the nutrition accounting, outside the 0.165 g tracked omission of the approved GK model. A large cooking and preparation mismatch remains between a pasta group mean, the human mee pok and an unspecified dry wheat noodle used in a stir fry. The numerical scope note identifies the omission and never assigns the researched GI to this dish. Atkinson et al. 2021 Table 1 reports pasta GI 52 (glucose=100; 77 entries, SD 12). This group accounts for 93% of the existing GK. Omission handling already suppresses the model's medium category.",
     "classLimitation": {
