@@ -189,6 +189,8 @@ test("standalone carbohydrate and source warnings follow reviewed quantities and
         const rollCarbs = rendered.match(/data-ingredient-carbohydrate="available"[^>]*>([\s\S]*?)<\/div>/)?.[1];
         assert.ok(wholeCarbs?.includes(new Intl.NumberFormat(locale).format(4.6)), routePath);
         assert.ok(rollCarbs?.includes(new Intl.NumberFormat(locale).format(1.6)), routePath);
+        assert.notEqual(review.ingredientPortion?.source, review.publicSource, routePath);
+        assert.ok(rollCarbs?.includes('href="' + review.ingredientPortion!.source + '"'), routePath);
       }
     }
   }
