@@ -105,9 +105,23 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
     const data = JSON.parse(jsonScripts[0].content);
     const withholding = withholdF25Nutrition(recipe.recipeId, recipe.locale);
     const nutrition = Object.fromEntries(Object.entries({ carbohydrateContent: recipe.nutrition.carbsTotalG, proteinContent: recipe.nutrition.proteinG, fatContent: recipe.nutrition.fatG }).filter(([, n]) => !withholding && n !== null).map(([k, n]) => [k, `${n} g`]));
+    // Permit only the explicitly reviewed natto source override, and only when
+    // the public notes corroborate it. Unknown structured claims remain blocked.
+    const nattoMethod = recipe.recipeId === "japanilainen-natto-riisikulho"
+      && isDeepStrictEqual(recipe.cookingMethod, ["keittäminen"])
+      && recipe.notesHtml.includes({
+        fi: "Valmistustapa: keittäminen.", en: "Cooking method: boiling.",
+        sv: "Tillagningssätt: kokning.", th: "วิธีปรุง: การต้ม",
+      }[recipe.locale])
+      ? { fi: "Keittäminen", en: "Boiling", sv: "Kokning", th: "การต้ม" }[recipe.locale]
+      : undefined;
+    check(!recipe.cookingMethod?.length || Boolean(nattoMethod),
+      "COOKING_METHOD_SOURCE", "Cooking method must be source-reviewed and visible in the recipe notes");
     const expectedData = JSON.parse(JSON.stringify({
       "@context": "https://schema.org", "@type": "Recipe", name: recipe.title, description: recipe.description || undefined,
-      inLanguage: recipe.locale, recipeCategory: recipe.category, keywords: recipe.tags.length ? recipe.tags.join(", ") : undefined,
+      inLanguage: recipe.locale, recipeCategory: recipe.category,
+      ...(nattoMethod ? { cookingMethod: nattoMethod } : {}),
+      keywords: recipe.tags.length ? recipe.tags.join(", ") : undefined,
       ...(recipe.image ? { image: [recipe.image.src] } : {}), recipeYield: String(recipe.servings),
       recipeIngredient: expectedIngredients,
       recipeInstructions: [...(recipe.ingredientPreparation ?? []), ...recipe.instructionsText]
