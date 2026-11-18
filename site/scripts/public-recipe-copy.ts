@@ -793,6 +793,13 @@ const flourNote: Record<RecipeLocale, string> = {
   th: "หากแป้งสำหรับรีด 20 กรัมไม่พอ ต้องทดลองอบเพื่อยืนยันปริมาณที่ต้องใช้",
 };
 
+const gazpachoBreadScope: Readonly<Record<RecipeLocale, { before: string; after: string; note: string }>> = {
+  fi: { before: "Lisää halutessasi leipä.", after: "Lisää halutessasi leipä. Näytetyt ravintoarvot on laskettu leivän sisältävälle neljän annoksen peruserälle.", note: "Ilmoitetut ravintoarvot sisältävät koko neljän annoksen peruserän kaksi vaalean leivän viipaletta (yhteensä 50 g). Jos jätät leivän pois, näytetyt hiilihydraattimäärät ja mahdollinen GK-arvio eivät sellaisinaan kuvaa leivätöntä annosta." },
+  en: { before: "Add bread if you want.", after: "Add bread if you wish. The displayed nutrition figures are calculated for the four-serving batch with bread included.", note: "The displayed nutrition figures include two slices of white bread (50 g total) in the original four-serving batch. If you omit the bread, the shown carbohydrate values and any glycemic load estimate do not directly describe the bread-free serving." },
+  sv: { before: "Lägg till bröd om du vill.", after: "Tillsätt bröd om du vill. De visade näringsvärdena har beräknats för en sats på fyra portioner där brödet ingår.", note: "De visade näringsvärdena omfattar två skivor vitt bröd (sammanlagt 50 g) i grundsatsen på fyra portioner. Utan bröd gäller de angivna kolhydratvärdena och en eventuell uppskattning av glykemisk belastning inte direkt för portionen." },
+  th: { before: "เพิ่มขนมปังถ้าคุณต้องการ", after: "จะใส่ขนมปังหรือไม่ก็ได้ แต่ข้อมูลโภชนาการที่แสดงคำนวณจากสูตรพื้นฐานสำหรับ 4 ที่ซึ่งใส่ขนมปัง", note: "ข้อมูลโภชนาการที่แสดงรวมขนมปังขาว 2 แผ่น (รวม 50 กรัม) สำหรับสูตรพื้นฐาน 4 ที่ หากไม่ใส่ขนมปัง ปริมาณคาร์โบไฮเดรตและค่าประมาณภาระน้ำตาลที่อาจแสดงอยู่จะไม่ใช่ค่าของสูตรที่ไม่ใส่ขนมปังโดยตรง" },
+};
+
 export function projectPublicRecipeMethodCopy(
   id: string, locale: RecipeLocale, instructions: string, notes: string,
 ): { instructions: string; notes: string } {
@@ -810,6 +817,14 @@ export function projectPublicRecipeMethodCopy(
       if (id === "vhh-lihamureke") instructions = instructions.replace(eatInstruction[locale], "");
       notes = [notes, estimateNote[locale]].filter(Boolean).join("\n\n");
     }
+  }
+  if (id === "gazpacho") {
+    const scope = gazpachoBreadScope[locale];
+    if (instructions.split(scope.before).length !== 2) {
+      throw new Error("GAZPACHO_BREAD_SCOPE_SOURCE_DRIFT: " + locale);
+    }
+    instructions = instructions.replace(scope.before, scope.after);
+    notes = [notes, "- " + scope.note].filter(Boolean).join("\n");
   }
   if (id === "karjalanpiirakat-riisipuurolla") {
     if (locale === "fi") {
