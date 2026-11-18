@@ -38,6 +38,44 @@
         }
       ],
       "contextSha256": "16208f9e5edea02dfb95cc792a9d75f698d8184ec22460b55e4dbf2836e86558"
+    },
+    {
+      "canonicalRecipeId": "punajuuririsotto",
+      "sourceRecipeId": "punajuuririsotto",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Kuivan risottoriisin punnittu määrä ja sitä vastaava koostumus, kuoritun kypsän punajuuren syötävä paino ja fondin tuotetieto puuttuvat. Myös timjamin, sitruunanmehun ja parmesaanin koostumus jää avoimeksi.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-riisi-parsapasta-paatokset.md",
+          "sha256": "65e7418f07b2c28d4c9507813314c2c785bde4c354c2662a95ad395271a65c4f",
+          "locator": "Punajuuririsotto"
+        }
+      ],
+      "recipeSha256": "6e50556a97a86a882f73ef8355296f697c1701a5af253bb8bc30c37970950613",
+      "contextSha256": "f0a1c50f39c5dc2463a3aeb4f96ad6895174f087708709df55e08b02704a1847",
+      "calculationInputSha256": null,
+      "calculationEvidenceSha256": null
+    },
+    {
+      "canonicalRecipeId": "sitruuna-parsapasta",
+      "sourceRecipeId": "sitruuna-parsapasta",
+      "scope": "original",
+      "outcome": "NO_RELIABLE_GK",
+      "reviewedAt": "2026-11-18",
+      "reason": "Käytetty tuore fettuccine sekä valutetun pastan ja annokseen päätyvän kypsän parsan syötävät määrät ja niitä vastaava koostumus puuttuvat. Parsan keitinveden käsittely sekä sitruunankuoriraasteen massa ja koostumus ovat avoinna.",
+      "evidence": [
+        {
+          "path": "docs/nutrition/research/2026-11-18-gk-riisi-parsapasta-paatokset.md",
+          "sha256": "65e7418f07b2c28d4c9507813314c2c785bde4c354c2662a95ad395271a65c4f",
+          "locator": "Sitruuna-parsapasta"
+        }
+      ],
+      "recipeSha256": "eeae8f37e8ab70efda7d41321921461a041819f27a241951b765018efb2ebee3",
+      "contextSha256": "68e6b2bc64f208dd9c45408b78d329c2a2c0b02cdc52fa14cc218292c24ee3eb",
+      "calculationInputSha256": null,
+      "calculationEvidenceSha256": null
     }
   ]
 }
