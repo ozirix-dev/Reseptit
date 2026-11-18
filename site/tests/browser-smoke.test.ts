@@ -467,6 +467,21 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.equal(await nasiGoreng.locator("[data-verbal-portion-scope]").count(), 0);
     assert.match(await page.locator("[data-portion-carbohydrate]").innerText(), /121,9 g/);
 
+    await page.goto(base + routeFor("dal-makhani"));
+    assert.match(await ingredientPortion.innerText(), /100 g[\s\S]+3,5 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("1.5");
+    assert.match(await ingredientPortion.innerText(), /150 g[\s\S]+5,2 g/);
+    assert.equal(await page.locator("[data-portion-carbohydrate], [data-portion-gk]").count(), 0);
+
+    await page.goto(base + routeFor("gluteeniton-siemenvuokaleipa"));
+    const declaredCarbs = ingredientPortion.locator('[data-ingredient-carbohydrate="declared"]');
+    assert.match(await ingredientPortion.innerText(), /17,5 g/);
+    assert.match(await declaredCarbs.innerText(), /pakkauksen mukaan[\s\S]+13,1 g/);
+    await page.getByLabel(portionCopy.fi.title, { exact: true }).selectOption("2");
+    assert.match(await ingredientPortion.innerText(), /35 g/);
+    assert.match(await declaredCarbs.innerText(), /26,3 g/);
+    assert.equal(await page.locator("[data-portion-gk]").count(), 0);
+
     await page.goto(base + routeFor("briossisampylat-joshua-weissman"));
     assert.match(await page.locator('[data-gk-status="QUALITATIVE"]').innerText(), /Suuri arvioitu GK/);
     assert.equal(await page.locator("[data-portion-gk]").count(), 0);

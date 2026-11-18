@@ -39,6 +39,8 @@ test("new verbal estimates qualify the legacy numerical notices in all published
     ["karnivore-steak-and-eggs", "LOW"],
     ["indonesialainen-nasi-goreng-aamiaisriisi-punnittu-v2", "HIGH"],
     ["malesialainen-roti-canai-dhalilla-punnittu-v2", "HIGH"],
+    ["japanilainen-yaki-onigiri-misolla-punnittu-v2", "HIGH"],
+    ["intialainen-aloo-paratha-punnittu-v2", "HIGH"],
   ] as const;
   for (const [id, category] of checked) {
     const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
@@ -62,7 +64,7 @@ test("new verbal estimates qualify the legacy numerical notices in all published
 
 test("reviewed portion notes preserve carbohydrate-only estimates when comparison foods disagree", async () => {
   const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
-  for (const id of ["raejuustopizza-kaurajauhopohjalla", "xiaolongbao"]) {
+  for (const id of ["raejuustopizza-kaurajauhopohjalla", "xiaolongbao", "malesialainen-roti-jala-currykanalla-punnittu-v2", "indonesialainen-lontong-sayur-aamiaiseksi-punnittu-v2", "vietnamilainen-banh-bao-kananmunalla-punnittu-v2", "ananas-kanelijuoma-sitruunalla", "jaaiset-banaani-suklaapalat"]) {
     const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
     assert.equal(entries.length, 4, id);
     for (const { locale, routePath } of entries) {
@@ -70,8 +72,53 @@ test("reviewed portion notes preserve carbohydrate-only estimates when compariso
       const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
       const scope = reviews[id]?.condition?.[locale];
       assert.ok(scope && rendered.includes(scope), `${id}/${locale}: reviewed scope`);
+      const source = reviews[id]?.publicSource;
+      if (source) assert.ok(rendered.includes(`href="${source.replaceAll("&", "&amp;")}"`), routePath);
       assert.match(rendered, /data-portion-carbohydrate/);
       assert.doesNotMatch(rendered, /data-gk-status="(?:CALCULATED|QUALITATIVE)"|data-portion-gk/);
+    }
+  }
+});
+
+test("incomplete recipes keep ingredient weights and optional foods separate from the whole serving", async () => {
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  for (const id of ["dal-makhani", "mala-xiang-guo", "kana-tagine-sitruunalla"]) {
+    const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.equal(entries.length, 4, id);
+    for (const { locale, routePath } of entries) {
+      const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+      const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+      const review = reviews[id];
+      const scope = review?.condition?.[locale];
+      assert.ok(scope && rendered.includes(scope), routePath);
+      const source = review.publicSource?.replaceAll("&", "&amp;");
+      assert.ok(source && rendered.includes(`href="${source}"`), routePath);
+      assert.doesNotMatch(rendered, /data-portion-carbohydrate=|data-gk-status="(?:CALCULATED|QUALITATIVE)"|data-portion-gk=/);
+      assert.equal(rendered.includes("data-ingredient-portion="), id === "dal-makhani", routePath);
+    }
+  }
+});
+
+test("labelled ingredient totals and a low tomato estimate stay in their reviewed scopes", async () => {
+  const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
+  const tomatoId = "metabolic-boost-tomaattisoseella";
+  for (const id of [tomatoId, "gluteeniton-uunipannukakku", "gluteeniton-siemenvuokaleipa", "gluteenittomat-kauralesesampylat", "gluteeniton-durrapizzapohja"]) {
+    const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.equal(entries.length, 4, id);
+    for (const { locale, routePath } of entries) {
+      const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+      const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+      assert.doesNotMatch(rendered, /data-portion-gk=/);
+      assert.ok(rendered.includes('href="' + reviews[id].source + '"'), routePath);
+      if (id === tomatoId) {
+        assert.match(rendered, /data-gk-status="QUALITATIVE"/);
+        assert.ok(rendered.includes(portionCopy[locale].class.LOW), routePath);
+        assert.ok(rendered.includes(reviews[id].verbal!.rationale[locale]), routePath);
+      } else {
+        assert.match(rendered, /data-ingredient-carbohydrate="declared"/);
+        assert.ok(rendered.includes(portionCopy[locale].declaredIngredientCarbs), routePath);
+        assert.doesNotMatch(rendered, /data-ingredient-carbohydrate="available"|data-gk-status="(?:CALCULATED|QUALITATIVE)"/);
+      }
     }
   }
 });

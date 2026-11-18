@@ -854,12 +854,25 @@
     "preparationSha256": "c402ce74edf844d840dec0256c8e27087a5d62d0a888b600d6d03f672dbfcdee",
     "reviewedAt": "2026-11-18",
     "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/paaruoat/dal-makhani.md",
-    "reasoning": "Recipe says both legumes are soaked overnight and starts with rinsing the soaked beans. Input weight is ambiguous. Legacy kidney bean mapping uses boiled composition on 80 g without a matching state, and urad-dal has no matching source. Do not show a numeric per-portion pulse weight as dry or cooked.",
+    "reasoning": "Four portions use 400 g crushed tomatoes. The sauce is simmered and retained. THL Fineli Release 20 #398 lists 3.45 g available carbohydrate per 100 g of canned crushed tomatoes (food page rounds to 3.5 g). This estimates only that weighed ingredient. Original and current recipe describe both pulses as soaked overnight but neither identifies whether 250 g urad dal and 80 g kidney beans are weighed before or after soaking. The legacy cooked kidney bean entry is not a match for soaked weight. Rice or naan has no fixed type or amount.",
     "condition": {
-      "fi": "Varmista, punnitsetko urad-dalin ja kidneypavut ennen vai jälkeen liotuksen. Tarvitset ravintoarvon samalle punnitustavalle.",
-      "en": "Check whether you weighed the urad dal and kidney beans before or after soaking. Use nutrition information for that same state.",
-      "sv": "Kontrollera om urad dal och kidneybönorna vägdes före eller efter blötläggning. Använd näringsvärde för samma tillstånd.",
-      "th": "ตรวจว่าชั่งถั่วอูรัดและถั่วแดงก่อนหรือหลังแช่น้ำ ใช้ข้อมูลโภชนาการที่ตรงกับสภาพตอนชั่ง"
+      "fi": "Kirjaa, punnitsetko urad-dalin ja kidneypavut ennen vai jälkeen liotuksen. Käytä samalle punnitustavalle annettuja ravintoarvoja. Huomioi riisi tai naan erikseen.",
+      "en": "Note whether you weigh the urad dal and kidney beans before or after soaking. Use nutrition values for the same weighing state. Count rice or naan separately.",
+      "sv": "Anteckna om du väger urad dal och kidneybönorna före eller efter blötläggning. Använd näringsvärden för samma tillstånd. Räkna med ris eller naanbröd separat.",
+      "th": "จดว่าชั่งถั่วอูรัดและถั่วแดงก่อนหรือหลังแช่น้ำ ใช้ค่าทางโภชนาการที่ตรงกับสภาพตอนชั่ง และคิดข้าวหรือขนมปังนานแยกต่างหาก"
+    },
+    "publicSource": "https://fineli.fi/fineli/fi/elintarvikkeet/398",
+    "ingredientPortion": {
+      "index": 7,
+      "ingredientSha256": "e8d36eb223da68bab11d79568de032c2b719b04d3084605a7d07442b2458c156",
+      "unit": "g",
+      "availableCarbsGPer100g": 3.45,
+      "labels": {
+        "fi": "Tomaattimurska",
+        "en": "Crushed tomatoes",
+        "sv": "Krossade tomater",
+        "th": "มะเขือเทศบด"
+      }
     }
   },
   "mala-xiang-guo": {
@@ -867,13 +880,14 @@
     "preparationSha256": "4ac03ca08120ae1818361b90c591f0eeb94988e77c8a4dd4be700df3a78448e8",
     "reviewedAt": "2026-11-18",
     "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/paaruoat/mala-xiang-guo.md",
-    "reasoning": "Optional one lotus root; exact edible mass and consumption unresolved. USDA supports the food/state but gives no mass for the actual root. No generic per-piece estimate.",
+    "reasoning": "Raw, edible, trimmed and peeled Nelumbo nucifera rhizome has 13.0 g available carbohydrate by mass per 100 g in Japan MEXT Standard Tables of Food Composition, eighth revised edition, 2023 supplement, #06317. Credit: 日本食品標準成分表（八訂）増補2023年から引用. The 14.2 g monosaccharide-equivalent column is not used. This raw-input reference requires weighing the actual optional raw portion before blanching; no root mass, cooked retention, recipe total or lotus-root GI is assigned. Earlier documented scenarios of 120 g boiled/drained root and 30 g specific Toban Djan chilli paste are examples, not recipe quantities. If it is used, the paste must be checked from the actual product.",
     "condition": {
-      "fi": "Jos käytät valinnaista lootusjuurta, punnitse viipaloitu syötävä osa. Ohjeen kappalemäärä ei kerro sen painoa.",
-      "en": "If you use the optional lotus root, weigh the sliced edible part. The recipe’s piece count does not give its weight.",
-      "sv": "Om du använder den valfria lotusroten, väg den skivade ätliga delen. Antalet säger inte hur mycket den väger.",
-      "th": "หากใส่รากบัว ให้ชั่งส่วนที่หั่นและรับประทานได้ จำนวนชิ้นในสูตรไม่ได้ระบุน้ำหนัก"
-    }
+      "fi": "Jos käytät tuoretta lootusjuurta, punnitse syötävät viipaleet ennen ryöppäämistä. Japanin MEXTin mukaan 100 g raakaa lootusjuurta sisältää noin 13 g imeytyvää hiilihydraattia. Tahnan osuuden arvioon tarvitset käyttämäsi määrän ja pakkauksen hiilihydraattiarvon.",
+      "en": "If you add fresh lotus root, weigh the edible slices before blanching. MEXT in Japan lists about 13 g of available carbohydrate per 100 g of raw lotus root. For the doubanjiang paste, use the amount you add and its carbohydrate label.",
+      "sv": "Om du använder färsk lotusrot, väg de ätliga skivorna före förvällningen. Japans MEXT anger cirka 13 g tillgängliga kolhydrater per 100 g rå lotusrot. För doubanjiangpastan, använd mängden du tillsätter och kolhydratvärdet på förpackningen.",
+      "th": "หากใช้รากบัวสด ให้ชั่งส่วนที่กินได้หลังหั่นและก่อนลวก ตารางโภชนาการของ MEXT ญี่ปุ่นระบุว่ารากบัวดิบ 100 กรัมมีคาร์โบไฮเดรตที่ย่อยได้ประมาณ 13 กรัม สำหรับเต้าเจี้ยวเผ็ดโต้วป้านเจี้ยง ให้ใช้ปริมาณที่ใส่จริงและค่าคาร์โบไฮเดรตบนฉลาก"
+    },
+    "publicSource": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06317_7&MODE=7"
   },
   "pellava-puuro-pahkinoilla": {
     "recipeBindingSha256": "87221d992744cfeaf6e4aebd706a1e1e81af78550f0a681a013f8f53670231f5",
@@ -904,13 +918,14 @@
     "preparationSha256": "b24575f021093db39e3d8ab131652940c3d3871ccfb268c23cd90fc377a568b0",
     "reviewedAt": "2026-11-18",
     "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/paaruoat/kana-tagine-sitruunalla.md",
-    "reasoning": "Plausible ingredient carb drivers in the chicken dish are small. Missing consumed side amount/type is much more actionable. Step 5 explicitly suggests couscous or bread separately. No invented serving of either.",
+    "reasoning": "Serving step 5 suggests couscous or bread but fixes neither product nor quantity. THL Fineli Release 20 #29208 plain dry wheat couscous provides 63.6 g available carbohydrate per 100 g dry input. This is a conditional side-only concentration with no adopted serving mass and no reference for cooked or pearl couscous or any bread. The existing exact GK version fixes the side and changes the prescribed preserved-lemon peel and stock, so its GK stays inside that version. Original held details include edible preserved lemon rind mass and its matched composition, actual ready-to-use stock and olive drained edible basis.",
     "condition": {
-      "fi": "Tarjoiluun ehdotettu couscous tai leipä ei sisälly ohjeen ainesmääriin. Huomioi valitsemasi lisuke erikseen.",
-      "en": "The couscous or bread suggested for serving has no quantity in the recipe. Consider the side you choose separately.",
-      "sv": "Couscous eller bröd föreslås till servering utan angiven mängd. Räkna med ditt valda tillbehör separat.",
-      "th": "สูตรแนะนำให้เสิร์ฟกับคูสคูสหรือขนมปังโดยไม่ระบุปริมาณ ให้พิจารณาเครื่องเคียงที่เลือกแยกต่างหาก"
-    }
+      "fi": "Huomioi lisuke erikseen. Tavallisessa vehnäkuskusissa on noin 64 g imeytyvää hiilihydraattia 100 grammaa kuivaa kuskusia kohti. Jos punnitset kuskusin kypsänä tai valitset leivän, käytä kyseisen lisukkeen ravintoarvoa.",
+      "en": "Count the side separately. Plain wheat couscous has about 64 g of available carbohydrate per 100 g dry. If you weigh cooked couscous or choose bread, use nutrition values for the side you serve.",
+      "sv": "Räkna med tillbehöret separat. Vanlig vetecouscous innehåller cirka 64 g tillgängliga kolhydrater per 100 g torr vikt. Om du väger kokt couscous eller väljer bröd, använd näringsvärdet för tillbehöret du serverar.",
+      "th": "คิดเครื่องเคียงแยกต่างหาก คูสคูสข้าวสาลีแบบธรรมดา 100 กรัมก่อนปรุงมีคาร์โบไฮเดรตที่ย่อยได้ประมาณ 64 กรัม หากชั่งคูสคูสหลังปรุงหรือเลือกขนมปัง ให้ใช้ข้อมูลโภชนาการของเครื่องเคียงที่เสิร์ฟจริง"
+    },
+    "publicSource": "https://fineli.fi/fineli/fi/elintarvikkeet/29208"
   },
   "palak-paneer": {
     "recipeBindingSha256": "6cb4001a9d66c4b9d00a08e6b120095a3917be3b4a08e78173dfb6eaf4d8a694",
@@ -1771,6 +1786,305 @@
       },
       "unit": "g",
       "availableCarbsGPer100g": 14
+    }
+  },
+  "japanilainen-yaki-onigiri-misolla-punnittu-v2": {
+    "recipeBindingSha256": "1268ca1d7207216302b70a1a3e2ac4cd596ee7672ecb7f227b2b22d2bfb916a1",
+    "preparationSha256": "395a2691fb6248cd6fa7b5f54d4acecfc6b4157ae851f4fa9415d0f4117465b4",
+    "nutritionSha256": "aede63a85955904cf812463a16ca52de7a8435564f2713a5846cc92d6bb89afc",
+    "reviewedAt": "2026-11-18",
+    "source": "https://www.jstage.jst.go.jp/article/nskkk/63/4/63_162/_article/-char/en",
+    "reasoning": "One serving contains two of the four equal triangles, made from 60 g dry Japanese short-grain white rice, 8 g light miso and 3.5 g sesame oil. The rice is cooked, shaped hot, pan-crisped and served promptly with a thin miso coating. Audited available carbohydrate is 45.98 g, with 44.4 g from rice and 1.576 g from miso. The model uses AFCD F007682 as a dry white-rice proxy. MEXT 01083 dry polished Japanese grain starch and sugar (75.6 per 100 g) independently supports the amount. Funatsu et al. 2016 (doi 10.3136/nskkk.63.162, Section 2(2)ii and Fig. 1) directly measured a plain Japanese rice-ball control (rice cooked in water, nori, pickled ume, sesame and salt) against glucose at 50 g carbohydrate and reported GI 76. Sugiyama et al. 2003 (doi 10.1038/sj.ejcn.1601606; Atkinson 2021 Table 1 row 2043 indexes the same experiment) assessed a commercial Japanese roasted rice ball against a rice reference. These are separate human studies of similar starch preparations. The rice variety, fat handling, coating and exact preparation differ. This evidence supports directional HIGH for the current two-triangle serving. No study GI or numerical GK is transferred. The successor numerical HOLD and its historical predecessor remain separate.",
+    "piecesPerServing": 2,
+    "verbal": {
+      "category": "HIGH",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Arvio koskee kahta pannulla rapeaksi paistettua misoriisikolmiota. Niihin tulee 60 g japanilaista lyhytjyväistä valkoista riisiä kuivana punnittuna. Riisistä tulee lähes kaikki annoksen hiilihydraatit.",
+        "en": "The estimate covers two pan-crisped miso rice triangles made with 60 g of dry Japanese short-grain white rice. The rice provides nearly all the carbohydrate.",
+        "sv": "Uppskattningen gäller två pannstekta, krispiga misoristrianglar med 60 g japanskt kortkornigt vitt ris vägt torrt. Riset står för nästan alla kolhydrater.",
+        "th": "ค่าประมาณนี้ใช้กับข้าวปั้นสามเหลี่ยมทามิโซะจี่กระทะจนกรอบสองชิ้น ใช้ข้าวญี่ปุ่นขาวเมล็ดสั้น 60 กรัมก่อนหุง คาร์โบไฮเดรตเกือบทั้งหมดมาจากข้าว"
+      }
+    },
+    "verbalNoteEdits": {
+      "fi": {
+        "before": "<strong>GK: ei määritetty.</strong>",
+        "after": "<strong>Numeerista GK-arvoa ei ole määritetty.</strong>"
+      },
+      "en": {
+        "before": "<strong>Glycemic load: undetermined.</strong>",
+        "after": "<strong>A numerical GL has not been determined.</strong>"
+      },
+      "sv": {
+        "before": "<strong>Glykemisk belastning: ej fastställd.</strong>",
+        "after": "<strong>Ett numeriskt GL-värde har inte fastställts.</strong>"
+      },
+      "th": {
+        "before": "<strong>ค่าภาระน้ำตาล (GL) ยังไม่ได้กำหนด</strong>",
+        "after": "<strong>ยังไม่ได้กำหนดค่าภาระน้ำตาลเป็นตัวเลข</strong>"
+      }
+    }
+  },
+  "intialainen-aloo-paratha-punnittu-v2": {
+    "recipeBindingSha256": "fd64a7a2c6d75f711315216d4d0fa763a8fd3fba38a4ce3d43287f7736310a25",
+    "preparationSha256": "3282820301e26237edd8adeb12f07ed132d0a26091b2374899d261ed19816e87",
+    "nutritionSha256": "0aa89396cf6f938917a009fd458e4d35bf68d915a5055029257813dfe6235973",
+    "reviewedAt": "2026-11-18",
+    "source": "https://www.foodandnutritionjournal.org/volume12number1/glycemic-index-lowering-effects-of-defatted-fenugreek-seed-flakes-fenuflakestm-on-some-indian-food-preparations-a-randomized-controlled-clinical-study/",
+    "reasoning": "One whole pan-cooked potato-filled flatbread and 30 g plain yogurt from the reviewed successor. The serving uses 50 g finely milled whole-wheat flour, 75 g peeled raw potato boiled and mashed before filling and 6 g rapeseed oil input. Audited 43.90 g available carbohydrate includes about 30.86 g from flour, 11.625 g from potato and 1.02 g from yogurt. Thakurdesai et al. 2024 Tables 1, 3 and 4 tested a control potato paratha without fenugreek additive in 15 healthy adults and reports glucose-scale GI 78.8 ± 3.6 at 50.1 g available CHO. Its potato was pressure cooked, exact flour and dough proportions are unavailable, the serving was cooled and accompanied by water, and the glucose formulation is unspecified. Independent primary Chennai human data on methi paratha (Carbohydrate profiling & glycaemic indices of selected traditional Indian foods, PMC9552392, Table III) supports the direction for a different wheat griddle flatbread with oil, curd and fenugreek leaves, with flour grade unspecified in the recipe table (GI 60.2 ± 6.7; 12 analyzed). This independent comparison reduces dependence on the sponsor-funded potato-paratha formulation while adding no measured home-recipe GI. The current serving size and two comparisons support a directional HIGH candidate only. The prior study serving, its approved scope and the successor numerical HOLD are unaffected.",
+    "verbal": {
+      "category": "HIGH",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Arvio koskee yhtä täysjyvävehnästä tehtyä, perunatäytteistä pannuleipää ja 30 g maustamatonta jogurttia. Leipätaikina ja perunatäyte tuovat lähes kaikki annoksen hiilihydraatit.",
+        "en": "The estimate covers one pan-cooked whole-wheat flatbread with potato filling and 30 g of plain yogurt. The dough and potato filling provide nearly all the carbohydrate.",
+        "sv": "Uppskattningen gäller ett pannstekt flatbröd av fullkornsvete med potatisfyllning och 30 g naturell yoghurt. Degen och potatisfyllningen står för nästan alla kolhydrater.",
+        "th": "ค่าประมาณนี้ใช้กับแผ่นแป้งสาลีโฮลวีตไส้มันฝรั่งจี่กระทะหนึ่งแผ่นและโยเกิร์ตรสธรรมชาติ 30 กรัม คาร์โบไฮเดรตเกือบทั้งหมดมาจากแผ่นแป้งและไส้มันฝรั่ง"
+      }
+    },
+    "verbalNoteEdits": {
+      "fi": {
+        "before": "<strong>GK: ei määritetty.</strong>",
+        "after": "<strong>Numeerista GK-arvoa ei ole määritetty.</strong>"
+      },
+      "en": {
+        "before": "<strong>Glycemic load: undetermined.</strong>",
+        "after": "<strong>A numerical GL has not been determined.</strong>"
+      },
+      "sv": {
+        "before": "<strong>Glykemisk belastning: ej fastställd.</strong>",
+        "after": "<strong>Ett numeriskt GL-värde har inte fastställts.</strong>"
+      },
+      "th": {
+        "before": "<strong>ค่าภาระน้ำตาล (GL) ยังไม่ได้กำหนด</strong>",
+        "after": "<strong>ยังไม่ได้กำหนดค่าภาระน้ำตาลเป็นตัวเลข</strong>"
+      }
+    }
+  },
+  "malesialainen-roti-jala-currykanalla-punnittu-v2": {
+    "recipeBindingSha256": "413396651306ce0c598f2e43f38e3654f388c97f34861c121fff81ae5b19861f",
+    "preparationSha256": "778086916524411cafbc170b49365d8d0e67db61d3a11904c44d6260c518d2c9",
+    "nutritionSha256": "35e7a8f73e206dab09279bd17aaf3d6078d619b1c128cc58f1a0b546a328ff18",
+    "reviewedAt": "2026-11-18",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/22212476/",
+    "reasoning": "Robert and Ismail 2012 compared plain lacy pancake (25 g available CHO) and lacy pancake plus chicken curry containing potatoes and coconut milk (32 g available CHO), in 10 adults with type 2 diabetes, with 25 g glucose repeated three times. The AUC of the mixed meal was higher than that of pancake alone. Since CHO dose differed, the comparison cannot isolate a curry effect. The reported isolated pancake GI is not a source match to the successor wheat-and-rice batter with egg, full-fat coconut milk and oil; the test curry included potato and the current curry does not. Current 50.27 g audited available CHO includes 46.91 g from the two flour inputs. The exact scope is useful, but an unsupported proportional behavior at the larger serving would be required to derive a qualitative class from these data. Preserve the existing no-match release review. For a class, obtain a matched batter or complete mixed-meal human study, or document independent valid human comparators bracketing the impact of the changed flour and curry matrix. No transfer of GI 49 or the study's mixed-meal indexed response.",
+    "condition": {
+      "fi": "Yksi annos sisältää puolet kaikista pitsiletuista ja puolet kookoskanacurrysta kastikkeineen.",
+      "en": "One serving includes half the batch of lacy pancakes and half the coconut chicken curry with its sauce.",
+      "sv": "En portion innehåller hälften av spetsplättarna och hälften av kokoskycklingcurryn med sås.",
+      "th": "หนึ่งที่ประกอบด้วยแผ่นแป้งลายตาข่ายครึ่งสูตรและแกงกะทิไก่พร้อมน้ำแกงครึ่งสูตร"
+    },
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/2ad48fa4a2bfb187b8bc1add90daf89b0fe53aaa/docs/nutrition/calculations/malesialainen-roti-jala-currykanalla-punnittu-v2.json"
+  },
+  "indonesialainen-lontong-sayur-aamiaiseksi-punnittu-v2": {
+    "recipeBindingSha256": "177c0b11b3a06b3ea33ee09e206a74d84c2aa164f2532ae28c03ff0eda5e7760",
+    "preparationSha256": "da22cecaea79d22a0a1764081abc04a54c2994d66a47d82dd39171361c1962a4",
+    "nutritionSha256": "da866d2d9f951bb3ebe1557689de5ca7835f4a5f0f1d6302bdbc18e82fa8267a",
+    "reviewedAt": "2026-11-18",
+    "source": "https://repository.uinjkt.ac.id/dspace/handle/123456789/29475",
+    "reasoning": "The current vegan V2 has 45.17 g available CHO per serving, including 37 g from 50 g dry white long-grain rice. It boils rice to absorption, presses it in a shallow pan, chills it promptly and reheats it once with tofu/cabbage/carrot coconut broth. Sugiarto 2015 clinical thesis tested ten healthy adults against white bread; its hot Betawi preparation uses different rice-cake cooking and vegetable matrix, and its observed comparison to bread is not a glucose-scale GI assigned to this dish. The abstract and Table 4.6 also report slightly different means. Bogor IPB Ciherang study uses a known medium-amylose cultivar cooked in banana-leaf cylinders. Hakimah et al. 2020 tested Lontong gado-gado, which uses a different peanut-sauce meal and observed substantially different response across cohorts. Wolever 2021 chilled cooked long-grain study lacks pressing and the mixed meal. This evidence is informative but cannot resolve a class across available long-grain varieties, thermal preparation and the mixed broth. Maintain numerical and class HOLD until a source matches the chosen cultivar and pressed reheat method, or a comparative meal study covers these differences.",
+    "condition": {
+      "fi": "Yksi annos sisältää riisikakkukuutiot, jotka tehdään 50 g:sta kuivaa riisiä, ja puolet tofu-kasviskookosliemestä.",
+      "en": "One serving includes rice-cake cubes made from 50 g of dry rice and half the tofu and vegetable coconut broth.",
+      "sv": "En portion innehåller riskakstärningar av 50 g torrt ris och hälften av kokosbuljongen med tofu och grönsaker.",
+      "th": "หนึ่งที่ประกอบด้วยข้าวอัดหั่นเป็นลูกเต๋าที่ทำจากข้าวสาร 50 กรัม และน้ำแกงกะทิใส่เต้าหู้และผักครึ่งสูตร"
+    },
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/2ad48fa4a2bfb187b8bc1add90daf89b0fe53aaa/docs/nutrition/calculations/indonesialainen-lontong-sayur-aamiaiseksi-punnittu-v2.json"
+  },
+  "metabolic-boost-tomaattisoseella": {
+    "recipeBindingSha256": "5acffb9ee8cbd5362cb7bf0d4131249a47b331568fb0c3187a8f370ce98e26cd",
+    "preparationSha256": "e48c60ae0f14a7f476d9f65fc3634a28decf7ebf13d2fa9b704cccdf03689021",
+    "nutritionSha256": "fb3265c47240705487909bbbc2bb6d2ce9712273f1b43565fa93ec0c0e55f49a",
+    "reviewedAt": "2026-11-18",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2901039/",
+    "reasoning": "Exact one cold starter glass is half the recipe, including 150 g smooth tomato passata before blending, 50 g water, 20 g onion, 10 g ginger, 13.5 g olive oil and the weighed lemon and seasonings. Audited 7.81 g available CHO, with 5.70 g from tomato and minor distributed vegetable or spice amounts. There is no separately added sweetener or accompaniment. Chlup et al. 2010 (doi 10.1177/193229681000400316, Tables 1 and 3) measured a commercial tomato soup reconstituted from powder in healthy adults using interstitial CGM against glucose. Tomato soup GI120 was 38.5 ± 12.1 (mean ± SEM), essentially unchanged through 210 minutes. This is a different tomato food, preparation and carbohydrate dose, with 16 participants represented for soup in Table 3. The 2020 tomato-juice preload trial PMID 32990608 evaluates juice before a rice load and is supportive context for the tomato preparation only. It provides no stand-alone juice GI. The low whole-serving carbohydrate and relevant measured tomato food support a directional LOW estimate for the exact recipe glass. No numeric GI/GK or preload effect is transferred; added fruit, sugar or bread fall outside the reviewed portion.",
+    "verbal": {
+      "category": "LOW",
+      "portions": [
+        1
+      ],
+      "rationale": {
+        "fi": "Arvio koskee yhtä pientä lasillista, johon tulee 150 g paseerattua tomaattia sekä ohjeen verran sipulia, inkivääriä ja muita mausteita. Tomaatti tuo suurimman osan annoksen hiilihydraateista. Tutkimuksessa mitattu tomaattikeitto toimii vertailuna.",
+        "en": "The estimate covers one small glass made with 150 g of tomato passata and the amounts of onion, ginger and other seasonings in the recipe. The tomato provides most of the carbohydrate. The study measured tomato soup, which serves as a comparison.",
+        "sv": "Uppskattningen gäller ett litet glas med 150 g passerade tomater och receptets mängder av lök, ingefära och övriga kryddor. Tomaten står för det mesta av kolhydraterna. Som jämförelse används tomatsoppan som mättes i studien.",
+        "th": "ค่าประมาณนี้ใช้กับแก้วเล็กหนึ่งแก้วที่มีมะเขือเทศบดกรอง 150 กรัม และใส่หัวหอม ขิง และเครื่องปรุงอื่นตามปริมาณในสูตร คาร์โบไฮเดรตส่วนใหญ่มาจากมะเขือเทศ ใช้ผลการวัดจากซุปมะเขือเทศในงานวิจัยเป็นข้อมูลเปรียบเทียบ"
+      }
+    }
+  },
+  "parsakaali-cashewpasta": {
+    "recipeBindingSha256": "ee3606e33de043e5e272d2d59370f606187d367a8dc35f30fae26a3216ceb41f",
+    "preparationSha256": "3a595223bdf68beb46aa40934efd88c3674b59a03ae819e78c8005c3dc5707a0",
+    "nutritionSha256": "aa65a3e7e5bb019fb506d63eb73f0e4ef7e03ad66951e7f242d3f23734171795",
+    "reviewedAt": "2026-11-18",
+    "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006465",
+    "reasoning": "The audited whole portion contains 56.48 g available CHO. Recipe splits 250 g dry whole-wheat spaghetti into three servings, cooks according to its pack, retains some cooking water in the sauce, and adds broccoli, cashews and Parmesan. AFCD F006465 is dry wholemeal wheat pasta, 60.6 g available CHO, 9.9 g fibre and identical with/without-polyol available values per 100 g. The component estimate is 50.5 g available CHO from 83 and one-third grams dry input per serving. It is a reference-based estimate before cooking and draining, not measured retention or a brand-specific label. The 2022 crossover study doi 10.3390/ijerph19053001 tested plain wholegrain spaghetti at 50 g available CHO after boiling and reports glucose-scale GI about 38. The studied brand/product and precisely timed boiling differ from recipe generic product and complete mixed dish. Its point sits close to the medium/high GK boundary at the recipe serving; sauce and cooking losses may alter the comparison. Keep whole-recipe GK pending and use the weighed dry pasta contribution. No reviewed guide to lowering personal blood glucose is implied.",
+    "condition": {
+      "fi": "Punnitse täysjyväspagetti kuivana ja keitä se pakkauksen ohjeella. Jos vaihdat pastaa, tarkista uuden tuotteen hiilihydraattimäärä pakkauksesta.",
+      "en": "Weigh the whole-wheat spaghetti dry and cook it as directed on the package. If you switch pasta, check the new product’s carbohydrate on its label.",
+      "sv": "Väg fullkornsspagettin torr och koka enligt förpackningen. Om du byter pasta, kontrollera kolhydratmängden på den nya förpackningen.",
+      "th": "ชั่งสปาเกตตีโฮลวีตก่อนต้ม แล้วต้มตามวิธีบนบรรจุภัณฑ์ หากเปลี่ยนเส้น ให้ตรวจสอบปริมาณคาร์โบไฮเดรตบนฉลากของเส้นที่ใช้"
+    },
+    "ingredientPortion": {
+      "index": 1,
+      "ingredientSha256": "db8810cdfed00bcff3a22da572e1100adc089abf17fa2152fc3dd694e35477ad",
+      "labels": {
+        "fi": "Täysjyväspagetti (kuivapaino)",
+        "en": "Whole-wheat spaghetti (dry weight)",
+        "sv": "Fullkornsspagetti (torrvikt)",
+        "th": "สปาเกตตีโฮลวีต (น้ำหนักแห้ง)"
+      },
+      "unit": "g",
+      "availableCarbsGPer100g": 60.6
+    }
+  },
+  "vietnamilainen-banh-bao-kananmunalla-punnittu-v2": {
+    "recipeBindingSha256": "20029898ba0c0c092fafd650a5d87a8fad8d4e5178bac3b7b2fee7de66fa1b9f",
+    "preparationSha256": "4cf1a3584cec360530a5d28299e6e9e86387cedaa9ac9753cdc27c99ccdff91b",
+    "nutritionSha256": "a7a10c2e2a6fbec31f65a022060c58bd7204708944b2ddd24744291dd413a6d5",
+    "reviewedAt": "2026-11-18",
+    "source": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430.htm",
+    "reasoning": "Four enclosed steamed yeast buns are split into two servings. One serving contains two buns made with 60 g medium wheat flour and 3 g sugar in the dough, 60 g weighed raw mushrooms cooked as filling and 25 g hard-boiled egg, plus the corresponding soy and oil. Audited 48.39 g available carbohydrate, with about 47.4 g from the flour and sugar. Yang et al. 2006 Table 2 directly reports GI 88.1 ± 20.2 (SD) for refined steamed bread and 39.1 ± 13.0 for a shallot-and-meat steamed stuffed bun. The 2015 Sun et al. direct trial of another filled bun, Char Siew Pau (barbecue pork), reports GI 66 ± 7 SEM in Table 2; its discussion gives 64. A separate human steamed-bun crossover (PMC9096677) gives about 69 for its unfilled wheat control. Different fillings, dough proportions, flour grade and total yield span multiple directional categories despite the current known portion. Preserve the successor source-specific GK HOLD and its separately quarantined predecessor. The count of four small buns is locked in the data and method; the portion control can show two without assigning a GK class.",
+    "condition": {
+      "fi": "Yksi annos sisältää kaksi ohjeen mukaan höyrytettyä, sienellä ja kananmunalla täytettyä sämpylää. Valmis ostosämpylä tai eri täyte voi muuttaa hiilihydraattimäärää.",
+      "en": "One serving includes two of the recipe’s steamed buns with mushroom and egg filling. A shop-bought bun or a different filling may change the amount of carbohydrate.",
+      "sv": "En portion innehåller två av receptets ångade bullar med svamp- och äggfyllning. Köpta bullar eller en annan fyllning kan ändra kolhydratmängden.",
+      "th": "หนึ่งที่ประกอบด้วยซาลาเปานึ่งไส้เห็ดและไข่ตามสูตรสองลูก ซาลาเปาที่ซื้อสำเร็จหรือไส้ชนิดอื่นอาจมีปริมาณคาร์โบไฮเดรตต่างกัน"
+    },
+    "piecesPerServing": 2,
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/2ad48fa4a2bfb187b8bc1add90daf89b0fe53aaa/docs/nutrition/calculations/vietnamilainen-banh-bao-kananmunalla-punnittu-v2.json"
+  },
+  "ananas-kanelijuoma-sitruunalla": {
+    "recipeBindingSha256": "4d5bf52d5b555394e3a0f2723345b2c61f5bf0e7a53c72592f8f14620600dbb4",
+    "preparationSha256": "4c45ec3087b396ee6d322f09ac2465eafd49ae7af23aed4bc0599c064af9164d",
+    "nutritionSha256": "96f77fab900fdf72792deaedaf4ac6f6d06acaa4cd99217a3fc315f83e9782cd",
+    "reviewedAt": "2026-11-18",
+    "source": "https://flfn.wyb.ac.lk/wp-content/uploads/2019/FLFN/Abstract/Abstact-2019.pdf#page=67",
+    "reasoning": "One of two equal glasses uses 165 g fresh pineapple flesh weighed after removing peel and core. All pulp remains; 15 g fresh squeezed lemon and water are included. The original audited value is 18.72 g available CHO excluding at most 0.35 g weighed cinnamon per serving; 18.48 g comes from pineapple. Sandeepani and Rathnayake 2019 undergraduate symposium abstract (page numbered 49) describes a randomized five-condition crossover in 12 healthy adults comparing intact pineapple, nutrient-extractor blended pineapple and glucose. The presented points differ substantially (48 ± 7.7 SEM blended, 83 ± 10.1 SEM whole). This preliminary study does not give full ingredient, cultivar or equipment matching, and sits near a directional boundary at the recipe serving. Human whole-pineapple studies also differ across sampling; the published Redfern et al. extraction study included pineapple only within a multiple-fruit mixture and did not isolate it. Keep GK pending and publish the actual fruit weight and retained pulp scope, with no account adjustment for straining or use of juice.",
+    "condition": {
+      "fi": "Yhteen lasilliseen tulee 165 g ananaksen hedelmälihaa. Punnitse ananas ilman kuorta ja kovaa keskiosaa ja jätä kaikki hedelmäliha juomaan.",
+      "en": "One glass uses 165 g of pineapple flesh. Weigh the pineapple without the peel or hard core and keep all the pulp in the drink.",
+      "sv": "Ett glas innehåller 165 g ananasfruktkött. Väg ananasen utan skal och hård mittdel och låt allt fruktkött vara kvar i drycken.",
+      "th": "หนึ่งแก้วใช้เนื้อสับปะรด 165 กรัม ชั่งหลังปอกเปลือกและเอาแกนแข็งออก แล้วเก็บเนื้อที่ปั่นไว้ทั้งหมดในเครื่องดื่ม"
+    },
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/2ad48fa4a2bfb187b8bc1add90daf89b0fe53aaa/docs/nutrition/calculations/ananas-kanelijuoma-sitruunalla.json"
+  },
+  "jaaiset-banaani-suklaapalat": {
+    "recipeBindingSha256": "6398daa4a95b924ed2c2394265bfd940f2a9dbb4a49f5407b8aafcc9e17e9f73",
+    "preparationSha256": "995a9188b9ed2deec536c9bf9c5e931f7f0e244df73f0e6b9710a0f21bad538e",
+    "nutritionSha256": "d2ac1b230326a21039cc40d15dd5b8135b92f6106c6a3f36e74d5f1ac6cce4e8",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1111/j.1464-5491.1992.tb01883.x",
+    "reasoning": "The original estimate is 13.94 g available CHO per one ninth of the tray, including about 7.015 g from 38.33 g peeled ripe banana, 5.33 g from 10 g dark chocolate, 1.18 g from 9.44 g peanut butter and 0.41 g from 3.33 g peanuts. The tray is broken into about nine pieces, not measured equal portions or a finished yield. Hermansen et al. human trial reports a ripeness difference for intact bananas, whereas the separate Ercan study found little difference across four ripe stages. Edo et al. report a variable response to another banana sample. Chlup et al. tested a specific 70% cocoa chocolate at a much higher carbohydrate load. The current generic dark chocolate may have different carbohydrate, and there is no direct freeze-and-mix analogue. This variation and uneven piece sizes make a directional class uncertain. Preserve the GK HOLD and describe an equal ninth of the batch as the reference; a broken piece can be larger or smaller.",
+    "condition": {
+      "fi": "Annosarvio vastaa yhdeksäsosaa levystä. Jos taitat erikokoisia paloja, arvioi oma palasi suhteessa koko levyyn. Suklaan hiilihydraattimäärä vaihtelee tuotteittain.",
+      "en": "One serving is one ninth of the tray. If you break pieces of different sizes, estimate your piece against the whole tray. The carbohydrate in dark chocolate varies by product.",
+      "sv": "En portion är en niondel av hela kakan. Om du bryter ojämna bitar, uppskatta din bits storlek i förhållande till hela kakan. Kolhydratmängden varierar mellan olika sorters mörk choklad.",
+      "th": "หนึ่งที่เท่ากับหนึ่งในเก้าของทั้งแผ่น หากหักเป็นชิ้นขนาดไม่เท่ากัน ให้กะขนาดชิ้นของคุณเทียบกับทั้งแผ่น ปริมาณคาร์โบไฮเดรตในดาร์กช็อกโกแลตต่างกันตามผลิตภัณฑ์"
+    },
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/2ad48fa4a2bfb187b8bc1add90daf89b0fe53aaa/docs/nutrition/calculations/jaaiset-banaani-suklaapalat.json"
+  },
+  "gluteeniton-uunipannukakku": {
+    "recipeBindingSha256": "84241a9e554207f71900e8b784c52d1b63eced05227f49c3bd865b96aed1750b",
+    "preparationSha256": "46833f6d7e6740186c44e5dab80f111ffbf78488f87a2d014a0f17656e2c79ff",
+    "reviewedAt": "2026-11-18",
+    "source": "https://myllarin.fi/tuotteet/myllarin-gluteeniton-kaurajauho-950-g/",
+    "reasoning": "Step 3 weighs the named dry flour; step 7 divides the batter and measured toppings into thirteen portions. The manufacturer's 950 g product page specifies the same EAN and separately declares fibre. Only the dry oat flour input is derived. The dark mixture, milk and weighed accompaniments remain outside this line. The existing approximate whole-recipe legacy net value and the missing whole carbohydrate and GK reviews are unaffected. Current packaging and gluten-free checks still apply.",
+    "ingredientPortion": {
+      "index": 4,
+      "ingredientSha256": "323644309ba0b8077653aafc243de79bb999bb82eb9c2c043e9be78d7dc167c9",
+      "labels": {
+        "fi": "Myllärin gluteeniton kaurajauho, kuivapaino",
+        "en": "Myllärin gluten-free oat flour, dry weight",
+        "sv": "Myllärin glutenfritt havremjöl, torrvikt",
+        "th": "แป้งข้าวโอ๊ตปลอดกลูเตน Myllärin น้ำหนักแห้ง"
+      },
+      "unit": "g",
+      "declaredCarbsGPer100g": 58
+    },
+    "condition": {
+      "fi": "Myllärin kaurajauhon tuoteseloste ilmoittaa 58 g hiilihydraattia 100 grammassa kuivaa jauhoa. Tummasta jauhoseoksesta, maidosta ja tarjoilun aineksista tulee lisäksi hiilihydraatteja.",
+      "en": "Myllärin declares 58 g of carbohydrate per 100 g of dry oat flour. The dark flour blend, milk and toppings also contribute carbohydrate.",
+      "sv": "Myllärins näringsdeklaration anger 58 g kolhydrater per 100 g torrt havremjöl. Den mörka mjölmixen, mjölken och tillbehören bidrar också med kolhydrater.",
+      "th": "ฉลากแป้งข้าวโอ๊ต Myllärin ระบุคาร์โบไฮเดรต 58 กรัมต่อแป้งแห้ง 100 กรัม แป้งผสมสีเข้ม นม และเครื่องที่เสิร์ฟด้วยก็มีคาร์โบไฮเดรต"
+    }
+  },
+  "gluteeniton-siemenvuokaleipa": {
+    "recipeBindingSha256": "30eecc85af80d1d7a0fdad2b133de0c0967c40bd3d36ccf500c66c42f587ae2a",
+    "preparationSha256": "c8918194f027a7cb25bfaaca5460626976de80acb4a3e1faa5527b8bb3b7bf92",
+    "reviewedAt": "2026-11-18",
+    "source": "https://www.k-ruoka.fi/kauppa/tuote/pirkka-vaalea-jauhoseos-1kg-gluteeniton-6410405221858",
+    "reasoning": "The current dough uses 210 g dry light Pirkka mix and is cut into twelve slices. The private label owner's primary Finnish product page confirms the exact 1 kg pack EAN, ingredients and as-sold carbohydrate/fibre declarations. Use the recipe grams rather than the historic 60 g/dl explanation. The dark blend, oats and seeds are separate; there is no estimate of finished slice weight, whole bread carbohydrate or GI/GK. Current packaging and gluten-free checks still apply.",
+    "ingredientPortion": {
+      "index": 7,
+      "ingredientSha256": "ebc1379cafcf541c14b476c9382654f023f9bb72b4450b2d568956cfaed84450",
+      "labels": {
+        "fi": "Pirkka vaalea gluteeniton jauhoseos, kuivapaino",
+        "en": "Pirkka light gluten-free flour blend, dry weight",
+        "sv": "Pirkka ljus glutenfri mjölmix, torrvikt",
+        "th": "แป้งผสมปลอดกลูเตนสูตรสีอ่อน Pirkka น้ำหนักแห้ง"
+      },
+      "unit": "g",
+      "declaredCarbsGPer100g": 75
+    },
+    "condition": {
+      "fi": "Vaalean Pirkka-jauhoseoksen tuoteseloste ilmoittaa 75 g hiilihydraattia 100 grammassa kuivaa seosta. Tummasta jauhoseoksesta ja kaurahiutaleista tulee lisäksi hiilihydraatteja.",
+      "en": "Pirkka’s light flour blend declares 75 g of carbohydrate per 100 g dry. The dark blend and rolled oats also contribute carbohydrate.",
+      "sv": "Näringsdeklarationen för Pirkkas ljusa mjölmix anger 75 g kolhydrater per 100 g torr mix. Den mörka mjölmixen och havregrynen bidrar också med kolhydrater.",
+      "th": "ฉลากแป้งผสมสูตรสีอ่อน Pirkka ระบุคาร์โบไฮเดรต 75 กรัมต่อแป้งแห้ง 100 กรัม แป้งผสมสีเข้มและข้าวโอ๊ตแผ่นก็มีคาร์โบไฮเดรต"
+    }
+  },
+  "gluteenittomat-kauralesesampylat": {
+    "recipeBindingSha256": "f9082560f345757a9849ca419cdef53601f325ff29f24574d78c1bf88db3242b",
+    "preparationSha256": "cd1a0729ba8bb9fa4db2d09ad06a301ca5681cdea481061b037fdc5b48f795da",
+    "reviewedAt": "2026-11-18",
+    "source": "https://www.k-ruoka.fi/kauppa/tuote/pirkka-tumma-jauhoseos-1kg-gluteeniton-6410405221872",
+    "reasoning": "Step 4 divides the batch into sixteen buns. The recipe gives exactly 120 g and the matching EAN for the dry dark Pirkka flour mix. Private label owner Kesko's product page provides as-sold carbohydrate and separate fibre; it applies to this named blend only. Oat bran, syrup, potato fibre and topping are outside this ingredient row. No assumed substitution, finished carbohydrate/GK or current package clearance.",
+    "ingredientPortion": {
+      "index": 7,
+      "ingredientSha256": "11a9da96c61d7c7464898e682a75277c47b2259fc91f4d4724202d5b8c14f1dd",
+      "labels": {
+        "fi": "Pirkka tumma gluteeniton jauhoseos, kuivapaino",
+        "en": "Pirkka dark gluten-free flour blend, dry weight",
+        "sv": "Pirkka mörk glutenfri mjölmix, torrvikt",
+        "th": "แป้งผสมปลอดกลูเตนสูตรสีเข้ม Pirkka น้ำหนักแห้ง"
+      },
+      "unit": "g",
+      "declaredCarbsGPer100g": 70
+    },
+    "condition": {
+      "fi": "Tumman Pirkka-jauhoseoksen tuoteseloste ilmoittaa 70 g hiilihydraattia 100 grammassa kuivaa seosta. Myös kauralese, siirappi ja muut ainekset vaikuttavat sämpylän hiilihydraattimäärään.",
+      "en": "Pirkka’s dark flour blend declares 70 g of carbohydrate per 100 g dry. Oat bran, syrup and the other ingredients also contribute to the roll’s carbohydrate.",
+      "sv": "Näringsdeklarationen för Pirkkas mörka mjölmix anger 70 g kolhydrater per 100 g torr mix. Havrekli, sirap och de övriga ingredienserna bidrar också till frallans kolhydratmängd.",
+      "th": "ฉลากแป้งผสมสูตรสีเข้ม Pirkka ระบุคาร์โบไฮเดรต 70 กรัมต่อแป้งแห้ง 100 กรัม รำข้าวโอ๊ต น้ำเชื่อม และวัตถุดิบอื่นก็มีผลต่อคาร์โบไฮเดรตในขนมปัง"
+    }
+  },
+  "gluteeniton-durrapizzapohja": {
+    "recipeBindingSha256": "344eb26539889dfaffe2fa6ec4bd40d0123f5fcd7d5523d4f6a4a90c72f2d606",
+    "preparationSha256": "50b9d6cf4808a3355d5d756281a3d732d854d52f6e18bf96092b99ea612f44c4",
+    "reviewedAt": "2026-11-18",
+    "source": "https://lejos.fi/tuotteet/hungry-chef-pizzakastike/",
+    "reasoning": "Step 6 puts the full weighed 150 g sauce on the pizza and step 8 splits into four portions. The previous recipe release links the official Lejos Hungry Chef regular cherry-tomato sauce page. That page names a gluten-free, celery-containing 260 g SKU, EAN 6426000005236, with 7.8 g declared carbohydrate per 100 g. The label applies to that exact sauce; a dark or spicy alternative has not been tied to the original, and product/pack checks remain. No volume conversion or whole-pizza carbohydrate or GK is inferred.",
+    "ingredientPortion": {
+      "index": 7,
+      "ingredientSha256": "e04577d9fd0ac42a38a101515c1bcb16acfe6caa75ee825ab0b5004c27032966",
+      "labels": {
+        "fi": "Hungry Chef -pizzakastike",
+        "en": "Hungry Chef pizza sauce",
+        "sv": "Hungry Chef pizzasås",
+        "th": "ซอสพิซซ่า Hungry Chef"
+      },
+      "unit": "g",
+      "declaredCarbsGPer100g": 7.8
+    },
+    "condition": {
+      "fi": "Hungry Chefin tavallisen 260 g:n pizzakastikkeen tuoteseloste ilmoittaa 7,8 g hiilihydraattia 100 grammassa. Tarkista käyttämäsi kastikkeen pakkaus. Pohjasta ja muista täytteistä tulee lisäksi hiilihydraatteja.",
+      "en": "The label for Hungry Chef’s regular 260 g pizza sauce lists 7.8 g of carbohydrate per 100 g. Check the sauce you use. The crust and other toppings also contribute carbohydrate.",
+      "sv": "Näringsdeklarationen för Hungry Chefs vanliga pizzasås på 260 g anger 7,8 g kolhydrater per 100 g. Kontrollera förpackningen på såsen du använder. Botten och de övriga påläggen bidrar också med kolhydrater.",
+      "th": "ฉลากซอสพิซซ่าสูตรปกติ Hungry Chef ขนาด 260 กรัมระบุคาร์โบไฮเดรต 7.8 กรัมต่อซอส 100 กรัม ตรวจฉลากซอสที่ใช้ แป้งพิซซ่าและหน้าอื่น ๆ ก็มีผลต่อคาร์โบไฮเดรตทั้งหน่วยบริโภค"
     }
   }
 }

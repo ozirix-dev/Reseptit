@@ -85,3 +85,25 @@ test("partial ingredient quantities remain separate from the whole portion and i
     ...review, ingredientPortion: { ...ingredient, sourceReview: { ...ingredient.sourceReview!, sha256: "changed" } },
   }), /source review for the partial ingredient changed/);
 });
+
+test("a package label projects only the named ingredient's carbohydrate", async () => {
+  const id = "gluteeniton-siemenvuokaleipa";
+  const [reviews, markdown] = await Promise.all([
+    loadReviewedPortions(root),
+    readFile(path.join(root, "reseptit/leivonnaiset", id + ".md"), "utf8"),
+  ]);
+  const review = reviews[id];
+  const ingredient = review.ingredientPortion!;
+  const { portion } = await projectPortionEvidence(root, id, markdown, review);
+  assert.equal(portion.ingredientPortion?.amountPerServing, 17.5);
+  assert.equal(portion.ingredientPortion?.declaredCarbsGPerServing, 13.125);
+  assert.equal(portion.ingredientPortion?.availableCarbsGPerServing, undefined);
+  assert.equal(portion.availableCarbs, undefined);
+  assert.equal(originalGlycemicLoadCategory(undefined, portion), null);
+  await assert.rejects(projectPortionEvidence(root, id, markdown, {
+    ...review, ingredientPortion: { ...ingredient, availableCarbsGPer100g: 60 },
+  }), /must use one composition basis/);
+  await assert.rejects(projectPortionEvidence(root, id, markdown, {
+    ...review, ingredientPortion: { ...ingredient, declaredCarbsGPer100g: 101 },
+  }), /invalid partial ingredient carbohydrate composition/);
+});

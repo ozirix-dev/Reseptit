@@ -44,6 +44,12 @@ yhteyteen, kun lähde vastaa ainesosaa sen punnitustavassa. Osuus näkyy
 reseptissä ja oppaassa ainesosan omalla nimellä. Annoksen laskennan tai
 GI-lähteiden avoin katselmointi säilyy näkyvissä.
 
+Pakkausselosteen hiilihydraattimäärän voi kertoa nimetylle tuotteelle,
+kun tuote ja reseptiin punnittava määrä on yksilöity. Kerro lähde ja
+pakkaustiedon tuoterajaus. Annosvalitsin skaalaa tuotteen määrän ja siitä
+lasketun hiilihydraattimäärän. Julkinen näkymä nimeää arvon pakkauksen
+ilmoittamaksi ja käyttää omaa kenttää imeytyvän hiilihydraatin arviolle.
+
 Sanallisen arvion yhteydessä vanha huomautus määrittämättömästä GK:sta
 voidaan täsmentää koskemaan numeerista arvoa. Katselmoitu sanamuoto on
 kielikohtainen ja kytketty hyväksyttyyn annokseen. Sivuston koostaminen
@@ -66,8 +72,9 @@ sekä valmistus- ja tarjoiluohjeet. Välilyönnit normalisoidaan. Valmistuksen
 tai tarjoilun sisällön muutos pysäyttää ehdotetun arvion ennen buildia.
 Otsikon tai ingressin toimituksellinen muutos ei muuta sidosta. Vanhan
 laskennan pohjalta nimetyn ainesosan on vastattava myös ajantasaista
-reseptiä. Pakkaustietoon tukeutuva ainesosanäyttö sitoo nimen, määrän,
-yksikön ja viivakoodin reseptiin. Se kertoo yksittäisestä ainesosasta.
+reseptiä. Pakkaustietoon tukeutuva ainesosanäyttö sitoo nimen, määrän ja
+yksikön reseptiin. Tuotetiedon viivakoodi tarkistetaan, kun se on tiedossa
+ja merkitty ainesosariville. Pakkaustieto koskee yksittäistä ainesosaa.
 Vanhat GK-sidokset, aineistot ja hyväksynnät pidetään toistettavina.
 
 ## Hiilihydraattitiedon merkitys

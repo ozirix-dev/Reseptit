@@ -19,6 +19,7 @@ interface ReviewedPortion {
     unit: IngredientPortion["unit"];
     sourceReview?: { file: string; sha256: string };
     availableCarbsGPer100g?: number;
+    declaredCarbsGPer100g?: number;
   };
   alternativeLabels?: Record<string, LocalizedText>;
   versionAlternativeLabels?: { versionId: string; lower: LocalizedText; upper: LocalizedText };
@@ -117,7 +118,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
     portion.verbal = review.verbal;
   }
   if (review?.ingredientPortion) {
-    const { index, ingredientSha256, labels, unit, sourceReview, availableCarbsGPer100g } = review.ingredientPortion;
+    const { index, ingredientSha256, labels, unit, sourceReview, availableCarbsGPer100g, declaredCarbsGPer100g } = review.ingredientPortion;
     const ingredient = data.ingredients[index];
     if (!["g", "kpl", "arkkia"].includes(unit) || !ingredient || ingredient.unit !== unit || typeof ingredient.amount !== "number"
         || !Number.isFinite(ingredient.amount) || ingredient.amount <= 0
@@ -135,11 +136,17 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
     const amountPerServing = ingredient.amount / data.servings;
     portion.ingredientPortion = { name: labels, amountPerServing, unit };
     if (portion.driver?.ingredientIndex === index && !portion.driver.coversMajority) delete portion.driver;
-    if (availableCarbsGPer100g !== undefined) {
-      if (unit !== "g" || !Number.isFinite(availableCarbsGPer100g) || availableCarbsGPer100g < 0 || availableCarbsGPer100g > 100) {
+    const carbsGPer100g = availableCarbsGPer100g ?? declaredCarbsGPer100g;
+    if (availableCarbsGPer100g !== undefined || declaredCarbsGPer100g !== undefined) {
+      if (availableCarbsGPer100g !== undefined && declaredCarbsGPer100g !== undefined) {
+        throw new Error(`${recipeId}: partial ingredient carbohydrate must use one composition basis.`);
+      }
+      if (unit !== "g" || typeof carbsGPer100g !== "number" || !Number.isFinite(carbsGPer100g) || carbsGPer100g < 0 || carbsGPer100g > 100) {
         throw new Error(`${recipeId}: invalid partial ingredient carbohydrate composition.`);
       }
-      portion.ingredientPortion.availableCarbsGPerServing = amountPerServing * availableCarbsGPer100g / 100;
+      const carbsGPerServing = amountPerServing * carbsGPer100g / 100;
+      if (availableCarbsGPer100g !== undefined) portion.ingredientPortion.availableCarbsGPerServing = carbsGPerServing;
+      else portion.ingredientPortion.declaredCarbsGPerServing = carbsGPerServing;
     }
   }
   if (review?.ingredientProduct) {
