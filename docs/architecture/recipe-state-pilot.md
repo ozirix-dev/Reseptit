@@ -55,8 +55,13 @@ alkuperäisen poikkeaman. Ohjeen vertailu hyväksyy katselmoidun
 pilkkuvälin lisäyksen grammoina ilmoitettujen ainesmäärien luetteloon,
 kun molemmat näkyvät valmistusohjeet täsmäävät sen jälkeen.
 Pelkkä `cooking_method`-luokituksen muutos sallitaan, jos muu
-lähdesisältö ja näkyvä valmistus täsmäävät. Muuttunut julkaistu ohje,
-puuttuva varmennus sekä laskentasyötteen ja lähdeaineiston erot
+lähdesisältö ja näkyvä valmistus täsmäävät. Viidelle aiemmin
+katselmoidulle FI-esityskorjaukselle vertailu käyttää korjattua versiota,
+kun sekä koko esitysversio että alkuperäinen julkaisutodiste vastaavat
+kirjattuja SHA-256-tiivisteitä. Annosjako, ainekset, molemmat
+valmistusohjeen esitystavat ja muistiinpanot tarkistetaan myös näille.
+Muuttunut julkaistu ohje, puuttuva varmennus sekä
+laskentasyötteen ja lähdeaineiston erot
 kuuluvat `bindingDifferences`-kenttään. Kun alkuperäinen julkaisulähde
 täsmää, `releasePresentationDifferences` näyttää, poikkeavatko näkyvä
 lähdeversio, annosmäärä, ainekset, valmistus tai muistiinpanot.

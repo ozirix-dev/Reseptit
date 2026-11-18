@@ -10,7 +10,7 @@ import { contentManifest } from "../src/generated/routes.generated";
 import { f25SourceGatePreflight } from "../scripts/f25-source-release-gate";
 import { publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
 import { applyReviewedGramListSpacing } from "../scripts/public-recipe-copy-r2";
-import { git, onlyCookingMethodMetadataChanged, readRecipeStateInputs, repoRoot, type RecipeStateInputs } from "../scripts/recipe-state-inputs";
+import { git, matchesReviewedReleasePresentation, onlyCookingMethodMetadataChanged, readRecipeStateInputs, repoRoot, type RecipeStateInputs } from "../scripts/recipe-state-inputs";
 import { projectRecipeState } from "../scripts/recipe-state";
 import { buildRegistry, contentHash } from "../scripts/translation-review";
 
@@ -150,7 +150,7 @@ test("cooking-method metadata alone is independent of the recipe content used fo
   assert.equal(onlyCookingMethodMetadataChanged(original, corrected.replace("servings: 2", "servings: 3")), false);
 });
 
-test("current release pins distinguish historical source differences from open publication checks", () => {
+test("current release pins distinguish historical source differences from open publication checks", async () => {
   for (const id of ["koshari", "jauheliha-kaalikeitto-vhh", "uunikanapasta-kesakurpitsa",
     "harira", "karibia-maissipuuro-kookoksella"]) {
     const row = withId(id);
@@ -167,13 +167,28 @@ test("current release pins distinguish historical source differences from open p
   assert.ok(!editorial.glycemicLoadStatus.bindingDifferences.includes("source"));
   assert.equal(editorial.glycemicLoadStatus.historicalSourceBindingDifference, true);
   assert.equal(editorial.glycemicLoadStatus.releasePresentationDifferences, undefined);
-  assert.deepEqual(withId("indonesialainen-bubur-ayam-kanariisipuuro").glycemicLoadStatus.releasePresentationDifferences,
-    ["effective-source", "preparation"]);
+  for (const id of ["vietnamilainen-chao-ga-kanapuuro", "indonesialainen-bubur-ayam-kanariisipuuro",
+    "shoyu-kanakeitto-konjac", "pohjoisafrikkalainen-minttutee-kaurapuuro", "yrttituorejuusto-kinkkurullat"]) {
+    const row = withId(id);
+    const status = row.glycemicLoadStatus;
+    const { evidencePath } = status.verifiedRawGkRelease!;
+    const evidenceHash = contentHash(await readFile(path.join(repoRoot, evidencePath), "utf8"));
+    assert.ok(row.effectiveContentHash, id);
+    assert.ok(matchesReviewedReleasePresentation(row.sourcePath, evidencePath, evidenceHash, row.effectiveContentHash), id);
+    assert.ok(!matchesReviewedReleasePresentation(row.sourcePath, evidencePath, evidenceHash, row.contentHash), id);
+    assert.ok(!matchesReviewedReleasePresentation(row.sourcePath, evidencePath + ".other", evidenceHash, row.effectiveContentHash), id);
+    assert.ok(!matchesReviewedReleasePresentation(row.sourcePath, evidencePath, "0".repeat(64), row.effectiveContentHash), id);
+    assert.ok(!matchesReviewedReleasePresentation(row.sourcePath, evidencePath, undefined, row.effectiveContentHash), id);
+    assert.ok(!matchesReviewedReleasePresentation("different-source.md", evidencePath, evidenceHash, row.effectiveContentHash), id);
+    assert.deepEqual(status.bindingDifferences, [], id);
+    assert.equal(status.historicalSourceBindingDifference, true, id);
+    assert.equal(status.releasePresentationDifferences, undefined, id);
+  }
   assert.deepEqual(withId("yangzhou-paistettu-riisi").glycemicLoadStatus.releasePresentationDifferences,
     ["ingredients", "preparation"]);
   assert.deepEqual(withId("uuniporsas-kermakastikkeessa-vhh").glycemicLoadStatus.releasePresentationDifferences,
     ["preparation", "notes"]);
-  for (const id of ["indonesialainen-bubur-ayam-kanariisipuuro", "yangzhou-paistettu-riisi"]) {
+  for (const id of ["yangzhou-paistettu-riisi", "uuniporsas-kermakastikkeessa-vhh"]) {
     const status = withId(id).glycemicLoadStatus;
     assert.ok(status.verifiedRawGkRelease, id);
     assert.ok(status.bindingDifferences.includes("source"), id);
