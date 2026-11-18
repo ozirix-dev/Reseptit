@@ -3121,7 +3121,7 @@
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
     "reasoning": "The Finnish recipe weighs cooked, peeled, cooled sweet potato without specifying its preparation. Calculate each whole serving independently with Fineli Release 20 #30600 or #30602. Both use the same edible mass and the other listed ingredients. Only available carbohydrate is released. The macronutrient package and GK have separate approval.",
     "condition": {
-      "fi": "Arvio sisältää yhden yhdeksästä palasta ja kaikki ohjeen ainekset. Punnitse bataatti kuorittuna ja jäähtyneenä.",
+      "fi": "Arvio koskee yhtä yhdeksästä palasta ja sisältää kaikki ohjeen ainekset. Punnitse bataatti kuorittuna ja jäähtyneenä.",
       "en": "The estimate is for one of nine pieces and includes all the ingredients in the recipe. Weigh the sweet potato peeled and cooled.",
       "sv": "Uppskattningen gäller en av nio bitar och omfattar alla ingredienser i receptet. Väg sötpotatisen skalad och avsvalnad.",
       "th": "ค่าประมาณสำหรับหนึ่งชิ้นจากทั้งหมดเก้าชิ้น รวมส่วนผสมทุกอย่างตามสูตร ชั่งมันเทศหลังปอกเปลือกและพักให้เย็น"
@@ -3548,10 +3548,10 @@
     "source": "https://doi.org/10.1093/ajcn/nqab233",
     "publicSource": "https://ajcn.nutrition.org/article/S0002-9165%2822%2900494-4/fulltext",
     "condition": {
-      "fi": "Arvio perustuu 50 grammaan kuivaa vehnänuudelia annosta kohti. Nuudelien GK-osuus käyttää pastaryhmän GI-keskiarvoa, joten nuudelivalinta voi muuttaa arviota. GK-laskelma on tehty ilman soijakastiketta.",
-      "en": "The estimate uses 50 g of dry wheat noodles per serving. Their GL contribution uses the average GI of pasta, so the noodles you choose can change the estimate. The GL calculation excludes soy sauce.",
-      "sv": "Uppskattningen bygger på 50 g torra vetenudlar per portion. Nudlarnas bidrag till GL bygger på genomsnittligt GI för pasta, så valet av nudlar kan påverka uppskattningen. GL-beräkningen är gjord utan sojasås.",
-      "th": "ค่าประมาณใช้บะหมี่แป้งสาลีแห้ง 50 กรัมต่อหนึ่งที่ ค่า GL ส่วนของบะหมี่ใช้ค่า GI เฉลี่ยของพาสต้า ชนิดบะหมี่ที่เลือกอาจทำให้ค่าประมาณเปลี่ยนได้ การคำนวณ GL ไม่รวมซีอิ๊ว"
+      "fi": "Arvio perustuu 50 grammaan kuivaa vehnänuudelia annosta kohti. Nuudelien GK-osuus käyttää pastaryhmän GI-keskiarvoa, joten nuudelivalinta voi muuttaa arviota. Soijakastike sisältyy annoksen hiilihydraattiarvioon. GK-laskelmasta se puuttuu.",
+      "en": "The estimate uses 50 g of dry wheat noodles per serving. Their GL contribution uses the average GI of pasta, so the noodles you choose can change the estimate. The serving’s carbohydrate estimate includes soy sauce. The GL calculation excludes it.",
+      "sv": "Uppskattningen bygger på 50 g torra vetenudlar per portion. Nudlarnas bidrag till GL bygger på genomsnittligt GI för pasta, så valet av nudlar kan påverka uppskattningen. Sojasåsen ingår i portionens kolhydratuppskattning. Den ingår inte i GL-beräkningen.",
+      "th": "ค่าประมาณใช้บะหมี่แป้งสาลีแห้ง 50 กรัมต่อหนึ่งที่ ค่า GL ส่วนของบะหมี่ใช้ค่า GI เฉลี่ยของพาสต้า ชนิดบะหมี่ที่เลือกอาจทำให้ค่าประมาณเปลี่ยนได้ ค่าประมาณคาร์โบไฮเดรตต่อหนึ่งที่รวมซีอิ๊ว การคำนวณ GL ไม่รวมซีอิ๊ว"
     },
     "reasoning": "Two servings share 100 g dry wheat noodles boiled according to package instructions and later stir-fried with tofu, sprouts and egg. The current recipe and its separate carbohydrate calculation include one tablespoon soy sauce; the sealed GK input has no soy sauce row. Fineli 31 supplies 0.855 g available carbohydrate per serving from it in the nutrition accounting, outside the 0.165 g tracked omission of the approved GK model. A large cooking and preparation mismatch remains between a pasta group mean, the human mee pok and an unspecified dry wheat noodle used in a stir fry. The numerical scope note identifies the omission and never assigns the researched GI to this dish. Atkinson et al. 2021 Table 1 reports pasta GI 52 (glucose=100; 77 entries, SD 12). This group accounts for 93% of the existing GK. Omission handling already suppresses the model's medium category.",
     "classLimitation": {
