@@ -1,5 +1,9 @@
 # Kuvien säilytys ja Proton-arkistoinnin pilotti
 
+Käyttöönoton omistajaohje: [hallittu työnkulku ja ulkoinen build-lähde](image-lifecycle-workflow.md).
+Alla on alkuperäisen auditoinnin tilannekuva. Uusi hyväksytty seitsemän päivän
+käytäntö korvaa sen aiemman 30 päivän hylkäysehdotuksen vain hallituissa töissä.
+
 Tämä on 18.11.2026 testattu menettelyehdotus. Se ei muuta nykyistä
 julkaisuputkea, varmuuskopiointia tai anna poistovaltuutta.
 
