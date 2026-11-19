@@ -8,6 +8,7 @@ import {calculateCandidate} from './gk80-candidate-policy';
 import {classifyGk80Source} from './gk80-source-classification';
 import {emptyValues,round,type Calculation} from './nutrition-model';
 import type {GlycemicLoadResult} from './glycemic-load-model';
+import type {OriginalGkReleaseBinding} from './gk80-release';
 
 const approved = {
   'jauheliha-kaalikeitto-vhh': '7e16f21f52cc2365c6b1742d891542fb118b7b879b5bf73d88d5dbef361c0f2f',
@@ -129,12 +130,21 @@ export async function validateScopedPolyolC(root:string,id:string):Promise<boole
   if(!Object.hasOwn(approved,id))return false;
   await loadScopedPolyolC(root,id);return true;
 }
-export async function applyScopedPolyolC<T extends GlycemicLoadResult>(root:string,legacy:T[]){
+export async function applyScopedPolyolC<T extends GlycemicLoadResult>(
+  root:string, legacy:T[], verified?:Map<string,OriginalGkReleaseBinding>,
+){
   const out=[...legacy];
   for(const id of scopedPolyolRecipeIds){
     const {e,result}=await loadScopedPolyolC(root,id),p=e.scopedPolyolC;
     const index=out.findIndex(x=>x.recipeId===id);
     if(index<0||out[index].status==='CALCULATED')throw Error('SCOPED_C_RELEASE_COLLISION');
+    const sourcePath=p.recipe.sourcePath;
+    if(sourcePath&&p.versionHashes[sourcePath]){
+      verified?.set(id,{
+        sourcePath, sourceSha256:p.versionHashes[sourcePath], evidencePath:`docs/nutrition/calculations/${id}.json`,
+        servings:6, point:result.gk.value, range:null,
+      });
+    }
     out[index]={...out[index],status:'CALCULATED',servings:6,unroundedGlycemicLoadPerServing:null,
       glycemicLoadPerServing:result.gk.value,glycemicLoadRangePerServing:null,confidence:'LOW',blockers:[],
       omittedAvailableCarbohydratePerServingG:0,omittedAvailableCarbohydrateUpperBoundPerServingG:0,

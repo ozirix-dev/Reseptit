@@ -3,6 +3,16 @@ import {type Recipe,type Source,type CompositionSource} from './gk80-candidate-m
 import {calculateCandidate as calculate,roundedCandidatePoint} from './gk80-candidate-policy';
 import type {GlycemicLoadResult} from './glycemic-load-model';
 import {classifyGk80Source, type EvidenceKind, type ApplicationKind} from './gk80-source-classification';
+/** Source bytes verified by the release path that produced the current result. */
+export interface OriginalGkReleaseBinding {
+  sourcePath: string;
+  sourceSha256: string;
+  evidencePath: string;
+  servings: number;
+  point: number | null;
+  range: { min: number; max: number } | null;
+}
+
 type Ref={title:string;url:string;matchKind:'EXACT'|'ANALOG'|'CALCULATION_POLICY';evidenceKind:EvidenceKind;applicationKind:ApplicationKind;confidence:'LOW';note:string};
 type Extended=GlycemicLoadResult&{assessmentType?:'PUBLISHED_IMPUTATION';modelScenario?:'POINT_SCENARIO'|'NAMED_SCENARIO_RANGE';candidateSources?:Ref[];candidateCarbohydrateSources?:Array<{title:string;url:string;note:string}>};
 export async function loadPacks(root:string){
@@ -20,7 +30,7 @@ export async function loadPacks(root:string){
   for(const id of pack.recipeIds){if(allIds.has(id))throw Error('GK80_DUPLICATE_RECIPE');allIds.add(id);}
   const golden=(await json('golden.json')).recipes;
   if(golden.length!==recipes.length||sorted(golden.map((g:{recipeId:string})=>g.recipeId))!==sorted(pack.recipeIds))throw Error('GK80_GOLDEN_SCOPE');
-  found.push({recipes,sources:(await json('sources.json')).records as Source[],comps:(await json('composition-sources.json')).records as CompositionSource[],golden});
+  found.push({packId:pack.folder,recipes,sources:(await json('sources.json')).records as Source[],comps:(await json('composition-sources.json')).records as CompositionSource[],golden});
  }
  return found;
 }
@@ -34,10 +44,11 @@ export async function validateGk80Candidate(root:string,recipeId:string):Promise
  }
  return false;
 }
-export async function applyGk80Release(root:string,legacy:GlycemicLoadResult[],
- namedScenarios?: Map<string, ReadonlyMap<string, number>>):Promise<Extended[]>{
+export async function applyGk80Release(root:string, legacy:GlycemicLoadResult[],
+ namedScenarios?:Map<string,ReadonlyMap<string,number>>, verified?:Map<string,OriginalGkReleaseBinding>,
+):Promise<Extended[]>{
  const out:Extended[]=[...legacy];
- for(const {recipes,sources,comps,golden} of await loadPacks(root)){
+ for(const {packId,recipes,sources,comps,golden} of await loadPacks(root)){
  for(const r of recipes){
   const current=createHash('sha256').update((await readFile(path.join(root,r.sourcePath),'utf8')).replaceAll('\r\n','\n')).digest('hex');
   const expected=golden.find((g:{recipeId:string})=>g.recipeId===r.recipeId);
@@ -46,11 +57,17 @@ export async function applyGk80Release(root:string,legacy:GlycemicLoadResult[],
    namedScenarios.set(r.recipeId, new Map(result.scenarios.map(scenario => [scenario.id, scenario.wholeGk!])));
   }
   const index=out.findIndex(x=>x.recipeId===r.recipeId);if(index<0)throw Error('GK80_RELEASE_UNKNOWN_ID');
+  const point=roundedCandidatePoint(result.min!);
+  const range=result.min!==result.max?{min:result.min!,max:result.max!}:null;
+  verified?.set(r.recipeId,{
+   sourcePath:r.sourcePath, sourceSha256:current, evidencePath:`docs/nutrition/${packId}/golden.json`,
+   servings:r.servings, point, range,
+  });
   const s=result.scenarios[0],map=new Map(sources.map(x=>[x.id,x]));
   const used=[...new Set(r.scenarios.flatMap(s=>s.ingredients.flatMap(i=>i.giId?[i.giId]:i.impact?[i.impact.sourceId]:[])))];
   const ids=[...new Set(r.scenarios.flatMap(s=>s.ingredients.flatMap(i=>i.composition?[i.composition.sourceId]:[])))];
   out[index]={...out[index],status:'CALCULATED',servings:r.servings,unroundedGlycemicLoadPerServing:result.min,
-   glycemicLoadPerServing:roundedCandidatePoint(result.min!),glycemicLoadRangePerServing:result.min!==result.max?{min:result.min!,max:result.max!}:null,
+   glycemicLoadPerServing:point,glycemicLoadRangePerServing:range,
    omittedAvailableCarbohydratePerServingG:0,omittedAvailableCarbohydrateUpperBoundPerServingG:0,confidence:'LOW',blockers:[],assessmentType:'PUBLISHED_IMPUTATION',modelScenario:r.scenarios.length>1?'NAMED_SCENARIO_RANGE':'POINT_SCENARIO',
    interpretation:'Modeled ingredient-sum estimate with published vegetable GI assignment and named preparation analogues; no measured meal response or physiological uncertainty bound.',
    ingredients:r.scenarios[0].ingredients.map((i,n)=>({name:i.name,grams:i.massG,fineliRecordId:i.composition?.sourceId??null,
