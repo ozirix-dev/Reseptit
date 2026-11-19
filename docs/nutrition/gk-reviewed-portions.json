@@ -346,7 +346,7 @@
   "japanilainen-natto-riisikulho": {
     "recipeBindingSha256": "c4752a610195954481f743e8cade1ae052e5c8e643b36471a8254a7c92960254",
     "reviewedAt": "2026-11-18",
-    "reasoning": "Step 1 specifies dry white jasmine rice; generic dry long-grain white rice is a composition analogue. The projection covers one ingredient contribution per recipe serving.",
+    "reasoning": "Step 1 specifies dry white jasmine rice; generic dry long-grain white rice is a composition analogue. The projection covers one ingredient contribution per recipe serving. MEXT #04046, 日本食品標準成分表（八訂）増補2023年から引用, lists 0.3 g available carbohydrate by mass per 100 g edible plain whole-bean itohiki natto. The 75 g serving without sachets contributes a reference 0.225 g. The by-difference value and total carbohydrate are different quantities. The original egg edible weight and spring onion mass are unresolved.",
     "source": "https://fineli.fi/fineli/api/v1/foods/11521",
     "knownCarbIngredient": "riisi",
     "preparationSha256": "39809c02bf762caa20e1af961b6153c6c704ebec9cdd1e49c347722b504faef9",
@@ -364,11 +364,26 @@
       "availableCarbsGPer100g": 79
     },
     "condition": {
-      "fi": "Hiilihydraattiarvio perustuu tavallisen kuivan, pitkäjyväisen valkoisen riisin Fineli-arvoon.",
-      "en": "The carbohydrate estimate uses Fineli’s value for dry long-grain white rice.",
-      "sv": "Kolhydratmängden uppskattas med Finelis värde för torrt långkornigt vitt ris.",
-      "th": "ค่าคาร์โบไฮเดรตโดยประมาณอ้างอิงข้อมูลข้าวขาวเมล็ดยาวแบบแห้งจาก Fineli"
-    }
+      "fi": "Riisin luku perustuu Finelin kuivaan pitkäjyväiseen valkoiseen riisiin. Nattōn luku perustuu MEXTin maustamattoman kokopapuisen itohiki-nattōn vertailuarvoon. Jätä kastike- ja maustepussit sivuun. Koko kulhon arvioon tarvitaan munan kuoreton paino ja kevätsipulin punnittu määrä.",
+      "en": "The rice estimate uses Fineli’s dry long-grain white rice. The nattō estimate uses MEXT’s reference for plain whole-bean itohiki nattō. Leave out the sauce and seasoning sachets. Estimating the whole bowl requires the shelled egg weight and weighed spring onion.",
+      "sv": "Risets värde bygger på Finelis torra långkorniga vita ris. Värdet för nattō bygger på MEXT:s referens för naturell itohiki-nattō av hela sojabönor. Använd inga sås- eller kryddpåsar. För hela skålen behövs äggets vikt utan skal och den uppvägda mängden salladslök.",
+      "th": "ค่าของข้าวอ้างอิงข้าวขาวเมล็ดยาวแห้งจาก Fineli ค่าของนัตโตะอ้างอิงอิโตฮิกินัตโตะถั่วเหลืองเต็มเมล็ดแบบไม่ปรุงรสจาก MEXT ไม่ใส่ซอสหรือเครื่องปรุงจากซอง การประมาณทั้งชามต้องทราบน้ำหนักไข่ไม่รวมเปลือกและน้ำหนักต้นหอม"
+    },
+    "additionalIngredientPortions": [
+      {
+        "index": 0,
+        "ingredientSha256": "356ff167d314cad00591bbde38e9ba102ace0e17afafcb7eb13e2f98541154ce",
+        "labels": {
+          "fi": "Maustamaton kokopapuinen itohiki-nattō",
+          "en": "Plain whole-bean itohiki nattō",
+          "sv": "Naturell itohiki-nattō av hela sojabönor",
+          "th": "อิโตฮิกินัตโตะถั่วเหลืองเต็มเมล็ดแบบไม่ปรุงรส"
+        },
+        "unit": "g",
+        "availableCarbsGPer100g": 0.3,
+        "source": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=4_04046_7&MODE=7"
+      }
+    ]
   },
   "mapo-tofu": {
     "recipeBindingSha256": "274445d43d46987ab7ee181e1b00161fc33faf52cebd129a69ba5f731d073c27",
@@ -1046,13 +1061,13 @@
     "recipeBindingSha256": "328d19ffcf9668c120d854e2ede4afe306eb10fb04b74bd0377a8e5b1a8fc62e",
     "preparationSha256": "7ce3028c07c739a362b1def5ab815649a60f58ab3c1be3827663c9d53e724ddb",
     "reviewedAt": "2026-11-18",
-    "source": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg20.pdf",
-    "reasoning": "Use 100 g short-grain rice in two portions, 30 ml ready-made dashi and 5 ml soy sauce. Historical 200 ml dashi or broth reconstituted per a particular powder formula and long-grain rice are separate. Do not reuse study version carbohydrate or GK. USDA SR28 NDB 20452 raw white unenriched short-grain rice. Carbohydrate by difference; no normalized or numerical public claim.",
+    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/156",
+    "reasoning": "Use 100 g short-grain rice in two portions, 30 ml ready-made dashi and 5 ml soy sauce. Historical 200 ml dashi or broth reconstituted per a particular powder formula and long-grain rice are separate. Do not reuse study version carbohydrate or GK. USDA SR28 NDB 20452 raw white unenriched short-grain rice. The historical USDA value is by difference and is not used for the new available-carbohydrate estimate. Fineli Release 20 #156 provides native available carbohydrate 75.6 g per 100 g of dry uncooked short-grain porridge rice, a composition reference for the 50 g dry rice per serving. This gives 37.8 g for the rice component. No rice cultivar or separate polyol value is inferred. Ready dashi and soy sauce composition and edible egg weight remain unresolved.",
     "condition": {
-      "fi": "Koko annoksen arvioon tarvitaan myös käytetyn dashiliemen ravintoarvo.",
-      "en": "The whole-serving estimate also needs nutrition information for the dashi used.",
-      "sv": "För hela portionen behövs även näringsvärdet för den dashibuljong som används.",
-      "th": "การประมาณทั้งหน่วยบริโภคต้องใช้ข้อมูลโภชนาการของน้ำซุปดาชิด้วย"
+      "fi": "Yhden annoksen riisiosuus vastaa 50 g kuivaa lyhytjyväistä riisiä. Luku perustuu Finelin kuivan puuroriisin vertailuarvoon. Koko annoksen arvioon tarvitaan käytetyn dashin ja soijakastikkeen ravintotiedot sekä kananmunan kuoreton paino.",
+      "en": "The rice in one serving comes from 50 g dry short-grain rice. The estimate uses Fineli’s dry porridge-rice reference. Estimating the whole serving also requires nutrition details for the dashi and soy sauce used and the shelled egg weight.",
+      "sv": "En portions ris motsvarar 50 g torrt rundkornigt ris. Uppskattningen bygger på Finelis referens för torrt grötris. För hela portionen behövs också näringsuppgifter för dashi och sojasås samt äggens vikt utan skal.",
+      "th": "ข้าวในหนึ่งที่เทียบเท่าข้าวเมล็ดสั้นแห้ง 50 กรัม ค่าประมาณอ้างอิงข้าวแห้งสำหรับทำโจ๊กจาก Fineli การประมาณทั้งมื้อต้องทราบข้อมูลโภชนาการของดาชิและซีอิ๊วที่ใช้ รวมถึงน้ำหนักไข่ไม่รวมเปลือก"
     },
     "ingredientPortion": {
       "index": 3,
@@ -1067,7 +1082,9 @@
       "sourceReview": {
         "file": "docs/reviews/2026-11-14-dashimaki-kielikatselmointi.md",
         "sha256": "8587cb71c4f4211acedfa7f830fd1594c8ad1fc5308975623bd69824979f9bab"
-      }
+      },
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/156",
+      "availableCarbsGPer100g": 75.6
     }
   },
   "korealainen-tofu-kimchi-aamiaiskulho": {
@@ -1103,12 +1120,12 @@
     "preparationSha256": "31326687977ae5a93574e7794f3a0fa9e75c70a24777c1eab21d616e6b522cbf",
     "reviewedAt": "2026-11-18",
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/156",
-    "reasoning": "Current two-serving recipe is 100 g dry white rice and 700 ml water cooked softly for 45 minutes with 10 g pitted salted umeboshi, 20 g scallion and 8 g sesame. The legacy liquid blocker is obsolete because current source explicitly specifies water; it does not establish a replacement GK. Umeboshi composition and porridge-appropriate rice GI remain unknown. Fineli Release 20 #156 raw porridge rice gives a representative carbohydrate source for porridge. The recipe specifies no cultivar so no numerical transfer.",
+    "reasoning": "Current two-serving recipe is 100 g dry white rice and 700 ml water cooked softly for 45 minutes with 10 g pitted salted umeboshi, 20 g scallion and 8 g sesame. The legacy liquid blocker is obsolete because current source explicitly specifies water; it does not establish a replacement GK. The exact umeboshi product composition and a directly measured GI for this preparation remain unknown. Fineli Release 20 #156 raw porridge rice gives a representative carbohydrate source for porridge. The recipe specifies no cultivar; the rice composition is a reference estimate. A separate available-carbohydrate-only calculation uses the original weighed ingredients and the verified sources: Fineli #156 rice and #385 sesame, MEXT #07022 plain salted umeboshi (mass sum), and AFCD F006250 raw spring onion. The calculation includes all listed solid ingredients with the toppings divided equally. The rinsing loss is not measured. This does not alter any GK estimate or release other macros.",
     "condition": {
-      "fi": "Riisi keitetään vedessä. Myös käytetty umeboshi vaikuttaa koko annoksen hiilihydraattimäärään.",
-      "en": "The rice is cooked in water. The umeboshi used also affects the carbohydrate content of the full portion.",
-      "sv": "Riset kokas i vatten. Vilken umeboshi du använder påverkar också kolhydratmängden i hela portionen.",
-      "th": "หุงข้าวด้วยน้ำ อุเมะโบชิที่ใช้มีผลต่อปริมาณคาร์โบไฮเดรตของทั้งหน่วยบริโภคด้วย"
+      "fi": "Yksi reseptiannos on yksi kahdesta kulhosta päällisineen. Se käyttää kuivaa puuroriisiä, tavallista suolattua umeboshia, kevätsipulia ja kuorellisia seesaminsiemeniä vertailuraaka-aineina. Makeutettu umeboshi ja riisin tuotevalinta voivat muuttaa lukua.",
+      "en": "One recipe serving is one of the two bowls, including the toppings. It uses dry porridge rice, plain salted umeboshi, spring onion and unhulled sesame as reference ingredients. Sweetened umeboshi and the choice of rice can change the estimate.",
+      "sv": "En receptportion är en av två skålar, inklusive tillbehören. Torrt grötris, vanligt saltat umeboshi, salladslök och oskalade sesamfrön används som referenser. Sötat umeboshi och valet av ris kan ändra värdet.",
+      "th": "หนึ่งที่ตามสูตรคือหนึ่งในสองชามพร้อมเครื่องโรย โดยใช้ข้าวแห้งสำหรับทำโจ๊ก อุเมะโบชิดองเค็มไม่เติมน้ำตาล ต้นหอม และงาไม่กะเทาะเปลือกเป็นข้อมูลอ้างอิง อุเมะโบชิที่เติมน้ำตาลและชนิดข้าวที่เลือกอาจทำให้ค่าเปลี่ยนไป"
     },
     "ingredientPortion": {
       "index": 0,
@@ -1123,8 +1140,20 @@
       "sourceReview": {
         "file": "docs/reviews/2026-11-14-japanilainen-okayu-umeboshipluumulla-kielikatselmointi.md",
         "sha256": "30699da052f11aea0271bb305feaecc67d2fe1ddae00a00c0f1698458985e015"
+      },
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/156",
+      "availableCarbsGPer100g": 75.6
+    },
+    "nutritionSha256": "f132df73f593eebcdf0e7e7e92f4b12085ae3af6cd41ba28ef13c7c09ece3d35",
+    "wholeCarbohydrateOnly": {
+      "localizedScopeSha256": {
+        "en": "57cb8bc6b78783b0bcaa7f8a2f53a56f552de025e51dd3179a9bbc57ad2a9d26",
+        "fi": "aadd5bdeb0e7a6eb02892034c25fd657e2c51f0f0cb3b966b662fdb13cf2b07d",
+        "sv": "d6ea0b5f7d9ee02f4da64c2f59925e61afc34fd825cff0a411beabe0f2209f3d",
+        "th": "a1b940f06717487311d7e6ee46e6c72d861e49708bbac9b49f4a8fe36d0cdaad"
       }
-    }
+    },
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/2187b2b38eb6f113e2712084c855685fbd774ee2/docs/nutrition/calculations/japanilainen-okayu-umeboshipluumulla.json"
   },
   "indonesialainen-tempeh-munakulho": {
     "recipeBindingSha256": "2dd59e289e7786333b7277f98935cc9de52dfbb7e38948206dee2d7eeb3d70dc",

@@ -168,6 +168,7 @@ const translationDraftCommits = new Map([
 // Exact recipe snapshots protect historical GK tests during translation preparation.
 // Production approval records remain in approvedTranslations.
 const recipeChanges = new Map([
+  ["docs/nutrition/calculations/japanilainen-okayu-umeboshipluumulla.json", { status: "A", sha256: "f132df73f593eebcdf0e7e7e92f4b12085ae3af6cd41ba28ef13c7c09ece3d35" }],
   ["reseptit/paaruoat/hyderabadi-kanabiryani.md", { status: "M", sha256: "591ff23b6543b9f9c4893a332598cf0b79e3e6dd1b4f8790319c43934b196159" }],
   ["kaannokset/en/paaruoat/hyderabadi-kanabiryani.md", { status: "M", sha256: "5ee35c7a201b30b2bb74270729a0764444f8c1e15d9bf5b25f416f7937da69a2" }],
   ["kaannokset/sv/paaruoat/hyderabadi-kanabiryani.md", { status: "M", sha256: "ff8332953ef806e04462987107bcdb348f9ecb1abd309bc296e666af4213d015" }],
