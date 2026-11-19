@@ -47,7 +47,8 @@
     "audit:assistant:language-review": "tsx scripts/assistant-language-review.ts",
     "test:c20-fi-editorial": "tsx --test tests/c20-fi-editorial-display.test.ts",
     "test:d30-fi-mint": "tsx --test tests/d30-fi-mint-milk-display.test.ts",
-    "test:fi-breakfast-quality": "tsx --test tests/fi-breakfast-quality-display.test.ts"
+    "test:fi-breakfast-quality": "tsx --test tests/fi-breakfast-quality-display.test.ts",
+    "build:production": "node scripts/build-production.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",
