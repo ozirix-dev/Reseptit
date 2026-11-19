@@ -668,37 +668,58 @@ test("weighed or measured ingredient portions remain separate from whole-serving
   }
 });
 
-test("modeled GL with withheld whole-serving carbohydrates shows the scaled ingredient and its evidence limit", async () => {
+test("modeled GL and ingredient carbs remain separate from withheld whole-serving carbohydrates", async () => {
   const cases = {
-    "janssoninkiusaus-juuriselleri": 175, "marokkolainen-couscous": 62.5,
-    "paprikainen-vhh-gulassi": 75, "pasta-alla-norma": 87.5, "sitruuna-yrttikana-parsa": 100,
-  };
-  for (const [id, amount] of Object.entries(cases)) {
+    "janssoninkiusaus-juuriselleri": { gk: 3.05, ingredients: [{ amount: 175, available: 4.6375 }] },
+    "marokkolainen-couscous": { gk: 37.5, ingredients: [{ amount: 62.5, declared: 45 }, { amount: 100, available: 17.6 }] },
+    "paprikainen-vhh-gulassi": { gk: 3.52, ingredients: [{ amount: 40, available: 1.8 }, { amount: 37.5, available: 0.825 }, { amount: 75 }] },
+    "pasta-alla-norma": { gk: 30.05, ingredients: [{ amount: 87.5, declared: 60.375 }] },
+    "rogan-josh": { gk: 1.11, ingredients: [{ amount: 50, available: 2.5 }] },
+    "sitruuna-yrttikana-parsa": { gk: 0.88, ingredients: [{ amount: 100, available: 2 }] },
+  } satisfies Record<string, { gk: number; ingredients: { amount: number; available?: number; declared?: number }[] }>;
+  for (const [id, expected] of Object.entries(cases)) {
     const evidence: PortionEvidence | undefined = glycemicLoadPortions[id];
-    assert.equal(evidence?.ingredientPortion?.amountPerServing, amount, id);
-    assert.equal(evidence?.ingredientPortion?.availableCarbsGPerServing, undefined, id);
-    assert.equal(evidence?.ingredientPortion?.declaredCarbsGPerServing, undefined, id);
-    assert.equal(evidence?.availableCarbs, undefined, id);
+    assert.ok(evidence?.ingredientPortion, id);
+    assert.equal(evidence.availableCarbs, undefined, id);
+    const ingredients = [evidence.ingredientPortion, ...evidence.additionalIngredientPortions ?? []];
+    assert.equal(ingredients.length, expected.ingredients.length, id);
+    for (const [index, ingredient] of ingredients.entries()) {
+      const expectedIngredient: { amount: number; available?: number; declared?: number } = expected.ingredients[index];
+      assert.equal(ingredient.amountPerServing, expectedIngredient.amount, id);
+      assert.equal(ingredient.availableCarbsGPerServing?.toFixed(4), expectedIngredient.available?.toFixed(4), id);
+      assert.equal(ingredient.declaredCarbsGPerServing, expectedIngredient.declared, id);
+    }
     const locales = siteContent.recipes.filter(recipe => recipe.recipeId === id);
     assert.equal(locales.length, 4, id);
     for (const { locale, routePath, nutrition } of locales) {
-      const [recipe, guide] = await Promise.all([
+      const filename = contentManifest[routePath];
+      assert.ok(filename, routePath);
+      const [recipe, guide, routeData] = await Promise.all([
         readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8"),
         readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8"),
+        readFile(path.join(dist, "data", filename), "utf8"),
       ]);
+      assert.equal(parseRouteContent(JSON.parse(routeData), routePath).glycemicRecipe?.result?.glycemicLoadPerServing, expected.gk, routePath);
       assert.ok(Object.values(nutrition).every(value => value === null), routePath);
       assert.match(recipe, /data-gk-status="CALCULATED"/, routePath);
       assert.match(recipe, /data-portion-gk=/, routePath);
-      const start = guide.indexOf(`id="${id}" class="glycemic-pilot__recipe"`);
+      const start = guide.indexOf('id="' + id + '" class="glycemic-pilot__recipe"');
       assert.ok(start >= 0, routePath);
       const row = guide.slice(start, guide.indexOf("<li ", start + 1));
-      const condition: string | undefined = evidence?.condition?.[locale];
+      const condition: string | undefined = evidence.condition?.[locale];
       assert.ok(condition, routePath);
       const scope = renderToStaticMarkup(createElement("span", null, condition)).slice(6, -7);
       for (const html of [recipe, row]) {
         assert.match(html, /data-ingredient-portion="true"/, routePath);
         assert.ok(html.includes(scope), routePath);
-        assert.doesNotMatch(html, /data-portion-carbohydrate=|data-ingredient-carbohydrate=/, routePath);
+        assert.doesNotMatch(html, /data-portion-carbohydrate=/, routePath);
+        for (const ingredient of ingredients) {
+          const basis = ingredient.availableCarbsGPerServing !== undefined ? "available"
+            : ingredient.declaredCarbsGPerServing !== undefined ? "declared" : undefined;
+          if (!basis) continue;
+          assert.ok(html.includes('data-ingredient-carbohydrate="' + basis + '"'), routePath);
+          assert.ok(ingredient.source && html.includes('href="' + ingredient.source + '"'), routePath);
+        }
       }
     }
   }
