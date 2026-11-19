@@ -1,0 +1,3268 @@
+{
+  "schemaVersion": 1,
+  "repository": "ozirix-dev/Reseptit",
+  "publicationRequired": true,
+  "sourceSnapshot": "763fa397484122baa7df83c5ac9a995d025da4f6",
+  "files": [
+    {
+      "path": "aamupalat/bakwan-jagung-kotiversio.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 232262,
+      "sha256": "c5feafcf1b3de37dc1bf478215ac6e40debb3af61fbb44f809dd275bc503bdb3"
+    },
+    {
+      "path": "aamupalat/banh-cuon-porsas-sienet-punnittu.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 146962,
+      "sha256": "5d6643819307ff39ef5f8022b880640378a452d3354832f11dd56f605775f651"
+    },
+    {
+      "path": "aamupalat/banh-xeo-katkaravuilla-punnittu.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 299002,
+      "sha256": "9083039a7d260563cc3bcd3608d87d61ee6b0fc45d689b8c63c36d78393c057f"
+    },
+    {
+      "path": "aamupalat/bataattiletut.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 235524,
+      "sha256": "c5cd9886e7a2373583f4b42cabea7c707adf5068a9b58e00026b6d06e60f14bd"
+    },
+    {
+      "path": "aamupalat/halloumimunakas.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 325316,
+      "sha256": "9ff5021dcc4a39359e0279a6a230848e2fee4e8752ae37ce40a50fca41145cab"
+    },
+    {
+      "path": "aamupalat/hojicha-jogurtti-punnittu.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 118082,
+      "sha256": "b8773ebbe4214fba5e2e0f2a3366738aba1bb441493fddd5545aba16a9880e24"
+    },
+    {
+      "path": "aamupalat/indialainen-poha-maapahkinoilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 246920,
+      "sha256": "05cbd28f5f3655212d61fd16d96da6fa7f37a771dc22b9be7d378850b084d3e9"
+    },
+    {
+      "path": "aamupalat/indonesialainen-bubur-ayam-kanariisipuuro.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 229728,
+      "sha256": "28672715a867d6385e807ebeca8069cc6cde27d8a7768356c5a6ff98a6bbd57a"
+    },
+    {
+      "path": "aamupalat/indonesialainen-bubur-sumsum-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 171006,
+      "sha256": "8eaa29720a67c72b14ca52d3ed1604acd2b79b2f7fed22d43085908fe170abed"
+    },
+    {
+      "path": "aamupalat/indonesialainen-ketoprak-aamiaiskulho.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 214496,
+      "sha256": "cb1f0fcd394e2243d0a0645ad7087467f2228bfe483641e31477cc2a0e91aaaf"
+    },
+    {
+      "path": "aamupalat/indonesialainen-lontong-sayur-aamiaiseksi-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 154528,
+      "sha256": "7f8196b484d26e2da03c1a5e6616c1e2ff8f6a9f98613de1ee5217a99e7d3c80"
+    },
+    {
+      "path": "aamupalat/indonesialainen-nasi-goreng-aamiaisriisi-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 202694,
+      "sha256": "3b812ac9cb003b49abbb1f9a81f594984153101cf41955716f6c7f43ec0e949e"
+    },
+    {
+      "path": "aamupalat/indonesialainen-nasi-uduk-aamiaisella.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 197512,
+      "sha256": "ea9f96a157bdbc147b8516fbeee3bfc9c4c26e39b579fd46c6bb09893f7c4e94"
+    },
+    {
+      "path": "aamupalat/indonesialainen-pisang-goreng-aamiaiseksi.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 218158,
+      "sha256": "96cba9f0de1714b51d781d8102c2e992847f0b8b19e69ae89270da5bb07d6089"
+    },
+    {
+      "path": "aamupalat/indonesialainen-serabi-kookospannukakku.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 203334,
+      "sha256": "4690b50e036ac83af9b654de8ea68bfc6f7fa622d2ff14687545e1d0f1b6b193"
+    },
+    {
+      "path": "aamupalat/indonesialainen-tempeh-munakulho.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 209042,
+      "sha256": "7c5a6de6e752536de50fd6309ea4a9b4856f12ebfbc2f10f4d4d96490759ea56"
+    },
+    {
+      "path": "aamupalat/intialainen-aloo-paratha-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 247340,
+      "sha256": "66eb6ade548a66dc450a774ba97acc4d8c614487443f80db5f4b9a77934a27a8"
+    },
+    {
+      "path": "aamupalat/intialainen-besan-chilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 234096,
+      "sha256": "34a3c7128e08562e9fe87fa4403f76c383e3b438a0bfaeb90874baefa12e990e"
+    },
+    {
+      "path": "aamupalat/intialainen-mannasuurimoupma.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 192062,
+      "sha256": "613fabcf75a7359bcc7b0006fac206cbdced140492f8dc48f500f8e2fa2c3552"
+    },
+    {
+      "path": "aamupalat/intialainen-masala-dosa.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 235928,
+      "sha256": "6822da4b3f363d106f8981756fc1e57aaab4902ca91713714ca08aeee9723257"
+    },
+    {
+      "path": "aamupalat/intialainen-pinaatti-paneer-chilla-kotiversio.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 292702,
+      "sha256": "b2a65267966ea83b0bedba492c1b58d2dcdce07d3b5d23345a6480f44a7447b4"
+    },
+    {
+      "path": "aamupalat/intialainen-rava-uttapam-punnittu.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 227952,
+      "sha256": "d3da3ceccb6dc10eb532eb9dab1865b9187cd152a7ced3b2a21e7e156919a2a0"
+    },
+    {
+      "path": "aamupalat/intialainen-ven-pongal.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 216716,
+      "sha256": "0aeeaf33cd9bc229b9007d69211ea19e484473e52997f9019a7150dee506c9b5"
+    },
+    {
+      "path": "aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 151900,
+      "sha256": "53d2547dea58a3e6d78d21e0d4a00fdf85a59d940e71a7b76dc2bd301d36e148"
+    },
+    {
+      "path": "aamupalat/japanilainen-kabocha-puuro.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 170254,
+      "sha256": "e6c8241d49808540a69d67ef84dca039cb3df2db465397329922a3069f5af3ae"
+    },
+    {
+      "path": "aamupalat/japanilainen-miso-tofu-paksoi-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 164640,
+      "sha256": "46260fe237aa6f7a23d6f7bf5899a999504cbf8a95978fe94510fd3498abed50"
+    },
+    {
+      "path": "aamupalat/japanilainen-natto-riisikulho-kypsa-muna.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 148498,
+      "sha256": "c79f3de7e6f93650623e9c0787cb54763ea5446afe9a5cdd5e72a87d09b0046e"
+    },
+    {
+      "path": "aamupalat/japanilainen-okayu-umeboshipluumulla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 148120,
+      "sha256": "4d6afa336bdeeb510c1aec8649578b0bf14030821ed95e785067e9b180d0ff3f"
+    },
+    {
+      "path": "aamupalat/japanilainen-onigiri-lohella.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 135962,
+      "sha256": "bb2eca50eabd0cf976f1206d7ee11176ce248c27953d7a44357edf4348a9769f"
+    },
+    {
+      "path": "aamupalat/japanilainen-soba-aamiaiskeitto.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 203496,
+      "sha256": "a37bc844aefd1e6d282ff13feffafec948c6b98d82f46cf81462d982705e2820"
+    },
+    {
+      "path": "aamupalat/japanilainen-tamago-kake-gohan.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 192214,
+      "sha256": "5c71935f118cb7ccd0c683740640cdf5c3d8d63e049741656c214a4b9f1771ca"
+    },
+    {
+      "path": "aamupalat/japanilainen-yaki-onigiri-misolla-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 199356,
+      "sha256": "d4189476b661e77745ac1747de736a248f7690ff5d5b2a530ad92d84275cc46a"
+    },
+    {
+      "path": "aamupalat/kaakao-kookos-chia.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 130372,
+      "sha256": "42e6d46d4d7b5af6215fe9c2eeb1bac4a8ded6ad2c59cf925b456c7d101286e2"
+    },
+    {
+      "path": "aamupalat/karibia-callaloo-munakas.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 240308,
+      "sha256": "b672b125a22383701f7ce45054b3c25135832146b5652a343e0f87ea13615020"
+    },
+    {
+      "path": "aamupalat/karibia-jamaikalainen-munakokkeli.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 225584,
+      "sha256": "3b4cb12996da4dddabcf69634cfb7ccfd745c1ea4c281b3ff59d2ed03fd06853"
+    },
+    {
+      "path": "aamupalat/karibia-johnny-cake.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 200438,
+      "sha256": "f566b60c3fd093c0c4a8b4ea7e50942877bcf8836b71d1c31f852a29a4fcabf6"
+    },
+    {
+      "path": "aamupalat/karibia-kookosriisi-pavuilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 225278,
+      "sha256": "9ccf7f67403fd4b97f4058f0b4dfac0dce2ad8e24cb6bb374427f3ce6fe9a3b7"
+    },
+    {
+      "path": "aamupalat/karibia-maissipuuro-kookoksella.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 206472,
+      "sha256": "eb4ebd119d7f3a0374dcf5f6c45500e6ea1f288624a7bc13668ab10495f0ec71"
+    },
+    {
+      "path": "aamupalat/karibia-mango-limejogurtti.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 188648,
+      "sha256": "0c0134981a2f97ee3ecab52e58e988e19e8867acedd93bba5f1079e82a6e2181"
+    },
+    {
+      "path": "aamupalat/kiinalainen-bao-munalla-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 131200,
+      "sha256": "ddb37af79c54694edb17ab2a798b0730fc19965cff8c9fa805067d29f5551db5"
+    },
+    {
+      "path": "aamupalat/kiinalainen-hirssipuuro-taateleilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 223618,
+      "sha256": "63df8bb73ae044519e3902261460b70e1a65f3c5e8fdbcf369fe8a92f2c4c4c1"
+    },
+    {
+      "path": "aamupalat/kiinalainen-jianbing-munaletty.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 190546,
+      "sha256": "e6087b6daf4a149eb812fb37dcf149a865f2ae6fe133a62ce61d6f6c610f58a9"
+    },
+    {
+      "path": "aamupalat/kiinalainen-katkarapu-wontonkeitto.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 187236,
+      "sha256": "8845e04df62a089f876acd84dfb3f091e04c84a8649253ec86592b29ed0afeab"
+    },
+    {
+      "path": "aamupalat/kiinalainen-kevatsipulipannukakku.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 182250,
+      "sha256": "7cce78f1e913b2a0ce2ea524ff573f478d6f3f9301008ac6eaaf510a1742e42e"
+    },
+    {
+      "path": "aamupalat/kiinalainen-musta-seesamipuuro.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 200226,
+      "sha256": "27bda944cc590f8858e411b9960447bbb50bc44554f08723df7f6dfdffd971fe"
+    },
+    {
+      "path": "aamupalat/kiinalainen-riisipuuro-kananmunalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 197472,
+      "sha256": "4e699c40ba50c534fc5555afa609a79e46cc0fa55f3cfccff80e8cb9a68eeefc"
+    },
+    {
+      "path": "aamupalat/kiinalainen-soijamaito-aamiaisella.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 202916,
+      "sha256": "f846afd38440c5b4a08beae7384b8535d98de7adaf3c9aefa3f7649c151d55c1"
+    },
+    {
+      "path": "aamupalat/kiinalainen-teehaudutetut-munat.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 191244,
+      "sha256": "f461f8a0e7921451b898241b5b5066e5788f089b9e7afff519e8b00d48f60e91"
+    },
+    {
+      "path": "aamupalat/kiinalainen-tomaattimunakas-riisilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 211160,
+      "sha256": "4e678fdb84a2ffb6b9d078d591a8b4f47ed1ab11a950b311835832d3456983c5"
+    },
+    {
+      "path": "aamupalat/korealainen-bataatti-riisikulho-punnittu.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 175676,
+      "sha256": "337fcd4ab8458d75968b1285f62ac22e8607e61f60e5c3eeffedb83f26bd0fa8"
+    },
+    {
+      "path": "aamupalat/korealainen-bindaetteok-aamiaiseksi.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 270414,
+      "sha256": "b474e33053a2a20e9650df62f376df46149930793d1dacc67d83538e6209c53f"
+    },
+    {
+      "path": "aamupalat/korealainen-gyeran-mari-kasviksilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 162212,
+      "sha256": "fdb336725f0a6360991413b72281779535137a7a2b5a5b9ddf7a656f594bc393"
+    },
+    {
+      "path": "aamupalat/korealainen-gyeranbap-riisikulho.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 213234,
+      "sha256": "c07c3fa8e06dcea2e83492506f380ffd87798d83bdba7fbb83327357cf421891"
+    },
+    {
+      "path": "aamupalat/korealainen-jumeokbap-merilevalla-gim-porkkana.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 152622,
+      "sha256": "bad1750a261719206fe6d2a9545d0549f6f57fd453d4bfd47ed4098f2a9a06d7"
+    },
+    {
+      "path": "aamupalat/korealainen-kimchi-jeon-aamiaiseksi-kotiversio.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 280138,
+      "sha256": "f68f4b8e51183731e6a3d1adf1b78e1d6464bc937e1c686ee6b9218a567da454"
+    },
+    {
+      "path": "aamupalat/korealainen-kongjuk-soijapapu-riisipuuro.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 160238,
+      "sha256": "19db6892cd0f4daba528c3942495cd90d0e2d48e99961d25b6e314f756cf5fd5"
+    },
+    {
+      "path": "aamupalat/korealainen-mandu-keitto-aamiaiseksi-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 112224,
+      "sha256": "9d75fd5faf0b05e66321819b2637ad835eb4eb9a91ac4e1f356a8737b3a3d27b"
+    },
+    {
+      "path": "aamupalat/korealainen-tofu-kimchi-aamiaiskulho-punnittu.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 280734,
+      "sha256": "0ef27fd363b06d4e6ec2fa8ee8642db613ac9593afb54e45a4f3274d6c596726"
+    },
+    {
+      "path": "aamupalat/korealainen-yachaejuk-kasvisjuk.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 217820,
+      "sha256": "b1c131df0b6f139dc5d78941f83f08b7febb173bcd89fb2775f14d9b0acbbad1"
+    },
+    {
+      "path": "aamupalat/kurkku-oliivi-aamiaiskulho.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 190904,
+      "sha256": "efd26cc244a2b3a7364d99e995cdb26181da648ab997a4a4364f5033da71fff0"
+    },
+    {
+      "path": "aamupalat/lahi-ita-fattet-hummus.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 232212,
+      "sha256": "ccc623bcb1a0ec1bc4bb72fd21798daaae16b04c4652f06e658c1e7677d62b18"
+    },
+    {
+      "path": "aamupalat/lahi-ita-ful-medames.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 254408,
+      "sha256": "b50f132d8ff36f53040ed9fde55f6825e181f00d0611931dc816d36d3312382f"
+    },
+    {
+      "path": "aamupalat/lahi-ita-kikherne-shakshuka.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 255616,
+      "sha256": "7a3fa7ce5a4a04c746ad994db3fa9dc4c955f378372846392f71b3f65fe3e764"
+    },
+    {
+      "path": "aamupalat/lahi-ita-kikhernejauho-yrttilettu.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 239448,
+      "sha256": "95de4bdcadc131142467156faa6c01fa5409c30d95ebe3dde2f40d08d6946dba"
+    },
+    {
+      "path": "aamupalat/lahi-ita-labneh-kulho-zaatarilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 216808,
+      "sha256": "18a3b18884715f5e215fbb48b637cfa5035a832b7c6f9e5aaa3c77d924d99fcc"
+    },
+    {
+      "path": "aamupalat/lahi-ita-manakish-zaatarilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 246838,
+      "sha256": "f821a434580d884b154a521a9db81a3f1cc73712e254b7e61ab01a4b8b376c1a"
+    },
+    {
+      "path": "aamupalat/lahi-ita-menemen-sumakilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 254474,
+      "sha256": "2c6d93cfa90c346df52d076fccc06dc9a1ec326a9609232aa457b2135c165b1d"
+    },
+    {
+      "path": "aamupalat/lahi-ita-pistaasijogurtti.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 221744,
+      "sha256": "f7035d238ee871567e4575140f8ddac47601dbd1d4c98a2370d505e912df4ad0"
+    },
+    {
+      "path": "aamupalat/lahi-ita-taatelipuuro-tahinilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 213192,
+      "sha256": "aefe0dce41264ba077a37b51e602a5a8b0b436ab3fbbf0f93da41b2d2c7aaec4"
+    },
+    {
+      "path": "aamupalat/lahi-ita-zaatar-munat-punnittu.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 291492,
+      "sha256": "1774355a00e4d7382bdbde9d8ea304b842d6f869a5812827fb1408772563fba6"
+    },
+    {
+      "path": "aamupalat/lammin-chia-puuro-rouva-keto.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 149602,
+      "sha256": "bcd82aa82bad575e14368e705bcf48645c468debdaf10ad1a5434a221db7e8a7"
+    },
+    {
+      "path": "aamupalat/makea-banaanimunakas.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 149756,
+      "sha256": "e619f7585cf9b1ac9250c2c214fe6c7a1d2b9fd0324d1e509182f1d82ef7e57b"
+    },
+    {
+      "path": "aamupalat/malesialainen-apam-balik.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 206474,
+      "sha256": "8c410e625a148efc8d505ba62263d3005cfcc182a92f0afe7a575189f7a1d7aa"
+    },
+    {
+      "path": "aamupalat/malesialainen-congee-inkivaarilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 195310,
+      "sha256": "131e1937176c91ebcd7331617f46248e672d449bfcb96bbf582be0ab065d7913"
+    },
+    {
+      "path": "aamupalat/malesialainen-kaya-paahtoleipa.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 154334,
+      "sha256": "315d8d09e29baf0fea846385c9168ed42b02f510ba8f576a729bb58d7c37fb5a"
+    },
+    {
+      "path": "aamupalat/malesialainen-kookos-banaanikulho.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 194332,
+      "sha256": "1076cd1a4476dd5e95d0f9dd71178a72d3dc12238d21184db33b33203f7b47b2"
+    },
+    {
+      "path": "aamupalat/malesialainen-laksa-lemak-aamiaiseksi-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 249098,
+      "sha256": "9408bee0026f20984e6f115a152cddb03286a8d2d384e34b8aa7a1685f08e014"
+    },
+    {
+      "path": "aamupalat/malesialainen-mee-goreng-aamunuudeleilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 190848,
+      "sha256": "e504ff465bc601219b31e9b2f34e306eb99b31d8d6989143e93fce506eb0fd11"
+    },
+    {
+      "path": "aamupalat/malesialainen-nasi-lemak-aamiaisella.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 200880,
+      "sha256": "73e8ed0030c5e3a909b4a1c67667e03f4caf38a629db705c45475a5b6e0ce001"
+    },
+    {
+      "path": "aamupalat/malesialainen-roti-canai-dhalilla-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 222762,
+      "sha256": "462ba0884c9844c27aad08918c2ab13b35f0c98b37a2a6c530771a28f70c2a0b"
+    },
+    {
+      "path": "aamupalat/marjainen-chiavanukas.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 100222,
+      "sha256": "6c7f21d7c6b856cf5230fc4ed5bde39fac201c8cccb33ef5271904e8b9f72161"
+    },
+    {
+      "path": "aamupalat/meksikolainen-aamiais-tacot-mustapavuilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 191214,
+      "sha256": "6401e54c066e96d5564eb24455b7204c831a1e664a14849bd001024ce1a1c515"
+    },
+    {
+      "path": "aamupalat/meksikolainen-atole-maissipuuro.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 221488,
+      "sha256": "6a751128a306980353009019dbcebcc37d489398fe3a94dd8314bfb1d10909f3"
+    },
+    {
+      "path": "aamupalat/meksikolainen-chilaquiles-verdes-kotiversio.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 322064,
+      "sha256": "67bac2e9c8bc072556bef03a6b25d8565aa395702b2ad7b30a2f67765a4516cf"
+    },
+    {
+      "path": "aamupalat/meksikolainen-huevos-a-la-mexicana.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 219226,
+      "sha256": "5f8a4c07d5f48023b6fa7bf489500a0a381bf5fc3e5472a94919ee22b2116b47"
+    },
+    {
+      "path": "aamupalat/meksikolainen-huevos-divorciados.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 216492,
+      "sha256": "1d55ba8b71cf83d6b8e48d214c7529b16ef341f41edc3e157cee8644957ce6e6"
+    },
+    {
+      "path": "aamupalat/meksikolainen-kurpitsapuuro-piloncillolla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 237702,
+      "sha256": "3f62ef5e6d276b66206717ce62cab5e7da609f184543a6d8dd26128b442712d8"
+    },
+    {
+      "path": "aamupalat/meksikolainen-molletes-pico-de-gallolla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 188856,
+      "sha256": "eb644d967c558c9bd7ab4a2329b58ab71732a38e3166d20cffb68aa44d5ed25a"
+    },
+    {
+      "path": "aamupalat/meksikolainen-munakokkeli-pico-de-gallolla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 191762,
+      "sha256": "7eaea57f13751fde08ed968822d3db75ffcb6fb2f844dfb03b009ee38788e011"
+    },
+    {
+      "path": "aamupalat/meksikolainen-paputostada-aamupalaksi-kotiversio.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 254286,
+      "sha256": "c984116a74d6aa5bf4f75cb41703bf7d64e59d1f95a95fd41e7d91993ea58cb7"
+    },
+    {
+      "path": "aamupalat/meksikolainen-quesadilla-sienilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 190260,
+      "sha256": "4e4a28dddcd24028d62ba46389c1d6abd563d1e8c777a25d05119a3d93422d06"
+    },
+    {
+      "path": "aamupalat/munakasmuffinit.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 200652,
+      "sha256": "aaee9e0a9065a18fe0634b0f61dfffc4642fa3e0a79a66cdca1e2c287d5375e9"
+    },
+    {
+      "path": "aamupalat/munakasrulla-pinaatti-tuorejuustolla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 204506,
+      "sha256": "bbf4d6445ac62c862064c3ff4ffc85a37d30c3b3c92abeae45e9b9c89fbdc2c1"
+    },
+    {
+      "path": "aamupalat/munakokkeli.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 197944,
+      "sha256": "0cbdae9544f52c90f8c901cdd59d72c84b37f24dc5410b469b7ad5cd07656b8f"
+    },
+    {
+      "path": "aamupalat/munatacot-huevos-rancheros.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 227352,
+      "sha256": "8b142ff20609212c9bf8b0eba8d6ab435eb704e68a8f3468978b5cc459f6efea"
+    },
+    {
+      "path": "aamupalat/mustaherukkavispipuuro.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 126804,
+      "sha256": "7d32cfa03edf5728ff8bd7fd86931573a683674eff04c2d1bf54c88f4bbcbce4"
+    },
+    {
+      "path": "aamupalat/paahdettu-aamiaismunakoiso.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 218128,
+      "sha256": "a6ab3ba12f8e397a349c6ca9a730d895d83f925638f617c3830d8352bb604aab"
+    },
+    {
+      "path": "aamupalat/papaija-kookospuuro-punnittu.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 162756,
+      "sha256": "078f67bc80dc7853bea30671273e4fee75a698417538bd45dce9adaf6844f949"
+    },
+    {
+      "path": "aamupalat/paprikauunimunakkaat.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 227550,
+      "sha256": "95831379000febaca47367b9b178c5e0d113605dfa769118c19f4881f3d46bba"
+    },
+    {
+      "path": "aamupalat/pellava-puuro-pahkinoilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 181998,
+      "sha256": "c6efb996dd72b93501fbb8f6e22e16094c825feb0a43752029dfc2165a8202e7"
+    },
+    {
+      "path": "aamupalat/pinaatti-raejuustopaistos.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 212542,
+      "sha256": "204f6b3b01a03d95ff72ab36ad11d47d56a23be1c44b6720013c8abbc6aca29e"
+    },
+    {
+      "path": "aamupalat/piparkakkulatte-hunajalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 145806,
+      "sha256": "a41523d2353499e7136df1ae012011e40bdbdd225cf623965277ecf3a2f6e056"
+    },
+    {
+      "path": "aamupalat/pohjoisafrikkalainen-baghrir-hunajalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 338940,
+      "sha256": "c3b8bd9668bf9dae5779c2871cadb4c8723c513248da374b6e648cc4fff371ac"
+    },
+    {
+      "path": "aamupalat/pohjoisafrikkalainen-bissara.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 244202,
+      "sha256": "8aae14115f670afbbe962f3414e2582efb06a29d249c94a27c1c68abc6855f10"
+    },
+    {
+      "path": "aamupalat/pohjoisafrikkalainen-harcha-juustolla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 211106,
+      "sha256": "986d20c3455a1b56dcf377001aee027c7c306fa3df441d73c5aba4867e7dba4e"
+    },
+    {
+      "path": "aamupalat/pohjoisafrikkalainen-harissa-shakshuka.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 314838,
+      "sha256": "50978bcb666f4eea23faef2039d1556a9dab6660fdc167675e7651bcd327e69a"
+    },
+    {
+      "path": "aamupalat/pohjoisafrikkalainen-kuskus-aamiaiskulho.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 211888,
+      "sha256": "1fc369dfc75d624aa4ad058970c5126b0c4a46dfbc19bed7710ac07b9db44247"
+    },
+    {
+      "path": "aamupalat/pohjoisafrikkalainen-lablabi.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 229008,
+      "sha256": "b0c8a36d2d7efd2a2f9177c3ca89c2e7c23a9b673cca8eda5b94c1e3227c8157"
+    },
+    {
+      "path": "aamupalat/pohjoisafrikkalainen-maakouda-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 265910,
+      "sha256": "4243207b289aada68575beb7ad6ea29ff3f1a2a6d8645c04ec6dd03363a72c68"
+    },
+    {
+      "path": "aamupalat/pohjoisafrikkalainen-minttutee-kaurapuuro.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 237422,
+      "sha256": "23777d03a4db60a6fd94506092d87f892889f41b8506cd5d250c7ce80c57bda5"
+    },
+    {
+      "path": "aamupalat/pohjoisafrikkalainen-msemen-hunajalla-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 265966,
+      "sha256": "b8116522b14136f4d6690c12da8bdf34b45483d2b00e236b0502e78ccb5fab4b"
+    },
+    {
+      "path": "aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 225534,
+      "sha256": "eea09b2bdd214ced2573475731160e29515edd45db1bef5083a06c8169adafbf"
+    },
+    {
+      "path": "aamupalat/raejuusto-pesto-kasviskulho.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 188028,
+      "sha256": "944a8dd998b42e564e655d732d4410eadddf0517ced46529499d7e4d28e3318b"
+    },
+    {
+      "path": "aamupalat/rahka-marjakerroskulho-punnittu.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 135046,
+      "sha256": "a6541f10d6e0fc59988bf694bc3f87cacda21fde2f4d5a690f010134586ae6ef"
+    },
+    {
+      "path": "aamupalat/rasvakaakao-rouva-keto.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 113844,
+      "sha256": "0791b7a93e4ccf8d63aa32f0a91ec5395ac326161da2204b743b0f1830f5aaba"
+    },
+    {
+      "path": "aamupalat/roti-jala-currykanalla-punnittu.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 220558,
+      "sha256": "89f04af7249fa8a5cb82c363af2527be3b555cafce461d09fe44abe99052cec7"
+    },
+    {
+      "path": "aamupalat/ruis-puolukkapuuro.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 245126,
+      "sha256": "c79e5dd9ce16129fd7f727ab7847810e40509723f4514967c3c6afca73ca0707"
+    },
+    {
+      "path": "aamupalat/savulohi-avokadokulho.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 203430,
+      "sha256": "6c3960eae7425d5ff7ceb06a74901075871ac4e6ecf7184e3f52cedb2e4e1ddb"
+    },
+    {
+      "path": "aamupalat/shakshuka.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 316548,
+      "sha256": "961ec6d696ae1dc4603a8252a0e42ad54ae110faa8ee3732f66cef1f00ea3241"
+    },
+    {
+      "path": "aamupalat/siemengranola-jogurtilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 168000,
+      "sha256": "7f0e8173dcf23b0bc076984c9fa47f68b943f8755a5ff35378c1c9362f3f847a"
+    },
+    {
+      "path": "aamupalat/thai-jok-kanalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 266334,
+      "sha256": "8ff72856ebad730f10d121c9c7e1c9fecc8601113bdd322000b5f608e7348b92"
+    },
+    {
+      "path": "aamupalat/thai-kai-jiao-yrteilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 265264,
+      "sha256": "8b90bd00b40867d0f770c070ccad447e0f7aee285b4d52a15c9f0ea42dcaa68c"
+    },
+    {
+      "path": "aamupalat/thai-kananmunat-kookoscurryssa.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 236130,
+      "sha256": "99a592eca0023ac1bf89ba985b416cb26edc42f2d1a959f9214153e220e60e3e"
+    },
+    {
+      "path": "aamupalat/thai-khao-tom-katkaravuilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 205194,
+      "sha256": "fcd0888d04c90ab7697065f7f16ef7a9b7637e085fbdf91d6f61cb6c1b20cbd0"
+    },
+    {
+      "path": "aamupalat/thai-kookosriisi-mangolla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 174388,
+      "sha256": "48fe3026dce83c0fea9215d219d7369f605fd28349a888662d9efb4f39ba47fe"
+    },
+    {
+      "path": "aamupalat/thai-maissifritterit.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 201186,
+      "sha256": "a87ce5a7e5304763af081f3a84b7950c7aa4aa7cd0d6f632bc5de1e10f4014aa"
+    },
+    {
+      "path": "aamupalat/thai-papaijajogurtti.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 179356,
+      "sha256": "c8938eec232ac62f3a343e08211365c31d962b1a0846b2183f336d6e97acf2b3"
+    },
+    {
+      "path": "aamupalat/thai-porsasjok.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 182450,
+      "sha256": "48a51ff7ff61871cee6c0d9929bbcbfc96d4367fffcd57ae310eecb4966393a6"
+    },
+    {
+      "path": "aamupalat/thai-riisinuudelikeitto-aamuksi.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 191898,
+      "sha256": "bcdc3febd299e67d87c0f99e003bcd28b1256fae0991c2ea7ffb11387113e728"
+    },
+    {
+      "path": "aamupalat/thai-roti-munalla-banaanilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 256640,
+      "sha256": "c059b295c976c2369dd20f812fa701482126ea7f78e17b4a30ab431f75e0ba03"
+    },
+    {
+      "path": "aamupalat/tonnikalamunakkaat-uunissa.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 214918,
+      "sha256": "64015e51ddb40bee8e41f8339104499041f8337529f99a793649d7485e0b6ff7"
+    },
+    {
+      "path": "aamupalat/uunimuna-avokadot.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 237524,
+      "sha256": "d6bb3022da262f7b0e861fd53ee3abef7a2a3e732b09719da2f409e92c8c24b8"
+    },
+    {
+      "path": "aamupalat/uunimunat-pinaatilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 204474,
+      "sha256": "7dc236ffe9ece48ae176211f64eb4d9cfc48dc36b922d95dc7784e756c0ffd71"
+    },
+    {
+      "path": "aamupalat/uuniriisipuuro.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 156868,
+      "sha256": "bc1ca4b9f75e0d213cb3fc570d57b9d454ae6286e54c58349c494d1df69e0e0f"
+    },
+    {
+      "path": "aamupalat/valimerellinen-appelsiini-aamiaiskakku-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 142278,
+      "sha256": "1d52634fbb8be8459c3b5f7582d0a80430a0ea1183e69f98d26ca966a4ab8541"
+    },
+    {
+      "path": "aamupalat/valimerellinen-farinata-aamupalaksi.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 234454,
+      "sha256": "0c91caa391b644f35b305a2e1d7bde5e9d895a21b1c2f54a8cfc3378cf757e76"
+    },
+    {
+      "path": "aamupalat/valimerellinen-halloumi-tomaattileipa.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 229326,
+      "sha256": "3e5fd8d047edf493417d30a326f501ed89579736b195f578246c2748ae8aa12d"
+    },
+    {
+      "path": "aamupalat/valimerellinen-jogurttikulho-hunajalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 188564,
+      "sha256": "91aef6fcaac358ef1ec5c571e85f957d749ed5a967a793bc9339b4b776750827"
+    },
+    {
+      "path": "aamupalat/valimerellinen-kikherne-yrttiaamiainen-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 254882,
+      "sha256": "0ec8bf6e6fc21eb1a09db2b1104759d02a84149a26e30297b9aeb86bc123f4c3"
+    },
+    {
+      "path": "aamupalat/valimerellinen-menemen-fetalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 240788,
+      "sha256": "5316c89a6c7274dbfe49936427de659cb17f5205f0915279dd57d3d2bd905034"
+    },
+    {
+      "path": "aamupalat/valimerellinen-pinaatti-fetashakshuka.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 255626,
+      "sha256": "8b5cb1dcbc204c4b3b2eac46bcb724fd06cfaa994a7fcfac676c7f8630fb0f5e"
+    },
+    {
+      "path": "aamupalat/valimerellinen-ricotta-persikkakulho.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 227732,
+      "sha256": "40b15804d2e63084c1f23f3e9520d421bb04687f1d77b4031f1979a3b7c982fa"
+    },
+    {
+      "path": "aamupalat/valimerellinen-tahinipuuro.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 218130,
+      "sha256": "654af1d6a8a5325e19c4940994f6307479f4b84d3412cd5b72344c12a072f61d"
+    },
+    {
+      "path": "aamupalat/valimerellinen-tortilla-espanola-aamupalaksi.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 226778,
+      "sha256": "1eeeea10f47eebb6af98316c72ecdb11df4f0dc94afc1a181e14ae5924b560e9"
+    },
+    {
+      "path": "aamupalat/vietnamilainen-banh-bao-kananmunalla-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 168532,
+      "sha256": "98dc0e55e4a6fc01afcdb860a0955a1e15111cfcf70859d815f73145052a3d61"
+    },
+    {
+      "path": "aamupalat/vietnamilainen-banh-mi-munalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 197614,
+      "sha256": "fd1c1b1b2382a72d711f6d6ec60975f9a7d8317d19874db54165928279d32507"
+    },
+    {
+      "path": "aamupalat/vietnamilainen-chao-ga-kanapuuro.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 186500,
+      "sha256": "98dde705745082c01897ee20911049f119ee7654d37983334e444cf369ce2015"
+    },
+    {
+      "path": "aamupalat/vietnamilainen-hu-tieu-aamiaiskeitto.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 189214,
+      "sha256": "10cbdd3a6dfb3516726b8f050ed0f29c0511181366fef128900805670260a821"
+    },
+    {
+      "path": "aamupalat/vietnamilainen-kahvijogurtti-banaanilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 180586,
+      "sha256": "7fa85585c3f753a87b40fb1cf6e37d04e5901e58ccc290474d3eb7c56f1b6568"
+    },
+    {
+      "path": "aamupalat/vietnamilainen-pho-ga-aamuksi.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 195494,
+      "sha256": "6ab0fc3d2fe7c34336de51a9a93db181de5735539fc2cfdaa21925e8719d566c"
+    },
+    {
+      "path": "aamupalat/yrttituorejuusto-kinkkurullat.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 131192,
+      "sha256": "d7d1ce92f1e20be1aedd2baccd9d324af4e8e56a1376bbafef324cde8510b2bd"
+    },
+    {
+      "path": "alkuruoat/goi-cuon.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 175516,
+      "sha256": "bc1a98d52f39ef73d72a1ae8d279ca565313a06842341c1330f7d23935a10585"
+    },
+    {
+      "path": "alkuruoat/herne-auringonkukkalevite.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 174942,
+      "sha256": "05f6619ed83057ebf8396972e5f26f8137c9196f0f1c50766ed422ac2cd6f05a"
+    },
+    {
+      "path": "alkuruoat/kaali-omenasalaatti.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 235550,
+      "sha256": "36e2d19c15c782adb41b6a4dad74eec33acc30aeab6afc475d4bffd68ffe9dc4"
+    },
+    {
+      "path": "alkuruoat/kylma-oliivioljylevite.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 188812,
+      "sha256": "051a1526f0f75e5b1cf50ec913c19ca73401bec23b9fb9a8df0bd718768400a6"
+    },
+    {
+      "path": "alkuruoat/paahtopaistileipa-piparjuurikastikkeella.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 176868,
+      "sha256": "0070ab867efbfd667d37b52eca27dd0d701b2eceeaf0cc72babcee91d3de56a3"
+    },
+    {
+      "path": "alkuruoat/paahtopaistileivat-kauralesesampyloilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 168424,
+      "sha256": "550c805befcdf8614b31c95ea57aa43aa04f4cb5c4aaea7b96725ff71d609ccc"
+    },
+    {
+      "path": "alkuruoat/palsternakkasosekeitto.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 233198,
+      "sha256": "7a72718eaf4b6bbdeda197cbd92b951c144e018997b314324a82ce1d8d58e4c6"
+    },
+    {
+      "path": "alkuruoat/parmesaani-lyttyperunat.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 324260,
+      "sha256": "c5a44a796aaec1857df1b4c6f5111e8f5fe725e9b6e44bd25b738006b55a85f0"
+    },
+    {
+      "path": "alkuruoat/taateliketsuppi.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 169698,
+      "sha256": "0896388214a6200dd544e414bcd8bf933bf6206f2c94477cd333f52c8989de2f"
+    },
+    {
+      "path": "alkuruoat/timjami-uunijuurekset.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 317538,
+      "sha256": "918da99c3a52682db4acae3a526d634dd7c61b27ce9304c3168d9bb49179ae65"
+    },
+    {
+      "path": "alkuruoat/tomaatti-inkivaarijuoma.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 171660,
+      "sha256": "7e33ea2e95d50417d123fb161303000251573a9bfecc3ee7ceb8c410293321db"
+    },
+    {
+      "path": "jalkiruoat/avokado-banaanijaatelo.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 115728,
+      "sha256": "f9a71338be7a85ae2d7d013f6455cb7f8ed25250d1dcba818a6a0dbd7f4fa13a"
+    },
+    {
+      "path": "jalkiruoat/gluteeniton-perunajauhokakkupohja.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 220580,
+      "sha256": "a0b3f90137b2bf317105d2436bdbc2c57f26ecf51dcd60a6aaaa5a11ffa72dab"
+    },
+    {
+      "path": "jalkiruoat/gluteeniton-uunipannukakku.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 190758,
+      "sha256": "95c83a8692191353cd065e6da41f2270303db5bdad6046521fdf389c8b64b05d"
+    },
+    {
+      "path": "jalkiruoat/kauravohvelit.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 270656,
+      "sha256": "dc31b45c80b8f5a399de79c5c7a838208484c2ad28bdf392dbdce2b67f4b53e1"
+    },
+    {
+      "path": "jalkiruoat/keto-mutakakku.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 189572,
+      "sha256": "bea89b16b109cdc5fd798f3e0a0a9c030e7e1524624d3d359d8cd105f278f0c9"
+    },
+    {
+      "path": "jalkiruoat/keto-pannukakku.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 195580,
+      "sha256": "7be3ec5f9320a31421bae5735fd816d3f721755196ae06055943202d6d4f5ac5"
+    },
+    {
+      "path": "jalkiruoat/keto-suklaakeksit.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 231178,
+      "sha256": "d16c745dd43bc81a400969f5db145c0fe2c6b29783fee7674237c92472bcf7a0"
+    },
+    {
+      "path": "jalkiruoat/marjakiisseli-vaniljakastikkeella.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 202224,
+      "sha256": "967169a9854fe9513b9b2be0e083d0e6cfbfd1fa20d970f92f7eb7d3c5842b36"
+    },
+    {
+      "path": "jalkiruoat/meheva-suklaakakku.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 146740,
+      "sha256": "a12a506da1c9907b620e18cab54b2816ea02a96e4b3c690926c76bd4f1d3bdf2"
+    },
+    {
+      "path": "jalkiruoat/mustikka-jogurttijaatelo.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 190614,
+      "sha256": "5159dc1d4d6290a29022a0848e7fcc8e5b33e593f233733946543b4641108108"
+    },
+    {
+      "path": "jalkiruoat/omena-kaurapaistos.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 288606,
+      "sha256": "50da64815ace445467c967b1f6446d7c47e52321fe880d6dd1ef07764cda6d8b"
+    },
+    {
+      "path": "jalkiruoat/omenavaahtokarkit.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 114152,
+      "sha256": "9f0c20b93d8dc48378f689b4dfc0f2f7d7fa9dc3f59a87a0d6e7d69d678700d4"
+    },
+    {
+      "path": "jalkiruoat/pannacotta-marjakastikkeella.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 102878,
+      "sha256": "cf4da8fb088821968e4b2639acc2229d857b300ff418f8a7d26cd04535d21383"
+    },
+    {
+      "path": "jalkiruoat/perinteinen-mansikkataytekakku-sienikakkupohjalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 260772,
+      "sha256": "911ac4764217f5cbe1b4c1a17427897adc49b09b3806b7f777f444f01f569120"
+    },
+    {
+      "path": "jalkiruoat/puolukkakiisseli.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 166590,
+      "sha256": "182315271a9b295a3f190b7eeab1b02bc83795d66d28c366757ddef2a7d8bbcb"
+    },
+    {
+      "path": "jalkiruoat/rahkapiirakka-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 113184,
+      "sha256": "b06aeeb96574c0881ae23cb4ef6e8ff93190cb6622330b2b800eb990ae8e6f3a"
+    },
+    {
+      "path": "jalkiruoat/raparperikiisseli.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 162504,
+      "sha256": "4efd4fa1a98f524550d5db2d2ebce9981a77039be937c1f4bd0232419f4c670d"
+    },
+    {
+      "path": "jalkiruoat/rapeat-kauralastut.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 240058,
+      "sha256": "03660a84e02750cda88889141d80e3efb7a8d2de59e5dc813ce334f0f7d3e682"
+    },
+    {
+      "path": "jalkiruoat/sienikakkupohja.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 282676,
+      "sha256": "96b2375148464085d0c97012ef666fa15ac4d8562318fdd6a4156f252d9f0858"
+    },
+    {
+      "path": "jalkiruoat/suklaa-raejuustokakku.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 211370,
+      "sha256": "288dad9afa2a892ffe88a5fc3fe6fe145310f53cc8ee4d6a6055b223430e8047"
+    },
+    {
+      "path": "jalkiruoat/vhh-brita-kakku.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 185432,
+      "sha256": "bd24977551fd6e486495c9b3fd27d354f252dd6ed9af69a342bea57938597e15"
+    },
+    {
+      "path": "jalkiruoat/vhh-juustokakku.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 172404,
+      "sha256": "f22288911e8e56774d84130ef22d9f06040b4ae0b7a4d6779ba3e800584a63a3"
+    },
+    {
+      "path": "jalkiruoat/vhh-korvapuustit.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 229630,
+      "sha256": "77c1cc7fb201e9b0dc3f96af02db7ce82fe85da8f7c83580687cc051e8aa5bf3"
+    },
+    {
+      "path": "jalkiruoat/vhh-letut.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 155154,
+      "sha256": "df55c9fc5a5add672307ba3db31b8345fca0b9e3edb1d2c24ae6849032df0e58"
+    },
+    {
+      "path": "jalkiruoat/vhh-mansikkakakku.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 200700,
+      "sha256": "2683559044ea02370a47e688b5e5e27ab93ab6df38b89f9dead859a38d82cef7"
+    },
+    {
+      "path": "jalkiruoat/vhh-mokkapalat.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 225430,
+      "sha256": "4a797bb03d6d3cdaf65ea2112a4c0201d3c108e947f2d9d233edba2ec83b1e9f"
+    },
+    {
+      "path": "jalkiruoat/vhh-mustikkapiirakka.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 202822,
+      "sha256": "ae0872b35b54d76002c2ae7d8363135b4e631034d57873a474937a96dec4fa29"
+    },
+    {
+      "path": "jalkiruoat/vhh-omenapiirakka.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 208626,
+      "sha256": "ae3e4982843310a0e1d5f616c55cecca2697896f21ad9b1b9f971f2f2f0b6f17"
+    },
+    {
+      "path": "jalkiruoat/vhh-raparperipiirakka.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 242572,
+      "sha256": "583789a748e3dde215afdfe20cf168426e1ab56c3b16cc1d5d0949528e4d707b"
+    },
+    {
+      "path": "leivonnaiset/avokado-perunasampylat-pellilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 247794,
+      "sha256": "982ef4c0b2f64de44cf2c0eb6a1aaac1b0ee761d479888daeb1100d55d137440"
+    },
+    {
+      "path": "leivonnaiset/avokado-perunasampylat.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 246334,
+      "sha256": "7115f3e5324a0e2fa541f5457971172b88cd1dc9b62f107221848eacfcce2980"
+    },
+    {
+      "path": "leivonnaiset/bataatti-banaanileipa.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 255852,
+      "sha256": "ac58279b2af9d34bf8be69c9005b25219cae4888de6326d4deed0f2276933832"
+    },
+    {
+      "path": "leivonnaiset/bataatti-mustikkakakku.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 230450,
+      "sha256": "b7824d018bd77cf9c280b32bd05abf7cdab3be41ea4214d300561944a961de8d"
+    },
+    {
+      "path": "leivonnaiset/bataattibrowniet.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 145362,
+      "sha256": "6115d5169a4cd6b3da780e77ce9b833408ed73cb6e1a58e87c88a4b3a3ab1e08"
+    },
+    {
+      "path": "leivonnaiset/briossisampylat-joshua-weissman.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 179194,
+      "sha256": "565d7614639686e57169501139a62feff28b16f704c05d11ee87a0122d3ad3cd"
+    },
+    {
+      "path": "leivonnaiset/gluteeniton-durrapizzapohja.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 312794,
+      "sha256": "088332a10415b6d859c687a92fe431c6c2e24b9a046e0e5fce627d70590df865"
+    },
+    {
+      "path": "leivonnaiset/gluteeniton-siemenvuokaleipa.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 234140,
+      "sha256": "48c83017f17119276a76f183dcc0426c6b8250b8d52a8964638e50e8cd516ab9"
+    },
+    {
+      "path": "leivonnaiset/gluteenittomat-kauralesesampylat.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 271562,
+      "sha256": "44ac18091f2c50e04cad02be649d98de0e5c702f9d15cc1e3f6121c0b10a0ab3"
+    },
+    {
+      "path": "leivonnaiset/hampurilaissampylat-moomie.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 191162,
+      "sha256": "e892db247a62773495f226157048131c559741267bb39343069f61cc7c385714"
+    },
+    {
+      "path": "leivonnaiset/karjalanpiirakat-riisipuurolla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 113990,
+      "sha256": "dc2387327e1c9b8ed95e0d57ef44cba84f8c29cfc8aac04237da915ea8a6b574"
+    },
+    {
+      "path": "leivonnaiset/keto-joulutortut.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 183708,
+      "sha256": "3c91c7e5eba5e4e18ce4b9055e3329584d0541b63d34a077d37ec71f5e39c898"
+    },
+    {
+      "path": "leivonnaiset/keto-kauralesesampylat.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 336612,
+      "sha256": "cf224e76562653e1f5dc782f4e76b60e09247d9dd89d5c436fb1648d10df33ab"
+    },
+    {
+      "path": "leivonnaiset/keto-korvapuustit.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 229792,
+      "sha256": "c16fbeae459f853e3da10790a9dd5e9ab53a1f6b488f88a00ce3f7176f910c4d"
+    },
+    {
+      "path": "leivonnaiset/kevyet-briossisampylat-clever-carrot.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 126778,
+      "sha256": "a73464aa9a34772284166afc987e95643342073e38afa2557a876d8b6234e4c4"
+    },
+    {
+      "path": "leivonnaiset/perunarieskat-ohrajauhoilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 384722,
+      "sha256": "d7a7200125a40c4396bb46130bb4e04af3f7730d049d7501aef5c2155b28a612"
+    },
+    {
+      "path": "leivonnaiset/punajuuri-suklaakakku.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 253618,
+      "sha256": "f20302fa8cf312bd2d1c7ba75de9aec8873e74e7fe76ed48c0623c2cbfd7f4a5"
+    },
+    {
+      "path": "leivonnaiset/raejuustobagelit-ilman-kohotusta.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 63134,
+      "sha256": "c3a6a738a323c5fc7d96fa276372e35f48eb62fa88f51d215c726fbca55d8636"
+    },
+    {
+      "path": "leivonnaiset/vhh-lihapiirakka.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 227214,
+      "sha256": "a044cc45d5cd7e9571e30d4510a2df779ccce9844972d7d9ae953b0a49fc2511"
+    },
+    {
+      "path": "leivonnaiset/vhh-runebergintortut.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 168360,
+      "sha256": "757289da8035ebc54d20c05931a74862836a7a849db18f5a9576234e4073d0a7"
+    },
+    {
+      "path": "munakoiso-kesakurpitsalasagne.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 374076,
+      "sha256": "0b2d2cafefe3dd7adeada52fc80234fe3c1150f30f3f00dc994480682f44f375"
+    },
+    {
+      "path": "paaruoat/aloo-paratha.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 226796,
+      "sha256": "65114df26c5925feeb8f210c4cd738f7849f2b4d4657c46909c0a8e10c2620a0"
+    },
+    {
+      "path": "paaruoat/amritsari-kala.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 262630,
+      "sha256": "243949bdfd1170b84e4951e78632a824a0c8a7bb3c7f3404fc9fc38c1d7e3e47"
+    },
+    {
+      "path": "paaruoat/baozi.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 127320,
+      "sha256": "37f220534e9fbad0d08661748a89fb59c39fb385c0ff8e30cd07f00a121935c9"
+    },
+    {
+      "path": "paaruoat/bibimbap.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 176222,
+      "sha256": "a8cb68b52a55fd323bfcdbbc0a0d9058a02b4ea1edafe10adcf8e01b3d95b418"
+    },
+    {
+      "path": "paaruoat/bouillabaisse.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 249036,
+      "sha256": "99a61f4bc498cd6a0d7459c3838cf336f590046621d62c8f6bc069c94df2b968"
+    },
+    {
+      "path": "paaruoat/broileri-kukkakaaligratiini.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 204976,
+      "sha256": "3bd650fe39fd2f20d1e151932cc4b5a14c173042da7a989b688e829569a894f7"
+    },
+    {
+      "path": "paaruoat/bulgogi.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 195456,
+      "sha256": "5140ae67d07bd65c45e2367faf998423573fee1863d2559bc7e7a30fa28996a2"
+    },
+    {
+      "path": "paaruoat/bun-cha-hanoi.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 164610,
+      "sha256": "4430972cf1f56e8975a004fe85b78c1a72bd656bc954b55fd72c2a1548a2e6ff"
+    },
+    {
+      "path": "paaruoat/butter-chicken.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 244582,
+      "sha256": "f8777d4b62cef7a75c719e74f6c12f1d207198a1822d321bd631dc02f313dca1"
+    },
+    {
+      "path": "paaruoat/caponata.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 266490,
+      "sha256": "b14f6fbbbc9fcbeee10fcf8f8ca2917225ccdbc0ae7c91134431b7291829eb01"
+    },
+    {
+      "path": "paaruoat/carnitas-salaattitacot-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 325894,
+      "sha256": "945fb87390dc1b55c3f4761b39e1184d6040be063032fe0684eded8caeb32b5e"
+    },
+    {
+      "path": "paaruoat/carnitas-salaattitacot.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 189858,
+      "sha256": "ea6c5c7944184521592942ce8eb826227b228efa24c9f4e5703b3d5d55cfbada"
+    },
+    {
+      "path": "paaruoat/char-siu.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 222924,
+      "sha256": "64d0e16f00edfff57928e267b95b47e8e055ab335878cf9d36986f12de112e95"
+    },
+    {
+      "path": "paaruoat/chettinad-kana.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 266490,
+      "sha256": "de52d2de1d66370d80a494351436c605bf56a11f302ff93bd9d50d4592118f97"
+    },
+    {
+      "path": "paaruoat/chili-con-carne-kukkakaaliriisi.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 202148,
+      "sha256": "aecb98f5e6429f9f92d91c316652b36fb901443732c460fa8239e8bfa8c4b100"
+    },
+    {
+      "path": "paaruoat/chole-bhature.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 257444,
+      "sha256": "3a1c046b75683baa163a468b5fdbc9925c1e1d601cc653069d8a642b556ca812"
+    },
+    {
+      "path": "paaruoat/chow-mein.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 218080,
+      "sha256": "82de7a8af9babc6a88d5970985ae3b5397d7f2fb0f31e86307ebd7c1c9ecd18c"
+    },
+    {
+      "path": "paaruoat/congee-riisipuuro.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 165630,
+      "sha256": "95a05552e7fd2fed3f4e8e04463f0ec327afe460c512f23f725e6e14b9770ea9"
+    },
+    {
+      "path": "paaruoat/dal-makhani.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 245360,
+      "sha256": "884d75255970b18d180c6de37f21c793d59090a3bd546a4a9fba72be74cdb624"
+    },
+    {
+      "path": "paaruoat/dan-dan-nuudelit.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 218462,
+      "sha256": "6fd7a45c5d74e81028016fe71c40016bf348b018ed215a7fb9373a689d9234a9"
+    },
+    {
+      "path": "paaruoat/dim-sum.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 157872,
+      "sha256": "0806882b698ad3a89b78a8b4444b5ceeaf8087be614522001d94206d7158226b"
+    },
+    {
+      "path": "paaruoat/doner-kebab.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 255766,
+      "sha256": "38e82799ee8ff8dba80f8ff6d181e6902eb6697ca26a41c70ba877cffc7fcf4e"
+    },
+    {
+      "path": "paaruoat/falafel.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 259714,
+      "sha256": "45fbe48c2d1cd97a0c87690096a296b6dc1635c1da2f7352f82e4e834c6ade56"
+    },
+    {
+      "path": "paaruoat/gai-yang-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 263790,
+      "sha256": "05e773ba6ea9dc66f8f9930e51ff5f629343d048c3c3e12a67b6bdcab7994978"
+    },
+    {
+      "path": "paaruoat/gazpacho.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 223396,
+      "sha256": "8b9ba05938151681a4bad6aa34bf2d32f3614d53e65d4f51386baa0c2c9e376a"
+    },
+    {
+      "path": "paaruoat/gulab-jamun.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 180152,
+      "sha256": "af8c8264e45c39e43f191c6c9b0b08e80fe97d863b15f0d07fe43c975b967b34"
+    },
+    {
+      "path": "paaruoat/hapanimela-porsas.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 189948,
+      "sha256": "1cef921a026bb311b980657ef4da6a17bc12faf468a1dfa867e014f8b0538de0"
+    },
+    {
+      "path": "paaruoat/harira.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 181554,
+      "sha256": "60d2db986f1ff4a3cbe106c6f18305e4ca1ae11dd7b373575521c80c4e432ce2"
+    },
+    {
+      "path": "paaruoat/hernekeitto-savupotkalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 148148,
+      "sha256": "a3975e8df86f6d83b43356cf2c7b124fcf36b296ca4f0620ed9d65ccdb2affab"
+    },
+    {
+      "path": "paaruoat/hummus.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 193862,
+      "sha256": "19c4d1d0d7f2fbb318ead3fd9f3d0309254f4c9ae6e0605232c0794636e9071b"
+    },
+    {
+      "path": "paaruoat/hunaja-sinappikana-kaalilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 249342,
+      "sha256": "04eab60b8c18c1bb488717b59a6fa56454192b3ae8aad864ce5b8996f9d9821c"
+    },
+    {
+      "path": "paaruoat/hyderabadi-kanabiryani.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 297584,
+      "sha256": "6ffda5bf0e70b3ec3afe7281ec02c3a46bec342978b2042eef22bdec27ac2ef8"
+    },
+    {
+      "path": "paaruoat/idli-sambar.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 195176,
+      "sha256": "416f58a16a0b5ca372ffe3604fda51b8d363eafbc1641a49df2a57244039e234"
+    },
+    {
+      "path": "paaruoat/italian-pata.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 184282,
+      "sha256": "62964e576d918036194d139bc2d6add70cebe243343bfae0ae42143cbeea1c66"
+    },
+    {
+      "path": "paaruoat/janssoninkiusaus-juuriselleri.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 173836,
+      "sha256": "bcc7103f3065a2b4e7bd5d2a818db08522cb75419cf68c678c03a4d4a3d1b5be"
+    },
+    {
+      "path": "paaruoat/jauheliha-kaalikeitto-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 191744,
+      "sha256": "bf0d53d82dd6177d5abf3c8c8ded70dd09f4d52e543d4b7c690eb9423dc9cf6e"
+    },
+    {
+      "path": "paaruoat/jauheliha-kasvissosevuoka.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 244332,
+      "sha256": "cd4aa7877c5750b58d598a852d1f27c00ca12588470bbe9e152b49c6c49fe02e"
+    },
+    {
+      "path": "paaruoat/jauheliha-makaronilaatikko.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 200752,
+      "sha256": "3414a257d3ce3f867e102fb029bd9139c785680df51b6d9880f81575f2941441"
+    },
+    {
+      "path": "paaruoat/jauhelihakastike-kesakurpitsanuudeleilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 197552,
+      "sha256": "20cfc32d1ebc36485a8da637ebc828dfa28305f546c7c89a35f8e62b7bc9ae79"
+    },
+    {
+      "path": "paaruoat/jauhelihapihvit-kermakastikkeella.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 160002,
+      "sha256": "0dfca12ebc81b9601d5d8a0cac6cb7a152f6f8316d2d4c342542998b94ba322d"
+    },
+    {
+      "path": "paaruoat/jerk-kana.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 231444,
+      "sha256": "ef374360c7853c668126cedd5fd2882d0eeed22be6e8dc15a7d84ccf94dfa00a"
+    },
+    {
+      "path": "paaruoat/jiaozi-keitetty.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 126036,
+      "sha256": "6013c30252159d249aaf638711463a771d0f8d22049b832becffa0ae6e179021"
+    },
+    {
+      "path": "paaruoat/kaalilaatikko-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 170524,
+      "sha256": "1adacc7fc3614e42cb29d6a4a6f2f820848562d59617f0eea07a1fe04eaebf49"
+    },
+    {
+      "path": "paaruoat/kai-jiew-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 177784,
+      "sha256": "708cefeea0ef36ac8c6353f4d62e9d999dddf021a9e71e8b0beaeaa3615b3cc0"
+    },
+    {
+      "path": "paaruoat/kana-enchilada-kukkakaalivuoka.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 181652,
+      "sha256": "8ac04f0e5f55260c174e01f3d5d74119e4c2ef9157d70dbcf3eb0fd30035a069"
+    },
+    {
+      "path": "paaruoat/kana-fajita-pelti.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 227142,
+      "sha256": "4fb1934ee0d587427b57f776b98e083cbd3a2d5b65c804f1697c438e15dc8d50"
+    },
+    {
+      "path": "paaruoat/kana-parmesaanipannu-parsakaali.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 254456,
+      "sha256": "32ab3cc699fa07edf49a7dbb045a8524b12813f9321c49adc2d1edb1b48f273c"
+    },
+    {
+      "path": "paaruoat/kana-tagine-sitruunalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 224692,
+      "sha256": "208afcf0b6ce73d31a893243ecf8493ddaabe9af82232a7705cd294b9f78e3d2"
+    },
+    {
+      "path": "paaruoat/kana-yakitori-kaalilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 213088,
+      "sha256": "b24c2b1ad0006cab748cd29c4e894231f342e32519d8e1cdc92a34e53453baa4"
+    },
+    {
+      "path": "paaruoat/kanakeitto-pinaatti-sitruuna.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 156750,
+      "sha256": "8d5d2e4d9776e600aa442c02ae0bdf3fed598ea8316a8fe79c4dc3ff2778577d"
+    },
+    {
+      "path": "paaruoat/kanakorma-kukkakaaliriisilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 144526,
+      "sha256": "17d3f20824014c0e4a927dfc72fc269333a03c49ba8365f32e84b79f8d1efe08"
+    },
+    {
+      "path": "paaruoat/kanapyorykat-tomaattikastike.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 235508,
+      "sha256": "e8042d8b4858b361c4ac4342cfdb48ee5ba6990bd767808e276109ee1aa2242b"
+    },
+    {
+      "path": "paaruoat/kanasalaatti-pesto-mozzarella.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 181460,
+      "sha256": "5a2a0eb27506e50747568ed2e8f4301ebf168b2071220e777ffc4f3686638a51"
+    },
+    {
+      "path": "paaruoat/kanaviillokki-kukkakaalilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 137746,
+      "sha256": "b44685403287a0372d5f64491b1f70dab5f1f2df6188ba1b6d1767bf7c821759"
+    },
+    {
+      "path": "paaruoat/kantonilainen-hoyrytetty-kala.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 167496,
+      "sha256": "3d46677355f251ee903561435867666d149c0a233051fc60671c4cf7b1a44f1f"
+    },
+    {
+      "path": "paaruoat/karjalanpaisti-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 224234,
+      "sha256": "758e82d9706f3207a2a8837fdbc60ac0399559a30f718e4e95ced1330a513af0"
+    },
+    {
+      "path": "paaruoat/karnivore-jauhelihakulho-munalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 210622,
+      "sha256": "aa30972aa7016d4a2c5798225982cf2efa738942edd8ff2c30fb2f12d5565d6f"
+    },
+    {
+      "path": "paaruoat/karnivore-lammaskyljykset-voissa.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 255496,
+      "sha256": "1fa89d24d5c91552db0155f9e87b2eacae987b774b66502dcfff39c9ebbb1f1e"
+    },
+    {
+      "path": "paaruoat/karnivore-maksa-ja-pekoni.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 277556,
+      "sha256": "90bcc952164b60cdbf16c5ad917eda698adb722ed6d7ccadaeeb27996c9078ef"
+    },
+    {
+      "path": "paaruoat/karnivore-meatza.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 232034,
+      "sha256": "386a965b320321176246b181ce6e8f836c86c3aeb92a50c55d922308af200d0e"
+    },
+    {
+      "path": "paaruoat/karnivore-naudan-lyhytkylki.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 198666,
+      "sha256": "58b7e6d34f23257418d28c1d661f4fe286a1eb7c6611804a74226b26ca1ec395"
+    },
+    {
+      "path": "paaruoat/karnivore-rapea-porsaan-kylki.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 179560,
+      "sha256": "c43ccfaa173fbb717e05ec6e2bc04af7ec9c82925697bcca5f713b9295c2c5d6"
+    },
+    {
+      "path": "paaruoat/karnivore-rapeat-kananreisipalat.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 252560,
+      "sha256": "da8a27e3a3746ea4e91f305dcb4a01a5f6c5a4ce1e30059a708e7059d06925cc"
+    },
+    {
+      "path": "paaruoat/karnivore-smashburger.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 232636,
+      "sha256": "107bf8486f91a1281f631ad8f0c6c23055893e9c71964380a5baa90127fd3c11"
+    },
+    {
+      "path": "paaruoat/karnivore-steak-and-eggs.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 230578,
+      "sha256": "edd4c48c77087fc9fee7226bd02ba9a3df79e641c0b1eda4a613a203f865a251"
+    },
+    {
+      "path": "paaruoat/karnivore-voilohi-pannulla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 239974,
+      "sha256": "6b1e639fdf4d5df0b45570da31fa51933d48f7ce5b14a685c420be608ea17411"
+    },
+    {
+      "path": "paaruoat/kebab-munakasrulla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 302644,
+      "sha256": "1edb07487e653883fd30da27b201e6fe379f049f72470b2722b4d9782075bfbc"
+    },
+    {
+      "path": "paaruoat/keltainen-kanacurry-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 161472,
+      "sha256": "5246da995f47a7a2a2022fa60fbb93ddd96e0c6fd759b1209cf790436e1a37f8"
+    },
+    {
+      "path": "paaruoat/kerala-kalacurry.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 229124,
+      "sha256": "01b1d2561c44af98331224078f85154f8bc6fbbe59c5a20040cdc42c04e5ec05"
+    },
+    {
+      "path": "paaruoat/kermainen-kanasienipannu.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 234160,
+      "sha256": "2aec0b164cc8fc7b3ec493d64d39652f7b4b2576f2e19481a1358da920794409"
+    },
+    {
+      "path": "paaruoat/kermainen-lohipata.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 342986,
+      "sha256": "9617827ac6c67ded0845cb7eb998907fc6ad37c553748b3674279696425fc754"
+    },
+    {
+      "path": "paaruoat/kesakurpitsa-perunapata.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 298770,
+      "sha256": "99d9c407e847f9a3dd99e005901d2087789687637a7644796f1682c5f72ac218"
+    },
+    {
+      "path": "paaruoat/kesakurpitsalasagne-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 177986,
+      "sha256": "18924407aea0163206b511909b99be29ab85a6569c79f388c5b4d70ad3299fe3"
+    },
+    {
+      "path": "paaruoat/keto-pinaattiletut.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 141218,
+      "sha256": "72f671cdadd1f68d17dbcf8d57daaaeb7405586811191730ecbb05e3811e78c1"
+    },
+    {
+      "path": "paaruoat/ketopizza-pofiber-pohjalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 179858,
+      "sha256": "9d930fe36b04ddaab2389967114620fc6ac1767fa8ab7a12dc06aeaf71ef67f5"
+    },
+    {
+      "path": "paaruoat/khao-kha-moo-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 188948,
+      "sha256": "b2e20b63dc2391416fdb3f4c51d8bb1b7a2a2ffb7c740832ae20fcf3b1ebe08e"
+    },
+    {
+      "path": "paaruoat/khao-man-gai-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 180866,
+      "sha256": "cb6b2bfbc104f0dae3645704b707af5c28d143b1ed43cb9cc26ae61a575e2081"
+    },
+    {
+      "path": "paaruoat/khao-soi-vhh-konjac-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 195398,
+      "sha256": "642329cf247744bfb4679804febd75686aad94c29e5ffe6941d9788f952fb6a2"
+    },
+    {
+      "path": "paaruoat/kimchi-jjigae.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 180634,
+      "sha256": "90599c2155f84d7a06e360bbb58c91fcc9e38efc2c8f72732b5f15dc4abd5874"
+    },
+    {
+      "path": "paaruoat/kookos-lime-kanacurry.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 148370,
+      "sha256": "c4ce7d8aec1ed2802664a0985fcaf13e757de302fe22125a459a0e5a6a131b58"
+    },
+    {
+      "path": "paaruoat/kookos-linssikeitto.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 115844,
+      "sha256": "43606b87d421ad3ef91dfb46ee6d17046e08d072814c9dcbb766d6cb836e2543"
+    },
+    {
+      "path": "paaruoat/koshari.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 247598,
+      "sha256": "e0244d6a4dcf00142ec939812ffd0e2bfd042dd3587717a60f65933079ccf39d"
+    },
+    {
+      "path": "paaruoat/kreikkalainen-kanavuoka-oliiveilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 253100,
+      "sha256": "45e9b5b68175691b16dc62447148a33f651c73882da1274e04d75b8532a8c847"
+    },
+    {
+      "path": "paaruoat/kreikkalainen-moussaka.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 215238,
+      "sha256": "0181cbd8bf2ec567df8d2cbf8776d2c67b3643eef78eea00a0750c401a80db36"
+    },
+    {
+      "path": "paaruoat/kukkakaaligratiini-pekonilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 239536,
+      "sha256": "3bd40e605191acd88440cd3f14a5db8a79680d908a9e0296757ed8bcf574a937"
+    },
+    {
+      "path": "paaruoat/kung-pao-kana.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 187180,
+      "sha256": "2f6b2b377cc35461c13d6ad2839500f37314a9da0b4773dc8ec5b46a80118b6d"
+    },
+    {
+      "path": "paaruoat/lanttulaatikko-kermainen.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 174470,
+      "sha256": "e0e3e26f71b01b1790b45dc59ded438510f974f99062b17771fb72a49bc2e27d"
+    },
+    {
+      "path": "paaruoat/lanzhou-naudanliha-nuudelikeitto.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 231158,
+      "sha256": "1032e28534bd02094f4884b66f423f43d57b211916b6266998374e91c81e82ad"
+    },
+    {
+      "path": "paaruoat/larb-moo-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 225504,
+      "sha256": "47351a02bec0496eb8a1c4bd4daa859baba3dd2c961516c48efa8defa777454d"
+    },
+    {
+      "path": "paaruoat/liha-juureskeitto-perunaton.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 143272,
+      "sha256": "d4510d1d42cf72227a24b2f0efbbe5d5e486fb281c623fa8268a65e47a07ea2a"
+    },
+    {
+      "path": "paaruoat/lihapullat-kermakastikkeessa.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 199264,
+      "sha256": "a2302af1e770658502e8b043f88a830fbdffd92994d10cdc41f8ea41c4133e24"
+    },
+    {
+      "path": "paaruoat/lindstrominpihvit-kaalilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 165196,
+      "sha256": "64811f7c7631f7a56e630b18ea22c006f97bf0f9860e27337c950ca8269190fe"
+    },
+    {
+      "path": "paaruoat/linssimakaronilaatikko.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 87084,
+      "sha256": "1c6b198a9073bb4d1102393dc5ceda23ce0138ab55332aa861847f0614e0fa43"
+    },
+    {
+      "path": "paaruoat/lohikeitto-kuohukermalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 160618,
+      "sha256": "511128e2593071d128fa73922c239348e040a40c4f5c0b83cf9b9cfdcecab6c2"
+    },
+    {
+      "path": "paaruoat/maksalaatikko-kukkakaalilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 159542,
+      "sha256": "be9228fea731996db9c1452bfb505d03806a1464a0818f66caa190c8bed71da3"
+    },
+    {
+      "path": "paaruoat/mala-xiang-guo.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 282276,
+      "sha256": "b94d95c5e6e1afc395b4afe5e8888707e73a9fbe78030704f90221412fe30ba8"
+    },
+    {
+      "path": "paaruoat/mapo-tofu.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 244744,
+      "sha256": "88c558799e9704a808fce8305c49934cb90b4924440f6883397bf79565a1c0f7"
+    },
+    {
+      "path": "paaruoat/marokkolainen-couscous.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 246894,
+      "sha256": "2d980cad89d00f13c465c406561e5a549be3b2adf6809d233352877a5095a8d2"
+    },
+    {
+      "path": "paaruoat/marry-me-kanapasta.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 65406,
+      "sha256": "93406819fb77916d6be370719d1b74499a7d3e50469f23726168f3bc695450f6"
+    },
+    {
+      "path": "paaruoat/masala-dosa.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 187660,
+      "sha256": "ae9fbc3066ac68d9ab8194f5569665e566d6f61afe68d79fedb07165a23d2a09"
+    },
+    {
+      "path": "paaruoat/massaman-curry-kanalla-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 223008,
+      "sha256": "1d240ac9e01c62175c67d6abfd193b8527236de3d67c572d13f0e4c9294a80e6"
+    },
+    {
+      "path": "paaruoat/medu-vada.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 227394,
+      "sha256": "0e6718e91cec74a12843a06cfa9e5f8bb8a4c924a18623cb939dadccbac18417"
+    },
+    {
+      "path": "paaruoat/menemen.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 235604,
+      "sha256": "e24fd8822cdf3bdd8bc663c6222cf31c4d7fcb1a9691244f977868f5f5e0702b"
+    },
+    {
+      "path": "paaruoat/moo-ping-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 222988,
+      "sha256": "211c4492bdbfe517a365d46a792d8315e1746d64c32be16f3f3c9f32476a155a"
+    },
+    {
+      "path": "paaruoat/munakoiso-jauhelihavuoka-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 228890,
+      "sha256": "0a5d8d3eee93cb77a738251c11e864574a02a33a22de0c662de180985a06cd1d"
+    },
+    {
+      "path": "paaruoat/nakkikastike-kukkakaalimuusi.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 155804,
+      "sha256": "88306062d2c923f35339ac69e5f1aaefa6315be75e55258331f55196ec23dbe1"
+    },
+    {
+      "path": "paaruoat/nakkikeitto-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 175300,
+      "sha256": "d6e9f82c2bd0f704e4f1827994056cfd3748bc2c1dfd3472262eae9373f10c38"
+    },
+    {
+      "path": "paaruoat/nasi-lemak.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 173200,
+      "sha256": "eeb474d3b1a97db00a082fff0561e9a1ce75502eb582b723f9ac9f256989529d"
+    },
+    {
+      "path": "paaruoat/naudan-paahtopaisti-uunissa.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 234836,
+      "sha256": "e52c56723b03f750f24db828787bcf340eee52bbdba521a273d448e944bd68fb"
+    },
+    {
+      "path": "paaruoat/okonomiyaki-kaaliletut-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 281688,
+      "sha256": "c1ffd8a7fc69b04af8ffe03fb0ce3d77af9770087abf7f8b12d84234f84927fe"
+    },
+    {
+      "path": "paaruoat/okonomiyaki-kaaliletut.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 174644,
+      "sha256": "df830bdd6340839c2ee0bd80785d6dd5d0cf9f8a533abca453bacb356b04cb56"
+    },
+    {
+      "path": "paaruoat/pad-kee-mao-vhh-konjac.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 185748,
+      "sha256": "aa631479764b18c17ed924a955d558802e991b01eaffcb36f9596fce1e08f392"
+    },
+    {
+      "path": "paaruoat/pad-kra-pao-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 252590,
+      "sha256": "035c13fe475de02611d00c58958298c52c1f98a3d0437b5918c485fcdcd26634"
+    },
+    {
+      "path": "paaruoat/pad-see-ew-vhh-konjac.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 209616,
+      "sha256": "7f5e44cc649b2b9917504a8d93029eb9f801300b673fd816b4623e3992e467be"
+    },
+    {
+      "path": "paaruoat/pad-thai-vhh-konjac.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 186022,
+      "sha256": "d2660d8aa013595041501314fd94020082f92b08e4f824c2eb0095be3fd34427"
+    },
+    {
+      "path": "paaruoat/paella-valenciana.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 263114,
+      "sha256": "e7cdb9b580e4f24f53ec59c04a522556b2f2132babc04bbe1b9d10f943a7a7a8"
+    },
+    {
+      "path": "paaruoat/paistettu-maksa-pekonilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 204932,
+      "sha256": "2b5bfd43248c9346a6b859cb5e599dafb520abea853ca38b910b5ceae0edf806"
+    },
+    {
+      "path": "paaruoat/palak-paneer.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 289000,
+      "sha256": "c06e9d33f168599ee0d1c38c21695c9dedc207dedba6dcdaa05c7328fc339540"
+    },
+    {
+      "path": "paaruoat/panang-curry-kanalla-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 225004,
+      "sha256": "238859961f776781183913b38663a6479739d22e35153796f44ce248f3889869"
+    },
+    {
+      "path": "paaruoat/paneer-tikka.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 259674,
+      "sha256": "e5fa13f81911c6d2cb7f86f053676f3a9470aac68a68476d90d5cf735c540899"
+    },
+    {
+      "path": "paaruoat/pani-puri.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 227274,
+      "sha256": "f92b62e53f7cb2fb66af3e22cd84a6b2b1ab0b5eb689e8039022c63aea4bd282"
+    },
+    {
+      "path": "paaruoat/paprikainen-gulassi.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 223288,
+      "sha256": "2d8bc44775b2066bfdd0e98b54f339a2918477b3b7f0af8a15671b0c58b35950"
+    },
+    {
+      "path": "paaruoat/papu-myskikurpitsapelti.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 274568,
+      "sha256": "8927cd7e1933563b4a47b3eb748598a1504c6ac824d10f2170d2e4c0d66d8f43"
+    },
+    {
+      "path": "paaruoat/parsakaali-cashewpasta.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 264402,
+      "sha256": "a4e35da2cb529ecf0c2530f8c21efc07115d79c6d4e9cc5538d49643412df45f"
+    },
+    {
+      "path": "paaruoat/parsakaali-sinihomejuustofrittata.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 224898,
+      "sha256": "539935bbec6f9524fe50529307fa6e04c9d0e728208a1e8621c8d88cb4c0efba"
+    },
+    {
+      "path": "paaruoat/pasta-alla-norma.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 252320,
+      "sha256": "ddc113e248cdd2cc1178cc07e137332205a2ba57b4c81794f798a9eaeee7b5c8"
+    },
+    {
+      "path": "paaruoat/pav-bhaji.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 266700,
+      "sha256": "fb84b54a3fcbee144b35102a72b261c50f58fb5460ded0dcafed9811ef1750a0"
+    },
+    {
+      "path": "paaruoat/pekingin-ankka.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 244446,
+      "sha256": "d150e0ad3451a93c9ec0b5b4d4e3f83eb6acf3e1820fc0bcbd1cb92167e33cd6"
+    },
+    {
+      "path": "paaruoat/pho-bo.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 162886,
+      "sha256": "9ad9aebe5ea66006ff817865a95a712233bfbdf6f6b1170a68b42bb9c13094e5"
+    },
+    {
+      "path": "paaruoat/pinaattikeitto.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 262504,
+      "sha256": "14b0d0dedfedc49466a40f904283222e7492633bf656b5528b22f2188d7bdb5c"
+    },
+    {
+      "path": "paaruoat/pizza-margherita.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 211770,
+      "sha256": "9fd8760692f211bd1362a58f4edf9161b4a19b432faffe5f050e6ba7c385ac1c"
+    },
+    {
+      "path": "paaruoat/porkkanaletut.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 149464,
+      "sha256": "2b30968a0e34df1b6c03618e379077c6e6c0c5de035b46b92c6a97370dc463a6"
+    },
+    {
+      "path": "paaruoat/poronkaristys-kukkakaalimuusilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 197592,
+      "sha256": "3eb6a5a9a9d488ee5afb2ac6a32a57c6f90fcf525b73faa0211f0341b3f54c5b"
+    },
+    {
+      "path": "paaruoat/punainen-kanacurry-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 160914,
+      "sha256": "f65207dca86c6405bbd6340521263b95c8564adcfbbbfa167dd4e0cb8d1d6958"
+    },
+    {
+      "path": "paaruoat/punajuuririsotto.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 358870,
+      "sha256": "61eaac9b915b67155dfd51e85fbb918e5abbc3e981c51097c80ccff06f8fe70c"
+    },
+    {
+      "path": "paaruoat/pyttipannu-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 210106,
+      "sha256": "ba68fed112e79221dbfd31bbed600b259ac48e7d18180061ac5470d5a0bd0fbf"
+    },
+    {
+      "path": "paaruoat/raejuusto-uunimunakas.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 195420,
+      "sha256": "7b082e1dd4c0ece3f0cdc7ade685178e9e99f3efb190b5f0dec3cd03666f58cb"
+    },
+    {
+      "path": "paaruoat/raejuustopizza-kaurajauhopohjalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 343884,
+      "sha256": "093c8ddf0a1f7f4c344a6f3e5da6d47d5f5b6d2829ae0497116e5c7b17ae4cf6"
+    },
+    {
+      "path": "paaruoat/ratatouille.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 238788,
+      "sha256": "c767d5f82987668677d10cec9e126915a622d3ac22e98add97de18024a63a23f"
+    },
+    {
+      "path": "paaruoat/rendang-padang.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 272936,
+      "sha256": "075f23d444c5370abbb48adac7f3e09f3f76f4c736d00de86c0f7c6a0d40b28a"
+    },
+    {
+      "path": "paaruoat/rogan-josh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 260460,
+      "sha256": "0c4d4933a515d3b4849832f1be4805558c15a007d6e2041272fe09aa0eb6ac89"
+    },
+    {
+      "path": "paaruoat/ropa-vieja.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 190004,
+      "sha256": "581d8aca8acfe44c181d1f6ae10674566ec287765e0162f7e31bb86a7415f78f"
+    },
+    {
+      "path": "paaruoat/roujiamo.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 188062,
+      "sha256": "037cb1f7deb4ad97e725f0dcf3b214e71d684b14f236d1c9540365f777711e86"
+    },
+    {
+      "path": "paaruoat/samosa.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 203876,
+      "sha256": "e59b3a85e453d88019fa5fb3f7269cdffb4d8a17946e18f33c7cd63211f1da5b"
+    },
+    {
+      "path": "paaruoat/sate-ayam.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 245534,
+      "sha256": "ffec6a2fcfc220dc788e8696c08504823c6e3377cb2ba5d3fa9883b10808dcf5"
+    },
+    {
+      "path": "paaruoat/sichuan-hot-pot.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 250116,
+      "sha256": "c06932fd4e07adeca3f4cf53279076b5528771b5c92e7cc987f73896aa70d693"
+    },
+    {
+      "path": "paaruoat/silakkapihvit-tilli-kermakastike.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 173268,
+      "sha256": "6ada30959efc06dfe04439c0f2e7f110d0041b8f36e268b964b74e712ad6ca8d"
+    },
+    {
+      "path": "paaruoat/siskonmakkarakeitto-juurekset.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 134450,
+      "sha256": "300e918d82ae6c6e54c0053e4c09502568f136e96de3e71ba09b6408f44ed049"
+    },
+    {
+      "path": "paaruoat/sitruuna-parsapasta.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 179346,
+      "sha256": "166deb6a243a5cef15cd7d8210487d2e8a7c94ca785a7697bf77e7752f96f269"
+    },
+    {
+      "path": "paaruoat/sitruuna-yrttikana-parsa.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 222640,
+      "sha256": "4aa41c5631804676e996da2a44ba83474f6ea68e9b2f8b7c77f26d79f01880b2"
+    },
+    {
+      "path": "paaruoat/som-tam-vhh-kurkkuna.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 219352,
+      "sha256": "1cbabf4ae67a5dd58562253f84a72d90595ab62ac99048cd33bf2531fa34ce90"
+    },
+    {
+      "path": "paaruoat/souvlaki.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 224642,
+      "sha256": "0bb9e9bb5a256366e3c42509544aba44c215455d2feca59cb71510b678f8df74"
+    },
+    {
+      "path": "paaruoat/spanakopita.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 208270,
+      "sha256": "640f1f95ed16588825d9d8878b83687518be107105c520109007874c7e0a5fe5"
+    },
+    {
+      "path": "paaruoat/tabbouleh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 226948,
+      "sha256": "5db1041762ea563c2bf042cc854d56adbb9a9f0c80b98d6604b0b2bca8444922"
+    },
+    {
+      "path": "paaruoat/tacokulho-nauta-avokado-v2.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 303272,
+      "sha256": "c9200dfe1bfbf5ca7c9884ea9ecf288e854cea4425eb0702e88b1278f6f3e674"
+    },
+    {
+      "path": "paaruoat/tandoorikana.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 254946,
+      "sha256": "bb37110440bb9081df0a44c7d3d90584b5a62ce4fb1092c0ca0b548ac5abf604"
+    },
+    {
+      "path": "paaruoat/tangyuan.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 126822,
+      "sha256": "4a35b273a923dc98566e31f929f236c133f782bc057f0255e950d12173afaf93"
+    },
+    {
+      "path": "paaruoat/taytetyt-paprikat-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 161922,
+      "sha256": "f01a8121fca4ce6024fc912dd9e968aa9cebd3e3c0374fbf37ca14ad8397c9b5"
+    },
+    {
+      "path": "paaruoat/thai-vihrea-curry-kanalla-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 177362,
+      "sha256": "62b652ddd85a79fae504616a0377be3462ec856d0c7db2d5ed38d97df8f2c35f"
+    },
+    {
+      "path": "paaruoat/tom-kha-gai-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 124834,
+      "sha256": "4a4f8f41f0ca2b19e1ef5fb4e8f119597cecdc7f22fa113e0a1b344e6e20e47f"
+    },
+    {
+      "path": "paaruoat/tom-yum-goong-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 206454,
+      "sha256": "a8b7a056e034f405060c43197e1e73faebc5506326aea7a224109963e25683c3"
+    },
+    {
+      "path": "paaruoat/tomaatti-kananmuna-wokki.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 211772,
+      "sha256": "f7d242cb55d70ed5212be142d888cd156fd51a85b18b30d38f8d8bcd3bb249f5"
+    },
+    {
+      "path": "paaruoat/tortilla-de-patatas.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 190754,
+      "sha256": "0b80f21638e7217832e9b17fda0296c42185c2b144a817a5560da08c8c073c27"
+    },
+    {
+      "path": "paaruoat/tunisialainen-brik-kypsalla-munalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 256498,
+      "sha256": "55900dde93ca5a08f8c58953bd9ac489d287aa3ecda7ce481d34e526f8f5720f"
+    },
+    {
+      "path": "paaruoat/tunisialainen-ojja.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 256378,
+      "sha256": "20a1fb68a6fc8c09e1de31b3eb2b9ce4dc802936597fa05c5db6ff40baa9a6a1"
+    },
+    {
+      "path": "paaruoat/uunibataatit-fetalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 255458,
+      "sha256": "93c7ea67c362dc073b2425d432079c05427f52e0c8daa4d973d00a5ce238af31"
+    },
+    {
+      "path": "paaruoat/uunifetapasta-kirsikkatomaateilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 56290,
+      "sha256": "8791526cb025eb65d647354a7ea644b29188e32f00cec47732e7e597d5b7ade0"
+    },
+    {
+      "path": "paaruoat/uunikanapasta-kesakurpitsa.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 211816,
+      "sha256": "e40cf755ff99bde94dd3be6a3afc47cbc583a7b3d614dbf28e146e63e03d205c"
+    },
+    {
+      "path": "paaruoat/uunilohi-smetanalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 242772,
+      "sha256": "3eebbed22fb2b3cd7f5163a8863809ddd8eb7a4fa133322571dd623e01651b5f"
+    },
+    {
+      "path": "paaruoat/uunimakkara-sipulipedilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 173488,
+      "sha256": "427efaa12863ebcf1a9583ea51f802eb3a5d008c4c9f289732eff304d8dc0342"
+    },
+    {
+      "path": "paaruoat/uuniporsas-kermakastikkeessa-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 197782,
+      "sha256": "6f5c67965e4cf6a6984190099289fce2f1fba68912e3db7bfba738f72ff672eb"
+    },
+    {
+      "path": "paaruoat/vada-pav.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 215010,
+      "sha256": "e5fa79ddc0e6d9e849229e155e1b7f7fecefd1b7a980d664456b0bdcc6519cb7"
+    },
+    {
+      "path": "paaruoat/vhh-kaalikaarryleet.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 181074,
+      "sha256": "ef3f703d8ec1cdf7638a55b9a871cb8c5b598c8d1c81774ffb0e3b8e58ff7981"
+    },
+    {
+      "path": "paaruoat/vhh-lihamureke.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 187664,
+      "sha256": "6367f1ac9d6d8c97571ff9ee5fe3ad9867cfe3967e0d0798c2df929993cfd8ca"
+    },
+    {
+      "path": "paaruoat/vhh-lohikeitto-kukkakaalilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 163160,
+      "sha256": "87dfcc51c911e43a860ceafed1afa260c0ebbbdd6d4ba2cad62da502df547c92"
+    },
+    {
+      "path": "paaruoat/xiaolongbao.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 146932,
+      "sha256": "d0dd100b77d298422a88bc6b77c30eea5cecab525fdb50dfaa75d4cd0f5231cc"
+    },
+    {
+      "path": "paaruoat/yangzhou-paistettu-riisi.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 182454,
+      "sha256": "8d5eb90f994b8265ca25062c2d1bc471019b1be6aeaf7bedbc0e7a3bff06fcd5"
+    },
+    {
+      "path": "paaruoat/yum-woon-sen-vhh.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 201208,
+      "sha256": "5361495671921ae1842861ddd0c01268b3d2209caa07479e61a74dfcadcf5034"
+    },
+    {
+      "path": "valipalat/ananas-kanelijuoma-sitruunalla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 152388,
+      "sha256": "c0f35c1f2ac6ad402281d7b3e7c47467afe99496de184a5a2362d20e0df6885b"
+    },
+    {
+      "path": "valipalat/fetavaahto-kasvistikuilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 136912,
+      "sha256": "a0675521eacf58734a4bd76833548ebaa314719f50892b57a8445e97ffee1d44"
+    },
+    {
+      "path": "valipalat/jaaiset-banaani-suklaapalat.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 180444,
+      "sha256": "b3d2ba75d825a4791c8743aeabea89bfc695dfa79ff0379da9ccfa89071d1476"
+    },
+    {
+      "path": "valipalat/taytetyt-kananmunat-yrteilla.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 177036,
+      "sha256": "60674e6f2e743ee1aa75479216528f62ae880630a1fd7fdcc40ab515dfedd431"
+    },
+    {
+      "path": "valipalat/tonnikalatayte-kurkkukupeissa.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 120926,
+      "sha256": "b36b25b302c7640fa22c05bd4cc876bd69e627dc2930b12aed0085f00ae059c2"
+    }
+  ],
+  "uiAllowlist": [
+    "site/public/favicon.svg",
+    "site/public/ruokaopas/briossi.svg",
+    "site/public/ruokaopas/gk.svg",
+    "site/public/ruokaopas/kuvitus/airfryer-vai-uuni.svg",
+    "site/public/ruokaopas/kuvitus/annoskoon-mittaaminen.svg",
+    "site/public/ruokaopas/kuvitus/hiivataikina-ei-kohoa.svg",
+    "site/public/ruokaopas/kuvitus/keto-vhh-ero.svg",
+    "site/public/ruokaopas/kuvitus/pad-thai-ainesosat.svg",
+    "site/public/ruokaopas/kuvitus/pizzapohjien-vertailu.svg",
+    "site/public/ruokaopas/kuvitus/ravintoarvio-epavarmuus.svg",
+    "site/public/ruokaopas/kuvitus/ravintoarvolaskurit-eri-tulokset.svg",
+    "site/public/ruokaopas/kuvitus/riisin-keitto-eri-lajikkeet.svg",
+    "site/public/ruokaopas/kuvitus/thaimaalaiset-raaka-aineet-suomessa.svg"
+  ],
+  "unclassifiedTracked": [
+    "aamupalat/indonesialainen-bakwan-maissifritter.webp",
+    "aamupalat/indonesialainen-bubur-sumsum.webp",
+    "aamupalat/indonesialainen-lontong-sayur-aamiaiseksi.webp",
+    "aamupalat/indonesialainen-nasi-goreng-aamiaisriisi.webp",
+    "aamupalat/intialainen-aloo-paratha.webp",
+    "aamupalat/intialainen-idli-kookoschutneylla.webp",
+    "aamupalat/intialainen-pesarattu-mungpavuista.webp",
+    "aamupalat/intialainen-pinaatti-paneer-chilla.webp",
+    "aamupalat/intialainen-rava-uttapam.webp",
+    "aamupalat/japanilainen-hojicha-jogurtti-persimonilla.webp",
+    "aamupalat/japanilainen-miso-tofu-paksoi.webp",
+    "aamupalat/japanilainen-natto-riisikulho.webp",
+    "aamupalat/japanilainen-yaki-onigiri-misolla.webp",
+    "aamupalat/karibia-ackee-ja-suolakala.webp",
+    "aamupalat/karibia-bammy-kassavaleipa.webp",
+    "aamupalat/karibia-plantain-aamiaislautanen.webp",
+    "aamupalat/karibia-saltfish-fritterit.webp",
+    "aamupalat/kiinalainen-bao-munalla.webp",
+    "aamupalat/korealainen-bataatti-riisikulho.webp",
+    "aamupalat/korealainen-jumeokbap-merilevalla.webp",
+    "aamupalat/korealainen-kimchi-jeon-aamiaiseksi.webp",
+    "aamupalat/korealainen-mandu-keitto-aamiaiseksi.webp",
+    "aamupalat/korealainen-tofu-kimchi-aamiaiskulho.webp",
+    "aamupalat/lahi-ita-zaatar-munat.webp",
+    "aamupalat/malesialainen-kuih-seri-muka.webp",
+    "aamupalat/malesialainen-laksa-lemak-aamiaiseksi.webp",
+    "aamupalat/malesialainen-roti-canai-dhalilla.webp",
+    "aamupalat/malesialainen-roti-jala-currykanalla.webp",
+    "aamupalat/meksikolainen-chilaquiles-verdes.webp",
+    "aamupalat/meksikolainen-paputostada-aamupalaksi.webp",
+    "aamupalat/pohjoisafrikkalainen-baghrir.webp",
+    "aamupalat/pohjoisafrikkalainen-maakouda.webp",
+    "aamupalat/pohjoisafrikkalainen-msemen-hunajalla.webp",
+    "aamupalat/rahka-marjakerroskulho.webp",
+    "aamupalat/valimerellinen-appelsiini-aamiaiskakku.webp",
+    "aamupalat/valimerellinen-kikherne-yrttiaamiainen.webp",
+    "aamupalat/vietnamilainen-banh-bao-kananmunalla.webp",
+    "aamupalat/vietnamilainen-banh-cuon-sienilla.webp",
+    "aamupalat/vietnamilainen-banh-xeo-aamiaisletut.webp",
+    "aamupalat/vietnamilainen-papaija-kookospuuro.webp",
+    "aamupalat/vietnamilainen-xoi-maapahkinalla.webp",
+    "paaruoat/japanilainen-curry-tofulla.webp",
+    "paaruoat/jiaozi.webp",
+    "paaruoat/khao-soi-vhh-konjac.webp",
+    "paaruoat/miso-lohi-paksoi.webp",
+    "paaruoat/shoyu-kanakeitto-konjac.webp",
+    "paaruoat/tacokulho-nauta-avokado.webp",
+    "paaruoat/tunisialainen-brik.webp"
+  ],
+  "conflicts": [],
+  "migrationBlocked": false,
+  "ci": {
+    "mode": "r2",
+    "bucket": "image-ci-1187705081",
+    "endpoint": "https://2dda5d88f53563ddabfc97531c313ca1.r2.cloudflarestorage.com",
+    "activationRequires": [
+      "private-bucket",
+      "read-only-ci-secret",
+      "verified-upload"
+    ],
+    "key": "inputs/89552f63d1eff0571d236bf649c11cb69998d15a778febc4a1609a3efc6b01b3/62ad7dd278107b83ee95d575093a03db4e3ba3e6e4700c42b9555b327d24323a.zip",
+    "bundleSha256": "62ad7dd278107b83ee95d575093a03db4e3ba3e6e4700c42b9555b327d24323a",
+    "storageClass": "Standard",
+    "verification": {
+      "asOf": "2026-11-19T08:25:59.553176+00:00",
+      "status": "PRIVATE_CLOUD_RESTORE_PASS",
+      "files": 395,
+      "bytes": 82635392,
+      "readerWriteDeniedHttp": 403,
+      "publicDevelopmentUrl": false,
+      "customDomains": []
+    },
+    "imageRemovalRequires": [
+      "successful-cloud-ci",
+      "verified-public-snapshot",
+      "separate-pinned-removal-approval"
+    ],
+    "publicFallback": {
+      "urlPrefix": "https://a72d7848.recipavo-site.pages.dev/kuvat/",
+      "purpose": "Secret-free restoration of already-published production sources only",
+      "unavailableSnapshot": "Fail closed; maintainer must update the published snapshot or run the reviewed change in an owner branch"
+    }
+  },
+  "trackedSourceRoot": "kuvat"
+}
