@@ -56,11 +56,21 @@ suoria gh- tai GitHub-MCP-muutoksia ei käytetty.
 Palautettu kuvajuuri annetaan CI:ssä vain oikealle buildille ja sisältö-
 tarkistuksille. Sitä ei aseteta koko työn ympäristöön, jotta eristetyt testit
 voivat käyttää omia kuvafixtureitään. Git-kuvia ei poisteta tämän kokeen vuoksi.
-Fork-PR:t ja Dependabot-ajot käyttävät ilman salaisuuksia nykyisiä Git-kuvia,
-joiden jokainen SHA-256 tarkistetaan samalla manifestilla. Puuttuva kuva
-estää ajon. Omistajarepon tavallinen ajo ei saa tätä fallbackia puuttuvien
-salaisuuksien perusteella. Fork-/Dependabot-palautuspolku pitää ratkaista
-erikseen ennen Git-kuvien poistomigraatiota.
+Fork-PR:t ja Dependabot-ajot palauttavat vain jo julkaistut tuotantolähteet
+manifestin täsmällisestä Pages-julkaisusnapshotista ilman S3-tunnuksia,
+evästeitä tai Authorization-headeria. Jokaisen kuvan tavumäärä ja SHA-256
+tarkistetaan; Git-kuvakansiota ei käytetä. HTTP-uudelleenohjauksia ei seurata.
+Vain production-source-rooli kelpaa; alkuperäisiä yksityisiä mastereita ei
+haeta tätä kautta. Omistajan ajo käyttää edelleen yksityistä R2-pakettia.
+
+Julkaisematon, vaihtunut tai poistunut lähde pysäyttää tunnuksettoman ajon.
+Ylläpitäjä päivittää silloin snapshotin tai ajaa katselmoidun muutoksen
+omistajarepon haarassa. Tarkistuksia ei ohiteta. Pages säilyttää nykyisen
+tuotantojulkaisun ja viimeisimmät 100 deploymentia; snapshot ei ole pysyvä
+arkisto eikä korvaa Proton-varmennusta. Älä oleta vanhojen fork-commitien
+julkisen palautuslähteen säilyvän ikuisesti.
+
+Katso [Cloudflaren deployment-rajat](https://developers.cloudflare.com/pages/platform/limits/).
 
 ## Uudet kuvat
 

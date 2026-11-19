@@ -50,17 +50,17 @@ jobs:
         id: images
         shell: pwsh
         env:
-          USE_TRACKED_IMAGES: ${{ github.event_name == 'pull_request' && (github.event.pull_request.head.repo.full_name != github.repository || github.actor == 'dependabot[bot]') }}
+          USE_PUBLIC_IMAGES: ${{ github.event_name == 'pull_request' && (github.event.pull_request.head.repo.full_name != github.repository || github.actor == 'dependabot[bot]') }}
           IMAGE_CI_ACCESS_KEY_ID: ${{ secrets.IMAGE_CI_ACCESS_KEY_ID }}
           IMAGE_CI_SECRET_ACCESS_KEY: ${{ secrets.IMAGE_CI_SECRET_ACCESS_KEY }}
         run: |
           $manifest = 'assets/images.manifest.json'
           $data = Get-Content -LiteralPath $manifest -Raw | ConvertFrom-Json -AsHashtable
-          if ($env:USE_TRACKED_IMAGES -eq 'true') {
-            # Fork/Dependabot runs receive no reader secret; current tracked
-            # inputs must still match every hash. Missing images fail closed.
-            $data['ci']['mode'] = 'tracked'
-            $manifest = Join-Path $env:RUNNER_TEMP 'tracked-image-inputs.json'
+          if ($env:USE_PUBLIC_IMAGES -eq 'true') {
+            # Fork/Dependabot runs use only the pinned public publication.
+            # Every source hash must match; private credentials are never used.
+            $data['ci']['mode'] = 'public'
+            $manifest = Join-Path $env:RUNNER_TEMP 'public-image-inputs.json'
             [IO.File]::WriteAllText($manifest, ($data | ConvertTo-Json -Depth 100), [Text.UTF8Encoding]::new($false))
           }
           $json = & python3 -B site/scripts/restore-image-inputs.py --manifest $manifest --project ozirix-dev/Reseptit --auto-root kuvat

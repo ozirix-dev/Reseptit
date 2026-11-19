@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor
 import datetime as dt
 import hashlib
 import hmac
@@ -126,6 +127,53 @@ def restore(bundle, bundle_sha, output, files):
     return output
 
 
+class NoPublicRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        raise ValueError('Public image redirects are not allowed')
+
+
+def restore_public(m, files, output):
+    """Only already-published production sources; never use private credentials."""
+    prefix = m.get('ci', {}).get('publicFallback', {}).get('urlPrefix', '')
+    if m.get('repository', '').lower() != 'ozirix-dev/reseptit' or not re.fullmatch(
+        r'https://[0-9a-f]{8}\.recipavo-site\.pages\.dev/kuvat/', prefix
+    ):
+        raise ValueError('Expected a pinned Recipavo public deployment')
+    for key, f in files.items():
+        path_key(key)
+        if f.get('role') != 'production-source':
+            raise ValueError('Only published production sources may use public restoration')
+    no_links(output)
+    if output.exists(): raise ValueError('A new, empty output path is required')
+    output.mkdir(parents=True)
+    def download(item):
+        key, f = item
+        destination = output / key
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        request = urllib.request.Request(prefix + urllib.parse.quote(key, safe='/'),
+            headers={'User-Agent': 'Recipavo-CI-ImageRestore/1.0'})
+        # No bearer tokens, S3 signer, cookies or redirects in this path.
+        opener = urllib.request.build_opener(NoPublicRedirect())
+        try:
+            size = 0
+            h = hashlib.sha256()
+            with opener.open(request, timeout=30) as response, destination.open('xb') as target:
+                if response.status != 200: raise ValueError('Unexpected public response')
+                for part in iter(lambda: response.read(1024 * 1024), b''):
+                    size += len(part)
+                    if size > f['bytes']: raise ValueError('Public image exceeds manifest size')
+                    h.update(part)
+                    target.write(part)
+            if size != f['bytes'] or h.hexdigest() != f['sha256']:
+                raise ValueError('Public image hash mismatch')
+        except Exception:
+            raise ValueError('Published image unavailable or changed; an owner build is required: ' + key) from None
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        list(pool.map(download, files.items()))
+    verify_root(output, files)
+    return output
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--manifest', type=Path, required=True)
@@ -150,17 +198,21 @@ def main():
     else:
         ci = m.get('ci', {})
         if m.get('migrationBlocked'): raise ValueError('Image version conflicts block CI migration')
-        if ci.get('mode') != 'r2': raise ValueError('R2 transport is not enabled; use verified tracked inputs until migration approval')
-        expected = ci['bundleSha256']
+        if ci.get('mode') not in ('r2', 'public'):
+            raise ValueError('Image transport is not enabled; use verified tracked inputs')
         scratch = Path(tempfile.mkdtemp(prefix='image-inputs-', dir=os.environ.get('RUNNER_TEMP')))
-        package = scratch / 'inputs.zip'
-        request = s3_request('GET', ci['endpoint'], ci['bucket'], ci['key'])
-        try:
-            with urllib.request.urlopen(request, timeout=60) as response, package.open('xb') as dest:
-                for part in iter(lambda: response.read(1024 * 1024), b''): dest.write(part)
-        except Exception:
-            raise RuntimeError('Private CI input download failed; no credentials are logged') from None
-        result = restore(package, expected, scratch / 'images', files).resolve()
+        if ci['mode'] == 'public':
+            result = restore_public(m, files, scratch / 'images').resolve()
+        else:
+            expected = ci['bundleSha256']
+            package = scratch / 'inputs.zip'
+            request = s3_request('GET', ci['endpoint'], ci['bucket'], ci['key'])
+            try:
+                with urllib.request.urlopen(request, timeout=60) as response, package.open('xb') as dest:
+                    for part in iter(lambda: response.read(1024 * 1024), b''): dest.write(part)
+            except Exception:
+                raise RuntimeError('Private CI input download failed; no credentials are logged') from None
+            result = restore(package, expected, scratch / 'images', files).resolve()
     if args.github_env and (not tracked or os.environ.get('PROJECT_IMAGE_ROOT')):
         if not os.environ.get('GITHUB_ENV'): raise ValueError('GITHUB_ENV is not available')
         if '\n' in str(result) or '\r' in str(result): raise ValueError('Invalid image root for GITHUB_ENV')
