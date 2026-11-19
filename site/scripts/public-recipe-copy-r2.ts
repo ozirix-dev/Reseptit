@@ -16,6 +16,35 @@ interface ReviewedRecipeCopy {
 // Display-only edits. Canonical ingredients, release evidence and calculation inputs
 // stay in their source files. Edits match the approved display text before this pass.
 const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
+  // #327 quality20 P2: image serving scope and the Thai-vs-holy basil adaptation.
+  // Verified against the sealed four-language sources and original WebP assets.
+  "keto-pannukakku/fi": {"notes":[["Hiilihydraattimäärä riippuu käytetyistä tuotteista ja annoskoosta. Laske se valitsemiesi tuotteiden pakkaustiedoista ja huomioi myös lisäkkeet ja täytteet.","Hiilihydraattimäärä riippuu käytetyistä tuotteista ja annoskoosta. Laske se valitsemiesi tuotteiden pakkaustiedoista ja huomioi myös lisäkkeet ja täytteet.\n- Kuvassa olevat mustikat, vadelmat ja pannukakun päälle lisätty kermavaahto ovat valinnaisia tarjoilulisukkeita. Neljän annoksen perusohjeen aineslista ja ilmoitetut annosravintoarvot koskevat pannukakkua ilman näitä lisukkeita. Taikinaan käytetty kerma sisältyy jo laskelmaan; erillinen kermavaahto ja marjat on laskettava lisäksi."]]},
+  "keto-pannukakku/en": {"notes":[["The carbohydrate content depends on the products used and the portion size. Calculate it from the labels of your chosen products, including any accompaniments and toppings.","The carbohydrate content depends on the products used and the portion size. Calculate it from the labels of your chosen products, including any accompaniments and toppings.\n- The pictured blueberries, raspberries and whipped cream added on top are optional serving extras. The original four-serving ingredient list and nutrition figures describe the pancake without these extras. Cream mixed into the batter is already counted; calculate the separate whipped cream and berries in addition."]]},
+  "keto-pannukakku/sv": {"notes":[["Kolhydratmängden beror på vilka produkter du använder och portionsstorleken. Beräkna den utifrån förpackningarnas näringsvärden och räkna även med tillbehör och fyllningar.","Kolhydratmängden beror på vilka produkter du använder och portionsstorleken. Beräkna den utifrån förpackningarnas näringsvärden och räkna även med tillbehör och fyllningar.\n- Blåbären, hallonen och vispgrädden ovanpå pannkakan på bilden är valfria serveringstillbehör. Ingredienslistan och näringsvärdena för grundreceptets fyra portioner gäller pannkakan utan dessa tillbehör. Grädden i smeten ingår redan i beräkningen; räkna till extra vispgrädde och bär separat."]]},
+  "keto-pannukakku/th": {"notes":[["ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับผลิตภัณฑ์ที่ใช้และขนาดเสิร์ฟ คำนวณจากข้อมูลโภชนาการบนบรรจุภัณฑ์ของผลิตภัณฑ์ที่เลือก โดยรวมเครื่องเคียง ไส้ และหน้าที่เพิ่มด้วย","ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับผลิตภัณฑ์ที่ใช้และขนาดเสิร์ฟ คำนวณจากข้อมูลโภชนาการบนบรรจุภัณฑ์ของผลิตภัณฑ์ที่เลือก โดยรวมเครื่องเคียง ไส้ และหน้าที่เพิ่มด้วย\n- บลูเบอร์รี ราสป์เบอร์รี และวิปครีมที่แต่งบนแพนเค้กในภาพเป็นเครื่องเคียงตามชอบ รายการส่วนผสมและค่าทางโภชนาการของสูตรพื้นฐาน 4 ที่คำนวณเฉพาะแพนเค้ก ไม่รวมเครื่องเคียงเหล่านี้ ครีมที่ผสมในแป้งนับรวมแล้ว แต่ต้องคำนวณวิปครีมที่เติมต่างหากและผลเบอร์รีเพิ่มเติม"]]},
+  "keto-pinaattiletut/fi": {"notes":[["Hiilihydraattimäärä riippuu käytetyistä tuotteista ja annoskoosta. Laske se valitsemiesi tuotteiden pakkaustiedoista ja huomioi myös lisäkkeet ja täytteet.","Hiilihydraattimäärä riippuu käytetyistä tuotteista ja annoskoosta. Laske se valitsemiesi tuotteiden pakkaustiedoista ja huomioi myös lisäkkeet ja täytteet.\n- Kuvassa on marjoja ja vaalea lisuke, mutta perusohje on suolainen pinaattilettu. Kuvan vaalean lisukkeen tarkkaa tuotetta ei ole tunnistettu. Marjat ja lisuke eivät sisälly kolmen annoksen aineslistaan eivätkä ilmoitettuihin annosravintoarvoihin. Letut voi tarjoilla sellaisinaan tai erikseen valitun suolaisen täytteen kanssa; laske kaikki lisukkeet erikseen."]]},
+  "keto-pinaattiletut/en": {"notes":[["The carbohydrate content depends on the products used and the portion size. Calculate it from the labels of your chosen products, including any accompaniments and toppings.","The carbohydrate content depends on the products used and the portion size. Calculate it from the labels of your chosen products, including any accompaniments and toppings.\n- The picture shows berries and a pale topping, but the base recipe is for savoury spinach pancakes. The exact product used for the pale topping has not been identified. Neither topping belongs to the three-serving ingredient list or the stated nutrition per serving. Serve the pancakes plain or with a separately chosen savoury filling; account for all extras separately."]]},
+  "keto-pinaattiletut/sv": {"notes":[["Kolhydratmängden beror på vilka produkter du använder och portionsstorleken. Beräkna den utifrån förpackningarnas näringsvärden och räkna även med tillbehör och fyllningar.","Kolhydratmängden beror på vilka produkter du använder och portionsstorleken. Beräkna den utifrån förpackningarnas näringsvärden och räkna även med tillbehör och fyllningar.\n- Bilden visar bär och ett ljust tillbehör, men grundreceptet är salta spenatplättar. Den exakta produkten i det ljusa tillbehöret har inte identifierats. Tillbehören ingår inte i ingredienslistan för tre portioner eller i de angivna näringsvärdena per portion. Servera plättarna som de är eller med valfri salt fyllning och räkna extra tillbehör separat."]]},
+  "keto-pinaattiletut/th": {"notes":[["ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับผลิตภัณฑ์ที่ใช้และขนาดเสิร์ฟ คำนวณจากข้อมูลโภชนาการบนบรรจุภัณฑ์ของผลิตภัณฑ์ที่เลือก โดยรวมเครื่องเคียง ไส้ และหน้าที่เพิ่มด้วย","ปริมาณคาร์โบไฮเดรตขึ้นอยู่กับผลิตภัณฑ์ที่ใช้และขนาดเสิร์ฟ คำนวณจากข้อมูลโภชนาการบนบรรจุภัณฑ์ของผลิตภัณฑ์ที่เลือก โดยรวมเครื่องเคียง ไส้ และหน้าที่เพิ่มด้วย\n- ในภาพมีผลเบอร์รีและเครื่องเคียงสีอ่อน แต่สูตรพื้นฐานเป็นแพนเค้กผักโขมรสเค็ม ไม่สามารถระบุชนิดของเครื่องเคียงสีอ่อนได้แน่ชัด ทั้งสองอย่างไม่อยู่ในรายการส่วนผสมสำหรับ 3 ที่ และไม่รวมในค่าทางโภชนาการต่อหนึ่งที่ เสิร์ฟแพนเค้กเปล่า ๆ หรือกับไส้คาวที่เลือกเอง และคำนวณเครื่องเคียงที่เพิ่มต่างหาก"]]},
+  "pad-kra-pao-vhh/fi": {"description":"Tässä vähähiilihydraattisessa pad kra pao -sovituksessa käytetään ainesluettelon thaibasilikaa, joka on eri yrtti kuin perinteisessä pad kra paossa usein käytetty pyhä basilika. Kalakastike ja chili maustavat porsaan jauhelihan, ja kukkakaaliriisi korvaa tavallisen riisin."},
+  "pad-kra-pao-vhh/en": {"description":"This low-carb pad kra pao adaptation uses the Thai basil listed in the ingredients, which differs from the holy basil commonly used in traditional versions. Fish sauce and chili season the ground pork, while cauliflower rice replaces regular rice."},
+  "pad-kra-pao-vhh/sv": {"description":"I den här kolhydratreducerade varianten av pad kra pao används thaibasilikan i ingredienslistan, inte den heliga basilika som ofta används i traditionella versioner. Fisksås och chili smaksätter fläskfärsen, och blomkålsris ersätter vanligt ris."},
+  "pad-kra-pao-vhh/th": {"description":"ผัดกะเพราสูตรคาร์โบไฮเดรตต่ำนี้ใช้ใบโหระพาไทยตามรายการส่วนผสม ไม่ใช่ใบกะเพราที่นิยมใช้ในสูตรดั้งเดิม น้ำปลาและพริกช่วยปรุงรสหมูบด และใช้ข้าวดอกกะหล่ำแทนข้าวสวย"},
+  // #327 bibimbap: Food Authority (Ruokavirasto) recommends sprouts thoroughly
+  // heated before eating. Keep sealed FI/EN/SV/TH source and GK evidence intact.
+  // https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/kasvikset-ja-hedelmat/huomioitavaa-itujen-kasittelyssa-ja-valmistamisessa-kotikeittiossa/
+  "bibimbap/fi": {
+    method: [["Ryöppää pinaatti ja pavunidut nopeasti kiehuvassa vedessä, valuta ja mausta tilkalla seesamiöljyä.", "Ryöppää pinaatti nopeasti kiehuvassa vedessä. Kuumenna pavunidut erikseen kiehuvassa vedessä kunnolla kauttaaltaan; pelkkä nopea kastaminen ei riitä. Valuta molemmat ja mausta tilkalla seesamiöljyä."]],
+  },
+  "bibimbap/en": {
+    method: [["Quickly blanch the spinach and bean sprouts in boiling water, drain and dress with a little sesame oil.", "Briefly blanch the spinach in boiling water. Cook the bean sprouts separately in boiling water until thoroughly heated through; a quick dip is not enough. Drain both and dress with a little sesame oil."]],
+  },
+  "bibimbap/sv": {
+    method: [["Förväll spenat och böngroddar snabbt i kokande vatten, låt rinna av och smaksätt med lite sesamolja.", "Förväll spenaten snabbt i kokande vatten. Koka böngroddarna separat i kokande vatten tills de är ordentligt genomhetta; en snabb doppning räcker inte. Låt båda rinna av och smaksätt med lite sesamolja."]],
+  },
+  "bibimbap/th": {
+    method: [["ลวกผักโขมกับถั่วงอกในน้ำเดือดสั้น ๆ สะเด็ดน้ำแล้วคลุกน้ำมันงาเล็กน้อย", "ลวกผักโขมในน้ำเดือดสั้น ๆ จากนั้นต้มถั่วงอกแยกในน้ำเดือดให้ร้อนทั่วถึงอย่างเพียงพอ ไม่ใช่แค่จุ่มน้ำเดือดอย่างรวดเร็ว สะเด็ดน้ำผักทั้งสองชนิดแล้วคลุกน้ำมันงาเล็กน้อย"]],
+  },
   "ananas-kanelijuoma-sitruunalla/fi": {
     "notes": [
       ["Vesimäärä ja mieto kaneliannos ovat tämän version mitoituksia.", "Vesimäärä ja pieni kanelimäärä on valittu tätä versiota varten."],
@@ -45,6 +74,36 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
   "avokado-banaanijaatelo/sv": {
     "method": [
       ["Puré tills den är slät.", "Mixa tills blandningen är slät."]
+    ]
+  },
+  "avokado-banaanijaatelo/th": {
+    "description": "ปั่นกล้วยแช่แข็งกับอะโวคาโดสุกให้เนียนเป็นไอศกรีม โยเกิร์ตรสธรรมชาติและน้ำเลมอนช่วยตัดความหวานของกล้วย",
+    "method": [
+      ["น้ำมะนาว", "น้ำเลมอน"]
+    ],
+    "ingredientNote": [
+      ["ประมาณหนึ่งมะนาว", "ประมาณหนึ่งผล"]
+    ]
+  },
+  "omenavaahtokarkit/en": {
+    "ingredientNote": [
+      ["peeled and without seed coat", "peeled and cored"]
+    ]
+  },
+  "omenavaahtokarkit/sv": {
+    "ingredientNote": [
+      ["skalad och utan fröskal", "skalade och urkärnade"]
+    ]
+  },
+  "omenavaahtokarkit/th": {
+    "ingredientNote": [
+      ["ปอกเปลือกและไม่มีเปลือกหุ้มเมล็ด", "ปอกเปลือกและเอาแกนกับเมล็ดออก"]
+    ]
+  },
+  "bataatti-mustikkakakku/th": {
+    "notes": [
+      ["จนกระทั่งส้อมจิ้มเข้าไปในมอลต์ได้ง่าย", "จนใช้ส้อมจิ้มเนื้อมันเทศได้ง่าย"],
+      ["ตักมอลต์ออกแล้วชั่งน้ำหนัก 440 กรัม", "ตักเนื้อมันเทศออกแล้วชั่ง 440 กรัม"]
     ]
   },
   "avokado-perunasampylat/en": {
@@ -465,11 +524,23 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
     "title": "โจ๊กข้าวโอ๊ตใส่สะระแหน่ นม และน้ำผึ้ง"
   },
   "punajuuri-suklaakakku/en": {
+    "ingredientNote": [
+      ["weighed when ripe and drained", "weighed cooked and drained"]
+    ],
+    "notes": [
+      ["300 grams when ripe", "300 g of cooked beetroot"]
+    ],
     "method": [
       ["Preheat the oven to 175°C with constant heat.", "Preheat the oven to 175 °C using top and bottom heat."]
     ]
   },
   "punajuuri-suklaakakku/sv": {
+    "ingredientNote": [
+      ["vägda när de är mogna och avrunna", "vägda kokta och avrunna"]
+    ],
+    "notes": [
+      ["300 gram när de är mogna", "300 g kokta rödbetor"]
+    ],
     "method": [
       ["Värm ugnen till 175°C med konstant värme.", "Värm ugnen till 175 °C med över- och undervärme."]
     ]
@@ -534,6 +605,85 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
       ["หุงข้าวสาร 150 กรัมในหม้อหุงข้าวตามคำแนะนำด้านบน", "ตวงข้าวหอมมะลิ SunRice Jasmine Fragrant แบบแห้ง 150 กรัมสำหรับสามที่ ใช้ข้าวสารแบบถุงและหลีกเลี่ยงข้าวสำเร็จรูปสำหรับไมโครเวฟ หุงในหม้อหุงข้าวโดยใช้น้ำตามปริมาณที่ระบุบนถุง เสิร์ฟข้าวทั้งหม้อทันทีขณะยังร้อน"]
     ]
   },
+  "munakasmuffinit/fi": {
+    method: [
+      ["Jaa seos vuokiin ja paista", "Jaa seos tasaisesti vuokiin ja paista"],
+      ["Anna muffinien levätä viisi minuuttia ennen tarjoilua.", "Anna muffinien levätä viisi minuuttia. Perusohjeesta tulee kuusi muffinssia. Yksi annos on kaksi muffinssia."],
+    ],
+  },
+  "munakasmuffinit/en": {
+    method: [
+      ["Divide among the six cups and bake", "Divide evenly among the six cups and bake"],
+      ["Let the muffins rest for five minutes before serving.", "Let the muffins rest for five minutes. The base batch makes six muffins, two per serving."],
+    ],
+  },
+  "munakasmuffinit/sv": {
+    method: [
+      ["Fördela smeten i de sex formarna och grädda", "Fördela smeten jämnt i de sex formarna och grädda"],
+      ["Låt muffinsarna vila i fem minuter före servering.", "Låt muffinsarna vila i fem minuter. Grundreceptet ger sex muffins, två per portion."],
+    ],
+  },
+  "munakasmuffinit/th": {
+    method: [
+      ["แบ่งส่วนผสมใส่พิมพ์ทั้ง 6 หลุม อบ", "แบ่งส่วนผสมเท่า ๆ กันใส่พิมพ์ทั้ง 6 หลุม แล้วอบ"],
+      ["พักมัฟฟินไว้ 5 นาทีก่อนเสิร์ฟ", "พักมัฟฟินไว้ 5 นาที สูตรตั้งต้นได้มัฟฟิน 6 ชิ้น เสิร์ฟที่ละ 2 ชิ้น"],
+    ],
+  },
+  "tonnikalamunakkaat-uunissa/fi": {
+    method: [
+      ["Jaa seos vuokiin.", "Jaa seos tasaisesti vuokiin."],
+      ["Anna jäähtyä muutama minuutti ennen irrottamista.", "Anna jäähtyä muutama minuutti ennen irrottamista. Perusohjeesta tulee kuusi pientä munakasta. Yksi annos on kaksi pientä munakasta."],
+    ],
+  },
+  "tonnikalamunakkaat-uunissa/en": {
+    method: [
+      ["Divide the mixture among the six cups.", "Divide the mixture evenly among the six cups."],
+      ["Let cool for a few minutes before removing from the tin.", "Let cool for a few minutes before removing from the tin. The base batch makes six mini omelettes, two per serving."],
+    ],
+  },
+  "tonnikalamunakkaat-uunissa/sv": {
+    method: [
+      ["Fördela smeten i de sex formarna.", "Fördela smeten jämnt i de sex formarna."],
+      ["Låt svalna några minuter innan de tas ur formen.", "Låt svalna några minuter innan de tas ur formen. Grundreceptet ger sex små omeletter, två per portion."],
+    ],
+  },
+  "tonnikalamunakkaat-uunissa/th": {
+    method: [
+      ["แบ่งส่วนผสมใส่พิมพ์ทั้ง 6 หลุม", "แบ่งส่วนผสมเท่า ๆ กันใส่พิมพ์ทั้ง 6 หลุม"],
+      ["พักให้เย็นลงสองสามนาทีก่อนแกะออกจากพิมพ์", "พักให้เย็นลงสองสามนาทีก่อนแกะออกจากพิมพ์ สูตรตั้งต้นได้ไข่อบ 6 ชิ้น เสิร์ฟที่ละ 2 ชิ้น"],
+    ],
+  },
+  "uunimuna-avokadot/fi": {
+    method: [
+      ["Koverra kuoppia hieman suuremmiksi lusikalla.", "Koverra kuoppia hieman suuremmiksi lusikalla. Säästä kaikki koverrettu hedelmäliha tarjoiluun."],
+      ["Pirskota sitruunamehu ja lisää ruohosipuli juuri ennen tarjoilua.", "Jaa avokadot, koverrettu hedelmäliha ja kypsennetyt munat kahteen yhtä suureen annokseen. Ota mukaan myös erillisessä vuoassa kypsennetty muna. Viimeistele sitruunamehulla ja ruohosipulilla."],
+    ],
+  },
+  "vhh-lihamureke/fi": {
+    method: [
+      ["Anna vetäytyä 10 minuuttia ennen viipalointia.", "Anna vetäytyä 10 minuuttia ennen viipalointia. Jaa koko mureke ja paistoneste kuuteen yhtä suureen annokseen."],
+    ],
+  },
+  "vhh-lihamureke/en": {
+    method: [
+      ["rest for 10 minutes and divide into 6 portions.", "then rest for 10 minutes. Divide the meatloaf and all the cooking juices into six equal portions."],
+    ],
+  },
+  "vhh-lihamureke/sv": {
+    method: [
+      ["låt vila 10 minuter och dela i 6 portioner.", "låt vila i 10 minuter. Fördela hela limpan och all steksky på sex lika stora portioner."],
+    ],
+  },
+  "vhh-lihamureke/th": {
+    method: [
+      ["พัก 10 นาทีแล้วแบ่งเป็น 6 ส่วน", "พัก 10 นาที แล้วแบ่งมีตโลฟพร้อมน้ำจากการอบทั้งหมดเป็น 6 ส่วนเท่า ๆ กัน"],
+    ],
+  },
+  "uuniporsas-kermakastikkeessa-vhh/fi": {
+    "method": [
+      ["Viipaloi porsas ja tarjoa kastikkeen kanssa.", "Viipaloi porsas. Jaa kaikki liha ja kastike kuuteen yhtä suureen annokseen."]
+    ]
+  },
   "vhh-kaalilaatikko/en": {
     "useSeoDescription": true,
     "nutritionBasis": "Use the exact ingredient compositions and edible weights listed. Keep all liquid, fat and spices in the dish. The salt quantity is unchanged from the original recipe."
@@ -584,6 +734,9 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
   "vietnamilainen-hu-tieu-aamiaiskeitto/sv": {
     "description": "Strimlat fläsk och risnudlar kokas i samma kastrull. Böngroddar och färsk koriander ger smak åt frukostsoppan för två. Servera med hela kokspadet."
   },
+  "piparkakkulatte-hunajalla/en": {
+    method: [["Vatkaa vielä hetki.", "Beat again briefly."]],
+  },
   "vietnamilainen-hu-tieu-aamiaiskeitto/th": {
     "description": "ต้มหมูสันนอกหั่นเส้นและเส้นก๋วยเตี๋ยวในหม้อเดียวกัน เติมถั่วงอกกับผักชีสด เสิร์ฟเป็นอาหารเช้าสองที่พร้อมน้ำซุปทั้งหมด"
   }
@@ -595,6 +748,12 @@ export function reviewedRecipeCopy(id: string, locale: RecipeLocale): ReviewedRe
 
 export function applyCopyEdits(text: string, edits: CopyEdits = []): string {
   return edits.reduce((current, [before, after]) => current.replaceAll(before, after), text);
+}
+
+export function applyReviewedGramListSpacing(text: string, edits: CopyEdits = []): string {
+  const spacing = edits.filter(([before, after]) =>
+    before.replace(/(?<=\p{L}),(?=\d+(?:,\d+)?[ \t]+g\b)/gu, ", ") === after);
+  return spacing.reduce((current, [before, after]) => current.replaceAll(before, () => after), text);
 }
 
 const imageNotes = {

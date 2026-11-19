@@ -112,3 +112,9 @@ Simuloitua sisältöä ei lisätä julkaisuun.
 Katso [V1.5-mittausraportti](reports/2026-10-22-v1-5-responsive-images.md).
 Sharpin ylläpitodokumentit: [asennus](https://sharp.pixelplumbing.com/install/)
 ja [WebP-asetukset](https://sharp.pixelplumbing.com/api-output/#webp).
+
+
+## Alkuperäisten säilytys ja palautus
+
+Katso [kuvien elinkaari](image-lifecycle.md): paikallinen säilytystarve,
+Proton-arkistoinnin pilotti ja varmennetun palautuksen rajat.

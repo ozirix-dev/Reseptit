@@ -1,3 +1,4 @@
+import type { GkPortionCoverage, PortionCarbs, PortionEvidence } from "../features/recipes/gk-portion";
 import type { GlycemicLoadPilotPublicResult } from "../generated/glycemic-load-pilot.generated";
 import type { GkOnlyVariant, GkVersionCoverage } from "../features/recipes/gk-only-types";
 import { homepagePicks, type HomepageTopic } from "../features/recipes/home-preview";
@@ -27,12 +28,22 @@ export interface RouteContent {
   translations: TranslationLink[];
   catalog?: RecipeCatalog;
   pagination?: Omit<RecipeLibraryPageData<RecipeSummary>, "items">;
-  glycemicRecipe?: { result: GlycemicLoadPilotPublicResult | null; variants: GkOnlyVariant[] };
+  glycemicRecipe?: {
+    result: GlycemicLoadPilotPublicResult | null;
+    variants: GkOnlyVariant[];
+    portionEvidence?: PortionEvidence;
+    pending?: boolean;
+    reviewedNotesHtml?: string;
+  };
   glycemicOverview?: {
     results: GlycemicLoadPilotPublicResult[];
     variants: GkOnlyVariant[];
     coverage: GkVersionCoverage;
     reviewedCount: number;
+    portionCoverage: GkPortionCoverage;
+    carbsByRecipe?: Record<string, PortionCarbs>;
+    knownIngredientNames?: Record<string, Partial<Record<RecipeLocale, string>>>;
+    portions?: Record<string, PortionEvidence>;
   };
 }
 export const localeIndexes: Record<RecipeLocale, string> = { fi: "/", en: "/en/recipes/", sv: "/sv/recept/", th: "/th/recipes/" };

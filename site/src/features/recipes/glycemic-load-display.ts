@@ -5,6 +5,7 @@ export interface GlycemicLoadDisplayCandidate {
   boundedPolyolC?: boolean;
   status: "CALCULATED" | "INSUFFICIENT SOURCE DATA";
   glycemicLoadPerServing: number | null;
+  unroundedGlycemicLoadPerServing?: number | null;
   glycemicLoadRangePerServing?: { min: number; max: number } | null;
   omittedAvailableCarbohydratePerServingG?: number;
   confidence: "HIGH" | "MEDIUM" | "LOW" | null;

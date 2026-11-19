@@ -1,7 +1,10 @@
 import successors from "../../meta/recipe-successors.json";
+import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 import { gkVariantScope } from "../src/features/recipes/gk-estimate-scope";
+import { originalPortionCarbs, verbalGkForPortion } from "../src/features/recipes/gk-portion";
 import { publicSafetyHold } from "./build-content";
 import { f25SourceReleaseGatePath } from "./f25-source-release-gate";
+import { gkResearchCalculationContextHash } from "./gk-research-decisions";
 import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 import { indexPublicRecipes, recipeLocales } from "./recipe-public-state";
 import { publicRecipeQualityHold } from "./recipe-quality-holds";
@@ -55,8 +58,10 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
   const reviews = new Map(inputs.review.rows.map(row => [`${row.recipe_id}:${row.locale}`, row]));
   const nutrition = new Map(inputs.nutrition.inventory.map(row => [row.recipe_id, row]));
   const gkResults = new Map(inputs.glycemic.results.map(row => [row.recipeId, row]));
+  const gkInputById = new Map(inputs.glycemic.calculationInputs.map(row => [row.recipeId, row]));
   const gkPending = new Map(inputs.glycemic.newPublicGkPendingSources.map(row => [row.recipeId, row]));
   const gkPublic = new Map(inputs.publicGk.map(row => [row.recipeId, row]));
+  const unreviewedGkInputs = new Set(inputs.glycemic.unreviewedAutoIncludedRecipeIds);
   const gkVariants = groupBy(inputs.glycemic.gkOnlyVariants, row => row.recipeId);
   const publicVariantIds = new Set(inputs.publicVariants.map(row => row.versionId));
   const f25 = new Map(inputs.f25.map(row => [row.recipe_id, row]));
@@ -122,16 +127,40 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
         } : null };
     });
     const gk = gkResults.get(id);
+    const gkInput = gkInputById.get(id);
     const pending = gkPending.get(id);
-    const visibleGk = gkPublic.get(id);
-    if (fi && !visibleGk && !pending) conflicts.push({ recipeId: id, code: "missing-public-gk-disposition", paths: [source.file] });
+    const nutritionWithheld = withholdF25Nutrition(id, "fi");
+    const hasWholePortionCarbs = publicState === "visible" && !nutritionWithheld && !!fi &&
+      originalPortionCarbs(fi.nutrition, inputs.publicGkPortions[id]) !== null;
+    const visibleGk = nutritionWithheld ? undefined : gkPublic.get(id);
+    const publicOriginalVerbalGk = publicState === "visible" && visibleGk?.status === "INSUFFICIENT SOURCE DATA"
+      ? verbalGkForPortion(inputs.publicGkPortions[id]?.verbal, 1) : null;
+    if (fi && !visibleGk && !pending && !nutritionWithheld) conflicts.push({ recipeId: id, code: "missing-public-gk-disposition", paths: [source.file] });
     if (pending && pending.sourceBlobSha !== source.blob) throw Error(`GK pending source mismatch: ${source.file}`);
     if (pending) currentBlockers.push({ scope: "glycemic-load", code: pending.reason });
+    const release = inputs.glycemic.originalReleaseBindings?.[id];
+    const rawReleaseMatches = release?.sourcePath === source.file && release.sourceSha256 === source.hash;
+    const releasedRange = gk?.glycemicLoadRangePerServing;
+    const visibleRange = visibleGk?.glycemicLoadRangePerServing;
+    const releaseMatchesPublic = rawReleaseMatches && publicState === "visible" &&
+      gk?.status === "CALCULATED" && visibleGk?.status === "CALCULATED" &&
+      (visibleGk.glycemicLoadPerServing != null || visibleRange != null) &&
+      release.servings === gk.servings && release.servings === fi?.servings &&
+      gk.glycemicLoadPerServing === release.point && release.point === visibleGk.glycemicLoadPerServing &&
+      releasedRange?.min === release.range?.min && release.range?.min === visibleRange?.min &&
+      releasedRange?.max === release.range?.max && release.range?.max === visibleRange?.max;
+    const legacySourceDifference = inputs.glycemic.recipeBindingMismatches.includes(id);
+    const presentationDifferences = inputs.originalReleasePresentationDifferences.get(id);
+    const historicalSourceDifference = legacySourceDifference && releaseMatchesPublic && presentationDifferences?.length === 0;
     const bindingDifferences = [
-      ...(inputs.glycemic.recipeBindingMismatches.includes(id) ? ["source"] : []),
+      ...(legacySourceDifference && !historicalSourceDifference ? ["source"] : []),
       ...(inputs.glycemic.calculationInputMismatches.includes(id) ? ["input"] : []),
       ...(inputs.glycemic.calculationEvidenceMismatches.includes(id) ? ["evidence"] : []),
     ];
+    const unreviewedAutoIncluded = unreviewedGkInputs.has(id) && publicState === "visible" &&
+      release === undefined && pending === undefined && bindingDifferences.length === 3 &&
+      gk?.status === "INSUFFICIENT SOURCE DATA" && gk.glycemicLoadPerServing === null && releasedRange === null &&
+      visibleGk?.status === "INSUFFICIENT SOURCE DATA" && visibleGk.glycemicLoadPerServing === null && visibleRange === null;
     const variants = (gkVariants.get(id) ?? []).map(variant => ({
       versionId: variant.versionId, inputSha256: variant.inputSha256, scope: gkVariantScope(variant),
       level: variant.level, public: publicVariantIds.has(variant.versionId),
@@ -152,8 +181,20 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
       glycemicLoadStatus: {
         publicOriginal: visibleGk ? { status: visibleGk.status, point: visibleGk.glycemicLoadPerServing,
           range: visibleGk.glycemicLoadRangePerServing, blockerCategories: [...new Set(visibleGk.incompleteReasons.map(r => r.category))].sort() } : null,
+        ...(publicOriginalVerbalGk !== null ? { publicOriginalVerbalGk } : {}),
+        hasWholePortionCarbs,
         auditStatus: gk?.status ?? (pending ? "PENDING REVIEW" : "NOT AUDITED"),
-        auditedSourceHash: inputs.glycemic.sourceHashes[id] ?? null, bindingDifferences, variants,
+        auditedSourceHash: inputs.glycemic.sourceHashes[id] ?? null,
+        calculationInputSha256: inputs.glycemic.calculationInputHashes[id] ?? null,
+        calculationEvidenceSha256: inputs.glycemic.calculationEvidenceHashes[id] ?? null,
+        calculationContextSha256: gkInput ? gkResearchCalculationContextHash(gkInput) : null,
+        bindingDifferences,
+        ...(unreviewedAutoIncluded ? { unreviewedAutoIncluded: true } : {}),
+        ...(historicalSourceDifference ? { historicalSourceBindingDifference: true } : {}),
+        ...(releaseMatchesPublic ? { verifiedRawGkRelease: release } : {}),
+        ...(legacySourceDifference && rawReleaseMatches && publicState === "visible" && presentationDifferences?.length
+          ? { releasePresentationDifferences: presentationDifferences } : {}),
+        variants,
       },
       imageStatus: { state: imageState, path: imagePath, gitBlob: imageBlob },
       currentBlockers,
@@ -166,6 +207,7 @@ export function projectRecipeState(sourceCommit: string, inputs: RecipeStateInpu
         ...(languages.some(l => l.review) ? [semanticEvidencePath, humanReviewPath] : []),
         ...(nutritionRow?.calculationEvidence ? [nutritionRow.calculationEvidence] : []),
         ...(gk || variants.length ? [gkBindingPath] : []), ...(pending ? [gkPendingPath] : []),
+        ...(releaseMatchesPublic ? [release.evidencePath] : []),
         ...(f25Decision || previousF25 ? [f25SourceReleaseGatePath] : []),
         ...(imageBlob && imagePath ? [imagePath] : [])],
     }];

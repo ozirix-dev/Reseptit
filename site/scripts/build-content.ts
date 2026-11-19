@@ -1,6 +1,6 @@
 import { recipeSeoDescriptions } from "./recipe-seo-descriptions";
 import { applyCopyEdits, reviewedRecipeCopy, reviewedImageNote } from "./public-recipe-copy-r2";
-import { projectPublicRecipeMethodCopy, publicIngredientNote, publicRecipeDescription, publicRecipeTitle } from "./public-recipe-copy";
+import { projectPublicRecipeMethodCopy, publicIngredientNote, publicRecipeDescription, publicRecipeTitle, reviewedPublicCookingMethod } from "./public-recipe-copy";
 import { projectEggMethod, projectIngredientList } from "./public-ingredient-list";
 import { siteTarget } from "../src/content/site-target";
 import { recipeDifficultyLabel } from "../src/features/recipes/recipe-i18n";
@@ -39,7 +39,9 @@ const siteDir = path.resolve(import.meta.dirname, "..");
 const repoDir = path.resolve(process.env.RECIPE_SOURCE_ROOT ?? path.resolve(siteDir, ".."));
 const outputDir = path.join(siteDir, "src", "generated");
 const baseUrl = siteTarget.baseUrl;
-const imageSourceDir = path.join(repoDir, "kuvat");
+const imageSourceDir = process.env.PROJECT_IMAGE_ROOT
+  ? path.resolve(process.env.PROJECT_IMAGE_ROOT)
+  : path.join(repoDir, "kuvat");
 const localeBase: Record<RecipeLocale, string> = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" };
 
 function routeForRecipe(locale: RecipeLocale, slug: string): string {
@@ -92,6 +94,10 @@ function section(markdown: string, titles: string[]): string {
   const start = match.index + match[0].length;
   const next = markdown.slice(start).search(/^##\s+/m);
   return markdown.slice(start, next < 0 ? undefined : start + next).trim();
+}
+
+export function recipePreparationSections(markdown: string) {
+  return { instructions: section(markdown, instructionHeadings), notes: section(markdown, noteHeadings) };
 }
 
 function stripHtml(value: string): string {
@@ -274,7 +280,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       : [];
     imagePaths.forEach((imagePath) => publishedImagePaths.add(imagePath));
     assertClassifiedRecipeSections(parsed.content, relativePath);
-    const instructions = section(publicMarkdown, instructionHeadings);
+    const { instructions, notes: sourceNotes } = recipePreparationSections(publicMarkdown);
     const safetyHold = publicSafetyHold(data.recipe_id, data.language);
     const visibleHold = safetyHold ?? publicRecipeQualityHold(data.recipe_id, data.language);
     if (!instructions) throw new Error(`Published recipe has no instructions: ${filePath}`);
@@ -283,7 +289,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       ? section(publicMarkdown, [nutritionBasisHeading])
       : "";
     const notes = [
-      section(publicMarkdown, noteHeadings),
+      sourceNotes,
       nutritionBasis && `### ${nutritionBasisHeading}\n\n${nutritionBasis}`,
     ].filter(Boolean).join("\n\n");
     const copy = reviewedRecipeCopy(data.recipe_id, data.language);
@@ -319,9 +325,11 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     const editorialDescription = copy?.description
       ?? (copy?.useSeoDescription ? seoDescription : undefined)
       ?? publicRecipeDescription(data.recipe_id, data.url_slug, data.language);
+    const publicCookingMethod = reviewedPublicCookingMethod(data.recipe_id, data.cooking_method);
     recipes.push({
       kind: "recipe", recipeId: data.recipe_id, slug: data.url_slug, locale: data.language,
       title: copy?.title ?? publicRecipeTitle(data.recipe_id, data.language, data.title), category: data.category, ...(data.additional_categories?.length ? { additionalCategories: data.additional_categories } : {}), dietClass: data.diet_class ?? null, ...(dietTags.length ? { dietTags } : {}), ...(data.gluten_free === true ? { glutenFree: true } : {}), routePath: routeForRecipe(data.language, data.url_slug),
+      ...(publicCookingMethod ? { cookingMethod: publicCookingMethod } : {}),
       description: recipeDescription(publicMarkdown, descriptionSection, data.language, data.ingredients, {
         hold: visibleHold?.description, editorial: editorialDescription, fallback: seoDescription,
       }),

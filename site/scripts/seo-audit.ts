@@ -13,6 +13,7 @@ import { privacyCopy, privacyPaths } from "../src/features/privacy/privacy-copy"
 import type { RecipeEntry, RecipeLocale } from "../src/types/content";
 import { formatRecipeIngredient } from "../src/features/recipes/servings";
 import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
+import { recipeStepName } from "../src/features/recipes/instruction-metadata";
 
 const staging = resolveSiteTarget(process.env.RECIPAVO_PREVIEW_ORIGIN);
 export const siteBase = staging.baseUrl;
@@ -105,17 +106,47 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
     const data = JSON.parse(jsonScripts[0].content);
     const withholding = withholdF25Nutrition(recipe.recipeId, recipe.locale);
     const nutrition = Object.fromEntries(Object.entries({ carbohydrateContent: recipe.nutrition.carbsTotalG, proteinContent: recipe.nutrition.proteinG, fatContent: recipe.nutrition.fatG }).filter(([, n]) => !withholding && n !== null).map(([k, n]) => [k, `${n} g`]));
+    // Permit only the explicitly reviewed natto source override, and only when
+    // the public notes corroborate it. Unknown structured claims remain blocked.
+    const nattoMethod = recipe.recipeId === "japanilainen-natto-riisikulho"
+      && isDeepStrictEqual(recipe.cookingMethod, ["keittäminen"])
+      && recipe.notesHtml.includes({
+        fi: "Valmistustapa: keittäminen.", en: "Cooking method: boiling.",
+        sv: "Tillagningssätt: kokning.", th: "วิธีปรุง: การต้ม",
+      }[recipe.locale])
+      ? { fi: "Keittäminen", en: "Boiling", sv: "Kokning", th: "การต้ม" }[recipe.locale]
+      : undefined;
+    check(!recipe.cookingMethod?.length || Boolean(nattoMethod),
+      "COOKING_METHOD_SOURCE", "Cooking method must be source-reviewed and visible in the recipe notes");
     const expectedData = JSON.parse(JSON.stringify({
       "@context": "https://schema.org", "@type": "Recipe", name: recipe.title, description: recipe.description || undefined,
-      inLanguage: recipe.locale, recipeCategory: recipe.category, keywords: recipe.tags.length ? recipe.tags.join(", ") : undefined,
+      inLanguage: recipe.locale, recipeCategory: recipe.category,
+      ...(nattoMethod ? { cookingMethod: nattoMethod } : {}),
+      keywords: recipe.tags.length ? recipe.tags.join(", ") : undefined,
       ...(recipe.image ? { image: [recipe.image.src] } : {}), recipeYield: String(recipe.servings),
       recipeIngredient: expectedIngredients,
-      recipeInstructions: [...(recipe.ingredientPreparation ?? []), ...recipe.instructionsText]
-        .map(text => ({ "@type": "HowToStep", text })),
+      recipeInstructions: [
+        ...(recipe.ingredientPreparation ?? []).map((text, index) => ({
+          "@type": "HowToStep", text, url: `${siteBase}${expected.route}#recipe-prep-${index + 1}`,
+        })),
+        ...recipe.instructionsText.map((text, index) => ({
+          "@type": "HowToStep", text, name: recipeStepName(recipe, text),
+          url: recipe.instructionStepsHtml?.length === recipe.instructionsText.length
+            ? `${siteBase}${expected.route}#recipe-step-${index + 1}`
+            : undefined,
+        })),
+      ],
       totalTime: recipe.timeTotalMin ? `PT${recipe.timeTotalMin}M` : undefined,
       ...(Object.keys(nutrition).length ? { nutrition: { "@type": "NutritionInformation", ...nutrition } } : {}),
     }));
     check(isDeepStrictEqual(data, expectedData), "JSONLD_SOURCE", "Structured data differs from actual content (including nutrition, steps and unsupported extra claims)");
+    const stepIds = tags(html, "li").map(item => item.id);
+    for (const step of expectedData.recipeInstructions) {
+      if (!step.url) continue;
+      const fragment = new URL(step.url).hash.slice(1);
+      check(stepIds.filter(id => id === fragment).length === 1, "JSONLD_STEP_TARGET",
+        `Expected one visible list item for #${fragment}`);
+    }
     check(!!recipe.image && !!data.name && Array.isArray(data.image) && data.image.length > 0, "GOOGLE_REQUIRED", "Google Recipe requires name and image");
   } catch { check(false, "JSONLD_PARSE", "Invalid JSON-LD JSON"); }
   if (recipe.image) {

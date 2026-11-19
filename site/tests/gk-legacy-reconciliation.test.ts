@@ -81,7 +81,7 @@ test('serabi and apam balik retain only the sealed thin-version GK', () => {
  }
 });
 
-test('Live original results preserve frozen history plus the exact reviewed transitions; all87 variants and macros stay identical',()=>{
+test('Live original results preserve frozen history, the 87 variants and exact reviewed transitions',()=>{
  const read = (file: string) => restoreRecipeAuditSnapshot(file, readLive(file));
  const archivedJson = (file: string) => JSON.parse(read(file));
  assertOriginalContentTransition(report);
@@ -107,7 +107,20 @@ test('Live original results preserve frozen history plus the exact reviewed tran
    Object.hasOwn(before.variantHashes, variantKey(v)));
  assert.deepEqual(historicalVariants.map(variantKey).sort(), Object.keys(before.variantHashes).sort());
  for(const v of historicalVariants)assert.equal(sha(v),before.variantHashes[variantKey(v)],v.recipeId);
- const completePublishedInventory = restoreAuditInventory(json('tmp/nutrition/audit.json').inventory) as Array<{recipe_id:string;source_path:string;status:string}>;
+ const completePublishedInventory = restoreAuditInventory(json('tmp/nutrition/audit.json').inventory) as Array<{
+  recipe_id: string;
+  source_path: string;
+  status: string;
+  calculationEvidence: string | null;
+  values: Record<string, number | null>;
+  recalculatedValues: Record<string, number | null> | null;
+  evidenceErrors: string[];
+  uncertainties: string[];
+ }>;
+ const alooParathaId = 'intialainen-aloo-paratha';
+ const historicalAlooParatha = archivedJson('docs/nutrition/audit.json').inventory.find((row: {recipe_id: string}) => row.recipe_id === alooParathaId);
+ assert.ok(historicalAlooParatha);
+ assert.equal(completePublishedInventory.filter(row => row.recipe_id === alooParathaId).length, 1);
  const inventory = completePublishedInventory.filter((row) => {
    const reviewedPin = frozenKarnivoreFi3Blobs[row.recipe_id];
    if (!reviewedPin) return true;
@@ -117,6 +130,33 @@ test('Live original results preserve frozen history plus the exact reviewed tran
    assert.equal(actualBlob, reviewedPin, `${row.recipe_id}: reviewed source blob changed`);
    assert.equal(row.status, 'ESTIMATE WITH EVIDENCE', `${row.recipe_id}: nutrition evidence must pass`);
    return false;
+ }).map((row) => {
+   if (row.recipe_id === "japanilainen-okayu-umeboshipluumulla" && row.calculationEvidence !== null) {
+    // Only the scoped carbohydrate estimate was added. The macro inventory remains withheld.
+    assert.equal(row.calculationEvidence, "docs/nutrition/calculations/japanilainen-okayu-umeboshipluumulla.json");
+    assert.equal(row.status, "INSUFFICIENT SOURCE DATA");
+    assert.deepEqual(row.recalculatedValues, row.values);
+    assert.ok(Object.values(row.values).every(value => value === null));
+    assert.deepEqual(row.evidenceErrors, []);
+    assert.deepEqual(row.uncertainties, []);
+    const errors = ["Calculation evidence file is missing"];
+    return {...row, status: "MISSING", calculationEvidence: null,
+      recalculatedValues: null, evidenceErrors: errors, uncertainties: errors};
+   }
+   if (row.recipe_id !== alooParathaId) return row;
+   const keys = Object.keys(historicalAlooParatha.values);
+   assert.deepEqual(row, {
+     ...historicalAlooParatha,
+     values: Object.fromEntries(keys.map(key => [key, null])),
+     status: 'INSUFFICIENT SOURCE DATA',
+     recalculatedValues: null,
+     carbohydrateDefinition: 'NOT DOCUMENTED',
+     totalCarbohydrateDefinition: 'NOT VERIFIED',
+     brandAndRawWeightEvidence: 'NOT VERIFIED',
+     missingFields: keys,
+     uncertainties: ['Fineli #310 (MAA-ARTISOKKA) was used for peeled potato. The predecessor also lacks a defined potato preparation and a weighed amount of serving yoghurt.'],
+   });
+   return historicalAlooParatha;
  });
  for (const id of Object.keys(frozenKarnivoreFi3Blobs)) {
    assert.equal(completePublishedInventory.filter(row => row.recipe_id === id).length, 1, id);
@@ -192,6 +232,14 @@ test('Live original results preserve frozen history plus the exact reviewed tran
       row.source_path+' reviewed C13 notes must match source');
     return {...row,notes:(frozen.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n',lineEnding),
       source_content_hash:createHash('sha256').update(frozen).digest('hex')};
+   }
+   if (row.source_path === 'reseptit/aamupalat/vietnamilainen-pho-ga-aamuksi.md') {
+    const original = read(row.source_path).replaceAll('\r\n', '\n');
+    const displayed = projectTranslationAuditSource(row.source_path, original);
+    assert.equal(row.source_content_hash, createHash('sha256').update(original).digest('hex'));
+    assert.match(displayed, /vähintään 75 °C/);
+    assert.equal(normalNotes, displayed.split('## Muistiinpanot')[1]!.trim().replaceAll('\n', lineEnding));
+    return {...row, notes: (original.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n', lineEnding)};
    }
    if (b21CanonicalHistoryPaths.some(file => file === row.source_path)) {
     const published=read(row.source_path).replaceAll('\r\n','\n');
