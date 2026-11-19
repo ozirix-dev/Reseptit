@@ -5,6 +5,9 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const secretNames = ['IMAGE_CI_ACCESS_KEY_ID', 'IMAGE_CI_SECRET_ACCESS_KEY', 'IMAGE_CI_SESSION_TOKEN'];
+export function trackedInputsComplete(root, files) {
+  return files.filter(file => file.build).every(file => existsSync(path.join(root, file.path)));
+}
 export function inputMode(env, trackedExists) {
   if (env.PROJECT_IMAGE_ROOT) return 'explicit';
   if (trackedExists) return 'tracked';
@@ -27,7 +30,7 @@ export function productionBuild(env = process.env) {
   if (manifest.repository !== 'ozirix-dev/Reseptit') throw new Error('Unexpected image manifest repository.');
   if (!env.npm_execpath || !existsSync(env.npm_execpath)) throw new Error('Invoke this build using npm run build:production.');
   const tracked = path.join(repo, 'kuvat');
-  const mode = inputMode(env, existsSync(tracked));
+  const mode = inputMode(env, trackedInputsComplete(tracked, manifest.files));
   let temporary = null;
   try {
     let selectedManifest = manifestPath;
