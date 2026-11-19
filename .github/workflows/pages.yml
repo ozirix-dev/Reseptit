@@ -72,6 +72,9 @@ jobs:
           Add-Content -LiteralPath $env:GITHUB_OUTPUT -Value "root=$($result.imageRoot)"
           Write-Host "Verified $($result.files) image inputs (mode=$($data['ci']['mode']))"
 
+      - name: Verify production image bootstrap
+        run: node --test site/scripts/build-production.test.mjs
+
       - name: Verify changed-path selector
         run: node site/scripts/select-ci-checks.test.mjs
 
