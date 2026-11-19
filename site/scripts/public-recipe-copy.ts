@@ -854,15 +854,15 @@ const quality20P3Copy: Readonly<Record<string, Partial<Record<RecipeLocale, {
     },
     "en": {
       "evidence": "Spread in a serving dish and pour olive oil on top. Sprinkle paprika on top.",
-      "note": "The pictured pita bread is an optional serving accompaniment, not part of the four-serving recipe's ingredient list or nutrition estimate. The listed olive oil and paprika are included; calculate the bread separately if served."
+      "note": "The pictured pita bread is an optional serving accompaniment, not part of the four-serving recipe's ingredient list or nutrition estimate. Olive oil and paprika appear in the ingredient list; calculate the bread separately if served."
     },
     "sv": {
       "evidence": "Bred ut i ett serveringsfat och häll olivolja ovanpå. Strö över paprikapulver.",
-      "note": "Pitabrödet på bilden är ett valfritt serveringstillbehör och ingår inte i grundreceptets ingredienslista för fyra portioner eller i näringsvärdet. Den angivna olivoljan och paprikakryddan ingår; räkna brödet separat om det serveras."
+      "note": "Pitabrödet på bilden är ett valfritt serveringstillbehör och ingår inte i grundreceptets ingredienslista för fyra portioner eller i näringsvärdet. Olivolja och paprikapulver finns i ingredienslistan; räkna brödet separat om det serveras."
     },
     "th": {
       "evidence": "ตักใส่จานเสิร์ฟแล้วราดน้ำมันมะกอกลงไป โรยผงปาปริก้าด้านบน",
-      "note": "ขนมปังพิตาในภาพเป็นเครื่องเคียงตามชอบ ไม่อยู่ในรายการส่วนผสมหรือค่าทางโภชนาการของสูตรพื้นฐาน 4 ที่ แต่น้ำมันมะกอกและผงปาปริก้าในรายการส่วนผสมรวมอยู่แล้ว หากเสิร์ฟกับขนมปังต้องคำนวณเพิ่มต่างหาก"
+      "note": "ขนมปังพิตาในภาพเป็นเครื่องเคียงตามชอบ ไม่อยู่ในรายการส่วนผสมหรือค่าทางโภชนาการของสูตรพื้นฐาน 4 ที่ น้ำมันมะกอกและผงปาปริก้ามีอยู่ในรายการส่วนผสม หากเสิร์ฟกับขนมปังต้องคำนวณเพิ่มต่างหาก"
     }
   },
   "paneer-tikka": {
