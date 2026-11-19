@@ -7,11 +7,26 @@ import { parseMarkdown } from "../src/content/markdown";
 import { recipeBindingHash } from "./glycemic-load-recipe-binding";
 import { calculate, round, type Calculation, type FoodRecord, type IngredientInput } from "./nutrition-model";
 import { verifyNutritionEvidence } from "./nutrition-evidence";
-import { isRecoveryEvidence } from "./gk80-uunikanapasta";
-import { isScopedPolyolEvidence } from "./gk80-polyol-c";
+import { isRecoveryEvidence, loadRecovery } from "./gk80-uunikanapasta";
+import { isScopedPolyolEvidence, loadScopedPolyolC } from "./gk80-polyol-c";
 
 type CompositionMatch = { index: number } & Partial<Omit<IngredientInput, "item" | "amount" | "unit">>;
 type NutritionRecipe = Parameters<typeof verifyNutritionEvidence>[0];
+
+const scopedNetCarbohydrateCopy = {
+  cabbage: {
+    fi: "Nettohiilihydraatin malliarvio pätee, kun jaat koko ruoan kuuteen yhtä suureen annokseen ja mukana ovat kaikki valmistuksessa käytetyt nesteet, rasvat ja mausteet. Laske lisukkeet erikseen.",
+    en: "The modeled net carb estimate applies when you divide the whole dish into six equal servings, including all cooking liquid, fat and seasonings. Count side dishes separately.",
+    sv: "Modellberäkningen av nettokolhydrater gäller när du delar hela rätten i sex lika stora portioner, inklusive all kokvätska, allt fett och alla kryddor. Räkna tillbehör separat.",
+    th: "ค่าประมาณคาร์โบไฮเดรตสุทธิจากแบบจำลองนี้ใช้เมื่อแบ่งอาหารทั้งหมดเป็น 6 ที่เท่า ๆ กัน โดยรวมของเหลวจากการปรุง ไขมัน และเครื่องปรุงทั้งหมด คิดคาร์โบไฮเดรตของเครื่องเคียงแยกต่างหาก",
+  },
+  pasta: {
+    fi: "Nettohiilihydraatin malliarvio pätee, kun jaat koko punnitun reseptin neljään yhtä suureen annokseen ja mukana ovat kaikki ainekset ja paistonesteet. Laske lisukkeet erikseen.",
+    en: "The modeled net carb estimate applies when you divide the whole weighed recipe into four equal servings, including all ingredients and cooking juices. Count side dishes separately.",
+    sv: "Modellberäkningen av nettokolhydrater gäller när du delar hela det uppvägda receptet i fyra lika stora portioner, inklusive alla ingredienser och all steksky. Räkna tillbehör separat.",
+    th: "ค่าประมาณคาร์โบไฮเดรตสุทธิจากแบบจำลองนี้ใช้เมื่อแบ่งอาหารที่ชั่งส่วนผสมตามสูตรเป็น 4 ที่เท่า ๆ กัน โดยรวมส่วนผสมและน้ำที่ออกมาระหว่างปรุงทั้งหมด คิดคาร์โบไฮเดรตของเครื่องเคียงแยกต่างหาก",
+  },
+} satisfies Record<string, LocalizedText>;
 
 const sideFoods = {
   "fineli-30346-release-20": {
@@ -279,6 +294,24 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
   }
   if (raw) {
     const input = JSON.parse(raw) as Calculation;
+    const recovery = isRecoveryEvidence(input);
+    if (recovery || isScopedPolyolEvidence(input)) {
+      // Keep the source model separate from ordinary available-carbohydrate evidence.
+      const { e, result } = recovery ? await loadRecovery(root, recipeId) : await loadScopedPolyolC(root, recipeId);
+      const versionHashes = "recoveryC" in e ? e.recoveryC.versionHashes : e.scopedPolyolC.versionHashes;
+      const originalHash = Object.entries(versionHashes).find(([file]) => file.startsWith("reseptit/"))?.[1];
+      const verified = verifyNutritionEvidence(data, e);
+      const net = result.perServing.netCarbohydrate;
+      if (hash(markdown.replaceAll("\r\n", "\n")) !== originalHash || verified.status !== "ESTIMATE WITH EVIDENCE"
+          || net === null || !validCarbohydrateRate(net)) {
+        throw new Error(`${recipeId}: approved net carbohydrate model no longer matches the original recipe.`);
+      }
+      portion.modeledNetCarbs = net;
+      portion.carbohydrateScope = scopedNetCarbohydrateCopy[recovery ? "pasta" : "cabbage"];
+      portion.reviewedSource = recovery
+        ? "https://github.com/ozirix-dev/Reseptit/pull/165"
+        : "https://github.com/ozirix-dev/Reseptit/blob/7cfad94801565b1763cca5dab3562d131125d17b/docs/nutrition/gk80-scoped-c-release/README.md";
+    }
     const labelIndices = review?.declaredLabelIngredientIndices ?? [];
     const matches = standaloneReview?.compositionMatches ?? [];
     // Amend only the portion view. Macro and GK approvals still use the original evidence.
