@@ -15,6 +15,7 @@ import { useContent } from "@/lib/content";
 import { glycemicLoadPath, recipeIndexPath, recipeLocaleFromPath, recipeLocaleName, recipeUi } from "./recipe-i18n";
 import { formatIngredientAmount, formatRecipeIngredient, hasFractionalEgg, ingredientNumberLocales, nextServingCount } from "./servings";
 import { toolUi } from "./recipe-tools";
+import { recipeInstructionId } from "./instruction-metadata";
 import { publishedGlycemicLoadForRecipe } from "./glycemic-load-display";
 import { sourceReviewNotice } from "./source-review-notices";
 import { withholdF25Nutrition, f25ExplicitUndefinedGkLabel } from "./f25-nutrition-withhold";
@@ -130,12 +131,28 @@ export function RecipePage() {
         {servings !== recipe.servings ? <p className="recipe-disclosure recipe-scaled-note">{tools.scaled(recipe.servings)}</p> : null}
         {recipe.ingredientPreparation?.length ? <div className="rich-text">
           <h3>{tools.ingredientPreparation}</h3>
-          <ul>{recipe.ingredientPreparation.map(note => <li key={note}>{note}</li>)}</ul>
+          <ul>{recipe.ingredientPreparation.map((note, index) => <li key={index} id={recipeInstructionId("prep", index)}>{note}</li>)}</ul>
         </div> : null}
-        {hydrated && recipe.instructionStepsHtml?.length ? <><div className="step-controls"><p aria-live="polite">{tools.progress}: {completed.length}/{recipe.instructionStepsHtml.length}</p><button type="button" onClick={() => setCompleted([])}>{tools.reset}</button></div><div className="rich-text"><ol className="recipe-steps">{recipe.instructionStepsHtml.map((step, index) => <li key={index} data-complete={completed.includes(index)}><div><label className="recipe-step-toggle"><input type="checkbox" aria-label={`${tools.completed}: ${index + 1}`} checked={completed.includes(index)} onChange={(event) => { const checked = event.currentTarget.checked;
-          if (checked && completed.length === 0) track("Start Cooking");
-          if (checked && completed.length + 1 === recipe.instructionStepsHtml?.length) track("Complete Recipe");
-          setCompleted(values => checked ? [...values, index] : values.filter(value => value !== index)); }} /></label><div className="recipe-step-text" dangerouslySetInnerHTML={{ __html: step }} /></div></li>)}</ol></div></> : <div className="rich-text" dangerouslySetInnerHTML={{ __html: recipe.instructionsHtml }} />}
+        {recipe.instructionStepsHtml?.length ? <>
+          {hydrated ? <div className="step-controls">
+            <p aria-live="polite">{tools.progress}: {completed.length}/{recipe.instructionStepsHtml.length}</p>
+            <button type="button" onClick={() => setCompleted([])}>{tools.reset}</button>
+          </div> : null}
+          <div className="rich-text"><ol className={hydrated ? "recipe-steps" : undefined}>
+            {recipe.instructionStepsHtml.map((step, index) => {
+              const id = recipeInstructionId("step", index);
+              return hydrated ? <li key={id} id={id} data-complete={completed.includes(index)}><div>
+                <label className="recipe-step-toggle"><input type="checkbox" aria-label={`${tools.completed}: ${index + 1}`} checked={completed.includes(index)} onChange={(event) => {
+                  const checked = event.currentTarget.checked;
+                  if (checked && completed.length === 0) track("Start Cooking");
+                  if (checked && completed.length + 1 === recipe.instructionStepsHtml?.length) track("Complete Recipe");
+                  setCompleted(values => checked ? [...values, index] : values.filter(value => value !== index));
+                }} /></label>
+                <div className="recipe-step-text" dangerouslySetInnerHTML={{ __html: step }} />
+              </div></li> : <li key={id} id={id} dangerouslySetInnerHTML={{ __html: step }} />;
+            })}
+          </ol></div>
+        </> : <div className="rich-text" dangerouslySetInnerHTML={{ __html: recipe.instructionsHtml }} />}
       </section>
       <section className="recipe-panel" data-nutrition-scope="ORIGINAL_RECIPE"><h2>{hasGkVariant?gkScopeUi[locale].originalNutrition:labels.nutrition}</h2>{hasGkVariant?<p className="recipe-disclosure" data-macro-separation="gk-only"><strong>{gkScopeUi[locale].macroNotice}</strong></p>:null}
         <RecipePortionSummary recipe={recipe} evidence={portionEvidence} carbs={portionCarbs}
