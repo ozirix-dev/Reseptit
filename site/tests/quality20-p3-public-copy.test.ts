@@ -12,7 +12,7 @@ const locales = ["fi", "en", "sv", "th"] as const;
 const fixtures = [
   {
     id: "hummus", dir: "alkuruoat", servings: 4,
-    blobs: ["cd792d70d50753a5f8f93eeca030ec3743cfb209", "cdf5c01a82e3b2e0180fe655c817af1f26c76433", "726acb81b821bd42962cd169dab3227eac8ca6a0", "ecd6f325344988af9ab6242ee57d49714937b32"],
+    blobs: ["cd792d70d50753a5f8f93eeca030ec3743cfb209", "cdf5c01a82e3b2e0180fe655c817af1f26c76433", "726acb81b821bd42962cd169dab3227eac8ca6a0", "ecd6f325344988af9ab6242ee57d49714937b32f"],
     macros: { carbsNetG: 18.54, carbsTotalG: 25.16, proteinG: 11.04, fatG: 15.79 },
     note: ["Kuvassa näkyvä pitaleipä", "The pictured pita bread", "Pitabrödet på bilden", "ขนมปังพิตาในภาพ"],
   },
@@ -67,7 +67,8 @@ test("quality20 P3: recipe copy remains source-bound and nutrition-stable across
             step.includes("หากต้องการ")), file + ": optional serving extras");
         }
         if (fixture.id === "butter-chicken") {
-          assert.equal(page.instructionStepsHtml?.length, 4, file + ": retention footnote not a cooking step");
+          assert.equal(page.instructionStepsHtml?.length, 5, file + ": original five-step cooking structure retained");
+          assert.ok(page.instructionsText.at(-1)?.includes(locale === "fi" ? "Tarjoa broileri kuumana" : locale === "en" ? "Serve the chicken hot" : locale === "sv" ? "Servera kycklingen varm" : "เสิร์ฟไก่ขณะร้อน"), file + ": final step is actual serving advice");
           assert.ok(page.instructionsText.some(step => step.includes("75 °C")), file + ": chicken safety retained");
           assert.ok(!page.instructionsText.some(step => /nutrient-retention proxy|näringsproxy|ravintokoostumusta|ค่าประกอบของวัตถุดิบดิบ/.test(step)), file);
         }
