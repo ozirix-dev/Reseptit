@@ -23,6 +23,47 @@ test("sidecar overlays the audit view but never mutates sealed Finnish source", 
   assert.equal(original.data.translation_languages, undefined);
 });
 
+test("kaurakeksit published languages stay bound to the reviewed SHA-locked source", async () => {
+  const { readFileSync } = await import("node:fs");
+  const { createHash } = await import("node:crypto");
+  const path = await import("node:path");
+  const { parseMarkdown } = await import("../src/content/markdown");
+  const { recipeFrontmatterSchema } = await import("../src/content/schema");
+  const root = path.resolve(import.meta.dirname, "../..");
+  const sourcePath = "reseptit/jalkiruoat/kaurakeksit.md";
+  const raw = readFileSync(path.join(root, sourcePath), "utf8");
+  const parsed = parseMarkdown(raw);
+  assert.ok(parsed);
+
+  const original: TranslationAuditResult["publishedSources"][number] = {
+    path: sourcePath,
+    data: recipeFrontmatterSchema.parse(parsed.data),
+    content: parsed.content,
+    sourceSha256: createHash("sha256").update(raw.replaceAll("\r\n", "\n")).digest("hex"),
+  };
+  const indexPath = "meta/kaannokset/published-translation-pairs.json";
+  const publicationIndex = JSON.parse(readFileSync(path.join(root, indexPath), "utf8"));
+  const row = publicationIndex.sources.find((entry: { recipe_id: string }) => entry.recipe_id === "kaurakeksit");
+  assert.ok(row);
+  assert.deepEqual(row.locales, ["en", "sv", "th"]);
+  assert.deepEqual(row.draftPromotion?.locales, ["en", "th"]);
+  assert.equal(row.draftPromotion?.sourceSha256, original.sourceSha256);
+
+  // The raw FI file is deliberately unchanged: a direct metadata update
+  // would invalidate the draft-promotion SHA and the retained evidence.
+  assert.deepEqual(original.data.translation_languages, []);
+  assert.deepEqual(original.data.translation_status, { en: "draft", th: "draft" });
+
+  const [published] = overlayTranslationPublicationIndex(
+    [original], publicationIndex, new Set(["kaurakeksit"]),
+  );
+  assert.deepEqual(published.data.translation_languages, ["en", "sv", "th"]);
+  assert.deepEqual(published.data.translation_status, {
+    en: "published", sv: "published", th: "published",
+  });
+  assert.deepEqual(original.data.translation_status, { en: "draft", th: "draft" });
+});
+
 test("legacy sources without index retain existing metadata", () => {
   const original = source();
   assert.equal(overlayTranslationPublicationIndex([original], null)[0], original);
