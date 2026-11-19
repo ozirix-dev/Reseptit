@@ -890,22 +890,22 @@ const quality20P3Copy: Readonly<Record<string, Partial<Record<RecipeLocale, {
   "butter-chicken": {
     "fi": {
       "before": "5. Kypsennä kaikki raakaa eläinperäistä ainesta sisältävät osat kypsiksi. Syö kaikki tämän punnitun version ainekset ja kastike/pannuneste. Raakojen ainesten ravintokoostumusta käytetään kypsän ruoan koostumusarvion pohjana; mittaamatonta hävikkiä ei vähennetä.",
-      "after": "",
+      "after": "5. Tarjoa broileri kuumana ja jaa myös pannulle jäänyt kastike tasaisesti neljälle.",
       "note": "Ravintoarvion laskentaperuste: kaikki luetteloidut ainekset sekä koko marinadi, kastike ja pannuneste kuuluvat neljän annoksen arvioon. Laskenta perustuu raakojen ainesten ravintoarvoihin; mittaamatonta kypsennyshävikkiä ei vähennetä. Broileri kypsennetään valmistusvaiheen 4 mukaisesti vähintään 75 °C:seen."
     },
     "en": {
       "before": "5. Cook every part that contains raw animal ingredients thoroughly. Consume all ingredients and pan juices. Raw ingredient composition is a nutrient-retention proxy; unmeasured losses are not deducted.",
-      "after": "",
+      "after": "5. Serve the chicken hot, distributing any sauce left in the pan evenly among the four portions.",
       "note": "Nutrition-estimate basis: all listed ingredients and the full marinade, sauce and pan juices are included in the four-serving calculation. Raw-ingredient nutrient composition is used; unmeasured cooking losses are not deducted. Cook chicken to at least 75 °C as already directed in step 4."
     },
     "sv": {
       "before": "5. Tillaga alla delar som innehåller råa animaliska ingredienser ordentligt. Ät alla ingredienser och all steksky. Råvarornas sammansättning används som näringsproxy; omätta förluster dras inte av.",
-      "after": "",
+      "after": "5. Servera kycklingen varm och fördela även såsen som finns kvar i pannan jämnt på de fyra portionerna.",
       "note": "Näringsberäkningens grund: alla angivna ingredienser samt hela marinaden, såsen och stekskyn ingår i beräkningen för fyra portioner. Råvarornas näringsinnehåll används och omätta tillagningsförluster dras inte av. Tillaga kycklingen till minst 75 °C enligt steg 4."
     },
     "th": {
       "before": "5. ปรุงส่วนที่มีวัตถุดิบจากสัตว์ดิบให้สุกทั่วถึง กินวัตถุดิบและน้ำในกระทะทั้งหมด ใช้ค่าประกอบของวัตถุดิบดิบเป็นตัวแทนสารอาหารโดยไม่หักการสูญเสียที่ไม่ได้วัด",
-      "after": "",
+      "after": "5. เสิร์ฟไก่ขณะร้อน แบ่งซอสที่เหลืออยู่ในกระทะให้เท่ากันทั้ง 4 ที่",
       "note": "พื้นฐานการประเมินโภชนาการสำหรับสูตร 4 ที่รวมวัตถุดิบทั้งหมดในรายการ น้ำหมัก ซอส และน้ำในกระทะทั้งหมด ใช้ข้อมูลองค์ประกอบทางโภชนาการของวัตถุดิบดิบและไม่หักการสูญเสียระหว่างปรุงที่ไม่ได้วัด ปรุงไก่ให้มีอุณหภูมิภายในอย่างน้อย 75 °C ตามขั้นตอนที่ 4"
     }
   }
