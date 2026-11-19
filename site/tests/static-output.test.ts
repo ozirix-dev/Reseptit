@@ -807,6 +807,37 @@ test("guide and recipe show the unresolved whole-serving inputs for each reviewe
   }
 });
 
+test("Japanese breakfast dishes keep original carbohydrate portions separate from their GK variants", async () => {
+  const cases = [
+    ["japanilainen-dashimaki-tamago-aamiaislautasella", 37.8, null],
+    ["japanilainen-natto-riisikulho", 39.5, null],
+    ["japanilainen-okayu-umeboshipluumulla", 37.8, 38.34],
+  ] as const;
+  for (const [id, rice, whole] of cases) {
+    const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.equal(entries.length, 4, id);
+    for (const { routePath } of entries) {
+      const filename = contentManifest[routePath];
+      assert.ok(filename, routePath);
+      const payload = parseRouteContent(JSON.parse(await readFile(path.join(dist, "data", filename), "utf8")), routePath);
+      const original = payload.glycemicRecipe?.result;
+      const evidence = payload.glycemicRecipe?.portionEvidence;
+      assert.ok(payload.glycemicRecipe?.variants.length, routePath);
+      assert.equal(original?.glycemicLoadPerServing ?? null, null, routePath);
+      assert.equal(original?.glycemicLoadRangePerServing ?? null, null, routePath);
+      assert.equal(evidence?.ingredientPortion?.availableCarbsGPerServing, rice, routePath);
+      assert.deepEqual(evidence?.availableCarbs ?? null, whole === null ? null : { min: whole, max: whole }, routePath);
+      if (id === "japanilainen-natto-riisikulho") {
+        assert.ok(Math.abs((evidence?.additionalIngredientPortions?.[0]?.availableCarbsGPerServing ?? 0) - 0.225) < 1e-10, routePath);
+      }
+      const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+      assert.equal(html.includes('data-portion-carbohydrate="available"'), whole !== null, routePath);
+      if (whole !== null) assert.ok(html.includes('href="' + evidence?.reviewedSource + '"'), routePath);
+      assert.doesNotMatch(html, /data-portion-gk=/, routePath);
+    }
+  }
+});
+
 test("reviewed seasoning, syrup and dressing quantities stay scoped to their named inputs", async () => {
   const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
   const amounts = { "naudan-paahtopaisti-uunissa": 0.4, "indonesialainen-bubur-sumsum-punnittu-v2": 23.5, "kaali-omenasalaatti": 1.3 };
