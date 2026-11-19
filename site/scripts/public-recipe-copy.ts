@@ -6,6 +6,12 @@ import { recipeSeoDescriptions } from "./recipe-seo-descriptions";
 type LocalizedCopy = Readonly<Record<string, Partial<Record<RecipeLocale, string>>>>;
 
 const descriptions: LocalizedCopy = {
+  "paella-valenciana": {
+  "fi": "Kun kuuma sahramiliemi on lisätty, riisiä ei enää sekoiteta: se saa kypsyä pannulla broilerin ja vihreiden papujen kanssa. Broilerin paksuimpien palojen sisälämpö tarkistetaan vähintään 75 °C:seen.",
+  "en": "After the hot saffron stock is added, leave the short-grain rice unstirred as it cooks with chicken and green beans. Check that the thickest chicken pieces reach at least 75 °C.",
+  "sv": "När den varma saffransbuljongen har tillsatts får det kortkorniga riset tillagas utan mer omrörning tillsammans med kyckling och gröna bönor. Kontrollera att kycklingens tjockaste bitar når minst 75 °C.",
+  "th": "หลังเติมน้ำสต๊อกหญ้าฝรั่นร้อนแล้ว ไม่คนข้าวเมล็ดสั้นอีก ปรุงข้าวพร้อมไก่และถั่วแขก แล้วตรวจให้ชิ้นไก่ส่วนที่หนาที่สุดมีอุณหภูมิภายในอย่างน้อย 75 °C"
+},
   "butter-chicken": {
     fi: "Maustejogurtissa marinoitu broileri saa seurakseen kermaisen tomaattikastikkeen, jota makeutetaan hiukan hunajalla.",
     en: "Chicken marinated in spiced yogurt is served in a creamy tomato sauce with a touch of honey.",
@@ -836,6 +842,75 @@ export function reviewedPublicCookingMethod(recipeId: string, rawMethod: readonl
   return ["keittäminen"];
 }
 
+// #327 quality20 P3: scoped public notes/methods without altering the sealed source.
+// The test locks all FI/EN/SV/TH Git blobs and the hummus image blob.
+const quality20P3Copy: Readonly<Record<string, Partial<Record<RecipeLocale, {
+  evidence?: string; before?: string; after?: string; note: string;
+}>>>> = {
+  "hummus": {
+    "fi": {
+      "evidence": "Levitä tarjoiluastiaan ja valuta päälle oliiviöljyä. Ripottele pinnalle paprikaa.",
+      "note": "Kuvassa näkyvä pitaleipä on valinnainen tarjoilulisuke eikä kuulu neljän annoksen perusreseptin ainesluetteloon tai annosravintoarvioon. Öljy ja paprikajauhe kuuluvat ainesluetteloon; lisää leivän ravintoarvot erikseen, jos tarjoilet sitä."
+    },
+    "en": {
+      "evidence": "Spread in a serving dish and pour olive oil on top. Sprinkle paprika on top.",
+      "note": "The pictured pita bread is an optional serving accompaniment, not part of the four-serving recipe's ingredient list or nutrition estimate. Olive oil and paprika appear in the ingredient list; calculate the bread separately if served."
+    },
+    "sv": {
+      "evidence": "Bred ut i ett serveringsfat och häll olivolja ovanpå. Strö över paprikapulver.",
+      "note": "Pitabrödet på bilden är ett valfritt serveringstillbehör och ingår inte i grundreceptets ingredienslista för fyra portioner eller i näringsvärdet. Olivolja och paprikapulver finns i ingredienslistan; räkna brödet separat om det serveras."
+    },
+    "th": {
+      "evidence": "ตักใส่จานเสิร์ฟแล้วราดน้ำมันมะกอกลงไป โรยผงปาปริก้าด้านบน",
+      "note": "ขนมปังพิตาในภาพเป็นเครื่องเคียงตามชอบ ไม่อยู่ในรายการส่วนผสมหรือค่าทางโภชนาการของสูตรพื้นฐาน 4 ที่ น้ำมันมะกอกและผงปาปริก้ามีอยู่ในรายการส่วนผสม หากเสิร์ฟกับขนมปังต้องคำนวณเพิ่มต่างหาก"
+    }
+  },
+  "paneer-tikka": {
+    "fi": {
+      "before": "5. Tarjoa kuumana sitruunalohkojen ja minttuchutneyn kanssa.",
+      "after": "5. Tarjoa kuumana. Voit halutessasi lisätä sitruunalohkoja tai minttuchutneya erikseen.",
+      "note": "Sitruunalohkot ja minttuchutney ovat valinnaisia tarjoilulisukkeita, joita ei ole punnittu neljän annoksen ainesluetteloon eikä sisällytetty mahdolliseen annosravintoarvioon."
+    },
+    "en": {
+      "before": "5. Serve hot with lemon wedges and mint chutney.",
+      "after": "5. Serve hot. Add lemon wedges or mint chutney separately if desired.",
+      "note": "Lemon wedges and mint chutney are optional serving extras; they were not weighed in the four-serving ingredient list or included in any nutrition estimate for the base recipe."
+    },
+    "sv": {
+      "before": "5. Servera varm med citronklyftor och mintchutney.",
+      "after": "5. Servera varmt. Lägg eventuellt till citronklyftor eller mintchutney separat.",
+      "note": "Citronklyftor och mintchutney är valfria serveringstillbehör som inte har vägts in i ingredienslistan för fyra portioner eller räknats med i eventuella näringsvärden för grundreceptet."
+    },
+    "th": {
+      "before": "5. เสิร์ฟร้อนกับเลมอนเวดจ์และชัทนีย์มิ้นต์",
+      "after": "5. เสิร์ฟร้อน หากต้องการสามารถเพิ่มเลมอนหั่นเสี้ยวหรือชัทนีย์มินต์แยกต่างหาก",
+      "note": "เลมอนหั่นเสี้ยวและชัทนีย์มินต์เป็นเครื่องเคียงตามชอบ ไม่ได้ชั่งรวมในรายการส่วนผสมสำหรับ 4 ที่ และไม่รวมในค่าประมาณโภชนาการใด ๆ ของสูตรพื้นฐาน"
+    }
+  },
+  "butter-chicken": {
+    "fi": {
+      "before": "5. Kypsennä kaikki raakaa eläinperäistä ainesta sisältävät osat kypsiksi. Syö kaikki tämän punnitun version ainekset ja kastike/pannuneste. Raakojen ainesten ravintokoostumusta käytetään kypsän ruoan koostumusarvion pohjana; mittaamatonta hävikkiä ei vähennetä.",
+      "after": "5. Tarjoa broileri kuumana ja jaa myös pannulle jäänyt kastike tasaisesti neljälle.",
+      "note": "Ravintoarvion laskentaperuste: kaikki luetteloidut ainekset sekä koko marinadi, kastike ja pannuneste kuuluvat neljän annoksen arvioon. Laskenta perustuu raakojen ainesten ravintoarvoihin; mittaamatonta kypsennyshävikkiä ei vähennetä. Broileri kypsennetään valmistusvaiheen 4 mukaisesti vähintään 75 °C:seen."
+    },
+    "en": {
+      "before": "5. Cook every part that contains raw animal ingredients thoroughly. Consume all ingredients and pan juices. Raw ingredient composition is a nutrient-retention proxy; unmeasured losses are not deducted.",
+      "after": "5. Serve the chicken hot, distributing any sauce left in the pan evenly among the four portions.",
+      "note": "Nutrition-estimate basis: all listed ingredients and the full marinade, sauce and pan juices are included in the four-serving calculation. Raw-ingredient nutrient composition is used; unmeasured cooking losses are not deducted. Cook chicken to at least 75 °C as already directed in step 4."
+    },
+    "sv": {
+      "before": "5. Tillaga alla delar som innehåller råa animaliska ingredienser ordentligt. Ät alla ingredienser och all steksky. Råvarornas sammansättning används som näringsproxy; omätta förluster dras inte av.",
+      "after": "5. Servera kycklingen varm och fördela även såsen som finns kvar i pannan jämnt på de fyra portionerna.",
+      "note": "Näringsberäkningens grund: alla angivna ingredienser samt hela marinaden, såsen och stekskyn ingår i beräkningen för fyra portioner. Råvarornas näringsinnehåll används och omätta tillagningsförluster dras inte av. Tillaga kycklingen till minst 75 °C enligt steg 4."
+    },
+    "th": {
+      "before": "5. ปรุงส่วนที่มีวัตถุดิบจากสัตว์ดิบให้สุกทั่วถึง กินวัตถุดิบและน้ำในกระทะทั้งหมด ใช้ค่าประกอบของวัตถุดิบดิบเป็นตัวแทนสารอาหารโดยไม่หักการสูญเสียที่ไม่ได้วัด",
+      "after": "5. เสิร์ฟไก่ขณะร้อน แบ่งซอสที่เหลืออยู่ในกระทะให้เท่ากันทั้ง 4 ที่",
+      "note": "พื้นฐานการประเมินโภชนาการสำหรับสูตร 4 ที่รวมวัตถุดิบทั้งหมดในรายการ น้ำหมัก ซอส และน้ำในกระทะทั้งหมด ใช้ข้อมูลองค์ประกอบทางโภชนาการของวัตถุดิบดิบและไม่หักการสูญเสียระหว่างปรุงที่ไม่ได้วัด ปรุงไก่ให้มีอุณหภูมิภายในอย่างน้อย 75 °C ตามขั้นตอนที่ 4"
+    }
+  }
+};
+
 export function projectPublicRecipeMethodCopy(
   id: string, locale: RecipeLocale, instructions: string, notes: string,
 ): { instructions: string; notes: string } {
@@ -876,6 +951,15 @@ export function projectPublicRecipeMethodCopy(
     }
     instructions = instructions.replace(scope.before, scope.after);
     notes = [notes, "- " + scope.note].filter(Boolean).join("\n");
+  }
+  if (Object.hasOwn(quality20P3Copy, id)) {
+    const scope = quality20P3Copy[id]?.[locale];
+    const expected = scope?.before ?? scope?.evidence;
+    if (!scope || !expected || instructions.split(expected).length !== 2) {
+      throw new Error("QUALITY20_P3_SOURCE_DRIFT: " + id + "/" + locale);
+    }
+    if (scope.before) instructions = instructions.replace(scope.before, scope.after ?? "").trim();
+    notes = [notes, "- " + scope.note].filter(Boolean).join("\n\n");
   }
   if (id === "gazpacho") {
     const scope = gazpachoBreadScope[locale];
