@@ -331,7 +331,8 @@ test("reviewed ingredient contributions and the dry risotto rice amount are visi
 test("reviewed ingredient quantities retain their own scope on recipes and in the GK guide", async () => {
   const expected = {
     bibimbap: [75, 59.25], "goi-cuon": [37.5, 30.615], "hernekeitto-savupotkalla": [125, undefined],
-    "idli-sambar": [50, 22.9], "japanilainen-natto-riisikulho": [50, 39.5], "mapo-tofu": [150, 35.3415],
+    "idli-sambar": [50, 22.9], "indonesialainen-bubur-sumsum-punnittu-v2": [17.5, 13.8775],
+    "japanilainen-natto-riisikulho": [50, 39.5], "mapo-tofu": [150, 35.3415],
     "pho-bo": [400 / 6, 54.42666666666667], roujiamo: [75, 55.4985], "vhh-pyttipannu": [50, 2.94],
     "japanilainen-curry-tofulla": [0.25, undefined, "kpl"], "japanilainen-soba-aamiaiskeitto": [50, undefined],
     "keto-mutakakku": [18.75, undefined], "keto-suklaakeksit": [18, undefined],
@@ -375,10 +376,9 @@ test("reviewed ingredient quantities retain their own scope on recipes and in th
       assert.ok(recipeHtml.replaceAll("<!-- -->", "").includes(detail), recipe.routePath);
       assert.doesNotMatch(recipeHtml, /data-portion-carbohydrate=|data-portion-gk=|data-original-gk-class=/, recipe.routePath);
       const scope: string | undefined = reviews[id].condition?.[locale];
-      if (scope) {
-        assert.ok(row.includes(renderToStaticMarkup(createElement("p", null, scope))), recipe.routePath);
-        assert.ok(recipeHtml.includes(renderToStaticMarkup(createElement("p", { className: "recipe-disclosure" }, scope))), recipe.routePath);
-      }
+      assert.ok(scope, recipe.routePath);
+      assert.ok(row.includes(renderToStaticMarkup(createElement("p", null, scope))), recipe.routePath);
+      assert.ok(recipeHtml.includes(renderToStaticMarkup(createElement("p", { className: "recipe-disclosure" }, scope))), recipe.routePath);
       if (ingredient.source) {
         const href: string = `href="${ingredient.source.replaceAll("&", "&amp;")}"`;
         assert.equal(row.split(href).length, 2, recipe.routePath);

@@ -216,6 +216,12 @@
       "unit": "g",
       "source": "https://fineli.fi/fineli/api/v1/foods/29055?c=2034&c2=2168",
       "availableCarbsGPer100g": 81.64
+    },
+    "condition": {
+      "fi": "Nuudeliluku perustuu kuivapainoon. Koko annoksen arvioon tarvitaan myös riisipaperiarkin paino ja pakkauksen hiilihydraattiarvo sekä dipissä käytetyn maapähkinävoin ja hoisinkastikkeen tiedot.",
+      "en": "The noodle estimate uses the dry weight. A whole-serving estimate also needs the weight and label carbohydrate content of the rice paper, plus the composition of the peanut butter and hoisin sauce used in the dip.",
+      "sv": "Nudelvärdet bygger på torrvikten. För hela portionen behövs också vikten och förpackningens kolhydratvärde för rispapperet samt uppgifter om jordnötssmöret och hoisinsåsen i dippen.",
+      "th": "ค่าของเส้นอิงน้ำหนักแห้ง การประเมินทั้งจานยังต้องใช้ข้อมูลน้ำหนักและคาร์โบไฮเดรตบนฉลากแผ่นแป้งข้าว รวมถึงข้อมูลของเนยถั่วและซอสฮอยซินในน้ำจิ้ม"
     }
   },
   "pho-bo": {
@@ -237,6 +243,12 @@
       "unit": "g",
       "source": "https://fineli.fi/fineli/api/v1/foods/29055",
       "availableCarbsGPer100g": 81.64
+    },
+    "condition": {
+      "fi": "Nuudeliluku perustuu kuivapainoon. Koko kulhon arvioon tarvitaan tieto hiilihydraateista valmiissa, siivilöidyssä ja maustetussa liemessä ja siitä, paljonko lientä annokseen tulee.",
+      "en": "The noodle estimate uses the dry weight. A whole-bowl estimate needs data on the carbohydrate in the finished broth after straining and seasoning and the amount of broth served in the bowl.",
+      "sv": "Nudelvärdet bygger på torrvikten. En uppskattning för hela skålen kräver uppgifter om kolhydraterna i den färdiga, silade och kryddade buljongen och mängden buljong som serveras.",
+      "th": "ค่าของเส้นอิงน้ำหนักแห้ง การประเมินทั้งชามต้องทราบปริมาณคาร์โบไฮเดรตในน้ำซุปที่กรองและปรุงรสเสร็จแล้ว รวมถึงปริมาณน้ำซุปที่ตักใส่ชาม"
     }
   },
   "hernekeitto-savupotkalla": {
@@ -256,6 +268,12 @@
         "th": "ถั่วลันเตาแห้งก่อนแช่น้ำ"
       },
       "unit": "g"
+    },
+    "condition": {
+      "fi": "Herneet on punnittu kuivina. Koko annoksen arvioon tarvitaan tieto siitä, paljonko hiilihydraattia herneistä jää keittoon, kun liotusvesi kaadetaan pois. Huomioi tarjoilusinappi erikseen.",
+      "en": "The peas are weighed dry. A whole-serving estimate needs to account for how much carbohydrate remains in the soup after the soaking water is discarded. Count any serving mustard separately.",
+      "sv": "Ärterna vägs torra. En uppskattning för hela portionen behöver ta hänsyn till hur mycket kolhydrater som finns kvar i soppan när blötläggningsvattnet har hällts bort. Räkna med senapen vid servering separat.",
+      "th": "ชั่งถั่วลันเตาขณะแห้ง การประเมินทั้งชามต้องทราบปริมาณคาร์โบไฮเดรตที่เหลือในซุปหลังเทน้ำแช่ทิ้ง คิดปริมาณจากมัสตาร์ดที่เสิร์ฟแยกต่างหาก"
     }
   },
   "lanzhou-naudanliha-nuudelikeitto": {
@@ -302,6 +320,12 @@
       "unit": "g",
       "source": "https://fineli.fi/fineli/api/v1/foods/110",
       "availableCarbsGPer100g": 73.998
+    },
+    "condition": {
+      "fi": "Jauholuku koskee yhden sämpylän taikinaa. Koko täytetyn sämpylän arvioon tarvitaan käytettyjen soijakastikkeiden hiilihydraattitiedot ja täytteeseen jäävän haudutusliemen määrä.",
+      "en": "The flour estimate covers the dough for one bun. A whole filled-bun estimate needs the carbohydrate content of the soy sauces used and the amount of braising liquid retained in the filling.",
+      "sv": "Mjölvärdet gäller degen till ett bröd. En uppskattning för hela det fyllda brödet kräver kolhydratvärden för sojasåserna och mängden kokspad som blir kvar i fyllningen.",
+      "th": "ค่าของแป้งครอบคลุมแป้งที่ใช้ทำขนมปังหนึ่งชิ้น การประเมินขนมปังพร้อมไส้ต้องใช้ข้อมูลคาร์โบไฮเดรตของซีอิ๊วที่ใช้และปริมาณน้ำตุ๋นที่เหลืออยู่ในไส้"
     }
   },
   "masala-dosa": {
@@ -321,6 +345,12 @@
         "sv": "Torrt basmatiris före blötläggning",
         "th": "ข้าวบาสมาติแห้งก่อนแช่น้ำ"
       }
+    },
+    "condition": {
+      "fi": "Riisi punnitaan kuivana ennen liotusta. Koko reseptiannoksen arvioon tarvitaan hiilihydraattitiedot liotetusta, valutetusta ja fermentoidusta taikinasta sekä kypsästä perunatäytteestä.",
+      "en": "The rice is weighed dry before soaking. An estimate for the full recipe serving needs carbohydrate data for the batter after soaking, draining and fermentation, and for the cooked potato filling.",
+      "sv": "Riset vägs torrt före blötläggning. En uppskattning för hela receptportionen kräver kolhydratvärden för smeten efter blötläggning, avrinning och jäsning samt för den kokta potatisfyllningen.",
+      "th": "ชั่งข้าวขณะแห้งก่อนแช่ การประเมินหนึ่งที่ตามสูตรต้องใช้ข้อมูลคาร์โบไฮเดรตของแป้งหลังแช่ สะเด็ดน้ำ และหมัก รวมถึงข้อมูลของไส้มันฝรั่งที่ปรุงสุก"
     }
   },
   "korealainen-bindaetteok-aamiaiseksi": {
@@ -341,6 +371,12 @@
         "sv": "Hela torra mungbönor före blötläggning",
         "th": "ถั่วเขียวแห้งทั้งเมล็ดก่อนแช่น้ำ"
       }
+    },
+    "condition": {
+      "fi": "Mungpavut punnitaan kuivina ennen liotusta. Koko annoksen arvioon tarvitaan valutettuihin papuihin jäävä hiilihydraattimäärä sekä käytetyn kimchin koostumustiedot.",
+      "en": "The mung beans are weighed dry before soaking. A whole-serving estimate needs the carbohydrate remaining in the drained beans and the composition of the kimchi used.",
+      "sv": "Mungbönorna vägs torra före blötläggning. En uppskattning för hela portionen kräver kolhydratvärdet för de avrunna bönorna samt sammansättningen hos den kimchi som används.",
+      "th": "ชั่งถั่วเขียวขณะแห้งก่อนแช่ การประเมินทั้งจานต้องทราบปริมาณคาร์โบไฮเดรตที่เหลือในถั่วหลังสะเด็ดน้ำและส่วนประกอบของกิมจิที่ใช้"
     }
   },
   "japanilainen-natto-riisikulho": {
@@ -404,6 +440,12 @@
       "unit": "g",
       "source": "https://fineli.fi/fineli/api/v1/foods/30346",
       "availableCarbsGPer100g": 23.561
+    },
+    "condition": {
+      "fi": "Riisiluku koskee kypsää pitkäjyväistä lisukeriisiä. Tofu-kastike tuo hiilihydraatteja erikseen. Koko annoksen arvioon tarvitaan muun muassa käytetyn doubanjiangin hiilihydraattitiedot.",
+      "en": "The rice estimate covers the cooked long-grain rice served alongside the tofu. The tofu sauce contributes carbohydrate separately. A whole-serving estimate needs, among other inputs, the carbohydrate content of the doubanjiang used.",
+      "sv": "Risvärdet gäller det kokta långkorniga riset som serveras till tofun. Tofusåsen bidrar med kolhydrater utöver riset. Ett värde för hela portionen kräver bland annat kolhydratvärdet för den doubanjiang som används.",
+      "th": "ค่าของข้าวครอบคลุมข้าวเมล็ดยาวหุงสุกที่เสิร์ฟกับเต้าหู้ ซอสเต้าหู้ให้คาร์โบไฮเดรตเพิ่ม การประเมินทั้งจานยังต้องใช้ข้อมูลคาร์โบไฮเดรตของเต้าเจี้ยวพริกโต้วป้านเจี้ยงที่ใช้ รวมถึงข้อมูลวัตถุดิบอื่น"
     }
   },
   "fetavaahto-kasvistikuilla": {
@@ -543,6 +585,12 @@
         "sv": "Röd paprika",
         "th": "พริกหวานแดง"
       }
+    },
+    "condition": {
+      "fi": "Yhteen annokseen on laskettu neljännes punaisesta paprikasta. Koko annoksen arvioon tarvitaan paprikoiden syötävät painot ja tieto vartaisiin jäävästä marinadista. Huomioi minttuchutney erikseen.",
+      "en": "One serving uses a quarter of the red pepper. A whole-serving estimate needs the edible weights of the peppers and the amount of marinade that stays on the skewers. Count the mint chutney separately.",
+      "sv": "En portion innehåller en fjärdedel av den röda paprikan. En uppskattning för hela portionen kräver paprikornas ätliga vikt och mängden marinad som blir kvar på spetten. Räkna myntachutneyn separat.",
+      "th": "หนึ่งที่ใช้พริกหวานแดงหนึ่งในสี่ลูก การประเมินทั้งจานต้องใช้น้ำหนักส่วนที่กินได้ของพริกหวานและปริมาณน้ำหมักที่ติดอยู่กับอาหารเสียบไม้ คิดชัทนีย์สะระแหน่แยกต่างหาก"
     }
   },
   "idli-sambar": {
@@ -564,6 +612,12 @@
       "unit": "g",
       "source": "https://fineli.fi/fineli/api/v1/foods/31219?c=2034&c2=2168",
       "availableCarbsGPer100g": 45.8
+    },
+    "condition": {
+      "fi": "Linssiluku koskee sambarin kuivia punaisia linssejä. Koko annoksen arvioon tarvitaan lisäksi idlitaikinan hiilihydraattitiedot liotuksen, valutuksen ja käymisen jälkeen sekä käytetyn sambar-mausteseoksen koostumus.",
+      "en": "The lentil estimate covers the dry red lentils in the sambar. A whole-serving estimate also needs the carbohydrate content of the idli batter after soaking, draining and fermentation, plus the composition of the sambar spice blend used.",
+      "sv": "Linsvärdet gäller de torra röda linserna i sambarn. En uppskattning för hela portionen kräver också kolhydratvärdet för idlismeten efter blötläggning, avrinning och jäsning samt uppgifter om kryddblandningen till sambarn.",
+      "th": "ค่าของถั่วเลนทิลครอบคลุมถั่วเลนทิลแดงแห้งที่ใช้ในซัมบาร์ การประเมินทั้งจานยังต้องใช้ข้อมูลคาร์โบไฮเดรตของแป้งอิดลีหลังแช่ สะเด็ดน้ำ และหมัก รวมถึงส่วนประกอบของเครื่องเทศซัมบาร์ที่ใช้"
     }
   },
   "japanilainen-curry-tofulla": {
@@ -583,6 +637,12 @@
         "sv": "Blomkålshuvud till tillbehöret",
         "th": "ดอกกะหล่ำสำหรับเครื่องเคียง"
       }
+    },
+    "condition": {
+      "fi": "Yhteen annokseen kuuluu neljännes kukkakaalista. Koko annoksen hiilihydraattiarvioon tarvitaan kukkakaalin syötävä paino sekä käytetyn curryroux'n ja kasvisliemen hiilihydraattitiedot.",
+      "en": "One serving includes a quarter of the cauliflower. A whole-serving carbohydrate estimate needs its edible weight and the carbohydrate content of the curry roux and vegetable stock used.",
+      "sv": "En portion innehåller en fjärdedel av blomkålen. Ett kolhydratvärde för hela portionen kräver den ätliga vikten och kolhydratvärdena för curryredningen och grönsaksbuljongen.",
+      "th": "หนึ่งที่ใช้กะหล่ำดอกหนึ่งในสี่หัว การประเมินคาร์โบไฮเดรตทั้งจานต้องใช้น้ำหนักส่วนที่กินได้ รวมถึงปริมาณคาร์โบไฮเดรตของเครื่องแกงกะหรี่แบบรูซ์และน้ำซุปผักที่ใช้"
     }
   },
   "vhh-pyttipannu": {
@@ -604,6 +664,12 @@
       "unit": "g",
       "source": "https://fineli.fi/fineli/api/v1/foods/303",
       "availableCarbsGPer100g": 5.88
+    },
+    "condition": {
+      "fi": "Lantun luku perustuu raakapainoon ennen keittämistä ja valutusta. Koko annoksen arvioon tarvitaan kypsennettyyn lanttuun jäävä hiilihydraattimäärä ja käytetyn makkaran hiilihydraattitiedot.",
+      "en": "The swede estimate uses the raw weight before boiling and draining. A whole-serving estimate needs the carbohydrate remaining in the cooked swede and the carbohydrate content of the sausage used.",
+      "sv": "Kålrotsvärdet bygger på råvikten före kokning och avrinning. För hela portionen behövs uppgifter om kolhydraterna som finns kvar i den kokta kålroten och i korven som används.",
+      "th": "ค่าของรูตาบากาอิงน้ำหนักดิบก่อนต้มและสะเด็ดน้ำ การประเมินทั้งจานต้องทราบปริมาณคาร์โบไฮเดรตที่เหลือในรูตาบากาหลังต้มและปริมาณคาร์โบไฮเดรตของไส้กรอกที่ใช้"
     }
   },
   "linssimakaronilaatikko": {
@@ -2435,10 +2501,10 @@
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/182",
     "reasoning": "The 70 g dry white rice flour is cooked into the porridge and divided equally among four bowls. Fineli Release 20 182 supplies 79.3 g available CHO per 100 g with verified fibre and polyols, and groups rice flour and rice flakes. The verified batch source explicitly documents this composition proxy. The component label identifies the actual flour and explains the matching limit. PhilFCT M051 coconut-palm sugar still lacks polyol evidence and the extraction from pandan remains unquantified. The official M051 total sugars field reports 94.1 g/100 g. All 100 g coconut palm sugar goes into the syrup for four bowls, so a standard share contributes approximately 23.5 g sugars from the syrup according to the source. Keep the rice flour component.",
     "condition": {
-      "fi": "Riisijauhon osuus perustuu Finelin vertailuarvoon riisijauhosta ja -hiutaleista. Kun koko siirappi jaetaan tasan neljään kulhoon, kookospalmusokerista tulee noin 23,5 g sokereita kulhoa kohti.",
-      "en": "The rice flour estimate uses Fineli’s reference for rice flour and flakes. Dividing all the syrup equally among four bowls gives about 23.5 g of sugars from the coconut palm sugar per bowl.",
-      "sv": "Beräkningen för rismjölet bygger på Finelis referensvärde för rismjöl och risflingor. När all sirap delas lika mellan fyra skålar ger kokospalmsockret cirka 23,5 g sockerarter per skål.",
-      "th": "ค่าของแป้งข้าวอิงข้อมูลของ Fineli สำหรับแป้งข้าวและข้าวแผ่น เมื่อแบ่งน้ำเชื่อมทั้งหมดเท่า ๆ กันในสี่ชาม น้ำตาลมะพร้าวให้ปริมาณน้ำตาลประมาณ 23.5 กรัมต่อชาม"
+      "fi": "Riisijauhon osuus perustuu Finelin vertailuarvoon riisijauhosta ja -hiutaleista. Kun koko siirappi jaetaan tasan neljään kulhoon, kookospalmusokerista tulee noin 23,5 g sokereita kulhoa kohti. Koko kulhon imeytyvien hiilihydraattien arvioon tarvitaan vielä kookospalmusokerin polyolitieto sekä tieto siitä, mitä puuroon siirtyy ennen pandaninlehden poistamista.",
+      "en": "The rice flour estimate uses Fineli’s reference for rice flour and flakes. Dividing all the syrup equally among four bowls gives about 23.5 g of sugars from the coconut palm sugar per bowl. A whole-bowl estimate of available carbohydrate still needs polyol data for the coconut palm sugar and data on what transfers into the porridge before the pandan leaf is removed.",
+      "sv": "Beräkningen för rismjölet bygger på Finelis referensvärde för rismjöl och risflingor. När all sirap delas lika mellan fyra skålar ger kokospalmsockret cirka 23,5 g sockerarter per skål. För att uppskatta tillgängliga kolhydrater för hela skålen behövs uppgifter om polyoler i kokospalmsockret och vad som överförs till gröten innan pandanbladet tas bort.",
+      "th": "ค่าของแป้งข้าวอิงข้อมูลของ Fineli สำหรับแป้งข้าวและเกล็ดข้าว เมื่อแบ่งน้ำเชื่อมทั้งหมดเท่า ๆ กันในสี่ชาม น้ำตาลมะพร้าวให้ปริมาณน้ำตาลประมาณ 23.5 กรัมต่อชาม การประเมินคาร์โบไฮเดรตที่ใช้ได้ของทั้งชามยังต้องใช้ข้อมูลโพลิออลในน้ำตาลมะพร้าวและข้อมูลว่าสารใดจากใบเตยละลายลงในโจ๊กก่อนนำใบเตยออก"
     },
     "ingredientPortion": {
       "index": 0,
