@@ -156,6 +156,7 @@ export function projectIngredientList(
       unit: locale === "th" ? "ฟอง" : "",
       item: plural,
       eggSingular: singular,
+      ...(reviewed?.[2] && part === "whole" ? { eggWeightWithoutShellG: reviewed[0] } : {}),
       ...(detail ? { note: detail } : {}),
     };
   });

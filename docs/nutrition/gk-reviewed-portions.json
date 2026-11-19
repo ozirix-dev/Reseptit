@@ -1,4 +1,36 @@
 {
+  "munakasmuffinit": {
+    "recipeBindingSha256": "088c1a29d6e9cd08c07fac8b9fec40b0d79b270f3c45681b1f87ad6bbea47f18",
+    "preparationSha256": "3f3acd82ec993ce1ab5198e7f3cdfe238cb87078a9ef7dcb77b1ddaeffd07c1e",
+    "nutritionSha256": "e052ba6ed76a4e90f6e80db6c30d01475a4087538d1d26f1d6c413d1cf04f8d2",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/e8ed43ed525a9cb6abbe61b94bc1c036153979c7/docs/nutrition/gk80-release-4/recipes.json#L202",
+    "reasoning": "The weighed batch is split evenly across six cups. Release-4 uses three servings, so two muffins correspond to one nutritional serving. The full bacon fat remains in the batch. No cooked gram weight or new GI is inferred.",
+    "piecesPerServing": 2
+  },
+  "tonnikalamunakkaat-uunissa": {
+    "recipeBindingSha256": "50020a6c607bcb1952b82b240fb27d1145eaa940ec9cf0ab7b94f3991ca3b18d",
+    "preparationSha256": "6ba0480349109d8ef791b119ae64d4e6186f502c7d79838d476391a2fcce4b27",
+    "nutritionSha256": "c980ad7688a4ae242d486cf2d2b5f5db5782ec05711cf5708bca5d1b6841f199",
+    "reviewedAt": "2026-11-18",
+    "source": "https://github.com/ozirix-dev/Reseptit/blob/e8ed43ed525a9cb6abbe61b94bc1c036153979c7/docs/nutrition/gk80-release-4/recipes.json#L1365",
+    "reasoning": "The weighed batch with drained tuna is split evenly across six cups. Release-4 uses three servings, so two mini omelettes correspond to one nutritional serving. No cooked gram weight or new GI is inferred.",
+    "piecesPerServing": 2
+  },
+  "indonesialainen-nasi-uduk-aamiaisella": {
+    "recipeBindingSha256": "5077a82da71b7d1dd7766340e1b62eb69e0eb01295b869d4381fe9281fa23be2",
+    "preparationSha256": "43e011463fa51005e504a85bf104419f8a1be1a08e7a396dd04239c31d30a152",
+    "nutritionSha256": "db80c5a04398b5fbbe1484836ea50c9fdd3f78d41b5aabe01d73356bd7d32c6b",
+    "reviewedAt": "2026-11-18",
+    "source": "https://doi.org/10.1186/1475-2891-13-50",
+    "reasoning": "Release-3 uses rice-jasmine68 as a low-confidence cooked jasmine-rice comparison for the intact rice in the two-serving coconut rice recipe. The C20 preparation may add an unspecified amount of water. The reference study does not validate this coconut-rice cooking method or the effect of the extra water. This disclosure does not change the accepted ingredient-sum model or convert the comparison into a measured meal GI.",
+    "condition": {
+      "fi": "Arvio käyttää keitetyn jasmiiniriisin GI-vertailua. Vertailututkimuksessa ei mitattu tämän kookosriisin valmistustapaa eikä lisäveden vaikutusta.",
+      "en": "The estimate uses GI data for cooked jasmine rice. The reference study did not test this coconut rice cooking method or the effect of adding extra water.",
+      "sv": "Uppskattningen använder GI-data för kokt jasminris. Referensstudien undersökte varken den här tillagningen med kokosmjölk eller effekten av att tillsätta extra vatten.",
+      "th": "ค่าประมาณนี้ใช้ข้อมูล GI ของข้าวหอมมะลิที่หุงสุก งานวิจัยที่ใช้อ้างอิงไม่ได้ทดสอบการหุงด้วยกะทิตามสูตรนี้หรือผลของการเติมน้ำเพิ่ม"
+    }
+  },
   "kylma-oliivioljylevite": {
     "recipeBindingSha256": "6d3c4aa0fce74b3ed85f3c8ccc23b5d922a70a5d8ab47bf9f56b270c4c099e11",
     "reviewedAt": "2026-11-18",
@@ -90,10 +122,10 @@
     "source": "https://gorans.fi/tuotteet/valkosipulikastike/",
     "nutritionSha256": "1f9aa3398e727c71855edba6968e76af550403f279ca287561ab55ece613fc7c",
     "condition": {
-      "fi": "Vehnäjauho on suurin tunnettu hiilihydraatin lähde. Kastikkeiden ja valutettujen pepperonien koostumus vaikuttaa kokonaismäärään. Valmistajan pakkausarvo koskee Göransin valkosipulikastiketta. Yhtä reseptiannosta kohti käytetään lisäksi 20 g Göransin kebabkastiketta, josta tulee valmistajan mukaan 2 g pakkauksen hiilihydraattia.",
-      "en": "Wheat flour is the largest known source of carbohydrate. The sauces and drained pickled peppers affect the total. The label estimate is for Görans garlic sauce. One recipe serving also uses 20 g of Görans kebab sauce, with 2 g of labelled carbohydrate according to its manufacturer.",
-      "sv": "Vetemjölet är den största kända kolhydratkällan. Såserna och de avrunna inlagda paprikorna påverkar totalmängden. Paketuppgiften gäller Görans vitlökssås. En receptportion innehåller dessutom 20 g Görans kebabsås, vilket enligt tillverkaren bidrar med 2 g kolhydrater enligt förpackningen.",
-      "th": "แป้งสาลีเป็นแหล่งคาร์โบไฮเดรตที่ทราบว่ามากที่สุด ซอสและพริกดองที่สะเด็ดน้ำแล้วมีผลต่อปริมาณรวม ค่าบนฉลากนี้ใช้กับซอสกระเทียม Görans หนึ่งที่ตามสูตรยังใช้ซอสเคบับ Görans อีก 20 กรัม ซึ่งผู้ผลิตระบุว่าให้คาร์โบไฮเดรตตามฉลาก 2 กรัม"
+      "fi": "Vehnäjauho on suurin tunnettu hiilihydraatin lähde. Kastikkeiden, valutettujen pepperonien ja muiden ainesosien koostumus vaikuttaa kokonaismäärään.",
+      "en": "Wheat flour is the largest known source of carbohydrate. The composition of the sauces, drained pickled peppers and other ingredients affects the total.",
+      "sv": "Vetemjölet är den största kända kolhydratkällan. Såsernas, de avrunna inlagda paprikornas och övriga ingrediensers sammansättning påverkar totalmängden.",
+      "th": "แป้งสาลีเป็นแหล่งคาร์โบไฮเดรตที่ทราบว่ามากที่สุด ส่วนประกอบของซอส พริกดองที่สะเด็ดน้ำแล้ว และวัตถุดิบอื่น ๆ มีผลต่อปริมาณรวม"
     },
     "preparationSha256": "4419d71f610cdeba6a92d49c259498bd909f88e5d7d5bf29738be924cbde9267",
     "ingredientPortion": {
@@ -106,9 +138,24 @@
         "th": "ซอสกระเทียม Görans"
       },
       "unit": "g",
-      "declaredCarbsGPer100g": 12
+      "declaredCarbsGPer100g": 12,
+      "source": "https://gorans.fi/tuotteet/valkosipulikastike/"
     },
-    "publicSource": "https://gorans.fi/kastikkeet/"
+    "additionalIngredientPortions": [
+      {
+        "index": 10,
+        "ingredientSha256": "85d233a39cbb7f1e8cd89f3c945cb216e0eaf227b51ac3f9c58159b5356c00dd",
+        "labels": {
+          "fi": "Göransin kebabkastike",
+          "en": "Görans kebab sauce",
+          "sv": "Görans kebabsås",
+          "th": "ซอสเคบับ Görans"
+        },
+        "unit": "g",
+        "declaredCarbsGPer100g": 10,
+        "source": "https://gorans.fi/tuotteet/kebabkastike/"
+      }
+    ]
   },
   "vhh-kaalikaarryleet": {
     "recipeBindingSha256": "6b7573adb0ef818192ac8e8bbc3b0b35909a3d0af1a6de056c178e2a0cd16bee",
@@ -547,7 +594,7 @@
   "linssimakaronilaatikko": {
     "recipeBindingSha256": "a6a5ce87f65fcbc1667b1f6ff2297aaa81a2c864d6261a96334f215108ec8079",
     "reviewedAt": "2026-11-18",
-    "reasoning": "68 g EU declaration per 100 g dry; 220 g dry for 6 portions gives a source-accounting input of 24.93 g label carbohydrate per portion. Statement is about macaroni contribution, not cooked retention, lens composition or GK. The original notes and manufacturer declaration agree at 68 g per 100 g for EAN 6417700050725. The label applies to the dry quantity before parboiling and draining.",
+    "reasoning": "68 g EU declaration per 100 g dry; 220 g dry for 6 portions gives a source-accounting input of 24.93 g label carbohydrate per portion. Statement is about macaroni contribution, not cooked retention, lens composition or GK. The original notes and manufacturer declaration agree at 68 g per 100 g for EAN 6417700050725. The label applies to the dry quantity before parboiling and draining. Coop EAN 7340191132238 declares 43 g carbohydrate per 100 g dry. The 150 g dry input divided into six portions is 25 g and 10.75 g declared carbohydrate per portion before parboiling and draining. The two dry label values do not estimate the whole cooked serving.",
     "source": "https://www.myllynparas.fi/tuotteet/makaroni-400-g",
     "ingredientProduct": {
       "index": 0,
@@ -557,10 +604,10 @@
       "ean": "6417700050725"
     },
     "condition": {
-      "fi": "Pakkauksen hiilihydraattitieto koskee kuivaa makaronia. Koko annoksen arvioon tarvitaan makaronin ja linssien painot sekä niiden hiilihydraattitiedot erillisen esikeiton ja valutuksen jälkeen.",
-      "en": "The label gives the carbohydrate content of dry macaroni. A whole-serving estimate needs weights and carbohydrate values for the macaroni and lentils after they have been parboiled separately and drained.",
-      "sv": "Förpackningen anger kolhydratmängden i torra makaroner. För att uppskatta hela portionen behövs vikt och kolhydratvärden för både makaronerna och linserna efter att de förkokats var för sig och fått rinna av.",
-      "th": "ฉลากระบุปริมาณคาร์โบไฮเดรตของมักกะโรนีแห้ง การประมาณทั้งที่ต้องทราบน้ำหนักและปริมาณคาร์โบไฮเดรตของมักกะโรนีและถั่วเลนทิล หลังจากต้มพอเกือบสุกแยกกันและสะเด็ดน้ำ"
+      "fi": "Pakkausten hiilihydraattitiedot koskevat kuivia makaroneja ja linssejä. Koko annoksen arvioon tarvitaan makaronin ja linssien painot sekä niiden hiilihydraattitiedot erillisen esikeiton ja valutuksen jälkeen.",
+      "en": "The labels give the carbohydrate content of dry macaroni and lentils. A whole-serving estimate needs weights and carbohydrate values for the macaroni and lentils after they have been parboiled separately and drained.",
+      "sv": "Förpackningarna anger kolhydratmängden i torra makaroner och linser. För att uppskatta hela portionen behövs vikt och kolhydratvärden för både makaronerna och linserna efter att de förkokats var för sig och fått rinna av.",
+      "th": "ฉลากระบุปริมาณคาร์โบไฮเดรตของมักกะโรนีและถั่วเลนทิลในสภาพแห้ง การประมาณทั้งที่ต้องทราบน้ำหนักและปริมาณคาร์โบไฮเดรตของมักกะโรนีและถั่วเลนทิล หลังจากต้มพอเกือบสุกแยกกันและสะเด็ดน้ำ"
     },
     "preparationSha256": "52d88cce7ca88fecb469eab6d74c92dae0030042d131a056320720b65a142983",
     "ingredientPortion": {
@@ -575,7 +622,22 @@
       },
       "source": "https://www.myllynparas.fi/tuotteet/makaroni-400-g",
       "declaredCarbsGPer100g": 68
-    }
+    },
+    "additionalIngredientPortions": [
+      {
+        "index": 1,
+        "ingredientSha256": "fcd6a410d386695368f9367bad631e7026e586f3e3d7a8ae69e348e131b3f873",
+        "labels": {
+          "fi": "Coopin vihreitä linssejä kuivana",
+          "en": "Coop green lentils, dry weight",
+          "sv": "Coop gröna linser, torrvikt",
+          "th": "ถั่วเลนทิลเขียว Coop น้ำหนักแห้ง"
+        },
+        "unit": "g",
+        "declaredCarbsGPer100g": 43,
+        "source": "https://www.s-kaupat.fi/tuote/coop-vihreat-linssit-400-g/7340191132238"
+      }
+    ]
   },
   "marry-me-kanapasta": {
     "recipeBindingSha256": "c25a1ed42e6a979727e62453585dd3f5aa73de4fa355741a355bc710443e9b11",
@@ -611,7 +673,7 @@
   "uunifetapasta-kirsikkatomaateilla": {
     "recipeBindingSha256": "75f35680a5b210356e52b080def272b4aa0302e043ee80e8cf84112748ba8ade",
     "reviewedAt": "2026-11-18",
-    "reasoning": "Barilla Norway 71 g per 100 g matches pinned Finnish recipe label; Barilla France and Sweden use 71.2, UK uses 71.7. The named EAN is confirmed by Barilla Finland official campaign. The 240 g for 4 portions is a known ingredient contribution; omit exact amount on the public view due to market variation and no finished ratio. The listed dry weight remains valid across markets; the prior decision to hold an exact product carbohydrate value remains in force.",
+    "reasoning": "Barilla Norway 71 g per 100 g matches pinned Finnish recipe label; Barilla France and Sweden use 71.2, UK uses 71.7. The named EAN is confirmed by Barilla Finland official campaign. The 240 g for 4 portions is a known ingredient contribution; omit exact amount on the public view due to market variation and no finished ratio. The listed dry weight remains valid across markets; the prior decision to hold an exact product carbohydrate value remains in force. AFCD Release 3 F009190 gives 3.5 g available carbohydrate per 100 g of raw cherry tomatoes, excluding sugar alcohols. 450 g divided into four portions is a raw ingredient amount before roasting and cannot be added to dry penne to obtain the finished serving.",
     "source": "https://www.barilla.com/nn-no/produkter/pasta/klassikere/penne-rigate",
     "ingredientProduct": {
       "index": 0,
@@ -637,7 +699,22 @@
         "sv": "Barilla Penne Rigate nr 73, torrvikt",
         "th": "เพนเนริกาเต Barilla เบอร์ 73 น้ำหนักแห้ง"
       }
-    }
+    },
+    "additionalIngredientPortions": [
+      {
+        "index": 2,
+        "ingredientSha256": "382645ba7242f8daa8c778fabffac13b6bdb1b6e47229f87f76801465346ad73",
+        "labels": {
+          "fi": "Kirsikkatomaattia ennen paahtamista",
+          "en": "Cherry tomatoes before roasting",
+          "sv": "Körsbärstomater före rostning",
+          "th": "มะเขือเทศเชอร์รีก่อนอบ"
+        },
+        "unit": "g",
+        "availableCarbsGPer100g": 3.5,
+        "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009190"
+      }
+    ]
   },
   "kiinalainen-katkarapu-wontonkeitto": {
     "recipeBindingSha256": "b2040e47a37ff64357776b270930f063cf4594434cf7bfcf26c742e57d51d5a0",
@@ -1361,12 +1438,12 @@
     "preparationSha256": "f120a602c688163f86b1216a69651cb4b460688568dda0ba4804409fc735676d",
     "reviewedAt": "2026-11-18",
     "source": "https://github.com/ozirix-dev/Reseptit/blob/4e6a7a297a58879f1f4232a77a7ab82e54864703/reseptit/leivonnaiset/karjalanpiirakat-riisipuurolla.md",
-    "reasoning": "200 g dry rice ÷ 24 pastries is 8⅓ g input per piece at even distribution; label exact for candidate product. Filling yield, adhered flour and butter retention unresolved. Existing GK hold on product/cooking equivalence stays; no claim of cooked weight, finished whole carb or GK. The 77 g per 100 g declaration gives 6.4166667 g of declared carbohydrate per pastry from this raw rice.",
+    "reasoning": "200 g dry rice ÷ 24 pastries is 8⅓ g input per piece at even distribution; label exact for candidate product. Filling yield, adhered flour and butter retention unresolved. Existing GK hold on product/cooking equivalence stays; no claim of cooked weight, finished whole carb or GK. The 77 g per 100 g declaration gives 6.4166667 g of declared carbohydrate per pastry from this raw rice. One of 24 equal pastries is the original serving, excluding separately served egg butter.",
     "condition": {
-      "fi": "Pakkausarvio koskee Pirkka-puuroriisiä (EAN 6410405257864). Koko piirakan arvioon tarvitaan riisin hiilihydraattiarvo ilman polyoleja sekä tieto piirakoihin päätyneestä kaulintajauhosta ja voista.",
-      "en": "The label estimate applies to Pirkka porridge rice (EAN 6410405257864). A whole-pastry estimate needs the rice’s carbohydrate content excluding polyols and the amounts of rolling flour and butter that end up on the pastries.",
-      "sv": "Uppskattningen enligt förpackningen gäller Pirkka-grötris (EAN 6410405257864). För att uppskatta hela pirogen behövs risets kolhydratmängd utan polyoler och mängden kavlingsmjöl och smör som blir kvar på pirogerna.",
-      "th": "ค่าประมาณจากฉลากใช้กับข้าวสำหรับทำโจ๊ก Pirkka (EAN 6410405257864) การประมาณทั้งชิ้นต้องทราบปริมาณคาร์โบไฮเดรตของข้าวที่ไม่รวมโพลิออล รวมถึงปริมาณแป้งนวลและเนยที่ติดอยู่บนขนม"
+      "fi": "Yksi reseptiannos on yksi piirakka ilman munavoita. Pakkausarvio koskee vain Pirkka-puuroriisiä (EAN 6410405257864). Myös ruis- ja vehnäjauhot sekä maito tuovat hiilihydraatteja. Koko piirakan arvioon tarvitaan riisin polyolit erottelevat ja muiden ainesosien kanssa vertailukelpoiset koostumustiedot ja punnitus siitä, paljonko kaulintajauhoa ja voita päätyy piirakoihin.",
+      "en": "One recipe serving is one pie without egg butter. The label estimate covers only Pirkka porridge rice (EAN 6410405257864). Rye flour, wheat flour and milk also contribute carbohydrate. A whole-pie estimate needs comparable ingredient composition data that account for any polyols in the rice and the measured amounts of rolling flour and butter that end up on the pies.",
+      "sv": "En receptportion är en pirog utan äggsmör. Förpackningsvärdet gäller bara Pirkka-grötris (EAN 6410405257864). Rågmjöl, vetemjöl och mjölk bidrar också med kolhydrater. För att uppskatta hela pirogen behövs jämförbara näringsuppgifter där eventuella polyoler i riset redovisas separat och vägning av det kavlingsmjöl och smör som blir kvar på pirogerna.",
+      "th": "หนึ่งที่ตามสูตรคือพายหนึ่งชิ้นโดยไม่รวมเนยผสมไข่ต้ม ค่าจากฉลากครอบคลุมเฉพาะข้าวสำหรับทำโจ๊ก Pirkka (EAN 6410405257864) แป้งไรย์ แป้งสาลี และนมก็ให้คาร์โบไฮเดรตเช่นกัน หากจะประมาณทั้งชิ้น ต้องใช้ข้อมูลส่วนประกอบอาหารที่เทียบกันได้และแยกโพลิออลในข้าวหากมีและชั่งปริมาณแป้งนวลกับเนยที่ติดอยู่บนพาย"
     },
     "ingredientPortion": {
       "index": 5,
@@ -1380,34 +1457,51 @@
       "unit": "g",
       "declaredCarbsGPer100g": 77,
       "source": "https://www.k-ruoka.fi/kauppa/tuote/pirkka-puuroriisi-1kg-6410405257864"
-    }
+    },
+    "piecesPerServing": 1
   },
   "raejuustobagelit-ilman-kohotusta": {
     "recipeBindingSha256": "424e2aed53cb7809cf4617b652b13cb9ee437d1b81f6f75b16d79189e583d14f",
     "preparationSha256": "51f3c2a6a16ff8923bc885be0ae1a65abace12c0666c586cd0a0cf8b4b044e8a",
     "reviewedAt": "2026-11-18",
-    "source": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
-    "reasoning": "300 g dry flour evenly across six. Recipe has explicit no reliable whole macro/GK yet, uncertain baking powder/egg glaze retention and no source-match baked bagel GI. Valio 6408430043019 confirms named cottage product, but no clinical classification. The current recipe identifies 300 g dry medium wheat flour and six equal portions. Fineli 110 identifies the same grade, 74.0 g available carbohydrate per 100 g with no reported polyols. The known flour contribution is separate from the whole recipe and the unverified egg glaze. The separate Valio declaration of 1.8 g carbohydrate per 100 g gives 1.2 g from 400 g across six bagels.",
+    "source": "https://www.myllynparas.fi/tuotteet/emannan-puolikarkea-vehnajauho-1-kg",
+    "reasoning": "The recipe uses 300 g dry medium-ground wheat flour in six equal dough rings: 50 g flour per bagel. The named Myllyn Paras 1 kg product (EAN 6417700053030) declares 66 g carbohydrate and 4.5 g fibre per 100 g, so its flour contributes 33 g label carbohydrate per bagel when used. The generic Fineli 110 reference has 74.0 g available carbohydrate per 100 g (37 g per bagel); it is not the composition of this product. Other brands can differ. The separate Valio EAN 6408430043019 declaration gives 1.2 g label carbohydrate from 400 g undrained cheese across six bagels. No sum of these component values, whole-bagel estimate or GK is supported by these rows. Baking powder and egg wash retention remain unresolved.",
     "condition": {
-      "fi": "Valio 2 % -raejuustosta (EAN 6408430043019) kertyy pakkauksen mukaan noin 1,2 g hiilihydraattia per bageli. Koko bagelin arvioon tarvitaan raejuuston hiilihydraattiarvo ilman polyoleja ja pinnalle käytetyn munavoitelun määrä.",
-      "en": "The Valio 2% cottage cheese (EAN 6408430043019) adds about 1.2 g of carbohydrate per bagel according to its label. A whole-bagel estimate needs the cheese’s carbohydrate content excluding polyols and the amount of egg wash used.",
-      "sv": "Valio-keso med 2 % fett (EAN 6408430043019) ger cirka 1,2 g kolhydrater per bagel enligt förpackningen. För att uppskatta hela bageln behövs kesons kolhydratmängd utan polyoler och mängden ägg som används till penslingen.",
-      "th": "คอตเทจชีส Valio ไขมัน 2% (EAN 6408430043019) ให้คาร์โบไฮเดรตประมาณ 1.2 กรัมต่อเบเกิลหนึ่งชิ้นตามฉลาก การประมาณทั้งชิ้นต้องทราบปริมาณคาร์โบไฮเดรตของชีสที่ไม่รวมโพลิออลและปริมาณไข่ที่ใช้ทาหน้า"
+      "fi": "Yksi reseptiannos on yksi bagel. Jauhon arvio koskee Myllyn Paras -puolikarkeaa vehnäjauhoa. Jos käytät muuta jauhoa, tarkista oman pakkauksesi hiilihydraatit. Koko bagelin arvioon tarvitaan raejuuston hiilihydraattiarvo ilman polyoleja, käytetyn leivinjauheen ravintotieto ja pinnalle jäävän munavoitelun määrä.",
+      "en": "One recipe serving is one bagel. The flour estimate applies to Myllyn Paras medium-ground wheat flour. If you use a different flour, check the carbohydrate value on its label. A whole-bagel estimate needs the cottage cheese’s carbohydrate content excluding polyols, nutrition information for the baking powder used and the amount of egg wash that remains on the bagel.",
+      "sv": "En receptportion är en bagel. Mjöluppskattningen gäller Myllyn Paras halvgrova vetemjöl. Om du använder ett annat mjöl, kontrollera kolhydratvärdet på förpackningen. För hela bageln behövs kesons kolhydratmängd utan polyoler, näringsuppgifter för bakpulvret som används och uppgift om hur mycket ägg från penslingen som blir kvar.",
+      "th": "หนึ่งที่ตามสูตรคือเบเกิลหนึ่งชิ้น ค่าประมาณของแป้งอ้างอิงแป้งสาลีบดปานกลาง Myllyn Paras หากใช้แป้งชนิดอื่น ให้ดูค่าคาร์โบไฮเดรตบนฉลากของแป้งนั้น การประมาณทั้งชิ้นต้องใช้ปริมาณคาร์โบไฮเดรตของคอตเทจชีสที่ไม่รวมโพลิออล ข้อมูลโภชนาการของผงฟูที่ใช้ และปริมาณไข่ที่ทาหน้าและติดอยู่บนเบเกิลหลังอบ"
     },
     "ingredientPortion": {
       "index": 1,
       "ingredientSha256": "2b46a4d4d30e5855c63cf3265a95854f7bd1385ea386ad5e6fa1b3a7bef2d375",
       "labels": {
-        "fi": "puolikarkeaa vehnäjauhoa kuivapainona",
-        "en": "medium-ground wheat flour by dry weight",
-        "sv": "halvgrovt vetemjöl i torrvikt",
-        "th": "แป้งสาลีบดปานกลางน้ำหนักแห้ง"
+        "fi": "Puolikarkea vehnäjauho kuivapainona, jos käytät Myllyn Parasta",
+        "en": "Medium-ground wheat flour by dry weight, if using Myllyn Paras",
+        "sv": "Halvgrovt vetemjöl i torrvikt, om du använder Myllyn Paras",
+        "th": "แป้งสาลีบดปานกลาง น้ำหนักแห้ง (หากใช้ Myllyn Paras)"
       },
       "unit": "g",
-      "availableCarbsGPer100g": 74,
-      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/110"
+      "source": "https://www.myllynparas.fi/tuotteet/emannan-puolikarkea-vehnajauho-1-kg",
+      "declaredCarbsGPer100g": 66
     },
-    "publicSource": "https://www.valio.fi/tuotteet/valio-raejuusto/"
+    "publicSource": "https://www.myllynparas.fi/tuotteet/emannan-puolikarkea-vehnajauho-1-kg",
+    "additionalIngredientPortions": [
+      {
+        "index": 0,
+        "ingredientSha256": "f69a2fe35b9fb90b04ff66a6e889045f5a32c4c5b4cc0e346688f498aae2536c",
+        "labels": {
+          "fi": "Valio 2 % -raejuusto",
+          "en": "Valio 2% cottage cheese",
+          "sv": "Valio-keso med 2 % fett",
+          "th": "คอตเทจชีส Valio ไขมัน 2%"
+        },
+        "unit": "g",
+        "declaredCarbsGPer100g": 1.8,
+        "source": "https://www.valio.fi/tuotteet/valio-raejuusto/"
+      }
+    ],
+    "piecesPerServing": 1
   },
   "briossisampylat-joshua-weissman": {
     "recipeBindingSha256": "62323fc8aa1afd60f9bb8e585276e14fd8080319ad6abf7159daed55c32cfec9",
@@ -2126,10 +2220,10 @@
     "source": "https://fineli.fi/fineli/fi/elintarvikkeet/31256",
     "reasoning": "Fineli Release 20 31256 gives 54.034 g available carbohydrate per 100 g of uncooked fresh egg pasta, with explicit fibre and sugar alcohols. The 250 g input is divided three ways. This is the weighed fresh-pasta component before cooking and draining. The recipe permits fresh pasta with or without egg, so the estimate is scoped to the egg-pasta reference; brand and moisture can matter. Asparagus water retention, lemon zest, Parmesan and black pepper still prevent the whole-portion estimate.",
     "condition": {
-      "fi": "Luku koskee tuoretta kananmunapastaa. Jos käytät muuta fettuccinea, tarkista hiilihydraatit pakkauksesta. Finelin keitetyssä tuoreessa kananmunapastassa on noin 16,2 g imeytyvää hiilihydraattia 100 grammassa. Koko annoksen arvioon tarvitaan pastan ja parsan painot kypsennyksen ja valutuksen jälkeen.",
-      "en": "This estimate applies to fresh egg pasta. For other fettuccine, check the pack. Fineli lists about 16.2 g of available carbohydrate per 100 g of cooked fresh egg pasta. For a whole-serving estimate, weigh the pasta and asparagus after cooking and draining.",
-      "sv": "Uppskattningen gäller färsk äggpasta. Kontrollera förpackningen om du använder annan fettuccine. Fineli anger cirka 16,2 g tillgängliga kolhydrater per 100 g kokt färsk äggpasta. För att uppskatta hela portionen behövs vikten på pastan och sparrisen efter kokning och avrinning.",
-      "th": "ค่าประมาณนี้ใช้กับเส้นสดผสมไข่ หากใช้เส้นเฟตตูชินีแบบอื่น ให้ตรวจฉลาก Fineli ระบุว่าเส้นสดผสมไข่ที่ต้มแล้วมีคาร์โบไฮเดรตที่ย่อยได้ประมาณ 16.2 กรัมต่อ 100 กรัม หากต้องการประมาณทั้งที่ ให้ชั่งเส้นและหน่อไม้ฝรั่งหลังต้มและสะเด็ดน้ำ"
+      "fi": "Luku koskee tuoretta kananmunapastaa. Jos käytät muuta fettuccinea, tarkista hiilihydraatit pakkauksesta. Finelin keitetyssä tuoreessa kananmunapastassa on noin 16,2 g imeytyvää hiilihydraattia 100 grammassa. Koko annoksen arvioon tarvitaan valutetun pastan ja lautaselle päätyvän kypsän parsan painot ja niitä vastaavat koostumustiedot. Kirjaa, paljonko parsan keitinvettä päätyy annokseen, ja punnitse sitruunankuoriraaste.",
+      "en": "This estimate applies to fresh egg pasta. For other fettuccine, check the pack. Fineli lists about 16.2 g of available carbohydrate per 100 g of cooked fresh egg pasta. A whole-serving estimate needs the weights and matching composition data for the drained pasta and the cooked asparagus that goes on the plate. Record how much asparagus cooking water goes into the serving and weigh the lemon zest.",
+      "sv": "Uppskattningen gäller färsk äggpasta. Kontrollera förpackningen om du använder annan fettuccine. Fineli anger cirka 16,2 g tillgängliga kolhydrater per 100 g kokt färsk äggpasta. För en uppskattning av hela portionen behövs vikt och motsvarande näringsdata för den avrunna pastan och den kokta sparris som hamnar på tallriken. Notera hur mycket av sparrisens kokvatten som följer med och väg det rivna citronskalet.",
+      "th": "ค่าประมาณนี้ใช้กับเส้นสดผสมไข่ หากใช้เส้นเฟตตูชินีแบบอื่น ให้ตรวจฉลาก Fineli ระบุว่าเส้นสดผสมไข่ที่ต้มแล้วมีคาร์โบไฮเดรตที่ย่อยได้ประมาณ 16.2 กรัมต่อ 100 กรัม การประมาณทั้งที่ต้องทราบน้ำหนักและข้อมูลโภชนาการที่ตรงกับเส้นที่สะเด็ดน้ำแล้วและหน่อไม้ฝรั่งสุกที่ใส่จาน จดปริมาณน้ำต้มหน่อไม้ฝรั่งที่ใส่ในจานและชั่งผิวเลมอนขูด"
     },
     "ingredientPortion": {
       "index": 1,
@@ -2330,7 +2424,20 @@
       "availableCarbsGPer100g": 79.3,
       "source": "https://fineli.fi/fineli/fi/elintarvikkeet/182"
     },
-    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/408bd3a8a6003e820bb0583f9496dcb9eef3c00e/docs/nutrition/calculations/indonesialainen-bubur-sumsum-punnittu-v2.json#L108-L134"
+    "publicSource": "https://github.com/ozirix-dev/Reseptit/blob/408bd3a8a6003e820bb0583f9496dcb9eef3c00e/docs/nutrition/calculations/indonesialainen-bubur-sumsum-punnittu-v2.json#L108-L134",
+    "additionalIngredientPortions": [
+      {
+        "index": 4,
+        "ingredientSha256": "e954c36caa9ec2f59b2f93c01049b411e3ad2bf40486c04f567bd355ec78650e",
+        "labels": {
+          "fi": "Kookospalmusokeri siirappiin",
+          "en": "Coconut palm sugar for the syrup",
+          "sv": "Kokospalmsocker till sirapen",
+          "th": "น้ำตาลมะพร้าวสำหรับทำน้ำเชื่อม"
+        },
+        "unit": "g"
+      }
+    ]
   },
   "bataatti-mustikkakakku": {
     "recipeBindingSha256": "78b0a5f7547537c5ab2be8c6d7d9c6af7dc06f416097822146180bb944b6d5d1",
@@ -2846,7 +2953,20 @@
       "availableCarbsGPer100g": 7.95,
       "source": "https://fineli.fi/fineli/fi/elintarvikkeet/354"
     },
-    "publicSource": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168191/nutrients"
+    "publicSource": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168191/nutrients",
+    "additionalIngredientPortions": [
+      {
+        "index": 1,
+        "ingredientSha256": "8fcb49ca2d78be02bc10dcf0e779f82d7398f8422ce511ef70469ff5224f1e8e",
+        "labels": {
+          "fi": "Kivettömät taatelit ennen liotusta",
+          "en": "Pitted dates before soaking",
+          "sv": "Urkärnade dadlar före blötläggning",
+          "th": "อินทผลัมเอาเม็ดออกก่อนแช่"
+        },
+        "unit": "g"
+      }
+    ]
   },
   "mustaherukkavispipuuro": {
     "recipeBindingSha256": "013e8a90ed2bacaaeb6132b2bb19cb8afaa7f55a4a76fbcda6186e685332e95f",
@@ -5082,6 +5202,17 @@
       "en": "Counting all the butter, garlic, pepper and thyme before cooking gives about 0.4 g available carbohydrate for one eighth of the recipe. The amount left on the roast has not been measured. Count any sides and bread separately.",
       "sv": "Om allt smör, all vitlök, svartpeppar och timjan räknas före tillagningen blir det cirka 0,4 g tillgängliga kolhydrater per åttondel av satsen. Mängden som blir kvar på steken har inte mätts. Räkna eventuella tillbehör och bröd separat.",
       "th": "หากคิดเนย กระเทียม พริกไทยดำ และไทม์ทั้งหมดก่อนปรุง หนึ่งในแปดของสูตรจะมีคาร์โบไฮเดรตที่ย่อยได้ประมาณ 0.4 กรัม ปริมาณที่ติดอยู่บนเนื้อหลังอบยังไม่ได้วัด ให้คิดเครื่องเคียงและขนมปังแยกต่างหาก"
+    },
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "bd5c705ffd05c00c5c0ca0f3a1f99cdc07832c74689753ba1389b13cf02d07ae",
+      "labels": {
+        "fi": "Naudan paahtopaisti ennen kypsennystä",
+        "en": "Beef roast before cooking",
+        "sv": "Nötstek före tillagning",
+        "th": "เนื้อวัวสำหรับอบก่อนปรุง"
+      },
+      "unit": "g"
     }
   },
   "indonesialainen-ketoprak-aamiaiskulho": {

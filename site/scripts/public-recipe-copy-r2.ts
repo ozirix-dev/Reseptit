@@ -591,6 +591,85 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
       ["หุงข้าวสาร 150 กรัมในหม้อหุงข้าวตามคำแนะนำด้านบน", "ตวงข้าวหอมมะลิ SunRice Jasmine Fragrant แบบแห้ง 150 กรัมสำหรับสามที่ ใช้ข้าวสารแบบถุงและหลีกเลี่ยงข้าวสำเร็จรูปสำหรับไมโครเวฟ หุงในหม้อหุงข้าวโดยใช้น้ำตามปริมาณที่ระบุบนถุง เสิร์ฟข้าวทั้งหม้อทันทีขณะยังร้อน"]
     ]
   },
+  "munakasmuffinit/fi": {
+    method: [
+      ["Jaa seos vuokiin ja paista", "Jaa seos tasaisesti vuokiin ja paista"],
+      ["Anna muffinien levätä viisi minuuttia ennen tarjoilua.", "Anna muffinien levätä viisi minuuttia. Perusohjeesta tulee kuusi muffinssia. Yksi annos on kaksi muffinssia."],
+    ],
+  },
+  "munakasmuffinit/en": {
+    method: [
+      ["Divide among the six cups and bake", "Divide evenly among the six cups and bake"],
+      ["Let the muffins rest for five minutes before serving.", "Let the muffins rest for five minutes. The base batch makes six muffins, two per serving."],
+    ],
+  },
+  "munakasmuffinit/sv": {
+    method: [
+      ["Fördela smeten i de sex formarna och grädda", "Fördela smeten jämnt i de sex formarna och grädda"],
+      ["Låt muffinsarna vila i fem minuter före servering.", "Låt muffinsarna vila i fem minuter. Grundreceptet ger sex muffins, två per portion."],
+    ],
+  },
+  "munakasmuffinit/th": {
+    method: [
+      ["แบ่งส่วนผสมใส่พิมพ์ทั้ง 6 หลุม อบ", "แบ่งส่วนผสมเท่า ๆ กันใส่พิมพ์ทั้ง 6 หลุม แล้วอบ"],
+      ["พักมัฟฟินไว้ 5 นาทีก่อนเสิร์ฟ", "พักมัฟฟินไว้ 5 นาที สูตรตั้งต้นได้มัฟฟิน 6 ชิ้น เสิร์ฟที่ละ 2 ชิ้น"],
+    ],
+  },
+  "tonnikalamunakkaat-uunissa/fi": {
+    method: [
+      ["Jaa seos vuokiin.", "Jaa seos tasaisesti vuokiin."],
+      ["Anna jäähtyä muutama minuutti ennen irrottamista.", "Anna jäähtyä muutama minuutti ennen irrottamista. Perusohjeesta tulee kuusi pientä munakasta. Yksi annos on kaksi pientä munakasta."],
+    ],
+  },
+  "tonnikalamunakkaat-uunissa/en": {
+    method: [
+      ["Divide the mixture among the six cups.", "Divide the mixture evenly among the six cups."],
+      ["Let cool for a few minutes before removing from the tin.", "Let cool for a few minutes before removing from the tin. The base batch makes six mini omelettes, two per serving."],
+    ],
+  },
+  "tonnikalamunakkaat-uunissa/sv": {
+    method: [
+      ["Fördela smeten i de sex formarna.", "Fördela smeten jämnt i de sex formarna."],
+      ["Låt svalna några minuter innan de tas ur formen.", "Låt svalna några minuter innan de tas ur formen. Grundreceptet ger sex små omeletter, två per portion."],
+    ],
+  },
+  "tonnikalamunakkaat-uunissa/th": {
+    method: [
+      ["แบ่งส่วนผสมใส่พิมพ์ทั้ง 6 หลุม", "แบ่งส่วนผสมเท่า ๆ กันใส่พิมพ์ทั้ง 6 หลุม"],
+      ["พักให้เย็นลงสองสามนาทีก่อนแกะออกจากพิมพ์", "พักให้เย็นลงสองสามนาทีก่อนแกะออกจากพิมพ์ สูตรตั้งต้นได้ไข่อบ 6 ชิ้น เสิร์ฟที่ละ 2 ชิ้น"],
+    ],
+  },
+  "uunimuna-avokadot/fi": {
+    method: [
+      ["Koverra kuoppia hieman suuremmiksi lusikalla.", "Koverra kuoppia hieman suuremmiksi lusikalla. Säästä kaikki koverrettu hedelmäliha tarjoiluun."],
+      ["Pirskota sitruunamehu ja lisää ruohosipuli juuri ennen tarjoilua.", "Jaa avokadot, koverrettu hedelmäliha ja kypsennetyt munat kahteen yhtä suureen annokseen. Ota mukaan myös erillisessä vuoassa kypsennetty muna. Viimeistele sitruunamehulla ja ruohosipulilla."],
+    ],
+  },
+  "vhh-lihamureke/fi": {
+    method: [
+      ["Anna vetäytyä 10 minuuttia ennen viipalointia.", "Anna vetäytyä 10 minuuttia ennen viipalointia. Jaa koko mureke ja paistoneste kuuteen yhtä suureen annokseen."],
+    ],
+  },
+  "vhh-lihamureke/en": {
+    method: [
+      ["rest for 10 minutes and divide into 6 portions.", "then rest for 10 minutes. Divide the meatloaf and all the cooking juices into six equal portions."],
+    ],
+  },
+  "vhh-lihamureke/sv": {
+    method: [
+      ["låt vila 10 minuter och dela i 6 portioner.", "låt vila i 10 minuter. Fördela hela limpan och all steksky på sex lika stora portioner."],
+    ],
+  },
+  "vhh-lihamureke/th": {
+    method: [
+      ["พัก 10 นาทีแล้วแบ่งเป็น 6 ส่วน", "พัก 10 นาที แล้วแบ่งมีตโลฟพร้อมน้ำจากการอบทั้งหมดเป็น 6 ส่วนเท่า ๆ กัน"],
+    ],
+  },
+  "uuniporsas-kermakastikkeessa-vhh/fi": {
+    "method": [
+      ["Viipaloi porsas ja tarjoa kastikkeen kanssa.", "Viipaloi porsas. Jaa kaikki liha ja kastike kuuteen yhtä suureen annokseen."]
+    ]
+  },
   "vhh-kaalilaatikko/en": {
     "useSeoDescription": true,
     "nutritionBasis": "Use the exact ingredient compositions and edible weights listed. Keep all liquid, fat and spices in the dish. The salt quantity is unchanged from the original recipe."
