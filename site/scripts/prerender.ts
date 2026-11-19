@@ -84,7 +84,7 @@ function routeMetadata(route: string, content: RouteContent) {
     `<meta name="twitter:image" content="${escapeHtml(recipe.image.src)}" />`,
   ] : [];
   const jsonLd = blogPost ? `<script id="blog-jsonld" type="application/ld+json">${JSON.stringify(blogJsonLd(blogPosts.find(post => post.slug === blogPost.slug)!)).replaceAll("<", "\\u003c")}</script>` : recipe?.image
-    ? `<script id="recipe-jsonld" type="application/ld+json">${JSON.stringify(recipeJsonLd(recipe)).replaceAll("<", "\\u003c")}</script>`
+    ? `<script id="recipe-jsonld" type="application/ld+json">${JSON.stringify(recipeJsonLd(recipe, url)).replaceAll("<", "\\u003c")}</script>`
     : "";
   // Match the card grid breakpoints. Do not eagerly fetch three cards on mobile.
   // Let a picture with a mobile AVIF choose once the viewport is known.
