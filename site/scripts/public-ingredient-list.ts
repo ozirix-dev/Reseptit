@@ -215,14 +215,22 @@ export function projectEggMethod(recipeId: string, locale: RecipeLocale, method:
   const reviewed = reviewedEggCounts[recipeId];
   if (!reviewed) return method;
   for (const [before, after] of eggMethodEdits[recipeId]?.[locale] ?? []) method = method.replaceAll(before, after);
-  for (const measurement of Object.values(reviewed)) {
+  const weights = Object.values(reviewed).flatMap(entry => entry ? [[entry[0], entry[1]] as const] : []);
+  return projectEggWeightReferences(locale, method, weights);
+}
+
+export function projectEggWeightReferences(
+  locale: RecipeLocale, method: string, weights: readonly (readonly [grams: number, count: number])[],
+): string {
+  // Reject the last number in decimals, grouped weights, ranges and qualified amounts.
+  const exactFiAmount = String.raw`(?<!\d[.,]\s*)(?<!\d\s+)(?<!\d\s*[-‐‑‒–—―−/×*]\s*)(?<!\d\s+(?:tai|ja)\s+)` +
+    String.raw`(?<![+±−<>=≤≥~≈\p{Pd}]\s*)(?<!\b(?:noin|vähintään|enintään|yli|alle)\s+)`;
+  for (const [grams, count] of weights) {
     // Match only a reviewed gram amount directly attached to the localized egg
     // name. Other ingredients can use the same number in the very same step.
-    if (!measurement) continue;
-    const [grams, count] = measurement;
     const singular = count === 1;
     const [pattern, replacement] = {
-      fi: [String.raw`\b${grams}\s*g\s+(?:kuoretonta\s+|kuorettomana\s+punnittua\s+)?(?:kanan)?munaa\b`,
+      fi: [String.raw`${exactFiAmount}\b${grams}\s*g\s+(?:kuoretonta\s+|kuorettomana\s+punnittua\s+)?(?:kanan)?munaa\b`,
         singular ? "aineslistan kananmuna" : "aineslistan kananmunat"],
       en: [String.raw`\b${grams}\s*g\s+(?:of\s+)?(?:shelled\s+)?eggs?\b(?:,?\s+(?:weighed\s+)?without\s+(?:(?:its|the)\s+)?shells?)?`,
         singular ? "the egg" : "the eggs"],

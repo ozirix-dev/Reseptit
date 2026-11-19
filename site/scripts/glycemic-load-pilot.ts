@@ -25,6 +25,7 @@ import {buildGkOnlyVariants} from './gk149-integration';
 import {buildApprovedSevenVariants} from './gk-next-seven';
 import {countGkVersions} from '../src/features/recipes/gk-only-types';
 import {catalogSourceApplication} from "./gk80-source-classification";
+import type { OriginalGkReleaseBinding } from "./gk80-release";
 import {applyScopedPolyolC} from './gk80-polyol-c';
 import {applyRecovery} from './gk80-uunikanapasta';
 import {withdrawQ09Tea} from './gk80-q09-withdrawal';
@@ -144,6 +145,11 @@ const { recipes: inputs, autoIncludedRecipeIds } = completePublishedRecipeInputs
   publishedSourceRows,
 );
 
+// Auto-generated coverage rows have no previously reviewed calculation to conflict with.
+const unreviewedAutoIncludedRecipeIds = autoIncludedRecipeIds.filter((recipeId) =>
+  ![recipeBindings.recipes, recipeBindings.calculationInputs, recipeBindings.calculationEvidence,
+    recipeBindings.exactRecipeText].some(bindings => bindings && Object.hasOwn(bindings, recipeId)));
+
 const giRecords = giSource.records as GlycemicIndexRecord[];
 if (!Array.isArray(giSource.sources) || new Set(giRecords.map((record) => record.id)).size !== giRecords.length) {
   throw new Error("GI source catalog and uniquely identified GI records are required.");
@@ -238,7 +244,10 @@ const legacyResults = rawResults.map((result) => {
   return usesImputation ? {...result, assessmentType: "PUBLISHED_IMPUTATION" as const, modelScenario: "POINT_SCENARIO" as const} : result;
 });
 const namedScenarios = new Map<string, ReadonlyMap<string, number>>();
-const results = await applyScopedPolyolC(root, await applyRecovery(root, await withdrawQ09Tea(root, await applyGk80Release(root, legacyResults, namedScenarios))));
+const originalReleaseBindings = new Map<string, OriginalGkReleaseBinding>();
+const gk80Results = await applyGk80Release(root, legacyResults, namedScenarios, originalReleaseBindings);
+const recoveredResults = await applyRecovery(root, await withdrawQ09Tea(root, gk80Results), originalReleaseBindings);
+const results = await applyScopedPolyolC(root, recoveredResults, originalReleaseBindings);
 const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root),buildBlueberryPieVariant(root),...buildThreeCurryVariants(root),buildLindstromBrineVariant(root),...buildReviewedGkVariants(root),...buildPohaHoneyMustardVariants(root),...buildTehoajoVariants(root),...buildTwoAlmondPieVariants(root),...loadAuthorizedGk100Variants(root)];
 const versionCoverage = countGkVersions(results,gkOnlyVariants);
 const report = {
@@ -252,6 +261,7 @@ const report = {
   giSourcePolicy: `Published, traceable glucose-scale GI values may support a public ingredient estimate as a direct match, justified analogue, or category mean. Match quality is separate from study quality: analogues and category means force LOW confidence. A missing GI match for an individual contribution below ${MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G} g available carbohydrate per serving may be omitted only while all such recipe contributions sum to less than ${CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G} g per serving; larger known carbohydrate contributions require GI evidence. An assigned but invalid or mismatched GI record remains blocking regardless of contribution size, and unknown carbohydrate remains blocking. The cumulative value is a user-centered editorial tolerance, not a clinical precision threshold.`,
   recipeBindingBaseline: recipeBindings.baselineCommit,
   autoIncludedRecipeIds,
+  unreviewedAutoIncludedRecipeIds,
   newPublicGkPendingSources: separatelyTrackedPublishedGk,
   newPublicGkPendingCount: separatelyTrackedPublishedGk.length,
   publicRecipeCountIncludingPending: results.length + separatelyTrackedPublishedGk.length,
@@ -264,6 +274,7 @@ const report = {
   sourceHashes,
   calculationInputHashes,
   calculationEvidenceHashes,
+  originalReleaseBindings: Object.fromEntries(originalReleaseBindings),
   results,
   gkOnlyVariants,
   versionCoverage,

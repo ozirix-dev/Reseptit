@@ -7,6 +7,7 @@ import {calculateCandidate} from './gk80-candidate-policy';
 import {emptyValues,round,type Calculation} from './nutrition-model';
 import {classifyGk80Source} from './gk80-source-classification';
 import type {GlycemicLoadResult} from './glycemic-load-model';
+import type {OriginalGkReleaseBinding} from './gk80-release';
 
 export const recoveryRecipeId='uunikanapasta-kesakurpitsa';
 export const recoveryEvidenceHash='b3c8d086f15b997937000cf4f42175a122f3f7cf2fd99c61d2783e2dc59668d7';
@@ -15,7 +16,7 @@ type Macro='availableCarbohydrate'|'protein'|'fat'|'fibre';
 type Row={index:number;name:string;massG:string|null;retention:string;sourceId:string;macroPer100g:Record<Macro,string>;certifiedZeroSalt?:boolean;gi:string|null;knownPartialPolyolPer100g:string;aggregatePolyolPer100g:string|null;unknownAggregate:boolean;pairedCarbohydrates?:{with:string;without:string};individuallyReportedSpecies?:Record<string,null>};
 type Display={value:string;decimalPlaces:number};
 export type RecoveryEvidence=Calculation&{recoveryC:{version:1;approvedDisplayProposal:string;reviewedCaseFingerprint:string;ownerRequest:string;biologicalBoundEstablished:false;
- candidate:Recipe;sources:Source[];comps:CompositionSource[];versionHashes:Record<string,string>;
+ candidate:Recipe&{sourcePath:string};sources:Source[];comps:CompositionSource[];versionHashes:Record<string,string>;
  reviewedCase:{pilot:{servings:number;ingredients:Row[]};[key:string]:unknown};
  displayProposal:{proposalFingerprintSha256:string;display:Record<string,Display>;[key:string]:unknown};
 }};
@@ -86,10 +87,19 @@ export async function loadRecovery(root:string,id:string){
 }
 export async function validateRecovery(root:string,id:string){if(id!==recoveryRecipeId)return false;await loadRecovery(root,id);return true;}
 
-export async function applyRecovery<T extends GlycemicLoadResult>(root:string,legacy:T[]){
+export async function applyRecovery<T extends GlycemicLoadResult>(
+ root:string, legacy:T[], verified?:Map<string,OriginalGkReleaseBinding>,
+){
  const {e,result}=await loadRecovery(root,recoveryRecipeId),p=e.recoveryC,out=[...legacy];
  const index=out.findIndex(x=>x.recipeId===recoveryRecipeId);
  if(index<0||out[index].status==='CALCULATED')throw Error('RECOVERY_RELEASE_COLLISION');
+ const sourcePath=p.candidate.sourcePath;
+ if(sourcePath&&p.versionHashes[sourcePath]){
+  verified?.set(recoveryRecipeId,{
+   sourcePath, sourceSha256:p.versionHashes[sourcePath], evidencePath:`docs/nutrition/calculations/${recoveryRecipeId}.json`,
+   servings:4, point:result.gk.value, range:null,
+  });
+ }
  out[index]={...out[index],status:'CALCULATED',servings:4,unroundedGlycemicLoadPerServing:null,glycemicLoadPerServing:result.gk.value,
   glycemicLoadRangePerServing:null,confidence:'LOW',blockers:[],omittedAvailableCarbohydratePerServingG:0,omittedAvailableCarbohydrateUpperBoundPerServingG:0,
   assessmentType:'PUBLISHED_IMPUTATION',modelScenario:'POINT_SCENARIO',closedRecoveryC:true,

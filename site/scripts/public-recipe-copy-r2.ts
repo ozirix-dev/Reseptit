@@ -736,6 +736,12 @@ export function applyCopyEdits(text: string, edits: CopyEdits = []): string {
   return edits.reduce((current, [before, after]) => current.replaceAll(before, after), text);
 }
 
+export function applyReviewedGramListSpacing(text: string, edits: CopyEdits = []): string {
+  const spacing = edits.filter(([before, after]) =>
+    before.replace(/(?<=\p{L}),(?=\d+(?:,\d+)?[ \t]+g\b)/gu, ", ") === after);
+  return spacing.reduce((current, [before, after]) => current.replaceAll(before, () => after), text);
+}
+
 const imageNotes = {
   en: ["- The image is a perception image made with artificial intelligence.", "- AI-generated illustration."],
   sv: ["- Bilden är en perceptionsbild gjord med artificiell intelligens.", "- AI-genererad illustration."],

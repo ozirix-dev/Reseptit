@@ -89,3 +89,17 @@
 - Read [Reseptit UI and accessibility guidance](docs/ulkoasu-ja-kaytettavyys.md) before changing layout, typography, content hierarchy or site-wide visuals.
 - Use the private `ozirix-dev/Ossi` web-design foundation as **background guidance**, not this project's source of truth; consult only relevant topics and do not copy Ossi research or assets into this public repository.
 - Preserve the site's existing styling by default; fix observed issues with narrowly scoped changes. Check concurrent PR file ownership before starting.
+
+## Named GI/GK batch work: laskeGK
+
+- A user instruction `laskeGK N` (N = 1–30, default 10) selects the reusable
+  project skill [`laske-gk`](.agents/skills/laske-gk/SKILL.md).
+  In Codex, explicitly invoke it with `$laske-gk N`. The number is a maximum
+  count of distinct current **original-recipe identities** to review in one
+  batch, not a quota of numerical GK results or CI runs.
+- Reuse current review queues and evidence, batch similar cases, test targeted
+  changes locally before pushing, and update ReportHub once per completed
+  stage. Resume from the owned branch/committed evidence after interruption.
+- Keep all GK/F25/nutrition/history/review/translation controls and the
+  existing one-writer-per-branch rule. A batch command never grants merge,
+  deployment or ownership of another session's active PR.
