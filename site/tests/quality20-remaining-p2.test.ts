@@ -55,12 +55,13 @@ test("quality20: reviewed public copy resolves three P2 findings across all four
       assert.ok(parsed);
       assert.equal(parsed.data.status, "published");
       assert.equal(parsed.data.servings, fixture.servings);
-      assert.equal(parsed.data.image?.src, fixture.image.replace(/^kuvat\//, ""));
+      const sourceImage = parsed.data.image as { src: string; alt: string } | undefined;
+      assert.equal(sourceImage?.src, fixture.image.replace(/^kuvat\//, ""));
       const page = published.find(item => item.locale === locale);
       assert.ok(page);
       assert.equal(page.servings, fixture.servings);
       assert.deepEqual(page.nutrition, fixture.nutrition, sourcePath + ": historical macros");
-      assert.equal(page.image?.alt, parsed.data.image?.alt, sourcePath + ": image caption");
+      assert.equal(page.image?.alt, sourceImage?.alt, sourcePath + ": image caption");
       const copy = reviewedRecipeCopy(fixture.id, locale);
       assert.ok(copy, sourcePath + ": reviewed display copy required");
       if (fixture.notes) {
