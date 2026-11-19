@@ -134,7 +134,7 @@ export function SeoMeta() {
       const script = document.createElement("script");
       script.id = "recipe-jsonld";
       script.type = "application/ld+json";
-      script.textContent = JSON.stringify(recipeJsonLd(recipe));
+      script.textContent = JSON.stringify(recipeJsonLd(recipe, siteBase + recipe.routePath));
       document.head.append(script);
     }
   }, [pathname, recipe, recipes, translations, locales, pagination]);

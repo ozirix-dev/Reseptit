@@ -28,6 +28,24 @@ test("all generated routes, images, sitemap and metadata match published source"
   assert.deepEqual(report.findings, []);
   assert.equal(report.routes, Object.keys(contentManifest).length);
 });
+test("the Search Console examples have named steps with working canonical fragments", async () => {
+  const pages = expectedPages(siteContent.recipes);
+  for (const slug of ["avokado-banaanijaatelo", "bataattiletut"]) {
+    const page = pages.find(item => item.route === `/${slug}/`)!;
+    const html = await readFile(path.join(dist, slug, "index.html"), "utf8");
+    const structured = JSON.parse(html.match(/<script id="recipe-jsonld"[^>]*>([\s\S]*?)<\/script>/)![1]);
+    const steps = structured.recipeInstructions.filter((step: { url: string }) => step.url?.includes("#recipe-step-"));
+    assert.equal(steps.length, 4, slug);
+    steps.forEach((step: { name: string; url: string }, index: number) => {
+      assert.ok(step.name?.trim(), `${slug} step ${index + 1} must have a descriptive name`);
+      assert.equal(step.url, `${siteBase}/${slug}/#recipe-step-${index + 1}`);
+    });
+    assert.deepEqual(inspectPage(html, page), []);
+    assert.ok(inspectPage(html.replace('id="recipe-step-1"', 'id="wrong-step"'), page)
+      .some(item => item.code === "JSONLD_STEP_TARGET"));
+  }
+});
+
 test("natto cookingMethod is independently checked against public notes in FI/EN/SV/TH", async () => {
   const pages = expectedPages(siteContent.recipes);
   const methods = { fi: "Keittäminen", en: "Boiling", sv: "Kokning", th: "การต้ม" } as const;
