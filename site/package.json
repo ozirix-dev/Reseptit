@@ -47,8 +47,7 @@
     "audit:assistant:language-review": "tsx scripts/assistant-language-review.ts",
     "test:c20-fi-editorial": "tsx --test tests/c20-fi-editorial-display.test.ts",
     "test:d30-fi-mint": "tsx --test tests/d30-fi-mint-milk-display.test.ts",
-    "test:fi-breakfast-quality": "tsx --test tests/fi-breakfast-quality-display.test.ts",
-    "build:production": "node scripts/build-production.mjs"
+    "test:fi-breakfast-quality": "tsx --test tests/fi-breakfast-quality-display.test.ts"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -59,13 +58,13 @@
     "@types/node": "^26.6.6",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.2.1",
-    "marked": "^18.1.3",
-    "playwright": "^1.65.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "marked": "^18.2.0",
+    "playwright": "^1.65.1",
     "sharp": "0.35.5",
     "tsx": "^4.21.0",
     "typescript": "^7.0.2",
-    "vite": "^8.3.6",
+    "vite": "^8.3.8",
     "yaml": "^2.8.1",
     "zod": "^4.3.6"
   }
