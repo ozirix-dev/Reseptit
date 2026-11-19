@@ -47,13 +47,30 @@ jobs:
           cache-dependency-path: site/package-lock.json
 
       - name: Verify or restore manifest image inputs
+        id: images
         shell: pwsh
         env:
+          USE_TRACKED_IMAGES: ${{ github.event_name == 'pull_request' && (github.event.pull_request.head.repo.full_name != github.repository || github.actor == 'dependabot[bot]') }}
           IMAGE_CI_ACCESS_KEY_ID: ${{ secrets.IMAGE_CI_ACCESS_KEY_ID }}
           IMAGE_CI_SECRET_ACCESS_KEY: ${{ secrets.IMAGE_CI_SECRET_ACCESS_KEY }}
         run: |
-          python3 -B site/scripts/restore-image-inputs.py --manifest assets/images.manifest.json --project ozirix-dev/Reseptit --auto-root kuvat --github-env
+          $manifest = 'assets/images.manifest.json'
+          $data = Get-Content -LiteralPath $manifest -Raw | ConvertFrom-Json -AsHashtable
+          if ($env:USE_TRACKED_IMAGES -eq 'true') {
+            # Fork/Dependabot runs receive no reader secret; current tracked
+            # inputs must still match every hash. Missing images fail closed.
+            $data['ci']['mode'] = 'tracked'
+            $manifest = Join-Path $env:RUNNER_TEMP 'tracked-image-inputs.json'
+            [IO.File]::WriteAllText($manifest, ($data | ConvertTo-Json -Depth 100), [Text.UTF8Encoding]::new($false))
+          }
+          $json = & python3 -B site/scripts/restore-image-inputs.py --manifest $manifest --project ozirix-dev/Reseptit --auto-root kuvat
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          $result = ($json -join "`n") | ConvertFrom-Json
+          if ($result.status -ne 'PASS' -or [string]::IsNullOrWhiteSpace($result.imageRoot) -or $result.imageRoot -match "[`r`n]") {
+            throw 'Image inputs did not return a safe verified root'
+          }
+          Add-Content -LiteralPath $env:GITHUB_OUTPUT -Value "root=$($result.imageRoot)"
+          Write-Host "Verified $($result.files) image inputs (mode=$($data['ci']['mode']))"
 
       - name: Verify changed-path selector
         run: node site/scripts/select-ci-checks.test.mjs
@@ -175,6 +192,8 @@ jobs:
           retention-days: 14
 
       - name: Generate nutrition and GK outputs required by isolated TypeScript checks
+        env:
+          PROJECT_IMAGE_ROOT: ${{ steps.images.outputs.root }}
         if: steps.select.outputs.run_content_sync == 'true' && steps.select.outputs.run_build != 'true'
         run: |
           npm run content:sync
@@ -204,6 +223,7 @@ jobs:
         shell: pwsh
         env:
           CHANGED_PATHS: ${{ steps.select.outputs.changed_paths }}
+          PROJECT_IMAGE_ROOT: ${{ steps.images.outputs.root }}
           BASE_SHA: ${{ steps.revision.outputs.pr_base || github.event.before || github.sha }}
           HEAD_SHA: ${{ github.sha }}
         run: |
@@ -258,6 +278,8 @@ jobs:
           retention-days: 14
 
       - name: Build the publishable site
+        env:
+          PROJECT_IMAGE_ROOT: ${{ steps.images.outputs.root }}
         if: steps.select.outputs.run_build == 'true'
         run: npm run build
         working-directory: site

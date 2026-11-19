@@ -3233,14 +3233,30 @@
   "conflicts": [],
   "migrationBlocked": false,
   "ci": {
-    "mode": "tracked",
+    "mode": "r2",
     "bucket": "image-ci-1187705081",
     "endpoint": "https://2dda5d88f53563ddabfc97531c313ca1.r2.cloudflarestorage.com",
     "activationRequires": [
       "private-bucket",
       "read-only-ci-secret",
-      "verified-upload",
-      "approved-image-removal"
+      "verified-upload"
+    ],
+    "key": "inputs/89552f63d1eff0571d236bf649c11cb69998d15a778febc4a1609a3efc6b01b3/62ad7dd278107b83ee95d575093a03db4e3ba3e6e4700c42b9555b327d24323a.zip",
+    "bundleSha256": "62ad7dd278107b83ee95d575093a03db4e3ba3e6e4700c42b9555b327d24323a",
+    "storageClass": "Standard",
+    "verification": {
+      "asOf": "2026-11-19T08:25:59.553176+00:00",
+      "status": "PRIVATE_CLOUD_RESTORE_PASS",
+      "files": 395,
+      "bytes": 82635392,
+      "readerWriteDeniedHttp": 403,
+      "publicDevelopmentUrl": false,
+      "customDomains": []
+    },
+    "imageRemovalRequires": [
+      "successful-cloud-ci",
+      "separate-pinned-removal-approval",
+      "fork-and-dependabot-input-policy-after-removal"
     ]
   },
   "trackedSourceRoot": "kuvat"
