@@ -83,3 +83,30 @@ ja ylimääräiset paikalliskopiot tulevat siivottaviksi seitsemän päivän kul
 Tuntematon tiedosto tai epäselvä versio jää tarkistettavaksi.
 Synkronoidun Proton-tiedoston poistaminen voi poistaa pilvikopionkin;
 cloud-only-tilaan siirrytään **Free up space** -toiminnolla.
+
+## Puhtaan kloonin tuotantobuild
+
+```powershell
+cd site
+npm ci
+npm run build:production
+```
+
+Tämä erillinen tuotantobuild tarkistaa aina hyväksytyn kuvajoukon ennen
+varsinaista buildia. Python 3 tarvitaan palautusadapterille. Kuvajuuri valitaan
+järjestyksessä `PROJECT_IMAGE_ROOT`, nykyinen `kuvat/`, rajatun readerin
+R2-palautus tai tunnuksettomassa paikallisessa kloonissa julkaistu snapshot.
+Osittaiset reader-tunnukset pysäyttävät palautuksen. CI ei saa julkista
+fallbackia puuttuvien tunnusten vuoksi; nykyinen Actionsin erillinen
+palautusvaihe ja fixturetestien ympäristöt säilyvät.
+
+Paikallinen tunnukseton palautus kelpaa vain jo julkaistuille manifestin
+production-source-kuville. Puuttuva, vaihtunut tai julkaisematon kuva
+pysäyttää buildin. Käytä silloin nykyistä rajattua readeria tai ylläpitäjän
+varmentamaa julkaisusnapshotia. Pages-snapshotin rajallinen säilytys ei muutu.
+
+Readerin avaimia ei välitetä varsinaiselle build-prosessille. Wrapper poistaa
+lopuksi vain itse luomansa palautuksen tilapäishakemiston. Se ei poista
+Git-kuvia, käyttäjän antamaa kuvajuurta tai dist-julkaisua. Tavallinen
+`npm run build` säilyy kehitys- ja fixturekäytössä. Tuotantobuildin onnistuminen
+ei anna julkaisulupaa eikä muuta nykyistä Pagesin suorajulkaisua.

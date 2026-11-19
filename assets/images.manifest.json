@@ -3256,7 +3256,8 @@
     "imageRemovalRequires": [
       "successful-cloud-ci",
       "verified-public-snapshot",
-      "separate-pinned-removal-approval"
+      "separate-pinned-removal-approval",
+      "verified-clean-clone-production-bootstrap"
     ],
     "publicFallback": {
       "urlPrefix": "https://a72d7848.recipavo-site.pages.dev/kuvat/",
