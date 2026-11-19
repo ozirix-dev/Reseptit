@@ -388,7 +388,8 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     const researchLink = technical.locator("a").first();
     assert.equal(await researchLink.isVisible(), false);
     assert.match(await hummus.innerText(), /Luotettavuus/);
-    assert.match(await hummus.innerText(), /Hiilihydraatteja noin 25,2 g annoksessa.*kuitu ja polyolit mukana/);
+    assert.match(await hummus.innerText(), /Hiilihydraatteja noin 25,2 g annoksessa.*mukana laskettu kuitu ja huomioidut polyolit/);
+    assert.match(await hummus.locator('[data-ingredient-carbohydrate="available"]').innerText(), /noin 17,6 g/);
     assert.doesNotMatch(await hummus.innerText(), /HUMAN_GI|CATEGORY_MEAN|CALCULATION_POLICY/);
     const calculation = hummus.locator(".gk-evidence__details").first();
     await calculation.locator("summary").focus();

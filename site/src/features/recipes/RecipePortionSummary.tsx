@@ -9,7 +9,7 @@ export const portionCopy = {
   fi: {
     ingredientGk: "GK-arvio osalle aineksista",
     title: "Oma syötävä annos", batch: "Valmistettavat annokset", single: "1 reseptin annos", carbs: "Hiilihydraatit annoksessa", available: "Ilman kuitua ja polyoleja",
-    total: "Reseptin ilmoittama kokonaismäärä, kuitu ja polyolit mukana", net: "Reseptin ilmoittamat nettohiilihydraatit",
+    total: "Reseptin kokonaisarvio, mukana laskettu kuitu ja huomioidut polyolit", net: "Reseptin ilmoittamat nettohiilihydraatit",
     scope: "Arvio koskee reseptin ainesluetteloa. Huomioi erikseen lisätyt lisukkeet ja juomat.",
     fraction: (n: string) => `${n} reseptin annosta`, pieces: (n: string) => `${n} kpl`,
     sheets: (n: string) => n === "1" ? "1 arkki" : `${n} arkkia`,
@@ -37,7 +37,7 @@ export const portionCopy = {
   en: {
     ingredientGk: "GL estimate for selected ingredients",
     title: "Portion you eat", batch: "Servings to make", single: "1 recipe serving", carbs: "Carbohydrate in your portion", available: "Excludes fibre and polyols",
-    total: "Recipe total, including fibre and polyols", net: "Net carbs as listed in the recipe",
+    total: "Recipe’s total estimate, including the fibre and polyols counted", net: "Net carbs as listed in the recipe",
     scope: "The estimate covers the listed ingredients. Count any extra sides and drinks separately.",
     fraction: (n: string) => `${n} recipe servings`, pieces: (n: string) => n === "1" ? "1 piece" : `${n} pieces`,
     sheets: (n: string) => n === "1" ? "1 sheet" : `${n} sheets`,
@@ -65,7 +65,7 @@ export const portionCopy = {
   sv: {
     ingredientGk: "GL-uppskattning för vissa ingredienser",
     title: "Portionen du äter", batch: "Portioner att laga", single: "1 receptportion", carbs: "Kolhydrater i din portion", available: "Utan fiber och polyoler",
-    total: "Receptets totala kolhydrater, inklusive fiber och polyoler", net: "Nettokolhydrater enligt receptet",
+    total: "Receptets uppskattade totala mängd, inklusive fiber och polyoler som ingår i beräkningen", net: "Nettokolhydrater enligt receptet",
     scope: "Uppskattningen gäller ingredienserna i listan. Räkna tillbehör och drycker som du lägger till separat.",
     fraction: (n: string) => `${n} receptportioner`, pieces: (n: string) => `${n} st.`,
     sheets: (n: string) => `${n} ark`,
@@ -93,7 +93,7 @@ export const portionCopy = {
   th: {
     ingredientGk: "ค่าประมาณ GL สำหรับวัตถุดิบบางส่วน",
     title: "ปริมาณที่คุณรับประทาน", batch: "จำนวนที่ทำ", single: "1 ที่ตามสูตร", carbs: "คาร์โบไฮเดรตในส่วนที่รับประทาน", available: "ไม่รวมใยอาหารและโพลิออล",
-    total: "คาร์โบไฮเดรตรวมตามสูตร รวมใยอาหารและโพลิออล", net: "คาร์โบไฮเดรตสุทธิตามที่ระบุในสูตร",
+    total: "ค่าประมาณคาร์โบไฮเดรตรวมตามสูตร รวมใยอาหารและโพลิออลที่นับในการคำนวณ", net: "คาร์โบไฮเดรตสุทธิตามที่ระบุในสูตร",
     scope: "ค่าประมาณครอบคลุมวัตถุดิบในรายการเท่านั้น โปรดคิดเครื่องเคียงและเครื่องดื่มที่เพิ่มแยกต่างหาก",
     fraction: (n: string) => `${n} ที่ตามสูตร`, pieces: (n: string) => `${n} ชิ้น`,
     sheets: (n: string) => `${n} แผ่น`,

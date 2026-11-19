@@ -1,4 +1,30 @@
 {
+  "chole-bhature": {
+    "recipeBindingSha256": "5dcce6e73b696198aaa53e0f34b54d17160e7c404cf8f9a2f12415437a00b76e",
+    "preparationSha256": "0822e946cf8e8bff4d75fb1c47cc641d01bc35eed1559c76c3953f170cd1a4c5",
+    "reviewedAt": "2026-11-18",
+    "source": "https://fineli.fi/fineli/api/v1/foods/110",
+    "reasoning": "The recipe makes six breads and four servings. It specifies 350 g wheat flour in the bread dough. Fineli 110 is a reference for semi-coarse wheat flour, so the figure is an estimate of the flour alone, tied to a quarter of the batch.",
+    "condition": {
+      "fi": "Reseptistä tulee kuusi leipää ja neljä annosta. Yksi reseptin annos on neljännes currysta ja keskimäärin puolitoista leipää. Jauhorivi käyttää puolikarkeaa vehnäjauhoa vertailukohtana.",
+      "en": "The recipe makes six breads and four servings. One recipe serving is a quarter of the curry and one and a half breads on average. The flour estimate uses semi-coarse wheat flour as its reference.",
+      "sv": "Receptet ger sex bröd och fyra portioner. En receptportion är en fjärdedel av curryn och i genomsnitt ett och ett halvt bröd. Mjöluppskattningen utgår från medelgrovt vetemjöl.",
+      "th": "สูตรนี้ทำแป้งทอดได้ 6 ชิ้น แบ่งเป็น 4 ที่ หนึ่งที่คือแกงหนึ่งในสี่ของสูตรและแป้งทอดเฉลี่ยหนึ่งชิ้นครึ่ง ค่าของแป้งใช้อ้างอิงจากแป้งสาลีบดปานกลาง"
+    },
+    "ingredientPortion": {
+      "index": 10,
+      "ingredientSha256": "bd7a6bcf905c4eed4b37c85f208cf3756e3529a49d00aa582257dbe09363203b",
+      "labels": {
+        "fi": "Puolikarkea vehnäjauho bhature-leipiin, kuivapaino",
+        "en": "Semi-coarse wheat flour for the bhature, dry weight",
+        "sv": "Medelgrovt vetemjöl till bhature, torrvikt",
+        "th": "แป้งสาลีบดปานกลางสำหรับแป้งทอดภาทูเร น้ำหนักแห้ง"
+      },
+      "unit": "g",
+      "source": "https://fineli.fi/fineli/api/v1/foods/110",
+      "availableCarbsGPer100g": 73.998
+    }
+  },
   "munakasmuffinit": {
     "recipeBindingSha256": "088c1a29d6e9cd08c07fac8b9fec40b0d79b270f3c45681b1f87ad6bbea47f18",
     "preparationSha256": "3f3acd82ec993ce1ab5198e7f3cdfe238cb87078a9ef7dcb77b1ddaeffd07c1e",
@@ -160,7 +186,7 @@
   "vhh-kaalikaarryleet": {
     "recipeBindingSha256": "6b7573adb0ef818192ac8e8bbc3b0b35909a3d0af1a6de056c178e2a0cd16bee",
     "reviewedAt": "2026-11-18",
-    "reasoning": "Full GK 9.24 is white cabbage 12.5g available carbohydrate × 0.66 = 8.25, plus riced cauliflower 1.5g × 0.66 = 0.99. An additional known 1.578025g available carbohydrate is omitted under editorial rule. This is not a confidence interval or a calculated opposite scenario. Retain point with visible qualification. Avoid new numerical estimates or stable verbal class without suitable evidence.",
+    "reasoning": "Full GK 9.24 is white cabbage 12.5g available carbohydrate × 0.66 = 8.25, plus riced cauliflower 1.5g × 0.66 = 0.99. An additional known 1.578025g available carbohydrate is omitted under editorial rule. This is not a confidence interval or a calculated opposite scenario. Retain point with visible qualification. Avoid new numerical estimates or stable verbal class without suitable evidence. The recipe uses 250 g plain riced cauliflower in the filling across four servings. Fineli 322 is the raw cauliflower reference. This does not estimate the leaves from the initial whole cabbage weight.",
     "source": "https://doi.org/10.1093/ajcn/nqab233",
     "classLimitation": {
       "fi": "Kaalin ja kukkakaalin osuus perustuu kasvisryhmän keskiarvoon. Puuttuvat osuudet lisäävät epävarmuutta.",
@@ -168,7 +194,20 @@
       "sv": "Kål och blomkål bygger på ett genomsnitt för en grönsaksgrupp. Utelämnade bidrag ökar osäkerheten.",
       "th": "คำนวณส่วนของกะหล่ำปลีและดอกกะหล่ำจากค่าเฉลี่ยของกลุ่มผัก รายการที่ไม่ได้คำนวณทำให้ค่าประมาณไม่แน่นอนขึ้น"
     },
-    "preparationSha256": "f774277735ed556bb11c74c5441cacb7ef987bd1496875b1eed4c5a7cffad471"
+    "preparationSha256": "f774277735ed556bb11c74c5441cacb7ef987bd1496875b1eed4c5a7cffad471",
+    "ingredientPortion": {
+      "index": 2,
+      "ingredientSha256": "5ac1d0c766ff1064da51b725341c8d487c7ae9d17e5595d0858752003b46223e",
+      "labels": {
+        "fi": "Kukkakaalirouhe täytteeseen, raakapaino",
+        "en": "Riced cauliflower for the filling, raw weight",
+        "sv": "Blomkålsris till fyllningen, rå vikt",
+        "th": "ดอกกะหล่ำสับสำหรับไส้ น้ำหนักดิบ"
+      },
+      "unit": "g",
+      "source": "https://fineli.fi/fineli/api/v1/foods/322",
+      "availableCarbsGPer100g": 2.35
+    }
   },
   "bibimbap": {
     "recipeBindingSha256": "e6e7b8eaf2085a32d44382c7605296053ff5bb9768dd0664b005413a70b0af7c",
@@ -945,14 +984,27 @@
     "recipeBindingSha256": "0ce1d5130f86d5dc9911ff0eaf1b12b0cf1884e48f87c25b934b1fd5739d86a8",
     "source": "https://github.com/ozirix-dev/Reseptit/blob/96780d79ed2bf02803611ef3483959b7d42bf6d4/reseptit/alkuruoat/hummus.md",
     "reviewedAt": "2026-11-18",
-    "reasoning": "The ingredient list and preparation cover the chickpea spread. Bread and vegetables in the serving suggestions are separate foods.",
+    "reasoning": "The ingredient list and preparation cover the chickpea spread. Bread and vegetables in the serving suggestions are separate foods. Fineli 11089 concerns cooked, drained chickpeas in unsalted water. Scale the weighed ingredient before optional peeling; the link supports this ingredient alone.",
     "condition": {
-      "fi": "Arvio koskee hummusannosta. Tarjoiluleipä ja dippivihannekset eivät sisälly.",
-      "en": "The estimate is for the hummus. Bread and vegetables served for dipping are extra.",
-      "sv": "Uppskattningen gäller hummusen. Bröd och grönsaker att dippa ingår inte.",
-      "th": "ค่าประมาณนี้สำหรับฮัมมุสเท่านั้น ไม่รวมขนมปังหรือผักที่กินคู่กัน"
+      "fi": "Arvio koskee hummusannosta. Tarjoiluleipä ja dippivihannekset eivät sisälly. Kikherneiden vertailuarvo koskee keitettyjä ja valutettuja kikherneitä.",
+      "en": "The estimate is for the hummus. Bread and vegetables served for dipping are extra. The chickpea estimate uses a reference for cooked, drained chickpeas.",
+      "sv": "Uppskattningen gäller hummusen. Bröd och grönsaker att dippa ingår inte. Kikärtsvärdet utgår från kokta, avrunna kikärter.",
+      "th": "ค่าประมาณนี้สำหรับฮัมมุสเท่านั้น ไม่รวมขนมปังหรือผักที่กินคู่กัน ค่าของถั่วชิกพีใช้อ้างอิงจากถั่วชิกพีที่ต้มและสะเด็ดน้ำแล้ว"
     },
-    "preparationSha256": "2de33761b7e06a0e3d6af3b06228685bce2404ca8b647070b4fd68884f461779"
+    "preparationSha256": "2de33761b7e06a0e3d6af3b06228685bce2404ca8b647070b4fd68884f461779",
+    "ingredientPortion": {
+      "index": 0,
+      "ingredientSha256": "6d0417c8fd9aa14a3f1649f9b66463acbc4cf34cc271b34f62cc0fcc92b9c542",
+      "labels": {
+        "fi": "Kypsät huuhdellut kikherneet ennen mahdollista kuorimista",
+        "en": "Cooked, rinsed chickpeas before optional peeling",
+        "sv": "Kokta, sköljda kikärter före eventuell skalning",
+        "th": "ถั่วชิกพีสุกที่ล้างแล้ว ก่อนปอกเปลือกหากเลือกปอก"
+      },
+      "unit": "g",
+      "source": "https://fineli.fi/fineli/api/v1/foods/11089",
+      "availableCarbsGPer100g": 17.6
+    }
   },
   "bulgogi": {
     "recipeBindingSha256": "c03fecdf4eb07fc0e016f250e3156c7af3e75751617d1b2e52abf4285ad76028",
