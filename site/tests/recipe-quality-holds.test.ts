@@ -96,8 +96,8 @@ test("ackee original is quarantined and has explicit four-language food-safety g
     assert.ok(safetyHold, `${locale}: food-safety instructions must exist before any future release`);
     assert.match(safetyHold.description,
       /^(?:TURVALLISUUSVAROITUS|FOOD SAFETY WARNING|LIVSMEDELSVARNING|คำเตือนด้านความปลอดภัยอาหาร)/);
-    assert.match(safetyHold.instructions, /^1\\. .+\\n2\\. /s);
-    assert.match(safetyHold.instructions, /fda\\.gov\\/food\\/natural-toxins-food\\/hypoglycin-and-ackee-fruit/);
+    assert.match(safetyHold.instructions, /^1\. .+\n2\. /s);
+    assert.match(safetyHold.instructions, /fda\.gov\/food\/natural-toxins-food\/hypoglycin-and-ackee-fruit/);
   }
 });
 
