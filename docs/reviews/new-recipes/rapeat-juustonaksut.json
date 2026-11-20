@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "recipe_id": "rapeat-juustonaksut",
+  "source_path": "reseptit/valipalat/rapeat-juustonaksut.md",
+  "source_sha256": "43183a1029640dc83fbcb2f07ce878bb258fab18a0bf0ba7bc84f24e4768e8a5",
+  "decision": "approved",
+  "reviewed_by": "AI editorial reviewer (GPT-6)",
+  "reviewed_at": "2026-11-13",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://traditionallymodernfood.com/one-ingredient-cheese-crackers-keto-crisp-chips-baked-microwave-2/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/rapeat-juustonaksut.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "No independent published cheddar-only baked crisp with smoked paprika was found in the recipe library."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "140 g cheddar and 1 g smoked paprika, all weighed. The illustrated portion shows three thin cheese crisps."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Spread 12 separate shallow mounds and bake at 200 °C to a golden edge. Cool on the parchment to let the cheese set crisp."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Milk allergen is disclosed. Use oven-safe parchment and let hot melted cheese cool before handling."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Twelve pieces and four portions of three each. The 25 minutes include oven heating, baking and cooling."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli 698 is source-bound. Paprika is a documented bounded omission and rendered cheese fat remains a disclosed estimate."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "There is no approved glycemic load calculation for this recipe. GK is marked undetermined."
+    }
+  }
+}
