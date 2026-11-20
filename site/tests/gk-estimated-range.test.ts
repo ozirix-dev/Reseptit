@@ -83,7 +83,7 @@ test('real approved corpus counts eight studies including sealed manakish withou
  assert.equal(counts.exact+counts.range,235);
  assert.equal(counts.total,report.results.length);
  assert.equal(counts.missing,counts.total-counts.exact-counts.range);
- assert.equal(counts.missing,109); // Finnish cocoa and chia porridge each add a recipe without a numeric GK.
+ assert.equal(counts.missing,110); // Cheddar crisps add one published FI recipe with GK still undetermined.
  assert.equal(JSON.stringify(report.gkOnlyVariants),before);
  const changed=structuredClone(report.gkOnlyVariants);
  changed.find((v:any)=>v.recipeId===manakishStudyBinding.recipeId).inputSha256='changed';
