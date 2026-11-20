@@ -1,9 +1,9 @@
 # laskeGK 60 – ChatGPT:n kahdeksas tutkimuserä: jäljellä olevat alkuperäiset
 
-**Status:** RESEARCH HANDOFF / ei GI/GK-julkaisuhyväksyntää  
-**Päivä:** 18.11.2026 (Europe/Helsinki)  
-**Lukittu lähde:** `ozirix-dev/Reseptit`, main `e8ed43ed525a9cb6abbe61b94bc1c036153979c7`  
-**Vain tämän raportin omistaja:** ChatGPT:n oma tutkimushaara, ei Codexin PR #706:n työpuu.  
+**Status:** RESEARCH HANDOFF / ei GI/GK-julkaisuhyväksyntää\
+**Päivä:** 18.11.2026 (Europe/Helsinki)\
+**Lukittu lähde:** `ozirix-dev/Reseptit`, main `e8ed43ed525a9cb6abbe61b94bc1c036153979c7`\
+**Vain tämän raportin omistaja:** ChatGPT:n oma tutkimushaara, ei Codexin PR #706:n työpuu.\
 **Aiemmat ChatGPT-erät:** PR:t #709–#715 = 180 muuta resepti-ID:tä.
 
 ## Toteutunut määrä ja miksi se on alle 60
