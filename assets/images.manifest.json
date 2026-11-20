@@ -3149,6 +3149,14 @@
       "sha256": "b3d2ba75d825a4791c8743aeabea89bfc695dfa79ff0379da9ccfa89071d1476"
     },
     {
+      "path": "valipalat/rapeat-juustonaksut.webp",
+      "approved": true,
+      "role": "production-source",
+      "build": true,
+      "bytes": 233252,
+      "sha256": "7f5edbc5e48183d446feabfb9b5feed7bed1cae7327bc28abbd4b81775cd3751"
+    },
+    {
       "path": "valipalat/taytetyt-kananmunat-yrteilla.webp",
       "approved": true,
       "role": "production-source",
@@ -3241,15 +3249,16 @@
       "read-only-ci-secret",
       "verified-upload"
     ],
-    "key": "inputs/89552f63d1eff0571d236bf649c11cb69998d15a778febc4a1609a3efc6b01b3/62ad7dd278107b83ee95d575093a03db4e3ba3e6e4700c42b9555b327d24323a.zip",
-    "bundleSha256": "62ad7dd278107b83ee95d575093a03db4e3ba3e6e4700c42b9555b327d24323a",
+    "key": "inputs/deb3a2359a10e361caaecc3c573fa1c5d7c34005638978a6f998aed7db094f41/358f3264119df8ee21cc453187dcca70d8b641159c12ac994bb40fc0a58bf4c4.zip",
+    "bundleSha256": "358f3264119df8ee21cc453187dcca70d8b641159c12ac994bb40fc0a58bf4c4",
     "storageClass": "Standard",
     "verification": {
-      "asOf": "2026-11-19T08:25:59.553176+00:00",
-      "status": "PRIVATE_CLOUD_RESTORE_PASS",
-      "files": 395,
-      "bytes": 82635392,
-      "readerWriteDeniedHttp": 403,
+      "asOf": "2026-11-20T09:27:34.814935+00:00",
+      "status": "PRIVATE_CLOUD_UPLOAD_READBACK_PASS",
+      "files": 396,
+      "bytes": 82807820,
+      "uploadResponseStatus": 200,
+      "storedObjectSha256Verified": true,
       "publicDevelopmentUrl": false,
       "customDomains": []
     },
