@@ -1,9 +1,9 @@
 # laskeGK 50 — seitsemäs ChatGPT-tutkimuserä
 
-**Tila:** RESEARCH HANDOFF / vain tutkimus, ei GK-julkaisuhyväksyntää  
-**Päivä:** 18.11.2026 (Europe/Helsinki)  
-**Lähtöpiste:** Reseptit `main`, `e8ed43ed525a9cb6abbe61b94bc1c036153979c7`  
-**Rinnakkainen omistaja:** Codex, Reseptit [PR #706](https://github.com/ozirix-dev/Reseptit/pull/706)  
+**Tila:** RESEARCH HANDOFF / vain tutkimus, ei GK-julkaisuhyväksyntää\
+**Päivä:** 18.11.2026 (Europe/Helsinki)\
+**Lähtöpiste:** Reseptit `main`, `e8ed43ed525a9cb6abbe61b94bc1c036153979c7`\
+**Rinnakkainen omistaja:** Codex, Reseptit [PR #706](https://github.com/ozirix-dev/Reseptit/pull/706)\
 **Aiemmat ChatGPT-erät:** [#709](https://github.com/ozirix-dev/Reseptit/pull/709)–[#714](https://github.com/ozirix-dev/Reseptit/pull/714), yhteensä 130 muuta alkuperäisreseptiä.
 
 ## Valinta ja todellinen tulos
