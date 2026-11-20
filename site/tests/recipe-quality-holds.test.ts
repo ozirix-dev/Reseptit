@@ -6,6 +6,7 @@ import sharp from "sharp";
 import { siteContent } from "../src/generated/content.generated";
 import { parseMarkdown } from "../src/content/markdown";
 import { editorialHoldRecipeIds, publicRecipeQualityHold } from "../scripts/recipe-quality-holds";
+import { publicSafetyHold } from "../scripts/build-content";
 import { isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
 import { projectSafeWontonFiDisplay } from "../scripts/wonton-fi-public-display";
 import { originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
@@ -79,6 +80,24 @@ test("withdrawn cassava source still carries a safety warning in four languages"
     const hold = publicRecipeQualityHold("karibia-bammy-kassavaleipa", locale);
     assert.ok(hold);
     assert.match(hold.description, /TURVALLISUUSVAROITUS|FOOD SAFETY WARNING|LIVSMEDELSVARNING|คำเตือนด้านความปลอดภัยอาหาร/);
+  }
+});
+
+test("ackee original is quarantined and has explicit four-language food-safety guidance", () => {
+  const recipeId = "karibia-ackee-ja-suolakala";
+  assert.ok(isPublicRecipeQuarantined(recipeId), "unsafe original must remain quarantined");
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    assert.equal(
+      siteContent.recipes.some((recipe) => recipe.recipeId === recipeId && recipe.locale === locale),
+      false,
+      `${recipeId}/${locale}: unsafe original must have no public recipe route`,
+    );
+    const safetyHold = publicSafetyHold(recipeId, locale);
+    assert.ok(safetyHold, `${locale}: food-safety instructions must exist before any future release`);
+    assert.match(safetyHold.description,
+      /^(?:TURVALLISUUSVAROITUS|FOOD SAFETY WARNING|LIVSMEDELSVARNING|คำเตือนด้านความปลอดภัยอาหาร)/);
+    assert.match(safetyHold.instructions, /^1\. .+\n2\. /s);
+    assert.match(safetyHold.instructions, /fda\.gov\/food\/natural-toxins-food\/hypoglycin-and-ackee-fruit/);
   }
 });
 
