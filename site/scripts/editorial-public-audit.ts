@@ -152,6 +152,12 @@ export function toMarkdown(report: ReturnType<typeof compareInventories>): strin
     for (const item of group.recipes) lines.push("  - " + item.recipeId + " (" + item.routePath + ")");
   }
   if (!report.visible.repeatedSteps.length) lines.push("Ei osumia.");
+  lines.push("", "## Julkisesta esityksestä puuttuvat kokonaisajat", "");
+  for (const item of report.visible.missingTime) {
+    lines.push("- " + item.recipeId + " (" + item.routePath + "), lähde " +
+      item.path + " (SHA-256 " + item.sourceSha256 + ")");
+  }
+  if (!report.visible.missingTime.length) lines.push("Ei osumia.");
   lines.push("", "## Jatkotoimi", "",
     "1. Katselmoi ensin julkisessa esityksessä todella näkyvät osumat.",
     "2. Älä korjaa historiallista raakatekstiä vain siksi, että se on jo SHA-lukitussa esityskerroksessa korjattu.",
