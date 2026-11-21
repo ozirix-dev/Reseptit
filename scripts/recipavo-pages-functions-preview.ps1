@@ -99,9 +99,17 @@ try {
     return
   }
   # Running inside site/ makes Wrangler discover site/functions automatically.
-  & npx.cmd --yes wrangler@4.165.0 pages deploy $dist --project-name recipavo-site --branch $PreviewBranch --commit-hash $ExpectedSha
-  Need ($LASTEXITCODE -eq 0) 'Wrangler preview deployment failed'
-  & node scripts/feedback-cloudflare-preview-probe.mjs --url $preview --sha $ExpectedSha
+  # Cloudflare may truncate the branch alias: probe the immutable deployment URL
+  # reported by Wrangler rather than predicting a branch hostname.
+  $deployOutput = @(& npx.cmd --yes wrangler@4.165.0 pages deploy $dist --project-name recipavo-site --branch $PreviewBranch --commit-hash $ExpectedSha 2>&1)
+  $deployExitCode = $LASTEXITCODE
+  $deployOutput | ForEach-Object { Write-Host $_ }
+  Need ($deployExitCode -eq 0) 'Wrangler preview deployment failed'
+  $deployText = ($deployOutput | Out-String)
+  $foundUrls = @([regex]::Matches($deployText, 'https://[a-f0-9]{8}\.recipavo-site\.pages\.dev/?', 'IgnoreCase'))
+  Need ($foundUrls.Count -eq 1) 'Expected one immutable Cloudflare preview deployment URL in Wrangler output'
+  $deploymentUrl = $foundUrls[0].Value.TrimEnd('/') + '/'
+  & node scripts/feedback-cloudflare-preview-probe.mjs --url $deploymentUrl --sha $ExpectedSha
   Need ($LASTEXITCODE -eq 0) 'Preview HTTP/Functions/noindex smoke test failed'
   $after = LiveSha
   Need ($after -eq $before) 'Production revision changed while preview was tested'
