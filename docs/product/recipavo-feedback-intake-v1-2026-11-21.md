@@ -1,7 +1,7 @@
 # Recipavo – yhteinen palautekanava V1
 
 **Päiväys:** 21.11.2026
-**Tila:** TOTEUTETTU LÄHDEKOODIIN / DRAFT / TUOTANTOVASTAANOTTO OFF
+**Tila:** TOTEUTETTU LÄHDEKOODIIN / TUOTANTOVASTAANOTTO OFF / AKTIVOINTI HOLD
 **Repo:** ozirix-dev/Reseptit
 
 ## Tavoite ja rajaus
@@ -30,6 +30,16 @@ Dialogi ei lisää uusia kanonisia sivureittejä, sitemap-rivejä tai neljää u
 - site/tests/feedback-api.test.ts ja site/tests/feedback-ui.test.ts – synteettiset yksikkö- ja kielitarkistukset
 
 Palvelin tallentaa vain viestin, aiheen, kielen, sivupolun, reseptitunnisteen, mahdollisen sähköpostin sekä lähetetyn kertakäyttöhaasteen SHA-256-hashin toistojen estämiseksi. Raakaa Turnstile-tokenia, IP-osoitetta, selaintunnistetta, evästeitä tai kyselyparametreja ei tallenneta. Syöte tallennetaan datana: ei etäisen URL:n noutoa eikä annetun tekstin suorittamista.
+
+## Lähdekoodin yhdistäminen ja tuotannon vastaanotto ovat kaksi eri päätöstä
+
+GitHubin `main`-haaraan voidaan yhdistää **oletuksena suljettu** lomake ja Pages Function -lähdekoodi erillisellä Repo Guard -hyväksynnällä. Se ei itsessään hyväksy GDPR-säilytystä, perusta D1:tä tai ota käyttöön Turnstile-/WAF-/Cron-resursseja.
+
+Backendin `POST /api/feedback` vastaa 503, kun `FEEDBACK_ENABLED` ei ole täsmälleen `true` tai mikä tahansa `FEEDBACK_DB`-, `TURNSTILE_SECRET`- tai `FEEDBACK_ALLOWED_ORIGIN`-sidonta puuttuu. Myös onnistunut oikea siivous pitää varmistaa ennen vastaanottoa. Frontendin lomake on pois käytöstä, kun `VITE_RECIPAVO_FEEDBACK_ENABLED` tai julkinen `VITE_RECIPAVO_FEEDBACK_SITE_KEY` puuttuu. Koodin yhdistäminen ei ole lupa asettaa näitä arvoja.
+
+**Cloudflare-tuotantoon ei tehdä automaattista julkaisua tämän GitHub-työn yhteydessä.** Cloudflare Pages -projektin todellinen Git/Direct Upload -julkaisumalli on tarkistettava erikseen; Git-integraatio voi julkaista oma-aloitteisesti. Dashboardin drag-and-drop-upload ei kokoa `functions`-hakemistoa, toisin kuin oikein sijoitettu Wrangler-julkaisu. Siksi uuden Functions-reitin todellista asennusta ei väitetä ilman hyväksyttyä preview-testiä.
+
+V1:n oikeaa Cloudflare Pages + D1 + Turnstile + Worker Cron + WAF -ketjua **ei ole testattu pilvessä**. Sen vuoksi varsinaista vastaanottoa ei saa avata, vaikka lähdekoodin testit ja GitHub-merge olisivat onnistuneet.
 
 ## Käyttöönotto (ei kuulu tämän PR:n automaattisiin muutoksiin)
 
@@ -65,7 +75,7 @@ Aja site-hakemistosta:
     npm run build
     npm run test:static
 
-API:n yksikkötesteissä D1 ja Siteverify korvataan synteettisillä vasteilla. Lisäksi feedback-d1-integration.test.ts käyttää oikeaa SQLite-muistitietokantaa, suorittaa molemmat D1-migraatiot ja testaa vastaanotto/siivous/poisto-ketjun todellisilla SQL-kyselyillä. Tämäkään ei todista oikean Cloudflare D1-/Worker-tilin liitoksia, Cron-ajastusta, WAFia tai tuotannon tietosuojahyväksyntää. Julkista AI:ta tai uutta maksettua mallipalvelua ei käynnistetä.
+API:n yksikkötesteissä D1 ja Siteverify korvataan synteettisillä vasteilla. Lisäksi feedback-d1-integration.test.ts käyttää oikeaa SQLite-muistitietokantaa, suorittaa kaikki kolme D1-migraatiota ja testaa vastaanotto/siivous/poisto-ketjun todellisilla SQL-kyselyillä. Tämäkään ei todista oikean Cloudflare D1-/Worker-tilin liitoksia, Cron-ajastusta, WAFia tai tuotannon tietosuojahyväksyntää. Julkista AI:ta tai uutta maksettua mallipalvelua ei käynnistetä.
 
 Lähdeohjeet: [Pages Functions](https://developers.cloudflare.com/pages/functions/get-started/), [D1 Bindings](https://developers.cloudflare.com/pages/functions/bindings/), [Turnstile Siteverify](https://developers.cloudflare.com/turnstile/get-started/server-side-validation/).
 
