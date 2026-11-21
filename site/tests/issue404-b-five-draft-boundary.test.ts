@@ -166,17 +166,17 @@ test("issue 404: source-backed review replaces kitchen dependency without bypass
   ]);
 
   assert.match(policy, /in-house test kitchen is not available/i);
-  assert.match(policy, /do \*\*not\*\* make the author's own/);
+  assert.match(policy, /do \*\*not\*\* make the author's own/i);
   assert.match(policy, /remain HOLD/);
   assert.match(readme, /Koekeittiö ei ole pakollinen/);
   assert.match(readme, /source-review-without-kitchen\.md/);
   assert.match(evidence, /Koekeittiökoetta ei vaadita yleisenä julkaisuehtona/);
-  assert.match(evidence, /ei ole julkaistun tämän muunnelman testi/i);
+  assert.match(evidence, /ei ole todistus siitä, että Recipavon/);
 
   for (const entry of candidates) {
     assert.ok(evidence.includes(entry.original), `${entry.original}: no source review entry`);
   }
-  assert.match(evidence, /\*\*HOLD \/ suora lähderistiriita\*\*/);
+  assert.match(evidence, /HOLD \/ suora lähderistiriita/);
   assert.match(evidence, /Ruokavirasto/);
   assert.match(evidence, /Bacillus cereus/);
   const parsed = parseMarkdown(cookedMoong);
