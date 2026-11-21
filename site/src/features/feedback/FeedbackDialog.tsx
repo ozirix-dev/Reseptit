@@ -35,6 +35,7 @@ export function FeedbackDialog({ locale, request, onClose }: {
   const [kind, setKind] = useState<FeedbackKind>(request.kind ?? "other");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
+  const [website, setWebsite] = useState("");
   const [token, setToken] = useState("");
   const [widgetError, setWidgetError] = useState(false);
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "failed">("idle");
@@ -90,6 +91,7 @@ export function FeedbackDialog({ locale, request, onClose }: {
           pagePath: request.pagePath,
           recipeId: request.recipeId ?? null,
           turnstileToken: token,
+          website,
         }),
       });
       const data: unknown = await response.json();
@@ -134,7 +136,8 @@ export function FeedbackDialog({ locale, request, onClose }: {
       <p id="feedback-email-help" className="feedback-form__help">{labels.emailHelp}</p>
       <div className="feedback-form__honeypot" aria-hidden="true">
         <label htmlFor="feedback-website">Website</label>
-        <input id="feedback-website" name="website" tabIndex={-1} autoComplete="off" />
+        <input id="feedback-website" name="website" value={website} tabIndex={-1}
+          onChange={event => setWebsite(event.currentTarget.value)} autoComplete="off" />
       </div>
       <p className="feedback-form__help">{labels.sensitive}</p>
       <p className="feedback-form__help">{labels.privacyNote} <Link to={privacyPaths[locale]} onClick={() => dialogRef.current?.close()}>{labels.privacy}</Link></p>
