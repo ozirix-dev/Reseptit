@@ -3,6 +3,10 @@ title: "Traditionella finska kanelbullar"
 recipe_id: perinteiset-korvapuustit
 url_slug: perinteiset-korvapuustit-sv
 category: leivonnainen
+main_ingredient:
+  - "vehnäjauho"
+cooking_method:
+  - "uuni"
 language: sv
 source_language: fi
 source_recipe: reseptit/leivonnaiset/perinteiset-korvapuustit.md
@@ -12,8 +16,8 @@ servings: 30
 time_total_min: 150
 difficulty: "lätt"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "finsk"
+  - "traditionell"
 ingredients:
   - amount: 500
     unit: "ml"

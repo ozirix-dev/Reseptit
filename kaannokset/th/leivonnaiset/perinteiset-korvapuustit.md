@@ -3,6 +3,10 @@ title: "ขนมปังอบซินนามอนโรลแบบฟิ
 recipe_id: perinteiset-korvapuustit
 url_slug: perinteiset-korvapuustit-th
 category: leivonnainen
+main_ingredient:
+  - "vehnäjauho"
+cooking_method:
+  - "uuni"
 language: th
 source_language: fi
 source_recipe: reseptit/leivonnaiset/perinteiset-korvapuustit.md
@@ -12,8 +16,8 @@ servings: 30
 time_total_min: 150
 difficulty: "ง่าย"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "อาหารฟินแลนด์"
+  - "อาหารพื้นบ้าน"
 ingredients:
   - amount: 500
     unit: "ml"

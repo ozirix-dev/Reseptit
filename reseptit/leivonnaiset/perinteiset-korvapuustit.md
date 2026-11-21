@@ -3,6 +3,10 @@ title: "Perinteiset korvapuustit"
 recipe_id: perinteiset-korvapuustit
 url_slug: perinteiset-korvapuustit
 category: leivonnainen
+main_ingredient:
+  - "vehnäjauho"
+cooking_method:
+  - "uuni"
 language: fi
 status: draft
 servings: 30
