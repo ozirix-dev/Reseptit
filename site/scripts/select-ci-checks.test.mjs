@@ -5,7 +5,68 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import assert from "node:assert/strict";
 import test from "node:test";
-import { applyEventPolicy, classifyPaths } from "./select-ci-checks.mjs";
+import { applyEventPolicy, classifyPaths, shouldRunFiEditorialAudit } from "./select-ci-checks.mjs";
+
+test("FI editorial audit detects recipe and projection changes without touching other chats' work", () => {
+  for (const file of [
+    "reseptit/paaruoat/example.md",
+    "reseptit\\paaruoat\\example.md",
+    "site/scripts/public-recipe-copy-r2.ts",
+    "site/scripts/editorial-public-audit.ts",
+    "site/scripts/gk80-editorial-display.ts",
+    "site/scripts/recipe-quality-holds.ts",
+    "site/src/content/markdown.ts",
+    ".github/workflows/pages.yml",
+  ]) assert.equal(shouldRunFiEditorialAudit([file]), true, file);
+
+  for (const file of [
+    "reseptit/_mallipohjat/resepti/resepti_pohja.md",
+    "kaannokset/th/paaruoat/example.md",
+    "site/src/features/feedback/FeedbackForm.tsx",
+    "site/src/features/recipes/RecipePage.tsx",
+    "docs/notes/recipe-process.md",
+    "docs/research/nutrition-note.md",
+    "meta/kaannokset/published-translation-pairs.json",
+  ]) assert.equal(shouldRunFiEditorialAudit([file]), false, file);
+
+  assert.equal(shouldRunFiEditorialAudit(["docs/notes.md", "reseptit/paaruoat/new.md"]), true);
+  assert.equal(shouldRunFiEditorialAudit([]), false);
+  assert.equal(shouldRunFiEditorialAudit(null), true); // Invalid selector input fails safe.
+});
+
+test("changed-path selector writes the actual CI editorial audit gate", () => {
+  const root = mkdtempSync(path.join(tmpdir(), "recipe-editorial-selector-"));
+  const selector = fileURLToPath(new URL("./select-ci-checks.mjs", import.meta.url));
+  const output = path.join(root, "github-output.txt");
+  const verify = (paths, event, expected, forceFull = false) => {
+    writeFileSync(output, "");
+    execFileSync(process.execPath, [selector], {
+      encoding: "utf8",
+      env: {
+        ...process.env,
+        CHANGED_PATHS_JSON: JSON.stringify(paths),
+        GITHUB_OUTPUT: output,
+        EVENT_NAME: event,
+        FORCE_FULL: String(forceFull),
+      },
+    });
+    const rows = readFileSync(output, "utf8");
+    assert.match(rows, new RegExp("^run_editorial_audit=" + String(expected) + "$", "m"),
+      event + ": " + paths.join(","));
+  };
+  try {
+    verify(["reseptit/paaruoat/old.md"], "pull_request", true);
+    verify(["site/scripts/public-recipe-copy-r2.ts"], "pull_request", true);
+    verify([".github/workflows/pages.yml"], "pull_request", true);
+    verify(["site/src/features/feedback/FeedbackForm.tsx"], "pull_request", false);
+    verify(["kaannokset/en/paaruoat/translation.md"], "pull_request", false);
+    verify(["kaannokset/en/paaruoat/translation.md"], "push", false);
+    verify(["docs/notes.md"], "pull_request", false);
+    verify(["docs/notes.md"], "workflow_dispatch", true, true);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
 
 test("docs-only changes select no site build or test suite", () => {
   const plan = classifyPaths(["docs/notes/recipe-process.md"]);
