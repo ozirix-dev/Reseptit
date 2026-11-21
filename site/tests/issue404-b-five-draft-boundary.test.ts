@@ -86,7 +86,7 @@ test("issue 404: five new candidates are schema-valid FI drafts and cannot enter
       assert.equal(data[key], null, proposedId + ": published macro approval is missing");
     }
     assert.match(parsed.content, /DRAFT\s*\/\s*(?:HOLD|ERITYINEN TURVALLISUUS-HOLD)/);
-    assert.match(parsed.content, /ei (?:ole|ole fyysisesti|koe)/i);
+    assert.match(parsed.content, /(?:ei|eivät) (?:ole |fyysisesti |koe)/i);
     assert.match(parsed.content, /## Valmistus/);
     assert.match(parsed.content, /## (?:Menetelmävertailu|Turvallisuus- ja ruokalajilähteet)/);
     for (const token of entry.required) assert.match(parsed.content, token, proposedId);
