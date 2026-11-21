@@ -23,3 +23,9 @@
 **Korjausvaatimus valkokastikkeelle:** Luo ja tallenna uusi WebP-kuva, joka esittää *vain sileää, tasaisen valkoista tai vaaleaa maitokastiketta* neutraalissa kastikekannussa tai kulhossa, **ei ruohosipulia, tilliä, persiljaa, sipulia, vihreitä pilkkuja, munanpaloja eikä näkyviä kokkareita**. Tarkista uusi kuvasisältö, 960 × 640 -mitat, sen SHA-256, neljän kieliversion alt-tekstit, image overlay/manifestit ja reseptikohtainen katselmointitietue yhteen sovitetusti. Älä muokkaa muiden chattien omistamia PR:iä.
 
 **Julkaisuportti:** kaikki 10 reseptiä sekä käännökset edelleen `status: draft`, PR #808 Draft/HOLD. Tämä tarkistus ei poista ravinto-, GK-, semantiikka-, CI- eikä Repo Guardin Ready/merge-/Cloudflare-portteja.
+
+## Reseptin SHA-256-sidosten erillinen tarkistus
+
+22.11.2026 Chat 3 haki jokaisen kymmenen FI-reseptin sisällön ja siihen liittyvän `docs/reviews/new-recipes/<recipe_id>.json`-tietueen samalta PR:n tarkistetulta HEADilta `2f371948974eea9a702f6b97b3b146f0d95a6801`. Raakatekstin UTF-8 SHA-256 laskettiin erikseen ja verrattiin `source_sha256`-kenttään. SHA-256-toteutuksen tunnettu `abc`-testivektori täsmäsi. **Tulos 10/10 MATCH**, mukaan lukien neljä laskettua ja kuusi ravintosisältönsä osalta keskeneräistä reseptiä.
+
+Tämä on reseptilähteiden **sisällön eheystarkistus**, ei `nutrition_input_hash`-tiivisteiden tai kaikkien EN/SV/TH-semanttisten tiivisteiden varmennus eikä CI:n korvike. Katselmointitiedostoissa `decision: hold` säilyy jokaisella reseptillä.
