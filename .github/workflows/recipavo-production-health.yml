@@ -1,0 +1,38 @@
+name: Recipavo production health (read-only)
+
+# Checks the public production website. Does not deploy or use secrets.
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - ".github/workflows/recipavo-production-health.yml"
+      - "scripts/recipavo-production-health.mjs"
+      - "scripts/recipavo-production-health.test.mjs"
+      - "docs/product/recipavo-production-health-2026-11-22.md"
+  schedule:
+    - cron: '17 */6 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: recipavo-production-health
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    name: Public production route and Functions health
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test health monitor offline
+        run: node --test scripts/recipavo-production-health.test.mjs
+      - name: Probe public production (GET requests only)
+        if: github.event_name != 'pull_request'
+        run: node scripts/recipavo-production-health.mjs
