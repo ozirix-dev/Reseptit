@@ -1,0 +1,73 @@
+---
+title: "สลัดบีตรูตโรซอลลีแบบฟินแลนด์กับซอสครีม"
+recipe_id: perinteinen-rosolli
+url_slug: perinteinen-rosolli-th
+category: alkuruoka
+language: th
+source_language: fi
+source_recipe: reseptit/alkuruoat/perinteinen-rosolli.md
+translation_of: perinteinen-rosolli
+status: draft
+servings: 8
+time_total_min: 70
+difficulty: "ง่าย"
+main_ingredient:
+  - "punajuuri"
+  - "peruna"
+cooking_method:
+  - "keitto"
+tags:
+  - "suomalainen"
+  - "perinneruoka"
+ingredients:
+  - amount: 300
+    unit: "g"
+    item: "มันฝรั่งต้มปอกเปลือก"
+  - amount: 250
+    unit: "g"
+    item: "แครอตต้ม"
+  - amount: 300
+    unit: "g"
+    item: "บีตรูตต้มหรือดอง"
+  - amount: 100
+    unit: "g"
+    item: "แตงกวาดอง"
+  - amount: 120
+    unit: "g"
+    item: "แอปเปิลเปรี้ยว"
+  - amount: 60
+    unit: "g"
+    item: "หอมแดงหัวใหญ่"
+  - amount: 150
+    unit: "ml"
+    item: "วิปปิงครีมสำหรับซอส"
+  - amount: 5
+    unit: "ml"
+    item: "น้ำส้มสายชูสำหรับซอส"
+  - amount: 5
+    unit: "g"
+    item: "น้ำตาลสำหรับซอส"
+  - amount: 3
+    unit: "g"
+    item: "เกลือ"
+  - amount: 0.5
+    unit: "g"
+    item: "พริกไทยขาว"
+---
+
+# สลัดบีตรูตโรซอลลีแบบฟินแลนด์กับซอสครีม
+
+สลัดคริสต์มาสของฟินแลนด์ทำจากผักหัวและแอปเปิลหั่นเต๋า เสิร์ฟกับซอสครีมสีชมพูแยกต่างหาก
+
+## วิธีทำ
+
+1. ต้มมันฝรั่ง แครอต และบีตรูตหากใช้แบบสดจนสุกนุ่ม พักให้เย็น ปอกเปลือกและชั่งตามปริมาณที่ระบุ
+2. หั่นผักหัว แตงกวาดอง แอปเปิล และหัวหอมเป็นลูกเต๋าขนาดเล็กเท่า ๆ กัน
+3. คลุกสลัดเบา ๆ ปรุงด้วยเกลือและพริกไทยขาว ปิดฝาแช่ตู้เย็นอย่างน้อย 30 นาที
+4. ตีครีมเย็นให้ขึ้นฟูอ่อน ๆ ผสมน้ำส้มสายชูและน้ำตาล อาจเติมน้ำบีตรูตเล็กน้อยให้สีชมพู เสิร์ฟซอสแยกจากสลัด
+
+## หมายเหตุ
+
+- ตรวจสารก่อภูมิแพ้บนฉลาก ไม่มีการรับรองว่าอาหารปลอดกลูเตน
+- นี่เป็นฉบับร่าง ยังไม่มีการทดลองทำโดย Recipavo การคำนวณโภชนาการ/GK ที่อนุมัติ หรือภาพอาหาร
+- แหล่งข้อมูลที่ใช้เปรียบเทียบวิธีทำ (ไม่ได้คัดลอก): https://www.martat.fi/reseptit/rosolli/
