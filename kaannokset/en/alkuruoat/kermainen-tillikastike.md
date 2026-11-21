@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sauce"
   - "Finnish"
+image:
+  src: alkuruoat/kermainen-tillikastike.webp
+  alt: "Pale creamy dill sauce in a glass bowl topped with fresh dill"
+  width: 960
+  height: 640
 ingredients:
   - amount: 200
     unit: "g"
@@ -51,5 +56,5 @@ A cool, fresh dill sauce for baked fish, fried fish and new potatoes.
 
 ## Notes
 
-- Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The illustrative image is in a separate draft image package, not this branch.
+- Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The AI-generated illustrative image is included in this branch and still requires editorial review.
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/tillikastike-kalalle/

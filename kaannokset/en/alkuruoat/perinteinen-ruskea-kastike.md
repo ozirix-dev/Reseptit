@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sauce"
   - "Finnish"
+image:
+  src: alkuruoat/perinteinen-ruskea-kastike.webp
+  alt: "Glossy brown gravy in a white gravy boat, with meatballs and mashed potatoes behind"
+  width: 960
+  height: 640
 ingredients:
   - amount: 35
     unit: "g"
@@ -49,5 +54,5 @@ Toasted flour, butter and beef stock make a rich gravy for meatballs and mashed 
 
 ## Notes
 
-- Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The illustrative image is in a separate draft image package, not this branch.
+- Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The AI-generated illustrative image is included in this branch and still requires editorial review.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/ruskea-kastike

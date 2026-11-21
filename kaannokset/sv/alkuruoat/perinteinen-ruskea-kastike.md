@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sås"
   - "finsk"
+image:
+  src: alkuruoat/perinteinen-ruskea-kastike.webp
+  alt: "Blank brun sås i en vit såssnipa, med köttbullar och potatismos i bakgrunden"
+  width: 960
+  height: 640
 ingredients:
   - amount: 35
     unit: "g"
@@ -49,5 +54,5 @@ Brynt vetemjöl, smör och köttbuljong ger en fyllig sås till köttbullar och 
 
 ## Anteckningar
 
-- Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Illustrationsbilden finns i ett separat bildpaket, inte i grenen.
+- Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Den AI-genererade illustrationsbilden finns i denna gren och kräver fortfarande redaktionell granskning.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/ruskea-kastike

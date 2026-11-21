@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "ซอส"
   - "ฟินแลนด์"
+image:
+  src: alkuruoat/perinteinen-ruskea-kastike.webp
+  alt: "ซอสเกรวี่สีน้ำตาลมันวาวในเหยือกซอสสีขาว มีมีตบอลและมันบดอยู่ด้านหลัง"
+  width: 960
+  height: 640
 ingredients:
   - amount: 35
     unit: "g"
@@ -49,5 +54,5 @@ ingredients:
 
 ## หมายเหตุ
 
-- ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพประกอบอยู่ในชุดภาพร่างแยกต่างหาก ไม่ได้อยู่ในสาขานี้
+- ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพประกอบสร้างด้วย AI อยู่ในสาขานี้แล้ว แต่ยังต้องผ่านการตรวจทาน
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/ruskea-kastike

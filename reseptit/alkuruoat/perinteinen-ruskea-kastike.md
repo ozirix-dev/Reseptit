@@ -23,6 +23,11 @@ translation_status:
   en: draft
   sv: draft
   th: draft
+image:
+  src: alkuruoat/perinteinen-ruskea-kastike.webp
+  alt: "Ruskeaa kiiltävää kastiketta valkoisessa kastikekannussa, taustalla lihapullia ja perunamuusia"
+  width: 960
+  height: 640
 ingredients:
   - amount: 35
     unit: "g"
@@ -54,5 +59,5 @@ Voissa ruskistettu vehnäjauho ja lihaliemi tekevät täyteläisen kastikkeen li
 
 ## Muistiinpanot
 
-- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on erillisessä luonnoskuvapaketissa, ei tässä haarassa.
+- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn tuottama havainnekuva, joka on mukana tässä haarassa ja vaatii toimituksellisen tarkistuksen.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.k-ruoka.fi/reseptit/ruskea-kastike

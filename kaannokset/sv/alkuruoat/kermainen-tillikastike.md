@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sås"
   - "finsk"
+image:
+  src: alkuruoat/kermainen-tillikastike.webp
+  alt: "Ljus krämig dillsås i en glasskål med färsk dill"
+  width: 960
+  height: 640
 ingredients:
   - amount: 200
     unit: "g"
@@ -51,5 +56,5 @@ En kall, frisk dillsås till ugnsfisk, stekt fisk och färskpotatis.
 
 ## Anteckningar
 
-- Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Illustrationsbilden finns i ett separat bildpaket, inte i grenen.
+- Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Den AI-genererade illustrationsbilden finns i denna gren och kräver fortfarande redaktionell granskning.
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/tillikastike-kalalle/

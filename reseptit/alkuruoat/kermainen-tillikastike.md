@@ -23,6 +23,11 @@ translation_status:
   en: draft
   sv: draft
   th: draft
+image:
+  src: alkuruoat/kermainen-tillikastike.webp
+  alt: "Vaaleaa kermaista tillikastiketta lasikulhossa, pinnalla tuoretta tilliä"
+  width: 960
+  height: 640
 ingredients:
   - amount: 200
     unit: "g"
@@ -56,5 +61,5 @@ Kylmä, raikas tillikastike uunilohelle, paistetulle kalalle ja uusille perunoil
 
 ## Muistiinpanot
 
-- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on erillisessä luonnoskuvapaketissa, ei tässä haarassa.
+- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn tuottama havainnekuva, joka on mukana tässä haarassa ja vaatii toimituksellisen tarkistuksen.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.valio.fi/reseptit/tillikastike-kalalle/
