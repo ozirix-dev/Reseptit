@@ -35,7 +35,7 @@ ingredients:
 
 # Traditionell finsk julskinka i ugn
 
-Traditionell finsk julskinka i ugn on osa suomalaista perinneruokaa.
+Detta är ett traditionellt recept ur det finska hemmaköket.
 
 ## Gör så här
 

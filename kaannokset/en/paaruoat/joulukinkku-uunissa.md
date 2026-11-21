@@ -35,7 +35,7 @@ ingredients:
 
 # Traditional Finnish Christmas Ham
 
-Traditional Finnish Christmas Ham on osa suomalaista perinneruokaa.
+This is a traditional Finnish home-cooking recipe.
 
 ## Preparation
 
