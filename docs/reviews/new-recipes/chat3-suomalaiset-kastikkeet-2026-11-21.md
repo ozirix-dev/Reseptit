@@ -21,3 +21,7 @@ Kymmenen Git-tracked WebP-kuvaa lisättiin `assets/images.tracked-overlays.json`
 Aiemmin ongelmalliset kantarelli-, puolukka- ja vaniljakastikkeen WebP-kuvat on nyt vaihdettu. Kantarelli- ja puolukkakastikkeelle on erikseen luotu alkuperäinen AI-havainnekuva; vaniljakastikkeelle on rajattu aineksia vastaava kuva AI-kollaasista. Kaikki ovat 960 × 640. Nelikieliset alt-tekstit ja puolukkakastikkeen osittain kokonaisia marjoja salliva valmistusohje on päivitetty. Kuvien uudet tavumäärät ja SHA-256-syötteet on kirjattu tekniseen kuvamanifestiin. Aiemmat kuvahavainnot koskevat nyt korvattuja historiallisia versioita.
 
 **Tämän täydennyksen rajaus:** tekninen kuvanvaihto ja silmämääräinen sisältövastaavuuden parannus, ei virallinen toimituksellinen kuvahyväksyntä. Tämä ei muodosta ravintolaskelmaa, GK-päätöstä, kielten versiosidonnaista merkitysvertailua tai Repo Guardin Ready/merge-lupaa. Kaikki 10 reseptiä ovat edelleen `status: draft` ja PR on HOLD.
+
+## Lähde- ja rakennekatselmointi
+
+Kymmenen resepti-identiteetin 40 kielitiedoston ainesosa-/annos-/vaiherakenne verrattiin. Havaitut rakenteelliset ristiriidat: 0. Valmistuksen lähdevastaavuus kirjattu riskiperusteisesti tiedostoon `docs/reviews/new-recipes/chat3-kastikkeet-lahde-ja-rakennekatselmointi-2026-11-21.md`. Tämä ei korvaa semantic evidence -rekisteriä eikä keittiötestiä. Kaikki edelleen Draft/HOLD.
