@@ -3,6 +3,11 @@ title: "Traditionell finsk laxlåda med äggstanning"
 recipe_id: perinteinen-lohilaatikko
 url_slug: perinteinen-lohilaatikko-sv
 category: paaruoka
+main_ingredient:
+  - "lohi"
+  - "peruna"
+cooking_method:
+  - "uuni"
 language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-lohilaatikko.md
@@ -12,8 +17,8 @@ servings: 5
 time_total_min: 105
 difficulty: "lätt"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "finsk"
+  - "traditionell"
 ingredients:
   - amount: 1000
     unit: "g"

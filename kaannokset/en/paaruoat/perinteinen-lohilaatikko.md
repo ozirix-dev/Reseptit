@@ -3,6 +3,11 @@ title: "Traditional Finnish Salmon and Potato Bake"
 recipe_id: perinteinen-lohilaatikko
 url_slug: perinteinen-lohilaatikko-en
 category: paaruoka
+main_ingredient:
+  - "lohi"
+  - "peruna"
+cooking_method:
+  - "uuni"
 language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-lohilaatikko.md
@@ -12,8 +17,8 @@ servings: 5
 time_total_min: 105
 difficulty: "easy"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "Finnish"
+  - "traditional"
 ingredients:
   - amount: 1000
     unit: "g"

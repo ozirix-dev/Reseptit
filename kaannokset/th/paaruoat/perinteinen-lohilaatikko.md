@@ -3,6 +3,11 @@ title: "ปลาแซลมอนกับมันฝรั่งอบแบ
 recipe_id: perinteinen-lohilaatikko
 url_slug: perinteinen-lohilaatikko-th
 category: paaruoka
+main_ingredient:
+  - "lohi"
+  - "peruna"
+cooking_method:
+  - "uuni"
 language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-lohilaatikko.md
@@ -12,8 +17,8 @@ servings: 5
 time_total_min: 105
 difficulty: "ง่าย"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "อาหารฟินแลนด์"
+  - "อาหารพื้นบ้าน"
 ingredients:
   - amount: 1000
     unit: "g"

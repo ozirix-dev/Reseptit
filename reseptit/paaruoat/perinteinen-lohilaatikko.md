@@ -3,6 +3,11 @@ title: "Perinteinen lohilaatikko munamaidolla"
 recipe_id: perinteinen-lohilaatikko
 url_slug: perinteinen-lohilaatikko
 category: paaruoka
+main_ingredient:
+  - "lohi"
+  - "peruna"
+cooking_method:
+  - "uuni"
 language: fi
 status: draft
 servings: 5
