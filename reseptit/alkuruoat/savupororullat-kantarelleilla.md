@@ -38,8 +38,10 @@ ingredients:
   - amount: 0.25
     unit: "tl"
     item: "mustapippuria"
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+translation_status:
+  en: draft
 ---
 
 # Savupororullat kantarellitäytteellä
@@ -59,4 +61,4 @@ Savupororullat kantarellitäytteellä on toimituksellinen suomalainen alkuruokal
 - **Lähde- ja valmistusnäyttö:** Mittasuhteet ovat Chat-4:n alustava toimituksellinen ehdotus. Ulkoiset valmistuslähteet, ainesosien olomuoto, saanto ja ajat varmennettava ennen julkaisua.
 - **Ruokaturva:** Savuporon tulee olla syöntivalmista kypsää tuotetta; sieniä ei tarjota raakoina. Kylmäsäilytys ja tuotepakkausten allergeenit tarkistettava.
 - **Ravintoarvot:** Ei laskettu; numeerisia makroja ei julkaista. GK: ei määritetty.
-- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedostoa ei vielä ole Git-haarassa eikä reseptin `image`-metatiedoissa. Kuva on tarkistettava ennen julkaisua. EN/SV/TH puuttuvat.
+- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedostoa ei vielä ole Git-haarassa eikä reseptin `image`-metatiedoissa. Kuva on tarkistettava ennen julkaisua. EN on luonnos; SV/TH puuttuvat. Käännösten merkityskatselmointi puuttuu.

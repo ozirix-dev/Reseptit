@@ -38,8 +38,10 @@ ingredients:
   - amount: 10
     unit: "ml"
     item: "sitruunamehua"
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+translation_status:
+  en: draft
 ---
 
 # Muikunmäti-rieskarullat
@@ -59,6 +61,6 @@ Muikunmäti-rieskarullat on toimituksellinen suomalainen alkuruokaluonnos. Mää
 - **Lähde- ja valmistusnäyttö:** Mittasuhteet ovat Chat-4:n alustava toimituksellinen ehdotus. Ulkoiset valmistuslähteet, ainesosien olomuoto, saanto ja ajat varmennettava ennen julkaisua.
 - **Ruokaturva:** HOLD: mädin pakastuskäsittely, säilyvyys ja listeriariski vaativat tarkistuksen. Ei sovi sellaisenaan riskiryhmille, jos mäti ei ole turvallisesti kuumennettu; kylmäsäilytys on välttämätön.
 - **Ravintoarvot:** Ei laskettu; numeerisia makroja ei julkaista. GK: ei määritetty.
-- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedostoa ei vielä ole Git-haarassa eikä reseptin `image`-metatiedoissa. Kuva on tarkistettava ennen julkaisua. EN/SV/TH puuttuvat.
+- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedostoa ei vielä ole Git-haarassa eikä reseptin `image`-metatiedoissa. Kuva on tarkistettava ennen julkaisua. EN on luonnos; SV/TH puuttuvat. Käännösten merkityskatselmointi puuttuu.
 
 - **Ruokavirasto:** Makeanveden muikun mäti on jäädytettävä loisriskin vuoksi ennen kylmäkäyttöä, eikä pakastaminen poista listeriariskiä. https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/jouluvinkkeja/turvallisia-kalaherkkuja-jouluna/ . Ellei pakkauksesta tai myyjältä ole varmuutta, resepti jää HOLD-tilaan.

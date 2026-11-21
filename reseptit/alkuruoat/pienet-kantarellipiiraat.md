@@ -52,8 +52,10 @@ ingredients:
   - amount: 0.5
     unit: "tl"
     item: "suolaa"
-translation_languages: []
-translation_status: {}
+translation_languages:
+  - en
+translation_status:
+  en: draft
 ---
 
 # Pienet kantarellipiiraat
@@ -74,4 +76,4 @@ Pienet kantarellipiiraat on toimituksellinen suomalainen alkuruokaluonnos. Mää
 - **Lähde- ja valmistusnäyttö:** Mittasuhteet ovat Chat-4:n alustava toimituksellinen ehdotus. Ulkoiset valmistuslähteet, ainesosien olomuoto, saanto ja ajat varmennettava ennen julkaisua.
 - **Ruokaturva:** Käytä varmasti tunnistettuja ruokasieniä. Tarkista kypsyys ja säilytä munaa ja maitotuotteita sisältävät piirakat kylmässä.
 - **Ravintoarvot:** Ei laskettu; numeerisia makroja ei julkaista. GK: ei määritetty.
-- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedostoa ei vielä ole Git-haarassa eikä reseptin `image`-metatiedoissa. Kuva on tarkistettava ennen julkaisua. EN/SV/TH puuttuvat.
+- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedostoa ei vielä ole Git-haarassa eikä reseptin `image`-metatiedoissa. Kuva on tarkistettava ennen julkaisua. EN on luonnos; SV/TH puuttuvat. Käännösten merkityskatselmointi puuttuu.
