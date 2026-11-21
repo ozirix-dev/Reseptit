@@ -5,7 +5,7 @@ import {join} from 'node:path';
 import {tmpdir} from 'node:os';
 import {REPOSITORY,ENVIRONMENT,PROJECT,CONFIRMATION,assertDispatch,assertEnvironment,
   assertCiRuns,assertCloudflareProject,githubPreflight,cloudflarePreflight,
-  readLiveRevision,verifyArtifact} from './recipavo-actions-release-gate.mjs';
+  readLiveRevision,verifyArtifact,verifyPagesFunctions} from './recipavo-actions-release-gate.mjs';
 
 const sha='a'.repeat(40);
 const dispatch={repository:REPOSITORY,ref:'refs/heads/main',workflowSha:sha,inputSha:sha,confirmation:CONFIRMATION};
@@ -134,6 +134,30 @@ test('preview HTML or unstamped artifact never passes',async()=>{
     await assert.rejects(()=>verifyArtifact(folder,sha,{stamp:true}),/noindex/);
   }finally{await rm(folder,{recursive:true,force:true});}
 });
+test('Pages Function source must be present and retain guarded GET and POST before upload',async()=>{
+  const root=await mkdtemp(join(tmpdir(),'recipavo-functions-'));
+  try {
+    const api=join(root,'functions','api');
+    await mkdir(api,{recursive:true});
+    const route=join(api,'feedback.ts');
+    const guarded='export function onRequestGet() { return json(405, { error: "method_not_allowed" }); }\n'+
+      'export async function onRequestPost() { if (env.FEEDBACK_ENABLED !== "true") return; }\n';
+    await writeFile(route,guarded);
+    assert.deepEqual(await verifyPagesFunctions(root),
+      {functionsRoot:'site/functions',feedbackRoute:'GET 405; POST guarded'});
+    await writeFile(route,guarded.replace('json(405','json(200'));
+    await assert.rejects(()=>verifyPagesFunctions(root),/GET must remain/);
+    await writeFile(route,guarded.replace('FEEDBACK_ENABLED','other_variable'));
+    await assert.rejects(()=>verifyPagesFunctions(root),/POST feature gate/);
+    await rm(route);
+    await assert.rejects(()=>verifyPagesFunctions(root),/Missing Pages Function/);
+  } finally { await rm(root,{recursive:true,force:true}); }
+});
+test('Pages Functions predeploy guard rejects missing source directory',async()=>{
+  const root=await mkdtemp(join(tmpdir(),'recipavo-no-functions-'));
+  try { await assert.rejects(()=>verifyPagesFunctions(root),/Missing Pages Functions directory/); }
+  finally { await rm(root,{recursive:true,force:true}); }
+});
 test('live revision is checked, never assumed',async()=>{
   const fetcher=async()=>({status:200,headers:new Headers({'x-recipavo-commit':sha})});
   assert.deepEqual(await readLiveRevision({sha,fetcher}),{sha,liveSha:sha,alreadyLive:true});
@@ -150,4 +174,5 @@ test('release workflow can only be launched manually, with a protected environme
   assert.match(text,/--project-name recipavo-site --branch production --commit-hash/);
   assert.match(text,/github-recheck/);
   assert.match(text,/--yes wrangler@4\.165\.0 pages deploy/);
+  assert.match(text,/recipavo-actions-release-gate\.mjs functions site/);
 });
