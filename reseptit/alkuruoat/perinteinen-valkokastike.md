@@ -66,3 +66,4 @@ Voista, maidosta ja vehnäjauhoista valmistuva peruskastike kalalle, perunoille 
 - Valmistuksen vertailulähde: https://www.valio.fi/reseptit/valkokastike/
 
 - Kuva on tekoälyn tuottama havainnekuva, joka on nyt versionhallinnassa. Kuvan tarjoilukoristeet eivät kuulu ainesosamääriin.
+- Sisältää **maitoa ja vehnää**. Sekoita kastiketta koko kuumennuksen ajan ja varmista, että jauhot kypsyvät eivätkä jää paakuiksi.

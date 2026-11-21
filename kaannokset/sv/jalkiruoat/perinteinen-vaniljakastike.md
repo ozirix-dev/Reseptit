@@ -63,3 +63,4 @@ En slät vaniljsås av mjölk och äggula till blåbärspaj eller äppelsmulpaj.
 
 - En AI-genererad illustration finns sparad, men den motsvarar inte receptet fullt ut och måste bytas före publicering.
 - Ytterligare jämförelse: vaniljsåsen till K-Ruoas kexkorgar använder majsstärkelse och äggulor, medan Marttas recept använder potatismjöl. Mängder och tillagning här är en egen anpassning. https://www.k-ruoka.fi/reseptit/keksikorit
+- Innehåller **mjölk och ägg**. Värm varsamt enligt anvisningen; kyl snabbt och förvara i kylskåp om såsen inte serveras direkt.

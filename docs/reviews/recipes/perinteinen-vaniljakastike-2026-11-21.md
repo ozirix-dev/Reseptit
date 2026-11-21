@@ -16,3 +16,9 @@ Vanha vihreitä yrttejä sisältänyt kuva on korvattu havainnekuvalla, joka esi
 ## Tärkkelyksen lähdevertailu, Chat 3 (21.11.2026)
 
 Marttojen vaniljakastike https://www.martat.fi/reseptit/vaniljakastike/ perustuu perunajauhoon. Recipavon versio käyttää maissitärkkelystä: riippumattomassa K-Ruoan [keksikorit ja vaniljakastike](https://www.k-ruoka.fi/reseptit/keksikorit) -ohjeessa kastike tehdään maidosta, keltuaisista ja maissitärkkelyksestä. Tämä tukee ainesosayhdistelmää, mutta ei todista juuri Recipavon suhteiden kypsennyslämpötilaa tai saantoa. Näitä ei merkitä testatuksi. Neljä kieliversiota päivitetty; määrät ennallaan, Draft/HOLD jatkuu.
+
+## Allergeeni- ja käsittelyhuomio – Chat 3, 21.11.2026
+
+Sisältää **maitoa ja kananmunaa**. Kuumenna kastike rauhallisesti ohjeen mukaan, jäähdytä nopeasti, jos sitä ei tarjota heti, ja säilytä jääkaapissa.
+
+Perustana Ruokaviraston allergeeniluettelo: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit . Etikettien ja säilytyksen arviointia jatketaan. FI/EN/SV/TH päivitetty; ei julkaisuhyväksyntää.

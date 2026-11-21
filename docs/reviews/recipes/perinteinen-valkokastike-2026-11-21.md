@@ -10,3 +10,9 @@
 - Ei gluteenittomuus- tai muuta ruokavalioväitettä ilman tarkistusta.
 
 Kuvassa vihreää ruohosipulia koristeena; sitä ei ole laskettu ainesosiksi, joten vastaavuus ja rajaus tarkistettava ennen julkaisua.
+
+## Allergeeni- ja käsittelyhuomio – Chat 3, 21.11.2026
+
+Sisältää **maitoa ja vehnää**. Sekoita kastiketta koko kuumennuksen ajan ja varmista, että jauhot kypsyvät eivätkä jää paakuiksi.
+
+Perustana Ruokaviraston allergeeniluettelo: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit . Etikettien ja säilytyksen arviointia jatketaan. FI/EN/SV/TH päivitetty; ei julkaisuhyväksyntää.

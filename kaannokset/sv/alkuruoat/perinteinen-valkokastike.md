@@ -61,3 +61,4 @@ En enkel vit sås av smör, mjöl och mjölk till fisk, potatis och grönsaker.
 - Preparation reference: https://www.valio.fi/reseptit/valkokastike/
 
 - Den AI-genererade illustrationsbilden är nu versionshanterad. Dekorationer på bilden ingår inte i receptmängderna.
+- Innehåller **mjölk och vete**. Rör under uppvärmningen och se till att mjölet tillagas utan klumpar.
