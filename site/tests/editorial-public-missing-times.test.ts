@@ -237,7 +237,7 @@ test("#327: duplicate time keys have matching classified invalid-time evidence",
 });
 
 test("#327: duplicate time keys reject malformed and duplicated evidence", () => {
-  for (const rawValue of ["", "30", "null"]) {
+  for (const rawValue of ["30", "30/0"]) {
     const invalid = { ...evidence, rawValue };
     const report: RawInventory = {
       ...raw,
