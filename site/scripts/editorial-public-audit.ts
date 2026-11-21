@@ -100,6 +100,12 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
     }
   }
   const fi = recipes.filter(recipe => recipe.locale === "fi");
+  for (const recipe of fi) {
+    const time = recipe.timeTotalMin;
+    if (time !== null && (typeof time !== "number" || !Number.isSafeInteger(time) || time <= 0)) {
+      throw new Error("INVALID_PUBLIC_TOTAL_TIME: " + recipe.recipeId);
+    }
+  }
   const visible = new Map<string, PublicRecipe>();
   for (const recipe of fi) {
     if (visible.has(recipe.recipeId)) throw new Error("DUPLICATE_PUBLIC_RECIPE_ID: " + recipe.recipeId);
