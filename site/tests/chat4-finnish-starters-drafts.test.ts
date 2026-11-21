@@ -128,6 +128,14 @@ test("Baltic herring rolls use liquid unwhipped cream in Thai", () => {
   assert.match(th.raw, /เทวิปปิงครีมชนิดเหลวที่ยังไม่ตีรอบ ๆ/);
 });
 
+test("roasted beetroot carpaccio Thai step preserves crumbled goat cheese", () => {
+  const fi = loadRecipe("punajuuricarpaccio-vuohenjuustolla", "fi");
+  const th = loadRecipe("punajuuricarpaccio-vuohenjuustolla", "th");
+  assert.ok(fi.data.ingredients.some(i => i.item === "pehmeää vuohenjuustoa"));
+  assert.ok(th.data.ingredients.some(i => i.item === "ชีสนมแพะเนื้อนุ่ม"));
+  assert.match(th.raw, /บิชีสนมแพะเนื้อนุ่มเป็นชิ้นเล็ก ๆ โรยลงบนบีตรูต/);
+});
+
 test("Chat-4 source-based risk fixes remain identical in all four languages", () => {
   const claims = [
     {
