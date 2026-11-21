@@ -16,8 +16,8 @@ main_ingredient:
 cooking_method:
   - "uuni"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "อาหารฟินแลนด์"
+  - "อาหารพื้นบ้าน"
 ingredients:
   - amount: 4000
     unit: "g"
