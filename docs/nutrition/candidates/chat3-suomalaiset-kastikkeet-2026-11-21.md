@@ -74,3 +74,9 @@ Maito punnitaan 500 g:ksi entisen 500 ml:n sijaan; vastaava FI/EN/SV/TH-ainesmuu
 - **Vaniljasokerin polyolipitoisuutta ei ole merkitty numeerisesti valmistajan ilmoituksessa**, eikä puuttuvaa arvoa saa muuttaa nollaksi. Lisäksi 450 ml täysmaitoa vaatii asianmukaisen massamuunnoksen; MILKWORKS antaa yleiseksi tiheysväliksi 1,028–1,034 g/ml, ei tietyn pakkauksen mittausta.
 - Rajattu laskennallinen koe: 1,030 g/ml tiheydellä kuuden annoksen erässä **15,11 g imeytyvää hiilihydraattia, 3,13 g proteiinia ja 4,18 g rasvaa / annos** tiedossa olevista lähteistä. Nämä **eivät ole hyväksyttyjä ravintoarvokenttiä**. Netto-/kokonais-CHO:n lopulliset lukuarvot ja ravintolaskentatodiste pidätetään edelleen.
 - Tila ei muutu: **4/10 laskentapakettia**, kuudella vielä `nutrition: pending`, kaikki 10 reseptiä ja 40 kielisivua **Draft/HOLD**. Uusia reseptikenttiä tai virallisia katselmointimerkintöjä ei tämän esiselvityksen perusteella lisätty.
+
+## Jatkotarkistus 22.11.2026 – kylmä piparjuurikastike
+
+- Uusi ei-julkinen [piparjuurikastikkeen lähdesidottu esiselvitys](kylma-piparjuurikastike-source-basis-2026-11-22.md): Valio Hyvä suomalainen Arki crème fraîche 12 % (EAN 6408430141227), Fineli-pohjainen tuore piparjuuri ja jo käytetty Fineli-sokerin lähdekortti antavat kolme tunnettua osalaskennan riviä. Valion 180 g pakkauskoko ei rajoita reseptin 200 g kokonaiskäyttömäärää.
+- Sitruunamehun 12 ml ei ole punnittu 12 g; tarvitaan muunnos tai kaikkien neljän kielen yhtenevä massamuutos. Ruohosipulille tarvitaan tuoreeseen tuotteeseen sidottu ravintokortti. Valion crème fraîchen polyolit ja kuitutieto eivät täyty numerona; tiedot pidätetään, ei arvausta.
+- Kolmen vahvistetun grammaperusteisen raaka-aineen CHO/proteiini/rasva-osalaskenta kirjattu vain auditointiin, **ei** julkaistavaksi eikä kokonaisreseptin arvoiksi. Ravintolaskentapakettien määrä pysyy **4/10** ja kuuden reseptin nutrition edelleen PENDING. GK määrittämätön, kaikki FI/EN/SV/TH Draft/HOLD.
