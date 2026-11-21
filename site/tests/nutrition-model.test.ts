@@ -212,3 +212,56 @@ test("ingredient GK consumes normalized US available CHO and blocks an unknown-p
   assert.equal(unresolved.status, "INSUFFICIENT SOURCE DATA");
   assert.equal(unresolved.glycemicLoadPerServing, null);
 });
+
+test("EU total including polyols requires source verification before available CHO reaches GK", () => {
+  const source: FoodRecord = {
+    ...food, carbohydrateDefinition: "EU_TOTAL_INCLUDING_POLYOLS",
+    polyolsEvidence: "Synthetic source declares exactly 3 g polyols",
+    per100g: { ...food.per100g, carbohydrate: 20, fibre: 4, polyols: 3 },
+  };
+  assert.deepEqual(normalizeCarbohydrate(source), { available: 17, net: 17 });
+  for (const unverified of [
+    { ...source, polyolsSourceVerified: false },
+    { ...source, polyolsEvidence: "" },
+    { ...source, per100g: { ...source.per100g, polyols: null } },
+  ]) {
+    assert.deepEqual(normalizeCarbohydrate(unverified), { available: null, net: null });
+    const input = fixture();
+    input.servings = 1;
+    input.ingredients[0]!.amount = 100;
+    input.ingredients[0]!.record = unverified;
+    assert.equal(calculate(input).total.carbohydrate, null);
+    assert.equal(calculate(input).total.netCarbohydrate, null);
+    assert.equal(calculate(input).status, "INSUFFICIENT SOURCE DATA");
+  }
+  // Already-available carbohydrate must not have verified polyols subtracted twice.
+  assert.deepEqual(normalizeCarbohydrate({ ...source, carbohydrateDefinition: "EU_AVAILABLE" }),
+    { available: 20, net: 20 });
+  // An explicit, evidence-backed zero is not the same as an unknown polyol amount.
+  assert.deepEqual(normalizeCarbohydrate({ ...source, per100g: { ...source.per100g, polyols: 0 } }),
+    { available: 20, net: 20 });
+});
+
+test("unverified EU total polyols cannot produce an ingredient GK point", () => {
+  const source: FoodRecord = { ...food, carbohydrateDefinition: "EU_TOTAL_INCLUDING_POLYOLS",
+    polyolsEvidence: "Synthetic source reports 3 g polyols",
+    per100g: { ...food.per100g, carbohydrate: 20, fibre: 4, polyols: 3 } };
+  const gi: GlycemicIndexRecord = {
+    id: "synthetic-eu-gi", gi: 50, foodKey: "synthetic-eu", preparationKey: "as-sold",
+    food: "Synthetic EU test fixture", preparation: "as-sold", qualityTier: "STRONG",
+    referenceScale: "GLUCOSE_100", matchKind: "EXACT", confidence: "HIGH",
+    source: { title: "Synthetic control", url: "https://example.org/fixture",
+      table: "Synthetic control", year: 2026, published: true,
+      iso26642Confirmed: true, participants: 10, referenceFood: "Glucose",
+      testDurationHours: 2, qualityEvidence: "Synthetic control, not real food" },
+  };
+  const input = { recipeId: "synthetic-eu", servings: 1,
+    ingredients: [{ name: "Synthetic EU fixture", grams: 100,
+      fineliRecordId: source.id, giRecordId: gi.id, foodKey: gi.foodKey,
+      preparationKey: gi.preparationKey, massEvidence: "Synthetic weighed 100 g",
+      giMatchEvidence: "Synthetic exact control" }] };
+  assert.equal(calculateGlycemicLoad(input, [source], [gi]).unroundedGlycemicLoadPerServing, 8.5);
+  const unknown = calculateGlycemicLoad(input, [{ ...source, polyolsSourceVerified: false }], [gi]);
+  assert.equal(unknown.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(unknown.glycemicLoadPerServing, null);
+});
