@@ -105,3 +105,44 @@ sekä xôin maapähkinän noin 15 minuutin esikeiton retentio;
 (4) hyväksytä neljän ravintokentän laskelma ja julkaisun muut portit vasta
 kokonaisen lähdeketjun valmistuttua. **Molemmat tahmariisia sisältävät
 reseptit pysyvät DRAFT/HOLDissa ja kaikki neljä makrokenttää `null`.**
+
+## 6. Xôin kookosmaidon nimetty pakkausvaihtoehto (21.11.2026)
+
+**TUTKIMUSVERTAILU / EI RESEPTI- TAI MAKROHYVÄKSYNTÄÄ.**
+
+[Urtekram / Midsona Finland Oy:n luomu-kookosmaito 200 ml](https://www.urtekram.fi/Ruoka/kookos/kookosmaito/) on yksilöity
+[K-Ruoan tuotekortissa EAN-tunnuksella 5701058014845](https://www.k-ruoka.fi/kauppa/tuote/urtekram-kookosmaito-200ml-luomu-5701058014845).
+200 ml:n tuotteessa on **50 % luomukookospähkinäuutetta ja vettä**. Näitä tietoja
+ei saa siirtää saman merkin eri kokoiseen tai koostumuksiseen kookosmaitoon tai
+kookoskermaan. Valmistajan ja kaupan ilmoitus ilmoittavat ravintosisällön **100 grammaa kohti**,
+vaikka koko pakkauksen tilavuus ilmoitetaan millilitroina.
+
+| Ainesosatuotteen ilmoitus, / 100 g | Arvo | Näytön lähde |
+| --- | ---: | --- |
+| Hiilihydraatit (EU-merkintä) | 2,7 g | valmistaja ja K-Ruoka |
+| Proteiini | 1,9 g | valmistaja ja K-Ruoka |
+| Rasva | 18 g | valmistaja ja K-Ruoka |
+| Ravintokuitu | 1,2 g | K-Ruoka (ei listattu valmistajan sivulla) |
+| Polyolit erikseen | **ei ilmoitettu** | kumpikaan tuotekortti ei erittele |
+
+**Kolme erillistä hyväksyntäestettä:**
+
+1. **Tuotetta ei ole valittu reseptiin:** VNIFoodin xôi-lähde ei nimeä kookosmaidon
+   valmistajaa. Urtekramin EAN-tuote on vasta saatavilla oleva täsmätuotekandidaatti;
+   myyjän tai valmistajan verkkosivu ei korvaa varsinaisen myyntipakkauksen tarkistusta.
+2. **Massan ja tilavuuden ero:** VNIFoodin aineslistassa on **20 g**, mutta
+   työvaiheessa **20 ml**. Tämän tuotteen 200 ml:n pakkaus ei todista, että
+   20 ml nestettä painaa 20 g. FI-Draft säilyttää aineslistan 20 g:n valinnan
+   avoimena toimituksellisena tulkintana; g↔ml-muunnos ja lähderistiriita ovat HOLD.
+3. **Polyolien erittely puuttuu:** EU:n ravintoarvomerkinnän hiilihydraatit
+   sisältävät polyolit, joten 2,7 g/100 g ei yksin osoita erillistä
+   nettohiilihydraattia eikä puuttuvasta rivistä saa asettaa POLYL = 0.
+   Myös tuotetietojen käyttötapa, koko annoksen saanto ja keittoretentio
+   pitää ratkaista ennen hyväksyttyä laskentaa.
+
+**Koneellinen kirjaus:** [B5-raaka-aineiden esitarkistus](issue404-b5-ingredient-preflight.json)
+kirjaa Urtekramin EAN-tuotteen `externalEvidence`-tutkimusehdokkaaksi xôin
+20 g:n kookosmaitoriville; sen `reasonCode` pysyy `PRODUCT_SPEC_PENDING`,
+ja `approval` pysyy `RESEARCH_ONLY_PRODUCT_NOT_SELECTED`.
+Xôi ja kuih pysyvät **DRAFT/HOLD**-tilassa, neljä makrokenttää `null`;
+mitään tietuetta ei ole hyväksytty ravintolaskentoihin tai julkaistu tuotantoon.
