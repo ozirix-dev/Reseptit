@@ -1,6 +1,6 @@
 # [Chat 1] Recipavon Cloudflare-julkaisun käyttöönottorajat ja testaus
 
-**Päivä:** 21.11.2026. **Tila:** ESIKATSELUUN VALMISTELU / TUOTANTOVASTAANOTTO OFF / CLOUDFARE-RESURSSIEN TARKISTUS HOLD.
+**Päivä:** 21.11.2026. **Tila:** ESIKATSELUUN VALMISTELU / TUOTANTOVASTAANOTTO OFF / CLOUDFLARE-RESURSSIEN TARKISTUS HOLD.
 
 **Työn omistaja:** Chat 1. Tämä dokumentti ja erillinen GitHub Actions -työnkulku eivät luo Cloudflare-resursseja, muuta tunnuksia tai julkaise sivustoa. Vastuullinen Cloudflare/Codex-julkaisija varmistaa tiliasetukset erillisenä työvaiheena.
 
