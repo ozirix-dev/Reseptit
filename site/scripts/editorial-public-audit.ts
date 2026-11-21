@@ -61,6 +61,44 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
     }
     sources.set(item.recipeId, item);
   }
+  // Every raw signal must refer to the identical evidence in this inventory.
+  // This checks internal snapshot consistency, not the current contents of Git files.
+  const verifyEvidence = (item: Evidence, signal: string): void => {
+    const indexed = sources.get(item.recipeId);
+    if (!indexed || indexed.path !== item.path ||
+        indexed.sourceSha256 !== item.sourceSha256 || indexed.title !== item.title) {
+      throw new Error("RAW_SIGNAL_SOURCE_DRIFT: " + signal + ":" + item.recipeId);
+    }
+  };
+  for (const [name, records] of [
+    ["genericLead", raw.signals.genericLead],
+    ["duplicateDescription", raw.signals.duplicateDescription],
+    ["missingTime", raw.signals.missingTime],
+  ] as const) {
+    const seen = new Set<string>();
+    for (const item of records) {
+      verifyEvidence(item, name);
+      if (seen.has(item.recipeId)) {
+        throw new Error("DUPLICATE_RAW_SIGNAL: " + name + ":" + item.recipeId);
+      }
+      seen.add(item.recipeId);
+    }
+  }
+  const repeatPhrases = new Set<string>();
+  for (const group of raw.signals.repeatedSteps) {
+    if (repeatPhrases.has(group.phrase)) {
+      throw new Error("DUPLICATE_RAW_REPEAT_PHRASE: " + group.phrase);
+    }
+    repeatPhrases.add(group.phrase);
+    const seen = new Set<string>();
+    for (const item of group.recipes) {
+      verifyEvidence(item, "repeatedSteps");
+      if (seen.has(item.recipeId)) {
+        throw new Error("DUPLICATE_RAW_REPEAT_RECIPE: " + item.recipeId);
+      }
+      seen.add(item.recipeId);
+    }
+  }
   const fi = recipes.filter(recipe => recipe.locale === "fi");
   const visible = new Map<string, PublicRecipe>();
   for (const recipe of fi) {
