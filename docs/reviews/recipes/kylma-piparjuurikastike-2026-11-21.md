@@ -7,5 +7,5 @@ Päiväys: 21.11.2026. Tila: DRAFT / HOLD, ei julkaistu.
 - Tämä on kirjoitettu itsenäisesti; lähteen kokkikokeilu ei tarkoita Recipavon version koekeittiötestiä.
 - Tarkista ennen julkaisua aineiden turvallisuus, kypsennys, säilytys, annokset ja allergeenit (maito).
 - Reseptikohtainen ravinto-/GK-evidenssi ja hyväksyntä puuttuvat. EI KETO-/GLUTEENITON-VÄITETTÄ.
-- Havainnekuva: `kastikekuvat_chat3/kylma-piparjuurikastike.webp` erillisessä käyttäjälle luovutetussa kuvapaketissa; vielä ei ole repohaarassa. Kuvan suhde juuri tähän reseptiin ja natiiviresoluutio on tarkistettava ennen julkaisua.
+- Kuvan polku GitHubissa: `kuvat/alkuruoat/kylma-piparjuurikastike.webp` (960 × 640). AI-havainnekuva, ei keittiössä kuvattu eikä vielä hyväksytty.
 - Nelikielisten merkitysvastaavuuden dokumentoitu loppukatselmointi ja CI sekä Repo Guard -julkaisuportti puuttuvat.

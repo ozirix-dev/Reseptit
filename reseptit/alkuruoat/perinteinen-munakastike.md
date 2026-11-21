@@ -23,6 +23,11 @@ translation_status:
   en: draft
   sv: draft
   th: draft
+image:
+  src: alkuruoat/perinteinen-munakastike.webp
+  alt: "Keltaiseen vaaleaan munakastikkeeseen sekoitettuja kananmunan paloja ja tilliä kulhossa"
+  width: 960
+  height: 640
 ingredients:
   - amount: 400
     unit: "ml"
@@ -62,3 +67,5 @@ Lempeä valkokastike, jossa on kovaksi keitettyä kananmunaa ja tuoretta tilliä
 
 - Sisältö on toimituksellinen luonnos, ravintoarvo- ja GK-arvio sekä kuvan lopullinen hyväksyntä puuttuvat.
 - Valmistuksen vertailulähde: https://www.valio.fi/reseptit/munakastike/
+
+- Kuva on tekoälyn luoma havainnekuva tässä haarassa. Hyväksyntä puuttuu.

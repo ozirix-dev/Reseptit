@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "ซอส"
   - "ฟินแลนด์"
+image:
+  src: alkuruoat/perinteinen-munakastike.webp
+  alt: "ซอสไข่สีเหลืองอ่อนมีไข่ต้มสับกับผักชีลาวในถ้วย"
+  width: 960
+  height: 640
 ingredients:
   - amount: 400
     unit: "ml"
@@ -57,3 +62,5 @@ ingredients:
 
 - นี่คือฉบับร่าง ยังไม่ได้ประเมินโภชนาการ ภาระน้ำตาล หรืออนุมัติภาพประกอบขั้นสุดท้าย
 - Preparation reference: https://www.valio.fi/reseptit/munakastike/
+
+- ภาพประกอบจาก AI อยู่ในสาขานี้แล้ว แต่ยังไม่ได้รับการอนุมัติ

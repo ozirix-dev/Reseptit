@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "ซอส"
   - "ฟินแลนด์"
+image:
+  src: alkuruoat/kylma-piparjuurikastike.webp
+  alt: "ซอสฮอร์สแรดิชสีอ่อนในถ้วยแก้วตกแต่งด้วยฮอร์สแรดิชขูดและสมุนไพร"
+  width: 960
+  height: 640
 ingredients:
   - amount: 200
     unit: "g"
@@ -52,5 +57,5 @@ ingredients:
 
 ## หมายเหตุ
 
-- ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพประกอบอยู่ในชุดภาพร่างแยกต่างหาก ไม่ได้อยู่ในสาขานี้
+- ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพประกอบจาก AI อยู่ในสาขานี้แล้ว แต่ยังไม่ได้รับการอนุมัติ
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/piparjuurikastike/

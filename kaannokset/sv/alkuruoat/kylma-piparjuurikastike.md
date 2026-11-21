@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sås"
   - "finsk"
+image:
+  src: alkuruoat/kylma-piparjuurikastike.webp
+  alt: "Ljus pepparrotssås i glasskål med riven pepparrot och örter"
+  width: 960
+  height: 640
 ingredients:
   - amount: 200
     unit: "g"
@@ -52,5 +57,5 @@ En frisk pepparrotssås till rostbiff, rökt fisk och rödbetssallad.
 
 ## Anteckningar
 
-- Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Illustrationsbilden finns i ett separat bildpaket, inte i grenen.
+- Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Den AI-genererade bilden finns i denna gren och inväntar granskning.
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/piparjuurikastike/

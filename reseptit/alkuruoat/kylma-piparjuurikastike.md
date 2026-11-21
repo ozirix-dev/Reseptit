@@ -23,6 +23,11 @@ translation_status:
   en: draft
   sv: draft
   th: draft
+image:
+  src: alkuruoat/kylma-piparjuurikastike.webp
+  alt: "Vaaleaa piparjuurikastiketta lasikulhossa, pinnalla raastettua piparjuurta ja yrttejä"
+  width: 960
+  height: 640
 ingredients:
   - amount: 200
     unit: "g"
@@ -57,5 +62,5 @@ Raikas piparjuurikastike paahtopaistille, savukalalle ja rosollille.
 
 ## Muistiinpanot
 
-- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on erillisessä luonnoskuvapaketissa, ei tässä haarassa.
+- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn luoma havainnekuva tässä haarassa. Hyväksyntä puuttuu.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.valio.fi/reseptit/piparjuurikastike/

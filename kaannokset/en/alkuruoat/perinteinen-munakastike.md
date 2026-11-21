@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sauce"
   - "Finnish"
+image:
+  src: alkuruoat/perinteinen-munakastike.webp
+  alt: "Creamy pale yellow egg sauce with chopped cooked egg and dill in a bowl"
+  width: 960
+  height: 640
 ingredients:
   - amount: 400
     unit: "ml"
@@ -57,3 +62,5 @@ A mild milk-based sauce with chopped hard-boiled eggs and fresh dill.
 
 - This is an editorial draft; nutrition and glycaemic load assessments and final image approval are pending.
 - Preparation reference: https://www.valio.fi/reseptit/munakastike/
+
+- The AI-generated image is included in this branch, pending approval.

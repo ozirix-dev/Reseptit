@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sås"
   - "finsk"
+image:
+  src: alkuruoat/perinteinen-munakastike.webp
+  alt: "Ljusgul äggsås med hackat kokt ägg och dill i skål"
+  width: 960
+  height: 640
 ingredients:
   - amount: 400
     unit: "ml"
@@ -57,3 +62,5 @@ En mild mjölkbaserad sås med hackade hårdkokta ägg och färsk dill.
 
 - Detta är ett redaktionellt utkast; näringsvärden, glykemisk belastning och slutligt bildgodkännande återstår.
 - Preparation reference: https://www.valio.fi/reseptit/munakastike/
+
+- Den AI-genererade bilden finns i denna gren och inväntar granskning.
