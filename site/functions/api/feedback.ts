@@ -160,7 +160,7 @@ export async function handleFeedback(
     return json(503, { error: "maintenance_unavailable" });
   }
 
-  let verified: { success?: boolean; hostname?: string };
+  let verified: unknown;
   try {
     const params = new URLSearchParams({
       secret: env.TURNSTILE_SECRET,
@@ -171,11 +171,19 @@ export async function handleFeedback(
       signal: AbortSignal.timeout(8000),
     });
     if (!response.ok) return json(503, { error: "verification_unavailable" });
-    verified = await response.json() as typeof verified;
+    verified = await response.json();
   } catch {
     return json(503, { error: "verification_unavailable" });
   }
-  if (verified.success !== true || verified.hostname !== expectedOrigin.hostname) {
+  // Siteverify is an external service: HTTP 200 with null/array/malformed JSON
+  // is not evidence of a verified user. Treat malformed responses as unavailable
+  // rather than throwing outside the catch or touching the private database.
+  if (!verified || typeof verified !== "object" || Array.isArray(verified) ||
+      !("success" in verified) || typeof verified.success !== "boolean") {
+    return json(503, { error: "verification_unavailable" });
+  }
+  if (verified.success !== true || !("hostname" in verified) ||
+      verified.hostname !== expectedOrigin.hostname) {
     return json(403, { error: "verification_failed" });
   }
   const reference = crypto.randomUUID();
