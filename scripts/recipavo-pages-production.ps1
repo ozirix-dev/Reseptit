@@ -54,17 +54,20 @@ function Get-ArtifactSha([string]$HeaderText) {
   return $revisionMatches[0].Groups[1].Value
 }
 function Verify-Production([string]$ReleaseSha,[string]$ArtifactDist) {
-  # Environment from interactive preview sessions must not leak into production verification.
-  $oldTarget=[Environment]::GetEnvironmentVariable('RECIPAVO_BUILD_TARGET','Process')
-  $oldPreview=[Environment]::GetEnvironmentVariable('RECIPAVO_PREVIEW_ORIGIN','Process')
+  # Isolate the child verifier from any preview environment in the operator's shell.
+  $savedTarget=$env:RECIPAVO_BUILD_TARGET
+  $savedPreview=$env:RECIPAVO_PREVIEW_ORIGIN
   try {
-    [Environment]::SetEnvironmentVariable('RECIPAVO_BUILD_TARGET','production','Process')
-    [Environment]::SetEnvironmentVariable('RECIPAVO_PREVIEW_ORIGIN',$null,'Process')
+    $env:RECIPAVO_BUILD_TARGET='production'
+    Remove-Item Env:RECIPAVO_PREVIEW_ORIGIN -ErrorAction SilentlyContinue
+    Need (-not (Test-Path Env:RECIPAVO_PREVIEW_ORIGIN)) 'Preview environment could not be cleared before production verification'
     & npm.cmd run verify:production -- $ReleaseSha 'https://www.recipavo.com' $ArtifactDist
     Need ($LASTEXITCODE -eq 0) 'Post-deploy production verification failed: review Cloudflare deployment and rollback plan.'
   } finally {
-    [Environment]::SetEnvironmentVariable('RECIPAVO_BUILD_TARGET',$oldTarget,'Process')
-    [Environment]::SetEnvironmentVariable('RECIPAVO_PREVIEW_ORIGIN',$oldPreview,'Process')
+    if ($null -eq $savedTarget) { Remove-Item Env:RECIPAVO_BUILD_TARGET -ErrorAction SilentlyContinue }
+    else { $env:RECIPAVO_BUILD_TARGET=$savedTarget }
+    if ($null -eq $savedPreview) { Remove-Item Env:RECIPAVO_PREVIEW_ORIGIN -ErrorAction SilentlyContinue }
+    else { $env:RECIPAVO_PREVIEW_ORIGIN=$savedPreview }
   }
 }
 function Revision([string]$Url) {
