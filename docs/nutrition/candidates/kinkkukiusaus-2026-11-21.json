@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "workflow": "NON_PUBLIC_NUTRITION_CANDIDATE",
+  "status": "HOLD_NOT_PUBLISHABLE",
+  "calculated_at": "2026-11-21",
+  "prepared_by": "Chat 3 / Kokki-3 (lähdetietuevertailu; ei riippumatonta hyväksyntää)",
+  "recipe_id": "kinkkukiusaus",
+  "source_path": "reseptit/paaruoat/kinkkukiusaus.md",
+  "source_sha256": "4732ef7546ee80a3269d0548b68fafe3c911e4c28def940c50e4b4b33a05a1d7",
+  "source_blob_sha": "d41b25d6577a10ab4311d4501cb4fa791d1a302c",
+  "servings": 6,
+  "reference_data": "docs/nutrition/food-records.json",
+  "reference_data_provider": "THL Fineli, Repo-curated Release 20; CC BY 4.0",
+  "method": "Ainesosien punnittujen syötemassojen summa. Kukin määrä kertaa Finelin koostumus / 100. Ei kypsän annoksen massaa, hävikkiä, brändikohtaista koostumusta tai mittausta. Imeytyvä hiilihydraatti = CHO, ei kuituvähennystä toiseen kertaan.",
+  "ingredient_rows": [
+    {
+      "line": 1,
+      "ingredient": "pakasteperunasuikaleita",
+      "recipeAmount": 1000,
+      "recipeUnit": "g",
+      "accountedGrams": 1000,
+      "matchQuality": "proxy",
+      "matchNotes": "Pakasteperunasuikaleet eivät ole sama valmis tuote kuin Finelin vanha kuorittu raaka peruna. Tarkista suikaleiden mahdollinen öljy/suola ja laatu.",
+      "foodRecord": {
+        "id": "fineli-205-release-20",
+        "name": "PERUNA, VANHA, KUORITTU",
+        "url": "https://fineli.fi/fineli/api/v1/foods/205",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 15.5,
+          "protein": 1.88,
+          "fat": 0.114,
+          "fibre": 1.4,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 155,
+        "protein": 18.8,
+        "fat": 1.14,
+        "fibre": 14,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 2,
+      "ingredient": "kypsää savukinkkua suikaleina",
+      "recipeAmount": 250,
+      "recipeUnit": "g",
+      "accountedGrams": 250,
+      "matchQuality": "proxy",
+      "matchNotes": "Fineli 3 % keittokinkku ei varmista savukinkun koostumusta; tuotemerkin rasva, suola ja mahdollinen sokeri voivat poiketa.",
+      "foodRecord": {
+        "id": "fineli-779-release-20",
+        "name": "KOKOLIHALEIKKELE, KEITTOKINKKU, RASVAA 3 %",
+        "url": "https://fineli.fi/fineli/api/v1/foods/779",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0.629,
+          "protein": 17.61,
+          "fat": 2.985,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 1.573,
+        "protein": 44.025,
+        "fat": 7.463,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 3,
+      "ingredient": "sipulia",
+      "recipeAmount": 150,
+      "recipeUnit": "g",
+      "accountedGrams": 150,
+      "matchQuality": "direct",
+      "matchNotes": "Keltasipulin geneerinen koostumus.",
+      "foodRecord": {
+        "id": "fineli-335-release-20",
+        "name": "SIPULI, KELTASIPULI",
+        "url": "https://fineli.fi/fineli/api/v1/foods/335",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "protein": 1.25,
+          "fat": 0.1,
+          "fibre": 1.2,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 7.2,
+        "protein": 1.875,
+        "fat": 0.15,
+        "fibre": 1.8,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 4,
+      "ingredient": "ruokakermaa, rasvaa noin 15 %",
+      "recipeAmount": 400,
+      "recipeUnit": "g",
+      "accountedGrams": 400,
+      "matchQuality": "direct",
+      "matchNotes": "Noin 15 % ruokakerman geneerinen koostumus; tarkista pakkauksen rasvaprosentti.",
+      "foodRecord": {
+        "id": "fineli-29065-2026-10-25",
+        "name": "RUOANVALMISTUSKERMA, RASVAA 15 %",
+        "url": "https://fineli.fi/fineli/api/v1/foods/29065?c=2034&c2=2168",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Rel20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 2.7,
+          "protein": 2.7,
+          "fat": 15,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 10.8,
+        "protein": 10.8,
+        "fat": 60,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 5,
+      "ingredient": "voita vuoan voiteluun",
+      "recipeAmount": 10,
+      "recipeUnit": "g",
+      "accountedGrams": 10,
+      "matchQuality": "direct",
+      "matchNotes": "Voi, 10 g koko vuokaan.",
+      "foodRecord": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "url": "https://fineli.fi/fineli/api/v1/foods/500",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "protein": 1.19,
+          "fat": 81.3,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0.08,
+        "protein": 0.119,
+        "fat": 8.13,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 6,
+      "ingredient": "suolaa",
+      "recipeAmount": 4,
+      "recipeUnit": "g",
+      "accountedGrams": 4,
+      "matchQuality": "direct",
+      "matchNotes": "Ruokasuolan pieni ravintopanostus sisältyy laskentapohjaan.",
+      "foodRecord": {
+        "id": "fineli-30-2026-10-25",
+        "name": "RUOKASUOLA, JODIOITU",
+        "url": "https://fineli.fi/fineli/api/v1/foods/30?c=2034&c2=2168",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Rel20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 0.63,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0,
+        "protein": 0.025,
+        "fat": 0,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 7,
+      "ingredient": "rouhittua mustapippuria",
+      "recipeAmount": 1,
+      "recipeUnit": "g",
+      "accountedGrams": 1,
+      "matchQuality": "partial",
+      "matchNotes": "Pippurille Fineli-proxyssa kuidun ja polyolien arvot ovat tuntemattomat; ei tulkita nolliksi.",
+      "foodRecord": {
+        "id": "fineli-11177-2026-10-25",
+        "name": "MUSTAPIPPURI",
+        "url": "https://fineli.fi/fineli/api/v1/foods/11177?c=2034&c2=2168",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Rel20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 38.31,
+          "protein": 10.9,
+          "fat": 3.3,
+          "fibre": null,
+          "polyols": null
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0.383,
+        "protein": 0.109,
+        "fat": 0.033,
+        "fibre": null,
+        "polyols": null
+      }
+    }
+  ],
+  "known_component_subtotals_per_portion_g": {
+    "carbohydrate": 29.173,
+    "protein": 12.626,
+    "fat": 12.819,
+    "fibre": 2.633,
+    "polyols": 0
+  },
+  "important": "Edellä olevat ovat tunnettujen ravintotekijöiden osasummia oletetuilla tuotteilla, EIVÄT julkaistavat ravintoarvot. Puuttuvaa kuitua/polyoleja EI tulkita nollaksi.",
+  "unresolved_components": [
+    {
+      "row": 7,
+      "nutrient": "fibre",
+      "reason": "Fineli component unknown"
+    },
+    {
+      "row": 7,
+      "nutrient": "polyols",
+      "reason": "Fineli component unknown"
+    }
+  ],
+  "critical_product_proxies": [
+    "Pakasteperunasuikaleille käytetään raaka kuorittu peruna -proxyä.",
+    "Savukinkulle käytetään 3 % keittokinkun proxyä.",
+    "Pippurin puuttuvat kuitu- ja polyolitiedot."
+  ],
+  "unreported": {
+    "total_carbohydrate_per_portion_g": null,
+    "net_carbohydrate_per_portion_g": null,
+    "kcal_per_portion": null,
+    "approved_protein_per_portion_g": null,
+    "approved_fat_per_portion_g": null,
+    "glycemic_load": null
+  },
+  "publication_gate": "HOLD: vahvista tuotteet, mahdolliset huomaamatta jäävät lisäaineet/rasvat, lähdeversio, ravinto- ja GK-päätös. Älä tee docs/nutrition/calculations -julkaisunäyttöä tästä."
+}
