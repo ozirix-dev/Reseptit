@@ -8,6 +8,7 @@ param(
   [string]$Project = 'recipavo-site',
   [string]$ExpectedProductionBranch = 'production',
   [switch]$ProductionBranchVerified,
+  [switch]$FeedbackDisabledVerified,
   [switch]$Apply
 )
 $ErrorActionPreference = 'Stop'
@@ -103,6 +104,7 @@ $cloudSha=[string](Property $recent @('Deployment'))
 # before passing -ProductionBranchVerified for a real production deployment.
 if($Apply) {
   Need ($ProductionBranchVerified -and $ExpectedProductionBranch -eq 'production') 'Production branch not independently verified. Require explicit -ProductionBranchVerified after Cloudflare project-settings inspection.'
+  Need ($FeedbackDisabledVerified) 'Feedback intake OFF not independently verified in Cloudflare production settings. Require explicit -FeedbackDisabledVerified only after inspection.'
 }
 $liveSha=Revision 'https://www.recipavo.com/'
 Write-Host "Repository main : $remoteSha"
