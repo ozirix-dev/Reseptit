@@ -56,7 +56,13 @@ Tämä **ei** lähetä palautetta, vaan lukee previewn etusivun (200, `x-robots-
 
 **Tuotanto-FEEDBACK_ENABLED=true ja VITE_RECIPAVO_FEEDBACK_ENABLED=true vasta kaikkien porttien PASSin jälkeen.** Silloin julkaisu-SHA ja reitin toimivuus on todennettava tuotannosta, ei pelkästä GitHub-CI:stä.
 
-## 5. Mitä ei tehdä tässä PR:ssä
+## 5. CI:n ajantasaisen main-pohjan varmennus
+
+**Aikaisempi CI-este (21.11.2026):** PR:n [Recipe site -ajo #44908139529](https://github.com/ozirix-dev/Reseptit/actions/runs/44908139529) pysähtyi vaiheeseen `Verify the tested revision` (exit 1). Työnkulku käyttää GitHubin synteettistä PR-merge-revisiota ja tarkistaa sen ensimmäisen vanhemman ajantasaisen etä-`main`-refin kanssa. Tarkistushetkellä `main` oli ehtinyt edetä PR-ajon merge-revision muodostamisen jälkeen. **Tämä on testatun pohjan vanhenemista, ei todiste Pages Functionsin käännös- tai reittivirheestä.** Samaan HEADiin sidotut [Feedback Pages readiness #44908139533](https://github.com/ozirix-dev/Reseptit/actions/runs/44908139533) ja [Chat owner metadata #44908139558](https://github.com/ozirix-dev/Reseptit/actions/runs/44908139558) olivat SUCCESS.
+
+Turvallinen jatkaminen: tarkista `main`-SHA ja PR:n HEAD uudelleen, pidä `Verify the tested revision` -portti voimassa, laukaise **uusi** täsmä-HEADin PR-CI oikeaa nyky-`main`-tilaa vasten ja odota vihreää `Recipe site / build` -tulosta ennen Repo Guardin Ready/merge-toimia. Älä korjaa tätä poistamalla vanhemman SHA:n tarkistusta, käsittelemällä vanhaa CI:tä PASSina tai muuttamalla muiden chattien haaroja.
+
+## 6. Mitä ei tehdä tässä PR:ssä
 
 - Ei muutoksia todellisen Cloudflare-tilin projektiin, D1:een, DNS:ään, WAFiin, Turnstileen, Croniin, tehtävänajoihin tai salasanoihin.
 - Ei Github Actions -deploytä, `wrangler pages deploy` -käskyä automatiikassa, GitHub Secrets -muutoksia, uutta tuotanto-Wrangler-konfiguraatiota tai oikeaa palautetta.
