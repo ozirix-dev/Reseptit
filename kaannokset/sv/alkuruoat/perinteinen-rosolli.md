@@ -9,7 +9,7 @@ source_recipe: reseptit/alkuruoat/perinteinen-rosolli.md
 translation_of: perinteinen-rosolli
 status: draft
 servings: 8
-time_total_min: 70
+time_total_min: 50
 difficulty: "lätt"
 main_ingredient:
   - "punajuuri"
@@ -61,7 +61,7 @@ En finsk julsallad av tärnade rotfrukter och äpple med rosa gräddsås som ser
 
 ## Gör så här
 
-1. Koka potatis, morötter och vid behov rödbetor mjuka. Låt svalna, skala och väg upp mängderna.
+1. Använd färdigkokta, avsvalnade rotfrukter. Om du börjar med råa, koka dem mjuka, låt svalna och skala. Väg de kokta mängderna som anges.
 2. Tärna rotfrukter, gurka, äpple och lök i små jämnstora bitar.
 3. Blanda salladen försiktigt och krydda med salt och vitpeppar. Täck och kyl i kylskåp i minst 30 minuter.
 4. Vispa kall grädde lätt. Rör ner ättika och socker; färga eventuellt med några droppar rödbetsspad. Servera såsen separat.
@@ -71,3 +71,5 @@ En finsk julsallad av tärnade rotfrukter och äpple med rosa gräddsås som ser
 - Kontrollera allergener på förpackningarna; inget påstående om glutenfrihet har granskats.
 - Redaktionellt utkast: ingen provlagning hos Recipavo, godkänd närings-/GK-beräkning eller bild ännu.
 - Jämförelsekälla för tillagningen (inte kopierad): https://www.martat.fi/reseptit/rosolli/
+
+- Tidsuppskattningen förutsätter färdigkokta och avsvalnade rotfrukter. Att koka och kyla råa rödbetor tar längre tid.

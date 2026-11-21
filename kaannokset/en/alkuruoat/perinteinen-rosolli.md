@@ -9,7 +9,7 @@ source_recipe: reseptit/alkuruoat/perinteinen-rosolli.md
 translation_of: perinteinen-rosolli
 status: draft
 servings: 8
-time_total_min: 70
+time_total_min: 50
 difficulty: "easy"
 main_ingredient:
   - "punajuuri"
@@ -61,7 +61,7 @@ A traditional Finnish Christmas salad of diced root vegetables and apple, with p
 
 ## Preparation
 
-1. Boil the potatoes, carrots and, if needed, beetroot until tender. Cool, peel and measure the specified amounts.
+1. Use precooked, cooled root vegetables. If starting raw, boil until tender, cool and peel. Weigh the cooked amounts specified in the ingredients.
 2. Dice the vegetables, pickled cucumber, apple and onion into small, even pieces.
 3. Mix the salad gently and season with salt and white pepper. Cover and chill in the refrigerator for at least 30 minutes.
 4. Whip the cold cream to soft peaks. Stir in vinegar and sugar; add a few drops of beetroot liquid for colour if desired. Serve separately.
@@ -71,3 +71,5 @@ A traditional Finnish Christmas salad of diced root vegetables and apple, with p
 - Check packaging for allergens; no gluten-free claim has been reviewed.
 - Editorial draft: no Recipavo cooking trial, approved nutrition/GK calculation or image yet.
 - Preparation comparison reference (not reproduced): https://www.martat.fi/reseptit/rosolli/
+
+- The time estimate assumes the root vegetables are already cooked and cooled. Cooking and cooling raw beetroot adds time.

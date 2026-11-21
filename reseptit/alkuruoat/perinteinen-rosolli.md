@@ -6,7 +6,7 @@ category: alkuruoka
 language: fi
 status: draft
 servings: 8
-time_total_min: 70
+time_total_min: 50
 difficulty: "helppo"
 main_ingredient:
   - "punajuuri"
@@ -66,7 +66,7 @@ Joulupöydän kuutioitu juures-omenasalaatti ja erikseen tarjottava vaaleanpunai
 
 ## Valmistus
 
-1. Keitä perunat, porkkanat ja tarvittaessa punajuuret kuorineen kypsiksi. Jäähdytä, kuori ja punnitse ohjeen mukaiset määrät.
+1. Käytä valmiiksi keitettyjä ja jäähtyneitä juureksia. Jos aloitat raaoista, keitä ne kuorineen kypsiksi, jäähdytä ja kuori. Punnitse ohjeen mukaiset kypsät määrät.
 2. Leikkaa kaikki juurekset, maustekurkku, omena ja sipuli pieniksi tasakokoisiksi kuutioiksi.
 3. Sekoita salaatti varovasti; mausta suolalla ja valkopippurilla. Peitä ja jäähdytä jääkaapissa vähintään 30 minuuttia.
 4. Vatkaa kylmä kerma löysäksi vaahdoksi. Lisää etikka ja sokeri; halutessasi värjää muutamalla tipalla punajuurilientä. Tarjoa kastike erillään.
@@ -76,3 +76,5 @@ Joulupöydän kuutioitu juures-omenasalaatti ja erikseen tarjottava vaaleanpunai
 - Ainekset sisältävät mahdollisia allergeeneja. Tarkista tuoteselosteet. Ei gluteeniton-väitettä ilman erillistä tarkistusta.
 - Resepti on toimituksellinen luonnos: ei Recipavon koekeittiötestiä, hyväksyttyä ravinto-/GK-laskelmaa eikä kuvaa.
 - Valmistuksen vertailulähde (ohjetta ei kopioitu): https://www.martat.fi/reseptit/rosolli/
+
+- Aika-arvio koskee valmiiksi keitettyjä ja jäähtyneitä juureksia. Raakojen punajuurten keittäminen ja jäähdyttäminen pidentää valmistusaikaa.
