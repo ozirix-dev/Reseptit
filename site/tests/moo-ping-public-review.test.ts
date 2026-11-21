@@ -18,8 +18,8 @@ const sources = {
 } as const;
 const checks = {
   fi: [/jääkaapissa 30 minuuttia/, /marinadi on kiehunut kunnolla/, /neljään annokseen/, /mittaamattomia kypsennyshävikkejä/],
-  en: [/refrigerator for 30 minutes/, /marinade that touched raw meat has come to a full simmer/, /four portions/, /unmeasured cooking losses/],
-  sv: [/kylskåp i 30 minuter/, /marinaden som varit i kontakt med rått kött har fått sjuda ordentligt/, /fyra portioner/, /omätta tillagningsförluster/],
+  en: [/refrigerator for 30 minutes/, /marinade that touched raw meat has been brought to a full boil/, /four portions/, /unmeasured cooking losses/],
+  sv: [/kylskåp i 30 minuter/, /marinaden som varit i kontakt med rått kött har kokat upp ordentligt/, /fyra portioner/, /omätta tillagningsförluster/],
   th: [/ตู้เย็น 30 นาที/, /น้ำหมักที่สัมผัสเนื้อดิบเดือดอย่างทั่วถึง/, /4 ที่/, /ไม่ได้วัด/],
 } as const;
 
@@ -51,6 +51,7 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
     assert.doesNotMatch(instructions, boilerplate, "removed generic cooking step reappeared");
     assert.match(instructions, checks[locale][0], "refrigerated 30-min marinade");
     assert.match(instructions, checks[locale][1], "raw-pork marinade must be cooked through");
+    assert.match(instructions, /70\s*°C/, "pork safety temperature follows Ruokavirasto");
     assert.match(instructions, checks[locale][2], "all four servings accounted for");
     assert.match(recipe.notesHtml, checks[locale][3], "nutrition proxy belongs in notes");
     assert.equal(recipe.ingredients.length, source.ingredients.length);
