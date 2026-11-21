@@ -30,17 +30,23 @@ Loisriskin hallintaa varten tavanomaiset jäädytyskäsittelyvaihtoehdot ovat **
 4. Säilytä riskiryhmiä koskeva listeriavaroitus. Jäädytys ei tuhoa listeriaa; riskiryhmälle turvallisempi vaihtoehto on riittävästi kuumennettu kalatuote, mutta se ei ole sama kylmä mätiresepti.
 5. Tarkista, että 140 g mädin, 180 g tuorejuuston ja 90 g smetanan suhde sekä rieskojen pinta-ala ovat valmistusteknisesti realistisia.
 
-## Näytön tilakentät
+## Näytön tilakentät (tuotehaku 21.11.2026)
+
+Tuote-ehdokkaat ja pakkaustiedot tarkistettu erillisessä raportissa:
+`docs/reviews/new-recipes/chat4-fish-and-roe-product-packaging-evidence-2026-11-21.md`.
 
 | Kenttä | Siika | Muikunmäti |
 | --- | --- | --- |
-| Tuote ja valmistaja | PUUTTUU | PUUTTUU |
-| Raakakäyttö / syöntivalmius | TODENTAMATTA | TODENTAMATTA |
-| Loisriskin käsittelyn todiste tai poikkeus | PUUTTUU | PUUTTUU |
-| Lämpötila, käyttöaika ja pakkausohje | PUUTTUU | PUUTTUU |
+| Tuote ja valmistaja | LÖYTYI: Kotimaista/Hätälä EAN 2396012800003, Benella/Kalavapriikki 2371423800002 | LÖYTYI: Hätälä EAN 6408790008901; Järvi-Suomen Kalatuote 150 g |
+| Tuotteen pakastus- ja säilytysmerkinnät | Pakaste −18 °C vahvistettu; valmistajan ohje ohjaa **kypsentämään**; raakakäyttöä ei vahvistettu | Pakastettu valmistajalla; pakastesäilytys vahvistettu Järvi-Suomen tuotteelle |
+| Raakakäyttö / syöntivalmius nimenomaan reseptiin | EI VAHVISTETTU | JÄÄDYTETTY TUOTE, kylmänä käytön yksilöity käsittely- ja käyttöohje PUUTTUU |
+| Loisriskin käsittelyn aika/lämpötila tai dokumentoitu poikkeus | PUUTTUU | PUUTTUU |
+| Sulatuksen jälkeinen aika, käyttöpäivä ja erä | EI TODENNETTU | EI TODENNETTU |
 | Riskiryhmien listeriavaroitus reseptissä | TEHTY | TEHTY |
 | Nelikielinen kriittinen varoitus | TARKISTETTU CHAT-4 | TARKISTETTU CHAT-4 |
-| Julkaisupäätös | HOLD | HOLD |
+| Julkaisupäätös | **HOLD** | **HOLD** |
+
+**Tuotteen ja valmistajan tunnistaminen on ratkaistu, mutta tuotteen säädöstenmukainen jäädytys-/raakakäyttö- ja käyttöaikatodiste eivät ole vielä tiedossa.** Pirkka Parhaat valmiiksi graavattu siika (EAN 6410405079657) on tunnistettu erikseen, mutta se ei korvaa nykyisen raakasiikareseptin ainesosaa ja graavausmenetelmää.
 
 **Todistuksia ei saa keksiä eikä tulkita yleisestä Ruokaviraston sivusta yksittäisen kalatuotteen todistukseksi.** Tuotekohtaiset tiedot saadaan todellisesta pakkauksesta tai valmistajan/toimittajan dokumentaatiosta. Julkaisuportti voidaan tämän jälkeen arvioida uudelleen SHA-pinnatulla reseptiversiolla.
 
