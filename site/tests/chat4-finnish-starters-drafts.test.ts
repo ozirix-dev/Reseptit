@@ -39,13 +39,15 @@ function loadRecipe(id: string, locale: keyof typeof languageSections) {
   return { data: recipeFrontmatterSchema.parse(recipe.data), raw, stepCount };
 }
 
-test("Chat-4 starters remain ten distinct FI Drafts and thirty aligned translation Drafts", () => {
+const pendingFiIds = new Set(["graavisiika-tillilla", "muikunmati-rieskarullat"]);
+
+test("Chat-4 starters keep eight published FI and two held FI drafts with thirty translation drafts", () => {
   assert.equal(new Set(recipeIds).size, 10);
   for (const id of recipeIds) {
     const fi = loadRecipe(id, "fi");
     assert.equal(fi.data.recipe_id, id);
     assert.equal(fi.data.language, "fi");
-    assert.equal(fi.data.status, "draft");
+    assert.equal(fi.data.status, pendingFiIds.has(id) ? "draft" : "published");
     assert.deepEqual(fi.data.translation_languages, ["en", "sv", "th"]);
     for (const locale of ["en", "sv", "th"] as const) {
       assert.equal(fi.data.translation_status?.[locale], "draft");
