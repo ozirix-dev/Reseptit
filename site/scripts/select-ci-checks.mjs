@@ -332,11 +332,11 @@ function shouldRunFiEditorialAudit(paths) {
   if (!Array.isArray(paths)) return true; // Untrusted changed-path input: fail safe.
   return paths.some((raw) => {
     if (typeof raw !== "string" || !raw.trim()) return true;
-    const file = raw.replaceAll("\\\\", "/");
-    if (/^reseptit\\/.+\\.md$/i.test(file) && !file.includes("/_mallipohjat/")) return true;
+    const file = raw.replaceAll("\\", "/");
+    if (/^reseptit\/.+\.md$/i.test(file) && !file.includes("/_mallipohjat/")) return true;
     if (file === ".github/workflows/pages.yml") return true; // Verify this gate in its own PR.
-    if (/^site\\/scripts\\/.+\\.(?:mjs|ts)$/i.test(file)) return true;
-    if (/^site\\/src\\/content\\/.+\\.ts$/i.test(file)) return true;
+    if (/^site\/scripts\/.+\.(?:mjs|ts)$/i.test(file)) return true;
+    if (/^site\/src\/content\/.+\.ts$/i.test(file)) return true;
     return false;
   });
 }
