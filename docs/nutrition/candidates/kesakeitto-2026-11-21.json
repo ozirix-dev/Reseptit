@@ -371,5 +371,21 @@
     "missing_nutrient_components": [],
     "all_public_macro_values_withheld": true
   },
-  "missing_values_rule": "Null means not established; 0 is allowed only for a measured/explicitly sourced value. Quantified-row subtotals exclude unmapped ingredients and unknown components, and cannot be used as complete-recipe estimates."
+  "missing_values_rule": "Null means not established; 0 is allowed only for a measured/explicitly sourced value. Quantified-row subtotals exclude unmapped ingredients and unknown components, and cannot be used as complete-recipe estimates.",
+  "secondary_external_source_candidates": [
+    {
+      "food": "kevätsipuli",
+      "source": "https://www.s-kaupat.fi/tuote/kevatsipuli/6415350004921",
+      "reported_per100g": {
+        "carbohydrate": 4.8,
+        "protein": 1.2,
+        "fat": 0.1,
+        "fibre": 1.7,
+        "polyols": null
+      },
+      "evidence": "Retailer product label (not Fineli and not guaranteed to match recipe), 100 g spring onion. Polyols not reported: missing, not zero.",
+      "disposition": "CANDIDATE_ONLY_NOT_USED_IN_SUBTOTAL"
+    }
+  ],
+  "external_source_policy": "These candidate source observations are traceable but unapproved, and their values do NOT enter the calculated subtotals or public frontmatter. Raw vs cooked, product selection and complete carbohydrate/polyol evidence must be resolved."
 }
