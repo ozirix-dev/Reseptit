@@ -96,6 +96,13 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
   const unresolvedRepeats = comparedRepeats.filter(group => group.stillVisible.length >= 2);
   const resolvedRepeats = comparedRepeats.filter(group => group.stillVisible.length < 2);
   const missingTime = fi.filter(recipe => recipe.timeTotalMin === null).map(enrich);
+  const rawMissingTimeIds = new Set(raw.signals.missingTime.map(item => item.recipeId));
+  const publicMissingTimeIds = new Set(missingTime.map(item => item.recipeId));
+  const rawMissingTimeNoLongerVisible = raw.signals.missingTime
+    .filter(item => !publicMissingTimeIds.has(item.recipeId))
+    .map(item => enrich(visible.get(item.recipeId)!));
+  const publicMissingTimeNotInRaw = missingTime
+    .filter(item => !rawMissingTimeIds.has(item.recipeId));
   return {
     schemaVersion: 1,
     notice: "Public means the locally generated post-projection recipe dataset, not a verified Cloudflare production HTTP response.",
@@ -111,7 +118,10 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
       projectedRepeatedStepGroups: repeated.length,
       rawRepeatGroupsNoLongerRepeated: resolvedRepeats.length,
       rawRepeatGroupsStillRepeated: unresolvedRepeats.length,
+      rawMissingTimes: raw.signals.missingTime.length,
       projectedMissingTimes: missingTime.length,
+      rawMissingTimesNoLongerVisible: rawMissingTimeNoLongerVisible.length,
+      publicMissingTimesNotInRaw: publicMissingTimeNotInRaw.length,
     },
     visible: { genericDescriptions: generic, repeatedSteps: repeated, missingTime },
     sourceOnly: {
@@ -119,6 +129,8 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
       repeatGroupsNoLongerRepeated: resolvedRepeats,
       repeatedRawGroupsStillVisible: unresolvedRepeats,
       publicGenericNotInRaw,
+      rawMissingTimeNoLongerVisible,
+      publicMissingTimeNotInRaw,
     },
   };
 }
@@ -135,7 +147,7 @@ export function toMarkdown(report: ReturnType<typeof compareInventories>): strin
       t.rawRepeatedStepGroups + " | " + t.projectedRepeatedStepGroups + " |",
     "| Johdanto toistettu Kuvaus-osiossa | " + t.sourceOnlyDuplicateDescriptions +
       " | Ei vastaavaa kahden tekstikentän rakennetta |",
-    "| Kokonaisaika puuttuu | – | " + t.projectedMissingTimes + " |", "",
+    "| Kokonaisaika puuttuu | " + t.rawMissingTimes + " | " + t.projectedMissingTimes + " |", "",
     "Raakatekstin geneerisistä osumista " + t.rawGenericNoLongerVisible +
       " ei näy enää geneerisinä. Raakatekstin toistoryhmistä " +
       t.rawRepeatGroupsNoLongerRepeated + " ei enää esiinny vähintään kahdessa julkisessa FI-reseptissä.", "",
@@ -158,6 +170,16 @@ export function toMarkdown(report: ReturnType<typeof compareInventories>): strin
       item.path + " (SHA-256 " + item.sourceSha256 + ")");
   }
   if (!report.visible.missingTime.length) lines.push("Ei osumia.");
+  lines.push("",
+    "Alkuperäisestä FI-lähteestä puuttunut kokonaisaika on julkisessa esityksessä täytetty " +
+      t.rawMissingTimesNoLongerVisible + " reseptissä. Julkisessa esityksessä uutena puuttuvia aikoja on " +
+      t.publicMissingTimesNotInRaw + ". Tämä on erotushavainto, ei automaattinen aikahyväksyntä.", "",
+    "### Julkisessa esityksessä uutena puuttuvat ajat", "");
+  for (const item of report.sourceOnly.publicMissingTimeNotInRaw) {
+    lines.push("- " + item.recipeId + " (" + item.routePath + "), lähde " +
+      item.path + " (SHA-256 " + item.sourceSha256 + ")");
+  }
+  if (!report.sourceOnly.publicMissingTimeNotInRaw.length) lines.push("Ei osumia.");
   lines.push("", "## Jatkotoimi", "",
     "1. Katselmoi ensin julkisessa esityksessä todella näkyvät osumat.",
     "2. Älä korjaa historiallista raakatekstiä vain siksi, että se on jo SHA-lukitussa esityskerroksessa korjattu.",
