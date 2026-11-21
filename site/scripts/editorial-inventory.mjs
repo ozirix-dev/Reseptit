@@ -73,7 +73,7 @@ export function analyze(sources, quarantine = new Set()) {
     if (quarantine.has(recipeId)) { counts.excludedQuarantine++; continue; }
     counts.reviewed++;
     const category = source.path.split('/')[1];
-    const timeLines = parsed.yaml.split(/\\r?\\n/).filter(line => line.startsWith('time_total_min:'));
+    const timeLines = parsed.yaml.split(/\r?\n/).filter(line => line.startsWith('time_total_min:'));
     const duplicateTime = timeLines.length > 1;
     const timeRaw = duplicateTime
       ? timeLines.map(line => line.slice('time_total_min:'.length).trim()).join(' | ')
