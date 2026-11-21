@@ -25,7 +25,7 @@ image:
   height: 640
 ingredients:
   - amount: 400
-    unit: "ml"
+    unit: "g"
     item: "whole milk"
   - amount: 30
     unit: "g"
@@ -67,3 +67,4 @@ A mild milk-based sauce with chopped hard-boiled eggs and fresh dill.
 - Martat's tested egg sauce uses milk, butter, wheat flour and cooked eggs. The earlier Valio reference was a different cream-based sauce. https://www.martat.fi/reseptit/kananmunakastike/
 - Contains **eggs, milk and wheat**. Use fully cooked, peeled eggs; serve hot or cool promptly and refrigerate.
 - Use fully hard-boiled, peeled eggs and clean utensils. Serve the egg-and-milk sauce hot promptly; cool any leftovers without delay in a shallow container and refrigerate below +6°C. Keep cold food cold and hot food hot.
+- For nutrition calculations, weigh 400 g of whole milk instead of the former 400 ml. Use 120 g of peeled hard-boiled eggs as edible mass. The impact of 0.3 g white pepper is conservatively mass-bounded rather than assumed to have zero nutrients.

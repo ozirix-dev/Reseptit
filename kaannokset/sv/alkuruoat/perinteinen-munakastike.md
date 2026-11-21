@@ -25,7 +25,7 @@ image:
   height: 640
 ingredients:
   - amount: 400
-    unit: "ml"
+    unit: "g"
     item: "standardmjölk"
   - amount: 30
     unit: "g"
@@ -67,3 +67,4 @@ En mild mjölkbaserad sås med hackade hårdkokta ägg och färsk dill.
 - Marttas provlagade äggsås använder mjölk, smör, vetemjöl och kokta ägg. Den tidigare Valio-källan gällde en annan gräddbaserad sås. https://www.martat.fi/reseptit/kananmunakastike/
 - Innehåller **ägg, mjölk och vete**. Använd genomkokta, skalade ägg; servera såsen varm eller kyl den snabbt och förvara i kylskåp.
 - Använd helt hårdkokta, skalade ägg och rena redskap. Servera ägg- och mjölksåsen varm direkt; kyl rester utan dröjsmål i ett grunt kärl och förvara i kylskåp under +6 °C. Håll kall mat kall och varm mat varm.
+- För näringsberäkningen vägs 400 g standardmjölk i stället för tidigare 400 ml. Använd 120 g skalade hårdkokta ägg som ätbar mängd. Bidraget från 0,3 g vitpeppar avgränsas konservativt enligt massan i stället för att antas vara noll.

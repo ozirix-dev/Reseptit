@@ -2,7 +2,7 @@
 
 **Päivä:** 21.11.2026; **PR:** #808; **lähtö-HEAD:** `10cce14b379aef981ebb80cbcbe7a266ac5c21a0`.
 
-Tämä ei ole ravintolaskelma eikä julkinen ravintoarvio. Kyseessä on kymmenen reseptin ainesosa- ja lähtötiivisteinventaario. Kaikki punnitut määrät, yksiköt ja FI-lähdetekstit on luettu GitHubin omasta Chat 3 -haarasta. Rivejä yhteensä **63**; nestetilavuutta ml-yksikössä ilmoittavia rivejä **11**, joihin tarvitaan tuotekohtainen g/ml-muunnos.
+Tämä ei ole ravintolaskelma eikä julkinen ravintoarvio. Kyseessä on kymmenen reseptin ainesosa- ja lähtötiivisteinventaario. Kaikki punnitut määrät, yksiköt ja FI-lähdetekstit on luettu GitHubin omasta Chat 3 -haarasta. Rivejä yhteensä **63**; nestetilavuutta ml-yksikössä ilmoittavia rivejä **10**, joihin tarvitaan tuotekohtainen g/ml-muunnos.
 
 | recipe_id | Annoksia | Ainesrivejä | ml-rivejä | Laskennan input SHA-256 (alku) |
 | --- | ---: | ---: | ---: | --- |
@@ -11,7 +11,7 @@ Tämä ei ole ravintolaskelma eikä julkinen ravintoarvio. Kyseessä on kymmenen
 | `kantarellikastike` | 4 | 9 | 2 | `61bb6ce261bf…` |
 | `sinappikastike-joulukinkulle` | 6 | 8 | 2 | `171034daac90…` |
 | `kylma-piparjuurikastike` | 4 | 6 | 1 | `71080036d23e…` |
-| `perinteinen-munakastike` | 4 | 7 | 1 | `54b24ba297bc…` |
+| `perinteinen-munakastike` | 4 | 7 | 0 | `62e86f7d10d5…` |
 | `kermainen-pippurikastike` | 4 | 6 | 2 | `91c2af86c2f1…` |
 | `perinteinen-valkokastike` | 6 | 6 | 0 | `019aa958cb6b…` |
 | `puolukkakastike-jalkiruokiin` | 6 | 4 | 1 | `c50fd88ab225…` |
@@ -44,3 +44,7 @@ Puolukkakastikkeen sitruunamehu muutettu 10 millilitrasta 10 grammaan ja valinna
 ## Valkokastikkeen punnitustarkennus
 
 Maito punnitaan 500 g:ksi entisen 500 ml:n sijaan; vastaava FI/EN/SV/TH-ainesmuutos on sitova ravintolaskennan lähtöarvo. 63 ainesosariviä pysyy, ml-rivejä nyt 11. Valkopippurin 0,4 g ja muskottipähkinän 0,2 g tarvitsevat joko lähdearvot tai massaperusteisen konservatiivisen poisjättöarvion.
+
+## Munakastikkeen lähtömuutos
+
+400 ml täysmaitoa korvattiin 400 g:n punnitulla täysmaidolla, jotta laskenta ei tarvitse oletettua tiheyskerrointa. Kananmuna punnitaan valmiiksi keitettynä ja kuorittuna (120 g), Fineli #8513; valkopippurin 0,3 g vaikutus arvioidaan massaan sidotulla enimmäisvirheellä. 63 ainesosariviä ja neljä kieliversiota säilyvät; ml-rivejä on enää 10.
