@@ -4,8 +4,8 @@
   "source_path": "reseptit/alkuruoat/kantarellikastike.md",
   "source_sha256": "4897d725507eefed20ab4343043c840271cd969002df0cfe049710f3be557c8d",
   "decision": "hold",
-  "reviewed_by": "UNREVIEWED – Chat 3 preliminary source/structure checks only",
-  "reviewed_at": "",
+  "reviewed_by": "Chat 3 – rajattu kirjallinen aines- ja menetelmäkatselmointi; julkaisuhyväksyntä avoin",
+  "reviewed_at": "2026-11-21",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -19,20 +19,20 @@
       "notes": "Ei samannimistä resep­titunnusta alkuperäisessä mainissä tai tarkistetuissa avoimissa PR:issä; lopullinen päällekkäisyyden tarkistus tehdään julkaisurevisiolle."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Määrät ja mittayksiköt on tallennettu ja nelikielinen rakenne alustavasti tarkistettu; täsmäainesosien ja niiden syötävien määrien lopullinen arvio sekä mahdolliset tuotemerkit odottavat."
+      "status": "pass",
+      "notes": "K-Ruoka testattu 4 annos: noin 300 g kantarelleja, 100 g sipulia, 2–3 rkl voita, 2 rkl vehnäjauhoja, 100 ml vettä ja 200 ml kermaa. Recipavossa 350/70/25/20 g sekä 75 ml vettä ja 200 ml kermaa: perusteltu oma sovitus. Maito ja VEHNÄ ilmoitettu."
     },
     "method": {
-      "status": "pending",
-      "notes": "Riippumattomia valmistusvertailuja on dokumentoitu, mutta juuri tämän reseptiversion työvaiheiden/saannon lopullinen kokkikelpoisuusarvio on auki. Ei väitettä Recipavon koekeittiötestistä."
+      "status": "pass",
+      "notes": "Vertailussa sienien puhdistus, nesteen haihdutus, sipulin kuullotus, jauhosuurustus ja haudutus; Recipavon 6–8 minuutin haudutus sekä 20 g jauhoja vastaavat testattua perustekniikkaa. Recipavon versio ei ole fyysisesti kokeiltu."
     },
     "food_safety": {
       "status": "pending",
       "notes": "Maito ja vehnä; metsäsienen varma tunnistus on ehdoton, AI-kuva ei ole tunnistustodiste. Pakkausmerkinnät sekä tuotekohtaiset allergeenit ja säilytys tarkistettava ennen julkaisemista."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "Annokset ja ajat on kirjattu reseptiin; arvioitujen aikojen ja valmiin kastikkeen saannon lopullinen tarkistus puuttuu."
+      "status": "pass",
+      "notes": "K-Ruoka 4 annosta / 15–30 minuuttia; Recipavo 4 annosta / 30 minuuttia. Aika on perusteltu arvio."
     },
     "nutrition": {
       "status": "pending",
