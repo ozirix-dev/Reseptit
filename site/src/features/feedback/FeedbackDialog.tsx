@@ -38,7 +38,7 @@ export function FeedbackDialog({ locale, request, onClose }: {
   const [website, setWebsite] = useState("");
   const [token, setToken] = useState("");
   const [widgetError, setWidgetError] = useState(false);
-  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "failed">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "failed" | "limited">("idle");
   const [reference, setReference] = useState("");
 
   useEffect(() => {
@@ -78,7 +78,7 @@ export function FeedbackDialog({ locale, request, onClose }: {
 
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (!enabled || !token || status === "sending" || status === "sent") return;
+    if (!enabled || !token || status === "sending" || status === "sent" || status === "limited") return;
     setStatus("sending");
     try {
       // Do not send query parameters, cookies, browsing history or analytics events.
@@ -94,6 +94,12 @@ export function FeedbackDialog({ locale, request, onClose }: {
           website,
         }),
       });
+      if (response.status === 429) {
+        setStatus("limited");
+        setToken("");
+        if (widgetId.current && turnstile()) turnstile()!.reset(widgetId.current);
+        return;
+      }
       const data: unknown = await response.json();
       if (!response.ok || !data || typeof data !== "object" ||
         !("reference" in data) || typeof data.reference !== "string" ||
@@ -144,7 +150,10 @@ export function FeedbackDialog({ locale, request, onClose }: {
       <div role="group" aria-label={labels.turnstile} ref={widgetRef} />
       {widgetError ? <p role="alert">{labels.error}</p> : null}
       {status === "failed" ? <p role="alert">{labels.error}</p> : null}
-      <button type="submit" disabled={!token || status === "sending" || widgetError}>
+      {status === "limited" ? <p role="alert">{labels.quotaFull}{" "}
+        <a href={"mailto:" + privacyEmail}>{privacyEmail}</a>
+      </p> : null}
+      <button type="submit" disabled={!token || status === "sending" || status === "limited" || widgetError}>
         {status === "sending" ? labels.sending : labels.send}
       </button>
     </form> : <div className="feedback-dialog__disabled">
