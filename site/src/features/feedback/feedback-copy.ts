@@ -15,6 +15,7 @@ export const feedbackUi = {
     context: "Liittyvä sivu", send: "Lähetä palaute", sending: "Lähetetään…",
     sent: "Kiitos, palautteesi on vastaanotettu tarkistettavaksi.",
     reference: "Seurantatunnus", error: "Lähetys epäonnistui. Tarkista yhteys ja yritä uudelleen.",
+    quotaFull: "Palautekanava on tilapäisesti täynnä. Viestiäsi ei tallennettu. Kokeile myöhemmin tai lähetä sähköpostitse.",
     turnstile: "Roskapostisuojan vahvistus", disabled: "Verkkolomakkeen vastaanottoa ei ole vielä avattu.",
     fallback: "Voit lähettää palautetta sähköpostilla:",
     sensitive: "Älä lähetä terveystietoja, salasanoja tai muita arkaluonteisia tietoja.",
@@ -36,6 +37,7 @@ export const feedbackUi = {
     context: "Related page", send: "Submit feedback", sending: "Sending…",
     sent: "Thank you. Your feedback has been received for review.",
     reference: "Reference number", error: "Submission failed. Check your connection and try again.",
+    quotaFull: "The feedback form has reached its temporary submission limit. Your message was not saved. Try again later or email us.",
     turnstile: "Spam protection verification", disabled: "Online feedback submissions are not yet enabled.",
     fallback: "You can send feedback by email:",
     sensitive: "Do not send health details, passwords or other sensitive information.",
@@ -57,6 +59,7 @@ export const feedbackUi = {
     context: "Berörd sida", send: "Skicka respons", sending: "Skickar…",
     sent: "Tack! Din respons har tagits emot för granskning.",
     reference: "Ärendenummer", error: "Det gick inte att skicka. Kontrollera anslutningen och försök igen.",
+    quotaFull: "Responsformuläret har tillfälligt nått sin gräns. Meddelandet sparades inte. Försök senare eller skicka e-post.",
     turnstile: "Verifiering mot skräppost", disabled: "Det går ännu inte att skicka via webbformuläret.",
     fallback: "Du kan skicka respons via e-post:",
     sensitive: "Skicka inte hälsouppgifter, lösenord eller andra känsliga uppgifter.",
@@ -78,6 +81,7 @@ export const feedbackUi = {
     context: "หน้าที่เกี่ยวข้อง", send: "ส่งความคิดเห็น", sending: "กำลังส่ง…",
     sent: "ขอบคุณ เราได้รับความคิดเห็นของคุณเพื่อตรวจสอบแล้ว",
     reference: "หมายเลขอ้างอิง", error: "ส่งไม่สำเร็จ โปรดตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง",
+    quotaFull: "ขณะนี้แบบฟอร์มได้รับข้อความถึงขีดจำกัดชั่วคราว ข้อความของคุณยังไม่ถูกบันทึก โปรดลองอีกครั้งภายหลังหรือติดต่อทางอีเมล",
     turnstile: "ตรวจสอบเพื่อป้องกันสแปม", disabled: "ระบบรับความคิดเห็นผ่านแบบฟอร์มยังไม่เปิดใช้งาน",
     fallback: "คุณสามารถส่งความคิดเห็นทางอีเมล:",
     sensitive: "โปรดอย่าส่งข้อมูลสุขภาพ รหัสผ่าน หรือข้อมูลอ่อนไหวอื่น ๆ",
@@ -93,7 +97,7 @@ export const feedbackUi = {
 } satisfies Record<RecipeLocale, {
   button: string; recipeButton: string; title: string; intro: string; close: string;
   kind: string; message: string; email: string; emailHelp: string; context: string;
-  send: string; sending: string; sent: string; reference: string; error: string;
+  send: string; sending: string; sent: string; reference: string; error: string; quotaFull: string;
   turnstile: string; disabled: string; fallback: string; sensitive: string;
   privacy: string; privacyNote: string; kinds: Record<FeedbackKind, string>;
 }>;
