@@ -24,12 +24,26 @@ export function assertDispatch({repository,ref,workflowSha,inputSha,confirmation
   must(workflowSha === inputSha, 'Dispatch commit differs from approved SHA');
   must(confirmation === CONFIRMATION, 'Explicit release confirmation missing');
 }
-export function assertEnvironment(config) {
+export function assertEnvironment(config, branchPolicies) {
   must(config && config.name === ENVIRONMENT, 'Expected existing GitHub production environment');
-  const rules = (config.protection_rules ?? []).filter(
-    rule => rule.type === 'required_reviewers' && Array.isArray(rule.reviewers) && rule.reviewers.length > 0);
-  must(rules.length > 0, 'Production environment must require at least one reviewer');
-  return {reviewersConfigured:true};
+  const rules = config.protection_rules;
+  must(Array.isArray(rules), 'Production protection rules unavailable');
+  // The operator explicitly chose a ten-minute automatic delay, not a second manual approval.
+  const timers = rules.filter(rule => rule.type === 'wait_timer');
+  must(timers.length === 1 && timers[0].wait_timer === 10,
+    'Production environment must enforce the 10-minute wait timer');
+  must(!rules.some(rule => rule.type === 'required_reviewers'),
+    'Remove Required reviewers: this release policy uses a wait timer');
+  must(config.can_admins_bypass === false,
+    'Administrators must not be allowed to bypass production protection rules');
+  must(config.deployment_branch_policy?.custom_branch_policies === true &&
+       config.deployment_branch_policy?.protected_branches === false,
+    'Production environment must restrict deployment to a selected branch');
+  must(branchPolicies?.total_count === 1 && Array.isArray(branchPolicies.branch_policies) &&
+       branchPolicies.branch_policies.length === 1 &&
+       branchPolicies.branch_policies[0]?.name === 'main',
+    'Only the exact main branch may deploy to production');
+  return {waitMinutes:10,branch:'main',adminBypass:false};
 }
 export function assertCiRuns(payload,inputSha) {
   const runs = payload?.workflow_runs;
@@ -82,8 +96,14 @@ export async function githubPreflight({sha,env,fetcher=fetch,verifyEnvironment=t
     'GitHub main changed; select the new exact SHA and rerun CI');
   const params = new URLSearchParams({branch:'main',head_sha:sha,per_page:'100'});
   const ciRun = assertCiRuns(await request(`/actions/workflows/pages.yml/runs?${params}`),sha);
-  if (verifyEnvironment) assertEnvironment(await request(`/environments/${ENVIRONMENT}`));
-  return {sha,ciRun,approvalRequired:verifyEnvironment};
+  if (verifyEnvironment) {
+    const [config, branches] = await Promise.all([
+      request(`/environments/${ENVIRONMENT}`),
+      request(`/environments/${ENVIRONMENT}/deployment-branch-policies?per_page=100`)
+    ]);
+    assertEnvironment(config, branches);
+  }
+  return {sha,ciRun,waitTimerRequired:verifyEnvironment};
 }
 export async function cloudflarePreflight({env,fetcher=fetch}) {
   const id=env.CLOUDFLARE_ACCOUNT_ID, token=env.CLOUDFLARE_API_TOKEN;
