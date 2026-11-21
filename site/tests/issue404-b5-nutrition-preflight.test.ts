@@ -188,7 +188,7 @@ test("issue 404 B5: kuih sugar arithmetic is a component only, never a full reci
   };
   const nutrient = source.ingredients.find((x) => x.record?.id === sugar.candidateRecord?.recordId)?.record;
   assert.equal(nutrient?.per100g?.carbohydrate, 99.9);
-  const sugarOnlyCarbohydrate = sugar.amount * nutrient.per100g.carbohydrate / 100;
+  const sugarOnlyCarbohydrate = sugar.amount! * nutrient!.per100g!.carbohydrate! / 100;
   assert.equal(Math.round(sugarOnlyCarbohydrate * 100) / 100, 169.83);
   assert.equal(Math.round(sugarOnlyCarbohydrate / 20 * 100) / 100, 8.49);
   assert.equal(kuih.status, "WITHHELD_SOURCE_INCOMPLETE");
