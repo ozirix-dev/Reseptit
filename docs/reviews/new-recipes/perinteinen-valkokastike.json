@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "perinteinen-valkokastike",
   "source_path": "reseptit/alkuruoat/perinteinen-valkokastike.md",
-  "source_sha256": "837c25eada5d84454f1dd44a669a8efd1693a558606dd8e2968127668cd925c7",
+  "source_sha256": "c470d5f2e61ae6709184298549589988f584081ab56de39c475625763477fda1",
   "decision": "hold",
   "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
   "reviewed_at": "2026-11-21",
@@ -12,7 +12,7 @@
       "https://www.valio.fi/reseptit/valkokastike/"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/perinteinen-valkokastike.json",
   "checks": {
     "duplicates": {
       "status": "pending",
@@ -35,8 +35,8 @@
       "notes": "Recipavo 6 pientä kastikeannosta / 15 min; Valion aktiivinen valmistus 10 min. Eri annosjaon vuoksi tarkka tarjottava saanto on edelleen arvio, mutta aika ja työjärjestys ovat perusteltuja."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "docs/nutrition/calculations/perinteinen-valkokastike.json contains four full Fineli food source matches and two bounded spice omissions ({\"kcal\":0.8999999999999999,\"netCarbohydrate\":0.11000000000000001,\"totalCarbohydrate\":0.11000000000000001,\"protein\":0.11000000000000001,\"fat\":0.11000000000000001} max error/serving). SourceHash 019aa958cb6b055fae45c24cd47827e84fb3de2207439fa0b71b0310b68b7b64; independent arithmetic gives {\"carbs_net_per_serving_g\":8.36,\"carbs_total_per_serving_g\":8.57,\"protein_per_serving_g\":3.25,\"fat_per_serving_g\":7.75}. Model validation and four published language frontmatter fields pending before nutrition PASS."
+      "status": "pass",
+      "notes": "Neljän makron ravintoarvio laskettu 6 annokselle Fineli Release20 #689 (täysmaito 500 g), #500 (voi 35 g), #110 (vehnäjauho 35 g), #30 (jodioitu suola 3 g). Valkopippuri 0,4 g ja muskottipähkinä 0,2 g on merkitty erikseen lähdepuutteisiksi, EI nolliksi. site/scripts/nutrition-model.ts sallii konservatiivisesti rajatun omissiovaikutuksen; molempien mausteiden yhteinen enimmäisvaikutus 0.90 kcal/annos ja enintään 0.11 g kutakin makroa/annos (<1g toleranssi). Arvio per annos: nettohiilihydraatit 8,36g, kokonaishiilihydraatit 8,57g, proteiini 3,25g, rasva 7,75g. Laskennan syötehash 019aa958cb6b055fae45c24cd47827e84fb3de2207439fa0b71b0310b68b7b64; tämä on source-backed arvio, ei laboratorion tai valitun maitomerkin mittaus. Koko reseptin julkaisupäätös on HOLD."
     },
     "glycemic": {
       "status": "unavailable",
