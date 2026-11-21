@@ -705,7 +705,7 @@
     {
       "recipe_id": "puolukkakastike-jalkiruokiin",
       "source_path": "reseptit/jalkiruoat/puolukkakastike-jalkiruokiin.md",
-      "source_recipe_sha256": "2f362059db29a9a6d3ce6bfd5e4efe5754ae45d7c7e5522bebb18246d92012e1",
+      "source_recipe_sha256": "d4c42ecbcc605220c0afb27c1a5cab339aae9af7cbc398c5dd80c8a35a373784",
       "nutrition_input_hash": "c50fd88ab225e21892e801f882d90277e235d357e4ef819caae872fc2ff0396a",
       "servings": 6,
       "ingredient_count": 4,
@@ -755,9 +755,15 @@
           "retention": "ALL_MACRO_BEARING_PARTS_RETAINED"
         }
       ],
-      "status": "EVIDENCE_ASSEMBLED_PENDING_CALCULATION_VERIFICATION",
-      "publication": "DRAFT_NOT_PUBLISHED",
-      "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI"
+      "status": "ESTIMATE_WITH_EVIDENCE_AUTOMATED_ONLY",
+      "publication": "DRAFT_NOT_APPROVED",
+      "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI",
+      "per_serving_estimate": {
+        "carbs_net_per_serving_g": 12.88,
+        "carbs_total_per_serving_g": 13.92,
+        "protein_per_serving_g": 0.23,
+        "fat_per_serving_g": 0.27
+      }
     },
     {
       "recipe_id": "perinteinen-vaniljakastike",
