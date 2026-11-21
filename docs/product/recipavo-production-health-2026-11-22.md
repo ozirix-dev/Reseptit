@@ -12,7 +12,7 @@ Tarkistuksen kohteet (9 GET-pyyntöä per ajo):
 - `robots.txt`: toimiva `Sitemap:`-osoite ja ei koko sivuston `Disallow: /` -kieltoa.
 - `sitemap.xml`: kaikkien neljän kielihakemiston julkiset reitit.
 - Tarkoituksella puuttuva sivu: HTTP 404 ja `noindex`.
-- `GET /api/feedback`: HTTP 405 ja `{"error":"method_not_allowed"}` JSONina. **Ei POST-pyyntöä.**
+- `GET /api/feedback`: HTTP 405 ja `{"error":"method_not_allowed"}` JSONina sekä `Cache-Control: no-store` ja `X-Content-Type-Options: nosniff`. **Ei POST-pyyntöä.**
 - Etusivun viittaama hash-nimetty JavaScript-aloitustiedosto: HTTP 200 ja ei tyhjä sisältö.
 
 `robots.txt`-vastauksen mahdollinen vanha CDN-välimuistin SHA-otsake **ei yksin aiheuta hälytystä**, koska tuotannon jälkitarkistuksissa tämä ilmiö on jo todettu. HTML-sivujen SHA:n on kuitenkin oltava yhtenäinen.
