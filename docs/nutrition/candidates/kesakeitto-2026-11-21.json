@@ -354,5 +354,22 @@
     "approved_fat_per_portion_g": null,
     "glycemic_load": null
   },
-  "publication_gate": "HOLD: hanki tarkka kevätsipulin lähde ja päätä käytettävät maitotuotteet, mittaa/validoi kypsä saanto, hyväksy ravintolaskenta ja GK-käsittely."
+  "publication_gate": "HOLD: hanki tarkka kevätsipulin lähde ja päätä käytettävät maitotuotteet, mittaa/validoi kypsä saanto, hyväksy ravintolaskenta ja GK-käsittely.",
+  "quantified_rows_subtotals_per_portion_g": {
+    "carbohydrate": 24.683,
+    "protein": 6.899,
+    "fat": 3.598,
+    "fibre": 4.223,
+    "polyols": 0
+  },
+  "coverage": {
+    "ingredient_rows": 11,
+    "has_unmapped_ingredients": true,
+    "unmapped_ingredient_lines": [
+      5
+    ],
+    "missing_nutrient_components": [],
+    "all_public_macro_values_withheld": true
+  },
+  "missing_values_rule": "Null means not established; 0 is allowed only for a measured/explicitly sourced value. Quantified-row subtotals exclude unmapped ingredients and unknown components, and cannot be used as complete-recipe estimates."
 }
