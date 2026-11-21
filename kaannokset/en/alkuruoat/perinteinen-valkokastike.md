@@ -10,6 +10,10 @@ translation_of: perinteinen-valkokastike
 status: draft
 servings: 6
 time_total_min: 15
+carbs_net_per_serving_g: 8.36
+carbs_total_per_serving_g: 8.57
+protein_per_serving_g: 3.25
+fat_per_serving_g: 7.75
 difficulty: "easy"
 main_ingredient:
   - "maito"
@@ -57,7 +61,7 @@ A simple butter-and-milk white sauce for fish, potatoes and vegetables.
 
 ## Notes
 
-- This is an editorial draft; nutrition and glycaemic load assessments and final image approval are pending.
+- Editorial draft with Fineli-based estimated nutrition. The two tiny spice amounts have conservative mass-based error bounds rather than assumed zero nutrition. Glycaemic load and final image approval remain pending.
 - Preparation reference: https://www.valio.fi/reseptit/valkokastike/
 
 - The AI-generated illustrative image is now versioned. Decorative garnishes shown in the picture are not part of the ingredient quantities.

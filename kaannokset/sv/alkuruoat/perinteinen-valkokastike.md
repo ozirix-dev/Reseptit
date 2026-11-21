@@ -10,6 +10,10 @@ translation_of: perinteinen-valkokastike
 status: draft
 servings: 6
 time_total_min: 15
+carbs_net_per_serving_g: 8.36
+carbs_total_per_serving_g: 8.57
+protein_per_serving_g: 3.25
+fat_per_serving_g: 7.75
 difficulty: "enkel"
 main_ingredient:
   - "maito"
@@ -57,7 +61,7 @@ En enkel vit sås av smör, mjöl och mjölk till fisk, potatis och grönsaker.
 
 ## Anteckningar
 
-- Detta är ett redaktionellt utkast; näringsvärden, glykemisk belastning och slutligt bildgodkännande återstår.
+- Redaktionellt utkast med beräknade Fineli-näringsvärden. De två små kryddmängderna har konservativa massbaserade felgränser i stället för antagna nollvärden. Glykemisk belastning och slutligt bildgodkännande återstår.
 - Preparation reference: https://www.valio.fi/reseptit/valkokastike/
 
 - Den AI-genererade illustrationsbilden är nu versionshanterad. Dekorationer på bilden ingår inte i receptmängderna.

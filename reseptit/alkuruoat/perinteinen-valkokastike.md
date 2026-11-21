@@ -7,6 +7,10 @@ language: fi
 status: draft
 servings: 6
 time_total_min: 15
+carbs_net_per_serving_g: 8.36
+carbs_total_per_serving_g: 8.57
+protein_per_serving_g: 3.25
+fat_per_serving_g: 7.75
 difficulty: "helppo"
 main_ingredient:
   - "maito"
@@ -62,7 +66,7 @@ Voista, maidosta ja vehnäjauhoista valmistuva peruskastike kalalle, perunoille 
 
 ## Muistiinpanot
 
-- Sisältö on toimituksellinen luonnos, ravintoarvo- ja GK-arvio sekä kuvan lopullinen hyväksyntä puuttuvat.
+- Sisältö on toimituksellinen luonnos. Ravintoarvot ovat Fineli-lähteistä laskettuja annosarvioita; kahden pienen mauste-erän ravintovaikutus rajattiin konservatiivisesti massan avulla. GK ja kuvan lopullinen hyväksyntä puuttuvat.
 - Valmistuksen vertailulähde: https://www.valio.fi/reseptit/valkokastike/
 
 - Kuva on tekoälyn tuottama havainnekuva, joka on nyt versionhallinnassa. Kuvan tarjoilukoristeet eivät kuulu ainesosamääriin.

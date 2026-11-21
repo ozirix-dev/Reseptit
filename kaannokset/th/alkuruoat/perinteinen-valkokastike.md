@@ -10,6 +10,10 @@ translation_of: perinteinen-valkokastike
 status: draft
 servings: 6
 time_total_min: 15
+carbs_net_per_serving_g: 8.36
+carbs_total_per_serving_g: 8.57
+protein_per_serving_g: 3.25
+fat_per_serving_g: 7.75
 difficulty: "ง่าย"
 main_ingredient:
   - "maito"
@@ -57,7 +61,7 @@ ingredients:
 
 ## หมายเหตุ
 
-- นี่คือฉบับร่าง ยังไม่ได้ประเมินโภชนาการ ภาระน้ำตาล หรืออนุมัติภาพประกอบขั้นสุดท้าย
+- ฉบับร่างนี้มีค่าทางโภชนาการประมาณจาก Fineli ผลกระทบของเครื่องเทศสองชนิดปริมาณน้อยถูกจำกัดด้วยขอบเขตความคลาดเคลื่อนตามมวล ไม่ได้สมมติว่าเป็นศูนย์ ยังไม่มีค่า GK และการอนุมัติภาพขั้นสุดท้าย
 - Preparation reference: https://www.valio.fi/reseptit/valkokastike/
 
 - ภาพประกอบสร้างด้วย AI และอยู่ในระบบควบคุมเวอร์ชันแล้ว ของตกแต่งในภาพไม่รวมในปริมาณส่วนผสม
