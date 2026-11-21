@@ -73,10 +73,12 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
         : source.ingredients[index].item;
       assert.equal(publicRecipe.ingredients[index].item, expectedItem);
     }
-    // The interactive ingredient list must not regress to "with shell".
+    // The accounting input is 110 g edible egg; the user-facing portion
+    // selector intentionally converts that amount to two shell-free eggs.
     const visibleEgg = (publicRecipe.kitchenIngredients ?? publicRecipe.ingredients)[0];
-    if (locale === "fi") assert.equal(visibleEgg.item, "kananmunaa ilman kuorta");
-    assert.equal(visibleEgg.amount, 110);
+    if (locale === "fi") assert.match(visibleEgg.item, /kuorettomana|ilman kuorta/);
+    if (publicRecipe.kitchenIngredients) assert.equal(visibleEgg.amount, 2);
+    else assert.equal(visibleEgg.amount, 110);
     assert.deepEqual(publicRecipe.nutrition, {
       carbsNetG: source.carbs_net_per_serving_g,
       carbsTotalG: source.carbs_total_per_serving_g,
