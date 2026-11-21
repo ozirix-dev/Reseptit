@@ -30,8 +30,8 @@ Nämä luvut **eivät sisällä** sitruunamehua, suolaa eivätkä ruohosipulia, 
 
 ## Seuraavan hyväksyttävän paketin tarkistuslista
 
-1. Varmista crème fraîchen polyolit ja kuitu, tai muu täsmäosumia tuottava lähde; ei arvattuja nollia.
-2. Varmista ruohosipulin ja sitruunamehun lähdekortit; sitruunamehun määrä on jo muutettu 12 g punnituksi massaksi kaikissa neljässä kielessä.
+1. Varmista crème fraîchen polyolit ja kuitu tai muu täsmäosumia tuottava lähde; ei arvattuja nollia.
+2. Tuoreen ruohosipulin Fineli #392 -ravintokortti on lähdetasolla yksilöity ja sitruunamehun määrä on jo muutettu 12 g punnituksi massaksi FI/EN/SV/TH-kielissä. Sitruunamehun Fineli #11557 -lähde on dokumentoitu aiemmassa tillikastikkeen laskentapaketissa; varsinainen kokonaislaskennan validointi on tekemättä.
 3. Laske `recipeNutritionInputHash` todellisen FI-lähteen määristä ja sitouta kaikkien kuuden ainesosan `record`-rakenteet. Aja `site/scripts/nutrition-model.ts` ja `site/scripts/nutrition-evidence.ts` oikeilla tietueilla.
 4. Julkisia neljää makroa ei kirjoiteta ennen täyttä evidenssiä. `checks.nutrition: pending`, `decision: hold`, `status: draft`, GK määrittämätön, PR #808 Draft/HOLD, ei Readyä/mergeä/tuotantodeployta.
 
