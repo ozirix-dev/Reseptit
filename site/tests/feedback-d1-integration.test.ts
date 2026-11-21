@@ -7,6 +7,7 @@ import {
   handleFeedback, onRequestGet, type FeedbackDatabase, type FeedbackEnvironment,
 } from "../functions/api/feedback";
 import { feedbackRetentionDays } from "../src/features/feedback/retention-policy";
+import { feedbackIntakeQuota } from "../src/features/feedback/intake-quota";
 import { purgeExpiredFeedback } from "../workers/feedback-retention";
 
 const origin = "https://www.recipavo.com";
@@ -52,8 +53,8 @@ function sqliteD1(database: DatabaseSync): FeedbackDatabase {
         bind(...values) {
           return {
             async run() {
-              database.prepare(sql).run(...values);
-              return { success: true };
+              const result = database.prepare(sql).run(...values);
+              return { success: true, meta: { changes: Number(result.changes) } };
             },
           };
         },
@@ -63,7 +64,7 @@ function sqliteD1(database: DatabaseSync): FeedbackDatabase {
 }
 
 async function schema(database: DatabaseSync): Promise<void> {
-  for (const name of ["0001_feedback.sql", "0002_feedback_retention.sql"]) {
+  for (const name of ["0001_feedback.sql", "0002_feedback_retention.sql", "0003_feedback_quota.sql"]) {
     const sql = await readFile(path.resolve(import.meta.dirname, "../migrations", name), "utf8");
     database.exec(sql);
   }
@@ -172,6 +173,92 @@ test("real SQLite supports private manual deletion by opaque reference without o
     assert.equal(deletion.run("synthetic-first").changes, 1);
     assert.equal(db.prepare("SELECT reference FROM feedback_submissions").get()?.reference, "synthetic-second");
     assert.equal(deletion.run("synthetic-first").changes, 0);
+  } finally {
+    db.close();
+  }
+});
+
+
+test("real SQLite enforces 15-in-15-minutes and 100-in-24-hours within one atomic INSERT", async () => {
+  const db = new DatabaseSync(":memory:");
+  try {
+    await schema(db);
+    const adapter = sqliteD1(db);
+    const env = configured(adapter);
+    const now = Date.now();
+    await purgeExpiredFeedback({
+      FEEDBACK_RETENTION_ENABLED: "true", FEEDBACK_DB: adapter,
+    }, now, now + 1000);
+
+    const insert = db.prepare(
+      "INSERT INTO feedback_submissions (reference, kind, locale, page_path, message, token_sha256, received_at) " +
+      "VALUES (?, 'technical', 'fi', '/', 'Synthetic anonymous report', ?, ?)",
+    );
+
+    // One earlier accepted message is included in the rolling 15-minute count.
+    const first = await handleFeedback({
+      request: request({ ...valid, turnstileToken: "quota-initial" }), env,
+    }, verified());
+    assert.equal(first.status, 202);
+    assert.equal(feedbackIntakeQuota.quarterHourMax, 15);
+    assert.equal(feedbackIntakeQuota.rollingDayMax, 100);
+
+    // Fill the quarter-hour limit using REAL inserts and ensure the 16th
+    // attempt does not create a row (and returns a controlled 429).
+    for (let i = 0; i < feedbackIntakeQuota.quarterHourMax - 1; i++) {
+      insert.run("recent-" + i, "synthetic-recent-token-" + i, new Date(now - 60_000).toISOString());
+    }
+    const blockedQuarter = await handleFeedback({
+      request: request({ ...valid, turnstileToken: "quota-over-15" }), env,
+    }, verified());
+    assert.equal(blockedQuarter.status, 429);
+    assert.deepEqual(await blockedQuarter.json(), { error: "quota_exceeded" });
+    assert.equal(db.prepare("SELECT count(*) AS n FROM feedback_submissions").get()?.n, 15);
+
+    // Shift synthetic filler rows outside the 15-minute range, while keeping
+    // them inside 24 hours. A fresh request must become possible again.
+    db.prepare("UPDATE feedback_submissions SET received_at = ? WHERE reference LIKE 'recent-%'")
+      .run(new Date(now - 60 * 60_000).toISOString());
+    const acceptedAfterQuarter = await handleFeedback({
+      request: request({ ...valid, turnstileToken: "quota-quarter-released" }), env,
+    }, verified());
+    assert.equal(acceptedAfterQuarter.status, 202);
+    assert.equal(db.prepare("SELECT count(*) AS n FROM feedback_submissions").get()?.n, 16);
+
+    // Fill rolling-day count to exactly 100 with synthetic older messages.
+    for (let i = 0; i < feedbackIntakeQuota.rollingDayMax - 16; i++) {
+      insert.run("day-" + i, "synthetic-day-token-" + i, new Date(now - 2 * 60 * 60_000).toISOString());
+    }
+    assert.equal(db.prepare("SELECT count(*) AS n FROM feedback_submissions").get()?.n, 100);
+    const blockedDay = await handleFeedback({
+      request: request({ ...valid, turnstileToken: "quota-over-100" }), env,
+    }, verified());
+    assert.equal(blockedDay.status, 429);
+    assert.deepEqual(await blockedDay.json(), { error: "quota_exceeded" });
+    assert.equal(db.prepare("SELECT count(*) AS n FROM feedback_submissions").get()?.n, 100);
+
+    // 24h expiry releases the quota; the remaining newer messages stay.
+    db.prepare("UPDATE feedback_submissions SET received_at = ? WHERE reference LIKE 'day-%'")
+      .run(new Date(now - 25 * 60 * 60_000).toISOString());
+    const acceptedAfterDay = await handleFeedback({
+      request: request({ ...valid, turnstileToken: "quota-day-released" }), env,
+    }, verified());
+    assert.equal(acceptedAfterDay.status, 202);
+    assert.equal(db.prepare("SELECT count(*) AS n FROM feedback_submissions").get()?.n, 101);
+  } finally {
+    db.close();
+  }
+});
+
+test("rate-limit indexes remain present in the migrated private SQLite schema", async () => {
+  const db = new DatabaseSync(":memory:");
+  try {
+    await schema(db);
+    const indexes = db.prepare("SELECT name FROM sqlite_master WHERE type = 'index'").all()
+      .map(row => row.name);
+    assert.ok(indexes.includes("feedback_recent_intake"));
+    assert.ok(indexes.includes("feedback_queue_by_status"));
+    assert.ok(indexes.includes("feedback_queue_by_recipe"));
   } finally {
     db.close();
   }
