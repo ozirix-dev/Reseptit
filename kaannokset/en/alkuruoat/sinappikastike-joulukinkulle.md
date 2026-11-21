@@ -29,13 +29,13 @@ ingredients:
     item: "cooking cream, about 15% fat"
   - amount: 150
     unit: "ml"
-    item: "prepared low-salt vegetable stock"
+    item: "Puljonki Signature ready-to-use vegetable stock (EAN 7613287431745)"
   - amount: 35
     unit: "g"
-    item: "mild mustard"
+    item: "Turun Sinappia Mieto mild mustard (EAN 6411600954510)"
   - amount: 15
     unit: "g"
-    item: "wholegrain Dijon mustard"
+    item: "Maille Dijon wholegrain mustard, contains sulphites (EAN 3036810207589)"
   - amount: 15
     unit: "g"
     item: "butter"
@@ -68,3 +68,4 @@ A warm, gentle mustard sauce for ham that needs no roasting juices.
 - Martat's tested ham gravy uses wheat flour, mustard, cream and ham drippings. This version uses vegetable stock instead, so the recipes are not identical. https://www.martat.fi/reseptit/kinkun-kastike/
 - Contains **milk, wheat and mustard**. Vegetable stock may contain celery; check the stock and mustard labels.
 - Serve the warm sauce promptly with fully cooked ham. If keeping leftovers, cool promptly and refrigerate below +6°C. Check the prepared vegetable stock and both mustards for celery and other allergens including mustard, wheat and milk.
+- Exact ingredients checked: Puljonki Signature vegetable stock EAN 7613287431745 (onion, carrot, leek, parsnip, fennel, lovage, herbs; celery not listed), Turun Sinappia Mieto EAN 6411600954510 (mustard seed) and Maille Dijon wholegrain EAN 3036810207589 (**mustard and sulphites** from white wine). Sauce contains **milk, wheat and mustard**; the Maille ingredient also contains **sulphites**. The finished sauce's sulphite concentration has not been measured. Check actual packaging; substitutions require a new check.

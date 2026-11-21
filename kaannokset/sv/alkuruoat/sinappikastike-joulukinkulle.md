@@ -29,13 +29,13 @@ ingredients:
     item: "matlagningsgrädde, cirka 15 % fett"
   - amount: 150
     unit: "ml"
-    item: "färdig lättsaltad grönsaksbuljong"
+    item: "Puljonki Signature färdig grönsaksbuljong (EAN 7613287431745)"
   - amount: 35
     unit: "g"
-    item: "mild senap"
+    item: "Turun Sinappia Mieto mild senap (EAN 6411600954510)"
   - amount: 15
     unit: "g"
-    item: "grov dijonsenap"
+    item: "Maille Dijon grovkornig senap med sulfiter (EAN 3036810207589)"
   - amount: 15
     unit: "g"
     item: "smör"
@@ -68,3 +68,4 @@ En varm, mild senapssås till skinka utan steksky.
 - Marttas provlagade skinksås använder vetemjöl, senap, grädde och steksky. Här används i stället grönsaksbuljong, så recepten är inte identiska. https://www.martat.fi/reseptit/kinkun-kastike/
 - Innehåller **mjölk, vete och senap**. Grönsaksbuljong kan innehålla selleri; kontrollera buljongens och senapens märkning.
 - Servera varm sås genast till genomstekt skinka. Kyl rester snabbt och förvara under +6 °C. Kontrollera grönsaksbuljong och båda senapssorternas etiketter med avseende på selleri, senap, vete och mjölk.
+- Kontrollerade produkter: Puljonki Signature grönsaksbuljong EAN 7613287431745 (lök, morot, purjolök, palsternacka, fänkål, libbsticka och örter; selleri anges inte), Turun Sinappia Mieto EAN 6411600954510 (senapsfrö) och Maille Dijon grovkornig EAN 3036810207589 (**senap och sulfiter** från vitt vin). Såsen innehåller **mjölk, vete och senap**; Maille-produkten innehåller **sulfiter**. Sulfithalten i den färdiga såsen har inte mätts. Kontrollera den aktuella förpackningen vid varje byte av produkt.

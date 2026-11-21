@@ -34,13 +34,13 @@ ingredients:
     item: "ruokakermaa, noin 15 %"
   - amount: 150
     unit: "ml"
-    item: "vähäsuolaista valmista kasvislientä"
+    item: "Puljonki Signature Kasvislientä, käyttövalmista (EAN 7613287431745)"
   - amount: 35
     unit: "g"
-    item: "mietoa sinappia"
+    item: "Turun Sinappia Mietoa (EAN 6411600954510)"
   - amount: 15
     unit: "g"
-    item: "karkeaa Dijon-sinappia"
+    item: "Maille Dijon Kokojyväsinappia, sisältää sulfiitteja (EAN 3036810207589)"
   - amount: 15
     unit: "g"
     item: "voita"
@@ -73,3 +73,4 @@ Lämmin, pehmeä sinappikastike kinkulle ilman paistolientä.
 - Marttojen testatussa kinkunkastikkeessa käytetään vehnäjauhoa, sinappia ja kermaa sekä kinkun paistolientä. Tässä versiossa käytetään sen sijaan kasvislientä, joten reseptit eivät ole identtisiä. https://www.martat.fi/reseptit/kinkun-kastike/
 - Sisältää **maitoa, vehnää ja sinappia**. Kasvisliemi voi sisältää selleriä; tarkista liemen ja sinappien pakkausmerkinnät.
 - Käytä vain kypsän kinkun kanssa ja tarjoa lämmin kastike heti. Jos säästät kastiketta, jäähdytä nopeasti ja säilytä jääkaapissa alle +6 °C:ssa. Varmista valmiin kasvisliemen ja molempien sinappien merkinnöistä mahdollinen selleri sekä sinappi-, vehnä- ja maitoallergeenit.
+- Yksilöidyt tuotteet: Puljonki Signature Kasvisliemi EAN 7613287431745 (sipuli, porkkana, purjo, palsternakka, fenkoli, lipstikka, muut yrtit; selleriä ei lueteltu), Turun Sinappia Mieto EAN 6411600954510 (sinapinsiemen) ja Maille Dijon Kokojyväsinappi EAN 3036810207589 (**sinappi ja sulfiitit**, valkoviini). Kastike sisältää varmasti **maitoa, vehnää ja sinappia**; Maille-tuotteen **sulfiitit on huomioitava**. Valmiin kastikkeen sulfiittipitoisuutta ei ole mitattu. Tarkista aina käyttämäsi pakkauksen tiedot; tuotteen vaihtaminen muuttaa tarkistuksen.
