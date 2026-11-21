@@ -1,0 +1,181 @@
+{
+  "reviewDate": "2026-11-21",
+  "baseMainSha": "8bc086423d65f855163f4dfc8e5c9902bf83152c",
+  "purpose": "Source-to-FI quantity and method binding for five archived B21 candidates. Evidence of source comparison, not food-safety, product, nutrition, GK or publication approval.",
+  "releaseAuthorized": false,
+  "physicalTestClaim": false,
+  "recipes": [
+    {
+      "id": "karibia-saltfish-fritterit-punnittu-v2",
+      "original": "karibia-saltfish-fritterit",
+      "source": "https://www.bbcgoodfood.com/recipes/jamaican-saltfish-fritters",
+      "author": "Anthea Stephenson",
+      "methodStatus": "SOURCE_LINKED_WITH_PRODUCT_AND_OIL_HOLD",
+      "yield": "14–16 fritters; 16 nominal per-piece servings",
+      "sourceMeasures": [
+        {
+          "itemContains": "suolattua turskaa",
+          "amount": 160,
+          "unit": "g"
+        },
+        {
+          "itemContains": "itsestään kohoavia",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "itemContains": "curryjauhetta",
+          "amount": 1,
+          "unit": "rkl"
+        },
+        {
+          "itemContains": "vettä taikinaan",
+          "amount": 375,
+          "unit": "ml"
+        }
+      ],
+      "unresolved": [
+        "dry salted-cod product and salt-removal method",
+        "spring onion, chilies, peppers per-piece edible gram masses",
+        "self-raising flour nutritional data",
+        "frying oil absorbed vs added and remaining four macros",
+        "GK, image, translation and publication approval"
+      ]
+    },
+    {
+      "id": "intialainen-idli-kookoschutneylla-punnittu-v2",
+      "original": "intialainen-idli-kookoschutneylla",
+      "source": "https://www.vegrecipesofindia.com/idli-recipe-how-to-make-soft-idlis/",
+      "secondarySource": "https://www.chefkunalkapur.com/recipe/coconut-chutney/",
+      "author": "Dassana Amit; Chef Kunal Kapur (chutney)",
+      "methodStatus": "SOURCE_LINKED_FERMENTATION_HOLD",
+      "yield": "30 nominal idli; chutney yield is separate and not allocated",
+      "sourceMeasures": [
+        {
+          "itemContains": "idli-riisiä",
+          "amount": 2,
+          "unit": "kuppia"
+        },
+        {
+          "itemContains": "urad-papua",
+          "amount": 120,
+          "unit": "g"
+        },
+        {
+          "itemContains": "pohaa",
+          "amount": 20,
+          "unit": "g"
+        },
+        {
+          "itemContains": "kookosraastetta",
+          "amount": 2,
+          "unit": "kuppia"
+        }
+      ],
+      "unresolved": [
+        "named safe fermentation control and relation of 1 tsp source salt to BCCDC optimum ~2%",
+        "rice water and ingredient cup-to-gram conversions",
+        "chutney input grams and portion allocation",
+        "four macro values and product/polyol states",
+        "GK, image, translations and release approval"
+      ]
+    },
+    {
+      "id": "intialainen-pesarattu-mungpavuista-punnittu-v2",
+      "original": "intialainen-pesarattu-mungpavuista",
+      "source": "https://www.vegrecipesofindia.com/moong-dal-dosa-pesarattu-a-cripsy-dosa-made-from-moong-dal/",
+      "secondarySource": "https://www.ruokavirasto.fi/en/foodstuffs/food-sector/food-information/labelling/instructions-for-use-and-warning/beans/",
+      "author": "Dassana Amit; Finnish Food Authority safety advice",
+      "methodStatus": "METHOD_CONFLICT_HOLD",
+      "yield": "not source verified",
+      "sourceMeasures": [],
+      "unresolved": [
+        "original pesarattu uses soaked unboiled mung but current draft uses preboiled mung",
+        "no matching positive reference for exact 150 g dry mung + 25 g flour + 90 g water thin pancake",
+        "dry bean lectin-safe cooking cannot be assumed from quick dosa pan step",
+        "must not publish as traditional pesarattu",
+        "four macro values, GK, image, translations and release approval"
+      ]
+    },
+    {
+      "id": "malesialainen-kuih-seri-muka-punnittu-v2",
+      "original": "malesialainen-kuih-seri-muka",
+      "source": "https://rasamalaysia.com/seri-muka/",
+      "author": "Bee Yinn Low / Siew Loon",
+      "methodStatus": "SOURCE_LINKED_WITH_PORTION_AND_NUTRITION_HOLD",
+      "yield": "20 nominal small pieces, not four full meals",
+      "sourceMeasures": [
+        {
+          "itemContains": "kuivaa tahmariisiä",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "itemContains": "ohuehkoa kookosmaitoa",
+          "amount": 100,
+          "unit": "ml"
+        },
+        {
+          "itemContains": "paksua kookosmaitoa",
+          "amount": 200,
+          "unit": "ml"
+        },
+        {
+          "itemContains": "sokeria munakerrokseen",
+          "amount": 170,
+          "unit": "g"
+        },
+        {
+          "itemContains": "siivilöityä pandanmehua",
+          "amount": 100,
+          "unit": "ml"
+        }
+      ],
+      "unresolved": [
+        "pandan extraction and edible yield",
+        "2 whole eggs + 2 additional yolks gram weights",
+        "flour/cornstarch tablespoon ingredient gram conversions",
+        "coconut product-specific composition",
+        "food safety cooling and four macro fields",
+        "GK, image, translations, release approval"
+      ]
+    },
+    {
+      "id": "vietnamilainen-xoi-maapahkinalla-punnittu-v2",
+      "original": "vietnamilainen-xoi-maapahkinalla",
+      "source": "https://vnifood.com/recipe/sticky-rice-with-peanuts/",
+      "author": "VNIFood editor",
+      "methodStatus": "SOURCE_LINKED_WITH_INTERNAL_SOURCE_UNCERTAINTY_HOLD",
+      "yield": "source has no serving count; four small portions are editorial hypothesis",
+      "sourceMeasures": [
+        {
+          "itemContains": "kuivaa tahmariisiä",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "itemContains": "kuivia kuorittuja",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "itemContains": "vettä riisikeittimeen",
+          "amount": 160,
+          "unit": "ml"
+        },
+        {
+          "itemContains": "makeuttamatonta kookosmaitoa",
+          "amount": 20,
+          "unit": "g"
+        }
+      ],
+      "unresolved": [
+        "source recipe says 20 g coconut milk in ingredients but 20 ml in directions",
+        "salt list has no measure despite two 1/3 tsp amounts in method",
+        "rice cooker model and wet cooked mass",
+        "four macro values and product/retention inputs",
+        "GK, image, translations and release approval"
+      ]
+    }
+  ]
+}

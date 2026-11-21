@@ -1,67 +1,70 @@
 ---
-title: "Karibialaiset suolakalafritterit – punnittu koeversio"
+title: "Jamaikalaiset suolakalafritterit – Anthea Stephensonin lähdereseptiin sidottu FI-luonnos"
 recipe_id: karibia-saltfish-fritterit-punnittu-v2
 url_slug: karibia-saltfish-fritterit
 category: aamupala
 language: fi
 status: draft
-main_ingredient: ["suolattu turska", "vehnäjauho", "kevätsipuli"]
-cooking_method: ["paistaminen"]
+main_ingredient: ["suolattu turska", "itsestään kohoava vehnäjauho", "paprika"]
+cooking_method: ["kalan kypsentäminen", "pannulla paistaminen"]
 ingredients:
-  - amount: 80
+  - amount: 160
     unit: g
-    item: kuivattua suolattua turskaa, punnittuna ennen liotusta
-  - amount: 140
+    item: kuivaa suolattua turskaa, ennen suolanpoistoa
+  - amount: 300
     unit: g
-    item: vehnäjauhoja
-  - amount: 5
-    unit: g
-    item: leivinjauhetta
-  - amount: 180
-    unit: g
-    item: kylmää vettä taikinaan
-  - amount: 25
-    unit: g
-    item: hienonnettua kevätsipulia
-  - amount: 40
-    unit: g
-    item: kuutioitua punaista paprikaa
+    item: itsestään kohoavia vehnäjauhoja (self-raising flour)
   - amount: 1
+    unit: rkl
+    item: keskivahvaa curryjauhetta
+  - amount: 375
+    unit: ml
+    item: vettä taikinaan, tarvittaessa enintään 15 ml lisää
+  - amount: 2
+    unit: kpl
+    item: kevätsipulia, hienonnettuna
+  - amount: 0.5
+    unit: kpl
+    item: suurta scotch bonnet -chiliä, siemenet poistettuna
+  - amount: 0.5
+    unit: kpl
+    item: punaista paprikaa
+  - amount: 0.5
+    unit: kpl
+    item: keltaista paprikaa
+  - amount: 0.5
+    unit: kpl
+    item: vihreää paprikaa
+  - amount: null
     unit: g
-    item: erittäin hienonnettua chiliä, siemenet poistettu
-  - amount: 20
-    unit: g
-    item: neutraalia paistoöljyä pannulle
-servings: 2
+    item: auringonkukkaöljyä paistamiseen
+    note: "lähde käyttää noin 0,5 cm:n öljykerrosta; käytetty ja imeytynyt grammapaino on tuntematon"
+servings: 16
 time_total_min: null
-difficulty: "Keskitaso"
-tags: ["aamupala"]
+difficulty: "keskitaso"
+tags: ["aamupala", "jamaikalainen"]
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 ---
 
-# Suolakalafritterit – karibialaishenkinen koeversio
+# Jamaikalaiset suolakalafritterit – lähteeseen sidottu FI-luonnos
 
-**DRAFT / HOLD.** Tämä on lähteistä sovitettu punnittu *ehdokas*, ei fyysisesti koepaistettu eikä ravinto-, allergia- tai julkaisuhyväksytty resepti. Alkuperäinen `karibia-saltfish-fritterit` pysyy karanteenissa. Tavoite on noin kahdeksan pientä fritteriä / kaksi annosta; toteutunut kappalemäärä punnitaan koekeittiössä.
+**DRAFT / HOLD; EI JULKAISUUN.** Määrät vastaavat Anthea Stephensonin Good Foodissa julkaisemaa reseptiä. **16 tarkoittaa nimellisesti 16 pientä fritteriä, ei 16 kokonaista ateriaa**; alkuperäinen saanto on noin 14–16 kappaletta. Recipavo ei ole valmistanut tätä erää. Tämä dokumentti korvaa aiemman lähteistämättömän 80 g kala / 140 g jauho + leivinjauhe / 20 g paistoöljy -sovituksen. Omaa koekeittiötä ei vaadita, mutta ravintoarvon laskenta ja lähdetuotteen täsmäys ovat edelleen avoimia.
 
-## Ainekset
+## Valmistus
 
-Kaikki taikinaan ja pannulle ehdotetut syötävät määrät ovat yllä olevassa luettelossa. **Liotus- ja kiehautusvesi** on erillistä poistettavaa käsittelyvettä, ei taikinaan kuuluva 180 g. Öljy on pannulle annettu enimmäismäärä, **ei** väite ruokaan imeytyneestä rasvasta. Suolakalan suolapitoisuus riippuu tuotteesta.
+1. Tarkista **kuivatun suolaturskan pakkauksen** suolanpoisto- ja mahdollinen jääkaappiliotusohje. Tuotteen suolaisuuteen perustuvaa liotus- tai vaihtovesimäärää ei voi päätellä Good Foodin 8 minuutin keittovaiheesta. Jos valmistaja edellyttää liotusta, tee se kylmässä ja heitä vesi pois. Peitä kala uudella kylmällä vedellä, kuumenna kiehumispisteen tuntumaan ja kypsennä lähdeohjeen mukaan noin 8 minuuttia. Varmista, että kala kypsyy kauttaaltaan; vähintään **63 °C:n sisälämpö** on erillisen FDA-ohjeen kalan kypsyysraja.
+2. Sekoita itsestään kohoaviin jauhoihin curryjauhe. Lisää aluksi 375 ml vettä useassa erässä. Tarvittaessa lisää enintään 15 ml, jos taikina ei sekoitu tasaisesti. Taikinan pitää pysyä paksuna, ei valua vesimäisesti. **Älä korvaa self-raising-jauhoja tavallisten jauhojen ja leivinjauheen arvatulla seoksella.**
+3. Valuta ja käsittele kala ruodottomiksi, pieniksi hiutaleiksi. Lisää taikinaan suikaloidut kevätsipulit, siemenetön hienonnettu chili ja pienet paprikakuutiot sekä kalahiutaleet. Suolattua kalaa käyttäessä **lisäsuola tarvitsee erillisen suolaisuustarkistuksen**, eikä sille aseteta tässä grammapainoa.
+4. Kuumenna pannulle lähdeohjeen mukainen noin **0,5 cm öljykerros**. Laita pannuun pieniä, noin kahden ruokalusikan taikinakasoja ja paista erissä keskilämmöllä. Kääntele varovasti, kunnes reunat ja pinta ovat kypsät eikä sisällä ole raakaa jauhoista taikinaa. Kypsennetty taikina ja kala eivät saa jäädä raaoiksi.
+5. Nosta fritterit valumaan talouspaperille tai ritilälle ja tarjoa pian valmistuksen jälkeen. Paistamiseen käytetty **öljyn määrä ei ole sama asia kuin syöty rasvamäärä**. Kirjattu lähdeannos on 14–16 kappaletta.
 
-## Valmistus – testattava työohje
+## Lähdetäsmäytys
 
-1. Huuhtele kuivatun suolaturskan pinta. Liota kalaa peitettynä kylmässä vedessä **jääkaapissa** noin 8–12 tuntia, vaihda liotusvesi vähintään kahdesti ja kaada kaikki liotusvedet pois. Käytä tarvittaessa valmistajan pidempää suolanpoisto-ohjetta.
-2. Keitä liotettua kalaa puhtaassa vedessä hiljalleen noin 8–10 minuuttia tai kunnes se on kauttaaltaan kypsää. Kaada keitinvesi pois, jäähdytä käsittelylämpöön, poista nahka ja **kaikki ruodot** ja revi kala pieniksi hiutaleiksi. Kirjaa syötävän, valutetun kalan todellinen massa; 80 g on kuivan kalan lähtöpaino.
-3. Sekoita 140 g jauhoja ja 5 g leivinjauhetta. Vatkaa joukkoon ensin noin 150 g mitatusta taikinavedestä ja tarvittaessa loppu 30 g, kunnes taikina putoaa lusikasta paksuna nauhana. Kääntele sekaan kalahiutaleet, kevätsipuli, paprika ja chili; älä lisää suolaa ilman erillistä suolaisuuskatselmointia.
-4. Kuumenna tarttumattomalla pannulla osa enintään 20 g:sta paistoöljystä. Nosta taikinaa noin kahdeksaksi pieneksi lusikkafritteriksi ja kypsennä erissä keskilämmöllä molemmilta puolilta, kunnes sisus ei ole raakaa jauhoista taikinaa. Tarkista paksuimman fritterin keskeltä kalalle soveltuva vähintään **63 °C** kypsyys sekä rakenne. Lisää öljyä vain kirjattuun 20 g:n kokonaismäärään asti.
-5. Nosta fritterit valumaan, punnitse pannulle jäänyt öljy ja valmiin syötävän annoksen massa. Jaa kahteen annokseen ja tarjoa tuoreena. Älä väitä aikataulua 25 minuutiksi, sillä liotus tapahtuu edellisenä päivänä.
+- **Pääasiallinen lähde:** [Anthea Stephenson, Jamaican saltfish fritters, Good Food (2022)](https://www.bbcgoodfood.com/recipes/jamaican-saltfish-fritters), 160 g kalaa / 300 g self-raising flour / 375–390 ml vettä / noin 14–16 fritteriä. Paprikat ja mausteet ovat **kappale- ja ruokalusikkamittoja**, eivät laskennallisia grammoja.
+- **Kalaturvallisuus:** [FDA, Safe Food Handling](https://www.fda.gov/food/buy-store-serve-safe-food/safe-food-handling). FDA:n 63 °C on turvallisuuden vertailuraja, ei pääasiallisen kokin reseptissä ilmoitettu lämpötila.
+- Tämä FI-teksti on itsenäisesti muotoiltu lähteen menetelmävertailu, ei väite Recipavon omasta keittiötestistä eikä alkuperäisen tekstin kopio.
 
-## Menetelmävertailu ja avoin hyväksyntä
-
-- [BBC Good Food: Jamaican saltfish fritters / Anthea Stephenson](https://www.bbcgoodfood.com/recipes/jamaican-saltfish-fritters) – suolakalan esikypsennys, paksu taikina, lusikkafritterit ja paistaminen. Tässä annos on erillinen sovitus eikä BBC:n annoslaskelman kopio.
-- [Jamaicans.com: Saltfish Fritters – Stamp n' Go](https://jamaicans.com/sfritter/) – perinteinen suolanpoisto ja pannupaisto.
-- [FDA: Safe Food Handling](https://www.fda.gov/food/buy-store-serve-safe-food/safe-food-handling) – kalan kypsennyksen vertailuraja.
-
-**HOLD:** kuivatun suolakalan tuotemerkki, syötävän massan saanto, jäljelle jäävän suolan määrä, taikinan todellinen paksuus, öljyn imeytyminen, allergeenit (kala, vehnä) ja neljän ravintokentän lähteistetty laskenta puuttuvat. GK on määrittämätön. Ei kuvaa, käännöksiä eikä koepaistoväitettä. Ei tuotantojulkaisua.
+**Jäljellä HOLD:** suolatun turskan täsmätuote, valmistajan suolanpoisto ja jäljelle jäävä natrium; öljyn syöty massa/retentio; curry-, chili-, paprika- ja kevätsipulikappaleiden **tuote- ja syötävät grammamäärät**; itse kohoavan jauhon tuote- ja ravintoarvot; neljän makrokentän riippumaton laskenta; GK, kuva, FI-julkaisupäätös ja EN/SV/TH. Lähteen valmiita arvioituja makroja **ei** kopioida Recipavon neljään makrokenttään.

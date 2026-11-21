@@ -1,5 +1,5 @@
 ---
-title: "Malesialainen kuih seri muka – riisi- ja pandankerroksen koeversio"
+title: "Malesialainen kuih seri muka – Rasa Malaysia -lähteeseen sidottu FI-luonnos"
 recipe_id: malesialainen-kuih-seri-muka-punnittu-v2
 url_slug: malesialainen-kuih-seri-muka
 category: aamupala
@@ -8,72 +8,72 @@ status: draft
 main_ingredient: ["tahmariisi", "kookosmaito", "pandan"]
 cooking_method: ["liottaminen", "höyryttäminen", "munakastikkeen kypsentäminen"]
 ingredients:
-  - amount: 180
+  - amount: 300
     unit: g
-    item: kuivaa tahmariisiä (glutinous rice)
-  - amount: 130
-    unit: ml
-    item: kookosmaitoa riisikerrokseen
-  - amount: 70
-    unit: g
-    item: vettä riisikerrokseen
-  - amount: 2
-    unit: g
-    item: suolaa riisikerrokseen
-  - amount: 140
-    unit: ml
-    item: kookosmaitoa pandankastikkeeseen
-  - amount: 15
-    unit: g
-    item: puhtaita syötäväksi tarkoitettuja pandanlehtiä uuttoon
-  - amount: 80
-    unit: g
-    item: vettä pandanlehtien uuttoon
+    item: kuivaa tahmariisiä, riisikerrokseen
   - amount: 100
+    unit: ml
+    item: ohuehkoa kookosmaitoa, riisikerrokseen
+  - amount: 100
+    unit: ml
+    item: vettä riisikerrokseen
+  - amount: 1
+    unit: tl
+    item: suolaa riisikerrokseen
+  - amount: 2
+    unit: kpl
+    item: puhdasta pandanlehteä riisikerroksen tuoksuksi
+    note: "valinnainen lähteen mukaan; poistetaan ennen syömistä"
+  - amount: 200
+    unit: ml
+    item: paksua kookosmaitoa tai kookoskermaa munakerrokseen
+  - amount: 2
+    unit: kpl
+    item: suurta kananmunaa, syötävä sisältö
+  - amount: 2
+    unit: kpl
+    item: kananmunan keltuaista, syötävä sisältö
+  - amount: 170
     unit: g
-    item: kananmunaa ilman kuorta
-  - amount: 80
-    unit: g
-    item: sokeria
-  - amount: 25
-    unit: g
-    item: vehnäjauhoja pandankastikkeeseen
-  - amount: 12
-    unit: g
-    item: maissitärkkelystä pandankastikkeeseen
-servings: 4
+    item: sokeria munakerrokseen
+  - amount: 100
+    unit: ml
+    item: tuoretta siivilöityä pandanmehua (8–10 pandanlehden uute)
+  - amount: 5
+    unit: rkl
+    item: vehnäjauhoa kastikekerrokseen
+  - amount: 2
+    unit: rkl
+    item: maissitärkkelystä kastikekerrokseen
+servings: 20
 time_total_min: null
-difficulty: "Vaativa (kaksi kerrosta)"
-tags: ["aamupala"]
+difficulty: "keskitaso"
+tags: ["aamupala", "malesialainen"]
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 ---
 
-# Kuih seri muka – punnittu kahden kerroksen koeversio
+# Kuih seri muka – kaksikerroksinen pandan- ja tahmariisikakku
 
-**DRAFT / HOLD.** Riisikerroksen ja pandanilla värjätyn munakookoskastikkeen määrät ovat neljän pienen annoksen kotieräksi sovitettu **koe-ehdotus**. Yhtään koehöyrytystä, pandanmehun saantomittausta tai ravintolaskennan hyväksyntää ei ole tehty. Alkuperäisen `malesialainen-kuih-seri-muka`-reseptin 150 g määrittelemätöntä pandania tai 25 minuutin kokonaisaikaa ei käytetä.
+**DRAFT / HOLD.** Nämä ovat [Rasa Malaysia -julkaisun](https://rasamalaysia.com/seri-muka/) koko erän mitat ja kahden höyrytysvaiheen menetelmä, eivät Recipavossa itsenäisesti testatun neljän annoksen sovitus. **20 tarkoittaa pieniä leivoskappaleita, ei ateria-annoksia.** Alkuperäisen kirjoituksen tekijä on Bee Yinn Low, ja reseptin hänelle toimitti Siew Loon. Vanhat 180 g riisi / 140 ml kerma / 100 g muna -suhteet eivät periydy tähän lähdeversioon.
 
-## Ainekset
+## Valmistus
 
-Yllä mitatut ainekset on jaettu selvästi riisi- ja kastikekerrokseen. 15 g pandanlehtiä on **uuton lähtöpaino**, ei syötävän kastikkeen 15 g pandanmassaa. Lehtisose siivilöidään pois; lopullinen, syötäväksi käytetty uuteneste punnitaan, ja ehdotettu **tavoite on 60 g** enintään 80 g:sta uuttovettä. Pandanlehden saantovaihtelu estää vielä ravinto-/massahyväksynnän.
+1. Huuhtele 300 g tahmariisiä. Alkuperäinen resepti liottaa sitä 30 minuuttia, mutta pidempään liotettaessa käytä jääkaappia. Valuta. Varaa noin **20 × 20 cm** lämpöä kestävä höyrytysvuoka; jos vuoka on erilainen, paksuus ja kypsennysaika muuttuvat.
+2. Sekoita riisi, **100 ml kookosmaitoa, 100 ml vettä ja 1 tl suolaa**. Lisää halutessasi 2 puhdasta pandanlehteä tuoksua antamaan. Levitä vuokaan ja höyrytä reilulla höyryllä **noin 20 minuuttia**. Poista kokonaiset lehdet ja painele riisikerros tasaiseksi ennen päällimmäisen kerroksen lisäämistä.
+3. Valmista **100 ml siivilöityä pandanmehua** elintarvikekäyttöön tarkoitetuista lehdistä; lähde käyttää 8–10 lehteä. Lehtien kuitumassa **ei** ole syötävää 100 ml mehua. Mehun todellinen saanto ja koostumus ovat erillisen ravintomallin tarkistuskohta.
+4. Vatkaa **2 suurta kananmunaa ja 2 ylimääräistä keltuaista** yhdessä 170 g sokerin, 200 ml paksun kookosmaidon, pandanmehun, 5 rkl vehnäjauhon ja 2 rkl maissitärkkelyksen kanssa. Lämmitä seosta vesihauteessa varovasti koko ajan sekoittaen, kunnes se paksuuntuu hieman mutta on edelleen kaadettavaa.
+5. Siivilöi lämmin munakookosseos tiivistetyn riisikerroksen päälle. Höyrytä **keskilämmöllä noin 30 minuuttia**, kunnes munaseos on kauttaaltaan hyytynyt. Muna- ja kastikeruoan turvallinen sisälämpö on vähintään **71 °C**; älä päättele kypsyyttä vain minuuteista.
+6. Kypsää riisiä sisältävää leivosta **ei saa jättää tuntikausiksi jäähtymään huoneenlämpöön**. Jaa tai sijoita vuoka turvalliseen kylmävesihauteeseen ja siirrä jääkaappiin **mieluiten tunnin kuluessa**, jääkaappilämpö enintään **5 °C**. Anna asettua kylmässä ja leikkaa vasta sitten noin 20 pieneen palaan. Riisitähteet syödään mieluiten 24 tunnissa, niitä ei lämmitetä uudelleen useita kertoja.
 
-## Valmistus – testattava työohje
+## Lähteen ja tämän version ero
 
-1. Huuhtele 180 g kuivaa tahmariisiä ja liota sitä runsaassa puhtaassa vedessä **vähintään 4 tuntia jääkaapissa (enintään 4 °C)**; valuta liotusvesi huolellisesti pois. Valmistele pieni noin 15 cm:n lämpöä kestävä vuoka leivinpaperilla. Erillistä voitelurasvaa ei lisätä.
-2. Sekoita riisiin 130 ml kookosmaitoa, 70 g vettä ja 2 g suolaa. Levitä seos vuokaan. Höyrytä kannen alla noin **25–30 minuuttia**, kunnes riisi on kauttaaltaan kypsää ja kosteutta on imeytynyt. Paina riisi tasaiseksi tiiviiksi pohjaksi. Jos riisi ei kypsy ehdotetussa ajassa, kirjaa todellinen aika; raakaa riisiä ei saa jättää keskelle.
-3. Pese 15 g syötäväksi tarkoitettuja pandanlehtiä, paloittele ja hienonna 80 g:n puhtaan veden kanssa. Siivilöi huolellisesti pois lehtimassa. Punnitse talteen noin 60 g syntyvää pandanmehua; jos uuttosaanto jää vajaaksi, dokumentoi muutos ennen jatkokäyttöä. Älä korvaa uuttomehua väriaineella tai keinotekoisella pandan-aromilla ilman uuden reseptiversion kirjausta.
-4. Vatkaa 100 g kuoretonta kananmunaa ja 80 g sokeria, lisää kastikekerroksen 140 ml kookosmaitoa, koko punnittu pandanmehu, 25 g vehnäjauhoa ja 12 g maissitärkkelystä. Sekoita tasaiseksi, siivilöi ja lämmitä miedolla lämmöllä sekoittaen, kunnes seos juuri hieman paksuuntuu, mutta on kaadettavaa.
-5. Kaada kastike kuuman riisikerroksen päälle. Höyrytä **miedolla** tasaisella höyryllä noin **25–30 minuuttia**, kunnes pinta on kauttaaltaan hyytynyt ja kastike kypsä myös keskeltä. Vältä kannesta tippuvaa vettä. Munaa sisältävä kastike on kypsennettävä kauttaaltaan; koetilanteessa mittaa munaseoksen turvallinen sisälämpö (vähintään **71 °C**).
-6. Kun kypsyys on varmistettu, **älä jätä riisiä ja munakastiketta sisältävää valmista leivosta huoneenlämpöön tunneiksi jähmettymään**. Jäähdytä annos nopeasti esimerkiksi kylmävesihauteessa ja siirrä peitettynä jääkaappiin **mieluiten tunnin kuluessa**; seuraa, että jääkaappi on enintään **5 °C**. Anna kerrosten hyytyä jääkaapissa, leikkaa vasta kunnolla jäähtyneenä ja tarjoa kylmänä tai turvallisesti uudelleen kuumennettuna. Jos jäähdytys ei onnistu nopeasti, erä jää HOLDiin eikä pitkä huoneenlämpöjäähdytys ole hyväksyttävä työvaihe. Punnitse nettosaanto ja kirjaa kypsennys, jäähdytys, uuttosaanto, pala-/annoskoko ja rakenne. Neljän annoksen saantoa ei ole koekeittiössä varmennettu.
+- [Rasa Malaysia, Bee Yinn Low / Siew Loon: Seri Muka](https://rasamalaysia.com/seri-muka/): **300 g riisiä**, **100 ml kookosmaitoa + 100 ml vettä**, **200 ml paksua kookosmaitoa**, **2 kokonaista munaa + 2 keltuaista**, **170 g sokeria**, **100 ml pandanmehua**, **5 rkl jauhoja**, **2 rkl maissitärkkelystä** ja **20 + 30 min höyrytys**. Kirjoittaja on erikseen huomauttanut, ettei munien määrää kannata muuttaa, koska rakenne muuttuu.
+- [Foodsafety.gov: Safe Minimum Internal Temperatures](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures) – munaruoan 71 °C.
+- [UK Food Standards Agency: Riisin jäähdytys](https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker) – nopea jäähdytys ja yhden päivän kylmäsäilytys.
+- [Food Standards Australia New Zealand: Bacillus cereus in food](https://www.foodstandards.gov.au/consumer/prevention-of-foodborne-illness/bacteria-foodborne-illness/bacillus-cereus) – kypsän riisin säilytyksen ja itiöiden hallinnan lähde.
+- **Toimituksellinen lisäys** ovat elintarviketurvallisuuden jäähdytys- ja kypsennysmuistutukset; ne eivät ole väite lähdekirjoittajan laboratoriomittauksista tai Recipavon koekeittiöstä.
 
-## Menetelmävertailu
-
-- [Rasa Malaysia: Seri Muka / Bee Yinn Low](https://rasamalaysia.com/seri-muka/) – riisin höyrytys, tiivistäminen, pandan–kookos–munakerros ja toinen höyrytys.
-- [Lisa's Lemony Kitchen: Pandan Custard Glutinous Rice Layers](https://www.mykeuken.com/2016/10/pandan-custard-glutinous-rice-layers.html) – punnittu pandanlehtiuutto ja kerrosten erottaminen.
-- [Foodsafety.gov: munaruoat 71 °C](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures) – munaseoksen turvallisen kypsennyksen vertailulämpö.
-- [UK Government / Food Standards Agency: Home food fact checker (riisin jäähdytys)](https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker) – kypsän riisin nopea jäähdytys mieluiten tunnissa ja kylmäsäilytys.
-- [Food Standards Australia New Zealand: Bacillus cereus in food](https://www.foodstandards.gov.au/consumer/prevention-of-foodborne-illness/bacteria-foodborne-illness/bacillus-cereus) – itiöt ja mahdolliset toksiinit eivät välttämättä tuhoudu kuumennuksessa.
-
-**HOLD:** pandanlehden elintarvikekelpoisuus ja uuttosaanto, kookosmaidon tuotespesifikaatio, munamassan tarkistus, todelliset kypsennysajat ja **nopeasti todennettu kylmäjäähdytys**, 4 annoksen todellinen koko, tärkkelys- ja kuitu-/polyolitietueet, allergeenit (kananmuna, vehnä), ravinto-/GK-laskenta ja kuvan vastaavuus. Ei koehöyrytystä, käännöksiä eikä julkaisemista.
+**HOLD:** 20 palan syötävä kappalepaino, kokonaisten munien ja kahden keltuaisen syötävä grammamäärä, lusikkamittojen tuotegrammat, kookosmaidon koostumus, pandanmehun uuttosaanto, neljä hyväksyttyä makroarvoa, GK, kuva ja kieliversiot. **Alkuperäisen 20 palan lähdesaanto ei ole neljä täyttä ateria-annosta.** Ei tuotantojulkaisua.

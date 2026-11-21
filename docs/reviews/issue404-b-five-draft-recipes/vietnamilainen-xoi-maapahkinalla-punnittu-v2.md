@@ -1,66 +1,55 @@
 ---
-title: "Vietnamilainen xôi đậu phộng – maapähkinäinen tahmariisi, koeversio"
+title: "Vietnamilainen xôi đậu phộng – riisikeittimellä valmistettava lähdeversio"
 recipe_id: vietnamilainen-xoi-maapahkinalla-punnittu-v2
 url_slug: vietnamilainen-xoi-maapahkinalla
 category: aamupala
 language: fi
 status: draft
-main_ingredient: ["tahmariisi", "maapähkinä", "seesami"]
-cooking_method: ["liottaminen", "keittäminen", "höyryttäminen"]
+main_ingredient: ["tahmariisi", "maapähkinä", "kookosmaito"]
+cooking_method: ["maapähkinöiden keittäminen", "riisikeitin"]
 ingredients:
-  - amount: 180
+  - amount: 200
     unit: g
-    item: kuivaa tahmariisiä
-  - amount: 65
+    item: kuivaa tahmariisiä (glutinous rice)
+  - amount: 100
     unit: g
-    item: raakoja syötäviksi tarkoitettuja maapähkinöitä
-  - amount: 60
+    item: kuivia kuorittuja raakoja maapähkinöitä
+  - amount: 160
     unit: ml
-    item: kookosmaitoa höyrytyksen loppuvaiheeseen
-  - amount: 12
+    item: puhdasta vettä riisikeittimeen
+  - amount: 20
     unit: g
-    item: seesaminsiemeniä paahdettavaksi
-  - amount: 25
-    unit: g
-    item: tuoretta tai pakastettua hienoa kookosraastetta
-  - amount: 12
-    unit: g
-    item: sokeria pintaan
-  - amount: 2
-    unit: g
-    item: suolaa riisiin ja pintaan
-servings: 2
+    item: makeuttamatonta kookosmaitoa
+  - amount: null
+    unit: tl
+    item: suolaa
+    note: "lähteen työohjeessa 1/3 tl pähkinäveteen ja 1/3 tl riisiin, mutta ainesluettelossa määrä puuttuu"
+servings: 4
 time_total_min: null
-difficulty: "Keskitaso"
-tags: ["aamupala"]
+difficulty: "helppo"
+tags: ["aamupala", "vietnamilainen"]
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 ---
 
-# Xôi đậu phộng – maapähkinätahmariisi, punnittu koeversio
+# Xôi đậu phộng – vietnamilainen maapähkinätahmariisi
 
-**DRAFT / HOLD.** Tämä on kaksi annosta tavoitteleva, vietnamilaisten xôi đậu phộng -menetelmien pohjalta sovitettu FI-luonnos. Reseptiä ei ole fyysisesti testattu, eikä kypsän riisin/maapähkinän massaa tai ravintoaineiden säilymistä ole mitattu. Alkuperäisen `vietnamilainen-xoi-maapahkinalla`-ohjeen epäselvää 100 g riisi + 100 g maapähkinä + 100 g seesami -suhdetta ja 25 minuutin kokonaisaikaa ei hyväksytä.
+**DRAFT / HOLD.** Tämä on VNIFoodin julkaisemaan **riisikeitinmenetelmään** sidottu FI-luonnos. Lähteen 200 g tahmariisi / 100 g kuiva maapähkinä / 160 ml vesi korvaa aiemman 180 g / 65 g / höyrytys -sovituksen. Lähteessä ei kerrota annoslukua; **neljä pientä annosta on toimituksellinen jakoehdotus**, ei tekijän ilmoittama saanto eikä Recipavon valmistuskoe. Vanhat 12 g seesami, 12 g sokeri ja 25 g kookosraaste **eivät kuulu tähän lähdeversioon**, joten niitä ei pidä periä sen ravintoarvioon.
 
-## Ainekset
+## Valmistus
 
-Luettelon 180 g riisiä ja 65 g maapähkinöitä ovat **kuivapainoja**. Liotus-, keitto- ja höyrytysastiaan käytetyt vesimäärät eivät jää syötäväksi samanarvoisina; kirjaa aina sekä kuivat että kypsät/valutetut massat. Kookosraaste 25 g on syötävää tuotetta ilman kuoria. 60 ml kookosmaitoa lisätään mitattuna, eikä sitä korvata paistoöljyllä.
+1. Huuhtele 200 g tahmariisiä ja valuta. Pese 100 g kuivia kuorittuja maapähkinöitä. Valmista erillinen kattila niiden esikeittämiseen. Noudata maapähkinäpakkauksen tuotekohtaisia käsittely- ja kypsennysohjeita.
+2. Kiehauta maapähkinät puhtaassa vedessä ja keitä **lähteen mukaan noin 15 minuuttia**; tarkista pehmeys ja jatka kypsentämistä, jos pähkinät ovat vielä kovia. Lähde lisää veteen 1/3 tl suolaa, mutta ei ilmoita suolan kokonaismäärää ainesluettelossa. Valuta ja heitä keitinvesi pois.
+3. Lisää huuhdeltu tahmariisi riisikeittimeen sekä **160 ml tuoretta vettä**. Lähde lisää 1/3 tl suolaa myös riisiin; se on dokumentoitu tähän lähteen menetelmätietona, ei punnittuna suolan ravintosyötteenä. Ripottele esikeitetyt maapähkinät riisin päälle. Käynnistä laitteen valmistajan tahmariisille sopiva **COOK**-ohjelma.
+4. Kun laite siirtyy **WARM**-tilaan, lisää joukkoon kookosmaito ja sekoita. **Tässä ehdokkaassa 20 g kookosmaitoa punnitaan** ainesluettelon mukaisesti. Julkaistun ohjeen työvaiheessa puhutaan 20 millilitrasta, joten massa- ja tilavuusero on dokumentoitu, ei salattu. Käynnistä COOK uudelleen, jos riisikeittimen ohje sallii uuden jakson. Tarjoa vasta, kun riisi ja pähkinät ovat kauttaaltaan kypsiä.
+5. Tarjoa heti kuumana. Kypsässä riisissä voi kasvaa **Bacillus cereus**: jos sitä jää yli, jaa mataliin astioihin, jäähdytä nopeasti **mieluiten tunnin kuluessa** ja säilytä jääkaapissa enintään **5 °C:ssa**. Syö riisitähteet **24 tunnissa** ja kuumenna tarvittaessa kauttaaltaan höyryävän kuumaksi **vain kerran**. Pitkään huoneenlämmössä seissyttä riisiä ei pidä pelastaa kuumentamalla.
 
-## Valmistus – testattava työohje
+## Lähdepäätös
 
-1. Huuhtele 180 g tahmariisiä. Liota runsaassa puhtaassa vedessä **4–8 tuntia jääkaapissa, enintään 4 °C:ssa**, tai yön yli kylmässä. Huuhtele 65 g raakoja maapähkinöitä ja liota niitä erillisessä vedessä jääkaapissa mahdollisuuksien mukaan yön yli; kaada molemmat liotusvedet pois. Tarkista pähkinöiden kunto ja tuotepakkaus, älä käytä homeelta tai pilaantuneelta vaikuttavia pähkinöitä.
-2. Keitä liotettuja maapähkinöitä puhtaassa vedessä noin **25–40 minuuttia tai kauemmin tarvittaessa**, kunnes ne ovat pehmeitä ja läpikypsiä. Valuta ja punnitse syötävä kypsä pähkinämassa. Jos raakapähkinöiden keittovaatimus poikkeaa, noudata valmistajan ohjetta.
-3. Valuta riisi tarkasti ja sekoita siihen noin 1,5 g luettelon 2 g:sta suolaa sekä pehmeät maapähkinät. Levitä seos tasaisesti höyrytysritilälle puhtaan höyrytysliinan päälle; jätä höyrylle kulkuaukko. Höyrytä kiehuvan veden yläpuolella noin **20 minuuttia**, kääntele varovasti ja jatka **10–20 minuuttia** tai kunnes jokainen riisinjyvä on pehmeä ja läpikypsä.
-4. Lisää tai valuta 60 ml kookosmaitoa vähitellen kuuman riisin joukkoon höyrytyksen viimeisen 10 minuutin aikana; tarkista, että kaikki maito imeytyy ja seos on kauttaaltaan kuuma. Älä sekoita liotusvettä valmiiseen annokseen. Punnitse kypsä kokonaismassa.
-5. Paahda 12 g seesaminsiemeniä kuivalla pannulla kevyesti tuoksuviksi ja jäähdytä. Sekoita seesamin joukkoon 12 g sokeria ja jäljelle jäävä 0,5 g suolaa. Jaa valmis tahmariisi-maapähkinäseos kahdelle, ripottele päälle koko seesamiseos sekä yhteensä 25 g syötävää kookosraastetta. Tarjoa heti lämpimänä ja kirjaa todellinen saanto sekä rakenne. **Älä jätä kypsää tahmariisiä huoneenlämpöön**: jos sitä jää, jaa tähteet pieniin mataliin astioihin, jäähdytä nopeasti **mieluiten tunnin kuluessa** ja siirrä jääkaappiin, jonka lämpötila on enintään **5 °C**. Kuumenna jääkaapista otettu riisi tarvittaessa höyryävän kuumaksi kauttaaltaan **vain kerran**. Huoneenlämmössä pitkään säilytettyä riisiä ei pelasteta uudelleenkuumennuksella.
+- [VNIFood: Sticky Rice with Peanuts (Using Electric Rice Cooker)](https://vnifood.com/recipe/sticky-rice-with-peanuts/) ilmoittaa 200 g riisiä, 100 g maapähkinöitä, 20 g kookosmaitoa ja 160 ml vettä. Menetelmä on riisikeittimen **kaksivaiheinen COOK**, ei 50 minuutin höyrytys. Sama lähde käyttää kookosmaidosta 20 g ainesluettelossa mutta 20 ml työohjeessa, ja kahta 1/3 tl suolalisäystä, vaikka suolaa ei ole numeroitu ainesluettelossa. Näitä epäselvyyksiä ei saa esittää varmoina grammoina.
+- [UK Food Standards Agency: riisin käsittely, Home Food Fact Checker](https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker) – nopea jäähdytys, kylmäsäilytys, enintään yksi uudelleenkuumennus.
+- [FSANZ: Bacillus cereus](https://www.foodstandards.gov.au/consumer/prevention-of-foodborne-illness/bacteria-foodborne-illness/bacillus-cereus) – kypsän riisin turvallinen käsittely.
 
-## Menetelmävertailu
-
-- [La Vie Partagée: Peanut Sticky Rice / Xôi Đậu Phộng](https://laviepartagee.com/2016/12/13/peanut-sticky-rice-xoi-dau-phong/) – riisin ja maapähkinöiden liotus, pähkinöiden esikeittäminen, höyrytys ja seesamipinta.
-- [Diễm Nauy: Xôi Đậu Phộng (videon reseptikuvaus)](https://www.youtube.com/watch?v=7b83hesB19Q) – punnittu riisi/maapähkinä ja kaksi kypsennysmenetelmää. Tämä luonnos ei jäljennä videon tekstiä.
-- [Petitchef: Xoi Dau Phong](https://en.petitchef.com/recipes/main-dish/peanut-sticky-rice-xoi-dau-phong-fid-646111) – kookos ja pähkinä-/seesamipinta.
-- [UK Government / Food Standards Agency: Home food fact checker](https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker) – kypsä riisi nopeasti kylmään, ihannetapauksessa tunnissa, uudelleenkuumennus enintään kerran.
-- [Food Standards Australia New Zealand: Bacillus cereus in food](https://www.foodstandards.gov.au/consumer/prevention-of-foodborne-illness/bacteria-foodborne-illness/bacillus-cereus) – kypsien tärkkelyspitoisten ruokien jäähdytys ja säilytys.
-
-**HOLD:** maapähkinän ja riisin täsmätuote, raaka/kypsä saanto, kookosmaidon imeytyminen, kypsennys- ja liotusajan sekä **jääkaappijäähdytyksen kokeellinen tarkistus**, allergeenit (maapähkinä, seesami), neljä ravintokenttää, GK ja kuvan annosvastaavuus. Ei koekeittiö- tai käännöshyväksyntää eikä julkaisua.
+**HOLD:** riisikeittimen todellinen ohjelma ja riisin laitekohtainen vesitarve, maapähkinän täsmätuote ja syötävä kypsä massa, kookosmaidon g/ml-ero, suolan tarkka syötävä määrä, annoksen ja kookosmaidon retentio, neljän makron hyväksytty laskenta, GK, kuva ja kieliversiot. Resepti on kuitenkin **julkaistun ensisijaisen lähteen mittoihin ja riisikeitinmenetelmään sidottu**, ei enää omasta höyrytys- ja pähkinäsuhteesta päätelty.
