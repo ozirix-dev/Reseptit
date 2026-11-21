@@ -65,6 +65,6 @@ Aja site-hakemistosta:
     npm run build
     npm run test:static
 
-Yksikkötestissä D1 ja Siteverify korvataan synteettisillä vasteilla; se ei todista oikean Cloudflare-tilin liitoksia tai tuotannon tietosuojahyväksyntää. Julkista AI:ta tai uutta maksettua mallipalvelua ei käynnistetä.
+API:n yksikkötesteissä D1 ja Siteverify korvataan synteettisillä vasteilla. Lisäksi feedback-d1-integration.test.ts käyttää oikeaa SQLite-muistitietokantaa, suorittaa molemmat D1-migraatiot ja testaa vastaanotto/siivous/poisto-ketjun todellisilla SQL-kyselyillä. Tämäkään ei todista oikean Cloudflare D1-/Worker-tilin liitoksia, Cron-ajastusta, WAFia tai tuotannon tietosuojahyväksyntää. Julkista AI:ta tai uutta maksettua mallipalvelua ei käynnistetä.
 
 Lähdeohjeet: [Pages Functions](https://developers.cloudflare.com/pages/functions/get-started/), [D1 Bindings](https://developers.cloudflare.com/pages/functions/bindings/), [Turnstile Siteverify](https://developers.cloudflare.com/turnstile/get-started/server-side-validation/).
