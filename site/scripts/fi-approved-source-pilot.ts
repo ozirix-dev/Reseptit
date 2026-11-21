@@ -9,7 +9,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
-import { evaluateBatchEntry, type BatchEntry, type Locale } from "./translation-batch-partition";
+import { evaluateBatchEntry, type BatchEntry } from "./translation-batch-partition";
 import { fiSourceQualityDecision, fiSourceQualitySchema, type FiSourceQualityEvidence } from "./translation-fi-source-quality";
 import { loadSemanticEvidence, semanticHash, semanticStatus } from "./translation-semantic-review";
 import type { TranslationAuditResult } from "./translation-audit";
