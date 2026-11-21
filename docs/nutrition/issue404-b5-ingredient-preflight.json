@@ -406,11 +406,25 @@
           "amount": 300,
           "unit": "g",
           "item": "kuivaa tahmariisiä, riisikerrokseen",
-          "reasonCode": "MISSING_EXACT_FOOD",
-          "reason": "Tahmariisin (glutinous rice) raakatietue puuttuu; pitkäjyväinen jasmiiniriisi ei ole sama.",
+          "reasonCode": "EXACT_FOOD_SOURCE_REUSE_HOLD",
+          "reason": "Mahidol University Thai Food Composition Database code A22 identifies raw polished glutinous rice (CHOAVLDF available carbohydrate and FIBTG fibre, not ordinary rice). Source does NOT report polyols and its terms restrict commercial reuse: research comparison only, no published nutrition record or four macros until permitted use, verified polyols and recipe-specific retention.",
           "candidateRecord": {
             "calculationPath": "docs/nutrition/calculations/karibia-kookosriisi-pavuilla.json",
             "recordId": "fineli-11521-release-20"
+          },
+          "comparatorOnly": true,
+          "externalEvidence": {
+            "authority": "Institute of Nutrition, Mahidol University, Thailand",
+            "foodCode": "A22",
+            "foodName": "Rice, glutinous, polished, raw",
+            "url": "https://inmu.mahidol.ac.th/thaifcd/foodsearch/food_name_result_std_pdf/?dbcode=STD&food_id=148",
+            "datasetContext": "Thai Food Composition Database, source record dated 2015; site online v3 August 2025",
+            "analyticalSemantics": "CHOAVLDF calculated available carbohydrate by difference; FIBTG analysed dietary fibre; POLYL not reported",
+            "rightsUrl": "https://inmu.mahidol.ac.th/thaifcd/",
+            "rightsStatus": "NONCOMMERCIAL_ACCESS_ONLY_COMMERCIAL_REUSE_PERMISSION_UNCONFIRMED",
+            "polyolsStatus": "NOT_REPORTED",
+            "approval": "RESEARCH_REFERENCE_ONLY_NOT_FOOD_RECORD",
+            "exactFoodMatch": true
           }
         },
         {
@@ -550,11 +564,25 @@
           "amount": 200,
           "unit": "g",
           "item": "kuivaa tahmariisiä (glutinous rice)",
-          "reasonCode": "MISSING_EXACT_FOOD",
-          "reason": "Tahmariisi ei vastaa riisin yleistä pitkäjyväistä AFCD F007682 -tietuetta; tarkka tärkkelys-/polyolilähde puuttuu.",
+          "reasonCode": "EXACT_FOOD_SOURCE_REUSE_HOLD",
+          "reason": "Mahidol University Thai Food Composition Database code A22 identifies raw polished glutinous rice (CHOAVLDF available carbohydrate and FIBTG fibre, not ordinary rice). Source does NOT report polyols and its terms restrict commercial reuse: research comparison only, no published nutrition record or four macros until permitted use, verified polyols and recipe-specific retention.",
           "candidateRecord": {
             "calculationPath": "docs/nutrition/calculations/congee-riisipuuro.json",
             "recordId": "afcd-F007682-release-3"
+          },
+          "comparatorOnly": true,
+          "externalEvidence": {
+            "authority": "Institute of Nutrition, Mahidol University, Thailand",
+            "foodCode": "A22",
+            "foodName": "Rice, glutinous, polished, raw",
+            "url": "https://inmu.mahidol.ac.th/thaifcd/foodsearch/food_name_result_std_pdf/?dbcode=STD&food_id=148",
+            "datasetContext": "Thai Food Composition Database, source record dated 2015; site online v3 August 2025",
+            "analyticalSemantics": "CHOAVLDF calculated available carbohydrate by difference; FIBTG analysed dietary fibre; POLYL not reported",
+            "rightsUrl": "https://inmu.mahidol.ac.th/thaifcd/",
+            "rightsStatus": "NONCOMMERCIAL_ACCESS_ONLY_COMMERCIAL_REUSE_PERMISSION_UNCONFIRMED",
+            "polyolsStatus": "NOT_REPORTED",
+            "approval": "RESEARCH_REFERENCE_ONLY_NOT_FOOD_RECORD",
+            "exactFoodMatch": true
           }
         },
         {
@@ -567,6 +595,15 @@
           "candidateRecord": {
             "calculationPath": "docs/nutrition/calculations/indialainen-poha-maapahkinoilla.json",
             "recordId": "afcd-F006107-release-3"
+          },
+          "externalEvidence": {
+            "study": "Effect of Boiling and Roasting Treatments on the Nutrients, Lipid Quality, and Flavor of Peanuts (Zhang et al., 2024)",
+            "doi": "10.1002/fsn3.4509",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11606846/",
+            "studiedBoilingMinutes": 210,
+            "recipeSourceBoilingMinutes": 15,
+            "conclusion": "Study shows boiling changes water content and composition. Its 210-minute treatment is not interchangeable with this recipe's approximately 15-minute boiling.",
+            "retentionFactorApproved": false
           }
         },
         {
