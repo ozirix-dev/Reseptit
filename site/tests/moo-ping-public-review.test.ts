@@ -74,7 +74,7 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
     const end = tail.indexOf("\n## ");
     const before = (end < 0 ? tail : tail.slice(0, end)).trim();
     const correction = reviewedRecipeCopy(recipeId, locale)?.method;
-    assert.equal(correction?.length, 1, "only one documented correction");
+    assert.ok(correction && correction.length === 1, "only one documented correction");
     assert.equal(correction[0][0], before, "before-text is pinned to source instructions");
     assert.equal(applyCopyEdits(before, correction), correction[0][1]);
   });
