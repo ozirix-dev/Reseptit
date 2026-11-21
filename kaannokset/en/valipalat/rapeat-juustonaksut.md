@@ -4,7 +4,7 @@ recipe_id: rapeat-juustonaksut
 url_slug: rapeat-juustonaksut
 category: valipala
 language: en
-status: draft
+status: published
 servings: 4
 time_total_min: 25
 difficulty: Easy
