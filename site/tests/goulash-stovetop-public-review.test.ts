@@ -53,6 +53,12 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
     assert.equal(visible.timeTotalMin, null, "do not invent a missing total time");
     assert.equal(visible.instructionsText.length, 3);
     assert.match(visible.instructionsText.join(" "), stove[locale]);
+    assert.match(visible.notesHtml, {
+      fi: /Valmistustapa: haudutus liedellä kannellisessa padassa/,
+      en: /Cooking method: simmering on the stovetop in a covered pot/,
+      sv: /Tillagningssätt: sjudning på spisen i en gryta med lock/,
+      th: /วิธีปรุง: เคี่ยวบนเตาในหม้อปิดฝา/,
+    }[locale], "visible source-reviewed method note is required");
     assert.equal(visible.ingredients.length, source.ingredients.length);
     for (let index = 0; index < source.ingredients.length; index++) {
       assert.equal(visible.ingredients[index].amount, source.ingredients[index].amount);
