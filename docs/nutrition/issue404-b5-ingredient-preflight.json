@@ -1,0 +1,611 @@
+{
+  "asOf": "2026-11-21",
+  "basedOnMain": "b20cea7fc22519b156f4315e6238066a4543eda8",
+  "reviewerStatus": "AUTOMATED_CATALOGUE_TRIAGE_ONLY",
+  "scope": "Issue #404 B5 ingredient-level nutrition model preflight. Every candidate record is a non-approved reference; exact brand, state, processing retention, and verified carbohydrate/polyols remain separate gates.",
+  "publicationAuthorized": false,
+  "macrosAuthorized": false,
+  "recordsMayNotBeInferredFromName": true,
+  "recipes": [
+    {
+      "recipeId": "karibia-saltfish-fritterit-punnittu-v2",
+      "draftPath": "docs/reviews/issue404-b-five-draft-recipes/karibia-saltfish-fritterit-punnittu-v2.md",
+      "sourceGitBlobSha": "81545e328ec06555b814e6da50165b848581b401",
+      "status": "WITHHELD_SOURCE_INCOMPLETE",
+      "ingredients": [
+        {
+          "index": 0,
+          "amount": 160,
+          "unit": "g",
+          "item": "kuivaa suolattua turskaa, ennen suolanpoistoa",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Kuivattua suolattua turskaa ei saa korvata tuoreella turskalla: suolanpoiston saanto ja koostumus avoin."
+        },
+        {
+          "index": 1,
+          "amount": 300,
+          "unit": "g",
+          "item": "itsestään kohoavia vehnäjauhoja (self-raising flour)",
+          "reasonCode": "COMPOSITION_MISMATCH",
+          "reason": "Tavallinen vehnäjauho ei ole itsekohoavan jauhon täsmätuote.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+            "recordId": "fineli-110-release-20"
+          }
+        },
+        {
+          "index": 2,
+          "amount": 1,
+          "unit": "rkl",
+          "item": "keskivahvaa curryjauhetta",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Currysekoituksen tarkka koostumus ja rkl-grammapaino puuttuvat."
+        },
+        {
+          "index": 3,
+          "amount": 375,
+          "unit": "ml",
+          "item": "vettä taikinaan, tarvittaessa enintään 15 ml lisää",
+          "reasonCode": "ZERO_NUTRIENTS_WATER",
+          "reason": "Fineli 922 tukee veden makrojen nollaa; 375–390 ml ei ole lisäravinne.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+            "recordId": "fineli-922-release-20"
+          }
+        },
+        {
+          "index": 4,
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kevätsipulia, hienonnettuna",
+          "reasonCode": "UNIT_CONVERSION_PENDING",
+          "reason": "Kahden kevätsipulin syötävä grammapaino puuttuu.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/congee-riisipuuro.json",
+            "recordId": "afcd-F006250-release-3"
+          }
+        },
+        {
+          "index": 5,
+          "amount": 0.5,
+          "unit": "kpl",
+          "item": "suurta scotch bonnet -chiliä, siemenet poistettuna",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Scotch bonnet -chilin lajike ja puolikkaan hedelmän syötävä massa puuttuvat."
+        },
+        {
+          "index": 6,
+          "amount": 0.5,
+          "unit": "kpl",
+          "item": "punaista paprikaa",
+          "reasonCode": "UNIT_CONVERSION_PENDING",
+          "reason": "Puolikkaan punaisen paprikan syötävä grammapaino puuttuu."
+        },
+        {
+          "index": 7,
+          "amount": 0.5,
+          "unit": "kpl",
+          "item": "keltaista paprikaa",
+          "reasonCode": "UNIT_CONVERSION_PENDING",
+          "reason": "Puolikkaan keltaisen paprikan syötävä grammapaino puuttuu."
+        },
+        {
+          "index": 8,
+          "amount": 0.5,
+          "unit": "kpl",
+          "item": "vihreää paprikaa",
+          "reasonCode": "UNIT_CONVERSION_PENDING",
+          "reason": "Puolikkaan vihreän paprikan syötävä grammapaino puuttuu."
+        },
+        {
+          "index": 9,
+          "amount": null,
+          "unit": "g",
+          "item": "auringonkukkaöljyä paistamiseen",
+          "reasonCode": "OIL_ABSORPTION_PENDING",
+          "reason": "Paistamisen öljykerros ei osoita annoksiin imeytyvää auringonkukkaöljyä; määrä null."
+        }
+      ]
+    },
+    {
+      "recipeId": "intialainen-idli-kookoschutneylla-punnittu-v2",
+      "draftPath": "docs/reviews/issue404-b-five-draft-recipes/intialainen-idli-kookoschutneylla-punnittu-v2.md",
+      "sourceGitBlobSha": "e0137f33ad7c50713c6440fb6862eb35da3ceb47",
+      "status": "WITHHELD_SOURCE_INCOMPLETE",
+      "ingredients": [
+        {
+          "index": 0,
+          "amount": 2,
+          "unit": "kuppia",
+          "item": "kuivaa idli-riisiä, tai 1 kuppi parboiled-riisiä ja 1 kuppi tavallista riisiä",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Idli-/parboiled-riisin kuppi ei ole kuivaa valkoista pitkäjyväistä riisiä, massa puuttuu."
+        },
+        {
+          "index": 1,
+          "amount": 120,
+          "unit": "g",
+          "item": "kuivaa kuorittua urad-papua (noin 1/2 kuppia)",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Kuorittua urad-papua ei saa korvata kuivalla kokonaisella mungpavulla; erillinen urad-tietue tarvitaan."
+        },
+        {
+          "index": 2,
+          "amount": 20,
+          "unit": "g",
+          "item": "pohaa eli litistettyä riisiä (valinnainen lähteen mukaan)",
+          "reasonCode": "COMPOSITION_MISMATCH",
+          "reason": "Fineli 182 sisältää riisijauhon ja -hiutaleen, muttei täsmälleen lähteen pohaa; tuotevertailu kesken.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/indialainen-poha-maapahkinoilla.json",
+            "recordId": "fineli-182-release-20"
+          }
+        },
+        {
+          "index": 3,
+          "amount": 0.25,
+          "unit": "tl",
+          "item": "sarviapilansiemeniä idlitaikinaan (valinnainen)",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Sarviapilansiementen tarkka koostumus ja 0,25 tl grammapaino puuttuvat."
+        },
+        {
+          "index": 4,
+          "amount": 0.5,
+          "unit": "kuppia",
+          "item": "vettä uradin jauhamiseen, määrää säädettävä",
+          "reasonCode": "ZERO_NUTRIENTS_WATER",
+          "reason": "Jauhamisveden makrot ovat nolla; tarkka vesimäärä voi vaihdella.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+            "recordId": "fineli-922-release-20"
+          }
+        },
+        {
+          "index": 5,
+          "amount": 0.75,
+          "unit": "kuppia",
+          "item": "vettä riisin jauhamiseen, tarvittaessa enintään 1 kuppi",
+          "reasonCode": "ZERO_NUTRIENTS_WATER",
+          "reason": "Jauhamisveden makrot ovat nolla; tarkka vesimäärä voi vaihdella.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+            "recordId": "fineli-922-release-20"
+          }
+        },
+        {
+          "index": 6,
+          "amount": 1,
+          "unit": "tl",
+          "item": "elintarvikekäyttöön soveltuvaa kivi- tai merisuolaa idlitaikinaan",
+          "reasonCode": "SALT_MACROS_ONLY",
+          "reason": "Suolan energiamakrot ovat nolla, mutta 1 tl grammapaino ja fermentoinnin turvaprofiili avoimia.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+            "recordId": "fineli-30-release-20"
+          }
+        },
+        {
+          "index": 7,
+          "amount": null,
+          "unit": "g",
+          "item": "öljyä idlimuottien voiteluun",
+          "reasonCode": "OIL_ABSORPTION_PENDING",
+          "reason": "Idlimuotin öljyä ei ole punnittu eikä syötyä määrää osoitettu."
+        },
+        {
+          "index": 8,
+          "amount": 2,
+          "unit": "kuppia",
+          "item": "tuoretta kookosraastetta chutneyyn",
+          "reasonCode": "COMPOSITION_MISMATCH",
+          "reason": "Fineli 382 on kuivattu kookoshiutale, ei 2 kuppia tuoretta kookosraastetta.",
+          "candidateRecord": {
+            "catalogPath": "docs/nutrition/food-records.json",
+            "recordId": "fineli-382-2026-10-24"
+          }
+        },
+        {
+          "index": 9,
+          "amount": 2,
+          "unit": "rkl",
+          "item": "paahdettua chana dalia eli kikhernettä chutneyyn",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Valmiiksi paahdettu chana dal on eri tila kuin kuiva raakakikherne; 2 rkl grammoiksi tuntematon."
+        },
+        {
+          "index": 10,
+          "amount": 1,
+          "unit": "kpl",
+          "item": "vihreää chiliä chutneyyn",
+          "reasonCode": "UNIT_CONVERSION_PENDING",
+          "reason": "Vihreän chilin lajike ja kokonaisen kappaleen syötävä grammapaino puuttuvat.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/intialainen-pesarattu-mungpavuista.json",
+            "recordId": "afcd-F002896-release-3"
+          }
+        },
+        {
+          "index": 11,
+          "amount": null,
+          "unit": "g",
+          "item": "tuoretta inkivääriä chutneyyn",
+          "reasonCode": "UNIT_CONVERSION_PENDING",
+          "reason": "Tuoreen inkivääripalan syötävä grammapaino puuttuu.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/intialainen-pesarattu-mungpavuista.json",
+            "recordId": "afcd-F004213-release-3"
+          }
+        },
+        {
+          "index": 12,
+          "amount": null,
+          "unit": "g",
+          "item": "tamarindia chutneyyn",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Tamarindin tarkka tuote, vedetön/vesipitoinen tila ja syötävä määrä puuttuvat."
+        },
+        {
+          "index": 13,
+          "amount": 0.75,
+          "unit": "kuppia",
+          "item": "vettä kookoschutneyhin",
+          "reasonCode": "ZERO_NUTRIENTS_WATER",
+          "reason": "Kookoschutneyn veden makrot voidaan osoittaa nollaksi.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+            "recordId": "fineli-922-release-20"
+          }
+        },
+        {
+          "index": 14,
+          "amount": 2,
+          "unit": "rkl",
+          "item": "öljyä chutneyn temperointiin",
+          "reasonCode": "OIL_ABSORPTION_PENDING",
+          "reason": "Chutneyn temperointiöljyn tuote ja rkl-grammat puuttuvat; öljyä ei saa kuitata nollaksi."
+        },
+        {
+          "index": 15,
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kuivattua punaista chiliä temperointiin",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Kuivattu punainen chili eroaa raasta vihreästä chilistä; 2 kappaleen massa puuttuu."
+        },
+        {
+          "index": 16,
+          "amount": 2,
+          "unit": "tl",
+          "item": "kuivaa urad-papua temperointiin",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Kuiva urad temperointiin ei ole mungpapu; lusikkamitasta ja tuotegrammasta ei näyttöä."
+        },
+        {
+          "index": 17,
+          "amount": 2,
+          "unit": "tl",
+          "item": "sinapinsiemeniä temperointiin",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Sinapinsiemenet eivät vastaa valmista sinappitietuetta Fineli 28; 2 tl grammoiksi ratkaisematta.",
+          "candidateRecord": {
+            "catalogPath": "docs/nutrition/food-records.json",
+            "recordId": "fineli-28-release-20"
+          }
+        },
+        {
+          "index": 18,
+          "amount": null,
+          "unit": "g",
+          "item": "currylehtiä temperointiin",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Currylehtien kourallisen syötävä massa ja tuotevaihtoehto ratkaisematta."
+        }
+      ]
+    },
+    {
+      "recipeId": "intialainen-pesarattu-mungpavuista-punnittu-v2",
+      "draftPath": "docs/reviews/issue404-b-five-draft-recipes/intialainen-pesarattu-mungpavuista-punnittu-v2.md",
+      "sourceGitBlobSha": "7f2728a89744a3c8764772915db5b24d4758fc5c",
+      "status": "WITHHELD_SOURCE_INCOMPLETE",
+      "ingredients": [
+        {
+          "index": 0,
+          "amount": 150,
+          "unit": "g",
+          "item": "kuivattuja kokonaisia vihreitä mungpapuja, punnittuna kuivina",
+          "reasonCode": "PROCESSING_RETENTION_PENDING",
+          "reason": "Kuiva kokonainen mungpapu vastaa AFCD F000446 -lähtötilaa; keiton jälkeen ravintoretentio ja valutettu massa puuttuvat.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/intialainen-pesarattu-mungpavuista.json",
+            "recordId": "afcd-F000446-release-3"
+          }
+        },
+        {
+          "index": 1,
+          "amount": 25,
+          "unit": "g",
+          "item": "riisijauhoa",
+          "reasonCode": "PRODUCT_SPEC_PENDING",
+          "reason": "Fineli 182 sisältää riisijauhon, mutta ainesosan täsmätuote ja hiilihydraattikomponentti tarkistettava.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/indialainen-poha-maapahkinoilla.json",
+            "recordId": "fineli-182-release-20"
+          }
+        },
+        {
+          "index": 2,
+          "amount": 90,
+          "unit": "g",
+          "item": "vettä keitettyjen mungpapujen soseutukseen ja taikinaan",
+          "reasonCode": "ZERO_NUTRIENTS_WATER",
+          "reason": "90 g taikinaveden makrot ovat nolla, koska Fineli 922 on vesi.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+            "recordId": "fineli-922-release-20"
+          }
+        },
+        {
+          "index": 3,
+          "amount": 5,
+          "unit": "g",
+          "item": "kuorittua tuoretta inkivääriä",
+          "reasonCode": "PRODUCT_SPEC_PENDING",
+          "reason": "AFCD F004213 vastaa kuorittua tuoretta inkivääriä; lähde- ja tuotetäsmäys ennen laskentaa.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/intialainen-pesarattu-mungpavuista.json",
+            "recordId": "afcd-F004213-release-3"
+          }
+        },
+        {
+          "index": 4,
+          "amount": 4,
+          "unit": "g",
+          "item": "vihreää chiliä, hienonnettuna",
+          "reasonCode": "PRODUCT_SPEC_PENDING",
+          "reason": "AFCD F002896 vastaa tuoretta vihreää chiliä; tuotetäsmäys ennen laskentaa.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/intialainen-pesarattu-mungpavuista.json",
+            "recordId": "afcd-F002896-release-3"
+          }
+        },
+        {
+          "index": 5,
+          "amount": 2,
+          "unit": "g",
+          "item": "suolaa",
+          "reasonCode": "SALT_MACROS_ONLY",
+          "reason": "2 g ruokasuolaa: makrot nolla; natriumia ei arvioida näistä makroista.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+            "recordId": "fineli-30-release-20"
+          }
+        },
+        {
+          "index": 6,
+          "amount": 12,
+          "unit": "g",
+          "item": "rypsiöljyä pannulle koko erään",
+          "reasonCode": "OIL_ABSORPTION_PENDING",
+          "reason": "Rypsiöljylle löytyy Fineli 535, mutta paistamisen jälkeen pannulle jäävän ja ruoan mukana syödyn osuuden näyttö puuttuu.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+            "recordId": "fineli-535-release-20"
+          }
+        }
+      ]
+    },
+    {
+      "recipeId": "malesialainen-kuih-seri-muka-punnittu-v2",
+      "draftPath": "docs/reviews/issue404-b-five-draft-recipes/malesialainen-kuih-seri-muka-punnittu-v2.md",
+      "sourceGitBlobSha": "1cdedcd037a3d0fdbfeeecb47ea22ae57c309723",
+      "status": "WITHHELD_SOURCE_INCOMPLETE",
+      "ingredients": [
+        {
+          "index": 0,
+          "amount": 300,
+          "unit": "g",
+          "item": "kuivaa tahmariisiä, riisikerrokseen",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Tahmariisin (glutinous rice) raakatietue puuttuu; pitkäjyväinen jasmiiniriisi ei ole sama.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/karibia-kookosriisi-pavuilla.json",
+            "recordId": "fineli-11521-release-20"
+          }
+        },
+        {
+          "index": 1,
+          "amount": 100,
+          "unit": "ml",
+          "item": "ohuehkoa kookosmaitoa, riisikerrokseen",
+          "reasonCode": "COMPOSITION_MISMATCH",
+          "reason": "Ohut kookosmaito ei ole sama kuin tavallinen tölkkikookosmaito AFCD F002991; ml-grammat tuntemattomat.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/karibia-kookosriisi-pavuilla.json",
+            "recordId": "afcd-F002991-release-3"
+          }
+        },
+        {
+          "index": 2,
+          "amount": 100,
+          "unit": "ml",
+          "item": "vettä riisikerrokseen",
+          "reasonCode": "ZERO_NUTRIENTS_WATER",
+          "reason": "Riisikerroksen veden makrot ovat nolla.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+            "recordId": "fineli-922-release-20"
+          }
+        },
+        {
+          "index": 3,
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa riisikerrokseen",
+          "reasonCode": "SALT_MACROS_ONLY",
+          "reason": "Suolan makrot nolla, mutta 1 tl:n ravinto-/natriumpaino ja turvallisuuskäsittely ovat erillinen asia.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+            "recordId": "fineli-30-release-20"
+          }
+        },
+        {
+          "index": 4,
+          "amount": 2,
+          "unit": "kpl",
+          "item": "puhdasta pandanlehteä riisikerroksen tuoksuksi",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Pandanlehdet poistetaan mutta uuttuminen ei ole osoitettu; 2 lehden lähtömassaa ei voi käsitellä varmana nollana."
+        },
+        {
+          "index": 5,
+          "amount": 200,
+          "unit": "ml",
+          "item": "paksua kookosmaitoa tai kookoskermaa munakerrokseen",
+          "reasonCode": "COMPOSITION_MISMATCH",
+          "reason": "Paksu kookosmaito tai kerma ei ole sama tietue kuin säännöllinen tölkkikookosmaito.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/karibia-kookosriisi-pavuilla.json",
+            "recordId": "afcd-F002991-release-3"
+          }
+        },
+        {
+          "index": 6,
+          "amount": 2,
+          "unit": "kpl",
+          "item": "suurta kananmunaa, syötävä sisältö",
+          "reasonCode": "UNIT_CONVERSION_PENDING",
+          "reason": "Raakaa munaa vastaava Fineli 858 on ehdokas; 2 suuren munan syötävä paino puuttuu.",
+          "candidateRecord": {
+            "catalogPath": "docs/nutrition/food-records.json",
+            "recordId": "fineli-858-release-20"
+          }
+        },
+        {
+          "index": 7,
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kananmunan keltuaista, syötävä sisältö",
+          "reasonCode": "UNIT_CONVERSION_PENDING",
+          "reason": "Kananmunan keltuaista vastaava Fineli 851 on ehdokas; 2 keltuaisen syötävä massa puuttuu.",
+          "candidateRecord": {
+            "catalogPath": "docs/nutrition/food-records.json",
+            "recordId": "fineli-851-2026-10-24"
+          }
+        },
+        {
+          "index": 8,
+          "amount": 170,
+          "unit": "g",
+          "item": "sokeria munakerrokseen",
+          "reasonCode": "PRODUCT_SPEC_PENDING",
+          "reason": "Sokerille löytyy Fineli 1 ja tarkka 170 g määrä; täsmätuote arvioitava.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+            "recordId": "fineli-1-release-20"
+          }
+        },
+        {
+          "index": 9,
+          "amount": 100,
+          "unit": "ml",
+          "item": "tuoretta siivilöityä pandanmehua (8–10 pandanlehden uute)",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Pandanlehden siivilöity mehu ei ole sama kuin syötävä lehtimassa; 100 ml uuton koostumus ja massa puuttuvat."
+        },
+        {
+          "index": 10,
+          "amount": 5,
+          "unit": "rkl",
+          "item": "vehnäjauhoa kastikekerrokseen",
+          "reasonCode": "UNIT_CONVERSION_PENDING",
+          "reason": "Tavalliselle vehnäjauholle on Fineli 110, mutta 5 rkl:n g-muunnos puuttuu.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+            "recordId": "fineli-110-release-20"
+          }
+        },
+        {
+          "index": 11,
+          "amount": 2,
+          "unit": "rkl",
+          "item": "maissitärkkelystä kastikekerrokseen",
+          "reasonCode": "UNIT_CONVERSION_PENDING",
+          "reason": "Maissitärkkelykselle löytyy Fineli 27; 2 rkl:n g-muunnos puuttuu.",
+          "candidateRecord": {
+            "catalogPath": "docs/nutrition/food-records.json",
+            "recordId": "fineli-27-2026-10-25"
+          }
+        }
+      ]
+    },
+    {
+      "recipeId": "vietnamilainen-xoi-maapahkinalla-punnittu-v2",
+      "draftPath": "docs/reviews/issue404-b-five-draft-recipes/vietnamilainen-xoi-maapahkinalla-punnittu-v2.md",
+      "sourceGitBlobSha": "4bd8c9c74383a7881bb7b30a8d157795a9afce4b",
+      "status": "WITHHELD_SOURCE_INCOMPLETE",
+      "ingredients": [
+        {
+          "index": 0,
+          "amount": 200,
+          "unit": "g",
+          "item": "kuivaa tahmariisiä (glutinous rice)",
+          "reasonCode": "MISSING_EXACT_FOOD",
+          "reason": "Tahmariisi ei vastaa riisin yleistä pitkäjyväistä AFCD F007682 -tietuetta; tarkka tärkkelys-/polyolilähde puuttuu.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/congee-riisipuuro.json",
+            "recordId": "afcd-F007682-release-3"
+          }
+        },
+        {
+          "index": 1,
+          "amount": 100,
+          "unit": "g",
+          "item": "kuivia kuorittuja raakoja maapähkinöitä",
+          "reasonCode": "PROCESSING_RETENTION_PENDING",
+          "reason": "AFCD F006107 vastaa raakaa kuoretonta maapähkinäydintä kuorikalvoineen; keittämisen saanto/retentio puuttuvat.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/indialainen-poha-maapahkinoilla.json",
+            "recordId": "afcd-F006107-release-3"
+          }
+        },
+        {
+          "index": 2,
+          "amount": 160,
+          "unit": "ml",
+          "item": "puhdasta vettä riisikeittimeen",
+          "reasonCode": "ZERO_NUTRIENTS_WATER",
+          "reason": "Riisikeittimen veden makrot ovat nolla; määrä 160 ml.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+            "recordId": "fineli-922-release-20"
+          }
+        },
+        {
+          "index": 3,
+          "amount": 20,
+          "unit": "g",
+          "item": "makeuttamatonta kookosmaitoa",
+          "reasonCode": "PRODUCT_SPEC_PENDING",
+          "reason": "AFCD F002991 kuvaa tavallista tölkkikookosmaitoa; lähde ei yksilöi tuotetta eikä mahdollista 20 g / 20 ml ristiriitaa.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/karibia-kookosriisi-pavuilla.json",
+            "recordId": "afcd-F002991-release-3"
+          }
+        },
+        {
+          "index": 4,
+          "amount": null,
+          "unit": "tl",
+          "item": "suolaa",
+          "reasonCode": "SALT_MACROS_ONLY",
+          "reason": "Suolan makrot nolla, mutta lähteen aineslista ei anna punnittua määrää eikä natriumia voi julkaista.",
+          "candidateRecord": {
+            "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+            "recordId": "fineli-30-release-20"
+          }
+        }
+      ]
+    }
+  ]
+}
