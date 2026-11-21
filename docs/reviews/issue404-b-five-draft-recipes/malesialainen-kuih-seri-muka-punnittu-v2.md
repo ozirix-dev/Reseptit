@@ -41,7 +41,7 @@ ingredients:
   - amount: 12
     unit: g
     item: maissitärkkelystä pandankastikkeeseen
-servings: 2
+servings: 4
 time_total_min: null
 difficulty: "Vaativa (kaksi kerrosta)"
 tags: ["aamupala"]
@@ -53,7 +53,7 @@ fat_per_serving_g: null
 
 # Kuih seri muka – punnittu kahden kerroksen koeversio
 
-**DRAFT / HOLD.** Riisikerroksen ja pandanilla värjätyn munakookoskastikkeen määrät ovat pieneksi kotieräksi sovitettu **koe-ehdotus**. Yhtään koehöyrytystä, pandanmehun saantomittausta tai ravintolaskennan hyväksyntää ei ole tehty. Alkuperäisen `malesialainen-kuih-seri-muka`-reseptin 150 g määrittelemätöntä pandania tai 25 minuutin kokonaisaikaa ei käytetä.
+**DRAFT / HOLD.** Riisikerroksen ja pandanilla värjätyn munakookoskastikkeen määrät ovat neljän pienen annoksen kotieräksi sovitettu **koe-ehdotus**. Yhtään koehöyrytystä, pandanmehun saantomittausta tai ravintolaskennan hyväksyntää ei ole tehty. Alkuperäisen `malesialainen-kuih-seri-muka`-reseptin 150 g määrittelemätöntä pandania tai 25 minuutin kokonaisaikaa ei käytetä.
 
 ## Ainekset
 
@@ -66,7 +66,7 @@ Yllä mitatut ainekset on jaettu selvästi riisi- ja kastikekerrokseen. 15 g pan
 3. Pese 15 g syötäväksi tarkoitettuja pandanlehtiä, paloittele ja hienonna 80 g:n puhtaan veden kanssa. Siivilöi huolellisesti pois lehtimassa. Punnitse talteen noin 60 g syntyvää pandanmehua; jos uuttosaanto jää vajaaksi, dokumentoi muutos ennen jatkokäyttöä. Älä korvaa uuttomehua väriaineella tai keinotekoisella pandan-aromilla ilman uuden reseptiversion kirjausta.
 4. Vatkaa 100 g kuoretonta kananmunaa ja 80 g sokeria, lisää kastikekerroksen 140 ml kookosmaitoa, koko punnittu pandanmehu, 25 g vehnäjauhoa ja 12 g maissitärkkelystä. Sekoita tasaiseksi, siivilöi ja lämmitä miedolla lämmöllä sekoittaen, kunnes seos juuri hieman paksuuntuu, mutta on kaadettavaa.
 5. Kaada kastike kuuman riisikerroksen päälle. Höyrytä **miedolla** tasaisella höyryllä noin **25–30 minuuttia**, kunnes pinta on kauttaaltaan hyytynyt ja kastike kypsä myös keskeltä. Vältä kannesta tippuvaa vettä. Munaa sisältävä kastike on kypsennettävä kauttaaltaan; koetilanteessa mittaa munaseoksen turvallinen sisälämpö (vähintään **71 °C**).
-6. Jäähdytä täysin ennen leikkaamista. Punnitse kerrosten todellinen nettosaanto, kirjaa kypsennysaika, uuton saanto, pala-/annoskoko ja rakenne. Suunniteltu kaksi annosta ei vielä tarkoita varmennettua koekeittiösaantoa.
+6. Jäähdytä täysin ennen leikkaamista. Punnitse kerrosten todellinen nettosaanto, kirjaa kypsennysaika, uuton saanto, pala-/annoskoko ja rakenne. Suunniteltu neljä annosta ei vielä tarkoita varmennettua koekeittiösaantoa.
 
 ## Menetelmävertailu
 
@@ -74,4 +74,4 @@ Yllä mitatut ainekset on jaettu selvästi riisi- ja kastikekerrokseen. 15 g pan
 - [Lisa's Lemony Kitchen: Pandan Custard Glutinous Rice Layers](https://www.mykeuken.com/2016/10/pandan-custard-glutinous-rice-layers.html) – punnittu pandanlehtiuutto ja kerrosten erottaminen.
 - [Foodsafety.gov: munaruoat 71 °C](https://www.foodsafety.gov/print/pdf/node/10?id=safe-min) – munaseoksen turvallisen kypsennyksen vertailulämpö.
 
-**HOLD:** pandanlehden elintarvikekelpoisuus ja uuttosaanto, kookosmaidon tuotespesifikaatio, munamassan tarkistus, todelliset kypsennysajat ja jäähdytys, 2 annoksen todellinen koko, tärkkelys- ja kuitu-/polyolitietueet, allergeenit (kananmuna, vehnä), ravinto-/GK-laskenta ja kuvan vastaavuus. Ei koehöyrytystä, käännöksiä eikä julkaisemista.
+**HOLD:** pandanlehden elintarvikekelpoisuus ja uuttosaanto, kookosmaidon tuotespesifikaatio, munamassan tarkistus, todelliset kypsennysajat ja jäähdytys, 4 annoksen todellinen koko, tärkkelys- ja kuitu-/polyolitietueet, allergeenit (kananmuna, vehnä), ravinto-/GK-laskenta ja kuvan vastaavuus. Ei koehöyrytystä, käännöksiä eikä julkaisemista.
