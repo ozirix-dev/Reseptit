@@ -4,8 +4,8 @@
   "source_path": "reseptit/alkuruoat/perinteinen-ruskea-kastike.md",
   "source_sha256": "64de523b007f780e8c98c9b6b267226769ad4a56a8d65170901016ea4b024b9e",
   "decision": "hold",
-  "reviewed_by": "UNREVIEWED – Chat 3 preliminary source/structure checks only",
-  "reviewed_at": "",
+  "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
+  "reviewed_at": "2026-11-21",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -19,20 +19,20 @@
       "notes": "Ei samannimistä resep­titunnusta alkuperäisessä mainissä tai tarkistetuissa avoimissa PR:issä; lopullinen päällekkäisyyden tarkistus tehdään julkaisurevisiolle."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Määrät ja mittayksiköt on tallennettu ja nelikielinen rakenne alustavasti tarkistettu; täsmäainesosien ja niiden syötävien määrien lopullinen arvio sekä mahdolliset tuotemerkit odottavat."
+      "status": "pass",
+      "notes": "Tarkistettu: voi 35 g, vehnäjauhot 35 g, lihaliemi 500 ml, soijakastike 4 g ja mustapippuri 1 g. Testatussa K-Ruoan vertailussa käytetään 45 g voita, vehnäjauhoja, 500 ml vettä/fondia ja soijaa. Recipavon määrät ovat oma sovitus, mutta jauholla ruskistettavan 5 dl kastikkeen mittasuhteet ovat kulinaarisesti johdonmukaiset. Tuotekohtainen ravintokoostumuksen ja pakkausmerkintöjen tarkistus on erillinen nutrition-/food_safety-portti."
     },
     "method": {
-      "status": "pending",
-      "notes": "Riippumattomia valmistusvertailuja on dokumentoitu, mutta juuri tämän reseptiversion työvaiheiden/saannon lopullinen kokkikelpoisuusarvio on auki. Ei väitettä Recipavon koekeittiötestistä."
+      "status": "pass",
+      "notes": "K-Ruoka testaa rasva–vehnäjauho-ruskistuksen ja lämpimän lihaliemen asteittaisen lisäämisen; nämä vaiheet ovat Recipavon ohjeessa, jossa keitetään myös 5 min. Ei Recipavon omaa paistotestiä."
     },
     "food_safety": {
       "status": "pending",
       "notes": "Voi/vehnä/soija; liemen tuotemerkin allergeenit tarkistettava. Pakkausmerkinnät sekä tuotekohtaiset allergeenit ja säilytys tarkistettava ennen julkaisemista."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "Annokset ja ajat on kirjattu reseptiin; arvioitujen aikojen ja valmiin kastikkeen saannon lopullinen tarkistus puuttuu."
+      "status": "pass",
+      "notes": "Neljä annosta / 25 minuuttia; K-Ruoka 4 annosta / 15–30 minuuttia. Mittasuhteiden muutos voi vaikuttaa viskositeettiin, mutta työtapa ja aika ovat sovitettavissa."
     },
     "nutrition": {
       "status": "pending",

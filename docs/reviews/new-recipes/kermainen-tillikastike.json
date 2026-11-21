@@ -4,8 +4,8 @@
   "source_path": "reseptit/alkuruoat/kermainen-tillikastike.md",
   "source_sha256": "9886202473951cfcc39b5bd3b8153e3234df462f00488198041c7b2a9d1c3460",
   "decision": "hold",
-  "reviewed_by": "UNREVIEWED – Chat 3 preliminary source/structure checks only",
-  "reviewed_at": "",
+  "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
+  "reviewed_at": "2026-11-21",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -19,20 +19,20 @@
       "notes": "Ei samannimistä resep­titunnusta alkuperäisessä mainissä tai tarkistetuissa avoimissa PR:issä; lopullinen päällekkäisyyden tarkistus tehdään julkaisurevisiolle."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Määrät ja mittayksiköt on tallennettu ja nelikielinen rakenne alustavasti tarkistettu; täsmäainesosien ja niiden syötävien määrien lopullinen arvio sekä mahdolliset tuotemerkit odottavat."
+      "status": "pass",
+      "notes": "Tarkistettu: kermaviili 200 g, tilli 20 g, sitruunamehu 12 ml, sokeri 3 g, suola 2 g ja mustapippuri 0,5 g. Valion vertailussa kermaviili 200 g, noin 1 dl hienonnettua tilliä, sitruunamehua ja mausteet. Sokeri ja ilmoitetut punnitut mausteet ovat Recipavon omia määriä. Tuotekohtainen ravintokoostumuksen ja pakkausmerkintöjen tarkistus on erillinen nutrition-/food_safety-portti."
     },
     "method": {
-      "status": "pending",
-      "notes": "Riippumattomia valmistusvertailuja on dokumentoitu, mutta juuri tämän reseptiversion työvaiheiden/saannon lopullinen kokkikelpoisuusarvio on auki. Ei väitettä Recipavon koekeittiötestistä."
+      "status": "pass",
+      "notes": "Valion testattu ohje sekoittaa kermaviilin, tillin ja sitruunan kylmäksi kastikkeeksi kalalle; Recipavon 15 minuutin peitetty jääkaappimaustuminen lisää sovellettavan kylmäsäilytysaskeleen."
     },
     "food_safety": {
       "status": "pending",
       "notes": "Kermaviili sisältää maitoa; kylmäsäilytys. Pakkausmerkinnät sekä tuotekohtaiset allergeenit ja säilytys tarkistettava ennen julkaisemista."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "Annokset ja ajat on kirjattu reseptiin; arvioitujen aikojen ja valmiin kastikkeen saannon lopullinen tarkistus puuttuu."
+      "status": "pass",
+      "notes": "Recipavo 4 pientä lisukeannosta / 25 min sisältäen 15 minuutin kylmämaustumisen; Valion sekoitus 5 min. Kylmämaustuminen ja valmistelu selittävät aikaeron."
     },
     "nutrition": {
       "status": "pending",

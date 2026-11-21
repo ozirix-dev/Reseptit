@@ -4,8 +4,8 @@
   "source_path": "reseptit/alkuruoat/perinteinen-valkokastike.md",
   "source_sha256": "eede461ac1eec2868c99a5a44a028443e85fcab077a652a5ab5aeca951503544",
   "decision": "hold",
-  "reviewed_by": "UNREVIEWED – Chat 3 preliminary source/structure checks only",
-  "reviewed_at": "",
+  "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
+  "reviewed_at": "2026-11-21",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -19,20 +19,20 @@
       "notes": "Ei samannimistä resep­titunnusta alkuperäisessä mainissä tai tarkistetuissa avoimissa PR:issä; lopullinen päällekkäisyyden tarkistus tehdään julkaisurevisiolle."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Määrät ja mittayksiköt on tallennettu ja nelikielinen rakenne alustavasti tarkistettu; täsmäainesosien ja niiden syötävien määrien lopullinen arvio sekä mahdolliset tuotemerkit odottavat."
+      "status": "pass",
+      "notes": "Tarkistettu: täysmaito 500 ml, voi 35 g, vehnäjauhot 35 g, suola 3 g, valkopippuri 0,4 g ja muskottipähkinä 0,2 g. Valion julkaistussa vertailussa 500 ml 3 % maitoa, 30 g voita, 1/2 dl vehnäjauhoja ja mausteet. Lisätty muskottipähkinä on oma toimituksellinen maustevaihtoehto. Tuotekohtainen ravintokoostumuksen ja pakkausmerkintöjen tarkistus on erillinen nutrition-/food_safety-portti."
     },
     "method": {
-      "status": "pending",
-      "notes": "Riippumattomia valmistusvertailuja on dokumentoitu, mutta juuri tämän reseptiversion työvaiheiden/saannon lopullinen kokkikelpoisuusarvio on auki. Ei väitettä Recipavon koekeittiötestistä."
+      "status": "pass",
+      "notes": "Valion valmistuksessa voi sulatetaan, jauhot kuumennetaan, maito lisätään ohuena nauhana ja kastike kiehautetaan muutama minuutti; Recipavossa samat perusvaiheet ja 4–5 minuutin haudutus."
     },
     "food_safety": {
       "status": "pending",
       "notes": "Maito ja vehnä; suurustuksen kypsyys ja paakkuuntumattomuus. Pakkausmerkinnät sekä tuotekohtaiset allergeenit ja säilytys tarkistettava ennen julkaisemista."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "Annokset ja ajat on kirjattu reseptiin; arvioitujen aikojen ja valmiin kastikkeen saannon lopullinen tarkistus puuttuu."
+      "status": "pass",
+      "notes": "Recipavo 6 pientä kastikeannosta / 15 min; Valion aktiivinen valmistus 10 min. Eri annosjaon vuoksi tarkka tarjottava saanto on edelleen arvio, mutta aika ja työjärjestys ovat perusteltuja."
     },
     "nutrition": {
       "status": "pending",
