@@ -33,6 +33,9 @@ ingredients:
   - amount: 25
     unit: "g"
     item: "butter"
+  - amount: 20
+    unit: "g"
+    item: "wheat flour"
   - amount: 200
     unit: "ml"
     item: "whipping cream"
@@ -57,11 +60,12 @@ Butter-fried chanterelles in cream pair with potatoes and roast meat.
 ## Preparation
 
 1. Use only positively identified edible mushrooms. Clean the chanterelles, cut up large ones and chop the onion.
-2. Heat a dry pan and cook off the liquid released by the mushrooms. Add butter and onion and fry for 5 minutes.
-3. Add the cream and water. Simmer gently for 6–8 minutes until slightly thickened and the mushrooms are cooked.
+2. Heat a dry pan and cook off the liquid released by the mushrooms. Add butter and onion and fry for 5 minutes. Sprinkle in 20 g wheat flour and stir over the heat for about one minute.
+3. Gradually add the cream and water, stirring continuously to avoid lumps. Simmer gently for 6–8 minutes until the flour is cooked, the sauce thickens and the mushrooms are cooked.
 4. Season with salt and black pepper. Add parsley just before serving.
 
 ## Notes
 
 - Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The AI-generated illustration is now in this branch, but editorial image review is pending.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kantarellikastike
+- Contains milk and wheat. Do not use an AI food illustration to identify wild mushrooms.

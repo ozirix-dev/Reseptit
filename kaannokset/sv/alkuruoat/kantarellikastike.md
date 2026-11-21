@@ -33,6 +33,9 @@ ingredients:
   - amount: 25
     unit: "g"
     item: "smör"
+  - amount: 20
+    unit: "g"
+    item: "vetemjöl"
   - amount: 200
     unit: "ml"
     item: "vispgrädde"
@@ -57,11 +60,12 @@ Smörstekta kantareller i grädde passar till potatis och stekt kött.
 ## Tillagning
 
 1. Använd bara säkert identifierade matsvampar. Rensa kantarellerna, dela stora svampar och hacka löken.
-2. Hetta upp en torr panna och låt svampvätskan avdunsta. Tillsätt smör och lök och stek i 5 minuter.
-3. Häll på grädde och vatten. Sjud försiktigt i 6–8 minuter tills såsen tjocknar något och svampen är tillagad.
+2. Hetta upp en torr panna och låt svampvätskan avdunsta. Tillsätt smör och lök och stek i 5 minuter. Strö ner 20 g vetemjöl och rör på värmen i cirka en minut.
+3. Tillsätt grädde och vatten gradvis under ständig omrörning så att mjölet inte klumpar sig. Sjud i 6–8 minuter tills mjölet är tillagat, såsen tjocknar och svampen är färdig.
 4. Smaka av med salt och svartpeppar. Tillsätt persilja precis före servering.
 
 ## Anteckningar
 
 - Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Den AI-genererade illustrationsbilden finns nu i grenen, men bildgranskning återstår.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kantarellikastike
+- Innehåller mjölk och vete. En AI-bild ska inte användas för att identifiera vilda svampar.

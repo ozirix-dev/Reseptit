@@ -38,6 +38,9 @@ ingredients:
   - amount: 25
     unit: "g"
     item: "voita"
+  - amount: 20
+    unit: "g"
+    item: "vehnäjauhoja"
   - amount: 200
     unit: "ml"
     item: "kuohukermaa"
@@ -62,11 +65,12 @@ Voissa paistetut kantarellit ja kerma sopivat kotimaisille perunoille, pihveille
 ## Valmistus
 
 1. Tunnista ruokasienet varmasti, puhdista kantarellit ja paloittele suuret yksilöt. Hienonna sipuli.
-2. Kuumenna kuiva pannu ja haihduta kantarellien irtoava neste. Lisää voi ja sipuli ja paista 5 minuuttia.
-3. Kaada joukkoon kerma ja vesi. Hauduta hiljaa 6–8 minuuttia, kunnes kastike hieman sakenee ja sienet ovat kypsiä.
+2. Kuumenna kuiva pannu ja haihduta kantarellien irtoava neste. Lisää voi ja sipuli ja paista 5 minuuttia. Ripottele 20 g vehnäjauhoja sekaan ja kuumenna sekoittaen noin minuutti.
+3. Kaada kerma ja vesi joukkoon vähitellen koko ajan sekoittaen, jotta jauhot eivät paakkuunnu. Hauduta hiljaa 6–8 minuuttia, kunnes jauhot ovat kypsyneet, kastike sakenee ja sienet ovat kypsiä.
 4. Mausta suolalla ja mustapippurilla. Lisää persilja juuri ennen tarjoilua.
 
 ## Muistiinpanot
 
 - Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn tuottama havainnekuva tässä haarassa; toimituksellinen kuvakatselmointi puuttuu.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.k-ruoka.fi/reseptit/kantarellikastike
+- Sisältää maitoa ja vehnää. Tekoälykuvasta ei voi tunnistaa metsässä poimittuja sieniä.
