@@ -6,5 +6,5 @@
 - Riippumattoman tahon vertailuohje: https://www.k-ruoka.fi/reseptit/naudan-pihvi-ja-pippurikastike
 - Ohjeet ovat itsenäisesti kirjoitettuja sovituksia, eikä niitä ole testattu Recipavon keittiössä.
 - Tarkastettava ennen julkaisua: raaka-aineet, työjärjestys, allergeenit (maito, sinappi), ravintolaskelma ja GK-status, kielien merkitys sekä kuva.
-- Kuva on käyttäjälle luovutetussa erillisessä `kastikekuvat_chat3.zip`-paketissa nimellä `kermainen-pippurikastike.webp`, ei GitHubissa. Kuva on havainnekuva eikä kokkikokeilun todiste.
+- Kuva on nyt GitHubissa: `kuvat/alkuruoat/kermainen-pippurikastike.webp` (960 × 640). AI-havainnekuva, ei kokkikokeilun todiste. Julkaisukatselmointi vaaditaan.
 - Ei gluteenittomuus- tai muuta ruokavalioväitettä ilman tarkistusta.

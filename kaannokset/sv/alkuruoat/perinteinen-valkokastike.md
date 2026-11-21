@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sås"
   - "finsk"
+image:
+  src: alkuruoat/perinteinen-valkokastike.webp
+  alt: "Vit mjölksås i en glasskål, illustrerad med grön gräslök som garnering"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "ml"
@@ -54,3 +59,5 @@ En enkel vit sås av smör, mjöl och mjölk till fisk, potatis och grönsaker.
 
 - Detta är ett redaktionellt utkast; näringsvärden, glykemisk belastning och slutligt bildgodkännande återstår.
 - Preparation reference: https://www.valio.fi/reseptit/valkokastike/
+
+- Den AI-genererade illustrationsbilden är nu versionshanterad. Dekorationer på bilden ingår inte i receptmängderna.

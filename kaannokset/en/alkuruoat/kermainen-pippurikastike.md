@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sauce"
   - "Finnish"
+image:
+  src: alkuruoat/kermainen-pippurikastike.webp
+  alt: "Creamy light-brown peppercorn sauce with crushed black pepper on top"
+  width: 960
+  height: 640
 ingredients:
   - amount: 250
     unit: "ml"
@@ -54,3 +59,5 @@ A rich peppercorn sauce for steaks, pork fillet and potato sides.
 
 - This is an editorial draft; nutrition and glycaemic load assessments and final image approval are pending.
 - Preparation reference: https://www.k-ruoka.fi/reseptit/naudan-pihvi-ja-pippurikastike
+
+- The AI-generated illustrative image is now versioned. Decorative garnishes shown in the picture are not part of the ingredient quantities.

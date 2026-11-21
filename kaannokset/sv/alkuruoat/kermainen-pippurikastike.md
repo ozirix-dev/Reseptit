@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sås"
   - "finsk"
+image:
+  src: alkuruoat/kermainen-pippurikastike.webp
+  alt: "Krämig ljusbrun pepparsås med krossad svartpeppar på ytan"
+  width: 960
+  height: 640
 ingredients:
   - amount: 250
     unit: "ml"
@@ -54,3 +59,5 @@ En fyllig pepparsås till biff, fläskfilé och potatistillbehör.
 
 - Detta är ett redaktionellt utkast; näringsvärden, glykemisk belastning och slutligt bildgodkännande återstår.
 - Preparation reference: https://www.k-ruoka.fi/reseptit/naudan-pihvi-ja-pippurikastike
+
+- Den AI-genererade illustrationsbilden är nu versionshanterad. Dekorationer på bilden ingår inte i receptmängderna.

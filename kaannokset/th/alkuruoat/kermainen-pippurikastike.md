@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "ซอส"
   - "ฟินแลนด์"
+image:
+  src: alkuruoat/kermainen-pippurikastike.webp
+  alt: "ซอสพริกไทยครีมสีน้ำตาลอ่อนโรยพริกไทยบด"
+  width: 960
+  height: 640
 ingredients:
   - amount: 250
     unit: "ml"
@@ -54,3 +59,5 @@ ingredients:
 
 - นี่คือฉบับร่าง ยังไม่ได้ประเมินโภชนาการ ภาระน้ำตาล หรืออนุมัติภาพประกอบขั้นสุดท้าย
 - Preparation reference: https://www.k-ruoka.fi/reseptit/naudan-pihvi-ja-pippurikastike
+
+- ภาพประกอบสร้างด้วย AI และอยู่ในระบบควบคุมเวอร์ชันแล้ว ของตกแต่งในภาพไม่รวมในปริมาณส่วนผสม

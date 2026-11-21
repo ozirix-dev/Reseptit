@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "ซอส"
   - "ฟินแลนด์"
+image:
+  src: alkuruoat/perinteinen-valkokastike.webp
+  alt: "ซอสขาวนมในถ้วยแก้ว ตกแต่งต้นไชฟ์สีเขียวในภาพประกอบ"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "ml"
@@ -54,3 +59,5 @@ ingredients:
 
 - นี่คือฉบับร่าง ยังไม่ได้ประเมินโภชนาการ ภาระน้ำตาล หรืออนุมัติภาพประกอบขั้นสุดท้าย
 - Preparation reference: https://www.valio.fi/reseptit/valkokastike/
+
+- ภาพประกอบสร้างด้วย AI และอยู่ในระบบควบคุมเวอร์ชันแล้ว ของตกแต่งในภาพไม่รวมในปริมาณส่วนผสม

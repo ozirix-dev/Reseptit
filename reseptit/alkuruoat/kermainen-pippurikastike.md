@@ -23,6 +23,11 @@ translation_status:
   en: draft
   sv: draft
   th: draft
+image:
+  src: alkuruoat/kermainen-pippurikastike.webp
+  alt: "Vaaleanruskeaa kermaista pippurikastiketta kulhossa, mustapippurirouhetta pinnalla"
+  width: 960
+  height: 640
 ingredients:
   - amount: 250
     unit: "ml"
@@ -59,3 +64,5 @@ Täyteläinen pippurikastike pihveille, porsaanfileelle ja perunalisukkeille.
 
 - Sisältö on toimituksellinen luonnos, ravintoarvo- ja GK-arvio sekä kuvan lopullinen hyväksyntä puuttuvat.
 - Valmistuksen vertailulähde: https://www.k-ruoka.fi/reseptit/naudan-pihvi-ja-pippurikastike
+
+- Kuva on tekoälyn tuottama havainnekuva, joka on nyt versionhallinnassa. Kuvan tarjoilukoristeet eivät kuulu ainesosamääriin.

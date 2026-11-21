@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sauce"
   - "Finnish"
+image:
+  src: alkuruoat/perinteinen-valkokastike.webp
+  alt: "White milk sauce in a glass bowl, garnished with green chives in the illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "ml"
@@ -54,3 +59,5 @@ A simple butter-and-milk white sauce for fish, potatoes and vegetables.
 
 - This is an editorial draft; nutrition and glycaemic load assessments and final image approval are pending.
 - Preparation reference: https://www.valio.fi/reseptit/valkokastike/
+
+- The AI-generated illustrative image is now versioned. Decorative garnishes shown in the picture are not part of the ingredient quantities.

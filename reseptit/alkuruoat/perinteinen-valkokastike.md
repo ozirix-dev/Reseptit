@@ -23,6 +23,11 @@ translation_status:
   en: draft
   sv: draft
   th: draft
+image:
+  src: alkuruoat/perinteinen-valkokastike.webp
+  alt: "Valkoista maitokastiketta lasikulhossa, kuvassa koristeena vihreää ruohosipulia"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "ml"
@@ -59,3 +64,5 @@ Voista, maidosta ja vehnäjauhoista valmistuva peruskastike kalalle, perunoille 
 
 - Sisältö on toimituksellinen luonnos, ravintoarvo- ja GK-arvio sekä kuvan lopullinen hyväksyntä puuttuvat.
 - Valmistuksen vertailulähde: https://www.valio.fi/reseptit/valkokastike/
+
+- Kuva on tekoälyn tuottama havainnekuva, joka on nyt versionhallinnassa. Kuvan tarjoilukoristeet eivät kuulu ainesosamääriin.
