@@ -118,15 +118,17 @@ jobs:
           FORCE_FULL: ${{ inputs.full_suite || false }}
         run: node site/scripts/select-ci-checks.mjs
 
-      - name: Verify FI editorial inventory on tool changes
-        if: contains(steps.select.outputs.changed_paths, 'editorial-inventory') || contains(steps.select.outputs.changed_paths, 'editorial-public-audit')
+      # Always refresh raw and projected FI findings from the same tested revision.
+      # The selector skips docs, feedback UI and translation-only changes.
+      - name: Verify FI editorial inventory on recipe presentation changes
+        if: steps.select.outputs.run_editorial_audit == 'true'
         run: |
           node --test site/scripts/editorial-inventory.test.mjs
           node site/scripts/editorial-inventory.mjs
           cat tmp/editorial-inventory/current.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Save advisory FI editorial inventory
-        if: contains(steps.select.outputs.changed_paths, 'editorial-inventory') || contains(steps.select.outputs.changed_paths, 'editorial-public-audit')
+        if: steps.select.outputs.run_editorial_audit == 'true'
         uses: actions/upload-artifact@v7.0.2
         with:
           name: fi-editorial-inventory
@@ -306,14 +308,14 @@ jobs:
         working-directory: site
 
       - name: Compare FI editorial source and public display
-        if: contains(steps.select.outputs.changed_paths, 'editorial-inventory') || contains(steps.select.outputs.changed_paths, 'editorial-public-audit')
+        if: steps.select.outputs.run_editorial_audit == 'true'
         working-directory: site
         run: |
           npm exec -- tsx scripts/editorial-public-audit.ts
           cat ../tmp/editorial-inventory/public-current.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload public FI editorial audit
-        if: contains(steps.select.outputs.changed_paths, 'editorial-inventory') || contains(steps.select.outputs.changed_paths, 'editorial-public-audit')
+        if: steps.select.outputs.run_editorial_audit == 'true'
         uses: actions/upload-artifact@v7.0.2
         with:
           name: fi-editorial-public-parity
@@ -322,6 +324,7 @@ jobs:
             tmp/editorial-inventory/public-current.md
           if-no-files-found: error
           retention-days: 14
+
       - name: Run selected unit tests
         if: steps.select.outputs.needs_node == 'true'
         shell: pwsh
