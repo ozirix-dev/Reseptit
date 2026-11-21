@@ -161,3 +161,52 @@ test("#327: null is a missing time and positive integer minutes are accepted", (
   }
   assert.equal(compareInventories(raw, [recipe(null)]).totals.projectedMissingTimes, 1);
 });
+
+test("#327: classified invalid-time signals must match source and missing-time inventory", () => {
+  const valid: RawInventory = {
+    ...raw,
+    signals: {
+      ...raw.signals,
+      invalidTime: [{ ...evidence, rawValue: "0" }],
+    },
+  };
+  assert.equal(compareInventories(valid, [recipe(null)]).totals.rawMissingTimes, 1);
+  const badSha: RawInventory = {
+    ...valid,
+    signals: {
+      ...valid.signals,
+      invalidTime: [{ ...evidence, sourceSha256: "b".repeat(64), rawValue: "0" }],
+    },
+  };
+  assert.throws(() => compareInventories(badSha, [recipe(null)]),
+    /RAW_SIGNAL_SOURCE_DRIFT: invalidTime:aika-puuttuu/);
+  const orphan: RawInventory = {
+    ...valid,
+    signals: { ...valid.signals, missingTime: [] },
+  };
+  assert.throws(() => compareInventories(orphan, [recipe(null)]),
+    /INVALID_RAW_TIME_SIGNAL: aika-puuttuu/);
+});
+
+test("#327: classified invalid times reject missing raw values and duplicates", () => {
+  for (const rawValue of ["", "  ", "null", "NULL"]) {
+    const invalid: RawInventory = {
+      ...raw,
+      signals: { ...raw.signals, invalidTime: [{ ...evidence, rawValue }] },
+    };
+    assert.throws(() => compareInventories(invalid, [recipe(null)]),
+      /INVALID_RAW_TIME_SIGNAL: aika-puuttuu/);
+  }
+  const duplicated: RawInventory = {
+    ...raw,
+    signals: {
+      ...raw.signals,
+      invalidTime: [
+        { ...evidence, rawValue: "0" },
+        { ...evidence, rawValue: "0" },
+      ],
+    },
+  };
+  assert.throws(() => compareInventories(duplicated, [recipe(null)]),
+    /DUPLICATE_RAW_SIGNAL: invalidTime:aika-puuttuu/);
+});
