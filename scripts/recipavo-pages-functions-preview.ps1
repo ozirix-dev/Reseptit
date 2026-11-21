@@ -11,13 +11,15 @@ Set-StrictMode -Version Latest
 function Need([bool]$Test, [string]$Message) {
   if (-not $Test) { throw "HOLD: $Message" }
 }
-function Run([string]$Program,[string[]]$Args) {
-  $out = & $Program @Args 2>&1
-  Need ($LASTEXITCODE -eq 0) ("Command failed: " + $Program + " " + $Args[0])
+function Run([string]$Program,[string[]]$CommandArgs) {
+  # $args is a PowerShell automatic variable; do not use it for named parameters.
+  $out = & $Program @CommandArgs 2>&1
+  $commandName = if ($CommandArgs.Count -gt 0) { $CommandArgs[0] } else { '<no-args>' }
+  Need ($LASTEXITCODE -eq 0) ("Command failed: " + $Program + " " + $commandName)
   return ($out | Out-String).Trim()
 }
-function PagesJson([string[]]$Args) {
-  $raw = Run 'npx.cmd' (@('--yes','wrangler@4.165.0') + $Args + @('--json'))
+function PagesJson([string[]]$WranglerArgs) {
+  $raw = Run 'npx.cmd' (@('--yes','wrangler@4.165.0') + $WranglerArgs + @('--json'))
   try { return ConvertFrom-Json -InputObject $raw -Depth 80 }
   catch { throw 'HOLD: Wrangler did not return JSON. Verify existing Cloudflare login locally.' }
 }
