@@ -1,0 +1,45 @@
+name: Temporary image import kinkkukiusaus
+on:
+  push:
+    branches:
+      - recipe/kotiruoka-kinkkukiusaus-draft-20261121
+    paths:
+      - .github/workflows/temporary-import-kinkkukiusaus.yml
+permissions:
+  contents: write
+jobs:
+  import-image:
+    if: github.repository == 'ozirix-dev/Reseptit'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Convert recipe JPEG to valid WebP
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet 'Pillow==11.3.0'
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          src=Path('docs/drafts/kinkkukiusaus-import-preview.jpg')
+          dst=Path('kuvat/paaruoat/kinkkukiusaus.webp')
+          im=Image.open(src)
+          im.load()
+          assert im.format=='JPEG' and im.size==(960, 746), (im.format,im.size)
+          dst.parent.mkdir(parents=True,exist_ok=True)
+          im.convert('RGB').save(dst,format='WEBP',quality=82,method=6)
+          check=Image.open(dst)
+          assert check.format=='WEBP' and check.size==im.size
+          print('WebP OK:', dst, dst.stat().st_size)
+          PY
+      - name: Commit image to temporary draft branch
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = 'recipe/kotiruoka-kinkkukiusaus-draft-20261121'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- 'kuvat/paaruoat/kinkkukiusaus.webp'
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Add WebP image for kinkkukiusaus'
+          git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"
