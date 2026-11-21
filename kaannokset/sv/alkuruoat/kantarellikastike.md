@@ -69,3 +69,4 @@ Smörstekta kantareller i grädde passar till potatis och stekt kött.
 - Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Den AI-genererade illustrationsbilden finns nu i grenen, men bildgranskning återstår.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kantarellikastike
 - Innehåller mjölk och vete. En AI-bild ska inte användas för att identifiera vilda svampar.
+- Använd endast säkert identifierade ätliga kantareller eller korrekt märkta matsvampar från handeln. Identifiera aldrig plockad svamp utifrån receptets AI-bild. Servera varm; kyl rester snabbt och förvara under +6 °C.

@@ -67,3 +67,4 @@ En varm, mild senapssås till skinka utan steksky.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kastike-kinkulle-ilman-paistolienta
 - Marttas provlagade skinksås använder vetemjöl, senap, grädde och steksky. Här används i stället grönsaksbuljong, så recepten är inte identiska. https://www.martat.fi/reseptit/kinkun-kastike/
 - Innehåller **mjölk, vete och senap**. Grönsaksbuljong kan innehålla selleri; kontrollera buljongens och senapens märkning.
+- Servera varm sås genast till genomstekt skinka. Kyl rester snabbt och förvara under +6 °C. Kontrollera grönsaksbuljong och båda senapssorternas etiketter med avseende på selleri, senap, vete och mjölk.

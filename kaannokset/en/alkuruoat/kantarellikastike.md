@@ -69,3 +69,4 @@ Butter-fried chanterelles in cream pair with potatoes and roast meat.
 - Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The AI-generated illustration is now in this branch, but editorial image review is pending.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kantarellikastike
 - Contains milk and wheat. Do not use an AI food illustration to identify wild mushrooms.
+- Use only positively identified edible chanterelles or commercially sold, correctly identified mushrooms. Never identify a foraged mushroom from the AI recipe image. Serve hot; cool leftovers promptly and refrigerate below +6°C.

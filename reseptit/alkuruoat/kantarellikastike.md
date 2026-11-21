@@ -74,3 +74,4 @@ Voissa paistetut kantarellit ja kerma sopivat kotimaisille perunoille, pihveille
 - Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn tuottama havainnekuva tässä haarassa; toimituksellinen kuvakatselmointi puuttuu.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.k-ruoka.fi/reseptit/kantarellikastike
 - Sisältää maitoa ja vehnää. Tekoälykuvasta ei voi tunnistaa metsässä poimittuja sieniä.
+- Käytä vain varmasti tunnistettuja syötäviä kantarelleja tai myyntiin tarkoitettuja, tunnistettuja kauppasieniä. Älä koskaan tunnista poimittua sientä reseptin tekoälykuvasta. Tarjoa kastike kuumana; jos sitä jää yli, jäähdytä nopeasti ja säilytä jääkaapissa alle +6 °C:ssa.

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "kantarellikastike",
   "source_path": "reseptit/alkuruoat/kantarellikastike.md",
-  "source_sha256": "4897d725507eefed20ab4343043c840271cd969002df0cfe049710f3be557c8d",
+  "source_sha256": "7a2cb2edec35a51efb3ecfb9c2f53fa6f93b4d51094fed91e3efd547effabf8b",
   "decision": "hold",
   "reviewed_by": "Chat 3 – rajattu kirjallinen aines- ja menetelmäkatselmointi; julkaisuhyväksyntä avoin",
   "reviewed_at": "2026-11-21",
@@ -27,8 +27,8 @@
       "notes": "Vertailussa sienien puhdistus, nesteen haihdutus, sipulin kuullotus, jauhosuurustus ja haudutus; Recipavon 6–8 minuutin haudutus sekä 20 g jauhoja vastaavat testattua perustekniikkaa. Recipavon versio ei ole fyysisesti kokeiltu."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Maito ja vehnä; metsäsienen varma tunnistus on ehdoton, AI-kuva ei ole tunnistustodiste. Pakkausmerkinnät sekä tuotekohtaiset allergeenit ja säilytys tarkistettava ennen julkaisemista."
+      "status": "pass",
+      "notes": "FI-ohje tunnistaa villisienet varmasti jo ennen käyttöä. Täsmennetty ettei AI-havainnekuvaa saa käyttää määritykseen; vain varmistettu laji tai kaupassa tunnistetut sienet. Kuumennus/haihdutus/6–8 min suurusteen keittäminen, maito+vehnäallergeenit ja nopea jäähdytys <+6 °C tarkistettu. Rajattu ruokaturvallisuus PASS sillä ehdolla, että sieni on varmasti tunnistettu. Lähteet: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/ ."
     },
     "servings_and_time": {
       "status": "pass",
