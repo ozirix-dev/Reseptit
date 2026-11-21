@@ -1,0 +1,130 @@
+/**
+ * Read-only, pinned old-vs-new nutrition-model regression.
+ * This comparison cannot approve a code seal or release any GK value.
+ */
+import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
+import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
+import path from "node:path";
+import { pathToFileURL, fileURLToPath } from "node:url";
+import { calculate, normalizeCarbohydrate, type Calculation, type FoodRecord } from "./nutrition-model";
+
+const root = path.resolve(fileURLToPath(new URL("../..", import.meta.url)));
+const oldBlob = "de8d7189d786b06c93e13afb378f8861a70542c6";
+const catalog = "docs/nutrition/food-records.json";
+const calculations = "docs/nutrition/calculations";
+
+function capture(fn: () => unknown) {
+  try { return {ok: true, result: fn()}; }
+  catch (error) { return {ok: false, error: String(error)}; }
+}
+const equal = (a: unknown, b: unknown) => JSON.stringify(a) === JSON.stringify(b);
+
+export async function audit() {
+  // git cat-file verifies the exact historical Git blob, not an arbitrary
+  // user-supplied, mutable source path or external download.
+  const original = execFileSync("git", ["cat-file", "blob", oldBlob], {
+    cwd: root, encoding: "utf8", maxBuffer: 8 * 1024 * 1024,
+  });
+  const tmp = path.join(root, "tmp", "eu-polyol-impact");
+  await mkdir(tmp, {recursive: true});
+  const oldFile = path.join(tmp, "historical-nutrition-model.ts");
+  await writeFile(oldFile, original);
+  const previous = await import(pathToFileURL(oldFile).href) as typeof import("./nutrition-model");
+  const records = JSON.parse(await readFile(path.join(root, catalog), "utf8")) as FoodRecord[];
+  const sourceChanges: Array<{id: string; before: unknown; after: unknown}> = [];
+  const counts: Record<string, number> = {};
+  for (const record of records) {
+    counts[record.carbohydrateDefinition] = (counts[record.carbohydrateDefinition] ?? 0) + 1;
+    const before = capture(() => previous.normalizeCarbohydrate(record));
+    const after = capture(() => normalizeCarbohydrate(record));
+    if (!equal(before, after)) sourceChanges.push({id: record.id, before, after});
+  }
+
+  const files = (await readdir(path.join(root, calculations), {withFileTypes: true}))
+    .filter(x => x.isFile() && x.name.endsWith(".json")).map(x => x.name).sort();
+  const calculationChanges: Array<{file: string; recipe_id?: string; before: unknown; after: unknown}> = [];
+  const invalidOrOther: string[] = [];
+  let evaluated = 0, equalErrors = 0;
+  let nestedEuTotal = 0, nestedEuTotalUnverified = 0;
+  for (const name of files) {
+    const rel = calculations + "/" + name;
+    let input: Calculation;
+    try { input = JSON.parse(await readFile(path.join(root, rel), "utf8")) as Calculation; }
+    catch { invalidOrOther.push(rel + ": invalid JSON"); continue; }
+    if (!Array.isArray(input.ingredients) || typeof input.recipeId !== "string"
+      || typeof input.sourceHash !== "string") {
+      invalidOrOther.push(rel + ": not a Calculation input"); continue;
+    }
+    for (const ingredient of input.ingredients) {
+      const record = ingredient.record;
+      if (record?.carbohydrateDefinition !== "EU_TOTAL_INCLUDING_POLYOLS") continue;
+      nestedEuTotal++;
+      const verified = (record.polyolsSourceVerified === true && Boolean(record.polyolsEvidence?.trim()))
+        || Boolean(record.componentValues && record.componentIds?.POLYL === 2260
+          && Object.hasOwn(record.componentValues, "POLYL"));
+      if (!verified) nestedEuTotalUnverified++;
+    }
+    const before = capture(() => previous.calculate(input));
+    const after = capture(() => calculate(input));
+    evaluated++;
+    if (!before.ok && !after.ok && equal(before, after)) equalErrors++;
+    if (!equal(before, after)) calculationChanges.push({
+      file: rel, recipe_id: input.recipeId, before, after,
+    });
+  }
+  const currentModel = await readFile(path.join(root, "site/scripts/nutrition-model.ts"), "utf8");
+  const result = {
+    schemaVersion: 1,
+    scope: "Read-only historical vs changed calculation comparison; no GK release approval.",
+    testedSha: process.env.GITHUB_SHA ?? "",
+    oldGitBlob: oldBlob,
+    oldCodeSha256: createHash("sha256").update(original).digest("hex"),
+    newCodeSha256: createHash("sha256").update(currentModel).digest("hex"),
+    catalogue: {path: catalog, count: records.length, carbohydrateDefinitions: counts,
+      differentNormalizedRecords: sourceChanges.length, differences: sourceChanges},
+    calculationInputs: {
+      directory: calculations, scannedJsonFiles: files.length, evaluated, equalErrors,
+      skipped: invalidOrOther, nestedEuTotal, nestedEuTotalUnverified,
+      changedResults: calculationChanges.length, differences: calculationChanges,
+    },
+    readyAuthorized: false, mergeAuthorized: false, deployAuthorized: false,
+    sourceSealApproved: false,
+  };
+  const dest = path.join(tmp, "current.json");
+  await writeFile(dest, JSON.stringify(result, null, 2) + "\n");
+  const lines = [
+    "# EU-polyolien vaikutusauditointi – ei julkaisuhyväksyntää", "",
+    "HEAD: " + (result.testedSha || "not supplied"),
+    "Vanha nutrition-model.ts blob: " + oldBlob,
+    "Vanhan koodin SHA-256: " + result.oldCodeSha256,
+    "Uuden koodin SHA-256: " + result.newCodeSha256, "",
+    "| Mittari | Arvo |", "| --- | ---: |",
+    "| Kanonisia ravintotietueita | " + records.length + " |",
+    "| Muuttuneita normalisointituloksia | " + sourceChanges.length + " |",
+    "| Reseptilaskennan JSON-tiedostoja | " + files.length + " |",
+    "| Vertailtuja reseptilaskelmia | " + evaluated + " |",
+    "| Muuttuneita reseptilaskentatuloksia | " + calculationChanges.length + " |",
+    "| Sisäisiä EU-total-ainesosasyötteitä | " + nestedEuTotal + " |",
+    "| Niistä varmentamattomia | " + nestedEuTotalUnverified + " |", "",
+    "Tämä on kattavuudeltaan rajattu auditointi; hyväksyttyihin GK-only-variantteihin",
+    "ei saa soveltaa uutta koodihashia ilman niiden erillistä sinettikatselmointia.", "",
+  ];
+  if (invalidOrOther.length) lines.push("Muita/ohitettuja laskentatiedostoja: " + invalidOrOther.length, "");
+  await writeFile(path.join(tmp, "current.md"), lines.join("\n"));
+  return result;
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  audit().then(result => {
+    console.log(JSON.stringify({
+      catalogue: result.catalogue.count,
+      changedSourceRecords: result.catalogue.differentNormalizedRecords,
+      calculationInputs: result.calculationInputs.evaluated,
+      changedCalculations: result.calculationInputs.changedResults,
+      nestedEuTotalUnverified: result.calculationInputs.nestedEuTotalUnverified,
+      report: "tmp/eu-polyol-impact/current.json",
+    }));
+    if (result.catalogue.differentNormalizedRecords || result.calculationInputs.changedResults) process.exitCode = 1;
+  }).catch(error => {console.error("EU_POLYOL_IMPACT_AUDIT_FAILED:", error); process.exitCode = 1;});
+}
