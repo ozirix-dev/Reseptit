@@ -73,6 +73,7 @@ fat_per_serving_g: null
 - [Rasa Malaysia, Bee Yinn Low / Siew Loon: Seri Muka](https://rasamalaysia.com/seri-muka/): **300 g riisiä**, **100 ml kookosmaitoa + 100 ml vettä**, **200 ml paksua kookosmaitoa**, **2 kokonaista munaa + 2 keltuaista**, **170 g sokeria**, **100 ml pandanmehua**, **5 rkl jauhoja**, **2 rkl maissitärkkelystä** ja **20 + 30 min höyrytys**. Kirjoittaja on erikseen huomauttanut, ettei munien määrää kannata muuttaa, koska rakenne muuttuu.
 - [Foodsafety.gov: Safe Minimum Internal Temperatures](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures) – munaruoan 71 °C.
 - [UK Food Standards Agency: Riisin jäähdytys](https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker) – nopea jäähdytys ja yhden päivän kylmäsäilytys.
+- [Food Standards Australia New Zealand: Bacillus cereus in food](https://www.foodstandards.gov.au/consumer/prevention-of-foodborne-illness/bacteria-foodborne-illness/bacillus-cereus) – kypsän riisin säilytyksen ja itiöiden hallinnan lähde.
 - **Toimituksellinen lisäys** ovat elintarviketurvallisuuden jäähdytys- ja kypsennysmuistutukset; ne eivät ole väite lähdekirjoittajan laboratoriomittauksista tai Recipavon koekeittiöstä.
 
 **HOLD:** 20 palan syötävä kappalepaino, kokonaisten munien ja kahden keltuaisen syötävä grammamäärä, lusikkamittojen tuotegrammat, kookosmaidon koostumus, pandanmehun uuttosaanto, neljä hyväksyttyä makroarvoa, GK, kuva ja kieliversiot. **Alkuperäisen 20 palan lähdesaanto ei ole neljä täyttä ateria-annosta.** Ei tuotantojulkaisua.
