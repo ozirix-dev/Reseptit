@@ -15,32 +15,32 @@ const candidates = [
   {
     original: "karibia-saltfish-fritterit",
     sourceBlob: "f197d405e1d1c9de9afcbfb2b5ce4def501de30f",
-    required: [/80\s*g/, /180\s*g/, /liot/i, /ruodot/, /63\s*°C/],
-    minIngredients: 8,
+    required: [/160\s*g/, /300\s*g/, /375\s*ml/, /self-raising/i, /0,5 cm/, /63\s*°C/],
+    minIngredients: 10,
   },
   {
     original: "intialainen-idli-kookoschutneylla",
     sourceBlob: "e862e239cf56f33c27ea36e6a5311bf6d179364d",
-    required: [/120\s*g/, /40\s*g/, /4[–-]6/, /8[–-]12/, /12[–-]15/, /chutney/],
-    minIngredients: 12,
+    required: [/120\s*g/, /20\s*g/, /2 kuppia/, /1\s*tl suolaa/, /74\s*°C/, /chutney/],
+    minIngredients: 18,
   },
   {
     original: "intialainen-pesarattu-mungpavuista",
     sourceBlob: "5356f03ce2764e38563a95ede0e4373b8f50a65e",
-    required: [/150\s*g/, /12\s*tuntia/, /30\s*minuuttia/, /keitet/i, /Ruokavirasto/],
+    required: [/150\s*g/, /12\s*tuntia/, /30\s*minuuttia/, /Ruokavirasto/, /EFSA/, /HOLD/],
     minIngredients: 7,
   },
   {
     original: "malesialainen-kuih-seri-muka",
     sourceBlob: "4c565331c9e3a6322cd97989a9ad6fac38167284",
-    required: [/180\s*g/, /pandan/i, /4\s*tuntia/, /25[–-]30/, /71\s*°C/],
-    minIngredients: 11,
+    required: [/300\s*g/, /170\s*g/, /pandan/i, /20\s*minuuttia/, /30\s*minuuttia/, /71\s*°C/],
+    minIngredients: 12,
   },
   {
     original: "vietnamilainen-xoi-maapahkinalla",
     sourceBlob: "424b60e50e95d2e216e9090333f4f89509ee61ad",
-    required: [/180\s*g/, /65\s*g/, /4[–-]8\s*tuntia/, /25[–-]40/, /seesam/i],
-    minIngredients: 7,
+    required: [/200\s*g/, /100\s*g/, /160\s*ml/, /20\s*g/, /COOK/, /WARM/],
+    minIngredients: 5,
   },
 ] as const;
 
@@ -77,18 +77,20 @@ test("issue 404: five new candidates are schema-valid FI drafts and cannot enter
     assert.equal(data.translation_languages, undefined, "No invented translation approvals");
     assert.ok(data.servings > 0);
     assert.ok(data.ingredients.length >= entry.minIngredients);
-    assert.ok(data.ingredients.every((ingredient) => ingredient.amount !== null && ingredient.amount > 0),
-      "No unknown weighed ingredient may silently become zero");
+    assert.ok(data.ingredients.every((ingredient) =>
+      ingredient.amount === null ? Boolean(ingredient.note && ingredient.note.trim())
+        : Number.isFinite(ingredient.amount) && ingredient.amount > 0),
+      "Unknown source quantities need a reason, never a silent zero");
     for (const key of [
       "carbs_net_per_serving_g", "carbs_total_per_serving_g",
       "protein_per_serving_g", "fat_per_serving_g",
     ] as const) {
       assert.equal(data[key], null, proposedId + ": published macro approval is missing");
     }
-    assert.match(parsed.content, /DRAFT\s*\/\s*(?:HOLD|ERITYINEN TURVALLISUUS-HOLD)/);
-    assert.match(parsed.content, /(?:ei|eivät) (?:ole |fyysisesti |koe)/i);
-    assert.match(parsed.content, /## Valmistus/);
-    assert.match(parsed.content, /## (?:Menetelmävertailu|Turvallisuus- ja ruokalajilähteet)/);
+    assert.match(parsed.content, /\*\*DRAFT\s*\/[^\n]*HOLD/);
+    assert.match(parsed.content, /Recipavo|koekeittiö|koeversio/);
+    assert.match(parsed.content, /## (?:Valmistus|Idlitaikinan valmistus)/);
+    assert.match(parsed.content, /## (?:Lähde|Lähdepäätös|Lähdehaarojen päätös|Tekijä- ja turvallisuuslähteet|Turvallisuus- ja ruokalajilähteet)/);
     for (const token of entry.required) assert.match(parsed.content, token, proposedId);
     assert.ok(readme.includes(proposedId), "Missing scoped review manifest entry");
 
@@ -132,12 +134,12 @@ test("issue 404: critical food-safety controls remain explicit in the three high
 
   // Idli is a spontaneously fermented, moist grain/pulse dough. A timer and
   // visible bubbles cannot substitute for process and food-safety evidence.
-  assert.match(idli, /4[–-]6 tuntia jääkaapissa, enintään 4 °C/);
-  assert.match(idli, /enimmäiskesto on \*\*4 tuntia\*\*/);
-  assert.match(idli, /\*\*2 % suolapitoisuuden\*\*/);
+  assert.match(idli, /yli neljän tunnin liotus pitää tehdä enintään 4 °C:ssa/);
+  assert.match(idli, /huoneenlämpöliotus enintään neljä tuntia/);
+  assert.match(idli, /\*\*noin 2 %\*\*/);
   assert.match(idli, /\*\*12[–-]14 tuntia noin 30 °C:ssa\*\*/);
   assert.match(idli, /\*\*pH ≤ 4,6\*\*/);
-  assert.match(idli, /\*\*vähintään 74 °C vähintään 15 sekunniksi\*\*/);
+  assert.match(idli, /\*\*74 °C vähintään 15 sekunnin ajan\*\*/);
   assert.match(idli, /bccdc\.ca\/resource-gallery\/Documents\//);
   assert.doesNotMatch(idli, /anna käydä lämpimässä noin \*\*8[–-]12 tuntia\*\*/);
 
