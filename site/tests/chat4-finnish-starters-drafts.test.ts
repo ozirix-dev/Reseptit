@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { test } from "node:test";
 import { parseMarkdown } from "../src/content/markdown";
+import { recipeFrontmatterSchema } from "../src/content/schema";
 
 const recipeIds = [
   "suolasienisalaatti-sipulilla",
@@ -35,7 +36,7 @@ function loadRecipe(id: string, locale: keyof typeof languageSections) {
   assert.ok(body, `${relative}: method section`);
   const stepCount = (body.match(/^\d+\. /gm) ?? []).length;
   assert.ok(stepCount >= 4, `${relative}: meaningful steps`);
-  return { data: recipe.data, raw, stepCount };
+  return { data: recipeFrontmatterSchema.parse(recipe.data), raw, stepCount };
 }
 
 test("Chat-4 starters remain ten distinct FI Drafts and thirty aligned translation Drafts", () => {
