@@ -40,3 +40,24 @@ Tila: Draft, ei julkaisuhyväksyntää eikä Recipavon omaa koekeittiötestiä.
 - Ruokaviraston kuluttajaohjeen mukaan sianliha kypsennetään kauttaaltaan vähintään 70 °C:n lämpötilaan: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/
 - Ruokaviraston Bacillus cereus -ohjeen mukaan valmiin riisin kaltaista ruokaa pidetään kuumana vähintään 60 °C:ssa tai jäähdytetään neljässä tunnissa enintään 6 °C:seen; uudelleenkuumennus tehdään kauttaaltaan yli 70 °C:een: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ruokamyrkytyksia-aiheuttavia-bakteereja/bacillus-cereus/
 - Reseptin työjärjestyksessä marinoidaan ensin porsas ja kypsennetään riisi marinoinnin aikana. Kyseessä on ohjeen toimituksellinen täsmennys, ei väite Recipavon omasta kokkauskokeesta.
+
+## FI/EN/SV/TH-luonnosten uudelleentarkistus 21.11.2026
+
+Tämä on tekoälyn tekemä **ennakkotarkistus**, ei `meta/kaannokset/codex-review-evidence.json`-rekisterin käännöshyväksyntä, ihmisen attestointi eikä julkaisupäätös.
+
+| Kieli | Täsmällinen tarkistettu Git-blob | Sisältötila |
+| --- | --- | --- |
+| FI | `56b2720072a814c6b454dfed950e134ab573ff31` | draft |
+| EN | `c4f7c02af74397cbf419d2cb7f9abee4f4da10ce` | draft |
+| SV | `5a0e37fa7c279e382be5c112924b2c63a3b3c8a6` | draft |
+| TH | `f9ef5323b4d8f45c3f3c01ae95eee9407d8b5a57` | draft |
+
+Kaikissa kielissä: 2 annosta, kokonaisaika 50 minuuttia, 14 ainesosariviä samoilla määrillä ja yksiköillä, 6 valmistusvaihetta, yksi yhteinen 1536 × 1024 WebP-kuva, tekoälykuvituksen ilmoitus sekä porsaan (70 °C) ja riisin kuumana pitämisen (60 °C), jäähdyttämisen (enintään 6 °C) ja uudelleenkuumentamisen (yli 70 °C) turvallisuusohjeet.
+
+Toimituksellinen merkitystarkistus: `porsaan niska (kassler)` vastaa sanoja `pork collar`, `fläskkarré` ja `สันคอหมู`. Jasmiiniriisin 150 g tarkoittaa kuivapainoa jokaisessa kielessä. Marinadi sisältää 5 ml kalakastiketta, erillinen chili-limekastike 10 ml; 20 g valkosipulia jakautuu tasan marinadiin ja rapeaksi paistamiseen; 30 ml öljyä jaetaan kolmeen 10 ml erään. Raakaa marinadia ei käytetä kypsentämättömänä kastikkeena. Sianlihan kypsyys on varmistettava riippumatta pannun aikatiedosta.
+
+**Jäljellä olevan tarkistuksen rajaus:** käännösten muodolliset semanttiset hashit ja Codex-vertailumerkinnät, tuotekohtaiset kastike- ja allergeenitiedot sekä ravintoarvojen julkaisupäätös. Tähän muistioon ei kirjata `APPROVED`- tai `REVIEW CURRENT`-statusta ilman varsinaisen hyväksyntäputken todistetta.
+
+## Kuvajulkaisun varmistamaton osa
+
+Kuvan Git-tiedoston `kuvat/paaruoat/khao-moo-tod-kratiem-khai-dao.webp` (1536 × 1024; 525 776 tavua) SHA-256 on `4b9ac11edec1281a6dac41d2d035807bb5b921b7a9e675b702f1b4c907e741e8`. Tämä **todistaa vain tuotantokuvaksi tarkoitetun tiedoston tunnisteen**, ei ImageAssets `seal`-kuittia, alkuperäisen PNG:n varmennettua Proton-arkistointia, R2-paketin päivittämistä tai onnistunutta puhtaan kloonin tuotantobuildia tämän kuvan kanssa. Niitä ei korvata Gitissä olevan kuvan tai luonnoksen onnistuneen CI:n perusteella.
