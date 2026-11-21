@@ -6,7 +6,7 @@ category: alkuruoka
 language: fi
 status: draft
 servings: 6
-time_total_min: 45
+time_total_min: 65
 difficulty: keskitaso
 main_ingredient:
   - "silakka"
@@ -57,10 +57,10 @@ Uunissa paistetut silakkarullat on toimituksellinen suomalainen alkuruokaluonnos
 
 ## Valmistus
 
-1. Kuumenna uuni 190 asteeseen. Tarkista silakkafileiden ruodot ja taputtele kuiviksi.
+1. Kuumenna uuni 200 asteeseen. Tarkista silakkafileiden ruodot ja taputtele kuiviksi.
 2. Hienonna sipuli ja tilli, sekoita ne sinappiin. Levitä hieman seosta fileiden sisäpinnalle.
 3. Kääri fileet rulliksi ja aseta tiiviisti voideltuun pieneen uunivuokaan. Mausta ja kaada kerma ympärille.
-4. Paista noin 20–25 minuuttia fileiden koosta riippuen, kunnes kala on kauttaaltaan kypsää. Tarjoa lämpimänä pieninä alkupaloina.
+4. Paista noin 35–40 minuuttia fileiden koosta riippuen, kunnes kala on kauttaaltaan kypsää. Tarjoa lämpimänä pieninä alkupaloina.
 
 ## Muistiinpanot
 

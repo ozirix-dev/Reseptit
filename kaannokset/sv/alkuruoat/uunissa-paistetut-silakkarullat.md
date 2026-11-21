@@ -6,7 +6,7 @@ category: alkuruoka
 language: sv
 status: draft
 servings: 6
-time_total_min: 45
+time_total_min: 65
 difficulty: medel
 source_language: fi
 source_recipe: reseptit/alkuruoat/uunissa-paistetut-silakkarullat.md
@@ -44,10 +44,10 @@ Svenskt utkast för redaktionell kontroll; ingen egen provlagning har gjorts.
 
 ## Tillagning
 
-1. Värm ugnen till 190 °C. Kontrollera strömmingsfiléerna så att inga ben finns kvar och torka av dem.
+1. Värm ugnen till 200 °C. Kontrollera strömmingsfiléerna så att inga ben finns kvar och torka av dem.
 2. Finhacka lök och dill och blanda med senap. Bred lite på insidan av varje filé.
 3. Rulla filéerna och lägg tätt i en liten smord ugnsform. Krydda och häll grädden runtom.
-4. Grädda ungefär 20–25 minuter beroende på storlek tills fisken är genomstekt. Servera varm som förrätt.
+4. Grädda ungefär 35–40 minuter beroende på storlek tills fisken är genomstekt. Servera varm som förrätt.
 
 ## Livsmedelssäkerhet
 

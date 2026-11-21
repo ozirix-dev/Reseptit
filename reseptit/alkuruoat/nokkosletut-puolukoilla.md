@@ -6,7 +6,7 @@ category: alkuruoka
 language: fi
 status: draft
 servings: 6
-time_total_min: 45
+time_total_min: 65
 difficulty: keskitaso
 main_ingredient:
   - "nokkonen"
@@ -63,7 +63,7 @@ Pienet nokkosletut puolukoilla on toimituksellinen suomalainen alkuruokaluonnos.
 ## Valmistus
 
 1. Poimi nuoret nokkosen lehdet puhtaalta alueelta käsinein. Huuhtele ja keitä runsaassa kiehuvassa vedessä noin 5 minuuttia. Valuta, jäähdytä ja hienonna.
-2. Sekoita maito ja kananmunat sekä jauhot ja suola tasaiseksi taikinaksi. Lisää sulatettu voi ja nokkonen. Anna levätä noin 10 minuuttia.
+2. Sekoita maito ja kananmunat sekä jauhot ja suola tasaiseksi taikinaksi. Lisää sulatettu voi ja nokkonen. Anna taikinan levätä noin 30 minuuttia.
 3. Paista voissa pieniä lettuja kohtalaisella lämmöllä molemmin puolin, kunnes ne ovat läpikypsiä.
 4. Tarjoa lämpiminä ranskankerman ja puolukoiden kanssa.
 

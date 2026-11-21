@@ -6,7 +6,7 @@ category: alkuruoka
 language: en
 status: draft
 servings: 6
-time_total_min: 45
+time_total_min: 65
 difficulty: medium
 source_language: fi
 source_recipe: reseptit/alkuruoat/uunissa-paistetut-silakkarullat.md
@@ -44,10 +44,10 @@ Draft English adaptation for editorial review, not a tested Recipavo recipe.
 
 ## Instructions
 
-1. Preheat the oven to 190 °C. Check the Baltic herring fillets for any remaining bones and pat dry.
+1. Preheat the oven to 200 °C. Check the Baltic herring fillets for any remaining bones and pat dry.
 2. Finely chop the onion and dill and combine with mustard. Spread a little onto the inner side of each fillet.
 3. Roll the fillets up and arrange tightly in a small buttered baking dish. Season and pour the cream around them.
-4. Bake for about 20–25 minutes depending on thickness, until the fish is fully cooked. Serve warm as a small starter.
+4. Bake for about 35–40 minutes depending on thickness, until the fish is fully cooked. Serve warm as a small starter.
 
 ## Safety notes
 

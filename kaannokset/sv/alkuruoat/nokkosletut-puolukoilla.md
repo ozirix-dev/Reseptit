@@ -6,7 +6,7 @@ category: alkuruoka
 language: sv
 status: draft
 servings: 6
-time_total_min: 45
+time_total_min: 65
 difficulty: medel
 source_language: fi
 source_recipe: reseptit/alkuruoat/nokkosletut-puolukoilla.md
@@ -50,7 +50,7 @@ Svenskt utkast för redaktionell kontroll; ingen egen provlagning har gjorts.
 ## Tillagning
 
 1. Plocka unga, säkert artbestämda nässelblad från en ren plats med handskar. Skölj och koka i rikligt med vatten cirka 5 minuter. Låt rinna av, svalna och hacka.
-2. Blanda mjölk, ägg, mjöl och salt till en slät smet. Rör ner smält smör och nässlor. Låt vila i cirka 10 minuter.
+2. Blanda mjölk, ägg, mjöl och salt till en slät smet. Rör ner smält smör och nässlor. Låt smeten vila i cirka 30 minuter.
 3. Stek små plättar i resten av smöret på medelvärme. Vänd och grädda tills de är genomstekta.
 4. Servera varma med crème fraîche och lingon.
 

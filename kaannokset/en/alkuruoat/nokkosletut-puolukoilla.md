@@ -6,7 +6,7 @@ category: alkuruoka
 language: en
 status: draft
 servings: 6
-time_total_min: 45
+time_total_min: 65
 difficulty: medium
 source_language: fi
 source_recipe: reseptit/alkuruoat/nokkosletut-puolukoilla.md
@@ -50,7 +50,7 @@ Draft English adaptation for editorial review, not a tested Recipavo recipe.
 ## Instructions
 
 1. Wearing gloves, harvest young, positively identified nettle leaves from a clean area. Rinse and boil in plenty of water for approximately 5 minutes. Drain, cool and chop.
-2. Mix milk, eggs, flour and salt into a smooth batter. Add the melted butter and nettles. Rest for about 10 minutes.
+2. Mix milk, eggs, flour and salt into a smooth batter. Add the melted butter and nettles. Rest the batter for about 30 minutes.
 3. Pan-fry small pancakes in the remaining butter over medium heat, turning and cooking through.
 4. Serve warm with crème fraîche and lingonberries.
 

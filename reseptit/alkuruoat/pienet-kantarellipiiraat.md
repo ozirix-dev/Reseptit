@@ -6,7 +6,7 @@ category: alkuruoka
 language: fi
 status: draft
 servings: 8
-time_total_min: 55
+time_total_min: 75
 difficulty: keskitaso
 main_ingredient:
   - "kantarelli"

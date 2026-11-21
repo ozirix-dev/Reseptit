@@ -6,7 +6,7 @@ category: alkuruoka
 language: th
 status: draft
 servings: 8
-time_total_min: 55
+time_total_min: 75
 difficulty: ปานกลาง
 source_language: fi
 source_recipe: reseptit/alkuruoat/pienet-kantarellipiiraat.md
