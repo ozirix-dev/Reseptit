@@ -1,7 +1,7 @@
 # Issue #369: FI-lähteen oikeellisuusportin nykytila ja toteutusaukot
 
-**Päiväys:** 21.11.2026  
-**Työn omistaja:** Chat-5 (tämä rajattu katselmointi, ei muiden PR:ien omistajuutta)  
+**Päiväys:** 21.11.2026
+**Työn omistaja:** Chat-5 (tämä rajattu katselmointi, ei muiden PR:ien omistajuutta)
 **Tila:** READ-ONLY AUDIT / DRAFT – ei tuotantohyväksyntää, automaattijulkaisua tai ihmisen katselmoinniksi merkitsemistä.
 
 ## 1. Jo olemassa olevat mekanismit
