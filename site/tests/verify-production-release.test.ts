@@ -131,8 +131,8 @@ test("production verification distinguishes stale headers from wrong bytes or pa
     await assert.rejects(verify("bootstrap-hidden"), /expected one first-party module entry/);
   });
   await t.test("rejects stale or missing #404 recipe pages in any locale", async () => {
-    await assert.rejects(verify("recipe-http"), /\\/sv\\/recept\\/.* 404/);
-    await assert.rejects(verify("recipe-revision"), /\\/sv\\/recept\\/.* revision/);
+    await assert.rejects(verify("recipe-http"), /pinaatti-fetashakshuka/);
+    await assert.rejects(verify("recipe-revision"), /pinaatti-fetashakshuka.*revision/);
   });
   await t.test("rejects live recipe ingredients or safety steps diverging from the release", async () => {
     await assert.rejects(verify("recipe-ingredients"), /live ingredient list differs from artifact/);
