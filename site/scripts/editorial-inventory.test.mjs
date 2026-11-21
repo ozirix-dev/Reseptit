@@ -88,7 +88,7 @@ test('excludes unparseable content and foreign-language recipes', () => {
 
 test('classifies absent/null time separately from malformed, unsafe or nonpositive values', () => {
   const inputs = [
-    ['absent', 'time_total_min: 30\\n', ''],
+    ['absent', 'time_total_min: 30', ''],
     ['explicit-null', 'time_total_min: 30', 'time_total_min: null'],
     ['zero', 'time_total_min: 30', 'time_total_min: 0'],
     ['negative', 'time_total_min: 30', 'time_total_min: -5'],
