@@ -740,6 +740,30 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
   "vietnamilainen-hu-tieu-aamiaiskeitto/th": {
     "description": "ต้มหมูสันนอกหั่นเส้นและเส้นก๋วยเตี๋ยวในหม้อเดียวกัน เติมถั่วงอกกับผักชีสด เสิร์ฟเป็นอาหารเช้าสองที่พร้อมน้ำซุปทั้งหมด"
   }
+  "valimerellinen-menemen-fetalla/fi": {
+    nutritionBasis: "### Ravintoarvion laskentaperusta\n\nKahden annoksen arvio käyttää 150 g vuohenmaitofetaa, jossa on 25 % rasvaa ([Fineli 11211](https://fineli.fi/fineli/api/v1/foods/11211)), kahta kuoretonta kananmunaa (55 g/kpl), 125 g tomaattia, 170 g vihreää paprikaa ja 1 rkl eli 13,5 g paistoöljyä. Laskennassa koko öljymäärä sisältyy annoksiin. Fetan koostumus, kasvisten koko ja pannulle jäävä öljy voivat muuttaa arvoja. Nämä ovat laskennallisia arvioita, eivät valmiista ateriasta mitattuja ravintoarvoja.",
+  },
+  "valimerellinen-menemen-fetalla/en": {
+    nutritionBasis: "### Nutrition estimate assumptions\n\nThe two-serving estimate uses 150 g of goat-milk feta with 25% fat ([Fineli 11211](https://fineli.fi/fineli/api/v1/foods/11211)), two shell-free eggs (55 g each), a 125 g tomato, a 170 g green bell pepper and 1 tbsp (13.5 g) of cooking oil. The calculation counts all the oil as part of the portions. Different feta, vegetable sizes or oil left in the pan will change the figures. These are calculated estimates, not measurements of the finished meal.",
+  },
+  "valimerellinen-menemen-fetalla/sv": {
+    nutritionBasis: "### Antaganden för näringsberäkningen\n\nBeräkningen för två portioner utgår från 150 g feta av getmjölk med 25 % fett ([Fineli 11211](https://fineli.fi/fineli/api/v1/foods/11211)), två ägg utan skal (55 g per ägg), 125 g tomat, 170 g grön paprika och 1 msk (13,5 g) matolja. Hela oljemängden räknas med i portionerna. Annan feta, andra grönsaksstorlekar eller olja som blir kvar i pannan förändrar värdena. Detta är beräknade uppskattningar, inte mätningar av den färdiga rätten.",
+  },
+  "valimerellinen-menemen-fetalla/th": {
+    nutritionBasis: "### สมมติฐานในการคำนวณคุณค่าทางโภชนาการ\n\nค่าประมาณสำหรับ 2 ที่ใช้ชีสเฟตาจากนมแพะไขมัน 25% จำนวน 150 กรัม ([Fineli 11211](https://fineli.fi/fineli/api/v1/foods/11211)) ไข่ไก่ไม่รวมเปลือก 2 ฟอง ฟองละ 55 กรัม มะเขือเทศ 125 กรัม พริกหวานสีเขียว 170 กรัม และน้ำมันปรุงอาหาร 1 ช้อนโต๊ะ (13.5 กรัม) โดยนับน้ำมันทั้งหมดรวมในอาหาร หากเปลี่ยนชนิดเฟตา ขนาดผัก หรือมีน้ำมันเหลือในกระทะ ค่าจริงจะต่างออกไป ตัวเลขเหล่านี้เป็นค่าประมาณจากการคำนวณ ไม่ใช่ผลวัดอาหารที่ปรุงเสร็จแล้ว",
+  },
+  "valimerellinen-pinaatti-fetashakshuka/fi": {
+    nutritionBasis: "### Ravintoarvion laskentaperusta\n\nKahden annoksen arvio käyttää 150 g vuohenmaitofetaa, jossa on 25 % rasvaa ([Fineli 11211](https://fineli.fi/fineli/api/v1/foods/11211)), kahta kuoretonta kananmunaa (55 g/kpl), 125 g tomaattia, 100 g raakaa täysikasvuista pinaattia (AFCD F008761) ja 1 rkl eli 13,5 g paistoöljyä. Koko öljymäärä lasketaan syödyksi. Tuotevalinta ja mahdollinen pannulle jäävä öljy muuttavat arviota. GK:n historiallinen pinaattitietue on eri kuin ravintolaskennan; GK on erillinen rajattu arvio eikä tämän ravintoarvotaulukon täsmällinen uudelleenlasku.",
+  },
+  "valimerellinen-pinaatti-fetashakshuka/en": {
+    nutritionBasis: "### Nutrition estimate assumptions\n\nThe two-serving estimate uses 150 g of goat-milk feta with 25% fat ([Fineli 11211](https://fineli.fi/fineli/api/v1/foods/11211)), two shell-free eggs (55 g each), a 125 g tomato, 100 g raw mature spinach (AFCD F008761) and 1 tbsp (13.5 g) cooking oil. All the oil is counted as eaten. Your product choices and oil left in the pan affect the result. The historical glycemic-load estimate used a different spinach record; it is a separate, scoped estimate, not an exact recalculation of this nutrition panel.",
+  },
+  "valimerellinen-pinaatti-fetashakshuka/sv": {
+    nutritionBasis: "### Antaganden för näringsberäkningen\n\nBeräkningen för två portioner utgår från 150 g feta av getmjölk med 25 % fett ([Fineli 11211](https://fineli.fi/fineli/api/v1/foods/11211)), två ägg utan skal (55 g per ägg), 125 g tomat, 100 g rå mogen spenat (AFCD F008761) och 1 msk (13,5 g) matolja. All olja räknas som uppäten. Val av produkt och olja som blir kvar i pannan påverkar resultatet. Den historiska uppskattningen av glykemisk belastning använde en annan spenatpost; det är en separat avgränsad uppskattning och inte en exakt omräkning av dessa näringsvärden.",
+  },
+  "valimerellinen-pinaatti-fetashakshuka/th": {
+    nutritionBasis: "### สมมติฐานในการคำนวณคุณค่าทางโภชนาการ\n\nค่าประมาณสำหรับ 2 ที่ใช้ชีสเฟตาจากนมแพะไขมัน 25% จำนวน 150 กรัม ([Fineli 11211](https://fineli.fi/fineli/api/v1/foods/11211)) ไข่ไก่ไม่รวมเปลือก 2 ฟอง ฟองละ 55 กรัม มะเขือเทศ 125 กรัม ผักโขมใบโตดิบ 100 กรัม (AFCD F008761) และน้ำมันปรุงอาหาร 1 ช้อนโต๊ะ (13.5 กรัม) โดยนับน้ำมันทั้งหมดว่าถูกบริโภค ชนิดผลิตภัณฑ์ที่ใช้และน้ำมันที่เหลือในกระทะทำให้ค่าจริงเปลี่ยนไป ส่วนการประมาณภาระน้ำตาล (GK) เดิมใช้ข้อมูลผักโขมคนละรายการ จึงเป็นการประมาณแบบแยกต่างหาก ไม่ใช่การคำนวณตัวเลขในตารางโภชนาการนี้ซ้ำอย่างตรงกัน",
+  },
 };
 
 export function reviewedRecipeCopy(id: string, locale: RecipeLocale): ReviewedRecipeCopy | undefined {
