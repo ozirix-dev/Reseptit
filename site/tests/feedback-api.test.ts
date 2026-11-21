@@ -17,18 +17,23 @@ function request(body: unknown, headers: Record<string, string> = {}): Request {
   });
 }
 
-function mockDb() {
+function mockDb(lastSuccessAt: string | null = new Date().toISOString()) {
   const writes: { sql: string; values: (string | null)[] }[] = [];
+  const reads: string[] = [];
   const database: NonNullable<FeedbackEnvironment["FEEDBACK_DB"]> = {
     prepare(sql) {
       return {
+        async first() {
+          reads.push(sql);
+          return lastSuccessAt === null ? null : { last_success_at: lastSuccessAt };
+        },
         bind(...values) {
           return { async run() { writes.push({ sql, values }); return { success: true }; } };
         },
       };
     },
   };
-  return { database, writes };
+  return { database, writes, reads };
 }
 
 function configured(database: NonNullable<FeedbackEnvironment["FEEDBACK_DB"]>): FeedbackEnvironment {
@@ -123,10 +128,49 @@ test("oversized request and bot honeypot do not consume Turnstile or D1 writes",
 
 test("backend storage errors do not acknowledge a report as accepted", async () => {
   const failing: NonNullable<FeedbackEnvironment["FEEDBACK_DB"]> = {
-    prepare() { return { bind() { return { async run() { throw new Error("D1 unavailable"); } }; } }; },
+    prepare() { return { async first() { return { last_success_at: new Date().toISOString() }; }, bind() { return { async run(): Promise<{ success: boolean }> { throw new Error("D1 unavailable"); } }; } }; },
   };
   const response = await handleFeedback({ request: request(valid), env: configured(failing) }, verifier());
   assert.equal(response.status, 503);
   assert.equal((await response.json() as { error: string }).error, "storage_unavailable");
   assert.equal(onRequestGet().status, 405);
+});
+
+
+test("missing, stale, malformed and future deletion evidence blocks intake before Turnstile", async () => {
+  const values: Array<string | null> = [
+    null,
+    new Date(Date.now() - 49 * 60 * 60 * 1000).toISOString(),
+    "not-a-timestamp",
+    new Date(Date.now() + 15 * 60 * 1000).toISOString(),
+  ];
+  for (const value of values) {
+    const db = mockDb(value);
+    const response = await handleFeedback(
+      { request: request(valid), env: configured(db.database) },
+      (async () => { throw new Error("Turnstile must not be called when maintenance fails"); }) as typeof fetch,
+    );
+    assert.equal(response.status, 503);
+    assert.deepEqual(await response.json(), { error: "maintenance_unavailable" });
+    assert.equal(db.writes.length, 0);
+    assert.equal(db.reads.length, 1);
+    assert.match(db.reads[0], /^SELECT last_success_at FROM feedback_maintenance /u);
+  }
+});
+
+test("failed maintenance query blocks feedback even if other bindings are valid", async () => {
+  const database: NonNullable<FeedbackEnvironment["FEEDBACK_DB"]> = {
+    prepare() {
+      return {
+        async first(): Promise<unknown> { throw new Error("database unavailable"); },
+        bind() { return { async run() { return { success: true }; } }; },
+      };
+    },
+  };
+  const response = await handleFeedback(
+    { request: request(valid), env: configured(database) },
+    (async () => { throw new Error("Do not call Turnstile"); }) as typeof fetch,
+  );
+  assert.equal(response.status, 503);
+  assert.equal((await response.json() as { error: string }).error, "maintenance_unavailable");
 });
