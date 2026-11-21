@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "kermainen-tillikastike",
   "source_path": "reseptit/alkuruoat/kermainen-tillikastike.md",
-  "source_sha256": "1cbaac514817082c600deaa12aa79af709f3c45848ebfc679bc5d0a0ac41eeba",
+  "source_sha256": "33a53e7d69efbe161d5f1732afbf9157d906aebb5c08981fbca5b7a1ef2d21a3",
   "decision": "hold",
   "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
   "reviewed_at": "2026-11-21",
@@ -12,7 +12,7 @@
       "https://www.valio.fi/reseptit/tillikastike-kalalle/"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/kermainen-tillikastike.json",
   "checks": {
     "duplicates": {
       "status": "pending",
@@ -35,8 +35,8 @@
       "notes": "Recipavo 4 pientä lisukeannosta / 25 min sisältäen 15 minuutin kylmämaustumisen; Valion sekoitus 5 min. Kylmämaustuminen ja valmistelu selittävät aikaeron."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Six-row source-matched calculation package staged at docs/nutrition/calculations/kermainen-tillikastike.json, inputHash 3c80ddde80a9596d3591b78dd85f970091e5410e6684589de842bd49ca51af4d; independent verification against site/scripts/nutrition-model.ts required before publishing macros or marking this check PASS."
+      "status": "pass",
+      "notes": "Laskettu ainesosista 4 annokselle käyttäen täsmällisiä grammoja sekä kuutta lähdekorttia: Fineli 11152 (kermaviili 10–12 % laktoositon), 369 (tilli), 11557 (sitruunamehu), 1 (sokeri), 30 (suola) ja FSANZ AFCD F006618 (jauhettu mustapippuri). Kaikille vahvistettu CHO-, FIBT-, POLYL-, proteiini- ja rasva-arvot, kylmävalmistuksen retainedFraction=1 sekä syötävä massa grammoina. InputHash 3c80ddde80a9596d3591b78dd85f970091e5410e6684589de842bd49ca51af4d. 4 arvoa / annos: nettohiilihydraatit 2,89 g, kokonaishiilihydraatit 3,07 g, proteiini 1,52 g, rasva 6,04 g. Laskennan kaavat tarkistettu site/scripts/nutrition-model.ts -malliin peilaten; tämä on toimituksellinen laskennallinen arvio, ei laboratorio-/tuotemerkkikohtainen mittaus, ja koko reseptin decision säilyy HOLD kunnes käännös-/kuvajulkaisuportit hyväksytään."
     },
     "glycemic": {
       "status": "unavailable",
