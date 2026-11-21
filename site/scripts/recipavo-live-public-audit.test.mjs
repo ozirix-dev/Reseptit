@@ -39,6 +39,8 @@ test("a source-pinned complete public observation does not authorize link publis
   const result = await checkPublicRoutes({fetcher: syntheticFetch, expectedSha: sha});
   assert.equal(result.statuses.http, "PASS");
   assert.equal(result.statuses.releaseSha, "PASS");
+  assert.equal(result.statuses.shaConsistency, "PASS");
+  assert.equal(result.statuses.canonical, "PASS");
   assert.equal(result.statuses.overall, "PASS");
   assert.equal(result.summary.checked, 9);
   assert.equal(result.summary.matchingHttpStatuses, 9);
@@ -91,4 +93,24 @@ test("wrong canonical and mismatched commit both block live success", async () =
 test("reject insecure origins and invalid expected SHA", async () => {
   await assert.rejects(checkPublicRoutes({origin: "http://example.org", fetcher: syntheticFetch}), /HTTPS/);
   await assert.rejects(checkPublicRoutes({expectedSha: "abc", fetcher: syntheticFetch}), /40-character/);
+});
+
+test("same HTTP status but stale robots.txt commit must fail SHA consistency", async () => {
+  const olderSha = "b".repeat(40);
+  const report = await checkPublicRoutes({
+    expectedSha: sha,
+    fetcher: async url => {
+      const response = await syntheticFetch(url);
+      if (!url.endsWith("/robots.txt")) return response;
+      return new Response("User-agent: *\nAllow: /\n", {
+        status: 200, headers: {"content-type": "text/plain", "X-Recipavo-Commit": olderSha},
+      });
+    },
+  });
+  assert.equal(report.statuses.http, "PASS");
+  assert.equal(report.statuses.canonical, "PASS");
+  assert.equal(report.statuses.shaConsistency, "HOLD");
+  assert.equal(report.statuses.releaseSha, "NOT VERIFIED");
+  assert.deepEqual(report.summary.distinctSourceShas, [sha, olderSha].sort());
+  assert.equal(report.statuses.overall, "HOLD");
 });
