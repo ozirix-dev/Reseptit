@@ -87,8 +87,12 @@ export function analyze(sources, quarantine = new Set()) {
     const nextSection = /^##\s+/m.exec(afterTitle);
     const lead = clean(nextSection ? afterTitle.slice(0, nextSection.index) : afterTitle);
     const description = clean(section(parsed.body, 'Kuvaus'));
-    if (lead) add(leadMap, canonical(lead), evidence);
-    if (lead && GENERIC.test(lead)) genericLead.push(evidence);
+    // Many older FI recipes place their entire introduction under ## Kuvaus.
+    // Use one visible introduction for frequency signals, but detect a
+    // duplicate only when two separate fields are actually present.
+    const primaryLead = lead || description;
+    if (primaryLead) add(leadMap, canonical(primaryLead), evidence);
+    if (primaryLead && GENERIC.test(primaryLead)) genericLead.push(evidence);
     if (lead && description && canonical(lead) === canonical(description)) duplicateDescription.push(evidence);
 
     const preparation = section(parsed.body, 'Valmistus');
