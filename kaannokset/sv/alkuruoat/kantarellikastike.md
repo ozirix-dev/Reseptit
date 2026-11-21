@@ -20,7 +20,7 @@ tags:
   - "finsk"
 image:
   src: alkuruoat/kantarellikastike.webp
-  alt: "Krämig svampsås i en skål med brynta svampar och persilja; illustrationsbild"
+  alt: "Krämig kantarellsås med gyllengula kantareller, lök och persilja i en keramikskål; AI-bild"
   width: 960
   height: 640
 ingredients:

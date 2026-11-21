@@ -20,7 +20,7 @@ tags:
   - "Finnish"
 image:
   src: alkuruoat/kantarellikastike.webp
-  alt: "Creamy mushroom sauce in a bowl with browned mushrooms and parsley; illustrative image"
+  alt: "Creamy chanterelle sauce in a ceramic bowl, with golden chanterelles, onion and parsley; AI illustration"
   width: 960
   height: 640
 ingredients:

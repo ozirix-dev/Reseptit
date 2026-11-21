@@ -25,7 +25,7 @@ translation_status:
   th: draft
 image:
   src: alkuruoat/kantarellikastike.webp
-  alt: "Kermainen sienikastike kulhossa, pinnalla ruskistuneita sieniä ja persiljaa; kuvituskuva"
+  alt: "Vaalea kermainen kantarellikastike, jossa näkyy kullankeltaisia kantarelleja, sipulia ja persiljaa; tekoälykuvitus"
   width: 960
   height: 640
 ingredients:
