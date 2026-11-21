@@ -53,3 +53,7 @@
 - Kylmän piparjuurikastikkeen FI/EN/SV/TH-ainesrivin sitruunamehu on nyt **12 g punnittuna**. Tämä on nelikielinen, yhteinen lähdereseptin sisältömuutos, eikä sitä pidä tulkita 12 ml:n tiheysmuunnokseksi.
 - Thaikielisen valmistusvaiheen yleisluontoinen `น้ำมะนาว` (tavallisesti lime) korjattiin muotoon `น้ำมะนาวเหลือง` (sitruuna), joka vastaa täsmälleen thaikielistä ainesosariviä ja FI-lähteen sitruunamehua. Muutos täsmensi ainesosan tunnistusta, ei muuttanut annosta, valmistusmenetelmää eikä reseptin lämpötilaa.
 - Tämä on rajattu Chat 3:n semanttinen korjaus, **ei** lopullinen riippumaton kielikatselmointi, uusi `semanticHash`-hyväksyntä tai `meta/kaannokset/codex-review-evidence.json`-merkintä. Kieliversiot ja koko PR pysyvät Draft/HOLD.
+
+## Jatkotarkistus 22.11.2026 – vaniljakastikkeen paakkujen käsittely
+
+FI/EN/SV/TH-valmistusvaiheiden 3 teksteistä poistettiin paakkujen valinnainen siivilöinti ja korvattiin se pienien paakkujen vatkaamisella tasaisiksi. Tämä säilyttää ainesosat laskennallista ravintosisältöä varten. Vain menetelmäteksti muuttui; annosmäärä, ainesosat ja lämpötila 82–85 °C pysyivät ennallaan. FI-lähde SHA-256 `ec655927a2ae1370f6283740c1bc533e81970926f80705a875dd75653e10fe28`. Tämä merkintä on Chat 3:n rajattu merkitysvertailu; se **ei ole virallinen Codexin tai riippumattoman tarkastajan PASS**. Kaikki neljä kieliversiota pysyvät Draft/HOLD.
