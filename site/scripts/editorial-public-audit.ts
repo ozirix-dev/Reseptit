@@ -17,6 +17,7 @@ export type RawInventory = {
     repeatedSteps: RawRepeat[];
     duplicateDescription: Evidence[];
     missingTime: Evidence[];
+    invalidTime?: (Evidence & { rawValue: string })[];
   };
 };
 export type PublicRecipe = Pick<RecipeEntry,
@@ -74,6 +75,7 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
     ["genericLead", raw.signals.genericLead],
     ["duplicateDescription", raw.signals.duplicateDescription],
     ["missingTime", raw.signals.missingTime],
+    ["invalidTime", raw.signals.invalidTime ?? []],
   ] as const) {
     const seen = new Set<string>();
     for (const item of records) {
@@ -82,6 +84,15 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
         throw new Error("DUPLICATE_RAW_SIGNAL: " + name + ":" + item.recipeId);
       }
       seen.add(item.recipeId);
+    }
+  }
+  // The new invalid-time list is a classified subset of missingTime.
+  // Keep it optional for older inventories and audit fixtures.
+  const missingTimeIds = new Set(raw.signals.missingTime.map(item => item.recipeId));
+  for (const item of raw.signals.invalidTime ?? []) {
+    if (!missingTimeIds.has(item.recipeId) || typeof item.rawValue !== "string" ||
+        !item.rawValue.trim() || item.rawValue.trim().toLowerCase() === "null") {
+      throw new Error("INVALID_RAW_TIME_SIGNAL: " + item.recipeId);
     }
   }
   const repeatPhrases = new Set<string>();
