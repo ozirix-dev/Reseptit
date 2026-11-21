@@ -67,7 +67,7 @@ Detta är ett traditionellt recept ur det finska hemmaköket.
 ## Gör så här
 
 1. Sätt ugnen på 225 °C. Låt ströbrödet svälla i köttbullarnas mjölk i 10 minuter. Blanda med färs, lök, ägg samt en del salt och peppar.
-2. Rulla cirka 20 små köttbullar. Stek i 225 °C i 15–20 minuter tills de är genomstekta.
+2. Rulla cirka 20 små köttbullar. Stek i 225 °C i ungefär 15–20 minuter och kontrollera med termometer att mitten når minst 70 °C. Tiden beror på storleken.
 3. Skala och dela potatisen. Koka mjuk i cirka 20 minuter, häll av och mosa. Rör ner varm mjölk till moset, 40 g smör och lite salt.
 4. Smält smöret till såsen, rör ner vetemjölet och bryn lätt. Vispa gradvis i varmt vatten eller buljong och sjud 5–8 minuter.
 5. Krydda såsen med resten av saltet och pepparn. Servera köttbullarna med brunsås och potatismos.

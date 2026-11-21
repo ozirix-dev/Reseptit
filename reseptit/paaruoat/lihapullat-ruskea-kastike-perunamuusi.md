@@ -72,7 +72,7 @@ Lihapullat, ruskea kastike ja perunamuusi on osa suomalaista perinneruokaa.
 ## Valmistus
 
 1. Kuumenna uuni 225 °C:seen. Liota korppujauhot lihapullien maidossa 10 minuuttia. Sekoita jauheliha, sipuli, kananmuna, korppujauhoseos ja osa suolasta sekä pippuri.
-2. Pyöritä noin 20 pientä lihapullaa. Paista 225 °C:ssa 15–20 minuuttia, kunnes ne ovat kauttaaltaan kypsiä.
+2. Pyöritä noin 20 pientä lihapullaa. Paista 225 °C:ssa alustavasti 15–20 minuuttia ja varmista paistomittarilla, että lihapullien keskusta on vähintään 70 °C. Paistoaika riippuu koosta.
 3. Kuori ja paloittele perunat. Keitä pehmeiksi noin 20 minuuttia, valuta ja survo. Sekoita joukkoon lämmin muusimaito, 40 g voita ja ripaus suolaa.
 4. Sulata kastikevoi pannulla, lisää vehnäjauhot ja ruskista vaaleanruskeaksi sekoittaen. Lisää kuuma vesi tai liemi vähitellen vatkaten ja hauduta 5–8 minuuttia.
 5. Mausta kastike lopulla suolalla ja pippurilla. Tarjoa lihapullat, ruskea kastike ja perunamuusi yhdessä.

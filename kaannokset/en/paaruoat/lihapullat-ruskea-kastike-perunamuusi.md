@@ -67,7 +67,7 @@ This is a traditional Finnish home-cooking recipe.
 ## Preparation
 
 1. Preheat the oven to 225°C. Soak breadcrumbs in the meatball milk for 10 minutes. Mix with mince, onion, egg and some salt and pepper.
-2. Shape about 20 small meatballs. Bake at 225°C for 15–20 minutes until fully cooked.
+2. Shape about 20 small meatballs. Bake at 225°C for approximately 15–20 minutes; check with a thermometer that their centres reach at least 70°C. The cooking time depends on size.
 3. Peel and cut potatoes. Boil until tender, about 20 minutes. Drain, mash and mix in warm milk for mash, 40 g butter and some salt.
 4. Melt the butter for the gravy, stir in flour and brown lightly. Gradually whisk in hot water or stock and simmer for 5–8 minutes.
 5. Season gravy with remaining salt and pepper. Serve the meatballs with brown gravy and mashed potatoes.
