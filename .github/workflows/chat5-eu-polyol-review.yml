@@ -27,6 +27,19 @@ jobs:
       - name: Verify only EU-total and source-guard regression tests
         working-directory: site
         run: npx tsx --test --test-name-pattern="EU.total|EU total|unverified EU total" tests/nutrition-model.test.ts
+      - name: Compare pinned historical and changed calculations (read-only)
+        working-directory: site
+        run: npx tsx scripts/eu-polyol-impact-audit.ts
+      - name: Save EU-polyol impact comparison
+        if: always()
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: chat5-eu-polyol-impact
+          path: |
+            tmp/eu-polyol-impact/current.json
+            tmp/eu-polyol-impact/current.md
+          if-no-files-found: ignore
+          retention-days: 14
       - name: Declare audit-only result
         run: |
           echo "Targeted tests are advisory and DO NOT replace required Recipe site CI." >> "$GITHUB_STEP_SUMMARY"
