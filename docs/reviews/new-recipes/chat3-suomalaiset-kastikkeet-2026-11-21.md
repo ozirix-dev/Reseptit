@@ -11,3 +11,7 @@ Kuvat: kaikki 10 WebP-havainnekuvaa on nyt tallennettu `kuvat/alkuruoat/`- tai `
 Ravintoarvoja eikä numeerista GK:ta ole arvattu. Kaikki on tietoisesti `status: draft`. Käännöksiä ei ole julkaistu eikä nelikielisen merkitysvertailun julkaisuevidenssiä ole kuitattu.
 
 Julkaisun portit: kuvien korvaaminen/viimeistely tarpeen mukaan ja hyväksyntä, reseptikohtainen ravinto- ja GK-arvio/päätös, turvallisuustarkistus, merkityskatselmointi, täsmä-HEAD-CI ja Repo Guard. Ei mergeä eikä Cloudflare-julkaisua.
+
+## CI-kuvasyötteen varmennus 21.11.2026
+
+Kymmenen Git-tracked WebP-kuvaa lisättiin `assets/images.tracked-overlays.json`-tiedostoon tarkalla tavumäärällä ja SHA-256-tiivisteellä. Manifestin `approved: true` vahvistaa tämän yksilöidyn kuvatiedoston teknisesti hyväksytyksi CI:n erilliseksi lähdesyötteeksi. **Se ei ole** sisällöllinen/valokuvallinen hyväksyntä, julkaisulupa eikä valmis ravintoarvio. Erityisesti kantarelli-, puolukka- ja vaniljakastikkeen kuvien sisällöllinen HOLD säilyy, kunnes vastaava kuva vaihdetaan tai hyväksytään perustellusti. R2:n alkuperäistä 396 kuvan varmennettua arkistoa ei muutettu.
