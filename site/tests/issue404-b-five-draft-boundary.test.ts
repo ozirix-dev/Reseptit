@@ -118,3 +118,40 @@ test("issue 404: five proposed copies stay entirely outside public recipe and tr
     assert.doesNotMatch(source, /^(?:reseptit|kaannokset)\//);
   }
 });
+
+
+test("issue 404: critical food-safety controls remain explicit in the three high-risk drafts", async () => {
+  const readDraft = (id: string) =>
+    readFile(path.join(draftDirectory, id + "-punnittu-v2.md"), "utf8");
+  const [idli, kuih, xoi, review] = await Promise.all([
+    readDraft("intialainen-idli-kookoschutneylla"),
+    readDraft("malesialainen-kuih-seri-muka"),
+    readDraft("vietnamilainen-xoi-maapahkinalla"),
+    readFile(path.join(draftDirectory, "README.md"), "utf8"),
+  ]);
+
+  // Idli is a spontaneously fermented, moist grain/pulse dough. A timer and
+  // visible bubbles cannot substitute for process and food-safety evidence.
+  assert.match(idli, /4[–-]6 tuntia jääkaapissa, enintään 4 °C/);
+  assert.match(idli, /enimmäiskesto on \*\*4 tuntia\*\*/);
+  assert.match(idli, /\*\*2 % suolapitoisuuden\*\*/);
+  assert.match(idli, /\*\*12[–-]14 tuntia noin 30 °C:ssa\*\*/);
+  assert.match(idli, /\*\*pH ≤ 4,6\*\*/);
+  assert.match(idli, /\*\*vähintään 74 °C vähintään 15 sekunniksi\*\*/);
+  assert.match(idli, /bccdc\.ca\/resource-gallery\/Documents\//);
+  assert.doesNotMatch(idli, /anna käydä lämpimässä noin \*\*8[–-]12 tuntia\*\*/);
+
+  // Cooked rice and rice-with-egg custard must not sit at room temperature
+  // waiting to cool. The source-backed guidance is also declared in README.
+  for (const [name, draft] of [["kuih", kuih], ["xoi", xoi]] as const) {
+    assert.match(draft, /\*\*mieluiten tunnin kuluessa\*\*/, name);
+    assert.match(draft, /\*\*5 °C\*\*/, name);
+    assert.match(draft, /gov\.uk\/government\/publications\/home-food-fact-checker/, name);
+    assert.match(draft, /foodstandards\.gov\.au\/consumer\/prevention-of-foodborne-illness/, name);
+  }
+  assert.match(kuih, /jääkaapissa, ei tuntikausien huoneenlämpöodotuksessa|jääkaappiin \*\*mieluiten tunnin kuluessa\*\*/);
+  assert.match(xoi, /\*\*vain kerran\*\*/);
+  assert.match(review, /BC Centre for Disease Control \(2024\)/);
+  assert.match(review, /Bacillus cereus/);
+  assert.match(review, /edelleen HOLD/);
+});
