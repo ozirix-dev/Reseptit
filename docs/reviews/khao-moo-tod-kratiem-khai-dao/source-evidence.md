@@ -7,7 +7,7 @@ Tila: Draft, ei julkaisuhyväksyntää eikä Recipavon omaa koekeittiötestiä.
 ## Tarkistetut valmistuslähteet
 
 1. Wongnai, **Fried Pork with Garlic and Pepper**, 2019: https://www.wongnai.com/recipes/fried-pork-with-garlic-and-pepper
-   - Porsaan marinoiminen soija- ja osterikastikkeella, valkosipulilla, korianterinjuurella ja pippurilla 30 minuuttia sekä pannukypsennys. **Tämä lähde ei ohjeista paistettua kananmunaa**, joten munan tarjoilun näyttö perustuu lähteisiin 2 ja 3.
+   - Porsaan marinoiminen soija- ja osterikastikkeella, valkosipulilla, korianterinjuurella ja pippurilla 30 minuuttia sekä pannukypsennys. Paistettu kananmuna mainitaan tämän lähteen tarjoiluvinkissä, mutta se ei kuulu ainesluetteloon eikä munan paistoa kuvata työvaiheissa. Kananmunan tarjoilun yksityiskohtainen näyttö perustuu erityisesti lähteeseen 3.
 2. Wongnai, käyttäjän valmistusohje, 2018: https://www.wongnai.com/recipes/ugc/f4cc9e8a316e420581e34388a831491e
    - Valkosipulin erillinen ruskistus, marinoitu porsas samalla öljyllä; riisin ja paistetun kananmunan kanssa tarjoilu.
 3. *I Wish I Was in Thailand*, 2015: https://iwishiwasinthailand.blogspot.com/2015/11/khao-moo-tod-gratiem-rice-with-crispy.html
@@ -20,7 +20,7 @@ Tila: Draft, ei julkaisuhyväksyntää eikä Recipavon omaa koekeittiötestiä.
 
 - Suomalaisissa ruokakaupoissa saatava **porsaan kassler / niska** valittiin rasvaiseksi ja pannulla hyvin paistuvaksi osaksi; lähteissä vaihtelevat lapa, niska ja filee.
 - Kaksi annosta, 300 g raakaa lihaa ja kaksi kananmunaa perustuvat kolmannen lähteen mittakaavaan. 150 g raakaa jasmiiniriisiä, 20 g valkosipulia ja 30 ml paistoöljyä ovat toimituksellisia mitoituksia, eivät alkuperäisten lähteiden mittaustuloksia.
-- Marinadin 20 minuutin jääkaappiaika vastaa Riverside Thai Cooking -ohjetta; muissa lähteissä marinointi vaihtelee. Kaikki pannulle lisätty raaka marinadi kypsennetään lihan mukana.
+- Marinadin 20 minuutin jääkaappiaika vastaa Riverside Thai Cooking -ohjetta; muissa lähteissä marinointi vaihtelee. Riisi kypsennetään marinoinnin aikana, jolloin keitetyn riisin kuumana odottaminen jää lyhyeksi. Kaikki pannulle lisätty raaka marinadi kypsennetään lihan mukana.
 - Chili-kalakastike, kurkku ja rapeareunaisen munan viimeistely ovat kuvaan ja tavanomaiseen tarjoiluun perustuvia toimituksellisia täydentäviä osia, eivät niiden määräarvoiltaan lähteistä varmistettuja.
 - Wongnain ensimmäinen ja Riverside Thai Cookingin ohje käyttävät korianterinjuurta; tämä sovitus **jättää sen pois**. Myös maustemäärät vaihtelevat ja osa lähteistä annostelee ruokalusikoissa. Tämä luonnos ei väitä lähteiden mittojen olevan suoraan keskenään vaihdettavia.
 - Valkosipulin ruskistusaika vaihtelee paloittelun, lämmön ja öljymäärän mukaan (kolmas lähde 6–10 minuuttia). Ohjeessa kullanruskea väri ratkaisee, ei yksin 1–2 minuutin aika.
@@ -34,3 +34,9 @@ Tila: Draft, ei julkaisuhyväksyntää eikä Recipavon omaa koekeittiötestiä.
 - GK/GL: **ei määritetty**; riisiä sisältävää reseptiä ei luokitella ketoksi tai VHH:ksi.
 - Allergeenien tuotetarkistus (kananmuna, kala, nilviäiset, soija ja mahdollinen vehnä) sekä FI/EN/SV/TH-käännösten vertailu ja hyväksyntä.
 - Kaikki neljä kielitiedostoa säilytetään `status: draft` -tilassa. Tämä PR ei julkaise tuotantoon.
+
+## Riisin ja lihan turvallisuuden lähdetarkistus 21.11.2026
+
+- Ruokaviraston kuluttajaohjeen mukaan sianliha kypsennetään kauttaaltaan vähintään 70 °C:n lämpötilaan: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/
+- Ruokaviraston Bacillus cereus -ohjeen mukaan valmiin riisin kaltaista ruokaa pidetään kuumana vähintään 60 °C:ssa tai jäähdytetään neljässä tunnissa enintään 6 °C:seen; uudelleenkuumennus tehdään kauttaaltaan yli 70 °C:een: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ruokamyrkytyksia-aiheuttavia-bakteereja/bacillus-cereus/
+- Reseptin työjärjestyksessä marinoidaan ensin porsas ja kypsennetään riisi marinoinnin aikana. Kyseessä on ohjeen toimituksellinen täsmennys, ei väite Recipavon omasta kokkauskokeesta.

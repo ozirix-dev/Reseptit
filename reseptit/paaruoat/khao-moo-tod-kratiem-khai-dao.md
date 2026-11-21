@@ -45,8 +45,8 @@ Thaimaalainen arkiruoka, jossa marinoitu porsas paistetaan valkosipulin tuoksuis
 
 ## Valmistus
 
-1. Huuhtele 150 g kuivaa jasmiiniriisiä ja kypsennä pakkauksen ohjeen mukaan. Pidä riisi lämpimänä tarjoiluun asti.
-2. Leikkaa porsas noin 1 cm paksuiksi suikaleiksi. Sekoita vaalea soijakastike, osterikastike, marinadiin tarkoitettu 5 ml kalakastiketta, sokeri, valkopippuri ja puolet valkosipulista. Kääntele liha joukkoon ja marinoi peitettynä jääkaapissa 20 minuuttia.
+1. Leikkaa porsas noin 1 cm paksuiksi suikaleiksi. Sekoita vaalea soijakastike, osterikastike, marinadiin tarkoitettu 5 ml kalakastiketta, sokeri, valkopippuri ja puolet valkosipulista. Kääntele liha joukkoon ja marinoi peitettynä jääkaapissa 20 minuuttia.
+2. Huuhtele marinoinnin aikana 150 g kuivaa jasmiiniriisiä ja kypsennä pakkauksen ohjeen mukaan. Ajoita riisi valmistumaan lähelle tarjoilua. Jos riisi odottaa, pidä se kuumana vähintään +60 °C:ssa.
 3. Kuumenna pannulla 10 ml öljyä keskimiedolla lämmöllä. Paista jäljellä oleva 10 g valkosipulia 1–2 minuuttia vaalean kullanruskeaksi. Nosta heti pois pannulta, ettei valkosipuli pala.
 4. Lisää pannulle 10 ml öljyä ja kuumenna keskilämmölle. Paista porsas marinadeineen kahdessa erässä noin 4–6 minuuttia erää kohti, kunnes liha on kauttaaltaan kypsää ja saanut väriä. Varmista tarvittaessa lämpömittarilla, että lihan sisälämpötila on vähintään 70 °C. Älä käytä raakaa marinadia kastikkeena.
 5. Kuumenna loput 10 ml öljyä puhtaalla pannulla. Paista kananmunat niin, että valkuaiset hyytyvät ja reunat rapeutuvat; kypsennä keltuaiset haluamaasi kypsyyteen. Sekoita erikseen kastikkeeksi 10 ml kalakastiketta, limettimehu ja hienonnettu chili.

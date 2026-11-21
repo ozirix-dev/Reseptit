@@ -48,8 +48,8 @@ Den här thailändska vardagsrätten kombinerar marinerat fläsk stekt i vitlök
 
 ## Tillagning
 
-1. Skölj 150 g okokt jasminris och koka enligt förpackningens anvisningar. Håll varmt fram till servering.
-2. Skär fläsket i cirka 1 cm tjocka strimlor. Blanda ljus sojasås, ostronsås, de 5 ml fisksås som är avsedda för marinaden, socker, vitpeppar och hälften av vitlöken. Vänd ner fläsket och marinera övertäckt i kylskåp i 20 minuter.
+1. Skär fläsket i cirka 1 cm tjocka strimlor. Blanda ljus sojasås, ostronsås, de 5 ml fisksås som är avsedda för marinaden, socker, vitpeppar och hälften av vitlöken. Vänd ner fläsket och marinera övertäckt i kylskåp i 20 minuter.
+2. Skölj 150 g okokt jasminris medan fläsket marineras och koka enligt förpackningens anvisningar. Låt helst riset bli klart strax före servering. Om riset måste vänta ska det hållas varmt vid minst +60 °C.
 3. Värm 10 ml olja på medellåg värme. Stek återstående 10 g vitlök i 1–2 minuter tills den är ljust gyllene. Ta genast upp den så att den inte bränns.
 4. Tillsätt 10 ml olja i pannan och värm på medelvärme. Stek fläsket med marinaden i två omgångar, cirka 4–6 minuter per omgång, tills köttet är helt genomstekt och har fått färg. Kontrollera vid behov med termometer att köttets innertemperatur är minst 70 °C. Servera inte rå marinad som sås.
 5. Värm resterande 10 ml olja i en ren panna. Stek äggen tills vitorna har stelnat och kanterna är frasiga; tillaga gulorna efter smak. Blanda separat de andra 10 ml fisksås med limejuicen och finhackad chili.

@@ -48,8 +48,8 @@ This Thai everyday dish pairs marinated pork fried in fragrant garlic oil with j
 
 ## Method
 
-1. Rinse 150 g of uncooked jasmine rice and cook according to the packet instructions. Keep warm until serving.
-2. Slice the pork into strips about 1 cm thick. Mix the light soy sauce, oyster sauce, the 5 ml fish sauce intended for the marinade, sugar, white pepper and half the garlic. Coat the pork and marinate, covered, in the refrigerator for 20 minutes.
+1. Slice the pork into strips about 1 cm thick. Mix the light soy sauce, oyster sauce, the 5 ml fish sauce intended for the marinade, sugar, white pepper and half the garlic. Coat the pork and marinate, covered, in the refrigerator for 20 minutes.
+2. While the pork marinates, rinse 150 g of uncooked jasmine rice and cook it according to the packet instructions. Aim to have it ready close to serving. If it must wait, hold the rice hot at 60 °C or above.
 3. Heat 10 ml oil in a pan over medium-low heat. Fry the remaining 10 g garlic for 1–2 minutes until pale golden. Remove immediately so it does not burn.
 4. Add 10 ml oil to the pan and heat over medium heat. Fry the pork with its marinade in two batches for about 4–6 minutes per batch, until cooked all the way through and browned. If needed, use a food thermometer to verify that the pork reaches at least 70 °C internally. Do not serve uncooked marinade as a sauce.
 5. Heat the remaining 10 ml oil in a clean pan. Fry the eggs until the whites are set and the edges crisp; cook the yolks to your preference. Separately mix the other 10 ml fish sauce with the lime juice and finely chopped chilli.
