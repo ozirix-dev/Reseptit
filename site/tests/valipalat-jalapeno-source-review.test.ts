@@ -48,7 +48,7 @@ type Row = {
     ingredientQuantitiesSourceExact: boolean;
     sixPortionsDependOnTwelveHalves: boolean;
     timeTotalMinApproved: boolean;
-    reciPavoPhysicalTestClaim: boolean;
+    recipavoPhysicalTestClaim: boolean;
     preparationSourceStatus: string;
   };
 };
@@ -120,7 +120,7 @@ test("B2 jalapeno: exact USDA pepper is research-only and raw bacon retention st
   assert.equal(food.approval, "RESEARCH_ONLY_NOT_NUTRITION_MODEL_INPUT");
   assert.ok(food.per100g);
   assert.equal(food.per100g.carbohydrateByDifferenceG * 1.5, 9.75);
-  assert.equal(food.per100g.dietaryFibreG * 1.5, 4.2);
+  assert.equal(Number((food.per100g.dietaryFibreG * 1.5).toFixed(3)), 4.2);
   assert.equal(food.per100g.proteinG * 1.5, 1.365);
   assert.equal(Number((food.per100g.fatG * 1.5).toFixed(3)), 0.555);
 
@@ -140,7 +140,7 @@ test("B2 jalapeno: exact USDA pepper is research-only and raw bacon retention st
   assert.equal(row.methodEvidence?.ingredientQuantitiesSourceExact, false);
   assert.equal(row.methodEvidence?.sixPortionsDependOnTwelveHalves, true);
   assert.equal(row.methodEvidence?.timeTotalMinApproved, false);
-  assert.equal(row.methodEvidence?.reciPavoPhysicalTestClaim, false);
+  assert.equal(row.methodEvidence?.recipavoPhysicalTestClaim, false);
   assert.equal(row.methodEvidence?.preparationSourceStatus, "METHOD_SUPPORTED_QUANTITIES_NOT_INDEPENDENTLY_VERIFIED");
   const report = await readFile(path.join(root, reportPath), "utf8");
   assert.match(report, /Kylee Ayotte/);
