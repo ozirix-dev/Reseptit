@@ -11,15 +11,20 @@ Set-StrictMode -Version Latest
 function Need([bool]$Test, [string]$Message) {
   if (-not $Test) { throw "HOLD: $Message" }
 }
-function Run([string]$Program,[string[]]$Args) {
-  $out = & $Program @Args 2>&1
-  Need ($LASTEXITCODE -eq 0) ("Command failed: " + $Program + " " + $Args[0])
+function Run([string]$Program,[string[]]$CommandArgs) {
+  # $args is a PowerShell automatic variable; do not use it for named parameters.
+  $out = & $Program @CommandArgs 2>&1
+  $commandName = if ($CommandArgs.Count -gt 0) { $CommandArgs[0] } else { '<no-args>' }
+  Need ($LASTEXITCODE -eq 0) ("Command failed: " + $Program + " " + $commandName)
   return ($out | Out-String).Trim()
 }
-function PagesJson([string[]]$Args) {
-  $raw = Run 'npx.cmd' (@('--yes','wrangler@4.165.0') + $Args + @('--json'))
-  try { return ConvertFrom-Json -InputObject $raw -Depth 80 }
-  catch { throw 'HOLD: Wrangler did not return JSON. Verify existing Cloudflare login locally.' }
+function PagesJson([string[]]$WranglerArgs) {
+  # Wrangler v4 emits a JSON array with display keys (Project Name, Branch).
+  $parts = @(& npx.cmd --yes wrangler@4.165.0 @WranglerArgs --json 2>&1)
+  Need ($LASTEXITCODE -eq 0) 'Wrangler read-only JSON command failed; check local login without sharing secrets'
+  $raw = ($parts | Out-String).Trim()
+  try { return ,(ConvertFrom-Json -InputObject $raw -Depth 80 -NoEnumerate) }
+  catch { throw 'HOLD: Wrangler JSON response could not be parsed. Use read-only CLI diagnosis.' }
 }
 function Items($Obj) {
   if ($Obj -is [array]) { return @($Obj) }
@@ -55,7 +60,13 @@ Need ($origin -match '(?i)github\.com[:/]ozirix-dev/Reseptit(?:\.git)?$') 'Wrong
 $head = Run 'git' @('-C',$root,'rev-parse','HEAD')
 Need ($head -eq $ExpectedSha) 'Checkout does not match expected SHA'
 $remote = Run 'git' @('-C',$root,'ls-remote','origin','refs/heads/main')
-Need (($remote -split '\s+')[0] -eq $ExpectedSha) 'Remote main differs; rebuild approved SHA'
+$remoteSha = ($remote -split '\s+')[0]
+Need ($remoteSha -match '^[a-f0-9]{40}$') 'Remote main SHA could not be read'
+# A pinned main ancestor is valid for preview even when other chats merge later.
+$trackedMain = Run 'git' @('-C',$root,'rev-parse','refs/remotes/origin/main')
+Need ($trackedMain -eq $remoteSha) 'Local origin/main is stale; fetch origin main first'
+& git -C $root merge-base --is-ancestor $ExpectedSha $trackedMain
+Need ($LASTEXITCODE -eq 0) 'Pinned preview SHA is not an ancestor of remote main'
 Need (-not (Run 'git' @('-C',$root,'status','--porcelain','--untracked-files=no'))) 'Tracked worktree is dirty'
 $headers = Get-Content -LiteralPath (Join-Path $dist '_headers') -Raw
 $stamps = [regex]::Matches($headers,'(?im)^\s*X-Recipavo-Commit:[ \t]*([a-f0-9]{40})\s*$')
@@ -65,10 +76,17 @@ Need ($assets.Count -gt 0 -and $assets.Count -le 20000) 'Pages asset count out o
 Need (-not @($assets | Where-Object { $_.Length -gt 25MB }).Count) 'A Pages asset is over 25 MiB'
 Push-Location $site
 try {
-  $projects = Items (PagesJson @('pages','project','list'))
-  $matches = @($projects | Where-Object { (Prop $_ 'name') -eq 'recipavo-site' })
+  $projects = @(Items (PagesJson @('pages','project','list')))
+  $matches = @($projects | Where-Object { (Prop $_ 'Project Name') -eq 'recipavo-site' })
   Need ($matches.Count -eq 1) 'Expected exactly one recipavo-site project'
-  Need ((Prop $matches[0] 'production_branch') -eq 'production') 'Unexpected Cloudflare production branch'
+  Need ((Prop $matches[0] 'Git Provider') -eq 'No') 'Expected Direct Upload Pages project'
+  $deployments = @(Items (PagesJson @('pages','deployment','list','--project-name','recipavo-site','--environment','production')))
+  $prod = @($deployments | Where-Object { (Prop $_ 'Environment') -eq 'Production' -and (Prop $_ 'Branch') -eq 'production' })
+  Need ($prod.Count -gt 0) 'Cannot verify an existing successful production-branch deployment'
+  # Wrangler's project list does NOT expose the authoritative production_branch.
+  # Do not claim the project setting was independently verified via this list.
+  Write-Host 'Cloudflare project list: Direct Upload confirmed; production deployment branch=production confirmed.'
+  Write-Host 'Project production_branch setting must still be verified separately before Apply.'
   $before = LiveSha
   $preview = "https://$PreviewBranch.recipavo-site.pages.dev/"
   Write-Host "Preflight PASS; project=recipavo-site; preview=$preview; sha=$ExpectedSha; live=$before"
