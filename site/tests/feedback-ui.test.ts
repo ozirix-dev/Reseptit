@@ -37,6 +37,8 @@ test("footer and recipe feedback buttons are SSR-visible but do not render a liv
     }));
     assert.ok(view.includes(feedbackUi[locale].button), locale);
     assert.ok(view.includes(feedbackUi[locale].recipeButton), locale);
+    assert.ok(!view.includes("<button"), "Non-JS feedback entry points must be usable email links");
+    assert.match(view, /href="mailto:ossi@rikkola\.fi"/u);
     assert.ok(!view.includes("<form"), "No closed dialog form is rendered in the original HTML");
     assert.ok(!view.includes("turnstile/v0"), "No captcha script on initial page load");
   }
