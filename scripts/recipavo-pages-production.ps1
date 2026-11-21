@@ -7,6 +7,8 @@ param(
   [string]$Repo = 'D:\Projects\Products\Reseptit',
   [string]$Project = 'recipavo-site',
   [string]$ExpectedProductionBranch = 'production',
+  [switch]$ProductionBranchVerified,
+  [switch]$FeedbackDisabledVerified,
   [switch]$Apply
 )
 $ErrorActionPreference = 'Stop'
@@ -21,10 +23,12 @@ function Run-External([string]$Program, [string[]]$Arguments) {
   Need ($LASTEXITCODE -eq 0) ("Command failed: " + $Program + " " + $Arguments[0])
   return ($output | Out-String).Trim()
 }
-function Wrangler-Json([string[]]$Arguments) {
-  $text = Run-External 'npx.cmd' (@('--yes','wrangler@4.165.0') + $Arguments + @('--json'))
-  try { return ConvertFrom-Json -InputObject $text -Depth 80 }
-  catch { throw 'HOLD: Cloudflare Wrangler returned non-JSON; verify login and account locally without exposing tokens.' }
+function Wrangler-Json([string[]]$CommandArguments) {
+  $rawOutput = @(& npx.cmd --yes wrangler@4.165.0 @CommandArguments --json 2>&1)
+  Need ($LASTEXITCODE -eq 0) 'Wrangler read-only JSON command failed; check existing Cloudflare login locally'
+  $rawText = ($rawOutput | Out-String).Trim()
+  try { return ,(ConvertFrom-Json -InputObject $rawText -Depth 80 -NoEnumerate) }
+  catch { throw 'HOLD: Wrangler JSON output could not be parsed. Do not deploy.' }
 }
 function Get-Items($Value) {
   if ($Value -is [array]) { return @($Value) }
@@ -71,29 +75,45 @@ $headers=Get-Content -LiteralPath $headerFile -Raw
 $matches=[regex]::Matches($headers,'(?im)^\s*X-Recipavo-Commit:[ \t]*([a-f0-9]{40})\s*$')
 Need ($matches.Count -eq 1) 'Expected exactly one X-Recipavo-Commit in dist/_headers'
 Need ($matches[0].Groups[1].Value -eq $ExpectedSha) 'Build artifact SHA differs from approved main SHA'
+# Production must be built with RECIPAVO_BUILD_TARGET=production.
+# A preview dist is noindex and must NEVER be repurposed for production.
+Need (-not ($headers -match '(?im)^\s*X-Robots-Tag:\s*noindex\b')) 'Preview noindex header is present; build production target from scratch'
+$homeHtml=Get-Content -LiteralPath (Join-Path $dist 'index.html') -Raw
+Need ($homeHtml -notmatch '(?i)<meta[^>]+(?:name=["'']robots["''][^>]+content=["'']noindex|content=["'']noindex[^>]+name=["'']robots)') 'Preview noindex meta tag present in homepage'
+Need ($homeHtml -match 'https://www\.recipavo\.com/') 'Homepage does not identify the production canonical origin'
+$robots=Get-Content -LiteralPath (Join-Path $dist 'robots.txt') -Raw
+Need ($robots -match 'https://www\.recipavo\.com/sitemap\.xml') 'Production robots sitemap URL missing'
+$sitemap=Get-Content -LiteralPath (Join-Path $dist 'sitemap.xml') -Raw
+Need ($sitemap -match 'https://www\.recipavo\.com/') 'Production sitemap origin missing'
 $assets=@(Get-ChildItem -LiteralPath $dist -File -Recurse -Force)
 Need ($assets.Count -gt 0 -and $assets.Count -le 20000) "Invalid Pages artifact count: $($assets.Count)"
 foreach($file in $assets) {
   Need ($file.Length -le 25MB) ("Pages asset exceeds 25 MiB: " + $file.Name)
 }
-$projects=Get-Items (Wrangler-Json @('pages','project','list'))
-$selection=@($projects | Where-Object { (Property $_ @('name','Name')) -eq $Project })
+$projects=@(Get-Items (Wrangler-Json @('pages','project','list')))
+$selection=@($projects | Where-Object { (Property $_ @('Project Name')) -eq $Project })
 Need ($selection.Count -eq 1) "Cloudflare project '$Project' not found uniquely in authenticated account"
-$productionBranch=[string](Property $selection[0] @('production_branch','productionBranch','Production Branch'))
-Need ($productionBranch -eq $ExpectedProductionBranch) "Cloudflare production branch is '$productionBranch', expected '$ExpectedProductionBranch'. Do NOT deploy."
-$deployments=Get-Items (Wrangler-Json @('pages','deployment','list','--project-name',$Project))
-$prod=@($deployments | Where-Object { (Property $_ @('Environment','environment')) -eq 'Production' })
-Need ($prod.Count -gt 0) "No existing Production deployment; refuse to bootstrap a project silently."
+Need ((Property $selection[0] @('Git Provider')) -eq 'No') 'Expected Direct Upload Pages project'
+$deployments=@(Get-Items (Wrangler-Json @('pages','deployment','list','--project-name',$Project,'--environment','production')))
+$prod=@($deployments | Where-Object { (Property $_ @('Environment')) -eq 'Production' -and (Property $_ @('Branch')) -eq $ExpectedProductionBranch })
+Need ($prod.Count -gt 0) "No existing deployment with Production/$ExpectedProductionBranch; refuse to bootstrap silently"
 $recent=$prod | Select-Object -First 1
-$meta=Property (Property $recent @('deployment_trigger','deploymentTrigger')) @('metadata','Metadata')
-$cloudSha=[string](Property $meta @('commit_hash','commitHash','commit'))
+$cloudSha=[string](Property $recent @('Deployment'))
+# Wrangler project list does not return authoritative production_branch.
+# The operator must separately verify the project's actual setting from Cloudflare
+# before passing -ProductionBranchVerified for a real production deployment.
+if($Apply) {
+  Need ($ProductionBranchVerified -and $ExpectedProductionBranch -eq 'production') 'Production branch not independently verified. Require explicit -ProductionBranchVerified after Cloudflare project-settings inspection.'
+  Need ($FeedbackDisabledVerified) 'Feedback intake OFF not independently verified in Cloudflare production settings. Require explicit -FeedbackDisabledVerified only after inspection.'
+}
 $liveSha=Revision 'https://www.recipavo.com/'
 Write-Host "Repository main : $remoteSha"
 Write-Host "Artifact stamp  : $($matches[0].Groups[1].Value)"
 Write-Host "Pages project   : $Project"
-Write-Host "Production branch: $productionBranch"
-Write-Host "Cloudflare listed SHA: $cloudSha"
+Write-Host "Existing production deployment branch: $ExpectedProductionBranch"
+Write-Host "Cloudflare deployment summary: $cloudSha"
 Write-Host "Live www SHA    : $liveSha"
+if(-not $Apply) { Write-Host "Project production_branch not exposed by Wrangler project list; independent verification required before Apply." }
 Write-Host "Artifact files  : $($assets.Count)"
 if($liveSha -eq $ExpectedSha) {
   Write-Host 'NOOP: live site already serves the approved SHA. No deploy performed.'
