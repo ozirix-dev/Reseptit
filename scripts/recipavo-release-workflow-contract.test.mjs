@@ -42,9 +42,11 @@ export function checkReleaseContract(yaml) {
   }
   must(after.includes('--project-name recipavo-site --branch production --commit-hash "$RELEASE_SHA"'),'locked Wrangler production target');
   must(after.includes("if: steps.live.outputs.already_live != 'true'"),'prevent duplicate upload');
-  must(after.includes('RECIPAVO_BUILD_TARGET: production'),'production target');
-  must(after.includes("VITE_RECIPAVO_FEEDBACK_ENABLED: 'false'"),'feedback default OFF');
-  must(after.includes('unset RECIPAVO_PREVIEW_ORIGIN'),'no inherited preview');
+  const buildStage=after.slice(after.indexOf('Build production-only artifact with feedback UI disabled'),
+    after.indexOf('recipavo-actions-release-gate.mjs functions site'));
+  must(buildStage.includes('RECIPAVO_BUILD_TARGET: production'),'production build target');
+  must(buildStage.includes("VITE_RECIPAVO_FEEDBACK_ENABLED: 'false'"),'feedback UI default OFF');
+  must(buildStage.includes('unset RECIPAVO_PREVIEW_ORIGIN'),'no inherited preview in production build');
   must(after.includes('body.error !== "method_not_allowed"'),'Pages Function 405 verification');
   return true;
 }
