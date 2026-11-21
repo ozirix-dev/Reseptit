@@ -26,7 +26,7 @@ const rules: Record<string, {
     },
     listeria: {
       fi: [/valmistajakirjettä ei automaattisesti vaadita/i, /eivät tuhoa listeriaa/i],
-      en: [/manufacturer letter is not automatically required/i, /do not eliminate listeria/i],
+      en: [/No manufacturer letter is automatically required/i, /do not eliminate listeria/i],
       sv: [/intyg från tillverkaren krävs inte automatiskt/i, /tar inte bort listeria/i],
       th: [/ไม่ต้องขอหนังสือรับรองจากผู้ผลิตโดยอัตโนมัติ/, /ไม่กำจัดเชื้อลิสทีเรีย/],
     },
