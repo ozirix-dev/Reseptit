@@ -4,9 +4,7 @@
  * private FEEDBACK_DB binding. No Wrangler config/secrets are installed by this PR.
  */
 import type { FeedbackDatabase } from "../functions/api/feedback";
-
-export const feedbackRetentionDays = 30;
-export const feedbackMaintenanceMaxAgeMs = 48 * 60 * 60 * 1000;
+import { feedbackRetentionDays } from "../src/features/feedback/retention-policy";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const FUTURE_TOLERANCE_MS = 5 * 60 * 1000;
