@@ -59,3 +59,4 @@ ingredients:
 
 - ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพประกอบจาก AI อยู่ในสาขานี้แล้ว แต่ยังไม่ได้รับการอนุมัติ
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/piparjuurikastike/
+- สูตร Valio อีกสูตรใช้ฮอร์สแรดิชสดขูดในซอสครีมเฟรชเย็น ขณะที่สูตรเดิมใช้ฮอร์สแรดิชสำเร็จรูป การปรุงรสสูตรนี้เป็นการดัดแปลงใหม่. https://www.valio.fi/reseptit/graavattu-piparjuurilohi/

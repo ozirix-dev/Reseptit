@@ -54,4 +54,5 @@ En syrlig bärsås till glass, cheesecake eller ugnsdesserter.
 - Detta är ett redaktionellt utkast; näringsvärden, glykemisk belastning och slutligt bildgodkännande återstår.
 - Preparation reference: https://www.k-ruoka.fi/reseptit/puolukkakastike
 
-- En AI-genererad illustration finns sparad, men den motsvarar inte receptet fullt ut och måste bytas före publicering.
+- Den tidigare felaktiga illustrationsbilden har ersatts. Den nya AI-bilden inväntar fortfarande redaktionellt godkännande.
+- Marttas provlagade bärsås värmer sockerlag före bärpurén; K-Ruoas lingonsås kokas inte. Recipavos kokta version med några hela bär är en egen anpassning utan provlagning av någon av källorna. https://www.martat.fi/reseptit/marjakastike/

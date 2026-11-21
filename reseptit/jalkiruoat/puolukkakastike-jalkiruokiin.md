@@ -60,3 +60,4 @@ Kirpeä marjakastike jäätelölle, juustokakulle tai uunijälkiruoalle.
 - Valmistuksen vertailulähde: https://www.k-ruoka.fi/reseptit/puolukkakastike
 
 - Kuva on tekoälyn luoma havainnekuva uudesta tummanpunaisesta marjakastikkeesta; lopullinen toimituksellinen hyväksyntä puuttuu.
+- Marttojen testattu marjakastike kuumentaa sokeriliemen ja lisää marjasoseen sen jälkeen; K-Ruoan puolukkakastiketta ei keitetä. Recipavon keitetty ja osittain kokonaisia marjoja sisältävä versio on itsenäinen sovitus, eikä kummankaan testausväite koske sitä. https://www.martat.fi/reseptit/marjakastike/

@@ -9,3 +9,11 @@ Päiväys: 21.11.2026. Tila: DRAFT / HOLD, ei julkaistu.
 - Reseptikohtainen ravinto-/GK-evidenssi ja hyväksyntä puuttuvat. EI KETO-/GLUTEENITON-VÄITETTÄ.
 - Kuvan polku GitHubissa: `kuvat/alkuruoat/kylma-piparjuurikastike.webp` (960 × 640). AI-havainnekuva, ei keittiössä kuvattu eikä vielä hyväksytty.
 - Nelikielisten merkitysvastaavuuden dokumentoitu loppukatselmointi ja CI sekä Repo Guard -julkaisuportti puuttuvat.
+
+## Riippumaton vertailulähde – Chat 3, 21.11.2026
+
+Toinen Valion vertailuohje käyttää kylmässä crème fraîche -kastikkeessa tuoretta raastettua piparjuurta. Aiempi ohje käytti valmista piparjuuritahnaa. Maustaminen on tässä itsenäisesti sovitettu.
+
+Lähde: https://www.valio.fi/reseptit/graavattu-piparjuurilohi/
+
+Recipavon itsenäistä versiota ei väitetä valmistetuksi vertailukeittiössä. Ravinto/GK ja lopullinen katselmointi yhä kesken.

@@ -59,3 +59,4 @@ A tangy horseradish sauce for roast beef, smoked fish and beetroot salad.
 
 - Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The AI-generated image is included in this branch, pending approval.
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/piparjuurikastike/
+- Another Valio reference uses freshly grated horseradish in cold crème fraîche sauce, whereas the earlier sauce uses horseradish paste. Seasoning here is independently adapted. https://www.valio.fi/reseptit/graavattu-piparjuurilohi/

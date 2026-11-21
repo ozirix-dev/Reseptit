@@ -54,4 +54,5 @@ A tart berry sauce for ice cream, cheesecake or baked desserts.
 - This is an editorial draft; nutrition and glycaemic load assessments and final image approval are pending.
 - Preparation reference: https://www.k-ruoka.fi/reseptit/puolukkakastike
 
-- An AI-generated illustration is stored, but it does not fully match this recipe and must be replaced before publication.
+- The previous mismatched illustration has been replaced. The new AI illustration remains subject to editorial approval.
+- Martat's tested berry sauce heats sugar syrup before adding berry purée; K-Ruoka's lingonberry sauce is not boiled. The cooked Recipavo version with some whole berries is an independent adaptation, not tested by either source. https://www.martat.fi/reseptit/marjakastike/
