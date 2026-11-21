@@ -106,8 +106,8 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
     const data = JSON.parse(jsonScripts[0].content);
     const withholding = withholdF25Nutrition(recipe.recipeId, recipe.locale);
     const nutrition = Object.fromEntries(Object.entries({ carbohydrateContent: recipe.nutrition.carbsTotalG, proteinContent: recipe.nutrition.proteinG, fatContent: recipe.nutrition.fatG }).filter(([, n]) => !withholding && n !== null).map(([k, n]) => [k, `${n} g`]));
-    // Permit only the explicitly reviewed natto source override, and only when
-    // the public notes corroborate it. Unknown structured claims remain blocked.
+    // Only exact reviewed source corrections are allowed, corroborated by
+    // locale-specific visible notes. Other structured claims stay blocked.
     const nattoMethod = recipe.recipeId === "japanilainen-natto-riisikulho"
       && isDeepStrictEqual(recipe.cookingMethod, ["keittäminen"])
       && recipe.notesHtml.includes({
@@ -116,12 +116,24 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
       }[recipe.locale])
       ? { fi: "Keittäminen", en: "Boiling", sv: "Kokning", th: "การต้ม" }[recipe.locale]
       : undefined;
-    check(!recipe.cookingMethod?.length || Boolean(nattoMethod),
+    const goulashMethod = recipe.recipeId === "paprikainen-vhh-gulassi"
+      && isDeepStrictEqual(recipe.cookingMethod, ["liesi"])
+      && recipe.notesHtml.includes({
+        fi: "Valmistustapa: haudutus liedellä kannellisessa padassa.",
+        en: "Cooking method: simmering on the stovetop in a covered pot.",
+        sv: "Tillagningssätt: sjudning på spisen i en gryta med lock.",
+        th: "วิธีปรุง: เคี่ยวบนเตาในหม้อปิดฝา",
+      }[recipe.locale])
+      ? { fi: "Liedellä hauduttaminen", en: "Stovetop simmering",
+          sv: "Sjudning på spis", th: "เคี่ยวบนเตา" }[recipe.locale]
+      : undefined;
+    const auditedMethod = nattoMethod ?? goulashMethod;
+    check(!recipe.cookingMethod?.length || Boolean(auditedMethod),
       "COOKING_METHOD_SOURCE", "Cooking method must be source-reviewed and visible in the recipe notes");
     const expectedData = JSON.parse(JSON.stringify({
       "@context": "https://schema.org", "@type": "Recipe", name: recipe.title, description: recipe.description || undefined,
       inLanguage: recipe.locale, recipeCategory: recipe.category,
-      ...(nattoMethod ? { cookingMethod: nattoMethod } : {}),
+      ...(auditedMethod ? { cookingMethod: auditedMethod } : {}),
       keywords: recipe.tags.length ? recipe.tags.join(", ") : undefined,
       ...(recipe.image ? { image: [recipe.image.src] } : {}), recipeYield: String(recipe.servings),
       recipeIngredient: expectedIngredients,

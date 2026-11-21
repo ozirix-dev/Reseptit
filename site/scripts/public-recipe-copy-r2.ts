@@ -493,7 +493,62 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
   },
   "paprikainen-vhh-gulassi/fi": {
     "method": [
-      ["Lisää 0,5 g mustapippuria ja 10 g persiljaa. Tarjoa koko pata kastikkeineen ja rasvoineen 150 g noin 40-prosenttista smetanaa kanssa neljänä annoksena. Erilliset lisukkeet eivät kuulu annokseen.", "Lisää 0,5 g mustapippuria ja 10 g persiljaa. Jaa koko pata kastikkeineen ja rasvoineen neljään annokseen. Tarjoa niiden kanssa yhteensä 150 g noin 40-prosenttista smetanaa. Erilliset lisukkeet eivät kuulu annoksiin."]
+      [
+        "Hauduta kannen alla 1,5 tuntia, kunnes liha on mureaa.",
+        "Hauduta liedellä kannellisessa padassa miedolla lämmöllä 1,5 tuntia, kunnes liha on mureaa."
+      ],
+      [
+        "Lisää 0,5 g mustapippuria ja 10 g persiljaa. Tarjoa koko pata kastikkeineen ja rasvoineen 150 g noin 40-prosenttista smetanaa kanssa neljänä annoksena. Erilliset lisukkeet eivät kuulu annokseen.",
+        "Lisää 0,5 g mustapippuria ja 10 g persiljaa. Jaa koko pata kastikkeineen ja rasvoineen neljään annokseen. Tarjoa niiden kanssa yhteensä 150 g noin 40-prosenttista smetanaa. Erilliset lisukkeet eivät kuulu annoksiin."
+      ]
+    ],
+    "notes": [
+      [
+        "Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.",
+        "Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.\n\nValmistustapa: haudutus liedellä kannellisessa padassa. Naudanlihaa ruskistetaan ja pata hautuu liedellä miedolla lämmöllä 1,5 tuntia; ohjeessa ei ole uunivaihetta."
+      ]
+    ]
+  },
+  "paprikainen-vhh-gulassi/en": {
+    "method": [
+      [
+        "Simmer covered for 1.5 hours until the beef is tender.",
+        "Simmer on the stovetop in a covered pot over low heat for 1.5 hours until the beef is tender."
+      ]
+    ],
+    "notes": [
+      [
+        "Nutrition values are temporarily withheld pending source verification.",
+        "Nutrition values are temporarily withheld pending source verification.\n\nCooking method: simmering on the stovetop in a covered pot. Brown the beef, then simmer the covered pot over low heat for 1.5 hours; the recipe has no oven stage."
+      ]
+    ]
+  },
+  "paprikainen-vhh-gulassi/sv": {
+    "method": [
+      [
+        "Sjud under lock i 1,5 timmar tills köttet är mört.",
+        "Låt sjuda på spisen under lock och på svag värme i 1,5 timmar tills köttet är mört."
+      ]
+    ],
+    "notes": [
+      [
+        "Näringsvärden visas tills vidare inte i väntan på källkontroll.",
+        "Näringsvärden visas tills vidare inte i väntan på källkontroll.\n\nTillagningssätt: sjudning på spisen i en gryta med lock. Bryn köttet och sjud sedan grytan på svag värme i 1,5 timmar; receptet har inget ugnssteg."
+      ]
+    ]
+  },
+  "paprikainen-vhh-gulassi/th": {
+    "method": [
+      [
+        "ปิดฝาเคี่ยว 1.5 ชั่วโมงจนเนื้อนุ่ม",
+        "ปิดฝาเคี่ยวในหม้อบนเตาด้วยไฟอ่อน 1.5 ชั่วโมงจนเนื้อนุ่ม"
+      ]
+    ],
+    "notes": [
+      [
+        "ข้อมูลโภชนาการยังไม่แสดงระหว่างตรวจสอบแหล่งข้อมูล",
+        "ข้อมูลโภชนาการยังไม่แสดงระหว่างตรวจสอบแหล่งข้อมูล\n\nวิธีปรุง: เคี่ยวบนเตาในหม้อปิดฝา หลังจากผัดเนื้อให้เหลืองแล้วให้เคี่ยวในหม้อปิดฝาบนเตาด้วยไฟอ่อน 1.5 ชั่วโมง สูตรนี้ไม่มีขั้นตอนอบในเตาอบ"
+      ]
     ]
   },
   "parmesaani-lyttyperunat/en": {
