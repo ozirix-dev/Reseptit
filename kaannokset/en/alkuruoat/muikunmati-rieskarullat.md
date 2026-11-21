@@ -46,14 +46,14 @@ Draft English adaptation for editorial review, not a tested Recipavo recipe.
 
 ## Instructions
 
-1. Use only ready-to-eat vendace roe with verified parasite-control freezing and safe processing. Keep refrigerated throughout preparation.
+1. Use frozen ready-to-eat vendace roe intended for cold serving and follow its thawing and storage label. Parasite-control processing must meet Finnish Food Authority guidance: at or below −20 °C for at least 24 hours, −35 °C for at least 15 hours, or at −18 °C for at least 96 hours, counted after the required temperature is reached. Proper treatment performed by the supplier need not be repeated; if treatment cannot be established, do not serve unheated. Keep the roe cold.
 2. Mix cream cheese with smetana. Finely chop the red onion and dill and add them with the lemon juice.
 3. Spread a thin layer over each soft potato flatbread. Add the roe and roll up carefully.
 4. Chill briefly, cut into bite-sized portions and serve cold straight away.
 
 ## Safety notes
 
-HOLD pending roe-specific freezer-treatment and cold-chain evidence. Freezing does not eliminate listeria; avoid serving unheated roe to higher-risk groups.
+Use roe labelled suitable to eat without heating and observe its package instructions and the Finnish Food Authority's parasite-control rules. A manufacturer letter is not automatically required; without assurance of appropriate treatment, do not serve unheated. Freezing does not eliminate listeria, so pregnant people and other higher-risk groups should avoid unheated roe.
 
 ## Editorial notes
 

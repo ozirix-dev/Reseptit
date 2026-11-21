@@ -46,14 +46,14 @@ Svenskt utkast för redaktionell kontroll; ingen egen provlagning har gjorts.
 
 ## Tillagning
 
-1. Använd endast ätfärdig siklöjerom vars frysbehandling mot parasiter och säkra hantering har verifierats. Håll rommen kall under hela beredningen.
+1. Använd fryst ätfärdig siklöjerom avsedd att serveras kall och följ förpackningens upptinings- och förvaringsanvisningar. Parasitbehandlingen ska uppfylla Livsmedelsverkets krav: högst −20 °C i minst 24 timmar, −35 °C i minst 15 timmar eller −18 °C i minst 96 timmar, räknat efter att temperaturen uppnåtts. Korrekt frysning hos tillverkaren behöver inte upprepas. Om behandlingen inte kan säkerställas ska rommen inte serveras oupphettad. Håll rommen kall.
 2. Blanda färskost och smetana. Finhacka rödlök och dill och rör ner tillsammans med citronsaft.
 3. Bred ett tunt lager på de mjuka potatisrieskorna. Fördela rommen ovanpå och rulla försiktigt ihop.
 4. Kyl kort, skär i munsbitar och servera genast kall.
 
 ## Livsmedelssäkerhet
 
-HOLD: frysbehandling och kylkedja måste styrkas för den aktuella rommen. Frysning tar inte bort listeria och oupphettad rom bör undvikas av riskgrupper.
+Välj rom avsedd att ätas utan upphettning och följ förpackningens anvisningar och Livsmedelsverkets regler för parasitbehandling. Särskilt tillverkarintyg krävs inte automatiskt, men utan säkerställd korrekt behandling ska rommen inte serveras rå. Frysning tar inte bort listeria; gravida och andra riskgrupper bör undvika oupphettad rom.
 
 ## Redaktionella anmärkningar
 

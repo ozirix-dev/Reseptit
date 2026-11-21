@@ -40,14 +40,14 @@ Svenskt utkast för redaktionell kontroll; ingen egen provlagning har gjorts.
 
 ## Tillagning
 
-1. Kontrollera före beredningen att den benfria sikfilén är godkänd för rå konsumtion och har genomgått nödvändig frysbehandling mot parasiter. Servera inte rå om detta inte kan bekräftas.
+1. Välj sik som är lämplig att äta rå och följ förpackningens anvisningar. Om nödvändig frysbehandling mot parasiter inte redan har gjorts och inget tillämpligt undantag finns, följ Livsmedelsverkets anvisning före gravningen: högst −20 °C i minst 24 timmar, −35 °C i minst 15 timmar eller −18 °C i minst 96 timmar, räknat efter att temperaturen uppnåtts. Servera inte fisken rå om lämplighet eller behandling inte kan säkerställas.
 2. Blanda grovt havssalt, socker och vitpeppar. Fördela över filén och täck med dill.
 3. Täck i en livsmedelssäker behållare och grava vid 0–3 °C i cirka 24 timmar. Vänd en gång. Gravning ersätter inte frysbehandling mot parasiter.
 4. Ta bort överflödiga kryddor och skär i tunna skivor precis före servering.
 
 ## Livsmedelssäkerhet
 
-HOLD: fiskens ursprung, parasitbehandling och kylkedja måste verifieras. Saltning dödar inte parasiter. Oupphettad gravad fisk är olämplig för personer med förhöjd listeriarisk.
+Använd sik som lämpar sig för rå konsumtion, följ Livsmedelsverkets frysregler och förpackningens hanterings- och förvaringsanvisningar. Ett särskilt intyg från tillverkaren krävs inte automatiskt. Enbart märkningen djupfryst eller anvisningen att steka fisken styrker inte lämplighet för rå konsumtion. Gravning och frysning tar inte bort listeria. Riskgrupper bör undvika oupphettad gravad fisk.
 
 ## Redaktionella anmärkningar
 
