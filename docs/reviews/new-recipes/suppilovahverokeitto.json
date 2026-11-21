@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "recipe_id": "suppilovahverokeitto",
+  "source_path": "reseptit/paaruoat/suppilovahverokeitto.md",
+  "source_sha256": "50d6d5977845e4565b455009df7f323ebec7688f7947b145e8e066842539c459",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/suppilovahverokeitto-2/",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-tunnistaminen/"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Vertailtu reseptipolkujen nimiin ja avoimiin PR:iin; lopullinen yhtäläisyystarkistus tehtävä julkaisuversiolle."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Ainekset punnittu luonnosversioon; tuotemerkkien, syötävän osuuden ja määrien lopullinen tarkistus puuttuu."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Kuvattu valmistustapa tarkistettu vertailuohjeita vastaan; itsenäinen kokkikelpoisuusarvio tarvitaan."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Riski- ja allergeenihuomiot kirjattu lähdereseptiin, mutta riippumatonta loppuarviointia ei vielä ole."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "Annokset, työvaiheet ja aikataulu ovat luonnosarvioita; valmistus ja välinekapasiteetti tarkistettava."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Reseptiin sidottu riippumaton ravintolaskelma puuttuu eikä nollia tai lähteen eri annoksen arvoja kopioida."
+    },
+    "glycemic": {
+      "status": "pending",
+      "notes": "GI/GK-arvoa ei arvata; puuttuvuus voidaan hyväksyä unavailable-tilassa kirjallisella perustelulla."
+    }
+  },
+  "supplementary_evidence": {
+    "image_path": "kuvat/paaruoat/suppilovahverokeitto.webp",
+    "image_review": "Tekoälyn tuottama havainnekuva, joka on vielä hyväksyttävä julkaisuun.",
+    "physical_cook_test": false
+  }
+}
