@@ -50,6 +50,22 @@ test('reports repeated lead and long instructions without changing source texts'
   assert.deepEqual(inputs.map(x => x.content), original);
 });
 
+test('includes intro text found only in Kuvaus, without fake duplicate', () => {
+  const intro = 'Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan perinteinen ateria.';
+  const descriptionOnly = (id) => recipe(id, intro, duplicateStep)
+    .replace(`# ${id}\n\n${intro}\n\n## Kuvaus`, `# ${id}\n\n## Kuvaus`);
+  const sources = [
+    { path: 'reseptit/aamupalat/aloo.md', content: descriptionOnly('aloo') },
+    { path: 'reseptit/paaruoat/other.md', content: descriptionOnly('other') },
+  ];
+  const r = analyze(sources);
+  assert.equal(r.counts.reviewed, 2);
+  assert.equal(r.signals.genericLead.length, 2);
+  assert.equal(r.signals.repeatedLeads.length, 1);
+  assert.deepEqual(r.signals.repeatedLeads[0].recipes.map(x => x.recipeId), ['aloo', 'other']);
+  assert.equal(r.signals.duplicateDescription.length, 0);
+});
+
 test('treats missing metadata as an advisory signal, not an approval or a zero', () => {
   const r = analyze([{path: 'reseptit/alkuruoat/c.md', content:
     recipe('c','Kuvaus reseptille.','Sekoita.', 'time_total_min: null\n').replace('time_total_min: 30\n','')}]);
