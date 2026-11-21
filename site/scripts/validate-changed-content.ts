@@ -118,7 +118,11 @@ for (const relativePath of recipePaths) {
   }
   if (data.image) {
     const sources = [data.image.src, ...(data.image.srcset ?? []).map((item) => item.src)];
-    const imageRoot = path.resolve(process.env.PROJECT_IMAGE_ROOT || path.join(repoRoot, "kuvat"));
+    // Draft previews can live in versioned kuvat/ before owner approval and signed CI-image registration.
+    // Published content must continue to use only the verified PROJECT_IMAGE_ROOT in CI.
+    const imageRoot = path.resolve(data.status === "draft"
+      ? path.join(repoRoot, "kuvat")
+      : process.env.PROJECT_IMAGE_ROOT || path.join(repoRoot, "kuvat"));
     for (const source of sources) {
       const target = path.resolve(imageRoot, source);
       const relative = path.relative(imageRoot, target);
