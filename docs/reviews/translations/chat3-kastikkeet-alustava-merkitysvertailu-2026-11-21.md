@@ -47,3 +47,9 @@
 - Korjattiin kolmen käännöksen **vain kuvaa koskeva toimituksellinen huomautus** nykyisen korvaustilanteen mukaiseksi. FI-resepti, määrät, valmistusvaiheet, allergeenit, `image.src` ja ravintokentät pidettiin ennallaan.
 - Verrattiin kantarellikastikkeen ja puolukkakastikkeen FI/EN/SV/TH-kuvahuomautukset: niissä ei havaittu vastaavaa korjaamatonta vaihtovaatimusta.
 - Vertailu on rajattu kuvaa koskevien tekstimerkintöjen ristiriitaan, **ei** nelikielisen sisällön täydellinen hyväksyntä. AI-kuvan toimituksellinen hyväksyntä, semanttisten tiivisteiden virallinen tarkistus, kuuden muun kastikkeen ravintolaskenta sekä Repo Guardin julkaisuportit pysyvät avoimina. Kaikki 10 reseptiä edelleen Draft/HOLD.
+
+## Jatkotarkistus 22.11.2026 – piparjuurikastikkeen sitruunamehu
+
+- Kylmän piparjuurikastikkeen FI/EN/SV/TH-ainesrivin sitruunamehu on nyt **12 g punnittuna**. Tämä on nelikielinen, yhteinen lähdereseptin sisältömuutos, eikä sitä pidä tulkita 12 ml:n tiheysmuunnokseksi.
+- Thaikielisen valmistusvaiheen yleisluontoinen `น้ำมะนาว` (tavallisesti lime) korjattiin muotoon `น้ำมะนาวเหลือง` (sitruuna), joka vastaa täsmälleen thaikielistä ainesosariviä ja FI-lähteen sitruunamehua. Muutos täsmensi ainesosan tunnistusta, ei muuttanut annosta, valmistusmenetelmää eikä reseptin lämpötilaa.
+- Tämä on rajattu Chat 3:n semanttinen korjaus, **ei** lopullinen riippumaton kielikatselmointi, uusi `semanticHash`-hyväksyntä tai `meta/kaannokset/codex-review-evidence.json`-merkintä. Kieliversiot ja koko PR pysyvät Draft/HOLD.
