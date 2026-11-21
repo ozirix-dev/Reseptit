@@ -15,6 +15,7 @@ test("FI editorial audit detects recipe and projection changes without touching 
     "site/scripts/editorial-public-audit.ts",
     "site/scripts/gk80-editorial-display.ts",
     "site/scripts/recipe-quality-holds.ts",
+    "site/scripts/public-recipe-quarantine.json",
     "site/src/content/markdown.ts",
     ".github/workflows/pages.yml",
   ]) assert.equal(shouldRunFiEditorialAudit([file]), true, file);
@@ -32,6 +33,18 @@ test("FI editorial audit detects recipe and projection changes without touching 
   assert.equal(shouldRunFiEditorialAudit(["docs/notes.md", "reseptit/paaruoat/new.md"]), true);
   assert.equal(shouldRunFiEditorialAudit([]), false);
   assert.equal(shouldRunFiEditorialAudit(null), true); // Invalid selector input fails safe.
+});
+
+test("exact quarantine JSON changes force the FI parity audit but not unrelated JSON", () => {
+  const path = "site/scripts/public-recipe-quarantine.json";
+  assert.equal(shouldRunFiEditorialAudit([path]), true);
+  assert.equal(shouldRunFiEditorialAudit(["site/scripts/public-recipe-quarantine-notes.json"]), false);
+  assert.equal(shouldRunFiEditorialAudit(["docs/reviews/quarantine-notes.json"]), false);
+  for (const event of ["pull_request", "push"]) {
+    const plan = applyEventPolicy(classifyPaths([path]), event);
+    assert.equal(plan.runBuild, true, "quarantine must regenerate published content: " + event);
+    assert.equal(plan.runStatic, true);
+  }
 });
 
 test("changed-path selector writes the actual CI editorial audit gate", () => {
@@ -57,6 +70,8 @@ test("changed-path selector writes the actual CI editorial audit gate", () => {
   try {
     verify(["reseptit/paaruoat/old.md"], "pull_request", true);
     verify(["site/scripts/public-recipe-copy-r2.ts"], "pull_request", true);
+    verify(["site/scripts/public-recipe-quarantine.json"], "pull_request", true);
+    verify(["site/scripts/public-recipe-quarantine.json"], "push", true);
     verify([".github/workflows/pages.yml"], "pull_request", true);
     verify(["site/src/features/feedback/FeedbackForm.tsx"], "pull_request", false);
     verify(["kaannokset/en/paaruoat/translation.md"], "pull_request", false);
