@@ -125,6 +125,33 @@ export async function readLiveRevision({sha,fetcher=fetch}) {
   assertSha(liveSha);
   return {sha,liveSha,alreadyLive:liveSha===sha};
 }
+/** Fail before upload if Wrangler would not discover the required Pages Function. */
+export async function verifyPagesFunctions(siteRoot) {
+  const site=path.resolve(siteRoot);
+  const functions=path.join(site,'functions');
+  const api=path.join(functions,'api');
+  const entry=path.join(api,'feedback.ts');
+  for(const folder of [functions,api]) {
+    let state;
+    try { state=await lstat(folder); }
+    catch { throw new Error('HOLD: Missing Pages Functions directory: '+path.relative(site,folder)); }
+    must(state.isDirectory() && !state.isSymbolicLink(),
+      'Pages Functions directory is not a real directory');
+  }
+  let state;
+  try { state=await lstat(entry); }
+  catch { throw new Error('HOLD: Missing Pages Function: functions/api/feedback.ts'); }
+  must(state.isFile() && !state.isSymbolicLink(), 'Pages Function source is not a regular file');
+  const source=await readFile(entry,'utf8');
+  must(/export\s+function\s+onRequestGet\s*\(/.test(source) &&
+       /json\s*\(\s*405\s*,\s*\{\s*error:\s*["']method_not_allowed["']\s*\}/.test(source),
+    'Pages feedback GET must remain a 405 method_not_allowed function');
+  must(/export\s+async\s+function\s+onRequestPost\s*\(/.test(source) &&
+       /FEEDBACK_ENABLED/.test(source),
+    'Pages feedback POST feature gate is missing');
+  return {functionsRoot:'site/functions',feedbackRoute:'GET 405; POST guarded'};
+}
+
 export async function verifyArtifact(dist,sha,{stamp=false}={}) {
   assertSha(sha);
   const headersFile=path.join(dist,'_headers');
@@ -177,11 +204,12 @@ export async function verifyArtifact(dist,sha,{stamp=false}={}) {
 }
 async function main() {
   const [mode,sha,location]=process.argv.slice(2);
-  must(['github','github-recheck','cloudflare','stamp','artifact','live'].includes(mode),'Unknown release gate mode');
+  must(['github','github-recheck','cloudflare','stamp','artifact','functions','live'].includes(mode),'Unknown release gate mode');
   let result;
   if(mode==='github'||mode==='github-recheck') result=await githubPreflight({
     sha,env:process.env,verifyEnvironment:true});
   else if(mode==='cloudflare') result=await cloudflarePreflight({env:process.env});
+  else if(mode==='functions') result=await verifyPagesFunctions(path.resolve(sha||'site'));
   else if(mode==='live') {
     result=await readLiveRevision({sha});
     if(process.env.GITHUB_OUTPUT) await writeFile(process.env.GITHUB_OUTPUT,
