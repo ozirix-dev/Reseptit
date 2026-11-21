@@ -1,0 +1,39 @@
+name: Temporary image import liha-perunasoselaatikko
+on:
+  push:
+    branches: [recipe/kotiruoka-liha-perunasoselaatikko-draft-20261121]
+    paths: [.github/workflows/temporary-import-liha-perunasoselaatikko.yml]
+permissions:
+  contents: write
+jobs:
+  import:
+    if: github.repository == 'ozirix-dev/Reseptit'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Convert draft preview to WebP
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet 'Pillow==11.3.0'
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          s=Path('docs/drafts/liha-perunasoselaatikko-import-preview.jpg'); t=Path('kuvat/paaruoat/liha-perunasoselaatikko.webp')
+          p=Image.open(s);p.load()
+          assert p.format=='JPEG' and p.size==(960,746)
+          t.parent.mkdir(parents=True,exist_ok=True)
+          p.convert('RGB').save(t,format='WEBP',quality=82,method=6)
+          c=Image.open(t);assert c.format=='WEBP' and c.size==p.size
+          PY
+      - name: Save image to draft branch
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = 'recipe/kotiruoka-liha-perunasoselaatikko-draft-20261121'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- 'kuvat/paaruoat/liha-perunasoselaatikko.webp'
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Add WebP image for liha-perunasoselaatikko'
+          git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"
