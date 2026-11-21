@@ -65,7 +65,7 @@ En klassisk finsk vardagssoppa med potatis, rotfrukter och brynt köttfärs utan
 1. Skala och tärna potatis och rotfrukter. Hacka löken och skiva purjolöken.
 2. Koka upp vatten och buljongkoncentrat. Lägg i kålrot och morötter och sjud cirka 10 minuter.
 3. Tillsätt potatis och purjolök. Koka ytterligare cirka 15 minuter tills grönsakerna är mjuka.
-4. Bryn under tiden färsen och löken i rybsolja tills köttet är genomstekt. Häll ner i soppan.
+4. Bryn under tiden nötfärsen och löken i rybsolja. Genomstek färsen till minst 70 °C och lägg sedan i soppan.
 5. Låt sjuda 5 minuter, krydda med svartpeppar och tillsätt hackad persilja. Anpassa saltet efter buljongen.
 
 ## Anteckningar

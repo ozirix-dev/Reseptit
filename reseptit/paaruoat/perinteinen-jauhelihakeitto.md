@@ -70,7 +70,7 @@ Tavallinen suomalainen arkikeitto perunasta, juureksista ja ruskistetusta jauhel
 1. Kuori ja kuutioi perunat ja juurekset. Hienonna sipuli ja viipaloi purjo.
 2. Kuumenna vesi ja liemitiiviste. Lisää lanttu ja porkkana; keitä noin 10 minuuttia.
 3. Lisää perunat ja purjo. Keitä vielä noin 15 minuuttia, kunnes kasvikset ovat pehmeitä.
-4. Ruskista sillä välin jauheliha ja sipuli rypsiöljyssä kauttaaltaan kypsäksi. Lisää pannun sisältö keittoon.
+4. Ruskista sillä välin jauheliha ja sipuli rypsiöljyssä. Kypsennä naudan jauheliha kauttaaltaan vähintään 70 °C:seen ja lisää pannun sisältö keittoon.
 5. Anna kiehahtaa 5 minuuttia, mausta mustapippurilla ja lisää hienonnettu persilja. Tarkista suola liemitiivisteen mukaan.
 
 ## Muistiinpanot

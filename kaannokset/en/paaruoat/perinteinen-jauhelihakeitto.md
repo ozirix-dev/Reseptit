@@ -65,7 +65,7 @@ An everyday Finnish soup of potatoes, root vegetables and browned ground meat wi
 1. Peel and dice potatoes and root vegetables. Chop the onion and slice the leek.
 2. Bring the water and stock concentrate to a boil. Add swede and carrots; simmer for about 10 minutes.
 3. Add potatoes and leek. Cook for another 15 minutes or until the vegetables are tender.
-4. Meanwhile, brown the ground beef and onion in rapeseed oil until fully cooked. Add them to the soup.
+4. Meanwhile, brown the ground beef and onion in rapeseed oil. Cook the beef mince thoroughly to at least 70°C throughout, then add to the soup.
 5. Simmer for 5 minutes, season with black pepper and add chopped parsley. Adjust salt according to the stock used.
 
 ## Notes
