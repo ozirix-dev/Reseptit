@@ -265,3 +265,20 @@ test("unverified EU total polyols cannot produce an ingredient GK point", () => 
   assert.equal(unknown.status, "INSUFFICIENT SOURCE DATA");
   assert.equal(unknown.glycemicLoadPerServing, null);
 });
+
+test("all current EU-total catalogue records retain their verified available CHO under source gate", async () => {
+  const records = JSON.parse(await readFile(new URL("../../docs/nutrition/food-records.json", import.meta.url), "utf8")) as FoodRecord[];
+  const euTotals = records.filter(r => r.carbohydrateDefinition === "EU_TOTAL_INCLUDING_POLYOLS");
+  assert.ok(euTotals.length > 0, "Audit at least one real EU-total source record");
+  for (const record of euTotals) {
+    const carbs = record.per100g.carbohydrate;
+    const polyols = record.per100g.polyols;
+    assert.equal(record.polyolsSourceVerified, true, record.id + ": source polyol verification required");
+    assert.ok(record.polyolsEvidence?.trim(), record.id + ": source polyol reference required");
+    assert.equal(typeof carbs, "number", record.id + ": numeric total CHO required");
+    assert.equal(typeof polyols, "number", record.id + ": numeric polyols required");
+    assert.ok(carbs! >= polyols!, record.id + ": conflicting source carbohydrate mass");
+    const expected = Number((carbs! - polyols!).toFixed(6));
+    assert.deepEqual(normalizeCarbohydrate(record), { available: expected, net: expected }, record.id);
+  }
+});
