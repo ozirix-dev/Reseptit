@@ -47,13 +47,13 @@ Henkilö- tai viestitietoja ei tulosteta CI-/Worker-lokeihin. Kanta, sen varmuus
 
 ## Toimitusraja
 
-Koodissa ei ole Cloudflare-tilin asetusten muutoksia, ajastuksen automaattista perustamista, D1-resurssin luontia, todellisia henkilötietoja, julkista admin-lukureittiä, AI-käsittelyä tai reseptijulkaisua. PR #780 pysyy Draftina ja oletuksena pois käytöstä.
+Koodissa ei ole Cloudflare-tilin asetusten muutoksia, ajastuksen automaattista perustamista, D1-resurssin luontia, todellisia henkilötietoja, julkista admin-lukureittiä, AI-käsittelyä tai reseptijulkaisua. Palautteen vastaanotto pysyy oletuksena OFF riippumatta siitä, onko lähdekoodin PR #780 Draft, Ready vai yhdistetty päähaaraan. Varsinainen Cloudflare-aktivointi tarvitsee erillisen hyväksynnän.
 
 Lähteet: [Cloudflare Scheduled Handler](https://developers.cloudflare.com/workers/runtime-apis/handlers/scheduled/), [Cron Triggers](https://developers.cloudflare.com/workers/configuration/cron-triggers/), [D1 Prepared Statement Methods](https://developers.cloudflare.com/d1/worker-api/prepared-statements/).
 
 ## Erillinen offline SQL -integraatiotesti
 
-Uusi testi site/tests/feedback-d1-integration.test.ts käyttää Node 22:n SQLite-moduulia **muistissa**, ajaa oikeat migraatiot 0001 + 0002 ja toteuttaa D1:n parametrisoidun prepared-statement-sopimuksen testiadapterilla. Se käyttää todellista SQLite-SQL-moottoria eikä valmiiksi onnistumisen palauttavaa D1-mockia.
+Uusi testi site/tests/feedback-d1-integration.test.ts käyttää Node 22:n SQLite-moduulia **muistissa**, ajaa oikeat migraatiot 0001 + 0002 + 0003 ja toteuttaa D1:n parametrisoidun prepared-statement-sopimuksen testiadapterilla. Se käyttää todellista SQLite-SQL-moottoria eikä valmiiksi onnistumisen palauttavaa D1-mockia.
 
 Varmistetaan:
 - ilman oikeasti ajettua siivousta vastaanotto palauttaa 503 ja säilyttää tyhjän kannan
