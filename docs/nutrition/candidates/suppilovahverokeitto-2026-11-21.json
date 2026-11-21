@@ -312,5 +312,27 @@
     ],
     "all_public_macro_values_withheld": true
   },
-  "missing_values_rule": "Null means not established; 0 is allowed only for a measured/explicitly sourced value. Quantified-row subtotals exclude unmapped ingredients and unknown components, and cannot be used as complete-recipe estimates."
+  "missing_values_rule": "Null means not established; 0 is allowed only for a measured/explicitly sourced value. Quantified-row subtotals exclude unmapped ingredients and unknown components, and cannot be used as complete-recipe estimates.",
+  "secondary_external_source_candidates": [
+    {
+      "food": "suppilovahvero",
+      "source": "https://nutrola.fi/ravintokirjasto/vihannekset/suppilovahvero/",
+      "fineli_food_id": 35610,
+      "evidence": "Secondary Fineli-based listing appears to describe cooked/steamed mushroom (~39 kcal/100g); recipe uses 300 g fresh mushrooms, which are not identical after evaporation. Do not substitute this number for raw mushrooms.",
+      "disposition": "CANDIDATE_ONLY_FRESH_VS_COOKED_UNRESOLVED"
+    },
+    {
+      "food": "suppilovahvero",
+      "source": "https://www.kilokalori.net/ravinto/yleinen/suppilovahvero",
+      "evidence": "Secondary raw mushroom entry reports roughly 24.1 kcal/100g (not a fully verified record for all project-required components). Conflicts with prepared-mushroom 39 kcal/100g; verify ingredient state and official ID before use.",
+      "disposition": "CANDIDATE_ONLY_NOT_USED"
+    },
+    {
+      "food": "kasvisliemi",
+      "source": "https://bmi.fi/elintarvike/kasvisliemi-laimennettu.html",
+      "evidence": "A generic diluted stock has example nutrient data, but the exact 800 g stock in this recipe is unspecified. Choose a product or prepare a weighed stock recipe before mapping.",
+      "disposition": "CANDIDATE_ONLY_NOT_USED"
+    }
+  ],
+  "external_source_policy": "These candidate source observations are traceable but unapproved, and their values do NOT enter the calculated subtotals or public frontmatter. Raw vs cooked, product selection and complete carbohydrate/polyol evidence must be resolved."
 }
