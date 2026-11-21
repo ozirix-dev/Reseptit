@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "uunissa-paistetut-silakkarullat",
+  "source_path": "reseptit/alkuruoat/uunissa-paistetut-silakkarullat.md",
+  "source_sha256": "f6776d875149b0b74055099577fd3b45a4bbcd70f95d5d9239397a245ca36447",
+  "decision": "approved",
+  "reviewed_by": "ChatGPT Chat 4 – lähteistetty kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/silakkarullat"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/reviews/chat4-eight-starters-nutrition-withheld-2026-11-21.md",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Mainin reseptikategorioiden identiteetit ja avoimet rinnakkaiset PR:t tarkistettiin, eikä kyseisen ruokalajin samaa recipe_id/url_slug-identiteettiä löytynyt."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "600 g ruodottomia silakkafileitä, sinappi, tilli, sipuli ja 100 ml kermaa sekä voi ja mausteet; kaikki kahdeksan ainesriviä kattavat reseptin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "K-Ruoan testattu silakkarullaresepti tukee 200 °C / 35–40 min uunissa ja kermassa kypsentämistä. Recipavon sinappi-tilli-sipulitäyte on muunnelma."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kala paistetaan kauttaaltaan kypsäksi. Silakan alkuperän mukaiset syöntisuositukset säilyvät reseptissä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kuusi pientä alkupala-annosta, 65 minuuttia sisältää rullaamisen ja 35–40 minuutin uunipaiston."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Numeeriset ravintoarvot jätetään tarkoituksellisesti pois, koska toistettavaa tuotekohtaista laskentaa ei ole. Puuttuvat kentät eivät merkitse nollaa; erillinen ravintonäyttömuistio."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle omalle valmistusversiolle ei ole hyväksyttyä GI/GK-mittausta tai laskentaa. GK jätetään määrittämättä ja ruokavalioväitteet pidätetään."
+    }
+  },
+  "supplementary_evidence": {
+    "source_review": "docs/reviews/new-recipes/chat4-alkuruoat-independent-source-review-2026-11-21.md",
+    "semantic_review": "docs/reviews/new-recipes/chat4-eight-appetizers-semantic-review-2026-11-21.md",
+    "image_path": "kuvat/alkuruoat/uunissa-paistetut-silakkarullat.webp",
+    "image_sha256": "c6bf4d2e297271e918077a0606c5d05411c920ae873138d7f1eb499c202b99bd",
+    "image_review": "SHA-256-varmennettu 720 × 720 tekoälyhavainnekuva; ei valmistetun annoksen valokuva.",
+    "physical_cook_test": false,
+    "translation_status": "EN/SV/TH remain draft; no publication claim for those languages."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "suolasienisalaatti-sipulilla",
+  "source_path": "reseptit/alkuruoat/suolasienisalaatti-sipulilla.md",
+  "source_sha256": "88ea75464f790ae3537566be6ecc87249ed62a461a642325f452a52d4e334c1a",
+  "decision": "approved",
+  "reviewed_by": "ChatGPT Chat 4 – lähteistetty kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/sienisalaatti/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/reviews/chat4-eight-starters-nutrition-withheld-2026-11-21.md",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Mainin reseptikategorioiden identiteetit ja avoimet rinnakkaiset PR:t tarkistettiin, eikä kyseisen ruokalajin samaa recipe_id/url_slug-identiteettiä löytynyt."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "350 g esikäsiteltyjä syötäviä suolarouskuja, punasipuli sekä smetana ja ranskankerma; vesi puristetaan pois ja kylmämaustuminen on 20 minuuttia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Marttojen testattu sienisalaatti osoittaa esikäsiteltyjen suolasienten liottamisen, hienonnuksen ja kylmän maitopohjan toimivaksi. Smetanan ja ranskankerman suhde on Recipavon itsenäinen sovitus."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Vain varmasti tunnistetut, lajille oikealla tavalla esikäsitellyt ja syöntivalmiit rouskut. Korvasientä ei käytetä. Sienisalaatti pidetään kylmässä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kuusi alkupala-annosta, noin 35 minuutin aktiivinen ja kylmämaustumiseen varattu arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Numeeriset ravintoarvot jätetään tarkoituksellisesti pois, koska toistettavaa tuotekohtaista laskentaa ei ole. Puuttuvat kentät eivät merkitse nollaa; erillinen ravintonäyttömuistio."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle omalle valmistusversiolle ei ole hyväksyttyä GI/GK-mittausta tai laskentaa. GK jätetään määrittämättä ja ruokavalioväitteet pidätetään."
+    }
+  },
+  "supplementary_evidence": {
+    "source_review": "docs/reviews/new-recipes/chat4-alkuruoat-independent-source-review-2026-11-21.md",
+    "semantic_review": "docs/reviews/new-recipes/chat4-eight-appetizers-semantic-review-2026-11-21.md",
+    "image_path": "kuvat/alkuruoat/suolasienisalaatti-sipulilla.webp",
+    "image_sha256": "2aa953722e50945cc44dded88b9296d90fe1e3c94e12d03390a1905fdc29e1a7",
+    "image_review": "SHA-256-varmennettu 720 × 720 tekoälyhavainnekuva; ei valmistetun annoksen valokuva.",
+    "physical_cook_test": false,
+    "translation_status": "EN/SV/TH remain draft; no publication claim for those languages."
+  }
+}

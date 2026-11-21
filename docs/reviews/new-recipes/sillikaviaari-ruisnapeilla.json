@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "sillikaviaari-ruisnapeilla",
+  "source_path": "reseptit/alkuruoat/sillikaviaari-ruisnapeilla.md",
+  "source_sha256": "296a8a52e8c6b88a1bea987bc7fde08b69a5d86aa8c3bf59bab1db26a05f465f",
+  "decision": "approved",
+  "reviewed_by": "ChatGPT Chat 4 – lähteistetty kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.valio.fi/reseptit/sillikaviaari/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/reviews/chat4-eight-starters-nutrition-withheld-2026-11-21.md",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Mainin reseptikategorioiden identiteetit ja avoimet rinnakkaiset PR:t tarkistettiin, eikä kyseisen ruokalajin samaa recipe_id/url_slug-identiteettiä löytynyt."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "220 g syöntivalmista silliä, kaksi kovaksi keitettyä kananmunaa, punasipuli, smetana, ranskankerma, tilli, sitruuna ja 16 ruisnappia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valion sillikaviaari tukee valmis-silli-muna-sipuli-ranskankerma-yhdistelmää ja tarjoilua palttoonappien päällä. Recipavon smetana ja annoskoot ovat muunnelma."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Vain syöntivalmis silli, kylmäsäilytys ja kalan, munan, maidon sekä rukiin allergeenit. Nimessä kaviaari ei tarkoita tässä lisättyä mätiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kahdeksan alkupala-annosta, 25 min sisältää 9–10 minuutin munien keittämisen ja täytteen sekoituksen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Numeeriset ravintoarvot jätetään tarkoituksellisesti pois, koska toistettavaa tuotekohtaista laskentaa ei ole. Puuttuvat kentät eivät merkitse nollaa; erillinen ravintonäyttömuistio."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle omalle valmistusversiolle ei ole hyväksyttyä GI/GK-mittausta tai laskentaa. GK jätetään määrittämättä ja ruokavalioväitteet pidätetään."
+    }
+  },
+  "supplementary_evidence": {
+    "source_review": "docs/reviews/new-recipes/chat4-alkuruoat-independent-source-review-2026-11-21.md",
+    "semantic_review": "docs/reviews/new-recipes/chat4-eight-appetizers-semantic-review-2026-11-21.md",
+    "image_path": "kuvat/alkuruoat/sillikaviaari-ruisnapeilla.webp",
+    "image_sha256": "750faeba4625b5246fb28eeaef758dcd5ca2b45207bb71ad8f1e2709a9d5240f",
+    "image_review": "SHA-256-varmennettu 720 × 720 tekoälyhavainnekuva; ei valmistetun annoksen valokuva.",
+    "physical_cook_test": false,
+    "translation_status": "EN/SV/TH remain draft; no publication claim for those languages."
+  }
+}

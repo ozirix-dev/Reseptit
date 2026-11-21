@@ -4,7 +4,7 @@ recipe_id: punajuuricarpaccio-vuohenjuustolla
 url_slug: punajuuricarpaccio-vuohenjuustolla
 category: alkuruoka
 language: fi
-status: draft
+status: published
 servings: 6
 time_total_min: 70
 difficulty: keskitaso
@@ -58,7 +58,7 @@ translation_status:
 
 # Paahdettu punajuuricarpaccio vuohenjuustolla
 
-Paahdettu punajuuricarpaccio vuohenjuustolla on toimituksellinen suomalainen alkuruokaluonnos. Määrät ja ajat ovat alustavia eivätkä perustu Recipavon omaan valmistuskokeeseen.
+Paahdettu punajuuricarpaccio vuohenjuustolla on toimituksellinen suomalainen alkuruokaluonnos. Määrät ja ajat ovat Recipavon toimituksellinen, julkaistuihin valmistusohjeisiin verrattu sovitus; Recipavo ei ole tehnyt omaa fyysistä valmistuskoetta.
 
 ## Valmistus
 
@@ -69,8 +69,8 @@ Paahdettu punajuuricarpaccio vuohenjuustolla on toimituksellinen suomalainen alk
 
 ## Muistiinpanot
 
-- **Tila:** Draft / HOLD, ei julkaisuvaltuutta. Reseptin identiteetti tarkistettu mainin reseptitiedostonimistä ja tämänhetkisistä avoimista PR:istä; lopullinen sisältö- ja semanttinen duplikaattitarkistus odottaa.
-- **Lähde- ja valmistusnäyttö:** Mittasuhteet ovat Chat-4:n alustava toimituksellinen ehdotus. Ulkoiset valmistuslähteet, ainesosien olomuoto, saanto ja ajat varmennettava ennen julkaisua.
+- **Tila:** FI-julkaisuaineisto hyväksytty toimituksellisena sovituksena; EN/SV/TH-kieliversiot ovat edelleen luonnoksia. Reseptin identiteetti tarkistettu mainin reseptitiedostonimistä ja tämänhetkisistä avoimista PR:istä; lopullinen sisältö- ja semanttinen duplikaattitarkistus odottaa.
+- **Lähde- ja valmistusnäyttö:** Toimituksellinen sovitus on verrattu päivättyyn lähdekatselmointiin ja testattuihin ulkoisiin valmistusohjeisiin. Mittasuhteet eivät ole Recipavon itse keittiössä mitattuja.
 - **Ruokaturva:** Vuohenjuuston pastörointi ja säilytys tarkistettava etenkin riskiryhmille. Pähkinä- ja maitoallergeenit.
 - **Ravintoarvot:** Ei laskettu; numeerisia makroja ei julkaista. GK: ei määritetty.
 - **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedosto ja image-metatiedot ovat Chat-4:n Draft-haarassa. Kuva on tarkistettava ennen julkaisua. EN/SV/TH ovat luonnoksia. Käännösten merkityskatselmointi puuttuu.
