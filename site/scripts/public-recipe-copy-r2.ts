@@ -739,7 +739,7 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
   },
   "vietnamilainen-hu-tieu-aamiaiskeitto/th": {
     "description": "ต้มหมูสันนอกหั่นเส้นและเส้นก๋วยเตี๋ยวในหม้อเดียวกัน เติมถั่วงอกกับผักชีสด เสิร์ฟเป็นอาหารเช้าสองที่พร้อมน้ำซุปทั้งหมด"
-  }
+  },
   "valimerellinen-menemen-fetalla/fi": {
     nutritionBasis: "### Ravintoarvion laskentaperusta\n\nKahden annoksen arvio käyttää 150 g vuohenmaitofetaa, jossa on 25 % rasvaa ([Fineli 11211](https://fineli.fi/fineli/api/v1/foods/11211)), kahta kuoretonta kananmunaa (55 g/kpl), 125 g tomaattia, 170 g vihreää paprikaa ja 1 rkl eli 13,5 g paistoöljyä. Laskennassa koko öljymäärä sisältyy annoksiin. Fetan koostumus, kasvisten koko ja pannulle jäävä öljy voivat muuttaa arvoja. Nämä ovat laskennallisia arvioita, eivät valmiista ateriasta mitattuja ravintoarvoja.",
   },
