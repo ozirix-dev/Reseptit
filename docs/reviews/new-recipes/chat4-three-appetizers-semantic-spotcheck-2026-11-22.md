@@ -24,3 +24,9 @@ Thain silakkarullien ainesosa `kuohukermaa` oli `วิปปิงครีม�
 - Edellä olevat blobit tarkoittavat katselmoinnin lähtöversiota, ennen TH-tekstin korjausta; lopullinen SHA-sidottu käännösrekisterin hyväksyntä on tehtävä korjatun version mukaan.
 - Rekisteriin `meta/kaannokset/codex-review-evidence.json` ei kirjoiteta tekaistua Codex-arviointia.
 - Tuotannon FI-tiedostot, kuvat, numeeriset ravintoarvot, GK ja 24 käännöksen julkaisutilat eivät muutu. Riskiruokalajien graavisiian ja muikunmädin luonnokset säilyvät.
+
+## CI-tarkistuksen huomio
+
+Ensimmäinen PR-ajo #44960922444 pysähtyi `Verify the tested revision` -SHA-suojaukseen GitHubin main-haaran ehdittyä muuttua testimergen muodostamisen jälkeen. Tästä ei voi päätellä käännöskorjauksen tai regressiotestin epäonnistuneen. SHA-suojaus säilytetään. Uusi täsmä-HEAD-CI käynnistetään tämän raportin päivityksestä; ajo on arvioitava erikseen ennen Ready- tai merge-päätöstä.
+
+Uutta tarkistusta valmistellessa main oli `ad29edbead52e57feea1f303050feb10ac47394c`.
