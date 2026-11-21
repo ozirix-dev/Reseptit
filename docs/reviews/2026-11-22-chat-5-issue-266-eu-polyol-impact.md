@@ -51,3 +51,36 @@ Uusi `site/tests/nutrition-model.test.ts` -regressio kattaa puuttuvan lähdevarm
 3. Vasta hyväksytyn evidenssin jälkeen mahdollinen tarkoituksella rajattu `reviewed-nutrition-model-binding.ts`-muutos, regressiot sekä uudet täsmä-HEAD- ja merge-SHA-CI-ajot.
 
 **Päätös:** #826 jää Draft/HOLDiksi. Ei julkaistujen lukujen, ravintorekisterin, GI/GK-sinettien, muiden chatien PR:ien eikä Cloudflare-tuotannon muutoksia tämän selvityksen perusteella.
+
+## 5. Riippumaton ajettava ennen–jälkeen-vertailu (22.11.2026)
+
+Tämän raportin alkuperäisen, 604 tietueen semanttisen kartoituksen lisäksi toteutettiin **pinnattuun historialliseen Git-blobiin** perustuva, erillinen read-only CI-auditointi:
+
+- [GitHub Actions #44957523521](https://github.com/ozirix-dev/Reseptit/actions/runs/44957523521): `completed/success`; vanha laskentamalli haettiin Git-blobista `de8d7189d786b06c93e13afb378f8861a70542c6`.
+- [GitHub Actions #44957604756](https://github.com/ozirix-dev/Reseptit/actions/runs/44957604756): `completed/success`; tarkennettu tapauskohtainen raportti, artefakti `chat5-eu-polyol-impact`.
+- `site/scripts/eu-polyol-impact-audit.ts` lataa vanhan mallin Git-objektista ja ajaa kummankin mallin oikeilla `FoodRecord`- ja `Calculation`-syötteillä. Se raportoi poikkeamat, ei muokkaa lähteitä, GK-sinettejä tai hyväksyntöjä.
+- **604** kanonista lähdetietuetta vertailtu: **0 eroa**.
+- **305** reseptilaskennan JSON-syötettä vertailtu vanhalla/uudella `calculate()`-funktiolla: **0 eroa**.
+- Kohdennetut EU-polyoliregressiot: **3 testiä, 3 PASS, 0 FAIL**.
+
+### Seitsemän syötetason epävarmuutta, joilla ei syntynyt uutta laskentaeroa
+
+Kaikissa alla olevissa syötteissä **sekä vanha että uusi normalisointi antoivat `available=null, net=null`**. Reseptin laskentastatuskaan ei muuttunut.
+
+| Resepti | Varmentamaton EU-total-tietue | Vanha ja uusi reseptin tulostila |
+| --- | --- | --- |
+| `kebab-munakasrulla` | `label-kebab-20261117` | `INSUFFICIENT SOURCE DATA` |
+| `kebab-munakasrulla` | `label-red-20261117` | `INSUFFICIENT SOURCE DATA` |
+| `kebab-munakasrulla` | `label-white-20261117` | `INSUFFICIENT SOURCE DATA` |
+| `kebab-munakasrulla` | `label-pepper-20261117` | `INSUFFICIENT SOURCE DATA` |
+| `munatacot-huevos-rancheros` | `op142-unresolved-munatacot-huevos-rancheros-6` | `ESTIMATE WITH EVIDENCE` |
+| `pasta-alla-norma` | `ehold-auricchio-pecorino` | `INSUFFICIENT SOURCE DATA` |
+| `shakshuka` | `op142-unresolved-shakshuka-6` | `ESTIMATE WITH EVIDENCE` |
+
+Huomautus: `ESTIMATE WITH EVIDENCE` on reseptin koko laskelman senhetkinen arviostatus; se ei yksin hyväksy tätä yksittäistä epävarmaa ainesosatietuetta eikä julkaistavaa numeerista GK:ta. Yksittäisten syötteiden epävarmuudet pidetään erillään tämän koodimuutoksen vaikutuksesta.
+
+### Näytön tarkka kattavuusraja
+
+Tässä ajossa verrattiin kanonista lähderekisteriä ja `docs/nutrition/calculations/`-hakemiston 305 laskentasyötettä kahdella **oikeasti suoritetulla** laskentamallilla. Lisäksi synteettinen negatiivinen testi todentaa uuden fail-closed-käyttäytymisen. Auditointi ei suorita suojattua GK-only-versioiden avausta eikä anna hyväksyntää niiden vanhan sinetin uudelleensidonnalle.
+
+**Pakollinen Recipe site -CI jää tarkoituksella HOLDiin**, koska `gk-next-seven.ts` edellyttää uutta, riippumattomasti hyväksyttyä koodisidosta. Uuden tarkisteen lisääminen `reviewed-nutrition-model-binding.ts`-tiedostoon vain tämän raportin perusteella olisi ennenaikaista. Ei Ready-, merge- eikä tuotantojulkaisulupaa.
