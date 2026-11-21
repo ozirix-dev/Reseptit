@@ -58,7 +58,7 @@ Maidosta, keltuaisesta ja vaniljasta valmistettu kastike mustikkapiirakalle ja o
 
 1. Sekoita kattilassa kylmä maito, sokeri ja maissitärkkelys täysin tasaiseksi. Lisää keltuainen ja suola ja vatkaa.
 2. Kuumenna miedolla tai keskilämmöllä koko ajan sekoittaen, kunnes kastike sakenee ja lämpötila nousee noin 82–85 °C:seen. Älä keitä voimakkaasti, jotta muna ei kokkaroidu.
-3. Nosta kattila liedeltä ja sekoita vaniljasokeri mukaan. Jos kastike on paakkuinen, siivilöi se.
+3. Nosta kattila liedeltä ja sekoita vaniljasokeri mukaan. Jos kastikkeeseen jää pieniä paakkuja, vatkaa se tasaiseksi; älä siivilöi aineksia pois.
 4. Tarjoa lämpimänä tai jäähdytä nopeasti matalassa astiassa ja säilytä jääkaapissa enintään +6 °C:ssa tarjoiluun asti.
 
 ## Muistiinpanot

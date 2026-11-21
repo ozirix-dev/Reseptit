@@ -53,7 +53,7 @@ A smooth milk-and-egg-yolk custard for blueberry pie or apple crumble.
 
 1. Whisk cold milk, sugar and cornstarch in a saucepan until smooth. Add the egg yolk and salt and whisk again.
 2. Heat over low to medium heat, stirring constantly, until thick and about 82–85°C. Do not boil vigorously, as the egg may curdle.
-3. Remove the saucepan from the heat and stir in vanilla sugar. Strain if any lumps remain.
+3. Remove the saucepan from the heat and stir in vanilla sugar. Whisk any small lumps smooth rather than straining out ingredients.
 4. Serve warm, or cool promptly in a shallow container and refrigerate at +6°C or colder until served.
 
 ## Notes
