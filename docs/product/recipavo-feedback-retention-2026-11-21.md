@@ -50,3 +50,18 @@ Henkilö- tai viestitietoja ei tulosteta CI-/Worker-lokeihin. Kanta, sen varmuus
 Koodissa ei ole Cloudflare-tilin asetusten muutoksia, ajastuksen automaattista perustamista, D1-resurssin luontia, todellisia henkilötietoja, julkista admin-lukureittiä, AI-käsittelyä tai reseptijulkaisua. PR #780 pysyy Draftina ja oletuksena pois käytöstä.
 
 Lähteet: [Cloudflare Scheduled Handler](https://developers.cloudflare.com/workers/runtime-apis/handlers/scheduled/), [Cron Triggers](https://developers.cloudflare.com/workers/configuration/cron-triggers/), [D1 Prepared Statement Methods](https://developers.cloudflare.com/d1/worker-api/prepared-statements/).
+
+## Erillinen offline SQL -integraatiotesti
+
+Uusi testi site/tests/feedback-d1-integration.test.ts käyttää Node 22:n SQLite-moduulia **muistissa**, ajaa oikeat migraatiot 0001 + 0002 ja toteuttaa D1:n parametrisoidun prepared-statement-sopimuksen testiadapterilla. Se käyttää todellista SQLite-SQL-moottoria eikä valmiiksi onnistumisen palauttavaa D1-mockia.
+
+Varmistetaan:
+- ilman oikeasti ajettua siivousta vastaanotto palauttaa 503 ja säilyttää tyhjän kannan
+- siivous suorittaa oikean DELETE-lauseen, päivittää heartbeat-arvon ja sallii synteettisen palautteen
+- UNIQUE(token_sha256) estää toistetun tokenin tallennuksen, vaikka testiverifioija palauttaisi virheellisesti hyväksynnän
+- 30 vuorokautta vanhempi viesti todella poistuu, uusi onnistumismerkintä pysyy aikajärjestyksessä ja tietokannan check-rajoitteet toimivat
+- yksittäisen viestin yksityinen poisto viitetunnuksella säilyttää muut rivit
+
+Ajo site-hakemistossa: `npx tsx --test tests/feedback-d1-integration.test.ts`. Testi ei avaa ulkoista verkkoyhteyttä eikä käytä oikeaa henkilötietoa.
+
+**Raja:** SQLite-muistissa tehty testi todentaa tietokannan skeeman ja kyselylogiikan, mutta ei korvaa D1:n oikeaa Cloudflare-esikatselua, Worker/Cron Trigger -asennuksen testaamista, WAFia, tietosuojahyväksyntää tai poistopyyntöjen toteutusta tuotantoympäristössä.
