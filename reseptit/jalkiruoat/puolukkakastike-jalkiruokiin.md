@@ -39,7 +39,7 @@ ingredients:
     unit: "g"
     item: "sokeria"
   - amount: 10
-    unit: "ml"
+    unit: "g"
     item: "sitruunamehua"
 ---
 
@@ -51,7 +51,7 @@ Kirpeä marjakastike jäätelölle, juustokakulle tai uunijälkiruoalle.
 
 1. Mittaa puolukat, vesi ja sokeri kattilaan. Käytä ehjiä ja puhtaita marjoja.
 2. Kiehauta ja hauduta 4–5 minuuttia, kunnes marjat pehmenevät. Kuumentaminen sopii myös pakastemarjoille.
-3. Soseuta sauvasekoittimella lyhyesti niin, että osa puolukoista jää kokonaisiksi. Halutessasi soseuta täysin ja siivilöi sileäksi. Lisää sitruunamehu ja sekoita.
+3. Soseuta sauvasekoittimella lyhyesti niin, että osa puolukoista jää kokonaisiksi. Älä siivilöi, jotta marjojen kuoret ja kuidut jäävät kastikkeeseen. Lisää sitruunamehu ja sekoita.
 4. Tarjoa kastike lämpimänä tai jäähdytä nopeasti ja säilytä jääkaapissa kylmänä tarjoiluun asti.
 
 ## Muistiinpanot
@@ -64,3 +64,4 @@ Kirpeä marjakastike jäätelölle, juustokakulle tai uunijälkiruoalle.
 - Luetellut ainekset eivät sisällä reseptissä tarkoituksella lisättyä maitoa, kananmunaa, vehnää tai pähkinää. Tarkista mahdolliset jäämät ja käytettyjen tuotteiden pakkausmerkinnät; gluteenittomuutta ei ole erikseen hyväksytty.
 - Ilmoitettu kokonaisaika koskee lämpimänä tarjoilua. Jos kastike tarjotaan kylmänä, varaa lisäksi jäähdytys- ja jääkaappiaika.
 - Tarkista, että puolukat ovat alkuperältään kotimaisia, myös pakastepussissa. Pakastetut ulkomaiset marjat vaativat erillisen Ruokaviraston mukaisen kuumennuksen: vähintään 90 °C viisi minuuttia tai keittäminen kaksi minuuttia. Tämä resepti on suunniteltu kotimaisille marjoille, eikä 4–5 minuutin hiljainen haudutus yksin takaa ulkomaisten pakastemarjojen käsittelyä. Tarjoa lämpimänä tai jäähdytä nopeasti ja säilytä alle +6 °C:ssa.
+- Tässä punnitussa kastikeversiossa marjoja ei siivilöidä, joten koko marjamassa ja kuitu jäävät kastikkeeseen. Sitruunamehun määrä on 10 g, ei arvioitu 10 ml:n paino.

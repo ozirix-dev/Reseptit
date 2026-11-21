@@ -705,8 +705,8 @@
     {
       "recipe_id": "puolukkakastike-jalkiruokiin",
       "source_path": "reseptit/jalkiruoat/puolukkakastike-jalkiruokiin.md",
-      "source_recipe_sha256": "a9393ece594ca894c312345d1954e5e5451d69714a540f37eae10ae7cb5ee11b",
-      "nutrition_input_hash": "dc57fc50dec6b2eceec4b1de84f1dde3b5d6f635014df60b77b11ad7cdb60d0e",
+      "source_recipe_sha256": "2f362059db29a9a6d3ce6bfd5e4efe5754ae45d7c7e5522bebb18246d92012e1",
+      "nutrition_input_hash": "c50fd88ab225e21892e801f882d90277e235d357e4ef819caae872fc2ff0396a",
       "servings": 6,
       "ingredient_count": 4,
       "ingredients": [
@@ -746,12 +746,12 @@
         {
           "row": 4,
           "amount": 10,
-          "unit": "ml",
+          "unit": "g",
           "item": "sitruunamehua",
           "note": null,
           "food_record": null,
           "edible_basis": "UNRESOLVED",
-          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "unit_conversion": "DIRECT_GRAMS",
           "retention": "UNRESOLVED"
         }
       ],

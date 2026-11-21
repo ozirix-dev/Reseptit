@@ -34,7 +34,7 @@ ingredients:
     unit: "g"
     item: "socker"
   - amount: 10
-    unit: "ml"
+    unit: "g"
     item: "citronsaft"
 ---
 
@@ -46,7 +46,7 @@ En syrlig bärsås till glass, cheesecake eller ugnsdesserter.
 
 1. Lägg lingon, vatten och socker i en kastrull. Använd rena, fina bär.
 2. Koka upp och sjud i 4–5 minuter tills bären mjuknar. Upphettning passar även frysta bär.
-3. Mixa kort så att några lingon förblir hela. För en slät sås, mixa helt och sila om du vill. Rör ner citronsaften.
+3. Mixa kort så att några lingon förblir hela. Sila inte; låt bärskal och fibrer stanna i såsen. Rör ner citronsaften.
 4. Servera varm, eller kyl snabbt och förvara i kylskåp fram till kall servering.
 
 ## Anteckningar
@@ -59,3 +59,4 @@ En syrlig bärsås till glass, cheesecake eller ugnsdesserter.
 - De angivna ingredienserna innehåller ingen avsiktligt tillsatt mjölk, ägg, vete eller nötter. Kontrollera märkningen för möjliga spår; inget påstående om glutenfrihet har godkänts.
 - Den angivna totaltiden gäller varm servering. För kall servering behövs extra tid för avsvalning och kylning.
 - Kontrollera att lingonen verkligen har finländskt ursprung, även om de är frysta. Importerade frysta bär kräver separat upphettning enligt Livsmedelsverket i Finland: minst 90 °C i fem minuter eller kokning i två minuter. Receptet är för finländska bär; 4–5 minuters svag sjudning räcker inte som bevis för behandling av importerade frysta bär. Servera varmt eller kyl snabbt och förvara under +6 °C.
+- Denna vägda version silas inte; alla bärdelar och fibrer ingår. Citronsaften vägs till 10 g i stället för att anta massan för 10 ml.

@@ -34,7 +34,7 @@ ingredients:
     unit: "g"
     item: "sugar"
   - amount: 10
-    unit: "ml"
+    unit: "g"
     item: "lemon juice"
 ---
 
@@ -46,7 +46,7 @@ A tart berry sauce for ice cream, cheesecake or baked desserts.
 
 1. Put the lingonberries, water and sugar in a saucepan. Use clean, sound berries.
 2. Bring to a boil and simmer for 4–5 minutes until soft. Heating is also suitable for frozen berries.
-3. Briefly blend, leaving some lingonberries whole. For a smooth sauce, blend fully and strain if desired. Stir in the lemon juice.
+3. Briefly blend, leaving some lingonberries whole. Do not strain; keep the berry skins and fibre in the sauce. Stir in the lemon juice.
 4. Serve warm, or cool promptly and refrigerate until served cold.
 
 ## Notes
@@ -59,3 +59,4 @@ A tart berry sauce for ice cream, cheesecake or baked desserts.
 - The listed ingredients contain no intentionally added milk, egg, wheat or nuts. Check labels for possible cross-contact; no gluten-free claim has been approved.
 - The stated total time is for serving the sauce warm. For cold serving, allow additional cooling and refrigeration time.
 - Check that the lingonberries are of Finnish origin, including any frozen packet. Imported frozen berries need separate heating as advised by the Finnish Food Authority: at least 90°C for five minutes or boiling for two minutes. This recipe is for Finnish berries; 4–5 minutes of gentle simmering alone does not establish compliance for imported frozen berries. Serve warm or cool promptly and refrigerate below +6°C.
+- This weighed version is not strained; all berry solids and fibre remain. Lemon juice is weighed as 10 g, rather than inferring mass from 10 ml.

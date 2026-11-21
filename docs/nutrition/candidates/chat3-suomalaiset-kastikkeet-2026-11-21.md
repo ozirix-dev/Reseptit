@@ -2,7 +2,7 @@
 
 **Päivä:** 21.11.2026; **PR:** #808; **lähtö-HEAD:** `10cce14b379aef981ebb80cbcbe7a266ac5c21a0`.
 
-Tämä ei ole ravintolaskelma eikä julkinen ravintoarvio. Kyseessä on kymmenen reseptin ainesosa- ja lähtötiivisteinventaario. Kaikki punnitut määrät, yksiköt ja FI-lähdetekstit on luettu GitHubin omasta Chat 3 -haarasta. Rivejä yhteensä **63**; nestetilavuutta ml-yksikössä ilmoittavia rivejä **13**, joihin tarvitaan tuotekohtainen g/ml-muunnos.
+Tämä ei ole ravintolaskelma eikä julkinen ravintoarvio. Kyseessä on kymmenen reseptin ainesosa- ja lähtötiivisteinventaario. Kaikki punnitut määrät, yksiköt ja FI-lähdetekstit on luettu GitHubin omasta Chat 3 -haarasta. Rivejä yhteensä **63**; nestetilavuutta ml-yksikössä ilmoittavia rivejä **12**, joihin tarvitaan tuotekohtainen g/ml-muunnos.
 
 | recipe_id | Annoksia | Ainesrivejä | ml-rivejä | Laskennan input SHA-256 (alku) |
 | --- | ---: | ---: | ---: | --- |
@@ -14,7 +14,7 @@ Tämä ei ole ravintolaskelma eikä julkinen ravintoarvio. Kyseessä on kymmenen
 | `perinteinen-munakastike` | 4 | 7 | 1 | `54b24ba297bc…` |
 | `kermainen-pippurikastike` | 4 | 6 | 2 | `91c2af86c2f1…` |
 | `perinteinen-valkokastike` | 6 | 6 | 1 | `cfd1a39123f8…` |
-| `puolukkakastike-jalkiruokiin` | 6 | 4 | 2 | `dc57fc50dec6…` |
+| `puolukkakastike-jalkiruokiin` | 6 | 4 | 1 | `c50fd88ab225…` |
 | `perinteinen-vaniljakastike` | 6 | 6 | 1 | `10e4c40b7383…` |
 
 Ainesosaluettelo, reseptin täydellinen SHA-256 sekä `recipeNutritionInputHash`-syöttötiiviste jokaiselle reseptille ovat erillisessä **[koneellisesti luettavassa JSONissa](chat3-suomalaiset-kastikkeet-2026-11-21.json)**. Tiivistealgoritmi tarkistettiin olemassa olevaa `fetavaahto-kasvistikuilla`-laskentapakettia vastaan; tulos vastasi repossa olevaa `sourceHash`-arvoa.
@@ -36,3 +36,7 @@ Kolmen aiemmin yleisellä valmisliemellä/sinapilla kuvatun kastikkeen ainesosat
 ## Tillikastikkeen punnitustarkennus
 
 Kermaviili: laktoositon 10–12 % rasvaa, Fineli #11152. Sitruunamehu muutettu 12 ml:sta 12 g:ksi; laskennan syöttötiiviste päivittyi. Kymmenen reseptin 63 ainesosariviä ennallaan ja ml-yksikköisiä rivejä nyt 13. Tässä vaiheessa ei vielä väitetä laskettua tai hyväksyttyä ravintoarvoa.
+
+## Puolukkakastikkeen punnitustarkennus
+
+Puolukkakastikkeen sitruunamehu muutettu 10 millilitrasta 10 grammaan ja valinnaisesta siivilöinnistä luovuttu: kaikki marjakuoret ja kuidut jäävät annokseen. Tämä varmistaa retentioperusteen ravintoarviolaskennalle. 63 ainesosariviä ennallaan, ml-rivejä nyt 12.
