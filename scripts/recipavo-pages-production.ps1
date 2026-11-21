@@ -47,6 +47,29 @@ function Property($Object,[string[]]$Names) {
   }
   return $null
 }
+function Get-ArtifactSha([string]$HeaderText) {
+  # Use an independent variable, not PowerShell's automatic regex variable.
+  $revisionMatches=[regex]::Matches($HeaderText,'(?im)^\s*X-Recipavo-Commit:[ \t]*([a-f0-9]{40})\s*$')
+  Need ($revisionMatches.Count -eq 1) 'Expected exactly one X-Recipavo-Commit in dist/_headers'
+  return $revisionMatches[0].Groups[1].Value
+}
+function Verify-Production([string]$ReleaseSha,[string]$ArtifactDist) {
+  # Isolate the child verifier from any preview environment in the operator's shell.
+  $savedTarget=$env:RECIPAVO_BUILD_TARGET
+  $savedPreview=$env:RECIPAVO_PREVIEW_ORIGIN
+  try {
+    $env:RECIPAVO_BUILD_TARGET='production'
+    Remove-Item Env:RECIPAVO_PREVIEW_ORIGIN -ErrorAction SilentlyContinue
+    Need (-not (Test-Path Env:RECIPAVO_PREVIEW_ORIGIN)) 'Preview environment could not be cleared before production verification'
+    & npm.cmd run verify:production -- $ReleaseSha 'https://www.recipavo.com' $ArtifactDist
+    Need ($LASTEXITCODE -eq 0) 'Post-deploy production verification failed: review Cloudflare deployment and rollback plan.'
+  } finally {
+    if ($null -eq $savedTarget) { Remove-Item Env:RECIPAVO_BUILD_TARGET -ErrorAction SilentlyContinue }
+    else { $env:RECIPAVO_BUILD_TARGET=$savedTarget }
+    if ($null -eq $savedPreview) { Remove-Item Env:RECIPAVO_PREVIEW_ORIGIN -ErrorAction SilentlyContinue }
+    else { $env:RECIPAVO_PREVIEW_ORIGIN=$savedPreview }
+  }
+}
 function Revision([string]$Url) {
   try {
     $r=Invoke-WebRequest -Uri $Url -Method Get -TimeoutSec 20 -MaximumRedirection 0 -UseBasicParsing
@@ -72,9 +95,8 @@ Need ($remoteSha -eq $ExpectedSha) "Remote main changed: $remoteSha. Rebuild and
 $trackedDirty=(Run-External 'git' @('-C',$resolvedRepo,'status','--porcelain','--untracked-files=no'))
 Need ([string]::IsNullOrWhiteSpace($trackedDirty)) 'Tracked worktree changes exist; preserve other sessions and use a clean release worktree.'
 $headers=Get-Content -LiteralPath $headerFile -Raw
-$matches=[regex]::Matches($headers,'(?im)^\s*X-Recipavo-Commit:[ \t]*([a-f0-9]{40})\s*$')
-Need ($matches.Count -eq 1) 'Expected exactly one X-Recipavo-Commit in dist/_headers'
-Need ($matches[0].Groups[1].Value -eq $ExpectedSha) 'Build artifact SHA differs from approved main SHA'
+$artifactSha=Get-ArtifactSha $headers
+Need ($artifactSha -eq $ExpectedSha) 'Build artifact SHA differs from approved main SHA'
 # Production must be built with RECIPAVO_BUILD_TARGET=production.
 # A preview dist is noindex and must NEVER be repurposed for production.
 Need (-not ($headers -match '(?im)^\s*X-Robots-Tag:\s*noindex\b')) 'Preview noindex header is present; build production target from scratch'
@@ -108,7 +130,7 @@ if($Apply) {
 }
 $liveSha=Revision 'https://www.recipavo.com/'
 Write-Host "Repository main : $remoteSha"
-Write-Host "Artifact stamp  : $($matches[0].Groups[1].Value)"
+Write-Host "Artifact stamp  : $artifactSha"
 Write-Host "Pages project   : $Project"
 Write-Host "Existing production deployment branch: $ExpectedProductionBranch"
 Write-Host "Cloudflare deployment summary: $cloudSha"
@@ -133,8 +155,7 @@ try {
   # Never use --branch main: that is a Preview branch in this Direct Upload project.
   & npx.cmd --yes wrangler@4.165.0 pages deploy $dist --project-name $Project --branch $ExpectedProductionBranch --commit-hash $ExpectedSha
   Need ($LASTEXITCODE -eq 0) 'Wrangler production deployment failed. No success claim.'
-  & npm.cmd run verify:production -- $ExpectedSha 'https://www.recipavo.com' $dist
-  Need ($LASTEXITCODE -eq 0) 'Post-deploy production verification failed: review Cloudflare deployment and rollback plan.'
+  Verify-Production $ExpectedSha $dist
   $after=Revision 'https://www.recipavo.com/'
   Need ($after -eq $ExpectedSha) 'Live revision header did not match approved SHA after deployment.'
   $get=Invoke-WebRequest -Uri 'https://www.recipavo.com/api/feedback' -Method Get -SkipHttpErrorCheck -TimeoutSec 15 -MaximumRedirection 0
