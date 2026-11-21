@@ -92,7 +92,13 @@ export async function checkPublicRoutes({
   const httpVerified = observations.every(r => r.httpMatch);
   const badCanonicals = observations.filter(r => r.canonicalMatch === false);
   const sourceHeaders = observations.filter(r => r.httpMatch && r.sourceSha !== null);
-  const shaVerified = expectedSha !== null && sourceHeaders.length === observations.length
+  const distinctSourceShas = [...new Set(sourceHeaders.map(r => r.sourceSha))].sort();
+  const shaConsistency = sourceHeaders.length !== observations.length ? "NOT FULLY VERIFIED"
+    : distinctSourceShas.length === 1 ? "PASS" : "HOLD";
+  const htmlPages = observations.filter(r => PUBLIC_ROUTES.find(p => p.key === r.key)?.html);
+  const canonicalStatus = badCanonicals.length ? "HOLD"
+    : htmlPages.every(r => r.canonicalMatch === true) ? "PASS" : "NOT FULLY VERIFIED";
+  const shaVerified = expectedSha !== null && shaConsistency === "PASS"
     && sourceHeaders.every(r => r.sourceSha === expectedSha);
   const result = {
     schemaVersion: 1,
@@ -101,10 +107,11 @@ export async function checkPublicRoutes({
     expectedSha,
     statuses: {
       http: httpVerified ? "PASS" : "HOLD",
-      canonical: badCanonicals.length ? "HOLD" : "NOT FULLY VERIFIED",
+      canonical: canonicalStatus,
+      shaConsistency,
       hreflang: "OBSERVED ONLY",
       releaseSha: shaVerified ? "PASS" : "NOT VERIFIED",
-      overall: httpVerified && !badCanonicals.length && shaVerified ? "PASS" : "HOLD",
+      overall: httpVerified && canonicalStatus === "PASS" && shaVerified ? "PASS" : "HOLD",
     },
     summary: {
       checked: observations.length,
@@ -113,6 +120,7 @@ export async function checkPublicRoutes({
       htmlCanonicalObserved: observations.filter(r => r.canonical !== null).length,
       mismatchedCanonicals: badCanonicals.length,
       releaseShaObserved: sourceHeaders.length,
+      distinctSourceShas,
     },
     routes: observations,
     releaseAuthorized: false,
@@ -129,6 +137,7 @@ export function publicAuditMarkdown(result) {
     "Read-only observation; no link placement, production release or GK authorization.",
     "", "Observed: " + result.observedAt,
     "HTTP: " + result.statuses.http + "; SHA: " + result.statuses.releaseSha,
+    "; SHA consistency: " + result.statuses.shaConsistency,
     "; overall: " + result.statuses.overall, "",
     "| Route | HTTP | Expected | Canonical | Release header |",
     "| --- | ---: | ---: | --- | --- |",
