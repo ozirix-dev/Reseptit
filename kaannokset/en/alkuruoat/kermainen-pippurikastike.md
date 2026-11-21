@@ -61,3 +61,4 @@ A rich peppercorn sauce for steaks, pork fillet and potato sides.
 - Preparation reference: https://www.k-ruoka.fi/reseptit/naudan-pihvi-ja-pippurikastike
 
 - The AI-generated illustrative image is now versioned. Decorative garnishes shown in the picture are not part of the ingredient quantities.
+- Additional preparation comparison: Valio's pepper sauce using shallot, stock, cream and mustard. This Recipavo version has neither cognac nor pepper-flavoured cheese cream. https://www.valio.fi/reseptit/konjakki-pippurikastike-pihveille/

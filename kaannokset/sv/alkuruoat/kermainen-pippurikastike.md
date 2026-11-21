@@ -61,3 +61,4 @@ En fyllig pepparsås till biff, fläskfilé och potatistillbehör.
 - Preparation reference: https://www.k-ruoka.fi/reseptit/naudan-pihvi-ja-pippurikastike
 
 - Den AI-genererade illustrationsbilden är nu versionshanterad. Dekorationer på bilden ingår inte i receptmängderna.
+- Ytterligare jämförelsekälla: Valios pepparsås med schalottenlök, buljong, grädde och senap. Recipavos version använder varken konjak eller pepparostgrädde. https://www.valio.fi/reseptit/konjakki-pippurikastike-pihveille/

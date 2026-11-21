@@ -61,3 +61,4 @@ ingredients:
 - Preparation reference: https://www.k-ruoka.fi/reseptit/naudan-pihvi-ja-pippurikastike
 
 - ภาพประกอบสร้างด้วย AI และอยู่ในระบบควบคุมเวอร์ชันแล้ว ของตกแต่งในภาพไม่รวมในปริมาณส่วนผสม
+- แหล่งเปรียบเทียบเพิ่มเติมคือซอสพริกไทยของ Valio ที่ใช้หอมแดง น้ำซุป ครีมและมัสตาร์ด สูตร Recipavo นี้ไม่มีคอนญักหรือครีมชีสพริกไทย https://www.valio.fi/reseptit/konjakki-pippurikastike-pihveille/
