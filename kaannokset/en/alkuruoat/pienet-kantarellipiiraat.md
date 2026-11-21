@@ -75,4 +75,4 @@ Use positively identified edible chanterelles. Cook the egg filling until set an
 - English translation only; the Finnish original remains the source of truth.
 - Not ready for publication: ingredient quantities, preparation evidence, food safety and translation parity require independent review.
 - Numeric nutrition values and glycemic load have not been established.
-- No image is attached until the verified WebP binary is actually stored in Git.
+- The 720 × 720 WebP image is now stored in this Git Draft branch and checksum-pinned in the verified image overlay; visual/editorial publication approval is still pending.
