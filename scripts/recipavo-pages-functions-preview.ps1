@@ -58,7 +58,13 @@ $head = Run 'git' @('-C',$root,'rev-parse','HEAD')
 Need ($head -eq $ExpectedSha) 'Checkout does not match expected SHA'
 $remote = Run 'git' @('-C',$root,'ls-remote','origin','refs/heads/main')
 $remoteSha = ($remote -split '\s+')[0]
-Need ($remoteSha.Length -eq 40 -and $remoteSha -cmatch '^[0-9a-f]+Need (-not (Run 'git' @('-C',$root,'status','--porcelain','--untracked-files=no'))) 'Tracked worktree is dirty'
+Need ($remoteSha -match '^[a-f0-9]{40}$') 'Remote main SHA could not be read'
+# A pinned main ancestor is valid for preview even when other chats merge later.
+$trackedMain = Run 'git' @('-C',$root,'rev-parse','refs/remotes/origin/main')
+Need ($trackedMain -eq $remoteSha) 'Local origin/main is stale; fetch origin main first'
+& git -C $root merge-base --is-ancestor $ExpectedSha $trackedMain
+Need ($LASTEXITCODE -eq 0) 'Pinned preview SHA is not an ancestor of remote main'
+Need (-not (Run 'git' @('-C',$root,'status','--porcelain','--untracked-files=no'))) 'Tracked worktree is dirty'
 $headers = Get-Content -LiteralPath (Join-Path $dist '_headers') -Raw
 $stamps = [regex]::Matches($headers,'(?im)^\s*X-Recipavo-Commit:[ \t]*([a-f0-9]{40})\s*$')
 Need ($stamps.Count -eq 1 -and $stamps[0].Groups[1].Value -eq $ExpectedSha) 'dist SHA stamp differs'
