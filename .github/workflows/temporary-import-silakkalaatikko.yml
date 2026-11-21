@@ -1,0 +1,39 @@
+name: Temporary image import silakkalaatikko
+on:
+  push:
+    branches: [recipe/kotiruoka-silakkalaatikko-draft-20261121]
+    paths: [.github/workflows/temporary-import-silakkalaatikko.yml]
+permissions:
+  contents: write
+jobs:
+  import:
+    if: github.repository == 'ozirix-dev/Reseptit'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Convert preview to WebP
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet 'Pillow==11.3.0'
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          src=Path('docs/drafts/silakkalaatikko-import-preview.jpg');dst=Path('kuvat/paaruoat/silakkalaatikko.webp')
+          image=Image.open(src);image.load()
+          assert image.format=='JPEG' and image.size==(960,746)
+          dst.parent.mkdir(parents=True,exist_ok=True)
+          image.convert('RGB').save(dst,format='WEBP',quality=82,method=6)
+          result=Image.open(dst);assert result.format=='WEBP' and result.size==image.size
+          PY
+      - name: Commit image only to expected draft branch
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = 'recipe/kotiruoka-silakkalaatikko-draft-20261121'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- 'kuvat/paaruoat/silakkalaatikko.webp'
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Add WebP image for silakkalaatikko'
+          git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"
