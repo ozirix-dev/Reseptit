@@ -48,12 +48,13 @@ Thaimaalainen arkiruoka, jossa marinoitu porsas paistetaan valkosipulin tuoksuis
 1. Huuhtele 150 g kuivaa jasmiiniriisiä ja kypsennä pakkauksen ohjeen mukaan. Pidä riisi lämpimänä tarjoiluun asti.
 2. Leikkaa porsas noin 1 cm paksuiksi suikaleiksi. Sekoita vaalea soijakastike, osterikastike, marinadiin tarkoitettu 5 ml kalakastiketta, sokeri, valkopippuri ja puolet valkosipulista. Kääntele liha joukkoon ja marinoi peitettynä jääkaapissa 20 minuuttia.
 3. Kuumenna pannulla 10 ml öljyä keskimiedolla lämmöllä. Paista jäljellä oleva 10 g valkosipulia 1–2 minuuttia vaalean kullanruskeaksi. Nosta heti pois pannulta, ettei valkosipuli pala.
-4. Lisää pannulle 10 ml öljyä ja kuumenna keskilämmölle. Paista porsas marinadeineen kahdessa erässä noin 4–6 minuuttia erää kohti, kunnes liha on kauttaaltaan kypsää ja saanut väriä. Älä käytä raakaa marinadia kastikkeena.
+4. Lisää pannulle 10 ml öljyä ja kuumenna keskilämmölle. Paista porsas marinadeineen kahdessa erässä noin 4–6 minuuttia erää kohti, kunnes liha on kauttaaltaan kypsää ja saanut väriä. Varmista tarvittaessa lämpömittarilla, että lihan sisälämpötila on vähintään 70 °C. Älä käytä raakaa marinadia kastikkeena.
 5. Kuumenna loput 10 ml öljyä puhtaalla pannulla. Paista kananmunat niin, että valkuaiset hyytyvät ja reunat rapeutuvat; kypsennä keltuaiset haluamaasi kypsyyteen. Sekoita erikseen kastikkeeksi 10 ml kalakastiketta, limettimehu ja hienonnettu chili.
 6. Jaa riisi kahdelle lautaselle. Lisää porsas, paistetut kananmunat ja kurkku. Ripottele päälle rapea valkosipuli. Tarjoa chili-limekalakastike erillään.
 
 ## Muistiinpanot
 
+- Tarjoa riisi heti kuumana. Jos valmistat sitä etukäteen, jäähdytä nopeasti, säilytä jääkaapissa enintään +6 °C:ssa ja kuumenna kauttaaltaan yli +70 °C:een ennen tarjoamista.
 - Allergeenit: kananmuna, kala (kalakastike), nilviäiset (osterikastike) ja soija. Soijakastike ja osterikastike voivat sisältää vehnää; tarkista tuotepakkaukset. Gluteenittomuutta ei ole vahvistettu.
 - Ravintoarvoja eikä glykeemistä kuormaa (GK) ole vielä laskettu. Annos sisältää tavallista jasmiiniriisiä eikä ole VHH- tai ketoruoka.
 - Tämä on lähteisiin perustuva Recipavon toimituksellinen sovitus. Recipavo ei ole valmistanut eikä maistanut tätä versiota omassa koekeittiössään. Lähteet ja erot on kirjattu erilliseen näyttömuistioon.

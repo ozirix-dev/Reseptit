@@ -51,12 +51,13 @@ This Thai everyday dish pairs marinated pork fried in fragrant garlic oil with j
 1. Rinse 150 g of uncooked jasmine rice and cook according to the packet instructions. Keep warm until serving.
 2. Slice the pork into strips about 1 cm thick. Mix the light soy sauce, oyster sauce, the 5 ml fish sauce intended for the marinade, sugar, white pepper and half the garlic. Coat the pork and marinate, covered, in the refrigerator for 20 minutes.
 3. Heat 10 ml oil in a pan over medium-low heat. Fry the remaining 10 g garlic for 1–2 minutes until pale golden. Remove immediately so it does not burn.
-4. Add 10 ml oil to the pan and heat over medium heat. Fry the pork with its marinade in two batches for about 4–6 minutes per batch, until cooked all the way through and browned. Do not serve uncooked marinade as a sauce.
+4. Add 10 ml oil to the pan and heat over medium heat. Fry the pork with its marinade in two batches for about 4–6 minutes per batch, until cooked all the way through and browned. If needed, use a food thermometer to verify that the pork reaches at least 70 °C internally. Do not serve uncooked marinade as a sauce.
 5. Heat the remaining 10 ml oil in a clean pan. Fry the eggs until the whites are set and the edges crisp; cook the yolks to your preference. Separately mix the other 10 ml fish sauce with the lime juice and finely chopped chilli.
 6. Divide the rice between two plates. Add the pork, fried eggs and cucumber. Scatter the crispy garlic over the pork and serve the chilli-lime fish sauce separately.
 
 ## Notes
 
+- Serve the rice hot immediately. If preparing it in advance, cool it promptly, refrigerate at 6 °C or below, and reheat thoroughly to over 70 °C before serving.
 - Allergens: egg, fish (fish sauce), molluscs (oyster sauce) and soy. Soy and oyster sauces may contain wheat; check the labels. No gluten-free claim has been verified.
 - Nutrition values and glycaemic load (GL) have not yet been calculated. The dish includes regular jasmine rice and is not presented as low-carb or keto.
 - This is a Recipavo editorial adaptation based on published preparation sources. Recipavo has not cooked or tasted this version in its own test kitchen. Sources and adaptation choices are documented separately.
