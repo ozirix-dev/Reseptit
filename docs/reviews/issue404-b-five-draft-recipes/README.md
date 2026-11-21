@@ -26,6 +26,27 @@ Pandanin oikea kirjoitusasu on pandan, ei uusi erillinen raaka-ainetunnus. Kunki
 - Vertailulähteiden **ainesmäärät eivät automaattisesti siirry** näihin FI-ehdokkaisiin. Sovelluksen annoskoko, vesi, raaka/kypsä-massat sekä tuoteretentiot tarvitsevat oman kirjauksen.
 - Älä tee virheellistä **"perinteinen/autenttinen"**-väitettä esikeitetystä pesarattusta: turvallisuustarkistus muutti menetelmää ja siksi maku/rakenne sekä nimen soveltuvuus on arvioitava.
 
+## Riippumaton elintarviketurvallisuuden lähdekatselmointi (21.11.2026)
+
+Tämä tarkistus perustuu erilliseen **viranomaisten ja terveysturvallisuuden asiantuntijalähteiden** vertailuun alkuperäisten FI-draftien kanssa. Lähteiden numeerisia raja-arvoja ei pidä tulkita tämän reseptierän koekeittiö- tai mikrobiologiseksi hyväksynnäksi.
+
+| Ehdokas | Katselmoinnin päätös | Uusi varmistettava kynnys |
+| --- | --- | --- |
+| **Idli** | **P1 / kontrolli täydennetty**: aiempi 4–6 tunnin liotus ei määrännyt kylmäsäilytystä; 8–12 tunnin lämmin käyminen perustui vain aikaan/kohoamiseen. | Yli 4 tunnin liotus enintään 4 °C:ssa; huoneenlämmössä enintään 4 tuntia. BCCDC esittää 2 %:n suolaprosessitavoitteen, 12–14 h noin 30 °C:ssa, myytäväksi pakattavan taikinan pH ≤ 4,6 ja sisälämmön vähintään 74 °C / 15 s. **2 g:n ehdotettu suolamäärä ei ole osoitettu saavuttavan 2 %:a märästä taikinasta**, joten fermentointimenetelmä on edelleen HOLD. |
+| **Kuih seri muka** | **P1 / jäähdytys täydennetty**: 'jäähdytä täysin ennen leikkaamista' olisi voinut johtaa pitkäkestoiseen huoneenlämpösäilytykseen. | Käsittele riisi–munakastike kylmäsäilytystä vaativana ruokana: nopea jäähdytys, jääkaappiin mieluiten tunnin kuluessa; hyytyminen tapahtuu jääkaapissa, ei tuntikausien huoneenlämpöodotuksessa. |
+| **Xôi** | **P1 / säilytys täydennetty**: kypsän tahmariisin tarjoilu- tai jäähdytysohje puuttui. | Liota riisi ja maapähkinät kylmässä ja tarjoa kypsä riisi heti, tai jäähdytä nopeasti mieluiten tunnissa jääkaappiin (enintään 5 °C). Uudelleenkuumenna vain kerran ja kauttaaltaan höyryävän kuumaksi. |
+| Saltfish fritters | Aiempi kylmässä liotus, suolanpoisto sekä kypsennys on kuvattu, mutta raaka-aineen suolapitoisuus ja öljyn saanto ovat edelleen HOLD. | Kalatuote, jääkaappilämpö, suolanpoiston ja sisälämmön punnittu koetodiste. |
+| Pesarattu | Ruokaviraston kuivapapujen yleinen 12 tunnin liotus ja vähintään 30 minuutin kiehuminen on jo eriytetty perinteisestä pannuletusta; letun rakenne on testaamatta. | Kuivapapujen oikea tuotetunnus ja esikeitetyn mungpapun syötävä massa sekä koekeittiön onnistuminen. |
+
+**Varmennetut asiantuntijalähteet:**
+
+- [BC Centre for Disease Control (2024), Safety of Fermented Foods – Dosa & Idli, s. 8–9](https://www.bccdc.ca/resource-gallery/Documents/Educational%20Materials/EH/FPS/Food/Fermented/Fermented%20Foods%20Guideline%20-%203.4%20Dosa%20and%20Idli.pdf): idli- ja dosa-taikinan liotus, suola, fermentointi, kypsennys ja säilytys. Tämä on elintarvikevalvonnan ohje, **ei** nykyisen FI-draftin validointi.
+- [Ruokavirasto: kuivattujen papujen käyttöohjeet](https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/pakkausmerkinnat-ja-markkinointi/pakolliset-elintarviketiedot/kayttoohje-ja-varoitusmerkinta/pavut/): liotus ja kiehuminen, tuotekohtaiset vaatimukset.
+- [UK Government / Food Standards Agency: Home food fact checker](https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker): kypsän riisin Bacillus cereus -riskin vähentäminen nopealla kylmäjäähdytyksellä, korkeintaan yhdellä uudelleenlämmityksellä.
+- [Food Standards Australia New Zealand: Bacillus cereus in food](https://www.foodstandards.gov.au/consumer/prevention-of-foodborne-illness/bacteria-foodborne-illness/bacillus-cereus): kypsän riisin säilytys ja se, etteivät kuumuutta kestävät itiöt tai jo muodostuneet toksiinit välttämättä tuhoudu.
+
+**Lähdekatselmoinnin valmistumisehto täyttyy vasta dokumentoidulle safety-tekstille ja CI-regressiolle.** Se ei vapauta yhtään tämän hakemiston draftia tai mitään historiallista karanteeni-ID:tä.
+
 ## Julkaisun vaatima erillinen portti
 
 1. Punnittu koekeittiökokeilu tai muu riippumaton ja riittävä menetelmä- sekä elintarviketurvallisuustodiste **kullekin** reseptille. Pesarattun poikkeava esikeittomenetelmä edellyttää omana erityisenä asiana turvallisuus- ja rakennearvioinnin. Kokeilua **ei väitetä tehdyksi** tässä PR:ssä.
