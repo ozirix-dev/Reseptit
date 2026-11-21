@@ -637,10 +637,10 @@
           "unit": "g",
           "item": "täysmaitoa",
           "note": null,
-          "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "food_record": "fineli-689-release-20",
+          "edible_basis": "GRAMS_WHOLE_EDIBLE",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "RETAINED_WITHOUT_MACRO_LOSS"
         },
         {
           "row": 2,
@@ -648,10 +648,10 @@
           "unit": "g",
           "item": "voita",
           "note": null,
-          "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "food_record": "fineli-500-release-20",
+          "edible_basis": "GRAMS_WHOLE_EDIBLE",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "RETAINED_WITHOUT_MACRO_LOSS"
         },
         {
           "row": 3,
@@ -659,10 +659,10 @@
           "unit": "g",
           "item": "vehnäjauhoja",
           "note": null,
-          "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "food_record": "fineli-110-release-20",
+          "edible_basis": "GRAMS_WHOLE_EDIBLE",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "RETAINED_WITHOUT_MACRO_LOSS"
         },
         {
           "row": 4,
@@ -670,10 +670,10 @@
           "unit": "g",
           "item": "suolaa",
           "note": null,
-          "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "food_record": "fineli-30-release-20",
+          "edible_basis": "GRAMS_WHOLE_EDIBLE",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "RETAINED_WITHOUT_MACRO_LOSS"
         },
         {
           "row": 5,
@@ -682,9 +682,16 @@
           "item": "valkopippuria",
           "note": null,
           "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "edible_basis": "GRAMS_WHOLE_EDIBLE",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "RETAINED_WITHOUT_MACRO_LOSS",
+          "omission_upper_bounds": {
+            "kcal": 0.6,
+            "netCarbohydrate": 0.07,
+            "totalCarbohydrate": 0.07,
+            "protein": 0.07,
+            "fat": 0.07
+          }
         },
         {
           "row": 6,
@@ -693,13 +700,20 @@
           "item": "jauhettua muskottipähkinää",
           "note": null,
           "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "edible_basis": "GRAMS_WHOLE_EDIBLE",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "RETAINED_WITHOUT_MACRO_LOSS",
+          "omission_upper_bounds": {
+            "kcal": 0.3,
+            "netCarbohydrate": 0.04,
+            "totalCarbohydrate": 0.04,
+            "protein": 0.04,
+            "fat": 0.04
+          }
         }
       ],
-      "status": "NOT_CALCULATED",
-      "publication": "WITHHELD",
+      "status": "EVIDENCE_ASSEMBLED_PENDING_MODEL_VALIDATION",
+      "publication": "DRAFT_WITHHELD",
       "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI"
     },
     {

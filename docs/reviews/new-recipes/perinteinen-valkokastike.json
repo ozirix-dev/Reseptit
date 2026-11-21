@@ -36,7 +36,7 @@
     },
     "nutrition": {
       "status": "pending",
-      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi."
+      "notes": "docs/nutrition/calculations/perinteinen-valkokastike.json contains four full Fineli food source matches and two bounded spice omissions ({\"kcal\":0.8999999999999999,\"netCarbohydrate\":0.11000000000000001,\"totalCarbohydrate\":0.11000000000000001,\"protein\":0.11000000000000001,\"fat\":0.11000000000000001} max error/serving). SourceHash 019aa958cb6b055fae45c24cd47827e84fb3de2207439fa0b71b0310b68b7b64; independent arithmetic gives {\"carbs_net_per_serving_g\":8.36,\"carbs_total_per_serving_g\":8.57,\"protein_per_serving_g\":3.25,\"fat_per_serving_g\":7.75}. Model validation and four published language frontmatter fields pending before nutrition PASS."
     },
     "glycemic": {
       "status": "unavailable",
