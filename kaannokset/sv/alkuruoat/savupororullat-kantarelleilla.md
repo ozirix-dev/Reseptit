@@ -60,4 +60,4 @@ Använd genomstekt, ätfärdigt rökt renkött. Artbestäm och tillaga svampen; 
 - Den finska källan är styrande. Utkastet är inte godkänt för publicering.
 - Mängder, tillagningsmetod, risker och översättningens betydelse måste granskas.
 - Näringsvärden och glykemisk belastning har inte beräknats.
-- Ingen bild kopplas innan den faktiska WebP-filen har sparats och verifierats i Git.
+- WebP-bilden (720 × 720) finns nu i denna Git Draft-gren och är SHA-256-låst i bildmanifestet; redaktionellt publiceringsgodkännande saknas fortfarande.
