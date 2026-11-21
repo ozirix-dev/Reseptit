@@ -1,6 +1,7 @@
 import { createContext, lazy, Suspense, useCallback, useContext, useMemo, useState, type ReactNode } from "react";
 import type { RecipeLocale } from "../../types/content";
 import { feedbackUi, type FeedbackKind } from "./feedback-copy";
+import { privacyEmail } from "../privacy/privacy-copy";
 
 export interface FeedbackContextSource {
   kind?: FeedbackKind;
@@ -40,15 +41,17 @@ export function FeedbackProvider({ children, locale, pagePath }: {
   </FeedbackContext.Provider>;
 }
 
-export function useFeedback(): FeedbackActions {
-  const context = useContext(FeedbackContext);
-  if (!context) throw new Error("Feedback UI must be inside FeedbackProvider");
-  return context;
+/** Standalone recipe renders (including SEO and GK tests) have no site provider. */
+export function useFeedback(): FeedbackActions | null {
+  return useContext(FeedbackContext);
 }
 
 export function FeedbackFooterButton({ locale }: { locale: RecipeLocale }) {
-  const { openFeedback } = useFeedback();
-  return <button className="feedback-footer-button" type="button" onClick={() => openFeedback()}>
+  const feedback = useFeedback();
+  if (!feedback) return <a className="feedback-footer-button" href={`mailto:${privacyEmail}`}>
+    {feedbackUi[locale].button}
+  </a>;
+  return <button className="feedback-footer-button" type="button" onClick={() => feedback.openFeedback()}>
     {feedbackUi[locale].button}
   </button>;
 }
@@ -56,8 +59,11 @@ export function FeedbackFooterButton({ locale }: { locale: RecipeLocale }) {
 export function RecipeFeedbackButton({ locale, recipeId, pagePath }: {
   locale: RecipeLocale; recipeId: string; pagePath: string;
 }) {
-  const { openFeedback } = useFeedback();
-  return <button type="button" onClick={() => openFeedback({
+  const feedback = useFeedback();
+  if (!feedback) return <a href={`mailto:${privacyEmail}`}>
+    {feedbackUi[locale].recipeButton}
+  </a>;
+  return <button type="button" onClick={() => feedback.openFeedback({
     kind: "recipe_error", recipeId, pagePath,
   })}>{feedbackUi[locale].recipeButton}</button>;
 }
