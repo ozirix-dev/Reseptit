@@ -119,6 +119,29 @@ test("invalid origin, content-type, token, hostname and unsupported payload neve
   assert.equal(db.writes.length, 0);
 });
 
+test("malformed Siteverify responses fail closed without a database write", async () => {
+  const db = mockDb();
+  const env = configured(db.database);
+  // HTTP 200 does not imply a valid Turnstile verification result.
+  for (const payload of ["null", "[]", "{}", '{"success":"true","hostname":"www.recipavo.com"}']) {
+    const response = await handleFeedback({ request: request(valid), env },
+      (async () => new Response(payload, { status: 200 })) as typeof fetch);
+    assert.equal(response.status, 503, payload);
+    assert.deepEqual(await response.json(), { error: "verification_unavailable" });
+  }
+  // Success without the correct hostname must not be accepted either.
+  for (const payload of [
+    '{"success":true}',
+    '{"success":true,"hostname":null}',
+    '{"success":true,"hostname":"attacker.example"}',
+  ]) {
+    const response = await handleFeedback({ request: request(valid), env },
+      (async () => new Response(payload, { status: 200 })) as typeof fetch);
+    assert.equal(response.status, 403, payload);
+  }
+  assert.equal(db.writes.length, 0, "Malformed Siteverify responses cannot write feedback");
+});
+
 test("oversized request and bot honeypot do not consume Turnstile or D1 writes", async () => {
   const db = mockDb();
   const env = configured(db.database);
