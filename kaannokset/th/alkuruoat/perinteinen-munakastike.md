@@ -1,0 +1,59 @@
+---
+title: "ซอสไข่แบบฟินแลนด์สำหรับปลา"
+recipe_id: perinteinen-munakastike
+url_slug: perinteinen-munakastike-th
+category: alkuruoka
+language: th
+source_language: fi
+source_recipe: reseptit/alkuruoat/perinteinen-munakastike.md
+translation_of: perinteinen-munakastike
+status: draft
+servings: 4
+time_total_min: 20
+difficulty: "ง่าย"
+main_ingredient:
+  - "kananmuna"
+cooking_method:
+  - "kattila"
+tags:
+  - "ซอส"
+  - "ฟินแลนด์"
+ingredients:
+  - amount: 400
+    unit: "ml"
+    item: "นมสด"
+  - amount: 30
+    unit: "g"
+    item: "เนย"
+  - amount: 30
+    unit: "g"
+    item: "แป้งสาลี"
+  - amount: 120
+    unit: "g"
+    item: "ไข่ต้มสุกปอกเปลือก"
+  - amount: 15
+    unit: "g"
+    item: "ผักชีลาวสด"
+  - amount: 3
+    unit: "g"
+    item: "เกลือ"
+  - amount: 0.3
+    unit: "g"
+    item: "พริกไทยขาว"
+---
+
+# ซอสไข่แบบฟินแลนด์สำหรับปลา
+
+ซอสนมรสนุ่มที่ใส่ไข่ต้มสุกหั่นและผักชีลาวสด
+
+## วิธีทำ
+
+1. ใช้ไข่ที่ต้มสุกแข็งและปอกเปลือกแล้ว สับไข่กับผักชีลาว หากต้องต้มและทำให้ไข่เย็นเองให้เผื่อเวลาเพิ่ม
+2. ละลายเนยในหม้อ ใส่แป้งคนประมาณ 1 นาทีโดยไม่ให้แป้งเป็นสีน้ำตาล
+3. ค่อย ๆ เติมนมพร้อมตีตลอดเวลา เคี่ยวไฟอ่อน 5 นาทีจนซอสข้น
+4. ใส่ไข่สับและผักชีลาว ปรุงด้วยเกลือและพริกไทยขาว อุ่นให้ทั่ว เสิร์ฟทันทีกับปลาสุกและมันฝรั่ง
+
+## หมายเหตุ
+
+- นี่คือฉบับร่าง ยังไม่ได้ประเมินโภชนาการ ภาระน้ำตาล หรืออนุมัติภาพประกอบขั้นสุดท้าย
+- Preparation reference: https://www.valio.fi/reseptit/munakastike/
