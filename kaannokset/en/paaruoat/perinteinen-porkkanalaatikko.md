@@ -3,6 +3,11 @@ title: "Traditional Finnish Carrot and Rice Casserole"
 recipe_id: perinteinen-porkkanalaatikko
 url_slug: perinteinen-porkkanalaatikko-en
 category: paaruoka
+main_ingredient:
+  - "kasvikset"
+cooking_method:
+  - "uuni"
+  - "keitto"
 language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-porkkanalaatikko.md
@@ -12,8 +17,8 @@ servings: 8
 time_total_min: 115
 difficulty: "easy"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "Finnish"
+  - "traditional"
 ingredients:
   - amount: 1000
     unit: "g"

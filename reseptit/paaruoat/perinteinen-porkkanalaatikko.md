@@ -3,6 +3,11 @@ title: "Perinteinen porkkanalaatikko"
 recipe_id: perinteinen-porkkanalaatikko
 url_slug: perinteinen-porkkanalaatikko
 category: paaruoka
+main_ingredient:
+  - "kasvikset"
+cooking_method:
+  - "uuni"
+  - "keitto"
 language: fi
 status: draft
 servings: 8

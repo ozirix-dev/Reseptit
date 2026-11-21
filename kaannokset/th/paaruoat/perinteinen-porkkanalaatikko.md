@@ -3,6 +3,11 @@ title: "แครอตอบกับข้าวแบบฟินแลนด
 recipe_id: perinteinen-porkkanalaatikko
 url_slug: perinteinen-porkkanalaatikko-th
 category: paaruoka
+main_ingredient:
+  - "kasvikset"
+cooking_method:
+  - "uuni"
+  - "keitto"
 language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-porkkanalaatikko.md
@@ -12,8 +17,8 @@ servings: 8
 time_total_min: 115
 difficulty: "ง่าย"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "อาหารฟินแลนด์"
+  - "อาหารพื้นบ้าน"
 ingredients:
   - amount: 1000
     unit: "g"

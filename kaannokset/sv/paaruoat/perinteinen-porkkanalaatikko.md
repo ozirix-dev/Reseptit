@@ -3,6 +3,11 @@ title: "Traditionell finsk morotslåda med ris"
 recipe_id: perinteinen-porkkanalaatikko
 url_slug: perinteinen-porkkanalaatikko-sv
 category: paaruoka
+main_ingredient:
+  - "kasvikset"
+cooking_method:
+  - "uuni"
+  - "keitto"
 language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-porkkanalaatikko.md
@@ -12,8 +17,8 @@ servings: 8
 time_total_min: 115
 difficulty: "lätt"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "finsk"
+  - "traditionell"
 ingredients:
   - amount: 1000
     unit: "g"
