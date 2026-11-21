@@ -110,3 +110,33 @@ test('classifies absent/null time separately from malformed, unsafe or nonpositi
   assert.equal(report.byTime['45'], 1);
   assert.equal(report.signals.invalidTime.find(x => x.recipeId === 'zero').rawValue, '0');
 });
+
+test('flags duplicate total-time YAML keys, even when values agree', () => {
+  const sources = [
+    { path: 'reseptit/aamupalat/same.md', content:
+      recipe('same', 'Kuvaus.', 'Sekoita.', 'time_total_min: 30\n') },
+    { path: 'reseptit/aamupalat/different.md', content:
+      recipe('different', 'Kuvaus.', 'Sekoita.', 'time_total_min: 0\n') },
+    { path: 'reseptit/aamupalat/single.md', content:
+      recipe('single', 'Kuvaus.', 'Sekoita.') },
+  ];
+  const original = sources.map(x => x.content);
+  const report = analyze(sources);
+  assert.equal(report.counts.reviewed, 3);
+  assert.deepEqual(report.signals.duplicateTimeKeys.map(x => x.recipeId), ['different', 'same']);
+  assert.equal(report.signals.missingTime.length, 2);
+  assert.equal(report.signals.invalidTime.length, 2);
+  assert.equal(report.byTime['(virheellinen)'], 2);
+  assert.equal(report.byTime['30'], 1);
+  assert.equal(report.signals.duplicateTimeKeys[0].rawValue, '30 | 0');
+  assert.equal(report.signals.duplicateTimeKeys[1].rawValue, '30 | 30');
+  assert.deepEqual(sources.map(x => x.content), original);
+});
+
+test('quarantined duplicate time keys are excluded from public FI review signals', () => {
+  const raw = recipe('hidden', 'Kuvaus.', 'Sekoita.', 'time_total_min: 10\n');
+  const report = analyze([{ path: 'reseptit/aamupalat/hidden.md', content: raw }], new Set(['hidden']));
+  assert.equal(report.counts.excludedQuarantine, 1);
+  assert.deepEqual(report.signals.duplicateTimeKeys, []);
+  assert.deepEqual(report.signals.invalidTime, []);
+});
