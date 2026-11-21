@@ -54,3 +54,18 @@ test("all four static indexes show localized feedback contact and recipe links",
   assert.ok(recipe.includes(feedbackUi.fi.recipeButton));
   assert.ok(!recipe.includes("https://challenges.cloudflare.com/turnstile/v0/api.js"));
 });
+
+test("standalone recipe rendering without FeedbackProvider has a functional email fallback", () => {
+  for (const locale of locales) {
+    const html = renderToStaticMarkup(createElement("section", null,
+      createElement(RecipeFeedbackButton, {
+        locale, recipeId: "standalone", pagePath: "/standalone/",
+      }),
+      createElement(FeedbackFooterButton, { locale }),
+    ));
+    assert.match(html, /href="mailto:ossi@rikkola\.fi"/u);
+    assert.ok(html.includes(feedbackUi[locale].recipeButton));
+    assert.ok(html.includes(feedbackUi[locale].button));
+    assert.ok(!html.includes("<form"));
+  }
+});
