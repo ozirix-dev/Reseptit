@@ -19,6 +19,29 @@
   approved scope, Repo Guard, required CI, branch and worktree ownership,
   F25/GK approvals and deployment boundaries.
 
+## Parallel ChatGPT sessions (Chat 1–n)
+
+- Every active ChatGPT work session must identify itself as `Chat N` where
+  `N` is a **user-assigned positive integer with no fixed maximum**.
+  Examples: Chat 1, Chat 5, Chat 12, Chat 100. Never guess or self-assign a
+  missing number. Confirm it with the user before starting GitHub writes.
+- Before writing, check the repository, latest `main`, open PRs and changed
+  file ownership. **Exactly one chat owns writes to each PR branch.**
+- For new work use `chat<N>/<task>-<date>` as the branch prefix when possible.
+  Put `[Chat N]` in every new PR title and **`Työn omistaja: Chat N` in
+  the PR description**, plus scope, branch, affected paths and dependencies.
+  The chat must write these fields itself even when a GitHub connector or API
+  does not automatically apply the PR template.
+- When resuming an existing PR created before this rule, the responsible chat
+  adds its own `Työn omistaja: Chat N` and scope in a PR comment at its next
+  update. Do not rename working branches or claim another chat's PR.
+- If a branch HEAD changes unexpectedly or two sessions need to write the
+  same file, stop and coordinate a single owner. An ownership comment does
+  not transfer authenticated permissions or bypass SHA checks, Repo Guard,
+  CI, F25/GK, translation, nutrition or publication gates.
+- See [parallel ChatGPT ownership guidance](docs/rinnakkaisten-chatien-omistajuus.md)
+  and [the PR description template](.github/pull_request_template.md).
+
 ## Parallel Codex sessions
 
 - Give each parallel writing session its own named role, worktree, Git branch
