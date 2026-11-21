@@ -118,6 +118,24 @@ jobs:
           FORCE_FULL: ${{ inputs.full_suite || false }}
         run: node site/scripts/select-ci-checks.mjs
 
+      - name: Verify FI editorial inventory on tool changes
+        if: contains(steps.select.outputs.changed_paths, 'editorial-inventory')
+        run: |
+          node --test site/scripts/editorial-inventory.test.mjs
+          node site/scripts/editorial-inventory.mjs
+          cat tmp/editorial-inventory/current.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Save advisory FI editorial inventory
+        if: contains(steps.select.outputs.changed_paths, 'editorial-inventory')
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: fi-editorial-inventory
+          path: |
+            tmp/editorial-inventory/current.json
+            tmp/editorial-inventory/current.md
+          if-no-files-found: error
+          retention-days: 14
+
       - name: Check local GI and GK SQLite tools
         if: steps.select.outputs.full == 'true' || contains(steps.select.outputs.changed_paths, 'gi_sqlite') || contains(steps.select.outputs.changed_paths, 'gi_gk_maintainer.py') || contains(steps.select.outputs.changed_paths, 'verify-pr-review.py')
         run: python3 -B -m unittest discover -s site/tests -p 'test_gi_sqlite*.py'
