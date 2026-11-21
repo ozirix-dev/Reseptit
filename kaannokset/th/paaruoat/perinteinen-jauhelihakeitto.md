@@ -18,8 +18,8 @@ cooking_method:
   - "keitto"
   - "paisto"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "อาหารฟินแลนด์"
+  - "อาหารพื้นบ้าน"
 ingredients:
   - amount: 500
     unit: "g"
