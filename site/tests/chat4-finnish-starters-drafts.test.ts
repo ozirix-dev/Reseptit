@@ -111,6 +111,15 @@ test("Thai count classifiers match the actual food item instead of generic piece
   }
 });
 
+test("lasimestarin-silli Thai leek remains distinct from garlic shoots", () => {
+  const fi = loadRecipe("lasimestarin-silli", "fi");
+  const th = loadRecipe("lasimestarin-silli", "th");
+  assert.ok(fi.data.ingredients.some(i => i.item === "purjosipulia"));
+  assert.ok(th.data.ingredients.some(i => i.item === "กระเทียมต้น"));
+  assert.ok(!th.raw.includes("ต้นกระเทียม"));
+  assert.match(th.raw, /หั่นบาง ๆ พร้อมกระเทียมต้น/);
+});
+
 test("Chat-4 source-based risk fixes remain identical in all four languages", () => {
   const claims = [
     {
