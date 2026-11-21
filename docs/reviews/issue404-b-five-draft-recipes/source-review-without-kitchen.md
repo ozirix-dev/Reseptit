@@ -2,6 +2,14 @@
 
 **21.11.2026 · EI JULKAISULUPA · pohja-main `64303f504db4a88c6d42674c65de79a32b977362`.**
 
+## Nykytilan huomautus: lähdesidotut FI-luonnokset 21.11.2026
+
+**Tämän raportin alla oleva vertailutaulukko on historiallinen tilanne** ennen samana päivänä tehtyä viiden lähdeversion korjauserää. Sen aiemmat ehdokasmäärät (esimerkiksi saltfish 80 g, kuih 180 g tai xôin höyrytys) **eivät ole enää nykyisten FI-draftien raaka-ainelista**.
+
+Nykyinen koneellisesti tarkistettu vertailu on [source-binding-2026-11-21.json](source-binding-2026-11-21.json). Neljässä reseptissä pääasiallinen julkaistu valmistusmenetelmä ja keskeiset lähtömäärät on sidottu suoraan nykyiseen FI-frontmatteriin: saltfish / Anthea Stephenson; idli / Dassana Amit sekä erillinen Chef Kunal Kapurin chutney; kuih / Bee Yinn Low & Siew Loon; xôi / VNIFood. **Pesarattu-keittämisen menetelmäero jää HOLDiksi**, koska keitetyn mungpapun ohut taikina ei ole kumpaankaan perinteiseen lähdereseptiin perustuva. Kenenkään koepaistoa tai kaikkien makrojen kelpoisuutta ei väitetä.
+
+Tämä lähdesidonta **ei** itsessään täytä ravinto-, GK-, kuva-, käännös- eikä julkaisuporttia. Puuttuvaa pannuun imeytynyttä öljyä, tuotegrammaa tai idlitaikinan suolapitoisuutta ei saa piilottaa nollaksi.
+
 ## Periaate
 
 Recipavolla **ei ole käytettävissä omaa koekeittiötä**. Oman paiston, höyrytyksen, maistelun tai laboratoriomittauksen puuttuminen ei ole automaattinen syy estää reseptin toimituksellista valmistumista. Sen sijaan käytetään **nimettyyn julkaistuun reseptiin perustuvaa menetelmätarkistusta** ja tarvittaessa erillistä viranomaisen elintarviketurvallisuusohjetta. Jo julkaistu muiden tekijöiden resepti ei ole todistus siitä, että Recipavon *muokattu resepti* olisi testattu.
