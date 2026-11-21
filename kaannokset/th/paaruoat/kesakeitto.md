@@ -1,0 +1,82 @@
+---
+title: "ซุปผักฤดูร้อนแบบฟินแลนด์"
+recipe_id: kesakeitto
+url_slug: sup-phak-rue-du-ron-finland
+category: paaruoka
+language: th
+source_language: fi
+source_recipe: reseptit/paaruoat/kesakeitto.md
+translation_of: kesakeitto
+status: draft
+servings: 6
+time_total_min: 40
+difficulty: "ง่าย"
+main_ingredient:
+  - peruna
+  - kasvikset
+  - herne
+cooking_method:
+  - liesi
+tags:
+  - suomalainen
+  - kotiruoka
+  - keitto
+  - kesä
+image:
+  src: paaruoat/kesakeitto.webp
+  alt: "ซุปผักฟินแลนด์ใส่มันฝรั่ง แครอต กะหล่ำดอก ถั่วลันเตาและผักชีลาว"
+  width: 960
+  height: 746
+ingredients:
+  - amount: 500
+    unit: "g"
+    item: "มันฝรั่งใหม่ล้างสะอาด"
+  - amount: 250
+    unit: "g"
+    item: "แครอต"
+  - amount: 350
+    unit: "g"
+    item: "กะหล่ำดอก"
+  - amount: 150
+    unit: "g"
+    item: "ถั่วลันเตาสดหรือแช่แข็ง"
+  - amount: 100
+    unit: "g"
+    item: "ต้นหอม"
+  - amount: 700
+    unit: "g"
+    item: "น้ำ"
+  - amount: 400
+    unit: "g"
+    item: "นม"
+  - amount: 20
+    unit: "g"
+    item: "แป้งสาลีอเนกประสงค์"
+  - amount: 15
+    unit: "g"
+    item: "เนย"
+  - amount: 7
+    unit: "g"
+    item: "เกลือ"
+  - amount: 12
+    unit: "g"
+    item: "ผักชีลาวสด"
+---
+
+# ซุปผักฤดูร้อนแบบฟินแลนด์
+
+ซุปผักฤดูร้อนแบบฟินแลนด์ มีมันฝรั่งใหม่ แครอต กะหล่ำดอก ถั่วลันเตา และผักชีลาวในน้ำซุปใส่นม
+
+## วิธีทำ
+
+1. ล้างมันฝรั่งแล้วผ่าหัวใหญ่ ปอกและหั่นแครอต หั่นกะหล่ำดอกเป็นดอกเล็ก ๆ แล้วซอยต้นหอม โดยแยกส่วนใบสีเขียวไว้
+2. ต้มน้ำ 700 กรัมให้เดือด ใส่เกลือ จากนั้นใส่มันฝรั่งและแครอต ลดไฟเคี่ยวอ่อน ๆ 7–8 นาที
+3. ใส่กะหล่ำดอกและส่วนขาวของต้นหอม ต้มต่อ 5–7 นาที จากนั้นใส่ถั่วลันเตาและส่วนเขียวของต้นหอม ต้มอีก 2 นาที
+4. ตีแป้งสาลีกับนมเย็นให้เนียน ค่อย ๆ เทลงในซุปพร้อมคนตลอด เคี่ยวไฟอ่อน 4–5 นาทีให้แป้งสุก ระวังอย่าให้ผักเละ
+5. ยกลงจากเตา ใส่เนยและผักชีลาวสับ คนแล้วเสิร์ฟขณะร้อน
+
+## หมายเหตุ
+
+- มีนมและข้าวสาลี ทำให้อาหารที่เหลือเย็นลงอย่างรวดเร็ว
+- ภาพประกอบสร้างด้วย AI สูตรนี้เป็นฉบับร่าง ยังไม่ได้ทดลองปรุง คำนวณสารอาหารหรือค่า GK หรือรับรองว่าปราศจากกลูเตน
+- แหล่งอ้างอิง: [Martat](https://www.martat.fi/reseptit/kesakeitto/). ดัดแปลงสัดส่วนและเขียนขั้นตอนใหม่
