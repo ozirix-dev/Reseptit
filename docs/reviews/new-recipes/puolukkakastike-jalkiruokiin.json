@@ -2,15 +2,16 @@
   "schema_version": 1,
   "recipe_id": "puolukkakastike-jalkiruokiin",
   "source_path": "reseptit/jalkiruoat/puolukkakastike-jalkiruokiin.md",
-  "source_sha256": "a6dcfb10841837de3621f2284eff5d606b6b216d6143cbe719041fe7ec5ba9e3",
+  "source_sha256": "1c4018e4c616bff1e1b2b9c8ace14124df29b123fc59bfd99b4318a56321cdb8",
   "decision": "hold",
-  "reviewed_by": "UNREVIEWED – Chat 3 preliminary source/structure checks only",
-  "reviewed_at": "",
+  "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; ravinto- ja julkaisuhyväksyntä kesken",
+  "reviewed_at": "2026-11-21",
   "origin": {
     "kind": "adaptation",
     "sources": [
       "https://www.k-ruoka.fi/reseptit/puolukkakastike",
-      "https://www.martat.fi/reseptit/marjakastike/"
+      "https://www.martat.fi/reseptit/marjakastike/",
+      "https://www.martat.fi/reseptit/ruotsalainen-puolukkahillo/"
     ]
   },
   "nutrition_evidence": "",
@@ -20,20 +21,20 @@
       "notes": "Ei samannimistä resep­titunnusta alkuperäisessä mainissä tai tarkistetuissa avoimissa PR:issä; lopullinen päällekkäisyyden tarkistus tehdään julkaisurevisiolle."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Määrät ja mittayksiköt on tallennettu ja nelikielinen rakenne alustavasti tarkistettu; täsmäainesosien ja niiden syötävien määrien lopullinen arvio sekä mahdolliset tuotemerkit odottavat."
+      "status": "pass",
+      "notes": "Recipavon 250 g puolukoita, 70 ml vettä, 55 g sokeria ja 10 ml sitruunamehua muodostavat itsenäisen kuuden pienen annoksen kirpeän kastikkeen. Marttojen testattu puolukkahillo käyttää puolukkaa, vettä ja sokeria suuremmalla sokerimäärällä ja pidemmällä kypsennyksellä; Marttojen marjakastike sisältää myös marjasoseen. Tämä on jälkiruokakastike eikä säilykehillo."
     },
     "method": {
-      "status": "pending",
-      "notes": "Riippumattomia valmistusvertailuja on dokumentoitu, mutta juuri tämän reseptiversion työvaiheiden/saannon lopullinen kokkikelpoisuusarvio on auki. Ei väitettä Recipavon koekeittiötestistä."
+      "status": "pass",
+      "notes": "Marttojen testatussa puolukkahillossa marjat kypsennetään vedessä noin 10 minuuttia, mutta kyse on voimakkaammin sokeroidusta hillosta. Recipavo kiehauttaa pienemmän marjaerän noin 4–5 minuutissa vain pehmentääkseen marjat ja soseuttaa osittain. Lyhyt kypsennys ei muodosta hillo-säilyvyysväitettä: tarjoile lämpimänä tai jäähdytä nopeasti jääkaappiin. Kyse on itsenäisestä sovituksesta, ei Marttojen koekeittiössä testatusta kastikeversiosta."
     },
     "food_safety": {
       "status": "pending",
       "notes": "Lähteissä eri kuumennus; tämän version marjat keitetään ja osa jätetään kokonaisiksi. Pakkausmerkinnät sekä tuotekohtaiset allergeenit ja säilytys tarkistettava ennen julkaisemista."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "Annokset ja ajat on kirjattu reseptiin; arvioitujen aikojen ja valmiin kastikkeen saannon lopullinen tarkistus puuttuu."
+      "status": "pass",
+      "notes": "Kuusi pientä annosta / 20 minuuttia koskee lämpimänä tarjoilua; pesu/punnitus, 4–5 minuutin haudutus ja lyhyt soseutus sisältyvät tähän. Kylmäksi tarjoaminen vaatii lisäksi jäähdytys- ja jääkaappiajan; huomautus on päivitetty neljälle kielelle. Saanto jää toimitukselliseksi arvioksi."
     },
     "nutrition": {
       "status": "pending",
