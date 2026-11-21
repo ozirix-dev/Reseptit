@@ -74,7 +74,7 @@ export function analyze(sources, quarantine = new Set()) {
     counts.reviewed++;
     const category = source.path.split('/')[1];
     const timeRaw = value(parsed.yaml, 'time_total_min');
-    const parsedTime = /^\\d+$/.test(timeRaw) ? Number(timeRaw) : null;
+    const parsedTime = /^\d+$/.test(timeRaw) ? Number(timeRaw) : null;
     const validTime = parsedTime !== null && Number.isSafeInteger(parsedTime) && parsedTime > 0;
     const missingTimeValue = timeRaw === '' || timeRaw.toLowerCase() === 'null';
     const time = validTime ? parsedTime : null;
