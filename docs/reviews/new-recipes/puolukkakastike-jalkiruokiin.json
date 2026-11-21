@@ -38,7 +38,7 @@
     },
     "nutrition": {
       "status": "pending",
-      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi."
+      "notes": "Food source package staged at docs/nutrition/calculations/puolukkakastike-jalkiruokiin.json. Six portions; berries Fineli #440, water #922 (1 ml=1g), sugar #1, weighed lemon juice #11557. No straining, no macro-bearing residues discarded. Nutrient arithmetic and four-language published values must be separately checked before PASS."
     },
     "glycemic": {
       "status": "unavailable",

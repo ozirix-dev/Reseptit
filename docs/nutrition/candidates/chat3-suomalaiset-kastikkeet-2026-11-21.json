@@ -716,10 +716,10 @@
           "unit": "g",
           "item": "kotimaisia puolukoita, tuoreita tai pakastettuja",
           "note": null,
-          "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "food_record": "fineli-440-release-20",
+          "edible_basis": "SOURCED_EDIBLE",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "ALL_MACRO_BEARING_PARTS_RETAINED"
         },
         {
           "row": 2,
@@ -727,10 +727,10 @@
           "unit": "ml",
           "item": "vettä",
           "note": null,
-          "food_record": null,
-          "edible_basis": "UNRESOLVED",
-          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
-          "retention": "UNRESOLVED"
+          "food_record": "fineli-922-release-20",
+          "edible_basis": "SOURCED_EDIBLE",
+          "unit_conversion": "FINELI_922_DL_100G__1G_PER_ML",
+          "retention": "ALL_MACRO_BEARING_PARTS_RETAINED"
         },
         {
           "row": 3,
@@ -738,10 +738,10 @@
           "unit": "g",
           "item": "sokeria",
           "note": null,
-          "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "food_record": "fineli-1-release-20",
+          "edible_basis": "SOURCED_EDIBLE",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "ALL_MACRO_BEARING_PARTS_RETAINED"
         },
         {
           "row": 4,
@@ -749,14 +749,14 @@
           "unit": "g",
           "item": "sitruunamehua",
           "note": null,
-          "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "food_record": "fineli-11557-release-20",
+          "edible_basis": "SOURCED_EDIBLE",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "ALL_MACRO_BEARING_PARTS_RETAINED"
         }
       ],
-      "status": "NOT_CALCULATED",
-      "publication": "WITHHELD",
+      "status": "EVIDENCE_ASSEMBLED_PENDING_CALCULATION_VERIFICATION",
+      "publication": "DRAFT_NOT_PUBLISHED",
       "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI"
     },
     {
