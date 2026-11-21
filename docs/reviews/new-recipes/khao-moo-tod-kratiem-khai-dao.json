@@ -22,8 +22,8 @@
       "notes": "Uusi yksilöllinen recipe_id ja slug erottuvat aiemmista porsas- ja thaimaalaisresepteistä. Rakennetarkistus ei osoita julkaistun reitin kaksoiskappaletta."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Kaikki 14 ainesosariviä määrineen täsmäävät FI/EN/SV/TH. Kastikkeiden tuotekohtaiset allergeenit, massat sekä öljyn syöty osuus ovat vielä varmentamatta."
+      "status": "pass",
+      "notes": "Kaikissa FI/EN/SV/TH-luonnoksissa samat 14 ilmoitettua määrää ja yksikköä (liha 300 g, riisi kuivana 150 g, 2 munaa, 30 ml öljyä ja kastikkeet eritelty). Allergeeniluokat ilmoitettu: kananmuna, kala, osteri/nilviäiset ja soija; soija- ja osterikastikkeen mahdollinen vehnä mainittu. Tuotteita tai gluteenittomuutta ei väitetä varmistetuiksi; kuluttajaa ohjataan tarkistamaan pakkaukset. Tämän osion PASS koskee reseptisisällön johdonmukaisuutta, ei tuotemerkkikohtaista laboratoriotietoa."
     },
     "method": {
       "status": "pass",
@@ -38,8 +38,8 @@
       "notes": "Kaksi annosta, yhteensä 300 g raakaa porsasta, 150 g kuivaa riisiä ja kaksi kananmunaa. 50 minuutin toimituksellinen aika kattaa marinoinnin ja sen aikana keitettävän riisin, porsaan paiston sekä kokoamisen."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Lähteistetty ennakkoskenaario löytyy nutrition-preflight-muistiosta. Kastikkeiden punnitus ja öljyn mahdollinen hävikki ovat olennaisia avoimia oletuksia; neljä ravintoarvokenttää pidetään null-tilassa."
+      "status": "pass",
+      "notes": "NELJÄ LUKUA PIDETÄÄN JULKAISEMATTA: FI/EN/SV/TH: carbs_net_per_serving_g, carbs_total_per_serving_g, protein_per_serving_g ja fat_per_serving_g kaikki null. Erillinen nutrition-preflight.md dokumentoi mitta- ja tuotevaihtelun sekä öljyn todellisen ruokaan päätymisen epävarmuuden; ennakkoskenaariota ei julkaista ravintoarvoina. PASS tarkoittaa tietoista, lähteistettyä arvojen pidättämistä pääruoassa, ei hyväksyttyä makrolaskelmaa. Uusi laskelma vaatii myöhemmin todennetut punnitukset ja omat auditoinnit."
     },
     "glycemic": {
       "status": "unavailable",
@@ -52,11 +52,14 @@
     "image_review": "Uusi alkuperäinen tekoälykuvitus, ei Facebookista kopioitu. Gitissä mutta toistaiseksi R2:n julkaisumanifestin ulkopuolella.",
     "physical_cook_test": false,
     "release_blockers": [
-      "Uuden kuvan hyväksytty ImageAssets-seal ja R2-arkistointi",
-      "Tuotekohtaiset allergeenit ja kastikemassat",
-      "Ravintoarvojen julkaisudispositio",
-      "FI/EN/SV/TH SHA-sidotut julkaisukatselmoinnit",
-      "Uuden HEADin CI ja Repo Guard"
-    ]
+      "Reseptin WebP:n ImageAssets-seal ja varmennettu R2-kuvapaketin sekä manifestin päivitys",
+      "FI/EN/SV/TH:n varsinaiset SHA-sidotut Codex-merkitysvertailut ja mahdollisten kriittisten havaintojen korjaus",
+      "Tuoreen mainin kanssa yhteensopiva täsmä-CI ja Repo Guardin Ready/merge-portit"
+    ],
+    "nutrition_publication_disposition": "WITHHELD_UNVERIFIED_INGREDIENT_MASSES_AND_OIL_RETENTION",
+    "nutrition_numbers_published": false,
+    "allergen_claim": "Ingredient-class warnings in all four languages; no product-specific allergen clearance or gluten-free claim",
+    "draft_translation_review": "docs/reviews/khao-moo-tod-kratiem-khai-dao/source-evidence.md (AI preliminary only; Codex semantic review still required)",
+    "release_status_note": "Julkaisu on yhä HOLD: media-arkiston ja kielikatselmoinnin portit täyttymättä. Keinotekoisia ravintoarvoja ei julkaista. Fyysinen koekeittiö ei ole yleinen julkaisuehto."
   }
 }
