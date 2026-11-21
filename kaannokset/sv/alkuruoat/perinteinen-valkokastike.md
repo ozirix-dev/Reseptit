@@ -25,7 +25,7 @@ image:
   height: 640
 ingredients:
   - amount: 500
-    unit: "ml"
+    unit: "g"
     item: "standardmjölk"
   - amount: 35
     unit: "g"
@@ -63,3 +63,4 @@ En enkel vit sås av smör, mjöl och mjölk till fisk, potatis och grönsaker.
 - Den AI-genererade illustrationsbilden är nu versionshanterad. Dekorationer på bilden ingår inte i receptmängderna.
 - Innehåller **mjölk och vete**. Rör under uppvärmningen och se till att mjölet tillagas utan klumpar.
 - Servera mjölksåsen varm direkt; vid längre varmhållning ska temperaturen vara över +60 °C. Kyl rester snabbt i ett grunt kärl och förvara under +6 °C. Innehåller mjölk och vete.
+- För näringsberäkningen vägs 500 g standardmjölk; tidigare 500 ml var en volym, inte en uppmätt massa. Näringsbidraget från 0,4 g vitpeppar och 0,2 g muskot kan avgränsas konservativt utifrån massan utan att okända värden sätts till noll.

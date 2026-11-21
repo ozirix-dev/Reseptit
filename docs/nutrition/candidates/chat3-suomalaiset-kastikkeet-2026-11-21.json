@@ -626,20 +626,20 @@
     {
       "recipe_id": "perinteinen-valkokastike",
       "source_path": "reseptit/alkuruoat/perinteinen-valkokastike.md",
-      "source_recipe_sha256": "8e95630447f678058072f5ee0707184fe793cf46da27a6cd92827f944e232a8b",
-      "nutrition_input_hash": "cfd1a39123f86974adcf0b3d5d38a9c802d3a443b5959f08e10151dd29b0bc5f",
+      "source_recipe_sha256": "837c25eada5d84454f1dd44a669a8efd1693a558606dd8e2968127668cd925c7",
+      "nutrition_input_hash": "019aa958cb6b055fae45c24cd47827e84fb3de2207439fa0b71b0310b68b7b64",
       "servings": 6,
       "ingredient_count": 6,
       "ingredients": [
         {
           "row": 1,
           "amount": 500,
-          "unit": "ml",
+          "unit": "g",
           "item": "täysmaitoa",
           "note": null,
           "food_record": null,
           "edible_basis": "UNRESOLVED",
-          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "unit_conversion": "DIRECT_GRAMS",
           "retention": "UNRESOLVED"
         },
         {

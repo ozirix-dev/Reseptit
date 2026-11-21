@@ -2,7 +2,7 @@
 
 **Päivä:** 21.11.2026; **PR:** #808; **lähtö-HEAD:** `10cce14b379aef981ebb80cbcbe7a266ac5c21a0`.
 
-Tämä ei ole ravintolaskelma eikä julkinen ravintoarvio. Kyseessä on kymmenen reseptin ainesosa- ja lähtötiivisteinventaario. Kaikki punnitut määrät, yksiköt ja FI-lähdetekstit on luettu GitHubin omasta Chat 3 -haarasta. Rivejä yhteensä **63**; nestetilavuutta ml-yksikössä ilmoittavia rivejä **12**, joihin tarvitaan tuotekohtainen g/ml-muunnos.
+Tämä ei ole ravintolaskelma eikä julkinen ravintoarvio. Kyseessä on kymmenen reseptin ainesosa- ja lähtötiivisteinventaario. Kaikki punnitut määrät, yksiköt ja FI-lähdetekstit on luettu GitHubin omasta Chat 3 -haarasta. Rivejä yhteensä **63**; nestetilavuutta ml-yksikössä ilmoittavia rivejä **11**, joihin tarvitaan tuotekohtainen g/ml-muunnos.
 
 | recipe_id | Annoksia | Ainesrivejä | ml-rivejä | Laskennan input SHA-256 (alku) |
 | --- | ---: | ---: | ---: | --- |
@@ -13,7 +13,7 @@ Tämä ei ole ravintolaskelma eikä julkinen ravintoarvio. Kyseessä on kymmenen
 | `kylma-piparjuurikastike` | 4 | 6 | 1 | `71080036d23e…` |
 | `perinteinen-munakastike` | 4 | 7 | 1 | `54b24ba297bc…` |
 | `kermainen-pippurikastike` | 4 | 6 | 2 | `91c2af86c2f1…` |
-| `perinteinen-valkokastike` | 6 | 6 | 1 | `cfd1a39123f8…` |
+| `perinteinen-valkokastike` | 6 | 6 | 0 | `019aa958cb6b…` |
 | `puolukkakastike-jalkiruokiin` | 6 | 4 | 1 | `c50fd88ab225…` |
 | `perinteinen-vaniljakastike` | 6 | 6 | 1 | `10e4c40b7383…` |
 
@@ -40,3 +40,7 @@ Kermaviili: laktoositon 10–12 % rasvaa, Fineli #11152. Sitruunamehu muutettu 1
 ## Puolukkakastikkeen punnitustarkennus
 
 Puolukkakastikkeen sitruunamehu muutettu 10 millilitrasta 10 grammaan ja valinnaisesta siivilöinnistä luovuttu: kaikki marjakuoret ja kuidut jäävät annokseen. Tämä varmistaa retentioperusteen ravintoarviolaskennalle. 63 ainesosariviä ennallaan, ml-rivejä nyt 12.
+
+## Valkokastikkeen punnitustarkennus
+
+Maito punnitaan 500 g:ksi entisen 500 ml:n sijaan; vastaava FI/EN/SV/TH-ainesmuutos on sitova ravintolaskennan lähtöarvo. 63 ainesosariviä pysyy, ml-rivejä nyt 11. Valkopippurin 0,4 g ja muskottipähkinän 0,2 g tarvitsevat joko lähdearvot tai massaperusteisen konservatiivisen poisjättöarvion.
