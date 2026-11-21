@@ -34,7 +34,8 @@ export function feedbackInsertOutcome(value: unknown): "stored" | "full" | "unco
   if (!value || typeof value !== "object" || !("success" in value) ||
       value.success !== true || !("meta" in value) ||
       !value.meta || typeof value.meta !== "object" ||
-      !("changes" in value.meta) || !Number.isSafeInteger(value.meta.changes)) {
+      !("changes" in value.meta) || typeof value.meta.changes !== "number" ||
+      !Number.isSafeInteger(value.meta.changes)) {
     return "unconfirmed";
   }
   if (value.meta.changes === 1) return "stored";
