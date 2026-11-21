@@ -72,6 +72,6 @@ Lasimestarin silli on toimituksellinen suomalainen alkuruokaluonnos. Määrät j
 - **Lähde- ja valmistusnäyttö:** Mittasuhteet ovat Chat-4:n alustava toimituksellinen ehdotus. Ulkoiset valmistuslähteet, ainesosien olomuoto, saanto ja ajat varmennettava ennen julkaisua.
 - **Ruokaturva:** Luonnos on tarkoitettu vain syöntivalmiille kaupallisille sillifileille. Liemi ei ole tuoreen kalan turvallisen säilönnän ohje. Säilytys ja käyttöaika on tarkistettava.
 - **Ravintoarvot:** Ei laskettu; numeerisia makroja ei julkaista. GK: ei määritetty.
-- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedostoa ei vielä ole Git-haarassa eikä reseptin `image`-metatiedoissa. Kuva on tarkistettava ennen julkaisua. EN/SV/TH ovat luonnoksia. Käännösten merkityskatselmointi puuttuu. Käännösten merkityskatselmointi puuttuu. Käännösten merkityskatselmointi puuttuu.
+- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedostoa ei vielä ole Git-haarassa eikä reseptin `image`-metatiedoissa. Kuva on tarkistettava ennen julkaisua. EN/SV/TH ovat luonnoksia. Käännösten merkityskatselmointi puuttuu.
 
 - **Ajat ja lähde:** Aktiivinen valmistus noin 30 min + kylmämaustuminen noin 48 h. Vertailu: https://www.k-ruoka.fi/reseptit/helppo-lasimestarin-silli (2–3 vrk).
