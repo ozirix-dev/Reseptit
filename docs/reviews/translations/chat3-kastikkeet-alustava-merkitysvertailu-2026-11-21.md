@@ -40,3 +40,10 @@
 2. Tuote- ja ruokalajikohtainen ruokaturvallisuuden sekä allergeenitietojen loppuarvio ja kuvan sisällöllinen hyväksyntä ovat vielä kesken.
 3. Kaikkien kymmenen reseptin **ravintoarvioevidenssi** puuttuu. Numeroitu GK ei ole hyväksytty; rekisterissä on perusteltu määrittämätön tila.
 4. PR on edelleen **Draft / HOLD**, eikä lähdevertailu tai CI-PASS yksin anna Ready-/merge-/tuotantojulkaisulupaa.
+
+## Jatkotarkistus 22.11.2026 (Chat 3)
+
+- Perinteisen vaniljakastikkeen kuvatiedoissa havaittiin versionvaihdon jälkeen vanhentunut ristiriita: FI-lähde ja kuva-arvion lisäys kertoivat uuden AI-havainnekuvan korvanneen virheellisen kuvan, mutta EN/SV/TH-muistiinpanot väittivät edelleen, että vanha kuva pitää korvata.
+- Korjattiin kolmen käännöksen **vain kuvaa koskeva toimituksellinen huomautus** nykyisen korvaustilanteen mukaiseksi. FI-resepti, määrät, valmistusvaiheet, allergeenit, `image.src` ja ravintokentät pidettiin ennallaan.
+- Verrattiin kantarellikastikkeen ja puolukkakastikkeen FI/EN/SV/TH-kuvahuomautukset: niissä ei havaittu vastaavaa korjaamatonta vaihtovaatimusta.
+- Vertailu on rajattu kuvaa koskevien tekstimerkintöjen ristiriitaan, **ei** nelikielisen sisällön täydellinen hyväksyntä. AI-kuvan toimituksellinen hyväksyntä, semanttisten tiivisteiden virallinen tarkistus, kuuden muun kastikkeen ravintolaskenta sekä Repo Guardin julkaisuportit pysyvät avoimina. Kaikki 10 reseptiä edelleen Draft/HOLD.
