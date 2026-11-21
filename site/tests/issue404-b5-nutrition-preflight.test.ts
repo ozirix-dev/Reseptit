@@ -23,6 +23,8 @@ type CheckedIngredient = {
   reasonCode: string;
   reason: string;
   candidateRecord?: CandidateReference;
+  comparatorOnly?: boolean;
+  externalEvidence?: Record<string, unknown>;
 };
 type Preflight = {
   basedOnMain: string;
@@ -42,6 +44,7 @@ const knownCodes = new Set([
   "MISSING_EXACT_FOOD", "COMPOSITION_MISMATCH", "UNIT_CONVERSION_PENDING",
   "PROCESSING_RETENTION_PENDING", "OIL_ABSORPTION_PENDING",
   "PRODUCT_SPEC_PENDING", "ZERO_NUTRIENTS_WATER", "SALT_MACROS_ONLY",
+  "EXACT_FOOD_SOURCE_REUSE_HOLD",
 ]);
 const recipeIds = [
   "karibia-saltfish-fritterit",
@@ -116,6 +119,17 @@ test("issue 404 B5: every draft ingredient is version-pinned to an explicit unre
         assert.match(review.item, /suola/i);
         assert.ok(review.candidateRecord);
       }
+      if (review.reasonCode === "EXACT_FOOD_SOURCE_REUSE_HOLD") {
+        assert.equal(i, 0);
+        assert.match(review.item, /tahmariis/);
+        assert.equal(review.comparatorOnly, true, "Ordinary rice is only a mismatch comparator");
+        assert.equal(review.externalEvidence?.foodCode, "A22");
+        assert.equal(review.externalEvidence?.exactFoodMatch, true);
+        assert.equal(review.externalEvidence?.polyolsStatus, "NOT_REPORTED");
+        assert.equal(review.externalEvidence?.approval, "RESEARCH_REFERENCE_ONLY_NOT_FOOD_RECORD");
+        assert.equal(review.externalEvidence?.rightsStatus, "NONCOMMERCIAL_ACCESS_ONLY_COMMERCIAL_REUSE_PERMISSION_UNCONFIRMED");
+        assert.match(String(review.externalEvidence?.url), /mahidol\.ac\.th\/thaifcd\/foodsearch\//);
+      }
       if (review.candidateRecord) {
         const ref = review.candidateRecord;
         assert.equal(Boolean(ref.calculationPath) !== Boolean(ref.catalogPath), true);
@@ -164,11 +178,15 @@ test("issue 404 B5: rice and bean state mismatches stay blocked even when catalo
     x.candidateRecord?.recordId === "afcd-F000446-release-3"));
   for (const recipe of [kuih, xoi]) {
     assert.ok(recipe.ingredients.some((x) => x.item.includes("tahmariisiä") &&
-      x.reasonCode === "MISSING_EXACT_FOOD"),
-      `${recipe.recipeId}: glutinous rice is not long-grain rice`);
+      x.reasonCode === "EXACT_FOOD_SOURCE_REUSE_HOLD" &&
+      x.comparatorOnly === true && x.externalEvidence?.foodCode === "A22"),
+      `${recipe.recipeId}: A22 is exact rice but licence and polyols are unresolved`);
   }
   assert.ok(xoi.ingredients.some((x) => x.candidateRecord?.recordId === "afcd-F006107-release-3" &&
-    x.reasonCode === "PROCESSING_RETENTION_PENDING"));
+    x.reasonCode === "PROCESSING_RETENTION_PENDING" &&
+    x.externalEvidence?.studiedBoilingMinutes === 210 &&
+    x.externalEvidence?.recipeSourceBoilingMinutes === 15 &&
+    x.externalEvidence?.retentionFactorApproved === false));
   assert.ok(xoi.ingredients.some((x) => x.item.includes("kookosmaitoa") &&
     x.reasonCode === "PRODUCT_SPEC_PENDING"));
 });
@@ -193,4 +211,30 @@ test("issue 404 B5: kuih sugar arithmetic is a component only, never a full reci
   assert.equal(Math.round(sugarOnlyCarbohydrate / 20 * 100) / 100, 8.49);
   assert.equal(kuih.status, "WITHHELD_SOURCE_INCOMPLETE");
   assert.equal(evidence.macrosAuthorized, false);
+});
+
+
+test("issue 404 B5: source exactness does not authorize rice nutrition or commercial database reuse", async () => {
+  const evidence = await readJsonCached(evidenceFile) as Preflight;
+  const review = await readFile(path.join(root,
+    "docs/nutrition/issue404-glutinous-rice-source-review-2026-11-21.md"), "utf8");
+  assert.match(review, /\*\*ei ilmoitettu\*\*/);
+  assert.match(review, /käyttöoikeus ja polyoliperusta/);
+  assert.match(review, /200 g × A22 \/ 100 g \| 160,98 g/);
+  assert.match(review, /300 g × A22 \/ 100 g \| 241,47 g/);
+  assert.match(review, /keitt[oä] kesti \*\*210 minuuttia\*\*/);
+  assert.match(review, /\*\*20 g\*\* kookosmaitoa/);
+  assert.match(review, /\*\*20 ml\*\*/);
+  assert.equal(evidence.macrosAuthorized, false);
+  assert.equal(evidence.publicationAuthorized, false);
+  for (const id of ["vietnamilainen-xoi-maapahkinalla", "malesialainen-kuih-seri-muka"]) {
+    const recipe = evidence.recipes.find((r) => r.recipeId === id + "-punnittu-v2");
+    assert.ok(recipe);
+    assert.equal(recipe.status, "WITHHELD_SOURCE_INCOMPLETE");
+    const rice = recipe.ingredients[0];
+    assert.equal(rice.reasonCode, "EXACT_FOOD_SOURCE_REUSE_HOLD");
+    assert.equal(rice.externalEvidence?.foodCode, "A22");
+    assert.equal(rice.externalEvidence?.polyolsStatus, "NOT_REPORTED");
+    assert.equal(rice.comparatorOnly, true);
+  }
 });

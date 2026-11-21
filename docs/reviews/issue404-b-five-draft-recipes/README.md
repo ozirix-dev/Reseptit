@@ -12,6 +12,10 @@ Tämä työ jatkaa issue #404:n B21-jonoa, jonka 17 alkuperäistä FI-tunnusta o
 
 **53 ainesosaa, 5 FI-Draftia:** [koneellinen ravintolähteiden esikartoitus](../../nutrition/issue404-b5-ingredient-preflight.json) ja [ihmisluettava yhteenveto](../../nutrition/issue404-b5-ingredient-preflight.md). Tämä ei ole julkaisuvalmis `docs/nutrition/calculations/`-laskenta: ainesosan tuote-, mitta- ja kypsennysretentioeroja ei saa kuitata arvaamalla, ja kaikki neljä makrokenttää pysyvät `null`-tilassa.
 
+## Tahmariisin täsmälähteen oikeus- ja polyoliportti 21.11.2026
+
+Xôin ja kuih seri mukan kuivalle tahmariisille löytyi [Mahidol A22 -tutkimusviite](../../nutrition/issue404-glutinous-rice-source-review-2026-11-21.md). Lähde antaa saatavilla olevan hiilihydraatin, kuidun, proteiinin ja rasvan tutkimusarvot juuri oikealle riisilajille, mutta **polyolitietoa ei ole ilmoitettu**, kaupallisen käytön oikeudet ovat **selvittämättä** ja kypsennyksen retentiota ei ole vahvistettu. **Älä siirrä A22-arvoja `food-records.json`-aineistoon tai reseptin neljään makrokenttään.** Vanha tavallinen riisi on ravintoesitarkistuksessa vain vertailuviite. Molemmat FI-versiot jäävät DRAFT/HOLDiin.
+
 ## Ajantasainen lähdesidonta 21.11.2026
 
 Tämän erän **[koneellisesti tarkistettava lähdetaulukko](source-binding-2026-11-21.json)** on nykytilan määrien ja ruokalajimenetelmän lähde. Aikaisempien PR #760–#762:n katselmointien 80 g/180 g/2 g ja muiden vanhojen testimittausten väitteet ovat **historiaa**, eivät enää tämän haaran FI-luonnosten raaka-aineluettelo. Ulkopuolisten tekijöiden mittoja ei väitetä Recipavon omaksi mittaukseksi.
