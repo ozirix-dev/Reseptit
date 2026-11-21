@@ -22,3 +22,7 @@ Marttojen vaniljakastike https://www.martat.fi/reseptit/vaniljakastike/ perustuu
 Sisältää **maitoa ja kananmunaa**. Kuumenna kastike rauhallisesti ohjeen mukaan, jäähdytä nopeasti, jos sitä ei tarjota heti, ja säilytä jääkaapissa.
 
 Perustana Ruokaviraston allergeeniluettelo: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit . Etikettien ja säilytyksen arviointia jatketaan. FI/EN/SV/TH päivitetty; ei julkaisuhyväksyntää.
+
+## Saannon toimituksellinen tarkennus – Chat 3, 22.11.2026
+
+Vaiheessa 3 ei enää siivilöidä mahdollisia paakkuja pois. Pienet paakut vatkataan tasaisiksi, jotta 450 g täysmaidon, 45 g sokerin, 18 g maissitärkkelyksen, 30 g keltuaisen, 8 g vaniljasokerin ja 0,3 g suolan ainesosuudet pysyvät mukana. FI/EN/SV/TH ohjeistettu vastaavasti. Tämä on lähdeperusteinen toimituksellinen tarkennus, ei keittiötesti. Kuva, vaniljasokerin polyoli-/kuituevidenssi, kielikatselmointi ja julkaisuportit yhä HOLD.
