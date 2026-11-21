@@ -24,7 +24,7 @@ translation_languages: []
 translation_status: {}
 image:
   src: alkuruoat/vaahdotettu-feta-kylmasavulohella.webp
-  alt: Kuohkeaa fetalevitettä lasilautasella kylmäsavulohen, kananmurujen, kapristen ja tillin kanssa
+  alt: Kuohkeaa fetalevitettä lasilautasella kylmäsavulohen, hienonnetun kananmunan, kapristen ja tillin kanssa
   width: 960
   height: 960
 ingredients:
