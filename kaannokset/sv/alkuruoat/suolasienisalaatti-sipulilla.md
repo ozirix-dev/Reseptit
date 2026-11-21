@@ -36,7 +36,7 @@ ingredients:
     unit: "ml"
     item: "citronsaft"
   - amount: 0.25
-    unit: "tl"
+    unit: "tsk"
     item: "svartpeppar"
 ---
 

@@ -36,7 +36,7 @@ ingredients:
     unit: "g"
     item: "gräslök"
   - amount: 0.25
-    unit: "tl"
+    unit: "tsk"
     item: "svartpeppar"
 ---
 

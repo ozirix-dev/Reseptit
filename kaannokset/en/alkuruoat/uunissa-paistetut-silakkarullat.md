@@ -33,10 +33,10 @@ ingredients:
     unit: "g"
     item: "butter"
   - amount: 0.75
-    unit: "tl"
+    unit: "tsp"
     item: "salt"
   - amount: 0.25
-    unit: "tl"
+    unit: "tsp"
     item: "black pepper"
   - amount: 100
     unit: "ml"

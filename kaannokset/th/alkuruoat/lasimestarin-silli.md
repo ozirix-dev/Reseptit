@@ -39,10 +39,10 @@ ingredients:
     unit: "g"
     item: "น้ำตาล"
   - amount: 8
-    unit: "kpl"
+    unit: "ชิ้น"
     item: "เม็ดออลสไปซ์"
   - amount: 2
-    unit: "kpl"
+    unit: "ชิ้น"
     item: "ใบกระวาน"
 ---
 

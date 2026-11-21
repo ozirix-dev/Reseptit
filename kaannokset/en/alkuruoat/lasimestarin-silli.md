@@ -39,10 +39,10 @@ ingredients:
     unit: "g"
     item: "sugar"
   - amount: 8
-    unit: "kpl"
+    unit: "pcs"
     item: "whole allspice berries"
   - amount: 2
-    unit: "kpl"
+    unit: "pcs"
     item: "bay leaves"
 ---
 

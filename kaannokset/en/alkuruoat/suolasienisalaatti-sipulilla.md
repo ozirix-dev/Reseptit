@@ -36,7 +36,7 @@ ingredients:
     unit: "ml"
     item: "lemon juice"
   - amount: 0.25
-    unit: "tl"
+    unit: "tsp"
     item: "black pepper"
 ---
 

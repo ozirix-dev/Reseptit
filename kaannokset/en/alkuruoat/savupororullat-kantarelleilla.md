@@ -36,7 +36,7 @@ ingredients:
     unit: "g"
     item: "chives"
   - amount: 0.25
-    unit: "tl"
+    unit: "tsp"
     item: "black pepper"
 ---
 

@@ -33,10 +33,10 @@ ingredients:
     unit: "g"
     item: "smör"
   - amount: 0.75
-    unit: "tl"
+    unit: "tsk"
     item: "salt"
   - amount: 0.25
-    unit: "tl"
+    unit: "tsk"
     item: "svartpeppar"
   - amount: 100
     unit: "ml"

@@ -33,10 +33,10 @@ ingredients:
     unit: "g"
     item: "เนย"
   - amount: 0.75
-    unit: "tl"
+    unit: "ช้อนชา"
     item: "เกลือ"
   - amount: 0.25
-    unit: "tl"
+    unit: "ช้อนชา"
     item: "พริกไทยดำ"
   - amount: 100
     unit: "ml"
