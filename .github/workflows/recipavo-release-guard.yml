@@ -5,6 +5,10 @@ on:
     paths:
       - ".github/workflows/recipavo-release-guard.yml"
       - "scripts/recipavo-pages-production.ps1"
+      - "scripts/recipavo-actions-release-gate.mjs"
+      - "scripts/recipavo-actions-release-gate.test.mjs"
+      - ".github/workflows/recipavo-production-manual.yml"
+      - "docs/product/recipavo-actions-manual-release-2026-11-21.md"
       - "docs/product/recipavo-pages-release-guard-2026-11-21.md"
   workflow_dispatch:
 
@@ -16,6 +20,11 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify all manual release security gates offline (no Cloudflare credentials)
+        run: node --test scripts/recipavo-actions-release-gate.test.mjs
       - name: Parse release script using PowerShell 7
         shell: pwsh
         run: |
