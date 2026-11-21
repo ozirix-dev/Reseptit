@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "workflow": "NON_PUBLIC_NUTRITION_CANDIDATE",
+  "status": "HOLD_NOT_PUBLISHABLE",
+  "calculated_at": "2026-11-21",
+  "prepared_by": "Chat 3 / Kokki-3, tietokantapohjainen arvio, ei ravintoarvohyväksyntää",
+  "recipe_id": "kesakeitto",
+  "source_path": "reseptit/paaruoat/kesakeitto.md",
+  "source_sha256": "79b70a59c4ff3b8bd84069964b52a3b5e902664427e20c9959d9c4187ca4e3a8",
+  "source_blob_sha": "9c1d6ded143f7c80e1b33cb1ecb92ceee6757cec",
+  "servings": 6,
+  "reference_data": "docs/nutrition/food-records.json",
+  "reference_data_provider": "THL Fineli Release 20; CC BY 4.0",
+  "method": "Lähtöainesosien grammapainon, ei keiton kypsän saannon perusteella. Komponentit CHO/FIBT/POLYL ovat Finelin ilmoitettuja, eivät nolla-arvoilla täydennettyjä. Per annos osasumma = tunnettujen grammaper100g-panosten summa / 6.",
+  "ingredient_rows": [
+    {
+      "line": 1,
+      "ingredient": "pestyjä uusia perunoita",
+      "recipeAmount": 500,
+      "recipeUnit": "g",
+      "accountedGrams": 500,
+      "matchQuality": "proxy",
+      "matchNotes": "Finelin 'vanha, kuorittu peruna' on vain vertailu uudelle pestylle perunalle. Kuoren/lajikkeen ero ja keittotappiot eivät ole mitattuja.",
+      "foodRecord": {
+        "id": "fineli-205-release-20",
+        "name": "PERUNA, VANHA, KUORITTU",
+        "url": "https://fineli.fi/fineli/api/v1/foods/205",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 15.5,
+          "protein": 1.88,
+          "fat": 0.114,
+          "fibre": 1.4,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 77.5,
+        "protein": 9.4,
+        "fat": 0.57,
+        "fibre": 7,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 2,
+      "ingredient": "porkkanoita",
+      "recipeAmount": 250,
+      "recipeUnit": "g",
+      "accountedGrams": 250,
+      "matchQuality": "direct",
+      "matchNotes": "Porkkanan syötävän osan geneerinen lähde.",
+      "foodRecord": {
+        "id": "fineli-300-release-20",
+        "name": "PORKKANA",
+        "url": "https://fineli.fi/fineli/api/v1/foods/300",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 5.56,
+          "protein": 0.63,
+          "fat": 0.2,
+          "fibre": 2.4,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 13.9,
+        "protein": 1.575,
+        "fat": 0.5,
+        "fibre": 6,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 3,
+      "ingredient": "kukkakaalia",
+      "recipeAmount": 350,
+      "recipeUnit": "g",
+      "accountedGrams": 350,
+      "matchQuality": "direct",
+      "matchNotes": "Kukkakaalin syötävän osan geneerinen lähde.",
+      "foodRecord": {
+        "id": "fineli-322-release-20",
+        "name": "KUKKAKAALI",
+        "url": "https://fineli.fi/fineli/api/v1/foods/322",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 2.35,
+          "protein": 2,
+          "fat": 0.21,
+          "fibre": 1.9,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 8.225,
+        "protein": 7,
+        "fat": 0.735,
+        "fibre": 6.65,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 4,
+      "ingredient": "tuoreita tai pakastettuja herneitä",
+      "recipeAmount": 150,
+      "recipeUnit": "g",
+      "accountedGrams": 150,
+      "matchQuality": "proxy",
+      "matchNotes": "Resepti sallii tuoreet tai pakasteherneet; laskennassa käytetty Finelin tuore herne -vertailu. Pakasteelle on eri Fineli-tietue 34229.",
+      "foodRecord": {
+        "id": "fineli-370-release-20",
+        "name": "HERNE, VIHREÄ, TUORE",
+        "url": "https://fineli.fi/fineli/api/v1/foods/370",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 9.495,
+          "protein": 5.623,
+          "fat": 0.787,
+          "fibre": 3.1,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 14.242,
+        "protein": 8.435,
+        "fat": 1.181,
+        "fibre": 4.65,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 5,
+      "ingredient": "kevätsipulia",
+      "recipeAmount": 100,
+      "recipeUnit": "g",
+      "accountedGrams": 100,
+      "matchQuality": "unresolved",
+      "matchNotes": "Kevätsipulille ei löydy suoraan soveltuvaa, varmennettua tietuetta repon nykyisestä koostumuskirjastosta. Purjoa ei hyväksytä hiljaisesti samaksi lajiksi.",
+      "foodRecord": null,
+      "knownContributionG": null
+    },
+    {
+      "line": 6,
+      "ingredient": "vettä",
+      "recipeAmount": 700,
+      "recipeUnit": "g",
+      "accountedGrams": 700,
+      "matchQuality": "direct",
+      "matchNotes": "Juomaveden makrot ovat Fineli-tietueessa nollia; vettä ei saa jättää pois massatasapainosta.",
+      "foodRecord": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "url": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 0,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0,
+        "protein": 0,
+        "fat": 0,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 7,
+      "ingredient": "maitoa",
+      "recipeAmount": 400,
+      "recipeUnit": "g",
+      "accountedGrams": 400,
+      "matchQuality": "proxy",
+      "matchNotes": "Finelin kevytmaito 1,5 % on vain esimerkkituote, koska maidon rasva ei ole reseptissä määritelty.",
+      "foodRecord": {
+        "id": "fineli-684-release-20",
+        "name": "MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG",
+        "url": "https://fineli.fi/fineli/api/v1/foods/684",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "protein": 3,
+          "fat": 1.5,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 19.2,
+        "protein": 12,
+        "fat": 6,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 8,
+      "ingredient": "vehnäjauhoja",
+      "recipeAmount": 20,
+      "recipeUnit": "g",
+      "accountedGrams": 20,
+      "matchQuality": "proxy",
+      "matchNotes": "Finelin puolikarkea vehnäjauho; resepti ei määritä jauhon karkeusastetta.",
+      "foodRecord": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "url": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "protein": 11.6,
+          "fat": 1.56,
+          "fibre": 3.5,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 14.8,
+        "protein": 2.32,
+        "fat": 0.312,
+        "fibre": 0.7,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 9,
+      "ingredient": "voita",
+      "recipeAmount": 15,
+      "recipeUnit": "g",
+      "accountedGrams": 15,
+      "matchQuality": "direct",
+      "matchNotes": "Voi syötävänä raaka-aineena.",
+      "foodRecord": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "url": "https://fineli.fi/fineli/api/v1/foods/500",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "protein": 1.19,
+          "fat": 81.3,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0.12,
+        "protein": 0.179,
+        "fat": 12.195,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 10,
+      "ingredient": "suolaa",
+      "recipeAmount": 7,
+      "recipeUnit": "g",
+      "accountedGrams": 7,
+      "matchQuality": "direct",
+      "matchNotes": "Suola mukana lähtömassassa.",
+      "foodRecord": {
+        "id": "fineli-30-2026-10-25",
+        "name": "RUOKASUOLA, JODIOITU",
+        "url": "https://fineli.fi/fineli/api/v1/foods/30?c=2034&c2=2168",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Rel20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 0.63,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0,
+        "protein": 0.044,
+        "fat": 0,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 11,
+      "ingredient": "tuoretta tilliä",
+      "recipeAmount": 12,
+      "recipeUnit": "g",
+      "accountedGrams": 12,
+      "matchQuality": "direct",
+      "matchNotes": "Tuore tilli.",
+      "foodRecord": {
+        "id": "fineli-369-release-20",
+        "name": "TILLI, TUORE",
+        "url": "https://fineli.fi/fineli/api/v1/foods/369",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0.9,
+          "protein": 3.69,
+          "fat": 0.8,
+          "fibre": 2.8,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0.108,
+        "protein": 0.443,
+        "fat": 0.096,
+        "fibre": 0.336,
+        "polyols": 0
+      }
+    }
+  ],
+  "known_component_subtotals_per_portion_g": {
+    "carbohydrate": 24.683,
+    "protein": 6.899,
+    "fat": 3.598,
+    "fibre": 4.223,
+    "polyols": 0
+  },
+  "important": "Osasummat EIVÄT sisällä 100 g kevätsipulia, eivätkä maidon ja perunan ravintoarvojen tuotekohtaisia eroja. Ei julkaistavaan frontmatteriin.",
+  "unresolved_components": [
+    {
+      "line": 5,
+      "ingredient": "kevätsipulia",
+      "needed": "100 g edible spring onion composition, no leek substitution"
+    }
+  ],
+  "critical_product_proxies": [
+    "Tuore peruna vs vanha, kuorittu peruna.",
+    "Tuore vs pakasteherne; toinen vaihtoehto Fineli 34229.",
+    "Kevätsipuli puuttuu koostumuskirjastosta; pidä osasumma avoimena.",
+    "Kevytmaito vs reseptin yleinen maito."
+  ],
+  "unreported": {
+    "total_carbohydrate_per_portion_g": null,
+    "net_carbohydrate_per_portion_g": null,
+    "kcal_per_portion": null,
+    "approved_protein_per_portion_g": null,
+    "approved_fat_per_portion_g": null,
+    "glycemic_load": null
+  },
+  "publication_gate": "HOLD: hanki tarkka kevätsipulin lähde ja päätä käytettävät maitotuotteet, mittaa/validoi kypsä saanto, hyväksy ravintolaskenta ja GK-käsittely."
+}
