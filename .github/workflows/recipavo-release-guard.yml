@@ -29,6 +29,35 @@ jobs:
           }
           if (-not $ast) { throw 'PowerShell AST missing' }
           Write-Host 'PASS: release guard parses'
+      - name: Test SHA parser after regex match (offline, no cloud commands)
+        shell: pwsh
+        run: |
+          $tokens = $null
+          $errors = $null
+          $ast = [System.Management.Automation.Language.Parser]::ParseFile((Resolve-Path 'scripts/recipavo-pages-production.ps1'), [ref]$tokens, [ref]$errors)
+          if ($errors.Count -gt 0) { throw 'PowerShell script failed to parse' }
+          foreach ($name in @('Need', 'Get-ArtifactSha')) {
+            $nodes = @($ast.FindAll({param($node)
+              $node -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $node.Name -eq $name
+            }, $true))
+            if ($nodes.Count -ne 1) { throw "Missing/duplicate pure helper: $name" }
+            . ([scriptblock]::Create($nodes[0].Extent.Text))
+          }
+          $sha = 'a' * 40
+          $valid = "/*`n  X-Recipavo-Commit: $sha`n"
+          $null = 'https://github.com' -match 'github'
+          if ((Get-ArtifactSha $valid) -cne $sha) { throw 'Correct stamp was not parsed' }
+          $badStamp = 'b' * 39
+          foreach ($invalid in @(
+            "/*`n",
+            "/*`n  X-Recipavo-Commit: $sha`n  X-Recipavo-Commit: $sha`n",
+            "/*`n  X-Recipavo-Commit: $badStamp`n"
+          )) {
+            $rejected = $false
+            try { $null = Get-ArtifactSha $invalid } catch { $rejected = $true }
+            if (-not $rejected) { throw 'Invalid SHA stamp was accepted' }
+          }
+          Write-Host 'PASS: artifact SHA parsing and negative cases'
       - name: Assert explicit release gates; never execute deployment
         shell: pwsh
         run: |
