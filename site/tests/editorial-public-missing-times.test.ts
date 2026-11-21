@@ -45,3 +45,41 @@ test("#327: complete total time has no missing-time entries", () => {
   assert.ok((section ?? "").includes("Ei osumia."));
   assert.doesNotMatch(section ?? "", /aika-puuttuu/);
 });
+
+test("#327: source-only missing time is distinguished from public missing time", () => {
+  const report = compareInventories(raw, [recipe(45)]);
+  assert.equal(report.totals.rawMissingTimes, 1);
+  assert.equal(report.totals.projectedMissingTimes, 0);
+  assert.equal(report.totals.rawMissingTimesNoLongerVisible, 1);
+  assert.equal(report.totals.publicMissingTimesNotInRaw, 0);
+  assert.deepEqual(report.sourceOnly.rawMissingTimeNoLongerVisible.map(x => x.recipeId), [evidence.recipeId]);
+  assert.deepEqual(report.sourceOnly.publicMissingTimeNotInRaw, []);
+  assert.ok(toMarkdown(report).includes("| Kokonaisaika puuttuu | 1 | 0 |"));
+});
+
+test("#327: newly missing public time remains visible as a review signal", () => {
+  const sourceWithTime: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingTime: [] },
+  };
+  const report = compareInventories(sourceWithTime, [recipe(null)]);
+  assert.equal(report.totals.rawMissingTimes, 0);
+  assert.equal(report.totals.projectedMissingTimes, 1);
+  assert.equal(report.totals.rawMissingTimesNoLongerVisible, 0);
+  assert.equal(report.totals.publicMissingTimesNotInRaw, 1);
+  assert.deepEqual(report.sourceOnly.publicMissingTimeNotInRaw.map(x => x.recipeId), [evidence.recipeId]);
+  const markdown = toMarkdown(report);
+  assert.ok(markdown.includes("| Kokonaisaika puuttuu | 0 | 1 |"));
+  assert.ok(markdown.includes("### Julkisessa esityksessä uutena puuttuvat ajat"));
+  assert.ok(markdown.split("### Julkisessa esityksessä uutena puuttuvat ajat")[1]?.includes(evidence.path));
+});
+
+test("#327: source/public agreement has no time parity deltas", () => {
+  const report = compareInventories(raw, [recipe(null)]);
+  assert.equal(report.totals.rawMissingTimes, 1);
+  assert.equal(report.totals.projectedMissingTimes, 1);
+  assert.equal(report.totals.rawMissingTimesNoLongerVisible, 0);
+  assert.equal(report.totals.publicMissingTimesNotInRaw, 0);
+  assert.deepEqual(report.sourceOnly.rawMissingTimeNoLongerVisible, []);
+  assert.deepEqual(report.sourceOnly.publicMissingTimeNotInRaw, []);
+});
