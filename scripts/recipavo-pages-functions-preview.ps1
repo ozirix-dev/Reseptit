@@ -58,7 +58,85 @@ $head = Run 'git' @('-C',$root,'rev-parse','HEAD')
 Need ($head -eq $ExpectedSha) 'Checkout does not match expected SHA'
 $remote = Run 'git' @('-C',$root,'ls-remote','origin','refs/heads/main')
 $remoteSha = ($remote -split '\s+')[0]
-Need ($remoteSha -match '^[a-f0-9]{40}
+Need ($remoteSha.Length -eq 40 -and $remoteSha -cmatch '^[0-9a-f]+Need (-not (Run 'git' @('-C',$root,'status','--porcelain','--untracked-files=no'))) 'Tracked worktree is dirty'
+$headers = Get-Content -LiteralPath (Join-Path $dist '_headers') -Raw
+$stamps = [regex]::Matches($headers,'(?im)^\s*X-Recipavo-Commit:[ \t]*([a-f0-9]{40})\s*$')
+Need ($stamps.Count -eq 1 -and $stamps[0].Groups[1].Value -eq $ExpectedSha) 'dist SHA stamp differs'
+$assets = @(Get-ChildItem -LiteralPath $dist -Recurse -File -Force)
+Need ($assets.Count -gt 0 -and $assets.Count -le 20000) 'Pages asset count out of range'
+Need (-not @($assets | Where-Object { $_.Length -gt 25MB }).Count) 'A Pages asset is over 25 MiB'
+Push-Location $site
+try {
+  $projects = Items (PagesJson @('pages','project','list'))
+  $matches = @($projects | Where-Object { (Prop $_ 'name') -eq 'recipavo-site' })
+  Need ($matches.Count -eq 1) 'Expected exactly one recipavo-site project'
+  Need ((Prop $matches[0] 'production_branch') -eq 'production') 'Unexpected Cloudflare production branch'
+  $before = LiveSha
+  $preview = "https://$PreviewBranch.recipavo-site.pages.dev/"
+  Write-Host "Preflight PASS; project=recipavo-site; preview=$preview; sha=$ExpectedSha; live=$before"
+  if (-not $Apply) {
+    Write-Host 'HOLD: read-only preflight finished. Preview was NOT uploaded. Re-run with -Apply after approval.'
+    return
+  }
+  if (-not $PSCmdlet.ShouldProcess($preview, "Deploy Pages Functions preview at $ExpectedSha")) {
+    Write-Host 'HOLD: preview deployment declined.'
+    return
+  }
+  # Running inside site/ makes Wrangler discover site/functions automatically.
+  & npx.cmd --yes wrangler@4.165.0 pages deploy $dist --project-name recipavo-site --branch $PreviewBranch --commit-hash $ExpectedSha
+  Need ($LASTEXITCODE -eq 0) 'Wrangler preview deployment failed'
+  & node scripts/feedback-cloudflare-preview-probe.mjs --url $preview --sha $ExpectedSha
+  Need ($LASTEXITCODE -eq 0) 'Preview HTTP/Functions/noindex smoke test failed'
+  $after = LiveSha
+  Need ($after -eq $before) 'Production revision changed while preview was tested'
+  Write-Host "PASS: Preview functions test and production SHA unchanged ($after). POST was not sent."
+} finally { Pop-Location }
+) 'Remote main SHA could not be read'
+# A preview may safely test a pinned, already CI-tested main ancestor while other
+# Chat N owners continue merging. Do not require the main tip to stand still.
+$trackedMain = Run 'git' @('-C',$root,'rev-parse','refs/remotes/origin/main')
+Need ($trackedMain -eq $remoteSha) 'Local origin/main is stale; run git fetch origin main in the isolated preview worktree'
+& git -C $root merge-base --is-ancestor $ExpectedSha $trackedMain
+Need ($LASTEXITCODE -eq 0) 'Approved preview SHA is not an ancestor of remote main'
+Need (-not (Run 'git' @('-C',$root,'status','--porcelain','--untracked-files=no'))) 'Tracked worktree is dirty'
+$headers = Get-Content -LiteralPath (Join-Path $dist '_headers') -Raw
+$stamps = [regex]::Matches($headers,'(?im)^\s*X-Recipavo-Commit:[ \t]*([a-f0-9]{40})\s*$')
+Need ($stamps.Count -eq 1 -and $stamps[0].Groups[1].Value -eq $ExpectedSha) 'dist SHA stamp differs'
+$assets = @(Get-ChildItem -LiteralPath $dist -Recurse -File -Force)
+Need ($assets.Count -gt 0 -and $assets.Count -le 20000) 'Pages asset count out of range'
+Need (-not @($assets | Where-Object { $_.Length -gt 25MB }).Count) 'A Pages asset is over 25 MiB'
+Push-Location $site
+try {
+  $projects = Items (PagesJson @('pages','project','list'))
+  $matches = @($projects | Where-Object { (Prop $_ 'name') -eq 'recipavo-site' })
+  Need ($matches.Count -eq 1) 'Expected exactly one recipavo-site project'
+  Need ((Prop $matches[0] 'production_branch') -eq 'production') 'Unexpected Cloudflare production branch'
+  $before = LiveSha
+  $preview = "https://$PreviewBranch.recipavo-site.pages.dev/"
+  Write-Host "Preflight PASS; project=recipavo-site; preview=$preview; sha=$ExpectedSha; live=$before"
+  if (-not $Apply) {
+    Write-Host 'HOLD: read-only preflight finished. Preview was NOT uploaded. Re-run with -Apply after approval.'
+    return
+  }
+  if (-not $PSCmdlet.ShouldProcess($preview, "Deploy Pages Functions preview at $ExpectedSha")) {
+    Write-Host 'HOLD: preview deployment declined.'
+    return
+  }
+  # Running inside site/ makes Wrangler discover site/functions automatically.
+  & npx.cmd --yes wrangler@4.165.0 pages deploy $dist --project-name recipavo-site --branch $PreviewBranch --commit-hash $ExpectedSha
+  Need ($LASTEXITCODE -eq 0) 'Wrangler preview deployment failed'
+  & node scripts/feedback-cloudflare-preview-probe.mjs --url $preview --sha $ExpectedSha
+  Need ($LASTEXITCODE -eq 0) 'Preview HTTP/Functions/noindex smoke test failed'
+  $after = LiveSha
+  Need ($after -eq $before) 'Production revision changed while preview was tested'
+  Write-Host "PASS: Preview functions test and production SHA unchanged ($after). POST was not sent."
+} finally { Pop-Location }
+) 'Remote main SHA could not be read'
+# Main may move after the pinned preview build; require the pinned SHA to remain an ancestor.
+$trackedMain = Run 'git' @('-C',$root,'rev-parse','refs/remotes/origin/main')
+Need ($trackedMain -eq $remoteSha) 'Local origin/main is stale; fetch origin main first'
+& git -C $root merge-base --is-ancestor $ExpectedSha $trackedMain
+Need ($LASTEXITCODE -eq 0) 'Pinned preview SHA is not an ancestor of remote main'
 Need (-not (Run 'git' @('-C',$root,'status','--porcelain','--untracked-files=no'))) 'Tracked worktree is dirty'
 $headers = Get-Content -LiteralPath (Join-Path $dist '_headers') -Raw
 $stamps = [regex]::Matches($headers,'(?im)^\s*X-Recipavo-Commit:[ \t]*([a-f0-9]{40})\s*$')
