@@ -82,7 +82,8 @@ test("published FI originals are counted once per file; drafts and translations 
 
 test("missing instructions, improbable total-time scope and duplicate IDs are review signals only", () => {
   const longRest = recipe("rest", "Kohotettu taikina.", "Anna kohota yön yli.", { time: 30 });
-  const missingStep = recipe("rest", "Toinen kuvaus.", "", { time: null }).replace("1. \n", "");
+  const missingStep = recipe("rest", "Toinen kuvaus.", "", { time: null })
+    .replace(/^1\. .*\n/m, "").replace(/^2\. .*\n/m, "");
   const result = auditEditorialSources([
     { path: "reseptit/aamupalat/one.md", raw: longRest },
     { path: "reseptit/aamupalat/two.md", raw: missingStep },
