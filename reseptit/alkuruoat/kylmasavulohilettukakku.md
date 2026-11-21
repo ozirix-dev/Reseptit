@@ -6,7 +6,7 @@ category: alkuruoka
 additional_categories:
   - aamupala
 language: fi
-status: draft
+status: published
 servings: 8
 time_total_min: 110
 difficulty: keskitaso
@@ -23,6 +23,11 @@ tags:
   - juhlapoyta
 translation_languages: []
 translation_status: {}
+image:
+  src: alkuruoat/kylmasavulohilettukakku.webp
+  alt: Kylmäsavulohilettukakku, jossa on ohuita paistettuja lettuja sekä vaaleaa tuorejuusto-lohitäytettä kerroksittain; leikattu pala näyttää täytteen
+  width: 720
+  height: 720
 ingredients:
   - amount: 60
     unit: g
@@ -51,7 +56,7 @@ ingredients:
   - amount: 1
     unit: tl
     item: rypsiöljyä
-    note: pannun voiteluun tarvittaessa, toimituksellinen valinta
+    note: pannun voiteluun tarvittaessa
   - amount: 230
     unit: g
     item: maustamatonta tuorejuustoa
@@ -59,11 +64,11 @@ ingredients:
   - amount: 110
     unit: g
     item: kylmäsavulohta
-    note: täytteeseen, säilytä kylmässä koko valmistelun ajan
+    note: täytteeseen, käytä avattu pakkaus pian
   - amount: 15
     unit: g
     item: kevätsipulin vihreää osaa
-    note: hienonnettuna täytteeseen, määrä on toimituksellinen mittamuunnos
+    note: hienonnettuna täytteeseen
   - amount: 2
     unit: tl
     item: kapriksia
@@ -79,7 +84,7 @@ ingredients:
   - amount: 5
     unit: g
     item: tuoretta tilliä
-    note: valinnainen koristelu toisesta julkaistusta reseptistä
+    note: valinnainen koristelu
 ---
 
 # Kylmäsavulohilettukakku
@@ -115,20 +120,24 @@ Viipaloitu kakku sopii pieniksi alkupaloiksi tai brunssipöytään.
 - **Lähderajaus ja luonnostila:** [Snack Porch -tilin Facebook Reel](https://www.facebook.com/reel/4556714911264526)
   on nimeltään *Smoked Salmon Crepe Cake*. Sen saatavilla ollut kuvateksti
   ei sisältänyt tarkkoja ainesmääriä eikä koko valmistusohjetta. Tämä
-  reseptiluonnos **ei ole videon varmennettu litterointi**.
+  toimituksellinen reseptisovitus **ei ole videon varmennettu litterointi**.
 - Määrien ja perusmenetelmän pääasiallinen lähde on
   [Patient.info: Smoked-Salmon Crêpe Torte](https://patient.info/recipes/high-protein-recipes/smoked-salmon-crpe-torte)
   (toimituksen julkaisema resepti 29.1.2026). Samaa ruokarakennetta ja
   valinnaista tilliä tukee
   [High Country Salmon: Smoked Salmon Crepe Cake](https://www.highcountrysalmon.co.nz/pages/smoked-salmon-crepe-cake).
-  Jälkimmäisen ohjeen lettumäärä ei näytä vastaavan sen taikinamäärää,
-  joten lettujen määrä on tässä käytännöllinen arvio eikä alkuperäisen
-  videon väite. Rypsiöljy, kevätsipulin grammamäärä, paistomäärän vaihteluväli
-  ja osa työohjeen yksityiskohdista ovat toimituksellisia sovituksia.
-- **Ei kokkikokeilua eikä julkaisuvalmiutta:** Recipavo ei ole valmistanut
-  tätä versiota. Videon omat ainekset, määrät ja työvaiheet vaativat
-  vielä erillisen tarkistuksen. Kuvitus, ravintolaskenta, GK-tieto ja
-  mahdolliset käännökset puuttuvat. Status pysyy siksi luonnoksena.
+  Jälkimmäisen ohjeen ilmoittama lettumäärä on suhteessa sen taikinamäärään
+  epäselvä, joten tämän ohjeen 9–11 lettua on arvio. Rypsiöljy,
+  kevätsipulin grammamäärä, paistomäärän vaihteluväli ja osa valmistuksen
+  sanamuodoista ovat toimituksellisia sovituksia. Patient.info ei täsmennä
+  savustusmenetelmää; tämän version kylmäsavulohi on erikseen valittu raaka-aine.
+- **Toimituksellinen resepti:** Tämä ei ole Recipavon omassa koekeittiössä
+  testattu annos. Määrät ja valmistustapa on tarkistettu julkaistusta
+  vertailureseptistä; tämän version ruokakäyttäytymistä ei ole mitattu.
+  Ravintoarvojen numeerista arviota ei julkaista ilman reseptikohtaista laskentaa.
+  GK: ei määritetty. Käännösversioita ei vielä ole julkaistu.
+- Kuva on tekoälyllä luotu havainnekuva eikä valokuva Facebook-videosta
+  tai valmistetusta annoksesta. Kuvan tilli kuuluu valinnaiseen koristeluun.
 - **Allergeenit:** kala, maito, kananmuna ja vehnä (gluteeni).
 - **Kylmäsavulohen elintarviketurvallisuus:** Täyte sisältää
   kuumentamatonta kylmäsavulohta. Ruokavirasto suosittelee, että
