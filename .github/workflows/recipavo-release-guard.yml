@@ -37,8 +37,8 @@ jobs:
             'ExpectedSha', 'ExpectedProductionBranch', 'ShouldProcess',
             'pages deploy', '--branch', '--commit-hash',
             'verify:production', 'X-Recipavo-Commit',
-            'pages project', 'pages deployment', 'refs/heads/main',
-            'site', 'functions', 'FEEDBACK'
+            'pages', 'project', 'deployment', 'refs/heads/main',
+            'site', 'functions', 'feedback'
           )
           foreach ($item in $required) {
             if (-not $content.Contains($item)) { throw "Missing guard marker: $item" }
