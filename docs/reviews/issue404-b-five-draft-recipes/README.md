@@ -1,22 +1,36 @@
-# Issue #404 / B-ryhmä: viisi punnittua FI-koeversiota
+# Issue #404 / B-ryhmä: viisi FI-lähdeversiota, turvallisuus- ja ravintojen HOLD
 
 **21.11.2026 · LUONNOKSET / HOLD / EI JULKAISUUN.**
 
-Tämä työ jatkaa issue #404:n B21-jonoa, jonka 17 alkuperäistä FI-tunnusta on karanteenissa ja joista viidelle puuttui nimetty seuraaja. Nämä viisi **eivät vielä ole** `meta/recipe-successors.json`-rekisterin virallisia seuraajia eikä niistä tule julkisia sivuja. Ne ovat docs/reviews-kansioon eristettyjä, vain suomenkielisiä **punnittuja ehdokasversioita**. Punnitut määrät ovat tutkittavia *suunnitteluarvoja*, eivät fyysisen koekeittiökokeen tuloksia.
+Tämä työ jatkaa issue #404:n B21-jonoa, jonka 17 alkuperäistä FI-tunnusta on karanteenissa ja joista viidelle puuttui nimetty seuraaja. Nämä viisi **eivät vielä ole** `meta/recipe-successors.json`-rekisterin virallisia seuraajia eikä niistä tule julkisia sivuja. Ne ovat docs/reviews-kansioon eristettyjä vain suomenkielisiä **lähdesidonnaisia ehdokasversioita**. Yksittäiset luvut ovat joko nimetyn reseptikirjoittajan ilmoittamia tai dokumentoituja avoimia oletuksia, **eivät Recipavon omassa keittiössä punnittuja**.
 
 **Lähtömain:** `bd04f5fd9819ecdc2584379bd40fbd25c462b646` (PR #759:n merge). Vertaa uudelleen ennen yksittäisen reseptin jatkokehitystä: tämä SHA lukitsee tämän tutkimuserän lähtötilan, ei tulevia julkaisuja.
 
 **Koekeittiötöntä työskentelyä koskeva päätös 21.11.2026:** omaa koekeittiötä ei ole käytettävissä, eikä oma valmistuskoe ole yleinen julkaisun pakollinen portti. **[Viiden reseptin lähdeperusteinen katselmointi](source-review-without-kitchen.md)** korvaa koekeittiön edellytyksen nimetyillä reseptilähteillä, tuotetäsmäytyksellä, tarkastetulla sovituksella ja turvallisuusnäytöllä. Erottamaton lähderistiriita jää HOLDiksi. Puuttuvaa ravinto-/GK-lähdettä ei voi korvata arvauksella.
 
+## Ajantasainen lähdesidonta 21.11.2026
+
+Tämän erän **[koneellisesti tarkistettava lähdetaulukko](source-binding-2026-11-21.json)** on nykytilan määrien ja ruokalajimenetelmän lähde. Aikaisempien PR #760–#762:n katselmointien 80 g/180 g/2 g ja muiden vanhojen testimittausten väitteet ovat **historiaa**, eivät enää tämän haaran FI-luonnosten raaka-aineluettelo. Ulkopuolisten tekijöiden mittoja ei väitetä Recipavon omaksi mittaukseksi.
+
+| Resepti | Nykyinen lähde- ja valmistusversio | Vielä estävä |
+| --- | --- | --- |
+| Saltfish-fritterit | Anthea Stephenson: **160 g kuivaa suolakalaa, 300 g self-raising-jauhoja, 375–390 ml taikinavettä, 14–16 fritteriä** | kalatuote, suola ja **tuntematon imeytynyt paistoöljy** sekä neljä makroa |
+| Idli + chutney | Dassana Amit: **2 kuppia riisiä ja 120 g uradia**, noin 30 idliä; Chef Kunal Kapurin **erillinen** chutney | BCCDC:n kanssa perusteltu **fermentoinnin turvallisuus**, suola, käymisen seuranta sekä annosjako ja makrot |
+| Pesarattu / keitetty mung | Perinteisen pesarattun julkaistut lähteet jauhavat **liotetun, eivät esikeitetyn** mungin; keitetyn mungin pihvistä on erillisiä, sitovia reseptejä | tässä V2:ssa käytetty *ohut* esikeitetty mungtaikina **ei ole vahvistettu lähderesepti eikä perinteinen pesarattu** |
+| Kuih seri muka | Bee Yinn Low / Siew Loon: **300 g riisiä, 200 ml kastikekookosta, 2 munaa + 2 keltuaista, 170 g sokeria, 20 palaa** | pandanmehun saanto, munat ja lusikkamitat grammoina, kylmäjäähdytys, makrot |
+| Xôi | VNIFood: **200 g kuivaa riisiä, 100 g maapähkinää, 160 ml vettä, 20 g kookosmaitoa**, kaksivaiheinen riisikeitin | lähteen **20 g/20 ml -ristiriita**, suolan määrä, tuote- ja ravintoarvot |
+
+Neljässä FI-luonnoksessa menetelmä on nyt sidottu nimettyyn julkaistuun lähteeseen; **se ei ole neljän julkaistavan reseptin hyväksyntä**. Viides (esikeitetty mung) on edelleen menetelmän ja turvallisuuden osalta ratkaisematon, eikä sitä julkaista pesarattuna.
+
 ## Viisi käsiteltävää ehdokasta
 
 | Alkuperäinen FI-ID (karanteeni / lähdeblob) | Koeversion ID | Etenemistä estävä todistus |
 | --- | --- | --- |
-| `karibia-saltfish-fritterit` / `f197d405e1d1c9de9afcbfb2b5ce4def501de30f` | `karibia-saltfish-fritterit-punnittu-v2` | Kuivatun suolakalan oikea tuote, turvallinen suolanpoisto, syötävän kalan punnittu saanto, 20 g:n paistoöljyn retentio |
-| `intialainen-idli-kookoschutneylla` / `e862e239cf56f33c27ea36e6a5311bf6d179364d` | `intialainen-idli-kookoschutneylla-punnittu-v2` | Riisi/urad-tuote, taikinanesteen todellinen kulutus, fermentointiolosuhteet, sinapinsiementen ja chutneyn ravintoperusta |
+| `karibia-saltfish-fritterit` / `f197d405e1d1c9de9afcbfb2b5ce4def501de30f` | `karibia-saltfish-fritterit-punnittu-v2` | Suolatun kalan tuotetäsmäys ja suolanpoisto, kappaleiden syötävät grammamassat, lähteen **määrittelemätön öljyn imeytyminen** ja ravintoarviot |
+| `intialainen-idli-kookoschutneylla` / `e862e239cf56f33c27ea36e6a5311bf6d179364d` | `intialainen-idli-kookoschutneylla-punnittu-v2` | Käymisen turvallisuus ja suolapitoisuuden tarkistaminen, riisin/uradin jauhamisvesi, erillisen chutneyn annosjako ja neljä makroa |
 | `intialainen-pesarattu-mungpavuista` / `5356f03ce2764e38563a95ede0e4373b8f50a65e` | `intialainen-pesarattu-mungpavuista-punnittu-v2` | **Menetelmä- ja turvallisuus-HOLD:** nykyinen kypsän mungpapun pannulettu on erillinen luonnos, **ei perinteinen pesarattu**. Julkaistu pesarattu-lähde sanoo, ettei keitetty mungpapu sovellu sen valmistukseen. Tarvitaan nimenomaisesti kypsän pavun pannulettua tukeva riippumaton lähde; papujen riittävä keittäminen säilyy turvavaatimuksena. |
-| `malesialainen-kuih-seri-muka` / `4c565331c9e3a6322cd97989a9ad6fac38167284` | `malesialainen-kuih-seri-muka-punnittu-v2` | Pandanlehtien hyväksytty tuote, siivilöidyn mehun todellinen saanto, muna-/kastikekerroksen hyytyminen ja jäähdytys, neljän pienemmän annoksen saanto |
-| `vietnamilainen-xoi-maapahkinalla` / `424b60e50e95d2e216e9090333f4f89509ee61ad` | `vietnamilainen-xoi-maapahkinalla-punnittu-v2` | Tahmariisin ja maapähkinöiden kypsennetty massa, liotus ja keitto/höyrytys, kookosmaidon imeytyminen, seesamin ja kookoksen allergia-/ravintotiedot |
+| `malesialainen-kuih-seri-muka` / `4c565331c9e3a6322cd97989a9ad6fac38167284` | `malesialainen-kuih-seri-muka-punnittu-v2` | 20 lähdepalaa, pandanmehun uuttosaanto, 2 munan + 2 keltuaisen syötävät grammamassat, lusikkamitan muunnos ja kylmäjäähdytys |
+| `vietnamilainen-xoi-maapahkinalla` / `424b60e50e95d2e216e9090333f4f89509ee61ad` | `vietnamilainen-xoi-maapahkinalla-punnittu-v2` | VNIFoodin kaksivaiheinen riisikeitinmenetelmä; maapähkinän kypsä massa, kookosmaidon 20 g / 20 ml ero, suolan määrä, tuotetiedot ja ravintoarvio |
 
 Pandanin oikea kirjoitusasu on pandan, ei uusi erillinen raaka-ainetunnus. Kunkin tiedoston `url_slug` on alun perin karanteenissa olevan reseptin slug, jotta tuleva julkaisuehdokas voidaan katselmoida ilman toista päällekkäistä julkista reittiä.
 
@@ -25,12 +39,12 @@ Pandanin oikea kirjoitusasu on pandan, ei uusi erillinen raaka-ainetunnus. Kunki
 - Kaikissa viidessä `status: draft`, `time_total_min: null` (kokeessa mitattava), `carbs_net_per_serving_g: null`, `carbs_total_per_serving_g: null`, `protein_per_serving_g: null`, `fat_per_serving_g: null`. Puuttuva ei ole nolla.
 - **Ei kuvia**, valmiita käännöksiä, julkisia seuraajarekisterimerkintöjä eikä hyväksyttyjä GK-lukuja. Tämän hakemiston tiedostot eivät ole sivuston `reseptit/`- tai `kaannokset/`-julkaisulähteitä.
 - `site/tests/issue404-b-five-draft-boundary.test.ts` valvoo, etteivät ehdokkaat tai alkuperäiset päädy vahingossa julkiseen sisältöön. Jos testi joskus estää hyväksytyn julkaisun, sitä päivitetään vain samassa erillisessä julkaisu-PR:ssä ja vasta uuden hyväksyntänäytön jälkeen.
-- Vertailulähteiden **ainesmäärät eivät automaattisesti siirry** näihin FI-ehdokkaisiin. Sovelluksen annoskoko, vesi, raaka/kypsä-massat sekä tuoteretentiot tarvitsevat oman kirjauksen.
+- Julkaistujen pääasiallisten lähteiden luvut on nyt **kopioimatta ohjetekstiä** sidottu neljään FI-luonnokseen. Tuntemattomia grammamääriä ei voi muuntaa laskentaan arvauksella. Todellinen annoskoko, vesi, raaka/kypsä-massat ja tuoteretentiot vaativat edelleen erillisen näytön.
 - Älä tee virheellistä **"perinteinen/autenttinen"**-väitettä esikeitetystä pesarattusta: turvallisuustarkistus muutti menetelmää ja siksi maku/rakenne sekä nimen soveltuvuus on arvioitava.
 
-## Riippumaton elintarviketurvallisuuden lähdekatselmointi (21.11.2026)
+## Aikaisemman luonnosversion elintarviketurvallisuuskatselmointi (21.11.2026; historia)
 
-Tämä tarkistus perustuu erilliseen **viranomaisten ja terveysturvallisuuden asiantuntijalähteiden** vertailuun alkuperäisten FI-draftien kanssa. Lähteiden numeerisia raja-arvoja ei pidä tulkita tämän reseptierän koekeittiö- tai mikrobiologiseksi hyväksynnäksi.
+Tämä aikaisempi tarkistus kohdistui **ennen edellä kuvattua lähdesidontaa laadittuihin alkuperäisiin FI-drafteihin**; esimerkiksi 2 g:n idlisuola ja neljän annoksen kuih-malli ovat tässä alemmassa taulukossa historiallisia löydöksiä. Nykyiset idli- ja kuih-määrät katsotaan yllä olevasta taulukosta ja JSON-lähdesidonnasta. Tarkistus perustuu viranomaisten ja terveysturvallisuuden asiantuntijalähteisiin. Lähteiden numeerisia raja-arvoja ei pidä tulkita tämän reseptierän koekeittiö- tai mikrobiologiseksi hyväksynnäksi.
 
 | Ehdokas | Katselmoinnin päätös | Uusi varmistettava kynnys |
 | --- | --- | --- |
@@ -63,6 +77,6 @@ Tämä tarkistus perustuu erilliseen **viranomaisten ja terveysturvallisuuden as
 - Idli: https://www.vegrecipesofindia.com/idli-recipe-how-to-make-soft-idlis/ ja chutney https://www.chefkunalkapur.com/recipe/coconut-chutney/
 - Pesarattu: https://www.indianhealthyrecipes.com/andhra-pesarattu-whole-moong-dosa/ ja Ruokaviraston kuivapapujen käsittely https://www.ruokavirasto.fi/en/foodstuffs/food-sector/food-information/labelling/instructions-for-use-and-warning/beans/
 - Kuih seri muka: https://rasamalaysia.com/seri-muka/ sekä https://www.mykeuken.com/2016/10/pandan-custard-glutinous-rice-layers.html
-- Xôi: https://laviepartagee.com/2016/12/13/peanut-sticky-rice-xoi-dau-phong/ ja https://www.youtube.com/watch?v=7b83hesB19Q
+- Xôi: **nykyinen pääasiallinen lähde** https://vnifood.com/recipe/sticky-rice-with-peanuts/ ; aiemmin käytetyt höyrytysvertailut https://laviepartagee.com/2016/12/13/peanut-sticky-rice-xoi-dau-phong/ ja https://www.youtube.com/watch?v=7b83hesB19Q
 
 **Tämän erän luonnokset ja uusi lähdeperusteinen katselmointi eivät ole julkaisu.** Viiden alkuperäisen karanteenin julkaisukelpoisuus jää ennalleen. Reitti julkaisuun ei edellytä omaa koekeittiötä, mutta edellyttää osoitettuja ruokalajikohtaisia lähteitä ja nykyisiä laatu-, ravinto-/GK-, kieli- ja Repo Guard -portteja. Issue #404 jää avoimeksi.
