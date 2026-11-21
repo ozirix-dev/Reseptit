@@ -53,7 +53,7 @@ A Finnish Christmas casserole in which warm mashed potatoes develop natural swee
 2. Cool the mash to 55–70°C. Stir in the reserved water and half the flour. Do not add flour while the mash is above 75°C.
 3. Cover and keep the mash in an oven at about 60°C for 3–4 hours. Add the remaining flour after 30 minutes, stirring occasionally and monitoring the temperature.
 4. Warm the milk and stir it into the sweetened mash. Add butter and salt; taste before adding any syrup. The mixture should resemble a thick porridge.
-5. Divide among greased baking dishes, filling them no more than halfway because the mixture rises. Bake at 175°C for about 2 hours until golden and set.
+5. Divide among greased baking dishes, filling them no more than halfway because the mixture rises. Bake at 150°C for about 2 hours until golden and set.
 
 ## Notes
 
