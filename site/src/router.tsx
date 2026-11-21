@@ -9,6 +9,7 @@ import { loadContent } from "@/lib/load-content";
 import type { RouteContent } from "@/content/route-data";
 import { SeoMeta } from "@/SeoMeta";
 import { SiteNavigation } from "@/SiteNavigation";
+import { FeedbackFooterButton, FeedbackProvider } from "@/features/feedback/feedback-context";
 import { AnalyticsPrompt, PrivacyPage } from "@/features/privacy/Privacy";
 import { privacyCopy, privacyEmail, privacyLocaleFromPath, privacyPaths } from "@/features/privacy/privacy-copy";
 import type { RecipeLocale } from "@/types/content";
@@ -21,7 +22,8 @@ function SiteLayout() {
   const brand = previewCopy?.brand ?? labels.brand;
   const { locales: availableLocales, translations } = useContent();
   return (
-    <div className="site-shell">
+    <FeedbackProvider locale={locale} pagePath={pathname}>
+      <div className="site-shell">
       <SeoMeta />
       <a className="skip-link" href="#main">{labels.skipToContent}</a>
       <header className="site-header">
@@ -32,9 +34,10 @@ function SiteLayout() {
       </header>
       <AnalyticsPrompt locale={locale} />
       <main id="main" className="site-main"><Outlet /></main>
-      <footer className="site-footer"><div className="container"><p>{previewCopy?.footer ?? labels.footer}</p><p className="site-footer__contact"><Link to={privacyPaths[locale]}>{privacyCopy[locale].title}</Link><a href={`mailto:${privacyEmail}`}>{privacyEmail}</a></p><RecipeAbout locale={locale} /></div></footer>
+      <footer className="site-footer"><div className="container"><p>{previewCopy?.footer ?? labels.footer}</p><p className="site-footer__contact"><Link to={privacyPaths[locale]}>{privacyCopy[locale].title}</Link><a href={`mailto:${privacyEmail}`}>{privacyEmail}</a><FeedbackFooterButton locale={locale} /></p><RecipeAbout locale={locale} /></div></footer>
       <ScrollRestoration />
-    </div>
+      </div>
+    </FeedbackProvider>
   );
 }
 
