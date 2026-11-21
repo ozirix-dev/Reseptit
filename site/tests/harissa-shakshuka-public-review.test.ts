@@ -78,7 +78,10 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
     // The accounting input is 110 g edible egg; the user-facing portion
     // selector intentionally converts that amount to two shell-free eggs.
     const visibleEgg = (publicRecipe.kitchenIngredients ?? publicRecipe.ingredients)[0];
-    if (locale === "fi") assert.match(visibleEgg.item, /kuorettomana|ilman kuorta/);
+    if (locale === "fi") {
+      assert.match(visibleEgg.item, /kananmunaa/);
+      assert.doesNotMatch(visibleEgg.item, /kananmunaa kuoretta(?:\b|$)/);
+    }
     if (publicRecipe.kitchenIngredients) assert.equal(visibleEgg.amount, 2);
     else assert.equal(visibleEgg.amount, 110);
     assert.deepEqual(publicRecipe.nutrition, {
