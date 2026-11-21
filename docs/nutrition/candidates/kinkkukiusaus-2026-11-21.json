@@ -228,8 +228,8 @@
     "carbohydrate": 29.173,
     "protein": 12.626,
     "fat": 12.819,
-    "fibre": 2.633,
-    "polyols": 0
+    "fibre": null,
+    "polyols": null
   },
   "important": "Edellä olevat ovat tunnettujen ravintotekijöiden osasummia oletetuilla tuotteilla, EIVÄT julkaistavat ravintoarvot. Puuttuvaa kuitua/polyoleja EI tulkita nollaksi.",
   "unresolved_components": [
@@ -257,5 +257,26 @@
     "approved_fat_per_portion_g": null,
     "glycemic_load": null
   },
-  "publication_gate": "HOLD: vahvista tuotteet, mahdolliset huomaamatta jäävät lisäaineet/rasvat, lähdeversio, ravinto- ja GK-päätös. Älä tee docs/nutrition/calculations -julkaisunäyttöä tästä."
+  "publication_gate": "HOLD: vahvista tuotteet, mahdolliset huomaamatta jäävät lisäaineet/rasvat, lähdeversio, ravinto- ja GK-päätös. Älä tee docs/nutrition/calculations -julkaisunäyttöä tästä.",
+  "quantified_rows_subtotals_per_portion_g": {
+    "carbohydrate": 29.173,
+    "protein": 12.626,
+    "fat": 12.819,
+    "fibre": 2.633,
+    "polyols": 0
+  },
+  "coverage": {
+    "ingredient_rows": 7,
+    "has_unmapped_ingredients": true,
+    "unmapped_ingredient_lines": [
+      7,
+      7
+    ],
+    "missing_nutrient_components": [
+      "fibre",
+      "polyols"
+    ],
+    "all_public_macro_values_withheld": true
+  },
+  "missing_values_rule": "Null means not established; 0 is allowed only for a measured/explicitly sourced value. Quantified-row subtotals exclude unmapped ingredients and unknown components, and cannot be used as complete-recipe estimates."
 }
