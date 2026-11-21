@@ -20,11 +20,11 @@ Lähteiden proteiinilukujen ero on **36,3 g / 100 g**. Se ei muodosta hyväksytt
 
 **Good Foodin noin 8 minuutin keittovaihe ei ole yleinen suolanpoisto-ohje.** [Ghezzi](https://ghezziitalia.com/ghezzi/salato-secco/) edellyttää tuotteiden liotusta ennen ruoanvalmistusta ja toteaa ajan riippuvan muun muassa kalan koosta ja veden lämpötilasta. Tästä ei päätellä vakio-liotusaikaa lähteistämättömälle Recipavo-tuotteelle. Suolanpoisto, syötävän massan saanto ja valmistuksen jälkeinen proteiini/suola jäävät kaikki tuntemattomiksi. Tuotemerkin valinta on tekemättä, eikä kumpaakaan lähdettä saa kopioida lopullisen aterian laskentaan.
 
-**PolyoIit:** kumpikaan vertailu ei ole tutkimustietue, joka hyväksyisi juuri tämän liotetun ja keitetyn kalan kaikki neljä makrokenttää Recipavon malliin. Erillisen polyoliarvon puuttumista ei muuteta nollaksi. Tällä lähdevertailulla ei hyväksytä uusia netto-/kokonais-HH- tai proteiiniarvoja.
+**Polyolit:** kumpikaan vertailu ei ole tutkimustietue, joka hyväksyisi juuri tämän liotetun ja keitetyn kalan kaikki neljä makrokenttää Recipavon malliin. Erillisen polyoliarvon puuttumista ei muuteta nollaksi. Tällä lähdevertailulla ei hyväksytä uusia netto-/kokonais-HH- tai proteiiniarvoja.
 
 ## 2. Self-raising-jauho: oikean tuotetyypin nimetty tutkimusehdokas
 
-[Tescon tuotekortti: Carr's Self Raising Flour 1 kg](https://www.tesco.com/shop/en-GB/products/264883892) kuvaa tuotteen ainesosiksi vehnäjauhon sekä **kohotusaineita (kalsiumfosfaatti ja natriumbikarbonaatti)**. Se on siksi tavallista Fineli-vehNäjauhoa parempi **tuotetyypin vertailuehdokas**. Tekijän Good Food -ohje ei kuitenkaan nimeä Carr'sia, eikä sitä ole erikseen valittu Recipavon FI-luonnokseen.
+[Tescon tuotekortti: Carr's Self Raising Flour 1 kg](https://www.tesco.com/shop/en-GB/products/264883892) kuvaa tuotteen ainesosiksi vehnäjauhon sekä **kohotusaineita (kalsiumfosfaatti ja natriumbikarbonaatti)**. Se on siksi tavallista Fineli-vehnäjauhoa parempi **tuotetyypin vertailuehdokas**. Tekijän Good Food -ohje ei kuitenkaan nimeä Carr'sia, eikä sitä ole erikseen valittu Recipavon FI-luonnokseen.
 
 | Tuotekortin ilmoitus, per 100 g | Määrä |
 | --- | ---: |
