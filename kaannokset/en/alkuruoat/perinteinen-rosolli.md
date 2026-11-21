@@ -17,8 +17,8 @@ main_ingredient:
 cooking_method:
   - "keitto"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "Finnish"
+  - "traditional"
 ingredients:
   - amount: 300
     unit: "g"
