@@ -1,3 +1,5 @@
+> **Päivitetty Chat-4-päätös 21.11.2026 (HEAD 194502569195fe5c317fc3d6d96ab657dd3c7504):** Automaattista valmistajakirjettä ja eräkohtaista käsittelytodistusta ei edellytetä yleisen reseptin julkaisemiseksi. Nykyiset graavisiian ja muikunmädin FI/EN/SV/TH-ohjeet perustuvat Ruokaviraston jäädytysehtoihin, raakakäyttöön tarkoitetun tuotteen valintaan, pakkausohjeisiin ja listeriavaroituksiin. Tämä aiempi raportti kuvaa vanhaa tutkimusvaihetta eikä sen valmistajakirje-HOLD ole enää voimassa. Muut toimitukselliset ja julkaisuhyväksyntäportit ovat edelleen erillisiä. Ajantasainen toimintatapa: `docs/reviews/new-recipes/chat4-risk-based-recipe-evidence-policy-2026-11-21.md`.
+
 # Chat-4 – tuotteet ja pakkaustiedot: graavisiika ja muikunmäti
 
 Tarkistus: 21.11.2026
