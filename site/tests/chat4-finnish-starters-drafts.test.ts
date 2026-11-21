@@ -41,7 +41,7 @@ function loadRecipe(id: string, locale: keyof typeof languageSections) {
 
 function comparableUnit(unit: string): string {
   if (["tl", "tsp", "tsk", "ช้อนชา"].includes(unit)) return "tsp";
-  if (["kpl", "pcs", "st", "ชิ้น", "ฟอง", "ลูก"].includes(unit)) return "each";
+  if (["kpl", "pcs", "st", "ชิ้น", "ฟอง", "ลูก", "เม็ด", "ใบ"].includes(unit)) return "each";
   return unit;
 }
 
