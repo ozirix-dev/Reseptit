@@ -27,12 +27,12 @@ const expectedMethods = {
   th: [/200 °C/, /12 กอง/, /6–9 นาที/, /อย่างน้อย 5 นาที/, /3 แผ่นต่อหนึ่งที่/],
 } as const;
 const expectedNotes = {
-  en: [/Contains milk/i, /0\\.04 g per portion/, /0\\.25 g of the paprika/, /polyol/i, /No numerical glycaemic load/, /illustration/i],
+  en: [/Contains milk/i, /0\.04 g per portion/, /0\.25 g of the paprika/, /polyol/i, /No numerical glycaemic load/, /illustration/i],
   sv: [/Innehåller mjölk/, /0,04 g per portion/, /0,25 g paprikapulver/, /polyol/i, /Inget numeriskt glykemiskt/, /illustration/i],
-  th: [/มีนมเป็นสารก่อภูมิแพ้/, /0\\.04 กรัมต่อหนึ่งที่/, /0\\.25 กรัม/, /โพลิออล/, /ยังไม่ได้กำหนดค่าภาระน้ำตาล/, /ภาพประกอบ/],
+  th: [/มีนมเป็นสารก่อภูมิแพ้/, /0\.04 กรัมต่อหนึ่งที่/, /0\.25 กรัม/, /โพลิออล/, /ยังไม่ได้กำหนดค่าภาระน้ำตาล/, /ภาพประกอบ/],
 } as const;
 const sourceBlob = (s: string) => createHash("sha1")
-  .update("blob " + Buffer.byteLength(s, "utf8") + "\\0")
+  .update("blob " + Buffer.byteLength(s, "utf8") + "\0")
   .update(s, "utf8")
   .digest("hex");
 
