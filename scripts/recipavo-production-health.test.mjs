@@ -17,7 +17,7 @@ const good=new Map([
   ['/sitemap.xml',{status:200,body:sitemapXml}],
   ['/__recipavo_health_missing__/',{status:404,body:'<meta name="robots" content="noindex,follow">'}],
   ['/api/feedback',{status:405,body:'{"error":"method_not_allowed"}',
-    headers:{'content-type':'application/json'}}],
+    headers:{'content-type':'application/json','cache-control':'no-store','x-content-type-options':'nosniff'}}],
   [entry,{status:200,body:'console.log("ok");'.repeat(15)}],
 ]);
 const response=({status,body,headers={}})=>new Response(body,{status,headers});
@@ -78,6 +78,18 @@ test('feedback GET must remain 405 JSON, never fallback HTML',async()=>{
     headers:{'content-type':'text/html'}},/must return JSON/);
   await expectBroken('/api/feedback',{status:405,body:'{"error":"other"}',
     headers:{'content-type':'application/json'}},/response changed/);
+});
+test('feedback GET must disallow caching and MIME sniffing',async()=>{
+  const goodFeedback=good.get('/api/feedback');
+  for(const [headers,reason] of [
+    [{'content-type':'application/json','x-content-type-options':'nosniff'},/must not be cached/],
+    [{'content-type':'application/json','cache-control':'public, max-age=3600','x-content-type-options':'nosniff'},/must not be cached/],
+    [{'content-type':'application/json','cache-control':'no-store'},/MIME sniffing/],
+    [{'content-type':'application/json','cache-control':'no-store','x-content-type-options':'guess'},/MIME sniffing/],
+  ])await expectBroken('/api/feedback',{...goodFeedback,headers},reason);
+  assert.equal((await probeProduction({fetcher:fake({'/api/feedback':{
+    ...goodFeedback,headers:{'content-type':'application/json; charset=utf-8',
+      'cache-control':'private, no-store','x-content-type-options':'nosniff'}}})})).status,'PASS');
 });
 test('hashed JS entry must exist and resolve to same origin',async()=>{
   await expectBroken(entry,{status:404,body:''},/JS entry not available/);
