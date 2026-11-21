@@ -3,6 +3,7 @@
  * Enabled only when all production bindings and Turnstile are configured.
  */
 import { feedbackMaintenanceIsFresh } from "../../src/features/feedback/retention-policy";
+import { feedbackIntakeQuota, feedbackQuotaCutoffs, feedbackQuotaInsertSql, feedbackInsertOutcome } from "../../src/features/feedback/intake-quota";
 
 const validKinds = new Set(["recipe_error", "improvement", "new_recipe", "technical", "other"]);
 const validLocales = new Set(["fi", "en", "sv", "th"]);
@@ -13,7 +14,7 @@ const MAX_BODY_BYTES = 20_000;
 
 export interface FeedbackDatabase {
   prepare(sql: string): {
-    bind(...values: (string | null)[]): { run(): Promise<{ success: boolean }> };
+    bind(...values: (string | null | number)[]): { run(): Promise<{ success: boolean; meta?: { changes: number } }> };
     first(): Promise<unknown>;
   };
 }
@@ -178,21 +179,26 @@ export async function handleFeedback(
     return json(403, { error: "verification_failed" });
   }
   const reference = crypto.randomUUID();
+  let outcome: ReturnType<typeof feedbackInsertOutcome>;
   try {
-    // No IP address, User-Agent, token, cookies, analytics ID or raw link query is stored.
-    // Token hash stops concurrent replay even before Turnstile's global replay state converges.
-    await env.FEEDBACK_DB.prepare(
-      "INSERT INTO feedback_submissions " +
-      "(reference, kind, locale, page_path, recipe_id, message, contact_email, token_sha256) " +
-      "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-    ).bind(
+    const cutoff = feedbackQuotaCutoffs();
+    // Both rolling global limits are enforced within the same atomic SQLite
+    // INSERT/SELECT. A separate COUNT followed by INSERT would race under load.
+    // No IP address, User-Agent, visitor token, cookies or raw query is stored.
+    const written = await env.FEEDBACK_DB.prepare(feedbackQuotaInsertSql).bind(
       reference, input.kind, input.locale, input.pagePath, input.recipeId,
       input.message, input.email, await sha256(input.turnstileToken),
+      cutoff.quarterHour, feedbackIntakeQuota.quarterHourMax,
+      cutoff.rollingDay, feedbackIntakeQuota.rollingDayMax,
     ).run();
+    outcome = feedbackInsertOutcome(written);
   } catch {
     return json(503, { error: "storage_unavailable" });
   }
+  if (outcome === "full") return json(429, { error: "quota_exceeded" });
+  if (outcome !== "stored") return json(503, { error: "storage_unavailable" });
   return json(202, { reference });
+
 }
 
 export async function onRequestPost(context: FeedbackFunctionContext): Promise<Response> {
