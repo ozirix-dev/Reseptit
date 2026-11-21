@@ -70,3 +70,4 @@ Lämmin, pehmeä sinappikastike kinkulle ilman paistolientä.
 
 - Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn tuottama havainnekuva tässä haarassa; toimituksellinen kuvakatselmointi puuttuu.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.k-ruoka.fi/reseptit/kastike-kinkulle-ilman-paistolienta
+- Marttojen testatussa kinkunkastikkeessa käytetään vehnäjauhoa, sinappia ja kermaa sekä kinkun paistolientä. Tässä versiossa käytetään sen sijaan kasvislientä, joten reseptit eivät ole identtisiä. https://www.martat.fi/reseptit/kinkun-kastike/

@@ -65,3 +65,4 @@ A warm, gentle mustard sauce for ham that needs no roasting juices.
 
 - Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The AI-generated illustration is now in this branch, but editorial image review is pending.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kastike-kinkulle-ilman-paistolienta
+- Martat's tested ham gravy uses wheat flour, mustard, cream and ham drippings. This version uses vegetable stock instead, so the recipes are not identical. https://www.martat.fi/reseptit/kinkun-kastike/

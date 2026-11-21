@@ -61,6 +61,7 @@ A mild milk-based sauce with chopped hard-boiled eggs and fresh dill.
 ## Notes
 
 - This is an editorial draft; nutrition and glycaemic load assessments and final image approval are pending.
-- Preparation reference: https://www.valio.fi/reseptit/munakastike/
+- Preparation reference: https://www.martat.fi/reseptit/kananmunakastike/
 
 - The AI-generated image is included in this branch, pending approval.
+- Martat's tested egg sauce uses milk, butter, wheat flour and cooked eggs. The earlier Valio reference was a different cream-based sauce. https://www.martat.fi/reseptit/kananmunakastike/

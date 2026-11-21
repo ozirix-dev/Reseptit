@@ -61,6 +61,7 @@ En mild mjölkbaserad sås med hackade hårdkokta ägg och färsk dill.
 ## Anteckningar
 
 - Detta är ett redaktionellt utkast; näringsvärden, glykemisk belastning och slutligt bildgodkännande återstår.
-- Preparation reference: https://www.valio.fi/reseptit/munakastike/
+- Preparation reference: https://www.martat.fi/reseptit/kananmunakastike/
 
 - Den AI-genererade bilden finns i denna gren och inväntar granskning.
+- Marttas provlagade äggsås använder mjölk, smör, vetemjöl och kokta ägg. Den tidigare Valio-källan gällde en annan gräddbaserad sås. https://www.martat.fi/reseptit/kananmunakastike/

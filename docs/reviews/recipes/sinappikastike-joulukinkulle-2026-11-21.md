@@ -9,3 +9,11 @@ Päiväys: 21.11.2026. Tila: DRAFT / HOLD, ei julkaistu.
 - Reseptikohtainen ravinto-/GK-evidenssi ja hyväksyntä puuttuvat. EI KETO-/GLUTEENITON-VÄITETTÄ.
 - GitHub-kuva: `kuvat/alkuruoat/sinappikastike-joulukinkulle.webp`, 960 × 640, tekoälyllä tehty havainnekuva. Kuvituksen vastaavuus vielä hyväksyttävä.
 - Nelikielisten merkitysvastaavuuden dokumentoitu loppukatselmointi ja CI sekä Repo Guard -julkaisuportti puuttuvat.
+
+## Riippumaton vertailulähde – Chat 3, 21.11.2026
+
+Marttojen testatussa kinkunkastikkeessa käytetään vehnäjauhoa, sinappia ja kermaa sekä kinkun paistolientä. Tässä versiossa käytetään sen sijaan kasvislientä, joten reseptit eivät ole identtisiä.
+
+Lähde: https://www.martat.fi/reseptit/kinkun-kastike/
+
+Tämän eri suhtein laaditun Recipavo-ohjeen fyysistä kokkikokeilua ei väitetä tehdyksi; ravinto/GK ja lopullinen katselmointi edelleen kesken.

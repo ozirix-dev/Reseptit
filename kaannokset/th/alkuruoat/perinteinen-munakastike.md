@@ -61,6 +61,7 @@ ingredients:
 ## หมายเหตุ
 
 - นี่คือฉบับร่าง ยังไม่ได้ประเมินโภชนาการ ภาระน้ำตาล หรืออนุมัติภาพประกอบขั้นสุดท้าย
-- Preparation reference: https://www.valio.fi/reseptit/munakastike/
+- Preparation reference: https://www.martat.fi/reseptit/kananmunakastike/
 
 - ภาพประกอบจาก AI อยู่ในสาขานี้แล้ว แต่ยังไม่ได้รับการอนุมัติ
+- สูตรซอสไข่ที่ทดสอบโดย Martat ใช้นม เนย แป้งสาลีและไข่ต้ม ส่วนสูตร Valio ที่อ้างก่อนหน้านี้เป็นซอสครีมคนละแบบ. https://www.martat.fi/reseptit/kananmunakastike/
