@@ -20,6 +20,8 @@ test("feedback categories, accessible copy and pre-activation privacy exist in e
     assert.ok(labels.intro.length > 30);
     assert.ok(labels.disabled.length > 10);
     assert.ok(labels.sensitive.length > 20);
+    assert.ok(labels.quotaFull.length > 45, locale);
+    assert.match(labels.quotaFull, /[^\s]/u);
     assert.ok(feedbackPrivacy[locale].body.length > 150);
     for (const kind of feedbackKinds) assert.ok(labels.kinds[kind]);
   }
