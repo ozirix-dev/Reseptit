@@ -41,6 +41,7 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
     assert.equal(source.language, locale);
     assert.equal(source.status, "published");
     assert.equal(source.servings, 4);
+    if (locale === "fi") assert.equal(source.ingredients[3].item, "kananmunaa kuoretta", "historical raw label stays sealed");
     assert.equal(source.time_total_min, 100);
     const matches = siteContent.recipes.filter(r => r.recipeId === id && r.locale === locale);
     assert.equal(matches.length, 1);
