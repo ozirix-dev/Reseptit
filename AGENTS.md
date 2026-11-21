@@ -70,6 +70,26 @@
   verification, and applicable F25, GK, nutrition, translation and publication
   safeguards. Measure timings for equivalent check sets.
 
+## Recipe review without an in-house test kitchen
+
+- An in-house test kitchen is not available. Do **not** make the author's own
+  physical cooking trial a blanket condition for publication. A recipe may
+  advance on documented independent published preparation evidence, preferably
+  a tested recipe by an identified cook/author, with quantities, ingredient
+  states, timing and method independently cross-checked against food-safety
+  guidance where relevant.
+- Record the recipe author's/source's tested claim separately from Recipavo's
+  editorial adaptation: **never** claim Recipavo prepared, tasted, weighed or
+  laboratory-tested a dish without that evidence. Distinguish source-backed
+  steps from newly invented proportions or changed cooking methods.
+- A missing in-house test is **not by itself** a HOLD. Materially unsupported
+  quantities, unsafe handling, unverified fermentation, incompatibility between
+  method and source, or unsupported nutrition/GK remain HOLD; do not bypass
+  quarantine, translation, image, evidence or Repo Guard release gates.
+- For issue #404's five held drafts, follow the source-evidence review and
+  explicit discrepancies in
+  `docs/reviews/issue404-b-five-draft-recipes/source-review-without-kitchen.md`.
+
 ## Recipe translation quality
 
 - Publish recipe translations after automated checks and a Codex comparison
