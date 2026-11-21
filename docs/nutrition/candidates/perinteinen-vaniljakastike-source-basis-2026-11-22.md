@@ -52,3 +52,7 @@ Kaava per ainesosa = syötävä massa (g) × ilmoitettu ravintotekijä (g/100 g)
 ## Täsmäsidokset 22.11.2026
 
 Uusi FI-lähteen SHA-256: `87d3a19d59f5a5cad0444bbf1aaa62d330bea230d6558f61d97895a66b3af771`. Uusi `recipeNutritionInputHash`: `49e5a1e7149059baaf6b39e13b534ed179cacd632041eb07e8442d7b06cf11c7`. Kaikki neljä kieliversiota ilmoittavat täysmaidon nyt **450 g**, eivät vanhaa 450 ml. Vaniljasokerin polyolit ja kuituristiriita estävät edelleen varsinaisen ravintoevidenssin hyväksynnän. Ei julkisia makroarvoja, PR yhä Draft/HOLD.
+
+## Valmistuksen saantotarkennus 22.11.2026
+
+Neljän kieliversion valmistusvaiheessa 3 poistettiin valinnainen kastikkeen siivilöinti. Pienet paakut vatkataan tasaisiksi, eikä munan tai tärkkelyksen kiintoainetta ole tarkoitus poistaa. Tämä tukee lähdesidonnaisen ravintolaskennan punnitun ainesmassan säilymistä, mutta ei todista laboratoriotason lämpökäsittelyretentiota. FI-reseptin uusi SHA-256 on `ec655927a2ae1370f6283740c1bc533e81970926f80705a875dd75653e10fe28`; ravintolaskennan `recipeNutritionInputHash` pysyi samana, koska ainesmäärät ja annokset eivät muuttuneet. Vaniljasokerin polyolitieto ja kuituarvojen ristiriita ovat yhä ratkaisematta. **Ei julkisia ravintoarvoja, HOLD jatkuu.**
