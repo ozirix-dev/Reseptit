@@ -250,8 +250,8 @@
     "carbohydrate": 8.513,
     "protein": 2.734,
     "fat": 12.742,
-    "fibre": 0.695,
-    "polyols": 0
+    "fibre": null,
+    "polyols": null
   },
   "important": "Tämä EI ole keiton arvioitu kokonaishiilihydraatti, proteiini tai rasva. 300 g sieniä ja 800 g kasvislientä ei sisälly osasummaan. Ei saa kopioida julkaistuun metatietoon.",
   "unresolved_components": [
@@ -291,5 +291,26 @@
     "approved_fat_per_portion_g": null,
     "glycemic_load": null
   },
-  "publication_gate": "HOLD: Sienilajin tunnistus sekä sienikohtainen koostumustietue, liemen tuotekoostumus, tuotteiden säilytys ja ravintolaskennan hyväksyntä. Lihaa/kalaa sisältämätön kasvisliemi tarkistettava, jos kasvisväite tehdään."
+  "publication_gate": "HOLD: Sienilajin tunnistus sekä sienikohtainen koostumustietue, liemen tuotekoostumus, tuotteiden säilytys ja ravintolaskennan hyväksyntä. Lihaa/kalaa sisältämätön kasvisliemi tarkistettava, jos kasvisväite tehdään.",
+  "quantified_rows_subtotals_per_portion_g": {
+    "carbohydrate": 8.513,
+    "protein": 2.734,
+    "fat": 12.742,
+    "fibre": 0.695,
+    "polyols": 0
+  },
+  "coverage": {
+    "ingredient_rows": 9,
+    "has_unmapped_ingredients": true,
+    "unmapped_ingredient_lines": [
+      1,
+      5
+    ],
+    "missing_nutrient_components": [
+      "fibre",
+      "polyols"
+    ],
+    "all_public_macro_values_withheld": true
+  },
+  "missing_values_rule": "Null means not established; 0 is allowed only for a measured/explicitly sourced value. Quantified-row subtotals exclude unmapped ingredients and unknown components, and cannot be used as complete-recipe estimates."
 }
