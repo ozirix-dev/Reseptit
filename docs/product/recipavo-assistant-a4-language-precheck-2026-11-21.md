@@ -1,10 +1,10 @@
 # Keittiöapuri A4.1 – 80 kieli-intentin AI-esikatselmointi (21.11.2026)
 
-**Seuranta:** [issue #342](https://github.com/ozirix-dev/Reseptit/issues/342)  
-**Pohja:** Reseptit `main` `c5fc649a937a8a7df7a5c90362700f81ea42dd9c`  
-**Edellinen A4-kysymystiedosto:** `site/src/features/assistant/eval-cases.ts` Git-blob `0b509b3ba15bc47a7a888ccf6ac87c4dad8b97a3`  
-**Korjattu kysymystiedosto:** Git-blob `ca9254336fd50e144f9967f9abf7d674642e897c`  
-**Tekijä:** ChatGPT, **AI-semantiikkaesikatselmointi**, ei äidinkielinen ihmiskatselmoija.  
+**Seuranta:** [issue #342](https://github.com/ozirix-dev/Reseptit/issues/342)
+**Pohja:** Reseptit `main` `c5fc649a937a8a7df7a5c90362700f81ea42dd9c`
+**Edellinen A4-kysymystiedosto:** `site/src/features/assistant/eval-cases.ts` Git-blob `0b509b3ba15bc47a7a888ccf6ac87c4dad8b97a3`
+**Korjattu kysymystiedosto:** Git-blob `ca9254336fd50e144f9967f9abf7d674642e897c`
+**Tekijä:** ChatGPT, **AI-semantiikkaesikatselmointi**, ei äidinkielinen ihmiskatselmoija.
 **Hyväksyntä:** `PENDING` kaikille 80 promptille; ei APPROVED-merkintöjä, eikä maksettujen kielimallien vertailua.
 
 ## Päätös
