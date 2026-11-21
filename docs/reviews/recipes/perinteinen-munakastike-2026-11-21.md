@@ -16,3 +16,9 @@ Marttojen testattu kananmunakastike käyttää maitoa, voita, vehnäjauhoja ja k
 Lähde: https://www.martat.fi/reseptit/kananmunakastike/
 
 Tämän eri suhtein laaditun Recipavo-ohjeen fyysistä kokkikokeilua ei väitetä tehdyksi; ravinto/GK ja lopullinen katselmointi edelleen kesken.
+
+## Allergeeni- ja käsittelyhuomio – Chat 3, 21.11.2026
+
+Sisältää **kananmunaa, maitoa ja vehnää**. Käytä läpikypsiä, kuorittuja kananmunia; pidä kastike kuumana tarjoiltaessa tai jäähdytä nopeasti kylmäsäilytykseen.
+
+Perustana Ruokaviraston allergeeniluettelo: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit . Etikettien ja säilytyksen arviointia jatketaan; ei julkaisuhyväksyntää. FI/EN/SV/TH päivitetty.
