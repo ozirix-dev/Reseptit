@@ -238,3 +238,32 @@ test("issue 404 B5: source exactness does not authorize rice nutrition or commer
     assert.equal(rice.comparatorOnly, true);
   }
 });
+
+test("issue 404 B5: branded coconut milk label does not resolve source quantity or nutrition HOLD", async () => {
+  const evidence = await readJsonCached(evidenceFile) as Preflight;
+  const xoi = evidence.recipes.find((r) =>
+    r.recipeId === "vietnamilainen-xoi-maapahkinalla-punnittu-v2");
+  assert.ok(xoi);
+  const coconut = xoi.ingredients.find((r) => r.item === "makeuttamatonta kookosmaitoa");
+  assert.ok(coconut);
+  assert.equal(coconut.amount, 20);
+  assert.equal(coconut.unit, "g");
+  assert.equal(coconut.reasonCode, "PRODUCT_SPEC_PENDING");
+  assert.equal(coconut.candidateRecord?.recordId, "afcd-F002991-release-3");
+  assert.equal(coconut.externalEvidence?.ean, "5701058014845");
+  assert.equal(coconut.externalEvidence?.declaredUnit, "PER_100_G");
+  assert.equal(coconut.externalEvidence?.polyolsStatus, "NOT_REPORTED");
+  assert.equal(coconut.externalEvidence?.sourceIngredientsAmount, "20 g");
+  assert.equal(coconut.externalEvidence?.sourcePreparationAmount, "20 ml");
+  assert.equal(coconut.externalEvidence?.gramsToMillilitresConversionApproved, false);
+  assert.equal(coconut.externalEvidence?.recipeProductMatchApproved, false);
+  assert.equal(coconut.externalEvidence?.approval, "RESEARCH_ONLY_PRODUCT_NOT_SELECTED");
+  const review = await readFile(path.join(root,
+    "docs/nutrition/issue404-glutinous-rice-source-review-2026-11-21.md"), "utf8");
+  assert.match(review, /## 6\. Xôin kookosmaidon/);
+  assert.match(review, /5701058014845/);
+  assert.match(review, /POLYL = 0/);
+  assert.equal(xoi.status, "WITHHELD_SOURCE_INCOMPLETE");
+  assert.equal(evidence.macrosAuthorized, false);
+  assert.equal(evidence.publicationAuthorized, false);
+});

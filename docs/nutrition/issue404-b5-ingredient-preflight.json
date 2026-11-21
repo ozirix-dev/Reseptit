@@ -624,10 +624,25 @@
           "unit": "g",
           "item": "makeuttamatonta kookosmaitoa",
           "reasonCode": "PRODUCT_SPEC_PENDING",
-          "reason": "AFCD F002991 kuvaa tavallista tölkkikookosmaitoa; lähde ei yksilöi tuotetta eikä mahdollista 20 g / 20 ml ristiriitaa.",
+          "reason": "AFCD F002991 kuvaa geneeristä tölkkikookosmaitoa. Urtekram 200 ml EAN 5701058014845 on eri, yksilöity per 100 g pakkausmerkinnän tutkimusehdokas, mutta VNIFood ei nimeä tuotetta. Lähteen 20 g aineslistassa / 20 ml työohjeessa, tuotteen valinta ja puuttuvat polyolit ovat HOLD; ei ravintolaskentaa.",
           "candidateRecord": {
             "calculationPath": "docs/nutrition/calculations/karibia-kookosriisi-pavuilla.json",
             "recordId": "afcd-F002991-release-3"
+          },
+          "externalEvidence": {
+            "product": "Urtekram Luomu Kookosmaito Fairtrade 200 ml",
+            "ean": "5701058014845",
+            "marketer": "Midsona Finland Oy",
+            "manufacturerProductUrl": "https://www.urtekram.fi/Ruoka/kookos/kookosmaito/",
+            "retailerProductUrl": "https://www.k-ruoka.fi/kauppa/tuote/urtekram-kookosmaito-200ml-luomu-5701058014845",
+            "declaredUnit": "PER_100_G",
+            "labelledCarbohydratesIncludePolyols": true,
+            "polyolsStatus": "NOT_REPORTED",
+            "sourceIngredientsAmount": "20 g",
+            "sourcePreparationAmount": "20 ml",
+            "gramsToMillilitresConversionApproved": false,
+            "recipeProductMatchApproved": false,
+            "approval": "RESEARCH_ONLY_PRODUCT_NOT_SELECTED"
           }
         },
         {
