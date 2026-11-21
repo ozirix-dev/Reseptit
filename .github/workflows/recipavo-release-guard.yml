@@ -61,9 +61,12 @@ jobs:
       - name: Test post-deploy verifier strips preview env and restores it
         shell: pwsh
         run: |
+          $tokens = $null
+          $errors = $null
           $ast = [System.Management.Automation.Language.Parser]::ParseFile(
-            (Join-Path (Get-Location) 'scripts/recipavo-pages-production.ps1'),
-            [ref]$null, [ref]$null)
+            (Resolve-Path 'scripts/recipavo-pages-production.ps1'),
+            [ref]$tokens, [ref]$errors)
+          if ($errors.Count -gt 0) { throw 'PowerShell parse failed' }
           foreach ($name in @('Need', 'Verify-Production')) {
             $nodes = @($ast.FindAll({ param($node)
               $node -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $node.Name -eq $name
@@ -74,8 +77,8 @@ jobs:
           # Do not invoke real npm or Cloudflare. A local function mocks npm.cmd.
           $script:wasCalled = $false
           function npm.cmd {
-            if ($env:RECIPAVO_BUILD_TARGET -ne 'production' -or
-                $null -ne [Environment]::GetEnvironmentVariable('RECIPAVO_PREVIEW_ORIGIN','Process')) {
+            $childPreview = [Environment]::GetEnvironmentVariable('RECIPAVO_PREVIEW_ORIGIN','Process')
+            if ($env:RECIPAVO_BUILD_TARGET -ne 'production' -or $null -ne $childPreview) {
               throw 'Production verify inherited preview settings'
             }
             $script:wasCalled = $true
