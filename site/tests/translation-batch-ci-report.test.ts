@@ -101,8 +101,7 @@ test("integration: real parser partitions candidate, stale locale and FI HOLD wi
         await writeFile(path.join(root, targetPath), raw);
         const parsed = parseMarkdown(raw);
         assert.ok(parsed);
-        const hash = semanticHash({path: targetPath,
-          data: recipeFrontmatterSchema.parse(parsed.data), content: parsed.content});
+        const hash = semanticHash({data: recipeFrontmatterSchema.parse(parsed.data), content: parsed.content});
         ledger[id][locale] = hash;
         semanticEvidence[id + ":" + locale] = {
           source_hash: fiHash, translation_hash: hash,
