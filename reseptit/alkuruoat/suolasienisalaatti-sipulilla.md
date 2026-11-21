@@ -19,7 +19,7 @@ tags:
 ingredients:
   - amount: 350
     unit: "g"
-    item: "oikein käsiteltyjä syötäviä suolasieniä"
+    item: "syöntivalmiita, lajin mukaisesti esikäsiteltyjä suolattuja rouskuja"
   - amount: 70
     unit: "g"
     item: "punasipulia"
@@ -48,7 +48,7 @@ Suolasienisalaatti sipulilla on toimituksellinen suomalainen alkuruokaluonnos. M
 
 ## Valmistus
 
-1. Varmista, että suolasienet on tunnistettu varmasti ja esikäsitelty kunkin sienilajin vaatimalla tavalla. Liota liian suolaisia sieniä kylmässä vedessä ja valuta hyvin.
+1. Käytä vain varmasti tunnistettuja, lajin edellyttämällä tavalla esikäsiteltyjä ja suolattuja rouskuja. Liota liian suolaisia sieniä kylmässä vedessä ja valuta hyvin. Älä käytä korvasieniä tässä reseptissä.
 2. Purista sienistä nestettä ja hienonna ne. Hienonna sipuli ja tilli.
 3. Sekoita smetana, ranskankerma ja sitruunamehu. Lisää sienet, sipuli, tilli ja mustapippuri.
 4. Anna maustua jääkaapissa noin 20 minuuttia. Tarkista suolaisuus ennen tarjoamista.
@@ -59,4 +59,6 @@ Suolasienisalaatti sipulilla on toimituksellinen suomalainen alkuruokaluonnos. M
 - **Lähde- ja valmistusnäyttö:** Mittasuhteet ovat Chat-4:n alustava toimituksellinen ehdotus. Ulkoiset valmistuslähteet, ainesosien olomuoto, saanto ja ajat varmennettava ennen julkaisua.
 - **Ruokaturva:** Sienilaji ja sen vaadittu esikäsittely on varmistettava. Suolaus ei poista sienten mahdollisia myrkkyjä. Käytä vain turvallisesti käsiteltyjä ruokasieniä.
 - **Ravintoarvot:** Ei laskettu; numeerisia makroja ei julkaista. GK: ei määritetty.
-- **Kuva ja käännökset:** Ei vielä tuotettu; WebP, kuvan varmennus, kieliversiot ja niiden katselmointinäyttö vaaditaan erikseen.
+- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedostoa ei vielä ole Git-haarassa eikä reseptin `image`-metatiedoissa. Kuva on tarkistettava ennen julkaisua. EN/SV/TH puuttuvat.
+
+- **Sieniturva:** Ruokavirasto: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-kasittely/ . Rouskujen lajikohtainen esikeitto ja syötäväksi soveltuvuus tarkistettava; suolaus tai liotus yksin ei tee myrkyllistä lajia turvalliseksi.

@@ -48,7 +48,7 @@ Muikunmäti-rieskarullat on toimituksellinen suomalainen alkuruokaluonnos. Mää
 
 ## Valmistus
 
-1. Varmista mädin syöntivalmius, kylmäketju sekä valmistajan käsittely- ja käyttöohjeet.
+1. Käytä vain syöntivalmista muikunmätiä, jonka loisriskin vaatima pakastuskäsittely on tehty ja jonka valmistajan käsittely- ja käyttöohjeet on varmennettu. Pidä mäti kylmässä koko käsittelyn ajan.
 2. Sekoita tuorejuusto ja smetana. Hienonna sipuli ja tilli; lisää ne täytteeseen sitruunamehun kanssa.
 3. Levitä seos rieskoille ohuesti. Jaa mäti päälle ja kääri varovasti tiukoiksi rulliksi.
 4. Kylmennä lyhyesti, leikkaa annospaloiksi ja tarjoa heti kylmänä.
@@ -59,4 +59,6 @@ Muikunmäti-rieskarullat on toimituksellinen suomalainen alkuruokaluonnos. Mää
 - **Lähde- ja valmistusnäyttö:** Mittasuhteet ovat Chat-4:n alustava toimituksellinen ehdotus. Ulkoiset valmistuslähteet, ainesosien olomuoto, saanto ja ajat varmennettava ennen julkaisua.
 - **Ruokaturva:** HOLD: mädin pakastuskäsittely, säilyvyys ja listeriariski vaativat tarkistuksen. Ei sovi sellaisenaan riskiryhmille, jos mäti ei ole turvallisesti kuumennettu; kylmäsäilytys on välttämätön.
 - **Ravintoarvot:** Ei laskettu; numeerisia makroja ei julkaista. GK: ei määritetty.
-- **Kuva ja käännökset:** Ei vielä tuotettu; WebP, kuvan varmennus, kieliversiot ja niiden katselmointinäyttö vaaditaan erikseen.
+- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedostoa ei vielä ole Git-haarassa eikä reseptin `image`-metatiedoissa. Kuva on tarkistettava ennen julkaisua. EN/SV/TH puuttuvat.
+
+- **Ruokavirasto:** Makeanveden muikun mäti on jäädytettävä loisriskin vuoksi ennen kylmäkäyttöä, eikä pakastaminen poista listeriariskiä. https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/jouluvinkkeja/turvallisia-kalaherkkuja-jouluna/ . Ellei pakkauksesta tai myyjältä ole varmuutta, resepti jää HOLD-tilaan.

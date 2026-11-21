@@ -6,7 +6,7 @@ category: alkuruoka
 language: fi
 status: draft
 servings: 8
-time_total_min: 25
+time_total_min: 2910
 difficulty: keskitaso
 main_ingredient:
   - "silli"
@@ -58,7 +58,7 @@ Lasimestarin silli on toimituksellinen suomalainen alkuruokaluonnos. Määrät j
 2. Kuori porkkana ja sipuli; leikkaa ne ja purjo ohuiksi viipaleiksi.
 3. Kiehauta vesi, sokeri, etikka ja mausteet. Jäähdytä liemi täysin.
 4. Lado puhtaaseen kannelliseen astiaan vuorotellen silliä ja kasviksia. Kaada kylmä liemi päälle.
-5. Anna maustua jääkaapissa yön yli. Tarjoa kylmänä.
+5. Anna maustua jääkaapissa noin 2 vuorokautta, kunnes maut ovat tasaantuneet. Tarjoa kylmänä. Tämä on syöntivalmiin sillin uudelleenmaustamista, ei tuoreen kalan säilöntäohje.
 
 ## Muistiinpanot
 
@@ -66,4 +66,6 @@ Lasimestarin silli on toimituksellinen suomalainen alkuruokaluonnos. Määrät j
 - **Lähde- ja valmistusnäyttö:** Mittasuhteet ovat Chat-4:n alustava toimituksellinen ehdotus. Ulkoiset valmistuslähteet, ainesosien olomuoto, saanto ja ajat varmennettava ennen julkaisua.
 - **Ruokaturva:** Luonnos on tarkoitettu vain syöntivalmiille kaupallisille sillifileille. Liemi ei ole tuoreen kalan turvallisen säilönnän ohje. Säilytys ja käyttöaika on tarkistettava.
 - **Ravintoarvot:** Ei laskettu; numeerisia makroja ei julkaista. GK: ei määritetty.
-- **Kuva ja käännökset:** Ei vielä tuotettu; WebP, kuvan varmennus, kieliversiot ja niiden katselmointinäyttö vaaditaan erikseen.
+- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedostoa ei vielä ole Git-haarassa eikä reseptin `image`-metatiedoissa. Kuva on tarkistettava ennen julkaisua. EN/SV/TH puuttuvat.
+
+- **Ajat ja lähde:** Aktiivinen valmistus noin 30 min + kylmämaustuminen noin 48 h. Vertailu: https://www.k-ruoka.fi/reseptit/helppo-lasimestarin-silli (2–3 vrk).
