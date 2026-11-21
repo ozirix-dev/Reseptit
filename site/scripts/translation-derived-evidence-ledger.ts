@@ -46,7 +46,9 @@ export function projectEvidenceLedger(
     for (const locale of locales) {
       const target = item.translations[locale];
       if (!target) continue;
-      if (target.data.recipe_id !== item.id || target.data.language !== locale)
+      if (target.data.recipe_id !== item.id || target.data.language !== locale ||
+          target.data.source_language !== "fi" || target.data.translation_of !== item.id ||
+          (item.source !== null && target.data.source_recipe !== item.source.path))
         throw new Error("Mismatched locale evidence source: " + item.id + ":" + locale);
       const targetHash = semanticHash(target);
       hashes[locale] = targetHash;
