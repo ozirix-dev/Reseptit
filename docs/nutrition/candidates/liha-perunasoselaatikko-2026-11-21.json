@@ -255,5 +255,20 @@
     "approved_fat_per_portion_g": null,
     "glycemic_load": null
   },
-  "publication_gate": "HOLD: vahvista jauhelihan rasva ja maitotyyppi, laske tarvittaessa vaihtoehtoinen 7–10 % skenaario oikealla Fineli-tietueella, tarkista tuotekohtaiset ravintoarvot ja hyväksyntä."
+  "publication_gate": "HOLD: vahvista jauhelihan rasva ja maitotyyppi, laske tarvittaessa vaihtoehtoinen 7–10 % skenaario oikealla Fineli-tietueella, tarkista tuotekohtaiset ravintoarvot ja hyväksyntä.",
+  "quantified_rows_subtotals_per_portion_g": {
+    "carbohydrate": 28.911,
+    "protein": 19.036,
+    "fat": 18.972,
+    "fibre": 2.573,
+    "polyols": 0
+  },
+  "coverage": {
+    "ingredient_rows": 7,
+    "has_unmapped_ingredients": false,
+    "unmapped_ingredient_lines": [],
+    "missing_nutrient_components": [],
+    "all_public_macro_values_withheld": true
+  },
+  "missing_values_rule": "Null means not established; 0 is allowed only for a measured/explicitly sourced value. Quantified-row subtotals exclude unmapped ingredients and unknown components, and cannot be used as complete-recipe estimates."
 }
