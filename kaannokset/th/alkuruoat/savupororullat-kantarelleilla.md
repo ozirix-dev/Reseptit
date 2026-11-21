@@ -36,7 +36,7 @@ ingredients:
     unit: "g"
     item: "กุยช่ายฝรั่ง"
   - amount: 0.25
-    unit: "tl"
+    unit: "ช้อนชา"
     item: "พริกไทยดำ"
 ---
 

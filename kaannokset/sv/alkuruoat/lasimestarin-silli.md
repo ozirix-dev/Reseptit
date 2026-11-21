@@ -39,10 +39,10 @@ ingredients:
     unit: "g"
     item: "socker"
   - amount: 8
-    unit: "kpl"
+    unit: "st"
     item: "hela kryddpepparkorn"
   - amount: 2
-    unit: "kpl"
+    unit: "st"
     item: "lagerblad"
 ---
 

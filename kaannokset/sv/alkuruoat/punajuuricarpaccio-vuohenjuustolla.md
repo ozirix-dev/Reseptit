@@ -39,7 +39,7 @@ ingredients:
     unit: "g"
     item: "färsk timjan"
   - amount: 0.25
-    unit: "tl"
+    unit: "tsk"
     item: "salt"
 ---
 

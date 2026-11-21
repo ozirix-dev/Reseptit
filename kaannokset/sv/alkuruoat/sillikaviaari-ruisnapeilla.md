@@ -21,7 +21,7 @@ ingredients:
     unit: "g"
     item: "ätfärdiga sillfiléer"
   - amount: 2
-    unit: "kpl"
+    unit: "st"
     item: "ägg"
   - amount: 60
     unit: "g"
@@ -39,7 +39,7 @@ ingredients:
     unit: "ml"
     item: "citronsaft"
   - amount: 16
-    unit: "kpl"
+    unit: "st"
     item: "små rågknappar"
 ---
 

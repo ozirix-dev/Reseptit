@@ -36,7 +36,7 @@ ingredients:
     unit: "ml"
     item: "น้ำเลมอน"
   - amount: 0.25
-    unit: "tl"
+    unit: "ช้อนชา"
     item: "พริกไทยดำ"
 ---
 

@@ -39,7 +39,7 @@ ingredients:
     unit: "g"
     item: "ไธม์สด"
   - amount: 0.25
-    unit: "tl"
+    unit: "ช้อนชา"
     item: "เกลือ"
 ---
 

@@ -27,7 +27,7 @@ ingredients:
     unit: "ml"
     item: "mjölk"
   - amount: 2
-    unit: "kpl"
+    unit: "st"
     item: "ägg"
   - amount: 30
     unit: "g"
@@ -38,7 +38,7 @@ ingredients:
     item: "smör"
     note: "till stekning"
   - amount: 0.5
-    unit: "tl"
+    unit: "tsk"
     item: "salt"
   - amount: 120
     unit: "g"

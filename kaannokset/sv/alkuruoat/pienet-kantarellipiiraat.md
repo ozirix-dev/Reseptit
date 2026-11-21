@@ -44,13 +44,13 @@ ingredients:
     unit: "g"
     item: "crème fraîche"
   - amount: 2
-    unit: "kpl"
+    unit: "st"
     item: "ägg"
   - amount: 80
     unit: "g"
     item: "riven ost"
   - amount: 0.5
-    unit: "tl"
+    unit: "tsk"
     item: "salt"
 ---
 
