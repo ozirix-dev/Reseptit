@@ -12,3 +12,7 @@
 ## Korvaava kuva, Chat 3 (21.11.2026)
 
 Vanha vihreitä yrttejä sisältänyt kuva on korvattu havainnekuvalla, joka esittää vaaleankeltaista sileää vaniljakastiketta ja taustalla piirakkaa. `kuvat/jalkiruoat/perinteinen-vaniljakastike.webp`, 960 × 640, 16282 tavua, SHA-256 `6508c960e4858abfd4571303f0d3c5f81499a0f72fbbfb8b7851c9d0baa67734`. Kuva rajattu AI-generoidusta kuvakollaasista; se on edelleen kuvitus eikä koekeittiövalokuva. Alt-tekstit FI/EN/SV/TH päivitetty. Kuva ei ole vielä toimituksellisesti lopullisesti hyväksytty; ravinto/GK ja kielikatselmointi odottavat; HOLD.
+
+## Tärkkelyksen lähdevertailu, Chat 3 (21.11.2026)
+
+Marttojen vaniljakastike https://www.martat.fi/reseptit/vaniljakastike/ perustuu perunajauhoon. Recipavon versio käyttää maissitärkkelystä: riippumattomassa K-Ruoan [keksikorit ja vaniljakastike](https://www.k-ruoka.fi/reseptit/keksikorit) -ohjeessa kastike tehdään maidosta, keltuaisista ja maissitärkkelyksestä. Tämä tukee ainesosayhdistelmää, mutta ei todista juuri Recipavon suhteiden kypsennyslämpötilaa tai saantoa. Näitä ei merkitä testatuksi. Neljä kieliversiota päivitetty; määrät ennallaan, Draft/HOLD jatkuu.

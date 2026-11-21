@@ -62,3 +62,4 @@ ingredients:
 - Preparation reference: https://www.martat.fi/reseptit/vaniljakastike/
 
 - มีภาพ AI เก็บไว้แล้ว แต่ภาพยังไม่ตรงกับสูตรอาหาร ต้องเปลี่ยนก่อนเผยแพร่
+- แหล่งเปรียบเทียบเพิ่มเติมคือซอสวานิลลาสำหรับถ้วยคุกกี้ของ K-Ruoka ซึ่งใช้แป้งข้าวโพดและไข่แดง ส่วนสูตรของ Martat ใช้แป้งมันฝรั่ง ปริมาณและวิธีทำในสูตรนี้ปรับขึ้นใหม่โดย Recipavo https://www.k-ruoka.fi/reseptit/keksikorit

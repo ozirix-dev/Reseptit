@@ -67,3 +67,4 @@ Maidosta, keltuaisesta ja vaniljasta valmistettu kastike mustikkapiirakalle ja o
 - Valmistuksen vertailulähde: https://www.martat.fi/reseptit/vaniljakastike/
 
 - Uusi kuva on tekoälyn luoma havainnekuva sileästä vaniljakastikkeesta; lopullinen toimituksellinen hyväksyntä puuttuu.
+- Lisävertailu: K-Ruoan keksikorien vaniljakastike sisältää maissitärkkelystä ja keltuaisia. Marttojen ohje käyttää sen sijaan perunajauhoa. Tässä reseptissä määrä- ja menetelmämuutokset ovat omia sovituksia. https://www.k-ruoka.fi/reseptit/keksikorit
