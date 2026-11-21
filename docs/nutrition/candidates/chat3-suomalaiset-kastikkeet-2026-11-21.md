@@ -67,3 +67,10 @@ Maito punnitaan 500 g:ksi entisen 500 ml:n sijaan; vastaava FI/EN/SV/TH-ainesmuu
 ## Munakastikkeen lähtömuutos
 
 400 ml täysmaitoa korvattiin 400 g:n punnitulla täysmaidolla, jotta laskenta ei tarvitse oletettua tiheyskerrointa. Kananmuna punnitaan valmiiksi keitettynä ja kuorittuna (120 g), Fineli #8513; valkopippurin 0,3 g vaikutus arvioidaan massaan sidotulla enimmäisvirheellä. 63 ainesosariviä ja neljä kieliversiota säilyvät; ml-rivejä on enää 10.
+
+## Jatkotarkistus 22.11.2026 – vaniljakastikkeen lähdesidonta
+
+- Erillinen [vaniljakastikkeen lähdekohtainen esiselvitys](perinteinen-vaniljakastike-source-basis-2026-11-22.md) tallennettu. Täysmaidon, maissitärkkelyksen, sokerin ja raa'an keltuaisen Fineli-pohjaiset arvot tarkistettu lähdetasolla; Salliselta-vaniljasokerille löytyi valmistajan makroravintoarvoluettelo.
+- **Vaniljasokerin polyolipitoisuutta ei ole merkitty numeerisesti valmistajan ilmoituksessa**, eikä puuttuvaa arvoa saa muuttaa nollaksi. Lisäksi 450 ml täysmaitoa vaatii asianmukaisen massamuunnoksen; MILKWORKS antaa yleiseksi tiheysväliksi 1,028–1,034 g/ml, ei tietyn pakkauksen mittausta.
+- Rajattu laskennallinen koe: 1,030 g/ml tiheydellä kuuden annoksen erässä **15,11 g imeytyvää hiilihydraattia, 3,13 g proteiinia ja 4,18 g rasvaa / annos** tiedossa olevista lähteistä. Nämä **eivät ole hyväksyttyjä ravintoarvokenttiä**. Netto-/kokonais-CHO:n lopulliset lukuarvot ja ravintolaskentatodiste pidätetään edelleen.
+- Tila ei muutu: **4/10 laskentapakettia**, kuudella vielä `nutrition: pending`, kaikki 10 reseptiä ja 40 kielisivua **Draft/HOLD**. Uusia reseptikenttiä tai virallisia katselmointimerkintöjä ei tämän esiselvityksen perusteella lisätty.
