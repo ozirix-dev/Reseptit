@@ -36,7 +36,7 @@
     },
     "nutrition": {
       "status": "pending",
-      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi."
+      "notes": "Six-row source-matched calculation package staged at docs/nutrition/calculations/kermainen-tillikastike.json, inputHash 3c80ddde80a9596d3591b78dd85f970091e5410e6684589de842bd49ca51af4d; independent verification against site/scripts/nutrition-model.ts required before publishing macros or marking this check PASS."
     },
     "glycemic": {
       "status": "unavailable",
