@@ -43,7 +43,7 @@ ingredients:
     unit: "g"
     item: "milk"
   - amount: 2
-    unit: "kpl"
+    unit: "pcs"
     item: "eggs"
   - amount: 10
     unit: "g"

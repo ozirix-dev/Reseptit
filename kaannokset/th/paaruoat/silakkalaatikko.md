@@ -43,7 +43,7 @@ ingredients:
     unit: "g"
     item: "นม"
   - amount: 2
-    unit: "kpl"
+    unit: "ฟอง"
     item: "ไข่ไก่"
   - amount: 10
     unit: "g"

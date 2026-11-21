@@ -1,0 +1,380 @@
+{
+  "schema_version": 1,
+  "workflow": "NON_PUBLIC_NUTRITION_CANDIDATE",
+  "status": "HOLD_NOT_PUBLISHABLE",
+  "calculated_at": "2026-11-21",
+  "prepared_by": "Chat 3 / Kokki-3, lähdepohjainen ainesosalaskenta, ei hyväksytty ravintoarvo",
+  "recipe_id": "silakkalaatikko",
+  "source_path": "reseptit/paaruoat/silakkalaatikko.md",
+  "source_sha256": "e09674e7ec4bb8303a83f032a2da6b8cc3f0817475e5c4bc88a2d687df61ae32",
+  "source_blob_sha": "8a7ca0a3e0152d708dbcf866addf1db784e595f7",
+  "servings": 6,
+  "reference_data": "docs/nutrition/food-records.json",
+  "reference_data_provider": "THL Fineli Release 20, CC BY 4.0",
+  "method": "Raa'an ja syötävän lähtömassan summaharkinta. 2 kananmunan kuoret poistettuna painon oletus 110 g. Kerma/maito/pekoni tuotemerkeittäin vaihtelevat. Ei kypsää saantoa eikä laboratorioarvoja.",
+  "ingredient_rows": [
+    {
+      "line": 1,
+      "ingredient": "kuorittuja perunoita",
+      "recipeAmount": 900,
+      "recipeUnit": "g",
+      "accountedGrams": 900,
+      "conversionBasis": null,
+      "matchQuality": "proxy",
+      "matchNotes": "Finelin vanha, kuorittu peruna; laji ja punnittu syötävä osa täsmennetään tarvittaessa.",
+      "foodRecord": {
+        "id": "fineli-205-release-20",
+        "name": "PERUNA, VANHA, KUORITTU",
+        "url": "https://fineli.fi/fineli/api/v1/foods/205",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 15.5,
+          "protein": 1.88,
+          "fat": 0.114,
+          "fibre": 1.4,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 139.5,
+        "protein": 16.92,
+        "fat": 1.026,
+        "fibre": 12.6,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 2,
+      "ingredient": "ruodottomia silakkafileitä (Itämeren silakka)",
+      "recipeAmount": 350,
+      "recipeUnit": "g",
+      "accountedGrams": 350,
+      "conversionBasis": null,
+      "matchQuality": "direct",
+      "matchNotes": "Itämeren silakkafilee, syötävä osa; tuotteen kalan rasva voi vaihdella saaliin ja vuodenajan mukaan.",
+      "foodRecord": {
+        "id": "fineli-29207-release-20",
+        "name": "SILAKKAFILEE",
+        "url": "https://fineli.fi/fineli/api/v1/foods/29207",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 16,
+          "fat": 8.9,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0,
+        "protein": 56,
+        "fat": 31.15,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 3,
+      "ingredient": "pekonia",
+      "recipeAmount": 150,
+      "recipeUnit": "g",
+      "accountedGrams": 150,
+      "conversionBasis": null,
+      "matchQuality": "proxy",
+      "matchNotes": "Finelin 32 % rasvaa sisältävä pekoni on tuoteproxy; resepti ei määritä pekonin rasvaprosenttia.",
+      "foodRecord": {
+        "id": "fineli-707-2026-10-24",
+        "name": "Pekoni, 32 % rasvaa",
+        "url": "https://fineli.fi/fineli/api/v1/foods/707?c=2034&c2=2168",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 14.2,
+          "fat": 32.4,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0,
+        "protein": 21.3,
+        "fat": 48.6,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 4,
+      "ingredient": "sipulia",
+      "recipeAmount": 100,
+      "recipeUnit": "g",
+      "accountedGrams": 100,
+      "conversionBasis": null,
+      "matchQuality": "direct",
+      "matchNotes": "Keltasipuli geneerinen tieto.",
+      "foodRecord": {
+        "id": "fineli-335-release-20",
+        "name": "SIPULI, KELTASIPULI",
+        "url": "https://fineli.fi/fineli/api/v1/foods/335",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "protein": 1.25,
+          "fat": 0.1,
+          "fibre": 1.2,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 4.8,
+        "protein": 1.25,
+        "fat": 0.1,
+        "fibre": 1.2,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 5,
+      "ingredient": "maitoa",
+      "recipeAmount": 500,
+      "recipeUnit": "g",
+      "accountedGrams": 500,
+      "conversionBasis": null,
+      "matchQuality": "proxy",
+      "matchNotes": "Maidon rasva on reseptissä avoin; käytössä 1,5 % kevytmaidon skenaario.",
+      "foodRecord": {
+        "id": "fineli-684-release-20",
+        "name": "MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG",
+        "url": "https://fineli.fi/fineli/api/v1/foods/684",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "protein": 3,
+          "fat": 1.5,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 24,
+        "protein": 15,
+        "fat": 7.5,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 6,
+      "ingredient": "kananmunaa",
+      "recipeAmount": 2,
+      "recipeUnit": "kpl",
+      "accountedGrams": 110,
+      "conversionBasis": "2 × 55 g assumed edible egg mass; no weighing",
+      "matchQuality": "proxy",
+      "matchNotes": "2 kananmunaa laskettu 2 × 55 g kuorettomana eli 110 g; todellinen syötävä massa punnittava.",
+      "foodRecord": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "url": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "protein": 12.61,
+          "fat": 9.24,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0.33,
+        "protein": 13.871,
+        "fat": 10.164,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 7,
+      "ingredient": "voita vuoan voiteluun",
+      "recipeAmount": 10,
+      "recipeUnit": "g",
+      "accountedGrams": 10,
+      "conversionBasis": null,
+      "matchQuality": "direct",
+      "matchNotes": "Voi vuoan voiteluun.",
+      "foodRecord": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "url": "https://fineli.fi/fineli/api/v1/foods/500",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "protein": 1.19,
+          "fat": 81.3,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0.08,
+        "protein": 0.119,
+        "fat": 8.13,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 8,
+      "ingredient": "tuoretta tilliä",
+      "recipeAmount": 15,
+      "recipeUnit": "g",
+      "accountedGrams": 15,
+      "conversionBasis": null,
+      "matchQuality": "direct",
+      "matchNotes": "Tuore tilli.",
+      "foodRecord": {
+        "id": "fineli-369-release-20",
+        "name": "TILLI, TUORE",
+        "url": "https://fineli.fi/fineli/api/v1/foods/369",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0.9,
+          "protein": 3.69,
+          "fat": 0.8,
+          "fibre": 2.8,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0.135,
+        "protein": 0.554,
+        "fat": 0.12,
+        "fibre": 0.42,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 9,
+      "ingredient": "suolaa",
+      "recipeAmount": 5,
+      "recipeUnit": "g",
+      "accountedGrams": 5,
+      "conversionBasis": null,
+      "matchQuality": "direct",
+      "matchNotes": "Suola lähtömassassa.",
+      "foodRecord": {
+        "id": "fineli-30-2026-10-25",
+        "name": "RUOKASUOLA, JODIOITU",
+        "url": "https://fineli.fi/fineli/api/v1/foods/30?c=2034&c2=2168",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Rel20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 0.63,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0,
+        "protein": 0.032,
+        "fat": 0,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 10,
+      "ingredient": "jauhettua maustepippuria",
+      "recipeAmount": 0.5,
+      "recipeUnit": "g",
+      "accountedGrams": 0.5,
+      "conversionBasis": null,
+      "matchQuality": "unresolved",
+      "matchNotes": "Maustepippurille ei ole tähän reseptiin varmennettua koostumustietuetta.",
+      "foodRecord": null,
+      "knownContributionG": null
+    },
+    {
+      "line": 11,
+      "ingredient": "valkopippuria",
+      "recipeAmount": 0.5,
+      "recipeUnit": "g",
+      "accountedGrams": 0.5,
+      "conversionBasis": null,
+      "matchQuality": "partial",
+      "matchNotes": "Valkopippurin kuidun ja polyolien arvot puuttuvat; ei nollaoletusta.",
+      "foodRecord": {
+        "id": "fineli-11178-2026-10-25",
+        "name": "VALKOPIPPURI",
+        "url": "https://fineli.fi/fineli/api/v1/foods/11178?c=2034&c2=2168",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Rel20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 42.41,
+          "protein": 10.4,
+          "fat": 2.1,
+          "fibre": null,
+          "polyols": null
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0.212,
+        "protein": 0.052,
+        "fat": 0.011,
+        "fibre": null,
+        "polyols": null
+      }
+    }
+  ],
+  "known_component_subtotals_per_portion_g": {
+    "carbohydrate": 28.176,
+    "protein": 20.85,
+    "fat": 17.8,
+    "fibre": 2.37,
+    "polyols": 0
+  },
+  "important": "Known-subtotal ei ole lopullinen annoksen arvo: 0,5 g maustepippurin data puuttuu, valkopippurin kuitu/polyolit puuttuvat, kananmunan paino ja pekonin rasva ovat oletuksia. Ei saa julkaista.",
+  "unresolved_components": [
+    {
+      "line": 10,
+      "ingredient": "jauhettua maustepippuria",
+      "amountG": 0.5,
+      "reason": "Maustepippurille ei ole tähän reseptiin varmennettua koostumustietuetta."
+    },
+    {
+      "line": 11,
+      "ingredient": "valkopippuria",
+      "missingComponent": "fibre"
+    },
+    {
+      "line": 11,
+      "ingredient": "valkopippuria",
+      "missingComponent": "polyols"
+    }
+  ],
+  "critical_product_proxies": [
+    "Pekonin rasva on 32 % Fineli-proxy, ei varmennettu tuote.",
+    "Maidon rasva 1,5 % vain skenaario.",
+    "Kananmunan massa 55 g/kpl arvio, ei mitattu.",
+    "Maustepippuri ja valkopippurin polyoli/kuitu vaativat lähteen."
+  ],
+  "unreported": {
+    "total_carbohydrate_per_portion_g": null,
+    "net_carbohydrate_per_portion_g": null,
+    "kcal_per_portion": null,
+    "approved_protein_per_portion_g": null,
+    "approved_fat_per_portion_g": null,
+    "glycemic_load": null
+  },
+  "publication_gate": "HOLD: silakan tuote, pekoni, maidon rasva ja kananmunan paino täsmennettävä, ravintolaskenta ja toimituksellinen hyväksyntä tehtävä ennen julkaisua."
+}

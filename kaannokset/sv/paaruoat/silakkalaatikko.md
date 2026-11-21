@@ -43,7 +43,7 @@ ingredients:
     unit: "g"
     item: "mjölk"
   - amount: 2
-    unit: "kpl"
+    unit: "st"
     item: "ägg"
   - amount: 10
     unit: "g"
