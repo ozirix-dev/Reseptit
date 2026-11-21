@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kesakeitto",
+  "source_path": "reseptit/paaruoat/kesakeitto.md",
+  "source_sha256": "79b70a59c4ff3b8bd84069964b52a3b5e902664427e20c9959d9c4187ca4e3a8",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/kesakeitto/"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Vertailtu reseptipolkujen nimiin ja avoimiin PR:iin; lopullinen yhtäläisyystarkistus tehtävä julkaisuversiolle."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Ainekset punnittu luonnosversioon; tuotemerkkien, syötävän osuuden ja määrien lopullinen tarkistus puuttuu."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Kuvattu valmistustapa tarkistettu vertailuohjeita vastaan; itsenäinen kokkikelpoisuusarvio tarvitaan."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Riski- ja allergeenihuomiot kirjattu lähdereseptiin, mutta riippumatonta loppuarviointia ei vielä ole."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "Annokset, työvaiheet ja aikataulu ovat luonnosarvioita; valmistus ja välinekapasiteetti tarkistettava."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Reseptiin sidottu riippumaton ravintolaskelma puuttuu eikä nollia tai lähteen eri annoksen arvoja kopioida."
+    },
+    "glycemic": {
+      "status": "pending",
+      "notes": "GI/GK-arvoa ei arvata; puuttuvuus voidaan hyväksyä unavailable-tilassa kirjallisella perustelulla."
+    }
+  },
+  "supplementary_evidence": {
+    "image_path": "kuvat/paaruoat/kesakeitto.webp",
+    "image_review": "Tekoälyn tuottama havainnekuva, joka on vielä hyväksyttävä julkaisuun.",
+    "physical_cook_test": false
+  }
+}
