@@ -36,7 +36,7 @@
     },
     "nutrition": {
       "status": "pending",
-      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi."
+      "notes": "Seven ingredient source lines for egg sauce staged at docs/nutrition/calculations/perinteinen-munakastike.json; six precise Fineli Release20 records (#689, #500, #110, #8513, #369, #30), tiny pepper 0.3g conservatively bounded at <=0.08g any macro per serving and <=0.68kcal. SourceHash 62e86f7d10d579ad254c652fb645c489ddd63449d72432b87ce8fe0c6256ea0c; independent arithmetic estimates {\"carbs_net_per_serving_g\":10.53,\"carbs_total_per_serving_g\":10.9,\"protein_per_serving_g\":7.89,\"fat_per_serving_g\":12.52}; four-language fields not yet updated, nutrition review pending model validation."
     },
     "glycemic": {
       "status": "unavailable",

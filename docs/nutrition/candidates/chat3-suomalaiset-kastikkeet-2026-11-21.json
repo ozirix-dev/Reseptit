@@ -468,10 +468,10 @@
           "unit": "g",
           "item": "täysmaitoa",
           "note": null,
-          "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "food_record": "fineli-689-release-20",
+          "edible_basis": "EDIBLE_GRAMS",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "ALL_EDIBLE_NUTRIENTS_RETAINED"
         },
         {
           "row": 2,
@@ -479,10 +479,10 @@
           "unit": "g",
           "item": "voita",
           "note": null,
-          "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "food_record": "fineli-500-release-20",
+          "edible_basis": "EDIBLE_GRAMS",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "ALL_EDIBLE_NUTRIENTS_RETAINED"
         },
         {
           "row": 3,
@@ -490,10 +490,10 @@
           "unit": "g",
           "item": "vehnäjauhoja",
           "note": null,
-          "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "food_record": "fineli-110-release-20",
+          "edible_basis": "EDIBLE_GRAMS",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "ALL_EDIBLE_NUTRIENTS_RETAINED"
         },
         {
           "row": 4,
@@ -501,10 +501,10 @@
           "unit": "g",
           "item": "kuorittuja kovaksi keitettyjä kananmunia",
           "note": null,
-          "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "food_record": "fineli-8513-release-20",
+          "edible_basis": "EDIBLE_GRAMS",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "ALL_EDIBLE_NUTRIENTS_RETAINED"
         },
         {
           "row": 5,
@@ -512,10 +512,10 @@
           "unit": "g",
           "item": "tuoretta tilliä",
           "note": null,
-          "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "food_record": "fineli-369-release-20",
+          "edible_basis": "EDIBLE_GRAMS",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "ALL_EDIBLE_NUTRIENTS_RETAINED"
         },
         {
           "row": 6,
@@ -523,10 +523,10 @@
           "unit": "g",
           "item": "suolaa",
           "note": null,
-          "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "food_record": "fineli-30-release-20",
+          "edible_basis": "EDIBLE_GRAMS",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "ALL_EDIBLE_NUTRIENTS_RETAINED"
         },
         {
           "row": 7,
@@ -535,13 +535,20 @@
           "item": "valkopippuria",
           "note": null,
           "food_record": null,
-          "edible_basis": "UNRESOLVED",
+          "edible_basis": "EDIBLE_GRAMS",
           "unit_conversion": "DIRECT_GRAMS",
-          "retention": "UNRESOLVED"
+          "retention": "ALL_EDIBLE_NUTRIENTS_RETAINED",
+          "omission_upper_bounds": {
+            "kcal": 0.68,
+            "netCarbohydrate": 0.08,
+            "totalCarbohydrate": 0.08,
+            "protein": 0.08,
+            "fat": 0.08
+          }
         }
       ],
-      "status": "NOT_CALCULATED",
-      "publication": "WITHHELD",
+      "status": "EVIDENCE_ASSEMBLED_PENDING_VALIDATION",
+      "publication": "DRAFT_NOT_APPROVED",
       "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI"
     },
     {
