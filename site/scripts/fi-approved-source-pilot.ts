@@ -32,7 +32,7 @@ export function verifyWrittenApproval(id: string, relativePath: string, sourceTe
   if (review?.schema_version !== 1 || review?.decision !== "approved") errors.push("Review decision is not approved");
   if (review?.recipe_id !== id || review?.source_path !== relativePath) errors.push("Review source identity mismatch");
   if (review?.source_sha256 !== digest) errors.push("FI source SHA-256 differs from written review");
-  if (!/^\\d{4}-\\d{2}-\\d{2}$/.test(review?.reviewed_at ?? "")) errors.push("Review date missing");
+  if (!/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(review?.reviewed_at ?? "")) errors.push("Review date missing");
   if (!String(review?.reviewed_by ?? "").trim()) errors.push("Reviewer attribution missing");
   if (!String(review?.nutrition_evidence ?? "").trim()) errors.push("Nutrition evidence reference missing");
   for (const key of required) {
