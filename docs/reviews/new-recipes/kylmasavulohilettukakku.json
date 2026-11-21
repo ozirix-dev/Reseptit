@@ -2,47 +2,74 @@
   "schema_version": 1,
   "recipe_id": "kylmasavulohilettukakku",
   "source_path": "reseptit/alkuruoat/kylmasavulohilettukakku.md",
-  "source_sha256": "c20e96daa7ae7d40e417812ff675ae9ce32b0552b0a9c6924ea6e27dd207cdc3",
-  "decision": "approved",
-  "reviewed_by": "ChatGPT Chat 4 – AI editorial source review",
+  "source_sha256": "723f2aa681da14558d7cdff48fa2f213b70827bde22bb22f324d5c4317ee1ea7",
+  "decision": "hold",
+  "reviewed_by": "ChatGPT Chat 4 – video-source editorial comparison",
   "reviewed_at": "2026-11-21",
   "origin": {
     "kind": "adaptation",
     "sources": [
       "https://www.facebook.com/reel/4556714911264526",
       "https://patient.info/recipes/high-protein-recipes/smoked-salmon-crpe-torte",
-      "https://www.highcountrysalmon.co.nz/pages/smoked-salmon-crepe-cake"
+      "https://yhteishyva.fi/reseptit/savulohi-lettukakku/2rs9jtHfzNUnexz7u9F2wk",
+      "https://freespiritfood.net/2020/12/27/smoked-salmon-with-crepes-cucumber-and-herbed-creme-fraiche-and-caviar/"
     ]
   },
   "nutrition_evidence": "docs/nutrition/reviews/kylmasavulohilettukakku.md",
   "checks": {
     "duplicates": {
       "status": "pass",
-      "notes": "Nimi, slug ja recipe_id ovat uusia alkuruokahakemistossa; valittu työhaara käsittelee vain yhtä uutta reseptiä. Julkaisureittien automaattinen konfliktitesti tekee vielä lopullisen verifioinnin."
+      "notes": "Uusi identiteetti tässä PR-haarassa; lopullinen reittien ja duplikaattien automaattinen tarkistus on ajettava uudelle HEADille."
     },
     "ingredients": {
-      "status": "pass",
-      "notes": "Patient.info:n julkaisussa 60+60 g jauhoja, 300+30 ml maitoa, 2 kananmunaa, 2 rkl voita, 230 g tuorejuustoa ja 110 g savulohta. Pannun öljy, tilli, kevätsipulin grammamäärä ja kylmäsavulohen valinta on merkitty toimituksellisiksi sovituksiksi."
+      "status": "pending",
+      "notes": "Käyttäjän 44,9 sekunnin Reels-tallenne näyttää kurkkuraasteen, tillin, paksun vaalean täytteen, viipaloidun savulohen ja punaisen mädin. Täytteen tarkka maitotuote ja annosmäärät eivät ilmene videosta. 13 ainesmäärää ovat julkaisulähteiden perusteella laadittu toimituksellinen sovitus, eivät videotodiste."
     },
     "method": {
       "status": "pass",
-      "notes": "Patient.info tukee 30 min taikinalepoa, ohuita noin 18 cm lettuja, jäähdytystä, tuorejuusto-lohitäytettä, kerrostamista ja vähintään 30 min kylmäkiinteytystä. Letumäärä 9–11 on arvio taikinamäärän perusteella, ei suoraan Facebook-videosta."
+      "notes": "Video näyttää ohuet pannulla paistetut letut, kurkun raastamisen ja tillin sekoituksen, kerrostamisen renkaaseen, savulohiviipaleet kerroksissa sekä mätikerroksen päällä. Puristaminen ja kylmäkiinteytys ovat vakauden vuoksi perusteltuja toimituksellisia ohjeita."
     },
     "food_safety": {
       "status": "pass",
-      "notes": "Kylmäsavulohen elintarviketurvallisuus on varmistettu Ruokaviraston listeriaohjeesta; riskiryhmille varoitus ja säilytys mieluiten 0…+3 °C:ssa. Kylmään tarjoiluun sopiva käsittely. Kala, maito, kananmunat ja vehnä nimetty allergeeneiksi."
+      "notes": "Ruokavirasto tunnistaa kylmäsavukalan ja pastöroimattoman mädin listerian riskielintarvikkeiksi; riskiryhmät ja 0–3 °C:n kylmäsäilytys on erotettu tuotteen kuvailevasta käyttötavasta."
     },
     "servings_and_time": {
-      "status": "pass",
-      "notes": "Lähdereseptin tarjoilumäärä on 8, taikinalevon 30 minuuttia ja kylmäkiinteytyksen vähintään 30 minuuttia. Ilmoitettu 110 min kattaa paisto- ja jäähdytysvaiheet konservatiivisesti, eikä väitä fyysistä aikaa mitatuksi."
+      "status": "pending",
+      "notes": "Kahdeksan annosta ja noin 110 minuuttia perustuvat vertailureseptien mittasuhteisiin ja toimitukselliseen työjärjestykseen; videolla ei näkyvissä annoslukua tai mitattuja työaikoja."
     },
     "nutrition": {
       "status": "pass",
-      "notes": "Numeeriset makroarvot on pidätetty, koska Fineli/AFCD-tuotevastaavuudet ja annoskohtainen laskenta puuttuvat; ei vääriä nollia. Rajaus ja vaaditut lisätodisteet ovat docs/nutrition/reviews/kylmasavulohilettukakku.md-tiedostossa."
+      "notes": "Ainesmäärien epävarmuuden vuoksi kaikki makroarvot ovat tarkoituksella poissa. Ei nolla-arvoja eikä väitettyä laskentaa. Ravintorajoitusdokumentti päivitetään tämän version hashille."
     },
     "glycemic": {
       "status": "unavailable",
-      "notes": "Vehnäjauhoa sisältävälle lettukakulle ei ole reseptikohtaisesti hyväksyttyä GI-evidenssiä eikä GK-laskentaa. Sivulla käytetään vain GK: ei määritetty; julkaisuun ei liitetä numeerista arvioita."
+      "notes": "Vehnälettukakun GI tai GK ei ole reseptikohtaisesti varmennettu. Ei numeerista arviota, gluteeniton- eikä keto-väitettä."
     }
-  }
+  },
+  "video_evidence": {
+    "source": "Käyttäjän lähettämä 44,863979 s näyttötallenne 2026-11-21, Facebook Reels Snack Porch",
+    "confirmed_visuals": [
+      "paistettu lettu pannulla",
+      "tuorekurkun raastaminen",
+      "tillin hienontaminen",
+      "valkoisen paksun täytteen, kurkun ja tillin sekoittaminen",
+      "kerrostus vuokarenkaassa",
+      "viipaloitu savulohi kerroksissa",
+      "oranssinpunainen kalanmäti pinnalla",
+      "leikkaus annosviipaleeksi"
+    ],
+    "unknown": [
+      "kerman tai tuorejuuston tarkka laatu",
+      "kaikki tarkat ainesmäärät",
+      "mädin kalalaji",
+      "valmistuksen mitattu kokonaisaika"
+    ],
+    "note": "Tämä havaintoluettelo on käyttäjän videosta, ei kilpailijan reseptin kopio. Valmistuskuvan aiempi versio ei esitä mätipintaa eikä sovellu tämän lopulliseksi kuvitukseksi."
+  },
+  "release_blockers": [
+    "Valmiin täytteen ainesmäärien ja tuotelaadun lähde- tai toimituksellinen hyväksyntä",
+    "Videon mukaista mätikoristelua näyttävä WebP ja sen taltiointi samaan GitHub-työhaaraan",
+    "GitHub Actionsin SHA-256-sidottu image-inputs -paketti: uusi kuva ei ole varmennetussa kuva-juuressa",
+    "Täsmällisen HEADin hyväksytty CI ennen Ready-tilaa"
+  ]
 }
