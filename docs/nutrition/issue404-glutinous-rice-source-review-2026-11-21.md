@@ -55,3 +55,53 @@ Repon AFCD **F002991** vastaa geneeristä tölkkikookosmaitoa (regular fat), mut
 | Xôin 20 g kookosmaitoa | geneerinen AFCD F002991 on saatavilla vertailuun | nimetty tuote, **20 g vs 20 ml** ja tuotteen hiilihydraattisemantiikka |
 
 **Päätös:** tähän erään on löytynyt täsmällinen **tahmariisin lähde-ehdokas** ja uusia tieteellisiä käsittelyrajoja; **ei** neljää hyväksyttyä makroa kummallekaan reseptille. Alkuperäiset viisi jäävät karanteeniin, viisi FI-versiota DRAFT/HOLDiin, kuvat/käännökset/GK ennalleen. Tämä tutkimus ei valtuuta Cloudflare-deployta. Julkaisulaskentaa ei ole vielä perusteltua aloittaa ilman yllä mainittuja tuotteita ja retentiotietoja.
+
+
+## 5. Tuotepakkausmerkintään perustuva vaihtoehtoinen lähdepolku (21.11.2026)
+
+**Uusi täsmällinen tuote-ehdokas; EI RAVINTOARVO- TAI JULKAISUHYVÄKSYNTÄÄ.**
+[Elatukun / maahantuoja Cemet Oy:n tuotetiedot: Royal Thai Glutinous Rice / Tahmeariisi 1 kg](https://www.elatukku.fi/teolliset-elintarvikkeet/royal-thai-glutinous-rice-tahmeariisi-1kg/p/18885/)
+yksilöivät 100-prosenttisen thaimaalaisen tahmariisin, **EAN 8717677860876**.
+Tuoteluettelossa ilmoitetaan seuraavat ravintoarvot **per 100 g tuotetta**:
+
+| Tuoteluettelon ilmoitus | Arvo / 100 g |
+| --- | ---: |
+| Hiilihydraatit | 80 g |
+| Kuitu | 0,6 g |
+| Proteiini | 6,4 g |
+| Rasva | 1,0 g |
+| Energia | 1 458 kJ / 355 kcal |
+
+Nämä ovat **nimetyn suomalaisessa jakelussa olevan tuotteen myyjän ilmoittamia
+pakkausarvoja**, eivät Thai FCD A22:n tutkimusarvoja eikä VNIFoodin nimeämän
+riisituotteen todennus. Myös toisen pakkauskoon tai tuotteen ilmoitettu
+ravintosisältö voi erota; tuotetunnus ja pakkauskohtainen versio on säilytettävä.
+Varsinainen pakkauksen etiketti, valmistajan tuote-erä ja merkinnän ajantasaisuus
+on vielä varmennettava ennen tuotetietueen hyväksyntää.
+
+**Polyolit ja kaksi erilaista hiilihydraattikenttää.** [EU:n asetuksen
+1169/2011 liitteen I kohtien 7–9 mukaan](https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng)
+ravintoarvomerkinnän *hiilihydraatit* sisältävät myös polyolit; kuitu
+määritellään erikseen. Elatukun lista **ei ilmoita polyoleja eriteltyinä**.
+Sen 80 g:n hiilihydraattimerkintä ei siten ole automaattisesti Recipavon
+\`carbs_net_per_serving_g\`-arvo, eikä puuttuvasta polyolirivistä seuraa
+\`POLYL = 0\`. Merkitse \`POLYL = NOT_REPORTED\` tutkimuksessa, kunnes
+tuotteen valmistajalta tai toisesta soveltuvasta, nimenomaan samaa tuotetta
+koskevasta lähteestä saadaan riittävä tieto.
+
+**Oikeusraja.** Tämä tuote-ehdokas on eri lähdepolku kuin Thai FCD:n
+tekijänoikeudella suojatun tutkimustietokannan kopiointi kaupalliseen
+käyttöaineistoon. Tuoteluettelon löytyminen **ei** anna Thai FCD:n
+kaupallisen käytön lupaa eikä yksin ratkaise myöskään tuotetietojen
+uudelleenjulkaisun ehtoja. Tuotekortin tiedot säilytetään tässä
+lähdeviitteenä, ei lisätä \`docs/nutrition/food-records.json\`-aineistoon.
+
+**Seuraava kelvollinen etenemistapa:** (1) varmista nimettyä EAN-tuotetta
+vastaava alkuperäinen pakkaus ja hiilihydraatin/polyolien käsittely;
+(2) päätä erikseen, käytetäänkö juuri tätä riisiä FI-reseptiehdokkaassa,
+äläkä oleta yleisen tahmariisin automaattista vastaavuutta;
+(3) dokumentoi raaka-/kypsäsaanto ja mahdollinen hävikki, muut raaka-aineet
+sekä xôin maapähkinän noin 15 minuutin esikeiton retentio;
+(4) hyväksytä neljän ravintokentän laskelma ja julkaisun muut portit vasta
+kokonaisen lähdeketjun valmistuttua. **Molemmat tahmariisia sisältävät
+reseptit pysyvät DRAFT/HOLDissa ja kaikki neljä makrokenttää \`null\`.**
