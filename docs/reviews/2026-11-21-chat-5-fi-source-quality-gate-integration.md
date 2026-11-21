@@ -1,6 +1,6 @@
 # Chat 5 / #369 – FI source-quality gate integration notes
 
-Status: **Draft**, not a recipe publication or an approval of existing FI sources.  
+Status: **Draft**, not a recipe publication or an approval of existing FI sources.
 Owner: **Chat 5**.
 
 ## Purpose
