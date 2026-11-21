@@ -60,6 +60,7 @@ export function analyze(sources, quarantine = new Set()) {
   const byDifficulty = {};
   const genericLead = [], duplicateDescription = [], missingPreparation = [], missingTime = [], noExplicitUrl = [];
   const leadMap = new Map(), stepMap = new Map(), idMap = new Map();
+  const indexedRecipes = [];
   const sorted = [...sources].sort((a, b) => a.path.localeCompare(b.path, 'fi'));
   for (const source of sorted) {
     const parsed = frontmatter(source.content);
@@ -77,6 +78,7 @@ export function analyze(sources, quarantine = new Set()) {
     const difficulty = value(parsed.yaml, 'difficulty') || '(puuttuu)';
     const title = value(parsed.yaml, 'title');
     const evidence = { recipeId, title, path: source.path, sourceSha256: sha(source.content) };
+    indexedRecipes.push(evidence);
     add(idMap, recipeId, evidence);
     byCategory[category] = (byCategory[category] || 0) + 1;
     byTime[time === null ? '(puuttuu)' : String(time)] = (byTime[time === null ? '(puuttuu)' : String(time)] || 0) + 1;
@@ -108,7 +110,7 @@ export function analyze(sources, quarantine = new Set()) {
   }
   return {
     notice: 'Read-only heuristics on non-quarantined FI sources marked published; not verified live routes, factual errors, cooking tests or release approval.',
-    counts, byCategory, byTime, byDifficulty,
+    indexedRecipes, counts, byCategory, byTime, byDifficulty,
     signals: { genericLead, duplicateDescription, missingPreparation, missingTime, noExplicitUrl,
       repeatedLeads: ranked(leadMap), repeatedSteps: ranked(stepMap), duplicateRecipeIds: ranked(idMap) },
   };
