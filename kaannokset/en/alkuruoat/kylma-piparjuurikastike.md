@@ -31,7 +31,7 @@ ingredients:
     unit: "g"
     item: "finely grated fresh horseradish"
   - amount: 12
-    unit: "ml"
+    unit: "g"
     item: "lemon juice"
   - amount: 5
     unit: "g"

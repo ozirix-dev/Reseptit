@@ -36,7 +36,7 @@ ingredients:
     unit: "g"
     item: "tuoretta piparjuurta hienoksi raastettuna"
   - amount: 12
-    unit: "ml"
+    unit: "g"
     item: "sitruunamehua"
   - amount: 5
     unit: "g"

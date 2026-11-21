@@ -31,7 +31,7 @@ ingredients:
     unit: "g"
     item: "ฮอร์สแรดิชสดขูดละเอียด"
   - amount: 12
-    unit: "ml"
+    unit: "g"
     item: "น้ำมะนาวเหลือง"
   - amount: 5
     unit: "g"

@@ -80,3 +80,9 @@ Maito punnitaan 500 g:ksi entisen 500 ml:n sijaan; vastaava FI/EN/SV/TH-ainesmuu
 - Uusi ei-julkinen [piparjuurikastikkeen lähdesidottu esiselvitys](kylma-piparjuurikastike-source-basis-2026-11-22.md): Valio Hyvä suomalainen Arki crème fraîche 12 % (EAN 6408430141227), Fineli-pohjainen tuore piparjuuri ja jo käytetty Fineli-sokerin lähdekortti antavat kolme tunnettua osalaskennan riviä. Valion 180 g pakkauskoko ei rajoita reseptin 200 g kokonaiskäyttömäärää.
 - Sitruunamehun 12 ml ei ole punnittu 12 g; tarvitaan muunnos tai kaikkien neljän kielen yhtenevä massamuutos. Ruohosipulille tarvitaan tuoreeseen tuotteeseen sidottu ravintokortti. Valion crème fraîchen polyolit ja kuitutieto eivät täyty numerona; tiedot pidätetään, ei arvausta.
 - Kolmen vahvistetun grammaperusteisen raaka-aineen CHO/proteiini/rasva-osalaskenta kirjattu vain auditointiin, **ei** julkaistavaksi eikä kokonaisreseptin arvoiksi. Ravintolaskentapakettien määrä pysyy **4/10** ja kuuden reseptin nutrition edelleen PENDING. GK määrittämätön, kaikki FI/EN/SV/TH Draft/HOLD.
+
+## Jatkotarkistus 22.11.2026 – piparjuurikastikkeen punnitus
+
+- Kylmän piparjuurikastikkeen sitruunamehun määrä muutettiin tarkoituksellisesti **12 ml → 12 g punnittua mehua**; FI/EN/SV/TH yhdenmukaistettu. Kyse ei ole tiheysoletuksesta.
+- Uusi FI-lähteen SHA-256 `9a577bfdf6e610f3dfee98ff802de6841a2b3b9e23cc30544cea65345ed03260` ja `recipeNutritionInputHash` `c6fd529885f21f835fa6a97c4873c05bd27a9b11b8d04a3c6de68499666945a0` sidottu kirjalliseen review'hun ja kandidaattirekisteriin. Vanhempien osuuksien ml-lukumäärät ovat historiallisia tilannekuvia.
+- Neljä laskentapakettia kymmenestä edelleen valmiina; piparjuurikastikkeen `nutrition: pending` ja koko PR:n Draft/HOLD pysyvät.

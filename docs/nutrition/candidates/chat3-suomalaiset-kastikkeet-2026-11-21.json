@@ -378,8 +378,8 @@
     {
       "recipe_id": "kylma-piparjuurikastike",
       "source_path": "reseptit/alkuruoat/kylma-piparjuurikastike.md",
-      "source_recipe_sha256": "7d10eda7a424d184da4176bb110a56ce458eb8872758197954399b443e5116e4",
-      "nutrition_input_hash": "71080036d23e12ad1727ba4d7b81f57baf79e767461e4847bbc41ed2dca4d7db",
+      "source_recipe_sha256": "9a577bfdf6e610f3dfee98ff802de6841a2b3b9e23cc30544cea65345ed03260",
+      "nutrition_input_hash": "c6fd529885f21f835fa6a97c4873c05bd27a9b11b8d04a3c6de68499666945a0",
       "servings": 4,
       "ingredient_count": 6,
       "ingredients": [
@@ -408,12 +408,12 @@
         {
           "row": 3,
           "amount": 12,
-          "unit": "ml",
+          "unit": "g",
           "item": "sitruunamehua",
           "note": null,
           "food_record": null,
           "edible_basis": "UNRESOLVED",
-          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "unit_conversion": "DIRECT_GRAMS",
           "retention": "UNRESOLVED"
         },
         {

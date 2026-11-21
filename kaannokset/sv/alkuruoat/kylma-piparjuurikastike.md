@@ -31,7 +31,7 @@ ingredients:
     unit: "g"
     item: "finriven färsk pepparrot"
   - amount: 12
-    unit: "ml"
+    unit: "g"
     item: "citronsaft"
   - amount: 5
     unit: "g"
