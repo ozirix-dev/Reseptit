@@ -44,8 +44,12 @@ ingredients:
     item: vihreää chiliä chutneyyn
   - amount: null
     unit: g
-    item: tuoretta inkivääriä ja tamarindia chutneyyn
-    note: "Chef Kunal Kapurin lähteessä kumpaakin pieni pala; grammapaino puuttuu"
+    item: tuoretta inkivääriä chutneyyn
+    note: "Chef Kunal Kapurin lähteessä pieni pala; syötävän osan grammapaino puuttuu"
+  - amount: null
+    unit: g
+    item: tamarindia chutneyyn
+    note: "Chef Kunal Kapurin lähteessä pieni pala; tarkka tuote ja syötävän osan grammapaino puuttuvat"
   - amount: 0.75
     unit: kuppia
     item: vettä kookoschutneyhin
