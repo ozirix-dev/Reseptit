@@ -2,9 +2,9 @@
   "schema_version": 1,
   "owner": "Chat 4",
   "date": "2026-11-21",
-  "purpose": "source image handoff, NOT installed image overlays",
+  "purpose": "Git-tracked image handoff recorded in verified overlay manifest; publication approval remains separate",
   "source": "ChatGPT conversation image archive: chat4_alkuruoat_10_webp_paivitetty.zip",
-  "note": "Tiedostot ovat ChatGPT-keskustelun latauspaketissa. Eivät GitHubissa. SHA-256 ei yksin ole hyväksyntä. Tämä manifesti ei korvaa julkisen kuvaputken hyväksyntää.",
+  "note": "All 10 WebP files are in Chat-4 PR #805 Git history and pinned to assets/images.tracked-overlays.json for CI image-input verification. approved in overlay means the file is approved as a byte-verified build input only, not an editorial/publication approval. All 10 recipe drafts remain unpublished.",
   "files": [
     {
       "recipe_id": "graavisiika-tillilla",
