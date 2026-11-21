@@ -1,0 +1,56 @@
+---
+title: "Cold Finnish Horseradish Sauce"
+recipe_id: kylma-piparjuurikastike
+url_slug: kylma-piparjuurikastike-en
+category: alkuruoka
+language: en
+source_language: fi
+source_recipe: reseptit/alkuruoat/kylma-piparjuurikastike.md
+translation_of: kylma-piparjuurikastike
+status: draft
+servings: 4
+time_total_min: 20
+difficulty: "easy"
+main_ingredient:
+  - "piparjuuri"
+cooking_method:
+  - "sekoitus"
+tags:
+  - "sauce"
+  - "Finnish"
+ingredients:
+  - amount: 200
+    unit: "g"
+    item: "crème fraîche"
+  - amount: 20
+    unit: "g"
+    item: "finely grated fresh horseradish"
+  - amount: 12
+    unit: "ml"
+    item: "lemon juice"
+  - amount: 5
+    unit: "g"
+    item: "sugar"
+  - amount: 2
+    unit: "g"
+    item: "salt"
+  - amount: 8
+    unit: "g"
+    item: "fresh chives"
+---
+
+# Cold Finnish Horseradish Sauce
+
+A tangy horseradish sauce for roast beef, smoked fish and beetroot salad.
+
+## Preparation
+
+1. Rinse and chop the chives. Peel and grate the horseradish just before mixing.
+2. Combine crème fraîche, horseradish, lemon juice, sugar, salt and chives until smooth.
+3. Cover and refrigerate for 15 minutes. Taste and add extra horseradish only if needed, since its strength varies.
+4. Serve cold with cooked meat or smoked fish. Keep the sauce refrigerated.
+
+## Notes
+
+- Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The illustrative image is in a separate draft image package, not this branch.
+- Preparation reference (independently adapted): https://www.valio.fi/reseptit/piparjuurikastike/

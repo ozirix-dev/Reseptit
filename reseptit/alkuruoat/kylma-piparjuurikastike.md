@@ -1,0 +1,61 @@
+---
+title: "Kylmä piparjuurikastike paahtopaistille"
+recipe_id: kylma-piparjuurikastike
+url_slug: kylma-piparjuurikastike
+category: alkuruoka
+language: fi
+status: draft
+servings: 4
+time_total_min: 20
+difficulty: "helppo"
+main_ingredient:
+  - "piparjuuri"
+cooking_method:
+  - "sekoitus"
+tags:
+  - "kastike"
+  - "suomalainen"
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: draft
+  sv: draft
+  th: draft
+ingredients:
+  - amount: 200
+    unit: "g"
+    item: "ranskankermaa tai crème fraîchea"
+  - amount: 20
+    unit: "g"
+    item: "tuoretta piparjuurta hienoksi raastettuna"
+  - amount: 12
+    unit: "ml"
+    item: "sitruunamehua"
+  - amount: 5
+    unit: "g"
+    item: "sokeria"
+  - amount: 2
+    unit: "g"
+    item: "suolaa"
+  - amount: 8
+    unit: "g"
+    item: "tuoretta ruohosipulia"
+---
+
+# Kylmä piparjuurikastike paahtopaistille
+
+Raikas piparjuurikastike paahtopaistille, savukalalle ja rosollille.
+
+## Valmistus
+
+1. Pese ruohosipuli ja hienonna se. Kuori ja raasta piparjuuri juuri ennen sekoittamista.
+2. Sekoita crème fraîche, piparjuuri, sitruunamehu, sokeri, suola ja ruohosipuli tasaiseksi.
+3. Anna maustua peitettynä jääkaapissa 15 minuuttia. Maista ja lisää piparjuurta vain tarvittaessa, sillä sen voimakkuus vaihtelee.
+4. Tarjoa kylmänä kypsän lihan tai savukalan kanssa. Säilytä kastike koko ajan kylmässä.
+
+## Muistiinpanot
+
+- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on erillisessä luonnoskuvapaketissa, ei tässä haarassa.
+- Vertailulähde (resepti laadittu itsenäisesti): https://www.valio.fi/reseptit/piparjuurikastike/

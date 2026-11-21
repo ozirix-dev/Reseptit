@@ -1,0 +1,55 @@
+---
+title: "ซอสครีมผักชีลาวสำหรับปลาแบบฟินแลนด์"
+recipe_id: kermainen-tillikastike
+url_slug: kermainen-tillikastike-th
+category: alkuruoka
+language: th
+source_language: fi
+source_recipe: reseptit/alkuruoat/kermainen-tillikastike.md
+translation_of: kermainen-tillikastike
+status: draft
+servings: 4
+time_total_min: 25
+difficulty: "ง่าย"
+main_ingredient:
+  - "tilli"
+cooking_method:
+  - "sekoitus"
+tags:
+  - "ซอส"
+  - "ฟินแลนด์"
+ingredients:
+  - amount: 200
+    unit: "g"
+    item: "ครีมเปรี้ยวชนิดเหลว"
+  - amount: 20
+    unit: "g"
+    item: "ผักชีลาวสดสับละเอียด"
+  - amount: 12
+    unit: "ml"
+    item: "น้ำมะนาวเหลือง"
+  - amount: 3
+    unit: "g"
+    item: "น้ำตาล"
+  - amount: 2
+    unit: "g"
+    item: "เกลือ"
+  - amount: 0.5
+    unit: "g"
+    item: "พริกไทยดำ"
+---
+
+# ซอสครีมผักชีลาวสำหรับปลาแบบฟินแลนด์
+
+ซอสผักชีลาวเย็นสดชื่นสำหรับปลาอบ ปลาทอด และมันฝรั่งใหม่
+
+## วิธีทำ
+
+1. ล้างและซับผักชีลาวให้แห้ง สับใบให้ละเอียด
+2. ผสมครีมเปรี้ยว ผักชีลาว น้ำมะนาว น้ำตาล เกลือ และพริกไทยให้เข้ากัน
+3. ปิดฝาแล้วแช่ตู้เย็นอย่างน้อย 15 นาที เสิร์ฟเย็นกับปลาที่ปรุงสุกแล้ว
+
+## หมายเหตุ
+
+- ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพประกอบอยู่ในชุดภาพร่างแยกต่างหาก ไม่ได้อยู่ในสาขานี้
+- Preparation reference (independently adapted): https://www.valio.fi/reseptit/tillikastike-kalalle/
