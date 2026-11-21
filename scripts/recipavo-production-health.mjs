@@ -83,6 +83,11 @@ export async function probeProduction({fetcher=fetch}={}) {
   required(feedback.status===405, 'feedback GET must return HTTP 405');
   const contentType=feedback.headers.get('content-type')??'';
   required(/\bapplication\/json\b/i.test(contentType),'feedback GET must return JSON');
+  const cacheControl=feedback.headers.get('cache-control')??'';
+  required(/(?:^|,)\s*no-store(?:\s*[,;]|\s*$)/i.test(cacheControl),
+    'feedback GET must not be cached (Cache-Control: no-store)');
+  required((feedback.headers.get('x-content-type-options')??'').toLowerCase()==='nosniff',
+    'feedback GET must disable MIME sniffing');
   let payload;
   try { payload=await feedback.json(); }
   catch { throw new Error('PRODUCTION HEALTH FAIL: malformed feedback GET JSON'); }
@@ -109,7 +114,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url)===path.resolve(process.arg
         `- Checks: ${result.checks.length} read-only GET requests\n`+
         `- Languages: FI, EN, SV, TH\n`+
         `- SEO: canonical, robots, sitemap, missing page noindex\n`+
-        `- Pages Functions: GET /api/feedback = 405 JSON\n`+
+        `- Pages Functions: GET /api/feedback = 405 JSON, no-store, nosniff\n`+
         `- Hashed JS asset: HTTP 200\n`);
     }
   } catch(error) {
