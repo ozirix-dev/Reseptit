@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sauce"
   - "Finnish"
+image:
+  src: alkuruoat/kantarellikastike.webp
+  alt: "Creamy mushroom sauce in a bowl with browned mushrooms and parsley; illustrative image"
+  width: 960
+  height: 640
 ingredients:
   - amount: 350
     unit: "g"
@@ -58,5 +63,5 @@ Butter-fried chanterelles in cream pair with potatoes and roast meat.
 
 ## Notes
 
-- Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The illustrative image is in a separate draft image package, not this branch.
+- Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The AI-generated illustration is now in this branch, but editorial image review is pending.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kantarellikastike

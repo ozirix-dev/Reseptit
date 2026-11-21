@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sås"
   - "finsk"
+image:
+  src: alkuruoat/sinappikastike-joulukinkulle.webp
+  alt: "Gyllene senapssås med synliga senapsfrön i en glasskål"
+  width: 960
+  height: 640
 ingredients:
   - amount: 200
     unit: "ml"
@@ -58,5 +63,5 @@ En varm, mild senapssås till skinka utan steksky.
 
 ## Anteckningar
 
-- Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Illustrationsbilden finns i ett separat bildpaket, inte i grenen.
+- Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Den AI-genererade illustrationsbilden finns nu i grenen, men bildgranskning återstår.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kastike-kinkulle-ilman-paistolienta

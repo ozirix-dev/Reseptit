@@ -7,5 +7,5 @@ Päiväys: 21.11.2026. Tila: DRAFT / HOLD, ei julkaistu.
 - Tämä on kirjoitettu itsenäisesti; lähteen kokkikokeilu ei tarkoita Recipavon version koekeittiötestiä.
 - Tarkista ennen julkaisua aineiden turvallisuus, kypsennys, säilytys, annokset ja allergeenit (maito, vehnä, sinappi).
 - Reseptikohtainen ravinto-/GK-evidenssi ja hyväksyntä puuttuvat. EI KETO-/GLUTEENITON-VÄITETTÄ.
-- Havainnekuva: `kastikekuvat_chat3/sinappikastike-joulukinkulle.webp` erillisessä käyttäjälle luovutetussa kuvapaketissa; vielä ei ole repohaarassa. Kuvan suhde juuri tähän reseptiin ja natiiviresoluutio on tarkistettava ennen julkaisua.
+- GitHub-kuva: `kuvat/alkuruoat/sinappikastike-joulukinkulle.webp`, 960 × 640, tekoälyllä tehty havainnekuva. Kuvituksen vastaavuus vielä hyväksyttävä.
 - Nelikielisten merkitysvastaavuuden dokumentoitu loppukatselmointi ja CI sekä Repo Guard -julkaisuportti puuttuvat.

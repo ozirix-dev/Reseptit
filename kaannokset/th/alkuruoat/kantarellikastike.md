@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "ซอส"
   - "ฟินแลนด์"
+image:
+  src: alkuruoat/kantarellikastike.webp
+  alt: "ซอสเห็ดครีมในถ้วย มีเห็ดสีน้ำตาลและพาร์สลีย์ เป็นภาพประกอบ"
+  width: 960
+  height: 640
 ingredients:
   - amount: 350
     unit: "g"
@@ -58,5 +63,5 @@ ingredients:
 
 ## หมายเหตุ
 
-- ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพประกอบอยู่ในชุดภาพร่างแยกต่างหาก ไม่ได้อยู่ในสาขานี้
+- ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพ AI อยู่ในสาขานี้แล้ว แต่ยังต้องตรวจภาพก่อนเผยแพร่
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kantarellikastike

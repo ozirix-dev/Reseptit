@@ -23,6 +23,11 @@ translation_status:
   en: draft
   sv: draft
   th: draft
+image:
+  src: alkuruoat/kantarellikastike.webp
+  alt: "Kermainen sienikastike kulhossa, pinnalla ruskistuneita sieniä ja persiljaa; kuvituskuva"
+  width: 960
+  height: 640
 ingredients:
   - amount: 350
     unit: "g"
@@ -63,5 +68,5 @@ Voissa paistetut kantarellit ja kerma sopivat kotimaisille perunoille, pihveille
 
 ## Muistiinpanot
 
-- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on erillisessä luonnoskuvapaketissa, ei tässä haarassa.
+- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn tuottama havainnekuva tässä haarassa; toimituksellinen kuvakatselmointi puuttuu.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.k-ruoka.fi/reseptit/kantarellikastike

@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sås"
   - "finsk"
+image:
+  src: alkuruoat/kantarellikastike.webp
+  alt: "Krämig svampsås i en skål med brynta svampar och persilja; illustrationsbild"
+  width: 960
+  height: 640
 ingredients:
   - amount: 350
     unit: "g"
@@ -58,5 +63,5 @@ Smörstekta kantareller i grädde passar till potatis och stekt kött.
 
 ## Anteckningar
 
-- Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Illustrationsbilden finns i ett separat bildpaket, inte i grenen.
+- Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Den AI-genererade illustrationsbilden finns nu i grenen, men bildgranskning återstår.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kantarellikastike

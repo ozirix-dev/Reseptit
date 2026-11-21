@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sauce"
   - "Finnish"
+image:
+  src: alkuruoat/sinappikastike-joulukinkulle.webp
+  alt: "Golden mustard sauce with visible mustard seeds in a glass bowl"
+  width: 960
+  height: 640
 ingredients:
   - amount: 200
     unit: "ml"
@@ -58,5 +63,5 @@ A warm, gentle mustard sauce for ham that needs no roasting juices.
 
 ## Notes
 
-- Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The illustrative image is in a separate draft image package, not this branch.
+- Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The AI-generated illustration is now in this branch, but editorial image review is pending.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kastike-kinkulle-ilman-paistolienta

@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "ซอส"
   - "ฟินแลนด์"
+image:
+  src: alkuruoat/sinappikastike-joulukinkulle.webp
+  alt: "ซอสมัสตาร์ดสีทองในถ้วยแก้วมีเมล็ดมัสตาร์ดให้เห็น"
+  width: 960
+  height: 640
 ingredients:
   - amount: 200
     unit: "ml"
@@ -58,5 +63,5 @@ ingredients:
 
 ## หมายเหตุ
 
-- ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพประกอบอยู่ในชุดภาพร่างแยกต่างหาก ไม่ได้อยู่ในสาขานี้
+- ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพ AI อยู่ในสาขานี้แล้ว แต่ยังต้องตรวจภาพก่อนเผยแพร่
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kastike-kinkulle-ilman-paistolienta

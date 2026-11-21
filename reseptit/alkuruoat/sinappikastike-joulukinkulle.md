@@ -23,6 +23,11 @@ translation_status:
   en: draft
   sv: draft
   th: draft
+image:
+  src: alkuruoat/sinappikastike-joulukinkulle.webp
+  alt: "Kullanruskeaa sinappikastiketta lasikulhossa, näkyvissä sinapinsiemeniä"
+  width: 960
+  height: 640
 ingredients:
   - amount: 200
     unit: "ml"
@@ -63,5 +68,5 @@ Lämmin, pehmeä sinappikastike kinkulle ilman paistolientä.
 
 ## Muistiinpanot
 
-- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on erillisessä luonnoskuvapaketissa, ei tässä haarassa.
+- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn tuottama havainnekuva tässä haarassa; toimituksellinen kuvakatselmointi puuttuu.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.k-ruoka.fi/reseptit/kastike-kinkulle-ilman-paistolienta
