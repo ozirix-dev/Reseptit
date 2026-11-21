@@ -11,7 +11,35 @@ import { activeScripts, blockedByRobots, inspectNotFound, tags } from "./seo-aud
 const revisionHeader = "x-recipavo-commit";
 const production = resolveSiteTarget(undefined, "production").baseUrl;
 const notFound = "/__recipavo_release_probe_missing__/";
-const samples = [...Object.entries(localeIndexes), ["fi", recipeLibraryPagePath("fi", 2)]] as const;
+// Verify two #404 source-reviewed breakfast recipes across every published locale
+// in addition to the index pages. These are artifact-vs-live checks, not deploy.
+const issue404RecipeIds = [
+  "valimerellinen-menemen-fetalla",
+  "valimerellinen-pinaatti-fetashakshuka",
+] as const;
+const issue404RecipeSamples = issue404RecipeIds.flatMap(id =>
+  Object.entries(localeIndexes).map(([locale, index]) => [locale, index + id + "/"] as const));
+const issue404RecipeRoutes = new Set(issue404RecipeSamples.map(([, route]) => route));
+const samples = [...Object.entries(localeIndexes), ["fi", recipeLibraryPagePath("fi", 2)], ...issue404RecipeSamples] as const;
+const recipeSnapshot = (html: string, route: string, source: "live" | "artifact") => {
+  const label = route + " " + source;
+  const scripts = activeScripts(html).filter(script =>
+    script.attributes.type === "application/ld+json");
+  assert.equal(scripts.length, 1, label + ": expected exactly one Recipe JSON-LD");
+  const data = JSON.parse(scripts[0].content) as {
+    "@type"?: string; recipeIngredient?: unknown[]; recipeInstructions?: unknown[];
+  };
+  assert.equal(data["@type"], "Recipe", label + ": expected Recipe schema");
+  assert.ok(Array.isArray(data.recipeIngredient) && data.recipeIngredient.length >= 2,
+    label + ": missing structured ingredients");
+  assert.ok(Array.isArray(data.recipeInstructions) && data.recipeInstructions.length >= 3,
+    label + ": missing structured instructions");
+  const h1 = html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1];
+  assert.ok(h1?.trim(), label + ": missing recipe heading");
+  const ingredients = html.match(/<ul class="ingredient-list">([\s\S]*?)<\/ul>/i)?.[1];
+  assert.ok(ingredients?.trim(), label + ": missing visible ingredient list");
+  return { h1, ingredients, data };
+};
 // https://mimesniff.spec.whatwg.org/#javascript-mime-type
 const javascriptMime = /^(?:application\/(?:x-)?(?:ecmascript|javascript)|text\/(?:(?:x-)?(?:ecmascript|javascript)|javascript1\.[0-5]|jscript|livescript))$/;
 const noIndex = (value: string) => /\b(?:noindex|none)\b/i.test(value);
@@ -96,6 +124,17 @@ export async function verifyProductionRelease(expectedSha: string, origin: strin
     const html = await checkHtml(route, 200);
     const localHtml = (await artifact(route + "index.html")).toString("utf8");
     assert.ok(tags(html, "h1").length === 1 && html.includes('<div id="root">'), route + " prerendered page");
+    if (issue404RecipeRoutes.has(route)) {
+      // An HTML 200 with the correct revision is insufficient if recipe
+      // ingredients, full preparation or nutrition differ from the artifact.
+      const expected = recipeSnapshot(localHtml, route, "artifact");
+      const live = recipeSnapshot(html, route, "live");
+      assert.equal(live.h1, expected.h1, route + " live recipe heading differs from artifact");
+      assert.equal(live.ingredients, expected.ingredients,
+        route + " live ingredient list differs from artifact");
+      assert.deepEqual(live.data, expected.data,
+        route + " live Recipe JSON-LD (ingredients/steps/nutrition) differs from artifact");
+    }
     if (route === recipeLibraryPagePath("fi", 2)) {
       const cards = tags(html, "article").filter(tag => tag.class === "recipe-card").length;
       assert.ok(cards > 0 && cards <= recipeLibraryPageSize, route + " prerendered library cards");
