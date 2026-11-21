@@ -267,11 +267,8 @@
   },
   "coverage": {
     "ingredient_rows": 7,
-    "has_unmapped_ingredients": true,
-    "unmapped_ingredient_lines": [
-      7,
-      7
-    ],
+    "has_unmapped_ingredients": false,
+    "unmapped_ingredient_lines": [],
     "missing_nutrient_components": [
       "fibre",
       "polyols"
