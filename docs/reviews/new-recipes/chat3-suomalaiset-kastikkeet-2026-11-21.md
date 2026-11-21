@@ -25,3 +25,7 @@ Aiemmin ongelmalliset kantarelli-, puolukka- ja vaniljakastikkeen WebP-kuvat on 
 ## Lähde- ja rakennekatselmointi
 
 Kymmenen resepti-identiteetin 40 kielitiedoston ainesosa-/annos-/vaiherakenne verrattiin. Havaitut rakenteelliset ristiriidat: 0. Valmistuksen lähdevastaavuus kirjattu riskiperusteisesti tiedostoon `docs/reviews/new-recipes/chat3-kastikkeet-lahde-ja-rakennekatselmointi-2026-11-21.md`. Tämä ei korvaa semantic evidence -rekisteriä eikä keittiötestiä. Kaikki edelleen Draft/HOLD.
+
+## Chat 3:n jatkotarkistus – alustava kieli- ja allergeenikatselmointi
+
+Kymmenen reseptin FI/EN/SV/TH-kieliversioiden ainesmäärät, valmistusvaiheet ja riskikohdat käytiin läpi. Thaikielinen täysmaito täsmennettiin 3 reseptissä; piparjuurikastikkeen crème fraîche yksilöitiin noin 12-prosenttiseksi; erilliset allergeenihuomiot lisättiin kaikkiin 10 kastikkeeseen. Kolmelle lisävertailureseptille löytyi täsmällisempi julkaistu lähde, joita ei esitetä Recipavon oman version koekeittiötestauksena. Aineisto on edelleen Draft/HOLD. Tarkka erillisraportti: `docs/reviews/translations/chat3-kastikkeet-alustava-merkitysvertailu-2026-11-21.md`.
