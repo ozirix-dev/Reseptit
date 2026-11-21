@@ -27,7 +27,7 @@ ingredients:
     unit: "ml"
     item: "milk"
   - amount: 2
-    unit: "kpl"
+    unit: "pcs"
     item: "eggs"
   - amount: 30
     unit: "g"
@@ -38,7 +38,7 @@ ingredients:
     item: "butter"
     note: "for frying"
   - amount: 0.5
-    unit: "tl"
+    unit: "tsp"
     item: "salt"
   - amount: 120
     unit: "g"

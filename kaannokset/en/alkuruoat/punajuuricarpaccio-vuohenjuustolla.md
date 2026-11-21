@@ -39,7 +39,7 @@ ingredients:
     unit: "g"
     item: "fresh thyme"
   - amount: 0.25
-    unit: "tl"
+    unit: "tsp"
     item: "salt"
 ---
 

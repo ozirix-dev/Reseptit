@@ -21,7 +21,7 @@ ingredients:
     unit: "g"
     item: "เนื้อปลาเฮร์ริงพร้อมรับประทาน"
   - amount: 2
-    unit: "kpl"
+    unit: "ชิ้น"
     item: "ไข่ไก่"
   - amount: 60
     unit: "g"
@@ -39,7 +39,7 @@ ingredients:
     unit: "ml"
     item: "น้ำเลมอน"
   - amount: 16
-    unit: "kpl"
+    unit: "ชิ้น"
     item: "แครกเกอร์ขนมปังไรย์ชิ้นเล็ก"
 ---
 

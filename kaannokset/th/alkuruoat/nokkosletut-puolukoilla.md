@@ -27,7 +27,7 @@ ingredients:
     unit: "ml"
     item: "นม"
   - amount: 2
-    unit: "kpl"
+    unit: "ชิ้น"
     item: "ไข่ไก่"
   - amount: 30
     unit: "g"
@@ -38,7 +38,7 @@ ingredients:
     item: "เนย"
     note: "สำหรับทอด"
   - amount: 0.5
-    unit: "tl"
+    unit: "ช้อนชา"
     item: "เกลือ"
   - amount: 120
     unit: "g"

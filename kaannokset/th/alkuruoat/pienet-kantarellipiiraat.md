@@ -44,13 +44,13 @@ ingredients:
     unit: "g"
     item: "ครีมเฟรช"
   - amount: 2
-    unit: "kpl"
+    unit: "ชิ้น"
     item: "ไข่ไก่"
   - amount: 80
     unit: "g"
     item: "ชีสขูด"
   - amount: 0.5
-    unit: "tl"
+    unit: "ช้อนชา"
     item: "เกลือ"
 ---
 

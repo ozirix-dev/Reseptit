@@ -44,13 +44,13 @@ ingredients:
     unit: "g"
     item: "crème fraîche"
   - amount: 2
-    unit: "kpl"
+    unit: "pcs"
     item: "eggs"
   - amount: 80
     unit: "g"
     item: "grated cheese"
   - amount: 0.5
-    unit: "tl"
+    unit: "tsp"
     item: "salt"
 ---
 

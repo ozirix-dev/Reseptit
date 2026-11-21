@@ -21,7 +21,7 @@ ingredients:
     unit: "g"
     item: "ready-to-eat herring fillets"
   - amount: 2
-    unit: "kpl"
+    unit: "pcs"
     item: "eggs"
   - amount: 60
     unit: "g"
@@ -39,7 +39,7 @@ ingredients:
     unit: "ml"
     item: "lemon juice"
   - amount: 16
-    unit: "kpl"
+    unit: "pcs"
     item: "small rye crisps"
 ---
 
