@@ -6,13 +6,13 @@ Tämä ei ole ravintolaskelma eikä julkinen ravintoarvio. Kyseessä on kymmenen
 
 | recipe_id | Annoksia | Ainesrivejä | ml-rivejä | Laskennan input SHA-256 (alku) |
 | --- | ---: | ---: | ---: | --- |
-| `perinteinen-ruskea-kastike` | 4 | 5 | 1 | `6430473ab619…` |
+| `perinteinen-ruskea-kastike` | 4 | 5 | 1 | `8452c0f3c108…` |
 | `kermainen-tillikastike` | 4 | 6 | 1 | `2fa8e3c648a1…` |
 | `kantarellikastike` | 4 | 9 | 2 | `61bb6ce261bf…` |
-| `sinappikastike-joulukinkulle` | 6 | 8 | 2 | `4f8899e9ffa8…` |
+| `sinappikastike-joulukinkulle` | 6 | 8 | 2 | `171034daac90…` |
 | `kylma-piparjuurikastike` | 4 | 6 | 1 | `71080036d23e…` |
 | `perinteinen-munakastike` | 4 | 7 | 1 | `54b24ba297bc…` |
-| `kermainen-pippurikastike` | 4 | 6 | 2 | `a9ef4648da15…` |
+| `kermainen-pippurikastike` | 4 | 6 | 2 | `91c2af86c2f1…` |
 | `perinteinen-valkokastike` | 6 | 6 | 1 | `cfd1a39123f8…` |
 | `puolukkakastike-jalkiruokiin` | 6 | 4 | 2 | `dc57fc50dec6…` |
 | `perinteinen-vaniljakastike` | 6 | 6 | 1 | `10e4c40b7383…` |
@@ -28,3 +28,7 @@ Ainesosaluettelo, reseptin täydellinen SHA-256 sekä `recipeNutritionInputHash`
 - **Kaikki neljä ravintoarvokenttää puuttuvat edelleen tarkoituksella.** GK:n numeerista arvoa ei julkaista ilman hyväksyttyä valmistuskohtaista GI-arviota. Lähtöaineiston kokoaminen ei anna Ready-/merge-/Cloudflare-lupaa.
 
 Lähteiden ja allergeenien alustava katselmointi on dokumentoitu `docs/reviews/new-recipes/` ja `docs/reviews/recipes/` -hakemistoissa. Tämä ei ole hyväksytty ravintoevidenssi `docs/nutrition/calculations/`-hakemistoon.
+
+## Täsmätuotepäivitys 21.11.2026
+
+Kolmen aiemmin yleisellä valmisliemellä/sinapilla kuvatun kastikkeen ainesosat sidottiin yksilöityihin tuotteisiin ja EAN-tunnuksiin: ruskea kastike (Puljonki Signature Lihaliemi + Kikkoman Naturally Brewed), sinappikastike (Puljonki Signature Kasvisliemi + Turun Sinappia Mieto + Maille Dijon Kokojyväsinappi) sekä pippurikastike (Puljonki Signature Lihaliemi + Maille Dijon Original). Muutos ei vaikuttanut annos- eikä määrätietoihin, mutta **ainesosarivien nimet ja siten ravintolaskennan `sourceHash`-syöttötiivisteet muuttuivat**. Yllä olevat kolme tiivistettä on päivitetty vastaamaan JSON-kandidaattia. Varsinainen ravintolaskenta on edelleen tekemättä. Maille-tuotteiden sulfiitit on kirjattu turvallisuuskatselmointiin; sulfiittipitoisuutta valmiissa annoksessa ei arvata.
