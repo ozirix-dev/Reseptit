@@ -335,6 +335,9 @@ function shouldRunFiEditorialAudit(paths) {
     const file = raw.replaceAll("\\", "/");
     if (/^reseptit\/.+\.md$/i.test(file) && !file.includes("/_mallipohjat/")) return true;
     if (file === ".github/workflows/pages.yml") return true; // Verify this gate in its own PR.
+    // The quarantine membership is consumed by both the raw FI inventory and
+    // the published content build. Treat a change as an audit input mutation.
+    if (file === "site/scripts/public-recipe-quarantine.json") return true;
     if (/^site\/scripts\/.+\.(?:mjs|ts)$/i.test(file)) return true;
     if (/^site\/src\/content\/.+\.ts$/i.test(file)) return true;
     return false;
