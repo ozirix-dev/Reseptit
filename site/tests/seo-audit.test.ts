@@ -64,6 +64,28 @@ test("natto cookingMethod is independently checked against public notes in FI/EN
   }
 });
 
+test("goulash stove metadata requires exact public notes and cannot be forged in JSON-LD", async () => {
+  const pages = expectedPages(siteContent.recipes);
+  const methods = { fi: "Liedellä hauduttaminen", en: "Stovetop simmering",
+    sv: "Sjudning på spis", th: "เคี่ยวบนเตา" } as const;
+  for (const [locale, label] of Object.entries(methods)) {
+    const page = pages.find(item => item.recipe?.recipeId === "paprikainen-vhh-gulassi" && item.locale === locale);
+    assert.ok(page?.recipe, locale + ": published goulash page must exist");
+    const html = await readFile(path.join(dist, page.route.slice(1), "index.html"), "utf8");
+    assert.deepEqual(inspectPage(html, page), [], locale + ": source-reviewed stove method must pass");
+    const method = '"cookingMethod":"' + label + '"';
+    assert.ok(html.includes(method), locale + ": JSON-LD must include the localized stove method");
+    assert.ok(inspectPage(html.replace(method, '"cookingMethod":"Oven"'), page)
+      .some(item => item.code === "JSONLD_SOURCE"), locale + ": forged oven metadata rejected");
+    const missingNotes = { ...page, recipe: { ...page.recipe, notesHtml: "" } };
+    assert.ok(inspectPage(html, missingNotes)
+      .some(item => item.code === "COOKING_METHOD_SOURCE"), locale + ": no unsupported source review");
+    const wrongMethod = { ...page, recipe: { ...page.recipe, cookingMethod: ["uuni"] } };
+    assert.ok(inspectPage(html, wrongMethod)
+      .some(item => item.code === "COOKING_METHOD_SOURCE"), locale + ": oven claim rejected");
+  }
+});
+
 test("all indexable content templates use distinct descriptions and Recipavo titles", () => {
   const pages = expectedPages(siteContent.recipes);
   const descriptions = new Map<string, string>();
