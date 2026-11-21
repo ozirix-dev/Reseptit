@@ -9,7 +9,10 @@ import {REPOSITORY,ENVIRONMENT,PROJECT,CONFIRMATION,assertDispatch,assertEnviron
 
 const sha='a'.repeat(40);
 const dispatch={repository:REPOSITORY,ref:'refs/heads/main',workflowSha:sha,inputSha:sha,confirmation:CONFIRMATION};
-const environment={name:ENVIRONMENT,protection_rules:[{type:'required_reviewers',reviewers:[{type:'User',reviewer:{login:'owner'}}]}]};
+const environment={name:ENVIRONMENT,can_admins_bypass:false,
+  deployment_branch_policy:{protected_branches:false,custom_branch_policies:true},
+  protection_rules:[{type:'wait_timer',wait_timer:10}]};
+const branchPolicies={total_count:1,branch_policies:[{id:1,name:'main'}]};
 const runs={workflow_runs:[{head_sha:sha,head_branch:'main',status:'completed',conclusion:'success',event:'push',id:123}]};
 const cf={success:true,result:{name:PROJECT,production_branch:'production',source:null,
   deployment_configs:{production:{env_vars:{},d1_databases:{},r2_buckets:{RECIPE_IMAGES:{}}}}}};
@@ -22,10 +25,28 @@ test('SHA, main-only dispatch, and explicit confirmation are mandatory',()=>{
     {repository:'other/repo'},{ref:'refs/heads/staging'},{confirmation:'DO_NOT_RELEASE'},
   ]) assert.throws(()=>assertDispatch({...dispatch,...change}),/HOLD:/);
 });
-test('GitHub environment must have real reviewers',()=>{
-  assert.deepEqual(assertEnvironment(environment),{reviewersConfigured:true});
-  assert.throws(()=>assertEnvironment({name:ENVIRONMENT,protection_rules:[]}),/HOLD:/);
-  assert.throws(()=>assertEnvironment({name:'production',protection_rules:environment.protection_rules}),/HOLD:/);
+test('GitHub environment requires 10-minute timer, main-only restriction, no admin bypass',()=>{
+  assert.deepEqual(assertEnvironment(environment,branchPolicies),
+    {waitMinutes:10,branch:'main',adminBypass:false});
+  const variations=[
+    c=>c.protection_rules=[],
+    c=>c.protection_rules=[{type:'wait_timer',wait_timer:9}],
+    c=>c.protection_rules.push({type:'required_reviewers',reviewers:[{reviewer:{login:'owner'}}]}),
+    c=>c.can_admins_bypass=true,
+    c=>delete c.can_admins_bypass,
+    c=>c.deployment_branch_policy=null,
+    c=>c.deployment_branch_policy.custom_branch_policies=false,
+    c=>c.name='production',
+  ];
+  for(const modify of variations){
+    const config=structuredClone(environment);modify(config);
+    assert.throws(()=>assertEnvironment(config,branchPolicies),/HOLD:/);
+  }
+  for(const policies of [
+    {total_count:0,branch_policies:[]},
+    {total_count:1,branch_policies:[{name:'main*'}]},
+    {total_count:2,branch_policies:[{name:'main'},{name:'release/*'}]},
+  ])assert.throws(()=>assertEnvironment(environment,policies),/HOLD:/);
 });
 test('latest CI must be successful and match exact SHA and main',()=>{
   assert.equal(assertCiRuns(runs,sha),123);
@@ -49,7 +70,7 @@ test('Cloudflare config is read-only, Direct Upload, production and feedback OFF
   ]) {const payload=structuredClone(cf);change(payload);
     assert.throws(()=>assertCloudflareProject(payload),/HOLD:/);}
 });
-test('GitHub API verifies fresh main, exact CI and required reviewers',async()=>{
+test('GitHub API verifies fresh main, exact CI and timer + main branch policy',async()=>{
   const urls=[];
   const env={GITHUB_REPOSITORY:REPOSITORY,GITHUB_REF:'refs/heads/main',GITHUB_SHA:sha,
     RELEASE_CONFIRMATION:CONFIRMATION,GITHUB_TOKEN:'test-token'};
@@ -57,13 +78,14 @@ test('GitHub API verifies fresh main, exact CI and required reviewers',async()=>
     urls.push(url);
     if(url.includes('/git/ref/heads/main'))return response({ref:'refs/heads/main',object:{sha}});
     if(url.includes('/actions/workflows/pages.yml/runs?'))return response(runs);
+    if(url.includes('/deployment-branch-policies?'))return response(branchPolicies);
     if(url.includes('/environments/'))return response(environment);
     throw Error('unexpected');
   };
-  assert.deepEqual(await githubPreflight({sha,env,fetcher}),{sha,ciRun:123,approvalRequired:true});
-  assert.equal(urls.length,3);urls.length=0;
+  assert.deepEqual(await githubPreflight({sha,env,fetcher}),{sha,ciRun:123,waitTimerRequired:true});
+  assert.equal(urls.length,4);urls.length=0;
   assert.deepEqual(await githubPreflight({sha,env,fetcher,verifyEnvironment:false}),
-    {sha,ciRun:123,approvalRequired:false});
+    {sha,ciRun:123,waitTimerRequired:false});
   assert.equal(urls.length,2);
   await assert.rejects(()=>githubPreflight({sha,env,fetcher:async url=>
     url.includes('/git/ref/')?response({ref:'refs/heads/main',object:{sha:'b'.repeat(40)}}):response(runs)}),
