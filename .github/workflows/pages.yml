@@ -72,6 +72,15 @@ jobs:
           Add-Content -LiteralPath $env:GITHUB_OUTPUT -Value "root=$($result.imageRoot)"
           Write-Host "Verified $($result.files) image inputs (mode=$($data['ci']['mode']))"
 
+      - name: Test verified Git-tracked recipe image overlays
+        run: python3 -B -m unittest discover -v -s site/scripts -p 'test_verified_image_overlay.py'
+
+      - name: Append SHA-256-verified Git-tracked recipe image overlays
+        shell: bash
+        env:
+          VERIFIED_IMAGE_ROOT: ${{ steps.images.outputs.root }}
+        run: python3 -B site/scripts/verified_image_overlay.py --manifest assets/images.tracked-overlays.json --source-root kuvat --image-root "$VERIFIED_IMAGE_ROOT" --mode apply
+
       - name: Verify production image bootstrap
         run: node --test site/scripts/build-production.test.mjs
 
