@@ -57,8 +57,8 @@ const quality = (b: ReturnType<typeof bundle>): FiSourceQualityEvidence => ({
     findings: [],
   },
 });
-const evaluate = (b: ReturnType<typeof bundle>, e: SemanticEvidence) =>
-  evaluateBatchEntry(b, e, quality(b));
+const evaluate = (b: Parameters<typeof evaluateBatchEntry>[0], e: SemanticEvidence) =>
+  evaluateBatchEntry(b, e, quality(bundle()));
 
 test("FI-01: omitted cooking fat cannot be accepted without independent source correction", () => {
   const b = bundle(), q = quality(b);
@@ -84,7 +84,7 @@ test("FI-04: unsafe temperature blocks FI decision", () => {
 });
 test("FI-05: changed source invalidates approval even with earlier translation proof", () => {
   const b = bundle(), q = quality(b);
-  b.source.content += "\\nAdditional instruction";
+  b.source.content += "\nAdditional instruction";
   const d = evaluateBatchEntry(b, proofs(b), q);
   assert.equal(d.group, "source-hold");
   assert.match(d.reasons.join(" "), /stale/);
