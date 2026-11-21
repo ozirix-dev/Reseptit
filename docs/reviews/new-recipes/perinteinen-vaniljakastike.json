@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perinteinen-vaniljakastike",
+  "source_path": "reseptit/jalkiruoat/perinteinen-vaniljakastike.md",
+  "source_sha256": "51439824a62544ea14c73034a8cbb5cb5f76a5fee367a3464d1a26c9883065e9",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED – Chat 3 preliminary source/structure checks only",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/vaniljakastike/",
+      "https://www.k-ruoka.fi/reseptit/keksikorit"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Ei samannimistä resep­titunnusta alkuperäisessä mainissä tai tarkistetuissa avoimissa PR:issä; lopullinen päällekkäisyyden tarkistus tehdään julkaisurevisiolle."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Määrät ja mittayksiköt on tallennettu ja nelikielinen rakenne alustavasti tarkistettu; täsmäainesosien ja niiden syötävien määrien lopullinen arvio sekä mahdolliset tuotemerkit odottavat."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Riippumattomia valmistusvertailuja on dokumentoitu, mutta juuri tämän reseptiversion työvaiheiden/saannon lopullinen kokkikelpoisuusarvio on auki. Ei väitettä Recipavon koekeittiötestistä."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Maito ja kananmuna; maissitärkkelyksen lähdevastaavuus ja kuumennus on dokumentoitu mutta saanto hyväksymättä. Pakkausmerkinnät sekä tuotekohtaiset allergeenit ja säilytys tarkistettava ennen julkaisemista."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "Annokset ja ajat on kirjattu reseptiin; arvioitujen aikojen ja valmiin kastikkeen saannon lopullinen tarkistus puuttuu."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit"
+    ],
+    "image_path": "kuvat/jalkiruoat/perinteinen-vaniljakastike.webp",
+    "image_sha256": "6508c960e4858abfd4571303f0d3c5f81499a0f72fbbfb8b7851c9d0baa67734",
+    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "physical_cook_test": false
+  }
+}

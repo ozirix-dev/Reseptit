@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perinteinen-ruskea-kastike",
+  "source_path": "reseptit/alkuruoat/perinteinen-ruskea-kastike.md",
+  "source_sha256": "64de523b007f780e8c98c9b6b267226769ad4a56a8d65170901016ea4b024b9e",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED – Chat 3 preliminary source/structure checks only",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/ruskea-kastike"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Ei samannimistä resep­titunnusta alkuperäisessä mainissä tai tarkistetuissa avoimissa PR:issä; lopullinen päällekkäisyyden tarkistus tehdään julkaisurevisiolle."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Määrät ja mittayksiköt on tallennettu ja nelikielinen rakenne alustavasti tarkistettu; täsmäainesosien ja niiden syötävien määrien lopullinen arvio sekä mahdolliset tuotemerkit odottavat."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Riippumattomia valmistusvertailuja on dokumentoitu, mutta juuri tämän reseptiversion työvaiheiden/saannon lopullinen kokkikelpoisuusarvio on auki. Ei väitettä Recipavon koekeittiötestistä."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Voi/vehnä/soija; liemen tuotemerkin allergeenit tarkistettava. Pakkausmerkinnät sekä tuotekohtaiset allergeenit ja säilytys tarkistettava ennen julkaisemista."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "Annokset ja ajat on kirjattu reseptiin; arvioitujen aikojen ja valmiin kastikkeen saannon lopullinen tarkistus puuttuu."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit"
+    ],
+    "image_path": "kuvat/alkuruoat/perinteinen-ruskea-kastike.webp",
+    "image_sha256": "d10b6a2136d4a992f9488cad8eade4a6d0409e1f6f24d5327e152500a03b81aa",
+    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "physical_cook_test": false
+  }
+}
