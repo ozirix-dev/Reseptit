@@ -62,3 +62,4 @@ A simple butter-and-milk white sauce for fish, potatoes and vegetables.
 
 - The AI-generated illustrative image is now versioned. Decorative garnishes shown in the picture are not part of the ingredient quantities.
 - Contains **milk and wheat**. Stir while heating and make sure the flour cooks through without lumps.
+- Serve the milk sauce warm promptly; for extended hot holding, keep it above +60°C. Cool leftovers promptly in a shallow container and refrigerate below +6°C. Contains milk and wheat.

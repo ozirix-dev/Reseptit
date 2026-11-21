@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "perinteinen-valkokastike",
   "source_path": "reseptit/alkuruoat/perinteinen-valkokastike.md",
-  "source_sha256": "eede461ac1eec2868c99a5a44a028443e85fcab077a652a5ab5aeca951503544",
+  "source_sha256": "8e95630447f678058072f5ee0707184fe793cf46da27a6cd92827f944e232a8b",
   "decision": "hold",
   "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
   "reviewed_at": "2026-11-21",
@@ -27,8 +27,8 @@
       "notes": "Valion valmistuksessa voi sulatetaan, jauhot kuumennetaan, maito lisätään ohuena nauhana ja kastike kiehautetaan muutama minuutti; Recipavossa samat perusvaiheet ja 4–5 minuutin haudutus."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Maito ja vehnä; suurustuksen kypsyys ja paakkuuntumattomuus. Pakkausmerkinnät sekä tuotekohtaiset allergeenit ja säilytys tarkistettava ennen julkaisemista."
+      "status": "pass",
+      "notes": "Perusvalkokastikkeessa voi, täysmaito ja vehnäjauhot: MAITO ja VEHNÄ yksilöity. Kypsennysvaihe 4–5 min kastikkeen kiehauttamisen jälkeen, ei raakaa lihaa eikä munaa. Kuumatarjoilu, yli +60 °C lämpösäilytys pitkään tarjottaessa ja nopea jäähdytys alle +6 °C varmennettu kirjallisesti. Rajattu food_safety PASS. Lähteet: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/ ."
     },
     "servings_and_time": {
       "status": "pass",

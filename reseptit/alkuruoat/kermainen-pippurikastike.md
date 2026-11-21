@@ -68,3 +68,4 @@ Täyteläinen pippurikastike pihveille, porsaanfileelle ja perunalisukkeille.
 - Kuva on tekoälyn tuottama havainnekuva, joka on nyt versionhallinnassa. Kuvan tarjoilukoristeet eivät kuulu ainesosamääriin.
 - Vertailulähde myös: Valion sipulia, lientä, kermaa ja sinappia sisältävä pippurikastike. Recipavon versio ei sisällä konjakkia eikä Valion pippurijuustokermaa. https://www.valio.fi/reseptit/konjakki-pippurikastike-pihveille/
 - Sisältää **maitoa ja sinappia**. Lihaliemi voi sisältää selleriä; tarkista liemen ja sinapin tuotetiedot.
+- Tarjoa pippurikastike kuumana. Jos sitä jää yli, jäähdytä nopeasti matalassa astiassa ja säilytä jääkaapissa alle +6 °C:ssa. Lihaliemen tarkka tuotekoostumus on tarkistettava mahdollisen sellerin ja muiden allergeenien vuoksi; kastikkeessa on maitoa ja sinappia.

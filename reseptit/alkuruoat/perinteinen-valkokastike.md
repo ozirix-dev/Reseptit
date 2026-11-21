@@ -67,3 +67,4 @@ Voista, maidosta ja vehnäjauhoista valmistuva peruskastike kalalle, perunoille 
 
 - Kuva on tekoälyn tuottama havainnekuva, joka on nyt versionhallinnassa. Kuvan tarjoilukoristeet eivät kuulu ainesosamääriin.
 - Sisältää **maitoa ja vehnää**. Sekoita kastiketta koko kuumennuksen ajan ja varmista, että jauhot kypsyvät eivätkä jää paakuiksi.
+- Tarjoa maitokastike lämpimänä heti; jos pidät sitä tarjolla pitkään, varmista yli +60 °C:n lämpösäilytys. Jäähdytä ylijäämät nopeasti matalassa astiassa ja säilytä jääkaapissa alle +6 °C:ssa. Kastike sisältää maitoa ja vehnää.

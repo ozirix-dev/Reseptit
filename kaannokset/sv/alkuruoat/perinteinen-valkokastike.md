@@ -62,3 +62,4 @@ En enkel vit sås av smör, mjöl och mjölk till fisk, potatis och grönsaker.
 
 - Den AI-genererade illustrationsbilden är nu versionshanterad. Dekorationer på bilden ingår inte i receptmängderna.
 - Innehåller **mjölk och vete**. Rör under uppvärmningen och se till att mjölet tillagas utan klumpar.
+- Servera mjölksåsen varm direkt; vid längre varmhållning ska temperaturen vara över +60 °C. Kyl rester snabbt i ett grunt kärl och förvara under +6 °C. Innehåller mjölk och vete.
