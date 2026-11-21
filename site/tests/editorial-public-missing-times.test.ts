@@ -143,3 +143,21 @@ test("#327: repeated-step source references and duplicate entries are validated"
   assert.throws(() => compareInventories(duplicatePhrase, [recipe(null)]),
     /DUPLICATE_RAW_REPEAT_PHRASE/);
 });
+
+test("#327: invalid public total-time values fail closed with recipe ID", () => {
+  const invalidValues = [undefined, Number.NaN, Number.POSITIVE_INFINITY, Number.NEGATIVE_INFINITY, 0, -1, 1.5, "45"];
+  for (const value of invalidValues) {
+    const publicRecipe = { ...recipe(null), timeTotalMin: value as number };
+    assert.throws(() => compareInventories(raw, [publicRecipe]),
+      /INVALID_PUBLIC_TOTAL_TIME: aika-puuttuu/,
+      "Invalid time should be rejected: " + String(value));
+  }
+});
+
+test("#327: null is a missing time and positive integer minutes are accepted", () => {
+  for (const minutes of [1, 45, 120]) {
+    const report = compareInventories(raw, [recipe(minutes)]);
+    assert.equal(report.totals.projectedMissingTimes, 0);
+  }
+  assert.equal(compareInventories(raw, [recipe(null)]).totals.projectedMissingTimes, 1);
+});
