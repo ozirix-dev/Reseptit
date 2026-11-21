@@ -11,6 +11,7 @@ import {validateGk80Candidate} from './gk80-release';
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { access, readFile, readdir } from "node:fs/promises";
+import { assertChangedRecipeImageSource } from "./recipe-draft-image-gate";
 import path from "node:path";
 import { changedSemanticReviewErrors, loadSemanticEvidence, preparationRegressionErrors, semanticHash } from "./translation-semantic-review";
 import { auditTranslations } from "./translation-audit";
@@ -120,12 +121,7 @@ for (const relativePath of recipePaths) {
     const sources = [data.image.src, ...(data.image.srcset ?? []).map((item) => item.src)];
     const imageRoot = path.resolve(process.env.PROJECT_IMAGE_ROOT || path.join(repoRoot, "kuvat"));
     for (const source of sources) {
-      const target = path.resolve(imageRoot, source);
-      const relative = path.relative(imageRoot, target);
-      if (relative.startsWith("..") || path.isAbsolute(relative)) {
-        throw new Error(`Image source escapes its root: ${source}`);
-      }
-      await access(target);
+      await assertChangedRecipeImageSource(source, data.status, imageRoot, path.join(repoRoot, "kuvat"));
     }
   }
   changedRecipes.push({ path: relativePath, data, markdown });
