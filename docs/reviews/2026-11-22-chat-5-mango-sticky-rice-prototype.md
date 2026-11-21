@@ -37,7 +37,7 @@ Tässä ehdotuksessa käytetään **thaimaalaista glutiini-/tahmariisiä**, jonk
 | Halkaistuja kuorittuja keltaisia mungpapuja, kuiva paino | 12 g | Mukana annoksessa; keitetään/kuivataan/paahdetaan kypsiksi valmistajan käsittelyohjeen mukaan |
 | Riisin liotus- ja höyrytysvesi | tarpeen mukaan | Valmistusapua, joka jää pois syötävästä ainespainosta; ei laskea imeytyneeksi ilman kypsennetyn saannon mittausta |
 
-**Yhteismassa ennen riisin vesisaannon muutoksia:** kuivat ja syötäväksi tulevat mitatut raaka-aineet 1 080 g sekä 20 g kastikkeeseen käytettävää vettä. Tämä ei ole valmiin ruoan tarkka annossaanto. Mangon 500 g tarkoittaa *syötävää* osuutta, ei ostettavan hedelmän kokonaispainoa. Mungpapu on suunnitellusti mukana eikä “kuvan lisuke laskennan ulkopuolella”.
+**Yhteismassa ennen riisin vesisaannon muutoksia:** 1 080 g sisältäen myös 20 g kastikkeeseen käytettävää vettä. Tämä ei ole valmiin ruoan tarkka annossaanto. Mangon 500 g tarkoittaa *syötävää* osuutta, ei ostettavan hedelmän kokonaispainoa. Mungpapu on suunnitellusti mukana eikä “kuvan lisuke laskennan ulkopuolella”.
 
 ### Valmistus (uusi kirjallinen koemenetelmä)
 
