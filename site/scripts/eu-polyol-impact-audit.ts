@@ -47,6 +47,9 @@ export async function audit() {
   const invalidOrOther: string[] = [];
   let evaluated = 0, equalErrors = 0;
   let nestedEuTotal = 0, nestedEuTotalUnverified = 0;
+  const unverifiedInputs: Array<{recipe_id: string; file: string; item: string;
+    record_id: string; before: unknown; after: unknown; oldRecipeStatus?: string;
+    newRecipeStatus?: string}> = [];
   for (const name of files) {
     const rel = calculations + "/" + name;
     let input: Calculation;
@@ -63,11 +66,21 @@ export async function audit() {
       const verified = (record.polyolsSourceVerified === true && Boolean(record.polyolsEvidence?.trim()))
         || Boolean(record.componentValues && record.componentIds?.POLYL === 2260
           && Object.hasOwn(record.componentValues, "POLYL"));
-      if (!verified) nestedEuTotalUnverified++;
+      if (!verified) {
+        nestedEuTotalUnverified++;
+        unverifiedInputs.push({recipe_id: input.recipeId, file: rel,
+          item: ingredient.item, record_id: record.id,
+          before: capture(() => previous.normalizeCarbohydrate(record)),
+          after: capture(() => normalizeCarbohydrate(record))});
+      }
     }
     const before = capture(() => previous.calculate(input));
     const after = capture(() => calculate(input));
     evaluated++;
+    for (const row of unverifiedInputs.filter(x => x.file === rel)) {
+      row.oldRecipeStatus = before.ok ? (before.result as {status?: string}).status : "ERROR";
+      row.newRecipeStatus = after.ok ? (after.result as {status?: string}).status : "ERROR";
+    }
     if (!before.ok && !after.ok && equal(before, after)) equalErrors++;
     if (!equal(before, after)) calculationChanges.push({
       file: rel, recipe_id: input.recipeId, before, after,
@@ -86,6 +99,7 @@ export async function audit() {
     calculationInputs: {
       directory: calculations, scannedJsonFiles: files.length, evaluated, equalErrors,
       skipped: invalidOrOther, nestedEuTotal, nestedEuTotalUnverified,
+      unverifiedInputs,
       changedResults: calculationChanges.length, differences: calculationChanges,
     },
     readyAuthorized: false, mergeAuthorized: false, deployAuthorized: false,
@@ -110,6 +124,14 @@ export async function audit() {
     "Tämä on kattavuudeltaan rajattu auditointi; hyväksyttyihin GK-only-variantteihin",
     "ei saa soveltaa uutta koodihashia ilman niiden erillistä sinettikatselmointia.", "",
   ];
+  if (unverifiedInputs.length) {
+    lines.push("## Varmentamattomien syötteiden tapausluettelo", "");
+    for (const row of unverifiedInputs) lines.push("- `" + row.recipe_id + "` / `" + row.record_id
+      + "`: " + row.item + "; normalisointi ennen: " + JSON.stringify(row.before)
+      + ", jälkeen: " + JSON.stringify(row.after) + "; reseptitila: "
+      + (row.oldRecipeStatus ?? "unknown") + " → " + (row.newRecipeStatus ?? "unknown"));
+    lines.push("");
+  }
   if (invalidOrOther.length) lines.push("Muita/ohitettuja laskentatiedostoja: " + invalidOrOther.length, "");
   await writeFile(path.join(tmp, "current.md"), lines.join("\n"));
   return result;
@@ -123,6 +145,11 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
       calculationInputs: result.calculationInputs.evaluated,
       changedCalculations: result.calculationInputs.changedResults,
       nestedEuTotalUnverified: result.calculationInputs.nestedEuTotalUnverified,
+      unverifiedInputs: result.calculationInputs.unverifiedInputs.map(x => ({
+        recipe_id: x.recipe_id, record_id: x.record_id,
+        before: x.before, after: x.after,
+        oldRecipeStatus: x.oldRecipeStatus, newRecipeStatus: x.newRecipeStatus,
+      })),
       report: "tmp/eu-polyol-impact/current.json",
     }));
     if (result.catalogue.differentNormalizedRecords || result.calculationInputs.changedResults) process.exitCode = 1;
