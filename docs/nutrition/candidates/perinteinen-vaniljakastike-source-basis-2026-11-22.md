@@ -46,3 +46,9 @@ Kaava per ainesosa = syötävä massa (g) × ilmoitettu ravintotekijä (g/100 g)
 4. Päivitä ravintoarvokentät kaikkiin FI/EN/SV/TH-tiedostoihin vasta hyväksytyn laskentatodisteen jälkeen. GK pidetään määrittämättömänä; kaikki neljä kieliversiota sekä PR #808 pysyvät **Draft/HOLD**.
 
 **Ei merkitä `checks.nutrition: pass` eikä hyväksytä kuvaa, käännöstä, Readyä, mergeä tai tuotantodeployta tämän esiselvityksen perusteella.**
+
+## Tuotetietojen ristivertailu 22.11.2026
+
+- Valmistajan [Mauste-Sallinen / Salliselta Vaniljasokeri](https://salliselta.fi/tuotteet/mausteet/vaniljasokeri) ilmoittaa ravintokuitua **0,0 g / 100 g**, kun taas [S-kaupat – sama Salliselta Vaniljasokeri, EAN 6436501050550](https://www.s-kaupat.fi/tuote/salliselta-vaniljasokeri-500g/6436501050550) ilmoittaa ravintokuitua **0,6 g / 100 g**. Nämä tiedot koskevat nimellisesti samaa tuotetta mutta **eivät täsmää**. Ero vastaa 8 gramman annosraaka-aineessa noin 0,048 g koko reseptierää ja 0,008 g / annos; laskennallinen yläraja ei itsessään korvaa hyväksyttyä lähdearvoa.
+- Molemmat lähteet ilmoittavat hiilihydraattia **98,7 g / 100 g** ja rasvaa/proteiinia 0 g. Kumpikaan ei anna nimenomaista numeerista polyoliarvoa. Vaniljasokerille ei siis aseteta `polyols: 0` kumpaankaan perustuen.
+- Valmistajan ilmoittama kuitu 0 g valittiin aiemmassa **vain esimerkkiä** koskevassa koosteessa; se ei ole ristiriidaton lopullinen kuituevidenssi. Ristiriita ja polyolipuutteet estävät edelleen neljän julkaistavan makroarvon hyväksynnän.
