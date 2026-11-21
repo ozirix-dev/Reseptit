@@ -62,7 +62,7 @@ ingredients:
 
 # Köttbullar med brunsås och potatismos
 
-Köttbullar med brunsås och potatismos on osa suomalaista perinneruokaa.
+Detta är ett traditionellt recept ur det finska hemmaköket.
 
 ## Gör så här
 

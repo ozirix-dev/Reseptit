@@ -62,7 +62,7 @@ ingredients:
 
 # Finnish Meatballs with Brown Gravy and Mashed Potatoes
 
-Finnish Meatballs with Brown Gravy and Mashed Potatoes on osa suomalaista perinneruokaa.
+This is a traditional Finnish home-cooking recipe.
 
 ## Preparation
 
