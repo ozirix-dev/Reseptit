@@ -56,3 +56,4 @@ Brynt vetemjöl, smör och köttbuljong ger en fyllig sås till köttbullar och 
 
 - Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Den AI-genererade illustrationsbilden finns i denna gren och kräver fortfarande redaktionell granskning.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/ruskea-kastike
+- Innehåller **mjölk, vete och soja**. Sojasås kan även innehålla vete, och buljong kan innehålla selleri. Kontrollera produktmärkningen.

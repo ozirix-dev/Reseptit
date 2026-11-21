@@ -61,3 +61,4 @@ Voissa ruskistettu vehnäjauho ja lihaliemi tekevät täyteläisen kastikkeen li
 
 - Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn tuottama havainnekuva, joka on mukana tässä haarassa ja vaatii toimituksellisen tarkistuksen.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.k-ruoka.fi/reseptit/ruskea-kastike
+- Sisältää **maitoa, vehnää ja soijaa**. Soijakastike voi sisältää myös vehnää; lihaliemi voi sisältää esimerkiksi selleriä. Tarkista valittujen tuotteiden etiketit.

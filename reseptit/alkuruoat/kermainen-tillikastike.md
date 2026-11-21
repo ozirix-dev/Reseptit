@@ -63,3 +63,4 @@ Kylmä, raikas tillikastike uunilohelle, paistetulle kalalle ja uusille perunoil
 
 - Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn tuottama havainnekuva, joka on mukana tässä haarassa ja vaatii toimituksellisen tarkistuksen.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.valio.fi/reseptit/tillikastike-kalalle/
+- Sisältää **maitoa** (kermaviili). Tarjoa kylmänä ja säilytä peitettynä jääkaapissa.

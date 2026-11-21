@@ -58,3 +58,4 @@ A cool, fresh dill sauce for baked fish, fried fish and new potatoes.
 
 - Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The AI-generated illustrative image is included in this branch and still requires editorial review.
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/tillikastike-kalalle/
+- Contains **milk** (cultured sour cream). Serve chilled and keep covered in the refrigerator.

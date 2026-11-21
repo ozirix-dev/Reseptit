@@ -58,3 +58,4 @@ ingredients:
 
 - ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพประกอบสร้างด้วย AI อยู่ในสาขานี้แล้ว แต่ยังต้องผ่านการตรวจทาน
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/tillikastike-kalalle/
+- มี **นม** (ครีมเปรี้ยว) เสิร์ฟเย็นและเก็บในภาชนะปิดฝาในตู้เย็น.
