@@ -10,6 +10,10 @@ translation_of: perinteinen-munakastike
 status: draft
 servings: 4
 time_total_min: 20
+carbs_net_per_serving_g: 10.53
+carbs_total_per_serving_g: 10.9
+protein_per_serving_g: 7.89
+fat_per_serving_g: 12.52
 difficulty: "ง่าย"
 main_ingredient:
   - "kananmuna"
@@ -60,7 +64,7 @@ ingredients:
 
 ## หมายเหตุ
 
-- นี่คือฉบับร่าง ยังไม่ได้ประเมินโภชนาการ ภาระน้ำตาล หรืออนุมัติภาพประกอบขั้นสุดท้าย
+- ฉบับร่างนี้มีค่าทางโภชนาการประมาณจาก Fineli โดยจำกัดผลกระทบของพริกไทยขาวปริมาณน้อยด้วยขอบเขตตามมวล ยังคงไม่มีค่า GK และการอนุมัติภาพขั้นสุดท้าย
 - Preparation reference: https://www.martat.fi/reseptit/kananmunakastike/
 
 - ภาพประกอบจาก AI อยู่ในสาขานี้แล้ว แต่ยังไม่ได้รับการอนุมัติ

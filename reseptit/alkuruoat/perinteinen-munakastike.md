@@ -7,6 +7,10 @@ language: fi
 status: draft
 servings: 4
 time_total_min: 20
+carbs_net_per_serving_g: 10.53
+carbs_total_per_serving_g: 10.9
+protein_per_serving_g: 7.89
+fat_per_serving_g: 12.52
 difficulty: "helppo"
 main_ingredient:
   - "kananmuna"
@@ -65,7 +69,7 @@ Lempeä valkokastike, jossa on kovaksi keitettyä kananmunaa ja tuoretta tilliä
 
 ## Muistiinpanot
 
-- Sisältö on toimituksellinen luonnos, ravintoarvo- ja GK-arvio sekä kuvan lopullinen hyväksyntä puuttuvat.
+- Sisältö on toimituksellinen luonnos. Ravintoarvot ovat Fineli-lähteistä laskettuja annosarvioita, ja valkopippurin pieni vaikutus on rajattu massan perusteella. GK ja kuvahyväksyntä puuttuvat.
 - Valmistuksen vertailulähde: https://www.martat.fi/reseptit/kananmunakastike/
 
 - Kuva on tekoälyn luoma havainnekuva tässä haarassa. Hyväksyntä puuttuu.

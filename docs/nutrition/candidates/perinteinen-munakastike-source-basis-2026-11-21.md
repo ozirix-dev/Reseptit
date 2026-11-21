@@ -9,3 +9,7 @@ Valkopippurin puuttuvaa polyolitietoa ei korvata nollalla: massan 0,3g/4 annosta
 Ainesosista laskettu ehdokasarvio per annos: nettohiilihydraatit **10.53 g**, kokonaishiilihydraatit **10.9 g**, proteiini **7.89 g**, rasva **12.52 g**. Odottaa mallin ja kieliversioiden sidontatarkistusta; GK määrittämätön.
 
 Täsmällinen syöttöhash `62e86f7d10d579ad254c652fb645c489ddd63449d72432b87ce8fe0c6256ea0c`. Evidenssitiedosto `docs/nutrition/calculations/perinteinen-munakastike.json`.
+
+## Nelikielinen laskennallinen annosarvio
+
+Koko reseptin raaka-aineiden Fineli-pohjainen arvio per neljä annosta: nettohiilihydraatit **10,53 g**, kokonaishiilihydraatit kuituineen **10,90 g**, proteiini **7,89 g**, rasva **12,52 g** annosta kohden. Valkopippurin osuus on rajattu enintään 0,08 g ravintoainetta ja 0,68 kcal annosta kohti; puuttuvaa tietoa ei käsitelty nollana. Arvot lisättiin FI/EN/SV/TH-resepteihin; GK ja julkaisun muut portit odottavat.

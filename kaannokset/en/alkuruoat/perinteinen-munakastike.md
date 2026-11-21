@@ -10,6 +10,10 @@ translation_of: perinteinen-munakastike
 status: draft
 servings: 4
 time_total_min: 20
+carbs_net_per_serving_g: 10.53
+carbs_total_per_serving_g: 10.9
+protein_per_serving_g: 7.89
+fat_per_serving_g: 12.52
 difficulty: "easy"
 main_ingredient:
   - "kananmuna"
@@ -60,7 +64,7 @@ A mild milk-based sauce with chopped hard-boiled eggs and fresh dill.
 
 ## Notes
 
-- This is an editorial draft; nutrition and glycaemic load assessments and final image approval are pending.
+- Editorial draft with Fineli-based estimated nutrition. White pepper's small contribution is conservatively mass-bounded; glycaemic load and final image approval are still pending.
 - Preparation reference: https://www.martat.fi/reseptit/kananmunakastike/
 
 - The AI-generated image is included in this branch, pending approval.

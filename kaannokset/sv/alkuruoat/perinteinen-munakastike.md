@@ -10,6 +10,10 @@ translation_of: perinteinen-munakastike
 status: draft
 servings: 4
 time_total_min: 20
+carbs_net_per_serving_g: 10.53
+carbs_total_per_serving_g: 10.9
+protein_per_serving_g: 7.89
+fat_per_serving_g: 12.52
 difficulty: "enkel"
 main_ingredient:
   - "kananmuna"
@@ -60,7 +64,7 @@ En mild mjölkbaserad sås med hackade hårdkokta ägg och färsk dill.
 
 ## Anteckningar
 
-- Detta är ett redaktionellt utkast; näringsvärden, glykemisk belastning och slutligt bildgodkännande återstår.
+- Redaktionellt utkast med Fineli-beräknade näringsvärden. Vitpepparns lilla bidrag är konservativt massbegränsat; glykemisk belastning och slutlig bildgranskning återstår.
 - Preparation reference: https://www.martat.fi/reseptit/kananmunakastike/
 
 - Den AI-genererade bilden finns i denna gren och inväntar granskning.
