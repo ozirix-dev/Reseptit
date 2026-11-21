@@ -310,6 +310,31 @@ jobs:
           if-no-files-found: error
           retention-days: 14
 
+      # #369: verify real written FI approval snapshots; never auto-authorize release.
+      - name: Verify five documented FI source approvals (read-only pilot)
+        id: fi_approved_pilot
+        if: >-
+          steps.select.outputs.needs_node == 'true' &&
+          (contains(steps.select.outputs.changed_paths, 'fi-approved-source-pilot') ||
+           (github.event_name == 'pull_request' &&
+            contains(steps.select.outputs.changed_paths, '.github/workflows/pages.yml')))
+        working-directory: site
+        run: |
+          npx tsx --test tests/fi-approved-source-pilot.test.ts
+          npx tsx scripts/fi-approved-source-pilot.ts
+          cat ../tmp/fi-source-approved-pilot/current.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload five FI approval source pilot (advisory)
+        if: steps.fi_approved_pilot.outcome == 'success'
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: fi-approved-source-pilot-five
+          path: |
+            tmp/fi-source-approved-pilot/current.json
+            tmp/fi-source-approved-pilot/current.md
+          if-no-files-found: error
+          retention-days: 14
+
       - name: Check new recipes for semantic duplicates (advisory)
         if: steps.select.outputs.run_content == 'true'
         env:
