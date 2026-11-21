@@ -8,3 +8,7 @@
 - Tarkastettava ennen julkaisua: raaka-aineet, työjärjestys, allergeenit (maito, kananmuna), ravintolaskelma ja GK-status, kielien merkitys sekä kuva.
 - Kuva tallennettu GitHubiin `kuvat/jalkiruoat/perinteinen-vaniljakastike.webp` (960 × 640). AI-havainnekuva. Kuvassa vihreitä yrttejä, joita ei kuulu vaniljakastikkeeseen: KUVA EI VASTAA RESEPTIÄ, korvattava ennen julkaisua.
 - Ei gluteenittomuus- tai muuta ruokavalioväitettä ilman tarkistusta.
+
+## Korvaava kuva, Chat 3 (21.11.2026)
+
+Vanha vihreitä yrttejä sisältänyt kuva on korvattu havainnekuvalla, joka esittää vaaleankeltaista sileää vaniljakastiketta ja taustalla piirakkaa. `kuvat/jalkiruoat/perinteinen-vaniljakastike.webp`, 960 × 640, 16282 tavua, SHA-256 `6508c960e4858abfd4571303f0d3c5f81499a0f72fbbfb8b7851c9d0baa67734`. Kuva rajattu AI-generoidusta kuvakollaasista; se on edelleen kuvitus eikä koekeittiövalokuva. Alt-tekstit FI/EN/SV/TH päivitetty. Kuva ei ole vielä toimituksellisesti lopullisesti hyväksytty; ravinto/GK ja kielikatselmointi odottavat; HOLD.

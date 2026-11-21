@@ -15,3 +15,9 @@ Julkaisun portit: kuvien korvaaminen/viimeistely tarpeen mukaan ja hyväksyntä,
 ## CI-kuvasyötteen varmennus 21.11.2026
 
 Kymmenen Git-tracked WebP-kuvaa lisättiin `assets/images.tracked-overlays.json`-tiedostoon tarkalla tavumäärällä ja SHA-256-tiivisteellä. Manifestin `approved: true` vahvistaa tämän yksilöidyn kuvatiedoston teknisesti hyväksytyksi CI:n erilliseksi lähdesyötteeksi. **Se ei ole** sisällöllinen/valokuvallinen hyväksyntä, julkaisulupa eikä valmis ravintoarvio. Erityisesti kantarelli-, puolukka- ja vaniljakastikkeen kuvien sisällöllinen HOLD säilyy, kunnes vastaava kuva vaihdetaan tai hyväksytään perustellusti. R2:n alkuperäistä 396 kuvan varmennettua arkistoa ei muutettu.
+
+## Kolmen kuvan korjauspäätös – Chat 3, 21.11.2026
+
+Aiemmin ongelmalliset kantarelli-, puolukka- ja vaniljakastikkeen WebP-kuvat on nyt vaihdettu. Kantarelli- ja puolukkakastikkeelle on erikseen luotu alkuperäinen AI-havainnekuva; vaniljakastikkeelle on rajattu aineksia vastaava kuva AI-kollaasista. Kaikki ovat 960 × 640. Nelikieliset alt-tekstit ja puolukkakastikkeen osittain kokonaisia marjoja salliva valmistusohje on päivitetty. Kuvien uudet tavumäärät ja SHA-256-syötteet on kirjattu tekniseen kuvamanifestiin. Aiemmat kuvahavainnot koskevat nyt korvattuja historiallisia versioita.
+
+**Tämän täydennyksen rajaus:** tekninen kuvanvaihto ja silmämääräinen sisältövastaavuuden parannus, ei virallinen toimituksellinen kuvahyväksyntä. Tämä ei muodosta ravintolaskelmaa, GK-päätöstä, kielten versiosidonnaista merkitysvertailua tai Repo Guardin Ready/merge-lupaa. Kaikki 10 reseptiä ovat edelleen `status: draft` ja PR on HOLD.

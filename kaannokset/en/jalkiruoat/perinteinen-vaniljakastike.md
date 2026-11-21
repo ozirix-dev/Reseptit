@@ -21,7 +21,7 @@ tags:
   - "Finnish"
 image:
   src: jalkiruoat/perinteinen-vaniljakastike.webp
-  alt: "Pale yellow custard sauce in a glass bowl, with green garnish visible in the illustration"
+  alt: "Smooth pale-yellow vanilla custard sauce in a glass bowl, with berry pie in the background; AI illustration"
   width: 960
   height: 640
 ingredients:

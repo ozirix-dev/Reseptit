@@ -21,7 +21,7 @@ tags:
   - "finsk"
 image:
   src: jalkiruoat/perinteinen-vaniljakastike.webp
-  alt: "Ljusgul vaniljsås i glasskål, med grön dekoration på illustrationsbilden"
+  alt: "Slät ljusgul vaniljsås i en glasskål, med bärpaj i bakgrunden; AI-bild"
   width: 960
   height: 640
 ingredients:
