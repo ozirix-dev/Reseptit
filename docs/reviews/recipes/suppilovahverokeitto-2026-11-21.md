@@ -8,3 +8,11 @@
 - Allergeenit: maito, vehnä. EI gluteeniton-merkintää ilman tarkistusta.
 - FI/EN/SV/TH käännösluonnokset, AI-kuva 960 x 746. Ravintoarvoja ja GK:ta ei laskettu.
 - Seuraava portti: riippumaton merkityskatselmointi, turvallisuus, kuva ja CI, statusmuutos.
+
+## Riippumaton lähde- ja turvallisuusvertailu, 21.11.2026 (kirjallinen)
+
+- Marttojen suppilovahverokeiton vertailu: https://www.martat.fi/reseptit/suppilovahverokeitto-2/. Marttojen versiossa on 1 litra tuoreita sieniä, kasvisliemi, ruokakerma ja **100 g sulatejuustoa**. Recipavo on oma, erilainen muunnelma: 300 g tuoreita sieniä, 800 g kasvislientä, 200 g kermaa mutta **ei sulatejuustoa**. Marttojen ravintoarvoja ei voi käyttää tässä.
+- Ruokaviraston ohje https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-tunnistaminen/ edellyttää kaikki tuntomerkit huomioivaa lajintunnistusta. Tuntematonta sientä ei käytetä. Tuoreiden sienten kuivalla pannulla haihdutuksen ja kypsennettävän jauhosuurusteen järjestys on lähdeohjeeseen verrattavissa.
+- Allergeenit: maito ja vehnä; kasvisliemen mahdolliset muut allergeenit tarkistettava tuotteen pakkauksesta. Tämä on **kirjallinen** turvallisuusarvio, ei sienen tunnistustesti eikä koekeitto.
+- Neljän kieliversion määrä-/yksikkö-/vaihelukema ja kuvaosoitteen rakenteellinen yhtenevyys on tarkistettu; lopullinen sanallinen merkitysvertailu sekä lajinkuvauksen ymmärrettävyys thaiksi puuttuvat.
+- **HOLD:** fyysistä valmistusta tai ravintoarvolaskelmaa ei ole tehty; sienien määrästä ja kasvisliemen suolaisuudesta riippuva loppumaku tarkistettava. Virallinen hyväksyntä `decision: hold` säilytetään. Cloudflare-julkaisua ei tehdä.
