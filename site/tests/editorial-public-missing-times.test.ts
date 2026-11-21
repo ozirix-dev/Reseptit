@@ -83,3 +83,63 @@ test("#327: source/public agreement has no time parity deltas", () => {
   assert.deepEqual(report.sourceOnly.rawMissingTimeNoLongerVisible, []);
   assert.deepEqual(report.sourceOnly.publicMissingTimeNotInRaw, []);
 });
+
+test("#327: stale source hashes in raw signal lists fail closed", () => {
+  const stale = { ...evidence, sourceSha256: "b".repeat(64) };
+  const signalNames = ["genericLead", "duplicateDescription", "missingTime"] as const;
+  for (const signal of signalNames) {
+    const inconsistent: RawInventory = {
+      ...raw,
+      signals: { ...raw.signals, [signal]: [stale] },
+    };
+    assert.throws(() => compareInventories(inconsistent, [recipe(null)]),
+      new RegExp("RAW_SIGNAL_SOURCE_DRIFT: " + signal));
+  }
+});
+
+test("#327: unknown and duplicated raw signal identities fail closed", () => {
+  const unknown = { ...evidence, recipeId: "tuntematon" };
+  const missing: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingTime: [unknown] },
+  };
+  assert.throws(() => compareInventories(missing, [recipe(null)]),
+    /RAW_SIGNAL_SOURCE_DRIFT: missingTime:tuntematon/);
+  const duplicated: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingTime: [evidence, evidence] },
+  };
+  assert.throws(() => compareInventories(duplicated, [recipe(null)]),
+    /DUPLICATE_RAW_SIGNAL: missingTime:aika-puuttuu/);
+});
+
+test("#327: repeated-step source references and duplicate entries are validated", () => {
+  const phrase = "keitä nämä ainekset hiljalleen riittävän pitkään ja sekoita sitten varovasti";
+  const drift: RawInventory = {
+    ...raw,
+    signals: {
+      ...raw.signals,
+      repeatedSteps: [{ phrase, recipes: [{ ...evidence, path: "wrong.md" }] }],
+    },
+  };
+  assert.throws(() => compareInventories(drift, [recipe(null)]),
+    /RAW_SIGNAL_SOURCE_DRIFT: repeatedSteps:aika-puuttuu/);
+  const duplicated: RawInventory = {
+    ...raw,
+    signals: {
+      ...raw.signals,
+      repeatedSteps: [{ phrase, recipes: [evidence, evidence] }],
+    },
+  };
+  assert.throws(() => compareInventories(duplicated, [recipe(null)]),
+    /DUPLICATE_RAW_REPEAT_RECIPE: aika-puuttuu/);
+  const duplicatePhrase: RawInventory = {
+    ...raw,
+    signals: {
+      ...raw.signals,
+      repeatedSteps: [{ phrase, recipes: [evidence] }, { phrase, recipes: [evidence] }],
+    },
+  };
+  assert.throws(() => compareInventories(duplicatePhrase, [recipe(null)]),
+    /DUPLICATE_RAW_REPEAT_PHRASE/);
+});
