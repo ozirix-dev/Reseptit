@@ -1,8 +1,27 @@
 # Chat 3 – kastikkeiden ravintolaskennan lähtöaineisto
 
+## Nykytilanne – Chat 3, 21.11.2026
+
+**4/10 kastikkeella on nyt lähdeaineistoon sidottu ravintolaskentapaketti, neljä makroarvoa kaikilla kielillä ja reseptikohtainen `nutrition: pass` -katselmointimerkintä.** Kaikki reseptit ja niiden käännökset ovat edelleen Draft/HOLD; GK on määrittämätön. Arvot ovat ainesosien keskiarvoista laskettuja arvioita, eivät tuotemerkkien tai laboratorion mittaustuloksia.
+
+| Kastike | Annoksia | Nettohiilihydraatit g | Kokonaishiilihydraatit g | Proteiini g | Rasva g | Pienet lähdepuutteet |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| Kermainen tillikastike | 4 | 2,89 | 3,07 | 1,52 | 6,04 | Ei poisjätettyjä ainesosia |
+| Puolukkakastike | 6 | 12,88 | 13,92 | 0,23 | 0,27 | Ei siivilöintiä, marjakuitu mukana |
+| Perinteinen valkokastike | 6 | 8,36 | 8,57 | 3,25 | 7,75 | Valkopippuri 0,4 g ja muskottipähkinä 0,2 g: yhteinen konservatiivinen yläraja 0,11 g/makro/annos ja 0,9 kcal/annos |
+| Perinteinen munakastike | 4 | 10,53 | 10,90 | 7,89 | 12,52 | Valkopippuri 0,3 g: yläraja 0,08 g/makro/annos ja 0,68 kcal/annos |
+
+Kaikkien neljän FI-lähteen täsmä-SHA256, ravintolaskennan syöttötiiviste ja ainesosarivit on tarkistettu omiin `docs/reviews/new-recipes/*.json` ja `docs/nutrition/calculations/*.json` -paketteihin. Kaikki 16 FI/EN/SV/TH-tiedostoa sisältävät yhtenevät neljä makroarvoa ja `status: draft` -tilan.
+
+**Jäljellä 6:** ruskea kastike, kantarellikastike, sinappikastike, kylmä piparjuurikastike, kermainen pippurikastike ja vaniljakastike. Niiden ravintotietueet ovat vielä PENDING: tarvitaan lähteeseen sidotut Fineli-ainesosakortit tai nimettyjen tuotteiden ravintoarvot, kaikki makroravinteet ja polyolit sekä mahdolliset ml→g-muunnokset. Puuttuvaa tietoa ei korvata nollalla.
+
+Tämä raportti ei yksin täytä EN/SV/TH:n lopullista semanttista katselmointia, AI-kuvien julkaisuhyväksyntää, Repo Guardin Ready/merge-porttia eikä Cloudflare-tuotantojulkaisun erillistä lupaa.
+
+---
+
 **Päivä:** 21.11.2026; **PR:** #808; **lähtö-HEAD:** `10cce14b379aef981ebb80cbcbe7a266ac5c21a0`.
 
-Tämä ei ole ravintolaskelma eikä julkinen ravintoarvio. Kyseessä on kymmenen reseptin ainesosa- ja lähtötiivisteinventaario. Kaikki punnitut määrät, yksiköt ja FI-lähdetekstit on luettu GitHubin omasta Chat 3 -haarasta. Rivejä yhteensä **63**; nestetilavuutta ml-yksikössä ilmoittavia rivejä **10**, joihin tarvitaan tuotekohtainen g/ml-muunnos.
+Seuraava alkuperäinen inventaario kertoo lähtötilasta ennen yllä näkyviä neljää laskelmaa. Kyseessä on kymmenen reseptin ainesosa- ja lähtötiivisteinventaario. Kaikki punnitut määrät, yksiköt ja FI-lähdetekstit on luettu GitHubin omasta Chat 3 -haarasta. Rivejä yhteensä **63**; nestetilavuutta ml-yksikössä ilmoittavia rivejä **10**, joihin tarvitaan tuotekohtainen g/ml-muunnos.
 
 | recipe_id | Annoksia | Ainesrivejä | ml-rivejä | Laskennan input SHA-256 (alku) |
 | --- | ---: | ---: | ---: | --- |
@@ -25,7 +44,7 @@ Ainesosaluettelo, reseptin täydellinen SHA-256 sekä `recipeNutritionInputHash`
 - Määritä ml → g tuotekohtaisesti. Älä oleta kaikille kermoille, maidolle, nesteille tai liemille samaa tiheyttä tai jätä yksiköitä huomiotta.
 - Määritä syötävä osuus, valmisteen saanto ja keitto-/haihtumahävikki. Siivilöity ja siivilöimätön puolukkakastike ovat erisuuruisia saantoja.
 - Fineli-ainesosavastaavuus, polyolit/CHO-määritelmä ja ravintolaskennan turvallisuusrajat on tarkistettava projektin omalla `nutrition-model`-polulla.
-- **Kaikki neljä ravintoarvokenttää puuttuvat edelleen tarkoituksella.** GK:n numeerista arvoa ei julkaista ilman hyväksyttyä valmistuskohtaista GI-arviota. Lähtöaineiston kokoaminen ei anna Ready-/merge-/Cloudflare-lupaa.
+- **Kuuden laskemattoman kastikkeen ravintoarvokentät puuttuvat edelleen tarkoituksella.** GK:n numeerista arvoa ei julkaista ilman hyväksyttyä valmistuskohtaista GI-arviota. Lähtöaineiston kokoaminen ei anna Ready-/merge-/Cloudflare-lupaa.
 
 Lähteiden ja allergeenien alustava katselmointi on dokumentoitu `docs/reviews/new-recipes/` ja `docs/reviews/recipes/` -hakemistoissa. Tämä ei ole hyväksytty ravintoevidenssi `docs/nutrition/calculations/`-hakemistoon.
 
