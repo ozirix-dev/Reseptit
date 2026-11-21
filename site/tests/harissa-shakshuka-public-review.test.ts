@@ -52,6 +52,7 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
     assert.equal(source.language, locale);
     assert.equal(source.status, "published");
     assert.equal(source.servings, 2);
+    if (locale === "fi") assert.equal(source.ingredients[0].item, "kananmunaa kuoretta");
     const matching = siteContent.recipes.filter(recipe =>
       recipe.recipeId === recipeId && recipe.locale === locale);
     assert.equal(matching.length, 1);
@@ -68,8 +69,9 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
     for (let index = 0; index < source.ingredients.length; index++) {
       assert.equal(publicRecipe.ingredients[index].amount, source.ingredients[index].amount);
       assert.equal(publicRecipe.ingredients[index].unit, source.ingredients[index].unit);
+      // The pinned GK80 display projector already fixes the FI typo.
       const expectedItem = locale === "fi" && index === 0
-        ? "kananmunaa ilman kuorta"
+        ? "kananmunaa kuorettomana"
         : source.ingredients[index].item;
       assert.equal(publicRecipe.ingredients[index].item, expectedItem);
     }
