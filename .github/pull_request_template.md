@@ -9,19 +9,25 @@ Ohje: docs/rinnakkaisten-chatien-omistajuus.md.
 
 ## Työn omistajuus
 
-**Työn omistaja:** Chat N
-**Tehtävä:** 
-**Kirjoitushaara:** `chatN/tehtava-paiva`
-**Varatut / muutettavat tiedostot:** 
-**Rinnakkaiset PR:t ja mahdolliset riippuvuudet:** 
-**Tila:** Draft / Ready (valitse toteutunut)
-**Testattu HEAD ja CI:** odottaa / täsmällinen SHA ja ajolinkki
+Työn omistaja: Chat N
+
+Tehtävä: (lyhyt kuvaus)
+
+Kirjoitushaara: `chatN/tehtava-paiva`
+
+Varatut / muutettavat tiedostot: (polut)
+
+Rinnakkaiset PR:t ja mahdolliset riippuvuudet: (numerot tai ei)
+
+Tila: Draft / Ready (valitse toteutunut)
+
+Testattu HEAD ja CI: odottaa / täsmällinen SHA ja ajolinkki
 
 ## Toteutus ja tarkistukset
 
-**Mitä muutettiin:** 
+**Mitä muutettiin:** (yhteenveto)
 
-**Mitä ei muutettu:** 
+**Mitä ei muutettu:** (rajaukset)
 
 - [ ] Tarkistin `main`-tilan, avoimet PR:t ja tiedostojen päällekkäisyydet.
 - [ ] Tämä on oman chatin haara; en kirjoita toisen chatin PR-haaraan.
