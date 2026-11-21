@@ -181,7 +181,7 @@ test("bad FI source is isolated to source HOLD instead of aborting the whole bat
     const decision = await partitionFromLedger(root, {recipes:{good:sample,bad:sample}}, {});
     assert.equal(decision.total, 2);
     assert.deepEqual(decision.source_hold.map(x=>x.recipe_id), ["bad", "good"]);
-    assert.deepEqual(decision.source_hold.map(x=>x.recipe_id), ["bad", "good"]);
+    assert.equal(decision.needs_review.length, 0);
     assert.equal(decision.candidate.length, 0);
   } finally {
     await rm(root, {recursive:true,force:true});
