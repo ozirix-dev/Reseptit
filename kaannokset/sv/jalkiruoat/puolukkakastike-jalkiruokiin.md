@@ -57,3 +57,4 @@ En syrlig bärsås till glass, cheesecake eller ugnsdesserter.
 - Den tidigare felaktiga illustrationsbilden har ersatts. Den nya AI-bilden inväntar fortfarande redaktionellt godkännande.
 - Marttas provlagade bärsås värmer sockerlag före bärpurén; K-Ruoas lingonsås kokas inte. Recipavos kokta version med några hela bär är en egen anpassning utan provlagning av någon av källorna. https://www.martat.fi/reseptit/marjakastike/
 - De angivna ingredienserna innehåller ingen avsiktligt tillsatt mjölk, ägg, vete eller nötter. Kontrollera märkningen för möjliga spår; inget påstående om glutenfrihet har godkänts.
+- Den angivna totaltiden gäller varm servering. För kall servering behövs extra tid för avsvalning och kylning.

@@ -64,3 +64,4 @@ A smooth milk-and-egg-yolk custard for blueberry pie or apple crumble.
 - An AI-generated illustration is stored, but it does not fully match this recipe and must be replaced before publication.
 - Further comparison: the vanilla custard for K-Ruoka's biscuit baskets uses cornstarch and egg yolks; the Martat recipe uses potato starch instead. Quantities and preparation here are independent adaptations. https://www.k-ruoka.fi/reseptit/keksikorit
 - Contains **milk and eggs**. Heat gently as directed; if not serving immediately, cool promptly and refrigerate.
+- The stated total time is for serving the sauce warm. For cold serving, allow additional cooling and refrigeration time.
