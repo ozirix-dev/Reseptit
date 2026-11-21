@@ -1,0 +1,36 @@
+name: Chat 5 derived evidence verification
+
+on:
+  pull_request:
+    paths:
+      - "site/scripts/translation-derived-evidence-*.ts"
+      - "site/tests/translation-derived-evidence-*.test.ts"
+      - ".github/workflows/chat5-derived-evidence-review.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-evidence-tests:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+      - name: Verify derived evidence tests with real FI source paths
+        working-directory: site
+        run: npx tsx --test tests/translation-derived-evidence-ledger.test.ts tests/translation-derived-evidence-cli.test.ts
+      - name: Verify TypeScript source and test types
+        working-directory: site
+        run: npm run typecheck
+      - name: Record narrow scope
+        run: |
+          echo "Advisory targeted verification only; required Recipe site CI and human review are separate." >> "$GITHUB_STEP_SUMMARY"
+          echo "No approvals, GK seals or release authority were modified." >> "$GITHUB_STEP_SUMMARY"
