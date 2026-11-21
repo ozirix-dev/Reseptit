@@ -267,3 +267,51 @@ test("issue 404 B5: branded coconut milk label does not resolve source quantity 
   assert.equal(evidence.macrosAuthorized, false);
   assert.equal(evidence.publicationAuthorized, false);
 });
+
+test("issue 404 B5: dried salted cod comparisons and real self-raising flour never promote full macros", async () => {
+  const evidence = await readJsonCached(evidenceFile) as Preflight;
+  const saltfish = evidence.recipes.find((r) => r.recipeId === "karibia-saltfish-fritterit-punnittu-v2");
+  assert.ok(saltfish);
+  const [cod, flour] = saltfish.ingredients;
+  assert.equal(cod.reasonCode, "MISSING_EXACT_FOOD");
+  assert.equal(cod.amount, 160);
+  assert.equal(cod.externalEvidence?.approval, "RESEARCH_ONLY_COMPOSITION_COMPARATORS_NOT_SELECTED");
+  assert.equal(cod.externalEvidence?.productMatchApproved, false);
+  assert.equal(cod.externalEvidence?.desaltingProtocolApproved, false);
+  assert.equal(cod.externalEvidence?.desaltingYieldGramsVerified, false);
+  assert.equal(cod.externalEvidence?.desaltedNutrientCompositionVerified, false);
+  assert.equal(cod.externalEvidence?.carbohydratePolyolsVerified, false);
+  const references = cod.externalEvidence?.references as Array<{
+    type: string; proteinGPer100g: number; carbohydrateGPer100g: number; url: string;
+  }>;
+  assert.equal(references.length, 2);
+  assert.deepEqual(references.map((r) => r.proteinGPer100g), [28, 64.3]);
+  assert.ok(references.every((r) => r.carbohydrateGPer100g === 0 && r.url.startsWith("https://")));
+  assert.equal(cod.externalEvidence?.sourceProteinRangeIsNotAnApprovedUncertaintyInterval, true);
+
+  assert.equal(flour.reasonCode, "COMPOSITION_MISMATCH");
+  assert.equal(flour.candidateRecord?.recordId, "fineli-110-release-20");
+  assert.equal(flour.externalEvidence?.product, "Carr's Self Raising Flour 1 kg");
+  assert.equal(flour.externalEvidence?.sourceFlourAmountG, 300);
+  assert.equal(flour.externalEvidence?.declaredBasis, "PER_100_G_AS_SOLD");
+  assert.equal(flour.externalEvidence?.polyolsStatus, "NOT_REPORTED");
+  assert.equal(flour.externalEvidence?.labelledCarbohydratesIncludePolyols, true);
+  assert.equal(flour.externalEvidence?.recipeProductMatchApproved, false);
+  assert.equal(flour.externalEvidence?.fullRecipeMacrosApproved, false);
+  assert.equal(flour.externalEvidence?.approval, "RESEARCH_ONLY_PRODUCT_NOT_SELECTED");
+  const carbsPer100g = flour.externalEvidence?.labelledCarbohydrateGPer100g as number;
+  const flourOnlyBatch = 300 * carbsPer100g / 100;
+  assert.equal(Math.round(flourOnlyBatch * 100) / 100, 219.6);
+  assert.equal(flour.externalEvidence?.conditionalFlourOnlyLabelCarbohydrateGForBatch, 219.6);
+  assert.equal(flour.externalEvidence?.conditionalFlourOnlyLabelCarbohydrateGPer16Pieces, 13.725);
+
+  const report = await readFile(path.join(root,
+    "docs/nutrition/issue404-saltfish-product-review-2026-11-21.md"), "utf8");
+  assert.match(report, /Carr's Self Raising Flour/);
+  assert.match(report, /matvaretabellen.no\/en\/cod-split-salted-and-dried/);
+  assert.match(report, /\*\*Ei ilmoitettu\*\*/);
+  assert.match(report, /219,6 g/);
+  assert.equal(saltfish.status, "WITHHELD_SOURCE_INCOMPLETE");
+  assert.equal(evidence.macrosAuthorized, false);
+  assert.equal(evidence.publicationAuthorized, false);
+});
