@@ -1,0 +1,836 @@
+{
+  "schema_version": 1,
+  "owner": "Chat 3",
+  "pr": 808,
+  "created_at": "2026-11-21",
+  "git_base_head": "10cce14b379aef981ebb80cbcbe7a266ac5c21a0",
+  "calculation_engine": "site/scripts/nutrition-model.ts",
+  "input_hash_engine": "site/scripts/nutrition-evidence.ts:recipeNutritionInputHash",
+  "food_source_policy": "Use exact state-matched Fineli food records or verified package nutrition. Never infer missing nutrients, polyols, density, edible portion, or retention as zero.",
+  "nutrition_status": "ALL_WITHHELD_MISSING_SOURCE",
+  "recipes": [
+    {
+      "recipe_id": "perinteinen-ruskea-kastike",
+      "source_path": "reseptit/alkuruoat/perinteinen-ruskea-kastike.md",
+      "source_recipe_sha256": "64de523b007f780e8c98c9b6b267226769ad4a56a8d65170901016ea4b024b9e",
+      "nutrition_input_hash": "6430473ab6197e478bd8eaaebcd3e56d9afd03053e8c9efff1a47a77e113b381",
+      "servings": 4,
+      "ingredient_count": 5,
+      "ingredients": [
+        {
+          "row": 1,
+          "amount": 35,
+          "unit": "g",
+          "item": "voita",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 2,
+          "amount": 35,
+          "unit": "g",
+          "item": "vehnäjauhoja",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 3,
+          "amount": 500,
+          "unit": "ml",
+          "item": "vähäsuolaista valmista lihalientä",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 4,
+          "amount": 4,
+          "unit": "g",
+          "item": "soijakastiketta",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 5,
+          "amount": 1,
+          "unit": "g",
+          "item": "mustapippuria",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        }
+      ],
+      "status": "NOT_CALCULATED",
+      "publication": "WITHHELD",
+      "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI"
+    },
+    {
+      "recipe_id": "kermainen-tillikastike",
+      "source_path": "reseptit/alkuruoat/kermainen-tillikastike.md",
+      "source_recipe_sha256": "9886202473951cfcc39b5bd3b8153e3234df462f00488198041c7b2a9d1c3460",
+      "nutrition_input_hash": "2fa8e3c648a13f9751e383dc44ce17ac9a3e2e6faed26568facdfbe558c3693d",
+      "servings": 4,
+      "ingredient_count": 6,
+      "ingredients": [
+        {
+          "row": 1,
+          "amount": 200,
+          "unit": "g",
+          "item": "kermaviiliä",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 2,
+          "amount": 20,
+          "unit": "g",
+          "item": "tuoretta tilliä hienonnettuna",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 3,
+          "amount": 12,
+          "unit": "ml",
+          "item": "sitruunamehua",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 4,
+          "amount": 3,
+          "unit": "g",
+          "item": "sokeria",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 5,
+          "amount": 2,
+          "unit": "g",
+          "item": "suolaa",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 6,
+          "amount": 0.5,
+          "unit": "g",
+          "item": "mustapippuria",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        }
+      ],
+      "status": "NOT_CALCULATED",
+      "publication": "WITHHELD",
+      "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI"
+    },
+    {
+      "recipe_id": "kantarellikastike",
+      "source_path": "reseptit/alkuruoat/kantarellikastike.md",
+      "source_recipe_sha256": "4897d725507eefed20ab4343043c840271cd969002df0cfe049710f3be557c8d",
+      "nutrition_input_hash": "61bb6ce261bf3667c61d070968ef83a9aef7345e825768587a80066ebce2f6ab",
+      "servings": 4,
+      "ingredient_count": 9,
+      "ingredients": [
+        {
+          "row": 1,
+          "amount": 350,
+          "unit": "g",
+          "item": "puhdistettuja kantarelleja",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 2,
+          "amount": 70,
+          "unit": "g",
+          "item": "keltasipulia",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 3,
+          "amount": 25,
+          "unit": "g",
+          "item": "voita",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 4,
+          "amount": 20,
+          "unit": "g",
+          "item": "vehnäjauhoja",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 5,
+          "amount": 200,
+          "unit": "ml",
+          "item": "kuohukermaa",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 6,
+          "amount": 75,
+          "unit": "ml",
+          "item": "vettä",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 7,
+          "amount": 4,
+          "unit": "g",
+          "item": "suolaa",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 8,
+          "amount": 0.5,
+          "unit": "g",
+          "item": "mustapippuria",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 9,
+          "amount": 7,
+          "unit": "g",
+          "item": "persiljaa",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        }
+      ],
+      "status": "NOT_CALCULATED",
+      "publication": "WITHHELD",
+      "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI"
+    },
+    {
+      "recipe_id": "sinappikastike-joulukinkulle",
+      "source_path": "reseptit/alkuruoat/sinappikastike-joulukinkulle.md",
+      "source_recipe_sha256": "c7af7bff155955cdac484b69c1a4fcac057f631af49cabbe1e8fd33e7d22c4a6",
+      "nutrition_input_hash": "4f8899e9ffa87edc65db89624c8c8f02b0f62c33d658dbc592f42c40082c83f3",
+      "servings": 6,
+      "ingredient_count": 8,
+      "ingredients": [
+        {
+          "row": 1,
+          "amount": 200,
+          "unit": "ml",
+          "item": "ruokakermaa, noin 15 %",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 2,
+          "amount": 150,
+          "unit": "ml",
+          "item": "vähäsuolaista valmista kasvislientä",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 3,
+          "amount": 35,
+          "unit": "g",
+          "item": "mietoa sinappia",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 4,
+          "amount": 15,
+          "unit": "g",
+          "item": "karkeaa Dijon-sinappia",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 5,
+          "amount": 15,
+          "unit": "g",
+          "item": "voita",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 6,
+          "amount": 12,
+          "unit": "g",
+          "item": "vehnäjauhoja",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 7,
+          "amount": 5,
+          "unit": "g",
+          "item": "hunajaa",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 8,
+          "amount": 0.5,
+          "unit": "g",
+          "item": "mustapippuria",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        }
+      ],
+      "status": "NOT_CALCULATED",
+      "publication": "WITHHELD",
+      "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI"
+    },
+    {
+      "recipe_id": "kylma-piparjuurikastike",
+      "source_path": "reseptit/alkuruoat/kylma-piparjuurikastike.md",
+      "source_recipe_sha256": "d7b7b78ce717d4062ba015a8afa11bb23cccad9dac7089fc3bde6e6dca0c23c7",
+      "nutrition_input_hash": "71080036d23e12ad1727ba4d7b81f57baf79e767461e4847bbc41ed2dca4d7db",
+      "servings": 4,
+      "ingredient_count": 6,
+      "ingredients": [
+        {
+          "row": 1,
+          "amount": 200,
+          "unit": "g",
+          "item": "crème fraîchea, rasvaa noin 12 %",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 2,
+          "amount": 20,
+          "unit": "g",
+          "item": "tuoretta piparjuurta hienoksi raastettuna",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 3,
+          "amount": 12,
+          "unit": "ml",
+          "item": "sitruunamehua",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 4,
+          "amount": 5,
+          "unit": "g",
+          "item": "sokeria",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 5,
+          "amount": 2,
+          "unit": "g",
+          "item": "suolaa",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 6,
+          "amount": 8,
+          "unit": "g",
+          "item": "tuoretta ruohosipulia",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        }
+      ],
+      "status": "NOT_CALCULATED",
+      "publication": "WITHHELD",
+      "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI"
+    },
+    {
+      "recipe_id": "perinteinen-munakastike",
+      "source_path": "reseptit/alkuruoat/perinteinen-munakastike.md",
+      "source_recipe_sha256": "5738b3818aa294d2b67045857fc6587ab9e70b6647f64fd3a94064a159412619",
+      "nutrition_input_hash": "54b24ba297bc234ca0317d256f27fcc7e86e80d3f880af9d562adc0f291395c3",
+      "servings": 4,
+      "ingredient_count": 7,
+      "ingredients": [
+        {
+          "row": 1,
+          "amount": 400,
+          "unit": "ml",
+          "item": "täysmaitoa",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 2,
+          "amount": 30,
+          "unit": "g",
+          "item": "voita",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 3,
+          "amount": 30,
+          "unit": "g",
+          "item": "vehnäjauhoja",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 4,
+          "amount": 120,
+          "unit": "g",
+          "item": "kuorittuja kovaksi keitettyjä kananmunia",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 5,
+          "amount": 15,
+          "unit": "g",
+          "item": "tuoretta tilliä",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 6,
+          "amount": 3,
+          "unit": "g",
+          "item": "suolaa",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 7,
+          "amount": 0.3,
+          "unit": "g",
+          "item": "valkopippuria",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        }
+      ],
+      "status": "NOT_CALCULATED",
+      "publication": "WITHHELD",
+      "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI"
+    },
+    {
+      "recipe_id": "kermainen-pippurikastike",
+      "source_path": "reseptit/alkuruoat/kermainen-pippurikastike.md",
+      "source_recipe_sha256": "aecb49b778bdea711c2f8f7407c009d56d5f7bfa5aba9bb885f64412984c3d6a",
+      "nutrition_input_hash": "a9ef4648da15a5615fc8bcb52061b10ae1fadb2bdc0765e5f5357629b393960f",
+      "servings": 4,
+      "ingredient_count": 6,
+      "ingredients": [
+        {
+          "row": 1,
+          "amount": 250,
+          "unit": "ml",
+          "item": "kuohukermaa",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 2,
+          "amount": 150,
+          "unit": "ml",
+          "item": "vähäsuolaista valmista lihalientä",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 3,
+          "amount": 50,
+          "unit": "g",
+          "item": "salottisipulia hienonnettuna",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 4,
+          "amount": 15,
+          "unit": "g",
+          "item": "voita",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 5,
+          "amount": 5,
+          "unit": "g",
+          "item": "mustapippureita karkeasti murskattuna",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 6,
+          "amount": 8,
+          "unit": "g",
+          "item": "Dijon-sinappia",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        }
+      ],
+      "status": "NOT_CALCULATED",
+      "publication": "WITHHELD",
+      "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI"
+    },
+    {
+      "recipe_id": "perinteinen-valkokastike",
+      "source_path": "reseptit/alkuruoat/perinteinen-valkokastike.md",
+      "source_recipe_sha256": "eede461ac1eec2868c99a5a44a028443e85fcab077a652a5ab5aeca951503544",
+      "nutrition_input_hash": "cfd1a39123f86974adcf0b3d5d38a9c802d3a443b5959f08e10151dd29b0bc5f",
+      "servings": 6,
+      "ingredient_count": 6,
+      "ingredients": [
+        {
+          "row": 1,
+          "amount": 500,
+          "unit": "ml",
+          "item": "täysmaitoa",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 2,
+          "amount": 35,
+          "unit": "g",
+          "item": "voita",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 3,
+          "amount": 35,
+          "unit": "g",
+          "item": "vehnäjauhoja",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 4,
+          "amount": 3,
+          "unit": "g",
+          "item": "suolaa",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 5,
+          "amount": 0.4,
+          "unit": "g",
+          "item": "valkopippuria",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 6,
+          "amount": 0.2,
+          "unit": "g",
+          "item": "jauhettua muskottipähkinää",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        }
+      ],
+      "status": "NOT_CALCULATED",
+      "publication": "WITHHELD",
+      "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI"
+    },
+    {
+      "recipe_id": "puolukkakastike-jalkiruokiin",
+      "source_path": "reseptit/jalkiruoat/puolukkakastike-jalkiruokiin.md",
+      "source_recipe_sha256": "a6dcfb10841837de3621f2284eff5d606b6b216d6143cbe719041fe7ec5ba9e3",
+      "nutrition_input_hash": "dc57fc50dec6b2eceec4b1de84f1dde3b5d6f635014df60b77b11ad7cdb60d0e",
+      "servings": 6,
+      "ingredient_count": 4,
+      "ingredients": [
+        {
+          "row": 1,
+          "amount": 250,
+          "unit": "g",
+          "item": "kotimaisia puolukoita, tuoreita tai pakastettuja",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 2,
+          "amount": 70,
+          "unit": "ml",
+          "item": "vettä",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 3,
+          "amount": 55,
+          "unit": "g",
+          "item": "sokeria",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 4,
+          "amount": 10,
+          "unit": "ml",
+          "item": "sitruunamehua",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "retention": "UNRESOLVED"
+        }
+      ],
+      "status": "NOT_CALCULATED",
+      "publication": "WITHHELD",
+      "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI"
+    },
+    {
+      "recipe_id": "perinteinen-vaniljakastike",
+      "source_path": "reseptit/jalkiruoat/perinteinen-vaniljakastike.md",
+      "source_recipe_sha256": "51439824a62544ea14c73034a8cbb5cb5f76a5fee367a3464d1a26c9883065e9",
+      "nutrition_input_hash": "10e4c40b73833b417eae56194ddcb404bb3dce2d9112c71710529e5744385e5e",
+      "servings": 6,
+      "ingredient_count": 6,
+      "ingredients": [
+        {
+          "row": 1,
+          "amount": 450,
+          "unit": "ml",
+          "item": "täysmaitoa",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 2,
+          "amount": 45,
+          "unit": "g",
+          "item": "sokeria",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 3,
+          "amount": 18,
+          "unit": "g",
+          "item": "maissitärkkelystä",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 4,
+          "amount": 30,
+          "unit": "g",
+          "item": "kananmunan keltuaista",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 5,
+          "amount": 8,
+          "unit": "g",
+          "item": "vaniljasokeria",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        },
+        {
+          "row": 6,
+          "amount": 0.3,
+          "unit": "g",
+          "item": "suolaa",
+          "note": null,
+          "food_record": null,
+          "edible_basis": "UNRESOLVED",
+          "unit_conversion": "DIRECT_GRAMS",
+          "retention": "UNRESOLVED"
+        }
+      ],
+      "status": "NOT_CALCULATED",
+      "publication": "WITHHELD",
+      "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI"
+    }
+  ]
+}
