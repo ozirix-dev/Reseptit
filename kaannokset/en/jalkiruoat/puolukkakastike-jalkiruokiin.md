@@ -56,3 +56,4 @@ A tart berry sauce for ice cream, cheesecake or baked desserts.
 
 - The previous mismatched illustration has been replaced. The new AI illustration remains subject to editorial approval.
 - Martat's tested berry sauce heats sugar syrup before adding berry purée; K-Ruoka's lingonberry sauce is not boiled. The cooked Recipavo version with some whole berries is an independent adaptation, not tested by either source. https://www.martat.fi/reseptit/marjakastike/
+- The listed ingredients contain no intentionally added milk, egg, wheat or nuts. Check labels for possible cross-contact; no gluten-free claim has been approved.

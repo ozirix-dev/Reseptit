@@ -20,3 +20,9 @@ Marttojen testattu marjakastike kuumentaa sokeriliemen ja lisää marjasoseen se
 Lähde: https://www.martat.fi/reseptit/marjakastike/
 
 Recipavon itsenäistä versiota ei väitetä valmistetuksi vertailukeittiössä. Ravinto/GK ja lopullinen katselmointi yhä kesken.
+
+## Allergeenien tarkennus – Chat 3, 21.11.2026
+
+Luetellut ainekset eivät sisällä reseptissä tarkoituksella lisättyä maitoa, kananmunaa, vehnää tai pähkinää. Tarkista mahdolliset jäämät ja käytettyjen tuotteiden pakkausmerkinnät; gluteenittomuutta ei ole erikseen hyväksytty.
+
+Perustana Ruokaviraston allergeeniluettelo: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit . FI/EN/SV/TH päivitetty; ei julkaisuhyväksyntää.
