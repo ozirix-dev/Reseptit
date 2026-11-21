@@ -29,7 +29,7 @@ ingredients:
     item: "whipping cream"
   - amount: 150
     unit: "ml"
-    item: "prepared low-salt meat stock"
+    item: "Puljonki Signature ready-to-use beef stock (EAN 6416796728013)"
   - amount: 50
     unit: "g"
     item: "chopped shallot"
@@ -41,7 +41,7 @@ ingredients:
     item: "coarsely crushed black peppercorns"
   - amount: 8
     unit: "g"
-    item: "Dijon mustard"
+    item: "Maille Dijon Original mustard, contains sulphites (EAN 8711200375684)"
 ---
 
 # Creamy Peppercorn Sauce for Steak
@@ -64,3 +64,4 @@ A rich peppercorn sauce for steaks, pork fillet and potato sides.
 - Additional preparation comparison: Valio's pepper sauce using shallot, stock, cream and mustard. This Recipavo version has neither cognac nor pepper-flavoured cheese cream. https://www.valio.fi/reseptit/konjakki-pippurikastike-pihveille/
 - Contains **milk and mustard**. Meat stock may contain celery; check the stock and mustard labels.
 - Serve the pepper sauce hot. Cool leftovers promptly in a shallow container and refrigerate below +6°C. Check the exact meat stock ingredients for celery or other allergens; this sauce contains milk and mustard.
+- Named products: Puljonki Signature beef stock EAN 6416796728013 (beef bones, water, carrot, onion, parsnip, salt, herbs, black pepper; celery not listed) and Maille Dijon Original EAN 8711200375684 (**mustard** and potassium metabisulphite, a **sulphite** preservative). The sauce contains **milk and mustard**; the Maille ingredient also contains sulphites. Finished-sauce sulphite concentration is not measured. Check the actual package label, especially with substitutions.

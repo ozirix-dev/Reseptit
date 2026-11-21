@@ -34,7 +34,7 @@ ingredients:
     item: "kuohukermaa"
   - amount: 150
     unit: "ml"
-    item: "vähäsuolaista valmista lihalientä"
+    item: "Puljonki Signature Lihalientä, käyttövalmista (EAN 6416796728013)"
   - amount: 50
     unit: "g"
     item: "salottisipulia hienonnettuna"
@@ -46,7 +46,7 @@ ingredients:
     item: "mustapippureita karkeasti murskattuna"
   - amount: 8
     unit: "g"
-    item: "Dijon-sinappia"
+    item: "Maille Dijon Original -sinappia, sisältää sulfiitteja (EAN 8711200375684)"
 ---
 
 # Kermainen pippurikastike pihville
@@ -69,3 +69,4 @@ Täyteläinen pippurikastike pihveille, porsaanfileelle ja perunalisukkeille.
 - Vertailulähde myös: Valion sipulia, lientä, kermaa ja sinappia sisältävä pippurikastike. Recipavon versio ei sisällä konjakkia eikä Valion pippurijuustokermaa. https://www.valio.fi/reseptit/konjakki-pippurikastike-pihveille/
 - Sisältää **maitoa ja sinappia**. Lihaliemi voi sisältää selleriä; tarkista liemen ja sinapin tuotetiedot.
 - Tarjoa pippurikastike kuumana. Jos sitä jää yli, jäähdytä nopeasti matalassa astiassa ja säilytä jääkaapissa alle +6 °C:ssa. Lihaliemen tarkka tuotekoostumus on tarkistettava mahdollisen sellerin ja muiden allergeenien vuoksi; kastikkeessa on maitoa ja sinappia.
+- Valitut tuotteet ja ainesosat: Puljonki Signature Lihaliemi EAN 6416796728013 (naudanluut, vesi, porkkana, sipuli, palsternakka, suola, yrtit, mustapippuri; selleriä ei ole mainittu) sekä Maille Dijon Original EAN 8711200375684 (**sinappi** ja säilöntäaine kaliumdisulfiitti eli **sulfiitit**). Kastike sisältää **maitoa ja sinappia** ja Maille-tuotteen sulfiitit on huomioitava. Lopullisen kastikkeen sulfiittipitoisuutta ei ole mitattu. Tarkista fyysisen pakkauksen tiedot, jos tuote muuttuu tai vaihdetaan.

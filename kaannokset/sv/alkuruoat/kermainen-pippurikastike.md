@@ -29,7 +29,7 @@ ingredients:
     item: "vispgrädde"
   - amount: 150
     unit: "ml"
-    item: "färdig lättsaltad köttbuljong"
+    item: "Puljonki Signature färdig köttbuljong (EAN 6416796728013)"
   - amount: 50
     unit: "g"
     item: "hackad schalottenlök"
@@ -41,7 +41,7 @@ ingredients:
     item: "grovt krossade svartpepparkorn"
   - amount: 8
     unit: "g"
-    item: "dijonsenap"
+    item: "Maille Dijon Original senap med sulfiter (EAN 8711200375684)"
 ---
 
 # Krämig pepparsås till biff
@@ -64,3 +64,4 @@ En fyllig pepparsås till biff, fläskfilé och potatistillbehör.
 - Ytterligare jämförelsekälla: Valios pepparsås med schalottenlök, buljong, grädde och senap. Recipavos version använder varken konjak eller pepparostgrädde. https://www.valio.fi/reseptit/konjakki-pippurikastike-pihveille/
 - Innehåller **mjölk och senap**. Köttbuljong kan innehålla selleri; kontrollera märkningen på buljong och senap.
 - Servera pepparsåsen varm. Kyl rester snabbt i ett grunt kärl och förvara under +6 °C. Kontrollera köttbuljongens exakta innehåll med avseende på selleri och andra allergener; såsen innehåller mjölk och senap.
+- Specificerade produkter: Puljonki Signature köttbuljong EAN 6416796728013 (nötben, vatten, morot, lök, palsternacka, salt, örter, svartpeppar; selleri anges inte) och Maille Dijon Original EAN 8711200375684 (**senap** och konserveringsmedlet kaliumdisulfit, dvs **sulfiter**). Såsen innehåller **mjölk och senap** samt sulfiter från Maille. Slutlig sulfithalt i såsen är inte uppmätt. Kontrollera den aktuella förpackningen, särskilt om produkten byts.

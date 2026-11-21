@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "kermainen-pippurikastike",
   "source_path": "reseptit/alkuruoat/kermainen-pippurikastike.md",
-  "source_sha256": "c85c323e26659ffa74f464168fd4517876b9275bda1e8e4769f93e55540ec7da",
+  "source_sha256": "fac68e5834180fa322feabd5704840472a9639f9d1539d016dcacd4f0136a50f",
   "decision": "hold",
   "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; kokonaisjulkaisun hyväksyntä puuttuu",
   "reviewed_at": "2026-11-21",
@@ -29,8 +29,8 @@
       "notes": "Julkaistussa Maku-ohjeessa kuullotetaan salottisipuli voissa, lisätään pippuri/sinappi/lihaliemi ja haudutetaan; kerma lisätään lopuksi. Recipavossa kerma tulee mukaan ennen 8–10 minuutin haudutusta. Molemmat perustuvat samaan vähitellen sakeutuvaan kerma-liemikastikkeeseen, eivät identtiseen paistamiseen. Ei väitettä Recipavon koekeittiötestistä."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Selvät allergeenit MAITO ja SINAPPI. Valmiin vähäsuolaisen lihaliemen tuotetta ei ole yksilöity, eikä sellerin tai mahdollisten muiden allergeenien poissulkemista voida varmentaa. Lisätty ehdollinen pakkausmerkintäohje, tarjoilu kuumana ja nopea jäähdytys alle +6 °C. FOOD_SAFETY PENDING, kunnes lihalähteen tuotekohtainen koostumus tarkistettu. Lähteet: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/ ."
+      "status": "pass",
+      "notes": "Tuotekohtainen tarkistus: Puljonki Signature Lihaliemi EAN 6416796728013 (naudanluut, vesi, porkkana, sipuli, palsternakka, suola, yrtit, mustapippuri; ei lueteltua selleriä) ja Maille Dijon Original EAN 8711200375684 (SINAPPI, SULFIITIT: kaliumdisulfiitti). Kerma ja voi sisältävät MAITOA. Kastikkeen tunnetut raaka-aineallergeenit ovat MAITO ja SINAPPI, lisäksi käytetyssä sinapissa SULFIITIT. Lopullisen kastikkeen sulfiittipitoisuutta ei ole mitattu eikä EU:n >10 mg/kg -ilmoitusrajaa oletettu alittuvaksi. Etiketin eräkohtainen tarkistus ja muut tuotevaihdot vaativat uudelleenarvioinnin. Rajattu PASS vain näillä yksilöidyillä tuotteilla; ei ravinto- tai julkaisuhyväksyntää."
     },
     "servings_and_time": {
       "status": "pass",
@@ -47,7 +47,10 @@
   },
   "supplementary_evidence": {
     "food_safety": [
-      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit"
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit",
+      "https://www.oscarnordic.fi/puljonki-signature/367-signature-lihaliemi-1-l.html",
+      "https://www.k-ruoka.fi/kauppa/tuote/maille-dijon-original-sinappi-1kg-8711200375684",
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit/"
     ],
     "image_path": "kuvat/alkuruoat/kermainen-pippurikastike.webp",
     "image_sha256": "7530d5d848f8e0f09179f7af146da693e9021ca922b1372e6063915780d426ee",
