@@ -60,3 +60,4 @@ En frisk pepparrotssås till rostbiff, rökt fisk och rödbetssallad.
 - Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Den AI-genererade bilden finns i denna gren och inväntar granskning.
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/piparjuurikastike/
 - En annan Valio-källa använder färskriven pepparrot i kall crème fraîche-sås medan den första använder pepparrotspasta. Kryddningen här är en egen anpassning. https://www.valio.fi/reseptit/graavattu-piparjuurilohi/
+- Innehåller **mjölk** (crème fraîche). Använd rengjord pepparrot avsedd som livsmedel och förvara såsen kall.

@@ -17,3 +17,9 @@ Marttojen testatussa kinkunkastikkeessa käytetään vehnäjauhoa, sinappia ja k
 Lähde: https://www.martat.fi/reseptit/kinkun-kastike/
 
 Tämän eri suhtein laaditun Recipavo-ohjeen fyysistä kokkikokeilua ei väitetä tehdyksi; ravinto/GK ja lopullinen katselmointi edelleen kesken.
+
+## Allergeenitarkennus – Chat 3, 21.11.2026
+
+Sisältää **maitoa, vehnää ja sinappia**. Kasvisliemi voi sisältää selleriä; tarkista liemen ja sinappien pakkausmerkinnät.
+
+Perustana Ruokaviraston allergeeniluettelo: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit . Etiketit vielä tarkistettava valmistukseen valituista tuotteista; ei gluteeniton-hyväksyntää. FI/EN/SV/TH päivitetty.

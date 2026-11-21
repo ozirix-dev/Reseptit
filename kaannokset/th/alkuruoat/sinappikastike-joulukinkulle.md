@@ -66,3 +66,4 @@ ingredients:
 - ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพ AI อยู่ในสาขานี้แล้ว แต่ยังต้องตรวจภาพก่อนเผยแพร่
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kastike-kinkulle-ilman-paistolienta
 - ซอสแฮมที่ทดสอบโดย Martat ใช้แป้งสาลี มัสตาร์ด ครีมและน้ำจากการอบแฮม สูตรนี้ใช้น้ำซุปผักแทน จึงไม่ใช่สูตรเดียวกัน. https://www.martat.fi/reseptit/kinkun-kastike/
+- มี **นม ข้าวสาลี และมัสตาร์ด** น้ำซุปผักอาจมีขึ้นฉ่าย ตรวจฉลากน้ำซุปและมัสตาร์ด.

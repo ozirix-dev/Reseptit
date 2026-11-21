@@ -17,3 +17,9 @@ Toinen Valion vertailuohje käyttää kylmässä crème fraîche -kastikkeessa t
 Lähde: https://www.valio.fi/reseptit/graavattu-piparjuurilohi/
 
 Recipavon itsenäistä versiota ei väitetä valmistetuksi vertailukeittiössä. Ravinto/GK ja lopullinen katselmointi yhä kesken.
+
+## Allergeenitarkennus – Chat 3, 21.11.2026
+
+Sisältää **maitoa** (crème fraîche). Käytä ainoastaan ruokakäyttöön tarkoitettua, puhdistettua piparjuurta; pidä valmis kastike kylmässä.
+
+Perustana Ruokaviraston allergeeniluettelo: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit . Etiketit vielä tarkistettava valmistukseen valituista tuotteista; ei gluteeniton-hyväksyntää. FI/EN/SV/TH päivitetty.

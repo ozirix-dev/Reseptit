@@ -65,3 +65,4 @@ Raikas piparjuurikastike paahtopaistille, savukalalle ja rosollille.
 - Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn luoma havainnekuva tässä haarassa. Hyväksyntä puuttuu.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.valio.fi/reseptit/piparjuurikastike/
 - Toinen Valion vertailuohje käyttää kylmässä crème fraîche -kastikkeessa tuoretta raastettua piparjuurta. Aiempi ohje käytti valmista piparjuuritahnaa. Maustaminen on tässä itsenäisesti sovitettu. https://www.valio.fi/reseptit/graavattu-piparjuurilohi/
+- Sisältää **maitoa** (crème fraîche). Käytä ainoastaan ruokakäyttöön tarkoitettua, puhdistettua piparjuurta; pidä valmis kastike kylmässä.
