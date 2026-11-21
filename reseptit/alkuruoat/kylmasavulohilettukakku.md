@@ -6,7 +6,7 @@ category: alkuruoka
 additional_categories:
   - aamupala
 language: fi
-status: draft
+status: published
 servings: 8
 time_total_min: 110
 difficulty: keskitaso
@@ -25,6 +25,11 @@ tags:
   - juhlapoyta
 translation_languages: []
 translation_status: {}
+image:
+  src: alkuruoat/kylmasavulohilettukakku.webp
+  alt: Kerroksittainen kylmäsavulohilettukakku, jossa on kurkku-tillitäytettä, savulohiviipaleita ja oranssia kalanmätiä pinnalla
+  width: 720
+  height: 720
 ingredients:
   - amount: 60
     unit: g
@@ -135,14 +140,16 @@ Määrät on sovitettu kahdeksalle annokselle; alkuperäinen video ei kerro niit
   Tuorejuuston, kurkun ja tillin määrät sekä ranskankerman ja kylmäsavulohen
   soveltaminen tähän kerrosrakenteeseen ovat Kokki-3:n toimituksellista
   mittasuhdearviota, eivät videoista luettuja määriä.
-- **Ei vielä julkaisuvalmis:** Recipavo ei ole valmistanut tai
-  maistanut tätä sovitusta. Kokki-3 hyväksyi 8 annoksen mittasuhteet
-  toimituksellisena sovituksena 21.11.2026; videon alkuperäiset määrät
-  ja täsmällinen täytekoostumus jäävät tuntemattomiksi.
-  Aiempi WebP-havainnekuva ei sisällä videon mätikoristelua:
-  sitä ei kytketä tähän reseptiversioon ennen korvaamista ja
-  kuvalähdepaketin SHA-varmennusta. Status pysyy luonnoksena,
-  kunnes sovitus, kuvitus ja pakolliset CI-tarkistukset hyväksytään.
+- **Toimituksellinen sovitus:** Recipavo ei ole valmistanut eikä
+  maistanut tätä reseptiversiota. Kokki-3 tarkisti 8 annoksen
+  mittasuhteet toimituksellisesti 21.11.2026, mutta Facebook-videon
+  alkuperäiset mitat ja täsmällinen täytekoostumus eivät ole tiedossa.
+  Julkaistut määrät ovat itsenäisen, lähteistetyn sovituksen määriä.
+- **Kuvitus:** Kuva on tekoälyllä luotu havainnekuva, ei videon
+  pysäytyskuva eikä valmistetun kakun valokuva. Se esittää videosta
+  varmistetut letut, kurkku-tillitäytteen, lohiviipaleet ja oranssin
+  mätikoristelun. Lähdekuva on GitHubissa ja sen SHA-256 on erikseen
+  varmennettu; 396 kuvan yksityinen R2-lähdepaketti säilyy muuttumattomana.
 - **Ravintoarvot ja GK:** Reseptiversiolle ei ole tehty
   toistettavaa ravintolaskentaa, joten numeerisia ravintoarvoja
   ei julkaista. GK: ei määritetty. Tämä ei ole keto- eikä
