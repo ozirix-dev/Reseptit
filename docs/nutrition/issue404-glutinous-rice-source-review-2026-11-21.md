@@ -84,8 +84,8 @@ on vielä varmennettava ennen tuotetietueen hyväksyntää.
 ravintoarvomerkinnän *hiilihydraatit* sisältävät myös polyolit; kuitu
 määritellään erikseen. Elatukun lista **ei ilmoita polyoleja eriteltyinä**.
 Sen 80 g:n hiilihydraattimerkintä ei siten ole automaattisesti Recipavon
-\`carbs_net_per_serving_g\`-arvo, eikä puuttuvasta polyolirivistä seuraa
-\`POLYL = 0\`. Merkitse \`POLYL = NOT_REPORTED\` tutkimuksessa, kunnes
+`carbs_net_per_serving_g`-arvo, eikä puuttuvasta polyolirivistä seuraa
+`POLYL = 0`. Merkitse `POLYL = NOT_REPORTED` tutkimuksessa, kunnes
 tuotteen valmistajalta tai toisesta soveltuvasta, nimenomaan samaa tuotetta
 koskevasta lähteestä saadaan riittävä tieto.
 
@@ -94,7 +94,7 @@ tekijänoikeudella suojatun tutkimustietokannan kopiointi kaupalliseen
 käyttöaineistoon. Tuoteluettelon löytyminen **ei** anna Thai FCD:n
 kaupallisen käytön lupaa eikä yksin ratkaise myöskään tuotetietojen
 uudelleenjulkaisun ehtoja. Tuotekortin tiedot säilytetään tässä
-lähdeviitteenä, ei lisätä \`docs/nutrition/food-records.json\`-aineistoon.
+lähdeviitteenä, ei lisätä `docs/nutrition/food-records.json`-aineistoon.
 
 **Seuraava kelvollinen etenemistapa:** (1) varmista nimettyä EAN-tuotetta
 vastaava alkuperäinen pakkaus ja hiilihydraatin/polyolien käsittely;
@@ -104,4 +104,4 @@ vastaava alkuperäinen pakkaus ja hiilihydraatin/polyolien käsittely;
 sekä xôin maapähkinän noin 15 minuutin esikeiton retentio;
 (4) hyväksytä neljän ravintokentän laskelma ja julkaisun muut portit vasta
 kokonaisen lähdeketjun valmistuttua. **Molemmat tahmariisia sisältävät
-reseptit pysyvät DRAFT/HOLDissa ja kaikki neljä makrokenttää \`null\`.**
+reseptit pysyvät DRAFT/HOLDissa ja kaikki neljä makrokenttää `null`.**
