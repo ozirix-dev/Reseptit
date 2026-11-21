@@ -1,7 +1,7 @@
 # Rinnakkaisten ChatGPT-keskustelujen työnomistajuus
 
-**Päiväys:** 21.11.2026  
-**Soveltamisala:** Reseptit / Recipavo, GitHub-työtä tekevät ChatGPT-keskustelut.  
+**Päiväys:** 21.11.2026
+**Soveltamisala:** Reseptit / Recipavo, GitHub-työtä tekevät ChatGPT-keskustelut.
 **Periaate:** jokainen työskentelevä chatti tunnistautuu itse GitHubissa.
 
 ## 1. Chat 1–n – ei neljän chatin ylärajaa
