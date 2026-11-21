@@ -1,0 +1,58 @@
+name: Temporary whipped feta WebP import
+on:
+  push:
+    branches:
+      - draft/vaahdotettu-feta-kylmasavulohella-20261121
+    paths:
+      - .github/workflows/temporary-feta-webp.yml
+
+permissions:
+  contents: write
+
+jobs:
+  image-import:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: true
+      - name: Convert preview to repository WebP
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REPOSITORY" = 'ozirix-dev/Reseptit'
+          test "$GITHUB_REF_NAME" = 'draft/vaahdotettu-feta-kylmasavulohella-20261121'
+          python3 -m venv "$RUNNER_TEMP/feta-image-venv"
+          "$RUNNER_TEMP/feta-image-venv/bin/pip" install --disable-pip-version-check --quiet 'Pillow==11.3.0'
+          "$RUNNER_TEMP/feta-image-venv/bin/python" - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          source = Path('docs/drafts/vaahdotettu-feta-kylmasavulohella-preview.jpg')
+          output = Path('kuvat/alkuruoat/vaahdotettu-feta-kylmasavulohella.webp')
+          if not source.is_file():
+              raise SystemExit('Expected image preview is missing')
+          im = Image.open(source)
+          im.load()
+          if im.format != 'JPEG' or im.size != (960, 960):
+              raise SystemExit(f'Unexpected input format or size: {im.format}, {im.size}')
+          output.parent.mkdir(parents=True, exist_ok=True)
+          im.convert('RGB').save(output, format='WEBP', quality=83, method=6)
+          result = Image.open(output)
+          result.load()
+          if result.format != 'WEBP' or result.size != (960, 960):
+              raise SystemExit('Output WebP validation failed')
+          print(f'WebP created: {output}, size={output.stat().st_size} bytes')
+          PY
+      - name: Commit image to draft branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- kuvat/alkuruoat/vaahdotettu-feta-kylmasavulohella.webp
+          if git diff --cached --quiet; then
+            echo 'Image already present: no new commit'
+            exit 0
+          fi
+          git commit -m 'Add WebP image for whipped feta draft'
+          git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"
