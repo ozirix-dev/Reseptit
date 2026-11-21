@@ -58,6 +58,44 @@ jobs:
             if (-not $rejected) { throw 'Invalid SHA stamp was accepted' }
           }
           Write-Host 'PASS: artifact SHA parsing and negative cases'
+      - name: Test post-deploy verifier strips preview env and restores it
+        shell: pwsh
+        run: |
+          $ast = [System.Management.Automation.Language.Parser]::ParseFile(
+            (Join-Path (Get-Location) 'scripts/recipavo-pages-production.ps1'),
+            [ref]$null, [ref]$null)
+          foreach ($name in @('Need', 'Verify-Production')) {
+            $nodes = @($ast.FindAll({ param($node)
+              $node -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $node.Name -eq $name
+            }, $true))
+            if ($nodes.Count -ne 1) { throw "Expected exactly one $name function" }
+            . ([scriptblock]::Create($nodes[0].Extent.Text))
+          }
+          # Do not invoke real npm or Cloudflare. A local function mocks npm.cmd.
+          $script:wasCalled = $false
+          function npm.cmd {
+            if ($env:RECIPAVO_BUILD_TARGET -ne 'production' -or
+                $null -ne [Environment]::GetEnvironmentVariable('RECIPAVO_PREVIEW_ORIGIN','Process')) {
+              throw 'Production verify inherited preview settings'
+            }
+            $script:wasCalled = $true
+            $global:LASTEXITCODE = 0
+          }
+          $previousTarget = [Environment]::GetEnvironmentVariable('RECIPAVO_BUILD_TARGET','Process')
+          $previousPreview = [Environment]::GetEnvironmentVariable('RECIPAVO_PREVIEW_ORIGIN','Process')
+          try {
+            [Environment]::SetEnvironmentVariable('RECIPAVO_BUILD_TARGET','production','Process')
+            [Environment]::SetEnvironmentVariable('RECIPAVO_PREVIEW_ORIGIN','https://test.recipavo-site.pages.dev','Process')
+            Verify-Production ('a' * 40) '/tmp/unused' 
+            if (-not $script:wasCalled) { throw 'Mock verifier was not called' }
+            if ([Environment]::GetEnvironmentVariable('RECIPAVO_PREVIEW_ORIGIN','Process') -ne 'https://test.recipavo-site.pages.dev') {
+              throw 'Preview environment was not restored'
+            }
+          } finally {
+            [Environment]::SetEnvironmentVariable('RECIPAVO_BUILD_TARGET',$previousTarget,'Process')
+            [Environment]::SetEnvironmentVariable('RECIPAVO_PREVIEW_ORIGIN',$previousPreview,'Process')
+          }
+          Write-Host 'PASS: post-deploy verification isolates and restores environment'
       - name: Assert explicit release gates; never execute deployment
         shell: pwsh
         run: |
