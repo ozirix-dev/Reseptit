@@ -3,6 +3,12 @@ title: "Traditional Finnish Karelian Beef and Pork Stew"
 recipe_id: perinteinen-karjalanpaisti
 url_slug: perinteinen-karjalanpaisti-en
 category: paaruoka
+main_ingredient:
+  - "naudanliha"
+  - "sianliha"
+cooking_method:
+  - "uuni"
+  - "haudutus"
 language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-karjalanpaisti.md
@@ -12,8 +18,8 @@ servings: 8
 time_total_min: 225
 difficulty: "easy"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "Finnish"
+  - "traditional"
 ingredients:
   - amount: 500
     unit: "g"

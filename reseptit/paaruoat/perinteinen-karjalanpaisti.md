@@ -3,6 +3,12 @@ title: "Perinteinen karjalanpaisti"
 recipe_id: perinteinen-karjalanpaisti
 url_slug: perinteinen-karjalanpaisti
 category: paaruoka
+main_ingredient:
+  - "naudanliha"
+  - "sianliha"
+cooking_method:
+  - "uuni"
+  - "haudutus"
 language: fi
 status: draft
 servings: 8

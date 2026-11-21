@@ -3,6 +3,12 @@ title: "Traditionell karelsk stek med nöt- och fläskkött"
 recipe_id: perinteinen-karjalanpaisti
 url_slug: perinteinen-karjalanpaisti-sv
 category: paaruoka
+main_ingredient:
+  - "naudanliha"
+  - "sianliha"
+cooking_method:
+  - "uuni"
+  - "haudutus"
 language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-karjalanpaisti.md
@@ -12,8 +18,8 @@ servings: 8
 time_total_min: 225
 difficulty: "lätt"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "finsk"
+  - "traditionell"
 ingredients:
   - amount: 500
     unit: "g"

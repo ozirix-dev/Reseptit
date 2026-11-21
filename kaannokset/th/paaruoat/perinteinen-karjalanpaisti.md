@@ -3,6 +3,12 @@ title: "สตูว์เนื้อวัวและหมูคาเรเ
 recipe_id: perinteinen-karjalanpaisti
 url_slug: perinteinen-karjalanpaisti-th
 category: paaruoka
+main_ingredient:
+  - "naudanliha"
+  - "sianliha"
+cooking_method:
+  - "uuni"
+  - "haudutus"
 language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-karjalanpaisti.md
@@ -12,8 +18,8 @@ servings: 8
 time_total_min: 225
 difficulty: "ง่าย"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "อาหารฟินแลนด์"
+  - "อาหารพื้นบ้าน"
 ingredients:
   - amount: 500
     unit: "g"
