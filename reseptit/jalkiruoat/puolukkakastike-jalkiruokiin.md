@@ -23,6 +23,11 @@ translation_status:
   en: draft
   sv: draft
   th: draft
+image:
+  src: jalkiruoat/puolukkakastike-jalkiruokiin.webp
+  alt: "Vaaleanpunaista puolukkakastiketta lasikulhossa, pinnalla puolukoita; tekoälykuvitus"
+  width: 960
+  height: 640
 ingredients:
   - amount: 250
     unit: "g"
@@ -53,3 +58,5 @@ Kirpeä marjakastike jäätelölle, juustokakulle tai uunijälkiruoalle.
 
 - Sisältö on toimituksellinen luonnos, ravintoarvo- ja GK-arvio sekä kuvan lopullinen hyväksyntä puuttuvat.
 - Valmistuksen vertailulähde: https://www.k-ruoka.fi/reseptit/puolukkakastike
+
+- Kuva on tekoälyn luoma havainnekuva, joka on tallennettu, mutta sisällön vastaavuus reseptiin vaatii uuden kuvan ennen julkaisua.

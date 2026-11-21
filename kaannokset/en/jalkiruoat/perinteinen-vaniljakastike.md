@@ -19,6 +19,11 @@ cooking_method:
 tags:
   - "sauce"
   - "Finnish"
+image:
+  src: jalkiruoat/perinteinen-vaniljakastike.webp
+  alt: "Pale yellow custard sauce in a glass bowl, with green garnish visible in the illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 450
     unit: "ml"
@@ -55,3 +60,5 @@ A smooth milk-and-egg-yolk custard for blueberry pie or apple crumble.
 
 - This is an editorial draft; nutrition and glycaemic load assessments and final image approval are pending.
 - Preparation reference: https://www.martat.fi/reseptit/vaniljakastike/
+
+- An AI-generated illustration is stored, but it does not fully match this recipe and must be replaced before publication.

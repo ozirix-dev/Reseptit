@@ -24,6 +24,11 @@ translation_status:
   en: draft
   sv: draft
   th: draft
+image:
+  src: jalkiruoat/perinteinen-vaniljakastike.webp
+  alt: "Vaaleankeltaista vaniljakastiketta lasikulhossa; havainnekuvassa näkyy myös vihreitä koristeluja"
+  width: 960
+  height: 640
 ingredients:
   - amount: 450
     unit: "ml"
@@ -60,3 +65,5 @@ Maidosta, keltuaisesta ja vaniljasta valmistettu kastike mustikkapiirakalle ja o
 
 - Sisältö on toimituksellinen luonnos, ravintoarvo- ja GK-arvio sekä kuvan lopullinen hyväksyntä puuttuvat.
 - Valmistuksen vertailulähde: https://www.martat.fi/reseptit/vaniljakastike/
+
+- Kuva on tekoälyn luoma havainnekuva, joka on tallennettu, mutta sisällön vastaavuus reseptiin vaatii uuden kuvan ennen julkaisua.

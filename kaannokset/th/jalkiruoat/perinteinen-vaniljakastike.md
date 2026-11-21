@@ -19,6 +19,11 @@ cooking_method:
 tags:
   - "ซอส"
   - "ฟินแลนด์"
+image:
+  src: jalkiruoat/perinteinen-vaniljakastike.webp
+  alt: "ซอสคัสตาร์ดวานิลลาสีเหลืองอ่อนในถ้วยแก้ว มีของตกแต่งสีเขียวในภาพ"
+  width: 960
+  height: 640
 ingredients:
   - amount: 450
     unit: "ml"
@@ -55,3 +60,5 @@ ingredients:
 
 - นี่คือฉบับร่าง ยังไม่ได้ประเมินโภชนาการ ภาระน้ำตาล หรืออนุมัติภาพประกอบขั้นสุดท้าย
 - Preparation reference: https://www.martat.fi/reseptit/vaniljakastike/
+
+- มีภาพ AI เก็บไว้แล้ว แต่ภาพยังไม่ตรงกับสูตรอาหาร ต้องเปลี่ยนก่อนเผยแพร่

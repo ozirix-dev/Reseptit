@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sås"
   - "finsk"
+image:
+  src: jalkiruoat/puolukkakastike-jalkiruokiin.webp
+  alt: "Rosa lingonsås med hela lingon i en glasskål; AI-illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 250
     unit: "g"
@@ -48,3 +53,5 @@ En syrlig bärsås till glass, cheesecake eller ugnsdesserter.
 
 - Detta är ett redaktionellt utkast; näringsvärden, glykemisk belastning och slutligt bildgodkännande återstår.
 - Preparation reference: https://www.k-ruoka.fi/reseptit/puolukkakastike
+
+- En AI-genererad illustration finns sparad, men den motsvarar inte receptet fullt ut och måste bytas före publicering.

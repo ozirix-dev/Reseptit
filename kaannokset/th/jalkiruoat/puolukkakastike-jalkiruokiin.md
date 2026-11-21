@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "ซอส"
   - "ฟินแลนด์"
+image:
+  src: jalkiruoat/puolukkakastike-jalkiruokiin.webp
+  alt: "ซอสลิงกอนเบอร์รีสีชมพูในถ้วยแก้วมีผลเบอร์รีบนหน้า เป็นภาพ AI"
+  width: 960
+  height: 640
 ingredients:
   - amount: 250
     unit: "g"
@@ -48,3 +53,5 @@ ingredients:
 
 - นี่คือฉบับร่าง ยังไม่ได้ประเมินโภชนาการ ภาระน้ำตาล หรืออนุมัติภาพประกอบขั้นสุดท้าย
 - Preparation reference: https://www.k-ruoka.fi/reseptit/puolukkakastike
+
+- มีภาพ AI เก็บไว้แล้ว แต่ภาพยังไม่ตรงกับสูตรอาหาร ต้องเปลี่ยนก่อนเผยแพร่

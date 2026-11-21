@@ -6,5 +6,5 @@
 - Riippumattoman tahon vertailuohje: https://www.martat.fi/reseptit/vaniljakastike/
 - Ohjeet ovat itsenäisesti kirjoitettuja sovituksia, eikä niitä ole testattu Recipavon keittiössä.
 - Tarkastettava ennen julkaisua: raaka-aineet, työjärjestys, allergeenit (maito, kananmuna), ravintolaskelma ja GK-status, kielien merkitys sekä kuva.
-- Kuva on käyttäjälle luovutetussa erillisessä `kastikekuvat_chat3.zip`-paketissa nimellä `perinteinen-vaniljakastike.webp`, ei GitHubissa. Kuva on havainnekuva eikä kokkikokeilun todiste.
+- Kuva tallennettu GitHubiin `kuvat/jalkiruoat/perinteinen-vaniljakastike.webp` (960 × 640). AI-havainnekuva. Kuvassa vihreitä yrttejä, joita ei kuulu vaniljakastikkeeseen: KUVA EI VASTAA RESEPTIÄ, korvattava ennen julkaisua.
 - Ei gluteenittomuus- tai muuta ruokavalioväitettä ilman tarkistusta.

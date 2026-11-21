@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "sauce"
   - "Finnish"
+image:
+  src: jalkiruoat/puolukkakastike-jalkiruokiin.webp
+  alt: "Pink illustrated lingonberry sauce with whole berries in a glass bowl"
+  width: 960
+  height: 640
 ingredients:
   - amount: 250
     unit: "g"
@@ -48,3 +53,5 @@ A tart berry sauce for ice cream, cheesecake or baked desserts.
 
 - This is an editorial draft; nutrition and glycaemic load assessments and final image approval are pending.
 - Preparation reference: https://www.k-ruoka.fi/reseptit/puolukkakastike
+
+- An AI-generated illustration is stored, but it does not fully match this recipe and must be replaced before publication.

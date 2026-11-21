@@ -19,6 +19,11 @@ cooking_method:
 tags:
   - "sås"
   - "finsk"
+image:
+  src: jalkiruoat/perinteinen-vaniljakastike.webp
+  alt: "Ljusgul vaniljsås i glasskål, med grön dekoration på illustrationsbilden"
+  width: 960
+  height: 640
 ingredients:
   - amount: 450
     unit: "ml"
@@ -55,3 +60,5 @@ En slät vaniljsås av mjölk och äggula till blåbärspaj eller äppelsmulpaj.
 
 - Detta är ett redaktionellt utkast; näringsvärden, glykemisk belastning och slutligt bildgodkännande återstår.
 - Preparation reference: https://www.martat.fi/reseptit/vaniljakastike/
+
+- En AI-genererad illustration finns sparad, men den motsvarar inte receptet fullt ut och måste bytas före publicering.
