@@ -20,6 +20,11 @@ translation_status: {}
 source_language: fi
 source_recipe: reseptit/paaruoat/khao-moo-tod-kratiem-khai-dao.md
 translation_of: khao-moo-tod-kratiem-khai-dao
+image:
+  src: paaruoat/khao-moo-tod-kratiem-khai-dao.webp
+  alt: "Thailändskt vitlöksfläsk med jasminris och frasigt stekt ägg på en grön tallrik, med gurka och chilisås"
+  width: 1536
+  height: 1024
 ingredients:
   - {"amount":300,"unit":"g","item":"benfri fläskkarré","note":"skuren i cirka 1 cm tjocka strimlor"}
   - {"amount":20,"unit":"g","item":"vitlök","note":"finhackad; hälften i marinaden, hälften till stekning"}
@@ -55,7 +60,7 @@ Den här thailändska vardagsrätten kombinerar marinerat fläsk stekt i vitlök
 - Allergener: ägg, fisk (fisksås), blötdjur (ostronsås) och soja. Soja- och ostronsås kan innehålla vete; kontrollera förpackningarna. Glutenfrihet har inte verifierats.
 - Näringsvärden och glykemisk belastning (GL) har ännu inte beräknats. Rätten innehåller vanligt jasminris och marknadsförs inte som lågkolhydrat- eller ketomat.
 - Detta är Recipavos redaktionella bearbetning av publicerade tillagningskällor. Recipavo har inte lagat eller smakat denna version i eget provkök. Källor och anpassningar dokumenteras separat.
-- En egen eller korrekt licensierad bild behövs fortfarande; Facebook-bilden återanvänds inte.
+- Bilden är en AI-genererad illustration av rätten, inte ett foto av mat tillagad av Recipavo. Den ursprungliga Facebook-bilden kopierades inte.
 
 ## Tillagningskällor
 

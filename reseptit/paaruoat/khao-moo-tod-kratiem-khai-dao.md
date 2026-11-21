@@ -17,6 +17,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: [en, sv, th]
 translation_status: {en: draft, sv: draft, th: draft}
+image:
+  src: paaruoat/khao-moo-tod-kratiem-khai-dao.webp
+  alt: "Thaimaalainen valkosipuliporsas, jasmiiniriisi ja rapeareunainen paistettu kananmuna vihreällä lautasella; vieressä kurkkua ja chilistä kastiketta"
+  width: 1536
+  height: 1024
 ingredients:
   - {"amount":300,"unit":"g","item":"porsaan niskaa (kassleria)","note":"luutonta, noin 1 cm paksuisina suikaleina"}
   - {"amount":20,"unit":"g","item":"valkosipulia","note":"hienonnettuna; puolet marinadiin, puolet paistettavaksi"}
@@ -52,7 +57,7 @@ Thaimaalainen arkiruoka, jossa marinoitu porsas paistetaan valkosipulin tuoksuis
 - Allergeenit: kananmuna, kala (kalakastike), nilviäiset (osterikastike) ja soija. Soijakastike ja osterikastike voivat sisältää vehnää; tarkista tuotepakkaukset. Gluteenittomuutta ei ole vahvistettu.
 - Ravintoarvoja eikä glykeemistä kuormaa (GK) ole vielä laskettu. Annos sisältää tavallista jasmiiniriisiä eikä ole VHH- tai ketoruoka.
 - Tämä on lähteisiin perustuva Recipavon toimituksellinen sovitus. Recipavo ei ole valmistanut eikä maistanut tätä versiota omassa koekeittiössään. Lähteet ja erot on kirjattu erilliseen näyttömuistioon.
-- Kuva on vielä hankittava tai tuotettava asianmukaisilla käyttöoikeuksilla; Facebook-kuvaa ei kopioida reseptiin.
+- Kuva on tekoälyllä tuotettu havainnekuva annoksesta, ei valokuva Recipavossa valmistetusta ruoasta. Facebookin alkuperäiskuvaa ei kopioitu.
 
 ## Valmistuslähteet
 

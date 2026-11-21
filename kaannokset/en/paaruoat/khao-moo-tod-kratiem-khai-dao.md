@@ -20,6 +20,11 @@ translation_status: {}
 source_language: fi
 source_recipe: reseptit/paaruoat/khao-moo-tod-kratiem-khai-dao.md
 translation_of: khao-moo-tod-kratiem-khai-dao
+image:
+  src: paaruoat/khao-moo-tod-kratiem-khai-dao.webp
+  alt: "Thai garlic pork with jasmine rice and a crispy-edged fried egg on a green plate, with cucumber and chilli dipping sauce"
+  width: 1536
+  height: 1024
 ingredients:
   - {"amount":300,"unit":"g","item":"boneless pork collar (neck)","note":"cut into strips about 1 cm thick"}
   - {"amount":20,"unit":"g","item":"garlic","note":"finely chopped; half for the marinade, half for frying"}
@@ -55,7 +60,7 @@ This Thai everyday dish pairs marinated pork fried in fragrant garlic oil with j
 - Allergens: egg, fish (fish sauce), molluscs (oyster sauce) and soy. Soy and oyster sauces may contain wheat; check the labels. No gluten-free claim has been verified.
 - Nutrition values and glycaemic load (GL) have not yet been calculated. The dish includes regular jasmine rice and is not presented as low-carb or keto.
 - This is a Recipavo editorial adaptation based on published preparation sources. Recipavo has not cooked or tasted this version in its own test kitchen. Sources and adaptation choices are documented separately.
-- A properly licensed or original image is still needed; the Facebook photo is not reused.
+- The image is an AI-generated illustration of the dish, not a photograph of food prepared by Recipavo. The original Facebook photo was not copied.
 
 ## Preparation sources
 

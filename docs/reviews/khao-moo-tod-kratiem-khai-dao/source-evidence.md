@@ -20,12 +20,12 @@ Tila: Draft, ei julkaisuhyväksyntää eikä Recipavon omaa koekeittiötestiä.
 - Marinadin 20 minuutin jääkaappiaika on valittu lähteiden 10–60 minuutin väliltä. Kaikki pannulle lisätty raaka marinadi kypsennetään lihan mukana.
 - Chili-kalakastike, kurkku ja rapeareunaisen munan viimeistely ovat kuvaan ja tavanomaiseen tarjoiluun perustuvia toimituksellisia täydentäviä osia, eivät niiden määräarvoiltaan lähteistä varmistettuja.
 - Ensimmäinen lähde käyttää erilaisia maustemääriä ja toinen annostelee ruokalusikoissa. Tämä luonnos ei väitä lähteiden mittojen olevan suoraan keskenään vaihdettavia.
-- **Ei kopioitua kuvaa.** Käyttäjän toimittamaa Facebook-kuvakaappausta käytettiin ruokalajin tunnistamiseen, ei kuvajulkaisuun.
+- **Ei kopioitua kuvaa.** Käyttäjän toimittamaa Facebook-kuvakaappausta käytettiin ruokalajin tunnistamiseen ja uuden kuvituksen mallina, ei kuvajulkaisuun. Uusi kuva luotiin tekoälyllä 21.11.2026, muunnettiin WebP-muotoon ja lisättiin omana kuvaobjektinaan GitHubiin. Se ei ole valokuva Recipavossa valmistetusta ateriasta.
 
 ## Julkaisua estävät tai vielä avoimet tarkistukset
 
 - Lopullisten mittojen toimituksellinen varmistus ja valmistuslähteiden ristivertailu; ei väitettä Recipavon omasta fyysisestä kokeilusta.
-- Annokseen soveltuva oma tai luvallinen WebP-kuva (ja kuvatekstin sekä annoskoon vastaavuus).
+- **VALMIS:** annoksen elementteihin vastaava alkuperäinen tekoälykuvitus WebP-muodossa on lisätty polkuun `kuvat/paaruoat/khao-moo-tod-kratiem-khai-dao.webp` (1536 × 1024, 525 776 tavua). Kuva esittää yhden lautasen annosta; resepti tuottaa kaksi annosta.
 - Reseptiversioon sidottu ravintoarvolaskelma (riisi, imeytynyt paistoöljy ja kastikkeet huomioiden). Puuttuvat arvot säilyvät null-arvoina.
 - GK/GL: **ei määritetty**; riisiä sisältävää reseptiä ei luokitella ketoksi tai VHH:ksi.
 - Allergeenien tuotetarkistus (kananmuna, kala, nilviäiset, soija ja mahdollinen vehnä) sekä FI/EN/SV/TH-käännösten vertailu ja hyväksyntä.
