@@ -29,7 +29,7 @@ translation_status:
   th: draft
 image:
   src: alkuruoat/perinteinen-valkokastike.webp
-  alt: "Valkoista maitokastiketta lasikulhossa, kuvassa koristeena vihreää ruohosipulia"
+  alt: "Sileää valkoista maitokastiketta valkoisessa kastikekannussa, taustalla maitoa, voita ja vehnäjauhoja; tekoälykuvitus"
   width: 960
   height: 640
 ingredients:
@@ -69,7 +69,7 @@ Voista, maidosta ja vehnäjauhoista valmistuva peruskastike kalalle, perunoille 
 - Sisältö on toimituksellinen luonnos. Ravintoarvot ovat Fineli-lähteistä laskettuja annosarvioita; kahden pienen mauste-erän ravintovaikutus rajattiin konservatiivisesti massan avulla. GK ja kuvan lopullinen hyväksyntä puuttuvat.
 - Valmistuksen vertailulähde: https://www.valio.fi/reseptit/valkokastike/
 
-- Kuva on tekoälyn tuottama havainnekuva, joka on nyt versionhallinnassa. Kuvan tarjoilukoristeet eivät kuulu ainesosamääriin.
+- Kuva on tekoälyn tuottama havainnekuva, joka on nyt versionhallinnassa. Aiempi yrttikoristeinen kuva on korvattu sileää maitokastiketta vastaavalla tekoälykuvituksella; kuvan lopullinen toimituksellinen hyväksyntä on avoin.
 - Sisältää **maitoa ja vehnää**. Sekoita kastiketta koko kuumennuksen ajan ja varmista, että jauhot kypsyvät eivätkä jää paakuiksi.
 - Tarjoa maitokastike lämpimänä heti; jos pidät sitä tarjolla pitkään, varmista yli +60 °C:n lämpösäilytys. Jäähdytä ylijäämät nopeasti matalassa astiassa ja säilytä jääkaapissa alle +6 °C:ssa. Kastike sisältää maitoa ja vehnää.
 - Ravintolaskennan täsmäversiossa maito punnitaan 500 gramman määränä; aiempi 500 ml:n tilavuusmäärä ei ollut mitattu massana. Valkopippurin 0,4 g:n ja muskottipähkinän 0,2 g:n ravintovaikutus voidaan rajata massan perusteella, mutta puuttuvia ravintoainepitoisuuksia ei merkitä nollaksi.

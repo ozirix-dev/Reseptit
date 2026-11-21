@@ -9,7 +9,7 @@
 - Kuva on nyt GitHubissa: `kuvat/alkuruoat/perinteinen-valkokastike.webp` (960 × 640). AI-havainnekuva, ei kokkikokeilun todiste. Julkaisukatselmointi vaaditaan.
 - Ei gluteenittomuus- tai muuta ruokavalioväitettä ilman tarkistusta.
 
-Kuvassa vihreää ruohosipulia koristeena; sitä ei ole laskettu ainesosiksi, joten vastaavuus ja rajaus tarkistettava ennen julkaisua.
+Aiemmassa AI-kuvassa oli reseptiin kuulumatonta vihreää ruohosipulia. Chat 3 korvasi kuvan 22.11.2026 sileää valkoista maitokastiketta kuvaavalla WebP:llä; SHA-256 `612027ba5e5b482ce1540b9ad717875b612f0ada062fff7c40a8d6f2dc9d6b0e`. Kuvan lopullinen toimituksellinen ja tekninen julkaisutarkistus on edelleen avoin.
 
 ## Allergeeni- ja käsittelyhuomio – Chat 3, 21.11.2026
 

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "perinteinen-valkokastike",
   "source_path": "reseptit/alkuruoat/perinteinen-valkokastike.md",
-  "source_sha256": "c470d5f2e61ae6709184298549589988f584081ab56de39c475625763477fda1",
+  "source_sha256": "df3db62a8c6c735253a63f3deeec42b223c309be7f880c25568141d1b96f2e13",
   "decision": "hold",
   "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
   "reviewed_at": "2026-11-21",
@@ -48,8 +48,8 @@
       "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit"
     ],
     "image_path": "kuvat/alkuruoat/perinteinen-valkokastike.webp",
-    "image_sha256": "f63621c81f1e765399a9b198d72a3c1bc9ec0cf4aa8b876e851a2be16490ea78",
-    "image_review": "22.11.2026 Chat 3:n suora WebP-silmämääräinen tarkistus: REPLACE_REQUIRED. Kuvassa on runsaasti vihreää ruohosipulia/yrttejä sekä paloiksi tulkittavaa rakennetta, vaikka perinteisen valkokastikkeen FI-aineksissa ei ole yrttejä tai paloja. Katso docs/reviews/new-recipes/chat3-kastikkeet-kuvasisallon-katselmointi-2026-11-22.md. Vanhan kuvan tracked SHA pysyy voimassa vain dokumentaationa; kuvasisällön hyväksyntä ei ole PASS. Säilytä Draft/HOLD ja vaihda kuva ennen julkaisua.",
+    "image_sha256": "612027ba5e5b482ce1540b9ad717875b612f0ada062fff7c40a8d6f2dc9d6b0e",
+    "image_review": "22.11.2026 Chat 3: aiempi yrttinen, reseptin ainesosia vastaamaton WebP korvattu samalla polulla AI-havainnekuvalla sileästä vaaleasta maitokastikkeesta valkoisessa kastikekannussa. Visuaalinen sisällön rajattu katselmointi: VISUAL_OK; mitat 960 x 640; Git-tiedoston SHA-256 on yllä. Edellinen REPLACE_REQUIRED on ratkaistu kuvasisällön osalta; lopullinen ImageAssets-julkaisuhyväksyntä, kieli- ja muut reseptin portit ovat yhä HOLD. Kuva ei ole koekeittiövalokuva.",
     "physical_cook_test": false
   }
 }

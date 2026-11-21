@@ -24,7 +24,7 @@ tags:
   - "Finnish"
 image:
   src: alkuruoat/perinteinen-valkokastike.webp
-  alt: "White milk sauce in a glass bowl, garnished with green chives in the illustration"
+  alt: "Smooth white milk sauce in a white gravy boat, with milk, butter and wheat flour in the background; AI illustration"
   width: 960
   height: 640
 ingredients:
@@ -64,7 +64,7 @@ A simple butter-and-milk white sauce for fish, potatoes and vegetables.
 - Editorial draft with Fineli-based estimated nutrition. The two tiny spice amounts have conservative mass-based error bounds rather than assumed zero nutrition. Glycaemic load and final image approval remain pending.
 - Preparation reference: https://www.valio.fi/reseptit/valkokastike/
 
-- The AI-generated illustrative image is now versioned. Decorative garnishes shown in the picture are not part of the ingredient quantities.
+- The AI-generated illustrative image is now versioned. The previous mismatched herb-garnished image has been replaced with an AI illustration of smooth white milk sauce; final editorial image approval is still pending.
 - Contains **milk and wheat**. Stir while heating and make sure the flour cooks through without lumps.
 - Serve the milk sauce warm promptly; for extended hot holding, keep it above +60°C. Cool leftovers promptly in a shallow container and refrigerate below +6°C. Contains milk and wheat.
 - For the nutrition version, weigh 500 g of whole milk; the earlier 500 ml was a volume, not a measured mass. The small 0.4 g white pepper and 0.2 g nutmeg amounts can be conservatively bounded by their mass, but missing nutrient values must not be assumed to be zero.

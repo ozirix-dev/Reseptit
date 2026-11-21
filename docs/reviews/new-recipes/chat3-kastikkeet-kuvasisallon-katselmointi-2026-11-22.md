@@ -29,3 +29,7 @@
 22.11.2026 Chat 3 haki jokaisen kymmenen FI-reseptin sisällön ja siihen liittyvän `docs/reviews/new-recipes/<recipe_id>.json`-tietueen samalta PR:n tarkistetulta HEADilta `2f371948974eea9a702f6b97b3b146f0d95a6801`. Raakatekstin UTF-8 SHA-256 laskettiin erikseen ja verrattiin `source_sha256`-kenttään. SHA-256-toteutuksen tunnettu `abc`-testivektori täsmäsi. **Tulos 10/10 MATCH**, mukaan lukien neljä laskettua ja kuusi ravintosisältönsä osalta keskeneräistä reseptiä.
 
 Tämä on reseptilähteiden **sisällön eheystarkistus**, ei `nutrition_input_hash`-tiivisteiden tai kaikkien EN/SV/TH-semanttisten tiivisteiden varmennus eikä CI:n korvike. Katselmointitiedostoissa `decision: hold` säilyy jokaisella reseptillä.
+
+## Korvaus 22.11.2026 – Chat 3
+
+Aiempi `perinteinen-valkokastike.webp` (SHA-256 `f63621c81f1e765399a9b198d72a3c1bc9ec0cf4aa8b876e851a2be16490ea78`) on korvattu samalla polulla uudella AI-havainnekuvalla sileästä valkoisesta maitokastikkeesta valkoisessa kastikekannussa. Yrtit ja vihreät pilkut ovat poissa. Korvaavan kuvan mitat 960 × 640, koko **6 942 tavua**, SHA-256 `612027ba5e5b482ce1540b9ad717875b612f0ada062fff7c40a8d6f2dc9d6b0e`. Uusi kuva on vahvasti pakattu WebP-havainnekuva; mahdollinen pakkauslaadun parannus kuuluu erilliseen kuvan laatukatselmointiin. Neljän kielen alt-tekstit ja kuvan metatiedot on synkronoitu, mutta lopullinen kuvan julkaisu- ja laatuhyväksyntä on **avoin**. `status: draft` ja `decision: hold` pysyvät.
