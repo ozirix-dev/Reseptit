@@ -190,3 +190,75 @@ test("issue 404: source-backed review replaces kitchen dependency without bypass
   assert.match(parsed.content, /ERITYINEN TURVALLISUUS-HOLD/);
   assert.equal(isPublicRecipeQuarantined("intialainen-pesarattu-mungpavuista"), true);
 });
+
+test("issue 404: source-locked ingredient quantities cannot silently revert to speculative V2 numbers", async () => {
+  const audit = JSON.parse(await readFile(
+    path.join(draftDirectory, "source-binding-2026-11-21.json"), "utf8",
+  )) as {
+    releaseAuthorized: boolean;
+    physicalTestClaim: boolean;
+    recipes: Array<{
+      id: string;
+      original: string;
+      source: string;
+      methodStatus: string;
+      sourceMeasures: Array<{ itemContains: string; amount: number; unit: string }>;
+      unresolved: string[];
+    }>;
+  };
+
+  assert.equal(audit.releaseAuthorized, false);
+  assert.equal(audit.physicalTestClaim, false);
+  assert.equal(audit.recipes.length, 5);
+  assert.equal(new Set(audit.recipes.map((row) => row.original)).size, 5);
+  assert.deepEqual(
+    [...audit.recipes.map((row) => row.original)].sort(),
+    [...candidates.map((row) => row.original)].sort(),
+  );
+
+  const expectedMeasures = [4, 4, 0, 5, 4];
+  for (const [index, row] of audit.recipes.entries()) {
+    const parsed = parseMarkdown(await readFile(
+      path.join(draftDirectory, row.id + ".md"), "utf8",
+    ));
+    assert.ok(parsed, row.id);
+    const data = recipeFrontmatterSchema.parse(parsed.data);
+    assert.equal(data.status, "draft");
+    assert.equal(data.recipe_id, row.original + "-punnittu-v2");
+    assert.equal(data.image, undefined);
+    assert.ok(row.source.startsWith("https://"), row.id);
+    assert.ok(parsed.content.includes(row.source), row.id);
+    assert.ok(row.methodStatus.includes("HOLD"), row.id);
+    assert.ok(row.unresolved.length > 0, row.id);
+    assert.equal(row.sourceMeasures.length, expectedMeasures[index]);
+    for (const ingredient of row.sourceMeasures) {
+      assert.ok(data.ingredients.some((actual) =>
+        actual.amount === ingredient.amount &&
+        actual.unit === ingredient.unit &&
+        actual.item.includes(ingredient.itemContains)),
+      `${row.id}: source quantity ${ingredient.amount} ${ingredient.unit} of ${ingredient.itemContains}`);
+    }
+    for (const key of [
+      "carbs_net_per_serving_g", "carbs_total_per_serving_g",
+      "protein_per_serving_g", "fat_per_serving_g",
+    ] as const) assert.equal(data[key], null, row.id);
+  }
+
+  const salt = recipeFrontmatterSchema.parse(parseMarkdown(await readFile(
+    path.join(draftDirectory, "karibia-saltfish-fritterit-punnittu-v2.md"), "utf8",
+  ))!.data);
+  assert.equal(salt.servings, 16);
+  assert.ok(salt.ingredients.some((i) => i.item.includes("auringonkukkaöljyä") && i.amount === null));
+
+  const kuih = recipeFrontmatterSchema.parse(parseMarkdown(await readFile(
+    path.join(draftDirectory, "malesialainen-kuih-seri-muka-punnittu-v2.md"), "utf8",
+  ))!.data);
+  assert.equal(kuih.servings, 20);
+  assert.ok(kuih.ingredients.some((i) => i.item.includes("keltuaista") && i.amount === 2));
+
+  const xoi = recipeFrontmatterSchema.parse(parseMarkdown(await readFile(
+    path.join(draftDirectory, "vietnamilainen-xoi-maapahkinalla-punnittu-v2.md"), "utf8",
+  ))!.data);
+  assert.ok(xoi.ingredients.some((i) => i.item.includes("suolaa") && i.amount === null));
+  assert.ok(!xoi.ingredients.some((i) => i.item.includes("seesaminsiemen") && i.amount !== null));
+});
