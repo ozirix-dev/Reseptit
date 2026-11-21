@@ -340,8 +340,8 @@
     "carbohydrate": 28.176,
     "protein": 20.85,
     "fat": 17.8,
-    "fibre": 2.37,
-    "polyols": 0
+    "fibre": null,
+    "polyols": null
   },
   "important": "Known-subtotal ei ole lopullinen annoksen arvo: 0,5 g maustepippurin data puuttuu, valkopippurin kuitu/polyolit puuttuvat, kananmunan paino ja pekonin rasva ovat oletuksia. Ei saa julkaista.",
   "unresolved_components": [
@@ -376,5 +376,25 @@
     "approved_fat_per_portion_g": null,
     "glycemic_load": null
   },
-  "publication_gate": "HOLD: silakan tuote, pekoni, maidon rasva ja kananmunan paino täsmennettävä, ravintolaskenta ja toimituksellinen hyväksyntä tehtävä ennen julkaisua."
+  "publication_gate": "HOLD: silakan tuote, pekoni, maidon rasva ja kananmunan paino täsmennettävä, ravintolaskenta ja toimituksellinen hyväksyntä tehtävä ennen julkaisua.",
+  "quantified_rows_subtotals_per_portion_g": {
+    "carbohydrate": 28.176,
+    "protein": 20.85,
+    "fat": 17.8,
+    "fibre": 2.37,
+    "polyols": 0
+  },
+  "coverage": {
+    "ingredient_rows": 11,
+    "has_unmapped_ingredients": true,
+    "unmapped_ingredient_lines": [
+      10
+    ],
+    "missing_nutrient_components": [
+      "fibre",
+      "polyols"
+    ],
+    "all_public_macro_values_withheld": true
+  },
+  "missing_values_rule": "Null means not established; 0 is allowed only for a measured/explicitly sourced value. Quantified-row subtotals exclude unmapped ingredients and unknown components, and cannot be used as complete-recipe estimates."
 }
