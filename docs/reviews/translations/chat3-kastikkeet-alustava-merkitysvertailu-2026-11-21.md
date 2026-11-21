@@ -1,8 +1,8 @@
 # Chat 3 – kastikkeiden nelikielinen alustava merkitysvertailu
 
-**Päivä:** 21.11.2026  
-**Omistaja:** Chat 3  
-**PR:** #808  
+**Päivä:** 21.11.2026
+**Omistaja:** Chat 3
+**PR:** #808
 **Vertailtujen tiedostojen Git-revisio:** `00dfa0f73edcabf4890e38639ed5075442de197e` (muuttumaton tarkistushetken HEAD)
 
 ## Menetelmä ja rajaus
