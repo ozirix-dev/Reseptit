@@ -86,3 +86,9 @@ Maito punnitaan 500 g:ksi entisen 500 ml:n sijaan; vastaava FI/EN/SV/TH-ainesmuu
 - Kylmän piparjuurikastikkeen sitruunamehun määrä muutettiin tarkoituksellisesti **12 ml → 12 g punnittua mehua**; FI/EN/SV/TH yhdenmukaistettu. Kyse ei ole tiheysoletuksesta.
 - Uusi FI-lähteen SHA-256 `9a577bfdf6e610f3dfee98ff802de6841a2b3b9e23cc30544cea65345ed03260` ja `recipeNutritionInputHash` `c6fd529885f21f835fa6a97c4873c05bd27a9b11b8d04a3c6de68499666945a0` sidottu kirjalliseen review'hun ja kandidaattirekisteriin. Vanhempien osuuksien ml-lukumäärät ovat historiallisia tilannekuvia.
 - Neljä laskentapakettia kymmenestä edelleen valmiina; piparjuurikastikkeen `nutrition: pending` ja koko PR:n Draft/HOLD pysyvät.
+
+## Jatkotarkistus 22.11.2026 – vaniljakastikkeen 450 g täysmaito
+
+- Vaniljakastikkeen täysmaito muutettiin **450 ml → 450 g punnittua maitoa** kaikissa FI/EN/SV/TH-resepteissä. Tämä on reseptin täsmennys, ei maitotiheyden oletus.
+- Uusi lähdetiedoston SHA-256 `87d3a19d59f5a5cad0444bbf1aaa62d330bea230d6558f61d97895a66b3af771`, uusi ravintosyötteen `sourceHash` `49e5a1e7149059baaf6b39e13b534ed179cacd632041eb07e8442d7b06cf11c7`. Vanha 463,5 gramman tiheysoletusesimerkki on korvattu 450 g:n erillisellä osalaskelmalla lähdemuistiossa.
+- Numeeriset ravintoarvot edelleen WITHHELD; vaniljasokerin polyoli-/kuituevidenssi ja muut julkaisuehdot ovat HOLD. Erän laskentapaketteja edelleen 4/10.

@@ -26,7 +26,7 @@ image:
   height: 640
 ingredients:
   - amount: 450
-    unit: "ml"
+    unit: "g"
     item: "whole milk"
   - amount: 45
     unit: "g"

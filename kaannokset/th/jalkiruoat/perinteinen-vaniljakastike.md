@@ -26,7 +26,7 @@ image:
   height: 640
 ingredients:
   - amount: 450
-    unit: "ml"
+    unit: "g"
     item: "นมสดชนิดเต็มมันเนย"
   - amount: 45
     unit: "g"

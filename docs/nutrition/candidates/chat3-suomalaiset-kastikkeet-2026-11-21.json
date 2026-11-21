@@ -801,20 +801,20 @@
     {
       "recipe_id": "perinteinen-vaniljakastike",
       "source_path": "reseptit/jalkiruoat/perinteinen-vaniljakastike.md",
-      "source_recipe_sha256": "33547291768cecf9aa17e99bda8d5a51a153205527e3c65ad46b53d7115431e6",
-      "nutrition_input_hash": "10e4c40b73833b417eae56194ddcb404bb3dce2d9112c71710529e5744385e5e",
+      "source_recipe_sha256": "87d3a19d59f5a5cad0444bbf1aaa62d330bea230d6558f61d97895a66b3af771",
+      "nutrition_input_hash": "49e5a1e7149059baaf6b39e13b534ed179cacd632041eb07e8442d7b06cf11c7",
       "servings": 6,
       "ingredient_count": 6,
       "ingredients": [
         {
           "row": 1,
           "amount": 450,
-          "unit": "ml",
+          "unit": "g",
           "item": "täysmaitoa",
           "note": null,
           "food_record": null,
           "edible_basis": "UNRESOLVED",
-          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "unit_conversion": "DIRECT_GRAMS",
           "retention": "UNRESOLVED"
         },
         {
