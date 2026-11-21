@@ -1,0 +1,62 @@
+---
+title: "Muikunmäti-rieskarullat"
+recipe_id: muikunmati-rieskarullat
+url_slug: muikunmati-rieskarullat
+category: alkuruoka
+language: fi
+status: draft
+servings: 8
+time_total_min: 25
+difficulty: keskitaso
+main_ingredient:
+  - "muikunmäti"
+  - "rieska"
+tags:
+  - "suomalainen"
+  - "muikunmati"
+  - "rieska"
+  - "juhlapoyta"
+ingredients:
+  - amount: 4
+    unit: "kpl"
+    item: "pientä pehmeää perunarieskaa"
+  - amount: 140
+    unit: "g"
+    item: "syöntivalmista muikunmätiä"
+  - amount: 180
+    unit: "g"
+    item: "maustamatonta tuorejuustoa"
+  - amount: 90
+    unit: "g"
+    item: "smetanaa"
+  - amount: 50
+    unit: "g"
+    item: "punasipulia"
+  - amount: 15
+    unit: "g"
+    item: "tuoretta tilliä"
+  - amount: 10
+    unit: "ml"
+    item: "sitruunamehua"
+translation_languages: []
+translation_status: {}
+---
+
+# Muikunmäti-rieskarullat
+
+Muikunmäti-rieskarullat on toimituksellinen suomalainen alkuruokaluonnos. Määrät ja ajat ovat alustavia eivätkä perustu Recipavon omaan valmistuskokeeseen.
+
+## Valmistus
+
+1. Varmista mädin syöntivalmius, kylmäketju sekä valmistajan käsittely- ja käyttöohjeet.
+2. Sekoita tuorejuusto ja smetana. Hienonna sipuli ja tilli; lisää ne täytteeseen sitruunamehun kanssa.
+3. Levitä seos rieskoille ohuesti. Jaa mäti päälle ja kääri varovasti tiukoiksi rulliksi.
+4. Kylmennä lyhyesti, leikkaa annospaloiksi ja tarjoa heti kylmänä.
+
+## Muistiinpanot
+
+- **Tila:** Draft / HOLD, ei julkaisuvaltuutta. Reseptin identiteetti tarkistettu mainin reseptitiedostonimistä ja tämänhetkisistä avoimista PR:istä; lopullinen sisältö- ja semanttinen duplikaattitarkistus odottaa.
+- **Lähde- ja valmistusnäyttö:** Mittasuhteet ovat Chat-4:n alustava toimituksellinen ehdotus. Ulkoiset valmistuslähteet, ainesosien olomuoto, saanto ja ajat varmennettava ennen julkaisua.
+- **Ruokaturva:** HOLD: mädin pakastuskäsittely, säilyvyys ja listeriariski vaativat tarkistuksen. Ei sovi sellaisenaan riskiryhmille, jos mäti ei ole turvallisesti kuumennettu; kylmäsäilytys on välttämätön.
+- **Ravintoarvot:** Ei laskettu; numeerisia makroja ei julkaista. GK: ei määritetty.
+- **Kuva ja käännökset:** Ei vielä tuotettu; WebP, kuvan varmennus, kieliversiot ja niiden katselmointinäyttö vaaditaan erikseen.
