@@ -3,6 +3,10 @@ title: "ปลาวินเดซทอดคลุกแป้งไรย์
 recipe_id: paistetut-muikut
 url_slug: paistetut-muikut-th
 category: paaruoka
+main_ingredient:
+  - "kala"
+cooking_method:
+  - "paisto"
 language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/paistetut-muikut.md
@@ -12,8 +16,8 @@ servings: 4
 time_total_min: 30
 difficulty: "ง่าย"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "อาหารฟินแลนด์"
+  - "อาหารพื้นบ้าน"
 ingredients:
   - amount: 700
     unit: "g"

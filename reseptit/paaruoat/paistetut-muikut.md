@@ -3,6 +3,10 @@ title: "Paistetut muikut ruisjauhoilla"
 recipe_id: paistetut-muikut
 url_slug: paistetut-muikut
 category: paaruoka
+main_ingredient:
+  - "kala"
+cooking_method:
+  - "paisto"
 language: fi
 status: draft
 servings: 4

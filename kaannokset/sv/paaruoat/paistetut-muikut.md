@@ -3,6 +3,10 @@ title: "Smörstekta siklöjor med rågpanering"
 recipe_id: paistetut-muikut
 url_slug: paistetut-muikut-sv
 category: paaruoka
+main_ingredient:
+  - "kala"
+cooking_method:
+  - "paisto"
 language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/paistetut-muikut.md
@@ -12,8 +16,8 @@ servings: 4
 time_total_min: 30
 difficulty: "lätt"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "finsk"
+  - "traditionell"
 ingredients:
   - amount: 700
     unit: "g"

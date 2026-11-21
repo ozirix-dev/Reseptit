@@ -3,6 +3,10 @@ title: "Finnish Pan-Fried Vendace in Rye Crumbs"
 recipe_id: paistetut-muikut
 url_slug: paistetut-muikut-en
 category: paaruoka
+main_ingredient:
+  - "kala"
+cooking_method:
+  - "paisto"
 language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/paistetut-muikut.md
@@ -12,8 +16,8 @@ servings: 4
 time_total_min: 30
 difficulty: "easy"
 tags:
-  - "suomalainen"
-  - "perinneruoka"
+  - "Finnish"
+  - "traditional"
 ingredients:
   - amount: 700
     unit: "g"
