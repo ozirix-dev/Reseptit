@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "kermainen-tillikastike",
   "source_path": "reseptit/alkuruoat/kermainen-tillikastike.md",
-  "source_sha256": "9886202473951cfcc39b5bd3b8153e3234df462f00488198041c7b2a9d1c3460",
+  "source_sha256": "4dfdd44a1ff4f2efdf55b0f1f7c6ace055d20c84ed8c1d71851a22c75a9386b0",
   "decision": "hold",
   "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
   "reviewed_at": "2026-11-21",
@@ -27,8 +27,8 @@
       "notes": "Valion testattu ohje sekoittaa kermaviilin, tillin ja sitruunan kylmäksi kastikkeeksi kalalle; Recipavon 15 minuutin peitetty jääkaappimaustuminen lisää sovellettavan kylmäsäilytysaskeleen."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Kermaviili sisältää maitoa; kylmäsäilytys. Pakkausmerkinnät sekä tuotekohtaiset allergeenit ja säilytys tarkistettava ennen julkaisemista."
+      "status": "pass",
+      "notes": "Ainesosakohtainen maitoallergeeni yksilöity kermaviilistä; tilli pestään, puhtaat välineet ja kylmänä tarjottavan ruoan alle +6 °C säilytys ohjeistettu. Ei raakaa eläinperäistä komponenttia, joka vaatisi kypsennyksen; rajattu turvallisuuskatselmointi PASS. Säilyvyysaikalupausta ei anneta. Viite: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/ sekä https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit/ ."
     },
     "servings_and_time": {
       "status": "pass",

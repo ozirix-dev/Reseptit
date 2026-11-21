@@ -57,3 +57,4 @@ Toasted flour, butter and beef stock make a rich gravy for meatballs and mashed 
 - Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The AI-generated illustrative image is included in this branch and still requires editorial review.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/ruskea-kastike
 - Contains **milk, wheat and soy**. Soy sauce may also contain wheat, and stock may contain celery. Check the products used.
+- Serve the gravy hot immediately. If preparing ahead, cool promptly in a shallow container, refrigerate below +6°C and reheat thoroughly until hot. Check stock and soy-sauce labels for celery, wheat and soy.

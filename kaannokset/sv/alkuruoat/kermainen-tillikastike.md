@@ -59,3 +59,4 @@ En kall, frisk dillsås till ugnsfisk, stekt fisk och färskpotatis.
 - Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Den AI-genererade illustrationsbilden finns i denna gren och kräver fortfarande redaktionell granskning.
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/tillikastike-kalalle/
 - Innehåller **mjölk** (gräddfil). Servera kall och förvara övertäckt i kylskåp.
+- Använd kall gräddfil, rena redskap och sköljd dill. Förvara den färdiga såsen övertäckt i kylskåp under +6 °C och ta fram små mängder först vid servering.
