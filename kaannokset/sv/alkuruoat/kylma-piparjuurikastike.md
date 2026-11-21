@@ -61,3 +61,4 @@ En frisk pepparrotssås till rostbiff, rökt fisk och rödbetssallad.
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/piparjuurikastike/
 - En annan Valio-källa använder färskriven pepparrot i kall crème fraîche-sås medan den första använder pepparrotspasta. Kryddningen här är en egen anpassning. https://www.valio.fi/reseptit/graavattu-piparjuurilohi/
 - Innehåller **mjölk** (crème fraîche). Använd rengjord pepparrot avsedd som livsmedel och förvara såsen kall.
+- Tvätta händer och gräslök; rengör och skala färsk pepparrot före rivning. Använd rena redskap. Förvara den mjölkbaserade såsen övertäckt under +6 °C och ta fram endast så mycket som behövs.

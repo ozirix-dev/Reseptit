@@ -66,3 +66,4 @@ A mild milk-based sauce with chopped hard-boiled eggs and fresh dill.
 - The AI-generated image is included in this branch, pending approval.
 - Martat's tested egg sauce uses milk, butter, wheat flour and cooked eggs. The earlier Valio reference was a different cream-based sauce. https://www.martat.fi/reseptit/kananmunakastike/
 - Contains **eggs, milk and wheat**. Use fully cooked, peeled eggs; serve hot or cool promptly and refrigerate.
+- Use fully hard-boiled, peeled eggs and clean utensils. Serve the egg-and-milk sauce hot promptly; cool any leftovers without delay in a shallow container and refrigerate below +6°C. Keep cold food cold and hot food hot.

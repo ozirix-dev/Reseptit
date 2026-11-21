@@ -66,3 +66,4 @@ Raikas piparjuurikastike paahtopaistille, savukalalle ja rosollille.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.valio.fi/reseptit/piparjuurikastike/
 - Toinen Valion vertailuohje käyttää kylmässä crème fraîche -kastikkeessa tuoretta raastettua piparjuurta. Aiempi ohje käytti valmista piparjuuritahnaa. Maustaminen on tässä itsenäisesti sovitettu. https://www.valio.fi/reseptit/graavattu-piparjuurilohi/
 - Sisältää **maitoa** (crème fraîche). Käytä ainoastaan ruokakäyttöön tarkoitettua, puhdistettua piparjuurta; pidä valmis kastike kylmässä.
+- Pese kädet ja ruohosipuli, kuori ja pese tuore piparjuuri ennen raastamista ja käytä puhtaita välineitä. Pidä maitopohjainen kastike peitettynä jääkaapissa alle +6 °C:ssa; nosta tarjolle vain tarvittava määrä.

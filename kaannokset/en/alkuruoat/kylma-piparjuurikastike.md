@@ -61,3 +61,4 @@ A tangy horseradish sauce for roast beef, smoked fish and beetroot salad.
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/piparjuurikastike/
 - Another Valio reference uses freshly grated horseradish in cold crème fraîche sauce, whereas the earlier sauce uses horseradish paste. Seasoning here is independently adapted. https://www.valio.fi/reseptit/graavattu-piparjuurilohi/
 - Contains **milk** (crème fraîche). Use cleaned, food-grade horseradish only and keep the prepared sauce chilled.
+- Wash hands and chives; clean and peel fresh horseradish before grating, and use clean utensils. Keep the dairy-based sauce covered in the refrigerator below +6°C and bring out only the amount needed to serve.

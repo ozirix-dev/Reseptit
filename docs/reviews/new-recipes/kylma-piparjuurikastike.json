@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "kylma-piparjuurikastike",
   "source_path": "reseptit/alkuruoat/kylma-piparjuurikastike.md",
-  "source_sha256": "d7b7b78ce717d4062ba015a8afa11bb23cccad9dac7089fc3bde6e6dca0c23c7",
+  "source_sha256": "7d10eda7a424d184da4176bb110a56ce458eb8872758197954399b443e5116e4",
   "decision": "hold",
   "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; kokonaisjulkaisun hyväksyntä puuttuu",
   "reviewed_at": "2026-11-21",
@@ -28,8 +28,8 @@
       "notes": "Molemmat Valion vertailut tukevat kylmää crème fraîche-pohjaista sekoitusmenetelmää. Tuore piparjuuri kuoritaan/raastetaan ja ruohosipuli pestään; valmis kastike sekoitetaan ja annetaan maustua 15 min jääkaapissa. Lisämaustuminen on Recipavon oma turvallinen työvaihe, ei väite Valion keittiötestistä tällä suhteella."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Maito; tuoreen piparjuuren voimakkuus vaihtelee, pidä kylmässä. Pakkausmerkinnät sekä tuotekohtaiset allergeenit ja säilytys tarkistettava ennen julkaisemista."
+      "status": "pass",
+      "notes": "Ainesosina crème fraîche (MAITO), tuore piparjuuri ja pestävä ruohosipuli. Kylmästä maitopohjaisesta kastikkeesta ei tehdä turvallisuutta heikentävää fermentointi- tai säilyvyysväitettä. Pesu, kuoriminen, puhtaat työvälineet, nopea tarjoilu, kylmässä alle +6 °C säilytys on tarkistettu. Rajattu food_safety PASS, pakkaustiedot eivät muuta yksilöityä maitoallergeenia. Lähteet: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/ ."
     },
     "servings_and_time": {
       "status": "pass",

@@ -71,3 +71,4 @@ Lempeä valkokastike, jossa on kovaksi keitettyä kananmunaa ja tuoretta tilliä
 - Kuva on tekoälyn luoma havainnekuva tässä haarassa. Hyväksyntä puuttuu.
 - Marttojen testattu kananmunakastike käyttää maitoa, voita, vehnäjauhoja ja keitettyjä munia. Valion aikaisempi lähde oli eri, kermapohjainen munakastike. https://www.martat.fi/reseptit/kananmunakastike/
 - Sisältää **kananmunaa, maitoa ja vehnää**. Käytä läpikypsiä, kuorittuja kananmunia; pidä kastike kuumana tarjoiltaessa tai jäähdytä nopeasti kylmäsäilytykseen.
+- Käytä valmiiksi täysin kovaksi keitettyjä, kuorittuja kananmunia ja puhtaita työvälineitä. Tarjoa munamaitokastike kuumana heti; jos säilytät ylijäämää, jäähdytä viipymättä matalassa astiassa ja säilytä jääkaapissa alle +6 °C:ssa. Pidä kylmä ruoka kylmänä ja kuuma kuumana.

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "perinteinen-munakastike",
   "source_path": "reseptit/alkuruoat/perinteinen-munakastike.md",
-  "source_sha256": "5738b3818aa294d2b67045857fc6587ab9e70b6647f64fd3a94064a159412619",
+  "source_sha256": "07d0011a63dca55066130fcdb55a3ae1b18067ed8adc057f9f2709af8177e2b4",
   "decision": "hold",
   "reviewed_by": "Chat 3 – rajattu kirjallinen aines- ja menetelmäkatselmointi; julkaisuhyväksyntä avoin",
   "reviewed_at": "2026-11-21",
@@ -27,8 +27,8 @@
       "notes": "Martat testaa rasvan ja vehnäjauhojen kuumentamisen ilman ruskistamista, maidon vähittäisen lisäämisen, 5 minuutin haudutuksen ja keitettyjen munien sekoituksen. Recipavo käyttää samaa menetelmää ja tilliä ruohosipulin sijasta. Ei Recipavon koekeittiötestiä."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Maito, vehnä, kananmuna; käytä kovaksi keitettyjä munia. Pakkausmerkinnät sekä tuotekohtaiset allergeenit ja säilytys tarkistettava ennen julkaisemista."
+      "status": "pass",
+      "notes": "Kananmuna on ainesosassa nimenomaisesti kovaksi keitetty ja kuorittu; maito ja vehnä ovat suurusteessa. Kaikki kolme allergiaa nimetty. Raakaa munaa ei käytetä ja munat kuumennetaan kastikkeeseen valmiiksi kypsinä. Kuumana tarjoilu tai ylijäämien nopea jäähdytys ja alle +6 °C kylmäsäilytys lisätty FI/EN/SV/TH. Rajattu food_safety PASS. Lähteet: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/ ."
     },
     "servings_and_time": {
       "status": "pass",
