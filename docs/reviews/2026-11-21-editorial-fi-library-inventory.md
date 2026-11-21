@@ -23,12 +23,12 @@
 
 Aja repon nykyisessä työpuussa:
 
-``
+```sh
 cd site
 npx tsx scripts/editorial-fi-inventory.ts
 npx tsx scripts/editorial-fi-inventory.ts --json
 npx tsx --test tests/editorial-fi-inventory.test.ts
-``
+```
 
 Komennot lukevat paikalliset Markdown-tiedostot ja kirjoittavat vain standardiulostuloon. Jos raportti halutaan talteen, ohjaa tuloste erikseen `tmp/`-hakemistoon; älä lisää massiivista generoituvaa väliraporttia Gitin historiaan. CLI on tarkoituksella erillinen eikä muuta buildia tai julkaisupolkua.
 
