@@ -8,6 +8,10 @@ Tämä työ jatkaa issue #404:n B21-jonoa, jonka 17 alkuperäistä FI-tunnusta o
 
 **Koekeittiötöntä työskentelyä koskeva päätös 21.11.2026:** omaa koekeittiötä ei ole käytettävissä, eikä oma valmistuskoe ole yleinen julkaisun pakollinen portti. **[Viiden reseptin lähdeperusteinen katselmointi](source-review-without-kitchen.md)** korvaa koekeittiön edellytyksen nimetyillä reseptilähteillä, tuotetäsmäytyksellä, tarkastetulla sovituksella ja turvallisuusnäytöllä. Erottamaton lähderistiriita jää HOLDiksi. Puuttuvaa ravinto-/GK-lähdettä ei voi korvata arvauksella.
 
+## Ainesosakohtainen ravintotiedon esitarkistus 21.11.2026
+
+**53 ainesosaa, 5 FI-Draftia:** [koneellinen ravintolähteiden esikartoitus](../../nutrition/issue404-b5-ingredient-preflight.json) ja [ihmisluettava yhteenveto](../../nutrition/issue404-b5-ingredient-preflight.md). Tämä ei ole julkaisuvalmis `docs/nutrition/calculations/`-laskenta: ainesosan tuote-, mitta- ja kypsennysretentioeroja ei saa kuitata arvaamalla, ja kaikki neljä makrokenttää pysyvät `null`-tilassa.
+
 ## Ajantasainen lähdesidonta 21.11.2026
 
 Tämän erän **[koneellisesti tarkistettava lähdetaulukko](source-binding-2026-11-21.json)** on nykytilan määrien ja ruokalajimenetelmän lähde. Aikaisempien PR #760–#762:n katselmointien 80 g/180 g/2 g ja muiden vanhojen testimittausten väitteet ovat **historiaa**, eivät enää tämän haaran FI-luonnosten raaka-aineluettelo. Ulkopuolisten tekijöiden mittoja ei väitetä Recipavon omaksi mittaukseksi.
