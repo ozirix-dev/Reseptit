@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "lasimestarin-silli",
+  "source_path": "reseptit/alkuruoat/lasimestarin-silli.md",
+  "source_sha256": "d271545f007d2559210fd0b10b834b4a5ca9d2973f0a2a9a0e1e6e65cb25beae",
+  "decision": "approved",
+  "reviewed_by": "ChatGPT Chat 4 – lähteistetty kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/helppo-lasimestarin-silli"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/reviews/chat4-eight-starters-nutrition-withheld-2026-11-21.md",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Mainin reseptikategorioiden identiteetit ja avoimet rinnakkaiset PR:t tarkistettiin, eikä kyseisen ruokalajin samaa recipe_id/url_slug-identiteettiä löytynyt."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "400 g kaupallista syöntivalmista maustesilliä, 200 ml vettä, 100 ml 10-prosenttista etikkaa, 90 g sokeria sekä juurekset ja kokonaiset mausteet."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "K-Ruoan testattu lasimestarin silli käyttää valmiita sillifileitä sekä kiehautettua ja jäähdytettyä etikkalientä, 2–3 vuorokauden kylmämaustuminen. Recipavon määrät ovat oma 8 annoksen sovitus."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ohje koskee vain syöntivalmiin sillin uudelleenmaustamista, ei tuoreen kalan säilömistä. Kylmäketju ja pakkauksen käyttöaika pysyvät määräävinä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Aktiivinen noin 30 min + noin 48 h kylmämaustuminen, yhteensä 2910 minuuttia."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Numeeriset ravintoarvot jätetään tarkoituksellisesti pois, koska toistettavaa tuotekohtaista laskentaa ei ole. Puuttuvat kentät eivät merkitse nollaa; erillinen ravintonäyttömuistio."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle omalle valmistusversiolle ei ole hyväksyttyä GI/GK-mittausta tai laskentaa. GK jätetään määrittämättä ja ruokavalioväitteet pidätetään."
+    }
+  },
+  "supplementary_evidence": {
+    "source_review": "docs/reviews/new-recipes/chat4-alkuruoat-independent-source-review-2026-11-21.md",
+    "semantic_review": "docs/reviews/new-recipes/chat4-eight-appetizers-semantic-review-2026-11-21.md",
+    "image_path": "kuvat/alkuruoat/lasimestarin-silli.webp",
+    "image_sha256": "b49542a0047d7077852647f497ec0a1704d8da3fb663b5a1c8c564abf9745b2f",
+    "image_review": "SHA-256-varmennettu 720 × 720 tekoälyhavainnekuva; ei valmistetun annoksen valokuva.",
+    "physical_cook_test": false,
+    "translation_status": "EN/SV/TH remain draft; no publication claim for those languages."
+  }
+}

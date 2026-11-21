@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "punajuuricarpaccio-vuohenjuustolla",
+  "source_path": "reseptit/alkuruoat/punajuuricarpaccio-vuohenjuustolla.md",
+  "source_sha256": "8a30e23bf52eb01a89deb6543718436a50fb97af9849bb62fb673e76273ab1e9",
+  "decision": "approved",
+  "reviewed_by": "ChatGPT Chat 4 – lähteistetty kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.alko.fi/fi/reseptit/ruokareseptit/punajuuri-vuohenjuustosalaatti"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/reviews/chat4-eight-starters-nutrition-withheld-2026-11-21.md",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Mainin reseptikategorioiden identiteetit ja avoimet rinnakkaiset PR:t tarkistettiin, eikä kyseisen ruokalajin samaa recipe_id/url_slug-identiteettiä löytynyt."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "600 g punajuuria, 120 g pehmeää vuohenjuustoa, saksanpähkinät, oliiviöljy, omenaviinietikka, hunaja, timjami ja suola."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Julkaistu punajuuri-vuohenjuustosalaatti vahvistaa juureksen paahtamisen, juuston ja pähkinöiden yhdistelmän. Recipavon ohuet 200 °C paahdetun punajuuren siivut ja vinaigrette ovat toimituksellinen sovitus."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Punajuuret kypsennetään pehmeiksi; maitotuotteen pastörointi, kylmäsäilytys sekä maito- ja pähkinäallergeenit huomioidaan."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kuusi alkupala-annosta, 70 minuuttia on arvio, punajuurten koko vaikuttaa 45–60 minuutin paahtoon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Numeeriset ravintoarvot jätetään tarkoituksellisesti pois, koska toistettavaa tuotekohtaista laskentaa ei ole. Puuttuvat kentät eivät merkitse nollaa; erillinen ravintonäyttömuistio."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle omalle valmistusversiolle ei ole hyväksyttyä GI/GK-mittausta tai laskentaa. GK jätetään määrittämättä ja ruokavalioväitteet pidätetään."
+    }
+  },
+  "supplementary_evidence": {
+    "source_review": "docs/reviews/new-recipes/chat4-alkuruoat-independent-source-review-2026-11-21.md",
+    "semantic_review": "docs/reviews/new-recipes/chat4-eight-appetizers-semantic-review-2026-11-21.md",
+    "image_path": "kuvat/alkuruoat/punajuuricarpaccio-vuohenjuustolla.webp",
+    "image_sha256": "b41f70e45b1a82891ee406a3131464977d50e0b8a72b2d8ec93aba03153bfe4b",
+    "image_review": "SHA-256-varmennettu 720 × 720 tekoälyhavainnekuva; ei valmistetun annoksen valokuva.",
+    "physical_cook_test": false,
+    "translation_status": "EN/SV/TH remain draft; no publication claim for those languages."
+  }
+}
