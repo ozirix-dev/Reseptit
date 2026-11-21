@@ -30,7 +30,7 @@ test("#327: missing total time is listed with route and pinned source evidence",
   const markdown = toMarkdown(report);
   assert.equal(report.totals.projectedMissingTimes, 1);
   assert.match(markdown, /## Julkisesta esityksestä puuttuvat kokonaisajat/);
-  assert.match(markdown, /aika-puuttuu \\(\\/fi\\/reseptit\\/aika-puuttuu\\/\\)/);
+  assert.ok(markdown.includes("aika-puuttuu (/fi/reseptit/aika-puuttuu/)"));
   assert.ok(markdown.includes(evidence.path));
   assert.ok(markdown.includes(evidence.sourceSha256));
   assert.ok(markdown.includes("## Jatkotoimi"));
@@ -42,6 +42,6 @@ test("#327: complete total time has no missing-time entries", () => {
   const section = markdown.split("## Julkisesta esityksestä puuttuvat kokonaisajat")[1]
     ?.split("## Jatkotoimi")[0];
   assert.equal(report.totals.projectedMissingTimes, 0);
-  assert.match(section ?? "", /Ei osumia\\./);
+  assert.ok((section ?? "").includes("Ei osumia."));
   assert.doesNotMatch(section ?? "", /aika-puuttuu/);
 });
