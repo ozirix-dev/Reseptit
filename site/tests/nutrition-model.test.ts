@@ -278,7 +278,7 @@ test("all current EU-total catalogue records retain their verified available CHO
     assert.equal(typeof carbs, "number", record.id + ": numeric total CHO required");
     assert.equal(typeof polyols, "number", record.id + ": numeric polyols required");
     assert.ok(carbs! >= polyols!, record.id + ": conflicting source carbohydrate mass");
-    const expected = Number((carbs! - polyols!).toFixed(6));
+    const expected = carbs! - polyols!;
     assert.deepEqual(normalizeCarbohydrate(record), { available: expected, net: expected }, record.id);
   }
 });
