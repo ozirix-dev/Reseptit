@@ -2,6 +2,7 @@ import { useEffect, useRef, useSyncExternalStore } from "react";
 import { Link, useLocation } from "react-router-dom";
 import type { RecipeLocale } from "../../types/content";
 import { privacyCopy, privacyEmail, privacyLocaleFromPath, privacyPaths } from "./privacy-copy";
+import { feedbackPrivacy } from "../feedback/feedback-copy";
 import { analyticsAvailable, getAnalyticsChoice, setAnalyticsChoice, subscribeToAnalyticsChoice, trackPageview } from "./analytics";
 
 const getServerChoice = () => null;
@@ -56,6 +57,8 @@ export function PrivacyPage({ locale }: { locale: RecipeLocale }) {
     <h2>{labels.analytics}</h2>
     <p>{labels.measurement} <a href="https://plausible.io/data-policy">Plausible</a></p>
     <AnalyticsChoice locale={locale} />
+    <h2>{feedbackPrivacy[locale].heading}</h2>
+    <p>{feedbackPrivacy[locale].body}</p>
     <h2>{labels.rights}</h2>
     <p>{labels.exercise} <a href="https://tietosuoja.fi/">{labels.regulator}</a></p>
   </div></article>;
