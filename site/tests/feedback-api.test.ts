@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { handleFeedback, onRequestGet, validateFeedback, type FeedbackEnvironment } from "../functions/api/feedback";
+import { feedbackIntakeQuota, feedbackInsertOutcome } from "../src/features/feedback/intake-quota";
 
 const origin = "https://www.recipavo.com";
 const valid = {
@@ -18,7 +19,7 @@ function request(body: unknown, headers: Record<string, string> = {}): Request {
 }
 
 function mockDb(lastSuccessAt: string | null = new Date().toISOString()) {
-  const writes: { sql: string; values: (string | null)[] }[] = [];
+  const writes: { sql: string; values: (string | null | number)[] }[] = [];
   const reads: string[] = [];
   const database: NonNullable<FeedbackEnvironment["FEEDBACK_DB"]> = {
     prepare(sql) {
@@ -28,7 +29,7 @@ function mockDb(lastSuccessAt: string | null = new Date().toISOString()) {
           return lastSuccessAt === null ? null : { last_success_at: lastSuccessAt };
         },
         bind(...values) {
-          return { async run() { writes.push({ sql, values }); return { success: true }; } };
+          return { async run() { writes.push({ sql, values }); return { success: true, meta: { changes: 1 } }; } };
         },
       };
     },
@@ -90,7 +91,11 @@ test("verified private report stores only approved fields and responds with opaq
   assert.deepEqual(db.writes[0].values.slice(1, 7), [
     valid.kind, valid.locale, valid.pagePath, valid.recipeId, valid.message, valid.email,
   ]);
-  assert.match(db.writes[0].values[7]!, /^[0-9a-f]{64}$/u);
+  assert.match(String(db.writes[0].values[7]), /^[0-9a-f]{64}$/u);
+  assert.equal(db.writes[0].values[9], feedbackIntakeQuota.quarterHourMax);
+  assert.equal(db.writes[0].values[11], feedbackIntakeQuota.rollingDayMax);
+  assert.match(String(db.writes[0].values[8]), /^\d{4}-\d{2}-\d{2}T/u);
+  assert.match(String(db.writes[0].values[10]), /^\d{4}-\d{2}-\d{2}T/u);
   assert.ok(!JSON.stringify(result).includes(valid.message));
   assert.ok(!JSON.stringify(result).includes(valid.email));
   assert.ok(!db.writes[0].values.includes(valid.turnstileToken));
@@ -173,4 +178,33 @@ test("failed maintenance query blocks feedback even if other bindings are valid"
   );
   assert.equal(response.status, 503);
   assert.equal((await response.json() as { error: string }).error, "maintenance_unavailable");
+});
+
+
+test("a full global quota yields 429; missing D1 write evidence fails closed", () => {
+  assert.equal(feedbackInsertOutcome({ success: true, meta: { changes: 0 } }), "full");
+  assert.equal(feedbackInsertOutcome({ success: true, meta: { changes: 1 } }), "stored");
+  for (const result of [
+    { success: false, meta: { changes: 1 } }, { success: true },
+    { success: true, meta: { changes: 2 } },
+    { success: true, meta: { changes: -1 } }, { success: true, meta: { changes: "1" } },
+    null,
+  ]) {
+    assert.equal(feedbackInsertOutcome(result), "unconfirmed");
+  }
+});
+
+test("a D1 quota-rejected write is never acknowledged as a new message", async () => {
+  const fake: NonNullable<FeedbackEnvironment["FEEDBACK_DB"]> = {
+    prepare() {
+      return {
+        async first() { return { last_success_at: new Date().toISOString() }; },
+        bind() { return { async run() { return { success: true, meta: { changes: 0 } }; } }; },
+      };
+    },
+  };
+  const response = await handleFeedback({ request: request(valid), env: configured(fake) }, verifier());
+  assert.equal(response.status, 429);
+  assert.deepEqual(await response.json(), { error: "quota_exceeded" });
+  assert.equal(response.headers.get("Cache-Control"), "no-store");
 });
