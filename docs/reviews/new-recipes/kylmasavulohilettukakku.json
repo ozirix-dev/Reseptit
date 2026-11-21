@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kylmasavulohilettukakku",
+  "source_path": "reseptit/alkuruoat/kylmasavulohilettukakku.md",
+  "source_sha256": "c20e96daa7ae7d40e417812ff675ae9ce32b0552b0a9c6924ea6e27dd207cdc3",
+  "decision": "approved",
+  "reviewed_by": "ChatGPT Chat 4 – AI editorial source review",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.facebook.com/reel/4556714911264526",
+      "https://patient.info/recipes/high-protein-recipes/smoked-salmon-crpe-torte",
+      "https://www.highcountrysalmon.co.nz/pages/smoked-salmon-crepe-cake"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/reviews/kylmasavulohilettukakku.md",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Nimi, slug ja recipe_id ovat uusia alkuruokahakemistossa; valittu työhaara käsittelee vain yhtä uutta reseptiä. Julkaisureittien automaattinen konfliktitesti tekee vielä lopullisen verifioinnin."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Patient.info:n julkaisussa 60+60 g jauhoja, 300+30 ml maitoa, 2 kananmunaa, 2 rkl voita, 230 g tuorejuustoa ja 110 g savulohta. Pannun öljy, tilli, kevätsipulin grammamäärä ja kylmäsavulohen valinta on merkitty toimituksellisiksi sovituksiksi."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Patient.info tukee 30 min taikinalepoa, ohuita noin 18 cm lettuja, jäähdytystä, tuorejuusto-lohitäytettä, kerrostamista ja vähintään 30 min kylmäkiinteytystä. Letumäärä 9–11 on arvio taikinamäärän perusteella, ei suoraan Facebook-videosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kylmäsavulohen elintarviketurvallisuus on varmistettu Ruokaviraston listeriaohjeesta; riskiryhmille varoitus ja säilytys mieluiten 0…+3 °C:ssa. Kylmään tarjoiluun sopiva käsittely. Kala, maito, kananmunat ja vehnä nimetty allergeeneiksi."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Lähdereseptin tarjoilumäärä on 8, taikinalevon 30 minuuttia ja kylmäkiinteytyksen vähintään 30 minuuttia. Ilmoitettu 110 min kattaa paisto- ja jäähdytysvaiheet konservatiivisesti, eikä väitä fyysistä aikaa mitatuksi."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Numeeriset makroarvot on pidätetty, koska Fineli/AFCD-tuotevastaavuudet ja annoskohtainen laskenta puuttuvat; ei vääriä nollia. Rajaus ja vaaditut lisätodisteet ovat docs/nutrition/reviews/kylmasavulohilettukakku.md-tiedostossa."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Vehnäjauhoa sisältävälle lettukakulle ei ole reseptikohtaisesti hyväksyttyä GI-evidenssiä eikä GK-laskentaa. Sivulla käytetään vain GK: ei määritetty; julkaisuun ei liitetä numeerista arvioita."
+    }
+  }
+}
