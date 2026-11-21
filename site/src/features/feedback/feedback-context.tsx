@@ -1,4 +1,4 @@
-import { createContext, lazy, Suspense, useCallback, useContext, useMemo, useState, type ReactNode } from "react";
+import { createContext, lazy, Suspense, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import type { RecipeLocale } from "../../types/content";
 import { feedbackUi, type FeedbackKind } from "./feedback-copy";
 import { privacyEmail } from "../privacy/privacy-copy";
@@ -48,7 +48,10 @@ export function useFeedback(): FeedbackActions | null {
 
 export function FeedbackFooterButton({ locale }: { locale: RecipeLocale }) {
   const feedback = useFeedback();
-  if (!feedback) return <a className="feedback-footer-button" href={`mailto:${privacyEmail}`}>
+  const [enhanced, setEnhanced] = useState(false);
+  useEffect(() => setEnhanced(true), []);
+  // Static HTML stays useful without JavaScript; a real button appears after hydration.
+  if (!feedback || !enhanced) return <a className="feedback-footer-button" href={`mailto:${privacyEmail}`}>
     {feedbackUi[locale].button}
   </a>;
   return <button className="feedback-footer-button" type="button" onClick={() => feedback.openFeedback()}>
@@ -60,7 +63,9 @@ export function RecipeFeedbackButton({ locale, recipeId, pagePath }: {
   locale: RecipeLocale; recipeId: string; pagePath: string;
 }) {
   const feedback = useFeedback();
-  if (!feedback) return <a href={`mailto:${privacyEmail}`}>
+  const [enhanced, setEnhanced] = useState(false);
+  useEffect(() => setEnhanced(true), []);
+  if (!feedback || !enhanced) return <a href={`mailto:${privacyEmail}`}>
     {feedbackUi[locale].recipeButton}
   </a>;
   return <button type="button" onClick={() => feedback.openFeedback({
