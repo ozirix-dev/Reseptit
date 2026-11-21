@@ -1,0 +1,29 @@
+name: Chat owner metadata
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+# This reports PR metadata consistency; it is not an authorization gate.
+# Old PRs through #791 are exempt. Missing declarations produce warnings,
+# while contradictory Chat N claims fail only this independent check.
+concurrency:
+  group: chat-owner-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test Chat N metadata parser
+        run: node --test .github/scripts/check-chat-owner.test.mjs
+      - name: Check PR ownership markers (read-only)
+        run: node .github/scripts/check-chat-owner.mjs
