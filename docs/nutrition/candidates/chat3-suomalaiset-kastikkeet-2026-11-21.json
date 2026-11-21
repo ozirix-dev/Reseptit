@@ -457,7 +457,7 @@
     {
       "recipe_id": "perinteinen-munakastike",
       "source_path": "reseptit/alkuruoat/perinteinen-munakastike.md",
-      "source_recipe_sha256": "a5186b3a75e913a8a012a989b0a31f01f877f85d67cbcbe461b36f194ad46eb5",
+      "source_recipe_sha256": "b6b0ee4ebb7646d39f7bf6d025812d7b0070463e954a5053862f6552e884a583",
       "nutrition_input_hash": "62e86f7d10d579ad254c652fb645c489ddd63449d72432b87ce8fe0c6256ea0c",
       "servings": 4,
       "ingredient_count": 7,
@@ -547,9 +547,15 @@
           }
         }
       ],
-      "status": "EVIDENCE_ASSEMBLED_PENDING_VALIDATION",
+      "status": "ESTIMATE_WITH_BOUNDED_OMISSION",
       "publication": "DRAFT_NOT_APPROVED",
-      "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI"
+      "glycemic_load": "UNDETERMINED_NO_APPROVED_RECIPE_GI",
+      "per_serving_estimate": {
+        "carbs_net_per_serving_g": 10.53,
+        "carbs_total_per_serving_g": 10.9,
+        "protein_per_serving_g": 7.89,
+        "fat_per_serving_g": 12.52
+      }
     },
     {
       "recipe_id": "kermainen-pippurikastike",
