@@ -6,6 +6,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { FeedbackFooterButton, FeedbackProvider, RecipeFeedbackButton } from "../src/features/feedback/feedback-context";
 import { feedbackKinds, feedbackPrivacy, feedbackUi } from "../src/features/feedback/feedback-copy";
+import { privacyPaths } from "../src/features/privacy/privacy-copy";
 import type { RecipeLocale } from "../src/types/content";
 
 const locales: RecipeLocale[] = ["fi", "en", "sv", "th"];
@@ -47,7 +48,7 @@ test("all four static indexes show localized feedback contact and recipe links",
   ] as const) {
     const page = await readFile(path.join(dist, route, "index.html"), "utf8");
     assert.ok(page.includes(feedbackUi[locale].button), locale);
-    assert.ok(page.includes(feedbackUi[locale].privacy), locale);
+    assert.ok(page.includes("href=\"" + privacyPaths[locale] + "\""), locale);
   }
   const recipe = await readFile(path.join(dist, "kermainen-lohipata", "index.html"), "utf8");
   assert.ok(recipe.includes(feedbackUi.fi.recipeButton));
