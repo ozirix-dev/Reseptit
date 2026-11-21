@@ -22,6 +22,11 @@ tags:
   - joulu
 translation_languages: []
 translation_status: {}
+image:
+  src: alkuruoat/vaahdotettu-feta-kylmasavulohella.webp
+  alt: Kuohkeaa fetalevitettä lasilautasella kylmäsavulohen, kananmurujen, kapristen ja tillin kanssa
+  width: 960
+  height: 960
 ingredients:
   - amount: 200
     unit: g
@@ -72,5 +77,5 @@ Kuohkea fetalevite saa täyteläisyyttä tuorejuustosta. Kylmäsavulohi, kovaksi
 - **Toimituksellinen luonnos:** Terveelliset herkut -tilin [Facebook-videossa](https://www.facebook.com/reel/1451309056456281) näytetään vaahdotettua fetaa ja kylmäsavulohta sisältävä tarjottava. Videon näkyvä kuvateksti mainitsee tarjoilun suolaisten keksien, riisipiirakoiden ja leivän kanssa. Alkuperäisen reseptin tarkat määrät ja työvaiheet eivät olleet saatavilla; ne sekä tuorejuusto, sitruunamehu, oliiviöljy ja pippuri ovat tämän itsenäisen kokeiluversion täydennyksiä, eivät alkuperäisestä vahvistettuja tietoja. Myös kapriksien määrä on ehdotus.
 - Fetassa ja lohessa on jo suolaa, joten lisäsuolaa ei lähtökohtaisesti tarvita. Vaihtoehtona tuorejuustolle voi kokeilla paksua, maustamatonta kreikkalaista jogurttia, mutta se muuttaa koostumusta.
 - Tarjoilukeksit ja leivät eivät sisälly annosmääriin. Sisältää maitoa, kalaa ja kananmunaa. Ravintoarvoja tai GK-arviota ei ole laskettu eikä gluteenittomuutta ole erikseen hyväksytty.
-- Kylmäsavulohi on syötäväksi valmis mutta kuumentamaton kalatuote. Säilytä kylmäsavukala mahdollisimman kylmässä (mieluiten 0–3 °C), noudata viimeistä käyttöpäivää ja käytä avattu pakkaus pian. Ruokavirasto suosittelee, etteivät esimerkiksi raskaana olevat ja ikääntyneet söisi kylmäsavustettua kalaa kuumentamatta: [Ruokaviraston turvallisuusohje](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/kala/mikrobiologiset-vaarat-ja-muut-riskit/).
-- Kuva on tekoälyllä tehty havainnekuva (valmistettu erikseen), ei kuva videon tekijän annoksesta. Kuvan lisääminen tämän luonnoksen metadataan odottaa WebP-tiedoston vientiä repoon.
+- **Kylmäsavulohen turvallisuus:** Tämä levite sisältää kuumentamatonta kylmäsavukalaa, joten se ei sellaisenaan sovi listerian riskiryhmille (esimerkiksi raskaana oleville, iäkkäille ja vastustuskyvyltään heikentyneille). Riskiryhmälle tarjottaessa käytä kalan sijasta kauttaaltaan kypsennettyä ja asianmukaisesti jäähdytettyä lohta; maku ja rakenne muuttuvat. Säilytä kylmäsavukala mieluiten 0–3 °C:ssa, noudata viimeistä käyttöpäivää ja syö avattu pakkaus mahdollisimman pian. [Ruokaviraston turvallisuusohje](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/kala/mikrobiologiset-vaarat-ja-muut-riskit/).
+- Kuva on tekoälyllä tehty havainnekuva (WebP-versio JPEG-esikatselusta), ei valokuva tekijän videosta eikä kokkikokeilusta. Kuvassa näkyvät kaprikset ovat valinnainen koristelu.
