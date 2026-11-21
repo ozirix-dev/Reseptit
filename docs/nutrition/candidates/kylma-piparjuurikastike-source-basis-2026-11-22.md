@@ -39,7 +39,7 @@ Lähteiden lainausta on minimoitu. Tämä on Chat 3:n toimituksellinen esiselvit
 
 ## Täsmennys 22.11.2026
 
-Kaikki neljä reseptitiedostoa käyttävät nyt punnittua **12 g** sitruunamehua. FI SHA-256: `9a577bfdf6e610f3dfee98ff802de6841a2b3b9e23cc30544cea65345ed03260`. Ravintolaskennan syöttötiiviste: `c6fd529885f21f835fa6a97c4873c05bd27a9b11b8d04a3c6de68499666945a0`. Aiemmin kirjattu 12 ml koski vanhaa luonnosversiota. Crème fraîchen polyoli-/kuituevidenssi ja ruohosipulin lähdekortti ovat yhä avoinna; virallisia makroarvoja ei julkaista.
+Kaikki neljä reseptitiedostoa käyttävät nyt punnittua **12 g** sitruunamehua. FI SHA-256: `9a577bfdf6e610f3dfee98ff802de6841a2b3b9e23cc30544cea65345ed03260`. Ravintolaskennan syöttötiiviste: `c6fd529885f21f835fa6a97c4873c05bd27a9b11b8d04a3c6de68499666945a0`. Aiemmin kirjattu 12 ml koski vanhaa luonnosversiota. Crème fraîchen polyoli-/kuituevidenssi on edelleen avoinna; ruohosipulin lähdekortti vahvistettiin alempana Fineli #392:ksi. Virallisia makroarvoja ei julkaista.
 
 ## Tuoreen ruohosipulin virallinen Fineli-vastine 22.11.2026
 
