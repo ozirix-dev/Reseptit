@@ -172,3 +172,25 @@ test("issue 404 B5: rice and bean state mismatches stay blocked even when catalo
   assert.ok(xoi.ingredients.some((x) => x.item.includes("kookosmaitoa") &&
     x.reasonCode === "PRODUCT_SPEC_PENDING"));
 });
+
+test("issue 404 B5: kuih sugar arithmetic is a component only, never a full recipe macro", async () => {
+  const evidence = await readJsonCached(evidenceFile) as Preflight;
+  const kuih = evidence.recipes.find((r) =>
+    r.recipeId === "malesialainen-kuih-seri-muka-punnittu-v2");
+  assert.ok(kuih);
+  const sugar = kuih.ingredients.find((r) => r.item === "sokeria munakerrokseen");
+  assert.ok(sugar);
+  assert.equal(sugar.amount, 170);
+  assert.equal(sugar.unit, "g");
+  assert.equal(sugar.candidateRecord?.recordId, "fineli-1-release-20");
+  const source = await readJsonCached(sugar.candidateRecord.calculationPath!) as {
+    ingredients: Array<{ record?: { id?: string; per100g?: { carbohydrate?: number } } }>;
+  };
+  const nutrient = source.ingredients.find((x) => x.record?.id === sugar.candidateRecord?.recordId)?.record;
+  assert.equal(nutrient?.per100g?.carbohydrate, 99.9);
+  const sugarOnlyCarbohydrate = sugar.amount * nutrient.per100g.carbohydrate / 100;
+  assert.equal(Math.round(sugarOnlyCarbohydrate * 100) / 100, 169.83);
+  assert.equal(Math.round(sugarOnlyCarbohydrate / 20 * 100) / 100, 8.49);
+  assert.equal(kuih.status, "WITHHELD_SOURCE_INCOMPLETE");
+  assert.equal(evidence.macrosAuthorized, false);
+});
