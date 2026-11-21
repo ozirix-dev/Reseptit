@@ -14,7 +14,7 @@ source_recipe: reseptit/paaruoat/perinteinen-porkkanalaatikko.md
 translation_of: perinteinen-porkkanalaatikko
 status: draft
 servings: 8
-time_total_min: 115
+time_total_min: 165
 difficulty: "lätt"
 tags:
   - "finsk"
@@ -58,9 +58,9 @@ Ett traditionellt recept från det finska hemmaköket.
 1. Skala och skär morötterna. Koka mjuka i lite vatten i cirka 20 minuter, häll av och mosa. Spara lite kokvatten vid behov.
 2. Koka riset i 300 ml vatten tills nästan allt absorberats. Tillsätt 400 ml mjölk och sjud under lock i cirka 25–35 minuter tills riset är mjukt.
 3. Värm ugnen till 175 °C. Blanda morotspuré och risgrynsgröt. Låt svalna lite och tillsätt ägg, sirap, 20 g smör, salt och muskot.
-4. Smörj formen med återstående 10 g smör, häll i blandningen och jämna ytan. Grädda vid 175 °C i cirka 55–65 minuter tills ytan fått färg och mitten stelnat.
+4. Smörj formen med återstående 10 g smör, häll i blandningen och jämna ytan. Grädda vid 175 °C i cirka 90–110 minuter tills ytan fått färg och mitten stelnat.
 
 ## Anteckningar
 
 - Redaktionellt utkast, inte provlagat av Recipavo. Bild, närings- och GK-beräkningar samt slutlig översättnings- och allergenkontroll återstår.
-- Vertailulähde / Reference: https://www.martat.fi/reseptit/porkkanalaatikko/
+- Jämförelsekällor (olika receptvarianter): https://www.martat.fi/reseptit/porkkanalaatikko/ ja / and https://www.k-ruoka.fi/reseptit/porkkanalaatikko-soseesta

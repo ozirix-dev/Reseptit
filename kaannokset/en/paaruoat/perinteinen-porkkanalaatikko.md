@@ -14,7 +14,7 @@ source_recipe: reseptit/paaruoat/perinteinen-porkkanalaatikko.md
 translation_of: perinteinen-porkkanalaatikko
 status: draft
 servings: 8
-time_total_min: 115
+time_total_min: 165
 difficulty: "easy"
 tags:
   - "Finnish"
@@ -58,9 +58,9 @@ A traditional Finnish home cooking recipe.
 1. Peel and chop carrots. Boil in a little water for about 20 minutes until soft, drain and mash. Reserve a little cooking water if needed.
 2. Simmer the rice in 300 ml water until almost absorbed. Add 400 ml milk and cook gently, covered, for about 25–35 minutes until the rice is tender.
 3. Preheat oven to 175°C. Mix carrot mash and rice porridge. Cool slightly, then add egg, syrup, 20 g butter, salt and nutmeg.
-4. Grease a baking dish with the remaining 10 g butter, add mixture and level it. Bake at 175°C for about 55–65 minutes until golden and set in the centre.
+4. Grease a baking dish with the remaining 10 g butter, add mixture and level it. Bake at 175°C for about 90–110 minutes until golden and set in the centre.
 
 ## Notes
 
 - Editorial draft, not tested in a Recipavo kitchen. Image, nutrition and GK calculations, final translation and allergen checks are pending.
-- Vertailulähde / Reference: https://www.martat.fi/reseptit/porkkanalaatikko/
+- Comparison sources (different recipe versions): https://www.martat.fi/reseptit/porkkanalaatikko/ ja / and https://www.k-ruoka.fi/reseptit/porkkanalaatikko-soseesta

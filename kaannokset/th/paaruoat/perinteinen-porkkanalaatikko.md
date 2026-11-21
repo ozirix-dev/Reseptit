@@ -14,7 +14,7 @@ source_recipe: reseptit/paaruoat/perinteinen-porkkanalaatikko.md
 translation_of: perinteinen-porkkanalaatikko
 status: draft
 servings: 8
-time_total_min: 115
+time_total_min: 165
 difficulty: "ง่าย"
 tags:
   - "อาหารฟินแลนด์"
@@ -58,9 +58,9 @@ ingredients:
 1. ปอกและหั่นแครอต ต้มในน้ำเล็กน้อยประมาณ 20 นาทีจนนิ่ม สะเด็ดน้ำและบด เก็บน้ำต้มเล็กน้อยเผื่อต้องปรับความข้น
 2. ต้มข้าวกับน้ำ 300 มล. จนเกือบแห้ง เติมนม 400 มล. ปิดฝาเคี่ยวไฟอ่อนประมาณ 25–35 นาทีจนข้าวนุ่ม
 3. อุ่นเตาอบ 175 °C ผสมแครอตบดกับข้าวต้ม พักให้อุ่นลงเล็กน้อย ใส่ไข่ น้ำเชื่อม เนย 20 กรัม เกลือ และลูกจันทน์เทศ
-4. ทาพิมพ์ด้วยเนยที่เหลือ 10 กรัม เทส่วนผสมเกลี่ยให้เรียบ อบที่ 175 °C ประมาณ 55–65 นาทีจนหน้ามีสีและตรงกลางอยู่ตัว
+4. ทาพิมพ์ด้วยเนยที่เหลือ 10 กรัม เทส่วนผสมเกลี่ยให้เรียบ อบที่ 175 °C ประมาณ 90–110 นาทีจนหน้ามีสีและตรงกลางอยู่ตัว
 
 ## หมายเหตุ
 
 - ฉบับร่างที่ยังไม่ได้ทดลองทำโดย Recipavo ยังไม่มีภาพ การคำนวณโภชนาการและ GK รวมถึงการตรวจภาษาและสารก่อภูมิแพ้ขั้นสุดท้าย
-- Vertailulähde / Reference: https://www.martat.fi/reseptit/porkkanalaatikko/
+- แหล่งข้อมูลเปรียบเทียบ (เป็นสูตรคนละรูปแบบ): https://www.martat.fi/reseptit/porkkanalaatikko/ ja / and https://www.k-ruoka.fi/reseptit/porkkanalaatikko-soseesta
