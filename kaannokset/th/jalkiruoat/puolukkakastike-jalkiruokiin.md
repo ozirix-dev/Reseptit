@@ -10,6 +10,10 @@ translation_of: puolukkakastike-jalkiruokiin
 status: draft
 servings: 6
 time_total_min: 20
+carbs_net_per_serving_g: 12.88
+carbs_total_per_serving_g: 13.92
+protein_per_serving_g: 0.23
+fat_per_serving_g: 0.27
 difficulty: "ง่าย"
 main_ingredient:
   - "puolukka"
@@ -51,7 +55,7 @@ ingredients:
 
 ## หมายเหตุ
 
-- นี่คือฉบับร่าง ยังไม่ได้ประเมินโภชนาการ ภาระน้ำตาล หรืออนุมัติภาพประกอบขั้นสุดท้าย
+- ฉบับร่างนี้มีค่าทางโภชนาการโดยประมาณที่คำนวณจากส่วนผสม ยังไม่ได้กำหนดภาระน้ำตาลและยังไม่ได้อนุมัติภาพประกอบขั้นสุดท้าย
 - Preparation reference: https://www.k-ruoka.fi/reseptit/puolukkakastike
 
 - ได้เปลี่ยนภาพประกอบที่ไม่ตรงกับสูตรแล้ว แต่ภาพ AI ใหม่ยังรอการอนุมัติจากบรรณาธิการ.

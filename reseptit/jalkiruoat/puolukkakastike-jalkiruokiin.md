@@ -7,6 +7,10 @@ language: fi
 status: draft
 servings: 6
 time_total_min: 20
+carbs_net_per_serving_g: 12.88
+carbs_total_per_serving_g: 13.92
+protein_per_serving_g: 0.23
+fat_per_serving_g: 0.27
 difficulty: "helppo"
 main_ingredient:
   - "puolukka"
@@ -56,7 +60,7 @@ Kirpeä marjakastike jäätelölle, juustokakulle tai uunijälkiruoalle.
 
 ## Muistiinpanot
 
-- Sisältö on toimituksellinen luonnos, ravintoarvo- ja GK-arvio sekä kuvan lopullinen hyväksyntä puuttuvat.
+- Sisältö on toimituksellinen luonnos, jonka ravintoarvot ovat Finelin ainesosista laskettuja annosarvioita. GK-arvio ja kuvan lopullinen hyväksyntä puuttuvat.
 - Valmistuksen vertailulähde: https://www.k-ruoka.fi/reseptit/puolukkakastike
 
 - Kuva on tekoälyn luoma havainnekuva uudesta tummanpunaisesta marjakastikkeesta; lopullinen toimituksellinen hyväksyntä puuttuu.

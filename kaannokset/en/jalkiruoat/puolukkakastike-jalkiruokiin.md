@@ -10,6 +10,10 @@ translation_of: puolukkakastike-jalkiruokiin
 status: draft
 servings: 6
 time_total_min: 20
+carbs_net_per_serving_g: 12.88
+carbs_total_per_serving_g: 13.92
+protein_per_serving_g: 0.23
+fat_per_serving_g: 0.27
 difficulty: "easy"
 main_ingredient:
   - "puolukka"
@@ -51,7 +55,7 @@ A tart berry sauce for ice cream, cheesecake or baked desserts.
 
 ## Notes
 
-- This is an editorial draft; nutrition and glycaemic load assessments and final image approval are pending.
+- This editorial draft includes ingredient-based calculated nutrition estimates. Glycaemic load and final image approval remain pending.
 - Preparation reference: https://www.k-ruoka.fi/reseptit/puolukkakastike
 
 - The previous mismatched illustration has been replaced. The new AI illustration remains subject to editorial approval.
