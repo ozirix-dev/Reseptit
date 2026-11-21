@@ -25,7 +25,7 @@ translation_status:
   th: draft
 image:
   src: jalkiruoat/puolukkakastike-jalkiruokiin.webp
-  alt: "Vaaleanpunaista puolukkakastiketta lasikulhossa, pinnalla puolukoita; tekoälykuvitus"
+  alt: "Syvänpunaista puolukkakastiketta kirkkaassa lasikulhossa, joukossa kokonaisia puolukoita; tekoälykuvitus"
   width: 960
   height: 640
 ingredients:
@@ -51,7 +51,7 @@ Kirpeä marjakastike jäätelölle, juustokakulle tai uunijälkiruoalle.
 
 1. Mittaa puolukat, vesi ja sokeri kattilaan. Käytä ehjiä ja puhtaita marjoja.
 2. Kiehauta ja hauduta 4–5 minuuttia, kunnes marjat pehmenevät. Kuumentaminen sopii myös pakastemarjoille.
-3. Soseuta varovasti sauvasekoittimella ja siivilöi halutessasi sileäksi. Lisää sitruunamehu ja sekoita.
+3. Soseuta sauvasekoittimella lyhyesti niin, että osa puolukoista jää kokonaisiksi. Halutessasi soseuta täysin ja siivilöi sileäksi. Lisää sitruunamehu ja sekoita.
 4. Tarjoa kastike lämpimänä tai jäähdytä nopeasti ja säilytä jääkaapissa kylmänä tarjoiluun asti.
 
 ## Muistiinpanot
@@ -59,4 +59,4 @@ Kirpeä marjakastike jäätelölle, juustokakulle tai uunijälkiruoalle.
 - Sisältö on toimituksellinen luonnos, ravintoarvo- ja GK-arvio sekä kuvan lopullinen hyväksyntä puuttuvat.
 - Valmistuksen vertailulähde: https://www.k-ruoka.fi/reseptit/puolukkakastike
 
-- Kuva on tekoälyn luoma havainnekuva, joka on tallennettu, mutta sisällön vastaavuus reseptiin vaatii uuden kuvan ennen julkaisua.
+- Kuva on tekoälyn luoma havainnekuva uudesta tummanpunaisesta marjakastikkeesta; lopullinen toimituksellinen hyväksyntä puuttuu.

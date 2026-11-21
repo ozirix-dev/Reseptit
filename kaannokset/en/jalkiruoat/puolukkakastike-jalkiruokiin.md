@@ -20,7 +20,7 @@ tags:
   - "Finnish"
 image:
   src: jalkiruoat/puolukkakastike-jalkiruokiin.webp
-  alt: "Pink illustrated lingonberry sauce with whole berries in a glass bowl"
+  alt: "Deep-red lingonberry sauce in a clear glass bowl with some whole berries; AI illustration"
   width: 960
   height: 640
 ingredients:
@@ -46,7 +46,7 @@ A tart berry sauce for ice cream, cheesecake or baked desserts.
 
 1. Put the lingonberries, water and sugar in a saucepan. Use clean, sound berries.
 2. Bring to a boil and simmer for 4–5 minutes until soft. Heating is also suitable for frozen berries.
-3. Carefully blend until smooth and strain if desired. Add the lemon juice and mix.
+3. Briefly blend, leaving some lingonberries whole. For a smooth sauce, blend fully and strain if desired. Stir in the lemon juice.
 4. Serve warm, or cool promptly and refrigerate until served cold.
 
 ## Notes

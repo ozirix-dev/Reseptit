@@ -20,7 +20,7 @@ tags:
   - "finsk"
 image:
   src: jalkiruoat/puolukkakastike-jalkiruokiin.webp
-  alt: "Rosa lingonsås med hela lingon i en glasskål; AI-illustration"
+  alt: "Djupröd lingonsås i en klar glasskål med några hela lingon; AI-bild"
   width: 960
   height: 640
 ingredients:
@@ -46,7 +46,7 @@ En syrlig bärsås till glass, cheesecake eller ugnsdesserter.
 
 1. Lägg lingon, vatten och socker i en kastrull. Använd rena, fina bär.
 2. Koka upp och sjud i 4–5 minuter tills bären mjuknar. Upphettning passar även frysta bär.
-3. Mixa försiktigt och sila vid behov till en slät sås. Tillsätt citronsaften och blanda.
+3. Mixa kort så att några lingon förblir hela. För en slät sås, mixa helt och sila om du vill. Rör ner citronsaften.
 4. Servera varm, eller kyl snabbt och förvara i kylskåp fram till kall servering.
 
 ## Anteckningar
