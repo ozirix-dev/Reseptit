@@ -2,9 +2,9 @@
   "schema_version": 1,
   "recipe_id": "kylmasavulohilettukakku",
   "source_path": "reseptit/alkuruoat/kylmasavulohilettukakku.md",
-  "source_sha256": "723f2aa681da14558d7cdff48fa2f213b70827bde22bb22f324d5c4317ee1ea7",
+  "source_sha256": "345087517b83b53c9ea18123817a2b161f090204d6a3afef9d6c2b4cdd5539e8",
   "decision": "hold",
-  "reviewed_by": "ChatGPT Chat 4 – video-source editorial comparison",
+  "reviewed_by": "ChatGPT Chat 4 (videohavainnot) ja Kokki-3 (toimituksellinen määräarvio)",
   "reviewed_at": "2026-11-21",
   "origin": {
     "kind": "adaptation",
@@ -22,8 +22,8 @@
       "notes": "Uusi identiteetti tässä PR-haarassa; lopullinen reittien ja duplikaattien automaattinen tarkistus on ajettava uudelle HEADille."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Käyttäjän 44,9 sekunnin Reels-tallenne näyttää kurkkuraasteen, tillin, paksun vaalean täytteen, viipaloidun savulohen ja punaisen mädin. Täytteen tarkka maitotuote ja annosmäärät eivät ilmene videosta. 13 ainesmäärää ovat julkaisulähteiden perusteella laadittu toimituksellinen sovitus, eivät videotodiste."
+      "status": "pass",
+      "notes": "Kokki-3 hyväksyi tähän itsenäiseen kahdeksan annoksen sovitukseen 230 g tuorejuustoa, 150 g 28 % ranskankermaa, 150 g ennen puristamista punnittua kurkkua, 15 g tilliä, 250 g viipaloitua kylmäsavulohta ja 100 g punaista mätiä. Yhteishyvä tukee 150 g ranskankermaa, 250 g savustettua kirjolohta (ei välttämättä kylmäsavulohta) ja 100 g kirjolohenmätiä kahdeksalle; muut mittasuhteet ovat toimituksellisia arvioita. Reels ei todista tarkkoja määriä. PR #784 kommentti 7061979729, 21.11.2026."
     },
     "method": {
       "status": "pass",
@@ -34,12 +34,12 @@
       "notes": "Ruokavirasto tunnistaa kylmäsavukalan ja pastöroimattoman mädin listerian riskielintarvikkeiksi; riskiryhmät ja 0–3 °C:n kylmäsäilytys on erotettu tuotteen kuvailevasta käyttötavasta."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "Kahdeksan annosta ja noin 110 minuuttia perustuvat vertailureseptien mittasuhteisiin ja toimitukselliseen työjärjestykseen; videolla ei näkyvissä annoslukua tai mitattuja työaikoja."
+      "status": "pass",
+      "notes": "Kokki-3:n 8 annoksen 18 cm:n kakun mittasuhdetarkistus: noin 9–11 ohutta lettua, n. 475–505 g kurkku-tillitäytettä puristuksen jälkeen ja 250 g savulohta; 100 g mätiä kakun pintaan. Noin 110 minuutin ilmoitus sisältää 30 min taikinalevon, lettujen paiston ja jäähdytyksen sekä vähintään 30 min kylmäkiinteytyksen. Arvioitu, ei mitattu valmistusaika. Ei Recipavon kokkikoetta."
     },
     "nutrition": {
       "status": "pass",
-      "notes": "Ainesmäärien epävarmuuden vuoksi kaikki makroarvot ovat tarkoituksella poissa. Ei nolla-arvoja eikä väitettyä laskentaa. Ravintorajoitusdokumentti päivitetään tämän version hashille."
+      "notes": "Numeroarvot pidätetty dokumentoidusti tämän päivitetyn 13-rivisen, 150 g ranskankermaa ja 250 g kylmäsavulohta sisältävän sovituksen osalta: raaka-aineiden Fineli/AFCD-vastaavuuksia ja laskennan JSON-evidenssiä ei vielä ole. Puuttuvat arvot eivät ole nollia."
     },
     "glycemic": {
       "status": "unavailable",
@@ -62,14 +62,14 @@
       "kerman tai tuorejuuston tarkka laatu",
       "kaikki tarkat ainesmäärät",
       "mädin kalalaji",
-      "valmistuksen mitattu kokonaisaika"
+      "valmistuksen mitattu kokonaisaika",
+      "Kokki-3:n annosmääriä ei ole mitattu videosta; ne ovat itsenäisen sovituksen toimitukselliset määrät"
     ],
-    "note": "Tämä havaintoluettelo on käyttäjän videosta, ei kilpailijan reseptin kopio. Valmistuskuvan aiempi versio ei esitä mätipintaa eikä sovellu tämän lopulliseksi kuvitukseksi."
+    "note": "Käyttäjän videosta havaittu kurkku, tilli, savulohiviipaleet ja mätipinta; määrät hyväksytty Kokki-3:n erillisenä toimituksellisena sovituksena PR #784:n tarkistuksessa. Vanha WebP ei esitä mätipintaa."
   },
   "release_blockers": [
-    "Valmiin täytteen ainesmäärien ja tuotelaadun lähde- tai toimituksellinen hyväksyntä",
     "Videon mukaista mätikoristelua näyttävä WebP ja sen taltiointi samaan GitHub-työhaaraan",
     "GitHub Actionsin SHA-256-sidottu image-inputs -paketti: uusi kuva ei ole varmennetussa kuva-juuressa",
-    "Täsmällisen HEADin hyväksytty CI ennen Ready-tilaa"
+    "Uuden Kokki-3-sovituksen täsmä-HEADin CI vielä varmennettava"
   ]
 }

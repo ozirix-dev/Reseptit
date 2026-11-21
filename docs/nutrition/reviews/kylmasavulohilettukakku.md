@@ -5,16 +5,16 @@ Päiväys 21.11.2026. Tarkastaja: ChatGPT Chat 4 (tekoälyn lähde- ja videohava
 ## Reseptiversio ja alkuperä
 
 - Suomenkielinen lähde: `reseptit/alkuruoat/kylmasavulohilettukakku.md`.
-- Lähdetiedoston SHA-256: `723f2aa681da14558d7cdff48fa2f213b70827bde22bb22f324d5c4317ee1ea7`.
+- Lähdetiedoston SHA-256: `345087517b83b53c9ea18123817a2b161f090204d6a3afef9d6c2b4cdd5539e8`.
 - Käyttäjän lähettämä 44,9 sekunnin Snack Porch -Facebook Reels -tallenne näyttää ohuet letut, raastetun tuorekurkun, hienonnetun tillin, paksun vaalean täytteen, viipaloitua savulohta kerroksissa ja oranssinpunaista mätiä päällä. Tallenne ei osoita täytteen tarkkaa maitotuotetta, grammoja eikä mädin kalalajia.
 - Lettutaikinan määrien vertailulähde on Patient.info 29.1.2026. Savulohen ja mädin 8 annoksen käyttötapaa tukee Yhteishyvä; kurkun, tillin, savulohen ja kermamaisen täytteen yhdistelmää tukee Freespiritfood. Näiden ohjeet eivät ole Facebook-videon todistettu transkriptio.
-- Uuden sovituksen 13 ainesrivin määrät eivät ole kaikki suoraan lähteestä vahvistettuja. Täytteen suhteet on vielä vahvistettava tai hyväksyttävä toimituksellisesti. Julkaisustatus on siksi **draft**.
+- Uuden sovituksen 13 ainesrivin määrät eivät ole kaikki suoraan videosta vahvistettuja. Kokki-3 hyväksyi 21.11.2026 suhteet toimituksellisena vaihtoehtoisena reseptinä (PR #784, kommentti 7061979729): 150 g 28 % ranskankermaa ja 250 g viipaloitua kylmäsavulohta perustuvat Yhteishyvän kahdeksan annoksen 150 g ranskankerma- ja 250 g savustetun kirjolohen määriin, mutta kalatuote ja muu täyte ovat itsenäinen sovitus. **Draft** jatkuu kuvaportin takia, ei enää mittasuhde-HOLDin vuoksi.
 
 ## Ravintolaskennan tila
 
 **WITHHELD_SOURCE_INCOMPLETE.** Kaikki neljä numeerista makrokenttää jätetään tyhjiksi. Ei laskettua hiilihydraattien netto-/kokonaismäärää, proteiinia eikä rasvaa.
 
-Aikaisempi 14 ainesrivin malli ei vastaa käyttäjän videota. Uudessa 13 rivin sovituksessa on mm. 100 g mätikoriste, 100 g ranskankermaa, 150 g kurkkua ja 200 g lohiviipaleita. Tarkkaa koostumusta tai raaka-aineiden vastaavuuksia (Fineli/AFCD) ei ole vielä todennettu. Aikaisemmasta reseptistä ei saa kierrättää ravintoarviota. Määrät, tuotekohtaiset rasva- ja hiilihydraattiarvot, kuitu ja mahdolliset yksikkömuunnokset on sidottava uuteen reseptiversioon ennen numeerista laskentaa.
+Aikaisempi 14 ainesrivin malli ei vastaa käyttäjän videota. Uudessa 13 rivin sovituksessa on mm. 100 g mätikoriste, 150 g ranskankermaa, 150 g kurkkua ja 250 g lohiviipaleita. Tarkkaa koostumusta tai raaka-aineiden vastaavuuksia (Fineli/AFCD) ei ole vielä todennettu. Aikaisemmasta reseptistä ei saa kierrättää ravintoarviota. Määrät, tuotekohtaiset rasva- ja hiilihydraattiarvot, kuitu ja mahdolliset yksikkömuunnokset on sidottava uuteen reseptiversioon ennen numeerista laskentaa.
 
 ## GK / GI
 

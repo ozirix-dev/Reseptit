@@ -58,10 +58,10 @@ ingredients:
     unit: g
     item: maustamatonta tuorejuustoa
     note: täytteeseen; valittu toimituksellinen pohja
-  - amount: 100
+  - amount: 150
     unit: g
     item: paksua ranskankermaa
-    note: täytteeseen; toimituksellinen koostumusarvio, ei vahvistettu Reelsistä
+    note: täytteeseen; 28 % ranskankerma, toimituksellinen valinta Yhteishyvän 8 annoksen vertailusta, ei videosta
   - amount: 150
     unit: g
     item: tuorekurkkua
@@ -70,14 +70,14 @@ ingredients:
     unit: g
     item: tuoretta tilliä
     note: täytteeseen; toimituksellinen määräarvio
-  - amount: 200
+  - amount: 250
     unit: g
     item: viipaloitua kylmäsavulohta
-    note: kerroksiin; toimituksellinen määräarvio
+    note: kerroksiin; 250 g toimituksellinen valinta Yhteishyvän savustetun kirjolohen vertailumäärästä; kylmäsavulohen määrä ei selviä videosta
   - amount: 100
     unit: g
     item: punaista kalanmätiä
-    note: esimerkiksi kirjolohenmätiä, tarkka laji ei ilmene videosta; toimituksellinen määräarvio
+    note: valitse esimerkiksi kirjolohenmätiä; 100 g toimituksellinen vertailumäärä, videon kalalaji ei selviä
 ---
 
 # Kylmäsavulohilettukakku kurkulla ja mädillä
@@ -127,13 +127,18 @@ Määrät on sovitettu kahdeksalle annokselle; alkuperäinen video ei kerro niit
   Lettutaikinan perusmäärät ja jääkaappikiinteytys perustuvat
   [Patient.info:n lettukakkuun](https://patient.info/recipes/high-protein-recipes/smoked-salmon-crpe-torte).
   [Yhteishyvän savulohilettukakussa](https://yhteishyva.fi/reseptit/savulohi-lettukakku/2rs9jtHfzNUnexz7u9F2wk)
-  on 8 annoksen kakku, maitopohjainen täyte ja 100 g mätikoristelua.
+  on 8 annoksen kakku, 250 g savustettua kirjolohta, 150 g 28-prosenttista
+  ranskankermaa ja 100 g kirjolohenmätiä. Kyseisen vertailureseptin lohi
+  ei ole tämän sovituksen viipaloitua kylmäsavulohta.
   [Freespiritfoodin savulohi-kurkku-mäti-ohje](https://freespiritfood.net/2020/12/27/smoked-salmon-with-crepes-cucumber-and-herbed-creme-fraiche-and-caviar/)
   tukee kurkun, tillin, kermamaisen täytteen, savulohen ja mädin yhdistelmää.
-  Tuorejuuston, ranskankerman, kurkun, tillin ja lohen tarkat
-  määrät ovat tämän muunnelman ehdotuksia, eivät videoista luettuja.
+  Tuorejuuston, kurkun ja tillin määrät sekä ranskankerman ja kylmäsavulohen
+  soveltaminen tähän kerrosrakenteeseen ovat Kokki-3:n toimituksellista
+  mittasuhdearviota, eivät videoista luettuja määriä.
 - **Ei vielä julkaisuvalmis:** Recipavo ei ole valmistanut tai
-  maistanut tätä sovitusta. Videon täytekoostumus on epävarma.
+  maistanut tätä sovitusta. Kokki-3 hyväksyi 8 annoksen mittasuhteet
+  toimituksellisena sovituksena 21.11.2026; videon alkuperäiset määrät
+  ja täsmällinen täytekoostumus jäävät tuntemattomiksi.
   Aiempi WebP-havainnekuva ei sisällä videon mätikoristelua:
   sitä ei kytketä tähän reseptiversioon ennen korvaamista ja
   kuvalähdepaketin SHA-varmennusta. Status pysyy luonnoksena,
