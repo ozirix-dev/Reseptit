@@ -155,3 +155,36 @@ test("issue 404: critical food-safety controls remain explicit in the three high
   assert.match(review, /Bacillus cereus/);
   assert.match(review, /edelleen HOLD/);
 });
+
+
+test("issue 404: source-backed review replaces kitchen dependency without bypassing safety HOLD", async () => {
+  const [policy, readme, evidence, cookedMoong] = await Promise.all([
+    readFile(path.join(repositoryRoot, "AGENTS.md"), "utf8"),
+    readFile(path.join(draftDirectory, "README.md"), "utf8"),
+    readFile(path.join(draftDirectory, "source-review-without-kitchen.md"), "utf8"),
+    readFile(path.join(draftDirectory, "intialainen-pesarattu-mungpavuista-punnittu-v2.md"), "utf8"),
+  ]);
+
+  assert.match(policy, /in-house test kitchen is not available/i);
+  assert.match(policy, /do \*\*not\*\* make the author's own/);
+  assert.match(policy, /remain HOLD/);
+  assert.match(readme, /Koekeittiö ei ole pakollinen/);
+  assert.match(readme, /source-review-without-kitchen\.md/);
+  assert.match(evidence, /Koekeittiökoetta ei vaadita yleisenä julkaisuehtona/);
+  assert.match(evidence, /ei ole julkaistun tämän muunnelman testi/i);
+
+  for (const entry of candidates) {
+    assert.ok(evidence.includes(entry.original), `${entry.original}: no source review entry`);
+  }
+  assert.match(evidence, /\*\*HOLD \/ suora lähderistiriita\*\*/);
+  assert.match(evidence, /Ruokavirasto/);
+  assert.match(evidence, /Bacillus cereus/);
+  const parsed = parseMarkdown(cookedMoong);
+  assert.ok(parsed);
+  assert.match(String(parsed.data.title), /^Mungpapuletut keitetyistä pavuista/);
+  assert.doesNotMatch(String(parsed.data.title), /Pesarattu/i);
+  assert.match(parsed.content, /ei perinteinen pesarattu/i);
+  assert.match(parsed.content, /lähteistetysti toimivaksi osoitettu/i);
+  assert.match(parsed.content, /ERITYINEN TURVALLISUUS-HOLD/);
+  assert.equal(isPublicRecipeQuarantined("intialainen-pesarattu-mungpavuista"), true);
+});
