@@ -80,8 +80,8 @@
     {
       "recipe_id": "kermainen-tillikastike",
       "source_path": "reseptit/alkuruoat/kermainen-tillikastike.md",
-      "source_recipe_sha256": "4dfdd44a1ff4f2efdf55b0f1f7c6ace055d20c84ed8c1d71851a22c75a9386b0",
-      "nutrition_input_hash": "2fa8e3c648a13f9751e383dc44ce17ac9a3e2e6faed26568facdfbe558c3693d",
+      "source_recipe_sha256": "1cbaac514817082c600deaa12aa79af709f3c45848ebfc679bc5d0a0ac41eeba",
+      "nutrition_input_hash": "3c80ddde80a9596d3591b78dd85f970091e5410e6684589de842bd49ca51af4d",
       "servings": 4,
       "ingredient_count": 6,
       "ingredients": [
@@ -89,7 +89,7 @@
           "row": 1,
           "amount": 200,
           "unit": "g",
-          "item": "kermaviiliä",
+          "item": "laktoositonta kermaviiliä, rasvaa 10–12 %",
           "note": null,
           "food_record": null,
           "edible_basis": "UNRESOLVED",
@@ -110,12 +110,12 @@
         {
           "row": 3,
           "amount": 12,
-          "unit": "ml",
+          "unit": "g",
           "item": "sitruunamehua",
           "note": null,
           "food_record": null,
           "edible_basis": "UNRESOLVED",
-          "unit_conversion": "MUST_VERIFY_PRODUCT_SPECIFIC_ML_TO_G",
+          "unit_conversion": "DIRECT_GRAMS",
           "retention": "UNRESOLVED"
         },
         {

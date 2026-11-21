@@ -26,12 +26,12 @@ image:
 ingredients:
   - amount: 200
     unit: "g"
-    item: "gräddfil"
+    item: "laktosfri gräddfil, 10–12 % fett"
   - amount: 20
     unit: "g"
     item: "finhackad färsk dill"
   - amount: 12
-    unit: "ml"
+    unit: "g"
     item: "citronsaft"
   - amount: 3
     unit: "g"
@@ -60,3 +60,4 @@ En kall, frisk dillsås till ugnsfisk, stekt fisk och färskpotatis.
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/tillikastike-kalalle/
 - Innehåller **mjölk** (gräddfil). Servera kall och förvara övertäckt i kylskåp.
 - Använd kall gräddfil, rena redskap och sköljd dill. Förvara den färdiga såsen övertäckt i kylskåp under +6 °C och ta fram små mängder först vid servering.
+- Näringsunderlaget använder Fineli laktosfri gräddfil med 10–12 % fett (Fineli #11152). Faktiska värden varierar med produkten. Väg upp 12 g citronsaft i stället för att uppskatta massan av 12 ml. Mjölk är fortsatt ett allergen.

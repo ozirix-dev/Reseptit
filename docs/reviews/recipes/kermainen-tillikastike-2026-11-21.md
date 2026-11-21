@@ -15,3 +15,7 @@ Päiväys: 21.11.2026. Tila: DRAFT / HOLD, ei julkaistu.
 Sisältää **maitoa** (kermaviili). Tarjoa kylmänä ja säilytä peitettynä jääkaapissa.
 
 Perustana Ruokaviraston allergeeniluettelo: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit . Etikettien tarkistus säilyy tarpeellisena; tarkennus ei ole gluteeniton-hyväksyntä. FI/EN/SV/TH päivitetty.
+
+## Laskennan valmistelun tarkennus 21.11.2026 – Chat 3
+
+Fineli Release 20:n #11152 kuvaa laktoositonta 10–12 % kermaviiliä; hiilihydraattien, kuidun, polyolien, proteiinin ja rasvan lähdepoiminta on tarkistettu Fineli-rajapinnan julkaistusta peilistä: https://ravinto.ptjesse.fi/kermaviili-rasvaa-10-12-vl/ . Tämä on keskiarvotuote, ei minkään kauppamerkin lupaus. Sitruunamehu on muutettu tilavuusmitasta 12 gramman punnituksi määräksi, jotta laskenta ei arvaa tiheyttä. FI/EN/SV/TH muutettu, sourceHash ja inputHash päivitetty. Ravintolaskenta sekä hyväksyntä vielä tekemättä.
