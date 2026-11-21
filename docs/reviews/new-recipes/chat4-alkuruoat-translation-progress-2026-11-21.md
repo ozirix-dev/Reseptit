@@ -1,9 +1,11 @@
-# Chat-4 English translations – review queue, 2026-11-21
+# Chat-4 translation preparation 2026-11-21
 
-- Owner: Chat 4, PR #805
-- 10 English Draft files translated from 10 Finnish Draft recipes.
-- Same recipe IDs, ingredient quantities and units, servings and times, step counts as their Finnish source versions.
-- English culinary and food-safety notes are editorial drafts; independent equivalence review has not been performed.
-- Source FI `translation_status.en: draft`; NO `published` state, nutrition, GK, or image claims.
-- Remaining: 10 SV and 10 TH translations, their actual meaning review and source hashes, image binaries and review gates.
-- Cloudflare release excluded.
+Työn omistaja: Chat 4
+
+- 10 Finnish recipe drafts and 30 translation drafts (EN, SV, TH): all status: draft.
+- Source FI translation_languages = [en, sv, th]; translation_status all draft.
+- Same recipe_id, servings, total time, ingredient quantity/unit sequence and method step counts.
+- The original Finnish recipe is the source of truth. Semantic hashes and independent translation safety review are NOT yet complete.
+- All translations preserve specific HOLD information on raw whitefish, vendace roe, salted milk-caps and nettles.
+- Image assets exist in a separate image handoff bundle but not in the Git branch. Do not promote to Ready or publish.
+- Recipe nutritional values and glycemic load remain undetermined; Cloudflare deployment remains outside this task.

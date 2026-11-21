@@ -44,9 +44,11 @@ ingredients:
 translation_languages:
   - en
   - sv
+  - th
 translation_status:
   en: draft
   sv: draft
+  th: draft
 ---
 
 # Uunissa paistetut silakkarullat
@@ -66,4 +68,4 @@ Uunissa paistetut silakkarullat on toimituksellinen suomalainen alkuruokaluonnos
 - **Lähde- ja valmistusnäyttö:** Mittasuhteet ovat Chat-4:n alustava toimituksellinen ehdotus. Ulkoiset valmistuslähteet, ainesosien olomuoto, saanto ja ajat varmennettava ennen julkaisua.
 - **Ruokaturva:** Käsittele tuore kala kylmäketjussa; kypsennä kauttaaltaan. Silakan alkuperään ja mahdollisiin erityisiin syöntisuosituksiin kiinnitettävä huomiota.
 - **Ravintoarvot:** Ei laskettu; numeerisia makroja ei julkaista. GK: ei määritetty.
-- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedostoa ei vielä ole Git-haarassa eikä reseptin `image`-metatiedoissa. Kuva on tarkistettava ennen julkaisua. EN/SV ovat luonnoksia; TH puuttuu. Käännösten merkityskatselmointi puuttuu. Käännösten merkityskatselmointi puuttuu.
+- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedostoa ei vielä ole Git-haarassa eikä reseptin `image`-metatiedoissa. Kuva on tarkistettava ennen julkaisua. EN/SV/TH ovat luonnoksia. Käännösten merkityskatselmointi puuttuu. Käännösten merkityskatselmointi puuttuu. Käännösten merkityskatselmointi puuttuu.
