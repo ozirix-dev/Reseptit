@@ -62,9 +62,3 @@ This Thai everyday dish pairs marinated pork fried in fragrant garlic oil with j
 - Nutrition values and glycaemic load (GL) have not yet been calculated. The dish includes regular jasmine rice and is not presented as low-carb or keto.
 - This is a Recipavo editorial adaptation based on published preparation sources. Recipavo has not cooked or tasted this version in its own test kitchen. Sources and adaptation choices are documented separately.
 - The image is an AI-generated illustration of the dish, not a photograph of food prepared by Recipavo. The original Facebook photo was not copied.
-
-## Preparation sources
-
-- https://www.wongnai.com/recipes/fried-pork-with-garlic-and-pepper
-- https://www.wongnai.com/recipes/ugc/f4cc9e8a316e420581e34388a831491e
-- https://iwishiwasinthailand.blogspot.com/2015/11/khao-moo-tod-gratiem-rice-with-crispy.html

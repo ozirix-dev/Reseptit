@@ -62,9 +62,3 @@ Den här thailändska vardagsrätten kombinerar marinerat fläsk stekt i vitlök
 - Näringsvärden och glykemisk belastning (GL) har ännu inte beräknats. Rätten innehåller vanligt jasminris och marknadsförs inte som lågkolhydrat- eller ketomat.
 - Detta är Recipavos redaktionella bearbetning av publicerade tillagningskällor. Recipavo har inte lagat eller smakat denna version i eget provkök. Källor och anpassningar dokumenteras separat.
 - Bilden är en AI-genererad illustration av rätten, inte ett foto av mat tillagad av Recipavo. Den ursprungliga Facebook-bilden kopierades inte.
-
-## Tillagningskällor
-
-- https://www.wongnai.com/recipes/fried-pork-with-garlic-and-pepper
-- https://www.wongnai.com/recipes/ugc/f4cc9e8a316e420581e34388a831491e
-- https://iwishiwasinthailand.blogspot.com/2015/11/khao-moo-tod-gratiem-rice-with-crispy.html

@@ -62,9 +62,3 @@ ingredients:
 - ยังไม่ได้คำนวณคุณค่าทางโภชนาการและค่า GL สูตรนี้มีข้าวหอมมะลิปกติ จึงไม่จัดเป็นอาหารคาร์โบไฮเดรตต่ำหรือคีโต
 - สูตรนี้เป็นการเรียบเรียงและปรับสัดส่วนโดย Recipavo จากแหล่งสูตรอาหารที่เผยแพร่แล้ว Recipavo ไม่ได้ปรุงหรือชิมสูตรนี้ในครัวทดสอบของตน รายละเอียดแหล่งอ้างอิงและการปรับสูตรอยู่ในบันทึกแยก
 - ภาพประกอบนี้สร้างด้วยปัญญาประดิษฐ์ ไม่ใช่ภาพถ่ายอาหารที่ Recipavo ปรุงจริง และไม่ได้คัดลอกภาพต้นฉบับจาก Facebook
-
-## แหล่งอ้างอิงวิธีปรุง
-
-- https://www.wongnai.com/recipes/fried-pork-with-garlic-and-pepper
-- https://www.wongnai.com/recipes/ugc/f4cc9e8a316e420581e34388a831491e
-- https://iwishiwasinthailand.blogspot.com/2015/11/khao-moo-tod-gratiem-rice-with-crispy.html

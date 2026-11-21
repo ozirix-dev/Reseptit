@@ -59,9 +59,3 @@ Thaimaalainen arkiruoka, jossa marinoitu porsas paistetaan valkosipulin tuoksuis
 - Ravintoarvoja eikä glykeemistä kuormaa (GK) ole vielä laskettu. Annos sisältää tavallista jasmiiniriisiä eikä ole VHH- tai ketoruoka.
 - Tämä on lähteisiin perustuva Recipavon toimituksellinen sovitus. Recipavo ei ole valmistanut eikä maistanut tätä versiota omassa koekeittiössään. Lähteet ja erot on kirjattu erilliseen näyttömuistioon.
 - Kuva on tekoälyllä tuotettu havainnekuva annoksesta, ei valokuva Recipavossa valmistetusta ruoasta. Facebookin alkuperäiskuvaa ei kopioitu.
-
-## Valmistuslähteet
-
-- https://www.wongnai.com/recipes/fried-pork-with-garlic-and-pepper
-- https://www.wongnai.com/recipes/ugc/f4cc9e8a316e420581e34388a831491e
-- https://iwishiwasinthailand.blogspot.com/2015/11/khao-moo-tod-gratiem-rice-with-crispy.html
