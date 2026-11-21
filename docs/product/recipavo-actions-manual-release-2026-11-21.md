@@ -21,7 +21,7 @@ Reseptit on GitHubissa; `www.recipavo.com` toimii Cloudflare Pagesin `recipavo-s
 2. Avaa **Actions → Recipavo production release (manual) → Run workflow**, valitse `main`, anna täysi 40-merkkinen `release_sha` ja muuta `confirmation`-kentän oletus `DO_NOT_RELEASE` arvoon **`RELEASE recipavo-site production`**.
 3. `gate` tarkistaa SHA:n olevan samanaikaisesti `github.sha`, GitHubin nykyinen `main`-SHA ja viimeisimmän onnistuneen `Recipe site` main-CI-ajon SHA. Se tarkistaa myös `recipavo-production`-ympäristön 10 minuutin ajastimen, `main`-haararajoituksen ja ylläpitäjän ohituskiellon.
 4. GitHub odottaa `recipavo-production`-ympäristön **10 minuutin Wait timer** -ajan. Tänä aikana ajon voi peruuttaa. Ajan päätyttyä `release` saa ympäristön Cloudflare-tunnukset automaattisesti, jos muut suojaehdot täyttyvät.
-5. `release` tarkistaa CI:n ja Cloudflare-konfiguraation uudelleen, palauttaa/varmentaa kuva-aineiston ja Git-overlaysit, rakentaa Node 22:lla tuotantoversion (`RECIPAVO_BUILD_TARGET=production`, Preview-origin poistettuna, palautelomakkeen UI pois), tarkistaa staattisen tulosteen ja leimaa distin samalla SHA:lla.
+5. `release` tarkistaa CI:n ja Cloudflare-konfiguraation uudelleen, palauttaa/varmentaa kuva-aineiston ja Git-overlaysit, varmistaa että Pagesin `site/functions/api/feedback.ts` on oikea lähdetiedosto ja sisältää `GET 405`-reitin sekä POST-vastaanoton ominaisuusportin, rakentaa Node 22:lla tuotantoversion (`RECIPAVO_BUILD_TARGET=production`, Preview-origin poistettuna, palautelomakkeen UI pois), tarkistaa staattisen tulosteen ja leimaa distin samalla SHA:lla.
 6. Välittömästi ennen uploadia tarkistetaan `main`-SHA, CI ja Cloudflare-ympäristön asetukset vielä kerran. Jos sama SHA on jo www-tuotannossa, upload ohitetaan. Muussa tapauksessa `wrangler@4.165.0 pages deploy dist --project-name recipavo-site --branch production --commit-hash <SHA>` suoritetaan `site/`-hakemistossa.
 7. `npm run verify:production` tarkistaa tuotannon SHA:n, nelikielisiä reseptisivuja, 404:n, sitemapin, robots.txt:n, JavaScript-assetsisällön ja SEO:n; lisäksi `GET /api/feedback` on palautettava **405 JSON**. POST-testiä tai palautteen tallennusta ei käynnistetä.
 
@@ -29,7 +29,7 @@ Reseptit on GitHubissa; `www.recipavo.com` toimii Cloudflare Pagesin `recipavo-s
 
 - Väärä SHA, main-haara vaihtunut, keskeneräinen/epäonnistunut CI tai puuttuva tai väärä 10 minuutin suoja-ajastin, `main`-rajaus tai sallittu ylläpitäjän ohitus → **HOLD, ei deploymentia**.
 - Puuttuvat Cloudflare-tunnukset tai väärä projekti/tuotantohaara, `FEEDBACK_ENABLED`-muuttuja tai D1-sidonta → **HOLD**.
-- Puuttuvat kuvat, tuotanto-HTML:n `noindex`, leiman ristiriita tai yli 20 000 tiedostoa / liian suuri tiedosto → **HOLD**.
+- Puuttuva tai virheellinen Pages Function -lähde (`site/functions/api/feedback.ts`), puuttuvat kuvat, tuotanto-HTML:n `noindex`, leiman ristiriita tai yli 20 000 tiedostoa / liian suuri tiedosto → **HOLD ennen Wrangler-uploadia**.
 - Jos Wrangler ilmoittaa deploymentin valmiiksi mutta HTTP-jälkitesti epäonnistuu, **älä automaattisesti toista uploadia**. Tutki jo julkaistu versio ja tarvittaessa käytä erikseen hyväksyttyä rollbackia.
 - Tämä ei aseta D1:tä, Turnstileä, Cronia, WAFia, DNS:ää, `FEEDBACK_ENABLED`-lippua tai muuta vanhaa Coming Soon -projektia.
 
