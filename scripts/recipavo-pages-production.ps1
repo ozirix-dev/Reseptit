@@ -74,6 +74,16 @@ $headers=Get-Content -LiteralPath $headerFile -Raw
 $matches=[regex]::Matches($headers,'(?im)^\s*X-Recipavo-Commit:[ \t]*([a-f0-9]{40})\s*$')
 Need ($matches.Count -eq 1) 'Expected exactly one X-Recipavo-Commit in dist/_headers'
 Need ($matches[0].Groups[1].Value -eq $ExpectedSha) 'Build artifact SHA differs from approved main SHA'
+# Production must be built with RECIPAVO_BUILD_TARGET=production.
+# A preview dist is noindex and must NEVER be repurposed for production.
+Need (-not ($headers -match '(?im)^\s*X-Robots-Tag:\s*noindex\b')) 'Preview noindex header is present; build production target from scratch'
+$homeHtml=Get-Content -LiteralPath (Join-Path $dist 'index.html') -Raw
+Need ($homeHtml -notmatch '(?i)<meta[^>]+(?:name=["'']robots["''][^>]+content=["'']noindex|content=["'']noindex[^>]+name=["'']robots)') 'Preview noindex meta tag present in homepage'
+Need ($homeHtml -match 'https://www\.recipavo\.com/') 'Homepage does not identify the production canonical origin'
+$robots=Get-Content -LiteralPath (Join-Path $dist 'robots.txt') -Raw
+Need ($robots -match 'https://www\.recipavo\.com/sitemap\.xml') 'Production robots sitemap URL missing'
+$sitemap=Get-Content -LiteralPath (Join-Path $dist 'sitemap.xml') -Raw
+Need ($sitemap -match 'https://www\.recipavo\.com/') 'Production sitemap origin missing'
 $assets=@(Get-ChildItem -LiteralPath $dist -File -Recurse -Force)
 Need ($assets.Count -gt 0 -and $assets.Count -le 20000) "Invalid Pages artifact count: $($assets.Count)"
 foreach($file in $assets) {
