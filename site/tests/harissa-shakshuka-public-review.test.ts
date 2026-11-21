@@ -20,10 +20,10 @@ const sourcePaths = {
     "c37bab9096b6406eec69a9971e481ce94c9dee2d"],
 } as const;
 const eggText = {
-  fi: /110 g kuorettomana punnittua kananmunaa/,
-  en: /110 g egg weighed without its shell/,
-  sv: /110 g ägg, vägt utan skal/,
-  th: /ไข่ไก่ที่ชั่งโดยไม่รวมเปลือก 110 กรัม/,
+  fi: /aineslistan kananmunat/,
+  en: /the listed eggs/,
+  sv: /äggen enligt ingredienslistan/,
+  th: /ไข่ตามรายการ/,
 } as const;
 const nutritionNote = {
   fi: /Mittaamattomia kypsennyshävikkejä ei ole vähennetty/,
@@ -57,10 +57,12 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
     assert.equal(matching.length, 1);
     const publicRecipe = matching[0];
     assert.equal(publicRecipe.servings, source.servings);
-    assert.equal(publicRecipe.instructionsText.length, 3, locale + " visible three-step method");
+    assert.equal(publicRecipe.instructionsText.length, 5, locale + " GK80 five-step display contract");
     const instructions = publicRecipe.instructionsText.join("\n");
     assert.match(instructions, eggText[locale]);
     assert.doesNotMatch(instructions, genericBoilerplate);
+    // The nutrition-model scope is user-facing metadata, not a cooking step.
+    assert.doesNotMatch(instructions, /Raakojen ainesten ravintokoostumusta|raw ingredients' nutrient composition|Råvarornas näringssammansättning|การคำนวณสารอาหารใช้ข้อมูล/);
     assert.match(publicRecipe.notesHtml, nutritionNote[locale]);
     assert.equal(publicRecipe.ingredients.length, source.ingredients.length);
     for (let index = 0; index < source.ingredients.length; index++) {
