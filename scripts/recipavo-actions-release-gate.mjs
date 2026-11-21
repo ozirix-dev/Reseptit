@@ -180,7 +180,7 @@ async function main() {
   must(['github','github-recheck','cloudflare','stamp','artifact','live'].includes(mode),'Unknown release gate mode');
   let result;
   if(mode==='github'||mode==='github-recheck') result=await githubPreflight({
-    sha,env:process.env,verifyEnvironment:mode==='github'});
+    sha,env:process.env,verifyEnvironment:true});
   else if(mode==='cloudflare') result=await cloudflarePreflight({env:process.env});
   else if(mode==='live') {
     result=await readLiveRevision({sha});
