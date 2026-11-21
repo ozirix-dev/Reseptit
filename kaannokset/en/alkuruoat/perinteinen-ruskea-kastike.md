@@ -32,10 +32,10 @@ ingredients:
     item: "plain wheat flour"
   - amount: 500
     unit: "ml"
-    item: "prepared reduced-salt beef stock"
+    item: "Puljonki Signature ready-to-use beef stock (EAN 6416796728013)"
   - amount: 4
     unit: "g"
-    item: "soy sauce"
+    item: "Kikkoman Naturally Brewed soy sauce (soy, wheat)"
   - amount: 1
     unit: "g"
     item: "black pepper"
@@ -58,3 +58,4 @@ Toasted flour, butter and beef stock make a rich gravy for meatballs and mashed 
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/ruskea-kastike
 - Contains **milk, wheat and soy**. Soy sauce may also contain wheat, and stock may contain celery. Check the products used.
 - Serve the gravy hot immediately. If preparing ahead, cool promptly in a shallow container, refrigerate below +6°C and reheat thoroughly until hot. Check stock and soy-sauce labels for celery, wheat and soy.
+- Exact products checked: Puljonki Signature beef stock (EAN 6416796728013; beef bones, water, carrot, onion, parsnip, salt, herbs, pepper) and Kikkoman Naturally Brewed (water, soybeans, wheat, salt). The gravy contains **milk, wheat and soy**. Celery is not listed for this specific stock; substitutes may contain it. Always check the actual package label.

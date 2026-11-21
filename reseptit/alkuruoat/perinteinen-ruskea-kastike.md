@@ -37,10 +37,10 @@ ingredients:
     item: "vehnäjauhoja"
   - amount: 500
     unit: "ml"
-    item: "vähäsuolaista valmista lihalientä"
+    item: "Puljonki Signature Lihalientä, käyttövalmista (EAN 6416796728013)"
   - amount: 4
     unit: "g"
-    item: "soijakastiketta"
+    item: "Kikkoman Naturally Brewed -soijakastiketta (soija, vehnä)"
   - amount: 1
     unit: "g"
     item: "mustapippuria"
@@ -63,3 +63,4 @@ Voissa ruskistettu vehnäjauho ja lihaliemi tekevät täyteläisen kastikkeen li
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.k-ruoka.fi/reseptit/ruskea-kastike
 - Sisältää **maitoa, vehnää ja soijaa**. Soijakastike voi sisältää myös vehnää; lihaliemi voi sisältää esimerkiksi selleriä. Tarkista valittujen tuotteiden etiketit.
 - Tarjoa kastike kuumana heti. Jos valmistat sen etukäteen, jäähdytä nopeasti matalassa astiassa, säilytä jääkaapissa alle +6 °C ja kuumenna ennen tarjoilua uudelleen kauttaaltaan kuumaksi. Tarkista lihaliemen ja soijakastikkeen pakkausmerkinnät myös sellerin, vehnän ja soijan varalta.
+- Täsmätuotteiden allergeenitarkistus: Puljonki Signature Lihaliemi (EAN 6416796728013; naudanluut, vesi, porkkana, sipuli, palsternakka, suola, yrtit, pippuri) ja Kikkoman Naturally Brewed (vesi, soija, vehnä, suola). Kastike sisältää **maitoa, vehnää ja soijaa**. Selleriä ei mainita nimetyn liemen ainesosaluettelossa; korvaava tuote voi sisältää sitä. Tarkista aina käytettävän pakkauksen merkinnät.

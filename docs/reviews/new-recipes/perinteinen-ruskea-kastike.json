@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "perinteinen-ruskea-kastike",
   "source_path": "reseptit/alkuruoat/perinteinen-ruskea-kastike.md",
-  "source_sha256": "021f8ec189a11d6cb8ffe79248b3e9994023d7892144087d1f08dc4aab899e8a",
+  "source_sha256": "31d8608dc871bcde65c99ba5dc3379fc8c5259b0e1dd5b1d5fd7f5dd0aa97398",
   "decision": "hold",
   "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
   "reviewed_at": "2026-11-21",
@@ -27,8 +27,8 @@
       "notes": "K-Ruoka testaa rasva–vehnäjauho-ruskistuksen ja lämpimän lihaliemen asteittaisen lisäämisen; nämä vaiheet ovat Recipavon ohjeessa, jossa keitetään myös 5 min. Ei Recipavon omaa paistotestiä."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Ruokaviraston allergialuettelo: maito/vehnä/soija ainesosista, selleri mahdollisessa valmiissa lihaliemessä. Liemen ja soijakastikkeen tuotetta ei ole yksilöity, joten tuotekohtaista lopullista allergeenitarkistusta ei voi kuitata; ruokaturvallisuus PENDING. Ohjeistettu alle +6 °C:n kylmäsäilytys, nopea jäähdytys ja perusteellinen uudelleenkuumennus. Viite: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/ sekä https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit/ ."
+      "status": "pass",
+      "notes": "Tietyn Puljonki Signature Lihaliemen EAN 6416796728013 valmistajan ainesosat: naudanluut, vesi, porkkana, sipuli, palsternakka, suola, yrtit ja mustapippuri; ei luetteloitu selleriä. Kikkoman Naturally Brewed: vesi, SOIJA, VEHNÄ ja suola. VOI sisältää MAITOA, jauhossa VEHNÄÄ. Resepti ilmoittaa MAITO, VEHNÄ ja SOIJA. Tämä rajattu turvallisuus-PASS koskee vain mainittuja tuotteita; vaihtotuotteiden ja fyysisten pakkausten ajantasaiset tiedot on tarkistettava. Ei ravinto- eikä julkaisuapprovalia."
     },
     "servings_and_time": {
       "status": "pass",
@@ -45,7 +45,10 @@
   },
   "supplementary_evidence": {
     "food_safety": [
-      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit"
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit",
+      "https://www.oscarnordic.fi/puljonki-signature/367-signature-lihaliemi-1-l.html",
+      "https://www.kikkoman.eu/food-service/products/detail/kikkoman-naturally-brewed-soy-sauce",
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit/"
     ],
     "image_path": "kuvat/alkuruoat/perinteinen-ruskea-kastike.webp",
     "image_sha256": "d10b6a2136d4a992f9488cad8eade4a6d0409e1f6f24d5327e152500a03b81aa",

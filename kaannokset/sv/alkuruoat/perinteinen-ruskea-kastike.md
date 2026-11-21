@@ -32,10 +32,10 @@ ingredients:
     item: "vetemjöl"
   - amount: 500
     unit: "ml"
-    item: "färdig lättsaltad köttbuljong"
+    item: "Puljonki Signature färdig köttbuljong (EAN 6416796728013)"
   - amount: 4
     unit: "g"
-    item: "sojasås"
+    item: "Kikkoman Naturally Brewed sojasås (soja, vete)"
   - amount: 1
     unit: "g"
     item: "svartpeppar"
@@ -58,3 +58,4 @@ Brynt vetemjöl, smör och köttbuljong ger en fyllig sås till köttbullar och 
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/ruskea-kastike
 - Innehåller **mjölk, vete och soja**. Sojasås kan även innehålla vete, och buljong kan innehålla selleri. Kontrollera produktmärkningen.
 - Servera såsen varm direkt. Vid förberedelse i förväg: kyl snabbt i ett grunt kärl, förvara under +6 °C och värm igen tills såsen är genomvarm. Kontrollera buljong och soja för selleri, vete och soja.
+- Verifierade produkter: Puljonki Signature köttbuljong (EAN 6416796728013; nötben, vatten, morot, lök, palsternacka, salt, örter, peppar) och Kikkoman Naturally Brewed (vatten, sojabönor, vete, salt). Såsen innehåller **mjölk, vete och soja**. Selleri anges inte för denna buljong, men ersättningar kan innehålla selleri. Kontrollera alltid den aktuella förpackningen.
