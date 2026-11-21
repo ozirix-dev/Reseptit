@@ -147,7 +147,7 @@ test("issue 404: critical food-safety controls remain explicit in the three high
   // waiting to cool. The source-backed guidance is also declared in README.
   for (const [name, draft] of [["kuih", kuih], ["xoi", xoi]] as const) {
     assert.match(draft, /\*\*mieluiten tunnin kuluessa\*\*/, name);
-    assert.match(draft, /\*\*5 °C\*\*/, name);
+    assert.match(draft, /\*\*5 °C(?::ssa)?\*\*/, name);
     assert.match(draft, /gov\.uk\/government\/publications\/home-food-fact-checker/, name);
     assert.match(draft, /foodstandards\.gov\.au\/consumer\/prevention-of-foodborne-illness/, name);
   }
