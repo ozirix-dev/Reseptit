@@ -1,0 +1,33 @@
+name: Chat 5 EU-polyol review-only tests
+
+on:
+  pull_request:
+    paths:
+      - "site/scripts/nutrition-model.ts"
+      - "site/tests/nutrition-model.test.ts"
+      - ".github/workflows/chat5-eu-polyol-review.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  eu-polyol-targeted:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+      - name: Verify only EU-total and source-guard regression tests
+        working-directory: site
+        run: npx tsx --test --test-name-pattern="EU.total|EU total|unverified EU total" tests/nutrition-model.test.ts
+      - name: Declare audit-only result
+        run: |
+          echo "Targeted tests are advisory and DO NOT replace required Recipe site CI." >> "$GITHUB_STEP_SUMMARY"
+          echo "No GK source seal or publication approvals were modified." >> "$GITHUB_STEP_SUMMARY"
