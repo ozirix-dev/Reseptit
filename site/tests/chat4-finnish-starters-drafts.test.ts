@@ -120,6 +120,14 @@ test("lasimestarin-silli Thai leek remains distinct from garlic shoots", () => {
   assert.match(th.raw, /หั่นบาง ๆ พร้อมกระเทียมต้น/);
 });
 
+test("Baltic herring rolls use liquid unwhipped cream in Thai", () => {
+  const fi = loadRecipe("uunissa-paistetut-silakkarullat", "fi");
+  const th = loadRecipe("uunissa-paistetut-silakkarullat", "th");
+  assert.ok(fi.data.ingredients.some(i => i.item === "kuohukermaa"));
+  assert.ok(th.data.ingredients.some(i => i.item === "วิปปิงครีมชนิดเหลว (ยังไม่ตี)"));
+  assert.match(th.raw, /เทวิปปิงครีมชนิดเหลวที่ยังไม่ตีรอบ ๆ/);
+});
+
 test("Chat-4 source-based risk fixes remain identical in all four languages", () => {
   const claims = [
     {
