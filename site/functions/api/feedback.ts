@@ -2,6 +2,8 @@
  * Cloudflare Pages Function: private feedback intake, never a publication API.
  * Enabled only when all production bindings and Turnstile are configured.
  */
+import { feedbackMaintenanceIsFresh } from "../../src/features/feedback/retention-policy";
+
 const validKinds = new Set(["recipe_error", "improvement", "new_recipe", "technical", "other"]);
 const validLocales = new Set(["fi", "en", "sv", "th"]);
 const allowedFields = new Set([
@@ -9,9 +11,10 @@ const allowedFields = new Set([
 ]);
 const MAX_BODY_BYTES = 20_000;
 
-interface FeedbackDatabase {
+export interface FeedbackDatabase {
   prepare(sql: string): {
-    bind(...values: (string | null)[]): { run(): Promise<unknown> };
+    bind(...values: (string | null)[]): { run(): Promise<{ success: boolean }> };
+    first(): Promise<unknown>;
   };
 }
 export interface FeedbackEnvironment {
@@ -142,6 +145,19 @@ export async function handleFeedback(
   if (!input) return json(400, { error: "invalid_request" });
   // A field intended for bots: acknowledge without storing or making a paid verification call.
   if (input.website) return json(202, { reference: crypto.randomUUID() });
+
+  // A working daily deletion job is a mandatory condition for collecting messages.
+  // Missing, stale, future or malformed maintenance evidence blocks intake.
+  try {
+    const maintenance = await env.FEEDBACK_DB.prepare(
+      "SELECT last_success_at FROM feedback_maintenance WHERE singleton = 1",
+    ).first();
+    if (!feedbackMaintenanceIsFresh(maintenance)) {
+      return json(503, { error: "maintenance_unavailable" });
+    }
+  } catch {
+    return json(503, { error: "maintenance_unavailable" });
+  }
 
   let verified: { success?: boolean; hostname?: string };
   try {
