@@ -13,7 +13,19 @@ test("production verification distinguishes stale headers from wrong bytes or pa
   const old = "b".repeat(40);
   const missing = "/__recipavo_release_probe_missing__/";
   const files = new Map<string, string>();
-  const pages = [["fi", "/"], ["en", "/en/recipes/"], ["sv", "/sv/recept/"], ["th", "/th/recipes/"], ["fi", "/reseptit/sivu/2/"]];
+  const recipeSlugs = [
+    "valimerellinen-menemen-fetalla",
+    "valimerellinen-pinaatti-fetashakshuka",
+  ];
+  const recipeRoutes = recipeSlugs.flatMap(slug =>
+    [["fi", "/"], ["en", "/en/recipes/"], ["sv", "/sv/recept/"], ["th", "/th/recipes/"]]
+      .map(([lang, root]) => [lang, root + slug + "/"]));
+  const pages = [
+    ["fi", "/"], ["en", "/en/recipes/"], ["sv", "/sv/recept/"],
+    ["th", "/th/recipes/"], ["fi", "/reseptit/sivu/2/"],
+    ...recipeRoutes,
+  ];
+  const changedRecipeRoute = "/sv/recept/valimerellinen-pinaatti-fetashakshuka/";
   const asset = "/assets/index-abcd.js";
   const entry = `<script type="module" src="${asset}"></script>`;
   const bootstrap = `<script type="module">const importEntry = () => { void import("${asset}"); }; importEntry();</script>`;
@@ -22,11 +34,21 @@ test("production verification distinguishes stale headers from wrong bytes or pa
   for (const [locale, route] of pages) {
     const url = origin + route;
     const article = route.includes("/sivu/") ? '<article class="recipe-card">Card</article>' : "";
+    const recipe = recipeRoutes.some(([, candidate]) => candidate === route) ? [
+      '<ul class="ingredient-list"><li>egg</li><li>feta</li></ul>',
+      '<script type="application/ld+json">',
+      JSON.stringify({
+        "@type": "Recipe", name: "Recipe", recipeIngredient: ["egg", "feta"],
+        recipeInstructions: ["prepare vegetables", "cook eggs", "serve with feta"],
+        nutrition: { carbohydrateContent: "5.02 g", proteinContent: "21.98 g" },
+      }),
+      "</script>",
+    ].join("") : "";
     files.set(route + "index.html", [
       `<html lang="${locale}"><head><link rel="canonical" href="${url}">`,
       `<link rel="alternate" hreflang="${locale}" href="${url}">`,
       (route === "/" ? bootstrap : entry) + "</head>",
-      `<body><div id="root"><h1>Recipes</h1>${article}</div></body></html>`,
+      `<body><div id="root"><h1>Recipes</h1>${article}${recipe}</div></body></html>`,
     ].join(""));
   }
   files.set("/_headers", `/*\n  X-Recipavo-Commit: ${sha}\n`);
@@ -41,11 +63,13 @@ test("production verification distinguishes stale headers from wrong bytes or pa
 
   type Fault = "entry-mismatch" | "entry-missing" | "bootstrap-mismatch" | "bootstrap-hidden" |
     "js-mime" | "cached-js-mime" |
-    "robots-bytes" | "robots-revision" | "html-revision";
+    "robots-bytes" | "robots-revision" | "html-revision" |
+    "recipe-ingredients" | "recipe-instructions" | "recipe-revision" | "recipe-http";
   const requestWithFault = (fault?: Fault): typeof fetch => async input => {
     const { pathname, search } = new URL(String(input));
     const staleRevision = (pathname === "/robots.txt" && (!search || fault === "robots-revision")) ||
       (pathname === "/" && fault === "html-revision") ||
+      (pathname === changedRecipeRoute && fault === "recipe-revision") ||
       (pathname === asset && !search && fault === "cached-js-mime");
     const headers = new Headers({
       "content-type": pathname.endsWith("/") ? "text/html" : "text/plain",
@@ -60,6 +84,15 @@ test("production verification distinguishes stale headers from wrong bytes or pa
     const file = pathname.endsWith("/") ? pathname + "index.html" : pathname;
     const body = files.get(file);
     assert.ok(body !== undefined, file);
+    if (pathname === changedRecipeRoute && fault === "recipe-http") {
+      return new Response("Not Found", { status: 404, headers });
+    }
+    if (pathname === changedRecipeRoute && fault === "recipe-ingredients") {
+      return new Response(body.replace("<li>egg</li>", "<li>unknown</li>"), { headers });
+    }
+    if (pathname === changedRecipeRoute && fault === "recipe-instructions") {
+      return new Response(body.replace('"cook eggs"', '"serve raw eggs"'), { headers });
+    }
     if (pathname === "/" && fault === "bootstrap-mismatch") {
       return new Response(body.replace("importEntry();</script>", "</script>"), { headers });
     }
@@ -89,11 +122,21 @@ test("production verification distinguishes stale headers from wrong bytes or pa
       { route: "/robots.txt", revision: old, cachedMetadata: true },
     ]);
     assert.deepEqual(result.summaries.filter(entry => entry.route === asset), [{ route: asset, revision: sha }]);
+    assert.equal(result.summaries.filter(entry => recipeRoutes.some(([, route]) => route === entry.route)).length, 8,
+      "Two approved-source recipe identities must have all four language routes checked");
   });
 
   await t.test("rejects a modified or inactive inline home bootstrap", async () => {
     await assert.rejects(verify("bootstrap-mismatch"), /live module entry differs from artifact/);
     await assert.rejects(verify("bootstrap-hidden"), /expected one first-party module entry/);
+  });
+  await t.test("rejects stale or missing #404 recipe pages in any locale", async () => {
+    await assert.rejects(verify("recipe-http"), /\\/sv\\/recept\\/.* 404/);
+    await assert.rejects(verify("recipe-revision"), /\\/sv\\/recept\\/.* revision/);
+  });
+  await t.test("rejects live recipe ingredients or safety steps diverging from the release", async () => {
+    await assert.rejects(verify("recipe-ingredients"), /live ingredient list differs from artifact/);
+    await assert.rejects(verify("recipe-instructions"), /live Recipe JSON-LD .* differs from artifact/);
   });
   await t.test("rejects a mismatched library module entry", async () => {
     await assert.rejects(verify("entry-mismatch"), /\/reseptit\/sivu\/2\/.*live module entry/);
