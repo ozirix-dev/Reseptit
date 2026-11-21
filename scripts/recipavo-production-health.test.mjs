@@ -76,8 +76,8 @@ test('feedback GET must remain 405 JSON, never fallback HTML',async()=>{
   await expectBroken('/api/feedback',{status:200,body:'OK'},/HTTP 405/);
   await expectBroken('/api/feedback',{status:405,body:'<html>oops</html>',
     headers:{'content-type':'text/html'}},/must return JSON/);
-  await expectBroken('/api/feedback',{status:405,body:'{"error":"other"}',
-    headers:{'content-type':'application/json'}},/response changed/);
+  await expectBroken('/api/feedback',{...good.get('/api/feedback'),body:'{"error":"other"}'},
+    /response changed/);
 });
 test('feedback GET must disallow caching and MIME sniffing',async()=>{
   const goodFeedback=good.get('/api/feedback');
