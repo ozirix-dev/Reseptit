@@ -12,7 +12,7 @@ function fakeD1(options: { failDelete?: boolean; failHeartbeat?: boolean } = {})
   const rows = [new Date(Date.parse(cutoff) - 1).toISOString(), cutoff,
     new Date(Date.parse(cutoff) + 1).toISOString()];
   let lastSuccessAt: string | null = null;
-  const statements: { sql: string; values: (string | null)[] }[] = [];
+  const statements: { sql: string; values: (string | number | null)[] }[] = [];
   const db: FeedbackDatabase = {
     prepare(sql) {
       return {
@@ -23,7 +23,7 @@ function fakeD1(options: { failDelete?: boolean; failHeartbeat?: boolean } = {})
               statements.push({ sql, values });
               if (sql.startsWith("DELETE FROM")) {
                 if (options.failDelete) return { success: false };
-                const bound = values[0]!;
+                const bound = String(values[0]);
                 for (let i = rows.length - 1; i >= 0; i--) {
                   if (rows[i] <= bound) rows.splice(i, 1);
                 }
@@ -31,7 +31,7 @@ function fakeD1(options: { failDelete?: boolean; failHeartbeat?: boolean } = {})
               }
               if (sql.startsWith("INSERT INTO feedback_maintenance")) {
                 if (options.failHeartbeat) throw new Error("D1 heartbeat not written");
-                lastSuccessAt = !lastSuccessAt || lastSuccessAt < values[0]! ? values[0]! : lastSuccessAt;
+                lastSuccessAt = !lastSuccessAt || lastSuccessAt < String(values[0]) ? String(values[0]) : lastSuccessAt;
                 return { success: true };
               }
               throw new Error("Unexpected feedback retention SQL");
