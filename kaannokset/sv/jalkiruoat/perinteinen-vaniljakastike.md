@@ -65,3 +65,4 @@ En slät vaniljsås av mjölk och äggula till blåbärspaj eller äppelsmulpaj.
 - Ytterligare jämförelse: vaniljsåsen till K-Ruoas kexkorgar använder majsstärkelse och äggulor, medan Marttas recept använder potatismjöl. Mängder och tillagning här är en egen anpassning. https://www.k-ruoka.fi/reseptit/keksikorit
 - Innehåller **mjölk och ägg**. Värm varsamt enligt anvisningen; kyl snabbt och förvara i kylskåp om såsen inte serveras direkt.
 - Den angivna totaltiden gäller varm servering. För kall servering behövs extra tid för avsvalning och kylning.
+- Denna vaniljsås innehåller äggula och mjölk. Rör hela tiden under uppvärmningen och kontrollera med termometer att såsen når cirka 82–85 °C genomgående och tjocknar; lämna den inte bara ljummen. Servera varm direkt eller kyl snabbt i ett grunt kärl och förvara under +6 °C.

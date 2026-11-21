@@ -70,3 +70,4 @@ Maidosta, keltuaisesta ja vaniljasta valmistettu kastike mustikkapiirakalle ja o
 - Lisävertailu: K-Ruoan keksikorien vaniljakastike sisältää maissitärkkelystä ja keltuaisia. Marttojen ohje käyttää sen sijaan perunajauhoa. Tässä reseptissä määrä- ja menetelmämuutokset ovat omia sovituksia. https://www.k-ruoka.fi/reseptit/keksikorit
 - Sisältää **maitoa ja kananmunaa**. Kuumenna kastike rauhallisesti ohjeen mukaan, jäähdytä nopeasti, jos sitä ei tarjota heti, ja säilytä jääkaapissa.
 - Ilmoitettu kokonaisaika koskee lämpimänä tarjoilua. Jos kastike tarjotaan kylmänä, varaa lisäksi jäähdytys- ja jääkaappiaika.
+- Kastikkeessa käytetään kananmunan keltuaista ja maitoa. Sekoita kuumentaessa jatkuvasti ja varmista lämpömittarilla, että kastike lämpenee kauttaaltaan noin 82–85 °C:seen ja sakenee; älä jätä sitä vain haaleaksi. Tarjoa heti lämpimänä tai jäähdytä viipymättä matalassa astiassa ja säilytä jääkaapissa alle +6 °C:ssa.

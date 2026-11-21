@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "puolukkakastike-jalkiruokiin",
   "source_path": "reseptit/jalkiruoat/puolukkakastike-jalkiruokiin.md",
-  "source_sha256": "1c4018e4c616bff1e1b2b9c8ace14124df29b123fc59bfd99b4318a56321cdb8",
+  "source_sha256": "a9393ece594ca894c312345d1954e5e5451d69714a540f37eae10ae7cb5ee11b",
   "decision": "hold",
   "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; ravinto- ja julkaisuhyväksyntä kesken",
   "reviewed_at": "2026-11-21",
@@ -29,8 +29,8 @@
       "notes": "Marttojen testatussa puolukkahillossa marjat kypsennetään vedessä noin 10 minuuttia, mutta kyse on voimakkaammin sokeroidusta hillosta. Recipavo kiehauttaa pienemmän marjaerän noin 4–5 minuutissa vain pehmentääkseen marjat ja soseuttaa osittain. Lyhyt kypsennys ei muodosta hillo-säilyvyysväitettä: tarjoile lämpimänä tai jäähdytä nopeasti jääkaappiin. Kyse on itsenäisestä sovituksesta, ei Marttojen koekeittiössä testatusta kastikeversiosta."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Lähteissä eri kuumennus; tämän version marjat keitetään ja osa jätetään kokonaisiksi. Pakkausmerkinnät sekä tuotekohtaiset allergeenit ja säilytys tarkistettava ennen julkaisemista."
+      "status": "pass",
+      "notes": "Kotimaiset puolukat on jo yksilöity reseptin ainesosaksi. Tarkistettava alkuperä myös pakastepakkauksesta; Suomessa pakatut ulkomaiset marjat eivät ole automaattisesti suomalaisia. Ruokavirasto edellyttää ulkomaisille pakastemarjoille 90 °C 5 min tai kiehuminen 2 min; Recipavon 4–5 min hiljainen haudutus ei saa olla niiden vaihtoehtoinen turvallisuusväite. Ohje rajattu kotimaisiin marjoihin, jäljelle jääneen tuotteen kylmäsäilytys <+6 °C; ei ilmoitettavaa suoraan lisättyä allergeenia. Rajattu ruokaturvallisuuskatselmointi PASS sovellettuna kotimaiseen marjaraaka-aineeseen. Lähdeviitteet: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ulkomaiset-pakastemarjat/ ."
     },
     "servings_and_time": {
       "status": "pass",
