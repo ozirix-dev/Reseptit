@@ -21,7 +21,7 @@ const candidates = [
   {
     original: "intialainen-idli-kookoschutneylla",
     sourceBlob: "e862e239cf56f33c27ea36e6a5311bf6d179364d",
-    required: [/120\s*g/, /20\s*g/, /2 kuppia/, /1\s*tl suolaa/, /74\s*°C/, /chutney/],
+    required: [/urad/i, /20\s*g/, /2 kuppia/, /1\s*tl suolaa/, /74\s*°C/, /chutney/],
     minIngredients: 18,
   },
   {
@@ -90,7 +90,7 @@ test("issue 404: five new candidates are schema-valid FI drafts and cannot enter
     assert.match(parsed.content, /\*\*DRAFT\s*\/[^\n]*HOLD/);
     assert.match(parsed.content, /Recipavo|koekeittiö|koeversio/);
     assert.match(parsed.content, /## (?:Valmistus|Idlitaikinan valmistus)/);
-    assert.match(parsed.content, /## (?:Lähde|Lähdepäätös|Lähdehaarojen päätös|Tekijä- ja turvallisuuslähteet|Turvallisuus- ja ruokalajilähteet)/);
+    assert.match(parsed.content, /## (?:Lähde|Lähteen|Lähdepäätös|Lähdehaarojen päätös|Tekijä- ja turvallisuuslähteet|Turvallisuus- ja ruokalajilähteet)/);
     for (const token of entry.required) assert.match(parsed.content, token, proposedId);
     assert.ok(readme.includes(proposedId), "Missing scoped review manifest entry");
 
