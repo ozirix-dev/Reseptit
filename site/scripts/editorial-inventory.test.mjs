@@ -85,3 +85,28 @@ test('excludes unparseable content and foreign-language recipes', () => {
   assert.equal(r.counts.reviewed, 0);
   assert.equal(r.counts.skipped, 2);
 });
+
+test('classifies absent/null time separately from malformed, unsafe or nonpositive values', () => {
+  const inputs = [
+    ['absent', 'time_total_min: 30', ''],
+    ['explicit-null', 'time_total_min: 30', 'time_total_min: null'],
+    ['zero', 'time_total_min: 30', 'time_total_min: 0'],
+    ['negative', 'time_total_min: 30', 'time_total_min: -5'],
+    ['decimal', 'time_total_min: 30', 'time_total_min: 1.5'],
+    ['unsafe', 'time_total_min: 30', 'time_total_min: 9007199254740992'],
+    ['valid', 'time_total_min: 30', 'time_total_min: 45'],
+  ].map(([id, from, to]) => ({
+    path: 'reseptit/aamupalat/' + id + '.md',
+    content: recipe(id, 'Yksilöllinen kuvaus.', 'Sekoita.').replace(from, to),
+  }));
+  const report = analyze(inputs);
+  assert.equal(report.counts.reviewed, 7);
+  assert.equal(report.signals.missingTime.length, 6);
+  assert.equal(report.signals.invalidTime.length, 4);
+  assert.deepEqual(report.signals.invalidTime.map(x => x.recipeId).sort(),
+    ['decimal', 'negative', 'unsafe', 'zero']);
+  assert.equal(report.byTime['(puuttuu)'], 2);
+  assert.equal(report.byTime['(virheellinen)'], 4);
+  assert.equal(report.byTime['45'], 1);
+  assert.equal(report.signals.invalidTime.find(x => x.recipeId === 'zero').rawValue, '0');
+});
