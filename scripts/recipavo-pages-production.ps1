@@ -53,6 +53,20 @@ function Get-ArtifactSha([string]$HeaderText) {
   Need ($revisionMatches.Count -eq 1) 'Expected exactly one X-Recipavo-Commit in dist/_headers'
   return $revisionMatches[0].Groups[1].Value
 }
+function Verify-Production([string]$ReleaseSha,[string]$ArtifactDist) {
+  # Environment from interactive preview sessions must not leak into production verification.
+  $oldTarget=[Environment]::GetEnvironmentVariable('RECIPAVO_BUILD_TARGET','Process')
+  $oldPreview=[Environment]::GetEnvironmentVariable('RECIPAVO_PREVIEW_ORIGIN','Process')
+  try {
+    [Environment]::SetEnvironmentVariable('RECIPAVO_BUILD_TARGET','production','Process')
+    [Environment]::SetEnvironmentVariable('RECIPAVO_PREVIEW_ORIGIN',$null,'Process')
+    & npm.cmd run verify:production -- $ReleaseSha 'https://www.recipavo.com' $ArtifactDist
+    Need ($LASTEXITCODE -eq 0) 'Post-deploy production verification failed: review Cloudflare deployment and rollback plan.'
+  } finally {
+    [Environment]::SetEnvironmentVariable('RECIPAVO_BUILD_TARGET',$oldTarget,'Process')
+    [Environment]::SetEnvironmentVariable('RECIPAVO_PREVIEW_ORIGIN',$oldPreview,'Process')
+  }
+}
 function Revision([string]$Url) {
   try {
     $r=Invoke-WebRequest -Uri $Url -Method Get -TimeoutSec 20 -MaximumRedirection 0 -UseBasicParsing
@@ -138,8 +152,7 @@ try {
   # Never use --branch main: that is a Preview branch in this Direct Upload project.
   & npx.cmd --yes wrangler@4.165.0 pages deploy $dist --project-name $Project --branch $ExpectedProductionBranch --commit-hash $ExpectedSha
   Need ($LASTEXITCODE -eq 0) 'Wrangler production deployment failed. No success claim.'
-  & npm.cmd run verify:production -- $ExpectedSha 'https://www.recipavo.com' $dist
-  Need ($LASTEXITCODE -eq 0) 'Post-deploy production verification failed: review Cloudflare deployment and rollback plan.'
+  Verify-Production $ExpectedSha $dist
   $after=Revision 'https://www.recipavo.com/'
   Need ($after -eq $ExpectedSha) 'Live revision header did not match approved SHA after deployment.'
   $get=Invoke-WebRequest -Uri 'https://www.recipavo.com/api/feedback' -Method Get -SkipHttpErrorCheck -TimeoutSec 15 -MaximumRedirection 0
