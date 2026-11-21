@@ -4,13 +4,14 @@
   "source_path": "reseptit/alkuruoat/kermainen-pippurikastike.md",
   "source_sha256": "aecb49b778bdea711c2f8f7407c009d56d5f7bfa5aba9bb885f64412984c3d6a",
   "decision": "hold",
-  "reviewed_by": "UNREVIEWED – Chat 3 preliminary source/structure checks only",
-  "reviewed_at": "",
+  "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; kokonaisjulkaisun hyväksyntä puuttuu",
+  "reviewed_at": "2026-11-21",
   "origin": {
     "kind": "adaptation",
     "sources": [
       "https://www.k-ruoka.fi/reseptit/naudan-pihvi-ja-pippurikastike",
-      "https://www.valio.fi/reseptit/konjakki-pippurikastike-pihveille/"
+      "https://www.valio.fi/reseptit/konjakki-pippurikastike-pihveille/",
+      "https://www.meillakotona.fi/reseptit/pippuripihvi"
     ]
   },
   "nutrition_evidence": "",
@@ -20,20 +21,20 @@
       "notes": "Ei samannimistä resep­titunnusta alkuperäisessä mainissä tai tarkistetuissa avoimissa PR:issä; lopullinen päällekkäisyyden tarkistus tehdään julkaisurevisiolle."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Määrät ja mittayksiköt on tallennettu ja nelikielinen rakenne alustavasti tarkistettu; täsmäainesosien ja niiden syötävien määrien lopullinen arvio sekä mahdolliset tuotemerkit odottavat."
+      "status": "pass",
+      "notes": "Maku/Meillä kotona -pippuripihvin julkaistu kastike sisältää salottisipulin, voin, mustapippurin, sinapin, lihaliemen ja kerman neljälle. Recipavon 50 g salottisipulia, 15 g voita, 5 g pippuria, 8 g Dijon-sinappia, 150 ml lientä ja 250 ml kermaa ovat itsenäinen muunnelma. Myös Valion pippurikastike tukee liemi-kerma-sipulipohjaa, mutta käyttää muita tuotteita."
     },
     "method": {
-      "status": "pending",
-      "notes": "Riippumattomia valmistusvertailuja on dokumentoitu, mutta juuri tämän reseptiversion työvaiheiden/saannon lopullinen kokkikelpoisuusarvio on auki. Ei väitettä Recipavon koekeittiötestistä."
+      "status": "pass",
+      "notes": "Julkaistussa Maku-ohjeessa kuullotetaan salottisipuli voissa, lisätään pippuri/sinappi/lihaliemi ja haudutetaan; kerma lisätään lopuksi. Recipavossa kerma tulee mukaan ennen 8–10 minuutin haudutusta. Molemmat perustuvat samaan vähitellen sakeutuvaan kerma-liemikastikkeeseen, eivät identtiseen paistamiseen. Ei väitettä Recipavon koekeittiötestistä."
     },
     "food_safety": {
       "status": "pending",
       "notes": "Maito ja sinappi; kastike ilman konjakkia/juustokermaa on oma sovitus. Pakkausmerkinnät sekä tuotekohtaiset allergeenit ja säilytys tarkistettava ennen julkaisemista."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "Annokset ja ajat on kirjattu reseptiin; arvioitujen aikojen ja valmiin kastikkeen saannon lopullinen tarkistus puuttuu."
+      "status": "pass",
+      "notes": "Neljä annosta / 25 min on perusteltu pilkkomisen, 3 min kuullotuksen, 30 s maustelämmityksen sekä 8–10 min haudutuksen pohjalta. Maku-ohjeen koko pihviaterian 35 min ei todista juuri tämän kastikkeen aikaa; lopullinen viskositeetti riippuu kerman ja liemen tuotteista."
     },
     "nutrition": {
       "status": "pending",

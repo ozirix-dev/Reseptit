@@ -4,8 +4,8 @@
   "source_path": "reseptit/alkuruoat/kylma-piparjuurikastike.md",
   "source_sha256": "d7b7b78ce717d4062ba015a8afa11bb23cccad9dac7089fc3bde6e6dca0c23c7",
   "decision": "hold",
-  "reviewed_by": "UNREVIEWED – Chat 3 preliminary source/structure checks only",
-  "reviewed_at": "",
+  "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; kokonaisjulkaisun hyväksyntä puuttuu",
+  "reviewed_at": "2026-11-21",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -20,20 +20,20 @@
       "notes": "Ei samannimistä resep­titunnusta alkuperäisessä mainissä tai tarkistetuissa avoimissa PR:issä; lopullinen päällekkäisyyden tarkistus tehdään julkaisurevisiolle."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Määrät ja mittayksiköt on tallennettu ja nelikielinen rakenne alustavasti tarkistettu; täsmäainesosien ja niiden syötävien määrien lopullinen arvio sekä mahdolliset tuotemerkit odottavat. Crème fraîchen rasvapitoisuus täsmennetty noin 12 %:iin; tuote- ja lähdevastaavuuden lopullinen tarkistus odottaa."
+      "status": "pass",
+      "notes": "Valion testattu kastike käyttää 180 g 12% crème fraîchea ja piparjuuritahnaa. Toinen Valion kastike käyttää 180 g 12% crème fraîchea ja tuoretta raastettua piparjuurta. Recipavon 200 g crème fraîchea, 20 g tuoretta raastetta, 12 ml sitruunamehua, 5 g sokeria, 2 g suolaa ja 8 g ruohosipulia ovat voimakkaampi, itsenäinen sovitus. Makua säädetään varoen; rasvapitoisuus on rajattu ainesosaan."
     },
     "method": {
-      "status": "pending",
-      "notes": "Riippumattomia valmistusvertailuja on dokumentoitu, mutta juuri tämän reseptiversion työvaiheiden/saannon lopullinen kokkikelpoisuusarvio on auki. Ei väitettä Recipavon koekeittiötestistä."
+      "status": "pass",
+      "notes": "Molemmat Valion vertailut tukevat kylmää crème fraîche-pohjaista sekoitusmenetelmää. Tuore piparjuuri kuoritaan/raastetaan ja ruohosipuli pestään; valmis kastike sekoitetaan ja annetaan maustua 15 min jääkaapissa. Lisämaustuminen on Recipavon oma turvallinen työvaihe, ei väite Valion keittiötestistä tällä suhteella."
     },
     "food_safety": {
       "status": "pending",
       "notes": "Maito; tuoreen piparjuuren voimakkuus vaihtelee, pidä kylmässä. Pakkausmerkinnät sekä tuotekohtaiset allergeenit ja säilytys tarkistettava ennen julkaisemista."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "Annokset ja ajat on kirjattu reseptiin; arvioitujen aikojen ja valmiin kastikkeen saannon lopullinen tarkistus puuttuu."
+      "status": "pass",
+      "notes": "Neljän pienen lisukeannoksen noin 20 min perustuu noin 5 min valmisteluun ja 15 min maustumiseen jääkaapissa. Valion sekoitusreseptin aktiivinen aika on 5 min; ero on erikseen mainittu. Tarkka vahvuus vaihtelee piparjuuren mukaan."
     },
     "nutrition": {
       "status": "pending",
