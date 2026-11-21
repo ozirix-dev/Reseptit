@@ -1,7 +1,7 @@
 # Chat-4 – graavisiian ja muikunmädin nelikielinen turvallisuuskatselmointi
 
-Päiväys: 21.11.2026  
-Työn omistaja: Chat 4  
+Päiväys: 21.11.2026
+Työn omistaja: Chat 4
 PR: https://github.com/ozirix-dev/Reseptit/pull/805
 
 ## Katselmoinnin rajaus
