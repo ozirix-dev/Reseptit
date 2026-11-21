@@ -8,6 +8,11 @@ status: draft
 servings: 8
 time_total_min: 25
 difficulty: medium
+image:
+  src: alkuruoat/muikunmati-rieskarullat.webp
+  alt: "Finnish potato flatbread rolls with creamy filling and orange vendace roe"
+  width: 720
+  height: 720
 source_language: fi
 source_recipe: reseptit/alkuruoat/muikunmati-rieskarullat.md
 translation_of: muikunmati-rieskarullat

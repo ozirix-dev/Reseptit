@@ -46,6 +46,11 @@ ingredients:
   - amount: 120
     unit: "g"
     item: "ranskankermaa"
+image:
+  src: alkuruoat/nokkosletut-puolukoilla.webp
+  alt: "Pieniä nokkoslettuja ranskankermalla ja puolukoilla"
+  width: 720
+  height: 720
 translation_languages:
   - en
   - sv
@@ -73,6 +78,6 @@ Pienet nokkosletut puolukoilla on toimituksellinen suomalainen alkuruokaluonnos.
 - **Lähde- ja valmistusnäyttö:** Mittasuhteet ovat Chat-4:n alustava toimituksellinen ehdotus. Ulkoiset valmistuslähteet, ainesosien olomuoto, saanto ja ajat varmennettava ennen julkaisua.
 - **Ruokaturva:** Luonnonkasvi on tunnistettava oikein ja kerättävä puhtaalta alueelta. Nokkoset keitetään ennen käyttöä; poiminta- ja käsittelyohjeet vaativat lähdetarkistuksen ennen julkaisua.
 - **Ravintoarvot:** Ei laskettu; numeerisia makroja ei julkaista. GK: ei määritetty.
-- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedostoa ei vielä ole Git-haarassa eikä reseptin `image`-metatiedoissa. Kuva on tarkistettava ennen julkaisua. EN/SV/TH ovat luonnoksia. Käännösten merkityskatselmointi puuttuu.
+- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedosto ja image-metatiedot ovat Chat-4:n Draft-haarassa. Kuva on tarkistettava ennen julkaisua. EN/SV/TH ovat luonnoksia. Käännösten merkityskatselmointi puuttuu.
 
 - **Nitraatti ja keruu:** Nokkosen lehtiä ei suositella alle 1-vuotiaille korkean nitraattipitoisuuden vuoksi. Kerää puhtaalta alueelta ja vältä tienvarsia sekä voimakkaasti lannoitettuja paikkoja. Ryöppäys/keittäminen vähentää nitraattia. https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/vierasaineiden-saannin-vahentaminen/nitraatin-saannin-vahentaminen/ .

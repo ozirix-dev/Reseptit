@@ -8,6 +8,11 @@ status: draft
 servings: 8
 time_total_min: 2910
 difficulty: ปานกลาง
+image:
+  src: alkuruoat/lasimestarin-silli.webp
+  alt: "ปลาเฮร์ริงดองแบบฟินแลนด์กับหัวหอมและแครอตในโหลแก้ว"
+  width: 720
+  height: 720
 source_language: fi
 source_recipe: reseptit/alkuruoat/lasimestarin-silli.md
 translation_of: lasimestarin-silli

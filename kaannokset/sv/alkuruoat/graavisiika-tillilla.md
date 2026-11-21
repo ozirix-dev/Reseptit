@@ -8,6 +8,11 @@ status: draft
 servings: 8
 time_total_min: 1470
 difficulty: medel
+image:
+  src: alkuruoat/graavisiika-tillilla.webp
+  alt: "Tunna skivor gravad sik med dill och citron på en tallrik"
+  width: 720
+  height: 720
 source_language: fi
 source_recipe: reseptit/alkuruoat/graavisiika-tillilla.md
 translation_of: graavisiika-tillilla

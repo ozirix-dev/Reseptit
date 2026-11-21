@@ -8,6 +8,11 @@ status: draft
 servings: 8
 time_total_min: 25
 difficulty: ปานกลาง
+image:
+  src: alkuruoat/muikunmati-rieskarullat.webp
+  alt: "โรลขนมปังมันฝรั่งฟินแลนด์ไส้ครีมชีสและไข่ปลาวองเดซสีส้ม"
+  width: 720
+  height: 720
 source_language: fi
 source_recipe: reseptit/alkuruoat/muikunmati-rieskarullat.md
 translation_of: muikunmati-rieskarullat

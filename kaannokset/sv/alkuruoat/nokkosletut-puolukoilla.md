@@ -8,6 +8,11 @@ status: draft
 servings: 6
 time_total_min: 65
 difficulty: medel
+image:
+  src: alkuruoat/nokkosletut-puolukoilla.webp
+  alt: "Små nässelplättar med crème fraîche och lingon"
+  width: 720
+  height: 720
 source_language: fi
 source_recipe: reseptit/alkuruoat/nokkosletut-puolukoilla.md
 translation_of: nokkosletut-puolukoilla

@@ -8,6 +8,11 @@ status: draft
 servings: 8
 time_total_min: 30
 difficulty: ปานกลาง
+image:
+  src: alkuruoat/savupororullat-kantarelleilla.webp
+  alt: "โรลเนื้อกวางเรนเดียร์รมควันสอดไส้เห็ดชานเทอเรลครีม"
+  width: 720
+  height: 720
 source_language: fi
 source_recipe: reseptit/alkuruoat/savupororullat-kantarelleilla.md
 translation_of: savupororullat-kantarelleilla

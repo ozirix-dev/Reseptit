@@ -8,6 +8,11 @@ status: draft
 servings: 6
 time_total_min: 65
 difficulty: medel
+image:
+  src: alkuruoat/uunissa-paistetut-silakkarullat.webp
+  alt: "Ugnsbakade strömmingsrullader i gräddsås"
+  width: 720
+  height: 720
 source_language: fi
 source_recipe: reseptit/alkuruoat/uunissa-paistetut-silakkarullat.md
 translation_of: uunissa-paistetut-silakkarullat

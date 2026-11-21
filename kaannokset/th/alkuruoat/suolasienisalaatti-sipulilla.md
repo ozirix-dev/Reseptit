@@ -8,6 +8,11 @@ status: draft
 servings: 6
 time_total_min: 35
 difficulty: ปานกลาง
+image:
+  src: alkuruoat/suolasienisalaatti-sipulilla.webp
+  alt: "สลัดเห็ดดองเกลือฟินแลนด์ใส่หัวหอมแดงและผักชีลาวในชามแก้ว"
+  width: 720
+  height: 720
 source_language: fi
 source_recipe: reseptit/alkuruoat/suolasienisalaatti-sipulilla.md
 translation_of: suolasienisalaatti-sipulilla

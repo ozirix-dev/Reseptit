@@ -8,6 +8,11 @@ status: draft
 servings: 8
 time_total_min: 25
 difficulty: ปานกลาง
+image:
+  src: alkuruoat/sillikaviaari-ruisnapeilla.webp
+  alt: "สเปรดปลาเฮร์ริงสับเนื้อครีมบนแครกเกอร์ไรย์ชิ้นเล็ก"
+  width: 720
+  height: 720
 source_language: fi
 source_recipe: reseptit/alkuruoat/sillikaviaari-ruisnapeilla.md
 translation_of: sillikaviaari-ruisnapeilla

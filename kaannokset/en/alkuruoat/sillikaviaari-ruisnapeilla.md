@@ -8,6 +8,11 @@ status: draft
 servings: 8
 time_total_min: 25
 difficulty: medium
+image:
+  src: alkuruoat/sillikaviaari-ruisnapeilla.webp
+  alt: "Creamy chopped herring spread on small rye crisps"
+  width: 720
+  height: 720
 source_language: fi
 source_recipe: reseptit/alkuruoat/sillikaviaari-ruisnapeilla.md
 translation_of: sillikaviaari-ruisnapeilla

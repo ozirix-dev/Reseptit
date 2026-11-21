@@ -8,6 +8,11 @@ status: draft
 servings: 8
 time_total_min: 2910
 difficulty: medel
+image:
+  src: alkuruoat/lasimestarin-silli.webp
+  alt: "Glasburk med glasmästarsill, lök och morot"
+  width: 720
+  height: 720
 source_language: fi
 source_recipe: reseptit/alkuruoat/lasimestarin-silli.md
 translation_of: lasimestarin-silli

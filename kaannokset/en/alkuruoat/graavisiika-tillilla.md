@@ -8,6 +8,11 @@ status: draft
 servings: 8
 time_total_min: 1470
 difficulty: medium
+image:
+  src: alkuruoat/graavisiika-tillilla.webp
+  alt: "Thin slices of dill-cured whitefish with lemon on a plate"
+  width: 720
+  height: 720
 source_language: fi
 source_recipe: reseptit/alkuruoat/graavisiika-tillilla.md
 translation_of: graavisiika-tillilla

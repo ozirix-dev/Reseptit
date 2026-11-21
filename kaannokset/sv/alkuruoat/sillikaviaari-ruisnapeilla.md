@@ -8,6 +8,11 @@ status: draft
 servings: 8
 time_total_min: 25
 difficulty: medel
+image:
+  src: alkuruoat/sillikaviaari-ruisnapeilla.webp
+  alt: "Krämig sillröra på små rågknappar"
+  width: 720
+  height: 720
 source_language: fi
 source_recipe: reseptit/alkuruoat/sillikaviaari-ruisnapeilla.md
 translation_of: sillikaviaari-ruisnapeilla

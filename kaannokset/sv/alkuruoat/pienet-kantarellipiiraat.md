@@ -8,6 +8,11 @@ status: draft
 servings: 8
 time_total_min: 75
 difficulty: medel
+image:
+  src: alkuruoat/pienet-kantarellipiiraat.webp
+  alt: "Små gyllenbruna kantarellpajer"
+  width: 720
+  height: 720
 source_language: fi
 source_recipe: reseptit/alkuruoat/pienet-kantarellipiiraat.md
 translation_of: pienet-kantarellipiiraat

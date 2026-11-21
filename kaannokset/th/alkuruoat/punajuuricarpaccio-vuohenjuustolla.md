@@ -8,6 +8,11 @@ status: draft
 servings: 6
 time_total_min: 70
 difficulty: ปานกลาง
+image:
+  src: alkuruoat/punajuuricarpaccio-vuohenjuustolla.webp
+  alt: "คาร์ปาชโชบีตรูตอบกับชีสนมแพะและวอลนัต"
+  width: 720
+  height: 720
 source_language: fi
 source_recipe: reseptit/alkuruoat/punajuuricarpaccio-vuohenjuustolla.md
 translation_of: punajuuricarpaccio-vuohenjuustolla
