@@ -40,6 +40,7 @@ test('reports repeated lead and long instructions without changing source texts'
   const original = inputs.map(x => x.content);
   const r = analyze(inputs, new Set(['hidden']));
   assert.deepEqual(r.counts, { files: 4, published: 3, excludedQuarantine: 1, reviewed: 2, skipped: 1 });
+  assert.deepEqual(r.indexedRecipes.map(x => x.recipeId), ['a', 'b']);
   assert.equal(r.signals.genericLead.length, 2);
   assert.equal(r.signals.duplicateDescription.length, 2);
   assert.equal(r.signals.repeatedLeads.length, 1);
