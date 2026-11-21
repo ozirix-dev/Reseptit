@@ -112,6 +112,8 @@ jobs:
           unset RECIPAVO_PREVIEW_ORIGIN
           npm run build:production
           npm run test:static
+      - name: Fail closed if Pages feedback Function would not be discovered
+        run: node scripts/recipavo-actions-release-gate.mjs functions site
       - name: Stamp and verify immutable production artifact
         env:
           RELEASE_SHA: ${{ inputs.release_sha }}
