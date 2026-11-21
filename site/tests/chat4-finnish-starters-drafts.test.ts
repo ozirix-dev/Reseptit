@@ -39,6 +39,12 @@ function loadRecipe(id: string, locale: keyof typeof languageSections) {
   return { data: recipeFrontmatterSchema.parse(recipe.data), raw, stepCount };
 }
 
+function comparableUnit(unit: string): string {
+  if (["tl", "tsp", "tsk", "ช้อนชา"].includes(unit)) return "tsp";
+  if (["kpl", "pcs", "st", "ชิ้น", "ฟอง", "ลูก"].includes(unit)) return "each";
+  return unit;
+}
+
 const pendingFiIds = new Set(["graavisiika-tillilla", "muikunmati-rieskarullat"]);
 
 test("Chat-4 starters keep eight published FI and two held FI drafts with thirty translation drafts", () => {
@@ -59,10 +65,32 @@ test("Chat-4 starters keep eight published FI and two held FI drafts with thirty
       assert.equal(tr.data.source_recipe, `reseptit/alkuruoat/${id}.md`);
       assert.equal(tr.data.servings, fi.data.servings);
       assert.equal(tr.data.time_total_min, fi.data.time_total_min);
-      assert.deepEqual(tr.data.ingredients.map(i => [i.amount, i.unit]), fi.data.ingredients.map(i => [i.amount, i.unit]));
+      assert.deepEqual(
+        tr.data.ingredients.map(i => [i.amount, comparableUnit(i.unit)]),
+        fi.data.ingredients.map(i => [i.amount, comparableUnit(i.unit)]),
+      );
       assert.equal(tr.stepCount, fi.stepCount);
     }
     assert.ok(!fi.raw.includes("Käännösten merkityskatselmointi puuttuu. Käännösten"), id);
+  }
+});
+
+test("eight published FI starter translations use target-locale units but remain draft", () => {
+  for (const id of recipeIds) {
+    if (pendingFiIds.has(id)) continue;
+    for (const locale of ["en", "sv", "th"] as const) {
+      const tr = loadRecipe(id, locale);
+      assert.equal(tr.data.status, "draft");
+      assert.ok(tr.data.ingredients.every(i => i.unit !== "tl" && i.unit !== "kpl"),
+        `${id}/${locale}: no Finnish teaspoon or piece abbreviations`);
+      for (const item of tr.data.ingredients) {
+        if (item.unit === "g" || item.unit === "ml") continue;
+        assert.ok(locale === "en" ? ["tsp", "pcs"].includes(item.unit)
+          : locale === "sv" ? ["tsk", "st"].includes(item.unit)
+          : ["ช้อนชา", "ชิ้น"].includes(item.unit),
+        `${id}/${locale}: unexpected unit ${item.unit}`);
+      }
+    }
   }
 });
 
