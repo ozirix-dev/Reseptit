@@ -493,9 +493,19 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
   },
   "paprikainen-vhh-gulassi/fi": {
     "method": [
-      ["Lisää 0,5 g mustapippuria ja 10 g persiljaa. Tarjoa koko pata kastikkeineen ja rasvoineen 150 g noin 40-prosenttista smetanaa kanssa neljänä annoksena. Erilliset lisukkeet eivät kuulu annokseen.", "Lisää 0,5 g mustapippuria ja 10 g persiljaa. Jaa koko pata kastikkeineen ja rasvoineen neljään annokseen. Tarjoa niiden kanssa yhteensä 150 g noin 40-prosenttista smetanaa. Erilliset lisukkeet eivät kuulu annoksiin."]
+      [
+        "Hauduta kannen alla 1,5 tuntia, kunnes liha on mureaa.",
+        "Hauduta liedellä kannellisessa padassa miedolla lämmöllä 1,5 tuntia, kunnes liha on mureaa."
+      ],
+      [
+        "Lisää 0,5 g mustapippuria ja 10 g persiljaa. Tarjoa koko pata kastikkeineen ja rasvoineen 150 g noin 40-prosenttista smetanaa kanssa neljänä annoksena. Erilliset lisukkeet eivät kuulu annokseen.",
+        "Lisää 0,5 g mustapippuria ja 10 g persiljaa. Jaa koko pata kastikkeineen ja rasvoineen neljään annokseen. Tarjoa niiden kanssa yhteensä 150 g noin 40-prosenttista smetanaa. Erilliset lisukkeet eivät kuulu annoksiin."
+      ]
     ]
   },
+  "paprikainen-vhh-gulassi/en": {"method":[["Simmer covered for 1.5 hours until the beef is tender.","Simmer on the stovetop in a covered pot over low heat for 1.5 hours until the beef is tender."]]},
+  "paprikainen-vhh-gulassi/sv": {"method":[["Sjud under lock i 1,5 timmar tills köttet är mört.","Låt sjuda på spisen under lock och på svag värme i 1,5 timmar tills köttet är mört."]]},
+  "paprikainen-vhh-gulassi/th": {"method":[["ปิดฝาเคี่ยว 1.5 ชั่วโมงจนเนื้อนุ่ม","ปิดฝาเคี่ยวในหม้อบนเตาด้วยไฟอ่อน 1.5 ชั่วโมงจนเนื้อนุ่ม"]]},
   "parmesaani-lyttyperunat/en": {
     "method": [
       ["Preheat the oven to 200 °C with constant heat.", "Preheat the oven to 200 °C using top and bottom heat."]
