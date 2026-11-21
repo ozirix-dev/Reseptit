@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 200
     unit: "g"
-    item: "crème fraîche"
+    item: "crème fraîche, about 12% fat"
   - amount: 20
     unit: "g"
     item: "finely grated fresh horseradish"

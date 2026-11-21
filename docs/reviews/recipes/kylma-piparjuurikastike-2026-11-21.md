@@ -23,3 +23,7 @@ Recipavon itsenäistä versiota ei väitetä valmistetuksi vertailukeittiössä.
 Sisältää **maitoa** (crème fraîche). Käytä ainoastaan ruokakäyttöön tarkoitettua, puhdistettua piparjuurta; pidä valmis kastike kylmässä.
 
 Perustana Ruokaviraston allergeeniluettelo: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit . Etiketit vielä tarkistettava valmistukseen valituista tuotteista; ei gluteeniton-hyväksyntää. FI/EN/SV/TH päivitetty.
+
+## Crème fraîchen koostumuksen yksilöinti – Chat 3, 21.11.2026
+
+Valion viitereseptissä on Valio Arki crème fraîche, rasvaa 12 %. Recipavon aiempi 'ranskankermaa tai crème fraîchea' ei yksilöinyt rasvapitoisuutta ravintolaskentaa varten; nyt nelikielisen ainesosarivin tavoitteena on noin 12 %:n crème fraîche. Tämä ei silti nimeä yhtä pakollista tuotemerkkiä tai todenna muiden koostumusarvoja. Ainesosatarkistus ja ravintoevidenssi avoinna. Lähde https://www.valio.fi/reseptit/piparjuurikastike/ .

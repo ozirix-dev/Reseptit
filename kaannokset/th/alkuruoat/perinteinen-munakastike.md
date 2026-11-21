@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 400
     unit: "ml"
-    item: "นมสด"
+    item: "นมสดชนิดเต็มมันเนย"
   - amount: 30
     unit: "g"
     item: "เนย"

@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 200
     unit: "g"
-    item: "ครีมเฟรช"
+    item: "ครีมเฟรชไขมันประมาณ 12%"
   - amount: 20
     unit: "g"
     item: "ฮอร์สแรดิชสดขูดละเอียด"

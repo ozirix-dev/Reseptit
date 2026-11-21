@@ -31,7 +31,7 @@ image:
 ingredients:
   - amount: 200
     unit: "g"
-    item: "ranskankermaa tai crème fraîchea"
+    item: "crème fraîchea, rasvaa noin 12 %"
   - amount: 20
     unit: "g"
     item: "tuoretta piparjuurta hienoksi raastettuna"
