@@ -44,7 +44,7 @@ ingredients:
     unit: "g"
     item: "ครีมเฟรช"
   - amount: 2
-    unit: "ชิ้น"
+    unit: "ฟอง"
     item: "ไข่ไก่"
   - amount: 80
     unit: "g"

@@ -21,7 +21,7 @@ ingredients:
     unit: "g"
     item: "เนื้อปลาเฮร์ริงพร้อมรับประทาน"
   - amount: 2
-    unit: "ชิ้น"
+    unit: "ฟอง"
     item: "ไข่ไก่"
   - amount: 60
     unit: "g"

@@ -39,10 +39,10 @@ ingredients:
     unit: "g"
     item: "น้ำตาล"
   - amount: 8
-    unit: "ชิ้น"
+    unit: "เม็ด"
     item: "เม็ดออลสไปซ์"
   - amount: 2
-    unit: "ชิ้น"
+    unit: "ใบ"
     item: "ใบกระวาน"
 ---
 

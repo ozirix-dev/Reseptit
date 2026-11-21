@@ -27,7 +27,7 @@ ingredients:
     unit: "ml"
     item: "นม"
   - amount: 2
-    unit: "ชิ้น"
+    unit: "ฟอง"
     item: "ไข่ไก่"
   - amount: 30
     unit: "g"

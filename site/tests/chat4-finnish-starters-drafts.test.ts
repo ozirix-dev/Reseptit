@@ -87,9 +87,26 @@ test("eight published FI starter translations use target-locale units but remain
         if (item.unit === "g" || item.unit === "ml") continue;
         assert.ok(locale === "en" ? ["tsp", "pcs"].includes(item.unit)
           : locale === "sv" ? ["tsk", "st"].includes(item.unit)
-          : ["ช้อนชา", "ชิ้น"].includes(item.unit),
+          : ["ช้อนชา", "ชิ้น", "ฟอง", "เม็ด", "ใบ"].includes(item.unit),
         `${id}/${locale}: unexpected unit ${item.unit}`);
       }
+    }
+  }
+});
+
+test("Thai count classifiers match the actual food item instead of generic pieces", () => {
+  const expected = [
+    ["lasimestarin-silli", [["เม็ดออลสไปซ์", "เม็ด"], ["ใบกระวาน", "ใบ"]]],
+    ["pienet-kantarellipiiraat", [["ไข่ไก่", "ฟอง"]]],
+    ["sillikaviaari-ruisnapeilla", [["ไข่ไก่", "ฟอง"]]],
+    ["nokkosletut-puolukoilla", [["ไข่ไก่", "ฟอง"]]],
+  ] as const;
+  for (const [id, rows] of expected) {
+    const tr = loadRecipe(id, "th");
+    for (const [item, unit] of rows) {
+      const ingredient = tr.data.ingredients.find(i => i.item === item);
+      assert.ok(ingredient, `${id}: ingredient ${item}`);
+      assert.equal(ingredient.unit, unit, `${id}: correct Thai classifier for ${item}`);
     }
   }
 });
