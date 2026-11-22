@@ -22,6 +22,7 @@ import { assertSnackPublicationReady } from "../src/content/recipe-validation";
 import { parseMarkdown, renderInstructionSteps, renderSafeMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { assertKarnivoreDraftSafe, assertKarnivoreTranslationReady } from "./karnivore-draft-gate";
+import { changedContentImageRoot } from "./changed-content-image-root";
 import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
@@ -118,7 +119,7 @@ for (const relativePath of recipePaths) {
   }
   if (data.image) {
     const sources = [data.image.src, ...(data.image.srcset ?? []).map((item) => item.src)];
-    const imageRoot = path.resolve(process.env.PROJECT_IMAGE_ROOT || path.join(repoRoot, "kuvat"));
+    const imageRoot = changedContentImageRoot(data.status, repoRoot, process.env.PROJECT_IMAGE_ROOT);
     for (const source of sources) {
       const target = path.resolve(imageRoot, source);
       const relative = path.relative(imageRoot, target);
