@@ -53,7 +53,7 @@ Draft English adaptation for editorial review, not a tested Recipavo recipe.
 
 ## Safety notes
 
-Use fully cooked ready-to-eat smoked reindeer. Identify and cook all mushrooms properly; keep the finished rolls cold.
+Use fully cooked ready-to-eat smoked reindeer. Identify and cook all mushrooms properly; keep the finished rolls cold. Check the product packaging for allergens.
 
 ## Editorial notes
 

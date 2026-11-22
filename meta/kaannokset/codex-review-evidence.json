@@ -5482,11 +5482,23 @@
   },
   "gazpacho:th": {
     "source_hash": "93a75fbf882225b1aa91c496fa65308c85a58f30234c27d16907eb7a765575a2",
-    "translation_hash": "e2aa962d7af3c379699f4554eda5bf946feca40b0d53b2ecf6d693e3205184a8",
-    "reviewed_at": "2026-11-12",
-    "reference": "docs/reviews/2026-11-12-vanhojen-reseptien-kielikatselmointi-era-4.md. FI Git blob 61b92f37817a09c4d04bdaba1acc378c1918f0a3. Tuore punainen paprika ja valinnainen leipä; kylmäsäilytyksen tunti ja 80 minuutin kokonaisaika.",
+    "translation_hash": "fc06ef9e4e9f022495c257cabe259d40f0579bad9b674141847d352cadb5f175",
+    "reviewed_at": "2026-11-22",
+    "reference": "PR #895 review evidence #7082175515 (user-delivered Kokki-Codex FI→TH semantic comparison RESEPTIT-PR-PURKU-221126 / CHAT-4 01); independent Chat-6 full-pair review #7080823786 and continuity #7080968690; FI Git blob 61b92f37817a09c4d04bdaba1acc378c1918f0a3; TH Git blob d7ee3febd451002866bcee269e0c676c46ed5a48. Initial 2026-11-12 review superseded.",
+    "correction_pr": 895,
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "FI one garlic clove: TH unit was generic ชิ้น, corrected to กลีบ; original FI/TH quantities and all instructions retained."
+      },
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Thai cucumber and bell-pepper ชิ้น is structurally a piece; ลูก/ผล would express a whole vegetable more clearly (editorial terminology note, non-blocking)."
+      }
+    ]
   },
   "broileri-kukkakaaligratiini:en": {
     "source_hash": "163a1e28c29b3ee6a417add335e12f555361acb0d1e3963c5ae3343336375442",

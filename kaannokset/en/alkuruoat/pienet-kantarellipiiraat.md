@@ -68,7 +68,7 @@ Draft English adaptation for editorial review, not a tested Recipavo recipe.
 
 ## Safety notes
 
-Use positively identified edible chanterelles. Cook the egg filling until set and refrigerate leftovers.
+Use only positively identified edible chanterelles. Cook the egg filling until set. Keep the pies containing eggs and dairy products refrigerated, including any leftovers.
 
 ## Editorial notes
 
