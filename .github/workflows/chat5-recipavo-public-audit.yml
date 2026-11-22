@@ -1,0 +1,43 @@
+name: Chat 5 Recipavo public audit (advisory)
+
+on:
+  pull_request:
+    paths:
+      - "site/scripts/recipavo-live-public-audit.mjs"
+      - "site/scripts/recipavo-live-public-audit.test.mjs"
+      - ".github/workflows/chat5-recipavo-public-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-live-observation:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: 22
+      - name: Verify HTTP/SEO observation parser with synthetic network responses
+        run: node --test site/scripts/recipavo-live-public-audit.test.mjs
+      - name: Read public Recipavo URLs without deployment or editing
+        run: node site/scripts/recipavo-live-public-audit.mjs
+      - name: Display advisory report
+        if: always()
+        run: |
+          if test -f tmp/recipavo-live-audit/current.md; then
+            cat tmp/recipavo-live-audit/current.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Live audit did not generate evidence: HOLD" >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Upload observed public HTTPS results (read-only)
+        if: always()
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: chat5-recipavo-public-live-audit
+          path: |
+            tmp/recipavo-live-audit/current.json
+            tmp/recipavo-live-audit/current.md
+          if-no-files-found: ignore
+          retention-days: 14

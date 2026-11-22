@@ -14,6 +14,7 @@ import {
   type SemanticEvidence,
 } from "./translation-semantic-review";
 import type { TranslationAuditResult } from "./translation-audit";
+import { fiSourceQualityDecision, fiSourceQualitySchema, type FiSourceQualityEvidence } from "./translation-fi-source-quality";
 
 type Recipe = TranslationAuditResult["publishedSources"][number];
 export type Locale = "en" | "sv" | "th";
@@ -81,12 +82,15 @@ function structuralErrors(source: Recipe, target: Recipe, locale: Locale): strin
 }
 
 /** A candidate is only eligible for downstream release gates, not approved for deployment. */
-export function evaluateBatchEntry(entry: BatchEntry, evidence: SemanticEvidence): BatchDecision {
+export function evaluateBatchEntry(entry: BatchEntry, evidence: SemanticEvidence, fiQuality: FiSourceQualityEvidence = {}): BatchDecision {
   const reasons: string[] = [];
   if (entry.reviewState === "source-hold") return { recipe_id: entry.id, group: "source-hold",
     reasons: ["FI source HOLD; must be corrected and independently re-reviewed"], pairs: 0 };
   if (!entry.source || entry.source.data.status !== "published")
     return { recipe_id: entry.id, group: "source-hold", reasons: ["missing or unpublished FI source"], pairs: 0 };
+  const sourceDecision = fiSourceQualityDecision(entry.source, fiQuality[entry.id]);
+  if (!sourceDecision.accepted) return { recipe_id: entry.id, group: "source-hold",
+    reasons: [sourceDecision.reason], pairs: 0 };
   if (entry.reviewState !== "ai-compared-draft")
     reasons.push("AI source-to-target comparison not documented");
   const fiHash = semanticHash(entry.source);
@@ -122,12 +126,13 @@ async function readRecipe(root: string, rel: string): Promise<Recipe | null> {
   }
 }
 
-export async function partitionFromLedger(root: string, raw: unknown, evidenceRaw: unknown) {
+export async function partitionFromLedger(root: string, raw: unknown, evidenceRaw: unknown, fiQualityRaw: unknown = {}) {
   const ledger = raw as { recipes?: Record<string, { fi?: string; en?: string; sv?: string; th?: string;
     review_state?: string; publish_authorized?: boolean }> };
   if (!ledger || typeof ledger !== "object" || !ledger.recipes
     || typeof ledger.recipes !== "object" || Array.isArray(ledger.recipes)) throw Error("Invalid batch ledger");
   const evidence = semanticEvidenceSchema.parse(evidenceRaw);
+  const fiQuality = fiSourceQualitySchema.parse(fiQualityRaw);
   const decisions: BatchDecision[] = [];
   for (const [id, record] of Object.entries(ledger.recipes).sort(([a],[b]) => a.localeCompare(b))) {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id) || !record || typeof record !== "object") throw Error("Malformed recipe entry: " + id);
@@ -163,7 +168,7 @@ export async function partitionFromLedger(root: string, raw: unknown, evidenceRa
     }
     decisions.push(evaluateBatchEntry({ id, category, source, targets,
       reviewState: record.review_state ?? "unreviewed",
-      hashes: {fi: record.fi, en: record.en, sv: record.sv, th: record.th} }, evidence));
+      hashes: {fi: record.fi, en: record.en, sv: record.sv, th: record.th} }, evidence, fiQuality));
   }
   return {
     version: 1, semantics: "candidate is an input to, not a substitute for, release CI/GK/route gates",
@@ -179,14 +184,16 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const root = path.resolve(requested("--root") ?? path.join(path.dirname(fileURLToPath(import.meta.url)), "../.."));
   const ledgerFile = requested("--ledger");
   if (!ledgerFile) {
-    console.error("Usage: tsx scripts/translation-batch-partition.ts --ledger=path-to-ledger.json [--evidence=path] [--out=path]");
+    console.error("Usage: tsx scripts/translation-batch-partition.ts --ledger=path-to-ledger.json [--evidence=path] [--fi-quality=path] [--out=path]");
     process.exitCode = 2;
   } else {
     try {
       const input = JSON.parse(await readFile(path.resolve(root, ledgerFile), "utf8"));
       const proofs = JSON.parse(await readFile(path.resolve(root, requested("--evidence") ??
         "meta/kaannokset/codex-review-evidence.json"), "utf8"));
-      const result = await partitionFromLedger(root, input, proofs);
+      const fiQualityFile = requested("--fi-quality");
+      const fiQuality = fiQualityFile ? JSON.parse(await readFile(path.resolve(root, fiQualityFile), "utf8")) : {};
+      const result = await partitionFromLedger(root, input, proofs, fiQuality);
       const output = JSON.stringify(result, null, 2) + "\n";
       const destination = requested("--out");
       if (destination) await writeFile(path.resolve(root, destination), output, "utf8");

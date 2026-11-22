@@ -1,0 +1,132 @@
+name: Recipavo release guard (offline)
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/recipavo-release-guard.yml"
+      - "scripts/recipavo-pages-production.ps1"
+      - "scripts/recipavo-actions-release-gate.mjs"
+      - "scripts/recipavo-actions-release-gate.test.mjs"
+      - "scripts/recipavo-release-workflow-contract.test.mjs"
+      - ".github/workflows/recipavo-production-manual.yml"
+      - "docs/product/recipavo-actions-manual-release-2026-11-21.md"
+      - "docs/product/recipavo-pages-release-guard-2026-11-21.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify all manual release security gates offline (no Cloudflare credentials)
+        run: node --test scripts/recipavo-actions-release-gate.test.mjs
+      - name: Test manual release workflow stage and privilege invariants
+        run: node --test scripts/recipavo-release-workflow-contract.test.mjs
+      - name: Parse release script using PowerShell 7
+        shell: pwsh
+        run: |
+          $script = 'scripts/recipavo-pages-production.ps1'
+          $tokens = $null
+          $errors = $null
+          $ast = [System.Management.Automation.Language.Parser]::ParseFile((Resolve-Path $script), [ref]$tokens, [ref]$errors)
+          if ($errors.Count -gt 0) {
+            foreach ($e in $errors) { Write-Error $e.Message }
+            exit 1
+          }
+          if (-not $ast) { throw 'PowerShell AST missing' }
+          Write-Host 'PASS: release guard parses'
+      - name: Test SHA parser after regex match (offline, no cloud commands)
+        shell: pwsh
+        run: |
+          $tokens = $null
+          $errors = $null
+          $ast = [System.Management.Automation.Language.Parser]::ParseFile((Resolve-Path 'scripts/recipavo-pages-production.ps1'), [ref]$tokens, [ref]$errors)
+          if ($errors.Count -gt 0) { throw 'PowerShell script failed to parse' }
+          foreach ($name in @('Need', 'Get-ArtifactSha')) {
+            $nodes = @($ast.FindAll({param($node)
+              $node -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $node.Name -eq $name
+            }, $true))
+            if ($nodes.Count -ne 1) { throw "Missing/duplicate pure helper: $name" }
+            . ([scriptblock]::Create($nodes[0].Extent.Text))
+          }
+          $sha = 'a' * 40
+          $valid = "/*`n  X-Recipavo-Commit: $sha`n"
+          $null = 'https://github.com' -match 'github'
+          if ((Get-ArtifactSha $valid) -cne $sha) { throw 'Correct stamp was not parsed' }
+          $badStamp = 'b' * 39
+          foreach ($invalid in @(
+            "/*`n",
+            "/*`n  X-Recipavo-Commit: $sha`n  X-Recipavo-Commit: $sha`n",
+            "/*`n  X-Recipavo-Commit: $badStamp`n"
+          )) {
+            $rejected = $false
+            try { $null = Get-ArtifactSha $invalid } catch { $rejected = $true }
+            if (-not $rejected) { throw 'Invalid SHA stamp was accepted' }
+          }
+          Write-Host 'PASS: artifact SHA parsing and negative cases'
+      - name: Test post-deploy verifier strips preview env and restores it
+        shell: pwsh
+        run: |
+          $tokens = $null
+          $errors = $null
+          $ast = [System.Management.Automation.Language.Parser]::ParseFile(
+            (Resolve-Path 'scripts/recipavo-pages-production.ps1'), [ref]$tokens, [ref]$errors)
+          if ($errors.Count -gt 0) { throw 'PowerShell parse failed' }
+          foreach ($name in @('Need', 'Verify-Production')) {
+            $nodes = @($ast.FindAll({ param($node)
+              $node -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $node.Name -eq $name
+            }, $true))
+            if ($nodes.Count -ne 1) { throw "Expected exactly one $name function" }
+            . ([scriptblock]::Create($nodes[0].Extent.Text))
+          }
+          $script:wasCalled = $false
+          function npm.cmd {
+            if ($env:RECIPAVO_BUILD_TARGET -ne 'production' -or
+                (Test-Path Env:RECIPAVO_PREVIEW_ORIGIN)) {
+              throw 'Production verify inherited preview settings'
+            }
+            $script:wasCalled = $true
+            $global:LASTEXITCODE = 0
+          }
+          $previousTarget = $env:RECIPAVO_BUILD_TARGET
+          $previousPreview = $env:RECIPAVO_PREVIEW_ORIGIN
+          try {
+            $env:RECIPAVO_BUILD_TARGET = 'other'
+            $env:RECIPAVO_PREVIEW_ORIGIN = 'https://test.recipavo-site.pages.dev'
+            Verify-Production ('a' * 40) '/tmp/unused'
+            if (-not $script:wasCalled) { throw 'Mock verifier was not called' }
+            if ($env:RECIPAVO_BUILD_TARGET -ne 'other' -or
+                $env:RECIPAVO_PREVIEW_ORIGIN -ne 'https://test.recipavo-site.pages.dev') {
+              throw 'Original environment was not restored after verification'
+            }
+          } finally {
+            if ($null -eq $previousTarget) { Remove-Item Env:RECIPAVO_BUILD_TARGET -ErrorAction SilentlyContinue }
+            else { $env:RECIPAVO_BUILD_TARGET = $previousTarget }
+            if ($null -eq $previousPreview) { Remove-Item Env:RECIPAVO_PREVIEW_ORIGIN -ErrorAction SilentlyContinue }
+            else { $env:RECIPAVO_PREVIEW_ORIGIN = $previousPreview }
+          }
+          Write-Host 'PASS: post-deploy verification isolates and restores environment'
+      - name: Assert explicit release gates; never execute deployment
+        shell: pwsh
+        run: |
+          $content = Get-Content -LiteralPath 'scripts/recipavo-pages-production.ps1' -Raw
+          $required = @(
+            'ExpectedSha', 'ExpectedProductionBranch', 'ShouldProcess',
+            'pages deploy', '--branch', '--commit-hash',
+            'verify:production', 'X-Recipavo-Commit',
+            'pages', 'project', 'deployment', 'refs/heads/main',
+            'site', 'functions', 'feedback'
+          )
+          foreach ($item in $required) {
+            if (-not $content.Contains($item)) { throw "Missing guard marker: $item" }
+          }
+          if ($content -match 'Invoke-Expression|iex\s+|Set-ExecutionPolicy|secret put|pages project delete') {
+            throw 'Unexpected unsafe command in release guard'
+          }
+          Write-Host 'PASS: gated release markers present; zero cloud commands executed'

@@ -58,7 +58,7 @@ export function analyze(sources, quarantine = new Set()) {
   const byCategory = {};
   const byTime = {};
   const byDifficulty = {};
-  const genericLead = [], duplicateDescription = [], missingPreparation = [], missingTime = [], noExplicitUrl = [];
+  const genericLead = [], duplicateDescription = [], missingPreparation = [], missingTime = [], invalidTime = [], duplicateTimeKeys = [], noExplicitUrl = [];
   const leadMap = new Map(), stepMap = new Map(), idMap = new Map();
   const indexedRecipes = [];
   const sorted = [...sources].sort((a, b) => a.path.localeCompare(b.path, 'fi'));
@@ -73,15 +73,23 @@ export function analyze(sources, quarantine = new Set()) {
     if (quarantine.has(recipeId)) { counts.excludedQuarantine++; continue; }
     counts.reviewed++;
     const category = source.path.split('/')[1];
-    const timeRaw = value(parsed.yaml, 'time_total_min');
-    const time = /^\d+$/.test(timeRaw) ? Number(timeRaw) : null;
+    const timeLines = parsed.yaml.split(/\r?\n/).filter(line => line.startsWith('time_total_min:'));
+    const duplicateTime = timeLines.length > 1;
+    const timeRaw = duplicateTime
+      ? timeLines.map(line => line.slice('time_total_min:'.length).trim()).join(' | ')
+      : value(parsed.yaml, 'time_total_min');
+    const parsedTime = /^\d+$/.test(timeRaw) ? Number(timeRaw) : null;
+    const validTime = !duplicateTime && parsedTime !== null && Number.isSafeInteger(parsedTime) && parsedTime > 0;
+    const missingTimeValue = !duplicateTime && (timeRaw === '' || timeRaw.toLowerCase() === 'null');
+    const time = validTime ? parsedTime : null;
     const difficulty = value(parsed.yaml, 'difficulty') || '(puuttuu)';
     const title = value(parsed.yaml, 'title');
     const evidence = { recipeId, title, path: source.path, sourceSha256: sha(source.content) };
     indexedRecipes.push(evidence);
     add(idMap, recipeId, evidence);
     byCategory[category] = (byCategory[category] || 0) + 1;
-    byTime[time === null ? '(puuttuu)' : String(time)] = (byTime[time === null ? '(puuttuu)' : String(time)] || 0) + 1;
+    const timeBucket = validTime ? String(time) : missingTimeValue ? '(puuttuu)' : '(virheellinen)';
+    byTime[timeBucket] = (byTime[timeBucket] || 0) + 1;
     byDifficulty[difficulty] = (byDifficulty[difficulty] || 0) + 1;
 
     const heading = /^#\s+.+$/m.exec(parsed.body);
@@ -106,12 +114,14 @@ export function analyze(sources, quarantine = new Set()) {
       if (phrase.length >= 65) add(stepMap, phrase, evidence);
     }
     if (time === null) missingTime.push(evidence);
+    if (!validTime && !missingTimeValue) invalidTime.push({ ...evidence, rawValue: timeRaw });
+    if (duplicateTime) duplicateTimeKeys.push({ ...evidence, rawValue: timeRaw });
     if (!/https?:\/\//i.test(source.content) && !/^source(?:_url)?:\s*\S+/mi.test(parsed.yaml)) noExplicitUrl.push(evidence);
   }
   return {
     notice: 'Read-only heuristics on non-quarantined FI sources marked published; not verified live routes, factual errors, cooking tests or release approval.',
     indexedRecipes, counts, byCategory, byTime, byDifficulty,
-    signals: { genericLead, duplicateDescription, missingPreparation, missingTime, noExplicitUrl,
+    signals: { genericLead, duplicateDescription, missingPreparation, missingTime, invalidTime, duplicateTimeKeys, noExplicitUrl,
       repeatedLeads: ranked(leadMap), repeatedSteps: ranked(stepMap), duplicateRecipeIds: ranked(idMap) },
   };
 }
@@ -137,9 +147,17 @@ function markdown(report) {
     ['Sama ingressi useassa eri reseptissä (ryhmiä)', report.signals.repeatedLeads.length],
     ['Pitkä sama valmistusvaihe eri resepteissä (ryhmiä)', report.signals.repeatedSteps.length],
     ['Numeroitu Valmistus puuttuu tai ei tunnistu', report.signals.missingPreparation.length],
-    ['Kokonaisaika puuttuu', report.signals.missingTime.length],
+    ['Kokonaisaika puuttuu tai on virheellinen', report.signals.missingTime.length],
+    ['Kokonaisajan arvo on virheellinen', report.signals.invalidTime.length],
+    ['Kokonaisaika määritelty useammin kuin kerran', report.signals.duplicateTimeKeys.length],
     ['Lähdetiedostossa ei suoraa URL-viitettä (ei ole virhetuomio)', report.signals.noExplicitUrl.length],
   ]) out.push(`- ${label}: **${value}**`);
+  out.push('', '## Virheelliset kokonaisaikamerkinnät', '');
+  if (!report.signals.invalidTime.length) out.push('Ei osumia.');
+  for (const item of report.signals.invalidTime) {
+    out.push('- ' + item.recipeId + ' — ' + item.path +
+      ' (SHA256 ' + item.sourceSha256 + '), raakaarvo ' + JSON.stringify(item.rawValue));
+  }
   out.push('', '## Tarkistettavat toistot', '');
   for (const [name, list] of [['Ingressit', report.signals.repeatedLeads], ['Valmistusvaiheet', report.signals.repeatedSteps]]) {
     out.push(`### ${name}`, '');
