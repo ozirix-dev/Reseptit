@@ -15,8 +15,8 @@
   "nutrition_evidence": "",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Ei samannimistä resep­titunnusta alkuperäisessä mainissä tai tarkistetuissa avoimissa PR:issä; lopullinen päällekkäisyyden tarkistus tehdään julkaisurevisiolle."
+      "status": "pass",
+      "notes": "Chat 3, 22.11.2026: nykyisen mainin 489 FI-reseptin täsmäpolut ja 27 avoimen PR:n otsikot tarkistettiin; vastaavaa erillistä reseptiä ei löytynyt. Lähivertailu: Porsaanfilee-sienikastike ja pienet kantarellipiiraat ovat valmiita muita ruokalajeja; #808:ssa kastike on itsenäinen 350 g kantarellista valmistettava lisuke. Tarkka raportti: docs/reviews/new-recipes/chat3-kastikkeet-duplikaatit-2026-11-22.md. Tulos koskee tarkistettua nykytilaa; julkaisun URL-uniikkius tarkistettava uudelleen Ready-portissa."
     },
     "ingredients": {
       "status": "pass",
