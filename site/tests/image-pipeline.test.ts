@@ -19,6 +19,9 @@ const npmCli = process.env.npm_execpath;
 
 function run(cwd: string, script: string, sourceRoot?: string) {
   const env = { ...process.env };
+  // Production sources may be restored; fixture builds keep their own roots.
+  delete env.PROJECT_IMAGE_ROOT;
+  if (!sourceRoot && process.env.VERIFIED_IMAGE_ROOT) env.PROJECT_IMAGE_ROOT = process.env.VERIFIED_IMAGE_ROOT;
   if (sourceRoot) env.RECIPE_SOURCE_ROOT = sourceRoot;
   else delete env.RECIPE_SOURCE_ROOT;
   const result = spawnSync(npmCli ? process.execPath : process.platform === "win32" ? "npm.cmd" : "npm", npmCli ? [npmCli, "run", script] : ["run", script], {
@@ -34,6 +37,9 @@ function runBuild(cwd: string, sourceRoot?: string) {
 }
 
 const repoDir = path.resolve(siteDir, "..");
+const publishedSourceRoot = process.env.VERIFIED_IMAGE_ROOT
+  ? path.resolve(process.env.VERIFIED_IMAGE_ROOT)
+  : path.join(repoDir, "kuvat");
 
 async function copyBuildCheckout(root: string) {
   const checkout = path.join(root, "checkout");
@@ -143,7 +149,8 @@ test("visually reviewed V1.4 replacements match the correction manifest", async 
   assert.equal(manifest.images.length, 15);
   assert.equal(new Set(manifest.images.map((entry: {path: string}) => entry.path)).size, 15);
   for (const entry of manifest.images) {
-    const bytes = await readFile(path.join(repoDir, entry.path));
+    assert.ok(entry.path.startsWith("kuvat/"));
+    const bytes = await readFile(path.join(publishedSourceRoot, entry.path.slice("kuvat/".length)));
     assert.equal(createHash("sha256").update(bytes).digest("hex"), entry.sha256, entry.path);
     assert.notEqual(entry.sha256, entry.old_sha256, entry.path);
     assert.equal(bytes.toString("ascii", 8, 12), "WEBP", entry.path);
@@ -222,7 +229,7 @@ test("all published source bytes and responsive dimensions match the generated m
   const homeAvifSources: string[] = [];
   const heroAvifSources: string[] = [];
   for (const image of manifest.images) {
-    const source = await readFile(path.join(repoDir, "kuvat", image.path));
+    const source = await readFile(path.join(publishedSourceRoot, image.path));
     assert.equal(createHash("sha256").update(source).digest("hex"), image.sha256);
     assert.deepEqual(await readFile(path.join(productionSite, "dist/kuvat", image.path)), source);
     for (const v of image.variants) {

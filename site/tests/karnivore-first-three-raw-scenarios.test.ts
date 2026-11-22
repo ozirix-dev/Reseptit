@@ -134,7 +134,7 @@ test("every unresolved karnivore food source withholds the numerical carbohydrat
 });
 
 test("first three cannot be mislabelled release-ready by raw macro scenarios alone", async () => {
-  const rows = await auditKarnivoreFi3Readiness(repoRoot);
+  const rows = await auditKarnivoreFi3Readiness(repoRoot, process.env.VERIFIED_IMAGE_ROOT || undefined);
   assert.deepEqual(rows.map((row) => row.recipeId), [...karnivoreFi3Ids]);
   for (const row of rows) {
     assert.equal(row.ready, false);
@@ -142,6 +142,20 @@ test("first three cannot be mislabelled release-ready by raw macro scenarios alo
     assert(!row.blockers.includes("IMAGE_NOT_VERSIONED"));
     assert(row.blockers.includes("IMAGE_METADATA_MISSING"));
     assert(!row.blockers.includes("NUTRITION_CALCULATION_MISSING"));
+    assert(row.blockers.includes("PUBLIC_MACROS_WITHHELD"));
+    assert(row.blockers.includes("SOURCE_IDENTITY_NOT_APPROVED"));
+  }
+});
+
+
+test("missing explicit restored images remain blocked without weakening draft holds", async () => {
+  const missingRoot = path.join(repoRoot, "tmp", `missing-restored-images-${process.pid}`);
+  const rows = await auditKarnivoreFi3Readiness(repoRoot, missingRoot);
+  assert.equal(rows.length, 3);
+  for (const row of rows) {
+    assert.equal(row.ready, false);
+    assert(row.blockers.includes("IMAGE_NOT_VERSIONED"));
+    assert(row.blockers.includes("DRAFT_SOURCE_ONLY"));
     assert(row.blockers.includes("PUBLIC_MACROS_WITHHELD"));
     assert(row.blockers.includes("SOURCE_IDENTITY_NOT_APPROVED"));
   }
