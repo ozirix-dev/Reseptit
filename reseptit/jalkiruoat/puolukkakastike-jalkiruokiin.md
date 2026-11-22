@@ -50,13 +50,13 @@ Kirpeä marjakastike jäätelölle, juustokakulle tai uunijälkiruoalle.
 ## Valmistus
 
 1. Mittaa puolukat, vesi ja sokeri kattilaan. Käytä ehjiä ja puhtaita marjoja.
-2. Kiehauta ja hauduta 4–5 minuuttia, kunnes marjat pehmenevät. Kuumentaminen sopii myös pakastemarjoille.
+2. Kiehauta kotimaiset puolukat ja hauduta 4–5 minuuttia, kunnes marjat pehmenevät. Voit käyttää myös kotimaisia pakastepuolukoita; tarkista alkuperä pakkauksesta.
 3. Soseuta sauvasekoittimella lyhyesti niin, että osa puolukoista jää kokonaisiksi. Älä siivilöi, jotta marjojen kuoret ja kuidut jäävät kastikkeeseen. Lisää sitruunamehu ja sekoita.
 4. Tarjoa kastike lämpimänä tai jäähdytä nopeasti ja säilytä jääkaapissa kylmänä tarjoiluun asti.
 
 ## Muistiinpanot
 
-- Sisältö on toimituksellinen luonnos, jonka ravintoarvot ovat Finelin ainesosista laskettuja annosarvioita. GK-arvio ja kuvan lopullinen hyväksyntä puuttuvat.
+- Resepti on toimituksellinen luonnos. Numeerisia ravintoarvoja ei ole hyväksytty julkaistaviksi eikä niitä näytetä; GK on määrittämätön. Kuva on tekoälyllä tuotettu havainnekuva, jonka lopullinen hyväksyntä puuttuu.
 - Valmistuksen vertailulähde: https://www.k-ruoka.fi/reseptit/puolukkakastike
 
 - Kuva on tekoälyn luoma havainnekuva uudesta tummanpunaisesta marjakastikkeesta; lopullinen toimituksellinen hyväksyntä puuttuu.
