@@ -55,7 +55,7 @@ A creamy Finnish oven-baked family dish of potato strips, cooked smoked ham, oni
 
 ## Preparation
 
-1. Preheat the oven to 225°C. Grease an ovenproof dish of roughly 2.5 litres with butter.
+1. Preheat the oven to 225°C. Grease an ovenproof dish of at least 3 litres with butter.
 2. Finely chop the onion and cut the cooked smoked ham into strips. Combine the frozen potato strips, ham and onion in the dish.
 3. Sprinkle over the salt and pepper and pour the cooking cream evenly into the dish. Mix lightly to distribute the cream.
 4. Bake on the lower oven shelf at 225°C for 30 minutes. Reduce to 200°C and bake for another 35–40 minutes, until all the potatoes are tender. Cover loosely with foil if the top darkens too quickly.
@@ -64,6 +64,6 @@ A creamy Finnish oven-baked family dish of potato strips, cooked smoked ham, oni
 ## Notes
 
 - Contains milk. Check the ham packaging for other possible allergens. No gluten-free claim has been reviewed.
-- Cool leftovers promptly in shallow containers and refrigerate.
+- Cool leftovers promptly in shallow containers and refrigerate below +6°C.
 - Reference: [K-Ruoka ham and potato bake](https://www.k-ruoka.fi/reseptit/kinkkukiusaus). This is an independently written and proportion-adjusted Recipavo version, not a reproduction.
 - The photo is AI-generated illustrative imagery. This is an editorial draft; no cooking test or recipe-specific nutrient/GK calculation has been completed.

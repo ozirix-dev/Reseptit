@@ -60,7 +60,7 @@ Mehevä suomalainen kinkkukiusaus valmistuu perunasuikaleista, kypsästä savuki
 
 ## Valmistus
 
-1. Kuumenna uuni 225 asteeseen. Voitele noin 2,5 litran uunivuoka voilla.
+1. Kuumenna uuni 225 asteeseen. Voitele vähintään 3 litran uunivuoka voilla.
 2. Hienonna sipuli ja leikkaa kypsä savukinkku suikaleiksi. Sekoita perunasuikaleet, kinkku ja sipuli vuoassa.
 3. Ripottele suola ja pippuri seoksen päälle ja kaada ruokakerma tasaisesti vuokaan. Sekoita vielä kevyesti, jotta kerma leviää.
 4. Kypsennä uunin alatasolla 225 asteessa 30 minuuttia. Laske lämpö 200 asteeseen ja jatka kypsennystä 35–40 minuuttia, kunnes perunat ovat kauttaaltaan pehmeitä. Jos pinta tummuu liikaa, peitä vuoka löyhästi foliolla.
@@ -69,6 +69,6 @@ Mehevä suomalainen kinkkukiusaus valmistuu perunasuikaleista, kypsästä savuki
 ## Muistiinpanot
 
 - Sisältää maitoa. Kinkun koostumus ja mahdolliset muut allergeenit on tarkistettava pakkausmerkinnöistä. Älä merkitse ruokaa gluteenittomaksi ilman erillistä tarkastusta.
-- Valmis ruoka jäähdytetään nopeasti pienempiin astioihin ja säilytetään jääkaapissa.
+- Valmis ruoka jäähdytetään nopeasti matalissa astioissa ja säilytetään jääkaapissa alle +6 °C:ssa.
 - Lähdevertailu: [K-Ruoka / kinkkukiusaus](https://www.k-ruoka.fi/reseptit/kinkkukiusaus). Tässä on itsenäisesti kirjoitettu ja määriltään muokattu Recipavo-versio, ei lähdesivun kopio.
 - Kuva on tekoälyllä luotu havainnekuva. Resepti on toimituksellinen luonnos; koekeittiötestiä tai reseptikohtaisia ravintoarvoja/GK-arviota ei ole tehty.

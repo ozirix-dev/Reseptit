@@ -55,7 +55,7 @@ En krämig finsk vardagsrätt i ugn med potatisstrimlor, rökt kokt skinka, lök
 
 ## Gör så här
 
-1. Sätt ugnen på 225 °C. Smörj en ugnsform på ungefär 2,5 liter med smöret.
+1. Sätt ugnen på 225 °C. Smörj en ugnsform på minst 3 liter med smöret.
 2. Finhacka löken och strimla den kokta rökta skinkan. Blanda potatisstrimlor, skinka och lök i formen.
 3. Fördela salt och peppar över blandningen och häll matlagningsgrädden jämnt i formen. Rör om försiktigt.
 4. Grädda längst ner i ugnen vid 225 °C i 30 minuter. Sänk till 200 °C och fortsätt i 35–40 minuter tills potatisen är helt mjuk. Täck löst med folie om ytan får för mycket färg.
@@ -64,6 +64,6 @@ En krämig finsk vardagsrätt i ugn med potatisstrimlor, rökt kokt skinka, lök
 ## Anteckningar
 
 - Innehåller mjölk. Kontrollera skinkans förpackning för andra allergener. Glutenfrihet har inte granskats.
-- Kyl rester snabbt i grunda kärl och förvara i kylskåp.
+- Kyl rester snabbt i grunda kärl och förvara i kylskåp under +6 °C.
 - Jämförelsekälla: [K-Ruoka kinkkukiusaus](https://www.k-ruoka.fi/reseptit/kinkkukiusaus). Text och mängder har bearbetats självständigt för Recipavo.
 - Bilden är AI-genererad illustration. Receptet är ett redaktionellt utkast och är inte provlagat eller näringsberäknat för just denna version.
