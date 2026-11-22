@@ -10,10 +10,6 @@ translation_of: kermainen-tillikastike
 status: draft
 servings: 4
 time_total_min: 25
-carbs_net_per_serving_g: 2.89
-carbs_total_per_serving_g: 3.07
-protein_per_serving_g: 1.52
-fat_per_serving_g: 6.04
 difficulty: "enkel"
 main_ingredient:
   - "tilli"
