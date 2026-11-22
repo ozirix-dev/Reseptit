@@ -181,6 +181,60 @@ test("conditional calculation is numerically feasible, but has no publication au
   assert.equal(verifyNutritionEvidence(source, fakeWithholding).status, "CONFLICT REQUIRES REVIEW");
 });
 
+// Independent fallback when only weighed ingredient mass, not an accepted
+// composition upper bound, is established. One nutrient cannot exceed the
+// entire weighed mass; 9 kcal/g is an illustrative Atwater fat-energy ceiling.
+// This does NOT validate that the omitted material is pure fat or pure CHO.
+function fromMassOnly(row: IngredientInput): Omission {
+  assert.equal(row.unit, "g");
+  assert.ok(row.amount !== null && Number.isFinite(row.amount) && row.amount >= 0);
+  assert.equal(old.servings, source.servings);
+  const gramsPerServing = row.amount / old.servings;
+  return {
+    kcal: gramsPerServing * 9,
+    netCarbohydrate: gramsPerServing,
+    totalCarbohydrate: gramsPerServing,
+    protein: gramsPerServing,
+    fat: gramsPerServing,
+  };
+}
+
+test("source-independent mass bounds do NOT justify macro publication", () => {
+  const candidate = makeCandidate();
+  const garlicMassBound = fromMassOnly(old.ingredients[6]!);
+  const zestMassBound = fromMassOnly(old.ingredients[8]!);
+  const massOnlyTotal = Object.fromEntries((Object.keys(noMacros) as Array<keyof Omission>)
+    .map(key => [key, garlicMassBound[key] + zestMassBound[key]])) as Omission;
+
+  // 3.1 g garlic powder + 2 g outer zest, across four servings.
+  assert.equal(old.servings, 4);
+  assert.equal(old.ingredients[6]!.amount, 3.1);
+  assert.equal(old.ingredients[8]!.amount, 2);
+  assert.equal(massOnlyTotal.totalCarbohydrate, 1.275);
+  assert.equal(massOnlyTotal.netCarbohydrate, 1.275);
+  assert.equal(massOnlyTotal.protein, 1.275);
+  assert.equal(massOnlyTotal.fat, 1.275);
+  assert.equal(massOnlyTotal.kcal, 11.475);
+  assert.ok(massOnlyTotal.totalCarbohydrate > allowedOmissionErrorPerServing.totalCarbohydrate);
+  assert.ok(massOnlyTotal.kcal > allowedOmissionErrorPerServing.kcal);
+
+  candidate.ingredients[6]!.omissionImpactUpperBoundPerServing = garlicMassBound;
+  candidate.ingredients[8]!.omissionImpactUpperBoundPerServing = zestMassBound;
+  candidate.ingredients[6]!.omissionImpactEvidence =
+    "SOURCE-INDEPENDENT STRESS TEST ONLY: whole weighed ingredient mass, not product-specific composition";
+  candidate.ingredients[8]!.omissionImpactEvidence =
+    "SOURCE-INDEPENDENT STRESS TEST ONLY: whole weighed ingredient mass, not product-specific composition";
+  const result = calculate(candidate);
+  assert.deepEqual(result.omissionImpactUpperBoundPerServing, massOnlyTotal);
+  assert.equal(result.omissionWithinTolerance, false);
+  assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+
+  // No amount of arithmetic can convert unapproved mass-only bounds into
+  // permission to lift the existing four-null public nutrition withholding.
+  assert.equal(verifyNutritionEvidence(source, candidate).status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(old.publicationStatus, "WITHHELD_SOURCE_INCOMPLETE");
+});
+
 test("conditional gate fails closed for ambiguous salt, AFCD evidence loss and excess omissions", () => {
   const noSaltDecision = makeCandidate();
   // The original, pinned evidence ALREADY excludes pure salt as zero macro.
