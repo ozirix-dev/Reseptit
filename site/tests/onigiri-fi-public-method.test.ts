@@ -18,7 +18,7 @@ const sources = {
 } as const;
 
 function gitBlobSha(raw: string): string {
-  return createHash("sha1").update("blob " + Buffer.byteLength(raw) + "\\0" + raw).digest("hex");
+  return createHash("sha1").update("blob " + Buffer.byteLength(raw) + "\0" + raw).digest("hex");
 }
 
 for (const locale of ["fi", "en", "sv", "th"] as const) {
@@ -53,14 +53,14 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
       proteinG: source.protein_per_serving_g,
       fatG: source.fat_per_serving_g,
     });
-    const marker = "\\n## " + heading + "\\n";
+    const marker = "\n## " + heading + "\n";
     const start = parsed.content.indexOf(marker);
     assert.ok(start >= 0);
     const tail = parsed.content.slice(start + marker.length);
-    const end = tail.indexOf("\\n## ");
+    const end = tail.indexOf("\n## ");
     const originalMethod = (end < 0 ? tail : tail.slice(0, end)).trim();
     const correction = reviewedRecipeCopy(id, locale)?.method;
-    const rendered = visible.instructionsText.join("\\n");
+    const rendered = visible.instructionsText.join("\n");
 
     if (locale === "fi") {
       assert.ok(correction && correction.length === 1, "one FI-only review correction");
