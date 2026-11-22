@@ -29,6 +29,24 @@ const salt = afcd.find(row => row.source_id === "F007879");
 const usda = json("docs/nutrition/gk80-operation142/usda-cap-excerpts.json") as Record<string, {
   totalCarbohydrate: {amount: string};
 }>;
+type UsdaNutrient = { amount: string };
+type UsdaSnapshot = { fdc_id: string; nutrients: Record<string, UsdaNutrient> };
+const garlicSnapshot = (old.ingredients[6]!.record as FoodRecord & {primarySource?: UsdaSnapshot}).primarySource!;
+const lemonSnapshot = (json("docs/nutrition/gk80-operation142/integration.json") as {
+  extraUsdaSources: UsdaSnapshot[];
+}).extraUsdaSources.find(row => row.fdc_id === "167749")!;
+const sourceNumber = (snapshot: UsdaSnapshot, nutrientId: string): number => {
+  const raw = snapshot.nutrients[nutrientId]?.amount;
+  assert.ok(raw !== undefined && raw.trim() !== "", `Missing USDA ${snapshot.fdc_id} nutrient ${nutrientId}`);
+  const amount = Number(raw);
+  assert.ok(Number.isFinite(amount) && amount >= 0, `Invalid USDA ${snapshot.fdc_id} nutrient ${nutrientId}`);
+  return amount;
+};
+// USDA SR27, NDB 02020, "Spices, garlic powder", proximate Energy 331 kcal/100 g.
+// The original repon garlic snapshot has nutrient IDs 1003/1004/1005, but no
+// energy row. Keep the energy citation explicit rather than inventing a record.
+// https://www.ars.usda.gov/ARSUserFiles/80400525/Data/SR27/reports/sr27fg02.pdf
+const garlicEnergyKcalPer100g = 331;
 const checks = ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const;
 
 type Omission = NonNullable<IngredientInput["omissionImpactUpperBoundPerServing"]>;
@@ -38,8 +56,18 @@ const fromProfile = (grams: number, per100g: {carbohydrate: number; protein: num
   return { kcal: per100g.kcal * portion, netCarbohydrate: carbohydrate,
     totalCarbohydrate: carbohydrate, protein: per100g.protein * portion, fat: per100g.fat * portion };
 };
-const omittedGarlic = fromProfile(3.1, {carbohydrate: 72.73, protein: 16.55, fat: .73, kcal: 331});
-const omittedZest = fromProfile(2, {carbohydrate: 16, protein: 1.5, fat: .3, kcal: 47});
+const omittedGarlic = fromProfile(old.ingredients[6]!.amount!, {
+  carbohydrate: sourceNumber(garlicSnapshot, "1005"),
+  protein: sourceNumber(garlicSnapshot, "1003"),
+  fat: sourceNumber(garlicSnapshot, "1004"),
+  kcal: garlicEnergyKcalPer100g,
+});
+const omittedZest = fromProfile(old.ingredients[8]!.amount!, {
+  carbohydrate: sourceNumber(lemonSnapshot, "1005"),
+  protein: sourceNumber(lemonSnapshot, "1003"),
+  fat: sourceNumber(lemonSnapshot, "1004"),
+  kcal: sourceNumber(lemonSnapshot, "1008"),
+});
 const noMacros: Omission = {kcal: 0, netCarbohydrate: 0, totalCarbohydrate: 0, protein: 0, fat: 0};
 
 function exclude(row: IngredientInput, why: string, impact: Omission, sourceEvidence: string): IngredientInput {
@@ -111,8 +139,20 @@ test("AFCD evidence is source-model derived, not a measurement of individual pol
   assert.equal(salt.derivation, "Analysed");
   for (const k of ["protein_g_per_100g", "fat_g_per_100g", "fibre_g_per_100g",
     "available_carbohydrate_with_sugar_alcohols_g_per_100g"] as const) assert.equal(salt[k], 0, k);
-  assert.equal(Number(usda["171325"]?.totalCarbohydrate.amount), 72.73);
-  assert.equal(Number(usda["167749"]?.totalCarbohydrate.amount), 16);
+  assert.equal(garlicSnapshot.fdc_id, "171325");
+  assert.equal(lemonSnapshot.fdc_id, "167749");
+  assert.equal(sourceNumber(garlicSnapshot, "1005"), 72.73);
+  assert.equal(sourceNumber(garlicSnapshot, "1003"), 16.55);
+  assert.equal(sourceNumber(garlicSnapshot, "1004"), 0.73);
+  assert.equal(garlicEnergyKcalPer100g, 331);
+  assert.equal(sourceNumber(lemonSnapshot, "1005"), 16);
+  assert.equal(sourceNumber(lemonSnapshot, "1003"), 1.5);
+  assert.equal(sourceNumber(lemonSnapshot, "1004"), 0.3);
+  assert.equal(sourceNumber(lemonSnapshot, "1008"), 47);
+  // Independently cross-check the carbohydrate field against the separate
+  // historical USDA extraction; never treat a missing value as zero.
+  assert.equal(Number(usda["171325"]?.totalCarbohydrate.amount), sourceNumber(garlicSnapshot, "1005"));
+  assert.equal(Number(usda["167749"]?.totalCarbohydrate.amount), sourceNumber(lemonSnapshot, "1005"));
 });
 
 test("conditional calculation is numerically feasible, but has no publication authority", () => {
