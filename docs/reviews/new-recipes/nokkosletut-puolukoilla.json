@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "nokkosletut-puolukoilla",
+  "source_path": "reseptit/alkuruoat/nokkosletut-puolukoilla.md",
+  "source_sha256": "f786d0c1b3df87ccb814525c496000743596d28a55e6581d53f94296ddc2951d",
+  "decision": "approved",
+  "reviewed_by": "ChatGPT Chat 4 – lähteistetty kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/nokkosletut-2/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/reviews/chat4-eight-starters-nutrition-withheld-2026-11-21.md",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Mainin reseptikategorioiden identiteetit ja avoimet rinnakkaiset PR:t tarkistettiin, eikä kyseisen ruokalajin samaa recipe_id/url_slug-identiteettiä löytynyt."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "120 g nuoria tunnistettuja nokkosen lehtiä, 180 g vehnäjauhoa, 350 ml maitoa, kaksi kananmunaa, yhteensä 45 g voita sekä puolukat ja ranskankerma."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Marttojen testattu nokkoslettu sisältää lehtien ryöppäyksen, 30 minuutin taikinalevon ja pannulla paiston. Recipavon pienet letut ja puolukkatarjoilu ovat perusteltuja."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Nokkoset kerätään puhtaalta alueelta, keitetään ensin runsaassa vedessä ja pikkulasten nitraattihuomio pysyy ohjeessa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kuusi annosta, 65 minuutin arvio kattaa keittämisen, noin 30 min levon ja pienien lettujen paiston."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Numeeriset ravintoarvot jätetään tarkoituksellisesti pois, koska toistettavaa tuotekohtaista laskentaa ei ole. Puuttuvat kentät eivät merkitse nollaa; erillinen ravintonäyttömuistio."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle omalle valmistusversiolle ei ole hyväksyttyä GI/GK-mittausta tai laskentaa. GK jätetään määrittämättä ja ruokavalioväitteet pidätetään."
+    }
+  },
+  "supplementary_evidence": {
+    "source_review": "docs/reviews/new-recipes/chat4-alkuruoat-independent-source-review-2026-11-21.md",
+    "semantic_review": "docs/reviews/new-recipes/chat4-eight-appetizers-semantic-review-2026-11-21.md",
+    "image_path": "kuvat/alkuruoat/nokkosletut-puolukoilla.webp",
+    "image_sha256": "8d6f47f9d6b01b60e228f49b59bbe40600b24cb0bbf04491f5ecc6329b7c83a2",
+    "image_review": "SHA-256-varmennettu 720 × 720 tekoälyhavainnekuva; ei valmistetun annoksen valokuva.",
+    "physical_cook_test": false,
+    "translation_status": "EN/SV/TH remain draft; no publication claim for those languages."
+  }
+}
