@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "recipe_id": "pina-colada-hedelmajaatelo",
+  "source_path": "reseptit/jalkiruoat/pina-colada-hedelmajaatelo.md",
+  "source_sha256": "ee963f9ba30d58b92f5aeaae0d0b3b122aeb6381f94d020983f4cc0df81d3906",
+  "decision": "approved",
+  "reviewed_by": "Chat-7 – lähdevideon ja julkaisutiedoston kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-23",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.facebook.com/reel/1703813614507191",
+      "https://diabetesfoodhub.org/recipes/banana-pineapple-nice-cream"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/pina-colada-hedelmajaatelo.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistettu GitHubin nykyisestä mainista ja avoimista PR-hauista: ei samaa recipe_id-, slug- tai nimilähdettä. Uusi erillinen FI-jälkiruoka."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Videosta havaittu banaani, ananas, kookosmaito ja limetti. Tässä toimituksellisesti grammoiksi standardoidut määrät ovat 240 g, 280 g, 120 g ja 15 g; niitä ei väitetä alkuperäisvideon punnituksiksi."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Pakastettujen hedelmien soseuttaminen kookosmaidon ja limetin kanssa tukee pehmeää hedelmäjäätelöä. Valinnainen 1–2 tunnin jälkipakastus ja pehmennys ovat valmistustekninen toimituksellinen täsmennys."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ohjeessa ei käsitellä raakaa lihaa, kananmunaa tai lämpökäsittelyä vaativaa raaka-ainetta. Hedelmät ovat syötäväksi valmistettuja ja seos tarjoillaan pakastettuna. Käytetään hygieenisesti käsiteltyjä hedelmiä ja pakastusastioita; mahdollinen kookosallergia huomioidaan yksilöllisesti."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "655 g syötäviä ainesosia on jaettu neljään noin 164 g annokseen. 140 minuutin kokonaisaika sisältää jäisten hedelmien pakastuksen etukäteen ja seoksen valinnaisen 1–2 tunnin jälkipakastuksen; täsmällinen jäätymisaika riippuu pakastimesta."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Ainesmäärät sidottu dokumentoidusti THL Fineli R20:n banaani- ja ananastietueisiin sekä AFCD R3:n kookosmaito- ja limettitietueisiin. Vertailulaskelma noin 19,4 g käytettävissä olevaa hiilihydraattia per annos on kirjattu erilliseen evidenssitiedostoon; julkiset makrot pidätetään, koska tuotekohtaista kookosmaitoa ja julkaisulaskennan hyväksyntää ei ole sidottu."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Hyväksyttyä juuri tämän banaanin kypsyysasteen, ananaksen ja valmistuksen mukaista GI-/GK-lähdeketjua ei ole. Numeerinen GK jätetään määrittämättä, eikä oletus-GI:tä käytetä."
+    }
+  },
+  "supplementary_evidence": {
+    "image_path": "kuvat/jalkiruoat/pina-colada-hedelmajaatelo.webp",
+    "image_sha256": "f286cb432f458b155ee994edb128baae74382f02221af541adea2c8e362d4fbc",
+    "image_review": "AI-havainnekuva vastaa ananas-banaani-kookosjäätelön keltaista rakennetta; kuvaan lisätyt kookoshiutaleet ja hedelmäkoristeet on merkitty valinnaisiksi, eivät sisälly ravintolaskentaan.",
+    "physical_cook_test": false,
+    "source_limitations": "Videon tarkkoja kaikkia ainemääriä ei voitu vahvistaa. Resepti on toimituksellinen sovitus, ei videon sanatarkka transkriptio."
+  }
+}
