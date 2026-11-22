@@ -12,7 +12,7 @@
       "https://www.valio.fi/reseptit/valkokastike/"
     ]
   },
-  "nutrition_evidence": "docs/nutrition/calculations/perinteinen-valkokastike.json",
+  "nutrition_evidence": "",
   "checks": {
     "duplicates": {
       "status": "pending",
@@ -35,8 +35,8 @@
       "notes": "Recipavo 6 pientä kastikeannosta / 15 min; Valion aktiivinen valmistus 10 min. Eri annosjaon vuoksi tarkka tarjottava saanto on edelleen arvio, mutta aika ja työjärjestys ovat perusteltuja."
     },
     "nutrition": {
-      "status": "pass",
-      "notes": "Neljän makron ravintoarvio laskettu 6 annokselle Fineli Release20 #689 (täysmaito 500 g), #500 (voi 35 g), #110 (vehnäjauho 35 g), #30 (jodioitu suola 3 g). Valkopippuri 0,4 g ja muskottipähkinä 0,2 g on merkitty erikseen lähdepuutteisiksi, EI nolliksi. site/scripts/nutrition-model.ts sallii konservatiivisesti rajatun omissiovaikutuksen; molempien mausteiden yhteinen enimmäisvaikutus 0.90 kcal/annos ja enintään 0.11 g kutakin makroa/annos (<1g toleranssi). Arvio per annos: nettohiilihydraatit 8,36g, kokonaishiilihydraatit 8,57g, proteiini 3,25g, rasva 7,75g. Laskennan syötehash 019aa958cb6b055fae45c24cd47827e84fb3de2207439fa0b71b0310b68b7b64; tämä on source-backed arvio, ei laboratorion tai valitun maitomerkin mittaus. Koko reseptin julkaisupäätös on HOLD."
+      "status": "pending",
+      "notes": "Neljän makron ravintoarvio laskettu 6 annokselle Fineli Release20 #689 (täysmaito 500 g), #500 (voi 35 g), #110 (vehnäjauho 35 g), #30 (jodioitu suola 3 g). Valkopippuri 0,4 g ja muskottipähkinä 0,2 g on merkitty erikseen lähdepuutteisiksi, EI nolliksi. site/scripts/nutrition-model.ts sallii konservatiivisesti rajatun omissiovaikutuksen; molempien mausteiden yhteinen enimmäisvaikutus 0.90 kcal/annos ja enintään 0.11 g kutakin makroa/annos (<1g toleranssi). Arvio per annos: nettohiilihydraatit 8,36g, kokonaishiilihydraatit 8,57g, proteiini 3,25g, rasva 7,75g. Laskennan syötehash 019aa958cb6b055fae45c24cd47827e84fb3de2207439fa0b71b0310b68b7b64; tämä on source-backed arvio, ei laboratorion tai valitun maitomerkin mittaus. Koko reseptin julkaisupäätös on HOLD.\n22.11.2026 CI-yhteensopivuus: koska FI-lähde on edelleen status:draft, tämä täysin dokumentoitu AUTOMATED ONLY -laskentatodiste on siirretty pois ainoastaan julkaistuille FI-resepteille sallitusta docs/nutrition/calculations/-hakemistosta katselmointikandidaatiksi: docs/nutrition/candidates/draft-calculations/perinteinen-valkokastike.json. Neljä makroarvoa ovat edelleen ainoastaan Draft-luonnoksessa näkyvä ennakkoarvio. nutrition:pass ja virallinen nutrition_evidence eivät vielä ole myönnettyjä; paluu varsinaiseen calculations/-hakemistoon edellyttää hyväksyttyä julkaisuversiota ja täsmä-HEADin tarkistusta. Koko resepti pysyy decision:hold."
     },
     "glycemic": {
       "status": "unavailable",

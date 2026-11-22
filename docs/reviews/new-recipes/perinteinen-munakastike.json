@@ -12,7 +12,7 @@
       "https://www.martat.fi/reseptit/kananmunakastike/"
     ]
   },
-  "nutrition_evidence": "docs/nutrition/calculations/perinteinen-munakastike.json",
+  "nutrition_evidence": "",
   "checks": {
     "duplicates": {
       "status": "pending",
@@ -35,8 +35,8 @@
       "notes": "Marttojen 4 annos: valmiiksi keitetyt munat; Recipavon 4 annosta / 20 min sisältää saman lähtötilan. Jos munat keitetään itse, ohje varaa lisäaikaa. Saanto edelleen arvio."
     },
     "nutrition": {
-      "status": "pass",
-      "notes": "Fineli Release20 #689 täysmaito 400g, #500 voi 30g, #110 vehnäjauhot 30g, #8513 täysin keitetty ja kuorittu kananmuna 120g, #369 tilli 15g, #30 suola 3g. Valkopippurin 0,3g ravintosisältö jätetty pois konservatiivisella massaan perustuvalla rajauksella, ei nollana: enintään 0,08g kutakin makroa/annos ja 0,68 kcal/annos; alle nutrition-model -toleranssin. Resepti 4 annosta. TäsmäinputHash 62e86f7d10d579ad254c652fb645c489ddd63449d72432b87ce8fe0c6256ea0c. Laskennalliset arvot annosta kohden netto 10,53g, kokonaisCH 10,90g, proteiini 7,89g, rasva 12,52g. Macro arithmetic reviewed independently against model formulas; not a laboratory measurement or approval of whole recipe. GK undetermined. Still HOLD."
+      "status": "pending",
+      "notes": "Fineli Release20 #689 täysmaito 400g, #500 voi 30g, #110 vehnäjauhot 30g, #8513 täysin keitetty ja kuorittu kananmuna 120g, #369 tilli 15g, #30 suola 3g. Valkopippurin 0,3g ravintosisältö jätetty pois konservatiivisella massaan perustuvalla rajauksella, ei nollana: enintään 0,08g kutakin makroa/annos ja 0,68 kcal/annos; alle nutrition-model -toleranssin. Resepti 4 annosta. TäsmäinputHash 62e86f7d10d579ad254c652fb645c489ddd63449d72432b87ce8fe0c6256ea0c. Laskennalliset arvot annosta kohden netto 10,53g, kokonaisCH 10,90g, proteiini 7,89g, rasva 12,52g. Macro arithmetic reviewed independently against model formulas; not a laboratory measurement or approval of whole recipe. GK undetermined. Still HOLD.\n22.11.2026 CI-yhteensopivuus: koska FI-lähde on edelleen status:draft, tämä täysin dokumentoitu AUTOMATED ONLY -laskentatodiste on siirretty pois ainoastaan julkaistuille FI-resepteille sallitusta docs/nutrition/calculations/-hakemistosta katselmointikandidaatiksi: docs/nutrition/candidates/draft-calculations/perinteinen-munakastike.json. Neljä makroarvoa ovat edelleen ainoastaan Draft-luonnoksessa näkyvä ennakkoarvio. nutrition:pass ja virallinen nutrition_evidence eivät vielä ole myönnettyjä; paluu varsinaiseen calculations/-hakemistoon edellyttää hyväksyttyä julkaisuversiota ja täsmä-HEADin tarkistusta. Koko resepti pysyy decision:hold."
     },
     "glycemic": {
       "status": "unavailable",

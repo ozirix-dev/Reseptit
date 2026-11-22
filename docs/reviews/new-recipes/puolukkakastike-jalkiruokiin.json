@@ -14,7 +14,7 @@
       "https://www.martat.fi/reseptit/ruotsalainen-puolukkahillo/"
     ]
   },
-  "nutrition_evidence": "docs/nutrition/calculations/puolukkakastike-jalkiruokiin.json",
+  "nutrition_evidence": "",
   "checks": {
     "duplicates": {
       "status": "pending",
@@ -37,8 +37,8 @@
       "notes": "Kuusi pientä annosta / 20 minuuttia koskee lämpimänä tarjoilua; pesu/punnitus, 4–5 minuutin haudutus ja lyhyt soseutus sisältyvät tähän. Kylmäksi tarjoaminen vaatii lisäksi jäähdytys- ja jääkaappiajan; huomautus on päivitetty neljälle kielelle. Saanto jää toimitukselliseksi arvioksi."
     },
     "nutrition": {
-      "status": "pass",
-      "notes": "Fineli Release20 #440 PUOLUKKA (250 g, kuitu 2,5 g/100 g, polyolit vahvistettu 0), #922 VESIJOHTOVESI (70 ml, 1 ml=1 g dokumentoitu dl-portiomassa), #1 SOKERI (55 g), #11557 TÄYSMEHU SITRUUNA (10 g). Kaikki marjakuoret ja kuitu säilyvät, 6 annosta. Lähdehash c50fd88ab225e21892e801f882d90277e235d357e4ef819caae872fc2ff0396a. Neljän makron laskennallinen arvio annosta kohden: nettohiilihydraatti 12,88 g, kokonaishiilihydraatti 13,92 g, proteiini 0,23 g, rasva 0,27 g. Aritmetiikka tarkistettu ainesrivi-/per100g-periaatteella kuten site/scripts/nutrition-model.ts; ei laboratorioarvo eikä tuote-eräkohtaista mittausta. Kokonaispäätös edelleen HOLD käännösten, kuvan ja julkaisun porttien vuoksi."
+      "status": "pending",
+      "notes": "Fineli Release20 #440 PUOLUKKA (250 g, kuitu 2,5 g/100 g, polyolit vahvistettu 0), #922 VESIJOHTOVESI (70 ml, 1 ml=1 g dokumentoitu dl-portiomassa), #1 SOKERI (55 g), #11557 TÄYSMEHU SITRUUNA (10 g). Kaikki marjakuoret ja kuitu säilyvät, 6 annosta. Lähdehash c50fd88ab225e21892e801f882d90277e235d357e4ef819caae872fc2ff0396a. Neljän makron laskennallinen arvio annosta kohden: nettohiilihydraatti 12,88 g, kokonaishiilihydraatti 13,92 g, proteiini 0,23 g, rasva 0,27 g. Aritmetiikka tarkistettu ainesrivi-/per100g-periaatteella kuten site/scripts/nutrition-model.ts; ei laboratorioarvo eikä tuote-eräkohtaista mittausta. Kokonaispäätös edelleen HOLD käännösten, kuvan ja julkaisun porttien vuoksi.\n22.11.2026 CI-yhteensopivuus: koska FI-lähde on edelleen status:draft, tämä täysin dokumentoitu AUTOMATED ONLY -laskentatodiste on siirretty pois ainoastaan julkaistuille FI-resepteille sallitusta docs/nutrition/calculations/-hakemistosta katselmointikandidaatiksi: docs/nutrition/candidates/draft-calculations/puolukkakastike-jalkiruokiin.json. Neljä makroarvoa ovat edelleen ainoastaan Draft-luonnoksessa näkyvä ennakkoarvio. nutrition:pass ja virallinen nutrition_evidence eivät vielä ole myönnettyjä; paluu varsinaiseen calculations/-hakemistoon edellyttää hyväksyttyä julkaisuversiota ja täsmä-HEADin tarkistusta. Koko resepti pysyy decision:hold."
     },
     "glycemic": {
       "status": "unavailable",

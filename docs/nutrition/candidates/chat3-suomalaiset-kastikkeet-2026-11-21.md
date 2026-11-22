@@ -92,3 +92,11 @@ Maito punnitaan 500 g:ksi entisen 500 ml:n sijaan; vastaava FI/EN/SV/TH-ainesmuu
 - Vaniljakastikkeen täysmaito muutettiin **450 ml → 450 g punnittua maitoa** kaikissa FI/EN/SV/TH-resepteissä. Tämä on reseptin täsmennys, ei maitotiheyden oletus.
 - Uusi lähdetiedoston SHA-256 `87d3a19d59f5a5cad0444bbf1aaa62d330bea230d6558f61d97895a66b3af771`, uusi ravintosyötteen `sourceHash` `49e5a1e7149059baaf6b39e13b534ed179cacd632041eb07e8442d7b06cf11c7`. Vanha 463,5 gramman tiheysoletusesimerkki on korvattu 450 g:n erillisellä osalaskelmalla lähdemuistiossa.
 - Numeeriset ravintoarvot edelleen WITHHELD; vaniljasokerin polyoli-/kuituevidenssi ja muut julkaisuehdot ovat HOLD. Erän laskentapaketteja edelleen 4/10.
+
+## Julkaisuportin ja laskentakandidaattien erottaminen – 22.11.2026
+
+Uusimman `main`-haaran `site/scripts/nutrition-audit.ts` ja `site/scripts/validate-changed-content.ts` hyväksyvät `docs/nutrition/calculations/*.json`-todisteet vain **julkaistun** FI-lähteen yhteydessä. Chat 3:n kymmenen FI-reseptiä ovat tarkoituksella edelleen `status: draft`. Tämän seurauksena neljän sisällöltään laskennallisen, mutta julkaisemattoman paketoinnin paikka on nyt `docs/nutrition/candidates/draft-calculations/`, ei virallinen `docs/nutrition/calculations/`.
+
+Kandidaatit (alkuperäiset JSON-sisällöt säilytetty muuttumattomina): `kermainen-tillikastike`, `perinteinen-munakastike`, `perinteinen-valkokastike`, `puolukkakastike-jalkiruokiin`. Reseptikohtaisiin tarkistus-JSON-tietueisiin vaihdettiin `nutrition: pending` ja tyhjä `nutrition_evidence`, koska ne eivät ole nykyisen julkaisuportin hyväksyttyjä laskentatodisteita. Nelikielisten Draft-reseptien neljä numerokenttää säilyivät toistaiseksi **vain ehdokkaina**, joita ei julkaista ilman myöhempää lopullista evidenssiä.
+
+Tarkka tilanne: **4/10 dokumentoitua laskentakandidaattia, 0/10 julkaistuun FI-lähteeseen kiinnitettyä virallista laskentapakettia, 6/10 ravintosisällön osalta edelleen keskeneräistä.** Tämä ei hävitä tehtyä aritmetiikkaa eikä muuta raaka-ainemääriä; myöhempi hyväksytty julkaisuversio vaatii varsinaisen calculations-todisteen ja uudet CI/Repo Guard -portit. PR pysyy Draft/HOLD.
