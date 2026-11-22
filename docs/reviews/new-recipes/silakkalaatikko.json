@@ -29,7 +29,7 @@
     },
     "food_safety": {
       "status": "pass",
-      "notes": "Chat 3 22.11.2026: kala-, maito- ja muna-allergeenit (pekoni sisältää sianlihaa). Tarkista silakkafileen ruodot ja käytä hygieenisiä välineitä raakaa kalaa käsiteltäessä, paista kunnes kala kypsää ja munamaito kokonaan hyytynyt, jäähdytä ylijäämä nopeasti matalissa astioissa ja säilytä <+6°C. Ruokaviraston 2.1.2025 päivätty ohje koskee erityisesti perkaamattomana yli 19cm suurta Itämeren silakkaa, alle kouluikäisiä ja hedelmällisessä iässä olevia, raskaana olevia ja imettäviä naisia; heille enintään kerran kahdessa kuukaudessa. Kalan kokoluokka ja pyyntialue selvitettävä tarvittaessa myyjältä. Ei väitettä, että kaikki silakkafileet kuuluvat rajoitukseen. Lähde https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/kala/"
+      "notes": "Chat 3 22.11.2026: kala-, maito- ja muna-allergeenit (pekoni sisältää sianlihaa). Tarkista silakkafileen ruodot ja käytä hygieenisiä välineitä raakaa kalaa käsiteltäessä, paista kunnes kala kypsää ja munamaito kokonaan hyytynyt, jäähdytä ylijäämä nopeasti matalissa astioissa ja säilytä <+6°C. Ruokaviraston 2.1.2025 päivätty ohje koskee erityisesti perkaamattomana yli 19cm suurta Itämeren silakkaa, alle kouluikäisiä ja hedelmällisessä iässä olevia, raskaana olevia ja imettäviä naisia; heille enintään kerran kahdessa kuukaudessa. Kalan kokoluokka ja pyyntialue selvitettävä tarvittaessa myyjältä. Ei väitettä, että kaikki silakkafileet kuuluvat rajoitukseen. Lähde https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/kala/ Versiovertailu 22.11.2026: riippumattoman Chat-1:n #854-katselmoinnin HEAD 44299ce052c99c5a09585e0981d425fe3f14d87d jälkeen nykyiseen FI-ohjeeseen lisättiin kuumana tarjoaminen, nopea jäähdytys matalissa astioissa ja kylmäsäilytys alle +6 °C sekä silakan pyyntialueen/alkuperäisen kokoluokan tarkistus myyjältä erityistä käyttörajoitusta koskien. Näiden lisäysten riippumatonta nyky-SHA-hyväksyntää ei ole kirjattu; vanha katselmointi ei automaattisesti kata uutta lähdettä."
     },
     "servings_and_time": {
       "status": "pass",
@@ -37,7 +37,7 @@
     },
     "nutrition": {
       "status": "pending",
-      "notes": "Reseptiin sidottu riippumaton ravintolaskelma puuttuu eikä nollia tai lähteen eri annoksen arvoja kopioida."
+      "notes": "Numeeriset ravintoarvot ja GK jätetään tarkoituksella pois. Mainiin yhdistetty Chat-1:n riippumaton WITHHOLD-raportti #855 koski aiempaa FI-HEADia 44299ce052c99c5a09585e0981d425fe3f14d87d. Sen jälkeen nykyinen FI-lähde täsmensi 500 g maidon 1,5 % kevytmaidoksi ja lisäsi käsittely- ja kalankäyttöturvallisuuden ohjeita, mutta ei muuttanut ainesmääriä. Nykyisen SHA256:n 17cd46f51f64667b10836e1622f0be9ff6a6fec4ae2312f45412a0d3f6c916bb versionkohtainen riippumaton kuittaus puuttuu edelleen; nutrition:pending pysyy eikä makrojen osasummia julkaista."
     },
     "glycemic": {
       "status": "unavailable",
@@ -46,8 +46,24 @@
   },
   "supplementary_evidence": {
     "image_path": "kuvat/paaruoat/silakkalaatikko.webp",
-    "image_review": "Chat 3 22.11.2026: Git-tracked 960×746 AI-kuvassa näkyy viipaloituja perunoita, silakkapaloja, pekonia ja tilliä kerroksellisessa uunilaatikossa. Visuaalinen ruokalajivastaavuus alustavasti OK, mutta kuva ei todista tuotteen turvallisuutta, kalan kokoa/lajia tai todellista valmistusta; lopullinen riippumaton ImageAssets-/toimituksellinen hyväksyntä avoin.",
+    "image_review": "Chat 3 22.11.2026: Git-tracked 960×746 AI-kuvassa näkyy viipaloituja perunoita, silakkapaloja, pekonia ja tilliä kerroksellisessa uunilaatikossa. Visuaalinen ruokalajivastaavuus alustavasti OK, mutta kuva ei todista tuotteen turvallisuutta, kalan kokoa/lajia tai todellista valmistusta; lopullinen riippumaton ImageAssets-/toimituksellinen hyväksyntä avoin. Chat-1:n PR #852 hyväksyi tämän WebP:n SHA-lukitussa mainiin yhdistetyssä Git-overlayssa havainnekuvana. Se ei todista silakkafileen todellista lajia tai kokoluokkaa, kypsymistä eikä koko reseptin julkaisukelpoisuutta.",
     "physical_cook_test": false,
-    "image_sha256": "b88604d3a1c15f87cf04007157f4672d3229150ebea39e3d96250c4ce7ae63e7"
+    "image_sha256": "b88604d3a1c15f87cf04007157f4672d3229150ebea39e3d96250c4ce7ae63e7",
+    "independent_review_reconciliation": {
+      "review_pr": 854,
+      "reviewed_head": "44299ce052c99c5a09585e0981d425fe3f14d87d",
+      "current_source_sha256": "17cd46f51f64667b10836e1622f0be9ff6a6fec4ae2312f45412a0d3f6c916bb",
+      "source_changed_since_review": true,
+      "changed_topics": [
+        "500 g maitoa täsmennetty 1,5 % kevytmaidoksi",
+        "kuumana tarjoaminen ja tähteiden jäähdytys/säilytys",
+        "silakan pyyntialueen ja tarvittaessa alkuperäisen koon selvitys erityisrajoituksen arviointiin"
+      ],
+      "current_version_reapproval": "required",
+      "image_overlay_pr": 852,
+      "numeric_macro_withholding_pr": 855,
+      "translation_review": "draft; formal independent semantic evidence pending",
+      "publication_decision": "HOLD"
+    }
   }
 }
