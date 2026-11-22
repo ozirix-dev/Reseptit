@@ -102,7 +102,7 @@ export async function audit() {
   // The separately guarded pad-see-ew seventh case MUST still fail closed:
   // successfully evaluating 22 cases does not approve a different code SHA.
   const padGuard = capture(() => loadPadSeeEw(root));
-  if (padGuard.ok || !/Pad shared evidence changed: site\\/scripts\\/nutrition-model\\.ts/.test(String(padGuard.error))) {
+  if (padGuard.ok || !String(padGuard.error).includes("Pad shared evidence changed: site/scripts/nutrition-model.ts")) {
     throw Error("Expected pad-see-ew nutrition code seal HOLD changed: " + JSON.stringify(padGuard));
   }
   const protectedGk149 = {
