@@ -140,3 +140,61 @@ test('quarantined duplicate time keys are excluded from public FI review signals
   assert.deepEqual(report.signals.duplicateTimeKeys, []);
   assert.deepEqual(report.signals.invalidTime, []);
 });
+
+test('distinguishes unnumbered method text from absent FI preparation', () => {
+  const intro = 'Yksilöllinen ruokaohje.';
+  const original = recipe('prose', intro, 'Sekoita.') ;
+  const prose = original.replace('1. Sekoita.\n2. Tarjoa lämpimänä.', 'Sekoita ainekset. Tarjoa lämpimänä.');
+  const bullets = recipe('bullets', intro, 'Sekoita.')
+    .replace('1. Sekoita.\n2. Tarjoa lämpimänä.', '- Sekoita.\n- Tarjoa lämpimänä.');
+  const empty = recipe('empty', intro, 'Sekoita.')
+    .replace('1. Sekoita.\n2. Tarjoa lämpimänä.', '');
+  const missing = recipe('no-section', intro, 'Sekoita.')
+    .replace('## Valmistus\n\n1. Sekoita.\n2. Tarjoa lämpimänä.', '');
+  const inputs = [
+    { path: 'reseptit/aamupalat/prose.md', content: prose },
+    { path: 'reseptit/aamupalat/bullets.md', content: bullets },
+    { path: 'reseptit/aamupalat/empty.md', content: empty },
+    { path: 'reseptit/aamupalat/no-section.md', content: missing },
+    { path: 'reseptit/aamupalat/numbered.md', content: recipe('numbered', intro, 'Sekoita.') },
+  ];
+  const untouched = inputs.map(x => x.content);
+  const report = analyze(inputs);
+  assert.equal(report.counts.reviewed, 5);
+  assert.deepEqual(report.signals.missingPreparation.map(x => x.recipeId),
+    ['bullets', 'empty', 'no-section', 'prose']);
+  assert.deepEqual(report.signals.unnumberedPreparation.map(x => x.recipeId), ['bullets', 'prose']);
+  assert.deepEqual(report.signals.emptyPreparation.map(x => x.recipeId), ['empty', 'no-section']);
+  assert.deepEqual(inputs.map(x => x.content), untouched);
+});
+
+test('quarantine excludes unnumbered FI method advisory signals', () => {
+  const content = recipe('hidden', 'Kuvaus.', 'Sekoita.')
+    .replace('1. Sekoita.\n2. Tarjoa lämpimänä.', '- Sekoita.');
+  const report = analyze(
+    [{ path: 'reseptit/aamupalat/hidden.md', content }],
+    new Set(['hidden']),
+  );
+  assert.equal(report.counts.excludedQuarantine, 1);
+  assert.deepEqual(report.signals.unnumberedPreparation, []);
+  assert.deepEqual(report.signals.missingPreparation, []);
+  assert.deepEqual(report.signals.emptyPreparation, []);
+});
+
+test('empty preparation and unnumbered preparation partition the missing numbered steps', () => {
+  const inputs = [
+    {path: 'reseptit/aamupalat/empty.md', content: recipe('empty', 'Kuvaus.', 'Sekoita.')
+      .replace('1. Sekoita.\n2. Tarjoa lämpimänä.', '')},
+    {path: 'reseptit/aamupalat/bullets.md', content: recipe('bullets', 'Kuvaus.', 'Sekoita.')
+      .replace('1. Sekoita.\n2. Tarjoa lämpimänä.', '- Sekoita.')},
+    {path: 'reseptit/aamupalat/numbered.md', content: recipe('numbered', 'Kuvaus.', 'Sekoita.')},
+  ];
+  const report = analyze(inputs);
+  const missing = report.signals.missingPreparation.map(item => item.recipeId).sort();
+  const partition = [...report.signals.emptyPreparation, ...report.signals.unnumberedPreparation]
+    .map(item => item.recipeId).sort();
+  assert.deepEqual(missing, ['bullets', 'empty']);
+  assert.deepEqual(partition, missing);
+  assert.deepEqual(report.signals.emptyPreparation.map(item => item.recipeId), ['empty']);
+  assert.deepEqual(report.signals.unnumberedPreparation.map(item => item.recipeId), ['bullets']);
+});

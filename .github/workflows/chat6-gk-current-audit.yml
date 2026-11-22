@@ -1,0 +1,92 @@
+name: Chat-6 GK current-state audit (read-only)
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/chat6-gk-current-audit.yml"
+      - "site/scripts/chat6-gk-current-audit.mjs"
+      - "docs/reviews/2026-11-22-chat6-gk-current-audit.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: chat6-gk-audit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Restore SHA-256-verified recipe image inputs
+        id: images
+        shell: pwsh
+        env:
+          USE_PUBLIC_IMAGES: ${{ github.event_name == 'pull_request' && (github.event.pull_request.head.repo.full_name != github.repository || github.actor == 'dependabot[bot]') }}
+          IMAGE_CI_ACCESS_KEY_ID: ${{ secrets.IMAGE_CI_ACCESS_KEY_ID }}
+          IMAGE_CI_SECRET_ACCESS_KEY: ${{ secrets.IMAGE_CI_SECRET_ACCESS_KEY }}
+        run: |
+          $manifest = 'assets/images.manifest.json'
+          $data = Get-Content -LiteralPath $manifest -Raw | ConvertFrom-Json -AsHashtable
+          if ($env:USE_PUBLIC_IMAGES -eq 'true') {
+            $data['ci']['mode'] = 'public'
+            $manifest = Join-Path $env:RUNNER_TEMP 'public-image-inputs.json'
+            [IO.File]::WriteAllText($manifest, ($data | ConvertTo-Json -Depth 100), [Text.UTF8Encoding]::new($false))
+          }
+          $json = & python3 -B site/scripts/restore-image-inputs.py --manifest $manifest --project ozirix-dev/Reseptit --auto-root kuvat
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          $result = ($json -join [Environment]::NewLine) | ConvertFrom-Json
+          if ($result.status -ne 'PASS' -or [string]::IsNullOrWhiteSpace($result.imageRoot)) {
+            throw 'Image inputs were not verified'
+          }
+          Add-Content -LiteralPath $env:GITHUB_OUTPUT -Value "root=$($result.imageRoot)"
+          Write-Host "Verified $($result.files) image inputs."
+
+      - name: Apply verified Git-tracked image overlays
+        shell: bash
+        env:
+          VERIFIED_IMAGE_ROOT: ${{ steps.images.outputs.root }}
+        run: |
+          python3 -B site/scripts/verified_image_overlay.py --manifest assets/images.tracked-overlays.json --source-root kuvat --image-root "$VERIFIED_IMAGE_ROOT" --mode apply
+
+      - name: Install reproducible Node dependencies
+        run: npm ci
+        working-directory: site
+
+      - name: Create current recipe, nutrition and GK inventory
+        working-directory: site
+        env:
+          PROJECT_IMAGE_ROOT: ${{ steps.images.outputs.root }}
+        run: |
+          mkdir -p ../tmp/nutrition/chat6-gk-audit
+          node --import tsx scripts/recipe-state-cli.ts > ../tmp/nutrition/chat6-gk-audit/recipe-state-run.log
+          npm run audit:glycemic-coverage
+          node --import tsx scripts/gk-research-queue.ts 30 --catalog > ../tmp/nutrition/chat6-gk-audit/research-queue.json
+          node scripts/chat6-gk-current-audit.mjs
+
+      - name: Verify existing GI/GK calculation regressions
+        working-directory: site
+        run: npm run test:glycemic
+
+      - name: Upload source-pinned read-only audit
+        if: always()
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: chat6-gk-current-audit
+          path: |
+            tmp/nutrition/chat6-gk-audit/
+            tmp/nutrition/glycemic-coverage/current.md
+          if-no-files-found: warn
+          retention-days: 14
