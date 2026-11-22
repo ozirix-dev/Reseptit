@@ -45,13 +45,13 @@ En syrlig bärsås till glass, cheesecake eller ugnsdesserter.
 ## Tillagning
 
 1. Lägg lingon, vatten och socker i en kastrull. Använd rena, fina bär.
-2. Koka upp och sjud i 4–5 minuter tills bären mjuknar. Upphettning passar även frysta bär.
+2. Koka upp lingonen med finländskt ursprung och sjud i 4–5 minuter tills de mjuknar. Även frysta finländska lingon kan användas; kontrollera ursprungslandet på förpackningen.
 3. Mixa kort så att några lingon förblir hela. Sila inte; låt bärskal och fibrer stanna i såsen. Rör ner citronsaften.
 4. Servera varm, eller kyl snabbt och förvara i kylskåp fram till kall servering.
 
 ## Anteckningar
 
-- Detta redaktionella utkast har ingrediensbaserade beräknade näringsvärden. Glykemisk belastning och slutligt bildgodkännande återstår.
+- Detta är ett redaktionellt utkast. Inga numeriska näringsvärden har godkänts för publicering eller visas; glykemisk belastning är obestämd. Den AI-genererade bilden inväntar slutligt godkännande.
 - Preparation reference: https://www.k-ruoka.fi/reseptit/puolukkakastike
 
 - Den tidigare felaktiga illustrationsbilden har ersatts. Den nya AI-bilden inväntar fortfarande redaktionellt godkännande.
