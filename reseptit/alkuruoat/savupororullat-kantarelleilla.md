@@ -55,7 +55,7 @@ translation_status:
 
 # Savupororullat kantarellitäytteellä
 
-Savupororullat kantarellitäytteellä on toimituksellinen suomalainen alkuruokaluonnos. Määrät ja ajat ovat Recipavon toimituksellinen, julkaistuihin valmistusohjeisiin verrattu sovitus; Recipavo ei ole tehnyt omaa fyysistä valmistuskoetta.
+Savupororullat kantarellitäytteellä on suomalainen alkuruoka. Määrät ja ajat ovat Recipavon toimituksellinen, julkaistuihin valmistusohjeisiin verrattu sovitus; Recipavo ei ole tehnyt omaa fyysistä valmistuskoetta.
 
 ## Valmistus
 
@@ -66,8 +66,8 @@ Savupororullat kantarellitäytteellä on toimituksellinen suomalainen alkuruokal
 
 ## Muistiinpanot
 
-- **Tila:** FI-julkaisuaineisto hyväksytty toimituksellisena sovituksena; EN/SV/TH-kieliversiot ovat edelleen luonnoksia. Reseptin identiteetti tarkistettu mainin reseptitiedostonimistä ja tämänhetkisistä avoimista PR:istä; lopullinen sisältö- ja semanttinen duplikaattitarkistus odottaa.
+- **Tila:** Suomenkielinen resepti julkaistu. Englannin-, ruotsin- ja thaikieliset versiot ovat luonnoksia.
 - **Lähde- ja valmistusnäyttö:** Toimituksellinen sovitus on verrattu päivättyyn lähdekatselmointiin ja testattuihin ulkoisiin valmistusohjeisiin. Mittasuhteet eivät ole Recipavon itse keittiössä mitattuja.
 - **Ruokaturva:** Savuporon tulee olla syöntivalmista kypsää tuotetta; sieniä ei tarjota raakoina. Kylmäsäilytys ja tuotepakkausten allergeenit tarkistettava.
 - **Ravintoarvot:** Ei laskettu; numeerisia makroja ei julkaista. GK: ei määritetty.
-- **Kuva ja käännökset:** AI-havainnekuva on luotu 720 × 720 WebP-muotoon ja sen SHA-256 on luovutusmanifestissa; kuvatiedosto ja image-metatiedot ovat Chat-4:n Draft-haarassa. Kuva on tarkistettava ennen julkaisua. EN/SV/TH ovat luonnoksia. Käännösten merkityskatselmointi puuttuu.
+- **Kuva ja käännökset:** 720 × 720 WebP on tekoälyn luoma havainnekuva, ei valmistetun annoksen valokuva. Kuva on Git-versionhallinnassa ja SHA-256 kirjattu kuvamanifestiin. EN/SV/TH ovat luonnoksia; virallinen kielikohtainen julkaisuhyväksyntä puuttuu.
