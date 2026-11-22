@@ -4,7 +4,7 @@ recipe_id: kesakeitto
 url_slug: kesakeitto
 category: paaruoka
 language: fi
-status: draft
+status: published
 servings: 6
 time_total_min: 40
 difficulty: "helppo"
@@ -83,5 +83,5 @@ Uudet perunat, porkkanat, kukkakaali, herneet ja tilli kypsyvät kesäkeitoksi l
 ## Muistiinpanot
 
 - Sisältää maitoa ja vehnää. Tarjoa kuumana. Jäähdytä tähteet nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6 °C:ssa.
-- Kuva on tekoälyllä tuotettu havainnekuva; resepti on toimituksellinen luonnos. Omaa fyysistä valmistustestiä, hyväksyttyä koko reseptin ravintolaskentaa, GK-arviota tai gluteenittomuusväitettä ei ole tehty.
+- Kuva on tekoälyllä tuotettu havainnekuva; resepti on toimituksellisesti laadittu. Omaa fyysistä valmistustestiä tai hyväksyttyä koko reseptin ravintolaskentaa ei ole tehty. GK on määrittämätön, eikä gluteenittomuusväitettä ole hyväksytty.
 - Lähdevertailu: [Martat](https://www.martat.fi/reseptit/kesakeitto/). Oma, muokattu annosresepti, ei lähdetekstin kopio.

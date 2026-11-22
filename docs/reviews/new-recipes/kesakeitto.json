@@ -2,10 +2,10 @@
   "schema_version": 1,
   "recipe_id": "kesakeitto",
   "source_path": "reseptit/paaruoat/kesakeitto.md",
-  "source_sha256": "a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu toimituksellinen lähde-/valmistus-/turvallisuuskatselmointi, ei riippumaton julkaisuhyväksyjä",
-  "reviewed_at": "2026-11-22",
+  "source_sha256": "5722d8fc2c3097f7bd96ec5a7a816f2df87d016e0920883661668691c144254e",
+  "decision": "approved",
+  "reviewed_by": "Chat-1 – FI-julkaisupäätös 23.11.2026; riippumaton Chat-6:n nykyversion sisällöllinen katselmointi",
+  "reviewed_at": "2026-11-23",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -24,11 +24,11 @@
     },
     "method": {
       "status": "pass",
-      "notes": "Chat 3 22.11.2026: Marttojen lähde tukee kasvisten keittämistä, herneiden myöhäistä lisäämistä sekä vehnäjauhon sekoittamista kylmään maitoon. Resepti kypsentää perunaa/porkkanaa 7–8 min, kukkakaalia 5–7 min, herneitä 2 min ja jauhoa miedosti 4–5 min, minkä jälkeen haarukalla tarkistetaan perunan ja porkkanan todellinen kypsyys. Eri kokoluokat voivat pidentää keittoaikaa. Kirjallinen valmistusperiaate PASS, ei väite fyysisestä kokkikokeesta. Versioauditointi 22.11.2026: riippumaton Chat-1-katselmointi #853 koski FI-lähdetiivistettä 79b70a59c4ff3b8bd84069964b52a3b5e902664427e20c9959d9c4187ca4e3a8 (PR-HEAD 2efb297). Nykyiseen a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af -lähteeseen lisättiin perunan/porkkanan haarukkakypsyystarkistus; ei muutettu määriä, vaiheiden määrää tai peruskypsennysaikoja. #853 ei ole tämän uudemman SHA:n muodollinen hyväksyntä: uudelleenkatselmointi vaaditaan ennen decision=approved. Riippumaton Chat-6:n nyky-SHA-arvio https://github.com/ozirix-dev/Reseptit/pull/787#issuecomment-7080300417: porrastettu kypsennys, kylmään maitoon sekoitettu suuruste ja haarukalla tehtävä kypsyystarkistus PASS. Tämä täsmentää #853:n vanhan SHA-version katselmointia, mutta ei ole lopullinen julkaisuvaltuus."
+      "notes": "Chat 3 22.11.2026: Marttojen lähde tukee kasvisten keittämistä, herneiden myöhäistä lisäämistä sekä vehnäjauhon sekoittamista kylmään maitoon. Resepti kypsentää perunaa/porkkanaa 7–8 min, kukkakaalia 5–7 min, herneitä 2 min ja jauhoa miedosti 4–5 min, minkä jälkeen haarukalla tarkistetaan perunan ja porkkanan todellinen kypsyys. Eri kokoluokat voivat pidentää keittoaikaa. Kirjallinen valmistusperiaate PASS, ei väite fyysisestä kokkikokeesta. Versioauditointi 22.11.2026: riippumaton Chat-1-katselmointi #853 koski FI-lähdetiivistettä 79b70a59c4ff3b8bd84069964b52a3b5e902664427e20c9959d9c4187ca4e3a8 (PR-HEAD 2efb297). Nykyiseen a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af -lähteeseen lisättiin perunan/porkkanan haarukkakypsyystarkistus; ei muutettu määriä, vaiheiden määrää tai peruskypsennysaikoja. #853 ei ole tämän uudemman SHA:n muodollinen hyväksyntä: uudelleenkatselmointi vaaditaan ennen decision=approved. Riippumaton Chat-6:n nyky-SHA-arvio https://github.com/ozirix-dev/Reseptit/pull/787#issuecomment-7080300417: porrastettu kypsennys, kylmään maitoon sekoitettu suuruste ja haarukalla tehtävä kypsyystarkistus PASS. Tämä täsmentää #853:n vanhan SHA-version katselmointia, mutta ei ole lopullinen julkaisuvaltuus. FI-julkaisun 23.11.2026 metadatamuutoksessa ainesmäärät, keittoajat ja menetelmä säilyvät 22.11. riippumattomasti arvioidun SHA-version mukaisina. Julkaisustatus ja loppuhuomion luonnosmaininta on päivitetty; Chat-1:n rajattu FI-julkaisupäätös: https://github.com/ozirix-dev/Reseptit/pull/787#issuecomment-7087120681."
     },
     "food_safety": {
       "status": "pass",
-      "notes": "Chat 3 22.11.2026: Sisältää maitoa ja vehnää kaikilla FI/EN/SV/TH-sivuilla, vehnäjauhoja kypsennetään 4–5 minuuttia. Tarjoa keitto kuumana, jäähdytä ylijäämä nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6 °C:ssa. Ruokaviraston ohjeet: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/ . Rajattu elintarviketurvallisuus- ja allergeenikatselmointi, ei keittiölämpötilojen mitattua varmistusta. Eri SHA-versioiden vertailu: nykyinen lähde tarkentaa aiempaa 'jäähdytä nopeasti' -ohjetta mataliin astioihin ja alle +6 °C säilytykseen sekä lisää kuumana tarjoamisen. Chat-1:n riippumaton kirjallinen katselmointi #853 koski edeltävää lähdettä; tätä tarkennusta ei saa esittää tuon katselmoinnin uudeksi allekirjoitukseksi. Riippumaton Chat-6:n nyky-SHA-arvio https://github.com/ozirix-dev/Reseptit/pull/787#issuecomment-7080300417: maito/vehnä, kuumana tarjoaminen ja nopea jäähdytys/säilytys rajattu PASS. Pakasteherneet ovat keitossa noin 2 min ennen 4–5 min suurustushaudutusta; käyttäjän on noudatettava pakasteherneiden pakkauksen kuumennusohjetta ja varmistettava kunnollinen kuumennus erityisesti riskiryhmille (Ruokaviraston pakastevihannesohje). Tämä lisähuomio EI ole nykyisen FI-julkaisusivun sanamuoto eikä väitä sitä sinne lisätyksi; mahdollisen ohjemuutoksen jälkeen FI-SHA ja riippumaton katselmointi tarkistetaan uudelleen."
+      "notes": "Chat 3 22.11.2026: Sisältää maitoa ja vehnää kaikilla FI/EN/SV/TH-sivuilla, vehnäjauhoja kypsennetään 4–5 minuuttia. Tarjoa keitto kuumana, jäähdytä ylijäämä nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6 °C:ssa. Ruokaviraston ohjeet: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/ . Rajattu elintarviketurvallisuus- ja allergeenikatselmointi, ei keittiölämpötilojen mitattua varmistusta. Eri SHA-versioiden vertailu: nykyinen lähde tarkentaa aiempaa 'jäähdytä nopeasti' -ohjetta mataliin astioihin ja alle +6 °C säilytykseen sekä lisää kuumana tarjoamisen. Chat-1:n riippumaton kirjallinen katselmointi #853 koski edeltävää lähdettä; tätä tarkennusta ei saa esittää tuon katselmoinnin uudeksi allekirjoitukseksi. Riippumaton Chat-6:n nyky-SHA-arvio https://github.com/ozirix-dev/Reseptit/pull/787#issuecomment-7080300417: maito/vehnä, kuumana tarjoaminen ja nopea jäähdytys/säilytys rajattu PASS. Pakasteherneet ovat keitossa noin 2 min ennen 4–5 min suurustushaudutusta; käyttäjän on noudatettava pakasteherneiden pakkauksen kuumennusohjetta ja varmistettava kunnollinen kuumennus erityisesti riskiryhmille (Ruokaviraston pakastevihannesohje). Tämä lisähuomio EI ole nykyisen FI-julkaisusivun sanamuoto eikä väitä sitä sinne lisätyksi; mahdollisen ohjemuutoksen jälkeen FI-SHA ja riippumaton katselmointi tarkistetaan uudelleen. Julkaisuversio ei muuta 22.11.2026 Chat-6:n arvioimaa pakasteherneiden kuumennusjärjestystä, ainesmääriä tai turvallisuusohjetta. Pakasteherneiden pakkauksen kuumennusohje on edelleen noudatettava erityisesti riskiryhmille; tämän huomion lisäämistä erillisenä valmistusohjemuutoksena ei edellytetty tässä rajatussa metadatapäivityksessä."
     },
     "servings_and_time": {
       "status": "pass",
@@ -36,7 +36,7 @@
     },
     "nutrition": {
       "status": "pass",
-      "notes": "PASS koskee VAIN numeeristen ravintoarvojen tietoista poisjättöä nykyisen FI-SHA:n a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af julkaisuehdokkaasta, ei laskettuja arvoja eikä koko reseptin julkaisupäätöstä. Riippumaton Chat-6:n SHA-sidottu lähde-, valmistus- ja ravintonäytön rajauskatselmointi 22.11.2026: https://github.com/ozirix-dev/Reseptit/pull/787#issuecomment-7080300417 (poisjättö PASS). Chat-1:n aiempi #855 osoittaa valitun menettelyn ja vanhan version tuotekohtaiset puutteet: docs/nutrition/reviews/chat1-five-homefood-withheld-2026-11-22.md. Nykyversiossa 400 g 1,5 % maitoa on täsmennetty, mutta kevätsipulin täydet koostumustiedot ja perunan/herneiden lähde- ja saantoerot puuttuvat edelleen; reseptin 4 makrokenttää ja energia ovat kokonaan poissa. Null/puuttuva ei ole nolla. Numeeristen makrojen julkaiseminen edelleen HOLD. Tämä tarkistus ei muodosta decision:approved-hyväksyntää."
+      "notes": "PASS koskee VAIN numeeristen ravintoarvojen tietoista poisjättöä nykyisen FI-SHA:n a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af julkaisuehdokkaasta, ei laskettuja arvoja eikä koko reseptin julkaisupäätöstä. Riippumaton Chat-6:n SHA-sidottu lähde-, valmistus- ja ravintonäytön rajauskatselmointi 22.11.2026: https://github.com/ozirix-dev/Reseptit/pull/787#issuecomment-7080300417 (poisjättö PASS). Chat-1:n aiempi #855 osoittaa valitun menettelyn ja vanhan version tuotekohtaiset puutteet: docs/nutrition/reviews/chat1-five-homefood-withheld-2026-11-22.md. Nykyversiossa 400 g 1,5 % maitoa on täsmennetty, mutta kevätsipulin täydet koostumustiedot ja perunan/herneiden lähde- ja saantoerot puuttuvat edelleen; reseptin 4 makrokenttää ja energia ovat kokonaan poissa. Null/puuttuva ei ole nolla. Numeeristen makrojen julkaiseminen edelleen HOLD. Tämä tarkistus ei muodosta decision:approved-hyväksyntää. 23.11.2026 FI-julkaisuversiossa kaikki numeeriset ravintokentät ja energia pysyvät poissa. Julkaisun uutta SHA-256:ta 5722d8fc2c3097f7bd96ec5a7a816f2df87d016e0920883661668691c144254e ei pidä tulkita uudeksi laskentahyväksynnäksi: 22.11.2026 Chat-6:n riippumaton arvio koski täysin samoja 11 punnittua ainesriviä ja annosmäärää."
     },
     "glycemic": {
       "status": "unavailable",
@@ -52,7 +52,7 @@
       "review_pr": 853,
       "review_report": "docs/reviews/2026-11-22-chat1-kesakeitto-independent-culinary-review.md",
       "reviewed_source_sha256": "79b70a59c4ff3b8bd84069964b52a3b5e902664427e20c9959d9c4187ca4e3a8",
-      "current_source_sha256": "a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af",
+      "current_source_sha256": "5722d8fc2c3097f7bd96ec5a7a816f2df87d016e0920883661668691c144254e",
       "source_changed_since_review": true,
       "changed_topics": [
         "maito täsmennetty 1,5 % kevytmaidoksi",
@@ -60,11 +60,11 @@
         "tähteiden jäähdytys ja kylmäsäilytys täsmennetty",
         "luonnoksen testaus- ja ravintoarvoväitteet rajattu tarkemmin"
       ],
-      "formal_reapproval": "current-source independent scoped review available from Chat 6; final publication approval pending Chat-1",
+      "formal_reapproval": "FI publication authorized by Chat-1 decision 7087120681 on independently reviewed unchanged culinary source; new metadata-only source SHA bound here",
       "image_approval_pr": 852,
       "numerical_nutrition_withholding_pr": 855,
       "translation_evidence": "pending for current draft source",
-      "publication_decision": "HOLD"
+      "publication_decision": "Chat-1 FI approved; EN/SV/TH draft"
     },
     "independent_current_source_review": {
       "reviewer": "Chat 6, riippumaton kirjallinen lähde- ja turvallisuuskatselmointi; ei julkaisuvaltuus",
@@ -80,7 +80,20 @@
       "glycemic": "unavailable",
       "image": "verified technical image overlay only",
       "translations": "EN/SV/TH draft; no formal semantic approval",
-      "publication": "hold; Chat-1 integration decision pending"
+      "publication": "Chat-1 authorized FI publication on unchanged culinary source; Chat-6's independent review still scoped to prepublication raw SHA, not an additional GitHub approval"
+    },
+    "fi_publication_authorization": {
+      "decision_id": "CHAT1-KESAKEITTO-FI-PUBLICATION-AUTHORIZATION-20261123",
+      "authorized_by": "Chat-1 (Pääkokki), GitHub-käyttäjätunnuksen ozirix-dev PR-kommentissa",
+      "authorized_at": "2026-11-23",
+      "reference": "https://github.com/ozirix-dev/Reseptit/pull/787#issuecomment-7087120681",
+      "reviewed_original_source_sha256": "a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af",
+      "publication_source_sha256": "5722d8fc2c3097f7bd96ec5a7a816f2df87d016e0920883661668691c144254e",
+      "change_scope": "FI status draft -> published ja loppuhuomion toimituksellisen luonnoksen maininta päivitetty; ainesosat, määrät, valmistus ja elintarviketurvallisuusohje muuttumattomia",
+      "en_sv_th": "status draft, ei julkaistujen kieliparien semanttista hyväksyntää",
+      "nutrition": "no numeric values; withholding only",
+      "glycemic": "unavailable",
+      "image": "SHA-locked AI illustration"
     }
   }
 }
