@@ -11,7 +11,11 @@ export function recipeJsonLd(recipe: RecipeEntry, canonicalUrl?: string): Record
   }).filter(([, value]) => !withholding && value !== null).map(([key, value]) => [key, `${value} g`]));
   // Only source-reviewed, exact recipe-and-method pairs can publish a
   // structured cookingMethod. Other source metadata remains unverified.
-  const methodLabel = recipe.recipeId === "japanilainen-natto-riisikulho"
+  const methodLabel = recipe.recipeId === "indonesialainen-nasi-uduk-aamiaisella"
+    && recipe.locale === "fi"
+    && JSON.stringify(recipe.cookingMethod) === '["keittäminen"]'
+    ? "Keittäminen"
+    : recipe.recipeId === "japanilainen-natto-riisikulho"
     && JSON.stringify(recipe.cookingMethod) === '["keittäminen"]'
     ? { fi: "Keittäminen", en: "Boiling", sv: "Kokning", th: "การต้ม" }[recipe.locale]
     : recipe.recipeId === "paprikainen-vhh-gulassi"
