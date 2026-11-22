@@ -229,7 +229,6 @@ jobs:
         if: steps.select.outputs.run_content_sync == 'true' && steps.select.outputs.run_build != 'true'
         run: |
           npm run content:sync
-          npm run audit:nutrition -- --strict
           npm run audit:glycemic-load
         working-directory: site
 
@@ -389,6 +388,16 @@ jobs:
             site/similarity-inventory.json
           if-no-files-found: error
           retention-days: 14
+
+      # The ordinary build generates validated recipe routes but does not scan
+      # every historical nutrition record. Risky evidence/model changes still
+      # fail closed under the same mandatory Recipe site job.
+      - name: Audit published nutrition evidence (risk-based, strict)
+        if: steps.select.outputs.run_nutrition == 'true' || steps.select.outputs.full == 'true'
+        run: |
+          npm run content:sync
+          npm run audit:nutrition -- --strict
+        working-directory: site
 
       - name: Build the publishable site
         env:
