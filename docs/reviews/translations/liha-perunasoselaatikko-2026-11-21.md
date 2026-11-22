@@ -24,3 +24,9 @@
 ## Hyväksyntärajat
 
 Tämä dokumentti ei ole `meta/kaannokset/codex-review-evidence.json` -rekisterin hyväksyntä, eikä täytä vaadittavaa lähdesemanttisten tiivisteiden kirjausta. Kun FI-version sisältö on lopullinen, tee vaadittu Codex-merkitysvertailu ja rekisterikuittaus. `docs/reviews/new-recipes/liha-perunasoselaatikko.json`:n `decision: hold` säilyy.
+
+## Chat-3:n lisäkatselmointi 22.11.2026
+
+FI/EN/SV/TH on nyt tarkennettu käyttämään **17 % naudan jauhelihaa** ja **1,5 % kevytmaitoa**, jotka vastaavat ravintokandidaatissa aiemmin vain proxyina käytettyjä Fineli-luokkia. Neljässä kielessä yhteiset 7 ainesmäärää, 6 annosta sekä 200 °C / 25–30 min paisto eivät muuttuneet. Uunivuoka on tarkennettu vähintään **3 litraan**, ja tähteiden jäähdytyksen jälkeen kylmäsäilytys on alle **+6 °C**.
+
+FI-raakateksti SHA-256: `c2bc22e3f1fe53ae292b7f24fad20def5f247b22494f5f4c98f4c68d84da1922`; Git-blob `d757f61f6cd38037d9eb6900d8974fc45f187907`. Chat 3:n rajattu 7/7 ainesosarivien, 5/5 valmistusvaiheiden, kuumennuksen, allergian ja kylmäsäilytyksen merkitysvertailu ei osoittanut kriittisiä eroja. **Ei virallista Codex-/ihmiskielen loppuhyväksyntää:** julkaistuille kielille varattu `meta/kaannokset/codex-review-evidence.json` pysyy koskemattomana, koska käännökset ovat Draft-tilassa. `decision: hold` säilyy.

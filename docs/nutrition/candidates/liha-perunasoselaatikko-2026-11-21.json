@@ -6,8 +6,8 @@
   "prepared_by": "Chat 3 / Kokki-3, laskennallinen lähdevertailu, ei hyväksytty ravintoarvo",
   "recipe_id": "liha-perunasoselaatikko",
   "source_path": "reseptit/paaruoat/liha-perunasoselaatikko.md",
-  "source_sha256": "8ca0a285171870bb726e6c29f389610712d124d551ab0a92893ed4a603bbb66c",
-  "source_blob_sha": "b2649678ae8bdc6697936f4431f10012de1f0a64",
+  "source_sha256": "c2bc22e3f1fe53ae292b7f24fad20def5f247b22494f5f4c98f4c68d84da1922",
+  "source_blob_sha": "d757f61f6cd38037d9eb6900d8974fc45f187907",
   "servings": 6,
   "reference_data": "docs/nutrition/food-records.json",
   "reference_data_provider": "THL Fineli, Repo-curated Release 20; CC BY 4.0",
@@ -45,12 +45,12 @@
     },
     {
       "line": 2,
-      "ingredient": "naudan jauhelihaa",
+      "ingredient": "naudan jauhelihaa, rasvaa 17 %",
       "recipeAmount": 450,
       "recipeUnit": "g",
       "accountedGrams": 450,
-      "matchQuality": "proxy",
-      "matchNotes": "Kriittinen: alkuperäinen ohje ei kerro jauhelihan rasvaa. 17 % naudan jauhelihan vertailu on vain skenaario, ei lähde- tai tuotehyväksyntä.",
+      "matchQuality": "direct",
+      "matchNotes": "FI/EN/SV/TH-lähteissä nimetty 17% naudan jauheliha. Fineli #11562 on sama ravintoluokka; tarkka tuote ja kypsennyksen retentio edelleen todentamatta.",
       "foodRecord": {
         "id": "fineli-11562-2026-10-25",
         "name": "JAUHELIHA, NAUDAN, RASVAA 17 %",
@@ -105,12 +105,12 @@
     },
     {
       "line": 4,
-      "ingredient": "maitoa",
+      "ingredient": "kevytmaitoa, rasvaa 1,5 %",
       "recipeAmount": 250,
       "recipeUnit": "g",
       "accountedGrams": 250,
-      "matchQuality": "proxy",
-      "matchNotes": "Finelin 1,5 % kevytmaito on arvio; reseptissä maidon rasvaa ei määritelty.",
+      "matchQuality": "direct",
+      "matchNotes": "FI/EN/SV/TH-lähteessä maito täsmennetty 1,5 % kevytmaidoksi, Fineli #684 vastaa samaa ravintoluokkaa. Tuote ja saanto voivat vaihdella.",
       "foodRecord": {
         "id": "fineli-684-release-20",
         "name": "MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG",
@@ -255,7 +255,7 @@
     "approved_fat_per_portion_g": null,
     "glycemic_load": null
   },
-  "publication_gate": "HOLD: vahvista jauhelihan rasva ja maitotyyppi, laske tarvittaessa vaihtoehtoinen 7–10 % skenaario oikealla Fineli-tietueella, tarkista tuotekohtaiset ravintoarvot ja hyväksyntä.",
+  "publication_gate": "HOLD: pakkauskohtaiset 17% naudan jauhelihan ja 1,5% maidon arvot sekä kypsän saannon/retention vaikutus, pippurin kuitu ja polyolit eivät ole kokonaan varmistettu. 3 litran vuoka on määritetty, mutta todellinen 80 minuutin valmistus ei ole koekeittiössä mitattu. Ei neljää julkista makroa eikä numeerista GK-arvoa.",
   "quantified_rows_subtotals_per_portion_g": {
     "carbohydrate": 28.911,
     "protein": 19.036,

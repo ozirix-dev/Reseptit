@@ -2,10 +2,10 @@
   "schema_version": 1,
   "recipe_id": "liha-perunasoselaatikko",
   "source_path": "reseptit/paaruoat/liha-perunasoselaatikko.md",
-  "source_sha256": "8ca0a285171870bb726e6c29f389610712d124d551ab0a92893ed4a603bbb66c",
+  "source_sha256": "c2bc22e3f1fe53ae292b7f24fad20def5f247b22494f5f4c98f4c68d84da1922",
   "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "reviewed_by": "Chat 3 – rajattu toimituksellinen valmistus-, turvallisuus- ja annoskatselmointi; ei riippumaton julkaisuhyväksyjä",
+  "reviewed_at": "2026-11-22",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -16,37 +16,38 @@
   "nutrition_evidence": "",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Vertailtu reseptipolkujen nimiin ja avoimiin PR:iin; lopullinen yhtäläisyystarkistus tehtävä julkaisuversiolle."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: päähaaran FI-reseptipolkujen vertailussa ei ole samaa liha-perunasoselaatikko-tunnusta tai samaa reseptipolkua. Lähimmät perunalaatikot eroavat jauhelihan, kerrostuksen tai muusin osalta. Tämä on rajattu nykytilan toimituksellinen tarkistus; uusi main, slug- ja route-uniikkius tarkistettava julkaisuportissa."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Ainekset punnittu luonnosversioon; tuotemerkkien, syötävän osuuden ja määrien lopullinen tarkistus puuttuu."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: 7 ainesriviä ja 6 annosta. 1000 g kuorittua jauhoista perunaa, 450 g naudan 17% jauhelihaa, 120 g sipulia, 250 g 1,5% kevytmaitoa, 40 g voita (30+10), 6 g suolaa (3+3) ja 1 g mustapippuria. K-Ruoan vertailussa jauheliha 17% ja kerrostettu perunasose, Valion versio sisältää munaa jota Recipavo ei käytä. Rasvaprosentit vastaavat nyt jo olemassa olleita Fineli-laskentaproxyja; täsmällinen merkki/saanto jää nutrition-porttiin."
     },
     "method": {
-      "status": "pending",
-      "notes": "Kuvattu valmistustapa tarkistettu vertailuohjeita vastaan; itsenäinen kokkikelpoisuusarvio tarvitaan."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: perunat kypsennetään ensin täysin pehmeiksi (15–20 min), soseutetaan lämmitetyn maidon ja voin kanssa; 17% naudan jauheliha kypsennetään kauttaaltaan sipulin kanssa; kerrostetaan vähintään 3 litran vuokaan ja paistetaan 200°C 25–30 min. Menetelmä vastaa lähteiden periaatetta mutta punnitut suhteet oma sovitus. Ei fyysisen koekeittiökokeen väitettä."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Riski- ja allergeenihuomiot kirjattu lähdereseptiin, mutta riippumatonta loppuarviointia ei vielä ole."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: naudan jauheliha ruskistetaan ja kypsennetään läpikotaisin ennen kerrostamista, paisto jatkuu 200°C:ssa. Maito on selvä allergeeni; tuotekohtaiset pakkausmerkinnät tarkistettava. Jäähdytä tähteet nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6°C; vältetään hyväksymätön gluteenittomuusväite. Tämä on rajattu lähde-/turvallisuusarvio, ei mittaustulos. https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/"
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "Annokset, työvaiheet ja aikataulu ovat luonnosarvioita; valmistus ja välinekapasiteetti tarkistettava."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: raakaaineiden massa 1867 g ennen perunan keittovesihävikkiä ja uunihaihtumaa; 6 annosta noin 311g lähtöaineista. Esikeitto 15–20 min, jauhelihan paisto ja vuokaan kerrostus, uuni 25–30 min sekä 10 min lepo muodostavat realistisen noin 80 min kokonaisajan, mutta todellinen valmistelu vaihtelee. Vähintään 3 litran vuoka jättää sekoitus-/kerrostusvaraa. Ei fyysistä mittauskoetta."
     },
     "nutrition": {
       "status": "pending",
       "notes": "Reseptiin sidottu riippumaton ravintolaskelma puuttuu eikä nollia tai lähteen eri annoksen arvoja kopioida."
     },
     "glycemic": {
-      "status": "pending",
-      "notes": "GI/GK-arvoa ei arvata; puuttuvuus voidaan hyväksyä unavailable-tilassa kirjallisella perustelulla."
+      "status": "unavailable",
+      "notes": "Tälle täsmälliselle perunamuusi–naudan jauheliha–maito-vuoalle ei ole hyväksyttyä reseptikohtaista GI/GK-arviointia. GK jätetään määrittämättömäksi eikä lukua arvata."
     }
   },
   "supplementary_evidence": {
     "image_path": "kuvat/paaruoat/liha-perunasoselaatikko.webp",
-    "image_review": "Tekoälyn tuottama havainnekuva, joka on vielä hyväksyttävä julkaisuun.",
-    "physical_cook_test": false
+    "image_review": "Chat 3 22.11.2026: kuvan 960x746 Git-tracked AI-havainnekuvassa näkyy kerroksellinen perunasosekuorrute ja kypsä jauheliha. Rajattu visuaalinen vastaavuus OK, kuva ei ole oikea koekeittiövalokuva eikä korvaa riippumatonta kuva-/lisenssihyväksyntää. Mainin overlay approved=true on tekninen CI-lähdesyöte.",
+    "physical_cook_test": false,
+    "image_sha256": "a7c032c3b09e76bac94a3fb467a1e1b29d1da9dce469061a9e4a0971b8322923"
   }
 }
