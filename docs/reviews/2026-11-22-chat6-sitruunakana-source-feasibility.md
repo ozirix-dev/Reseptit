@@ -1,9 +1,9 @@
 # Chat-6: sitruuna-yrttikanan ravintolähteiden ehdollinen laskentakoe
 
-**Päiväys:** 22.11.2026  
-**Omistaja:** Chat 6  
-**Tila:** ERISTETTY KOE / EI RAVINTOARVOJEN JULKAISUHYVÄKSYNTÄÄ  
-**Lähtö-main:** `9804d8da0233f2703e3f3504bbb1117e1f5c5676` (haaraluonnin hetkellä)  
+**Päiväys:** 22.11.2026
+**Omistaja:** Chat 6
+**Tila:** ERISTETTY KOE / EI RAVINTOARVOJEN JULKAISUHYVÄKSYNTÄÄ
+**Lähtö-main:** `9804d8da0233f2703e3f3504bbb1117e1f5c5676` (haaraluonnin hetkellä)
 **Resepti:** `sitruuna-yrttikana-parsa` (4 annosta)
 
 ## Päätösraja ja käyttäjän hyväksyntä
