@@ -24,4 +24,4 @@ Kolmen aiemmin julkaistun käännöksen muuttaminen edellyttää uusille semantt
 
 Chat-4:n olemassa olevat rajatut regressiotestit: `site/tests/chat4-date-ketchup-en-sv-parity.test.ts` ja `site/tests/chat4-date-ketchup-th-meaning.test.ts`. Vanhojen, keskeneräisyyden dokumentoivien katselmointimuistioiden sisältö säilytetään historiana. Nykyinen asiakirja täydentää niitä lopullisilla versionkohtaisilla lähteillä.
 
-**Tila:** käännösten dokumentoidut merkitystarkistukset PASS; tuotanto-/merge-päätös tehdään vasta tämän PR:n uuden HEADin molempien pakollisten CI-ajojen, main-CI:n ja Repo Guardin jälkeen. PR pysyy ensin Draftina. 
+**Tila:** käännösten dokumentoidut merkitystarkistukset PASS; tuotanto-/merge-päätös tehdään vasta tämän PR:n uuden HEADin molempien pakollisten CI-ajojen, main-CI:n ja Repo Guardin jälkeen. PR pysyy ensin Draftina.
