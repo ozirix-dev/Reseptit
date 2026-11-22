@@ -46,6 +46,20 @@ Repon makrotoleranssit ovat **1 g/annos** kullekin neljälle makrorajalle ja **1
 
 Kaikki lähdearvot ovat tyypillisiä koostumustietoja. Ne **eivät** sellaisenaan todista kunkin mahdollisen tuotemerkin, raaka-aine-erän, raasteen syvyysvaihtelun tai valmistusmuutoksen absoluuttista enimmäisvaikutusta. Siksi kokeen numerollinen `ESTIMATE WITH EVIDENCE` ei ole itsessään julkaisu- tai sisältöhyväksyntä.
 
+### Uusi riippumaton massapohjainen vastatesti (22.11.2026)
+
+USDA:n keskimääräiset koostumusarvot ovat **nimellisiä**, eikä niitä saa nimetä kaikkia tuotemerkkejä ja eriä kattavaksi varmennetuksi ylärajaksi. Tätä erotusta varten testataan erikseen **lähteestä riippumaton, erittäin varovainen massaraja**: jos kumpaakin pientä ainesta arvioidaan vain sen punnitun kokonaismassan perusteella, minkä tahansa yksittäisen makron enimmäisosuudeksi varataan koko poisjätetty massa. Energiaa koetellaan lisäksi 9 kcal / poisjätetty g -rasvaenergiakertoimella; tämä on tarkoituksella konservatiivinen **skenaario-oletus**, ei kemiallinen mittaus eikä uusi reseptikohtainen energia-arvo.
+
+| Ainesosa | Kokonaismassa / 4 annosta | Kunkin makron massaraja / annos | Energia 9 kcal/g -skenaariossa / annos |
+| --- | ---: | ---: | ---: |
+| Valkosipulijauhe 3,1 g | 0,775 g | 0,775 g | 6,975 kcal |
+| Sitruunankuori 2 g | 0,500 g | 0,500 g | 4,500 kcal |
+| **Yhteensä** | **1,275 g** | **1,275 g** | **11,475 kcal** |
+
+Makrokohtainen 1 g/annos -toleranssi **ylittyy 0,275 g**, energian 10 kcal/annos -toleranssi **ylittyy skenaariossa 1,475 kcal**. Repon `calculate()` palauttaa tähän massaan perustuvassa testissä tarkoituksellisesti `INSUFFICIENT SOURCE DATA` ja `omissionWithinTolerance=false`. Tämä ei todista, että aidossa ruoassa olisi 1,275 g kutakin ravintoainetta tai 11,475 kcal: se osoittaa, ettei *pelkkä tunnettu massa* riitä todistamaan poisjättöä nykyisten toleranssien sisään.
+
+**Tutkimuspäätös:** nimellinen, lähdeprofiiliin sidottu laskentaskenaario mahtuu rajoihin, mutta riippumaton massapohjainen varmistusskenaario ei. **Ei makrojen julkaisua tämän kokeen perusteella.** Ennen mahdollista lähteistä hyväksyttyä poisjättöä tarvitaan kirjallisesti perusteltu, ainesosa-/tuote- ja valmistusversioon sidottu ylärajamalli sekä riippumaton C-riskinen lähdearvio. `WITHHELD_SOURCE_INCOMPLETE`, neljä `null`-arvoa ja nykyinen GK 0,88 LOW säilyvät, samoin Chat-5:n Issue #266:n laskentaportit.
+
 ## Vain ehdollisen laskentakokeen tulos
 
 Seitsemän sisältöön kuuluvaa ainesriviä muodostavat laskentamallissa (vanhan pääreseptin ainesmäärillä) testattavan osuuden. Valkosipuli- ja sitruunankuoririvi ovat ehdollisesti kokonaan pois rajattuja, ja suolan **vanha sinetöity nollamakro-poisjättö säilytetään**. Näillä oletuksilla odotettu **koelaskelma** annosta kohti on:
@@ -68,6 +82,7 @@ Uusi testitiedosto suoritetaan nykyisen site-projektin `npm test` -yksikkötesti
 3. Ehdollisen skenaarion annosluvut ja viisi poisjättöehtoa; **vain koelaskelma** saa numeerisen `ESTIMATE WITH EVIDENCE`-tilan.
 4. Fail-closed: kun vanhan suolan **lähteistetty poisjättöperuste** poistetaan ja määrä jää määrittämättömäksi, AFCD:n polyolin lähdevarmennus puuttuu tai poisjättö ylittää toleranssin, laskenta jää `INSUFFICIENT SOURCE DATA` -tilaan.
 5. Vanhalla `WITHHELD_SOURCE_INCOMPLETE`-lipulla ei voi julkaista täydellistä laskelmaa; `verifyNutritionEvidence` palauttaa ristiriidan.
+6. Pelkkään punnittuun massaan perustuva vaihtoehtoinen poisjättöraja ei mahdu makro-/energiatoleransseihin ja palauttaa `INSUFFICIENT SOURCE DATA` -tilan.
 
 **Jatkopäätös tarvitaan ennen reseptin makrojen avaamista:** käydään läpi lähdeprofiilien soveltuvuus perustelluksi poisjättörajaksi, vanhan suolapoissulun säilyvä soveltamisraja ja polyolien AFCD-semanttiikan suhde Chat-5:n #266:een. Tämän jälkeen voidaan valmistella erillinen **tuotantojulkaisun** ehdokas, jossa SHA-sinetit, nelikieliset arvot, rekisterit ja CI päivitetään hallitusti. Tämä koe ei tee sitä.
 
