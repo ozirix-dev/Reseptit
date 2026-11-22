@@ -12797,5 +12797,47 @@
     "reference": "docs/reviews/2026-11-21-juustonaksut-final-translation-review.md",
     "outcome": "pass",
     "findings": []
+  },
+  "kesakeitto:en": {
+    "source_hash": "46db9ccbf6828199c5399095034148e0a9cd9de34015c477e4a07c79e57c2d94",
+    "translation_hash": "d08236452f1f9f909ce323973724e749b75b87a723d1001d5c975899edebc50c",
+    "reviewed_at": "2026-11-22",
+    "reference": "docs/reviews/translations/kesakeitto-2026-11-21.md",
+    "outcome": "human-required",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Chat 3:n tekstuaalinen lähde- ja käännösvertailu on tehty, mutta riippumaton lopullinen semanttinen hyväksyntä puuttuu; ei saa vaihtaa pass-tilaan ilman todellista katselmointia."
+      }
+    ]
+  },
+  "kesakeitto:sv": {
+    "source_hash": "46db9ccbf6828199c5399095034148e0a9cd9de34015c477e4a07c79e57c2d94",
+    "translation_hash": "85509455fdd828387da9434e0dfe7056b34dbc55547270f1690b748f65bec578",
+    "reviewed_at": "2026-11-22",
+    "reference": "docs/reviews/translations/kesakeitto-2026-11-21.md",
+    "outcome": "human-required",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Chat 3:n tekstuaalinen lähde- ja käännösvertailu on tehty, mutta riippumaton lopullinen semanttinen hyväksyntä puuttuu; ei saa vaihtaa pass-tilaan ilman todellista katselmointia."
+      }
+    ]
+  },
+  "kesakeitto:th": {
+    "source_hash": "46db9ccbf6828199c5399095034148e0a9cd9de34015c477e4a07c79e57c2d94",
+    "translation_hash": "336c64eaec37288bc704067f2168417a9b1213871d8326a4e45921d4d4cc0ed3",
+    "reviewed_at": "2026-11-22",
+    "reference": "docs/reviews/translations/kesakeitto-2026-11-21.md",
+    "outcome": "human-required",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Chat 3:n tekstuaalinen lähde- ja käännösvertailu on tehty, mutta riippumaton lopullinen semanttinen hyväksyntä puuttuu; ei saa vaihtaa pass-tilaan ilman todellista katselmointia."
+      }
+    ]
   }
 }

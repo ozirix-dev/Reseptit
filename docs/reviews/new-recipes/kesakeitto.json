@@ -15,8 +15,8 @@
   "nutrition_evidence": "",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Vertailtu reseptipolkujen nimiin ja avoimiin PR:iin; lopullinen yhtäläisyystarkistus tehtävä julkaisuversiolle."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: päähaaran f9de3630:n Git-puun 487 FI-reseptitiedostoa tarkistettu, eikä kesakeitto-resepti_id:tä tai samaa julkaisupolkua löydy. Lähimmät päähaaran kasvis- ja keittoruoat (pinaatti-, juures-, kukkakaali- tai liha-/kala-keitot) eroavat kasvisjoukoltaan ja/tai liemeltään. PR:t #785–789 sisältävät kesäkeiton vain tässä PR #787:ssa. Tämä on rajattu toimituksellinen nykytilatarkistus, ei automaattinen tulevien PR:ien reittiuniikkiuden hyväksyntä; Ready-vaiheessa tarkistettava uudelleen."
     },
     "ingredients": {
       "status": "pass",

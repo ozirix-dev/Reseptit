@@ -33,3 +33,13 @@ Tämä on luonnoksen tekstuaalinen vertailu, ei `meta/kaannokset/codex-review-ev
 Nykyinen FI-lähde täsmennettiin 1,5 % kevytmaidoksi ja oikean kasviskypsyyden haarukkatarkistuksella. Sama merkitys on kirjoitettu EN `semi-skimmed milk, 1.5% fat`, SV `lättmjölk, 1,5 % fett` ja TH `นมไขมันต่ำ ไขมัน 1.5%` -ainesosariveihin ja neljännen valmistusvaiheen kypsyysohjeisiin. Maidon ja vehnän allergeenit sekä jäähtymisen ohjeet säilyvät kaikilla kielillä.
 
 **Tarkistuksen tyyppi:** Chat 3:n suora tekstuaalinen valmistus- ja semantiikkakatselmointi, 11/11 ainesosariviä ja 5/5 vaihetta jokaisessa FI/EN/SV/TH-parissa, ei itsenäinen ulkopuolisen hyväksyjän allekirjoitus. FI-lähteen uusi raakateksti-SHA256 `a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af`. Virallinen `semanticHash` ja `meta/kaannokset/codex-review-evidence.json`-portti pysyvät **HOLD**: ei kirjoitettu tekaistuja `outcome: pass` -merkintöjä.
+
+## Virallisen semantiikkarekisterin julkaisua estävä välimerkintä – 22.11.2026
+
+`meta/kaannokset/codex-review-evidence.json` sisältää nyt kolme *aidosti tarkistettuun lähderevisioon sidottua* `outcome: human-required` -merkintää, ei keksittyä `outcome: pass` -hyväksyntää. Nämä ovat tarkistusjonon rekisterimerkintöjä, jotka nimenomaisesti **estävät** julkaisun ilman riippumatonta katselmointia.
+
+- `kesakeitto:en`: `source_hash=46db9ccbf6828199c5399095034148e0a9cd9de34015c477e4a07c79e57c2d94`, `translation_hash=d08236452f1f9f909ce323973724e749b75b87a723d1001d5c975899edebc50c`.
+- `kesakeitto:sv`: `source_hash=46db9ccbf6828199c5399095034148e0a9cd9de34015c477e4a07c79e57c2d94`, `translation_hash=85509455fdd828387da9434e0dfe7056b34dbc55547270f1690b748f65bec578`.
+- `kesakeitto:th`: `source_hash=46db9ccbf6828199c5399095034148e0a9cd9de34015c477e4a07c79e57c2d94`, `translation_hash=336c64eaec37288bc704067f2168417a9b1213871d8326a4e45921d4d4cc0ed3`.
+
+Tiivisteiden lähtökohtana on projektin `site/scripts/translation-semantic-review.ts`-funktion `semanticHash` kenttäkarsinta ja `site/src/content/schema.ts`-kenttäjärjestys. Kirjaukset ovat `human-required`, eivät hyväksymistodistuksia. EN/SV/TH tekstien 11 ainesosariviä, annosmäärä, kypsennysvaiheet sekä allergia- ja jäähdytysohjeet on jo verrattu Chat 3:ssa; erillisen hyväksyjän kuittaus puuttuu. Kaikki neljä tiedostoa ovat `status: draft`, PR #787 ja reseptin `decision: hold`.
