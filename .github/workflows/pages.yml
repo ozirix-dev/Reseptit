@@ -323,6 +323,8 @@ jobs:
 
       - name: Run image pipeline checks
         if: steps.select.outputs.run_images == 'true'
+        env:
+          VERIFIED_IMAGE_ROOT: ${{ steps.images.outputs.root }}
         run: npm run test:image
         working-directory: site
 
