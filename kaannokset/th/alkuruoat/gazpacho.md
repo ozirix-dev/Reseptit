@@ -37,7 +37,7 @@ ingredients:
     item: พริกหวานแดง
     note: เมล็ดถูกเอาออก
   - amount: 1
-    unit: ชิ้น
+    unit: กลีบ
     item: กระเทียม
   - amount: 2
     unit: ช้อนโต๊ะ
