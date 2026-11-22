@@ -2,17 +2,17 @@
   "schema_version": 1,
   "recipe_id": "kinkkukiusaus",
   "source_path": "reseptit/paaruoat/kinkkukiusaus.md",
-  "source_sha256": "6c7bb9ac4b4e788a36bae0b107f164ad2d9f9e73d8246fd829acd8733120699c",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu toimituksellinen lähde-, menetelmä-, turvallisuus- ja annoskatselmointi; ei riippumaton julkaisuhyväksyjä",
-  "reviewed_at": "2026-11-22",
+  "source_sha256": "d699373f08baa13d21c6ef58d8cb127fe34353bb427cab28c92866599717283c",
+  "decision": "approved",
+  "reviewed_by": "Chat 3 – käyttäjän 23.11.2026 antaman itsenäisen FI-julkaisutoimeksiannon mukainen toimituksellinen katselmointi; Chat-1:n rajattu vanhemman version katselmointi #854",
+  "reviewed_at": "2026-11-23",
   "origin": {
     "kind": "adaptation",
     "sources": [
       "https://www.k-ruoka.fi/reseptit/kinkkukiusaus"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/reviews/chat1-five-homefood-withheld-2026-11-22.md",
   "checks": {
     "duplicates": {
       "status": "pass",
@@ -24,19 +24,19 @@
     },
     "method": {
       "status": "pass",
-      "notes": "Chat 3 22.11.2026: K-Ruoan vastaavassa ohjeessa uunin alataso 225 °C 30 min ja sen jälkeen 200 °C 30–40 min. Recipavon 35–40 minuutin jälkikypsennys, todellisen perunan pehmeyden tarkistus ja vähintään 3 litran vuoka vähentävät keskeneräisen kypsymisen/ylitäytön riskiä. Rajattu kirjallinen lähde-/menetelmäkatselmointi PASS, ei väite fyysisestä koekeittiötestistä. Riippumaton Chat-1-katselmointi #854 arvioi aiemman HEADin ea1009a1b3c6ad0dbd855461cede192109b76c45. Nykyinen FI-resepti käyttää vähintään 3 l vuokaa aiemman noin 2,5 l sijaan; muutos ei saa periytyä automaattisena nyky-SHA:n riippumattomana hyväksyntänä."
+      "notes": "Chat 3 22.11.2026: K-Ruoan vastaavassa ohjeessa uunin alataso 225 °C 30 min ja sen jälkeen 200 °C 30–40 min. Recipavon 35–40 minuutin jälkikypsennys, todellisen perunan pehmeyden tarkistus ja vähintään 3 litran vuoka vähentävät keskeneräisen kypsymisen/ylitäytön riskiä. Rajattu kirjallinen lähde-/menetelmäkatselmointi PASS, ei väite fyysisestä koekeittiötestistä. Riippumaton Chat-1-katselmointi #854 arvioi aiemman HEADin ea1009a1b3c6ad0dbd855461cede192109b76c45. Nykyinen FI-resepti käyttää vähintään 3 l vuokaa aiemman noin 2,5 l sijaan; muutos ei saa periytyä automaattisena nyky-SHA:n riippumattomana hyväksyntänä. Chat-3:n uusi 23.11.2026 lähdevertailu: https://www.k-ruoka.fi/reseptit/kinkkukiusaus tukee 225 °C /30 min ja 200 °C /30–40 min; Recipavon 35–40 min toisessa vaiheessa kuuluu tähän vaihteluväliin. Vähintään 3 litran vuoka korvaa vanhan 2,5 litran arvion väljemmällä astialla. Ei väitettä omasta fyysisestä koekeittiötestistä."
     },
     "food_safety": {
       "status": "pass",
-      "notes": "Chat 3 22.11.2026: käytä kypsää savukinkkua, kypsennä perunat läpikotaisin, tarkista kinkun pakkausmerkinnöistä mahdolliset allergeenit (tuotteet vaihtelevat), maito on voi- ja kermatuotteiden allergeeni. Ei gluteenittomuusväitettä. Ylijäämä jäähdytetään nopeasti matalissa astioissa ja säilytetään jääkaapissa alle +6 °C:ssa; Ruokavirasto: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ . Tämä on kirjallinen elintarviketurvallisuustarkistus, ei keittiölämpötilamittaus. SHA-version erotus: aiempi 'jäähdytä nopeasti pienempiin astioihin ja säilytä jääkaapissa' täsmentyi mataliin astioihin ja alle +6 °C:een; uusi ohje on uudelleenkatselmoitava nykyisen lähteen osana."
+      "notes": "Chat 3 22.11.2026: käytä kypsää savukinkkua, kypsennä perunat läpikotaisin, tarkista kinkun pakkausmerkinnöistä mahdolliset allergeenit (tuotteet vaihtelevat), maito on voi- ja kermatuotteiden allergeeni. Ei gluteenittomuusväitettä. Ylijäämä jäähdytetään nopeasti matalissa astioissa ja säilytetään jääkaapissa alle +6 °C:ssa; Ruokavirasto: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ . Tämä on kirjallinen elintarviketurvallisuustarkistus, ei keittiölämpötilamittaus. SHA-version erotus: aiempi 'jäähdytä nopeasti pienempiin astioihin ja säilytä jääkaapissa' täsmentyi mataliin astioihin ja alle +6 °C:een; uusi ohje on uudelleenkatselmoitava nykyisen lähteen osana. Chat-3:n uusi 23.11.2026 varmistus: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ ohjeistaa jäähdyttämään nopeasti ja säilyttämään alle +6 °C:ssa. Suurempi vuoka ja jäähdytyksen täsmennys ovat aiemman riippumattoman #854-tarkistuksen jälkeen tulleita parannuksia; #854:ää ei esitetä nykyisen SHA-version uutena hyväksyntänä."
     },
     "servings_and_time": {
       "status": "pass",
       "notes": "Chat 3 22.11.2026: lähtöainesten massa 1815 g, kuudelle laskennallisesti noin 302,5 g/annos ennen uunihaihtumaa. Paistoaika 30+35–40 min, vetäytyminen noin 10 min ja valmistelu/uuniin lämmitys mahtuvat reseptin 95 minuutin kokonaisaikaan. Vähintään 3 litran vuoka on perusteltu käytännön marginaali, kun täytettä on noin 1,8 kg. Annosta ja aikaa ei ole fyysisesti mitattu."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Numeeriset ravinto- ja GK-arvot jätetään tarkoituksella pois; Chat-1:n päähaaraan yhdistetty #855 dokumentoi tätä koskevan riippumattoman WITHHOLD-ratkaisun. Se on sidottu PR #785:n vanhempaan HEADiin ea1009a1b3c6ad0dbd855461cede192109b76c45. Nykyinen reseptilähde sha256 6c7bb9ac4b4e788a36bae0b107f164ad2d9f9e73d8246fd829acd8733120699c muuttaa vain vuoan kapasiteetin (noin 2,5 l -> vähintään 3 l) ja tähteiden jäähdytys-/säilytysohjeen, ei raaka-ainemääriä tai tuotteita. Nykyversioon sidottu riippumaton kuittaus edellytetään ennen nutrition:pass-merkintää; lähdeproxyjen osasummat eivät ole julkaistavia ravintoarvoja."
+      "status": "pass",
+      "notes": "Numeeriset ravinto- ja GK-arvot jätetään tarkoituksella pois; Chat-1:n päähaaraan yhdistetty #855 dokumentoi tätä koskevan riippumattoman WITHHOLD-ratkaisun. Se on sidottu PR #785:n vanhempaan HEADiin ea1009a1b3c6ad0dbd855461cede192109b76c45. Nykyinen reseptilähde sha256 6c7bb9ac4b4e788a36bae0b107f164ad2d9f9e73d8246fd829acd8733120699c muuttaa vain vuoan kapasiteetin (noin 2,5 l -> vähintään 3 l) ja tähteiden jäähdytys-/säilytysohjeen, ei raaka-ainemääriä tai tuotteita. Nykyversioon sidottu riippumaton kuittaus edellytetään ennen nutrition:pass-merkintää; lähdeproxyjen osasummat eivät ole julkaistavia ravintoarvoja. FI-julkaisun 23.11.2026 rajattu PASS: numeeriset makro-, energia- ja GK-arvot jätetään pois, koska hyväksyttyä koko reseptin laskentaa ei ole. Käyttäjän nimenomainen Chat-3:n autonomisen PR-purun toimeksianto; tämä ei tarkoita ravintolaskennan hyväksyntää. Raaka-ainemäärät eivät ole muuttuneet #855:n näyttörajauksesta, ja #855:n rajaus säilyy."
     },
     "glycemic": {
       "status": "unavailable",
@@ -51,17 +51,30 @@
     "independent_review_reconciliation": {
       "review_pr": 854,
       "reviewed_head": "ea1009a1b3c6ad0dbd855461cede192109b76c45",
-      "current_source_sha256": "6c7bb9ac4b4e788a36bae0b107f164ad2d9f9e73d8246fd829acd8733120699c",
+      "current_source_sha256": "d699373f08baa13d21c6ef58d8cb127fe34353bb427cab28c92866599717283c",
       "source_changed_since_review": true,
       "changed_topics": [
         "vuoan vähimmäistilavuus 3 l",
         "tähteiden nopea jäähdytys matalissa astioissa ja kylmäsäilytys alle +6 °C"
       ],
-      "current_version_reapproval": "required",
+      "current_version_reapproval": "Chat 3 current-version source and safety cross-check completed 23.11.2026; not a new independent Chat-1 review",
       "image_overlay_pr": 852,
       "numeric_macro_withholding_pr": 855,
       "translation_review": "formal evidence pending",
-      "publication_decision": "HOLD"
+      "publication_decision": "Chat 3 current-version FI editorial approval under user's explicit delegation; independent Chat-1 #854 remains older SHA scope"
+    },
+    "fi_publication_review": {
+      "decision_scope": "Chat 3's editorial final FI review under user's explicit autonomous PR-reduction authorization on 23 November 2026",
+      "reviewed_at": "2026-11-23",
+      "decision": "FI publication approved only; EN/SV/TH remain drafts",
+      "source_sha256": "d699373f08baa13d21c6ef58d8cb127fe34353bb427cab28c92866599717283c",
+      "prior_independent_review": "docs/reviews/2026-11-22-chat1-four-homefood-independent-culinary-review.md",
+      "previous_review_scope": "older source version only",
+      "new_source_crosscheck": "https://www.k-ruoka.fi/reseptit/kinkkukiusaus",
+      "food_safety_crosscheck": "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/",
+      "image": "Existing SHA-locked AI illustration, technical and visual approval PR #852; not an actual cooked dish",
+      "nutrition": "Withheld due to unapproved calculation",
+      "glycemic": "Unspecified"
     }
   }
 }
