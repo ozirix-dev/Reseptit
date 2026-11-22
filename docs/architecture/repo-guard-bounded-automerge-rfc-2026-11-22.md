@@ -38,3 +38,7 @@ Mahdollista käyttäjän nukkuessa vain **ennalta rajattujen, nimenomaisesti hyv
 ## Hyväksymiskriteeri
 
 Kaikki negatiiviset testit PASS, nykyiset Repo Guard -testit PASS, shadow-mode ei tee yhtään kirjoitusta, pilotissa vain täsmälleen valtuutettu PR yhdistyy ja jälkitarkistus vahvistaa GitHubin merge-SHA:n sekä mainin CI:n. Muussa tapauksessa ominaisuus pysyy DISABLED.
+
+## CI-huomio ja käyttöönoton todistus
+
+GitHubin `pull_request`-tapahtuman vanhan ajon `rerun` voi käyttää alkuperäistä PR-kuvausta, vaikka kuvausta olisi myöhemmin korjattu. Omistajuusmerkinnän korjaamisen jälkeen tarvitaan uusi PR-tapahtuma / uusi HEAD, eikä vanhan ajon uusintaa saa pitää hyväksyntänä. Kaikki hyväksynnät sidotaan aina uusimpaan HEADiin.
