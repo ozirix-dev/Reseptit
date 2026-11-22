@@ -4,7 +4,7 @@ recipe_id: pina-colada-hedelmajaatelo
 url_slug: pina-colada-hedelmajaatelo
 category: jalkiruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 140
 difficulty: helppo
@@ -13,6 +13,11 @@ cooking_method: [pakastus, soseutus]
 tags: [jäätelö, ananas, banaani, kookosmaito, vegaaninen, maidoton]
 translation_languages: []
 translation_status: {}
+image:
+  src: jalkiruoat/pina-colada-hedelmajaatelo.webp
+  alt: "Vaaleankeltaista ananas-banaanijäätelöä kulhossa, koristeena ananasta ja limeä"
+  width: 1448
+  height: 1086
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
@@ -53,4 +58,4 @@ Ananaksesta, banaanista, kookosmaidosta ja limetistä syntyy paksu, kermainen he
 - Tarjoilukuvassa on ananasta, limeä ja kookoshiutaleita. Ne ovat valinnaisia koristeita eivätkä kuulu ilmoitettuihin ravinto- tai annosmääriin.
 - Tämä ei ole keto- eikä vähähiilihydraattinen jälkiruoka. Numeerinen GK on määrittämättä; puuttuvia ravintoarvoja ei tulkita nolliksi.
 - Alkuperäinen valmistusidea: [Smart Tipsin Facebook-video](https://www.facebook.com/reel/1703813614507191). Ainemäärät ja annosjako on vakioitu toimituksellisesti; kaikki grammamäärät eivät ole videosta varmistettuja. Reseptiä ei ole valmistettu Recipavon omassa koekeittiössä.
-- Kuva on tekoälyllä luotu havainnekuva. Kuvan lisääminen ja vastaava metadata odottavat alkuperäisen WebP-tiedoston varmistettua siirtoa.
+- Kuva on tekoälyllä luotu havainnekuva, ei valokuva Recipavon koekeittiössä valmistetusta annoksesta.
