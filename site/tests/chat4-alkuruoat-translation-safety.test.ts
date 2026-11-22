@@ -37,9 +37,9 @@ const expectations: Record<string, Record<Locale, RegExp[]>> = {
     th: [/เนื้อรมควันที่สุกและพร้อมรับประทาน/, /ระบุชนิดเห็ดให้แน่ชัดและปรุงเห็ดให้สุก/, /เก็บโรลในตู้เย็น/],
   },
   "pienet-kantarellipiiraat": {
-    en: [/positively identified edible chanterelles/i, /egg filling until set/i, /refrigerate leftovers/i],
-    sv: [/säkert artbestämda kantareller/i, /äggfyllningen ordentligt/i, /rester i kylskåp/i],
-    th: [/เห็ดชานเทอเรลกินได้ที่ระบุชนิดแน่ชัด/, /อบไส้ไข่ให้สุก/, /ของเหลือในตู้เย็น/],
+    en: [/positively identified edible chanterelles/i, /egg filling until set/i, /pies containing eggs and dairy products refrigerated, including any leftovers/i],
+    sv: [/säkert artbestämda kantareller/i, /äggfyllningen tills den har stelnat/i, /Förvara pajerna som innehåller ägg och mjölkprodukter i kylskåp, även eventuella rester/i],
+    th: [/เห็ดชานเทอเรลที่กินได้และระบุชนิดแน่ชัด/, /อบไส้ที่มีไข่จนเซตตัวและสุกทั่วถึง/, /เก็บพายที่มีไข่และผลิตภัณฑ์นมไว้ในตู้เย็น รวมถึงส่วนที่เหลือ/],
   },
   "punajuuricarpaccio-vuohenjuustolla": {
     en: [/goat cheese pasteurisation/i, /risk groups/i, /milk and walnuts/i],
