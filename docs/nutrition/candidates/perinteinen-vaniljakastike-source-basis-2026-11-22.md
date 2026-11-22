@@ -1,9 +1,9 @@
 # Chat 3 – perinteinen vaniljakastike: lähteisiin sidottu ravintolaskennan esiselvitys
 
-**Päivä:** 22.11.2026  
-**PR:** #808  
-**Tila:** CANDIDATE / HOLD. Ei valmis `docs/nutrition/calculations/`-todiste eikä julkinen ravintoarvo.  
-**Resepti:** `reseptit/jalkiruoat/perinteinen-vaniljakastike.md`, FI-lähteen kuusi ainesriviä ja 6 annosta; täysmaito täsmennettiin 22.11.2026 punnituksi 450 grammaksi kaikilla kielillä.  
+**Päivä:** 22.11.2026
+**PR:** #808
+**Tila:** CANDIDATE / HOLD. Ei valmis `docs/nutrition/calculations/`-todiste eikä julkinen ravintoarvo.
+**Resepti:** `reseptit/jalkiruoat/perinteinen-vaniljakastike.md`, FI-lähteen kuusi ainesriviä ja 6 annosta; täysmaito täsmennettiin 22.11.2026 punnituksi 450 grammaksi kaikilla kielillä.
 **Omistaja:** Chat 3
 
 ## Ainesosittain tarkastetut lähtötiedot

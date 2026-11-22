@@ -1,8 +1,8 @@
 # Chat 3 – kymmenen kastikekuvan sisältökatselmointi
 
-**Päivä:** 22.11.2026  
-**Omistaja:** Chat 3 / Kokki-3  
-**PR:** #808, `chat3/suomalaiset-kastikkeet-20261121`  
+**Päivä:** 22.11.2026
+**Omistaja:** Chat 3 / Kokki-3
+**PR:** #808, `chat3/suomalaiset-kastikkeet-20261121`
 **Menetelmä:** avattu jokainen PR:n kymmenestä nykyisestä Git-versionhallinnan WebP-kuvasta ja verrattu **silmin** vastaavan FI-reseptin nimi-, aines-, valmistus- ja alt-kuvaukseen. Tarkistus koskee kuvan **näkyvää ruokalajivastaavuutta**, ei kuvan tekijänoikeuksien tai lisenssin juridista tarkastusta, koekeittiössä valmistamista tai valmiin ruokatuotteen todentamista.
 
 | recipe_id | Kuvan SHA-256, alku (tracked overlay) | Sisältötarkistus | Perustelu |

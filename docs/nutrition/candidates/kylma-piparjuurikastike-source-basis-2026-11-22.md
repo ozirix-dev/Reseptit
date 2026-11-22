@@ -1,8 +1,8 @@
 # Chat 3 – kylmä piparjuurikastike: ravintolaskennan täsmälähteet
 
-**Päivä:** 22.11.2026  
-**PR:** #808, `chat3/suomalaiset-kastikkeet-20261121`  
-**Tila:** CANDIDATE / HOLD, ei `docs/nutrition/calculations/`-hyväksyntää.  
+**Päivä:** 22.11.2026
+**PR:** #808, `chat3/suomalaiset-kastikkeet-20261121`
+**Tila:** CANDIDATE / HOLD, ei `docs/nutrition/calculations/`-hyväksyntää.
 **Resepti:** `reseptit/alkuruoat/kylma-piparjuurikastike.md`, neljä annosta. Sitruunamehu täsmennettiin FI/EN/SV/TH-lähteissä 12 millilitrasta 12 punnittuun grammaan 22.11.2026.
 
 ## Varmennetut lähtötiedot
