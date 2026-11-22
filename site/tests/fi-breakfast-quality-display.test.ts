@@ -142,7 +142,7 @@ test("SHA-pinned FI overlays correct eighteen dishes without nutrition changes",
     } else if (before.recipe_id === "valimerellinen-kikherne-yrttiaamiainen") {
       assert.deepEqual(before.cooking_method, ["paistaminen"]);
       assert.deepEqual(after.cooking_method, ["kylmävalmistus"]);
-      assert.equal((afterMd.content.match(/^\\d+\\. /gm) ?? []).length, 4);
+      assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
       assert.match(afterMd.content, /100 g valmiiksi kypsiä/);
       assert.match(afterMd.content, /2 rkl persiljaa/);
       assert.match(afterMd.content, /yksi sitruuna/);
