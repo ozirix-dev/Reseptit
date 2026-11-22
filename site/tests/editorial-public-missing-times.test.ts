@@ -290,3 +290,159 @@ test("#327: older raw inventories have empty invalid-time report queues", () => 
     ?.split("## Raakalähteen kahteen kertaan määritellyt kokonaisajat")[0];
   assert.match(invalidSection ?? "", /Ei osumia/);
 });
+
+test("#327: empty public instructions are listed with source evidence", () => {
+  const projected = { ...recipe(45), instructionsText: [" ", "  "] };
+  const report = compareInventories(raw, [projected]);
+  assert.equal(report.totals.rawMissingPreparations, 0);
+  assert.equal(report.totals.projectedMissingPreparations, 1);
+  assert.equal(report.totals.publicMissingPreparationNotInRaw, 1);
+  assert.deepEqual(report.sourceOnly.publicMissingPreparationNotInRaw.map(x => x.recipeId), [evidence.recipeId]);
+  const markdown = toMarkdown(report);
+  assert.ok(markdown.includes("## Julkisesta esityksestä puuttuvat valmistusohjeet"));
+  assert.ok(markdown.includes("### Julkisessa esityksessä uutena tyhjät valmistusohjeet"));
+  assert.ok(markdown.includes(evidence.path));
+  assert.ok(markdown.includes(evidence.sourceSha256));
+});
+
+test("#327: raw missing numbered steps with usable public instructions is distinguished", () => {
+  const source: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [evidence] },
+  };
+  const report = compareInventories(source, [recipe(45)]);
+  assert.equal(report.totals.rawMissingPreparations, 1);
+  assert.equal(report.totals.projectedMissingPreparations, 0);
+  assert.equal(report.totals.rawMissingPreparationNoLongerVisible, 1);
+  assert.equal(report.totals.publicMissingPreparationNotInRaw, 0);
+  assert.deepEqual(report.sourceOnly.rawMissingPreparationNoLongerVisible.map(x => x.recipeId), [evidence.recipeId]);
+});
+
+test("#327: raw/public missing preparation agreement and invalid evidence", () => {
+  const source: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [evidence] },
+  };
+  const projected = { ...recipe(null), instructionsText: [] };
+  const report = compareInventories(source, [projected]);
+  assert.equal(report.totals.rawMissingPreparations, 1);
+  assert.equal(report.totals.projectedMissingPreparations, 1);
+  assert.equal(report.totals.rawMissingPreparationNoLongerVisible, 0);
+  assert.equal(report.totals.publicMissingPreparationNotInRaw, 0);
+  const drift: RawInventory = {
+    ...source,
+    signals: { ...source.signals, missingPreparation: [{ ...evidence, path: "wrong.md" }] },
+  };
+  assert.throws(() => compareInventories(drift, [projected]),
+    /RAW_SIGNAL_SOURCE_DRIFT: missingPreparation:aika-puuttuu/);
+});
+
+test("#327: unnumbered FI preparation is a reviewed subset of raw missing numbered steps", () => {
+  const source: RawInventory = {
+    ...raw,
+    signals: {
+      ...raw.signals,
+      missingPreparation: [evidence],
+      unnumberedPreparation: [evidence],
+    },
+  };
+  const report = compareInventories(source, [recipe(45)]);
+  assert.equal(report.totals.rawMissingPreparations, 1);
+  assert.equal(report.totals.rawUnnumberedPreparations, 1);
+  assert.deepEqual(report.sourceOnly.unnumberedPreparation.map(item => item.recipeId),
+    [evidence.recipeId]);
+  const markdown = toMarkdown(report);
+  assert.match(markdown, /## Lähteen numeroimattomat valmistusohjeet/);
+  assert.ok(markdown.includes(evidence.path));
+  assert.ok(markdown.includes(evidence.sourceSha256));
+  assert.ok(markdown.includes("| Valmistus on tekstinä ilman tunnistettua numerointia | 1 |"));
+});
+
+test("#327: unnumbered FI method evidence rejects orphan, drift and duplicate", () => {
+  const source: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [], unnumberedPreparation: [evidence] },
+  };
+  assert.throws(() => compareInventories(source, [recipe(45)]),
+    /UNNUMBERED_RAW_PREPARATION_DRIFT: aika-puuttuu/);
+  const stale: RawInventory = {
+    ...raw,
+    signals: {
+      ...raw.signals,
+      missingPreparation: [evidence],
+      unnumberedPreparation: [{ ...evidence, sourceSha256: "b".repeat(64) }],
+    },
+  };
+  assert.throws(() => compareInventories(stale, [recipe(45)]),
+    /RAW_SIGNAL_SOURCE_DRIFT: unnumberedPreparation:aika-puuttuu/);
+  const duplicate: RawInventory = {
+    ...raw,
+    signals: {
+      ...raw.signals,
+      missingPreparation: [evidence],
+      unnumberedPreparation: [evidence, evidence],
+    },
+  };
+  assert.throws(() => compareInventories(duplicate, [recipe(45)]),
+    /DUPLICATE_RAW_SIGNAL: unnumberedPreparation:aika-puuttuu/);
+});
+
+test("#327: legacy FI inventories without unnumbered signal remain compatible", () => {
+  const report = compareInventories(raw, [recipe(45)]);
+  assert.equal(report.totals.rawUnnumberedPreparations, 0);
+  assert.deepEqual(report.sourceOnly.unnumberedPreparation, []);
+  assert.match(toMarkdown(report).split("## Lähteen numeroimattomat valmistusohjeet")[1] ?? "",
+    /Ei osumia/);
+});
+
+test("#327: source empty and unnumbered FI preparation form exact review partitions", () => {
+  const empty: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [evidence],
+      emptyPreparation: [evidence], unnumberedPreparation: [] },
+  };
+  const report = compareInventories(empty, [recipe(45)]);
+  assert.equal(report.totals.rawEmptyPreparations, 1);
+  assert.equal(report.totals.rawUnnumberedPreparations, 0);
+  assert.deepEqual(report.sourceOnly.emptyPreparation.map(item => item.recipeId), [evidence.recipeId]);
+  const markdown = toMarkdown(report);
+  assert.match(markdown, /## Lähteen puuttuvat tai tyhjät valmistusosiot/);
+  assert.ok(markdown.includes(evidence.sourceSha256));
+});
+
+test("#327: raw preparation partition rejects overlap, missing and unrelated evidence", () => {
+  const both: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [evidence],
+      emptyPreparation: [evidence], unnumberedPreparation: [evidence] },
+  };
+  assert.throws(() => compareInventories(both, [recipe(45)]),
+    /RAW_PREPARATION_PARTITION_DRIFT: aika-puuttuu/);
+  const unclassified: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [evidence],
+      emptyPreparation: [], unnumberedPreparation: [] },
+  };
+  assert.throws(() => compareInventories(unclassified, [recipe(45)]),
+    /RAW_PREPARATION_PARTITION_DRIFT: aika-puuttuu/);
+  const unrelated: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [],
+      emptyPreparation: [evidence], unnumberedPreparation: [] },
+  };
+  assert.throws(() => compareInventories(unrelated, [recipe(45)]),
+    /RAW_PREPARATION_PARTITION_DRIFT: aika-puuttuu/);
+  const stale: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [evidence],
+      emptyPreparation: [{ ...evidence, path: "wrong.md" }], unnumberedPreparation: [] },
+  };
+  assert.throws(() => compareInventories(stale, [recipe(45)]),
+    /RAW_SIGNAL_SOURCE_DRIFT: emptyPreparation:aika-puuttuu/);
+});
+
+test("#327: legacy inventories can omit new empty-preparation classification", () => {
+  const report = compareInventories(raw, [recipe(45)]);
+  assert.equal(report.totals.rawEmptyPreparations, 0);
+  assert.deepEqual(report.sourceOnly.emptyPreparation, []);
+});

@@ -30,7 +30,7 @@ ingredients:
     unit: "g"
     item: "fresh dill"
   - amount: 0.5
-    unit: "tl"
+    unit: "tsp"
     item: "coarsely ground white pepper"
 ---
 
@@ -54,4 +54,4 @@ Use whitefish suitable for raw consumption, observe Finnish Food Authority freez
 - English translation only; the Finnish original remains the source of truth.
 - Not ready for publication: ingredient quantities, preparation evidence, food safety and translation parity require independent review.
 - Numeric nutrition values and glycemic load have not been established.
-- The 720 × 720 WebP image is now stored in this Git Draft branch and checksum-pinned in the verified image overlay; visual/editorial publication approval is still pending.
+- The 720 × 720 WebP illustration is versioned in Git and SHA-256-pinned in the image manifest. It is AI-generated, not a photo of a prepared dish; editorial publication approval remains pending.
