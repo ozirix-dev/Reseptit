@@ -1,0 +1,152 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { parseMarkdown } from "../src/content/markdown";
+import { recipeFrontmatterSchema } from "../src/content/schema";
+import {
+  calculate, allowedOmissionErrorPerServing,
+  type Calculation, type FoodRecord, type IngredientInput,
+} from "../scripts/nutrition-model";
+import { recipeNutritionInputHash, verifyNutritionEvidence } from "../scripts/nutrition-evidence";
+import { recipeBindingHash } from "../scripts/glycemic-load-recipe-binding";
+
+// Chat 6, 22 Nov 2026: an isolated source-feasibility experiment, NOT
+// a release/approval, a rewritten GK input, or new public nutrition values.
+const root = new URL("../../", import.meta.url);
+const read = (path: string) => readFileSync(new URL(path, root), "utf8");
+const json = (path: string) => JSON.parse(read(path));
+const recipeId = "sitruuna-yrttikana-parsa";
+const recipePath = `reseptit/paaruoat/${recipeId}.md`;
+const sourceText = read(recipePath);
+const source = recipeFrontmatterSchema.parse(parseMarkdown(sourceText)!.data);
+const old = json(`docs/nutrition/calculations/${recipeId}.json`) as Calculation;
+const thyme = (json("docs/nutrition/calculations/lahi-ita-zaatar-munat.json") as Calculation).ingredients
+  .find(row => row.item === "kuivattua jauhettua timjamia")?.record;
+const pepper = (json("docs/nutrition/food-records.json") as FoodRecord[])
+  .find(row => row.id === "afcd-F006618-2026-10-24");
+const afcd = json("docs/nutrition/afcd-release-3-reference.json").foods as Array<Record<string, unknown>>;
+const salt = afcd.find(row => row.source_id === "F007879");
+const usda = json("docs/nutrition/gk80-operation142/usda-cap-excerpts.json") as Record<string, {
+  totalCarbohydrate: {amount: string};
+}>;
+const checks = ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const;
+
+type Omission = NonNullable<IngredientInput["omissionImpactUpperBoundPerServing"]>;
+const fromProfile = (grams: number, per100g: {carbohydrate: number; protein: number; fat: number; kcal: number}): Omission => {
+  const portion = grams / 4 / 100;
+  const carbohydrate = per100g.carbohydrate * portion;
+  return { kcal: per100g.kcal * portion, netCarbohydrate: carbohydrate,
+    totalCarbohydrate: carbohydrate, protein: per100g.protein * portion, fat: per100g.fat * portion };
+};
+const omittedGarlic = fromProfile(3.1, {carbohydrate: 72.73, protein: 16.55, fat: .73, kcal: 331});
+const omittedZest = fromProfile(2, {carbohydrate: 16, protein: 1.5, fat: .3, kcal: 47});
+const noMacros: Omission = {kcal: 0, netCarbohydrate: 0, totalCarbohydrate: 0, protein: 0, fat: 0};
+
+function exclude(row: IngredientInput, why: string, impact: Omission, sourceEvidence: string): IngredientInput {
+  return { ...row, record: undefined, excludedReason: why, omissionImpactUpperBoundPerServing: impact,
+    omissionImpactEvidence: sourceEvidence };
+}
+
+function makeCandidate(): Calculation {
+  assert.ok(thyme && pepper && salt);
+  const candidate = structuredClone(old);
+  candidate.scope = "Chat-6 CONDITIONAL SOURCE FEASIBILITY ONLY. Not approved for public macros. Original ingredient weights, four servings and GK binding remain unchanged. Two small inputs modeled as omitted and plain salt assumed; each condition requires independent review.";
+  const tim = candidate.ingredients[5]!;
+  tim.record = structuredClone(thyme);
+  tim.state = thyme.state;
+  tim.matchEvidence = "Exact dried ground thyme, AFCD F009160, same source already used in the published zaatar eggs recipe; borrowed composition and inferred source-model polyol difference disclosed.";
+  const pep = candidate.ingredients[7]!;
+  pep.record = structuredClone(pepper);
+  pep.state = pepper.state;
+  pep.matchEvidence = "Ground black pepper, AFCD F006618; source-model with/without sugar-alcohol carbohydrate fields match, but individual alcohols are unreported.";
+  candidate.ingredients[6] = exclude(candidate.ingredients[6]!, "Conditional whole-ingredient omission: 3.1 g garlic powder, not a polyol-zero inference.", omittedGarlic,
+    "USDA FDC 171325 SR Legacy nominal profile: total CHO 72.73, protein 16.55, fat 0.73 g and 331 kcal per 100g. Scaled as nominal composition, NOT a tested lot-specific upper bound.");
+  candidate.ingredients[8] = exclude(candidate.ingredients[8]!, "Conditional whole-ingredient omission: 2 g grated outer zest, not claimed equivalent to whole peel.", omittedZest,
+    "USDA FDC 167749 SR Legacy raw peel nominal profile: total CHO 16, protein 1.5, fat 0.3 g and 47 kcal per 100g. This is a proxy, NOT validated zest composition.");
+  candidate.ingredients[9] = exclude(candidate.ingredients[9]!, "Conditional plain table salt only; unspecified amount and type need owner review.", noMacros,
+    "AFCD Release 3 F007879 (analysed, non-iodised table salt) reports zero carbohydrate, protein, fat, fibre per 100g. No sodium or other micronutrient estimate is made.");
+  // The real recipe has a formally withheld four-macro package. This synthetic
+  // calculation must not claim to be that approved/published evidence.
+  delete candidate.publicationStatus;
+  delete candidate.withholdingReason;
+  return candidate;
+}
+
+test("baseline retains all four macro nulls and the sealed original GK", () => {
+  assert.equal(old.sourceHash, recipeNutritionInputHash(source));
+  assert.equal(old.publicationStatus, "WITHHELD_SOURCE_INCOMPLETE");
+  assert.equal(calculate(old).status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(verifyNutritionEvidence(source, old).status, "INSUFFICIENT SOURCE DATA");
+  for (const key of checks) assert.equal(source[key], null);
+  for (const language of ["en", "sv", "th"]) {
+    const translated = recipeFrontmatterSchema.parse(parseMarkdown(read(`kaannokset/${language}/paaruoat/${recipeId}.md`))!.data);
+    for (const key of checks) assert.equal(translated[key], null, `${language}:${key}`);
+  }
+  const bindings = json("docs/nutrition/glycemic-load-recipe-bindings.json");
+  const aliases = json("docs/nutrition/glycemic-load-recipe-aliases.json").aliases;
+  assert.equal(recipeBindingHash(sourceText, aliases), bindings.recipes[recipeId]);
+  const historical = json("docs/nutrition/gk80-operation142/targeted-results.json").checked
+    .find((row: {recipeId: string}) => row.recipeId === recipeId);
+  assert.equal(historical.gk, 0.88);
+  assert.equal(historical.omittedCho, 0.826245);
+});
+
+test("AFCD evidence is source-model derived, not a measurement of individual polyol zero", () => {
+  assert.ok(thyme && pepper && salt);
+  const th = afcd.find(row => row.source_id === "F009160")!;
+  const pe = afcd.find(row => row.source_id === "F006618")!;
+  for (const row of [th, pe]) {
+    assert.equal(row.derivation, "Borrowed");
+    assert.equal(row.available_carbohydrate_with_sugar_alcohols_g_per_100g,
+      row.available_carbohydrate_without_sugar_alcohols_g_per_100g);
+    assert.equal(row.sorbitol_g_per_100g, null);
+    assert.equal(row.mannitol_g_per_100g, null);
+    assert.equal(row.glycerol_g_per_100g, null);
+  }
+  assert.equal(thyme.polyolsSourceVerified, true);
+  assert.equal(pepper.polyolsSourceVerified, true);
+  assert.equal(salt.derivation, "Analysed");
+  for (const k of ["protein_g_per_100g", "fat_g_per_100g", "fibre_g_per_100g",
+    "available_carbohydrate_with_sugar_alcohols_g_per_100g"] as const) assert.equal(salt[k], 0, k);
+  assert.equal(Number(usda["171325"]?.totalCarbohydrate.amount), 72.73);
+  assert.equal(Number(usda["167749"]?.totalCarbohydrate.amount), 16);
+});
+
+test("conditional calculation is numerically feasible, but has no publication authority", () => {
+  const candidate = makeCandidate();
+  const calculation = calculate(candidate);
+  assert.equal(calculation.status, "ESTIMATE WITH EVIDENCE");
+  assert.equal(calculation.omissionWithinTolerance, true);
+  const total = Object.fromEntries((Object.keys(noMacros) as Array<keyof Omission>).map(key =>
+    [key, (omittedGarlic[key] + omittedZest[key])]));
+  assert.ok(Math.abs(total.totalCarbohydrate - 0.6436575) < 1e-10);
+  assert.ok(Math.abs(total.protein - 0.1357625) < 1e-10);
+  assert.ok(Math.abs(total.fat - 0.0071575) < 1e-10);
+  assert.ok(Math.abs(total.kcal - 2.80025) < 1e-10);
+  for (const key of Object.keys(total) as Array<keyof Omission>)
+    assert.ok(total[key] <= allowedOmissionErrorPerServing[key], key);
+  assert.equal(calculation.perServing.netCarbohydrate, 2.36);
+  assert.equal(calculation.totalCarbohydratePerServingG, 4.29);
+  assert.equal(calculation.perServing.protein, 36.73);
+  assert.equal(calculation.perServing.fat, 16.60);
+
+  // Even if numerical calculation succeeds, publication is blocked by the
+  // existing four-null source, required review, and explicit withholding gate.
+  assert.equal(verifyNutritionEvidence(source, candidate).status, "INSUFFICIENT SOURCE DATA");
+  const fakeWithholding = {...candidate, publicationStatus: "WITHHELD_SOURCE_INCOMPLETE" as const,
+    withholdingReason: "Original source is still incomplete"};
+  assert.equal(verifyNutritionEvidence(source, fakeWithholding).status, "CONFLICT REQUIRES REVIEW");
+});
+
+test("conditional gate fails closed for ambiguous salt, AFCD evidence loss and excess omissions", () => {
+  const noSaltDecision = makeCandidate();
+  noSaltDecision.ingredients[9] = structuredClone(old.ingredients[9]!);
+  assert.equal(calculate(noSaltDecision).status, "INSUFFICIENT SOURCE DATA");
+  const noPolyolEvidence = makeCandidate();
+  noPolyolEvidence.ingredients[7]!.record!.polyolsSourceVerified = false;
+  noPolyolEvidence.ingredients[7]!.record!.polyolsEvidence = "";
+  assert.equal(calculate(noPolyolEvidence).status, "INSUFFICIENT SOURCE DATA");
+  const excessive = makeCandidate();
+  excessive.ingredients[6]!.omissionImpactUpperBoundPerServing!.totalCarbohydrate = 1.05;
+  assert.equal(calculate(excessive).status, "INSUFFICIENT SOURCE DATA");
+});
