@@ -58,7 +58,7 @@ export function analyze(sources, quarantine = new Set()) {
   const byCategory = {};
   const byTime = {};
   const byDifficulty = {};
-  const genericLead = [], duplicateDescription = [], missingPreparation = [], unnumberedPreparation = [], missingTime = [], invalidTime = [], duplicateTimeKeys = [], noExplicitUrl = [];
+  const genericLead = [], duplicateDescription = [], missingPreparation = [], unnumberedPreparation = [], emptyPreparation = [], missingTime = [], invalidTime = [], duplicateTimeKeys = [], noExplicitUrl = [];
   const leadMap = new Map(), stepMap = new Map(), idMap = new Map();
   const indexedRecipes = [];
   const sorted = [...sources].sort((a, b) => a.path.localeCompare(b.path, 'fi'));
@@ -112,6 +112,7 @@ export function analyze(sources, quarantine = new Set()) {
       // Non-empty prose, bullets or unrecognized numbering need format review,
       // not an automatic assumption that the cooking method is absent.
       if (preparation.trim()) unnumberedPreparation.push(evidence);
+      else emptyPreparation.push(evidence);
     }
     for (const step of steps) {
       const phrase = canonical(step);
@@ -126,7 +127,7 @@ export function analyze(sources, quarantine = new Set()) {
   return {
     notice: 'Read-only heuristics on non-quarantined FI sources marked published; not verified live routes, factual errors, cooking tests or release approval.',
     indexedRecipes, counts, byCategory, byTime, byDifficulty,
-    signals: { genericLead, duplicateDescription, missingPreparation, unnumberedPreparation, missingTime, invalidTime, duplicateTimeKeys, noExplicitUrl,
+    signals: { genericLead, duplicateDescription, missingPreparation, unnumberedPreparation, emptyPreparation, missingTime, invalidTime, duplicateTimeKeys, noExplicitUrl,
       repeatedLeads: ranked(leadMap), repeatedSteps: ranked(stepMap), duplicateRecipeIds: ranked(idMap) },
   };
 }
@@ -153,11 +154,18 @@ function markdown(report) {
     ['Pitkä sama valmistusvaihe eri resepteissä (ryhmiä)', report.signals.repeatedSteps.length],
     ['Numeroitu Valmistus puuttuu tai ei tunnistu', report.signals.missingPreparation.length],
     ['Valmistus sisältää tekstiä mutta ei tunnistettuja numeroituja vaiheita', report.signals.unnumberedPreparation.length],
+    ['Valmistus-osio puuttuu tai on tyhjä', report.signals.emptyPreparation.length],
     ['Kokonaisaika puuttuu tai on virheellinen', report.signals.missingTime.length],
     ['Kokonaisajan arvo on virheellinen', report.signals.invalidTime.length],
     ['Kokonaisaika määritelty useammin kuin kerran', report.signals.duplicateTimeKeys.length],
     ['Lähdetiedostossa ei suoraa URL-viitettä (ei ole virhetuomio)', report.signals.noExplicitUrl.length],
   ]) out.push(`- ${label}: **${value}**`);
+  out.push('', '## Puuttuvat tai tyhjät valmistusosiot', '');
+  if (!report.signals.emptyPreparation.length) out.push('Ei osumia.');
+  for (const item of report.signals.emptyPreparation) {
+    out.push('- ' + item.recipeId + ' — ' + item.path +
+      ' (SHA256 ' + item.sourceSha256 + ')');
+  }
   out.push('', '## Numeroimattomat tai tunnistamattomat valmistusohjeet', '');
   if (!report.signals.unnumberedPreparation.length) out.push('Ei osumia.');
   for (const item of report.signals.unnumberedPreparation) {
