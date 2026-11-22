@@ -1,8 +1,8 @@
 # Chat-1: viiden kotiruokaluonnoksen riippumaton integraatiokatsaus
 
-**Päivä:** 22.11.2026  
-**Omistaja:** Chat-1, integraatiovastaava  
-**Kohde:** PR:t #785–#789; vain versionoituun lähdesisältöön ja julkisiin vertailulähteisiin perustuva katsaus.  
+**Päivä:** 22.11.2026
+**Omistaja:** Chat-1, integraatiovastaava
+**Kohde:** PR:t #785–#789; vain versionoituun lähdesisältöön ja julkisiin vertailulähteisiin perustuva katsaus.
 **Päätös:** viisi resepti-PR:ää pysyvät **DRAFT / HOLD**. Tämä muistio ei ole automaattinen julkaisuhyväksyntä eikä fyysisen koekeittiötestin väite.
 
 ## Lähdeversiot ja nykyinen päätös
