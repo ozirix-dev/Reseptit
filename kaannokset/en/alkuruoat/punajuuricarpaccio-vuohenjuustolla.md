@@ -63,4 +63,4 @@ Check goat cheese pasteurisation and storage especially for risk groups. Contain
 - English translation only; the Finnish original remains the source of truth.
 - Not ready for publication: ingredient quantities, preparation evidence, food safety and translation parity require independent review.
 - Numeric nutrition values and glycemic load have not been established.
-- The 720 × 720 WebP image is now stored in this Git Draft branch and checksum-pinned in the verified image overlay; visual/editorial publication approval is still pending.
+- The 720 × 720 WebP image is versioned in Git and checksum-pinned in the image manifest. It is an AI illustration, not a photograph of a prepared dish. This translation is still a draft and lacks its final semantic publication approval.

@@ -67,4 +67,4 @@ Använd endast ätfärdig sill. Förvara kallt och följ fiskproduktens sista f�
 - Den finska källan är styrande. Utkastet är inte godkänt för publicering.
 - Mängder, tillagningsmetod, risker och översättningens betydelse måste granskas.
 - Näringsvärden och glykemisk belastning har inte beräknats.
-- WebP-bilden (720 × 720) finns nu i denna Git Draft-gren och är SHA-256-låst i bildmanifestet; redaktionellt publiceringsgodkännande saknas fortfarande.
+- WebP-bilden (720 × 720) är versionshanterad i Git och SHA-256-verifierad i bildmanifestet. Den är en AI-illustration, inte ett fotografi av en tillagad portion. Översättningen är fortfarande ett utkast utan slutligt godkännande för publicering.
