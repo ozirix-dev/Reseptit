@@ -2,10 +2,10 @@
   "schema_version": 1,
   "recipe_id": "kinkkukiusaus",
   "source_path": "reseptit/paaruoat/kinkkukiusaus.md",
-  "source_sha256": "4732ef7546ee80a3269d0548b68fafe3c911e4c28def940c50e4b4b33a05a1d7",
+  "source_sha256": "6c7bb9ac4b4e788a36bae0b107f164ad2d9f9e73d8246fd829acd8733120699c",
   "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "reviewed_by": "Chat 3 – rajattu toimituksellinen lähde-, menetelmä-, turvallisuus- ja annoskatselmointi; ei riippumaton julkaisuhyväksyjä",
+  "reviewed_at": "2026-11-22",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -15,37 +15,38 @@
   "nutrition_evidence": "",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Vertailtu reseptipolkujen nimiin ja avoimiin PR:iin; lopullinen yhtäläisyystarkistus tehtävä julkaisuversiolle."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: nykyisessä mainissa ei ole toista kinkkukiusaus-reseptipolkua; avoimien PR:ien joukossa #785 on tämän reseptin ainoa erillinen PR. Päällekkäisyys tarkistettu vain tarkastetussa nykytilassa; lopullinen julkaisureittien uniqueness-portti ajetaan tuoreelle HEADille."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Ainekset punnittu luonnosversioon; tuotemerkkien, syötävän osuuden ja määrien lopullinen tarkistus puuttuu."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: K-Ruoan kinkkukiusaus sisältää pakasteperunasuikaleita 1000 g, kypsää savukinkkua, sipulia sekä 15 % ruokakermaa. Recipavon itsenäinen sovitus käyttää 250 g kinkkua, 150 g sipulia, 400 g punnittua ruokakermaa, 10 g voita, 4 g suolaa ja 1 g mustapippuria; kaikki 7 ainesriviä ovat valmistusperiaatteen mukaisia. Raaka-aineiden todelliset pakkauskohtaiset ravintoarvot kuuluvat eri nutrition-porttiin."
     },
     "method": {
-      "status": "pending",
-      "notes": "Kuvattu valmistustapa tarkistettu vertailuohjeita vastaan; itsenäinen kokkikelpoisuusarvio tarvitaan."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: K-Ruoan vastaavassa ohjeessa uunin alataso 225 °C 30 min ja sen jälkeen 200 °C 30–40 min. Recipavon 35–40 minuutin jälkikypsennys, todellisen perunan pehmeyden tarkistus ja vähintään 3 litran vuoka vähentävät keskeneräisen kypsymisen/ylitäytön riskiä. Rajattu kirjallinen lähde-/menetelmäkatselmointi PASS, ei väite fyysisestä koekeittiötestistä."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Riski- ja allergeenihuomiot kirjattu lähdereseptiin, mutta riippumatonta loppuarviointia ei vielä ole."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: käytä kypsää savukinkkua, kypsennä perunat läpikotaisin, tarkista kinkun pakkausmerkinnöistä mahdolliset allergeenit (tuotteet vaihtelevat), maito on voi- ja kermatuotteiden allergeeni. Ei gluteenittomuusväitettä. Ylijäämä jäähdytetään nopeasti matalissa astioissa ja säilytetään jääkaapissa alle +6 °C:ssa; Ruokavirasto: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ . Tämä on kirjallinen elintarviketurvallisuustarkistus, ei keittiölämpötilamittaus."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "Annokset, työvaiheet ja aikataulu ovat luonnosarvioita; valmistus ja välinekapasiteetti tarkistettava."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: lähtöainesten massa 1815 g, kuudelle laskennallisesti noin 302,5 g/annos ennen uunihaihtumaa. Paistoaika 30+35–40 min, vetäytyminen noin 10 min ja valmistelu/uuniin lämmitys mahtuvat reseptin 95 minuutin kokonaisaikaan. Vähintään 3 litran vuoka on perusteltu käytännön marginaali, kun täytettä on noin 1,8 kg. Annosta ja aikaa ei ole fyysisesti mitattu."
     },
     "nutrition": {
       "status": "pending",
       "notes": "Reseptiin sidottu riippumaton ravintolaskelma puuttuu eikä nollia tai lähteen eri annoksen arvoja kopioida."
     },
     "glycemic": {
-      "status": "pending",
-      "notes": "GI/GK-arvoa ei arvata; puuttuvuus voidaan hyväksyä unavailable-tilassa kirjallisella perustelulla."
+      "status": "unavailable",
+      "notes": "Täsmälleen tässä kuuden annoksen kinkku–perunasuikale–15 % ruokakerma -sovituksessa ei ole hyväksyttyä GI-/GK-tutkimusta tai laskentaa. Numeerista GK-arvoa ei arvata; julkaisuun jää perusteltu määrittämätön tila, ellei myöhemmin saada hyväksyttyä evidenssiä."
     }
   },
   "supplementary_evidence": {
     "image_path": "kuvat/paaruoat/kinkkukiusaus.webp",
-    "image_review": "Tekoälyn tuottama havainnekuva, joka on vielä hyväksyttävä julkaisuun.",
-    "physical_cook_test": false
+    "image_review": "Chat 3:n 22.11.2026 rajattu WebP-katselmointi: kuva vastaa peruna–kinkkusuikaleita vaaleassa uunivuoassa. Kuvan pinnalla on kuitenkin vihreää persiljaa muistuttavaa koristetta, jota ei ole reseptin määrällisissä aineksissa. AI-havainnekuva, ei todellinen kokkikoe; lopullinen ImageAssets/tekijänoikeus- ja toimituksellinen kuva-approval on edelleen HOLD. Mainin overlay approved=true tarkoittaa ainoastaan teknistä CI-syötehyväksyntää.",
+    "physical_cook_test": false,
+    "image_sha256": "da4eea7e47ec7420dff39c875dad437993b37324cb3a17eff8354c80be46987c"
   }
 }

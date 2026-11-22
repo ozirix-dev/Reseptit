@@ -17,3 +17,9 @@
 - Kuvan WebP ja kieliversiot on tallennettu samaan PR:ään. Neljän kielen ainesmäärien, yksiköiden, vaiheiden määrän ja kuvaosoitteen rakenne on verrattu; varsinainen käännösten merkitys- ja sujuvuustarkistus on kesken.
 - **HOLD ennen julkaisua:** 2,5 litran vuoan soveltuvuus, valittavan kinkun tuoteseloste (allergeenit), täsmäversioon sidottu ravintolaskennan näyttö ja riippumaton toimituksellinen hyväksyntä. Fyysistä kokkikokeilua ei ole tehty. Cloudflare-julkaisun selvitys kuuluu erilliseen työhön; tämän PR:n ei pidä laukaista julkaisemista.
 - Julkaisun virallisen hyväksyntärekisterin tila on edelleen `decision: hold`. Tätä kirjallista vertailua ei pidä merkitä koekeittiötestiksi.
+
+## Chat 3:n rajattu katselmointi 22.11.2026
+
+K-Ruoan [kinkkukiusaus](https://www.k-ruoka.fi/reseptit/kinkkukiusaus) tukee pakasteperunasuikaleiden, kypsän savukinkun, sipulin ja 15 % ruokakerman kaksivaiheista uunikypsennystä. Tämä ei todista Recipavon punnittuja määriä tai fyysistä valmistustulosta. Lähtöainesten massa 1815 g, kuudelle laskennallisesti noin 302,5 g ennen haihtumaa. Vähintään 3 litran vuoka jättää täytteelle tilaa aiemman 2,5 litran sijasta; pehmeys tarkistetaan perunoista. Paisto 65–70 min, lepo 10 min, kokonaisajan arviona 95 min. Maitoallergeeni ja pakkausmerkinnät, tarvittaessa nopea jäähdytys ja alle +6 °C kylmäsäilytys kirjattu neljällä kielellä.
+
+**Rajattu hyväksyntä:** ingredients/method/food_safety/servings_and_time/duplicates `pass`, glycemic `unavailable`. Ainesosakohtaiset ja valmiin uuniruoan ravintoarvot eivät ole hyväksyttyjä; `nutrition: pending`, `decision: hold`, kuvan lopullinen ja riippumaton käännöskatselmointi avoinna. Ei fyysistä keittiökoetta, eikä tätä saa väittää sellaiseksi.

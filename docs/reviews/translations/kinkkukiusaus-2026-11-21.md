@@ -27,3 +27,9 @@
 ## Julkaisuportti
 
 Käännösten virallinen merkitystiivisteisiin sidottu katselmointi `meta/kaannokset/codex-review-evidence.json` -rekisteriin **ei ole kuitattu**. Kun FI-lähde hyväksytään, tee repon edellyttämä Codex-merkitysvertailu, päivitä tiivisteet, tarkista CI ja `docs/reviews/new-recipes/kinkkukiusaus.json` -hyväksyntä. Nykyinen `decision: hold` säilyy.
+
+## Chat-3:n uusi rakenteellinen ja turvallisuustarkistus 22.11.2026
+
+FI/EN/SV/TH: 2,5 litran vuoka korjattu **vähintään 3 litran** uunivuoaksi; jääkaappisäilytys tarkennettu **alle +6 °C**. Tämä on todellinen ohjemuutos, jonka kaikki neljä kieliversiota vastaavat. Ainesosat säilyvät samassa 7 rivin järjestyksessä ja punnitussa massassa; 6 annosta ja 95 min kokonaisaika ennallaan. FI-lähteen uusi SHA-256: `6c7bb9ac4b4e788a36bae0b107f164ad2d9f9e73d8246fd829acd8733120699c`, Git-blob `6b3df798cb703131fbd72c427db5e457365c1a88`.
+
+Chat 3:n aloitteesta tehty tekstuaalinen semantiikkatarkistus: 7/7 ingredient- ja 5/5 valmistusvaiheparia; kriittiset 225 °C / 30 min → 200 °C / 35–40 min, kypsä kinkku, perunan pehmeys, 10 min lepo ja uusi 3 l tilavuus mukana kaikissa EN/SV/TH-versioissa. Merkityksellistä ristiriitaa ei näissä kohdissa havaittu. Ei riippumatonta Codex-/ihmiskatsausta eikä virallista `meta/kaannokset/codex-review-evidence.json`-PASS-merkintää. Virallinen rekisteri saa merkinnät vasta julkaisuprosessin edellyttämässä oikeassa tilassa ja todellisen hyväksynnän perusteella. PR #785 ja neljä kieltä pysyvät Draft/HOLD.
