@@ -140,3 +140,41 @@ test('quarantined duplicate time keys are excluded from public FI review signals
   assert.deepEqual(report.signals.duplicateTimeKeys, []);
   assert.deepEqual(report.signals.invalidTime, []);
 });
+
+test('distinguishes unnumbered method text from absent FI preparation', () => {
+  const intro = 'Yksilöllinen ruokaohje.';
+  const original = recipe('prose', intro, 'Sekoita.') ;
+  const prose = original.replace('1. Sekoita.\\n2. Tarjoa lämpimänä.', 'Sekoita ainekset. Tarjoa lämpimänä.');
+  const bullets = recipe('bullets', intro, 'Sekoita.')
+    .replace('1. Sekoita.\\n2. Tarjoa lämpimänä.', '- Sekoita.\\n- Tarjoa lämpimänä.');
+  const empty = recipe('empty', intro, 'Sekoita.')
+    .replace('1. Sekoita.\\n2. Tarjoa lämpimänä.', '');
+  const missing = recipe('no-section', intro, 'Sekoita.')
+    .replace('## Valmistus\\n\\n1. Sekoita.\\n2. Tarjoa lämpimänä.', '');
+  const inputs = [
+    { path: 'reseptit/aamupalat/prose.md', content: prose },
+    { path: 'reseptit/aamupalat/bullets.md', content: bullets },
+    { path: 'reseptit/aamupalat/empty.md', content: empty },
+    { path: 'reseptit/aamupalat/no-section.md', content: missing },
+    { path: 'reseptit/aamupalat/numbered.md', content: recipe('numbered', intro, 'Sekoita.') },
+  ];
+  const untouched = inputs.map(x => x.content);
+  const report = analyze(inputs);
+  assert.equal(report.counts.reviewed, 5);
+  assert.deepEqual(report.signals.missingPreparation.map(x => x.recipeId),
+    ['bullets', 'empty', 'no-section', 'prose']);
+  assert.deepEqual(report.signals.unnumberedPreparation.map(x => x.recipeId), ['bullets', 'prose']);
+  assert.deepEqual(inputs.map(x => x.content), untouched);
+});
+
+test('quarantine excludes unnumbered FI method advisory signals', () => {
+  const content = recipe('hidden', 'Kuvaus.', 'Sekoita.')
+    .replace('1. Sekoita.\\n2. Tarjoa lämpimänä.', '- Sekoita.');
+  const report = analyze(
+    [{ path: 'reseptit/aamupalat/hidden.md', content }],
+    new Set(['hidden']),
+  );
+  assert.equal(report.counts.excludedQuarantine, 1);
+  assert.deepEqual(report.signals.unnumberedPreparation, []);
+  assert.deepEqual(report.signals.missingPreparation, []);
+});
