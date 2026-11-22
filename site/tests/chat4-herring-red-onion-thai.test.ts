@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { test } from "node:test";
 
-for (const id of ["lasimestarin-silli", "sillikaviaari-ruisnapeilla"]) {
+for (const id of ["lasimestarin-silli", "sillikaviaari-ruisnapeilla", "suolasienisalaatti-sipulilla"]) {
   test("Chat-4 "+id+": red onion is not shallot in Thai", () => {
     const fi = readFileSync(new URL("../../reseptit/alkuruoat/"+id+".md", import.meta.url), "utf8");
     const en = readFileSync(new URL("../../kaannokset/en/alkuruoat/"+id+".md", import.meta.url), "utf8");

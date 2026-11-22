@@ -17,3 +17,7 @@ Korjattu molempien thaikielisten reseptien aineslistassa ja valmistusvaiheessa `
 ## Julkaisurajat
 
 Nämä ovat edelleen `status: draft`. Tämä Chat-4:n havainto ja korjaus eivät ole riippumattoman Codexin tai ihmisen semanttinen hyväksyntä. Yhtään virallista hyväksyntärekisteriä ei täydennetä tekaistulla päätöksellä. Muut 22 alkuruokakäännöstä ja raakakalan turvallisuus-HOLD pysyvät muuttumattomina. Kohdennettu regressiotesti varmistaa FI/EN/SV/TH:n punasipulin sekä TH:n raaka-aine- ja valmistustermin.
+
+## Täydennys samaan PR:ään – suolasienisalaatti
+
+Jatkovertaus osoitti saman virheen myös `suolasienisalaatti-sipulilla`-reseptissä: FI `70 g punasipulia`, EN `red onion`, SV `rödlök`, mutta TH käytti samaa epäselvää `หอมแดงหัวใหญ่`-termiä sekä aineslistassa että valmistuksen vaiheessa 2. Molemmat esiintymät on nyt täsmennetty muotoon `หอมหัวใหญ่สีแดง`, muuttamatta määriä, sieniturvallisuutta tai Draft-statusta. Uusi Git-blob on mukana SHA-inventaariossa. Yhteensä korjattu kolme reseptiä samassa PR:ssä, ilman uutta julkaisuhyväksyntää.
