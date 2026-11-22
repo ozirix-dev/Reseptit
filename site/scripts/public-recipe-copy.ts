@@ -954,7 +954,7 @@ export function projectPublicRecipeMethodCopy(
     }
     notes = [notes,
       "- Valmistustapa: keittäminen (riisi kookosmaidossa) ja kananmunan höyrykypsennys. Alkuperäisen FI-lähteen paistaminen-merkintä on virheellinen; mitään ei paisteta."
-    ].filter(Boolean).join("\\n");
+    ].filter(Boolean).join("\n");
   }
   if (id === "japanilainen-natto-riisikulho") {
     const reviewed = nattoRiceCookingReview[locale];
