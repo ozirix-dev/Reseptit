@@ -29,7 +29,7 @@
     },
     "food_safety": {
       "status": "pass",
-      "notes": "Chat 3 22.11.2026: ruokasieniä saa käyttää vain varmasti tunnistettuina. Ruokaviraston ohje edellyttää kaikkien tuntomerkkien tutkimista, eikä tekoälykuva ole lajitunnistustodiste. Muista maito- ja vehnäallergeenit sekä kasvisliemen pakkausmerkinnän mahdolliset lisäallergeenit. Jauho kypsennetään hauduttamalla, keitto tarjoillaan kuumana, tähteet jäähdytetään nopeasti matalissa astioissa ja säilytetään jääkaapissa alle +6°C. Sienten todellista lajia tai kokkausta ei todisteta tällä tekstikatselmoinnilla. https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-tunnistaminen/"
+      "notes": "Chat 3 22.11.2026: ruokasieniä saa käyttää vain varmasti tunnistettuina. Ruokaviraston ohje edellyttää kaikkien tuntomerkkien tutkimista, eikä tekoälykuva ole lajitunnistustodiste. Muista maito- ja vehnäallergeenit sekä kasvisliemen pakkausmerkinnän mahdolliset lisäallergeenit. Jauho kypsennetään hauduttamalla, keitto tarjoillaan kuumana, tähteet jäähdytetään nopeasti matalissa astioissa ja säilytetään jääkaapissa alle +6°C. Sienten todellista lajia tai kokkausta ei todisteta tällä tekstikatselmoinnilla. https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-tunnistaminen/ Versiovertailu 22.11.2026: Chat-1:n riippumattomasti katselmoiman #854:n HEADin 14033ad443e9b08a80ab5b2cbd6267138eff8fb5 jälkeen nykyiseen FI-lähteeseen lisättiin vain kuumana tarjoaminen, nopea jäähdytys matalissa astioissa ja jääkaappisäilytys alle +6 °C:ssa. Sienilajin tunnistusvaatimus, aineet ja valmistus pysyvät samana. Tämä SHA-ero on dokumentoitu, mutta Chat-3 ei hyväksy omaa tekstiään riippumattomasti."
     },
     "servings_and_time": {
       "status": "pass",
@@ -37,7 +37,7 @@
     },
     "nutrition": {
       "status": "pending",
-      "notes": "Reseptiin sidottu riippumaton ravintolaskelma puuttuu eikä nollia tai lähteen eri annoksen arvoja kopioida."
+      "notes": "Numeeriset ravintoarvot ja GK jätetään tarkoituksella julkaisematta. Chat-1:n #855 dokumentoi riippumattoman WITHHOLD-linjauksen aiemmalle FI-versiolle HEAD 14033ad443e9b08a80ab5b2cbd6267138eff8fb5. Nykyiseen FI-lähteeseen lisättiin sen jälkeen vain jälkiruoan sijasta keiton turvallinen tarjoilu/jäähdytys-/säilytysohje, ei muutoksia raaka-aineisiin tai määriin. Nyky-SHA:n versionkohtainen riippumaton kuittaus on edelleen tarpeen ennen nutrition:pass-merkintää. Puuttuvan tuoreen suppilovahveron lajikohtaisia ravintotietoja tai yksilöimätöntä kasvislientä ei korvata nollilla, laskentaehdokkaan osasummia ei julkaista."
     },
     "glycemic": {
       "status": "unavailable",
@@ -46,8 +46,22 @@
   },
   "supplementary_evidence": {
     "image_path": "kuvat/paaruoat/suppilovahverokeitto.webp",
-    "image_review": "Chat 3 22.11.2026: 960×746 Git-tracked WebP näyttää vaalean sienisosekeiton sekä kypsiä sieniä ja persiljaa pinnalla. Tämä vastaa annoskuvaa visuaalisesti, mutta AI-havainnekuvan sienilajia EI voi tunnistaa eikä käyttää metsässä poimittujen sienten varmentamiseen. Kuvan lopullinen toimituksellinen ja käyttöoikeus-/ImageAssets-julkaisuhyväksyntä puuttuu.",
+    "image_review": "Chat 3 22.11.2026: 960×746 Git-tracked WebP näyttää vaalean sienisosekeiton sekä kypsiä sieniä ja persiljaa pinnalla. Tämä vastaa annoskuvaa visuaalisesti, mutta AI-havainnekuvan sienilajia EI voi tunnistaa eikä käyttää metsässä poimittujen sienten varmentamiseen. Kuvan lopullinen toimituksellinen ja käyttöoikeus-/ImageAssets-julkaisuhyväksyntä puuttuu. Chat-1:n #852 on mainiin yhdistetty viiden kotiruokakuvan SHA-lukittu hyväksytty Git-overlay, myös tämä WebP. Kuva on havainnekuva, eikä sen sienilaji ole silmämääräisesti varmennettavissa eikä kuva todista luonnonsienen turvallisuutta. Kokonaisjulkaisu ei seuraa automaattisesti kuvahyväksynnästä.",
     "physical_cook_test": false,
-    "image_sha256": "8d89519dbce153b64ef50ca00f0653e0f6374ff590b80f60da60d6e50587ebdd"
+    "image_sha256": "8d89519dbce153b64ef50ca00f0653e0f6374ff590b80f60da60d6e50587ebdd",
+    "independent_review_reconciliation": {
+      "review_pr": 854,
+      "reviewed_head": "14033ad443e9b08a80ab5b2cbd6267138eff8fb5",
+      "current_source_sha256": "6301458ccb1412c9dae4673f72a89a200e1c2c9fa7c89b106d2c8ce72c34feda",
+      "source_changed_since_review": true,
+      "changed_topics": [
+        "kuumana tarjoaminen sekä tähteiden jäähdytys ja säilytys alle +6 °C"
+      ],
+      "current_version_reapproval": "required",
+      "image_overlay_pr": 852,
+      "numeric_macro_withholding_pr": 855,
+      "translation_review": "draft; formal independent semantic evidence pending",
+      "publication_decision": "HOLD"
+    }
   }
 }
