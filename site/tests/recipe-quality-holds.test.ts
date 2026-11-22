@@ -1,6 +1,10 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+
+const imageSourceRoot = process.env.VERIFIED_IMAGE_ROOT
+  ? path.resolve(process.env.VERIFIED_IMAGE_ROOT)
+  : path.resolve(import.meta.dirname, "../../kuvat");
 import test from "node:test";
 import sharp from "sharp";
 import { siteContent } from "../src/generated/content.generated";
@@ -173,7 +177,7 @@ test("all ten isolated karnivore drafts remain validated and out of published co
       assert.ok(recipe.image, id);
       assert.equal(recipe.image.src, `paaruoat/${id}.webp`);
       assert.ok(recipe.image.alt.trim(), `${id}: alt text is missing`);
-      const image = await sharp(path.join(root, "kuvat", recipe.image.src)).metadata();
+      const image = await sharp(path.join(imageSourceRoot, recipe.image.src)).metadata();
       assert.equal(image.format, "webp", id);
       assert.equal(image.pages ?? 1, 1, id);
       assert.equal(image.orientation ?? 1, 1, id);
