@@ -116,7 +116,7 @@ const descriptions: LocalizedCopy = {
     fi: "Jasmiiniriisi saa makua kookosmaidosta ja tuoreesta timjamista. Tarjoa se haudutettujen kidneypapujen kanssa.",
   },
   "karibia-maissipuuro-kookoksella": {
-    fi: "Maissijauho kypsyy kookosmaidossa täyteläiseksi puuroksi, joka maustetaan kanelilla ja vaniljalla.",
+    fi: "Maissijauho kypsennetään ensin vedessä puuroksi. Kookosmaito, kaneli ja vaniljauute lisätään kypsän puuron joukkoon.",
   },
   "karibia-mango-limejogurtti": {
     fi: "Limemehu raikastaa kylmän mango-jogurttikulhon. Pinnalle ripotellaan kookoshiutaleita.",
