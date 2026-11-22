@@ -31,13 +31,13 @@ ingredients:
     item: "peeled floury potatoes"
   - amount: 450
     unit: "g"
-    item: "beef mince"
+    item: "beef mince, 17% fat"
   - amount: 120
     unit: "g"
     item: "onion"
   - amount: 250
     unit: "g"
-    item: "milk"
+    item: "semi-skimmed milk, 1.5% fat"
   - amount: 40
     unit: "g"
     item: "butter, 30 g for mash and 10 g for the dish"
@@ -58,11 +58,11 @@ An everyday Finnish bake of buttery mashed potatoes layered with fully cooked be
 1. Heat the oven to 200°C. Cut the potatoes into pieces and boil in water for 15–20 minutes until completely soft. Drain.
 2. Warm the milk without boiling. Mash the potatoes and stir in the milk, 30 g butter and 3 g salt. Do not beat for too long.
 3. Brown the beef mince in its own fat. Add chopped onion and cook until the beef is fully cooked. Season with the remaining salt and black pepper.
-4. Grease a roughly 2.5-litre baking dish with 10 g butter. Spread half the mash in it, layer on the beef and finish with the rest of the mash.
+4. Grease a baking dish of at least 3 litres with 10 g butter. Spread half the mash in it, layer on the beef and finish with the rest of the mash.
 5. Bake at 200°C for 25–30 minutes until golden. Rest for around 10 minutes before serving.
 
 ## Notes
 
-- Contains milk. Cook the beef thoroughly and chill leftovers promptly.
+- Contains milk. Cook the beef thoroughly; cool leftovers promptly in shallow containers and refrigerate below +6°C.
 - AI-generated illustration; no independent cooking test, recipe-specific nutrition or GK calculation, or gluten-free approval.
 - Original adaptation based on: [K-Ruoka](https://www.k-ruoka.fi/reseptit/liha-perunasoselaatikko) · [Valio](https://www.valio.fi/reseptit/liha-perunasoselaatikko/)

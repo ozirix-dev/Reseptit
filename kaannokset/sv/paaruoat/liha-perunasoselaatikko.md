@@ -31,13 +31,13 @@ ingredients:
     item: "skalad mjölig potatis"
   - amount: 450
     unit: "g"
-    item: "nötfärs"
+    item: "nötfärs, 17 % fett"
   - amount: 120
     unit: "g"
     item: "gul lök"
   - amount: 250
     unit: "g"
-    item: "mjölk"
+    item: "lättmjölk, 1,5 % fett"
   - amount: 40
     unit: "g"
     item: "smör, 30 g till mos och 10 g till formen"
@@ -58,11 +58,11 @@ En klassisk finsk vardagslåda med smörigt potatismos, genomstekt nötfärs och
 1. Värm ugnen till 200 °C. Dela potatisen och koka i vatten i cirka 15–20 minuter tills den är helt mjuk. Häll av.
 2. Värm mjölken utan att koka den. Mosa potatisen och rör ner mjölken, 30 g smör och 3 g salt. Undvik lång vispning.
 3. Bryn nötfärsen i sitt eget fett. Tillsätt hackad lök och stek tills köttet är helt genomstekt. Krydda med resterande salt och svartpeppar.
-4. Smörj en ugnsform på cirka 2,5 liter med 10 g smör. Bred ut hälften av moset, lägg på färsen och täck med resten av moset.
+4. Smörj en ugnsform på minst 3 liter med 10 g smör. Bred ut hälften av moset, lägg på färsen och täck med resten av moset.
 5. Grädda vid 200 °C i 25–30 minuter tills ytan är gyllene. Låt vila cirka 10 minuter före servering.
 
 ## Anteckningar
 
-- Innehåller mjölk. Genomstek nötfärsen och kyl rester snabbt.
+- Innehåller mjölk. Genomstek nötfärsen, kyl rester snabbt i grunda kärl och förvara i kylskåp under +6 °C.
 - AI-genererad bild; ingen egen provlagning, receptspecifik närings-/GK-beräkning eller godkänd glutenfrihetsmärkning.
 - Självständig variant baserad på: [K-Ruoka](https://www.k-ruoka.fi/reseptit/liha-perunasoselaatikko) · [Valio](https://www.valio.fi/reseptit/liha-perunasoselaatikko/)
