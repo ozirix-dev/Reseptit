@@ -26,3 +26,11 @@ Tila: DRAFT. Ei omaa kokkivarmistusta tai julkaisuhyväksyntää.
 Neljässä kielessä ainesosien määrä ja vaiheistus täsmäävät: 350g silakkaa, 900g perunaa, 150g pekonia, **500g 1,5 % kevytmaitoa** ja 2 kananmunaa; ruotojen tarkistus, 175°C 80–90min, kala kauttaaltaan kypsä, munamaito hyytynyt, 10min lepo. Ylijäämä jäähdytetään nopeasti matalissa astioissa ja säilytetään alle +6°C. Punnittuja aineksia 2031g + kaksi kananmunaa; kananmunien syötävä massa arvio ei ole fyysisesti punnittu. Fyysinen valmistus/uunin riittävyys ei ole mitattu.
 
 Rajatut katselmointitilat: duplicates, ingredients, method, food_safety ja servings_and_time `pass`, glycemic `unavailable`, **nutrition `pending`** ja `decision: hold`. Kalan täsmäalkuperä, pekonin ravintokoostumus ja riippumattomat kuva-/kieli-/julkaisuhyväksynnät edelleen avoimet.
+
+## Chat-3: ravintokandidaatin aritmetiikan lisätarkistus 22.11.2026
+
+- Laskennan lähtö: `docs/nutrition/candidates/silakkalaatikko-2026-11-21.json`, reseptikohtainen ei-julkinen kandidaatti. Laskin uudelleen tiedostossa numeerisesti katettujen rivien 100 g -arvot × grammamäärät ja kaikkien kirjattujen panosten annoskohtaiset osasummat.
+- **Rivilaskuissa ei ole yli 0,0011 g poikkeamia** lähdearvojen ja kirjattujen rivipanosten välillä. Tiedoston tunnettujen rivien osasummat: hiilihydraatit 28,176 g, proteiini 20,850 g ja rasva 17,800 g. Nämä luvut ovat **ehdollisia osasummia**, eivät koko reseptin ravintoarvot tai julkaisuhyväksyntä.
+- Lähdekattavuus: numeerisesti kirjattuja panoksia 10/11 ainesrivillä. **Avoimet todisteet:** 0,5 g maustepippurille puuttuu varmennettu koostumustietue. Valkopippurin kuitu- ja polyolitiedot puuttuvat; pekonin tuote, kalan ravintoprofiili sekä kahden kananmunan massaoletus vaativat vahvistuksen.
+- Kuitu- ja polyolisummia ei julkaista: tunnetut kuitupanokset 2,370 g/annos ja polyolipanokset 0 g eivät ole kaikkien ainesosien summia.
+- **Jatko:** varmennetaan yksilöidyt koostumustietueet/tuotepakkaukset, puuttuvat makrokomponentit sekä tarpeellinen saanto-/retentiokäsittely ja teetetään hyväksyttävä koko reseptin laskenta. `nutrition: pending`, `decision: hold`, Draft-status sekä riippumaton kuva- ja kielikatselmointi säilyvät. Tässä tarkistettiin vain tallennetun aritmetiikan sisäinen yhtäpitävyys, ei koostumustietokannan ulkoista oikeellisuutta.
