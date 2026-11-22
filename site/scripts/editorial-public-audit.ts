@@ -216,7 +216,7 @@ export function toMarkdown(report: ReturnType<typeof compareInventories>): strin
       t.rawRepeatedStepGroups + " | " + t.projectedRepeatedStepGroups + " |",
     "| Johdanto toistettu Kuvaus-osiossa | " + t.sourceOnlyDuplicateDescriptions +
       " | Ei vastaavaa kahden tekstikentän rakennetta |",
-    "| Kokonaisaika puuttuu tai virheellinen | " + t.rawMissingTimes + " | " + t.projectedMissingTimes + " |",
+    "| Kokonaisaika puuttuu | " + t.rawMissingTimes + " | " + t.projectedMissingTimes + " |",
     "| Virheellinen kokonaisaikamerkintä | " + t.rawInvalidTimes + " | Ei erillistä raakakenttää |",
     "| Kokonaisaika määritelty useammin kuin kerran | " + t.rawDuplicateTimeKeys + " | Ei erillistä raakakenttää |", "",
     "Raakatekstin geneerisistä osumista " + t.rawGenericNoLongerVisible +
@@ -235,6 +235,7 @@ export function toMarkdown(report: ReturnType<typeof compareInventories>): strin
     for (const item of group.recipes) lines.push("  - " + item.recipeId + " (" + item.routePath + ")");
   }
   if (!report.visible.repeatedSteps.length) lines.push("Ei osumia.");
+  lines.push("", "Raakalähteen puuttuvien kokonaisaikojen luku sisältää myös virheelliset arvot; alla eriteltyjä joukkoja ei tule laskea yhteen.", "");
   lines.push("", "## Raakalähteen virheelliset kokonaisaikamerkinnät", "");
   for (const item of report.sourceOnly.invalidTime) {
     lines.push("- " + item.recipeId + ", lähde " + item.path +
