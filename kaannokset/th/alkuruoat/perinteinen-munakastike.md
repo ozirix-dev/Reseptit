@@ -10,10 +10,6 @@ translation_of: perinteinen-munakastike
 status: draft
 servings: 4
 time_total_min: 20
-carbs_net_per_serving_g: 10.53
-carbs_total_per_serving_g: 10.9
-protein_per_serving_g: 7.89
-fat_per_serving_g: 12.52
 difficulty: "ง่าย"
 main_ingredient:
   - "kananmuna"
