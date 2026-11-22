@@ -73,3 +73,14 @@ Alustavat tieteelliset GI-viitteet, **vain tutkimusjonoon**:
 - [ ] PR:n täsmä-HEAD CI, omistajan katselmointi ja julkaisu-SHA:n jälkivarmennus. Tässä tutkimus-PR:ssä ei valmistella automaattista julkaisemista.
 
 **Päätös:** yksi erillinen glutiiniriisistä tehtävä jälkiruokaresepti on *sisällöllisesti mahdollinen*, mutta vaihe on edelleen **RESEARCH / SOURCE-HOLD**, ei reseptin julkaisuhyväksyntä.
+
+## Käytännön hyväksyntämittaukset (Chat 5, 22.11.2026)
+
+Tämä on **mittausohje**, ei tehty koekeittiö, uusi ravintolaskelma tai lupaus julkaisuvalmiudesta. Tarkoitus on saada yksi toistettavissa oleva päätös ilman arvattuja aikoja tai annospainoja.
+
+1. **Riisin raaka-aine ja saanto:** kirjaa käytetyn glutiiniriisin tuotteen nimi ja kuivan riisin 200 g. Punnitse riisi liotuksen ja valutuksen jälkeen, heti höyrytyksen jälkeen sekä kookosseoksen imeydyttyä. Merkitse erikseen mahdollinen astiaan jäänyt imeytymätön kookosseos; sitä ei saa laskea automaattisesti syödyksi.
+2. **Kastike, mango ja mungpapu:** kirjaa valmiin kastikkeen massa ja mahdollinen astiaan jäänyt osuus; punnitse mangon syötävä osuus 500 g. Kirjaa mungpapujen tarkka tuotetyyppi, valmistajan käsittelyohje ja käytännössä tehty kypsennys ennen paahtamista. Ilman turvallisen käsittelyn näyttöä mungpapulisuke ja tämän prototyypin julkaisu pysyvät HOLDissa.
+3. **Aika ja neljä annosta:** kirjaa liotuksen alkamis-/päättymisaika sekä höyrytyksen, imeytymisen, kastikkeen ja koko valmistuksen todelliset aloitus-/lopetusajat; päällekkäisiä vaiheita ei summata kahdesti. Punnitse valmis koko erä ja kunkin neljän annoksen riisi, kastike, mango ja mungpapu erikseen.
+4. **Hyväksyminen:** vertaa kirjatut saannot käytettyihin tuotteisiin ja reseptitekstiin. Jos kookosseos ei imeydy, riisi jää kovaksi, lisukkeen turvallinen kypsennys ei toteudu tai neljä annosta eivät vastaa kirjattuja määriä, päivitä koemenetelmä ja testaa uudelleen **ennen** ravinto-, käännös-, kuva- tai GK-porttia. GK jää määrittämättä, ellei reseptiin soveltuva lähde ja erillinen hyväksyntä täyty.
+
+**Luovutuskriteeri:** kirjattu tuote- ja massa-/aikamittaus sekä kulinaarinen riippumaton katselmointi; ilman näitä tämä PR pysyy SOURCE-HOLDina. Mitään valmistajan tuotekirjettä ei oletusarvoisesti vaadita, jos tuotteen pakkaus- ja viranomaistiedot antavat riittävän varmennuksen.
