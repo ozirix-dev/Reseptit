@@ -26,6 +26,12 @@ Molemmissa AFCD:n maustekorteissa julkaistu sokerialkoholien kanssa / ilman lask
 
 **Lähteet:** [FSANZ AFCD Release 3](https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/about-afcd), [AFCD F009160](https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009160), [AFCD F006618](https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006618), [AFCD F007879](https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F007879), [USDA FDC 171325](https://fdc.nal.usda.gov/food-details/171325/nutrients) ja [FDC 167749](https://fdc.nal.usda.gov/food-details/167749/nutrients), sekä nykyiset repon lähdesnapshotit.
 
+### Lähdeketjun uudet tarkistusankkurit
+
+Testi lukee valkosipulijauheen **USDA FDC 171325** -lähteen ravintoainetunnukset `1005` (kokonais-CHO), `1003` (proteiini) ja `1004` (rasva) suoraan alkuperäisen reseptin `primarySource.nutrients`-historiatietueesta. Sitruunankuoren **FDC 167749** -lähteen `1005`, `1003`, `1004` ja `1008` (energia) luetaan `docs/nutrition/gk80-operation142/integration.json`-paketin `extraUsdaSources`-snapshotista. Kahden hiilihydraattiarvon lisäksi tarkistetaan eri lähteen `usda-cap-excerpts.json`-poiminnan yhtäpitävyys. Muutokset näihin historiallisiin arvoihin havaitaan testien odotusarvoristiriitana, eikä historiaa kirjoiteta uusiksi.
+
+Valkosipulijauheen **331 kcal/100 g** on ainoa tähän aritmetiikkaan tarvittu arvo, jota nykyisen reseptin jäädytetty `primarySource` ei sisällä. Testi käyttää sille eksplisiittistä, alkuperäiseen [USDA National Nutrient Database Standard Reference 27, NDB 02020](https://www.ars.usda.gov/ARSUserFiles/80400525/Data/SR27/reports/sr27fg02.pdf) -julkaisuun sidottua **kiinteää viitearvoa**. Tämä on luettavissa ja vertailtavissa, mutta testin automaattinen lähteen muutoksen tunnistus ei tältä osin vastaa JSON-snapshotin lukemista. USDA:n luvut ovat tyypillisiä koostumuslukemia eivätkä testaa eräkohtaisia tai valmistustapakohtaisia enimmäisrajoja. Mitään uutta ravinto- tai GK-sinettiä ei synny.
+
 ## Poisjättöjen annosaritmetiikka – **nimelliset lähdearvot, eivät lot-kohtaiset absoluuttiset ylärajat**
 
 Kerroin: `ainesosan massa (g) / 4 annosta / 100 g`. Muut ravintoaineet eivät muutu julkaistaviksi tällä aritmetiikalla.
