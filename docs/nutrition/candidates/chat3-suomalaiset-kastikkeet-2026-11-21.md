@@ -104,3 +104,18 @@ Tarkka tilanne: **4/10 dokumentoitua laskentakandidaattia, 0/10 julkaistuun FI-l
 ## Jatkotarkistus 22.11.2026 – ruskean kastikkeen täsmätuotteet
 
 - Uusi [ruskean kastikkeen tuotekoostumusmuistio](perinteinen-ruskea-kastike-source-basis-2026-11-22.md): Puljonki Signature -liemen EAN 6416796728013 valmistaja- ja kauppatieto täsmäävät (100 ml:n rasva, CHO, proteiini ja kuitu); 500 ml:n osasumma laskettu suoraan tilavuusperusteesta. Kikkoman Naturally Brewed -soijakastikkeen valmistajan 100 ml -tiedot varmistettu, mutta reseptin määrä on 4 g. Tiheys, polyolit ja virallisen mallin 100 g -yksikkömuunnos jäävät avoimiksi; ei automaattisia nollia eikä julkisia makrokenttiä.
+
+## Chat-3 – neljän laskentakandidaatin riviaritmetiikan tarkistus 22.11.2026
+
+Tarkistuslähteet ovat `docs/nutrition/candidates/draft-calculations/`-hakemiston neljä JSON-tiedostoa, **eivät** hyväksyttyjä `docs/nutrition/calculations/`-julkaisupaketteja. Laskin jokaiselle ainesriville `amount × edibleFraction × retainedFraction × per100g / 100` ja jaoin saadut summat annosmäärällä.
+
+| Kandidaatti | Rivejä | Tunnettu CHO g/annos | Proteiini g/annos | Rasva g/annos | Puuttuvat |
+| --- | ---: | ---: | ---: | ---: | --- |
+| kermainen-tillikastike | 6 | 2,8905 | 1,5249 | 6,0441 | Ei puuttuvia rivitietueita tässä laskelmassa |
+| perinteinen-munakastike | 7 | 10,5336 | 7,8853 | 12,5165 | Valkopippurin tietue |
+| perinteinen-valkokastike | 6 | 8,3632 | 3,2492 | 7,7502 | Valkopippurin ja muskottipähkinän tietueet |
+| puolukkakastike-jalkiruokiin | 4 | 12,8750 | 0,2264 | 0,2737 | Ei puuttuvia rivitietueita tässä laskelmassa |
+
+Numerot ovat **tunnettujen rivien laskennallisia osasummia** (CHO = Finelin käytettävissä oleva hiilihydraatti), eivät pyöristystä pidemmälle varmistettuja lopullisia reseptiarvoja. Kaksi puuttuvien mausteiden reseptiä ei saa saada niistä implisiittisiä nollia. Ehdokkaiden `reviewerStatus: AUTOMATED ONLY` pysyy voimassa. Lähdetietojen tuotekohtaiset tarkistukset, erillinen julkaisuhyväksyntä ja loput kuusi kastiketta ovat kesken.
+
+**Portti:** PR #808 pysyy Draft/HOLD. Tämä lisäys on sisäinen aritmetiikkatarkistus, eikä muuta 0/10 hyväksyttyä julkaistuun FI-lähteeseen liitettyä laskentapakettia tai avaa Ready/mergeä.
