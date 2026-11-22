@@ -10,10 +10,12 @@ export const ROUTES = Object.freeze([
   {path:'/th/recipes/',lang:'th'},
 ]);
 const REVISION = /^[0-9a-f]{40}$/;
-const ATTR = name => new RegExp(`(?:^|\\s)${name}\\s*=\\s*(?:"([^"]*)"|'([^']*)'|([^\\s"'=<>]+))`, 'i');
 const tagAttribute = (tag, name) => {
-  const match = tag.match(ATTR(name));
-  return match ? (match[1] ?? match[2] ?? match[3]) : null;
+  const attributes = tag.matchAll(/([^\s"'=<>/]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>]+)))?/g);
+  for (const [, key, doubleQuoted, singleQuoted, unquoted] of attributes) {
+    if (key.toLowerCase() === name) return doubleQuoted ?? singleQuoted ?? unquoted ?? '';
+  }
+  return null;
 };
 const tags = (html, type) => [...html.matchAll(new RegExp(`<${type}\\b[^>]*>`, 'gi'))].map(x => x[0]);
 const required = (test, reason) => { if (!test) throw new Error('PRODUCTION HEALTH FAIL: '+reason); };
@@ -39,10 +41,11 @@ function homeEntryPath(html) {
       entries.push(src);
       continue;
     }
-    // Match the deferred entry declaration emitted by prerender.ts.
-    for (const [, entry] of content.matchAll(/const importEntry = \(\) => \{ void import\("([^"]+)"\); \};/g)) {
-      entries.push(entry);
-    }
+    // Inline modules without the prerender declaration do not identify an entry.
+    const declarations = [...content.matchAll(/\bconst\s+importEntry\b/g)];
+    const deferred = [...content.matchAll(/\bconst importEntry = \(\) => \{ void import\("([^"]+)"\); \};/g)];
+    required(declarations.length === deferred.length, 'invalid deferred JavaScript entry');
+    for (const [, entry] of deferred) entries.push(entry);
   }
   // A root-relative entry still resolves against the document base in the browser.
   if (baseHref !== undefined) {
@@ -50,9 +53,9 @@ function homeEntryPath(html) {
     required(!baseHref.includes('&') && base?.origin === ORIGIN,
       'JavaScript entry base must use the Recipavo origin');
   }
-  const assets = entries.filter(entry => ENTRY_PATH.test(entry));
-  required(assets.length === 1, 'expected exactly one hashed JavaScript entry');
-  return assets[0];
+  const [entry] = entries;
+  required(entries.length === 1 && ENTRY_PATH.test(entry), 'expected exactly one hashed JavaScript entry');
+  return entry;
 }
 
 export async function probeProduction({fetcher=fetch}={}) {

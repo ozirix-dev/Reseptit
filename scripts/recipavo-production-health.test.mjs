@@ -128,6 +128,31 @@ test('deferred entry rejects external, inactive, and ambiguous asset references'
     await expectBroken('/',{...home,body},/expected exactly one hashed JavaScript entry/);
   }
 });
+test('a valid entry cannot hide another active module source',async()=>{
+  const home=good.get('/');
+  for (const extra of [
+    '<script type="module" src="https://example.com/other.js"></script>',
+    '<script type="module" src="/assets/other.js"></script>',
+    '<script type="module" src></script>',
+  ]) {
+    await expectBroken('/',{...home,body:home.body.replace('</body>',extra+'</body>')},
+      /expected exactly one hashed JavaScript entry/);
+  }
+});
+test('a valid entry cannot hide a malformed deferred entry declaration',async()=>{
+  const home=good.get('/');
+  const extra='<script type="module">const importEntry = () => import("/assets/other.js");</script>';
+  await expectBroken('/',{...home,body:home.body.replace('</body>',extra+'</body>')},
+    /invalid deferred JavaScript entry/);
+});
+test('scripts without an entry declaration do not count as entry candidates',async()=>{
+  const home=homeWithBootstrap();
+  const extra='<script src="/analytics.js"></script>'+
+    '<script type="module">const enhancement = true;</script>'+
+    '<template><script type="module" src="/unused.js"></script></template>';
+  const body=home.body.replace('</body>',extra+'</body>');
+  assert.equal((await probeProduction({fetcher:fake({'/':{...home,body}})})).status,'PASS');
+});
 test('hashed JS entry rejects a successful HTML fallback',async()=>{
   await expectBroken(entry,{...good.get(entry),headers:{'content-type':'text/html'}},
     /must have a JavaScript content type/);
