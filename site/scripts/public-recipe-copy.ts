@@ -283,7 +283,7 @@ const descriptions: LocalizedCopy = {
     fi: "Lämpimät maissitortillat täytetään mustapavuilla, paistetulla kananmunalla ja avokadolla.",
   },
   "meksikolainen-atole-maissipuuro": {
-    fi: "Hieno maissijauho sakeuttaa maitoon keitettävän atole-tyylisen puuron. Kaneli ja vanilja antavat maun.",
+    fi: "Hieno maissijauho kypsennetään ensin vedessä puuroksi. Maito, kaneli ja vaniljauute lisätään valmiin puuron joukkoon.",
   },
   "meksikolainen-huevos-a-la-mexicana": {
     fi: "Tomaatti, sipuli ja tuore jalapeño paistetaan pannulla ennen kuin kananmunat sekoitetaan mukaan.",
