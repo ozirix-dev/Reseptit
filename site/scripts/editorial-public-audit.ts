@@ -184,6 +184,8 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
       rawRepeatGroupsNoLongerRepeated: resolvedRepeats.length,
       rawRepeatGroupsStillRepeated: unresolvedRepeats.length,
       rawMissingTimes: raw.signals.missingTime.length,
+      rawInvalidTimes: (raw.signals.invalidTime ?? []).length,
+      rawDuplicateTimeKeys: (raw.signals.duplicateTimeKeys ?? []).length,
       projectedMissingTimes: missingTime.length,
       rawMissingTimesNoLongerVisible: rawMissingTimeNoLongerVisible.length,
       publicMissingTimesNotInRaw: publicMissingTimeNotInRaw.length,
@@ -196,6 +198,8 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
       publicGenericNotInRaw,
       rawMissingTimeNoLongerVisible,
       publicMissingTimeNotInRaw,
+      invalidTime: raw.signals.invalidTime ?? [],
+      duplicateTimeKeys: raw.signals.duplicateTimeKeys ?? [],
     },
   };
 }
@@ -212,7 +216,9 @@ export function toMarkdown(report: ReturnType<typeof compareInventories>): strin
       t.rawRepeatedStepGroups + " | " + t.projectedRepeatedStepGroups + " |",
     "| Johdanto toistettu Kuvaus-osiossa | " + t.sourceOnlyDuplicateDescriptions +
       " | Ei vastaavaa kahden tekstikentän rakennetta |",
-    "| Kokonaisaika puuttuu | " + t.rawMissingTimes + " | " + t.projectedMissingTimes + " |", "",
+    "| Kokonaisaika puuttuu tai virheellinen | " + t.rawMissingTimes + " | " + t.projectedMissingTimes + " |",
+    "| Virheellinen kokonaisaikamerkintä | " + t.rawInvalidTimes + " | Ei erillistä raakakenttää |",
+    "| Kokonaisaika määritelty useammin kuin kerran | " + t.rawDuplicateTimeKeys + " | Ei erillistä raakakenttää |", "",
     "Raakatekstin geneerisistä osumista " + t.rawGenericNoLongerVisible +
       " ei näy enää geneerisinä. Raakatekstin toistoryhmistä " +
       t.rawRepeatGroupsNoLongerRepeated + " ei enää esiinny vähintään kahdessa julkisessa FI-reseptissä.", "",
@@ -229,6 +235,18 @@ export function toMarkdown(report: ReturnType<typeof compareInventories>): strin
     for (const item of group.recipes) lines.push("  - " + item.recipeId + " (" + item.routePath + ")");
   }
   if (!report.visible.repeatedSteps.length) lines.push("Ei osumia.");
+  lines.push("", "## Raakalähteen virheelliset kokonaisaikamerkinnät", "");
+  for (const item of report.sourceOnly.invalidTime) {
+    lines.push("- " + item.recipeId + ", lähde " + item.path +
+      " (SHA-256 " + item.sourceSha256 + "), raakaarvo " + JSON.stringify(item.rawValue));
+  }
+  if (!report.sourceOnly.invalidTime.length) lines.push("Ei osumia.");
+  lines.push("", "## Raakalähteen kahteen kertaan määritellyt kokonaisajat", "");
+  for (const item of report.sourceOnly.duplicateTimeKeys) {
+    lines.push("- " + item.recipeId + ", lähde " + item.path +
+      " (SHA-256 " + item.sourceSha256 + "), raakaarvot " + JSON.stringify(item.rawValue));
+  }
+  if (!report.sourceOnly.duplicateTimeKeys.length) lines.push("Ei osumia.");
   lines.push("", "## Julkisesta esityksestä puuttuvat kokonaisajat", "");
   for (const item of report.visible.missingTime) {
     lines.push("- " + item.recipeId + " (" + item.routePath + "), lähde " +
