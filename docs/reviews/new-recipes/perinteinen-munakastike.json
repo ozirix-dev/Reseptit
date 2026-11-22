@@ -15,8 +15,8 @@
   "nutrition_evidence": "",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Ei samannimistä resep­titunnusta alkuperäisessä mainissä tai tarkistetuissa avoimissa PR:issä; lopullinen päällekkäisyyden tarkistus tehdään julkaisurevisiolle."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: nykyisen mainin 489 FI-reseptitiedoston täsmäpolkujen ja 27 avoimen PR:n otsikon tarkistus: ei samaa erillistä kastikereseptiä. Lähivertailu: Päähaaran kananmuna-ruoat eivät ole itsenäisiä maito–vehnäsuurusteisia kovaksi keitetyn munan kastikkeita. Raportti docs/reviews/new-recipes/chat3-kastikkeet-duplikaatit-2026-11-22.md. Päätös on nykytilaan rajattu; Ready-/merge-vaiheessa tuore URL- ja reseptitunnusten yksikäsitteisyys sekä mainin tilanne tarkistetaan uudelleen."
     },
     "ingredients": {
       "status": "pass",
