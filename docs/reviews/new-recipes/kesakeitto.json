@@ -24,11 +24,11 @@
     },
     "method": {
       "status": "pass",
-      "notes": "Chat 3 22.11.2026: Marttojen lähde tukee kasvisten keittämistä, herneiden myöhäistä lisäämistä sekä vehnäjauhon sekoittamista kylmään maitoon. Resepti kypsentää perunaa/porkkanaa 7–8 min, kukkakaalia 5–7 min, herneitä 2 min ja jauhoa miedosti 4–5 min, minkä jälkeen haarukalla tarkistetaan perunan ja porkkanan todellinen kypsyys. Eri kokoluokat voivat pidentää keittoaikaa. Kirjallinen valmistusperiaate PASS, ei väite fyysisestä kokkikokeesta."
+      "notes": "Chat 3 22.11.2026: Marttojen lähde tukee kasvisten keittämistä, herneiden myöhäistä lisäämistä sekä vehnäjauhon sekoittamista kylmään maitoon. Resepti kypsentää perunaa/porkkanaa 7–8 min, kukkakaalia 5–7 min, herneitä 2 min ja jauhoa miedosti 4–5 min, minkä jälkeen haarukalla tarkistetaan perunan ja porkkanan todellinen kypsyys. Eri kokoluokat voivat pidentää keittoaikaa. Kirjallinen valmistusperiaate PASS, ei väite fyysisestä kokkikokeesta. Versioauditointi 22.11.2026: riippumaton Chat-1-katselmointi #853 koski FI-lähdetiivistettä 79b70a59c4ff3b8bd84069964b52a3b5e902664427e20c9959d9c4187ca4e3a8 (PR-HEAD 2efb297). Nykyiseen a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af -lähteeseen lisättiin perunan/porkkanan haarukkakypsyystarkistus; ei muutettu määriä, vaiheiden määrää tai peruskypsennysaikoja. #853 ei ole tämän uudemman SHA:n muodollinen hyväksyntä: uudelleenkatselmointi vaaditaan ennen decision=approved."
     },
     "food_safety": {
       "status": "pass",
-      "notes": "Chat 3 22.11.2026: Sisältää maitoa ja vehnää kaikilla FI/EN/SV/TH-sivuilla, vehnäjauhoja kypsennetään 4–5 minuuttia. Tarjoa keitto kuumana, jäähdytä ylijäämä nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6 °C:ssa. Ruokaviraston ohjeet: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/ . Rajattu elintarviketurvallisuus- ja allergeenikatselmointi, ei keittiölämpötilojen mitattua varmistusta."
+      "notes": "Chat 3 22.11.2026: Sisältää maitoa ja vehnää kaikilla FI/EN/SV/TH-sivuilla, vehnäjauhoja kypsennetään 4–5 minuuttia. Tarjoa keitto kuumana, jäähdytä ylijäämä nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6 °C:ssa. Ruokaviraston ohjeet: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/ . Rajattu elintarviketurvallisuus- ja allergeenikatselmointi, ei keittiölämpötilojen mitattua varmistusta. Eri SHA-versioiden vertailu: nykyinen lähde tarkentaa aiempaa 'jäähdytä nopeasti' -ohjetta mataliin astioihin ja alle +6 °C säilytykseen sekä lisää kuumana tarjoamisen. Chat-1:n riippumaton kirjallinen katselmointi #853 koski edeltävää lähdettä; tätä tarkennusta ei saa esittää tuon katselmoinnin uudeksi allekirjoitukseksi."
     },
     "servings_and_time": {
       "status": "pass",
@@ -36,7 +36,7 @@
     },
     "nutrition": {
       "status": "pending",
-      "notes": "Reseptiin sidottu riippumaton ravintolaskelma puuttuu eikä nollia tai lähteen eri annoksen arvoja kopioida."
+      "notes": "Julkaistavat numeeriset ravintoarvot ja GK pidetään pois. Chat-1:n mainiin yhdistetty #855, docs/nutrition/reviews/chat1-five-homefood-withheld-2026-11-22.md, dokumentoi nimenomaisen WITHHOLD-päätöksen aiemmalle FI-lähteelle (HEAD 2efb297; sha256 79b70a59c4ff3b8bd84069964b52a3b5e902664427e20c9959d9c4187ca4e3a8). Nykyisessä FI-lähteessä a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af maito tarkennettiin 400 g 1,5 % kevytmaidoksi, muut ainesmäärät pysyivät ennallaan, eikä numeerisia arvoja lisätty. Chat-3:n tarkistama versiopoikkeama on dokumentoitu, mutta vasta riippumaton nykyversioon sidottu ravintonäytön poisjättöhyväksyntä voi muuttaa nutrition: pending -> pass. Osasummia ei julkaista eikä puuttuvia arvoja merkitä nolliksi."
     },
     "glycemic": {
       "status": "unavailable",
@@ -45,8 +45,26 @@
   },
   "supplementary_evidence": {
     "image_path": "kuvat/paaruoat/kesakeitto.webp",
-    "image_review": "Chat 3:n 22.11.2026 rajattu silmämääräinen tarkistus: 960 × 746 Git-tracked WebP näyttää perunoita, porkkanaa, kukkakaalia, vihreitä herneitä ja tilliä vaaleassa keitossa; kuva vastaa aineksia. AI-havainnekuva, ei fyysisen valmistuksen tai lisenssi-/ImageAssets-julkaisuhyväksynnän todiste. Mainin tracked-overlays hyväksyntä on vain tekninen CI-syötehyväksyntä.",
+    "image_review": "Chat 3:n 22.11.2026 rajattu silmämääräinen tarkistus: 960 × 746 Git-tracked WebP näyttää perunoita, porkkanaa, kukkakaalia, vihreitä herneitä ja tilliä vaaleassa keitossa; kuva vastaa aineksia. AI-havainnekuva, ei fyysisen valmistuksen tai lisenssi-/ImageAssets-julkaisuhyväksynnän todiste. Mainin tracked-overlays hyväksyntä on vain tekninen CI-syötehyväksyntä. Päivitys 22.11.2026: Chat-1:n PR #852 on yhdistetty mainiin, ja sama kuva on SHA-256-lukittu hyväksyttyyn Git-image-overlayyn havainnekuvana. Aiempi maininta puuttuvasta ImageAssets-hyväksynnästä ei siis enää koske tätä täsmällistä tiedostoversiota; tekninen manifestihyväksyntä ei ole koko reseptin julkaisuhyväksyntä.",
     "physical_cook_test": false,
-    "image_sha256": "01646e3be04d5582b26d239070062f5b28f67c2214537126112e38fa66c70516"
+    "image_sha256": "01646e3be04d5582b26d239070062f5b28f67c2214537126112e38fa66c70516",
+    "independent_review_reconciliation": {
+      "review_pr": 853,
+      "review_report": "docs/reviews/2026-11-22-chat1-kesakeitto-independent-culinary-review.md",
+      "reviewed_source_sha256": "79b70a59c4ff3b8bd84069964b52a3b5e902664427e20c9959d9c4187ca4e3a8",
+      "current_source_sha256": "a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af",
+      "source_changed_since_review": true,
+      "changed_topics": [
+        "maito täsmennetty 1,5 % kevytmaidoksi",
+        "perunan ja porkkanan kypsyys tarkistetaan haarukalla",
+        "tähteiden jäähdytys ja kylmäsäilytys täsmennetty",
+        "luonnoksen testaus- ja ravintoarvoväitteet rajattu tarkemmin"
+      ],
+      "formal_reapproval": "required",
+      "image_approval_pr": 852,
+      "numerical_nutrition_withholding_pr": 855,
+      "translation_evidence": "pending for current draft source",
+      "publication_decision": "HOLD"
+    }
   }
 }
