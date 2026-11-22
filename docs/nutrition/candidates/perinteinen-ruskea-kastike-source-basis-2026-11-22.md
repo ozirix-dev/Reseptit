@@ -8,7 +8,7 @@
 
 - Valmistajan omat tuotetiedot: [Oscar Nordic, Puljonki Signature Lihaliemi 1 l](https://www.oscarnordic.fi/puljonki-signature/367-signature-lihaliemi-1-l.html).
 - Riippumaton vähittäiskaupan saman EAN:n tarkistus: [S-kaupat](https://www.s-kaupat.fi/tuote/puljonkir-lihaliemi-1-l-tetra/6416796728013).
-- Näiden yhteinen ilmoitettu koostumus **100 ml kohti**: rasva 0,1 g, hiilihydraatit 0,6 g, proteiini 4,0 g, ravintokuitu 0,6 g, suola 0,69 g, energia 20 kcal. 
+- Näiden yhteinen ilmoitettu koostumus **100 ml kohti**: rasva 0,1 g, hiilihydraatit 0,6 g, proteiini 4,0 g, ravintokuitu 0,6 g, suola 0,69 g, energia 20 kcal.
 - Pelkästä **500 ml:n mitatusta tilavuudesta** suoraan tuotteen tilavuuspohjaisella ravintotaulukolla: rasva 0,5 g, ilmoitetut hiilihydraatit 3,0 g, proteiini 20,0 g ja ravintokuitu 3,0 g koko **neljän annoksen reseptierälle**. Nämä ovat vain liemen, eivät valmiin kastikkeen arvoja.
 - **POLYL (sokerialkoholit):** valmistajan ja kaupan taulukoissa ei ole numeerista polyoliriviä. Arvo **UNKNOWN, ei nolla**. Hiilihydraattien kokonaismäärä on valmistajan EU-taulukossa, mutta se ei yksin korvaa projektin vaatimaa polyolitodistetta.
 - **Muunnos:** Valmistaja ilmoittaa koostumuksen 100 ml kohti, ja resepti määrän millilitroina. Lähdearvojen osasumma ei vaadi tiheysarvausta. Nykyinen `nutrition-model.ts` kuitenkin hyväksyy `FoodRecord`-basisarvoksi vain 100 g -pohjaiset tietueet ja tarvitsee `IngredientInput`-massamuunnoksen. **Älä aseta 500 ml = 500 g ilman todistettua ainekohtaista tiheyttä**. Vaihtoehto olisi erikseen testattu tilavuusperusteisen, lähteen yksikön säilyttävä mallilaajennus.
