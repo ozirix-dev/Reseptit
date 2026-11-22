@@ -27,3 +27,9 @@
 ## Julkaisun edellyttämät toimet
 
 Käännösten virallinen lähteeseen sidottu `meta/kaannokset/codex-review-evidence.json` -rekisteri jätettiin ennalleen. Ennen `status: published`: Codex-merkitysvertailu hyväksytystä FI-versiosta, merkitystiivisteet ja tarvittaessa ihmiskatselmointi vain olennaiselle ratkaisemattomalle epäselvyydelle. Tämä raportti ei avaa julkaisuporttia eikä muuta `decision: hold` -tilaa.
+
+## Uusi Chat 3:n FI/EN/SV/TH-semanttinen rajatarkistus 22.11.2026
+
+Kaikissa neljässä kielessä pysyvät: tuore varmasti tunnistettu `Craterellus tubaeformis` (300 g), 800 g käyttövalmista kasvislientä, 200 g 15% ruokakermaa, 30 g vehnäjauhoja, kypsennetyn sienikoristeen erottaminen ennen soseutusta ja 10 + 3–5 min kypsennys. Myös maito/vehnäallergia, tunnistamisvaroitus ja alle +6°C säilytys on nyt yhdenmukaistettu. Uuden FI-raakatekstin SHA-256 on `6301458ccb1412c9dae4673f72a89a200e1c2c9fa7c89b106d2c8ce72c34feda` ja Git-blob `65bb063b75b12158aac6453bed742bea89bae0a4`.
+
+Tämä ei ole riippumaton kielitarkastajan tai Codexin `outcome: pass`. Draft-käännöksiä ei lisätä julkaistuille resepteille tarkoitettuun `meta/kaannokset/codex-review-evidence.json`-rekisteriin. `decision: hold` ja kolme lopullista riippumatonta kielihyväksyntää ovat avoinna.

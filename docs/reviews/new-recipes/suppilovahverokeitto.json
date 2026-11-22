@@ -2,10 +2,10 @@
   "schema_version": 1,
   "recipe_id": "suppilovahverokeitto",
   "source_path": "reseptit/paaruoat/suppilovahverokeitto.md",
-  "source_sha256": "50d6d5977845e4565b455009df7f323ebec7688f7947b145e8e066842539c459",
+  "source_sha256": "6301458ccb1412c9dae4673f72a89a200e1c2c9fa7c89b106d2c8ce72c34feda",
   "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "reviewed_by": "Chat 3 – rajattu toimituksellinen valmistus-/turvallisuus-/lähdekatselmointi, ei riippumaton hyväksyjä",
+  "reviewed_at": "2026-11-22",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -16,37 +16,38 @@
   "nutrition_evidence": "",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Vertailtu reseptipolkujen nimiin ja avoimiin PR:iin; lopullinen yhtäläisyystarkistus tehtävä julkaisuversiolle."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: päähaaran reseptipolussa ei ole suppilovahverokeitto-tunnusta; muissa sienikeitoissa on eri sienilaji tai koostumus. PR #788 on erillisen luonnoksen ainoa saman niminen PR tarkistusjoukossa. Tämä on tarkistushetken rajattu toimituksellinen vertailu, ei lopullinen URL-uniikkiusportti."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Ainekset punnittu luonnosversioon; tuotemerkkien, syötävän osuuden ja määrien lopullinen tarkistus puuttuu."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: 9 punnittua ainesosaa, 4 annosta, tuoreiden varmasti tunnistettujen suppilovahveroiden lajina Craterellus tubaeformis. Martat käyttää tuoreita suppilovahveroita, vehnäjauhoja, kasvislientä ja kermaa sekä sulatejuustoa, jota Recipavo ei käytä. Recipavon määrät 300 g sieniä, 800 g kasvislientä ja 200 g 15% ruokakermaa ovat oma sovitus. Sienien ravintokoostumus ja liemen täsmätuote jäävät nutrition:pending, eikä lajia korvata herkkusienellä."
     },
     "method": {
-      "status": "pending",
-      "notes": "Kuvattu valmistustapa tarkistettu vertailuohjeita vastaan; itsenäinen kokkikelpoisuusarvio tarvitaan."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: Marttojen suppilovahverokeitossa sienten nestettä haihdutetaan, jauhot lisätään sekoittaen, lämmin kasvisliemi ja kerma sekä soseutus kuuluvat valmistusperiaatteeseen. Recipavo käyttää 10 min hautumista, 3–5 min kermaisen liemen kuumennusta ja jättää osan kypsistä sienistä koristeeksi. Kirjallinen valmistusperiaate PASS; ei Recipavon version fyysistä kokkikoetta."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Riski- ja allergeenihuomiot kirjattu lähdereseptiin, mutta riippumatonta loppuarviointia ei vielä ole."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: ruokasieniä saa käyttää vain varmasti tunnistettuina. Ruokaviraston ohje edellyttää kaikkien tuntomerkkien tutkimista, eikä tekoälykuva ole lajitunnistustodiste. Muista maito- ja vehnäallergeenit sekä kasvisliemen pakkausmerkinnän mahdolliset lisäallergeenit. Jauho kypsennetään hauduttamalla, keitto tarjoillaan kuumana, tähteet jäähdytetään nopeasti matalissa astioissa ja säilytetään jääkaapissa alle +6°C. Sienten todellista lajia tai kokkausta ei todisteta tällä tekstikatselmoinnilla. https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-tunnistaminen/"
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "Annokset, työvaiheet ja aikataulu ovat luonnosarvioita; valmistus ja välinekapasiteetti tarkistettava."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: 300+120+25+30+800+200+2+1+10 = 1488 g lähtöaineksia 4 annokselle eli noin 372 g/annos ennen sienten kuivahaihdutusta ja keittämistä. Kuivakattilassa sienten nesteen haihdutus, 4 min kuullotus, 1 min suuruste, 10 min hautuminen, 3–5 min kerma ja soseutus sopivat ilmoitettuun kokonaisaikaan asianmukaisella valmistelulla. Saanto ei ole koekeittiössä punnittu."
     },
     "nutrition": {
       "status": "pending",
       "notes": "Reseptiin sidottu riippumaton ravintolaskelma puuttuu eikä nollia tai lähteen eri annoksen arvoja kopioida."
     },
     "glycemic": {
-      "status": "pending",
-      "notes": "GI/GK-arvoa ei arvata; puuttuvuus voidaan hyväksyä unavailable-tilassa kirjallisella perustelulla."
+      "status": "unavailable",
+      "notes": "Reseptin Craterellus tubaeformis -sienille, kasvisliemelle, 15% ruokakermalle ja vehnäsuurusteelle ei ole hyväksyttyä täsmällistä GI-/GK-tutkimusta. Numeerinen GK pidetään määrittämättömänä; laskenta ei saa korvata puuttuvia polyoleja nollilla."
     }
   },
   "supplementary_evidence": {
     "image_path": "kuvat/paaruoat/suppilovahverokeitto.webp",
-    "image_review": "Tekoälyn tuottama havainnekuva, joka on vielä hyväksyttävä julkaisuun.",
-    "physical_cook_test": false
+    "image_review": "Chat 3 22.11.2026: 960×746 Git-tracked WebP näyttää vaalean sienisosekeiton sekä kypsiä sieniä ja persiljaa pinnalla. Tämä vastaa annoskuvaa visuaalisesti, mutta AI-havainnekuvan sienilajia EI voi tunnistaa eikä käyttää metsässä poimittujen sienten varmentamiseen. Kuvan lopullinen toimituksellinen ja käyttöoikeus-/ImageAssets-julkaisuhyväksyntä puuttuu.",
+    "physical_cook_test": false,
+    "image_sha256": "8d89519dbce153b64ef50ca00f0653e0f6374ff590b80f60da60d6e50587ebdd"
   }
 }

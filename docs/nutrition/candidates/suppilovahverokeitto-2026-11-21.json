@@ -6,8 +6,8 @@
   "prepared_by": "Chat 3 / Kokki-3, vain todettujen lähdetietueiden laskenta",
   "recipe_id": "suppilovahverokeitto",
   "source_path": "reseptit/paaruoat/suppilovahverokeitto.md",
-  "source_sha256": "50d6d5977845e4565b455009df7f323ebec7688f7947b145e8e066842539c459",
-  "source_blob_sha": "26834d7c082452eb39fd3dfbd7f9d49473dc119b",
+  "source_sha256": "6301458ccb1412c9dae4673f72a89a200e1c2c9fa7c89b106d2c8ce72c34feda",
+  "source_blob_sha": "65bb063b75b12158aac6453bed742bea89bae0a4",
   "servings": 4,
   "reference_data": "docs/nutrition/food-records.json",
   "reference_data_provider": "THL Fineli Release 20, CC BY 4.0",
@@ -291,7 +291,7 @@
     "approved_fat_per_portion_g": null,
     "glycemic_load": null
   },
-  "publication_gate": "HOLD: Sienilajin tunnistus sekä sienikohtainen koostumustietue, liemen tuotekoostumus, tuotteiden säilytys ja ravintolaskennan hyväksyntä. Lihaa/kalaa sisältämätön kasvisliemi tarkistettava, jos kasvisväite tehdään.",
+  "publication_gate": "HOLD: villisienien oikeaa Craterellus tubaeformis -lajikohtaista ravintotietuetta ei ole laskentakandidaatissa, 800 g kasvisliemen tuotekoostumus puuttuu, mustapippurin kuitu/polyolit ja paistohaihtuman retentio vaativat varmennuksen. Sienilajin fyysinen tunnistus on käyttäjän/valmistajan vastuulla; AI-kuva ei kelpaa tunnistukseen. Ei julkisia makroja eikä numeerista GK:ta.",
   "quantified_rows_subtotals_per_portion_g": {
     "carbohydrate": 8.513,
     "protein": 2.734,

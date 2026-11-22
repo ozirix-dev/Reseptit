@@ -16,3 +16,11 @@
 - Allergeenit: maito ja vehnä; kasvisliemen mahdolliset muut allergeenit tarkistettava tuotteen pakkauksesta. Tämä on **kirjallinen** turvallisuusarvio, ei sienen tunnistustesti eikä koekeitto.
 - Neljän kieliversion määrä-/yksikkö-/vaihelukema ja kuvaosoitteen rakenteellinen yhtenevyys on tarkistettu; lopullinen sanallinen merkitysvertailu sekä lajinkuvauksen ymmärrettävyys thaiksi puuttuvat.
 - **HOLD:** fyysistä valmistusta tai ravintoarvolaskelmaa ei ole tehty; sienien määrästä ja kasvisliemen suolaisuudesta riippuva loppumaku tarkistettava. Virallinen hyväksyntä `decision: hold` säilytetään. Cloudflare-julkaisua ei tehdä.
+
+## Chat 3:n lähde- ja turvallisuuskatselmointi 22.11.2026
+
+Marttojen [suppilovahverokeitto](https://www.martat.fi/reseptit/suppilovahverokeitto-2/) tukee tuoreiden sienten kuumennusta, jauhojen sekoittamista, kasvisliemen lisäämistä ja kermaisen keiton soseutusta. Marttojen lähde sisältää myös sulatejuustoa ja eri sieni-/suurustemäärät, joten sen ravintoarvoja ei kopioida tähän itsenäiseen Recipavon muunnelmaan. **Tarkistus ei ole koekeittiökokeilu.**
+
+Raaka-aineiden yhteenlaskettu massa **1488 g**, noin 372 g/annos ennen sienten ja liemen veden haihtumista. Suurin aineellinen epävarmuus on nimenomaan tuoreen suppilovahveron lajikohtainen koostumus ja tuotemerkitön kasvisliemi. [Ruokavirasto](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-tunnistaminen/) edellyttää kaikkien tuntomerkkien tunnistamista; reseptin AI-kuvalla ei voi varmentaa turvallista sienilajia. FI/EN/SV/TH on nyt täsmätty myös nopeaan jäähdytykseen matalissa astioissa ja alle +6 °C -kylmäsäilytykseen.
+
+Rajattu katselmointipäätös: duplicates/ingredients/method/food_safety/servings_and_time `pass`, glycemic `unavailable`, **nutrition `pending`**, overall `decision: hold`. Loppuun jää riippumaton käännös-/kuvajulkaisun hyväksyntä ja ruokakohtaisen ravintoaineiston lähdesidonta.
