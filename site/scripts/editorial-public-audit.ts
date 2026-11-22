@@ -19,6 +19,7 @@ export type RawInventory = {
     missingTime: Evidence[];
     missingPreparation?: Evidence[];
     unnumberedPreparation?: Evidence[];
+    emptyPreparation?: Evidence[];
     invalidTime?: (Evidence & { rawValue: string })[];
     duplicateTimeKeys?: (Evidence & { rawValue: string })[];
   };
@@ -80,6 +81,7 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
     ["missingTime", raw.signals.missingTime],
     ["missingPreparation", raw.signals.missingPreparation ?? []],
     ["unnumberedPreparation", raw.signals.unnumberedPreparation ?? []],
+    ["emptyPreparation", raw.signals.emptyPreparation ?? []],
     ["invalidTime", raw.signals.invalidTime ?? []],
     ["duplicateTimeKeys", raw.signals.duplicateTimeKeys ?? []],
   ] as const) {
@@ -99,6 +101,21 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
   for (const item of raw.signals.unnumberedPreparation ?? []) {
     if (!missingPreparationIds.has(item.recipeId)) {
       throw new Error("UNNUMBERED_RAW_PREPARATION_DRIFT: " + item.recipeId);
+    }
+  }
+  // When both classifications exist, the raw missing-numbered-step group is
+  // exactly partitioned into an empty method and unnumbered source text.
+  // Legacy fixtures may omit either category and retain advisory behavior.
+  if (raw.signals.emptyPreparation && raw.signals.unnumberedPreparation) {
+    const classified = new Set<string>();
+    for (const item of [...raw.signals.emptyPreparation, ...raw.signals.unnumberedPreparation]) {
+      if (!missingPreparationIds.has(item.recipeId) || classified.has(item.recipeId)) {
+        throw new Error("RAW_PREPARATION_PARTITION_DRIFT: " + item.recipeId);
+      }
+      classified.add(item.recipeId);
+    }
+    for (const id of missingPreparationIds) {
+      if (!classified.has(id)) throw new Error("RAW_PREPARATION_PARTITION_DRIFT: " + id);
     }
   }
   // The new invalid-time list is a classified subset of missingTime.
@@ -211,6 +228,7 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
       rawRepeatGroupsStillRepeated: unresolvedRepeats.length,
       rawMissingPreparations: (raw.signals.missingPreparation ?? []).length,
       rawUnnumberedPreparations: (raw.signals.unnumberedPreparation ?? []).length,
+      rawEmptyPreparations: (raw.signals.emptyPreparation ?? []).length,
       projectedMissingPreparations: missingPreparation.length,
       rawMissingPreparationNoLongerVisible: rawMissingPreparationNoLongerVisible.length,
       publicMissingPreparationNotInRaw: publicMissingPreparationNotInRaw.length,
@@ -232,6 +250,7 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
       rawMissingPreparationNoLongerVisible,
       publicMissingPreparationNotInRaw,
       unnumberedPreparation: raw.signals.unnumberedPreparation ?? [],
+      emptyPreparation: raw.signals.emptyPreparation ?? [],
       invalidTime: raw.signals.invalidTime ?? [],
       duplicateTimeKeys: raw.signals.duplicateTimeKeys ?? [],
     },
@@ -254,6 +273,8 @@ export function toMarkdown(report: ReturnType<typeof compareInventories>): strin
       t.rawMissingPreparations + " | " + t.projectedMissingPreparations + " |",
     "| Valmistus on tekstinä ilman tunnistettua numerointia | " +
       t.rawUnnumberedPreparations + " | Ei vastaavaa numerointivaatimusta |",
+    "| Raakalähteen valmistusosio puuttuu tai on tyhjä | " +
+      t.rawEmptyPreparations + " | Ei erillistä osiorakennetta |",
     "| Kokonaisaika puuttuu | " + t.rawMissingTimes + " | " + t.projectedMissingTimes + " |",
     "| Virheellinen kokonaisaikamerkintä | " + t.rawInvalidTimes + " | Ei erillistä raakakenttää |",
     "| Kokonaisaika määritelty useammin kuin kerran | " + t.rawDuplicateTimeKeys + " | Ei erillistä raakakenttää |", "",
@@ -286,6 +307,12 @@ export function toMarkdown(report: ReturnType<typeof compareInventories>): strin
       " (SHA-256 " + item.sourceSha256 + "), raakaarvot " + JSON.stringify(item.rawValue));
   }
   if (!report.sourceOnly.duplicateTimeKeys.length) lines.push("Ei osumia.");
+  lines.push("", "## Lähteen puuttuvat tai tyhjät valmistusosiot", "");
+  for (const item of report.sourceOnly.emptyPreparation) {
+    lines.push("- " + item.recipeId + ", lähde " + item.path +
+      " (SHA-256 " + item.sourceSha256 + ")");
+  }
+  if (!report.sourceOnly.emptyPreparation.length) lines.push("Ei osumia.");
   lines.push("", "## Lähteen numeroimattomat valmistusohjeet", "");
   for (const item of report.sourceOnly.unnumberedPreparation) {
     lines.push("- " + item.recipeId + ", lähde " + item.path +
