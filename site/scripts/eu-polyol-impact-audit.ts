@@ -8,6 +8,9 @@ import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL, fileURLToPath } from "node:url";
 import { calculate, normalizeCarbohydrate, type Calculation, type FoodRecord } from "./nutrition-model";
+import { buildGkOnlyVariants } from "./gk149-integration";
+import { buildApprovedSixVariants } from "./gk149-approved-six";
+import { loadPadSeeEw } from "./gk-next-seven";
 
 const root = path.resolve(fileURLToPath(new URL("../..", import.meta.url)));
 const oldBlob = "de8d7189d786b06c93e13afb378f8861a70542c6";
@@ -86,6 +89,32 @@ export async function audit() {
       file: rel, recipe_id: input.recipeId, before, after,
     });
   }
+  // Run real, previously sealed GK149 arithmetic through the *changed* model
+  // without relaxing any approval.  These builders check all their existing
+  // input/source bindings and goldens; this is not a release or a new seal.
+  const original16 = buildGkOnlyVariants(root);
+  const nextSix = buildApprovedSixVariants(root);
+  if (original16.length !== 16 || nextSix.length !== 6 ||
+      new Set([...original16, ...nextSix].map(v => v.recipeId)).size !== 22 ||
+      [...original16, ...nextSix].some(v => v.macroScope !== "NO_MACRO_PACKAGE_FOR_THIS_VERSION")) {
+    throw Error("GK149 current approved variant scope changed");
+  }
+  // The separately guarded pad-see-ew seventh case MUST still fail closed:
+  // successfully evaluating 22 cases does not approve a different code SHA.
+  const padGuard = capture(() => loadPadSeeEw(root));
+  if (padGuard.ok || !/Pad shared evidence changed: site\\/scripts\\/nutrition-model\\.ts/.test(String(padGuard.error))) {
+    throw Error("Expected pad-see-ew nutrition code seal HOLD changed: " + JSON.stringify(padGuard));
+  }
+  const protectedGk149 = {
+    scope: "Audited approved GK149 arithmetic only: 16 originals plus six next-six versions; pad see ew stays sealed.",
+    approvedOriginalVersions: original16.length,
+    approvedNextSixVersions: nextSix.length,
+    unchangedGoldensAndSourceBindings: true,
+    distinctIds: 22,
+    padSeeEw: "EXPECTED_SEAL_BLOCK",
+    publicationAuthorized: false,
+    sourceSealApproved: false,
+  };
   const currentModel = await readFile(path.join(root, "site/scripts/nutrition-model.ts"), "utf8");
   const result = {
     schemaVersion: 1,
@@ -102,6 +131,7 @@ export async function audit() {
       unverifiedInputs,
       changedResults: calculationChanges.length, differences: calculationChanges,
     },
+    protectedGk149,
     readyAuthorized: false, mergeAuthorized: false, deployAuthorized: false,
     sourceSealApproved: false,
   };
@@ -120,7 +150,10 @@ export async function audit() {
     "| Vertailtuja reseptilaskelmia | " + evaluated + " |",
     "| Muuttuneita reseptilaskentatuloksia | " + calculationChanges.length + " |",
     "| Sisäisiä EU-total-ainesosasyötteitä | " + nestedEuTotal + " |",
-    "| Niistä varmentamattomia | " + nestedEuTotalUnverified + " |", "",
+    "| Niistä varmentamattomia | " + nestedEuTotalUnverified + " |",
+    "| GK149 alkuperäisiä lukittuja versioita tarkistettu | " + protectedGk149.approvedOriginalVersions + " |",
+    "| GK149 seuraavan kuuden lukittuja versioita tarkistettu | " + protectedGk149.approvedNextSixVersions + " |",
+    "| Pad see ew -koodisinetti | EXPECTED_SEAL_BLOCK |", "",
     "Tämä on kattavuudeltaan rajattu auditointi; hyväksyttyihin GK-only-variantteihin",
     "ei saa soveltaa uutta koodihashia ilman niiden erillistä sinettikatselmointia.", "",
   ];
@@ -145,6 +178,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
       calculationInputs: result.calculationInputs.evaluated,
       changedCalculations: result.calculationInputs.changedResults,
       nestedEuTotalUnverified: result.calculationInputs.nestedEuTotalUnverified,
+      protectedGk149: result.protectedGk149,
       unverifiedInputs: result.calculationInputs.unverifiedInputs.map(x => ({
         recipe_id: x.recipe_id, record_id: x.record_id,
         before: x.before, after: x.after,
