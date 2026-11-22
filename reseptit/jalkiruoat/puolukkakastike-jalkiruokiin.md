@@ -7,10 +7,6 @@ language: fi
 status: draft
 servings: 6
 time_total_min: 20
-carbs_net_per_serving_g: 12.88
-carbs_total_per_serving_g: 13.92
-protein_per_serving_g: 0.23
-fat_per_serving_g: 0.27
 difficulty: "helppo"
 main_ingredient:
   - "puolukka"
