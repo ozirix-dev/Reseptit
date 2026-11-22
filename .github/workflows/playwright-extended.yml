@@ -1,6 +1,12 @@
 name: Recipavo Playwright extended (non-deploy)
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/playwright-extended.yml"
+      - ".github/scripts/prepare-verified-browser-images.ps1"
+      - ".github/scripts/test_prepare_verified_browser_images.py"
   schedule:
     - cron: "17 2 * * 0"
   pull_request:
