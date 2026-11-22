@@ -12,6 +12,7 @@ import { isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
 const root = path.resolve(import.meta.dirname, "../..");
 const sha = (raw: string) => createHash("sha256").update(raw.replaceAll("\r\n", "\n")).digest("hex");
 const expected: Record<string,string> = {
+  "valimerellinen-kikherne-yrttiaamiainen": "ee8c597bfec531c2cfec24289a93579cf4d8d7d99ee8e1fb6e8f1feea690aa52",
   "thai-roti-munalla-banaanilla": "01b5f49344afa698e599aa1ae8672649a18182892227ae5aa8d49b07e582c0ba",
   "indonesialainen-nasi-goreng-aamiaisriisi": "f55e64e3d2dd6080a7cbcde3b067cac696aaf8a5595b67a5615433d7a43689d7",
 
@@ -34,8 +35,8 @@ const expected: Record<string,string> = {
 };
 const macros = ["carbs_net_per_serving_g","carbs_total_per_serving_g","protein_per_serving_g","fat_per_serving_g"] as const;
 
-test("SHA-pinned FI overlays correct seventeen dishes without nutrition changes", () => {
-  assert.equal(breakfastFiQualityPaths.length, 17);
+test("SHA-pinned FI overlays correct eighteen dishes without nutrition changes", () => {
+  assert.equal(breakfastFiQualityPaths.length, 18);
   for (const relative of breakfastFiQualityPaths) {
     const raw = readFileSync(path.join(root, relative), "utf8");
     const beforeMd = parseMarkdown(raw);
@@ -138,6 +139,15 @@ test("SHA-pinned FI overlays correct seventeen dishes without nutrition changes"
       assert.match(afterMd.content, /yhteensä luettelon 1 rkl neutraalia paistoöljyä/);
       assert.match(afterMd.content, /lime ja makea chilikastike eivät sisälly/);
       assert.doesNotMatch(afterMd.content, /lisää vettä vain sen verran/);
+    } else if (before.recipe_id === "valimerellinen-kikherne-yrttiaamiainen") {
+      assert.deepEqual(before.cooking_method, ["paistaminen"]);
+      assert.deepEqual(after.cooking_method, ["kylmävalmistus"]);
+      assert.equal((afterMd.content.match(/^\\d+\\. /gm) ?? []).length, 4);
+      assert.match(afterMd.content, /100 g valmiiksi kypsiä/);
+      assert.match(afterMd.content, /2 rkl persiljaa/);
+      assert.match(afterMd.content, /yksi sitruuna/);
+      assert.match(afterMd.content, /raaka- tai kypsäpainon ravintolaskentaperusta ei ole vahvistettu/);
+      assert.doesNotMatch(afterMd.content, /Paista tofu, muna|sitruunaöljyyn ja tarjoa pehmeän kananmunan kanssa/);
     } else { assert.fail("Unexpected FI display patch: " + before.recipe_id); }
     assert.throws(()=>projectBreakfastFiQualityDisplay(relative,raw+"\nUNEXPECTED EDIT"),/FI_BREAKFAST_SOURCE_STALE/);
   }
