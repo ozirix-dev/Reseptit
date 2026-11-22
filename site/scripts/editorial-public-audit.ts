@@ -18,6 +18,7 @@ export type RawInventory = {
     duplicateDescription: Evidence[];
     missingTime: Evidence[];
     missingPreparation?: Evidence[];
+    unnumberedPreparation?: Evidence[];
     invalidTime?: (Evidence & { rawValue: string })[];
     duplicateTimeKeys?: (Evidence & { rawValue: string })[];
   };
@@ -78,6 +79,7 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
     ["duplicateDescription", raw.signals.duplicateDescription],
     ["missingTime", raw.signals.missingTime],
     ["missingPreparation", raw.signals.missingPreparation ?? []],
+    ["unnumberedPreparation", raw.signals.unnumberedPreparation ?? []],
     ["invalidTime", raw.signals.invalidTime ?? []],
     ["duplicateTimeKeys", raw.signals.duplicateTimeKeys ?? []],
   ] as const) {
@@ -88,6 +90,15 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
         throw new Error("DUPLICATE_RAW_SIGNAL: " + name + ":" + item.recipeId);
       }
       seen.add(item.recipeId);
+    }
+  }
+  // A non-empty unnumbered method is a subset of sources without numbered steps.
+  const missingPreparationIds = new Set(
+    (raw.signals.missingPreparation ?? []).map(item => item.recipeId)
+  );
+  for (const item of raw.signals.unnumberedPreparation ?? []) {
+    if (!missingPreparationIds.has(item.recipeId)) {
+      throw new Error("UNNUMBERED_RAW_PREPARATION_DRIFT: " + item.recipeId);
     }
   }
   // The new invalid-time list is a classified subset of missingTime.
@@ -199,6 +210,7 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
       rawRepeatGroupsNoLongerRepeated: resolvedRepeats.length,
       rawRepeatGroupsStillRepeated: unresolvedRepeats.length,
       rawMissingPreparations: (raw.signals.missingPreparation ?? []).length,
+      rawUnnumberedPreparations: (raw.signals.unnumberedPreparation ?? []).length,
       projectedMissingPreparations: missingPreparation.length,
       rawMissingPreparationNoLongerVisible: rawMissingPreparationNoLongerVisible.length,
       publicMissingPreparationNotInRaw: publicMissingPreparationNotInRaw.length,
@@ -219,6 +231,7 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
       publicMissingTimeNotInRaw,
       rawMissingPreparationNoLongerVisible,
       publicMissingPreparationNotInRaw,
+      unnumberedPreparation: raw.signals.unnumberedPreparation ?? [],
       invalidTime: raw.signals.invalidTime ?? [],
       duplicateTimeKeys: raw.signals.duplicateTimeKeys ?? [],
     },
@@ -239,6 +252,8 @@ export function toMarkdown(report: ReturnType<typeof compareInventories>): strin
       " | Ei vastaavaa kahden tekstikentän rakennetta |",
     "| Numeroitu valmistus puuttuu / esityksen ohje tyhjä | " +
       t.rawMissingPreparations + " | " + t.projectedMissingPreparations + " |",
+    "| Valmistus on tekstinä ilman tunnistettua numerointia | " +
+      t.rawUnnumberedPreparations + " | Ei vastaavaa numerointivaatimusta |",
     "| Kokonaisaika puuttuu | " + t.rawMissingTimes + " | " + t.projectedMissingTimes + " |",
     "| Virheellinen kokonaisaikamerkintä | " + t.rawInvalidTimes + " | Ei erillistä raakakenttää |",
     "| Kokonaisaika määritelty useammin kuin kerran | " + t.rawDuplicateTimeKeys + " | Ei erillistä raakakenttää |", "",
@@ -271,6 +286,13 @@ export function toMarkdown(report: ReturnType<typeof compareInventories>): strin
       " (SHA-256 " + item.sourceSha256 + "), raakaarvot " + JSON.stringify(item.rawValue));
   }
   if (!report.sourceOnly.duplicateTimeKeys.length) lines.push("Ei osumia.");
+  lines.push("", "## Lähteen numeroimattomat valmistusohjeet", "");
+  for (const item of report.sourceOnly.unnumberedPreparation) {
+    lines.push("- " + item.recipeId + ", lähde " + item.path +
+      " (SHA-256 " + item.sourceSha256 + ")");
+  }
+  if (!report.sourceOnly.unnumberedPreparation.length) lines.push("Ei osumia.");
+  lines.push("", "Numeroimaton ohje ei itsessään merkitse puuttuvaa tai käyttökelvotonta valmistusohjetta.", "");
   lines.push("", "## Julkisesta esityksestä puuttuvat valmistusohjeet", "");
   for (const item of report.visible.missingPreparation) {
     lines.push("- " + item.recipeId + " (" + item.routePath + "), lähde " +
