@@ -258,3 +258,35 @@ test("#327: duplicate time keys reject malformed and duplicated evidence", () =>
   assert.throws(() => compareInventories(duplicated, [recipe(null)]),
     /DUPLICATE_RAW_SIGNAL: duplicateTimeKeys:aika-puuttuu/);
 });
+
+test("#327: advisory report lists invalid and duplicate raw total times with pinned evidence", () => {
+  const row = { ...evidence, rawValue: "30 | 0" };
+  const input: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, invalidTime: [row], duplicateTimeKeys: [row] },
+  };
+  const report = compareInventories(input, [recipe(null)]);
+  assert.equal(report.totals.rawMissingTimes, 1);
+  assert.equal(report.totals.rawInvalidTimes, 1);
+  assert.equal(report.totals.rawDuplicateTimeKeys, 1);
+  assert.equal(report.sourceOnly.invalidTime[0].rawValue, "30 | 0");
+  const markdown = toMarkdown(report);
+  assert.match(markdown, /## Raakalähteen virheelliset kokonaisaikamerkinnät/);
+  assert.match(markdown, /## Raakalähteen kahteen kertaan määritellyt kokonaisajat/);
+  assert.ok(markdown.includes(evidence.path));
+  assert.ok(markdown.includes(evidence.sourceSha256));
+  assert.ok(markdown.includes('"30 | 0"'));
+  assert.ok(markdown.includes("| Kokonaisaika puuttuu | 1 | 1 |"));
+});
+
+test("#327: older raw inventories have empty invalid-time report queues", () => {
+  const report = compareInventories(raw, [recipe(null)]);
+  assert.equal(report.totals.rawInvalidTimes, 0);
+  assert.equal(report.totals.rawDuplicateTimeKeys, 0);
+  assert.deepEqual(report.sourceOnly.invalidTime, []);
+  assert.deepEqual(report.sourceOnly.duplicateTimeKeys, []);
+  const markdown = toMarkdown(report);
+  const invalidSection = markdown.split("## Raakalähteen virheelliset kokonaisaikamerkinnät")[1]
+    ?.split("## Raakalähteen kahteen kertaan määritellyt kokonaisajat")[0];
+  assert.match(invalidSection ?? "", /Ei osumia/);
+});
