@@ -12,6 +12,7 @@ import { isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
 const root = path.resolve(import.meta.dirname, "../..");
 const sha = (raw: string) => createHash("sha256").update(raw.replaceAll("\r\n", "\n")).digest("hex");
 const expected: Record<string,string> = {
+  "japanilainen-soba-aamiaiskeitto": "d27d97d6e7b065df3372970275ed3e4525910e98d5e780d4d208e536086b0273",
   "thai-roti-munalla-banaanilla": "01b5f49344afa698e599aa1ae8672649a18182892227ae5aa8d49b07e582c0ba",
   "indonesialainen-nasi-goreng-aamiaisriisi": "f55e64e3d2dd6080a7cbcde3b067cac696aaf8a5595b67a5615433d7a43689d7",
 
@@ -34,8 +35,8 @@ const expected: Record<string,string> = {
 };
 const macros = ["carbs_net_per_serving_g","carbs_total_per_serving_g","protein_per_serving_g","fat_per_serving_g"] as const;
 
-test("SHA-pinned FI overlays correct seventeen dishes without nutrition changes", () => {
-  assert.equal(breakfastFiQualityPaths.length, 17);
+test("SHA-pinned FI overlays correct eighteen dishes without nutrition changes", () => {
+  assert.equal(breakfastFiQualityPaths.length, 18);
   for (const relative of breakfastFiQualityPaths) {
     const raw = readFileSync(path.join(root, relative), "utf8");
     const beforeMd = parseMarkdown(raw);
@@ -138,6 +139,16 @@ test("SHA-pinned FI overlays correct seventeen dishes without nutrition changes"
       assert.match(afterMd.content, /yhteensä luettelon 1 rkl neutraalia paistoöljyä/);
       assert.match(afterMd.content, /lime ja makea chilikastike eivät sisälly/);
       assert.doesNotMatch(afterMd.content, /lisää vettä vain sen verran/);
+    } else if (before.recipe_id === "japanilainen-soba-aamiaiskeitto") {
+      assert.deepEqual(after.cooking_method, before.cooking_method);
+      assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
+      assert.match(afterMd.content, /200 ml dashia/);
+      assert.match(afterMd.content, /700 ml kasvis- tai kanalientä/);
+      assert.match(afterMd.content, /100 g sobanuudeleita/);
+      assert.match(afterMd.content, /keltuaiset ovat kauttaaltaan kypsiä/);
+      assert.match(afterMd.content, /pinaatti/);
+      assert.match(afterMd.content, /soba voi sisältää vehnää ja dashi kalaa/);
+      assert.doesNotMatch(afterMd.content, /Kuumenna kattilassa öljy tai liemi/);
     } else { assert.fail("Unexpected FI display patch: " + before.recipe_id); }
     assert.throws(()=>projectBreakfastFiQualityDisplay(relative,raw+"\nUNEXPECTED EDIT"),/FI_BREAKFAST_SOURCE_STALE/);
   }
@@ -228,4 +239,14 @@ test("F25 doujiang and Thai coconut-pancake public corrections preserve source n
     assert.match(JSON.stringify(shown), titleOrIngredient);
     assert.match(shown.content, prep);
   }
+});
+
+test("#404 soba public FI page uses both broths and completely cooked eggs", () => {
+  const recipe = siteContent.recipes.find(r => r.recipeId === "japanilainen-soba-aamiaiskeitto" && r.locale === "fi");
+  assert.ok(recipe, "published FI soba recipe must remain available");
+  const method = recipe.instructionsText.join(" ");
+  assert.match(method, /200 ml dashia/);
+  assert.match(method, /700 ml kasvis- tai kanalientä/);
+  assert.match(method, /keltuaiset ovat kauttaaltaan kypsiä/);
+  assert.doesNotMatch(method, /Kuumenna kattilassa öljy tai liemi/);
 });
