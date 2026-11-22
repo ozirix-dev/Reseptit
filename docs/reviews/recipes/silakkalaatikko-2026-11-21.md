@@ -18,3 +18,11 @@ Tila: DRAFT. Ei omaa kokkivarmistusta tai julkaisuhyväksyntää.
 - Tämän muunnelman turvallisuustarkistus: kalafileiden ruodot tarkistetaan, kala ja muna kypsennetään kauttaaltaan, ja vuoan keskiosan hyytyminen varmistetaan. Allergeenit: kala, muna ja maito; pekoni sisältää sianlihaa, jonka tuotekohtaiset allergiatiedot tarkistettava.
 - Neljän kielen määrä-/yksikkö-/vaihelukema ja kuvaosoitteet täsmäsivät rakenteellisesti; todellinen kokkaustesti, sanallinen merkitysvertailu ja ravintolaskenta ovat edelleen avoinna.
 - **HOLD:** uunin 175 °C / 80–90 minuutin ja 3 litran vuoan soveltuvuus tälle määrälle vahvistettava ennen julkaisua. Julkaisuportti `decision: hold` säilyy. Cloudflare-julkaisu ei kuulu PR:n toimenpiteisiin.
+
+## Chat-3:n kala-, turvallisuus- ja lähdekatselmointi 22.11.2026
+
+[Ruokaviraston kalankäyttösuosituksessa](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/kala/) suurikokoiselle Itämeren silakalle on erityinen rajoitus: **perkaamattomana yli 19 cm** silakkaa enintään kerran kahdessa kuukaudessa alle kouluikäisille ja hedelmällisessä iässä oleville naisille, raskaana olevat ja imettävät mukaan lukien. Tämä ei tarkoita kaikkien silakkafileiden yleistä käyttökieltoa. Kalan alkuperä ja mahdollinen alkuperäinen kokoluokka selvitetään pakkausmerkinnästä tai myyjältä. Marttojen [silakkalaatikko](https://www.martat.fi/reseptit/silakkalaatikko/) käyttää samaa peruna–silakka–siankylki–munamaito-rakennetta, mutta Recipavon pekoni, määrät ja vehnäjauhon puuttuminen ovat oma sovitus.
+
+Neljässä kielessä ainesosien määrä ja vaiheistus täsmäävät: 350g silakkaa, 900g perunaa, 150g pekonia, **500g 1,5 % kevytmaitoa** ja 2 kananmunaa; ruotojen tarkistus, 175°C 80–90min, kala kauttaaltaan kypsä, munamaito hyytynyt, 10min lepo. Ylijäämä jäähdytetään nopeasti matalissa astioissa ja säilytetään alle +6°C. Punnittuja aineksia 2031g + kaksi kananmunaa; kananmunien syötävä massa arvio ei ole fyysisesti punnittu. Fyysinen valmistus/uunin riittävyys ei ole mitattu.
+
+Rajatut katselmointitilat: duplicates, ingredients, method, food_safety ja servings_and_time `pass`, glycemic `unavailable`, **nutrition `pending`** ja `decision: hold`. Kalan täsmäalkuperä, pekonin ravintokoostumus ja riippumattomat kuva-/kieli-/julkaisuhyväksynnät edelleen avoimet.

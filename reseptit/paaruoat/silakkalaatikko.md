@@ -46,7 +46,7 @@ ingredients:
     item: "sipulia"
   - amount: 500
     unit: "g"
-    item: "maitoa"
+    item: "kevytmaitoa, rasvaa 1,5 %"
   - amount: 2
     unit: "kpl"
     item: "kananmunaa"
@@ -82,5 +82,6 @@ Perinteisessä silakkalaatikossa kerrostuvat peruna, silakkafileet ja sipuli. Pe
 ## Muistiinpanot
 
 - **Kalan käyttörajoitus:** Ruokaviraston 2.1.2025 päivittämässä ohjeessa alle kouluikäisille sekä hedelmällisessä iässä oleville naisille (myös raskaana oleville ja imettäville) suositellaan isoa, perkaamattomana yli 19 cm:n Itämeren silakkaa enintään kerran kahdessa kuukaudessa. Katso viranomaisohje kokonaisuudessaan. Sisältää kalaa, maitoa, kananmunaa ja sianlihaa (pekoni).
+- Tarjoa kypsä laatikko kuumana. Jäähdytä ylijäämä nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6 °C:ssa. Tarkista silakan pyyntialue ja tarvittaessa perkaamattoman kalan kokoluokka tuotteen myyjältä; erityinen yli 19 cm:n silakan käyttörajoitus koskee viranomaisohjeessa mainittuja ryhmiä.
 - Kuva on tekoälyllä tuotettu havainnekuva. Resepti on toimituksellinen luonnos; omaa kokkivarmistusta, ravintoarvo-/GK-laskentaa tai gluteenittomuuden hyväksyntää ei ole tehty.
 - Lähdevertailu: [Martat – silakkalaatikko](https://www.martat.fi/reseptit/silakkalaatikko/) · [Ruokavirasto – Kala](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/kala/). Reseptin määrät ja teksti on sovitettu itsenäisesti.

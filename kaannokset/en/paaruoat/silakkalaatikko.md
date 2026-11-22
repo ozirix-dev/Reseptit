@@ -41,7 +41,7 @@ ingredients:
     item: "onion"
   - amount: 500
     unit: "g"
-    item: "milk"
+    item: "semi-skimmed milk, 1.5% fat"
   - amount: 2
     unit: "pcs"
     item: "eggs"
@@ -77,5 +77,6 @@ A traditional Finnish casserole of thinly sliced potatoes, boneless Baltic herri
 ## Notes
 
 - **Fish intake advice:** The Finnish Food Authority (updated 2 January 2025) advises that preschool children and women of childbearing age, including those pregnant or breastfeeding, eat large Baltic herring (over 19 cm before gutting) no more than once every two months. Check the full official guidance. Contains fish, milk, eggs and pork bacon.
+- Serve the fully cooked bake hot. Cool leftovers promptly in shallow containers and refrigerate below +6°C. Check the herring catch area and, if necessary, the original ungutted fish size with the supplier; the special over-19-cm guidance applies to the groups named by the authority.
 - The picture is AI-generated. This is an editorial draft without an independent cooking test, recipe-specific nutrition/GK calculation or verified gluten-free status.
 - References: [Martat – silakkalaatikko](https://www.martat.fi/reseptit/silakkalaatikko/) · [Ruokavirasto – Kala](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/kala/). The proportions and wording have been independently adapted.

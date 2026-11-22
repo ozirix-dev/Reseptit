@@ -2,10 +2,10 @@
   "schema_version": 1,
   "recipe_id": "silakkalaatikko",
   "source_path": "reseptit/paaruoat/silakkalaatikko.md",
-  "source_sha256": "e09674e7ec4bb8303a83f032a2da6b8cc3f0817475e5c4bc88a2d687df61ae32",
+  "source_sha256": "17cd46f51f64667b10836e1622f0be9ff6a6fec4ae2312f45412a0d3f6c916bb",
   "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "reviewed_by": "Chat 3 – rajattu reseptin lähde-, valmistus- ja kala-/allergeeniturvallisuuden tarkistus, ei riippumaton hyväksyjä",
+  "reviewed_at": "2026-11-22",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -16,37 +16,38 @@
   "nutrition_evidence": "",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Vertailtu reseptipolkujen nimiin ja avoimiin PR:iin; lopullinen yhtäläisyystarkistus tehtävä julkaisuversiolle."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: päähaarassa ei ole silakkalaatikko-reseptitunnusta tai identtistä reseptipolkua; muihin kalaperunavuokiin nähden tämän reseptin munamaito, pekoni ja kypsennys erottuvat. PR #789 on tämän erillisen reseptiluonnoksen oma PR. Nykytilan rajattu tarkistus, automaattinen julkisen URL:n yksikäsitteisyys varmistettava myöhemmin."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Ainekset punnittu luonnosversioon; tuotemerkkien, syötävän osuuden ja määrien lopullinen tarkistus puuttuu."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: 11 ainesriviä, 6 annosta, peruna 900 g kuorittuna, silakkafilee 350 g ruodottomana, pekoni 150 g, sipuli 100 g, 1,5% kevytmaito 500 g, 2 kpl kananmunia, voi 10 g, tilli 15 g, suola 5 g, maustepippuri ja valkopippuri 0,5g kumpikin. Marttojen silakkalaatikko tukee peruna–silakka–sianliha–munamaito-rakennetta, mutta käyttää siankylkeä ja vehnäjauhoa; oma ainesosamuunnelma ei perustu Marttojen ilmoitettuun makroarvioon."
     },
     "method": {
-      "status": "pending",
-      "notes": "Kuvattu valmistustapa tarkistettu vertailuohjeita vastaan; itsenäinen kokkikelpoisuusarvio tarvitaan."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: Marttojen ohje käyttää ohuita perunaviipaleita ja fileoitua silakkaa kerroksittain siankyljen kanssa, munamaito ja 175°C noin 1,5h. Recipavo käyttää ruodottomat silakkafileet, 2–3mm perunaviipaleet, pekonin ja 175°C 80–90 min, ja lopussa varmistetaan perunoiden pehmeys, kalan kypsyys ja munamaidon hyytyminen; 10 min lepo. Menetelmärajauksen PASS ei ole fyysinen kokkaustesti."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Riski- ja allergeenihuomiot kirjattu lähdereseptiin, mutta riippumatonta loppuarviointia ei vielä ole."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: kala-, maito- ja muna-allergeenit (pekoni sisältää sianlihaa). Tarkista silakkafileen ruodot ja käytä hygieenisiä välineitä raakaa kalaa käsiteltäessä, paista kunnes kala kypsää ja munamaito kokonaan hyytynyt, jäähdytä ylijäämä nopeasti matalissa astioissa ja säilytä <+6°C. Ruokaviraston 2.1.2025 päivätty ohje koskee erityisesti perkaamattomana yli 19cm suurta Itämeren silakkaa, alle kouluikäisiä ja hedelmällisessä iässä olevia, raskaana olevia ja imettäviä naisia; heille enintään kerran kahdessa kuukaudessa. Kalan kokoluokka ja pyyntialue selvitettävä tarvittaessa myyjältä. Ei väitettä, että kaikki silakkafileet kuuluvat rajoitukseen. Lähde https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/kala/"
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "Annokset, työvaiheet ja aikataulu ovat luonnosarvioita; valmistus ja välinekapasiteetti tarkistettava."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: 900+350+150+100+500+10+15+5+0,5+0,5 = 2031g punnittuja aineksia + 2 kananmunaa joiden todellinen syötävä massa ei ole reseptissä punnittu. Kuudelle noin 338,5 g + yksi kolmasosa kahden kananmunan massasta ennen haihtumista. 175°C paisto 80–90 min + valmistelu noin 15–25min ja 10min lepo on sovitettavissa 115min kokonaisaikaan; todellinen kypsyys riippuu viipaleista ja uunista. 3L vuoan riittävyys fyysisesti vielä varmistamatta."
     },
     "nutrition": {
       "status": "pending",
       "notes": "Reseptiin sidottu riippumaton ravintolaskelma puuttuu eikä nollia tai lähteen eri annoksen arvoja kopioida."
     },
     "glycemic": {
-      "status": "pending",
-      "notes": "GI/GK-arvoa ei arvata; puuttuvuus voidaan hyväksyä unavailable-tilassa kirjallisella perustelulla."
+      "status": "unavailable",
+      "notes": "Tälle silakka–peruna–pekoni–munamaito-versiolle ei ole hyväksyttyä koko annoksen GI-/GK-arviota. Numeerista GK:ta ei arvata eikä Marttojen eri ainesosia sisältävän annoksen ravintoarvoja kopioida."
     }
   },
   "supplementary_evidence": {
     "image_path": "kuvat/paaruoat/silakkalaatikko.webp",
-    "image_review": "Tekoälyn tuottama havainnekuva, joka on vielä hyväksyttävä julkaisuun.",
-    "physical_cook_test": false
+    "image_review": "Chat 3 22.11.2026: Git-tracked 960×746 AI-kuvassa näkyy viipaloituja perunoita, silakkapaloja, pekonia ja tilliä kerroksellisessa uunilaatikossa. Visuaalinen ruokalajivastaavuus alustavasti OK, mutta kuva ei todista tuotteen turvallisuutta, kalan kokoa/lajia tai todellista valmistusta; lopullinen riippumaton ImageAssets-/toimituksellinen hyväksyntä avoin.",
+    "physical_cook_test": false,
+    "image_sha256": "b88604d3a1c15f87cf04007157f4672d3229150ebea39e3d96250c4ce7ae63e7"
   }
 }

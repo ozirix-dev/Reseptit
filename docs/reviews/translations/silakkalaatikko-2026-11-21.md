@@ -29,3 +29,7 @@
 ## HOLD
 
 `meta/kaannokset/codex-review-evidence.json` jää ennalleen, koska repon edellyttämää Codex-merkitysvertailua eikä merkitystiivisteisiin sidottua hyväksyntää ole tehty. `docs/reviews/new-recipes/silakkalaatikko.json` jää `decision: hold` -tilaan. Ruokaviraston käyttörajoitus ja kuvan julkaisuputki tarkistettava erikseen lopullista julkaisua varten.
+
+## Chat-3:n uusintavertailu 22.11.2026
+
+Kielisivujen FI/EN/SV/TH maito on nyt täsmennetty 1,5 % kevytmaidoksi, Ruokaviraston suurta silakkaa koskevan rajoituksen soveltamisala säilyy jokaisella kielellä ja ylijäämän kylmäsäilytykseksi on kirjattu alle +6 °C. 11/11 ainesrivin määräluettelo ja 5/5 valmistusvaiheen kriittinen järjestys vastaavat toisiaan, huomioiden kananmunan kappaleyksikön kielikohtaisen esitystavan. FI-raakatekstin SHA-256 `17cd46f51f64667b10836e1622f0be9ff6a6fec4ae2312f45412a0d3f6c916bb`, Git-blob `8301a00fcacd52c640a33105b77ac0322f687d07`. Kyse on Chat 3:n tekstuaalisesta vertailusta, **ei** riippumattomasta Codex-/ihmishyväksynnästä; `meta/kaannokset/codex-review-evidence.json` pysyy koskemattomana Draft-käännöksille. `status: draft`, `decision: hold`.

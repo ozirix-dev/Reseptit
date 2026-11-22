@@ -41,7 +41,7 @@ ingredients:
     item: "gul lök"
   - amount: 500
     unit: "g"
-    item: "mjölk"
+    item: "lättmjölk, 1,5 % fett"
   - amount: 2
     unit: "st"
     item: "ägg"
@@ -77,5 +77,6 @@ En traditionell finsk låda med tunt skivad potatis, benfria strömmingsfiléer,
 ## Anteckningar
 
 - **Råd om fiskkonsumtion:** Finlands Livsmedelsverk (uppdaterat 2.1.2025) rekommenderar att barn under skolåldern och kvinnor i fertil ålder, inklusive gravida och ammande, äter stor Östersjöströmming (över 19 cm orensad) högst en gång varannan månad. Läs myndighetens hela råd. Innehåller fisk, mjölk, ägg och fläskkött från bacon.
+- Servera den genomgräddade lådan varm. Kyl rester snabbt i grunda kärl och förvara i kylskåp under +6 °C. Kontrollera strömmingens fångstområde och vid behov fiskens storlek före rensning med försäljaren; rådet om fisk över 19 cm gäller myndighetens angivna grupper.
 - Bilden är AI-genererad. Detta är ett utkast utan egen provlagning, receptspecifik närings-/GK-beräkning eller verifierad glutenfrihet.
 - Jämförelsekällor: [Martat – silakkalaatikko](https://www.martat.fi/reseptit/silakkalaatikko/) · [Ruokavirasto – Kala](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/kala/). Mängder och text har bearbetats självständigt.

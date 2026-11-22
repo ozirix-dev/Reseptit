@@ -6,8 +6,8 @@
   "prepared_by": "Chat 3 / Kokki-3, lähdepohjainen ainesosalaskenta, ei hyväksytty ravintoarvo",
   "recipe_id": "silakkalaatikko",
   "source_path": "reseptit/paaruoat/silakkalaatikko.md",
-  "source_sha256": "e09674e7ec4bb8303a83f032a2da6b8cc3f0817475e5c4bc88a2d687df61ae32",
-  "source_blob_sha": "8a7ca0a3e0152d708dbcf866addf1db784e595f7",
+  "source_sha256": "17cd46f51f64667b10836e1622f0be9ff6a6fec4ae2312f45412a0d3f6c916bb",
+  "source_blob_sha": "8301a00fcacd52c640a33105b77ac0322f687d07",
   "servings": 6,
   "reference_data": "docs/nutrition/food-records.json",
   "reference_data_provider": "THL Fineli Release 20, CC BY 4.0",
@@ -139,13 +139,13 @@
     },
     {
       "line": 5,
-      "ingredient": "maitoa",
+      "ingredient": "kevytmaitoa, rasvaa 1,5 %",
       "recipeAmount": 500,
       "recipeUnit": "g",
       "accountedGrams": 500,
       "conversionBasis": null,
-      "matchQuality": "proxy",
-      "matchNotes": "Maidon rasva on reseptissä avoin; käytössä 1,5 % kevytmaidon skenaario.",
+      "matchQuality": "direct",
+      "matchNotes": "FI/EN/SV/TH on nyt nimetty 1,5% kevytmaito; Fineli #684 vastaa raaka-aineluokkaa. Tuotemerkin koostumus ja uunihaihtuman saanto eivät ole mitattuja.",
       "foodRecord": {
         "id": "fineli-684-release-20",
         "name": "MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG",
@@ -364,7 +364,7 @@
   ],
   "critical_product_proxies": [
     "Pekonin rasva on 32 % Fineli-proxy, ei varmennettu tuote.",
-    "Maidon rasva 1,5 % vain skenaario.",
+    "Maito on nyt neljässä kielessä 1,5% kevytmaitoa; tuote- ja paistosaantovaihtelu vaatii vielä laskentakatselmoinnin.",
     "Kananmunan massa 55 g/kpl arvio, ei mitattu.",
     "Maustepippuri ja valkopippurin polyoli/kuitu vaativat lähteen."
   ],
@@ -376,7 +376,7 @@
     "approved_fat_per_portion_g": null,
     "glycemic_load": null
   },
-  "publication_gate": "HOLD: silakan tuote, pekoni, maidon rasva ja kananmunan paino täsmennettävä, ravintolaskenta ja toimituksellinen hyväksyntä tehtävä ennen julkaisua.",
+  "publication_gate": "HOLD: pekonin nimetty tuotekoostumus puuttuu (32% rasvan Fineli-proxy), kahden kananmunan syötävää massaa ei ole punnittu, maustepippurin ravintoarvolähde sekä valkopippurin kuitu/polyolit ja uunin retentio vaativat varmentamisen. Maito täsmennetty 1,5% kevytmaidoksi. Ei julkisia makroja eikä numero-GK:ta.",
   "quantified_rows_subtotals_per_portion_g": {
     "carbohydrate": 28.176,
     "protein": 20.85,
