@@ -292,6 +292,7 @@ jobs:
         shell: pwsh
         env:
           UNIT_TESTS: ${{ steps.select.outputs.unit_tests }}
+          VERIFIED_IMAGE_ROOT: ${{ steps.images.outputs.root }}
         run: |
           if ($env:UNIT_TESTS -eq '*') {
             & npm test

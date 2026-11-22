@@ -6,6 +6,10 @@ import { verifyNutritionEvidence } from "../scripts/nutrition-evidence";
 import { frozenOriginalRecipeIds } from "./original-content-transition";
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
+
+const imageSourceRoot = process.env.VERIFIED_IMAGE_ROOT
+  ? path.resolve(process.env.VERIFIED_IMAGE_ROOT)
+  : path.resolve(import.meta.dirname, "../../kuvat");
 import test from "node:test";
 import { siteContent as currentSiteContent } from "../src/generated/content.generated";
 import { parseMarkdown } from "../src/content/markdown";
@@ -83,7 +87,7 @@ test("the ten additional Thai recipes are published in Finnish with their image 
     assert.ok(recipe.image, `${recipe.recipeId} has a recipe image`);
     const relativeImagePath = recipe.image.src.split("/kuvat/").at(-1);
     assert.ok(relativeImagePath);
-    assert.ok((await readFile(path.join(repoDir, "kuvat", relativeImagePath))).byteLength > 0);
+    assert.ok((await readFile(path.join(imageSourceRoot, relativeImagePath))).byteLength > 0);
   }
 });
 
@@ -341,7 +345,7 @@ test("the 40 recipe cards are unique and show their reviewed image bindings", as
     if (recipe.image) {
       const relativeImagePath = recipe.image.src.split("/kuvat/").at(-1);
       assert.ok(relativeImagePath);
-      assert.ok((await readFile(path.join(repoDir, "kuvat", relativeImagePath))).byteLength > 0);
+      assert.ok((await readFile(path.join(imageSourceRoot, relativeImagePath))).byteLength > 0);
     }
     assert.equal(
       recipe.nutrition.carbsNetG,
@@ -382,7 +386,7 @@ test("the twenty Indian recipes are published in Finnish with their image assets
     assert.ok(recipe.image, `${recipe.recipeId} has a recipe image`);
     const relativeImagePath = recipe.image.src.split("/kuvat/").at(-1);
     assert.ok(relativeImagePath);
-    assert.ok((await readFile(path.join(repoDir, "kuvat", relativeImagePath))).byteLength > 0);
+    assert.ok((await readFile(path.join(imageSourceRoot, relativeImagePath))).byteLength > 0);
   }
 });
 
@@ -688,7 +692,7 @@ test("the twenty Chinese recipes are published in Finnish with their image asset
     assert.ok(recipe.image, `${recipe.recipeId} has a recipe image`);
     const relativeImagePath = recipe.image.src.split("/kuvat/").at(-1);
     assert.ok(relativeImagePath);
-    assert.ok((await readFile(path.join(repoDir, "kuvat", relativeImagePath))).byteLength > 0);
+    assert.ok((await readFile(path.join(imageSourceRoot, relativeImagePath))).byteLength > 0);
   }
 });
 
@@ -712,7 +716,7 @@ test("the twenty Mediterranean recipes are published in Finnish with their image
     assert.equal(recipe.image.height, 853);
     const relativeImagePath = recipe.image.src.split("/kuvat/").at(-1);
     assert.ok(relativeImagePath);
-    assert.ok((await readFile(path.join(repoDir, "kuvat", relativeImagePath))).byteLength > 0);
+    assert.ok((await readFile(path.join(imageSourceRoot, relativeImagePath))).byteLength > 0);
   }
 });
 
@@ -734,7 +738,7 @@ test("the regional recipe additions are published in Finnish, categorized, and i
     assert.ok(recipe.instructionsText.length > 0, `${recipe.recipeId} has preparation steps`);
     const imagePath = recipe.image.src.split("/kuvat/").at(-1);
     assert.ok(imagePath);
-    assert.ok((await readFile(path.join(repoDir, "kuvat", imagePath))).byteLength > 0, recipe.recipeId);
+    assert.ok((await readFile(path.join(imageSourceRoot, imagePath))).byteLength > 0, recipe.recipeId);
     assert.equal(recipe.cuisine, expected.get(recipe.recipeId), recipe.recipeId);
   }
 });
