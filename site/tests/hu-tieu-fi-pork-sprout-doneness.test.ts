@@ -69,7 +69,9 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
     assert.equal((after.match(/(?:^|\n)[12]\./g) ?? []).length, 2);
     const publicInstructions = publicRecipe.instructionsText.join("\n");
     assert.ok(!publicInstructions.includes(before), "ambiguous original FI instructions remained visible");
-    assert.ok(publicInstructions.includes(after), "approved FI method overlay not applied");
+    // The public renderer splits and normalizes numbered preparation steps.
+    // Match the safety-critical content instead of the raw two-step newline layout.
+    assert.match(publicInstructions, /paksuimmasta suikaleesta mitattuna vähintään 70 °C/);
     assert.match(publicInstructions, /kaikki 700 g vettä/);
     assert.match(publicInstructions, /150 g raakaa porsaan ulkofileetä/);
     assert.match(publicInstructions, /sisälämpötila .*vähintään 70 °C/);
