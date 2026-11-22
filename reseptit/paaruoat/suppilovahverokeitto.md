@@ -75,6 +75,6 @@ Tuoreista suppilovahveroista, sipulista ja kermasta valmistuu täyteläinen sien
 
 ## Muistiinpanot
 
-- Sisältää maitoa ja vehnää. Ruokavirasto: kerää ja käytä vain varmasti tunnistamiasi ruokasieniä. Tuntemattoman myrkkysienen kuumentaminen ei tee siitä turvallista.
+- Sisältää maitoa ja vehnää. Ruokavirasto: kerää ja käytä vain varmasti tunnistamiasi ruokasieniä. Tuntemattoman myrkkysienen kuumentaminen ei tee siitä turvallista. Tarjoa keitto kuumana; jäähdytä ylijäämä nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6 °C:ssa.
 - Kuva on tekoälyllä tehty havainnekuva. Ei omaa kokkivarmistusta, ravintoarvo-/GK-laskentaa tai gluteenittomuuden hyväksyntää. Tämä on toimituksellinen luonnos.
 - Lähdevertailu: [Martat](https://www.martat.fi/reseptit/suppilovahverokeitto-2/) · [Ruokavirasto](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-tunnistaminen/). Oma määräsovitus ja ohjeistus, ei lähteen tekstikopio.

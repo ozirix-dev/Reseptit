@@ -70,6 +70,6 @@ A creamy Finnish autumn soup of fresh funnel chanterelles (Craterellus tubaeform
 
 ## Notes
 
-- Contains milk and wheat. Only use mushrooms confidently identified as edible; heating an unknown poisonous mushroom does not make it safe.
+- Contains milk and wheat. Only use mushrooms confidently identified as edible; heating an unknown poisonous mushroom does not make it safe. Serve hot; cool leftovers promptly in shallow containers and refrigerate below +6°C.
 - AI-generated illustration; no independent cooking trial, recipe-specific nutrition/GK calculation, or verified gluten-free status. Editorial draft only.
 - Reference: [Martat](https://www.martat.fi/reseptit/suppilovahverokeitto-2/) · [Ruokavirasto](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-tunnistaminen/). Independently written and adapted version.
