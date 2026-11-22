@@ -144,13 +144,13 @@ test('quarantined duplicate time keys are excluded from public FI review signals
 test('distinguishes unnumbered method text from absent FI preparation', () => {
   const intro = 'Yksilöllinen ruokaohje.';
   const original = recipe('prose', intro, 'Sekoita.') ;
-  const prose = original.replace('1. Sekoita.\\n2. Tarjoa lämpimänä.', 'Sekoita ainekset. Tarjoa lämpimänä.');
+  const prose = original.replace('1. Sekoita.\n2. Tarjoa lämpimänä.', 'Sekoita ainekset. Tarjoa lämpimänä.');
   const bullets = recipe('bullets', intro, 'Sekoita.')
-    .replace('1. Sekoita.\\n2. Tarjoa lämpimänä.', '- Sekoita.\\n- Tarjoa lämpimänä.');
+    .replace('1. Sekoita.\n2. Tarjoa lämpimänä.', '- Sekoita.\n- Tarjoa lämpimänä.');
   const empty = recipe('empty', intro, 'Sekoita.')
-    .replace('1. Sekoita.\\n2. Tarjoa lämpimänä.', '');
+    .replace('1. Sekoita.\n2. Tarjoa lämpimänä.', '');
   const missing = recipe('no-section', intro, 'Sekoita.')
-    .replace('## Valmistus\\n\\n1. Sekoita.\\n2. Tarjoa lämpimänä.', '');
+    .replace('## Valmistus\n\n1. Sekoita.\n2. Tarjoa lämpimänä.', '');
   const inputs = [
     { path: 'reseptit/aamupalat/prose.md', content: prose },
     { path: 'reseptit/aamupalat/bullets.md', content: bullets },
@@ -169,7 +169,7 @@ test('distinguishes unnumbered method text from absent FI preparation', () => {
 
 test('quarantine excludes unnumbered FI method advisory signals', () => {
   const content = recipe('hidden', 'Kuvaus.', 'Sekoita.')
-    .replace('1. Sekoita.\\n2. Tarjoa lämpimänä.', '- Sekoita.');
+    .replace('1. Sekoita.\n2. Tarjoa lämpimänä.', '- Sekoita.');
   const report = analyze(
     [{ path: 'reseptit/aamupalat/hidden.md', content }],
     new Set(['hidden']),
