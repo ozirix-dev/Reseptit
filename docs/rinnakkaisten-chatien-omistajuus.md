@@ -50,4 +50,17 @@ Kun työn omistaja vaihtuu, molemmat osapuolet pysäyttävät kirjoitukset ja uu
 
 Tämä ohje kannattaa säilyttää pysyvästi sekä tämän repon `AGENTS.md`-tiedostossa (linkki ja pakollinen tiivistelmä) että GitHubin PR-pohjassa. Uudet työt noudattavat ohjetta heti sen hyväksymisen jälkeen. Vanhoja PR-otsikoita tai haaroja ei ole tarpeen massamuuttaa; omistaja tunnistautuu GitHubissa seuraavalla omalla päivityskerralla.
 
-**Rajaus:** tämä on yhteistyösääntö, ei automaattinen GitHub-oikeuksien valvonta. Myöhempi erillinen CI-tarkistus voisi varmistaa uuden PR:n `Työn omistaja: Chat N` -merkinnän, mutta sitä ei kytketä käyttöön ilman erillistä suunnittelua, jotta vanhat PR:t tai muut tekijät eivät vahingossa esty.
+**Rajaus:** tämä on yhteistyösääntö, ei GitHubin todentama käyttäjäidentiteetti. Alla kuvattu CI-auditointi tarkistaa merkintöjen keskinäistä johdonmukaisuutta eikä anna uusia kirjoitus-, merge- tai julkaisuoikeuksia.
+
+## 6. CI:n Chat N -merkintätarkistus
+
+Erillinen `.github/workflows/chat-owner-metadata.yml` käynnistyy PR:n avaamisesta, päivittämisestä ja uudelleenavaamisesta. Sen testattu Node-ohjelma on `.github/scripts/check-chat-owner.mjs`; se lukee GitHubin `pull_request`-tapahtuman **vain paikallisesta tapahtuma-JSON:sta**, ei GitHubiin tehtävillä muutospyynnöillä.
+
+- Uusi PR (numero yli **791**), jonka otsikossa tai kuvauksessa on `Chat N` tai jonka haara alkaa `chatN/`, saa tarkistuksen: otsikon `[Chat N]`, kuvauksen `Työn omistaja: Chat N` ja mahdollisen `chatN/`-haaratunnuksen on oltava samat positiiviset kokonaisluvut.
+- Väärät tai ristiriitaiset Chat-numerot merkitsevät tämän **erillisen CI-tarkistuksen epäonnistuneeksi**. Puuttuva Chat-merkintä uudessa PR:ssä antaa **varoituksen**, ei automaattista estoa: esimerkiksi ihmisen tai Codexin työtä ei voi päätellä pelkästä PR:n otsikosta. Chatti ei saa käyttää tätä poikkeusta ohittaakseen itseilmoitusvelvollisuuttaan.
+- Ennen omistajuussäännön yhdistämistä avatut PR:t **#1–#791 jätetään takautuvasti rauhaan**; niiden omistaja ilmoittautuu seuraavalla omalla päivityksellä tämän ohjeen mukaisesti. Vanhoja haaroja ei nimetä automaattisesti uudelleen.
+- Jos uusi chatti jatkaa aiemmin nimettyä haaraa, numeroiden on täsmättävä aina, kun haarassa on `chatN/`-etuliite. Vanhoilla `recipe/`- tai muilla haaroilla johdonmukainen otsikko ja kuvaus kelpaavat; haaran nimestä annetaan vain suositus.
+- Auditointi käyttää `pull_request`-tapahtumaa ja read-only-oikeuksia, ei salaisuuksia tai `pull_request_target`-kirjoitusoikeuksia. Se ei ole identiteetti- tai Repo Guard -turvaportti, eikä sen läpäisy todista käyttäjän suostumusta tai branch-omistajuutta. Tämän lisätarkistuksen tilaa ei merkitä pakolliseksi `Recipe site / build` -portiksi tässä työssä.
+- Auditointi kirjoittaa vain staattiset virhe-/varoitusviestit ja PR-numeron: se ei tulosta PR:n vapaata tekstiä tai arkaluonteisia tietoja. Automaattiset korjaukset, kommentit, haarojen muuttaminen ja PR:n yhdistäminen eivät kuulu tarkistukseen.
+
+Testaa itsenäisesti Node 22:lla: `node --test .github/scripts/check-chat-owner.test.mjs`. PR:n täsmä-HEAD:n tuloksen varmistaminen on edelleen omistavan chatin vastuulla.

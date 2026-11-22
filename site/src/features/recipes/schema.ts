@@ -9,12 +9,20 @@ export function recipeJsonLd(recipe: RecipeEntry, canonicalUrl?: string): Record
   const nutrition = Object.fromEntries(Object.entries({
     carbohydrateContent: recipe.nutrition.carbsTotalG, proteinContent: recipe.nutrition.proteinG, fatContent: recipe.nutrition.fatG,
   }).filter(([, value]) => !withholding && value !== null).map(([key, value]) => [key, `${value} g`]));
+  // Only source-reviewed, exact recipe-and-method pairs can publish a
+  // structured cookingMethod. Other source metadata remains unverified.
+  const methodLabel = recipe.recipeId === "japanilainen-natto-riisikulho"
+    && JSON.stringify(recipe.cookingMethod) === '["keittäminen"]'
+    ? { fi: "Keittäminen", en: "Boiling", sv: "Kokning", th: "การต้ม" }[recipe.locale]
+    : recipe.recipeId === "paprikainen-vhh-gulassi"
+    && JSON.stringify(recipe.cookingMethod) === '["liesi"]'
+    ? { fi: "Liedellä hauduttaminen", en: "Stovetop simmering",
+        sv: "Sjudning på spis", th: "เคี่ยวบนเตา" }[recipe.locale]
+    : undefined;
   return {
     "@context": "https://schema.org", "@type": "Recipe", name: recipe.title,
     description: recipe.description || undefined, inLanguage: recipe.locale, recipeCategory: recipe.category,
-    ...(recipe.cookingMethod?.includes("keittäminen")
-      ? { cookingMethod: { fi: "Keittäminen", en: "Boiling", sv: "Kokning", th: "การต้ม" }[recipe.locale] }
-      : {}),
+    ...(methodLabel ? { cookingMethod: methodLabel } : {}),
     keywords: recipe.tags.length ? recipe.tags.join(", ") : undefined,
     ...(recipe.image ? { image: [recipe.image.src] } : {}),
     recipeYield: String(recipe.servings),
