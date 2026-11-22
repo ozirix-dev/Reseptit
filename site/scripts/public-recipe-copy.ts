@@ -844,6 +844,13 @@ export function reviewedPublicCookingMethod(recipeId: string, rawMethod: readonl
     }
     return ["liesi"];
   }
+  if (recipeId === "indonesialainen-nasi-uduk-aamiaisella") {
+    // #327: FI metadata says frying, but FI preparation cooks coconut rice
+    // and steams egg. EN/SV/TH already record keittäminen in their sources.
+    if (JSON.stringify(rawMethod) === JSON.stringify(["paistaminen"])) return ["keittäminen"];
+    if (JSON.stringify(rawMethod) === JSON.stringify(["keittäminen"])) return undefined;
+    throw new Error("NASI_UDUK_COOKING_METHOD_SOURCE_DRIFT");
+  }
   if (recipeId !== "japanilainen-natto-riisikulho") return undefined;
   if (JSON.stringify(rawMethod) !== JSON.stringify(["paistaminen"])) {
     throw new Error("NATTO_COOKING_METHOD_SOURCE_DRIFT");
@@ -937,6 +944,17 @@ export function projectPublicRecipeMethodCopy(
       if (id === "vhh-lihamureke") instructions = instructions.replace(eatInstruction[locale], "");
       notes = [notes, estimateNote[locale]].filter(Boolean).join("\n\n");
     }
+  }
+  if (id === "indonesialainen-nasi-uduk-aamiaisella" && locale === "fi") {
+    // Fail closed if the method no longer matches the pinned FI recipe text.
+    if (!instructions.includes("100 g kuivaa valkoista jasmiiniriisiä") ||
+        !instructions.includes("200 g kookosmaidossa") ||
+        !instructions.includes("kananmunaa höyryssä")) {
+      throw new Error("NASI_UDUK_FI_METHOD_TEXT_DRIFT");
+    }
+    notes = [notes,
+      "- Valmistustapa: keittäminen (riisi kookosmaidossa) ja kananmunan höyrykypsennys. Alkuperäisen FI-lähteen paistaminen-merkintä on virheellinen; mitään ei paisteta."
+    ].filter(Boolean).join("\\n");
   }
   if (id === "japanilainen-natto-riisikulho") {
     const reviewed = nattoRiceCookingReview[locale];
