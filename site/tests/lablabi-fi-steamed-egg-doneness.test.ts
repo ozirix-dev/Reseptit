@@ -60,7 +60,7 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
       assert.ok(parsed.content.includes(before), "the original FI step must still match");
       assert.equal(applyCopyEdits(before, edits), after);
       const instructions = publicRecipe.instructionsText.join(" ");
-      assert.match(instructions, /110 g kananmunaa ilman kuorta/);
+      assert.match(instructions, /kananmunia yhteensä 110 g ilman kuoria/);
       assert.match(instructions, /sekä valkuainen että keltuainen ovat kauttaaltaan hyytyneet/);
       assert.match(instructions, /tarkista kypsyys myös astian keskeltä/);
       assert.match(instructions, /ilman lisättyä rasvaa/);
