@@ -17,6 +17,7 @@ export type RawInventory = {
     repeatedSteps: RawRepeat[];
     duplicateDescription: Evidence[];
     missingTime: Evidence[];
+    missingPreparation?: Evidence[];
     invalidTime?: (Evidence & { rawValue: string })[];
     duplicateTimeKeys?: (Evidence & { rawValue: string })[];
   };
@@ -76,6 +77,7 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
     ["genericLead", raw.signals.genericLead],
     ["duplicateDescription", raw.signals.duplicateDescription],
     ["missingTime", raw.signals.missingTime],
+    ["missingPreparation", raw.signals.missingPreparation ?? []],
     ["invalidTime", raw.signals.invalidTime ?? []],
     ["duplicateTimeKeys", raw.signals.duplicateTimeKeys ?? []],
   ] as const) {
@@ -160,6 +162,19 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
   }));
   const unresolvedRepeats = comparedRepeats.filter(group => group.stillVisible.length >= 2);
   const resolvedRepeats = comparedRepeats.filter(group => group.stillVisible.length < 2);
+  // An empty or whitespace-only instruction list is a projected missing method.
+  // Raw missingPreparation only says the source lacked numbered steps; the public
+  // projection may legitimately derive a usable method from another source section.
+  const missingPreparation = fi.filter(recipe =>
+    !recipe.instructionsText.some(step => typeof step === "string" && step.trim().length > 0)
+  ).map(enrich);
+  const publicMissingPreparationIds = new Set(missingPreparation.map(item => item.recipeId));
+  const rawMissingPreparationIds = new Set((raw.signals.missingPreparation ?? []).map(item => item.recipeId));
+  const rawMissingPreparationNoLongerVisible = (raw.signals.missingPreparation ?? [])
+    .filter(item => !publicMissingPreparationIds.has(item.recipeId))
+    .map(item => enrich(visible.get(item.recipeId)!));
+  const publicMissingPreparationNotInRaw = missingPreparation
+    .filter(item => !rawMissingPreparationIds.has(item.recipeId));
   const missingTime = fi.filter(recipe => recipe.timeTotalMin === null).map(enrich);
   const rawMissingTimeIds = new Set(raw.signals.missingTime.map(item => item.recipeId));
   const publicMissingTimeIds = new Set(missingTime.map(item => item.recipeId));
@@ -183,6 +198,10 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
       projectedRepeatedStepGroups: repeated.length,
       rawRepeatGroupsNoLongerRepeated: resolvedRepeats.length,
       rawRepeatGroupsStillRepeated: unresolvedRepeats.length,
+      rawMissingPreparations: (raw.signals.missingPreparation ?? []).length,
+      projectedMissingPreparations: missingPreparation.length,
+      rawMissingPreparationNoLongerVisible: rawMissingPreparationNoLongerVisible.length,
+      publicMissingPreparationNotInRaw: publicMissingPreparationNotInRaw.length,
       rawMissingTimes: raw.signals.missingTime.length,
       rawInvalidTimes: (raw.signals.invalidTime ?? []).length,
       rawDuplicateTimeKeys: (raw.signals.duplicateTimeKeys ?? []).length,
@@ -190,7 +209,7 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
       rawMissingTimesNoLongerVisible: rawMissingTimeNoLongerVisible.length,
       publicMissingTimesNotInRaw: publicMissingTimeNotInRaw.length,
     },
-    visible: { genericDescriptions: generic, repeatedSteps: repeated, missingTime },
+    visible: { genericDescriptions: generic, repeatedSteps: repeated, missingTime, missingPreparation },
     sourceOnly: {
       genericNoLongerVisible: rawGenericNoLongerVisible,
       repeatGroupsNoLongerRepeated: resolvedRepeats,
@@ -198,6 +217,8 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
       publicGenericNotInRaw,
       rawMissingTimeNoLongerVisible,
       publicMissingTimeNotInRaw,
+      rawMissingPreparationNoLongerVisible,
+      publicMissingPreparationNotInRaw,
       invalidTime: raw.signals.invalidTime ?? [],
       duplicateTimeKeys: raw.signals.duplicateTimeKeys ?? [],
     },
@@ -216,6 +237,8 @@ export function toMarkdown(report: ReturnType<typeof compareInventories>): strin
       t.rawRepeatedStepGroups + " | " + t.projectedRepeatedStepGroups + " |",
     "| Johdanto toistettu Kuvaus-osiossa | " + t.sourceOnlyDuplicateDescriptions +
       " | Ei vastaavaa kahden tekstikentän rakennetta |",
+    "| Numeroitu valmistus puuttuu / esityksen ohje tyhjä | " +
+      t.rawMissingPreparations + " | " + t.projectedMissingPreparations + " |",
     "| Kokonaisaika puuttuu | " + t.rawMissingTimes + " | " + t.projectedMissingTimes + " |",
     "| Virheellinen kokonaisaikamerkintä | " + t.rawInvalidTimes + " | Ei erillistä raakakenttää |",
     "| Kokonaisaika määritelty useammin kuin kerran | " + t.rawDuplicateTimeKeys + " | Ei erillistä raakakenttää |", "",
@@ -248,6 +271,21 @@ export function toMarkdown(report: ReturnType<typeof compareInventories>): strin
       " (SHA-256 " + item.sourceSha256 + "), raakaarvot " + JSON.stringify(item.rawValue));
   }
   if (!report.sourceOnly.duplicateTimeKeys.length) lines.push("Ei osumia.");
+  lines.push("", "## Julkisesta esityksestä puuttuvat valmistusohjeet", "");
+  for (const item of report.visible.missingPreparation) {
+    lines.push("- " + item.recipeId + " (" + item.routePath + "), lähde " +
+      item.path + " (SHA-256 " + item.sourceSha256 + ")");
+  }
+  if (!report.visible.missingPreparation.length) lines.push("Ei osumia.");
+  lines.push("", "Raakalähteen numeroitu valmistus puuttui mutta julkisessa esityksessä ohje löytyi " +
+    t.rawMissingPreparationNoLongerVisible + " reseptissä. Julkisen esityksen tyhjiä ohjeita, joita raakainventaario ei tunnistanut, on " +
+    t.publicMissingPreparationNotInRaw + ". Havainto ei ole kokki- tai julkaisuhyväksyntä.", "",
+    "### Julkisessa esityksessä uutena tyhjät valmistusohjeet", "");
+  for (const item of report.sourceOnly.publicMissingPreparationNotInRaw) {
+    lines.push("- " + item.recipeId + " (" + item.routePath + "), lähde " +
+      item.path + " (SHA-256 " + item.sourceSha256 + ")");
+  }
+  if (!report.sourceOnly.publicMissingPreparationNotInRaw.length) lines.push("Ei osumia.");
   lines.push("", "## Julkisesta esityksestä puuttuvat kokonaisajat", "");
   for (const item of report.visible.missingTime) {
     lines.push("- " + item.recipeId + " (" + item.routePath + "), lähde " +
