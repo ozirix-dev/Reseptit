@@ -63,9 +63,9 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
       assert.match(cooking, /Lisää 200 g täysmaitoa/);
       assert.ok(cooking.indexOf("700 g veteen") < cooking.indexOf("200 g täysmaitoa"));
     } else {
-      assert.equal(publicRecipeDescription(id, source.url_slug, locale), undefined,
-        "non-FI public description has no changed overlay");
-      assert.notEqual(published.description, expectedFI);
+      assert.notEqual(published.description, expectedFI, "non-FI description remains localized");
+      assert.equal(published.description, publicRecipeDescription(id, source.url_slug, locale),
+        "keep pre-existing translated public copy without new overrides");
       assert.ok(published.description.length > 10);
     }
   });
