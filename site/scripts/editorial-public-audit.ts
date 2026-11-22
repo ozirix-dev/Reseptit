@@ -18,6 +18,7 @@ export type RawInventory = {
     duplicateDescription: Evidence[];
     missingTime: Evidence[];
     invalidTime?: (Evidence & { rawValue: string })[];
+    duplicateTimeKeys?: (Evidence & { rawValue: string })[];
   };
 };
 export type PublicRecipe = Pick<RecipeEntry,
@@ -76,6 +77,7 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
     ["duplicateDescription", raw.signals.duplicateDescription],
     ["missingTime", raw.signals.missingTime],
     ["invalidTime", raw.signals.invalidTime ?? []],
+    ["duplicateTimeKeys", raw.signals.duplicateTimeKeys ?? []],
   ] as const) {
     const seen = new Set<string>();
     for (const item of records) {
@@ -93,6 +95,14 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
     if (!missingTimeIds.has(item.recipeId) || typeof item.rawValue !== "string" ||
         !item.rawValue.trim() || item.rawValue.trim().toLowerCase() === "null") {
       throw new Error("INVALID_RAW_TIME_SIGNAL: " + item.recipeId);
+    }
+  }
+  // Duplicate time keys must be represented verbatim in invalidTime.
+  const invalidTimeById = new Map((raw.signals.invalidTime ?? []).map(item => [item.recipeId, item]));
+  for (const item of raw.signals.duplicateTimeKeys ?? []) {
+    if (typeof item.rawValue !== "string" || !item.rawValue.includes(" | ") ||
+        invalidTimeById.get(item.recipeId)?.rawValue !== item.rawValue) {
+      throw new Error("DUPLICATE_RAW_TIME_SIGNAL_DRIFT: " + item.recipeId);
     }
   }
   const repeatPhrases = new Set<string>();

@@ -210,3 +210,51 @@ test("#327: classified invalid times reject missing raw values and duplicates", 
   assert.throws(() => compareInventories(duplicated, [recipe(null)]),
     /DUPLICATE_RAW_SIGNAL: invalidTime:aika-puuttuu/);
 });
+
+test("#327: duplicate time keys have matching classified invalid-time evidence", () => {
+  const value = "30 | 0";
+  const duplicate = { ...evidence, rawValue: value };
+  const valid: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, invalidTime: [duplicate], duplicateTimeKeys: [duplicate] },
+  };
+  assert.equal(compareInventories(valid, [recipe(null)]).totals.rawMissingTimes, 1);
+  const missingInvalid: RawInventory = {
+    ...valid,
+    signals: { ...valid.signals, invalidTime: [] },
+  };
+  assert.throws(() => compareInventories(missingInvalid, [recipe(null)]),
+    /DUPLICATE_RAW_TIME_SIGNAL_DRIFT: aika-puuttuu/);
+  const changedValue: RawInventory = {
+    ...valid,
+    signals: {
+      ...valid.signals,
+      duplicateTimeKeys: [{ ...evidence, rawValue: "30 | 30" }],
+    },
+  };
+  assert.throws(() => compareInventories(changedValue, [recipe(null)]),
+    /DUPLICATE_RAW_TIME_SIGNAL_DRIFT: aika-puuttuu/);
+});
+
+test("#327: duplicate time keys reject malformed and duplicated evidence", () => {
+  for (const rawValue of ["30", "30/0"]) {
+    const invalid = { ...evidence, rawValue };
+    const report: RawInventory = {
+      ...raw,
+      signals: { ...raw.signals, invalidTime: [invalid], duplicateTimeKeys: [invalid] },
+    };
+    assert.throws(() => compareInventories(report, [recipe(null)]),
+      /DUPLICATE_RAW_TIME_SIGNAL_DRIFT: aika-puuttuu/);
+  }
+  const evidenceRow = { ...evidence, rawValue: "30 | 0" };
+  const duplicated: RawInventory = {
+    ...raw,
+    signals: {
+      ...raw.signals,
+      invalidTime: [evidenceRow],
+      duplicateTimeKeys: [evidenceRow, evidenceRow],
+    },
+  };
+  assert.throws(() => compareInventories(duplicated, [recipe(null)]),
+    /DUPLICATE_RAW_SIGNAL: duplicateTimeKeys:aika-puuttuu/);
+});
