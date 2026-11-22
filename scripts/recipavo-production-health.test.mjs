@@ -18,7 +18,8 @@ const good=new Map([
   ['/__recipavo_health_missing__/',{status:404,body:'<meta name="robots" content="noindex,follow">'}],
   ['/api/feedback',{status:405,body:'{"error":"method_not_allowed"}',
     headers:{'content-type':'application/json','cache-control':'no-store','x-content-type-options':'nosniff'}}],
-  [entry,{status:200,body:'console.log("ok");'.repeat(15)}],
+  [entry,{status:200,body:'console.log("ok");'.repeat(15),
+    headers:{'content-type':'application/javascript; charset=utf-8'}}],
 ]);
 const response=({status,body,headers={}})=>new Response(body,{status,headers});
 const fake=(overrides={},called=[])=>async (url,options)=>{
@@ -42,6 +43,26 @@ test('healthy four-language production checks all nine read-only routes',async()
   assert.deepEqual(visited,[...ROUTES.map(x=>x.path),'/robots.txt','/sitemap.xml',
     '/__recipavo_health_missing__/','/api/feedback',entry]);
 });
+const homeWithBootstrap = (url = entry) => ({
+  ...good.get('/'),
+  body: html('/','fi').replace(
+    '<script type="module" crossorigin src="'+entry+'"></script>',
+    '<script type="module">\n'+
+    '  const importEntry = () => { void import('+JSON.stringify(url)+'); };\n'+
+    '  importEntry();\n'+
+    '</script>',
+  ),
+});
+
+test('deferred Vite entry checks all nine read-only routes',async()=>{
+  const visited=[];
+  const result=await probeProduction({fetcher:fake({'/':homeWithBootstrap()},visited)});
+  assert.equal(result.status,'PASS');
+  assert.equal(result.sha,SHA);
+  assert.deepEqual(visited,[...ROUTES.map(x=>x.path),'/robots.txt','/sitemap.xml',
+    '/__recipavo_health_missing__/','/api/feedback',entry]);
+});
+
 test('stale revision metadata on robots.txt does not cause false alert',async()=>{
   assert.equal((await probeProduction({fetcher:fake()})).status,'PASS');
 });
@@ -96,6 +117,20 @@ test('hashed JS entry must exist and resolve to same origin',async()=>{
   await expectBroken('/',{...good.get('/'),
     body:html('/','fi').replace(entry,'https://evil.example/script.js')},
     /expected exactly one hashed JavaScript entry/);
+});
+test('deferred entry rejects external, inactive, and ambiguous asset references',async()=>{
+  const home=homeWithBootstrap();
+  await expectBroken('/',homeWithBootstrap('https://example.com'+entry),/expected exactly one hashed JavaScript entry/);
+  for (const body of [
+    home.body.replace('<script type="module">','<!--<script type="module">').replace('</script>','</script>-->'),
+    home.body.replace('</body>','<script type="module" src="'+entry+'"></script></body>'),
+  ]) {
+    await expectBroken('/',{...home,body},/expected exactly one hashed JavaScript entry/);
+  }
+});
+test('hashed JS entry rejects a successful HTML fallback',async()=>{
+  await expectBroken(entry,{...good.get(entry),headers:{'content-type':'text/html'}},
+    /must have a JavaScript content type/);
 });
 test('network error fails closed; workflow has no deployment or secret access',async()=>{
   await assert.rejects(()=>probeProduction({fetcher:async()=>{throw Error('network down')}}),
