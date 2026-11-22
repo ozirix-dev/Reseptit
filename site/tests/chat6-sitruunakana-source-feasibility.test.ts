@@ -63,8 +63,11 @@ function makeCandidate(): Calculation {
     "USDA FDC 171325 SR Legacy nominal profile: total CHO 72.73, protein 16.55, fat 0.73 g and 331 kcal per 100g. Scaled as nominal composition, NOT a tested lot-specific upper bound.");
   candidate.ingredients[8] = exclude(candidate.ingredients[8]!, "Conditional whole-ingredient omission: 2 g grated outer zest, not claimed equivalent to whole peel.", omittedZest,
     "USDA FDC 167749 SR Legacy raw peel nominal profile: total CHO 16, protein 1.5, fat 0.3 g and 47 kcal per 100g. This is a proxy, NOT validated zest composition.");
-  candidate.ingredients[9] = exclude(candidate.ingredients[9]!, "Conditional plain table salt only; unspecified amount and type need owner review.", noMacros,
-    "AFCD Release 3 F007879 (analysed, non-iodised table salt) reports zero carbohydrate, protein, fat, fibre per 100g. No sodium or other micronutrient estimate is made.");
+  // The original sealed evidence already recognizes pure table salt as a
+  // zero-macro exclusion. Keep that reviewed choice byte-for-byte, and
+  // independently corroborate it with AFCD F007879 in the source test.
+  assert.equal(candidate.ingredients[9]!.excludedReason, "Pure salt; no macro contribution");
+  assert.deepEqual(candidate.ingredients[9]!.omissionImpactUpperBoundPerServing, noMacros);
   // The real recipe has a formally withheld four-macro package. This synthetic
   // calculation must not claim to be that approved/published evidence.
   delete candidate.publicationStatus;
