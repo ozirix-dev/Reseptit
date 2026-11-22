@@ -835,6 +835,15 @@ const nattoRiceCookingReview: Readonly<Record<RecipeLocale, { evidence: readonly
 };
 
 export function reviewedPublicCookingMethod(recipeId: string, rawMethod: readonly string[] | undefined): string[] | undefined {
+  if (recipeId === "paprikainen-vhh-gulassi") {
+    // #327: the SHA-pinned four-language source says "uuni" but instructs
+    // covered stovetop simmering, with no oven temperature or oven step.
+    // Only public metadata changes; do not rewrite nutrition-sealed sources.
+    if (JSON.stringify(rawMethod) !== JSON.stringify(["uuni"])) {
+      throw new Error("GOULASH_COOKING_METHOD_SOURCE_DRIFT");
+    }
+    return ["liesi"];
+  }
   if (recipeId !== "japanilainen-natto-riisikulho") return undefined;
   if (JSON.stringify(rawMethod) !== JSON.stringify(["paistaminen"])) {
     throw new Error("NATTO_COOKING_METHOD_SOURCE_DRIFT");

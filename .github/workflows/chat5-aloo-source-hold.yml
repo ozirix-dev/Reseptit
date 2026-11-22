@@ -1,0 +1,41 @@
+name: Chat 5 aloo paratha source HOLD audit
+
+on:
+  pull_request:
+    paths:
+      - "site/scripts/aloo-paratha-source-hold-audit.ts"
+      - "site/tests/aloo-paratha-source-hold-audit.test.ts"
+      - ".github/workflows/chat5-aloo-source-hold.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+      - name: Test source mismatch and quarantine
+        working-directory: site
+        run: npx tsx --test tests/aloo-paratha-source-hold-audit.test.ts
+      - name: Produce advisory report
+        working-directory: site
+        run: |
+          mkdir -p ../tmp/chat5-aloo-source-hold
+          npx tsx scripts/aloo-paratha-source-hold-audit.ts > ../tmp/chat5-aloo-source-hold/current.json
+          cat ../tmp/chat5-aloo-source-hold/current.json >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload source HOLD findings
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: chat5-aloo-source-hold
+          path: tmp/chat5-aloo-source-hold/current.json
+          retention-days: 14

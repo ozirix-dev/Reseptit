@@ -85,3 +85,58 @@ test('excludes unparseable content and foreign-language recipes', () => {
   assert.equal(r.counts.reviewed, 0);
   assert.equal(r.counts.skipped, 2);
 });
+
+test('classifies absent/null time separately from malformed, unsafe or nonpositive values', () => {
+  const inputs = [
+    ['absent', 'time_total_min: 30', ''],
+    ['explicit-null', 'time_total_min: 30', 'time_total_min: null'],
+    ['zero', 'time_total_min: 30', 'time_total_min: 0'],
+    ['negative', 'time_total_min: 30', 'time_total_min: -5'],
+    ['decimal', 'time_total_min: 30', 'time_total_min: 1.5'],
+    ['unsafe', 'time_total_min: 30', 'time_total_min: 9007199254740992'],
+    ['valid', 'time_total_min: 30', 'time_total_min: 45'],
+  ].map(([id, from, to]) => ({
+    path: 'reseptit/aamupalat/' + id + '.md',
+    content: recipe(id, 'Yksilöllinen kuvaus.', 'Sekoita.').replace(from, to),
+  }));
+  const report = analyze(inputs);
+  assert.equal(report.counts.reviewed, 7);
+  assert.equal(report.signals.missingTime.length, 6);
+  assert.equal(report.signals.invalidTime.length, 4);
+  assert.deepEqual(report.signals.invalidTime.map(x => x.recipeId).sort(),
+    ['decimal', 'negative', 'unsafe', 'zero']);
+  assert.equal(report.byTime['(puuttuu)'], 2);
+  assert.equal(report.byTime['(virheellinen)'], 4);
+  assert.equal(report.byTime['45'], 1);
+  assert.equal(report.signals.invalidTime.find(x => x.recipeId === 'zero').rawValue, '0');
+});
+
+test('flags duplicate total-time YAML keys, even when values agree', () => {
+  const sources = [
+    { path: 'reseptit/aamupalat/same.md', content:
+      recipe('same', 'Kuvaus.', 'Sekoita.', 'time_total_min: 30\n') },
+    { path: 'reseptit/aamupalat/different.md', content:
+      recipe('different', 'Kuvaus.', 'Sekoita.', 'time_total_min: 0\n') },
+    { path: 'reseptit/aamupalat/single.md', content:
+      recipe('single', 'Kuvaus.', 'Sekoita.') },
+  ];
+  const original = sources.map(x => x.content);
+  const report = analyze(sources);
+  assert.equal(report.counts.reviewed, 3);
+  assert.deepEqual(report.signals.duplicateTimeKeys.map(x => x.recipeId), ['different', 'same']);
+  assert.equal(report.signals.missingTime.length, 2);
+  assert.equal(report.signals.invalidTime.length, 2);
+  assert.equal(report.byTime['(virheellinen)'], 2);
+  assert.equal(report.byTime['30'], 1);
+  assert.equal(report.signals.duplicateTimeKeys[0].rawValue, '30 | 0');
+  assert.equal(report.signals.duplicateTimeKeys[1].rawValue, '30 | 30');
+  assert.deepEqual(sources.map(x => x.content), original);
+});
+
+test('quarantined duplicate time keys are excluded from public FI review signals', () => {
+  const raw = recipe('hidden', 'Kuvaus.', 'Sekoita.', 'time_total_min: 10\n');
+  const report = analyze([{ path: 'reseptit/aamupalat/hidden.md', content: raw }], new Set(['hidden']));
+  assert.equal(report.counts.excludedQuarantine, 1);
+  assert.deepEqual(report.signals.duplicateTimeKeys, []);
+  assert.deepEqual(report.signals.invalidTime, []);
+});
