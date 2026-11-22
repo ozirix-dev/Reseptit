@@ -46,3 +46,26 @@ Kun riippumaton hyväksyntä on oikeasti tehty ja kielisivut ovat hyväksytysti 
 - TH: `336c64eaec37288bc704067f2168417a9b1213871d8326a4e45921d4d4cc0ed3`.
 
 **Nykytilan päätös:** alustava Chat 3 -merkitysvertailu dokumentoitu; virallinen käännöksen hyväksyntä **NOT REVIEWED / HOLD**, ei pass. `docs/reviews/new-recipes/kesakeitto.json` pysyy `decision: hold`-tilassa; ravintokandidaatti ei ole julkinen evidenssi.
+
+## Chat-3: nykyisten neljän kielitiedoston täysvertailu (22.11.2026, HEAD 54155f5)
+
+Tässä arvioitiin **nykyiset**, ei ensimmäisen raporttiosan vanhat tiedostoversiot. Kirjallinen editoriaalinen tarkistus on tehty samassa Chat-3-työketjussa kuin alkuperäinen kirjoitus, joten tämä **ei ole riippumaton Codexin tai ihmisen hyväksyntä**, eikä kelpaa muodolliseksi `outcome: pass` -rekisterimerkinnäksi.
+
+| Kieli | Tämän vertailun Git-blob SHA |
+| --- | --- |
+| FI | `1d07ada8fe4d6255b6f5793cfd1a0003943fc1a4` |
+| EN | `c0a4837f0622f8dfc1c5423370249521569d7a02` |
+| SV | `55b3520fe1263d64551d57f4157ade617dc8e71a` |
+| TH | `8fc14de754f53e849cef44baaf0404df4b10916c` |
+
+**FI-lähteen raakateksti SHA-256:** `a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af`. Älä sekoita Git-blob-SHA:ta repon semanttiseen `semanticHash`-arvoon.
+
+**Tarkistusmatriisi, EN/SV/TH verrattuna FI:hin:**
+
+- 11 ainesosaa per kieli, täsmälleen samassa järjestyksessä ja massoilla 500/250/350/150/100/700/400/20/15/7/12 g. Perunat ovat uusia ja pestyjä; herneet tuoreita tai pakastettuja; 400 g maito on 1,5 % kevytmaitoa. Ruotsin `lättmjölk, 1,5 % fett`, englannin `semi-skimmed milk, 1.5% fat` ja thain `นมไขมันต่ำ ไขมัน 1.5%` sisältävät prosenttitiedon. Käännösteksteissä ei havaittu ainesosan puuttumista tai toista tuotetta.
+- 6 annosta, 40 minuuttia ja viisi vaihetta kaikissa. Vaiheen 1 uudet perunat puolitetaan tarvittaessa; porkkanat viipaloidaan, kukkakaali paloitellaan ja kevätsipulin vihreät osat erotetaan. Vaiheessa 2 suola lisätään 700 grammaan kiehuvaa vettä, perunat ja porkkanat kypsyvät 7–8 min.
+- Vaiheessa 3 kukkakaali ja sipulin vaalea/valkoinen osa lisätään ennen herneitä ja vihreää sipulia; ajat 5–7 + 2 min. Vaiheessa 4 vehnäjauho sekoitetaan **kylmään** maitoon, valutetaan sekoittaen, kypsennetään 4–5 min, ja perunan sekä porkkanan kypsyys kokeillaan haarukalla; tarvittaessa jatketaan. Vaiheessa 5 lisätään voi ja tuore tilli vasta lämmöltä noston jälkeen. Tämä toimintajärjestys säilyy EN/SV/TH-käännöksissä.
+- Kaikki neljä versiota ilmoittavat **maidon ja vehnän**, kuumana tarjoamisen, nopean jäähdytyksen matalissa astioissa sekä jääkaappisäilytyksen alle +6 °C. Kaikissa kielissä AI-kuva on havainnekuva; fyysistä valmistusta, hyväksyttyjä koko reseptin makroja/GK:ta tai gluteenittomuusväitettä ei esitetä hyväksyttyinä.
+- **Merkityshavainto:** ei todettu tällä tekstuaalisella vertailulla P0/P1-vastaamattomuutta. Käännösten sävy- ja termivaihtelut eivät muuta määrää, valmistusmenetelmää tai allergeenin tarkoitusta. Tämä havainto ei ole ulkopuolisen tarkastajan itsenäinen tulos.
+
+**Jäljellä oleva aito julkaisuehto:** ulkopuolinen/riippumaton, versiosidonnainen käännösten merkityskatselmointi ja julkaisuversion `semanticHash`-parit; niiden jälkeen merkitse rekisteriin vain silloin kun lähde ja käännökset ovat `published` ja hyväksyntä on oikeasti tehty. `meta/kaannokset/codex-review-evidence.json` on jätetty muuttamatta, koska Draft-käännösten merkinnät rikkoivat aiemmin CI-portin. `decision: hold` säilyy.
