@@ -19,7 +19,7 @@ const sources = {
 } as const;
 
 function blobSha(raw: string): string {
-  return createHash("sha1").update("blob " + Buffer.byteLength(raw) + "\\0" + raw).digest("hex");
+  return createHash("sha1").update("blob " + Buffer.byteLength(raw) + "\0" + raw).digest("hex");
 }
 
 for (const locale of ["fi", "en", "sv", "th"] as const) {
@@ -60,7 +60,7 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
       assert.match(method, /100 g kuivaa valkoista jasmiiniriisiä/);
       assert.match(method, /200 g kookosmaidossa/);
       assert.match(method, /kananmunaa höyryssä/);
-      assert.match(visible.notesHtml, /Valmistustapa: keittäminen \\(riisi kookosmaidossa\\) ja kananmunan höyrykypsennys/);
+      assert.match(visible.notesHtml, /Valmistustapa: keittäminen \(riisi kookosmaidossa\) ja kananmunan höyrykypsennys/);
       assert.equal(recipeJsonLd(visible).cookingMethod, "Keittäminen");
     } else {
       assert.deepEqual(source.cooking_method, ["keittäminen"]);
