@@ -30,7 +30,7 @@ ingredients:
     unit: "g"
     item: "färsk dill"
   - amount: 0.5
-    unit: "tl"
+    unit: "tsk"
     item: "grovt malen vitpeppar"
 ---
 
@@ -54,4 +54,4 @@ Använd sik som lämpar sig för rå konsumtion, följ Livsmedelsverkets frysreg
 - Den finska källan är styrande. Utkastet är inte godkänt för publicering.
 - Mängder, tillagningsmetod, risker och översättningens betydelse måste granskas.
 - Näringsvärden och glykemisk belastning har inte beräknats.
-- WebP-bilden (720 × 720) finns nu i denna Git Draft-gren och är SHA-256-låst i bildmanifestet; redaktionellt publiceringsgodkännande saknas fortfarande.
+- WebP-illustrationen (720 × 720) är versionshanterad i Git och SHA-256-kontrollerad i bildmanifestet. Den är AI-genererad, inte ett fotografi av en tillagad rätt; redaktionellt publiceringsgodkännande saknas fortfarande.

@@ -18,7 +18,7 @@ source_recipe: reseptit/alkuruoat/muikunmati-rieskarullat.md
 translation_of: muikunmati-rieskarullat
 ingredients:
   - amount: 4
-    unit: "kpl"
+    unit: "pcs"
     item: "small, soft Finnish potato flatbreads"
   - amount: 140
     unit: "g"
@@ -60,4 +60,4 @@ Use roe labelled suitable to eat without heating and observe its package instruc
 - English translation only; the Finnish original remains the source of truth.
 - Not ready for publication: ingredient quantities, preparation evidence, food safety and translation parity require independent review.
 - Numeric nutrition values and glycemic load have not been established.
-- The 720 × 720 WebP image is now stored in this Git Draft branch and checksum-pinned in the verified image overlay; visual/editorial publication approval is still pending.
+- The 720 × 720 WebP illustration is versioned in Git and SHA-256-pinned in the image manifest. It is AI-generated, not a photo of a prepared dish; editorial publication approval remains pending.
