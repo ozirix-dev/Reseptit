@@ -25,11 +25,11 @@
     },
     "method": {
       "status": "pass",
-      "notes": "Chat 3 22.11.2026: perunat kypsennetään ensin täysin pehmeiksi (15–20 min), soseutetaan lämmitetyn maidon ja voin kanssa; 17% naudan jauheliha kypsennetään kauttaaltaan sipulin kanssa; kerrostetaan vähintään 3 litran vuokaan ja paistetaan 200°C 25–30 min. Menetelmä vastaa lähteiden periaatetta mutta punnitut suhteet oma sovitus. Ei fyysisen koekeittiökokeen väitettä."
+      "notes": "Chat 3 22.11.2026: perunat kypsennetään ensin täysin pehmeiksi (15–20 min), soseutetaan lämmitetyn maidon ja voin kanssa; 17% naudan jauheliha kypsennetään kauttaaltaan sipulin kanssa; kerrostetaan vähintään 3 litran vuokaan ja paistetaan 200°C 25–30 min. Menetelmä vastaa lähteiden periaatetta mutta punnitut suhteet oma sovitus. Ei fyysisen koekeittiökokeen väitettä. Chat-1:n riippumaton #854 tarkisti aiemman HEADin b128e8e6e4abce1ce30d637208c980ac3b94a2a0. Sen jälkeen vuoan kapasiteetti täsmennettiin noin 2,5 litrasta vähintään 3 litraan; muiden valmistusvaiheiden järjestystä, aikaa ja lämpötilaa ei muutettu. Uuden SHA-version riippumaton kuittaus on yhä avoin."
     },
     "food_safety": {
       "status": "pass",
-      "notes": "Chat 3 22.11.2026: naudan jauheliha ruskistetaan ja kypsennetään läpikotaisin ennen kerrostamista, paisto jatkuu 200°C:ssa. Maito on selvä allergeeni; tuotekohtaiset pakkausmerkinnät tarkistettava. Jäähdytä tähteet nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6°C; vältetään hyväksymätön gluteenittomuusväite. Tämä on rajattu lähde-/turvallisuusarvio, ei mittaustulos. https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/"
+      "notes": "Chat 3 22.11.2026: naudan jauheliha ruskistetaan ja kypsennetään läpikotaisin ennen kerrostamista, paisto jatkuu 200°C:ssa. Maito on selvä allergeeni; tuotekohtaiset pakkausmerkinnät tarkistettava. Jäähdytä tähteet nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6°C; vältetään hyväksymätön gluteenittomuusväite. Tämä on rajattu lähde-/turvallisuusarvio, ei mittaustulos. https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ Vanhan ja uuden FI-lähteen erotuksessa tähteiden jäähdytys täsmennettiin nopeasti matalissa astioissa tehtäväksi ja kylmäsäilytys alle +6 °C:een. Tämä on lähdemuutoksen auditointi, ei uuden SHA:n riippumaton hyväksyntä."
     },
     "servings_and_time": {
       "status": "pass",
@@ -37,7 +37,7 @@
     },
     "nutrition": {
       "status": "pending",
-      "notes": "Reseptiin sidottu riippumaton ravintolaskelma puuttuu eikä nollia tai lähteen eri annoksen arvoja kopioida."
+      "notes": "Numeeriset ravintoarvot ja GK jätetään tarkoituksella julkaisematta. Mainiin yhdistetty riippumaton #855 dokumentoi WITHHOLD-ratkaisun aiemmalle FI-versiolle (HEAD b128e8e6e4abce1ce30d637208c980ac3b94a2a0), mutta nykyinen FI-lähde SHA256 c2bc22e3f1fe53ae292b7f24fad20def5f247b22494f5f4c98f4c68d84da1922 on sen jälkeen täsmentänyt naudan jauhelihan 17 % ja kevytmaidon 1,5 % rasvaksi. Vaikka määrät ovat ennallaan ja ulos jätetyt numerokentät edelleen puuttuvat, #855:n vanhan version hyväksyntää ei saa automaattisesti tulkita nykyversion muodolliseksi ravintohyväksynnäksi. Riippumaton nykyversion WITHHOLD-kuittaus puuttuu, siksi nutrition:pending; ei nollatäyttöä eikä ehdokkaan osasummia julkisiin kenttiin."
     },
     "glycemic": {
       "status": "unavailable",
@@ -46,8 +46,25 @@
   },
   "supplementary_evidence": {
     "image_path": "kuvat/paaruoat/liha-perunasoselaatikko.webp",
-    "image_review": "Chat 3 22.11.2026: kuvan 960x746 Git-tracked AI-havainnekuvassa näkyy kerroksellinen perunasosekuorrute ja kypsä jauheliha. Rajattu visuaalinen vastaavuus OK, kuva ei ole oikea koekeittiövalokuva eikä korvaa riippumatonta kuva-/lisenssihyväksyntää. Mainin overlay approved=true on tekninen CI-lähdesyöte.",
+    "image_review": "Chat 3 22.11.2026: kuvan 960x746 Git-tracked AI-havainnekuvassa näkyy kerroksellinen perunasosekuorrute ja kypsä jauheliha. Rajattu visuaalinen vastaavuus OK, kuva ei ole oikea koekeittiövalokuva eikä korvaa riippumatonta kuva-/lisenssihyväksyntää. Mainin overlay approved=true on tekninen CI-lähdesyöte. Chat-1:n #852 on yhdistetty mainiin ja kyseisen SHA-lukitun WebP-havainnekuvan Git-overlay on hyväksytty; vanha kuva-HOLD-teksti koski puuttuvaa lopullista rekisteröintiä eikä enää vastaa tämän kuvatiedoston teknistä hyväksyntätilaa. Reseptin kokonaisjulkaisun hyväksyntä pysyy erillisenä.",
     "physical_cook_test": false,
-    "image_sha256": "a7c032c3b09e76bac94a3fb467a1e1b29d1da9dce469061a9e4a0971b8322923"
+    "image_sha256": "a7c032c3b09e76bac94a3fb467a1e1b29d1da9dce469061a9e4a0971b8322923",
+    "independent_review_reconciliation": {
+      "review_pr": 854,
+      "reviewed_head": "b128e8e6e4abce1ce30d637208c980ac3b94a2a0",
+      "current_source_sha256": "c2bc22e3f1fe53ae292b7f24fad20def5f247b22494f5f4c98f4c68d84da1922",
+      "source_changed_since_review": true,
+      "changed_topics": [
+        "17 % naudan jauheliha täsmennetty",
+        "1,5 % kevytmaito täsmennetty",
+        "vähintään 3 litran uunivuoka",
+        "tähteiden nopea jäähdytys matalissa astioissa ja säilytys alle +6 °C"
+      ],
+      "current_version_reapproval": "required",
+      "image_overlay_pr": 852,
+      "numeric_macro_withholding_pr": 855,
+      "translation_review": "draft; formal independent semantic evidence pending",
+      "publication_decision": "HOLD"
+    }
   }
 }
