@@ -53,7 +53,7 @@ const doneness = {
 } as const;
 
 function gitBlob(raw: string): string {
-  return createHash("sha1").update("blob " + Buffer.byteLength(raw) + "\\0" + raw).digest("hex");
+  return createHash("sha1").update("blob " + Buffer.byteLength(raw) + "\0" + raw).digest("hex");
 }
 
 for (const locale of ["fi", "en", "sv", "th"] as const) {
