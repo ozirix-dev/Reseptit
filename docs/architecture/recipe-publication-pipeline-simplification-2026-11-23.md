@@ -1,10 +1,10 @@
 # Recipavo: reseptijulkaisun, ravintolaskennan ja GK-tutkimuksen erottaminen
 
-**Omistaja:** Chat-1 (arkkitehtuuri ja integraatio)  
-**Päivä:** 2026-11-23  
-**Tila:** Toteutuksen lähtöauditointi; EI julkaisuporttien muutos eikä hyväksytty käyttöönotto  
-**Lähtö-main:** `74a576b725f31cc85c16e4dd3f234a5e6c0b41cb`  
-**Esimerkki:** PR #904, piña colada -hedelmäjäätelö  
+**Omistaja:** Chat-1 (arkkitehtuuri ja integraatio)
+**Päivä:** 2026-11-23
+**Tila:** Toteutuksen lähtöauditointi; EI julkaisuporttien muutos eikä hyväksytty käyttöönotto
+**Lähtö-main:** `74a576b725f31cc85c16e4dd3f234a5e6c0b41cb`
+**Esimerkki:** PR #904, piña colada -hedelmäjäätelö
 **Omistajuusraja:** Älä muuta #904:n tai muiden aktiivisten chattien haaroja.
 
 ## Todennetut riippuvuudet
