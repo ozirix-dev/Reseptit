@@ -1,0 +1,43 @@
+name: Chat 5 assistant launch preflight
+
+on:
+  pull_request:
+    paths:
+      - "site/scripts/assistant-launch-preflight.ts"
+      - "site/tests/assistant-launch-preflight.test.ts"
+      - ".github/workflows/chat5-assistant-launch-preflight.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-launch-preflight:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install site dependencies
+        working-directory: site
+        run: npm ci
+      - name: Run A4 offline launch-safety regression tests
+        working-directory: site
+        run: npx tsx --test tests/assistant-launch-preflight.test.ts
+      - name: Generate A4 release HOLD evidence
+        working-directory: site
+        run: npx tsx scripts/assistant-launch-preflight.ts
+      - name: Append advisory report
+        run: cat tmp/assistant-launch-preflight/current.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload no-release audit artifact
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: chat5-assistant-launch-hold
+          path: |
+            tmp/assistant-launch-preflight/current.json
+            tmp/assistant-launch-preflight/current.md
+          if-no-files-found: error
+          retention-days: 14

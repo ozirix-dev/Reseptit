@@ -16,6 +16,9 @@ interface ReviewedRecipeCopy {
 // Display-only edits. Canonical ingredients, release evidence and calculation inputs
 // stay in their source files. Edits match the approved display text before this pass.
 const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
+  // #327 Chat 2: replace the remaining formulaic FI intro with facts from
+  // the source-locked maakouda method. Do not change its GK or translations.
+  "pohjoisafrikkalainen-maakouda-punnittu-v2/fi": {"description":"Marokkolaiset maakouda-perunapihvit tehdään keitetyistä perunoista, kananmunasta ja vehnäjauhoista. Persiljalla ja juustokuminalla maustetusta massasta muotoillaan kuusi pihviä, jotka paistetaan pannulla kullanruskeiksi."},
   // #327: remove generic cucumber som tam preparation text in four locales.
   // Source-backed nutrition/GK and published translation bytes are unchanged.
   "som-tam-vhh-kurkkuna/fi": {"description":"Kurkkusuikaleet, tomaatti ja valmiiksi kypsennetyt vihreät pavut saavat tulisen limetti-kalakastikkeen. Paahdetut maapähkinät tuovat rapeutta neljään annokseen.","method":[["1. Punnitse luetellut syötävät raaka-aineet grammoina; älä lisää luetteloimatonta rasvaa tai lisukkeita.\n2. Kaavi kurkun siemenosa pois ja punnitse sen jälkeen 500 g syötävää kurkkua. Punnitse 100 g jo keitettyjä ja valutettuja vihreitä papuja; raakoja papuja ei käytetä sellaisenaan. Paloittele tomaatti.\n3. Murskaa valkosipuli ja chili. Rouhi karkeasti puolet kokonaisista paahdetuista maapähkinöistä, älä jauha tahnaksi. Lisää limettimehu, kalakastike ja 4 g Foodin-erytritolia.\n4. Sekoita kaikki kasvikset ja kastike. Lisää loput maapähkinät. Syö koko kastike ja jaa neljään annokseen.","1. Kaavi kurkusta siemenosa pois ja punnitse jäljelle jäävästä syötävästä kurkusta 500 g. Paloittele 150 g tomaattia. Mittaa 100 g valmiiksi kypsennettyjä ja valutettuja vihreitä papuja; älä käytä papuja raakoina.\n2. Murskaa 3,5 g valkosipulia ja 5 g chiliä. Sekoita niihin kastikkeeksi kaikki 30 g limettimehua, 15 g kalakastiketta ja 4 g Foodin-erytritolia.\n3. Rouhi karkeasti puolet 30 g paahdetuista suolattomista maapähkinöistä. Lisää kurkku, tomaatti ja kypsät pavut kulhoon ja kääntele joukkoon koko kastike.\n4. Lisää rouhitut pähkinät ja viimeistele lopuilla kokonaisilla paahdetuilla maapähkinöillä. Jaa salaatti ja kaikki kastike neljään annokseen; lisää luettelon suolaa vain tarvittaessa."]]},
@@ -493,7 +496,62 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
   },
   "paprikainen-vhh-gulassi/fi": {
     "method": [
-      ["Lisää 0,5 g mustapippuria ja 10 g persiljaa. Tarjoa koko pata kastikkeineen ja rasvoineen 150 g noin 40-prosenttista smetanaa kanssa neljänä annoksena. Erilliset lisukkeet eivät kuulu annokseen.", "Lisää 0,5 g mustapippuria ja 10 g persiljaa. Jaa koko pata kastikkeineen ja rasvoineen neljään annokseen. Tarjoa niiden kanssa yhteensä 150 g noin 40-prosenttista smetanaa. Erilliset lisukkeet eivät kuulu annoksiin."]
+      [
+        "Hauduta kannen alla 1,5 tuntia, kunnes liha on mureaa.",
+        "Hauduta liedellä kannellisessa padassa miedolla lämmöllä 1,5 tuntia, kunnes liha on mureaa."
+      ],
+      [
+        "Lisää 0,5 g mustapippuria ja 10 g persiljaa. Tarjoa koko pata kastikkeineen ja rasvoineen 150 g noin 40-prosenttista smetanaa kanssa neljänä annoksena. Erilliset lisukkeet eivät kuulu annokseen.",
+        "Lisää 0,5 g mustapippuria ja 10 g persiljaa. Jaa koko pata kastikkeineen ja rasvoineen neljään annokseen. Tarjoa niiden kanssa yhteensä 150 g noin 40-prosenttista smetanaa. Erilliset lisukkeet eivät kuulu annoksiin."
+      ]
+    ],
+    "notes": [
+      [
+        "Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.",
+        "Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.\n\nValmistustapa: haudutus liedellä kannellisessa padassa. Naudanlihaa ruskistetaan ja pata hautuu liedellä miedolla lämmöllä 1,5 tuntia; ohjeessa ei ole uunivaihetta."
+      ]
+    ]
+  },
+  "paprikainen-vhh-gulassi/en": {
+    "method": [
+      [
+        "Simmer covered for 1.5 hours until the beef is tender.",
+        "Simmer on the stovetop in a covered pot over low heat for 1.5 hours until the beef is tender."
+      ]
+    ],
+    "notes": [
+      [
+        "Nutrition values are temporarily withheld pending source verification.",
+        "Nutrition values are temporarily withheld pending source verification.\n\nCooking method: simmering on the stovetop in a covered pot. Brown the beef, then simmer the covered pot over low heat for 1.5 hours; the recipe has no oven stage."
+      ]
+    ]
+  },
+  "paprikainen-vhh-gulassi/sv": {
+    "method": [
+      [
+        "Sjud under lock i 1,5 timmar tills köttet är mört.",
+        "Låt sjuda på spisen under lock och på svag värme i 1,5 timmar tills köttet är mört."
+      ]
+    ],
+    "notes": [
+      [
+        "Näringsvärden visas tills vidare inte i väntan på källkontroll.",
+        "Näringsvärden visas tills vidare inte i väntan på källkontroll.\n\nTillagningssätt: sjudning på spisen i en gryta med lock. Bryn köttet och sjud sedan grytan på svag värme i 1,5 timmar; receptet har inget ugnssteg."
+      ]
+    ]
+  },
+  "paprikainen-vhh-gulassi/th": {
+    "method": [
+      [
+        "ปิดฝาเคี่ยว 1.5 ชั่วโมงจนเนื้อนุ่ม",
+        "ปิดฝาเคี่ยวในหม้อบนเตาด้วยไฟอ่อน 1.5 ชั่วโมงจนเนื้อนุ่ม"
+      ]
+    ],
+    "notes": [
+      [
+        "ข้อมูลโภชนาการยังไม่แสดงระหว่างตรวจสอบแหล่งข้อมูล",
+        "ข้อมูลโภชนาการยังไม่แสดงระหว่างตรวจสอบแหล่งข้อมูล\n\nวิธีปรุง: เคี่ยวบนเตาในหม้อปิดฝา หลังจากผัดเนื้อให้เหลืองแล้วให้เคี่ยวในหม้อปิดฝาบนเตาด้วยไฟอ่อน 1.5 ชั่วโมง สูตรนี้ไม่มีขั้นตอนอบในเตาอบ"
+      ]
     ]
   },
   "parmesaani-lyttyperunat/en": {

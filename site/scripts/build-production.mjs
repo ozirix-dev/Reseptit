@@ -53,6 +53,25 @@ export function productionBuild(env = process.env) {
       restored = JSON.parse(execFileSync(process.platform === 'win32' ? 'python' : 'python3', args, { env: restoreEnv, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }));
     } catch { throw new Error('Image input verification failed; the standalone restore-image-inputs adapter provides sanitized diagnostics.'); }
     if (restored.status !== 'PASS' || restored.files !== manifest.files.filter(file => file.build).length || typeof restored.imageRoot !== 'string' || !path.isAbsolute(restored.imageRoot) || /[\r\n]/.test(restored.imageRoot)) throw new Error('Image verifier returned an invalid result.');
+    // SHA-pinned Git-tracked recipe WebP overlays are verified separately
+    // after the existing private R2 (or public) source bundle passes.
+    // Explicit/tracked source roots are only read, never mutated.
+    const overlayArgs = [
+      '-B', path.join(site, 'scripts/verified_image_overlay.py'),
+      '--manifest', path.join(repo, 'assets/images.tracked-overlays.json'),
+      '--source-root', tracked,
+      '--image-root', restored.imageRoot,
+      '--mode', (mode === 'explicit' || mode === 'tracked') ? 'verify' : 'apply',
+    ];
+    try {
+      const output = JSON.parse(execFileSync(process.platform === 'win32' ? 'python' : 'python3',
+        overlayArgs, { env: buildEnvironment(restoreEnv, restored.imageRoot), encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }));
+      if (output.status !== 'PASS' || !Number.isInteger(output.verifiedGitOverlays) || output.verifiedGitOverlays < 1)
+        throw new Error('Overlay verifier did not pass');
+      console.log(`Verified ${output.verifiedGitOverlays} SHA-pinned Git image overlay(s).`);
+    } catch {
+      throw new Error('Tracked recipe image overlay verification failed; the original R2 archive was not altered.');
+    }
     console.log(`Verified ${restored.files} production image inputs (mode=${mode}).`);
     // The build itself receives only the verified root, never the reader secret.
     const result = spawnSync(process.execPath, [env.npm_execpath, 'run', 'build'], { cwd: site, env: buildEnvironment(env, restored.imageRoot), stdio: 'inherit' });
