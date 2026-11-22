@@ -127,7 +127,12 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
       ? { fi: "Liedellä hauduttaminen", en: "Stovetop simmering",
           sv: "Sjudning på spis", th: "เคี่ยวบนเตา" }[recipe.locale]
       : undefined;
-    const auditedMethod = nattoMethod ?? goulashMethod;
+    const nasiUdukMethod = recipe.recipeId === "indonesialainen-nasi-uduk-aamiaisella"
+      && recipe.locale === "fi"
+      && isDeepStrictEqual(recipe.cookingMethod, ["keittäminen"])
+      && recipe.notesHtml.includes("Valmistustapa: keittäminen (riisi kookosmaidossa) ja kananmunan höyrykypsennys.")
+      ? "Keittäminen" : undefined;
+    const auditedMethod = nattoMethod ?? goulashMethod ?? nasiUdukMethod;
     check(!recipe.cookingMethod?.length || Boolean(auditedMethod),
       "COOKING_METHOD_SOURCE", "Cooking method must be source-reviewed and visible in the recipe notes");
     const expectedData = JSON.parse(JSON.stringify({
