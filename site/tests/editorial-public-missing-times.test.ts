@@ -394,3 +394,55 @@ test("#327: legacy FI inventories without unnumbered signal remain compatible", 
   assert.match(toMarkdown(report).split("## Lähteen numeroimattomat valmistusohjeet")[1] ?? "",
     /Ei osumia/);
 });
+
+test("#327: source empty and unnumbered FI preparation form exact review partitions", () => {
+  const empty: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [evidence],
+      emptyPreparation: [evidence], unnumberedPreparation: [] },
+  };
+  const report = compareInventories(empty, [recipe(45)]);
+  assert.equal(report.totals.rawEmptyPreparations, 1);
+  assert.equal(report.totals.rawUnnumberedPreparations, 0);
+  assert.deepEqual(report.sourceOnly.emptyPreparation.map(item => item.recipeId), [evidence.recipeId]);
+  const markdown = toMarkdown(report);
+  assert.match(markdown, /## Lähteen puuttuvat tai tyhjät valmistusosiot/);
+  assert.ok(markdown.includes(evidence.sourceSha256));
+});
+
+test("#327: raw preparation partition rejects overlap, missing and unrelated evidence", () => {
+  const both: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [evidence],
+      emptyPreparation: [evidence], unnumberedPreparation: [evidence] },
+  };
+  assert.throws(() => compareInventories(both, [recipe(45)]),
+    /RAW_PREPARATION_PARTITION_DRIFT: aika-puuttuu/);
+  const unclassified: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [evidence],
+      emptyPreparation: [], unnumberedPreparation: [] },
+  };
+  assert.throws(() => compareInventories(unclassified, [recipe(45)]),
+    /RAW_PREPARATION_PARTITION_DRIFT: aika-puuttuu/);
+  const unrelated: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [],
+      emptyPreparation: [evidence], unnumberedPreparation: [] },
+  };
+  assert.throws(() => compareInventories(unrelated, [recipe(45)]),
+    /RAW_PREPARATION_PARTITION_DRIFT: aika-puuttuu/);
+  const stale: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [evidence],
+      emptyPreparation: [{ ...evidence, path: "wrong.md" }], unnumberedPreparation: [] },
+  };
+  assert.throws(() => compareInventories(stale, [recipe(45)]),
+    /RAW_SIGNAL_SOURCE_DRIFT: emptyPreparation:aika-puuttuu/);
+});
+
+test("#327: legacy inventories can omit new empty-preparation classification", () => {
+  const report = compareInventories(raw, [recipe(45)]);
+  assert.equal(report.totals.rawEmptyPreparations, 0);
+  assert.deepEqual(report.sourceOnly.emptyPreparation, []);
+});
