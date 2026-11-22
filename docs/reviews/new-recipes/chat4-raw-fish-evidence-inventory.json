@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "review_type": "chat4_editorial_inventory_not_publication_approval",
+  "review_date": "2026-11-22",
+  "base_commit": "f9de3630d6e0e770156d0edb80ee6f0d217298ad",
+  "publication_authorized": false,
+  "semantic_approval_granted": false,
+  "production_test_performed": false,
+  "manufacturer_letter_required_by_default": false,
+  "recipe_ids": [
+    "graavisiika-tillilla",
+    "muikunmati-rieskarullat"
+  ],
+  "files": {
+    "reseptit/alkuruoat/graavisiika-tillilla.md": {
+      "git_blob_sha1": "78d6738067026231b387f89fe630eaa904d45fab",
+      "expected_status": "draft"
+    },
+    "kaannokset/en/alkuruoat/graavisiika-tillilla.md": {
+      "git_blob_sha1": "6610c43d76b0a75fee2ced00e6eb5846a4adc6f9",
+      "expected_status": "draft"
+    },
+    "kaannokset/sv/alkuruoat/graavisiika-tillilla.md": {
+      "git_blob_sha1": "01d2ba83c259965dcdf4fd0fce2ffe742006df0f",
+      "expected_status": "draft"
+    },
+    "kaannokset/th/alkuruoat/graavisiika-tillilla.md": {
+      "git_blob_sha1": "230dfa072e32bf173e3897ddd99c4475c4f18ca6",
+      "expected_status": "draft"
+    },
+    "reseptit/alkuruoat/muikunmati-rieskarullat.md": {
+      "git_blob_sha1": "21982ecbd728ab2a7fef7826a26a98653360f515",
+      "expected_status": "draft"
+    },
+    "kaannokset/en/alkuruoat/muikunmati-rieskarullat.md": {
+      "git_blob_sha1": "e1a16c99eb95cc46bc90a0e735cc371ea8be0801",
+      "expected_status": "draft"
+    },
+    "kaannokset/sv/alkuruoat/muikunmati-rieskarullat.md": {
+      "git_blob_sha1": "0eb19456da1f05ee0a63466600caa126f650afbf",
+      "expected_status": "draft"
+    },
+    "kaannokset/th/alkuruoat/muikunmati-rieskarullat.md": {
+      "git_blob_sha1": "01483446383f982e09f1fe0d0718d24a6596014d",
+      "expected_status": "draft"
+    }
+  },
+  "open_gates": [
+    "Independent ingredient yield and preparation assessment for both recipes",
+    "Current authority guidance verification and cold-chain instructions in final copy",
+    "Independent semantic approval and canonical source/translation SHA registry for six translations",
+    "Nutrition and GK evidence if required by publication policy",
+    "Image/editorial and final publication gates"
+  ]
+}
