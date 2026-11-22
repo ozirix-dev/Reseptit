@@ -11,7 +11,16 @@ Perinteisen tekniikan lähteet (taustalähteitä, **ei** väitettä ravintolan o
 - [Michelin Guide – R-HAANin mango sticky rice](https://guide.michelin.com/en/article/dining-in/how-to-make-mango-sticky-rice-like-michelin-star-restaurant-r-haan): glutinous rice, liotus, höyrytys, kookosseos sekä kypsän mangon merkitys; yhden valmistajan työvaiheajat eivät ole yleispäteviä kaikelle riisille
 - [THAM Bangkok – oma kotikeittiösovitus](https://www.thamstreetfood.com/journal/mango-sticky-rice-at-home/): erillinen kookoskastike, kypsän riisin tunnusmerkit ja viiveetön tarjoilu
 
-Lähteiden yksittäisiä ohjeita ei kopioida. Alla oleva grammoitettu neljän annoksen sovitus on uusi toimituksellinen prototyyppi; sen saantoa, koostumusta tai ravintoarvioita ei ole vielä fyysisesti koekeitetty.
+Lähteiden yksittäisiä ohjeita ei kopioida. Alla oleva grammoitettu neljän annoksen sovitus on Recipavon oma toimituksellinen prototyyppi; **Recipavo ei väitä valmistaneensa tai maistaneensa annosta**. Valmistuskelpoisuutta voi arvioida tunnistettujen kokkien dokumentoitujen ohjeiden pohjalta ilman omaa koekeittiötä, kun annoksen sovitukset ja turvallisuusrajat merkitään rehellisesti.
+
+## 23.11.2026 – kirjallisten valmistuslähteiden lisävarmennus (ei omaa koekeittiötä)
+
+- **Pailin Chongchitnant, [Hot Thai Kitchen / Mango Sticky Rice](https://hot-thai-kitchen.com/mango-sticky-rice/):** julkaistu reseptikortti kuudelle annokselle. Thaimaalaisen valkoisen glutiiniriisin liotus vähintään 4 tuntia, höyrytys **20–25 minuuttia** noin yhden kupin erälle, kunnes jyvät ovat kauttaaltaan kypsiä. Riisin kookosseos ja erillinen suolainen kastike tehdään erikseen. Kuorituille halkaistuille mungpavuille on kuvattu **kuumavesikäsittely (juuri poreilevaksi kuumentaminen, pois lämmöltä, kannen alla 10 min), valutuksen ja kuivauksen jälkeinen pannupaahto**. Tämä on nimetyn kokin julkaistu valmistusmenetelmä, ei väite tämän Recipavo-sovituksen omasta kokeesta.
+- **[Michelin Guide / Chumpol Jangprai, R-HAAN](https://guide.michelin.com/my/en/article/dining-in/how-to-make-mango-sticky-rice-like-michelin-star-restaurant-r-haan):** eri reseptissä **250 g glutiiniriisiä höyrytetään noin 60 minuuttia** ja imeytetään kookosseos. Ero Hot Thai Kitchenin 20–25 minuuttiin osoittaa, että höyrytyksen aika sidotaan välineeseen, riisiin ja kypsyystarkistukseen; Michelin-aikaa ei siirretä automaattisesti tähän 200 g:n versioon.
+- **[THAM Bangkok / Mango Sticky Rice at Home](https://thamstreetfood.com/journal/mango-sticky-rice-at-home/):** 200 g glutiiniriisin, 300 ml kookosmaidon ja 60 g sokerin neljän annoksen **kotikeittiösovitus** käyttää vähintään neljän tunnin liotusta ja noin 20–30 minuutin höyrytystä. Sivusto sanoo erikseen, ettei kotisovitus ole koekeittiössä testattu; sitä käytetään annossuhteiden tukena, ei riippumattomana koetodisteena.
+- **[UK Food Standards Agency / riisin käsittely](https://www.food.gov.uk/print/pdf/node/4286):** kypsä riisi jäähdytetään nopeasti, mieluiten tunnissa, jääkaappisäilytys korkeintaan 24 tuntia ja uudelleenlämmitys vain kerran läpikotaisin höyryävän kuumaksi. Tämä koskee myös makeaa kookosriisiä.
+
+**Lähdetulkinta:** 25–35 minuutin höyrytysarvio ja juuri nämä grammamäärät ovat Recipavon toimituksellisia sovituksia lähdeperheen sisällä. Kypsyys (`ei kovaa keskustaa`) määrää lopetuksen; kellonaika on ohjeellinen. Nimetty julkaistu lähde tukee menetelmää, mutta ei osoita juuri tätä annosta Recipavon itse valmistamaksi. Projektin nykyinen `AGENTS.md` nimenomaisesti kieltää asettamasta omaa fyysistä koetta yleiseksi julkaisuehdoksi. **Ratkaisematon olennainen lähde-/turvallisuuspoikkeama on silti HOLD**, vaikka koekeittiötä ei vaadita.
 
 ## Duplikaatti-/varianttipäätös
 
@@ -45,16 +54,16 @@ Tässä ehdotuksessa käytetään **thaimaalaista glutiini-/tahmariisiä**, jonk
 2. Höyrytä riisi puhtaalla, höyryä läpäisevällä kankaalla vuoratussa korissa kiehuvan veden yläpuolella noin **25–35 minuuttia**. Tarkista, että jyvät ovat kauttaaltaan kypsiä ja sitkeitä, eivät keskeltä kovia. Lisää höyryttimen vesi tarvittaessa **höyryttimeen**, älä riisiannokseen.
 3. Lämmitä 180 g kookosmaitoa, 60 g sokeria ja 2 g suolaa sekoittaen, kunnes sokeri liukenee. Älä haihduta huomattavaa osaa massasta. Siirrä juuri höyrytetty kuuma riisi kulhoon ja lisää kuuma kookosseos. Sekoita, peitä ja anna imeytyä noin 20 minuuttia. Kääntele varovasti ja anna levätä noin 15–20 minuuttia lisää. Varmista, ettei erillistä imeytymätöntä lammikkoa jää.
 4. Sekoita 5 g riisijauhoa 20 g:aan kylmää vettä. Kuumenna seos 100 g:n kookosmaidon ja 1 g:n suolan kanssa koko ajan sekoittaen, kunnes se juuri sakenee tasaiseksi kastikkeeksi. Keitä riittävästi riisijauhon kypsymiseksi; jaa koko kastike neljään annokseen.
-5. Punnitse 500 g kuorittua, kivetöntä kypsää mangoa. Leikkaa puhtaalla veitsellä ohuiksi viipaleiksi. Käsittele 12 g kuivia kuorittuja halkaistuja mungpapuja valmistajan turvallisen esikäsittelyohjeen mukaan ja paahda rapeiksi; älä oleta raakaa kuivapapua sellaisenaan syötäväksi.
+5. Punnitse 500 g kuorittua, kivetöntä kypsää mangoa. Leikkaa puhtaalla veitsellä ohuiksi viipaleiksi. Valitse kuorittuja halkaistuja keltaisia mungpapuja. Huuhtele 12 g kuivia papuja, kuumenna ne runsaassa vedessä juuri poreilevaksi, nosta pois lämmöltä ja anna hautua kannen alla 10 minuuttia. Valuta, huuhtele ja kuivaa, sitten paahda kevyesti rasvatulla pannulla sekoittaen rapeiksi ja vaalean kullanruskeiksi Hot Thai Kitchenin julkaistun menetelmän mukaan. Jos pakkauksessa vaaditaan tätä pidempi kuumennus, noudata tuotteen ohjetta; älä tarjoa raakoja papuja.
 6. Jaa riisi, mango, kastike ja mungpavut täsmälleen neljään annokseen. **Perinteinen esillepano:** riisikeko ja mangoviuhka vierekkäin, kastike pinnalle. **Premium-esillepano:** kevyt riisimuotti ja viuhkan muotoon asetetut mangoviipaleet; sama tarkka ainesmassa, ei uusia pallomaisia tai kukkakoristeita. Tarjoile pian valmistamisen jälkeen.
 
-**Aikamerkintä:** aktiiviaika alustavasti 45–65 min + vähintään 4 h liotus + imeytymis-/lepoajat, osa vaiheista rinnakkain. Tarkka `time_total_min` sekä valmis annospaino tarkistetaan tuotekohtaisesti; tässä ei merkitä automaattista `published`-aikakenttää.
+**Aikamerkintä:** lähdevertailun perusteella vähintään 4 h liotus, ohjeellinen 25–35 min höyrytys ja 35–40 min imeytymis-/lepoaika; valmistelutyöt voivat olla rinnakkaisia. Alustava aktiiviaika 45–65 min on vain toimituksellinen arvio. Julkaisuun merkitään aika vasta, kun työvaiheiden päällekkäisyys ja annosohje on katselmoitu; oma koekeittiöajanmittaus ei ole yleinen ennakkoehto.
 
 **Turvallisuus:** käytä kypsää, huuhdeltua mangoa; erillisen kastikkeen riisijauho kypsennetään. Kypsä riisi voi aiheuttaa Bacillus cereus -riskin, jos sitä säilytetään lämpimässä pitkään: tarjoile tuoreena tai jäähdytä nopeasti jääkaappiin asianmukaisissa olosuhteissa ja noudata luotettavaa säilytysohjetta. Älä säilytä tarjoiluriisiä tuntikausia huoneenlämmössä. Kookosallergian/ruoka-aineyliherkkyyden käsittely pitää nimetä tarvittaessa ilman perusteettomia luokituksia.
 
 ## Ravinto- ja GI/GK-portti
 
-**Kaikki neljä makroa ja GK: `null` / ei määritetty.** Emme johda numeroita aiemmasta jasmiiniriisiversiosta. Laskenta vaatii valitun glutiiniriisin, kookosmaidon, mangon syötävän osan, riisijauhon ja mungpapujen täsmäkoostumuksen sekä imeytyneen kastikkeen ja syödyn osuuden varmentamisen.
+**Kaikki neljä makroa ja GK: `null` / ei määritetty.** Emme johda numeroita aiemmasta jasmiiniriisiversiosta. Laskenta vaatii valitun glutiiniriisin, kookosmaidon, mangon syötävän osan, riisijauhon ja mungpapujen täsmäkoostumuksen sekä syötävän osuuden dokumentoinnin. **Ainesosien punnitut raakamäärät ja neljän annoksen jako riittävät syöttöpohjaksi**, kun kaikki luetellut osat todella tarjotaan ja katsotaan syötäviksi eikä kiehutus-/astiavikille keksitä vähennyksiä. Valmiin riisin vesisaanto on hyödyllinen laadun mittari, muttei itsessään ainesosien hiilihydraattimäärä; lähde- ja hyväksyntäportteja se ei korvaa.
 
 Alustavat tieteelliset GI-viitteet, **vain tutkimusjonoon**:
 - [Am J Clin Nutr:n kansainvälinen GI-taulukko (2002)](https://ajcn.nutrition.org/article/S0002-9165%2823%2905840-9/fulltext): yksittäinen thaimaalainen riisinkeittimessä keitetyn valkoisen glutiiniriisin havainto GI **98 ± 7**, ei mittaa tätä höyrytettyä kookosriisi-mangojälkiruokaa.
@@ -66,7 +75,7 @@ Alustavat tieteelliset GI-viitteet, **vain tutkimusjonoon**:
 ## Ehdot ennen uutta resepti-PR:ää ja julkaisua
 
 - [ ] Alkuperäinen Facebook-videolähde avataan luotettavasti tai kirjataan pysyvästi vain visuaaliseksi inspiraatioksi. Vahvistamattomia koristeita ei kirjata sen alkuperäiseksi reseptiksi.
-- [ ] Kirjallisen koemenetelmän riippumaton kulinaarinen tarkistus, mungpapujen turvallinen valmistus ja kypsennetyn riisin saanto; fyysistä koekeittiötä ei väitetä tehdyksi.
+- [ ] Kirjallisen koemenetelmän lähteisiin sidottu riippumaton kulinaarinen tarkistus: höyrytyksen kypsyyskriteeri, kookosimeytyksen määrät, mungpapujen turvallinen valmistus ja riisin jäähdytys. **Oma fyysinen koekeittiökoe tai valmiin riisin erillinen saantopunnitus ei ole pakollinen**, jos menetelmä ja syötävät määrät voidaan muuten perustella.
 - [ ] Nykyisen jasmiiniriisiversion duplikaattitarkistus; päätös omasta `jalkiruoka`-identiteetistä.
 - [ ] Tuotetunnistetut lähdepainot ja neljän makron Fineli/AFCD-laskenta tai eksplisiittinen ravinto-HOLD; GK erillinen ja mahdollisesti korkea.
 - [ ] Neljä kieltä vasta päätösten ja FI-lähde-SHA:n jälkeen; erillinen oma kuva vain hyväksytystä annossommittelusta, ei kopioitu Reel-kuva.
@@ -74,13 +83,17 @@ Alustavat tieteelliset GI-viitteet, **vain tutkimusjonoon**:
 
 **Päätös:** yksi erillinen glutiiniriisistä tehtävä jälkiruokaresepti on *sisällöllisesti mahdollinen*, mutta vaihe on edelleen **RESEARCH / SOURCE-HOLD**, ei reseptin julkaisuhyväksyntä.
 
-## Käytännön hyväksyntämittaukset (Chat 5, 22.11.2026)
+## Vapaaehtoinen lisävarmennus ja vielä todelliset julkaisuesteet (Chat 5, 23.11.2026)
 
-Tämä on **mittausohje**, ei tehty koekeittiö, uusi ravintolaskelma tai lupaus julkaisuvalmiudesta. Tarkoitus on saada yksi toistettavissa oleva päätös ilman arvattuja aikoja tai annospainoja.
+**Lisäkoe on valinnainen, ei ennakkoon vaadittu.** Jos joku valmistaa tämän täsmäversion, voi mitata 200 g:n kuivan riisin liotus-, höyrytys- ja imeytymissaannot, kastikkeen hävikin sekä neljä valmista annosta. Mitatut tulokset merkitään selvästi erilleen alkuperäisistä reseptilähteistä. Yhtään tällaista omaa koetta ei ole tässä tehty.
 
-1. **Riisin raaka-aine ja saanto:** kirjaa käytetyn glutiiniriisin tuotteen nimi ja kuivan riisin 200 g. Punnitse riisi liotuksen ja valutuksen jälkeen, heti höyrytyksen jälkeen sekä kookosseoksen imeydyttyä. Merkitse erikseen mahdollinen astiaan jäänyt imeytymätön kookosseos; sitä ei saa laskea automaattisesti syödyksi.
-2. **Kastike, mango ja mungpapu:** kirjaa valmiin kastikkeen massa ja mahdollinen astiaan jäänyt osuus; punnitse mangon syötävä osuus 500 g. Kirjaa mungpapujen tarkka tuotetyyppi, valmistajan käsittelyohje ja käytännössä tehty kypsennys ennen paahtamista. Ilman turvallisen käsittelyn näyttöä mungpapulisuke ja tämän prototyypin julkaisu pysyvät HOLDissa.
-3. **Aika ja neljä annosta:** kirjaa liotuksen alkamis-/päättymisaika sekä höyrytyksen, imeytymisen, kastikkeen ja koko valmistuksen todelliset aloitus-/lopetusajat; päällekkäisiä vaiheita ei summata kahdesti. Punnitse valmis koko erä ja kunkin neljän annoksen riisi, kastike, mango ja mungpapu erikseen.
-4. **Hyväksyminen:** vertaa kirjatut saannot käytettyihin tuotteisiin ja reseptitekstiin. Jos kookosseos ei imeydy, riisi jää kovaksi, lisukkeen turvallinen kypsennys ei toteudu tai neljä annosta eivät vastaa kirjattuja määriä, päivitä koemenetelmä ja testaa uudelleen **ennen** ravinto-, käännös-, kuva- tai GK-porttia. GK jää määrittämättä, ellei reseptiin soveltuva lähde ja erillinen hyväksyntä täyty.
+Julkaiseminen ei tarvitse kokeellista kypsyneen riisin massalukua silloin, kun punnittu kuiva riisi, kaikki muut raaka-aineet, kypsyyskriteeri ja tarjoiltu osuus ovat riittävän tarkkoja. Samoin julkaistun lähdereseptin käyttö ei anna lupaa väittää erilaisten määrien olevan juuri sillä valmistajalla testattuja.
 
-**Luovutuskriteeri:** kirjattu tuote- ja massa-/aikamittaus sekä kulinaarinen riippumaton katselmointi; ilman näitä tämä PR pysyy SOURCE-HOLDina. Mitään valmistajan tuotekirjettä ei oletusarvoisesti vaadita, jos tuotteen pakkaus- ja viranomaistiedot antavat riittävän varmennuksen.
+**Avoimet varsinaiset portit:**
+1. Riisi-, kookosmaito- ja mungpaputuotteiden täsmälliset, toistettavat ainesosa- ja käsittelytiedot tai vastaavat soveltuvat viranomais-/koostumuslähteet; jos pakkaus vaatii pidempää papujen kuumennusta, sovita ohje ja tarkista kulinaarisesti.
+2. Oman neljän annoksen toimituksellisen sovituksen ja olemassa olevan jasmiiniriisireseptin riippumaton sisällöllinen vertailu/duplikaattipäätös. `time_total_min` johdetaan lähdeperusteisesti ilman kuvitteellista kellotettua keittiökoetta.
+3. Neljän makron lähdeperusteinen laskenta **tai rehellinen määrittämätön ravintotila** kyseisen julkaisupolun porttien mukaisesti. Lähde- tai tuote-epävarmuutta ei täytetä arvauksella.
+4. GI/GK hyväksytään erillisessä ketjussa; alkuperäisen jasmiiniriisin tuloksia ei peritä. Tämän uuden annoksen GK saa pysyä `ei määritetty`.
+5. FI-sisällön omistajapäätös, mahdollisten EN/SV/TH-käännösten lähdesidokset, uusi oikeuksia kunnioittava kuva ja täsmä-HEAD CI ennen julkaisua.
+
+**Luovutuspäätös:** julkaisematon tutkimusprototyyppi ja julkaistuihin ohjeisiin sidottu valmistusnäyttö ovat valmiit jatkokatselmointiin; **ei** vielä reseptin julkaisu-, ravinto-/GK- tai merge-hyväksyntää. Koekeittiön puuttuminen ei yksin pidä tutkimusta HOLDissa; yllä nimetyt aidot portit käsitellään erikseen. Uutta erillistä resepti-PR:ää ei avata ennen omistajan sisällöllistä päätöstä.
