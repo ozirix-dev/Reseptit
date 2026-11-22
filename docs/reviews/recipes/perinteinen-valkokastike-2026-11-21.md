@@ -16,3 +16,7 @@ Aiemmassa AI-kuvassa oli reseptiin kuulumatonta vihreää ruohosipulia. Chat 3 k
 Sisältää **maitoa ja vehnää**. Sekoita kastiketta koko kuumennuksen ajan ja varmista, että jauhot kypsyvät eivätkä jää paakuiksi.
 
 Perustana Ruokaviraston allergeeniluettelo: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit . Etikettien ja säilytyksen arviointia jatketaan. FI/EN/SV/TH päivitetty; ei julkaisuhyväksyntää.
+
+## Parempilaatuinen uusi havainnekuva, 22.11.2026
+
+Aiemmin kuvaan liittynyt pakkauslaadun QUALITY_HOLD poistui rajatussa suorassa katselmoinnissa, kun GitHubin tiedosto vaihdettiin 43 930 tavun 960×640 WebP:ksi. Nykyinen kuva SHA-256 `792ebe46aebc4ea49ce7865edc7a7502e73e2882c518fb75b10ed430c35d1b58` vastaa edelleen sileää yrtitöntä valkokastiketta. Kuva on tekoälykuvitus; varsinaiset julkaisun sisältö-, lähde-, kieli- ja ImageAssets-hyväksynnät pysyvät avoimina. Historiallisen 6 942 tavun kuvan SHA yllä ei enää ole nykyinen.

@@ -33,3 +33,10 @@ Tämä on reseptilähteiden **sisällön eheystarkistus**, ei `nutrition_input_h
 ## Korvaus 22.11.2026 – Chat 3
 
 Aiempi `perinteinen-valkokastike.webp` (SHA-256 `f63621c81f1e765399a9b198d72a3c1bc9ec0cf4aa8b876e851a2be16490ea78`) on korvattu samalla polulla uudella AI-havainnekuvalla sileästä valkoisesta maitokastikkeesta valkoisessa kastikekannussa. Yrtit ja vihreät pilkut ovat poissa. Korvaavan kuvan mitat 960 × 640, koko **6 942 tavua**, SHA-256 `612027ba5e5b482ce1540b9ad717875b612f0ada062fff7c40a8d6f2dc9d6b0e`. Uusi kuva on vahvasti pakattu WebP-havainnekuva; mahdollinen pakkauslaadun parannus kuuluu erilliseen kuvan laatukatselmointiin. Neljän kielen alt-tekstit ja kuvan metatiedot on synkronoitu, mutta lopullinen kuvan julkaisu- ja laatuhyväksyntä on **avoin**. `status: draft` ja `decision: hold` pysyvät.
+
+## Uudelleenpakattu valkokastikkeen kuva – Chat 3, 22.11.2026
+
+- Aiemman kuvasisällöllisesti oikean mutta liian pikselöityneen 6 942 tavun WebP:n tilalle tuotiin täsmälleen alkuperäisinä tavuina uusi **43 930 tavun**, **960 × 640** WebP samaan polkuun `kuvat/alkuruoat/perinteinen-valkokastike.webp`.
+- Uusi SHA-256: `792ebe46aebc4ea49ce7865edc7a7502e73e2882c518fb75b10ed430c35d1b58`; Git-blob: `28e55cac5e014c683dd0f3c8f29fa4436271258d`. Varmennetun paikallisen tiedoston ja GitHubiin siirretyn Git-blobin tiivisteet täsmäävät. Kuvan tallennussijainti ja `image.src` FI/EN/SV/TH pysyvät ennallaan.
+- Chat 3:n suora kuvasisällön ja näkyvän laatueron tarkistus: **PRELIMINARY_VISUAL_QUALITY_OK**. Sileä, vaalea maitokastike valkoisessa kastikekannussa; vihreitä yrttejä tai paakkuja ei näy. Ei väitettä valokuvamaisesta koekeittiötestistä.
+- Kuvan lopullinen toimituksellinen, käyttöoikeus-/ImageAssets- ja julkaisuportin hyväksyntä ei valmistunut. Kaikki 10 reseptiä ja PR #808 edelleen **Draft/HOLD**. Vanhat SHA:t raportissa ovat historiallisen kuvan dokumentointia, eivät tämänhetkistä manifestia.
