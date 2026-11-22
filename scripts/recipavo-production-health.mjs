@@ -10,10 +10,10 @@ export const ROUTES = Object.freeze([
   {path:'/th/recipes/',lang:'th'},
 ]);
 const REVISION = /^[0-9a-f]{40}$/;
-const ATTR = name => new RegExp(`(?:^|\\s)${name}\\s*=\\s*(?:"([^"]*)"|'([^']*)')`, 'i');
+const ATTR = name => new RegExp(`(?:^|\\s)${name}\\s*=\\s*(?:"([^"]*)"|'([^']*)'|([^\\s"'=<>]+))`, 'i');
 const tagAttribute = (tag, name) => {
   const match = tag.match(ATTR(name));
-  return match ? (match[1] ?? match[2]) : null;
+  return match ? (match[1] ?? match[2] ?? match[3]) : null;
 };
 const tags = (html, type) => [...html.matchAll(new RegExp(`<${type}\\b[^>]*>`, 'gi'))].map(x => x[0]);
 const required = (test, reason) => { if (!test) throw new Error('PRODUCTION HEALTH FAIL: '+reason); };
@@ -23,9 +23,16 @@ const JAVASCRIPT_MIME = /^(?:application\/(?:x-)?(?:ecmascript|javascript)|text\
 
 function homeEntryPath(html) {
   const document = html.replace(/<!--[\s\S]*?-->/g, '');
-  const scripts = document.matchAll(/<(script|template|noscript|style|textarea|title)\b([^>]*)>([\s\S]*?)<\/\1\s*>/gi);
+  const elements = document.matchAll(
+    /<(script|template|noscript|style|textarea|title)\b([^>]*)>([\s\S]*?)<\/\1\s*>|<base\b([^>]*)>/gi,
+  );
+  let baseHref;
   const entries = [];
-  for (const [, element, attributes, content] of scripts) {
+  for (const [, element, attributes, content, baseAttributes] of elements) {
+    if (baseAttributes !== undefined) {
+      baseHref ??= tagAttribute(baseAttributes, 'href') ?? undefined;
+      continue;
+    }
     if (element.toLowerCase() !== 'script' || tagAttribute(attributes, 'type')?.toLowerCase() !== 'module') continue;
     const src = tagAttribute(attributes, 'src');
     if (src !== null) {
@@ -36,6 +43,12 @@ function homeEntryPath(html) {
     for (const [, entry] of content.matchAll(/const importEntry = \(\) => \{ void import\("([^"]+)"\); \};/g)) {
       entries.push(entry);
     }
+  }
+  // A root-relative entry still resolves against the document base in the browser.
+  if (baseHref !== undefined) {
+    const base = URL.parse(baseHref, ORIGIN);
+    required(!baseHref.includes('&') && base?.origin === ORIGIN,
+      'JavaScript entry base must use the Recipavo origin');
   }
   const assets = entries.filter(entry => ENTRY_PATH.test(entry));
   required(assets.length === 1, 'expected exactly one hashed JavaScript entry');

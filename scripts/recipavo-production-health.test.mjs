@@ -132,6 +132,25 @@ test('hashed JS entry rejects a successful HTML fallback',async()=>{
   await expectBroken(entry,{...good.get(entry),headers:{'content-type':'text/html'}},
     /must have a JavaScript content type/);
 });
+test('entry rejects a missing reference and a non-Vite JavaScript path',async()=>{
+  const home=good.get('/');
+  for (const body of [
+    home.body.replace(/<script\b[^>]*><\/script>/,''),
+    home.body.replace(entry,'/assets/other-DnBXLazI.js'),
+  ]) {
+    await expectBroken('/',{...home,body},/expected exactly one hashed JavaScript entry/);
+  }
+});
+test('a document base cannot redirect the entry to another origin',async()=>{
+  const home=homeWithBootstrap();
+  const withBase=(href)=>({...home,body:home.body.replace('<head>','<head><base href='+href+'>')});
+  await expectBroken('/',withBase('https://example.com/'),/JavaScript entry base must use the Recipavo origin/);
+  assert.equal((await probeProduction({fetcher:fake({'/':withBase('"/recipes/"')})})).status,'PASS');
+});
+test('hashed JS entry rejects an incorrect non-HTML MIME type',async()=>{
+  await expectBroken(entry,{...good.get(entry),headers:{'content-type':'text/plain'}},
+    /must have a JavaScript content type/);
+});
 test('network error fails closed; workflow has no deployment or secret access',async()=>{
   await assert.rejects(()=>probeProduction({fetcher:async()=>{throw Error('network down')}}),
     /network request failed/);
