@@ -1487,7 +1487,9 @@ test("published keto bun page includes its content and omitted amounts remain om
   const html = await readFile(path.join(dist, "keto-kauralesesampylat", "index.html"), "utf8");
   assert.match(html, /<h1>Keto-kauralesesämpylät<\/h1>/);
   assert.match(html, /seesaminsiemeniä/);
-  assert.match(html, /halutessasi pinnalle/);
+  assert.match(html, /yhteensä 8 g seesaminsiemeniä/);
+  assert.match(html, /Jos jätät seesamin pois, ilmoitetut ravintoarvot eivät enää vastaa/);
+  assert.doesNotMatch(html, /halutessasi pinnalle/);
   assert.match(html, /Psyllium sitoo pehmeää taikinaa/);
   assert.doesNotMatch(html, /raakileiden raejuustopohja/);
   assert.match(html, new RegExp(String.raw`src="${buildOriginPattern}/kuvat\/leivonnaiset\/keto-kauralesesampylat\.webp"`));
