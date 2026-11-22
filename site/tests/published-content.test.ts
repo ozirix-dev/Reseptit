@@ -80,7 +80,6 @@ test("the ten additional Thai recipes are published in Finnish with their image 
   assert.deepEqual(recipes.map((recipe) => recipe.recipeId).sort(), expectedIds);
   assert.equal(recipes.length, 10);
 
-  const repoDir = path.resolve(import.meta.dirname, "../..");
   for (const recipe of recipes) {
     assert.equal(recipe.locale, "fi");
     assert.ok(recipe.tags.includes("thaimaalainen"), `${recipe.recipeId} has the Thai tag`);
@@ -339,7 +338,6 @@ test("the 40 recipe cards are unique and show their reviewed image bindings", as
     ["kana-yakitori-kaalilla", 9.16],
     ["kanapyorykat-tomaattikastike", 4.94],
   ]);
-  const repoDir = path.resolve(import.meta.dirname, "../..");
   for (const recipe of recipes) {
     assert.equal(recipe.locale, "fi");
     if (recipe.image) {
@@ -379,7 +377,6 @@ test("the twenty Indian recipes are published in Finnish with their image assets
   assert.deepEqual(recipes.map((recipe) => recipe.recipeId).sort(), expectedIds);
   assert.equal(recipes.length, 20);
 
-  const repoDir = path.resolve(import.meta.dirname, "../..");
   for (const recipe of recipes) {
     assert.equal(recipe.locale, "fi");
     assert.ok(recipe.tags.includes("intialainen"), `${recipe.recipeId} has the Indian tag`);
@@ -685,7 +682,6 @@ test("the twenty Chinese recipes are published in Finnish with their image asset
   assert.deepEqual(recipes.map((recipe) => recipe.recipeId).sort(), expectedIds);
   assert.equal(recipes.length, 20);
 
-  const repoDir = path.resolve(import.meta.dirname, "../..");
   for (const recipe of recipes) {
     assert.equal(recipe.locale, "fi");
     assert.ok(recipe.tags.includes("kiinalainen"), `${recipe.recipeId} has the Chinese tag`);
@@ -707,7 +703,6 @@ test("the twenty Mediterranean recipes are published in Finnish with their image
   assert.deepEqual(recipes.map((recipe) => recipe.recipeId).sort(), expectedIds);
   assert.equal(recipes.length, 20);
 
-  const repoDir = path.resolve(import.meta.dirname, "../..");
   for (const recipe of recipes) {
     assert.equal(recipe.locale, "fi");
     assert.ok(recipe.tags.includes("valimerellinen"), `${recipe.recipeId} has the Mediterranean tag`);
@@ -731,7 +726,6 @@ test("the regional recipe additions are published in Finnish, categorized, and i
   const recipes = siteContent.recipes.filter(recipe => recipe.locale === "fi" && expected.has(recipe.recipeId));
   assert.equal(recipes.length, expected.size);
 
-  const repoDir = path.resolve(import.meta.dirname, "../..");
   for (const recipe of recipes) {
     assert.ok(recipe.image, `${recipe.recipeId} has an image`);
     assert.ok(recipe.ingredients.length > 0, `${recipe.recipeId} has structured ingredients`);
