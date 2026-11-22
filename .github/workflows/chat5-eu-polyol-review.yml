@@ -5,6 +5,7 @@ on:
     paths:
       - "site/scripts/nutrition-model.ts"
       - "site/tests/nutrition-model.test.ts"
+      - "site/scripts/eu-polyol-impact-audit.ts"
       - ".github/workflows/chat5-eu-polyol-review.yml"
   workflow_dispatch:
 
