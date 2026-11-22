@@ -214,7 +214,7 @@ test("source-independent mass bounds do NOT justify macro publication", () => {
   assert.equal(massOnlyTotal.netCarbohydrate, 1.275);
   assert.equal(massOnlyTotal.protein, 1.275);
   assert.equal(massOnlyTotal.fat, 1.275);
-  assert.equal(massOnlyTotal.kcal, 11.475);
+  assert.ok(Math.abs(massOnlyTotal.kcal - 11.475) < 1e-10);
   assert.ok(massOnlyTotal.totalCarbohydrate > allowedOmissionErrorPerServing.totalCarbohydrate);
   assert.ok(massOnlyTotal.kcal > allowedOmissionErrorPerServing.kcal);
 
