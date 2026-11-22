@@ -336,3 +336,61 @@ test("#327: raw/public missing preparation agreement and invalid evidence", () =
   assert.throws(() => compareInventories(drift, [projected]),
     /RAW_SIGNAL_SOURCE_DRIFT: missingPreparation:aika-puuttuu/);
 });
+
+test("#327: unnumbered FI preparation is a reviewed subset of raw missing numbered steps", () => {
+  const source: RawInventory = {
+    ...raw,
+    signals: {
+      ...raw.signals,
+      missingPreparation: [evidence],
+      unnumberedPreparation: [evidence],
+    },
+  };
+  const report = compareInventories(source, [recipe(45)]);
+  assert.equal(report.totals.rawMissingPreparations, 1);
+  assert.equal(report.totals.rawUnnumberedPreparations, 1);
+  assert.deepEqual(report.sourceOnly.unnumberedPreparation.map(item => item.recipeId),
+    [evidence.recipeId]);
+  const markdown = toMarkdown(report);
+  assert.match(markdown, /## Lähteen numeroimattomat valmistusohjeet/);
+  assert.ok(markdown.includes(evidence.path));
+  assert.ok(markdown.includes(evidence.sourceSha256));
+  assert.ok(markdown.includes("| Valmistus on tekstinä ilman tunnistettua numerointia | 1 |"));
+});
+
+test("#327: unnumbered FI method evidence rejects orphan, drift and duplicate", () => {
+  const source: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [], unnumberedPreparation: [evidence] },
+  };
+  assert.throws(() => compareInventories(source, [recipe(45)]),
+    /UNNUMBERED_RAW_PREPARATION_DRIFT: aika-puuttuu/);
+  const stale: RawInventory = {
+    ...raw,
+    signals: {
+      ...raw.signals,
+      missingPreparation: [evidence],
+      unnumberedPreparation: [{ ...evidence, sourceSha256: "b".repeat(64) }],
+    },
+  };
+  assert.throws(() => compareInventories(stale, [recipe(45)]),
+    /RAW_SIGNAL_SOURCE_DRIFT: unnumberedPreparation:aika-puuttuu/);
+  const duplicate: RawInventory = {
+    ...raw,
+    signals: {
+      ...raw.signals,
+      missingPreparation: [evidence],
+      unnumberedPreparation: [evidence, evidence],
+    },
+  };
+  assert.throws(() => compareInventories(duplicate, [recipe(45)]),
+    /DUPLICATE_RAW_SIGNAL: unnumberedPreparation:aika-puuttuu/);
+});
+
+test("#327: legacy FI inventories without unnumbered signal remain compatible", () => {
+  const report = compareInventories(raw, [recipe(45)]);
+  assert.equal(report.totals.rawUnnumberedPreparations, 0);
+  assert.deepEqual(report.sourceOnly.unnumberedPreparation, []);
+  assert.match(toMarkdown(report).split("## Lähteen numeroimattomat valmistusohjeet")[1] ?? "",
+    /Ei osumia/);
+});
