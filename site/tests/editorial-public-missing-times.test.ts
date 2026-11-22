@@ -290,3 +290,49 @@ test("#327: older raw inventories have empty invalid-time report queues", () => 
     ?.split("## Raakalähteen kahteen kertaan määritellyt kokonaisajat")[0];
   assert.match(invalidSection ?? "", /Ei osumia/);
 });
+
+test("#327: empty public instructions are listed with source evidence", () => {
+  const projected = { ...recipe(45), instructionsText: [" ", "  "] };
+  const report = compareInventories(raw, [projected]);
+  assert.equal(report.totals.rawMissingPreparations, 0);
+  assert.equal(report.totals.projectedMissingPreparations, 1);
+  assert.equal(report.totals.publicMissingPreparationNotInRaw, 1);
+  assert.deepEqual(report.sourceOnly.publicMissingPreparationNotInRaw.map(x => x.recipeId), [evidence.recipeId]);
+  const markdown = toMarkdown(report);
+  assert.ok(markdown.includes("## Julkisesta esityksestä puuttuvat valmistusohjeet"));
+  assert.ok(markdown.includes("### Julkisessa esityksessä uutena tyhjät valmistusohjeet"));
+  assert.ok(markdown.includes(evidence.path));
+  assert.ok(markdown.includes(evidence.sourceSha256));
+});
+
+test("#327: raw missing numbered steps with usable public instructions is distinguished", () => {
+  const source: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [evidence] },
+  };
+  const report = compareInventories(source, [recipe(45)]);
+  assert.equal(report.totals.rawMissingPreparations, 1);
+  assert.equal(report.totals.projectedMissingPreparations, 0);
+  assert.equal(report.totals.rawMissingPreparationNoLongerVisible, 1);
+  assert.equal(report.totals.publicMissingPreparationNotInRaw, 0);
+  assert.deepEqual(report.sourceOnly.rawMissingPreparationNoLongerVisible.map(x => x.recipeId), [evidence.recipeId]);
+});
+
+test("#327: raw/public missing preparation agreement and invalid evidence", () => {
+  const source: RawInventory = {
+    ...raw,
+    signals: { ...raw.signals, missingPreparation: [evidence] },
+  };
+  const projected = { ...recipe(null), instructionsText: [] };
+  const report = compareInventories(source, [projected]);
+  assert.equal(report.totals.rawMissingPreparations, 1);
+  assert.equal(report.totals.projectedMissingPreparations, 1);
+  assert.equal(report.totals.rawMissingPreparationNoLongerVisible, 0);
+  assert.equal(report.totals.publicMissingPreparationNotInRaw, 0);
+  const drift: RawInventory = {
+    ...source,
+    signals: { ...source.signals, missingPreparation: [{ ...evidence, path: "wrong.md" }] },
+  };
+  assert.throws(() => compareInventories(drift, [projected]),
+    /RAW_SIGNAL_SOURCE_DRIFT: missingPreparation:aika-puuttuu/);
+});
