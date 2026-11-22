@@ -17,8 +17,8 @@
   "nutrition_evidence": "",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Ei samannimistä resep­titunnusta alkuperäisessä mainissä tai tarkistetuissa avoimissa PR:issä; lopullinen päällekkäisyyden tarkistus tehdään julkaisurevisiolle."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: päähaaran 489 FI-reseptitiedoston täsmäpolkujen ja 27 avoimen PR:n otsikon tarkistus ei tuottanut vastaavaa erillistä kastiketta. Lähin tarkistettu resepti: Päähaaran marjakiisseli vaniljakastikkeella on kaksiosainen jälkiruoka ja sen kastikkeessa on kermaa; #808 on erillinen 450 g täysmaidolla ja 18 g maissitärkkelyksellä tehty kastike. Katselmointiraportti: docs/reviews/new-recipes/chat3-kastikkeet-duplikaatit-2026-11-22.md. Tulos on tarkistushetken arvio; julkaisuportissa tarkistetaan uusin reittien yksikäsitteisyys."
     },
     "ingredients": {
       "status": "pass",
