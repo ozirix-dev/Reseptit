@@ -10,13 +10,53 @@ export const ROUTES = Object.freeze([
   {path:'/th/recipes/',lang:'th'},
 ]);
 const REVISION = /^[0-9a-f]{40}$/;
-const ATTR = name => new RegExp(`\\b${name}\\s*=\\s*(?:"([^"]*)"|'([^']*)')`, 'i');
 const tagAttribute = (tag, name) => {
-  const match = tag.match(ATTR(name));
-  return match ? (match[1] ?? match[2]) : null;
+  const attributes = tag.matchAll(/([^\s"'=<>/]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>]+)))?/g);
+  for (const [, key, doubleQuoted, singleQuoted, unquoted] of attributes) {
+    if (key.toLowerCase() === name) return doubleQuoted ?? singleQuoted ?? unquoted ?? '';
+  }
+  return null;
 };
 const tags = (html, type) => [...html.matchAll(new RegExp(`<${type}\\b[^>]*>`, 'gi'))].map(x => x[0]);
 const required = (test, reason) => { if (!test) throw new Error('PRODUCTION HEALTH FAIL: '+reason); };
+
+const ENTRY_PATH = /^\/assets\/index-[A-Za-z0-9_-]+\.js$/;
+const JAVASCRIPT_MIME = /^(?:application\/(?:x-)?(?:ecmascript|javascript)|text\/(?:(?:x-)?(?:ecmascript|javascript)|javascript1\.[0-5]|jscript|livescript))$/;
+
+function homeEntryPath(html) {
+  const document = html.replace(/<!--[\s\S]*?-->/g, '');
+  const elements = document.matchAll(
+    /<(script|template|noscript|style|textarea|title)\b([^>]*)>([\s\S]*?)<\/\1\s*>|<base\b([^>]*)>/gi,
+  );
+  let baseHref;
+  const entries = [];
+  for (const [, element, attributes, content, baseAttributes] of elements) {
+    if (baseAttributes !== undefined) {
+      baseHref ??= tagAttribute(baseAttributes, 'href') ?? undefined;
+      continue;
+    }
+    if (element.toLowerCase() !== 'script' || tagAttribute(attributes, 'type')?.toLowerCase() !== 'module') continue;
+    const src = tagAttribute(attributes, 'src');
+    if (src !== null) {
+      entries.push(src);
+      continue;
+    }
+    // Inline modules without the prerender declaration do not identify an entry.
+    const declarations = [...content.matchAll(/\bconst\s+importEntry\b/g)];
+    const deferred = [...content.matchAll(/\bconst importEntry = \(\) => \{ void import\("([^"]+)"\); \};/g)];
+    required(declarations.length === deferred.length, 'invalid deferred JavaScript entry');
+    for (const [, entry] of deferred) entries.push(entry);
+  }
+  // A root-relative entry still resolves against the document base in the browser.
+  if (baseHref !== undefined) {
+    const base = URL.parse(baseHref, ORIGIN);
+    required(!baseHref.includes('&') && base?.origin === ORIGIN,
+      'JavaScript entry base must use the Recipavo origin');
+  }
+  const [entry] = entries;
+  required(entries.length === 1 && ENTRY_PATH.test(entry), 'expected exactly one hashed JavaScript entry');
+  return entry;
+}
 
 export async function probeProduction({fetcher=fetch}={}) {
   const checked = [];
@@ -51,12 +91,7 @@ export async function probeProduction({fetcher=fetch}={}) {
     const robots=tags(html,'meta').filter(x=>['robots','googlebot'].includes((tagAttribute(x,'name')??'').toLowerCase()));
     required(!robots.some(x=>/\bnoindex\b/i.test(tagAttribute(x,'content')??'')),
       `production page is noindex: ${route}`);
-    if(route==='/') {
-      const modules=tags(html,'script').filter(x=>tagAttribute(x,'type')==='module');
-      const assets=modules.map(x=>tagAttribute(x,'src')).filter(x=>x && /^\/assets\/index-[A-Za-z0-9_-]+\.js$/.test(x));
-      required(assets.length===1, 'expected exactly one hashed JavaScript entry');
-      assetPath=assets[0];
-    }
+    if(route==='/') assetPath=homeEntryPath(html);
   }
   const robots=await request('/robots.txt');
   required(robots.status===200,'robots.txt not available');
@@ -95,6 +130,8 @@ export async function probeProduction({fetcher=fetch}={}) {
 
   const asset=await request(assetPath);
   required(asset.status===200, 'hashed JS entry not available');
+  const assetMime = asset.headers.get('content-type')?.split(';', 1)[0].trim().toLowerCase();
+  required(JAVASCRIPT_MIME.test(assetMime ?? ''), 'hashed JS entry must have a JavaScript content type');
   const assetText=await asset.text();
   required(assetText.length>100,'hashed JS entry appears empty');
 
@@ -115,7 +152,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url)===path.resolve(process.arg
         `- Languages: FI, EN, SV, TH\n`+
         `- SEO: canonical, robots, sitemap, missing page noindex\n`+
         `- Pages Functions: GET /api/feedback = 405 JSON, no-store, nosniff\n`+
-        `- Hashed JS asset: HTTP 200\n`);
+        `- Hashed JS asset: HTTP 200 and JavaScript MIME type\n`);
     }
   } catch(error) {
     console.error(error instanceof Error ? error.message : 'PRODUCTION HEALTH FAIL: unknown error');
