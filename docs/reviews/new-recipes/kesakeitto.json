@@ -12,7 +12,7 @@
       "https://www.martat.fi/reseptit/kesakeitto/"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/reviews/chat1-five-homefood-withheld-2026-11-22.md",
   "checks": {
     "duplicates": {
       "status": "pass",
@@ -24,23 +24,23 @@
     },
     "method": {
       "status": "pass",
-      "notes": "Chat 3 22.11.2026: Marttojen lähde tukee kasvisten keittämistä, herneiden myöhäistä lisäämistä sekä vehnäjauhon sekoittamista kylmään maitoon. Resepti kypsentää perunaa/porkkanaa 7–8 min, kukkakaalia 5–7 min, herneitä 2 min ja jauhoa miedosti 4–5 min, minkä jälkeen haarukalla tarkistetaan perunan ja porkkanan todellinen kypsyys. Eri kokoluokat voivat pidentää keittoaikaa. Kirjallinen valmistusperiaate PASS, ei väite fyysisestä kokkikokeesta. Versioauditointi 22.11.2026: riippumaton Chat-1-katselmointi #853 koski FI-lähdetiivistettä 79b70a59c4ff3b8bd84069964b52a3b5e902664427e20c9959d9c4187ca4e3a8 (PR-HEAD 2efb297). Nykyiseen a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af -lähteeseen lisättiin perunan/porkkanan haarukkakypsyystarkistus; ei muutettu määriä, vaiheiden määrää tai peruskypsennysaikoja. #853 ei ole tämän uudemman SHA:n muodollinen hyväksyntä: uudelleenkatselmointi vaaditaan ennen decision=approved."
+      "notes": "Chat 3 22.11.2026: Marttojen lähde tukee kasvisten keittämistä, herneiden myöhäistä lisäämistä sekä vehnäjauhon sekoittamista kylmään maitoon. Resepti kypsentää perunaa/porkkanaa 7–8 min, kukkakaalia 5–7 min, herneitä 2 min ja jauhoa miedosti 4–5 min, minkä jälkeen haarukalla tarkistetaan perunan ja porkkanan todellinen kypsyys. Eri kokoluokat voivat pidentää keittoaikaa. Kirjallinen valmistusperiaate PASS, ei väite fyysisestä kokkikokeesta. Versioauditointi 22.11.2026: riippumaton Chat-1-katselmointi #853 koski FI-lähdetiivistettä 79b70a59c4ff3b8bd84069964b52a3b5e902664427e20c9959d9c4187ca4e3a8 (PR-HEAD 2efb297). Nykyiseen a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af -lähteeseen lisättiin perunan/porkkanan haarukkakypsyystarkistus; ei muutettu määriä, vaiheiden määrää tai peruskypsennysaikoja. #853 ei ole tämän uudemman SHA:n muodollinen hyväksyntä: uudelleenkatselmointi vaaditaan ennen decision=approved. Riippumaton Chat-6:n nyky-SHA-arvio https://github.com/ozirix-dev/Reseptit/pull/787#issuecomment-7080300417: porrastettu kypsennys, kylmään maitoon sekoitettu suuruste ja haarukalla tehtävä kypsyystarkistus PASS. Tämä täsmentää #853:n vanhan SHA-version katselmointia, mutta ei ole lopullinen julkaisuvaltuus."
     },
     "food_safety": {
       "status": "pass",
-      "notes": "Chat 3 22.11.2026: Sisältää maitoa ja vehnää kaikilla FI/EN/SV/TH-sivuilla, vehnäjauhoja kypsennetään 4–5 minuuttia. Tarjoa keitto kuumana, jäähdytä ylijäämä nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6 °C:ssa. Ruokaviraston ohjeet: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/ . Rajattu elintarviketurvallisuus- ja allergeenikatselmointi, ei keittiölämpötilojen mitattua varmistusta. Eri SHA-versioiden vertailu: nykyinen lähde tarkentaa aiempaa 'jäähdytä nopeasti' -ohjetta mataliin astioihin ja alle +6 °C säilytykseen sekä lisää kuumana tarjoamisen. Chat-1:n riippumaton kirjallinen katselmointi #853 koski edeltävää lähdettä; tätä tarkennusta ei saa esittää tuon katselmoinnin uudeksi allekirjoitukseksi."
+      "notes": "Chat 3 22.11.2026: Sisältää maitoa ja vehnää kaikilla FI/EN/SV/TH-sivuilla, vehnäjauhoja kypsennetään 4–5 minuuttia. Tarjoa keitto kuumana, jäähdytä ylijäämä nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6 °C:ssa. Ruokaviraston ohjeet: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/ . Rajattu elintarviketurvallisuus- ja allergeenikatselmointi, ei keittiölämpötilojen mitattua varmistusta. Eri SHA-versioiden vertailu: nykyinen lähde tarkentaa aiempaa 'jäähdytä nopeasti' -ohjetta mataliin astioihin ja alle +6 °C säilytykseen sekä lisää kuumana tarjoamisen. Chat-1:n riippumaton kirjallinen katselmointi #853 koski edeltävää lähdettä; tätä tarkennusta ei saa esittää tuon katselmoinnin uudeksi allekirjoitukseksi. Riippumaton Chat-6:n nyky-SHA-arvio https://github.com/ozirix-dev/Reseptit/pull/787#issuecomment-7080300417: maito/vehnä, kuumana tarjoaminen ja nopea jäähdytys/säilytys rajattu PASS. Pakasteherneet ovat keitossa noin 2 min ennen 4–5 min suurustushaudutusta; käyttäjän on noudatettava pakasteherneiden pakkauksen kuumennusohjetta ja varmistettava kunnollinen kuumennus erityisesti riskiryhmille (Ruokaviraston pakastevihannesohje). Tämä lisähuomio EI ole nykyisen FI-julkaisusivun sanamuoto eikä väitä sitä sinne lisätyksi; mahdollisen ohjemuutoksen jälkeen FI-SHA ja riippumaton katselmointi tarkistetaan uudelleen."
     },
     "servings_and_time": {
       "status": "pass",
-      "notes": "Chat 3 22.11.2026: 11 aineksen yhteismassa ennen haihtumista 2504 g, laskennallinen keskiarvo noin 417 g/annos kuudelle. Noin 40 min kokonaisaika mahdollinen 15–20 min esivalmistelulla ja noin 19–22 min porrastetulla kypsennyksellä sekä kiehautuksella. Suositus vähintään noin 4 l keittokattilasta antaa sekoitusvaraa; perunoiden kypsyys tarkastetaan haarukalla eikä minuuttia oleteta varmaksi. Ei mitattua fyysistä valmistustestiä."
+      "notes": "Chat 3 22.11.2026: 11 aineksen yhteismassa ennen haihtumista 2504 g, laskennallinen keskiarvo noin 417 g/annos kuudelle. Noin 40 min kokonaisaika mahdollinen 15–20 min esivalmistelulla ja noin 19–22 min porrastetulla kypsennyksellä sekä kiehautuksella. Suositus vähintään noin 4 l keittokattilasta antaa sekoitusvaraa; perunoiden kypsyys tarkastetaan haarukalla eikä minuuttia oleteta varmaksi. Ei mitattua fyysistä valmistustestiä. Chat-6:n nyky-SHA-arvio (issuecomment-7080300417) hyväksyy 6 annosta ja 40 min ohjeellisina arvioina; todellinen kypsä saanto ja paksuus AVOIN/P2, eikä lähteitä pidä esittää mittaustodisteina."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Julkaistavat numeeriset ravintoarvot ja GK pidetään pois. Chat-1:n mainiin yhdistetty #855, docs/nutrition/reviews/chat1-five-homefood-withheld-2026-11-22.md, dokumentoi nimenomaisen WITHHOLD-päätöksen aiemmalle FI-lähteelle (HEAD 2efb297; sha256 79b70a59c4ff3b8bd84069964b52a3b5e902664427e20c9959d9c4187ca4e3a8). Nykyisessä FI-lähteessä a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af maito tarkennettiin 400 g 1,5 % kevytmaidoksi, muut ainesmäärät pysyivät ennallaan, eikä numeerisia arvoja lisätty. Chat-3:n tarkistama versiopoikkeama on dokumentoitu, mutta vasta riippumaton nykyversioon sidottu ravintonäytön poisjättöhyväksyntä voi muuttaa nutrition: pending -> pass. Osasummia ei julkaista eikä puuttuvia arvoja merkitä nolliksi."
+      "status": "pass",
+      "notes": "PASS koskee VAIN numeeristen ravintoarvojen tietoista poisjättöä nykyisen FI-SHA:n a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af julkaisuehdokkaasta, ei laskettuja arvoja eikä koko reseptin julkaisupäätöstä. Riippumaton Chat-6:n SHA-sidottu lähde-, valmistus- ja ravintonäytön rajauskatselmointi 22.11.2026: https://github.com/ozirix-dev/Reseptit/pull/787#issuecomment-7080300417 (poisjättö PASS). Chat-1:n aiempi #855 osoittaa valitun menettelyn ja vanhan version tuotekohtaiset puutteet: docs/nutrition/reviews/chat1-five-homefood-withheld-2026-11-22.md. Nykyversiossa 400 g 1,5 % maitoa on täsmennetty, mutta kevätsipulin täydet koostumustiedot ja perunan/herneiden lähde- ja saantoerot puuttuvat edelleen; reseptin 4 makrokenttää ja energia ovat kokonaan poissa. Null/puuttuva ei ole nolla. Numeeristen makrojen julkaiseminen edelleen HOLD. Tämä tarkistus ei muodosta decision:approved-hyväksyntää."
     },
     "glycemic": {
       "status": "unavailable",
-      "notes": "Täsmälliselle monia kasviksia, kevytmaitoa ja vehnäjauhosuurustetta sisältävälle kesäkeittoannokselle ei ole hyväksyttyä reseptikohtaista GI-/GK-todistetta. Numeerista GK:ta ei arvata; julkaisuportissa perusteltu määrittämätön tila tarkistettava uudelleen."
+      "notes": "Täsmälliselle monia kasviksia, kevytmaitoa ja vehnäjauhosuurustetta sisältävälle kesäkeittoannokselle ei ole hyväksyttyä reseptikohtaista GI-/GK-todistetta. Numeerista GK:ta ei arvata; julkaisuportissa perusteltu määrittämätön tila tarkistettava uudelleen. Riippumaton Chat-6:n nyky-SHA-arvio 22.11.2026 https://github.com/ozirix-dev/Reseptit/pull/787#issuecomment-7080300417 hyväksyy glycemic:unavailable-tilan: numeerista GK:ta, keto/VHH- tai gluteenittomuusväitteitä ei lisätä."
     }
   },
   "supplementary_evidence": {
@@ -60,11 +60,27 @@
         "tähteiden jäähdytys ja kylmäsäilytys täsmennetty",
         "luonnoksen testaus- ja ravintoarvoväitteet rajattu tarkemmin"
       ],
-      "formal_reapproval": "required",
+      "formal_reapproval": "current-source independent scoped review available from Chat 6; final publication approval pending Chat-1",
       "image_approval_pr": 852,
       "numerical_nutrition_withholding_pr": 855,
       "translation_evidence": "pending for current draft source",
       "publication_decision": "HOLD"
+    },
+    "independent_current_source_review": {
+      "reviewer": "Chat 6, riippumaton kirjallinen lähde- ja turvallisuuskatselmointi; ei julkaisuvaltuus",
+      "reviewed_at": "2026-11-22",
+      "head_sha": "37dd705f2d2d23e0fb24e6967bd55ef91f7dc00d",
+      "source_sha256": "a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af",
+      "reference": "https://github.com/ozirix-dev/Reseptit/pull/787#issuecomment-7080300417",
+      "source_method": "pass",
+      "food_safety": "pass with frozen-pea package-heating advisory",
+      "servings_and_time": "pass as estimates; measured yield open",
+      "nutrition_values": "hold; not published",
+      "nutrition_withheld": "pass",
+      "glycemic": "unavailable",
+      "image": "verified technical image overlay only",
+      "translations": "EN/SV/TH draft; no formal semantic approval",
+      "publication": "hold; Chat-1 integration decision pending"
     }
   }
 }
