@@ -4,7 +4,7 @@ recipe_id: kinkkukiusaus
 url_slug: kinkkukiusaus
 category: paaruoka
 language: fi
-status: draft
+status: published
 servings: 6
 time_total_min: 95
 difficulty: "helppo"
@@ -71,4 +71,4 @@ Mehevä suomalainen kinkkukiusaus valmistuu perunasuikaleista, kypsästä savuki
 - Sisältää maitoa. Kinkun koostumus ja mahdolliset muut allergeenit on tarkistettava pakkausmerkinnöistä. Älä merkitse ruokaa gluteenittomaksi ilman erillistä tarkastusta.
 - Valmis ruoka jäähdytetään nopeasti matalissa astioissa ja säilytetään jääkaapissa alle +6 °C:ssa.
 - Lähdevertailu: [K-Ruoka / kinkkukiusaus](https://www.k-ruoka.fi/reseptit/kinkkukiusaus). Tässä on itsenäisesti kirjoitettu ja määriltään muokattu Recipavo-versio, ei lähdesivun kopio.
-- Kuva on tekoälyllä luotu havainnekuva. Resepti on toimituksellinen luonnos; koekeittiötestiä tai reseptikohtaisia ravintoarvoja/GK-arviota ei ole tehty.
+- Kuva on tekoälyllä luotu havainnekuva. Resepti on toimituksellisesti laadittu; omaa fyysistä koekeittiötestiä ei ole tehty. Numeeriset ravintoarvot jätetään pois puuttuvan hyväksytyn laskennan vuoksi ja GK on määrittämätön.
