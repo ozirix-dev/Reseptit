@@ -34,12 +34,15 @@ Nykyinen FI-lähde täsmennettiin 1,5 % kevytmaidoksi ja oikean kasviskypsyyden 
 
 **Tarkistuksen tyyppi:** Chat 3:n suora tekstuaalinen valmistus- ja semantiikkakatselmointi, 11/11 ainesosariviä ja 5/5 vaihetta jokaisessa FI/EN/SV/TH-parissa, ei itsenäinen ulkopuolisen hyväksyjän allekirjoitus. FI-lähteen uusi raakateksti-SHA256 `a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af`. Virallinen `semanticHash` ja `meta/kaannokset/codex-review-evidence.json`-portti pysyvät **HOLD**: ei kirjoitettu tekaistuja `outcome: pass` -merkintöjä.
 
-## Virallisen semantiikkarekisterin julkaisua estävä välimerkintä – 22.11.2026
+## Korjaus: virallinen rekisteri sallii vain julkaistujen käännösten merkinnät (22.11.2026)
 
-`meta/kaannokset/codex-review-evidence.json` sisältää nyt kolme *aidosti tarkistettuun lähderevisioon sidottua* `outcome: human-required` -merkintää, ei keksittyä `outcome: pass` -hyväksyntää. Nämä ovat tarkistusjonon rekisterimerkintöjä, jotka nimenomaisesti **estävät** julkaisun ilman riippumatonta katselmointia.
+GitHubin `Recipe site` -CI [#44989173847](https://github.com/ozirix-dev/Reseptit/actions/runs/44989173847) pysähtyi oikealla fail-closed-viestillä `review evidence has no published translation`. Luonnoksen `human-required`-merkinnät palautettiin pois `meta/kaannokset/codex-review-evidence.json` -rekisteristä, koska FI/EN/SV/TH ovat edelleen `status: draft`. Rekisterin sääntöä ei muutettu eikä `outcome: pass`-todistetta keksitty.
 
-- `kesakeitto:en`: `source_hash=46db9ccbf6828199c5399095034148e0a9cd9de34015c477e4a07c79e57c2d94`, `translation_hash=d08236452f1f9f909ce323973724e749b75b87a723d1001d5c975899edebc50c`.
-- `kesakeitto:sv`: `source_hash=46db9ccbf6828199c5399095034148e0a9cd9de34015c477e4a07c79e57c2d94`, `translation_hash=85509455fdd828387da9434e0dfe7056b34dbc55547270f1690b748f65bec578`.
-- `kesakeitto:th`: `source_hash=46db9ccbf6828199c5399095034148e0a9cd9de34015c477e4a07c79e57c2d94`, `translation_hash=336c64eaec37288bc704067f2168417a9b1213871d8326a4e45921d4d4cc0ed3`.
+Kun riippumaton hyväksyntä on oikeasti tehty ja kielisivut ovat hyväksytysti julkaistavissa, seuraavat alustavasti lasketut `semanticHash`-sidokset tarkistetaan suoraan repon työkalulla ja merkintä voidaan vasta silloin lisätä:
 
-Tiivisteiden lähtökohtana on projektin `site/scripts/translation-semantic-review.ts`-funktion `semanticHash` kenttäkarsinta ja `site/src/content/schema.ts`-kenttäjärjestys. Kirjaukset ovat `human-required`, eivät hyväksymistodistuksia. EN/SV/TH tekstien 11 ainesosariviä, annosmäärä, kypsennysvaiheet sekä allergia- ja jäähdytysohjeet on jo verrattu Chat 3:ssa; erillisen hyväksyjän kuittaus puuttuu. Kaikki neljä tiedostoa ovat `status: draft`, PR #787 ja reseptin `decision: hold`.
+- FI: `46db9ccbf6828199c5399095034148e0a9cd9de34015c477e4a07c79e57c2d94`.
+- EN: `d08236452f1f9f909ce323973724e749b75b87a723d1001d5c975899edebc50c`.
+- SV: `85509455fdd828387da9434e0dfe7056b34dbc55547270f1690b748f65bec578`.
+- TH: `336c64eaec37288bc704067f2168417a9b1213871d8326a4e45921d4d4cc0ed3`.
+
+**Nykytilan päätös:** alustava Chat 3 -merkitysvertailu dokumentoitu; virallinen käännöksen hyväksyntä **NOT REVIEWED / HOLD**, ei pass. `docs/reviews/new-recipes/kesakeitto.json` pysyy `decision: hold`-tilassa; ravintokandidaatti ei ole julkinen evidenssi.
