@@ -7,10 +7,6 @@ language: fi
 status: draft
 servings: 6
 time_total_min: 15
-carbs_net_per_serving_g: 8.36
-carbs_total_per_serving_g: 8.57
-protein_per_serving_g: 3.25
-fat_per_serving_g: 7.75
 difficulty: "helppo"
 main_ingredient:
   - "maito"
