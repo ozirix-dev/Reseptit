@@ -10,6 +10,14 @@ const expectedUnits: Record<string,Record<string,string>> = {
   en: {tl: "tsp", kpl: "pcs"}, sv: {tl: "tsk", kpl: "st"},
   th: {tl: "ช้อนชา", kpl: "ชิ้น"}
 };
+// Item-specific Thai counters are semantic units, not generic pieces.
+// Pin the known exceptions to exact recipe IDs and ingredient positions.
+const thaiCounters: Record<string, Record<number, string>> = {
+  "lasimestarin-silli": { 7: "เม็ด", 8: "ใบ" },
+  "pienet-kantarellipiiraat": { 8: "ฟอง" },
+  "sillikaviaari-ruisnapeilla": { 1: "ฟอง" },
+  "nokkosletut-puolukoilla": { 3: "ฟอง" },
+};
 type Parsed = { data: { [key:string]: any }; content: string };
 function load(path: string): Parsed {
   const md = parseMarkdown(readFileSync(new URL(path, root), "utf8"));
@@ -39,7 +47,10 @@ test("Chat-4 eight starters: 24 draft translations retain amounts, meanings' str
       assert.equal(b.length, a.length, path + " ingredient count");
       for (let k=0; k<a.length; k++) {
         assert.equal(b[k].amount, a[k].amount, path + " amount " + k);
-        assert.equal(b[k].unit, expectedUnits[lang][a[k].unit] ?? a[k].unit, path + " unit " + k);
+        const expectedUnit = lang === "th" && a[k].unit === "kpl"
+          ? (thaiCounters[id]?.[k] ?? expectedUnits.th.kpl)
+          : (expectedUnits[lang][a[k].unit] ?? a[k].unit);
+        assert.equal(b[k].unit, expectedUnit, path + " unit " + k);
         assert.ok(String(b[k].item ?? "").trim(), path + " translated item " + k);
       }
       assert.equal(stepCount(tr.content), stepCount(fi.content), path + " instruction steps");
