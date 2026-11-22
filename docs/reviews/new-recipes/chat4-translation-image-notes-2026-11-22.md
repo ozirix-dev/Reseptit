@@ -16,3 +16,7 @@ PR #850 päivitti kahdeksan julkaistun FI-alkuruoan julkiset tekstit oikeaan jul
 - Virallista Codex-merkityskatselmointia tai ihmishyväksyntää ei väitetä suoritetuksi. Julkaisuun tarvittava SHA-sidottu hyväksyntä on erillinen vaihe.
 
 PR luovutetaan Chat-1:lle yhdistämistä varten vasta sen jälkeen, kun täsmä-HEADin CI on läpäisty. Chat-4 ei tee mergeä eikä Cloudflare-julkaisua.
+
+## CI-ajon uusintatarkistus
+
+Ensimmäinen Recipe site -CI [#44986482078](https://github.com/ozirix-dev/Reseptit/actions/runs/44986482078) pysähtyi `Verify the tested revision` -vaiheessa. GitHubin `main` ehti muuttua PR:n synteettisen testimergen jälkeen. Varsinaista muutos- tai yksikkötestivirhettä ei todettu. SHA-suojauksen ohittaminen ei ole sallittua. Tämän raporttipäivityksen yhteydessä main oli `222995fc445832043a78c9114301c16a405b4c42`. Uusi CI tulee varmistaa erikseen täsmä-HEADilta.
