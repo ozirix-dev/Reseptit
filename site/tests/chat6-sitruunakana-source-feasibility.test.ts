@@ -140,7 +140,14 @@ test("conditional calculation is numerically feasible, but has no publication au
 
 test("conditional gate fails closed for ambiguous salt, AFCD evidence loss and excess omissions", () => {
   const noSaltDecision = makeCandidate();
-  noSaltDecision.ingredients[9] = structuredClone(old.ingredients[9]!);
+  // The original, pinned evidence ALREADY excludes pure salt as zero macro.
+  // A missing amount is safe only with that explicit, sourced exclusion.
+  assert.equal(old.ingredients[9]!.excludedReason, "Pure salt; no macro contribution");
+  const unresolvedSalt = structuredClone(old.ingredients[9]!);
+  delete unresolvedSalt.excludedReason;
+  delete unresolvedSalt.omissionImpactUpperBoundPerServing;
+  delete unresolvedSalt.omissionImpactEvidence;
+  noSaltDecision.ingredients[9] = unresolvedSalt;
   assert.equal(calculate(noSaltDecision).status, "INSUFFICIENT SOURCE DATA");
   const noPolyolEvidence = makeCandidate();
   noPolyolEvidence.ingredients[7]!.record!.polyolsSourceVerified = false;
