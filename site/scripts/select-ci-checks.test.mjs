@@ -175,12 +175,12 @@ test("translation evidence selects one dedicated suite and no build", () => {
   assert.equal(recipe.runBuild, false);
 });
 
-test("recipe additions, edits, and deletions select nutrition plus GI/GK checks", () => {
+test("ordinary FI recipes retain publication/build gates without redundant full model suites", () => {
   for (const operation of ["add", "edit", "delete"]) {
     const plan = classifyPaths(["reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md"]);
     assert.equal(plan.runContent, true, operation);
-    assert.equal(plan.runNutrition, true, operation);
-    assert.equal(plan.runGlycemic, true, operation);
+    assert.equal(plan.runNutrition, false, operation);
+    assert.equal(plan.runGlycemic, false, operation);
     assert.equal(plan.runBuild, true, operation);
     assert.deepEqual(plan.unitTests, [], operation);
     assert.equal(plan.runBrowser, false, operation);
@@ -203,21 +203,22 @@ test("deduplicate only the files run by scheduled dedicated npm suites", () => {
   assert.equal(nutritionOnly.runGlycemic, false);
   assert.deepEqual(nutritionOnly.unitTests, [...glycemic, unitOnly].sort());
   const mixed = classifyPaths(["reseptit/paaruoat/esimerkki.md", ...testPaths]);
-  assert.equal(mixed.runNutrition, true);
-  assert.equal(mixed.runGlycemic, true);
-  assert.deepEqual(mixed.unitTests, [unitOnly]);
+  assert.equal(mixed.runNutrition, false);
+  assert.equal(mixed.runGlycemic, false);
+  assert.deepEqual(mixed.unitTests, [...nutrition, ...glycemic, unitOnly].sort());
   assert.deepEqual(classifyPaths(testPaths, { forceFull: true }).unitTests, ["*"]);
 });
 
-test("PR and main push both audit recipe coverage; main push also builds and checks static output", () => {
+test("PR and main push build and validate recipe content without unrelated full regression suites", () => {
   const recipePath = ["reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md"];
   const pullRequest = applyEventPolicy(classifyPaths(recipePath), "pull_request");
   const mainPush = applyEventPolicy(classifyPaths(recipePath), "push");
   for (const plan of [pullRequest, mainPush]) {
-    assert.equal(plan.runNutrition, true);
-    assert.equal(plan.runGlycemic, true);
+    assert.equal(plan.runNutrition, false);
+    assert.equal(plan.runGlycemic, false);
     assert.equal(plan.runBuild, true);
     assert.equal(plan.runStatic, true);
+    assert.equal(plan.runContent, true);
   }
 });
 
@@ -227,22 +228,42 @@ test("separately passing recipe and GI/GK PR path sets remain audited when combi
   const recipePr = classifyPaths(recipePrPaths);
   const giPr = classifyPaths(giPrPaths);
   const combined = classifyPaths([...recipePrPaths, ...giPrPaths]);
-  assert.equal(recipePr.runGlycemic, true);
-  assert.equal(recipePr.runNutrition, true);
+  assert.equal(recipePr.runGlycemic, false);
+  assert.equal(recipePr.runNutrition, false);
   assert.equal(recipePr.runBuild, true);
   assert.equal(giPr.runGlycemic, true);
   assert.equal(giPr.runBuild, true);
+  assert.equal(combined.runGlycemic, true);
+  assert.equal(combined.runNutrition, false);
   assert.deepEqual(combined.unitTests, []);
 
   const combinedPr = applyEventPolicy(classifyPaths([...recipePrPaths, ...giPrPaths]), "pull_request");
   const combinedMainPush = applyEventPolicy(classifyPaths([...recipePrPaths, ...giPrPaths]), "push");
   for (const plan of [combinedPr, combinedMainPush]) {
-    assert.equal(plan.runNutrition, true);
+    assert.equal(plan.runNutrition, false);
     assert.equal(plan.runGlycemic, true);
     assert.equal(plan.runBuild, true);
     assert.equal(plan.runStatic, true);
     assert.deepEqual(plan.unitTests, []);
   }
+});
+
+test("added published numbers or calculation evidence triggers strict nutrition gate", () => {
+  const recipe = "reseptit/jalkiruoat/pina-colada-hedelmajaatelo.md";
+  const evidence = "docs/nutrition/calculations/pina-colada-hedelmajaatelo.json";
+  const onlyRecipe = classifyPaths([recipe]);
+  assert.equal(onlyRecipe.runBuild, true);
+  assert.equal(onlyRecipe.runNutrition, false);
+  assert.equal(onlyRecipe.runGlycemic, false);
+  assert.equal(onlyRecipe.runContent, true);
+  const withEvidence = classifyPaths([recipe, evidence]);
+  assert.equal(withEvidence.runNutrition, true);
+  assert.equal(withEvidence.runGlycemic, true);
+  assert.equal(withEvidence.runBuild, true);
+  assert.equal(withEvidence.runContent, true);
+  assert.equal(classifyPaths(["site/scripts/nutrition-evidence.ts"]).runNutrition, true);
+  const risky = classifyPaths(["site/package.json"]);
+  assert.equal(risky.full, true);
 });
 
 test("GI/GK model changes retain calculation regression and build audits", () => {
