@@ -18,7 +18,7 @@ source_recipe: reseptit/alkuruoat/muikunmati-rieskarullat.md
 translation_of: muikunmati-rieskarullat
 ingredients:
   - amount: 4
-    unit: "kpl"
+    unit: "st"
     item: "små mjuka finska potatisrieskor"
   - amount: 140
     unit: "g"
@@ -60,4 +60,4 @@ Välj rom avsedd att ätas utan upphettning och följ förpackningens anvisninga
 - Den finska källan är styrande. Utkastet är inte godkänt för publicering.
 - Mängder, tillagningsmetod, risker och översättningens betydelse måste granskas.
 - Näringsvärden och glykemisk belastning har inte beräknats.
-- WebP-bilden (720 × 720) finns nu i denna Git Draft-gren och är SHA-256-låst i bildmanifestet; redaktionellt publiceringsgodkännande saknas fortfarande.
+- WebP-illustrationen (720 × 720) är versionshanterad i Git och SHA-256-kontrollerad i bildmanifestet. Den är AI-genererad, inte ett fotografi av en tillagad rätt; redaktionellt publiceringsgodkännande saknas fortfarande.
