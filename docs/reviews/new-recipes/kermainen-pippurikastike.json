@@ -17,8 +17,8 @@
   "nutrition_evidence": "",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Ei samannimistä resep­titunnusta alkuperäisessä mainissä tai tarkistetuissa avoimissa PR:issä; lopullinen päällekkäisyyden tarkistus tehdään julkaisurevisiolle."
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: päähaaran 489 FI-reseptitiedoston täsmäpolut ja 27 avoimen PR:n otsikot tarkistettu, ei samaa itsenäistä kastikereseptiä. Lähivertailu: Päähaaran kermaiset kana-/lihakastikkeet ovat pääruokia, joihin liha kuuluu ainesosana; #808 on erillinen salottisipuli-lihaliemi-kerma-Dijon-pippurikastike. Tarkka raportti: docs/reviews/new-recipes/chat3-kastikkeet-duplikaatit-2026-11-22.md. Lopullinen reittien uniikkius ja tuore main tarkistetaan vielä julkaisuportissa."
     },
     "ingredients": {
       "status": "pass",
