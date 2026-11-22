@@ -16,6 +16,8 @@ interface ReviewedRecipeCopy {
 // Display-only edits. Canonical ingredients, release evidence and calculation inputs
 // stay in their source files. Edits match the approved display text before this pass.
 const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
+  // #327 / Chat 2: specify fully set steamed egg in FI lablabi.
+  "pohjoisafrikkalainen-lablabi/fi": { method: [["2. Kypsennä 110 g kuorettomana punnittua kananmunaa höyryssä pienessä astiassa ilman lisättyä rasvaa. Käytä koko määrä.", "2. Mittaa ainesluettelon 110 g kananmunaa ilman kuorta pieneen höyrytykseen soveltuvaan astiaan. Höyrykypsennä ilman lisättyä rasvaa, kunnes sekä valkuainen että keltuainen ovat kauttaaltaan hyytyneet; tarkista kypsyys myös astian keskeltä. Käytä koko 110 g munamäärä."]] },
   // #327 Chat 2: raw chicken added after rice porridge must reach 75 °C.
   // The two eggs are boiled, without unlisted cooking oil.
   "thai-jok-kanalla/fi": { method: [["2. Lisää kuutioitu broilerin rintafilee ja raastettu inkivääri. Keitä, kunnes kana on täysin kypsää.\n3. Kypsennä kananmunat erikseen ja tarjoa ne puuron päällä.", "2. Kuutioi ainesluettelon 150 g raakaa, nahatonta broilerin rintafileetä ja lisää se puuroon yhdessä raastetun inkiväärin kanssa. Jatka keittämistä, kunnes broileri on kauttaaltaan kypsää ja paksuimman palan sisälämpötila on vähintään 75 °C. Tarkista lämpötila elintarvikelämpömittarilla; jatka kypsennystä tarvittaessa.\n3. Keitä ainesluettelon kaksi kananmunaa erikseen vedessä, kunnes sekä valkuainen että keltuainen ovat kypsiä. Kuori munat ja tarjoa ne puuron päällä. Älä lisää paistorasvaa tai ainesluettelon ulkopuolisia lisukkeita."]] },
