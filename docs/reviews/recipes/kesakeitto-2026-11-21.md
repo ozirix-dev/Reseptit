@@ -17,3 +17,10 @@ Ennen julkaisua: aine- ja valmistustarkastus, käännösten merkitystarkistus, k
 - Neljästä kieliversiosta on verrattu annosmääriä, ainesosarivien määrää/järjestystä, yksiköitä ja kuvan metatietoja. Laajempi merkityskatselmointi ja hyväksyntärekisteri puuttuvat vielä.
 - **HOLD:** maito ja vehnä on mainittu allergeeneina, mutta reseptiä ei ole koekeitetty. Kasvisten kypsennysjärjestys ja liemen määrä tulee vielä vahvistaa sekä ravintoarvot laskea erillisellä lähdeaineistolla, jos ne aiotaan näyttää. `decision: hold` säilytetään.
 - Cloudflare-julkaisu ei kuulu tähän muutokseen.
+
+## Chat 3:n rajattu valmistus- ja turvallisuusarvio 22.11.2026
+
+- Marttojen [kesäkeiton](https://www.martat.fi/reseptit/kesakeitto/) vertailulähde käyttää 4 dl kevytmaitoa ja vehnäjauhosuurustetta; Recipavon punnittu maitomäärä on nyt 400 g, 1,5 % rasvaa. Näitä ei väitetä samaksi mittayksiköksi tai täsmälleen samaksi keittokoostumukseksi.
+- Raaka-ainemassa yhteensä **2504 g**, kuusi laskennallista noin 417 g annosta ennen haihtumista. Uusien perunoiden ja porkkanoiden koko vaikuttaa 40 min kokonaisaikaan: haarukalla tarkistetaan kypsyys, ja jatketaan tarvittaessa. Vähintään noin 4 litran kattila jättää sekoitusvaraa.
+- Ruokaviraston [ruokamyrkytysohje](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/) ja [säilytyslämpötilat](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/): tarjoa kuumana, jäähdytä ylijäämä nopeasti matalassa astiassa, säilytä alle +6 °C. Vehnä ja maito ovat ilmoitetut allergeenit kaikissa kielissä.
+- Rajattu lähde-/annos-/menetelmä-/turvallisuuskatselmointi `pass`, mutta **ei** riippumaton fyysinen ruoanvalmistuskoe tai ravintolaskennan hyväksyntä. Maidon tuotemerkkikohtainen koostumus, kevätsipulin polyolit, perunan ja herneiden tarkka koostumus, kypsän saannon dokumentointi ja virallinen käännös-/kuvajulkaisuhyväksyntä edelleen HOLD. `decision: hold`, `status: draft`.

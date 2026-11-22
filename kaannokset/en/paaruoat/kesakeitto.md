@@ -48,7 +48,7 @@ ingredients:
     item: "water"
   - amount: 400
     unit: "g"
-    item: "milk"
+    item: "semi-skimmed milk, 1.5% fat"
   - amount: 20
     unit: "g"
     item: "plain wheat flour"
@@ -72,11 +72,11 @@ New potatoes, carrots, cauliflower, peas and dill make a mild Finnish summer sou
 1. Scrub the potatoes and halve larger ones. Peel and slice the carrots, cut cauliflower into small florets and chop the spring onions, keeping green tops separate.
 2. Bring 700 g water to a boil and add salt. Add potatoes and carrots and simmer gently for 7–8 minutes.
 3. Add cauliflower and the white parts of the spring onions. Simmer for 5–7 minutes, then add peas and green onion tops and cook for two more minutes.
-4. Whisk wheat flour into cold milk until smooth. Pour into the soup in a thin stream, stirring continuously. Simmer gently for 4–5 minutes to cook the flour. Avoid overcooking the vegetables.
+4. Whisk wheat flour into cold milk until smooth. Pour into the soup in a thin stream, stirring continuously. Simmer gently for 4–5 minutes to cook the flour. Check the potatoes and carrots with a fork; if needed, continue cooking gently while stirring. Avoid overcooking the vegetables.
 5. Remove from the heat. Stir in butter and chopped dill. Serve hot.
 
 ## Notes
 
-- Contains milk and wheat. Cool leftovers promptly.
-- AI-generated illustration; editorial draft only. No independent cooking test, nutrition or GK calculation, or verified gluten-free claim.
+- Contains milk and wheat. Serve hot. Cool leftovers promptly in shallow containers and refrigerate below +6°C.
+- AI-generated illustration; editorial draft only. No physical cooking test, approved whole-recipe nutrition or GK calculation, or verified gluten-free claim.
 - Reference: [Martat](https://www.martat.fi/reseptit/kesakeitto/). Independently adapted proportions and wording.

@@ -48,7 +48,7 @@ ingredients:
     item: "vatten"
   - amount: 400
     unit: "g"
-    item: "mjölk"
+    item: "lättmjölk, 1,5 % fett"
   - amount: 20
     unit: "g"
     item: "vetemjöl"
@@ -72,11 +72,11 @@ Nypotatis, morötter, blomkål, ärter och dill blir en mild finsk sommarsoppa m
 1. Tvätta potatisen och dela större knölar. Skala och skiva morötterna, dela blomkålen i små buketter och hacka salladslöken. Spara de gröna delarna separat.
 2. Koka upp 700 g vatten och tillsätt salt. Lägg i potatis och morötter och sjud i 7–8 minuter.
 3. Tillsätt blomkålen och de vita lökdelarna. Sjud 5–7 minuter, tillsätt ärter och gröna lökdelar och koka två minuter till.
-4. Vispa vetemjölet slätt i kall mjölk. Häll blandningen i soppan i en tunn stråle under ständig omrörning. Sjud försiktigt 4–5 minuter så att mjölet tillagas. Undvik att överkoka grönsakerna.
+4. Vispa vetemjölet slätt i kall mjölk. Häll blandningen i soppan i en tunn stråle under ständig omrörning. Sjud försiktigt 4–5 minuter så att mjölet tillagas. Kontrollera med en gaffel att potatis och morötter är mjuka; fortsätt vid behov sjuda försiktigt under omrörning. Undvik att överkoka grönsakerna.
 5. Ta från värmen. Rör ner smör och hackad dill. Servera varm.
 
 ## Anteckningar
 
-- Innehåller mjölk och vete. Kyl rester snabbt.
-- AI-genererad bild; redaktionellt utkast. Ingen egen provlagning, närings- eller GK-beräkning eller godkänd glutenfrihetsmärkning.
+- Innehåller mjölk och vete. Servera varm. Kyl rester snabbt i grunda kärl och förvara i kylskåp under +6 °C.
+- AI-genererad bild; redaktionellt utkast. Ingen egen provlagning, ingen godkänd närings- eller GK-beräkning för hela receptet och ingen godkänd glutenfrihetsmärkning.
 - Jämförelsekälla: [Martat](https://www.martat.fi/reseptit/kesakeitto/). Eget bearbetat recept, ingen textkopia.

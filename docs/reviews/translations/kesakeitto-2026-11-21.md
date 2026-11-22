@@ -27,3 +27,9 @@
 - **Avoinna:** Valmistusta ei ole itse testattu; lähdeohjeen ja Recipavon muokattujen määrien vaikutusta koostumukseen on vielä arvioitava. Käännösten lopulliset Codex-semanttiikkatiivisteet ja hyväksyntärekisterimerkinnät puuttuvat.
 
 Tämä on luonnoksen tekstuaalinen vertailu, ei `meta/kaannokset/codex-review-evidence.json` -rekisterin kuittaus. `decision: hold` pysyy voimassa. Fyysinen koekeittiökoe ei yksin ole julkaisun pakollinen ehto, jos muu riippumaton evidenssi riittää.
+
+## Chat 3:n 22.11.2026 merkitysvertailu ja versiosidonta
+
+Nykyinen FI-lähde täsmennettiin 1,5 % kevytmaidoksi ja oikean kasviskypsyyden haarukkatarkistuksella. Sama merkitys on kirjoitettu EN `semi-skimmed milk, 1.5% fat`, SV `lättmjölk, 1,5 % fett` ja TH `นมไขมันต่ำ ไขมัน 1.5%` -ainesosariveihin ja neljännen valmistusvaiheen kypsyysohjeisiin. Maidon ja vehnän allergeenit sekä jäähtymisen ohjeet säilyvät kaikilla kielillä.
+
+**Tarkistuksen tyyppi:** Chat 3:n suora tekstuaalinen valmistus- ja semantiikkakatselmointi, 11/11 ainesosariviä ja 5/5 vaihetta jokaisessa FI/EN/SV/TH-parissa, ei itsenäinen ulkopuolisen hyväksyjän allekirjoitus. FI-lähteen uusi raakateksti-SHA256 `a43a0dfe31b1e9b2f567b601be66e0b818b40c0731e8a372062b2ba333fb25af`. Virallinen `semanticHash` ja `meta/kaannokset/codex-review-evidence.json`-portti pysyvät **HOLD**: ei kirjoitettu tekaistuja `outcome: pass` -merkintöjä.

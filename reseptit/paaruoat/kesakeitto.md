@@ -53,7 +53,7 @@ ingredients:
     item: "vettä"
   - amount: 400
     unit: "g"
-    item: "maitoa"
+    item: "kevytmaitoa, rasvaa 1,5 %"
   - amount: 20
     unit: "g"
     item: "vehnäjauhoja"
@@ -77,11 +77,11 @@ Uudet perunat, porkkanat, kukkakaali, herneet ja tilli kypsyvät kesäkeitoksi l
 1. Pese perunat ja puolita suuret. Kuori ja viipaloi porkkanat, paloittele kukkakaali pieniksi kukinnoiksi ja hienonna kevätsipuli. Pidä sipulin vihreät osat erillään.
 2. Kiehauta 700 g vettä ja lisää suola. Lisää perunat ja porkkanat ja keitä miedosti 7–8 minuuttia.
 3. Lisää kukkakaali ja kevätsipulin vaaleat osat. Keitä 5–7 minuuttia, lisää herneet ja vihreät sipuliosat ja jatka pari minuuttia.
-4. Sekoita vehnäjauhot huolellisesti kylmään maitoon. Kaada jauhoseos keittoon ohuena nauhana koko ajan sekoittaen. Anna poreilla hiljalleen 4–5 minuuttia, jotta jauhot kypsyvät. Vältä kasvisten ylikeittämistä.
+4. Sekoita vehnäjauhot huolellisesti kylmään maitoon. Kaada jauhoseos keittoon ohuena nauhana koko ajan sekoittaen. Anna poreilla hiljalleen 4–5 minuuttia, jotta jauhot kypsyvät. Kokeile perunoiden ja porkkanoiden kypsyyttä haarukalla; jatka tarvittaessa varovasti kypsennystä sekoittaen. Vältä kasvisten ylikeittämistä.
 5. Ota pois lämmöltä ja sekoita joukkoon voi ja hienonnettu tilli. Tarjoa kuumana.
 
 ## Muistiinpanot
 
-- Sisältää maitoa ja vehnää. Jäähdytä tähteet nopeasti.
-- Kuva on tekoälyllä tuotettu havainnekuva; resepti on toimituksellinen luonnos. Omaa valmistustestiä, ravintolaskentaa, GK-arviota tai hyväksyttyä gluteenittomuusväitettä ei ole tehty.
+- Sisältää maitoa ja vehnää. Tarjoa kuumana. Jäähdytä tähteet nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6 °C:ssa.
+- Kuva on tekoälyllä tuotettu havainnekuva; resepti on toimituksellinen luonnos. Omaa fyysistä valmistustestiä, hyväksyttyä koko reseptin ravintolaskentaa, GK-arviota tai gluteenittomuusväitettä ei ole tehty.
 - Lähdevertailu: [Martat](https://www.martat.fi/reseptit/kesakeitto/). Oma, muokattu annosresepti, ei lähdetekstin kopio.
