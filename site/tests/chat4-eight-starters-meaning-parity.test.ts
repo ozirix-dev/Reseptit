@@ -10,7 +10,7 @@ const expectedUnits: Record<string,Record<string,string>> = {
   en: {tl: "tsp", kpl: "pcs"}, sv: {tl: "tsk", kpl: "st"},
   th: {tl: "ช้อนชา", kpl: "ชิ้น"}
 };
-type Parsed = { data: { [key:string]: any }; body: string };
+type Parsed = { data: { [key:string]: any }; content: string };
 function load(path: string): Parsed {
   const md = parseMarkdown(readFileSync(new URL(path, root), "utf8"));
   assert.ok(md, path + ": valid frontmatter");
@@ -42,7 +42,7 @@ test("Chat-4 eight starters: 24 draft translations retain amounts, meanings' str
         assert.equal(b[k].unit, expectedUnits[lang][a[k].unit] ?? a[k].unit, path + " unit " + k);
         assert.ok(String(b[k].item ?? "").trim(), path + " translated item " + k);
       }
-      assert.equal(stepCount(tr.body), stepCount(fi.body), path + " instruction steps");
+      assert.equal(stepCount(tr.content), stepCount(fi.content), path + " instruction steps");
       checked++;
     }
   }
