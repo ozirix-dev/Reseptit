@@ -57,7 +57,7 @@ A warm, gentle mustard sauce for ham that needs no roasting juices.
 ## Preparation
 
 1. Melt butter in a small saucepan, stir in flour and cook for one minute without browning.
-2. Whisk in the vegetable stock gradually and add the cream. Bring to a simmer and cook for 4–5 minutes.
+2. Whisk in the vegetable stock gradually and add the cream. Bring to a boil, then simmer for 4–5 minutes.
 3. Stir in both mustards, honey and pepper. Heat gently, without boiling hard.
 4. Serve straight away with cooked Christmas ham. Taste before adding any salt, as mustard already contains salt.
 

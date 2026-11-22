@@ -57,3 +57,13 @@
 ## Jatkotarkistus 22.11.2026 – vaniljakastikkeen paakkujen käsittely
 
 FI/EN/SV/TH-valmistusvaiheiden 3 teksteistä poistettiin paakkujen valinnainen siivilöinti ja korvattiin se pienien paakkujen vatkaamisella tasaisiksi. Tämä säilyttää ainesosat laskennallista ravintosisältöä varten. Vain menetelmäteksti muuttui; annosmäärä, ainesosat ja lämpötila 82–85 °C pysyivät ennallaan. FI-lähde SHA-256 `ec655927a2ae1370f6283740c1bc533e81970926f80705a875dd75653e10fe28`. Tämä merkintä on Chat 3:n rajattu merkitysvertailu; se **ei ole virallinen Codexin tai riippumattoman tarkastajan PASS**. Kaikki neljä kieliversiota pysyvät Draft/HOLD.
+
+## Chat 3 – lisäkielikatselmointi 22.11.2026 (uusi main-synkronointi)
+
+**Tarkistus-HEAD ennen muutosta:** `174248f87e403b14564b1c207911edbafaa1f0d6`. Verrattiin kaikkien 10 kastikkeen FI-lähteiden valmistusvaiheiden työjärjestys, kuumennusajat ja kriittiset ainesosanimet EN/SV/TH-kieliin. Kolme toimituksellista korjausta:
+
+- `kermainen-tillikastike` TH vaihe 2: `น้ำมะนาว` → `น้ำมะนาวเหลือง` (sitruuna, ei monitulkintainen lime). Vastaava thaikielinen ainesosarivi oli jo sitruuna.
+- `puolukkakastike-jalkiruokiin` TH vaihe 3: `น้ำมะนาว` → `น้ำมะนาวเหลือง`; noudattaa FI:n sitruunamehua ja TH:n ainesosariviä.
+- `sinappikastike-joulukinkulle` EN vaihe 2: `Bring to a simmer` → `Bring to a boil, then simmer`; FI:n `Kuumenna kiehuvaksi ja hauduta 4–5 minuuttia` on nyt merkitykseltään täsmätty EN:ssä. SV ja TH kuvasivat jo kiehautuksen.
+
+Näiden muutosten jälkeen 10 reseptin FI/EN/SV/TH määrät, annokset, olennaiset valmistusvaiheajat ja kuumennusohjeet ovat **Chat 3:n rajatun merkitysvertailun** perusteella yhdenmukaiset. Tässä ei väitetä ulkopuolisen riippumattoman hyväksyjän, Codexin tai projektin virallisen `semanticHash`-rekisterin tulosta. Kaikki FI ja EN/SV/TH-reseptit säilyvät `status: draft`; PR #808 pysyy Draft/HOLD-tilassa. Julkaisuhyväksyntä ja Ready/merge kuuluvat erilliseen Repo Guard -porttiin.
