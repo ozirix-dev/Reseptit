@@ -3,6 +3,7 @@
  * reviewed assertion, not a claim that this module verifies culinary truth.
  */
 import { z } from "zod";
+import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 import { semanticHash } from "./translation-semantic-review";
 import type { TranslationAuditResult } from "./translation-audit";
 
@@ -45,6 +46,8 @@ export function fiSourceQualityDecision(
   source: Recipe,
   proof: FiSourceQualityEvidence[string] | undefined,
 ): { accepted: boolean; reason: string } {
+  if (isPublicRecipeQuarantined(source.data.recipe_id))
+    return { accepted: false, reason: "FI source is in public recipe quarantine" };
   if (!proof) return { accepted: false, reason: "FI quality evidence missing" };
   if (proof.source_hash !== semanticHash(source))
     return { accepted: false, reason: "FI quality evidence stale: source hash changed" };

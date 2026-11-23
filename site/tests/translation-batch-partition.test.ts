@@ -35,7 +35,7 @@ const bundle = () => {
 };
 const proofs = (b: ReturnType<typeof bundle>): SemanticEvidence =>
   Object.fromEntries((["en","sv","th"] as const).map(l => [
-    "mock:" + l, {source_hash: b.hashes.fi, translation_hash: b.hashes[l],
+    b.id + ":" + l, {source_hash: b.hashes.fi, translation_hash: b.hashes[l],
       reviewed_at: "2026-11-09", reference: "tests: deliberately human-readable peer comparison",
       outcome: "pass" as const, findings: []},
   ]));
@@ -94,6 +94,23 @@ test("FI-WATER: preparation water is not automatically an ingredient defect", ()
   assert.match(b.source.content, /vedessä/);
   assert.equal(evaluateBatchEntry(b, proofs(b), q).group, "candidate");
 });
+test("a quarantined FI recipe stays in source HOLD despite current evidence in all locales", () => {
+  const b = bundle();
+  const id = "karibia-bammy-kassavaleipa";
+  b.id = id;
+  b.source.data.recipe_id = id;
+  b.hashes.fi = semanticHash(b.source);
+  for (const locale of ["en", "sv", "th"] as const) {
+    const target = b.targets[locale];
+    target.data.recipe_id = id;
+    target.data.translation_of = id;
+    b.hashes[locale] = semanticHash(target);
+  }
+  const result = evaluateBatchEntry(b, proofs(b), quality(b));
+  assert.equal(result.group, "source-hold");
+  assert.match(result.reasons.join(" "), /quarantine/i);
+});
+
 test("source quality missing never produces a release candidate", () => {
   const b = bundle();
   assert.equal(evaluateBatchEntry(b, proofs(b)).group, "source-hold");
