@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "recipe_id": "thai-mango-sticky-rice-tahmariisilla",
+  "source_path": "reseptit/jalkiruoat/thai-mango-sticky-rice-tahmariisilla.md",
+  "source_sha256": "c10cce2974e8c187c42189421034c352cb1f3c1c6bd96b5630d1d20ab7f035c6",
+  "decision": "approved",
+  "reviewed_by": "Chat-1 – nykyisen FI-lähteen dokumentoitu toimituksellinen vertailu",
+  "reviewed_at": "2026-11-23",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://hot-thai-kitchen.com/mango-sticky-rice/",
+      "https://guide.michelin.com/en/article/dining-in/how-to-make-mango-sticky-rice-like-michelin-star-restaurant-r-haan"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/research/2026-11-23-mango-sticky-rice-proteiini-rasva.md",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Nykyinen thai-kookosriisi-mangolla käyttää kuivaa jasmiiniriisiä ja eri kypsennysmenetelmää; tämä thai-glutiiniriisillä liotettu ja höyrytetty makea jälkiruoka eroaa perustellusti. Yksi uusi identiteetti, kaksi tarjoilutapaa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Kaikki yhdeksän riviä punnittu ja FI/EN/SV/TH-rakenteissa samat määrät 200+180+60+2+100+5+20+1+500; 500 g mangoa on syötävää osaa, kookosmaito yhteensä 280 g. Mungpapu ja määrittämätön paistoöljy poistettu aiemmassa katselmoinnissa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Liotus vähintään 4 tuntia, höyrytys 25–35 min tarvittaessa pidempään jyvien kypsyyden mukaan, makean kookosseoksen imeytyminen ja erillinen riisijauholla suurustettu kastike. Hot Thai Kitchenin ja Michelin Guiden kirjalliset julkaistut tekniikat tukevat sovitusta; ei väitettä omasta kokkauskokeesta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kypsän riisin nopea jäähdytys mieluiten tunnin kuluessa, jääkaapissa enintään 24 h, uudelleenkuumennus korkeintaan kerran höyryävän kuumaksi. Mango pestään ja kuoritaan; pakkausten allergeenit tarkistettava. UK FSA:n ohjeeseen viitataan kaikissa kielissä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Neljään annokseen jaetaan koko 200 g kuivaa tahmariisiä, 280 g kookosmaitoa, 60 g sokeria ja 500 g syötävää mangoa sekä kastike; 330 min on toimituksellinen arvio, johon sisältyy vähintään 240 min liotus."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Tämä PASS tarkoittaa vain turvallisesti dokumentoitua pidätystä: FI/EN/SV/TH-kenttien net carbs, total carbs, protein ja fat arvot ovat kaikki null. Kaksi aiemmin arvioitua osalukua 5,07 g/12,94 g ovat vain tutkimusmuistiossa. Koko neljän makron tarkistus ei ole valmis kookosmaidon kuitu-/polyoli- ja hiilihydraattimäärittelyn vuoksi. Ei osittaista julkista ravintoväitettä."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Juuri tälle tahmariisille, kypsyydelle ja annoskokoonpanolle ei ole hyväksyttyä GI- ja GK-lähdeketjua. Numeerinen GK jätetään määrittämättä; vanhaa jasmiiniriisiannoksen GK:ta ei käytetä."
+    }
+  }
+}
