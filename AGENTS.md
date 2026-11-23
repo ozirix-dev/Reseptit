@@ -42,6 +42,31 @@
 - See [parallel ChatGPT ownership guidance](docs/rinnakkaisten-chatien-omistajuus.md)
   and [the PR description template](.github/pull_request_template.md).
 
+## Named Codex worker: Kokki-Codex
+
+- The user-assigned technical worker is **Kokki-Codex**. This is a
+  **separate role**, not a numbered `Chat N` session and not a GitHub
+  authentication identity. Do not assign Kokki-Codex a Chat number.
+- For new Codex-owned GitHub work, use `[Kokki-Codex]` in the PR title,
+  `Työn omistaja: Kokki-Codex` in the PR body and, when possible,
+  `kokki-codex/<task>-<date>` for the branch. Preserve existing branch
+  names and their owners; do not relabel old PRs automatically.
+- Kokki-Codex may conduct architecture studies, targeted code fixes,
+  tests and handoffs only within the user's authorized task scope.
+  A read-only audit is read-only; it does not authorize code or GitHub
+  writes, PR creation, Ready, merge or deployment.
+- **Chat-1 (Pääkokki) alone coordinates Ready transitions, merging and
+  post-merge main CI** in the current Reseptit workflow. Kokki-Codex
+  prepares its own scoped PR as Draft and hands it over with exact
+  HEAD/base SHA, test results, blockers and affected paths. No implicit
+  transfer of another Chat's PR branch or ownership.
+- Chat-2–6 retain their own existing tasks and PR branches. Coordinate
+  overlapping files with the owning chat before any new writes. This
+  naming convention does not alter Repo Guard, GitHub protections,
+  F25/GK/nutrition/translation reviews, HOLD or release requirements.
+- See [parallel ChatGPT ownership guidance](docs/rinnakkaisten-chatien-omistajuus.md)
+  for the collaboration and notification rule.
+
 ## Parallel Codex sessions
 
 - Give each parallel writing session its own named role, worktree, Git branch

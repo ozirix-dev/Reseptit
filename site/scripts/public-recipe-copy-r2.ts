@@ -16,6 +16,39 @@ interface ReviewedRecipeCopy {
 // Display-only edits. Canonical ingredients, release evidence and calculation inputs
 // stay in their source files. Edits match the approved display text before this pass.
 const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
+  // #327 / Chat 2: ensure steamed egg is fully set in nasi uduk (all four public locales).
+  "indonesialainen-nasi-uduk-aamiaisella/fi": { method: [["2. Kypsennä 110 g kuorettomana punnittua kananmunaa höyryssä pienessä astiassa ilman lisättyä rasvaa. Käytä koko määrä.", "2. Punnitse kananmunia yhteensä 110 g ilman kuoria pieneen höyrytykseen sopivaan astiaan. Höyrykypsennä ilman lisättyä rasvaa, kunnes sekä valkuainen että keltuainen ovat kauttaaltaan hyytyneet. Tarkista kypsyys myös astian keskeltä ja käytä koko 110 g munamäärä."]] },
+  "indonesialainen-nasi-uduk-aamiaisella/en": { method: [["2. Steam 110 g of egg weighed without the shell in a small dish with no added fat. Use all of it.", "2. Weigh a total of 110 g egg without shells into a small heatproof dish suitable for steaming. Steam without added fat until both egg whites and yolks are fully set throughout, including the centre of the dish. Use all 110 g."]] },
+  "indonesialainen-nasi-uduk-aamiaisella/sv": { method: [["2. Ångkoka 110 g ägg uppvägt utan skal i en liten form utan tillsatt fett. Använd hela mängden.", "2. Väg upp sammanlagt 110 g ägg utan skal i en liten värmetålig form som passar för ångkokning. Ångkoka utan tillsatt fett tills både äggvita och äggula har stelnat helt, även i mitten av formen. Använd alla 110 g."]] },
+  "indonesialainen-nasi-uduk-aamiaisella/th": { method: [["2. นึ่งเนื้อไข่ไก่ที่ชั่งไม่รวมเปลือก 110 กรัมในถ้วยเล็กโดยไม่เติมไขมัน ใช้ไข่ทั้งหมด", "2. ชั่งเนื้อไข่ไก่ไม่รวมเปลือกรวม 110 กรัมใส่ภาชนะทนความร้อนขนาดเล็กที่เหมาะสำหรับนึ่ง นึ่งโดยไม่เติมไขมันจนทั้งไข่ขาวและไข่แดงสุกทั่วถึงและเซตตัว รวมถึงบริเวณกึ่งกลางภาชนะ ใช้ไข่ทั้งหมด 110 กรัม"]] },
+  // #327 / Chat 2: specify fully set steamed egg in FI lablabi.
+  "pohjoisafrikkalainen-lablabi/fi": { method: [["2. Kypsennä 110 g kuorettomana punnittua kananmunaa höyryssä pienessä astiassa ilman lisättyä rasvaa. Käytä koko määrä.", "2. Mittaa kananmunia yhteensä 110 g ilman kuoria pieneen höyrytykseen soveltuvaan astiaan. Höyrykypsennä ilman lisättyä rasvaa, kunnes sekä valkuainen että keltuainen ovat kauttaaltaan hyytyneet; tarkista kypsyys myös astian keskeltä. Käytä koko 110 g munamäärä."]] },
+  // #327 Chat 2: minced pork must reach 70 C and the listed eggs use no added fat.
+  "thai-porsasjok/fi": { method: [["2. Lisää porsaan jauheliha ja raastettu inkivääri. Kypsennä sekoittaen, kunnes liha on täysin kypsää.\n3. Kypsennä kananmunat erikseen ja tarjoa ne puuron päällä.", "2. Lisää ainesluettelon 150 g raakaa sianjauhelihaa ja raastettu inkivääri kuumaan puuroon. Murusta jauheliha tasaisesti, sekoita ja jatka hauduttamista, kunnes liha on kauttaaltaan kypsää ja jauhelihan sisälämpötila on vähintään 70 °C. Tarkista kypsyys elintarvikelämpömittarilla; jatka kypsentämistä tarvittaessa.\n3. Keitä ainesluettelon kaksi kananmunaa erikseen vedessä, kunnes sekä valkuainen että keltuainen ovat kypsiä. Kuori munat ja tarjoa puuron päällä. Älä lisää paistorasvaa tai muita ainesluetteloon kuulumattomia lisukkeita."]] },
+  // #327 Chat 2: raw chicken added after rice porridge must reach 75 °C.
+  // The two eggs are boiled, without unlisted cooking oil.
+  "thai-jok-kanalla/fi": { method: [["2. Lisää kuutioitu broilerin rintafilee ja raastettu inkivääri. Keitä, kunnes kana on täysin kypsää.\n3. Kypsennä kananmunat erikseen ja tarjoa ne puuron päällä.", "2. Kuutioi ainesluettelon 150 g raakaa, nahatonta broilerin rintafileetä ja lisää se puuroon yhdessä raastetun inkiväärin kanssa. Jatka keittämistä, kunnes broileri on kauttaaltaan kypsää ja paksuimman palan sisälämpötila on vähintään 75 °C. Tarkista lämpötila elintarvikelämpömittarilla; jatka kypsennystä tarvittaessa.\n3. Keitä ainesluettelon kaksi kananmunaa erikseen vedessä, kunnes sekä valkuainen että keltuainen ovat kypsiä. Kuori munat ja tarjoa ne puuron päällä. Älä lisää paistorasvaa tai ainesluettelon ulkopuolisia lisukkeita."]] },
+  // #404 / Chat 5: replace FI upma's unlisted meat and sides with EN/SV/TH source-backed dry-toast and vegetable simmer method.
+  "intialainen-mannasuurimoupma/fi": { method: [["1. Mittaa mannasuurimo kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Tarjoa lämpimänä kookoschutneyn tai jogurtin kanssa.", "1. Kuumenna kuiva, paksupohjainen pannu keskilämmölle. Lisää 100 g vehnämannasuurimoita ja paahda jatkuvasti sekoittaen, kunnes ne tuoksuvat kevyesti mutta eivät ruskistu. Siirrä suurimot kulhoon.\n2. Kuori ja kuutioi ainesluettelon yksi porkkana pieneksi. Huuhtele 150 g herneitä ja 5 g tuoreita currylehtiä. Kuumenna kattilassa koko 300 ml vettä ja lisää porkkana, herneet sekä currylehdet. Keitä, kunnes kasvikset ovat kypsiä.\n3. Lisää paahdetut mannasuurimot vähitellen hiljalleen kiehuvaan kasvisseokseen jatkuvasti sekoittaen, etteivät ne paakkuunnu. Pienennä lämpöä ja hauduta, kunnes suurimot ovat pehmeitä ja vesi on imeytynyt. Mausta vain ainesluettelon suolalla tarpeen mukaan.\n4. Jaa lämmin upma kahteen annokseen. Tarjoa sellaisenaan ilman lihaa, kookoschutneyta, jogurttia, lisättyä rasvaa tai muita aineslistan ulkopuolisia lisukkeita."]] },
+  // #327 / Chat 2: pin banana's 120 g to the peeled edible mass, not the peel.
+  // FI display only; sealed four-language sources and nutrition stay unchanged.
+  "indonesialainen-pisang-goreng-aamiaiseksi/fi": { method: [["2. Kuori banaani ja leikkaa pitkittäisiksi tai vinottaisiksi, tasapaksuiksi viipaleiksi. Kääntele viipaleet taikinassa.", "2. Kuori banaani ja punnitse vasta kuorinnan jälkeen 120 g syötävää banaania ainesluettelon mukaan. Leikkaa punnittu banaani pitkittäisiksi tai vinottaisiksi, tasapaksuiksi viipaleiksi ja kääntele viipaleet taikinassa."]] },
+  // #404 / Chat 5: remove false oil/stock and require cooked chicken; match source-specific EN/SV/TH preparation.
+  "vietnamilainen-pho-ga-aamuksi/fi": { method: [["1. Kuumenna kattilassa öljy tai liemi. Lisää aromit ja hitaammin kypsyvät ainekset; paista tai hauduta muutama minuutti.\n2. Kaada kattilaan liemi ja keitä miedosti, kunnes pääraaka-aineet ovat kypsiä.\n3. Lisää nuudelit, lehtivihannekset tai muut nopeasti kypsyvät ainekset niiden kypsymisajan mukaan.\n4. Keitä inkivääriä ja tähtianista vedessä miedolla lämmöllä. Kypsennä kananrinta vedessä, nosta se ja viipaloi. Kypsennä riisinuudelit pakkauksen ajan ja tarjoa kuumassa liemessä kanan kanssa.", "1. Kiehauta 700 ml vettä kattilassa. Lisää 2 g tuoretta inkivääriä ja 1 g tähtianista. Laske lämpöä, peitä kattila ja anna mausteiden hautua hetki. Älä lisää öljyä tai valmista lientä.\n2. Lisää mausteveteen kaikki 150 g raakaa nahatonta broilerin rintafileetä. Hauduta hiljalleen, kunnes paksuimman kohdan sisälämpötila on vähintään 75 °C elintarvikelämpömittarilla mitattuna. Nosta kypsä kana puhtaalle leikkuulaudalle, anna levätä hetki ja viipaloi ohuesti.\n3. Keitä 100 g kuivia riisinuudeleita erillisessä kattilassa pakkauksen ohjeen mukaan. Valuta ja jaa nuudelit kahteen kulhoon. Pese raakaan kanaan koskeneet välineet ennen niiden käyttämistä kypsälle ruoalle.\n4. Kauho kuuma maustettu keitinvesi nuudeleiden päälle ja jaa kypsä kana kulhoihin. Lisää ainesluettelon suolaa tarvittaessa ja tarjoile heti."]] },
+  // #404 / Chat 5: replace false patty batter instructions in FI poha with the weighed rice-flake method already in EN/SV/TH.
+  "indialainen-poha-maapahkinoilla/fi": { method: [["1. Raasta, muussaa tai hienonna pääraaka-aine. Sekoita joukkoon taikinan ainekset ja lisää vettä vain sen verran, että seos pysyy koossa.\n2. Kuumenna pannulla ohut kerros öljyä. Muotoile pieniksi pihveiksi tai lusikoi taikina pannulle.\n3. Paista keskilämmöllä molemmin puolin kypsäksi ja rapeapintaiseksi. Paista erissä, jotta pannu ei jäähdy.\n4. Huuhtele riisihiutaleet nopeasti ja valuta. Kuullota maapähkinät, herneet ja curry-lehdet öljyssä; lisää hiutaleet ja kypsennä sekoittaen. Viimeistele korianterilla ja sitruunamehulla.", "1. Mittaa 100 g riisihiutaleita. Huuhtele ne nopeasti siivilässä kylmällä vedellä ja valuta hyvin. Hiutaleiden pitää pehmetä mutta pysyä irtonaisina.\n2. Kuumenna pannulla koko ainesluettelon 1 rkl neutraalia paistoöljyä. Lisää 20 g maapähkinöitä ja 3 g currylehtiä; paahda varovasti sekoittaen, etteivät pähkinät pala. Lisää 50 g herneitä ja kypsennä ne kauttaaltaan.\n3. Lisää valutetut riisihiutaleet pannulle ja kääntele varovasti maapähkinöiden ja herneiden joukkoon. Kuumenna miedolla lämmöllä, kunnes kaikki on kauttaaltaan kuumaa. Lisää ainesluettelon suolaa tarvittaessa.\n4. Nosta pannu pois liedeltä. Jaa kahteen annokseen ja viimeistele yhteensä 1 rkl:lla hienonnettua tuoretta korianteria ja 1 rkl:lla sitruunamehua. Käytä vain lueteltuja raaka-aineita."]] },
+  // #327 / Chat 5: sesame is included in the sealed eight-roll nutrition estimate.
+  // Show the 8 g amount in each language; keep all canonical recipes and macros unchanged.
+  "keto-kauralesesampylat/fi": { method: [["5. Jaa taikina kahdeksaan osaan ja muotoile kostein käsin sämpylöiksi. Lisää halutessasi pinnalle seesaminsiemeniä.", "5. Jaa taikina kahdeksaan osaan ja muotoile kostein käsin sämpylöiksi. Ripottele pinnalle yhteensä 8 g seesaminsiemeniä, jotta annos vastaa ilmoitettuja ravintoarvoja. Jos jätät seesamin pois, ilmoitetut ravintoarvot eivät enää vastaa valmistamaasi versiota."]] },
+  "keto-kauralesesampylat/en": { method: [["5. Divide the dough into eight parts and shape into rolls with wet hands. If you want, add sesame seeds on top.", "5. Divide the dough into eight parts and shape into rolls with wet hands. Sprinkle a total of 8 g sesame seeds on top to match the stated nutrition values. If you omit the sesame seeds, the stated nutrition values no longer describe your version."]] },
+  "keto-kauralesesampylat/sv": { method: [["5. Dela degen i åtta delar och forma till frallor med fuktiga händer. Om du vill, lägg sesamfrön ovanpå.", "5. Dela degen i åtta delar och forma till frallor med fuktiga händer. Strö totalt 8 g sesamfrön ovanpå för att följa de angivna näringsvärdena. Om du utelämnar sesamfröna motsvarar de angivna näringsvärdena inte längre din version."]] },
+  "keto-kauralesesampylat/th": { method: [["5. แบ่งแป้งออกเป็นแปดส่วนแล้วปั้นเป็นขนมปังก้อนด้วยมือที่เปียก หากต้องการให้เพิ่มเมล็ดงาลงไปด้านบน", "5. แบ่งแป้งออกเป็นแปดส่วนแล้วปั้นเป็นขนมปังก้อนด้วยมือที่เปียก โรยเมล็ดงารวม 8 กรัมบนขนมปังเพื่อให้ตรงกับข้อมูลโภชนาการที่ระบุไว้ หากไม่ใส่เมล็ดงา ข้อมูลโภชนาการที่ระบุไว้จะไม่ตรงกับสูตรที่ทำจริง"]] },
+  // #327 / Chat 5: align FI halloumi toast instructions with existing EN/SV/TH;
+  // do not touch nutrition-bound recipe source, amounts or GK evidence.
+  "valimerellinen-halloumi-tomaattileipa/fi": {"description":"Paahdettua hapanjuurileipää, jonka päällä on lämpimänä paistettua halloumia, tuoretta tomaattia ja vihreitä oliiveja.","method":[["1. Sekoita jauhot, neste ja suola. Vaivaa pehmeäksi taikinaksi ja anna levätä 10 minuuttia. Jos reseptissä on valmis leipä tai taikina, siirry täyttöön.\n2. Jaa taikina osiin ja painele tai kauli ohuiksi leiviksi. Lisää taikinaan kuuluva täyte tai mausteöljy.\n3. Paista kuumalla pannulla molemmin puolin kypsäksi ja nosta liinan alle pysymään pehmeänä.\n4. Viipaloi halloumi ja paista se kevyesti öljytyllä pannulla kullanruskeaksi. Paahda hapanjuurileipä, lisää viipaloitu tomaatti ja oliivit ja aseta lämmin halloumi päälle.","1. Viipaloi 150 g halloumia tasakokoisiksi paloiksi. Huuhtele ja viipaloi 100 g tomaattia. Valuta tai viipaloi 25 g vihreitä oliiveja ja poista kivet tarvittaessa. Käytä yhteensä 100 g valmista hapanjuurileipää.\n2. Kuumenna pannu keskilämmölle ja lisää ainesluettelon 1 rkl neutraalia paistoöljyä. Paista halloumiviipaleet molemmin puolin kullanruskeiksi. Älä lisää muuta rasvaa.\n3. Paahda leipä kuivalla pannulla tai leivänpaahtimessa rapeaksi.\n4. Jaa leipä, tomaatti, oliivit ja paistettu halloumi kahdelle lautaselle. Lisää suolaa vain tarvittaessa ja tarjoile halloumi lämpimänä."]]},
+  // #327 Chat 2: replace the remaining formulaic FI intro with facts from
+  // the source-locked maakouda method. Do not change its GK or translations.
+  "pohjoisafrikkalainen-maakouda-punnittu-v2/fi": {"description":"Marokkolaiset maakouda-perunapihvit tehdään keitetyistä perunoista, kananmunasta ja vehnäjauhoista. Persiljalla ja juustokuminalla maustetusta massasta muotoillaan kuusi pihviä, jotka paistetaan pannulla kullanruskeiksi."},
   // #327: remove generic cucumber som tam preparation text in four locales.
   // Source-backed nutrition/GK and published translation bytes are unchanged.
   "som-tam-vhh-kurkkuna/fi": {"description":"Kurkkusuikaleet, tomaatti ja valmiiksi kypsennetyt vihreät pavut saavat tulisen limetti-kalakastikkeen. Paahdetut maapähkinät tuovat rapeutta neljään annokseen.","method":[["1. Punnitse luetellut syötävät raaka-aineet grammoina; älä lisää luetteloimatonta rasvaa tai lisukkeita.\n2. Kaavi kurkun siemenosa pois ja punnitse sen jälkeen 500 g syötävää kurkkua. Punnitse 100 g jo keitettyjä ja valutettuja vihreitä papuja; raakoja papuja ei käytetä sellaisenaan. Paloittele tomaatti.\n3. Murskaa valkosipuli ja chili. Rouhi karkeasti puolet kokonaisista paahdetuista maapähkinöistä, älä jauha tahnaksi. Lisää limettimehu, kalakastike ja 4 g Foodin-erytritolia.\n4. Sekoita kaikki kasvikset ja kastike. Lisää loput maapähkinät. Syö koko kastike ja jaa neljään annokseen.","1. Kaavi kurkusta siemenosa pois ja punnitse jäljelle jäävästä syötävästä kurkusta 500 g. Paloittele 150 g tomaattia. Mittaa 100 g valmiiksi kypsennettyjä ja valutettuja vihreitä papuja; älä käytä papuja raakoina.\n2. Murskaa 3,5 g valkosipulia ja 5 g chiliä. Sekoita niihin kastikkeeksi kaikki 30 g limettimehua, 15 g kalakastiketta ja 4 g Foodin-erytritolia.\n3. Rouhi karkeasti puolet 30 g paahdetuista suolattomista maapähkinöistä. Lisää kurkku, tomaatti ja kypsät pavut kulhoon ja kääntele joukkoon koko kastike.\n4. Lisää rouhitut pähkinät ja viimeistele lopuilla kokonaisilla paahdetuilla maapähkinöillä. Jaa salaatti ja kaikki kastike neljään annokseen; lisää luettelon suolaa vain tarvittaessa."]]},
@@ -493,7 +526,62 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
   },
   "paprikainen-vhh-gulassi/fi": {
     "method": [
-      ["Lisää 0,5 g mustapippuria ja 10 g persiljaa. Tarjoa koko pata kastikkeineen ja rasvoineen 150 g noin 40-prosenttista smetanaa kanssa neljänä annoksena. Erilliset lisukkeet eivät kuulu annokseen.", "Lisää 0,5 g mustapippuria ja 10 g persiljaa. Jaa koko pata kastikkeineen ja rasvoineen neljään annokseen. Tarjoa niiden kanssa yhteensä 150 g noin 40-prosenttista smetanaa. Erilliset lisukkeet eivät kuulu annoksiin."]
+      [
+        "Hauduta kannen alla 1,5 tuntia, kunnes liha on mureaa.",
+        "Hauduta liedellä kannellisessa padassa miedolla lämmöllä 1,5 tuntia, kunnes liha on mureaa."
+      ],
+      [
+        "Lisää 0,5 g mustapippuria ja 10 g persiljaa. Tarjoa koko pata kastikkeineen ja rasvoineen 150 g noin 40-prosenttista smetanaa kanssa neljänä annoksena. Erilliset lisukkeet eivät kuulu annokseen.",
+        "Lisää 0,5 g mustapippuria ja 10 g persiljaa. Jaa koko pata kastikkeineen ja rasvoineen neljään annokseen. Tarjoa niiden kanssa yhteensä 150 g noin 40-prosenttista smetanaa. Erilliset lisukkeet eivät kuulu annoksiin."
+      ]
+    ],
+    "notes": [
+      [
+        "Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.",
+        "Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.\n\nValmistustapa: haudutus liedellä kannellisessa padassa. Naudanlihaa ruskistetaan ja pata hautuu liedellä miedolla lämmöllä 1,5 tuntia; ohjeessa ei ole uunivaihetta."
+      ]
+    ]
+  },
+  "paprikainen-vhh-gulassi/en": {
+    "method": [
+      [
+        "Simmer covered for 1.5 hours until the beef is tender.",
+        "Simmer on the stovetop in a covered pot over low heat for 1.5 hours until the beef is tender."
+      ]
+    ],
+    "notes": [
+      [
+        "Nutrition values are temporarily withheld pending source verification.",
+        "Nutrition values are temporarily withheld pending source verification.\n\nCooking method: simmering on the stovetop in a covered pot. Brown the beef, then simmer the covered pot over low heat for 1.5 hours; the recipe has no oven stage."
+      ]
+    ]
+  },
+  "paprikainen-vhh-gulassi/sv": {
+    "method": [
+      [
+        "Sjud under lock i 1,5 timmar tills köttet är mört.",
+        "Låt sjuda på spisen under lock och på svag värme i 1,5 timmar tills köttet är mört."
+      ]
+    ],
+    "notes": [
+      [
+        "Näringsvärden visas tills vidare inte i väntan på källkontroll.",
+        "Näringsvärden visas tills vidare inte i väntan på källkontroll.\n\nTillagningssätt: sjudning på spisen i en gryta med lock. Bryn köttet och sjud sedan grytan på svag värme i 1,5 timmar; receptet har inget ugnssteg."
+      ]
+    ]
+  },
+  "paprikainen-vhh-gulassi/th": {
+    "method": [
+      [
+        "ปิดฝาเคี่ยว 1.5 ชั่วโมงจนเนื้อนุ่ม",
+        "ปิดฝาเคี่ยวในหม้อบนเตาด้วยไฟอ่อน 1.5 ชั่วโมงจนเนื้อนุ่ม"
+      ]
+    ],
+    "notes": [
+      [
+        "ข้อมูลโภชนาการยังไม่แสดงระหว่างตรวจสอบแหล่งข้อมูล",
+        "ข้อมูลโภชนาการยังไม่แสดงระหว่างตรวจสอบแหล่งข้อมูล\n\nวิธีปรุง: เคี่ยวบนเตาในหม้อปิดฝา หลังจากผัดเนื้อให้เหลืองแล้วให้เคี่ยวในหม้อปิดฝาบนเตาด้วยไฟอ่อน 1.5 ชั่วโมง สูตรนี้ไม่มีขั้นตอนอบในเตาอบ"
+      ]
     ]
   },
   "parmesaani-lyttyperunat/en": {
@@ -751,9 +839,11 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
   "vietnamilainen-hu-tieu-aamiaiskeitto/en": {
     "description": "Pork loin strips and rice noodles cook in the same pot. Bean sprouts and fresh coriander finish this breakfast soup for two. Serve it with all the cooking liquid."
   },
+  // #327 / Chat 2: fully cook pork and heat bean sprouts in FI public hu tieu.
   "vietnamilainen-hu-tieu-aamiaiskeitto/fi": {
     "description": "Riisinuudelit ja porsaan ulkofileesuikaleet kypsyvät samassa kattilassa. Pavunidut ja tuore korianteri viimeistelevät aamiaiskeiton kahdelle.",
-    "title": "Hu tieu -riisinuudelikeitto porsaanlihalla"
+    "title": "Hu tieu -riisinuudelikeitto porsaanlihalla",
+    method: [["1. Kiehauta vesi. Lisää suikaleiksi leikattu porsaan ulkofilee ja kypsennä kauttaaltaan.\n2. Lisää kuivat riisinuudelit ja kypsennä pakkauksen ohjeen mukaan. Lisää pavunidut ja kuumenna kauttaaltaan.", "1. Kiehauta ainesluettelon kaikki 700 g vettä. Suikaloi 150 g raakaa porsaan ulkofileetä ja lisää suikaleet kiehuvaan veteen. Keitä, kunnes porsaanliha on kauttaaltaan kypsää ja sisälämpötila paksuimmasta suikaleesta mitattuna vähintään 70 °C. Varmista lämpötila elintarvikelämpömittarilla; jatka kypsennystä tarvittaessa.\n2. Lisää 100 g kuivia riisinuudeleita ja kypsennä nuudelit pakkauksen ohjeen mukaan. Lisää kaikki 150 g pavunituja kiehuvaan keittoon ja kypsennä, kunnes idut ovat kunnolla kuumentuneet kauttaaltaan. Tarjoa vasta, kun liha, nuudelit ja pavunidut ovat kypsiä."]]
   },
   "vietnamilainen-hu-tieu-aamiaiskeitto/sv": {
     "description": "Strimlat fläsk och risnudlar kokas i samma kastrull. Böngroddar och färsk koriander ger smak åt frukostsoppan för två. Servera med hela kokspadet."
@@ -776,6 +866,9 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
   "valimerellinen-menemen-fetalla/th": {
     nutritionBasis: "### สมมติฐานในการคำนวณคุณค่าทางโภชนาการ\n\nค่าประมาณสำหรับ 2 ที่ใช้ชีสเฟตาจากนมแพะไขมัน 25% จำนวน 150 กรัม ([Fineli 11211](https://fineli.fi/fineli/api/v1/foods/11211)) ไข่ไก่ไม่รวมเปลือก 2 ฟอง ฟองละ 55 กรัม มะเขือเทศ 125 กรัม พริกหวานสีเขียว 170 กรัม และน้ำมันปรุงอาหาร 1 ช้อนโต๊ะ (13.5 กรัม) โดยนับน้ำมันทั้งหมดรวมในอาหาร หากเปลี่ยนชนิดเฟตา ขนาดผัก หรือมีน้ำมันเหลือในกระทะ ค่าจริงจะต่างออกไป ตัวเลขเหล่านี้เป็นค่าประมาณจากการคำนวณ ไม่ใช่ผลวัดอาหารที่ปรุงเสร็จแล้ว",
   },
+  // #327 / Chat 5: replace generic bread/filling steps with the source-backed
+  // thyme-sesame topping and exact dough/oil amounts; preserve sealed sources.
+  "lahi-ita-manakish-zaatarilla/fi": {"description":"Jogurtista, vehnäjauhoista ja vedestä valmistetut ohuet pannuleivät viimeistellään kuivattua timjamia, seesamia ja oliiviöljyä sisältävällä za'atar-tyylisellä päällysteellä.","method":[["1. Sekoita jauhot, neste ja suola. Vaivaa pehmeäksi taikinaksi ja anna levätä 10 minuuttia. Jos reseptissä on valmis leipä tai taikina, siirry täyttöön.\n2. Jaa taikina osiin ja painele tai kauli ohuiksi leiviksi. Lisää taikinaan kuuluva täyte tai mausteöljy.\n3. Paista kuumalla pannulla molemmin puolin kypsäksi ja nosta liinan alle pysymään pehmeänä.\n4. Sekoita vehnäjauho, jogurtti ja vesi pehmeäksi taikinaksi. Jaa kahdeksi litteäksi leiväksi. Sekoita oliiviöljy, kuivattu timjami ja seesaminsiemenet ja levitä leipien päälle. Paista kuumalla pannulla tai uunissa, kunnes reunat ovat kypsiä.","1. Sekoita 150 g vehnäjauhoja, 100 g jogurttia ja 40 ml vettä sekä pieni määrä luettelon suolaa. Vaivaa vain sen verran, että taikina on tasainen ja muotoiltava. Peitä ja anna levätä noin 5 minuuttia.\n2. Sekoita kulhossa 1 rkl oliiviöljyä, 2 g kuivattua timjamia ja 3 g seesaminsiemeniä. Tämä on leipien za'atar-tyylinen päällys, ei taikinan sisään tuleva täyte.\n3. Jaa taikina kahteen osaan ja painele ne ohuiksi, tasapaksuiksi leiviksi. Levitä koko mausteseos leipien pinnalle. Kuumenna paksupohjainen pannu keskilämmölle ja käytä paistamiseen yhteensä vain ainesluettelon 1 rkl neutraalia paistoöljyä.\n4. Paista leivät yksi kerrallaan, tarvittaessa kannen alla, kunnes molemmat puolet ovat saaneet väriä eikä sisällä ole raakaa jauhoista taikinaa. Tarjoile lämpiminä kahtena annoksena."]]},
   "valimerellinen-pinaatti-fetashakshuka/fi": {
     nutritionBasis: "### Ravintoarvion laskentaperusta\n\nKahden annoksen arvio käyttää 150 g vuohenmaitofetaa, jossa on 25 % rasvaa ([Fineli 11211](https://fineli.fi/fineli/api/v1/foods/11211)), kahta kuoretonta kananmunaa (55 g/kpl), 125 g tomaattia, 100 g raakaa täysikasvuista pinaattia (AFCD F008761) ja 1 rkl eli 13,5 g paistoöljyä. Koko öljymäärä lasketaan syödyksi. Tuotevalinta ja mahdollinen pannulle jäävä öljy muuttavat arviota. GK:n historiallinen pinaattitietue on eri kuin ravintolaskennan; GK on erillinen rajattu arvio eikä tämän ravintoarvotaulukon täsmällinen uudelleenlasku.",
   },
@@ -788,6 +881,9 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
   "valimerellinen-pinaatti-fetashakshuka/th": {
     nutritionBasis: "### สมมติฐานในการคำนวณคุณค่าทางโภชนาการ\n\nค่าประมาณสำหรับ 2 ที่ใช้ชีสเฟตาจากนมแพะไขมัน 25% จำนวน 150 กรัม ([Fineli 11211](https://fineli.fi/fineli/api/v1/foods/11211)) ไข่ไก่ไม่รวมเปลือก 2 ฟอง ฟองละ 55 กรัม มะเขือเทศ 125 กรัม ผักโขมใบโตดิบ 100 กรัม (AFCD F008761) และน้ำมันปรุงอาหาร 1 ช้อนโต๊ะ (13.5 กรัม) โดยนับน้ำมันทั้งหมดว่าถูกบริโภค ชนิดผลิตภัณฑ์ที่ใช้และน้ำมันที่เหลือในกระทะทำให้ค่าจริงเปลี่ยนไป ส่วนการประมาณภาระน้ำตาล (GK) เดิมใช้ข้อมูลผักโขมคนละรายการ จึงเป็นการประมาณแบบแยกต่างหาก ไม่ใช่การคำนวณตัวเลขในตารางโภชนาการนี้ซ้ำอย่างตรงกัน",
   },
+  // #327 / Chat 5: the FI source's generic bread-dough steps are incorrect for ready-made toast.
+  // The three existing translated versions contain the safe cooked-egg-specific method.
+  "malesialainen-kaya-paahtoleipa/fi": {"description":"Paahdettua hapanjuurileipää, jonka päällä on kookosmaidosta, kananmunasta ja sokerista valmistettu kaya-tahna sekä voi. Toinen kananmuna paistetaan tarjolle ja jaetaan kahteen annokseen.","method":[["1. Sekoita jauhot, neste ja suola. Vaivaa pehmeäksi taikinaksi ja anna levätä 10 minuuttia. Jos reseptissä on valmis leipä tai taikina, siirry täyttöön.\n2. Jaa taikina osiin ja painele tai kauli ohuiksi leiviksi. Lisää taikinaan kuuluva täyte tai mausteöljy.\n3. Paista kuumalla pannulla molemmin puolin kypsäksi ja nosta liinan alle pysymään pehmeänä.\n4. Vatkaa yksi kananmuna, kookosmaito ja sokeri. Kuumenna seosta varovasti vesihauteessa jatkuvasti sekoittaen, kunnes se sakenee hilloksi. Paahda hapanjuurileipä ja voitele ohuesti voilla. Levitä päälle mitattu määrä kotitekoista kaya-hilloa ja tarjoa toisen kananmunan kanssa.","1. Mittaa kuumuutta kestävään kulhoon 100 ml kookosmaitoa ja 20 g sokeria. Vatkaa joukkoon yksi ainesluettelon kahdesta kananmunasta. Aseta kulho hiljalleen kiehuvan vesihauteen ylle niin, ettei pohja kosketa vettä.\n2. Sekoita kaya-seosta vesihauteessa koko ajan, kunnes se on tasaista, paksua ja kauttaaltaan kypsää. Varmista elintarvikelämpömittarilla, että seos kuumenee kauttaaltaan vähintään 71 °C:seen. Sekoita varovasti, ettei seos juoksetu.\n3. Paahda kaikki 100 g valmista hapanjuurileipää molemmin puolin. Levitä leiville yhteensä 10 g voita ja jaa koko valmistettu kaya-tahna tasaisesti leiville.\n4. Paista toinen kananmuna ainesluettelon 1 rkl:ssa neutraalia paistoöljyä, kunnes sekä valkuainen että keltuainen ovat hyytyneet. Jaa leivät ja lämmin kananmuna kahteen annokseen. Käytä vain luettelon suolaa tarvittaessa."]]},
 };
 
 export function reviewedRecipeCopy(id: string, locale: RecipeLocale): ReviewedRecipeCopy | undefined {

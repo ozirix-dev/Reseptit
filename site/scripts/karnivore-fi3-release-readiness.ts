@@ -19,7 +19,7 @@ async function exists(file: string): Promise<boolean> {
   catch (error) { if ((error as NodeJS.ErrnoException).code === "ENOENT") return false; throw error; }
 }
 
-export async function auditKarnivoreFi3Readiness(root: string): Promise<ReadinessRow[]> {
+export async function auditKarnivoreFi3Readiness(root: string, imageRoot = path.join(root, "kuvat")): Promise<ReadinessRow[]> {
   const sourceMapPath = path.join(root, "docs/reviews/karnivore-10-nutrition-source-map-2026-11-11.json");
   const map = JSON.parse(await readFile(sourceMapPath, "utf8")) as {
     recipes: Array<{ recipeId: string; inputs: Array<{ sourceMatch: string }> }>;
@@ -40,7 +40,7 @@ export async function auditKarnivoreFi3Readiness(root: string): Promise<Readines
     const blockers: Blocker[] = [];
     // This exact queue is not a public source even if its status is changed accidentally.
     blockers.push("DRAFT_SOURCE_ONLY");
-    if (!(await exists(path.join(root, imageRelative)))) blockers.push("IMAGE_NOT_VERSIONED");
+    if (!(await exists(path.join(imageRoot, imageRelative.slice("kuvat/".length))))) blockers.push("IMAGE_NOT_VERSIONED");
     if (recipe.image?.src !== `paaruoat/${recipeId}.webp` ||
         recipe.image?.width !== 1280 || recipe.image?.height !== 853 ||
         !recipe.image?.alt.trim()) blockers.push("IMAGE_METADATA_MISSING");

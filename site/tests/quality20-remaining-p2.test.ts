@@ -2,6 +2,10 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import path from "node:path";
+
+const imageSourceRoot = process.env.VERIFIED_IMAGE_ROOT
+  ? path.resolve(process.env.VERIFIED_IMAGE_ROOT)
+  : path.resolve(import.meta.dirname, "../../kuvat");
 import test from "node:test";
 import { reviewedRecipeCopy, applyCopyEdits } from "../scripts/public-recipe-copy-r2";
 import { parseMarkdown } from "../src/content/markdown";
@@ -42,7 +46,7 @@ test("quality20: reviewed public copy resolves three P2 findings across all four
     const published = siteContent.recipes.filter(item => item.recipeId === fixture.id);
     assert.deepEqual(published.map(item => item.locale).sort(), [...locales].sort(), fixture.id);
     if (fixture.imageBlob) {
-      const image = readFileSync(path.join(root, fixture.image));
+      const image = readFileSync(path.join(imageSourceRoot, fixture.image.replace(/^kuvat\//, "")));
       assert.equal(gitBlob(image), fixture.imageBlob, fixture.id + ": the reviewed image must be unchanged");
     }
     for (const [i, locale] of locales.entries()) {
