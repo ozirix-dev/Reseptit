@@ -50,3 +50,38 @@ test("A4.1 review queue rejects incomplete, forged and duplicate cases", () => {
   noIntent[0] = { ...noIntent[0], expected: { version: 1, action: "search", filters: { gkNumber: 0 } } as unknown as AssistantEvalCase["expected"] };
   assert.throws(() => assistantLanguageReviewRows(noIntent), /Invalid assistant search filters/);
 });
+
+
+test("A4.1 missing-translation case asks for a Thai-language URL, not Thai cuisine", () => {
+  const rows = assistantLanguageReviewRows(assistantEvalCases);
+  const get = (locale: "fi" | "en" | "sv" | "th") => {
+    const row = rows.find((item) => item.id === "A4-" + locale + "-11");
+    assert.ok(row, "missing A4 language case");
+    assert.equal(row.status, "PENDING", "AI precheck must not approve language reviews");
+    assert.deepEqual(JSON.parse(row.expectedJson), {
+      version: 1, action: "unsupported", reason: "outside_scope",
+    });
+    return row.prompt;
+  };
+  assert.match(get("fi"), /thainkieliselle/iu);
+  assert.match(get("en"), /Thai-language/iu);
+  assert.match(get("sv"), /thaispråkig/iu);
+  assert.match(get("th"), /ภาษาไทย/u);
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    assert.match(rows.find((row) => row.id === "A4-" + locale + "-11")!.sourceSha256, /^[a-f0-9]{64}$/u);
+  }
+});
+
+test("A4.1 published recipe comparison uses known IDs and exact EN/TH salmon recipe labels", () => {
+  const rows = assistantLanguageReviewRows(assistantEvalCases);
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const row = rows.find((item) => item.id === "A4-" + locale + "-18");
+    assert.ok(row);
+    assert.equal(row.status, "PENDING");
+    assert.deepEqual(JSON.parse(row.expectedJson), {
+      version: 1, action: "compare", recipeIds: ["hummus", "kermainen-lohipata"],
+    });
+  }
+  assert.match(rows.find((r) => r.id === "A4-en-18")!.prompt, /creamy salmon casserole/iu);
+  assert.match(rows.find((r) => r.id === "A4-th-18")!.prompt, /สตูว์ปลาแซลมอนครีม/u);
+});

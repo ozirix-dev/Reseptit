@@ -1,4 +1,6 @@
 import { siteTarget } from "../src/content/site-target";
+import { recipavoHeroCopy } from "../src/features/recipes/recipavo-hero";
+import { homepagePickLimit } from "../src/features/recipes/home-preview";
 
 const buildOriginPattern = siteTarget.baseUrl.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 import { estimateBasis, evidenceLabel, gkCopy, missingReason } from "../src/features/glycemic-load/glycemic-load-copy";
@@ -29,6 +31,9 @@ import { loadReviewedPortions } from "../scripts/gk-portion-projection";
 import type { GlycemicLoadResult } from "../scripts/glycemic-load-model";
 
 const dist = path.resolve(import.meta.dirname, "../dist");
+const brandedHome = siteTarget.production || process.env.VITE_RECIPAVO_HERO_PREVIEW === "true";
+const indexIntro = (locale: keyof typeof recipavoHeroCopy) =>
+  brandedHome ? recipavoHeroCopy[locale].intro : recipeUi[locale].intro;
 
 test("new verbal estimates qualify the legacy numerical notices in all published languages", async () => {
   const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
@@ -1109,7 +1114,7 @@ test("all static index descriptions use their locale text before JavaScript", as
   for (const [locale, route] of [["fi", ""], ["en", "en/recipes"], ["sv", "sv/recept"], ["th", "th/recipes"]] as const) {
     const html = await readFile(path.join(dist, route, "index.html"), "utf8");
     for (const key of ['name="description"', 'property="og:description"', 'name="twitter:description"']) {
-      assert.ok(html.includes(`<meta ${key} content="${recipeUi[locale].intro}"`), `${locale}: ${key}`);
+      assert.ok(html.includes(`<meta ${key} content="${indexIntro(locale)}"`), `${locale}: ${key}`);
     }
   }
 });
@@ -1118,7 +1123,7 @@ test("localized hero copy is prerendered above the recipe filters", async () => 
   for (const [locale, route] of [["fi", ""], ["en", "en/recipes"], ["sv", "sv/recept"], ["th", "th/recipes"]] as const) {
     const html = await readFile(path.join(dist, route, "index.html"), "utf8");
     const root = html.slice(html.indexOf('<div id="root">'));
-    const descriptionIndex = root.indexOf(`<p class="page-intro__description">${recipeUi[locale].intro}</p>`);
+    const descriptionIndex = root.indexOf(`<p class="page-intro__description">${indexIntro(locale)}</p>`);
     const filtersIndex = root.indexOf('class="recipe-filters recipe-filters--placeholder"');
     assert.ok(descriptionIndex >= 0, `${locale}: localized hero description is visible before JavaScript`);
     assert.ok(filtersIndex > descriptionIndex, `${locale}: recipe filters follow the hero description`);
@@ -1127,8 +1132,9 @@ test("localized hero copy is prerendered above the recipe filters", async () => 
 
 test("recipe index is prerendered and links only published languages", async () => {
   const html = await readFile(path.join(dist, "index.html"), "utf8");
-  assert.match(html, /<h1>Reseptit<\/h1>/);
-  assert.equal([...html.matchAll(/class="recipe-card__link"/g)].length, 24);
+  assert.ok(html.includes(`<h1>${brandedHome ? recipavoHeroCopy.fi.title : "Reseptit"}</h1>`));
+  assert.equal([...html.matchAll(/class="recipe-card__link"/g)].length,
+    brandedHome ? homepagePickLimit : recipeLibraryPageSize);
   assert.match(html, /href="\/reseptit\/"/);
   assert.match(html, /<div class="recipe-card-grid">/);
   assert.doesNotMatch(html, /<form class="recipe-filters" role="search"/);
@@ -1141,12 +1147,17 @@ test("recipe index is prerendered and links only published languages", async () 
   assert.doesNotMatch(html, /href="[^"]+\?q=/);
   assert.doesNotMatch(html, /recipe-jsonld/);
   const allPreloads = [...html.matchAll(/<link rel="preload" as="image"[^>]*>/g)];
-  // React also emits an unconditional preload for the first eager card.
-  assert.equal(allPreloads.filter((item) => !item[0].includes("media=")).length, 1);
-  const preloads = allPreloads.filter((item) => item[0].includes("media="));
-  assert.equal(preloads.length, 2);
-  assert.match(preloads[0][0], /media="\(min-width: 700px\)"/);
-  assert.match(preloads[1][0], /media="\(min-width: 1100px\)"/);
+  const conditionalPreloads = allPreloads.filter(([link]) => link.includes("media="));
+  assert.equal(conditionalPreloads.length, 2);
+  assert.match(conditionalPreloads[1][0], /media="\(min-width: 1100px\)"/);
+  if (brandedHome) {
+    assert.match(conditionalPreloads[0][0], /type="image\/avif"[^>]*media="\(min-width: 376px\)/);
+    assert.equal(allPreloads.length, conditionalPreloads.length);
+  } else {
+    // React also emits an unconditional preload for the first eager card.
+    assert.match(conditionalPreloads[0][0], /media="\(min-width: 700px\)"/);
+    assert.equal(allPreloads.length - conditionalPreloads.length, 1);
+  }
 });
 
 test("vegetable lasagne publishes its supplied image and reviewed macros without unsupported GK", async () => {
@@ -1387,7 +1398,8 @@ test("localized central GL pages render complete SEO metadata with canonical and
     assert.ok(html.includes('<meta name="twitter:card" content="summary"'));
     assert.ok(html.includes(`<meta name="twitter:title" content="${page.title}"`));
     assert.ok(html.includes(`<meta name="twitter:description" content="${page.description}"`));
-    assert.match(html, /name="robots" content="noindex, nofollow"/);
+    if (siteTarget.noIndex) assert.match(html, /name="robots" content="noindex, nofollow"/);
+    else assert.doesNotMatch(html, /name="robots" content="[^"]*\bnoindex\b/);
     assert.match(html, new RegExp(`<html lang="${page.locale}">`));
     assert.match(html, /<h1/);
     assert.match(html, /hreflang="fi"/);
@@ -1504,12 +1516,14 @@ test("localized 404 pages never hydrate a recipe or emit indexable metadata", as
     assert.ok(html.includes("<h1>" + recipeUi[locale].notFound + "</h1>"));
     assert.ok(html.includes('<p><a href="' + indexPath + '"'));
     assert.ok(html.includes('>' + recipeUi[locale].backToRecipes + '</a></p>'));
-    assert.match(html, /name="robots" content="noindex, nofollow"/);
+    assert.ok(html.includes(siteTarget.noIndex
+      ? 'name="robots" content="noindex, nofollow"'
+      : 'name="robots" content="noindex,follow"'));
     assert.doesNotMatch(html, /rel="canonical"|recipe-jsonld|"@type":"Recipe"|hreflang=|x-default|<script type="module"/);
   }
 });
 
-test("local sitemap uses root paths and robots lets crawlers read noindex", async () => {
+test("sitemap and robots use the selected build target", async () => {
   const sitemap = await readFile(path.join(dist, "sitemap.xml"), "utf8");
   const robots = await readFile(path.join(dist, "robots.txt"), "utf8");
   assert.match(sitemap, new RegExp(String.raw`${buildOriginPattern}/kermainen-lohipata\/`));
@@ -1521,7 +1535,8 @@ test("local sitemap uses root paths and robots lets crawlers read noindex", asyn
   assert.doesNotMatch(sitemap, /raakileet|\.md/);
   assert.doesNotMatch(sitemap, /\?(?:q|category|diet)=/);
   assert.match(robots, /Allow: \//);
-  assert.doesNotMatch(robots, /^Sitemap:/mi);
+  const advertisedSitemaps = robots.match(/^Sitemap: .*$/gmi) ?? [];
+  assert.deepEqual(advertisedSitemaps, siteTarget.production ? [`Sitemap: ${siteTarget.baseUrl}/sitemap.xml`] : []);
 });
 
 test("the root build omits the retired GitHub Pages ownership file", async () => {

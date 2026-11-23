@@ -4,6 +4,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { auditSeo, expectedPages, inspectPage, inspectDiscovery, blockedByRobots, inspectNotFound, siteBase } from "../scripts/seo-audit";
 import { recipeSeoDescriptions } from "../scripts/recipe-seo-descriptions";
+import { siteTarget } from "../src/content/site-target";
 import { siteContent } from "../src/generated/content.generated";
 import { contentManifest } from "../src/generated/routes.generated";
 import { recipeLibraryPagePath } from "../src/features/recipes/recipe-pagination";
@@ -11,10 +12,16 @@ import { recipeLibraryPagePath } from "../src/features/recipes/recipe-pagination
 const dist = path.resolve(import.meta.dirname, "../dist");
 test("HTTP 200 discovery bodies must contain the expected sitemap and crawling policy", () => {
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${siteBase}/</loc></url></urlset>`;
-  const robots = "User-agent: *\nAllow: /\n";
+  const allowCrawling = "User-agent: *\nAllow: /\n";
+  const advertiseSitemap = `Sitemap: ${siteBase}/sitemap.xml\n`;
+  const robots = siteTarget.production ? allowCrawling + advertiseSitemap : allowCrawling;
   assert.deepEqual(inspectDiscovery(sitemap, robots, ["/"]), []);
   for (const wrong of ["<html>not XML</html>", "<urlset></urlset>", sitemap.replace("</urlset>", ""), sitemap.replace("</url>", "</broken>"), sitemap.replace("</urlset>", `<url><loc>${siteBase}/</loc></url></urlset>`)]) assert.ok(inspectDiscovery(wrong, robots, ["/"]).some((f) => f.code === "SITEMAP"));
-  for (const wrong of ["", robots + `Sitemap: ${siteBase}/sitemap.xml\n`, "User-agent: *\nDisallow: /\n", "User-agent: *\nDisallow: /*\n"]) assert.ok(inspectDiscovery(sitemap, wrong, ["/"]).some((f) => f.code === "ROBOTS"));
+  const wrongSitemapPolicy = siteTarget.production ? allowCrawling : allowCrawling + advertiseSitemap;
+  for (const wrong of ["", wrongSitemapPolicy, robots + "Sitemap: https://example.com/sitemap.xml\n",
+    "User-agent: *\nDisallow: /\n", "User-agent: *\nDisallow: /*\n"]) {
+    assert.ok(inspectDiscovery(sitemap, wrong, ["/"]).some((f) => f.code === "ROBOTS"));
+  }
   assert.equal(blockedByRobots("User-agent: *\nDisallow: /\nAllow: /Reseptit/", "/Reseptit/test/", "googlebot"), false);
   assert.equal(blockedByRobots("User-agent: *\nAllow: /\nUser-agent: Googlebot\nDisallow: /Reseptit/*", "/Reseptit/test/", "googlebot"), true);
 });
@@ -124,7 +131,9 @@ test("metadata mutations cannot silently pass", async () => {
     [html.replace(/name="description"/, 'name="missing"'), "DESCRIPTION"],
     [html.replace(/<h1/, '<h1>Extra</h1><h1'), "H1"],
     [html.replace(/<html lang="[^"]+"/, '<html lang="xx"'), "LANG"],
-    [html.replace(/<meta name="robots"[^>]*>/, ""), "NOINDEX"],
+    [siteTarget.production
+      ? html.replace("</head>", '<meta name="googlebot" content="noindex" /></head>')
+      : html.replace(/<meta name="robots"[^>]*>/, ""), "NOINDEX"],
     [html.replace('"@type":"Recipe"', '"@type":"Fake"'), "JSONLD_SOURCE"],
     [html.replace('"@context":"https://schema.org"', 'INVALID'), "JSONLD_PARSE"],
     [html.replace(/property="og:image"/, 'property="missing"'), "OG_IMAGE"],

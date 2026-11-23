@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { recipeJsonLd } from "@/features/recipes/schema";
 import { librarySeoDescription, libraryTitle } from "@/features/recipes/home-preview";
-import { isRecipavoHeroEnabled, isRecipavoHeroPreviewEnabled, recipavoHeroCopy } from "@/features/recipes/recipavo-hero";
+import { isRecipavoHeroEnabled, isRecipavoHeroPreviewEnabled, recipavoHeroCopy, recipavoHomeTitle } from "@/features/recipes/recipavo-hero";
 import { glycemicLoadMeta, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
 import { useContent } from "@/lib/content";
 import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "@/features/blog/blog-data";
@@ -60,7 +60,7 @@ export function SeoMeta() {
       : isPilotPage ? glycemicLoadMeta[locale].title
       : recipe ? recipePageTitle(recipe)
       : siteTitle(privacy?.title ?? blogPost?.title ?? (blogIndex ? "Ruokaopas" : undefined)
-        ?? (branded && indexExists ? recipavoHeroCopy[locale].tagline : undefined)
+        ?? (branded && indexExists ? recipavoHomeTitle(locale) : undefined)
         ?? (known ? titleByLocale[locale] : recipeUi[locale].notFound));
     const description = (pagination ? librarySeoDescription(locale, pagination.page, recipes) : undefined)
       ?? privacy?.description ?? blogPost?.description

@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "recipe_id": "liha-perunasoselaatikko",
+  "source_path": "reseptit/paaruoat/liha-perunasoselaatikko.md",
+  "source_sha256": "a615e6450cb0266e98d0439ea2723307ae6a23d213ee4f3cc8520578bd99f7fd",
+  "decision": "approved",
+  "reviewed_by": "Chat 3 – käyttäjän 23.11.2026 poikkeuksellisen autonomisen FI-julkaisutoimeksiannon nykyversion lähde-/turvallisuuskatselmointi; Chat-1:n vanhemman version rajattu arvio #854",
+  "reviewed_at": "2026-11-23",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/liha-perunasoselaatikko",
+      "https://www.valio.fi/reseptit/liha-perunasoselaatikko/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/reviews/chat1-five-homefood-withheld-2026-11-22.md",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: päähaaran FI-reseptipolkujen vertailussa ei ole samaa liha-perunasoselaatikko-tunnusta tai samaa reseptipolkua. Lähimmät perunalaatikot eroavat jauhelihan, kerrostuksen tai muusin osalta. Tämä on rajattu nykytilan toimituksellinen tarkistus; uusi main, slug- ja route-uniikkius tarkistettava julkaisuportissa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: 7 ainesriviä ja 6 annosta. 1000 g kuorittua jauhoista perunaa, 450 g naudan 17% jauhelihaa, 120 g sipulia, 250 g 1,5% kevytmaitoa, 40 g voita (30+10), 6 g suolaa (3+3) ja 1 g mustapippuria. K-Ruoan vertailussa jauheliha 17% ja kerrostettu perunasose, Valion versio sisältää munaa jota Recipavo ei käytä. Rasvaprosentit vastaavat nyt jo olemassa olleita Fineli-laskentaproxyja; täsmällinen merkki/saanto jää nutrition-porttiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: perunat kypsennetään ensin täysin pehmeiksi (15–20 min), soseutetaan lämmitetyn maidon ja voin kanssa; 17% naudan jauheliha kypsennetään kauttaaltaan sipulin kanssa; kerrostetaan vähintään 3 litran vuokaan ja paistetaan 200°C 25–30 min. Menetelmä vastaa lähteiden periaatetta mutta punnitut suhteet oma sovitus. Ei fyysisen koekeittiökokeen väitettä. Chat-1:n riippumaton #854 tarkisti aiemman HEADin b128e8e6e4abce1ce30d637208c980ac3b94a2a0. Sen jälkeen vuoan kapasiteetti täsmennettiin noin 2,5 litrasta vähintään 3 litraan; muiden valmistusvaiheiden järjestystä, aikaa ja lämpötilaa ei muutettu. Uuden SHA-version riippumaton kuittaus on yhä avoin. 23.11.2026 lähdevertailu: Valion https://www.valio.fi/reseptit/liha-perunasoselaatikko/ tukee 200 °C paiston ja paistetun jauhelihan/perunasoseen valmistusperusperiaatetta; Recipavon munaton erikseen kerrostettu versio poikkeaa Valion munia sisältävästä, sekoitetusta versiosta. Ei väitettä Valion kokeesta tälle sovitukselle. 3 litran vuoka ja 1,5 % maito ovat nykyversion tarkenteita."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: naudan jauheliha ruskistetaan ja kypsennetään läpikotaisin ennen kerrostamista, paisto jatkuu 200°C:ssa. Maito on selvä allergeeni; tuotekohtaiset pakkausmerkinnät tarkistettava. Jäähdytä tähteet nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6°C; vältetään hyväksymätön gluteenittomuusväite. Tämä on rajattu lähde-/turvallisuusarvio, ei mittaustulos. https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ Vanhan ja uuden FI-lähteen erotuksessa tähteiden jäähdytys täsmennettiin nopeasti matalissa astioissa tehtäväksi ja kylmäsäilytys alle +6 °C:een. Tämä on lähdemuutoksen auditointi, ei uuden SHA:n riippumaton hyväksyntä. 23.11.2026 käyttäjän valtuuttama nykyversion arvio: FI/EN/SV/TH täsmennetty jauhelihan kypsennys kaikkialta vähintään +70 °C:seen ennen vuokaan laittoa Ruokaviraston kuluttajaohjeen https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/ mukaisesti. Ylijäämän nopea jäähdytys mataliin astioihin ja <+6 °C jääkaappiin säilyvät. Ei väitettä omasta keittiölämpötilamittauksesta."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: raakaaineiden massa 1867 g ennen perunan keittovesihävikkiä ja uunihaihtumaa; 6 annosta noin 311g lähtöaineista. Esikeitto 15–20 min, jauhelihan paisto ja vuokaan kerrostus, uuni 25–30 min sekä 10 min lepo muodostavat realistisen noin 80 min kokonaisajan, mutta todellinen valmistelu vaihtelee. Vähintään 3 litran vuoka jättää sekoitus-/kerrostusvaraa. Ei fyysistä mittauskoetta."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Numeeriset ravintoarvot ja GK jätetään tarkoituksella julkaisematta. Mainiin yhdistetty riippumaton #855 dokumentoi WITHHOLD-ratkaisun aiemmalle FI-versiolle (HEAD b128e8e6e4abce1ce30d637208c980ac3b94a2a0), mutta nykyinen FI-lähde SHA256 c2bc22e3f1fe53ae292b7f24fad20def5f247b22494f5f4c98f4c68d84da1922 on sen jälkeen täsmentänyt naudan jauhelihan 17 % ja kevytmaidon 1,5 % rasvaksi. Vaikka määrät ovat ennallaan ja ulos jätetyt numerokentät edelleen puuttuvat, #855:n vanhan version hyväksyntää ei saa automaattisesti tulkita nykyversion muodolliseksi ravintohyväksynnäksi. Riippumaton nykyversion WITHHOLD-kuittaus puuttuu, siksi nutrition:pending; ei nollatäyttöä eikä ehdokkaan osasummia julkisiin kenttiin. 23.11.2026 FI-ensin-julkaisun rajattu PASS: vain numeeristen makrojen, energian ja GK-luvun tietoinen poisjättö. Naudan jauhelihan 17 % ja 1,5 % maito eivät periytä muiden tuotteiden ravintoarvoja; vanhan SHA:n #855 on perusteltu käytäntö eikä nyky-SHA:n numeroinen laskenta. Kaikki numeeriset kentät puuttuvat edelleen."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle täsmälliselle perunamuusi–naudan jauheliha–maito-vuoalle ei ole hyväksyttyä reseptikohtaista GI/GK-arviointia. GK jätetään määrittämättömäksi eikä lukua arvata."
+    }
+  },
+  "supplementary_evidence": {
+    "image_path": "kuvat/paaruoat/liha-perunasoselaatikko.webp",
+    "image_review": "Chat 3 22.11.2026: kuvan 960x746 Git-tracked AI-havainnekuvassa näkyy kerroksellinen perunasosekuorrute ja kypsä jauheliha. Rajattu visuaalinen vastaavuus OK, kuva ei ole oikea koekeittiövalokuva eikä korvaa riippumatonta kuva-/lisenssihyväksyntää. Mainin overlay approved=true on tekninen CI-lähdesyöte. Chat-1:n #852 on yhdistetty mainiin ja kyseisen SHA-lukitun WebP-havainnekuvan Git-overlay on hyväksytty; vanha kuva-HOLD-teksti koski puuttuvaa lopullista rekisteröintiä eikä enää vastaa tämän kuvatiedoston teknistä hyväksyntätilaa. Reseptin kokonaisjulkaisun hyväksyntä pysyy erillisenä.",
+    "physical_cook_test": false,
+    "image_sha256": "a7c032c3b09e76bac94a3fb467a1e1b29d1da9dce469061a9e4a0971b8322923",
+    "independent_review_reconciliation": {
+      "review_pr": 854,
+      "reviewed_head": "b128e8e6e4abce1ce30d637208c980ac3b94a2a0",
+      "current_source_sha256": "a615e6450cb0266e98d0439ea2723307ae6a23d213ee4f3cc8520578bd99f7fd",
+      "source_changed_since_review": true,
+      "changed_topics": [
+        "17 % naudan jauheliha täsmennetty",
+        "1,5 % kevytmaito täsmennetty",
+        "vähintään 3 litran uunivuoka",
+        "tähteiden nopea jäähdytys matalissa astioissa ja säilytys alle +6 °C"
+      ],
+      "current_version_reapproval": "Chat-3 user-delegated source/safety review completed 23.11.2026, Chat-1 #854 remains older SHA",
+      "image_overlay_pr": 852,
+      "numeric_macro_withholding_pr": 855,
+      "translation_review": "draft; formal independent semantic evidence pending",
+      "publication_decision": "FI approved by Chat 3 under user's explicit autonomous delegation, not falsely attributed to Chat-1"
+    },
+    "fi_publication_review": {
+      "authorized_scope": "Chat 3 FI-first release after user's explicit autonomous PR reduction authorization 23.11.2026",
+      "reviewer": "Chat 3, grounded current-content culinary and food safety review; not a new Chat-1 independent review",
+      "reviewed_at": "2026-11-23",
+      "current_source_sha256": "a615e6450cb0266e98d0439ea2723307ae6a23d213ee4f3cc8520578bd99f7fd",
+      "prior_independent_review": "docs/reviews/2026-11-22-chat1-four-homefood-independent-culinary-review.md",
+      "prior_review_scope": "older ingredient specification and preparation source",
+      "reference_method": "https://www.valio.fi/reseptit/liha-perunasoselaatikko/",
+      "reference_food_safety": "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/",
+      "nutrition": "withheld, not approved numerical values",
+      "glycemic": "unavailable",
+      "image": "SHA-locked Git-tracked AI illustration PR #852",
+      "translations": "EN/SV/TH draft"
+    }
+  }
+}
