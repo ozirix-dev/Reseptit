@@ -1,0 +1,292 @@
+{
+  "recipeId": "keto-suklaapallot",
+  "sourceHash": "6bf0ac08ae4381750cf3fcec45a3e8bfbcd2cbe85bd2d4bca3d0011cd05e434d",
+  "calculatedAt": "2026-11-23",
+  "batchId": "batch-33302",
+  "servings": 12,
+  "scope": "All weighed ingredients go into the mass and are divided into 12 balls. No coconut coating or cooking loss is modelled. Foodin erythritol contributes 2.5 g declared polyols per ball, subtracted once for available carbohydrate and retained in the model's total carbohydrate.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "mantelijauhoa",
+      "amount": 67,
+      "unit": "g",
+      "record": {
+        "id": "afcd-F006077-release-3",
+        "name": "Nut, almond meal",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "Nut, almond meal",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Difference between AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 5.4,
+          "fibre": 11,
+          "polyols": 0.0,
+          "protein": 19.7,
+          "fat": 50.5
+        }
+      },
+      "state": "Nut, almond meal",
+      "matchEvidence": "Hienoksi jauhettu täysrasvainen manteli, ei rasvaton mantelijauhe. AFCD almond meal.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä punnitaan syötävästä ainesosasta.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ainesosa sekoitetaan massaan kokonaan ja massa jaetaan annoksiin."
+    },
+    {
+      "item": "makeuttamatonta kaakaojauhetta",
+      "amount": 14,
+      "unit": "g",
+      "record": {
+        "id": "fineli-20-release-20",
+        "name": "KAAKAOJAUHE, EI LISÄTTYÄ SOKERIA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/20",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "KAAKAOJAUHE, EI LISÄTTYÄ SOKERIA",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 11.0,
+          "FIBT": 30.4,
+          "POLYL": 0.0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 11.0,
+          "fibre": 30.4,
+          "polyols": 0.0,
+          "protein": 18.5,
+          "fat": 21.7
+        }
+      },
+      "state": "KAAKAOJAUHE, EI LISÄTTYÄ SOKERIA",
+      "matchEvidence": "Finelin kaakaojauhe ilman lisättyä sokeria.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä punnitaan syötävästä ainesosasta.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ainesosa sekoitetaan massaan kokonaan ja massa jaetaan annoksiin."
+    },
+    {
+      "item": "Foodin-erytritolia",
+      "amount": 30,
+      "unit": "g",
+      "record": {
+        "id": "foodin-erytritoli-200g-6430051824777",
+        "name": "Foodin Erytritoli, Luomu 200 g",
+        "sourceUrl": "https://foodin.fi/tuote/erytritoli-luomu-200g-2/",
+        "retrievedAt": "2026-11-23",
+        "licence": "Manufacturer product label data",
+        "state": "Pure powdered erythritol, ground from granules",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Foodin states 100 g carbohydrate per 100 g, of which 100 g sugar alcohols. Product is pure erythritol.",
+        "per100g": {
+          "carbohydrate": 100,
+          "fibre": 0,
+          "polyols": 100,
+          "protein": 0,
+          "fat": 0
+        }
+      },
+      "state": "Pure powdered erythritol, ground from granules",
+      "matchEvidence": "Yksi ainesosa, EAN 6430051824777. Valmistaja ilmoittaa 100 g hiilihydraatteja, joista 100 g polyoleja. Sekoitetaan massaan.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä punnitaan syötävästä ainesosasta.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ainesosa sekoitetaan massaan kokonaan ja massa jaetaan annoksiin."
+    },
+    {
+      "item": "hienoja makeuttamattomia kookoshiutaleita",
+      "amount": 30,
+      "unit": "g",
+      "record": {
+        "id": "afcd-F002987-release-3",
+        "name": "Coconut, grated & desiccated",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "Coconut, grated & desiccated",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Difference between AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 7.3,
+          "fibre": 15.4,
+          "polyols": 0.0,
+          "protein": 6.9,
+          "fat": 65.4
+        }
+      },
+      "state": "Coconut, grated & desiccated",
+      "matchEvidence": "Kuivattu raastettu kookos ilman sokeria. Käytetään kokonaan massassa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä punnitaan syötävästä ainesosasta.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ainesosa sekoitetaan massaan kokonaan ja massa jaetaan annoksiin."
+    },
+    {
+      "item": "suolatonta voita",
+      "amount": 40,
+      "unit": "g",
+      "record": {
+        "id": "fineli-576-release-20",
+        "name": "VOI, SUOLATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/576",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "VOI, SUOLATON",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.8,
+          "FIBT": 0.0,
+          "POLYL": 0.0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 1.19,
+          "fat": 81.3
+        }
+      },
+      "state": "VOI, SUOLATON",
+      "matchEvidence": "Finelin suolaton voi.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä punnitaan syötävästä ainesosasta.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ainesosa sekoitetaan massaan kokonaan ja massa jaetaan annoksiin."
+    },
+    {
+      "item": "mantelivoita, ainesosana vain paahdettu manteli",
+      "amount": 40,
+      "unit": "g",
+      "record": {
+        "id": "afcd-F006082-release-3",
+        "name": "Nut, almond, with skin, roasted, unsalted",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "Nut, almond, with skin, roasted, unsalted",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Difference between AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 5.4,
+          "fibre": 11,
+          "polyols": 0.0,
+          "protein": 19.7,
+          "fat": 52.5
+        }
+      },
+      "state": "Nut, almond, with skin, roasted, unsalted",
+      "matchEvidence": "Samasta raaka-aineesta jauhamalla tehty mantelitahna. Laskenta käyttää kokonaisen, kuorellisen, suolaamattoman paahdetun mantelin koostumusta. Valitse kuorimattomista manteleista tehty tuote ilman lisättyä rasvaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä punnitaan syötävästä ainesosasta.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ainesosa sekoitetaan massaan kokonaan ja massa jaetaan annoksiin."
+    },
+    {
+      "item": "kookosöljyä",
+      "amount": 14,
+      "unit": "g",
+      "record": {
+        "id": "fineli-552-release-20",
+        "name": "KOOKOSRASVA 100 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/552",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "KOOKOSRASVA 100 %",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.0,
+          "FIBT": 0.0,
+          "POLYL": 0.0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 0.0,
+          "fat": 99.9
+        }
+      },
+      "state": "KOOKOSRASVA 100 %",
+      "matchEvidence": "Sataprosenttinen kookosöljy ilman lisäaineita.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä punnitaan syötävästä ainesosasta.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ainesosa sekoitetaan massaan kokonaan ja massa jaetaan annoksiin."
+    },
+    {
+      "item": "hienoa jodioimatonta suolaa",
+      "amount": 0.5,
+      "unit": "g",
+      "record": {
+        "id": "fineli-79-release-20",
+        "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/79",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.0,
+          "FIBT": 0.0,
+          "POLYL": 0.0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 0.0,
+          "fat": 0.0
+        }
+      },
+      "state": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+      "matchEvidence": "Finelin jodioimaton vuorisuola.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä punnitaan syötävästä ainesosasta.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ainesosa sekoitetaan massaan kokonaan ja massa jaetaan annoksiin."
+    }
+  ]
+}
