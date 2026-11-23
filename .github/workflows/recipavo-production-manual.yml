@@ -1,6 +1,6 @@
 name: Recipavo production release (manual)
 
-# Never triggered by push or PR. GitHub Environment enforces a required reviewer, a 10-minute wait timer, and main-only deployment.
+# Never triggered by push or PR. GitHub Environment enforces a required reviewer and main-only deployment.
 on:
   workflow_dispatch:
     inputs:
@@ -175,7 +175,7 @@ jobs:
             echo "- GitHub SHA: $RELEASE_SHA"
             echo '- Cloudflare project / branch: recipavo-site / production'
             echo '- CI: exact SHA / Recipe site success'
-            echo '- GitHub Environment: reviewer approval, 10-minute wait timer, main-only, admin bypass disabled'
+            echo '- GitHub Environment: reviewer approval, main-only, admin bypass disabled'
             echo '- Production HTML, SEO, sitemap, assets: PASS'
             echo '- Pages Function GET /api/feedback: 405'
             echo '- Feedback POST: NOT TESTED / NOT ENABLED'
