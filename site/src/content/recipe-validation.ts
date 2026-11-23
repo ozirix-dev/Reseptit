@@ -46,7 +46,7 @@ export function assertQuantifiedCriticalIngredients(recipes: RecipeEntry[]): voi
 /**
  * Extra publication guard for the new snack category. Drafts remain freely
  * editable under docs/reviews; published snacks need real image metadata and
- * all four independently auditable macro values. GK is intentionally optional:
+ * four auditable macro values or approved withholding for all four fields. GK is optional:
  * unknown GI evidence never becomes a fabricated zero.
  */
 export type SnackPublicationCandidate = {
@@ -61,7 +61,7 @@ export type SnackPublicationCandidate = {
   fat_per_serving_g?: number | null;
 };
 
-export function snackPublicationErrors(recipe: SnackPublicationCandidate): string[] {
+export function snackPublicationErrors(recipe: SnackPublicationCandidate, approvedWithholding = false): string[] {
   if (recipe.category !== "valipala" || recipe.status !== "published") return [];
   const errors: string[] = [];
   if (!recipe.image) {
@@ -81,9 +81,11 @@ export function snackPublicationErrors(recipe: SnackPublicationCandidate): strin
     "protein_per_serving_g",
     "fat_per_serving_g",
   ] as const;
-  for (const key of nutritionFields) {
-    if (typeof recipe[key] !== "number" || !Number.isFinite(recipe[key]) || recipe[key]! < 0) {
-      errors.push(`published snack needs source-backed ${key}`);
+  if (!approvedWithholding || !nutritionFields.every(key => recipe[key] === null)) {
+    for (const key of nutritionFields) {
+      if (typeof recipe[key] !== "number" || !Number.isFinite(recipe[key]) || recipe[key]! < 0) {
+        errors.push(`published snack needs source-backed ${key}`);
+      }
     }
   }
   if (recipe.carbs_total_per_serving_g != null && recipe.carbs_net_per_serving_g != null &&
@@ -98,8 +100,8 @@ export function snackPublicationErrors(recipe: SnackPublicationCandidate): strin
   return errors;
 }
 
-export function assertSnackPublicationReady(recipe: SnackPublicationCandidate): void {
-  const errors = snackPublicationErrors(recipe);
+export function assertSnackPublicationReady(recipe: SnackPublicationCandidate, approvedWithholding = false): void {
+  const errors = snackPublicationErrors(recipe, approvedWithholding);
   if (errors.length) {
     throw new Error(`${recipe.recipe_id}: snack publication blocked:\n${errors.join("\n")}`);
   }

@@ -57,7 +57,7 @@ type Row = {
 };
 type Mapping = { published: boolean; publicationAuthorized: boolean; recipes: Row[] };
 
-test("B2 jalapeno: source-backed cooking method is a held draft, not a hidden published recipe", async () => {
+test("B2 jalapeno: archived HOLD remains pinned and only the approved FI source can go public", async () => {
   const source = await readFile(path.join(root, candidatePath), "utf8");
   assert.equal(sourceBlob(source), approvedSnapshot, "draft changed without renewed source/nutrition review");
   const parsed = parseMarkdown(source);
@@ -85,7 +85,22 @@ test("B2 jalapeno: source-backed cooking method is a held draft, not a hidden pu
   assert.match(parsed.content, /USDA FDC 168576/);
   assert.match(parsed.content, /HOLD/);
   assert.match(parsed.content, /omaa koekeittiökoetta ei vaadita automaattisesti/);
-  assert.equal(siteContent.recipes.some(r => r.recipeId === recipeId), false);
+  const currentPath = "reseptit/valipalat/" + recipeId + ".md";
+  const currentSource = await readFile(path.join(root, currentPath), "utf8");
+  const current = parseMarkdown(currentSource);
+  assert.ok(current);
+  const review = JSON.parse(await readFile(path.join(root, "docs/reviews/new-recipes", recipeId + ".json"), "utf8"));
+  assert.equal(review.source_path, currentPath);
+  assert.equal(review.source_sha256, createHash("sha256").update(currentSource).digest("hex"));
+  const publishedLocales = siteContent.recipes.filter(r => r.recipeId === recipeId).map(r => r.locale);
+  if (current.data.status === "published") {
+    assert.equal(review.decision, "approved");
+    assert.equal(review.checks.nutrition.status, "pass");
+    assert.deepEqual(publishedLocales, ["fi"]);
+  } else {
+    assert.equal(review.decision, "hold");
+    assert.deepEqual(publishedLocales, []);
+  }
   const pairs = JSON.parse(await readFile(path.join(root,
     "meta/kaannokset/published-translation-pairs.json"), "utf8")) as {
       sources: Array<{ recipe_id: string }>;

@@ -19,7 +19,7 @@ import { readNutritionFieldApproval } from "./nutrition-field-approval";
 import type { Calculation } from "./nutrition-model";
 import { recipeBindingHash, reviewedColdPuddingBindingText } from "./glycemic-load-recipe-binding";
 import { assertChangedRecipeAuditIsClean, duplicateRoutesForChangedRecipes, nutritionBindingInputsChanged, type PublishedRoute } from "./changed-content-checks";
-import { assertSnackPublicationReady } from "../src/content/recipe-validation";
+import { assertReviewedSnackPublication } from "./snack-publication-review";
 import { parseMarkdown, renderInstructionSteps, renderSafeMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { assertKarnivoreDraftSafe, assertKarnivoreTranslationReady } from "./karnivore-draft-gate";
@@ -92,7 +92,7 @@ for (const relativePath of recipePaths) {
   const parsed = parseMarkdown(markdown);
   assert(parsed, `${relativePath}: recipe frontmatter is missing or malformed`);
   const data = recipeFrontmatterSchema.parse(parsed.data);
-  assertSnackPublicationReady(data);
+  await assertReviewedSnackPublication(data, repoRoot, relativePath);
   if (data.recipe_id.startsWith("karnivore-") && data.language !== "fi") {
     const sourcePath = `reseptit/paaruoat/${data.recipe_id}.md`;
     const source = parseMarkdown(await readFile(resolveRepoFile(sourcePath), "utf8"));

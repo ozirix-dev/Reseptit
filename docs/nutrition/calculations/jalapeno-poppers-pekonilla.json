@@ -1,0 +1,59 @@
+{
+  "recipeId": "jalapeno-poppers-pekonilla",
+  "sourceHash": "f4e3722ee97574ecb3ff8a79f49defe081210c50a5f73d63e76a0335397dfb77",
+  "calculatedAt": "2026-11-23",
+  "servings": 6,
+  "scope": "FI: erän neljä punnittua raaka-ainetta ja kuusi yhtä suurta osaa koko kypsästä erästä. Julkaistavia annosarvoja ei ole laskettu.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Jalapeñon varmistettu polyolitieto puuttuu eikä USDA:n erotusmenetelmän arvo vastaa EU-hiilihydraattikenttää. Pekonin syötyä rasvaa, pellille valuvaa rasvaa ja juustotäytteen hävikkiä ei ole mitattu. Täsmätuotteita ei ole sidottu laskentaan. Kaikki neljä makrokenttää jäävät määrittämättä.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "tuoreita jalapeñoja, punnittu ilman kantoja ja siemeniä",
+      "state": "Raaka, syötävä osa",
+      "matchEvidence": "USDA FDC 168576 on sama raaka-aine, mutta erotusmenetelmän hiilihydraatti sisältää kuitua ja polyoleja ei raportoida. Vertailulähde, ei laskennan syöte.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ainesluettelon punnittu syötävä lähtömassa.",
+      "retentionEvidence": "Kypsää saantoa ei ole mitattu."
+    },
+    {
+      "amount": 120,
+      "unit": "g",
+      "item": "maustamatonta tuorejuustoa",
+      "state": "Täytteeseen ennen paistoa",
+      "matchEvidence": "Fineli 34765 on vertailuehdokas. Täsmätuotetta ei ole sidottu laskentaan.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ainesluettelon punnittu syötävä lähtömassa.",
+      "retentionEvidence": "Käytetään koko punnittu määrä. Täytehävikkiä ei ole mitattu."
+    },
+    {
+      "amount": 60,
+      "unit": "g",
+      "item": "cheddarjuustoraastetta",
+      "state": "Täytteeseen ennen paistoa",
+      "matchEvidence": "Fineli 698 on vertailuehdokas. Täsmätuotetta ei ole sidottu laskentaan.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ainesluettelon punnittu syötävä lähtömassa.",
+      "retentionEvidence": "Käytetään koko punnittu määrä. Täytehävikkiä ei ole mitattu."
+    },
+    {
+      "amount": 90,
+      "unit": "g",
+      "item": "ohueksi viipaloitua raakaa pekonia",
+      "state": "Raaka, ohut viipale",
+      "matchEvidence": "Fineli 707 on raakapekonin vertailuehdokas ilman tuotekohtaista vastaavuutta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ainesluettelon punnittu syötävä lähtömassa.",
+      "retentionEvidence": "Syötyä kypsää pekonia ja pellille jäävää rasvaa ei ole punnittu. Retentiokerrointa ei ole asetettu."
+    }
+  ],
+  "sourceReferences": [
+    "https://fdc.nal.usda.gov/food-details/168576/nutrients",
+    "https://www.ars.usda.gov/research/publications/publication?seqNo115=287023",
+    "docs/reviews/valipalat/era-02/jalapeno-method-and-nutrition-2026-11-21.md"
+  ],
+  "batchId": "batch-33305"
+}
