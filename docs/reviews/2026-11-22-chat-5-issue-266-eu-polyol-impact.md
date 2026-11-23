@@ -84,3 +84,31 @@ Huomautus: `ESTIMATE WITH EVIDENCE` on reseptin koko laskelman senhetkinen arvio
 Tässä ajossa verrattiin kanonista lähderekisteriä ja `docs/nutrition/calculations/`-hakemiston 305 laskentasyötettä kahdella **oikeasti suoritetulla** laskentamallilla. Lisäksi synteettinen negatiivinen testi todentaa uuden fail-closed-käyttäytymisen. Auditointi ei suorita suojattua GK-only-versioiden avausta eikä anna hyväksyntää niiden vanhan sinetin uudelleensidonnalle.
 
 **Pakollinen Recipe site -CI jää tarkoituksella HOLDiin**, koska `gk-next-seven.ts` edellyttää uutta, riippumattomasti hyväksyttyä koodisidosta. Uuden tarkisteen lisääminen `reviewed-nutrition-model-binding.ts`-tiedostoon vain tämän raportin perusteella olisi ennenaikaista. Ei Ready-, merge- eikä tuotantojulkaisulupaa.
+
+## Riippumaton GK-vaikutusarvio 23.11.2026
+
+Työn omistaja: Kokki-Codex. Käyttäjä siirsi #826:n haaran kirjoitusomistajuuden
+Chat 5:ltä tähän rajattuun jatkotyöhön. PR:n alkuperäinen haara säilyy.
+
+Vertailu ajettiin mainin commitin `ce2b67ffe5ccb67f4a6179390984dfed7a3fb8c8`
+aineistolla ja PR-HEADin `910cde2c9bba2615a62055ccb5435205d6f9c37b`
+laskentakoodilla. Vanhan mallin LF SHA-256 on
+`05a3edc945b444edd4c99aff90be6a17129559ee7779f8f5e372bf46877195d3`.
+Uuden mallin LF SHA-256 on
+`2bf067ad44544b1cce522304077a39eed0628a393a707d5ef6d1029747002045`.
+
+- 604 lähdetietueen normalisointi ja 306 ravintolaskentatulosta säilyivät samoina.
+- 326 GK-pilottitulosta sekä niiden laskentasyöte- ja lähde-evidenssitiivisteet säilyivät samoina.
+- 87 nykyistä GK-erillisversiota antoi samat tulokset. Pad see ew, GK80-tehoajo
+  ja GK80 next-four läpäisivät normaalit lähde- ja tulossidostarkistukset, kun
+  yhteensopivuussääntöön lisättiin vain uuden mallin tarkka tiiviste.
+- 23 ravintolaskennan testiä läpäistiin. Testit kattavat uuden EU-total-rajauksen
+  sekä sen, että kaikki kolme laskentareittiä hylkäävät tuntemattoman
+  koodimuutoksen ja että lähdesinetti pysyy voimassa.
+- Kohdennettu vaikutusauditointi ajettiin päivitetyllä tarkistuksella. Se
+  todentaa olemassa olevat hyväksytyt laskentatulokset eikä kirjaa uutta
+  lähde- tai julkaisuhyväksyntää.
+
+Hyväksyntä koskee vain mainitun LF-tiivisteen koodiyhteensopivuutta. Alkuperäisiä
+lähde- ja hyväksyntäasiakirjoja, GK-arvoja tai tulostiivisteitä ei päivitetä.
+Yhdistäminen edellyttää edelleen täsmä-HEADin pakollista Recipe site -CI:tä.
