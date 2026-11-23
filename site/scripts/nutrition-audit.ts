@@ -7,19 +7,28 @@ import path from "node:path";
 import { auditTranslations } from "./translation-audit";
 import { calculate, type Calculation, type IngredientInput } from "./nutrition-model";
 import { verifyNutritionEvidence } from "./nutrition-evidence";
+import { nutritionKeys, resolveNutritionFieldApproval, type NutritionBatchRecipe } from "./nutrition-field-approval";
 const root = path.resolve(import.meta.dirname, "../..");
-const keys = ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const;
 const audit = await auditTranslations();
 const calculatedAt = new Date().toISOString().slice(0, 10);
 const provenance = await nutritionProvenance(root);
 const sourceHashes: Record<string, string> = Object.fromEntries(await Promise.all(audit.publishedSources.map(async (recipe) => [recipe.path, createHash("sha256").update((await readFile(path.join(root, recipe.path), "utf8")).replaceAll("\r\n", "\n")).digest("hex")] as const)));
 const batchDirectory = path.join(root, "docs/nutrition/batches");
 const batchFiles = await readdir(batchDirectory).catch((error: NodeJS.ErrnoException) => error.code === "ENOENT" ? [] : Promise.reject(error));
-const batches = new Map<string, Set<string>>();
+const batches = new Map<string, Map<string, NutritionBatchRecipe>>();
 for (const filename of batchFiles.filter((name) => name.endsWith(".json"))) {
-  const batch = JSON.parse(await readFile(path.join(batchDirectory, filename), "utf8")) as { batchId?: string; recipes?: { recipeId?: string }[] };
+  const batch = JSON.parse(await readFile(path.join(batchDirectory, filename), "utf8")) as { batchId?: string; recipes?: NutritionBatchRecipe[] };
   if (!batch.batchId || filename !== `${batch.batchId}.json` || !Array.isArray(batch.recipes) || batches.has(batch.batchId)) throw new Error(`Invalid or duplicate nutrition batch manifest: ${filename}`);
-  batches.set(batch.batchId, new Set(batch.recipes.map((recipe) => recipe.recipeId).filter((id): id is string => Boolean(id))));
+  const entries = new Map<string, NutritionBatchRecipe>();
+  for (const entry of batch.recipes) {
+    const previous = entry.recipeId ? entries.get(entry.recipeId) : undefined;
+    if ((entry.partialNutrition !== undefined && (!entry.recipeId || previous))
+        || previous?.partialNutrition !== undefined) {
+      throw Error("Invalid or duplicate partial nutrition batch entry: " + filename);
+    }
+    if (entry.recipeId) entries.set(entry.recipeId, entry);
+  }
+  batches.set(batch.batchId, entries);
 }
 const evidenceDirectory = path.join(root, "docs/nutrition/calculations");
 const evidenceFiles = await readdir(evidenceDirectory).catch((error: NodeJS.ErrnoException) => error.code === "ENOENT" ? [] : Promise.reject(error));
@@ -34,33 +43,44 @@ for (const filename of evidenceFiles.filter((name) => name.endsWith(".json"))) {
 }
 const publishedRecipeIds = new Set(audit.publishedSources.map((recipe) => recipe.data.recipe_id));
 for (const recipeId of evidenceByRecipe.keys()) if (!publishedRecipeIds.has(recipeId)) throw new Error(`Nutrition evidence has no published source recipe: ${recipeId}`);
+for (const [batchId, entries] of batches) {
+  for (const [recipeId, entry] of entries) {
+    if (entry.partialNutrition !== undefined && evidenceByRecipe.get(recipeId)?.batchId !== batchId) {
+      throw Error("Partial nutrition approval has no matching calculation: " + recipeId);
+    }
+  }
+}
 const translationsByRecipe = new Map<string, typeof audit.publishedTranslations>();
 for (const translation of audit.publishedTranslations) {
   const group = translationsByRecipe.get(translation.data.recipe_id) ?? [];
   group.push(translation);
   translationsByRecipe.set(translation.data.recipe_id, group);
 }
-const inventory = audit.publishedSources.map((recipe) => {
+const inventory = await Promise.all(audit.publishedSources.map(async (recipe) => {
   const translations = translationsByRecipe.get(recipe.data.recipe_id) ?? [];
-  const checked = verifyNutritionEvidence(recipe.data, evidenceByRecipe.get(recipe.data.recipe_id) ?? null, translations);
+  const evidence = evidenceByRecipe.get(recipe.data.recipe_id) ?? null;
+  const batchEntry = evidence?.batchId ? batches.get(evidence.batchId)?.get(recipe.data.recipe_id) : undefined;
+  const approval = evidence ? await resolveNutritionFieldApproval(root, evidence, batchEntry?.partialNutrition) : undefined;
+  const checked = verifyNutritionEvidence(recipe.data, evidence, translations, approval);
   const { values } = checked;
-  const evidence = evidenceByRecipe.get(recipe.data.recipe_id);
-  const batchErrors = evidence && (!evidence.batchId || !batches.get(evidence.batchId)?.has(recipe.data.recipe_id))
+  const batchErrors = evidence && !batchEntry
     ? [`calculation evidence is not listed in a matching batch manifest (${evidence.batchId ?? "missing batchId"})`]
     : [];
   const evidenceErrors = [...checked.errors, ...batchErrors];
   const conflicts = values.carbs_net_per_serving_g != null && values.carbs_total_per_serving_g != null && values.carbs_net_per_serving_g > values.carbs_total_per_serving_g;
-  const status = conflicts || (evidence !== undefined && evidenceErrors.length > 0) ? "CONFLICT REQUIRES REVIEW" : checked.status;
-  const evidencePath = evidenceByRecipe.has(recipe.data.recipe_id) ? `docs/nutrition/calculations/${recipe.data.recipe_id}.json` : null;
+  const status = conflicts || (evidence !== null && evidenceErrors.length > 0) ? "CONFLICT REQUIRES REVIEW" : checked.status;
+  const complete = status === "ESTIMATE WITH EVIDENCE";
+  const partial = status === "PARTIAL ESTIMATE WITH EVIDENCE";
+  const evidencePath = evidence ? `docs/nutrition/calculations/${recipe.data.recipe_id}.json` : null;
   return { recipe_id: recipe.data.recipe_id, source_path: recipe.path, source_content_hash: sourceHashes[recipe.path], values, servings: recipe.data.servings,
     status,
     calculationEvidence: evidencePath,
-    recalculatedValues: checked.calculated ? { carbs_net_per_serving_g: checked.calculated.perServing.netCarbohydrate, carbs_total_per_serving_g: checked.calculated.totalCarbohydratePerServingG, protein_per_serving_g: checked.calculated.perServing.protein, fat_per_serving_g: checked.calculated.perServing.fat } : null,
+    recalculatedValues: checked.fieldEstimates ?? (checked.calculated ? { carbs_net_per_serving_g: checked.calculated.perServing.netCarbohydrate, carbs_total_per_serving_g: checked.calculated.totalCarbohydratePerServingG, protein_per_serving_g: checked.calculated.perServing.protein, fat_per_serving_g: checked.calculated.perServing.fat } : null),
     evidenceErrors,
     carbohydrateDefinition: values.carbs_net_per_serving_g == null ? "NOT DOCUMENTED" : "AVAILABLE_EXCLUDING_FIBRE",
-    totalCarbohydrateDefinition: evidence && isScopedPolyolEvidence(evidence) ? "STABLE_ROUNDED_SOURCE_ACCOUNTING_SCENARIO" : evidencePath && status === "ESTIMATE WITH EVIDENCE" ? "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS" : "NOT VERIFIED",
-    portionBasis: "metadata fields per serving", brandAndRawWeightEvidence: status === "ESTIMATE WITH EVIDENCE" ? evidencePath : "NOT VERIFIED",
-    missingFields: keys.filter((key) => values[key] == null),
+    totalCarbohydrateDefinition: evidence && isScopedPolyolEvidence(evidence) ? "STABLE_ROUNDED_SOURCE_ACCOUNTING_SCENARIO" : (complete || (partial && values.carbs_total_per_serving_g !== null)) ? "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS" : "NOT VERIFIED",
+    portionBasis: "metadata fields per serving", brandAndRawWeightEvidence: (complete || partial) ? evidencePath : "NOT VERIFIED",
+    missingFields: nutritionKeys.filter((key) => values[key] == null),
     ingredients: recipe.data.ingredients,
     notes: recipe.content.split("## Muistiinpanot")[1]?.trim() ?? "",
     uncertainties: evidence && isScopedPolyolEvidence(evidence) ? ["Unknown aggregate polyols retained; owner-approved conditional source-accounting model, response scenario 0–150 and full GK width ≤0.10/serving. Not a biological bound."] : status === "ESTIMATE WITH EVIDENCE" ? [] : [
@@ -68,7 +88,7 @@ const inventory = audit.publishedSources.map((recipe) => {
       ...(checked.withholdingReason ? [checked.withholdingReason] : []),
     ],
   };
-});
+}));
 const blockers: Record<string, string[]> = {
   "butter-chicken": ["Frying oil is listed but its amount and retention are unmeasured", "Thigh skin/bone basis and yoghurt/cream fat unknown", "Marinade retained fraction unknown", "Honey optional; coriander quantity missing; rice/naan excluded", "Fineli prepared dish 34422 rejected: breast and 15% cream differ from source"],
   "pad-thai-vhh-konjac": ["Konjac drained weight known, product composition missing", "Shrimp raw/cooked basis must be confirmed", "Firm tofu brand and egg edible weights missing", "Tamarind/sauce concentration and spoon density missing", "Erythritol identity/purity and gram conversion need evidence; no blanket polyol deduction", "Spring onion/coriander unmeasured; serving lime wedges unquantified"],
@@ -85,7 +105,7 @@ for (const [id, uncertainties] of Object.entries(blockers)) {
   pilots.push({ ...result, source_path: source.path, uncertainties, existingPerServing: inventory.find((r) => r.recipe_id === id)!.values,
     comparison: "Full comparison blocked; no inferred totals", comparisonStatus: "INSUFFICIENT SOURCE DATA" });
 }
-const counts = Object.fromEntries(["VERIFIED", "ESTIMATE WITH EVIDENCE", "INSUFFICIENT SOURCE DATA", "CONFLICT REQUIRES REVIEW", "MISSING"].map((status) => [status, inventory.filter((r) => r.status === status).length]));
+const counts = Object.fromEntries(["VERIFIED", "ESTIMATE WITH EVIDENCE", "PARTIAL ESTIMATE WITH EVIDENCE", "INSUFFICIENT SOURCE DATA", "CONFLICT REQUIRES REVIEW", "MISSING"].map((status) => [status, inventory.filter((r) => r.status === status).length]));
 const report = { ...provenance, calculatedAt, sources: inventory.length, counts, dietClasses: Object.fromEntries(["keto", "vhh_tiukka", "vhh_valjempi", "unclassified"].map((diet) => [diet, audit.publishedSources.filter((r) => (r.data.diet_class ?? "unclassified") === diet).length])), inventory, pilots };
 const directory = path.join(root, process.argv.includes("--snapshot") ? "docs/nutrition" : "tmp/nutrition");
 await mkdir(directory, { recursive: true });

@@ -1,3 +1,5 @@
+import path from "node:path";
+import { nutritionCalculationFingerprint, resolveNutritionFieldApproval } from "../scripts/nutrition-field-approval";
 import test from "node:test";
 import { readFileSync } from "node:fs";
 import { parseMarkdown } from "../src/content/markdown";
@@ -197,4 +199,82 @@ test("complete calculations cannot masquerade as incomplete-source withholding",
   const e=evidence();e.publicationStatus="WITHHELD_SOURCE_INCOMPLETE";e.withholdingReason="Claimed incomplete";
   const {source}=incompleteWithholdingFixture();
   assert.equal(verifyNutritionEvidence(source,e).status,"CONFLICT REQUIRES REVIEW");
+});
+
+test("partial net carbohydrate can use the exact AFCD native field", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const input = evidence();
+  input.publicationStatus = "WITHHELD_SOURCE_INCOMPLETE";
+  input.withholdingReason = "Synthetic fixture using an AFCD carbohydrate row";
+  const record = {
+    ...food,
+    id: "afcd-F002963",
+    sourceUrl: "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002963",
+    polyolsSourceVerified: false,
+    per100g: { ...food.per100g, carbohydrate: 27.5, polyols: null },
+  };
+  input.ingredients[0]!.record = record;
+  const approve = () => resolveNutritionFieldApproval(root, input, {
+    evidenceSha256: nutritionCalculationFingerprint(input), fields: ["carbs_net_per_serving_g"],
+  });
+  const result = verifyNutritionEvidence({ ...recipe, carbs_net_per_serving_g: 27.5 }, input, [], await approve());
+  assert.equal(result.status, "PARTIAL ESTIMATE WITH EVIDENCE");
+  assert.equal(result.fieldEstimates?.carbs_total_per_serving_g, null);
+
+  record.per100g.carbohydrate = 27.6;
+  const mismatched = verifyNutritionEvidence({ ...recipe, carbs_net_per_serving_g: 27.6 }, input, [], await approve());
+  assert.match(mismatched.errors.join(), /recalculated=null/);
+});
+
+test("partial nutrition rejects unknown totals, unproved labels and unbounded omissions", () => {
+  const full = evidence();
+  const incomplete = (record: FoodRecord): Calculation => ({
+    ...full,
+    publicationStatus: "WITHHELD_SOURCE_INCOMPLETE",
+    withholdingReason: "Synthetic incomplete source",
+    ingredients: [{ ...full.ingredients[0]!, record }],
+  });
+  const approval = (input: Calculation, ...fields: string[]) => ({
+    scope: { evidenceSha256: nutritionCalculationFingerprint(input), fields },
+    verifiedAvailableRows: new Set<number>(),
+  });
+  const productLabel = incomplete({
+    ...food,
+    polyolsSourceVerified: false,
+    per100g: { ...food.per100g, polyols: null },
+  });
+  assert.equal(verifyNutritionEvidence({ ...recipe, protein_per_serving_g: 12 }, productLabel, [],
+    approval(productLabel, "protein_per_serving_g")).status, "PARTIAL ESTIMATE WITH EVIDENCE");
+
+  for (const definition of ["EU_AVAILABLE", "EU_TOTAL_INCLUDING_POLYOLS", "US_TOTAL_INCLUDING_FIBRE"] as const) {
+    const input = incomplete({ ...productLabel.ingredients[0]!.record!, carbohydrateDefinition: definition });
+    assert.match(verifyNutritionEvidence({ ...recipe, carbs_net_per_serving_g: 10 }, input, [],
+      approval(input, "carbs_net_per_serving_g")).errors.join(), /recalculated=null/);
+  }
+
+  const unverifiedPolyols = incomplete({ ...food, polyolsSourceVerified: false });
+  assert.match(verifyNutritionEvidence({ ...recipe, carbs_total_per_serving_g: 12 }, unverifiedPolyols, [],
+    approval(unverifiedPolyols, "carbs_total_per_serving_g")).errors.join(), /recalculated=null/);
+
+  const onlyProteinMissing = incomplete({ ...food, per100g: { ...food.per100g, protein: null } });
+  assert.equal(verifyNutritionEvidence({ ...recipe, carbs_total_per_serving_g: 12 }, onlyProteinMissing, [],
+    approval(onlyProteinMissing, "carbs_total_per_serving_g")).status, "PARTIAL ESTIMATE WITH EVIDENCE");
+  assert.match(verifyNutritionEvidence({ ...recipe, carbs_total_per_serving_g: 12 }, onlyProteinMissing, [],
+    approval(onlyProteinMissing, "carbs_total_per_serving_g", "carbs_total_per_serving_g")).errors.join(), /approval is invalid/);
+
+  const zeroFat = incomplete({ ...food, per100g: { ...food.per100g, protein: null, fat: 0 } });
+  const approvedZero = approval(zeroFat, "fat_per_serving_g");
+  assert.equal(verifyNutritionEvidence({ ...recipe, fat_per_serving_g: 0 }, zeroFat, [], approvedZero).status,
+    "PARTIAL ESTIMATE WITH EVIDENCE");
+  assert.match(verifyNutritionEvidence(recipe, zeroFat, [], approvedZero).errors.join(), /published=null, recalculated=0/);
+
+  const extra = { item: "frying oil", amount: 20, unit: "g", state: "as sold", matchEvidence: "", excludedReason: "retention unknown" };
+  const original = { ...recipe, ingredients: [...recipe.ingredients, extra] };
+  const withOmission = {
+    ...productLabel,
+    sourceHash: recipeNutritionInputHash(original),
+    ingredients: [...productLabel.ingredients, extra],
+  };
+  assert.match(verifyNutritionEvidence({ ...original, protein_per_serving_g: 12 }, withOmission, [],
+    approval(withOmission, "protein_per_serving_g")).errors.join(), /bounded omissions/);
 });

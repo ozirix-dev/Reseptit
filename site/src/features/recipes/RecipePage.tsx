@@ -190,7 +190,10 @@ export function RecipePage() {
         {!withholdNutrition && portionEvidence?.sideCarbohydrate ? <SideCarbohydrateComparison key={`${recipe.recipeId}:${locale}`}
           side={portionEvidence.sideCarbohydrate} locale={locale} carbs={portionCarbs} multiplier={eatenPortion} interactive={hydrated} /> : null}
         <details className="gk-evidence__details"><summary>{nutritionItems.length ? tools.nutritionPerRecipeServing : labels.nutrition}</summary>
-          <p className="recipe-disclosure" data-f25-nutrition-status={withholdNutrition ? "SOURCE_REVIEW_WITHHELD" : undefined}>{withholdNutrition ? "Ravintoarvojen julkaisu on keskeytetty, koska annoksen ainesosakohtainen laskenta tai tuotematch ei ole vielä hyväksyttävä. Lähtöarvoja ei näytetä virheellisen tarkkoina. Katso reseptin lähdehuomautus." : nutritionItems.length ? tools.nutrition : tools.missing}</p>{nutritionItems.length ? <dl className="nutrition-list">{nutritionItems.map(([key, value]) => <div key={key}><dt>{labels.nutrients[key]}</dt><dd>{formatIngredientAmount(value, 1, 1, numberLocale)} g</dd></div>)}</dl> : null}
+          <p className="recipe-disclosure" data-f25-nutrition-status={withholdNutrition ? "SOURCE_REVIEW_WITHHELD" : undefined}>{withholdNutrition ? "Ravintoarvojen julkaisu on keskeytetty, koska annoksen ainesosakohtainen laskenta tai tuotematch ei ole vielä hyväksyttävä. Lähtöarvoja ei näytetä virheellisen tarkkoina. Katso reseptin lähdehuomautus." : nutritionItems.length ? tools.nutrition : tools.missing}</p>
+          {nutritionItems.length > 0 && nutritionItems.length < Object.keys(recipe.nutrition).length
+            ? <p className="recipe-disclosure">{tools.partialNutrition}</p> : null}
+          {nutritionItems.length ? <dl className="nutrition-list">{nutritionItems.map(([key, value]) => <div key={key}><dt>{labels.nutrients[key]}</dt><dd>{formatIngredientAmount(value, 1, 1, numberLocale)} g</dd></div>)}</dl> : null}
         </details>
         {recipe.dietClass ? <p className="recipe-disclosure">{tools.diet}</p> : null}</section>
       {gkVariants.map(variant => <GkOnlyVariantPanel key={variant.versionId}

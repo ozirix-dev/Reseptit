@@ -3,6 +3,9 @@ import {calculateRecovery,isRecoveryEvidence} from "./gk80-uunikanapasta";
 import { createHash } from "node:crypto";
 import type { Calculation } from "./nutrition-model";
 import { calculate } from "./nutrition-model";
+import {
+  nutritionCalculationFingerprint, nutritionKeys, parseNutritionFieldScope, type NutritionFieldApproval,
+} from "./nutrition-field-approval";
 import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 
 // Owner-approved AFCD9837 withdrawal: suppress only these two exact historical
@@ -12,13 +15,6 @@ const withdrawnEvidenceHashes: Readonly<Record<string, string>> = {
   "keto-suklaakeksit": "53b29654ae27ad3069892bcad94f9710ef4893798a0aef4cc5239845abf16e28",
   "keto-mutakakku": "d1b17dcd782b109e50cf62abcb40f7deeab083b02e954d3de536231493f2573b"
 };
-
-const nutritionKeys = [
-  "carbs_net_per_serving_g",
-  "carbs_total_per_serving_g",
-  "protein_per_serving_g",
-  "fat_per_serving_g",
-] as const;
 
 // The successor keeps a pinned copy of this predecessor. Keep its historical
 // recipe and calculation available for provenance and withhold all four values.
@@ -50,6 +46,7 @@ export function verifyNutritionEvidence(
   recipe: RecipeForEvidence,
   evidence: Calculation | null,
   translations: TranslationForEvidence[] = [],
+  partialApproval?: NutritionFieldApproval,
 ) {
   const errors: string[] = [];
   const values = Object.fromEntries(nutritionKeys.map((key) => [key, recipe[key] ?? null]));
@@ -84,6 +81,13 @@ export function verifyNutritionEvidence(
     }
   }
 
+  if (partialApproval && (
+    evidence.publicationStatus !== "WITHHELD_SOURCE_INCOMPLETE"
+    || withdrawnHash || recipe.recipe_id === alooParathaPredecessor
+    || isRecoveryEvidence(evidence) || isScopedPolyolEvidence(evidence)
+    || isPublicRecipeQuarantined(recipe.recipe_id)
+  )) errors.push("This calculation cannot use partial nutrition approval");
+
   if (recipe.recipe_id === alooParathaPredecessor) {
     if (!isPublicRecipeQuarantined(recipe.recipe_id)) errors.push("Historical source error requires public quarantine");
     if (createHash("sha256").update(JSON.stringify(evidence)).digest("hex") !== alooParathaHistoricalEvidence) {
@@ -116,6 +120,51 @@ export function verifyNutritionEvidence(
   let calculated: ReturnType<typeof calculate> | ReturnType<typeof calculateRecovery> | ReturnType<typeof calculateScopedPolyolC> | null = null;
   try {
     calculated = isRecoveryEvidence(evidence) ? calculateRecovery(evidence) : isScopedPolyolEvidence(evidence) ? calculateScopedPolyolC(evidence) : calculate(evidence);
+    if (partialApproval && errors.length === 0 && "omissionWithinTolerance" in calculated) {
+      const scope = parseNutritionFieldScope(partialApproval.scope);
+      if (!scope.success || scope.data.evidenceSha256 !== nutritionCalculationFingerprint(evidence)) {
+        errors.push("Partial nutrition approval is invalid or does not match the calculation evidence");
+      } else {
+        if (!evidence.withholdingReason?.trim() || calculated.status !== "INSUFFICIENT SOURCE DATA") {
+          errors.push("Partial nutrition approval requires a documented incomplete calculation");
+        }
+        if (!calculated.omissionWithinTolerance || calculated.rows.some(row =>
+          row.issues.some(issue => !issue.startsWith("Unknown nutrient "))
+        )) errors.push("Partial nutrition requires valid shared ingredient inputs and bounded omissions");
+
+        const included = calculated.rows.map((row, index) => ({ row, index }))
+          .filter(({ index }) => !evidence.ingredients[index]!.excludedReason);
+        const netAvailable = included.every(({ row, index }) =>
+          row.values.netCarbohydrate !== null || partialApproval.verifiedAvailableRows.has(index)
+        );
+        const totalAvailable = included.every(({ row }) => row.values.netCarbohydrate !== null);
+        const fieldEstimates = {
+          carbs_net_per_serving_g: netAvailable ? calculated.perServing.carbohydrate : null,
+          carbs_total_per_serving_g: totalAvailable ? calculated.totalCarbohydratePerServingG : null,
+          protein_per_serving_g: calculated.perServing.protein,
+          fat_per_serving_g: calculated.perServing.fat,
+        };
+        for (const key of nutritionKeys) {
+          const selected = scope.data.fields.includes(key);
+          const actual = values[key];
+          const expected = fieldEstimates[key];
+          if (selected ? expected === null || actual !== expected : actual !== null) {
+            errors.push(selected
+              ? key + " mismatch: published=" + actual + ", recalculated=" + expected
+              : key + " must remain empty outside the partial approval");
+          }
+        }
+        if (values.carbs_net_per_serving_g !== null && values.carbs_total_per_serving_g !== null &&
+            values.carbs_net_per_serving_g! > values.carbs_total_per_serving_g!) {
+          errors.push("Total carbohydrate is below net carbohydrate");
+        }
+        return {
+          status: errors.length ? "CONFLICT REQUIRES REVIEW" : "PARTIAL ESTIMATE WITH EVIDENCE",
+          errors, calculated, values, fieldEstimates,
+          withholdingReason: evidence.withholdingReason,
+        };
+      }
+    }
     if (evidence.publicationStatus === "WITHHELD_SOURCE_INCOMPLETE") {
       if (!evidence.withholdingReason?.trim()) errors.push("Incomplete-source withholding requires a reason");
       if (hasValues) errors.push("Incomplete-source withholding must suppress all four nutrition values");

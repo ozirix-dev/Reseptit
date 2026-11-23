@@ -15,6 +15,7 @@ import path from "node:path";
 import { changedSemanticReviewErrors, loadSemanticEvidence, preparationRegressionErrors, semanticHash } from "./translation-semantic-review";
 import { auditTranslations } from "./translation-audit";
 import { verifyNutritionEvidence } from "./nutrition-evidence";
+import { readNutritionFieldApproval } from "./nutrition-field-approval";
 import type { Calculation } from "./nutrition-model";
 import { recipeBindingHash, reviewedColdPuddingBindingText } from "./glycemic-load-recipe-binding";
 import { assertChangedRecipeAuditIsClean, duplicateRoutesForChangedRecipes, nutritionBindingInputsChanged, type PublishedRoute } from "./changed-content-checks";
@@ -278,7 +279,8 @@ for (const recipeId of recipeIds) {
   if (evidence) {
     if (isRecoveryEvidence(evidence)) await loadRecovery(repoRoot,recipeId);
     if (isScopedPolyolEvidence(evidence)) assert(await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: scoped C preparation approval is stale`);
-    const result = verifyNutritionEvidence(source.data, evidence, translations);
+    const approval = await readNutritionFieldApproval(repoRoot, evidence);
+    const result = verifyNutritionEvidence(source.data, evidence, translations, approval);
     assert.deepEqual(result.errors, [], `${recipeId}: nutrition evidence validation failed`);
   } else {
     assert(!evidenceIds.has(recipeId), `${recipeId}: changed calculation evidence is unavailable`);

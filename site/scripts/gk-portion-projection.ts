@@ -7,6 +7,7 @@ import { parseMarkdown } from "../src/content/markdown";
 import { recipeBindingHash } from "./glycemic-load-recipe-binding";
 import { calculate, round, type Calculation, type FoodRecord, type IngredientInput } from "./nutrition-model";
 import { verifyNutritionEvidence } from "./nutrition-evidence";
+import { nutritionKeys, readNutritionFieldApproval } from "./nutrition-field-approval";
 import { isRecoveryEvidence, loadRecovery } from "./gk80-uunikanapasta";
 import { isScopedPolyolEvidence, loadScopedPolyolC } from "./gk80-polyol-c";
 
@@ -324,6 +325,18 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
       }
       record.carbohydrateDefinition = "EU_TOTAL_INCLUDING_POLYOLS";
     }
+    // A separately reviewed serving calculation may coexist with partial macros.
+    // Validate the original inputs first, then project only the legacy carbohydrate scope.
+    let portionRecipe = data;
+    if (standaloneReview && input.publicationStatus === "WITHHELD_SOURCE_INCOMPLETE"
+        && nutritionKeys.some(key => data[key] != null)) {
+      const originalInput = JSON.parse(raw) as Calculation;
+      const approval = await readNutritionFieldApproval(root, originalInput);
+      if (verifyNutritionEvidence(data, originalInput, [], approval).status === "PARTIAL ESTIMATE WITH EVIDENCE") {
+        portionRecipe = { ...data };
+        for (const key of nutritionKeys) portionRecipe[key] = null;
+      }
+    }
     const preparations = standaloneReview?.preparationChoices;
     if (standaloneReview?.countedIngredient) {
       const specification = standaloneReview.countedIngredient;
@@ -350,7 +363,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
       }
       const scenarios = choices.map(({ label, ...match }) => {
         const candidate = applyCompositionMatches(reviewedInput, [{ index, ...match }], labelIndices);
-        const result = portionFromNutrition(data, candidate, true);
+        const result = portionFromNutrition(portionRecipe, candidate, true);
         if (!result || result.available === null) {
           throw new Error(`${recipeId}: whole-portion preparation requires evidence for every ingredient.`);
         }
@@ -360,7 +373,7 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
       portion.availableCarbs = { min: Math.min(...amounts), max: Math.max(...amounts) };
       portion.wholeCarbohydrateChoices = scenarios;
     } else {
-      const result = portionFromNutrition(data, reviewedInput, Boolean(standaloneReview), counted);
+      const result = portionFromNutrition(portionRecipe, reviewedInput, Boolean(standaloneReview), counted);
       if (result) {
         if (result.available !== null) portion.availableCarbs = { min: result.available, max: result.available };
         if (result.driver) portion.driver = result.driver;
