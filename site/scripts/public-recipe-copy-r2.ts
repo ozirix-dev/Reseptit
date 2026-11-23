@@ -839,9 +839,11 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
   "vietnamilainen-hu-tieu-aamiaiskeitto/en": {
     "description": "Pork loin strips and rice noodles cook in the same pot. Bean sprouts and fresh coriander finish this breakfast soup for two. Serve it with all the cooking liquid."
   },
+  // #327 / Chat 2: fully cook pork and heat bean sprouts in FI public hu tieu.
   "vietnamilainen-hu-tieu-aamiaiskeitto/fi": {
     "description": "Riisinuudelit ja porsaan ulkofileesuikaleet kypsyvät samassa kattilassa. Pavunidut ja tuore korianteri viimeistelevät aamiaiskeiton kahdelle.",
-    "title": "Hu tieu -riisinuudelikeitto porsaanlihalla"
+    "title": "Hu tieu -riisinuudelikeitto porsaanlihalla",
+    method: [["1. Kiehauta vesi. Lisää suikaleiksi leikattu porsaan ulkofilee ja kypsennä kauttaaltaan.\n2. Lisää kuivat riisinuudelit ja kypsennä pakkauksen ohjeen mukaan. Lisää pavunidut ja kuumenna kauttaaltaan.", "1. Kiehauta ainesluettelon kaikki 700 g vettä. Suikaloi 150 g raakaa porsaan ulkofileetä ja lisää suikaleet kiehuvaan veteen. Keitä, kunnes porsaanliha on kauttaaltaan kypsää ja sisälämpötila paksuimmasta suikaleesta mitattuna vähintään 70 °C. Varmista lämpötila elintarvikelämpömittarilla; jatka kypsennystä tarvittaessa.\n2. Lisää 100 g kuivia riisinuudeleita ja kypsennä nuudelit pakkauksen ohjeen mukaan. Lisää kaikki 150 g pavunituja kiehuvaan keittoon ja kypsennä, kunnes idut ovat kunnolla kuumentuneet kauttaaltaan. Tarjoa vasta, kun liha, nuudelit ja pavunidut ovat kypsiä."]]
   },
   "vietnamilainen-hu-tieu-aamiaiskeitto/sv": {
     "description": "Strimlat fläsk och risnudlar kokas i samma kastrull. Böngroddar och färsk koriander ger smak åt frukostsoppan för två. Servera med hela kokspadet."
