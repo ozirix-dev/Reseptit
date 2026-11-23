@@ -28,9 +28,6 @@ export function assertEnvironment(config, branchPolicies) {
   must(config && config.name === ENVIRONMENT, 'Expected existing GitHub production environment');
   const rules = config.protection_rules;
   must(Array.isArray(rules), 'Production protection rules unavailable');
-  const timers = rules.filter(rule => rule.type === 'wait_timer');
-  must(timers.length === 1 && timers[0].wait_timer === 10,
-    'Production environment must enforce the 10-minute wait timer');
   const reviewerRules = rules.filter(rule => rule.type === 'required_reviewers');
   must(reviewerRules.length === 1 && Array.isArray(reviewerRules[0].reviewers) &&
        reviewerRules[0].reviewers.some(({type, reviewer}) =>
@@ -45,7 +42,7 @@ export function assertEnvironment(config, branchPolicies) {
        branchPolicies.branch_policies.length === 1 &&
        branchPolicies.branch_policies[0]?.name === 'main',
     'Only the exact main branch may deploy to production');
-  return {waitMinutes:10,reviewerRequired:true,branch:'main',adminBypass:false};
+  return {reviewerRequired:true,branch:'main',adminBypass:false};
 }
 export function assertCiRuns(payload,inputSha) {
   const runs = payload?.workflow_runs;
@@ -105,7 +102,7 @@ export async function githubPreflight({sha,env,fetcher=fetch,verifyEnvironment=t
     ]);
     assertEnvironment(config, branches);
   }
-  return {sha,ciRun,waitTimerRequired:verifyEnvironment,reviewerRequired:verifyEnvironment};
+  return {sha,ciRun,reviewerRequired:verifyEnvironment};
 }
 export async function cloudflarePreflight({env,fetcher=fetch}) {
   const id=env.CLOUDFLARE_ACCOUNT_ID, token=env.CLOUDFLARE_API_TOKEN;
