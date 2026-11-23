@@ -123,6 +123,24 @@ test('classifies absent/null time separately from malformed, unsafe or nonpositi
   assert.equal(report.signals.invalidTime.find(x => x.recipeId === 'zero').rawValue, '0');
 });
 
+test('classifies YAML comments on total time without accepting malformed values', () => {
+  const cases = [
+    ['number', '30 # arvio'],
+    ['null', 'null # ei mitattu'],
+    ['tilde', '~ # ei mitattu'],
+    ['comment-only', '# ei mitattu'],
+    ['no-separator', '30#arvio'],
+    ['quoted-hash', '"30 # arvio"'],
+  ];
+  const report = analyze(cases.map(([id, time]) => ({
+    path: `reseptit/aamupalat/${id}.md`,
+    content: recipe(id, 'Kuvaus.', 'Sekoita.').replace('time_total_min: 30', `time_total_min: ${time}`),
+  })));
+
+  assert.deepEqual(report.byTime, {'30': 1, '(puuttuu)': 3, '(virheellinen)': 2});
+  assert.deepEqual(report.signals.invalidTime.map(item => item.rawValue), ['30#arvio', '"30 # arvio"']);
+});
+
 test('flags duplicate total-time YAML keys, even when values agree', () => {
   const sources = [
     { path: 'reseptit/aamupalat/same.md', content:
