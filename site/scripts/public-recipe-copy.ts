@@ -835,6 +835,14 @@ const nattoRiceCookingReview: Readonly<Record<RecipeLocale, { evidence: readonly
 };
 
 export function reviewedPublicCookingMethod(recipeId: string, rawMethod: readonly string[] | undefined): string[] | undefined {
+  // #404 C/#35: ful medames warms already-cooked beans in a saucepan.
+  // Project only the public cooking-method tag; the source and nutrition remain sealed.
+  if (recipeId === "lahi-ita-ful-medames") {
+    if (JSON.stringify(rawMethod) !== JSON.stringify(["paistaminen"])) {
+      throw new Error("FUL_MEDAMES_COOKING_METHOD_SOURCE_DRIFT");
+    }
+    return ["liesi"];
+  }
   if (recipeId === "paprikainen-vhh-gulassi") {
     // #327: the SHA-pinned four-language source says "uuni" but instructs
     // covered stovetop simmering, with no oven temperature or oven step.
