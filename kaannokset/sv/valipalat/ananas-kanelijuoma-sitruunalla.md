@@ -55,7 +55,7 @@ Färsk ananas, citronsaft, kallt vatten och en nypa kanel mosas till en uppfrisk
 
 1. Skölj ananasen och citronen innan du skär. Ta bort skalet och den hårda mitten av ananasen. Skär och väg 330 g massa. Pressa citronsaft.
 2. Mät upp vatten och citronsaft i en mixer. Tillsätt ananasbitarna och kanelen. Puré tills drinken är så slät som möjligt.
-3. Dela i två glas och servera kallt. Rör eventuellt om i drinken innan servering, eftersom kanelen kan sjunka till botten.
+3. Fördela den osilade drycken i två glas och servera kall. Rör om före servering vid behov, eftersom kanelen kan sjunka till botten.
 
 ## Anteckningar
 

@@ -2,10 +2,15 @@
   "schema_version": 1,
   "recipe_id": "ananas-kanelijuoma-sitruunalla",
   "source_path": "reseptit/valipalat/ananas-kanelijuoma-sitruunalla.md",
-  "source_sha256": "7cf8c7af4e0c163f073467974c77236e5cbfe75cb47c914d1adb4a74b744d329",
+  "source_sha256": "e39cdebcc8c380c15e893dc58a79eddb79fd8891bd19e527224f31d153c9a11e",
   "decision": "approved",
-  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
-  "reviewed_at": "2026-11-15",
+  "reviewed_by": "Codex (scoped editorial update for #369)",
+  "reviewed_at": "2026-11-23",
+  "prior_review": {
+    "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+    "reviewed_at": "2026-11-15",
+    "source_sha256": "7cf8c7af4e0c163f073467974c77236e5cbfe75cb47c914d1adb4a74b744d329"
+  },
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -25,7 +30,7 @@
     },
     "method": {
       "status": "pass",
-      "notes": "Ainekset soseutetaan tasaiseksi lähdevideon tapaan. Hedelmäliha säilyy juomassa."
+      "notes": "Ainekset soseutetaan tasaiseksi lähdevideon tapaan. Hedelmäliha säilyy juomassa. The #369 text makes the existing whole-pulp calculation explicit by serving without straining. The independent FI decision remains HOLD; see docs/reviews/2026-11-23-issue-369-pilot-source-clarifications.md."
     },
     "food_safety": {
       "status": "pass",

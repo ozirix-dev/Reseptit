@@ -53,7 +53,7 @@ Use six medium eggs and weigh the other filling ingredients.
 
 ## Preparation
 
-1. Place six eggs in a single layer in a saucepan and add enough cold water to cover them by about 2–3 cm. Bring to a boil with the lid on. Remove the pan from the heat and leave the medium eggs in the hot water for 12 minutes. Both the whites and the yolks should be firm.
+1. Place six eggs in a single layer in a saucepan and add enough cold water to cover them by about 2–3 cm. Bring to a boil with the lid on. Remove the pan from the heat and keep it covered while the medium eggs sit in the hot water for 12 minutes. Both the whites and the yolks should be firm. If an egg is still soft, continue cooking it before filling.
 2. Cool the eggs immediately in cold water. Peel all six and halve them lengthwise. Transfer the yolks to a bowl.
 3. Finely chop the chives and set some aside for topping. Mash the yolks with a fork. Mix in the mayonnaise, mustard and most of the chives.
 4. Spoon the filling evenly into the 12 egg halves and sprinkle with the remaining chives. Cover and refrigerate until serving. Serve two halves per portion.

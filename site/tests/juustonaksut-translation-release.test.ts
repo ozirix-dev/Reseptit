@@ -11,13 +11,14 @@ import { loadSemanticEvidence, semanticHash, semanticStatus } from "../scripts/t
 const root = path.resolve(import.meta.dirname, "../..");
 const recipeId = "rapeat-juustonaksut";
 const sourcePath = "reseptit/valipalat/rapeat-juustonaksut.md";
-const sourceBlobSha = "af69aab954bf3ed06e3eb5294d51954679a940ef";
-const reference = "docs/reviews/2026-11-21-juustonaksut-final-translation-review.md";
-const sourceSemanticHash = "0b57f0d1f9b437c7d6ca14e04d8d4f6772f762fd0269dd742cf4f8711d98e4ac";
+const sourceBlobSha = "ea987a00635ad33a63bfe546070696f4930719f1";
+const historicalReference = "docs/reviews/2026-11-21-juustonaksut-final-translation-review.md";
+const reference = "docs/reviews/2026-11-23-issue-369-pilot-source-clarifications.md";
+const sourceSemanticHash = "23548cefb1867e0009ad27d64c70c3698d3df17a3677e20a4c41c0c31f2d52c9";
 const targetHashes = {
-  en: "76cf3ca5267535d7214d7cf0150a6feb9b99029d31079a953b5e69412b665b87",
-  sv: "eaa6c1123d8548b0892b737109e92b9e46cb50d1ed5aa69f309a1f50a32eceaa",
-  th: "06fc67dbfbc7496f7f78f82d7043c758f6131ede9b2cd5f1b74268458153a70a",
+  en: "a960284216201c421915a7c2e3a5931a9ba60a31355358b24f33b23564124f71",
+  sv: "748a7392e5155a1499f42d38694779c7990288a03a6116664069de283173e9f8",
+  th: "760e425046af958273318702bb1be028cbf6a3f9dccb3a7b046a966e69258080",
 } as const;
 const locales = ["en", "sv", "th"] as const;
 const routePrefix = { en: "/en/recipes/", sv: "/sv/recept/", th: "/th/recipes/" } as const;
@@ -56,7 +57,7 @@ test("juustonaksut translations: published EN/SV/TH are pinned to FI, reviewed s
   assert.deepEqual([...indexMatches[0].locales].sort(), [...locales].sort());
 
   const evidence = await loadSemanticEvidence(root);
-  const report = await readFile(path.join(root, reference), "utf8");
+  const report = await readFile(path.join(root, historicalReference), "utf8");
   assert.match(report, /ChatGPT/);
   assert.match(report, /ei Codex-katselmointiväite/);
   for (const locale of locales) {

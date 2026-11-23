@@ -2,10 +2,15 @@
   "schema_version": 1,
   "recipe_id": "tonnikalatayte-kurkkukupeissa",
   "source_path": "reseptit/valipalat/tonnikalatayte-kurkkukupeissa.md",
-  "source_sha256": "c81a4fd29700c97b41e3c836582feb9d86cb8852d76c3c85e4f4d597c41dad87",
+  "source_sha256": "b4d51346114723ee78e2bbf11af2dfe701bb433889831bd77b467cdbbc84ddac",
   "decision": "approved",
-  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
-  "reviewed_at": "2026-11-17",
+  "reviewed_by": "Codex (scoped editorial update for #369)",
+  "reviewed_at": "2026-11-23",
+  "prior_review": {
+    "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+    "reviewed_at": "2026-11-17",
+    "source_sha256": "c81a4fd29700c97b41e3c836582feb9d86cb8852d76c3c85e4f4d597c41dad87"
+  },
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -28,7 +33,7 @@
     },
     "method": {
       "status": "pass",
-      "notes": "Four servings of three cups. Twelve cups use an estimated 25 g of cucumber and 20 g filling each. The tuna is weighed drained, and the cucumber is weighed after hollowing. AFCD F009300 matches the drained water-packed tuna type; fat content varies by brand. AFCD F003320 is a raw unpeeled cucumber composition proxy for cups after the centres are removed. Preparation was reviewed against two independent cucumber cup recipes. The exact mass and number were not physically tested."
+      "notes": "Four servings of three cups. Twelve cups use an estimated 25 g of cucumber and 20 g filling each. The tuna is weighed drained, and the cucumber is weighed after hollowing. AFCD F009300 matches the drained water-packed tuna type; fat content varies by brand. AFCD F003320 is a raw unpeeled cucumber composition proxy for cups after the centres are removed. Preparation was reviewed against two independent cucumber cup recipes. The exact mass and number were not physically tested. The #369 text specifies weighing the hollowed bases and sides together, with the scooped centres set aside. The independent FI decision remains HOLD; see docs/reviews/2026-11-23-issue-369-pilot-source-clarifications.md."
     },
     "food_safety": {
       "status": "pass",
