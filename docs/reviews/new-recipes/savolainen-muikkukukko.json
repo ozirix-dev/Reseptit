@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "recipe_id": "savolainen-muikkukukko",
+  "source_path": "reseptit/paaruoat/savolainen-muikkukukko.md",
+  "source_sha256": "83f1517de0e1317c15c8c1a9a2b7aca90ae066f585dd4d748ab942df8e7f93cb",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.oph.fi/sites/default/files/documents/kalasta-on-moneksi.pdf",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/"
+    ]
+  },
+  "nutrition_evidence": "docs/reviews/new-recipes/savolainen-muikkukukko.json#nutrition_reference",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistettu origin/main c2f402c116e275ed1e9ee745c75cedb7abb3625c: eri nimet, tunnukset ja avoimet PR:t."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Opetushallituksen punnittu ohje. Perattu päättömän kalan massa ja nahaton luuton sianliha täsmennetty. 20 g täytevoista osa jätetään pintaan."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "15–20 min 250 °C:ssa ja noin 4 h 150 °C:ssa, Opetushallituksen vaihteluvälistä valittu 250 °C. Tarjotaan lämpimänä pitkän huoneenlämpöisen vetäytymisen sijaan. Lähde on opetusharjoitus. Recipavo ei ole tehnyt koekeittoa."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-1 tarkisti kylmäketjun, välinehygienian, 70 °C:n rajan koko täytteelle, siankylkikerroksen mittaamisen ja tähteiden nopean jäähdytyksen."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Yksi kukko eli kymmenen yhtä suurta osaa. 315 min on suunnitteluarvio sisältäen noin 45 min valmistelua, 20 min alkupaistoa, 240 min haudutusta ja noin 10 min asettumista. Kypsää saantoa ei ole punnittu."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Chat-1 hyväksyi neljän julkisen kentän pidätyksen täsmälleen tälle FI-versiolle. Fineli-vertailu kuvaa raakoja nimellissyötteitä, ja numeerinen GK on määrittämätön."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Kypsän, happamattoman ruis-vehnä-ohrakuoren ja kala-lihatäytteen yhdistelmälle ei löytynyt soveltuvaa mitattua GI-arvoa. Hapanruisleipä ei vastaa rakennetta eikä käsittelyä."
+    }
+  },
+  "nutrition_reference": {
+    "source": "THL Fineli Release 20 / docs/nutrition/fineli-release-20-reference.json",
+    "reference_rows": [
+      {
+        "id": "100",
+        "grams": 415,
+        "match": "täysjyväruisjauho"
+      },
+      {
+        "id": "110",
+        "grams": 100,
+        "match": "puolikarkea vehnäjauho, vertailu"
+      },
+      {
+        "id": "150",
+        "grams": 100,
+        "match": "ohrajauho"
+      },
+      {
+        "id": "576",
+        "grams": 70,
+        "match": "suolaton voi, kaksi annostusta"
+      },
+      {
+        "id": "809",
+        "grams": 750,
+        "match": "järvimuikku, raaka"
+      },
+      {
+        "id": "706",
+        "grams": 400,
+        "match": "siankylki, raaka"
+      }
+    ],
+    "excluded": "Vesi ja suola eivät tuo laskettavia makroravintoaineita.",
+    "scope": "Nimellismäärät ennen paistoa jaettuna kymmenellä. Laskennassa oletetaan, että kaikki taikina ja rasva ovat mukana. Tämä vertailulaskelma ei kuvaa varmennettua kypsää annosta.",
+    "nominal_raw_input_per_tenth_g": {
+      "available_carbohydrate": 38.543065,
+      "fibre": 6.754,
+      "protein": 25.97795,
+      "fat": 22.13295
+    },
+    "publication": "Hiilihydraattien epävarmuus liittyy varataikinan käyttöön. Proteiinissa muikun peratun syötävän osuuden vastaavuus ja mahdollinen täytehävikki on varmistettava. Rasvassa arvioitava erityisesti voin ja siankyljen paistohävikki. Kentät käsitellään itsenäisesti, kaikki neljä kenttää jätetty hyväksytysti avoimiksi."
+  },
+  "glycemic_reference": "https://glycemicindex.com/gi-search/",
+  "image": {
+    "path": "kuvat/paaruoat/savolainen-muikkukukko.webp",
+    "sha256": "d1c3d8ac497823c9242cbf98d7c0f342f0c11dfd3d71f176e4f8df8b9708078f",
+    "origin": "OpenAI ImageGen. Havainnekuva, ei valokuva Recipavossa valmistetusta erästä. Rakenne arvioitu suhteessa Opetushallituksen lähdekuvaukseen."
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/970#pullrequestreview-6030399437"
+}
