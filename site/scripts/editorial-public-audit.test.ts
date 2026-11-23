@@ -80,6 +80,25 @@ test("matches numeric ranges across dash styles without merging whole numbers", 
   assert.equal(output.totals.rawRepeatGroupsStillRepeated, 1);
 });
 
+test("matches negative temperatures across minus signs without merging positive temperatures", () => {
+  const step = (temperature: string) => "Säilytä pakastimessa " + temperature
+    + " °C:ssa ja noudata aina pakkauksen säilytys- ja sulatusohjeita.";
+  const inventory = raw();
+  inventory.signals.repeatedSteps = [{
+    phrase: "säilytä pakastimessa −18 °cssa ja noudata aina pakkauksen säilytys ja sulatusohjeita",
+    recipes: [evidence("a"), evidence("c")],
+  }];
+  const output = compareInventories(inventory, [
+    row("a", "Yksilöllinen annos.", [step("-18")]),
+    row("b", "Toinen annos.", [step("18")]),
+    row("c", "Kolmas annos.", [step("−18")], null),
+  ]);
+
+  assert.equal(output.visible.repeatedSteps.length, 1);
+  assert.deepEqual(output.visible.repeatedSteps[0].recipes.map(item => item.recipeId), ["a", "c"]);
+  assert.equal(output.totals.rawRepeatGroupsStillRepeated, 1);
+});
+
 test("source-only repeated steps disappear when visible instructions are corrected", () => {
   const output = compareInventories(raw(), [
     row("a", "Yksilöllinen annos.", ["Jaa kylmänä kahteen kulhoon."]),

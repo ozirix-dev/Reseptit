@@ -89,6 +89,19 @@ test('distinguishes time ranges from whole numbers in repeated steps', () => {
   assert.deepEqual(repeatedSteps[0].recipes.map(item => item.recipeId), ['a', 'c']);
 });
 
+test('distinguishes negative temperatures from positive temperatures in repeated steps', () => {
+  const sources = [['a', '-18'], ['b', '18'], ['c', '−18']].map(([id, temperature]) => ({
+    path: 'reseptit/aamupalat/' + id + '.md',
+    content: recipe(id, 'Kuvaus.', 'Säilytä pakastimessa ' + temperature
+      + ' °C:ssa ja noudata aina pakkauksen säilytys- ja sulatusohjeita.'),
+  }));
+
+  const { repeatedSteps } = analyze(sources).signals;
+  assert.equal(repeatedSteps.length, 1);
+  assert.match(repeatedSteps[0].phrase, /−18 °c/);
+  assert.deepEqual(repeatedSteps[0].recipes.map(item => item.recipeId), ['a', 'c']);
+});
+
 test('compares every line of a wrapped preparation step', () => {
   const shared = 'Sekoita taikinaa rauhallisesti kulhossa, kunnes rakenne on kauttaaltaan tasainen.';
   const mushroom = 'Lisää pilkotut sienet ja sekoita kertaalleen.';
