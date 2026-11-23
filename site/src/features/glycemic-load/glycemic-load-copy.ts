@@ -54,7 +54,7 @@ export const gkCopy = {
       UNKNOWN: "Laskentaan tarvittavia tietoja ei voitu vahvistaa."
     },
     omitted: "Pieniä hiilihydraattiosuuksia jätettiin pois laskelmasta.",
-    range: "Vaihteluväli kuvaa laskennassa käytettyjä vaihtoehtoja."
+    range: "Vaihteluväli kuvaa laskennan vaihtoehtoja tai lähteisiin perustuvia epävarmuuden rajoja."
   },
   en: {
     variantLimit: "The estimate applies to the ingredients, amounts and preparation described below.",
@@ -109,7 +109,7 @@ export const gkCopy = {
       UNKNOWN: "Some inputs needed for the calculation could not be verified."
     },
     omitted: "Small amounts of carbohydrate were left out of the calculation.",
-    range: "The range shows the alternatives used in the calculation."
+    range: "The range shows the alternatives used in the calculation or the limits of uncertainty supported by sources."
   },
   sv: {
     variantLimit: "Uppskattningen gäller ingredienserna, mängderna och tillagningen som beskrivs nedan.",
@@ -164,7 +164,7 @@ export const gkCopy = {
       UNKNOWN: "Vissa uppgifter som behövs för beräkningen kunde inte verifieras."
     },
     omitted: "Små mängder kolhydrater utelämnades ur beräkningen.",
-    range: "Intervallet visar de alternativ som användes i beräkningen."
+    range: "Intervallet visar beräkningsalternativen eller de gränser för osäkerheten som källorna stöder."
   },
   th: {
     variantLimit: "ค่าประมาณใช้ได้เฉพาะวัตถุดิบ ปริมาณ และวิธีปรุงที่ระบุในรายละเอียด",
@@ -219,7 +219,7 @@ export const gkCopy = {
       UNKNOWN: "ข้อมูลบางส่วนที่จำเป็นต่อการคำนวณยังยืนยันไม่ได้"
     },
     omitted: "การคำนวณละคาร์โบไฮเดรตบางส่วนที่มีปริมาณน้อย",
-    range: "ช่วงนี้แสดงค่าจากทางเลือกที่ใช้คำนวณ"
+    range: "ช่วงนี้แสดงผลจากทางเลือกที่ใช้คำนวณหรือขอบเขตความไม่แน่นอนที่มีแหล่งข้อมูลรองรับ"
   }
 } satisfies Record<RecipeLocale, object>;
 

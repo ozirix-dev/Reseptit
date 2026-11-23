@@ -126,7 +126,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Kaava on yksinkertainen – lähtötiedot eivät aina ole",
         paragraphs: [
           "GK = GI × annoksen imeytyvät hiilihydraatit grammoina / 100. Kaava on sama kuin Sydneyn yliopiston GI-tietokannan ohjeessa. Sen soveltaminen edellyttää kuitenkin oikeaa GI-lähdettä, järkevää annospainoa ja tiedossa olevaa hiilihydraattimäärää.",
-          "Jos keskeinen raaka-aine tai sen GI-tieto puuttuu, luotettavaa koko annoksen GK-arvoa ei synny pelkästään laskutoimitusta toistamalla."
+          "Hiilihydraattikattavuus kertoo, kuinka suurelle osalle annoksen imeytyvistä hiilihydraateista on sopiva GI-tieto. Jos GI puuttuu pieneltä osuudelta, GK-vaihteluväli voi silti olla mahdollinen, kun lähteet auttavat rajaamaan puuttuvan osuuden vaikutuksen. Suuri kattavuus yksin ei riitä. Jos keskeinen lähtötieto puuttuu tai vaikutusta ei voi rajata, uutta numeerista GK-arviota ei esitetä."
         ]
       },
       {

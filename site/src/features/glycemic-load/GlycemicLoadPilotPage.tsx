@@ -249,7 +249,7 @@ function GlycemicLoadOverview({ data }: { data: NonNullable<RouteContent["glycem
     const category = verbalGkForPortion(verbal, 1);
     const carbs = carbsByRecipe?.[result.recipeId];
     const base = result.status === "CALCULATED" ? originalPortionGk(result) : null;
-    const display = base ? formatOriginalPortionGk(base.estimate, numberLocale, !!result.assessmentType) : null;
+    const display = base ? formatOriginalPortionGk(base.estimate, numberLocale, !!result.assessmentType, base.rangeOnly) : null;
     const gkClass = originalGkClassDisclosure(base, locale, {
       limitation: portion?.classLimitation?.[locale],
       detailedOmissions: !!result.originalGkCoverage,

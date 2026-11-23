@@ -1,3 +1,4 @@
+import {acceptsReviewedNutritionModelBinding} from './reviewed-nutrition-model-binding';
 import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {textHash} from './gk149-model';
@@ -13,7 +14,8 @@ export function buildBlueberryPieVariant(root: string): GkOnlyVariant {
   const approval = JSON.parse(approvalText);
   const hash = (file: string) => textHash(readFileSync(join(root, file), 'utf8'));
   for (const [file, expected] of Object.entries(approval.boundFiles)) {
-    if (hash(file) !== expected) throw Error('Blueberry pie GK binding changed: ' + file);
+    const actual = hash(file);
+    if (actual !== expected && !acceptsReviewedNutritionModelBinding(file, expected, actual)) throw Error('Blueberry pie GK binding changed: ' + file);
   }
 
   const proposal = read('proposal.json');

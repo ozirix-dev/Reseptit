@@ -84,6 +84,9 @@ function stableStringify(value: unknown): string {
 
 export function glycemicLoadInputHash(input: unknown): string {
   const value = input as GlycemicLoadRecipeInput;
+  if (value.ingredients.some(row => row.unmatchedGiRange !== undefined)) {
+    return createHash("sha256").update(stableStringify(value)).digest("hex");
+  }
   const calculation = {
     recipeId: value.recipeId,
     servings: value.servings,
@@ -121,11 +124,16 @@ export function glycemicLoadEvidenceHash(
   const foodById = new Map(foodRecords.map((record) => [record.id, record]));
   const giById = new Map(giRecords.map((record) => [record.id, record]));
   const foodIds = [...new Set(input.ingredients.flatMap((ingredient) => ingredient.fineliRecordId ? [ingredient.fineliRecordId] : []))].sort();
+  const rangeSourceIds = [...new Set(input.ingredients.flatMap((row) => {
+    const ids = row.unmatchedGiRange?.sourceRecordIds;
+    return Array.isArray(ids) ? ids.filter(id => typeof id === "string") : [];
+  }))].sort();
   const giIds = [...new Set(input.ingredients.flatMap((ingredient) => ingredient.giRecordId ? [ingredient.giRecordId] : []))].sort();
   return createHash("sha256").update(stableStringify({
     foods: foodIds.map((id) => {
       const record = foodById.get(id);
       if (!record) return { id, missing: true };
+      if (rangeSourceIds.length > 0) return record;
       const componentValue = (component: "CHO" | "FIBT" | "POLYL", fallback: number | null | undefined) =>
         record.componentValues && Object.hasOwn(record.componentValues, component)
           ? record.componentValues[component] : fallback;
@@ -154,6 +162,7 @@ export function glycemicLoadEvidenceHash(
         normalizationError,
       };
     }),
+    ...(rangeSourceIds.length > 0 && { rangeSources: rangeSourceIds.map(id => giById.get(id) ?? { id, missing: true }) }),
     gi: giIds.map((id) => {
       const record = giById.get(id);
       return record ? {
@@ -178,6 +187,54 @@ export function glycemicLoadEvidenceHash(
       } : { id, missing: true };
     }),
   })).digest("hex");
+}
+
+export type GiRangeReview = {
+  recipeTextSha256: string;
+  calculationInputSha256: string;
+  calculationEvidenceSha256: string;
+  ingredients: Record<number, {
+    foodKey: string;
+    preparationKey: string;
+    reviewedBy: string;
+    applicability: string;
+  }>;
+};
+
+/** Recheck the editorial applicability decision against the current recipe and evidence. */
+export function reviewUnmatchedGiRanges(
+  input: GlycemicLoadRecipeInput, foodRecords: FoodRecord[], giRecords: GlycemicIndexRecord[],
+  markdown: string | undefined, review: GiRangeReview | undefined,
+) {
+  const approved = new Map<number, { min: GlycemicIndexRecord; max: GlycemicIndexRecord; applicability: string }>();
+  if (!review || !markdown || !input.ingredients.some(row => row.unmatchedGiRange !== undefined)
+      || parseMarkdown(markdown)?.data.recipe_id !== input.recipeId
+      || !exactRecipeTextBindingMatches(review.recipeTextSha256, markdown)
+      || !recipeBindingMatches(review.calculationInputSha256, glycemicLoadInputHash(input))
+      || !recipeBindingMatches(review.calculationEvidenceSha256, glycemicLoadEvidenceHash(input, foodRecords, giRecords))) return approved;
+
+  const catalog = new Map(giRecords.map(record => [record.id, record]));
+  const nonempty = (value: unknown): value is string => typeof value === "string" && value.trim().length > 0;
+  function eligible(record: GlycemicIndexRecord | undefined): record is GlycemicIndexRecord {
+    return !!record && record.referenceScale === "GLUCOSE_100"
+      && record.calculationUse !== "REFERENCE_ONLY" && record.evidenceKind !== "PUBLISHED_IMPUTATION"
+      && (record.qualityTier === "SUPPLEMENTARY" || (record.qualityTier === "STRONG" && record.source?.iso26642Confirmed === true))
+      && Number.isFinite(record.gi) && record.gi >= 0
+      && nonempty(record.food) && nonempty(record.preparation)
+      && record.source?.published === true && nonempty(record.source.url) && URL.parse(record.source.url)?.protocol === "https:"
+      && nonempty(record.source.title) && nonempty(record.source.table) && nonempty(record.source.qualityEvidence);
+  }
+  for (const [index, row] of input.ingredients.entries()) {
+    const scope = review.ingredients?.[index];
+    const ids = row.unmatchedGiRange?.sourceRecordIds;
+    if (!scope || !nonempty(row.foodKey) || !nonempty(row.preparationKey)
+        || row.foodKey !== scope.foodKey || row.preparationKey !== scope.preparationKey
+        || !nonempty(scope.reviewedBy) || !nonempty(scope.applicability) || !Array.isArray(ids) || ids.length !== 2) continue;
+    const min = catalog.get(ids[0]);
+    const max = catalog.get(ids[1]);
+    if (eligible(min) && eligible(max) && min.gi < max.gi) approved.set(index, { min, max, applicability: scope.applicability });
+  }
+  return approved;
 }
 
 /** Exact reviewed preparation and locale text, distinct from structural input hash. */

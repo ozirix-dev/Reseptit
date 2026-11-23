@@ -1396,11 +1396,18 @@ test("GK values link to centralized recipe details on every published translatio
   const pasteBlocker = glycemicLoadPilotResults.find((result) => result.recipeId === "kookos-lime-kanacurry");
   assert.ok(pasteBlocker?.incompleteReasons.length, "incomplete recipe includes a structured reason");
   const methodPagePaths = { fi: "glykeeminen-kuorma", en: "en/glycemic-load", sv: "sv/glykemisk-belastning", th: "th/glycemic-load" };
+  const localizedCoverage = {
+    fi: ["Hiilihydraattikattavuus kertoo", "Jos vaikutusta ei voi rajata"],
+    en: ["Carbohydrate coverage is the share", "If the effect cannot be bounded"],
+    sv: ["Kolhydrattäckningen visar", "Om påverkan inte går att avgränsa"],
+    th: ["ความครอบคลุมของข้อมูล GI คือสัดส่วน", "หากกำหนดขอบเขตผลกระทบไม่ได้"],
+  };
   for (const locale of ["fi", "en", "sv", "th"] as const) {
     const html = await readFile(path.join(dist, methodPagePaths[locale], "index.html"), "utf8");
     assert.ok(html.includes("Kikherne, kypsä tai säilyke"), "Fineli source label displays Finnish characters");
     assert.ok(html.includes("TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON"), "Fineli source label displays uppercase Ä");
     assert.ok(!html.includes("kypsÃ¤ tai sÃ¤ilyke"));
+    for (const phrase of localizedCoverage[locale]) assert.ok(html.includes(phrase), locale + ": coverage and uncertainty are localized");
     const resultStart = html.indexOf('id="kookos-lime-kanacurry"');
     assert.ok(resultStart >= 0 && html.slice(resultStart, resultStart + 1_500).includes(gkCopy[locale].why), `${locale}: missing-result explanation is localized`);
   }
@@ -1418,7 +1425,7 @@ test("GI proxy matches remain visibly low confidence and incomplete totals are w
   for (const result of glycemicLoadPilotResults) {
     if (result.status === "INSUFFICIENT SOURCE DATA") assert.equal(result.glycemicLoadPerServing, null, `${result.recipeId}: no partial total`);
     if (result.status === "CALCULATED") {
-      assert.notEqual(result.glycemicLoadPerServing, null, `${result.recipeId}: complete total`);
+      assert.ok(result.glycemicLoadPerServing !== null || result.glycemicLoadRangePerServing, `${result.recipeId}: complete estimate`);
       if (result.sourceReferences.some((source) => source.matchKind === "ANALOG" || source.matchKind === "CATEGORY_MEAN")) {
         assert.equal(result.confidence, "LOW", `${result.recipeId}: proxy match lowers confidence`);
       }

@@ -1,3 +1,4 @@
+import {acceptsReviewedNutritionModelBinding} from './reviewed-nutrition-model-binding';
 import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
 import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
@@ -76,7 +77,8 @@ export function buildPohaHoneyMustardVariants(root: string): GkOnlyVariant[] {
   if (textHash(approvalText) !== 'b9419b7a18182f0ab978015040d5686a29096eb01ae855aed12d4d3e64eba9af') throw Error('Poha and honey mustard approval changed');
   const {boundFiles}: {boundFiles: Record<string, string>} = JSON.parse(approvalText);
   for (const [file, hash] of Object.entries(boundFiles)) {
-    if (textHash(read(file)) !== hash) throw Error('Approved GK binding changed: ' + file);
+    const actual = textHash(read(file));
+    if (actual !== hash && !acceptsReviewedNutritionModelBinding(file, hash as string, actual)) throw Error('Approved GK binding changed: ' + file);
   }
 
   return versions.map((version, versionIndex) => {

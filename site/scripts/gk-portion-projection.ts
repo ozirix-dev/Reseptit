@@ -5,7 +5,7 @@ import type { IngredientPortion, PortionEvidence, LocalizedText, SideCarbohydrat
 import type { RecipeEntry } from "../src/types/content";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeBindingHash } from "./glycemic-load-recipe-binding";
-import { calculate, round, type Calculation, type FoodRecord, type IngredientInput } from "./nutrition-model";
+import { round, type Calculation, type FoodRecord, type IngredientInput } from "./nutrition-model";
 import { verifyNutritionEvidence } from "./nutrition-evidence";
 import { nutritionKeys, readNutritionFieldApproval } from "./nutrition-field-approval";
 import { isRecoveryEvidence, loadRecovery } from "./gk80-uunikanapasta";
@@ -207,8 +207,8 @@ function portionFromNutrition(data: NutritionRecipe, input: Calculation, standal
   // These two approved methodologies have separate accounting scopes.
   if (isRecoveryEvidence(input) || isScopedPolyolEvidence(input)) return null;
   const verified = verifyNutritionEvidence(data, input);
-  if (verified.errors.length) return null;
-  const calculation = calculate(input);
+  const calculation = verified.calculated;
+  if (verified.errors.length || !calculation || !("omissionWithinTolerance" in calculation)) return null;
   // A carbohydrate-only estimate needs evidence for every row, including a
   // zero-carbohydrate bound for any excluded ingredient.
   const standaloneAmounts = standalone && input.publicationStatus === "WITHHELD_SOURCE_INCOMPLETE"

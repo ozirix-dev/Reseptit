@@ -1,3 +1,4 @@
+import {acceptsReviewedNutritionModelBinding} from './reviewed-nutrition-model-binding';
 import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
@@ -36,7 +37,8 @@ export function buildProductAVariants(root: string): GkOnlyVariant[] {
     }
     const sources = read(dir+'sources.json');
     for (const [file,seal] of Object.entries(sources.sourceFilesLfSha256)) {
-      check(sha(text(file))===seal, 'native source or engine seal: '+file);
+      const actual = sha(text(file));
+      check(actual === seal || acceptsReviewedNutritionModelBinding(file, seal as string, actual), 'native source or engine seal: '+file);
     }
     const foods: FoodRecord[] = sources.composition.filter((f:any)=>Number.isFinite(f.availablePer100g)).map((f:any)=>({
       id:f.id, name:f.name, sourceUrl:'native:'+f.id, retrievedAt:'2026-11-02', licence:'See sealed source catalog',

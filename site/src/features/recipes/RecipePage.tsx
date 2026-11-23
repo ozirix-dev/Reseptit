@@ -98,7 +98,7 @@ export function RecipePage() {
   const portionWords = portionCopy[locale];
   const portionCarbs = withholdNutrition ? null : originalPortionCarbs(recipe.nutrition, portionEvidence);
   const scaled = glycemicLoad ? originalPortionGk(glycemicLoad, eatenPortion) : null;
-  const display = scaled ? formatOriginalPortionGk(scaled.estimate, numberLocale, !!glycemicLoad?.assessmentType) : null;
+  const display = scaled ? formatOriginalPortionGk(scaled.estimate, numberLocale, !!glycemicLoad?.assessmentType, scaled.rangeOnly) : null;
   const glValue = display?.value ? `${glApprox}${display.value}` : "";
   const gkClass = originalGkClassDisclosure(scaled, locale, {
     limitation: portionEvidence?.classLimitation?.[locale],

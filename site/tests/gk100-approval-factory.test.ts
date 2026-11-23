@@ -84,6 +84,31 @@ test('25 recipes are handled independently, with explicit approval and no public
   }, read), plan.variants);
 });
 
+test('a new GK-only release cannot use a subtotal with an unbounded omission', () => {
+  const { batch, files, read } = fixture(1);
+  const entry = batch.candidates[0];
+  const packet = JSON.parse(read(entry.packetPath));
+  packet.ingredients.push({ name: locale, grams: 2 });
+  packet.omissions = [{ ingredientIndex: 1, choPer100g: 40 }];
+  const raw = JSON.stringify(packet);
+  files.set(entry.packetPath, raw);
+  entry.classification = {
+    ...entry.classification!, candidateSha256: textHash(raw), risk: 'MEDIUM',
+    review: { depth: 'FOCUSED', evidence: 'fixture review' },
+  };
+  const checked = checkBatch(batch, read);
+  const decisions = approve(checked, entry.recipeId);
+  const plan = prepareRelease(checked, decisions, coverage, base, read);
+  assert.equal(plan.rows[0].reason, 'UNBOUNDED_OMISSION_IN_NEW_RELEASE');
+  assert.deepEqual(plan.variants, []);
+  const oldPlan = { ...plan, variants: [checked.variants.get(entry.recipeId)!],
+    expectedCoverageDelta: 1, expectedVariantCoverageDelta: 1 };
+  const bundle = makeReleaseBundle(checked, batch, decisions, oldPlan);
+  assert.throws(() => verifyReleaseBundle(bundle, {
+    schemaVersion: 1, bundleSha256: bundle.bundleSha256, evidence: 'fixture approval',
+  }, read), /UNBOUNDED_OMISSION_IN_NEW_RELEASE/);
+});
+
 test('a sealed study serving keeps its scope and quantities beside the GL estimate', () => {
   const { batch, files, read } = fixture(1);
   const entry = batch.candidates[0];

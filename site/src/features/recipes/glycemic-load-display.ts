@@ -1,3 +1,5 @@
+import { validGkRange } from "./gk-estimate";
+
 export interface GlycemicLoadDisplayCandidate {
   recipeId: string;
   assessmentType?: "PUBLISHED_IMPUTATION";
@@ -14,7 +16,7 @@ export interface GlycemicLoadDisplayCandidate {
 
 export type PublishedGlycemicLoad = Omit<GlycemicLoadDisplayCandidate, "status" | "glycemicLoadPerServing"> & {
   status: "CALCULATED";
-  glycemicLoadPerServing: number;
+  glycemicLoadPerServing: number | null;
   confidence: "HIGH" | "MEDIUM" | "LOW";
   omittedAvailableCarbohydratePerServingG: number;
 };
@@ -25,7 +27,9 @@ export function publishedGlycemicLoadForRecipe<T extends GlycemicLoadDisplayCand
   results: T[],
 ): (T & PublishedGlycemicLoad) | null {
   const result = results.find((entry) => entry.recipeId === recipeId);
-  return result?.status === "CALCULATED" && result.glycemicLoadPerServing !== null && result.confidence !== null
+  return result?.status === "CALCULATED" && result.confidence !== null
+    && (result.glycemicLoadPerServing !== null
+      || (result.glycemicLoadRangePerServing && validGkRange(result.glycemicLoadRangePerServing)))
     ? result as T & PublishedGlycemicLoad
     : null;
 }

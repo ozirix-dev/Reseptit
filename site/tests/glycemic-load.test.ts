@@ -1,6 +1,7 @@
 import {recipeTextForApprovedSnapshot} from '../scripts/approved-recipe-note-edits';
 import {restorePreEHold,afcdSourceBeforeCorrection} from './restore-pre-ehold';
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { readFile as actualReadFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
@@ -8,7 +9,7 @@ import test from "node:test";
 import type { FoodRecord } from "../scripts/nutrition-model";
 import { calculateGlycemicLoad, classifyGlycemicLoad, roundGlycemicLoadForDisplay, type GlycemicIndexRecord, type GlycemicLoadRecipeInput } from "../scripts/glycemic-load-model";
 import { completePublishedRecipeInputs } from "../scripts/glycemic-load-pilot-input";
-import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches } from "../scripts/glycemic-load-recipe-binding";
+import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches, type GiRangeReview } from "../scripts/glycemic-load-recipe-binding";
 import { publishedGlycemicLoadForRecipe } from "../src/features/recipes/glycemic-load-display";
 import { parseMarkdown } from "../src/content/markdown";
 
@@ -202,6 +203,104 @@ const gi: GlycemicIndexRecord = {
     qualityEvidence: "Table 1 ISO-standard inclusion criteria.",
   },
 };
+
+test("an unmatched GI range needs registered endpoints and a current applicability review", () => {
+  const markdown = "---\nrecipe_id: bounded\nservings: 1\n---\nSimmer the ingredients.\n";
+  const main = { name: "main", grams: 100, fineliRecordId: "main", giRecordId: gi.id,
+    foodKey: gi.foodKey, preparationKey: gi.preparationKey, giMatchEvidence: "Synthetic exact match" };
+  const small = { name: "small", grams: 100, fineliRecordId: "small", giRecordId: null,
+    foodKey: "small", preparationKey: "simmered",
+    unmatchedGiRange: { sourceRecordIds: ["lower", "upper"] as [string, string] } };
+  const input = { recipeId: "bounded", servings: 1, ingredients: [main, small] };
+  const endpoint = (id: string, value: number): GlycemicIndexRecord => ({
+    ...gi, id, gi: value, food: "Reviewed analogue", preparation: "Simmered",
+  });
+  const foods = [food("main", 9), food("small", 1)];
+  const gis = [gi, endpoint("lower", 25), endpoint("upper", 75)];
+  const reviewFor = (candidate: GlycemicLoadRecipeInput, composition = foods, records = gis) => ({
+    recipeTextSha256: createHash("sha256").update(markdown).digest("hex"),
+    calculationInputSha256: glycemicLoadInputHash(candidate),
+    calculationEvidenceSha256: glycemicLoadEvidenceHash(candidate, composition, records),
+    ingredients: { 1: { foodKey: "small", preparationKey: "simmered",
+      reviewedBy: "Synthetic reviewer", applicability: "Fixture analogue, same preparation for both endpoints" } },
+  });
+  const review = reviewFor(input);
+  const run = (candidate = input, composition = foods, records = gis, recipeMarkdown = markdown, giRangeReview: GiRangeReview = review) =>
+    calculateGlycemicLoad(candidate, composition, records, { requireBoundedGi: true, recipeMarkdown, giRangeReview });
+
+  const approved = run();
+  assert.equal(approved.minimumGiCarbohydrateCoverage, 0.9);
+  assert.equal(approved.glycemicLoadPerServing, null);
+  assert.deepEqual(approved.glycemicLoadRangePerServing, { min: 4.75, max: 5.25 });
+  assert.deepEqual(approved.ingredients[1].giContributionRange, { min: 0.25, max: 0.75 });
+  assert.equal(approved.ingredients[1].giContribution, null);
+  assert.ok(publishedGlycemicLoadForRecipe("bounded", [{ ...approved, sourceReferences: [] }]));
+
+  const invented = { ...input, ingredients: [main, { ...small, unmatchedGiRange: {
+    min: 25, max: 75, sourceUrl: "https://example.invalid/convincing-paper", evidence: "Synthetic claim only",
+  } }] } as unknown as typeof input;
+  const wrongPreparation = { ...review, ingredients: { 1: { ...review.ingredients[1], preparationKey: "fried" } } };
+  const wrongScale = [gi, { ...gis[1], referenceScale: "BREAD_100" as "GLUCOSE_100" }, gis[2]];
+  const editedGi = [gi, { ...gis[1], preparation: "Fried" }, gis[2]];
+  const referenceOnly = [gi, { ...gis[1], calculationUse: "REFERENCE_ONLY" as const }, gis[2]];
+  const missingReviewRow = { ...review, ingredients: {} };
+  for (const result of [
+    run(invented, foods, gis, markdown, reviewFor(invented)),
+    calculateGlycemicLoad(input, foods, gis, { recipeMarkdown: markdown }),
+    run(input, foods, gis, markdown, wrongPreparation),
+    run(input, foods, gis, markdown, missingReviewRow),
+    run(input, foods, referenceOnly, markdown, reviewFor(input, foods, referenceOnly)),
+    run(input, foods, gis.slice(0, 2), markdown, reviewFor(input, foods, gis.slice(0, 2))),
+    run(input, foods, gis, markdown.replace("Simmer", "Fry")),
+    run({ ...input, servings: 2 }),
+    run(input, foods, editedGi),
+    run(input, [{ ...foods[0], sourceUrl: "https://example.invalid/replaced-composition" }, foods[1]]),
+    run(input, foods, wrongScale, markdown, reviewFor(input, foods, wrongScale)),
+    run(input, [foods[1]]),
+  ]) {
+    assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+    assert.equal(result.glycemicLoadRangePerServing, null);
+  }
+
+  const thresholdFoods = [food("main", 19), foods[1]];
+  const crossedGi = [{ ...gi, gi: 51 }, gis[1], gis[2]];
+  const crossed = run(input, thresholdFoods, crossedGi, markdown, reviewFor(input, thresholdFoods, crossedGi));
+  assert.equal(crossed.minimumGiCarbohydrateCoverage, 0.95);
+  assert.match(crossed.blockers.join(), /class boundary/);
+  const higherFoods = [foods[0], food("small", 1.5)];
+  const higherBounds = [gi, endpoint("lower", 100), endpoint("upper", 125)];
+  assert.deepEqual(run(input, higherFoods, higherBounds, markdown, reviewFor(input, higherFoods, higherBounds))
+    .glycemicLoadRangePerServing, { min: 6, max: 6.375 });
+  const edgeFoods = [food("main", 3), foods[1]];
+  const edgeGi = [{ ...gi, gi: 53 }, endpoint("lower", 15), endpoint("upper", 115)];
+  assert.ok(run(input, edgeFoods, edgeGi, markdown, reviewFor(input, edgeFoods, edgeGi)).glycemicLoadRangePerServing,
+    "the exactly one-unit range survives floating-point subtraction");
+  const manyRows = { ...input, ingredients: [small, main, main, main, main, main] };
+  const accumulationFoods = [food("main", 3), foods[1]];
+  const accumulationGi = [{ ...gi, gi: 79 }, edgeGi[1], edgeGi[2]];
+  assert.ok(run(manyRows, accumulationFoods, accumulationGi, markdown, {
+    ...reviewFor(manyRows, accumulationFoods, accumulationGi),
+    ingredients: { 0: review.ingredients[1] },
+  }).glycemicLoadRangePerServing, "matched contribution totals do not distort the width");
+  const varyingComposition = { ...input, ingredients: [
+    { ...main, availableCarbohydratePer100gRange: { min: 20.4, max: 21.1, evidence: "fixture range" } }, small,
+  ] };
+  const varyingGi = [{ ...gi, gi: 100 }, endpoint("lower", 30), endpoint("upper", 60)];
+  const exactWidth = run(varyingComposition, foods, varyingGi, markdown, reviewFor(varyingComposition, foods, varyingGi));
+  assert.deepEqual(exactWidth.glycemicLoadRangePerServing, { min: 20.7, max: 21.7 });
+  const tooWide = [varyingGi[0], varyingGi[1], endpoint("upper", 60.00000000000001)];
+  assert.equal(run(varyingComposition, foods, tooWide, markdown, reviewFor(varyingComposition, foods, tooWide)).status,
+    "INSUFFICIENT SOURCE DATA");
+  const cutoffFoods = [food("main", 39), foods[1]];
+  const cutoffGi = [gi, endpoint("lower", 30), endpoint("upper", 49.99999999999999)];
+  assert.equal(run(input, cutoffFoods, cutoffGi, markdown, reviewFor(input, cutoffFoods, cutoffGi))
+    .glycemicLoadRangePerServing, null, "number conversion must preserve the exact public class");
+  const collapsedGi = [gi, endpoint("lower", 1e-15), endpoint("upper", 2e-15)];
+  assert.equal(run(input, foods, collapsedGi, markdown, reviewFor(input, foods, collapsedGi))
+    .glycemicLoadRangePerServing, null, "number conversion must not hide a nonzero interval");
+  const wide = [gi, endpoint("lower", 0), endpoint("upper", 125)];
+  assert.equal(run(input, higherFoods, wide, markdown, reviewFor(input, higherFoods, wide)).status, "INSUFFICIENT SOURCE DATA");
+});
 
 test("recipe binding detects calculation-relevant changes and ignores instruction copy edits", () => {
   const reviewed = `---

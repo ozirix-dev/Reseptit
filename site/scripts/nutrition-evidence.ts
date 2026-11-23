@@ -119,10 +119,15 @@ export function verifyNutritionEvidence(
 
   let calculated: ReturnType<typeof calculate> | ReturnType<typeof calculateRecovery> | ReturnType<typeof calculateScopedPolyolC> | null = null;
   try {
-    calculated = isRecoveryEvidence(evidence) ? calculateRecovery(evidence) : isScopedPolyolEvidence(evidence) ? calculateScopedPolyolC(evidence) : calculate(evidence);
+    const scope = partialApproval ? parseNutritionFieldScope(partialApproval.scope) : undefined;
+    const scopeMatches = scope?.success && scope.data.evidenceSha256 === nutritionCalculationFingerprint(evidence);
+    const fieldApproval = errors.length === 0 && scopeMatches ? {
+      verifiedAvailableRows: scope.data.fields.includes("carbs_net_per_serving_g") ? partialApproval?.verifiedAvailableRows : undefined,
+    } : undefined;
+    calculated = isRecoveryEvidence(evidence) ? calculateRecovery(evidence) : isScopedPolyolEvidence(evidence)
+      ? calculateScopedPolyolC(evidence) : calculate(evidence, fieldApproval);
     if (partialApproval && errors.length === 0 && "omissionWithinTolerance" in calculated) {
-      const scope = parseNutritionFieldScope(partialApproval.scope);
-      if (!scope.success || scope.data.evidenceSha256 !== nutritionCalculationFingerprint(evidence)) {
+      if (!scopeMatches) {
         errors.push("Partial nutrition approval is invalid or does not match the calculation evidence");
       } else {
         if (!evidence.withholdingReason?.trim() || calculated.status !== "INSUFFICIENT SOURCE DATA") {
@@ -132,15 +137,10 @@ export function verifyNutritionEvidence(
           row.issues.some(issue => !issue.startsWith("Unknown nutrient "))
         )) errors.push("Partial nutrition requires valid shared ingredient inputs and bounded omissions");
 
-        const included = calculated.rows.map((row, index) => ({ row, index }))
-          .filter(({ index }) => !evidence.ingredients[index]!.excludedReason);
-        const netAvailable = included.every(({ row, index }) =>
-          row.values.netCarbohydrate !== null || partialApproval.verifiedAvailableRows.has(index)
-        );
-        const totalAvailable = included.every(({ row }) => row.values.netCarbohydrate !== null);
+
         const fieldEstimates = {
-          carbs_net_per_serving_g: netAvailable ? calculated.perServing.carbohydrate : null,
-          carbs_total_per_serving_g: totalAvailable ? calculated.totalCarbohydratePerServingG : null,
+          carbs_net_per_serving_g: calculated.perServing.netCarbohydrate,
+          carbs_total_per_serving_g: calculated.totalCarbohydratePerServingG,
           protein_per_serving_g: calculated.perServing.protein,
           fat_per_serving_g: calculated.perServing.fat,
         };
