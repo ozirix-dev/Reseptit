@@ -12,6 +12,7 @@ import { loadSemanticEvidence } from "./translation-semantic-review";
 import { fiSourceQualitySchema, type FiSourceQualityEvidence } from "./translation-fi-source-quality";
 import { projectEvidenceLedger, type EvidenceProjectionEntry } from "./translation-derived-evidence-ledger";
 import { changedRecipeIds } from "./translation-batch-ci-report";
+import { PILOT_IDS } from "./fi-approved-source-pilot";
 
 type Recipe = TranslationAuditResult["publishedSources"][number];
 const locales = ["en", "sv", "th"] as const;
@@ -77,11 +78,12 @@ export async function readEvidenceEntries(
 
 export async function runDerivedEvidenceReport(args: {
   projectRoot: string; changedPaths: string; sourceEvidence?: FiSourceQualityEvidence;
-  outputBase: string; testedSha?: string;
+  outputBase: string; testedSha?: string; includePilot?: boolean;
 }) {
   const ids = changedRecipeIds(args.changedPaths);
   const semanticEvidence = await loadSemanticEvidence(args.projectRoot);
-  const entries = await readEvidenceEntries(args.projectRoot, ids);
+  const reportIds = args.includePilot ? [...new Set([...ids, ...PILOT_IDS])].sort() : ids;
+  const entries = await readEvidenceEntries(args.projectRoot, reportIds);
   const result = projectEvidenceLedger(entries, semanticEvidence, args.sourceEvidence ?? {});
   const output = {
     ...result, testedSha: args.testedSha ?? "",
@@ -119,11 +121,12 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
       projectRoot: root,
       changedPaths: process.env.CHANGED_PATHS ?? "",
       sourceEvidence,
+      includePilot: process.argv.includes("--pilot"),
       outputBase: path.resolve(root, option("out") ?? "tmp/translation-derived-evidence/current"),
       testedSha: process.env.GITHUB_SHA ?? "",
     });
     console.log(JSON.stringify({
-      checked: report.changedRecipeIds.length,
+      checked: report.decisions.length,
       sourceEvidenceProvided: report.source_quality_evidence_provided,
       releaseAuthorized: report.release_authorized,
     }));
