@@ -59,7 +59,27 @@ jobs:
       - name: Test revision selection against concurrent base changes
         run: node --test .github/scripts/select-recipe-ci-revision.test.mjs
 
+      - name: Verify changed-path selector
+        run: node site/scripts/select-ci-checks.test.mjs
+
+      - name: Verify browser-suite allowlist
+        run: node --test site/scripts/run-browser-suites.test.mjs
+
+      - name: Check gh-aw review preparation
+        run: python3 -B -m unittest discover -v -s .github/scripts -p 'test_prepare_recipavo_review.py'
+
+      - name: Select risk-based checks
+        id: select
+        env:
+          BASE_SHA: ${{ steps.revision.outputs.pr_base || github.event.before || steps.revision.outputs.tested_sha }}
+          HEAD_SHA: ${{ steps.revision.outputs.tested_sha }}
+          EVENT_NAME: ${{ github.event_name }}
+          FORCE_FULL: ${{ inputs.full_suite || false }}
+        run: node site/scripts/select-ci-checks.mjs
+
+      # Only a selected site check can consume verified image inputs.
       - name: Verify or restore manifest image inputs
+        if: steps.select.outputs.needs_node == 'true'
         id: images
         shell: pwsh
         env:
@@ -86,34 +106,19 @@ jobs:
           Write-Host "Verified $($result.files) image inputs (mode=$($data['ci']['mode']))"
 
       - name: Test verified Git-tracked recipe image overlays
+        if: steps.select.outputs.needs_node == 'true'
         run: python3 -B -m unittest discover -v -s site/scripts -p 'test_verified_image_overlay.py'
 
       - name: Append SHA-256-verified Git-tracked recipe image overlays
+        if: steps.select.outputs.needs_node == 'true'
         shell: bash
         env:
           VERIFIED_IMAGE_ROOT: ${{ steps.images.outputs.root }}
         run: python3 -B site/scripts/verified_image_overlay.py --manifest assets/images.tracked-overlays.json --source-root kuvat --image-root "$VERIFIED_IMAGE_ROOT" --mode apply
 
       - name: Verify production image bootstrap
+        if: steps.select.outputs.needs_node == 'true'
         run: node --test site/scripts/build-production.test.mjs
-
-      - name: Verify changed-path selector
-        run: node site/scripts/select-ci-checks.test.mjs
-
-      - name: Verify browser-suite allowlist
-        run: node --test site/scripts/run-browser-suites.test.mjs
-
-      - name: Check gh-aw review preparation
-        run: python3 -B -m unittest discover -v -s .github/scripts -p 'test_prepare_recipavo_review.py'
-
-      - name: Select risk-based checks
-        id: select
-        env:
-          BASE_SHA: ${{ steps.revision.outputs.pr_base || github.event.before || steps.revision.outputs.tested_sha }}
-          HEAD_SHA: ${{ steps.revision.outputs.tested_sha }}
-          EVENT_NAME: ${{ github.event_name }}
-          FORCE_FULL: ${{ inputs.full_suite || false }}
-        run: node site/scripts/select-ci-checks.mjs
 
       # Always refresh raw and projected FI findings from the same tested revision.
       # The selector skips docs, feedback UI and translation-only changes.
@@ -301,7 +306,10 @@ jobs:
           else
             printf '{}\n' > "$evidence"
           fi
-          npx tsx --test tests/translation-batch-ci-report.test.ts tests/translation-derived-evidence-ledger.test.ts tests/translation-derived-evidence-cli.test.ts
+          # Full CI runs these files in npm test.
+          if [[ "${{ steps.select.outputs.full }}" != 'true' ]]; then
+            npx tsx --test tests/translation-batch-ci-report.test.ts tests/translation-derived-evidence-ledger.test.ts tests/translation-derived-evidence-cli.test.ts
+          fi
           pilot=()
           if [[ "$RUN_FI_PILOT" == "true" ]]; then
             pilot=(--pilot)
@@ -392,11 +400,7 @@ jobs:
       # fail closed under the same mandatory Recipe site job.
       - name: Audit published nutrition evidence (risk-based, strict)
         if: steps.select.outputs.run_nutrition == 'true' || steps.select.outputs.run_glycemic == 'true' || steps.select.outputs.full == 'true'
-        env:
-          PROJECT_IMAGE_ROOT: ${{ steps.images.outputs.root }}
-        run: |
-          npm run content:sync
-          npm run audit:nutrition -- --strict
+        run: npm run audit:nutrition -- --strict
         working-directory: site
 
       - name: Build the publishable site
