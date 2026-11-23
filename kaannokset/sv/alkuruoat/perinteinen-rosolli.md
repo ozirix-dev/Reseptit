@@ -28,13 +28,13 @@ ingredients:
     item: "kokta morötter"
   - amount: 300
     unit: "g"
-    item: "kokta eller inlagda rödbetor"
+    item: "kokta eller inlagda rödbetor, avrunna"
   - amount: 100
     unit: "g"
     item: "smörgåsgurka"
   - amount: 120
     unit: "g"
-    item: "syrligt äpple"
+    item: "syrligt äpple, ätbar del utan kärnhus"
   - amount: 60
     unit: "g"
     item: "rödlök"
@@ -61,10 +61,10 @@ En finsk julsallad av tärnade rotfrukter och äpple med rosa gräddsås som ser
 
 ## Gör så här
 
-1. Använd färdigkokta, avsvalnade rotfrukter. Om du börjar med råa, koka dem mjuka, låt svalna och skala. Väg de kokta mängderna som anges.
+1. Använd färdigkokta, avsvalnade rotfrukter. Om du börjar med råa, koka dem mjuka, kyl snabbt i grunda kärl och skala. Väg de ätbara kokta mängderna; låt rödbetorna rinna av och ta bort äpplets kärnhus.
 2. Tärna rotfrukter, gurka, äpple och lök i små jämnstora bitar.
 3. Blanda salladen försiktigt och krydda med salt och vitpeppar. Täck och kyl i kylskåp i minst 30 minuter.
-4. Vispa kall grädde lätt. Rör ner ättika och socker; färga eventuellt med några droppar rödbetsspad. Servera såsen separat.
+4. Vispa kall grädde lätt. Rör ner ättika och socker; färga eventuellt med några droppar kallt spad som sparats separat enbart från receptets rödbetor. Servera såsen separat och förvara både sallad och gräddsås i kylskåp under +6 °C fram till servering.
 
 ## Anteckningar
 
@@ -72,4 +72,4 @@ En finsk julsallad av tärnade rotfrukter och äpple med rosa gräddsås som ser
 - Redaktionellt utkast: ingen provlagning hos Recipavo, godkänd närings-/GK-beräkning eller bild ännu.
 - Jämförelsekälla för tillagningen (inte kopierad): https://www.martat.fi/reseptit/rosolli/
 
-- Tidsuppskattningen förutsätter färdigkokta och avsvalnade rotfrukter. Att koka och kyla råa rödbetor tar längre tid.
+- Tidsuppskattningen på 50 minuter förutsätter färdigkokta och avsvalnade rotfrukter. Att koka och snabbt kyla råa rödbetor tar längre tid. Gräddsåsen innehåller mjölk; använd kall grädde och rena redskap.

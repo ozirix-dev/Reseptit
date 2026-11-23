@@ -33,13 +33,13 @@ ingredients:
     item: "keitettyjä porkkanoita"
   - amount: 300
     unit: "g"
-    item: "keitettyjä tai etikkasäilöttyjä punajuuria"
+    item: "keitettyjä tai etikkasäilöttyjä punajuuria, valutettuna"
   - amount: 100
     unit: "g"
     item: "maustekurkkua"
   - amount: 120
     unit: "g"
-    item: "hapanta omenaa"
+    item: "hapanta omenaa, siemenkota poistettuna (syötävä osa)"
   - amount: 60
     unit: "g"
     item: "punasipulia"
@@ -66,10 +66,10 @@ Joulupöydän kuutioitu juures-omenasalaatti ja erikseen tarjottava vaaleanpunai
 
 ## Valmistus
 
-1. Käytä valmiiksi keitettyjä ja jäähtyneitä juureksia. Jos aloitat raaoista, keitä ne kuorineen kypsiksi, jäähdytä ja kuori. Punnitse ohjeen mukaiset kypsät määrät.
+1. Käytä valmiiksi keitettyjä ja jäähtyneitä juureksia. Jos aloitat raaoista, keitä ne kuorineen kypsiksi, jäähdytä nopeasti matalissa astioissa ja kuori. Punnitse kypsien juuresten syötävät määrät; valuta punajuuret ja poista omenasta siemenkota.
 2. Leikkaa kaikki juurekset, maustekurkku, omena ja sipuli pieniksi tasakokoisiksi kuutioiksi.
 3. Sekoita salaatti varovasti; mausta suolalla ja valkopippurilla. Peitä ja jäähdytä jääkaapissa vähintään 30 minuuttia.
-4. Vatkaa kylmä kerma löysäksi vaahdoksi. Lisää etikka ja sokeri; halutessasi värjää muutamalla tipalla punajuurilientä. Tarjoa kastike erillään.
+4. Vatkaa kylmä kerma löysäksi vaahdoksi. Lisää etikka ja sokeri; halutessasi värjää muutamalla tipalla vain näistä reseptin punajuurista erikseen talteen otettua kylmää lientä. Tarjoa kastike erillään ja pidä sekä salaatti että kermakastike jääkaapissa alle +6 °C:ssa tarjoiluun asti.
 
 ## Muistiinpanot
 
@@ -77,4 +77,4 @@ Joulupöydän kuutioitu juures-omenasalaatti ja erikseen tarjottava vaaleanpunai
 - Resepti on toimituksellinen luonnos: ei Recipavon koekeittiötestiä, hyväksyttyä ravinto-/GK-laskelmaa eikä kuvaa.
 - Valmistuksen vertailulähde (ohjetta ei kopioitu): https://www.martat.fi/reseptit/rosolli/
 
-- Aika-arvio koskee valmiiksi keitettyjä ja jäähtyneitä juureksia. Raakojen punajuurten keittäminen ja jäähdyttäminen pidentää valmistusaikaa.
+- Aika-arvio 50 min koskee valmiiksi keitettyjä ja jäähtyneitä juureksia. Raakojen punajuurten keittäminen ja nopea jäähdyttäminen pidentävät valmistusaikaa. Kastike sisältää maitoa; käytä kylmää kermaa ja puhtaita työvälineitä.
