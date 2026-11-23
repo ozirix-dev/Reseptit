@@ -1,0 +1,130 @@
+{
+  "recipeId": "pina-colada-hedelmajaatelo",
+  "sourceHash": "158da192b4d7edeff801320c81ece2e960c6612238f589f484a69a1ba1787fb1",
+  "calculatedAt": "2026-11-23",
+  "servings": 4,
+  "scope": "Automated ingredient-level nutrition source comparison for 655 g ingredients and four servings. Reference coconut milk is not a specified consumer product; polyol components for these four ingredients have not been independently verified. Public macro values are withheld; this is not a measured dessert yield or glycaemic response.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Precise polyol source components and product-specific canned coconut milk nutritional data are unverified. An estimated carbohydrate subtotal must not be published as complete macros or GK.",
+  "ingredients": [
+    {
+      "item": "kypsää banaania",
+      "amount": 240,
+      "unit": "g",
+      "state": "edible-uncooked",
+      "matchEvidence": "Edible peeled banana; composition varies by ripeness. Composition values are reference estimates, not an identified product analysis.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The recipe weighs peeled banana; peel is excluded before weighing.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Cold blending and freezing; no drained cooking liquid or deliberate ingredient discard in recipe. Retained mass model assumes all input remains; actual handling residue and frost-loss are unmeasured.",
+      "record": {
+        "id": "fineli-11049",
+        "name": "BANAANI, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11049",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 18.3,
+          "protein": 1.2,
+          "fat": 0.4,
+          "fibre": 1.7,
+          "polyols": null
+        },
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": false,
+        "state": "edible-uncooked",
+        "basis": "per100g-edible"
+      }
+    },
+    {
+      "item": "ananasta",
+      "amount": 280,
+      "unit": "g",
+      "state": "edible-uncooked",
+      "matchEvidence": "Peeled pineapple fruit; frozen product must be unsweetened, not pineapple in syrup. Composition values are reference estimates, not an identified product analysis.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The recipe weighs edible pineapple flesh without skin/core.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Cold blending and freezing; no drained cooking liquid or deliberate ingredient discard in recipe. Retained mass model assumes all input remains; actual handling residue and frost-loss are unmeasured.",
+      "record": {
+        "id": "fineli-11056",
+        "name": "ANANAS, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11056?c=2034&c2=2168",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 11.2,
+          "protein": 0.5,
+          "fat": 0.4,
+          "fibre": 1.3,
+          "polyols": null
+        },
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": false,
+        "state": "edible-uncooked",
+        "basis": "per100g-edible"
+      }
+    },
+    {
+      "item": "sokeroimatonta täysrasvaista kookosmaitoa",
+      "amount": 120,
+      "unit": "g",
+      "state": "edible-uncooked",
+      "matchEvidence": "Unbranded canned coconut milk reference, not verified against an identified Finnish product; actual fat and carbohydrate vary by brand. Composition values are reference estimates, not an identified product analysis.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The recipe weighs the coconut milk as poured, with no packaging counted.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Cold blending and freezing; no drained cooking liquid or deliberate ingredient discard in recipe. Retained mass model assumes all input remains; actual handling residue and frost-loss are unmeasured.",
+      "record": {
+        "id": "afcd-F002991-release-3",
+        "name": "Coconut, milk, canned, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia",
+        "per100g": {
+          "carbohydrate": 1.7,
+          "protein": 1.4,
+          "fat": 15.4,
+          "fibre": 0,
+          "polyols": null
+        },
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": false,
+        "state": "edible-uncooked",
+        "basis": "per100g-edible"
+      }
+    },
+    {
+      "item": "limetin mehua",
+      "amount": 15,
+      "unit": "g",
+      "state": "edible-uncooked",
+      "matchEvidence": "Fresh lime juice; compositional values taken from an existing repo source record. Composition values are reference estimates, not an identified product analysis.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The recipe weighs expressed lime juice, without rind or seeds.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Cold blending and freezing; no drained cooking liquid or deliberate ingredient discard in recipe. Retained mass model assumes all input remains; actual handling residue and frost-loss are unmeasured.",
+      "record": {
+        "id": "afcd-F004729-release-3",
+        "name": "Juice, lime",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F004729",
+        "retrievedAt": "2026-11-15",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia",
+        "per100g": {
+          "carbohydrate": 1.2,
+          "protein": 0.8,
+          "fat": 0.1,
+          "fibre": 3.6,
+          "polyols": null
+        },
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": false,
+        "state": "edible-uncooked",
+        "basis": "per100g-edible"
+      }
+    }
+  ],
+  "batchId": "batch-904"
+}
