@@ -95,6 +95,42 @@ test("A4.2 provider uncertainty holds the entire reservation; over-ceiling repor
   if (!reject.allowed) assert.equal(reject.reason, "DISABLED");
 });
 
+test("A4.2 operator emergency stop persists across UTC months and coordinator restarts", () => {
+  const store = new InMemoryTransactionStore();
+  const beforeMidnight = new Date("2026-11-30T23:59:59Z");
+  const afterMidnight = new Date("2026-12-01T00:00:00Z");
+  const gate = new AssistantBudgetCoordinator(store, rate);
+  assert.equal(gate.reserve(id(20), beforeMidnight).allowed, true);
+  gate.disable("2026-11");
+
+  const restarted = new AssistantBudgetCoordinator(store, rate);
+  for (const now of [beforeMidnight, afterMidnight]) {
+    const reservation = restarted.reserve(id(21), now);
+    assert.equal(reservation.allowed, false);
+    if (!reservation.allowed) assert.equal(reservation.reason, "DISABLED");
+  }
+  assert.equal(restarted.settle("2026-11", id(20), 1_000_000), "SETTLED");
+  assert.equal(restarted.readMonth("2026-12").heldNanos, 0);
+});
+
+test("A4.2 a late ceiling breach shuts off reservations in the already active month", () => {
+  const store = new InMemoryTransactionStore();
+  const gate = new AssistantBudgetCoordinator(store, rate);
+  const november = new Date("2026-11-30T23:59:59Z");
+  const december = new Date("2026-12-01T00:00:00Z");
+  assert.equal(gate.reserve(id(30), november).allowed, true);
+  assert.equal(gate.reserve(id(31), december).allowed, true);
+  assert.equal(gate.settle("2026-11", id(30), worstCaseRequestNanos(rate) + 1), "CEILING_BREACH");
+
+  const restarted = new AssistantBudgetCoordinator(store, rate);
+  const reservation = restarted.reserve(id(32), december);
+  assert.equal(reservation.allowed, false);
+  if (!reservation.allowed) assert.equal(reservation.reason, "DISABLED");
+  assert.equal(restarted.readMonth("2026-11").heldNanos, worstCaseRequestNanos(rate));
+  assert.equal(restarted.settle("2026-12", id(31), 1_000_000), "SETTLED");
+  assert.equal(restarted.readMonth("2026-12").chargedNanos, 1_000_000);
+});
+
 test("A4.2 month resets only from trusted UTC clock and policy changes fail closed", () => {
   const store = new InMemoryTransactionStore();
   const gate = new AssistantBudgetCoordinator(store, rate);

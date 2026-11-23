@@ -1,6 +1,6 @@
 import {
   DEFAULT_MONTHLY_EXTRA_AI_BUDGET_NANOS,
-  newBudgetMonth, reserveWorstCase, settleKnownCost, utcBillingMonth,
+  disableNewReservations, newBudgetMonth, reserveWorstCase, settleKnownCost, utcBillingMonth,
   worstCaseRequestNanos,
   type BudgetMonth, type FrozenModelCostCeiling, type ReserveDecision,
 } from "../src/features/assistant/ai-budget";
@@ -22,6 +22,8 @@ export interface TransactionalDurableStore {
   kv: DurableObjectKv;
   transactionSync<T>(closure: () => T): T;
 }
+
+const emergencyStopKey = "recipavo-ai-budget-v1:emergency-stop";
 
 export class AssistantBudgetCoordinator {
   constructor(
@@ -47,7 +49,10 @@ export class AssistantBudgetCoordinator {
     const maximum = worstCaseRequestNanos(this.approvedPolicy);
     return this.storage.transactionSync(() => {
       const before = this.readOrCreate(period);
-      const result = reserveWorstCase(before, requestId, maximum);
+      // A persisted stop applies to every month, including a newly created ledger.
+      const emergencyStop = this.storage.kv.get<unknown>(emergencyStopKey) !== undefined;
+      const state = emergencyStop ? disableNewReservations(before) : before;
+      const result = reserveWorstCase(state, requestId, maximum);
       if (result.allowed) this.storage.kv.put(this.key(period), result.month);
       return result;
     });
@@ -62,15 +67,17 @@ export class AssistantBudgetCoordinator {
       const month = this.readOrCreate(period);
       const result = settleKnownCost(month, requestId, measuredNanodollars);
       if (result.outcome !== "ALREADY_SETTLED") this.storage.kv.put(this.key(period), result.month);
+      if (result.outcome === "CEILING_BREACH") this.storage.kv.put(emergencyStopKey, true);
       return result.outcome;
     });
   }
 
-  /** Enables an operator's emergency OFF switch in persistent state. */
+  /** Stops new reservations across all UTC months while allowing settlement of existing holds. */
   disable(period: string): void {
     this.storage.transactionSync(() => {
       const month = this.readOrCreate(period);
-      this.storage.kv.put(this.key(period), { ...month, disabled: true });
+      this.storage.kv.put(this.key(period), disableNewReservations(month));
+      this.storage.kv.put(emergencyStopKey, true);
     });
   }
 
