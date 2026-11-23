@@ -57,7 +57,7 @@ En klassisk finsk vardagslåda med smörigt potatismos, genomstekt nötfärs och
 
 1. Värm ugnen till 200 °C. Dela potatisen och koka i vatten i cirka 15–20 minuter tills den är helt mjuk. Häll av.
 2. Värm mjölken utan att koka den. Mosa potatisen och rör ner mjölken, 30 g smör och 3 g salt. Undvik lång vispning.
-3. Bryn nötfärsen i sitt eget fett. Tillsätt hackad lök och stek tills köttet är helt genomstekt. Krydda med resterande salt och svartpeppar.
+3. Bryn nötfärsen i sitt eget fett. Tillsätt hackad lök och stek färsen genomgående till minst +70 °C. Krydda med resterande salt och svartpeppar.
 4. Smörj en ugnsform på minst 3 liter med 10 g smör. Bred ut hälften av moset, lägg på färsen och täck med resten av moset.
 5. Grädda vid 200 °C i 25–30 minuter tills ytan är gyllene. Låt vila cirka 10 minuter före servering.
 

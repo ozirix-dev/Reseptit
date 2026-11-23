@@ -4,7 +4,7 @@ recipe_id: liha-perunasoselaatikko
 url_slug: liha-perunasoselaatikko
 category: paaruoka
 language: fi
-status: draft
+status: published
 servings: 6
 time_total_min: 80
 difficulty: "helppo"
@@ -62,12 +62,12 @@ Pehmeä perunamuusi ja sipulilla maustettu, kypsä naudan jauheliha kerrostetaan
 
 1. Kuumenna uuni 200 asteeseen. Paloittele perunat ja keitä vedessä noin 15–20 minuuttia täysin pehmeiksi. Valuta.
 2. Lämmitä maito kuumaksi kiehauttamatta. Survo perunat, lisää maito, 30 g voita ja 3 g suolaa. Sekoita tasaiseksi ilman pitkää vatkaamista.
-3. Ruskista jauheliha paistinpannulla omassa rasvassaan. Lisää hienonnettu sipuli, kypsennä täysin kypsäksi ja mausta jäljellä olevalla suolalla ja mustapippurilla.
+3. Ruskista jauheliha paistinpannulla omassa rasvassaan. Lisää hienonnettu sipuli, kypsennä jauheliha kauttaaltaan vähintään +70 °C:seen ja mausta jäljellä olevalla suolalla ja mustapippurilla.
 4. Voitele vähintään 3 litran uunivuoka 10 grammalla voita. Levitä puolet perunasoseesta pohjalle, sen päälle jauheliha ja lopuksi toinen sosekerros.
 5. Paista 200 asteessa 25–30 minuuttia, kunnes pinta on kullanruskea. Anna vetäytyä noin 10 minuuttia.
 
 ## Muistiinpanot
 
 - Sisältää maitoa. Kypsennä jauheliha täysin kypsäksi; jäähdytä tähteet nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6 °C:ssa.
-- Kuva on tekoälyllä tehty havainnekuva. Omaa kokkivarmistusta, ravintoarvolaskelmaa, GK-arviota tai gluteenittomuuden hyväksyntää ei ole tehty.
+- Kuva on tekoälyllä tehty havainnekuva. Omaa fyysistä kokkivarmistusta tai hyväksyttyä koko reseptin ravintoarvolaskelmaa ei ole tehty. Numeeriset ravintoarvot jätetään pois ja GK on määrittämätön; gluteenittomuusväitettä ei ole hyväksytty.
 - Oma, lähteisiin perustuva muunnelma: [K-Ruoka](https://www.k-ruoka.fi/reseptit/liha-perunasoselaatikko) · [Valio](https://www.valio.fi/reseptit/liha-perunasoselaatikko/)

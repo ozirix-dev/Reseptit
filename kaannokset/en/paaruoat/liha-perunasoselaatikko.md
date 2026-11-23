@@ -57,7 +57,7 @@ An everyday Finnish bake of buttery mashed potatoes layered with fully cooked be
 
 1. Heat the oven to 200°C. Cut the potatoes into pieces and boil in water for 15–20 minutes until completely soft. Drain.
 2. Warm the milk without boiling. Mash the potatoes and stir in the milk, 30 g butter and 3 g salt. Do not beat for too long.
-3. Brown the beef mince in its own fat. Add chopped onion and cook until the beef is fully cooked. Season with the remaining salt and black pepper.
+3. Brown the beef mince in its own fat. Add chopped onion and cook the mince thoroughly to at least +70°C throughout. Season with the remaining salt and black pepper.
 4. Grease a baking dish of at least 3 litres with 10 g butter. Spread half the mash in it, layer on the beef and finish with the rest of the mash.
 5. Bake at 200°C for 25–30 minutes until golden. Rest for around 10 minutes before serving.
 
