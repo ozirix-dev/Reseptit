@@ -270,6 +270,32 @@ export function isReviewedF25NutritionTransition(root: string, baseline: string,
   return true;
 }
 
+
+/**
+ * The independently reviewed #895 Thai garlic *unit* correction changes only
+ * ชิ้น to กลีบ. Recover the exact preceding recipe text for the immutable GK
+ * baseline, while accepting ONLY the reviewed current source (full-byte SHA).
+ * A future translation change fails closed until separately versioned.
+ *
+ * Review: https://github.com/ozirix-dev/Reseptit/pull/895#issuecomment-7082175515
+ * Independent check: https://github.com/ozirix-dev/Reseptit/pull/895#issuecomment-7080823786
+ */
+export function gazpachoThaiBeforeReviewedClove(file: string, text: string): string {
+  if (file !== "kaannokset/th/alkuruoat/gazpacho.md") return text;
+  const current = text.replaceAll("\r\n", "\n");
+  assert.equal(textHash(current),
+    "bdabe13d88248bae2c8a3eff2d471d10e51c11b10882b5d9e6e18d2c62c97091",
+    file + ": unreviewed Thai translation edit");
+  const newGarlic = "\n    unit: กลีบ\n    item: กระเทียม\n";
+  const previousGarlic = "\n    unit: ชิ้น\n    item: กระเทียม\n";
+  assert.equal(current.split(newGarlic).length, 2, file + ": reviewed garlic clove not unique");
+  const prior = current.replace(newGarlic, previousGarlic);
+  assert.equal(textHash(prior),
+    "29857410c2abc2d6da484a308ef7db1fff5ec391f352241cf5efdf9418d2e511",
+    file + ": historical Thai GK baseline changed");
+  return prior;
+}
+
 export function assertRecipeBaseline(root: string, baseline: string, ...protectedPaths: string[]) {
   const changes = execFileSync(
     "git",
@@ -280,7 +306,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
   for (const change of changes) {
     const [status, file] = change.split("\t");
     const readLive = () => readFileSync(path.join(root, file), "utf8");
-    const readFrozen = () => restoreRecipeAuditSnapshot(file, readLive());
+    const readFrozen = () => gazpachoThaiBeforeReviewedClove(file, restoreRecipeAuditSnapshot(file, readLive()));
     if (status === "M") {
       const live = readLive();
       const prior = restoreRecipeAuditSnapshot(file, live);
