@@ -75,12 +75,14 @@ export function analyze(sources, quarantine = new Set()) {
     const category = source.path.split('/')[1];
     const timeLines = parsed.yaml.split(/\r?\n/).filter(line => line.startsWith('time_total_min:'));
     const duplicateTime = timeLines.length > 1;
-    const timeRaw = duplicateTime
-      ? timeLines.map(line => line.slice('time_total_min:'.length).trim()).join(' | ')
-      : value(parsed.yaml, 'time_total_min');
-    const parsedTime = /^\d+$/.test(timeRaw) ? Number(timeRaw) : null;
+    const timeRaw = timeLines.map(line => line.slice('time_total_min:'.length).trim()).join(' | ');
+    // The audit runs before dependencies are installed. Recognize YAML comments
+    // on plain time values without treating a hash inside a quoted value as a comment.
+    const timeValue = timeRaw.replace(/^(?:(\d+|null|~)[ \t]+)?#.*$/i, '$1')
+      .replace(/^(['"])(.*)\1$/, '$2');
+    const parsedTime = /^\d+$/.test(timeValue) ? Number(timeValue) : null;
     const validTime = !duplicateTime && parsedTime !== null && Number.isSafeInteger(parsedTime) && parsedTime > 0;
-    const missingTimeValue = !duplicateTime && (timeRaw === '' || timeRaw.toLowerCase() === 'null');
+    const missingTimeValue = !duplicateTime && /^(?:null|~)?$/i.test(timeValue);
     const time = validTime ? parsedTime : null;
     const difficulty = value(parsed.yaml, 'difficulty').trim().toLocaleLowerCase('fi') || '(puuttuu)';
     const title = value(parsed.yaml, 'title');
