@@ -98,4 +98,3 @@ export async function readNutritionFieldApproval(root: string, evidence: Calcula
   }
   return resolveNutritionFieldApproval(root, evidence, entries[0]?.partialNutrition);
 }
-
