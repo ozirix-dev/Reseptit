@@ -1,7 +1,9 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
+import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import path from "node:path";
 import { test } from "node:test";
-import { fileURLToPath } from "node:url";
 import { assistantLaunchPreflight, readinessMarkdown, verifyReadinessRevision } from "../scripts/assistant-launch-preflight";
 
 test("A4.2 remains HOLD with 80 source-bound pending language reviews", () => {
@@ -39,14 +41,25 @@ test("privacy, authentication and kill-switch requirements cannot be silently sk
   assert.equal(audit.autoMerge, false);
 });
 
-test("readiness evidence is bound to the checked-out Git revision when CI supplies one", () => {
-  const root = fileURLToPath(new URL("../..", import.meta.url));
-  const head = execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim();
+test("readiness evidence is bound to the checked-out Git revision when CI supplies one", (t) => {
+  const root = mkdtempSync(path.join(tmpdir(), "assistant-audit-revision-"));
+  t.after(() => rmSync(root, { recursive: true, force: true }));
+  const git = (...args: string[]) => execFileSync("git", args, { cwd: root, encoding: "utf8" }).trim();
+  git("init", "--quiet");
+  const fixture = path.join(root, "audit-input.txt");
+  writeFileSync(fixture, "committed");
+  git("add", "audit-input.txt");
+  git("-c", "user.name=Audit Test", "-c", "user.email=audit@example.invalid",
+    "-c", "commit.gpgsign=false", "-c", "core.hooksPath=.git/no-hooks",
+    "commit", "--quiet", "-m", "Audit fixture");
+  const head = git("rev-parse", "HEAD");
   const other = (head[0] === "0" ? "1" : "0") + head.slice(1);
   assert.equal(verifyReadinessRevision(root, head), head);
   assert.equal(verifyReadinessRevision(root, undefined), "");
   assert.throws(() => verifyReadinessRevision(root, other), /differs from checkout HEAD/);
   assert.throws(() => verifyReadinessRevision(root, "short"), /Invalid A4 audit GITHUB_SHA/);
+  writeFileSync(fixture, "modified");
+  assert.throws(() => verifyReadinessRevision(root, head), /checkout has tracked changes/);
   assert.ok(readinessMarkdown(assistantLaunchPreflight(), head).includes(head));
   assert.match(readinessMarkdown(assistantLaunchPreflight()), /Git-revisio: ei varmennettu/);
 });

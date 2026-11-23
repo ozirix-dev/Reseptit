@@ -93,6 +93,9 @@ export function verifyReadinessRevision(root: string, expectedSha: string | unde
   if (!/^[a-f0-9]{40}$/.test(expectedSha)) throw new Error("Invalid A4 audit GITHUB_SHA");
   const head = execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim();
   if (head !== expectedSha) throw new Error("A4 audit GITHUB_SHA differs from checkout HEAD");
+  const changes = execFileSync("git", ["diff", "--name-only", "HEAD", "--"],
+    { cwd: root, encoding: "utf8" });
+  if (changes.trim()) throw new Error("A4 audit checkout has tracked changes");
   return head;
 }
 
