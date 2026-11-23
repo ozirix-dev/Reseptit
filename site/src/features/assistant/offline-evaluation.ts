@@ -92,7 +92,13 @@ export function evaluateAssistantCases(
         if (match) {
           candidateMatched++;
           perLocale.candidateMatched = (perLocale.candidateMatched ?? 0) + 1;
-        } else if (item.expected.action === "unsupported" && predicted.action !== "unsupported") {
+        } else if (
+          (item.expected.action === "unsupported" && predicted.action !== "unsupported") ||
+          // These actions would answer a GK request without invoking the evidence gate.
+          (item.topic === "gk_fail_closed" &&
+            (predicted.action === "compare" ||
+              (predicted.action === "search" && predicted.filters.gl === undefined)))
+        ) {
           record.safetyMismatch = true;
           safetyMismatches++;
         }
