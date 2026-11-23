@@ -4,7 +4,7 @@ recipe_id: savolainen-muikkukukko
 url_slug: savolainen-muikkukukko
 category: paaruoka
 language: fi
-status: draft
+status: published
 servings: 10
 time_total_min: 315
 difficulty: Vaativa

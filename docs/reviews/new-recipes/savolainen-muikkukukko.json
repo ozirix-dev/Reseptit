@@ -2,10 +2,10 @@
   "schema_version": 1,
   "recipe_id": "savolainen-muikkukukko",
   "source_path": "reseptit/paaruoat/savolainen-muikkukukko.md",
-  "source_sha256": "34ccb7f317cf105cabca893ddfde58df7a7be8a69171f00bb4fc709862c1573e",
-  "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "source_sha256": "83f1517de0e1317c15c8c1a9a2b7aca90ae066f585dd4d748ab942df8e7f93cb",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -21,24 +21,24 @@
       "notes": "Tarkistettu origin/main c2f402c116e275ed1e9ee745c75cedb7abb3625c: eri nimet, tunnukset ja avoimet PR:t."
     },
     "ingredients": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Opetushallituksen punnittu ohje. Perattu päättömän kalan massa ja nahaton luuton sianliha täsmennetty. 20 g täytevoista osa jätetään pintaan."
     },
     "method": {
-      "status": "pending",
+      "status": "pass",
       "notes": "15–20 min 250 °C:ssa ja noin 4 h 150 °C:ssa, Opetushallituksen vaihteluvälistä valittu 250 °C. Tarjotaan lämpimänä pitkän huoneenlämpöisen vetäytymisen sijaan. Lähde on opetusharjoitus. Recipavo ei ole tehnyt koekeittoa."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Raaka kala ja liha kylmästä, kädet ja välineet pestään, sianliha ja muu täyte kauttaaltaan vähintään 70 °C, lämpimänä tarjoilu ja tähteiden jäähdytys pienempinä paloina. Riippumaton katselmointi odottaa."
+      "status": "pass",
+      "notes": "Chat-1 tarkisti kylmäketjun, välinehygienian, 70 °C:n rajan koko täytteelle, siankylkikerroksen mittaamisen ja tähteiden nopean jäähdytyksen."
     },
     "servings_and_time": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Yksi kukko eli kymmenen yhtä suurta osaa. 315 min on suunnitteluarvio sisältäen noin 45 min valmistelua, 20 min alkupaistoa, 240 min haudutusta ja noin 10 min asettumista. Kypsää saantoa ei ole punnittu."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Raaka-aineiden Fineli-laskelma dokumentoitu vertailuna. Julkaistavien kenttien pidätys odottaa riippumatonta arviota."
+      "status": "pass",
+      "notes": "Chat-1 hyväksyi neljän julkisen kentän pidätyksen täsmälleen tälle FI-versiolle. Fineli-vertailu kuvaa raakoja nimellissyötteitä, ja numeerinen GK on määrittämätön."
     },
     "glycemic": {
       "status": "unavailable",
@@ -87,12 +87,13 @@
       "protein": 25.97795,
       "fat": 22.13295
     },
-    "publication": "Hiilihydraattien epävarmuus liittyy varataikinan käyttöön. Proteiinissa muikun peratun syötävän osuuden vastaavuus ja mahdollinen täytehävikki on varmistettava. Rasvassa arvioitava erityisesti voin ja siankyljen paistohävikki. Kentät käsitellään itsenäisesti, kaikki jätetty tässä luonnoksessa avoimiksi."
+    "publication": "Hiilihydraattien epävarmuus liittyy varataikinan käyttöön. Proteiinissa muikun peratun syötävän osuuden vastaavuus ja mahdollinen täytehävikki on varmistettava. Rasvassa arvioitava erityisesti voin ja siankyljen paistohävikki. Kentät käsitellään itsenäisesti, kaikki neljä kenttää jätetty hyväksytysti avoimiksi."
   },
   "glycemic_reference": "https://glycemicindex.com/gi-search/",
   "image": {
     "path": "kuvat/paaruoat/savolainen-muikkukukko.webp",
     "sha256": "d1c3d8ac497823c9242cbf98d7c0f342f0c11dfd3d71f176e4f8df8b9708078f",
     "origin": "OpenAI ImageGen. Havainnekuva, ei valokuva Recipavossa valmistetusta erästä. Rakenne arvioitu suhteessa Opetushallituksen lähdekuvaukseen."
-  }
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/970#pullrequestreview-6030399437"
 }
