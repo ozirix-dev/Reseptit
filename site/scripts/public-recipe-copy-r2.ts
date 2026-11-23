@@ -16,6 +16,11 @@ interface ReviewedRecipeCopy {
 // Display-only edits. Canonical ingredients, release evidence and calculation inputs
 // stay in their source files. Edits match the approved display text before this pass.
 const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
+  // #327: FI summaries based on the recipe's own ingredients and preparation.
+  "paistettu-maksa-pekonilla/fi": { description: "Ohuet naudan maksaviipaleet ruskistetaan pannulla ja kypsennetään kermakastikkeessa pekonin ja sipulin kanssa." },
+  "vhh-mustikkapiirakka/fi": { description: "Mustikat ripotellaan vaniljalla maustetun rahkatäytteen päälle. Mantelijauhopohjainen piirakka jäähdytetään ennen leikkaamista." },
+  "rahkapiirakka-vhh/fi": { description: "Mantelijauhopohjalle paistetaan rahkasta ja kermasta tehty täyte, joka maustetaan vaniljalla ja makeutetaan erytritolilla." },
+  "vhh-runebergintortut/fi": { description: "Mantelijauhosta ja rahkasta tehdyt, kardemummalla maustetut tortut viimeistellään vadelmilla." },
   // #327 / Chat 2: ensure steamed egg is fully set in nasi uduk (all four public locales).
   "indonesialainen-nasi-uduk-aamiaisella/fi": { method: [["2. Kypsennä 110 g kuorettomana punnittua kananmunaa höyryssä pienessä astiassa ilman lisättyä rasvaa. Käytä koko määrä.", "2. Punnitse kananmunia yhteensä 110 g ilman kuoria pieneen höyrytykseen sopivaan astiaan. Höyrykypsennä ilman lisättyä rasvaa, kunnes sekä valkuainen että keltuainen ovat kauttaaltaan hyytyneet. Tarkista kypsyys myös astian keskeltä ja käytä koko 110 g munamäärä."]] },
   "indonesialainen-nasi-uduk-aamiaisella/en": { method: [["2. Steam 110 g of egg weighed without the shell in a small dish with no added fat. Use all of it.", "2. Weigh a total of 110 g egg without shells into a small heatproof dish suitable for steaming. Steam without added fat until both egg whites and yolks are fully set throughout, including the centre of the dish. Use all 110 g."]] },
