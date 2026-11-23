@@ -162,6 +162,20 @@ test("a pending GL leaves the reviewed whole-serving and ingredient carbohydrate
   }
 });
 
+test("partly available nutrition is explained in each locale without publishing a missing total", async () => {
+  const entries = siteContent.recipes.filter(recipe => recipe.recipeId === "gluteeniton-uunipannukakku");
+  assert.deepEqual(entries.map(recipe => recipe.locale).sort(), ["en", "fi", "sv", "th"]);
+  for (const { locale, routePath } of entries) {
+    const html = await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8");
+    const rendered = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+    assert.ok(rendered.includes(toolUi[locale].partialNutrition), routePath);
+    const jsonLdMatch = html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/);
+    assert.ok(jsonLdMatch, routePath);
+    const { nutrition } = JSON.parse(jsonLdMatch[1]);
+    assert.deepEqual(nutrition, { "@type": "NutritionInformation", proteinContent: "5.47 g", fatContent: "11.22 g" });
+  }
+});
+
 test("an independently reviewed carb estimate does not publish the other nutrition values or GL", async () => {
   const id = "indonesialainen-bakwan-jagung-kotiversio";
   const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));

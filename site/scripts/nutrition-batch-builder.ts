@@ -3,6 +3,7 @@ import path from "node:path";
 import { auditTranslations } from "./translation-audit";
 import { calculate, type Calculation, type FoodRecord, type IngredientInput } from "./nutrition-model";
 import { recipeNutritionInputHash } from "./nutrition-evidence";
+import { nutritionKeys, type NutritionBatchRecipe } from "./nutrition-field-approval";
 import { updateNutritionFrontmatter } from "./nutrition-markdown";
 
 type Dataset = "fineli-release-20" | "afcd-release-3" | "food-records";
@@ -15,7 +16,7 @@ type IngredientPlan = Omit<IngredientInput, "item" | "amount" | "unit" | "record
 type BatchPlan = {
   batchId: string;
   ingredientMappings?: Record<string, IngredientPlan>;
-  recipes: { recipeId: string; scope: string; ingredients?: IngredientPlan[] }[];
+  recipes: (NutritionBatchRecipe & { recipeId: string; scope: string; ingredients?: IngredientPlan[] })[];
 };
 const root = path.resolve(import.meta.dirname, "../..");
 const MAX_RECIPES_PER_BATCH = 40;
@@ -66,6 +67,9 @@ const refreshBatch = process.argv.includes("--refresh-batch");
 if (!/^batch-\d+$/.test(plan.batchId) || plan.recipes.length < 1 || plan.recipes.length > MAX_RECIPES_PER_BATCH) throw new Error(`A nutrition batch must contain 1–${MAX_RECIPES_PER_BATCH} recipes and a batch-N id`);
 if (path.resolve(root, inputPath) !== path.join(root, "docs/nutrition/batches", `${plan.batchId}.json`)) throw new Error(`Batch plan must be stored at docs/nutrition/batches/${plan.batchId}.json so the audit can verify batch membership`);
 if (new Set(plan.recipes.map((recipe) => recipe.recipeId)).size !== plan.recipes.length) throw new Error("Duplicate recipe IDs in batch plan");
+if (plan.recipes.some(item => item.partialNutrition !== undefined)) {
+  throw Error("This batch contains partial nutrition approvals; a full batch refresh would invalidate their evidence bindings.");
+}
 const [audit, fineliData, afcdData, productRecords] = await Promise.all([
   auditTranslations(),
   json<{ foods: any[] }>("docs/nutrition/fineli-release-20-reference.json"),
@@ -73,7 +77,6 @@ const [audit, fineliData, afcdData, productRecords] = await Promise.all([
   json<FoodRecord[]>("docs/nutrition/food-records.json"),
 ]);
 const sources = new Map(audit.publishedSources.map((recipe) => [recipe.data.recipe_id, recipe]));
-const nutritionKeys = ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const;
 const fineli = new Map(fineliData.foods.map((food) => [String(food.source_id), food]));
 const afcd = new Map(afcdData.foods.map((food) => [String(food.source_id), food]));
 const products = new Map(productRecords.map((food) => [food.id, food]));
