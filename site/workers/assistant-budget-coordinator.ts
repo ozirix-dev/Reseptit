@@ -46,14 +46,32 @@ export class AssistantBudgetCoordinator {
   /** Called only from a trusted, authenticated internal RPC with server-generated ID. */
   reserve(requestId: string, now = new Date()): ReserveDecision {
     const period = utcBillingMonth(now);
-    const maximum = worstCaseRequestNanos(this.approvedPolicy);
+    const policy = this.approvedPolicy;
+    const maximum = worstCaseRequestNanos(policy);
+    const policySnapshot = JSON.stringify([
+      policy.modelId, policy.maxInputTokens, policy.maxOutputTokens,
+      policy.inputUsdPerMillion, policy.outputUsdPerMillion, policy.maxAdditionalUsdPerCall,
+    ]);
     return this.storage.transactionSync(() => {
       const before = this.readOrCreate(period);
       // A persisted stop applies to every month, including a newly created ledger.
       const emergencyStop = this.storage.kv.get<unknown>(emergencyStopKey) !== undefined;
       const state = emergencyStop ? disableNewReservations(before) : before;
       const result = reserveWorstCase(state, requestId, maximum);
-      if (result.allowed) this.storage.kv.put(this.key(period), result.month);
+      if (!result.allowed) return result;
+
+      const ledgerKey = this.key(period);
+      const policyKey = ledgerKey + ":pricing-policy";
+      const boundPolicy = this.storage.kv.get<string>(policyKey);
+      if (boundPolicy === undefined) {
+        if (Object.keys(before.requests).length > 0) {
+          throw new Error("Budget pricing policy is missing for existing reservations; fail closed until reviewed");
+        }
+        this.storage.kv.put(policyKey, policySnapshot);
+      } else if (boundPolicy !== policySnapshot) {
+        throw new Error("Budget pricing policy changed within this UTC month; fail closed until reviewed");
+      }
+      this.storage.kv.put(ledgerKey, result.month);
       return result;
     });
   }
