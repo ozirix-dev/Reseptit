@@ -1,12 +1,14 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { readFile } from "node:fs/promises";
+import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { verifyNutritionEvidence } from "../scripts/nutrition-evidence";
 import type { Calculation } from "../scripts/nutrition-model";
+import { assertReviewedSnackPublication } from "../scripts/snack-publication-review";
 
 const root = path.resolve(import.meta.dirname, "../..");
 const recipeId = "jalapeno-poppers-pekonilla";
@@ -67,4 +69,34 @@ test("jalapeño recipe and review point to the exact registered WebP", async () 
   const review = JSON.parse(rawReview.toString("utf8"));
   assert.equal(review.image.path, imagePath);
   assert.equal(review.image.sha256, digest);
+});
+
+test("published snack withholding requires current editorial and nutrition evidence", async t => {
+  const source = await read(recipePath);
+  const parsed = parseMarkdown(source.toString("utf8"));
+  assert.ok(parsed);
+  const recipe = recipeFrontmatterSchema.parse(parsed.data);
+  assert.equal(recipe.status, "published");
+  await assertReviewedSnackPublication(recipe, root, recipePath);
+  await assert.rejects(assertReviewedSnackPublication({ ...recipe, protein_per_serving_g: 1 }, root, recipePath),
+    /needs source-backed/);
+
+  const fixture = await mkdtemp(path.join(os.tmpdir(), "recipavo-snack-review-"));
+  t.after(() => rm(fixture, { recursive: true, force: true }));
+  const review = JSON.parse((await read(reviewPath)).toString("utf8"));
+  const evidence = await read(review.nutrition_evidence);
+  await Promise.all([recipePath, reviewPath, review.nutrition_evidence].map(file =>
+    mkdir(path.dirname(path.join(fixture, file)), { recursive: true })));
+  await writeFile(path.join(fixture, recipePath), source);
+  await writeFile(path.join(fixture, reviewPath), JSON.stringify({ ...review, decision: "hold" }));
+  await writeFile(path.join(fixture, review.nutrition_evidence), evidence);
+  await assert.rejects(assertReviewedSnackPublication(recipe, fixture, recipePath), /review decision is not approved/);
+
+  await writeFile(path.join(fixture, reviewPath), JSON.stringify(review));
+  await writeFile(path.join(fixture, recipePath), source.toString("utf8") + "Muutos.\n");
+  await assert.rejects(assertReviewedSnackPublication(recipe, fixture, recipePath), /source_sha256 stale/);
+
+  await writeFile(path.join(fixture, recipePath), source);
+  await assert.rejects(assertReviewedSnackPublication({ ...recipe, servings: 5 }, fixture, recipePath),
+    /servings mismatch/);
 });

@@ -4,7 +4,7 @@ recipe_id: jalapeno-poppers-pekonilla
 url_slug: jalapeno-poppers-pekonilla
 category: valipala
 language: fi
-status: draft
+status: published
 servings: 6
 time_total_min: 45
 difficulty: Helppo

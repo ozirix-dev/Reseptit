@@ -2,10 +2,10 @@
   "schema_version": 1,
   "recipe_id": "jalapeno-poppers-pekonilla",
   "source_path": "reseptit/valipalat/jalapeno-poppers-pekonilla.md",
-  "source_sha256": "f51012d14a8dcdec461d8b480d8f9549fdba300cc030522c1043dca6349b78d3",
-  "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "source_sha256": "b5073254619d01d3fafaff6a8017d3c97dd701ae569d2cfce3080ec8937fa980",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-23",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -15,31 +15,31 @@
       "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/"
     ]
   },
-  "nutrition_evidence": "docs/reviews/valipalat/era-02/jalapeno-nutrition-withholding.json",
+  "nutrition_evidence": "docs/nutrition/calculations/jalapeno-poppers-pekonilla.json",
   "checks": {
     "duplicates": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Pohja-mainissa 6f762104be70fed9954a959126be1559fc1644f6 ei ole reseptitiedostoa tällä tunnuksella. PR #775:n katselmointikortti säilyy historiallisena lähteenä."
     },
     "ingredients": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Neljä punnittua ainesosaa säilyvät. Trisha Haas käyttää kuutta halkaistua chiliä, 4 oz eli noin 113 g tuorejuustoa, 1/4 cup cheddaria ja kuutta puolitettua pekonisiivua. Kylee Ayotten resepti tukee samaa yhdistelmää. 150/120/60/90 g ovat Recipavon sovitus, erityisesti cheddar on runsaampi. Täyte jaetaan koon mukaan."
     },
     "method": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Ayotte kertoo valmistaneensa omia poppersejaan toistuvasti ja paistaa ohuessa pekonissa 400 °F:ssa noin 20 minuuttia. Haas käyttää samaa lämpöä ja tarkistaa kypsyyden 15–23 minuutissa. Recipavon 200 °C ja 20–25 minuuttia ovat lähteisiin perustuva arvio tälle sovitukselle."
     },
     "food_safety": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Pekoni kypsennetään kauttaaltaan vähintään 70 °C:seen Ruokaviraston ohjeen mukaan. Ohje neuvoo mittaamaan ohuella anturilla pekonin paksuimmasta kohdasta. Mittauksen ollessa epäluotettava noudatetaan tuotteen uuniohjetta ja epävarma erä jätetään tarjoamatta. Sauma ja alapuoli tarkistetaan erikseen. Raakapekoni käsitellään erillään, työvälineet pestään, chilille käytetään käsineitä ja kuuman täytteen annetaan jäähtyä. Maito ilmoitetaan allergeenina. Pakkauskohtaista paistoa ei ole validoitu tässä katselmointiaineistossa."
     },
     "servings_and_time": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Annokseksi määritellään kuudesosa valmiista erästä. Arvio: 15–20 min valmistelua uunin kuumetessa, 20–25 min paistoa, noin 5 min jäähtymistä. 45 min on suunnitteluajan arvio. Kappalesaantoa, annospainoa tai valmistusaikaa ei ole mitattu Recipavon keittiössä."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Kaikki neljä makrokenttää jätetään nulliksi. Jalapeñon raportoimaton polyoli ei ole nolla. Pekonin rasvahävikkiä tai täytteen hävikkiä ei arvioida. Chat-2 hyväksyi pidätysperiaatteen aiemmalle HEADille PR #968:n kommentissa 7113150123. Lopullinen lähde-SHA odottaa hyväksyntää."
+      "status": "pass",
+      "notes": "Chat-2 hyväksyi kaikkien neljän makrokentän pidätyksen tälle lähde-SHA:lle. Jalapeñon raportoimaton polyoli jää tuntemattomaksi. Pekonin rasvahävikkiä ja täytteen hävikkiä ei arvioida."
     },
     "glycemic": {
       "status": "unavailable",
@@ -50,5 +50,6 @@
     "path": "kuvat/valipalat/jalapeno-poppers-pekonilla.webp",
     "sha256": "1019fcddbeb6c0ef494b15af49bb44c24285725f42cf76cede056491ed7f2e74",
     "origin": "OpenAI ImageGen, reseptiä varten luotu kuvituskuva. Kaksi esimerkkipuolikasta, tuorejuusto-cheddartäyte ja yksi ohut pekonikaistale kussakin. Kuva ei dokumentoi mitattua annossaantoa."
-  }
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/968#pullrequestreview-6029076726"
 }

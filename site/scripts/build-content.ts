@@ -27,7 +27,8 @@ import { mkdir, readdir, readFile, writeFile, rm } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseMarkdown, renderSafeMarkdown, renderInstructionSteps } from "../src/content/markdown";
-import { assertQuantifiedCriticalIngredients, assertUniqueRecipes, assertSnackPublicationReady } from "../src/content/recipe-validation";
+import { assertQuantifiedCriticalIngredients, assertUniqueRecipes } from "../src/content/recipe-validation";
+import { assertReviewedSnackPublication } from "./snack-publication-review";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { inheritSourceAdditionalCategories } from "../src/content/recipe-categories";
 import { assertGlutenFreeReviewRecord } from "./gluten-free-review";
@@ -271,7 +272,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
         reviewedAt: review.reviewed_at, reviewer: review.reviewer, sourceSha256,
       }, reviewedText);
     }
-    assertSnackPublicationReady(data);
+    await assertReviewedSnackPublication(data, repoDir, relativePath);
     if (data.language === "fi") {
       sourceFacets.set(data.recipe_id, recipeFacets(data.main_ingredient ?? [], data.tags));
       finnishSources.set(data.recipe_id, filePath);
