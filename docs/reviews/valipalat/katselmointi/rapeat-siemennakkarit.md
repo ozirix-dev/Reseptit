@@ -5,7 +5,7 @@ url_slug: rapeat-siemennakkarit
 category: valipala
 language: fi
 status: draft
-servings: 12
+servings: 24
 time_total_min: 85
 difficulty: Helppo
 main_ingredient: ["siemenet"]
@@ -43,14 +43,14 @@ translation_status: {}
 
 ## Kuvaus
 
-Siemenistä ja psylliumista paistettava näkkäri levitetään ohueksi levyksi ja jäähdytetään ritilällä. Leikkausluonnoksessa taikinalevy jaetaan 12 palaan. Tarjoiluannoksen koko on vielä avoin.
+Siemenistä ja psylliumista paistettava näkkäri levitetään ohueksi levyksi ja jäähdytetään ritilällä. Taikinalevy jaetaan 24 pieneen palaan. Luonnoksen annosehdotus aikuiselle on yksi pala.
 
 ## Valmistus
 
 1. Kuumenna uuni 150 °C:een (ylä- ja alalämpö). Vuoraa noin 30 × 40 cm pelti leivinpaperilla.
 2. Punnitse auringonkukansiemenet, pellavarouhe, seesaminsiemenet, chiansiemenet, psyllium ja suola. Sekoita kuivat aineet huolellisesti keskenään.
 3. Lisää 220 g vettä ja 15 g oliiviöljyä. Sekoita tasaiseksi ja anna turvota noin 10 minuuttia.
-4. Levitä massa leivinpaperille mahdollisimman tasaiseksi, alustavasti noin 2–3 mm paksuksi levyksi. Merkitse veitsellä leikkausluonnoksen 12 samankokoista palaa.
+4. Levitä massa leivinpaperille mahdollisimman tasaiseksi, alustavasti noin 2–3 mm paksuksi levyksi. Merkitse veitsellä levyyn 4 × 6 ruudukko, josta saat 24 samankokoista palaa.
 5. Paista alustavasti 50–60 minuuttia. Jos levy on keskeltä pehmeä, jatka kuivaamista lyhyissä jaksoissa ja tarkkaile, ettei pinta pala.
 6. Jäähdytä kokonaan ritilällä, murra levy merkityistä kohdista ja punnitse haluttaessa valmiin erän massa. Säilytä kuivana vasta täysin jäähtyneenä.
 
@@ -76,12 +76,12 @@ todellinen kuivausaika, keskiosan rapeus jäähtyneenä ja erän saanto.
 [Martat: Ohut siemennäkkileipä][martat] · [Sydänmerkki: Siemennäkkileipä][sydanmerkki]
 
 **Annos.** Auringonkukan-, pellavan-, seesamin- ja chiansiemeniä on
-taikinassa yhteensä 205 g. Tasajaolla 12 palaan yksi pala sisältää
-laskennallisesti noin 17,1 g öljysiemeniä, jos kaikki siemenet päätyvät
-paloihin. Määrä ylittää Ruokaviraston aikuisille antaman noin 15 g:n
-päivittäisen käyttöohjeen, johon lasketaan myös muista ruoista saadut
-öljysiemenet. Kortin `servings: 12` kirjaa leikkausluonnoksen palamäärän.
-Tarjoiluannoksen koko ja käyttöohje arvioidaan ennen julkaisua.
+taikinassa yhteensä 205 g. Kun massa jakautuu tasaisesti 24 palaan ja
+kaikki siemenet päätyvät paloihin, yhdessä palassa on laskennallisesti
+noin 8,5 g öljysiemeniä. Ruokaviraston aikuisten käyttöohjeessa noin 15 g
+on päivän kokonaismäärä, johon lasketaan myös muista ruoista saadut
+öljysiemenet. Yksi pala on luonnoksen annosehdotus aikuiselle. Valmiin
+palan paino ja erän saanto on vielä varmistettava ennen julkaisua.
 [Ruokavirasto: öljysiemenet ja pellavansiemenrouhe][oljysiemenet]
 
 **Allergeenit.** Luonnos sisältää seesamia. Mahdollinen gluteenittomuusväite
