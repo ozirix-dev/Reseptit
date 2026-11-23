@@ -28,12 +28,14 @@ export function assertEnvironment(config, branchPolicies) {
   must(config && config.name === ENVIRONMENT, 'Expected existing GitHub production environment');
   const rules = config.protection_rules;
   must(Array.isArray(rules), 'Production protection rules unavailable');
-  // The operator explicitly chose a ten-minute automatic delay, not a second manual approval.
   const timers = rules.filter(rule => rule.type === 'wait_timer');
   must(timers.length === 1 && timers[0].wait_timer === 10,
     'Production environment must enforce the 10-minute wait timer');
-  must(!rules.some(rule => rule.type === 'required_reviewers'),
-    'Remove Required reviewers: this release policy uses a wait timer');
+  const reviewerRules = rules.filter(rule => rule.type === 'required_reviewers');
+  must(reviewerRules.length === 1 && Array.isArray(reviewerRules[0].reviewers) &&
+       reviewerRules[0].reviewers.some(({type, reviewer}) =>
+         (type === 'User' || type === 'Team') && Number.isInteger(reviewer?.id) && reviewer.id > 0),
+    'Production environment must enforce approval by a configured GitHub reviewer');
   must(config.can_admins_bypass === false,
     'Administrators must not be allowed to bypass production protection rules');
   must(config.deployment_branch_policy?.custom_branch_policies === true &&

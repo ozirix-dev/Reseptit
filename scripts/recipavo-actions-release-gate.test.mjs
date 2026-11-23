@@ -11,7 +11,8 @@ const sha='a'.repeat(40);
 const dispatch={repository:REPOSITORY,ref:'refs/heads/main',workflowSha:sha,inputSha:sha,confirmation:CONFIRMATION};
 const environment={name:ENVIRONMENT,can_admins_bypass:false,
   deployment_branch_policy:{protected_branches:false,custom_branch_policies:true},
-  protection_rules:[{type:'wait_timer',wait_timer:10}]};
+  protection_rules:[{type:'wait_timer',wait_timer:10},
+    {type:'required_reviewers',reviewers:[{type:'User',reviewer:{id:1}}]}]};
 const branchPolicies={total_count:1,branch_policies:[{id:1,name:'main'}]};
 const runs={workflow_runs:[{head_sha:sha,head_branch:'main',status:'completed',conclusion:'success',event:'push',id:123}]};
 const cf={success:true,result:{name:PROJECT,production_branch:'production',source:null,
@@ -25,13 +26,15 @@ test('SHA, main-only dispatch, and explicit confirmation are mandatory',()=>{
     {repository:'other/repo'},{ref:'refs/heads/staging'},{confirmation:'DO_NOT_RELEASE'},
   ]) assert.throws(()=>assertDispatch({...dispatch,...change}),/HOLD:/);
 });
-test('GitHub environment requires 10-minute timer, main-only restriction, no admin bypass',()=>{
+test('GitHub environment requires a reviewer, 10-minute timer, main-only restriction and no admin bypass',()=>{
   assert.deepEqual(assertEnvironment(environment,branchPolicies),
     {waitMinutes:10,branch:'main',adminBypass:false});
   const variations=[
     c=>c.protection_rules=[],
-    c=>c.protection_rules=[{type:'wait_timer',wait_timer:9}],
-    c=>c.protection_rules.push({type:'required_reviewers',reviewers:[{reviewer:{login:'owner'}}]}),
+    c=>c.protection_rules[0].wait_timer=9,
+    c=>c.protection_rules.pop(),
+    c=>c.protection_rules[1].reviewers=[],
+    c=>c.protection_rules[1].reviewers=[{type:'User',reviewer:{login:'owner'}}],
     c=>c.can_admins_bypass=true,
     c=>delete c.can_admins_bypass,
     c=>c.deployment_branch_policy=null,
@@ -164,7 +167,7 @@ test('live revision is checked, never assumed',async()=>{
   await assert.rejects(()=>readLiveRevision({sha,fetcher:async()=>({status:404,headers:new Headers()})}),/HOLD:/);
 });
 test('release workflow can only be launched manually, with a protected environment',async()=>{
-  const text=await readFile(new URL('../.github/workflows/recipavo-production-manual.yml',import.meta.url),'utf8');
+  const text=(await readFile(new URL('../.github/workflows/recipavo-production-manual.yml',import.meta.url),'utf8')).replaceAll('\r\n','\n');
   assert.match(text,/^on:\n  workflow_dispatch:/m);
   assert.doesNotMatch(text,/^  (?:push|pull_request|schedule|repository_dispatch):/m);
   assert.match(text,/^    needs: gate$/m);
