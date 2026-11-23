@@ -63,9 +63,9 @@ A creamy Finnish autumn soup of fresh funnel chanterelles (Craterellus tubaeform
 ## Preparation
 
 1. Use only edible mushrooms you have positively identified. Clean the fresh funnel chanterelles, cut large ones into pieces and finely chop the onion.
-2. Heat the mushrooms in a dry saucepan over medium heat until most of their moisture has evaporated. Set aside a couple of tablespoons of the cooked mushrooms for garnish.
+2. Heat the mushrooms in a dry saucepan over medium heat until most of their moisture has evaporated. Cook all the mushrooms further in the soup before reserving any for garnish.
 3. Add butter and onion, then soften for around four minutes. Stir in the wheat flour and heat for about one minute.
-4. Gradually pour in hot vegetable stock, stirring continuously. Simmer gently for around 10 minutes. Add the cooking cream, salt and black pepper and heat for another 3–5 minutes.
+4. Gradually pour in hot vegetable stock, stirring continuously. Simmer gently for around 10 minutes. Only then reserve a couple of tablespoons of fully cooked mushrooms for garnish. Add the cooking cream, salt and black pepper and heat for another 3–5 minutes.
 5. Blend the soup with a stick blender to your preferred consistency. Top with the reserved cooked mushrooms and chopped parsley. Serve hot.
 
 ## Notes

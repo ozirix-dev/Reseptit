@@ -63,9 +63,9 @@ En krämig finsk höstsoppa med färska trattkantareller (Craterellus tubaeformi
 ## Gör så här
 
 1. Använd endast matsvampar som du säkert har artbestämt. Rensa trattkantarellerna, skär större svampar i bitar och finhacka löken.
-2. Värm svampen i en torr kastrull på medelvärme tills det mesta av vätskan kokat bort. Lägg undan ett par matskedar tillagad svamp till garnering.
+2. Värm svampen i en torr kastrull på medelvärme tills det mesta av vätskan kokat bort. Låt all svamp tillagas vidare i soppan innan något tas undan till garnering.
 3. Tillsätt smör och lök och fräs i ungefär fyra minuter. Rör ner vetemjölet och värm under omrörning i cirka en minut.
-4. Häll gradvis i varm grönsaksbuljong under omrörning. Sjud försiktigt cirka 10 minuter. Tillsätt grädde, salt och svartpeppar och värm i ytterligare 3–5 minuter.
+4. Häll gradvis i varm grönsaksbuljong under omrörning. Sjud försiktigt cirka 10 minuter. Ta först nu undan ett par matskedar genomkokt svamp till garnering. Tillsätt grädde, salt och svartpeppar och värm i ytterligare 3–5 minuter.
 5. Mixa soppan med stavmixer till önskad konsistens. Garnera med den sparade tillagade svampen och hackad persilja. Servera varm.
 
 ## Anteckningar

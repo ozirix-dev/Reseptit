@@ -4,7 +4,7 @@ recipe_id: suppilovahverokeitto
 url_slug: suppilovahverokeitto
 category: paaruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 45
 difficulty: "helppo"
@@ -68,13 +68,13 @@ Tuoreista suppilovahveroista, sipulista ja kermasta valmistuu täyteläinen sien
 ## Valmistus
 
 1. Käytä vain varmasti syötäviksi tunnistettuja sieniä. Puhdista suppilovahverot ja paloittele suuret sienet. Hienonna sipuli.
-2. Kuumenna sienet kuivassa kattilassa keskilämmöllä, kunnes irtoava neste on lähes haihtunut. Nosta pari ruokalusikallista kypsiä sieniä sivuun koristelua varten.
+2. Kuumenna sienet kuivassa kattilassa keskilämmöllä, kunnes irtoava neste on lähes haihtunut. Kypsennä kaikki sienet vielä keittoliemessä ennen koristeluun erottamista.
 3. Lisää kattilaan voi ja sipuli. Kuullota noin 4 minuuttia. Sekoita joukkoon vehnäjauhot ja kuumenna sekoitellen noin minuutti.
-4. Kaada kuuma kasvisliemi vähitellen sekoittaen. Anna kiehua hiljalleen noin 10 minuuttia. Lisää ruokakerma, suola ja mustapippuri ja kuumenna 3–5 minuuttia.
+4. Kaada kuuma kasvisliemi vähitellen sekoittaen. Anna kiehua hiljalleen noin 10 minuuttia. Nosta vasta nyt pari ruokalusikallista kypsiä sieniä sivuun koristelua varten. Lisää ruokakerma, suola ja mustapippuri ja kuumenna 3–5 minuuttia.
 5. Soseuta keitto sauvasekoittimella haluamasi sileäksi. Viimeistele kypsillä, syrjään otetuilla sienillä ja hienonnetulla persiljalla. Tarjoa kuumana.
 
 ## Muistiinpanot
 
 - Sisältää maitoa ja vehnää. Ruokavirasto: kerää ja käytä vain varmasti tunnistamiasi ruokasieniä. Tuntemattoman myrkkysienen kuumentaminen ei tee siitä turvallista. Tarjoa keitto kuumana; jäähdytä ylijäämä nopeasti matalissa astioissa ja säilytä jääkaapissa alle +6 °C:ssa.
-- Kuva on tekoälyllä tehty havainnekuva. Ei omaa kokkivarmistusta, ravintoarvo-/GK-laskentaa tai gluteenittomuuden hyväksyntää. Tämä on toimituksellinen luonnos.
+- Kuva on tekoälyllä tehty havainnekuva. Omaa fyysistä kokkivarmistusta tai hyväksyttyä ravintoarvo-/GK-laskentaa ei ole tehty. Numeeriset ravintoarvot jätetään pois, GK on määrittämätön eikä gluteenittomuusväitettä ole hyväksytty.
 - Lähdevertailu: [Martat](https://www.martat.fi/reseptit/suppilovahverokeitto-2/) · [Ruokavirasto](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-tunnistaminen/). Oma määräsovitus ja ohjeistus, ei lähteen tekstikopio.
