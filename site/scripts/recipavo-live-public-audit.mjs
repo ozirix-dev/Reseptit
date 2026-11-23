@@ -63,7 +63,13 @@ function sitemapLocations(body) {
   return parser.status === 0 ? JSON.parse(parser.stdout) : [];
 }
 
-function inspectCrawlerFile(key, contentType, body) {
+function validSitemapLocation(location, origin) {
+  if (!/^https?:\/\/[^/]/i.test(location) || /[\s\\]/.test(location)) return false;
+  const url = URL.parse(location);
+  return url !== null && url.origin === origin && !url.username && !url.password;
+}
+
+function inspectCrawlerFile(key, contentType, body, origin) {
   const mediaType = contentType?.split(";")[0].trim().toLowerCase();
   if (key === "robots") {
     const hasUserAgent = /^[\t ]*user-agent[\t ]*:[\t ]*[^#\s]+/im.test(body);
@@ -75,8 +81,7 @@ function inspectCrawlerFile(key, contentType, body) {
   const locations = mediaType === "application/xml" || mediaType === "text/xml"
     ? sitemapLocations(body) : [];
   return {
-    crawlerContentMatch: locations.length > 0 && locations.every(location =>
-      /^https?:\/\/[^/]/i.test(location) && !/[\s\\]/.test(location) && URL.canParse(location)),
+    crawlerContentMatch: locations.length > 0 && locations.every(location => validSitemapLocation(location, origin)),
     sitemapLocCount: locations.length,
   };
 }
@@ -141,7 +146,7 @@ export async function checkPublicRoutes({
         contentType, sourceSha, canonical, canonicalMatch,
         hreflang: head.hreflang,
         ...(crawlerFiles.has(route.key) && status === 200 && body.length <= publicBodyLimit
-          ? inspectCrawlerFile(route.key, contentType, body)
+          ? inspectCrawlerFile(route.key, contentType, body, base.origin)
           : {crawlerContentMatch: crawlerFiles.has(route.key) ? false : null, sitemapLocCount: null}),
         error: null,
       };
