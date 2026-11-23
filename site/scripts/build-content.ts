@@ -1,4 +1,5 @@
 import { recipeSeoDescriptions } from "./recipe-seo-descriptions";
+import { numberedInstructionSteps } from "./numbered-instruction-steps";
 import { applyCopyEdits, reviewedRecipeCopy, reviewedImageNote } from "./public-recipe-copy-r2";
 import { projectPublicRecipeMethodCopy, publicIngredientNote, publicRecipeDescription, publicRecipeTitle, reviewedPublicCookingMethod } from "./public-recipe-copy";
 import { projectEggMethod, projectIngredientList } from "./public-ingredient-list";
@@ -320,7 +321,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       : "";
     const publicNotes = [reviewedNotes, copy?.nutritionBasis, ingredientNutrition].filter(Boolean).join("\n\n");
     const dietTags = await reviewedDietTagsForSource(data.recipe_id, data.language, filePath, finnishSources.get(data.recipe_id));
-    const instructionSteps = [...publicInstructions.matchAll(/^\s*\d+[.)]\s+(.+)$/gm)].map((match) => match[1].trim());
+    const instructionSteps = numberedInstructionSteps(publicInstructions);
     const seoDescription = visibleHold ? undefined : recipeSeoDescriptions[data.url_slug]?.[data.language];
     const editorialDescription = copy?.description
       ?? (copy?.useSeoDescription ? seoDescription : undefined)

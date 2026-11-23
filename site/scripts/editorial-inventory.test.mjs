@@ -63,6 +63,24 @@ test('groups FI difficulty labels without regard to capitalization', () => {
   assert.deepEqual(report.byDifficulty, {helppo: 2, keskitaso: 2, vaativa: 1, '(puuttuu)': 1});
 });
 
+test('compares every line of a wrapped preparation step', () => {
+  const shared = 'Sekoita taikinaa rauhallisesti kulhossa, kunnes rakenne on kauttaaltaan tasainen.';
+  const mushroom = 'Lisää pilkotut sienet ja sekoita kertaalleen.';
+  const sources = [
+    ['a', mushroom],
+    ['b', 'Lisää valutetut pavut ja sekoita kertaalleen.'],
+    ['c', mushroom],
+  ].map(([id, continuation]) => ({
+    path: `reseptit/aamupalat/${id}.md`,
+    content: recipe(id, 'Kuvaus.', shared + '\n   ' + continuation),
+  }));
+
+  const {repeatedSteps} = analyze(sources).signals;
+  assert.equal(repeatedSteps.length, 1);
+  assert.match(repeatedSteps[0].phrase, /lisää pilkotut sienet/);
+  assert.deepEqual(repeatedSteps[0].recipes.map(item => item.recipeId), ['a', 'c']);
+});
+
 test('includes intro text found only in Kuvaus, without fake duplicate', () => {
   const intro = 'Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan perinteinen ateria.';
   const descriptionOnly = (id) => recipe(id, intro, duplicateStep)
