@@ -88,6 +88,9 @@ export function evaluateBatchEntry(entry: BatchEntry, evidence: SemanticEvidence
     reasons: ["FI source HOLD; must be corrected and independently re-reviewed"], pairs: 0 };
   if (!entry.source || entry.source.data.status !== "published")
     return { recipe_id: entry.id, group: "source-hold", reasons: ["missing or unpublished FI source"], pairs: 0 };
+  if (entry.id !== entry.source.data.recipe_id)
+    return { recipe_id: entry.id, group: "source-hold",
+      reasons: ["batch recipe ID does not match FI source recipe_id"], pairs: 0 };
   const sourceDecision = fiSourceQualityDecision(entry.source, fiQuality[entry.id]);
   if (!sourceDecision.accepted) return { recipe_id: entry.id, group: "source-hold",
     reasons: [sourceDecision.reason], pairs: 0 };
