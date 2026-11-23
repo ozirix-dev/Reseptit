@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "jalapeno-poppers-pekonilla",
   "source_path": "reseptit/valipalat/jalapeno-poppers-pekonilla.md",
-  "source_sha256": "19658d56945bd41a0dbc8f7e607836ec0281f9cb5ab71dff4d14aefa8fbd0bd3",
+  "source_sha256": "f51012d14a8dcdec461d8b480d8f9549fdba300cc030522c1043dca6349b78d3",
   "decision": "hold",
   "reviewed_by": "UNREVIEWED",
   "reviewed_at": "",
@@ -11,7 +11,8 @@
     "sources": [
       "https://www.kyleecooks.com/jalapeno-poppers/",
       "https://www.saltysidedish.com/bacon-wrapped-stuffed-jalapenos/",
-      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/"
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/"
     ]
   },
   "nutrition_evidence": "docs/reviews/valipalat/era-02/jalapeno-nutrition-withholding.json",
@@ -30,7 +31,7 @@
     },
     "food_safety": {
       "status": "pending",
-      "notes": "Ohut pekonikaistale on yhtenä kerroksena sauman kohtaa lukuun ottamatta. Pakkausohjeen lisäksi tarkistetaan sauma ja alapuoli. Raakapekoni käsitellään erillään, työvälineet pestään, chilille käytetään käsineitä, kuuman täytteen annetaan jäähtyä, tähteet jäähdytetään nopeasti. Maito ilmoitetaan allergeenina. Pakkauskohtaista paistoa ei ole validoitu tässä katselmointiaineistossa."
+      "notes": "Pekoni kypsennetään kauttaaltaan vähintään 70 °C:seen Ruokaviraston ohjeen mukaan. Ohje neuvoo mittaamaan ohuella anturilla pekonin paksuimmasta kohdasta. Mittauksen ollessa epäluotettava noudatetaan tuotteen uuniohjetta ja epävarma erä jätetään tarjoamatta. Sauma ja alapuoli tarkistetaan erikseen. Raakapekoni käsitellään erillään, työvälineet pestään, chilille käytetään käsineitä ja kuuman täytteen annetaan jäähtyä. Maito ilmoitetaan allergeenina. Pakkauskohtaista paistoa ei ole validoitu tässä katselmointiaineistossa."
     },
     "servings_and_time": {
       "status": "pending",
@@ -38,7 +39,7 @@
     },
     "nutrition": {
       "status": "pending",
-      "notes": "Kaikki neljä makrokenttää jätetään nulliksi. Jalapeñon raportoimaton polyoli ei ole nolla. Pekonin rasvahävikkiä tai täytteen hävikkiä ei arvioida. Riippumaton pidätyspäätös odottaa katselmointia."
+      "notes": "Kaikki neljä makrokenttää jätetään nulliksi. Jalapeñon raportoimaton polyoli ei ole nolla. Pekonin rasvahävikkiä tai täytteen hävikkiä ei arvioida. Chat-2 hyväksyi pidätysperiaatteen aiemmalle HEADille PR #968:n kommentissa 7113150123. Lopullinen lähde-SHA odottaa hyväksyntää."
     },
     "glycemic": {
       "status": "unavailable",

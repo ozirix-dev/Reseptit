@@ -28,6 +28,8 @@ test("jalapeño FI recipe binds six whole-batch portions to documented macro wit
   assert.match(parsed.content, /koko valmis erä kuuteen yhtä suureen annokseen/);
   assert.match(parsed.content, /200 °C/);
   assert.match(parsed.content, /pakkauksen kypsennysohjetta/);
+  assert.match(parsed.content, /pekoni kauttaaltaan vähintään 70 °C/);
+  assert.match(parsed.content, /Jos kypsyydestä jää epävarmuutta, älä tarjoa/);
   assert.match(parsed.content, /Anna jäähtyä noin 5 minuuttia/);
   assert.match(parsed.content, /GK: ei määritetty/);
   assert.ok(recipe.tags.every(tag => tag !== "keto" && tag !== "vhh"));
