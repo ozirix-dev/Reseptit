@@ -4,15 +4,15 @@ recipe_id: thai-mango-sticky-rice-tahmariisilla
 url_slug: thai-mango-sticky-rice-tahmariisilla
 category: jalkiruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 330
 difficulty: keskitaso
 main_ingredient: [tahmariisi, kookosmaito, mango]
 cooking_method: [hoyrytys]
 tags: [thaimaalainen, mango, tahmariisi, jalkiruoka]
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
@@ -74,4 +74,4 @@ Höyrytetty tahmariisi imee makean kookosseoksen ja saa seurakseen kypsää mang
 - **Riisin elintarviketurvallisuus:** Tarjoile kypsä riisi pian. Jos säästät ylijäämän, jaa se pieniin astioihin ja jäähdytä nopeasti, mieluiten tunnissa; säilytä jääkaapissa enintään 24 tuntia. Kuumenna uudelleen vain kerran kauttaaltaan höyryävän kuumaksi. Älä jätä keitettyä riisiä pitkäksi aikaa huoneenlämpöön. [UK Food Standards Agencyn ohje](https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker).
 - **Ravitsemus:** Neljä makroarvoa ja glykeeminen kuorma ovat määrittämättä; vanhan jasmiiniriisiä käyttävän reseptin arvoja ei saa soveltaa tähän. Ei keto- tai gluteenittomuusväitettä. Tarkista kookosmaidon ja riisijauhon pakkaukset mahdollisten allergeenien ja ristikontaminaation vuoksi.
 - **Aika:** 330 minuuttia on varovainen toimituksellinen kokonaisarvio, joka sisältää vähintään neljän tunnin riisin liotuksen, höyrytyksen, imeytymisen ja valmistelun. Sitä ei ole mitattu Recipavon koekeittiössä.
-- Alkuperäinen [Bantatthong Restaurantin Facebook Reel](https://www.facebook.com/reel/1119160724235447) on vain annossommittelun inspiraatio. Sen tuntemattomia palloja, koristeita tai mahdollisia lisäaineksia ei väitetä tunnistetuiksi. Kuva ja EN/SV/TH-käännökset käsitellään erillisillä hyväksyntäporteilla ennen julkaisua.
+- Alkuperäinen [Bantatthong Restaurantin Facebook Reel](https://www.facebook.com/reel/1119160724235447) on vain annossommittelun inspiraatio. Sen tuntemattomia palloja, koristeita tai mahdollisia lisäaineksia ei väitetä tunnistetuiksi. Oma annoskuva on AI-havainnekuva, ei ravintolan valokuva. Kuvan ja neljän kieliversion julkaisukatselmointi on dokumentoitu erikseen.

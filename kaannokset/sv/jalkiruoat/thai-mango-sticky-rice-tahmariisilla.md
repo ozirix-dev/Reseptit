@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/jalkiruoat/thai-mango-sticky-rice-tahmariisilla.md
 translation_of: thai-mango-sticky-rice-tahmariisilla
-status: draft
+status: published
 servings: 4
 time_total_min: 330
 difficulty: keskitaso
@@ -75,4 +75,4 @@ Det ångkokta klibbiga riset får suga upp en söt kokosblandning och serveras m
 - **Säker hantering av ris:** Servera riset omgående. Fördela eventuella rester i små behållare och kyl snabbt, helst inom en timme. Förvara i kylen i högst 24 timmar och värm upp endast en gång, tills riset är rykande hett rakt igenom. Låt inte kokt ris stå länge i rumstemperatur. [Brittiska Food Standards Agencys råd](https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker).
 - **Näring:** De fyra makronäringsvärdena och glykemisk belastning är inte fastställda. Värdena för receptet med jasminris gäller inte här. Inga påståenden om keto eller glutenfrihet görs. Kontrollera kokosmjölkens och rismjölets förpackningar för allergener och risk för korskontakt.
 - **Tid:** 330 minuter är en redaktionell uppskattning med minst fyra timmars blötläggning samt tid för ångkokning, upptag och förberedelser. Tiden har inte mätts i Recipavos testkök.
-- [Bantatthong Restaurants Reel](https://www.facebook.com/reel/1119160724235447) är inspiration till uppläggningen. De oidentifierade kulorna, dekorationerna och eventuella extra ingredienser är fortfarande obekräftade. Bild och översättningar behöver granskas separat före publicering.
+- [Bantatthong Restaurants Reel](https://www.facebook.com/reel/1119160724235447) är inspiration till uppläggningen. De oidentifierade kulorna, dekorationerna och eventuella extra ingredienser är fortfarande obekräftade. Den AI-genererade serveringsbilden är inte ett restaurangfoto. Granskningen av bild och språkversioner är dokumenterad separat.

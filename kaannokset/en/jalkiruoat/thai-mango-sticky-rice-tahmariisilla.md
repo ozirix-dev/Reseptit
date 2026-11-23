@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/jalkiruoat/thai-mango-sticky-rice-tahmariisilla.md
 translation_of: thai-mango-sticky-rice-tahmariisilla
-status: draft
+status: published
 servings: 4
 time_total_min: 330
 difficulty: keskitaso
@@ -75,4 +75,4 @@ Steamed sticky rice absorbs a sweet coconut mixture and is served with ripe mang
 - **Rice safety:** Serve the rice promptly. Divide leftovers into small containers and cool quickly, ideally within one hour. Refrigerate for up to 24 hours and reheat only once, until steaming hot throughout. Avoid leaving cooked rice at room temperature for extended periods. [UK Food Standards Agency guidance](https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker).
 - **Nutrition:** The four macronutrient values and glycaemic load are undetermined. The jasmine-rice recipe’s values do not apply. The recipe carries no keto or gluten-free claim. Check the coconut milk and rice flour packaging for allergen and cross-contact information.
 - **Timing:** 330 minutes is an editorial estimate including at least four hours of soaking, plus steaming, absorption and preparation. The time was not measured in a Recipavo test kitchen.
-- The [Bantatthong Restaurant Reel](https://www.facebook.com/reel/1119160724235447) serves as presentation inspiration. Its unidentified balls, garnishes and any additional ingredients remain unverified. Images and translations require separate approval before publication.
+- The [Bantatthong Restaurant Reel](https://www.facebook.com/reel/1119160724235447) serves as presentation inspiration. Its unidentified balls, garnishes and any additional ingredients remain unverified. The AI-generated serving illustration is not a restaurant photograph. Image and language review evidence is recorded separately.

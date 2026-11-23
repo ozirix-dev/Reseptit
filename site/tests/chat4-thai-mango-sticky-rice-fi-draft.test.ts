@@ -4,19 +4,18 @@ import { readFileSync } from "node:fs";
 import { test } from "node:test";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
-import { siteContent } from "../src/generated/content.generated";
 
 const draftPath = new URL("../../reseptit/jalkiruoat/thai-mango-sticky-rice-tahmariisilla.md", import.meta.url);
 const existingPath = new URL("../../reseptit/aamupalat/thai-kookosriisi-mangolla.md", import.meta.url);
 
-test("Chat-4 mango sticky rice FI draft stays unpublished and distinct from jasmine-rice breakfast", () => {
+test("Chat-4 mango sticky rice FI publication has safe source and remains distinct from jasmine-rice breakfast", () => {
   const parsed = parseMarkdown(readFileSync(draftPath, "utf8"));
   const existing = parseMarkdown(readFileSync(existingPath, "utf8"));
   assert.ok(parsed && existing);
   const recipe = recipeFrontmatterSchema.parse(parsed.data);
   assert.equal(recipe.recipe_id, "thai-mango-sticky-rice-tahmariisilla");
   assert.equal(recipe.category, "jalkiruoka");
-  assert.equal(recipe.status, "draft");
+  assert.equal(recipe.status, "published");
   assert.equal(recipe.language, "fi");
   assert.equal(recipe.servings, 4);
   assert.ok((recipe.time_total_min ?? 0) >= 240, "at least 4 hours of soaking");
@@ -34,7 +33,7 @@ test("Chat-4 mango sticky rice FI draft stays unpublished and distinct from jasm
     const translation = parseMarkdown(readFileSync(translationPath, "utf8"));
     assert.ok(translation);
     const translated = recipeFrontmatterSchema.parse(translation.data);
-    assert.equal(translated.status, "draft");
+    assert.equal(translated.status, "published");
     assert.equal(translated.language, locale);
     assert.equal(translated.translation_of, recipe.recipe_id);
     assert.ok(translated.image?.alt);
@@ -47,7 +46,8 @@ test("Chat-4 mango sticky rice FI draft stays unpublished and distinct from jasm
   assert.equal(existing.data.status, "published");
   assert.match(String(recipeFrontmatterSchema.parse(existing.data).ingredients[0].item), /jasmiiniriisiä/);
   assert.match(String(recipe.ingredients[0].item), /glutiiniriisiä/);
-  assert.equal(siteContent.recipes.some(x => x.recipeId === recipe.recipe_id), false, "draft must not create public routes");
+  const index = JSON.parse(readFileSync(new URL("../../meta/kaannokset/published-translation-pairs.json", import.meta.url), "utf8")) as {sources: Array<{recipe_id: string; locales: string[]}>};
+  assert.ok(index.sources.some(x => x.recipe_id === recipe.recipe_id && ["en", "sv", "th"].every(locale => x.locales.includes(locale))), "three reviewed published pairs required");
   for (const field of ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const) {
     assert.equal(recipe[field], null, field);
   }
