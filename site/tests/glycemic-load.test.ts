@@ -203,6 +203,48 @@ const gi: GlycemicIndexRecord = {
   },
 };
 
+test("unmatched GI needs bounded impact even at 95% carbohydrate coverage", () => {
+  const main = { name: "main", grams: 100, fineliRecordId: "main", giRecordId: gi.id,
+    foodKey: gi.foodKey, preparationKey: gi.preparationKey, giMatchEvidence: "Synthetic exact match" };
+  const small = { name: "small", grams: 100, fineliRecordId: "small", giRecordId: null,
+    unmatchedGiRange: { min: 25, max: 75, sourceUrl: "https://example.test/bounds", evidence: "Synthetic range" } };
+  const calculate = (mainCarbs: number, smallCarbs: number, ingredients: GlycemicLoadRecipeInput["ingredients"], giValue = 50) =>
+    calculateGlycemicLoad({ recipeId: "bounded", servings: 1, ingredients },
+      [food("main", mainCarbs), food("small", smallCarbs)], [{ ...gi, gi: giValue }], { requireBoundedGi: true });
+
+  const accepted = calculate(9, 1, [main, small]);
+  assert.equal(accepted.minimumGiCarbohydrateCoverage, 0.9);
+  assert.equal(accepted.glycemicLoadPerServing, null);
+  assert.deepEqual(accepted.glycemicLoadRangePerServing, { min: 4.75, max: 5.25 });
+  assert.deepEqual(accepted.ingredients[1].giContributionRange, { min: 0.25, max: 0.75 });
+  assert.equal(accepted.ingredients[1].giContribution, null);
+  assert.ok(publishedGlycemicLoadForRecipe("bounded", [{ ...accepted, sourceReferences: [] }]));
+
+  const unbounded = calculate(19, 1, [main, { ...small, unmatchedGiRange: undefined }]);
+  assert.equal(unbounded.minimumGiCarbohydrateCoverage, 0.95);
+  assert.equal(unbounded.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(unbounded.glycemicLoadRangePerServing, null);
+
+  const crossed = calculate(19, 1, [main, small], 51);
+  assert.equal(crossed.minimumGiCarbohydrateCoverage, 0.95);
+  assert.match(crossed.blockers.join(), /class boundary/);
+  assert.equal(crossed.glycemicLoadRangePerServing, null);
+
+  const highUpperLimit = { ...small, unmatchedGiRange: { ...small.unmatchedGiRange, min: 100, max: 125 } };
+  assert.deepEqual(calculate(9, 1.5, [main, highUpperLimit]).glycemicLoadRangePerServing, { min: 6, max: 6.375 });
+  const wide = { ...small, unmatchedGiRange: { ...small.unmatchedGiRange, min: 0, max: 125 } };
+  assert.equal(calculate(9, 1.5, [main, wide]).status, "INSUFFICIENT SOURCE DATA");
+
+  const missingMain = calculate(9, 1, [{ ...main, fineliRecordId: null }, small]);
+  assert.equal(missingMain.minimumGiCarbohydrateCoverage, null);
+  assert.equal(missingMain.glycemicLoadRangePerServing, null);
+
+  const original = { recipeId: "bounded", servings: 1, ingredients: [main, small] };
+  const seal = glycemicLoadInputHash(original);
+  assert.notEqual(glycemicLoadInputHash({ ...original, servings: 2 }), seal);
+  assert.notEqual(glycemicLoadInputHash({ ...original, ingredients: [main, wide] }), seal);
+});
+
 test("recipe binding detects calculation-relevant changes and ignores instruction copy edits", () => {
   const reviewed = `---
 recipe_id: sample

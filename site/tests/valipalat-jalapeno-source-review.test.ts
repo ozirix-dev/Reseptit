@@ -4,6 +4,9 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
 import { recipeFrontmatterSchema } from "../src/content/schema";
+import { calculateGlycemicLoad } from "../scripts/glycemic-load-model";
+import { recipeNutritionInputHash, verifyNutritionEvidence } from "../scripts/nutrition-evidence";
+import type { Calculation, FoodRecord } from "../scripts/nutrition-model";
 import { parseMarkdown } from "../src/content/markdown";
 import { siteContent } from "../src/generated/content.generated";
 
@@ -123,6 +126,39 @@ test("B2 jalapeno: exact USDA pepper is research-only and raw bacon retention st
   assert.equal(Number((food.per100g.dietaryFibreG * 1.5).toFixed(3)), 4.2);
   assert.equal(food.per100g.proteinG * 1.5, 1.365);
   assert.equal(Number((food.per100g.fatG * 1.5).toFixed(3)), 0.555);
+
+  const recipe = recipeFrontmatterSchema.parse(parseMarkdown(await readFile(path.join(root, candidatePath), "utf8"))!.data);
+  const composition: FoodRecord = {
+    id: "usda-168576-research", name: "Peppers, jalapeno, raw",
+    sourceUrl: "https://fdc.nal.usda.gov/food-details/168576/nutrients",
+    retrievedAt: "2026-11-23", licence: "USDA public domain",
+    state: "raw", basis: "per100g-edible", carbohydrateDefinition: "US_TOTAL_INCLUDING_FIBRE",
+    per100g: { carbohydrate: food.per100g.carbohydrateByDifferenceG, fibre: food.per100g.dietaryFibreG, polyols: null },
+  };
+  const comparison = (composition.per100g.carbohydrate! - composition.per100g.fibre!) * jalapeno.grams / 100 / row.servings;
+  assert.equal(Number(comparison.toFixed(3)), 0.925, "USDA carbohydrate minus fibre is only a scenario input");
+  const gk = calculateGlycemicLoad({ recipeId, servings: row.servings,
+    ingredients: [{ name: recipe.ingredients[0].item, grams: jalapeno.grams, fineliRecordId: composition.id, giRecordId: null }] },
+    [composition], [], { requireBoundedGi: true });
+  assert.equal(gk.glycemicLoadPerServing, null);
+  assert.equal(gk.glycemicLoadRangePerServing, null);
+
+  // A fixture for the nutrition gate only. Image, safety and editorial approval remain separate.
+  const withholding: Calculation = {
+    recipeId, servings: recipe.servings, sourceHash: recipeNutritionInputHash(recipe),
+    calculatedAt: "2026-11-23", scope: "FI release-gate test", reviewerStatus: "AUTOMATED ONLY",
+    carbohydrateOutput: "AVAILABLE_EXCLUDING_FIBRE", publicationStatus: "WITHHELD_SOURCE_INCOMPLETE",
+    withholdingReason: "Jalapeño polyols and other ingredients need separate recipe-specific evidence.",
+    ingredients: recipe.ingredients.map((ingredient, index) => ({
+      ...ingredient, state: "raw", matchEvidence: index === 0 ? "USDA research comparator" : "",
+      ...(index === 0 ? { record: composition } : {}), edibleFraction: 1, edibleEvidence: "Edible input mass",
+      retainedFraction: 1, retentionEvidence: "Gate test uses the input mass",
+    })),
+  };
+  const verified = verifyNutritionEvidence(recipe, withholding);
+  assert.equal(verified.status, "INSUFFICIENT SOURCE DATA");
+  assert.deepEqual(verified.errors, []);
+  assert.ok(Object.values(verified.values).every(value => value === null));
 
   const bacon = row.ingredients[3];
   assert.equal(bacon.sourceId, "fineli-707-2026-10-24");

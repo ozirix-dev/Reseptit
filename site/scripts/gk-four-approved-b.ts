@@ -1,3 +1,4 @@
+import {acceptsReviewedNutritionModelBinding} from './reviewed-nutrition-model-binding';
 import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
@@ -133,7 +134,8 @@ export function buildApprovedBVariants(root: string): GkOnlyVariant[] {
       composition: Composition[]; giBindings: Gi[]; sourceFilesLfSha256: Record<string, string>;
     };
     for (const [file, seal] of Object.entries(sourceFilesLfSha256)) {
-      requireBinding(hash(text(file)) === seal, 'native source or engine changed: ' + file);
+      const actual = hash(text(file));
+      requireBinding(actual === seal || acceptsReviewedNutritionModelBinding(file, seal as string, actual), 'native source or engine changed: ' + file);
     }
     const compositions = new Map(composition.map(row => [row.id, row]));
     const bindings = new Map(giBindings.map(row => [row.id, row]));

@@ -77,6 +77,9 @@ test("#652: oats and baking powder retain unknown POLYL under the exact source e
   const calculated = calculate(evidence);
   assert.equal(calculated.status, "INSUFFICIENT SOURCE DATA");
   assert.equal(calculated.total.netCarbohydrate, null);
+  const bakingRow = calculated.rows[evidence.ingredients.indexOf(baking)];
+  assert.equal(bakingRow.values.polyols, null);
+  assert.equal(bakingRow.values.carbohydrate! / evidence.servings, 0.063);
 });
 
 test("#652: current FI nutrition evidence and translations preserve the HOLD gate", () => {
@@ -128,6 +131,9 @@ test("#652: field approval reproduces macros and preserves the separately review
   assert.equal(accepted.calculated?.status, "INSUFFICIENT SOURCE DATA");
   assert.deepEqual(accepted.errors, []);
   assert.equal(accepted.fieldEstimates?.carbs_total_per_serving_g, null);
+  assert.equal(accepted.calculated?.perServing.netCarbohydrate, 8.94);
+  assert.equal(accepted.calculated?.perServing.polyols, null);
+  assert.match(verifyNutritionEvidence({ ...fi, servings: 31 }, input, [], approval).errors.join(), /yield changed/);
 
   const wrongLanguage = translations.map((entry, index) =>
     index === 1 ? { ...entry, data: { ...entry.data, fat_per_serving_g: null } } : entry);

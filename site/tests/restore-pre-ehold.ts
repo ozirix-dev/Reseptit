@@ -13,6 +13,11 @@ export function restorePreEHold(report:any){restoreBeforeCouscous(report);report
 
 /** Frozen-release view only. Live326/87/macros are independently checked in gk-legacy-reconciliation.test.ts. */
 export function afcdSourceBeforeCorrection(file:string,text:string):string {
+ if (file === 'docs/nutrition/glycemic-load-recipe-bindings.json') {
+  // The frozen views predate missing-GI range releases. Restore their exact
+  // registry bytes before applying the existing SHA-bound transitions.
+  text = text.replace(/^  "legacyUnboundedOmissions": \{\r?\n(?:    "[a-z0-9-]+": "[a-f0-9]{64}",?\r?\n)+  \},\r?\n/m, '');
+ }
  text=originalContentSourceBefore(file,biryaniSourceBeforeReview(file,text));
  if(file==='docs/nutrition/food-records.json'){
   const rows=JSON.parse(text);

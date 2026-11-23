@@ -1,3 +1,4 @@
+import { classifyPublicGk } from "../src/features/recipes/gk-estimate";
 import { normalizeCarbohydrate, type FoodRecord } from "./nutrition-model";
 
 export interface GlycemicIndexRecord {
@@ -50,6 +51,8 @@ export interface GlycemicLoadIngredientInput {
   availableCarbohydrateUpperBoundPerServingG?: number;
   upperBoundEvidence?: string;
   negligibleAssumption?: string;
+  /** Glucose-scale limits for this ingredient as prepared, with applicability evidence. */
+  unmatchedGiRange?: { min: number; max: number; sourceUrl: string; evidence: string };
 }
 
 export interface GlycemicLoadRecipeInput {
@@ -72,6 +75,7 @@ export interface GlycemicLoadResult {
   glycemicLoadRangePerServing: { min: number; max: number } | null;
   omittedAvailableCarbohydratePerServingG: number;
   omittedAvailableCarbohydrateUpperBoundPerServingG: number;
+  minimumGiCarbohydrateCoverage?: number | null;
   confidence: "HIGH" | "MEDIUM" | "LOW" | null;
   interpretation: string;
   ingredients: Array<{
@@ -189,6 +193,7 @@ export function calculateGlycemicLoad(
   input: GlycemicLoadRecipeInput,
   foodRecords: FoodRecord[],
   giRecords: GlycemicIndexRecord[],
+  { requireBoundedGi = false } = {},
 ): GlycemicLoadResult {
   if (!input.recipeId || !Number.isInteger(input.servings) || input.servings <= 0 || !input.ingredients.length) {
     throw new Error("A glycemic-load input needs a recipe ID, positive servings, and ingredients.");
@@ -201,6 +206,11 @@ export function calculateGlycemicLoad(
   let totalLoadMin = 0;
   let totalLoadMax = 0;
   let hasRange = false;
+  const boundedGi = requireBoundedGi || input.ingredients.some(row => row.unmatchedGiRange !== undefined);
+  let hasUnmatchedGiRange = false;
+  let matchedCarbohydrateMin = 0;
+  let unmatchedCarbohydrateMax = 0;
+  let unknownCarbohydrate = false;
   let confidence: "HIGH" | "MEDIUM" | "LOW" = "HIGH";
   let omittedAvailableCarbohydratePerServingG = 0;
   let omittedAvailableCarbohydrateUpperBoundPerServingG = 0;
@@ -229,7 +239,12 @@ export function calculateGlycemicLoad(
       const documentedZero = !referenceOnly && valid(estimatedCarbs) && estimatedCarbs === 0 && Boolean(ingredient.negligibleAssumption);
       const smallEstimate = valid(estimatedCarbs) && estimatedCarbs > 0 && estimatedCarbs < MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G && Boolean(ingredient.negligibleAssumption);
       const smallUpperBound = upperBound !== undefined && validUpperBound && upperBound > 0 && upperBound < MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G;
-      const smallOmission = !referenceOnly && (smallEstimate || smallUpperBound);
+      const smallOmission = !boundedGi && !referenceOnly && (smallEstimate || smallUpperBound);
+      if (!documentedZero) {
+        if (validUpperBound && upperBound !== undefined) unmatchedCarbohydrateMax += upperBound;
+        else if (valid(estimatedCarbs) && estimatedCarbs > 0 && ingredient.negligibleAssumption) unmatchedCarbohydrateMax += estimatedCarbs;
+        else unknownCarbohydrate = true;
+      }
       if (smallOmission) {
         const omittedAmount = smallUpperBound ? upperBound! : estimatedCarbs!;
         omittedAvailableCarbohydratePerServingG += omittedAmount;
@@ -245,6 +260,9 @@ export function calculateGlycemicLoad(
             : !validUpperBound ? "Available-carbohydrate upper bound is invalid or lacks source evidence."
               : ingredient.excludedReason || "Ingredient amount or Fineli mapping is missing; it is not treated as zero.";
       if (!documentedZero && !smallOmission) blockers.push(`${input.recipeId}: ${ingredient.name}: ${issue}`);
+      if (ingredient.unmatchedGiRange !== undefined) {
+        blockers.push(`${input.recipeId}: ${ingredient.name}: a GI range requires a matched composition and edible mass.`);
+      }
       return {
         name: ingredient.name,
         grams: ingredient.grams,
@@ -298,6 +316,12 @@ export function calculateGlycemicLoad(
       ? { min: carbohydrateRange.min * ingredient.grams / 100 / input.servings, max: carbohydrateRange.max * ingredient.grams / 100 / input.servings }
       : null;
     if (availablePerServingRange) availablePerServing = availablePerServingRange.max;
+    if (availablePerServing === null || issues.length) unknownCarbohydrate = true;
+
+    const unmatchedGiRange = ingredient.unmatchedGiRange;
+    if (unmatchedGiRange !== undefined && (ingredient.giRecordId !== null || (availablePerServing === null || availablePerServing <= 0))) {
+      issues.push("An unmatched GI range requires positive available carbohydrate and no assigned GI record.");
+    }
 
     let gi: number | null = null;
     let qualityTier: GlycemicIndexRecord["qualityTier"] | null = null;
@@ -333,7 +357,21 @@ export function calculateGlycemicLoad(
           : almondBakeryMismatch(ingredient, food, matchedGi) ? "Almond meal/flour cannot use a finished bakery-products GI category mean; copied keys or recipe baking do not establish a valid food/preparation analogy."
           : foodFamilyMismatch ? "GI food family does not match the ingredient (for example, rice is not rice vinegar or dairy is not milk chocolate)."
           : "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.";
-        if (availablePerServing < MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G && ingredient.giRecordId === null) {
+        unmatchedCarbohydrateMax += availablePerServing;
+        if (unmatchedGiRange && ingredient.giRecordId === null && issues.length === 0) {
+          const { min, max, sourceUrl, evidence } = unmatchedGiRange;
+          if (!valid(min) || !valid(max) || max <= min
+              || URL.parse(sourceUrl)?.protocol !== "https:" || !evidence?.trim()) {
+            issues.push("Unmatched GI range is invalid or lacks source and applicability evidence.");
+          } else {
+            const minimumCarbohydrate = availablePerServingRange?.min ?? availablePerServing;
+            giContributionRange = { min: minimumCarbohydrate * min / 100, max: availablePerServing * max / 100 };
+            totalLoadMin += giContributionRange.min;
+            totalLoadMax += giContributionRange.max;
+            hasUnmatchedGiRange = true;
+            ingredientConfidence = confidence = "LOW";
+          }
+        } else if (!boundedGi && availablePerServing < MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G && ingredient.giRecordId === null) {
           omittedAvailableCarbohydratePerServingG += availablePerServing;
           confidence = "LOW";
           issues.push(`Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (${availablePerServing.toFixed(3)} g available carbohydrate): ${reason}`);
@@ -346,6 +384,7 @@ export function calculateGlycemicLoad(
         const giValue = matchedGi!.gi;
         giContribution = availablePerServing * giValue / 100;
         const minCarbs = availablePerServingRange?.min ?? availablePerServing;
+        matchedCarbohydrateMin += minCarbs;
         giContributionRange = {
           min: minCarbs * giValue / 100,
           max: availablePerServing * giValue / 100,
@@ -381,21 +420,34 @@ export function calculateGlycemicLoad(
   });
 
   if (omittedAvailableCarbohydratePerServingG >= CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G) blockers.push(`${input.recipeId}: cumulative omitted available carbohydrate is ${omittedAvailableCarbohydratePerServingG.toFixed(3)} g/serving, at or above the 2 g editorial tolerance.`);
+  // Compare the unrounded endpoints and keep the range in the existing display
+  // model. A full GK unit is an editorial maximum for this missing-GI route.
+  if (hasUnmatchedGiRange && (!valid(totalLoadMax) || totalLoadMax - totalLoadMin > 1
+      || classifyPublicGk(totalLoadMin) !== classifyPublicGk(totalLoadMax))) {
+    blockers.push(`${input.recipeId}: GI uncertainty spans more than one GK unit or crosses a public class boundary.`);
+  }
+  const coverageDenominator = matchedCarbohydrateMin + unmatchedCarbohydrateMax;
   const complete = blockers.length === 0;
   return {
     recipeId: input.recipeId,
     servings: input.servings,
     status: complete ? "CALCULATED" : "INSUFFICIENT SOURCE DATA",
-    unroundedGlycemicLoadPerServing: complete ? totalLoad : null,
-    glycemicLoadPerServing: complete ? Math.round((totalLoad + Number.EPSILON) * 100) / 100 : null,
-    glycemicLoadRangePerServing: complete && hasRange ? {
+    unroundedGlycemicLoadPerServing: complete && !hasUnmatchedGiRange ? totalLoad : null,
+    glycemicLoadPerServing: complete && !hasUnmatchedGiRange ? Math.round((totalLoad + Number.EPSILON) * 100) / 100 : null,
+    glycemicLoadRangePerServing: complete && hasUnmatchedGiRange ? { min: totalLoadMin, max: totalLoadMax }
+      : complete && hasRange ? {
       min: Math.round((totalLoadMin + Number.EPSILON) * 100) / 100,
       max: Math.round((totalLoadMax + Number.EPSILON) * 100) / 100,
     } : null,
     omittedAvailableCarbohydratePerServingG,
     omittedAvailableCarbohydrateUpperBoundPerServingG,
+    ...(boundedGi && (input.ingredients.some(row => row.unmatchedGiRange !== undefined) || requireBoundedGi && unmatchedCarbohydrateMax > 0) && {
+      minimumGiCarbohydrateCoverage: unknownCarbohydrate || coverageDenominator === 0 ? null : matchedCarbohydrateMin / coverageDenominator,
+    }),
     confidence: complete ? confidence : null,
-    interpretation: "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+    interpretation: hasUnmatchedGiRange
+      ? "Ingredient-based estimate. Unmatched GI contributions need source-backed limits. Coverage is the minimum estimated share of available carbohydrate with matched GI evidence."
+      : "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
     ingredients,
     blockers,
   };

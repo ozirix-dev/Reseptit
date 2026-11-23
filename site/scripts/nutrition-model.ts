@@ -77,12 +77,20 @@ function nutrientValue(record: FoodRecord, nutrient: "carbohydrate" | "fibre" | 
   if (componentValue !== null && summaryValue !== componentValue) throw Error(`Fineli ${component} does not match its normalized value`);
   return componentValue;
 }
-export function normalizeCarbohydrate(record: FoodRecord, subtractFibre = record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE") {
+function verifiedPolyols(record: FoodRecord): number | null {
+  const value = nutrientValue(record, "polyols");
+  const documented = (record.polyolsSourceVerified === true && Boolean(record.polyolsEvidence?.trim()))
+    || (record.componentIds?.POLYL === 2260 && Boolean(record.componentValues && Object.hasOwn(record.componentValues, "POLYL")));
+  return documented && valid(value) ? value : null;
+}
+
+export function normalizeCarbohydrate(record: FoodRecord, subtractFibre = record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE",
+                                      verifiedDirectCarbohydrate = false) {
   if (record.basis === "unresolved") throw Error("Nutrient weight basis is unresolved");
   if (subtractFibre && record.carbohydrateDefinition !== "US_TOTAL_INCLUDING_FIBRE") throw Error("Fibre would be subtracted twice or definition is unknown");
   const carbohydrate = nutrientValue(record, "carbohydrate");
   const fibre = nutrientValue(record, "fibre");
-  const polyols = nutrientValue(record, "polyols");
+  const polyols = verifiedPolyols(record);
   let available: number | null = null;
   if (record.carbohydrateDefinition === "EU_AVAILABLE" && valid(carbohydrate)) available = carbohydrate;
   if (record.carbohydrateDefinition === "EU_TOTAL_INCLUDING_POLYOLS" && valid(carbohydrate) && valid(polyols)) {
@@ -93,13 +101,16 @@ export function normalizeCarbohydrate(record: FoodRecord, subtractFibre = record
     if (fibre > carbohydrate) throw Error("Conflicting carbohydrate definition: fibre exceeds total");
     available = carbohydrate - fibre;
   }
-  // Subtract only a measured, source-backed polyol value. Unknown values are not zero.
-  const polyolsVerified = (record.polyolsSourceVerified === true && Boolean(record.polyolsEvidence?.trim())) || Boolean(record.componentValues && record.componentIds?.POLYL === 2260 && Object.hasOwn(record.componentValues, "POLYL"));
+  // The field approval checks a source-native value against its pinned reference.
+  // It cannot change the interpretation of an EU label or a US total.
+  if (record.carbohydrateDefinition === "EU_AVAILABLE" && verifiedDirectCarbohydrate) {
+    return { available, net: available };
+  }
   // EU totals containing polyols and US totals containing fibre need a verified
   // polyol amount before either available CHO or GK may be calculated.
   const requiresVerifiedPolyols = record.carbohydrateDefinition === "EU_TOTAL_INCLUDING_POLYOLS"
     || record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE";
-  if (!polyolsVerified || !valid(polyols)) {
+  if (polyols === null) {
     return { available: requiresVerifiedPolyols ? null : available, net: null };
   }
   // Fineli CHOAVL and AFCD's paired carbohydrate-without-sugar-alcohols
@@ -123,14 +134,14 @@ export function totalCarbohydrate(available: number | null, fibre: number | null
   if (!valid(available) || !valid(fibre) || !valid(polyols)) return null;
   return round(available + fibre + polyols, 6);
 }
-export function calculate(input: Calculation) {
+export function calculate(input: Calculation, verifiedAvailableRows?: ReadonlySet<number>) {
   if (!Number.isInteger(input.servings) || input.servings <= 0) throw Error("Invalid servings");
   if (!input.recipeId || !/^[a-f0-9]{64}$/.test(input.sourceHash) || !/^\d{4}-\d{2}-\d{2}$/.test(input.calculatedAt) || (input.batchId !== undefined && !/^batch-\d+$/.test(input.batchId)) || !input.scope || input.reviewerStatus !== "AUTOMATED ONLY" || input.carbohydrateOutput !== "AVAILABLE_EXCLUDING_FIBRE" || !input.ingredients.length) throw Error("Incomplete calculation provenance");
   const exactRows: Record<Nutrient, Fraction | null>[] = [];
   const exactMasses: (Fraction | null)[] = [];
   const omissionImpactUpperBoundPerServing = { kcal: 0, netCarbohydrate: 0, totalCarbohydrate: 0, protein: 0, fat: 0 };
   let omissionImpactUnbounded = false;
-  const rows = input.ingredients.map((ingredient) => {
+  const rows = input.ingredients.map((ingredient, index) => {
     const issues: string[] = [];
     const fail = (message: string) => issues.push(message);
     if (ingredient.excludedReason) {
@@ -166,11 +177,12 @@ export function calculate(input: Calculation) {
     if (grams !== null && record) {
       const weight = multiply(multiply(exactMass!, decimal(ingredient.retainedFraction!)), { n: 1n, d: 100n });
       for (const key of nutrients) if (key !== "netCarbohydrate") {
-        const nutrient = key === "carbohydrate" || key === "fibre" || key === "polyols" ? nutrientValue(record, key) : record.per100g[key];
+        const nutrient = key === "polyols" ? verifiedPolyols(record)
+          : key === "carbohydrate" || key === "fibre" ? nutrientValue(record, key) : record.per100g[key];
         if (valid(nutrient)) exact[key] = multiply(decimal(nutrient), weight);
       }
       try {
-        const carb = normalizeCarbohydrate(record);
+        const carb = normalizeCarbohydrate(record, undefined, verifiedAvailableRows?.has(index));
         const available = carb.available === null ? null : decimal(carb.available);
         exact.carbohydrate = available ? multiply(available, weight) : null;
         exact.netCarbohydrate = carb.net === null ? null : multiply(decimal(carb.net), weight);

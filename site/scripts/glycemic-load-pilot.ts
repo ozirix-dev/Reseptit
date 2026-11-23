@@ -132,6 +132,7 @@ const recipeBindings = JSON.parse(await readFile(path.join(root, "docs/nutrition
   recipes: Record<string, string | null>;
   calculationInputs: Record<string, string | null>;
   calculationEvidence?: Record<string, string | null>;
+  legacyUnboundedOmissions?: Record<string, string>;
 };
 const recipeAliases = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-load-recipe-aliases.json"), "utf8")) as {
   aliases: Record<string, { canonical: string; evidence: string }>;
@@ -214,9 +215,29 @@ for (const [recipeId, binding] of Object.entries(recipeBindings.exactRecipeText 
   }
 }
 
-const rawResults = inputs.map((recipe) => calculateGlycemicLoad(recipe, foodRecords, giRecords));
 const calculationInputHashes = Object.fromEntries(inputs.map((recipe) => [recipe.recipeId, glycemicLoadInputHash(recipe)]));
 const calculationEvidenceHashes = Object.fromEntries(inputs.map((recipe) => [recipe.recipeId, glycemicLoadEvidenceHash(recipe, foodRecords, giRecords)]));
+const rawResults = inputs.map((recipe) => {
+  const id = recipe.recipeId;
+  // Only an already approved recipe/input/evidence triple keeps its old subtotal.
+  const fingerprint = createHash("sha256").update(JSON.stringify([
+    sourceHashes[id], calculationInputHashes[id], calculationEvidenceHashes[id],
+  ])).digest("hex");
+  const result = calculateGlycemicLoad(recipe, foodRecords, giRecords);
+  const matchesCurrentApproval = recipeBindingMatches(recipeBindings.recipes[id], sourceHashes[id])
+    && recipeBindingMatches(recipeBindings.calculationInputs[id], calculationInputHashes[id])
+    && recipeBindingMatches(recipeBindings.calculationEvidence?.[id], calculationEvidenceHashes[id])
+    && !exactTextMismatches.has(id);
+  // Incomplete or stale results already fail the publication gate. Keep their
+  // audit details replayable. A proposed, otherwise publishable subtotal must
+  // use the bounded model unless it reproduces a previously approved result.
+  if (result.status === "CALCULATED" && result.omittedAvailableCarbohydratePerServingG > 0
+      && matchesCurrentApproval && recipeBindings.legacyUnboundedOmissions?.[id] !== fingerprint) {
+    return calculateGlycemicLoad(recipe, foodRecords, giRecords, { requireBoundedGi: true });
+  }
+  return result;
+});
+const inputsById = new Map(inputs.map(recipe => [recipe.recipeId, recipe]));
 const currentLegacyInputs = new Map<string, (typeof rawResults)[number]>();
 const legacyResults = rawResults.map((result) => {
   const boundHash = recipeBindings.recipes[result.recipeId];
@@ -258,7 +279,7 @@ const report = {
   additionalCarbohydrateEvidence: input.additionalCarbohydrateEvidence ?? null,
   massEvidence: input.massEvidence,
   selectionNotes: input.selectionNotes ?? {},
-  giSourcePolicy: `Published, traceable glucose-scale GI values may support a public ingredient estimate as a direct match, justified analogue, or category mean. Match quality is separate from study quality: analogues and category means force LOW confidence. A missing GI match for an individual contribution below ${MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G} g available carbohydrate per serving may be omitted only while all such recipe contributions sum to less than ${CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G} g per serving; larger known carbohydrate contributions require GI evidence. An assigned but invalid or mismatched GI record remains blocking regardless of contribution size, and unknown carbohydrate remains blocking. The cumulative value is a user-centered editorial tolerance, not a clinical precision threshold.`,
+  giSourcePolicy: `New ranges with unmatched GI require source-backed limits, a width of at most one GK unit and a stable public class. Carbohydrate coverage alone does not approve a result. Published, traceable glucose-scale GI values may support a public ingredient estimate as a direct match, justified analogue, or category mean. Match quality is separate from study quality: analogues and category means force LOW confidence. A missing GI match for an individual contribution below ${MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G} g available carbohydrate per serving may be omitted without a GK range only in previously approved, fingerprinted historical calculations, and only while all such recipe contributions sum to less than ${CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G} g per serving; larger known carbohydrate contributions require GI evidence. An assigned but invalid or mismatched GI record remains blocking regardless of contribution size, and unknown carbohydrate remains blocking. The cumulative value is a user-centered editorial tolerance, not a clinical precision threshold.`,
   recipeBindingBaseline: recipeBindings.baselineCommit,
   autoIncludedRecipeIds,
   unreviewedAutoIncludedRecipeIds,
@@ -353,6 +374,15 @@ const legacyPublicResults = results.flatMap((result) => {
       }))
     : [];
   if (result.candidateSources) sourceReferences.push(...result.candidateSources);
+  if (result.status === "CALCULATED" && result.ingredients === currentLegacyInputs.get(result.recipeId)?.ingredients) {
+    for (const row of inputsById.get(result.recipeId)?.ingredients ?? []) {
+      if (!row.unmatchedGiRange) continue;
+      sourceReferences.push({
+        title: row.name, url: row.unmatchedGiRange.sourceUrl,
+        matchKind: "CALCULATION_POLICY", confidence: "LOW", note: row.unmatchedGiRange.evidence,
+      });
+    }
+  }
   if (result.status === "CALCULATED" && result.omittedAvailableCarbohydratePerServingG > 0 && sourceReferences.length === 0) {
     sourceReferences.push({
       title: "Documented small-contribution editorial tolerance",

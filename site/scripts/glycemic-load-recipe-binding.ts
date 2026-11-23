@@ -105,6 +105,7 @@ export function glycemicLoadInputHash(input: unknown): string {
       carbohydrateRange: ingredient.availableCarbohydratePer100gRange
         ? { min: ingredient.availableCarbohydratePer100gRange.min, max: ingredient.availableCarbohydratePer100gRange.max }
         : null,
+      ...(ingredient.unmatchedGiRange !== undefined ? { unmatchedGiRange: ingredient.unmatchedGiRange } : {}),
       hasMassEvidence: Boolean(ingredient.massEvidence),
       hasGiMatchEvidence: Boolean(ingredient.giMatchEvidence),
     })),

@@ -17,7 +17,7 @@ const guide = {
     diabetesTitle: "Jos sinulla on diabetes",
     diabetes: "Katso ensin syötävä annos ja sen hiilihydraattimäärä. GK auttaa vertaamaan vaihtoehtoja. Noudata omaa hoitosuunnitelmaasi. Reseptin GK-arvosta ei voi päätellä omaa verensokerivastetta tai insuliiniannosta.",
     formatsTitle: "Miksi arvioita esitetään eri tavoin?",
-    formats: "Tuote, annoskoko ja valmistustapa vaikuttavat arvioon. Kaikille aineksille ei ole tarkasti vastaavaa GI-tietoa, mutta arvio voi silti auttaa vertaamaan annoksia.",
+    formats: "Tuote, annoskoko ja valmistustapa vaikuttavat arvioon. Hiilihydraattikattavuus kertoo, kuinka suurelle osalle annoksen imeytyvistä hiilihydraateista on sopiva GI-tieto. Jos GI puuttuu pieneltä osuudelta, arvio voi silti olla mahdollinen, kun sen vaikutus voidaan rajata lähteiden avulla. Suuri kattavuus yksin ei riitä. Jos vaikutusta ei voi rajata, uutta GK-lukua tai vaihteluväliä ei anneta.",
     examples: "Seuraavat esimerkit havainnollistavat esitystapoja. Ne eivät ole reseptien mittaustuloksia.",
     formatsList: [
       ["Likiarvo", "Arvioitu GK on noin 8 annosta kohti."],
@@ -46,7 +46,7 @@ const guide = {
     diabetesTitle: "If you have diabetes",
     diabetes: "Start with the serving you will eat and its carbohydrate amount. GL helps you compare options. Follow your own care plan. A recipe’s GL cannot tell you your blood sugar response or insulin dose.",
     formatsTitle: "Why do estimates look different?",
-    formats: "The product, serving size and preparation affect the estimate. Even when there is no exact GI match for every ingredient, the estimate can still help you compare servings.",
+    formats: "The product, serving size and preparation affect the estimate. Carbohydrate coverage is the share of a serving’s available carbohydrate with suitable GI evidence. If GI is missing for a small share, an estimate may still be possible when sources support limits for its effect. High coverage alone is insufficient. If the effect cannot be bounded, no new GL number or range is given.",
     examples: "These examples show how information can be presented. They are not measurements of recipes.",
     formatsList: [
       ["Approximate number", "Estimated GL is about 8 per serving."],
@@ -75,7 +75,7 @@ const guide = {
     diabetesTitle: "Om du har diabetes",
     diabetes: "Utgå från portionen du faktiskt äter och hur mycket kolhydrater den innehåller. GL hjälper dig att jämföra alternativ. Följ din egen vårdplan. Ett recepts GL räcker inte för att avgöra ditt blodsockersvar eller vilken insulindos du behöver.",
     formatsTitle: "Varför visas uppskattningar på olika sätt?",
-    formats: "Produkten, portionsstorleken och tillagningen påverkar uppskattningen. Det finns inte ett exakt motsvarande GI-värde för alla ingredienser. Uppskattningen kan ändå hjälpa dig att jämföra portioner.",
+    formats: "Produkten, portionsstorleken och tillagningen påverkar uppskattningen. Kolhydrattäckningen visar hur stor andel av portionens tillgängliga kolhydrater som har lämpliga GI-uppgifter. Om GI saknas för en liten andel kan en uppskattning ändå vara möjlig när källorna ger stöd för gränser för dess påverkan. Hög täckning räcker inte i sig. Om påverkan inte går att avgränsa anges inget nytt GL-värde eller intervall.",
     examples: "Det här är exempel på hur informationen kan visas. Värdena är inte mätresultat för några recept.",
     formatsList: [
       ["Ungefärligt värde", "Uppskattat GL är cirka 8 per portion."],
@@ -104,7 +104,7 @@ const guide = {
     diabetesTitle: "หากคุณเป็นเบาหวาน",
     diabetes: "เริ่มจากดูปริมาณอาหารที่จะกินและจำนวนกรัมของคาร์โบไฮเดรต ใช้ค่า GL เพื่อเปรียบเทียบตัวเลือกและทำตามแผนการดูแลของคุณ ค่า GL ของสูตรไม่สามารถบอกได้ว่าน้ำตาลในเลือดของคุณจะเปลี่ยนไปเท่าใดหรือควรใช้อินซูลินเท่าใด",
     formatsTitle: "ทำไมจึงแสดงค่าประมาณหลายแบบ",
-    formats: "ผลิตภัณฑ์ ปริมาณต่อหนึ่งที่ และวิธีปรุงมีผลต่อค่าประมาณ แม้ค่า GI ที่มีอาจไม่ตรงกับวัตถุดิบทุกอย่าง ค่าประมาณก็ยังช่วยเปรียบเทียบอาหารแต่ละที่ได้",
+    formats: "ผลิตภัณฑ์ ปริมาณต่อหนึ่งที่ และวิธีปรุงมีผลต่อค่าประมาณ ความครอบคลุมของข้อมูล GI คือสัดส่วนของคาร์โบไฮเดรตที่ย่อยและดูดซึมได้ในหนึ่งที่ซึ่งมีข้อมูล GI ที่เหมาะสม หากขาดข้อมูล GI เพียงส่วนน้อย ยังอาจประเมินได้เมื่อมีแหล่งข้อมูลรองรับขอบเขตของผลกระทบ ความครอบคลุมสูงเพียงอย่างเดียวยังไม่เพียงพอ หากกำหนดขอบเขตผลกระทบไม่ได้ จะไม่ระบุตัวเลขหรือช่วงค่า GL ใหม่",
     examples: "ข้อความต่อไปนี้เป็นเพียงตัวอย่างการแสดงข้อมูล ไม่ใช่ผลจากการวัดสูตรอาหาร",
     formatsList: [
       ["ตัวเลขโดยประมาณ", "ค่า GL ประมาณ 8 ต่อหนึ่งที่"],

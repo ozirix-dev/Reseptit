@@ -170,7 +170,32 @@ poisjättöraja säilyttää jo hyväksytyt likiarvot. Vaille lähteistettyä yl
 jäävä positiivinen poisjättö tekee pienen tai keskisuuren luokan epävarmaksi.
 Reseptissä näkyy edelleen piste ja rajaus, mutta luokkaa ei käytetä
 suodattimessa. Positiivinen lisäys ei siirrä jo suuren arvion alarajaa
-pienempään luokkaan. Poisjätetyille aineksille ei anneta yleistä GI-arvoa.
+pienempään luokkaan. Poisjätetyille aineksille ei anneta yleistä GI-arvoa. Historiallinen
+pistearvio säilyy vain samalla resepti-, laskentasyöte- ja lähdesidoksella.
+
+Uudessa ainesosalaskelmassa yksittäinen GI-arvo voi puuttua, jos
+ainesosan imeytyvä hiilihydraatti tunnetaan tai on lähteistetty arvio
+ja GI:n alaraja ja yläraja voidaan perustella kyseiselle ainekselle,
+valmistustavalle ja glukoosiasteikolle. Kerro perustelu ja lähde
+laskentasyötteessä. Laske annoksen väli kertomalla kunkin aineksen
+hiilihydraattimäärän ja GI:n rajat keskenään, jakamalla sadalla ja
+summaamalla alarajat ja ylärajat erikseen. Ylärajaa 100 tai
+kasvisten oletusarvoa ei käytetä. Tuntematon polyoli säilyy tuntemattomana.
+
+Laskenta raportoi sen vähimmäisosuuden annoksen imeytyvistä
+hiilihydraateista, jolla on sopiva GI-numero. Kun hiilihydraattimäärät
+ovat välejä, käytä sopivan GI:n saaneille aineksille hiilihydraatin
+alarajaa ja muille ylärajaa. Jos annoksen hiilihydraattikattavuutta
+ei voida perustella, osuus jää tuntemattomaksi. Kattavuus ei perustu
+ainesosien lukumäärään tai painoon eikä yksin riitä hyväksyntään.
+
+Tässä laskentatavassa enintään yhden GK-yksikön levyinen,
+samassa julkisessa GK-luokassa pysyvä väli voi edetä nykyiseen
+resepti-, syöte- ja lähde-SHA-katselmointiin. Sopiva väli
+esitetään laskennallisena arviona ilman pistelukua. Jos perusteltu
+raja puuttuu, väli on liian leveä tai ylittää luokkarajan, uutta
+numeerista arviota ei esitetä. Yhden GK-yksikön enimmäisleveys
+on toimituksellinen raja. Reseptin julkaisupäätös tehdään erikseen.
 
 Vanhan laskelman ainesosarivit verrataan nykyiseen reseptiin myös silloin,
 kun laskelmaan kirjattu poisjättö on nolla. Jos hiilihydraattia sisältävä

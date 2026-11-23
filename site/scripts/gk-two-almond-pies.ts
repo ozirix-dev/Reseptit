@@ -1,3 +1,4 @@
+import {acceptsReviewedNutritionModelBinding} from './reviewed-nutrition-model-binding';
 import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
 import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
@@ -43,7 +44,8 @@ export function buildTwoAlmondPieVariants(root: string): GkOnlyVariant[] {
     const snapshot = file.startsWith('reseptit/')
       ? recipeTextForApprovedSnapshot(file, contents.replaceAll('\r\n','\n'))
       : contents;
-    if (textHash(snapshot) !== expected) throw Error('Almond pie binding changed: ' + file);
+    const actual = textHash(snapshot);
+    if (actual !== expected && !acceptsReviewedNutritionModelBinding(file, expected, actual)) throw Error('Almond pie binding changed: ' + file);
   }
 
   const catalog: {foods: Record<string, FoodRecord>; existingGiIds: string[]} = JSON.parse(read(archive + 'source-catalog.json'));
