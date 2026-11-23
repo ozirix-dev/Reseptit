@@ -103,8 +103,13 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false,
     if (/^reseptit\/.+\.md$/i.test(file)) {
       if (file.includes("/_mallipohjat/")) return fallback();
       plan.runContent = true;
-      addNutritionChecks(plan);
-      addGlycemicChecks(plan);
+      // All ordinary FI recipes still receive the mandatory site build,
+      // route generation, publication preflight and changed-content checks.
+      // Full nutrition/GK regression suites are reserved for evidence, data
+      // and calculation-engine changes selected by their own paths below.
+      plan.runBuild = true;
+      plan.runStatic = true;
+      plan.needsNode = true;
       continue;
     }
     if (/^kaannokset\/.+\.md$/i.test(file)) {

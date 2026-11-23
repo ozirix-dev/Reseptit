@@ -36,7 +36,7 @@ const cases = [
   {
     "locale": "th",
     "path": "kaannokset/th/alkuruoat/gazpacho.md",
-    "blob": "853306ba95c59d523b2d4111438ab56d9e6530e8",
+    "blob": "d7ee3febd451002866bcee269e0c676c46ed5a48",
     "old": "เพิ่มขนมปังถ้าคุณต้องการ",
     "newPhrase": "ข้อมูลโภชนาการที่แสดงคำนวณจากสูตรพื้นฐานสำหรับ 4 ที่ซึ่งใส่ขนมปัง",
     "notePhrase": "ข้อมูลโภชนาการที่แสดงรวมขนมปังขาว 2 แผ่น (รวม 50 กรัม)"
