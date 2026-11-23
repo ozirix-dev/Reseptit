@@ -53,6 +53,22 @@ test("Finnish cabbage soup and casserole have dish-specific descriptions and ret
   }
 });
 
+test("four Finnish recipe summaries identify the dish in the generated content and HTML", async () => {
+  const cases = [
+    ["paistettu-maksa-pekonilla", ["maksaviipaleet", "kermakastikkeessa", "pekonin"]],
+    ["vhh-mustikkapiirakka", ["Mustikat", "rahkatäytteen", "Mantelijauhopohjainen"]],
+    ["rahkapiirakka-vhh", ["Mantelijauhopohjalle", "rahkasta", "kermasta"]],
+    ["vhh-runebergintortut", ["Mantelijauhosta", "kardemummalla", "vadelmilla"]],
+  ] as const;
+  for (const [id, expected] of cases) {
+    const recipe = siteContent.recipes.find(entry => entry.recipeId === id && entry.locale === "fi");
+    assert.ok(recipe, id);
+    for (const term of expected) assert.ok(recipe.description.includes(term), id);
+    const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+    assert.ok(html.includes(recipe.description), id);
+  }
+});
+
 test("new verbal estimates qualify the legacy numerical notices in all published languages", async () => {
   const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
   const checked = [
