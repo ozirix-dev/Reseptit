@@ -520,3 +520,13 @@ test("local GI/GK projection changes run calculation and nutrition regressions",
     assert.ok(plan.runGlycemic && plan.runNutrition && plan.needsNode, path);
   }
 });
+
+
+test("GK-only checks retain the nutrition inventory needed by GK coverage and tests", () => {
+  const plan = classifyPaths(["site/scripts/glycemic-load-model.ts"]);
+  assert.equal(plan.runGlycemic, true);
+  assert.equal(plan.runNutrition, false);
+  const workflow = readFileSync(new URL("../../.github/workflows/pages.yml", import.meta.url), "utf8");
+  assert.match(workflow, /name: Generate nutrition and GK outputs required by isolated TypeScript checks[\s\S]*?npm run content:sync\s+npm run audit:nutrition -- --strict\s+npm run audit:glycemic-load/);
+  assert.match(workflow, /name: Audit published nutrition evidence \(risk-based, strict\)\s+if: [^\n]*run_glycemic == 'true'/);
+});
