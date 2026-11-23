@@ -1,0 +1,152 @@
+{
+  "recipeId": "rapeat-kesakurpitsalastut",
+  "sourceHash": "8d0b8bf7c5c9fe33008cd18d5275328a55761197c00cdf7e10d3e220de76be22",
+  "calculatedAt": "2026-11-23",
+  "batchId": "batch-33304",
+  "servings": 3,
+  "scope": "Oil-free oven-baked rounds with a Parmesan topping. All edible, unpeeled zucchini rounds and all the weighed Parmesan are plated across three portions. Deliberate absence of cooking oil. Water evaporation is not a per-portion nutrient deduction.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kesäkurpitsaa, syötävää osaa kuorineen",
+      "amount": 350,
+      "unit": "g",
+      "record": {
+        "id": "fineli-389-release-20",
+        "name": "KESÄKURPITSA, ZUCCHINI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/389",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "KESÄKURPITSA, ZUCCHINI",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 2.5,
+          "FIBT": 2.0,
+          "POLYL": 0.0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 2.5,
+          "fibre": 2.0,
+          "polyols": 0.0,
+          "protein": 0.65,
+          "fat": 0.4
+        }
+      },
+      "state": "KESÄKURPITSA, ZUCCHINI",
+      "matchEvidence": "Finelin raaka kesäkurpitsa. Kannat ja päät poistetaan ennen punnitusta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä punnitaan syötävästä ainesosasta.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Viipaleet paistetaan kokonaisina. Ei suola-itketystä eikä mehun pois puristamista."
+    },
+    {
+      "item": "parmesaania palana, noin 27 % rasvaa",
+      "amount": 60,
+      "unit": "g",
+      "record": {
+        "id": "afcd-F002479-release-3",
+        "name": "Cheese, parmesan, fresh, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "Cheese, parmesan, fresh, regular fat",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Difference between AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 32,
+          "fat": 27
+        }
+      },
+      "state": "Cheese, parmesan, fresh, regular fat",
+      "matchEvidence": "AFCD:n tavallinen pala-parmesaani, raastetaan itse ennen käyttöä.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä punnitaan syötävästä ainesosasta.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko punnittu raaste jaetaan suoraan viipaleille. Pellille irronneet rapeat juustopalat nostetaan mukaan tarjoiluannoksiin."
+    },
+    {
+      "item": "hienoa jodioimatonta suolaa",
+      "amount": 1,
+      "unit": "g",
+      "record": {
+        "id": "fineli-79-release-20",
+        "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/79",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.0,
+          "FIBT": 0.0,
+          "POLYL": 0.0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 0.0,
+          "fat": 0.0
+        }
+      },
+      "state": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+      "matchEvidence": "Finelin jodioimaton vuorisuola.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä punnitaan syötävästä ainesosasta.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Suola lisätään suoraan viipaleiden päälle ennen paistoa."
+    },
+    {
+      "item": "jauhettua mustapippuria",
+      "amount": 0.5,
+      "unit": "g",
+      "record": {
+        "id": "afcd-F006618-release-3",
+        "name": "Pepper, black, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "Pepper, black, ground",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Difference between AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 38.6,
+          "fibre": 25.3,
+          "polyols": 0.0,
+          "protein": 10.4,
+          "fat": 3.3
+        }
+      },
+      "state": "Pepper, black, ground",
+      "matchEvidence": "AFCD:n jauhettu mustapippuri.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä punnitaan syötävästä ainesosasta.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Pippuri lisätään suoraan viipaleiden päälle ennen paistoa."
+    }
+  ]
+}
