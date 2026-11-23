@@ -106,6 +106,28 @@ test('treats missing metadata as an advisory signal, not an approval or a zero',
   assert.equal(r.signals.repeatedSteps.length, 0);
 });
 
+test('includes published FI recipes with YAML comments in their metadata', () => {
+  const cases = [
+    ['plain', 'published # ready for the index', 'fi # original'],
+    ['quoted', "'published' # ready", '"fi" # original'],
+    ['draft', 'draft # not ready', 'fi # original'],
+    ['translation', 'published # ready', 'en # translation'],
+    ['literal-hash', '"published # literal text"', 'fi'],
+    ['no-separator', 'published#literal', 'fi'],
+  ];
+  const report = analyze(cases.map(([id, status, language]) => ({
+    path: `reseptit/aamupalat/${id}.md`,
+    content: recipe(id, 'Kuvaus.', 'Sekoita.')
+      .replace(`title: ${id}`, 'title: "Kuvaus #1" # audit note')
+      .replace('status: published', `status: ${status}`)
+      .replace('language: fi', `language: ${language}`),
+  })));
+
+  assert.deepEqual(report.indexedRecipes.map(item => [item.recipeId, item.title]),
+    [['plain', 'Kuvaus #1'], ['quoted', 'Kuvaus #1']]);
+  assert.equal(report.counts.skipped, 4);
+});
+
 test('excludes unparseable content and foreign-language recipes', () => {
   const fi = recipe('a','Kuvaus','Sekoita.');
   const r = analyze([
