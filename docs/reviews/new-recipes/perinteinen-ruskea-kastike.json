@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perinteinen-ruskea-kastike",
+  "source_path": "reseptit/alkuruoat/perinteinen-ruskea-kastike.md",
+  "source_sha256": "31d8608dc871bcde65c99ba5dc3379fc8c5259b0e1dd5b1d5fd7f5dd0aa97398",
+  "decision": "hold",
+  "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/ruskea-kastike"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Chat 3, 22.11.2026: nykyisen mainin 489 FI-reseptin täsmäpolut ja 27 avoimen PR:n otsikot tarkistettiin; vastaavaa erillistä reseptiä ei löytynyt. Lähivertailu: PR #798 on lihapullat, ruskea kastike ja perunamuusi kokonaisena annoksena; #808 on itsenäinen kastike. Tarkka raportti: docs/reviews/new-recipes/chat3-kastikkeet-duplikaatit-2026-11-22.md. Tulos koskee tarkistettua nykytilaa; julkaisun URL-uniikkius tarkistettava uudelleen Ready-portissa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Tarkistettu: voi 35 g, vehnäjauhot 35 g, lihaliemi 500 ml, soijakastike 4 g ja mustapippuri 1 g. Testatussa K-Ruoan vertailussa käytetään 45 g voita, vehnäjauhoja, 500 ml vettä/fondia ja soijaa. Recipavon määrät ovat oma sovitus, mutta jauholla ruskistettavan 5 dl kastikkeen mittasuhteet ovat kulinaarisesti johdonmukaiset. Tuotekohtainen ravintokoostumuksen ja pakkausmerkintöjen tarkistus on erillinen nutrition-/food_safety-portti."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "K-Ruoka testaa rasva–vehnäjauho-ruskistuksen ja lämpimän lihaliemen asteittaisen lisäämisen; nämä vaiheet ovat Recipavon ohjeessa, jossa keitetään myös 5 min. Ei Recipavon omaa paistotestiä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Tietyn Puljonki Signature Lihaliemen EAN 6416796728013 valmistajan ainesosat: naudanluut, vesi, porkkana, sipuli, palsternakka, suola, yrtit ja mustapippuri; ei luetteloitu selleriä. Kikkoman Naturally Brewed: vesi, SOIJA, VEHNÄ ja suola. VOI sisältää MAITOA, jauhossa VEHNÄÄ. Resepti ilmoittaa MAITO, VEHNÄ ja SOIJA. Tämä rajattu turvallisuus-PASS koskee vain mainittuja tuotteita; vaihtotuotteiden ja fyysisten pakkausten ajantasaiset tiedot on tarkistettava. Ei ravinto- eikä julkaisuapprovalia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Neljä annosta / 25 minuuttia; K-Ruoka 4 annosta / 15–30 minuuttia. Mittasuhteiden muutos voi vaikuttaa viskositeettiin, mutta työtapa ja aika ovat sovitettavissa."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit",
+      "https://www.oscarnordic.fi/puljonki-signature/367-signature-lihaliemi-1-l.html",
+      "https://www.kikkoman.eu/food-service/products/detail/kikkoman-naturally-brewed-soy-sauce",
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit/"
+    ],
+    "image_path": "kuvat/alkuruoat/perinteinen-ruskea-kastike.webp",
+    "image_sha256": "d10b6a2136d4a992f9488cad8eade4a6d0409e1f6f24d5327e152500a03b81aa",
+    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "physical_cook_test": false
+  }
+}

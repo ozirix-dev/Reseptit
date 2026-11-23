@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perinteinen-munakastike",
+  "source_path": "reseptit/alkuruoat/perinteinen-munakastike.md",
+  "source_sha256": "7608f084d657282cd7deace77c96855542744961e8db090b8e130af9d9b5b197",
+  "decision": "hold",
+  "reviewed_by": "Chat 3 – rajattu kirjallinen aines- ja menetelmäkatselmointi; julkaisuhyväksyntä avoin",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/kananmunakastike/"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: nykyisen mainin 489 FI-reseptitiedoston täsmäpolkujen ja 27 avoimen PR:n otsikon tarkistus: ei samaa erillistä kastikereseptiä. Lähivertailu: Päähaaran kananmuna-ruoat eivät ole itsenäisiä maito–vehnäsuurusteisia kovaksi keitetyn munan kastikkeita. Raportti docs/reviews/new-recipes/chat3-kastikkeet-duplikaatit-2026-11-22.md. Päätös on nykytilaan rajattu; Ready-/merge-vaiheessa tuore URL- ja reseptitunnusten yksikäsitteisyys sekä mainin tilanne tarkistetaan uudelleen."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Marttojen testattu 4 annos: 60 g rasvaa, 0,75 dl vehnäjauhoja, 500 ml maitoa, 3 keitettyä munaa ja ruohosipulia. Recipavon 30 g voita, 30 g jauhoja, 400 ml maitoa, 120 g keitettyä munaa ja tilliä muodostavat pienemmän erillisen sovituksen. Aiempi 400 ml:n täysmaitomäärä punnitaan laskennassa 400 g:ksi. Keitetty muna 120 g kuorittuna. Valkopippuri 0,3g pidetään mukana, vaikkei sen tarkkaa polyoliarvoa ole vielä sidottu."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Martat testaa rasvan ja vehnäjauhojen kuumentamisen ilman ruskistamista, maidon vähittäisen lisäämisen, 5 minuutin haudutuksen ja keitettyjen munien sekoituksen. Recipavo käyttää samaa menetelmää ja tilliä ruohosipulin sijasta. Ei Recipavon koekeittiötestiä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kananmuna on ainesosassa nimenomaisesti kovaksi keitetty ja kuorittu; maito ja vehnä ovat suurusteessa. Kaikki kolme allergiaa nimetty. Raakaa munaa ei käytetä ja munat kuumennetaan kastikkeeseen valmiiksi kypsinä. Kuumana tarjoilu tai ylijäämien nopea jäähdytys ja alle +6 °C kylmäsäilytys lisätty FI/EN/SV/TH. Rajattu food_safety PASS. Lähteet: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/ ."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Marttojen 4 annos: valmiiksi keitetyt munat; Recipavon 4 annosta / 20 min sisältää saman lähtötilan. Jos munat keitetään itse, ohje varaa lisäaikaa. Saanto edelleen arvio."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Fineli Release20 #689 täysmaito 400g, #500 voi 30g, #110 vehnäjauhot 30g, #8513 täysin keitetty ja kuorittu kananmuna 120g, #369 tilli 15g, #30 suola 3g. Valkopippurin 0,3g ravintosisältö jätetty pois konservatiivisella massaan perustuvalla rajauksella, ei nollana: enintään 0,08g kutakin makroa/annos ja 0,68 kcal/annos; alle nutrition-model -toleranssin. Resepti 4 annosta. TäsmäinputHash 62e86f7d10d579ad254c652fb645c489ddd63449d72432b87ce8fe0c6256ea0c. Laskennalliset arvot annosta kohden netto 10,53g, kokonaisCH 10,90g, proteiini 7,89g, rasva 12,52g. Macro arithmetic reviewed independently against model formulas; not a laboratory measurement or approval of whole recipe. GK undetermined. Still HOLD.\n22.11.2026 CI-yhteensopivuus: koska FI-lähde on edelleen status:draft, tämä täysin dokumentoitu AUTOMATED ONLY -laskentatodiste on siirretty pois ainoastaan julkaistuille FI-resepteille sallitusta docs/nutrition/calculations/-hakemistosta katselmointikandidaatiksi: docs/nutrition/candidates/draft-calculations/perinteinen-munakastike.json. Neljä makroarvoa ovat edelleen ainoastaan Draft-luonnoksessa näkyvä ennakkoarvio. nutrition:pass ja virallinen nutrition_evidence eivät vielä ole myönnettyjä; paluu varsinaiseen calculations/-hakemistoon edellyttää hyväksyttyä julkaisuversiota ja täsmä-HEADin tarkistusta. Koko resepti pysyy decision:hold. Neljä ehdollista makrokenttää poistettu FI/EN/SV/TH-julkaisuluonnoksista 22.11.2026. Aiempi laskentaehdokas pysyy muuttumattomana docs/nutrition/candidates/draft-calculations/perinteinen-munakastike.json -tiedostossa. Ei uutta hyväksyntää."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit"
+    ],
+    "image_path": "kuvat/alkuruoat/perinteinen-munakastike.webp",
+    "image_sha256": "fca180045177530f88bacfaf254e2f0716de7c604ea67b777014775256a8ea97",
+    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "physical_cook_test": false
+  }
+}

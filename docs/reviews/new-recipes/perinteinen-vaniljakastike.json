@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perinteinen-vaniljakastike",
+  "source_path": "reseptit/jalkiruoat/perinteinen-vaniljakastike.md",
+  "source_sha256": "ec655927a2ae1370f6283740c1bc533e81970926f80705a875dd75653e10fe28",
+  "decision": "hold",
+  "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; ravinto- ja julkaisuhyväksyntä kesken",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/vaniljakastike/",
+      "https://www.k-ruoka.fi/reseptit/keksikorit",
+      "https://www.valio.fi/reseptit/kuohkea-sitruuna-vaniljakastike/"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: päähaaran 489 FI-reseptitiedoston täsmäpolkujen ja 27 avoimen PR:n otsikon tarkistus ei tuottanut vastaavaa erillistä kastiketta. Lähin tarkistettu resepti: Päähaaran marjakiisseli vaniljakastikkeella on kaksiosainen jälkiruoka ja sen kastikkeessa on kermaa; #808 on erillinen 450 g täysmaidolla ja 18 g maissitärkkelyksellä tehty kastike. Katselmointiraportti: docs/reviews/new-recipes/chat3-kastikkeet-duplikaatit-2026-11-22.md. Tulos on tarkistushetken arvio; julkaisuportissa tarkistetaan uusin reittien yksikäsitteisyys."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Recipavon 450 g punnittua täysmaitoa, 45 g sokeria, 18 g maissitärkkelystä, 30 g keltuaista, 8 g vaniljasokeria ja 0,3 g suolaa muodostavat kuuden pienen annoksen kastikepohjan. K-Ruoan testatussa keksikorin vaniljakastikkeessa käytetään maitoa, keltuaista, maissitärkkelystä ja sokeria, mutta myös kermavaahtoa ja eri mittasuhteita. Martat käyttää perunajauhoa; nämä määrät ovat Recipavon oma sovitus. 22.11.2026 määrä on muutettu reseptissä tarkoituksellisesti 450 ml:sta 450 punnittuun grammaan FI/EN/SV/TH; ei maitotiheyden oletettua muunnosta."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "K-Ruoan testattu vaniljakastike kuumentaa maidon, keltuaiset ja maissitärkkelyksen tasaisesti sekoittaen saostuvaksi kastikepohjaksi. Valion julkaistu vaniljakastike kuumennetaan noin 85 asteeseen, kunnes se sakenee. Recipavon jatkuva sekoitus ja lämmitys noin 82–85 °C:seen, kunnes kastike sakenee, ovat valmistusperiaatteen mukaisia; voimakasta kiehumista vältetään. Tämä ei ole Recipavossa fyysisesti testattu mittasuhde. 22.11.2026 täsmennys: pieniä paakkuja ei siivilöidä pois vaan ne vatkataan tasaisiksi. Ainesosat pysyvät kastikkeessa; tämä on toimituksellinen menetelmätarkennus, ei koekeittiömittaus."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ainesosat maito ja kananmuna yksilöity. Valmistus edellyttää mitattua 82–85 °C lämpötilaa ja saostuvaa tärkkelys-keltuaispohjaa; ruoka ei jää raa'aksi/haaleaksi. Viivytyksetön tarjoilu tai nopea jäähdytys ja alle +6 °C säilytys on ohjeistettu. Ei väitetä Recipavon laboratorio- tai koekeittiötestiä. Rajattu food_safety PASS. Lähdeviitteet: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ulkomaiset-pakastemarjat/ ."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kuusi pientä kastikeannosta / 25 min koskee lämpimänä tarjoilua: mittaus, sekoitus ja miedolla lämmöllä saostaminen mahtuvat arvioon. Kylmänä tarjoilu edellyttää lisäksi nopeaa jäähdytystä ja jääkaappiaikaa; nelikielinen ohje on täsmennetty. Säilytys enintään +6 °C. Saanto on arvio."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi. 22.11.2026 kaikki ravintoainetta sisältävä massa on tarkoitus säilyttää; siivilöinti on poistettu neljästä kieliversiosta. Varsinainen polyoli-/kuituevidenssi vaniljasokerille puuttuu edelleen."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit"
+    ],
+    "image_path": "kuvat/jalkiruoat/perinteinen-vaniljakastike.webp",
+    "image_sha256": "6508c960e4858abfd4571303f0d3c5f81499a0f72fbbfb8b7851c9d0baa67734",
+    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "physical_cook_test": false
+  }
+}

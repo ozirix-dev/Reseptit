@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "recipe_id": "puolukkakastike-jalkiruokiin",
+  "source_path": "reseptit/jalkiruoat/puolukkakastike-jalkiruokiin.md",
+  "source_sha256": "983a91374de21e707edb095ae86089f831afea33e19b42ab438c7f428bd7abaa",
+  "decision": "hold",
+  "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; ravinto- ja julkaisuhyväksyntä kesken",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/puolukkakastike",
+      "https://www.martat.fi/reseptit/marjakastike/",
+      "https://www.martat.fi/reseptit/ruotsalainen-puolukkahillo/"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: päähaaran 489 FI-reseptitiedoston täsmäpolkujen ja 27 avoimen PR:n otsikon tarkistus ei tuottanut vastaavaa erillistä kastiketta. Lähin tarkistettu resepti: Päähaaran puolukkakiisseli suurustetaan perunajauholla; #808:n puolukkakastikkeessa osa marjoista jätetään kokonaisiksi ja kuoret säilyvät eikä suurustetta ole. Katselmointiraportti: docs/reviews/new-recipes/chat3-kastikkeet-duplikaatit-2026-11-22.md. Tulos on tarkistushetken arvio; julkaisuportissa tarkistetaan uusin reittien yksikäsitteisyys."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Recipavon 250 g puolukoita, 70 ml vettä, 55 g sokeria ja 10 ml sitruunamehua muodostavat itsenäisen kuuden pienen annoksen kirpeän kastikkeen. Marttojen testattu puolukkahillo käyttää puolukkaa, vettä ja sokeria suuremmalla sokerimäärällä ja pidemmällä kypsennyksellä; Marttojen marjakastike sisältää myös marjasoseen. Tämä on jälkiruokakastike eikä säilykehillo. Laskentaversiossa sitruunamehu punnitaan 10 g ja kastiketta ei siivilöidä; kaikki marjojen kuidut jäävät tuotteeseen."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Marttojen testatussa puolukkahillossa marjat kypsennetään vedessä noin 10 minuuttia, mutta kyse on voimakkaammin sokeroidusta hillosta. Recipavo kiehauttaa pienemmän marjaerän noin 4–5 minuutissa vain pehmentääkseen marjat ja soseuttaa osittain. Lyhyt kypsennys ei muodosta hillo-säilyvyysväitettä: tarjoile lämpimänä tai jäähdytä nopeasti jääkaappiin. Kyse on itsenäisestä sovituksesta, ei Marttojen koekeittiössä testatusta kastikeversiosta. Laskennallinen kastikeversio säilyttää kaikki marjakuoret eikä sisällä erillistä siivilöintiä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kotimaiset puolukat on jo yksilöity reseptin ainesosaksi. Tarkistettava alkuperä myös pakastepakkauksesta; Suomessa pakatut ulkomaiset marjat eivät ole automaattisesti suomalaisia. Ruokavirasto edellyttää ulkomaisille pakastemarjoille 90 °C 5 min tai kiehuminen 2 min; Recipavon 4–5 min hiljainen haudutus ei saa olla niiden vaihtoehtoinen turvallisuusväite. Ohje rajattu kotimaisiin marjoihin, jäljelle jääneen tuotteen kylmäsäilytys <+6 °C; ei ilmoitettavaa suoraan lisättyä allergeenia. Rajattu ruokaturvallisuuskatselmointi PASS sovellettuna kotimaiseen marjaraaka-aineeseen. Lähdeviitteet: https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ulkomaiset-pakastemarjat/ . Täsmennys 22.11.2026: valmistusvaiheen 2 nelikielinen teksti rajattu kotimaisiin tuoreisiin tai pakastettuihin puolukoihin ja pakasteen alkuperän tarkistamiseen. Ulkomaisten pakastemarjojen erillinen turvallinen kuumennusvaatimus pysyy muistiinpanoissa; 4–5 minuutin haudutusta ei esitetä riittäväksi ulkomaisille pakastemarjoille."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kuusi pientä annosta / 20 minuuttia koskee lämpimänä tarjoilua; pesu/punnitus, 4–5 minuutin haudutus ja lyhyt soseutus sisältyvät tähän. Kylmäksi tarjoaminen vaatii lisäksi jäähdytys- ja jääkaappiajan; huomautus on päivitetty neljälle kielelle. Saanto jää toimitukselliseksi arvioksi."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Fineli Release20 #440 PUOLUKKA (250 g, kuitu 2,5 g/100 g, polyolit vahvistettu 0), #922 VESIJOHTOVESI (70 ml, 1 ml=1 g dokumentoitu dl-portiomassa), #1 SOKERI (55 g), #11557 TÄYSMEHU SITRUUNA (10 g). Kaikki marjakuoret ja kuitu säilyvät, 6 annosta. Lähdehash c50fd88ab225e21892e801f882d90277e235d357e4ef819caae872fc2ff0396a. Neljän makron laskennallinen arvio annosta kohden: nettohiilihydraatti 12,88 g, kokonaishiilihydraatti 13,92 g, proteiini 0,23 g, rasva 0,27 g. Aritmetiikka tarkistettu ainesrivi-/per100g-periaatteella kuten site/scripts/nutrition-model.ts; ei laboratorioarvo eikä tuote-eräkohtaista mittausta. Kokonaispäätös edelleen HOLD käännösten, kuvan ja julkaisun porttien vuoksi.\n22.11.2026 CI-yhteensopivuus: koska FI-lähde on edelleen status:draft, tämä täysin dokumentoitu AUTOMATED ONLY -laskentatodiste on siirretty pois ainoastaan julkaistuille FI-resepteille sallitusta docs/nutrition/calculations/-hakemistosta katselmointikandidaatiksi: docs/nutrition/candidates/draft-calculations/puolukkakastike-jalkiruokiin.json. Neljä makroarvoa ovat edelleen ainoastaan Draft-luonnoksessa näkyvä ennakkoarvio. nutrition:pass ja virallinen nutrition_evidence eivät vielä ole myönnettyjä; paluu varsinaiseen calculations/-hakemistoon edellyttää hyväksyttyä julkaisuversiota ja täsmä-HEADin tarkistusta. Koko resepti pysyy decision:hold. Neljä ehdollista makrokenttää poistettu FI/EN/SV/TH-julkaisuluonnoksista 22.11.2026. Aiempi laskentaehdokas pysyy muuttumattomana docs/nutrition/candidates/draft-calculations/puolukkakastike-jalkiruokiin.json -tiedostossa. Ei uutta hyväksyntää. Täsmennys 22.11.2026: numeeriset makrokentät puuttuvat edelleen kaikista kieliluonnoksista, ja vanhentuneet väitteet näkyvistä Fineli-arvioista on poistettu FI/EN/SV/TH-muistiinpanoista. Laskentakandidaatti säilyy ei-julkisena; julkaisu- tai laskentahyväksyntää ei ole tehty. FI source_sha256 päivitetty nykyiseen tekstiin."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit"
+    ],
+    "image_path": "kuvat/jalkiruoat/puolukkakastike-jalkiruokiin.webp",
+    "image_sha256": "b527be8119cb0c84849c45f0d2d1533433476bed0c39c66222efe407a1aaed23",
+    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "physical_cook_test": false
+  }
+}

@@ -1,0 +1,69 @@
+# Chat 3 – kastikkeiden nelikielinen alustava merkitysvertailu
+
+**Päivä:** 21.11.2026
+**Omistaja:** Chat 3
+**PR:** #808
+**Vertailtujen tiedostojen Git-revisio:** `00dfa0f73edcabf4890e38639ed5075442de197e` (muuttumaton tarkistushetken HEAD)
+
+## Menetelmä ja rajaus
+
+- Kymmenen suomenkielisen lähdereseptin ainesosat sekä niiden EN/SV/TH-vastineet tarkistettiin riveittäin: ainesosan luokka/laji, tuore/kypsä, rasva- ja maitotuotetyyppi, numeeriset määrät ja yksiköt.
+- Valmistusvaiheiden lukumäärät, numerot, aikajaksot, lämpötilat ja `source_recipe`-viitteet verrattiin kaikissa 40 kielitiedostossa. Suomi–thai-valmistusvaiheet luettiin lisäksi merkityksen tasolla erikseen.
+- **Alustavassa tarkistuksessa 10/10 reseptin aines- ja vaiheparien rakenteeseen ei jäänyt havaittua P0/P1-ristiriitaa**. Thaissa sanaa tarkoittava aika voi olla kirjoitettu numerona, vaikka FI-lähde kirjoittaa sen kirjaimin; tämä ei ole valmistusmuutos.
+- Tämä on **ChatGPT:n alustava editoriaalinen katselmointi**, ei Codexin tekemä hyväksyntä, ihmisen tekemä riippumaton laadunvarmistus eikä automaattisen auditorin todistus kaikkien kieli-ilmausten virheettömyydestä. Älä luo tästä `meta/kaannokset/codex-review-evidence.json`-rekisteriin `outcome: pass` -tietuetta ilman projektin edellyttämää erillistä katselmointia.
+
+## Tarkistusjoukko
+
+| recipe_id | EN | SV | TH | Sisällöllinen huomio |
+| --- | --- | --- | --- | --- |
+| perinteinen-ruskea-kastike | alustava OK | alustava OK | alustava OK | Lihaliemi kuumennetaan, vehnäjauhot ruskistetaan 6–8 min, kastike haudutetaan 5 min; soija + mahdollinen vehnä |
+| kermainen-tillikastike | alustava OK | alustava OK | alustava OK | Kylmä kermaviilipohja, tilli, 15 min kylmämaustuminen |
+| kantarellikastike | alustava OK | alustava OK | alustava OK | Lajin tunnistus, 20 g vehnäjauhoja, 6–8 min haudutus, maito/vehnä |
+| sinappikastike-joulukinkulle | alustava OK | alustava OK | alustava OK | Kaksi sinappia, kasvisliemi, suurustus ja 4–5 min haudutus, sinappiallergeeni |
+| kylma-piparjuurikastike | alustava OK | alustava OK | alustava OK | Tuore raastettu piparjuuri, 15 min kylmämaustuminen, crème fraîche noin 12 % |
+| perinteinen-munakastike | alustava OK | alustava OK | alustava OK | Valmiiksi kovaksi keitetty kananmuna, maito-vehnäsuurustus, 5 min haudutus |
+| kermainen-pippurikastike | alustava OK | alustava OK | alustava OK | Murskattu mustapippuri 30 sek, kerma/liemi 8–10 min, Dijon-sinappi |
+| perinteinen-valkokastike | alustava OK | alustava OK | alustava OK | Voi, vehnäjauho, täysmaito ja 4–5 min suurustus |
+| puolukkakastike-jalkiruokiin | alustava OK | alustava OK | alustava OK | Marjat kiehautetaan 4–5 min ja osa jätetään kokonaisiksi; ei maidollista kastiketta |
+| perinteinen-vaniljakastike | alustava OK | alustava OK | alustava OK | Täysmaito, maissitärkkelys, keltuainen, 82–85 °C; vältä voimakasta keittämistä |
+
+## Havaitut ja korjatut merkityspuutteet
+
+- Thain `นมสด` (yleinen tuore maito) täsmennettiin ilmaukseen `นมสดชนิดเต็มมันเนย`, joka vastaa FI:n **täysmaitoa**, kolmessa lähde–käännösparissa (munakastike, valkokastike, vaniljakastike).
+- Piparjuurikastikkeen yleinen `ranskankermaa tai crème fraîchea` yksilöitiin kaikkien kielten ainesosissa **noin 12 % rasvaa sisältäväksi crème fraîcheksi**. Tämän tarkoitus on vähentää reseptin ja ravintolaskennan koostumusepävarmuutta; ei brändilukitus.
+- Kantarellikastikkeen 20 g vehnäjauhoja ja suurustus, puolukkakastikkeen osittain kokonaiset marjat sekä kaikkien reseptien allergiariskit ovat mukana kaikissa kielissä.
+- Kolmen korvatun havainnekuvan FI/EN/SV/TH-alt-tekstit vastaavat korjattua kuvasisältöä (kuva ei todista valmistusta).
+
+## Avoimet portit
+
+1. Kielitiedostojen ja FI-lähteiden **nykyiset merkitystiivisteet** on laskettava sivuston `semanticHash`-työkalulla ja kirjattava viralliseen katselmointirekisteriin vain todellisen käännöskatselmoinnin perusteella. Tämä raportti ei täytä Codex-review-porttia.
+2. Tuote- ja ruokalajikohtainen ruokaturvallisuuden sekä allergeenitietojen loppuarvio ja kuvan sisällöllinen hyväksyntä ovat vielä kesken.
+3. Kaikkien kymmenen reseptin **ravintoarvioevidenssi** puuttuu. Numeroitu GK ei ole hyväksytty; rekisterissä on perusteltu määrittämätön tila.
+4. PR on edelleen **Draft / HOLD**, eikä lähdevertailu tai CI-PASS yksin anna Ready-/merge-/tuotantojulkaisulupaa.
+
+## Jatkotarkistus 22.11.2026 (Chat 3)
+
+- Perinteisen vaniljakastikkeen kuvatiedoissa havaittiin versionvaihdon jälkeen vanhentunut ristiriita: FI-lähde ja kuva-arvion lisäys kertoivat uuden AI-havainnekuvan korvanneen virheellisen kuvan, mutta EN/SV/TH-muistiinpanot väittivät edelleen, että vanha kuva pitää korvata.
+- Korjattiin kolmen käännöksen **vain kuvaa koskeva toimituksellinen huomautus** nykyisen korvaustilanteen mukaiseksi. FI-resepti, määrät, valmistusvaiheet, allergeenit, `image.src` ja ravintokentät pidettiin ennallaan.
+- Verrattiin kantarellikastikkeen ja puolukkakastikkeen FI/EN/SV/TH-kuvahuomautukset: niissä ei havaittu vastaavaa korjaamatonta vaihtovaatimusta.
+- Vertailu on rajattu kuvaa koskevien tekstimerkintöjen ristiriitaan, **ei** nelikielisen sisällön täydellinen hyväksyntä. AI-kuvan toimituksellinen hyväksyntä, semanttisten tiivisteiden virallinen tarkistus, kuuden muun kastikkeen ravintolaskenta sekä Repo Guardin julkaisuportit pysyvät avoimina. Kaikki 10 reseptiä edelleen Draft/HOLD.
+
+## Jatkotarkistus 22.11.2026 – piparjuurikastikkeen sitruunamehu
+
+- Kylmän piparjuurikastikkeen FI/EN/SV/TH-ainesrivin sitruunamehu on nyt **12 g punnittuna**. Tämä on nelikielinen, yhteinen lähdereseptin sisältömuutos, eikä sitä pidä tulkita 12 ml:n tiheysmuunnokseksi.
+- Thaikielisen valmistusvaiheen yleisluontoinen `น้ำมะนาว` (tavallisesti lime) korjattiin muotoon `น้ำมะนาวเหลือง` (sitruuna), joka vastaa täsmälleen thaikielistä ainesosariviä ja FI-lähteen sitruunamehua. Muutos täsmensi ainesosan tunnistusta, ei muuttanut annosta, valmistusmenetelmää eikä reseptin lämpötilaa.
+- Tämä on rajattu Chat 3:n semanttinen korjaus, **ei** lopullinen riippumaton kielikatselmointi, uusi `semanticHash`-hyväksyntä tai `meta/kaannokset/codex-review-evidence.json`-merkintä. Kieliversiot ja koko PR pysyvät Draft/HOLD.
+
+## Jatkotarkistus 22.11.2026 – vaniljakastikkeen paakkujen käsittely
+
+FI/EN/SV/TH-valmistusvaiheiden 3 teksteistä poistettiin paakkujen valinnainen siivilöinti ja korvattiin se pienien paakkujen vatkaamisella tasaisiksi. Tämä säilyttää ainesosat laskennallista ravintosisältöä varten. Vain menetelmäteksti muuttui; annosmäärä, ainesosat ja lämpötila 82–85 °C pysyivät ennallaan. FI-lähde SHA-256 `ec655927a2ae1370f6283740c1bc533e81970926f80705a875dd75653e10fe28`. Tämä merkintä on Chat 3:n rajattu merkitysvertailu; se **ei ole virallinen Codexin tai riippumattoman tarkastajan PASS**. Kaikki neljä kieliversiota pysyvät Draft/HOLD.
+
+## Chat 3 – lisäkielikatselmointi 22.11.2026 (uusi main-synkronointi)
+
+**Tarkistus-HEAD ennen muutosta:** `174248f87e403b14564b1c207911edbafaa1f0d6`. Verrattiin kaikkien 10 kastikkeen FI-lähteiden valmistusvaiheiden työjärjestys, kuumennusajat ja kriittiset ainesosanimet EN/SV/TH-kieliin. Kolme toimituksellista korjausta:
+
+- `kermainen-tillikastike` TH vaihe 2: `น้ำมะนาว` → `น้ำมะนาวเหลือง` (sitruuna, ei monitulkintainen lime). Vastaava thaikielinen ainesosarivi oli jo sitruuna.
+- `puolukkakastike-jalkiruokiin` TH vaihe 3: `น้ำมะนาว` → `น้ำมะนาวเหลือง`; noudattaa FI:n sitruunamehua ja TH:n ainesosariviä.
+- `sinappikastike-joulukinkulle` EN vaihe 2: `Bring to a simmer` → `Bring to a boil, then simmer`; FI:n `Kuumenna kiehuvaksi ja hauduta 4–5 minuuttia` on nyt merkitykseltään täsmätty EN:ssä. SV ja TH kuvasivat jo kiehautuksen.
+
+Näiden muutosten jälkeen 10 reseptin FI/EN/SV/TH määrät, annokset, olennaiset valmistusvaiheajat ja kuumennusohjeet ovat **Chat 3:n rajatun merkitysvertailun** perusteella yhdenmukaiset. Tässä ei väitetä ulkopuolisen riippumattoman hyväksyjän, Codexin tai projektin virallisen `semanticHash`-rekisterin tulosta. Kaikki FI ja EN/SV/TH-reseptit säilyvät `status: draft`; PR #808 pysyy Draft/HOLD-tilassa. Julkaisuhyväksyntä ja Ready/merge kuuluvat erilliseen Repo Guard -porttiin.

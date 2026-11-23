@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kylma-piparjuurikastike",
+  "source_path": "reseptit/alkuruoat/kylma-piparjuurikastike.md",
+  "source_sha256": "9a577bfdf6e610f3dfee98ff802de6841a2b3b9e23cc30544cea65345ed03260",
+  "decision": "hold",
+  "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; kokonaisjulkaisun hyväksyntä puuttuu",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.valio.fi/reseptit/piparjuurikastike/",
+      "https://www.valio.fi/reseptit/graavattu-piparjuurilohi/"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: nykyisen mainin 489 FI-reseptitiedoston täsmäpolkujen ja 27 avoimen PR:n otsikon tarkistus: ei samaa erillistä kastikereseptiä. Lähivertailu: Päähaaran paahtopaistileipä käyttää smetana–majoneesi–Dijon-piparjuuriseosta osana voileipää; #808 on erillinen kylmä 12 % crème fraîche -kastike. Raportti docs/reviews/new-recipes/chat3-kastikkeet-duplikaatit-2026-11-22.md. Päätös on nykytilaan rajattu; Ready-/merge-vaiheessa tuore URL- ja reseptitunnusten yksikäsitteisyys sekä mainin tilanne tarkistetaan uudelleen."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valion testattu kastike käyttää 180 g 12% crème fraîchea ja piparjuuritahnaa. Toinen Valion kastike käyttää 180 g 12% crème fraîchea ja tuoretta raastettua piparjuurta. Recipavon 200 g crème fraîchea, 20 g tuoretta raastetta, 12 g punnittua sitruunamehua, 5 g sokeria, 2 g suolaa ja 8 g ruohosipulia ovat voimakkaampi, itsenäinen sovitus. Makua säädetään varoen; rasvapitoisuus on rajattu ainesosaan. 22.11.2026 muutettu FI/EN/SV/TH reseptiin 12 g punnittuna, ei oletettu 12 ml = 12 g."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Molemmat Valion vertailut tukevat kylmää crème fraîche-pohjaista sekoitusmenetelmää. Tuore piparjuuri kuoritaan/raastetaan ja ruohosipuli pestään; valmis kastike sekoitetaan ja annetaan maustua 15 min jääkaapissa. Lisämaustuminen on Recipavon oma turvallinen työvaihe, ei väite Valion keittiötestistä tällä suhteella."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ainesosina crème fraîche (MAITO), tuore piparjuuri ja pestävä ruohosipuli. Kylmästä maitopohjaisesta kastikkeesta ei tehdä turvallisuutta heikentävää fermentointi- tai säilyvyysväitettä. Pesu, kuoriminen, puhtaat työvälineet, nopea tarjoilu, kylmässä alle +6 °C säilytys on tarkistettu. Rajattu food_safety PASS, pakkaustiedot eivät muuta yksilöityä maitoallergeenia. Lähteet: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/ ."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Neljän pienen lisukeannoksen noin 20 min perustuu noin 5 min valmisteluun ja 15 min maustumiseen jääkaapissa. Valion sekoitusreseptin aktiivinen aika on 5 min; ero on erikseen mainittu. Tarkka vahvuus vaihtelee piparjuuren mukaan."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit"
+    ],
+    "image_path": "kuvat/alkuruoat/kylma-piparjuurikastike.webp",
+    "image_sha256": "843ae30ce36f68b36fcf82a07305cafcf62fb0656e2eac5d3fb860f6d6298909",
+    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "physical_cook_test": false
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kermainen-pippurikastike",
+  "source_path": "reseptit/alkuruoat/kermainen-pippurikastike.md",
+  "source_sha256": "fac68e5834180fa322feabd5704840472a9639f9d1539d016dcacd4f0136a50f",
+  "decision": "hold",
+  "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; kokonaisjulkaisun hyväksyntä puuttuu",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/naudan-pihvi-ja-pippurikastike",
+      "https://www.valio.fi/reseptit/konjakki-pippurikastike-pihveille/",
+      "https://www.meillakotona.fi/reseptit/pippuripihvi"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: päähaaran 489 FI-reseptitiedoston täsmäpolut ja 27 avoimen PR:n otsikot tarkistettu, ei samaa itsenäistä kastikereseptiä. Lähivertailu: Päähaaran kermaiset kana-/lihakastikkeet ovat pääruokia, joihin liha kuuluu ainesosana; #808 on erillinen salottisipuli-lihaliemi-kerma-Dijon-pippurikastike. Tarkka raportti: docs/reviews/new-recipes/chat3-kastikkeet-duplikaatit-2026-11-22.md. Lopullinen reittien uniikkius ja tuore main tarkistetaan vielä julkaisuportissa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Maku/Meillä kotona -pippuripihvin julkaistu kastike sisältää salottisipulin, voin, mustapippurin, sinapin, lihaliemen ja kerman neljälle. Recipavon 50 g salottisipulia, 15 g voita, 5 g pippuria, 8 g Dijon-sinappia, 150 ml lientä ja 250 ml kermaa ovat itsenäinen muunnelma. Myös Valion pippurikastike tukee liemi-kerma-sipulipohjaa, mutta käyttää muita tuotteita."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Julkaistussa Maku-ohjeessa kuullotetaan salottisipuli voissa, lisätään pippuri/sinappi/lihaliemi ja haudutetaan; kerma lisätään lopuksi. Recipavossa kerma tulee mukaan ennen 8–10 minuutin haudutusta. Molemmat perustuvat samaan vähitellen sakeutuvaan kerma-liemikastikkeeseen, eivät identtiseen paistamiseen. Ei väitettä Recipavon koekeittiötestistä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Tuotekohtainen tarkistus: Puljonki Signature Lihaliemi EAN 6416796728013 (naudanluut, vesi, porkkana, sipuli, palsternakka, suola, yrtit, mustapippuri; ei lueteltua selleriä) ja Maille Dijon Original EAN 8711200375684 (SINAPPI, SULFIITIT: kaliumdisulfiitti). Kerma ja voi sisältävät MAITOA. Kastikkeen tunnetut raaka-aineallergeenit ovat MAITO ja SINAPPI, lisäksi käytetyssä sinapissa SULFIITIT. Lopullisen kastikkeen sulfiittipitoisuutta ei ole mitattu eikä EU:n >10 mg/kg -ilmoitusrajaa oletettu alittuvaksi. Etiketin eräkohtainen tarkistus ja muut tuotevaihdot vaativat uudelleenarvioinnin. Rajattu PASS vain näillä yksilöidyillä tuotteilla; ei ravinto- tai julkaisuhyväksyntää."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Neljä annosta / 25 min on perusteltu pilkkomisen, 3 min kuullotuksen, 30 s maustelämmityksen sekä 8–10 min haudutuksen pohjalta. Maku-ohjeen koko pihviaterian 35 min ei todista juuri tämän kastikkeen aikaa; lopullinen viskositeetti riippuu kerman ja liemen tuotteista."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit",
+      "https://www.oscarnordic.fi/puljonki-signature/367-signature-lihaliemi-1-l.html",
+      "https://www.k-ruoka.fi/kauppa/tuote/maille-dijon-original-sinappi-1kg-8711200375684",
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit/"
+    ],
+    "image_path": "kuvat/alkuruoat/kermainen-pippurikastike.webp",
+    "image_sha256": "7530d5d848f8e0f09179f7af146da693e9021ca922b1372e6063915780d426ee",
+    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "physical_cook_test": false
+  }
+}

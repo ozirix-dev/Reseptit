@@ -1,0 +1,201 @@
+{
+  "recipeId": "perinteinen-valkokastike",
+  "sourceHash": "019aa958cb6b055fae45c24cd47827e84fb3de2207439fa0b71b0310b68b7b64",
+  "calculatedAt": "2026-11-21",
+  "servings": 6,
+  "scope": "Six servings of traditional white milk sauce. 500g weighed whole milk, 35g butter, 35g wheat flour, 3g salt, 0.4g white pepper and 0.2g nutmeg. No ingredient solids discarded; water evaporation not treated as nutrient loss. Tiny spices bounded as source-limited omissions, not zero. Editorial nutrition estimate.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "täysmaitoa",
+      "amount": 500,
+      "unit": "g",
+      "state": "raw/as listed",
+      "matchEvidence": "Fineli #689 whole milk per edible 100g, weighed 500 grams; no density estimate.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Quantity is weighed in edible grams, no parts removed.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Heated white sauce retains all ingredient macros, water evaporation does not remove carbohydrates/protein/fat.",
+      "record": {
+        "id": "fineli-689-release-20",
+        "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/689",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 3.5
+        }
+      }
+    },
+    {
+      "item": "voita",
+      "amount": 35,
+      "unit": "g",
+      "state": "raw/as listed",
+      "matchEvidence": "Fineli #500 butter, eaten entirely in milk sauce.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Quantity is weighed in edible grams, no parts removed.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Heated white sauce retains all ingredient macros, water evaporation does not remove carbohydrates/protein/fat.",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.19,
+          "fat": 81.3
+        }
+      }
+    },
+    {
+      "item": "vehnäjauhoja",
+      "amount": 35,
+      "unit": "g",
+      "state": "raw/as listed",
+      "matchEvidence": "Fineli #110 refined semi-coarse wheat flour; incorporated into cooked white sauce.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Quantity is weighed in edible grams, no parts removed.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Heated white sauce retains all ingredient macros, water evaporation does not remove carbohydrates/protein/fat.",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 73.998,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 3,
+      "unit": "g",
+      "state": "IND",
+      "matchEvidence": "Fineli #30 iodized table salt used as nearest measured salt reference.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Quantity is weighed in edible grams, no parts removed.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Heated white sauce retains all ingredient macros, water evaporation does not remove carbohydrates/protein/fat.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      }
+    },
+    {
+      "item": "valkopippuria",
+      "amount": 0.4,
+      "unit": "g",
+      "state": "ground dry spice as added",
+      "matchEvidence": "White pepper is added as 0.4g; individual Fineli polyol data not yet source-pinned.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed spice is edible and completely incorporated.",
+      "retainedFraction": 1,
+      "retentionEvidence": "No spice is discarded after being added.",
+      "excludedReason": "Nutrient contribution bounded by tiny 0.4g/0.2g dry-spice mass, not assumed zero.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0.6,
+        "netCarbohydrate": 0.07,
+        "totalCarbohydrate": 0.07,
+        "protein": 0.07,
+        "fat": 0.07
+      },
+      "omissionImpactEvidence": "Absolute mass-conservation upper bound: a 0.4g edible spice cannot contribute more than 0.0667 g of any one macronutrient per 6 servings; conservative rounded upper bound and maximal 9 kcal/g applied. This is not a claim of zero nutrients. Reference spice identity: white pepper Fineli #11178 or labelled ground nutmeg, but no unverified polyol value invented."
+    },
+    {
+      "item": "jauhettua muskottipähkinää",
+      "amount": 0.2,
+      "unit": "g",
+      "state": "ground dry spice as added",
+      "matchEvidence": "Ground nutmeg is added as 0.2g; exact Fineli polyol data not yet source-pinned.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed spice is edible and completely incorporated.",
+      "retainedFraction": 1,
+      "retentionEvidence": "No spice is discarded after being added.",
+      "excludedReason": "Nutrient contribution bounded by tiny 0.4g/0.2g dry-spice mass, not assumed zero.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0.3,
+        "netCarbohydrate": 0.04,
+        "totalCarbohydrate": 0.04,
+        "protein": 0.04,
+        "fat": 0.04
+      },
+      "omissionImpactEvidence": "Absolute mass-conservation upper bound: a 0.2g edible spice cannot contribute more than 0.0333 g of any one macronutrient per 6 servings; conservative rounded upper bound and maximal 9 kcal/g applied. This is not a claim of zero nutrients. Reference spice identity: white pepper Fineli #11178 or labelled ground nutmeg, but no unverified polyol value invented."
+    }
+  ]
+}
