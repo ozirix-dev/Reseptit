@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/savolainen-muikkukukko.md
 translation_of: savolainen-muikkukukko
-status: draft
+status: published
 servings: 10
 time_total_min: 315
 difficulty: "advanced"

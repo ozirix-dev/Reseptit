@@ -5,6 +5,8 @@ url_slug: savolainen-muikkukukko
 category: paaruoka
 language: fi
 status: published
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 servings: 10
 time_total_min: 315
 difficulty: Vaativa
