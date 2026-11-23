@@ -38,7 +38,7 @@ ingredients:
     item: sokeria munakerrokseen
   - amount: 100
     unit: ml
-    item: tuoretta siivilöityä pandanmehua (8–10 pandanlehden uute)
+    item: tuoretta siivilöityä pandanmehua (10 pandanlehden uute)
   - amount: 5
     unit: rkl
     item: vehnäjauhoa kastikekerrokseen
