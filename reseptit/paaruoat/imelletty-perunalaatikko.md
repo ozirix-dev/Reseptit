@@ -55,13 +55,13 @@ Perinteinen joulupöydän laatikko, jossa perunan tärkkelys imeltyy hitaasti l�
 ## Valmistus
 
 1. Keitä kuoritut perunat suolattomassa vedessä pehmeiksi. Ota 180 ml keitinvettä talteen ja soseuta perunat kuumina.
-2. Jäähdytä sose 55–70 °C:seen. Lisää keitinvesi ja puolet vehnäjauhoista; sekoita tasaiseksi. Älä lisää jauhoja yli 75 °C:n massaan.
-3. Peitä kattila ja pidä massa noin 60 °C:n uunissa 3–4 tuntia. Lisää loppu jauho 30 minuutin kuluttua; sekoita muutaman kerran ja tarkkaile massan lämpötilaa.
+2. Jäähdytä sose ja mittaa sen lämpötila puhtaalla ruokalämpömittarilla: massan tulee olla 55–70 °C. Lisää keitinvesi ja puolet vehnäjauhoista; sekoita tasaiseksi. Älä lisää jauhoja yli 75 °C:n massaan.
+3. Peitä kattila ja aseta se noin 60 °C:seen säädettyyn uuniin 3–4 tunniksi. Uunin asetus ei ole sama kuin massan lämpötila: tarkista ruokalämpömittarilla, että sose pysyy noin 55–70 °C:ssa koko imeltymisen ajan eikä nouse yli 75 °C:n. Lisää loput jauhot 30 minuutin kuluttua ja sekoita muutaman kerran.
 4. Lämmitä maito ja sekoita se imeltyneeseen soseeseen. Lisää voi ja suola sekä halutessasi siirappi. Älä maista vehnäjauhoa sisältävää massaa ennen paistamista. Massan tulee olla paksuhkoa velliä.
 5. Jaa seos voideltuihin vuokiin enintään puolilleen, sillä laatikko kuohuu. Paista 150 °C:ssa noin 2 tuntia, kunnes pinta on kullanruskea ja massa hyytynyt.
 
 ## Muistiinpanot
 
-- Ainekset sisältävät mahdollisia allergeeneja. Tarkista tuoteselosteet. Ei gluteeniton-väitettä ilman erillistä tarkistusta.
+- Sisältää **vehnää ja maitoa** (vehnäjauhot, täysmaito ja voi). Tarkista tuotteiden pakkausmerkinnät. Ei gluteeniton-väitettä.
 - Resepti on toimituksellinen luonnos: ei Recipavon koekeittiötestiä, hyväksyttyä ravinto-/GK-laskelmaa eikä kuvaa.
 - Valmistuksen vertailulähde (ohjetta ei kopioitu): https://www.martat.fi/reseptit/imelletty-perunalaatikko/
