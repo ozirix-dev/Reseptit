@@ -19,7 +19,16 @@ export function BlogArticle() {
  <p className="eyebrow">{article.category}</p><h1>{article.title}</h1><p className="blog-lead">{article.description}</p>
  <p className="blog-meta"><time dateTime={article.datePublished}>{new Intl.DateTimeFormat("fi-FI").format(new Date(article.datePublished+"T12:00:00Z"))}</time> · {article.author}</p>
  <figure><img src={imageSrc(article.image)} alt={article.alt} width="1600" height="900"/><figcaption>Havainnollistava kuvitus</figcaption></figure>
- {article.sections.map(s=><section key={s.heading}><h2>{s.heading}</h2>{s.text.map(t=><p key={t}>{t}</p>)}{s.points?.length ? <ul>{s.points.map(point=><li key={point}>{point}</li>)}</ul> : null}</section>)}
+ {article.sections.map(section => (
+   <section key={section.heading}>
+     <h2>{section.heading}</h2>
+     {section.text.map(text => <p key={text}>{text}</p>)}
+     {section.points?.length ? <ul>{section.points.map(point => <li key={point}>{point}</li>)}</ul> : null}
+     {section.furtherReading && (
+       <p>Lisälukemista <a href={section.furtherReading.url}>{section.furtherReading.label}</a></p>
+     )}
+   </section>
+ ))}
  {article.slug==="glykeeminen-indeksi-ja-kuorma"&&<p><Link to="/glykeeminen-kuorma/">Lue tarkka GK-menetelmä ja lähderajaukset</Link></p>}
  <section className="blog-sources"><h2>Lähteet ja lisätietoa</h2><ul>{article.sources.map(s=><li key={s.url}><a href={s.url} {...(s.url.startsWith("https:")?{target:"_blank",rel:"noopener noreferrer"}:{})}>{s.label}</a></li>)}</ul></section>
  {article.related.length ? <aside className="blog-related" aria-label="Aiheeseen liittyvät reseptit ja oppaat"><h2>Katso myös</h2><ul>{article.related.map(item=><li key={item.path}><Link to={item.path}>{item.title}</Link></li>)}</ul></aside> : null}
