@@ -51,6 +51,18 @@ test('reports repeated lead and long instructions without changing source texts'
   assert.deepEqual(inputs.map(x => x.content), original);
 });
 
+test('groups FI difficulty labels without regard to capitalization', () => {
+  const difficulties = ['helppo', 'Helppo', 'keskitaso', 'Keskitaso', 'vaativa', ''];
+  const sources = difficulties.map((difficulty, index) => ({
+    path: `reseptit/aamupalat/difficulty-${index}.md`,
+    content: recipe(`difficulty-${index}`, 'Kuvaus.', 'Sekoita.')
+      .replace('difficulty: helppo', difficulty ? `difficulty: ${difficulty}` : ''),
+  }));
+  const report = analyze(sources);
+
+  assert.deepEqual(report.byDifficulty, {helppo: 2, keskitaso: 2, vaativa: 1, '(puuttuu)': 1});
+});
+
 test('includes intro text found only in Kuvaus, without fake duplicate', () => {
   const intro = 'Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan perinteinen ateria.';
   const descriptionOnly = (id) => recipe(id, intro, duplicateStep)

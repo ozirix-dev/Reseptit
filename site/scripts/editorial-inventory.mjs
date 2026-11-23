@@ -82,7 +82,7 @@ export function analyze(sources, quarantine = new Set()) {
     const validTime = !duplicateTime && parsedTime !== null && Number.isSafeInteger(parsedTime) && parsedTime > 0;
     const missingTimeValue = !duplicateTime && (timeRaw === '' || timeRaw.toLowerCase() === 'null');
     const time = validTime ? parsedTime : null;
-    const difficulty = value(parsed.yaml, 'difficulty') || '(puuttuu)';
+    const difficulty = value(parsed.yaml, 'difficulty').trim().toLocaleLowerCase('fi') || '(puuttuu)';
     const title = value(parsed.yaml, 'title');
     const evidence = { recipeId, title, path: source.path, sourceSha256: sha(source.content) };
     indexedRecipes.push(evidence);
