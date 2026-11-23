@@ -77,10 +77,9 @@ export function analyze(sources, quarantine = new Set()) {
     const timeLines = parsed.yaml.split(/\r?\n/).filter(line => line.startsWith('time_total_min:'));
     const duplicateTime = timeLines.length > 1;
     const timeRaw = timeLines.map(line => line.slice('time_total_min:'.length).trim()).join(' | ');
-    // The audit runs before dependencies are installed. Recognize YAML comments
-    // on plain time values without treating a hash inside a quoted value as a comment.
-    const timeValue = timeRaw.replace(/^(?:(\d+|null|~)[ \t]+)?#.*$/i, '$1')
-      .replace(/^(['"])(.*)\1$/, '$2');
+    // Accept comments on plain values. Quoted YAML scalars are strings,
+    // which the recipe schema rejects for total time.
+    const timeValue = timeRaw.replace(/^(?:(\d+|null|~)[ \t]+)?#.*$/i, '$1');
     const parsedTime = /^\d+$/.test(timeValue) ? Number(timeValue) : null;
     const validTime = !duplicateTime && parsedTime !== null && Number.isSafeInteger(parsedTime) && parsedTime > 0;
     const missingTimeValue = !duplicateTime && /^(?:null|~)?$/i.test(timeValue);

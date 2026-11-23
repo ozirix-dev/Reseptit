@@ -236,6 +236,17 @@ test('classifies YAML comments on total time without accepting malformed values'
   assert.deepEqual(report.signals.invalidTime.map(item => item.rawValue), ['30#arvio', '"30 # arvio"']);
 });
 
+test('reports quoted YAML scalars as invalid total times', () => {
+  const values = ['"30"', "'30' # arvio", '"null"', "'~'", '""'];
+  const report = analyze(values.map((time, index) => ({
+    path: `reseptit/aamupalat/quoted-${index}.md`,
+    content: recipe(`quoted-${index}`, 'Kuvaus.', 'Sekoita.').replace('time_total_min: 30', `time_total_min: ${time}`),
+  })));
+
+  assert.deepEqual(report.byTime, {'(virheellinen)': values.length});
+  assert.deepEqual(report.signals.invalidTime.map(item => item.rawValue), values);
+});
+
 test('flags duplicate total-time YAML keys, even when values agree', () => {
   const sources = [
     { path: 'reseptit/aamupalat/same.md', content:
