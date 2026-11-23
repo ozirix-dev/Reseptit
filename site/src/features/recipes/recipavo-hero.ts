@@ -54,6 +54,11 @@ export const recipavoHeroCopy: Record<RecipeLocale, RecipavoHeroCopy> = {
   },
 };
 
+export function recipavoHomeTitle(locale: RecipeLocale): string {
+  const copy = recipavoHeroCopy[locale];
+  return siteTarget.production ? copy.title : copy.tagline;
+}
+
 /**
  * Opt-in at build time for a non-public staging build only.
  * Absence of the flag MUST leave the existing Reseptit UI unchanged.

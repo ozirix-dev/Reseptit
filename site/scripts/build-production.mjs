@@ -22,6 +22,17 @@ export function buildEnvironment(env, imageRoot) {
   for (const name of secretNames) delete child[name];
   return child;
 }
+export function runProductionNpmTasks(npmExecPath, options) {
+  for (const args of [['run', 'build'], ['run', 'audit:nutrition', '--', '--strict']]) {
+    const result = spawnSync(process.execPath, [npmExecPath, ...args], { ...options, stdio: 'inherit' });
+    if (result.error || result.signal || result.status === null) {
+      throw new Error('Production npm task did not complete: ' + args[1]);
+    }
+    if (result.status !== 0) return result.status;
+  }
+  return 0;
+}
+
 export function productionBuild(env = process.env) {
   const site = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
   const repo = path.dirname(site);
@@ -73,10 +84,11 @@ export function productionBuild(env = process.env) {
       throw new Error('Tracked recipe image overlay verification failed; the original R2 archive was not altered.');
     }
     console.log(`Verified ${restored.files} production image inputs (mode=${mode}).`);
-    // The build itself receives only the verified root, never the reader secret.
-    const result = spawnSync(process.execPath, [env.npm_execpath, 'run', 'build'], { cwd: site, env: buildEnvironment(env, restored.imageRoot), stdio: 'inherit' });
-    if (result.error || result.signal || result.status === null) throw new Error('Production build did not complete.');
-    return result.status;
+    // Production tasks receive the verified root without the image reader credentials.
+    return runProductionNpmTasks(env.npm_execpath, {
+      cwd: site,
+      env: buildEnvironment(env, restored.imageRoot),
+    });
   } finally {
     if (temporary && existsSync(temporary)) {
       const resolved = realpathSync(temporary);
