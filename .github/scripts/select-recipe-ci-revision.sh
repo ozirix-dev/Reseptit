@@ -45,5 +45,6 @@ fi
 
 [[ "$(git rev-parse HEAD)" == "$tested_sha" ]] || fail 'Checkout differs from the selected test commit'
 printf 'pr_base=%s\ntested_sha=%s\n' "$pr_base" "$tested_sha" >> "$GITHUB_OUTPUT"
-printf 'Event commit: %s\nTested commit: %s\nPR head: %s\nPR base: %s\n' \
-  "$EVENT_SHA" "$tested_sha" "${PR_HEAD:-}" "$pr_base" >> "$GITHUB_STEP_SUMMARY"
+tested_tree="$(git rev-parse 'HEAD^{tree}')"
+printf 'Event commit: %s\nTested commit: %s\nTested tree: %s\nPR head: %s\nPR base: %s\n' \
+  "$EVENT_SHA" "$tested_sha" "$tested_tree" "${PR_HEAD:-}" "$pr_base" >> "$GITHUB_STEP_SUMMARY"

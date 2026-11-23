@@ -90,6 +90,7 @@ function fixture(t, { conflict = false, workflowChanged = false } = {}) {
     checkedOut: () => git(workspace, "rev-parse", "HEAD"),
     commitInfo: () => git(workspace, "show", "-s", "--format=%P %T", "HEAD"),
     result: () => readFileSync(output, "utf8"),
+    report: () => readFileSync(summary, "utf8"),
   };
 }
 
@@ -107,6 +108,7 @@ test("rebuilds the test merge against current main without changing the PR head"
   assert.equal(r.status, 0, r.stderr);
   assert.notEqual(f.checkedOut(), f.eventMerge);
   assert.equal(f.commitInfo(), [f.nextBase, f.head, f.freshTree].join(" "));
+  assert.ok(f.report().split("\n").includes("Tested tree: " + f.freshTree));
   assert.equal(f.result(), "pr_base=" + f.nextBase + "\ntested_sha=" + f.checkedOut() + "\n");
 });
 
