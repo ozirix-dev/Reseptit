@@ -35,6 +35,24 @@ const brandedHome = siteTarget.production || process.env.VITE_RECIPAVO_HERO_PREV
 const indexIntro = (locale: keyof typeof recipavoHeroCopy) =>
   brandedHome ? recipavoHeroCopy[locale].intro : recipeUi[locale].intro;
 
+test("Finnish cabbage soup and casserole have dish-specific descriptions and retain their nutrition basis", async () => {
+  const cases = [
+    ["jauheliha-kaalikeitto-vhh", "Tomaattimurska antaa lihaliemelle täyteläisyyttä."],
+    ["vhh-kaalilaatikko", "Tähän uuniruokaan ei lisätä riisiä."],
+  ] as const;
+  for (const [id, description] of cases) {
+    const recipe = siteContent.recipes.find(entry => entry.recipeId === id && entry.locale === "fi");
+    assert.ok(recipe, id);
+    assert.ok(recipe.description.includes(description), id);
+    assert.doesNotMatch(recipe.description, /syötäviä massoja/, id);
+    assert.match(recipe.notesHtml, /Kaikki nesteet, rasvat ja mausteet jäävät ruokaan/, id);
+
+    const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+    assert.ok(html.includes(description), id);
+    assert.ok(html.includes("Kaikki nesteet, rasvat ja mausteet jäävät ruokaan."), id);
+  }
+});
+
 test("new verbal estimates qualify the legacy numerical notices in all published languages", async () => {
   const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
   const checked = [
