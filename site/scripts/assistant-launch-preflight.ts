@@ -3,6 +3,7 @@
  * Never uses model providers, secrets, Cloudflare APIs or live prompts.
  * A file of claimed review flags cannot authorize deployment by itself.
  */
+import { execFileSync } from "node:child_process";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -87,11 +88,23 @@ export function assistantLaunchPreflight() {
   return output;
 }
 
-export function readinessMarkdown(data: ReturnType<typeof assistantLaunchPreflight>) {
+export function verifyReadinessRevision(root: string, expectedSha: string | undefined): string {
+  if (expectedSha === undefined) return "";
+  if (!/^[a-f0-9]{40}$/.test(expectedSha)) throw new Error("Invalid A4 audit GITHUB_SHA");
+  const head = execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim();
+  if (head !== expectedSha) throw new Error("A4 audit GITHUB_SHA differs from checkout HEAD");
+  const changes = execFileSync("git", ["diff", "--name-only", "HEAD", "--"],
+    { cwd: root, encoding: "utf8" });
+  if (changes.trim()) throw new Error("A4 audit checkout has tracked changes");
+  return head;
+}
+
+export function readinessMarkdown(data: ReturnType<typeof assistantLaunchPreflight>, testedSha = "") {
   const lines = [
     "# Recipavo Keittiöapuri A4 – käyttöönoton HOLD-auditointi",
     "", "Read-only. Ei mallikutsuja, hyväksyttyä mallia, maksua tai julkaisulupaa.",
     "", "Tila: " + data.readiness,
+    "Tarkistettu Git-revisio: " + (testedSha || "ei varmennettu"),
     "Kielikatselmoinnit: " + data.languageReview.pending + "/80 PENDING",
     "Offline-budjettimallin oletusraja: " + data.offlineBudgetMath.defaultMonthlyAdditionalUsd + " USD/UTC-kk",
     "Tuotannon atominen hard cap: NOT VERIFIED",
@@ -108,11 +121,12 @@ export function readinessMarkdown(data: ReturnType<typeof assistantLaunchPreflig
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const root = path.resolve(fileURLToPath(new URL("../..", import.meta.url)));
   const dir = path.join(root, "tmp/assistant-launch-preflight");
+  const testedSha = verifyReadinessRevision(root, process.env.GITHUB_SHA);
   const data = assistantLaunchPreflight();
   await mkdir(dir, {recursive: true});
   await writeFile(path.join(dir, "current.json"),
-    JSON.stringify({...data, testedSha: process.env.GITHUB_SHA ?? ""}, null, 2) + "\n");
-  await writeFile(path.join(dir, "current.md"), readinessMarkdown(data));
+    JSON.stringify({...data, testedSha}, null, 2) + "\n");
+  await writeFile(path.join(dir, "current.md"), readinessMarkdown(data, testedSha));
   console.log(JSON.stringify({readiness: data.readiness, pending: data.languageReview.pending,
     blockers: data.blockers.length, providerCalls: data.providerCalls}));
 }
