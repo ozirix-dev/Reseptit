@@ -121,10 +121,11 @@ export function verifyNutritionEvidence(
   try {
     const scope = partialApproval ? parseNutritionFieldScope(partialApproval.scope) : undefined;
     const scopeMatches = scope?.success && scope.data.evidenceSha256 === nutritionCalculationFingerprint(evidence);
-    const verifiedAvailableRows = errors.length === 0 && scopeMatches && scope.data.fields.includes("carbs_net_per_serving_g")
-      ? partialApproval?.verifiedAvailableRows : undefined;
+    const fieldApproval = errors.length === 0 && scopeMatches ? {
+      verifiedAvailableRows: scope.data.fields.includes("carbs_net_per_serving_g") ? partialApproval?.verifiedAvailableRows : undefined,
+    } : undefined;
     calculated = isRecoveryEvidence(evidence) ? calculateRecovery(evidence) : isScopedPolyolEvidence(evidence)
-      ? calculateScopedPolyolC(evidence) : calculate(evidence, verifiedAvailableRows);
+      ? calculateScopedPolyolC(evidence) : calculate(evidence, fieldApproval);
     if (partialApproval && errors.length === 0 && "omissionWithinTolerance" in calculated) {
       if (!scopeMatches) {
         errors.push("Partial nutrition approval is invalid or does not match the calculation evidence");

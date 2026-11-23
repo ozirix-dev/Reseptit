@@ -134,7 +134,7 @@ export function totalCarbohydrate(available: number | null, fibre: number | null
   if (!valid(available) || !valid(fibre) || !valid(polyols)) return null;
   return round(available + fibre + polyols, 6);
 }
-export function calculate(input: Calculation, verifiedAvailableRows?: ReadonlySet<number>) {
+export function calculate(input: Calculation, fieldApproval?: { verifiedAvailableRows?: ReadonlySet<number> }) {
   if (!Number.isInteger(input.servings) || input.servings <= 0) throw Error("Invalid servings");
   if (!input.recipeId || !/^[a-f0-9]{64}$/.test(input.sourceHash) || !/^\d{4}-\d{2}-\d{2}$/.test(input.calculatedAt) || (input.batchId !== undefined && !/^batch-\d+$/.test(input.batchId)) || !input.scope || input.reviewerStatus !== "AUTOMATED ONLY" || input.carbohydrateOutput !== "AVAILABLE_EXCLUDING_FIBRE" || !input.ingredients.length) throw Error("Incomplete calculation provenance");
   const exactRows: Record<Nutrient, Fraction | null>[] = [];
@@ -177,12 +177,14 @@ export function calculate(input: Calculation, verifiedAvailableRows?: ReadonlySe
     if (grams !== null && record) {
       const weight = multiply(multiply(exactMass!, decimal(ingredient.retainedFraction!)), { n: 1n, d: 100n });
       for (const key of nutrients) if (key !== "netCarbohydrate") {
-        const nutrient = key === "polyols" ? verifiedPolyols(record)
-          : key === "carbohydrate" || key === "fibre" ? nutrientValue(record, key) : record.per100g[key];
+        // Historical audit rows retain their reported values. Field approval
+        // uses only source-verified polyols, including when reconstructing total CHO.
+        const nutrient = key === "polyols" && fieldApproval ? verifiedPolyols(record)
+          : key === "carbohydrate" || key === "fibre" || key === "polyols" ? nutrientValue(record, key) : record.per100g[key];
         if (valid(nutrient)) exact[key] = multiply(decimal(nutrient), weight);
       }
       try {
-        const carb = normalizeCarbohydrate(record, undefined, verifiedAvailableRows?.has(index));
+        const carb = normalizeCarbohydrate(record, undefined, fieldApproval?.verifiedAvailableRows?.has(index));
         const available = carb.available === null ? null : decimal(carb.available);
         exact.carbohydrate = available ? multiply(available, weight) : null;
         exact.netCarbohydrate = carb.net === null ? null : multiply(decimal(carb.net), weight);
