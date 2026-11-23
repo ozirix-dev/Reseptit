@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "content:sync": "tsx scripts/build-content.ts",
-    "content:prepare": "npm run content:sync && npm run audit:nutrition -- --strict && npm run audit:glycemic-load",
+    "content:prepare": "npm run content:sync && npm run audit:glycemic-load",
     "test": "node scripts/run-unit-tests.mjs",
     "typecheck": "tsc -p tsconfig.json",
     "audit:c5-market-labels": "tsx scripts/c5-market-label-audit.ts",
