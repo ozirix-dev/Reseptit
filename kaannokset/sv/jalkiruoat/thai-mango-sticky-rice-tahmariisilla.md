@@ -61,7 +61,7 @@ Det ångkokta klibbiga riset får suga upp en söt kokosblandning och serveras m
 3. Värm risets 180 g kokosmjölk, 60 g socker och 2 g salt precis tills sockret löser sig. Häll hela den varma blandningen över det nyångade, varma riset. Blanda försiktigt, täck över och låt stå i cirka 20 minuter. Vänd runt riset försiktigt och låt det vila övertäckt i ytterligare 15–20 minuter tills ingen lös vätska återstår.
 4. Rör ihop 5 g rismjöl och 20 g kallt vatten till en slät redning. Lägg redningen i en kastrull med 100 g kokosmjölk och 1 g salt. Koka upp under omrörning och fortsätt tillaga tills mjölet är tillagat och såsen har tjocknat jämnt.
 5. Tvätta och skala den mogna mangon, ta bort kärnorna och väg sammanlagt 500 g ätbart fruktkött. Skär frukten i tunna skivor med en ren kniv.
-6. Fördela allt ris, all sås och all mango jämnt i fyra portioner. Lägg riset och mangon bredvid varandra för en traditionell servering, eller forma en liten riskulle och lägg samma mangoskivor i en solfjäder för restauranguppläggning. Tillsätt såsen och servera snart efter tillagningen.
+6. Fördela allt ris, all sås och all mango jämnt i fyra portioner. Lägg riset och mangon bredvid varandra för en traditionell servering, eller forma riset till en liten hög och lägg samma mangoskivor i en solfjäder för restauranguppläggning. Tillsätt såsen och servera snart efter tillagningen.
 
 ## Anteckningar
 
