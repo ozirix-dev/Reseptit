@@ -132,6 +132,22 @@ test('treats missing metadata as an advisory signal, not an approval or a zero',
   assert.equal(r.signals.repeatedSteps.length, 0);
 });
 
+test('accepts trailing horizontal whitespace on frontmatter delimiters', () => {
+  const withPaddedDelimiters = id => recipe(id, 'Kuvaus.', 'Sekoita.')
+    .replace(/^---$/gm, '--- \t');
+  const sources = [
+    { path: 'reseptit/aamupalat/lf.md', content: withPaddedDelimiters('lf') },
+    { path: 'reseptit/aamupalat/crlf.md', content: withPaddedDelimiters('crlf').replaceAll('\n', '\r\n') },
+    { path: 'reseptit/aamupalat/not-a-delimiter.md', content: recipe('invalid', 'Kuvaus.', 'Sekoita.')
+      .replace(/\n---\n/, '\n--- text\n') },
+  ];
+  const report = analyze(sources);
+
+  assert.deepEqual(report.indexedRecipes.map(item => item.recipeId), ['crlf', 'lf']);
+  assert.equal(report.counts.skipped, 1);
+  assert.equal(report.signals.missingPreparation.length, 0);
+});
+
 test('includes published FI recipes with YAML comments in their metadata', () => {
   const cases = [
     ['plain', 'published # ready for the index', 'fi # original'],
