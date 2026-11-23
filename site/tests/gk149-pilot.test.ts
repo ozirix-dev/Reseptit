@@ -53,6 +53,32 @@ test('native availableCHO is independently verified; wrong field, stale source, 
  const af=comps.find(c=>c.kind==='AFCD_WITHOUT_SUGAR_ALCOHOLS')!;verifyComposition(root,af);assert.throws(()=>verifyComposition(root,{...af,nativeField:'available_carbohydrate_with_sugar_alcohols_g_per_100g'}),/native carbohydrate/);assert.throws(()=>verifyComposition(root,{...af,availablePer100g:999}),/native carbohydrate/);assert.throws(()=>verifyComposition(root,{...af,nativeRowSha256:'0'.repeat(64)}),/native carbohydrate/);
  assert.ok(comps.every(c=>!('polyolsSourceVerified' in c)));assert.ok(comps.every(c=>c.polyols.includes('UNKNOWN_OR_UNUSED')));
 });
+test("ZERO-02: a rounded 0 g/serving label supplies only a carbohydrate ceiling", () => {
+ const label = comps.find(source => source.id === "dijon-cap");
+ assert.ok(label);
+ assert.equal(label.kind, "LABEL_ROUNDING_CAP");
+ assert.match(label.nativeField, /label0g total CHO\/5g/);
+ assert.throws(() => verifyComposition(root, {...label, availablePer100g: 0}), /unverified label rounding cap/);
+
+ const recipe = cases.find(candidate => candidate.recipeId === "kermainen-kanasienipannu");
+ assert.ok(recipe);
+ const mustard = recipe.candidateIngredients.find(ingredient => ingredient.compositionId === label.id);
+ assert.ok(mustard);
+ const result = evaluate(recipe, comps, gis);
+ const contribution = result.contributions.find(item => item.name === mustard.name);
+ assert.ok(contribution);
+ assert.deepEqual([contribution.choMin, contribution.choMax], [0, 0.375]);
+ assert.deepEqual([contribution.gkMin, contribution.gkMax], [null, null]);
+ assert.ok(result.omittedCho >= contribution.choMax);
+
+ const pointRecipe = {...recipe, candidateIngredients: recipe.candidateIngredients.map(ingredient =>
+  ingredient === mustard ? {...ingredient, carbohydrateUse: "AVAILABLE_POINT" as const} : ingredient
+ )};
+ const point = evaluate(pointRecipe, comps, gis);
+ assert.equal(point.numericProposal, false);
+ assert.equal(point.point, null);
+ assert.ok(point.blockers.includes("CAP_IS_NOT_EXACT_AVAILABLE_CHO: " + mustard.name));
+});
 test('source, exact recipe and input changes invalidate their distinct bindings',()=>{
  const c=structuredClone(cases[0]);verifyCase(root,c);c.candidateIngredients[0].grams+=1;assert.throws(()=>verifyCase(root,c),/input hash/);
  const stale=structuredClone(cases[0]);stale.recipeSha256.fi='0'.repeat(64);assert.throws(()=>verifyCase(root,seal(stale)),/recipe changed/);
