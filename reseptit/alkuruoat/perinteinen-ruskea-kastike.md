@@ -1,0 +1,66 @@
+---
+title: "Perinteinen ruskea kastike"
+recipe_id: perinteinen-ruskea-kastike
+url_slug: perinteinen-ruskea-kastike
+category: alkuruoka
+language: fi
+status: draft
+servings: 4
+time_total_min: 25
+difficulty: "helppo"
+main_ingredient:
+  - "voi"
+cooking_method:
+  - "kattila"
+tags:
+  - "kastike"
+  - "suomalainen"
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: draft
+  sv: draft
+  th: draft
+image:
+  src: alkuruoat/perinteinen-ruskea-kastike.webp
+  alt: "Ruskeaa kiiltävää kastiketta valkoisessa kastikekannussa, taustalla lihapullia ja perunamuusia"
+  width: 960
+  height: 640
+ingredients:
+  - amount: 35
+    unit: "g"
+    item: "voita"
+  - amount: 35
+    unit: "g"
+    item: "vehnäjauhoja"
+  - amount: 500
+    unit: "ml"
+    item: "Puljonki Signature Lihalientä, käyttövalmista (EAN 6416796728013)"
+  - amount: 4
+    unit: "g"
+    item: "Kikkoman Naturally Brewed -soijakastiketta (soija, vehnä)"
+  - amount: 1
+    unit: "g"
+    item: "mustapippuria"
+---
+
+# Perinteinen ruskea kastike
+
+Voissa ruskistettu vehnäjauho ja lihaliemi tekevät täyteläisen kastikkeen lihapullille ja perunamuusille.
+
+## Valmistus
+
+1. Kuumenna lihaliemi erillisessä kattilassa.
+2. Sulata voi paistokasarissa ja lisää vehnäjauhot. Sekoita keskilämmöllä 6–8 minuuttia, kunnes seos on pähkinänruskeaa mutta ei palanutta.
+3. Lisää lämmin liemi vähitellen koko ajan vatkaten. Anna kastikkeen kiehua hiljalleen 5 minuuttia, kunnes se on sileää ja sakenee.
+4. Mausta soijakastikkeella ja mustapippurilla. Tarkista suola vasta lopuksi, sillä liemen suolapitoisuus vaihtelee.
+
+## Muistiinpanot
+
+- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn tuottama havainnekuva, joka on mukana tässä haarassa ja vaatii toimituksellisen tarkistuksen.
+- Vertailulähde (resepti laadittu itsenäisesti): https://www.k-ruoka.fi/reseptit/ruskea-kastike
+- Sisältää **maitoa, vehnää ja soijaa**. Soijakastike voi sisältää myös vehnää; lihaliemi voi sisältää esimerkiksi selleriä. Tarkista valittujen tuotteiden etiketit.
+- Tarjoa kastike kuumana heti. Jos valmistat sen etukäteen, jäähdytä nopeasti matalassa astiassa, säilytä jääkaapissa alle +6 °C ja kuumenna ennen tarjoilua uudelleen kauttaaltaan kuumaksi. Tarkista lihaliemen ja soijakastikkeen pakkausmerkinnät myös sellerin, vehnän ja soijan varalta.
+- Täsmätuotteiden allergeenitarkistus: Puljonki Signature Lihaliemi (EAN 6416796728013; naudanluut, vesi, porkkana, sipuli, palsternakka, suola, yrtit, pippuri) ja Kikkoman Naturally Brewed (vesi, soija, vehnä, suola). Kastike sisältää **maitoa, vehnää ja soijaa**. Selleriä ei mainita nimetyn liemen ainesosaluettelossa; korvaava tuote voi sisältää sitä. Tarkista aina käytettävän pakkauksen merkinnät.

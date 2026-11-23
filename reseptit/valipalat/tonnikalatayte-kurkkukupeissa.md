@@ -58,7 +58,7 @@ Punnitse raaka-aineet ainesluettelon mukaan ennen valmistusta.
 ## Valmistus
 
 1. Valuta tonnikala siivilässä ja punnitse kala ilman säilykelientä. Pese kurkku, varsiselleri ja tilli.
-2. Leikkaa kurkusta 12 noin 2–3 cm paksua viipaletta. Koverra viipaleiden keskustaa teelusikalla niin, että jokaiseen jää ehjä pohja ja reunat. Punnitse valmiit kupit ilman koverrettua keskustaa. Tarvitset yhteensä noin 300 g valmiita kuppeja. Kuivaa kupit kevyesti talouspaperilla.
+2. Leikkaa kurkusta 12 noin 2–3 cm paksua viipaletta. Koverra viipaleiden keskustaa teelusikalla niin, että jokaiseen jää ehjä pohja ja reunat. Punnitse kuppien pohjat ja reunat yhdessä vasta kovertamisen jälkeen. Siirrä koverrettu keskusta sivuun. Tarvitset yhteensä noin 300 g valmiita kuppeja. Kuivaa kupit kevyesti talouspaperilla.
 3. Hienonna varsiselleri ja tilli. Jätä hieman tilliä pinnalle. Murustele tonnikala haarukalla ja sekoita joukkoon majoneesi, selleri, sitruunamehu ja suurin osa tillistä.
 4. Pidä täyte peitettynä jääkaapissa tarjoiluun saakka. Jaa se kurkkukuppeihin juuri ennen tarjoilua ja viimeistele lopulla tillillä. Tarjoa kolme kuppia annosta kohti.
 

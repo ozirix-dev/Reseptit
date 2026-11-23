@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "recipe_id": "sinappikastike-joulukinkulle",
+  "source_path": "reseptit/alkuruoat/sinappikastike-joulukinkulle.md",
+  "source_sha256": "2aa093e1d67227c59b9497fa4592d93b906c11901bd1af9bd0b27d8620b56354",
+  "decision": "hold",
+  "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; kokonaisjulkaisun hyväksyntä puuttuu",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/kastike-kinkulle-ilman-paistolienta",
+      "https://www.martat.fi/reseptit/kinkun-kastike/"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: nykyisen mainin 489 FI-reseptitiedoston täsmäpolkujen ja 27 avoimen PR:n otsikon tarkistus: ei samaa erillistä kastikereseptiä. Lähivertailu: Päähaaran hunaja-sinappikana-kaalilla on kanaa sisältävä pääruoka; tämä on joulukinkulle tehty kasvisliemi–kahden sinapin kastike. Raportti docs/reviews/new-recipes/chat3-kastikkeet-duplikaatit-2026-11-22.md. Päätös on nykytilaan rajattu; Ready-/merge-vaiheessa tuore URL- ja reseptitunnusten yksikäsitteisyys sekä mainin tilanne tarkistetaan uudelleen."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "K-Ruoan testattu kinkunkastike käyttää kermaa, sinappia, maustettua lientä ja suurustetta; Marttojen testattu kinkunkastike vehnäjauhoa, kermaa, sinappia ja kinkun paistolientä. Recipavon 200 ml 15% kermaa, 150 ml kasvislientä, 50 g sinappeja, 15 g voita, 12 g vehnäjauhoja sekä hunaja ja pippuri ovat oma sovitus. Kasvisliemi ei ole sama kuin paistoliemi; tuotteiden koostumus tarkistetaan erikseen."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Voi-vehnäjauhosuurusteen kypsennys, kasvisliemen ja kerman asteittainen lisäys sekä 4–5 minuutin haudutus ovat testatun jauhosuurustustekniikan mukaisia. K-Ruoan paistolientä vailla oleva kastike käyttää eri suurustetta. Sinappi lisätään loppuvaiheessa; tämä yhdistelmä ei ole suoraan kummankaan alkuperäinen testattu versio."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Täsmätuotteet: Puljonki Signature Kasvisliemi EAN 7613287431745 (ei ilmoitettu selleriä; sisältää mm. lipstikkaa), Turun Sinappia Mieto EAN 6411600954510 (SINAPPI) ja Maille Dijon Kokojyväsinappi EAN 3036810207589 (SINAPPI, valkoviiniperäiset SULFIITIT). Lisäksi MAITO ja VEHNÄ reseptin kermasta/voista ja vehnäjauhoista. Sulfiittien osalta valitun raaka-aineen ainesosatieto vahvistettu; kastikeannoksen todellista pitoisuutta / EU:n 10 mg/kg ilmoitusrajaa ei ole mitattu eikä arvattu. Riskimerkintä säilytetään. Tämä PASS koskee vain nimettyä koostumusta; tarkista todellinen tuote-erän etiketti, ja muille tuotteille uusi tarkistus. Ei valmis ravintoarvio eikä koko julkaisun hyväksyntä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kuusi pientä kastikeannosta / 20 min on arvio. Noin 350 ml nesteen ja mausteiden kuumennus, 4–5 min haudutus sekä esivalmistelu mahtuvat 20 minuuttiin. K-Ruoka tekee erikokoisen kastike-erän 5–15 min ja Martat hauduttaa noin 5+2 min. Saanto arvioitava."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit",
+      "https://www.oscarnordic.fi/puljonki-signature/386-1571-signature-kasvisliemi-1-l.html",
+      "https://www.s-kaupat.fi/tuote/turun-sinappia-mieto-sinappi-275-g/6411600954510",
+      "https://www.unileverfoodsolutions.fi/tuotteet/maille-dijon-kokojyvae-sinappi-8-x-1-kg-34-FI-1203999.html",
+      "https://www.s-kaupat.fi/tuote/maille-dijon-kokojyva-sinappi-210-g/3036810207589",
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit/"
+    ],
+    "image_path": "kuvat/alkuruoat/sinappikastike-joulukinkulle.webp",
+    "image_sha256": "b7f1990471cf1493aa72bd98cc9cad94d3f305668d257c3f4bb680f88b442a2a",
+    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "physical_cook_test": false
+  }
+}

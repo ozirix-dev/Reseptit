@@ -1,0 +1,261 @@
+{
+  "recipeId": "perinteinen-munakastike",
+  "sourceHash": "62e86f7d10d579ad254c652fb645c489ddd63449d72432b87ce8fe0c6256ea0c",
+  "calculatedAt": "2026-11-21",
+  "servings": 4,
+  "scope": "Four servings of egg-and-milk white sauce. 400g weighed whole milk, 30g butter, 30g wheat flour, 120g peeled fully hard-boiled eggs, 15g fresh dill, 3g salt, 0.3g white pepper with conservative omission bound. All edible components retained. Editorial calculated nutrition, not a lab measurement.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "täysmaitoa",
+      "amount": 400,
+      "unit": "g",
+      "state": "raw/as listed",
+      "matchEvidence": "Fineli #689 whole milk, weighed at 400g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient weight given as fully edible grams, peeled or cleaned where applicable.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All solids and nutrient-bearing sauce components are retained; heating water evaporation does not remove macronutrients.",
+      "record": {
+        "id": "fineli-689-release-20",
+        "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/689",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 3.5
+        }
+      }
+    },
+    {
+      "item": "voita",
+      "amount": 30,
+      "unit": "g",
+      "state": "raw/as listed",
+      "matchEvidence": "Fineli #500 butter in the sauce, fully consumed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient weight given as fully edible grams, peeled or cleaned where applicable.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All solids and nutrient-bearing sauce components are retained; heating water evaporation does not remove macronutrients.",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.19,
+          "fat": 81.3
+        }
+      }
+    },
+    {
+      "item": "vehnäjauhoja",
+      "amount": 30,
+      "unit": "g",
+      "state": "raw/as listed",
+      "matchEvidence": "Fineli #110 wheat flour cooked as white roux, fully consumed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient weight given as fully edible grams, peeled or cleaned where applicable.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All solids and nutrient-bearing sauce components are retained; heating water evaporation does not remove macronutrients.",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 73.998,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      }
+    },
+    {
+      "item": "kuorittuja kovaksi keitettyjä kananmunia",
+      "amount": 120,
+      "unit": "g",
+      "state": "hard-boiled, peeled whole chicken egg",
+      "matchEvidence": "Fineli #8513 hard-boiled, peeled egg, exactly matching recipe's edible state.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient weight given as fully edible grams, peeled or cleaned where applicable.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All solids and nutrient-bearing sauce components are retained; heating water evaporation does not remove macronutrients.",
+      "record": {
+        "id": "fineli-8513-release-20",
+        "name": "KANANMUNA, KEITETTY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/8513",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "hard-boiled, peeled whole chicken egg",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      }
+    },
+    {
+      "item": "tuoretta tilliä",
+      "amount": 15,
+      "unit": "g",
+      "state": "fresh dill",
+      "matchEvidence": "Fineli #369 fresh dill leaves, washed and weighed edible.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient weight given as fully edible grams, peeled or cleaned where applicable.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All solids and nutrient-bearing sauce components are retained; heating water evaporation does not remove macronutrients.",
+      "record": {
+        "id": "fineli-369-release-20",
+        "name": "TILLI, TUORE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/369",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh dill",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.9,
+          "FIBT": 2.8,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.9,
+          "fibre": 2.8,
+          "polyols": 0,
+          "protein": 3.69,
+          "fat": 0.8
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 3,
+      "unit": "g",
+      "state": "IND",
+      "matchEvidence": "Fineli #30 iodized table salt, 3g, standard generic product.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient weight given as fully edible grams, peeled or cleaned where applicable.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All solids and nutrient-bearing sauce components are retained; heating water evaporation does not remove macronutrients.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      }
+    },
+    {
+      "item": "valkopippuria",
+      "amount": 0.3,
+      "unit": "g",
+      "state": "ground white pepper",
+      "matchEvidence": "0.3g white pepper as seasoning; polyol composition not source-pinned. Fineli #11178 identifies the spice but nutrient components not substituted without evidence.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Full 0.3g seasoning incorporated in the final sauce.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Spice not discarded after addition.",
+      "excludedReason": "Mass-bounded tiny spice omitted from numeric macro sums, not assumed zero.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0.68,
+        "netCarbohydrate": 0.08,
+        "totalCarbohydrate": 0.08,
+        "protein": 0.08,
+        "fat": 0.08
+      },
+      "omissionImpactEvidence": "Absolute worst case 0.3g edible material divided into four portions gives 0.075g/serving maximum of any single macronutrient, conservatively rounded up to 0.08g. At most 9kcal/g gives 0.675kcal/serving, rounded up to 0.68kcal. True contents not presumed zero."
+    }
+  ]
+}

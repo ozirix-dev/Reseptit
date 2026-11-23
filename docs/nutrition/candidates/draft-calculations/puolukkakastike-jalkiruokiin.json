@@ -1,0 +1,153 @@
+{
+  "recipeId": "puolukkakastike-jalkiruokiin",
+  "sourceHash": "c50fd88ab225e21892e801f882d90277e235d357e4ef819caae872fc2ff0396a",
+  "calculatedAt": "2026-11-21",
+  "servings": 6,
+  "scope": "Six small portions of cooked lingonberry dessert sauce, using 250g edible unsweetened lingonberries, 70ml tap water, 55g sugar and 10g undiluted lemon juice. Unstrained with all berries and fibre retained. Water evaporation does not remove carbohydrate, protein or fat. Edible weight estimates, no physical laboratory assay.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kotimaisia puolukoita, tuoreita tai pakastettuja",
+      "amount": 250,
+      "unit": "g",
+      "state": "raw or dry before cooking",
+      "matchEvidence": "Fineli #440 generic unsweetened Finnish lingonberry, raw/frozen; berry solids remain in finished sauce. No fruit variety substitute.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Measured edible part of ingredient, no peel or berry solids discarded.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Unstrained cooked berry sauce; all macro-bearing solids and dissolved sugar retained. Evaporated water is not counted as nutrient loss.",
+      "record": {
+        "id": "fineli-440-release-20",
+        "name": "PUOLUKKA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/440",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "raw or dry before cooking",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 8.858,
+          "fibre": 2.5,
+          "polyols": 0,
+          "protein": 0.531,
+          "fat": 0.657
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
+      }
+    },
+    {
+      "item": "vettä",
+      "amount": 70,
+      "unit": "ml",
+      "state": "as listed",
+      "matchEvidence": "Finnish tap water Fineli #922; Fineli portion_mass_g DL = 100 g provides 1 g/ml conversion for measured water.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Fineli Release20 #922 measured water: 1 dl has 100 g mass, equivalent to 1 g/ml for this ingredient.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Measured edible part of ingredient, no peel or berry solids discarded.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Unstrained cooked berry sauce; all macro-bearing solids and dissolved sugar retained. Evaporated water is not counted as nutrient loss.",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
+      }
+    },
+    {
+      "item": "sokeria",
+      "amount": 55,
+      "unit": "g",
+      "state": "raw/as listed",
+      "matchEvidence": "Plain sugar Fineli #1; all added sugar stays in the sauce.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Measured edible part of ingredient, no peel or berry solids discarded.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Unstrained cooked berry sauce; all macro-bearing solids and dissolved sugar retained. Evaporated water is not counted as nutrient loss.",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 99.9,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "sitruunamehua",
+      "amount": 10,
+      "unit": "g",
+      "state": "fresh lemon juice",
+      "matchEvidence": "Fineli #11557 undiluted lemon juice weighed at 10 grams, no millilitre density estimation.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Measured edible part of ingredient, no peel or berry solids discarded.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Unstrained cooked berry sauce; all macro-bearing solids and dissolved sugar retained. Evaporated water is not counted as nutrient loss.",
+      "record": {
+        "id": "fineli-11557-release-20",
+        "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11557",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh lemon juice",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.6,
+          "FIBT": 0.1,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "fibre": 0.1,
+          "polyols": 0,
+          "protein": 0.31,
+          "fat": 0
+        }
+      }
+    }
+  ]
+}

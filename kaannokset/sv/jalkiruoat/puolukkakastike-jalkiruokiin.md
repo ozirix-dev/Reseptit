@@ -1,0 +1,62 @@
+---
+title: "Finsk lingonsås till efterrätter"
+recipe_id: puolukkakastike-jalkiruokiin
+url_slug: puolukkakastike-jalkiruokiin-sv
+category: jalkiruoka
+language: sv
+source_language: fi
+source_recipe: reseptit/jalkiruoat/puolukkakastike-jalkiruokiin.md
+translation_of: puolukkakastike-jalkiruokiin
+status: draft
+servings: 6
+time_total_min: 20
+difficulty: "enkel"
+main_ingredient:
+  - "puolukka"
+cooking_method:
+  - "kattila"
+tags:
+  - "sås"
+  - "finsk"
+image:
+  src: jalkiruoat/puolukkakastike-jalkiruokiin.webp
+  alt: "Djupröd lingonsås i en klar glasskål med några hela lingon; AI-bild"
+  width: 960
+  height: 640
+ingredients:
+  - amount: 250
+    unit: "g"
+    item: "finska lingon, färska eller frysta"
+  - amount: 70
+    unit: "ml"
+    item: "vatten"
+  - amount: 55
+    unit: "g"
+    item: "socker"
+  - amount: 10
+    unit: "g"
+    item: "citronsaft"
+---
+
+# Finsk lingonsås till efterrätter
+
+En syrlig bärsås till glass, cheesecake eller ugnsdesserter.
+
+## Tillagning
+
+1. Lägg lingon, vatten och socker i en kastrull. Använd rena, fina bär.
+2. Koka upp lingonen med finländskt ursprung och sjud i 4–5 minuter tills de mjuknar. Även frysta finländska lingon kan användas; kontrollera ursprungslandet på förpackningen.
+3. Mixa kort så att några lingon förblir hela. Sila inte; låt bärskal och fibrer stanna i såsen. Rör ner citronsaften.
+4. Servera varm, eller kyl snabbt och förvara i kylskåp fram till kall servering.
+
+## Anteckningar
+
+- Detta är ett redaktionellt utkast. Inga numeriska näringsvärden har godkänts för publicering eller visas; glykemisk belastning är obestämd. Den AI-genererade bilden inväntar slutligt godkännande.
+- Preparation reference: https://www.k-ruoka.fi/reseptit/puolukkakastike
+
+- Den tidigare felaktiga illustrationsbilden har ersatts. Den nya AI-bilden inväntar fortfarande redaktionellt godkännande.
+- Marttas provlagade bärsås värmer sockerlag före bärpurén; K-Ruoas lingonsås kokas inte. Recipavos kokta version med några hela bär är en egen anpassning utan provlagning av någon av källorna. https://www.martat.fi/reseptit/marjakastike/
+- De angivna ingredienserna innehåller ingen avsiktligt tillsatt mjölk, ägg, vete eller nötter. Kontrollera märkningen för möjliga spår; inget påstående om glutenfrihet har godkänts.
+- Den angivna totaltiden gäller varm servering. För kall servering behövs extra tid för avsvalning och kylning.
+- Kontrollera att lingonen verkligen har finländskt ursprung, även om de är frysta. Importerade frysta bär kräver separat upphettning enligt Livsmedelsverket i Finland: minst 90 °C i fem minuter eller kokning i två minuter. Receptet är för finländska bär; 4–5 minuters svag sjudning räcker inte som bevis för behandling av importerade frysta bär. Servera varmt eller kyl snabbt och förvara under +6 °C.
+- Denna vägda version silas inte; alla bärdelar och fibrer ingår. Citronsaften vägs till 10 g i stället för att anta massan för 10 ml.

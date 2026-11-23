@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perinteinen-valkokastike",
+  "source_path": "reseptit/alkuruoat/perinteinen-valkokastike.md",
+  "source_sha256": "d37cecd828e21e6da7ced3d198ee1ef518fb5139365c9c0b475d874068521d69",
+  "decision": "hold",
+  "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.valio.fi/reseptit/valkokastike/"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: päähaaran 489 FI-reseptitiedoston täsmäpolut ja 27 avoimen PR:n otsikot tarkistettu, ei samaa itsenäistä kastikereseptiä. Lähivertailu: Päähaaran muut kermakastikeruoat ovat ruokiin liitettyjä kastikkeita; #808 on erillinen sileä maito-voi-vehnäjauho-peruskastike ilman yrttisekoitusta. Tarkka raportti: docs/reviews/new-recipes/chat3-kastikkeet-duplikaatit-2026-11-22.md. Lopullinen reittien uniikkius ja tuore main tarkistetaan vielä julkaisuportissa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Tarkistettu: täysmaito 500 ml, voi 35 g, vehnäjauhot 35 g, suola 3 g, valkopippuri 0,4 g ja muskottipähkinä 0,2 g. Valion julkaistussa vertailussa 500 ml 3 % maitoa, 30 g voita, 1/2 dl vehnäjauhoja ja mausteet. Lisätty muskottipähkinä on oma toimituksellinen maustevaihtoehto. Tuotekohtainen ravintokoostumuksen ja pakkausmerkintöjen tarkistus on erillinen nutrition-/food_safety-portti. Maidon 500 ml:n tilavuusmäärä tarkennettu punnituksi 500 g:ksi, jotta ravintolaskennassa ei oleteta nestetiheyttä. Maustemäärät säilyvät."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valion valmistuksessa voi sulatetaan, jauhot kuumennetaan, maito lisätään ohuena nauhana ja kastike kiehautetaan muutama minuutti; Recipavossa samat perusvaiheet ja 4–5 minuutin haudutus."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Perusvalkokastikkeessa voi, täysmaito ja vehnäjauhot: MAITO ja VEHNÄ yksilöity. Kypsennysvaihe 4–5 min kastikkeen kiehauttamisen jälkeen, ei raakaa lihaa eikä munaa. Kuumatarjoilu, yli +60 °C lämpösäilytys pitkään tarjottaessa ja nopea jäähdytys alle +6 °C varmennettu kirjallisesti. Rajattu food_safety PASS. Lähteet: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/ ."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Recipavo 6 pientä kastikeannosta / 15 min; Valion aktiivinen valmistus 10 min. Eri annosjaon vuoksi tarkka tarjottava saanto on edelleen arvio, mutta aika ja työjärjestys ovat perusteltuja."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Neljän makron ravintoarvio laskettu 6 annokselle Fineli Release20 #689 (täysmaito 500 g), #500 (voi 35 g), #110 (vehnäjauho 35 g), #30 (jodioitu suola 3 g). Valkopippuri 0,4 g ja muskottipähkinä 0,2 g on merkitty erikseen lähdepuutteisiksi, EI nolliksi. site/scripts/nutrition-model.ts sallii konservatiivisesti rajatun omissiovaikutuksen; molempien mausteiden yhteinen enimmäisvaikutus 0.90 kcal/annos ja enintään 0.11 g kutakin makroa/annos (<1g toleranssi). Arvio per annos: nettohiilihydraatit 8,36g, kokonaishiilihydraatit 8,57g, proteiini 3,25g, rasva 7,75g. Laskennan syötehash 019aa958cb6b055fae45c24cd47827e84fb3de2207439fa0b71b0310b68b7b64; tämä on source-backed arvio, ei laboratorion tai valitun maitomerkin mittaus. Koko reseptin julkaisupäätös on HOLD.\n22.11.2026 CI-yhteensopivuus: koska FI-lähde on edelleen status:draft, tämä täysin dokumentoitu AUTOMATED ONLY -laskentatodiste on siirretty pois ainoastaan julkaistuille FI-resepteille sallitusta docs/nutrition/calculations/-hakemistosta katselmointikandidaatiksi: docs/nutrition/candidates/draft-calculations/perinteinen-valkokastike.json. Neljä makroarvoa ovat edelleen ainoastaan Draft-luonnoksessa näkyvä ennakkoarvio. nutrition:pass ja virallinen nutrition_evidence eivät vielä ole myönnettyjä; paluu varsinaiseen calculations/-hakemistoon edellyttää hyväksyttyä julkaisuversiota ja täsmä-HEADin tarkistusta. Koko resepti pysyy decision:hold. Neljä ehdollista makrokenttää poistettu FI/EN/SV/TH-julkaisuluonnoksista 22.11.2026. Aiempi laskentaehdokas pysyy muuttumattomana docs/nutrition/candidates/draft-calculations/perinteinen-valkokastike.json -tiedostossa. Ei uutta hyväksyntää."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/allergeenit"
+    ],
+    "image_path": "kuvat/alkuruoat/perinteinen-valkokastike.webp",
+    "image_sha256": "792ebe46aebc4ea49ce7865edc7a7502e73e2882c518fb75b10ed430c35d1b58",
+    "image_review": "Chat 3 22.11.2026: aiempi 6 942 B:n WebP korvattu samalla kuvatiedoston polulla uudelleen laadukkaammaksi pakatulla 960x640 AI-havainnekuvalla (43 930 B; SHA-256 792ebe46aebc4ea49ce7865edc7a7502e73e2882c518fb75b10ed430c35d1b58). Tarkka WebP Git-blob 28e55cac5e014c683dd0f3c8f29fa4436271258d on yhtäpitävä varmennetun lähdetiedoston kanssa. Suora kuva-arvio: sileä vaalea maitokastike ilman reseptiin kuulumattomia yrttejä; aikaisempi pikselöitymiseste poistettu. PRELIMINARY_VISUAL_QUALITY_OK; ei laboratoriokuva, eikä lopullinen ImageAssets/riippumaton julkaisu-/lisenssihyväksyntä. Päätös pysyy hold, status draft.",
+    "physical_cook_test": false
+  }
+}

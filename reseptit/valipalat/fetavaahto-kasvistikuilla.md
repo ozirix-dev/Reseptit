@@ -52,7 +52,7 @@ Punnitse feta valutettuna sekä kasvikset syötävänä osana.
 
 ## Valmistus
 
-1. Valuta feta ja punnitse sitä 120 g. Punnitse myös 100 g jogurttia ja 10 g sitruunamehua.
+1. Valitse kylmään dippiin feta, jonka pakkauksessa lukee, että se on valmistettu pastöroidusta maidosta. Valuta feta ja punnitse sitä 120 g. Punnitse myös 100 g jogurttia ja 10 g sitruunamehua.
 2. Murustele feta kulhoon. Soseuta se jogurtin ja sitruunamehun kanssa sauvasekoittimella tasaiseksi.
 3. Hienonna 5 g tilliä ja sekoita fetavaahtoon.
 4. Huuhtele kurkku ja paprika. Poista paprikasta kanta ja siemenet. Punnitse 200 g kurkkua ja 150 g paprikaa ja leikkaa ne tikuiksi.

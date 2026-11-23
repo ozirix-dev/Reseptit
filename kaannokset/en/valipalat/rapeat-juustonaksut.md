@@ -51,6 +51,6 @@ Weigh out 140 g of grated cheddar and 1 g of smoked paprika.
 
 ## Notes
 
-**Contains milk.** The net carbohydrate estimate from cheddar is 0.04 g per portion. The calculation includes all the fat from the cheese. Fat left on the parchment reduces the amount of fat actually eaten. Smoked paprika is omitted from the nutrition calculation because its polyol content is not declared. Each portion contains 0.25 g of the paprika.
+**Contains milk.** The net carbohydrate estimate from cheddar is 0.04 g per portion. The calculation includes all the fat from the cheese, so it gives an upper estimate for fat from the cheese. Fat left on the parchment reduces the amount of fat actually eaten. Smoked paprika is omitted from the nutrition calculation because its polyol content is not declared. Each portion contains 0.25 g of the paprika.
 
 **No numerical glycaemic load (GL) has been determined.** The image is an illustration created to match the recipe.
