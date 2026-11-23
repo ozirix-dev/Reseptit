@@ -50,3 +50,15 @@ GitHubin `main`-tiedostot `reseptit/alkuruoat/hummus.md` ja `reseptit/paaruoat/k
 Tässä työssä ei käytetty ulkoista kielimallipalvelua, tilausta, API-avainta, Cloudflare-muutoksia eikä käyttäjien todellisia kysymyksiä. Keittiöapurin julkinen AI on **OFF**. Työ on kysymysaineiston tarkennus, ei julkaisu, ei benchmarkin tulos, ei 80 ihmisen hyväksymää lausetta eikä lupa muuttaa 5 USD/kk budjettirajaa.
 
 **Portit:** testattu PR-HEAD CI, riippumaton katselmointi ja Repo Guardin suojatut Ready/merge, sitten tuotannon erillinen julkaisuportti jos sellainen myöhemmin valtuutetaan. Issue #342 pysyy OPEN.
+
+## 23.11.2026 – jatkokatselmointi, integrointi ja edelleen avoimet hyväksynnät
+
+**Työn omistaja:** Chat 5, nimetty PR-keskustelussa [Chat-5:n luovutusrajauksen yhteydessä](https://github.com/ozirix-dev/Reseptit/pull/778#issuecomment-7088158667). Tämä osuus dokumentoi read-only-katselmoinnin, ei kieli- tai tuotantohyväksyntää.
+
+- Vuoden 2026-11-23 `main`-tarkistuksessa `eval-cases.ts` vastasi alkuperäistä Git-blobia `0b509b3ba15bc47a7a888ccf6ac87c4dad8b97a3`. PR:n kuusi kysymyskorjausta eivät siis olleet mainissa tällä tarkistushetkellä. Tästä ei päätellä mitään aiempaa myöhemmästä tuotantojulkaisusta.
+- EN-lohipadan otsikko on edelleen `Creamy Salmon Casserole` (Git-blob `4a0eb25207e102e5a2bbb9535eb3d9aff4dd5782`) ja TH-otsikko `สตูว์ปลาแซลมอนครีม` (Git-blob `cad8468700cf5afc7a5d17d4038fe645542be1ba`). Kyseiset vertailut ovat reseptilähteiden nimiä, eivät itse AI-mallin tuloksia.
+- PR:n promptit koskevat vain testikysymysaineistoa. `assistantLanguageReviewRows` laskee muuttuneille kuudelle riville uuden SHA-256:n; vanhoja semanttisia ihmishyväksyntöjä ei kopioida.
+- Jo yhdistetty [#849](https://github.com/ozirix-dev/Reseptit/pull/849) tuottaa erillisen offline-julkaisuvalmiuden `HOLD`-näytön. Tämä PR ei muuta #849:n seitsemää estettä, julkista Keittiöapuri-kytkintä, 5 USD:n budjettisopimusta tai nolla-ulkoisen-mallikutsun rajaa.
+- **Merkitys:** korjatun synteettisen kysymysjoukon versionhallinta voidaan integroida teknisillä porteilla, vaikka sen myöhempi **aito FI/EN/SV/TH-ihmiskielikatselmointi pysyy 80/80 PENDING**, eikä maksullista benchmarkkia tai julkista AI-käyttöä valtuuteta. Riippumaton tuleva katselmoija tekee omat todelliset päätöksensä ja tallentaa niiden rivikohtaiset versiosidokset.
+
+**Integraatiokriteerit:** tämän PR:n täsmä-HEADin GitHub Recipe site ja Chat owner metadata PASS, Repo Guardin SHA-sidottu Ready/merge sekä merge-SHA:n main-CI. Jos mikä tahansa tarkistus epäonnistuu, STOP; tutkintamuistio ei itsessään ole julkaisu- eikä kielihyväksyntä.
