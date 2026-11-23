@@ -1,6 +1,6 @@
-import { classifyPublicGk } from "../src/features/recipes/gk-estimate";
+import { publicGkHighMin, publicGkLowMax } from "../src/features/recipes/gk-estimate";
 import { reviewUnmatchedGiRanges, type GiRangeReview } from "./glycemic-load-recipe-binding";
-import { normalizeCarbohydrate, type FoodRecord } from "./nutrition-model";
+import { addFractions, decimalFraction, fractionToNumber, multiplyFractions, normalizeCarbohydrate, type FoodRecord } from "./nutrition-model";
 
 export interface GlycemicIndexRecord {
   id: string;
@@ -209,7 +209,21 @@ export function calculateGlycemicLoad(
   const blockers: string[] = [];
   let totalLoad = 0;
   let totalLoadMin = 0;
-  let totalLoadWidth = 0;
+  // The bounded route uses source decimals throughout; keep historical point
+  // arithmetic and serialization unchanged.
+  const exactScale = 10000n * BigInt(input.servings);
+  let exactMin = decimalFraction(0);
+  let exactMax = decimalFraction(0);
+  function addExactRange(grams: number, minCarbs: number, maxCarbs: number, minGi: number, maxGi: number) {
+    const mass = decimalFraction(grams);
+    exactMin = addFractions(exactMin, multiplyFractions(mass, multiplyFractions(decimalFraction(minCarbs), decimalFraction(minGi))));
+    exactMax = addFractions(exactMax, multiplyFractions(mass, multiplyFractions(decimalFraction(maxCarbs), decimalFraction(maxGi))));
+  }
+  function exactClass(total: typeof exactMin) {
+    const denominator = total.d * exactScale;
+    if (total.n <= BigInt(publicGkLowMax) * denominator) return "LOW";
+    return total.n < BigInt(publicGkHighMin) * denominator ? "MEDIUM" : "HIGH";
+  }
   let totalLoadMax = 0;
   let hasRange = false;
   const boundedGi = requireBoundedGi || input.ingredients.some(row => row.unmatchedGiRange !== undefined);
@@ -374,8 +388,8 @@ export function calculateGlycemicLoad(
             giContributionRange = { min: minimumCarbohydrate * approved.min.gi / 100, max: availablePerServing * approved.max.gi / 100 };
             totalLoadMin += giContributionRange.min;
             totalLoadMax += giContributionRange.max;
-            totalLoadWidth += ((availablePerServing - minimumCarbohydrate) * approved.min.gi
-              + availablePerServing * (approved.max.gi - approved.min.gi)) / 100;
+            addExactRange(ingredient.grams!, carbohydrateRange?.min ?? availablePer100g!,
+              carbohydrateRange?.max ?? availablePer100g!, approved.min.gi, approved.max.gi);
             hasUnmatchedGiRange = true;
             ingredientConfidence = confidence = "LOW";
           }
@@ -400,7 +414,10 @@ export function calculateGlycemicLoad(
         totalLoad += giContribution;
         totalLoadMin += giContributionRange.min;
         totalLoadMax += giContributionRange.max;
-        totalLoadWidth += (availablePerServing - minCarbs) * giValue / 100;
+        if (boundedGi && issues.length === 0) {
+          addExactRange(ingredient.grams!, carbohydrateRange?.min ?? availablePer100g!,
+            carbohydrateRange?.max ?? availablePer100g!, giValue, giValue);
+        }
       }
     }
 
@@ -431,10 +448,14 @@ export function calculateGlycemicLoad(
   if (omittedAvailableCarbohydratePerServingG >= CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G) blockers.push(`${input.recipeId}: cumulative omitted available carbohydrate is ${omittedAvailableCarbohydratePerServingG.toFixed(3)} g/serving, at or above the 2 g editorial tolerance.`);
   // Compare the unrounded endpoints and keep the range in the existing display
   // model. A full GK unit is an editorial maximum for this missing-GI route.
-  // Adding nonnegative ingredient spreads avoids cancellation between large endpoints.
-  const widthLimit = 1 + Number.EPSILON * (1 + ingredients.length);
-  if (hasUnmatchedGiRange && (!valid(totalLoadMax) || !valid(totalLoadWidth) || totalLoadWidth > widthLimit
-      || classifyPublicGk(totalLoadMin) !== classifyPublicGk(totalLoadMax))) {
+  const exactWidthNumerator = exactMax.n * exactMin.d - exactMin.n * exactMax.d;
+  const exactWidthDenominator = exactScale * exactMax.d * exactMin.d;
+  const exactRange = hasUnmatchedGiRange ? {
+    min: fractionToNumber({ n: exactMin.n, d: exactScale * exactMin.d }),
+    max: fractionToNumber({ n: exactMax.n, d: exactScale * exactMax.d }),
+  } : null;
+  if (exactRange && (!valid(exactRange.min) || !valid(exactRange.max)
+      || exactWidthNumerator > exactWidthDenominator || exactClass(exactMin) !== exactClass(exactMax))) {
     blockers.push(`${input.recipeId}: GI uncertainty spans more than one GK unit or crosses a public class boundary.`);
   }
   const coverageDenominator = matchedCarbohydrateMin + unmatchedCarbohydrateMax;
@@ -445,7 +466,7 @@ export function calculateGlycemicLoad(
     status: complete ? "CALCULATED" : "INSUFFICIENT SOURCE DATA",
     unroundedGlycemicLoadPerServing: complete && !hasUnmatchedGiRange ? totalLoad : null,
     glycemicLoadPerServing: complete && !hasUnmatchedGiRange ? Math.round((totalLoad + Number.EPSILON) * 100) / 100 : null,
-    glycemicLoadRangePerServing: complete && hasUnmatchedGiRange ? { min: totalLoadMin, max: totalLoadMax }
+    glycemicLoadRangePerServing: complete && exactRange ? exactRange
       : complete && hasRange ? {
       min: Math.round((totalLoadMin + Number.EPSILON) * 100) / 100,
       max: Math.round((totalLoadMax + Number.EPSILON) * 100) / 100,

@@ -282,6 +282,15 @@ test("an unmatched GI range needs registered endpoints and a current applicabili
     ...reviewFor(manyRows, accumulationFoods, accumulationGi),
     ingredients: { 0: review.ingredients[1] },
   }).glycemicLoadRangePerServing, "matched contribution totals do not distort the width");
+  const varyingComposition = { ...input, ingredients: [
+    { ...main, availableCarbohydratePer100gRange: { min: 20.4, max: 21.1, evidence: "fixture range" } }, small,
+  ] };
+  const varyingGi = [{ ...gi, gi: 100 }, endpoint("lower", 30), endpoint("upper", 60)];
+  const exactWidth = run(varyingComposition, foods, varyingGi, markdown, reviewFor(varyingComposition, foods, varyingGi));
+  assert.deepEqual(exactWidth.glycemicLoadRangePerServing, { min: 20.7, max: 21.7 });
+  const tooWide = [varyingGi[0], varyingGi[1], endpoint("upper", 60.00000000000001)];
+  assert.equal(run(varyingComposition, foods, tooWide, markdown, reviewFor(varyingComposition, foods, tooWide)).status,
+    "INSUFFICIENT SOURCE DATA");
   const wide = [gi, endpoint("lower", 0), endpoint("upper", 125)];
   assert.equal(run(input, higherFoods, wide, markdown, reviewFor(input, higherFoods, wide)).status, "INSUFFICIENT SOURCE DATA");
 });

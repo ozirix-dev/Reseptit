@@ -56,6 +56,8 @@ const decimal = (value: number): Fraction => {
 const multiply = (a: Fraction, b: Fraction) => fraction(a.n * b.n, a.d * b.d);
 const add = (a: Fraction, b: Fraction) => fraction(a.n * b.d + b.n * a.d, a.d * b.d);
 const numeric = (value: Fraction) => Number(value.n) / Number(value.d);
+export { decimal as decimalFraction, multiply as multiplyFractions, add as addFractions, numeric as fractionToNumber };
+
 const roundFraction = (value: Fraction, decimals = 2): number => {
   const scaled = value.n * 10n ** BigInt(decimals);
   const rounded = scaled / value.d + (scaled % value.d * 2n >= value.d ? 1n : 0n);
