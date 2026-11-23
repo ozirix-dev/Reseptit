@@ -17,7 +17,7 @@ Tämä erä lisää A4.2:n helposti testattavan päätöksentekokoneen ja injekt
 - `settleKnownCost` palauttaa erotuksen varauksesta vasta, kun mallitoimittajan lopullinen käyttö/kulu on tiedossa. Aikakatkaisu, epäselvä veloitus, huonosti muodostettu laskutustieto tai kadonnut vastaus **jättää enimmäisvarauksen kiinni**. Ylärajan ylitys pysäyttää uudet varaukset, eikä jo laskutettua yritetä piilottaa.
 - Päivämäärä valitaan luotettavasta Worker-palvelinkellosta UTC-kuukauden mukaan, ei käyttäjän pyynnöstä. Vanhan kuukauden avoimia varauksia ei muuteta automaattisesti uuden kuukauden saldoiksi eikä vapauteta hiljaisesti.
 - `site/workers/assistant-budget-coordinator.ts` käyttää injektoitavaa `transactionSync` + `kv`-rajapintaa Cloudflare Durable Object -ympäristöä varten. Ei julkista Worker-fetcheä, routes-konfiguraatiota, DO-migraatiota, promptin välitystä, maksullista integraatiota eikä laskutusavainta.
-- Talletetaan vain serverillä generoitu ID, UTC-kuukausi, kokonaislukuiset varaus-/kulutiedot ja poiskytkentä. **Ei kysymystä, diagnoosia, käyttäjän IP:tä tai mallin vastausta.**
+- Talletetaan vain serverillä generoitu ID, UTC-kuukausi, kokonaislukuiset varaus-/kulutiedot, poiskytkentä ja palvelinpuolen hyväksytty hintapolitiikka. Ensimmäinen hyväksytty varaus sitoo mallin, tokenkatot ja hinnat saman UTC-kuukauden varauksiin. Vanhan kirjanpidon avoimet varaukset voidaan selvittää, mutta uusien varausten tekeminen edellyttää tiedossa olevaa hintapolitiikkaa. **Ei kysymystä, diagnoosia, käyttäjän IP:tä tai mallin vastausta.**
 
 ## Todelliset käyttöönoton estot
 

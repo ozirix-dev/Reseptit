@@ -6,6 +6,9 @@ import { recipeSeoDescriptions } from "./recipe-seo-descriptions";
 type LocalizedCopy = Readonly<Record<string, Partial<Record<RecipeLocale, string>>>>;
 
 const descriptions: LocalizedCopy = {
+  "pina-colada-hedelmajaatelo": {
+    fi: "Ananas ja banaani soseutetaan kookosmaidon ja limetin kanssa. Aika on arvio valmiiksi pakastetuille hedelmille. Jos käytät tuoreita hedelmiä, varaa lisäksi noin kaksi tuntia niiden pakastamiseen.",
+  },
   "paella-valenciana": {
   "fi": "Kun kuuma sahramiliemi on lisätty, riisiä ei enää sekoiteta: se saa kypsyä pannulla broilerin ja vihreiden papujen kanssa. Broilerin paksuimpien palojen sisälämpö tarkistetaan vähintään 75 °C:seen.",
   "en": "After the hot saffron stock is added, leave the short-grain rice unstirred as it cooks with chicken and green beans. Check that the thickest chicken pieces reach at least 75 °C.",
@@ -835,6 +838,16 @@ const nattoRiceCookingReview: Readonly<Record<RecipeLocale, { evidence: readonly
 };
 
 export function reviewedPublicCookingMethod(recipeId: string, rawMethod: readonly string[] | undefined): string[] | undefined {
+  // #404 C/#35: the source warms fully cooked beans on the stovetop, but
+  // its historical cooking-method tag says frying. Suppress that unsupported
+  // public claim until a separately reviewed method and visible notes exist.
+  // Original source and nutrition/GK bindings remain sealed.
+  if (recipeId === "lahi-ita-ful-medames") {
+    if (JSON.stringify(rawMethod) !== JSON.stringify(["paistaminen"])) {
+      throw new Error("FUL_MEDAMES_COOKING_METHOD_SOURCE_DRIFT");
+    }
+    return [];
+  }
   if (recipeId === "paprikainen-vhh-gulassi") {
     // #327: the SHA-pinned four-language source says "uuni" but instructs
     // covered stovetop simmering, with no oven temperature or oven step.

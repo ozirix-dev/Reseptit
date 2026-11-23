@@ -118,6 +118,15 @@
   verification, and applicable F25, GK, nutrition, translation and publication
   safeguards. Measure timings for equivalent check sets.
 
+## Riskiperusteinen PR-katselmointi – yksi riittävä tarkistus
+
+- Luokittele PR muuttuneiden tiedostojen **vaikutuksen**, ei vain PR-otsikon perusteella. Pieni dokumentti-/tutkimusmuistio-PR voidaan käsitellä kevyesti vain, jos se **ei muuta julkaistavaa sisältöä, reseptin tilaa, ravintoarvoja, GK:ta, käännöksiä, turvallisuuskäytäntöjä, portteja tai tuotantojulkaisua**. Jos dokumentti muuttaa normatiivisia turvallisuus-/laskentasääntöjä tai antaa uuden julkaisuhyväksynnän, käsittele sitä korkeamman riskin muutoksena.
+- Kevyt PR: **yksi todellinen, rajattu sisältökatselmointi** riittää. Sen voi kirjata yhteen GitHub-katselmointiin **tai** PR-kommenttiin; älä teetä samaa vertailua useassa chatissa, äläkä avaa erillisiä pelkkiä hyväksyntä-PR:iä. Katselmoija tarkistaa muuttuneet tiedostot, alkuperän ja sisäisen johdonmukaisuuden sekä esittää tuloksen, rajaukset, löydökset ja tarkistetun HEAD-SHA:n. Laskentamuistiossa tarkista ainesosat, määrät, annosjako ja laskut; erottele laskutoimituksen oikeellisuus ulkoisten lähteiden itsenäisestä varmentamisesta. Pelkkä botin 'no findings' tai vihreä CI ei korvaa sisällöllistä tarkistusta.
+- Jos pätevä, versioon sidottu katselmointi on jo kirjattu eikä aineisto ole sen jälkeen olennaisesti muuttunut, **Chat-1 ei toista katselmointia**: tarkista vain katselmoinnin kattavuus, uudet kommentit, täsmällinen nykyinen HEAD/base, CI, GitHubin vaaditut hyväksynnät ja Repo Guardin preflight; yhdistä vain suojatun menettelyn kautta. Jos branch protection vaatii muodollisen `APPROVE`-hyväksynnän, tavallinen kommentti ei korvaa sitä.
+- Materiaaliset ruoka-/elintarviketurvallisuus-, allergeeni-, ravinto-, GI/GK-, F25-, karanteeni-, lähde- ja käännösmuutokset sekä julkaisu- tai CI-porttien muutokset **eivät saa kevyen dokumentti-PR:n poikkeusta**. Noudata edelleen niiden todellisia riippumattomia evidenssi- ja hyväksyntävaatimuksia. Avoin P0/P1, vanhentunut evidenssi tai ratkaisematon lähderistiriita = HOLD. FI-lähdekatselmoinnin oma riippumaton päätösvaatimus (#369) säilyy.
+- HEADin muuttuessa arvioi, koskeeko muutos aiemmin tarkistettua sisältöä; uusi asiamuutos vaatii päivitetyn katselmoinnin. Pakollinen `Recipe site / build`, muut soveltuvat tarkistukset, täsmä-SHA, yksi kirjoittaja/haara, Repo Guardin paikallinen suostumus ja erillinen julkaisulupa **eivät muutu**. Älä käytä kevennystä suojauksen kiertämiseen.
+- Kirjaa lyhyesti **yksi päätös ja jäljelle jääneet HOLDit** samaan PR:ään. Ei useita osittain päällekkäisiä raportteja, hyväksyntäkierroksia tai ylimääräisiä CI-ajokertoja, ellei tarkistus paljasta konkreettista korjattavaa.
+
 ## Recipe review without an in-house test kitchen
 
 - An in-house test kitchen is not available. Do **not** make the author's own

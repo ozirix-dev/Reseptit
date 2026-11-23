@@ -145,6 +145,45 @@ test("A4.2 month resets only from trusted UTC clock and policy changes fail clos
   assert.throws(() => newBudgetMonth("nonsense"), /Invalid UTC month/);
 });
 
+test("A4.2 pins model identity, token ceilings and pricing to a UTC month", () => {
+  const store = new InMemoryTransactionStore();
+  const november = new Date("2026-11-30T23:59:59Z");
+  const december = new Date("2026-12-01T00:00:00Z");
+  const gate = new AssistantBudgetCoordinator(store, rate);
+  assert.equal(gate.reserve(id(40), november).allowed, true);
+
+  for (const changed of [
+    { ...rate, modelId: "test-different-model" },
+    { ...rate, maxInputTokens: 10001 },
+    { ...rate, inputUsdPerMillion: 0.7501 },
+    { ...rate, maxAdditionalUsdPerCall: 0.01 },
+  ]) {
+    const revised = new AssistantBudgetCoordinator(store, changed);
+    assert.throws(() => revised.reserve(id(41), november), /Budget pricing policy changed/);
+  }
+
+  const restarted = new AssistantBudgetCoordinator(store, { ...rate });
+  assert.equal(restarted.reserve(id(41), november).allowed, true);
+  const revised = new AssistantBudgetCoordinator(store, { ...rate, inputUsdPerMillion: 1 });
+  assert.equal(revised.reserve(id(42), december).allowed, true);
+  assert.equal(revised.settle("2026-11", id(40), 1_000_000), "SETTLED");
+  assert.equal(revised.readMonth("2026-11").heldNanos, worstCaseRequestNanos(rate));
+});
+
+test("A4.2 legacy holds can settle but cannot silently adopt a new pricing policy", () => {
+  const store = new InMemoryTransactionStore();
+  const period = "2026-11";
+  const now = new Date("2026-11-29T18:00:00Z");
+  const legacy = reserveWorstCase(newBudgetMonth(period), id(50), worstCaseRequestNanos(rate));
+  assert.equal(legacy.allowed, true);
+  store.kv.put("recipavo-ai-budget-v1:" + period, legacy.month);
+
+  const gate = new AssistantBudgetCoordinator(store, rate);
+  assert.throws(() => gate.reserve(id(51), now), /Budget pricing policy is missing/);
+  assert.equal(gate.settle(period, id(50), 1_000_000), "SETTLED");
+  assert.throws(() => gate.reserve(id(51), now), /Budget pricing policy is missing/);
+});
+
 test("A4.2 state holds only opaque IDs and integer costs, no text prompts, IPs or API secrets", () => {
   let month = newBudgetMonth("2026-11");
   for (let i = 0; i < 4; i++) {

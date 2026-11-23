@@ -63,6 +63,32 @@ test('groups FI difficulty labels without regard to capitalization', () => {
   assert.deepEqual(report.byDifficulty, {helppo: 2, keskitaso: 2, vaativa: 1, '(puuttuu)': 1});
 });
 
+test('distinguishes decimal quantities from whole numbers in repeated steps', () => {
+  for (const decimal of ['1,5', '1.5']) {
+    const sources = [['a', decimal], ['b', '15'], ['c', decimal]].map(([id, quantity]) => ({
+      path: `reseptit/aamupalat/${id}.md`,
+      content: recipe(id, 'Kuvaus.', `Mittaa ${quantity} dl vettä kattilaan ja kuumenna sekoittaen, kunnes seos alkaa kiehua.`),
+    }));
+
+    const { repeatedSteps } = analyze(sources).signals;
+    assert.equal(repeatedSteps.length, 1);
+    assert.ok(repeatedSteps[0].phrase.includes(decimal));
+    assert.deepEqual(repeatedSteps[0].recipes.map(item => item.recipeId), ['a', 'c']);
+  }
+});
+
+test('distinguishes time ranges from whole numbers in repeated steps', () => {
+  const sources = [['a', '5–7'], ['b', '57'], ['c', '5-7']].map(([id, duration]) => ({
+    path: `reseptit/aamupalat/${id}.md`,
+    content: recipe(id, 'Kuvaus.', `Paista uunin keskitasolla ${duration} minuuttia, kunnes reunat ovat saaneet hieman väriä.`),
+  }));
+
+  const { repeatedSteps } = analyze(sources).signals;
+  assert.equal(repeatedSteps.length, 1);
+  assert.match(repeatedSteps[0].phrase, /5–7 minuuttia/);
+  assert.deepEqual(repeatedSteps[0].recipes.map(item => item.recipeId), ['a', 'c']);
+});
+
 test('compares every line of a wrapped preparation step', () => {
   const shared = 'Sekoita taikinaa rauhallisesti kulhossa, kunnes rakenne on kauttaaltaan tasainen.';
   const mushroom = 'Lisää pilkotut sienet ja sekoita kertaalleen.';
