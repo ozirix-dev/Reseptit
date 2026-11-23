@@ -61,6 +61,25 @@ test("the source and public comparison preserve decimal quantities", () => {
   assert.equal(output.totals.rawRepeatGroupsStillRepeated, 1);
 });
 
+test("matches numeric ranges across dash styles without merging whole numbers", () => {
+  const step = (duration: string) =>
+    `Paista uunin keskitasolla ${duration} minuuttia, kunnes reunat ovat saaneet hieman väriä.`;
+  const inventory = raw();
+  inventory.signals.repeatedSteps = [{
+    phrase: "paista uunin keskitasolla 5–7 minuuttia kunnes reunat ovat saaneet hieman väriä",
+    recipes: [evidence("a"), evidence("c")],
+  }];
+  const output = compareInventories(inventory, [
+    row("a", "Yksilöllinen annos.", [step("5–7")]),
+    row("b", "Toinen annos.", [step("57")]),
+    row("c", "Kolmas annos.", [step("5—7")], null),
+  ]);
+
+  assert.equal(output.visible.repeatedSteps.length, 1);
+  assert.deepEqual(output.visible.repeatedSteps[0].recipes.map(item => item.recipeId), ["a", "c"]);
+  assert.equal(output.totals.rawRepeatGroupsStillRepeated, 1);
+});
+
 test("source-only repeated steps disappear when visible instructions are corrected", () => {
   const output = compareInventories(raw(), [
     row("a", "Yksilöllinen annos.", ["Jaa kylmänä kahteen kulhoon."]),
