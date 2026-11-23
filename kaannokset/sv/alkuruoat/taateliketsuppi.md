@@ -38,14 +38,14 @@ ingredients:
 - amount: 3
   unit: g
   item: vitlöksklyfta
-  note: ungefär en spik
+  note: ungefär 1 klyfta
 - amount: 1
   unit: g
   item: fint salt
 - amount: 30
   unit: g
   item: vatten
-  note: vid behov för gallring, plus vatten för att blötlägga dadlarna
+  note: vid behov för att späda ut ketchupen. Använd separat vatten till blötläggningen.
 source_language: fi
 translation_of: taateliketsuppi
 source_recipe: reseptit/alkuruoat/taateliketsuppi.md
@@ -59,8 +59,8 @@ Tomatpuré och mjuka dadlar mosas till en tjock ketchup. Äppelcidervinäger ger
 
 ## Gör så här
 
-1. Täck dadlarna med varmt vatten och blötlägg i ca 15 minuter. Häll av och häll bort blötläggningsvattnet.
-2. Lägg dadlar, tomatpuré, äppelcidervinäger, skalad vitlök och salt i en hög mixerskål. Puré med en stavmixer tills den är slät.
+1. Täck dadlarna med hett vatten och låt dem ligga i blöt i cirka 15 minuter. Häll av och släng blötläggningsvattnet.
+2. Lägg dadlar, tomatpuré, äppelcidervinäger, skalad vitlök och salt i en hög mixerskål. Mixa med stavmixer till en slät sås.
 3. Tillsätt eventuellt rent kallt vatten en matsked i taget tills såsen är lagom tjock. Överför till en ren behållare med lock och förvara i kylen.
 
 ## Anteckningar
@@ -68,4 +68,4 @@ Tomatpuré och mjuka dadlar mosas till en tjock ketchup. Äppelcidervinäger ger
 - Gör en liten sats och använd inom tre dagar. Såsen förvaras kallt.
 - Rullen har en liten burk tomatpuré, tre blötlagda dadlar, en skvätt vinäger, vitlök och salt. Gramängder och blötläggningstid är en justering. [Reel av Peter Jackson](https://www.facebook.com/reel/4522751821280480)
 - Kombinationen av tomatpuré, dadlar och vinäger jämfördes med motsvarande instruktion från Seattle YMCA. [Jämförelseguide](https://www.seattleymca.org/blog/recipe-homemade-ketchup)
-- Bilden är en perceptionsbild gjord med artificiell intelligens.
+- Bilden är en AI-genererad illustration.
