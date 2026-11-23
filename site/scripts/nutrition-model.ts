@@ -95,10 +95,13 @@ export function normalizeCarbohydrate(record: FoodRecord, subtractFibre = record
   }
   // Subtract only a measured, source-backed polyol value. Unknown values are not zero.
   const polyolsVerified = (record.polyolsSourceVerified === true && Boolean(record.polyolsEvidence?.trim())) || Boolean(record.componentValues && record.componentIds?.POLYL === 2260 && Object.hasOwn(record.componentValues, "POLYL"));
-  if (!polyolsVerified) {
-    return { available: record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE" ? null : available, net: null };
+  // EU totals containing polyols and US totals containing fibre need a verified
+  // polyol amount before either available CHO or GK may be calculated.
+  const requiresVerifiedPolyols = record.carbohydrateDefinition === "EU_TOTAL_INCLUDING_POLYOLS"
+    || record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE";
+  if (!polyolsVerified || !valid(polyols)) {
+    return { available: requiresVerifiedPolyols ? null : available, net: null };
   }
-  if (!valid(polyols)) return { available: record.carbohydrateDefinition === "US_TOTAL_INCLUDING_FIBRE" ? null : available, net: null };
   // Fineli CHOAVL and AFCD's paired carbohydrate-without-sugar-alcohols
   // already exclude polyols. Subtract only when the source reports a total
   // that includes polyols (EU_TOTAL_INCLUDING_POLYOLS or US total carbs).
