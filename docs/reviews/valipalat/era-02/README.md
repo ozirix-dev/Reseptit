@@ -7,7 +7,7 @@ Päiväys: 2026-11-06. **KATSELMOINTI, EI TUOTANTOVIENTI.** Tämän paketin muut
 | # | Resepti | Annos | Tila | Keskeinen esto |
 |---|---|---|---|---|
 | 20 | Tonnikalatäyte kurkkukupeissa | ¼ erästä | HOLD | Valutetun tonnikalan täsmätuote, majoneesin koostumus, syötävä kurkkumassa |
-| 24 | Rapeat VHH-siemennäkkärit | 1/12 levystä | HOLD | Koepaisto, pellavarouheen soveltuvuus ja siemenen tarkat lähteet |
+| 24 | Rapeat VHH-siemennäkkärit | 1/24 levystä, 1 pala | HOLD | Valmistusnäyttö, palan paino ja raaka-aineiden täsmälähteet |
 | 26 | Pekoni-juustotäytteiset jalapeñot | 2 chilipuolikasta | HOLD | Jalapeñon täsmälähde ja pekonin paistohävikki |
 | 27 | Kesäkurpitsalastut parmesaanilla | ⅓ erästä | HOLD | Kuivaus/rapeus testattava, savupaprika ja juuston käsittely |
 | 30 | Manteliset suklaapallot | 1 pallo | HOLD | Makeutuksen polyolit, mantelijauhon ja kookoksen koostumus ja koekeittiö |
