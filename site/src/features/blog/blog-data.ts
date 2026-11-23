@@ -6,6 +6,7 @@ export interface BlogSection {
   heading: string;
   paragraphs?: string[];
   points?: string[];
+  furtherReading?: BlogSource;
 }
 export interface BlogSource { label: string; url: string }
 export interface BlogPost {
@@ -109,7 +110,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Glykeeminen indeksi (GI) kuvaa hiilihydraattia sisältävän ruoan vaikutusta verensokeriin. Glykeeminen kuorma (GK) huomioi myös annoksen hiilihydraattimäärän. Laskuesimerkki näyttää, miten annoskoko muuttaa arviota.",
     category: "Ravitsemus ja GK",
     datePublished: "2026-11-06",
-    dateModified: "2026-11-17",
+    dateModified: "2026-11-23",
     author: "Reseptit-toimitus",
     image: `${siteBase}/ruokaopas/gk.svg`,
     imageAlt: "Kaurapuurokulho ja marjoja",
@@ -148,7 +149,11 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [
           "GK ei ole koko aterian terveellisyysarvosana eikä tarkka ennuste yksittäisen ihmisen verensokerista. Aterian muut ainekset, valmistustapa ja yksilöllinen vaihtelu vaikuttavat vasteeseen. Kuidun, energian, proteiinin ja rasvan merkitystä ei voi päätellä pelkän GK:n perusteella.",
           "Jos seurataan verensokeria sairauden hoidon vuoksi, yksittäisiä GI- tai GK-arvoja ei pidä käyttää korvaamaan terveydenhuollosta saatuja yksilöllisiä ohjeita."
-        ]
+        ],
+        furtherReading: {
+          label: "Ravintokuitu ja painonhallinta (Ravintotuote.fi, kaupallinen sivusto)",
+          url: "https://ravintotuote.fi/blogi/ravintokuitu-ja-painonhallinta/"
+        }
       }
     ],
     sources: [
@@ -179,7 +184,7 @@ export function blogJsonLd(post: BlogPost) {
 export interface Article {
   slug: string; routePath: string; title: string; description: string; image: string; alt: string;
   category: string; datePublished: string; dateModified: string; author: string;
-  sections: {heading:string; text:string[]; points?:string[]}[];
+  sections: {heading:string; text:string[]; points?:string[]; furtherReading?:BlogSource}[];
   sources: BlogSource[]; related: {title:string;path:string}[];
 }
 export const blogRoot = blogIndexPath;
@@ -188,7 +193,10 @@ export const articles: Article[] = blogPosts.map(post => ({
   image: post.image.replace(siteBase, ""), alt: post.imageAlt, category: post.category,
   datePublished: post.datePublished, dateModified: post.dateModified, author: post.author,
   sections: post.sections.map(section => ({
-    heading:section.heading, text:section.paragraphs ?? [], ...(section.points ? {points:section.points} : {})
+    heading: section.heading,
+    text: section.paragraphs ?? [],
+    points: section.points,
+    furtherReading: section.furtherReading
   })),
   sources: post.sources, related: post.related
 }));
