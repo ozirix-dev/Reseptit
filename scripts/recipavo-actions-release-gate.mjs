@@ -45,7 +45,7 @@ export function assertEnvironment(config, branchPolicies) {
        branchPolicies.branch_policies.length === 1 &&
        branchPolicies.branch_policies[0]?.name === 'main',
     'Only the exact main branch may deploy to production');
-  return {waitMinutes:10,branch:'main',adminBypass:false};
+  return {waitMinutes:10,reviewerRequired:true,branch:'main',adminBypass:false};
 }
 export function assertCiRuns(payload,inputSha) {
   const runs = payload?.workflow_runs;
@@ -105,7 +105,7 @@ export async function githubPreflight({sha,env,fetcher=fetch,verifyEnvironment=t
     ]);
     assertEnvironment(config, branches);
   }
-  return {sha,ciRun,waitTimerRequired:verifyEnvironment};
+  return {sha,ciRun,waitTimerRequired:verifyEnvironment,reviewerRequired:verifyEnvironment};
 }
 export async function cloudflarePreflight({env,fetcher=fetch}) {
   const id=env.CLOUDFLARE_ACCOUNT_ID, token=env.CLOUDFLARE_API_TOKEN;

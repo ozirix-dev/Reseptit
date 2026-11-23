@@ -28,7 +28,7 @@ test('SHA, main-only dispatch, and explicit confirmation are mandatory',()=>{
 });
 test('GitHub environment requires a reviewer, 10-minute timer, main-only restriction and no admin bypass',()=>{
   assert.deepEqual(assertEnvironment(environment,branchPolicies),
-    {waitMinutes:10,branch:'main',adminBypass:false});
+    {waitMinutes:10,reviewerRequired:true,branch:'main',adminBypass:false});
   const variations=[
     c=>c.protection_rules=[],
     c=>c.protection_rules[0].wait_timer=9,
@@ -85,10 +85,10 @@ test('GitHub API verifies fresh main, exact CI and timer + main branch policy',a
     if(url.includes('/environments/'))return response(environment);
     throw Error('unexpected');
   };
-  assert.deepEqual(await githubPreflight({sha,env,fetcher}),{sha,ciRun:123,waitTimerRequired:true});
+  assert.deepEqual(await githubPreflight({sha,env,fetcher}),{sha,ciRun:123,waitTimerRequired:true,reviewerRequired:true});
   assert.equal(urls.length,4);urls.length=0;
   assert.deepEqual(await githubPreflight({sha,env,fetcher,verifyEnvironment:false}),
-    {sha,ciRun:123,waitTimerRequired:false});
+    {sha,ciRun:123,waitTimerRequired:false,reviewerRequired:false});
   assert.equal(urls.length,2);
   await assert.rejects(()=>githubPreflight({sha,env,fetcher:async url=>
     url.includes('/git/ref/')?response({ref:'refs/heads/main',object:{sha:'b'.repeat(40)}}):response(runs)}),
