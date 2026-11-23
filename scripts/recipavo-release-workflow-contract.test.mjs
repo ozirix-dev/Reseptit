@@ -23,7 +23,7 @@ export function checkReleaseContract(yaml) {
   must(before.includes('recipavo-actions-release-gate.mjs github "$RELEASE_SHA"'),'initial exact-SHA CI gate');
   must(after.includes('recipavo-actions-release-gate.mjs github-recheck "$RELEASE_SHA"'),'post-wait CI/environment recheck');
   const steps=[
-    'Reconfirm main, CI and timer after GitHub environment wait',
+    'recipavo-actions-release-gate.mjs github-recheck "$RELEASE_SHA"',
     'Verify Cloudflare project, branch, Direct Upload and feedback OFF',
     'Build production-only artifact with feedback UI disabled',
     'recipavo-actions-release-gate.mjs functions site',
@@ -50,7 +50,7 @@ export function checkReleaseContract(yaml) {
   must(after.includes('body.error !== "method_not_allowed"'),'Pages Function 405 verification');
   return true;
 }
-const original=await readFile(file,'utf8');
+const original=(await readFile(file,'utf8')).replaceAll('\r\n','\n');
 test('release workflow manual CI/env preflight and postflight contract',()=>{
   assert.equal(checkReleaseContract(original),true);
 });
