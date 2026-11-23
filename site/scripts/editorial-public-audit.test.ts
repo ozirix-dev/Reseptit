@@ -42,6 +42,25 @@ test("source-only generic copy does not become a public false positive", () => {
   assert.equal(output.totals.projectedMissingTimes, 1);
   assert.match(toMarkdown(output), /julkisessa esityksessä/i);
 });
+test("the source and public comparison preserve decimal quantities", () => {
+  const step = (quantity: string) =>
+    `Mittaa ${quantity} dl vettä kattilaan ja kuumenna sekoittaen, kunnes seos alkaa kiehua.`;
+  const inventory = raw();
+  inventory.signals.repeatedSteps = [{
+    phrase: "mittaa 1,5 dl vettä kattilaan ja kuumenna sekoittaen kunnes seos alkaa kiehua",
+    recipes: [evidence("a"), evidence("c")],
+  }];
+  const output = compareInventories(inventory, [
+    row("a", "Yksilöllinen annos.", [step("1,5")]),
+    row("b", "Toinen annos.", [step("15")]),
+    row("c", "Kolmas annos.", [step("1,5")], null),
+  ]);
+
+  assert.equal(output.visible.repeatedSteps.length, 1);
+  assert.deepEqual(output.visible.repeatedSteps[0].recipes.map(item => item.recipeId), ["a", "c"]);
+  assert.equal(output.totals.rawRepeatGroupsStillRepeated, 1);
+});
+
 test("source-only repeated steps disappear when visible instructions are corrected", () => {
   const output = compareInventories(raw(), [
     row("a", "Yksilöllinen annos.", ["Jaa kylmänä kahteen kulhoon."]),

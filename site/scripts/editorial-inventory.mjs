@@ -8,6 +8,7 @@ import { readdir, readFile, mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { numberedInstructionSteps } from './numbered-instruction-steps.ts';
+import { canonicalEditorialText } from './canonical-editorial-text.ts';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const CATEGORIES = ['aamupalat', 'alkuruoat', 'jalkiruoat', 'leivonnaiset', 'paaruoat', 'valipalat'];
@@ -37,10 +38,7 @@ function section(body, title) {
 function clean(text) {
   return text.replace(/\r/g, '').replace(/\s+/g, ' ').trim();
 }
-function canonical(text) {
-  return clean(text.normalize('NFKC').toLocaleLowerCase('fi'))
-    .replace(/[.,!?;:“”"'()\-–—]/g, '').replace(/\s+/g, ' ').trim();
-}
+
 function sha(text) {
   return createHash('sha256').update(text).digest('hex').slice(0, 16);
 }
@@ -106,9 +104,9 @@ export function analyze(sources, quarantine = new Set()) {
     // Use one visible introduction for frequency signals, but detect a
     // duplicate only when two separate fields are actually present.
     const primaryLead = lead || description;
-    if (primaryLead) add(leadMap, canonical(primaryLead), evidence);
+    if (primaryLead) add(leadMap, canonicalEditorialText(primaryLead), evidence);
     if (primaryLead && GENERIC.test(primaryLead)) genericLead.push(evidence);
-    if (lead && description && canonical(lead) === canonical(description)) duplicateDescription.push(evidence);
+    if (lead && description && canonicalEditorialText(lead) === canonicalEditorialText(description)) duplicateDescription.push(evidence);
 
     const preparation = section(parsed.body, 'Valmistus');
     const steps = numberedInstructionSteps(preparation);
@@ -120,7 +118,7 @@ export function analyze(sources, quarantine = new Set()) {
       else emptyPreparation.push(evidence);
     }
     for (const step of steps) {
-      const phrase = canonical(step);
+      const phrase = canonicalEditorialText(step);
       // Short, common actions such as "Tarjoile heti" are not useful matches.
       if (phrase.length >= 65) add(stepMap, phrase, evidence);
     }
