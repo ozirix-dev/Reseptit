@@ -11,6 +11,8 @@ import { calculate, normalizeCarbohydrate, type Calculation, type FoodRecord } f
 import { buildGkOnlyVariants } from "./gk149-integration";
 import { buildApprovedSixVariants } from "./gk149-approved-six";
 import { loadPadSeeEw } from "./gk-next-seven";
+import { buildTehoajoVariants } from "./gk-tehoajo-era1";
+import { loadApprovedFour } from "./gk-next-four";
 
 const root = path.resolve(fileURLToPath(new URL("../..", import.meta.url)));
 const oldBlob = "de8d7189d786b06c93e13afb378f8861a70542c6";
@@ -105,13 +107,29 @@ export async function audit() {
   if (padGuard.ok || !String(padGuard.error).includes("Pad shared evidence changed: site/scripts/nutrition-model.ts")) {
     throw Error("Expected pad-see-ew nutrition code seal HOLD changed: " + JSON.stringify(padGuard));
   }
+  const additionalSealedLoaders = [
+    {name: "gk80-tehoajo-era1", run: () => buildTehoajoVariants(root),
+      expectedError: "GK80 tehoajo source changed: site/scripts/nutrition-model.ts"},
+    {name: "gk80-next-four", run: () => loadApprovedFour(root),
+      expectedError: "Next-four: shared source changed: site/scripts/nutrition-model.ts"},
+  ] as const;
+  const sealedLoaderResults: Record<string, "EXPECTED_SEAL_BLOCK"> = {
+    padSeeEw: "EXPECTED_SEAL_BLOCK",
+  };
+  for (const check of additionalSealedLoaders) {
+    const actual = capture(check.run);
+    if (actual.ok || !String(actual.error).includes(check.expectedError)) {
+      throw Error("Unexpected GK shared-model seal result (" + check.name + "): " + JSON.stringify(actual));
+    }
+    sealedLoaderResults[check.name] = "EXPECTED_SEAL_BLOCK";
+  }
   const protectedGk149 = {
-    scope: "Audited approved GK149 arithmetic only: 16 originals plus six next-six versions; pad see ew stays sealed.",
+    scope: "Read-only replay of 16 + 6 approved GK149 variants and fail-closed checks for three other sealed loaders.",
     approvedOriginalVersions: original16.length,
     approvedNextSixVersions: nextSix.length,
     unchangedGoldensAndSourceBindings: true,
     distinctIds: 22,
-    padSeeEw: "EXPECTED_SEAL_BLOCK",
+    sealedLoaderResults,
     publicationAuthorized: false,
     sourceSealApproved: false,
   };
@@ -153,7 +171,9 @@ export async function audit() {
     "| Niistä varmentamattomia | " + nestedEuTotalUnverified + " |",
     "| GK149 alkuperäisiä lukittuja versioita tarkistettu | " + protectedGk149.approvedOriginalVersions + " |",
     "| GK149 seuraavan kuuden lukittuja versioita tarkistettu | " + protectedGk149.approvedNextSixVersions + " |",
-    "| Pad see ew -koodisinetti | EXPECTED_SEAL_BLOCK |", "",
+    "| Pad see ew -koodisinetti | " + protectedGk149.sealedLoaderResults.padSeeEw + " |",
+    "| GK80 tehoajo -koodisinetti | " + protectedGk149.sealedLoaderResults["gk80-tehoajo-era1"] + " |",
+    "| GK80 next-four -koodisinetti | " + protectedGk149.sealedLoaderResults["gk80-next-four"] + " |", "",
     "Tämä on kattavuudeltaan rajattu auditointi; hyväksyttyihin GK-only-variantteihin",
     "ei saa soveltaa uutta koodihashia ilman niiden erillistä sinettikatselmointia.", "",
   ];
