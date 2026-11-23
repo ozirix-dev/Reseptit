@@ -6,6 +6,9 @@ import { recipeSeoDescriptions } from "./recipe-seo-descriptions";
 type LocalizedCopy = Readonly<Record<string, Partial<Record<RecipeLocale, string>>>>;
 
 const descriptions: LocalizedCopy = {
+  "pina-colada-hedelmajaatelo": {
+    fi: "Ananas ja banaani soseutetaan kookosmaidon ja limetin kanssa. Aika on arvio valmiiksi pakastetuille hedelmille. Jos käytät tuoreita hedelmiä, varaa lisäksi noin kaksi tuntia niiden pakastamiseen.",
+  },
   "paella-valenciana": {
   "fi": "Kun kuuma sahramiliemi on lisätty, riisiä ei enää sekoiteta: se saa kypsyä pannulla broilerin ja vihreiden papujen kanssa. Broilerin paksuimpien palojen sisälämpö tarkistetaan vähintään 75 °C:seen.",
   "en": "After the hot saffron stock is added, leave the short-grain rice unstirred as it cooks with chicken and green beans. Check that the thickest chicken pieces reach at least 75 °C.",
