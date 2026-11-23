@@ -1,8 +1,15 @@
 name: Recipavo preview (non-deploy)
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/recipavo-preview.yml"
+      - ".github/scripts/prepare-verified-browser-images.ps1"
+      - ".github/scripts/test_prepare_verified_browser_images.py"
   pull_request:
     paths:
+      - "site/package-lock.json"
       - "site/src/SeoMeta.tsx"
       - "site/src/features/recipes/RecipesPage.tsx"
       - "site/src/features/recipes/recipavo-hero.ts"
@@ -10,6 +17,8 @@ on:
       - "site/src/features/recipes/home-preview.css"
       - "site/tests/recipavo-preview.browser.test.ts"
       - ".github/workflows/recipavo-preview.yml"
+      - ".github/scripts/prepare-verified-browser-images.ps1"
+      - ".github/scripts/test_prepare_verified_browser_images.py"
   workflow_dispatch:
 
 permissions:
@@ -25,6 +34,15 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: site/package-lock.json
+      - name: Test the verified browser image bootstrap
+        run: python3 -B -m unittest discover -v -s .github/scripts -p test_prepare_verified_browser_images.py
+      - name: Prepare SHA-verified browser image inputs
+        shell: pwsh
+        env:
+          IMAGE_CI_PUBLIC_ONLY: ${{ github.event_name == 'pull_request' && (github.event.pull_request.head.repo.full_name != github.repository || github.actor == 'dependabot[bot]') }}
+          IMAGE_CI_ACCESS_KEY_ID: ${{ !(github.event_name == 'pull_request' && (github.event.pull_request.head.repo.full_name != github.repository || github.actor == 'dependabot[bot]')) && secrets.IMAGE_CI_ACCESS_KEY_ID || '' }}
+          IMAGE_CI_SECRET_ACCESS_KEY: ${{ !(github.event_name == 'pull_request' && (github.event.pull_request.head.repo.full_name != github.repository || github.actor == 'dependabot[bot]')) && secrets.IMAGE_CI_SECRET_ACCESS_KEY || '' }}
+        run: ./.github/scripts/prepare-verified-browser-images.ps1
       - name: Install dependencies
         working-directory: site
         run: npm ci

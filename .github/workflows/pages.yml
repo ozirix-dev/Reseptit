@@ -281,6 +281,87 @@ jobs:
           if-no-files-found: ignore
           retention-days: 14
 
+      # #369: reporting only; no source quality approval is manufactured by CI.
+      - name: Generate FI translation source-quality queues (advisory)
+        id: fi_translation_queues
+        if: >-
+          steps.select.outputs.needs_node == 'true' &&
+          (steps.select.outputs.run_content == 'true' ||
+           steps.select.outputs.run_translation_review == 'true' ||
+           contains(steps.select.outputs.changed_paths, 'translation-batch-ci-report') ||
+           contains(steps.select.outputs.changed_paths, 'translation-batch-partition') ||
+           contains(steps.select.outputs.changed_paths, 'translation-fi-source-quality'))
+        env:
+          CHANGED_PATHS: ${{ steps.select.outputs.changed_paths }}
+        working-directory: site
+        run: |
+          npx tsx --test tests/translation-batch-ci-report.test.ts
+          npx tsx scripts/translation-batch-ci-report.ts --out=tmp/translation-source-queues/current
+          cat ../tmp/translation-source-queues/current.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload FI translation source-quality queues (advisory)
+        if: steps.fi_translation_queues.outcome == 'success'
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: fi-translation-source-queues
+          path: |
+            tmp/translation-source-queues/current.json
+            tmp/translation-source-queues/current.md
+          if-no-files-found: error
+          retention-days: 14
+
+      # #369: verify real written FI approval snapshots; never auto-authorize release.
+      - name: Verify five documented FI source approvals (read-only pilot)
+        id: fi_approved_pilot
+        if: >-
+          steps.select.outputs.needs_node == 'true' &&
+          (contains(steps.select.outputs.changed_paths, 'fi-approved-source-pilot') ||
+           (github.event_name == 'pull_request' &&
+            contains(steps.select.outputs.changed_paths, '.github/workflows/pages.yml')))
+        working-directory: site
+        run: |
+          npx tsx --test tests/fi-approved-source-pilot.test.ts
+          npx tsx scripts/fi-approved-source-pilot.ts
+          cat ../tmp/fi-source-approved-pilot/current.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload five FI approval source pilot (advisory)
+        if: steps.fi_approved_pilot.outcome == 'success'
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: fi-approved-source-pilot-five
+          path: |
+            tmp/fi-source-approved-pilot/current.json
+            tmp/fi-source-approved-pilot/current.md
+          if-no-files-found: error
+          retention-days: 14
+
+      # Issue #369: status is derived from real source files and evidence, not labels.
+      - name: Derive FI and translation evidence state (read-only)
+        id: fi_derived_evidence
+        if: >-
+          steps.select.outputs.needs_node == 'true' &&
+          (steps.select.outputs.run_content == 'true' ||
+           steps.select.outputs.run_translation_review == 'true' ||
+           contains(steps.select.outputs.changed_paths, 'translation-derived-evidence'))
+        working-directory: site
+        env:
+          CHANGED_PATHS: ${{ steps.select.outputs.changed_paths }}
+        run: |
+          npx tsx --test tests/translation-derived-evidence-ledger.test.ts tests/translation-derived-evidence-cli.test.ts
+          npx tsx scripts/translation-derived-evidence-cli.ts --out=tmp/translation-derived-evidence/current
+          cat ../tmp/translation-derived-evidence/current.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload FI source/evidence projection (advisory)
+        if: steps.fi_derived_evidence.outcome == 'success'
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: fi-translation-derived-evidence
+          path: |
+            tmp/translation-derived-evidence/current.json
+            tmp/translation-derived-evidence/current.md
+          if-no-files-found: error
+          retention-days: 14
+
       - name: Check new recipes for semantic duplicates (advisory)
         if: steps.select.outputs.run_content == 'true'
         env:
@@ -308,6 +389,18 @@ jobs:
             site/similarity-inventory.json
           if-no-files-found: error
           retention-days: 14
+
+      # The ordinary build generates validated recipe routes but does not scan
+      # every historical nutrition record. Risky evidence/model changes still
+      # fail closed under the same mandatory Recipe site job.
+      - name: Audit published nutrition evidence (risk-based, strict)
+        if: steps.select.outputs.run_nutrition == 'true' || steps.select.outputs.run_glycemic == 'true' || steps.select.outputs.full == 'true'
+        env:
+          PROJECT_IMAGE_ROOT: ${{ steps.images.outputs.root }}
+        run: |
+          npm run content:sync
+          npm run audit:nutrition -- --strict
+        working-directory: site
 
       - name: Build the publishable site
         env:
@@ -339,6 +432,7 @@ jobs:
         shell: pwsh
         env:
           UNIT_TESTS: ${{ steps.select.outputs.unit_tests }}
+          VERIFIED_IMAGE_ROOT: ${{ steps.images.outputs.root }}
         run: |
           if ($env:UNIT_TESTS -eq '*') {
             & npm test
@@ -370,6 +464,8 @@ jobs:
 
       - name: Run image pipeline checks
         if: steps.select.outputs.run_images == 'true'
+        env:
+          VERIFIED_IMAGE_ROOT: ${{ steps.images.outputs.root }}
         run: npm run test:image
         working-directory: site
 

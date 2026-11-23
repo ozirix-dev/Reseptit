@@ -1,0 +1,68 @@
+name: Feedback Pages readiness (offline)
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/feedback-pages-readiness.yml"
+      - "site/functions/**"
+      - "site/migrations/000*_feedback*.sql"
+      - "site/src/features/feedback/**"
+      - "site/workers/feedback-retention.ts"
+      - "site/scripts/feedback-cloudflare-preview-probe*"
+      - "site/scripts/feedback-pages-local-smoke.mjs"
+      - "docs/product/recipavo-cloudflare-readiness-2026-11-21.md"
+  workflow_dispatch:
+
+# Offline compilation and disposable local workerd only.
+# No Cloudflare credentials, deployment, production writes or public submissions.
+permissions:
+  contents: read
+
+concurrency:
+  group: feedback-pages-readiness-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  dry-run:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install pinned site dependencies
+        run: npm ci
+        working-directory: site
+      - name: Test safe preview URL, SHA and Function contract
+        run: node --test scripts/feedback-cloudflare-preview-probe.test.mjs
+        working-directory: site
+      - name: Compile real Pages Functions using pinned Wrangler (no deployment)
+        working-directory: site
+        shell: bash
+        run: |
+          set -euo pipefail
+          npx --yes wrangler@4.165.0 pages functions build functions \
+            --outfile "$RUNNER_TEMP/feedback-pages-worker.js" \
+            --output-routes-path "$RUNNER_TEMP/feedback-pages-routes.json"
+          test -s "$RUNNER_TEMP/feedback-pages-worker.js"
+          test -s "$RUNNER_TEMP/feedback-pages-routes.json"
+      - name: Smoke test disposable local Pages runtime with feedback OFF
+        run: node scripts/feedback-pages-local-smoke.mjs
+        working-directory: site
+      - name: Summarize non-deployment scope
+        if: success()
+        shell: bash
+        run: |
+          {
+            echo '## Feedback Pages rehearsal'
+            echo '- Functions bundle: PASS'
+            echo '- Disposable workerd routing: PASS'
+            echo '- GET /api/feedback: 405'
+            echo '- POST /api/feedback without bindings/enablement: 503'
+            echo '- Cloudflare account inspected: NO'
+            echo '- Remote Pages preview deployed: NO'
+            echo '- Real D1/Turnstile/Cron/WAF tested: NO'
+            echo '- Production deployment or feedback collection: NO'
+          } >> "$GITHUB_STEP_SUMMARY"

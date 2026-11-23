@@ -103,8 +103,13 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false,
     if (/^reseptit\/.+\.md$/i.test(file)) {
       if (file.includes("/_mallipohjat/")) return fallback();
       plan.runContent = true;
-      addNutritionChecks(plan);
-      addGlycemicChecks(plan);
+      // All ordinary FI recipes still receive the mandatory site build,
+      // route generation, publication preflight and changed-content checks.
+      // Full nutrition/GK regression suites are reserved for evidence, data
+      // and calculation-engine changes selected by their own paths below.
+      plan.runBuild = true;
+      plan.runStatic = true;
+      plan.needsNode = true;
       continue;
     }
     if (/^kaannokset\/.+\.md$/i.test(file)) {
@@ -335,6 +340,9 @@ function shouldRunFiEditorialAudit(paths) {
     const file = raw.replaceAll("\\", "/");
     if (/^reseptit\/.+\.md$/i.test(file) && !file.includes("/_mallipohjat/")) return true;
     if (file === ".github/workflows/pages.yml") return true; // Verify this gate in its own PR.
+    // The quarantine membership is consumed by both the raw FI inventory and
+    // the published content build. Treat a change as an audit input mutation.
+    if (file === "site/scripts/public-recipe-quarantine.json") return true;
     if (/^site\/scripts\/.+\.(?:mjs|ts)$/i.test(file)) return true;
     if (/^site\/src\/content\/.+\.ts$/i.test(file)) return true;
     return false;

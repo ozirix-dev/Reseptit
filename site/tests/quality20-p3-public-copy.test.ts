@@ -2,6 +2,10 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import path from "node:path";
+
+const imageSourceRoot = process.env.VERIFIED_IMAGE_ROOT
+  ? path.resolve(process.env.VERIFIED_IMAGE_ROOT)
+  : path.resolve(import.meta.dirname, "../../kuvat");
 import test from "node:test";
 import { projectPublicRecipeMethodCopy, publicRecipeDescription } from "../scripts/public-recipe-copy";
 import { siteContent } from "../src/generated/content.generated";
@@ -41,7 +45,7 @@ function gitBlob(data: string | Buffer) {
 }
 
 test("quality20 P3: recipe copy remains source-bound and nutrition-stable across four languages", () => {
-  const image = readFileSync(path.join(root, "kuvat/paaruoat/hummus.webp"));
+  const image = readFileSync(path.join(imageSourceRoot, "paaruoat/hummus.webp"));
   assert.equal(gitBlob(image), "271e7699f2e86dfbd8f8e26464ab5d368a4084ef", "visually reviewed pita image unchanged");
   for (const fixture of fixtures) {
     const published = siteContent.recipes.filter(r => r.recipeId === fixture.id);

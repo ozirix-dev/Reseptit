@@ -2,6 +2,7 @@ import { readF25AtCreation, readF25GateAtCreation, readF25HistoricalBlob } from 
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { evaluateBatchEntry } from "../scripts/translation-batch-partition";
+import { type FiSourceQualityEvidence } from "../scripts/translation-fi-source-quality";
 import { semanticHash, type SemanticEvidence } from "../scripts/translation-semantic-review";
 import type { TranslationAuditResult } from "../scripts/translation-audit";
 type Recipe = TranslationAuditResult["publishedSources"][number];
@@ -38,70 +39,129 @@ const proofs = (b: ReturnType<typeof bundle>): SemanticEvidence =>
       reviewed_at: "2026-11-09", reference: "tests: deliberately human-readable peer comparison",
       outcome: "pass" as const, findings: []},
   ]));
+const quality = (b: ReturnType<typeof bundle>): FiSourceQualityEvidence => ({
+  [b.id]: {
+    source_hash: semanticHash(b.source),
+    reviewed_at: "2026-11-21",
+    reviewed_by: "Synthetic reviewer fixture",
+    reference: "tests: independent source review fixture",
+    decision: "pass",
+    checks: {
+      ingredients: {status: "pass", reference: "tests: all ingredients reconciled"},
+      method: {status: "pass", reference: "tests: method checked"},
+      food_safety: {status: "pass", reference: "tests: safety checked"},
+      servings_and_time: {status: "pass", reference: "tests: servings checked"},
+      nutrition: {status: "pass", reference: "tests: nutrition checked"},
+      glycemic: {status: "unavailable", reference: "tests: GK explicitly unavailable"},
+    },
+    findings: [],
+  },
+});
+const evaluate = (b: Parameters<typeof evaluateBatchEntry>[0], e: SemanticEvidence) =>
+  evaluateBatchEntry(b, e, quality(bundle()));
+
+test("FI-01: omitted cooking fat cannot be accepted without independent source correction", () => {
+  const b = bundle(), q = quality(b);
+  q[b.id]!.decision = "hold";
+  q[b.id]!.findings.push({severity: "P1", status: "open", summary: "Frying oil omitted from source ingredients"});
+  const d = evaluateBatchEntry(b, proofs(b), q);
+  assert.equal(d.group, "source-hold");
+});
+test("FI-02: irrelevant meat instruction blocks source despite all matching translations", () => {
+  const b = bundle(), q = quality(b);
+  q[b.id]!.findings.push({severity: "P1", status: "open", summary: "Unrelated meat step in porridge recipe"});
+  assert.equal(evaluateBatchEntry(b, proofs(b), q).group, "source-hold");
+});
+test("FI-03: ingredient species/unit uncertainty blocks FI decision", () => {
+  const b = bundle(), q = quality(b);
+  q[b.id]!.checks.ingredients.status = "hold";
+  assert.equal(evaluateBatchEntry(b, proofs(b), q).group, "source-hold");
+});
+test("FI-04: unsafe temperature blocks FI decision", () => {
+  const b = bundle(), q = quality(b);
+  q[b.id]!.findings.push({severity: "P0", status: "open", summary: "Unsafe cooking temperature"});
+  assert.equal(evaluateBatchEntry(b, proofs(b), q).group, "source-hold");
+});
+test("FI-05: changed source invalidates approval even with earlier translation proof", () => {
+  const b = bundle(), q = quality(b);
+  b.source.content += "\nAdditional instruction";
+  const d = evaluateBatchEntry(b, proofs(b), q);
+  assert.equal(d.group, "source-hold");
+  assert.match(d.reasons.join(" "), /stale/);
+});
+test("FI-WATER: preparation water is not automatically an ingredient defect", () => {
+  const b = bundle(), q = quality(b);
+  assert.match(b.source.content, /vedessä/);
+  assert.equal(evaluateBatchEntry(b, proofs(b), q).group, "candidate");
+});
+test("source quality missing never produces a release candidate", () => {
+  const b = bundle();
+  assert.equal(evaluateBatchEntry(b, proofs(b)).group, "source-hold");
+});
 test("candidate requires all three current reviewed pair hashes", () => {
   const b = bundle();
-  assert.equal(evaluateBatchEntry(b, proofs(b)).group, "candidate");
+  assert.equal(evaluate(b, proofs(b)).group, "candidate");
 });
 test("missing evidence, including only one missing locale, fails closed", () => {
   const b = bundle(), e = proofs(b);
   delete e["mock:th"];
-  const result = evaluateBatchEntry(b, e);
+  const result = evaluate(b, e);
   assert.equal(result.group, "needs-review");
   assert.match(result.reasons.join(" "), /th: NOT REVIEWED/);
 });
 test("hash drift is never approved by a green structural check", () => {
   const b = bundle(), e = proofs(b);
   b.targets.th!.content += "\nChanged critical note";
-  const result = evaluateBatchEntry(b, e);
+  const result = evaluate(b, e);
   assert.equal(result.group, "needs-review");
   assert.match(result.reasons.join(" "), /stale|STALE/);
 });
 test("unresolved P1 findings block candidate", () => {
   const b = bundle(), e = proofs(b);
   e["mock:sv"]!.findings = [{ severity: "P1", status: "open", summary: "allergen mismatch" }];
-  assert.equal(evaluateBatchEntry(b, e).group, "needs-review");
+  assert.equal(evaluate(b, e).group, "needs-review");
 });
 test("source HOLD cannot be cleared by complete and current evidence", () => {
   const b = bundle(), e = proofs(b);
   b.reviewState = "source-hold";
-  assert.equal(evaluateBatchEntry(b, e).group, "source-hold");
+  assert.equal(evaluate(b, e).group, "source-hold");
 });
 test("source note or ingredient drift blocks candidate even if evidence is present", () => {
   const b = bundle(), e = proofs(b);
   b.targets.en!.data.ingredients[0]!.amount = 300;
-  const result = evaluateBatchEntry(b, e);
+  const result = evaluate(b, e);
   assert.equal(result.group, "needs-review");
   assert.match(result.reasons.join(" "), /amount/);
 });
 test("a source mark alone does not count as a completed semantic review", () => {
   const b = bundle(), e = proofs(b);
   b.reviewState = "unreviewed";
-  assert.equal(evaluateBatchEntry(b, e).group, "needs-review");
+  assert.equal(evaluate(b, e).group, "needs-review");
 });
 
 test("missing third language cannot be promoted as a two-language partial", () => {
   const b = bundle(), e = proofs(b);
   const withoutThai = {...b, targets: {en: b.targets.en, sv: b.targets.sv}};
-  const decision = evaluateBatchEntry(withoutThai, e);
+  const decision = evaluate(withoutThai, e);
   assert.equal(decision.group, "needs-review");
   assert.match(decision.reasons.join(" "), /th: translation missing/);
 });
 test("outcome human-required blocks automatic candidate promotion", () => {
   const b = bundle(), e = proofs(b);
   e["mock:en"]!.outcome = "human-required";
-  assert.equal(evaluateBatchEntry(b, e).group, "needs-review");
+  assert.equal(evaluate(b, e).group, "needs-review");
 });
 test("P0 open means source may be unsafe even when all numerical checks pass", () => {
   const b = bundle(), e = proofs(b);
   e["mock:th"]!.findings = [{severity: "P0", status: "open", summary: "food-safety error"}];
-  const result = evaluateBatchEntry(b, e);
+  const result = evaluate(b, e);
   assert.equal(result.group, "needs-review");
   assert.match(result.reasons.join(" "), /BLOCKED/);
 });
 test("missing source cannot produce a candidate even with complete evidence", () => {
   const b = bundle(), e = proofs(b);
   const withoutSource = {...b, source: null};
-  assert.equal(evaluateBatchEntry(withoutSource, e).group, "source-hold");
+  assert.equal(evaluate(withoutSource, e).group, "source-hold");
 });
 
 test("bad FI source is isolated to source HOLD instead of aborting the whole batch", async () => {
@@ -120,8 +180,8 @@ test("bad FI source is isolated to source HOLD instead of aborting the whole bat
       th: "d".repeat(64), review_state:"ai-compared-draft"};
     const decision = await partitionFromLedger(root, {recipes:{good:sample,bad:sample}}, {});
     assert.equal(decision.total, 2);
-    assert.deepEqual(decision.source_hold.map(x=>x.recipe_id), ["bad"]);
-    assert.deepEqual(decision.needs_review.map(x=>x.recipe_id), ["good"]);
+    assert.deepEqual(decision.source_hold.map(x=>x.recipe_id), ["bad", "good"]);
+    assert.equal(decision.needs_review.length, 0);
     assert.equal(decision.candidate.length, 0);
   } finally {
     await rm(root, {recursive:true,force:true});
