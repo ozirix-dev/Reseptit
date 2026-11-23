@@ -13,4 +13,3 @@ Kokki-Codex vertasi 23.11.2026 viittä reseptiä lähteisiin, aiempiin kirjallis
 Ravintolaskelmien lähtötiedot ja julkaistut neljä makroarvoa tarkistettiin kaikilta viideltä reseptiltä. Ne pysyvät samoina, koska sanamuodot eivät muuta laskennan syötteitä. Ulkopuolisen vertailureseptin valmistusohje tukee vain taulukossa mainittua kohtaa. Pilotissa ei tehty keittiökoetta.
 
 FI-lähteiden kirjallisten AI-katselmointien tarkisteet päivitettiin rajatun tekstimuutoksen jälkeen. Nykyisten EN-, SV- ja TH-käännösten muuttuneet kohdat verrattiin FI-tekstiin, ja 15 parin semanttiset tarkisteet päivitettiin [käännösten katselmointirekisteriin](../../meta/kaannokset/codex-review-evidence.json). Kaikkien viiden riippumaton FI-päätös on **SOURCE HOLD**. [FI-hyväksyntärekisteri](../../meta/kaannokset/fi-source-quality-evidence.json) jää ennalleen.
-
