@@ -25,6 +25,33 @@ function recipe(timeTotalMin: number | null): PublicRecipe {
   };
 }
 
+test("#327: a repeated phrase stays unresolved when it moves to another public recipe", () => {
+  const second = { ...evidence, recipeId: "second", path: "reseptit/ruoat/second.md" };
+  const third = { ...evidence, recipeId: "third", path: "reseptit/ruoat/third.md" };
+  const step = "Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.";
+  const inventory: RawInventory = {
+    counts: { reviewed: 3 },
+    indexedRecipes: [evidence, second, third],
+    signals: {
+      genericLead: [], duplicateDescription: [], missingTime: [],
+      repeatedSteps: [{
+        phrase: "paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset",
+        recipes: [evidence, second],
+      }],
+    },
+  };
+  const report = compareInventories(inventory, [
+    { ...recipe(45), instructionsText: [step] },
+    { ...recipe(45), recipeId: second.recipeId, routePath: "/second/" },
+    { ...recipe(45), recipeId: third.recipeId, routePath: "/third/", instructionsText: [step] },
+  ]);
+
+  assert.equal(report.totals.projectedRepeatedStepGroups, 1);
+  assert.equal(report.totals.rawRepeatGroupsNoLongerRepeated, 0);
+  assert.deepEqual(report.sourceOnly.repeatedRawGroupsStillVisible[0].stillVisible.map(item => item.recipeId),
+    [evidence.recipeId, third.recipeId]);
+});
+
 test("#327: missing total time is listed with route and pinned source evidence", () => {
   const report = compareInventories(raw, [recipe(null)]);
   const markdown = toMarkdown(report);

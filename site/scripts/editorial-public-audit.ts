@@ -182,7 +182,7 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
   const comparedRepeats = raw.signals.repeatedSteps.map(group => ({
     phrase: group.phrase,
     rawCount: group.recipes.length,
-    stillVisible: group.recipes
+    stillVisible: raw.indexedRecipes
       .filter(item => stepSets.get(item.recipeId)?.has(group.phrase))
       .map(item => enrich(visible.get(item.recipeId)!)),
   }));
