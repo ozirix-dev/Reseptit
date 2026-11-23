@@ -53,7 +53,7 @@ Använd sex medelstora ägg och väg de övriga ingredienserna till fyllningen.
 
 ## Gör så här
 
-1. Lägg sex ägg i ett lager i en kastrull och häll på kallt vatten så att vattnet står cirka 2–3 cm över äggen. Koka upp under lock. Ta kastrullen från plattan och låt de medelstora äggen ligga i det heta vattnet i 12 minuter. Både vitan och gulan ska vara fasta.
+1. Lägg sex ägg i ett lager i en kastrull och häll på kallt vatten så att vattnet står cirka 2–3 cm över äggen. Koka upp under lock. Ta kastrullen från plattan och låt de medelstora äggen ligga kvar i det heta vattnet under lock i 12 minuter. Både vitan och gulan ska vara fasta. Om ett ägg fortfarande är mjukt, fortsätt tillaga det innan du fyller det.
 2. Kyl äggen genast i kallt vatten. Skala alla sex ägg och dela dem på längden. Lägg gulorna i en skål.
 3. Finhacka gräslöken och spara lite till garnering. Mosa gulorna med en gaffel. Blanda ner majonnäsen, senapen och det mesta av gräslöken.
 4. Fördela fyllningen jämnt i de 12 ägghalvorna med en sked och strö över resten av gräslöken. Täck över och ställ i kylskåp fram till servering. Servera två halvor per portion.

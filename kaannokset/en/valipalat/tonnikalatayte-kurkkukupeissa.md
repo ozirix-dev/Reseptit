@@ -61,7 +61,7 @@ Weigh the ingredients as listed before you start.
 ## Preparation
 
 1. Drain the tuna in a sieve and weigh the fish without the canning liquid. Wash the cucumber, celery and dill.
-2. Cut the cucumber into 12 slices, about 2–3 cm thick. Scoop out the centres with a teaspoon, leaving the base and sides of each cup intact. Weigh the cups without the scooped-out centres. You need about 300 g of prepared cups in total. Pat the cups lightly with kitchen paper.
+2. Cut the cucumber into 12 slices, about 2–3 cm thick. Scoop out the centres with a teaspoon, leaving the base and sides of each cup intact. After hollowing, weigh the bases and sides together. Set the scooped-out centres aside. You need about 300 g of prepared cups in total. Pat the cups lightly with kitchen paper.
 3. Finely chop the celery and dill. Set aside a little dill for topping. Flake the tuna with a fork and mix in the mayonnaise, celery, lemon juice and most of the dill.
 4. Keep the filling covered in the fridge until serving. Divide it among the cucumber cups just before serving and finish with the remaining dill. Serve three cups per person.
 

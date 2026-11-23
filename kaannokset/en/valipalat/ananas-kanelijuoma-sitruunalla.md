@@ -55,7 +55,7 @@ Fresh pineapple, lemon juice, cold water and a pinch of cinnamon are pureed into
 
 1. Rinse the pineapple and lemon before cutting. Remove the skin and hard center of the pineapple. Cut and weigh 330 g of pulp. Squeeze lemon juice.
 2. Measure water and lemon juice into a blender. Add the pineapple chunks and cinnamon. Puree until the drink is as smooth as possible.
-3. Divide into two glasses and serve cold. If necessary, stir the drink before serving, as the cinnamon may sink to the bottom.
+3. Divide the unstrained drink between two glasses and serve cold. If necessary, stir the drink before serving, as the cinnamon may sink to the bottom.
 
 ## Notes
 

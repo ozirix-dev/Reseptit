@@ -61,7 +61,7 @@ Väg ingredienserna enligt ingredienslistan innan du börjar.
 ## Gör så här
 
 1. Låt tonfisken rinna av i en sil och väg fisken utan spadet. Skölj gurkan, stjälksellerin och dillen.
-2. Skär gurkan i 12 skivor, cirka 2–3 cm tjocka. Gröp ur mitten med en tesked så att botten och sidorna förblir hela. Väg kopparna utan det urgröpta fruktköttet. Du behöver sammanlagt cirka 300 g färdiga koppar. Torka av kopparna lätt med hushållspapper.
+2. Skär gurkan i 12 skivor, cirka 2–3 cm tjocka. Gröp ur mitten med en tesked så att botten och sidorna förblir hela. Väg bottnarna och sidorna tillsammans efter urgröpningen. Lägg det urgröpta fruktköttet åt sidan. Du behöver sammanlagt cirka 300 g färdiga koppar. Torka av kopparna lätt med hushållspapper.
 3. Finhacka stjälksellerin och dillen. Spara lite dill till garnering. Dela tonfisken med en gaffel och blanda i majonnäs, stjälkselleri, citronsaft och det mesta av dillen.
 4. Förvara fyllningen övertäckt i kylskåp fram till servering. Fördela den i gurkkopparna precis före servering och toppa med resten av dillen. Servera tre koppar per portion.
 

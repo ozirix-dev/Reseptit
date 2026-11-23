@@ -46,7 +46,7 @@ Tuore ananas, sitruunamehu, kylmä vesi ja ripaus kanelia soseutuvat raikkaaksi 
 
 1. Huuhtele ananas ja sitruuna ennen leikkaamista. Poista ananaksen kuori ja kova keskiosa. Paloittele ja punnitse 330 g hedelmälihaa. Purista sitruunamehu.
 2. Mittaa vesi ja sitruunamehu tehosekoittimeen. Lisää ananaspalat ja kaneli. Soseuta, kunnes juoma on mahdollisimman sileää.
-3. Jaa kahteen lasiin ja tarjoa kylmänä. Sekoita juoma tarvittaessa ennen tarjoilua, sillä kaneli voi laskeutua pohjalle.
+3. Jaa juoma siivilöimättä kahteen lasiin ja tarjoa kylmänä. Sekoita juoma tarvittaessa ennen tarjoilua, sillä kaneli voi laskeutua pohjalle.
 
 ## Muistiinpanot
 

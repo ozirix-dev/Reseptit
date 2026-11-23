@@ -59,7 +59,7 @@ Weigh the feta after draining and the vegetables after trimming.
 
 ## Preparation
 
-1. Drain the feta and weigh out 120 g. Weigh out 100 g of yogurt and 10 g of lemon juice as well.
+1. For this cold dip, choose feta labelled as made with pasteurised milk. Drain the feta and weigh out 120 g. Weigh out 100 g of yogurt and 10 g of lemon juice as well.
 2. Crumble the feta into a bowl. Blend it with the yogurt and lemon juice using an immersion blender until smooth.
 3. Finely chop 5 g of dill and stir it into the whipped feta.
 4. Rinse the cucumber and bell pepper. Remove the stem and seeds from the pepper. Weigh out 200 g of cucumber and 150 g of pepper, then cut them into sticks.

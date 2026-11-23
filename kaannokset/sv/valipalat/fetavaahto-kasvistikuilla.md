@@ -59,7 +59,7 @@ Väg fetan efter avrinning och grönsakerna när de har ansats.
 
 ## Gör så här
 
-1. Låt fetan rinna av och väg upp 120 g. Väg också upp 100 g yoghurt och 10 g citronsaft.
+1. Välj feta gjord på pastöriserad mjölk till den kalla dippen. Kontrollera det på förpackningen. Låt fetan rinna av och väg upp 120 g. Väg också upp 100 g yoghurt och 10 g citronsaft.
 2. Smula fetan i en skål. Mixa den slät med yoghurten och citronsaften med en stavmixer.
 3. Finhacka 5 g dill och rör ner den i fetakrämen.
 4. Skölj gurkan och paprikan. Ta bort skaftet och fröna från paprikan. Väg upp 200 g gurka och 150 g paprika och skär dem i stavar.

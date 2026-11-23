@@ -2,10 +2,10 @@
   "schema_version": 1,
   "recipe_id": "rapeat-juustonaksut",
   "source_path": "reseptit/valipalat/rapeat-juustonaksut.md",
-  "source_sha256": "43183a1029640dc83fbcb2f07ce878bb258fab18a0bf0ba7bc84f24e4768e8a5",
+  "source_sha256": "f9aaed66ac60265e105838d235b66a2f4f2ea7bd8ab1a47ccc371ece6f2fc330",
   "decision": "approved",
-  "reviewed_by": "AI editorial reviewer (GPT-6)",
-  "reviewed_at": "2026-11-13",
+  "reviewed_by": "Codex (scoped editorial update; prior written AI review in git history)",
+  "reviewed_at": "2026-11-23",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -36,7 +36,7 @@
     },
     "nutrition": {
       "status": "pass",
-      "notes": "Fineli 698 is source-bound. Paprika is a documented bounded omission and rendered cheese fat remains a disclosed estimate."
+      "notes": "Fineli 698 is source-bound. Paprika is a documented bounded omission and rendered cheese fat remains a disclosed estimate. The #369 text identifies the full-cheddar-fat model as an upper estimate for fat from the cheese. The independent FI decision remains HOLD; see docs/reviews/2026-11-23-issue-369-pilot-source-clarifications.md."
     },
     "glycemic": {
       "status": "unavailable",

@@ -51,6 +51,6 @@ Väg upp 140 g riven cheddar och 1 g rökt paprikapulver.
 
 ## Anteckningar
 
-**Innehåller mjölk.** Beräknad nettomängd kolhydrater från cheddar är 0,04 g per portion. Beräkningen räknar med allt fett i osten. Fett som blir kvar på bakplåtspappret minskar den mängd fett man faktiskt äter. Det rökta paprikapulvret har lämnats utanför näringsberäkningen eftersom polyolhalten inte anges. Varje portion innehåller 0,25 g paprikapulver.
+**Innehåller mjölk.** Beräknad nettomängd kolhydrater från cheddar är 0,04 g per portion. Beräkningen räknar med allt fett i osten och ger därför en övre uppskattning av fettet från osten. Fett som blir kvar på bakplåtspappret minskar den mängd fett man faktiskt äter. Det rökta paprikapulvret har lämnats utanför näringsberäkningen eftersom polyolhalten inte anges. Varje portion innehåller 0,25 g paprikapulver.
 
 **Inget numeriskt glykemiskt belastningsvärde (GL) har fastställts.** Bilden är en illustration som skapats utifrån receptet.

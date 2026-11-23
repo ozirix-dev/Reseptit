@@ -50,7 +50,7 @@ Varaa kuusi keskikokoista kananmunaa ja punnitse täytteen muut ainekset.
 
 ## Valmistus
 
-1. Aseta kuusi kananmunaa yhteen kerrokseen kattilaan ja lisää kylmää vettä niin, että munien päällä on noin 2–3 cm vettä. Kuumenna kannen alla kiehuvaksi. Ota kattila liedeltä ja anna keskikokoisten munien kypsyä kuumassa vedessä 12 minuuttia. Sekä valkuaisen että keltuaisen tulee olla kiinteitä.
+1. Aseta kuusi kananmunaa yhteen kerrokseen kattilaan ja lisää kylmää vettä niin, että munien päällä on noin 2–3 cm vettä. Kuumenna kannen alla kiehuvaksi. Ota kattila liedeltä ja pidä kansi päällä, kun keskikokoiset munat kypsyvät kuumassa vedessä 12 minuuttia. Sekä valkuaisen että keltuaisen tulee olla kiinteitä. Jos muna jää pehmeäksi, jatka kypsentämistä ennen täyttämistä.
 2. Jäähdytä munat heti kylmässä vedessä. Kuori ja halkaise kaikki kuusi munaa pituussuunnassa. Nosta keltuaiset kulhoon.
 3. Hienonna ruohosipuli ja jätä siitä hieman pinnalle. Muussaa keltuaiset haarukalla. Sekoita joukkoon majoneesi, sinappi ja suurin osa ruohosipulista.
 4. Lusikoi täyte tasaisesti 12 munanpuolikkaaseen ja ripottele pinnalle loput ruohosipulit. Siirrä peitettynä jääkaappiin tarjoiluun asti. Tarjoa kaksi puolikasta annosta kohti.
