@@ -111,6 +111,20 @@ test("a quarantined FI recipe stays in source HOLD despite current evidence in a
   assert.match(result.reasons.join(" "), /quarantine/i);
 });
 
+test("batch and FI source ID mismatch holds even with current evidence", () => {
+  for (const id of ["another-fi-source", "karibia-bammy-kassavaleipa"]) {
+    const b = bundle();
+    b.id = id;
+    const result = evaluateBatchEntry(b, proofs(b), quality(b));
+    assert.deepEqual(result, {
+      recipe_id: id,
+      group: "source-hold",
+      reasons: ["batch recipe ID does not match FI source recipe_id"],
+      pairs: 0,
+    });
+  }
+});
+
 test("source quality missing never produces a release candidate", () => {
   const b = bundle();
   assert.equal(evaluateBatchEntry(b, proofs(b)).group, "source-hold");
