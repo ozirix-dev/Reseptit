@@ -212,8 +212,15 @@ if (changedRoutes.length > 0) {
 
 for (const recipeId of recipeIds) {
   const source = assertChangedRecipeAuditIsClean(audit, recipeId);
-  assert(source || !evidenceIds.has(recipeId), `${recipeId}: calculation evidence has no published Finnish source`);
-  if (!source) continue;
+  const evidencePath = resolveRepoFile(`docs/nutrition/calculations/${recipeId}.json`);
+  const evidenceText = await readFile(evidencePath, "utf8").catch((error: NodeJS.ErrnoException) => {
+    if (error.code === "ENOENT") return null;
+    throw error;
+  });
+  if (!source) {
+    assert(evidenceText === null, `${recipeId}: calculation evidence has no published Finnish source`);
+    continue;
+  }
 
   const translations = audit.publishedTranslations.filter((recipe) => recipe.data.recipe_id === recipeId);
 
@@ -264,13 +271,7 @@ for (const recipeId of recipeIds) {
     assert(currentRecipeHash === boundRecipeHash || reviewedBiryaniWithoutGk || reviewedCoconutBananaWithoutGk || reviewedRiceBowlWithoutGk || reviewedMolletesWithoutGk || reviewedHistoricalSourceWithoutGk || reviewedF25WithoutGk || await validateGk80Candidate(repoRoot, recipeId) || await validateRecovery(repoRoot,recipeId) || await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
   }
 
-  const evidencePath = resolveRepoFile(`docs/nutrition/calculations/${recipeId}.json`);
-  let evidence: Calculation | null = null;
-  try {
-    evidence = JSON.parse(await readFile(evidencePath, "utf8")) as Calculation;
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
-  }
+  const evidence = evidenceText === null ? null : JSON.parse(evidenceText) as Calculation;
   const nutritionChanged = changedRecipes.some((recipe) =>
     recipe.data.recipe_id === recipeId && changedNutritionValues(recipe.path));
   if (nutritionChanged) assert(evidence, `${recipeId}: changed published nutrition values require matching calculation evidence`);
