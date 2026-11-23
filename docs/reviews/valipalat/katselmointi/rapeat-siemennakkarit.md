@@ -43,16 +43,16 @@ translation_status: {}
 
 ## Kuvaus
 
-Siemenistä ja psylliumista paistettava näkkäri levitetään ohueksi levyksi ja jäähdytetään ritilällä. Luonnoksen taikinalevy jaetaan 12 palaan.
+Siemenistä ja psylliumista paistettava näkkäri levitetään ohueksi levyksi ja jäähdytetään ritilällä. Leikkausluonnoksessa taikinalevy jaetaan 12 palaan. Tarjoiluannoksen koko on vielä avoin.
 
 ## Valmistus
 
 1. Kuumenna uuni 150 °C:een (ylä- ja alalämpö). Vuoraa noin 30 × 40 cm pelti leivinpaperilla.
 2. Punnitse auringonkukansiemenet, pellavarouhe, seesaminsiemenet, chiansiemenet, psyllium ja suola. Sekoita kuivat aineet huolellisesti keskenään.
 3. Lisää 220 g vettä ja 15 g oliiviöljyä. Sekoita tasaiseksi ja anna turvota noin 10 minuuttia.
-4. Levitä massa leivinpaperille mahdollisimman tasaiseksi, alustavasti noin 2–3 mm paksuksi levyksi. Merkitse veitsellä 12 samankokoista palaa.
+4. Levitä massa leivinpaperille mahdollisimman tasaiseksi, alustavasti noin 2–3 mm paksuksi levyksi. Merkitse veitsellä leikkausluonnoksen 12 samankokoista palaa.
 5. Paista alustavasti 50–60 minuuttia. Jos levy on keskeltä pehmeä, jatka kuivaamista lyhyissä jaksoissa ja tarkkaile, ettei pinta pala.
-6. Jäähdytä kokonaan ritilällä, murra merkityistä kohdista 12 palaan ja punnitse haluttaessa valmiin erän massa. Säilytä kuivana vasta täysin jäähtyneenä.
+6. Jäähdytä kokonaan ritilällä, murra levy merkityistä kohdista ja punnitse haluttaessa valmiin erän massa. Säilytä kuivana vasta täysin jäähtyneenä.
 
 ## Muistiinpanot
 
@@ -64,9 +64,10 @@ Siemenistä ja psylliumista paistettava näkkäri levitetään ohueksi levyksi j
 
 ## Lähde- ja annoskatselmointi 23.11.2026
 
-**Valmistus.** Marttojen siemennäkkileivässä chia ja psyllium sitovat
-taikinan, joka turvotetaan ja levitetään ohueksi levyksi. Martat käyttävät
-kiehuvaa vettä, kurpitsansiemeniä ja 175 °C:n uunia. Sydänmerkin ohjeessa
+**Valmistus.** Marttojen siemennäkkileivässä on chiansiemeniä ja
+psylliumia. Ohjeessa massan annetaan vetäytyä 10 minuuttia chiansiementen
+geeliytymistä varten, ja sitten massa levitetään ohueksi levyksi. Martat
+käyttävät kiehuvaa vettä, kurpitsansiemeniä ja 175 °C:n uunia. Sydänmerkin ohjeessa
 taikina sisältää kauraa, ja lämpö lasketaan 150 °C:een vasta ensimmäisen
 paiston jälkeen. Lähteet tukevat ohueksi levittämistä ja kuivuuden
 arviointia, mutta luonnoksen 150 °C / 50–60 min jää kokeiltavaksi arvoksi
@@ -79,8 +80,8 @@ taikinassa yhteensä 205 g. Tasajaolla 12 palaan yksi pala sisältää
 laskennallisesti noin 17,1 g öljysiemeniä, jos kaikki siemenet päätyvät
 paloihin. Määrä ylittää Ruokaviraston aikuisille antaman noin 15 g:n
 päivittäisen käyttöohjeen, johon lasketaan myös muista ruoista saadut
-öljysiemenet. Merkitty 12 palaa on leikkausluonnos. Arvioi annoskoko ja
-käyttöohje uudelleen ennen julkaisua.
+öljysiemenet. Kortin `servings: 12` kirjaa leikkausluonnoksen palamäärän.
+Tarjoiluannoksen koko ja käyttöohje arvioidaan ennen julkaisua.
 [Ruokavirasto: öljysiemenet ja pellavansiemenrouhe][oljysiemenet]
 
 **Allergeenit.** Luonnos sisältää seesamia. Mahdollinen gluteenittomuusväite
