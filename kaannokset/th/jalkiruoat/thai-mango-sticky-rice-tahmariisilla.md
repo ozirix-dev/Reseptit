@@ -18,6 +18,11 @@ carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
+image:
+  src: jalkiruoat/thai-mango-sticky-rice-tahmariisilla.webp
+  alt: "ข้าวเหนียวราดน้ำกะทิกับมะม่วงหั่นเรียงเป็นรูปพัดบนจานสีเข้ม"
+  width: 1280
+  height: 853
 ingredients:
   - amount: 200
     unit: g
