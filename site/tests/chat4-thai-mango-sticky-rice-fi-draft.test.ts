@@ -22,7 +22,7 @@ test("Chat-4 mango sticky rice FI draft stays unpublished and distinct from jasm
   assert.equal(recipe.image, undefined, "no unapproved picture attached");
   assert.equal(existing.data.recipe_id, "thai-kookosriisi-mangolla");
   assert.equal(existing.data.status, "published");
-  assert.match(String(existing.data.ingredients?.[0]?.item ?? ""), /jasmiiniriisiä/);
+  assert.match(String(recipeFrontmatterSchema.parse(existing.data).ingredients[0].item), /jasmiiniriisiä/);
   assert.match(String(recipe.ingredients[0].item), /glutiiniriisiä/);
   assert.equal(siteContent.recipes.some(x => x.recipeId === recipe.recipe_id), false, "draft must not create public routes");
   for (const field of ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const) {

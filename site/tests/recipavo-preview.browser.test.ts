@@ -63,7 +63,7 @@ test("branded HTML keeps the target indexing policy, search and library working 
         ({ title, production }) => document.title === title && (production
           ? !document.querySelector('meta[name="robots"]')
           : /noindex\s*,\s*nofollow/.test(document.querySelector('meta[name="robots"]')?.getAttribute("content") ?? "")),
-        { title: recipavoHeroCopy[locale].tagline + " | Recipavo", production },
+        { title: (production ? recipavoHeroCopy[locale].title : recipavoHeroCopy[locale].tagline) + " | Recipavo", production },
       );
       assert.equal(await page.locator("h1").textContent(), recipavoHeroCopy[locale].title);
       assert.equal(await page.locator("html").getAttribute("lang"), locale);
