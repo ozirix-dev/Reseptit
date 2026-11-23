@@ -2,6 +2,7 @@
  * #334 read-only, public HTTPS release observation.
  * Evidence only: cannot authorize link placement, Cloudflare publishing or GK.
  */
+import { spawnSync } from "node:child_process";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -17,6 +18,68 @@ export const PUBLIC_ROUTES = [
   {key: "robots", path: "/robots.txt", expected: 200, html: false},
   {key: "deliberate-404", path: "/chat5-nonexistent-audit-route-20261122/", expected: 404, html: false},
 ];
+
+const crawlerFiles = new Set(["robots", "sitemap"]);
+const publicBodyLimit = 500000;
+
+// Use the runner's Python 3 XML parser so text and CDATA cannot masquerade as tags.
+const sitemapParser = String.raw`
+import json
+import sys
+import xml.etree.ElementTree as ET
+
+class NoDoctype(ET.TreeBuilder):
+    def doctype(self, name, public_id, system_id):
+        raise ValueError("Sitemap documents must not declare a DTD")
+
+try:
+    root = ET.fromstring(sys.stdin.buffer.read().decode("utf-8"),
+                         parser=ET.XMLParser(target=NoDoctype()))
+except (ET.ParseError, ValueError):
+    sys.exit(1)
+
+namespace = "{http://www.sitemaps.org/schemas/sitemap/0.9}" if root.tag.startswith("{") else ""
+entry_tags = {namespace + "urlset": namespace + "url",
+              namespace + "sitemapindex": namespace + "sitemap"}
+entry_tag = entry_tags.get(root.tag)
+if entry_tag is None or (root.text or "").strip():
+    sys.exit(1)
+
+locations = []
+for entry in root:
+    if entry.tag != entry_tag or (entry.text or "").strip() or (entry.tail or "").strip():
+        sys.exit(1)
+    location = entry.findall(namespace + "loc")
+    if len(location) != 1 or len(location[0]) or any((field.tail or "").strip() for field in entry):
+        sys.exit(1)
+    locations.append((location[0].text or "").strip())
+print(json.dumps(locations, ensure_ascii=False))
+`;
+
+function sitemapLocations(body) {
+  const parser = spawnSync(process.platform === "win32" ? "python" : "python3",
+    ["-B", "-X", "utf8", "-c", sitemapParser],
+    {input: body, encoding: "utf8", timeout: 5000, windowsHide: true});
+  return parser.status === 0 ? JSON.parse(parser.stdout) : [];
+}
+
+function inspectCrawlerFile(key, contentType, body) {
+  const mediaType = contentType?.split(";")[0].trim().toLowerCase();
+  if (key === "robots") {
+    const hasUserAgent = /^[\t ]*user-agent[\t ]*:[\t ]*[^#\s]+/im.test(body);
+    return {
+      crawlerContentMatch: mediaType === "text/plain" && !body.trimStart().startsWith("<") && hasUserAgent,
+      sitemapLocCount: null,
+    };
+  }
+  const locations = mediaType === "application/xml" || mediaType === "text/xml"
+    ? sitemapLocations(body) : [];
+  return {
+    crawlerContentMatch: locations.length > 0 && locations.every(location =>
+      /^https?:\/\/[^/]/i.test(location) && !/[\s\\]/.test(location) && URL.canParse(location)),
+    sitemapLocCount: locations.length,
+  };
+}
 
 function attribute(tag, name) {
   const re = new RegExp("(?:^|\\s)" + name + "\\s*=\\s*([\"'])(.*?)\\1", "i");
@@ -65,8 +128,9 @@ export async function checkPublicRoutes({
       const status = response.status;
       const contentType = response.headers.get("content-type");
       const sourceSha = response.headers.get("x-recipavo-commit");
-      const body = status === 200 ? (await response.text()).slice(0, 500000) : "";
-      const head = route.html && status === 200 ? inspectHeadLinks(body) : {canonical: null, hreflang: {}};
+      const body = status === 200 ? await response.text() : "";
+      const head = route.html && status === 200
+        ? inspectHeadLinks(body.slice(0, publicBodyLimit)) : {canonical: null, hreflang: {}};
       const finalUrl = response.url || requested;
       const canonical = head.canonical ? safeUrl(new URL(head.canonical, finalUrl).href) : null;
       const canonicalMatch = route.html && status === 200 && canonical !== null
@@ -76,8 +140,9 @@ export async function checkPublicRoutes({
         expectedStatus: route.expected, httpStatus: status, httpMatch: status === route.expected,
         contentType, sourceSha, canonical, canonicalMatch,
         hreflang: head.hreflang,
-        sitemapLocCount: route.key === "sitemap" && status === 200
-          ? [...body.matchAll(/<loc\b[^>]*>/gi)].length : null,
+        ...(crawlerFiles.has(route.key) && status === 200 && body.length <= publicBodyLimit
+          ? inspectCrawlerFile(route.key, contentType, body)
+          : {crawlerContentMatch: crawlerFiles.has(route.key) ? false : null, sitemapLocCount: null}),
         error: null,
       };
     } catch (error) {
@@ -85,11 +150,14 @@ export async function checkPublicRoutes({
         key: route.key, requested, finalUrl: null, redirected: null,
         expectedStatus: route.expected, httpStatus: null, httpMatch: false,
         contentType: null, sourceSha: null, canonical: null, canonicalMatch: null,
-        hreflang: {}, sitemapLocCount: null, error: String(error),
+        hreflang: {}, crawlerContentMatch: crawlerFiles.has(route.key) ? false : null,
+        sitemapLocCount: null, error: String(error),
       };
     }
   }));
   const httpVerified = observations.every(r => r.httpMatch);
+  const crawlerFilesVerified = observations.filter(r => crawlerFiles.has(r.key))
+    .every(r => r.crawlerContentMatch === true);
   const badCanonicals = observations.filter(r => r.canonicalMatch === false);
   const sourceHeaders = observations.filter(r => r.httpMatch && r.sourceSha !== null);
   const distinctSourceShas = [...new Set(sourceHeaders.map(r => r.sourceSha))].sort();
@@ -108,10 +176,12 @@ export async function checkPublicRoutes({
     statuses: {
       http: httpVerified ? "PASS" : "HOLD",
       canonical: canonicalStatus,
+      crawlerFiles: crawlerFilesVerified ? "PASS" : "HOLD",
       shaConsistency,
       hreflang: "OBSERVED ONLY",
       releaseSha: shaVerified ? "PASS" : "NOT VERIFIED",
-      overall: httpVerified && canonicalStatus === "PASS" && shaVerified ? "PASS" : "HOLD",
+      overall: httpVerified && canonicalStatus === "PASS" && crawlerFilesVerified && shaVerified
+        ? "PASS" : "HOLD",
     },
     summary: {
       checked: observations.length,
@@ -138,13 +208,15 @@ export function publicAuditMarkdown(result) {
     "", "Observed: " + result.observedAt,
     "HTTP: " + result.statuses.http + "; SHA: " + result.statuses.releaseSha,
     "; SHA consistency: " + result.statuses.shaConsistency,
-    "; overall: " + result.statuses.overall, "",
-    "| Route | HTTP | Expected | Canonical | Release header |",
-    "| --- | ---: | ---: | --- | --- |",
+    "; overall: " + result.statuses.overall,
+    "Crawler files: " + result.statuses.crawlerFiles, "",
+    "| Route | HTTP | Expected | Canonical | Crawler content | Release header |",
+    "| --- | ---: | ---: | --- | --- | --- |",
   ];
   for (const row of result.routes) {
     lines.push("| " + row.key + " | " + (row.httpStatus ?? "unavailable")
       + " | " + row.expectedStatus + " | " + (row.canonicalMatch ?? "not verified")
+      + " | " + (row.crawlerContentMatch ?? "—")
       + " | " + (row.sourceSha ?? "missing") + " |");
     if (row.error) lines.push("", "- " + row.key + " could not be observed: " + row.error, "");
   }
