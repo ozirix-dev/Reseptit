@@ -14,7 +14,7 @@ const evidence = {
   th: "อุ่นถั่วด้วยไฟอ่อน",
 } as const;
 
-test("issue #404: fully cooked ful medames is stovetop warming, not pan-frying, in all locales", () => {
+test("issue #404: non-fried ful medames does not claim unreviewed cooking metadata in any locale", () => {
   for (const [locale, warmingInstruction] of Object.entries(evidence)) {
     const relative = locale === "fi"
       ? `reseptit/aamupalat/${recipeId}.md`
@@ -29,8 +29,8 @@ test("issue #404: fully cooked ful medames is stovetop warming, not pan-frying, 
     assert.ok(parsed.content.includes("150"), relative + ": cooked bean quantity");
     assert.deepEqual(
       reviewedPublicCookingMethod(recipeId, parsed.data.cooking_method as string[]),
-      ["liesi"],
-      relative + ": project stovetop method without editing the nutrition-bound source",
+      [],
+      relative + ": suppress unsupported frying tag without changing the nutrition-bound source",
     );
   }
 });
