@@ -1,6 +1,8 @@
 import assert from "node:assert/strict";
+import { execFileSync } from "node:child_process";
 import { test } from "node:test";
-import { assistantLaunchPreflight, readinessMarkdown } from "../scripts/assistant-launch-preflight";
+import { fileURLToPath } from "node:url";
+import { assistantLaunchPreflight, readinessMarkdown, verifyReadinessRevision } from "../scripts/assistant-launch-preflight";
 
 test("A4.2 remains HOLD with 80 source-bound pending language reviews", () => {
   const audit = assistantLaunchPreflight();
@@ -35,6 +37,18 @@ test("privacy, authentication and kill-switch requirements cannot be silently sk
   assert.equal(audit.releaseAuthorized, false);
   assert.equal(audit.autoDeploy, false);
   assert.equal(audit.autoMerge, false);
+});
+
+test("readiness evidence is bound to the checked-out Git revision when CI supplies one", () => {
+  const root = fileURLToPath(new URL("../..", import.meta.url));
+  const head = execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim();
+  const other = (head[0] === "0" ? "1" : "0") + head.slice(1);
+  assert.equal(verifyReadinessRevision(root, head), head);
+  assert.equal(verifyReadinessRevision(root, undefined), "");
+  assert.throws(() => verifyReadinessRevision(root, other), /differs from checkout HEAD/);
+  assert.throws(() => verifyReadinessRevision(root, "short"), /Invalid A4 audit GITHUB_SHA/);
+  assert.ok(readinessMarkdown(assistantLaunchPreflight(), head).includes(head));
+  assert.match(readinessMarkdown(assistantLaunchPreflight()), /Git-revisio: ei varmennettu/);
 });
 
 test("the Markdown and JSON projection identify all blockers without claiming quality", () => {
