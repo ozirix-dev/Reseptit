@@ -53,7 +53,7 @@ Svenskt utkast för redaktionell kontroll; ingen egen provlagning har gjorts.
 
 ## Livsmedelssäkerhet
 
-Använd genomstekt, ätfärdigt rökt renkött. Artbestäm och tillaga svampen; förvara färdiga rullar kallt.
+Använd genomstekt, ätfärdigt rökt renkött. Artbestäm och tillaga svampen; förvara färdiga rullar kallt. Kontrollera allergenerna på produktförpackningarna.
 
 ## Redaktionella anmärkningar
 

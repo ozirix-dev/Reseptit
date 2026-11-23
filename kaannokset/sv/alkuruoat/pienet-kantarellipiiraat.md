@@ -68,7 +68,7 @@ Svenskt utkast för redaktionell kontroll; ingen egen provlagning har gjorts.
 
 ## Livsmedelssäkerhet
 
-Använd endast säkert artbestämda kantareller. Grädda äggfyllningen ordentligt och förvara rester i kylskåp.
+Använd endast säkert artbestämda kantareller. Grädda äggfyllningen tills den har stelnat. Förvara pajerna som innehåller ägg och mjölkprodukter i kylskåp, även eventuella rester.
 
 ## Redaktionella anmärkningar
 

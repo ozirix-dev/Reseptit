@@ -37,15 +37,15 @@ ingredients:
   note: ประมาณ 1 ช้อนโต๊ะ
 - amount: 3
   unit: กรัม
-  item: กานพลูกระเทียม
-  note: ประมาณหนึ่งเล็บ
+  item: กระเทียม 1 กลีบ
+  note: ประมาณ 1 กลีบ
 - amount: 1
   unit: กรัม
   item: เกลือละเอียด
 - amount: 30
   unit: กรัม
   item: น้ำ
-  note: หากจำเป็นสำหรับการทำให้ผอมบาง ให้เติมน้ำสำหรับแช่อินทผาลัมด้วย
+  note: ใช้ปรับความข้นเมื่อจำเป็น ใช้น้ำอีกส่วนหนึ่งสำหรับแช่อินทผลัมแล้วเทน้ำแช่ทิ้ง
 source_language: fi
 translation_of: taateliketsuppi
 source_recipe: reseptit/alkuruoat/taateliketsuppi.md
