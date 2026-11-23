@@ -6,6 +6,7 @@ import { readFile, mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { RecipeEntry } from "../src/types/content";
+import { canonicalEditorialText } from "./canonical-editorial-text";
 
 type Evidence = { recipeId: string; title: string; path: string; sourceSha256: string };
 type RawRepeat = { phrase: string; recipes: Evidence[] };
@@ -29,16 +30,13 @@ export type PublicRecipe = Pick<RecipeEntry,
 type PublicEvidence = Evidence & { routePath: string };
 
 const GENERIC = /t(?:ä|a)ss(?:ä|a) kotikeitti(?:ö|o)(?:ö|o)n sovitetussa/i;
-function canonical(value: string): string {
-  return value.normalize("NFKC").toLocaleLowerCase("fi").replace(/\s+/g, " ")
-    .replace(/[.,!?;:“”"'()\-–—]/g, "").replace(/\s+/g, " ").trim();
-}
+
 
 function publicRepeatedSteps(fi: readonly PublicRecipe[], sources: Map<string, Evidence>) {
   const groups = new Map<string, Map<string, PublicEvidence>>();
   for (const recipe of fi) {
     for (const text of recipe.instructionsText) {
-      const phrase = canonical(text);
+      const phrase = canonicalEditorialText(text);
       if (phrase.length < 65) continue;
       if (!groups.has(phrase)) groups.set(phrase, new Map());
       groups.get(phrase)!.set(recipe.recipeId, {
@@ -179,7 +177,7 @@ export function compareInventories(raw: RawInventory, recipes: readonly PublicRe
   const publicGenericNotInRaw = generic.filter(item => !rawGenericIds.has(item.recipeId));
   const repeated = publicRepeatedSteps(fi, sources);
   const stepSets = new Map(fi.map(recipe => [
-    recipe.recipeId, new Set(recipe.instructionsText.map(canonical)),
+    recipe.recipeId, new Set(recipe.instructionsText.map(canonicalEditorialText)),
   ]));
   const comparedRepeats = raw.signals.repeatedSteps.map(group => ({
     phrase: group.phrase,
