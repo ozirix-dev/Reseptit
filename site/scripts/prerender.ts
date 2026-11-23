@@ -12,7 +12,7 @@ import { RouterProvider } from "react-router-dom";
 import { createServer } from "vite";
 import { siteContent } from "../src/generated/content.generated";
 import { glycemicLoadMeta, recipeUi } from "../src/features/recipes/recipe-i18n";
-import { recipavoHeroCopy } from "../src/features/recipes/recipavo-hero";
+import { recipavoHeroCopy, recipavoHomeTitle } from "../src/features/recipes/recipavo-hero";
 import { recipeJsonLd } from "../src/features/recipes/schema";
 import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "../src/features/blog/blog-data";
 import type { RecipeLocale } from "../src/types/content";
@@ -53,7 +53,7 @@ function routeMetadata(route: string, content: RouteContent) {
     : pilotPage ? glycemicLoadMeta[locale].title
     : recipe ? recipePageTitle(recipe)
     : siteTitle(privacy?.title ?? blogPost?.title ?? (blogIndex ? "Ruokaopas" : undefined)
-      ?? (branded && indexLocale ? recipavoHeroCopy[locale].tagline : undefined)
+      ?? (branded && indexLocale ? recipavoHomeTitle(locale) : undefined)
       ?? indexNames[locale]);
   const description = (pagination ? librarySeoDescription(locale, pagination.page, content.recipes) : undefined)
     ?? privacy?.description ?? blogPost?.description

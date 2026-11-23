@@ -1,0 +1,41 @@
+name: Recipavo Pages Functions preview guard (offline)
+
+on:
+  pull_request:
+    paths:
+      - "scripts/recipavo-pages-functions-preview.ps1"
+      - ".github/workflows/recipavo-preview-guard.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Parse guarded preview script
+        shell: pwsh
+        run: |
+          $tokens = $null
+          $errors = $null
+          $ast = [System.Management.Automation.Language.Parser]::ParseFile(
+            (Resolve-Path 'scripts/recipavo-pages-functions-preview.ps1'),
+            [ref]$tokens, [ref]$errors)
+          if ($errors.Count -gt 0 -or -not $ast) { throw "PowerShell parser failed: $errors" }
+          Write-Host 'PASS: PowerShell preview guard syntax'
+      - name: Assert preview-only safeguards, without cloud access
+        shell: pwsh
+        run: |
+          $src = Get-Content scripts/recipavo-pages-functions-preview.ps1 -Raw
+          foreach ($marker in @('SupportsShouldProcess', 'ExpectedSha', 'PreviewBranch',
+              'preview-chat1-functions-', 'ShouldProcess', 'pages deploy',
+              'feedback-cloudflare-preview-probe.mjs', 'LiveSha', '--commit-hash',
+              'production_branch', '--branch')) {
+            if (-not $src.Contains($marker)) { throw "Missing preview gate: $marker" }
+          }
+          if ($src -match 'secret put|pages project delete|Invoke-Expression|Set-ExecutionPolicy') {
+            throw 'Unsafe operation in preview guard'
+          }
+          Write-Host 'PASS: offline preview markers; no deployment performed'

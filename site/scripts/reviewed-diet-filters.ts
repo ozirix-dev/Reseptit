@@ -138,9 +138,10 @@ export const reviewedDietFilters: Readonly<Record<string, ReviewedDietSource>> =
     tags: ["vegetarian","pescatarian"],
     sourceBlobShas: { fi: "3ea73d0d275bc53355bdd705fc3a076ccd8099b0", en: "0db3e9fb6e9ba258cb0ec46b38add63175483aef", sv: "9037586927abd14f8c3c82a9379f44c4da345530", th: "45086a5249b67df6401c8f3653319fd1fdab9401" },
   },
+  // #895: only Thai garlic piece -> clove; no ingredient or dietary scope change.
   "gazpacho": {
     tags: ["vegetarian","pescatarian"],
-    sourceBlobShas: { fi: "61b92f37817a09c4d04bdaba1acc378c1918f0a3", en: "ceab50d7bd11dac188c93a02564415920061ae2a", sv: "3cfcd586c9777924e8e7edd1842ece128343a707", th: "853306ba95c59d523b2d4111438ab56d9e6530e8" },
+    sourceBlobShas: { fi: "61b92f37817a09c4d04bdaba1acc378c1918f0a3", en: "ceab50d7bd11dac188c93a02564415920061ae2a", sv: "3cfcd586c9777924e8e7edd1842ece128343a707", th: "d7ee3febd451002866bcee269e0c676c46ed5a48" },
   },
   "palak-paneer": {
     tags: ["vegetarian","pescatarian"],

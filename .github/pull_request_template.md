@@ -5,6 +5,10 @@ Uuden PR:n otsikkoon myös [Chat N].
 Jos PR tehdään GitHub API:n kautta, chatti täyttää tiedot itse PR-kuvaukseen:
 GitHub ei välttämättä lisää tätä pohjaa automaattisesti.
 Ohje: docs/rinnakkaisten-chatien-omistajuus.md.
+Erillinen nimetty Codex-työntekijä käyttää omissa uusissa PR:issään
+otsikkoa [Kokki-Codex], riviä "Työn omistaja: Kokki-Codex" ja
+mahdollisuuksien mukaan haaraa kokki-codex/<tehtava>-<paiva>.
+Älä anna Codexille Chat N -numeroa. Chat-1 vastaa Ready/merge-toimista.
 -->
 
 ## Työn omistajuus
