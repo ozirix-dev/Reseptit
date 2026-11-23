@@ -62,3 +62,10 @@ Tässä työssä ei käytetty ulkoista kielimallipalvelua, tilausta, API-avainta
 - **Merkitys:** korjatun synteettisen kysymysjoukon versionhallinta voidaan integroida teknisillä porteilla, vaikka sen myöhempi **aito FI/EN/SV/TH-ihmiskielikatselmointi pysyy 80/80 PENDING**, eikä maksullista benchmarkkia tai julkista AI-käyttöä valtuuteta. Riippumaton tuleva katselmoija tekee omat todelliset päätöksensä ja tallentaa niiden rivikohtaiset versiosidokset.
 
 **Integraatiokriteerit:** tämän PR:n täsmä-HEADin GitHub Recipe site ja Chat owner metadata PASS, Repo Guardin SHA-sidottu Ready/merge sekä merge-SHA:n main-CI. Jos mikä tahansa tarkistus epäonnistuu, STOP; tutkintamuistio ei itsessään ole julkaisu- eikä kielihyväksyntä.
+
+## 23.11.2026 – integraatioriippuvuus #908 ratkaistu
+
+- PR #778:n edellisen täsmä-HEADin [Recipe site #45087477569](https://github.com/ozirix-dev/Reseptit/actions/runs/45087477569) rakensi sivuston onnistuneesti ja suoritti **kaikki viisi A4.1-kielitestiä PASS**; koko valikoidussa yksikkötestijoukossa 851 PASS, 4 FAIL. Nämä neljä olivat [Issue #907](https://github.com/ozirix-dev/Reseptit/issues/907) -gazpachon historiallisiin GK/ruokavalio-SHA-lukkoihin liittyvät riippuvuusvirheet. Tämä PR ei muuttanut niitä.
+- Korjaava [PR #908](https://github.com/ozirix-dev/Reseptit/pull/908) on nyt GitHubissa **MERGED**, merge-SHA `d7c1532ec5f5f87306fdc2339d6dea61bb32ae69`. Tämä on mainin uusi hyväksytty katselmointilähteiden perusta. Muiden chattien omistamia #908-tiedostoja ei muutettu tässä PR:ssä.
+- Tästä kirjallisesta riippuvuuden ratkaisutiedosta **ei seuraa vanhan vihreän CI:n hyväksynnän siirtoa**. A4.1:n uusi täsmä-HEAD testataan uudelleen kyseisen mainin kanssa GitHubin PR-synteettisellä yhdistelmällä. Ihmiskielikatselmointi 80/80 PENDING ja tuotanto-AI OFF pysyvät muuttumattomina.
+
