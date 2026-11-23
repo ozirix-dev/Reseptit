@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "recipe_id": "keto-suklaapallot",
+  "source_path": "reseptit/valipalat/keto-suklaapallot.md",
+  "source_sha256": "8e6953e52d060aaf9d98e2c3cba5222e74a030359086985aa2feef78d2e6fd5b",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-23",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://naturallysweet.com.au/blogs/recipes/keto-chocolate-coconut-bliss-balls",
+      "https://foodin.fi/tuote/erytritoli-luomu-200g-2/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/keto-suklaapallot.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Mainissa ei ole julkaistua reseptiä tällä tunnuksella. Alkuperäinen katselmointikortti säilytetään historiallisena."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Kookos 30 g vaivataan kokonaan massaan. Naturally Sweetin ohjeen sideaineina voi, mantelivoi ja kookosöljy, joiden suhteet on sovitettu samaa menetelmää varten. Vesi on poistettu luonnoksesta."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Lähde sekoittaa kookoksen kuiviin aineisiin ja lisää sulatetun voin, pähkinävoin ja kookosöljyn. Muotoillaan viilennetty massa ja jätetään ylimääräinen kuorrute pois. Ei väitettä omasta kokeesta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Käytetään sellaisenaan syötäviä mantelituotteita ja pastöroidusta kermasta valmistettua voita. Maito ja manteli ilmoitetaan allergeeneina. Pallot säilytetään peitettyinä jääkaapissa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Koko massa jaetaan 12 yhtä suureen palloon. Lähtöainemassaa on 235,5 g eli noin 19,6 g palloa kohti. Tämä ei ole punnittu valmisannos. Aika sisältää välijäähdytyksen ja loppujäähdytyksen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Punnitut raaka-aineet Fineli/AFCD-lähteistä, Foodin-erytritoli valmistajamerkinnästä. Erytritoli käsitellään vain kerran imeytyvän hiilihydraatin laskennassa. Kokonaishiilihydraatti sisältää kuidun ja polyolit."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Reseptikohtainen GK jätetään määrittämättä, koska valmisannoksesta ei ole hyväksyttyä GI- tai GK-evidenssiä."
+    }
+  }
+}

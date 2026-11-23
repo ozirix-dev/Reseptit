@@ -32,7 +32,7 @@ type Mapping = {
   recipes: Binding[];
 };
 
-test("issue #333: keto chocolate balls stay in draft and are not published or classified keto", () => {
+test("issue #333: the historical chocolate ball draft is unchanged and has no diet classification", () => {
   const source = readFileSync(path.join(root, sourcePath), "utf8");
   assert.equal(blobHash(source), sourceSha, "draft review changed without updating evidence");
   const parsed = parseMarkdown(source);
@@ -50,7 +50,7 @@ test("issue #333: keto chocolate balls stay in draft and are not published or cl
     "carbs_net_per_serving_g", "carbs_total_per_serving_g",
     "protein_per_serving_g", "fat_per_serving_g",
   ] as const) assert.equal(data[key] ?? null, null, key);
-  assert.equal(siteContent.recipes.some(x => x.recipeId === recipeId), false);
+
   assert.match(data.title, /erytritolilla/i);
   assert.doesNotMatch(data.title, /sokeriton|keto|ilman lisättyä sokeria/i);
   assert.match(parsed.content, /KATSELMOINTI \/ EI JULKAISUUN/);
@@ -98,4 +98,20 @@ test("issue #333: separate B2 source mapping remains HOLD and cannot authorize p
   const coconut = row.ingredients[4];
   assert.equal(coconut.match, "REVIEW");
   assert.match(coconut.note, /käyttämättä jäänyt kuorrute/);
+});
+
+test("issue #333: the reviewed chocolate ball recipe publishes without a keto claim", () => {
+  const release = siteContent.recipes.filter(recipe => recipe.recipeId === recipeId);
+  assert.equal(release.length, 1);
+  const source = readFileSync(path.join(root, "reseptit/valipalat/keto-suklaapallot.md"), "utf8");
+  const parsed = parseMarkdown(source);
+  assert.ok(parsed);
+  const data = recipeFrontmatterSchema.parse(parsed.data);
+  assert.equal(data.status, "published");
+  assert.equal(data.url_slug, "manteliset-suklaapallot");
+  assert.equal(data.diet_class, undefined);
+  assert.equal(data.servings, 12);
+  assert.match(data.title, /erytritolilla/i);
+  assert.doesNotMatch(data.title, /sokeriton|keto|ilman lisättyä sokeria/i);
+  assert.match(parsed.content, /kookoshiutaleisiin/);
 });
