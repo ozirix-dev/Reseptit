@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { assistantEvalCases, type AssistantEvalCase } from "../src/features/assistant/eval-cases";
-import { assistantLanguageReviewRows, renderAssistantLanguageReview } from "../src/features/assistant/language-review";
+import { assistantLanguageReviewRows, renderAssistantLanguageReview, summarizeAssistantLanguageDecisions } from "../src/features/assistant/language-review";
 
 test("A4.1 review worksheet has 80 unapproved, SHA-bound prompts in exactly four 20-case language groups", () => {
   const rows = assistantLanguageReviewRows(assistantEvalCases);
@@ -84,4 +84,24 @@ test("A4.1 published recipe comparison uses known IDs and exact EN/TH salmon rec
   }
   assert.match(rows.find((r) => r.id === "A4-en-18")!.prompt, /creamy salmon casserole/iu);
   assert.match(rows.find((r) => r.id === "A4-th-18")!.prompt, /สตูว์ปลาแซลมอนครีม/u);
+});
+
+test("A4.1 counts only submitted current decisions and leaves missing cases pending", () => {
+  const rows = assistantLanguageReviewRows(assistantEvalCases);
+  const decision = { id: rows[0].id, sourceSha256: rows[0].sourceSha256,
+    reviewer: "review-123", reviewedOn: "2026-11-23", reason: "Meaning matches", status: "APPROVED" };
+  const revision = { ...decision, id: rows[1].id, sourceSha256: rows[1].sourceSha256,
+    status: "REVISE", reason: "Clarify wording" };
+  assert.deepEqual(summarizeAssistantLanguageDecisions(rows, [decision, revision]),
+    { total: 80, pending: 78, approved: 1, revise: 1 });
+  assert.deepEqual(summarizeAssistantLanguageDecisions(rows, []),
+    { total: 80, pending: 80, approved: 0, revise: 0 });
+  assert.throws(() => summarizeAssistantLanguageDecisions(rows, [decision, decision]), /Duplicate/);
+  assert.throws(() => summarizeAssistantLanguageDecisions(rows, [{ ...decision, id: "A4-fi-99" }]), /Unknown/);
+  assert.throws(() => summarizeAssistantLanguageDecisions(rows, [{ ...decision, reason: "" }]), /Invalid/);
+  assert.throws(() => summarizeAssistantLanguageDecisions(rows, [{ ...decision, reviewedOn: "2026-02-30" }]), /Invalid/);
+
+  const changed = assistantEvalCases.map(item => item.id === decision.id
+    ? { ...item, prompt: item.prompt + " Kiitos." } : item);
+  assert.throws(() => summarizeAssistantLanguageDecisions(assistantLanguageReviewRows(changed), [decision]), /Stale/);
 });
