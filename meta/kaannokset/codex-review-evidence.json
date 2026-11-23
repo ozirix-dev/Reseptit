@@ -11608,16 +11608,16 @@
   },
   "taateliketsuppi:en": {
     "source_hash": "05cbc349098885e4649047820c1249c7da43163a353461df17bba3240da1e363",
-    "translation_hash": "6a5ea88fae56c542ccea15595e024a57fa8e08d5d20087d568b2ef39f4781494",
-    "reviewed_at": "2026-11-15",
-    "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
-    "correction_pr": 668,
+    "translation_hash": "be7fcccb7863efe799dd6f11e885b5c33f5359a214f3b570050268f1cd8f7a2f",
+    "reviewed_at": "2026-11-23",
+    "reference": "Issue #896: Kokki-Codex full FI→EN semantic PASS #7087665770; FI Git blob a5c9ffebc59952e33fdb0bbc1c5dde1fbb9a2475; EN Git blob 56f8d03f40bffbc93ab43b56f45b1f7e85cc14b0; documented handoff docs/reviews/new-recipes/chat4-date-ketchup-approved-2026-11-23.md.",
+    "correction_pr": 906,
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
-        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+        "summary": "FI garlic clove 3 g translated correctly as about 1 clove rather than nail; clean cold thinning water is separate from soaking water which is discarded."
       }
     ]
   },
@@ -12011,16 +12011,16 @@
   },
   "taateliketsuppi:sv": {
     "source_hash": "05cbc349098885e4649047820c1249c7da43163a353461df17bba3240da1e363",
-    "translation_hash": "c719915b4a6d53bb822e56e6f2f0ac2354f7330372d82ea56e3674120fcf28b0",
-    "reviewed_at": "2026-11-15",
-    "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
-    "correction_pr": 668,
+    "translation_hash": "f55d6154bc4a41e244989e77aee4ae103e48231b6d381fd77eddfa19e87c484d",
+    "reviewed_at": "2026-11-23",
+    "reference": "Issue #896: Kokki-Codex full FI→SV semantic PASS #7087665770; FI Git blob a5c9ffebc59952e33fdb0bbc1c5dde1fbb9a2475; SV Git blob 8525afb55a24c1867238b7ae1b89158e06f0cf8e; documented handoff docs/reviews/new-recipes/chat4-date-ketchup-approved-2026-11-23.md.",
+    "correction_pr": 906,
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
-        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+        "summary": "FI 3 g garlic clove is vitlöksklyfta/ungefär 1 klyfta instead of spik; separate date soaking water is discarded and clean cold thinning water may be added."
       }
     ]
   },
@@ -12400,16 +12400,21 @@
   },
   "taateliketsuppi:th": {
     "source_hash": "05cbc349098885e4649047820c1249c7da43163a353461df17bba3240da1e363",
-    "translation_hash": "2c0dadf6a8f639ce1dbbf34b99f86f8143797339a30c7fdef3ccc95e2baf84ad",
-    "reviewed_at": "2026-11-15",
-    "reference": "docs/reviews/2026-11-15-20-reseptin-kielikatselmointi.md",
-    "correction_pr": 668,
+    "translation_hash": "65aaa989f8530865c1383a4da0b48d961d12d90ea2467e167b3c297ce263d785",
+    "reviewed_at": "2026-11-23",
+    "reference": "Issue #896: user-delivered Kokki-Codex version-paired FI→TH semantic PASS, reported in Chat-4 handoff #7086714743 (RESEPTIT-PR-PURKU-221126 / CHAT-4 02); FI Git blob a5c9ffebc59952e33fdb0bbc1c5dde1fbb9a2475; TH Git blob 16f1fa542e47299045807ad82ea8514a038361e7; docs/reviews/new-recipes/chat4-date-ketchup-approved-2026-11-23.md.",
+    "correction_pr": 906,
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
-        "summary": "17.11.2026, toinen julkisen tekstin vertailu FI-ohjeeseen. Kuvahuomautus kertoo FI-lähteen mukaisesti kuvan tekoälyalkuperän ja havainnollistavan tehtävän. Näyttötekstit: site/scripts/public-recipe-copy-r2.ts."
+        "summary": "FI 3 g garlic clove corrected from ambiguous clove spice/fingernail to กระเทียม 1 กลีบ; 30 g separate thinning water, discarded soaking water."
+      },
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Non-material TH editorial terminology: duplicated 1 กลีบ across ingredient and note, and awkward รอก as Reel wording (reported by Kokki-Codex)."
       }
     ]
   },
