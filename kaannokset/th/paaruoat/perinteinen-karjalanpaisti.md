@@ -46,10 +46,10 @@ ingredients:
     unit: "g"
     item: "เกลือ"
   - amount: 8
-    unit: "ฟอง"
+    unit: "เม็ด"
     item: "เม็ดออลสไปซ์"
   - amount: 2
-    unit: "ฟอง"
+    unit: "ใบ"
     item: "ใบกระวาน"
 ---
 
