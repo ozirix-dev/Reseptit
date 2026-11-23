@@ -42,7 +42,7 @@ import {
   type GlycemicIndexRecord,
   type GlycemicLoadRecipeInput,
 } from "./glycemic-load-model";
-import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches, exactRecipeTextBindingMatches, reviewedColdPuddingBindingText } from "./glycemic-load-recipe-binding";
+import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches, exactRecipeTextBindingMatches, reviewedColdPuddingBindingText, reviewUnmatchedGiRanges, type GiRangeReview } from "./glycemic-load-recipe-binding";
 import { siteContent } from "../src/generated/content.generated";
 import { applyCopyEdits, reviewedRecipeCopy } from "./public-recipe-copy-r2";
 import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
@@ -133,6 +133,7 @@ const recipeBindings = JSON.parse(await readFile(path.join(root, "docs/nutrition
   calculationInputs: Record<string, string | null>;
   calculationEvidence?: Record<string, string | null>;
   legacyUnboundedOmissions?: Record<string, string>;
+  unmatchedGiRanges?: Record<string, GiRangeReview>;
 };
 const recipeAliases = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-load-recipe-aliases.json"), "utf8")) as {
   aliases: Record<string, { canonical: string; evidence: string }>;
@@ -223,7 +224,10 @@ const rawResults = inputs.map((recipe) => {
   const fingerprint = createHash("sha256").update(JSON.stringify([
     sourceHashes[id], calculationInputHashes[id], calculationEvidenceHashes[id],
   ])).digest("hex");
-  const result = calculateGlycemicLoad(recipe, foodRecords, giRecords);
+  const result = calculateGlycemicLoad(recipe, foodRecords, giRecords, {
+    recipeMarkdown: publishedRecipeSources.get(id)?.markdown,
+    giRangeReview: recipeBindings.unmatchedGiRanges?.[id],
+  });
   const matchesCurrentApproval = recipeBindingMatches(recipeBindings.recipes[id], sourceHashes[id])
     && recipeBindingMatches(recipeBindings.calculationInputs[id], calculationInputHashes[id])
     && recipeBindingMatches(recipeBindings.calculationEvidence?.[id], calculationEvidenceHashes[id])
@@ -376,11 +380,14 @@ const legacyPublicResults = results.flatMap((result) => {
     : [];
   if (result.candidateSources) sourceReferences.push(...result.candidateSources);
   if (result.status === "CALCULATED" && result.ingredients === currentLegacyInputs.get(result.recipeId)?.ingredients) {
-    for (const row of inputsById.get(result.recipeId)?.ingredients ?? []) {
-      if (!row.unmatchedGiRange) continue;
-      sourceReferences.push({
-        title: row.name, url: row.unmatchedGiRange.sourceUrl,
-        matchKind: "CALCULATION_POLICY", confidence: "LOW", note: row.unmatchedGiRange.evidence,
+    const id = result.recipeId;
+    const input = inputsById.get(id);
+    if (input) for (const { min, max, applicability } of reviewUnmatchedGiRanges(
+      input, foodRecords, giRecords, publishedRecipeSources.get(id)?.markdown, recipeBindings.unmatchedGiRanges?.[id],
+    ).values()) {
+      for (const record of [min, max]) sourceReferences.push({
+        title: record.source.title, url: record.source.url,
+        matchKind: "CALCULATION_POLICY", confidence: "LOW", note: applicability,
       });
     }
   }

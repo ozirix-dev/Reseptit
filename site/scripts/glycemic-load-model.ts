@@ -1,4 +1,5 @@
 import { classifyPublicGk } from "../src/features/recipes/gk-estimate";
+import { reviewUnmatchedGiRanges, type GiRangeReview } from "./glycemic-load-recipe-binding";
 import { normalizeCarbohydrate, type FoodRecord } from "./nutrition-model";
 
 export interface GlycemicIndexRecord {
@@ -51,8 +52,8 @@ export interface GlycemicLoadIngredientInput {
   availableCarbohydrateUpperBoundPerServingG?: number;
   upperBoundEvidence?: string;
   negligibleAssumption?: string;
-  /** Glucose-scale limits for this ingredient as prepared, with applicability evidence. */
-  unmatchedGiRange?: { min: number; max: number; sourceUrl: string; evidence: string };
+  /** Registered, glucose-scale GI records supplying the lower and upper limits. */
+  unmatchedGiRange?: { sourceRecordIds: [string, string] };
 }
 
 export interface GlycemicLoadRecipeInput {
@@ -193,7 +194,11 @@ export function calculateGlycemicLoad(
   input: GlycemicLoadRecipeInput,
   foodRecords: FoodRecord[],
   giRecords: GlycemicIndexRecord[],
-  { requireBoundedGi = false } = {},
+  { requireBoundedGi = false, recipeMarkdown, giRangeReview }: {
+    requireBoundedGi?: boolean;
+    recipeMarkdown?: string;
+    giRangeReview?: GiRangeReview;
+  } = {},
 ): GlycemicLoadResult {
   if (!input.recipeId || !Number.isInteger(input.servings) || input.servings <= 0 || !input.ingredients.length) {
     throw new Error("A glycemic-load input needs a recipe ID, positive servings, and ingredients.");
@@ -207,6 +212,7 @@ export function calculateGlycemicLoad(
   let totalLoadMax = 0;
   let hasRange = false;
   const boundedGi = requireBoundedGi || input.ingredients.some(row => row.unmatchedGiRange !== undefined);
+  const rangeEvidence = reviewUnmatchedGiRanges(input, foodRecords, giRecords, recipeMarkdown, giRangeReview);
   let hasUnmatchedGiRange = false;
   let matchedCarbohydrateMin = 0;
   let unmatchedCarbohydrateMax = 0;
@@ -215,7 +221,7 @@ export function calculateGlycemicLoad(
   let omittedAvailableCarbohydratePerServingG = 0;
   let omittedAvailableCarbohydrateUpperBoundPerServingG = 0;
 
-  const ingredients = input.ingredients.map((ingredient) => {
+  const ingredients = input.ingredients.map((ingredient, index) => {
     const issues: string[] = [];
     const giCandidates = ingredient.foodKey
       ? giRecords.filter((record) => record.foodKey === ingredient.foodKey && record.calculationUse !== "REFERENCE_ONLY"
@@ -359,13 +365,12 @@ export function calculateGlycemicLoad(
           : "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.";
         unmatchedCarbohydrateMax += availablePerServing;
         if (unmatchedGiRange && ingredient.giRecordId === null && issues.length === 0) {
-          const { min, max, sourceUrl, evidence } = unmatchedGiRange;
-          if (!valid(min) || !valid(max) || max <= min
-              || URL.parse(sourceUrl)?.protocol !== "https:" || !evidence?.trim()) {
-            issues.push("Unmatched GI range is invalid or lacks source and applicability evidence.");
+          const approved = rangeEvidence.get(index);
+          if (!approved) {
+            issues.push("Unmatched GI range needs current source bindings and an approved food and preparation match.");
           } else {
             const minimumCarbohydrate = availablePerServingRange?.min ?? availablePerServing;
-            giContributionRange = { min: minimumCarbohydrate * min / 100, max: availablePerServing * max / 100 };
+            giContributionRange = { min: minimumCarbohydrate * approved.min.gi / 100, max: availablePerServing * approved.max.gi / 100 };
             totalLoadMin += giContributionRange.min;
             totalLoadMax += giContributionRange.max;
             hasUnmatchedGiRange = true;

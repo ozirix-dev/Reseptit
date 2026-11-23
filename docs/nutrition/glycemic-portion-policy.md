@@ -177,7 +177,14 @@ Uudessa ainesosalaskelmassa yksittäinen GI-arvo voi puuttua, jos
 ainesosan imeytyvä hiilihydraatti tunnetaan tai on lähteistetty arvio
 ja GI:n alaraja ja yläraja voidaan perustella kyseiselle ainekselle,
 valmistustavalle ja glukoosiasteikolle. Kerro perustelu ja lähde
-laskentasyötteessä. Laske annoksen väli kertomalla kunkin aineksen
+lähdesidonnassa. Laskentasyöte nimeää kaksi glukoosiasteikon
+GI-tietuetta nykyisestä lähderekisteristä. Alaraja ja yläraja
+saadaan tietueiden ilmoittamista arvoista. Nykyisen reseptin
+sidontarekisterin `unmatchedGiRanges`-kohdassa katselmoija
+perustelee kummankin lähteen soveltuvuuden reseptin ainesosaan
+ja valmistustapaan. Hyväksyntä sitoo ainesosarivin ja täsmälliset
+reseptitekstin, laskentasyötteen ja lähdeaineiston SHA-256:t.
+Laske annoksen väli kertomalla kunkin aineksen
 hiilihydraattimäärän ja GI:n rajat keskenään, jakamalla sadalla ja
 summaamalla alarajat ja ylärajat erikseen. Ylärajaa 100 tai
 kasvisten oletusarvoa ei käytetä. Tuntematon polyoli säilyy tuntemattomana.
