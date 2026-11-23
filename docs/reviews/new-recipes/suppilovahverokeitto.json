@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "recipe_id": "suppilovahverokeitto",
+  "source_path": "reseptit/paaruoat/suppilovahverokeitto.md",
+  "source_sha256": "1c5eacafdd87050834afa42f9f2faf616fcc17bf9a58fd76d93908ea4510c534",
+  "decision": "approved",
+  "reviewed_by": "Chat 3 – käyttäjän 23.11.2026 antaman poikkeuksellisen autonomisen FI-julkaisutoimeksiannon nykyversion lähde-/turvallisuuskatselmointi; aiempi riippumaton Chat-1-katselmointi #854",
+  "reviewed_at": "2026-11-23",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/suppilovahverokeitto-2/",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-tunnistaminen/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/reviews/chat1-five-homefood-withheld-2026-11-22.md",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: päähaaran reseptipolussa ei ole suppilovahverokeitto-tunnusta; muissa sienikeitoissa on eri sienilaji tai koostumus. PR #788 on erillisen luonnoksen ainoa saman niminen PR tarkistusjoukossa. Tämä on tarkistushetken rajattu toimituksellinen vertailu, ei lopullinen URL-uniikkiusportti."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: 9 punnittua ainesosaa, 4 annosta, tuoreiden varmasti tunnistettujen suppilovahveroiden lajina Craterellus tubaeformis. Martat käyttää tuoreita suppilovahveroita, vehnäjauhoja, kasvislientä ja kermaa sekä sulatejuustoa, jota Recipavo ei käytä. Recipavon määrät 300 g sieniä, 800 g kasvislientä ja 200 g 15% ruokakermaa ovat oma sovitus. Sienien ravintokoostumus ja liemen täsmätuote jäävät nutrition:pending, eikä lajia korvata herkkusienellä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: Marttojen suppilovahverokeitossa sienten nestettä haihdutetaan, jauhot lisätään sekoittaen, lämmin kasvisliemi ja kerma sekä soseutus kuuluvat valmistusperiaatteeseen. Recipavo käyttää 10 min hautumista, 3–5 min kermaisen liemen kuumennusta ja jättää osan kypsistä sienistä koristeeksi. Kirjallinen valmistusperiaate PASS; ei Recipavon version fyysistä kokkikoetta. 23.11.2026 oma nykyversion lähdevertailu Marttojen testattuun https://www.martat.fi/reseptit/suppilovahverokeitto-2/ -keittoon: sienet kuumennetaan ensin ja haudutetaan kasvisliemessä. Koristeeksi otettavat 2 rkl sieniä siirretty ohjeessa vasta 10 minuutin liemihaudutuksen jälkeen ennen soseutusta, jolloin niitä ei nosteta pois kesken alustavan kuivakuumennuksen. Muut ainesmäärät, 4 annosta ja perusmenetelmä ennallaan. Ei omaa keittiötestausta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: ruokasieniä saa käyttää vain varmasti tunnistettuina. Ruokaviraston ohje edellyttää kaikkien tuntomerkkien tutkimista, eikä tekoälykuva ole lajitunnistustodiste. Muista maito- ja vehnäallergeenit sekä kasvisliemen pakkausmerkinnän mahdolliset lisäallergeenit. Jauho kypsennetään hauduttamalla, keitto tarjoillaan kuumana, tähteet jäähdytetään nopeasti matalissa astioissa ja säilytetään jääkaapissa alle +6°C. Sienten todellista lajia tai kokkausta ei todisteta tällä tekstikatselmoinnilla. https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-tunnistaminen/ Versiovertailu 22.11.2026: Chat-1:n riippumattomasti katselmoiman #854:n HEADin 14033ad443e9b08a80ab5b2cbd6267138eff8fb5 jälkeen nykyiseen FI-lähteeseen lisättiin vain kuumana tarjoaminen, nopea jäähdytys matalissa astioissa ja jääkaappisäilytys alle +6 °C:ssa. Sienilajin tunnistusvaatimus, aineet ja valmistus pysyvät samana. Tämä SHA-ero on dokumentoitu, mutta Chat-3 ei hyväksy omaa tekstiään riippumattomasti. 23.11.2026 Chat-3:n uusi turvallisuustarkistus: kaikkien koristeeksi otettavienkin sienten kypsyys tulee 10 minuutin liemihaudutuksesta ennen syrjään nostoa. Käytetään vain varmasti tunnistettuja Craterellus tubaeformis -ruokasieniä; sienikuvan perusteella lajia ei tunnisteta. Lähteet https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-tunnistaminen/ ja https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-kasittely/. Tähteiden kylmäsäilytys alle +6 °C ennallaan."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Chat 3 22.11.2026: 300+120+25+30+800+200+2+1+10 = 1488 g lähtöaineksia 4 annokselle eli noin 372 g/annos ennen sienten kuivahaihdutusta ja keittämistä. Kuivakattilassa sienten nesteen haihdutus, 4 min kuullotus, 1 min suuruste, 10 min hautuminen, 3–5 min kerma ja soseutus sopivat ilmoitettuun kokonaisaikaan asianmukaisella valmistelulla. Saanto ei ole koekeittiössä punnittu."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Numeeriset ravintoarvot ja GK jätetään tarkoituksella julkaisematta. Chat-1:n #855 dokumentoi riippumattoman WITHHOLD-linjauksen aiemmalle FI-versiolle HEAD 14033ad443e9b08a80ab5b2cbd6267138eff8fb5. Nykyiseen FI-lähteeseen lisättiin sen jälkeen vain jälkiruoan sijasta keiton turvallinen tarjoilu/jäähdytys-/säilytysohje, ei muutoksia raaka-aineisiin tai määriin. Nyky-SHA:n versionkohtainen riippumaton kuittaus on edelleen tarpeen ennen nutrition:pass-merkintää. Puuttuvan tuoreen suppilovahveron lajikohtaisia ravintotietoja tai yksilöimätöntä kasvislientä ei korvata nollilla, laskentaehdokkaan osasummia ei julkaista. 23.11.2026 rajattu PASS koskee VAIN numeeristen ravintoarvojen ja energian tietoista poisjättöä. Suppilovahveron lajikohtaista ravintotietoa ja liemen koostumusta ei korvata nollalla tai toisen sienilajin proxyillä. Chat-1:n #855:n vanhan version numeerinen HOLD säilyy; sama 9 ainesrivin määrä ja annosmäärä ilman reseptikohtaisia numerokenttiä."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Reseptin Craterellus tubaeformis -sienille, kasvisliemelle, 15% ruokakermalle ja vehnäsuurusteelle ei ole hyväksyttyä täsmällistä GI-/GK-tutkimusta. Numeerinen GK pidetään määrittämättömänä; laskenta ei saa korvata puuttuvia polyoleja nollilla."
+    }
+  },
+  "supplementary_evidence": {
+    "image_path": "kuvat/paaruoat/suppilovahverokeitto.webp",
+    "image_review": "Chat 3 22.11.2026: 960×746 Git-tracked WebP näyttää vaalean sienisosekeiton sekä kypsiä sieniä ja persiljaa pinnalla. Tämä vastaa annoskuvaa visuaalisesti, mutta AI-havainnekuvan sienilajia EI voi tunnistaa eikä käyttää metsässä poimittujen sienten varmentamiseen. Kuvan lopullinen toimituksellinen ja käyttöoikeus-/ImageAssets-julkaisuhyväksyntä puuttuu. Chat-1:n #852 on mainiin yhdistetty viiden kotiruokakuvan SHA-lukittu hyväksytty Git-overlay, myös tämä WebP. Kuva on havainnekuva, eikä sen sienilaji ole silmämääräisesti varmennettavissa eikä kuva todista luonnonsienen turvallisuutta. Kokonaisjulkaisu ei seuraa automaattisesti kuvahyväksynnästä.",
+    "physical_cook_test": false,
+    "image_sha256": "8d89519dbce153b64ef50ca00f0653e0f6374ff590b80f60da60d6e50587ebdd",
+    "independent_review_reconciliation": {
+      "review_pr": 854,
+      "reviewed_head": "14033ad443e9b08a80ab5b2cbd6267138eff8fb5",
+      "current_source_sha256": "1c5eacafdd87050834afa42f9f2faf616fcc17bf9a58fd76d93908ea4510c534",
+      "source_changed_since_review": true,
+      "changed_topics": [
+        "kuumana tarjoaminen sekä tähteiden jäähdytys ja säilytys alle +6 °C"
+      ],
+      "current_version_reapproval": "Chat 3 user-delegated source/food-safety review completed 23.11.2026 for changed garnish method; Chat-1 #854 remains older SHA",
+      "image_overlay_pr": 852,
+      "numeric_macro_withholding_pr": 855,
+      "translation_review": "draft; formal independent semantic evidence pending",
+      "publication_decision": "Chat 3 FI editorial approval under user's autonomous authority, not attributed to Chat-1"
+    },
+    "fi_publication_review": {
+      "reviewer": "Chat 3 under user's explicit authorization to complete own PRs autonomously; not a new independent Chat-1 review",
+      "reviewed_at": "2026-11-23",
+      "decision": "FI-first publish only, translations remain draft",
+      "source_sha256": "1c5eacafdd87050834afa42f9f2faf616fcc17bf9a58fd76d93908ea4510c534",
+      "prior_independent_review": "docs/reviews/2026-11-22-chat1-four-homefood-independent-culinary-review.md",
+      "original_source_sha256": "6301458ccb1412c9dae4673f72a89a200e1c2c9fa7c89b106d2c8ce72c34feda",
+      "safety_change": "Reserve mushroom garnish only after 10 min hot vegetable stock simmer; all four languages aligned",
+      "source_reference": "https://www.martat.fi/reseptit/suppilovahverokeitto-2/",
+      "safety_reference": "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-tunnistaminen/",
+      "nutrition": "withheld due to missing species-specific composition",
+      "glycemic": "unavailable",
+      "image": "approved SHA-locked AI illustration PR #852, not a mushroom species identification image"
+    }
+  }
+}
