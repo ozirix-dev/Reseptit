@@ -162,6 +162,29 @@ test("malformed XML, misplaced locations and invalid URLs keep sitemap evidence 
   }
 });
 
+test("sitemap locations must belong to the audited HTTPS origin", async () => {
+  const valid = "<url><loc>https://www.recipavo.com/</loc></url>";
+  for (const location of [
+    "https://www.recipavo.com.example.org/recipe/",
+    "http://www.recipavo.com/recipe/",
+    "https://www.recipavo.com:8443/recipe/",
+  ]) {
+    const report = await inspectSitemap(
+      "<urlset>" + valid + "<url><loc>" + location + "</loc></url></urlset>",
+    );
+    const sitemap = report.routes.find(route => route.key === "sitemap");
+    assert.equal(sitemap?.sitemapLocCount, 2);
+    assert.equal(sitemap?.crawlerContentMatch, false, location);
+    assert.equal(report.statuses.http, "PASS");
+    assert.equal(report.statuses.overall, "HOLD");
+  }
+
+  const report = await inspectSitemap(
+    "<sitemapindex><sitemap><loc>https://example.org/recipes.xml</loc></sitemap></sitemapindex>",
+  );
+  assert.equal(report.statuses.crawlerFiles, "HOLD");
+});
+
 test("valid sitemap URLs and sitemap indexes are counted under the corresponding parent", async () => {
   const namespace = 'http://www.sitemaps.org/schemas/sitemap/0.9';
   const locations = '<loc>https://www.recipavo.com/</loc>';
