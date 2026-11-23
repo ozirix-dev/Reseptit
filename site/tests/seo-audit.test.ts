@@ -180,3 +180,17 @@ test("ingredient markup and JSON-LD must both use the base kitchen quantity", as
   const structured = html.replace('"2 kananmunaa"', '"100 g kananmunaa"');
   assert.ok(inspectPage(structured, page).some(finding => finding.code === "JSONLD_SOURCE"));
 });
+
+test("wrapped instructions keep their complete text and anchor in recipe JSON-LD", async () => {
+  const slug = "avokado-perunasampylat";
+  const html = await readFile(path.join(dist, slug, "index.html"), "utf8");
+  const json = html.match(/<script id="recipe-jsonld"[^>]*>([\s\S]*?)<\/script>/)?.[1];
+  assert.ok(json);
+  const structured = JSON.parse(json);
+  const steps = structured.recipeInstructions as { text: string; url?: string }[];
+  const baking = steps.find(step => step.url === `${siteBase}/${slug}/#recipe-step-4`);
+  assert.ok(baking);
+  assert.match(baking.text, /Tarkista kypsyys 25 minuutin kohdalla/);
+  assert.match(baking.text, /sisälämmön vähintään 71 °C/);
+  assert.match(html, /id="recipe-step-4"/);
+});

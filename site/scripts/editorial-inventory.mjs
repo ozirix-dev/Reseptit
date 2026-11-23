@@ -7,6 +7,7 @@ import { createHash } from 'node:crypto';
 import { readdir, readFile, mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { numberedInstructionSteps } from './numbered-instruction-steps.ts';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const CATEGORIES = ['aamupalat', 'alkuruoat', 'jalkiruoat', 'leivonnaiset', 'paaruoat', 'valipalat'];
@@ -108,7 +109,7 @@ export function analyze(sources, quarantine = new Set()) {
     if (lead && description && canonical(lead) === canonical(description)) duplicateDescription.push(evidence);
 
     const preparation = section(parsed.body, 'Valmistus');
-    const steps = preparation.split(/\r?\n/).map((line) => /^\s*\d+[.)]\s+(.+)/.exec(line)?.[1]).filter(Boolean);
+    const steps = numberedInstructionSteps(preparation);
     if (steps.length === 0) {
       missingPreparation.push(evidence);
       // Non-empty prose, bullets or unrecognized numbering need format review,
