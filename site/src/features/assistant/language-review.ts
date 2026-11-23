@@ -83,10 +83,39 @@ export function renderAssistantLanguageReview(rows: readonly AssistantLanguageRe
     "**Luonnos. 80/80 PENDING, ei hyväksyttyjä kielimerkityksiä.**",
     "Tämä on automaattisesti luotu tyhjä katselmointipohja, EI kielimallin tulos tai ihmisarvio.",
     "Tarkista jokaisessa kielessä, että kysymyksen merkitys vastaa odotettua intenttiä.",
-    "Kirjaa katselmoijan tunniste, päivämäärä, huomio ja hyväksytty SHA-256 erilliseen päätösaineistoon.",
-    "Kun kysymys tai intentti muuttuu, vanhaa hyväksyntää ei saa siirtää uudelle SHA:lle.",
+    "Kirjaa päätökset erilliseen JSON-taulukkoon. Kentät ovat id, sourceSha256, reviewer, reviewedOn (VVVV-KK-PP), reason ja status (APPROVED tai REVISE).",
+    "Tarkista päätöstiedosto komennolla npm run audit:assistant:language-review -- --decisions POLKU. Kun kysymys tai intentti muuttuu, vanha päätös hylätään.",
     "Älä vie käyttäjän keskusteluja tai henkilötietoja tähän tiedostoon.",
     "",
     ...sections.flatMap((section) => [section, ""]),
   ].join("\n");
+}
+
+/** Validate submitted decisions against the current worksheet. This checks
+ * evidence shape and freshness, never the reviewer's identity or judgment. */
+export function summarizeAssistantLanguageDecisions(
+  rows: readonly AssistantLanguageReviewRow[], input: unknown,
+) {
+  if (!Array.isArray(input)) throw new Error("A4 review decisions must be a JSON array");
+  const current = new Map(rows.map(row => [row.id, row.sourceSha256]));
+  const reviewed = new Set<string>();
+  let approved = 0;
+  let revise = 0;
+  for (const value of input) {
+    if (!value || typeof value !== "object" || Array.isArray(value)) throw new Error("Invalid A4 review decision");
+    const { id, sourceSha256, reviewer, reviewedOn, reason, status } = value;
+    if (typeof id !== "string" || !current.has(id)) throw new Error("Unknown A4 review case");
+    if (reviewed.has(id)) throw new Error("Duplicate A4 review decision for " + id);
+    if (sourceSha256 !== current.get(id)) throw new Error("Stale A4 review decision for " + id);
+    if (typeof reviewer !== "string" || !reviewer.trim() || typeof reason !== "string" || !reason.trim() ||
+        typeof reviewedOn !== "string" || !/^\d{4}-\d{2}-\d{2}$/u.test(reviewedOn) ||
+        new Date(reviewedOn).toJSON()?.slice(0, 10) !== reviewedOn ||
+        (status !== "APPROVED" && status !== "REVISE")) {
+      throw new Error("Invalid A4 review metadata for " + id);
+    }
+    reviewed.add(id);
+    if (status === "APPROVED") approved++;
+    else revise++;
+  }
+  return { total: rows.length, pending: rows.length - reviewed.size, approved, revise };
 }
