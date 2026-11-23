@@ -17,6 +17,11 @@ carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
+image:
+  src: jalkiruoat/thai-mango-sticky-rice-tahmariisilla.webp
+  alt: "Tahmariisikeko, kookoskastiketta ja viuhkaksi aseteltuja mangoviipaleita tummalla lautasella"
+  width: 1280
+  height: 853
 ingredients:
   - amount: 200
     unit: g

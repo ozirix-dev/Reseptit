@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { test } from "node:test";
 import { parseMarkdown } from "../src/content/markdown";
@@ -19,7 +20,29 @@ test("Chat-4 mango sticky rice FI draft stays unpublished and distinct from jasm
   assert.equal(recipe.language, "fi");
   assert.equal(recipe.servings, 4);
   assert.ok((recipe.time_total_min ?? 0) >= 240, "at least 4 hours of soaking");
-  assert.equal(recipe.image, undefined, "no unapproved picture attached");
+  assert.ok(recipe.image);
+  assert.equal(recipe.image.src, "jalkiruoat/thai-mango-sticky-rice-tahmariisilla.webp");
+  assert.deepEqual([recipe.image.width, recipe.image.height], [1280, 853]);
+  const image = readFileSync(new URL("../../kuvat/" + recipe.image.src, import.meta.url));
+  assert.equal(createHash("sha256").update(image).digest("hex"),
+    "32fab405fa2a5f8b85a50f196cd07cab321b0aa9378ada3f9c561b874c76285b");
+  const altTexts = new Set([recipe.image.alt]);
+  for (const locale of ["en", "sv", "th"]) {
+    const translationPath = new URL(
+      `../../kaannokset/${locale}/jalkiruoat/${recipe.recipe_id}.md`, import.meta.url,
+    );
+    const translation = parseMarkdown(readFileSync(translationPath, "utf8"));
+    assert.ok(translation);
+    const translated = recipeFrontmatterSchema.parse(translation.data);
+    assert.equal(translated.status, "draft");
+    assert.equal(translated.language, locale);
+    assert.equal(translated.translation_of, recipe.recipe_id);
+    assert.ok(translated.image?.alt);
+    assert.deepEqual([translated.image.src, translated.image.width, translated.image.height],
+      [recipe.image.src, recipe.image.width, recipe.image.height]);
+    altTexts.add(translated.image.alt);
+  }
+  assert.equal(altTexts.size, 4);
   assert.equal(existing.data.recipe_id, "thai-kookosriisi-mangolla");
   assert.equal(existing.data.status, "published");
   assert.match(String(recipeFrontmatterSchema.parse(existing.data).ingredients[0].item), /jasmiiniriisiä/);
