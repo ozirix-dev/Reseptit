@@ -195,7 +195,10 @@ resepti-, syöte- ja lähde-SHA-katselmointiin. Sopiva väli
 esitetään laskennallisena arviona ilman pistelukua. Jos perusteltu
 raja puuttuu, väli on liian leveä tai ylittää luokkarajan, uutta
 numeerista arviota ei esitetä. Yhden GK-yksikön enimmäisleveys
-on toimituksellinen raja. Reseptin julkaisupäätös tehdään erikseen.
+on toimituksellinen raja. GK100:n uusissa versiopaketeissa
+poisjätetylle hiilihydraatille ei voi liittää GI-rajoja nykyisellä
+syötteellä, joten positiivisen poisjätön sisältävä laskelma jää
+katselmointiin. Reseptin julkaisupäätös tehdään erikseen.
 
 Vanhan laskelman ainesosarivit verrataan nykyiseen reseptiin myös silloin,
 kun laskelmaan kirjattu poisjättö on nolla. Jos hiilihydraattia sisältävä

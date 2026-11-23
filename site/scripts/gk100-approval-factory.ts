@@ -305,6 +305,9 @@ export function prepareRelease(checked: Checked, decisions: Decisions, coverage:
     try {
       const variant = checked.variants.get(row.recipeId);
       if (!variant) return fail('NO_RELEASE_VARIANT_FOR_REVIEW_ONLY_METHOD');
+      // Point packets cannot bind a GI range to an omitted ingredient.
+      // Keep existing sealed releases replayable through verifyReleaseBundle.
+      if (variant.omittedCho > 0) return fail('UNBOUNDED_OMISSION_IN_NEW_RELEASE');
       if (!sha.test(row.originalSha256) || textHash(readMain(row.originalPath)) !== row.originalSha256) fail('MAIN_ORIGINAL_CHANGED');
       if (gkVariantScope(variant) === 'STUDY_COMPARISON') {
         if (coverage.studyServingRecipeIds === undefined) fail('MAIN_STUDY_COVERAGE_REQUIRED');
