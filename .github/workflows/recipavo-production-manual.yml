@@ -1,6 +1,6 @@
 name: Recipavo production release (manual)
 
-# Never triggered by push or PR. GitHub Environment enforces a 10-minute wait timer and main-only branch.
+# Never triggered by push or PR. GitHub Environment enforces a required reviewer, a 10-minute wait timer, and main-only deployment.
 on:
   workflow_dispatch:
     inputs:
@@ -28,7 +28,7 @@ concurrency:
 
 jobs:
   gate:
-    name: Read-only exact-SHA CI and 10-minute environment gate
+    name: Read-only exact-SHA CI and protected environment gate
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
@@ -39,7 +39,7 @@ jobs:
           node-version: '22'
       - name: Verify release gate logic (offline)
         run: node --test scripts/recipavo-actions-release-gate.test.mjs
-      - name: Require current main, passing Recipe site CI and protected wait timer
+      - name: Require current main, passing Recipe site CI and production protections
         env:
           GITHUB_TOKEN: ${{ github.token }}
           RELEASE_SHA: ${{ inputs.release_sha }}
@@ -64,7 +64,7 @@ jobs:
           node-version: '22'
           cache: npm
           cache-dependency-path: site/package-lock.json
-      - name: Reconfirm main, CI and timer after GitHub environment wait
+      - name: Reconfirm main, CI and production protections after the environment gate
         env:
           GITHUB_TOKEN: ${{ github.token }}
           RELEASE_SHA: ${{ inputs.release_sha }}
@@ -175,7 +175,7 @@ jobs:
             echo "- GitHub SHA: $RELEASE_SHA"
             echo '- Cloudflare project / branch: recipavo-site / production'
             echo '- CI: exact SHA / Recipe site success'
-            echo '- GitHub Environment: 10-minute wait timer, main-only, admin bypass disabled'
+            echo '- GitHub Environment: reviewer approval, 10-minute wait timer, main-only, admin bypass disabled'
             echo '- Production HTML, SEO, sitemap, assets: PASS'
             echo '- Pages Function GET /api/feedback: 405'
             echo '- Feedback POST: NOT TESTED / NOT ENABLED'
