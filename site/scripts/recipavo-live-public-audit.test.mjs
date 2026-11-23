@@ -95,6 +95,45 @@ test("reject insecure origins and invalid expected SHA", async () => {
   await assert.rejects(checkPublicRoutes({expectedSha: "abc", fetcher: syntheticFetch}), /40-character/);
 });
 
+test("crawler files HOLD even when an HTML fallback returns 200 and the expected commit", async () => {
+  for (const [path, contentType] of [
+    ["/robots.txt", "text/html"],
+    ["/robots.txt", "text/plain"],
+    ["/sitemap.xml", "text/html"],
+    ["/sitemap.xml", "application/xml"],
+  ]) {
+    const report = await checkPublicRoutes({
+      expectedSha: sha,
+      fetcher: async url => {
+        if (!url.endsWith(path)) return syntheticFetch(url);
+        return new Response("<!doctype html><html><body>Public page</body></html>", {
+          headers: {"content-type": contentType, "X-Recipavo-Commit": sha},
+        });
+      },
+    });
+    assert.equal(report.statuses.http, "PASS");
+    assert.equal(report.statuses.releaseSha, "PASS");
+    assert.equal(report.statuses.overall, "HOLD", path + " " + contentType);
+    assert.equal(report.statuses.crawlerFiles, "HOLD");
+    assert.equal(report.routes.find(route => route.requested.endsWith(path))?.crawlerContentMatch, false);
+    assert.match(publicAuditMarkdown(report), /Crawler files: HOLD/);
+  }
+});
+
+test("an empty sitemap or commented-out location does not count as crawler evidence", async () => {
+  const report = await checkPublicRoutes({
+    expectedSha: sha,
+    fetcher: async url => {
+      if (!url.endsWith("/sitemap.xml")) return syntheticFetch(url);
+      return new Response("<urlset><!-- <loc>https://www.recipavo.com/</loc> --></urlset>", {
+        headers: {"content-type": "application/xml", "X-Recipavo-Commit": sha},
+      });
+    },
+  });
+  assert.equal(report.routes.find(route => route.key === "sitemap")?.sitemapLocCount, 0);
+  assert.equal(report.statuses.overall, "HOLD");
+});
+
 test("same HTTP status but stale robots.txt commit must fail SHA consistency", async () => {
   const olderSha = "b".repeat(40);
   const report = await checkPublicRoutes({

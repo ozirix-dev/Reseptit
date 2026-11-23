@@ -18,6 +18,27 @@ export const PUBLIC_ROUTES = [
   {key: "deliberate-404", path: "/chat5-nonexistent-audit-route-20261122/", expected: 404, html: false},
 ];
 
+const crawlerFiles = new Set(["robots", "sitemap"]);
+
+function inspectCrawlerFile(key, contentType, body) {
+  const mediaType = contentType?.split(";")[0].trim().toLowerCase();
+  if (key === "robots") {
+    const hasUserAgent = /^[\t ]*user-agent[\t ]*:[\t ]*[^#\s]+/im.test(body);
+    return {
+      crawlerContentMatch: mediaType === "text/plain" && !body.trimStart().startsWith("<") && hasUserAgent,
+      sitemapLocCount: null,
+    };
+  }
+  const xml = body.replace(/<!--[\s\S]*?-->/g, "").trimStart();
+  const hasSitemapRoot = /^(?:<\?xml\s[^?]*\?>\s*)?<(?:urlset|sitemapindex)(?:\s|>)/.test(xml);
+  const sitemapLocCount = [...xml.matchAll(/<loc>\s*[^<\s][^<]*<\/loc>/g)].length;
+  return {
+    crawlerContentMatch: (mediaType === "application/xml" || mediaType === "text/xml")
+      && hasSitemapRoot && sitemapLocCount > 0,
+    sitemapLocCount,
+  };
+}
+
 function attribute(tag, name) {
   const re = new RegExp("(?:^|\\s)" + name + "\\s*=\\s*([\"'])(.*?)\\1", "i");
   return re.exec(tag)?.[2] ?? null;
@@ -76,8 +97,9 @@ export async function checkPublicRoutes({
         expectedStatus: route.expected, httpStatus: status, httpMatch: status === route.expected,
         contentType, sourceSha, canonical, canonicalMatch,
         hreflang: head.hreflang,
-        sitemapLocCount: route.key === "sitemap" && status === 200
-          ? [...body.matchAll(/<loc\b[^>]*>/gi)].length : null,
+        ...(crawlerFiles.has(route.key) && status === 200
+          ? inspectCrawlerFile(route.key, contentType, body)
+          : {crawlerContentMatch: crawlerFiles.has(route.key) ? false : null, sitemapLocCount: null}),
         error: null,
       };
     } catch (error) {
@@ -85,11 +107,14 @@ export async function checkPublicRoutes({
         key: route.key, requested, finalUrl: null, redirected: null,
         expectedStatus: route.expected, httpStatus: null, httpMatch: false,
         contentType: null, sourceSha: null, canonical: null, canonicalMatch: null,
-        hreflang: {}, sitemapLocCount: null, error: String(error),
+        hreflang: {}, crawlerContentMatch: crawlerFiles.has(route.key) ? false : null,
+        sitemapLocCount: null, error: String(error),
       };
     }
   }));
   const httpVerified = observations.every(r => r.httpMatch);
+  const crawlerFilesVerified = observations.filter(r => crawlerFiles.has(r.key))
+    .every(r => r.crawlerContentMatch === true);
   const badCanonicals = observations.filter(r => r.canonicalMatch === false);
   const sourceHeaders = observations.filter(r => r.httpMatch && r.sourceSha !== null);
   const distinctSourceShas = [...new Set(sourceHeaders.map(r => r.sourceSha))].sort();
@@ -108,10 +133,12 @@ export async function checkPublicRoutes({
     statuses: {
       http: httpVerified ? "PASS" : "HOLD",
       canonical: canonicalStatus,
+      crawlerFiles: crawlerFilesVerified ? "PASS" : "HOLD",
       shaConsistency,
       hreflang: "OBSERVED ONLY",
       releaseSha: shaVerified ? "PASS" : "NOT VERIFIED",
-      overall: httpVerified && canonicalStatus === "PASS" && shaVerified ? "PASS" : "HOLD",
+      overall: httpVerified && canonicalStatus === "PASS" && crawlerFilesVerified && shaVerified
+        ? "PASS" : "HOLD",
     },
     summary: {
       checked: observations.length,
@@ -138,13 +165,15 @@ export function publicAuditMarkdown(result) {
     "", "Observed: " + result.observedAt,
     "HTTP: " + result.statuses.http + "; SHA: " + result.statuses.releaseSha,
     "; SHA consistency: " + result.statuses.shaConsistency,
-    "; overall: " + result.statuses.overall, "",
-    "| Route | HTTP | Expected | Canonical | Release header |",
-    "| --- | ---: | ---: | --- | --- |",
+    "; overall: " + result.statuses.overall,
+    "Crawler files: " + result.statuses.crawlerFiles, "",
+    "| Route | HTTP | Expected | Canonical | Crawler content | Release header |",
+    "| --- | ---: | ---: | --- | --- | --- |",
   ];
   for (const row of result.routes) {
     lines.push("| " + row.key + " | " + (row.httpStatus ?? "unavailable")
       + " | " + row.expectedStatus + " | " + (row.canonicalMatch ?? "not verified")
+      + " | " + (row.crawlerContentMatch ?? "—")
       + " | " + (row.sourceSha ?? "missing") + " |");
     if (row.error) lines.push("", "- " + row.key + " could not be observed: " + row.error, "");
   }
