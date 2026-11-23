@@ -33,12 +33,12 @@ npm audit --audit-level=low
 npm run preview
 ```
 
-GitHub Actions valitsee tarkistukset GitHubin muodostaman PR-yhdistelmän ja
-sen ensimmäisen parentin erosta. Ajosta jäävät talteen testattu commit sekä
-PR:n head- ja base-SHA. TypeScript-testimuutos ajaa sisällön generoinnin,
-tyyppitarkistuksen ja kohdennetun testin. Laajempi julkaisu- tai
-rakennemuutos ajaa myös tarvittavat tuotantobuildin, staattisen tulosteen
-ja selaimen tarkistukset. Dokumentaatiomuutos voi käyttää kevyttä polkua.
+Recipe site / build valitsee tarkistukset testiyhdistelmän ja sen pohjan
+erosta. Jos pohja eteni ennen ajoa, CI testaa mahdollisuuksien mukaan saman
+PR-headin tuoretta pohjaa vasten. Ajon yhteenvedossa näkyvät testattu puu,
+commit sekä PR:n head ja base. Pelkkä dokumentaatiomuutos voi läpäistä
+tarkistuksen ilman kuva-aineiston palautusta. Resepti-, kuva-, julkaisu-
+ja muut sivustoon vaikuttavat muutokset ajavat valitut tarkistukset.
 GitHub Actions tarkistaa `main`-haaran buildin. Tuotantojulkaisu
 Cloudflare Pagesiin edellyttää erikseen hyväksyttyä, testattua commit-SHA:ta.
 Tuotannon reitit alkavat verkkotunnuksen juuresta.
