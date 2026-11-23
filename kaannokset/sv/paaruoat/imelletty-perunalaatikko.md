@@ -52,7 +52,7 @@ En finsk jullåda där den varma potatismosen långsamt utvecklar naturlig sötm
 1. Koka potatisen mjuk i osaltat vatten. Spara 180 ml kokvatten och mosa potatisen medan den är varm.
 2. Låt moset svalna till 55–70 °C. Rör ner kokvattnet och hälften av mjölet. Tillsätt inte mjöl när moset är över 75 °C.
 3. Täck kastrullen och håll moset i cirka 60 °C ugn i 3–4 timmar. Tillsätt resten av mjölet efter 30 minuter, rör om ibland och kontrollera temperaturen.
-4. Värm mjölken och rör ner den i det sötade moset. Tillsätt smör och salt, smaka av och använd sirap bara vid behov. Smeten ska likna tjock välling.
+4. Värm mjölken och rör ner den i det sötade moset. Tillsätt smör och salt samt sirap om du vill. Smaka inte på den mjölhaltiga smeten innan den är gräddad. Smeten ska likna tjock välling.
 5. Fördela i smorda formar, högst halvfulla eftersom lådan sväller. Grädda vid 150 °C i cirka 2 timmar tills ytan är gyllenbrun och massan har stelnat.
 
 ## Anteckningar

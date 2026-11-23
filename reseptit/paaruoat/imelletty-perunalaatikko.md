@@ -57,7 +57,7 @@ Perinteinen joulupöydän laatikko, jossa perunan tärkkelys imeltyy hitaasti l�
 1. Keitä kuoritut perunat suolattomassa vedessä pehmeiksi. Ota 180 ml keitinvettä talteen ja soseuta perunat kuumina.
 2. Jäähdytä sose 55–70 °C:seen. Lisää keitinvesi ja puolet vehnäjauhoista; sekoita tasaiseksi. Älä lisää jauhoja yli 75 °C:n massaan.
 3. Peitä kattila ja pidä massa noin 60 °C:n uunissa 3–4 tuntia. Lisää loppu jauho 30 minuutin kuluttua; sekoita muutaman kerran ja tarkkaile massan lämpötilaa.
-4. Lämmitä maito ja sekoita se imeltyneeseen soseeseen. Lisää voi ja suola, maista ja lisää siirappi vain tarvittaessa. Massan tulee olla paksuhkoa velliä.
+4. Lämmitä maito ja sekoita se imeltyneeseen soseeseen. Lisää voi ja suola sekä halutessasi siirappi. Älä maista vehnäjauhoa sisältävää massaa ennen paistamista. Massan tulee olla paksuhkoa velliä.
 5. Jaa seos voideltuihin vuokiin enintään puolilleen, sillä laatikko kuohuu. Paista 150 °C:ssa noin 2 tuntia, kunnes pinta on kullanruskea ja massa hyytynyt.
 
 ## Muistiinpanot
