@@ -1,5 +1,5 @@
 import type { RecipeEntry, RecipeLocale } from "../../types/content";
-import { classifyPublicGk, gkEstimate, gkEstimateClass, type GkRange } from "./gk-estimate";
+import { classifyPublicGk, gkEstimate, gkEstimateClass, validGkRange, type GkRange } from "./gk-estimate";
 import type { GlycemicLoadDisplayCandidate } from "./glycemic-load-display";
 
 export type GkClass = ReturnType<typeof classifyPublicGk>;
@@ -121,7 +121,8 @@ export function originalPortionGk(result: PortionGkValues, multiplier = 1) {
   // without certifying enough precision to extrapolate to another portion.
   const standardServingOnly = multiplier !== 1 && result.unroundedGlycemicLoadPerServing === null && range === null;
   const point = standardServingOnly ? null : result.unroundedGlycemicLoadPerServing ?? result.glycemicLoadPerServing;
-  const estimate = gkEstimate(point === null ? null : point * multiplier, range && scalePortionRange(range, multiplier));
+  const scaledRange = range && validGkRange(range) ? scalePortionRange(range, multiplier) : range;
+  const estimate = gkEstimate(point === null ? null : point * multiplier, scaledRange);
   const numericCategory = gkEstimateClass(estimate);
   const pointCategory = point !== null && Number.isFinite(point) && point >= 0
     ? classifyPublicGk(point * multiplier) : null;

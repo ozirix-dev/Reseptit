@@ -209,6 +209,7 @@ export function calculateGlycemicLoad(
   const blockers: string[] = [];
   let totalLoad = 0;
   let totalLoadMin = 0;
+  let totalLoadWidth = 0;
   let totalLoadMax = 0;
   let hasRange = false;
   const boundedGi = requireBoundedGi || input.ingredients.some(row => row.unmatchedGiRange !== undefined);
@@ -373,6 +374,8 @@ export function calculateGlycemicLoad(
             giContributionRange = { min: minimumCarbohydrate * approved.min.gi / 100, max: availablePerServing * approved.max.gi / 100 };
             totalLoadMin += giContributionRange.min;
             totalLoadMax += giContributionRange.max;
+            totalLoadWidth += ((availablePerServing - minimumCarbohydrate) * approved.min.gi
+              + availablePerServing * (approved.max.gi - approved.min.gi)) / 100;
             hasUnmatchedGiRange = true;
             ingredientConfidence = confidence = "LOW";
           }
@@ -397,6 +400,7 @@ export function calculateGlycemicLoad(
         totalLoad += giContribution;
         totalLoadMin += giContributionRange.min;
         totalLoadMax += giContributionRange.max;
+        totalLoadWidth += (availablePerServing - minCarbs) * giValue / 100;
       }
     }
 
@@ -427,9 +431,9 @@ export function calculateGlycemicLoad(
   if (omittedAvailableCarbohydratePerServingG >= CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G) blockers.push(`${input.recipeId}: cumulative omitted available carbohydrate is ${omittedAvailableCarbohydratePerServingG.toFixed(3)} g/serving, at or above the 2 g editorial tolerance.`);
   // Compare the unrounded endpoints and keep the range in the existing display
   // model. A full GK unit is an editorial maximum for this missing-GI route.
-  // Summing endpoints and subtracting them adds floating-point error at the boundary.
-  const widthLimit = 1 + Number.EPSILON * Math.max(1, totalLoadMax);
-  if (hasUnmatchedGiRange && (!valid(totalLoadMax) || totalLoadMax - totalLoadMin > widthLimit
+  // Adding nonnegative ingredient spreads avoids cancellation between large endpoints.
+  const widthLimit = 1 + Number.EPSILON * (1 + ingredients.length);
+  if (hasUnmatchedGiRange && (!valid(totalLoadMax) || !valid(totalLoadWidth) || totalLoadWidth > widthLimit
       || classifyPublicGk(totalLoadMin) !== classifyPublicGk(totalLoadMax))) {
     blockers.push(`${input.recipeId}: GI uncertainty spans more than one GK unit or crosses a public class boundary.`);
   }

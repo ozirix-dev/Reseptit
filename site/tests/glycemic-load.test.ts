@@ -9,7 +9,7 @@ import test from "node:test";
 import type { FoodRecord } from "../scripts/nutrition-model";
 import { calculateGlycemicLoad, classifyGlycemicLoad, roundGlycemicLoadForDisplay, type GlycemicIndexRecord, type GlycemicLoadRecipeInput } from "../scripts/glycemic-load-model";
 import { completePublishedRecipeInputs } from "../scripts/glycemic-load-pilot-input";
-import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches } from "../scripts/glycemic-load-recipe-binding";
+import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches, type GiRangeReview } from "../scripts/glycemic-load-recipe-binding";
 import { publishedGlycemicLoadForRecipe } from "../src/features/recipes/glycemic-load-display";
 import { parseMarkdown } from "../src/content/markdown";
 
@@ -225,7 +225,7 @@ test("an unmatched GI range needs registered endpoints and a current applicabili
       reviewedBy: "Synthetic reviewer", applicability: "Fixture analogue, same preparation for both endpoints" } },
   });
   const review = reviewFor(input);
-  const run = (candidate = input, composition = foods, records = gis, recipeMarkdown = markdown, giRangeReview = review) =>
+  const run = (candidate = input, composition = foods, records = gis, recipeMarkdown = markdown, giRangeReview: GiRangeReview = review) =>
     calculateGlycemicLoad(candidate, composition, records, { requireBoundedGi: true, recipeMarkdown, giRangeReview });
 
   const approved = run();
@@ -248,7 +248,7 @@ test("an unmatched GI range needs registered endpoints and a current applicabili
     run(invented, foods, gis, markdown, reviewFor(invented)),
     calculateGlycemicLoad(input, foods, gis, { recipeMarkdown: markdown }),
     run(input, foods, gis, markdown, wrongPreparation),
-    run(input, foods, gis, markdown, missingReviewRow as typeof review),
+    run(input, foods, gis, markdown, missingReviewRow),
     run(input, foods, referenceOnly, markdown, reviewFor(input, foods, referenceOnly)),
     run(input, foods, gis.slice(0, 2), markdown, reviewFor(input, foods, gis.slice(0, 2))),
     run(input, foods, gis, markdown.replace("Simmer", "Fry")),
@@ -275,6 +275,13 @@ test("an unmatched GI range needs registered endpoints and a current applicabili
   const edgeGi = [{ ...gi, gi: 53 }, endpoint("lower", 15), endpoint("upper", 115)];
   assert.ok(run(input, edgeFoods, edgeGi, markdown, reviewFor(input, edgeFoods, edgeGi)).glycemicLoadRangePerServing,
     "the exactly one-unit range survives floating-point subtraction");
+  const manyRows = { ...input, ingredients: [small, main, main, main, main, main] };
+  const accumulationFoods = [food("main", 3), foods[1]];
+  const accumulationGi = [{ ...gi, gi: 79 }, edgeGi[1], edgeGi[2]];
+  assert.ok(run(manyRows, accumulationFoods, accumulationGi, markdown, {
+    ...reviewFor(manyRows, accumulationFoods, accumulationGi),
+    ingredients: { 0: review.ingredients[1] },
+  }).glycemicLoadRangePerServing, "matched contribution totals do not distort the width");
   const wide = [gi, endpoint("lower", 0), endpoint("upper", 125)];
   assert.equal(run(input, higherFoods, wide, markdown, reviewFor(input, higherFoods, wide)).status, "INSUFFICIENT SOURCE DATA");
 });

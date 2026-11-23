@@ -12,14 +12,20 @@ export function formatOriginalPortionGk(estimate: GkEstimate, locale: string, mo
     : estimate.type === "EXACT_MODEL" ? [estimate.value] : [];
   if (rangeOnly && estimate.type === "ESTIMATED_RANGE") {
     const { min, max } = estimate.range;
+    // Use the same Intl rounding for display and classification. Use Latin
+    // digits and no grouping only when converting the rounded number back.
+    const numericFormatter = (digits: number) => new Intl.NumberFormat("en-US", {
+      maximumSignificantDigits: digits, useGrouping: false, numberingSystem: "latn",
+    });
     let digits = 3;
-    while (min !== max && min.toPrecision(digits) === max.toPrecision(digits) && digits < 17) {
-      digits++;
+    let numeric = numericFormatter(digits);
+    while (min !== max && numeric.format(min) === numeric.format(max) && digits < 17) {
+      numeric = numericFormatter(++digits);
     }
-    const format = new Intl.NumberFormat(locale, { maximumSignificantDigits: digits });
+    const display = new Intl.NumberFormat(locale, { maximumSignificantDigits: digits });
     return {
-      value: values.map(value => format.format(value)).join("–"),
-      roundingHitsBoundary: values.some(value => classifyPublicGk(Number(value.toPrecision(digits))) !== classifyPublicGk(value)),
+      value: values.map(value => display.format(value)).join("–"),
+      roundingHitsBoundary: values.some(value => classifyPublicGk(Number(numeric.format(value))) !== classifyPublicGk(value)),
     };
   }
   return {

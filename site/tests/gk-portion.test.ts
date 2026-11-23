@@ -89,6 +89,11 @@ test("an approved range without a point keeps its class and both display endpoin
     ["sv-SE", "4,75–5,25"], ["th-TH", "4.75–5.25"]]) {
     assert.equal(formatOriginalPortionGk(portion.estimate, locale, false, portion.rangeOnly).value, expected);
   }
+  const tied = originalPortionGk({ ...result, glycemicLoadRangePerServing: { min: 1.005, max: 1.006 } });
+  assert.equal(formatOriginalPortionGk(tied.estimate, "en-GB", false, tied.rangeOnly).value, "1.005–1.006");
+  const nearBoundary = originalPortionGk({ ...result, glycemicLoadRangePerServing: { min: 19.8, max: 19.95 } });
+  assert.deepEqual(formatOriginalPortionGk(nearBoundary.estimate, "en-GB", false, nearBoundary.rangeOnly),
+    { value: "19.8–20", roundingHitsBoundary: true });
   const narrow = originalPortionGk({ ...result, glycemicLoadRangePerServing: { min: 4.7511, max: 4.7512 } });
   assert.equal(formatOriginalPortionGk(narrow.estimate, "fi-FI", false, narrow.rangeOnly).value, "4,7511–4,7512");
 });
