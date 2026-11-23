@@ -2,6 +2,7 @@
  * #334 read-only, public HTTPS release observation.
  * Evidence only: cannot authorize link placement, Cloudflare publishing or GK.
  */
+import { spawnSync } from "node:child_process";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -19,6 +20,48 @@ export const PUBLIC_ROUTES = [
 ];
 
 const crawlerFiles = new Set(["robots", "sitemap"]);
+const publicBodyLimit = 500000;
+
+// Use the runner's Python 3 XML parser so text and CDATA cannot masquerade as tags.
+const sitemapParser = String.raw`
+import json
+import sys
+import xml.etree.ElementTree as ET
+
+class NoDoctype(ET.TreeBuilder):
+    def doctype(self, name, public_id, system_id):
+        raise ValueError("Sitemap documents must not declare a DTD")
+
+try:
+    root = ET.fromstring(sys.stdin.buffer.read().decode("utf-8"),
+                         parser=ET.XMLParser(target=NoDoctype()))
+except (ET.ParseError, ValueError):
+    sys.exit(1)
+
+namespace = "{http://www.sitemaps.org/schemas/sitemap/0.9}" if root.tag.startswith("{") else ""
+entry_tags = {namespace + "urlset": namespace + "url",
+              namespace + "sitemapindex": namespace + "sitemap"}
+entry_tag = entry_tags.get(root.tag)
+if entry_tag is None or (root.text or "").strip():
+    sys.exit(1)
+
+locations = []
+for entry in root:
+    if entry.tag != entry_tag or (entry.text or "").strip() or (entry.tail or "").strip():
+        sys.exit(1)
+    location = entry.findall(namespace + "loc")
+    if len(location) != 1 or len(location[0]) or any((field.tail or "").strip() for field in entry):
+        sys.exit(1)
+    locations.append((location[0].text or "").strip())
+print(json.dumps(locations, ensure_ascii=False))
+`;
+
+function sitemapLocations(body) {
+  const parser = spawnSync(process.platform === "win32" ? "python" : "python3",
+    ["-B", "-X", "utf8", "-c", sitemapParser],
+    {input: body, encoding: "utf8", timeout: 5000, windowsHide: true});
+  return parser.status === 0 ? JSON.parse(parser.stdout) : [];
+}
 
 function inspectCrawlerFile(key, contentType, body) {
   const mediaType = contentType?.split(";")[0].trim().toLowerCase();
@@ -29,13 +72,12 @@ function inspectCrawlerFile(key, contentType, body) {
       sitemapLocCount: null,
     };
   }
-  const xml = body.replace(/<!--[\s\S]*?-->/g, "").trimStart();
-  const hasSitemapRoot = /^(?:<\?xml\s[^?]*\?>\s*)?<(?:urlset|sitemapindex)(?:\s|>)/.test(xml);
-  const sitemapLocCount = [...xml.matchAll(/<loc>\s*[^<\s][^<]*<\/loc>/g)].length;
+  const locations = mediaType === "application/xml" || mediaType === "text/xml"
+    ? sitemapLocations(body) : [];
   return {
-    crawlerContentMatch: (mediaType === "application/xml" || mediaType === "text/xml")
-      && hasSitemapRoot && sitemapLocCount > 0,
-    sitemapLocCount,
+    crawlerContentMatch: locations.length > 0 && locations.every(location =>
+      /^https?:\/\/[^/]/i.test(location) && !/[\s\\]/.test(location) && URL.canParse(location)),
+    sitemapLocCount: locations.length,
   };
 }
 
@@ -86,8 +128,9 @@ export async function checkPublicRoutes({
       const status = response.status;
       const contentType = response.headers.get("content-type");
       const sourceSha = response.headers.get("x-recipavo-commit");
-      const body = status === 200 ? (await response.text()).slice(0, 500000) : "";
-      const head = route.html && status === 200 ? inspectHeadLinks(body) : {canonical: null, hreflang: {}};
+      const body = status === 200 ? await response.text() : "";
+      const head = route.html && status === 200
+        ? inspectHeadLinks(body.slice(0, publicBodyLimit)) : {canonical: null, hreflang: {}};
       const finalUrl = response.url || requested;
       const canonical = head.canonical ? safeUrl(new URL(head.canonical, finalUrl).href) : null;
       const canonicalMatch = route.html && status === 200 && canonical !== null
@@ -97,7 +140,7 @@ export async function checkPublicRoutes({
         expectedStatus: route.expected, httpStatus: status, httpMatch: status === route.expected,
         contentType, sourceSha, canonical, canonicalMatch,
         hreflang: head.hreflang,
-        ...(crawlerFiles.has(route.key) && status === 200
+        ...(crawlerFiles.has(route.key) && status === 200 && body.length <= publicBodyLimit
           ? inspectCrawlerFile(route.key, contentType, body)
           : {crawlerContentMatch: crawlerFiles.has(route.key) ? false : null, sitemapLocCount: null}),
         error: null,
