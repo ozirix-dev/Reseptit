@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "recipe_id": "rapeat-kesakurpitsalastut",
+  "source_path": "reseptit/valipalat/rapeat-kesakurpitsalastut.md",
+  "source_sha256": "83024c73a1d54a8646dcf92a74bab693c87d51dbe4eee8fb77cdec29dfbc79b8",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-23",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.youtube.com/watch?v=-20IECpGDWc",
+      "https://www.bfr.bund.de/veroeffentlichung/vorsicht-beim-verzehr-von-bitteren-zucchini/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/rapeat-kesakurpitsalastut.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Mainissa ei ole julkaistua reseptiä tällä tunnuksella. Alkuperäinen 125 °C:n luonnos säilyy katselmointikorttina."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "350 g kuorellista syötävää kesäkurpitsaa, 60 g pala-parmesaania sekä suola ja mustapippuri. Delishin uunimenetelmä ei edellytä öljyä. Parmesan mitataan ja jaetaan suoraan viipaleille."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Delishin valmistusohjeessa ohuet viipaleet kuorrutetaan raasteella ja paistetaan 400 °F:ssa 20–25 minuuttia. Käytetään koko menetelmää yhdestä lähteestä, noin 205 °C, eikä väitetä omaa koepaistoa."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Pese kesäkurpitsa ja suojaa käsi mandoliinin suojalla. Poikkeuksellisen karvas kesäkurpitsa jätetään käyttämättä BfR:n ohjeen mukaan. Maito ilmoitetaan allergeenina."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Koko paistettu erä jaetaan kolmeen yhtä suureen välipala-annokseen. Arvioitu 60 minuutin kokonaisaika sisältää 10 minuutin valmistelun ja tarvittaessa kahden pellin peräkkäisen paiston 20–25 minuuttia per pelti."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli 20 ja AFCD 3. Ravintolaskenta jakaa kolmanneksen punnituista aineista annokseen. Juuston irronneet syötävät rapeat reunat tarjotaan mukana. Lisätyn öljyn massa on nolla."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Reseptikohtaista GI- tai GK-lähdettä ei ole, joten GK jätetään määrittämättä."
+    }
+  }
+}
