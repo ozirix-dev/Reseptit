@@ -15,7 +15,7 @@ const CATEGORIES = ['aamupalat', 'alkuruoat', 'jalkiruoat', 'leivonnaiset', 'paa
 const GENERIC = /t(?:ä|a)ss(?:ä|a) kotikeitti(?:ö|o)(?:ö|o)n sovitetussa/i;
 
 function frontmatter(text) {
-  const match = /^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/.exec(text);
+  const match = /^---[ \t]*\r?\n([\s\S]*?)\r?\n---[ \t]*(?:\r?\n|$)/.exec(text);
   return match ? { yaml: match[1], body: text.slice(match[0].length) } : null;
 }
 
