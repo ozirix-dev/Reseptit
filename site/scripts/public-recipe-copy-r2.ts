@@ -288,6 +288,9 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
   "indonesialainen-bubur-ayam-kanariisipuuro/th": {
     "description": "เคี่ยวข้าวหอมมะลิจนนุ่มเป็นโจ๊ก แล้วต้มไก่ในหม้อเดียวกัน ฉีกไก่ใส่กลับลงไปพร้อมขิงและต้นหอม เสิร์ฟร้อนสองที่"
   },
+  "jauheliha-kaalikeitto-vhh/fi": {
+    "useSeoDescription": true
+  },
   "jauheliha-kaalikeitto-vhh/en": {
     "useSeoDescription": true,
     "nutritionBasis": "Use the exact ingredient compositions and edible weights listed. Keep all liquid, fat and spices in the dish. The salt quantity is unchanged from the original recipe."
@@ -795,6 +798,9 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
     "method": [
       ["Viipaloi porsas ja tarjoa kastikkeen kanssa.", "Viipaloi porsas. Jaa kaikki liha ja kastike kuuteen yhtä suureen annokseen."]
     ]
+  },
+  "vhh-kaalilaatikko/fi": {
+    "useSeoDescription": true
   },
   "vhh-kaalilaatikko/en": {
     "useSeoDescription": true,
