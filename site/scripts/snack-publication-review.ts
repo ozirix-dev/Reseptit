@@ -3,7 +3,6 @@ import path from "node:path";
 import { assertSnackPublicationReady } from "../src/content/recipe-validation";
 import type { recipeFrontmatterSchema } from "../src/content/schema";
 import type { z } from "zod";
-import { validateReview } from "./new-recipe-preflight.mjs";
 import { verifyNutritionEvidence } from "./nutrition-evidence";
 import { nutritionKeys } from "./nutrition-field-approval";
 import type { Calculation } from "./nutrition-model";
@@ -27,6 +26,7 @@ export async function assertReviewedSnackPublication(
   );
   const review = JSON.parse(reviewText);
   const evidence = JSON.parse(evidenceText) as Calculation;
+  const { validateReview } = await import("./new-recipe-preflight.mjs");
   const reviewErrors = validateReview(sourcePath, source, review);
   const verified = verifyNutritionEvidence(recipe, evidence);
   if (reviewErrors.length || review.nutrition_evidence !== evidencePath
