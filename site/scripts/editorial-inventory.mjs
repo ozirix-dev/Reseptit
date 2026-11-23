@@ -21,7 +21,9 @@ function frontmatter(text) {
 function value(yaml, name) {
   const line = yaml.split(/\r?\n/).find((part) => part.startsWith(`${name}:`));
   const raw = line?.slice(name.length + 1).trim() ?? '';
-  return raw.replace(/^['"]|['"]$/g, '');
+  const doubleQuoted = /^"((?:\\.|[^"\\])*)"(?:[ \t]+#.*)?$/.exec(raw);
+  const singleQuoted = /^'((?:''|[^'])*)'(?:[ \t]+#.*)?$/.exec(raw);
+  return doubleQuoted?.[1] ?? singleQuoted?.[1] ?? raw.replace(/(?:^|[ \t]+)#.*$/, '');
 }
 
 function section(body, title) {
