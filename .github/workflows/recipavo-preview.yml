@@ -9,6 +9,7 @@ on:
       - ".github/scripts/test_prepare_verified_browser_images.py"
   pull_request:
     paths:
+      - "site/package-lock.json"
       - "site/src/SeoMeta.tsx"
       - "site/src/features/recipes/RecipesPage.tsx"
       - "site/src/features/recipes/recipavo-hero.ts"

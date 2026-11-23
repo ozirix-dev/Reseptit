@@ -11,6 +11,7 @@ on:
     - cron: "17 2 * * 0"
   pull_request:
     paths:
+      - "site/package-lock.json"
       - ".github/workflows/playwright-extended.yml"
       - ".github/scripts/prepare-verified-browser-images.ps1"
       - ".github/scripts/test_prepare_verified_browser_images.py"
