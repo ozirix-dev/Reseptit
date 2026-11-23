@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "recipe_id": "rapeat-siemennakkarit",
+  "source_path": "reseptit/valipalat/rapeat-siemennakkarit.md",
+  "source_sha256": "66ab09aea4a97aef671bdf8bfcb0f21fba7e715eacb406cd3a28b2402d99009a",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-23",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/ohut-siemennakkileipa/",
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/vierasaineet-ja-jaamat/luontaiset-toksiinit/pellavansiementen-linamariini/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/rapeat-siemennakkarit.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Mainin FI-julkaisuissa ei ole tällä tunnuksella reseptiä. Katselmointikortti säilyy työjonon historiallisena lähteenä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Siemeniä 172,5 g aiemman 205 g sijasta. Marttojen ainesuhteet muunnettu Finelin annosmitoilla, öljyksi oliiviöljy ja suolaksi aiemman luonnoksen 3 g. Tuotemuodot ja jokainen grammaperuste ovat laskentatiedostossa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Marttojen julkaistu ainesuhde, kiehuva vesi, 10 minuutin geeliytyminen ja noin 60 minuuttia 175 °C:ssa. Kuivuus katsotaan myös keskeltä. Ei omaa koepaistoa."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Öljysiementen määrä pala-annosta kohti noin 7,2 g; aikuisen päivittäinen 15 g:n ohje koskee kaikkia päivän öljysiemeniä. Seesami ilmoitettu allergeenina. Levyn annetaan kuivua ja jäähtyä kokonaan ennen pakkaamista."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Jaa koko levy 24 palaan; yksi pala on laskennallinen tarjoiluannos. 90 minuuttia sisältää valmistelun, 10 minuutin turvotuksen, noin tunnin paiston ja jäähtymisarvion. Valmispainoa ei ole mitattu."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli 20 ja AFCD 3; grammoina punnitut aineet jaetaan 24 pala-annokseen. Kokonaishiilihydraatti sisältää lähteiden kuidun. Kuivaus ei muuta ravintoaineiden laskettua määrää palaa kohti."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle sovitukselle ei ole varmennettua reseptikohtaista glykeemistä kuormaa. Julkiseen ohjeeseen ei aseteta numeerista GK-arvoa."
+    }
+  }
+}
