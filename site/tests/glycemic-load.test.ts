@@ -291,6 +291,13 @@ test("an unmatched GI range needs registered endpoints and a current applicabili
   const tooWide = [varyingGi[0], varyingGi[1], endpoint("upper", 60.00000000000001)];
   assert.equal(run(varyingComposition, foods, tooWide, markdown, reviewFor(varyingComposition, foods, tooWide)).status,
     "INSUFFICIENT SOURCE DATA");
+  const cutoffFoods = [food("main", 39), foods[1]];
+  const cutoffGi = [gi, endpoint("lower", 30), endpoint("upper", 49.99999999999999)];
+  assert.equal(run(input, cutoffFoods, cutoffGi, markdown, reviewFor(input, cutoffFoods, cutoffGi))
+    .glycemicLoadRangePerServing, null, "number conversion must preserve the exact public class");
+  const collapsedGi = [gi, endpoint("lower", 1e-15), endpoint("upper", 2e-15)];
+  assert.equal(run(input, foods, collapsedGi, markdown, reviewFor(input, foods, collapsedGi))
+    .glycemicLoadRangePerServing, null, "number conversion must not hide a nonzero interval");
   const wide = [gi, endpoint("lower", 0), endpoint("upper", 125)];
   assert.equal(run(input, higherFoods, wide, markdown, reviewFor(input, higherFoods, wide)).status, "INSUFFICIENT SOURCE DATA");
 });

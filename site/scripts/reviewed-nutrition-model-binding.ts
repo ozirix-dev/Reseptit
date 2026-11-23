@@ -7,7 +7,7 @@
 export function acceptsReviewedNutritionModelBinding(file: string, expected: unknown, actual: string): boolean {
   if (file === 'site/scripts/glycemic-load-model.ts') {
     return expected === '10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c'
-      && actual === '7d602dd45be3e23b3e7036cf1671ec9d70fdd8cf580030a3b3aaa7e6de03e4ad';
+      && actual === 'ed9b730d43ef7024bacc0d9ba5ef19af7c0890253fc415571a54a826a4a15700';
   }
   return file === 'site/scripts/nutrition-model.ts'
     && expected === '6667190a6604523fe083d6d766cfbbdb7c2ce75366194f3036ce711a8218a7ce'
