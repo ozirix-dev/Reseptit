@@ -27,6 +27,14 @@ type Bundle = {
 };
 type Authorization = { schemaVersion: 1; bundleSha256: string; evidence: string };
 
+// Only the four bundles already published from main at the policy transition.
+const publishedOmissionBundles = new Set([
+  '4b5e380109691791e3d3b294a77a7b9befaa88cb29f39d885835743a7dbb6f71', // approved-five
+  '7971c034a12edf6ecc17f02168cdd8417f7d9d0699ee3d2cfc324d73fe29ad98', // eighteen
+  'b8eee1b76d02bfa8aaf46aeb9cf17c1b9b5800a3f7559c3188d55269c9ef251c', // first-five
+  'c9ff88491a7e6033c943f0f8875be57886057e265dbf1c9e5a7803054181b857', // v31-eight
+]);
+
 export function makeReleaseBundle(checked: ReturnType<typeof checkBatch>, batch: Batch,
   decisions: Decisions, plan: ReturnType<typeof prepareRelease>) {
   const bundle: Bundle = {
@@ -85,6 +93,9 @@ export function verifyReleaseBundle(sealed: Bundle & { bundleSha256: string }, a
   const variants = applied.map(row => {
     const variant = checked.variants.get(row.recipeId);
     if (row.state !== 'OWNER_APPROVED' || !variant) throw Error('GK100_RELEASE_OWNER_APPROVAL');
+    if (variant.omittedCho > 0 && !publishedOmissionBundles.has(bundleSha256)) {
+      throw Error('UNBOUNDED_OMISSION_IN_NEW_RELEASE');
+    }
     return variant;
   });
   if (bundle.coverageScopeVersion === undefined && [bundle.expectedOriginalCoverageDelta, bundle.expectedVariantCoverageDelta, bundle.expectedStudyServingDelta].some(value => value !== undefined)) {

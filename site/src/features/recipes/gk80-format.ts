@@ -7,9 +7,21 @@ export function formatGlycemicLoadNumber(value:number,locale:string,modeled:bool
 }
 
 
-export function formatOriginalPortionGk(estimate: GkEstimate, locale: string, modeled: boolean) {
+export function formatOriginalPortionGk(estimate: GkEstimate, locale: string, modeled: boolean, rangeOnly = false) {
   const values = estimate.type === "ESTIMATED_RANGE" ? [estimate.range.min, estimate.range.max]
     : estimate.type === "EXACT_MODEL" ? [estimate.value] : [];
+  if (rangeOnly && estimate.type === "ESTIMATED_RANGE") {
+    const { min, max } = estimate.range;
+    let digits = 3;
+    while (min !== max && min.toPrecision(digits) === max.toPrecision(digits) && digits < 17) {
+      digits++;
+    }
+    const format = new Intl.NumberFormat(locale, { maximumSignificantDigits: digits });
+    return {
+      value: values.map(value => format.format(value)).join("–"),
+      roundingHitsBoundary: values.some(value => classifyPublicGk(Number(value.toPrecision(digits))) !== classifyPublicGk(value)),
+    };
+  }
   return {
     value: values.map(value => formatGlycemicLoadNumber(value, locale, modeled)).join("–"),
     roundingHitsBoundary: values.some(value => {

@@ -125,11 +125,12 @@ export function originalPortionGk(result: PortionGkValues, multiplier = 1) {
   const numericCategory = gkEstimateClass(estimate);
   const pointCategory = point !== null && Number.isFinite(point) && point >= 0
     ? classifyPublicGk(point * multiplier) : null;
-  const inconsistent = estimate.type === "ESTIMATED_RANGE" && numericCategory !== "CROSSES_BOUNDARY"
-    && numericCategory !== pointCategory;
+  const rangeOnly = estimate.type === "ESTIMATED_RANGE" && point === null;
+  const inconsistent = estimate.type === "ESTIMATED_RANGE" && pointCategory !== null
+    && numericCategory !== "CROSSES_BOUNDARY" && numericCategory !== pointCategory;
   const category = inconsistent ? null : numericCategory;
   const omissionLimitsClass = classLimitedByOmission(category, result.omittedAvailableCarbohydratePerServingG);
-  return { estimate, category, inconsistent, omissionLimitsClass, standardServingOnly };
+  return { estimate, category, inconsistent, omissionLimitsClass, standardServingOnly, rangeOnly };
 }
 
 export interface GkPortionCoverage {

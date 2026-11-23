@@ -254,6 +254,7 @@ test("an unmatched GI range needs registered endpoints and a current applicabili
     run(input, foods, gis, markdown.replace("Simmer", "Fry")),
     run({ ...input, servings: 2 }),
     run(input, foods, editedGi),
+    run(input, [{ ...foods[0], sourceUrl: "https://example.invalid/replaced-composition" }, foods[1]]),
     run(input, foods, wrongScale, markdown, reviewFor(input, foods, wrongScale)),
     run(input, [foods[1]]),
   ]) {
@@ -270,6 +271,10 @@ test("an unmatched GI range needs registered endpoints and a current applicabili
   const higherBounds = [gi, endpoint("lower", 100), endpoint("upper", 125)];
   assert.deepEqual(run(input, higherFoods, higherBounds, markdown, reviewFor(input, higherFoods, higherBounds))
     .glycemicLoadRangePerServing, { min: 6, max: 6.375 });
+  const edgeFoods = [food("main", 3), foods[1]];
+  const edgeGi = [{ ...gi, gi: 53 }, endpoint("lower", 15), endpoint("upper", 115)];
+  assert.ok(run(input, edgeFoods, edgeGi, markdown, reviewFor(input, edgeFoods, edgeGi)).glycemicLoadRangePerServing,
+    "the exactly one-unit range survives floating-point subtraction");
   const wide = [gi, endpoint("lower", 0), endpoint("upper", 125)];
   assert.equal(run(input, higherFoods, wide, markdown, reviewFor(input, higherFoods, wide)).status, "INSUFFICIENT SOURCE DATA");
 });

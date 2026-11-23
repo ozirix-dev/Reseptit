@@ -427,7 +427,9 @@ export function calculateGlycemicLoad(
   if (omittedAvailableCarbohydratePerServingG >= CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G) blockers.push(`${input.recipeId}: cumulative omitted available carbohydrate is ${omittedAvailableCarbohydratePerServingG.toFixed(3)} g/serving, at or above the 2 g editorial tolerance.`);
   // Compare the unrounded endpoints and keep the range in the existing display
   // model. A full GK unit is an editorial maximum for this missing-GI route.
-  if (hasUnmatchedGiRange && (!valid(totalLoadMax) || totalLoadMax - totalLoadMin > 1
+  // Summing endpoints and subtracting them adds floating-point error at the boundary.
+  const widthLimit = 1 + Number.EPSILON * Math.max(1, totalLoadMax);
+  if (hasUnmatchedGiRange && (!valid(totalLoadMax) || totalLoadMax - totalLoadMin > widthLimit
       || classifyPublicGk(totalLoadMin) !== classifyPublicGk(totalLoadMax))) {
     blockers.push(`${input.recipeId}: GI uncertainty spans more than one GK unit or crosses a public class boundary.`);
   }

@@ -133,6 +133,7 @@ export function glycemicLoadEvidenceHash(
     foods: foodIds.map((id) => {
       const record = foodById.get(id);
       if (!record) return { id, missing: true };
+      if (rangeSourceIds.length > 0) return record;
       const componentValue = (component: "CHO" | "FIBT" | "POLYL", fallback: number | null | undefined) =>
         record.componentValues && Object.hasOwn(record.componentValues, component)
           ? record.componentValues[component] : fallback;

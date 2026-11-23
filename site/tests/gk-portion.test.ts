@@ -6,6 +6,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import { loadReviewedPortions, portionPreparationHash, projectPortionEvidence } from "../scripts/gk-portion-projection";
 import { countGkPortionCoverage, originalPortionCarbs, originalPortionGk, reviewedIngredientPortions, verbalGkForPortion } from "../src/features/recipes/gk-portion";
+import { formatOriginalPortionGk } from "../src/features/recipes/gk80-format";
 import { originalGlycemicLoadCategory } from "../scripts/glycemic-load-filter";
 import { recipeBindingHash } from "../scripts/glycemic-load-recipe-binding";
 
@@ -73,6 +74,23 @@ test("rounded UI values cannot change the original GK category", () => {
   assert.equal(originalPortionGk(roundedStandard, 2).category, null);
   const withRange = { ...roundedStandard, glycemicLoadRangePerServing: { min: 4, max: 5 } };
   assert.deepEqual(originalPortionGk(withRange, 2).estimate, { type: "ESTIMATED_RANGE", range: { min: 8, max: 10 } });
+});
+
+test("an approved range without a point keeps its class and both display endpoints", () => {
+  const result = {
+    status: "CALCULATED", confidence: "LOW", glycemicLoadPerServing: null,
+    glycemicLoadRangePerServing: { min: 4.75, max: 5.25 },
+  };
+  const portion = originalPortionGk(result);
+  assert.equal(portion.inconsistent, false);
+  assert.equal(portion.rangeOnly, true);
+  assert.equal(originalGlycemicLoadCategory(result), "low");
+  for (const [locale, expected] of [["fi-FI", "4,75–5,25"], ["en-GB", "4.75–5.25"],
+    ["sv-SE", "4,75–5,25"], ["th-TH", "4.75–5.25"]]) {
+    assert.equal(formatOriginalPortionGk(portion.estimate, locale, false, portion.rangeOnly).value, expected);
+  }
+  const narrow = originalPortionGk({ ...result, glycemicLoadRangePerServing: { min: 4.7511, max: 4.7512 } });
+  assert.equal(formatOriginalPortionGk(narrow.estimate, "fi-FI", false, narrow.rangeOnly).value, "4,7511–4,7512");
 });
 
 test("reviewed verbal GK only applies to the approved recipe portion and current evidence", async () => {
