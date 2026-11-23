@@ -933,6 +933,31 @@ const quality20P3Copy: Readonly<Record<string, Partial<Record<RecipeLocale, {
   }
 };
 
+// #404 / C #32: the documented 25-minute wonton preparation presumes
+// shrimp are already thawed. Frozen shrimp must thaw safely beforehand.
+// Bind the public time note to each locale's actual preparation text; never
+// alter the sealed ingredient quantities, source steps, or nutrition package.
+const wontonThawTimingReview: Readonly<Record<RecipeLocale, {
+  evidence: readonly string[]; note: string;
+}>> = {
+  fi: {
+    evidence: ["Jos katkaravut ovat jäisiä, sulata ne jääkaapissa", "150 g katkarapuja", "700 ml"],
+    note: "Valmistusaika: 25 minuuttia koskee valmiiksi sulatettuja katkarapuja. Jos käytät pakastettuja katkarapuja, sulata ne ennakkoon jääkaapissa; sulatusaika ei sisälly 25 minuuttiin. Kypsennä wontonit ja katkaraputäyte kauttaaltaan kypsiksi."
+  },
+  en: {
+    evidence: ["Thaw frozen shrimp in the refrigerator", "150 g shrimp", "700 ml stock"],
+    note: "Preparation time: the stated 25 minutes assumes the shrimp are already thawed. If using frozen shrimp, thaw them beforehand in the refrigerator; thawing time is not included. Cook the wontons and shrimp filling thoroughly."
+  },
+  sv: {
+    evidence: ["Tina frysta räkor i kylskåpet", "150 g räkor", "700 ml buljong"],
+    note: "Tillagningstid: de angivna 25 minuterna förutsätter att räkorna redan är tinade. Tina frysta räkor i kylskåpet i förväg; upptiningstiden ingår inte. Tillaga både wontonknytena och räkfyllningen helt."
+  },
+  th: {
+    evidence: ["ถ้าใช้กุ้งแช่แข็ง ให้ละลายในตู้เย็น", "150 กรัม", "700 มล."],
+    note: "เวลาเตรียม 25 นาทีใช้กับกุ้งที่ละลายแล้ว หากใช้กุ้งแช่แข็ง ต้องละลายล่วงหน้าในตู้เย็น โดยไม่รวมเวลาละลายใน 25 นาที ต้มเกี๊ยวและไส้กุ้งให้สุกทั่วถึง"
+  },
+};
+
 export function projectPublicRecipeMethodCopy(
   id: string, locale: RecipeLocale, instructions: string, notes: string,
 ): { instructions: string; notes: string } {
@@ -957,6 +982,13 @@ export function projectPublicRecipeMethodCopy(
       throw new Error("NATTO_COOKING_METHOD_TEXT_DRIFT: " + locale);
     }
     notes = [notes, "- " + reviewed.note].filter(Boolean).join("\n");
+  }
+  if (id === "kiinalainen-katkarapu-wontonkeitto") {
+    const review = wontonThawTimingReview[locale];
+    if (!review.evidence.every(part => instructions.includes(part))) {
+      throw new Error("WONTON_THAW_TIME_SOURCE_DRIFT: " + locale);
+    }
+    notes = [notes, "- " + review.note].filter(Boolean).join("\n\n");
   }
   if (id === "tangyuan") {
     const scope = tangyuanCookingWaterScope[locale];
