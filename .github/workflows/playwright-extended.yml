@@ -1,8 +1,20 @@
 name: Recipavo Playwright extended (non-deploy)
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/playwright-extended.yml"
+      - ".github/scripts/prepare-verified-browser-images.ps1"
+      - ".github/scripts/test_prepare_verified_browser_images.py"
   schedule:
     - cron: "17 2 * * 0"
+  pull_request:
+    paths:
+      - "site/package-lock.json"
+      - ".github/workflows/playwright-extended.yml"
+      - ".github/scripts/prepare-verified-browser-images.ps1"
+      - ".github/scripts/test_prepare_verified_browser_images.py"
   workflow_dispatch:
 
 permissions:
@@ -23,6 +35,13 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: site/package-lock.json
+      - name: Prepare SHA-verified browser image inputs
+        shell: pwsh
+        env:
+          IMAGE_CI_PUBLIC_ONLY: ${{ github.event_name == 'pull_request' && (github.event.pull_request.head.repo.full_name != github.repository || github.actor == 'dependabot[bot]') }}
+          IMAGE_CI_ACCESS_KEY_ID: ${{ !(github.event_name == 'pull_request' && (github.event.pull_request.head.repo.full_name != github.repository || github.actor == 'dependabot[bot]')) && secrets.IMAGE_CI_ACCESS_KEY_ID || '' }}
+          IMAGE_CI_SECRET_ACCESS_KEY: ${{ !(github.event_name == 'pull_request' && (github.event.pull_request.head.repo.full_name != github.repository || github.actor == 'dependabot[bot]')) && secrets.IMAGE_CI_SECRET_ACCESS_KEY || '' }}
+        run: ./.github/scripts/prepare-verified-browser-images.ps1
       - name: Install dependencies
         working-directory: site
         run: npm ci

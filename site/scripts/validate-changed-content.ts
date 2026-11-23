@@ -11,7 +11,6 @@ import {validateGk80Candidate} from './gk80-release';
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { access, readFile, readdir } from "node:fs/promises";
-import { assertChangedRecipeImageSource } from "./recipe-draft-image-gate";
 import path from "node:path";
 import { changedSemanticReviewErrors, loadSemanticEvidence, preparationRegressionErrors, semanticHash } from "./translation-semantic-review";
 import { auditTranslations } from "./translation-audit";
@@ -119,9 +118,18 @@ for (const relativePath of recipePaths) {
   }
   if (data.image) {
     const sources = [data.image.src, ...(data.image.srcset ?? []).map((item) => item.src)];
-    const imageRoot = path.resolve(process.env.PROJECT_IMAGE_ROOT || path.join(repoRoot, "kuvat"));
+    // Draft previews can live in versioned kuvat/ before owner approval and signed CI-image registration.
+    // Published content must continue to use only the verified PROJECT_IMAGE_ROOT in CI.
+    const imageRoot = path.resolve(data.status === "draft"
+      ? path.join(repoRoot, "kuvat")
+      : process.env.PROJECT_IMAGE_ROOT || path.join(repoRoot, "kuvat"));
     for (const source of sources) {
-      await assertChangedRecipeImageSource(source, data.status, imageRoot, path.join(repoRoot, "kuvat"));
+      const target = path.resolve(imageRoot, source);
+      const relative = path.relative(imageRoot, target);
+      if (relative.startsWith("..") || path.isAbsolute(relative)) {
+        throw new Error(`Image source escapes its root: ${source}`);
+      }
+      await access(target);
     }
   }
   changedRecipes.push({ path: relativePath, data, markdown });
@@ -204,8 +212,15 @@ if (changedRoutes.length > 0) {
 
 for (const recipeId of recipeIds) {
   const source = assertChangedRecipeAuditIsClean(audit, recipeId);
-  assert(source || !evidenceIds.has(recipeId), `${recipeId}: calculation evidence has no published Finnish source`);
-  if (!source) continue;
+  const evidencePath = resolveRepoFile(`docs/nutrition/calculations/${recipeId}.json`);
+  const evidenceText = await readFile(evidencePath, "utf8").catch((error: NodeJS.ErrnoException) => {
+    if (error.code === "ENOENT") return null;
+    throw error;
+  });
+  if (!source) {
+    assert(evidenceText === null, `${recipeId}: calculation evidence has no published Finnish source`);
+    continue;
+  }
 
   const translations = audit.publishedTranslations.filter((recipe) => recipe.data.recipe_id === recipeId);
 
@@ -256,13 +271,7 @@ for (const recipeId of recipeIds) {
     assert(currentRecipeHash === boundRecipeHash || reviewedBiryaniWithoutGk || reviewedCoconutBananaWithoutGk || reviewedRiceBowlWithoutGk || reviewedMolletesWithoutGk || reviewedHistoricalSourceWithoutGk || reviewedF25WithoutGk || await validateGk80Candidate(repoRoot, recipeId) || await validateRecovery(repoRoot,recipeId) || await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
   }
 
-  const evidencePath = resolveRepoFile(`docs/nutrition/calculations/${recipeId}.json`);
-  let evidence: Calculation | null = null;
-  try {
-    evidence = JSON.parse(await readFile(evidencePath, "utf8")) as Calculation;
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
-  }
+  const evidence = evidenceText === null ? null : JSON.parse(evidenceText) as Calculation;
   const nutritionChanged = changedRecipes.some((recipe) =>
     recipe.data.recipe_id === recipeId && changedNutritionValues(recipe.path));
   if (nutritionChanged) assert(evidence, `${recipeId}: changed published nutrition values require matching calculation evidence`);

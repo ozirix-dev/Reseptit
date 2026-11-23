@@ -1,0 +1,50 @@
+name: Chat 5 FI written review intake
+
+on:
+  pull_request:
+    paths:
+      - "site/scripts/fi-written-review-intake*.ts"
+      - "site/tests/fi-written-review-intake.test.ts"
+      - ".github/workflows/chat5-fi-written-review-intake.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-intake:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+      - name: Verify written FI source record intake without approvals
+        working-directory: site
+        run: npx tsx --test tests/fi-written-review-intake.test.ts
+      - name: Project existing written FI approval notes read-only
+        working-directory: site
+        run: npx tsx scripts/fi-written-review-intake-cli.ts
+      - name: Advisory summary
+        if: always()
+        run: |
+          if test -f tmp/fi-written-review-intake/current.md; then
+            cat tmp/fi-written-review-intake/current.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No FI intake report produced; no approval established." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Upload FI written review intake
+        if: always()
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: chat5-fi-written-review-intake
+          path: |
+            tmp/fi-written-review-intake/current.json
+            tmp/fi-written-review-intake/current.md
+          if-no-files-found: ignore
+          retention-days: 14

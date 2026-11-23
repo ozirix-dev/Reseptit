@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "workflow": "NON_PUBLIC_NUTRITION_CANDIDATE",
+  "status": "HOLD_NOT_PUBLISHABLE",
+  "calculated_at": "2026-11-21",
+  "prepared_by": "Chat 3 / Kokki-3, laskennallinen lähdevertailu, ei hyväksytty ravintoarvo",
+  "recipe_id": "liha-perunasoselaatikko",
+  "source_path": "reseptit/paaruoat/liha-perunasoselaatikko.md",
+  "source_sha256": "c2bc22e3f1fe53ae292b7f24fad20def5f247b22494f5f4c98f4c68d84da1922",
+  "source_blob_sha": "d757f61f6cd38037d9eb6900d8974fc45f187907",
+  "servings": 6,
+  "reference_data": "docs/nutrition/food-records.json",
+  "reference_data_provider": "THL Fineli, Repo-curated Release 20; CC BY 4.0",
+  "method": "Raa'an/syötävän ainesosan lähtömassaan perustuva laskenta, grammoina. kcal, ravintoarvojen hävikki ja kypsän tuotteen massa määrittämättä. CHO on imeytyvä hiilihydraatti; kuitua ei vähennetä uudelleen.",
+  "ingredient_rows": [
+    {
+      "line": 1,
+      "ingredient": "kuorittuja jauhoisia perunoita",
+      "recipeAmount": 1000,
+      "recipeUnit": "g",
+      "accountedGrams": 1000,
+      "matchQuality": "proxy",
+      "matchNotes": "Finelin vanha kuorittu peruna ei yksilöi jauhoista perunalajiketta. Perunat punnitaan kuorittuina.",
+      "foodRecord": {
+        "id": "fineli-205-release-20",
+        "name": "PERUNA, VANHA, KUORITTU",
+        "url": "https://fineli.fi/fineli/api/v1/foods/205",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 15.5,
+          "protein": 1.88,
+          "fat": 0.114,
+          "fibre": 1.4,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 155,
+        "protein": 18.8,
+        "fat": 1.14,
+        "fibre": 14,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 2,
+      "ingredient": "naudan jauhelihaa, rasvaa 17 %",
+      "recipeAmount": 450,
+      "recipeUnit": "g",
+      "accountedGrams": 450,
+      "matchQuality": "direct",
+      "matchNotes": "FI/EN/SV/TH-lähteissä nimetty 17% naudan jauheliha. Fineli #11562 on sama ravintoluokka; tarkka tuote ja kypsennyksen retentio edelleen todentamatta.",
+      "foodRecord": {
+        "id": "fineli-11562-2026-10-25",
+        "name": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+        "url": "https://fineli.fi/fineli/api/v1/foods/11562?c=2034&c2=2168",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Rel20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 19.065,
+          "fat": 16.949,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0,
+        "protein": 85.793,
+        "fat": 76.271,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 3,
+      "ingredient": "sipulia",
+      "recipeAmount": 120,
+      "recipeUnit": "g",
+      "accountedGrams": 120,
+      "matchQuality": "direct",
+      "matchNotes": "Sipulin geneerinen raaka-ainetieto.",
+      "foodRecord": {
+        "id": "fineli-335-release-20",
+        "name": "SIPULI, KELTASIPULI",
+        "url": "https://fineli.fi/fineli/api/v1/foods/335",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "protein": 1.25,
+          "fat": 0.1,
+          "fibre": 1.2,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 5.76,
+        "protein": 1.5,
+        "fat": 0.12,
+        "fibre": 1.44,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 4,
+      "ingredient": "kevytmaitoa, rasvaa 1,5 %",
+      "recipeAmount": 250,
+      "recipeUnit": "g",
+      "accountedGrams": 250,
+      "matchQuality": "direct",
+      "matchNotes": "FI/EN/SV/TH-lähteessä maito täsmennetty 1,5 % kevytmaidoksi, Fineli #684 vastaa samaa ravintoluokkaa. Tuote ja saanto voivat vaihdella.",
+      "foodRecord": {
+        "id": "fineli-684-release-20",
+        "name": "MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG",
+        "url": "https://fineli.fi/fineli/api/v1/foods/684",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "protein": 3,
+          "fat": 1.5,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 12,
+        "protein": 7.5,
+        "fat": 3.75,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 5,
+      "ingredient": "voita, 30 g soseeseen ja 10 g vuokaan",
+      "recipeAmount": 40,
+      "recipeUnit": "g",
+      "accountedGrams": 40,
+      "matchQuality": "direct",
+      "matchNotes": "Voita on 40 g yhteensä (30 g sose, 10 g vuoka).",
+      "foodRecord": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "url": "https://fineli.fi/fineli/api/v1/foods/500",
+        "retrievedAt": "2026-10-24",
+        "license": "THL, Fineli Release 20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "protein": 1.19,
+          "fat": 81.3,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0.32,
+        "protein": 0.476,
+        "fat": 32.52,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 6,
+      "ingredient": "suolaa, 3 g soseeseen ja 3 g jauhelihaan",
+      "recipeAmount": 6,
+      "recipeUnit": "g",
+      "accountedGrams": 6,
+      "matchQuality": "direct",
+      "matchNotes": "Suola laskentasyötteessä 6 g, jaettu kahtia.",
+      "foodRecord": {
+        "id": "fineli-30-2026-10-25",
+        "name": "RUOKASUOLA, JODIOITU",
+        "url": "https://fineli.fi/fineli/api/v1/foods/30?c=2034&c2=2168",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Rel20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 0.63,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0,
+        "protein": 0.038,
+        "fat": 0,
+        "fibre": 0,
+        "polyols": 0
+      }
+    },
+    {
+      "line": 7,
+      "ingredient": "mustapippuria",
+      "recipeAmount": 1,
+      "recipeUnit": "g",
+      "accountedGrams": 1,
+      "matchQuality": "partial",
+      "matchNotes": "Pippurilta puuttuvat kuitu- ja polyolitiedot; puuttuvat eivät ole 0.",
+      "foodRecord": {
+        "id": "fineli-11177-2026-10-25",
+        "name": "MUSTAPIPPURI",
+        "url": "https://fineli.fi/fineli/api/v1/foods/11177?c=2034&c2=2168",
+        "retrievedAt": "2026-10-25",
+        "license": "THL, Fineli Rel20, CC BY 4.0",
+        "per100g": {
+          "carbohydrate": 38.31,
+          "protein": 10.9,
+          "fat": 3.3,
+          "fibre": null,
+          "polyols": null
+        }
+      },
+      "knownContributionG": {
+        "carbohydrate": 0.383,
+        "protein": 0.109,
+        "fat": 0.033,
+        "fibre": null,
+        "polyols": null
+      }
+    }
+  ],
+  "known_component_subtotals_per_portion_g": {
+    "carbohydrate": 28.911,
+    "protein": 19.036,
+    "fat": 18.972,
+    "fibre": null,
+    "polyols": null
+  },
+  "important": "Osasummat kuvaavat 17 % naudan jauhelihan ja kevytmaidon SKENAARIOTA, eivät alkuperäisen reseptin hyväksyttyjä ravintoarvoja. Pippurin kuitu/polyolit eivät ole nolla.",
+  "unresolved_components": [
+    {
+      "line": 7,
+      "component": "fibre"
+    },
+    {
+      "line": 7,
+      "component": "polyols"
+    }
+  ],
+  "critical_product_proxies": [
+    "Naudan jauhelihan rasvaprosenttia ei määritelty reseptissä; Finelin 17 % on vain havainnollistava oletus.",
+    "Maidon tyyppi ja perunoiden jauhoisuus tuotekohtaisesti vahvistettava.",
+    "Pippurin kuitu ja polyolit puuttuvat."
+  ],
+  "unreported": {
+    "total_carbohydrate_per_portion_g": null,
+    "net_carbohydrate_per_portion_g": null,
+    "kcal_per_portion": null,
+    "approved_protein_per_portion_g": null,
+    "approved_fat_per_portion_g": null,
+    "glycemic_load": null
+  },
+  "publication_gate": "HOLD: pakkauskohtaiset 17% naudan jauhelihan ja 1,5% maidon arvot sekä kypsän saannon/retention vaikutus, pippurin kuitu ja polyolit eivät ole kokonaan varmistettu. 3 litran vuoka on määritetty, mutta todellinen 80 minuutin valmistus ei ole koekeittiössä mitattu. Ei neljää julkista makroa eikä numeerista GK-arvoa.",
+  "quantified_rows_subtotals_per_portion_g": {
+    "carbohydrate": 28.911,
+    "protein": 19.036,
+    "fat": 18.972,
+    "fibre": 2.573,
+    "polyols": 0
+  },
+  "coverage": {
+    "ingredient_rows": 7,
+    "has_unmapped_ingredients": false,
+    "unmapped_ingredient_lines": [],
+    "missing_nutrient_components": [
+      "fibre",
+      "polyols"
+    ],
+    "all_public_macro_values_withheld": true
+  },
+  "missing_values_rule": "Null means not established; 0 is allowed only for a measured/explicitly sourced value. Quantified-row subtotals exclude unmapped ingredients and unknown components, and cannot be used as complete-recipe estimates."
+}

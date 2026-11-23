@@ -5,7 +5,83 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import assert from "node:assert/strict";
 import test from "node:test";
-import { applyEventPolicy, classifyPaths } from "./select-ci-checks.mjs";
+import { applyEventPolicy, classifyPaths, shouldRunFiEditorialAudit } from "./select-ci-checks.mjs";
+
+test("FI editorial audit detects recipe and projection changes without touching other chats' work", () => {
+  for (const file of [
+    "reseptit/paaruoat/example.md",
+    "reseptit\\paaruoat\\example.md",
+    "site/scripts/public-recipe-copy-r2.ts",
+    "site/scripts/editorial-public-audit.ts",
+    "site/scripts/gk80-editorial-display.ts",
+    "site/scripts/recipe-quality-holds.ts",
+    "site/scripts/public-recipe-quarantine.json",
+    "site/src/content/markdown.ts",
+    ".github/workflows/pages.yml",
+  ]) assert.equal(shouldRunFiEditorialAudit([file]), true, file);
+
+  for (const file of [
+    "reseptit/_mallipohjat/resepti/resepti_pohja.md",
+    "kaannokset/th/paaruoat/example.md",
+    "site/src/features/feedback/FeedbackForm.tsx",
+    "site/src/features/recipes/RecipePage.tsx",
+    "docs/notes/recipe-process.md",
+    "docs/research/nutrition-note.md",
+    "meta/kaannokset/published-translation-pairs.json",
+  ]) assert.equal(shouldRunFiEditorialAudit([file]), false, file);
+
+  assert.equal(shouldRunFiEditorialAudit(["docs/notes.md", "reseptit/paaruoat/new.md"]), true);
+  assert.equal(shouldRunFiEditorialAudit([]), false);
+  assert.equal(shouldRunFiEditorialAudit(null), true); // Invalid selector input fails safe.
+});
+
+test("exact quarantine JSON changes force the FI parity audit but not unrelated JSON", () => {
+  const path = "site/scripts/public-recipe-quarantine.json";
+  assert.equal(shouldRunFiEditorialAudit([path]), true);
+  assert.equal(shouldRunFiEditorialAudit(["site/scripts/public-recipe-quarantine-notes.json"]), false);
+  assert.equal(shouldRunFiEditorialAudit(["docs/reviews/quarantine-notes.json"]), false);
+  for (const event of ["pull_request", "push"]) {
+    const plan = applyEventPolicy(classifyPaths([path]), event);
+    assert.equal(plan.runBuild, true, "quarantine must regenerate published content: " + event);
+    assert.equal(plan.runStatic, true);
+  }
+});
+
+test("changed-path selector writes the actual CI editorial audit gate", () => {
+  const root = mkdtempSync(path.join(tmpdir(), "recipe-editorial-selector-"));
+  const selector = fileURLToPath(new URL("./select-ci-checks.mjs", import.meta.url));
+  const output = path.join(root, "github-output.txt");
+  const verify = (paths, event, expected, forceFull = false) => {
+    writeFileSync(output, "");
+    execFileSync(process.execPath, [selector], {
+      encoding: "utf8",
+      env: {
+        ...process.env,
+        CHANGED_PATHS_JSON: JSON.stringify(paths),
+        GITHUB_OUTPUT: output,
+        EVENT_NAME: event,
+        FORCE_FULL: String(forceFull),
+      },
+    });
+    const rows = readFileSync(output, "utf8");
+    assert.match(rows, new RegExp("^run_editorial_audit=" + String(expected) + "$", "m"),
+      event + ": " + paths.join(","));
+  };
+  try {
+    verify(["reseptit/paaruoat/old.md"], "pull_request", true);
+    verify(["site/scripts/public-recipe-copy-r2.ts"], "pull_request", true);
+    verify(["site/scripts/public-recipe-quarantine.json"], "pull_request", true);
+    verify(["site/scripts/public-recipe-quarantine.json"], "push", true);
+    verify([".github/workflows/pages.yml"], "pull_request", true);
+    verify(["site/src/features/feedback/FeedbackForm.tsx"], "pull_request", false);
+    verify(["kaannokset/en/paaruoat/translation.md"], "pull_request", false);
+    verify(["kaannokset/en/paaruoat/translation.md"], "push", false);
+    verify(["docs/notes.md"], "pull_request", false);
+    verify(["docs/notes.md"], "workflow_dispatch", true, true);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
 
 test("docs-only changes select no site build or test suite", () => {
   const plan = classifyPaths(["docs/notes/recipe-process.md"]);
@@ -99,12 +175,12 @@ test("translation evidence selects one dedicated suite and no build", () => {
   assert.equal(recipe.runBuild, false);
 });
 
-test("recipe additions, edits, and deletions select nutrition plus GI/GK checks", () => {
+test("ordinary FI recipes retain publication/build gates without redundant full model suites", () => {
   for (const operation of ["add", "edit", "delete"]) {
     const plan = classifyPaths(["reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md"]);
     assert.equal(plan.runContent, true, operation);
-    assert.equal(plan.runNutrition, true, operation);
-    assert.equal(plan.runGlycemic, true, operation);
+    assert.equal(plan.runNutrition, false, operation);
+    assert.equal(plan.runGlycemic, false, operation);
     assert.equal(plan.runBuild, true, operation);
     assert.deepEqual(plan.unitTests, [], operation);
     assert.equal(plan.runBrowser, false, operation);
@@ -127,21 +203,22 @@ test("deduplicate only the files run by scheduled dedicated npm suites", () => {
   assert.equal(nutritionOnly.runGlycemic, false);
   assert.deepEqual(nutritionOnly.unitTests, [...glycemic, unitOnly].sort());
   const mixed = classifyPaths(["reseptit/paaruoat/esimerkki.md", ...testPaths]);
-  assert.equal(mixed.runNutrition, true);
-  assert.equal(mixed.runGlycemic, true);
-  assert.deepEqual(mixed.unitTests, [unitOnly]);
+  assert.equal(mixed.runNutrition, false);
+  assert.equal(mixed.runGlycemic, false);
+  assert.deepEqual(mixed.unitTests, [...nutrition, ...glycemic, unitOnly].sort());
   assert.deepEqual(classifyPaths(testPaths, { forceFull: true }).unitTests, ["*"]);
 });
 
-test("PR and main push both audit recipe coverage; main push also builds and checks static output", () => {
+test("PR and main push build and validate recipe content without unrelated full regression suites", () => {
   const recipePath = ["reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md"];
   const pullRequest = applyEventPolicy(classifyPaths(recipePath), "pull_request");
   const mainPush = applyEventPolicy(classifyPaths(recipePath), "push");
   for (const plan of [pullRequest, mainPush]) {
-    assert.equal(plan.runNutrition, true);
-    assert.equal(plan.runGlycemic, true);
+    assert.equal(plan.runNutrition, false);
+    assert.equal(plan.runGlycemic, false);
     assert.equal(plan.runBuild, true);
     assert.equal(plan.runStatic, true);
+    assert.equal(plan.runContent, true);
   }
 });
 
@@ -151,22 +228,42 @@ test("separately passing recipe and GI/GK PR path sets remain audited when combi
   const recipePr = classifyPaths(recipePrPaths);
   const giPr = classifyPaths(giPrPaths);
   const combined = classifyPaths([...recipePrPaths, ...giPrPaths]);
-  assert.equal(recipePr.runGlycemic, true);
-  assert.equal(recipePr.runNutrition, true);
+  assert.equal(recipePr.runGlycemic, false);
+  assert.equal(recipePr.runNutrition, false);
   assert.equal(recipePr.runBuild, true);
   assert.equal(giPr.runGlycemic, true);
   assert.equal(giPr.runBuild, true);
+  assert.equal(combined.runGlycemic, true);
+  assert.equal(combined.runNutrition, false);
   assert.deepEqual(combined.unitTests, []);
 
   const combinedPr = applyEventPolicy(classifyPaths([...recipePrPaths, ...giPrPaths]), "pull_request");
   const combinedMainPush = applyEventPolicy(classifyPaths([...recipePrPaths, ...giPrPaths]), "push");
   for (const plan of [combinedPr, combinedMainPush]) {
-    assert.equal(plan.runNutrition, true);
+    assert.equal(plan.runNutrition, false);
     assert.equal(plan.runGlycemic, true);
     assert.equal(plan.runBuild, true);
     assert.equal(plan.runStatic, true);
     assert.deepEqual(plan.unitTests, []);
   }
+});
+
+test("added published numbers or calculation evidence triggers strict nutrition gate", () => {
+  const recipe = "reseptit/jalkiruoat/pina-colada-hedelmajaatelo.md";
+  const evidence = "docs/nutrition/calculations/pina-colada-hedelmajaatelo.json";
+  const onlyRecipe = classifyPaths([recipe]);
+  assert.equal(onlyRecipe.runBuild, true);
+  assert.equal(onlyRecipe.runNutrition, false);
+  assert.equal(onlyRecipe.runGlycemic, false);
+  assert.equal(onlyRecipe.runContent, true);
+  const withEvidence = classifyPaths([recipe, evidence]);
+  assert.equal(withEvidence.runNutrition, true);
+  assert.equal(withEvidence.runGlycemic, true);
+  assert.equal(withEvidence.runBuild, true);
+  assert.equal(withEvidence.runContent, true);
+  assert.equal(classifyPaths(["site/scripts/nutrition-evidence.ts"]).runNutrition, true);
+  const risky = classifyPaths(["site/package.json"]);
+  assert.equal(risky.full, true);
 });
 
 test("GI/GK model changes retain calculation regression and build audits", () => {
@@ -422,4 +519,14 @@ test("local GI/GK projection changes run calculation and nutrition regressions",
     const plan = classifyPaths([path]);
     assert.ok(plan.runGlycemic && plan.runNutrition && plan.needsNode, path);
   }
+});
+
+
+test("GK-only checks retain the nutrition inventory needed by GK coverage and tests", () => {
+  const plan = classifyPaths(["site/scripts/glycemic-load-model.ts"]);
+  assert.equal(plan.runGlycemic, true);
+  assert.equal(plan.runNutrition, false);
+  const workflow = readFileSync(new URL("../../.github/workflows/pages.yml", import.meta.url), "utf8");
+  assert.match(workflow, /name: Generate nutrition and GK outputs required by isolated TypeScript checks[\s\S]*?npm run content:sync\s+npm run audit:nutrition -- --strict\s+npm run audit:glycemic-load/);
+  assert.match(workflow, /name: Audit published nutrition evidence \(risk-based, strict\)\s+if: [^\n]*run_glycemic == 'true'/);
 });

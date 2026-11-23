@@ -22,6 +22,17 @@ export function buildEnvironment(env, imageRoot) {
   for (const name of secretNames) delete child[name];
   return child;
 }
+export function runProductionNpmTasks(npmExecPath, options) {
+  for (const args of [['run', 'build'], ['run', 'audit:nutrition', '--', '--strict']]) {
+    const result = spawnSync(process.execPath, [npmExecPath, ...args], { ...options, stdio: 'inherit' });
+    if (result.error || result.signal || result.status === null) {
+      throw new Error('Production npm task did not complete: ' + args[1]);
+    }
+    if (result.status !== 0) return result.status;
+  }
+  return 0;
+}
+
 export function productionBuild(env = process.env) {
   const site = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
   const repo = path.dirname(site);
@@ -53,11 +64,31 @@ export function productionBuild(env = process.env) {
       restored = JSON.parse(execFileSync(process.platform === 'win32' ? 'python' : 'python3', args, { env: restoreEnv, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }));
     } catch { throw new Error('Image input verification failed; the standalone restore-image-inputs adapter provides sanitized diagnostics.'); }
     if (restored.status !== 'PASS' || restored.files !== manifest.files.filter(file => file.build).length || typeof restored.imageRoot !== 'string' || !path.isAbsolute(restored.imageRoot) || /[\r\n]/.test(restored.imageRoot)) throw new Error('Image verifier returned an invalid result.');
+    // SHA-pinned Git-tracked recipe WebP overlays are verified separately
+    // after the existing private R2 (or public) source bundle passes.
+    // Explicit/tracked source roots are only read, never mutated.
+    const overlayArgs = [
+      '-B', path.join(site, 'scripts/verified_image_overlay.py'),
+      '--manifest', path.join(repo, 'assets/images.tracked-overlays.json'),
+      '--source-root', tracked,
+      '--image-root', restored.imageRoot,
+      '--mode', (mode === 'explicit' || mode === 'tracked') ? 'verify' : 'apply',
+    ];
+    try {
+      const output = JSON.parse(execFileSync(process.platform === 'win32' ? 'python' : 'python3',
+        overlayArgs, { env: buildEnvironment(restoreEnv, restored.imageRoot), encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }));
+      if (output.status !== 'PASS' || !Number.isInteger(output.verifiedGitOverlays) || output.verifiedGitOverlays < 1)
+        throw new Error('Overlay verifier did not pass');
+      console.log(`Verified ${output.verifiedGitOverlays} SHA-pinned Git image overlay(s).`);
+    } catch {
+      throw new Error('Tracked recipe image overlay verification failed; the original R2 archive was not altered.');
+    }
     console.log(`Verified ${restored.files} production image inputs (mode=${mode}).`);
-    // The build itself receives only the verified root, never the reader secret.
-    const result = spawnSync(process.execPath, [env.npm_execpath, 'run', 'build'], { cwd: site, env: buildEnvironment(env, restored.imageRoot), stdio: 'inherit' });
-    if (result.error || result.signal || result.status === null) throw new Error('Production build did not complete.');
-    return result.status;
+    // Production tasks receive the verified root without the image reader credentials.
+    return runProductionNpmTasks(env.npm_execpath, {
+      cwd: site,
+      env: buildEnvironment(env, restored.imageRoot),
+    });
   } finally {
     if (temporary && existsSync(temporary)) {
       const resolved = realpathSync(temporary);

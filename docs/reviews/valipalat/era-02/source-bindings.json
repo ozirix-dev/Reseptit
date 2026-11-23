@@ -153,7 +153,29 @@
           "item": "tuoreiden jalapeñojen syötävää osaa, kanta ja siemenet poistettu",
           "sourceId": "afcd-F002901-2026-10-25",
           "match": "PROVISIONAL",
-          "note": "Punainen chili ei ole jalapeñon tarkka vastine"
+          "note": "Punainen chili ei ole jalapeñon tarkka vastine",
+          "externalEvidence": {
+            "foodDatabase": "USDA FoodData Central SR Legacy",
+            "foodId": 168576,
+            "name": "Peppers, jalapeno, raw",
+            "officialUrl": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168576/nutrients",
+            "corroboratingTranscriptionUrl": "https://rawpawiq.com/ingredient/peppers-jalapeno-raw-168576",
+            "recordState": "RAW_JALAPENO_EDIBLE_PORTION",
+            "per100g": {
+              "carbohydrateByDifferenceG": 6.5,
+              "dietaryFibreG": 2.8,
+              "proteinG": 0.91,
+              "fatG": 0.37
+            },
+            "declaredCarbohydrateDefinition": "US_CARBOHYDRATE_BY_DIFFERENCE_INCLUDES_FIBRE",
+            "polyolsStatus": "NOT_REPORTED",
+            "edibleRecipeMassG": 150,
+            "edibleMassWeighedInTrial": false,
+            "sourceMatchesFoodName": true,
+            "completeEUAvailableCarbohydrateEvidence": false,
+            "approvedForPublicMacroCalculation": false,
+            "approval": "RESEARCH_ONLY_NOT_NUTRITION_MODEL_INPUT"
+          }
         },
         {
           "grams": 120,
@@ -177,11 +199,44 @@
           "item": "pekonia, rasvaa noin 32 %, raakapaino",
           "sourceId": "fineli-707-2026-10-24",
           "match": "REVIEW",
-          "note": "Pekoni 32 %, raakasyöte, paistohävikki auki"
+          "note": "Pekoni 32 %, raakasyöte, paistohävikki auki",
+          "externalEvidence": {
+            "testedMethodReference": "https://www.kyleecooks.com/jalapeno-poppers/",
+            "methodAuthor": "Kylee Ayotte",
+            "authorBakedOvenC": 200,
+            "authorBakedApproxMinutes": 20,
+            "originalBaconState": "RAW_THIN_SLICED",
+            "originalBaconSlicesPer12Peppers": 12,
+            "draftRawBaconAmountG": 90,
+            "draftBaconProductOrPackageIdentified": false,
+            "cookedEdibleBaconG": null,
+            "cookedFatRetentionFraction": null,
+            "drippedBaconFatG": null,
+            "namedCookingYieldSource": "https://www.ars.usda.gov/research/publications/publication?seqNo115=287023",
+            "genericCookingYieldCannotValidateThisStuffedBakedRecipe": true,
+            "approvedForPublicMacroCalculation": false,
+            "approval": "RETENTION_AND_PRODUCT_HOLD"
+          }
         }
       ],
       "nutritionStatus": "UNPUBLISHED",
-      "publicationAuthorized": false
+      "publicationAuthorized": false,
+      "methodEvidence": {
+        "primaryAuthor": "Kylee Ayotte",
+        "sourceUrl": "https://www.kyleecooks.com/jalapeno-poppers/",
+        "sourceOvenC": 200,
+        "sourceApproxBakingMinutes": 20,
+        "draftOvenC": 200,
+        "draftApproxBakingMinutesRange": [
+          20,
+          25
+        ],
+        "ingredientQuantitiesSourceExact": false,
+        "sixPortionsDependOnTwelveHalves": true,
+        "timeTotalMinApproved": false,
+        "preparationSourceStatus": "METHOD_SUPPORTED_QUANTITIES_NOT_INDEPENDENTLY_VERIFIED",
+        "recipavoPhysicalTestClaim": false
+      }
     },
     {
       "id": "rapeat-kesakurpitsalastut",

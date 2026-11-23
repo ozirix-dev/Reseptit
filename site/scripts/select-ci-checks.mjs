@@ -103,8 +103,13 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false,
     if (/^reseptit\/.+\.md$/i.test(file)) {
       if (file.includes("/_mallipohjat/")) return fallback();
       plan.runContent = true;
-      addNutritionChecks(plan);
-      addGlycemicChecks(plan);
+      // All ordinary FI recipes still receive the mandatory site build,
+      // route generation, publication preflight and changed-content checks.
+      // Full nutrition/GK regression suites are reserved for evidence, data
+      // and calculation-engine changes selected by their own paths below.
+      plan.runBuild = true;
+      plan.runStatic = true;
+      plan.needsNode = true;
       continue;
     }
     if (/^kaannokset\/.+\.md$/i.test(file)) {
@@ -323,6 +328,27 @@ function isCacheIgnoreOnly(base, head) {
   return [...longer.matchAll(rule)].length === 1 && longer.replace(rule, "") === shorter;
 }
 
+/**
+ * The FI audit must be refreshed when recipe sources or the published recipe
+ * projection can change. Do not run it for translation-only, UI-only or docs
+ * work: the scan covers FI source files and FI generated RecipeEntry output.
+ */
+function shouldRunFiEditorialAudit(paths) {
+  if (!Array.isArray(paths)) return true; // Untrusted changed-path input: fail safe.
+  return paths.some((raw) => {
+    if (typeof raw !== "string" || !raw.trim()) return true;
+    const file = raw.replaceAll("\\", "/");
+    if (/^reseptit\/.+\.md$/i.test(file) && !file.includes("/_mallipohjat/")) return true;
+    if (file === ".github/workflows/pages.yml") return true; // Verify this gate in its own PR.
+    // The quarantine membership is consumed by both the raw FI inventory and
+    // the published content build. Treat a change as an audit input mutation.
+    if (file === "site/scripts/public-recipe-quarantine.json") return true;
+    if (/^site\/scripts\/.+\.(?:mjs|ts)$/i.test(file)) return true;
+    if (/^site\/src\/content\/.+\.ts$/i.test(file)) return true;
+    return false;
+  });
+}
+
 function writeGithubOutputs(plan, paths, classificationError) {
   if (!process.env.GITHUB_OUTPUT) return;
   const delimiter = `paths_${randomUUID().replaceAll("-", "")}`;
@@ -347,6 +373,11 @@ function writeGithubOutputs(plan, paths, classificationError) {
       }[key]}=${String(value)}`),
     `unit_tests=${Array.isArray(plan.unitTests) ? plan.unitTests.join(" ") : "*"}`,
     `browser_suites=${plan.browserSuites.join(" ")}`,
+    `run_editorial_audit=${String(plan.runBuild && (
+      shouldRunFiEditorialAudit(paths) ||
+      process.env.EVENT_NAME === "workflow_dispatch" ||
+      Boolean(classificationError)
+    ))}`,
     `classification_error=${String(Boolean(classificationError))}`,
   ];
   appendFileSync(process.env.GITHUB_OUTPUT, `${rows.join("\n")}\n`, "utf8");
@@ -376,4 +407,4 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   console.log(JSON.stringify({ ...plan, unitTests: Array.isArray(plan.unitTests) ? plan.unitTests : ["all unit tests"], changedPaths: paths.length }, null, 2));
 }
 
-export { applyEventPolicy, classifyPaths };
+export { applyEventPolicy, classifyPaths, shouldRunFiEditorialAudit };

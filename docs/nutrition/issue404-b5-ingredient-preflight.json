@@ -19,7 +19,41 @@
           "unit": "g",
           "item": "kuivaa suolattua turskaa, ennen suolanpoistoa",
           "reasonCode": "MISSING_EXACT_FOOD",
-          "reason": "Kuivattua suolattua turskaa ei saa korvata tuoreella turskalla: suolanpoiston saanto ja koostumus avoin."
+          "reason": "Kuivattua suolattua turskaa ei saa korvata tuoreella turskalla: suolanpoiston saanto ja koostumus avoin.",
+          "externalEvidence": {
+            "sourceRecipeDrySaltedCodInputG": 160,
+            "references": [
+              {
+                "type": "MANUFACTURER_DRY_SALTED_COD_COMPARATOR",
+                "product": "Ghezzi Baccalà secco / Dry cod",
+                "url": "https://ghezziitalia.com/en/product/dry-cod/",
+                "state": "DRY_SALTED_AS_SOLD",
+                "proteinGPer100g": 28,
+                "fatGPer100g": 1,
+                "carbohydrateGPer100g": 0,
+                "saltGPer100g": 6.8
+              },
+              {
+                "type": "OFFICIAL_FOOD_TABLE_DRY_SALTED_COD_COMPARATOR",
+                "source": "Norwegian Food Composition Table / Food ID 04.253",
+                "url": "https://www.matvaretabellen.no/en/cod-split-salted-and-dried/",
+                "state": "SPLIT_SALTED_DRY_NOT_HEAT_TREATED",
+                "proteinGPer100g": 64.3,
+                "fatGPer100g": 1.1,
+                "carbohydrateGPer100g": 0,
+                "waterGPer100g": 35,
+                "ediblePartFraction": 0.75
+              }
+            ],
+            "productMatchApproved": false,
+            "recipeFishPurchasedProductIdentified": false,
+            "sourceProteinRangeIsNotAnApprovedUncertaintyInterval": true,
+            "desaltingProtocolApproved": false,
+            "desaltingYieldGramsVerified": false,
+            "desaltedNutrientCompositionVerified": false,
+            "carbohydratePolyolsVerified": false,
+            "approval": "RESEARCH_ONLY_COMPOSITION_COMPARATORS_NOT_SELECTED"
+          }
         },
         {
           "index": 1,
@@ -31,6 +65,25 @@
           "candidateRecord": {
             "calculationPath": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
             "recordId": "fineli-110-release-20"
+          },
+          "externalEvidence": {
+            "product": "Carr's Self Raising Flour 1 kg",
+            "seller": "Tesco",
+            "url": "https://www.tesco.com/shop/en-GB/products/264883892",
+            "state": "DRY_SELF_RAISING_WHEAT_FLOUR_WITH_RAISING_AGENTS",
+            "declaredBasis": "PER_100_G_AS_SOLD",
+            "labelledCarbohydrateGPer100g": 73.2,
+            "labelledFibreGPer100g": 1.9,
+            "labelledProteinGPer100g": 8.7,
+            "labelledFatGPer100g": 0.5,
+            "sourceFlourAmountG": 300,
+            "conditionalFlourOnlyLabelCarbohydrateGForBatch": 219.6,
+            "conditionalFlourOnlyLabelCarbohydrateGPer16Pieces": 13.725,
+            "labelledCarbohydratesIncludePolyols": true,
+            "polyolsStatus": "NOT_REPORTED",
+            "recipeProductMatchApproved": false,
+            "fullRecipeMacrosApproved": false,
+            "approval": "RESEARCH_ONLY_PRODUCT_NOT_SELECTED"
           }
         },
         {
