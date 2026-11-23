@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "pienet-kantarellipiiraat",
+  "source_path": "reseptit/alkuruoat/pienet-kantarellipiiraat.md",
+  "source_sha256": "1b3a0f95190e93cb5e37baf9396ddeccfa0eab79f07c527d29e79151311668f0",
+  "decision": "approved",
+  "reviewed_by": "ChatGPT Chat 4 – lähteistetty kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.arla.fi/reseptit/kantarellipiirakka/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/reviews/chat4-eight-starters-nutrition-withheld-2026-11-21.md",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Mainin reseptikategorioiden identiteetit ja avoimet rinnakkaiset PR:t tarkistettiin, eikä kyseisen ruokalajin samaa recipe_id/url_slug-identiteettiä löytynyt."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "200 g vehnäjauhoa, 70 g ruista, 125 g voita kahteen erilliseen käyttötarkoitukseen, 300 g kantarellia, kananmunat ja maitopohjainen täyte."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Arlan testattu 200 °C pienten kantarellipiiraiden esipaisto ja täytepaisto tukevat menetelmää; Recipavon 8 vuokaa, 8 min + 18–22 min ja ruispohja ovat perusteltu muunnelma."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Tunnistetut kantarellit paistetaan ja muna-maitotäyte kypsennetään hyytyneeksi. Maito, kananmuna, vehnä ja ruis huomioidaan."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kahdeksan piirasannosta, 75 minuutin arvio sisältää 15 minuutin taikinan kylmälevon ja paistovaiheet."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Numeeriset ravintoarvot jätetään tarkoituksellisesti pois, koska toistettavaa tuotekohtaista laskentaa ei ole. Puuttuvat kentät eivät merkitse nollaa; erillinen ravintonäyttömuistio."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle omalle valmistusversiolle ei ole hyväksyttyä GI/GK-mittausta tai laskentaa. GK jätetään määrittämättä ja ruokavalioväitteet pidätetään."
+    }
+  },
+  "supplementary_evidence": {
+    "source_review": "docs/reviews/new-recipes/chat4-alkuruoat-independent-source-review-2026-11-21.md",
+    "semantic_review": "docs/reviews/new-recipes/chat4-eight-appetizers-semantic-review-2026-11-21.md",
+    "image_path": "kuvat/alkuruoat/pienet-kantarellipiiraat.webp",
+    "image_sha256": "5f50865a6e2384d7caff96dd22e4269351ab2c958569b383756f6158bb3df633",
+    "image_review": "SHA-256-varmennettu 720 × 720 tekoälyhavainnekuva; ei valmistetun annoksen valokuva.",
+    "physical_cook_test": false,
+    "translation_status": "EN/SV/TH remain draft; no publication claim for those languages."
+  }
+}

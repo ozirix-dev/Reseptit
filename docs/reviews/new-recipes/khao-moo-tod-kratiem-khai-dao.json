@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "recipe_id": "khao-moo-tod-kratiem-khai-dao",
+  "source_path": "reseptit/paaruoat/khao-moo-tod-kratiem-khai-dao.md",
+  "source_sha256": "b58266d735eeca6d7a9128c06e1342a5619e32eb6a3444fbe4ce070b90824ebc",
+  "decision": "hold",
+  "reviewed_by": "GPT-6 (alustava toimituksellinen katselmointi)",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.wongnai.com/recipes/fried-pork-with-garlic-and-pepper",
+      "https://www.wongnai.com/recipes/ugc/f4cc9e8a316e420581e34388a831491e",
+      "https://iwishiwasinthailand.blogspot.com/2015/11/khao-moo-tod-gratiem-rice-with-crispy.html",
+      "https://www.riversidethaicooking.com/quick-thai-dishes/fried-pork-with-garlic/"
+    ]
+  },
+  "nutrition_evidence": "docs/reviews/khao-moo-tod-kratiem-khai-dao/nutrition-preflight.md",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Uusi yksilöllinen recipe_id ja slug erottuvat aiemmista porsas- ja thaimaalaisresepteistä. Rakennetarkistus ei osoita julkaistun reitin kaksoiskappaletta."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Kaikissa FI/EN/SV/TH-luonnoksissa samat 14 ilmoitettua määrää ja yksikköä (liha 300 g, riisi kuivana 150 g, 2 munaa, 30 ml öljyä ja kastikkeet eritelty). Allergeeniluokat ilmoitettu: kananmuna, kala, osteri/nilviäiset ja soija; soija- ja osterikastikkeen mahdollinen vehnä mainittu. Tuotteita tai gluteenittomuutta ei väitetä varmistetuiksi; kuluttajaa ohjataan tarkistamaan pakkaukset. Tämän osion PASS koskee reseptisisällön johdonmukaisuutta, ei tuotemerkkikohtaista laboratoriotietoa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistuksen olennaiset vaiheet on verrattu neljään valmistuslähteeseen; erillinen valkosipulin paistaminen, porsaan marinointi ja munan tarjoilu erotetaan Recipavon toimituksellisista mitoituksista. Ei väitettä fyysisestä kokkaustestistä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Porsas kypsennetään vähintään 70 °C:n sisälämpötilaan, raakaa marinadia ei tarjoilla. Keitetty riisi ajoitetaan lähelle tarjoilua, kuumana pito vähintään 60 °C ja turvallinen jäähdytys/uudelleenkuumennus kerrotaan neljällä kielellä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kaksi annosta, yhteensä 300 g raakaa porsasta, 150 g kuivaa riisiä ja kaksi kananmunaa. 50 minuutin toimituksellinen aika kattaa marinoinnin ja sen aikana keitettävän riisin, porsaan paiston sekä kokoamisen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "NELJÄ LUKUA PIDETÄÄN JULKAISEMATTA: FI/EN/SV/TH: carbs_net_per_serving_g, carbs_total_per_serving_g, protein_per_serving_g ja fat_per_serving_g kaikki null. Erillinen nutrition-preflight.md dokumentoi mitta- ja tuotevaihtelun sekä öljyn todellisen ruokaan päätymisen epävarmuuden; ennakkoskenaariota ei julkaista ravintoarvoina. PASS tarkoittaa tietoista, lähteistettyä arvojen pidättämistä pääruoassa, ei hyväksyttyä makrolaskelmaa. Uusi laskelma vaatii myöhemmin todennetut punnitukset ja omat auditoinnit."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Numeerista GK/GL-arvoa ei ole hyväksytty. Tavallinen jasmiiniriisi ei muodosta VHH- tai ketoruokaa. Määrittämättömyys kirjataan julkaisupäätökseen erikseen."
+    }
+  },
+  "supplementary_evidence": {
+    "image_path": "kuvat/paaruoat/khao-moo-tod-kratiem-khai-dao.webp",
+    "image_sha256": "4b9ac11edec1281a6dac41d2d035807bb5b921b7a9e675b702f1b4c907e741e8",
+    "image_review": "Uusi alkuperäinen tekoälykuvitus, ei Facebookista kopioitu. Gitissä mutta toistaiseksi R2:n julkaisumanifestin ulkopuolella.",
+    "physical_cook_test": false,
+    "release_blockers": [
+      "Reseptin WebP:n ImageAssets-seal ja varmennettu R2-kuvapaketin sekä manifestin päivitys",
+      "FI/EN/SV/TH:n varsinaiset SHA-sidotut Codex-merkitysvertailut ja mahdollisten kriittisten havaintojen korjaus",
+      "Tuoreen mainin kanssa yhteensopiva täsmä-CI ja Repo Guardin Ready/merge-portit"
+    ],
+    "nutrition_publication_disposition": "WITHHELD_UNVERIFIED_INGREDIENT_MASSES_AND_OIL_RETENTION",
+    "nutrition_numbers_published": false,
+    "allergen_claim": "Ingredient-class warnings in all four languages; no product-specific allergen clearance or gluten-free claim",
+    "draft_translation_review": "docs/reviews/khao-moo-tod-kratiem-khai-dao/source-evidence.md (AI preliminary only; Codex semantic review still required)",
+    "release_status_note": "Julkaisu on yhä HOLD: media-arkiston ja kielikatselmoinnin portit täyttymättä. Keinotekoisia ravintoarvoja ei julkaista. Fyysinen koekeittiö ei ole yleinen julkaisuehto."
+  }
+}

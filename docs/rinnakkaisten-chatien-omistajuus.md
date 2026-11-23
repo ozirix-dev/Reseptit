@@ -64,3 +64,40 @@ Erillinen `.github/workflows/chat-owner-metadata.yml` käynnistyy PR:n avaamises
 - Auditointi kirjoittaa vain staattiset virhe-/varoitusviestit ja PR-numeron: se ei tulosta PR:n vapaata tekstiä tai arkaluonteisia tietoja. Automaattiset korjaukset, kommentit, haarojen muuttaminen ja PR:n yhdistäminen eivät kuulu tarkistukseen.
 
 Testaa itsenäisesti Node 22:lla: `node --test .github/scripts/check-chat-owner.test.mjs`. PR:n täsmä-HEAD:n tuloksen varmistaminen on edelleen omistavan chatin vastuulla.
+
+## 7. Kokki-Codex – nimetty tekninen työntekijä (22.11.2026)
+
+Käyttäjän antama pysyvä työnjako- ja GitHub-merkintä on **Kokki-Codex**.
+Se on oma Codex-työntekijän roolinsa, **ei** uusi `Chat N` -numero,
+GitHub-tunnus eikä erillinen oikeuksien myöntäminen. Aiemman Codex-työn
+omistajuutta tai PR-haaroja ei vaihdeta takautuvasti.
+
+Uusissa Kokki-Codexin **nimenomaisesti valtuutetuissa** kirjoitustöissä:
+
+- PR-otsikko: `[Kokki-Codex] <tehtävä>`.
+- PR-kuvaus: `Työn omistaja: Kokki-Codex`, tehtävä, rajatut tiedostot,
+  kirjoitushaara, riippuvuudet, HEAD/base-SHA, CI-tulokset ja HOLD-ehdot.
+- Uusi kirjoitushaara mahdollisuuksien mukaan
+  `kokki-codex/<tehtava>-<paiva>`. Vanhoja haaroja ei nimetä uudelleen.
+- **Chat-1 (Pääkokki) vastaa yksin Ready-siirroista, mergeistä ja
+  integraation jälkeisistä main-CI-tarkistuksista.** Kokki-Codex
+  luovuttaa oman rajatun Draft-PR:nsä Chat-1:lle, ellei käyttäjä erikseen
+  muuta työnjakoa.
+- Chat-2–6 säilyttävät nykyiset omat PR:nsä ja muutostensa kirjoitusomistajuuden.
+  Jos tiedostovaraukset osuvat päällekkäin, työ sovitetaan omistajan kanssa
+  **ennen** kirjoittamista. Pelkkä GitHub-kommentti tai tämän ohjeen lukeminen
+  ei siirrä omistajuutta.
+- Codexin nyt käynnissä oleva **Reseptit + ReportHub -perehtymisauditointi
+  on vain luku -työ**: uusi nimi ei käynnistä toteutusta eikä muuta auditoinnin
+  käyttöoikeuksia tai rajoituksia.
+
+Nykyiset Repo Guardin paikallinen suostumus, tarkka HEAD/base-SHA, CI,
+review-, ruoka-/ravinto-/GK-, F25-, karanteeni- ja julkaisuportit säilyvät
+sellaisinaan. `Chat owner metadata`-tarkistus koskee edelleen `Chat N`
+-merkintöjen johdonmukaisuutta; `Kokki-Codex` ei saa tekeytyä Chat N:ksi
+tarkistuksen läpäisemiseksi.
+
+**Tiedoksi Chat-2–6:** jokainen voi jatkaa omaa työtään ennallaan.
+Kokki-Codexin uusi tunniste koskee tulevia Codexille erikseen osoitettuja
+tehtäviä. Yhteiset ohjeet luetaan GitHubista; erillisiä chat-keskusteluja
+ei voi automaattisesti synkronoida pelkällä GitHub-päivityksellä.
