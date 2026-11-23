@@ -1,0 +1,83 @@
+---
+title: "Pienet nokkosletut puolukoilla"
+recipe_id: nokkosletut-puolukoilla
+url_slug: nokkosletut-puolukoilla
+category: alkuruoka
+language: fi
+status: published
+servings: 6
+time_total_min: 65
+difficulty: keskitaso
+main_ingredient:
+  - "nokkonen"
+  - "puolukka"
+tags:
+  - "suomalainen"
+  - "nokkonen"
+  - "puolukka"
+  - "kasvisruoka"
+ingredients:
+  - amount: 120
+    unit: "g"
+    item: "nuoria varmasti tunnistettuja nokkosen lehtiä"
+  - amount: 180
+    unit: "g"
+    item: "vehnäjauhoja"
+  - amount: 350
+    unit: "ml"
+    item: "maitoa"
+  - amount: 2
+    unit: "kpl"
+    item: "kananmunaa"
+  - amount: 30
+    unit: "g"
+    item: "voita"
+    note: "sulatettuna taikinaan"
+  - amount: 15
+    unit: "g"
+    item: "voita"
+    note: "paistamiseen"
+  - amount: 0.5
+    unit: "tl"
+    item: "suolaa"
+  - amount: 120
+    unit: "g"
+    item: "puolukoita"
+  - amount: 120
+    unit: "g"
+    item: "ranskankermaa"
+image:
+  src: alkuruoat/nokkosletut-puolukoilla.webp
+  alt: "Pieniä nokkoslettuja ranskankermalla ja puolukoilla"
+  width: 720
+  height: 720
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: draft
+  sv: draft
+  th: draft
+---
+
+# Pienet nokkosletut puolukoilla
+
+Pienet nokkosletut puolukoilla on suomalainen alkuruoka. Määrät ja ajat ovat Recipavon toimituksellinen, julkaistuihin valmistusohjeisiin verrattu sovitus; Recipavo ei ole tehnyt omaa fyysistä valmistuskoetta.
+
+## Valmistus
+
+1. Poimi nuoret nokkosen lehdet puhtaalta alueelta käsinein. Huuhtele ja keitä runsaassa kiehuvassa vedessä noin 5 minuuttia. Valuta, jäähdytä ja hienonna.
+2. Sekoita maito ja kananmunat sekä jauhot ja suola tasaiseksi taikinaksi. Lisää sulatettu voi ja nokkonen. Anna taikinan levätä noin 30 minuuttia.
+3. Paista voissa pieniä lettuja kohtalaisella lämmöllä molemmin puolin, kunnes ne ovat läpikypsiä.
+4. Tarjoa lämpiminä ranskankerman ja puolukoiden kanssa.
+
+## Muistiinpanot
+
+- **Tila:** Suomenkielinen resepti julkaistu. Englannin-, ruotsin- ja thaikieliset versiot ovat luonnoksia.
+- **Lähde- ja valmistusnäyttö:** Toimituksellinen sovitus on verrattu päivättyyn lähdekatselmointiin ja testattuihin ulkoisiin valmistusohjeisiin. Mittasuhteet eivät ole Recipavon itse keittiössä mitattuja.
+- **Ruokaturva:** Luonnonkasvi on tunnistettava oikein ja kerättävä puhtaalta alueelta. Nokkoset keitetään ennen käyttöä. Kerää vain puhtaalta paikalta; noudata nitraattia koskevaa huomiota.
+- **Ravintoarvot:** Ei laskettu; numeerisia makroja ei julkaista. GK: ei määritetty.
+- **Kuva ja käännökset:** 720 × 720 WebP on tekoälyn luoma havainnekuva, ei valmistetun annoksen valokuva. Kuva on Git-versionhallinnassa ja SHA-256 kirjattu kuvamanifestiin. EN/SV/TH ovat luonnoksia; virallinen kielikohtainen julkaisuhyväksyntä puuttuu.
+
+- **Nitraatti ja keruu:** Nokkosen lehtiä ei suositella alle 1-vuotiaille korkean nitraattipitoisuuden vuoksi. Kerää puhtaalta alueelta ja vältä tienvarsia sekä voimakkaasti lannoitettuja paikkoja. Ryöppäys/keittäminen vähentää nitraattia. https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/vierasaineiden-saannin-vahentaminen/nitraatin-saannin-vahentaminen/ .

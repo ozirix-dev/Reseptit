@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kylmasavulohilettukakku",
+  "source_path": "reseptit/alkuruoat/kylmasavulohilettukakku.md",
+  "source_sha256": "c1e1715ec8c4c59f0b767c4d67bffd0ff9c3ff210a05644bca8995c200916a10",
+  "decision": "approved",
+  "reviewed_by": "ChatGPT Chat 4 (videohavainnot) ja Kokki-3 (toimituksellinen määräarvio)",
+  "reviewed_at": "2026-11-21",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.facebook.com/reel/4556714911264526",
+      "https://patient.info/recipes/high-protein-recipes/smoked-salmon-crpe-torte",
+      "https://yhteishyva.fi/reseptit/savulohi-lettukakku/2rs9jtHfzNUnexz7u9F2wk",
+      "https://freespiritfood.net/2020/12/27/smoked-salmon-with-crepes-cucumber-and-herbed-creme-fraiche-and-caviar/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/reviews/kylmasavulohilettukakku.md",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Uusi identiteetti tässä PR-haarassa; lopullinen reittien ja duplikaattien automaattinen tarkistus on ajettava uudelle HEADille."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Kokki-3 hyväksyi tähän itsenäiseen kahdeksan annoksen sovitukseen 230 g tuorejuustoa, 150 g 28 % ranskankermaa, 150 g ennen puristamista punnittua kurkkua, 15 g tilliä, 250 g viipaloitua kylmäsavulohta ja 100 g punaista mätiä. Yhteishyvä tukee 150 g ranskankermaa, 250 g savustettua kirjolohta (ei välttämättä kylmäsavulohta) ja 100 g kirjolohenmätiä kahdeksalle; muut mittasuhteet ovat toimituksellisia arvioita. Reels ei todista tarkkoja määriä. PR #784 kommentti 7061979729, 21.11.2026. Arvio hyväksyy Recipavon oman sovituksen, ei alkuperäisen videon tarkan reseptin väitettä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Video näyttää ohuet pannulla paistetut letut, kurkun raastamisen ja tillin sekoituksen, kerrostamisen renkaaseen, savulohiviipaleet kerroksissa sekä mätikerroksen päällä. Puristaminen ja kylmäkiinteytys ovat vakauden vuoksi perusteltuja toimituksellisia ohjeita. Kerrosrakenteen ja mätipinnan kuva vastaa näkyvää ruokalajia. Recipavon fyysistä valmistustestiä ei väitetä tehdyksi."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokavirasto tunnistaa kylmäsavukalan ja pastöroimattoman mädin listerian riskielintarvikkeiksi; riskiryhmät ja 0–3 °C:n kylmäsäilytys on erotettu tuotteen kuvailevasta käyttötavasta. Kylmäsavukalaa ja pastöroimatonta mätiä ei suositella sellaisenaan riskiryhmille."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kokki-3:n 8 annoksen 18 cm:n kakun mittasuhdetarkistus: noin 9–11 ohutta lettua, n. 475–505 g kurkku-tillitäytettä puristuksen jälkeen ja 250 g savulohta; 100 g mätiä kakun pintaan. Noin 110 minuutin ilmoitus sisältää 30 min taikinalevon, lettujen paiston ja jäähdytyksen sekä vähintään 30 min kylmäkiinteytyksen. Arvioitu, ei mitattu valmistusaika. Ei Recipavon kokkikoetta."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Numeroarvot pidätetty dokumentoidusti tämän päivitetyn 13-rivisen, 150 g ranskankermaa ja 250 g kylmäsavulohta sisältävän sovituksen osalta: raaka-aineiden Fineli/AFCD-vastaavuuksia ja laskennan JSON-evidenssiä ei vielä ole. Puuttuvat arvot eivät ole nollia."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Vehnälettukakun GI tai GK ei ole reseptikohtaisesti varmennettu. Ei numeerista arviota, gluteeniton- eikä keto-väitettä."
+    }
+  },
+  "video_evidence": {
+    "source": "Käyttäjän lähettämä 44,863979 s näyttötallenne 2026-11-21, Facebook Reels Snack Porch",
+    "confirmed_visuals": [
+      "paistettu lettu pannulla",
+      "tuorekurkun raastaminen",
+      "tillin hienontaminen",
+      "valkoisen paksun täytteen, kurkun ja tillin sekoittaminen",
+      "kerrostus vuokarenkaassa",
+      "viipaloitu savulohi kerroksissa",
+      "oranssinpunainen kalanmäti pinnalla",
+      "leikkaus annosviipaleeksi"
+    ],
+    "unknown": [
+      "kerman tai tuorejuuston tarkka laatu",
+      "kaikki tarkat ainesmäärät",
+      "mädin kalalaji",
+      "valmistuksen mitattu kokonaisaika",
+      "Kokki-3:n annosmääriä ei ole mitattu videosta; ne ovat itsenäisen sovituksen toimitukselliset määrät"
+    ],
+    "note": "Käyttäjän videossa näkyvät kurkku, tilli, lohiviipaleet ja mätipinta. Julkaisukuva on 720x720 WebP-tekoälykuvitus, jolla on tarkistettu SHA-256. Recipavo ei väitä kuvan olevan videosta."
+  },
+  "release_blockers": [],
+  "release_preflight": {
+    "status": "awaiting-ci",
+    "image_source": "kuvat/alkuruoat/kylmasavulohilettukakku.webp",
+    "image_sha256": "1976bc5f009f794704456d9bc23478de9409d71b16351f7f858237ce69bd0fc6",
+    "image_manifest": "assets/images.tracked-overlays.json",
+    "old_r2_bundle": "unchanged; 396 images; SHA-256 verified separately",
+    "note": "Julkaisusisältö on toimituksellisesti hyväksytty. Draft->Ready vaatii täsmä-HEADin vihreän CI:n ja Repo Guardin."
+  }
+}
