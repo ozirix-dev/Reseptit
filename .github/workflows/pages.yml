@@ -281,23 +281,48 @@ jobs:
           if-no-files-found: ignore
           retention-days: 14
 
-      # #369: reporting only; no source quality approval is manufactured by CI.
-      - name: Generate FI translation source-quality queues (advisory)
+      # Read the verified base register so a PR cannot supply its own approval.
+      - name: Generate FI translation evidence and source-quality queues (advisory)
         id: fi_translation_queues
         if: >-
           steps.select.outputs.needs_node == 'true' &&
           (steps.select.outputs.run_content == 'true' ||
            steps.select.outputs.run_translation_review == 'true' ||
+           github.event_name == 'workflow_dispatch' ||
+           contains(steps.select.outputs.changed_paths, '.github/workflows/pages.yml') ||
+           contains(steps.select.outputs.changed_paths, 'meta/kaannokset/fi-source-quality-evidence.json') ||
            contains(steps.select.outputs.changed_paths, 'translation-batch-ci-report') ||
            contains(steps.select.outputs.changed_paths, 'translation-batch-partition') ||
-           contains(steps.select.outputs.changed_paths, 'translation-fi-source-quality'))
+           contains(steps.select.outputs.changed_paths, 'translation-fi-source-quality') ||
+           contains(steps.select.outputs.changed_paths, 'translation-derived-evidence'))
         env:
           CHANGED_PATHS: ${{ steps.select.outputs.changed_paths }}
+          FI_QUALITY_REF: ${{ steps.revision.outputs.pr_base || github.sha }}
+          RUN_FI_PILOT: >-
+            ${{ github.event_name == 'workflow_dispatch' ||
+                contains(steps.select.outputs.changed_paths, '.github/workflows/pages.yml') ||
+                contains(steps.select.outputs.changed_paths, 'meta/kaannokset/fi-source-quality-evidence.json') }}
         working-directory: site
+        shell: bash
         run: |
-          npx tsx --test tests/translation-batch-ci-report.test.ts
-          npx tsx scripts/translation-batch-ci-report.ts --out=tmp/translation-source-queues/current
-          cat ../tmp/translation-source-queues/current.md >> "$GITHUB_STEP_SUMMARY"
+          register=meta/kaannokset/fi-source-quality-evidence.json
+          evidence="$RUNNER_TEMP/fi-source-quality-evidence.json"
+          tracked="$(git -C .. ls-tree "$FI_QUALITY_REF" -- "$register")"
+          if [[ -n "$tracked" ]]; then
+            git -C .. show "$FI_QUALITY_REF:$register" > "$evidence"
+          else
+            printf '{}\n' > "$evidence"
+          fi
+          npx tsx --test tests/translation-batch-ci-report.test.ts tests/translation-derived-evidence-ledger.test.ts tests/translation-derived-evidence-cli.test.ts
+          pilot=()
+          if [[ "$RUN_FI_PILOT" == "true" ]]; then
+            pilot=(--pilot)
+          fi
+          projection=tmp/translation-derived-evidence/current
+          npx tsx scripts/translation-derived-evidence-cli.ts --out="$projection" --fi-quality="$evidence" "${pilot[@]}"
+          npx tsx scripts/translation-batch-ci-report.ts --out=tmp/translation-source-queues/current --ledger="$projection.json" --fi-quality="$evidence"
+          printf 'FI source-quality evidence revision: %s\n' "$FI_QUALITY_REF" >> "$GITHUB_STEP_SUMMARY"
+          cat "../$projection.md" ../tmp/translation-source-queues/current.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload FI translation source-quality queues (advisory)
         if: steps.fi_translation_queues.outcome == 'success'
@@ -335,24 +360,8 @@ jobs:
           if-no-files-found: error
           retention-days: 14
 
-      # Issue #369: status is derived from real source files and evidence, not labels.
-      - name: Derive FI and translation evidence state (read-only)
-        id: fi_derived_evidence
-        if: >-
-          steps.select.outputs.needs_node == 'true' &&
-          (steps.select.outputs.run_content == 'true' ||
-           steps.select.outputs.run_translation_review == 'true' ||
-           contains(steps.select.outputs.changed_paths, 'translation-derived-evidence'))
-        working-directory: site
-        env:
-          CHANGED_PATHS: ${{ steps.select.outputs.changed_paths }}
-        run: |
-          npx tsx --test tests/translation-derived-evidence-ledger.test.ts tests/translation-derived-evidence-cli.test.ts
-          npx tsx scripts/translation-derived-evidence-cli.ts --out=tmp/translation-derived-evidence/current
-          cat ../tmp/translation-derived-evidence/current.md >> "$GITHUB_STEP_SUMMARY"
-
       - name: Upload FI source/evidence projection (advisory)
-        if: steps.fi_derived_evidence.outcome == 'success'
+        if: steps.fi_translation_queues.outcome == 'success'
         uses: actions/upload-artifact@v7.0.2
         with:
           name: fi-translation-derived-evidence

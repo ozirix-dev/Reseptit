@@ -5,6 +5,10 @@ import { mkdtemp, readFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { fileURLToPath } from "node:url";
 import { readEvidenceEntries, runDerivedEvidenceReport } from "../scripts/translation-derived-evidence-cli";
+import { PILOT_IDS } from "../scripts/fi-approved-source-pilot";
+import { partitionFromLedger } from "../scripts/translation-batch-partition";
+import { fiSourceQualitySchema } from "../scripts/translation-fi-source-quality";
+import { loadSemanticEvidence } from "../scripts/translation-semantic-review";
 
 const root = path.resolve(fileURLToPath(new URL("../..", import.meta.url)));
 
@@ -62,4 +66,32 @@ test("reject duplicate or unsafe identifiers before opening filesystem paths", a
     /duplicate/,
   );
   await assert.rejects(readEvidenceEntries(root, ["../private"]), /Unsafe/);
+});
+
+test("pilot enters the source-hold queue without independent approvals", async () => {
+  const dir = await mkdtemp(path.join(tmpdir(), "fi-derived-pilot-"));
+  try {
+    const changed = "vietnamilainen-hu-tieu-aamiaiskeitto";
+    const projection = await runDerivedEvidenceReport({
+      projectRoot: root,
+      changedPaths: "reseptit/aamupalat/" + changed + ".md",
+      includePilot: true,
+      outputBase: path.join(dir, "current"),
+    });
+    const ids = [...PILOT_IDS, changed].sort();
+    assert.deepEqual(projection.changedRecipeIds, [changed]);
+    assert.deepEqual(Object.keys(projection.recipes).sort(), ids);
+    const queues = await partitionFromLedger(root, projection, await loadSemanticEvidence(root), {});
+    assert.deepEqual(queues.source_hold.map(row => row.recipe_id).sort(), ids);
+    assert.equal(queues.candidate.length, 0);
+    assert.equal(queues.auto_merge, false);
+    assert.equal(queues.auto_publish, false);
+  } finally {
+    await rm(dir, {recursive: true, force: true});
+  }
+});
+
+test("the tracked FI source-quality register matches the expected schema", async () => {
+  const text = await readFile(path.join(root, "meta/kaannokset/fi-source-quality-evidence.json"), "utf8");
+  fiSourceQualitySchema.parse(JSON.parse(text));
 });

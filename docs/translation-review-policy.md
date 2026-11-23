@@ -167,3 +167,21 @@ on [ihmistarkistuksen työjonossa](translation-human-review.md).
 Aiemmat havainnot ja regressioesimerkit ovat
 [V1.4-sisältöraportissa](reports/2026-10-22-v1-4-content-quality.md) ja
 [jatkotarkistuksessa](reports/2026-10-22-translation-self-review.md).
+
+## Riippumattoman FI-lähdekatselmoinnin pilotti (#369)
+
+Recipe site raportoi viisi pilottireseptiä myös käsin käynnistetyssä ajossa
+sekä lähde-evidenssirekisterin tai Recipe site -työnkulun muuttuessa.
+
+Riippumattoman katselmoinnin tulos kirjataan katselmoitavaan PR:ään tiedostoon
+`meta/kaannokset/fi-source-quality-evidence.json`. Käytä
+`site/scripts/translation-fi-source-quality.ts`-skeemaa. Tallenna semanttinen
+FI-lähdetarkiste, katselmoija, päiväys, katselmointiviite, päätös,
+tarkistuskohdat ja avoimet havainnot. AI- ja Codex-katselmointimerkintä
+edellyttää riippumatonta päätöstä ennen PASS-kirjausta.
+
+PR-ajossa raportti lukee rekisterin vahvistetusta pohjasta ja laskee
+reseptitarkisteet testattavasta PR-yhdistelmästä. Uusi hyväksyntätietue tulee
+raportin käyttöön, kun sen oma PR on katselmoitu ja yhdistetty. Puuttuva
+tai vanhentunut näyttö ja avoin P0/P1-löydös pitävät lähteen HOLD-jonossa.
+Kandidaattitila ei anna yhdistämis- tai julkaisulupaa.
