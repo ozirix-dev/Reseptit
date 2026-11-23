@@ -3,10 +3,11 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { isDeepStrictEqual } from "node:util";
 import { localeIndexes, recipeLibraryRoutes } from "../src/content/route-data";
-import { recipePageTitle, siteTitle } from "../src/content/site-metadata";
+import { recipePageTitle, siteTitle, websiteJsonLd } from "../src/content/site-metadata";
 import { paginateRecipeLibrary, parseRecipeLibraryPagePath } from "../src/features/recipes/recipe-pagination";
 import { libraryCopy, librarySeoDescription, libraryTitle } from "../src/features/recipes/home-preview";
-import { resolveSiteTarget } from "../src/content/site-target";
+import { siteTarget } from "../src/content/site-target";
+import { recipavoHeroCopy, recipavoHomeTitle } from "../src/features/recipes/recipavo-hero";
 import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "../src/features/blog/blog-data";
 import { glycemicLoadMeta, glycemicLoadPath, recipeUi } from "../src/features/recipes/recipe-i18n";
 import { privacyCopy, privacyPaths } from "../src/features/privacy/privacy-copy";
@@ -15,8 +16,8 @@ import { formatRecipeIngredient } from "../src/features/recipes/servings";
 import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 import { recipeStepName } from "../src/features/recipes/instruction-metadata";
 
-const staging = resolveSiteTarget(process.env.RECIPAVO_PREVIEW_ORIGIN);
-export const siteBase = staging.baseUrl;
+const brandedHome = siteTarget.production || process.env.VITE_RECIPAVO_HERO_PREVIEW === "true";
+export const siteBase = siteTarget.baseUrl;
 export interface SeoFinding { route: string; code: string; detail: string }
 export interface ExpectedPage { route: string; locale: RecipeLocale; title: string; description: string; h1: string; alternates: Record<string, string>; recipe?: RecipeEntry; blog?: boolean }
 const names = { fi: "Reseptit", en: "Recipes", sv: "Recept", th: "สูตรอาหาร" };
@@ -52,7 +53,14 @@ export function expectedPages(recipes: RecipeEntry[]): ExpectedPage[] {
     })),
     { route: blogRoot, locale: "fi" as RecipeLocale, h1: "Ruokaopas", title: siteTitle("Ruokaopas"), description: "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa.", alternates: alternateMap([{locale:"fi",routePath:blogRoot}]), blog: true },
     ...articles.map(post => ({ route: articlePath(post), locale: "fi" as RecipeLocale, h1: post.title, title: siteTitle(post.title), description: post.description, alternates: alternateMap([{locale:"fi",routePath:articlePath(post)}]), blog: true })),
-    ...locales.map((locale) => ({ route: localeIndexes[locale], locale, h1: names[locale], title: siteTitle(names[locale]), description: recipeUi[locale].intro, alternates: alternateMap(indexes) })),
+    ...locales.map((locale) => ({
+      route: localeIndexes[locale],
+      locale,
+      h1: brandedHome ? recipavoHeroCopy[locale].title : names[locale],
+      title: siteTitle(brandedHome ? recipavoHomeTitle(locale) : names[locale]),
+      description: brandedHome ? recipavoHeroCopy[locale].intro : recipeUi[locale].intro,
+      alternates: alternateMap(indexes),
+    })),
     ...recipeLibraryRoutes(recipes).map(route => {
       const { locale, page } = parseRecipeLibraryPagePath(route)!;
       return { route, locale, h1: libraryCopy[locale].title, title: libraryTitle(locale, page),
@@ -79,7 +87,14 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
   const alternateLinks = links.filter((l) => l.rel === "alternate" && l.hreflang);
   check(alternateLinks.length === Object.keys(expected.alternates).length && isDeepStrictEqual(Object.fromEntries(alternateLinks.map((l) => [l.hreflang, l.href])), expected.alternates), "HREFLANG", "Published alternates/x-default must match both ways; no extra, duplicate or missing locale");
   const robots = metas.filter((m) => m.name?.toLowerCase() === "robots");
-  check(robots.length === 1 && robots[0].content?.toLowerCase().split(/[,\s]+/).includes("noindex"), "NOINDEX", "Staging page must declare robots noindex once");
+  if (siteTarget.noIndex) {
+    check(robots.length === 1 && robots[0].content?.toLowerCase().split(/[,\s]+/).includes("noindex"),
+      "NOINDEX", "Staging page must declare robots noindex once");
+  } else {
+    const blocksIndexing = metas.some(({ name, content }) =>
+      /^(?:robots|googlebot)$/i.test(name ?? "") && /\b(?:noindex|none)\b/i.test(content ?? ""));
+    check(!blocksIndexing, "NOINDEX", "Production page must allow indexing");
+  }
   const scripts = activeScripts(html);
   const jsonScripts = scripts.filter((script) => script.attributes.type === "application/ld+json");
   if (expected.blog) {
@@ -92,7 +107,20 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
     return issues;
   }
   if (!expected.recipe) {
-    check(jsonScripts.length === 0, "INDEX_JSONLD", "Index unexpectedly declares recipe data");
+    if (siteTarget.production && expected.route === "/") {
+      check(jsonScripts.length === 1 && jsonScripts[0].attributes.id === "website-jsonld",
+        "INDEX_JSONLD", "Production homepage must have exactly one WebSite JSON-LD script");
+      if (jsonScripts.length === 1) {
+        try {
+          check(isDeepStrictEqual(JSON.parse(jsonScripts[0].content), websiteJsonLd(siteBase + "/")),
+            "INDEX_JSONLD", "Production WebSite JSON-LD differs from the canonical homepage");
+        } catch {
+          check(false, "INDEX_JSONLD", "Production WebSite JSON-LD is invalid");
+        }
+      }
+    } else {
+      check(jsonScripts.length === 0, "INDEX_JSONLD", "Index unexpectedly declares structured data");
+    }
     return issues;
   }
   const recipe = expected.recipe;
@@ -106,8 +134,8 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
     const data = JSON.parse(jsonScripts[0].content);
     const withholding = withholdF25Nutrition(recipe.recipeId, recipe.locale);
     const nutrition = Object.fromEntries(Object.entries({ carbohydrateContent: recipe.nutrition.carbsTotalG, proteinContent: recipe.nutrition.proteinG, fatContent: recipe.nutrition.fatG }).filter(([, n]) => !withholding && n !== null).map(([k, n]) => [k, `${n} g`]));
-    // Permit only the explicitly reviewed natto source override, and only when
-    // the public notes corroborate it. Unknown structured claims remain blocked.
+    // Only exact reviewed source corrections are allowed, corroborated by
+    // locale-specific visible notes. Other structured claims stay blocked.
     const nattoMethod = recipe.recipeId === "japanilainen-natto-riisikulho"
       && isDeepStrictEqual(recipe.cookingMethod, ["keittäminen"])
       && recipe.notesHtml.includes({
@@ -116,12 +144,24 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
       }[recipe.locale])
       ? { fi: "Keittäminen", en: "Boiling", sv: "Kokning", th: "การต้ม" }[recipe.locale]
       : undefined;
-    check(!recipe.cookingMethod?.length || Boolean(nattoMethod),
+    const goulashMethod = recipe.recipeId === "paprikainen-vhh-gulassi"
+      && isDeepStrictEqual(recipe.cookingMethod, ["liesi"])
+      && recipe.notesHtml.includes({
+        fi: "Valmistustapa: haudutus liedellä kannellisessa padassa.",
+        en: "Cooking method: simmering on the stovetop in a covered pot.",
+        sv: "Tillagningssätt: sjudning på spisen i en gryta med lock.",
+        th: "วิธีปรุง: เคี่ยวบนเตาในหม้อปิดฝา",
+      }[recipe.locale])
+      ? { fi: "Liedellä hauduttaminen", en: "Stovetop simmering",
+          sv: "Sjudning på spis", th: "เคี่ยวบนเตา" }[recipe.locale]
+      : undefined;
+    const auditedMethod = nattoMethod ?? goulashMethod;
+    check(!recipe.cookingMethod?.length || Boolean(auditedMethod),
       "COOKING_METHOD_SOURCE", "Cooking method must be source-reviewed and visible in the recipe notes");
     const expectedData = JSON.parse(JSON.stringify({
       "@context": "https://schema.org", "@type": "Recipe", name: recipe.title, description: recipe.description || undefined,
       inLanguage: recipe.locale, recipeCategory: recipe.category,
-      ...(nattoMethod ? { cookingMethod: nattoMethod } : {}),
+      ...(auditedMethod ? { cookingMethod: auditedMethod } : {}),
       keywords: recipe.tags.length ? recipe.tags.join(", ") : undefined,
       ...(recipe.image ? { image: [recipe.image.src] } : {}), recipeYield: String(recipe.servings),
       recipeIngredient: expectedIngredients,
@@ -204,8 +244,19 @@ export function inspectDiscovery(sitemap: string, robots: string, routes: string
   if (!document || body !== "" || !isDeepStrictEqual([...urls].sort(), routes.map((r) => siteBase + r).sort())) issues.push({ route: "/sitemap.xml", code: "SITEMAP", detail: "Malformed/unsupported sitemap XML or missing, extra or duplicate URLs" });
   const blocked = routes.some((r) => ["*", "googlebot", "googlebot-image"].some((agent) => blockedByRobots(robots, r, agent)));
   const directives = robots.split(/\r?\n/).map((line) => line.split("#")[0].trim());
-  if (blocked || !directives.some((line) => /^user-agent\s*:\s*\*$/i.test(line)) || directives.some((line) => /^sitemap\s*:/i.test(line))) {
-    issues.push({ route: "/robots.txt", code: "ROBOTS", detail: "Robots must allow crawlers to read noindex without advertising the staging sitemap" });
+  const advertisedSitemaps = directives
+    .filter((line) => /^sitemap\s*:/i.test(line))
+    .map((line) => line.replace(/^sitemap\s*:\s*/i, ""));
+  const expectedSitemaps = siteTarget.production ? [siteBase + "/sitemap.xml"] : [];
+  if (blocked || !directives.some((line) => /^user-agent\s*:\s*\*$/i.test(line))
+    || !isDeepStrictEqual(advertisedSitemaps, expectedSitemaps)) {
+    issues.push({
+      route: "/robots.txt",
+      code: "ROBOTS",
+      detail: siteTarget.production
+        ? "Production robots must allow crawling and advertise exactly the public sitemap"
+        : "Staging robots must allow crawlers to read noindex without advertising the sitemap",
+    });
   }
   return issues;
 }

@@ -116,7 +116,7 @@ const descriptions: LocalizedCopy = {
     fi: "Jasmiiniriisi saa makua kookosmaidosta ja tuoreesta timjamista. Tarjoa se haudutettujen kidneypapujen kanssa.",
   },
   "karibia-maissipuuro-kookoksella": {
-    fi: "Maissijauho kypsyy kookosmaidossa täyteläiseksi puuroksi, joka maustetaan kanelilla ja vaniljalla.",
+    fi: "Maissijauho kypsennetään ensin vedessä puuroksi. Kookosmaito, kaneli ja vaniljauute lisätään kypsän puuron joukkoon.",
   },
   "karibia-mango-limejogurtti": {
     fi: "Limemehu raikastaa kylmän mango-jogurttikulhon. Pinnalle ripotellaan kookoshiutaleita.",
@@ -283,7 +283,7 @@ const descriptions: LocalizedCopy = {
     fi: "Lämpimät maissitortillat täytetään mustapavuilla, paistetulla kananmunalla ja avokadolla.",
   },
   "meksikolainen-atole-maissipuuro": {
-    fi: "Hieno maissijauho sakeuttaa maitoon keitettävän atole-tyylisen puuron. Kaneli ja vanilja antavat maun.",
+    fi: "Hieno maissijauho kypsennetään ensin vedessä puuroksi. Maito, kaneli ja vaniljauute lisätään valmiin puuron joukkoon.",
   },
   "meksikolainen-huevos-a-la-mexicana": {
     fi: "Tomaatti, sipuli ja tuore jalapeño paistetaan pannulla ennen kuin kananmunat sekoitetaan mukaan.",
@@ -835,6 +835,15 @@ const nattoRiceCookingReview: Readonly<Record<RecipeLocale, { evidence: readonly
 };
 
 export function reviewedPublicCookingMethod(recipeId: string, rawMethod: readonly string[] | undefined): string[] | undefined {
+  if (recipeId === "paprikainen-vhh-gulassi") {
+    // #327: the SHA-pinned four-language source says "uuni" but instructs
+    // covered stovetop simmering, with no oven temperature or oven step.
+    // Only public metadata changes; do not rewrite nutrition-sealed sources.
+    if (JSON.stringify(rawMethod) !== JSON.stringify(["uuni"])) {
+      throw new Error("GOULASH_COOKING_METHOD_SOURCE_DRIFT");
+    }
+    return ["liesi"];
+  }
   if (recipeId !== "japanilainen-natto-riisikulho") return undefined;
   if (JSON.stringify(rawMethod) !== JSON.stringify(["paistaminen"])) {
     throw new Error("NATTO_COOKING_METHOD_SOURCE_DRIFT");

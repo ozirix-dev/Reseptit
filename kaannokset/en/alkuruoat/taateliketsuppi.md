@@ -38,14 +38,14 @@ ingredients:
 - amount: 3
   unit: g
   item: clove of garlic
-  note: about one nail
+  note: about 1 clove
 - amount: 1
   unit: g
   item: fine salt
 - amount: 30
   unit: g
   item: water
-  note: if necessary for thinning, plus water for soaking the dates
+  note: for thinning if needed. Use separate water to soak the dates.
 source_language: fi
 translation_of: taateliketsuppi
 source_recipe: reseptit/alkuruoat/taateliketsuppi.md
@@ -55,7 +55,7 @@ source_recipe: reseptit/alkuruoat/taateliketsuppi.md
 
 ## Description
 
-Tomato puree and soft dates are pureed into a thick ketchup. Apple cider vinegar gives acidity and garlic sharpness.
+Blend tomato paste and soft dates into a thick ketchup. Apple cider vinegar adds tang and garlic gives it a sharp bite.
 
 ## Instructions
 
@@ -68,4 +68,4 @@ Tomato puree and soft dates are pureed into a thick ketchup. Apple cider vinegar
 - Make a small batch and use within three days. The sauce is stored in the cold.
 - The reel has a small jar of tomato paste, three soaked dates, a splash of vinegar, garlic and salt. Gram amounts and soaking time are an adjustment. [Reel by Peter Jackson](https://www.facebook.com/reel/4522751821280480)
 - The combination of tomato paste, dates and vinegar was compared to the corresponding instruction of the Seattle YMCA. [Comparison guide](https://www.seattleymca.org/blog/recipe-homemade-ketchup)
-- The image is a perception image made with artificial intelligence.
+- The image is an AI-generated illustration.
