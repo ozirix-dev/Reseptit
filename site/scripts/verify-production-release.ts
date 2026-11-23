@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import { setTimeout as wait } from "node:timers/promises";
 import { pathToFileURL } from "node:url";
 import { localeIndexes } from "../src/content/route-data";
 import { resolveSiteTarget } from "../src/content/site-target";
@@ -9,6 +10,9 @@ import { recipeLibraryPagePath, recipeLibraryPageSize } from "../src/features/re
 import { activeScripts, blockedByRobots, inspectNotFound, tags } from "./seo-audit";
 
 const revisionHeader = "x-recipavo-commit";
+const commitSha = /^[a-f0-9]{40}$/;
+const revisionRetries = 6;
+const revisionRetryDelayMs = 5_000;
 const production = resolveSiteTarget(undefined, "production").baseUrl;
 const notFound = "/__recipavo_release_probe_missing__/";
 // Verify two #404 source-reviewed breakfast recipes across every published locale
@@ -74,8 +78,15 @@ function moduleEntry(html: string, origin: string, route: string, source: "live"
   return { path: url.pathname, bootstrap };
 }
 
-export async function verifyProductionRelease(expectedSha: string, origin: string, dist: string, request = fetch) {
-  assert.match(expectedSha, /^[a-f0-9]{40}$/, "Expected a full commit SHA");
+export async function verifyProductionRelease(
+  expectedSha: string,
+  origin: string,
+  dist: string,
+  request = fetch,
+  { previousSha, delay = wait }: { previousSha?: string; delay?: (ms: number) => Promise<void> } = {},
+) {
+  assert.match(expectedSha, commitSha, "Expected a full commit SHA");
+  if (previousSha !== undefined) assert.match(previousSha, commitSha, "Expected a full previous commit SHA");
   assert.equal(origin, production, "Expected the Recipavo production origin");
   const artifact = (file: string) => readFile(path.join(dist, file.replace(/^\//, "")));
   const headers = (await artifact("_headers")).toString("utf8");
@@ -85,8 +96,18 @@ export async function verifyProductionRelease(expectedSha: string, origin: strin
   const get = (route: string) => request(origin + route, {
     redirect: "manual", signal: AbortSignal.timeout(15_000),
   });
+  // Share the retry budget across every HTML route in this verification.
+  let retriesLeft = revisionRetries;
   const checkHtml = async (route: string, status: number) => {
-    const response = await get(route);
+    let response = await get(route);
+    while (previousSha && previousSha !== expectedSha && retriesLeft > 0 &&
+      response.status === status && response.headers.get(revisionHeader) === previousSha) {
+      await response.body?.cancel();
+      retriesLeft -= 1;
+      console.warn(`${route}: still serving ${previousSha}; waiting for ${expectedSha} (${retriesLeft} retries left after this one)`);
+      await delay(revisionRetryDelayMs);
+      response = await get(route);
+    }
     assert.equal(response.status, status, route);
     assert.equal(response.headers.get(revisionHeader), expectedSha, route + " revision");
     assert.match(response.headers.get("content-type") ?? "", /text\/html/i, route);
@@ -173,5 +194,6 @@ if (process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === imp
   if (!sha || !origin || !dist || extra.length) {
     throw new Error("Usage: npm run verify:production -- <commit-sha> https://www.recipavo.com <stamped-dist-directory>");
   }
-  console.log(JSON.stringify(await verifyProductionRelease(sha, origin, dist), null, 2));
+  const previousSha = process.env.RECIPAVO_PREVIOUS_LIVE_SHA || undefined;
+  console.log(JSON.stringify(await verifyProductionRelease(sha, origin, dist, fetch, { previousSha }), null, 2));
 }
