@@ -150,6 +150,50 @@ test("production verification distinguishes stale headers from wrong bytes or pa
   await t.test("rejects text/plain at the ordinary URL even when a revision probe would succeed", async () => {
     await assert.rejects(verify("cached-js-mime"), /index-abcd\.js.*Content-Type/);
   });
+  await t.test("rechecks ordinary HTML URLs when only the observed previous release is served", async () => {
+    const requests: string[] = [];
+    const delays: number[] = [];
+    const get = requestWithFault();
+    const request: typeof fetch = async (input, init) => {
+      const { pathname, search } = new URL(String(input));
+      const response = await get(input, init);
+      if (pathname === "/" || pathname === changedRecipeRoute) {
+        assert.equal(search, "");
+        if (!requests.includes(pathname)) response.headers.set("X-Recipavo-Commit", old);
+        requests.push(pathname);
+      }
+      return response;
+    };
+    const result = await verifyProductionRelease(sha, origin, dir, request, {
+      previousSha: old,
+      delay: async ms => { delays.push(ms); },
+    });
+    assert.deepEqual(requests, ["/", "/", changedRecipeRoute, changedRecipeRoute]);
+    assert.deepEqual(delays, [5_000, 5_000]);
+    assert.ok(result.summaries.some(entry => entry.route === changedRecipeRoute && entry.revision === sha));
+  });
+
+  await t.test("fails after six retries if the previous revision does not converge", async () => {
+    let delays = 0;
+    await assert.rejects(verifyProductionRelease(sha, origin, dir, requestWithFault("html-revision"), {
+      previousSha: old,
+      delay: async () => { delays += 1; },
+    }), /\/ revision/);
+    assert.equal(delays, 6);
+  });
+
+  await t.test("does not retry an unrecognized revision or unrelated failures", async () => {
+    const delay = async () => { assert.fail("Unexpected revision retry"); };
+    await assert.rejects(verifyProductionRelease(sha, origin, dir, requestWithFault("html-revision"), {
+      previousSha: "c".repeat(40), delay,
+    }), /\/ revision/);
+    const options = { previousSha: old, delay };
+    await assert.rejects(verifyProductionRelease(sha, origin, dir, requestWithFault("recipe-http"), options),
+      /pinaatti-fetashakshuka/);
+    await assert.rejects(verifyProductionRelease(sha, origin, dir, requestWithFault("bootstrap-mismatch"), options),
+      /live module entry differs from artifact/);
+  });
+
   await t.test("rejects wrong robots bytes or revision, stale HTML and preview origins", async () => {
     await assert.rejects(verify("robots-bytes"), /robots\.txt content/);
     await assert.rejects(verify("robots-revision"), /robots\.txt revision probe/);
