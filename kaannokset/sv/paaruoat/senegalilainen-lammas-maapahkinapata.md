@@ -4,7 +4,7 @@ recipe_id: senegalilainen-lammas-maapahkinapata
 url_slug: senegalesisk-lammgryta-med-jordnotter
 category: paaruoka
 language: sv
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/senegalilainen-lammas-maapahkinapata.md
 translation_of: senegalilainen-lammas-maapahkinapata

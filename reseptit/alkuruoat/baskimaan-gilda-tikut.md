@@ -4,9 +4,9 @@ recipe_id: baskimaan-gilda-tikut
 url_slug: baskimaan-gilda-tikut
 category: alkuruoka
 language: fi
-status: draft
+status: published
 translation_languages: [en, sv, th]
-translation_status: {en: draft, sv: draft, th: draft}
+translation_status: {en: published, sv: published, th: published}
 servings: 4
 time_total_min: 15
 difficulty: "Helppo"

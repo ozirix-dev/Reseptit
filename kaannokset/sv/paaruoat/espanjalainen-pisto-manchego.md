@@ -4,7 +4,7 @@ recipe_id: espanjalainen-pisto-manchego
 url_slug: spansk-pisto-manchego-med-agg
 category: paaruoka
 language: sv
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/espanjalainen-pisto-manchego.md
 translation_of: espanjalainen-pisto-manchego

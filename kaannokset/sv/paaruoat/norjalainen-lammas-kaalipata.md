@@ -4,7 +4,7 @@ recipe_id: norjalainen-lammas-kaalipata
 url_slug: norsk-farikal-med-lamm-och-vitkal
 category: paaruoka
 language: sv
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/norjalainen-lammas-kaalipata.md
 translation_of: norjalainen-lammas-kaalipata

@@ -1,0 +1,128 @@
+{
+  "recipeId": "thaimaalainen-suolainen-kookosriisi",
+  "sourceHash": "00fff746e4860708b3f97017702dd14a5ecedb14df659624279308f196cc1ee2",
+  "calculatedAt": "2026-11-24",
+  "batchId": "batch-33307",
+  "servings": 4,
+  "scope": "Yksi reseptin 4 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kuivaa jasmiiniriisiä",
+      "amount": 300,
+      "unit": "g",
+      "state": "kuivaa jasmiiniriisiä",
+      "record": {
+        "id": "afcd-F007682-release-3",
+        "name": "Rice, white, uncooked",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "kuivaa jasmiiniriisiä",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 74,
+          "polyols": 0,
+          "fibre": 0.8,
+          "protein": 7,
+          "fat": 0.9
+        }
+      },
+      "matchEvidence": "Kuiva valkoinen riisi on jasmiiniriisin koostumusvastine, ei GI-vastine.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "täysrasvaista säilykekookosmaitoa",
+      "amount": 240,
+      "unit": "g",
+      "state": "täysrasvaista säilykekookosmaitoa",
+      "record": {
+        "id": "afcd-F002991-release-3",
+        "name": "Coconut, milk, canned, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "täysrasvaista säilykekookosmaitoa",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.7,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 1.4,
+          "fat": 15.4
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: täysrasvaista säilykekookosmaitoa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "vettä",
+      "amount": 220,
+      "unit": "g",
+      "state": "vettä",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "vettä",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: vettä.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "suolaa",
+      "amount": 4,
+      "unit": "g",
+      "state": "suolaa",
+      "matchEvidence": "Ruokasuola.",
+      "excludedReason": "Natriumkloridi ei sisällä tässä laskettavia makroravintoaineita.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Natrium ei kuulu neljään makrokenttään."
+    }
+  ]
+}

@@ -4,7 +4,7 @@ recipe_id: tanskalainen-marjakiisseli-kermalla
 url_slug: phutding-boeri-khrim-daenmak
 category: jalkiruoka
 language: th
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/jalkiruoat/tanskalainen-marjakiisseli-kermalla.md
 translation_of: tanskalainen-marjakiisseli-kermalla

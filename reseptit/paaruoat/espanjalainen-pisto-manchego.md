@@ -4,9 +4,9 @@ recipe_id: espanjalainen-pisto-manchego
 url_slug: espanjalainen-pisto-manchego
 category: paaruoka
 language: fi
-status: draft
+status: published
 translation_languages: [en, sv, th]
-translation_status: {en: draft, sv: draft, th: draft}
+translation_status: {en: published, sv: published, th: published}
 servings: 4
 time_total_min: 50
 difficulty: "Helppo"

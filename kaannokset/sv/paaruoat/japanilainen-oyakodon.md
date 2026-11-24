@@ -4,7 +4,7 @@ recipe_id: japanilainen-oyakodon
 url_slug: japansk-oyakodon-med-kyckling
 category: paaruoka
 language: sv
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/japanilainen-oyakodon.md
 translation_of: japanilainen-oyakodon

@@ -1,0 +1,358 @@
+{
+  "recipeId": "senegalilainen-lammas-maapahkinapata",
+  "sourceHash": "a96b9d4098a65859d9973956ae22c5c6bda784b11d5bf0cc09d0ae0d6898b483",
+  "calculatedAt": "2026-11-24",
+  "batchId": "batch-33307",
+  "servings": 6,
+  "scope": "Yksi reseptin 6 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "luutonta lampaanpaistia",
+      "amount": 750,
+      "unit": "g",
+      "state": "luutonta lampaanpaistia",
+      "record": {
+        "id": "fineli-732-release-20",
+        "name": "LAMPAANPAISTI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/732",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "luutonta lampaanpaistia",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 19.06,
+          "fat": 12.5
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: luutonta lampaanpaistia.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "kuorittua keltasipulia",
+      "amount": 180,
+      "unit": "g",
+      "state": "kuorittua keltasipulia",
+      "record": {
+        "id": "fineli-335-release-20",
+        "name": "SIPULI, KELTASIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/335",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "kuorittua keltasipulia",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.8,
+          "FIBT": 1.2,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 1.2,
+          "polyols": 0,
+          "protein": 1.25,
+          "fat": 0.1
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kuorittua keltasipulia.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "vihreää paprikaa",
+      "amount": 140,
+      "unit": "g",
+      "state": "vihreää paprikaa",
+      "record": {
+        "id": "fineli-387-release-20",
+        "name": "PAPRIKA, VIHREÄ",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/387",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "vihreää paprikaa",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 2.5,
+          "FIBT": 1.8,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 2.5,
+          "fibre": 1.8,
+          "polyols": 0,
+          "protein": 0.94,
+          "fat": 0.3
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: vihreää paprikaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "kuorittua porkkanaa",
+      "amount": 380,
+      "unit": "g",
+      "state": "kuorittua porkkanaa",
+      "record": {
+        "id": "fineli-300-release-20",
+        "name": "PORKKANA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/300",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "kuorittua porkkanaa",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 5.56,
+          "FIBT": 2.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 5.56,
+          "fibre": 2.4,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0.2
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kuorittua porkkanaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "tomaattipyreetä ilman lisättyä suolaa",
+      "amount": 60,
+      "unit": "g",
+      "state": "tomaattipyreetä ilman lisättyä suolaa",
+      "record": {
+        "id": "afcd-F009206-release-3",
+        "name": "Tomato, paste, no added salt",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "tomaattipyreetä ilman lisättyä suolaa",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 10.1,
+          "polyols": 0,
+          "fibre": 3.6,
+          "protein": 3.4,
+          "fat": 0.5
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tomaattipyreetä ilman lisättyä suolaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "vettä",
+      "amount": 850,
+      "unit": "g",
+      "state": "vettä",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "vettä",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: vettä.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "maapähkinävoita ilman lisättyä sokeria tai suolaa",
+      "amount": 160,
+      "unit": "g",
+      "state": "maapähkinävoita ilman lisättyä sokeria tai suolaa",
+      "record": {
+        "id": "afcd-F006579-release-3",
+        "name": "Peanut butter, smooth & crunchy, no added sugar or salt",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "maapähkinävoita ilman lisättyä sokeria tai suolaa",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 9.4,
+          "polyols": 0,
+          "fibre": 6.5,
+          "protein": 24.3,
+          "fat": 54.3
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: maapähkinävoita ilman lisättyä sokeria tai suolaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "oliiviöljyä",
+      "amount": 25,
+      "unit": "g",
+      "state": "oliiviöljyä",
+      "record": {
+        "id": "fineli-536-release-20",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "oliiviöljyä",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: oliiviöljyä.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "suolaa",
+      "amount": 7,
+      "unit": "g",
+      "state": "suolaa",
+      "matchEvidence": "Ruokasuola.",
+      "excludedReason": "Natriumkloridi ei sisällä tässä laskettavia makroravintoaineita.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Natrium ei kuulu neljään makrokenttään."
+    },
+    {
+      "item": "kuorittua valkosipulia",
+      "amount": 12,
+      "unit": "g",
+      "state": "kuorittua valkosipulia",
+      "record": {
+        "id": "afcd-F004193-release-3",
+        "name": "Garlic, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "kuorittua valkosipulia",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 10.2,
+          "polyols": 0,
+          "fibre": 16.9,
+          "protein": 6.1,
+          "fat": 2.8
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kuorittua valkosipulia.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    }
+  ]
+}

@@ -4,7 +4,7 @@ recipe_id: japanilainen-sunomono
 url_slug: japanese-cucumber-wakame-sunomono
 category: alkuruoka
 language: en
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/japanilainen-sunomono.md
 translation_of: japanilainen-sunomono

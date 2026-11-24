@@ -4,7 +4,7 @@ recipe_id: georgialainen-kana-tomaattipata
 url_slug: satu-kai-makhuea-chakhokhbili
 category: paaruoka
 language: th
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/georgialainen-kana-tomaattipata.md
 translation_of: georgialainen-kana-tomaattipata

@@ -2,10 +2,10 @@
   "schema_version": 1,
   "recipe_id": "norjalainen-lammas-kaalipata",
   "source_path": "reseptit/paaruoat/norjalainen-lammas-kaalipata.md",
-  "source_sha256": "f73a5b6526ed2772539ec20795900c9a468b9d107d94b03094c338a9528e7b95",
-  "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "source_sha256": "8962c061ce86707229a0ac1b9ffc1c0213c487e84cf59957c693690ca12288c5",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -15,27 +15,27 @@
   "nutrition_evidence": "docs/nutrition/calculations/norjalainen-lammas-kaalipata.json",
   "checks": {
     "duplicates": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
     },
     "ingredients": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
     },
     "method": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
     },
     "food_safety": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
     },
     "servings_and_time": {
-      "status": "pending",
+      "status": "pass",
       "notes": "4 annosta. Kokonaisajaksi on arvioitu 165 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
     },
     "nutrition": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
     },
     "glycemic": {
@@ -64,7 +64,7 @@
     "origin": "Tekoälyllä luotu havainnekuva"
   },
   "proposed_publication": {
-    "review_state": "PENDING",
+    "review_state": "APPROVED",
     "recipe_markdown": [
       {
         "path": "reseptit/paaruoat/norjalainen-lammas-kaalipata.md",
@@ -97,184 +97,8 @@
     ],
     "nutrition_sha256": "57b99a152eff2759b5938ef6a27bbabd06ea71bbb8d7a931ac204ed9ecee7121",
     "batch_id": "batch-33307",
-    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
   },
-  "proposed_nutrition_calculation": {
-    "recipeId": "norjalainen-lammas-kaalipata",
-    "sourceHash": "4cd668a09db5b3a6e423502e9906136c324c7a60098a52eef2f5b11106269a33",
-    "calculatedAt": "2026-11-24",
-    "batchId": "batch-33307",
-    "servings": 4,
-    "scope": "Yksi reseptin 4 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
-    "reviewerStatus": "AUTOMATED ONLY",
-    "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
-    "ingredients": [
-      {
-        "item": "luutonta lampaanpaistia",
-        "amount": 700,
-        "unit": "g",
-        "state": "luutonta lampaanpaistia",
-        "record": {
-          "id": "fineli-732-release-20",
-          "name": "LAMPAANPAISTI",
-          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/732",
-          "retrievedAt": "2026-10-24",
-          "licence": "THL, Fineli Release 20, CC BY 4.0",
-          "state": "luutonta lampaanpaistia",
-          "basis": "per100g-edible",
-          "carbohydrateDefinition": "EU_AVAILABLE",
-          "componentValues": {
-            "CHO": 0,
-            "FIBT": 0,
-            "POLYL": 0
-          },
-          "componentIds": {
-            "CHO": 2034,
-            "FIBT": 2168,
-            "POLYL": 2260
-          },
-          "polyolsSourceVerified": true,
-          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
-          "per100g": {
-            "carbohydrate": 0,
-            "fibre": 0,
-            "polyols": 0,
-            "protein": 19.06,
-            "fat": 12.5
-          }
-        },
-        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: luutonta lampaanpaistia.",
-        "edibleFraction": 1,
-        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
-        "retainedFraction": 1,
-        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
-      },
-      {
-        "item": "valkokaalia",
-        "amount": 700,
-        "unit": "g",
-        "state": "valkokaalia",
-        "record": {
-          "id": "fineli-320-release-20",
-          "name": "VALKOKAALI, KERÄKAALI",
-          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/320",
-          "retrievedAt": "2026-10-24",
-          "licence": "THL, Fineli Release 20, CC BY 4.0",
-          "state": "valkokaalia",
-          "basis": "per100g-edible",
-          "carbohydrateDefinition": "EU_AVAILABLE",
-          "componentValues": {
-            "CHO": 4.97,
-            "FIBT": 2,
-            "POLYL": 0
-          },
-          "componentIds": {
-            "CHO": 2034,
-            "FIBT": 2168,
-            "POLYL": 2260
-          },
-          "polyolsSourceVerified": true,
-          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
-          "per100g": {
-            "carbohydrate": 4.97,
-            "fibre": 2,
-            "polyols": 0,
-            "protein": 1.2,
-            "fat": 0.1
-          }
-        },
-        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: valkokaalia.",
-        "edibleFraction": 1,
-        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
-        "retainedFraction": 1,
-        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
-      },
-      {
-        "item": "vettä",
-        "amount": 180,
-        "unit": "g",
-        "state": "vettä",
-        "record": {
-          "id": "fineli-922-release-20",
-          "name": "VESI, VESIJOHTOVESI",
-          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
-          "retrievedAt": "2026-10-24",
-          "licence": "THL, Fineli Release 20, CC BY 4.0",
-          "state": "vettä",
-          "basis": "per100g-edible",
-          "carbohydrateDefinition": "EU_AVAILABLE",
-          "componentValues": {
-            "CHO": 0,
-            "FIBT": 0,
-            "POLYL": 0
-          },
-          "componentIds": {
-            "CHO": 2034,
-            "FIBT": 2168,
-            "POLYL": 2260
-          },
-          "polyolsSourceVerified": true,
-          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
-          "per100g": {
-            "carbohydrate": 0,
-            "fibre": 0,
-            "polyols": 0,
-            "protein": 0,
-            "fat": 0
-          }
-        },
-        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: vettä.",
-        "edibleFraction": 1,
-        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
-        "retainedFraction": 1,
-        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
-      },
-      {
-        "item": "suolaa",
-        "amount": 5,
-        "unit": "g",
-        "state": "suolaa",
-        "matchEvidence": "Ruokasuola.",
-        "excludedReason": "Natriumkloridi ei sisällä tässä laskettavia makroravintoaineita.",
-        "omissionImpactUpperBoundPerServing": {
-          "kcal": 0,
-          "netCarbohydrate": 0,
-          "totalCarbohydrate": 0,
-          "protein": 0,
-          "fat": 0
-        },
-        "omissionImpactEvidence": "Natrium ei kuulu neljään makrokenttään."
-      },
-      {
-        "item": "kokonaisia mustapippureita",
-        "amount": 4,
-        "unit": "g",
-        "state": "kokonaisia mustapippureita",
-        "record": {
-          "id": "afcd-F006618-release-3",
-          "name": "Pepper, black, ground",
-          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
-          "retrievedAt": "2026-10-24",
-          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
-          "state": "kokonaisia mustapippureita",
-          "basis": "per100g-as-sold",
-          "carbohydrateDefinition": "EU_AVAILABLE",
-          "polyolsSourceVerified": true,
-          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
-          "per100g": {
-            "carbohydrate": 38.6,
-            "polyols": 0,
-            "fibre": 25.3,
-            "protein": 10.4,
-            "fat": 3.3
-          }
-        },
-        "matchEvidence": "Kokonainen ja jauhettu kuivattu mustapippuri ovat sama raaka-aine.",
-        "edibleFraction": 1,
-        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
-        "retainedFraction": 1,
-        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
-      }
-    ]
-  }
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
 }

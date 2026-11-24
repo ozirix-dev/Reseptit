@@ -4,7 +4,7 @@ recipe_id: tanskalainen-marjakiisseli-kermalla
 url_slug: danish-berry-pudding-with-cream
 category: jalkiruoka
 language: en
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/jalkiruoat/tanskalainen-marjakiisseli-kermalla.md
 translation_of: tanskalainen-marjakiisseli-kermalla

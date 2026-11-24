@@ -4,7 +4,7 @@ recipe_id: norjalainen-lammas-kaalipata
 url_slug: norwegian-lamb-cabbage-stew
 category: paaruoka
 language: en
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/norjalainen-lammas-kaalipata.md
 translation_of: norjalainen-lammas-kaalipata

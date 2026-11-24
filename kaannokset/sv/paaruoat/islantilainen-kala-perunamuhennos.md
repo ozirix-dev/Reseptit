@@ -4,7 +4,7 @@ recipe_id: islantilainen-kala-perunamuhennos
 url_slug: islandsk-fisk-och-potatisstuvning
 category: paaruoka
 language: sv
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/islantilainen-kala-perunamuhennos.md
 translation_of: islantilainen-kala-perunamuhennos

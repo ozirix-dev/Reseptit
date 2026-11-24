@@ -4,7 +4,7 @@ recipe_id: holskytyskurkut
 url_slug: finnish-shaken-dill-cucumbers
 category: alkuruoka
 language: en
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/holskytyskurkut.md
 translation_of: holskytyskurkut

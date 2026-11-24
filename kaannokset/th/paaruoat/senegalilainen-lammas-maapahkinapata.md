@@ -4,7 +4,7 @@ recipe_id: senegalilainen-lammas-maapahkinapata
 url_slug: satu-kae-thua-lisong-mafe
 category: paaruoka
 language: th
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/senegalilainen-lammas-maapahkinapata.md
 translation_of: senegalilainen-lammas-maapahkinapata

@@ -4,7 +4,7 @@ recipe_id: amerikkalainen-succotash
 url_slug: amerikansk-succotash-med-majs
 category: alkuruoka
 language: sv
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/amerikkalainen-succotash.md
 translation_of: amerikkalainen-succotash

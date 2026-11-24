@@ -4,7 +4,7 @@ recipe_id: ruotsalainen-katkarapupaahtoleipa
 url_slug: toast-skagen-med-rakor-och-dill
 category: alkuruoka
 language: sv
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/ruotsalainen-katkarapupaahtoleipa.md
 translation_of: ruotsalainen-katkarapupaahtoleipa

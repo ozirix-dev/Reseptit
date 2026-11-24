@@ -4,7 +4,7 @@ recipe_id: norjalainen-lammas-kaalipata
 url_slug: satu-kae-kalampli-norawe
 category: paaruoka
 language: th
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/norjalainen-lammas-kaalipata.md
 translation_of: norjalainen-lammas-kaalipata

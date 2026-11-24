@@ -4,7 +4,7 @@ recipe_id: holskytyskurkut
 url_slug: taengkwa-khayao-dill-finlaen
 category: alkuruoka
 language: th
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/holskytyskurkut.md
 translation_of: holskytyskurkut

@@ -4,7 +4,7 @@ recipe_id: meksikolainen-kesakurpitsa-juustolla
 url_slug: mexican-zucchini-with-fresh-cheese
 category: alkuruoka
 language: en
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/meksikolainen-kesakurpitsa-juustolla.md
 translation_of: meksikolainen-kesakurpitsa-juustolla

@@ -4,9 +4,9 @@ recipe_id: meksikolainen-kesakurpitsa-juustolla
 url_slug: meksikolainen-kesakurpitsa-juustolla
 category: alkuruoka
 language: fi
-status: draft
+status: published
 translation_languages: [en, sv, th]
-translation_status: {en: draft, sv: draft, th: draft}
+translation_status: {en: published, sv: published, th: published}
 servings: 4
 time_total_min: 35
 difficulty: "Helppo"

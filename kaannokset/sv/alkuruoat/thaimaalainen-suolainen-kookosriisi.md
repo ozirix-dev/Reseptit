@@ -4,7 +4,7 @@ recipe_id: thaimaalainen-suolainen-kookosriisi
 url_slug: thailandskt-kokosris-som-tillbehor
 category: alkuruoka
 language: sv
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/thaimaalainen-suolainen-kookosriisi.md
 translation_of: thaimaalainen-suolainen-kookosriisi

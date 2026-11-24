@@ -4,7 +4,7 @@ recipe_id: toscanalainen-panzanella
 url_slug: tuscan-bread-salad-panzanella
 category: alkuruoka
 language: en
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/toscanalainen-panzanella.md
 translation_of: toscanalainen-panzanella

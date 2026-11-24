@@ -2,10 +2,10 @@
   "schema_version": 1,
   "recipe_id": "italialainen-peperonata",
   "source_path": "reseptit/alkuruoat/italialainen-peperonata.md",
-  "source_sha256": "35a1432cb3afedb7e6d4a47bda857d21aed16467bde4e0a809c06a4d65956c18",
-  "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "source_sha256": "ab55ed03155fde4159cfe2f0c0fdbc75d78c2b0ab73a3787df3498088ff6fb56",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -15,27 +15,27 @@
   "nutrition_evidence": "docs/nutrition/calculations/italialainen-peperonata.json",
   "checks": {
     "duplicates": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
     },
     "ingredients": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
     },
     "method": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
     },
     "food_safety": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
     },
     "servings_and_time": {
-      "status": "pending",
+      "status": "pass",
       "notes": "6 annosta. Kokonaisajaksi on arvioitu 65 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
     },
     "nutrition": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
     },
     "glycemic": {
@@ -64,7 +64,7 @@
     "origin": "Tekoälyllä luotu havainnekuva"
   },
   "proposed_publication": {
-    "review_state": "PENDING",
+    "review_state": "APPROVED",
     "recipe_markdown": [
       {
         "path": "reseptit/alkuruoat/italialainen-peperonata.md",
@@ -97,304 +97,8 @@
     ],
     "nutrition_sha256": "0968776c64a41af23528e5403d4fa269db7875b5fc565eceb5fa8327d5b51994",
     "batch_id": "batch-33307",
-    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
   },
-  "proposed_nutrition_calculation": {
-    "recipeId": "italialainen-peperonata",
-    "sourceHash": "2208a47f718c8ff3c0ec7877cb37468c91b9e75a1bb651c39e1b92c823c78bee",
-    "calculatedAt": "2026-11-24",
-    "batchId": "batch-33307",
-    "servings": 6,
-    "scope": "Yksi reseptin 6 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
-    "reviewerStatus": "AUTOMATED ONLY",
-    "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
-    "ingredients": [
-      {
-        "item": "punaista paprikaa",
-        "amount": 400,
-        "unit": "g",
-        "state": "punaista paprikaa",
-        "record": {
-          "id": "fineli-386-release-20",
-          "name": "PAPRIKA, PUNAINEN",
-          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/386",
-          "retrievedAt": "2026-10-24",
-          "licence": "THL, Fineli Release 20, CC BY 4.0",
-          "state": "punaista paprikaa",
-          "basis": "per100g-edible",
-          "carbohydrateDefinition": "EU_AVAILABLE",
-          "componentValues": {
-            "CHO": 4.5,
-            "FIBT": 1.9,
-            "POLYL": 0
-          },
-          "componentIds": {
-            "CHO": 2034,
-            "FIBT": 2168,
-            "POLYL": 2260
-          },
-          "polyolsSourceVerified": true,
-          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
-          "per100g": {
-            "carbohydrate": 4.5,
-            "fibre": 1.9,
-            "polyols": 0,
-            "protein": 0.94,
-            "fat": 0.3
-          }
-        },
-        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: punaista paprikaa.",
-        "edibleFraction": 1,
-        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
-        "retainedFraction": 1,
-        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
-      },
-      {
-        "item": "keltaista paprikaa",
-        "amount": 200,
-        "unit": "g",
-        "state": "keltaista paprikaa",
-        "record": {
-          "id": "fineli-388-release-20",
-          "name": "PAPRIKA, KELTAINEN",
-          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/388",
-          "retrievedAt": "2026-10-24",
-          "licence": "THL, Fineli Release 20, CC BY 4.0",
-          "state": "keltaista paprikaa",
-          "basis": "per100g-edible",
-          "carbohydrateDefinition": "EU_AVAILABLE",
-          "componentValues": {
-            "CHO": 5.1,
-            "FIBT": 1.9,
-            "POLYL": 0
-          },
-          "componentIds": {
-            "CHO": 2034,
-            "FIBT": 2168,
-            "POLYL": 2260
-          },
-          "polyolsSourceVerified": true,
-          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
-          "per100g": {
-            "carbohydrate": 5.1,
-            "fibre": 1.9,
-            "polyols": 0,
-            "protein": 0.94,
-            "fat": 0.2
-          }
-        },
-        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: keltaista paprikaa.",
-        "edibleFraction": 1,
-        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
-        "retainedFraction": 1,
-        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
-      },
-      {
-        "item": "vihreää paprikaa",
-        "amount": 200,
-        "unit": "g",
-        "state": "vihreää paprikaa",
-        "record": {
-          "id": "fineli-387-release-20",
-          "name": "PAPRIKA, VIHREÄ",
-          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/387",
-          "retrievedAt": "2026-10-24",
-          "licence": "THL, Fineli Release 20, CC BY 4.0",
-          "state": "vihreää paprikaa",
-          "basis": "per100g-edible",
-          "carbohydrateDefinition": "EU_AVAILABLE",
-          "componentValues": {
-            "CHO": 2.5,
-            "FIBT": 1.8,
-            "POLYL": 0
-          },
-          "componentIds": {
-            "CHO": 2034,
-            "FIBT": 2168,
-            "POLYL": 2260
-          },
-          "polyolsSourceVerified": true,
-          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
-          "per100g": {
-            "carbohydrate": 2.5,
-            "fibre": 1.8,
-            "polyols": 0,
-            "protein": 0.94,
-            "fat": 0.3
-          }
-        },
-        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: vihreää paprikaa.",
-        "edibleFraction": 1,
-        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
-        "retainedFraction": 1,
-        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
-      },
-      {
-        "item": "tuoreita tomaatteja",
-        "amount": 400,
-        "unit": "g",
-        "state": "tuoreita tomaatteja",
-        "record": {
-          "id": "fineli-352-release-20",
-          "name": "TOMAATTI",
-          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/352",
-          "retrievedAt": "2026-10-24",
-          "licence": "THL, Fineli Release 20, CC BY 4.0",
-          "state": "tuoreita tomaatteja",
-          "basis": "per100g-edible",
-          "carbohydrateDefinition": "EU_AVAILABLE",
-          "componentValues": {
-            "CHO": 3.45,
-            "FIBT": 0.4,
-            "POLYL": 0
-          },
-          "componentIds": {
-            "CHO": 2034,
-            "FIBT": 2168,
-            "POLYL": 2260
-          },
-          "polyolsSourceVerified": true,
-          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
-          "per100g": {
-            "carbohydrate": 3.45,
-            "fibre": 0.4,
-            "polyols": 0,
-            "protein": 0.55,
-            "fat": 0.3
-          }
-        },
-        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tuoreita tomaatteja.",
-        "edibleFraction": 1,
-        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
-        "retainedFraction": 1,
-        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
-      },
-      {
-        "item": "kuorittua punasipulia",
-        "amount": 120,
-        "unit": "g",
-        "state": "kuorittua punasipulia",
-        "record": {
-          "id": "fineli-34234-release-20",
-          "name": "SIPULI, PUNASIPULI",
-          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34234",
-          "retrievedAt": "2026-10-24",
-          "licence": "THL, Fineli Release 20, CC BY 4.0",
-          "state": "kuorittua punasipulia",
-          "basis": "per100g-edible",
-          "carbohydrateDefinition": "EU_AVAILABLE",
-          "componentValues": {
-            "CHO": 5.447,
-            "FIBT": 1.2,
-            "POLYL": 0
-          },
-          "componentIds": {
-            "CHO": 2034,
-            "FIBT": 2168,
-            "POLYL": 2260
-          },
-          "polyolsSourceVerified": true,
-          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
-          "per100g": {
-            "carbohydrate": 5.447,
-            "fibre": 1.2,
-            "polyols": 0,
-            "protein": 1.506,
-            "fat": 0.114
-          }
-        },
-        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kuorittua punasipulia.",
-        "edibleFraction": 1,
-        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
-        "retainedFraction": 1,
-        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
-      },
-      {
-        "item": "oliiviöljyä",
-        "amount": 30,
-        "unit": "g",
-        "state": "oliiviöljyä",
-        "record": {
-          "id": "fineli-536-release-20",
-          "name": "OLIIVIÖLJY",
-          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
-          "retrievedAt": "2026-10-24",
-          "licence": "THL, Fineli Release 20, CC BY 4.0",
-          "state": "oliiviöljyä",
-          "basis": "per100g-edible",
-          "carbohydrateDefinition": "EU_AVAILABLE",
-          "componentValues": {
-            "CHO": 0,
-            "FIBT": 0,
-            "POLYL": 0
-          },
-          "componentIds": {
-            "CHO": 2034,
-            "FIBT": 2168,
-            "POLYL": 2260
-          },
-          "polyolsSourceVerified": true,
-          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
-          "per100g": {
-            "carbohydrate": 0,
-            "fibre": 0,
-            "polyols": 0,
-            "protein": 0,
-            "fat": 100
-          }
-        },
-        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: oliiviöljyä.",
-        "edibleFraction": 1,
-        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
-        "retainedFraction": 1,
-        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
-      },
-      {
-        "item": "suolaa",
-        "amount": 4,
-        "unit": "g",
-        "state": "suolaa",
-        "matchEvidence": "Ruokasuola.",
-        "excludedReason": "Natriumkloridi ei sisällä tässä laskettavia makroravintoaineita.",
-        "omissionImpactUpperBoundPerServing": {
-          "kcal": 0,
-          "netCarbohydrate": 0,
-          "totalCarbohydrate": 0,
-          "protein": 0,
-          "fat": 0
-        },
-        "omissionImpactEvidence": "Natrium ei kuulu neljään makrokenttään."
-      },
-      {
-        "item": "rouhittua mustapippuria",
-        "amount": 1,
-        "unit": "g",
-        "state": "rouhittua mustapippuria",
-        "record": {
-          "id": "afcd-F006618-release-3",
-          "name": "Pepper, black, ground",
-          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
-          "retrievedAt": "2026-10-24",
-          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
-          "state": "rouhittua mustapippuria",
-          "basis": "per100g-as-sold",
-          "carbohydrateDefinition": "EU_AVAILABLE",
-          "polyolsSourceVerified": true,
-          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
-          "per100g": {
-            "carbohydrate": 38.6,
-            "polyols": 0,
-            "fibre": 25.3,
-            "protein": 10.4,
-            "fat": 3.3
-          }
-        },
-        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: rouhittua mustapippuria.",
-        "edibleFraction": 1,
-        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
-        "retainedFraction": 1,
-        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
-      }
-    ]
-  }
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
 }

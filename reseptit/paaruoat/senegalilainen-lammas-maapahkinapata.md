@@ -4,9 +4,9 @@ recipe_id: senegalilainen-lammas-maapahkinapata
 url_slug: senegalilainen-lammas-maapahkinapata
 category: paaruoka
 language: fi
-status: draft
+status: published
 translation_languages: [en, sv, th]
-translation_status: {en: draft, sv: draft, th: draft}
+translation_status: {en: published, sv: published, th: published}
 servings: 6
 time_total_min: 155
 difficulty: "Helppo"

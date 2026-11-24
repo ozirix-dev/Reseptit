@@ -4,7 +4,7 @@ recipe_id: meksikolainen-kesakurpitsa-juustolla
 url_slug: mexikansk-zucchini-med-ost
 category: alkuruoka
 language: sv
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/meksikolainen-kesakurpitsa-juustolla.md
 translation_of: meksikolainen-kesakurpitsa-juustolla

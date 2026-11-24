@@ -4,7 +4,7 @@ recipe_id: ruotsalainen-katkarapupaahtoleipa
 url_slug: khanom-pang-ping-na-kung-sawiden
 category: alkuruoka
 language: th
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/ruotsalainen-katkarapupaahtoleipa.md
 translation_of: ruotsalainen-katkarapupaahtoleipa

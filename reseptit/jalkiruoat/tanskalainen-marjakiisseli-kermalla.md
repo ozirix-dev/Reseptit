@@ -4,9 +4,9 @@ recipe_id: tanskalainen-marjakiisseli-kermalla
 url_slug: tanskalainen-marjakiisseli-kermalla
 category: jalkiruoka
 language: fi
-status: draft
+status: published
 translation_languages: [en, sv, th]
-translation_status: {en: draft, sv: draft, th: draft}
+translation_status: {en: published, sv: published, th: published}
 servings: 6
 time_total_min: 90
 difficulty: "Helppo"

@@ -4,7 +4,7 @@ recipe_id: baskimaan-gilda-tikut
 url_slug: baskiska-gildaspett
 category: alkuruoka
 language: sv
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/baskimaan-gilda-tikut.md
 translation_of: baskimaan-gilda-tikut

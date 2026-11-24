@@ -4,7 +4,7 @@ recipe_id: espanjalainen-pisto-manchego
 url_slug: spanish-pisto-manchego-with-eggs
 category: paaruoka
 language: en
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/espanjalainen-pisto-manchego.md
 translation_of: espanjalainen-pisto-manchego

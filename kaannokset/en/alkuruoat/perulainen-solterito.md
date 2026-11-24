@@ -4,7 +4,7 @@ recipe_id: perulainen-solterito
 url_slug: peruvian-broad-bean-corn-salad-solterito
 category: alkuruoka
 language: en
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/perulainen-solterito.md
 translation_of: perulainen-solterito

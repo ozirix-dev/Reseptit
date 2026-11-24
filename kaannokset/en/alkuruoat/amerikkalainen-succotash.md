@@ -4,7 +4,7 @@ recipe_id: amerikkalainen-succotash
 url_slug: american-corn-lima-bean-succotash
 category: alkuruoka
 language: en
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/amerikkalainen-succotash.md
 translation_of: amerikkalainen-succotash

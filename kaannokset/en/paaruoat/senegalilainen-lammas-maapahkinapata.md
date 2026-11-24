@@ -4,7 +4,7 @@ recipe_id: senegalilainen-lammas-maapahkinapata
 url_slug: senegalese-lamb-peanut-stew-mafe
 category: paaruoka
 language: en
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/senegalilainen-lammas-maapahkinapata.md
 translation_of: senegalilainen-lammas-maapahkinapata

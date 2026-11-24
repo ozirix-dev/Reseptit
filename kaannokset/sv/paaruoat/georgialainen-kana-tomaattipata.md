@@ -4,7 +4,7 @@ recipe_id: georgialainen-kana-tomaattipata
 url_slug: georgisk-kycklinggryta-med-tomat
 category: paaruoka
 language: sv
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/georgialainen-kana-tomaattipata.md
 translation_of: georgialainen-kana-tomaattipata

@@ -4,7 +4,7 @@ recipe_id: italialainen-peperonata
 url_slug: phrik-wan-tun-itali-peperonata
 category: alkuruoka
 language: th
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/italialainen-peperonata.md
 translation_of: italialainen-peperonata

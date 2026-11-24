@@ -4,7 +4,7 @@ recipe_id: japanilainen-seesamipinaatti
 url_slug: japansk-sesamspenat-gomaae
 category: alkuruoka
 language: sv
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/japanilainen-seesamipinaatti.md
 translation_of: japanilainen-seesamipinaatti

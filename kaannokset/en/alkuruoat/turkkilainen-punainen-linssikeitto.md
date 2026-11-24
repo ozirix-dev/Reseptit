@@ -4,7 +4,7 @@ recipe_id: turkkilainen-punainen-linssikeitto
 url_slug: turkish-red-lentil-soup-mercimek
 category: alkuruoka
 language: en
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/turkkilainen-punainen-linssikeitto.md
 translation_of: turkkilainen-punainen-linssikeitto

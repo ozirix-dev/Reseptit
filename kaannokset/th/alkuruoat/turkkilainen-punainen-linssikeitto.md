@@ -4,7 +4,7 @@ recipe_id: turkkilainen-punainen-linssikeitto
 url_slug: sup-lenthil-daeng-turki-mercimek
 category: alkuruoka
 language: th
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/turkkilainen-punainen-linssikeitto.md
 translation_of: turkkilainen-punainen-linssikeitto

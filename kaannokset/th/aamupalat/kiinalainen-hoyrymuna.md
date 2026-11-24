@@ -4,7 +4,7 @@ recipe_id: kiinalainen-hoyrymuna
 url_slug: khai-tun-baep-chin
 category: aamupala
 language: th
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/aamupalat/kiinalainen-hoyrymuna.md
 translation_of: kiinalainen-hoyrymuna

@@ -4,7 +4,7 @@ recipe_id: ruotsalainen-katkarapupaahtoleipa
 url_slug: swedish-shrimp-toast-skagen
 category: alkuruoka
 language: en
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/alkuruoat/ruotsalainen-katkarapupaahtoleipa.md
 translation_of: ruotsalainen-katkarapupaahtoleipa
