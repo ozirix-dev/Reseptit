@@ -74,6 +74,11 @@ function scenario() {
     main: base,
     checks: [{ id: 1, name: 'build', status: 'completed', conclusion: 'success', app: { id: 15368 } }],
     approvalCount: 0,
+    timeline: [] as { event: string; created_at: string }[],
+    ownerRuns: [] as { run_number: number; run_attempt: number; workflow_id: number; head_branch: string;
+      head_sha: string; head_repository: { full_name: string }; event: string; created_at: string;
+      status: string; conclusion: string }[],
+
     reviews: [] as { id: number; state: string; commit_id: string; user: { id: number } }[],
     ci: [run()], releases: [] as ReturnType<typeof run>[], occupying: [] as ReturnType<typeof run>[],
     steps: [] as Step[], pending: [] as { environment: { name: string } }[],
@@ -87,6 +92,8 @@ function scenario() {
     ];
     if (url.includes('/check-runs?')) return [{ check_runs: snapshot.checks }];
     if (url.includes('/reviews?')) return [snapshot.reviews];
+    if (url.includes('/timeline?')) return [snapshot.timeline];
+    if (url.includes('/chat-owner-metadata.yml/runs?')) return [{ workflow_runs: snapshot.ownerRuns }];
     if (url.includes('/pages.yml/runs?')) return [{ workflow_runs: snapshot.ci.map(item => ({ ...item, event: 'push' })) }];
     if (url.includes('/recipavo-production-manual.yml/runs?')) {
       const rows = url.includes('head_sha=') ? snapshot.releases :
@@ -302,5 +309,23 @@ test('a Ready-triggered auxiliary check blocks reporting readiness until it pass
   Object.assign(snapshot.checks[2], { status: 'completed', conclusion: 'failure' });
   assert.equal((await inspectPublish(7, { get, head, base })).code, 'HOLD_PR_CI');
   Object.assign(snapshot.checks[2], { conclusion: 'success' });
+  assert.equal((await inspectPublish(7, { get, head, base })).code, 'READY_CHECKS_PASSED');
+});
+
+
+test('old green metadata cannot authorize Ready while the new run is invisible', async () => {
+  const { snapshot, get } = scenario();
+  snapshot.pr.draft = false;
+  snapshot.timeline.push({ event: 'ready_for_review', created_at: '2026-11-24T04:20:24Z' });
+  const old = {
+    run_number: 1, run_attempt: 1, workflow_id: 425934650, head_branch: snapshot.pr.head.ref,
+    head_sha: head, head_repository: { full_name: repo }, event: 'pull_request',
+    created_at: '2026-11-24T04:20:10Z', status: 'completed', conclusion: 'success',
+  };
+  snapshot.ownerRuns.push(old);
+  assert.equal((await inspectPublish(7, { get, head, base })).code, 'PR_CI_PENDING');
+  snapshot.ownerRuns.push({ ...old, run_number: 2, created_at: '2026-11-24T04:20:27Z', status: 'queued' });
+  assert.equal((await inspectPublish(7, { get, head, base })).code, 'PR_CI_PENDING');
+  snapshot.ownerRuns[1].status = 'completed';
   assert.equal((await inspectPublish(7, { get, head, base })).code, 'READY_CHECKS_PASSED');
 });

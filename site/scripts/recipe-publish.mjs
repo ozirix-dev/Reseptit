@@ -203,6 +203,22 @@ export async function inspectPublish(number, { get = readGitHub, live = readLive
   return { ...result, ...releaseState };
 }
 
+async function readyMetadata(pr, get) {
+  if (pr.draft) return null;
+  const timeline = await get(apiRoot + '/issues/' + pr.number + '/timeline?per_page=100', { pages: true });
+  const readyEvents = timeline.flat().filter(row => row.event === 'ready_for_review');
+  if (!readyEvents.length) return null; // The PR was opened Ready.
+  const threshold = Math.max(...readyEvents.map(row => Date.parse(row.created_at)));
+  const runs = await workflowRuns(get, 'chat-owner-metadata.yml', {
+    branch: pr.head.ref, head_sha: pr.head.sha, event: 'pull_request',
+  });
+  const fresh = latest(runs.filter(run => run.workflow_id === 425934650 &&
+    run.head_branch === pr.head.ref && run.head_sha === pr.head.sha &&
+    run.head_repository?.full_name?.toLowerCase() === repo.toLowerCase() &&
+    run.event === 'pull_request' && Date.parse(run.created_at) > threshold));
+  return fresh ? stepState(fresh) : 'missing';
+}
+
 async function nextReleaseState(pr, snapshot, { get, live }) {
   const { main, merge, required, observed, reviews } = snapshot;
   if (!pr.merged) {
@@ -216,6 +232,13 @@ async function nextReleaseState(pr, snapshot, { get, live }) {
     if (required.some(check => check.result !== 'success') ||
         observed.some(check => !['success', 'skipped'].includes(check.result))) {
       return { code: 'HOLD_PR_CI', next: 'Inspect the non-passing required check.' };
+    }
+    const metadata = await readyMetadata(pr, get);
+    if (metadata === 'missing' || active.includes(metadata)) {
+      return { code: 'PR_CI_PENDING', next: 'Wait for a fresh metadata run created after the Ready event.' };
+    }
+    if (metadata !== null && metadata !== 'success') {
+      return { code: 'HOLD_PR_CI', next: 'Inspect the fresh Ready metadata run.' };
     }
     if (pr.base.sha !== main || pr.mergeable !== true || ['behind', 'dirty', 'blocked', 'unknown'].includes(pr.mergeable_state)) {
       return { code: 'HOLD_PR_BASE', next: 'Re-evaluate current base, mergeability and Repo Guard conditions.' };
