@@ -4,9 +4,9 @@ recipe_id: cornwallilaistyyliset-naudanlihapiiraat
 url_slug: cornwallilaistyyliset-naudanlihapiiraat
 category: paaruoka
 language: fi
-status: draft
-translation_languages: []
-translation_status: {en: draft, sv: draft, th: draft}
+status: published
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 servings: 6
 time_total_min: 285
 difficulty: "Vaativa"

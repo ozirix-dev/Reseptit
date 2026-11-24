@@ -4,7 +4,7 @@ recipe_id: cornwallilaistyyliset-naudanlihapiiraat
 url_slug: cornwallinspirerade-notkottspiroger
 category: paaruoka
 language: sv
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/cornwallilaistyyliset-naudanlihapiiraat.md
 translation_of: cornwallilaistyyliset-naudanlihapiiraat

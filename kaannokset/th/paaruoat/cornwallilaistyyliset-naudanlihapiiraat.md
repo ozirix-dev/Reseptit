@@ -4,7 +4,7 @@ recipe_id: cornwallilaistyyliset-naudanlihapiiraat
 url_slug: phai-nuea-satai-khonwon
 category: paaruoka
 language: th
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/cornwallilaistyyliset-naudanlihapiiraat.md
 translation_of: cornwallilaistyyliset-naudanlihapiiraat

@@ -2,10 +2,10 @@
   "schema_version": 1,
   "recipe_id": "cornwallilaistyyliset-naudanlihapiiraat",
   "source_path": "reseptit/paaruoat/cornwallilaistyyliset-naudanlihapiiraat.md",
-  "source_sha256": "d483347320a883758402e1f905f9491f89664e9ab3fb91457ba2fdb79d97aa4f",
-  "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "source_sha256": "7ee70725a7f68b93ff0f32ffc1982488bfc2ae266af14c153af0644eac10208a",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -17,28 +17,28 @@
   "nutrition_evidence": "docs/reviews/new-recipes/cornwallilaistyyliset-naudanlihapiiraat.json#nutrition_reference",
   "checks": {
     "duplicates": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Tarkistettu main 3f268ab355c18b4ed057537df9bf9414410b63fa ja avoimet PR:t. FI/EN/SV/TH-hakusanat: cornish, cornwall, kornvall, คอร์นวอลล์, คอร์นิช. Tunniste ja neljän kielen reitit tarkistettu erikseen."
     },
     "ingredients": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Cornish Pasty Associationin resepti ja mestarin valmistusvideo. Käytetään suolatonta voita ja määriä kuorituille kasviksille. Lähteen vaihtoehtoinen margariini ja maitovoitelu jätetty pois."
     },
     "method": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Kylmässä 3 tuntia, halkaisija noin 20 cm, täyte raakana, sivusta poimutettu sauma, kiertoilma 165 °C ja noin 50–55 min. Recipavo ei ole valmistanut koeerää."
     },
     "food_safety": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Food Standards Scotland: kypsyyttä mitataan täytteen keskeltä puhtaalla mittarilla (vähintään 75 °C). Kylmäketju, raakalihan välinehygienia, nopea jäähdytys ja tähteiden käyttö kahdessa päivässä."
     },
     "servings_and_time": {
-      "status": "pending",
+      "status": "pass",
       "notes": "Lähteen erästä saadaan kuusi piirasta. Yksi piiras on yksi annos. Suunnitteluarvio 285 min: valmistelu ja muotoilu noin 50 min, kylmälepo 180 min ja paisto noin 55 min. Valmista saantoa ei ole punnittu."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Raaka-ainemäärien vertailu ja kaksi naudanlihan proxy-skenaariota. Annoskohtaiset hiilihydraatti-, proteiini- ja rasvakentät ehdotetaan julkaistaviksi tyhjinä, perustelut nutrition_reference-osassa."
+      "status": "pass",
+      "notes": "Chat-1 varmisti vertailulaskelmat ja AFCD-rivit. Fineli-rivejä ei saatu riippumattomasti varmennettua. Chat-1 hyväksyi kaikki neljä julkista ravintokenttää null-arvoina. Vertailuluvut jäävät evidenssiin."
     },
     "glycemic": {
       "status": "unavailable",
@@ -188,10 +188,10 @@
     "height": 1024,
     "sha256": "84793a5327471253d6aa2a9786cf4a129540e125770be8a25e1a5493bd987b60",
     "master_sha256": "bec92ad1216a32f0227892bc838f3e0dca497fe53867e871eecb38f02a161271",
-    "origin": "OpenAI ImageGen, digitaalinen havainnekuva. Kokki-Codex vertasi puolikuun muodon, poimutetun sivusauman ja leikkauspinnan raaka-aineet julkaistuun ohjeeseen. Kuva ei dokumentoi Recipavon valmistamaa erää. Riippumaton kuvatarkastus odottaa."
+    "origin": "OpenAI ImageGen, digitaalinen havainnekuva. Kokki-Codex vertasi puolikuun muodon, poimutetun sivusauman ja leikkauspinnan raaka-aineet julkaistuun ohjeeseen. Kuva ei dokumentoi Recipavon valmistamaa erää. Chat-1 tarkisti kuvan, neljä alt-tekstiä ja WebP-tiivisteen."
   },
   "proposed_publication": {
-    "review_state": "PENDING",
+    "review_state": "APPROVED",
     "recipe_markdown": [
       {
         "path": "reseptit/paaruoat/cornwallilaistyyliset-naudanlihapiiraat.md",
@@ -222,6 +222,9 @@
         "semantic_sha256": "45a7dde5ad9070dc549dd175f518af506ccc30556728f2062a9993c15881969f"
       }
     ],
-    "transform": "Ainoat muutokset Markdown-luonnoksiin ovat neljän status-kentän arvo published sekä FI:n translation_languages: [en, sv, th] ja translation_status: {en: published, sv: published, th: published}. Kohdetiivisteet laskettiin UTF-8 LF -tavuista. Pariauditointi läpäisi FI–EN, FI–SV ja FI–TH."
-  }
+    "transform": "Ainoat muutokset Markdown-luonnoksiin ovat neljän status-kentän arvo published sekä FI:n translation_languages: [en, sv, th] ja translation_status: {en: published, sv: published, th: published}. Kohdetiivisteet laskettiin UTF-8 LF -tavuista. Pariauditointi läpäisi FI–EN, FI–SV ja FI–TH.",
+    "reviewed_draft_head": "ff55b3eb06eb87dec106869d5af96c4068a95b21",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/975#pullrequestreview-6033213366"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/975#pullrequestreview-6033213366"
 }
