@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "savolainen-muikkukukko",
   "source_path": "reseptit/paaruoat/savolainen-muikkukukko.md",
-  "source_sha256": "83f1517de0e1317c15c8c1a9a2b7aca90ae066f585dd4d748ab942df8e7f93cb",
+  "source_sha256": "4c5303d3f1cbd34d62beaf75567290fc33c7399682aca8afa4db8a9a6aea03e3",
   "decision": "approved",
   "reviewed_by": "Chat-1",
   "reviewed_at": "2026-11-24",
@@ -95,5 +95,10 @@
     "sha256": "d1c3d8ac497823c9242cbf98d7c0f342f0c11dfd3d71f176e4f8df8b9708078f",
     "origin": "OpenAI ImageGen. Havainnekuva, ei valokuva Recipavossa valmistetusta erästä. Rakenne arvioitu suhteessa Opetushallituksen lähdekuvaukseen."
   },
-  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/970#pullrequestreview-6030399437"
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/970#pullrequestreview-6030399437",
+  "translation_metadata_review": {
+    "previous_source_sha256": "83f1517de0e1317c15c8c1a9a2b7aca90ae066f585dd4d748ab942df8e7f93cb",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/971#pullrequestreview-6030578628",
+    "notes": "Vain translation_languages ja translation_status lisättiin. Chat-1 varmisti hyväksytyn FI-merkityssisällön säilymisen."
+  }
 }
