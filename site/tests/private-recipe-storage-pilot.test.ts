@@ -29,12 +29,15 @@ test('private draft persists, supports partial notes, and remains isolated after
     assert.notEqual(other.recipe.id, id);
     const update = { id, version: 1, title: 'Nimi lisätty', note: input.note };
     const updated = storage.save('synthetic-a', 'edit', update);
+    assert.equal(updated.code, 'SAVED');
     assert.equal(updated.recipe.version, 2);
     assert.deepEqual(storage.save('synthetic-a', 'edit', update), updated);
     assert.equal(storage.save('synthetic-a', 'edit', { ...update, title: 'Eri sisältö' }).code, 'IDEMPOTENCY_CONFLICT');
     assert.equal(storage.save('synthetic-a', 'edit-2', update).code, 'VERSION_CONFLICT');
     assert.equal(storage.save('synthetic-a', 'empty', {}).code, 'INVALID_REQUEST');
-    assert.equal(storage.load('synthetic-a', id).recipe.title, 'Nimi lisätty');
+    const reopened = storage.load('synthetic-a', id);
+    assert.equal(reopened.code, 'FOUND');
+    assert.equal(reopened.recipe.title, 'Nimi lisätty');
   } finally {
     storage.close();
     rmSync(directory, { recursive: true, force: true });
