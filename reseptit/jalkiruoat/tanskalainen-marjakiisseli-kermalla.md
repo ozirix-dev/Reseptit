@@ -8,7 +8,7 @@ status: draft
 translation_languages: [en, sv, th]
 translation_status: {en: draft, sv: draft, th: draft}
 servings: 6
-time_total_min: 45
+time_total_min: 90
 difficulty: "Helppo"
 main_ingredient: ["mansikka","vadelma","kerma"]
 ingredients:
@@ -52,7 +52,7 @@ Mansikat ja vadelmat tekevät kiisselistä punaisen. Kylmä kerma viimeistelee a
 1. Puhdista marjat ja pilko isot mansikat. Ota vedestä 50 g sivuun suurustukseen. Kuumenna loppu vesi, mansikat ja sokeri kiehuvaksi. Keitä noin 5 minuuttia.
 2. Lisää vadelmat ja keitä vielä 2 minuuttia. Sekoita perunajauho sivuun otettuun kylmään veteen.
 3. Ota kattila hetkeksi liedeltä ja kaada suurus ohuena nauhana koko ajan sekoittaen. Kuumenna uudelleen ensimmäiseen pulpahdukseen ja nosta pois liedeltä.
-4. Jäähdytä kiisseli, annostele kulhoihin ja kaada päälle kylmää kermaa.
+4. Pane kattila kylmävesihauteeseen noin 15 minuutiksi ja sekoita välillä. Annostele kulhoihin ja jäähdytä jääkaapissa vähintään 45 minuuttia. Kaada päälle kylmää kermaa tarjoiltaessa.
 
 ## Muistiinpanot
 

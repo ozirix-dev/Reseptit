@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "holskytyskurkut",
   "source_path": "reseptit/alkuruoat/holskytyskurkut.md",
-  "source_sha256": "43e91a70154f5a1bf4431f9c7f8ebed9bb676ee0cb3f4fdc466fd181e4a14f5d",
+  "source_sha256": "a8dbe7278c8ec3826b55f4860a1f2258862c3fa778142904be5660eb8da89d9c",
   "decision": "hold",
   "reviewed_by": "UNREVIEWED",
   "reviewed_at": "",
@@ -70,38 +70,38 @@
         "path": "reseptit/alkuruoat/holskytyskurkut.md",
         "language": "fi",
         "slug": "holskytyskurkut",
-        "sha256": "af8a704bff11877c04ac753ea3b45cedfd2a5551929057e9e4e254fef2301365",
-        "semantic_sha256": "807eb0e48fe504ca59ddbfc822b0a0cc76129670d366a1dc4ade76917c7b098d"
+        "sha256": "faa9eb30d233e2e3c80ceb9c49439c3f828930d9c04404b41792424980fa07c1",
+        "semantic_sha256": "409fb6fb80482fc950cf14df6d4fc4a7658ac36ec6ef86857e0c2faa5e299151"
       },
       {
         "path": "kaannokset/en/alkuruoat/holskytyskurkut.md",
         "language": "en",
         "slug": "finnish-shaken-dill-cucumbers",
-        "sha256": "fcff134f9ac8569b74b9049b3e8549031e55b6ac7d72d08fa8a8146bb4a5df15",
-        "semantic_sha256": "42ef7b9d5e29f33ef2efc4e82b8f2972e78b921ab3ddedaa5808f461b1d54d1b"
+        "sha256": "e709e60c552fcd609fbeff6e32d60c5c434d5eed893ee26bef84d7afed53b311",
+        "semantic_sha256": "b6845832e3165a45cfd5eff940dca7665954f748055e294d3f6fd6f244f453f1"
       },
       {
         "path": "kaannokset/sv/alkuruoat/holskytyskurkut.md",
         "language": "sv",
         "slug": "finsk-skakad-dillgurka",
-        "sha256": "874b52c2d8384434fb0211a898b2a9dbee5a27c1fdcdfb95d96356e43af76cd2",
-        "semantic_sha256": "611461f32d8811be4d102a6463b03f371fc2546ad476e0bc23a64afc6597b23d"
+        "sha256": "8b34946814537e732067eb8d78f3b6e3cf0439b74f136d53a357f80ef936cfee",
+        "semantic_sha256": "50307f05a3d9512e34cc6cfa74e28520035d160ec6c2bffc1369862c698b100d"
       },
       {
         "path": "kaannokset/th/alkuruoat/holskytyskurkut.md",
         "language": "th",
         "slug": "taengkwa-khayao-dill-finlaen",
-        "sha256": "1424d4d70ad852480b457bbe72aafcea6b60b7c2f43675d4d276f4f55950cd8a",
-        "semantic_sha256": "ce1b0421e0a52e2d8b7d7a7e1abc9e456aebc1d0908277143bee29a279a5d9d0"
+        "sha256": "3556935ad96787f94e6fb2bb64666a13a968c6595add1abd5fc346505d0bf215",
+        "semantic_sha256": "dd45b72140077a6ab5bee4377d29c92969f10e13ca3790987b44c893cbd6e90c"
       }
     ],
-    "nutrition_sha256": "794400066d1be65d9d28c0b6d84482041c7004ce437073a3d5036e190c54cedd",
+    "nutrition_sha256": "534118080975be74554c460761c5a5abf6003aa8b0de31364c5a12e5b68a5e8d",
     "batch_id": "batch-33307",
     "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
   },
   "proposed_nutrition_calculation": {
     "recipeId": "holskytyskurkut",
-    "sourceHash": "437e62c82d9b786b419c321f13e131ccb4e8c0a3e31c9e613043d383bd62881b",
+    "sourceHash": "e2bcc407fdc941d1f201b65d9817276e640445a49b4531c0ae570f3511e4cb83",
     "calculatedAt": "2026-11-24",
     "batchId": "batch-33307",
     "servings": 4,
@@ -166,17 +166,17 @@
         "omissionImpactEvidence": "Natrium ei kuulu neljään makrokenttään."
       },
       {
-        "item": "väkiviinaetikkaa",
+        "item": "väkiviinaetikkaa, 5 % happoa",
         "amount": 15,
         "unit": "g",
-        "state": "väkiviinaetikkaa",
+        "state": "väkiviinaetikkaa, 5 % happoa",
         "record": {
           "id": "afcd-F009498-release-3",
           "name": "Vinegar (except balsamic vinegar)",
           "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
           "retrievedAt": "2026-10-24",
           "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
-          "state": "väkiviinaetikkaa",
+          "state": "väkiviinaetikkaa, 5 % happoa",
           "basis": "per100g-as-sold",
           "carbohydrateDefinition": "EU_AVAILABLE",
           "polyolsSourceVerified": true,
@@ -189,7 +189,7 @@
             "fat": 0
           }
         },
-        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: väkiviinaetikkaa.",
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: väkiviinaetikkaa, 5 % happoa.",
         "edibleFraction": 1,
         "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
         "retainedFraction": 1,

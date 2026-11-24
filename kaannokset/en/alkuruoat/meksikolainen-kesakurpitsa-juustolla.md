@@ -52,11 +52,12 @@ Zucchini simmers with tomato and is topped with crumbly fresh cheese.
 
 1. Slice the onion and dice the tomatoes and zucchini.
 2. Soften the onion in the oil for 5 minutes. Add tomatoes and salt and cook for about 5 minutes until the tomatoes release their juices.
-3. Add zucchini, cover and simmer for 8–10 minutes until just tender. Crumble the fresh cheese over the top and cook for another 2 minutes.
+3. Add zucchini, cover and simmer for 8–10 minutes until just tender. Crumble in the queso fresco. Heat while stirring until the dish reaches at least 74 °C throughout. Serve hot.
 
 ## Notes
 
 - Contains milk.
 - Nutrition values are withheld because a complete set of ingredient data could not be verified.
+- This adaptation uses crumbly queso fresco instead of the panela cheese in the source. During pregnancy, for adults aged 65 and over, or for people with weakened immunity, use feta made with pasteurized milk instead. [CDC](https://www.cdc.gov/listeria/prevention/)
 - A reliable glycemic load estimate is not available.
 - The image is an AI-generated illustration. [Recipe source](https://www.mexicoinmykitchen.com/mexican-squash-with-cheese/)

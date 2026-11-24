@@ -52,11 +52,12 @@ Zucchini får sjuda med tomat och toppas med smulad färskost.
 
 1. Skiva löken och tärna tomater och zucchini.
 2. Fräs löken i olja i 5 minuter. Tillsätt tomater och salt och låt koka i cirka 5 minuter tills tomaterna saftar sig.
-3. Tillsätt zucchinin och sjud under lock i 8–10 minuter tills den är mjuk men håller ihop. Smula färskosten över och värm i ytterligare 2 minuter.
+3. Tillsätt zucchinin och sjud under lock i 8–10 minuter tills den är mjuk men håller ihop. Smula ner queso fresco. Värm under omrörning tills rätten är minst 74 °C rakt igenom. Servera varm.
 
 ## Anteckningar
 
 - Innehåller mjölk.
 - Näringsvärden utelämnas eftersom näringsdata för alla ingredienser inte har kunnat verifieras.
+- Här ersätts källans panelaost med smulig queso fresco. Gravida, personer från 65 år och personer med nedsatt immunförsvar bör välja fetaost gjord på pastöriserad mjölk i stället. [CDC](https://www.cdc.gov/listeria/prevention/)
 - En tillförlitlig uppskattning av glykemisk belastning är inte tillgänglig.
 - Bilden är en AI-genererad illustration. [Receptkälla](https://www.mexicoinmykitchen.com/mexican-squash-with-cheese/)

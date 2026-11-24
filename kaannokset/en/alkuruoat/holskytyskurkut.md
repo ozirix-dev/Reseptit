@@ -21,7 +21,7 @@ ingredients:
     item: "salt"
   - amount: 15
     unit: "g"
-    item: "distilled vinegar"
+    item: "distilled vinegar, 5% acidity"
   - amount: 15
     unit: "g"
     item: "sugar"

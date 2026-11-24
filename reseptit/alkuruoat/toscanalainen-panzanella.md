@@ -14,7 +14,7 @@ main_ingredient: ["leipa","tomaatti","kurkku"]
 ingredients:
   - amount: 250
     unit: "g"
-    item: "vaaleaa italialaistyylistä leipää, kuivahtanutta"
+    item: "edellispäivän vaaleaa italialaistyylistä leipää, sisältä vielä pehmeää"
   - amount: 500
     unit: "g"
     item: "tuoreita tomaatteja"
@@ -54,11 +54,11 @@ fat_per_serving_g: 13.28
 
 ## Kuvaus
 
-Kuiva leipä pehmenee tomaattimehussa ja etikkaisessa kastikkeessa.
+Edellispäivän leipä pehmenee tomaattimehussa ja etikkaisessa kastikkeessa.
 
 ## Valmistus
 
-1. Revi kuivahtanut leipä suupaloiksi. Kostuta vedellä ja puolella etikasta. Anna seistä 10 minuuttia.
+1. Revi edellispäivän, sisältä vielä pehmeä leipä suupaloiksi. Kostuta vedellä ja puolella etikasta. Anna seistä 10 minuuttia.
 2. Paloittele tomaatit ja kurkku. Viipaloi punasipuli hyvin ohueksi. Lisää kaikki leipäkulhoon basilikan kanssa.
 3. Sekoita loppu etikka, öljy ja suola joukkoon. Anna vetäytyä jääkaapissa 40 minuuttia ennen tarjoilua.
 

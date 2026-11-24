@@ -15,7 +15,7 @@ main_ingredient: ["leipa","tomaatti","kurkku"]
 ingredients:
   - amount: 250
     unit: "g"
-    item: "day-old white Italian-style bread"
+    item: "day-old white Italian-style bread, still soft inside"
   - amount: 500
     unit: "g"
     item: "fresh tomatoes"
@@ -59,7 +59,7 @@ Day-old bread softens in tomato juices and a tangy dressing.
 
 ## Preparation
 
-1. Tear the day-old bread into bite-size pieces. Moisten with the water and half the vinegar. Let sit for 10 minutes.
+1. Tear the day-old bread, still soft inside, into bite-size pieces. Moisten with the water and half the vinegar. Let sit for 10 minutes.
 2. Cut the tomatoes and cucumber into pieces. Thinly slice the red onion. Add everything to the bread along with the basil.
 3. Toss with the remaining vinegar, oil and salt. Chill for 40 minutes before serving.
 

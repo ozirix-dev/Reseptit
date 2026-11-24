@@ -2,14 +2,16 @@
   "schema_version": 1,
   "recipe_id": "perulainen-solterito",
   "source_path": "reseptit/alkuruoat/perulainen-solterito.md",
-  "source_sha256": "82da5e3d5b00e82b3c200829c67adf2ad95d65f4bfc685ff44ac421f32cbe6de",
+  "source_sha256": "c5b9312308641cc015c41c07668297606c1a98fe255c4b23d9adce0cb95ebc75",
   "decision": "hold",
   "reviewed_by": "UNREVIEWED",
   "reviewed_at": "",
   "origin": {
     "kind": "adaptation",
     "sources": [
-      "https://perudelights.com/solterito-the-traditional-way-our-quinoa-version/"
+      "https://perudelights.com/solterito-the-traditional-way-our-quinoa-version/",
+      "https://www.cdc.gov/listeria/prevention/",
+      "https://www.fda.gov/food/buy-store-serve-safe-food/queso-fresco-type-cheeses-consumer-guidance"
     ]
   },
   "nutrition_evidence": "docs/nutrition/calculations/perulainen-solterito.json",
@@ -28,7 +30,7 @@
     },
     "food_safety": {
       "status": "pending",
-      "notes": "Pakastekasvikset kypsennetään pakkauksen mukaan ja jäähdytetään nopeasti. Juusto on tehty pastöroidusta maidosta."
+      "notes": "Pakastekasvikset kypsennetään pakkauksen mukaan. Kylmä queso fresco korvataan riskiryhmille pastöroidusta maidosta tehdyllä mozzarellalla CDC:n ohjeen mukaisesti."
     },
     "servings_and_time": {
       "status": "pending",
@@ -70,29 +72,29 @@
         "path": "reseptit/alkuruoat/perulainen-solterito.md",
         "language": "fi",
         "slug": "perulainen-solterito",
-        "sha256": "bc1b94329014d21723917d99ddf22f20588466906fe9a10e363b958a97329aa6",
-        "semantic_sha256": "f1e424f346550f66755504d47b4b00734328cd96baeda8cce3dc32e045f19168"
+        "sha256": "651b5c65e5bde961126fd3662cd5e0d4029fcf42aff324fcb74d1be74cf2f7fb",
+        "semantic_sha256": "b6dcff10bf31cce5703a0b4e6791ae94dc5be0d30fc9f47a53bdb1bd0cca97b4"
       },
       {
         "path": "kaannokset/en/alkuruoat/perulainen-solterito.md",
         "language": "en",
         "slug": "peruvian-broad-bean-corn-salad-solterito",
-        "sha256": "4621c562a4dabd01cddfe994410647627cd4c75f9e09e4ce7f4adb3733bb7389",
-        "semantic_sha256": "6c96b5726c2f9e24bb98239ba2ce6524f9cfbbbf68204ec023810ec7fd704503"
+        "sha256": "0e0fee23b8b8e9d19250a6f02b961dcb54c903aad5b86063993fc2e4b2c7261b",
+        "semantic_sha256": "32212e72349f2230b228e4ac9023e640a6dbad15f66d9f3e424c3c78f55c1d8d"
       },
       {
         "path": "kaannokset/sv/alkuruoat/perulainen-solterito.md",
         "language": "sv",
         "slug": "peruansk-bonbonssallad-solterito",
-        "sha256": "c62a98325d4490aaf3ad01fc8f7be35f230adf5e90ff2d6c1e5aac4389e7750b",
-        "semantic_sha256": "2f4d41cc1021170b7500e977ee5ad1496e58507622758cce8710bbbc1bd0e235"
+        "sha256": "a16b2882dfa4fdae9bffdaf39e9a064fef57d53edb0b707ad45c4a63eca0bbe4",
+        "semantic_sha256": "84a9a051829bf3ee7267ba4134df23449e7631fd1d62ca0659fed66a5e644683"
       },
       {
         "path": "kaannokset/th/alkuruoat/perulainen-solterito.md",
         "language": "th",
         "slug": "salat-thua-pak-a-khao-phot-solterito",
-        "sha256": "3b3d880982607dde7635de5fffb57715a140c2b2fc9a247804ff6a57c392baed",
-        "semantic_sha256": "ca0aaf8653dbb2f2832802ebdedf1a23c34eebf426cb43183e6b612749a91363"
+        "sha256": "ed861a6f860811956518e8931c2a3996f071307689c0213308dfbdfad6716525",
+        "semantic_sha256": "848cd40895abf97bf1587f3fc8842e497860628a42c687c402c25ae824950d9b"
       }
     ],
     "nutrition_sha256": "be1db807265aac86cdc5db360338521be5e50003d2daf7dbb98af85b6013ef76",

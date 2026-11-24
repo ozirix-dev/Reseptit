@@ -49,7 +49,7 @@ Thin cucumbers and wakame are dressed with sweet-sour rice vinegar.
 
 1. Soak the wakame according to the package, drain and gently squeeze it dry. Cut into bite-size pieces if needed.
 2. Slice the cucumber thinly. Toss with salt and let stand for 10 minutes, then squeeze out the released liquid.
-3. Stir the rice vinegar and sugar until dissolved. Add the cucumber and wakame. Serve cold. The nutrition estimate uses all ingredients before draining.
+3. Stir the rice vinegar and sugar until dissolved. Add the cucumber and wakame. Serve cold.
 
 ## Notes
 

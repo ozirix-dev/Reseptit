@@ -69,5 +69,6 @@ Härkäpavut, maissi ja tuorejuusto sekoitetaan etikkaiseen salaattiin.
 
 - Sisältää maitoa.
 - Ravintoarviota ei julkaista, koska kaikkien ainesosien ravintotietoa ei voitu vahvistaa.
+- Listeriariski koskee myös pastöroidusta maidosta valmistettua kylmää queso frescoa. Raskaana oleville, 65 vuotta täyttäneille ja heikentyneen vastustuskyvyn omaaville käytä pastöroidusta maidosta tehtyä mozzarellaa. [CDC](https://www.cdc.gov/listeria/prevention/)
 - GK-arviota ei voida laskea luotettavasti.
 - Kuva on tekoälyllä luotu havainnekuva. [Valmistuslähde](https://perudelights.com/solterito-the-traditional-way-our-quinoa-version/)

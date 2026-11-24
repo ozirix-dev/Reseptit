@@ -70,5 +70,6 @@ Broad beans, corn and fresh cheese are tossed in a tangy dressing.
 
 - Contains milk.
 - Nutrition values are withheld because a complete set of ingredient data could not be verified.
+- Even cold queso fresco made with pasteurized milk can carry a Listeria risk. During pregnancy, for adults aged 65 and over, or for people with weakened immunity, use mozzarella made with pasteurized milk instead. [CDC](https://www.cdc.gov/listeria/prevention/)
 - A reliable glycemic load estimate is not available.
 - The image is an AI-generated illustration. [Recipe source](https://perudelights.com/solterito-the-traditional-way-our-quinoa-version/)

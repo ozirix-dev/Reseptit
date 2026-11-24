@@ -9,7 +9,7 @@ source_language: fi
 source_recipe: reseptit/jalkiruoat/tanskalainen-marjakiisseli-kermalla.md
 translation_of: tanskalainen-marjakiisseli-kermalla
 servings: 6
-time_total_min: 45
+time_total_min: 90
 difficulty: "easy"
 main_ingredient: ["mansikka","vadelma","kerma"]
 ingredients:
@@ -53,7 +53,7 @@ Strawberries and raspberries make a ruby-red pudding served with cold cream.
 1. Prepare the berries and cut up any large strawberries. Reserve 50 g of the water for the starch. Bring the remaining water, strawberries and sugar to a boil, then cook for about 5 minutes.
 2. Add the raspberries and cook for another 2 minutes. Stir the potato starch into the reserved cold water.
 3. Take the pan off the heat briefly and pour the starch mixture in slowly, stirring constantly. Return to the heat just until the first bubble appears, then remove from the heat.
-4. Let the pudding cool, divide among bowls and pour cold cream over each portion.
+4. Set the saucepan in a cold-water bath for about 15 minutes, stirring occasionally. Divide among bowls and refrigerate for at least 45 minutes. Pour over the cold cream just before serving.
 
 ## Notes
 

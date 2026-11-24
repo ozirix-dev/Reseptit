@@ -21,7 +21,7 @@ ingredients:
     item: "salt"
   - amount: 15
     unit: "g"
-    item: "ättiksprit (5–6 %)"
+    item: "ättika, 5 % syra"
   - amount: 15
     unit: "g"
     item: "socker"

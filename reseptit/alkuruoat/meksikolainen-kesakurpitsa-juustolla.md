@@ -51,11 +51,12 @@ Kesäkurpitsa pehmenee tomaattipohjassa ja saa pinnalle murennettua juustoa.
 
 1. Viipaloi sipuli ja kuutioi tomaatit sekä kesäkurpitsa.
 2. Kuullota sipulia öljyssä 5 minuuttia. Lisää tomaatit ja suola ja kypsennä noin 5 minuuttia, kunnes tomaateista irtoaa nestettä.
-3. Lisää kesäkurpitsa ja hauduta kannen alla 8–10 minuuttia, kunnes se on kypsää mutta pysyy paloina. Murusta tuorejuusto päälle ja kuumenna vielä 2 minuuttia.
+3. Lisää kesäkurpitsa ja hauduta kannen alla 8–10 minuuttia, kunnes se on kypsää mutta pysyy paloina. Murusta queso fresco joukkoon. Kuumenna sekoittaen, kunnes ruoka on kauttaaltaan vähintään 74 °C. Tarjoa kuumana.
 
 ## Muistiinpanot
 
 - Sisältää maitoa.
 - Ravintoarviota ei julkaista, koska kaikkien ainesosien ravintotietoa ei voitu vahvistaa.
+- Lähteen panela-juusto on vaihdettu murenevaan queso frescoon. Raskaana oleville, 65 vuotta täyttäneille ja heikentyneen vastustuskyvyn omaaville käytä pastöroidusta maidosta tehtyä fetaa. [CDC](https://www.cdc.gov/listeria/prevention/)
 - GK-arviota ei voida laskea luotettavasti.
 - Kuva on tekoälyllä luotu havainnekuva. [Valmistuslähde](https://www.mexicoinmykitchen.com/mexican-squash-with-cheese/)

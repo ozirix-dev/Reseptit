@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "toscanalainen-panzanella",
   "source_path": "reseptit/alkuruoat/toscanalainen-panzanella.md",
-  "source_sha256": "c202ca9160abc855a1d0beb0b1293cf95095c44ad11553148660f5bb015cd17f",
+  "source_sha256": "0ddb8681c24a0f557636b55abc1f3e4ceddd2678bdc51f21345740cb51d8584d",
   "decision": "hold",
   "reviewed_by": "UNREVIEWED",
   "reviewed_at": "",
@@ -70,38 +70,38 @@
         "path": "reseptit/alkuruoat/toscanalainen-panzanella.md",
         "language": "fi",
         "slug": "toscanalainen-panzanella",
-        "sha256": "cddfc994ad2b9915052bd675d1d9dd3f855857de2947a4f19edc3ca89f4ac21d",
-        "semantic_sha256": "50695e71cb088879746fe9475d15133a8a652c437845a8aef82d8cb6555361a1"
+        "sha256": "542b8c219657e3dc62d5d635a4f4bcf3b149d4e35792ebc0b85140c8cb7aa3ce",
+        "semantic_sha256": "2e3b4dd73b8b63dd0cf9b360f60fc444ca81b816ff0441f18e7f66480ae42c8c"
       },
       {
         "path": "kaannokset/en/alkuruoat/toscanalainen-panzanella.md",
         "language": "en",
         "slug": "tuscan-bread-salad-panzanella",
-        "sha256": "422eebde95d2edf202a07952b3264a44622781509a387f06b858d3c1e6896566",
-        "semantic_sha256": "77fc15bcc646f5f0cf124d4d92b8d48d525ec119ee66ec7b38948fbbdf93bdca"
+        "sha256": "1bc57f9c3d73c63ed615e32ffb386f26acbd516034011d638a45e4e96a35e79b",
+        "semantic_sha256": "b91d5a06a20a143f761a7133d640a7a84f93000cab17b0d58fd36985567a2dd6"
       },
       {
         "path": "kaannokset/sv/alkuruoat/toscanalainen-panzanella.md",
         "language": "sv",
         "slug": "toskansk-brodsallad-panzanella",
-        "sha256": "e25e1298d43f7011bf8d8c1a0b8b4da74f5d36bad4c49f4f494990acb15328f3",
-        "semantic_sha256": "03942d1d622b7f54a607ba0a94ef349569c35f7564ef6985dbdb5fcc7696be24"
+        "sha256": "22be322f789231eaaef9187da463f15ffdc8ddbcec98d115a4ea3660b94a88a0",
+        "semantic_sha256": "1ddd25b940381aeed301a1b8fec31a48dbedc935aaae22e78a0001707833e69b"
       },
       {
         "path": "kaannokset/th/alkuruoat/toscanalainen-panzanella.md",
         "language": "th",
         "slug": "salat-khanompang-thatkani-panzanella",
-        "sha256": "f7f3cfb30ff4578baae743d08db288f4478f86e0f0bc3961ceac43671be08fda",
-        "semantic_sha256": "1c72720c9d2d18901e4d4ac6af05232ce506cfbd441e88e5a57f8c4f0091468e"
+        "sha256": "1623b3d83a40541c0f6a48190d803730d714acbd8605c3d3a9004b38a4f962cf",
+        "semantic_sha256": "5fd13b7676107b872d2f1c81cd3ea09a97a7cbce619543b0e1bf96575b8513d3"
       }
     ],
-    "nutrition_sha256": "7af5201390934edb5159cd0b2c36e60229098dc7052e1bf664694a15469e08c1",
+    "nutrition_sha256": "0cc849c79b6609e2decde38d9fb71b787f15d05f51cdd66e60418beee201a0d7",
     "batch_id": "batch-33307",
     "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
   },
   "proposed_nutrition_calculation": {
     "recipeId": "toscanalainen-panzanella",
-    "sourceHash": "3e26c075e57cbe86fe6f42d8ffdfe7be65fbe1f0f66ba6c4b7014972702a644b",
+    "sourceHash": "57fe6dcbfe0d56005698f1fb007cc3ce8ba8c9bd915d59e59b002308db335aa2",
     "calculatedAt": "2026-11-24",
     "batchId": "batch-33307",
     "servings": 4,
@@ -110,17 +110,17 @@
     "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
     "ingredients": [
       {
-        "item": "vaaleaa italialaistyylistä leipää, kuivahtanutta",
+        "item": "edellispäivän vaaleaa italialaistyylistä leipää, sisältä vielä pehmeää",
         "amount": 250,
         "unit": "g",
-        "state": "vaaleaa italialaistyylistä leipää, kuivahtanutta",
+        "state": "edellispäivän vaaleaa italialaistyylistä leipää, sisältä vielä pehmeää",
         "record": {
           "id": "afcd-F001528-release-3",
           "name": "Bread, from white flour, Italian-style, commercial",
           "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
           "retrievedAt": "2026-10-24",
           "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
-          "state": "vaaleaa italialaistyylistä leipää, kuivahtanutta",
+          "state": "edellispäivän vaaleaa italialaistyylistä leipää, sisältä vielä pehmeää",
           "basis": "per100g-as-sold",
           "carbohydrateDefinition": "EU_AVAILABLE",
           "polyolsSourceVerified": true,
@@ -133,7 +133,7 @@
             "fat": 2.5
           }
         },
-        "matchEvidence": "Kuivahtaneen leivän kosteushävikkiä ei ole mitattu. Rivi vastaa leivän tyyppiä, ei tarkkaa paistohävikkiä.",
+        "matchEvidence": "Edellispäivän leipä on sisältä edelleen pehmeää, eikä kyse ole kuivatusta leivästä. Tavallisen vaalean italialaistyylisen leivän rivi on koostumusvastine.",
         "edibleFraction": 1,
         "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
         "retainedFraction": 1,

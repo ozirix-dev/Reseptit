@@ -21,7 +21,7 @@ ingredients:
     item: "เกลือ"
   - amount: 15
     unit: "กรัม"
-    item: "น้ำส้มสายชูกลั่น"
+    item: "น้ำส้มสายชูกลั่น ความเป็นกรด 5%"
   - amount: 15
     unit: "กรัม"
     item: "น้ำตาล"

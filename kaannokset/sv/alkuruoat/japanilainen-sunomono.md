@@ -49,7 +49,7 @@ Tunn gurka och wakame smaksätts med sötsyrlig risvinäger.
 
 1. Blötlägg wakamen enligt förpackningen, låt rinna av och krama ur försiktigt. Dela vid behov i munsbitar.
 2. Skiva gurkan tunt. Blanda med salt och låt stå i 10 minuter. Krama ur vätskan.
-3. Rör ihop risvinäger och socker tills sockret lösts upp. Blanda i gurka och wakame. Servera kall. Näringsvärdet bygger på samtliga ingredienser före avrinning.
+3. Rör ihop risvinäger och socker tills sockret lösts upp. Blanda i gurka och wakame. Servera kall.
 
 ## Anteckningar
 

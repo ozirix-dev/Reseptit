@@ -15,7 +15,7 @@ main_ingredient: ["leipa","tomaatti","kurkku"]
 ingredients:
   - amount: 250
     unit: "g"
-    item: "torrt ljust bröd av italiensk typ"
+    item: "ljust bröd av italiensk typ från dagen innan, mjukt inuti"
   - amount: 500
     unit: "g"
     item: "färska tomater"
@@ -59,7 +59,7 @@ Gårdagens bröd mjuknar i tomatsaft och syrlig dressing.
 
 ## Tillagning
 
-1. Riv det torra brödet i munsbitar. Fukta med vattnet och hälften av vinägern. Låt stå 10 minuter.
+1. Riv gårdagens bröd, som fortfarande är mjukt inuti, i munsbitar. Fukta med vattnet och hälften av vinägern. Låt stå 10 minuter.
 2. Skär tomaterna och gurkan i bitar. Skiva rödlöken mycket tunt. Blanda ner allt i brödet tillsammans med basilikan.
 3. Blanda i resten av vinägern, oljan och saltet. Låt stå 40 minuter i kylskåp före servering.
 

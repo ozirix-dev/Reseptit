@@ -20,7 +20,7 @@ ingredients:
     item: "suolaa"
   - amount: 15
     unit: "g"
-    item: "väkiviinaetikkaa"
+    item: "väkiviinaetikkaa, 5 % happoa"
   - amount: 15
     unit: "g"
     item: "sokeria"

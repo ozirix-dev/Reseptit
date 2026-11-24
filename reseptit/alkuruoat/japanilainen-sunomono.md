@@ -48,7 +48,7 @@ Ohuet kurkut ja wakame maustetaan makeanhappamalla riisietikalla.
 
 1. Liota wakamea pakkauksen ohjeen mukaan, valuta ja purista varovasti kuivaksi. Leikkaa tarvittaessa suupaloiksi.
 2. Viipaloi kurkku ohueksi. Sekoita suola kurkkuihin ja anna seistä 10 minuuttia. Purista irronnut neste pois.
-3. Sekoita riisietikka ja sokeri, kunnes sokeri liukenee. Lisää kurkku ja wakame. Tarjoa kylmänä. Makroarviossa on mukana kaikki raaka-aineet ennen valuttamista.
+3. Sekoita riisietikka ja sokeri, kunnes sokeri liukenee. Lisää kurkku ja wakame. Tarjoa kylmänä.
 
 ## Muistiinpanot
 

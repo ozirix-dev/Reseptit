@@ -70,5 +70,6 @@ Bondbönor, majs och färskost vänds i en syrlig dressing.
 
 - Innehåller mjölk.
 - Näringsvärden utelämnas eftersom näringsdata för alla ingredienser inte har kunnat verifieras.
+- Även kall queso fresco gjord på pastöriserad mjölk kan medföra risk för listeria. Gravida, personer från 65 år och personer med nedsatt immunförsvar bör välja mozzarella gjord på pastöriserad mjölk i stället. [CDC](https://www.cdc.gov/listeria/prevention/)
 - En tillförlitlig uppskattning av glykemisk belastning är inte tillgänglig.
 - Bilden är en AI-genererad illustration. [Receptkälla](https://perudelights.com/solterito-the-traditional-way-our-quinoa-version/)
