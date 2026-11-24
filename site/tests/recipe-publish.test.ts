@@ -136,7 +136,7 @@ test('distinguishes pending, failing and passing checks and exact-HEAD reviews',
   snapshot.checks = [passing];
   assert.equal((await inspectPublish(7, { get })).code, 'DRAFT_CHECKS_PASSED');
   snapshot.pr.draft = false;
-  assert.equal((await inspectPublish(7, { get })).code, 'READY_CHECKS_PASSED');
+  assert.equal((await inspectPublish(7, { get })).code, 'PR_CI_PENDING');
   snapshot.main = older;
   assert.equal((await inspectPublish(7, { get })).code, 'HOLD_PR_BASE');
 });
@@ -309,20 +309,21 @@ test('a Ready-triggered auxiliary check blocks reporting readiness until it pass
   Object.assign(snapshot.checks[2], { status: 'completed', conclusion: 'failure' });
   assert.equal((await inspectPublish(7, { get, head, base })).code, 'HOLD_PR_CI');
   Object.assign(snapshot.checks[2], { conclusion: 'success' });
-  assert.equal((await inspectPublish(7, { get, head, base })).code, 'READY_CHECKS_PASSED');
+  assert.equal((await inspectPublish(7, { get, head, base })).code, 'PR_CI_PENDING');
 });
 
 
 test('old green metadata cannot authorize Ready while the new run is invisible', async () => {
   const { snapshot, get } = scenario();
   snapshot.pr.draft = false;
-  snapshot.timeline.push({ event: 'ready_for_review', created_at: '2026-11-24T04:20:24Z' });
   const old = {
     run_number: 1, run_attempt: 1, workflow_id: 425934650, head_branch: snapshot.pr.head.ref,
     head_sha: head, head_repository: { full_name: repo }, event: 'pull_request',
     created_at: '2026-11-24T04:20:10Z', status: 'completed', conclusion: 'success',
   };
   snapshot.ownerRuns.push(old);
+  assert.equal((await inspectPublish(7, { get, head, base })).code, 'PR_CI_PENDING');
+  snapshot.timeline.push({ event: 'ready_for_review', created_at: '2026-11-24T04:20:24Z' });
   assert.equal((await inspectPublish(7, { get, head, base })).code, 'PR_CI_PENDING');
   snapshot.ownerRuns.push({ ...old, run_number: 2, created_at: '2026-11-24T04:20:27Z', status: 'queued' });
   assert.equal((await inspectPublish(7, { get, head, base })).code, 'PR_CI_PENDING');

@@ -207,7 +207,7 @@ async function readyMetadata(pr, get) {
   if (pr.draft) return null;
   const timeline = await get(apiRoot + '/issues/' + pr.number + '/timeline?per_page=100', { pages: true });
   const readyEvents = timeline.flat().filter(row => row.event === 'ready_for_review');
-  if (!readyEvents.length) return null; // The PR was opened Ready.
+  if (!readyEvents.length) return 'missing';
   const threshold = Math.max(...readyEvents.map(row => Date.parse(row.created_at)));
   const runs = await workflowRuns(get, 'chat-owner-metadata.yml', {
     branch: pr.head.ref, head_sha: pr.head.sha, event: 'pull_request',
@@ -233,15 +233,15 @@ async function nextReleaseState(pr, snapshot, { get, live }) {
         observed.some(check => !['success', 'skipped'].includes(check.result))) {
       return { code: 'HOLD_PR_CI', next: 'Inspect the non-passing required check.' };
     }
+    if (pr.base.sha !== main || pr.mergeable !== true || ['behind', 'dirty', 'blocked', 'unknown'].includes(pr.mergeable_state)) {
+      return { code: 'HOLD_PR_BASE', next: 'Re-evaluate current base, mergeability and Repo Guard conditions.' };
+    }
     const metadata = await readyMetadata(pr, get);
     if (metadata === 'missing' || active.includes(metadata)) {
-      return { code: 'PR_CI_PENDING', next: 'Wait for a fresh metadata run created after the Ready event.' };
+      return { code: 'PR_CI_PENDING', next: 'Wait for the Ready event and a fresh metadata run on this HEAD.' };
     }
     if (metadata !== null && metadata !== 'success') {
       return { code: 'HOLD_PR_CI', next: 'Inspect the fresh Ready metadata run.' };
-    }
-    if (pr.base.sha !== main || pr.mergeable !== true || ['behind', 'dirty', 'blocked', 'unknown'].includes(pr.mergeable_state)) {
-      return { code: 'HOLD_PR_BASE', next: 'Re-evaluate current base, mergeability and Repo Guard conditions.' };
     }
     return { code: pr.draft ? 'DRAFT_CHECKS_PASSED' : 'READY_CHECKS_PASSED',
       next: 'The integration owner can assess approvals and run the existing Repo Guard preflight.' };

@@ -25,7 +25,8 @@ tarkistus epäonnistuu tai aikaraja täyttyy. Aikarajalla JSON sisältää
 
 Ready-tapahtuma voi käynnistää omistajametadata-ajon samalle HEADille.
 Odotus huomioi myös GitHubin näyttämät lisätarkistukset ja varmistaa, että
-Readyn jälkeen on syntynyt tuore metadata-ajo samalle HEADille. Aikaraja on
+Readyn jälkeen on syntynyt tuore metadata-ajo samalle HEADille. Puuttuva
+Ready-tapahtuma tai pelkkä saman sekunnin aikaleima jää odotukseen. Aikaraja on
 pollausbudjetti, ja käynnissä oleva GitHub-lukupyyntö voi vielä valmistua.
 Voimassa oleva Repo Guard -esitarkastus ratkaisee, milloin Ready ja merge
 voidaan tehdä. Tämän lukutilan odotus ei tarvitse työvarausta.
