@@ -4,7 +4,7 @@ import { mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'nod
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
-import { assertOrigin, inspectPublish, readGitHub } from '../scripts/recipe-publish.mjs';
+import { assertOrigin, inspectPublish, prepareForCurrentMain, readGitHub } from '../scripts/recipe-publish.mjs';
 import { collectCandidates, templateFromIndex } from '../scripts/recipe-publish-prepare.mjs';
 import { hashContent, validateReview } from '../scripts/new-recipe-preflight.mjs';
 
@@ -14,6 +14,7 @@ const base = 'b'.repeat(40);
 const merge = 'c'.repeat(40);
 const older = 'd'.repeat(40);
 type Step = { name: string; status: string; conclusion: string | null };
+const liveProbe = 'Avoid redeploying a revision that is already live';
 const upload = 'Deploy exact SHA to existing Cloudflare Pages production branch';
 const verify = 'Verify production pages, SEO, assets, SHA and Functions GET 405';
 
@@ -129,6 +130,56 @@ test('separates Environment wait, upload in progress, stale live SHA and verifie
   snapshot.releases = [run()];
   assert.equal((await read(older)).code, 'VERIFIED_PREVIOUSLY');
   assert.equal((await read(merge)).code, 'VERIFIED');
+});
+
+test('holds before upload when both upload and verification were skipped', async () => {
+  const { get, snapshot, merged } = scenario();
+  merged();
+  snapshot.releases = [run(merge, 'completed', 'failure')];
+  snapshot.steps = [liveProbe, upload, verify].map(name => ({ name, status: 'completed', conclusion: 'skipped' }));
+  const read = () => inspectPublish(7, { get, live: async () => merge });
+  assert.equal((await read()).code, 'HOLD_BEFORE_UPLOAD');
+
+  snapshot.steps[0].conclusion = 'success';
+  assert.equal((await read()).code, 'HOLD_BEFORE_UPLOAD');
+  snapshot.steps[2] = { name: verify, status: 'in_progress', conclusion: null };
+  snapshot.releases = [run(merge, 'in_progress')];
+  assert.equal((await read()).code, 'VERIFYING');
+
+  snapshot.steps[0].conclusion = 'skipped';
+  assert.equal((await read()).code, 'PRODUCTION_ACTIVE');
+  snapshot.steps[0].conclusion = 'success';
+  snapshot.steps[2] = { name: verify, status: 'completed', conclusion: 'failure' };
+  snapshot.releases = [run(merge, 'completed', 'failure')];
+  assert.equal((await read()).code, 'VERIFY_RELEASE');
+});
+
+test('batch preparation checks the live GitHub main before and after validation', async () => {
+  let current = older;
+  let reads = 0;
+  const get = async (endpoint: string) => {
+    assert.equal(endpoint, 'repos/ozirix-dev/Reseptit/git/ref/heads/main');
+    reads++;
+    return { ref: 'refs/heads/main', object: { sha: current } };
+  };
+  await assert.rejects(prepareForCurrentMain(base, head, { get,
+    prepare: () => assert.fail('A stale base must stop before validation'),
+  }), /HOLD_BASE.*differs/);
+  assert.equal(reads, 1);
+
+  current = base;
+  await assert.rejects(prepareForCurrentMain(base, head, { get, prepare: (candidateBase, candidateHead) => {
+    assert.equal(candidateBase, base);
+    assert.equal(candidateHead, head);
+    current = older;
+    return { code: 'PREPARATION_CHECKS_PASSED' };
+  } }), /HOLD_BASE.*changed during/);
+  assert.equal(reads, 3);
+
+  current = base;
+  const plan = { code: 'PREPARATION_CHECKS_PASSED' };
+  assert.deepEqual(await prepareForCurrentMain(base, head, { get, prepare: () => plan }), plan);
+  assert.equal(reads, 5);
 });
 
 test('restarts cleanly when the snapshot changes while reading GitHub', async () => {

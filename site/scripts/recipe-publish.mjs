@@ -13,6 +13,7 @@ const branch = 'main';
 const production = 'recipavo-production';
 const workflow = 'recipavo-production-manual.yml';
 const shaPattern = /^[a-f0-9]{40}$/;
+const liveProbeStep = 'Avoid redeploying a revision that is already live';
 const uploadStep = 'Deploy exact SHA to existing Cloudflare Pages production branch';
 const verifyStep = 'Verify production pages, SEO, assets, SHA and Functions GET 405';
 const active = ['requested', 'queued', 'pending', 'in_progress', 'waiting'];
@@ -78,20 +79,32 @@ function stepState(step) {
 }
 
 export function interpretProduction({ run, jobs, pending, liveSha }) {
-  const upload = stepState(jobs.find(job => job.steps?.some(step => step.name === uploadStep))
-    ?.steps.find(step => step.name === uploadStep));
-  const verification = stepState(jobs.find(job => job.steps?.some(step => step.name === verifyStep))
-    ?.steps.find(step => step.name === verifyStep));
+  const steps = jobs.flatMap(job => job.steps ?? []);
+  const upload = stepState(steps.find(step => step.name === uploadStep));
+  const verification = stepState(steps.find(step => step.name === verifyStep));
+  const liveProbe = stepState(steps.find(step => step.name === liveProbeStep));
+  const status = { upload, verification };
   if (pending.some(row => row.environment?.name === production)) {
-    return { upload, verification, code: 'ENVIRONMENT_APPROVAL', next: 'The authorized Environment reviewer can review this run.' };
+    return { ...status, code: 'ENVIRONMENT_APPROVAL', next: 'The authorized Environment reviewer can review this run.' };
   }
-  if (verification === 'success' && ['success', 'skipped'].includes(upload)) {
-    return liveSha === run.head_sha
-      ? { upload, verification, code: 'VERIFIED', next: 'No work remains for this release.' }
-      : { upload, verification, code: 'VERIFIED_PREVIOUSLY', next: 'This run verified the release. Its SHA is not confirmed as currently live.' };
-  }
-  if (upload === 'success' || upload === 'skipped' && verification !== 'missing') {
-    return { upload, verification, code: 'VERIFY_RELEASE',
+
+  // The workflow skips upload on already_live=true. A successful probe and a
+  // verifier that actually ran prove that the skip was intentional.
+  const confirmedAlreadyLive = liveProbe === 'success' && upload === 'skipped' &&
+    ['in_progress', 'success', 'failure'].includes(verification);
+  if (upload === 'success' || confirmedAlreadyLive) {
+    if (verification === 'success') {
+      return liveSha === run.head_sha
+        ? { ...status, code: 'VERIFIED', next: 'No work remains for this release.' }
+        : { ...status, code: 'VERIFIED_PREVIOUSLY', next: 'This run verified the release. Its SHA is not confirmed as currently live.' };
+    }
+    if (verification === 'in_progress') {
+      return { ...status, code: 'VERIFYING', next: 'Wait for the active production verifier.' };
+    }
+    if (active.includes(run.status) && verification !== 'failure') {
+      return { ...status, code: 'VERIFY_PENDING', next: 'Wait for the existing release run to reach verification.' };
+    }
+    return { ...status, code: 'VERIFY_RELEASE',
       next: liveSha && liveSha !== run.head_sha
         ? 'Live SHA differs. Check the exact deployment and current revision before running the read-only verifier. Do not upload again.'
         : 'Use the existing read-only verifier with the exact release artifact. Do not upload again.' };
@@ -104,7 +117,7 @@ export function interpretProduction({ run, jobs, pending, liveSha }) {
   }
   return active.includes(run.status)
     ? { upload, verification, code: 'PRODUCTION_ACTIVE', next: 'Wait for this run and refresh its job state.' }
-    : { upload, verification, code: 'HOLD_PRODUCTION', next: 'Inspect the failed or incomplete workflow before any retry.' };
+    : { upload, verification, code: 'HOLD_BEFORE_UPLOAD', next: 'Inspect the workflow. No successful upload or already-live evidence was found.' };
 }
 
 function summarizeChecks(rules, checks) {
@@ -119,13 +132,34 @@ function summarizeChecks(rules, checks) {
   });
 }
 
+async function readMainSha(get) {
+  const ref = await get(apiRoot + '/git/ref/heads/main');
+  const sha = ref?.object?.sha;
+  if (ref?.ref !== 'refs/heads/main' || typeof sha !== 'string' || !shaPattern.test(sha)) {
+    throw new Error('HOLD_BASE: main ref unavailable.');
+  }
+  return sha;
+}
+
+export async function prepareForCurrentMain(base, head, { get = readGitHub, prepare = prepareBatch } = {}) {
+  if (typeof base !== 'string' || !shaPattern.test(base) || typeof head !== 'string' || !shaPattern.test(head)) {
+    throw new Error('Preparation requires full --base and --head SHAs.');
+  }
+  if (await readMainSha(get) !== base) {
+    throw new Error('HOLD_BASE: preparation base differs from current GitHub main.');
+  }
+  const plan = prepare(base, head);
+  if (await readMainSha(get) !== base) {
+    throw new Error('HOLD_BASE: GitHub main changed during preparation. Re-evaluate the candidate.');
+  }
+  return plan;
+}
+
+
 export async function inspectPublish(number, { get = readGitHub, live = readLiveSha, head, base } = {}) {
   const prEndpoint = apiRoot + '/pulls/' + number;
-  const mainEndpoint = apiRoot + '/git/ref/heads/main';
-  const [pr, mainRef] = await Promise.all([get(prEndpoint), get(mainEndpoint)]);
+  const [pr, main] = await Promise.all([get(prEndpoint), readMainSha(get)]);
   validatePr(pr, number, { head });
-  const main = mainRef.object?.sha;
-  if (!shaPattern.test(main) || mainRef.ref !== 'refs/heads/main') throw new Error('HOLD_BASE: main ref unavailable.');
   if (base && base !== main) throw new Error('HOLD_BASE: main has changed; re-evaluate the candidate.');
 
   const [rules, checkPages, reviewPages] = await Promise.all([
@@ -150,9 +184,9 @@ export async function inspectPublish(number, { get = readGitHub, live = readLive
         review.commit_id === pr.head.sha && review.user.id !== pr.user?.id).length,
       changesRequested: reviews.some(review => review.state === 'CHANGES_REQUESTED') } };
   const releaseState = await nextReleaseState(pr, result, { get, live });
-  const [currentPr, currentMain] = await Promise.all([get(prEndpoint), get(mainEndpoint)]);
+  const [currentPr, currentMain] = await Promise.all([get(prEndpoint), readMainSha(get)]);
   validatePr(currentPr, number, { head: result.head });
-  if (currentMain.object?.sha !== main || currentPr.base.sha !== pr.base.sha ||
+  if (currentMain !== main || currentPr.base.sha !== pr.base.sha ||
       currentPr.state !== pr.state || currentPr.draft !== pr.draft || currentPr.merged !== pr.merged) {
     throw new Error('HOLD_CHANGED: PR or main changed during inspection. Read the current state again.');
   }
@@ -238,7 +272,7 @@ export async function cli(argv = process.argv.slice(2)) {
     return;
   }
   if (values.prepare) {
-    const plan = prepareBatch(values.base, values.head);
+    const plan = await prepareForCurrentMain(values.base, values.head);
     console.log(JSON.stringify(plan, null, 2));
     if (plan.code.startsWith('HOLD_')) process.exitCode = 1;
     return;

@@ -13,3 +13,8 @@ export function inspectPublish(number: number, options?: {
   head?: string;
   base?: string;
 }): Promise<{ code: string; head: string }>;
+
+export function prepareForCurrentMain(base: string, head: string, options?: {
+  get?: GitHubRead;
+  prepare?: (base: string, head: string) => { code: string };
+}): Promise<{ code: string }>;
