@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "recipe_id": "cornwallilaistyyliset-naudanlihapiiraat",
+  "source_path": "reseptit/paaruoat/cornwallilaistyyliset-naudanlihapiiraat.md",
+  "source_sha256": "7ee70725a7f68b93ff0f32ffc1982488bfc2ae266af14c153af0644eac10208a",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://cornishpastyassociation.co.uk/about-the-pasty/make-your-own-genuine-cornish-pasty/",
+      "https://www.foodstandards.gov.scot/consumer-advice/food-safety/food-safety-in-the-kitchen/cooking",
+      "https://assets.publishing.service.gov.uk/media/5fd34f3dd3bf7f3059ef3cd2/pfn-cornish-pasty-pgi-pdf.pdf"
+    ]
+  },
+  "nutrition_evidence": "docs/reviews/new-recipes/cornwallilaistyyliset-naudanlihapiiraat.json#nutrition_reference",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistettu main 3f268ab355c18b4ed057537df9bf9414410b63fa ja avoimet PR:t. FI/EN/SV/TH-hakusanat: cornish, cornwall, kornvall, คอร์นวอลล์, คอร์นิช. Tunniste ja neljän kielen reitit tarkistettu erikseen."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Cornish Pasty Associationin resepti ja mestarin valmistusvideo. Käytetään suolatonta voita ja määriä kuorituille kasviksille. Lähteen vaihtoehtoinen margariini ja maitovoitelu jätetty pois."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kylmässä 3 tuntia, halkaisija noin 20 cm, täyte raakana, sivusta poimutettu sauma, kiertoilma 165 °C ja noin 50–55 min. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Food Standards Scotland: kypsyyttä mitataan täytteen keskeltä puhtaalla mittarilla (vähintään 75 °C). Kylmäketju, raakalihan välinehygienia, nopea jäähdytys ja tähteiden käyttö kahdessa päivässä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Lähteen erästä saadaan kuusi piirasta. Yksi piiras on yksi annos. Suunnitteluarvio 285 min: valmistelu ja muotoilu noin 50 min, kylmälepo 180 min ja paisto noin 55 min. Valmista saantoa ei ole punnittu."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Chat-1 varmisti vertailulaskelmat ja AFCD-rivit. Fineli-rivejä ei saatu riippumattomasti varmennettua. Chat-1 hyväksyi kaikki neljä julkista ravintokenttää null-arvoina. Vertailuluvut jäävät evidenssiin."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Haettu University of Sydneyn GI-tietokannasta hakusanoilla pasty, pastry ja cornish. Kaupallisen lehtitaikinan rivi ei vastaa rasvaisen murotaikinan ja perunaa sisältävän lihatäytteen paistoa yhdessä. Mitattua vastaavaa GI:tä ei löytynyt. Numeerinen GK jätetään tyhjäksi."
+    }
+  },
+  "nutrition_reference": {
+    "sources": {
+      "Fineli": {
+        "release": 20,
+        "url": "https://fineli.fi/fineli/fi/avoin-data",
+        "file": "docs/nutrition/fineli-release-20-reference.json"
+      },
+      "AFCD": {
+        "release": 3,
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "file": "docs/nutrition/afcd-release-3-reference.json"
+      }
+    },
+    "reference_rows": [
+      {
+        "database": "Fineli",
+        "source_id": "110",
+        "grams": 500,
+        "match": "Puolikarkea vehnäjauho; vahvan leipävehnäjauhon vertailu",
+        "per100g": {
+          "available_carbohydrate": 73.998,
+          "fibre": 3.5,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      },
+      {
+        "database": "Fineli",
+        "source_id": "550",
+        "grams": 120,
+        "match": "Laardi; paistinrasvarivin vastine, rasvapitoisuus voi poiketa käytetystä ihrasta",
+        "per100g": {
+          "available_carbohydrate": 0,
+          "fibre": 0,
+          "protein": 1.22,
+          "fat": 96.5
+        }
+      },
+      {
+        "database": "Fineli",
+        "source_id": "576",
+        "grams": 125,
+        "match": "Suolaton voi",
+        "per100g": {
+          "available_carbohydrate": 0.8,
+          "fibre": 0,
+          "protein": 1.19,
+          "fat": 81.3
+        }
+      },
+      {
+        "database": "Fineli",
+        "source_id": "303",
+        "grams": 150,
+        "match": "Raaka lanttu, syötävä osa",
+        "per100g": {
+          "available_carbohydrate": 5.88,
+          "fibre": 1.8,
+          "protein": 1.1,
+          "fat": 0.1
+        }
+      },
+      {
+        "database": "AFCD",
+        "source_id": "F007308",
+        "grams": 300,
+        "match": "Kuorittu raaka uusi peruna; kiinteän lajikkeen vertailu",
+        "per100g": {
+          "available_carbohydrate": 12.8,
+          "fibre": 1.1,
+          "protein": 2.3,
+          "fat": 0.1
+        }
+      },
+      {
+        "database": "AFCD",
+        "source_id": "F006225",
+        "grams": 150,
+        "match": "Kuorittu raaka keltasipuli",
+        "per100g": {
+          "available_carbohydrate": 5.8,
+          "fibre": 2.3,
+          "protein": 1.3,
+          "fat": 0
+        }
+      }
+    ],
+    "beef_scenarios": [
+      {
+        "database": "AFCD",
+        "source_id": "F000739",
+        "comparison": "raaka vähärasvainen paisti",
+        "grams": 400,
+        "per100g": {
+          "available_carbohydrate": 0,
+          "fibre": 0,
+          "protein": 20.4,
+          "fat": 2.8
+        },
+        "raw_nominal_g_per_sixth_excluding_egg": {
+          "available_carbohydrate": 71.1517,
+          "fibre": 4.4917,
+          "protein": 25.5086,
+          "fat": 39.4792
+        }
+      },
+      {
+        "database": "AFCD",
+        "source_id": "F000828",
+        "comparison": "raaka trimmaamaton lapa",
+        "grams": 400,
+        "per100g": {
+          "available_carbohydrate": 0,
+          "fibre": 0,
+          "protein": 21,
+          "fat": 9.5
+        },
+        "raw_nominal_g_per_sixth_excluding_egg": {
+          "available_carbohydrate": 71.1517,
+          "fibre": 4.4917,
+          "protein": 25.9086,
+          "fat": 43.9458
+        }
+      }
+    ],
+    "excluded": "Vesi ja suola eivät tuo makroravintoaineita. Maun mukaan lisättävä pippuri ja kananmunavoitelu jäävät vertailun ulkopuolelle, koska käytetty määrä ja voitelun saanto ovat tuntemattomia. Kananmunan raakarivi AFCD F003729.",
+    "scope": "Vertailun kaava on summa (syötävä raaka grammamäärä × lähdearvo / 100) / 6. AFCD-hiilihydraatit eivät sisällä sokerialkoholeja. Naudan vertailurivit kuvaavat eri leikkeitä, joten tulokset eivät määritä pallealihan todellista vaihteluväliä. Lukuja ei ole mitattu kypsästä annoksesta.",
+    "publication": {
+      "available_carbohydrate": "Tyhjä: vahvan leipävehnäjauhon ja muun jauhon eroa sekä piiraiden kohdistettua taikinasaantoa ei ole varmennettu.",
+      "total_carbohydrate": "Tyhjä: sama taikina- ja saantoepävarmuus koskee kuidun sisältävää kokonaismäärää.",
+      "protein": "Tyhjä: pallealihan osaa, trimmausta ja täytteen talteenottoa ei ole varmennettu.",
+      "fat": "Tyhjä: pallealihan rasvaisuus, voitelun saanto ja paiston rasvahävikki ovat epävarmoja.",
+      "glycemic_load": "Tyhjä: vastaavaa mitattua GI:tä ja varmennettua annoskohtaista imeytyvän hiilihydraatin määrää ei ole."
+    }
+  },
+  "glycemic_reference": "https://glycemicindex.com/gi-search/",
+  "image": {
+    "path": "kuvat/paaruoat/cornwallilaistyyliset-naudanlihapiiraat.webp",
+    "bytes": 221206,
+    "width": 1536,
+    "height": 1024,
+    "sha256": "84793a5327471253d6aa2a9786cf4a129540e125770be8a25e1a5493bd987b60",
+    "master_sha256": "bec92ad1216a32f0227892bc838f3e0dca497fe53867e871eecb38f02a161271",
+    "origin": "OpenAI ImageGen, digitaalinen havainnekuva. Kokki-Codex vertasi puolikuun muodon, poimutetun sivusauman ja leikkauspinnan raaka-aineet julkaistuun ohjeeseen. Kuva ei dokumentoi Recipavon valmistamaa erää. Chat-1 tarkisti kuvan, neljä alt-tekstiä ja WebP-tiivisteen."
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/cornwallilaistyyliset-naudanlihapiiraat.md",
+        "language": "fi",
+        "slug": "cornwallilaistyyliset-naudanlihapiiraat",
+        "sha256": "7ee70725a7f68b93ff0f32ffc1982488bfc2ae266af14c153af0644eac10208a",
+        "semantic_sha256": "5351ba2af2037e9f22d1d8efa55a7ee8685e9dbee9ea7649ef016a71e84c7a55"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/cornwallilaistyyliset-naudanlihapiiraat.md",
+        "language": "en",
+        "slug": "cornwall-style-beef-pasties",
+        "sha256": "1ca0367d5daafdccd0cada26d1caab2db2b86fdc84c3f14920a6cbe51b3534e4",
+        "semantic_sha256": "c77a76689418bcd3a3b3b84b84ae8a50279441df841050fcd6373cdabcca1ca1"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/cornwallilaistyyliset-naudanlihapiiraat.md",
+        "language": "sv",
+        "slug": "cornwallinspirerade-notkottspiroger",
+        "sha256": "f38c8b5784521b2ce43487df19fa13eccf5783d090d1360ce981b17374822fa4",
+        "semantic_sha256": "f9ca69255d8aedd3102b39b7a996a57ae6a96cd206e5697992888cbd51439a8d"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/cornwallilaistyyliset-naudanlihapiiraat.md",
+        "language": "th",
+        "slug": "phai-nuea-satai-khonwon",
+        "sha256": "3ff9578040d5d5824102b2d87e6c8ed3d9489c1bba7666f4f4e4a9f160e313c2",
+        "semantic_sha256": "45a7dde5ad9070dc549dd175f518af506ccc30556728f2062a9993c15881969f"
+      }
+    ],
+    "transform": "Ainoat muutokset Markdown-luonnoksiin ovat neljän status-kentän arvo published sekä FI:n translation_languages: [en, sv, th] ja translation_status: {en: published, sv: published, th: published}. Kohdetiivisteet laskettiin UTF-8 LF -tavuista. Pariauditointi läpäisi FI–EN, FI–SV ja FI–TH.",
+    "reviewed_draft_head": "ff55b3eb06eb87dec106869d5af96c4068a95b21",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/975#pullrequestreview-6033213366"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/975#pullrequestreview-6033213366"
+}
