@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "kreikkalainen-tomaattimunakokkeli",
   "source_path": "reseptit/aamupalat/kreikkalainen-tomaattimunakokkeli.md",
-  "source_sha256": "f195abdb0852f288ee2215dcc01dead9ca1f4f889595a739b29f7092f22199b9",
+  "source_sha256": "42f5d4dca0c06123e7ad2f0c66ceb0687930ad57e953b73a2374d100006b67cf",
   "decision": "hold",
   "reviewed_by": "UNREVIEWED",
   "reviewed_at": "",
@@ -13,7 +13,7 @@
       "https://www.fda.gov/food/buy-store-serve-safe-food/what-you-need-know-about-egg-safety"
     ]
   },
-  "nutrition_evidence": "docs/reviews/new-recipes/kreikkalainen-tomaattimunakokkeli.json#nutrition_reference",
+  "nutrition_evidence": "docs/nutrition/calculations/kreikkalainen-tomaattimunakokkeli.json",
   "checks": {
     "duplicates": {
       "status": "pending",
@@ -21,7 +21,7 @@
     },
     "ingredients": {
       "status": "pending",
-      "notes": "KYKNOSin ohje. Sipulin, kuorettoman munan, öljyn, pyreen ja fetan massat vakioitu. Valinnainen yrttikoriste jätetty pois."
+      "notes": "KYKNOSin ohje. Sipulin, kuorettoman munan, öljyn, pyreen ja fetan massat vakioitu. Valinnainen yrttikoriste jätetty pois. Tomaattipyree on suolatonta ja mustapippurin määrä 0,5 g."
     },
     "method": {
       "status": "pending",
@@ -37,11 +37,11 @@
     },
     "nutrition": {
       "status": "pending",
-      "notes": "Fineli 20 ja AFCD 3 grammapohjaisesti. Koko öljymäärä mukana, arvot pyöristetty yhteen desimaaliin."
+      "notes": "Fineli 20 ja AFCD 3 grammapohjaisesti. Koko öljymäärä ja 0,5 g mustapippuria mukana. Julkaisuarvot ovat projektin ravintolaskurin pyöristämiä annosarvioita."
     },
     "glycemic": {
       "status": "unavailable",
-      "notes": "University of Sydneyn GI-hakemistoon kohdennettu haku (strapatsada, kagianas) ei tunnistanut soveltuvaa mitattua GI:tä. Imeytyvää hiilihydraattia annoksessa 5,7225 g. GK määrittämätön."
+      "notes": "University of Sydneyn GI-hakemistoon kohdennettu haku (strapatsada, kagianas) ei tunnistanut soveltuvaa mitattua GI:tä. Imeytyvää hiilihydraattia annoksessa 5,77075 g. GK määrittämätön."
     }
   },
   "nutrition_reference": {
@@ -62,10 +62,11 @@
         "database": "Fineli",
         "source_id": "398",
         "grams": 400,
-        "match": "Tomaattimurska",
+        "match": "TOMAATTIMURSKA",
         "per100g": {
-          "available_carbohydrate": 3.45,
+          "carbohydrate": 3.45,
           "fibre": 0.4,
+          "polyols": 0,
           "protein": 0.55,
           "fat": 0.2
         }
@@ -74,9 +75,10 @@
         "database": "AFCD",
         "source_id": "F009206",
         "grams": 30,
-        "match": "Tomato paste, no added salt",
+        "match": "Tomato, paste, no added salt",
         "per100g": {
-          "available_carbohydrate": 10.1,
+          "carbohydrate": 10.1,
+          "polyols": 0,
           "fibre": 3.6,
           "protein": 3.4,
           "fat": 0.5
@@ -86,10 +88,11 @@
         "database": "Fineli",
         "source_id": "335",
         "grams": 100,
-        "match": "Keltasipuli, kuorittuna",
+        "match": "SIPULI, KELTASIPULI",
         "per100g": {
-          "available_carbohydrate": 4.8,
+          "carbohydrate": 4.8,
           "fibre": 1.2,
+          "polyols": 0,
           "protein": 1.25,
           "fat": 0.1
         }
@@ -98,10 +101,11 @@
         "database": "Fineli",
         "source_id": "858",
         "grams": 300,
-        "match": "Kananmuna, kuoreton, raaka",
+        "match": "KANANMUNA, KUORETON",
         "per100g": {
-          "available_carbohydrate": 0.3,
+          "carbohydrate": 0.3,
           "fibre": 0,
+          "polyols": 0,
           "protein": 12.61,
           "fat": 9.24
         }
@@ -110,10 +114,11 @@
         "database": "Fineli",
         "source_id": "536",
         "grams": 15,
-        "match": "Oliiviöljy",
+        "match": "OLIIVIÖLJY",
         "per100g": {
-          "available_carbohydrate": 0,
+          "carbohydrate": 0,
           "fibre": 0,
+          "polyols": 0,
           "protein": 0,
           "fat": 100
         }
@@ -122,29 +127,43 @@
         "database": "AFCD",
         "source_id": "F002452",
         "grams": 90,
-        "match": "Cheese, fetta",
+        "match": "Cheese, fetta (feta)",
         "per100g": {
-          "available_carbohydrate": 0.4,
+          "carbohydrate": 0.4,
+          "polyols": 0,
           "fibre": 0,
           "protein": 16.6,
           "fat": 20.6
         }
+      },
+      {
+        "database": "AFCD",
+        "source_id": "F006618",
+        "grams": 0.5,
+        "match": "Pepper, black, ground",
+        "per100g": {
+          "carbohydrate": 38.6,
+          "polyols": 0,
+          "fibre": 25.3,
+          "protein": 10.4,
+          "fat": 3.3
+        }
       }
     ],
     "servings": 4,
-    "method": "Kerro kunkin raaka-aineen per 100 g -arvo sen massalla ja jaa sadalla. Summaa ja jaa neljällä. Kokonaishiilihydraatti = imeytyvä hiilihydraatti + kuitu. Pieni valinnainen suola ja pippuri sekä lisukkeet rajattu pois.",
+    "method": "Projektin ravintolaskuri laskee syötävät massat ja jakaa summan neljällä. Kokonaishiilihydraatti sisältää kuidun ja polyolit. Ruokasuola ja lisukkeet rajattu pois.",
     "per_serving_g": {
-      "available_carbohydrate": 5.7225,
-      "fibre": 0.97,
-      "total_carbohydrate": 6.6925,
-      "protein": 14.31,
-      "fat": 15.5775
+      "available_carbohydrate": 5.77075,
+      "fibre": 1.001625,
+      "total_carbohydrate": 6.772375,
+      "protein": 14.323,
+      "fat": 15.581625
     }
   },
   "glycemic_evidence": {
     "source": "https://glycemicindex.com/gi-search/",
     "checked_on": "2026-11-24",
-    "available_carbohydrate_per_serving_g": 5.7225,
+    "available_carbohydrate_per_serving_g": 5.77075,
     "glycemic_index": null,
     "glycemic_load": null
   },
@@ -162,25 +181,29 @@
         "path": "reseptit/aamupalat/kreikkalainen-tomaattimunakokkeli.md",
         "language": "fi",
         "slug": "kreikkalainen-tomaattimunakokkeli",
-        "sha256": "2a8e2562cd728a028c01232f280df7d146dacec9e94fe8e24f534599867b4a40"
+        "sha256": "2f619329fd16a088661823e084ce700cfbcb4a6588792d065902a960f3298b4e",
+        "semantic_sha256": "e29da7c833cf70a86b0563e3a2b6609daa9b5cb99480945659f28f9b04eefdb2"
       },
       {
         "path": "kaannokset/en/aamupalat/kreikkalainen-tomaattimunakokkeli.md",
         "language": "en",
         "slug": "greek-tomato-feta-scrambled-eggs",
-        "sha256": "f682df30cb6ac66a1bc6537b9374b476bb402efe21a9311bfd9442102ed3c540"
+        "sha256": "cb2e68d6e3a6b15b535fdeff380939364d343781927c8ae36f0618a75f9cc4e5",
+        "semantic_sha256": "04844172080857faeafe2f65db8c06555b2ae8b30f63d2d112afff9e23917f1e"
       },
       {
         "path": "kaannokset/sv/aamupalat/kreikkalainen-tomaattimunakokkeli.md",
         "language": "sv",
         "slug": "grekisk-aggrora-med-tomat-och-feta",
-        "sha256": "ee015c3d542c8d40936b1f0acf61b6abd0a65bbff938ce076f0549c6f306f123"
+        "sha256": "ad6b53c888c83dff979d66729a9ab639b813bfdd51a4c7e1a1498552b2411926",
+        "semantic_sha256": "6e874f0a6c770670c6aa4ac9b6f4f6b2548a7606a203594c3ac632042fd5a355"
       },
       {
         "path": "kaannokset/th/aamupalat/kreikkalainen-tomaattimunakokkeli.md",
         "language": "th",
         "slug": "khai-khon-makhuea-thet-feta-baep-krik",
-        "sha256": "302e73cc4aff9ec62cfa570110fce247b094219b7c239f9e8e1e0ec36ab405da"
+        "sha256": "3880d4ba7325dc8c0d705420dd723ec56ebc61b6e6e00f004252294f2733bfb8",
+        "semantic_sha256": "237be67670d0fb871e9a5bec492b30b58d7316a12217cb503c9c76ccea56782a"
       }
     ],
     "transform": "Neljä julkaisutilaa ja FI:n kolme translation_status-arvoa vaihtuvat draft-arvosta published-arvoon."

@@ -1,0 +1,277 @@
+{
+  "recipeId": "kreikkalainen-tomaattimunakokkeli",
+  "sourceHash": "0ef791141bac42290f692b3a99df9dff06746a70d0b3f2a9ffc57723697de511",
+  "calculatedAt": "2026-11-24",
+  "servings": 4,
+  "scope": "Yksi neljäsosa koko reseptistä, ilman lisukkeita. Valmistushävikkiä ei mitattu; kaikki käytetyt ainekset lasketaan mukaan.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "tomaattimurskaa liemineen",
+      "amount": 400,
+      "unit": "g",
+      "state": "säilyke liemineen",
+      "matchEvidence": "Tomaattimurska punnitaan liemineen.",
+      "record": {
+        "id": "fineli-398-release-20",
+        "name": "TOMAATTIMURSKA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/398",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "säilyke liemineen",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3.45,
+          "FIBT": 0.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 3.45,
+          "fibre": 0.4,
+          "polyols": 0,
+          "protein": 0.55,
+          "fat": 0.2
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptissä ilmoitetaan syötävä käyttöpaino.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Määrä lasketaan kokonaan. Ainekset kypsennetään samassa pannussa ja valutusta ei tehdä kypsennyksen jälkeen. Veden haihtuminen ei muuta annosjakoa."
+    },
+    {
+      "item": "tomaattipyreetä ilman lisättyä suolaa",
+      "amount": 30,
+      "unit": "g",
+      "state": "tiivistetty, ei lisättyä suolaa",
+      "matchEvidence": "Käytetään suolatonta tomaattipyreetä.",
+      "record": {
+        "id": "afcd-F009206-release-3",
+        "name": "Tomato, paste, no added salt",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "tiivistetty, ei lisättyä suolaa",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 10.1,
+          "polyols": 0,
+          "fibre": 3.6,
+          "protein": 3.4,
+          "fat": 0.5
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptissä ilmoitetaan syötävä käyttöpaino.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Määrä lasketaan kokonaan. Ainekset kypsennetään samassa pannussa ja valutusta ei tehdä kypsennyksen jälkeen. Veden haihtuminen ei muuta annosjakoa."
+    },
+    {
+      "item": "kuorittua keltasipulia",
+      "amount": 100,
+      "unit": "g",
+      "state": "raaka, kuorittu",
+      "matchEvidence": "Punnitaan kuorittu keltasipuli.",
+      "record": {
+        "id": "fineli-335-release-20",
+        "name": "SIPULI, KELTASIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/335",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raaka, kuorittu",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.8,
+          "FIBT": 1.2,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 1.2,
+          "polyols": 0,
+          "protein": 1.25,
+          "fat": 0.1
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptissä ilmoitetaan syötävä käyttöpaino.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Määrä lasketaan kokonaan. Ainekset kypsennetään samassa pannussa ja valutusta ei tehdä kypsennyksen jälkeen. Veden haihtuminen ei muuta annosjakoa."
+    },
+    {
+      "item": "kananmunaa ilman kuoria (noin 5–6 isoa munaa)",
+      "amount": 300,
+      "unit": "g",
+      "state": "raaka, kuoreton",
+      "matchEvidence": "Punnitaan raaka kananmuna ilman kuoria.",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raaka, kuoreton",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptissä ilmoitetaan syötävä käyttöpaino.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Määrä lasketaan kokonaan. Ainekset kypsennetään samassa pannussa ja valutusta ei tehdä kypsennyksen jälkeen. Veden haihtuminen ei muuta annosjakoa."
+    },
+    {
+      "item": "oliiviöljyä",
+      "amount": 15,
+      "unit": "g",
+      "state": "nestemäinen",
+      "matchEvidence": "Punnitaan paistoöljy ennen paistoa.",
+      "record": {
+        "id": "fineli-536-release-20",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "nestemäinen",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptissä ilmoitetaan syötävä käyttöpaino.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Määrä lasketaan kokonaan. Ainekset kypsennetään samassa pannussa ja valutusta ei tehdä kypsennyksen jälkeen. Veden haihtuminen ei muuta annosjakoa."
+    },
+    {
+      "item": "valutettua fetajuustoa",
+      "amount": 90,
+      "unit": "g",
+      "state": "käyttövalmis, valutettu",
+      "matchEvidence": "Punnitaan valutettu feta ilman suolalientä.",
+      "record": {
+        "id": "afcd-F002452-release-3",
+        "name": "Cheese, fetta (feta)",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "käyttövalmis, valutettu",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0.4,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 16.6,
+          "fat": 20.6
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptissä ilmoitetaan syötävä käyttöpaino.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Määrä lasketaan kokonaan. Ainekset kypsennetään samassa pannussa ja valutusta ei tehdä kypsennyksen jälkeen. Veden haihtuminen ei muuta annosjakoa."
+    },
+    {
+      "item": "suolaa tarvittaessa",
+      "amount": null,
+      "unit": "",
+      "state": "kuiva",
+      "matchEvidence": "Valinnainen ruokasuola.",
+      "excludedReason": "Ruokasuola ei sisällä laskettavia makroravintoaineita.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Ruokasuola on natriumkloridia. Natriumia ei ilmoiteta tässä laskelmassa."
+    },
+    {
+      "item": "rouhittua mustapippuria",
+      "amount": 0.5,
+      "unit": "g",
+      "state": "kuivattu, jauhettu",
+      "matchEvidence": "Käytetään jauhetun kuivatun mustapippurin ravintoriviä rouhitulle kuivatulle mustapippurille.",
+      "record": {
+        "id": "afcd-F006618-release-3",
+        "name": "Pepper, black, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "kuivattu, jauhettu",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 38.6,
+          "polyols": 0,
+          "fibre": 25.3,
+          "protein": 10.4,
+          "fat": 3.3
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptissä ilmoitetaan syötävä käyttöpaino.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Määrä lasketaan kokonaan. Ainekset kypsennetään samassa pannussa ja valutusta ei tehdä kypsennyksen jälkeen. Veden haihtuminen ei muuta annosjakoa."
+    }
+  ]
+}

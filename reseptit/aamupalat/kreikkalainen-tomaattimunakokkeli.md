@@ -17,7 +17,7 @@ ingredients:
     item: "tomaattimurskaa liemineen"
   - amount: 30
     unit: "g"
-    item: "tomaattipyreetä"
+    item: "tomaattipyreetä ilman lisättyä suolaa"
   - amount: 100
     unit: "g"
     item: "kuorittua keltasipulia"
@@ -33,18 +33,18 @@ ingredients:
   - amount: null
     unit: ""
     item: "suolaa tarvittaessa"
-  - amount: null
-    unit: ""
+  - amount: 0.5
+    unit: "g"
     item: "rouhittua mustapippuria"
 image:
   src: aamupalat/kreikkalainen-tomaattimunakokkeli.webp
   alt: "Tomaattista munakokkelia ja murennettua fetaa valkoisella lautasella"
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 5.7
-carbs_total_per_serving_g: 6.7
-protein_per_serving_g: 14.3
-fat_per_serving_g: 15.6
+carbs_net_per_serving_g: 5.77
+carbs_total_per_serving_g: 6.77
+protein_per_serving_g: 14.32
+fat_per_serving_g: 15.58
 ---
 
 # Kreikkalainen tomaattimunakokkeli fetalla

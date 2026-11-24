@@ -18,7 +18,7 @@ ingredients:
     item: "มะเขือเทศสับกระป๋องพร้อมน้ำในกระป๋อง"
   - amount: 30
     unit: "กรัม"
-    item: "มะเขือเทศเข้มข้น"
+    item: "มะเขือเทศเข้มข้นไม่เติมเกลือ"
   - amount: 100
     unit: "กรัม"
     item: "หอมหัวใหญ่สีเหลืองปอกเปลือก"
@@ -34,18 +34,18 @@ ingredients:
   - amount: null
     unit: ""
     item: "เกลือตามต้องการ"
-  - amount: null
-    unit: ""
+  - amount: 0.5
+    unit: "กรัม"
     item: "พริกไทยดำบดหยาบ"
 image:
   src: aamupalat/kreikkalainen-tomaattimunakokkeli.webp
   alt: "ไข่คนมะเขือเทศโรยชีสเฟตาบิบนจานสีขาว"
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 5.7
-carbs_total_per_serving_g: 6.7
-protein_per_serving_g: 14.3
-fat_per_serving_g: 15.6
+carbs_net_per_serving_g: 5.77
+carbs_total_per_serving_g: 6.77
+protein_per_serving_g: 14.32
+fat_per_serving_g: 15.58
 ---
 
 # ไข่คนมะเขือเทศกับเฟตาแบบกรีก

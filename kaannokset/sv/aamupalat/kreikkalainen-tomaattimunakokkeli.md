@@ -18,7 +18,7 @@ ingredients:
     item: "krossade tomater med spad"
   - amount: 30
     unit: "g"
-    item: "tomatpuré"
+    item: "tomatpuré utan tillsatt salt"
   - amount: 100
     unit: "g"
     item: "skalad gul lök"
@@ -34,18 +34,18 @@ ingredients:
   - amount: null
     unit: ""
     item: "salt vid behov"
-  - amount: null
-    unit: ""
+  - amount: 0.5
+    unit: "g"
     item: "grovmalen svartpeppar"
 image:
   src: aamupalat/kreikkalainen-tomaattimunakokkeli.webp
   alt: "Äggröra med tomat och smulad feta på en vit tallrik"
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 5.7
-carbs_total_per_serving_g: 6.7
-protein_per_serving_g: 14.3
-fat_per_serving_g: 15.6
+carbs_net_per_serving_g: 5.77
+carbs_total_per_serving_g: 6.77
+protein_per_serving_g: 14.32
+fat_per_serving_g: 15.58
 ---
 
 # Grekisk äggröra med tomat och feta
