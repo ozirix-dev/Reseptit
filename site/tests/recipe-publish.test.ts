@@ -4,9 +4,49 @@ import { mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'nod
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
-import { assertOrigin, inspectPublish, prepareForCurrentMain, readGitHub } from '../scripts/recipe-publish.mjs';
+import { assertOrigin, inspectPublish, prepareForCurrentMain, readGitHub, waitForPublish } from '../scripts/recipe-publish.mjs';
 import { collectCandidates, templateFromIndex } from '../scripts/recipe-publish-prepare.mjs';
 import { hashContent, validateReview } from '../scripts/new-recipe-preflight.mjs';
+
+test('waiting pins the first snapshot and advances only through observable states', async () => {
+  const states = ['REVIEW_REQUIRED', 'REVIEW_REQUIRED', 'PR_CI_PENDING', 'READY_CHECKS_PASSED'];
+  const notifications: string[] = [];
+  const seen: unknown[] = [];
+  let time = 0;
+  const final = await waitForPublish(7, { seconds: 100 }, {
+    inspect: async (number, pins) => {
+      seen.push({ number, ...pins });
+      return { code: states.shift()!, head, main: base, next: 'next' };
+    },
+    delay: async ms => { time += ms; },
+    now: () => time,
+    onChange: state => notifications.push(state.code),
+  });
+  assert.equal(final.code, 'READY_CHECKS_PASSED');
+  assert.equal(time, 45000);
+  assert.deepEqual(seen.slice(1), Array(3).fill({ number: 7, head, base }));
+  assert.deepEqual(notifications, ['REVIEW_REQUIRED', 'PR_CI_PENDING', 'READY_CHECKS_PASSED']);
+});
+
+test('waiting times out without changing state and never repeats a terminal action', async () => {
+  const waiting = { code: 'ENVIRONMENT_APPROVAL', head, main: base, next: 'review' };
+  const elapsed: number[] = [];
+  let time = 0;
+  const final = await waitForPublish(7, { seconds: 20, head, base }, {
+    inspect: async () => waiting,
+    delay: async ms => { elapsed.push(ms); time += ms; },
+    now: () => time,
+  });
+  assert.deepEqual(elapsed, [15000, 5000]);
+  assert.deepEqual(final, { ...waiting, waitTimedOut: true });
+  for (const code of ['DISPATCH_REQUIRED', 'HOLD_SUPERSEDED', 'VERIFY_RELEASE', 'VERIFIED']) {
+    const stopped = await waitForPublish(7, { seconds: 20, head, base }, {
+      inspect: async () => ({ ...waiting, code }),
+      delay: async () => assert.fail('Terminal state must not wait'),
+    });
+    assert.equal(stopped.code, code);
+  }
+});
 
 const repo = 'ozirix-dev/Reseptit';
 const head = 'a'.repeat(40);
@@ -34,6 +74,11 @@ function scenario() {
     main: base,
     checks: [{ id: 1, name: 'build', status: 'completed', conclusion: 'success', app: { id: 15368 } }],
     approvalCount: 0,
+    timeline: [] as { event: string; created_at: string }[],
+    ownerRuns: [] as { run_number: number; run_attempt: number; workflow_id: number; head_branch: string;
+      head_sha: string; head_repository: { full_name: string }; event: string; created_at: string;
+      status: string; conclusion: string }[],
+
     reviews: [] as { id: number; state: string; commit_id: string; user: { id: number } }[],
     ci: [run()], releases: [] as ReturnType<typeof run>[], occupying: [] as ReturnType<typeof run>[],
     steps: [] as Step[], pending: [] as { environment: { name: string } }[],
@@ -47,6 +92,8 @@ function scenario() {
     ];
     if (url.includes('/check-runs?')) return [{ check_runs: snapshot.checks }];
     if (url.includes('/reviews?')) return [snapshot.reviews];
+    if (url.includes('/timeline?')) return [snapshot.timeline];
+    if (url.includes('/chat-owner-metadata.yml/runs?')) return [{ workflow_runs: snapshot.ownerRuns }];
     if (url.includes('/pages.yml/runs?')) return [{ workflow_runs: snapshot.ci.map(item => ({ ...item, event: 'push' })) }];
     if (url.includes('/recipavo-production-manual.yml/runs?')) {
       const rows = url.includes('head_sha=') ? snapshot.releases :
@@ -89,7 +136,7 @@ test('distinguishes pending, failing and passing checks and exact-HEAD reviews',
   snapshot.checks = [passing];
   assert.equal((await inspectPublish(7, { get })).code, 'DRAFT_CHECKS_PASSED');
   snapshot.pr.draft = false;
-  assert.equal((await inspectPublish(7, { get })).code, 'READY_CHECKS_PASSED');
+  assert.equal((await inspectPublish(7, { get })).code, 'PR_CI_PENDING');
   snapshot.main = older;
   assert.equal((await inspectPublish(7, { get })).code, 'HOLD_PR_BASE');
 });
@@ -250,4 +297,36 @@ test('template binds to Git index bytes under LF and CRLF; edited content invali
   } finally {
     rmSync(root, { recursive: true, force: true });
   }
+});
+
+
+test('a Ready-triggered auxiliary check blocks reporting readiness until it passes', async () => {
+  const { snapshot, get } = scenario();
+  snapshot.pr.draft = false;
+  snapshot.checks.push({ id: 2, name: 'check', status: 'completed', conclusion: 'cancelled', app: { id: 15368 } });
+  snapshot.checks.push({ id: 3, name: 'check', status: 'in_progress', conclusion: '', app: { id: 15368 } });
+  assert.equal((await inspectPublish(7, { get, head, base })).code, 'PR_CI_PENDING');
+  Object.assign(snapshot.checks[2], { status: 'completed', conclusion: 'failure' });
+  assert.equal((await inspectPublish(7, { get, head, base })).code, 'HOLD_PR_CI');
+  Object.assign(snapshot.checks[2], { conclusion: 'success' });
+  assert.equal((await inspectPublish(7, { get, head, base })).code, 'PR_CI_PENDING');
+});
+
+
+test('old green metadata cannot authorize Ready while the new run is invisible', async () => {
+  const { snapshot, get } = scenario();
+  snapshot.pr.draft = false;
+  const old = {
+    run_number: 1, run_attempt: 1, workflow_id: 425934650, head_branch: snapshot.pr.head.ref,
+    head_sha: head, head_repository: { full_name: repo }, event: 'pull_request',
+    created_at: '2026-11-24T04:20:10Z', status: 'completed', conclusion: 'success',
+  };
+  snapshot.ownerRuns.push(old);
+  assert.equal((await inspectPublish(7, { get, head, base })).code, 'PR_CI_PENDING');
+  snapshot.timeline.push({ event: 'ready_for_review', created_at: '2026-11-24T04:20:24Z' });
+  assert.equal((await inspectPublish(7, { get, head, base })).code, 'PR_CI_PENDING');
+  snapshot.ownerRuns.push({ ...old, run_number: 2, created_at: '2026-11-24T04:20:27Z', status: 'queued' });
+  assert.equal((await inspectPublish(7, { get, head, base })).code, 'PR_CI_PENDING');
+  snapshot.ownerRuns[1].status = 'completed';
+  assert.equal((await inspectPublish(7, { get, head, base })).code, 'READY_CHECKS_PASSED');
 });

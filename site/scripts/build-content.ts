@@ -367,6 +367,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
   ));
   const images = await rebuildPublishedImages(
     imageSourceDir, path.join(siteDir, "public"), [...publishedImagePaths], undefined, homepageImagePaths,
+    path.join(siteDir, ".cache", "recipe-images"),
   );
   const byPath = new Map(images.images.map((image) => [image.path, image]));
   for (const recipe of recipes) {

@@ -1,4 +1,13 @@
 type GitHubRead = (endpoint: string, options?: { pages?: boolean }) => Promise<unknown>;
+type PublishState = { code: string; head: string; main: string; next: string; waitTimedOut?: boolean };
+
+export function waitForPublish(number: number, options: { seconds: number; head?: string; base?: string }, dependencies?: {
+  inspect?: (number: number, pins: { head?: string; base?: string }) => Promise<PublishState>;
+  delay?: (milliseconds: number) => Promise<unknown>;
+  now?: () => number;
+  period?: number;
+  onChange?: (state: PublishState) => void;
+}): Promise<PublishState>;
 
 export function assertOrigin(remote: string): void;
 export function readGitHub(endpoint: string, options?: {
@@ -12,7 +21,7 @@ export function inspectPublish(number: number, options?: {
   live?: () => Promise<string | null>;
   head?: string;
   base?: string;
-}): Promise<{ code: string; head: string }>;
+}): Promise<PublishState>;
 
 export function prepareForCurrentMain(base: string, head: string, options?: {
   get?: GitHubRead;

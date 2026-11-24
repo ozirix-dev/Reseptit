@@ -17,6 +17,10 @@ const liveProbeStep = 'Avoid redeploying a revision that is already live';
 const uploadStep = 'Deploy exact SHA to existing Cloudflare Pages production branch';
 const verifyStep = 'Verify production pages, SEO, assets, SHA and Functions GET 405';
 const active = ['requested', 'queued', 'pending', 'in_progress', 'waiting'];
+const watchable = new Set([
+  'REVIEW_REQUIRED', 'PR_CI_PENDING', 'MAIN_CI_PENDING', 'PRODUCTION_OCCUPIED',
+  'PRODUCTION_ACTIVE', 'ENVIRONMENT_APPROVAL', 'UPLOADING', 'VERIFY_PENDING', 'VERIFYING',
+]);
 
 export function assertOrigin(remote) {
   const canonical = remote.trim().replace(/\.git$/, '').toLowerCase();
@@ -167,7 +171,13 @@ export async function inspectPublish(number, { get = readGitHub, live = readLive
     get(apiRoot + '/commits/' + pr.head.sha + '/check-runs?per_page=100', { pages: true }),
     get(prEndpoint + '/reviews?per_page=100', { pages: true }),
   ]);
-  const required = summarizeChecks(rules, checkPages.flatMap(page => page.check_runs));
+  const latestChecks = new Map();
+  for (const check of checkPages.flatMap(page => page.check_runs).sort((a, b) => a.id - b.id)) {
+    latestChecks.set(JSON.stringify([check.name, check.app?.id]), check);
+  }
+  const checks = [...latestChecks.values()];
+  const required = summarizeChecks(rules, checks);
+  const observed = checks.map(check => ({ name: check.name, result: stepState(check) }));
   const decisions = new Map();
   for (const review of reviewPages.flat().sort((a, b) => a.id - b.id)) {
     if (review.user?.id && ['APPROVED', 'CHANGES_REQUESTED', 'DISMISSED'].includes(review.state)) {
@@ -178,7 +188,7 @@ export async function inspectPublish(number, { get = readGitHub, live = readLive
   const minimum = Math.max(0, ...rules.filter(rule => rule.type === 'pull_request')
     .map(rule => rule.parameters.required_approving_review_count ?? 0));
   const result = { repository: repo, pr: number, branch: pr.head.ref, head: pr.head.sha, main,
-    prBase: pr.base.sha, prState: pr.state, draft: pr.draft, merge: pr.merged ? pr.merge_commit_sha : null, required,
+    prBase: pr.base.sha, prState: pr.state, draft: pr.draft, merge: pr.merged ? pr.merge_commit_sha : null, required, observed,
     reviews: { required: minimum,
       currentApprovals: reviews.filter(review => review.state === 'APPROVED' &&
         review.commit_id === pr.head.sha && review.user.id !== pr.user?.id).length,
@@ -193,21 +203,45 @@ export async function inspectPublish(number, { get = readGitHub, live = readLive
   return { ...result, ...releaseState };
 }
 
+async function readyMetadata(pr, get) {
+  if (pr.draft) return null;
+  const timeline = await get(apiRoot + '/issues/' + pr.number + '/timeline?per_page=100', { pages: true });
+  const readyEvents = timeline.flat().filter(row => row.event === 'ready_for_review');
+  if (!readyEvents.length) return 'missing';
+  const threshold = Math.max(...readyEvents.map(row => Date.parse(row.created_at)));
+  const runs = await workflowRuns(get, 'chat-owner-metadata.yml', {
+    branch: pr.head.ref, head_sha: pr.head.sha, event: 'pull_request',
+  });
+  const fresh = latest(runs.filter(run => run.workflow_id === 425934650 &&
+    run.head_branch === pr.head.ref && run.head_sha === pr.head.sha &&
+    run.head_repository?.full_name?.toLowerCase() === repo.toLowerCase() &&
+    run.event === 'pull_request' && Date.parse(run.created_at) > threshold));
+  return fresh ? stepState(fresh) : 'missing';
+}
+
 async function nextReleaseState(pr, snapshot, { get, live }) {
-  const { main, merge, required, reviews } = snapshot;
+  const { main, merge, required, observed, reviews } = snapshot;
   if (!pr.merged) {
     if (pr.state !== 'open') return { code: 'HOLD_CLOSED', next: 'Inspect the closed PR.' };
     if (reviews.changesRequested || reviews.currentApprovals < reviews.required) {
       return { code: 'REVIEW_REQUIRED', next: 'Resolve the review decision on the exact HEAD.' };
     }
-    if (required.some(check => ['missing', 'queued', 'in_progress', 'requested', 'pending', 'waiting'].includes(check.result))) {
-      return { code: 'PR_CI_PENDING', next: 'Wait for required PR checks.' };
+    if ([...required, ...observed].some(check => check.result === 'missing' || active.includes(check.result))) {
+      return { code: 'PR_CI_PENDING', next: 'Wait for exact-HEAD PR checks, including checks triggered by Ready.' };
     }
-    if (required.some(check => check.result !== 'success')) {
+    if (required.some(check => check.result !== 'success') ||
+        observed.some(check => !['success', 'skipped'].includes(check.result))) {
       return { code: 'HOLD_PR_CI', next: 'Inspect the non-passing required check.' };
     }
     if (pr.base.sha !== main || pr.mergeable !== true || ['behind', 'dirty', 'blocked', 'unknown'].includes(pr.mergeable_state)) {
       return { code: 'HOLD_PR_BASE', next: 'Re-evaluate current base, mergeability and Repo Guard conditions.' };
+    }
+    const metadata = await readyMetadata(pr, get);
+    if (metadata === 'missing' || active.includes(metadata)) {
+      return { code: 'PR_CI_PENDING', next: 'Wait for the Ready event and a fresh metadata run on this HEAD.' };
+    }
+    if (metadata !== null && metadata !== 'success') {
+      return { code: 'HOLD_PR_CI', next: 'Inspect the fresh Ready metadata run.' };
     }
     return { code: pr.draft ? 'DRAFT_CHECKS_PASSED' : 'READY_CHECKS_PASSED',
       next: 'The integration owner can assess approvals and run the existing Repo Guard preflight.' };
@@ -253,13 +287,51 @@ async function readLiveSha() {
   }
 }
 
+export async function waitForPublish(number, options, {
+  inspect = inspectPublish, delay = wait, now = () => performance.now(),
+  period = 15000, onChange = () => {},
+} = {}) {
+  const { seconds, head, base } = options;
+  if (!Number.isInteger(seconds) || seconds < 1 || seconds > 1800) {
+    throw new Error('Wait requires 1 to 1800 seconds.');
+  }
+  const until = now() + seconds * 1000;
+  const pins = { head, base };
+  let previous;
+  for (;;) {
+    let state;
+    try {
+      state = await inspect(number, pins);
+    } catch (error) {
+      const remaining = until - now();
+      // A transition during the double read is safe to re-read with the same pins.
+      if (remaining <= 0 || !String(error?.message).startsWith('HOLD_CHANGED:')) throw error;
+      await delay(Math.min(period, remaining));
+      continue;
+    }
+    pins.head ??= state.head;
+    pins.base ??= state.main;
+    if (state.code !== previous) {
+      onChange(state);
+      previous = state.code;
+    }
+    if (!watchable.has(state.code)) return state;
+    const remaining = until - now();
+    if (remaining <= 0) return { ...state, waitTimedOut: true };
+    await delay(Math.min(period, remaining));
+  }
+}
+
 export async function cli(argv = process.argv.slice(2)) {
   const { values } = parseArgs({ args: argv, options: {
-    pr: { type: 'string' }, prepare: { type: 'boolean' }, template: { type: 'string' }, head: { type: 'string' }, base: { type: 'string' }, json: { type: 'boolean' },
+    pr: { type: 'string' }, prepare: { type: 'boolean' }, template: { type: 'string' }, head: { type: 'string' }, base: { type: 'string' }, json: { type: 'boolean' }, wait: { type: 'string' },
   }, allowPositionals: false });
   const modes = [values.pr, values.prepare, values.template].filter(value => value !== undefined);
   if (modes.length !== 1 || values.pr !== undefined && (!/^[1-9]\d*$/.test(values.pr) || !Number.isSafeInteger(Number(values.pr)))) {
-    throw new Error('Usage: recipe:publish -- --pr NUMBER | --prepare --base SHA --head SHA | --template PATH');
+    throw new Error('Usage: recipe:publish -- --pr NUMBER [--wait SECONDS] | --prepare --base SHA --head SHA | --template PATH');
+  }
+  if (values.wait !== undefined && (values.pr === undefined || !/^[1-9]\d{0,3}$/.test(values.wait) || Number(values.wait) > 1800)) {
+    throw new Error('--wait requires --pr and 1 to 1800 seconds.');
   }
   for (const pin of [values.head, values.base]) {
     if (pin !== undefined && !shaPattern.test(pin)) throw new Error('Expected a full lowercase Git SHA.');
@@ -277,10 +349,13 @@ export async function cli(argv = process.argv.slice(2)) {
     if (plan.code.startsWith('HOLD_')) process.exitCode = 1;
     return;
   }
-  const result = await inspectPublish(Number(values.pr), values);
+  const number = Number(values.pr);
+  const result = values.wait === undefined ? await inspectPublish(number, values) : await waitForPublish(number, {
+    ...values, seconds: Number(values.wait),
+  }, { onChange: state => console.error(state.code + ' â€” ' + state.next) });
   if (values.json) console.log(JSON.stringify(result, null, 2));
   else {
-    console.log(result.repository + ' #' + result.pr + ' — ' + result.code);
+    console.log(result.repository + ' #' + result.pr + ' â€” ' + result.code);
     console.log('HEAD ' + result.head + ' | main ' + result.main);
     console.log('PR: ' + result.prState + (result.draft ? ' (Draft)' : '') +
       ' | approvals on HEAD: ' + result.reviews.currentApprovals + '/' + result.reviews.required +
@@ -291,6 +366,7 @@ export async function cli(argv = process.argv.slice(2)) {
     }
     if (result.upload) console.log('Upload ' + result.upload + ' | verification ' + result.verification + ' | live ' + (result.liveSha ?? 'unknown'));
     console.log(result.next);
+    if (result.waitTimedOut) console.log('Monitoring limit reached. Resume with the same PR and SHA pins.');
   }
   if (result.code.startsWith('HOLD_')) process.exitCode = 1;
 }

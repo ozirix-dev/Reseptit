@@ -308,12 +308,21 @@ test("a failed final rename restores the previous image publication", async (t) 
     let injected = false;
     const stub = t.mock.method(fs, "rename", async (from: Parameters<typeof fs.rename>[0], to: Parameters<typeof fs.rename>[1]) => {
       if (path.basename(String(from)).startsWith(".kuvat-staging-") && String(to) === path.join(publicDir, "kuvat")) {
+        assert.equal(path.dirname(String(from)), path.join(root, ".cache", "recipe-images"));
+        assert.deepEqual(await readdir(publicDir), []);
         injected = true; throw Error("injected final rename failure");
       }
       return rename(from, to);
     });
     syncBuiltinESMExports();
-    try { await assert.rejects(rebuildPublishedImages(source, publicDir, []), /injected final rename failure/); }
+    const cache = path.join(root, ".cache", "recipe-images");
+    try {
+      await assert.rejects(
+        rebuildPublishedImages(source, publicDir, [], undefined, new Set(), cache),
+        /injected final rename failure/,
+      );
+      assert.deepEqual(await readdir(cache), []);
+    }
     finally { stub.mock.restore(); syncBuiltinESMExports(); }
     assert.equal(injected, true);
     assert.deepEqual(await readFile(path.join(publicDir, "kuvat/_variants/manifest.json")), oldManifest);

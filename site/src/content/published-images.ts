@@ -47,6 +47,7 @@ export async function rebuildPublishedImages(
   relativePaths: string[],
   workers = imageWorkers,
   homepageImagePaths: ReadonlySet<string> = new Set(),
+  stagingCacheDir?: string,
 ): Promise<ImageManifest> {
   if (!Number.isInteger(workers) || workers < 1 || workers > 4) throw new Error("Image workers must be between 1 and 4.");
   const sourceRoot = path.resolve(sourceDir);
@@ -72,9 +73,24 @@ export async function rebuildPublishedImages(
   if (outputStatus && !outputStatus.isDirectory()) throw new Error("Generated image output must be a directory.");
   if (outputStatus) assertInside(publicRootReal, await realpath(outputDir), "Generated image directory");
 
+  let scratchRoot = publicRootReal;
+  if (stagingCacheDir) {
+    const requested = path.resolve(stagingCacheDir);
+    const workspace = path.dirname(publicRootReal);
+    assertInside(workspace, requested, "Image staging cache");
+    if (requested === workspace || requested === publicRootReal || requested.startsWith(`${publicRootReal}${path.sep}`))
+      throw new Error("Image staging cache must be outside the public directory.");
+    await mkdir(requested, { recursive: true });
+    scratchRoot = await realpath(requested);
+    if (scratchRoot !== requested || (await stat(scratchRoot)).dev !== (await stat(publicRootReal)).dev)
+      throw new Error("Image staging cache must be a real directory on the publication filesystem.");
+    if (scratchRoot === sourceRootReal || scratchRoot.startsWith(`${sourceRootReal}${path.sep}`) ||
+        sourceRootReal.startsWith(`${scratchRoot}${path.sep}`))
+      throw new Error("Image staging cache must not overlap source images.");
+  }
   const token = randomUUID();
-  const stageDir = path.join(publicRoot, `.kuvat-staging-${token}`);
-  const backupDir = path.join(publicRoot, `.kuvat-backup-${token}`);
+  const stageDir = path.join(scratchRoot, `.kuvat-staging-${token}`);
+  const backupDir = path.join(scratchRoot, `.kuvat-backup-${token}`);
   const uniquePaths = [...new Set(relativePaths)].sort();
   // Existing output is only a verified reuse cache; absent/corrupt cache is rebuilt.
   const cached = new Map<string, ImageVariant>();
@@ -90,7 +106,7 @@ export async function rebuildPublishedImages(
   let oldOutputMoved = false;
   try {
     const stageReal = await realpath(stageDir);
-    assertInside(publicRootReal, stageReal, "Image staging directory");
+    assertInside(scratchRoot, stageReal, "Image staging directory");
     const generated = new Map<string, Promise<ImageVariant>>();
     const images = await boundedMap(uniquePaths, async (relativePath): Promise<PublishedImage> => {
       if (!webpPathPattern.test(relativePath) || relativePath.startsWith("/") || relativePath.includes("\\") || relativePath.split("/").includes("..")) {
