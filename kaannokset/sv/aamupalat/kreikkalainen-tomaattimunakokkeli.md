@@ -4,7 +4,7 @@ recipe_id: kreikkalainen-tomaattimunakokkeli
 url_slug: grekisk-aggrora-med-tomat-och-feta
 category: aamupala
 language: sv
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/aamupalat/kreikkalainen-tomaattimunakokkeli.md
 translation_of: kreikkalainen-tomaattimunakokkeli

@@ -4,7 +4,7 @@ recipe_id: kreikkalainen-tomaattimunakokkeli
 url_slug: khai-khon-makhuea-thet-feta-baep-krik
 category: aamupala
 language: th
-status: draft
+status: published
 source_language: fi
 source_recipe: reseptit/aamupalat/kreikkalainen-tomaattimunakokkeli.md
 translation_of: kreikkalainen-tomaattimunakokkeli
