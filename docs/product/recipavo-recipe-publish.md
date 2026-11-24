@@ -39,7 +39,11 @@ voidaan tehdä. Tämän lukutilan odotus ei tarvitse työvarausta.
 
 ## Yksi ehdokas valmiille kielille ja resepteille
 
-Samaan PR:ään voi koota hyväksytyn FI-lähteen ja kaikki julkaisuvalmiit EN/SV/TH-versiot, kun olemassa olevat lähde-, kielipari-, ravinto-, GK- ja kuvatarkistukset läpäisevät. FI voi edetä myös yksin. Jätä keskeneräiset tiedostot julkaisuehdokkaan ulkopuolelle. Koe ensin pienellä erällä.
+Uudet reseptit julkaistaan oletuksena erissä. Kokoa usean reseptin hyväksytyt FI-lähteet ja kaikki niiden julkaisuvalmiit EN/SV/TH-versiot yhteen PR:ään ja yhteen suunniteltuun tuotantoajoon. Mukaan otetaan vain olemassa olevat lähde-, kielipari-, ravinto-, GK- ja kuvatarkistukset läpäisseet tiedostot. Jätä keskeneräiset reseptit ja kieliversiot julkaisuehdokkaan ulkopuolelle.
+
+Yhden reseptin julkaisu on perusteltu erikoistapaus. Kirjaa PR:ään, miksi resepti julkaistaan erikseen. Tarkista jokainen resepti erikseen myös eräjulkaisussa ja noudata samoja katselmointi-, CI- ja tuotantoportteja.
+
+[Pilotti 4:n mittaus ja tuotantovarmennus](https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7135503374).
 
 ~~~sh
 npm run --silent recipe:publish -- --prepare --base APPROVED_BASE_SHA --head CANDIDATE_SHA
