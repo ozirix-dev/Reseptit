@@ -3,3 +3,5 @@ export function validateReview(
   source: string,
   review: unknown,
 ): string[];
+
+export function hashContent(value: string | Uint8Array): string;
