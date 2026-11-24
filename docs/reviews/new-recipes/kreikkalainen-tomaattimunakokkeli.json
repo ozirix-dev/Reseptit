@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kreikkalainen-tomaattimunakokkeli",
+  "source_path": "reseptit/aamupalat/kreikkalainen-tomaattimunakokkeli.md",
+  "source_sha256": "f195abdb0852f288ee2215dcc01dead9ca1f4f889595a739b29f7092f22199b9",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://mail.kyknoscanning.com/en/recipes/strapatsada/",
+      "https://www.fda.gov/food/buy-store-serve-safe-food/what-you-need-know-about-egg-safety"
+    ]
+  },
+  "nutrition_evidence": "docs/reviews/new-recipes/kreikkalainen-tomaattimunakokkeli.json#nutrition_reference",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Verrattu mainiin 33dcc7395d8ee7a8de26b89aea05119914658f36 ja avoimiin resepti-PR:iin. Kiinalaisten tomaatti-munaruokien valmistustapa ja ainekset poikkeavat."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "KYKNOSin ohje. Sipulin, kuorettoman munan, öljyn, pyreen ja fetan massat vakioitu. Valinnainen yrttikoriste jätetty pois."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Keitä tomaatti sakeaksi, kypsennä munat sekoittaen ja lisää feta lopuksi. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "FDA: munakokkeli täysin hyytyneeksi, tähteet kylmään kahdessa tunnissa. Allergeenit ovat kananmuna ja maito."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "Neljä annosta ja yhteensä 35 minuuttia lähteen arvion mukaan."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Fineli 20 ja AFCD 3 grammapohjaisesti. Koko öljymäärä mukana, arvot pyöristetty yhteen desimaaliin."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "University of Sydneyn GI-hakemistoon kohdennettu haku (strapatsada, kagianas) ei tunnistanut soveltuvaa mitattua GI:tä. Imeytyvää hiilihydraattia annoksessa 5,7225 g. GK määrittämätön."
+    }
+  },
+  "nutrition_reference": {
+    "sources": {
+      "Fineli": {
+        "release": 20,
+        "url": "https://fineli.fi/fineli/fi/avoin-data",
+        "file": "docs/nutrition/fineli-release-20-reference.json"
+      },
+      "AFCD": {
+        "release": 3,
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "file": "docs/nutrition/afcd-release-3-reference.json"
+      }
+    },
+    "reference_rows": [
+      {
+        "database": "Fineli",
+        "source_id": "398",
+        "grams": 400,
+        "match": "Tomaattimurska",
+        "per100g": {
+          "available_carbohydrate": 3.45,
+          "fibre": 0.4,
+          "protein": 0.55,
+          "fat": 0.2
+        }
+      },
+      {
+        "database": "AFCD",
+        "source_id": "F009206",
+        "grams": 30,
+        "match": "Tomato paste, no added salt",
+        "per100g": {
+          "available_carbohydrate": 10.1,
+          "fibre": 3.6,
+          "protein": 3.4,
+          "fat": 0.5
+        }
+      },
+      {
+        "database": "Fineli",
+        "source_id": "335",
+        "grams": 100,
+        "match": "Keltasipuli, kuorittuna",
+        "per100g": {
+          "available_carbohydrate": 4.8,
+          "fibre": 1.2,
+          "protein": 1.25,
+          "fat": 0.1
+        }
+      },
+      {
+        "database": "Fineli",
+        "source_id": "858",
+        "grams": 300,
+        "match": "Kananmuna, kuoreton, raaka",
+        "per100g": {
+          "available_carbohydrate": 0.3,
+          "fibre": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      },
+      {
+        "database": "Fineli",
+        "source_id": "536",
+        "grams": 15,
+        "match": "Oliiviöljy",
+        "per100g": {
+          "available_carbohydrate": 0,
+          "fibre": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      },
+      {
+        "database": "AFCD",
+        "source_id": "F002452",
+        "grams": 90,
+        "match": "Cheese, fetta",
+        "per100g": {
+          "available_carbohydrate": 0.4,
+          "fibre": 0,
+          "protein": 16.6,
+          "fat": 20.6
+        }
+      }
+    ],
+    "servings": 4,
+    "method": "Kerro kunkin raaka-aineen per 100 g -arvo sen massalla ja jaa sadalla. Summaa ja jaa neljällä. Kokonaishiilihydraatti = imeytyvä hiilihydraatti + kuitu. Pieni valinnainen suola ja pippuri sekä lisukkeet rajattu pois.",
+    "per_serving_g": {
+      "available_carbohydrate": 5.7225,
+      "fibre": 0.97,
+      "total_carbohydrate": 6.6925,
+      "protein": 14.31,
+      "fat": 15.5775
+    }
+  },
+  "glycemic_evidence": {
+    "source": "https://glycemicindex.com/gi-search/",
+    "checked_on": "2026-11-24",
+    "available_carbohydrate_per_serving_g": 5.7225,
+    "glycemic_index": null,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/aamupalat/kreikkalainen-tomaattimunakokkeli.webp",
+    "sha256": "b900a7b4032f447b36e2257ae4910e8b06c5e62502864e46da6c8caf007f67c2",
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva, tarkistettu silmämääräisesti."
+  },
+  "proposed_publication": {
+    "review_state": "PENDING",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/aamupalat/kreikkalainen-tomaattimunakokkeli.md",
+        "language": "fi",
+        "slug": "kreikkalainen-tomaattimunakokkeli",
+        "sha256": "2a8e2562cd728a028c01232f280df7d146dacec9e94fe8e24f534599867b4a40"
+      },
+      {
+        "path": "kaannokset/en/aamupalat/kreikkalainen-tomaattimunakokkeli.md",
+        "language": "en",
+        "slug": "greek-tomato-feta-scrambled-eggs",
+        "sha256": "f682df30cb6ac66a1bc6537b9374b476bb402efe21a9311bfd9442102ed3c540"
+      },
+      {
+        "path": "kaannokset/sv/aamupalat/kreikkalainen-tomaattimunakokkeli.md",
+        "language": "sv",
+        "slug": "grekisk-aggrora-med-tomat-och-feta",
+        "sha256": "ee015c3d542c8d40936b1f0acf61b6abd0a65bbff938ce076f0549c6f306f123"
+      },
+      {
+        "path": "kaannokset/th/aamupalat/kreikkalainen-tomaattimunakokkeli.md",
+        "language": "th",
+        "slug": "khai-khon-makhuea-thet-feta-baep-krik",
+        "sha256": "302e73cc4aff9ec62cfa570110fce247b094219b7c239f9e8e1e0ec36ab405da"
+      }
+    ],
+    "transform": "Neljä julkaisutilaa ja FI:n kolme translation_status-arvoa vaihtuvat draft-arvosta published-arvoon."
+  }
+}
