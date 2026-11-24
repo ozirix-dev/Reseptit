@@ -13,6 +13,21 @@ npm run recipe:publish -- --pr 971 --json
 
 Jos upload onnistui mutta jälkivarmennus epäonnistui, käytä nykyistä `verify:production`-komentoa täsmälleen julkaistulla artefaktilla ja varmista julkaisun muu näyttö. Etusivun SHA auttaa tunnistamaan revision. Täysi varmennus edellyttää myös oikeaa sisältöä, kuvia, reittejä ja SEO-metadataa. Vanhan julkaisun onnistunut varmennus näkyy tilassa `VERIFIED_PREVIOUSLY`, jos sen revisiota ei vahvisteta nykyiseksi. Suojattu tuotantopäätös säilyy nykyisessä työnkulussa.
 
+## Rajattu odotus
+
+`recipe:publish --pr 975 --wait 600` seuraa GitHubin tilaa yhdessä prosessissa.
+Ensimmäinen lukukerta lukitsee PR-HEADin ja mainin, ellei niitä ole annettu
+valmiiksi. Aikaraja on 1–1800 sekuntia ja tilapäivitys näkyy vain tilan
+muuttuessa. `--json` säilyttää yhden lopputuloksen stdoutissa. Prosessi
+pysähtyy, kun seuraava vaihe edellyttää erillistä valtuutettua operaatiota,
+tarkistus epäonnistuu tai aikaraja täyttyy. Aikarajalla JSON sisältää
+`waitTimedOut: true`. Uusi ajo lukee tilanteen GitHubista.
+
+Ready-tapahtuma voi käynnistää omistajametadata-ajon samalle HEADille.
+Odotus huomioi myös GitHubin näyttämät keskeneräiset lisätarkistukset.
+Voimassa oleva Repo Guard -esitarkastus ratkaisee, milloin Ready ja merge
+voidaan tehdä. Tämän lukutilan odotus ei tarvitse työvarausta.
+
 ## Kanoninen tarkiste ennen pushia
 
 1. Valmistele lopullinen FI-markdown ja haluttu kielirekisteri. Valmistele indeksi nykyistä guarded commit -työnkulkua varten.

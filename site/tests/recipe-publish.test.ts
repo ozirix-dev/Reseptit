@@ -4,9 +4,49 @@ import { mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'nod
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
-import { assertOrigin, inspectPublish, prepareForCurrentMain, readGitHub } from '../scripts/recipe-publish.mjs';
+import { assertOrigin, inspectPublish, prepareForCurrentMain, readGitHub, waitForPublish } from '../scripts/recipe-publish.mjs';
 import { collectCandidates, templateFromIndex } from '../scripts/recipe-publish-prepare.mjs';
 import { hashContent, validateReview } from '../scripts/new-recipe-preflight.mjs';
+
+test('waiting pins the first snapshot and advances only through observable states', async () => {
+  const states = ['REVIEW_REQUIRED', 'REVIEW_REQUIRED', 'PR_CI_PENDING', 'READY_CHECKS_PASSED'];
+  const notifications: string[] = [];
+  const seen: unknown[] = [];
+  let time = 0;
+  const final = await waitForPublish(7, { seconds: 100 }, {
+    inspect: async (number, pins) => {
+      seen.push({ number, ...pins });
+      return { code: states.shift()!, head, main: base, next: 'next' };
+    },
+    delay: async ms => { time += ms; },
+    now: () => time,
+    onChange: state => notifications.push(state.code),
+  });
+  assert.equal(final.code, 'READY_CHECKS_PASSED');
+  assert.equal(time, 45000);
+  assert.deepEqual(seen.slice(1), Array(3).fill({ number: 7, head, base }));
+  assert.deepEqual(notifications, ['REVIEW_REQUIRED', 'PR_CI_PENDING', 'READY_CHECKS_PASSED']);
+});
+
+test('waiting times out without changing state and never repeats a terminal action', async () => {
+  const waiting = { code: 'ENVIRONMENT_APPROVAL', head, main: base, next: 'review' };
+  const elapsed: number[] = [];
+  let time = 0;
+  const final = await waitForPublish(7, { seconds: 20, head, base }, {
+    inspect: async () => waiting,
+    delay: async ms => { elapsed.push(ms); time += ms; },
+    now: () => time,
+  });
+  assert.deepEqual(elapsed, [15000, 5000]);
+  assert.deepEqual(final, { ...waiting, waitTimedOut: true });
+  for (const code of ['DISPATCH_REQUIRED', 'HOLD_SUPERSEDED', 'VERIFY_RELEASE', 'VERIFIED']) {
+    const stopped = await waitForPublish(7, { seconds: 20, head, base }, {
+      inspect: async () => ({ ...waiting, code }),
+      delay: async () => assert.fail('Terminal state must not wait'),
+    });
+    assert.equal(stopped.code, code);
+  }
+});
 
 const repo = 'ozirix-dev/Reseptit';
 const head = 'a'.repeat(40);
@@ -250,4 +290,17 @@ test('template binds to Git index bytes under LF and CRLF; edited content invali
   } finally {
     rmSync(root, { recursive: true, force: true });
   }
+});
+
+
+test('a Ready-triggered auxiliary check blocks reporting readiness until it passes', async () => {
+  const { snapshot, get } = scenario();
+  snapshot.pr.draft = false;
+  snapshot.checks.push({ id: 2, name: 'check', status: 'completed', conclusion: 'cancelled', app: { id: 15368 } });
+  snapshot.checks.push({ id: 3, name: 'check', status: 'in_progress', conclusion: '', app: { id: 15368 } });
+  assert.equal((await inspectPublish(7, { get, head, base })).code, 'PR_CI_PENDING');
+  Object.assign(snapshot.checks[2], { status: 'completed', conclusion: 'failure' });
+  assert.equal((await inspectPublish(7, { get, head, base })).code, 'HOLD_PR_CI');
+  Object.assign(snapshot.checks[2], { conclusion: 'success' });
+  assert.equal((await inspectPublish(7, { get, head, base })).code, 'READY_CHECKS_PASSED');
 });
