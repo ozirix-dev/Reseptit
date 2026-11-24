@@ -11,6 +11,7 @@ import test, { after, before } from "node:test";
 import sharp from "sharp";
 import { createHash } from "node:crypto";
 import { rebuildPublishedImages } from "../src/content/published-images";
+import { contentForRoute, localeIndexes } from "../src/content/route-data";
 import type { SiteContentIndex } from "../src/types/content";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
@@ -260,9 +261,16 @@ test("all published source bytes and responsive dimensions match the generated m
     assert.equal(createHash("sha256").update(avifBytes).digest("hex"), avif.sha256);
   }
   assert.deepEqual(heroAvifSources, ["paaruoat/kermainen-lohipata.webp"]);
-  assert.deepEqual(homeAvifSources.sort(), [
+  const homepageImagePaths = new Set(Object.values(localeIndexes).flatMap((route) =>
+    contentForRoute(siteContent.recipes, route, true).recipes.flatMap(({ image }) =>
+      image ? [image.src.split("/kuvat/")[1]] : []),
+  ));
+  const reviewedHomepageAvifPaths = [
     "leivonnaiset/avokado-perunasampylat.webp", "paaruoat/aloo-paratha.webp", "paaruoat/caponata.webp",
-  ]);
+  ];
+  assert.deepEqual(homeAvifSources.sort(), reviewedHomepageAvifPaths.filter((imagePath) =>
+    homepageImagePaths.has(imagePath),
+  ));
   assert.equal((await readdir(path.join(productionSite, "dist/kuvat/_variants"))).length, unique.size + 1);
 });
 
