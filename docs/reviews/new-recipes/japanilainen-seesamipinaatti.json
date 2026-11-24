@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "recipe_id": "japanilainen-seesamipinaatti",
+  "source_path": "reseptit/alkuruoat/japanilainen-seesamipinaatti.md",
+  "source_sha256": "e575f02946b86f6cf6b40a11093b4af0c336a406271bfc33cc25dd4e02d9e3ce",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.justonecookbook.com/spinach-with-sesame-sauce/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/japanilainen-seesamipinaatti.json",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 20 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Ryöpätyn pinaatin ja seesamidressingin tälle annokselle soveltuva GI-lähde puuttuu."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 2.65,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/japanilainen-seesamipinaatti.webp",
+    "bytes": 217076,
+    "sha256": "719df1f28944b239d2db333b742956df33b2d541dbb06059e90b7fdb56f7366e",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "PENDING",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/japanilainen-seesamipinaatti.md",
+        "language": "fi",
+        "slug": "japanilainen-seesamipinaatti",
+        "sha256": "2dcbf04101db493649e25c1816948429d39db10b840a6eeff85e535cd09c7727",
+        "semantic_sha256": "b2b521b9a0367d18eaa203ec44b6c9689a3892b152987fa7e121f08916e8d317"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/japanilainen-seesamipinaatti.md",
+        "language": "en",
+        "slug": "japanese-sesame-spinach-gomaae",
+        "sha256": "5516c4451d0c0fa1b9febf9ae313149a46d9b791a0a01834e775ef83a91bea56",
+        "semantic_sha256": "0bfa03f5feb46b9dc53785c624162fd95d30f942fef04728affad5e0b9050c8d"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/japanilainen-seesamipinaatti.md",
+        "language": "sv",
+        "slug": "japansk-sesamspenat-gomaae",
+        "sha256": "826aab20b46c5a29a5c5c9bb77b9aad4c7ce6ca4ed0b0bc71ca62a94fd898cfd",
+        "semantic_sha256": "8820679e2412fa414a9aecd527b265274979ffda8e796a37a5ea4777b77bf0ab"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/japanilainen-seesamipinaatti.md",
+        "language": "th",
+        "slug": "phak-khom-khluk-nga-gomaae",
+        "sha256": "940d0f97adde615e31a020fffd334f00c96cb6c64653b1b260a829d16e3a5e67",
+        "semantic_sha256": "ae74cde521e6f881ea91ff0172ea6f0c466f5edf4dd3671132ca0dd78157e1d8"
+      }
+    ],
+    "nutrition_sha256": "b68eba74ba28c46f79517ddd1ac5db994013896bce5f84a188de7dea6776e3a7",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
+  },
+  "proposed_nutrition_calculation": {
+    "recipeId": "japanilainen-seesamipinaatti",
+    "sourceHash": "d9d590fd4b4c546f905951fe43a5ffb4f05a4d8382d843dcd09d4dc2f1eac339",
+    "calculatedAt": "2026-11-24",
+    "batchId": "batch-33307",
+    "servings": 4,
+    "scope": "Yksi reseptin 4 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+    "reviewerStatus": "AUTOMATED ONLY",
+    "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+    "ingredients": [
+      {
+        "item": "tuoretta pinaattia",
+        "amount": 300,
+        "unit": "g",
+        "state": "tuoretta pinaattia",
+        "record": {
+          "id": "fineli-33456-release-20",
+          "name": "PINAATTI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/33456",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "tuoretta pinaattia",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0.25,
+            "FIBT": 1.3,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0.25,
+            "fibre": 1.3,
+            "polyols": 0,
+            "protein": 2.1,
+            "fat": 0.56
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tuoretta pinaattia.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "kuorittuja seesaminsiemeniä",
+        "amount": 30,
+        "unit": "g",
+        "state": "kuorittuja seesaminsiemeniä",
+        "record": {
+          "id": "fineli-34245-release-20",
+          "name": "SEESAMINSIEMEN, VALKOINEN, KOKONAINEN, KUORITTU",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34245",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "kuorittuja seesaminsiemeniä",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 1.171,
+            "FIBT": 11.3,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 1.171,
+            "fibre": 11.3,
+            "polyols": 0,
+            "protein": 24.6,
+            "fat": 59.7
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kuorittuja seesaminsiemeniä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "japanilaista soijakastiketta",
+        "amount": 16,
+        "unit": "g",
+        "state": "japanilaista soijakastiketta",
+        "record": {
+          "id": "fineli-31-release-20",
+          "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/31",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "japanilaista soijakastiketta",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 9.5,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 9.5,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 5.17,
+            "fat": 0.08
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: japanilaista soijakastiketta.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "sokeria",
+        "amount": 8,
+        "unit": "g",
+        "state": "sokeria",
+        "record": {
+          "id": "fineli-1-release-20",
+          "name": "SOKERI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "sokeria",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 99.9,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 99.9,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: sokeria.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      }
+    ]
+  }
+}

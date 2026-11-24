@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "recipe_id": "japanilainen-sunomono",
+  "source_path": "reseptit/alkuruoat/japanilainen-sunomono.md",
+  "source_sha256": "d3a77e9d8f17ce21fa1230e1aec08a7767cc119928afa45cd44fab90ffc9e8f2",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.justonecookbook.com/sunomono-with-cucumber-and-wakame/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/japanilainen-sunomono.json",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 25 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Kuivatulle wakamelle ei löytynyt täydellistä, valmistusmuodon mukaista makroriviä."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Wakamen tilaa vastaava ravintorivi ja yhdistelmän soveltuva mitattu GI puuttuvat."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": null,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/japanilainen-sunomono.webp",
+    "bytes": 164642,
+    "sha256": "0d39fcb1cbd1d08ca160d8053657451a59d1e7aaba319cc691944f6c04f2922d",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "PENDING",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/japanilainen-sunomono.md",
+        "language": "fi",
+        "slug": "japanilainen-sunomono",
+        "sha256": "135ad8cbaac8b7caaad514f92f36e06c7df8c533353407ca19521d1545054d3f",
+        "semantic_sha256": "b2a63501f3ada901afe9534e81389705d8c3639235907cb6f06db4e19210fba8"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/japanilainen-sunomono.md",
+        "language": "en",
+        "slug": "japanese-cucumber-wakame-sunomono",
+        "sha256": "5206e3d7407b44c8012628a0667c0a488d658bc75b8e1825c52284d35406a620",
+        "semantic_sha256": "eb078b2d4441b4f26839dec41130eb1602c1a93f8126f29cda051afd21c96112"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/japanilainen-sunomono.md",
+        "language": "sv",
+        "slug": "japansk-gurk-wakamesallad-sunomono",
+        "sha256": "4e3ea633e6bb0394ecd7d349ee03c835ca9fcd2c77da50e50cecc92dc4147a9d",
+        "semantic_sha256": "3d31000513594359c64d338f470932261e0199012a983daed0b581323094c733"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/japanilainen-sunomono.md",
+        "language": "th",
+        "slug": "salat-taengkwa-wakame-sunomono",
+        "sha256": "ffa8b6b78737fab00e34b0e3f8181c89b233578ee540cdf0e511fb5092d83523",
+        "semantic_sha256": "c8acc63810562772ba2d767bc8e8c7564c10a1b2669ce903aa9b4bf21d4ba2e2"
+      }
+    ],
+    "nutrition_sha256": "ab3919dc19dad8715f88f0499c60b40d758f77d1fd4ae2208f376ac56e2dee14",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
+  },
+  "proposed_nutrition_calculation": {
+    "recipeId": "japanilainen-sunomono",
+    "sourceHash": "65035da9e751d6d73f598e31e9b6d4004e7b0774b7696bed55cef373d4286c02",
+    "calculatedAt": "2026-11-24",
+    "batchId": "batch-33307",
+    "servings": 4,
+    "scope": "Yksi reseptin 4 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+    "reviewerStatus": "AUTOMATED ONLY",
+    "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+    "ingredients": [
+      {
+        "item": "raakaa kurkkua",
+        "amount": 320,
+        "unit": "g",
+        "state": "raakaa kurkkua",
+        "record": {
+          "id": "fineli-346-release-20",
+          "name": "KURKKU",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/346",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "raakaa kurkkua",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 1.4,
+            "FIBT": 1.1,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 1.4,
+            "fibre": 1.1,
+            "polyols": 0,
+            "protein": 0.65,
+            "fat": 0.1
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: raakaa kurkkua.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "kuivattua wakame-merilevää",
+        "amount": 4,
+        "unit": "g",
+        "state": "kuivattua wakame-merilevää",
+        "matchEvidence": "Kuivatulle wakamelle ei löytynyt täydellistä, valmistusmuodon mukaista makroriviä.",
+        "excludedReason": "Kuivatulle wakamelle ei löytynyt täydellistä, valmistusmuodon mukaista makroriviä."
+      },
+      {
+        "item": "maustamatonta riisietikkaa",
+        "amount": 45,
+        "unit": "g",
+        "state": "maustamatonta riisietikkaa",
+        "record": {
+          "id": "afcd-F009498-release-3",
+          "name": "Vinegar (except balsamic vinegar)",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "maustamatonta riisietikkaa",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 0,
+            "polyols": 0,
+            "fibre": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        },
+        "matchEvidence": "Maustamaton, sokeriton riisietikka. Tavallisen etikan koostumusvastine.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "sokeria",
+        "amount": 12,
+        "unit": "g",
+        "state": "sokeria",
+        "record": {
+          "id": "fineli-1-release-20",
+          "name": "SOKERI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "sokeria",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 99.9,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 99.9,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: sokeria.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "suolaa",
+        "amount": 3,
+        "unit": "g",
+        "state": "suolaa",
+        "matchEvidence": "Ruokasuola.",
+        "excludedReason": "Natriumkloridi ei sisällä tässä laskettavia makroravintoaineita.",
+        "omissionImpactUpperBoundPerServing": {
+          "kcal": 0,
+          "netCarbohydrate": 0,
+          "totalCarbohydrate": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "omissionImpactEvidence": "Natrium ei kuulu neljään makrokenttään."
+      }
+    ],
+    "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+    "withholdingReason": "Kuivatulle wakamelle ei löytynyt täydellistä, valmistusmuodon mukaista makroriviä."
+  }
+}

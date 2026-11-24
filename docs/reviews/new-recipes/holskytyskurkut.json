@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "recipe_id": "holskytyskurkut",
+  "source_path": "reseptit/alkuruoat/holskytyskurkut.md",
+  "source_sha256": "43e91a70154f5a1bf4431f9c7f8ebed9bb676ee0cb3f4fdc466fd181e4a14f5d",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/holskytyskurkut/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/holskytyskurkut.json",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 20 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Pääosa imeytyvästä hiilihydraatista tulee sokerista ja tuoreesta kurkusta. Valutuksen ja annokseen päätyvän etikkaliemen vaikutusta ei ole mitattu."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 4.63,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/holskytyskurkut.webp",
+    "bytes": 176432,
+    "sha256": "2137fb8eb47b088a5c0186a665c5cc1d96d5dd4c85dc505dc2f618f6cfb00dd8",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "PENDING",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/holskytyskurkut.md",
+        "language": "fi",
+        "slug": "holskytyskurkut",
+        "sha256": "af8a704bff11877c04ac753ea3b45cedfd2a5551929057e9e4e254fef2301365",
+        "semantic_sha256": "807eb0e48fe504ca59ddbfc822b0a0cc76129670d366a1dc4ade76917c7b098d"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/holskytyskurkut.md",
+        "language": "en",
+        "slug": "finnish-shaken-dill-cucumbers",
+        "sha256": "fcff134f9ac8569b74b9049b3e8549031e55b6ac7d72d08fa8a8146bb4a5df15",
+        "semantic_sha256": "42ef7b9d5e29f33ef2efc4e82b8f2972e78b921ab3ddedaa5808f461b1d54d1b"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/holskytyskurkut.md",
+        "language": "sv",
+        "slug": "finsk-skakad-dillgurka",
+        "sha256": "874b52c2d8384434fb0211a898b2a9dbee5a27c1fdcdfb95d96356e43af76cd2",
+        "semantic_sha256": "611461f32d8811be4d102a6463b03f371fc2546ad476e0bc23a64afc6597b23d"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/holskytyskurkut.md",
+        "language": "th",
+        "slug": "taengkwa-khayao-dill-finlaen",
+        "sha256": "1424d4d70ad852480b457bbe72aafcea6b60b7c2f43675d4d276f4f55950cd8a",
+        "semantic_sha256": "ce1b0421e0a52e2d8b7d7a7e1abc9e456aebc1d0908277143bee29a279a5d9d0"
+      }
+    ],
+    "nutrition_sha256": "794400066d1be65d9d28c0b6d84482041c7004ce437073a3d5036e190c54cedd",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
+  },
+  "proposed_nutrition_calculation": {
+    "recipeId": "holskytyskurkut",
+    "sourceHash": "437e62c82d9b786b419c321f13e131ccb4e8c0a3e31c9e613043d383bd62881b",
+    "calculatedAt": "2026-11-24",
+    "batchId": "batch-33307",
+    "servings": 4,
+    "scope": "Yksi reseptin 4 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+    "reviewerStatus": "AUTOMATED ONLY",
+    "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+    "ingredients": [
+      {
+        "item": "raakaa kurkkua",
+        "amount": 250,
+        "unit": "g",
+        "state": "raakaa kurkkua",
+        "record": {
+          "id": "fineli-346-release-20",
+          "name": "KURKKU",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/346",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "raakaa kurkkua",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 1.4,
+            "FIBT": 1.1,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 1.4,
+            "fibre": 1.1,
+            "polyols": 0,
+            "protein": 0.65,
+            "fat": 0.1
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: raakaa kurkkua.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "suolaa",
+        "amount": 3,
+        "unit": "g",
+        "state": "suolaa",
+        "matchEvidence": "Ruokasuola.",
+        "excludedReason": "Natriumkloridi ei sisällä tässä laskettavia makroravintoaineita.",
+        "omissionImpactUpperBoundPerServing": {
+          "kcal": 0,
+          "netCarbohydrate": 0,
+          "totalCarbohydrate": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "omissionImpactEvidence": "Natrium ei kuulu neljään makrokenttään."
+      },
+      {
+        "item": "väkiviinaetikkaa",
+        "amount": 15,
+        "unit": "g",
+        "state": "väkiviinaetikkaa",
+        "record": {
+          "id": "afcd-F009498-release-3",
+          "name": "Vinegar (except balsamic vinegar)",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "väkiviinaetikkaa",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 0,
+            "polyols": 0,
+            "fibre": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: väkiviinaetikkaa.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "sokeria",
+        "amount": 15,
+        "unit": "g",
+        "state": "sokeria",
+        "record": {
+          "id": "fineli-1-release-20",
+          "name": "SOKERI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "sokeria",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 99.9,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 99.9,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: sokeria.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "tuoretta tilliä",
+        "amount": 4,
+        "unit": "g",
+        "state": "tuoretta tilliä",
+        "record": {
+          "id": "fineli-369-release-20",
+          "name": "TILLI, TUORE",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/369",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "tuoretta tilliä",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0.9,
+            "FIBT": 2.8,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0.9,
+            "fibre": 2.8,
+            "polyols": 0,
+            "protein": 3.69,
+            "fat": 0.8
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tuoretta tilliä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      }
+    ]
+  }
+}

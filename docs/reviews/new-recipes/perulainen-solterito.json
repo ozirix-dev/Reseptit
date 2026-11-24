@@ -1,0 +1,420 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perulainen-solterito",
+  "source_path": "reseptit/alkuruoat/perulainen-solterito.md",
+  "source_sha256": "82da5e3d5b00e82b3c200829c67adf2ad95d65f4bfc685ff44ac421f32cbe6de",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://perudelights.com/solterito-the-traditional-way-our-quinoa-version/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/perulainen-solterito.json",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Pakastekasvikset kypsennetään pakkauksen mukaan ja jäähdytetään nopeasti. Juusto on tehty pastöroidusta maidosta."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 30 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Queso frescolle ei löytynyt laskurissa varmennettua täydellistä ravintoriviä."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Maissin ja härkäpavun lajikekohtainen GI sekä käyttövalmiin queso frescon ravintorivi puuttuvat."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": null,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/perulainen-solterito.webp",
+    "bytes": 230926,
+    "sha256": "92055c792ec0dc9c452f675e59674b72aef80de13acaaa06038723fc382e8014",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "PENDING",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/perulainen-solterito.md",
+        "language": "fi",
+        "slug": "perulainen-solterito",
+        "sha256": "bc1b94329014d21723917d99ddf22f20588466906fe9a10e363b958a97329aa6",
+        "semantic_sha256": "f1e424f346550f66755504d47b4b00734328cd96baeda8cce3dc32e045f19168"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/perulainen-solterito.md",
+        "language": "en",
+        "slug": "peruvian-broad-bean-corn-salad-solterito",
+        "sha256": "4621c562a4dabd01cddfe994410647627cd4c75f9e09e4ce7f4adb3733bb7389",
+        "semantic_sha256": "6c96b5726c2f9e24bb98239ba2ce6524f9cfbbbf68204ec023810ec7fd704503"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/perulainen-solterito.md",
+        "language": "sv",
+        "slug": "peruansk-bonbonssallad-solterito",
+        "sha256": "c62a98325d4490aaf3ad01fc8f7be35f230adf5e90ff2d6c1e5aac4389e7750b",
+        "semantic_sha256": "2f4d41cc1021170b7500e977ee5ad1496e58507622758cce8710bbbc1bd0e235"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/perulainen-solterito.md",
+        "language": "th",
+        "slug": "salat-thua-pak-a-khao-phot-solterito",
+        "sha256": "3b3d880982607dde7635de5fffb57715a140c2b2fc9a247804ff6a57c392baed",
+        "semantic_sha256": "ca0aaf8653dbb2f2832802ebdedf1a23c34eebf426cb43183e6b612749a91363"
+      }
+    ],
+    "nutrition_sha256": "be1db807265aac86cdc5db360338521be5e50003d2daf7dbb98af85b6013ef76",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
+  },
+  "proposed_nutrition_calculation": {
+    "recipeId": "perulainen-solterito",
+    "sourceHash": "a18a6ab513c9daf8e6f3b5fea598204a7696fb410fd2e8fd47d5ecb83c1e153e",
+    "calculatedAt": "2026-11-24",
+    "batchId": "batch-33307",
+    "servings": 4,
+    "scope": "Yksi reseptin 4 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+    "reviewerStatus": "AUTOMATED ONLY",
+    "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+    "ingredients": [
+      {
+        "item": "pakastettuja härkäpapuja ilman palkoja",
+        "amount": 220,
+        "unit": "g",
+        "state": "pakastettuja härkäpapuja ilman palkoja",
+        "record": {
+          "id": "afcd-F000419-release-3",
+          "name": "Bean, broad, fresh, raw",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "pakastettuja härkäpapuja ilman palkoja",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 2.2,
+            "polyols": 0,
+            "fibre": 7.1,
+            "protein": 6.9,
+            "fat": 0.5
+          }
+        },
+        "matchEvidence": "Raaka tuore kuorittu härkäpapu toimii pakastetun kuoritun pavun koostumusvastineena.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "pakastemaissinjyviä",
+        "amount": 220,
+        "unit": "g",
+        "state": "pakastemaissinjyviä",
+        "record": {
+          "id": "afcd-F003202-release-3",
+          "name": "Corn, kernels, purchased frozen, raw",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "pakastemaissinjyviä",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 16.8,
+            "polyols": 0,
+            "fibre": 2.5,
+            "protein": 3,
+            "fat": 0.9
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: pakastemaissinjyviä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "tuoreita tomaatteja",
+        "amount": 220,
+        "unit": "g",
+        "state": "tuoreita tomaatteja",
+        "record": {
+          "id": "fineli-352-release-20",
+          "name": "TOMAATTI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/352",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "tuoreita tomaatteja",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 3.45,
+            "FIBT": 0.4,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 3.45,
+            "fibre": 0.4,
+            "polyols": 0,
+            "protein": 0.55,
+            "fat": 0.3
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tuoreita tomaatteja.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "kuorittua punasipulia",
+        "amount": 70,
+        "unit": "g",
+        "state": "kuorittua punasipulia",
+        "record": {
+          "id": "fineli-34234-release-20",
+          "name": "SIPULI, PUNASIPULI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34234",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "kuorittua punasipulia",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 5.447,
+            "FIBT": 1.2,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 5.447,
+            "fibre": 1.2,
+            "polyols": 0,
+            "protein": 1.506,
+            "fat": 0.114
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kuorittua punasipulia.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "pastöroidusta maidosta tehtyä murenevaa queso fresco -juustoa",
+        "amount": 120,
+        "unit": "g",
+        "state": "pastöroidusta maidosta tehtyä murenevaa queso fresco -juustoa",
+        "matchEvidence": "Queso frescolle ei löytynyt laskurissa varmennettua täydellistä ravintoriviä.",
+        "excludedReason": "Queso frescolle ei löytynyt laskurissa varmennettua täydellistä ravintoriviä."
+      },
+      {
+        "item": "kivettömiä mustia oliiveja, valutettuina",
+        "amount": 40,
+        "unit": "g",
+        "state": "kivettömiä mustia oliiveja, valutettuina",
+        "record": {
+          "id": "afcd-F006198-release-3",
+          "name": "Olive, green or black, drained",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "kivettömiä mustia oliiveja, valutettuina",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 0,
+            "polyols": 0,
+            "fibre": 3.2,
+            "protein": 2.2,
+            "fat": 21.7
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kivettömiä mustia oliiveja, valutettuina.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "tuoretta persiljaa",
+        "amount": 12,
+        "unit": "g",
+        "state": "tuoretta persiljaa",
+        "record": {
+          "id": "fineli-333-release-20",
+          "name": "PERSILJA",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/333",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "tuoretta persiljaa",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 1.1,
+            "FIBT": 2.9,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 1.1,
+            "fibre": 2.9,
+            "polyols": 0,
+            "protein": 1.38,
+            "fat": 0.2
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tuoretta persiljaa.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "viinietikkaa",
+        "amount": 30,
+        "unit": "g",
+        "state": "viinietikkaa",
+        "record": {
+          "id": "afcd-F009498-release-3",
+          "name": "Vinegar (except balsamic vinegar)",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "viinietikkaa",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 0,
+            "polyols": 0,
+            "fibre": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        },
+        "matchEvidence": "Tavallisen balsamittoman etikan koostumusvastine.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "oliiviöljyä",
+        "amount": 30,
+        "unit": "g",
+        "state": "oliiviöljyä",
+        "record": {
+          "id": "fineli-536-release-20",
+          "name": "OLIIVIÖLJY",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "oliiviöljyä",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 100
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: oliiviöljyä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "suolaa",
+        "amount": 3,
+        "unit": "g",
+        "state": "suolaa",
+        "matchEvidence": "Ruokasuola.",
+        "excludedReason": "Natriumkloridi ei sisällä tässä laskettavia makroravintoaineita.",
+        "omissionImpactUpperBoundPerServing": {
+          "kcal": 0,
+          "netCarbohydrate": 0,
+          "totalCarbohydrate": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "omissionImpactEvidence": "Natrium ei kuulu neljään makrokenttään."
+      }
+    ],
+    "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+    "withholdingReason": "Queso frescolle ei löytynyt laskurissa varmennettua täydellistä ravintoriviä."
+  }
+}

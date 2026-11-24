@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "recipe_id": "tanskalainen-marjakiisseli-kermalla",
+  "source_path": "reseptit/jalkiruoat/tanskalainen-marjakiisseli-kermalla.md",
+  "source_sha256": "51edef0fcc9e52e1bf98cdb9117d01def252a8f6d3e208ad37b8b94cd1ebde9f",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.arla.dk/opskrifter/rodgrod-med-flode/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/tanskalainen-marjakiisseli-kermalla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Ohje on laadittu tuoreille marjoille, jotka kypsennetään. Kylmä maitokerma annostellaan tarjoiltaessa."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "6 annosta. Kokonaisajaksi on arvioitu 45 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Marja-sokeriseoksen ja lyhyesti suurustetun perunatärkkelyksen soveltuvaa GI-lähdettä ei ole varmennettu."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 22.34,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/jalkiruoat/tanskalainen-marjakiisseli-kermalla.webp",
+    "bytes": 140152,
+    "sha256": "ced01dd29ddf2cc086f25365706919ff99ad86d3578017112ca2a1eef5259ead",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "PENDING",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/jalkiruoat/tanskalainen-marjakiisseli-kermalla.md",
+        "language": "fi",
+        "slug": "tanskalainen-marjakiisseli-kermalla",
+        "sha256": "e578dad89783cea2a327533d2c68e92736afdbc2745b7da0f9300b36ebc4d853",
+        "semantic_sha256": "7a1223086f34611a690461ad428d4cb6e1d70bad73c123227e764d605ca64394"
+      },
+      {
+        "path": "kaannokset/en/jalkiruoat/tanskalainen-marjakiisseli-kermalla.md",
+        "language": "en",
+        "slug": "danish-berry-pudding-with-cream",
+        "sha256": "9ed0225cdaee1a339da3cbaeacdf27e2f0514fb3bad70ca5796e0e5a30a26ad1",
+        "semantic_sha256": "b0d1adc3bdc0147d8c58ff3c6a75c350c22ff0c6c3de13fb8837642a0aa16ad2"
+      },
+      {
+        "path": "kaannokset/sv/jalkiruoat/tanskalainen-marjakiisseli-kermalla.md",
+        "language": "sv",
+        "slug": "dansk-rodgrod-med-gradde",
+        "sha256": "23229d9abc3909f9356a2c7eceb2a0725be51b61ea7dd87e3a8bbb28f03556f0",
+        "semantic_sha256": "d3c73b4e8802e0c366d31a1d21a6859b311342ac1ad707c6a671ad997fbd9cd7"
+      },
+      {
+        "path": "kaannokset/th/jalkiruoat/tanskalainen-marjakiisseli-kermalla.md",
+        "language": "th",
+        "slug": "phutding-boeri-khrim-daenmak",
+        "sha256": "eace0f1487892541e1a09ccc58b255f68913c39d56d4e41ab924467c065dc61f",
+        "semantic_sha256": "83d70a7db833ac2ca95c4333b0036ea8fcf3e2712c7b1e54d6013370e49c2911"
+      }
+    ],
+    "nutrition_sha256": "4529359e607df1b0b5cdbe16747362455cd360404162694349166f7dc3bbe96d",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
+  },
+  "proposed_nutrition_calculation": {
+    "recipeId": "tanskalainen-marjakiisseli-kermalla",
+    "sourceHash": "c95bcb5851fc78aba9c7a3e511e028b1bd421472425c329366855675716394b2",
+    "calculatedAt": "2026-11-24",
+    "batchId": "batch-33307",
+    "servings": 6,
+    "scope": "Yksi reseptin 6 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+    "reviewerStatus": "AUTOMATED ONLY",
+    "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+    "ingredients": [
+      {
+        "item": "tuoreita mansikoita",
+        "amount": 250,
+        "unit": "g",
+        "state": "tuoreita mansikoita",
+        "record": {
+          "id": "afcd-F008952-release-3",
+          "name": "Strawberry, raw",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "tuoreita mansikoita",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 5.6,
+            "polyols": 0,
+            "fibre": 2.1,
+            "protein": 0.7,
+            "fat": 0.2
+          }
+        },
+        "matchEvidence": "AFCD:n tuore raaka mansikka.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "tuoreita vadelmia",
+        "amount": 150,
+        "unit": "g",
+        "state": "tuoreita vadelmia",
+        "record": {
+          "id": "afcd-F007619-release-3",
+          "name": "Raspberry, raw",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "tuoreita vadelmia",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 6.9,
+            "polyols": 0.1,
+            "fibre": 4.8,
+            "protein": 1.1,
+            "fat": 0.3
+          }
+        },
+        "matchEvidence": "AFCD:n tuore raaka vadelma.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "vettä",
+        "amount": 500,
+        "unit": "g",
+        "state": "vettä",
+        "record": {
+          "id": "fineli-922-release-20",
+          "name": "VESI, VESIJOHTOVESI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "vettä",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: vettä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "sokeria",
+        "amount": 85,
+        "unit": "g",
+        "state": "sokeria",
+        "record": {
+          "id": "fineli-1-release-20",
+          "name": "SOKERI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "sokeria",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 99.9,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 99.9,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: sokeria.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "perunajauhoa",
+        "amount": 25,
+        "unit": "g",
+        "state": "perunajauhoa",
+        "record": {
+          "id": "fineli-162-release-20",
+          "name": "JAUHO, PERUNAJAUHO TAI -SUURIMO, PERUNATÄRKKELYS",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/162",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "perunajauhoa",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 81.6,
+            "FIBT": 1.4,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 81.6,
+            "fibre": 1.4,
+            "polyols": 0,
+            "protein": 0.06,
+            "fat": 0.05
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: perunajauhoa.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "kuohukermaa",
+        "amount": 150,
+        "unit": "g",
+        "state": "kuohukermaa",
+        "record": {
+          "id": "fineli-631-release-20",
+          "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/631",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "kuohukermaa",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 2.9,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 2.9,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 1.88,
+            "fat": 38
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kuohukermaa.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      }
+    ]
+  }
+}

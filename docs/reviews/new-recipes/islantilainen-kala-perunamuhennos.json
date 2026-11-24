@@ -1,0 +1,401 @@
+{
+  "schema_version": 1,
+  "recipe_id": "islantilainen-kala-perunamuhennos",
+  "source_path": "reseptit/paaruoat/islantilainen-kala-perunamuhennos.md",
+  "source_sha256": "3868e0ea80c3fcf85c59a38e6964250ae325105dead80775d352f0f390694ecf",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://yourfriendinreykjavik.com/traditional-food-in-iceland-plokkfiskur/",
+      "https://akaprod-www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/islantilainen-kala-perunamuhennos.json",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Turskalle vähintään 63 °C sisälämpö."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 45 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Keitetyn perunan lajiketta ja kypsennysolosuhteita vastaava GI sekä maitokastikkeen ja perunan annoskohtainen sidonta puuttuvat."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 34.97,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/islantilainen-kala-perunamuhennos.webp",
+    "bytes": 147718,
+    "sha256": "29a14a6492b806af750c494b41685c41694a03d9ab26913b5e7cc7ab873c5721",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "PENDING",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/islantilainen-kala-perunamuhennos.md",
+        "language": "fi",
+        "slug": "islantilainen-kala-perunamuhennos",
+        "sha256": "ed71af5a0ed02d6f6e149f59bf1c3e023461745cba80e65e4784323dc566b462",
+        "semantic_sha256": "964a3f2b51a9f591e7e26115617f2b13879412761165ffff381f5275f36ba596"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/islantilainen-kala-perunamuhennos.md",
+        "language": "en",
+        "slug": "icelandic-fish-potato-stew",
+        "sha256": "2aca62921a2fe0a3127777d13cfd0eb5f287f2c0daab3a87283fd616506fb561",
+        "semantic_sha256": "fa04ecf1027bdbec259fbc74305466e608f0214b33da214281c281690a2ae731"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/islantilainen-kala-perunamuhennos.md",
+        "language": "sv",
+        "slug": "islandsk-fisk-och-potatisstuvning",
+        "sha256": "48195dc13468bb1dfec9bdca3bb39ea84790043c480174b70717af09326fd60b",
+        "semantic_sha256": "32b903b49fac5a4d24cdc73f4442248f4131fa3cdbe540a9d2e3475fa1bcb3de"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/islantilainen-kala-perunamuhennos.md",
+        "language": "th",
+        "slug": "satu-pla-khot-manfarang-aislaen",
+        "sha256": "0774d83efb72608a5708e1d3b49b1e47cce5f3e36b1a88f0ddef6c00bb56cc9d",
+        "semantic_sha256": "f35a5496d19542cf9fde80f191df80d409e14168e47d11862a6b1a94180bf304"
+      }
+    ],
+    "nutrition_sha256": "1211767e7d6d75672ee2cf8acf710e05812a000078c1e9c564d38c6ef199df07",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
+  },
+  "proposed_nutrition_calculation": {
+    "recipeId": "islantilainen-kala-perunamuhennos",
+    "sourceHash": "1f23960910a26fb4cc12bb261627f88e80066f52cb0f4e1f09f01038f1ae3b32",
+    "calculatedAt": "2026-11-24",
+    "batchId": "batch-33307",
+    "servings": 4,
+    "scope": "Yksi reseptin 4 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+    "reviewerStatus": "AUTOMATED ONLY",
+    "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+    "ingredients": [
+      {
+        "item": "ruodotonta turskafileetä",
+        "amount": 500,
+        "unit": "g",
+        "state": "ruodotonta turskafileetä",
+        "record": {
+          "id": "fineli-804-release-20",
+          "name": "TURSKA",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/804",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "ruodotonta turskafileetä",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 17.25,
+            "fat": 0.756
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: ruodotonta turskafileetä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "kuorittua perunaa",
+        "amount": 600,
+        "unit": "g",
+        "state": "kuorittua perunaa",
+        "record": {
+          "id": "fineli-205-release-20",
+          "name": "PERUNA, VANHA, KUORITTU",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/205",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "kuorittua perunaa",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 15.5,
+            "FIBT": 1.4,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 15.5,
+            "fibre": 1.4,
+            "polyols": 0,
+            "protein": 1.88,
+            "fat": 0.114
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kuorittua perunaa.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "kuorittua keltasipulia",
+        "amount": 100,
+        "unit": "g",
+        "state": "kuorittua keltasipulia",
+        "record": {
+          "id": "fineli-335-release-20",
+          "name": "SIPULI, KELTASIPULI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/335",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "kuorittua keltasipulia",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 4.8,
+            "FIBT": 1.2,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 4.8,
+            "fibre": 1.2,
+            "polyols": 0,
+            "protein": 1.25,
+            "fat": 0.1
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kuorittua keltasipulia.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "kevytmaitoa",
+        "amount": 400,
+        "unit": "g",
+        "state": "kevytmaitoa",
+        "record": {
+          "id": "fineli-684-release-20",
+          "name": "MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/684",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "kevytmaitoa",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 4.8,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 4.8,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 3,
+            "fat": 1.5
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kevytmaitoa.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "suolatonta voita",
+        "amount": 35,
+        "unit": "g",
+        "state": "suolatonta voita",
+        "record": {
+          "id": "fineli-576-release-20",
+          "name": "VOI, SUOLATON",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/576",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "suolatonta voita",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0.8,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0.8,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 1.19,
+            "fat": 81.3
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: suolatonta voita.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "vehnäjauhoja",
+        "amount": 30,
+        "unit": "g",
+        "state": "vehnäjauhoja",
+        "record": {
+          "id": "fineli-110-release-20",
+          "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "vehnäjauhoja",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 73.998,
+            "FIBT": 3.5,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 73.998,
+            "fibre": 3.5,
+            "polyols": 0,
+            "protein": 11.6,
+            "fat": 1.56
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: vehnäjauhoja.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "suolaa",
+        "amount": 4,
+        "unit": "g",
+        "state": "suolaa",
+        "matchEvidence": "Ruokasuola.",
+        "excludedReason": "Natriumkloridi ei sisällä tässä laskettavia makroravintoaineita.",
+        "omissionImpactUpperBoundPerServing": {
+          "kcal": 0,
+          "netCarbohydrate": 0,
+          "totalCarbohydrate": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "omissionImpactEvidence": "Natrium ei kuulu neljään makrokenttään."
+      },
+      {
+        "item": "rouhittua mustapippuria",
+        "amount": 1,
+        "unit": "g",
+        "state": "rouhittua mustapippuria",
+        "record": {
+          "id": "afcd-F006618-release-3",
+          "name": "Pepper, black, ground",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "rouhittua mustapippuria",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 38.6,
+            "polyols": 0,
+            "fibre": 25.3,
+            "protein": 10.4,
+            "fat": 3.3
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: rouhittua mustapippuria.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      }
+    ]
+  }
+}

@@ -1,0 +1,420 @@
+{
+  "schema_version": 1,
+  "recipe_id": "toscanalainen-panzanella",
+  "source_path": "reseptit/alkuruoat/toscanalainen-panzanella.md",
+  "source_sha256": "c202ca9160abc855a1d0beb0b1293cf95095c44ad11553148660f5bb015cd17f",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.lacucinaitaliana.com/italian-food/how-to-cook/home-cooking-panzanella-tuscanys-classic-bread-salad"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/toscanalainen-panzanella.json",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 70 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Kostutetun kuivahtaneen italialaistyylisen vehnäleivän tuotetta ja valmistustapaa vastaavaa GI:tä ei ole varmennettu."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 35.29,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/toscanalainen-panzanella.webp",
+    "bytes": 280692,
+    "sha256": "ea8e6495d3686a0eca87a618b9c6798403ed25ace32dd6bb1b4e25c9f58c582c",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "PENDING",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/toscanalainen-panzanella.md",
+        "language": "fi",
+        "slug": "toscanalainen-panzanella",
+        "sha256": "cddfc994ad2b9915052bd675d1d9dd3f855857de2947a4f19edc3ca89f4ac21d",
+        "semantic_sha256": "50695e71cb088879746fe9475d15133a8a652c437845a8aef82d8cb6555361a1"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/toscanalainen-panzanella.md",
+        "language": "en",
+        "slug": "tuscan-bread-salad-panzanella",
+        "sha256": "422eebde95d2edf202a07952b3264a44622781509a387f06b858d3c1e6896566",
+        "semantic_sha256": "77fc15bcc646f5f0cf124d4d92b8d48d525ec119ee66ec7b38948fbbdf93bdca"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/toscanalainen-panzanella.md",
+        "language": "sv",
+        "slug": "toskansk-brodsallad-panzanella",
+        "sha256": "e25e1298d43f7011bf8d8c1a0b8b4da74f5d36bad4c49f4f494990acb15328f3",
+        "semantic_sha256": "03942d1d622b7f54a607ba0a94ef349569c35f7564ef6985dbdb5fcc7696be24"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/toscanalainen-panzanella.md",
+        "language": "th",
+        "slug": "salat-khanompang-thatkani-panzanella",
+        "sha256": "f7f3cfb30ff4578baae743d08db288f4478f86e0f0bc3961ceac43671be08fda",
+        "semantic_sha256": "1c72720c9d2d18901e4d4ac6af05232ce506cfbd441e88e5a57f8c4f0091468e"
+      }
+    ],
+    "nutrition_sha256": "7af5201390934edb5159cd0b2c36e60229098dc7052e1bf664694a15469e08c1",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
+  },
+  "proposed_nutrition_calculation": {
+    "recipeId": "toscanalainen-panzanella",
+    "sourceHash": "3e26c075e57cbe86fe6f42d8ffdfe7be65fbe1f0f66ba6c4b7014972702a644b",
+    "calculatedAt": "2026-11-24",
+    "batchId": "batch-33307",
+    "servings": 4,
+    "scope": "Yksi reseptin 4 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+    "reviewerStatus": "AUTOMATED ONLY",
+    "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+    "ingredients": [
+      {
+        "item": "vaaleaa italialaistyylistä leipää, kuivahtanutta",
+        "amount": 250,
+        "unit": "g",
+        "state": "vaaleaa italialaistyylistä leipää, kuivahtanutta",
+        "record": {
+          "id": "afcd-F001528-release-3",
+          "name": "Bread, from white flour, Italian-style, commercial",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "vaaleaa italialaistyylistä leipää, kuivahtanutta",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 46.8,
+            "polyols": 0,
+            "fibre": 3.9,
+            "protein": 9,
+            "fat": 2.5
+          }
+        },
+        "matchEvidence": "Kuivahtaneen leivän kosteushävikkiä ei ole mitattu. Rivi vastaa leivän tyyppiä, ei tarkkaa paistohävikkiä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "tuoreita tomaatteja",
+        "amount": 500,
+        "unit": "g",
+        "state": "tuoreita tomaatteja",
+        "record": {
+          "id": "fineli-352-release-20",
+          "name": "TOMAATTI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/352",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "tuoreita tomaatteja",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 3.45,
+            "FIBT": 0.4,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 3.45,
+            "fibre": 0.4,
+            "polyols": 0,
+            "protein": 0.55,
+            "fat": 0.3
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tuoreita tomaatteja.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "raakaa kurkkua",
+        "amount": 220,
+        "unit": "g",
+        "state": "raakaa kurkkua",
+        "record": {
+          "id": "fineli-346-release-20",
+          "name": "KURKKU",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/346",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "raakaa kurkkua",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 1.4,
+            "FIBT": 1.1,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 1.4,
+            "fibre": 1.1,
+            "polyols": 0,
+            "protein": 0.65,
+            "fat": 0.1
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: raakaa kurkkua.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "kuorittua punasipulia",
+        "amount": 70,
+        "unit": "g",
+        "state": "kuorittua punasipulia",
+        "record": {
+          "id": "fineli-34234-release-20",
+          "name": "SIPULI, PUNASIPULI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34234",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "kuorittua punasipulia",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 5.447,
+            "FIBT": 1.2,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 5.447,
+            "fibre": 1.2,
+            "polyols": 0,
+            "protein": 1.506,
+            "fat": 0.114
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kuorittua punasipulia.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "tuoretta basilikaa",
+        "amount": 12,
+        "unit": "g",
+        "state": "tuoretta basilikaa",
+        "record": {
+          "id": "afcd-F000396-release-3",
+          "name": "Basil, green, fresh, raw",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "tuoretta basilikaa",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 0.2,
+            "polyols": 0,
+            "fibre": 3.3,
+            "protein": 2.6,
+            "fat": 0.5
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tuoretta basilikaa.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "viinietikkaa",
+        "amount": 30,
+        "unit": "g",
+        "state": "viinietikkaa",
+        "record": {
+          "id": "afcd-F009498-release-3",
+          "name": "Vinegar (except balsamic vinegar)",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "viinietikkaa",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 0,
+            "polyols": 0,
+            "fibre": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        },
+        "matchEvidence": "Tavallisen balsamittoman etikan koostumusvastine.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "oliiviöljyä",
+        "amount": 45,
+        "unit": "g",
+        "state": "oliiviöljyä",
+        "record": {
+          "id": "fineli-536-release-20",
+          "name": "OLIIVIÖLJY",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "oliiviöljyä",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 100
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: oliiviöljyä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "vettä",
+        "amount": 70,
+        "unit": "g",
+        "state": "vettä",
+        "record": {
+          "id": "fineli-922-release-20",
+          "name": "VESI, VESIJOHTOVESI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "vettä",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: vettä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "suolaa",
+        "amount": 3,
+        "unit": "g",
+        "state": "suolaa",
+        "matchEvidence": "Ruokasuola.",
+        "excludedReason": "Natriumkloridi ei sisällä tässä laskettavia makroravintoaineita.",
+        "omissionImpactUpperBoundPerServing": {
+          "kcal": 0,
+          "netCarbohydrate": 0,
+          "totalCarbohydrate": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "omissionImpactEvidence": "Natrium ei kuulu neljään makrokenttään."
+      }
+    ]
+  }
+}

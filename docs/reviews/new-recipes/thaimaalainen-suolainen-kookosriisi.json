@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "recipe_id": "thaimaalainen-suolainen-kookosriisi",
+  "source_path": "reseptit/alkuruoat/thaimaalainen-suolainen-kookosriisi.md",
+  "source_sha256": "236983f6dbbf0fb1e940ea70d81115557ffa001b425a350f2bd17d15b72d728a",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://hot-thai-kitchen.com/coconut-rice/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/thaimaalainen-suolainen-kookosriisi.json",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 35 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Jasmiiniriisin vesikeiton lähde ei sellaisenaan vastaa kookosmaidossa kypsentämistä. Tuotelajikkeen ja tämän valmistustavan GI ei ole varmennettu."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 56.52,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/thaimaalainen-suolainen-kookosriisi.webp",
+    "bytes": 136434,
+    "sha256": "631bc3b56d784e695069b614ac3d5195710db17c526018dd61a00656fe12f7b3",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "PENDING",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/thaimaalainen-suolainen-kookosriisi.md",
+        "language": "fi",
+        "slug": "thaimaalainen-suolainen-kookosriisi",
+        "sha256": "fe77ecf9e0aff1df693fe926322d870c5a3e307de103d5d72a5e4894842a9813",
+        "semantic_sha256": "30b3e0cef4fa8bd32556af30d95398cf59a42b09d3f001c3d62d70fda5d3dbdc"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/thaimaalainen-suolainen-kookosriisi.md",
+        "language": "en",
+        "slug": "thai-savoury-coconut-rice",
+        "sha256": "2621b7a7d4f9376dbfa2dca109af062dba7a8f264f44c8ffc118f364b90bbb0c",
+        "semantic_sha256": "f62e4c04f3fac05f4cb04afd451d444ddb8f30ba7fca4f25e38aaa76173853ba"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/thaimaalainen-suolainen-kookosriisi.md",
+        "language": "sv",
+        "slug": "thailandskt-kokosris-som-tillbehor",
+        "sha256": "9ef866060644b53c25313133d5e2fe0d07de791fe0cb98fefa7771734d6bab68",
+        "semantic_sha256": "3384a5bbe9d64c83f966678ef2ddd74e3bee80a7671564e6fddca88cb976dbd4"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/thaimaalainen-suolainen-kookosriisi.md",
+        "language": "th",
+        "slug": "khao-hung-kathi-rot-khem",
+        "sha256": "697e514b1eb0dcb10b417381ed171ef3b0a31f48d46e804dd1f6bac05ad3e6e6",
+        "semantic_sha256": "5b24a41a2301c89dda4031ac55e83e692daac340ec2dbdafc92fdc4d1e11eb31"
+      }
+    ],
+    "nutrition_sha256": "b236fb37fdbc2a07b854275f56138b649338845eac091386b20aea194f66fed9",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
+  },
+  "proposed_nutrition_calculation": {
+    "recipeId": "thaimaalainen-suolainen-kookosriisi",
+    "sourceHash": "00fff746e4860708b3f97017702dd14a5ecedb14df659624279308f196cc1ee2",
+    "calculatedAt": "2026-11-24",
+    "batchId": "batch-33307",
+    "servings": 4,
+    "scope": "Yksi reseptin 4 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+    "reviewerStatus": "AUTOMATED ONLY",
+    "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+    "ingredients": [
+      {
+        "item": "kuivaa jasmiiniriisiä",
+        "amount": 300,
+        "unit": "g",
+        "state": "kuivaa jasmiiniriisiä",
+        "record": {
+          "id": "afcd-F007682-release-3",
+          "name": "Rice, white, uncooked",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "kuivaa jasmiiniriisiä",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 74,
+            "polyols": 0,
+            "fibre": 0.8,
+            "protein": 7,
+            "fat": 0.9
+          }
+        },
+        "matchEvidence": "Kuiva valkoinen riisi on jasmiiniriisin koostumusvastine, ei GI-vastine.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "täysrasvaista säilykekookosmaitoa",
+        "amount": 240,
+        "unit": "g",
+        "state": "täysrasvaista säilykekookosmaitoa",
+        "record": {
+          "id": "afcd-F002991-release-3",
+          "name": "Coconut, milk, canned, regular fat",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "täysrasvaista säilykekookosmaitoa",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 1.7,
+            "polyols": 0,
+            "fibre": 0,
+            "protein": 1.4,
+            "fat": 15.4
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: täysrasvaista säilykekookosmaitoa.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "vettä",
+        "amount": 220,
+        "unit": "g",
+        "state": "vettä",
+        "record": {
+          "id": "fineli-922-release-20",
+          "name": "VESI, VESIJOHTOVESI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "vettä",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: vettä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "suolaa",
+        "amount": 4,
+        "unit": "g",
+        "state": "suolaa",
+        "matchEvidence": "Ruokasuola.",
+        "excludedReason": "Natriumkloridi ei sisällä tässä laskettavia makroravintoaineita.",
+        "omissionImpactUpperBoundPerServing": {
+          "kcal": 0,
+          "netCarbohydrate": 0,
+          "totalCarbohydrate": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "omissionImpactEvidence": "Natrium ei kuulu neljään makrokenttään."
+      }
+    ]
+  }
+}

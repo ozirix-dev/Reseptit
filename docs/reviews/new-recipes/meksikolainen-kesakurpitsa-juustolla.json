@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "recipe_id": "meksikolainen-kesakurpitsa-juustolla",
+  "source_path": "reseptit/alkuruoat/meksikolainen-kesakurpitsa-juustolla.md",
+  "source_sha256": "580dbb01ea6f07070ca7b79e496bbded402025c02306787ae47ee95dd73ebe6f",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.mexicoinmykitchen.com/mexican-squash-with-cheese/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/meksikolainen-kesakurpitsa-juustolla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 35 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Queso frescolle ei löytynyt laskurissa varmennettua täydellistä ravintoriviä."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Queso frescon ravintorivin ohella haudutetun kesäkurpitsa-tomaattiseoksen tarkka GI-lähdesidonta puuttuu."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": null,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/meksikolainen-kesakurpitsa-juustolla.webp",
+    "bytes": 228582,
+    "sha256": "b3fe398194d613141afacb70146ca0164700e540d8952e20cce2aa39f0289984",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "PENDING",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/meksikolainen-kesakurpitsa-juustolla.md",
+        "language": "fi",
+        "slug": "meksikolainen-kesakurpitsa-juustolla",
+        "sha256": "3d2a95dddfd89826edd82fc2f530bb4fc583d6c43fbfbf392b439d8c4d32c7d0",
+        "semantic_sha256": "9e0f791c16c2d9e6520a171522ecb69bce86538baf95e324e429abf7d54125b5"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/meksikolainen-kesakurpitsa-juustolla.md",
+        "language": "en",
+        "slug": "mexican-zucchini-with-fresh-cheese",
+        "sha256": "15d4853ba70cb43dbb7c425305a9a809facb1d04a0eec21eecde730b816309bd",
+        "semantic_sha256": "bd89bbb4eb878cf91fe697cea88092ca89ca2fb09a76d182a5b62dab3b87f580"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/meksikolainen-kesakurpitsa-juustolla.md",
+        "language": "sv",
+        "slug": "mexikansk-zucchini-med-ost",
+        "sha256": "74e4736b6510281cd7fdae97d6375e5a7d148c699f3c431db3ab28b3aa33cfdb",
+        "semantic_sha256": "95c80f05d79833201f20f2410e2cfae3f089d1016f03d7391c21a2e1e1bf40da"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/meksikolainen-kesakurpitsa-juustolla.md",
+        "language": "th",
+        "slug": "sukini-chis-sot-calabacitas",
+        "sha256": "8ae5fe7968b36798600772ea4640026814d4182f6e65b09014a2c7e4f5559d5c",
+        "semantic_sha256": "2e9f8750a8b594f8f8a8088e4b3223aa7444a3a7db1a034c3f3d700901f14ffd"
+      }
+    ],
+    "nutrition_sha256": "4c07cb3768bc425121adb5e34b099e3abe68066e0c5f308e833ea59e541bb5f5",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
+  },
+  "proposed_nutrition_calculation": {
+    "recipeId": "meksikolainen-kesakurpitsa-juustolla",
+    "sourceHash": "fce2627e264ec54ed8b03e575e7b73eb23fdb77a5bb64da10d86e6a20d05087b",
+    "calculatedAt": "2026-11-24",
+    "batchId": "batch-33307",
+    "servings": 4,
+    "scope": "Yksi reseptin 4 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+    "reviewerStatus": "AUTOMATED ONLY",
+    "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+    "ingredients": [
+      {
+        "item": "kesäkurpitsaa",
+        "amount": 600,
+        "unit": "g",
+        "state": "kesäkurpitsaa",
+        "record": {
+          "id": "fineli-389-release-20",
+          "name": "KESÄKURPITSA, ZUCCHINI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/389",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "kesäkurpitsaa",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 2.5,
+            "FIBT": 2,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 2.5,
+            "fibre": 2,
+            "polyols": 0,
+            "protein": 0.65,
+            "fat": 0.4
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kesäkurpitsaa.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "tuoreita tomaatteja",
+        "amount": 400,
+        "unit": "g",
+        "state": "tuoreita tomaatteja",
+        "record": {
+          "id": "fineli-352-release-20",
+          "name": "TOMAATTI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/352",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "tuoreita tomaatteja",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 3.45,
+            "FIBT": 0.4,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 3.45,
+            "fibre": 0.4,
+            "polyols": 0,
+            "protein": 0.55,
+            "fat": 0.3
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tuoreita tomaatteja.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "kuorittua keltasipulia",
+        "amount": 100,
+        "unit": "g",
+        "state": "kuorittua keltasipulia",
+        "record": {
+          "id": "fineli-335-release-20",
+          "name": "SIPULI, KELTASIPULI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/335",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "kuorittua keltasipulia",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 4.8,
+            "FIBT": 1.2,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 4.8,
+            "fibre": 1.2,
+            "polyols": 0,
+            "protein": 1.25,
+            "fat": 0.1
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kuorittua keltasipulia.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "oliiviöljyä",
+        "amount": 20,
+        "unit": "g",
+        "state": "oliiviöljyä",
+        "record": {
+          "id": "fineli-536-release-20",
+          "name": "OLIIVIÖLJY",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "oliiviöljyä",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 100
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: oliiviöljyä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "pastöroidusta maidosta tehtyä murenevaa queso fresco -juustoa",
+        "amount": 100,
+        "unit": "g",
+        "state": "pastöroidusta maidosta tehtyä murenevaa queso fresco -juustoa",
+        "matchEvidence": "Queso frescolle ei löytynyt laskurissa varmennettua täydellistä ravintoriviä.",
+        "excludedReason": "Queso frescolle ei löytynyt laskurissa varmennettua täydellistä ravintoriviä."
+      },
+      {
+        "item": "suolaa",
+        "amount": 3,
+        "unit": "g",
+        "state": "suolaa",
+        "matchEvidence": "Ruokasuola.",
+        "excludedReason": "Natriumkloridi ei sisällä tässä laskettavia makroravintoaineita.",
+        "omissionImpactUpperBoundPerServing": {
+          "kcal": 0,
+          "netCarbohydrate": 0,
+          "totalCarbohydrate": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "omissionImpactEvidence": "Natrium ei kuulu neljään makrokenttään."
+      }
+    ],
+    "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+    "withholdingReason": "Queso frescolle ei löytynyt laskurissa varmennettua täydellistä ravintoriviä."
+  }
+}

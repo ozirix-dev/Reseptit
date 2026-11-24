@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kiinalainen-hoyrymuna",
+  "source_path": "reseptit/aamupalat/kiinalainen-hoyrymuna.md",
+  "source_sha256": "514ae2626ab868e7ef3733affafdc84ae20e62748de5dac90caaa8851fa6778e",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://thewoksoflife.com/steamed-egg/",
+      "https://akaprod-www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kiinalainen-hoyrymuna.json",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Höyrytys vähintään 71 °C:een, keskusta hyytynyt."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 30 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Annos sisältää vähän imeytyvää hiilihydraattia. Soijan ja muiden ainesten soveltuva GI-lähdesidonta puuttuu."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 0.68,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/aamupalat/kiinalainen-hoyrymuna.webp",
+    "bytes": 80746,
+    "sha256": "37a3ef60c75ec8d2f99c4838ea7a93ffe6699ed2fce23a490e389417d4aeedce",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "PENDING",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/aamupalat/kiinalainen-hoyrymuna.md",
+        "language": "fi",
+        "slug": "kiinalainen-hoyrymuna",
+        "sha256": "0732b63e9a5182ff731a35e2d8b4b08f341204cbcd6aa5ff8e15026d6243ed08",
+        "semantic_sha256": "95e9ba9fd09c6e146d52632fd9e2206d5f36fd4fb62a8198379db0ab52688159"
+      },
+      {
+        "path": "kaannokset/en/aamupalat/kiinalainen-hoyrymuna.md",
+        "language": "en",
+        "slug": "chinese-savoury-steamed-eggs",
+        "sha256": "f248bd5863e2b2f9ee992175a64a96cbb7ab0c50f16d2be8c99b722b39b71be4",
+        "semantic_sha256": "1e41070864a4b8a49f07fe1133986c64fbd58ccef05f5cbe8b87e7707c346bbb"
+      },
+      {
+        "path": "kaannokset/sv/aamupalat/kiinalainen-hoyrymuna.md",
+        "language": "sv",
+        "slug": "kinesiskt-angat-agg",
+        "sha256": "24f41cb325407046f5613af0d11113f179cea84327b27e0f3f40f0aec57134ef",
+        "semantic_sha256": "bf55e5e5358fa898747eefee1c435f49c79a85de1f3122571f91373991716acb"
+      },
+      {
+        "path": "kaannokset/th/aamupalat/kiinalainen-hoyrymuna.md",
+        "language": "th",
+        "slug": "khai-tun-baep-chin",
+        "sha256": "c1caa69d58ba6c9301415b63a732899c5886ab29d683f140814304533624e628",
+        "semantic_sha256": "e6535800e80ce4ed9809908838c38159645d2a237885455014a82c15e8b47411"
+      }
+    ],
+    "nutrition_sha256": "234927107e69002de6655467901f678a300a0790f79ad22a1b5665b2a0418e39",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
+  },
+  "proposed_nutrition_calculation": {
+    "recipeId": "kiinalainen-hoyrymuna",
+    "sourceHash": "5f9f0236ba5b60002b6b7d1d7f33ab683178ccc777ae8d14c900d2f13c9628c1",
+    "calculatedAt": "2026-11-24",
+    "batchId": "batch-33307",
+    "servings": 4,
+    "scope": "Yksi reseptin 4 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+    "reviewerStatus": "AUTOMATED ONLY",
+    "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+    "ingredients": [
+      {
+        "item": "kananmunaa ilman kuoria",
+        "amount": 220,
+        "unit": "g",
+        "state": "kananmunaa ilman kuoria",
+        "record": {
+          "id": "fineli-858-release-20",
+          "name": "KANANMUNA, KUORETON",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "kananmunaa ilman kuoria",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0.3,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0.3,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 12.61,
+            "fat": 9.24
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kananmunaa ilman kuoria.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "vettä",
+        "amount": 330,
+        "unit": "g",
+        "state": "vettä",
+        "record": {
+          "id": "fineli-922-release-20",
+          "name": "VESI, VESIJOHTOVESI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "vettä",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: vettä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "suolaa",
+        "amount": 2,
+        "unit": "g",
+        "state": "suolaa",
+        "matchEvidence": "Ruokasuola.",
+        "excludedReason": "Natriumkloridi ei sisällä tässä laskettavia makroravintoaineita.",
+        "omissionImpactUpperBoundPerServing": {
+          "kcal": 0,
+          "netCarbohydrate": 0,
+          "totalCarbohydrate": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "omissionImpactEvidence": "Natrium ei kuulu neljään makrokenttään."
+      },
+      {
+        "item": "japanilaista soijakastiketta",
+        "amount": 16,
+        "unit": "g",
+        "state": "japanilaista soijakastiketta",
+        "record": {
+          "id": "fineli-31-release-20",
+          "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/31",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "japanilaista soijakastiketta",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 9.5,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 9.5,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 5.17,
+            "fat": 0.08
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: japanilaista soijakastiketta.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "kevätsipulia",
+        "amount": 12,
+        "unit": "g",
+        "state": "kevätsipulia",
+        "record": {
+          "id": "afcd-F006250-release-3",
+          "name": "Onion, spring, fresh, raw",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "kevätsipulia",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 4.6,
+            "polyols": 0,
+            "fibre": 1.9,
+            "protein": 1.7,
+            "fat": 0.2
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kevätsipulia.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "seesamiöljyä",
+        "amount": 6,
+        "unit": "g",
+        "state": "seesamiöljyä",
+        "record": {
+          "id": "afcd-F006187-release-3",
+          "name": "Oil, sesame",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "seesamiöljyä",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 0,
+            "polyols": 0,
+            "fibre": 0,
+            "protein": 0,
+            "fat": 100
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: seesamiöljyä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      }
+    ]
+  }
+}

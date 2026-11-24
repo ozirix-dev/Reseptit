@@ -1,0 +1,401 @@
+{
+  "schema_version": 1,
+  "recipe_id": "georgialainen-kana-tomaattipata",
+  "source_path": "reseptit/paaruoat/georgialainen-kana-tomaattipata.md",
+  "source_sha256": "7fa17398667c83f7653eb1dd100885da0ee766faca2398b408eb2352c9868cd8",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://georgia.travel/chakhokhbili",
+      "https://akaprod-www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/georgialainen-kana-tomaattipata.json",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Broilerin paksuimmat palat vähintään 74 °C."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 55 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Haudutetun sipuli-tomaattiseoksen valmistusta vastaavia GI-lähteitä ei ole sidottu reseptiin."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 9.09,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/georgialainen-kana-tomaattipata.webp",
+    "bytes": 313806,
+    "sha256": "4d0555cd86043fa1cb24ae1fe49e97f58ac3cad8fc27a0bf23ab16d6d6fd96fb",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "PENDING",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/georgialainen-kana-tomaattipata.md",
+        "language": "fi",
+        "slug": "georgialainen-kana-tomaattipata",
+        "sha256": "78e9afbcbe06034eb74324114cd5bf8bc24acd3fc5e79907a4535e9fa8c15521",
+        "semantic_sha256": "2de7db13875ce2c681187058a1ad31366be593c7b4304d0dbc196dfac0aadb73"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/georgialainen-kana-tomaattipata.md",
+        "language": "en",
+        "slug": "georgian-chicken-tomato-stew-chakhokhbili",
+        "sha256": "1ac7dff46e9ab6293c9b89864b6959752ee027e1f32bbd7c3da7ae3dad6debd0",
+        "semantic_sha256": "72883f00d8b41ee6cda5a55ec17c28ec3e431e9e80600ab42685e5612f944a85"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/georgialainen-kana-tomaattipata.md",
+        "language": "sv",
+        "slug": "georgisk-kycklinggryta-med-tomat",
+        "sha256": "dd2e7f508f50046d918449d9e475e5551213397dfe7eeec01c8008edf89810ba",
+        "semantic_sha256": "f5d7b02146abb1f0c3209ca3d3cec4ef4eaf3dc909cfee7bf4e16c9fdc85fa05"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/georgialainen-kana-tomaattipata.md",
+        "language": "th",
+        "slug": "satu-kai-makhuea-chakhokhbili",
+        "sha256": "75d4219fc015e3bd34981c67d8d1edceda99cd0e2efb713560887742a25022f1",
+        "semantic_sha256": "cfbca3f483d0f6b888bdd4aab1197c3d5ecbbdfbf7037dafc82aea6c13af6525"
+      }
+    ],
+    "nutrition_sha256": "540eb0a6cf01330d123e3f9e4391870190e0ab189990eadd38a6153c43cd03b2",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
+  },
+  "proposed_nutrition_calculation": {
+    "recipeId": "georgialainen-kana-tomaattipata",
+    "sourceHash": "f30bad87ac772849e0f71383e4adcdeb89fba5f3bd595e990776e555eea37395",
+    "calculatedAt": "2026-11-24",
+    "batchId": "batch-33307",
+    "servings": 4,
+    "scope": "Yksi reseptin 4 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+    "reviewerStatus": "AUTOMATED ONLY",
+    "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+    "ingredients": [
+      {
+        "item": "luutonta nahatonta broilerin paistileikettä",
+        "amount": 650,
+        "unit": "g",
+        "state": "luutonta nahatonta broilerin paistileikettä",
+        "record": {
+          "id": "afcd-F002806-release-3",
+          "name": "Chicken, thigh, lean flesh, raw",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "luutonta nahatonta broilerin paistileikettä",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 0,
+            "polyols": 0,
+            "fibre": 0,
+            "protein": 19.1,
+            "fat": 3
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: luutonta nahatonta broilerin paistileikettä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "kuorittua keltasipulia",
+        "amount": 240,
+        "unit": "g",
+        "state": "kuorittua keltasipulia",
+        "record": {
+          "id": "fineli-335-release-20",
+          "name": "SIPULI, KELTASIPULI",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/335",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "kuorittua keltasipulia",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 4.8,
+            "FIBT": 1.2,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 4.8,
+            "fibre": 1.2,
+            "polyols": 0,
+            "protein": 1.25,
+            "fat": 0.1
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kuorittua keltasipulia.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "tomaattimurskaa liemineen",
+        "amount": 650,
+        "unit": "g",
+        "state": "tomaattimurskaa liemineen",
+        "record": {
+          "id": "fineli-398-release-20",
+          "name": "TOMAATTIMURSKA",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/398",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "tomaattimurskaa liemineen",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 3.45,
+            "FIBT": 0.4,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 3.45,
+            "fibre": 0.4,
+            "polyols": 0,
+            "protein": 0.55,
+            "fat": 0.2
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tomaattimurskaa liemineen.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "kuorittua valkosipulia",
+        "amount": 16,
+        "unit": "g",
+        "state": "kuorittua valkosipulia",
+        "record": {
+          "id": "afcd-F004193-release-3",
+          "name": "Garlic, peeled, fresh, raw",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "kuorittua valkosipulia",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 10.2,
+            "polyols": 0,
+            "fibre": 16.9,
+            "protein": 6.1,
+            "fat": 2.8
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: kuorittua valkosipulia.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "tuoretta korianteria",
+        "amount": 20,
+        "unit": "g",
+        "state": "tuoretta korianteria",
+        "record": {
+          "id": "afcd-F003192-release-3",
+          "name": "Coriander, fresh, raw",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "tuoretta korianteria",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 1.9,
+            "polyols": 0,
+            "fibre": 3.2,
+            "protein": 3.1,
+            "fat": 0.6
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tuoretta korianteria.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "tuoretta basilikaa",
+        "amount": 10,
+        "unit": "g",
+        "state": "tuoretta basilikaa",
+        "record": {
+          "id": "afcd-F000396-release-3",
+          "name": "Basil, green, fresh, raw",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "tuoretta basilikaa",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 0.2,
+            "polyols": 0,
+            "fibre": 3.3,
+            "protein": 2.6,
+            "fat": 0.5
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tuoretta basilikaa.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "oliiviöljyä",
+        "amount": 15,
+        "unit": "g",
+        "state": "oliiviöljyä",
+        "record": {
+          "id": "fineli-536-release-20",
+          "name": "OLIIVIÖLJY",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "oliiviöljyä",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 100
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: oliiviöljyä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "suolaa",
+        "amount": 6,
+        "unit": "g",
+        "state": "suolaa",
+        "matchEvidence": "Ruokasuola.",
+        "excludedReason": "Natriumkloridi ei sisällä tässä laskettavia makroravintoaineita.",
+        "omissionImpactUpperBoundPerServing": {
+          "kcal": 0,
+          "netCarbohydrate": 0,
+          "totalCarbohydrate": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "omissionImpactEvidence": "Natrium ei kuulu neljään makrokenttään."
+      },
+      {
+        "item": "rouhittua mustapippuria",
+        "amount": 1,
+        "unit": "g",
+        "state": "rouhittua mustapippuria",
+        "record": {
+          "id": "afcd-F006618-release-3",
+          "name": "Pepper, black, ground",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "rouhittua mustapippuria",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 38.6,
+            "polyols": 0,
+            "fibre": 25.3,
+            "protein": 10.4,
+            "fat": 3.3
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: rouhittua mustapippuria.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      }
+    ]
+  }
+}

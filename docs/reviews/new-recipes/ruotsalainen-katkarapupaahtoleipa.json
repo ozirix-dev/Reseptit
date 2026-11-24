@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "recipe_id": "ruotsalainen-katkarapupaahtoleipa",
+  "source_path": "reseptit/alkuruoat/ruotsalainen-katkarapupaahtoleipa.md",
+  "source_sha256": "3bab93becb547325de66a2c0f536db8bd6fe830ffab4b2ddd14d792f399a174a",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.sverigesradio.se/artikel/7027969"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/ruotsalainen-katkarapupaahtoleipa.json",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Käytetään valmiiksi kypsiä kuorittuja katkarapuja. Kylmä täyte pidetään jääkaapissa ja annostellaan juuri ennen tarjoilua."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 20 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Paahtoleivän tuotetta, paistoa ja lopullista annosta vastaavaa GI-lähdettä ei ole sidottu."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 16.5,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/ruotsalainen-katkarapupaahtoleipa.webp",
+    "bytes": 206592,
+    "sha256": "f4eaa2164ee16e3481fca40f6d9dfe11fd1287e3e3f1285c0035db946f2230e1",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "PENDING",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/ruotsalainen-katkarapupaahtoleipa.md",
+        "language": "fi",
+        "slug": "ruotsalainen-katkarapupaahtoleipa",
+        "sha256": "0bca7df568bc89ede2611d7a70ce8b3dbc2d7877807088d230de4850c5b0a8bb",
+        "semantic_sha256": "3027af6ed76871a03d78dc10e5560e5b39d0cefece2392c164a8587649413895"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/ruotsalainen-katkarapupaahtoleipa.md",
+        "language": "en",
+        "slug": "swedish-shrimp-toast-skagen",
+        "sha256": "383ad27f153d49ce2b5a34e4468c9c29ffd2bf0d700d95122d2644d4db316db4",
+        "semantic_sha256": "0e0e3e518dbd30886b4121a49c459d33ec0a7d728070fcac9ce8af9fc882f1e4"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/ruotsalainen-katkarapupaahtoleipa.md",
+        "language": "sv",
+        "slug": "toast-skagen-med-rakor-och-dill",
+        "sha256": "1290cabd382e3459bf1a767de1f622fae8184aad45573a2378f63e5a7642bf31",
+        "semantic_sha256": "2bd01b8ff081bb9194d8e96c7f1c5e8ef85d6f3b18513a2228ee30fd68fd5196"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/ruotsalainen-katkarapupaahtoleipa.md",
+        "language": "th",
+        "slug": "khanom-pang-ping-na-kung-sawiden",
+        "sha256": "bf251ed2881f9949cc86d45ce0790dd8ef126b44169a516fc4346243ab062401",
+        "semantic_sha256": "d2372a68fe0023be60b7324df5dbe13cb8b467d3b62e1863e00f01fe7e36681b"
+      }
+    ],
+    "nutrition_sha256": "ae910e629a053115ba361180a6138be1da7c80aa7fda95b4894748f29ec611f7",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin."
+  },
+  "proposed_nutrition_calculation": {
+    "recipeId": "ruotsalainen-katkarapupaahtoleipa",
+    "sourceHash": "e9002611478755428af6a10c255175a44d46fbdfc88dd8065075ebf308493396",
+    "calculatedAt": "2026-11-24",
+    "batchId": "batch-33307",
+    "servings": 4,
+    "scope": "Yksi reseptin 4 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+    "reviewerStatus": "AUTOMATED ONLY",
+    "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+    "ingredients": [
+      {
+        "item": "kypsää kuorittua katkarapua",
+        "amount": 300,
+        "unit": "g",
+        "state": "kypsää kuorittua katkarapua",
+        "record": {
+          "id": "afcd-F007432-release-3",
+          "name": "Prawn, flesh, cooked from raw, no added fat",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "kypsää kuorittua katkarapua",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 0,
+            "polyols": 0,
+            "fibre": 0,
+            "protein": 27.1,
+            "fat": 1.2
+          }
+        },
+        "matchEvidence": "Kypsä kuorittu katkarapu. AFCD:n kypsä kuorittu katkarapu on koostumuksellinen vastine.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "tavallista majoneesia (noin 80 % rasvaa)",
+        "amount": 75,
+        "unit": "g",
+        "state": "tavallista majoneesia (noin 80 % rasvaa)",
+        "record": {
+          "id": "fineli-30925-release-20",
+          "name": "MAJONEESI, RASVAA 80 %",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30925",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "tavallista majoneesia (noin 80 % rasvaa)",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 1.029,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 1.029,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 1.12,
+            "fat": 81.042
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tavallista majoneesia (noin 80 % rasvaa).",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "sitruunamehua",
+        "amount": 18,
+        "unit": "g",
+        "state": "sitruunamehua",
+        "record": {
+          "id": "afcd-F004726-release-3",
+          "name": "Juice, lemon",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "sitruunamehua",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 1.8,
+            "polyols": 0,
+            "fibre": 2,
+            "protein": 0.6,
+            "fat": 0.1
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: sitruunamehua.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "tuoretta tilliä",
+        "amount": 10,
+        "unit": "g",
+        "state": "tuoretta tilliä",
+        "record": {
+          "id": "fineli-369-release-20",
+          "name": "TILLI, TUORE",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/369",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "tuoretta tilliä",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0.9,
+            "FIBT": 2.8,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0.9,
+            "fibre": 2.8,
+            "polyols": 0,
+            "protein": 3.69,
+            "fat": 0.8
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tuoretta tilliä.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "vaaleaa vehnäleipää",
+        "amount": 140,
+        "unit": "g",
+        "state": "vaaleaa vehnäleipää",
+        "record": {
+          "id": "afcd-F001463-release-3",
+          "name": "Bread, from white flour",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "retrievedAt": "2026-10-24",
+          "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+          "state": "vaaleaa vehnäleipää",
+          "basis": "per100g-as-sold",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+          "per100g": {
+            "carbohydrate": 46.2,
+            "polyols": 0,
+            "fibre": 3.2,
+            "protein": 9.5,
+            "fat": 2
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: vaaleaa vehnäleipää.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      },
+      {
+        "item": "suolatonta voita",
+        "amount": 15,
+        "unit": "g",
+        "state": "suolatonta voita",
+        "record": {
+          "id": "fineli-576-release-20",
+          "name": "VOI, SUOLATON",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/576",
+          "retrievedAt": "2026-10-24",
+          "licence": "THL, Fineli Release 20, CC BY 4.0",
+          "state": "suolatonta voita",
+          "basis": "per100g-edible",
+          "carbohydrateDefinition": "EU_AVAILABLE",
+          "componentValues": {
+            "CHO": 0.8,
+            "FIBT": 0,
+            "POLYL": 0
+          },
+          "componentIds": {
+            "CHO": 2034,
+            "FIBT": 2168,
+            "POLYL": 2260
+          },
+          "polyolsSourceVerified": true,
+          "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+          "per100g": {
+            "carbohydrate": 0.8,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 1.19,
+            "fat": 81.3
+          }
+        },
+        "matchEvidence": "Sovitus tietokannan raaka-aineriviin: suolatonta voita.",
+        "edibleFraction": 1,
+        "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+        "retainedFraction": 1,
+        "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+      }
+    ]
+  }
+}
