@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "recipe_id": "japanilainen-seesamipinaatti",
+  "source_path": "reseptit/alkuruoat/japanilainen-seesamipinaatti.md",
+  "source_sha256": "2dcbf04101db493649e25c1816948429d39db10b840a6eeff85e535cd09c7727",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.justonecookbook.com/spinach-with-sesame-sauce/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/japanilainen-seesamipinaatti.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 20 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Ryöpätyn pinaatin ja seesamidressingin tälle annokselle soveltuva GI-lähde puuttuu."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 2.65,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/japanilainen-seesamipinaatti.webp",
+    "bytes": 217076,
+    "sha256": "719df1f28944b239d2db333b742956df33b2d541dbb06059e90b7fdb56f7366e",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/japanilainen-seesamipinaatti.md",
+        "language": "fi",
+        "slug": "japanilainen-seesamipinaatti",
+        "sha256": "2dcbf04101db493649e25c1816948429d39db10b840a6eeff85e535cd09c7727",
+        "semantic_sha256": "b2b521b9a0367d18eaa203ec44b6c9689a3892b152987fa7e121f08916e8d317"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/japanilainen-seesamipinaatti.md",
+        "language": "en",
+        "slug": "japanese-sesame-spinach-gomaae",
+        "sha256": "5516c4451d0c0fa1b9febf9ae313149a46d9b791a0a01834e775ef83a91bea56",
+        "semantic_sha256": "0bfa03f5feb46b9dc53785c624162fd95d30f942fef04728affad5e0b9050c8d"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/japanilainen-seesamipinaatti.md",
+        "language": "sv",
+        "slug": "japansk-sesamspenat-gomaae",
+        "sha256": "826aab20b46c5a29a5c5c9bb77b9aad4c7ce6ca4ed0b0bc71ca62a94fd898cfd",
+        "semantic_sha256": "8820679e2412fa414a9aecd527b265274979ffda8e796a37a5ea4777b77bf0ab"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/japanilainen-seesamipinaatti.md",
+        "language": "th",
+        "slug": "phak-khom-khluk-nga-gomaae",
+        "sha256": "22110a68c3e93b1a76246aeeb91a3edf3c48011f5b54112f801fdffd67bf2a74",
+        "semantic_sha256": "333a4fb55665d9ebb4abab2df003ccf7ac999237738923ca0f3c195d36dbd5b7"
+      }
+    ],
+    "nutrition_sha256": "b68eba74ba28c46f79517ddd1ac5db994013896bce5f84a188de7dea6776e3a7",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}

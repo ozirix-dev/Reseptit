@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "recipe_id": "norjalainen-lammas-kaalipata",
+  "source_path": "reseptit/paaruoat/norjalainen-lammas-kaalipata.md",
+  "source_sha256": "8962c061ce86707229a0ac1b9ffc1c0213c487e84cf59957c693690ca12288c5",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.matprat.no/oppskrifter/tradisjon/farikal/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/norjalainen-lammas-kaalipata.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 165 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Kaalille tässä pidempään haudutetussa muodossa ei ole soveltuvaa lähdesidontaa. Perunalisuke ei sisälly reseptiin."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 9.08,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/norjalainen-lammas-kaalipata.webp",
+    "bytes": 138392,
+    "sha256": "73c5cc5c473ffa3d76ee8384e261f0fdbf5bc9f4429916dd182eb8c8f5b6a57b",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/norjalainen-lammas-kaalipata.md",
+        "language": "fi",
+        "slug": "norjalainen-lammas-kaalipata",
+        "sha256": "8962c061ce86707229a0ac1b9ffc1c0213c487e84cf59957c693690ca12288c5",
+        "semantic_sha256": "99c6e94882565b011c4226bf612cd5261ed908cc3c96bf15cda769ec8987b11a"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/norjalainen-lammas-kaalipata.md",
+        "language": "en",
+        "slug": "norwegian-lamb-cabbage-stew",
+        "sha256": "c3875141f07dd717b653f591541bdbd3bc47adf9d3454d6bc9f2c7ca4e44df9a",
+        "semantic_sha256": "a0509e6540401c0c42f1e45314931e4af38227acede0011694f5197d2a159f59"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/norjalainen-lammas-kaalipata.md",
+        "language": "sv",
+        "slug": "norsk-farikal-med-lamm-och-vitkal",
+        "sha256": "d037c07015ec29e1a5078fe0f90d8dafd420fe0c616b1381d8db936ae21d1095",
+        "semantic_sha256": "27a12b840b6d2a0ba478b485598f8f19fcf05b64438a2c87c0b786be39d988b5"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/norjalainen-lammas-kaalipata.md",
+        "language": "th",
+        "slug": "satu-kae-kalampli-norawe",
+        "sha256": "691e63be4f219745bc5c3b1cf34cd2c86b25c89f17da914d422e69389121351e",
+        "semantic_sha256": "4824118ae18f3077994cef57c5311b37e09f8eb69de43165d33db791494ab6be"
+      }
+    ],
+    "nutrition_sha256": "57b99a152eff2759b5938ef6a27bbabd06ea71bbb8d7a931ac204ed9ecee7121",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}

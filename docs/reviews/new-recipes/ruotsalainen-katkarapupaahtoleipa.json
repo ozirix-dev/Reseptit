@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "recipe_id": "ruotsalainen-katkarapupaahtoleipa",
+  "source_path": "reseptit/alkuruoat/ruotsalainen-katkarapupaahtoleipa.md",
+  "source_sha256": "0bca7df568bc89ede2611d7a70ce8b3dbc2d7877807088d230de4850c5b0a8bb",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.sverigesradio.se/artikel/7027969"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/ruotsalainen-katkarapupaahtoleipa.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Käytetään valmiiksi kypsiä kuorittuja katkarapuja. Kylmä täyte pidetään jääkaapissa ja annostellaan juuri ennen tarjoilua."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 20 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Paahtoleivän tuotetta, paistoa ja lopullista annosta vastaavaa GI-lähdettä ei ole sidottu."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 16.5,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/ruotsalainen-katkarapupaahtoleipa.webp",
+    "bytes": 206592,
+    "sha256": "f4eaa2164ee16e3481fca40f6d9dfe11fd1287e3e3f1285c0035db946f2230e1",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/ruotsalainen-katkarapupaahtoleipa.md",
+        "language": "fi",
+        "slug": "ruotsalainen-katkarapupaahtoleipa",
+        "sha256": "0bca7df568bc89ede2611d7a70ce8b3dbc2d7877807088d230de4850c5b0a8bb",
+        "semantic_sha256": "3027af6ed76871a03d78dc10e5560e5b39d0cefece2392c164a8587649413895"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/ruotsalainen-katkarapupaahtoleipa.md",
+        "language": "en",
+        "slug": "swedish-shrimp-toast-skagen",
+        "sha256": "383ad27f153d49ce2b5a34e4468c9c29ffd2bf0d700d95122d2644d4db316db4",
+        "semantic_sha256": "0e0e3e518dbd30886b4121a49c459d33ec0a7d728070fcac9ce8af9fc882f1e4"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/ruotsalainen-katkarapupaahtoleipa.md",
+        "language": "sv",
+        "slug": "toast-skagen-med-rakor-och-dill",
+        "sha256": "1290cabd382e3459bf1a767de1f622fae8184aad45573a2378f63e5a7642bf31",
+        "semantic_sha256": "2bd01b8ff081bb9194d8e96c7f1c5e8ef85d6f3b18513a2228ee30fd68fd5196"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/ruotsalainen-katkarapupaahtoleipa.md",
+        "language": "th",
+        "slug": "khanom-pang-ping-na-kung-sawiden",
+        "sha256": "6524427bc313d762482314d6a938d38abbafe94badc23f82386649caac2f36fb",
+        "semantic_sha256": "e382a0940d06229bae9d52130183fe7b3f0b81dbbc93579dc15bddabda200a6e"
+      }
+    ],
+    "nutrition_sha256": "ae910e629a053115ba361180a6138be1da7c80aa7fda95b4894748f29ec611f7",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}

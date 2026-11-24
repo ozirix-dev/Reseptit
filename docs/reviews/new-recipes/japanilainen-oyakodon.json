@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "recipe_id": "japanilainen-oyakodon",
+  "source_path": "reseptit/paaruoat/japanilainen-oyakodon.md",
+  "source_sha256": "f98bd2a41047b7b050004eeb7327dacecdb26c8335d46980597840cf52db8c9e",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.justonecookbook.com/oyakodon/",
+      "https://akaprod-www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/japanilainen-oyakodon.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Broilerin paksuimmat palat vähintään 74 °C. Muna hyydytetään kauttaaltaan."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 35 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Käyttövalmiin kalapohjaisen dashin koostumus riippuu valmisteesta. Soveltuvaa lähderiviä ei löytynyt."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Lyhytjyväisen riisin lajike, kypsennys ja soveltuva mitattu GI eivät ole sidottuja annokseen. Dashista puuttuu ravintolähderivi."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": null,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/japanilainen-oyakodon.webp",
+    "bytes": 176276,
+    "sha256": "635961b11e03ffee500b70d01cfdd74e332090ff6343326ffaef42a83c4f92e8",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/japanilainen-oyakodon.md",
+        "language": "fi",
+        "slug": "japanilainen-oyakodon",
+        "sha256": "f98bd2a41047b7b050004eeb7327dacecdb26c8335d46980597840cf52db8c9e",
+        "semantic_sha256": "a72184e8e76010155626b51fd65d2120ae7bb9f39c451210a8e37f0e825e56bd"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/japanilainen-oyakodon.md",
+        "language": "en",
+        "slug": "japanese-chicken-egg-rice-bowl-oyakodon",
+        "sha256": "8c2d3f8c412a2ab558b0a79e681cb038a231ec333fa052821c2616fbad6a6620",
+        "semantic_sha256": "44fff5f6e3da2572fbed3fac83fcd6e38380bab228aad035d0a66adca2d6e922"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/japanilainen-oyakodon.md",
+        "language": "sv",
+        "slug": "japansk-oyakodon-med-kyckling",
+        "sha256": "5c4c7622a9dcfe0d701a8f69e104ed6ac8ba5cf56a6cbd163a8cabb72f8eba42",
+        "semantic_sha256": "f4195bc7591f267fa6c4f598fbdd1a0b2d7f5d06f3d2d10848f5be0472c5a9b5"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/japanilainen-oyakodon.md",
+        "language": "th",
+        "slug": "khao-na-kai-khai-oyakodon",
+        "sha256": "554c8e90766c3de66e82da70b6992f43397e42eaa297c02e2b19c824a4e7c458",
+        "semantic_sha256": "224eca329d2dd94e9ae857a92ea248bff89e21171a5cdf700c29e18c1bb2f126"
+      }
+    ],
+    "nutrition_sha256": "8f7710c29d88c29d0e6d02da105fb83e05207f9b56517d284415c6d360de599c",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}

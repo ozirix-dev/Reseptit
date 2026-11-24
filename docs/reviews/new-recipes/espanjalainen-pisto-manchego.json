@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "recipe_id": "espanjalainen-pisto-manchego",
+  "source_path": "reseptit/paaruoat/espanjalainen-pisto-manchego.md",
+  "source_sha256": "99d5e02f7108f69d52faf325e17766cb91df5a9da55d48227462e91df873b730",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.spain.info/en/recipe/pisto-manchego-with-eggs/",
+      "https://akaprod-www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/espanjalainen-pisto-manchego.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Hyytynyt keltuainen ja valkuainen jokaisessa munassa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 50 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Pitkään haudutetun paprika-kesäkurpitsa-tomaattiseoksen soveltuva GI-lähde puuttuu."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 10.42,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/espanjalainen-pisto-manchego.webp",
+    "bytes": 193742,
+    "sha256": "4af0405de88af28da3792587759ba7bee7321be9a30855cf4538701472c06ff7",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/espanjalainen-pisto-manchego.md",
+        "language": "fi",
+        "slug": "espanjalainen-pisto-manchego",
+        "sha256": "99d5e02f7108f69d52faf325e17766cb91df5a9da55d48227462e91df873b730",
+        "semantic_sha256": "7e46d24799b2bd4b043c5e7b3d3cc2c61468c5802da5ad5b9e72696fe4a4b333"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/espanjalainen-pisto-manchego.md",
+        "language": "en",
+        "slug": "spanish-pisto-manchego-with-eggs",
+        "sha256": "507047800139a5641768e145f771070b3843f57ddaa93c116a171b3b1f69945b",
+        "semantic_sha256": "47a50eccb5e7287a0937b08fb358769779dff86fc659fb9357e6ce98d1ecc6bf"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/espanjalainen-pisto-manchego.md",
+        "language": "sv",
+        "slug": "spansk-pisto-manchego-med-agg",
+        "sha256": "0bfc020ed7b60a0794d9a80739d53c0290c4732a247aa42c465ba3b747d2768c",
+        "semantic_sha256": "1a0cd86f79e6f16349e5d06b06ac88e51a2d93260071a4e978cdf9bd01d3b00f"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/espanjalainen-pisto-manchego.md",
+        "language": "th",
+        "slug": "satu-phak-spen-khai-dao-pisto",
+        "sha256": "b1a4bff9300376b60da18ae538bf1ca2f1f6deb7be0a5d4c640971de5d6579d0",
+        "semantic_sha256": "d0385816e307335e16c7f082ec8ba28c3f08416ba534ffffc05f0dcfb4ea7d17"
+      }
+    ],
+    "nutrition_sha256": "9b1be67f13086032b2dd2443d2550150df592e3435ff454ee8ae85daade186a1",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}

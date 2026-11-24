@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "recipe_id": "islantilainen-kala-perunamuhennos",
+  "source_path": "reseptit/paaruoat/islantilainen-kala-perunamuhennos.md",
+  "source_sha256": "ed71af5a0ed02d6f6e149f59bf1c3e023461745cba80e65e4784323dc566b462",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://yourfriendinreykjavik.com/traditional-food-in-iceland-plokkfiskur/",
+      "https://akaprod-www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/islantilainen-kala-perunamuhennos.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Turskalle vähintään 63 °C sisälämpö."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 45 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Keitetyn perunan lajiketta ja kypsennysolosuhteita vastaava GI sekä maitokastikkeen ja perunan annoskohtainen sidonta puuttuvat."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 34.97,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/islantilainen-kala-perunamuhennos.webp",
+    "bytes": 147718,
+    "sha256": "29a14a6492b806af750c494b41685c41694a03d9ab26913b5e7cc7ab873c5721",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/islantilainen-kala-perunamuhennos.md",
+        "language": "fi",
+        "slug": "islantilainen-kala-perunamuhennos",
+        "sha256": "ed71af5a0ed02d6f6e149f59bf1c3e023461745cba80e65e4784323dc566b462",
+        "semantic_sha256": "964a3f2b51a9f591e7e26115617f2b13879412761165ffff381f5275f36ba596"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/islantilainen-kala-perunamuhennos.md",
+        "language": "en",
+        "slug": "icelandic-fish-potato-stew",
+        "sha256": "2aca62921a2fe0a3127777d13cfd0eb5f287f2c0daab3a87283fd616506fb561",
+        "semantic_sha256": "fa04ecf1027bdbec259fbc74305466e608f0214b33da214281c281690a2ae731"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/islantilainen-kala-perunamuhennos.md",
+        "language": "sv",
+        "slug": "islandsk-fisk-och-potatisstuvning",
+        "sha256": "48195dc13468bb1dfec9bdca3bb39ea84790043c480174b70717af09326fd60b",
+        "semantic_sha256": "32b903b49fac5a4d24cdc73f4442248f4131fa3cdbe540a9d2e3475fa1bcb3de"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/islantilainen-kala-perunamuhennos.md",
+        "language": "th",
+        "slug": "satu-pla-khot-manfarang-aislaen",
+        "sha256": "0774d83efb72608a5708e1d3b49b1e47cce5f3e36b1a88f0ddef6c00bb56cc9d",
+        "semantic_sha256": "f35a5496d19542cf9fde80f191df80d409e14168e47d11862a6b1a94180bf304"
+      }
+    ],
+    "nutrition_sha256": "1211767e7d6d75672ee2cf8acf710e05812a000078c1e9c564d38c6ef199df07",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}

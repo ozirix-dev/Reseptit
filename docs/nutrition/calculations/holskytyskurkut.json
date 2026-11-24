@@ -1,0 +1,178 @@
+{
+  "recipeId": "holskytyskurkut",
+  "sourceHash": "e2bcc407fdc941d1f201b65d9817276e640445a49b4531c0ae570f3511e4cb83",
+  "calculatedAt": "2026-11-24",
+  "batchId": "batch-33307",
+  "servings": 4,
+  "scope": "Yksi reseptin 4 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "raakaa kurkkua",
+      "amount": 250,
+      "unit": "g",
+      "state": "raakaa kurkkua",
+      "record": {
+        "id": "fineli-346-release-20",
+        "name": "KURKKU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/346",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raakaa kurkkua",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.4,
+          "FIBT": 1.1,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.4,
+          "fibre": 1.1,
+          "polyols": 0,
+          "protein": 0.65,
+          "fat": 0.1
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: raakaa kurkkua.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "suolaa",
+      "amount": 3,
+      "unit": "g",
+      "state": "suolaa",
+      "matchEvidence": "Ruokasuola.",
+      "excludedReason": "Natriumkloridi ei sisällä tässä laskettavia makroravintoaineita.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Natrium ei kuulu neljään makrokenttään."
+    },
+    {
+      "item": "väkiviinaetikkaa, 5 % happoa",
+      "amount": 15,
+      "unit": "g",
+      "state": "väkiviinaetikkaa, 5 % happoa",
+      "record": {
+        "id": "afcd-F009498-release-3",
+        "name": "Vinegar (except balsamic vinegar)",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "väkiviinaetikkaa, 5 % happoa",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: väkiviinaetikkaa, 5 % happoa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "sokeria",
+      "amount": 15,
+      "unit": "g",
+      "state": "sokeria",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "sokeria",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 99.9,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: sokeria.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "tuoretta tilliä",
+      "amount": 4,
+      "unit": "g",
+      "state": "tuoretta tilliä",
+      "record": {
+        "id": "fineli-369-release-20",
+        "name": "TILLI, TUORE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/369",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "tuoretta tilliä",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.9,
+          "FIBT": 2.8,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.9,
+          "fibre": 2.8,
+          "polyols": 0,
+          "protein": 3.69,
+          "fat": 0.8
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tuoretta tilliä.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    }
+  ]
+}

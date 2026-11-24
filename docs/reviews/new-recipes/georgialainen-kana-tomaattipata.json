@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "recipe_id": "georgialainen-kana-tomaattipata",
+  "source_path": "reseptit/paaruoat/georgialainen-kana-tomaattipata.md",
+  "source_sha256": "78e9afbcbe06034eb74324114cd5bf8bc24acd3fc5e79907a4535e9fa8c15521",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://georgia.travel/chakhokhbili",
+      "https://akaprod-www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/georgialainen-kana-tomaattipata.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Broilerin paksuimmat palat vähintään 74 °C."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 55 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Haudutetun sipuli-tomaattiseoksen valmistusta vastaavia GI-lähteitä ei ole sidottu reseptiin."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 9.09,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/georgialainen-kana-tomaattipata.webp",
+    "bytes": 313806,
+    "sha256": "4d0555cd86043fa1cb24ae1fe49e97f58ac3cad8fc27a0bf23ab16d6d6fd96fb",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/georgialainen-kana-tomaattipata.md",
+        "language": "fi",
+        "slug": "georgialainen-kana-tomaattipata",
+        "sha256": "78e9afbcbe06034eb74324114cd5bf8bc24acd3fc5e79907a4535e9fa8c15521",
+        "semantic_sha256": "2de7db13875ce2c681187058a1ad31366be593c7b4304d0dbc196dfac0aadb73"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/georgialainen-kana-tomaattipata.md",
+        "language": "en",
+        "slug": "georgian-chicken-tomato-stew-chakhokhbili",
+        "sha256": "1ac7dff46e9ab6293c9b89864b6959752ee027e1f32bbd7c3da7ae3dad6debd0",
+        "semantic_sha256": "72883f00d8b41ee6cda5a55ec17c28ec3e431e9e80600ab42685e5612f944a85"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/georgialainen-kana-tomaattipata.md",
+        "language": "sv",
+        "slug": "georgisk-kycklinggryta-med-tomat",
+        "sha256": "dd2e7f508f50046d918449d9e475e5551213397dfe7eeec01c8008edf89810ba",
+        "semantic_sha256": "f5d7b02146abb1f0c3209ca3d3cec4ef4eaf3dc909cfee7bf4e16c9fdc85fa05"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/georgialainen-kana-tomaattipata.md",
+        "language": "th",
+        "slug": "satu-kai-makhuea-chakhokhbili",
+        "sha256": "75d4219fc015e3bd34981c67d8d1edceda99cd0e2efb713560887742a25022f1",
+        "semantic_sha256": "cfbca3f483d0f6b888bdd4aab1197c3d5ecbbdfbf7037dafc82aea6c13af6525"
+      }
+    ],
+    "nutrition_sha256": "540eb0a6cf01330d123e3f9e4391870190e0ab189990eadd38a6153c43cd03b2",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}

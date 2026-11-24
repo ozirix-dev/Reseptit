@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "recipe_id": "senegalilainen-lammas-maapahkinapata",
+  "source_path": "reseptit/paaruoat/senegalilainen-lammas-maapahkinapata.md",
+  "source_sha256": "1d7547c2dc5d082e749ea3d8d02236f823bf2361f1670d9e3f76d9187274d6b9",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.saveur.com/recipes/lamb-mafe/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/senegalilainen-lammas-maapahkinapata.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "6 annosta. Kokonaisajaksi on arvioitu 155 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Pitkään kypsennetyn porkkanan ja maapähkinä-tomaattikastikkeen annoskohtainen soveltuvuus julkaistuihin GI-tietueisiin puuttuu."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 9.27,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/senegalilainen-lammas-maapahkinapata.webp",
+    "bytes": 254598,
+    "sha256": "05c602858d09842b6465877bf6fa6f07af79030bfe61c9f0b55ce3be4b1850c0",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/senegalilainen-lammas-maapahkinapata.md",
+        "language": "fi",
+        "slug": "senegalilainen-lammas-maapahkinapata",
+        "sha256": "1d7547c2dc5d082e749ea3d8d02236f823bf2361f1670d9e3f76d9187274d6b9",
+        "semantic_sha256": "7a9af766891eedc3f092c3914682792769b831538bb9088d7f44a757fe8d8e5a"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/senegalilainen-lammas-maapahkinapata.md",
+        "language": "en",
+        "slug": "senegalese-lamb-peanut-stew-mafe",
+        "sha256": "1135bede48a0330d7508dc9ef8a5db852d6e0a9d54db882922854c797154e17e",
+        "semantic_sha256": "56a7cf8d96e224ca7641605f5e4df5a7e6833cf7440e696ee3cc59c034183544"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/senegalilainen-lammas-maapahkinapata.md",
+        "language": "sv",
+        "slug": "senegalesisk-lammgryta-med-jordnotter",
+        "sha256": "2aeb79759585373d288ebae7af0056b5b53feb3c554776e3bfb1c6e6fcc5f707",
+        "semantic_sha256": "7b79d21033c56586cbb7918e43d08b31cd92e78c2c741a179c8447b46f4b9746"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/senegalilainen-lammas-maapahkinapata.md",
+        "language": "th",
+        "slug": "satu-kae-thua-lisong-mafe",
+        "sha256": "89c3e8d6bf1f01065849a57c670a92fc790613708825b91651f0012a329ef014",
+        "semantic_sha256": "7a5dd77ada8e74ae2c8a4d4f34bb486d607d35788c9b6caa73e39ca1881cb630"
+      }
+    ],
+    "nutrition_sha256": "89a187de9cf4bf1f6270720295d92c8b2475fea52aa8f2dcd4a973f20512f009",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}

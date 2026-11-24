@@ -1,0 +1,222 @@
+{
+  "recipeId": "ruotsalainen-katkarapupaahtoleipa",
+  "sourceHash": "e9002611478755428af6a10c255175a44d46fbdfc88dd8065075ebf308493396",
+  "calculatedAt": "2026-11-24",
+  "batchId": "batch-33307",
+  "servings": 4,
+  "scope": "Yksi reseptin 4 annoksesta. Mukana reseptiin määritellyt käyttömäärät, ilman erillisiä lisukkeita.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kypsää kuorittua katkarapua",
+      "amount": 300,
+      "unit": "g",
+      "state": "kypsää kuorittua katkarapua",
+      "record": {
+        "id": "afcd-F007432-release-3",
+        "name": "Prawn, flesh, cooked from raw, no added fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "kypsää kuorittua katkarapua",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 27.1,
+          "fat": 1.2
+        }
+      },
+      "matchEvidence": "Kypsä kuorittu katkarapu. AFCD:n kypsä kuorittu katkarapu on koostumuksellinen vastine.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "tavallista majoneesia (noin 80 % rasvaa)",
+      "amount": 75,
+      "unit": "g",
+      "state": "tavallista majoneesia (noin 80 % rasvaa)",
+      "record": {
+        "id": "fineli-30925-release-20",
+        "name": "MAJONEESI, RASVAA 80 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30925",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "tavallista majoneesia (noin 80 % rasvaa)",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.029,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.029,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.12,
+          "fat": 81.042
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tavallista majoneesia (noin 80 % rasvaa).",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "sitruunamehua",
+      "amount": 18,
+      "unit": "g",
+      "state": "sitruunamehua",
+      "record": {
+        "id": "afcd-F004726-release-3",
+        "name": "Juice, lemon",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "sitruunamehua",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.8,
+          "polyols": 0,
+          "fibre": 2,
+          "protein": 0.6,
+          "fat": 0.1
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: sitruunamehua.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "tuoretta tilliä",
+      "amount": 10,
+      "unit": "g",
+      "state": "tuoretta tilliä",
+      "record": {
+        "id": "fineli-369-release-20",
+        "name": "TILLI, TUORE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/369",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "tuoretta tilliä",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.9,
+          "FIBT": 2.8,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.9,
+          "fibre": 2.8,
+          "polyols": 0,
+          "protein": 3.69,
+          "fat": 0.8
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: tuoretta tilliä.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "vaaleaa vehnäleipää",
+      "amount": 140,
+      "unit": "g",
+      "state": "vaaleaa vehnäleipää",
+      "record": {
+        "id": "afcd-F001463-release-3",
+        "name": "Bread, from white flour",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "vaaleaa vehnäleipää",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 46.2,
+          "polyols": 0,
+          "fibre": 3.2,
+          "protein": 9.5,
+          "fat": 2
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: vaaleaa vehnäleipää.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    },
+    {
+      "item": "suolatonta voita",
+      "amount": 15,
+      "unit": "g",
+      "state": "suolatonta voita",
+      "record": {
+        "id": "fineli-576-release-20",
+        "name": "VOI, SUOLATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/576",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "suolatonta voita",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.19,
+          "fat": 81.3
+        }
+      },
+      "matchEvidence": "Sovitus tietokannan raaka-aineriviin: suolatonta voita.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä tarkoittaa syötävää käyttöpainoa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Arvio pohjautuu punnittuihin käyttömääriin. Kypsennys- ja valumahävikkiä ei ole mitattu."
+    }
+  ]
+}

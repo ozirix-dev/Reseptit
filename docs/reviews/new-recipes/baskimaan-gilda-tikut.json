@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "recipe_id": "baskimaan-gilda-tikut",
+  "source_path": "reseptit/alkuruoat/baskimaan-gilda-tikut.md",
+  "source_sha256": "aa031e9a51fde5e88f88d6533ed0a18b8c02f2a0a78b11e9cd863e634958ac49",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.euskadi.eus/en/dishes-tapas/gilda/web01-ejeduki/en/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/baskimaan-gilda-tikut.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Käytetään kaupallisesti säilöttyjä, syöntivalmiita aineksia ja tarjoillaan kylmäketju säilyttäen."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 15 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Valutetulle etikkasäilötylle guindillalle ei löytynyt soveltuvaa, kokonaiset makrokentät kattavaa lähderiviä."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Pikkelöidyn chilin soveltuva ravintorivi ja reseptin GI-sidonta puuttuvat."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": null,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/baskimaan-gilda-tikut.webp",
+    "bytes": 139032,
+    "sha256": "b5fd7f799c1030ac009d1d540e94fef471e12f7286029aaed905b643125774e3",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/baskimaan-gilda-tikut.md",
+        "language": "fi",
+        "slug": "baskimaan-gilda-tikut",
+        "sha256": "aa031e9a51fde5e88f88d6533ed0a18b8c02f2a0a78b11e9cd863e634958ac49",
+        "semantic_sha256": "048fc810687a822b9c4ca6376c02ac74318ec918fa46855e773057dac07e6309"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/baskimaan-gilda-tikut.md",
+        "language": "en",
+        "slug": "basque-gilda-skewers",
+        "sha256": "cab0c0a811d7454e640ab6a13996c9da28eacc3bbeefe16a5f8b07681d51885a",
+        "semantic_sha256": "e4a262ef21a4ebf54291f5288aa04eea01fe379662ee987b7b18b78e393c8ce5"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/baskimaan-gilda-tikut.md",
+        "language": "sv",
+        "slug": "baskiska-gildaspett",
+        "sha256": "617b7edc3121287ebd7bc37f3eb48d69045801d66344a31a1a218c05e45c52ba",
+        "semantic_sha256": "082bd3140929516bd73ff4ed8338af83f641f3d07d1b830051fe25da21558637"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/baskimaan-gilda-tikut.md",
+        "language": "th",
+        "slug": "gilda-siap-mai-bask",
+        "sha256": "4bb1b0e6fc69cd44c0559070f42d83748c5230a73ee1877ef84fa4a2bae22a7a",
+        "semantic_sha256": "3b0ed1c6e1ae886ad4477e9ee2424d044781f221ced36c4341a9b21daf41df68"
+      }
+    ],
+    "nutrition_sha256": "8dcc052f5628a2d6d25490653ef1a352bb7eb32d656d3ed1f9d16996578b1988",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}

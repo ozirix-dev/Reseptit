@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perulainen-solterito",
+  "source_path": "reseptit/alkuruoat/perulainen-solterito.md",
+  "source_sha256": "651b5c65e5bde961126fd3662cd5e0d4029fcf42aff324fcb74d1be74cf2f7fb",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://perudelights.com/solterito-the-traditional-way-our-quinoa-version/",
+      "https://www.cdc.gov/listeria/prevention/",
+      "https://www.fda.gov/food/buy-store-serve-safe-food/queso-fresco-type-cheeses-consumer-guidance"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/perulainen-solterito.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Pakastekasvikset kypsennetään pakkauksen mukaan. Kylmä queso fresco korvataan riskiryhmille pastöroidusta maidosta tehdyllä mozzarellalla CDC:n ohjeen mukaisesti."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 30 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Queso frescolle ei löytynyt laskurissa varmennettua täydellistä ravintoriviä."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Maissin ja härkäpavun lajikekohtainen GI sekä käyttövalmiin queso frescon ravintorivi puuttuvat."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": null,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/perulainen-solterito.webp",
+    "bytes": 230926,
+    "sha256": "92055c792ec0dc9c452f675e59674b72aef80de13acaaa06038723fc382e8014",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/perulainen-solterito.md",
+        "language": "fi",
+        "slug": "perulainen-solterito",
+        "sha256": "651b5c65e5bde961126fd3662cd5e0d4029fcf42aff324fcb74d1be74cf2f7fb",
+        "semantic_sha256": "b6dcff10bf31cce5703a0b4e6791ae94dc5be0d30fc9f47a53bdb1bd0cca97b4"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/perulainen-solterito.md",
+        "language": "en",
+        "slug": "peruvian-broad-bean-corn-salad-solterito",
+        "sha256": "0e0fee23b8b8e9d19250a6f02b961dcb54c903aad5b86063993fc2e4b2c7261b",
+        "semantic_sha256": "32212e72349f2230b228e4ac9023e640a6dbad15f66d9f3e424c3c78f55c1d8d"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/perulainen-solterito.md",
+        "language": "sv",
+        "slug": "peruansk-bonbonssallad-solterito",
+        "sha256": "a16b2882dfa4fdae9bffdaf39e9a064fef57d53edb0b707ad45c4a63eca0bbe4",
+        "semantic_sha256": "84a9a051829bf3ee7267ba4134df23449e7631fd1d62ca0659fed66a5e644683"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/perulainen-solterito.md",
+        "language": "th",
+        "slug": "salat-thua-pak-a-khao-phot-solterito",
+        "sha256": "ed861a6f860811956518e8931c2a3996f071307689c0213308dfbdfad6716525",
+        "semantic_sha256": "848cd40895abf97bf1587f3fc8842e497860628a42c687c402c25ae824950d9b"
+      }
+    ],
+    "nutrition_sha256": "be1db807265aac86cdc5db360338521be5e50003d2daf7dbb98af85b6013ef76",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}

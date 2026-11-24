@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "recipe_id": "japanilainen-sunomono",
+  "source_path": "reseptit/alkuruoat/japanilainen-sunomono.md",
+  "source_sha256": "a8b6550e53c3930dec562d572d8f5bf4f61483182882e3edd4e0dad279d4cd04",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.justonecookbook.com/sunomono-with-cucumber-and-wakame/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/japanilainen-sunomono.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 25 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kuivatulle wakamelle ei löytynyt täydellistä, valmistusmuodon mukaista makroriviä."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Wakamen tilaa vastaava ravintorivi ja yhdistelmän soveltuva mitattu GI puuttuvat."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": null,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/japanilainen-sunomono.webp",
+    "bytes": 164642,
+    "sha256": "0d39fcb1cbd1d08ca160d8053657451a59d1e7aaba319cc691944f6c04f2922d",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/japanilainen-sunomono.md",
+        "language": "fi",
+        "slug": "japanilainen-sunomono",
+        "sha256": "a8b6550e53c3930dec562d572d8f5bf4f61483182882e3edd4e0dad279d4cd04",
+        "semantic_sha256": "bc6d89bea9afa27a5eab5a09d81db56a0dd05ac929f8ff9d5a50dc5b61eecc66"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/japanilainen-sunomono.md",
+        "language": "en",
+        "slug": "japanese-cucumber-wakame-sunomono",
+        "sha256": "73123116f91b570b7dba8345eb1c195bd48f47f2adab86659d67c5a80584550e",
+        "semantic_sha256": "0123dc75e94a2e1810aba0cba06ea0dab4a16108cf8da127cc3dee3d6b1c969b"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/japanilainen-sunomono.md",
+        "language": "sv",
+        "slug": "japansk-gurk-wakamesallad-sunomono",
+        "sha256": "b57be6ddce3971ed4a62ce4f3248f0eebe5f3d6488d2bb5ef5262859bd0bbf67",
+        "semantic_sha256": "027ba96a28852663ba3cfe78ede039816ab3a780c5060e60261a3c55d258ee45"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/japanilainen-sunomono.md",
+        "language": "th",
+        "slug": "salat-taengkwa-wakame-sunomono",
+        "sha256": "27d57614d206e28012dd54df14440d4af0db52b146d298d19a733f9a730650fe",
+        "semantic_sha256": "0d3d07d7e9efe1d5e16f9770e113a98ecff7db1548d83ffa3f846fb74c3986eb"
+      }
+    ],
+    "nutrition_sha256": "ab3919dc19dad8715f88f0499c60b40d758f77d1fd4ae2208f376ac56e2dee14",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}

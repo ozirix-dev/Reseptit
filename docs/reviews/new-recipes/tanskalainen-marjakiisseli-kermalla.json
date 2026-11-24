@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "recipe_id": "tanskalainen-marjakiisseli-kermalla",
+  "source_path": "reseptit/jalkiruoat/tanskalainen-marjakiisseli-kermalla.md",
+  "source_sha256": "03694a612b4986c98de37834195c4ab047526d29314421fef4ba3aa2028a42ae",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.arla.dk/opskrifter/rodgrod-med-flode/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/tanskalainen-marjakiisseli-kermalla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ohje on laadittu tuoreille marjoille, jotka kypsennetään. Kylmä maitokerma annostellaan tarjoiltaessa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "6 annosta. Kokonaisajaksi on arvioitu 90 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Marja-sokeriseoksen ja lyhyesti suurustetun perunatärkkelyksen soveltuvaa GI-lähdettä ei ole varmennettu."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 22.34,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/jalkiruoat/tanskalainen-marjakiisseli-kermalla.webp",
+    "bytes": 140152,
+    "sha256": "ced01dd29ddf2cc086f25365706919ff99ad86d3578017112ca2a1eef5259ead",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/jalkiruoat/tanskalainen-marjakiisseli-kermalla.md",
+        "language": "fi",
+        "slug": "tanskalainen-marjakiisseli-kermalla",
+        "sha256": "03694a612b4986c98de37834195c4ab047526d29314421fef4ba3aa2028a42ae",
+        "semantic_sha256": "952c57adce523a6a442ea977a5b62853fbf7f9d7204513ae15f5c3ef123abb90"
+      },
+      {
+        "path": "kaannokset/en/jalkiruoat/tanskalainen-marjakiisseli-kermalla.md",
+        "language": "en",
+        "slug": "danish-berry-pudding-with-cream",
+        "sha256": "f9a94967b11cb08bbecda85b379ff8bbadbadd0ac960f4bc599aa80d36a66cc1",
+        "semantic_sha256": "7a0a8006621673ec105bbf3927a97f09a27b9703d91be970d68a9282d167a213"
+      },
+      {
+        "path": "kaannokset/sv/jalkiruoat/tanskalainen-marjakiisseli-kermalla.md",
+        "language": "sv",
+        "slug": "dansk-rodgrod-med-gradde",
+        "sha256": "f14fb18e2efbe781e4cbe972e3019c700c05c892b2ee941f54a11f1ba36420aa",
+        "semantic_sha256": "73cd78aed0089ad4cacb653367c5f17bf361b01b57892f83f5adde50b75c25cd"
+      },
+      {
+        "path": "kaannokset/th/jalkiruoat/tanskalainen-marjakiisseli-kermalla.md",
+        "language": "th",
+        "slug": "phutding-boeri-khrim-daenmak",
+        "sha256": "21474e1bfc7040587bae4fe0324898d4535fd82eff121730debf1fae0635fde6",
+        "semantic_sha256": "26c4728ef58fc6da3b090e2a5aa79095888557b5e5e55d9958415e103797db22"
+      }
+    ],
+    "nutrition_sha256": "4529359e607df1b0b5cdbe16747362455cd360404162694349166f7dc3bbe96d",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}

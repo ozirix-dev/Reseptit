@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "recipe_id": "toscanalainen-panzanella",
+  "source_path": "reseptit/alkuruoat/toscanalainen-panzanella.md",
+  "source_sha256": "542b8c219657e3dc62d5d635a4f4bcf3b149d4e35792ebc0b85140c8cb7aa3ce",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.lacucinaitaliana.com/italian-food/how-to-cook/home-cooking-panzanella-tuscanys-classic-bread-salad"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/toscanalainen-panzanella.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 70 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Kostutetun kuivahtaneen italialaistyylisen vehnäleivän tuotetta ja valmistustapaa vastaavaa GI:tä ei ole varmennettu."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 35.29,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/toscanalainen-panzanella.webp",
+    "bytes": 280692,
+    "sha256": "ea8e6495d3686a0eca87a618b9c6798403ed25ace32dd6bb1b4e25c9f58c582c",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/toscanalainen-panzanella.md",
+        "language": "fi",
+        "slug": "toscanalainen-panzanella",
+        "sha256": "542b8c219657e3dc62d5d635a4f4bcf3b149d4e35792ebc0b85140c8cb7aa3ce",
+        "semantic_sha256": "2e3b4dd73b8b63dd0cf9b360f60fc444ca81b816ff0441f18e7f66480ae42c8c"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/toscanalainen-panzanella.md",
+        "language": "en",
+        "slug": "tuscan-bread-salad-panzanella",
+        "sha256": "1bc57f9c3d73c63ed615e32ffb386f26acbd516034011d638a45e4e96a35e79b",
+        "semantic_sha256": "b91d5a06a20a143f761a7133d640a7a84f93000cab17b0d58fd36985567a2dd6"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/toscanalainen-panzanella.md",
+        "language": "sv",
+        "slug": "toskansk-brodsallad-panzanella",
+        "sha256": "22be322f789231eaaef9187da463f15ffdc8ddbcec98d115a4ea3660b94a88a0",
+        "semantic_sha256": "1ddd25b940381aeed301a1b8fec31a48dbedc935aaae22e78a0001707833e69b"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/toscanalainen-panzanella.md",
+        "language": "th",
+        "slug": "salat-khanompang-thatkani-panzanella",
+        "sha256": "1623b3d83a40541c0f6a48190d803730d714acbd8605c3d3a9004b38a4f962cf",
+        "semantic_sha256": "5fd13b7676107b872d2f1c81cd3ea09a97a7cbce619543b0e1bf96575b8513d3"
+      }
+    ],
+    "nutrition_sha256": "0cc849c79b6609e2decde38d9fb71b787f15d05f51cdd66e60418beee201a0d7",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}

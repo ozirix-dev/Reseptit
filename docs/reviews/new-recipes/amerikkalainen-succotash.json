@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "recipe_id": "amerikkalainen-succotash",
+  "source_path": "reseptit/alkuruoat/amerikkalainen-succotash.md",
+  "source_sha256": "3d0fe092343ecdce566bb0a638ecce86342555f8ad27690dad8565163e3bd3d5",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://fcs.mgcafe.uky.edu/NEP-2026-Calendar/Succotash"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/amerikkalainen-succotash.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 30 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Nuoren pakastetun limapavun tiedot puuttuvat. Kuivatun kypsän limapavun ravintoprofiili ei vastaa sitä."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Nuoren pakastetun limapavun ravintorivi sekä pavun ja maissin valmistusta vastaava GI-sidonta puuttuvat."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": null,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/amerikkalainen-succotash.webp",
+    "bytes": 177714,
+    "sha256": "caf69b28581221bc8a2128802a6bb86eb79c5bf61c1cb80861da2b57e0d7dac6",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/amerikkalainen-succotash.md",
+        "language": "fi",
+        "slug": "amerikkalainen-succotash",
+        "sha256": "3d0fe092343ecdce566bb0a638ecce86342555f8ad27690dad8565163e3bd3d5",
+        "semantic_sha256": "2a27925e275a83da9b38fb597c5816f3127d1ce7d5d361164c12b8fe53102459"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/amerikkalainen-succotash.md",
+        "language": "en",
+        "slug": "american-corn-lima-bean-succotash",
+        "sha256": "402a61ae0a10d93829ebbdecd5bedf53f6d10f4139e048249db324865ddf2238",
+        "semantic_sha256": "2ca1a6a45fb23eba851e946c7d1b98b8cbfbbf29595052bdcee1dc067ed6b93f"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/amerikkalainen-succotash.md",
+        "language": "sv",
+        "slug": "amerikansk-succotash-med-majs",
+        "sha256": "914bd1db866d7d1edb0050ea6577e851f06dc2503afb1d4a013ff3bcddb6dc72",
+        "semantic_sha256": "54ba99a03009745fbd68b4a42c7195fb9f9afaf3532436634ff17de103252be8"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/amerikkalainen-succotash.md",
+        "language": "th",
+        "slug": "khao-phot-phat-thua-lima-succotash",
+        "sha256": "865453f2277efc58ea780ede7cdf67dba5bdc5b49ae0b14e032b637e94e89e9a",
+        "semantic_sha256": "c7afd08104fbe860b01dbd8b8c83c94248e5118fcc69e6689fe3df1f468fa958"
+      }
+    ],
+    "nutrition_sha256": "1a7bc4048e9caeb7ee7a9f1e5190be9a09ad1244a0bf3d70ab8e661c9db71ba8",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}

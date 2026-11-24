@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "recipe_id": "holskytyskurkut",
+  "source_path": "reseptit/alkuruoat/holskytyskurkut.md",
+  "source_sha256": "faa9eb30d233e2e3c80ceb9c49439c3f828930d9c04404b41792424980fa07c1",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/holskytyskurkut/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/holskytyskurkut.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "4 annosta. Kokonaisajaksi on arvioitu 20 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Pääosa imeytyvästä hiilihydraatista tulee sokerista ja tuoreesta kurkusta. Valutuksen ja annokseen päätyvän etikkaliemen vaikutusta ei ole mitattu."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 4.63,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/holskytyskurkut.webp",
+    "bytes": 176432,
+    "sha256": "2137fb8eb47b088a5c0186a665c5cc1d96d5dd4c85dc505dc2f618f6cfb00dd8",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/holskytyskurkut.md",
+        "language": "fi",
+        "slug": "holskytyskurkut",
+        "sha256": "faa9eb30d233e2e3c80ceb9c49439c3f828930d9c04404b41792424980fa07c1",
+        "semantic_sha256": "409fb6fb80482fc950cf14df6d4fc4a7658ac36ec6ef86857e0c2faa5e299151"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/holskytyskurkut.md",
+        "language": "en",
+        "slug": "finnish-shaken-dill-cucumbers",
+        "sha256": "e709e60c552fcd609fbeff6e32d60c5c434d5eed893ee26bef84d7afed53b311",
+        "semantic_sha256": "b6845832e3165a45cfd5eff940dca7665954f748055e294d3f6fd6f244f453f1"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/holskytyskurkut.md",
+        "language": "sv",
+        "slug": "finsk-skakad-dillgurka",
+        "sha256": "8b34946814537e732067eb8d78f3b6e3cf0439b74f136d53a357f80ef936cfee",
+        "semantic_sha256": "50307f05a3d9512e34cc6cfa74e28520035d160ec6c2bffc1369862c698b100d"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/holskytyskurkut.md",
+        "language": "th",
+        "slug": "taengkwa-khayao-dill-finlaen",
+        "sha256": "3556935ad96787f94e6fb2bb64666a13a968c6595add1abd5fc346505d0bf215",
+        "semantic_sha256": "dd45b72140077a6ab5bee4377d29c92969f10e13ca3790987b44c893cbd6e90c"
+      }
+    ],
+    "nutrition_sha256": "534118080975be74554c460761c5a5abf6003aa8b0de31364c5a12e5b68a5e8d",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "recipe_id": "turkkilainen-punainen-linssikeitto",
+  "source_path": "reseptit/alkuruoat/turkkilainen-punainen-linssikeitto.md",
+  "source_sha256": "bc1dbb19c0cb1591e4ea4402457804c18efdeb83623936f381490dd4671a3a85",
+  "decision": "approved",
+  "reviewed_by": "Chat-1",
+  "reviewed_at": "2026-11-24",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://ozlemsturkishtable.com/2010/11/hearty-red-lentil-soup-kirmizi-mercimek-corbasi/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/turkkilainen-punainen-linssikeitto.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistus kohdistui Reseptit-mainiin 92679246cb81bc4b1dad891218cb7cbb9ca08802, neljän kielen slug-tunnuksiin ja avoimien PR:ien tiedostoluetteloihin. Resepti on pilotin oma lähteistetty sovitus."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Valmistuslähteen ainesosat on sovitettu tämän reseptin annoskokoon ja ilmoitettu syötävinä grammoina. Ainemäärät ja käyttötavat pyydetään riippumattomaan katselmointiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Ohjeteksti kuvaa lähteestä sovitetun valmistustavan. Recipavo ei ole valmistanut koeerää."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ohje perustuu kotikeittiön ripeään valmisteluun. Kylmänä tarjottava ruoka säilytetään jääkaapissa, kuumana tarjottava tarjoillaan kypsänä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "6 annosta. Kokonaisajaksi on arvioitu 55 minuuttia, sisältäen reseptissä ilmoitetun kypsennyksen ja levon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Nykyinen ravintolaskuri vahvisti kaikki neljä annosarviota. Katso ainesosakohtaiset lähdesidonnat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Halkaistujen punaisten linssien, perunan ja riisin yhdistelmä soseutetaan. Keitetyn kokonaisen linssin GI ei vastaa tätä valmistusta."
+    }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 26.8,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/turkkilainen-punainen-linssikeitto.webp",
+    "bytes": 136374,
+    "sha256": "40d303a3a4de10dcddaa45aa739d535da740fce16ed889fe431c0b01c3e7b11e",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 1536,
+    "height": 1024,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/turkkilainen-punainen-linssikeitto.md",
+        "language": "fi",
+        "slug": "turkkilainen-punainen-linssikeitto",
+        "sha256": "bc1dbb19c0cb1591e4ea4402457804c18efdeb83623936f381490dd4671a3a85",
+        "semantic_sha256": "e0229eb259c832ae4c3f759a91fa04b69e1fa9088afa4777d2044dc4eaca9ef6"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/turkkilainen-punainen-linssikeitto.md",
+        "language": "en",
+        "slug": "turkish-red-lentil-soup-mercimek",
+        "sha256": "6540d2942bc22926bb5a30acc09367e31f904999e45090177b730520edbad2e9",
+        "semantic_sha256": "237505121c163263f838979232a908b2c8c5720844b9106bddab4ba9375c5691"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/turkkilainen-punainen-linssikeitto.md",
+        "language": "sv",
+        "slug": "turkisk-rod-linssoppa-mercimek",
+        "sha256": "70e8afa5fe6564661151e1d27457efab566d5cc1628db87dfe2cd1254249898b",
+        "semantic_sha256": "c5d416fd1e840afc8c48d2ed9587c010da048844d15823ad0a1b54159e626dc3"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/turkkilainen-punainen-linssikeitto.md",
+        "language": "th",
+        "slug": "sup-lenthil-daeng-turki-mercimek",
+        "sha256": "ee02f97e02f449edf7e65c8f32b17720d22c762d40fde53679bb03ffdbf35e9d",
+        "semantic_sha256": "80de9f366bf88acd11e4ac7473ac7e292b492e193450bb1627eceded00768ad3"
+      }
+    ],
+    "nutrition_sha256": "5ac4958563ea278ac7a34b04a743b739c5c047e847d42d5d37a6b870eea5017a",
+    "batch_id": "batch-33307",
+    "transform": "Julkaisutilat, FI:n käännöstilat ja hyväksyntäevidenssi. Julkaistut reseptitiedostot ja laskelmat sidotaan yllä oleviin SHA-256-tiivisteisiin.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788"
+}
