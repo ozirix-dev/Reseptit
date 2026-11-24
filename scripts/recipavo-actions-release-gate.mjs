@@ -212,7 +212,7 @@ async function main() {
   else if(mode==='live') {
     result=await readLiveRevision({sha});
     if(process.env.GITHUB_OUTPUT) await writeFile(process.env.GITHUB_OUTPUT,
-      `already_live=${result.alreadyLive}\n`,{flag:'a'});
+      `already_live=${result.alreadyLive}\nprevious_live_sha=${result.liveSha}\n`,{flag:'a'});
   } else result=await verifyArtifact(path.resolve(location||'site/dist'),sha,{stamp:mode==='stamp'});
   console.log('PASS: '+JSON.stringify(result));
 }

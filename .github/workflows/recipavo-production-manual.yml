@@ -152,6 +152,7 @@ jobs:
         working-directory: site
         env:
           RELEASE_SHA: ${{ inputs.release_sha }}
+          RECIPAVO_PREVIOUS_LIVE_SHA: ${{ steps.live.outputs.previous_live_sha }}
           RECIPAVO_BUILD_TARGET: production
         run: |
           set -euo pipefail

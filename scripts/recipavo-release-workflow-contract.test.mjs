@@ -47,6 +47,9 @@ export function checkReleaseContract(yaml) {
   must(buildStage.includes('RECIPAVO_BUILD_TARGET: production'),'production build target');
   must(buildStage.includes("VITE_RECIPAVO_FEEDBACK_ENABLED: 'false'"),'feedback UI default OFF');
   must(buildStage.includes('unset RECIPAVO_PREVIEW_ORIGIN'),'no inherited preview in production build');
+  const postflight = after.slice(after.indexOf('Verify production pages, SEO, assets, SHA and Functions GET 405'));
+  must(postflight.includes('RECIPAVO_PREVIOUS_LIVE_SHA: ${{ steps.live.outputs.previous_live_sha }}'),'previous revision from pre-upload probe');
+  must(after.match(/pages deploy dist/g)?.length===1 && !postflight.includes('pages deploy'),'postflight must not redeploy');
   must(after.includes('body.error !== "method_not_allowed"'),'Pages Function 405 verification');
   return true;
 }
@@ -84,6 +87,8 @@ test('no preview or wrong branch/hash, feedback or unconditional deploy',()=>{
     original.replace('--commit-hash "$RELEASE_SHA"','--commit-hash main'),
     original.replace('RECIPAVO_BUILD_TARGET: production','RECIPAVO_BUILD_TARGET: preview'),
     original.replace("VITE_RECIPAVO_FEEDBACK_ENABLED: 'false'","VITE_RECIPAVO_FEEDBACK_ENABLED: 'true'"),
-    original.replace("if: steps.live.outputs.already_live != 'true'","if: always()")
+    original.replace("if: steps.live.outputs.already_live != 'true'","if: always()"),
+    original.replace('steps.live.outputs.previous_live_sha','inputs.release_sha'),
+    original.replace('npm run verify:production --', 'pages deploy dist\n          npm run verify:production --')
   ])assert.throws(()=>checkReleaseContract(altered),/HOLD/);
 });
