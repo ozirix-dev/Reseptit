@@ -1,5 +1,6 @@
 import {isP1CoconutHold,assertP1CoconutHold} from './p1-coconut-hold-guard';
 import {restorePreEHold} from './restore-pre-ehold';
+import { predecessorForGk005History } from './history/gk005-partial-nutrition-transition';
 import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {createHash} from 'node:crypto';import {loadPacks} from '../scripts/gk80-release';import {calculateCandidate} from '../scripts/gk80-candidate-policy';
 const root=new URL('../../',import.meta.url);const json=(f:string)=>JSON.parse(readFileSync(new URL(f,root),'utf8'));
 test('Operation142 adds exactly ten candidates and preserves all133 current main numeric results',async()=>{
@@ -26,9 +27,9 @@ test('all ten new versions bind current FI and30 translated files to new macro e
  const hash=(text:string)=>createHash('sha256').update(text.replaceAll('\r\n','\n')).digest('hex');
  let complete=0,withheld=0;
  for(const entry of pack.recipes){
-  const text=readFileSync(new URL(entry.originalPublishedPath,root),'utf8');assert.equal(hash(text),entry.sourceLfSha256);
+  const text=predecessorForGk005History(entry.originalPublishedPath,readFileSync(new URL(entry.originalPublishedPath,root),'utf8'));assert.equal(hash(text),entry.sourceLfSha256);
   const source=parseMarkdown(text)!.data as any;const evidence=json('docs/nutrition/calculations/'+entry.recipeId+'.json');
-  const translations=['en','sv','th'].map(locale=>{const p='kaannokset/'+locale+'/'+entry.originalPublishedPath.replace('reseptit/','');const target=readFileSync(new URL(p,root),'utf8');assert.equal(hash(recipeTextForApprovedSnapshot(p,target.replaceAll('\r\n','\n'))),entry.localeLfSha256[locale]);return {path:p,data:parseMarkdown(target)!.data as any};});
+  const translations=['en','sv','th'].map(locale=>{const p='kaannokset/'+locale+'/'+entry.originalPublishedPath.replace('reseptit/','');const target=predecessorForGk005History(p,readFileSync(new URL(p,root),'utf8'));assert.equal(hash(recipeTextForApprovedSnapshot(p,target.replaceAll('\r\n','\n'))),entry.localeLfSha256[locale]);return {path:p,data:parseMarkdown(target)!.data as any};});
   const checked=verifyNutritionEvidence(source,evidence,translations);assert.deepEqual(checked.errors,[],entry.recipeId);assert.equal(checked.status,entry.macroStatus);
   if(checked.status==='ESTIMATE WITH EVIDENCE')complete++;else{withheld++;assert.equal(evidence.publicationStatus,'WITHHELD_SOURCE_INCOMPLETE');assert.ok(Object.values(checked.values).every(value=>value===null));}
  }

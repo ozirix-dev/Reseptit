@@ -326,9 +326,14 @@ export async function projectPortionEvidence(root: string, recipeId: string, mar
       record.carbohydrateDefinition = "EU_TOTAL_INCLUDING_POLYOLS";
     }
     // A separately reviewed serving calculation may coexist with partial macros.
-    // Validate the original inputs first, then project only the legacy carbohydrate scope.
+    // A pinned legacy portion can also retain its ingredient-only carbohydrate
+    // scope after approval of protein and fat alone. Validate the live package
+    // first; only then reconstruct the unchanged all-null macro projection.
+    // This cannot approve whole-serving carbohydrate or a new GK result.
     let portionRecipe = data;
-    if (standaloneReview && input.publicationStatus === "WITHHELD_SOURCE_INCOMPLETE"
+    const reviewedMacroOnly = Boolean(review?.nutritionSha256)
+      && data.carbs_net_per_serving_g == null && data.carbs_total_per_serving_g == null;
+    if ((standaloneReview || reviewedMacroOnly) && input.publicationStatus === "WITHHELD_SOURCE_INCOMPLETE"
         && nutritionKeys.some(key => data[key] != null)) {
       const originalInput = JSON.parse(raw) as Calculation;
       const approval = await readNutritionFieldApproval(root, originalInput);
