@@ -39,7 +39,7 @@ ingredients:
 
 A crisp carrot and apple side dish for oven meals or pan-fried fish.
 
-## Method
+## Instructions
 
 1. Wash and core the apple, then weigh the edible portion. Weigh the carrots after peeling.
 2. Grate the carrots finely and the apple more coarsely. Toss the apple with the lemon juice as soon as it is grated.

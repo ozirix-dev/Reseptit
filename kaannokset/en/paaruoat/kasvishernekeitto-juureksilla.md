@@ -47,7 +47,7 @@ ingredients:
 
 Carrots and parsnips lend sweetness to a hearty soup made with dried green peas. Allow 8–12 hours to soak the peas in addition to the cooking time.
 
-## Method
+## Instructions
 
 1. Rinse the peas and soak them in cold water in the refrigerator for 8–12 hours. Drain the soaking water and rinse the peas again.
 2. Put the peas in a pan with the measured cooking water and chopped onion. Bring to a full boil for about 10 minutes and skim off the foam. Reduce the heat and simmer for about an hour.

@@ -50,7 +50,7 @@ ingredients:
 
 Button mushrooms and barley make this soft-baked cabbage dish substantial enough for a meal.
 
-## Method
+## Instructions
 
 1. Cook the barley according to the packet and drain. Shred the cabbage, cover and cook it in a splash of water for about 20 minutes until soft. Drain any water left over.
 2. Slice the mushrooms and chop the onion. Fry the mushrooms in oil until their liquid evaporates. Add the onion and fry for another couple of minutes.

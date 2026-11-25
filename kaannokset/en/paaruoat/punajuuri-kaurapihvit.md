@@ -44,7 +44,7 @@ ingredients:
 
 Cooked beetroot gives the patties their deep colour and oats bind the mixture. Makes about 12 small patties.
 
-## Method
+## Instructions
 
 1. Crush the beetroot into a coarse mash. Chop the onion very finely. Mix the beetroot, onion, eggs, oats and salt. Let the oats swell for 15 minutes.
 2. Heat a little oil in a frying pan over medium heat. Spoon small mounds into the pan and flatten to about 1 cm thick.

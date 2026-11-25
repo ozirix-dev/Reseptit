@@ -50,7 +50,7 @@ ingredients:
 
 Tinned beans make this tomato stew quick. Garlic and oregano flavour the sauce.
 
-## Method
+## Instructions
 
 1. Finely chop the onion and garlic. Soften the onion in oil in a pot for about 5 minutes. Add the garlic and oregano and stir briefly.
 2. Add the tomatoes and water. Simmer uncovered for about 12 minutes, stirring occasionally.

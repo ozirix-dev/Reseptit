@@ -35,7 +35,7 @@ ingredients:
 
 Floury potatoes and warm cooking cream make a fluffy mash. Serve it with dishes such as meatballs and brown gravy.
 
-## Method
+## Instructions
 
 1. Cut the potatoes into even pieces. Cover with cold water, bring to the boil and simmer for about 20 minutes until the pieces break when pressed with a fork.
 2. Drain the cooking water. Let the potatoes steam dry briefly in the uncovered pan. Meanwhile warm the cream in a separate pan.

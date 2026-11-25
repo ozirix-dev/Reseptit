@@ -50,7 +50,7 @@ ingredients:
 
 Slow-softened onions sweeten the broth. Top each bowl with toast melted with Emmental.
 
-## Method
+## Instructions
 
 1. Halve the onions and slice thinly. Soften them in the oil over medium heat for about 25–30 minutes. Stir from time to time and reduce the heat if they brown quickly.
 2. Stir the flour into the onions, then add the warm stock little by little. Season with pepper and simmer for about 25 minutes.

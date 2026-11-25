@@ -38,7 +38,7 @@ ingredients:
 
 Finnish wild bilberries turn plain quark (less than 0.5% fat) purple, with some berries left whole.
 
-## Method
+## Instructions
 
 1. Pick over the berries. Crush about half of them with a fork and the sugar.
 2. Stir the crushed berries into the quark and fold in the rest. Divide among four bowls.

@@ -44,7 +44,7 @@ ingredients:
 
 Alaska pollock bakes quickly with lemon, dill and oil.
 
-## Method
+## Instructions
 
 1. Thaw the fish in the refrigerator following the packet instructions. Drain, pat dry, check for bones and space the pieces apart in a baking dish.
 2. Heat the oven to 175 °C. Mix the oil, lemon juice, zest and salt, then spoon the mixture over the fish.

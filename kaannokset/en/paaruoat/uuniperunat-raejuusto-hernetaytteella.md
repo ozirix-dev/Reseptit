@@ -47,7 +47,7 @@ ingredients:
 
 Spoon cottage cheese with cooked peas, dill and red onion into fluffy baked potatoes. Chill the filling while the potatoes bake.
 
-## Method
+## Instructions
 
 1. Heat the oven to 200 °C. Wash the potatoes, dry them and prick the skins with a fork. Bake on a tray for about 60–70 minutes until a fork slides easily into the centre.
 2. Heat the peas according to the packet instructions. Drain, cool them quickly and keep refrigerated. Finely chop the red onion and dill.

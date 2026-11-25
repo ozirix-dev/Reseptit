@@ -39,7 +39,7 @@ ingredients:
 
 Hard-boiled eggs and softened butter make a chunky spread.
 
-## Method
+## Instructions
 
 1. Boil the eggs in their shells for about 10 minutes until both whites and yolks are set. Cool in cold water, peel and weigh out 200 g.
 2. Chop the eggs and crush roughly with a fork. Mix in the softened butter and salt.

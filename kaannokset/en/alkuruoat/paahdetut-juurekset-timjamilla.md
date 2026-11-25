@@ -46,7 +46,7 @@ ingredients:
 
 This swede-based side dish roasts with carrots and parsnips and has no potatoes. Cut the swede a little smaller so everything becomes tender at the same time.
 
-## Method
+## Instructions
 
 1. Heat the oven to 225 °C. Cut the carrots and parsnips into roughly 2 cm pieces and the swede a little smaller.
 2. Toss the vegetables with the oil, thyme and salt. Spread them on a lined baking tray in a single layer with space between the pieces.

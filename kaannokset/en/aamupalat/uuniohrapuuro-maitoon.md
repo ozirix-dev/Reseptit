@@ -42,7 +42,7 @@ ingredients:
 
 Cracked barley grains soften slowly in the oven for this Finnish porridge.
 
-## Method
+## Instructions
 
 1. Heat the oven to 175 °C. Grease a 2.5-litre dish with some of the butter.
 2. Mix the barley, milk and salt in the dish. Dot the surface with the remaining butter.
