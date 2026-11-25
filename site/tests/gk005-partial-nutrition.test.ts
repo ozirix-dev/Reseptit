@@ -5,7 +5,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import test from "node:test";
 import manifest from "./history/gk005-partial-nutrition-transition.json";
-import { restoreGk005Source, restoreGk005Inventory, predecessorForGk005RegistryHistory } from "./history/gk005-partial-nutrition-transition";
+import { restoreGk005Source, restoreGk005Inventory, predecessorForGk005RegistryHistory, priorExactRecipeText } from "./history/gk005-partial-nutrition-transition";
 import { afcdSourceBeforeCorrection } from "./restore-pre-ehold";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
@@ -240,10 +240,7 @@ test("GK-005 exact registry reversal preserves the complete older AFCD history a
   const actual = JSON.parse(live), restored = JSON.parse(prior);
   for (const [id, entry] of Object.entries(manifest.recipes)) {
     assert.deepEqual(actual.exactRecipeText[id], entry.candidateExactRecipeText);
-    assert.equal(restored.exactRecipeText[id].sourceSha256, manifest.files[entry.inventory.before.source_path as keyof typeof manifest.files].beforeSha256);
-    for (const [locale, target] of Object.entries(entry.candidateExactRecipeText.locales)) {
-      assert.equal(restored.exactRecipeText[id].locales[locale].sha256, manifest.files[target.path as keyof typeof manifest.files].beforeSha256);
-    }
+    assert.deepEqual(restored.exactRecipeText[id], priorExactRecipeText[id], id + ": exact predecessor registry row");
     actual.exactRecipeText[id] = restored.exactRecipeText[id];
   }
   assert.deepEqual(actual, restored, "only the two exact text rows may change");
@@ -255,8 +252,9 @@ test("GK-005 exact registry reversal preserves the complete older AFCD history a
   tampered.calculationInputs[Object.keys(tampered.calculationInputs)[0]!] = "0".repeat(64);
   assert.throws(() => afcdSourceBeforeCorrection(file, JSON.stringify(tampered, null, 2) + "\n"), /unreviewed GK-005 registry successor/);
   assert.throws(() => predecessorForGk005RegistryHistory(file, prior + "\n"), /unreviewed GK-005 registry successor/);
-  const mixed = JSON.parse(live);
-  const id = Object.keys(manifest.recipes)[0]!;
-  mixed.exactRecipeText[id] = restored.exactRecipeText[id];
-  assert.throws(() => predecessorForGk005RegistryHistory(file, JSON.stringify(mixed, null, 2) + "\n"), /unreviewed GK-005 registry successor/);
+  for (const id of Object.keys(manifest.recipes)) {
+    const mixed = JSON.parse(live);
+    mixed.exactRecipeText[id] = restored.exactRecipeText[id];
+    assert.throws(() => predecessorForGk005RegistryHistory(file, JSON.stringify(mixed, null, 2) + "\n"), /unreviewed GK-005 registry successor/);
+  }
 });
