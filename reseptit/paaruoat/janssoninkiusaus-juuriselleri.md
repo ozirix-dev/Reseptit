@@ -52,8 +52,8 @@ image:
   height: 1024
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+protein_per_serving_g: 13.57
+fat_per_serving_g: 33.56
 translation_languages:
 - en
 - sv
@@ -74,4 +74,4 @@ translation_status:
 
 ## Muistiinpanot
 
-Punnitse yllä luetellut syötävät ainekset. Kaikki lueteltu ruoka, kastike ja paistorasva kuuluvat annoksiin; erillisiä lisukkeita ei ole laskettu. Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.
+Punnitse yllä luetellut syötävät ainekset. Kaikki lueteltu ruoka, kastike ja paistorasva kuuluvat annoksiin; erillisiä lisukkeita ei ole laskettu. Proteiini- ja rasva-arvot ovat laskennallisia arvioita. Koko annoksen hiilihydraattiarvoja ei ilmoiteta puutteellisten lähdetietojen vuoksi.

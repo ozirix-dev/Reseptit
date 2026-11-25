@@ -1,5 +1,6 @@
 import { restoreRecipeAuditSnapshot } from '../scripts/restore-recipe-audit-snapshot';
 import { restoreAuditInventory } from './recipe-correctness-calculation-history';
+import { restoreGk005Inventory } from './history/gk005-partial-nutrition-transition';
 import { sourceReleaseGateDecision } from "../scripts/f25-source-release-gate";
 import { molletesHistoricalText, molletesSourcePath, molletesRecipeId } from "../scripts/molletes-reviewed-source";
 import { koreanRiceBowlHistoricalText } from "../scripts/korean-rice-bowls-reviewed-source";
@@ -107,7 +108,7 @@ test('Live original results preserve frozen history, the 87 variants and exact r
    Object.hasOwn(before.variantHashes, variantKey(v)));
  assert.deepEqual(historicalVariants.map(variantKey).sort(), Object.keys(before.variantHashes).sort());
  for(const v of historicalVariants)assert.equal(sha(v),before.variantHashes[variantKey(v)],v.recipeId);
- const completePublishedInventory = restoreAuditInventory(json('tmp/nutrition/audit.json').inventory) as Array<{
+ const completePublishedInventory = restoreAuditInventory(restoreGk005Inventory(json('tmp/nutrition/audit.json').inventory)) as Array<{
   recipe_id: string;
   source_path: string;
   status: string;
