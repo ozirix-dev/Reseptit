@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/valipalat/raejuusto-retiisiruisleipa.md
 translation_of: raejuusto-retiisiruisleipa
-status: draft
+status: published
 servings: 1
 time_total_min: 10
 difficulty: "easy"
@@ -33,6 +33,10 @@ ingredients:
   - amount: 0.125
     unit: "tsp"
     item: "ground black pepper"
+carbs_net_per_serving_g: 21.45
+carbs_total_per_serving_g: 26.48
+protein_per_serving_g: 14.45
+fat_per_serving_g: 2.08
 ---
 
 # Rye bread with cottage cheese and radishes
@@ -46,4 +50,5 @@ Thin slices of radish add crunch to this open rye sandwich.
 
 ## Notes
 
+- The nutrition estimate uses yeast-free wholegrain rye bread and a reference composition for cottage cheese with 2% fat. Using a different bread or cottage cheese may change the values per serving.
 - Contains rye and milk. Check the bread label for other grains.

@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/leivonnaiset/ciabatta.md
 translation_of: ciabatta
-status: draft
+status: published
 servings: 16
 time_total_min: 1320
 difficulty: "ปานกลาง"
@@ -43,6 +43,10 @@ ingredients:
   - amount: 20
     unit: "g"
     item: "แป้งสาลีอเนกประสงค์สำหรับโรยโต๊ะ (ใช้เท่าที่จำเป็น)"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # ชาบัตตา

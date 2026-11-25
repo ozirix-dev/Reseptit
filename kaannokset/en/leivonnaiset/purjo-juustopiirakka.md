@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/leivonnaiset/purjo-juustopiirakka.md
 translation_of: purjo-juustopiirakka
-status: draft
+status: published
 servings: 8
 time_total_min: 85
 difficulty: "easy"
@@ -49,6 +49,10 @@ ingredients:
   - amount: 0.25
     unit: "tsp"
     item: "black pepper"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # Leek and cheese tart

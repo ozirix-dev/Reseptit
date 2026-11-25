@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/valipalat/punajuurilevite.md
 translation_of: punajuurilevite
-status: draft
+status: published
 servings: 6
 time_total_min: 10
 difficulty: "ง่าย"
@@ -36,6 +36,10 @@ ingredients:
   - amount: 0.125
     unit: "ช้อนชา"
     item: "พริกไทยดำ"
+carbs_net_per_serving_g: 3.10
+carbs_total_per_serving_g: 4.30
+protein_per_serving_g: 4.70
+fat_per_serving_g: 9.26
 ---
 
 # บีทรูตบดกับเฟตาสำหรับทาขนมปัง
@@ -49,5 +53,6 @@ ingredients:
 
 ## หมายเหตุ
 
+- ค่าประมาณทางโภชนาการอ้างอิงบีทรูตที่ต้มโดยไม่ใส่เกลือ ค่ามาตรฐานอ้างอิงของเฟตาจากนมแพะที่สะเด็ดน้ำแล้วและมีไขมัน 25% รวมทั้งน้ำมันมะกอกทั้งหมดที่ใส่ในสเปรด โดยไม่รวมอาหารที่เสิร์ฟคู่กัน
 - มีนม หนึ่งหน่วยบริโภคนับเฉพาะสเปรดบีทรูตกับเฟตา
 - แหล่งอ้างอิง: https://cmcm.lu/en/insights/gesond-bleiwen/recipes/beetroot-feta-spread

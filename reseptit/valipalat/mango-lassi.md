@@ -4,7 +4,7 @@ recipe_id: mango-lassi
 url_slug: mango-lassi
 category: valipala
 language: fi
-status: draft
+status: published
 servings: 2
 time_total_min: 10
 difficulty: "helppo"
@@ -30,6 +30,18 @@ ingredients:
   - amount: 0.125
     unit: "tl"
     item: "jauhettua kardemummaa"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Mango-lassi

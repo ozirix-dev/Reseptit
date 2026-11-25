@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/valipalat/jaadytetyt-jogurtti-marjapalat.md
 translation_of: jaadytetyt-jogurtti-marjapalat
-status: draft
+status: published
 servings: 12
 time_total_min: 195
 difficulty: "easy"
@@ -31,6 +31,10 @@ ingredients:
   - amount: 30
     unit: "g"
     item: "granola"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # Frozen yogurt and berry bark

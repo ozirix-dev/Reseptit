@@ -4,7 +4,7 @@ recipe_id: sitruunainen-valkopapulevite
 url_slug: sitruunainen-valkopapulevite
 category: valipala
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 10
 difficulty: "helppo"
@@ -39,6 +39,18 @@ ingredients:
   - amount: 30
     unit: "ml"
     item: "vettä"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Sitruunainen valkopapulevite

@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/valipalat/omenalohkot-maapahkinavoilla.md
 translation_of: omenalohkot-maapahkinavoilla
-status: draft
+status: published
 servings: 1
 time_total_min: 10
 difficulty: "easy"
@@ -27,6 +27,10 @@ ingredients:
   - amount: 16
     unit: "g"
     item: "smooth peanut butter"
+carbs_net_per_serving_g: 10.98
+carbs_total_per_serving_g: 14.06
+protein_per_serving_g: 4.12
+fat_per_serving_g: 8.80
 ---
 
 # Apple wedges with peanut butter
@@ -40,5 +44,6 @@ Crisp apple and smooth peanut butter make a snack that takes just a few minutes 
 
 ## Notes
 
+- The nutrition estimate uses a Finnish apple with its skin, undiluted lemon juice and peanut butter with no added sugar or salt. It includes all the dip and lemon juice. The composition of peanut butter varies by product.
 - Contains peanuts.
 - Reference: https://www.heb.com/recipe/recipe-detail/apple-slices-with-peanut-butter-snack

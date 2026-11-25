@@ -4,7 +4,7 @@ recipe_id: saaristolaisleipa
 url_slug: saaristolaisleipa
 category: leivonnainen
 language: fi
-status: draft
+status: published
 servings: 36
 time_total_min: 260
 difficulty: "helppo"
@@ -55,6 +55,18 @@ ingredients:
   - amount: 50
     unit: "ml"
     item: "tummaa siirappia sivelyyn"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Saaristolaisleipä

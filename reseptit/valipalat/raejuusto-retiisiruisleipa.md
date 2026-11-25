@@ -4,7 +4,7 @@ recipe_id: raejuusto-retiisiruisleipa
 url_slug: raejuusto-retiisiruisleipa
 category: valipala
 language: fi
-status: draft
+status: published
 servings: 1
 time_total_min: 10
 difficulty: "helppo"
@@ -30,6 +30,18 @@ ingredients:
   - amount: 0.125
     unit: "tl"
     item: "jauhettua mustapippuria"
+carbs_net_per_serving_g: 21.45
+carbs_total_per_serving_g: 26.48
+protein_per_serving_g: 14.45
+fat_per_serving_g: 2.08
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Raejuusto-retiisiruisleipä
@@ -43,4 +55,5 @@ Retiisiviipaleet rouskuvat raejuuston ja ruisleivän päällä.
 
 ## Muistiinpanot
 
+- Ravintoarvio perustuu hiivattomaan täysjyväruisleipään ja 2 % rasvaa sisältävän raejuuston vertailutietoon. Erilainen leipä tai raejuusto voi muuttaa annoksen ravintoarvoja.
 - Sisältää ruista ja maitoa. Tarkista ruisleivän muut viljat pakkauksesta.

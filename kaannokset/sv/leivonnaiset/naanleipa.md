@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/leivonnaiset/naanleipa.md
 translation_of: naanleipa
-status: draft
+status: published
 servings: 8
 time_total_min: 120
 difficulty: "lätt"
@@ -49,6 +49,10 @@ ingredients:
   - amount: 10
     unit: "g"
     item: "vetemjöl till utbakning (använd vid behov)"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # Naan i stekpanna

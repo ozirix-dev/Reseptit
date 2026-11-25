@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/valipalat/paahdettu-pahkina-siemensekoitus.md
 translation_of: paahdettu-pahkina-siemensekoitus
-status: draft
+status: published
 servings: 12
 time_total_min: 20
 difficulty: "ง่าย"
@@ -34,6 +34,10 @@ ingredients:
   - amount: 5
     unit: "g"
     item: "เกลือป่นละเอียด"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # ถั่วลิสงและเมล็ดฟักทองอบ

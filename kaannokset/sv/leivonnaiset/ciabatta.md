@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/leivonnaiset/ciabatta.md
 translation_of: ciabatta
-status: draft
+status: published
 servings: 16
 time_total_min: 1320
 difficulty: "medel"
@@ -43,6 +43,10 @@ ingredients:
   - amount: 20
     unit: "g"
     item: "vetemjöl till utbakning (använd vid behov)"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # Ciabatta

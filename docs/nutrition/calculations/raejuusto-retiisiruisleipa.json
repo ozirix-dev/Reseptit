@@ -1,0 +1,164 @@
+{
+  "recipeId": "raejuusto-retiisiruisleipa",
+  "sourceHash": "cb02e04aa21c21d5acd31acf3a4bbb6f050281cf3a45f3260670bb0b6a1c27be",
+  "calculatedAt": "2026-11-25",
+  "servings": 1,
+  "scope": "Koko leipä. Täysjyväruisjauhosta tehty hiivaton ruisleipä ja 2-prosenttinen raejuusto. Vastaavuus tuotteen pakkausmerkintään tarkistetaan. Annosarvio = syötävien ainesosien määrällä painotetut g/100 g -arvot yhteen laskettuina, jaettuna annosmäärällä. Käytetyillä lähderiveillä kokonais-HH on netto-HH:n ja kuidun summa.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 45,
+      "unit": "g",
+      "item": "täysjyväruisleipää",
+      "state": "Hiivaton täysjyväruisleipä",
+      "matchEvidence": "Hiivaton täysjyväruisleipä. Laskennassa käytetään Chat-2:n vertailutietuetta tälle rajatulle ainesosalle.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Valmistuksessa käytetty syötävä osa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko käytetty syötävä osa sisältyy tämän skenaarion annokseen.",
+      "record": {
+        "id": "fineli-35094-release-20",
+        "name": "RUISLEIPÄ, PERINTEINEN, VESI, TÄYSJYVÄRUISJAUHO, HIIVATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/35094",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "state": "Hiivaton täysjyväruisleipä",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 42.342,
+          "polyols": 0,
+          "fibre": 9.696,
+          "fat": 1.376,
+          "protein": 6.82
+        }
+      }
+    },
+    {
+      "amount": 70,
+      "unit": "g",
+      "item": "raejuustoa",
+      "state": "Raejuusto, 2 % rasvaa",
+      "matchEvidence": "Raejuusto, 2 % rasvaa. Laskennassa käytetään Chat-2:n vertailutietuetta tälle rajatulle ainesosalle.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Valmistuksessa käytetty syötävä osa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko käytetty syötävä osa sisältyy tämän skenaarion annokseen.",
+      "record": {
+        "id": "fineli-649-release-20",
+        "name": "RAEJUUSTO, RASVAA 2-5 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/649",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "state": "Raejuusto, 2 % rasvaa",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 2.5,
+          "polyols": 0,
+          "fibre": 0,
+          "fat": 2,
+          "protein": 15.81
+        }
+      }
+    },
+    {
+      "amount": 35,
+      "unit": "g",
+      "item": "retiisejä ilman naatteja",
+      "state": "Pesty ja trimmattu retiisi",
+      "matchEvidence": "Pesty ja trimmattu retiisi. Laskennassa käytetään Chat-2:n vertailutietuetta tälle rajatulle ainesosalle.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Valmistuksessa käytetty syötävä osa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko käytetty syötävä osa sisältyy tämän skenaarion annokseen.",
+      "record": {
+        "id": "fineli-308-release-20",
+        "name": "RETIISI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/308",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "state": "Pesty ja trimmattu retiisi",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 1.53,
+          "polyols": 0,
+          "fibre": 1.6,
+          "fat": 0.11,
+          "protein": 0.7
+        }
+      }
+    },
+    {
+      "amount": 2,
+      "unit": "g",
+      "item": "ruohosipulia",
+      "state": "Tuore ruohosipuli",
+      "matchEvidence": "Tuore ruohosipuli. Laskennassa käytetään Chat-2:n vertailutietuetta tälle rajatulle ainesosalle.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Valmistuksessa käytetty syötävä osa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko käytetty syötävä osa sisältyy tämän skenaarion annokseen.",
+      "record": {
+        "id": "fineli-392-release-20",
+        "name": "RUOHOSIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/392",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "state": "Tuore ruohosipuli",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0.73,
+          "polyols": 0,
+          "fibre": 2.1,
+          "fat": 0.92,
+          "protein": 2.2
+        }
+      }
+    },
+    {
+      "amount": 0.125,
+      "unit": "tl",
+      "item": "jauhettua mustapippuria",
+      "state": "Jauhettu mustapippuri",
+      "matchEvidence": "Jauhettu mustapippuri. Laskennassa käytetään Chat-2:n vertailutietuetta tälle rajatulle ainesosalle.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Valmistuksessa käytetty syötävä osa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko käytetty syötävä osa sisältyy tämän skenaarion annokseen.",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "Fineli 11177, mustapippuri 2 g/tl",
+      "record": {
+        "id": "afcd-F006618-release-3",
+        "name": "Pepper, black, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006618",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "basis": "per100g-as-sold",
+        "state": "Jauhettu mustapippuri",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 38.6,
+          "polyols": 0,
+          "fibre": 25.3,
+          "fat": 3.3,
+          "protein": 10.4
+        }
+      }
+    }
+  ],
+  "batchId": "batch-33310"
+}

@@ -4,7 +4,7 @@ recipe_id: paahdetut-edamamepavut
 url_slug: paahdetut-edamamepavut
 category: valipala
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 35
 difficulty: "helppo"
@@ -34,6 +34,18 @@ ingredients:
   - amount: 0.25
     unit: "tl"
     item: "jauhettua mustapippuria"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Paahdetut edamamepavut

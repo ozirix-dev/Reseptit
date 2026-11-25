@@ -4,7 +4,7 @@ recipe_id: purjo-juustopiirakka
 url_slug: purjo-juustopiirakka
 category: leivonnainen
 language: fi
-status: draft
+status: published
 servings: 8
 time_total_min: 85
 difficulty: "helppo"
@@ -46,6 +46,18 @@ ingredients:
   - amount: 0.25
     unit: "tl"
     item: "mustapippuria"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Purjo-juustopiirakka

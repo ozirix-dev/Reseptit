@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/valipalat/omenalohkot-maapahkinavoilla.md
 translation_of: omenalohkot-maapahkinavoilla
-status: draft
+status: published
 servings: 1
 time_total_min: 10
 difficulty: "ง่าย"
@@ -27,6 +27,10 @@ ingredients:
   - amount: 16
     unit: "g"
     item: "เนยถั่วลิสงชนิดเนื้อเนียน"
+carbs_net_per_serving_g: 10.98
+carbs_total_per_serving_g: 14.06
+protein_per_serving_g: 4.12
+fat_per_serving_g: 8.80
 ---
 
 # แอปเปิลหั่นเสี้ยวกับเนยถั่วลิสง
@@ -40,5 +44,6 @@ ingredients:
 
 ## หมายเหตุ
 
+- ค่าประมาณทางโภชนาการอ้างอิงแอปเปิลฟินแลนด์ที่ยังมีเปลือก น้ำเลมอนไม่เจือจาง และเนยถั่วลิสงที่ไม่เติมน้ำตาลหรือเกลือ โดยนับเนยถั่วสำหรับจิ้มและน้ำเลมอนทั้งหมด ส่วนประกอบของเนยถั่วลิสงอาจต่างกันตามผลิตภัณฑ์
 - มีถั่วลิสง
 - แหล่งอ้างอิง: https://www.heb.com/recipe/recipe-detail/apple-slices-with-peanut-butter-snack

@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/valipalat/raejuusto-retiisiruisleipa.md
 translation_of: raejuusto-retiisiruisleipa
-status: draft
+status: published
 servings: 1
 time_total_min: 10
 difficulty: "ง่าย"
@@ -33,6 +33,10 @@ ingredients:
   - amount: 0.125
     unit: "ช้อนชา"
     item: "พริกไทยดำป่น"
+carbs_net_per_serving_g: 21.45
+carbs_total_per_serving_g: 26.48
+protein_per_serving_g: 14.45
+fat_per_serving_g: 2.08
 ---
 
 # ขนมปังไรย์หน้าคอตเทจชีสกับแรดิช
@@ -46,4 +50,5 @@ ingredients:
 
 ## หมายเหตุ
 
+- ค่าประมาณทางโภชนาการอ้างอิงขนมปังไรย์โฮลเกรนแบบไม่ใช้ยีสต์และค่ามาตรฐานอ้างอิงของคอตเทจชีสที่มีไขมัน 2% หากใช้ขนมปังหรือคอตเทจชีสชนิดอื่น ค่าต่อหนึ่งหน่วยบริโภคอาจเปลี่ยนไป
 - มีข้าวไรย์และนม ตรวจฉลากขนมปังว่ามีธัญพืชชนิดอื่นหรือไม่

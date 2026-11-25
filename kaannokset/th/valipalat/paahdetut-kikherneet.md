@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/valipalat/paahdetut-kikherneet.md
 translation_of: paahdetut-kikherneet
-status: draft
+status: published
 servings: 4
 time_total_min: 40
 difficulty: "ง่าย"
@@ -34,6 +34,10 @@ ingredients:
   - amount: 1
     unit: "g"
     item: "เกลือป่นละเอียด"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # ถั่วลูกไก่อบ

@@ -4,7 +4,7 @@ recipe_id: punajuurilevite
 url_slug: punajuurilevite
 category: valipala
 language: fi
-status: draft
+status: published
 servings: 6
 time_total_min: 10
 difficulty: "helppo"
@@ -33,6 +33,18 @@ ingredients:
   - amount: 0.125
     unit: "tl"
     item: "mustapippuria"
+carbs_net_per_serving_g: 3.10
+carbs_total_per_serving_g: 4.30
+protein_per_serving_g: 4.70
+fat_per_serving_g: 9.26
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Punajuurilevite fetalla
@@ -46,5 +58,6 @@ Kypsä punajuuri ja feta tekevät levitteestä pinkin ja täyteläisen.
 
 ## Muistiinpanot
 
+- Ravintoarvio perustuu suolattomana keitettyyn punajuureen, valutetun, 25 % rasvaa sisältävän vuohenmaitofetan vertailutietoon ja kaikkeen levitteeseen lisättyyn oliiviöljyyn. Tarjoilulisukkeet eivät sisälly arvioon.
 - Sisältää maitoa. Annos tarkoittaa pelkkää levitettä.
 - Vertailulähde: https://cmcm.lu/en/insights/gesond-bleiwen/recipes/beetroot-feta-spread

@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/valipalat/raejuusto-retiisiruisleipa.md
 translation_of: raejuusto-retiisiruisleipa
-status: draft
+status: published
 servings: 1
 time_total_min: 10
 difficulty: "lätt"
@@ -33,6 +33,10 @@ ingredients:
   - amount: 0.125
     unit: "tsk"
     item: "malen svartpeppar"
+carbs_net_per_serving_g: 21.45
+carbs_total_per_serving_g: 26.48
+protein_per_serving_g: 14.45
+fat_per_serving_g: 2.08
 ---
 
 # Rågbröd med grynost och rädisor
@@ -46,4 +50,5 @@ Tunna rädisor ger den öppna rågsmörgåsen ett friskt tuggmotstånd.
 
 ## Anteckningar
 
+- Näringsberäkningen utgår från jästfritt fullkornsrågbröd och referensvärden för grynost med 2 % fett. Annat bröd eller annan grynost kan ändra näringsvärdena per portion.
 - Innehåller råg och mjölk. Kontrollera brödets förpackning för andra spannmål.

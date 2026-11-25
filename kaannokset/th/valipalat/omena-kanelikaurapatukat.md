@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/valipalat/omena-kanelikaurapatukat.md
 translation_of: omena-kanelikaurapatukat
-status: draft
+status: published
 servings: 16
 time_total_min: 80
 difficulty: "ง่าย"
@@ -43,6 +43,10 @@ ingredients:
   - amount: 180
     unit: "g"
     item: "แอปเปิลเอาแกนออก"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # ข้าวโอ๊ตบาร์แอปเปิลอบเชย

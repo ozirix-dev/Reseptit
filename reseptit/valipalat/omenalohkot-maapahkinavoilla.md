@@ -4,7 +4,7 @@ recipe_id: omenalohkot-maapahkinavoilla
 url_slug: omenalohkot-maapahkinavoilla
 category: valipala
 language: fi
-status: draft
+status: published
 servings: 1
 time_total_min: 10
 difficulty: "helppo"
@@ -24,6 +24,18 @@ ingredients:
   - amount: 16
     unit: "g"
     item: "sileää maapähkinävoita"
+carbs_net_per_serving_g: 10.98
+carbs_total_per_serving_g: 14.06
+protein_per_serving_g: 4.12
+fat_per_serving_g: 8.80
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Omenalohkot maapähkinävoilla
@@ -37,5 +49,6 @@ Rapea omena ja pehmeä maapähkinävoi valmistuvat välipalaksi muutamassa minuu
 
 ## Muistiinpanot
 
+- Ravintoarvio perustuu kotimaiseen kuorelliseen omenaan, laimentamattomaan sitruunamehuun ja maapähkinävoihin ilman lisättyä sokeria tai suolaa. Arvio sisältää kaiken dipin ja sitruunamehun. Maapähkinävoin koostumus voi vaihdella tuotteittain.
 - Sisältää maapähkinää.
 - Vertailulähde: https://www.heb.com/recipe/recipe-detail/apple-slices-with-peanut-butter-snack

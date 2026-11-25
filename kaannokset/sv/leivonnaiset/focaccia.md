@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/leivonnaiset/focaccia.md
 translation_of: focaccia
-status: draft
+status: published
 servings: 8
 time_total_min: 205
 difficulty: "lätt"
@@ -46,6 +46,10 @@ ingredients:
   - amount: 2
     unit: "g"
     item: "färsk rosmarin"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # Rosmarinfocaccia

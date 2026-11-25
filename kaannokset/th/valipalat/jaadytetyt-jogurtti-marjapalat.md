@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/valipalat/jaadytetyt-jogurtti-marjapalat.md
 translation_of: jaadytetyt-jogurtti-marjapalat
-status: draft
+status: published
 servings: 12
 time_total_min: 195
 difficulty: "ง่าย"
@@ -31,6 +31,10 @@ ingredients:
   - amount: 30
     unit: "g"
     item: "กราโนลา"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # โยเกิร์ตแช่แข็งหักชิ้นใส่เบอร์รี

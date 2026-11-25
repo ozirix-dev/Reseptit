@@ -1,0 +1,102 @@
+{
+  "recipeId": "omenalohkot-maapahkinavoilla",
+  "sourceHash": "4e364bccb939350cc9eb3f4660c77909f94b643aadf1d1f219c7983808da42e1",
+  "calculatedAt": "2026-11-25",
+  "servings": 1,
+  "scope": "Koko annos. Kotimainen kuorellinen omena, puhdas laimentamaton sitruunamehu ja sileä maapähkinävoi ilman lisättyä suolaa tai sokeria. Kaikki mehu ja dippi syödään. AFCD:n australialainen maapähkinävoi on vertailuskenaario. Annosarvio = syötävien ainesosien määrällä painotetut g/100 g -arvot yhteen laskettuina, jaettuna annosmäärällä. Käytetyillä lähderiveillä kokonais-HH on netto-HH:n ja kuidun summa.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 130,
+      "unit": "g",
+      "item": "omenaa, syötävää osaa",
+      "state": "Kotimainen kuorellinen omena ilman siemenkotaa",
+      "matchEvidence": "Kotimainen kuorellinen omena ilman siemenkotaa. Laskennassa käytetään Chat-2:n vertailutietuetta tälle rajatulle ainesosalle.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Valmistuksessa käytetty syötävä osa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko käytetty syötävä osa sisältyy tämän skenaarion annokseen.",
+      "record": {
+        "id": "fineli-28941-release-20",
+        "name": "OMENA, KOTIMAINEN, KUORINEEN",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/28941",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "state": "Kotimainen kuorellinen omena ilman siemenkotaa",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 7.23,
+          "polyols": 0,
+          "fibre": 1.566,
+          "fat": 0.087,
+          "protein": 0.17
+        }
+      }
+    },
+    {
+      "amount": 5,
+      "unit": "g",
+      "item": "sitruunamehua",
+      "state": "Laimentamaton sitruunamehu",
+      "matchEvidence": "Laimentamaton sitruunamehu. Laskennassa käytetään Chat-2:n vertailutietuetta tälle rajatulle ainesosalle.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Valmistuksessa käytetty syötävä osa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko käytetty syötävä osa sisältyy tämän skenaarion annokseen.",
+      "record": {
+        "id": "fineli-11557-release-20",
+        "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11557",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "state": "Laimentamaton sitruunamehu",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "polyols": 0,
+          "fibre": 0.1,
+          "fat": 0,
+          "protein": 0.31
+        }
+      }
+    },
+    {
+      "amount": 16,
+      "unit": "g",
+      "item": "sileää maapähkinävoita",
+      "state": "Sileä maapähkinävoi ilman lisättyä suolaa tai sokeria",
+      "matchEvidence": "Sileä maapähkinävoi ilman lisättyä suolaa tai sokeria. Laskennassa käytetään Chat-2:n vertailutietuetta tälle rajatulle ainesosalle.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Valmistuksessa käytetty syötävä osa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko käytetty syötävä osa sisältyy tämän skenaarion annokseen.",
+      "record": {
+        "id": "afcd-F006579-release-3",
+        "name": "Peanut butter, smooth & crunchy, no added sugar or salt",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006579",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "basis": "per100g-as-sold",
+        "state": "Sileä maapähkinävoi ilman lisättyä suolaa tai sokeria",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 9.4,
+          "polyols": 0,
+          "fibre": 6.5,
+          "fat": 54.3,
+          "protein": 24.3
+        }
+      }
+    }
+  ],
+  "batchId": "batch-33310"
+}

@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/valipalat/punajuurilevite.md
 translation_of: punajuurilevite
-status: draft
+status: published
 servings: 6
 time_total_min: 10
 difficulty: "lätt"
@@ -36,6 +36,10 @@ ingredients:
   - amount: 0.125
     unit: "tsk"
     item: "svartpeppar"
+carbs_net_per_serving_g: 3.10
+carbs_total_per_serving_g: 4.30
+protein_per_serving_g: 4.70
+fat_per_serving_g: 9.26
 ---
 
 # Rödbetsröra med fetaost
@@ -49,5 +53,6 @@ Kokta rödbetor ger det krämiga fetapålägget en klarrosa färg.
 
 ## Anteckningar
 
+- Näringsberäkningen utgår från rödbetor kokta utan salt, referensvärden för avrunnen fetaost av getmjölk med 25 % fett och all olivolja som tillsätts röran. Serveringstillbehör ingår inte.
 - Innehåller mjölk. En portion avser bara röran.
 - Referens: https://cmcm.lu/en/insights/gesond-bleiwen/recipes/beetroot-feta-spread

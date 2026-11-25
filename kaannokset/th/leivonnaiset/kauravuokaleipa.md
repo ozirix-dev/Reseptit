@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/leivonnaiset/kauravuokaleipa.md
 translation_of: kauravuokaleipa
-status: draft
+status: published
 servings: 16
 time_total_min: 245
 difficulty: "ง่าย"
@@ -52,6 +52,10 @@ ingredients:
   - amount: 9
     unit: "g"
     item: "ข้าวโอ๊ตแผ่นสำหรับโรยหน้า"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # ขนมปังข้าวโอ๊ตอบพิมพ์

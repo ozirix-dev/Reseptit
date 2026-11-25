@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "paahdettu-pahkina-siemensekoitus",
+  "source_path": "reseptit/valipalat/paahdettu-pahkina-siemensekoitus.md",
+  "source_sha256": "8b01d8757907e126e137c9deca6b3b6711c935f5f80e35111b54a01b865eb3b9",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.bonappetit.com/recipe/chile-peanut-and-pumpkin-seed-snack-mix"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/paahdettu-pahkina-siemensekoitus.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Oma 20 reseptin samankaltaisuusseulonta. Chat-2:n tarkastamissa viidessä heuristisessa osumassa ei ollut estettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset, niiden käyttötilat ja määrät säilyvät Chat-2:n katselmoimasta sisällöstä. Sisältää maapähkinää."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusvaiheet ja valmistuslähde säilyvät Chat-2:n katselmoimasta sisällöstä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaturvallisuusohjeet ja allergeenit säilyvät neljällä kielellä tarkastetusta revisiosta. Kirjallinen näyttö ilman Recipavon koekeittiötestiä. Sisältää maapähkinää."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 12 ja ilmoitettu kokonaisaika 20 min säilyvät. Arvot tarkistettu neljällä kielellä."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Saatavilla olevan hiilihydraatin, proteiinin ja rasvan laskentaskenaario on tehty öljyssä paahdetulle vertailupähkinälle. Tuotetyyppi, kurpitsansiemenen kuitu ja pellille jäävä öljyosuus estävät julkiset arvot. Kaikki neljä arvoa jäävät määrittämättömiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle annosversiolle ei ole hyväksyttyä soveltuvaa GI- tai ainesosasidosta eikä kanonista GK-näyttöä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/valipalat/paahdettu-pahkina-siemensekoitus.webp",
+    "bytes": 157624,
+    "sha256": "5d972c7440c2582253f4b9092222598c562bafe677a10a28851c5f3fcdb31b4b",
+    "width": 1200,
+    "height": 800,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161831506",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161957227",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/valipalat/paahdettu-pahkina-siemensekoitus.md",
+        "sha256": "ece8d8476c85b7dad3575c3f711cb3fcff6bd5b9c4b51cd3d2ab460836e1044f"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/paahdettu-pahkina-siemensekoitus.md",
+        "sha256": "1ad2cd78adb1bf8a3643e62d8d135a94bcae0e7d3f37f7570949cba38705527f"
+      },
+      {
+        "path": "kaannokset/th/valipalat/paahdettu-pahkina-siemensekoitus.md",
+        "sha256": "046cdca6bb16e2dc87f8754594ddd03d78b3204c276abb4589475061d621c624"
+      },
+      {
+        "path": "reseptit/valipalat/paahdettu-pahkina-siemensekoitus.md",
+        "sha256": "2f26e83c317d76610a46a95db1313eb3878544ab289826d368a590e9d7d31ab3"
+      }
+    ],
+    "scope": "Ennen julkaisuehdokasta katselmoitu teksti, valmistus, turvallisuus ja kuva. Ravintoratkaisujen ehdot on kirjattu erillisessä katselmoinnissa."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "78c2c4266f09e56c49a36f982753c08fa1d295dc0631a8298cec73e39a6a0f51"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/valipalat/paahdettu-pahkina-siemensekoitus.md",
+        "language": "fi",
+        "slug": "paahdettu-pahkina-siemensekoitus",
+        "sha256": "8b01d8757907e126e137c9deca6b3b6711c935f5f80e35111b54a01b865eb3b9",
+        "semantic_sha256": "c0e9a20bfc15c3f95149de3836eefb834d79e4951fede192be2d22a31917cbcb"
+      },
+      {
+        "path": "kaannokset/en/valipalat/paahdettu-pahkina-siemensekoitus.md",
+        "language": "en",
+        "slug": "paahdettu-pahkina-siemensekoitus-en",
+        "sha256": "9153df8019dce6ee689e6c4baaf634d9e4df5929dc9f71bdf5c5164e4d05732c",
+        "semantic_sha256": "7626556e738c758868f439636e9898ffafb1ed57364c939c320a12169b96fed6"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/paahdettu-pahkina-siemensekoitus.md",
+        "language": "sv",
+        "slug": "paahdettu-pahkina-siemensekoitus-sv",
+        "sha256": "ca06e2c52d9689a2713330913f6f553067bd496ea56c5b772e63744448f72d24",
+        "semantic_sha256": "810a8a89e398d45bf5d863b80433a8cb2debcfc2deffc797cdad2943ebe4623c"
+      },
+      {
+        "path": "kaannokset/th/valipalat/paahdettu-pahkina-siemensekoitus.md",
+        "language": "th",
+        "slug": "paahdettu-pahkina-siemensekoitus-th",
+        "sha256": "509f836c1a386c89bba05383ac0934d3b1454e9155ebbd28104d965eb8855d80",
+        "semantic_sha256": "bb08296fb24eb1934974a66dee9db20b8082ff0c4d8efb9bafb5a68e701517c5"
+      }
+    ],
+    "final_independent_delta": "pending"
+  }
+}

@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/valipalat/paahdetut-edamamepavut.md
 translation_of: paahdetut-edamamepavut
-status: draft
+status: published
 servings: 4
 time_total_min: 35
 difficulty: "lätt"
@@ -37,6 +37,10 @@ ingredients:
   - amount: 0.25
     unit: "tsk"
     item: "malen svartpeppar"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # Rostade edamamebönor

@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/valipalat/sitruunainen-valkopapulevite.md
 translation_of: sitruunainen-valkopapulevite
-status: draft
+status: published
 servings: 4
 time_total_min: 10
 difficulty: "ง่าย"
@@ -42,6 +42,10 @@ ingredients:
   - amount: 30
     unit: "ml"
     item: "น้ำ"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # ถั่วขาวบดรสเลมอนสำหรับทาขนมปัง
