@@ -2,17 +2,17 @@
   "schema_version": 1,
   "recipe_id": "perinteinen-ruskea-kastike",
   "source_path": "reseptit/alkuruoat/perinteinen-ruskea-kastike.md",
-  "source_sha256": "31d8608dc871bcde65c99ba5dc3379fc8c5259b0e1dd5b1d5fd7f5dd0aa97398",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
-  "reviewed_at": "2026-11-21",
+  "source_sha256": "0903adbff5753791625c11d8bc8c642bf950fd7f808a3645ac87aa1c1d81fdab",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
       "https://www.k-ruoka.fi/reseptit/ruskea-kastike"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/perinteinen-ruskea-kastike.json",
   "checks": {
     "duplicates": {
       "status": "pass",
@@ -35,12 +35,12 @@
       "notes": "Neljä annosta / 25 minuuttia; K-Ruoka 4 annosta / 15–30 minuuttia. Mittasuhteiden muutos voi vaikuttaa viskositeettiin, mutta työtapa ja aika ovat sovitettavissa."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi."
+      "status": "pass",
+      "notes": "Kanoninen laskenta tarkistettu. Lihaliemen ja soijakastikkeen EU-merkinnöistä puuttuu varmennettu polyolimäärä. Proteiini ja rasva kattavat kaikki ainekset. Chat-2 varmisti tämän ravintopäätöksen katselmoidulle versiolle."
     },
     "glycemic": {
       "status": "unavailable",
-      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+      "notes": "Ruskistetun vehnäjauhon ja lihaliemen yhdistelmän GI-sidonta puuttuu, myös tarkka imeytyvä hiilihydraatti jää avoimeksi."
     }
   },
   "supplementary_evidence": {
@@ -52,7 +52,76 @@
     ],
     "image_path": "kuvat/alkuruoat/perinteinen-ruskea-kastike.webp",
     "image_sha256": "d10b6a2136d4a992f9488cad8eade4a6d0409e1f6f24d5327e152500a03b81aa",
-    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "image_review": "Kuvan ruokalajivastaavuus hyväksytty Chat-2:n katselmoinnissa. Kokki-Codex varmisti kuvan tavut ja dekoodauksen.",
     "physical_cook_test": false
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": null,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/perinteinen-ruskea-kastike.webp",
+    "bytes": 107462,
+    "sha256": "d10b6a2136d4a992f9488cad8eade4a6d0409e1f6f24d5327e152500a03b81aa",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI–EN/SV/TH. Vertailtu ainesosat ja määrät, käyttötila, valmistusvaiheet, lämpötilat ja ajat, allergeenit, säilytys, ravintokentät ja kuvan kuvaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/perinteinen-ruskea-kastike.md",
+        "language": "fi",
+        "slug": "perinteinen-ruskea-kastike",
+        "sha256": "0903adbff5753791625c11d8bc8c642bf950fd7f808a3645ac87aa1c1d81fdab",
+        "semantic_sha256": "5a4fd18bdcf82977606f2152d003a3cd58f7c469edae471d9fc4d97dca0f3209"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/perinteinen-ruskea-kastike.md",
+        "language": "en",
+        "slug": "perinteinen-ruskea-kastike-en",
+        "sha256": "b59fcf702b5d8f699c2aaf3ccf283bbaa2ac763204cf9f502d738b1134cc5e01",
+        "semantic_sha256": "38b39333152c5144828372eaab74b5a87adf40f196b38bf309bc5cd57ecaf960"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/perinteinen-ruskea-kastike.md",
+        "language": "sv",
+        "slug": "perinteinen-ruskea-kastike-sv",
+        "sha256": "d7bffc5e0da5c206e9663c0863c5e424cee0c55e1dcaaf4cc58613753bc5bc3f",
+        "semantic_sha256": "eb90abab970e71fe97412235ee2fed20e43ff3fd9b3eacdcb2790db0024ea832"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/perinteinen-ruskea-kastike.md",
+        "language": "th",
+        "slug": "perinteinen-ruskea-kastike-th",
+        "sha256": "2a070d6156f87cd100f249ad853a5f8cd8389bafec29550b09cd2dcde7cb65b9",
+        "semantic_sha256": "a998ef98b84a20cd5c2077dc389b1ca8e3d20b7158f8237c71d0bb3356a9a69c"
+      }
+    ],
+    "nutrition_sha256": "b47c75ca7ddd4418f1fad97795065248b0e83d9581f9b91987853ac780c1652a",
+    "batch_id": "batch-33308",
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+  "independent_review": {
+    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+    "decision": "pass"
   }
 }

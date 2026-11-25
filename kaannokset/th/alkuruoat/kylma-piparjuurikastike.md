@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/alkuruoat/kylma-piparjuurikastike.md
 translation_of: kylma-piparjuurikastike
-status: draft
+status: published
 servings: 4
 time_total_min: 20
 difficulty: "ง่าย"
@@ -23,6 +23,8 @@ image:
   alt: "ซอสฮอร์สแรดิชสีอ่อนในถ้วยแก้วตกแต่งด้วยฮอร์สแรดิชขูดและสมุนไพร"
   width: 960
   height: 640
+protein_per_serving_g: 1.65
+fat_per_serving_g: 6.03
 ingredients:
   - amount: 200
     unit: "g"
@@ -57,7 +59,8 @@ ingredients:
 
 ## หมายเหตุ
 
-- ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพประกอบจาก AI อยู่ในสาขานี้แล้ว แต่ยังไม่ได้รับการอนุมัติ
+- ตรวจสารก่อภูมิแพ้จากฉลาก
+- ภาพประกอบสร้างด้วย AI ปริมาณโปรตีนและไขมันเป็นค่าประมาณต่อหนึ่งหน่วยบริโภค ยังระบุค่าคาร์โบไฮเดรตไม่ได้ ยังไม่สามารถระบุค่าภาระน้ำตาลได้
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/piparjuurikastike/
 - สูตร Valio อีกสูตรใช้ฮอร์สแรดิชสดขูดในซอสครีมเฟรชเย็น ขณะที่สูตรเดิมใช้ฮอร์สแรดิชสำเร็จรูป การปรุงรสสูตรนี้เป็นการดัดแปลงใหม่. https://www.valio.fi/reseptit/graavattu-piparjuurilohi/
 - มี **นม** (ครีมเฟรช) ใช้ฮอร์สแรดิชสะอาดสำหรับรับประทานเท่านั้น และเก็บซอสที่ทำเสร็จไว้ในตู้เย็น.

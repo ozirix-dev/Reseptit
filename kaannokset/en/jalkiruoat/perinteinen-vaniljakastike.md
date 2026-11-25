@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/jalkiruoat/perinteinen-vaniljakastike.md
 translation_of: perinteinen-vaniljakastike
-status: draft
+status: published
 servings: 6
 time_total_min: 25
 difficulty: "easy"
@@ -24,6 +24,8 @@ image:
   alt: "Smooth pale-yellow vanilla custard sauce in a glass bowl, with berry pie in the background; AI illustration"
   width: 960
   height: 640
+protein_per_serving_g: 3.06
+fat_per_serving_g: 4.1
 ingredients:
   - amount: 450
     unit: "g"
@@ -58,10 +60,9 @@ A smooth milk-and-egg-yolk custard for blueberry pie or apple crumble.
 
 ## Notes
 
-- This is an editorial draft; nutrition and glycaemic load assessments and final image approval are pending.
+- The illustration was generated with AI. Protein and fat are estimates per serving. Carbohydrate values are unavailable. Glycaemic load could not be determined.
 - Preparation reference: https://www.martat.fi/reseptit/vaniljakastike/
 
-- The previous mismatched AI illustration has been replaced with a new illustration of smooth vanilla custard sauce and pie. The replacement still requires final editorial image approval.
 - Further comparison: the vanilla custard for K-Ruoka's biscuit baskets uses cornstarch and egg yolks; the Martat recipe uses potato starch instead. Quantities and preparation here are independent adaptations. https://www.k-ruoka.fi/reseptit/keksikorit
 - Contains **milk and eggs**. Heat gently as directed; if not serving immediately, cool promptly and refrigerate.
 - The stated total time is for serving the sauce warm. For cold serving, allow additional cooling and refrigeration time.

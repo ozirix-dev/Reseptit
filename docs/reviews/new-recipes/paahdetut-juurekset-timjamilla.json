@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "paahdetut-juurekset-timjamilla",
+  "source_path": "reseptit/alkuruoat/paahdetut-juurekset-timjamilla.md",
+  "source_sha256": "b276b8929a3fcf80b31eb9df53e55295d456b044a42d7133f635f2f8a111ba9a",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/uunissa-paahdetut-juurekset/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/paahdetut-juurekset-timjamilla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Julkaistusta perunallisesta timjamiuunijuureksesta erotettu perunaton lanttu-, porkkana- ja palsternakkalisuke kaikilla kielillä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Erillinen perunaton lanttu-, porkkana- ja palsternakkalisuke. Juurekset paahdetaan yhdessä ja kypsyys tarkistetaan haarukalla."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Erillinen perunaton lanttu-, porkkana- ja palsternakkalisuke. Juurekset paahdetaan yhdessä ja kypsyys tarkistetaan haarukalla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Erillinen perunaton lanttu-, porkkana- ja palsternakkalisuke. Juurekset paahdetaan yhdessä ja kypsyys tarkistetaan haarukalla. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Erillinen perunaton lanttu-, porkkana- ja palsternakkalisuke. Juurekset paahdetaan yhdessä ja kypsyys tarkistetaan haarukalla. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Julkaistaan vain sidotut kentät. Timjamin kuitu- ja polyolitiedot puuttuvat. Öljy lasketaan käytetyn, ei mitatun ruokaan jäävän määrän perusteella."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Paahdetun lanttu–porkkana–palsternakkaseoksen GI-vastaavuus puuttuu. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/paahdetut-juurekset-timjamilla.webp",
+    "bytes": 152060,
+    "sha256": "1f7d1840e8533de1b2ae8e01baf5e7de574b2e9d0cca1d7b7718284c1813911f",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/alkuruoat/paahdetut-juurekset-timjamilla.md",
+        "sha256": "996877e51b60b0f9c0850bf259a21b19b83baa65a4b54e8cac445a2a05bc87a3"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/paahdetut-juurekset-timjamilla.md",
+        "sha256": "9adff564553bd1a6f181b9e84bba8e704e1e84898a18739892d74df1225772aa"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/paahdetut-juurekset-timjamilla.md",
+        "sha256": "b4c6e8188d49209160d640b8fb9708d5dcb619704196e3661799b59038a3ccd4"
+      },
+      {
+        "path": "reseptit/alkuruoat/paahdetut-juurekset-timjamilla.md",
+        "sha256": "3551027a7a6413c4427c17e01f344ae655f40caa24b02c5df9911f4937b400fb"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/alkuruoat/paahdetut-juurekset-timjamilla.md",
+        "language": "en",
+        "slug": "paahdettu-lanttu-porkkana-palsternakka-en",
+        "sha256": "0e4a18f3067fa3a5269166b8bfd6aa6887436046a2cfe3e8c3daf7827d8492be",
+        "semantic_sha256": "b3a59e219fcc3cefd5cb8a23281b3a2954db72d5a91fadbb2fbc51a3a089514c"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/paahdetut-juurekset-timjamilla.md",
+        "language": "sv",
+        "slug": "paahdettu-lanttu-porkkana-palsternakka-sv",
+        "sha256": "02d8a0ace00aba7e6db504ba4ec49a55f2d3adfadbcf219b0ddd644f38fd4f90",
+        "semantic_sha256": "8327ffecd9265e4671000e2fd53ad7f105c96e2c3bfe22fd33912e956cbb1d1e"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/paahdetut-juurekset-timjamilla.md",
+        "language": "th",
+        "slug": "paahdettu-lanttu-porkkana-palsternakka-th",
+        "sha256": "bfc6e8d8117e5870f4504b79ca1934e9a945246831208507e6bd196ce2ff119b",
+        "semantic_sha256": "9c8f64714963defb96eae53a9b8576e3334c266a0bbb340663479e74ba33b4a5"
+      },
+      {
+        "path": "reseptit/alkuruoat/paahdetut-juurekset-timjamilla.md",
+        "language": "fi",
+        "slug": "paahdettu-lanttu-porkkana-palsternakka",
+        "sha256": "b276b8929a3fcf80b31eb9df53e55295d456b044a42d7133f635f2f8a111ba9a",
+        "semantic_sha256": "480c58cd35e2c707a32786fea681a42c27f488a185898d60ced9546841ed78a5"
+      }
+    ]
+  }
+}

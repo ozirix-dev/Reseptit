@@ -2,10 +2,10 @@
   "schema_version": 1,
   "recipe_id": "kermainen-pippurikastike",
   "source_path": "reseptit/alkuruoat/kermainen-pippurikastike.md",
-  "source_sha256": "fac68e5834180fa322feabd5704840472a9639f9d1539d016dcacd4f0136a50f",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; kokonaisjulkaisun hyväksyntä puuttuu",
-  "reviewed_at": "2026-11-21",
+  "source_sha256": "17c3b9b9b8418d67adfc8ab007b7079dbe3458c5e75011f674630ed5c9ac5d1a",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -14,7 +14,7 @@
       "https://www.meillakotona.fi/reseptit/pippuripihvi"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/kermainen-pippurikastike.json",
   "checks": {
     "duplicates": {
       "status": "pass",
@@ -37,12 +37,12 @@
       "notes": "Neljä annosta / 25 min on perusteltu pilkkomisen, 3 min kuullotuksen, 30 s maustelämmityksen sekä 8–10 min haudutuksen pohjalta. Maku-ohjeen koko pihviaterian 35 min ei todista juuri tämän kastikkeen aikaa; lopullinen viskositeetti riippuu kerman ja liemen tuotteista."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi."
+      "status": "pass",
+      "notes": "Kanoninen laskenta tarkistettu. Lihaliemen ja Dijon-sinapin EU-merkinnöistä puuttuu varmennettu polyolimäärä. Proteiini ja rasva kattavat kaikki ainekset. Chat-2 vahvisti annosarvion ja pidätysten rajauksen tälle katselmoidulle versiolle."
     },
     "glycemic": {
       "status": "unavailable",
-      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+      "notes": "Valmiin lihaliemen ja Dijon-sinapin käytettävissä olevan hiilihydraatin osuus on epävarma. Tälle kerma-liemipohjalle ei löytynyt hyväksyttyä GI-sidontaa."
     }
   },
   "supplementary_evidence": {
@@ -54,7 +54,79 @@
     ],
     "image_path": "kuvat/alkuruoat/kermainen-pippurikastike.webp",
     "image_sha256": "7530d5d848f8e0f09179f7af146da693e9021ca922b1372e6063915780d426ee",
-    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "image_review": "Kuvan ruokalajivastaavuus hyväksytty Chat-2:n katselmoinnissa. Kokki-Codex varmisti kuvan tavut ja dekoodauksen.",
     "physical_cook_test": false
-  }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": null,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/kermainen-pippurikastike.webp",
+    "bytes": 35184,
+    "sha256": "7530d5d848f8e0f09179f7af146da693e9021ca922b1372e6063915780d426ee",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI–EN/SV/TH. Vertailtu ainesosat ja määrät, käyttötila, valmistusvaiheet, lämpötilat ja ajat, allergeenit, säilytys, ravintokentät ja kuvan kuvaus.",
+    "findings": [
+      "SV: sekoitusohje täsmennetty vastaamaan FI:n ajoittaista sekoittamista.",
+      "Poistettu kuvan versionhallintaa koskeva teksti SV- ja TH-sivuilta. Kuvakoristeiden rajaus säilyy."
+    ]
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/kermainen-pippurikastike.md",
+        "language": "fi",
+        "slug": "kermainen-pippurikastike",
+        "sha256": "17c3b9b9b8418d67adfc8ab007b7079dbe3458c5e75011f674630ed5c9ac5d1a",
+        "semantic_sha256": "b9cd306d9830f1c6d39f85c727d88cd084a6b4a365db6209c79c491e33c6c4a1"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/kermainen-pippurikastike.md",
+        "language": "en",
+        "slug": "kermainen-pippurikastike-en",
+        "sha256": "c0afe02e2b19c77daee167ef0ddedb6c4d3e19d6bff89596139b982fe5bfbda0",
+        "semantic_sha256": "dd9f451fda6bb26d9601e23aafaa2e47325d8e216fa259f6eaf73151bd0a6d58"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/kermainen-pippurikastike.md",
+        "language": "sv",
+        "slug": "kermainen-pippurikastike-sv",
+        "sha256": "bb7d9e23f44dc471c4cc90a97151a6e3d24b0e5b1a815c26e4e8eeb55cdcc02f",
+        "semantic_sha256": "f78f5bb535d502f528ddc30e4824cf98a73add9eda6e3c08d9fc6c2d4193cc51"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/kermainen-pippurikastike.md",
+        "language": "th",
+        "slug": "kermainen-pippurikastike-th",
+        "sha256": "34d3af35a441a2d0308f44f504fd8f4825d9e68794bbb65d058462acae8829ba",
+        "semantic_sha256": "9937b3a66a019911df35d1e1811344fcdbdc6f332a6f04d6595797a12dc34ff8"
+      }
+    ],
+    "nutrition_sha256": "f7368b89ad16ee9b43bef480d0b9fe3a6b51e66d95027b0e3b10652a0fea5d9f",
+    "batch_id": "batch-33308",
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154517398"
+  },
+  "independent_review": {
+    "reviewed_head": "75a90d0326e7145d89b984bcf929ae12d806051c",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154517398",
+    "decision": "pass"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154517398"
 }

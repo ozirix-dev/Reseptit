@@ -4,7 +4,7 @@ recipe_id: perinteinen-vaniljakastike
 url_slug: perinteinen-vaniljakastike
 category: jalkiruoka
 language: fi
-status: draft
+status: published
 servings: 6
 time_total_min: 25
 difficulty: "helppo"
@@ -21,14 +21,16 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 image:
   src: jalkiruoat/perinteinen-vaniljakastike.webp
   alt: "Sileää vaaleankeltaista vaniljakastiketta lasikulhossa, taustalla marjapiirakka; tekoälykuvitus"
   width: 960
   height: 640
+protein_per_serving_g: 3.06
+fat_per_serving_g: 4.1
 ingredients:
   - amount: 450
     unit: "g"
@@ -63,10 +65,9 @@ Maidosta, keltuaisesta ja vaniljasta valmistettu kastike mustikkapiirakalle ja o
 
 ## Muistiinpanot
 
-- Sisältö on toimituksellinen luonnos, ravintoarvo- ja GK-arvio sekä kuvan lopullinen hyväksyntä puuttuvat.
+- Kuva on tekoälyllä luotu havainnekuva. Ilmoitetut proteiini- ja rasvamäärät ovat annosarvioita. Hiilihydraattimäärät jäävät määrittämättä. Glykeemistä kuormaa (GK) ei ole voitu määrittää.
 - Valmistuksen vertailulähde: https://www.martat.fi/reseptit/vaniljakastike/
 
-- Uusi kuva on tekoälyn luoma havainnekuva sileästä vaniljakastikkeesta; lopullinen toimituksellinen hyväksyntä puuttuu.
 - Lisävertailu: K-Ruoan keksikorien vaniljakastike sisältää maissitärkkelystä ja keltuaisia. Marttojen ohje käyttää sen sijaan perunajauhoa. Tässä reseptissä määrä- ja menetelmämuutokset ovat omia sovituksia. https://www.k-ruoka.fi/reseptit/keksikorit
 - Sisältää **maitoa ja kananmunaa**. Kuumenna kastike rauhallisesti ohjeen mukaan, jäähdytä nopeasti, jos sitä ei tarjota heti, ja säilytä jääkaapissa.
 - Ilmoitettu kokonaisaika koskee lämpimänä tarjoilua. Jos kastike tarjotaan kylmänä, varaa lisäksi jäähdytys- ja jääkaappiaika.

@@ -4,7 +4,7 @@ recipe_id: sinappikastike-joulukinkulle
 url_slug: sinappikastike-joulukinkulle
 category: alkuruoka
 language: fi
-status: draft
+status: published
 servings: 6
 time_total_min: 20
 difficulty: "helppo"
@@ -20,9 +20,9 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 image:
   src: alkuruoat/sinappikastike-joulukinkulle.webp
   alt: "Kullanruskeaa sinappikastiketta lasikulhossa, näkyvissä sinapinsiemeniä"
@@ -68,7 +68,8 @@ Lämmin, pehmeä sinappikastike kinkulle ilman paistolientä.
 
 ## Muistiinpanot
 
-- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn tuottama havainnekuva tässä haarassa; toimituksellinen kuvakatselmointi puuttuu.
+- Tarkista allergeenit pakkausmerkinnöistä.
+- Kuva on tekoälyllä luotu havainnekuva. Annoskohtaiset ravintoarvot jäävät määrittämättä. Glykeemistä kuormaa (GK) ei ole voitu määrittää.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.k-ruoka.fi/reseptit/kastike-kinkulle-ilman-paistolienta
 - Marttojen testatussa kinkunkastikkeessa käytetään vehnäjauhoa, sinappia ja kermaa sekä kinkun paistolientä. Tässä versiossa käytetään sen sijaan kasvislientä, joten reseptit eivät ole identtisiä. https://www.martat.fi/reseptit/kinkun-kastike/
 - Sisältää **maitoa, vehnää ja sinappia**. Kasvisliemi voi sisältää selleriä; tarkista liemen ja sinappien pakkausmerkinnät.

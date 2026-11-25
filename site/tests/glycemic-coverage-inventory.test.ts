@@ -47,6 +47,25 @@ test("GK pending accepts documented withheld macros and rejects missing, conflic
   assert.throws(() => assertPendingGkSources([{...pending, glycemicLoadPerServing:0}], [reviewed]), /NULL cases/);
 });
 
+test("GK pending accepts evidence-backed partial nutrition without publishing GK", () => {
+  const pending = { recipeId: "partial-fi", status: "INSUFFICIENT SOURCE DATA" as const,
+    glycemicLoadPerServing: null, sourceBlobSha: "b".repeat(40) };
+  const reviewed = { recipe_id: pending.recipeId, status: "PARTIAL ESTIMATE WITH EVIDENCE",
+    calculationEvidence: "docs/nutrition/calculations/partial-fi.json", evidenceErrors: [],
+    values: { carbs_net_per_serving_g: null, carbs_total_per_serving_g: null, protein_per_serving_g: 0, fat_per_serving_g: 2 } };
+  assert.deepEqual([...assertPendingGkSources([pending], [reviewed])], [pending.recipeId]);
+  for (const row of [
+    { ...reviewed, calculationEvidence: "docs/nutrition/calculations/other.json" },
+    { ...reviewed, evidenceErrors: ["stale approval"] },
+    { ...reviewed, values: { ...reviewed.values, protein_per_serving_g: null, fat_per_serving_g: null } },
+    { ...reviewed, values: { ...reviewed.values, carbs_net_per_serving_g: 1, carbs_total_per_serving_g: 2 } },
+    { ...reviewed, values: { ...reviewed.values, protein_per_serving_g: -1 } },
+    { ...reviewed, values: { ...reviewed.values, fat_per_serving_g: Infinity } },
+    { ...reviewed, values: { protein_per_serving_g: 1, fat_per_serving_g: 2 } },
+  ]) assert.throws(() => assertPendingGkSources([pending], [row]), /disagree/);
+  assert.throws(() => assertPendingGkSources([{ ...pending, glycemicLoadPerServing: 0 }], [reviewed]), /NULL cases/);
+});
+
 test("baseline snapshots capture the approved source revision and all recipe states", () => {
   const baseline = buildBaselineSnapshot({
     sourceCommit: "5e9cdeb830f468ecf099e9c286f9344afe3b6b71",

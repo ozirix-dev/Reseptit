@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/jalkiruoat/puolukkakastike-jalkiruokiin.md
 translation_of: puolukkakastike-jalkiruokiin
-status: draft
+status: published
 servings: 6
 time_total_min: 20
 difficulty: "enkel"
@@ -23,6 +23,10 @@ image:
   alt: "Djupröd lingonsås i en klar glasskål med några hela lingon; AI-bild"
   width: 960
   height: 640
+carbs_net_per_serving_g: 12.88
+carbs_total_per_serving_g: 13.92
+protein_per_serving_g: 0.23
+fat_per_serving_g: 0.27
 ingredients:
   - amount: 250
     unit: "g"
@@ -51,10 +55,9 @@ En syrlig bärsås till glass, cheesecake eller ugnsdesserter.
 
 ## Anteckningar
 
-- Detta är ett redaktionellt utkast. Inga numeriska näringsvärden har godkänts för publicering eller visas; glykemisk belastning är obestämd. Den AI-genererade bilden inväntar slutligt godkännande.
+- Illustrationen är AI-genererad. Näringsvärdena är portionsuppskattningar baserade på ingredienserna. Den glykemiska belastningen kunde inte fastställas.
 - Preparation reference: https://www.k-ruoka.fi/reseptit/puolukkakastike
 
-- Den tidigare felaktiga illustrationsbilden har ersatts. Den nya AI-bilden inväntar fortfarande redaktionellt godkännande.
 - Marttas provlagade bärsås värmer sockerlag före bärpurén; K-Ruoas lingonsås kokas inte. Recipavos kokta version med några hela bär är en egen anpassning utan provlagning av någon av källorna. https://www.martat.fi/reseptit/marjakastike/
 - De angivna ingredienserna innehåller ingen avsiktligt tillsatt mjölk, ägg, vete eller nötter. Kontrollera märkningen för möjliga spår; inget påstående om glutenfrihet har godkänts.
 - Den angivna totaltiden gäller varm servering. För kall servering behövs extra tid för avsvalning och kylning.

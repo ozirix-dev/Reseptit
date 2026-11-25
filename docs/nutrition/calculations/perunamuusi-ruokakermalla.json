@@ -1,0 +1,105 @@
+{
+  "recipeId": "perunamuusi-ruokakermalla",
+  "sourceHash": "47d1750d7dba3dc66f7a6d82b1f1ea07cdb5e1b8aec3fa615359b65ea73db65e",
+  "calculatedAt": "2026-11-25",
+  "servings": 6,
+  "scope": "Yksi annos reseptin 6 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Ruokakerman EU-tuotetieto ei erittele kuitua ja polyoleja. Raakapainosta tehty arvio ei määrällistä keitinveden hävikkiä.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kuorittuja jauhoisia perunoita",
+      "amount": 1000,
+      "unit": "g",
+      "state": "kuorittuja jauhoisia perunoita",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-205-release-20",
+        "name": "PERUNA, VANHA, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/205",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 15.5,
+          "fibre": 1.4,
+          "polyols": 0,
+          "protein": 1.88,
+          "fat": 0.114
+        },
+        "state": "kuorittuja jauhoisia perunoita",
+        "retrievedAt": "2026-11-25"
+      }
+    },
+    {
+      "item": "ruokakermaa (rasvaa 10 %)",
+      "amount": 250,
+      "unit": "g",
+      "state": "ruokakermaa (rasvaa 10 %)",
+      "matchEvidence": "Vertaile ainesosaan nimettyä esimerkkituotetta ja ilmoitusperustaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "valio-6408430014415",
+        "name": "Valio Keittiön ruokakerma 10 % laktoositon",
+        "sourceUrl": "https://www.valio.fi/tuotteet/valio-keittion-ruokakerma-10-laktoositon/",
+        "per100g": {
+          "kcal": 119,
+          "carbohydrate": 5.6,
+          "sugars": 2.5,
+          "protein": 1.7,
+          "fat": 10,
+          "fibre": null,
+          "polyols": null
+        },
+        "licence": "Valmistajan tai tuotemerkin julkinen tuotetieto.",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "polyolsSourceVerified": false,
+        "state": "ruokakermaa (rasvaa 10 %)",
+        "retrievedAt": "2026-11-25"
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 4,
+      "unit": "g",
+      "state": "suolaa",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-79-release-20",
+        "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "state": "suolaa",
+        "retrievedAt": "2026-11-25"
+      }
+    }
+  ],
+  "batchId": "batch-33309",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Ruokakerman EU-tuotetieto ei erittele kuitua ja polyoleja. Raakapainosta tehty arvio ei määrällistä keitinveden hävikkiä."
+}

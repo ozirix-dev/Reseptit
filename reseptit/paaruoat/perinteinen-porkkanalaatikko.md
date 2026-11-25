@@ -9,13 +9,18 @@ cooking_method:
   - "uuni"
   - "keitto"
 language: fi
-status: draft
+status: published
 servings: 8
 time_total_min: 165
 difficulty: "helppo"
 tags:
   - "suomalainen"
   - "perinneruoka"
+image:
+  src: paaruoat/perinteinen-porkkanalaatikko.webp
+  alt: "Porkkana-riisilaatikkoa vaaleassa uunivuoassa; tekoälykuvitus"
+  width: 960
+  height: 640
 ingredients:
   - amount: 1000
     unit: "g"
@@ -49,14 +54,14 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 ---
 
 # Perinteinen porkkanalaatikko
 
-Perinteinen suomalainen kotikeittiön resepti.
+Porkkanasose ja maitoinen riisipuuro sekoitetaan ja paistetaan vuoassa. Muskottipähkinä maustaa perinteisen joulupöydän lisukkeen.
 
 ## Valmistus
 
@@ -67,5 +72,7 @@ Perinteinen suomalainen kotikeittiön resepti.
 
 ## Muistiinpanot
 
-- Toimituksellinen luonnos, ei Recipavon keittiössä testattu. Kuva, ravinto- ja GK-laskelma sekä lopullinen kieli- ja allergeenitarkistus puuttuvat.
+- Sisältää maitoa ja kananmunaa.
 - Vertailulähteet (eri valmistusversioita): https://www.martat.fi/reseptit/porkkanalaatikko/ ja / and https://www.k-ruoka.fi/reseptit/porkkanalaatikko-soseesta
+
+- Annoksen ravintoarvoja ei voitu määrittää luotettavasti.

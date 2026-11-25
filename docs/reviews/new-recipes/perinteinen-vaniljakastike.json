@@ -2,10 +2,10 @@
   "schema_version": 1,
   "recipe_id": "perinteinen-vaniljakastike",
   "source_path": "reseptit/jalkiruoat/perinteinen-vaniljakastike.md",
-  "source_sha256": "ec655927a2ae1370f6283740c1bc533e81970926f80705a875dd75653e10fe28",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; ravinto- ja julkaisuhyväksyntä kesken",
-  "reviewed_at": "2026-11-21",
+  "source_sha256": "80b9f10ca12e98dd7795828d3b0ed94e008fde1bf3945cd66552c31826c70cca",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -14,7 +14,7 @@
       "https://www.valio.fi/reseptit/kuohkea-sitruuna-vaniljakastike/"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/perinteinen-vaniljakastike.json",
   "checks": {
     "duplicates": {
       "status": "pass",
@@ -37,12 +37,12 @@
       "notes": "Kuusi pientä kastikeannosta / 25 min koskee lämpimänä tarjoilua: mittaus, sekoitus ja miedolla lämmöllä saostaminen mahtuvat arvioon. Kylmänä tarjoilu edellyttää lisäksi nopeaa jäähdytystä ja jääkaappiaikaa; nelikielinen ohje on täsmennetty. Säilytys enintään +6 °C. Saanto on arvio."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi. 22.11.2026 kaikki ravintoainetta sisältävä massa on tarkoitus säilyttää; siivilöinti on poistettu neljästä kieliversiosta. Varsinainen polyoli-/kuituevidenssi vaniljasokerille puuttuu edelleen."
+      "status": "pass",
+      "notes": "Kanoninen laskenta tarkistettu. Aitoa vaniljaa sisältävän vaniljasokerin kuitua ja polyoleja ei ilmoiteta. Proteiini ja rasva kattavat kaikki ainekset. Chat-2 vahvisti annosarvion ja pidätysten rajauksen tälle katselmoidulle versiolle."
     },
     "glycemic": {
       "status": "unavailable",
-      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+      "notes": "Keitetyn maissitärkkelys-maitopohjan valmistuskohtaista GI:tä ja vaniljasokerin käytettävissä olevaa hiilihydraattia ei ole varmennettu."
     }
   },
   "supplementary_evidence": {
@@ -51,7 +51,78 @@
     ],
     "image_path": "kuvat/jalkiruoat/perinteinen-vaniljakastike.webp",
     "image_sha256": "6508c960e4858abfd4571303f0d3c5f81499a0f72fbbfb8b7851c9d0baa67734",
-    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "image_review": "Kuvan ruokalajivastaavuus hyväksytty Chat-2:n katselmoinnissa. Kokki-Codex varmisti kuvan tavut ja dekoodauksen.",
     "physical_cook_test": false
-  }
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": null,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/jalkiruoat/perinteinen-vaniljakastike.webp",
+    "bytes": 16282,
+    "sha256": "6508c960e4858abfd4571303f0d3c5f81499a0f72fbbfb8b7851c9d0baa67734",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI–EN/SV/TH. Vertailtu ainesosat ja määrät, käyttötila, valmistusvaiheet, lämpötilat ja ajat, allergeenit, säilytys, ravintokentät ja kuvan kuvaus.",
+    "findings": [
+      "Poistettu vanhentunut kuvavaihtoa koskeva TH-muistiinpano. Tekoälykuvituksen ilmoitus säilyy."
+    ]
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/jalkiruoat/perinteinen-vaniljakastike.md",
+        "language": "fi",
+        "slug": "perinteinen-vaniljakastike",
+        "sha256": "80b9f10ca12e98dd7795828d3b0ed94e008fde1bf3945cd66552c31826c70cca",
+        "semantic_sha256": "88d30d4a46e4be656f99275e470a54b762cb8a0b960ff3ba9920d06d670dfc91"
+      },
+      {
+        "path": "kaannokset/en/jalkiruoat/perinteinen-vaniljakastike.md",
+        "language": "en",
+        "slug": "perinteinen-vaniljakastike-en",
+        "sha256": "434557f49f8b682766943edf1a693c893ccc32ddd484ccce7baf38c2390f1555",
+        "semantic_sha256": "d1deaa79c011a0516115e963bf18f173e9a5969e73dcfe17e5409716e5497eae"
+      },
+      {
+        "path": "kaannokset/sv/jalkiruoat/perinteinen-vaniljakastike.md",
+        "language": "sv",
+        "slug": "perinteinen-vaniljakastike-sv",
+        "sha256": "d41d224e0360290b600acb28f96c33f8d45a4c83c30743f9ff7c977a80f5374e",
+        "semantic_sha256": "735ac346531441ffc01d7250611bd8772cd2103dd53a3f87d172b2ee1b5ee209"
+      },
+      {
+        "path": "kaannokset/th/jalkiruoat/perinteinen-vaniljakastike.md",
+        "language": "th",
+        "slug": "perinteinen-vaniljakastike-th",
+        "sha256": "07fafa8ecefb8f74034db86646c7a9662de4ac4e74f9d20960650b9554eb503d",
+        "semantic_sha256": "7d647c730ddc008c0c2e04364a69440a5e1b65ecb2499d652634061b3b7e2ea3"
+      }
+    ],
+    "nutrition_sha256": "fad0b39f7b44276320147a6b37b2d4b440666f1addb54283da450f239909bb47",
+    "batch_id": "batch-33308",
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154517398"
+  },
+  "independent_review": {
+    "reviewed_head": "75a90d0326e7145d89b984bcf929ae12d806051c",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154517398",
+    "decision": "pass"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154517398"
 }

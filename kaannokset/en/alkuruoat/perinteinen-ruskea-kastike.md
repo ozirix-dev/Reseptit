@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/alkuruoat/perinteinen-ruskea-kastike.md
 translation_of: perinteinen-ruskea-kastike
-status: draft
+status: published
 servings: 4
 time_total_min: 25
 difficulty: "easy"
@@ -23,6 +23,8 @@ image:
   alt: "Glossy brown gravy in a white gravy boat, with meatballs and mashed potatoes behind"
   width: 960
   height: 640
+protein_per_serving_g: 6.23
+fat_per_serving_g: 7.38
 ingredients:
   - amount: 35
     unit: "g"
@@ -54,7 +56,8 @@ Toasted flour, butter and beef stock make a rich gravy for meatballs and mashed 
 
 ## Notes
 
-- Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The AI-generated illustrative image is included in this branch and still requires editorial review.
+- Check packaging for allergens.
+- The illustration was generated with AI. Protein and fat are estimates per serving. Carbohydrate values are unavailable. Glycaemic load could not be determined.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/ruskea-kastike
 - Contains **milk, wheat and soy**. Soy sauce may also contain wheat, and stock may contain celery. Check the products used.
 - Serve the gravy hot immediately. If preparing ahead, cool promptly in a shallow container, refrigerate below +6°C and reheat thoroughly until hot. Check stock and soy-sauce labels for celery, wheat and soy.

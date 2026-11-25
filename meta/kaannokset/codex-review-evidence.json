@@ -13390,5 +13390,766 @@
     "reference": "https://github.com/ozirix-dev/Reseptit/pull/981#pullrequestreview-6040267788",
     "outcome": "pass",
     "findings": []
+  },
+  "perinteinen-ruskea-kastike:en": {
+    "source_hash": "5a4fd18bdcf82977606f2152d003a3cd58f7c469edae471d9fc4d97dca0f3209",
+    "translation_hash": "38b39333152c5144828372eaab74b5a87adf40f196b38bf309bc5cd57ecaf960",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-ruskea-kastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-ruskea-kastike:sv": {
+    "source_hash": "5a4fd18bdcf82977606f2152d003a3cd58f7c469edae471d9fc4d97dca0f3209",
+    "translation_hash": "eb90abab970e71fe97412235ee2fed20e43ff3fd9b3eacdcb2790db0024ea832",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-ruskea-kastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-ruskea-kastike:th": {
+    "source_hash": "5a4fd18bdcf82977606f2152d003a3cd58f7c469edae471d9fc4d97dca0f3209",
+    "translation_hash": "a998ef98b84a20cd5c2077dc389b1ca8e3d20b7158f8237c71d0bb3356a9a69c",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-ruskea-kastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kermainen-tillikastike:en": {
+    "source_hash": "0a8286478c9b7891cdbd7107c5faf47dbb935f7468bf6fb947e2c9a546728413",
+    "translation_hash": "1ae07e9b935b3c0204c917dc03328a1585f5ce72505a59229f7ee42ca2a37a86",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kermainen-tillikastike.json",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Fineli #11152:n kermaviili korjattu vähälaktoosiseksi (VL) kaikilla neljällä kielellä ja laskentatodisteessa. Sitruunamehun todistettu annostus on 12 g. Neljä annosarviota säilyvät."
+      }
+    ]
+  },
+  "kermainen-tillikastike:sv": {
+    "source_hash": "0a8286478c9b7891cdbd7107c5faf47dbb935f7468bf6fb947e2c9a546728413",
+    "translation_hash": "075e5295fa34f9bf2f4af668c017b802bd11b69e6b3dac5c25066a0d6bcf014d",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kermainen-tillikastike.json",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Fineli #11152:n kermaviili korjattu vähälaktoosiseksi (VL) kaikilla neljällä kielellä ja laskentatodisteessa. Sitruunamehun todistettu annostus on 12 g. Neljä annosarviota säilyvät."
+      }
+    ]
+  },
+  "kermainen-tillikastike:th": {
+    "source_hash": "0a8286478c9b7891cdbd7107c5faf47dbb935f7468bf6fb947e2c9a546728413",
+    "translation_hash": "099d5ad559d0f50aaaa7c1caafd21b6b13e687d615be1f09c58b2adc1306709a",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kermainen-tillikastike.json",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Fineli #11152:n kermaviili korjattu vähälaktoosiseksi (VL) kaikilla neljällä kielellä ja laskentatodisteessa. Sitruunamehun todistettu annostus on 12 g. Neljä annosarviota säilyvät."
+      }
+    ]
+  },
+  "kantarellikastike:en": {
+    "source_hash": "335cdbc0252251b45c40906e640cb31169dd1180f442069e4b5f6a8dbc7f509d",
+    "translation_hash": "f2cf1644c96ad87cbef49e71ef0a13cb5d185b687165c080595dc439b2a18738",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kantarellikastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kantarellikastike:sv": {
+    "source_hash": "335cdbc0252251b45c40906e640cb31169dd1180f442069e4b5f6a8dbc7f509d",
+    "translation_hash": "03b3d519715802f5700f7ce243aac061133719f4df05319ee1fcaf04c4ec618d",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kantarellikastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kantarellikastike:th": {
+    "source_hash": "335cdbc0252251b45c40906e640cb31169dd1180f442069e4b5f6a8dbc7f509d",
+    "translation_hash": "3f7ac0d0862d591516ca27294e009c27a9df7954b5fb67036180fd8211c93df7",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kantarellikastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sinappikastike-joulukinkulle:en": {
+    "source_hash": "524772931afd7b9ed8acda91048f02cea0c3feaea92c37af90e6d7159d0b810b",
+    "translation_hash": "4ebe6e036a54f33c3e6f6c52497cb227a7dcd52a6bf7c266b3f83a575fb49b16",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/sinappikastike-joulukinkulle.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sinappikastike-joulukinkulle:sv": {
+    "source_hash": "524772931afd7b9ed8acda91048f02cea0c3feaea92c37af90e6d7159d0b810b",
+    "translation_hash": "5d50b3152a723c970aba8a4827ed4f9995bb873bd590331854af4f2e5246714a",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/sinappikastike-joulukinkulle.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sinappikastike-joulukinkulle:th": {
+    "source_hash": "524772931afd7b9ed8acda91048f02cea0c3feaea92c37af90e6d7159d0b810b",
+    "translation_hash": "7a0757e6fbd04e32a5d2f640a8c8a46f8b5a853e8d445b5df71218a3da49aec6",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/sinappikastike-joulukinkulle.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kylma-piparjuurikastike:en": {
+    "source_hash": "b4fa04ef5a1b8eec6a51073527c095024962574a936b528561315f4c3e6cdda9",
+    "translation_hash": "aeb875f7219bc1af06ef70f14901a3d706ecce2f83a45943a7ae753b5594bd4e",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kylma-piparjuurikastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kylma-piparjuurikastike:sv": {
+    "source_hash": "b4fa04ef5a1b8eec6a51073527c095024962574a936b528561315f4c3e6cdda9",
+    "translation_hash": "ec90c3c7cca57433311d8ff4a2f4a0685278fc0b40a73e09ab39dbbe5d526de5",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kylma-piparjuurikastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kylma-piparjuurikastike:th": {
+    "source_hash": "b4fa04ef5a1b8eec6a51073527c095024962574a936b528561315f4c3e6cdda9",
+    "translation_hash": "554cda2db80553a97eb96b2e6f6b2315b6da2e1e38f2e5f2c29ea4c45d3b33fc",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kylma-piparjuurikastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-munakastike:en": {
+    "source_hash": "4d324cae95c82ca37c225329169568d72ae60bcef485c05b49586084fe465410",
+    "translation_hash": "83ca8eb86d30bacaf357bcb1baa9e768ba0f3734c37dbc69330b57e3cdaa389a",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-munakastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-munakastike:sv": {
+    "source_hash": "4d324cae95c82ca37c225329169568d72ae60bcef485c05b49586084fe465410",
+    "translation_hash": "25a9c42ce490b8c215a7ad2e14d32d7c0f4eae7133b8116ecef4822444ee0080",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-munakastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-munakastike:th": {
+    "source_hash": "4d324cae95c82ca37c225329169568d72ae60bcef485c05b49586084fe465410",
+    "translation_hash": "9ff1ff86b116943b1e43db2a8003da396ec976da0b776e92ea3fd7ba4080110b",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-munakastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kermainen-pippurikastike:en": {
+    "source_hash": "b9cd306d9830f1c6d39f85c727d88cd084a6b4a365db6209c79c491e33c6c4a1",
+    "translation_hash": "dd9f451fda6bb26d9601e23aafaa2e47325d8e216fa259f6eaf73151bd0a6d58",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kermainen-pippurikastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kermainen-pippurikastike:sv": {
+    "source_hash": "b9cd306d9830f1c6d39f85c727d88cd084a6b4a365db6209c79c491e33c6c4a1",
+    "translation_hash": "f78f5bb535d502f528ddc30e4824cf98a73add9eda6e3c08d9fc6c2d4193cc51",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kermainen-pippurikastike.json",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Sekoitusohje täsmennetty vastaamaan FI:n ajoittaista sekoittamista."
+      },
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Poistettu kuvan versionhallintaa koskeva teksti SV- ja TH-sivuilta. Kuvakoristeiden rajaus säilyy."
+      }
+    ]
+  },
+  "kermainen-pippurikastike:th": {
+    "source_hash": "b9cd306d9830f1c6d39f85c727d88cd084a6b4a365db6209c79c491e33c6c4a1",
+    "translation_hash": "9937b3a66a019911df35d1e1811344fcdbdc6f332a6f04d6595797a12dc34ff8",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kermainen-pippurikastike.json",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Poistettu kuvan versionhallintaa koskeva teksti SV- ja TH-sivuilta. Kuvakoristeiden rajaus säilyy."
+      }
+    ]
+  },
+  "perinteinen-valkokastike:en": {
+    "source_hash": "ecd72c586a74d8df05d5062b86a083f305c16c2a63541fe8fa9230bec12b47cf",
+    "translation_hash": "dafda8dc6e2164321eba8aaf5a0d477ee8ccf521c6b1ab9dd04530352c8ada9b",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-valkokastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-valkokastike:sv": {
+    "source_hash": "ecd72c586a74d8df05d5062b86a083f305c16c2a63541fe8fa9230bec12b47cf",
+    "translation_hash": "40be2ce3358dc9378862301ddabfe4412b373a15655f9421b2106540af8736ba",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-valkokastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-valkokastike:th": {
+    "source_hash": "ecd72c586a74d8df05d5062b86a083f305c16c2a63541fe8fa9230bec12b47cf",
+    "translation_hash": "234cb29d7c430b7ee8c9baf62c56362a3ce061b5b1f50e8a873047b92e729cdf",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-valkokastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "puolukkakastike-jalkiruokiin:en": {
+    "source_hash": "472a890ae7183476ae3ba3bc76783b228d38fe149e191597f783e1f8882e0fc2",
+    "translation_hash": "416241aee89e7ad4c54d4c2671573bb1827380a3a848e692b8a67c4030af18d8",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/puolukkakastike-jalkiruokiin.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "puolukkakastike-jalkiruokiin:sv": {
+    "source_hash": "472a890ae7183476ae3ba3bc76783b228d38fe149e191597f783e1f8882e0fc2",
+    "translation_hash": "eaf38571eb6ddfc6ef0ac8350ef0211907a3ba53c572b6d1a798797740c4c144",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/puolukkakastike-jalkiruokiin.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "puolukkakastike-jalkiruokiin:th": {
+    "source_hash": "472a890ae7183476ae3ba3bc76783b228d38fe149e191597f783e1f8882e0fc2",
+    "translation_hash": "3758fc8b260fc0de5d48e50eba1b89eb8604c5887f5bd35f316ba33594d6fddc",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/puolukkakastike-jalkiruokiin.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-vaniljakastike:en": {
+    "source_hash": "88d30d4a46e4be656f99275e470a54b762cb8a0b960ff3ba9920d06d670dfc91",
+    "translation_hash": "d1deaa79c011a0516115e963bf18f173e9a5969e73dcfe17e5409716e5497eae",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-vaniljakastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-vaniljakastike:sv": {
+    "source_hash": "88d30d4a46e4be656f99275e470a54b762cb8a0b960ff3ba9920d06d670dfc91",
+    "translation_hash": "735ac346531441ffc01d7250611bd8772cd2103dd53a3f87d172b2ee1b5ee209",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-vaniljakastike.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-vaniljakastike:th": {
+    "source_hash": "88d30d4a46e4be656f99275e470a54b762cb8a0b960ff3ba9920d06d670dfc91",
+    "translation_hash": "7d647c730ddc008c0c2e04364a69440a5e1b65ecb2499d652634061b3b7e2ea3",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-vaniljakastike.json",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Poistettu vanhentunut kuvavaihtoa koskeva TH-muistiinpano. Tekoälykuvituksen ilmoitus säilyy."
+      }
+    ]
+  },
+  "perinteinen-jauhelihakeitto:en": {
+    "source_hash": "b00a48fba6692a664554eefd9924467e6ccf31a924e82ee6e04eec2d0ea23c58",
+    "translation_hash": "314071c2db5a56763309d63f30f8252561f2bb688a75177461fd238fb98fa756",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-jauhelihakeitto.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-jauhelihakeitto:sv": {
+    "source_hash": "b00a48fba6692a664554eefd9924467e6ccf31a924e82ee6e04eec2d0ea23c58",
+    "translation_hash": "8376555f01445cda6827eac594585bcb6f8c3f643e7371ca445565556227c9a1",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-jauhelihakeitto.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-jauhelihakeitto:th": {
+    "source_hash": "b00a48fba6692a664554eefd9924467e6ccf31a924e82ee6e04eec2d0ea23c58",
+    "translation_hash": "5cb7e479a21a8a297771b0848dd324f2968d03a01b19c1328ed2eef157ee5769",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-jauhelihakeitto.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-rosolli:en": {
+    "source_hash": "87afb4375d47786310d1ceea858e3a229aa1154c0a9651388e4665b560f82310",
+    "translation_hash": "a886791631cf646818210bd28f30fcfc1a0f732714c898d8c1d7a4d161edbbb5",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-rosolli.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-rosolli:sv": {
+    "source_hash": "87afb4375d47786310d1ceea858e3a229aa1154c0a9651388e4665b560f82310",
+    "translation_hash": "15a7da7357864f4aaefd6173b559322885b40a2568ff29a8cb93ae7d291ecc32",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-rosolli.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-rosolli:th": {
+    "source_hash": "87afb4375d47786310d1ceea858e3a229aa1154c0a9651388e4665b560f82310",
+    "translation_hash": "d36aafecccaebf78fdf0d79738839a6c3c08eace04f0aec9c669ed959980fe0f",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-rosolli.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdetut-juurekset-timjamilla:en": {
+    "source_hash": "480c58cd35e2c707a32786fea681a42c27f488a185898d60ced9546841ed78a5",
+    "translation_hash": "b3a59e219fcc3cefd5cb8a23281b3a2954db72d5a91fadbb2fbc51a3a089514c",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paahdetut-juurekset-timjamilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdetut-juurekset-timjamilla:sv": {
+    "source_hash": "480c58cd35e2c707a32786fea681a42c27f488a185898d60ced9546841ed78a5",
+    "translation_hash": "8327ffecd9265e4671000e2fd53ad7f105c96e2c3bfe22fd33912e956cbb1d1e",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paahdetut-juurekset-timjamilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdetut-juurekset-timjamilla:th": {
+    "source_hash": "480c58cd35e2c707a32786fea681a42c27f488a185898d60ced9546841ed78a5",
+    "translation_hash": "9c8f64714963defb96eae53a9b8576e3334c266a0bbb340663479e74ba33b4a5",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paahdetut-juurekset-timjamilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perunamuusi-ruokakermalla:en": {
+    "source_hash": "1d86c787e096bd6791cd266763247ef6ab3221464e52bd24c614b6c45e03029c",
+    "translation_hash": "a25fd9b508453d64b08fc5833187a1b50816117211a7ad1a2e7cddedea05496b",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perunamuusi-ruokakermalla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perunamuusi-ruokakermalla:sv": {
+    "source_hash": "1d86c787e096bd6791cd266763247ef6ab3221464e52bd24c614b6c45e03029c",
+    "translation_hash": "b6d029a6f663f70de290a094fd6a66f3d5096256c4ff3750fbdb7ab4eeca8bb3",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perunamuusi-ruokakermalla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perunamuusi-ruokakermalla:th": {
+    "source_hash": "1d86c787e096bd6791cd266763247ef6ab3221464e52bd24c614b6c45e03029c",
+    "translation_hash": "e0a10d1682bbdd23797c00d6190e0e4f80acfce82a74541eb8d1509f88b39e60",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perunamuusi-ruokakermalla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kasvishernekeitto-juureksilla:en": {
+    "source_hash": "ae614a2b83cdf62171b0aec7b00547f4fc5c83ebe3015b396bcebc57dd15d5d0",
+    "translation_hash": "1f256c4ffbe7608ffffd327730c0c1f3efe0b1c63e6e9b2eedeb0ef3f1aa5ac0",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kasvishernekeitto-juureksilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kasvishernekeitto-juureksilla:sv": {
+    "source_hash": "ae614a2b83cdf62171b0aec7b00547f4fc5c83ebe3015b396bcebc57dd15d5d0",
+    "translation_hash": "63ee6ec5b6a6382148249c89e69cfa91a7538542c18a199258c5262bf743b472",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kasvishernekeitto-juureksilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kasvishernekeitto-juureksilla:th": {
+    "source_hash": "ae614a2b83cdf62171b0aec7b00547f4fc5c83ebe3015b396bcebc57dd15d5d0",
+    "translation_hash": "ea7ee631e9fcfcaafc812df64094efa37f55f8fad054b863cf8c2bcd044a3bb7",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kasvishernekeitto-juureksilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "uuniperunat-raejuusto-hernetaytteella:en": {
+    "source_hash": "810a991b0eb84a30519c2a18d0b241d4723876eb3869f4f5e425268f557160e3",
+    "translation_hash": "a1bc6137f5e67a8c61a92b68290bfe03441eb68057ee610fda99f80a7bb7f54a",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/uuniperunat-raejuusto-hernetaytteella.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "uuniperunat-raejuusto-hernetaytteella:sv": {
+    "source_hash": "810a991b0eb84a30519c2a18d0b241d4723876eb3869f4f5e425268f557160e3",
+    "translation_hash": "3287838b2cf3ab3bff4cca1c9a6c784e5b47168adff211f9feae424de9117ed7",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/uuniperunat-raejuusto-hernetaytteella.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "uuniperunat-raejuusto-hernetaytteella:th": {
+    "source_hash": "810a991b0eb84a30519c2a18d0b241d4723876eb3869f4f5e425268f557160e3",
+    "translation_hash": "2184ceaf221f0742df20c7759a3392a145ce6a76671234a6c6c599ba6d839401",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/uuniperunat-raejuusto-hernetaytteella.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-lohilaatikko:en": {
+    "source_hash": "0883184a1b65952e1ea9f502fb9fe797bd169940d8cd09c3e38b814bd005e9d7",
+    "translation_hash": "a6269ac42032b67dbbd850344e89758d3d8f2eee8dd492240b1c7c519b606127",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-lohilaatikko.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-lohilaatikko:sv": {
+    "source_hash": "0883184a1b65952e1ea9f502fb9fe797bd169940d8cd09c3e38b814bd005e9d7",
+    "translation_hash": "2cb03dd4b7767539a0d1679328010ee595bf1f2834899113eedbd2b880a1cb34",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-lohilaatikko.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-lohilaatikko:th": {
+    "source_hash": "0883184a1b65952e1ea9f502fb9fe797bd169940d8cd09c3e38b814bd005e9d7",
+    "translation_hash": "a97ea82d96590ac25634bc6f08b311857f695ba13717efd4d15c63e542ba31ca",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-lohilaatikko.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paistetut-muikut:en": {
+    "source_hash": "cd7b99788c1796dddff4b9098405d76efd24dc2e118dc80aafdaac63808c1619",
+    "translation_hash": "491c6d70fc67bc1e731f4167aefa64f1f97609099af05cd591e286c226554954",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paistetut-muikut.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paistetut-muikut:sv": {
+    "source_hash": "cd7b99788c1796dddff4b9098405d76efd24dc2e118dc80aafdaac63808c1619",
+    "translation_hash": "e328154eb4b76f190d959f9a9526749af27d32c5634827894a8cabda01552d59",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paistetut-muikut.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paistetut-muikut:th": {
+    "source_hash": "cd7b99788c1796dddff4b9098405d76efd24dc2e118dc80aafdaac63808c1619",
+    "translation_hash": "554cba60703bc2ceede0967f11dd753274ddfbbbaaf999640344102fc7e084ab",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paistetut-muikut.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-porkkanalaatikko:en": {
+    "source_hash": "c032a5766f9c33440749dec30963ce3f241819fc2f905529990bb5948d05b09c",
+    "translation_hash": "7e4e3553c94eb0843aa40d2e2616bde44c6b8ddc48d715c84ec2e70a83f2b0f6",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-porkkanalaatikko.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-porkkanalaatikko:sv": {
+    "source_hash": "c032a5766f9c33440749dec30963ce3f241819fc2f905529990bb5948d05b09c",
+    "translation_hash": "5923ac156b997e1a4f8046e17afc514c17dcadfe61156c5122131c36cff09c26",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-porkkanalaatikko.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteinen-porkkanalaatikko:th": {
+    "source_hash": "c032a5766f9c33440749dec30963ce3f241819fc2f905529990bb5948d05b09c",
+    "translation_hash": "b93edd6726b5aebbe3c584e831225a96abcfcb05eb613e8eff1ef8c6b7878f33",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteinen-porkkanalaatikko.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "lihapullat-ruskea-kastike-perunamuusi:en": {
+    "source_hash": "8cfea6a79ee0b58837af3a9437980997d9be81848549bbaba08688fd74bb3389",
+    "translation_hash": "8a3780d3976371b1b09704ca10e7330feb4918f3f2552ba450cd4b1c4380555e",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/lihapullat-ruskea-kastike-perunamuusi.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "lihapullat-ruskea-kastike-perunamuusi:sv": {
+    "source_hash": "8cfea6a79ee0b58837af3a9437980997d9be81848549bbaba08688fd74bb3389",
+    "translation_hash": "223d67fc54f667568785ca324ba5b6f58a08862106de31b43414819e27a0840e",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/lihapullat-ruskea-kastike-perunamuusi.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "lihapullat-ruskea-kastike-perunamuusi:th": {
+    "source_hash": "8cfea6a79ee0b58837af3a9437980997d9be81848549bbaba08688fd74bb3389",
+    "translation_hash": "1e37dc8ccdad28380f24157c1da53cdb0b75c95285d0326f935d9533f4ae7ff9",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/lihapullat-ruskea-kastike-perunamuusi.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteiset-korvapuustit:en": {
+    "source_hash": "7d1229c0165bce778c007c5fd4b3963ca5a7f751ae43557c4957572d3d42f8f3",
+    "translation_hash": "d9ad7d14090e5661a9b6f51d0abcc50fb0e52f446d2d108fd7c6147d917e5a80",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteiset-korvapuustit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteiset-korvapuustit:sv": {
+    "source_hash": "7d1229c0165bce778c007c5fd4b3963ca5a7f751ae43557c4957572d3d42f8f3",
+    "translation_hash": "3be040eb9797477ab2b41bbfd7f6808569695743445be9bf99118c19d10e293e",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteiset-korvapuustit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteiset-korvapuustit:th": {
+    "source_hash": "7d1229c0165bce778c007c5fd4b3963ca5a7f751ae43557c4957572d3d42f8f3",
+    "translation_hash": "9dc982e4ba657f79b5ebf253c9623fc5be02d09a47fe38740d65fd1fa16b0cf4",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteiset-korvapuustit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "uuniohrapuuro-maitoon:en": {
+    "source_hash": "0632c8c3724130bc8cadff25bfbda310bb14bc6f932e34d53e93ab174ba460a8",
+    "translation_hash": "64e8f5497c44ce2cddeaf3c7b3f012ce821f439c676cb1edd9c74055180c059e",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/uuniohrapuuro-maitoon.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "uuniohrapuuro-maitoon:sv": {
+    "source_hash": "0632c8c3724130bc8cadff25bfbda310bb14bc6f932e34d53e93ab174ba460a8",
+    "translation_hash": "4f59f7d7ad11d33e0fe38416b8f0527df0da7756abb868c01549121a8448d703",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/uuniohrapuuro-maitoon.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "uuniohrapuuro-maitoon:th": {
+    "source_hash": "0632c8c3724130bc8cadff25bfbda310bb14bc6f932e34d53e93ab174ba460a8",
+    "translation_hash": "dcacd1879e7a8d1f98e043ae39e035ea77a7b778fb346eceedde93bc60627ed0",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/uuniohrapuuro-maitoon.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "uuniseiti-sitruunalla-ja-tillilla:en": {
+    "source_hash": "27dfc3e51604697b58a5772316f9e80931a91e4c2b80738cbebbdc8b562a9eb9",
+    "translation_hash": "5bc5359346d53a05ab540f25aa850df1ec27e89898a22d9f667c2a98c857c440",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/uuniseiti-sitruunalla-ja-tillilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "uuniseiti-sitruunalla-ja-tillilla:sv": {
+    "source_hash": "27dfc3e51604697b58a5772316f9e80931a91e4c2b80738cbebbdc8b562a9eb9",
+    "translation_hash": "652129b0e7b6815d46db102350b005e2ecfc39556ca4e248bdd854b340a3138b",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/uuniseiti-sitruunalla-ja-tillilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "uuniseiti-sitruunalla-ja-tillilla:th": {
+    "source_hash": "27dfc3e51604697b58a5772316f9e80931a91e4c2b80738cbebbdc8b562a9eb9",
+    "translation_hash": "82b949ccdc27ae5dc7580b24cd019728ce5ddccc062741ddaa9733078cebb221",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/uuniseiti-sitruunalla-ja-tillilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "munavoi-karjalanpiirakoille:en": {
+    "source_hash": "4cea139668535800963de2a77dd410a94367c7a8e4dc9286f6ef0349b9404f69",
+    "translation_hash": "9f83b51844b29575ed162bca8b2653b99b183b557da9bfe21f80f5799eae46e7",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/munavoi-karjalanpiirakoille.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "munavoi-karjalanpiirakoille:sv": {
+    "source_hash": "4cea139668535800963de2a77dd410a94367c7a8e4dc9286f6ef0349b9404f69",
+    "translation_hash": "17cbeb2b1528d7fd453d0ea8588481a88445e716e0e6b9916c3c51eaf2af65ec",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/munavoi-karjalanpiirakoille.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "munavoi-karjalanpiirakoille:th": {
+    "source_hash": "4cea139668535800963de2a77dd410a94367c7a8e4dc9286f6ef0349b9404f69",
+    "translation_hash": "4af6786d56cbe5811e9a1d02eb530e5c83399c3088a4d171c8f386a7cb8b169b",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/munavoi-karjalanpiirakoille.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "mustikkarahka:en": {
+    "source_hash": "df6a06ec6383aeedd300b2af0effc836bff249b0db1e177d4d7f6302a4af0835",
+    "translation_hash": "06f259afdb0cf497770066337190d846db248854b68874006e5f123fa49e5754",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/mustikkarahka.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "mustikkarahka:sv": {
+    "source_hash": "df6a06ec6383aeedd300b2af0effc836bff249b0db1e177d4d7f6302a4af0835",
+    "translation_hash": "784626de77dfb5e989173330ec43562f8c6f1d4967395916092d2688d9215842",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/mustikkarahka.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "mustikkarahka:th": {
+    "source_hash": "df6a06ec6383aeedd300b2af0effc836bff249b0db1e177d4d7f6302a4af0835",
+    "translation_hash": "c8fb36be6b401a37bc2803feb9eec2ae86003b020cfe721df83258be05f1af43",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/mustikkarahka.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sipulikeitto-juustoleivalla:en": {
+    "source_hash": "180093a47b99e85a2f5f7c9c55050a09e19ebc6ab64efc09b7ca0025851aae28",
+    "translation_hash": "a237fede4b561a8f14ced7d19bd3953a0c61f0be806fab2b99ea5f3a1c87d314",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/sipulikeitto-juustoleivalla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sipulikeitto-juustoleivalla:sv": {
+    "source_hash": "180093a47b99e85a2f5f7c9c55050a09e19ebc6ab64efc09b7ca0025851aae28",
+    "translation_hash": "b496d4552efa7bdd4389895ae9d9fc7765c482c0541bedeca53ba2f372ccc350",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/sipulikeitto-juustoleivalla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sipulikeitto-juustoleivalla:th": {
+    "source_hash": "180093a47b99e85a2f5f7c9c55050a09e19ebc6ab64efc09b7ca0025851aae28",
+    "translation_hash": "cf34692aaf677632f19070cac7a37daf57983deaf75d6a10aa2fac83b86e25f7",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/sipulikeitto-juustoleivalla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kaali-ohrapaistos-herkkusienilla:en": {
+    "source_hash": "e8f539f80813dc45479c7bfec251a0f87b21197ea62e777383f83a2a02f78ddd",
+    "translation_hash": "a3e1de49e8995a67fe4961a708d5cd096d76c356bef0316d2582927c33b8652e",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kaali-ohrapaistos-herkkusienilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kaali-ohrapaistos-herkkusienilla:sv": {
+    "source_hash": "e8f539f80813dc45479c7bfec251a0f87b21197ea62e777383f83a2a02f78ddd",
+    "translation_hash": "2ac78f76994bba380dd57d076076d43ef6c4721219a0125b598d0ca01774678b",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kaali-ohrapaistos-herkkusienilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kaali-ohrapaistos-herkkusienilla:th": {
+    "source_hash": "e8f539f80813dc45479c7bfec251a0f87b21197ea62e777383f83a2a02f78ddd",
+    "translation_hash": "10f3d89acc5210da6c34b5254502c8cb8f1d99a6c75fc0671be0ada5eb0dddfc",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kaali-ohrapaistos-herkkusienilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tomaatti-valkopapupata:en": {
+    "source_hash": "11d0b75ac4b2111d21844708d85fd9737b0db955afa6f5f63c95868c5078a1ea",
+    "translation_hash": "a718be321dbcbf3f399f505c81feab9bfd70a2c4c17b6d0dc09f40574f054e93",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/tomaatti-valkopapupata.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tomaatti-valkopapupata:sv": {
+    "source_hash": "11d0b75ac4b2111d21844708d85fd9737b0db955afa6f5f63c95868c5078a1ea",
+    "translation_hash": "0fa574d09497ed308e374c66f20f4121f3da716ab6d73aac50678faa8f0ce18c",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/tomaatti-valkopapupata.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tomaatti-valkopapupata:th": {
+    "source_hash": "11d0b75ac4b2111d21844708d85fd9737b0db955afa6f5f63c95868c5078a1ea",
+    "translation_hash": "d84293beb93854f1dd5482ba62db6f8771c66ddf95cca4b5d13affb2721dc5cf",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/tomaatti-valkopapupata.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "punajuuri-kaurapihvit:en": {
+    "source_hash": "849667e538fefe86d243c0e4e5c5f0305117d0e3c32fd7ff143fd34bd4ee7143",
+    "translation_hash": "d4e9b481f54581f789bf2b2b7436eb583dd2b71d7a1d43bb168a5222e464c2a2",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/punajuuri-kaurapihvit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "punajuuri-kaurapihvit:sv": {
+    "source_hash": "849667e538fefe86d243c0e4e5c5f0305117d0e3c32fd7ff143fd34bd4ee7143",
+    "translation_hash": "5cc18c85d66f051f8f9f856ee92c5b09f6e3227bcfd1016ea3df6c6cbc168a47",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/punajuuri-kaurapihvit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "punajuuri-kaurapihvit:th": {
+    "source_hash": "849667e538fefe86d243c0e4e5c5f0305117d0e3c32fd7ff143fd34bd4ee7143",
+    "translation_hash": "bc853129b4f199461e34519e1ffabea9cd6c3c2f1522d817d75c6f53ac330b7f",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/punajuuri-kaurapihvit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "porkkana-omenaraaste:en": {
+    "source_hash": "8d267ae1acffe7da3e43ec918c9232f60c8cc2676e3325747a81cb5bd6832d3d",
+    "translation_hash": "0352f644a667586b6379bef216fd2de5d836239d539d5c2b7f9d85aba518a6a1",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/porkkana-omenaraaste.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "porkkana-omenaraaste:sv": {
+    "source_hash": "8d267ae1acffe7da3e43ec918c9232f60c8cc2676e3325747a81cb5bd6832d3d",
+    "translation_hash": "4cfde4e5baaca00cf26eab36ae0b449a82904ea709cf5c4bfca5d5d8febc3692",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/porkkana-omenaraaste.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "porkkana-omenaraaste:th": {
+    "source_hash": "8d267ae1acffe7da3e43ec918c9232f60c8cc2676e3325747a81cb5bd6832d3d",
+    "translation_hash": "c26b91a712dc848bb0f795e04d8fe68508e176e88eb67730bfee83218b9c3ec2",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/porkkana-omenaraaste.json",
+    "outcome": "pass",
+    "findings": []
   }
 }

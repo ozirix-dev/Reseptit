@@ -2,10 +2,10 @@
   "schema_version": 1,
   "recipe_id": "sinappikastike-joulukinkulle",
   "source_path": "reseptit/alkuruoat/sinappikastike-joulukinkulle.md",
-  "source_sha256": "2aa093e1d67227c59b9497fa4592d93b906c11901bd1af9bd0b27d8620b56354",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; kokonaisjulkaisun hyväksyntä puuttuu",
-  "reviewed_at": "2026-11-21",
+  "source_sha256": "3a540a4a80b0a674a91f38d2fcbc966c5986b1ff7c88611cf4171245ef80b8a4",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -13,7 +13,7 @@
       "https://www.martat.fi/reseptit/kinkun-kastike/"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/sinappikastike-joulukinkulle.json",
   "checks": {
     "duplicates": {
       "status": "pass",
@@ -36,12 +36,12 @@
       "notes": "Kuusi pientä kastikeannosta / 20 min on arvio. Noin 350 ml nesteen ja mausteiden kuumennus, 4–5 min haudutus sekä esivalmistelu mahtuvat 20 minuuttiin. K-Ruoka tekee erikokoisen kastike-erän 5–15 min ja Martat hauduttaa noin 5+2 min. Saanto arvioitava."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi."
+      "status": "pass",
+      "notes": "Kanoninen laskenta tarkistettu. Kasvisliemen valmistajataulukosta puuttuu ilmoitusperusta. S-kaupat ilmoittaa saman reseptiin sidotun EAN:n tiedot 100 ml:aa kohden ja Kespro 100 g:aa kohden. Valmistajan 1007 g/l ennustaa 150 ml:n massaksi 151,05 g mutta ei ratkaise ravintoarvotaulukon perustaa. Sinappien tarkkojen kuluttajapakkausten koostumusta ei varmennettu valmistajalähteestä. Ammattipakkausten EAN:t eroavat. Kaupallisilta riveiltä puuttuvat myös varmennetut polyolit. Chat-2 varmisti tämän ravintopäätöksen katselmoidulle versiolle."
     },
     "glycemic": {
       "status": "unavailable",
-      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+      "notes": "Liemen ja sinappien hiilihydraattinäyttö on vajaa, eikä valmiille kastikkeelle ole hyväksyttyä valmistuskohtaista GI-sidontaa."
     }
   },
   "supplementary_evidence": {
@@ -55,7 +55,76 @@
     ],
     "image_path": "kuvat/alkuruoat/sinappikastike-joulukinkulle.webp",
     "image_sha256": "b7f1990471cf1493aa72bd98cc9cad94d3f305668d257c3f4bb680f88b442a2a",
-    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "image_review": "Kuvan ruokalajivastaavuus hyväksytty Chat-2:n katselmoinnissa. Kokki-Codex varmisti kuvan tavut ja dekoodauksen.",
     "physical_cook_test": false
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": null,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/sinappikastike-joulukinkulle.webp",
+    "bytes": 44096,
+    "sha256": "b7f1990471cf1493aa72bd98cc9cad94d3f305668d257c3f4bb680f88b442a2a",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI–EN/SV/TH. Vertailtu ainesosat ja määrät, käyttötila, valmistusvaiheet, lämpötilat ja ajat, allergeenit, säilytys, ravintokentät ja kuvan kuvaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/sinappikastike-joulukinkulle.md",
+        "language": "fi",
+        "slug": "sinappikastike-joulukinkulle",
+        "sha256": "3a540a4a80b0a674a91f38d2fcbc966c5986b1ff7c88611cf4171245ef80b8a4",
+        "semantic_sha256": "524772931afd7b9ed8acda91048f02cea0c3feaea92c37af90e6d7159d0b810b"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/sinappikastike-joulukinkulle.md",
+        "language": "en",
+        "slug": "sinappikastike-joulukinkulle-en",
+        "sha256": "8a62a8a7bbc153f13cd4a9476d90f333cc7437376917f106735e9c2f2ca84432",
+        "semantic_sha256": "4ebe6e036a54f33c3e6f6c52497cb227a7dcd52a6bf7c266b3f83a575fb49b16"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/sinappikastike-joulukinkulle.md",
+        "language": "sv",
+        "slug": "sinappikastike-joulukinkulle-sv",
+        "sha256": "73602dca8a2ce205f85be18072488092704978e374d4c1536912bb8a28a2cd51",
+        "semantic_sha256": "5d50b3152a723c970aba8a4827ed4f9995bb873bd590331854af4f2e5246714a"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/sinappikastike-joulukinkulle.md",
+        "language": "th",
+        "slug": "sinappikastike-joulukinkulle-th",
+        "sha256": "68d1ca11aa413a13cbf9a3a54d30048e7cc8b011b87fda74bd07b506cf8a9425",
+        "semantic_sha256": "7a0757e6fbd04e32a5d2f640a8c8a46f8b5a853e8d445b5df71218a3da49aec6"
+      }
+    ],
+    "nutrition_sha256": "2d9e64bd228ecfb4b28ce601f07501051d5aefedff8e9b8e92b0c3b12d93313c",
+    "batch_id": "batch-33308",
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+  "independent_review": {
+    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+    "decision": "pass"
   }
 }

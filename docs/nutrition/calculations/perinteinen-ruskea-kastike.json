@@ -1,0 +1,167 @@
+{
+  "recipeId": "perinteinen-ruskea-kastike",
+  "sourceHash": "8452c0f3c108a736e594e16ad304de22af779a4c7a70e2838175261cf3596ce9",
+  "calculatedAt": "2026-11-25",
+  "servings": 4,
+  "scope": "Yksi annos reseptin 4 annoksesta. Kastike ilman tarjoiluehdotusten lisukkeita.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "voita",
+      "amount": 35,
+      "unit": "g",
+      "state": "voita",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "voita",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.19,
+          "fat": 81.3
+        }
+      }
+    },
+    {
+      "item": "vehnäjauhoja",
+      "amount": 35,
+      "unit": "g",
+      "state": "vehnäjauhoja",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "vehnäjauhoja",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      }
+    },
+    {
+      "item": "Puljonki Signature Lihalientä, käyttövalmista (EAN 6416796728013)",
+      "amount": 500,
+      "unit": "ml",
+      "state": "Puljonki Signature Lihalientä, käyttövalmista (EAN 6416796728013)",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "puljonki-6416796728013",
+        "name": "Puljonki Signature Lihaliemi",
+        "sourceUrl": "https://www.oscarnordic.fi/puljonki-signature/367-signature-lihaliemi-1-l.html",
+        "state": "Puljonki Signature Lihalientä, käyttövalmista (EAN 6416796728013)",
+        "retrievedAt": "2026-11-25",
+        "licence": "Yksittäinen tuoteviite. Valmistajan tai pakkausmerkinnän ilmoittamat ravintoarvot, ei avointa tietokanta-aineistoa.",
+        "basis": "per100g-prepared",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "polyolsSourceVerified": false,
+        "per100g": {
+          "kcal": 19.7238658777,
+          "carbohydrate": 0.5917159763,
+          "protein": 3.9447731755,
+          "fat": 0.0986193294,
+          "fibre": 0.5917159763,
+          "polyols": null
+        }
+      },
+      "gramsPerUnit": 1.014,
+      "conversionEvidence": "Valmistaja, EAN 6416796728013: 1 l = 1014 g netto. S-kauppojen täsmä-EAN vahvistaa 100 ml:n perustan (https://www.s-kaupat.fi/tuote/puljonkir-lihaliemi-1-l-tetra/6416796728013). Lähdearvot / 1,014 → per 100 g. Annostilavuus × 1,014 → g."
+    },
+    {
+      "item": "Kikkoman Naturally Brewed -soijakastiketta (soija, vehnä)",
+      "amount": 4,
+      "unit": "g",
+      "state": "Kikkoman Naturally Brewed -soijakastiketta (soija, vehnä)",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "kikkoman-naturally-brewed-fancy",
+        "name": "Kikkoman Naturally Brewed Soy Sauce",
+        "sourceUrl": "https://www.kikkoman.fi/tuotteet/detail/fs-kikkoman-luonnollisesti-valmistettu-soijakastike",
+        "state": "Kikkoman Naturally Brewed -soijakastiketta (soija, vehnä)",
+        "retrievedAt": "2026-11-25",
+        "licence": "Yksittäinen tuoteviite. Valmistajan tai pakkausmerkinnän ilmoittamat ravintoarvot, ei avointa tietokanta-aineistoa.",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "polyolsSourceVerified": false,
+        "per100g": {
+          "kcal": 65.811965812,
+          "carbohydrate": 2.735042735,
+          "protein": 8.547008547,
+          "fat": 0,
+          "fibre": null,
+          "polyols": null
+        }
+      },
+      "conversionEvidence": "Valmistajan EU-esite nimeää Naturally Brewed -kastikkeen Fancy-laaduksi (https://www.kikkoman.eu/fileadmin/user_upload/kikkoman.eu/Food-News/EU_Japas/JAPAS_1_EN.pdf). Saman koostumuksen Fancy-tekninen tuotekortti ilmoittaa ominaispainon 1,17 (https://plytix-files.com/api/v1.1/file/public_files/pim/assets/50/08/18/60/60180850c89f11f531d6e80c/texts/05/5b/d4/61/61d45b05be5f5c79d6851d99/840510_05042017_KIKKOMAN_Soyasosa_5_litrar.pdf). EU-tuotteen 100 ml:n luvut jaettu 1,17:llä. Reseptin 4 g annostus säilyy."
+    },
+    {
+      "item": "mustapippuria",
+      "amount": 1,
+      "unit": "g",
+      "state": "mustapippuria",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "afcd-F006618-release-3",
+        "name": "Pepper, black, ground",
+        "state": "mustapippuria",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-11-25",
+        "licence": "FSANZ AFCD Release 3 Data User Licence, CC BY-SA 3.0 Australia. Australian food composition data may vary from Finnish products.",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD:n parillisten ilmoitettujen CHO-arvojen erotus samalla painoperustalla.",
+        "per100g": {
+          "carbohydrate": 38.6,
+          "fibre": 25.3,
+          "polyols": 0,
+          "protein": 10.4,
+          "fat": 3.3
+        }
+      }
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Lihaliemen ja soijakastikkeen EU-merkinnöistä puuttuu varmennettu polyolimäärä. Proteiini ja rasva kattavat kaikki ainekset.",
+  "batchId": "batch-33308"
+}
