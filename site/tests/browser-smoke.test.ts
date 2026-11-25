@@ -141,6 +141,10 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
 
       const recipePrefix = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" }[methodPage.locale];
       await page.goto(`${base}${recipePrefix}/hummus/`);
+      const recipeLanguages = await page.locator(".recipe-languages a").evaluateAll(links =>
+        links.map(link => ({ lang: link.getAttribute("lang"), hrefLang: link.getAttribute("hreflang") })));
+      assert.deepEqual(recipeLanguages.map(link => link.lang).sort(), ["en", "fi", "sv", "th"]);
+      assert.ok(recipeLanguages.every(link => link.lang === link.hrefLang));
       const href = await page.locator(".recipe-glycemic-load__caption a").getAttribute("href");
       assert.equal(href, `${methodPage.path}#hummus`);
       const linkedPage = await context.newPage();
@@ -415,6 +419,8 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       const recipe = siteContent.recipes.find(recipe => recipe.locale === locale && recipe.recipeId === "kermainen-lohipata")!;
       await page.goto(base + recipe.routePath);
       assert.equal(await page.getByLabel(portionCopy[locale].title, { exact: true }).inputValue(), "1");
+      const portionControlBox = await page.getByLabel(portionCopy[locale].title, { exact: true }).boundingBox();
+      assert.ok(portionControlBox && portionControlBox.height >= 44, `${locale}: 44px eaten portion select`);
       await page.getByLabel(portionCopy[locale].title, { exact: true }).selectOption("2");
       assert.equal(await page.locator("[data-portion-gk]").count(), 1);
     }
