@@ -52,3 +52,4 @@ Crunchy cucumber, avocado and mint make a fresh, chunky dip.
 
 - The serving covers the salsa alone.
 - Preparation reference https://weelicious.com/cucumber-avocado-salsa/
+- The nutrition estimate includes all the dressing. Any accompaniments are counted separately.

@@ -57,3 +57,4 @@ These thin unleavened wheat flatbreads pick up brown spots in the pan.
 
 - Contains wheat.
 - Reference: https://www.bbcgoodfood.com/recipes/chapatis
+- The nutrition estimate is for one flatbread and includes the full amounts of flour for rolling and oil for brushing.

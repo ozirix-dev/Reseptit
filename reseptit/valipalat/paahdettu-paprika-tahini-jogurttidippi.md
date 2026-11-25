@@ -52,3 +52,4 @@ Paahdettu paprika antaa jogurtti-tahinidipille makeutta ja savupaprika syvyyttä
 
 - Sisältää maitoa ja seesamia. Paprikan soseuttamisen vertailulähde https://www.ohsu.edu/sites/default/files/2019-05/Recipe-Roasted-Red-Pepper-Dip.pdf
 - Vertailulähde https://vidarbergum.com/recipe/roast-peppers-with-yoghurt-herbs/
+- Ravintoarvio perustuu 10-prosenttiseen kreikkalaiseen jogurttiin sekä valutettuun säilykepaprikaan. Lisukkeet arvioidaan erikseen.

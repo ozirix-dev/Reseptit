@@ -59,3 +59,4 @@ Kypsä banaani maustaa pannulla paistettavat pienet kaurapannukakut.
 
 - Sisältää kananmunaa, mantelia ja kauraa.
 - Vertailulähde https://www.ambitiouskitchen.com/banana-oatmeal-pancakes/
+- Ravintoarvion annos on noin kolme pannukakkua. Arvio sisältää koko paistoöljyn.

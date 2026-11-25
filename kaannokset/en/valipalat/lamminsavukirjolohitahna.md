@@ -44,10 +44,12 @@ Smoked trout, dill and lemon flavour this creamy spread.
 
 1. Remove the skin and any bones from the trout. Flake the fish into a bowl with a fork. Finely chop the onion and dill.
 2. Stir together the cream cheese, crème fraîche and lemon juice. Fold in the fish, onion and dill, leaving some small pieces of fish intact.
-3. Serve straight away or keep the spread chilled until serving. Follow the fish packaging’s storage instructions and make the spread as soon as possible after opening the pack.
+3. Choose the freshest hot-smoked fish available. Do not use it after the use-by date. Follow the pack’s chilled storage instructions and make the spread soon after opening. Serve immediately or keep covered in the refrigerator until serving, preferably at 0–3°C.
 
 ## Notes
 
 - Contains fish and milk.
 - Preparation reference https://www.k-ruoka.fi/reseptit/savulohitahna
 - Storage guidance https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/kala/mikrobiologiset-vaarat-ja-muut-riskit/
+- For pregnant people, older adults or people with weakened immunity, use fish for this chilled spread well before its use-by date.
+- https://www.ruokavirasto.fi/globalassets/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/turvallisenkaytonohjeet_2025.pdf

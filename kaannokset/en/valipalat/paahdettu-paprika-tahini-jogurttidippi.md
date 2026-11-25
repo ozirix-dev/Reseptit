@@ -52,3 +52,4 @@ Roasted red pepper sweetens the yoghurt and tahini dip, with smoked paprika for 
 
 - Contains milk and sesame. Pepper purée reference https://www.ohsu.edu/sites/default/files/2019-05/Recipe-Roasted-Red-Pepper-Dip.pdf
 - Preparation reference https://vidarbergum.com/recipe/roast-peppers-with-yoghurt-herbs/
+- The nutrition estimate uses 10% fat Greek yoghurt and drained jarred peppers. Any accompaniments are counted separately.

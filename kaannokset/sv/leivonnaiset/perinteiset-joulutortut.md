@@ -45,3 +45,4 @@ De frasiga smördegsstjärnorna får en klick bakfast katrinplommonmarmelad i mi
 
 - Innehåller vete, mjölk och ägg.
 - Referens: https://www.martat.fi/reseptit/joulutortut/
+- Näringsberäkningen gäller en jultårta och bygger på jämförelsedata för ogräddad smördeg. Hela ägget till pensling ingår.

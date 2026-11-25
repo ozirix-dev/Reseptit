@@ -40,15 +40,16 @@ ingredients:
 
 # Kall havregröt med äpple
 
-Rivet äpple, kanel och kardemumma smaksätter havregrynen medan de mjuknar i kylen.
+Rivet och tärnat äpple, kanel och kardemumma smaksätter havregrynen medan de mjuknar i kylen.
 
 ## Tillagning
 
-1. Skölj och kärna ur äpplet. Riv den ätliga delen grovt.
-2. Blanda gryn, havredryck, äpple, kanel, kardemumma och salt. Täck och ställ i kylen i minst två timmar.
-3. Rör om gröten och dela i tre portioner. Servera kall.
+1. Skölj och kärna ur äpplet. Riv 150 g och tärna de återstående 30 g smått. Förvara tärningarna övertäckta i kylen fram till servering.
+2. Blanda gryn, havredryck, rivet äpple, kanel, kardemumma och salt. Täck och ställ i kylen i minst två timmar.
+3. Rör om gröten och dela i tre portioner. Servera kall. Toppa portionerna med äppeltärningarna strax före servering.
 
 ## Anteckningar
 
 - Innehåller havre. Den angivna tiden omfattar två timmar i kylen.
 - Referens: https://www.valio.fi/reseptit/omena-kauratuorepuuro/
+- Näringsberäkningen använder ett produktgenomsnitt för naturell havredryck och omfattar allt äpple i receptet.

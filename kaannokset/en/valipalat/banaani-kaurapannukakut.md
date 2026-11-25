@@ -59,3 +59,4 @@ Ripe bananas flavour these small, pan-cooked oat pancakes.
 
 - Contains egg, almonds and oats.
 - Preparation reference https://www.ambitiouskitchen.com/banana-oatmeal-pancakes/
+- The nutrition estimate covers about three pancakes and includes all the cooking oil.

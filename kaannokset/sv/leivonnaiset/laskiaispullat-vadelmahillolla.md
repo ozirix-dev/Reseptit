@@ -60,7 +60,7 @@ Kardemummabullar fyllda med hallonsylt och vispad grädde.
 1. Lös upp jästen i fingervarm mjölk. Tillsätt salt, socker och kardemumma. Tillsätt mjölet lite i taget. Arbeta in det ljumma margarinet mot slutet.
 2. Täck bunken och låt degen jäsa till dubbel storlek. Dela i 20 delar, rulla bullar och lägg på bakplåtspapper. Låt jäsa övertäckta tills de är pösiga.
 3. Pensla med uppvispat ägg. Grädda i 220 °C i 12–15 minuter tills bullarna är gyllenbruna. Låt svalna helt.
-4. Vispa den kalla grädden mjuk. Skär av locken på bullarna och fördela sylten och grädden på underdelarna. Lägg tillbaka locken och sikta över florsocker.
+4. Vispa den kalla grädden mjuk. Skär av locken på bullarna och fördela sylten och grädden på underdelarna. Lägg tillbaka locken och sikta över florsocker. Förvara de fyllda bullarna övertäckta i kylen fram till servering.
 
 ## Anteckningar
 

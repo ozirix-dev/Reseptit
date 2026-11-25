@@ -59,3 +59,15 @@ GK jätetään avoimeksi kaikille 20 luonnokselle. Ehtona on käytettävissä ol
 ## Aineiston tarkistus
 
 Jokaisella luonnoksella on yksi visuaalisesti tarkistettu 3:2-tekoälykuvitus ja kielikohtainen vaihtoehtoinen teksti. Välipalojen tiedostot ovat 1200 × 800 ja leivonnaisten 960 × 640. Kieli-, kuva- ja valmistuslähteet kuuluvat Chat-2:n riippumattomaan katselmointiin. Reseptit säilyvät luonnoksina ennen katselmointia ja julkaisumenettelyä.
+
+## Ennakkokatselmoinnin korjaukset
+
+Chat-2 tarkisti 20 suomenkielistä reseptiä, 60 käännöksen olennaisen sisällön ja 20 kuvaa revisiolla `2cde17ee`. Riippumaton aritmetiikkatarkistus toisti kaikki 32 annosarvoa. Ennakkokatselmoinnin tulos oli HOLD ennen alla olevia korjauksia. [Chat-2:n katselmointi](https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65)
+
+- Savukalan kylmäketju, 0–3 °C, viimeinen käyttöpäivä ja riskiryhmien ohje lisättiin neljälle kielelle. Minipaprikoissa yksilöitiin tuore pastöroitu vuohenjuusto ilman home- tai kittipintaa. [Ruokaviraston turvallisen käytön ohjeet](https://www.ruokavirasto.fi/globalassets/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/turvallisenkaytonohjeet_2025.pdf)
+- Tuorepuuron 180 g omenasta raastetaan 150 g ja kuutioidaan 30 g pinnalle. Nykyinen kuva vastaa tätä tarjoilua. Sipulipiirakan täyte valmistetaan taikinan kohotessa ja täytettyjen kermapullien kylmäsäilytys on ilmaistu. Kolmen thainkielisen tiedoston kappale- tai munayksikkö korjattiin.
+- Kahdeksan reseptin annos- tai koostumusrajaukset lisättiin kaikkiin neljään kieleen. Tarkistin 50 laskentariviä repon Fineli Release 20- ja AFCD Release 3 -aineistoihin ja toistin erikseen 32 annoslukua. Laskentatietueiden lähdetiivisteet täsmäävät nykyisiin FI-ainesosariveihin. Laskenta-arviot ovat vielä luonnosvaiheen aineistoa.
+- Arlan valmistusvertailusta varmistuivat 16 leipää, 15 min liotus, 40 ja 20 min kohotukset, 250 °C ja 8–10 minuutin paisto. Lämpömittarin vertailuarvo on 94–96 °C. [Arlan valmistusohje](https://www.arla.se/recept/tekakor-med-havregryn/)
+- Samankaltaisuusseula käytiin läpi 494 julkaistua FI-reseptiä, #1005:n 20 ehdokasta ja tämän erän muut luonnokset vasten. 12 reseptille ei noussut olennaista osumaa. Kahdeksan reseptin osumat koskivat enimmäkseen samaa perustaikinaa. Erot tarkistettiin muodon, täytteen ja valmistustavan perusteella. Chapati paistetaan pannulla ilman hiivaa, pretzelit käyvät soodavedessä ja riisikakut ovat kuiva, päällystetty välipala uuniriisipuuron sijaan. Pullapitko, voisilmäpullat ja laskiaispullat eroavat toisistaan muotoilussa, täytteessä ja tarjoilussa. Mustikkapiirakka on marjalla päällystetty vuokaleivonnainen, ja kaurateeleivät ovat litteitä kauraleipäsiä.
+
+Korjattu sisältö tarvitsee Chat-2:n deltakatselmoinnin. Julkaisuehdokkaan evidenssi valmistellaan varsinaisiin rekisteripolkuihin seuraavassa vaiheessa.

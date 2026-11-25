@@ -30,7 +30,7 @@ ingredients:
     item: "jauhettua mustapippuria"
   - amount: 115
     unit: "g"
-    item: "pehmeää vuohenjuustoa"
+    item: "tuoretta pehmeää vuohenjuustoa pastöroidusta maidosta, ilman home- tai kittipintaa"
   - amount: 25
     unit: "g"
     item: "ruohosipulituorejuustoa"
@@ -56,3 +56,5 @@ Pehmeiksi paahdetut makeat paprikat täytetään sitruunaisella vuohenjuustolla.
 
 - Sisältää maitoa.
 - Vertailulähde https://mycasualpantry.com/roasted-mini-sweet-peppers-goat-cheese/
+- Käytä kylmään täytteeseen tuoretta vuohenjuustoa, joka on valmistettu pastöroidusta maidosta ja jossa ei ole home- tai kittipintaa. Täytä paprikat hyvissä ajoin ennen juuston viimeistä käyttöpäivää. Raskaana olevien, iäkkäiden ja immuunipuutteisten tulee välttää raakamaitojuustoja sekä pehmeitä home- ja kittijuustoja kuumentamattomina.
+- https://www.ruokavirasto.fi/globalassets/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/turvallisenkaytonohjeet_2025.pdf

@@ -17,7 +17,7 @@ image:
   height: 800
 ingredients:
   - amount: 10
-    unit: "ฟอง"
+    unit: "ลูก"
     item: "พริกหวานขนาดเล็ก"
   - amount: 1
     unit: "ช้อนชา"
@@ -30,7 +30,7 @@ ingredients:
     item: "พริกไทยดำป่น"
   - amount: 115
     unit: "กรัม"
-    item: "ชีสนมแพะแบบนุ่ม"
+    item: "ชีสนมแพะสดแบบนุ่มจากนมพาสเจอไรซ์ชนิดไม่มีเปลือกราหรือเปลือกล้าง"
   - amount: 25
     unit: "กรัม"
     item: "ครีมชีสผสมกุยช่ายฝรั่ง"
@@ -56,3 +56,5 @@ ingredients:
 
 - มีนม
 - แหล่งอ้างอิงวิธีทำ https://mycasualpantry.com/roasted-mini-sweet-peppers-goat-cheese/
+- ใช้ชีสนมแพะสดจากนมพาสเจอไรซ์ชนิดไม่มีเปลือกราหรือเปลือกล้างสำหรับไส้เย็น ใช้ชีสล่วงหน้าก่อนวันหมดอายุ ผู้ตั้งครรภ์ ผู้สูงอายุ และผู้มีภูมิคุ้มกันต่ำควรหลีกเลี่ยงชีสจากนมดิบและชีสเนื้อนุ่มชนิดเปลือกราหรือเปลือกล้างหากยังไม่ได้ผ่านความร้อน
+- https://www.ruokavirasto.fi/globalassets/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/turvallisenkaytonohjeet_2025.pdf

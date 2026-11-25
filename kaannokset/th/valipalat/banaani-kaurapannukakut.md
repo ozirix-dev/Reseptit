@@ -59,3 +59,4 @@ ingredients:
 
 - มีไข่ อัลมอนด์ และข้าวโอ๊ต
 - แหล่งอ้างอิงวิธีทำ https://www.ambitiouskitchen.com/banana-oatmeal-pancakes/
+- ค่าประมาณต่อหนึ่งที่คิดจากแพนเค้กประมาณ 3 ชิ้นและรวมน้ำมันทอดทั้งหมด

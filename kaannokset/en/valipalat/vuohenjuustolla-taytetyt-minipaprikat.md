@@ -30,7 +30,7 @@ ingredients:
     item: "ground black pepper"
   - amount: 115
     unit: "g"
-    item: "soft goat cheese"
+    item: "fresh soft pasteurised goat cheese without a mould-ripened or washed rind"
   - amount: 25
     unit: "g"
     item: "chive cream cheese"
@@ -56,3 +56,5 @@ Sweet peppers are roasted until tender and filled with lemon-scented goat cheese
 
 - Contains milk.
 - Preparation reference https://mycasualpantry.com/roasted-mini-sweet-peppers-goat-cheese/
+- Use fresh goat cheese made with pasteurised milk, without a mould-ripened or washed rind, for the chilled filling. Use it well before its use-by date. Pregnant people, older adults and people with weakened immunity should avoid unheated raw-milk cheeses and unheated soft mould-ripened or washed-rind cheeses.
+- https://www.ruokavirasto.fi/globalassets/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/turvallisenkaytonohjeet_2025.pdf

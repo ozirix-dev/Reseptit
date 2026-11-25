@@ -54,3 +54,4 @@ Ohuet, hiivattomat vehnäleivät saavat pannulla ruskeita paistopilkkuja.
 
 - Sisältää vehnää.
 - Vertailulähde: https://www.bbcgoodfood.com/recipes/chapatis
+- Ravintoarvio koskee yhtä leipää ja sisältää koko ilmoitetun kaulintajauho- ja sivelyöljyvaran.

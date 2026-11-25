@@ -59,3 +59,4 @@ Mogen banan ger smak åt små havrepannkakor som steks i panna.
 
 - Innehåller ägg, mandel och havre.
 - Tillagningskälla https://www.ambitiouskitchen.com/banana-oatmeal-pancakes/
+- Näringsberäkningen gäller cirka tre pannkakor och inkluderar all stekolja.

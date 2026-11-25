@@ -43,3 +43,4 @@ Crunchy rice cakes are topped with peanut butter, fresh strawberries and blueber
 
 - Contains peanuts.
 - Preparation reference https://www.weightwatchers.com/ca/en/recipe/pb-and-strawberry-rice-cake/5e4c3f27610017012c0b4d32
+- The nutrition estimate uses one 8 g wholegrain rice cake and peanut butter with no added salt or sugar. All toppings are included.

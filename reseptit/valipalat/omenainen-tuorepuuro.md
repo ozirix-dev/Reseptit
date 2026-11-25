@@ -37,15 +37,16 @@ ingredients:
 
 # Omenainen tuorepuuro
 
-Raastettu omena, kaneli ja kardemumma maustavat jääkaapissa pehmenevän kaurapuuron.
+Raastettu ja kuutioitu omena, kaneli ja kardemumma maustavat jääkaapissa pehmenevän kaurapuuron.
 
 ## Valmistus
 
-1. Pese omena ja poista siemenkota. Raasta syötävä osa karkeaksi raasteeksi.
-2. Sekoita hiutaleet, kaurajuoma, omena, kaneli, kardemumma ja suola. Peitä kulho ja siirrä se jääkaappiin vähintään kahdeksi tunniksi.
-3. Sekoita puuro ja jaa kolmeen annokseen. Tarjoa kylmänä.
+1. Pese omena ja poista siemenkota. Raasta 150 g ja leikkaa jäljelle jäävät 30 g pieniksi kuutioiksi. Siirrä kuutiot peitettyinä jääkaappiin tarjoiluun asti.
+2. Sekoita hiutaleet, kaurajuoma, omenaraaste, kaneli, kardemumma ja suola. Peitä kulho ja siirrä se jääkaappiin vähintään kahdeksi tunniksi.
+3. Sekoita puuro ja jaa kolmeen annokseen. Tarjoa kylmänä. Lisää omenakuutiot annosten päälle juuri ennen tarjoilua.
 
 ## Muistiinpanot
 
 - Sisältää kauraa. Arvioitu aika sisältää kahden tunnin tekeytymisen.
 - Vertailulähde: https://www.valio.fi/reseptit/omena-kauratuorepuuro/
+- Ravintoarvio käyttää maustamattoman kaurajuoman tuotekeskiarvoa ja sisältää kaikki ohjeen omenat.

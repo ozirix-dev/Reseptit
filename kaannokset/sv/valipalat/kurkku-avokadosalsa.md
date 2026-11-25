@@ -52,3 +52,4 @@ Krispig gurka, avokado och mynta blir en frisk dipp med bitar.
 
 - Portionen avser salsan i sig.
 - Tillagningskälla https://weelicious.com/cucumber-avocado-salsa/
+- Näringsberäkningen omfattar salsan och all dressing. Tillbehör räknas separat.

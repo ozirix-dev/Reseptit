@@ -52,3 +52,4 @@ Rapeat kurkkukuutiot, avokado ja minttu sopivat raikkaaksi dipiksi.
 
 - Ohjeen annos sisältää pelkän salsan.
 - Vertailulähde https://weelicious.com/cucumber-avocado-salsa/
+- Ravintoarvio sisältää salsan koko kastikkeineen. Lisukkeet arvioidaan erikseen.

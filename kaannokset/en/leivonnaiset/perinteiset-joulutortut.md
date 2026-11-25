@@ -45,3 +45,4 @@ These crisp star-shaped pastries have a spoonful of bake-stable prune jam in the
 
 - Contains wheat, milk and egg.
 - Reference: https://www.martat.fi/reseptit/joulutortut/
+- The nutrition estimate is for one pastry and uses reference data for unbaked butter puff pastry. It includes all the egg used for brushing.

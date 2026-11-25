@@ -54,3 +54,4 @@ Riven morot och parmesan ger saftiga matmuffins.
 
 - Innehåller vete, mjölk och ägg.
 - Tillagningskälla https://groceries.morrisons.com/recipes/savoury-carrot-and-parmesan-muffins/37014
+- Näringsberäkningen gäller en muffins och bygger på kärnmjölk med 0,8 % fett.

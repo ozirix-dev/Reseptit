@@ -54,3 +54,4 @@ ingredients:
 
 - มีข้าวสาลี นม และไข่
 - แหล่งอ้างอิงวิธีทำ https://groceries.morrisons.com/recipes/savoury-carrot-and-parmesan-muffins/37014
+- ค่าประมาณต่อมัฟฟินหนึ่งชิ้นใช้บัตเตอร์มิลก์ไขมัน 0.8%

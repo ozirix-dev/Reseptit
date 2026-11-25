@@ -52,3 +52,4 @@ Rostad röd paprika ger sötma åt yoghurtdippen, och rökt paprikapulver fördj
 
 - Innehåller mjölk och sesam. Referens för paprikapurén https://www.ohsu.edu/sites/default/files/2019-05/Recipe-Roasted-Red-Pepper-Dip.pdf
 - Tillagningskälla https://vidarbergum.com/recipe/roast-peppers-with-yoghurt-herbs/
+- Näringsberäkningen bygger på grekisk yoghurt med 10 % fett och avrunnen burkpaprika. Tillbehör räknas separat.

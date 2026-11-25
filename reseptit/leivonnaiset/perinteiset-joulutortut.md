@@ -42,3 +42,4 @@ Rapeaksi paistuvan tähtitortun keskelle lusikoidaan uuninkestävää luumumarme
 
 - Sisältää vehnää, maitoa ja kananmunaa.
 - Vertailulähde: https://www.martat.fi/reseptit/joulutortut/
+- Ravintoarvio koskee yhtä torttua ja käyttää vertailutietoa raa’asta voitaikinasta. Se sisältää koko voitelumunan.

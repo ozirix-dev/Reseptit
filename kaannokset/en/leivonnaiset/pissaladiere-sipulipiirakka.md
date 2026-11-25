@@ -61,7 +61,7 @@ Soft onions, salted anchovies and black olives top this yeasted tart from Nice.
 ## Method
 
 1. Mix the flour, salt and yeast. Add the water and dough oil and knead for 5 minutes. Cover and leave to rise for 45–75 minutes.
-2. Slice the onions finely. Soften them in the topping oil over low heat for about 10 minutes. Add the thyme and chopped tomatoes. Cook gently for 45 minutes, uncovering for the last 10 minutes to evaporate excess liquid.
+2. Prepare the topping while the dough rises. Slice the onions finely. Soften them in the topping oil over low heat for about 10 minutes. Add the thyme and chopped tomatoes. Cook gently for 45 minutes, uncovering for the last 10 minutes to evaporate excess liquid.
 3. Heat the oven to 220°C. Oil a tin about 23 × 33 cm and press the dough into it. Spread the onions on top. Lay the anchovies in a lattice and place an olive in each square.
 4. Bake for 25–30 minutes, until the edges are golden. Cut into eight pieces.
 

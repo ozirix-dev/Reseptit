@@ -60,7 +60,7 @@ Kardemummapullan väliin lusikoidaan vadelmahilloa ja kermavaahtoa.
 1. Liuota hiiva kädenlämpöiseen maitoon. Lisää suola, sokeri ja kardemumma. Lisää jauhot vähitellen. Vaivaa mukaan haalea margariini jauhojen lisäämisen loppupuolella.
 2. Peitä kulho ja kohota kaksinkertaiseksi. Jaa taikina 20 osaan, pyöritä pullat ja nosta leivinpaperille. Kohota peitettynä, kunnes pullat ovat kuohkeita.
 3. Voitele vatkatulla munalla. Paista 220 °C:ssa 12–15 minuuttia, kunnes pullat ovat kullanruskeita. Anna jäähtyä kokonaan.
-4. Vatkaa kylmä kerma pehmeäksi vaahdoksi. Leikkaa pullista kannet ja jaa hillo sekä vaahto pohjille. Nosta kannet paikalleen ja siivilöi päälle tomusokeria.
+4. Vatkaa kylmä kerma pehmeäksi vaahdoksi. Leikkaa pullista kannet ja jaa hillo sekä vaahto pohjille. Nosta kannet paikalleen ja siivilöi päälle tomusokeria. Säilytä täytetyt pullat peitettyinä jääkaapissa tarjoiluun asti.
 
 ## Muistiinpanot
 

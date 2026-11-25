@@ -57,3 +57,4 @@ De tunna, ojästa vetebröden får bruna fläckar i stekpannan.
 
 - Innehåller vete.
 - Referens: https://www.bbcgoodfood.com/recipes/chapatis
+- Näringsberäkningen gäller ett bröd och inkluderar allt angivet mjöl till kavling och all olja till pensling.

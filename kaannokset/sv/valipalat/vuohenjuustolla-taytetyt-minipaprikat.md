@@ -30,7 +30,7 @@ ingredients:
     item: "malen svartpeppar"
   - amount: 115
     unit: "g"
-    item: "mjuk getost"
+    item: "färsk mjuk getost av pastöriserad mjölk utan mögel- eller kittskorpa"
   - amount: 25
     unit: "g"
     item: "färskost med gräslök"
@@ -56,3 +56,5 @@ Söta små paprikor rostas mjuka och fylls med citronfrisk getost.
 
 - Innehåller mjölk.
 - Tillagningskälla https://mycasualpantry.com/roasted-mini-sweet-peppers-goat-cheese/
+- Använd färsk getost av pastöriserad mjölk, utan mögel- eller kittskorpa, till den kalla fyllningen. Använd osten i god tid före sista förbrukningsdagen. Gravida, äldre och personer med nedsatt immunförsvar bör undvika oupphettade råmjölksostar och mjuka mögel- eller kittostar.
+- https://www.ruokavirasto.fi/globalassets/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/turvallisenkaytonohjeet_2025.pdf

@@ -44,10 +44,12 @@ Varmrökt fisk, dill och citron ger smak åt den krämiga röran.
 
 1. Ta bort skinn och eventuella ben från fisken. Finfördela fisken i en skål med en gaffel. Finhacka löken och dillen.
 2. Rör ihop färskosten, crème fraichen och citronsaften. Vänd ner fisken, löken och dillen så att små fiskbitar finns kvar i röran.
-3. Servera genast eller förvara röran kallt fram till servering. Följ förpackningens förvaringsanvisningar och gör röran så snart som möjligt efter att förpackningen öppnats.
+3. Välj så färsk varmrökt fisk som möjligt. Använd den senast på sista förbrukningsdagen. Följ förpackningens kylförvaringsanvisning och gör röran snart efter att förpackningen öppnats. Servera genast eller förvara övertäckt i kyl fram till servering, helst vid 0–3 °C.
 
 ## Anteckningar
 
 - Innehåller fisk och mjölk.
 - Tillagningskälla https://www.k-ruoka.fi/reseptit/savulohitahna
 - Förvaringsråd https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/kala/mikrobiologiset-vaarat-ja-muut-riskit/
+- Till gravida, äldre och personer med nedsatt immunförsvar, använd fisken i god tid före sista förbrukningsdagen när röran serveras kall.
+- https://www.ruokavirasto.fi/globalassets/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/turvallisenkaytonohjeet_2025.pdf

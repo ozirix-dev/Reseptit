@@ -61,7 +61,7 @@ Den jästa pajen från Nice toppas med mjuk lök, saltade sardeller och svarta o
 ## Gör så här
 
 1. Blanda mjöl, salt och jäst. Tillsätt vatten och oljan till degen och knåda i 5 minuter. Täck och låt jäsa i 45–75 minuter.
-2. Skiva löken tunt. Låt den mjukna i fyllningens olja på låg värme i cirka 10 minuter. Tillsätt timjan och hackad tomat. Låt sjuda i 45 minuter, utan lock de sista 10 minuterna så att överflödig vätska avdunstar.
+2. Gör fyllningen medan degen jäser. Skiva löken tunt. Låt den mjukna i fyllningens olja på låg värme i cirka 10 minuter. Tillsätt timjan och hackad tomat. Låt sjuda i 45 minuter, utan lock de sista 10 minuterna så att överflödig vätska avdunstar.
 3. Sätt ugnen på 220 °C. Olja en form på cirka 23 × 33 cm och tryck ut degen. Bred ut löken. Lägg sardellerna i ett rutmönster och lägg en oliv i varje ruta.
 4. Grädda i 25–30 minuter, tills kanterna är gyllenbruna. Skär i åtta bitar.
 

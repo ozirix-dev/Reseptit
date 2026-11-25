@@ -43,3 +43,4 @@ Rapeiden riisikakkujen päälle tulee maapähkinävoita sekä tuoreita mansikoit
 
 - Sisältää maapähkinää.
 - Vertailulähde https://www.weightwatchers.com/ca/en/recipe/pb-and-strawberry-rice-cake/5e4c3f27610017012c0b4d32
+- Ravintoarvio käyttää yhtä 8 g:n täysjyväriisikakkua ja maapähkinävoita ilman lisättyä suolaa tai sokeria. Päällysteet kuuluvat annokseen.

@@ -54,3 +54,4 @@ Grated carrot and Parmesan keep these savoury snack muffins moist.
 
 - Contains wheat, milk and egg.
 - Preparation reference https://groceries.morrisons.com/recipes/savoury-carrot-and-parmesan-muffins/37014
+- The nutrition estimate is for one muffin and uses buttermilk with 0.8% fat.

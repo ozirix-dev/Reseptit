@@ -61,7 +61,7 @@ Nizzalaisen piirakan hiivapohjan peittävät pehmeä sipuli, suolatut sardellit 
 ## Valmistus
 
 1. Sekoita jauhot, suola ja hiiva. Lisää vesi ja taikinaöljy ja vaivaa 5 minuuttia. Peitä ja kohota 45–75 minuuttia.
-2. Viipaloi sipulit ohuiksi. Pehmennä niitä täyteöljyssä miedolla lämmöllä noin 10 minuuttia. Lisää timjami ja pilkottu tomaatti. Hauduta 45 minuuttia ja poista kansi viimeiseksi 10 minuutiksi, jotta ylimääräinen neste haihtuu.
+2. Valmista täyte taikinan kohotessa. Viipaloi sipulit ohuiksi. Pehmennä niitä täyteöljyssä miedolla lämmöllä noin 10 minuuttia. Lisää timjami ja pilkottu tomaatti. Hauduta 45 minuuttia ja poista kansi viimeiseksi 10 minuutiksi, jotta ylimääräinen neste haihtuu.
 3. Kuumenna uuni 220 °C:seen. Öljyä noin 23 × 33 cm:n vuoka ja levitä taikina vuokaan. Tasoita pinnalle sipulit. Aseta sardellit ristikoksi ja lisää oliivi kuhunkin ruutuun.
 4. Paista 25–30 minuuttia, kunnes reunat ovat kullanruskeat. Leikkaa kahdeksaan palaan.
 

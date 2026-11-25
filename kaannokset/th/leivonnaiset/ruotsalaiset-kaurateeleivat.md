@@ -35,7 +35,7 @@ ingredients:
     unit: "ช้อนโต๊ะ"
     item: "ไซรัปสีอ่อน"
   - amount: 1
-    unit: "ชิ้น"
+    unit: "ฟอง"
     item: "ไข่ไก่"
   - amount: 11
     unit: "dl"

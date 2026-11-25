@@ -52,3 +52,4 @@ ingredients:
 
 - มีนมและงา แหล่งอ้างอิงการปั่นพริกหวาน https://www.ohsu.edu/sites/default/files/2019-05/Recipe-Roasted-Red-Pepper-Dip.pdf
 - แหล่งอ้างอิงวิธีทำ https://vidarbergum.com/recipe/roast-peppers-with-yoghurt-herbs/
+- ค่าประมาณใช้กรีกโยเกิร์ตไขมัน 10% และพริกหวานจากขวดที่สะเด็ดน้ำแล้ว ส่วนเครื่องเคียงให้คิดแยก

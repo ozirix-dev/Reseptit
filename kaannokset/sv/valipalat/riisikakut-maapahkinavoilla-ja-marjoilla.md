@@ -43,3 +43,4 @@ Krispiga riskakor toppas med jordnötssmör, färska jordgubbar och blåbär.
 
 - Innehåller jordnötter.
 - Tillagningskälla https://www.weightwatchers.com/ca/en/recipe/pb-and-strawberry-rice-cake/5e4c3f27610017012c0b4d32
+- Näringsberäkningen använder en fullkornsriskaka på 8 g och jordnötssmör utan tillsatt salt eller socker. Toppingen ingår.

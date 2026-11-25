@@ -40,15 +40,16 @@ ingredients:
 
 # Apple overnight oats
 
-Grated apple, cinnamon and cardamom flavour oats softened in the refrigerator.
+Grated and diced apple, cinnamon and cardamom flavour oats softened in the refrigerator.
 
 ## Preparation
 
-1. Wash and core the apple. Coarsely grate the edible portion.
-2. Stir together the oats, oat drink, apple, cinnamon, cardamom and salt. Cover and refrigerate for at least two hours.
-3. Stir the oats and divide into three portions. Serve cold.
+1. Wash and core the apple. Grate 150 g and finely dice the remaining 30 g. Refrigerate the diced apple, covered, until serving.
+2. Stir together the oats, oat drink, grated apple, cinnamon, cardamom and salt. Cover and refrigerate for at least two hours.
+3. Stir the oats and divide into three portions. Serve cold. Top each serving with the diced apple just before serving.
 
 ## Notes
 
 - Contains oats. The estimated time includes two hours of chilling.
 - Reference: https://www.valio.fi/reseptit/omena-kauratuorepuuro/
+- The nutrition estimate uses average values for plain oat drink and includes all the apple in the recipe.

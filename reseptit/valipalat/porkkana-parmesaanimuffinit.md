@@ -54,3 +54,4 @@ Porkkanaraaste ja parmesaani mehevöittävät suolaiset välipalamuffinit.
 
 - Sisältää vehnää, maitoa ja kananmunaa.
 - Vertailulähde https://groceries.morrisons.com/recipes/savoury-carrot-and-parmesan-muffins/37014
+- Ravintoarvio koskee yhtä muffinia ja perustuu 0,8-prosenttiseen piimään.
