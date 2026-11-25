@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "lihapullat-ruskea-kastike-perunamuusi",
+  "source_path": "reseptit/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md",
+  "source_sha256": "2fdcbcc046793ed1cad79f6f88b89cc88875140f32ba785aa90c4db3c5651367",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/lihapullat-haudutetut-valkosipuliperunat-ja-ruskea-kastike/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/lihapullat-ruskea-kastike-perunamuusi.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Lihapullat kypsennetään kauttaaltaan vähintään 70 °C:seen. Annokseen kuuluu noin viisi pullaa sekä neljännes muusista ja kastikkeesta."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Lihapullat kypsennetään kauttaaltaan vähintään 70 °C:seen. Annokseen kuuluu noin viisi pullaa sekä neljännes muusista ja kastikkeesta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Lihapullat kypsennetään kauttaaltaan vähintään 70 °C:seen. Annokseen kuuluu noin viisi pullaa sekä neljännes muusista ja kastikkeesta. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Lihapullat kypsennetään kauttaaltaan vähintään 70 °C:seen. Annokseen kuuluu noin viisi pullaa sekä neljännes muusista ja kastikkeesta. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Maitotyyppi ja kastikkeen vesi-/liemivaihtoehto ovat avoimia. Paistossa erottuvaa rasvaa ei punnittu."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Muusin valmistuskohtainen GI ja kastikepohjan koostumus ovat sitomatta. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/lihapullat-ruskea-kastike-perunamuusi.webp",
+    "bytes": 79346,
+    "sha256": "86a72cf2a01cd4872d02753e00c9bf93353e116527e0ef6388eb7b89e84dae6e",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md",
+        "sha256": "a28fc4c1bf0c64c26f594f0833b0c15df5094dd841bf5b600f5b4b43550b69ca"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md",
+        "sha256": "f868b93e99f208603cf5bb197a0529f4cf66a20f58c954f92a213b91b45d2e9a"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md",
+        "sha256": "9a56e3e3a552a350e0e0b870cbbe9b5bd51ab3968c2070f0bfc2a64a8a38afb1"
+      },
+      {
+        "path": "reseptit/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md",
+        "sha256": "c3a47cdc54006ad03dc22ef4aed53c256504d0634f71e2b46572cee853b0f482"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md",
+        "language": "en",
+        "slug": "lihapullat-ruskea-kastike-perunamuusi-en",
+        "sha256": "994cadc1c76e471497646e6aed822841b4b2cfcfb63b29d36f1f3676ea34dfea",
+        "semantic_sha256": "8a3780d3976371b1b09704ca10e7330feb4918f3f2552ba450cd4b1c4380555e"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md",
+        "language": "sv",
+        "slug": "lihapullat-ruskea-kastike-perunamuusi-sv",
+        "sha256": "da9183f511605f958d58c472037fff81d424ee98dbc92f4786a94bfc1cca817f",
+        "semantic_sha256": "223d67fc54f667568785ca324ba5b6f58a08862106de31b43414819e27a0840e"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md",
+        "language": "th",
+        "slug": "lihapullat-ruskea-kastike-perunamuusi-th",
+        "sha256": "5598204c82fa7003078b91e53f41525b1f63b3fca2d33ae5412cf7bfcdc7ef33",
+        "semantic_sha256": "1e37dc8ccdad28380f24157c1da53cdb0b75c95285d0326f935d9533f4ae7ff9"
+      },
+      {
+        "path": "reseptit/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md",
+        "language": "fi",
+        "slug": "lihapullat-ruskea-kastike-perunamuusi",
+        "sha256": "2fdcbcc046793ed1cad79f6f88b89cc88875140f32ba785aa90c4db3c5651367",
+        "semantic_sha256": "8cfea6a79ee0b58837af3a9437980997d9be81848549bbaba08688fd74bb3389"
+      }
+    ]
+  }
+}

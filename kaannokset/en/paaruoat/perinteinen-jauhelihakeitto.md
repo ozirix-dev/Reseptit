@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-jauhelihakeitto.md
 translation_of: perinteinen-jauhelihakeitto
-status: draft
+status: published
 servings: 6
 time_total_min: 60
 difficulty: "easy"
@@ -20,22 +20,30 @@ cooking_method:
 tags:
   - "Finnish"
   - "traditional"
+image:
+  src: paaruoat/perinteinen-jauhelihakeitto.webp
+  alt: "A bowl of ground beef soup with potatoes, root vegetables, leek and parsley; AI illustration"
+  width: 960
+  height: 640
+carbs_net_per_serving_g: 23.29
+protein_per_serving_g: 20.62
+fat_per_serving_g: 10.46
 ingredients:
   - amount: 500
     unit: "g"
-    item: "ground beef"
+    item: "lean ground beef (about 9% fat)"
   - amount: 700
     unit: "g"
     item: "peeled potatoes"
   - amount: 250
     unit: "g"
-    item: "carrots"
+    item: "peeled carrots"
   - amount: 150
     unit: "g"
-    item: "swede"
+    item: "peeled swede"
   - amount: 100
     unit: "g"
-    item: "onion"
+    item: "peeled yellow onion"
   - amount: 50
     unit: "g"
     item: "leek"
@@ -47,7 +55,7 @@ ingredients:
     item: "rapeseed oil"
   - amount: 10
     unit: "g"
-    item: "stock concentrate, check salt content"
+    item: "beef stock concentrate, check salt content"
   - amount: 2
     unit: "g"
     item: "black pepper"
@@ -58,18 +66,19 @@ ingredients:
 
 # Traditional Finnish Minced Beef and Potato Soup
 
-An everyday Finnish soup of potatoes, root vegetables and browned ground meat without low-carb substitutions.
+Potatoes and root vegetables simmer in one pot. The lean beef is browned separately and stirred in towards the end.
 
 ## Preparation
 
-1. Peel and dice potatoes and root vegetables. Chop the onion and slice the leek.
-2. Bring the water and stock concentrate to a boil. Add swede and carrots; simmer for about 10 minutes.
+1. Peel and dice potatoes and root vegetables. Chop the onion and slice the leek. Weigh the vegetables after peeling and trimming.
+2. Bring the water and beef stock concentrate to a boil. Add swede and carrots; simmer for about 10 minutes.
 3. Add potatoes and leek. Cook for another 15 minutes or until the vegetables are tender.
-4. Meanwhile, brown the ground beef and onion in rapeseed oil. Cook the beef mince thoroughly to at least 70°C throughout, then add to the soup.
+4. Meanwhile, brown the ground beef and onion in rapeseed oil. Cook the beef to at least 70 °C throughout, then tip the entire contents of the pan into the soup.
 5. Simmer for 5 minutes, season with black pepper and add chopped parsley. Adjust salt according to the stock used.
 
 ## Notes
 
 - Check packaging for allergens; no gluten-free claim has been reviewed.
-- Editorial draft: no Recipavo cooking trial, approved nutrition/GK calculation or image yet.
 - Preparation comparison reference (not reproduced): https://www.martat.fi/reseptit/jauhelihakeitto-10lle/
+
+- Available nutrition values are ingredient-based estimates per serving.

@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "ciabatta",
+  "source_path": "reseptit/leivonnaiset/ciabatta.md",
+  "source_sha256": "b355cbba2275015abaf4396d65f3b96f784d3558e159a43285e6a9a066c5b180",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.kingarthurbaking.com/recipes/rustic-italian-ciabatta-recipe"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/ciabatta.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Oma 20 reseptin samankaltaisuusseulonta. Chat-2:n tarkastamissa viidessä heuristisessa osumassa ei ollut estettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset, niiden käyttötilat ja määrät säilyvät Chat-2:n katselmoimasta sisällöstä. Sisältää vehnää. Paistokiven täytyy kestää valittu lämpötila."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusvaiheet ja valmistuslähde säilyvät Chat-2:n katselmoimasta sisällöstä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaturvallisuusohjeet ja allergeenit säilyvät neljällä kielellä tarkastetusta revisiosta. Kirjallinen näyttö ilman Recipavon koekeittiötestiä. Sisältää vehnää. Paistokiven täytyy kestää valittu lämpötila."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 16 ja ilmoitettu kokonaisaika 1320 min säilyvät. Arvot tarkistettu neljällä kielellä."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Vahvan leipäjauhon ja kuivahiivan koostumus sekä leipiin tarttuvan, enintään varatun 20 g:n jauhokerroksen määrä ovat avoimia. Kaikki neljä arvoa jäävät määrittämättömiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle annosversiolle ei ole hyväksyttyä soveltuvaa GI- tai ainesosasidosta eikä kanonista GK-näyttöä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/ciabatta.webp",
+    "bytes": 156060,
+    "sha256": "d05dfae2ed840de871992b062a856d430d993541ce3e6052edb9ab29fab1ec24",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161831506",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161957227",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/leivonnaiset/ciabatta.md",
+        "sha256": "ef06fef83d0e8feacdd18e2fabdd263e04faa644acf407cbee4cec3a7188f2ee"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/ciabatta.md",
+        "sha256": "46745fc83163c78f27eb6d4d3b90e3d2a1b0cd7018144e54258991ffa9c1e635"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/ciabatta.md",
+        "sha256": "b702ed04f3221e56ed039ba9759668cde095157d3f2b55b3629662be352718b0"
+      },
+      {
+        "path": "reseptit/leivonnaiset/ciabatta.md",
+        "sha256": "72964a4f5a13e86a9afe30f34461f72afbc32108b831da85214a6767df1975c6"
+      }
+    ],
+    "scope": "Ennen julkaisuehdokasta katselmoitu teksti, valmistus, turvallisuus ja kuva. Ravintoratkaisujen ehdot on kirjattu erillisessä katselmoinnissa."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "51dab2435c784a6b943e04eb2e9d812703d74f87097400ef676143e0e086e4ef"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/ciabatta.md",
+        "language": "fi",
+        "slug": "ciabatta",
+        "sha256": "b355cbba2275015abaf4396d65f3b96f784d3558e159a43285e6a9a066c5b180",
+        "semantic_sha256": "50f5eceac5615ba46410b6f13afe96e244705328252db6347d947a7691a377a1"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/ciabatta.md",
+        "language": "en",
+        "slug": "ciabatta-en",
+        "sha256": "235732a9d4dd9dd6bf380f14b69e1b0c591b3ffe637dd25a442efaeb648b5f9a",
+        "semantic_sha256": "8104e8a112f5f75e2b7f8d0cb431cadffcbff847fc595563668a27fdcbca4b02"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/ciabatta.md",
+        "language": "sv",
+        "slug": "ciabatta-sv",
+        "sha256": "9f7114609af91085011008743bbbb8e51442f74e65a4d87bb102f090ea743287",
+        "semantic_sha256": "0e9a310ef55cfc1d9d3376cbbed1db9da151f937b9d67473482d17a699292049"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/ciabatta.md",
+        "language": "th",
+        "slug": "ciabatta-th",
+        "sha256": "ced73bfab89e59a266826fe23d9c8e8fd8b78020780136e879a5c181dcc673e1",
+        "semantic_sha256": "77ed9216b59e3a04d78a8737208bb0b8f49e21f3c4bc3784c75bcd63d2e44b09"
+      }
+    ],
+    "final_independent_delta": "pending"
+  }
+}

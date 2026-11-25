@@ -8,13 +8,18 @@ main_ingredient:
 cooking_method:
   - "paisto"
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 30
 difficulty: "helppo"
 tags:
   - "suomalainen"
   - "perinneruoka"
+image:
+  src: paaruoat/paistetut-muikut.webp
+  alt: "Rukiilla leivitettyjä ja pannulla paistettuja muikkuja lautasella; tekoälykuvitus"
+  width: 960
+  height: 640
 ingredients:
   - amount: 700
     unit: "g"
@@ -42,14 +47,14 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 ---
 
 # Paistetut muikut ruisjauhoilla
 
-Perinteinen suomalainen kotikeittiön resepti.
+Muikut pyöräytetään ruisjauhon ja korppujauhon seoksessa ja paistetaan pannulla rapeiksi. Tarjoa kuumina keitettyjen perunoiden kanssa.
 
 ## Valmistus
 
@@ -60,5 +65,7 @@ Perinteinen suomalainen kotikeittiön resepti.
 
 ## Muistiinpanot
 
-- Toimituksellinen luonnos, ei Recipavon keittiössä testattu. Kuva, ravinto- ja GK-laskelma sekä lopullinen kieli- ja allergeenitarkistus puuttuvat.
+- Sisältää kalaa, ruista ja maitoa. Tarkista korppujauhoista vehnä ja mahdolliset muut allergeenit.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/paistetut-muikut/
+
+- Annoksen ravintoarvoja ei voitu määrittää luotettavasti.

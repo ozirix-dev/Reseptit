@@ -15,6 +15,7 @@ import path from "node:path";
 import { changedSemanticReviewErrors, loadSemanticEvidence, preparationRegressionErrors, semanticHash } from "./translation-semantic-review";
 import { auditTranslations } from "./translation-audit";
 import { verifyNutritionEvidence } from "./nutrition-evidence";
+import { assertPendingGkSources } from "./glycemic-coverage-inventory-model";
 import { readNutritionFieldApproval } from "./nutrition-field-approval";
 import type { Calculation } from "./nutrition-model";
 import { recipeBindingHash, reviewedColdPuddingBindingText } from "./glycemic-load-recipe-binding";
@@ -170,6 +171,9 @@ const semanticallyChanged = new Set(changedRecipes.filter((recipe) => {
 }).map((recipe) => recipe.path));
 
 const audit = await auditTranslations([...recipeIds]);
+const pendingGkSources = JSON.parse(await readFile(
+  resolveRepoFile("docs/nutrition/new-public-gk-pending-sources.json"), "utf8",
+)) as Record<string, string>;
 const recipeBindings = JSON.parse(await readFile(resolveRepoFile("docs/nutrition/glycemic-load-recipe-bindings.json"), "utf8")) as {
   recipes?: Record<string, string>;
 };
@@ -213,13 +217,16 @@ if (changedRoutes.length > 0) {
 
 for (const recipeId of recipeIds) {
   const source = assertChangedRecipeAuditIsClean(audit, recipeId);
-  const evidencePath = resolveRepoFile(`docs/nutrition/calculations/${recipeId}.json`);
+  const evidencePathRelative = `docs/nutrition/calculations/${recipeId}.json`;
+  const evidencePath = resolveRepoFile(evidencePathRelative);
   const evidenceText = await readFile(evidencePath, "utf8").catch((error: NodeJS.ErrnoException) => {
     if (error.code === "ENOENT") return null;
     throw error;
   });
+  const gkPending = Object.hasOwn(pendingGkSources, recipeId);
   if (!source) {
     assert(evidenceText === null, `${recipeId}: calculation evidence has no published Finnish source`);
+    assert(!gkPending, `${recipeId}: new-public GK pending entry has no published Finnish source`);
     continue;
   }
 
@@ -279,11 +286,23 @@ for (const recipeId of recipeIds) {
   if (evidence) {
     if (isRecoveryEvidence(evidence)) await loadRecovery(repoRoot,recipeId);
     if (isScopedPolyolEvidence(evidence)) assert(await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: scoped C preparation approval is stale`);
-    const approval = await readNutritionFieldApproval(repoRoot, evidence, { requireBatchMembership: true });
-    const result = verifyNutritionEvidence(source.data, evidence, translations, approval);
-    assert.deepEqual(result.errors, [], `${recipeId}: nutrition evidence validation failed`);
   } else {
     assert(!evidenceIds.has(recipeId), `${recipeId}: changed calculation evidence is unavailable`);
+  }
+  if (evidence || gkPending) {
+    const approval = evidence ? await readNutritionFieldApproval(repoRoot, evidence, { requireBatchMembership: true }) : undefined;
+    const result = verifyNutritionEvidence(source.data, evidence, translations, approval);
+    if (evidence) assert.deepEqual(result.errors, [], `${recipeId}: nutrition evidence validation failed`);
+    if (gkPending) {
+      // Reuse the coverage audit's eligibility check on just the changed recipe.
+      assertPendingGkSources([{
+        recipeId, status: "INSUFFICIENT SOURCE DATA", glycemicLoadPerServing: null,
+        sourceBlobSha: pendingGkSources[recipeId]!,
+      }], [{
+        recipe_id: recipeId, status: result.status, calculationEvidence: evidence ? evidencePathRelative : null,
+        evidenceErrors: result.errors, values: result.values,
+      }]);
+    }
   }
 }
 

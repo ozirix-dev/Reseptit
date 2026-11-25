@@ -49,8 +49,8 @@ image:
   height: 1024
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+protein_per_serving_g: 13.57
+fat_per_serving_g: 33.56
 source_language: fi
 source_recipe: reseptit/paaruoat/janssoninkiusaus-juuriselleri.md
 translation_of: janssoninkiusaus-juuriselleri
@@ -67,4 +67,4 @@ translation_of: janssoninkiusaus-juuriselleri
 
 ## Anteckningar
 
-Väg de ätliga ingredienserna ovan. All angiven mat, sås och stekfett ingår i portionerna; separata tillbehör ingår inte. Näringsvärden visas tills vidare inte i väntan på källkontroll.
+Väg de ätliga ingredienserna ovan. All angiven mat, sås och stekfett ingår i portionerna; separata tillbehör ingår inte. Värdena för protein och fett är beräknade uppskattningar. Kolhydratvärden för hela portionen anges inte eftersom källdata är ofullständiga.

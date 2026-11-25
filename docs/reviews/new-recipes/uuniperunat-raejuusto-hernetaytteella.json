@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "uuniperunat-raejuusto-hernetaytteella",
+  "source_path": "reseptit/paaruoat/uuniperunat-raejuusto-hernetaytteella.md",
+  "source_sha256": "16ba2b9921f56bcff73e5b35207e969728aed7cdbaf01faa28211a068e5c62b5",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/uuniperunat-ja-jarvikalatayte/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/uuniperunat-raejuusto-hernetaytteella.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Annos on yksi peruna ja neljännes täytteestä. Herneet kuumennetaan pakkauksen mukaan ja täyte pidetään kylmänä. Maito ilmoitetaan."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Annos on yksi peruna ja neljännes täytteestä. Herneet kuumennetaan pakkauksen mukaan ja täyte pidetään kylmänä. Maito ilmoitetaan."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Annos on yksi peruna ja neljännes täytteestä. Herneet kuumennetaan pakkauksen mukaan ja täyte pidetään kylmänä. Maito ilmoitetaan. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annos on yksi peruna ja neljännes täytteestä. Herneet kuumennetaan pakkauksen mukaan ja täyte pidetään kylmänä. Maito ilmoitetaan. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Kuorineen punnitun perunan syötävää osuutta ja lajiketta ei ole varmistettu."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Uuniperunan lajike, syötävä massa ja valmistusta vastaava GI-sidonta puuttuvat. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/uuniperunat-raejuusto-hernetaytteella.webp",
+    "bytes": 109074,
+    "sha256": "6bdde44a911828a6cefd34a14287f3c6abf3f81b14dbfce0383f90b58e7abc48",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/paaruoat/uuniperunat-raejuusto-hernetaytteella.md",
+        "sha256": "54a340ec96d43fb89ae552f2ee6c5b76cd43f0272cea2d79d798571bef871c05"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/uuniperunat-raejuusto-hernetaytteella.md",
+        "sha256": "b602836ecdf6feacadeb4b196f7469dbf1b3435d6fbb9ad39560ec878bf96b33"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/uuniperunat-raejuusto-hernetaytteella.md",
+        "sha256": "8ad8ae7a4b5515c8235787d601054e3bffbb4b9774ee163a4dfc06445cbacbe9"
+      },
+      {
+        "path": "reseptit/paaruoat/uuniperunat-raejuusto-hernetaytteella.md",
+        "sha256": "cf358831c1d74814c43c391279b83b6444161540ccd30fdde78e82effeefa320"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/uuniperunat-raejuusto-hernetaytteella.md",
+        "language": "en",
+        "slug": "uuniperunat-raejuusto-hernetaytteella-en",
+        "sha256": "01900d4c61794016dc701756af730a090dca007acbf3066c635bdb1ce50b0d48",
+        "semantic_sha256": "a1bc6137f5e67a8c61a92b68290bfe03441eb68057ee610fda99f80a7bb7f54a"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/uuniperunat-raejuusto-hernetaytteella.md",
+        "language": "sv",
+        "slug": "uuniperunat-raejuusto-hernetaytteella-sv",
+        "sha256": "7ef3dba17068eca09b958c4eb1cd7a74e06ad444ed8ed7f6b7e9ba52addb8bac",
+        "semantic_sha256": "3287838b2cf3ab3bff4cca1c9a6c784e5b47168adff211f9feae424de9117ed7"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/uuniperunat-raejuusto-hernetaytteella.md",
+        "language": "th",
+        "slug": "uuniperunat-raejuusto-hernetaytteella-th",
+        "sha256": "91bd0064d354fb9049ac4e85d01020c2750f4b0f13b78ad6bcf7e0f694939580",
+        "semantic_sha256": "2184ceaf221f0742df20c7759a3392a145ce6a76671234a6c6c599ba6d839401"
+      },
+      {
+        "path": "reseptit/paaruoat/uuniperunat-raejuusto-hernetaytteella.md",
+        "language": "fi",
+        "slug": "uuniperunat-raejuusto-hernetaytteella",
+        "sha256": "16ba2b9921f56bcff73e5b35207e969728aed7cdbaf01faa28211a068e5c62b5",
+        "semantic_sha256": "810a991b0eb84a30519c2a18d0b241d4723876eb3869f4f5e425268f557160e3"
+      }
+    ]
+  }
+}

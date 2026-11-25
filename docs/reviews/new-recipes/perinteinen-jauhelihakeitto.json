@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perinteinen-jauhelihakeitto",
+  "source_path": "reseptit/paaruoat/perinteinen-jauhelihakeitto.md",
+  "source_sha256": "d3efc93169dbfe83cf7ed72a35fbfc8029f654a0bcc68d3dfdccb8e488c24f73",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/jauhelihakeitto-10lle/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/perinteinen-jauhelihakeitto.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Juurekset punnitaan syötävinä. Paistijauheliha 9 % kypsennetään kauttaaltaan vähintään 70 °C:seen, ja koko pannun sisältö lisätään keittoon kaikissa kielissä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Juurekset punnitaan syötävinä. Paistijauheliha 9 % kypsennetään kauttaaltaan vähintään 70 °C:seen, ja koko pannun sisältö lisätään keittoon kaikissa kielissä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Juurekset punnitaan syötävinä. Paistijauheliha 9 % kypsennetään kauttaaltaan vähintään 70 °C:seen, ja koko pannun sisältö lisätään keittoon kaikissa kielissä. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Juurekset punnitaan syötävinä. Paistijauheliha 9 % kypsennetään kauttaaltaan vähintään 70 °C:seen, ja koko pannun sisältö lisätään keittoon kaikissa kielissä. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Julkaistaan vain sidotut kentät. Mustapippurin kuitu ja polyolit puuttuvat. Liemitiiviste on Finelin yleinen arvio."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Keittoperunan lajikkeen ja kypsennyksen GI-vastaavuus puuttuu. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/perinteinen-jauhelihakeitto.webp",
+    "bytes": 119712,
+    "sha256": "b65acb4d20b543a317b21191f465a4c4f378c05cd6a77cc4ff4034161d1b6aea",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/paaruoat/perinteinen-jauhelihakeitto.md",
+        "sha256": "3fb7a63ded0eafb552d0d819f76afe68443da32036b295437e55f9af54dbd9c2"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/perinteinen-jauhelihakeitto.md",
+        "sha256": "ce2e827048b9061296e0c7faf3a4725f71cd8b0117d0779ff11b82a557da0386"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/perinteinen-jauhelihakeitto.md",
+        "sha256": "d9794bd0a6586426f31949ed42986acc396696c8fbdf942a3ab77860467c06ce"
+      },
+      {
+        "path": "reseptit/paaruoat/perinteinen-jauhelihakeitto.md",
+        "sha256": "84ab7faf0d7ea9d7eac03d6fc3536f0a9d1e9ab6f7604cdba737dcf62e8cfeec"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/perinteinen-jauhelihakeitto.md",
+        "language": "en",
+        "slug": "perinteinen-jauhelihakeitto-en",
+        "sha256": "98e60d61c48907dffd6964d3fb72f480ad15be76f6cc298e3c434ef2a0708f42",
+        "semantic_sha256": "314071c2db5a56763309d63f30f8252561f2bb688a75177461fd238fb98fa756"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/perinteinen-jauhelihakeitto.md",
+        "language": "sv",
+        "slug": "perinteinen-jauhelihakeitto-sv",
+        "sha256": "0abb6a5b14a6370b19a4115af89794c4f415f6301aa9dcf2bca1f7acaa9067b2",
+        "semantic_sha256": "8376555f01445cda6827eac594585bcb6f8c3f643e7371ca445565556227c9a1"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/perinteinen-jauhelihakeitto.md",
+        "language": "th",
+        "slug": "perinteinen-jauhelihakeitto-th",
+        "sha256": "94a6cd3b232e566ac71a2a0daf9ac77b71c7fe967b86b93f6e4e7b301f2646ba",
+        "semantic_sha256": "5cb7e479a21a8a297771b0848dd324f2968d03a01b19c1328ed2eef157ee5769"
+      },
+      {
+        "path": "reseptit/paaruoat/perinteinen-jauhelihakeitto.md",
+        "language": "fi",
+        "slug": "perinteinen-jauhelihakeitto",
+        "sha256": "d3efc93169dbfe83cf7ed72a35fbfc8029f654a0bcc68d3dfdccb8e488c24f73",
+        "semantic_sha256": "b00a48fba6692a664554eefd9924467e6ccf31a924e82ee6e04eec2d0ea23c58"
+      }
+    ]
+  }
+}

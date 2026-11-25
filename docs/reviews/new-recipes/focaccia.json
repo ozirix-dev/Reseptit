@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "focaccia",
+  "source_path": "reseptit/leivonnaiset/focaccia.md",
+  "source_sha256": "0213cc91387a4fd6ea932f77d738c0082a00c0ef4857ecb89ec4355b741c2a4a",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.kingarthurbaking.com/recipes/focaccia-recipe"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/focaccia.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Oma 20 reseptin samankaltaisuusseulonta. Chat-2:n tarkastamissa viidessä heuristisessa osumassa ei ollut estettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset, niiden käyttötilat ja määrät säilyvät Chat-2:n katselmoimasta sisällöstä. Sisältää vehnää."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus ja kestot vastaavat Chat-2:n katselmoimaa sisältöä. Sama kesto on merkitty tarkistimen tunnistamana minuuttilukuna."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaturvallisuusohjeet ja allergeenit säilyvät neljällä kielellä tarkastetusta revisiosta. Kirjallinen näyttö ilman Recipavon koekeittiötestiä. Sisältää vehnää."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 8 ja ilmoitettu kokonaisaika 205 min säilyvät. Arvot tarkistettu neljällä kielellä."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Taikinan jauhojen ja hiivan vastaavuus sekä pellille ja pinnalle jäävän öljyn jako ovat avoimia. Pellille jäävää öljyä ei ole punnittu. Kaikki neljä arvoa jäävät määrittämättömiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle annosversiolle ei ole hyväksyttyä soveltuvaa GI- tai ainesosasidosta eikä kanonista GK-näyttöä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/focaccia.webp",
+    "bytes": 144854,
+    "sha256": "7e21335b9bad6cc1dfb2e07b56d95b05169b1d256da3696ec1da5df4524e26ba",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161831506",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161957227",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/leivonnaiset/focaccia.md",
+        "sha256": "4bc3d234f7a90b1547d35a3c9fb99d6a4fc42603999e60b3c5715015b3b54ed7"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/focaccia.md",
+        "sha256": "542141d45f0f8932c70a75f3ce8c67486aab1661288b554418809c0f84ef6bfe"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/focaccia.md",
+        "sha256": "64f9b981e4db5fa659b6d38b3d1f1bf5fc5527b2804b5b03d17be1e8a9147a15"
+      },
+      {
+        "path": "reseptit/leivonnaiset/focaccia.md",
+        "sha256": "99fc52873aedec310d11430c6276d9a38183dbd4907e509e1095fadb2ffd94ec"
+      }
+    ],
+    "scope": "Ennen julkaisuehdokasta katselmoitu teksti, valmistus, turvallisuus ja kuva. Ravintoratkaisujen ehdot on kirjattu erillisessä katselmoinnissa."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "4f9a3b0ed070e0432fcae0af9cb15657650b749b168947b154082180df82efec"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu. Valmistusajan ilmaisun vastaavuus varmennettu.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/focaccia.md",
+        "language": "fi",
+        "slug": "focaccia",
+        "sha256": "0213cc91387a4fd6ea932f77d738c0082a00c0ef4857ecb89ec4355b741c2a4a",
+        "semantic_sha256": "ec189f126a490d9d6abf3d7e4cb43118fa549e283f202bd986ce335456095dd5"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/focaccia.md",
+        "language": "en",
+        "slug": "focaccia-en",
+        "sha256": "ffd63823f0517ca468227490df592107349a1e882db92c2cd1b1a21e56b2d75f",
+        "semantic_sha256": "9fccea13f8c41d6c795874679ef568d8cbdeed8f2a0fbc64ff3a7c2cec9c27ea"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/focaccia.md",
+        "language": "sv",
+        "slug": "focaccia-sv",
+        "sha256": "d9e4212337cc326cb418c0170a2b52668269021f5b5946761e38baf084e44e2e",
+        "semantic_sha256": "874337c2cee22b4248fe2c1d5fc69e0905bfb0c7877d2f5600eb087cf1cafe5c"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/focaccia.md",
+        "language": "th",
+        "slug": "focaccia-th",
+        "sha256": "768f7fde95a46e3edfffaa8d37645842e391516ec3a1e53cac8cc2a50182734e",
+        "semantic_sha256": "9fc888f4eeb3c1d15a556854cec9a8f6539038c03634b2e9c19e9be87837d3b2"
+      }
+    ],
+    "final_independent_delta": "pending"
+  }
+}

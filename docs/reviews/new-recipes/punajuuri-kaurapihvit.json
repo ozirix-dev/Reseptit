@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "punajuuri-kaurapihvit",
+  "source_path": "reseptit/paaruoat/punajuuri-kaurapihvit.md",
+  "source_sha256": "5d6a359477b30c15abd2fad16cbda706ebc8bfe5850fcf73d14efa0606df7d66",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/kauraiset-kasvispihvit/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/punajuuri-kaurapihvit.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Noin 12 pientä, noin 1 cm paksua pihviä neljään annokseen. Paistetaan molemmin puolin kypsiksi. Kaura ja muna ilmoitetaan."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Noin 12 pientä, noin 1 cm paksua pihviä neljään annokseen. Paistetaan molemmin puolin kypsiksi. Kaura ja muna ilmoitetaan."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Noin 12 pientä, noin 1 cm paksua pihviä neljään annokseen. Paistetaan molemmin puolin kypsiksi. Kaura ja muna ilmoitetaan. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Noin 12 pientä, noin 1 cm paksua pihviä neljään annokseen. Paistetaan molemmin puolin kypsiksi. Kaura ja muna ilmoitetaan. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Paistorasvan toteutunut määrä ja kaurahiutaleiden polyolit puuttuvat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Paistetun pihvin kaurahiutaleita ei voi käsitellä keitetyn kaurapuuron GI:llä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/punajuuri-kaurapihvit.webp",
+    "bytes": 145760,
+    "sha256": "c78ebff4be6bcb4771240da6659cbdb5362ec7dd24ff8aeb8a24bd0f36346a84",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/paaruoat/punajuuri-kaurapihvit.md",
+        "sha256": "87880c730e4505e93638063e3a8f76f437a6e2211f0f3c0872737f5c157bfbc9"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/punajuuri-kaurapihvit.md",
+        "sha256": "3e97265690e93ddd44efc2b4f5d9a8c1144faf876bd779fa775efe65056194cd"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/punajuuri-kaurapihvit.md",
+        "sha256": "292def235f006ca6deeaf037b29e796086aa9cd39b8890b2440f459ce1b8a85c"
+      },
+      {
+        "path": "reseptit/paaruoat/punajuuri-kaurapihvit.md",
+        "sha256": "47702512e5addad35137826d1d50b277cc9770784d48d9fa28723c0b8b69d152"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/punajuuri-kaurapihvit.md",
+        "language": "en",
+        "slug": "punajuuri-kaurapihvit-en",
+        "sha256": "7d180e8dd08fe33d23397fcd25355596b06bad1653cb9c44e3b468b11f6e8479",
+        "semantic_sha256": "d4e9b481f54581f789bf2b2b7436eb583dd2b71d7a1d43bb168a5222e464c2a2"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/punajuuri-kaurapihvit.md",
+        "language": "sv",
+        "slug": "punajuuri-kaurapihvit-sv",
+        "sha256": "76698c2858b4697e55b14d8d9e0bd3da4f54a188348cd13ade894ef99d9ecfcb",
+        "semantic_sha256": "5cc18c85d66f051f8f9f856ee92c5b09f6e3227bcfd1016ea3df6c6cbc168a47"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/punajuuri-kaurapihvit.md",
+        "language": "th",
+        "slug": "punajuuri-kaurapihvit-th",
+        "sha256": "2a1403da878c492bd8884cb6a68db153d8883a35dd701b297841dbc155dbafcc",
+        "semantic_sha256": "bc853129b4f199461e34519e1ffabea9cd6c3c2f1522d817d75c6f53ac330b7f"
+      },
+      {
+        "path": "reseptit/paaruoat/punajuuri-kaurapihvit.md",
+        "language": "fi",
+        "slug": "punajuuri-kaurapihvit",
+        "sha256": "5d6a359477b30c15abd2fad16cbda706ebc8bfe5850fcf73d14efa0606df7d66",
+        "semantic_sha256": "849667e538fefe86d243c0e4e5c5f0305117d0e3c32fd7ff143fd34bd4ee7143"
+      }
+    ]
+  }
+}

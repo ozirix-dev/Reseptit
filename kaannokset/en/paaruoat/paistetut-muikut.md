@@ -1,5 +1,5 @@
 ---
-title: "Finnish Pan-Fried Vendace in Rye Crumbs"
+title: "Finnish Pan-Fried Vendace with Rye Flour and Breadcrumbs"
 recipe_id: paistetut-muikut
 url_slug: paistetut-muikut-en
 category: paaruoka
@@ -11,17 +11,22 @@ language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/paistetut-muikut.md
 translation_of: paistetut-muikut
-status: draft
+status: published
 servings: 4
 time_total_min: 30
 difficulty: "easy"
 tags:
   - "Finnish"
   - "traditional"
+image:
+  src: paaruoat/paistetut-muikut.webp
+  alt: "A plate of rye-coated, pan-fried vendace; AI illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 700
     unit: "g"
-    item: "cleaned chilled vendace"
+    item: "gutted, chilled vendace"
   - amount: 85
     unit: "g"
     item: "rye flour"
@@ -42,9 +47,9 @@ ingredients:
     item: "rapeseed oil for frying"
 ---
 
-# Finnish Pan-Fried Vendace in Rye Crumbs
+# Finnish Pan-Fried Vendace with Rye Flour and Breadcrumbs
 
-A traditional Finnish home cooking recipe.
+Vendace are coated in rye flour and breadcrumbs, then pan-fried until crisp. Serve them hot with boiled potatoes.
 
 ## Preparation
 
@@ -55,5 +60,7 @@ A traditional Finnish home cooking recipe.
 
 ## Notes
 
-- Editorial draft, not tested in a Recipavo kitchen. Image, nutrition and GK calculations, final translation and allergen checks are pending.
+- Contains fish, rye and milk. Check the breadcrumbs for wheat and other possible allergens.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/paistetut-muikut/
+
+- Reliable nutrition values could not be determined for one serving.

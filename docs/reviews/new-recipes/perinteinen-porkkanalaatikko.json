@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perinteinen-porkkanalaatikko",
+  "source_path": "reseptit/paaruoat/perinteinen-porkkanalaatikko.md",
+  "source_sha256": "e809435d742c78ed655967d5311768a4aaf0fbce5c29dadd81d454d4225027de",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/porkkanalaatikko/",
+      "https://www.k-ruoka.fi/reseptit/porkkanalaatikko-soseesta"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/perinteinen-porkkanalaatikko.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Porkkanasose ja riisipuuro yhdistetään ja kypsennetään, kunnes keskusta on hyytynyt. Muna ja maito ilmoitetaan."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Porkkanasose ja riisipuuro yhdistetään ja kypsennetään, kunnes keskusta on hyytynyt. Muna ja maito ilmoitetaan."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Porkkanasose ja riisipuuro yhdistetään ja kypsennetään, kunnes keskusta on hyytynyt. Muna ja maito ilmoitetaan. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Porkkanasose ja riisipuuro yhdistetään ja kypsennetään, kunnes keskusta on hyytynyt. Muna ja maito ilmoitetaan. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Puuroriisin polyolit ja muskottipähkinän lähdetietue puuttuvat. Keitetyn porkkanan valumahävikkiä ei määrällistetty."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Maitoon haudutetun ja sen jälkeen paistetun riisin GI-vastaavuus puuttuu. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/perinteinen-porkkanalaatikko.webp",
+    "bytes": 104084,
+    "sha256": "c849066bafc3cb4e48776f1024abe4e3c64bc526b3696b91582309672b979305",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/paaruoat/perinteinen-porkkanalaatikko.md",
+        "sha256": "919cc328b5a1a2615338ac8cba9f338137fc052d417b0c90fc762c1e564f36d4"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/perinteinen-porkkanalaatikko.md",
+        "sha256": "e49c3a3a4d480fe22850af2ffd17479f415aee0084123eb86c99069b51b26bbc"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/perinteinen-porkkanalaatikko.md",
+        "sha256": "a73d35963f5cc546123488f343c0a68f8d08fd95c6bc8708aa28d48594e9166d"
+      },
+      {
+        "path": "reseptit/paaruoat/perinteinen-porkkanalaatikko.md",
+        "sha256": "312ff037c2670e2b2b83a6f1e55b2b0b67bade7058639c6a93feb6087a178798"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/perinteinen-porkkanalaatikko.md",
+        "language": "en",
+        "slug": "perinteinen-porkkanalaatikko-en",
+        "sha256": "84c90ea94462b43a53435a31ec0cac1f5a9b9b03cbd30d62ece6434bab08d1e4",
+        "semantic_sha256": "7e4e3553c94eb0843aa40d2e2616bde44c6b8ddc48d715c84ec2e70a83f2b0f6"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/perinteinen-porkkanalaatikko.md",
+        "language": "sv",
+        "slug": "perinteinen-porkkanalaatikko-sv",
+        "sha256": "90172f42c0944ff32eddbbc8af5c88126843fc42fa4f82ea5b848ac8ce1dd599",
+        "semantic_sha256": "5923ac156b997e1a4f8046e17afc514c17dcadfe61156c5122131c36cff09c26"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/perinteinen-porkkanalaatikko.md",
+        "language": "th",
+        "slug": "perinteinen-porkkanalaatikko-th",
+        "sha256": "3015076e95b268802ae3b75cdb7928a7c30d513700a13807889a44c3775c912b",
+        "semantic_sha256": "b93edd6726b5aebbe3c584e831225a96abcfcb05eb613e8eff1ef8c6b7878f33"
+      },
+      {
+        "path": "reseptit/paaruoat/perinteinen-porkkanalaatikko.md",
+        "language": "fi",
+        "slug": "perinteinen-porkkanalaatikko",
+        "sha256": "e809435d742c78ed655967d5311768a4aaf0fbce5c29dadd81d454d4225027de",
+        "semantic_sha256": "c032a5766f9c33440749dec30963ce3f241819fc2f905529990bb5948d05b09c"
+      }
+    ]
+  }
+}

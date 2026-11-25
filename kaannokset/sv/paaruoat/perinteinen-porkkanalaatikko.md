@@ -12,13 +12,18 @@ language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-porkkanalaatikko.md
 translation_of: perinteinen-porkkanalaatikko
-status: draft
+status: published
 servings: 8
 time_total_min: 165
 difficulty: "lätt"
 tags:
   - "finsk"
   - "traditionell"
+image:
+  src: paaruoat/perinteinen-porkkanalaatikko.webp
+  alt: "Morots- och rislåda i en ljus ugnsform; AI-illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 1000
     unit: "g"
@@ -51,7 +56,7 @@ ingredients:
 
 # Traditionell finsk morotslåda med ris
 
-Ett traditionellt recept från det finska hemmaköket.
+Morotspuré och risgrynsgröt gräddas tillsammans i den här finska julrätten, som smaksätts med muskot.
 
 ## Tillagning
 
@@ -62,5 +67,7 @@ Ett traditionellt recept från det finska hemmaköket.
 
 ## Anteckningar
 
-- Redaktionellt utkast, inte provlagat av Recipavo. Bild, närings- och GK-beräkningar samt slutlig översättnings- och allergenkontroll återstår.
+- Innehåller mjölk och ägg.
 - Jämförelsekällor (olika receptvarianter): https://www.martat.fi/reseptit/porkkanalaatikko/ ja / and https://www.k-ruoka.fi/reseptit/porkkanalaatikko-soseesta
+
+- Det gick inte att fastställa tillförlitliga näringsvärden per portion.

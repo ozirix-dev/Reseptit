@@ -77,8 +77,8 @@ translation_status:
 status: published
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+protein_per_serving_g: 40.79
+fat_per_serving_g: 26.14
 ---
 
 # Paprikainen VHH-gulassi
@@ -91,4 +91,4 @@ fat_per_serving_g: null
 
 ## Muistiinpanot
 
-Punnitse yllä luetellut syötävät ainekset. Kaikki lueteltu ruoka, kastike ja paistorasva kuuluvat annoksiin; erillisiä lisukkeita ei ole laskettu. Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.
+Punnitse yllä luetellut syötävät ainekset. Kaikki lueteltu ruoka, kastike ja paistorasva kuuluvat annoksiin; erillisiä lisukkeita ei ole laskettu. Proteiini- ja rasva-arvot ovat laskennallisia arvioita. Koko annoksen hiilihydraattiarvoja ei ilmoiteta puutteellisten lähdetietojen vuoksi. Lihaliemen ja smetanan tuotekoostumus voi vaikuttaa arvioihin.

@@ -49,8 +49,8 @@ image:
   height: 1024
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+protein_per_serving_g: 13.57
+fat_per_serving_g: 33.56
 source_language: fi
 source_recipe: reseptit/paaruoat/janssoninkiusaus-juuriselleri.md
 translation_of: janssoninkiusaus-juuriselleri
@@ -67,4 +67,4 @@ translation_of: janssoninkiusaus-juuriselleri
 
 ## หมายเหตุ
 
-ชั่งส่วนที่รับประทานได้ตามรายการด้านบน แบ่งอาหาร ซอส และไขมันที่ใช้ปรุงทั้งหมดเป็นจำนวนที่กำหนด ไม่รวมเครื่องเคียงอื่น ข้อมูลโภชนาการยังไม่แสดงระหว่างตรวจสอบแหล่งข้อมูล
+ชั่งส่วนที่รับประทานได้ตามรายการด้านบน แบ่งอาหาร ซอส และไขมันที่ใช้ปรุงทั้งหมดเป็นจำนวนที่กำหนด ไม่รวมเครื่องเคียงอื่น ปริมาณโปรตีนและไขมันเป็นค่าประมาณจากการคำนวณ ไม่แสดงปริมาณคาร์โบไฮเดรตของอาหารทั้งที่เนื่องจากข้อมูลจากแหล่งอ้างอิงยังไม่ครบถ้วน
