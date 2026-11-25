@@ -35,6 +35,9 @@ function nutritionTextForBaseline(file:string, pinned:string):string {
  if (archivedReports.has(file) && !existsSync(absolute)) return nutritionTextAt(archiveMerge+'^1',file);
  const live = normalized(readFileSync(absolute,'utf8'));
  if (revisedGuides.has(file) && live === nutritionTextAt(archiveMerge,file)) return pinned;
+ // PR #988 changed the guide without changing calculation inputs. Pin its exact content.
+ if (file === 'docs/nutrition/README.md' &&
+     live === nutritionTextAt('726233725097c610b44ffad4872539341dea719b',file)) return pinned;
  return normalized(afcdSourceBeforeCorrection(file,live));
 }
 
