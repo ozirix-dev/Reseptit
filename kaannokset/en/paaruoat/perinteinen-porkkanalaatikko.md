@@ -19,6 +19,11 @@ difficulty: "easy"
 tags:
   - "Finnish"
   - "traditional"
+image:
+  src: paaruoat/perinteinen-porkkanalaatikko.webp
+  alt: "A baked carrot and rice casserole in a pale dish; AI illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 1000
     unit: "g"
@@ -62,5 +67,5 @@ A traditional Finnish home cooking recipe.
 
 ## Notes
 
-- Editorial draft, not tested in a Recipavo kitchen. Image, nutrition and GK calculations, final translation and allergen checks are pending.
+- Contains milk and egg.
 - Comparison sources (different recipe versions): https://www.martat.fi/reseptit/porkkanalaatikko/ ja / and https://www.k-ruoka.fi/reseptit/porkkanalaatikko-soseesta

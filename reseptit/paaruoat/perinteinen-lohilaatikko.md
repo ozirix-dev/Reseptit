@@ -16,6 +16,11 @@ difficulty: "helppo"
 tags:
   - "suomalainen"
   - "perinneruoka"
+image:
+  src: paaruoat/perinteinen-lohilaatikko.webp
+  alt: "Lohi-perunalaatikkoa uunivuoassa, leikkauspinnassa perunaa ja lohta; tekoälykuvitus"
+  width: 960
+  height: 640
 ingredients:
   - amount: 1000
     unit: "g"
@@ -68,5 +73,5 @@ Perinteinen suomalainen uuniruoka.
 
 ## Muistiinpanot
 
-- Toimituksellinen luonnos; ei keittiötestiä, hyväksyttyä ravintolaskelmaa tai GK-arviota eikä kuvaa. Tarkista ruoka-aineallergiat ja kieliversiot ennen julkaisua.
+- Sisältää kalaa, maitoa ja kananmunaa.
 - Valmistuksen vertailulähde / Reference: https://www.k-ruoka.fi/reseptit/lohi-perunalaatikko

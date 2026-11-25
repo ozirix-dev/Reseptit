@@ -18,6 +18,11 @@ difficulty: "ง่าย"
 tags:
   - "อาหารฟินแลนด์"
   - "อาหารพื้นบ้าน"
+image:
+  src: leivonnaiset/perinteiset-korvapuustit.webp
+  alt: "ขนมปังอบเชยแบบฟินแลนด์ เห็นลายม้วนและน้ำตาลเม็ด ภาพประกอบสร้างด้วยเอไอ"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "ml"
@@ -74,5 +79,5 @@ ingredients:
 
 ## หมายเหตุ
 
-- ฉบับร่างที่ยังไม่ได้ทดลองทำโดย Recipavo ยังไม่มีภาพ การคำนวณโภชนาการและ GK รวมถึงการตรวจภาษาและสารก่อภูมิแพ้ขั้นสุดท้าย
+- มีข้าวสาลี นม และไข่
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/korvapuustit/

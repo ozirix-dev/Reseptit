@@ -18,6 +18,11 @@ difficulty: "lätt"
 tags:
   - "finsk"
   - "traditionell"
+image:
+  src: paaruoat/paistetut-muikut.webp
+  alt: "En tallrik med rågpanerad stekt siklöja; AI-illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 700
     unit: "g"
@@ -55,5 +60,5 @@ Ett traditionellt recept från det finska hemmaköket.
 
 ## Anteckningar
 
-- Redaktionellt utkast, inte provlagat av Recipavo. Bild, närings- och GK-beräkningar samt slutlig översättnings- och allergenkontroll återstår.
+- Innehåller fisk, råg och mjölk. Kontrollera om ströbrödet innehåller vete eller andra allergener.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/paistetut-muikut/

@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "finsk"
   - "traditionell"
+image:
+  src: paaruoat/lihapullat-ruskea-kastike-perunamuusi.webp
+  alt: "En tallrik med köttbullar, brunsås och potatismos; AI-illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "g"
@@ -74,5 +79,5 @@ Detta är ett traditionellt recept ur det finska hemmaköket.
 
 ## Anteckningar
 
-- Redaktionellt utkast: ingen provlagning hos Recipavo, bild, receptspecifik näringsberäkning eller GK-godkännande. Kontrollera allergener som vete och mjölk.
+- Innehåller mjölk, ägg och vete. Kontrollera märkningen på ströbröd och eventuell buljong.
 - https://www.martat.fi/reseptit/lihapullat-haudutetut-valkosipuliperunat-ja-ruskea-kastike/

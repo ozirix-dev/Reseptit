@@ -15,6 +15,11 @@ difficulty: "helppo"
 tags:
   - "suomalainen"
   - "perinneruoka"
+image:
+  src: leivonnaiset/perinteiset-korvapuustit.webp
+  alt: "Korvapuusteja, joissa näkyy kanelikierteet ja raesokeria; tekoälykuvitus"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "ml"
@@ -79,5 +84,5 @@ Perinteinen suomalainen kotikeittiön resepti.
 
 ## Muistiinpanot
 
-- Toimituksellinen luonnos, ei Recipavon keittiössä testattu. Kuva, ravinto- ja GK-laskelma sekä lopullinen kieli- ja allergeenitarkistus puuttuvat.
+- Sisältää vehnää, maitoa ja kananmunaa.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/korvapuustit/

@@ -19,6 +19,11 @@ difficulty: "ง่าย"
 tags:
   - "อาหารฟินแลนด์"
   - "อาหารพื้นบ้าน"
+image:
+  src: paaruoat/perinteinen-porkkanalaatikko.webp
+  alt: "แครอตอบข้าวในถาดสีอ่อน ภาพประกอบสร้างด้วยเอไอ"
+  width: 960
+  height: 640
 ingredients:
   - amount: 1000
     unit: "g"
@@ -62,5 +67,5 @@ ingredients:
 
 ## หมายเหตุ
 
-- ฉบับร่างที่ยังไม่ได้ทดลองทำโดย Recipavo ยังไม่มีภาพ การคำนวณโภชนาการและ GK รวมถึงการตรวจภาษาและสารก่อภูมิแพ้ขั้นสุดท้าย
+- มีนมและไข่
 - แหล่งข้อมูลเปรียบเทียบ (เป็นสูตรคนละรูปแบบ): https://www.martat.fi/reseptit/porkkanalaatikko/ ja / and https://www.k-ruoka.fi/reseptit/porkkanalaatikko-soseesta

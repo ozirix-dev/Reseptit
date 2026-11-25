@@ -19,6 +19,11 @@ difficulty: "ง่าย"
 tags:
   - "อาหารฟินแลนด์"
   - "อาหารพื้นบ้าน"
+image:
+  src: paaruoat/perinteinen-lohilaatikko.webp
+  alt: "มันฝรั่งอบปลาแซลมอนในถาด เห็นชั้นมันฝรั่งกับปลา ภาพประกอบสร้างด้วยเอไอ"
+  width: 960
+  height: 640
 ingredients:
   - amount: 1000
     unit: "g"
@@ -63,5 +68,5 @@ ingredients:
 
 ## หมายเหตุ
 
-- ฉบับร่าง ยังไม่มีการทดลองทำ การคำนวณโภชนาการหรือ GK ที่อนุมัติ หรือภาพ ตรวจสารก่อภูมิแพ้และคำแปลก่อนเผยแพร่
+- มีปลา นม และไข่
 - Valmistuksen vertailulähde / Reference: https://www.k-ruoka.fi/reseptit/lohi-perunalaatikko

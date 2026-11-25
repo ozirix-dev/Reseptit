@@ -19,6 +19,11 @@ difficulty: "lätt"
 tags:
   - "finsk"
   - "traditionell"
+image:
+  src: paaruoat/perinteinen-lohilaatikko.webp
+  alt: "Lax- och potatislåda med synliga lager i en uppskuren bit; AI-illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 1000
     unit: "g"
@@ -63,5 +68,5 @@ En traditionell finsk ugnsrätt.
 
 ## Anteckningar
 
-- Redaktionellt utkast utan provlagning, godkänd närings- eller GK-beräkning eller bild. Kontrollera allergener och översättningar före publicering.
+- Innehåller fisk, mjölk och ägg.
 - Valmistuksen vertailulähde / Reference: https://www.k-ruoka.fi/reseptit/lohi-perunalaatikko

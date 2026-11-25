@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "อาหารฟินแลนด์"
   - "อาหารพื้นบ้าน"
+image:
+  src: paaruoat/lihapullat-ruskea-kastike-perunamuusi.webp
+  alt: "มีตบอล ซอสเกรวีสีน้ำตาล และมันฝรั่งบดบนจาน ภาพประกอบสร้างด้วยเอไอ"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "g"
@@ -74,5 +79,5 @@ ingredients:
 
 ## หมายเหตุ
 
-- ฉบับร่าง ยังไม่มีการทดลองทำโดย Recipavo ภาพอาหาร การคำนวณโภชนาการหรือการอนุมัติ GK ตรวจสารก่อภูมิแพ้รวมถึงข้าวสาลีและนม
+- มีนม ไข่ และข้าวสาลี ตรวจฉลากเกล็ดขนมปังและน้ำซุปถ้าใช้
 - https://www.martat.fi/reseptit/lihapullat-haudutetut-valkosipuliperunat-ja-ruskea-kastike/

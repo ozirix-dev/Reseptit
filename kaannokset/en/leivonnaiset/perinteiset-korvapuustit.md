@@ -18,6 +18,11 @@ difficulty: "easy"
 tags:
   - "Finnish"
   - "traditional"
+image:
+  src: leivonnaiset/perinteiset-korvapuustit.webp
+  alt: "Finnish cinnamon buns with visible swirls and pearl sugar; AI illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "ml"
@@ -74,5 +79,5 @@ A traditional Finnish home cooking recipe.
 
 ## Notes
 
-- Editorial draft, not tested in a Recipavo kitchen. Image, nutrition and GK calculations, final translation and allergen checks are pending.
+- Contains wheat, milk and egg.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/korvapuustit/

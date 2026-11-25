@@ -18,6 +18,11 @@ difficulty: "ง่าย"
 tags:
   - "อาหารฟินแลนด์"
   - "อาหารพื้นบ้าน"
+image:
+  src: paaruoat/paistetut-muikut.webp
+  alt: "ปลาซิกเลอยาทอดคลุกแป้งไรย์บนจาน ภาพประกอบสร้างด้วยเอไอ"
+  width: 960
+  height: 640
 ingredients:
   - amount: 700
     unit: "g"
@@ -55,5 +60,5 @@ ingredients:
 
 ## หมายเหตุ
 
-- ฉบับร่างที่ยังไม่ได้ทดลองทำโดย Recipavo ยังไม่มีภาพ การคำนวณโภชนาการและ GK รวมถึงการตรวจภาษาและสารก่อภูมิแพ้ขั้นสุดท้าย
+- มีปลา ข้าวไรย์ และนม ตรวจฉลากเกล็ดขนมปังว่ามีข้าวสาลีหรือสารก่อภูมิแพ้อื่นหรือไม่
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/paistetut-muikut/

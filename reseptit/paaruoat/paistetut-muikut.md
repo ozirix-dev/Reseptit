@@ -15,6 +15,11 @@ difficulty: "helppo"
 tags:
   - "suomalainen"
   - "perinneruoka"
+image:
+  src: paaruoat/paistetut-muikut.webp
+  alt: "Rukiilla leivitettyjä ja pannulla paistettuja muikkuja lautasella; tekoälykuvitus"
+  width: 960
+  height: 640
 ingredients:
   - amount: 700
     unit: "g"
@@ -60,5 +65,5 @@ Perinteinen suomalainen kotikeittiön resepti.
 
 ## Muistiinpanot
 
-- Toimituksellinen luonnos, ei Recipavon keittiössä testattu. Kuva, ravinto- ja GK-laskelma sekä lopullinen kieli- ja allergeenitarkistus puuttuvat.
+- Sisältää kalaa, ruista ja maitoa. Tarkista korppujauhoista vehnä ja mahdolliset muut allergeenit.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/paistetut-muikut/

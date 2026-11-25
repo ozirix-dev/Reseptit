@@ -18,6 +18,11 @@ difficulty: "easy"
 tags:
   - "Finnish"
   - "traditional"
+image:
+  src: paaruoat/paistetut-muikut.webp
+  alt: "A plate of rye-coated, pan-fried vendace; AI illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 700
     unit: "g"
@@ -55,5 +60,5 @@ A traditional Finnish home cooking recipe.
 
 ## Notes
 
-- Editorial draft, not tested in a Recipavo kitchen. Image, nutrition and GK calculations, final translation and allergen checks are pending.
+- Contains fish, rye and milk. Check the breadcrumbs for wheat and other possible allergens.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/paistetut-muikut/

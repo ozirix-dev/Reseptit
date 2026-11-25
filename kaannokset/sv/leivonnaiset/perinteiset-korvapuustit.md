@@ -18,6 +18,11 @@ difficulty: "lätt"
 tags:
   - "finsk"
   - "traditionell"
+image:
+  src: leivonnaiset/perinteiset-korvapuustit.webp
+  alt: "Finska kanelbullar med synliga kanelspiraler och pärlsocker; AI-illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "ml"
@@ -74,5 +79,5 @@ Ett traditionellt recept från det finska hemmaköket.
 
 ## Anteckningar
 
-- Redaktionellt utkast, inte provlagat av Recipavo. Bild, närings- och GK-beräkningar samt slutlig översättnings- och allergenkontroll återstår.
+- Innehåller vete, mjölk och ägg.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/korvapuustit/

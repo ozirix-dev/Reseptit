@@ -19,6 +19,11 @@ difficulty: "easy"
 tags:
   - "Finnish"
   - "traditional"
+image:
+  src: paaruoat/perinteinen-lohilaatikko.webp
+  alt: "A baked salmon and potato casserole with layers visible in a cut portion; AI illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 1000
     unit: "g"
@@ -63,5 +68,5 @@ A traditional Finnish oven dish.
 
 ## Notes
 
-- Editorial draft; no kitchen test, approved nutrition or GK estimate, or image yet. Check allergens and translations before publication.
+- Contains fish, milk and eggs.
 - Valmistuksen vertailulähde / Reference: https://www.k-ruoka.fi/reseptit/lohi-perunalaatikko
