@@ -285,21 +285,21 @@ test('recipe-only preparation accepts the exact pending GK registry path', () =>
   }]), /Unsupported file/);
 });
 
-test('pending GK registry changes bind only to the exact new or previously pending FI candidate', () => {
+test('pending GK registry accepts exact new FI additions but not historical rebinding', () => {
   const previous = { 'old-pending': base };
   const added = { ...previous, 'new-recipe': head };
   const newSources = new Map([['new-recipe', { sha: head, newPublication: true }]]);
   const existingSources = new Map([['old-pending', { sha: head, newPublication: false }]]);
   assert.doesNotThrow(() => validatePendingGkChanges(previous, added, newSources));
-  assert.doesNotThrow(() => validatePendingGkChanges(previous, { 'old-pending': head }, existingSources));
+  assert.throws(() => validatePendingGkChanges(previous, { 'old-pending': head }, existingSources), /rebinding requires a separate GK review/);
   assert.doesNotThrow(() => validatePendingGkChanges(previous, previous, new Map()));
-  assert.throws(() => validatePendingGkChanges(previous, added, new Map()), /outside the new or pending FI candidate/);
+  assert.throws(() => validatePendingGkChanges(previous, added, new Map()), /outside the new FI candidate/);
   assert.throws(() => validatePendingGkChanges(previous, added,
-    new Map([['new-recipe', { sha: head, newPublication: false }]])), /outside the new or pending FI candidate/);
+    new Map([['new-recipe', { sha: head, newPublication: false }]])), /outside the new FI candidate/);
   assert.throws(() => validatePendingGkChanges(previous, { ...previous, 'new-recipe': older }, newSources), /source blob does not match/);
   assert.throws(() => validatePendingGkChanges(previous, previous, existingSources), /source blob does not match/);
-  assert.throws(() => validatePendingGkChanges(previous, {}, new Map()), /removal requires a separate GK review/);
-  assert.throws(() => validatePendingGkChanges(previous, { 'old-pending': head }, new Map()), /outside the new or pending FI candidate/);
+  assert.throws(() => validatePendingGkChanges(previous, {}, new Map()), /removal or rebinding requires a separate GK review/);
+  assert.throws(() => validatePendingGkChanges(previous, { 'old-pending': head }, new Map()), /rebinding requires a separate GK review/);
   for (const invalid of [null, [], { 'new-recipe': 'invalid' }]) {
     assert.throws(() => validatePendingGkChanges(previous, invalid, newSources), /invalid pending source registry/);
   }

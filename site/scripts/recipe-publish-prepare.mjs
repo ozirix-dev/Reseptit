@@ -100,17 +100,15 @@ export function validatePendingGkChanges(previous, current, changedSources) {
     }
   }
   for (const id of Object.keys(previous)) {
-    if (!Object.hasOwn(current, id)) {
-      throw new Error('HOLD_GK_PENDING: removal requires a separate GK review: ' + id);
+    if (!Object.hasOwn(current, id) || current[id] !== previous[id]) {
+      throw new Error('HOLD_GK_PENDING: removal or rebinding requires a separate GK review: ' + id);
     }
   }
   for (const [id, sha] of Object.entries(current)) {
     const changed = changedSources.get(id);
     const added = !Object.hasOwn(previous, id);
-    if (added || previous[id] !== sha) {
-      if (!changed || (added && !changed.newPublication)) {
-        throw new Error('HOLD_GK_PENDING: registry change is outside the new or pending FI candidate: ' + id);
-      }
+    if (added && !changed?.newPublication) {
+      throw new Error('HOLD_GK_PENDING: registry addition is outside the new FI candidate: ' + id);
     }
     if (changed && changed.sha !== sha) {
       throw new Error('HOLD_GK_PENDING: source blob does not match the candidate: ' + id);
