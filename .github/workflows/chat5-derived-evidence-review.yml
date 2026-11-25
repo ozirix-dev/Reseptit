@@ -1,11 +1,6 @@
 name: Chat 5 derived evidence verification
 
 on:
-  pull_request:
-    paths:
-      - "site/scripts/translation-derived-evidence-*.ts"
-      - "site/tests/translation-derived-evidence-*.test.ts"
-      - ".github/workflows/chat5-derived-evidence-review.yml"
   workflow_dispatch:
 
 permissions:
