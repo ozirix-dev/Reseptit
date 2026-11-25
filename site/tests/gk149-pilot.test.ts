@@ -3,7 +3,7 @@ import {isP1CoconutHold,assertP1CoconutHold,assertOnlyP1CoconutInputChanges} fro
 import {assertRecipeBaseline,isReviewedF25NutritionTransition} from "./assert-recipe-baseline";
 import test from 'node:test';import assert from 'node:assert/strict';
 import {existsSync,readFileSync} from 'node:fs';import {execFileSync} from 'node:child_process';import {fileURLToPath} from 'node:url';import path from 'node:path';
-import {ACTIVATION,loadPilot,evaluate,summarize,formatResult,digest,verifyCase,verifyComposition,type Case,type Result} from '../scripts/gk149-model';
+import {ACTIVATION,loadPilot,evaluate,summarize,formatResult,digest,textHash,verifyCase,verifyComposition,type Case,type Result} from '../scripts/gk149-model';
 import {MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G,CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G} from '../scripts/glycemic-load-model';
 const root=fileURLToPath(new URL('../../',import.meta.url)),folder='docs/nutrition/gk80-operation149/';
 const json=(p:string)=>JSON.parse(readFileSync(path.join(root,p),'utf8'));
@@ -38,6 +38,13 @@ function nutritionTextForBaseline(file:string, pinned:string):string {
  // PR #988 changed the guide without changing calculation inputs. Pin its exact content.
  if (file === 'docs/nutrition/README.md' &&
      live === nutritionTextAt('726233725097c610b44ffad4872539341dea719b',file)) return pinned;
+ // GK-005 added reviewed partial protein/fat evidence to this batch.
+ // Keep the original Operation149 input pinned and reject any other successor.
+ if (file === 'docs/nutrition/batches/batch-142.json') {
+  assert.equal(textHash(live),'54bc590b187f02dc36adfb3844b44434502fbfa46547edf142e09c3674886773',file+': unreviewed GK-005 batch');
+  assert.equal(textHash(pinned),'ad0d7d4d7b698304ca9df011edf387bfb7629908999244cb081e20182a5cce88',file+': historic batch changed');
+  return pinned;
+ }
  return normalized(afcdSourceBeforeCorrection(file,live));
 }
 
