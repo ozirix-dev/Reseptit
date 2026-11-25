@@ -297,6 +297,10 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false,
   if (plan.runTranslationReview) {
     for (const test of translationTests) plan.unitTests.delete(test);
   }
+  // The model entry point imports the binding tests even in the focused suite.
+  if (plan.runNutrition || plan.unitTests.has("tests/nutrition-model.test.ts")) {
+    plan.unitTests.delete("tests/nutrition-model-binding.test.ts");
+  }
   if (plan.runNutrition) for (const test of nutritionTests) plan.unitTests.delete(test);
   if (plan.runGlycemic) for (const test of glycemicTests) plan.unitTests.delete(test);
   plan.unitTests = [...plan.unitTests].sort();

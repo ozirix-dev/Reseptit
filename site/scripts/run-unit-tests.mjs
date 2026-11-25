@@ -22,16 +22,26 @@ const dedicatedTests = new Set([
   "tests/translations.test.ts",
 ]);
 
-const tests = ["scripts", "tests"].flatMap(directory =>
-  readdirSync(path.join(site, directory), { recursive: true, withFileTypes: true })
-    .filter(entry => entry.isFile() && entry.name.endsWith(".test.ts") && !entry.name.endsWith(".browser.test.ts"))
-    .map(entry => path.relative(site, path.join(entry.parentPath, entry.name)).replaceAll(path.sep, "/")),
-).filter(file => !dedicatedTests.has(file)).sort();
+export function selectUnitTests(files) {
+  const selected = files.filter(file => !dedicatedTests.has(file));
+  // The nutrition-model entry point imports and executes the binding tests.
+  // Retain the standalone entry if the parent is absent.
+  return selected.filter(file => file !== "tests/nutrition-model-binding.test.ts" ||
+    !selected.includes("tests/nutrition-model.test.ts")).sort();
+}
 
-if (tests.length === 0) throw new Error("No unit tests found.");
-const result = spawnSync(process.execPath, [require.resolve("tsx/cli"), "--test", ...tests], {
-  cwd: site,
-  stdio: "inherit",
-});
-if (result.error) throw result.error;
-process.exitCode = result.status ?? 1;
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  const tests = selectUnitTests(["scripts", "tests"].flatMap(directory =>
+    readdirSync(path.join(site, directory), { recursive: true, withFileTypes: true })
+      .filter(entry => entry.isFile() && entry.name.endsWith(".test.ts") && !entry.name.endsWith(".browser.test.ts"))
+      .map(entry => path.relative(site, path.join(entry.parentPath, entry.name)).replaceAll(path.sep, "/")),
+  ));
+
+  if (tests.length === 0) throw new Error("No unit tests found.");
+  const result = spawnSync(process.execPath, [require.resolve("tsx/cli"), "--test", ...tests], {
+    cwd: site,
+    stdio: "inherit",
+  });
+  if (result.error) throw result.error;
+  process.exitCode = result.status ?? 1;
+}

@@ -6,6 +6,7 @@ import {fileURLToPath} from 'node:url';
 import assert from "node:assert/strict";
 import test from "node:test";
 import { applyEventPolicy, classifyPaths, shouldRunFiEditorialAudit } from "./select-ci-checks.mjs";
+import { selectUnitTests } from "./run-unit-tests.mjs";
 
 test("FI editorial audit detects recipe and projection changes without touching other chats' work", () => {
   for (const file of [
@@ -207,6 +208,32 @@ test("deduplicate only the files run by scheduled dedicated npm suites", () => {
   assert.equal(mixed.runGlycemic, false);
   assert.deepEqual(mixed.unitTests, [...nutrition, ...glycemic, unitOnly].sort());
   assert.deepEqual(classifyPaths(testPaths, { forceFull: true }).unitTests, ["*"]);
+});
+
+test("nutrition model binding tests execute exactly once without losing standalone coverage", () => {
+  const binding = "tests/nutrition-model-binding.test.ts";
+  const model = "tests/nutrition-model.test.ts";
+  const unrelated = "tests/recipe-schema.test.ts";
+  const raw = readFileSync(new URL("../" + model, import.meta.url), "utf8");
+  assert.match(raw, /^import ['"]\.\/nutrition-model-binding\.test['"];?$/m,
+    "the model must still import its binding regressions");
+  const selected = selectUnitTests([binding, model, unrelated, "tests/navigation.test.ts"]);
+  assert.deepEqual(selected, [model, unrelated]);
+  assert.deepEqual(selectUnitTests([binding, unrelated]), [binding, unrelated]);
+
+  for (const event of ["pull_request", "push", "workflow_dispatch"]) {
+    const direct = applyEventPolicy(classifyPaths(["site/" + binding]), event);
+    assert.deepEqual(direct.unitTests, [binding]);
+    const both = applyEventPolicy(classifyPaths(["site/" + binding, "site/" + model, "site/" + unrelated]), event);
+    assert.deepEqual(both.unitTests, [model, unrelated]);
+    const dedicated = applyEventPolicy(classifyPaths([
+      "site/" + binding, "site/" + model, "site/" + unrelated, "site/scripts/nutrition-model.ts",
+    ]), event);
+    assert.equal(dedicated.runNutrition, true);
+    assert.deepEqual(dedicated.unitTests, [unrelated]);
+  }
+  const full = classifyPaths(["site/" + binding], { forceFull: true });
+  assert.deepEqual(full.unitTests, ["*"]);
 });
 
 test("PR and main push build and validate recipe content without unrelated full regression suites", () => {
