@@ -35,7 +35,7 @@ fat_per_serving_g: 6.04
 ingredients:
   - amount: 200
     unit: "g"
-    item: "laktoositonta kermaviiliä, rasvaa 10–12 %"
+    item: "vähälaktoosista kermaviiliä, rasvaa 10–12 %"
   - amount: 20
     unit: "g"
     item: "tuoretta tilliä hienonnettuna"
@@ -70,4 +70,4 @@ Kylmä, raikas tillikastike uunilohelle, paistetulle kalalle ja uusille perunoil
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.valio.fi/reseptit/tillikastike-kalalle/
 - Sisältää **maitoa** (kermaviili). Tarjoa kylmänä ja säilytä peitettynä jääkaapissa.
 - Käytä kylmää kermaviiliä, puhtaita välineitä ja pestyä tilliä. Säilytä sekoitettu kastike peitettynä jääkaapissa alle +6 °C:ssa; nosta pöytään vasta tarjottaessa ja tarjoa vain pieni erä kerrallaan.
-- Ravintolaskennan pohjaksi on yksilöity Finelin laktoositon kermaviili, rasvaa 10–12 % (Fineli #11152). Kermaviilin todelliset ravintoarvot vaihtelevat tuotemerkin mukaan. Sitruunamehu punnitaan 12 gramman määränä; 12 ml:n tiheyttä ei ole oletettu. Maitoallergeeni säilyy.
+- Ravintolaskennan pohjaksi on yksilöity Finelin vähälaktoosinen kermaviili, rasvaa 10–12 % (Fineli #11152). Kermaviilin todelliset ravintoarvot vaihtelevat tuotemerkin mukaan. Sitruunamehu punnitaan 12 gramman määränä; 12 ml:n tiheyttä ei ole oletettu. Maitoallergeeni säilyy.

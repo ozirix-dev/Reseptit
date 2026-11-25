@@ -78,7 +78,9 @@
     "reviewer": "Kokki-Codex",
     "reviewed_at": "2026-11-25",
     "scope": "FI–EN/SV/TH. Vertailtu ainesosat ja määrät, käyttötila, valmistusvaiheet, lämpötilat ja ajat, allergeenit, säilytys, ravintokentät ja kuvan kuvaus.",
-    "findings": []
+    "findings": [
+      "Poistettu vanhentunut kuvavaihtoa koskeva TH-muistiinpano. Tekoälykuvituksen ilmoitus säilyy."
+    ]
   },
   "proposed_publication": {
     "review_state": "PENDING_INDEPENDENT_REVIEW",
@@ -108,12 +110,20 @@
         "path": "kaannokset/th/jalkiruoat/perinteinen-vaniljakastike.md",
         "language": "th",
         "slug": "perinteinen-vaniljakastike-th",
-        "sha256": "01478961f3763e8a20d8fab9422815101e6b13f78fcfb9e70b371cd71bc1947b",
-        "semantic_sha256": "9b7e7d1d08e6a5240165075c543a667e7a0d3672e40d9132201c74b41f7625f4"
+        "sha256": "07fafa8ecefb8f74034db86646c7a9662de4ac4e74f9d20960650b9554eb503d",
+        "semantic_sha256": "7d647c730ddc008c0c2e04364a69440a5e1b65ecb2499d652634061b3b7e2ea3"
       }
     ],
     "nutrition_sha256": "fad0b39f7b44276320147a6b37b2d4b440666f1addb54283da450f239909bb47",
     "batch_id": "batch-33308",
     "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat."
+  },
+  "independent_review": {
+    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+    "decision": "hold",
+    "corrections_pending_review": [
+      "Poistettu vanhentunut kuvavaihtoa koskeva TH-muistiinpano. Tekoälykuvituksen ilmoitus säilyy."
+    ]
   }
 }

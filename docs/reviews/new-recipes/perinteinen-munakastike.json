@@ -3,9 +3,9 @@
   "recipe_id": "perinteinen-munakastike",
   "source_path": "reseptit/alkuruoat/perinteinen-munakastike.md",
   "source_sha256": "4e7e23ef9738e515f7cfede100c115d4d41d5c70135089efb3d02242bc5fb7f9",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu kirjallinen aines- ja menetelmäkatselmointi; julkaisuhyväksyntä avoin",
-  "reviewed_at": "2026-11-21",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -35,8 +35,8 @@
       "notes": "Marttojen 4 annos: valmiiksi keitetyt munat; Recipavon 4 annosta / 20 min sisältää saman lähtötilan. Jos munat keitetään itse, ohje varaa lisäaikaa. Saanto edelleen arvio."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Kanoninen laskenta tarkistettu. Kaikki neljä annosarviota toistuvat lähtöaineiston Fineli- ja AFCD-riveiltä. Riippumaton julkaisukatselmointi odottaa."
+      "status": "pass",
+      "notes": "Kanoninen laskenta tarkistettu. Kaikki neljä annosarviota toistuvat lähtöaineiston Fineli- ja AFCD-riveiltä. Chat-2 varmisti tämän ravintopäätöksen katselmoidulle versiolle."
     },
     "glycemic": {
       "status": "unavailable",
@@ -49,7 +49,7 @@
     ],
     "image_path": "kuvat/alkuruoat/perinteinen-munakastike.webp",
     "image_sha256": "fca180045177530f88bacfaf254e2f0716de7c604ea67b777014775256a8ea97",
-    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "image_review": "Kuvan ruokalajivastaavuus hyväksytty Chat-2:n katselmoinnissa. Kokki-Codex varmisti kuvan tavut ja dekoodauksen.",
     "physical_cook_test": false
   },
   "glycemic_evidence": {
@@ -79,7 +79,7 @@
     "findings": []
   },
   "proposed_publication": {
-    "review_state": "PENDING_INDEPENDENT_REVIEW",
+    "review_state": "APPROVED",
     "recipe_markdown": [
       {
         "path": "reseptit/alkuruoat/perinteinen-munakastike.md",
@@ -112,6 +112,13 @@
     ],
     "nutrition_sha256": "d46fdaccd71a9863206c5166b646617f89e5dabfc1b8fefb76cdf39f9e15a9c3",
     "batch_id": "batch-33308",
-    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat."
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+  "independent_review": {
+    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+    "decision": "pass"
   }
 }

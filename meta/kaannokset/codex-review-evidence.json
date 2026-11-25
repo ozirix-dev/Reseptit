@@ -13416,28 +13416,46 @@
     "findings": []
   },
   "kermainen-tillikastike:en": {
-    "source_hash": "77fc8fa2a90f4b3ec5cf3765eee321cbeffe3c7d126884bb1f333eb38d375acb",
-    "translation_hash": "17e347db5f94ab802256d139804c5d17a674145f4e4b13af2621dab735d625fb",
+    "source_hash": "0a8286478c9b7891cdbd7107c5faf47dbb935f7468bf6fb947e2c9a546728413",
+    "translation_hash": "1ae07e9b935b3c0204c917dc03328a1585f5ce72505a59229f7ee42ca2a37a86",
     "reviewed_at": "2026-11-25",
     "reference": "docs/reviews/new-recipes/kermainen-tillikastike.json",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Fineli #11152:n kermaviili korjattu vähälaktoosiseksi (VL) kaikilla neljällä kielellä ja laskentatodisteessa. Sitruunamehun todistettu annostus on 12 g. Neljä annosarviota säilyvät."
+      }
+    ]
   },
   "kermainen-tillikastike:sv": {
-    "source_hash": "77fc8fa2a90f4b3ec5cf3765eee321cbeffe3c7d126884bb1f333eb38d375acb",
-    "translation_hash": "6ad0662b5053919dfaeef4a4684695b066509c6634d61bc977a747db6981eb49",
+    "source_hash": "0a8286478c9b7891cdbd7107c5faf47dbb935f7468bf6fb947e2c9a546728413",
+    "translation_hash": "075e5295fa34f9bf2f4af668c017b802bd11b69e6b3dac5c25066a0d6bcf014d",
     "reviewed_at": "2026-11-25",
     "reference": "docs/reviews/new-recipes/kermainen-tillikastike.json",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Fineli #11152:n kermaviili korjattu vähälaktoosiseksi (VL) kaikilla neljällä kielellä ja laskentatodisteessa. Sitruunamehun todistettu annostus on 12 g. Neljä annosarviota säilyvät."
+      }
+    ]
   },
   "kermainen-tillikastike:th": {
-    "source_hash": "77fc8fa2a90f4b3ec5cf3765eee321cbeffe3c7d126884bb1f333eb38d375acb",
-    "translation_hash": "644240145ca0def42129419dd04d09f82852f194e3fa886029a02f5d36c5bd7e",
+    "source_hash": "0a8286478c9b7891cdbd7107c5faf47dbb935f7468bf6fb947e2c9a546728413",
+    "translation_hash": "099d5ad559d0f50aaaa7c1caafd21b6b13e687d615be1f09c58b2adc1306709a",
     "reviewed_at": "2026-11-25",
     "reference": "docs/reviews/new-recipes/kermainen-tillikastike.json",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Fineli #11152:n kermaviili korjattu vähälaktoosiseksi (VL) kaikilla neljällä kielellä ja laskentatodisteessa. Sitruunamehun todistettu annostus on 12 g. Neljä annosarviota säilyvät."
+      }
+    ]
   },
   "kantarellikastike:en": {
     "source_hash": "335cdbc0252251b45c40906e640cb31169dd1180f442069e4b5f6a8dbc7f509d",
@@ -13545,7 +13563,7 @@
   },
   "kermainen-pippurikastike:sv": {
     "source_hash": "b9cd306d9830f1c6d39f85c727d88cd084a6b4a365db6209c79c491e33c6c4a1",
-    "translation_hash": "a9cd513e6f02ac58f724ee3275c367b5090934bef10545de8df812b431271238",
+    "translation_hash": "f78f5bb535d502f528ddc30e4824cf98a73add9eda6e3c08d9fc6c2d4193cc51",
     "reviewed_at": "2026-11-25",
     "reference": "docs/reviews/new-recipes/kermainen-pippurikastike.json",
     "outcome": "pass",
@@ -13554,16 +13572,27 @@
         "severity": "P3",
         "status": "fixed",
         "summary": "Sekoitusohje täsmennetty vastaamaan FI:n ajoittaista sekoittamista."
+      },
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Poistettu kuvan versionhallintaa koskeva teksti SV- ja TH-sivuilta. Kuvakoristeiden rajaus säilyy."
       }
     ]
   },
   "kermainen-pippurikastike:th": {
     "source_hash": "b9cd306d9830f1c6d39f85c727d88cd084a6b4a365db6209c79c491e33c6c4a1",
-    "translation_hash": "ac1793ad764c9b98b997328d1aa32275cb30095282a29d1e7d22f5ab2053d37a",
+    "translation_hash": "9937b3a66a019911df35d1e1811344fcdbdc6f332a6f04d6595797a12dc34ff8",
     "reviewed_at": "2026-11-25",
     "reference": "docs/reviews/new-recipes/kermainen-pippurikastike.json",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Poistettu kuvan versionhallintaa koskeva teksti SV- ja TH-sivuilta. Kuvakoristeiden rajaus säilyy."
+      }
+    ]
   },
   "perinteinen-valkokastike:en": {
     "source_hash": "ecd72c586a74d8df05d5062b86a083f305c16c2a63541fe8fa9230bec12b47cf",
@@ -13631,10 +13660,16 @@
   },
   "perinteinen-vaniljakastike:th": {
     "source_hash": "88d30d4a46e4be656f99275e470a54b762cb8a0b960ff3ba9920d06d670dfc91",
-    "translation_hash": "9b7e7d1d08e6a5240165075c543a667e7a0d3672e40d9132201c74b41f7625f4",
+    "translation_hash": "7d647c730ddc008c0c2e04364a69440a5e1b65ecb2499d652634061b3b7e2ea3",
     "reviewed_at": "2026-11-25",
     "reference": "docs/reviews/new-recipes/perinteinen-vaniljakastike.json",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "fixed",
+        "summary": "Poistettu vanhentunut kuvavaihtoa koskeva TH-muistiinpano. Tekoälykuvituksen ilmoitus säilyy."
+      }
+    ]
   }
 }

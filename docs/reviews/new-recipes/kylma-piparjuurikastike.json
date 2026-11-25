@@ -3,9 +3,9 @@
   "recipe_id": "kylma-piparjuurikastike",
   "source_path": "reseptit/alkuruoat/kylma-piparjuurikastike.md",
   "source_sha256": "f0a40277eca8531459f0a313807039044b3c86267334a9703ac7bc43b4196002",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; kokonaisjulkaisun hyväksyntä puuttuu",
-  "reviewed_at": "2026-11-21",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -36,8 +36,8 @@
       "notes": "Neljän pienen lisukeannoksen noin 20 min perustuu noin 5 min valmisteluun ja 15 min maustumiseen jääkaapissa. Valion sekoitusreseptin aktiivinen aika on 5 min; ero on erikseen mainittu. Tarkka vahvuus vaihtelee piparjuuren mukaan."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Kanoninen laskenta tarkistettu. 12-prosenttisen crème fraîchen merkinnästä puuttuvat kuitu ja polyolit. Proteiini ja rasva kattavat kaikki ainekset."
+      "status": "pass",
+      "notes": "Kanoninen laskenta tarkistettu. 12-prosenttisen crème fraîchen merkinnästä puuttuvat kuitu ja polyolit. Proteiini ja rasva kattavat kaikki ainekset. Chat-2 varmisti tämän ravintopäätöksen katselmoidulle versiolle."
     },
     "glycemic": {
       "status": "unavailable",
@@ -50,7 +50,7 @@
     ],
     "image_path": "kuvat/alkuruoat/kylma-piparjuurikastike.webp",
     "image_sha256": "843ae30ce36f68b36fcf82a07305cafcf62fb0656e2eac5d3fb860f6d6298909",
-    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "image_review": "Kuvan ruokalajivastaavuus hyväksytty Chat-2:n katselmoinnissa. Kokki-Codex varmisti kuvan tavut ja dekoodauksen.",
     "physical_cook_test": false
   },
   "glycemic_evidence": {
@@ -80,7 +80,7 @@
     "findings": []
   },
   "proposed_publication": {
-    "review_state": "PENDING_INDEPENDENT_REVIEW",
+    "review_state": "APPROVED",
     "recipe_markdown": [
       {
         "path": "reseptit/alkuruoat/kylma-piparjuurikastike.md",
@@ -113,6 +113,13 @@
     ],
     "nutrition_sha256": "755f66ef34901d24f419f9ad0c55f24f633e2f6b86a91909ad592edbadc423e4",
     "batch_id": "batch-33308",
-    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat."
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+  "independent_review": {
+    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+    "decision": "pass"
   }
 }

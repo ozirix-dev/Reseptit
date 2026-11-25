@@ -62,7 +62,7 @@ En fyllig pepparsås till biff, fläskfilé och potatistillbehör.
 - Illustrationen är AI-genererad. Protein och fett är uppskattade värden per portion. Kolhydratvärden saknas. Den glykemiska belastningen kunde inte fastställas.
 - Preparation reference: https://www.k-ruoka.fi/reseptit/naudan-pihvi-ja-pippurikastike
 
-- Den AI-genererade illustrationsbilden är nu versionshanterad. Dekorationer på bilden ingår inte i receptmängderna.
+- Dekorationer på bilden ingår inte i receptmängderna.
 - Ytterligare jämförelsekälla: Valios pepparsås med schalottenlök, buljong, grädde och senap. Recipavos version använder varken konjak eller pepparostgrädde. https://www.valio.fi/reseptit/konjakki-pippurikastike-pihveille/
 - Innehåller **mjölk och senap**. Köttbuljong kan innehålla selleri; kontrollera märkningen på buljong och senap.
 - Servera pepparsåsen varm. Kyl rester snabbt i ett grunt kärl och förvara under +6 °C. Kontrollera köttbuljongens exakta innehåll med avseende på selleri och andra allergener; såsen innehåller mjölk och senap.

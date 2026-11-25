@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "kermainen-tillikastike",
   "source_path": "reseptit/alkuruoat/kermainen-tillikastike.md",
-  "source_sha256": "e9c48002cbd9b74831b6e060728289e437d7c0350f048a704c5f91cf35e882cd",
+  "source_sha256": "dea3ef01bb6bc3ae6f8b12fbaefe8dae0a370375372b11506d36381f95fbff45",
   "decision": "hold",
   "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
   "reviewed_at": "2026-11-21",
@@ -20,7 +20,7 @@
     },
     "ingredients": {
       "status": "pass",
-      "notes": "Tarkistettu: kermaviili 200 g, tilli 20 g, sitruunamehu 12 ml, sokeri 3 g, suola 2 g ja mustapippuri 0,5 g. Valion vertailussa kermaviili 200 g, noin 1 dl hienonnettua tilliä, sitruunamehua ja mausteet. Sokeri ja ilmoitetut punnitut mausteet ovat Recipavon omia määriä. Tuotekohtainen ravintokoostumuksen ja pakkausmerkintöjen tarkistus on erillinen nutrition-/food_safety-portti. Laskentaa varten kermaviili täsmennetty laktoosittomaksi 10–12 %:n tuotteeksi ja sitruunamehu mitataan 12 gramman massana. Tuotevaihdot voivat muuttaa ravintosisältöä."
+      "notes": "Tarkistettu: kermaviili 200 g, tilli 20 g, sitruunamehu 12 g, sokeri 3 g, suola 2 g ja mustapippuri 0,5 g. Valion vertailussa kermaviili 200 g, noin 1 dl hienonnettua tilliä, sitruunamehua ja mausteet. Sokeri ja ilmoitetut punnitut mausteet ovat Recipavon omia määriä. Tuotekohtainen ravintokoostumuksen ja pakkausmerkintöjen tarkistus on erillinen nutrition-/food_safety-portti. Laskentaa varten kermaviili täsmennetty vähälaktoosiseksi 10–12 %:n tuotteeksi ja sitruunamehu mitataan 12 gramman massana. Tuotevaihdot voivat muuttaa ravintosisältöä."
     },
     "method": {
       "status": "pass",
@@ -76,7 +76,9 @@
     "reviewer": "Kokki-Codex",
     "reviewed_at": "2026-11-25",
     "scope": "FI–EN/SV/TH. Vertailtu ainesosat ja määrät, käyttötila, valmistusvaiheet, lämpötilat ja ajat, allergeenit, säilytys, ravintokentät ja kuvan kuvaus.",
-    "findings": []
+    "findings": [
+      "Fineli #11152:n kermaviili korjattu vähälaktoosiseksi (VL) kaikilla neljällä kielellä ja laskentatodisteessa. Sitruunamehun todistettu annostus on 12 g. Neljä annosarviota säilyvät."
+    ]
   },
   "proposed_publication": {
     "review_state": "PENDING_INDEPENDENT_REVIEW",
@@ -85,33 +87,41 @@
         "path": "reseptit/alkuruoat/kermainen-tillikastike.md",
         "language": "fi",
         "slug": "kermainen-tillikastike",
-        "sha256": "e9c48002cbd9b74831b6e060728289e437d7c0350f048a704c5f91cf35e882cd",
-        "semantic_sha256": "77fc8fa2a90f4b3ec5cf3765eee321cbeffe3c7d126884bb1f333eb38d375acb"
+        "sha256": "dea3ef01bb6bc3ae6f8b12fbaefe8dae0a370375372b11506d36381f95fbff45",
+        "semantic_sha256": "0a8286478c9b7891cdbd7107c5faf47dbb935f7468bf6fb947e2c9a546728413"
       },
       {
         "path": "kaannokset/en/alkuruoat/kermainen-tillikastike.md",
         "language": "en",
         "slug": "kermainen-tillikastike-en",
-        "sha256": "d8e763515b252b8b1bf9ccb79d60e6aa2d5a28609a5db84aafbc14cfe8b80207",
-        "semantic_sha256": "17e347db5f94ab802256d139804c5d17a674145f4e4b13af2621dab735d625fb"
+        "sha256": "4e26f0a4c89f3ef2412442b016fc1be06b9574ce1e1e2fe61d14b3d4bf72bfd6",
+        "semantic_sha256": "1ae07e9b935b3c0204c917dc03328a1585f5ce72505a59229f7ee42ca2a37a86"
       },
       {
         "path": "kaannokset/sv/alkuruoat/kermainen-tillikastike.md",
         "language": "sv",
         "slug": "kermainen-tillikastike-sv",
-        "sha256": "06948cd48a4fc3bb5fc90c5ec9b51bad4ff0110a9b6698a564e14587044439b3",
-        "semantic_sha256": "6ad0662b5053919dfaeef4a4684695b066509c6634d61bc977a747db6981eb49"
+        "sha256": "a3ba5b4eb1154fa81960999741ca0e80c27656cefc8ffa8ce79c6ee6ddd7200f",
+        "semantic_sha256": "075e5295fa34f9bf2f4af668c017b802bd11b69e6b3dac5c25066a0d6bcf014d"
       },
       {
         "path": "kaannokset/th/alkuruoat/kermainen-tillikastike.md",
         "language": "th",
         "slug": "kermainen-tillikastike-th",
-        "sha256": "82d19b13f7480a16376c366e26934e3c1ff94ef939ff6ed3ba7b7b9fe693c91d",
-        "semantic_sha256": "644240145ca0def42129419dd04d09f82852f194e3fa886029a02f5d36c5bd7e"
+        "sha256": "84edc525840f3c0733d0fe83376a65578c7b418bb4b1686cad5ddbcfd0aa22fd",
+        "semantic_sha256": "099d5ad559d0f50aaaa7c1caafd21b6b13e687d615be1f09c58b2adc1306709a"
       }
     ],
-    "nutrition_sha256": "0f9fe859067f67a824bfd2b2c2dd61137bdf7d2ddec87e1691ea6e31bcdd9c0c",
+    "nutrition_sha256": "125e247db4851cc3ffddf0e181910ca907dccdbeb241737fbb09505f28fcd087",
     "batch_id": "batch-33308",
     "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat."
+  },
+  "independent_review": {
+    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+    "decision": "hold",
+    "corrections_pending_review": [
+      "Fineli #11152:n kermaviili korjattu vähälaktoosiseksi (VL) kaikilla neljällä kielellä ja laskentatodisteessa. Sitruunamehun todistettu annostus on 12 g. Neljä annosarviota säilyvät."
+    ]
   }
 }

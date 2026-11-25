@@ -30,7 +30,7 @@ fat_per_serving_g: 6.04
 ingredients:
   - amount: 200
     unit: "g"
-    item: "lactose-free cultured sour cream, 10–12% fat"
+    item: "low-lactose cultured sour cream, 10–12% fat"
   - amount: 20
     unit: "g"
     item: "finely chopped fresh dill"
@@ -65,4 +65,4 @@ A cool, fresh dill sauce for baked fish, fried fish and new potatoes.
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/tillikastike-kalalle/
 - Contains **milk** (cultured sour cream). Serve chilled and keep covered in the refrigerator.
 - Use chilled cultured sour cream, clean utensils and rinsed dill. Refrigerate the mixed sauce covered below +6°C; take it out only when serving and offer small batches.
-- The nutrition input uses the Fineli lactose-free 10–12% cultured sour cream reference (Fineli #11152). Actual values vary by brand. Weigh 12 g of lemon juice rather than estimating the mass of 12 ml. The milk allergen remains.
+- The nutrition input uses the Fineli low-lactose 10–12% cultured sour cream reference (Fineli #11152). Actual values vary by brand. Weigh 12 g of lemon juice rather than estimating the mass of 12 ml. The milk allergen remains.

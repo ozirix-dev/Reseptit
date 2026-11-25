@@ -3,9 +3,9 @@
   "recipe_id": "perinteinen-valkokastike",
   "source_path": "reseptit/alkuruoat/perinteinen-valkokastike.md",
   "source_sha256": "f0586d37edf8c7acee621b38754a20a8c596e4cf0f2f53eaf78c277709419f75",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
-  "reviewed_at": "2026-11-21",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -35,8 +35,8 @@
       "notes": "Recipavo 6 pientä kastikeannosta / 15 min; Valion aktiivinen valmistus 10 min. Eri annosjaon vuoksi tarkka tarjottava saanto on edelleen arvio, mutta aika ja työjärjestys ovat perusteltuja."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Kanoninen laskenta tarkistettu. Kaikki neljä annosarviota toistuvat lähtöaineiston Fineli- ja AFCD-riveiltä. Riippumaton julkaisukatselmointi odottaa."
+      "status": "pass",
+      "notes": "Kanoninen laskenta tarkistettu. Kaikki neljä annosarviota toistuvat lähtöaineiston Fineli- ja AFCD-riveiltä. Chat-2 varmisti tämän ravintopäätöksen katselmoidulle versiolle."
     },
     "glycemic": {
       "status": "unavailable",
@@ -49,7 +49,7 @@
     ],
     "image_path": "kuvat/alkuruoat/perinteinen-valkokastike.webp",
     "image_sha256": "792ebe46aebc4ea49ce7865edc7a7502e73e2882c518fb75b10ed430c35d1b58",
-    "image_review": "Chat 3 22.11.2026: aiempi 6 942 B:n WebP korvattu samalla kuvatiedoston polulla uudelleen laadukkaammaksi pakatulla 960x640 AI-havainnekuvalla (43 930 B; SHA-256 792ebe46aebc4ea49ce7865edc7a7502e73e2882c518fb75b10ed430c35d1b58). Tarkka WebP Git-blob 28e55cac5e014c683dd0f3c8f29fa4436271258d on yhtäpitävä varmennetun lähdetiedoston kanssa. Suora kuva-arvio: sileä vaalea maitokastike ilman reseptiin kuulumattomia yrttejä; aikaisempi pikselöitymiseste poistettu. PRELIMINARY_VISUAL_QUALITY_OK; ei laboratoriokuva, eikä lopullinen ImageAssets/riippumaton julkaisu-/lisenssihyväksyntä. Päätös pysyy hold, status draft.",
+    "image_review": "Kuvan ruokalajivastaavuus hyväksytty Chat-2:n katselmoinnissa. Kokki-Codex varmisti kuvan tavut ja dekoodauksen.",
     "physical_cook_test": false
   },
   "glycemic_evidence": {
@@ -81,7 +81,7 @@
     ]
   },
   "proposed_publication": {
-    "review_state": "PENDING_INDEPENDENT_REVIEW",
+    "review_state": "APPROVED",
     "recipe_markdown": [
       {
         "path": "reseptit/alkuruoat/perinteinen-valkokastike.md",
@@ -114,6 +114,13 @@
     ],
     "nutrition_sha256": "54ddd3c5f3e87010fcf6090ee888d150d33c2a1c942e1c108f1e715bd7e7243d",
     "batch_id": "batch-33308",
-    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat."
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+  "independent_review": {
+    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+    "decision": "pass"
   }
 }

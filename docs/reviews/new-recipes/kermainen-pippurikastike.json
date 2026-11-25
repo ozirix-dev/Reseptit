@@ -82,7 +82,8 @@
     "reviewed_at": "2026-11-25",
     "scope": "FI–EN/SV/TH. Vertailtu ainesosat ja määrät, käyttötila, valmistusvaiheet, lämpötilat ja ajat, allergeenit, säilytys, ravintokentät ja kuvan kuvaus.",
     "findings": [
-      "SV: sekoitusohje täsmennetty vastaamaan FI:n ajoittaista sekoittamista."
+      "SV: sekoitusohje täsmennetty vastaamaan FI:n ajoittaista sekoittamista.",
+      "Poistettu kuvan versionhallintaa koskeva teksti SV- ja TH-sivuilta. Kuvakoristeiden rajaus säilyy."
     ]
   },
   "proposed_publication": {
@@ -106,19 +107,27 @@
         "path": "kaannokset/sv/alkuruoat/kermainen-pippurikastike.md",
         "language": "sv",
         "slug": "kermainen-pippurikastike-sv",
-        "sha256": "08152b47df1035a1731f0d05f60999d22692c5f102806cc9ac9798ab41f8c336",
-        "semantic_sha256": "a9cd513e6f02ac58f724ee3275c367b5090934bef10545de8df812b431271238"
+        "sha256": "bb7d9e23f44dc471c4cc90a97151a6e3d24b0e5b1a815c26e4e8eeb55cdcc02f",
+        "semantic_sha256": "f78f5bb535d502f528ddc30e4824cf98a73add9eda6e3c08d9fc6c2d4193cc51"
       },
       {
         "path": "kaannokset/th/alkuruoat/kermainen-pippurikastike.md",
         "language": "th",
         "slug": "kermainen-pippurikastike-th",
-        "sha256": "9f33b3357f2c1073aa3d5193c2822dd6424c6f280f46cc05fc2fb966c9550e53",
-        "semantic_sha256": "ac1793ad764c9b98b997328d1aa32275cb30095282a29d1e7d22f5ab2053d37a"
+        "sha256": "34d3af35a441a2d0308f44f504fd8f4825d9e68794bbb65d058462acae8829ba",
+        "semantic_sha256": "9937b3a66a019911df35d1e1811344fcdbdc6f332a6f04d6595797a12dc34ff8"
       }
     ],
     "nutrition_sha256": "f7368b89ad16ee9b43bef480d0b9fe3a6b51e66d95027b0e3b10652a0fea5d9f",
     "batch_id": "batch-33308",
     "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat."
+  },
+  "independent_review": {
+    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+    "decision": "hold",
+    "corrections_pending_review": [
+      "Poistettu kuvan versionhallintaa koskeva teksti SV- ja TH-sivuilta. Kuvakoristeiden rajaus säilyy."
+    ]
   }
 }

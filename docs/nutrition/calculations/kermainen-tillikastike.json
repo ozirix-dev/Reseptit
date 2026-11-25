@@ -1,18 +1,18 @@
 {
   "recipeId": "kermainen-tillikastike",
-  "sourceHash": "3c80ddde80a9596d3591b78dd85f970091e5410e6684589de842bd49ca51af4d",
-  "calculatedAt": "2026-11-21",
+  "sourceHash": "93b9135e76ac287fc5f6213cd145ab772d3e452de2bb18e7757d881063f32f83",
+  "calculatedAt": "2026-11-25",
   "servings": 4,
-  "scope": "Four cold dill sauce portions with weighed edible ingredients, lactose-free sour cream (Fineli 11152 average 10–12% fat), fresh dill, undiluted lemon juice, table sugar, iodized salt and ground black pepper. All retained, no cooking loss. Independent editorial arithmetic only, not a laboratory measurement.",
+  "scope": "Four cold dill sauce portions with weighed edible ingredients, low-lactose sour cream (Fineli 11152 average 10–12% fat), fresh dill, undiluted lemon juice, table sugar, iodized salt and ground black pepper. All retained, no cooking loss. Independent editorial arithmetic only, not a laboratory measurement.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
     {
-      "item": "laktoositonta kermaviiliä, rasvaa 10–12 %",
+      "item": "vähälaktoosista kermaviiliä, rasvaa 10–12 %",
       "amount": 200,
       "unit": "g",
-      "state": "lactose-free cultured sour cream, fat 10-12%",
-      "matchEvidence": "Fineli #11152 lactose-free sour cream average 10-12% fat matched to the stated dairy category; actual commercial products may vary.",
+      "state": "low-lactose cultured sour cream, fat 10-12%",
+      "matchEvidence": "Fineli #11152 low-lactose sour cream average 10-12% fat matched to the stated dairy category; actual commercial products may vary.",
       "edibleFraction": 1,
       "edibleEvidence": "All quantities are weighed as edible grams after washing/trimming.",
       "retainedFraction": 1,
@@ -20,10 +20,10 @@
       "record": {
         "id": "fineli-11152-release-20",
         "name": "KERMAVIILI, RASVAA 10-12 %, VL",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11152",
-        "retrievedAt": "2026-11-21",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11152",
+        "retrievedAt": "2026-11-25",
         "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "lactose-free cultured sour cream, fat 10-12%",
+        "state": "low-lactose cultured sour cream, fat 10-12%",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "componentValues": {
@@ -37,7 +37,7 @@
           "POLYL": 2260
         },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 POLYL component 2260; public mirror of the Fineli API shows sugar alcohols 0 g/100 g, https://ravinto.ptjesse.fi/kermaviili-rasvaa-10-12-vl/ (checked 2026-11-21).",
+        "polyolsEvidence": "THL Fineli Release 20:n SUGOH-arvo ja Finelin alkuperäisen elintarvikesivun sokerialkoholirivi (0 g/100 g).",
         "per100g": {
           "carbohydrate": 4,
           "fibre": 0,

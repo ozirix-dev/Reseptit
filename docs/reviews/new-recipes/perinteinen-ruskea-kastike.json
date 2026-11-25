@@ -3,9 +3,9 @@
   "recipe_id": "perinteinen-ruskea-kastike",
   "source_path": "reseptit/alkuruoat/perinteinen-ruskea-kastike.md",
   "source_sha256": "0903adbff5753791625c11d8bc8c642bf950fd7f808a3645ac87aa1c1d81fdab",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
-  "reviewed_at": "2026-11-21",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -35,8 +35,8 @@
       "notes": "Neljä annosta / 25 minuuttia; K-Ruoka 4 annosta / 15–30 minuuttia. Mittasuhteiden muutos voi vaikuttaa viskositeettiin, mutta työtapa ja aika ovat sovitettavissa."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Kanoninen laskenta tarkistettu. Lihaliemen ja soijakastikkeen EU-merkinnöistä puuttuu varmennettu polyolimäärä. Proteiini ja rasva kattavat kaikki ainekset."
+      "status": "pass",
+      "notes": "Kanoninen laskenta tarkistettu. Lihaliemen ja soijakastikkeen EU-merkinnöistä puuttuu varmennettu polyolimäärä. Proteiini ja rasva kattavat kaikki ainekset. Chat-2 varmisti tämän ravintopäätöksen katselmoidulle versiolle."
     },
     "glycemic": {
       "status": "unavailable",
@@ -52,7 +52,7 @@
     ],
     "image_path": "kuvat/alkuruoat/perinteinen-ruskea-kastike.webp",
     "image_sha256": "d10b6a2136d4a992f9488cad8eade4a6d0409e1f6f24d5327e152500a03b81aa",
-    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "image_review": "Kuvan ruokalajivastaavuus hyväksytty Chat-2:n katselmoinnissa. Kokki-Codex varmisti kuvan tavut ja dekoodauksen.",
     "physical_cook_test": false
   },
   "glycemic_evidence": {
@@ -82,7 +82,7 @@
     "findings": []
   },
   "proposed_publication": {
-    "review_state": "PENDING_INDEPENDENT_REVIEW",
+    "review_state": "APPROVED",
     "recipe_markdown": [
       {
         "path": "reseptit/alkuruoat/perinteinen-ruskea-kastike.md",
@@ -115,6 +115,13 @@
     ],
     "nutrition_sha256": "b47c75ca7ddd4418f1fad97795065248b0e83d9581f9b91987853ac780c1652a",
     "batch_id": "batch-33308",
-    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat."
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+  "independent_review": {
+    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+    "decision": "pass"
   }
 }

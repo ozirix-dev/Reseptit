@@ -3,9 +3,9 @@
   "recipe_id": "kantarellikastike",
   "source_path": "reseptit/alkuruoat/kantarellikastike.md",
   "source_sha256": "518bcd42cdd747f3a8f18336b294122ac1aced75431b3eaaba8c3b59d46a27da",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu kirjallinen aines- ja menetelmäkatselmointi; julkaisuhyväksyntä avoin",
-  "reviewed_at": "2026-11-21",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -35,8 +35,8 @@
       "notes": "K-Ruoka 4 annosta / 15–30 minuuttia; Recipavo 4 annosta / 30 minuuttia. Aika on perusteltu arvio."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Kanoninen laskenta tarkistettu. Raakaa kantarellia vastaavan Fineli 367:n SUGOH on tyhjä. Imeytyvä arvo vastaa Finelin omaa CHOAVL-arvoa. Kokonaishiilihydraatti edellyttäisi myös sienen polyolimäärää."
+      "status": "pass",
+      "notes": "Kanoninen laskenta tarkistettu. Raakaa kantarellia vastaavan Fineli 367:n SUGOH on tyhjä. Imeytyvä arvo vastaa Finelin omaa CHOAVL-arvoa. Kokonaishiilihydraatti edellyttäisi myös sienen polyolimäärää. Chat-2 varmisti tämän ravintopäätöksen katselmoidulle versiolle."
     },
     "glycemic": {
       "status": "unavailable",
@@ -49,7 +49,7 @@
     ],
     "image_path": "kuvat/alkuruoat/kantarellikastike.webp",
     "image_sha256": "d1f220d63ec75ead2775744630fe5d42e8bc0e828b7a8aae6bf0a9d130a10d5d",
-    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "image_review": "Kuvan ruokalajivastaavuus hyväksytty Chat-2:n katselmoinnissa. Kokki-Codex varmisti kuvan tavut ja dekoodauksen.",
     "physical_cook_test": false
   },
   "glycemic_evidence": {
@@ -79,7 +79,7 @@
     "findings": []
   },
   "proposed_publication": {
-    "review_state": "PENDING_INDEPENDENT_REVIEW",
+    "review_state": "APPROVED",
     "recipe_markdown": [
       {
         "path": "reseptit/alkuruoat/kantarellikastike.md",
@@ -112,6 +112,13 @@
     ],
     "nutrition_sha256": "294f3a7b661ed18b90d77ea79e71712cba6e0d0e9b279a65156da4f55d528e0a",
     "batch_id": "batch-33308",
-    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat."
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+  "independent_review": {
+    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+    "decision": "pass"
   }
 }
