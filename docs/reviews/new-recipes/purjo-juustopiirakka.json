@@ -24,7 +24,7 @@
     },
     "method": {
       "status": "pass",
-      "notes": "Valmistusvaiheet ja valmistuslähde säilyvät Chat-2:n katselmoimasta sisällöstä."
+      "notes": "Valmistus ja kestot vastaavat Chat-2:n katselmoimaa sisältöä. Sama kesto on merkitty tarkistimen tunnistamana minuuttilukuna."
     },
     "food_safety": {
       "status": "pass",
@@ -96,7 +96,7 @@
   "translation_semantic_review": {
     "reviewer": "Kokki-Codex",
     "reviewed_at": "2026-11-25",
-    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu.",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu. Valmistusajan ilmaisun vastaavuus varmennettu.",
     "findings": []
   },
   "proposed_publication": {
@@ -113,22 +113,22 @@
         "path": "kaannokset/en/leivonnaiset/purjo-juustopiirakka.md",
         "language": "en",
         "slug": "purjo-juustopiirakka-en",
-        "sha256": "82dcad5e9960a1ecba66706a3ebe26187674b82cc44ece1892d5509a0ea2119c",
-        "semantic_sha256": "d730830cb00d1bd0d39f5b1368b2c5c840763b2d1d1d505c7e8d31bf166eeaaa"
+        "sha256": "eabd6078096c2aafc3911c6f4f74fc7ae95d88221d7e60d5406c382f8a0bb531",
+        "semantic_sha256": "d99512561019579713dfec95510da94b0b7d99ea6d79efab7889b3951ef94182"
       },
       {
         "path": "kaannokset/sv/leivonnaiset/purjo-juustopiirakka.md",
         "language": "sv",
         "slug": "purjo-juustopiirakka-sv",
-        "sha256": "753fb5d1a9c5df6418d64228dc13dc051bc0c22294b406cf7e6c9a13f3e9d932",
-        "semantic_sha256": "328aca9a7df9a2fa2ee0d0d4344386d2f6b2587da514a7bb2d43b8e8982964bd"
+        "sha256": "fd6697f3085d63b0b0eadadccddecadc6e46ab31f80c471f85fb929818eb55c7",
+        "semantic_sha256": "0165df7dd20c73782b854fb4500a4da58d204f1420e034c5416f257ac9744f93"
       },
       {
         "path": "kaannokset/th/leivonnaiset/purjo-juustopiirakka.md",
         "language": "th",
         "slug": "purjo-juustopiirakka-th",
-        "sha256": "a89f03f5fa5ed10a1980504c4877f0fb7e3187faa954ab8938f84b8174db4224",
-        "semantic_sha256": "24b48bd4ed6e3dbba1a6efd9c0179a60923c837b7e0ef303dc008e91a71ac558"
+        "sha256": "6dbff6d9e9a30ed9d5f6a0892f5da857e6e0938c85a0f6ca64d0c0d03bb5c65c",
+        "semantic_sha256": "e27f62c341091deb5222a6422ba88076f146bbe2936faf3a8f73e127c84424b8"
       }
     ],
     "final_independent_delta": "pending"

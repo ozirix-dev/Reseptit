@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "focaccia",
   "source_path": "reseptit/leivonnaiset/focaccia.md",
-  "source_sha256": "ff7e711283c229e83fe269f5c0daeab5cd276ca10dc7ff6dc7794758c59d31c8",
+  "source_sha256": "0213cc91387a4fd6ea932f77d738c0082a00c0ef4857ecb89ec4355b741c2a4a",
   "decision": "approved",
   "reviewed_by": "Kokki-Codex",
   "reviewed_at": "2026-11-25",
@@ -24,7 +24,7 @@
     },
     "method": {
       "status": "pass",
-      "notes": "Valmistusvaiheet ja valmistuslähde säilyvät Chat-2:n katselmoimasta sisällöstä."
+      "notes": "Valmistus ja kestot vastaavat Chat-2:n katselmoimaa sisältöä. Sama kesto on merkitty tarkistimen tunnistamana minuuttilukuna."
     },
     "food_safety": {
       "status": "pass",
@@ -96,7 +96,7 @@
   "translation_semantic_review": {
     "reviewer": "Kokki-Codex",
     "reviewed_at": "2026-11-25",
-    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu.",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu. Valmistusajan ilmaisun vastaavuus varmennettu.",
     "findings": []
   },
   "proposed_publication": {
@@ -106,29 +106,29 @@
         "path": "reseptit/leivonnaiset/focaccia.md",
         "language": "fi",
         "slug": "focaccia",
-        "sha256": "ff7e711283c229e83fe269f5c0daeab5cd276ca10dc7ff6dc7794758c59d31c8",
-        "semantic_sha256": "33de9beb243e6f1881a0f9a35c0ed6fbcd2c533d58caab0f7e9f33e73325530f"
+        "sha256": "0213cc91387a4fd6ea932f77d738c0082a00c0ef4857ecb89ec4355b741c2a4a",
+        "semantic_sha256": "ec189f126a490d9d6abf3d7e4cb43118fa549e283f202bd986ce335456095dd5"
       },
       {
         "path": "kaannokset/en/leivonnaiset/focaccia.md",
         "language": "en",
         "slug": "focaccia-en",
-        "sha256": "13d068898ecd903e4681568c4c4d8434e641c4928d0ab86359b857f1fd2af25c",
-        "semantic_sha256": "1a6bbe2fe8cb9ce1ea095689c66a871bd92f20f56f4492da686ca61c52e34718"
+        "sha256": "ffd63823f0517ca468227490df592107349a1e882db92c2cd1b1a21e56b2d75f",
+        "semantic_sha256": "9fccea13f8c41d6c795874679ef568d8cbdeed8f2a0fbc64ff3a7c2cec9c27ea"
       },
       {
         "path": "kaannokset/sv/leivonnaiset/focaccia.md",
         "language": "sv",
         "slug": "focaccia-sv",
-        "sha256": "5133a9b5cb0fcbc6b17b958c8928eccdef3565425ab68b69fd1740f3cb96f5b9",
-        "semantic_sha256": "5920d92c475d614ecb7a825fb71ee748c9885e6b0bea939dbaad357d1f16fc7b"
+        "sha256": "d9e4212337cc326cb418c0170a2b52668269021f5b5946761e38baf084e44e2e",
+        "semantic_sha256": "874337c2cee22b4248fe2c1d5fc69e0905bfb0c7877d2f5600eb087cf1cafe5c"
       },
       {
         "path": "kaannokset/th/leivonnaiset/focaccia.md",
         "language": "th",
         "slug": "focaccia-th",
-        "sha256": "1217c9e9ed7050edccb73dcf1574f5f830bf3a353e13a494ec952874d6c37906",
-        "semantic_sha256": "d251d4a9dbb89e2ef9b3f31213ba8eda6630b63f8f68e539390631711f849944"
+        "sha256": "768f7fde95a46e3edfffaa8d37645842e391516ec3a1e53cac8cc2a50182734e",
+        "semantic_sha256": "9fc888f4eeb3c1d15a556854cec9a8f6539038c03634b2e9c19e9be87837d3b2"
       }
     ],
     "final_independent_delta": "pending"

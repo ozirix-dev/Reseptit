@@ -59,7 +59,7 @@ Finger-made dimples catch the olive oil on this round focaccia.
 ## Preparation
 
 1. Stir the yeast and sugar into the water. Whisk in about 30 g of the white flour and leave for 10 minutes.
-2. Add the salt, whole wheat flour and remaining white flour in stages. Knead until smooth. Cover and rise in an oiled bowl for 1½–2 hours, until doubled.
+2. Add the salt, whole wheat flour and remaining white flour in stages. Knead until smooth. Cover and rise in an oiled bowl for 90–120 minutes, until doubled.
 3. Stretch the dough into a round about 35 cm across on an oiled tray. Prove for about 30 minutes. Heat the oven to 220 °C.
 4. Dimple the dough with your fingertips. Bake for about 25 minutes, until lightly browned and baked through. Drizzle on the finishing oil, scatter the rosemary and cut into eight wedges.
 

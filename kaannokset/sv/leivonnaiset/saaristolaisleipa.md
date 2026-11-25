@@ -71,7 +71,7 @@ Syrad kärnmjölk, råg och malt ger ett mörkt bröd med blank kaffe- och sirap
 ## Tillagning
 
 1. Värm kärnmjölken till fingervarm och lös upp jästen. Rör ner malt, sirapen till degen, farinsocker och salt.
-2. Blanda ner rågmjöl, vetemjöl och kli. Täck över och jäs cirka 1½ timme tills degen har fördubblats.
+2. Blanda ner rågmjöl, vetemjöl och kli. Täck över och jäs cirka 90 minuter tills degen har fördubblats.
 3. Smörj och bröa tre brödformar på 1,5 liter. Fördela degen och grädda på nedre falsen vid 175 °C i 80 minuter.
 4. Blanda det varma kaffet och sirapen till penslingen. Pensla bröden, täck löst med folie och grädda i 40 minuter till.
 5. Låt bröden vila en stund i formarna. Stjälp upp på galler och låt svalna under duk. Skär varje bröd i 12 skivor.

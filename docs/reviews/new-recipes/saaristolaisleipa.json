@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "saaristolaisleipa",
   "source_path": "reseptit/leivonnaiset/saaristolaisleipa.md",
-  "source_sha256": "0fef8257c9ead21aa482d4c2be0224df0f86c0d3bc50217b12d04ebb8c7fbfc6",
+  "source_sha256": "b2e85ecb7e87f8391724feb8aa1c11c0c1a836ab4bc07a38e287e6cbfc77759e",
   "decision": "approved",
   "reviewed_by": "Kokki-Codex",
   "reviewed_at": "2026-11-25",
@@ -24,7 +24,7 @@
     },
     "method": {
       "status": "pass",
-      "notes": "Valmistusvaiheet ja valmistuslähde säilyvät Chat-2:n katselmoimasta sisällöstä."
+      "notes": "Valmistus ja kestot vastaavat Chat-2:n katselmoimaa sisältöä. Sama kesto on merkitty tarkistimen tunnistamana minuuttilukuna."
     },
     "food_safety": {
       "status": "pass",
@@ -96,7 +96,7 @@
   "translation_semantic_review": {
     "reviewer": "Kokki-Codex",
     "reviewed_at": "2026-11-25",
-    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu.",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu. Valmistusajan ilmaisun vastaavuus varmennettu.",
     "findings": []
   },
   "proposed_publication": {
@@ -106,29 +106,29 @@
         "path": "reseptit/leivonnaiset/saaristolaisleipa.md",
         "language": "fi",
         "slug": "saaristolaisleipa",
-        "sha256": "0fef8257c9ead21aa482d4c2be0224df0f86c0d3bc50217b12d04ebb8c7fbfc6",
-        "semantic_sha256": "702f316cd95fca4ebf2510eba2b320174f8a805d23b9922e54789d85293f37c4"
+        "sha256": "b2e85ecb7e87f8391724feb8aa1c11c0c1a836ab4bc07a38e287e6cbfc77759e",
+        "semantic_sha256": "80ac55a82f7dd5013d0381c44518853584eecc2affe554195b2c35241f4e2a7c"
       },
       {
         "path": "kaannokset/en/leivonnaiset/saaristolaisleipa.md",
         "language": "en",
         "slug": "saaristolaisleipa-en",
-        "sha256": "90e68d67d07a2994dc164a385cec6748dde3ad873cbfba9dbc2bd9c783142351",
-        "semantic_sha256": "c8f55db205578b3169de0d8d9829b1a35ced2ccec0f478b712d372a7cf1f1d16"
+        "sha256": "25046bf4e02f6c4052da5e72549f459ead5b41404458a34e5752ce0b2789a846",
+        "semantic_sha256": "b0babf336757884edf5b0c05eb9309ba1b03cfb97133dd10e86ee5d428258812"
       },
       {
         "path": "kaannokset/sv/leivonnaiset/saaristolaisleipa.md",
         "language": "sv",
         "slug": "saaristolaisleipa-sv",
-        "sha256": "032ece573a56c380587d161bd2f6c5e24b9fc95b657bd201c503228f59cf3038",
-        "semantic_sha256": "53ea620086df007d9009eed21a6805aa29c99d7d642b471f11a263d7f8ae7c0a"
+        "sha256": "954c1770bf5e42dd0498d7c432ee164a14cf0f98dcd243ddcad14e6b8e449616",
+        "semantic_sha256": "25a09b4ba6cade3593899ef264239b702f865a6a3c22617b78066f7c70bd3f51"
       },
       {
         "path": "kaannokset/th/leivonnaiset/saaristolaisleipa.md",
         "language": "th",
         "slug": "saaristolaisleipa-th",
-        "sha256": "b1b68f49158bbbb33ff60adab6bd7ea69ddda15daabda9bedf38c61d0bd9e32c",
-        "semantic_sha256": "dab5888a3a2ee3eec51737b2bca2d6e4f4c347b562225ee56242f5c0bf67fce0"
+        "sha256": "760ac86f2acf411974fc706387683dd95ae4f6e824f5265f6478aba54e8f9296",
+        "semantic_sha256": "e3f2392eadc9aa8ab1688ed2c528227473ab3a31bfda7f00deced99ea553d79d"
       }
     ],
     "final_independent_delta": "pending"

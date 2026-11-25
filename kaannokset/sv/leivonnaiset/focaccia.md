@@ -59,7 +59,7 @@ Fingergroparna samlar upp olivoljan på den runda focaccian.
 ## Tillagning
 
 1. Rör ner jäst och socker i vattnet. Vispa ner cirka 30 g av det siktade vetemjölet och låt stå i 10 minuter.
-2. Tillsätt salt, fullkornsmjöl och resten av det siktade mjölet efter hand. Knåda slätt. Täck och jäs i oljad bunke i 1½–2 timmar till dubbel storlek.
+2. Tillsätt salt, fullkornsmjöl och resten av det siktade mjölet efter hand. Knåda slätt. Täck och jäs i oljad bunke i 90–120 minuter till dubbel storlek.
 3. Dra ut degen på en oljad plåt till en rundel på cirka 35 cm. Jäs cirka 30 minuter. Sätt ugnen på 220 °C.
 4. Tryck gropar med fingertopparna. Grädda i cirka 25 minuter tills brödet är ljust gyllenbrunt och genomgräddat. Ringla över oljan till servering, strö på rosmarin och skär i åtta bitar.
 
