@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
+image:
+  src: paaruoat/laskisoosi.webp
+  alt: "Ruskistettua siankylkeä ja pehmeää sipulia ruskeassa kastikkeessa"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 300
     unit: "g"
