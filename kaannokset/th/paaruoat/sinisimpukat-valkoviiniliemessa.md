@@ -19,7 +19,7 @@ translation_of: "sinisimpukat-valkoviiniliemessa"
 ingredients:
   - amount: 2000
     unit: "g"
-    item: "หอยแมลงภู่เป็นทั้งเปลือกจากร้านค้าที่ได้รับอนุญาต"
+    item: "หอยแมลงภู่สีน้ำเงิน (Mytilus edulis) เป็นทั้งเปลือกจากร้านค้าที่ได้รับอนุญาต"
   - amount: 25
     unit: "g"
     item: "เนย"

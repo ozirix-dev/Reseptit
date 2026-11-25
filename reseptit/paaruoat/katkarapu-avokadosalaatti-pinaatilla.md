@@ -49,7 +49,7 @@ Valmiiksi kypsät ravut, avokado ja pinaatti saavat limen ja seesamin makua.
 ## Valmistus
 
 1. Varmista pakkauksesta, että ravut ovat kypsiä ja sellaisenaan syötäviä. Sulata tarvittaessa jääkaapissa, valuta ja pidä kylminä.
-2. Hienonna chili ja valkosipuli. Sekoita limen kuori ja mehu, soijakastike ja seesamiöljy; sekoita ravut osaan kastikkeesta.
+2. Hienonna chili ja valkosipuli. Sekoita hienonnettu chili ja valkosipuli limen kuoren ja mehun, soijakastikkeen ja seesamiöljyn kanssa; sekoita ravut osaan kastikkeesta.
 3. Pese ja kuivaa pinaatti, kuori ja viipaloi avokadot. Sekoita pinaatti loppuun kastikkeeseen, lisää avokado ja ravut. Tarjoa neljä kylmää annosta heti.
 
 ## Muistiinpanot

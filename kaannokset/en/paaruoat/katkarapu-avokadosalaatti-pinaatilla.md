@@ -50,7 +50,7 @@ Cooked prawns, avocado and spinach are dressed with lime and sesame.
 ## Preparation
 
 1. Check the prawns are cooked and ready to eat. Thaw in fridge if necessary, drain and keep chilled.
-2. Chop chilli and garlic. Mix lime zest and juice, soy sauce and sesame oil; toss prawns in some dressing.
+2. Chop chilli and garlic. Mix the chopped chilli and garlic with lime zest and juice, soy sauce and sesame oil; toss prawns in some dressing.
 3. Wash and dry spinach, peel and slice avocados. Toss spinach in remaining dressing; add avocado and prawns. Serve four cold portions immediately.
 
 ## Notes

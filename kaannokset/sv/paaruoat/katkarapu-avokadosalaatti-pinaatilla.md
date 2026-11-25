@@ -50,7 +50,7 @@ Kokta räkor, avokado och spenat får smak av lime och sesam.
 ## Tillagning
 
 1. Kontrollera att räkorna är kokta och färdiga att äta. Tina vid behov i kyl, låt rinna av och håll kalla.
-2. Hacka chili och vitlök. Blanda limeskal och saft, soja och sesamolja; vänd räkorna i en del av dressingen.
+2. Hacka chili och vitlök. Blanda den hackade chilin och vitlöken med limeskal och saft, soja och sesamolja; vänd räkorna i en del av dressingen.
 3. Skölj och torka spenat, skala och skiva avokado. Vänd spenaten i resten av dressingen, lägg på avokado och räkor. Servera fyra kalla portioner direkt.
 
 ## Anteckningar
