@@ -158,11 +158,16 @@ export function prepareBatch(base, expectedHead, directory = root) {
         throw new Error('HOLD_GK_PENDING: multiple changed Finnish sources: ' + version.id);
       }
       const entry = entries.find(item => item.file === version.path);
-      const oldIdentity = entry.status === 'A' ? null
-        : readRecipeIdentity(git(directory, ['show', base + ':' + version.path]));
+      // Previous identity is only needed when introducing a new pending row.
+      // Match the editorial gate's handling of an empty previous source.
+      const addingPending = !Object.hasOwn(previous, version.id) && Object.hasOwn(current, version.id);
+      const oldSource = addingPending && entry.status !== 'A'
+        ? git(directory, ['show', base + ':' + version.path]) : null;
+      const oldIdentity = oldSource ? readRecipeIdentity(oldSource) : null;
       changedSources.set(version.id, {
         sha: git(directory, ['rev-parse', head + ':' + version.path]).trim(),
-        newPublication: isNewPublication({ recipe_id: version.id, language: 'fi', status: 'published' }, oldIdentity),
+        newPublication: addingPending &&
+          isNewPublication({ recipe_id: version.id, language: 'fi', status: 'published' }, oldIdentity),
       });
     }
     validatePendingGkChanges(previous, current, changedSources);
