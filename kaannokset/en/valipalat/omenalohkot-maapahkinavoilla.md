@@ -44,6 +44,6 @@ Crisp apple and smooth peanut butter make a snack that takes just a few minutes 
 
 ## Notes
 
-- The nutrition estimate uses a Finnish apple with its skin, undiluted lemon juice and peanut butter with no added sugar or salt. It includes all the dip and lemon juice. The composition of peanut butter varies by product.
+- The nutrition estimate uses a Finnish apple with its skin, undiluted lemon juice and unsalted, unsweetened peanut butter. It includes all the dip and lemon juice. The composition of peanut butter varies by product.
 - Contains peanuts.
 - Reference: https://www.heb.com/recipe/recipe-detail/apple-slices-with-peanut-butter-snack

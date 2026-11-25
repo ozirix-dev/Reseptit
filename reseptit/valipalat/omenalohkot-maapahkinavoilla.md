@@ -49,6 +49,6 @@ Rapea omena ja pehmeä maapähkinävoi valmistuvat välipalaksi muutamassa minuu
 
 ## Muistiinpanot
 
-- Ravintoarvio perustuu kotimaiseen kuorelliseen omenaan, laimentamattomaan sitruunamehuun ja maapähkinävoihin ilman lisättyä sokeria tai suolaa. Arvio sisältää kaiken dipin ja sitruunamehun. Maapähkinävoin koostumus voi vaihdella tuotteittain.
+- Ravintoarvio perustuu kotimaiseen kuorelliseen omenaan, laimentamattomaan sitruunamehuun ja suolaamattomaan ja makeuttamattomaan maapähkinävoihin. Arvio sisältää kaiken dipin ja sitruunamehun. Maapähkinävoin koostumus voi vaihdella tuotteittain.
 - Sisältää maapähkinää.
 - Vertailulähde: https://www.heb.com/recipe/recipe-detail/apple-slices-with-peanut-butter-snack

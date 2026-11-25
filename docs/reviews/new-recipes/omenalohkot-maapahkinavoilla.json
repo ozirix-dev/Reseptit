@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "omenalohkot-maapahkinavoilla",
   "source_path": "reseptit/valipalat/omenalohkot-maapahkinavoilla.md",
-  "source_sha256": "6d1678e7bea4fe7c0125175910dd2e7d664281ffb209d2cbdd6bd4924d7d0da6",
+  "source_sha256": "d79472fbd7dd7685c120ad65cd762ccc1c689df71f8b2050f7b3f1d449da2cc5",
   "decision": "approved",
   "reviewed_by": "Kokki-Codex",
   "reviewed_at": "2026-11-25",
@@ -36,7 +36,7 @@
     },
     "nutrition": {
       "status": "pass",
-      "notes": "Koko annos. Kotimainen kuorellinen omena, puhdas laimentamaton sitruunamehu ja sileä maapähkinävoi ilman lisättyä suolaa tai sokeria. Kaikki mehu ja dippi syödään. AFCD:n australialainen maapähkinävoi on vertailuskenaario. Annosarvio = syötävien ainesosien määrällä painotetut g/100 g -arvot yhteen laskettuina, jaettuna annosmäärällä. Käytetyillä lähderiveillä kokonais-HH on netto-HH:n ja kuidun summa."
+      "notes": "Koko annos. Kotimainen kuorellinen omena, puhdas laimentamaton sitruunamehu ja sileä, suolaamaton ja makeuttamaton maapähkinävoi. Kaikki mehu ja dippi syödään. AFCD:n australialainen maapähkinävoi on vertailuskenaario. Annosarvio = syötävien ainesosien määrällä painotetut g/100 g -arvot yhteen laskettuina, jaettuna annosmäärällä. Käytetyillä lähderiveillä kokonais-HH on netto-HH:n ja kuidun summa."
     },
     "glycemic": {
       "status": "unavailable",
@@ -91,7 +91,7 @@
     "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
     "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
     "decision": "CONDITIONS_APPLIED",
-    "calculation_sha256": "d156dc6a1c18442293b2972e9ddb65b4049853e066021b4e199bf9eba5416300"
+    "calculation_sha256": "e0292c27acb948f7cef07f31fc9ea5a8ea3d8acc5cb4f2ea5a2e4b2e4e55d60c"
   },
   "translation_semantic_review": {
     "reviewer": "Kokki-Codex",
@@ -106,29 +106,29 @@
         "path": "reseptit/valipalat/omenalohkot-maapahkinavoilla.md",
         "language": "fi",
         "slug": "omenalohkot-maapahkinavoilla",
-        "sha256": "6d1678e7bea4fe7c0125175910dd2e7d664281ffb209d2cbdd6bd4924d7d0da6",
-        "semantic_sha256": "0527a517b6cbbde53db48371e671487ef058df30b8206adf57df0a27d1206798"
+        "sha256": "d79472fbd7dd7685c120ad65cd762ccc1c689df71f8b2050f7b3f1d449da2cc5",
+        "semantic_sha256": "4e9957fa3c84fa3beada9746981083e30a540a6cda2272eb2f1d3f2e66e91f66"
       },
       {
         "path": "kaannokset/en/valipalat/omenalohkot-maapahkinavoilla.md",
         "language": "en",
         "slug": "omenalohkot-maapahkinavoilla-en",
-        "sha256": "6110d7c96f42cfa319f357a3f153d5bb16ceb2c6e3e59f2982a4418ee9c1bcb5",
-        "semantic_sha256": "fa5a331be22d839379ee3e914922285a837e7700fde906515956c6ebb743ca16"
+        "sha256": "fb2346604a7cb641de2968110597702bb4ced6f3125ecec26231c8204639657a",
+        "semantic_sha256": "e0d45b2ccfe8311e0b1900266dc04133fcc5053ae3537f1759b1eb5af66bae8b"
       },
       {
         "path": "kaannokset/sv/valipalat/omenalohkot-maapahkinavoilla.md",
         "language": "sv",
         "slug": "omenalohkot-maapahkinavoilla-sv",
-        "sha256": "0397bd77606184360731826eb418f7b28818535db6b1b65ece9c13329bc5084e",
-        "semantic_sha256": "8df79958982cfc45fc06c19b39f64ab7564b6754bb02c392f60e56c3dec1ede7"
+        "sha256": "7ce6107468e810790e8508c7415d19555f64ca5dc0bf2492fde4a2dfcc74a804",
+        "semantic_sha256": "a38c46c474363159a9ccab024944ff3cec34b4a5cef5bfbf44973d9a12e4f334"
       },
       {
         "path": "kaannokset/th/valipalat/omenalohkot-maapahkinavoilla.md",
         "language": "th",
         "slug": "omenalohkot-maapahkinavoilla-th",
-        "sha256": "acc3c4ddabd1a0a3cd605be5fcdf4305600dffb3bfaba98ef6988ea5b4cf0853",
-        "semantic_sha256": "9a178fc142884f332037c8cfb44a3b4c36667cf4c3f1a990cab59a5ec1062727"
+        "sha256": "000b8eea5d6b86364436191bf32c0380f4da64e0194ef9b590f45a74838dfcf2",
+        "semantic_sha256": "5d1ffa7cc2c617686f93974632f17d4ffc05311cf22eba252ff0706d92eb8532"
       }
     ],
     "final_independent_delta": "pending"

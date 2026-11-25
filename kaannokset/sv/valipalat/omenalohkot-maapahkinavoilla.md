@@ -44,6 +44,6 @@ Krispigt äpple och lent jordnötssmör blir ett mellanmål på några minuter.
 
 ## Anteckningar
 
-- Näringsberäkningen utgår från ett finskt äpple med skal, outspädd citronsaft och jordnötssmör utan tillsatt socker eller salt. Hela dippen och all citronsaft ingår. Jordnötssmörets sammansättning kan variera mellan produkter.
+- Näringsberäkningen utgår från ett finskt äpple med skal, outspädd citronsaft och osaltat och osötat jordnötssmör. Hela dippen och all citronsaft ingår. Jordnötssmörets sammansättning kan variera mellan produkter.
 - Innehåller jordnötter.
 - Referens: https://www.heb.com/recipe/recipe-detail/apple-slices-with-peanut-butter-snack
