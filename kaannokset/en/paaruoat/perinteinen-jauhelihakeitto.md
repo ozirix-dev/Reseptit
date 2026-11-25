@@ -34,13 +34,13 @@ ingredients:
     item: "peeled potatoes"
   - amount: 250
     unit: "g"
-    item: "carrots"
+    item: "peeled carrots"
   - amount: 150
     unit: "g"
-    item: "swede"
+    item: "peeled swede"
   - amount: 100
     unit: "g"
-    item: "onion"
+    item: "peeled yellow onion"
   - amount: 50
     unit: "g"
     item: "leek"
@@ -52,7 +52,7 @@ ingredients:
     item: "rapeseed oil"
   - amount: 10
     unit: "g"
-    item: "stock concentrate, check salt content"
+    item: "beef stock concentrate, check salt content"
   - amount: 2
     unit: "g"
     item: "black pepper"
@@ -67,8 +67,8 @@ Potatoes and root vegetables simmer in one pot. The lean beef is browned separat
 
 ## Preparation
 
-1. Peel and dice potatoes and root vegetables. Chop the onion and slice the leek.
-2. Bring the water and stock concentrate to a boil. Add swede and carrots; simmer for about 10 minutes.
+1. Peel and dice potatoes and root vegetables. Chop the onion and slice the leek. Weigh the vegetables after peeling and trimming.
+2. Bring the water and beef stock concentrate to a boil. Add swede and carrots; simmer for about 10 minutes.
 3. Add potatoes and leek. Cook for another 15 minutes or until the vegetables are tender.
 4. Meanwhile, brown the ground beef and onion in rapeseed oil. Cook the beef mince thoroughly to at least 70°C throughout, then add to the soup.
 5. Simmer for 5 minutes, season with black pepper and add chopped parsley. Adjust salt according to the stock used.

@@ -44,7 +44,7 @@ ingredients:
     item: "smör till stekning"
   - amount: 20
     unit: "g"
-    item: "rybsolja till stekning"
+    item: "rapsolja till stekning"
 ---
 
 # Smörstekta siklöjor med rågpanering

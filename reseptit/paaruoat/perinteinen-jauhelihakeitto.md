@@ -39,13 +39,13 @@ ingredients:
     item: "kuorittuja perunoita"
   - amount: 250
     unit: "g"
-    item: "porkkanoita"
+    item: "kuorittuja porkkanoita"
   - amount: 150
     unit: "g"
-    item: "lanttua"
+    item: "kuorittua lanttua"
   - amount: 100
     unit: "g"
-    item: "sipulia"
+    item: "kuorittua keltasipulia"
   - amount: 50
     unit: "g"
     item: "purjoa"
@@ -72,7 +72,7 @@ Peruna ja juurekset kypsyvät samassa kattilassa. Pannulla ruskistettu paistijau
 
 ## Valmistus
 
-1. Kuori ja kuutioi perunat ja juurekset. Hienonna sipuli ja viipaloi purjo.
+1. Kuori ja kuutioi perunat ja juurekset. Hienonna sipuli ja viipaloi purjo. Punnitse kasvikset kuorittuina ja siistittyinä.
 2. Kuumenna vesi ja liemitiiviste. Lisää lanttu ja porkkana; keitä noin 10 minuuttia.
 3. Lisää perunat ja purjo. Keitä vielä noin 15 minuuttia, kunnes kasvikset ovat pehmeitä.
 4. Ruskista sillä välin jauheliha ja sipuli rypsiöljyssä. Kypsennä naudan jauheliha kauttaaltaan vähintään 70 °C:seen ja lisää pannun sisältö keittoon.

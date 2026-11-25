@@ -1,7 +1,7 @@
 ---
-title: "Timjanrostade rotfrukter"
+title: "Rostad kålrot, morot och palsternacka"
 recipe_id: paahdetut-juurekset-timjamilla
-url_slug: paahdetut-juurekset-timjamilla-sv
+url_slug: paahdettu-lanttu-porkkana-palsternakka-sv
 category: alkuruoka
 language: sv
 source_language: fi
@@ -40,9 +40,9 @@ ingredients:
     item: "salt"
 ---
 
-# Timjanrostade rotfrukter
+# Rostad kålrot, morot och palsternacka
 
-Morötter, kålrot och palsternacka rostas på samma plåt. Skär kålrötterna lite mindre så blir allt mört samtidigt.
+Kålrot är basen i det här tillbehöret med morot och palsternacka, utan potatis. Skär kålrötterna lite mindre så blir allt mört samtidigt.
 
 ## Gör så här
 

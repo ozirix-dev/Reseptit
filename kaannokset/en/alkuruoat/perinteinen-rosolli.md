@@ -36,10 +36,10 @@ ingredients:
     item: "cooked, peeled beetroot, unsalted and drained"
   - amount: 100
     unit: "g"
-    item: "pickled cucumber"
+    item: "drained sweet-salted pickled cucumber"
   - amount: 120
     unit: "g"
-    item: "tart apple, edible flesh with core removed"
+    item: "tart apple, skin on and core removed"
   - amount: 60
     unit: "g"
     item: "red onion"

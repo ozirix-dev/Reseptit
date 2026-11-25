@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 700
     unit: "g"
-    item: "ปลาวินเดซล้างเครื่องในแช่เย็น"
+    item: "ปลาวินเดซที่ควักไส้ออกแล้วและแช่เย็น"
   - amount: 85
     unit: "g"
     item: "แป้งไรย์"

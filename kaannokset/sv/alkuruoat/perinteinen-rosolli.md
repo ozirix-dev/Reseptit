@@ -36,10 +36,10 @@ ingredients:
     item: "kokta, skalade rödbetor, osaltade och avrunna"
   - amount: 100
     unit: "g"
-    item: "smörgåsgurka"
+    item: "avrunnen sötsalt smörgåsgurka"
   - amount: 120
     unit: "g"
-    item: "syrligt äpple, ätbar del utan kärnhus"
+    item: "syrligt äpple med skal, utan kärnhus"
   - amount: 60
     unit: "g"
     item: "rödlök"

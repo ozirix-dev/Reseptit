@@ -1,7 +1,7 @@
 ---
-title: "Timjamilla paahdetut juurekset"
+title: "Paahdettua lanttua, porkkanaa ja palsternakkaa"
 recipe_id: paahdetut-juurekset-timjamilla
-url_slug: paahdetut-juurekset-timjamilla
+url_slug: paahdettu-lanttu-porkkana-palsternakka
 category: alkuruoka
 language: fi
 status: draft
@@ -39,9 +39,9 @@ ingredients:
     item: "suolaa"
 ---
 
-# Timjamilla paahdetut juurekset
+# Paahdettua lanttua, porkkanaa ja palsternakkaa
 
-Porkkana, lanttu ja palsternakka paahtuvat yhdellä pellillä. Leikkaa lanttu hieman muita juureksia pienemmäksi, jotta kaikki kypsyvät samaan aikaan.
+Lanttupohjainen lisuke paahdetaan porkkanan ja palsternakan kanssa ilman perunaa. Leikkaa lanttu hieman muita juureksia pienemmäksi, jotta kaikki kypsyvät samaan aikaan.
 
 ## Valmistus
 

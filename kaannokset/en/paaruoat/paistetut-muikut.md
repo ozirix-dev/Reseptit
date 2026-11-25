@@ -1,5 +1,5 @@
 ---
-title: "Finnish Pan-Fried Vendace in Rye Crumbs"
+title: "Finnish Pan-Fried Vendace with Rye Flour and Breadcrumbs"
 recipe_id: paistetut-muikut
 url_slug: paistetut-muikut-en
 category: paaruoka
@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 700
     unit: "g"
-    item: "cleaned chilled vendace"
+    item: "gutted, chilled vendace"
   - amount: 85
     unit: "g"
     item: "rye flour"
@@ -47,7 +47,7 @@ ingredients:
     item: "rapeseed oil for frying"
 ---
 
-# Finnish Pan-Fried Vendace in Rye Crumbs
+# Finnish Pan-Fried Vendace with Rye Flour and Breadcrumbs
 
 A traditional Finnish home cooking recipe.
 

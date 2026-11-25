@@ -1,7 +1,7 @@
 ---
-title: "Thyme-Roasted Root Vegetables"
+title: "Roasted Swede, Carrots and Parsnips"
 recipe_id: paahdetut-juurekset-timjamilla
-url_slug: paahdetut-juurekset-timjamilla-en
+url_slug: paahdettu-lanttu-porkkana-palsternakka-en
 category: alkuruoka
 language: en
 source_language: fi
@@ -40,9 +40,9 @@ ingredients:
     item: "salt"
 ---
 
-# Thyme-Roasted Root Vegetables
+# Roasted Swede, Carrots and Parsnips
 
-Carrots, swede and parsnips roast on one tray. Cut the swede a little smaller so everything becomes tender at the same time.
+This swede-based side dish roasts with carrots and parsnips and has no potatoes. Cut the swede a little smaller so everything becomes tender at the same time.
 
 ## Method
 

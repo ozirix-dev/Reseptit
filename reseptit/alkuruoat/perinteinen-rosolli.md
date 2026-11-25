@@ -41,10 +41,10 @@ ingredients:
     item: "keitettyjä, kuorittuja punajuuria (suolattomia ja valutettuja)"
   - amount: 100
     unit: "g"
-    item: "maustekurkkua"
+    item: "valutettua sokerisuolattua maustekurkkua"
   - amount: 120
     unit: "g"
-    item: "hapanta omenaa, siemenkota poistettuna (syötävä osa)"
+    item: "hapanta omenaa kuorineen, ilman siemenkotaa"
   - amount: 60
     unit: "g"
     item: "punasipulia"

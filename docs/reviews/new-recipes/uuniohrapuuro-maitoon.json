@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "recipe_id": "uuniohrapuuro-maitoon",
+  "source_path": "reseptit/aamupalat/uuniohrapuuro-maitoon.md",
+  "source_sha256": "62702e4499b6e75930d953b4261d5893c0b837acda9db252f48d2f285df7ff0e",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.valio.fi/reseptit/luomu-uuniohrapuuro/"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Täsmälliset tunnisteet ja reitit verrataan mainiin ja tuotantoon. Lähin toimituksellinen vertailu kuuluu riippumattomaan sisältökatselmointiin."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Vertaa raaka-ainemäärät ja -tilat, mukaan lukien vaihtoehdot ja allergeenit, alkuperäiseen valmistuslähteeseen ja kieliversioihin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Recipavon toimituksellinen sovitus. Kuvitus ei ole osoitus valmistuskokeesta."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Tarkista reseptin kypsennys ja kylmäkäsittely sekä ainesosista ja tuotemerkinnöistä seuraavat allergeenit."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "6 annosta / 140 min, reseptin rajauksin. Arvio."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Malli antaa täydet luvut. Fineli 151 on geneerinen ohrasuurimotietue; rikotun tuotteen vastaavuus tarkistettava."
+    },
+    "glycemic": {
+      "status": "pending",
+      "notes": "Keitetyn helmi- tai kokonaisen ohran GI ei vastaa rikotun suurimon pitkää maitokypsennystä."
+    }
+  },
+  "candidate_review": {
+    "markdown": [
+      {
+        "path": "kaannokset/en/aamupalat/uuniohrapuuro-maitoon.md",
+        "sha256": "fbf29380101dbc82f1dcc0ce90701ffa93ed52cac24158b39b329a8b76f5ebe2"
+      },
+      {
+        "path": "kaannokset/sv/aamupalat/uuniohrapuuro-maitoon.md",
+        "sha256": "9c822fc2f84aa6135ecf31288754c29f718ca0255c6fee62d24bd1a3535d948b"
+      },
+      {
+        "path": "kaannokset/th/aamupalat/uuniohrapuuro-maitoon.md",
+        "sha256": "a5e8da3cee29a6a0f316fb462cae50f1982a1fafacf1dc495507440b34328476"
+      },
+      {
+        "path": "reseptit/aamupalat/uuniohrapuuro-maitoon.md",
+        "sha256": "62702e4499b6e75930d953b4261d5893c0b837acda9db252f48d2f285df7ff0e"
+      }
+    ],
+    "image": {
+      "path": "kuvat/aamupalat/uuniohrapuuro-maitoon.webp",
+      "bytes": 131824,
+      "sha256": "e22189778a5ec481a2e7a504f1344f82e143ec9d2a0b4adf84db9c90f9527c7b",
+      "width": 960,
+      "height": 640,
+      "origin": "Tekoälyllä luotu havainnekuva"
+    },
+    "nutrition": {
+      "status": "COMPLETE_CALCULATION_CANDIDATE",
+      "calculation": {
+        "recipeId": "uuniohrapuuro-maitoon",
+        "sourceHash": "ebb593adce05eeafabf37cef9fa863e085e07a80d60032c4799a03e9e4b567eb",
+        "calculatedAt": "2026-11-25",
+        "servings": 6,
+        "scope": "Yksi annos reseptin 6 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Malli antaa täydet luvut. Fineli 151 on geneerinen ohrasuurimotietue; rikotun tuotteen vastaavuus tarkistettava.",
+        "reviewerStatus": "AUTOMATED ONLY",
+        "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+        "ingredients": [
+          {
+            "item": "kuivia rikottuja ohrasuurimoita",
+            "amount": 150,
+            "unit": "g",
+            "state": "kuivia rikottuja ohrasuurimoita",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-151-release-20",
+              "name": "OHRASUURIMO",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/151",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 63.15,
+                "fibre": 7.6,
+                "polyols": 0,
+                "protein": 8.25,
+                "fat": 2
+              },
+              "state": "kuivia rikottuja ohrasuurimoita",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "kevytmaitoa",
+            "amount": 1300,
+            "unit": "g",
+            "state": "kevytmaitoa",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-684-release-20",
+              "name": "MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/684",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 4.8,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 3,
+                "fat": 1.5
+              },
+              "state": "kevytmaitoa",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "voita",
+            "amount": 18,
+            "unit": "g",
+            "state": "voita",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-500-release-20",
+              "name": "VOI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0.8,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 1.19,
+                "fat": 81.3
+              },
+              "state": "voita",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "suolaa",
+            "amount": 4,
+            "unit": "g",
+            "state": "suolaa",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-79-release-20",
+              "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 0,
+                "fat": 0
+              },
+              "state": "suolaa",
+              "retrievedAt": "2026-11-25"
+            }
+          }
+        ]
+      },
+      "preliminary_per_serving": {
+        "kcal": null,
+        "protein": 8.6,
+        "fat": 6.19,
+        "carbohydrate": 26.21,
+        "fibre": 1.9,
+        "sugars": null,
+        "polyols": 0,
+        "netCarbohydrate": 26.21
+      },
+      "preliminary_total_carbohydrate_g": 28.11,
+      "possible_partial_fields": {
+        "netCarbohydrate": 26.21,
+        "protein": 8.6,
+        "fat": 6.19
+      },
+      "limitations": "Malli antaa täydet luvut. Fineli 151 on geneerinen ohrasuurimotietue; rikotun tuotteen vastaavuus tarkistettava.",
+      "issues": []
+    },
+    "glycemic": {
+      "decision": "UNREVIEWED_NO_RELIABLE_GK_CANDIDATE",
+      "reason": "Keitetyn helmi- tai kokonaisen ohran GI ei vastaa rikotun suurimon pitkää maitokypsennystä.",
+      "value": null
+    },
+    "physical_cook_test": false
+  }
+}

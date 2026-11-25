@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "recipe_id": "tomaatti-valkopapupata",
+  "source_path": "reseptit/paaruoat/tomaatti-valkopapupata.md",
+  "source_sha256": "a9c775d8634734899f89655c6ad78b17495a894fb1bde8f357253ff77bc225de",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/helppo-papupata"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Täsmälliset tunnisteet ja reitit verrataan mainiin ja tuotantoon. Lähin toimituksellinen vertailu kuuluu riippumattomaan sisältökatselmointiin."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Vertaa raaka-ainemäärät ja -tilat, mukaan lukien vaihtoehdot ja allergeenit, alkuperäiseen valmistuslähteeseen ja kieliversioihin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Recipavon toimituksellinen sovitus. Kuvitus ei ole osoitus valmistuskokeesta."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Tarkista reseptin kypsennys ja kylmäkäsittely sekä ainesosista ja tuotemerkinnöistä seuraavat allergeenit."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "4 annosta / 35 min, reseptin rajauksin. Arvio."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Valutettujen tölkkipapujen tarkka koostumus puuttuu, samoin oreganon kuitu/polyolit."
+    },
+    "glycemic": {
+      "status": "pending",
+      "notes": "Valkopavun lajia ja säilykekäsittelyä vastaava GI-sidonta puuttuu."
+    }
+  },
+  "candidate_review": {
+    "markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/tomaatti-valkopapupata.md",
+        "sha256": "93dd41dc1a0de508603eae9666f323b1f1485c35721713f7d46439d5181d6acd"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/tomaatti-valkopapupata.md",
+        "sha256": "5ec4c70cfef99e63fb89da524ccfc663fca51c051467a04c3be3900cfd2dda02"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/tomaatti-valkopapupata.md",
+        "sha256": "a223f439950b449a9cb203b92472f48943085f85e9c4ad2959a3c69cd2147022"
+      },
+      {
+        "path": "reseptit/paaruoat/tomaatti-valkopapupata.md",
+        "sha256": "a9c775d8634734899f89655c6ad78b17495a894fb1bde8f357253ff77bc225de"
+      }
+    ],
+    "image": {
+      "path": "kuvat/paaruoat/tomaatti-valkopapupata.webp",
+      "bytes": 126188,
+      "sha256": "b630f4f4cf446a9738f2030f557cf9914ea9141aa86c764c6dda924b3a5b521b",
+      "width": 960,
+      "height": 640,
+      "origin": "Tekoälyllä luotu havainnekuva"
+    },
+    "nutrition": {
+      "status": "WITHHOLD_CANDIDATE",
+      "calculation": {
+        "recipeId": "tomaatti-valkopapupata",
+        "sourceHash": "b782d2f19526415da9a95d2dc75a03e6c04b79c9479a3aa266a3b63630368444",
+        "calculatedAt": "2026-11-25",
+        "servings": 4,
+        "scope": "Yksi annos reseptin 4 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Valutettujen tölkkipapujen tarkka koostumus puuttuu, samoin oreganon kuitu/polyolit.",
+        "reviewerStatus": "AUTOMATED ONLY",
+        "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+        "ingredients": [
+          {
+            "item": "kypsiä suuria valkopapuja säilykkeenä, huuhdeltuna ja valutettuna",
+            "amount": 460,
+            "unit": "g",
+            "state": "kypsiä suuria valkopapuja säilykkeenä, huuhdeltuna ja valutettuna",
+            "excludedReason": "Fineli 395 on geneerinen keitetty valkopapu, ei tarkistettu valutettu säilyketuote."
+          },
+          {
+            "item": "tomaattimurskaa",
+            "amount": 500,
+            "unit": "g",
+            "state": "tomaattimurskaa",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-398-release-20",
+              "name": "TOMAATTIMURSKA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/398",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 3.45,
+                "fibre": 0.4,
+                "polyols": 0,
+                "protein": 0.55,
+                "fat": 0.2
+              },
+              "state": "tomaattimurskaa",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "kuorittua keltasipulia",
+            "amount": 140,
+            "unit": "g",
+            "state": "kuorittua keltasipulia",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-335-release-20",
+              "name": "SIPULI, KELTASIPULI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 4.8,
+                "fibre": 1.2,
+                "polyols": 0,
+                "protein": 1.25,
+                "fat": 0.1
+              },
+              "state": "kuorittua keltasipulia",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "kuorittua valkosipulia",
+            "amount": 10,
+            "unit": "g",
+            "state": "kuorittua valkosipulia",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-393-release-20",
+              "name": "VALKOSIPULI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 16.3,
+                "fibre": null,
+                "polyols": 0,
+                "protein": 7.9,
+                "fat": 0.6
+              },
+              "state": "kuorittua valkosipulia",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "rypsiöljyä",
+            "amount": 20,
+            "unit": "g",
+            "state": "rypsiöljyä",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-535-release-20",
+              "name": "RYPSIÖLJY",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/535",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 0,
+                "fat": 100
+              },
+              "state": "rypsiöljyä",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "vettä",
+            "amount": 120,
+            "unit": "g",
+            "state": "vettä",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-922-release-20",
+              "name": "VESI, VESIJOHTOVESI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 0,
+                "fat": 0
+              },
+              "state": "vettä",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "kuivattua oreganoa",
+            "amount": 2,
+            "unit": "g",
+            "state": "kuivattua oreganoa",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-11191-release-20",
+              "name": "OREGANO, KUIVATTU",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11191",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": false,
+              "per100g": {
+                "carbohydrate": 21.63,
+                "fibre": null,
+                "polyols": null,
+                "protein": 11,
+                "fat": 10.3
+              },
+              "state": "kuivattua oreganoa",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "suolaa",
+            "amount": 4,
+            "unit": "g",
+            "state": "suolaa",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-79-release-20",
+              "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 0,
+                "fat": 0
+              },
+              "state": "suolaa",
+              "retrievedAt": "2026-11-25"
+            }
+          }
+        ]
+      },
+      "preliminary_per_serving": {
+        "kcal": null,
+        "protein": 1.38,
+        "fat": 5.35,
+        "carbohydrate": 6.51,
+        "fibre": null,
+        "sugars": null,
+        "polyols": null,
+        "netCarbohydrate": null
+      },
+      "preliminary_total_carbohydrate_g": null,
+      "possible_partial_fields": {
+        "netCarbohydrate": 6.51,
+        "protein": 1.38,
+        "fat": 5.35
+      },
+      "limitations": "Valutettujen tölkkipapujen tarkka koostumus puuttuu, samoin oreganon kuitu/polyolit.",
+      "issues": [
+        {
+          "ingredient": "kypsiä suuria valkopapuja säilykkeenä, huuhdeltuna ja valutettuna",
+          "issues": [],
+          "excluded": "Fineli 395 on geneerinen keitetty valkopapu, ei tarkistettu valutettu säilyketuote."
+        },
+        {
+          "ingredient": "kuorittua valkosipulia",
+          "issues": [
+            "Unknown nutrient fibre"
+          ],
+          "excluded": null
+        },
+        {
+          "ingredient": "kuivattua oreganoa",
+          "issues": [
+            "Unknown nutrient fibre",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ],
+          "excluded": null
+        }
+      ]
+    },
+    "glycemic": {
+      "decision": "UNREVIEWED_NO_RELIABLE_GK_CANDIDATE",
+      "reason": "Valkopavun lajia ja säilykekäsittelyä vastaava GI-sidonta puuttuu.",
+      "value": null
+    },
+    "physical_cook_test": false
+  }
+}

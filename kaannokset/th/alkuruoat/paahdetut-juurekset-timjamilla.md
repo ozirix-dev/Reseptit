@@ -1,7 +1,7 @@
 ---
-title: "ผักหัวอบไทม์"
+title: "รูตาบากาอบแครอตกับพาร์สนิป"
 recipe_id: paahdetut-juurekset-timjamilla
-url_slug: paahdetut-juurekset-timjamilla-th
+url_slug: paahdettu-lanttu-porkkana-palsternakka-th
 category: alkuruoka
 language: th
 source_language: fi
@@ -40,9 +40,9 @@ ingredients:
     item: "เกลือ"
 ---
 
-# ผักหัวอบไทม์
+# รูตาบากาอบแครอตกับพาร์สนิป
 
-อบแครอต รูตาบากา และพาร์สนิปในถาดเดียวกัน หั่นรูตาบากาให้เล็กกว่าเล็กน้อยเพื่อให้ผักสุกนุ่มพร้อมกัน
+เครื่องเคียงนี้ใช้รูตาบากาอบกับแครอตและพาร์สนิปโดยไม่ใส่มันฝรั่ง หั่นรูตาบากาให้เล็กกว่าเล็กน้อยเพื่อให้ผักสุกนุ่มพร้อมกัน
 
 ## วิธีทำ
 

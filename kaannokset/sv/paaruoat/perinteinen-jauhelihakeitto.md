@@ -34,13 +34,13 @@ ingredients:
     item: "skalad potatis"
   - amount: 250
     unit: "g"
-    item: "morötter"
+    item: "skalade morötter"
   - amount: 150
     unit: "g"
-    item: "kålrot"
+    item: "skalad kålrot"
   - amount: 100
     unit: "g"
-    item: "lök"
+    item: "skalad gul lök"
   - amount: 50
     unit: "g"
     item: "purjolök"
@@ -52,7 +52,7 @@ ingredients:
     item: "rapsolja"
   - amount: 10
     unit: "g"
-    item: "buljongkoncentrat, kontrollera salthalten"
+    item: "köttbuljongkoncentrat, kontrollera salthalten"
   - amount: 2
     unit: "g"
     item: "svartpeppar"
@@ -67,8 +67,8 @@ En klassisk finsk vardagssoppa med potatis, rotfrukter och brynt köttfärs utan
 
 ## Gör så här
 
-1. Skala och tärna potatis och rotfrukter. Hacka löken och skiva purjolöken.
-2. Koka upp vatten och buljongkoncentrat. Lägg i kålrot och morötter och sjud cirka 10 minuter.
+1. Skala och tärna potatis och rotfrukter. Hacka löken och skiva purjolöken. Väg grönsakerna efter skalning och ansning.
+2. Koka upp vatten och köttbuljongkoncentrat. Lägg i kålrot och morötter och sjud cirka 10 minuter.
 3. Tillsätt potatis och purjolök. Koka ytterligare cirka 15 minuter tills grönsakerna är mjuka.
 4. Bryn under tiden nötfärsen och löken i rybsolja. Genomstek färsen till minst 70 °C och lägg sedan i soppan.
 5. Låt sjuda 5 minuter, krydda med svartpeppar och tillsätt hackad persilja. Anpassa saltet efter buljongen.
