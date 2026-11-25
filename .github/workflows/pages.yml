@@ -232,7 +232,7 @@ jobs:
         working-directory: site
 
       - name: Fail-closed source SHA / generic instructions preflight for D30
-        if: contains(steps.select.outputs.changed_paths, 'd30-source-worklist.json') || contains(steps.select.outputs.changed_paths, 'translation-source-preflight.mjs')
+        if: contains(steps.select.outputs.changed_paths, 'd30-source-worklist.json') || contains(steps.select.outputs.changed_paths, 'translation-source-preflight.mjs') || contains(steps.select.outputs.changed_paths, 'translation-source-preflight.test.mjs')
         run: |
           node scripts/translation-source-preflight.mjs --ledger=meta/kaannokset/d30-source-worklist.json
           node --test scripts/translation-source-preflight.test.mjs
@@ -290,6 +290,7 @@ jobs:
            contains(steps.select.outputs.changed_paths, 'translation-derived-evidence'))
         env:
           CHANGED_PATHS: ${{ steps.select.outputs.changed_paths }}
+          UNIT_TESTS: ${{ steps.select.outputs.unit_tests }}
           FI_QUALITY_REF: ${{ steps.revision.outputs.pr_base || steps.revision.outputs.tested_sha }}
           RUN_FI_PILOT: >-
             ${{ github.event_name == 'workflow_dispatch' ||
@@ -306,9 +307,17 @@ jobs:
           else
             printf '{}\n' > "$evidence"
           fi
-          # Full CI runs these files in npm test.
-          if [[ "${{ steps.select.outputs.full }}" != 'true' ]]; then
-            npx tsx --test tests/translation-batch-ci-report.test.ts tests/translation-derived-evidence-ledger.test.ts tests/translation-derived-evidence-cli.test.ts
+          # The later unit step owns full and explicitly selected tests.
+          if [[ "$UNIT_TESTS" != '*' ]]; then
+            advisory_tests=()
+            for test_file in tests/translation-batch-ci-report.test.ts tests/translation-derived-evidence-ledger.test.ts tests/translation-derived-evidence-cli.test.ts; do
+              if [[ " $UNIT_TESTS " != *" $test_file "* ]]; then
+                advisory_tests+=("$test_file")
+              fi
+            done
+            if (( ${#advisory_tests[@]} > 0 )); then
+              npx tsx --test "${advisory_tests[@]}"
+            fi
           fi
           pilot=()
           if [[ "$RUN_FI_PILOT" == "true" ]]; then
@@ -340,8 +349,13 @@ jobs:
            (github.event_name == 'pull_request' &&
             contains(steps.select.outputs.changed_paths, '.github/workflows/pages.yml')))
         working-directory: site
+        shell: bash
+        env:
+          UNIT_TESTS: ${{ steps.select.outputs.unit_tests }}
         run: |
-          npx tsx --test tests/fi-approved-source-pilot.test.ts
+          if [[ "$UNIT_TESTS" != '*' && " $UNIT_TESTS " != *" tests/fi-approved-source-pilot.test.ts "* ]]; then
+            npx tsx --test tests/fi-approved-source-pilot.test.ts
+          fi
           GITHUB_SHA="${{ steps.revision.outputs.tested_sha }}" npx tsx scripts/fi-approved-source-pilot.ts
           cat ../tmp/fi-source-approved-pilot/current.md >> "$GITHUB_STEP_SUMMARY"
 

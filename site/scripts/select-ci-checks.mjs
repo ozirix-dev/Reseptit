@@ -27,6 +27,19 @@ const planningJson = new Set([
   "docs/nutrition/gk80-run8/inventory.json",
 ]);
 
+const staticTests = [
+  "tests/static-output.test.ts",
+  "tests/seo-audit.test.ts",
+  "tests/blog.test.ts",
+  "tests/navigation.test.ts"
+];
+const translationTests = [
+  "tests/translations.test.ts",
+  "tests/translation-review.test.ts",
+  "tests/translation-batch-partition.test.ts",
+  "tests/translation-publication-index.test.ts",
+  "tests/f25-source-release-gate.test.ts"
+];
 const nutritionTests = ["tests/nutrition-model.test.ts", "tests/nutrition-evidence.test.ts"];
 const glycemicTests = ["tests/glycemic-load.test.ts", "tests/glycemic-coverage-inventory.test.ts"];
 
@@ -187,7 +200,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false,
       } else if (testPath === "tests/image-pipeline.test.ts") {
         plan.runImages = true;
         plan.runBuild = true;
-      } else if (testPath === "tests/static-output.test.ts" || testPath === "tests/seo-audit.test.ts") {
+      } else if (staticTests.includes(testPath)) {
         plan.runStatic = true;
         plan.runBuild = true;
       } else if (/\.test\.ts$/.test(file)) {
@@ -282,8 +295,11 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false,
   }
   // The dedicated steps already run these files, even when a test itself changed.
   if (plan.runTranslationReview) {
-    plan.unitTests.delete("tests/translation-batch-partition.test.ts");
-    plan.unitTests.delete("tests/f25-source-release-gate.test.ts");
+    for (const test of translationTests) plan.unitTests.delete(test);
+  }
+  // The model entry point imports the binding tests even in the focused suite.
+  if (plan.runNutrition || plan.unitTests.has("tests/nutrition-model.test.ts")) {
+    plan.unitTests.delete("tests/nutrition-model-binding.test.ts");
   }
   if (plan.runNutrition) for (const test of nutritionTests) plan.unitTests.delete(test);
   if (plan.runGlycemic) for (const test of glycemicTests) plan.unitTests.delete(test);
@@ -304,9 +320,7 @@ function applyEventPolicy(plan, eventName) {
   }
   if (plan.runStatic) {
     // The event policy can enable the static suite after paths are classified.
-    plan.unitTests = plan.unitTests.filter(file =>
-      file !== "tests/blog.test.ts" && file !== "tests/navigation.test.ts",
-    );
+    plan.unitTests = plan.unitTests.filter(file => !staticTests.includes(file));
   }
   return plan;
 }

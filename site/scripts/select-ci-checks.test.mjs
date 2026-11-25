@@ -6,6 +6,7 @@ import {fileURLToPath} from 'node:url';
 import assert from "node:assert/strict";
 import test from "node:test";
 import { applyEventPolicy, classifyPaths, shouldRunFiEditorialAudit } from "./select-ci-checks.mjs";
+import { selectUnitTests } from "./run-unit-tests.mjs";
 
 test("FI editorial audit detects recipe and projection changes without touching other chats' work", () => {
   for (const file of [
@@ -209,6 +210,32 @@ test("deduplicate only the files run by scheduled dedicated npm suites", () => {
   assert.deepEqual(classifyPaths(testPaths, { forceFull: true }).unitTests, ["*"]);
 });
 
+test("nutrition model binding tests execute exactly once without losing standalone coverage", () => {
+  const binding = "tests/nutrition-model-binding.test.ts";
+  const model = "tests/nutrition-model.test.ts";
+  const unrelated = "tests/recipe-schema.test.ts";
+  const raw = readFileSync(new URL("../" + model, import.meta.url), "utf8");
+  assert.match(raw, /^import ['"]\.\/nutrition-model-binding\.test['"];?$/m,
+    "the model must still import its binding regressions");
+  const selected = selectUnitTests([binding, model, unrelated, "tests/navigation.test.ts"]);
+  assert.deepEqual(selected, [model, unrelated]);
+  assert.deepEqual(selectUnitTests([binding, unrelated]), [binding, unrelated]);
+
+  for (const event of ["pull_request", "push", "workflow_dispatch"]) {
+    const direct = applyEventPolicy(classifyPaths(["site/" + binding]), event);
+    assert.deepEqual(direct.unitTests, [binding]);
+    const both = applyEventPolicy(classifyPaths(["site/" + binding, "site/" + model, "site/" + unrelated]), event);
+    assert.deepEqual(both.unitTests, [model, unrelated]);
+    const dedicated = applyEventPolicy(classifyPaths([
+      "site/" + binding, "site/" + model, "site/" + unrelated, "site/scripts/nutrition-model.ts",
+    ]), event);
+    assert.equal(dedicated.runNutrition, true);
+    assert.deepEqual(dedicated.unitTests, [unrelated]);
+  }
+  const full = classifyPaths(["site/" + binding], { forceFull: true });
+  assert.deepEqual(full.unitTests, ["*"]);
+});
+
 test("PR and main push build and validate recipe content without unrelated full regression suites", () => {
   const recipePath = ["reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md"];
   const pullRequest = applyEventPolicy(classifyPaths(recipePath), "pull_request");
@@ -341,36 +368,51 @@ test("static and browser tests build the output before their focused runners", (
   assert.deepEqual(browserPlan.unitTests, []);
 });
 
-test("navigation and blog tests run once under the final CI event policy", () => {
-  const tests = ["tests/blog.test.ts", "tests/navigation.test.ts"];
-  const changedTests = tests.map(file => "site/" + file);
-  const targeted = applyEventPolicy(classifyPaths(changedTests), "pull_request");
-  assert.equal(targeted.runStatic, false);
-  assert.deepEqual(targeted.unitTests, tests);
+test("all static tests build dist and run once under the final CI event policy", () => {
+  const tests = ["tests/static-output.test.ts","tests/seo-audit.test.ts","tests/blog.test.ts","tests/navigation.test.ts"];
+  const { scripts } = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8"));
+  assert.deepEqual(scripts["test:static"].split(/\s+/).slice(2), tests);
 
   const unrelatedTest = "tests/recipe-schema.test.ts";
-  const mixed = [...changedTests, "site/" + unrelatedTest];
-  const push = applyEventPolicy(classifyPaths(mixed), "push");
-  const staticPr = applyEventPolicy(
-    classifyPaths([...mixed, "site/tests/static-output.test.ts"]), "pull_request",
-  );
-  for (const plan of [push, staticPr]) {
-    assert.equal(plan.runBuild, true);
-    assert.equal(plan.runStatic, true);
-    assert.deepEqual(plan.unitTests, [unrelatedTest]);
+  for (const file of tests) {
+    const changed = "site/" + file;
+    for (const event of ["pull_request", "push", "workflow_dispatch"]) {
+      const targeted = applyEventPolicy(classifyPaths([changed]), event);
+      assert.equal(targeted.runBuild, true, file);
+      assert.equal(targeted.runStatic, true, file);
+      assert.equal(targeted.runContentSync, false, file);
+      assert.deepEqual(targeted.unitTests, [], file);
+      const mixed = applyEventPolicy(classifyPaths([changed, "site/" + unrelatedTest]), event);
+      assert.equal(mixed.runBuild, true, file);
+      assert.equal(mixed.runStatic, true, file);
+      assert.deepEqual(mixed.unitTests, [unrelatedTest], file);
+    }
   }
+  assert.deepEqual(classifyPaths(tests.map(file => "site/" + file), { forceFull: true }).unitTests, ["*"]);
 });
 
-test("translation partition and F25 checks run on direct edits or in the selected translation suite", () => {
-  const tests = ["tests/translation-batch-partition.test.ts", "tests/f25-source-release-gate.test.ts"];
-  const changedTests = tests.map(file => "site/" + file);
-  const targeted = classifyPaths(changedTests);
-  assert.equal(targeted.runTranslationReview, false);
-  assert.deepEqual(targeted.unitTests, [...tests].sort());
-  const mixed = classifyPaths([...changedTests, "meta/kaannokset/codex-review-evidence.json"]);
-  assert.equal(mixed.runTranslationReview, true);
-  assert.ok(tests.every(file => !mixed.unitTests.includes(file)));
-  assert.equal(classifyPaths(changedTests, { forceFull: true }).runTranslationReview, true);
+test("all translation tests run on direct edits or once in the dedicated translation suite", () => {
+  const tests = ["tests/translations.test.ts","tests/translation-review.test.ts","tests/translation-batch-partition.test.ts","tests/translation-publication-index.test.ts","tests/f25-source-release-gate.test.ts"];
+  const { scripts } = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8"));
+  assert.deepEqual(scripts["test:translations"].split(/\s+/).slice(2), tests);
+
+  const unrelatedTest = "tests/recipe-schema.test.ts";
+  for (const file of tests) {
+    const changed = "site/" + file;
+    const targeted = classifyPaths([changed]);
+    assert.equal(targeted.runTranslationReview, false, file);
+    assert.deepEqual(targeted.unitTests, [file], file);
+    for (const event of ["pull_request", "push", "workflow_dispatch"]) {
+      const mixed = applyEventPolicy(classifyPaths([
+        changed, "site/" + unrelatedTest, "meta/kaannokset/codex-review-evidence.json",
+      ]), event);
+      assert.equal(mixed.runTranslationReview, true, file);
+      assert.deepEqual(mixed.unitTests, [unrelatedTest], file);
+    }
+  }
+  const full = classifyPaths(tests.map(file => "site/" + file), { forceFull: true });
+  assert.equal(full.runTranslationReview, true);
+  assert.deepEqual(full.unitTests, ["*"]);
 });
 
 test("workflow and classification failures select the full fallback", () => {
