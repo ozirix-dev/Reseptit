@@ -5,7 +5,9 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
 import { assertOrigin, inspectPublish, prepareForCurrentMain, readGitHub, waitForPublish } from '../scripts/recipe-publish.mjs';
-import { collectCandidates, templateFromIndex } from '../scripts/recipe-publish-prepare.mjs';
+import { collectCandidates, templateFromIndex, validateCandidateGroups, validatePendingGkChanges } from '../scripts/recipe-publish-prepare.mjs';
+import { readNutritionFieldApproval } from '../scripts/nutrition-field-approval';
+import type { Calculation } from '../scripts/nutrition-model';
 import { hashContent, validateReview } from '../scripts/new-recipe-preflight.mjs';
 
 test('waiting pins the first snapshot and advances only through observable states', async () => {
@@ -271,6 +273,124 @@ test('FI-only and same-PR four-language candidates use one identity and omit dra
     assert.equal(candidates.groups[1].published.length, 0);
     assert.equal(candidates.excluded.length, published ? 1 : 4);
   }
+});
+
+test('recipe-only preparation accepts the exact pending GK registry path', () => {
+  const pendingPath = 'docs/nutrition/new-public-gk-pending-sources.json';
+  const source = { file: 'reseptit/paaruoat/synthetic-recipe.md', read: () => fixture('fi', 'published') };
+  const batch = collectCandidates([source, { file: pendingPath, read: () => '{}' }]);
+  assert.deepEqual(batch.shared, [pendingPath]);
+  assert.throws(() => collectCandidates([source, {
+    file: 'docs/nutrition/other-gk-registry.json', read: () => '{}',
+  }]), /Unsupported file/);
+});
+
+test('pending GK registry accepts exact new FI additions but not historical rebinding', () => {
+  const previous = { 'old-pending': base };
+  const added = { ...previous, 'new-recipe': head };
+  const newSources = new Map([['new-recipe', { sha: head, newPublication: true }]]);
+  const existingSources = new Map([['old-pending', { sha: head, newPublication: false }]]);
+  assert.doesNotThrow(() => validatePendingGkChanges(previous, added, newSources));
+  assert.throws(() => validatePendingGkChanges(previous, { 'old-pending': head }, existingSources), /rebinding requires a separate GK review/);
+  assert.doesNotThrow(() => validatePendingGkChanges(previous, previous, new Map()));
+  assert.throws(() => validatePendingGkChanges(previous, added, new Map()), /outside the new FI candidate/);
+  assert.throws(() => validatePendingGkChanges(previous, added,
+    new Map([['new-recipe', { sha: head, newPublication: false }]])), /outside the new FI candidate/);
+  assert.throws(() => validatePendingGkChanges(previous, { ...previous, 'new-recipe': older }, newSources), /source blob does not match/);
+  assert.throws(() => validatePendingGkChanges(previous, previous, existingSources), /source blob does not match/);
+  assert.throws(() => validatePendingGkChanges(previous, {}, new Map()), /removal or rebinding requires a separate GK review/);
+  assert.throws(() => validatePendingGkChanges(previous, { 'old-pending': head }, new Map()), /rebinding requires a separate GK review/);
+  for (const invalid of [null, [], { 'new-recipe': 'invalid' }]) {
+    assert.throws(() => validatePendingGkChanges(previous, invalid, newSources), /invalid pending source registry/);
+  }
+});
+
+test('changed-content can require calculation membership in the matching nutrition batch', async () => {
+  const root = mkdtempSync(path.join(tmpdir(), 'recipe-publish-batch-'));
+  const directory = path.join(root, 'docs/nutrition/batches');
+  const evidence = { recipeId: 'synthetic-recipe', batchId: 'batch-1' } as Calculation;
+  const strict = { requireBatchMembership: true };
+  try {
+    mkdirSync(directory, { recursive: true });
+    assert.equal(await readNutritionFieldApproval(root, evidence), undefined);
+    await assert.rejects(readNutritionFieldApproval(root, evidence, strict), /not listed in a matching batch manifest/);
+    await assert.rejects(readNutritionFieldApproval(root, { ...evidence, batchId: undefined }, strict), /not listed in a matching batch manifest/);
+    const file = path.join(directory, 'batch-1.json');
+    writeFileSync(file, JSON.stringify({ batchId: 'batch-1', recipes: [{ recipeId: 'another-recipe' }] }));
+    await assert.rejects(readNutritionFieldApproval(root, evidence, strict), /not listed in a matching batch manifest/);
+    writeFileSync(file, JSON.stringify({ batchId: 'batch-2', recipes: [{ recipeId: evidence.recipeId }] }));
+    await assert.rejects(readNutritionFieldApproval(root, evidence, strict), /Invalid nutrition batch/);
+    writeFileSync(file, JSON.stringify({ batchId: 'batch-1', recipes: [{ recipeId: evidence.recipeId }] }));
+    assert.equal(await readNutritionFieldApproval(root, evidence, strict), undefined);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+function contentCandidates(count: number) {
+  return Array.from({ length: count }, (_, index) => {
+    const id = 'recipe-' + index;
+    return {
+      id, reasons: [] as string[],
+      paths: [
+        'reseptit/paaruoat/' + id + '.md',
+        ...['en', 'sv', 'th'].map(locale => 'kaannokset/' + locale + '/paaruoat/' + id + '.md'),
+        'docs/nutrition/calculations/' + id + '.json',
+        'docs/reviews/new-recipes/' + id + '.json',
+      ],
+    };
+  });
+}
+
+test('successful one- and twenty-recipe batches invoke changed-content once', () => {
+  for (const count of [1, 20]) {
+    const candidates = contentCandidates(count);
+    const calls: string[][] = [];
+    const result = validateCandidateGroups(candidates, paths => calls.push(paths));
+    assert.equal(calls.length, 1);
+    assert.deepEqual(calls[0], candidates.flatMap(item => item.paths.filter(p => !p.startsWith('docs/reviews/'))));
+    assert.equal(calls[0].length, count * 5);
+    assert.ok(result.every(item => item.status === 'CONTENT_CHECKS_PASSED'));
+  }
+});
+
+test('batch validation retains editorial holds and reports individual content failures', () => {
+  const candidates = contentCandidates(3);
+  candidates[0].reasons.push('editorial HOLD');
+  const calls: string[][] = [];
+  const result = validateCandidateGroups(candidates, paths => {
+    calls.push(paths);
+    if (paths.includes(candidates[1].paths[0])) throw new Error('recipe-1 rejected');
+  });
+  assert.equal(calls.length, 3);
+  assert.ok(calls.every(paths => !paths.includes(candidates[0].paths[0])));
+  assert.deepEqual(result.map(item => item.status), ['HOLD', 'HOLD', 'CONTENT_CHECKS_PASSED']);
+  assert.deepEqual(result[0].reasons, ['editorial HOLD']);
+  assert.deepEqual(result[1].reasons, ['recipe-1 rejected']);
+  assert.deepEqual(candidates[1].reasons, []);
+});
+
+test('combined-only failure stays fail-closed, and single or empty input does not retry', () => {
+  const candidates = contentCandidates(2);
+  let calls = 0;
+  const combined = validateCandidateGroups(candidates, paths => {
+    calls++;
+    if (paths.length > 5) throw new Error('combined failure');
+  });
+  assert.equal(calls, 3);
+  assert.ok(combined.every(item => item.status === 'HOLD' &&
+    item.reasons[0].includes('combined failure')));
+  calls = 0;
+  const single = validateCandidateGroups(candidates.slice(0, 1), () => {
+    calls++;
+    throw new Error('single failure');
+  });
+  assert.equal(calls, 1);
+  assert.equal(single[0].status, 'HOLD');
+  assert.deepEqual(single[0].reasons, ['single failure']);
+  assert.deepEqual(validateCandidateGroups([], () => assert.fail('empty must not validate')), []);
+  const held = [{ ...candidates[0], reasons: ['review HOLD'] }];
+  assert.equal(validateCandidateGroups(held, () => assert.fail('held must not validate'))[0].status, 'HOLD');
 });
 
 test('template binds to Git index bytes under LF and CRLF; edited content invalidates the review', () => {

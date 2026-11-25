@@ -6,6 +6,12 @@ export function collectCandidates(entries: { file: string; read: () => string }[
   shared: string[];
   excluded: string[];
 };
+export function validatePendingGkChanges(previous: unknown, current: unknown, changedSources: ReadonlyMap<string, {
+  sha: string; newPublication: boolean;
+}>): void;
+export function validateCandidateGroups<T extends { paths: string[]; reasons: string[] }>(
+  candidates: T[], validate: (paths: string[]) => unknown,
+): (T & { status: 'HOLD' | 'CONTENT_CHECKS_PASSED' })[];
 export function templateFromIndex(file: string, directory?: string): {
   source_sha256: string;
   decision: 'hold';
