@@ -39,6 +39,32 @@ test("multilingual content, image loading, responsive layout and JavaScript-free
         for (const width of [320, 375, 390, 768, 1024, 1440]) {
           await page.setViewportSize({ width, height: 900 });
           assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `${route} ${width}`);
+          if (route !== index) {
+            const buttons = await page.locator(".serving-control button").evaluateAll(nodes => nodes.map(node => {
+              const { width, height, y } = node.getBoundingClientRect();
+              return { width, height, y };
+            }));
+            assert.equal(buttons.length, 2, `${route} ${width}: serving controls`);
+            assert.ok(buttons.every(box => box.width >= 44 && box.height >= 44), `${route} ${width}: 44px buttons`);
+            assert.ok(Math.abs(buttons[0]!.y - buttons[1]!.y) <= 1, `${route} ${width}: buttons on one row`);
+          }
+          if (route === index && width === 390) {
+            await page.waitForFunction(() =>
+              document.querySelector<HTMLDetailsElement>(".site-primary-menu")?.open === false &&
+              document.querySelector<HTMLDetailsElement>(".site-language-menu")?.open === false);
+            const primary = page.locator(".site-primary-menu > summary");
+            const languages = page.locator(".site-language-menu > summary");
+            await primary.click();
+            assert.ok(await page.locator(".site-primary-nav").isVisible());
+            await languages.press("Enter");
+            assert.equal(await page.locator(".site-primary-menu").evaluate((node: HTMLDetailsElement) => node.open), false);
+            assert.ok(await page.locator(".site-language-nav").isVisible());
+            await primary.click();
+            assert.equal(await page.locator(".site-language-menu").evaluate((node: HTMLDetailsElement) => node.open), false);
+            assert.ok(await page.locator(".site-primary-nav").isVisible());
+            await primary.press("Enter");
+            assert.equal(await page.locator(".site-primary-menu").evaluate((node: HTMLDetailsElement) => node.open), false);
+          }
         }
         assert.equal(await page.locator("img").first().evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0), true);
       }
@@ -47,6 +73,23 @@ test("multilingual content, image loading, responsive layout and JavaScript-free
         await route.fulfill({ path: path.resolve("public/kuvat", new URL(route.request().url()).pathname.split("/kuvat/")[1]) });
       });
       await noJs.goto(`${base}${index}`);
+      for (const width of [320, 390, 700]) {
+        await noJs.setViewportSize({ width, height: 900 });
+        assert.ok(await noJs.locator(".site-primary-nav").isVisible());
+        assert.ok(await noJs.locator(".site-language-nav").isVisible());
+        const primary = await noJs.locator(".site-primary-nav").boundingBox();
+        const languages = await noJs.locator(".site-language-nav").boundingBox();
+        assert.ok(primary && languages, `${index} ${width}: both SSR menus`);
+        assert.ok(primary.x + primary.width <= languages.x + 1 ||
+          languages.x + languages.width <= primary.x + 1 ||
+          primary.y + primary.height <= languages.y + 1 ||
+          languages.y + languages.height <= primary.y + 1, `${index} ${width}: no menu overlap`);
+        assert.ok([primary, languages].every(box => box.x >= -1 && box.x + box.width <= width + 1),
+          `${index} ${width}: menus in viewport`);
+      }
+      const guideLink = noJs.locator('.site-primary-nav a[href="/ruokaopas/"]');
+      assert.equal(await guideLink.getAttribute("lang"), null);
+      assert.equal(await guideLink.getAttribute("hreflang"), "fi");
       assert.equal(await noJs.locator("form").count(), 0);
       assert.ok(await noJs.locator(".recipe-card__link").count() > 0);
       await noJs.locator(".recipe-card__link").first().click();

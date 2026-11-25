@@ -65,21 +65,27 @@ export function SiteNavigation({ pathname, locale, availableLocales, translation
     }
   };
 
+  const closeOtherMobileMenu = (current: HTMLDetailsElement | null, other: HTMLDetailsElement | null) => {
+    if (window.matchMedia("(max-width: 700px)").matches && current && !current.open && other) {
+      other.open = false;
+    }
+  };
+
   const labels = copy[locale];
   const blog = isBlog(pathname);
   const method = isMethod(pathname);
   const privacy = privacyLocaleFromPath(pathname) !== undefined;
   return <div className="site-header__navigation">
     <details className="site-primary-menu" ref={primary} open>
-      <summary aria-label={labels.menu}>{labels.menu}<span aria-hidden="true"> ▾</span></summary>
+      <summary aria-label={labels.menu} onClick={() => closeOtherMobileMenu(primary.current, languages.current)}>{labels.menu}<span aria-hidden="true"> ▾</span></summary>
       <nav className="site-primary-nav" aria-label={labels.sections}>
         <Link to={recipeIndexPath(locale)} onClick={closeMobileMenus} aria-current={!blog && !method && !privacy ? "page" : undefined}>{labels.recipes}</Link>
-        <Link to="/ruokaopas/" lang="fi" onClick={closeMobileMenus} aria-current={blog ? "page" : undefined}>{labels.blog}</Link>
+        <Link to="/ruokaopas/" hrefLang="fi" onClick={closeMobileMenus} aria-current={blog ? "page" : undefined}>{labels.blog}</Link>
         <Link to={glycemicLoadPath(locale)} onClick={closeMobileMenus} aria-current={method ? "page" : undefined}>{labels.method}</Link>
       </nav>
     </details>
     {availableLocales.length > 1 && <details className="site-language-menu" ref={languages} open>
-      <summary aria-label={labels.languages + ": " + localeNames[locale]}>{localeShort[locale]}<span aria-hidden="true"> ▾</span></summary>
+      <summary aria-label={labels.languages + ": " + localeNames[locale]} onClick={() => closeOtherMobileMenu(languages.current, primary.current)}>{localeShort[locale]}<span aria-hidden="true"> ▾</span></summary>
       <nav className="site-language-nav" aria-label={labels.languages}>
         {localeOrder.filter(code => availableLocales.includes(code)).map(code =>
           <Link key={code} lang={code} hrefLang={code} to={languageDestination(code, pathname, translations)} onClick={() => {
