@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
 import { assertOrigin, inspectPublish, prepareForCurrentMain, readGitHub, waitForPublish } from '../scripts/recipe-publish.mjs';
-import { collectCandidates, templateFromIndex, validatePendingGkChanges } from '../scripts/recipe-publish-prepare.mjs';
+import { collectCandidates, templateFromIndex, validateCandidateGroups, validatePendingGkChanges } from '../scripts/recipe-publish-prepare.mjs';
 import { readNutritionFieldApproval } from '../scripts/nutrition-field-approval';
 import type { Calculation } from '../scripts/nutrition-model';
 import { hashContent, validateReview } from '../scripts/new-recipe-preflight.mjs';
@@ -325,6 +325,72 @@ test('changed-content can require calculation membership in the matching nutriti
   } finally {
     rmSync(root, { recursive: true, force: true });
   }
+});
+
+function contentCandidates(count: number) {
+  return Array.from({ length: count }, (_, index) => {
+    const id = 'recipe-' + index;
+    return {
+      id, reasons: [] as string[],
+      paths: [
+        'reseptit/paaruoat/' + id + '.md',
+        ...['en', 'sv', 'th'].map(locale => 'kaannokset/' + locale + '/paaruoat/' + id + '.md'),
+        'docs/nutrition/calculations/' + id + '.json',
+        'docs/reviews/new-recipes/' + id + '.json',
+      ],
+    };
+  });
+}
+
+test('successful one- and twenty-recipe batches invoke changed-content once', () => {
+  for (const count of [1, 20]) {
+    const candidates = contentCandidates(count);
+    const calls: string[][] = [];
+    const result = validateCandidateGroups(candidates, paths => calls.push(paths));
+    assert.equal(calls.length, 1);
+    assert.deepEqual(calls[0], candidates.flatMap(item => item.paths.filter(p => !p.startsWith('docs/reviews/'))));
+    assert.equal(calls[0].length, count * 5);
+    assert.ok(result.every(item => item.status === 'CONTENT_CHECKS_PASSED'));
+  }
+});
+
+test('batch validation retains editorial holds and reports individual content failures', () => {
+  const candidates = contentCandidates(3);
+  candidates[0].reasons.push('editorial HOLD');
+  const calls: string[][] = [];
+  const result = validateCandidateGroups(candidates, paths => {
+    calls.push(paths);
+    if (paths.includes(candidates[1].paths[0])) throw new Error('recipe-1 rejected');
+  });
+  assert.equal(calls.length, 3);
+  assert.ok(calls.every(paths => !paths.includes(candidates[0].paths[0])));
+  assert.deepEqual(result.map(item => item.status), ['HOLD', 'HOLD', 'CONTENT_CHECKS_PASSED']);
+  assert.deepEqual(result[0].reasons, ['editorial HOLD']);
+  assert.deepEqual(result[1].reasons, ['recipe-1 rejected']);
+  assert.deepEqual(candidates[1].reasons, []);
+});
+
+test('combined-only failure stays fail-closed, and single or empty input does not retry', () => {
+  const candidates = contentCandidates(2);
+  let calls = 0;
+  const combined = validateCandidateGroups(candidates, paths => {
+    calls++;
+    if (paths.length > 5) throw new Error('combined failure');
+  });
+  assert.equal(calls, 3);
+  assert.ok(combined.every(item => item.status === 'HOLD' &&
+    item.reasons[0].includes('combined failure')));
+  calls = 0;
+  const single = validateCandidateGroups(candidates.slice(0, 1), () => {
+    calls++;
+    throw new Error('single failure');
+  });
+  assert.equal(calls, 1);
+  assert.equal(single[0].status, 'HOLD');
+  assert.deepEqual(single[0].reasons, ['single failure']);
+  assert.deepEqual(validateCandidateGroups([], () => assert.fail('empty must not validate')), []);
+  const held = [{ ...candidates[0], reasons: ['review HOLD'] }];
+  assert.equal(validateCandidateGroups(held, () => assert.fail('held must not validate'))[0].status, 'HOLD');
 });
 
 test('template binds to Git index bytes under LF and CRLF; edited content invalidates the review', () => {

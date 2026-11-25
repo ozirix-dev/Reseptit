@@ -118,6 +118,44 @@ export function validatePendingGkChanges(previous, current, changedSources) {
   }
 }
 
+// Successful batches use the same validator as CI with all eligible paths.
+// On failure, retain individual diagnostics but never turn an unexplained
+// combined failure into a successful batch.
+export function validateCandidateGroups(candidates, validate) {
+  const results = candidates.map(candidate => ({ ...candidate, reasons: [...candidate.reasons] }));
+  const eligible = results.filter(candidate => !candidate.reasons.length);
+  const check = groups => validate(groups.flatMap(group =>
+    group.paths.filter(file => !file.startsWith('docs/reviews/'))));
+  const reason = error => String(error?.stderr || error?.message || error || 'Changed-content validation failed')
+    .trim().slice(0, 3000) || 'Changed-content validation failed';
+  if (eligible.length) {
+    try {
+      check(eligible);
+    } catch (error) {
+      const combinedReason = reason(error);
+      if (eligible.length === 1) {
+        eligible[0].reasons.push(combinedReason);
+      } else {
+        for (const candidate of eligible) {
+          try {
+            check([candidate]);
+          } catch (individualError) {
+            candidate.reasons.push(reason(individualError));
+          }
+        }
+        if (eligible.every(candidate => !candidate.reasons.length)) {
+          for (const candidate of eligible) {
+            candidate.reasons.push('Combined changed-content validation failed: ' + combinedReason);
+          }
+        }
+      }
+    }
+  }
+  return results.map(candidate => ({
+    ...candidate, status: candidate.reasons.length ? 'HOLD' : 'CONTENT_CHECKS_PASSED',
+  }));
+}
+
 export function prepareBatch(base, expectedHead, directory = root) {
   if (!shaPattern.test(base) || !shaPattern.test(expectedHead)) {
     throw new Error('Preparation requires full --base and --head SHAs.');
@@ -174,20 +212,11 @@ export function prepareBatch(base, expectedHead, directory = root) {
   }
   const env = { ...process.env, BASE_SHA: base, HEAD_SHA: head };
   const editorial = editorialResults(directory, base, head, env);
-  const candidates = [];
-  for (const group of batch.groups.filter(item => item.published.length)) {
-    const paths = [...group.published.map(item => item.path), ...group.evidence];
-    const reasons = editorial.get(group.id)?.reasons ?? [];
-    if (!reasons.length) {
-      try {
-        runNode(directory, 'scripts/validate-changed-content.ts',
-          paths.filter(file => !file.startsWith('docs/reviews/')), env);
-      } catch (error) {
-        reasons.push(String(error.stderr || error.message).trim().slice(0, 3000));
-      }
-    }
-    candidates.push({ ...group, paths, reasons, status: reasons.length ? 'HOLD' : 'CONTENT_CHECKS_PASSED' });
-  }
+  const candidates = validateCandidateGroups(batch.groups.filter(item => item.published.length).map(group => ({
+    ...group,
+    paths: [...group.published.map(item => item.path), ...group.evidence],
+    reasons: editorial.get(group.id)?.reasons ?? [],
+  })), paths => runNode(directory, 'scripts/validate-changed-content.ts', paths, env));
   if (candidates.some(item => !item.reasons.length)) {
     const python = process.platform === 'win32' ? 'python' : 'python3';
     try {
