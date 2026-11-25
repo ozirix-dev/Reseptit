@@ -302,6 +302,12 @@ function applyEventPolicy(plan, eventName) {
     plan.runTypecheck = false;
     plan.runContentSync = false;
   }
+  if (plan.runStatic) {
+    // The event policy can enable the static suite after paths are classified.
+    plan.unitTests = plan.unitTests.filter(file =>
+      file !== "tests/blog.test.ts" && file !== "tests/navigation.test.ts",
+    );
+  }
   return plan;
 }
 
