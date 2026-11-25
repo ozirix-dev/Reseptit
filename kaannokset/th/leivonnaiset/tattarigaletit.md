@@ -1,0 +1,51 @@
+---
+title: "กาแล็ตบักวีต"
+recipe_id: tattarigaletit
+url_slug: tattarigaletit
+category: leivonnainen
+language: th
+status: draft
+servings: 10
+time_total_min: 155
+difficulty: "keskitaso"
+main_ingredient: ["tattarijauho"]
+cooking_method: ["pannu"]
+ingredients:
+  - amount: 120
+    unit: "กรัม"
+    item: "แป้งบักวีต"
+  - amount: 0.75
+    unit: "ช้อนชา"
+    item: "เกลือละเอียด"
+  - amount: 2
+    unit: "ฟอง"
+    item: "ไข่ไก่ฟองใหญ่"
+  - amount: 227
+    unit: "กรัม"
+    item: "นม"
+  - amount: 14
+    unit: "กรัม"
+    item: "เนยจืดละลาย"
+  - amount: 80
+    unit: "มล."
+    item: "น้ำ"
+  - amount: 10
+    unit: "มล."
+    item: "น้ำมันเรพซีดสำหรับทอด"
+---
+
+# กาแล็ตบักวีต
+
+แป้งบักวีตให้เครปแผ่นบางมีกลิ่นหอมคล้ายถั่ว เหมาะสำหรับใส่ไส้คาว
+
+## วิธีทำ
+
+1. ผสมแป้งบักวีต เกลือ ไข่ นม และเนยละลายจนเนียน ปิดชามแล้วพักในตู้เย็นอย่างน้อย 2 ชั่วโมง
+2. คนผสมน้ำลงในแป้ง อุ่นกระทะเคลือบกันติดด้วยไฟกลางค่อนแรง แล้วทาน้ำมันบาง ๆ
+3. เทแป้งแค่พอให้เคลือบก้นกระทะเป็นชั้นบางเมื่อเอียงกระทะ ทอด 1–2 นาทีจนขอบร่อนง่าย แล้วพลิกทอดอีกด้าน 1–2 นาที ทำซ้ำจนแป้งหมด
+4. วางกาแล็ตซ้อนกันบนจานแล้วคลุมด้วยผ้า เสิร์ฟขณะอุ่น หากจะใส่ไส้ให้แบ่งปริมาณแยกต่างหาก
+
+## หมายเหตุ
+
+- มีนมและไข่
+- แหล่งอ้างอิงวิธีทำ https://www.kingarthurbaking.com/recipes/buckwheat-crepes-recipe
