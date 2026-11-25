@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "recipe_id": "punajuuri-kaurapihvit",
+  "source_path": "reseptit/paaruoat/punajuuri-kaurapihvit.md",
+  "source_sha256": "47702512e5addad35137826d1d50b277cc9770784d48d9fa28723c0b8b69d152",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/kauraiset-kasvispihvit/"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Täsmälliset tunnisteet ja reitit verrataan mainiin ja tuotantoon. Lähin toimituksellinen vertailu kuuluu riippumattomaan sisältökatselmointiin."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Vertaa raaka-ainemäärät ja -tilat, mukaan lukien vaihtoehdot ja allergeenit, alkuperäiseen valmistuslähteeseen ja kieliversioihin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Recipavon toimituksellinen sovitus. Kuvitus ei ole osoitus valmistuskokeesta."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Tarkista reseptin kypsennys ja kylmäkäsittely sekä ainesosista ja tuotemerkinnöistä seuraavat allergeenit."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "4 annosta / 45 min, reseptin rajauksin. Arvio."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Paistorasvan toteutunut määrä ja kaurahiutaleiden polyolit puuttuvat."
+    },
+    "glycemic": {
+      "status": "pending",
+      "notes": "Paistetun pihvin kaurahiutaleita ei voi käsitellä keitetyn kaurapuuron GI:llä."
+    }
+  },
+  "candidate_review": {
+    "markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/punajuuri-kaurapihvit.md",
+        "sha256": "87880c730e4505e93638063e3a8f76f437a6e2211f0f3c0872737f5c157bfbc9"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/punajuuri-kaurapihvit.md",
+        "sha256": "3e97265690e93ddd44efc2b4f5d9a8c1144faf876bd779fa775efe65056194cd"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/punajuuri-kaurapihvit.md",
+        "sha256": "292def235f006ca6deeaf037b29e796086aa9cd39b8890b2440f459ce1b8a85c"
+      },
+      {
+        "path": "reseptit/paaruoat/punajuuri-kaurapihvit.md",
+        "sha256": "47702512e5addad35137826d1d50b277cc9770784d48d9fa28723c0b8b69d152"
+      }
+    ],
+    "image": {
+      "path": "kuvat/paaruoat/punajuuri-kaurapihvit.webp",
+      "bytes": 145760,
+      "sha256": "c78ebff4be6bcb4771240da6659cbdb5362ec7dd24ff8aeb8a24bd0f36346a84",
+      "width": 960,
+      "height": 640,
+      "origin": "Tekoälyllä luotu havainnekuva"
+    },
+    "nutrition": {
+      "status": "WITHHOLD_CANDIDATE",
+      "calculation": {
+        "recipeId": "punajuuri-kaurapihvit",
+        "sourceHash": "21591de709abb0812050b56d2df5a0c2e375e8e90d12c24f36b637133b2e1c4f",
+        "calculatedAt": "2026-11-25",
+        "servings": 4,
+        "scope": "Yksi annos reseptin 4 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Paistorasvan toteutunut määrä ja kaurahiutaleiden polyolit puuttuvat.",
+        "reviewerStatus": "AUTOMATED ONLY",
+        "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+        "ingredients": [
+          {
+            "item": "keitettyä, kuorittua ja valutettua punajuurta",
+            "amount": 450,
+            "unit": "g",
+            "state": "keitettyä, kuorittua ja valutettua punajuurta",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-30382-release-20",
+              "name": "PUNAJUURI, KEITETTY, SUOLATON",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30382",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 8.163,
+                "fibre": 2.551,
+                "polyols": 0,
+                "protein": 1.43,
+                "fat": 0.102
+              },
+              "state": "keitettyä, kuorittua ja valutettua punajuurta",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "kananmunaa ilman kuoria, noin 2 munaa",
+            "amount": 100,
+            "unit": "g",
+            "state": "kananmunaa ilman kuoria, noin 2 munaa",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-858-release-20",
+              "name": "KANANMUNA, KUORETON",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0.3,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 12.61,
+                "fat": 9.24
+              },
+              "state": "kananmunaa ilman kuoria, noin 2 munaa",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "kaurahiutaleita",
+            "amount": 100,
+            "unit": "g",
+            "state": "kaurahiutaleita",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-153-release-20",
+              "name": "KAURAHIUTALE",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/153",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": false,
+              "per100g": {
+                "carbohydrate": 59.99,
+                "fibre": 5.7,
+                "polyols": null,
+                "protein": 13.6,
+                "fat": 7.24
+              },
+              "state": "kaurahiutaleita",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "kuorittua keltasipulia",
+            "amount": 90,
+            "unit": "g",
+            "state": "kuorittua keltasipulia",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-335-release-20",
+              "name": "SIPULI, KELTASIPULI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 4.8,
+                "fibre": 1.2,
+                "polyols": 0,
+                "protein": 1.25,
+                "fat": 0.1
+              },
+              "state": "kuorittua keltasipulia",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "suolaa",
+            "amount": 4,
+            "unit": "g",
+            "state": "suolaa",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-79-release-20",
+              "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 0,
+                "fat": 0
+              },
+              "state": "suolaa",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "rypsiöljyä paistamiseen",
+            "amount": 25,
+            "unit": "g",
+            "state": "rypsiöljyä paistamiseen",
+            "excludedReason": "Paistoöljyn ruokaan jäävää määrää ei punnittu."
+          }
+        ]
+      },
+      "preliminary_per_serving": {
+        "kcal": null,
+        "protein": 8.44,
+        "fat": 4.26,
+        "carbohydrate": 25.34,
+        "fibre": 4.56,
+        "sugars": null,
+        "polyols": null,
+        "netCarbohydrate": null
+      },
+      "preliminary_total_carbohydrate_g": null,
+      "possible_partial_fields": {
+        "netCarbohydrate": 25.34,
+        "protein": 8.44,
+        "fat": 4.26
+      },
+      "limitations": "Paistorasvan toteutunut määrä ja kaurahiutaleiden polyolit puuttuvat.",
+      "issues": [
+        {
+          "ingredient": "kaurahiutaleita",
+          "issues": [
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ],
+          "excluded": null
+        },
+        {
+          "ingredient": "rypsiöljyä paistamiseen",
+          "issues": [],
+          "excluded": "Paistoöljyn ruokaan jäävää määrää ei punnittu."
+        }
+      ]
+    },
+    "glycemic": {
+      "decision": "UNREVIEWED_NO_RELIABLE_GK_CANDIDATE",
+      "reason": "Paistetun pihvin kaurahiutaleita ei voi käsitellä keitetyn kaurapuuron GI:llä.",
+      "value": null
+    },
+    "physical_cook_test": false
+  }
+}

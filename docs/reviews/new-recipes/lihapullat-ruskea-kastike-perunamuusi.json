@@ -1,0 +1,459 @@
+{
+  "schema_version": 1,
+  "recipe_id": "lihapullat-ruskea-kastike-perunamuusi",
+  "source_path": "reseptit/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md",
+  "source_sha256": "c3a47cdc54006ad03dc22ef4aed53c256504d0634f71e2b46572cee853b0f482",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/lihapullat-haudutetut-valkosipuliperunat-ja-ruskea-kastike/"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Täsmälliset tunnisteet ja reitit verrataan mainiin ja tuotantoon. Lähin toimituksellinen vertailu kuuluu riippumattomaan sisältökatselmointiin."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Vertaa raaka-ainemäärät ja -tilat, mukaan lukien vaihtoehdot ja allergeenit, alkuperäiseen valmistuslähteeseen ja kieliversioihin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Recipavon toimituksellinen sovitus. Kuvitus ei ole osoitus valmistuskokeesta."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Tarkista reseptin kypsennys ja kylmäkäsittely sekä ainesosista ja tuotemerkinnöistä seuraavat allergeenit."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "4 annosta / 70 min, reseptin rajauksin. Arvio."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Maitotyyppi ja kastikkeen vesi-/liemivaihtoehto ovat avoimia. Paistossa erottuvaa rasvaa ei punnittu."
+    },
+    "glycemic": {
+      "status": "pending",
+      "notes": "Muusin valmistuskohtainen GI ja kastikepohjan koostumus ovat sitomatta."
+    }
+  },
+  "candidate_review": {
+    "markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md",
+        "sha256": "a28fc4c1bf0c64c26f594f0833b0c15df5094dd841bf5b600f5b4b43550b69ca"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md",
+        "sha256": "f868b93e99f208603cf5bb197a0529f4cf66a20f58c954f92a213b91b45d2e9a"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md",
+        "sha256": "9a56e3e3a552a350e0e0b870cbbe9b5bd51ab3968c2070f0bfc2a64a8a38afb1"
+      },
+      {
+        "path": "reseptit/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md",
+        "sha256": "c3a47cdc54006ad03dc22ef4aed53c256504d0634f71e2b46572cee853b0f482"
+      }
+    ],
+    "image": {
+      "path": "kuvat/paaruoat/lihapullat-ruskea-kastike-perunamuusi.webp",
+      "bytes": 79346,
+      "sha256": "86a72cf2a01cd4872d02753e00c9bf93353e116527e0ef6388eb7b89e84dae6e",
+      "width": 960,
+      "height": 640,
+      "origin": "Tekoälyllä luotu havainnekuva"
+    },
+    "nutrition": {
+      "status": "WITHHOLD_CANDIDATE",
+      "calculation": {
+        "recipeId": "lihapullat-ruskea-kastike-perunamuusi",
+        "sourceHash": "9b2e27f2b5ce67e9f561ea2fad64120f7886a834b1e1973244fd766cdeb7ebf0",
+        "calculatedAt": "2026-11-25",
+        "servings": 4,
+        "scope": "Yksi annos reseptin 4 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Maitotyyppi ja kastikkeen vesi-/liemivaihtoehto ovat avoimia. Paistossa erottuvaa rasvaa ei punnittu.",
+        "reviewerStatus": "AUTOMATED ONLY",
+        "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+        "ingredients": [
+          {
+            "item": "sika-nautajauhelihaa lihapulliin",
+            "amount": 500,
+            "unit": "g",
+            "state": "sika-nautajauhelihaa lihapulliin",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-711-release-20",
+              "name": "JAUHELIHA, SIKA-NAUTA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/711",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 17.6,
+                "fat": 21.962
+              },
+              "state": "sika-nautajauhelihaa lihapulliin",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "sipulia hienonnettuna",
+            "amount": 60,
+            "unit": "g",
+            "state": "sipulia hienonnettuna",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-335-release-20",
+              "name": "SIPULI, KELTASIPULI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 4.8,
+                "fibre": 1.2,
+                "polyols": 0,
+                "protein": 1.25,
+                "fat": 0.1
+              },
+              "state": "sipulia hienonnettuna",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "korppujauhoja",
+            "amount": 50,
+            "unit": "g",
+            "state": "korppujauhoja",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-126-release-20",
+              "name": "JAUHO, KORPPUJAUHO",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/126",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 73.621,
+                "fibre": 3.482,
+                "polyols": 0,
+                "protein": 11.54,
+                "fat": 1.552
+              },
+              "state": "korppujauhoja",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "maitoa lihapulliin",
+            "amount": 120,
+            "unit": "ml",
+            "state": "maitoa lihapulliin",
+            "excludedReason": "Maitotyyppiä ei määritelty."
+          },
+          {
+            "item": "kananmuna",
+            "amount": 1,
+            "unit": "kpl",
+            "state": "kananmuna",
+            "gramsPerUnit": 55,
+            "conversionEvidence": "Fineli 858, keskikokoinen syötävä kappale 55 g.",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-858-release-20",
+              "name": "KANANMUNA, KUORETON",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0.3,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 12.61,
+                "fat": 9.24
+              },
+              "state": "kananmuna",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "jauhoisia perunoita muusiin",
+            "amount": 800,
+            "unit": "g",
+            "state": "jauhoisia perunoita muusiin",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-205-release-20",
+              "name": "PERUNA, VANHA, KUORITTU",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/205",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 15.5,
+                "fibre": 1.4,
+                "polyols": 0,
+                "protein": 1.88,
+                "fat": 0.114
+              },
+              "state": "jauhoisia perunoita muusiin",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "maitoa muusiin",
+            "amount": 150,
+            "unit": "ml",
+            "state": "maitoa muusiin",
+            "excludedReason": "Maitotyyppiä ei määritelty."
+          },
+          {
+            "item": "voita muusiin",
+            "amount": 40,
+            "unit": "g",
+            "state": "voita muusiin",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-500-release-20",
+              "name": "VOI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0.8,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 1.19,
+                "fat": 81.3
+              },
+              "state": "voita muusiin",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "voita kastikkeeseen",
+            "amount": 30,
+            "unit": "g",
+            "state": "voita kastikkeeseen",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-500-release-20",
+              "name": "VOI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0.8,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 1.19,
+                "fat": 81.3
+              },
+              "state": "voita kastikkeeseen",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "vehnäjauhoja kastikkeeseen",
+            "amount": 30,
+            "unit": "g",
+            "state": "vehnäjauhoja kastikkeeseen",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-110-release-20",
+              "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 73.998,
+                "fibre": 3.5,
+                "polyols": 0,
+                "protein": 11.6,
+                "fat": 1.56
+              },
+              "state": "vehnäjauhoja kastikkeeseen",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "vettä tai vähäsuolaista lihalientä",
+            "amount": 450,
+            "unit": "ml",
+            "state": "vettä tai vähäsuolaista lihalientä",
+            "excludedReason": "Vesi ja lihaliemi eivät ole sama ravintosyöte."
+          },
+          {
+            "item": "suolaa yhteensä",
+            "amount": 7,
+            "unit": "g",
+            "state": "suolaa yhteensä",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-79-release-20",
+              "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 0,
+                "fat": 0
+              },
+              "state": "suolaa yhteensä",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "mustapippuria",
+            "amount": 1,
+            "unit": "g",
+            "state": "mustapippuria",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-11177-release-20",
+              "name": "MUSTAPIPPURI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": false,
+              "per100g": {
+                "carbohydrate": 38.31,
+                "fibre": null,
+                "polyols": null,
+                "protein": 10.9,
+                "fat": 3.3
+              },
+              "state": "mustapippuria",
+              "retrievedAt": "2026-11-25"
+            }
+          }
+        ]
+      },
+      "preliminary_per_serving": {
+        "kcal": null,
+        "protein": 30.23,
+        "fat": 43.51,
+        "carbohydrate": 46.75,
+        "fibre": null,
+        "sugars": null,
+        "polyols": null,
+        "netCarbohydrate": null
+      },
+      "preliminary_total_carbohydrate_g": null,
+      "possible_partial_fields": {
+        "netCarbohydrate": 46.75,
+        "protein": 30.23,
+        "fat": 43.51
+      },
+      "limitations": "Maitotyyppi ja kastikkeen vesi-/liemivaihtoehto ovat avoimia. Paistossa erottuvaa rasvaa ei punnittu.",
+      "issues": [
+        {
+          "ingredient": "maitoa lihapulliin",
+          "issues": [],
+          "excluded": "Maitotyyppiä ei määritelty."
+        },
+        {
+          "ingredient": "maitoa muusiin",
+          "issues": [],
+          "excluded": "Maitotyyppiä ei määritelty."
+        },
+        {
+          "ingredient": "vettä tai vähäsuolaista lihalientä",
+          "issues": [],
+          "excluded": "Vesi ja lihaliemi eivät ole sama ravintosyöte."
+        },
+        {
+          "ingredient": "mustapippuria",
+          "issues": [
+            "Unknown nutrient fibre",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ],
+          "excluded": null
+        }
+      ]
+    },
+    "glycemic": {
+      "decision": "UNREVIEWED_NO_RELIABLE_GK_CANDIDATE",
+      "reason": "Muusin valmistuskohtainen GI ja kastikepohjan koostumus ovat sitomatta.",
+      "value": null
+    },
+    "physical_cook_test": false
+  }
+}

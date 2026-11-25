@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perinteinen-lohilaatikko",
+  "source_path": "reseptit/paaruoat/perinteinen-lohilaatikko.md",
+  "source_sha256": "dc16877f6e1eab9628518405c6187700982e3a20f644f65faf60748e03223b83",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/lohi-perunalaatikko"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Täsmälliset tunnisteet ja reitit verrataan mainiin ja tuotantoon. Lähin toimituksellinen vertailu kuuluu riippumattomaan sisältökatselmointiin."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Vertaa raaka-ainemäärät ja -tilat, mukaan lukien vaihtoehdot ja allergeenit, alkuperäiseen valmistuslähteeseen ja kieliversioihin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Recipavon toimituksellinen sovitus. Kuvitus ei ole osoitus valmistuskokeesta."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Tarkista reseptin kypsennys ja kylmäkäsittely sekä ainesosista ja tuotemerkinnöistä seuraavat allergeenit."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "5 annosta / 105 min, reseptin rajauksin. Arvio."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Lohen rasva vaihtelee, ja maustepippurin tarkka ravintotietue puuttuu."
+    },
+    "glycemic": {
+      "status": "pending",
+      "notes": "Laatikossa munamaidossa paistetulle perunalle ei ole täsmäävää GI-sidontaa."
+    }
+  },
+  "candidate_review": {
+    "markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/perinteinen-lohilaatikko.md",
+        "sha256": "252c30ef8ccae8d0cb654c22069b1042aa9a933723ffdd3ecbc8a937284222b9"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/perinteinen-lohilaatikko.md",
+        "sha256": "2c722d583eb4a2833d6450134d0e3054ae864d7461e56b42ffcb1b262f68d344"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/perinteinen-lohilaatikko.md",
+        "sha256": "c97500c5bffcba5b3b9b65c762dd54d30b290480f484c2340a9ae8b177139804"
+      },
+      {
+        "path": "reseptit/paaruoat/perinteinen-lohilaatikko.md",
+        "sha256": "dc16877f6e1eab9628518405c6187700982e3a20f644f65faf60748e03223b83"
+      }
+    ],
+    "image": {
+      "path": "kuvat/paaruoat/perinteinen-lohilaatikko.webp",
+      "bytes": 87694,
+      "sha256": "8074938693d4b5c558bff81b3996690f8d601e98b392ede17a4e187835b54a38",
+      "width": 960,
+      "height": 640,
+      "origin": "Tekoälyllä luotu havainnekuva"
+    },
+    "nutrition": {
+      "status": "WITHHOLD_CANDIDATE",
+      "calculation": {
+        "recipeId": "perinteinen-lohilaatikko",
+        "sourceHash": "dabab144029e6854f3460818b40a39d68eb5c1b5b77b27c1aa4e83b75fe4e3bf",
+        "calculatedAt": "2026-11-25",
+        "servings": 5,
+        "scope": "Yksi annos reseptin 5 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Lohen rasva vaihtelee, ja maustepippurin tarkka ravintotietue puuttuu.",
+        "reviewerStatus": "AUTOMATED ONLY",
+        "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+        "ingredients": [
+          {
+            "item": "kuorittuja perunoita ohuina viipaleina",
+            "amount": 1000,
+            "unit": "g",
+            "state": "kuorittuja perunoita ohuina viipaleina",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-205-release-20",
+              "name": "PERUNA, VANHA, KUORITTU",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/205",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 15.5,
+                "fibre": 1.4,
+                "polyols": 0,
+                "protein": 1.88,
+                "fat": 0.114
+              },
+              "state": "kuorittuja perunoita ohuina viipaleina",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "ruodotonta ja nahatonta raakaa lohifileetä",
+            "amount": 500,
+            "unit": "g",
+            "state": "ruodotonta ja nahatonta raakaa lohifileetä",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-34255-release-20",
+              "name": "LOHI, FILEE, KASVATETTU",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34255",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 20,
+                "fat": 16.37
+              },
+              "state": "ruodotonta ja nahatonta raakaa lohifileetä",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "sipulia ohuina viipaleina",
+            "amount": 140,
+            "unit": "g",
+            "state": "sipulia ohuina viipaleina",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-335-release-20",
+              "name": "SIPULI, KELTASIPULI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 4.8,
+                "fibre": 1.2,
+                "polyols": 0,
+                "protein": 1.25,
+                "fat": 0.1
+              },
+              "state": "sipulia ohuina viipaleina",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "täysmaitoa",
+            "amount": 500,
+            "unit": "ml",
+            "state": "täysmaitoa",
+            "gramsPerUnit": 1,
+            "conversionEvidence": "Fineli 689, tuotekohtainen DL-annospaino 100 g/100 ml.",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-689-release-20",
+              "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/689",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 4.8,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 3,
+                "fat": 3.5
+              },
+              "state": "täysmaitoa",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "kananmunia",
+            "amount": 3,
+            "unit": "kpl",
+            "state": "kananmunia",
+            "gramsPerUnit": 55,
+            "conversionEvidence": "Fineli 858, keskikokoinen syötävä kappale 55 g.",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-858-release-20",
+              "name": "KANANMUNA, KUORETON",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0.3,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 12.61,
+                "fat": 9.24
+              },
+              "state": "kananmunia",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "voita vuokaan ja pinnalle",
+            "amount": 30,
+            "unit": "g",
+            "state": "voita vuokaan ja pinnalle",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-500-release-20",
+              "name": "VOI",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0.8,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 1.19,
+                "fat": 81.3
+              },
+              "state": "voita vuokaan ja pinnalle",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "tuoretta tilliä hienonnettuna",
+            "amount": 15,
+            "unit": "g",
+            "state": "tuoretta tilliä hienonnettuna",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-369-release-20",
+              "name": "TILLI, TUORE",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/369",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0.9,
+                "fibre": 2.8,
+                "polyols": 0,
+                "protein": 3.69,
+                "fat": 0.8
+              },
+              "state": "tuoretta tilliä hienonnettuna",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "suolaa",
+            "amount": 7,
+            "unit": "g",
+            "state": "suolaa",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-79-release-20",
+              "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 0,
+                "fat": 0
+              },
+              "state": "suolaa",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "jauhettua maustepippuria",
+            "amount": 0.8,
+            "unit": "g",
+            "state": "jauhettua maustepippuria",
+            "excludedReason": "Jauhetun maustepippurin ravintotietuetta ei varmistettu."
+          }
+        ]
+      },
+      "preliminary_per_serving": {
+        "kcal": null,
+        "protein": 31.45,
+        "fat": 28.08,
+        "carbohydrate": 37.32,
+        "fibre": 3.22,
+        "sugars": null,
+        "polyols": 0,
+        "netCarbohydrate": 37.32
+      },
+      "preliminary_total_carbohydrate_g": 40.54,
+      "possible_partial_fields": {
+        "netCarbohydrate": 37.32,
+        "protein": 31.45,
+        "fat": 28.08
+      },
+      "limitations": "Lohen rasva vaihtelee, ja maustepippurin tarkka ravintotietue puuttuu.",
+      "issues": [
+        {
+          "ingredient": "jauhettua maustepippuria",
+          "issues": [],
+          "excluded": "Jauhetun maustepippurin ravintotietuetta ei varmistettu."
+        }
+      ]
+    },
+    "glycemic": {
+      "decision": "UNREVIEWED_NO_RELIABLE_GK_CANDIDATE",
+      "reason": "Laatikossa munamaidossa paistetulle perunalle ei ole täsmäävää GI-sidontaa.",
+      "value": null
+    },
+    "physical_cook_test": false
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "recipe_id": "paahdetut-juurekset-timjamilla",
+  "source_path": "reseptit/alkuruoat/paahdetut-juurekset-timjamilla.md",
+  "source_sha256": "240ebae9e5b9e4c74d61a45ca257c09902b059b440c5d4a11c471a9104f47030",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/uunissa-paahdetut-juurekset/"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Täsmälliset tunnisteet ja reitit verrataan mainiin ja tuotantoon. Lähin toimituksellinen vertailu kuuluu riippumattomaan sisältökatselmointiin."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Vertaa raaka-ainemäärät ja -tilat, mukaan lukien vaihtoehdot ja allergeenit, alkuperäiseen valmistuslähteeseen ja kieliversioihin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Recipavon toimituksellinen sovitus. Kuvitus ei ole osoitus valmistuskokeesta."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Tarkista reseptin kypsennys ja kylmäkäsittely sekä ainesosista ja tuotemerkinnöistä seuraavat allergeenit."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "4 annosta / 45 min, reseptin rajauksin. Arvio."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Timjamin kuitu- ja polyolitiedot puuttuvat. Öljy lasketaan käytetyn, ei mitatun ruokaan jäävän määrän perusteella."
+    },
+    "glycemic": {
+      "status": "pending",
+      "notes": "Paahdetun lanttu–porkkana–palsternakkaseoksen GI-vastaavuus puuttuu."
+    }
+  },
+  "candidate_review": {
+    "markdown": [
+      {
+        "path": "kaannokset/en/alkuruoat/paahdetut-juurekset-timjamilla.md",
+        "sha256": "f98f3e540b248a4045ee5e20a89f051a92d7fc76df70b51082714c675d633a8f"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/paahdetut-juurekset-timjamilla.md",
+        "sha256": "566a153dac49290e167fb1c91ed93a6b718c125048c5d3a140b3c19116f7c9b4"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/paahdetut-juurekset-timjamilla.md",
+        "sha256": "3fdf2b323e8890b036dddacbd26d0c8a9d3f6555a7553dce29a17cadfb0c8558"
+      },
+      {
+        "path": "reseptit/alkuruoat/paahdetut-juurekset-timjamilla.md",
+        "sha256": "240ebae9e5b9e4c74d61a45ca257c09902b059b440c5d4a11c471a9104f47030"
+      }
+    ],
+    "image": {
+      "path": "kuvat/alkuruoat/paahdetut-juurekset-timjamilla.webp",
+      "bytes": 152060,
+      "sha256": "1f7d1840e8533de1b2ae8e01baf5e7de574b2e9d0cca1d7b7718284c1813911f",
+      "width": 960,
+      "height": 640,
+      "origin": "Tekoälyllä luotu havainnekuva"
+    },
+    "nutrition": {
+      "status": "PARTIAL_CANDIDATE",
+      "calculation": {
+        "recipeId": "paahdetut-juurekset-timjamilla",
+        "sourceHash": "6dd91b83bcba3102b053f23323762feef403e2d1ffeea0a71498d9962edc0e6a",
+        "calculatedAt": "2026-11-25",
+        "servings": 4,
+        "scope": "Yksi annos reseptin 4 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Timjamin kuitu- ja polyolitiedot puuttuvat. Öljy lasketaan käytetyn, ei mitatun ruokaan jäävän määrän perusteella.",
+        "reviewerStatus": "AUTOMATED ONLY",
+        "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+        "ingredients": [
+          {
+            "item": "kuorittua porkkanaa",
+            "amount": 300,
+            "unit": "g",
+            "state": "kuorittua porkkanaa",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-300-release-20",
+              "name": "PORKKANA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/300",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 5.56,
+                "fibre": 2.4,
+                "polyols": 0,
+                "protein": 0.63,
+                "fat": 0.2
+              },
+              "state": "kuorittua porkkanaa",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "kuorittua lanttua",
+            "amount": 250,
+            "unit": "g",
+            "state": "kuorittua lanttua",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-303-release-20",
+              "name": "LANTTU",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/303",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 5.88,
+                "fibre": 1.8,
+                "polyols": 0,
+                "protein": 1.1,
+                "fat": 0.1
+              },
+              "state": "kuorittua lanttua",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "kuorittua palsternakkaa",
+            "amount": 200,
+            "unit": "g",
+            "state": "kuorittua palsternakkaa",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-309-release-20",
+              "name": "PALSTERNAKKA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/309",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 10.31,
+                "fibre": 4.5,
+                "polyols": 0,
+                "protein": 1.1,
+                "fat": 0.57
+              },
+              "state": "kuorittua palsternakkaa",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "rypsiöljyä",
+            "amount": 25,
+            "unit": "g",
+            "state": "rypsiöljyä",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-535-release-20",
+              "name": "RYPSIÖLJY",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/535",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 0,
+                "fat": 100
+              },
+              "state": "rypsiöljyä",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "kuivattua timjamia",
+            "amount": 1,
+            "unit": "g",
+            "state": "kuivattua timjamia",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-11194-release-20",
+              "name": "TIMJAMI, KUIVATTU",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11194",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": false,
+              "per100g": {
+                "carbohydrate": 26.94,
+                "fibre": null,
+                "polyols": null,
+                "protein": 9.1,
+                "fat": 7.4
+              },
+              "state": "kuivattua timjamia",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "suolaa",
+            "amount": 3,
+            "unit": "g",
+            "state": "suolaa",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-79-release-20",
+              "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 0,
+                "fat": 0
+              },
+              "state": "suolaa",
+              "retrievedAt": "2026-11-25"
+            }
+          }
+        ]
+      },
+      "preliminary_per_serving": {
+        "kcal": null,
+        "protein": 1.73,
+        "fat": 6.77,
+        "carbohydrate": 13.07,
+        "fibre": null,
+        "sugars": null,
+        "polyols": null,
+        "netCarbohydrate": null
+      },
+      "preliminary_total_carbohydrate_g": null,
+      "possible_partial_fields": {
+        "netCarbohydrate": 13.07,
+        "protein": 1.73,
+        "fat": 6.77
+      },
+      "limitations": "Timjamin kuitu- ja polyolitiedot puuttuvat. Öljy lasketaan käytetyn, ei mitatun ruokaan jäävän määrän perusteella.",
+      "issues": [
+        {
+          "ingredient": "kuivattua timjamia",
+          "issues": [
+            "Unknown nutrient fibre",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ],
+          "excluded": null
+        }
+      ]
+    },
+    "glycemic": {
+      "decision": "UNREVIEWED_NO_RELIABLE_GK_CANDIDATE",
+      "reason": "Paahdetun lanttu–porkkana–palsternakkaseoksen GI-vastaavuus puuttuu.",
+      "value": null
+    },
+    "physical_cook_test": false
+  }
+}

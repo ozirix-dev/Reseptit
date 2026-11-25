@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "recipe_id": "munavoi-karjalanpiirakoille",
+  "source_path": "reseptit/alkuruoat/munavoi-karjalanpiirakoille.md",
+  "source_sha256": "d6e3c22401442b34786662fb8e4b557ab88761d89485124bd8be10326fd0e49a",
+  "decision": "hold",
+  "reviewed_by": "UNREVIEWED",
+  "reviewed_at": "",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/wp-content/uploads/2018/12/Yllatysmuna-aineisto-2019.pdf"
+    ]
+  },
+  "nutrition_evidence": "",
+  "checks": {
+    "duplicates": {
+      "status": "pending",
+      "notes": "Täsmälliset tunnisteet ja reitit verrataan mainiin ja tuotantoon. Lähin toimituksellinen vertailu kuuluu riippumattomaan sisältökatselmointiin."
+    },
+    "ingredients": {
+      "status": "pending",
+      "notes": "Vertaa raaka-ainemäärät ja -tilat, mukaan lukien vaihtoehdot ja allergeenit, alkuperäiseen valmistuslähteeseen ja kieliversioihin."
+    },
+    "method": {
+      "status": "pending",
+      "notes": "Recipavon toimituksellinen sovitus. Kuvitus ei ole osoitus valmistuskokeesta."
+    },
+    "food_safety": {
+      "status": "pending",
+      "notes": "Tarkista reseptin kypsennys ja kylmäkäsittely sekä ainesosista ja tuotemerkinnöistä seuraavat allergeenit."
+    },
+    "servings_and_time": {
+      "status": "pending",
+      "notes": "6 annosta / 25 min, reseptin rajauksin. Arvio."
+    },
+    "nutrition": {
+      "status": "pending",
+      "notes": "Neljä kenttää laskettavissa. Annos on kuudesosa levitteestä ilman piirakkaa."
+    },
+    "glycemic": {
+      "status": "pending",
+      "notes": "Pienille voin ja munan hiilihydraattimäärille ei ole hyväksyttyä GI-sidontaa."
+    }
+  },
+  "candidate_review": {
+    "markdown": [
+      {
+        "path": "kaannokset/en/alkuruoat/munavoi-karjalanpiirakoille.md",
+        "sha256": "c23ae6cca4610a84632a8e5250cf7e8893411dc2e966b8ca2bc60b113d561d5e"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/munavoi-karjalanpiirakoille.md",
+        "sha256": "e5e9def8776102c9d39342a54ba164ad807544dc0ab3efdd19c361bd7d936266"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/munavoi-karjalanpiirakoille.md",
+        "sha256": "9f3e82a5170d00aad03becec73276cd8dc4e71b6c6f3998a29e6d26f8398a4ea"
+      },
+      {
+        "path": "reseptit/alkuruoat/munavoi-karjalanpiirakoille.md",
+        "sha256": "d6e3c22401442b34786662fb8e4b557ab88761d89485124bd8be10326fd0e49a"
+      }
+    ],
+    "image": {
+      "path": "kuvat/alkuruoat/munavoi-karjalanpiirakoille.webp",
+      "bytes": 67872,
+      "sha256": "081fbe3de7aeb263ffd9c5400b96b7b67da3a56f6eb65deac044245578b31d20",
+      "width": 960,
+      "height": 640,
+      "origin": "Tekoälyllä luotu havainnekuva"
+    },
+    "nutrition": {
+      "status": "COMPLETE_CALCULATION_CANDIDATE",
+      "calculation": {
+        "recipeId": "munavoi-karjalanpiirakoille",
+        "sourceHash": "8ad12c4a2a23ad69583c00d3ab21b8a6d7b9059346a4c991b2b45001f51faa3b",
+        "calculatedAt": "2026-11-25",
+        "servings": 6,
+        "scope": "Yksi annos reseptin 6 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Neljä kenttää laskettavissa. Annos on kuudesosa levitteestä ilman piirakkaa.",
+        "reviewerStatus": "AUTOMATED ONLY",
+        "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+        "ingredients": [
+          {
+            "item": "kananmunaa ilman kuoria, noin 4 munaa",
+            "amount": 200,
+            "unit": "g",
+            "state": "kananmunaa ilman kuoria, noin 4 munaa",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-8513-release-20",
+              "name": "KANANMUNA, KEITETTY",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/8513",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0.3,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 12.61,
+                "fat": 9.24
+              },
+              "state": "kananmunaa ilman kuoria, noin 4 munaa",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "suolatonta voita",
+            "amount": 70,
+            "unit": "g",
+            "state": "suolatonta voita",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-576-release-20",
+              "name": "VOI, SUOLATON",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/576",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0.8,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 1.19,
+                "fat": 81.3
+              },
+              "state": "suolatonta voita",
+              "retrievedAt": "2026-11-25"
+            }
+          },
+          {
+            "item": "suolaa",
+            "amount": 1,
+            "unit": "g",
+            "state": "suolaa",
+            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+            "edibleFraction": 1,
+            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+            "retainedFraction": 1,
+            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+            "record": {
+              "id": "fineli-79-release-20",
+              "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
+              "licence": "THL Fineli Release 20, CC BY 4.0",
+              "basis": "per100g-edible",
+              "carbohydrateDefinition": "EU_AVAILABLE",
+              "polyolsSourceVerified": true,
+              "polyolsEvidence": "Fineli Release 20, SUGOH.",
+              "per100g": {
+                "carbohydrate": 0,
+                "fibre": 0,
+                "polyols": 0,
+                "protein": 0,
+                "fat": 0
+              },
+              "state": "suolaa",
+              "retrievedAt": "2026-11-25"
+            }
+          }
+        ]
+      },
+      "preliminary_per_serving": {
+        "kcal": null,
+        "protein": 4.34,
+        "fat": 12.57,
+        "carbohydrate": 0.19,
+        "fibre": 0,
+        "sugars": null,
+        "polyols": 0,
+        "netCarbohydrate": 0.19
+      },
+      "preliminary_total_carbohydrate_g": 0.19,
+      "possible_partial_fields": {
+        "netCarbohydrate": 0.19,
+        "protein": 4.34,
+        "fat": 12.57
+      },
+      "limitations": "Neljä kenttää laskettavissa. Annos on kuudesosa levitteestä ilman piirakkaa.",
+      "issues": []
+    },
+    "glycemic": {
+      "decision": "UNREVIEWED_NO_RELIABLE_GK_CANDIDATE",
+      "reason": "Pienille voin ja munan hiilihydraattimäärille ei ole hyväksyttyä GI-sidontaa.",
+      "value": null
+    },
+    "physical_cook_test": false
+  }
+}
