@@ -9,6 +9,7 @@ const site = path.resolve(import.meta.dirname, "..");
 const recipeId = "nutrition-removal-fixture";
 const recipe = `reseptit/jalkiruoat/${recipeId}.md`;
 const calculation = `docs/nutrition/calculations/${recipeId}.json`;
+const pendingGk = "docs/nutrition/new-public-gk-pending-sources.json";
 const published = `---
 title: Test recipe
 recipe_id: ${recipeId}
@@ -48,6 +49,7 @@ test("changed-content CLI checks nutrition evidence when a recipe leaves publica
     path.join(root, "docs/nutrition/recipe-correctness-history.json"));
   await writeFile(path.join(root, "docs/nutrition/glycemic-load-recipe-bindings.json"), "{}");
   await writeFile(path.join(root, "docs/nutrition/glycemic-load-recipe-aliases.json"), "{}");
+  await writeFile(path.join(root, pendingGk), "{}");
   await mkdir(path.dirname(path.join(root, recipe)), { recursive: true });
 
   const git = (...args: string[]) =>
@@ -55,7 +57,7 @@ test("changed-content CLI checks nutrition evidence when a recipe leaves publica
   git("init", "--quiet");
   await writeFile(path.join(root, recipe), published);
   await writeFile(path.join(root, calculation), JSON.stringify({ recipeId }));
-  git("add", "--", recipe, calculation);
+  git("add", "--", recipe, calculation, pendingGk);
   const base = git("write-tree");
   const validate = (...changed: string[]) => {
     git("read-tree", base);
@@ -68,6 +70,16 @@ test("changed-content CLI checks nutrition evidence when a recipe leaves publica
       env: { ...process.env, BASE_SHA: base, HEAD_SHA: head },
     });
   };
+
+  await t.test("GK-pending publication without an audited calculation fails locally", async () => {
+    await rm(path.join(root, calculation));
+    await writeFile(path.join(root, recipe), published + "\n");
+    await writeFile(path.join(root, pendingGk), JSON.stringify({ [recipeId]: git("hash-object", recipe) }));
+    const missing = validate(recipe, pendingGk);
+    assert.equal(missing.status, 1, missing.stderr || missing.stdout);
+    assert.match(missing.stderr, /New-public GK pending records disagree/);
+    await writeFile(path.join(root, pendingGk), "{}");
+  });
 
   for (const change of ["deleted", "draft"] as const) {
     await t.test(`${change} recipe with unchanged calculation is rejected`, async () => {
