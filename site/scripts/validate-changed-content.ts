@@ -279,7 +279,7 @@ for (const recipeId of recipeIds) {
   if (evidence) {
     if (isRecoveryEvidence(evidence)) await loadRecovery(repoRoot,recipeId);
     if (isScopedPolyolEvidence(evidence)) assert(await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: scoped C preparation approval is stale`);
-    const approval = await readNutritionFieldApproval(repoRoot, evidence);
+    const approval = await readNutritionFieldApproval(repoRoot, evidence, { requireBatchMembership: true });
     const result = verifyNutritionEvidence(source.data, evidence, translations, approval);
     assert.deepEqual(result.errors, [], `${recipeId}: nutrition evidence validation failed`);
   } else {
