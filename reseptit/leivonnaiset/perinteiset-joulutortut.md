@@ -1,0 +1,39 @@
+---
+title: "Perinteiset joulutortut"
+recipe_id: perinteiset-joulutortut
+url_slug: perinteiset-joulutortut
+category: leivonnainen
+language: fi
+status: draft
+servings: 10
+time_total_min: 45
+difficulty: "helppo"
+main_ingredient: ["lehtitaikina"]
+cooking_method: ["uuni"]
+ingredients:
+  - amount: 500
+    unit: "g"
+    item: "pakastettua voitaikinaa levyinä"
+  - amount: 100
+    unit: "g"
+    item: "paistonkestävää luumumarmeladia"
+  - amount: 1
+    unit: "kpl"
+    item: "kananmuna voiteluun"
+---
+
+# Perinteiset joulutortut
+
+Rapeaksi paistuvan tähtitortun keskelle lusikoidaan uuninkestävää luumumarmeladia.
+
+## Valmistus
+
+1. Sulata taikinalevyt pakkauksen ohjeen mukaan. Kuumenna uuni 225 °C:seen ja vuoraa pelti leivinpaperilla.
+2. Leikkaa taikina kymmeneen neliöön. Viillä jokaisesta kulmasta kohti keskustaa niin, että keskikohta jää ehjäksi. Nosta joka toinen kärki keskelle ja paina kärjet kiinni.
+3. Vatkaa muna ja sivele taikinan pinta. Laita jokaisen tortun keskelle noin 10 g marmeladia.
+4. Paista 10–15 minuuttia, kunnes tortut ovat kohonneet ja kullanruskeita. Anna jäähtyä hetki ennen tarjoilua, sillä täyte on kuuma.
+
+## Muistiinpanot
+
+- Sisältää vehnää, maitoa ja kananmunaa.
+- Vertailulähde: https://www.martat.fi/reseptit/joulutortut/

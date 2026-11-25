@@ -1,0 +1,53 @@
+---
+title: "Vuohenjuustolla täytetyt minipaprikat"
+recipe_id: vuohenjuustolla-taytetyt-minipaprikat
+url_slug: vuohenjuustolla-taytetyt-minipaprikat
+category: valipala
+language: fi
+status: draft
+servings: 5
+time_total_min: 40
+difficulty: "helppo"
+main_ingredient: ["paprika","vuohenjuusto"]
+cooking_method: ["uuni"]
+ingredients:
+  - amount: 10
+    unit: "kpl"
+    item: "makeaa minipaprikaa"
+  - amount: 1
+    unit: "tl"
+    item: "oliiviöljyä"
+  - amount: 0.25
+    unit: "tl"
+    item: "hienoa suolaa"
+  - amount: 0.25
+    unit: "tl"
+    item: "jauhettua mustapippuria"
+  - amount: 115
+    unit: "g"
+    item: "pehmeää vuohenjuustoa"
+  - amount: 25
+    unit: "g"
+    item: "ruohosipulituorejuustoa"
+  - amount: 1.5
+    unit: "tl"
+    item: "hienonnettua persiljaa"
+  - amount: 0.5
+    unit: "tl"
+    item: "hienoksi raastettua sitruunankuorta"
+---
+
+# Vuohenjuustolla täytetyt minipaprikat
+
+Pehmeiksi paahdetut makeat paprikat täytetään sitruunaisella vuohenjuustolla.
+
+## Valmistus
+
+1. Kuumenna uuni 200 °C:seen. Halkaise paprikat pitkittäin ja poista siemenet. Sekoita puolikkaisiin öljy, suola ja pippuri.
+2. Paahda puolikkaita pellillä noin 15 minuuttia, kunnes ne hieman pehmenevät ja saavat väriä. Anna jäähtyä huoneenlämpöisiksi.
+3. Sekoita juustot tasaiseksi tahnaksi ja mausta persiljalla sekä sitruunankuorella. Täytä paprikat juuri ennen tarjoilua. Annokseen kuuluu neljä puolikasta.
+
+## Muistiinpanot
+
+- Sisältää maitoa.
+- Vertailulähde https://mycasualpantry.com/roasted-mini-sweet-peppers-goat-cheese/
