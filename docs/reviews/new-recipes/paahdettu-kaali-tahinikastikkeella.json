@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "paahdettu-kaali-tahinikastikkeella",
+  "source_path": "reseptit/alkuruoat/paahdettu-kaali-tahinikastikkeella.md",
+  "source_sha256": "49cc330eb9701aa2664f0a10519731ccb5e19c5b497852480a687d3fe3d74d81",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://cookingwithzahra.com/roasted-cabbage-with-lemon-and-tahini-sauce/",
+      "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/valvonta/tutkimukset-ja-projektit/vierasaineisiin-liittyvia-hankkeita/oljysiementen-kartoitus--ja-valvontahanke/usein-kysyttya-oljykasvien-siemenista/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/paahdettu-kaali-tahinikastikkeella.json",
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/paahdettu-kaali-tahinikastikkeella.webp",
+    "bytes": 155354,
+    "sha256": "ec4ad2132b4f807a0b4824cb2e3fe205ea457a4418fc86b173a7bf87ba473d86",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/alkuruoat/paahdettu-kaali-tahinikastikkeella.md",
+        "sha256": "8b8e010ea2b883e285b22e9b005d36cfb28a9e5ff2cba70382fc0420fcc2bed1"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/paahdettu-kaali-tahinikastikkeella.md",
+        "sha256": "73ff086f2b0cbfd097da82d700d947de79088d678edda24eafcadecc1539b6db"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/paahdettu-kaali-tahinikastikkeella.md",
+        "sha256": "00f51dbfc0c075c9da89597a2729ff7274fcd3b7284cd283f1588d1d2b9a7a1c"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/paahdettu-kaali-tahinikastikkeella.md",
+        "sha256": "0b77ca17891bc9a5d8a95876637e74773a6cc287eb755f16d0b3ef5837391953"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "d1836a4f85edfee1e23f8eecb0c9eb5849e96bc5250791d4906ee16ab89a256b"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/paahdettu-kaali-tahinikastikkeella.md",
+        "language": "fi",
+        "slug": "paahdettu-kaali-tahinikastikkeella",
+        "sha256": "49cc330eb9701aa2664f0a10519731ccb5e19c5b497852480a687d3fe3d74d81",
+        "semantic_sha256": "2e81d6417d0e0d73f697a7461b1b0dbc43bd344c23c5521b528bd56c6a21269f"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/paahdettu-kaali-tahinikastikkeella.md",
+        "language": "en",
+        "slug": "paahdettu-kaali-tahinikastikkeella-en",
+        "sha256": "87d65c8c79c5b6fbc32c00a971f7e5748f832fb986673317c5881a85fbb00e12",
+        "semantic_sha256": "9c3eed088a41b42ebd29f0f93756a46913fce2c5ce946af3d568e204647c51b7"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/paahdettu-kaali-tahinikastikkeella.md",
+        "language": "sv",
+        "slug": "paahdettu-kaali-tahinikastikkeella-sv",
+        "sha256": "5fcf585b575deb623c7ebfcec603c27cfd1201f8a2196f40deeb167a9322b580",
+        "semantic_sha256": "4786f11787cc56678c59dc37345a99281c8a151e8f032f5e24617aae565b66d4"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/paahdettu-kaali-tahinikastikkeella.md",
+        "language": "th",
+        "slug": "paahdettu-kaali-tahinikastikkeella-th",
+        "sha256": "7c5e45501f15c44b449f755537fbfc1715e668eed1662aabf02b9f83d6b0bef5",
+        "semantic_sha256": "08596970bdd0bd47bd65c69c62c2042a926c4f10322417eb5874e22f8e430f5e"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja kokonaisaika 40 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Uudessa luonnoksessa on tarkka 40 g seesamitahnaa neljälle annokselle. Koko annoksen arviosta puuttuvat valkokaalilohkojen todellinen syötävä massa, käytetyn tahinin tuote ja koostumus sekä paistoöljyn tarjoiltu osuus."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}

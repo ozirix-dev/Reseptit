@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kvinoa-taytteiset-paprikat",
+  "source_path": "reseptit/paaruoat/kvinoa-taytteiset-paprikat.md",
+  "source_sha256": "746331a7381a95b58b54b62375992ee1964aaed9bb7f23505a455c038b130fda",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://minimalistbaker.com/spanish-quinoa-stuffed-peppers/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kvinoa-taytteiset-paprikat.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/kvinoa-taytteiset-paprikat.webp",
+    "bytes": 228772,
+    "sha256": "18fc0a83dc1bc8bddbb33c3b7eb1a4c86cfce7dac9479f73e665fe7875607ac3",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/kvinoa-taytteiset-paprikat.md",
+        "sha256": "e52b2f8b9490ad3c36fd0e104f048b236a4d79314dc37690e178607f6cf43b1f"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/kvinoa-taytteiset-paprikat.md",
+        "sha256": "1105df2ec5f6e9d50392a392911fe89536f99f020d2c830915595b915b2f2ffd"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kvinoa-taytteiset-paprikat.md",
+        "sha256": "05bf24e7fae43d55d29d4a03445337c389c3be0aaf9060d4ebae94614a39a8e0"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kvinoa-taytteiset-paprikat.md",
+        "sha256": "418a8228883e7589eb34a6db436879ea016e80679eac501ec9c76df1b51eace5"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "ddb57a1b83295b231f1b067b454dfe7e52679095740b4ee44f3176232de64107"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/kvinoa-taytteiset-paprikat.md",
+        "language": "fi",
+        "slug": "kvinoa-taytteiset-paprikat",
+        "sha256": "746331a7381a95b58b54b62375992ee1964aaed9bb7f23505a455c038b130fda",
+        "semantic_sha256": "bd88f068caa3e793d1da4064946cc189d8e11c13e66e79c652a42201fbc4e49f"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/kvinoa-taytteiset-paprikat.md",
+        "language": "en",
+        "slug": "kvinoa-taytteiset-paprikat-en",
+        "sha256": "875eb9a8df2a57ca5ae3408157532350569dfa0791f72337ae15e43cb6bc7b26",
+        "semantic_sha256": "cd2f403a61d90f223d6ab8d7d0c10c00630e900bd594244f227fd5ca4cdfe341"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kvinoa-taytteiset-paprikat.md",
+        "language": "sv",
+        "slug": "kvinoa-taytteiset-paprikat-sv",
+        "sha256": "3168e3954be2653ac63766be8689d04110b52b5b2d3b93de5f783cf8b79648e9",
+        "semantic_sha256": "27538e839af055d541dafe0b6bc16e4fbcddd7a52bdb35e24badaa6402f84bc5"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kvinoa-taytteiset-paprikat.md",
+        "language": "th",
+        "slug": "kvinoa-taytteiset-paprikat-th",
+        "sha256": "98fba4d051afc3982192321b57e6b24e8e12ecbbb54218b0760b670dde437688",
+        "semantic_sha256": "16472681b0d23d3595e6cad06dcba65c023d3a08582a713754a5b423bb1c248b"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja kokonaisaika 95 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "2.4dl kuivan kvinoan massa, 4 ison paprikan syötävä massa, mustapaputölkin valutettu massa, 2.4dl valutetun maissin massa ja 120ml salsan tuote."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}

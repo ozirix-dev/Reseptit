@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "halloumi-kasvisvartaat",
+  "source_path": "reseptit/alkuruoat/halloumi-kasvisvartaat.md",
+  "source_sha256": "6c9b43c9f6add1fbb7d504c577f656bec0715eff0cccc42981ce50ce15971a0c",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.jamieoliver.com/recipes/vegetables/vegetable-kebabs/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/halloumi-kasvisvartaat.json",
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/halloumi-kasvisvartaat.webp",
+    "bytes": 195858,
+    "sha256": "44fb665d1f1c40459c97ac1a45fb1b522fe08fe455677c954f2d878faaa1659c",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/alkuruoat/halloumi-kasvisvartaat.md",
+        "sha256": "9bdfcec12c2f13e0422c60f95388ca218c91828fa8f3292786a4b9f14d9f3861"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/halloumi-kasvisvartaat.md",
+        "sha256": "32c4c63896f1d620092f6bd2b0a9a5be8d5553e00e82abdf15068a74a221bda4"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/halloumi-kasvisvartaat.md",
+        "sha256": "7ef0441cdea0d35e547f272009f249ae260e36a88b9ed15d00657cd43f623ef8"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/halloumi-kasvisvartaat.md",
+        "sha256": "72949c6ced2c889befa50811dc2ad2b14bc93d7dc534970c9b35ec79dc1809f7"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "59a1d62b81d56dd90b89dce366f62c19ec5bb75d02035628671e32c06d0842be"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/halloumi-kasvisvartaat.md",
+        "language": "fi",
+        "slug": "halloumi-kasvisvartaat",
+        "sha256": "6c9b43c9f6add1fbb7d504c577f656bec0715eff0cccc42981ce50ce15971a0c",
+        "semantic_sha256": "6aae939c52614d71374a0d5a1bc5243485c5e61ebac600eececfe3c91e9b7377"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/halloumi-kasvisvartaat.md",
+        "language": "en",
+        "slug": "halloumi-kasvisvartaat-en",
+        "sha256": "ed3aedf8faa7b25e8d45c5d2478c8d47edd3e859ea68b689bf981c4aced48a56",
+        "semantic_sha256": "19f05655b42be76285c7b29a8ae22e956b2d04f4f50d64ee14ccfe698a9eb17a"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/halloumi-kasvisvartaat.md",
+        "language": "sv",
+        "slug": "halloumi-kasvisvartaat-sv",
+        "sha256": "7da7d43f577fff601707361222d85627573a5fd8e6b321396b716abea8292b8e",
+        "semantic_sha256": "cb8fe29f171e26b5158b8dbe4c7bc8ec224f3d9558238cbc6b8307b13d3ca70b"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/halloumi-kasvisvartaat.md",
+        "language": "th",
+        "slug": "halloumi-kasvisvartaat-th",
+        "sha256": "89ac39e1550487f74d690b934d7f8086cf4607682527a2bf01a10c3b77a2ab5b",
+        "semantic_sha256": "85e21ef01c8d30850fa1d88e4244bd331e4c96c114a2e8994b947d7feb03fed8"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 6 ja kokonaisaika 35 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "120g halloumin tuotekoostumus, keltaisen paprikan ja kesäkurpitsan syötävä kappalemassa, sitruunasta vain kuori ja 30ml marinadiöljyn syöty osuus."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}
