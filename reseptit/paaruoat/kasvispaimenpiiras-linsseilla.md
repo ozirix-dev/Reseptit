@@ -81,7 +81,7 @@ Perunamuusin alla on vihreistä linsseistä, herkkusienistä ja kasviksista haud
 1. Hienonna sipuli ja viipaloi porkkanat, selleri ja sienet. Kuullota sipulia, porkkanoita ja selleriä öljyssä 6–8 minuuttia. Lisää sienet ja paista 8–10 minuuttia, kunnes ne pehmenevät. Lisää tomaattipyree ja sekoita minuutin ajan.
 2. Lisää worcestershirekastike, laakerinlehti, täytteeseen mitattu vesi ja huuhdellut linssit. Kiehauta ja hauduta 30–35 minuuttia, kunnes linssit ovat pehmeitä. Lisää herneet ja kuumenna pakkauksen ohjeen mukaan. Poista laakerinlehti ja mausta. Jos kattilassa on runsaasti vapaata nestettä, anna täytteen sakeutua hetki ilman kantta.
 3. Kuumenna uuni 200 °C:seen. Pilko perunat noin 4 cm:n paloiksi. Keitä niitä kuorittujen valkosipulinkynsien kanssa suolatussa vedessä 10–12 minuuttia tai kunnes perunat ovat pehmeitä. Valuta ja soseuta voin ja lämmitetyn maidon kanssa. Mausta.
-4. Kaada täyte noin 2 litran uunivuokaan ja levitä muusi sen päälle. Paista noin 15 minuuttia, kunnes pinta saa väriä ja täyte kuplii reunoilla. Anna levätä 20 minuuttia ennen annostelua.
+4. Kaada täyte vähintään 3 litran uunivuokaan ja levitä muusi sen päälle. Paista noin 15 minuuttia, kunnes pinta saa väriä ja täyte kuplii reunoilla. Anna levätä 20 minuuttia ennen annostelua.
 
 ## Muistiinpanot
 

@@ -82,7 +82,7 @@ Green lentils, browned mushrooms and vegetables are baked under a layer of mashe
 1. Chop the onion and slice the carrots, celery and mushrooms. Soften the onion, carrots and celery in the oil for 6–8 minutes. Add the mushrooms and cook for 8–10 minutes until soft. Stir in the tomato paste and cook for one minute.
 2. Add the Worcestershire sauce, bay leaf, measured water and rinsed lentils. Bring to the boil and simmer for 30–35 minutes until the lentils are tender. Add the peas and heat as directed on the pack. Remove the bay leaf and season. If there is a lot of loose liquid, let the filling thicken briefly with the lid off.
 3. Heat the oven to 200 °C. Cut the potatoes into roughly 4 cm chunks. Boil with the peeled garlic in salted water for 10–12 minutes or until the potatoes are soft. Drain and mash with the butter and warmed milk. Season to taste.
-4. Transfer the filling to a roughly 2 litre baking dish and spread the mash over it. Bake for about 15 minutes until the top colours and the filling bubbles at the edges. Rest for 20 minutes before serving.
+4. Transfer the filling to a baking dish with a capacity of at least 3 litres and spread the mash over it. Bake for about 15 minutes until the top colours and the filling bubbles at the edges. Rest for 20 minutes before serving.
 
 ## Notes
 

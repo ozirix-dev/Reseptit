@@ -53,11 +53,12 @@ Ljus miso karamelliseras på de mjuka rostade auberginehalvorna. Servera varmt s
 ## Tillagning
 
 1. Värm ugnen till 220 °C. Dela auberginerna på längden. Skär ett grunt rutmönster i snittytan utan att skära igenom skalet. Lägg halvorna i vatten i 10 minuter och torka dem noga.
-2. Blanda miso med socker, mirin och uppmätt vatten. Pensla snittytorna med sesamolja. Lägg halvorna med snittytan nedåt i en ugnssäker form.
-3. Rosta i cirka 15 minuter eller tills fruktköttet är mjukt. Vänd halvorna, pensla snittytan med misoblandningen och grilla under ugnens grillelement i 3–5 minuter tills ytan bubblar. Håll uppsikt så att glasyren inte bränns.
-4. Strö över rostade sesamfrön och servera genast.
+2. Blanda miso med socker, mirin och uppmätt vatten. Pensla snittytorna med sesamolja och lägg halvorna med snittytan nedåt på en metallplåt som tål ugnens grillelement.
+3. Rosta i cirka 15 minuter eller tills fruktköttet är mjukt. Värm grillelementet enligt ugnens anvisningar. Vänd halvorna och pensla snittytorna med ett tunt lager misoblandning. Grilla cirka 18 cm under elementet i 3–5 minuter tills ytan bubblar. Håll uppsikt hela tiden.
+4. Strö över rostade sesamfrön, dela upp i tre portioner och servera genast.
 
 ## Anteckningar
 
 - Innehåller soja och sesam. Kontrollera om misopastan innehåller spannmål med gluten.
 - Receptkälla: <https://www.justonecookbook.com/miso-glazed-eggplant/>
+- Följ plåtens bruksanvisning för grillelement. Använd en bar metallplåt. Mirin kan innehålla alkohol.

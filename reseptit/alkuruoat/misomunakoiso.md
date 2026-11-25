@@ -52,11 +52,12 @@ Vaalea miso karamellisoituu pehmeäksi paahdettujen munakoisopuolikkaiden pintaa
 ## Valmistus
 
 1. Kuumenna uuni 220 °C:seen. Halkaise munakoisot pituussuunnassa. Viillä leikkauspintaan matala ristikkokuvio rikkomatta kuorta. Upota puolikkaat veteen 10 minuutiksi ja kuivaa hyvin.
-2. Sekoita misotahna sokerin, mirinin ja mitatun veden kanssa. Sivele munakoisojen leikkauspinnat seesamiöljyllä. Aseta puolikkaat leikkauspinta alaspäin uuninkestävään vuokaan.
-3. Paahda noin 15 minuuttia tai kunnes malto on pehmeää. Käännä puolikkaat, sivele leikkauspinnat misoseoksella ja kuumenna grillivastuksen alla 3–5 minuuttia, kunnes pinta kuplii. Tarkkaile kuorrutetta, jotta se ei pala.
-4. Ripottele pinnalle paahdetut seesaminsiemenet ja tarjoa heti.
+2. Sekoita misotahna sokerin, mirinin ja mitatun veden kanssa. Sivele leikkauspinnat seesamiöljyllä ja aseta puolikkaat leikkauspinta alaspäin grillivastukselle soveltuvalle metallipellille.
+3. Paahda noin 15 minuuttia tai kunnes malto on pehmeää. Esikuumenna grillivastus uunin ohjeen mukaan. Käännä puolikkaat ja sivele leikkauspinnoille ohut kerros misoseosta. Grillaa noin 18 cm:n etäisyydellä vastuksesta 3–5 minuuttia, kunnes pinta kuplii. Valvo paahtamista koko ajan.
+4. Ripottele pinnalle paahdetut seesaminsiemenet, jaa kolmeen annokseen ja tarjoa heti.
 
 ## Muistiinpanot
 
 - Sisältää soijaa ja seesamia. Tarkista misotahnan pakkaus mahdollisten gluteenia sisältävien viljojen varalta.
 - Vertailulähde: <https://www.justonecookbook.com/miso-glazed-eggplant/>
+- Noudata pellin valmistajan grillivastusohjeita. Käytä paljasta metallipeltiä. Mirin voi sisältää alkoholia.

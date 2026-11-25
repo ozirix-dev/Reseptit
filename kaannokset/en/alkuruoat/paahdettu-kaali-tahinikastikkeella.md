@@ -29,15 +29,15 @@ ingredients:
   - amount: 30
     unit: "ml"
     item: "olive oil"
-  - amount: 120
+  - amount: 40
+    unit: "g"
+    item: "100% sesame tahini"
+  - amount: 15
     unit: "ml"
-    item: "tahini"
-  - amount: 1
-    unit: "pcs"
-    item: "lemon"
-  - amount: 80
+    item: "lemon juice"
+  - amount: 30
     unit: "ml"
-    item: "cold water"
+    item: "cold water, as needed"
   - amount: 0.5
     unit: "tsp"
     item: "salt for the sauce"
@@ -57,9 +57,10 @@ The cabbage wedges brown at the edges and soften inside. Lemon tahini sauce goes
 
 1. Heat the oven to 200 °C. Remove any damaged outer leaves. Cut the half cabbage into 6–8 wedges through the core so the leaves stay together.
 2. Brush the cut sides with oil, sprinkle with the salt for the cabbage and arrange the wedges in one layer on a tray. Roast for 20–30 minutes, turning halfway, until tender and golden at the edges.
-3. Mix the tahini with the juice from the lemon. Whisk in the cold water a little at a time until the sauce runs off a spoon. Season with the salt for the sauce and the pepper. Spoon over the warm cabbage.
+3. Mix the tahini and lemon juice. Whisk in the cold water a little at a time until the sauce runs off a spoon. Season with the salt for the sauce and the pepper. Divide the sauce into four equal portions and spoon over the cabbage.
 
 ## Notes
 
 - Contains sesame. Discard any tough core left on the plate.
 - Recipe source: <https://cookingwithzahra.com/roasted-cabbage-with-lemon-and-tahini-sauce/>
+- Each portion contains 10 g of sesame paste. Take other oilseeds eaten that day into account and see the Finnish Food Authority guidance for your age group when relevant. <https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/valvonta/tutkimukset-ja-projektit/vierasaineisiin-liittyvia-hankkeita/oljysiementen-kartoitus--ja-valvontahanke/usein-kysyttya-oljykasvien-siemenista/>

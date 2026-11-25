@@ -53,11 +53,12 @@ White miso caramelises over the tender roasted eggplant. Serve warm as a side di
 ## Preparation
 
 1. Heat the oven to 220 °C. Halve the eggplants lengthwise. Score shallow crosses on the cut surface without cutting through the skin. Soak the halves in water for 10 minutes, then dry well.
-2. Mix the miso with the sugar, mirin and measured water. Brush the cut sides with sesame oil and set the halves cut side down in an ovenproof dish.
-3. Roast for about 15 minutes or until the flesh is tender. Turn the halves over, brush the cuts with the glaze and grill for 3–5 minutes until it bubbles. Watch the glaze so it does not burn.
-4. Scatter over the toasted sesame seeds and serve immediately.
+2. Mix the miso with the sugar, mirin and measured water. Brush the cut sides with sesame oil and place the halves cut side down on a metal tray suitable for the grill.
+3. Roast for about 15 minutes or until the flesh is tender. Preheat the grill as directed in the oven manual. Turn the halves over and brush the cut sides with a thin layer of miso glaze. Grill about 18 cm below the element for 3–5 minutes, until the glaze bubbles. Watch it the whole time.
+4. Scatter over the toasted sesame seeds, divide into three portions and serve immediately.
 
 ## Notes
 
 - Contains soy and sesame. Check the miso label for cereals containing gluten.
 - Recipe source: <https://www.justonecookbook.com/miso-glazed-eggplant/>
+- Follow the tray manufacturer's grill instructions. Use a bare metal tray. Mirin may contain alcohol.

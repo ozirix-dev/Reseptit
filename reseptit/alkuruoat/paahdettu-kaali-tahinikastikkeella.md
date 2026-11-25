@@ -28,15 +28,15 @@ ingredients:
   - amount: 30
     unit: "ml"
     item: "oliiviöljyä"
-  - amount: 120
+  - amount: 40
+    unit: "g"
+    item: "100-prosenttista tahinia"
+  - amount: 15
     unit: "ml"
-    item: "tahinia"
-  - amount: 1
-    unit: "kpl"
-    item: "sitruuna"
-  - amount: 80
+    item: "sitruunamehua"
+  - amount: 30
     unit: "ml"
-    item: "kylmää vettä"
+    item: "kylmää vettä, josta käytetään tarvittava määrä"
   - amount: 0.5
     unit: "tl"
     item: "suolaa kastikkeeseen"
@@ -56,9 +56,10 @@ Kaali paahdetaan lohkoina, jolloin reunat ruskistuvat ja sisus pehmenee. Pääll
 
 1. Kuumenna uuni 200 °C:seen. Poista kaalista uloimmat huonot lehdet. Leikkaa puolikas 6–8 lohkoksi kannan läpi, jotta lehdet pysyvät yhdessä.
 2. Sivele leikkauspinnat öljyllä, ripottele kaalille varattu suola ja levitä lohkot pellille yhteen kerrokseen. Paahda 20–30 minuuttia, käännä puolivälissä ja jatka, kunnes kaali on pehmeää ja reunoilta kullanruskeaa.
-3. Sekoita tahini ja sitruunasta puristettu mehu. Lisää kylmää vettä vähän kerrallaan vispaten, kunnes kastike valuu lusikasta. Mausta kastikkeeseen varatulla suolalla ja pippurilla. Lusikoi lämpimille kaaleille.
+3. Sekoita tahini ja sitruunamehu. Vispaa joukkoon kylmää vettä vähän kerrallaan, kunnes kastike valuu lusikasta. Mausta kastikkeeseen varatulla suolalla ja pippurilla. Jaa kastike neljään yhtä suureen osaan ja lusikoi kaaliannoksille.
 
 ## Muistiinpanot
 
 - Sisältää seesamia. Hävitä tarvittaessa lautaselle jäävä kova kannanosa.
 - Vertailulähde: <https://cookingwithzahra.com/roasted-cabbage-with-lemon-and-tahini-sauce/>
+- Yhdessä annoksessa on 10 g seesamitahnaa. Huomioi päivän muut öljykasvien siemenet ja katso tarvittaessa ikäryhmäkohtaiset käyttöohjeet Ruokavirastolta. <https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/valvonta/tutkimukset-ja-projektit/vierasaineisiin-liittyvia-hankkeita/oljysiementen-kartoitus--ja-valvontahanke/usein-kysyttya-oljykasvien-siemenista/>

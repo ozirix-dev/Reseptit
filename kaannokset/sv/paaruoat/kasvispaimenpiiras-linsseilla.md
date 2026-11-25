@@ -82,7 +82,7 @@ Gröna linser, champinjoner och grönsaker gräddas under ett lager potatismos.
 1. Hacka löken och skiva morötter, selleri och svamp. Fräs lök, morötter och selleri i oljan i 6–8 minuter. Tillsätt svampen och stek i 8–10 minuter tills den mjuknar. Rör ner tomatpurén och fräs i en minut.
 2. Tillsätt worcestershiresås, lagerblad, uppmätt vatten och sköljda linser. Koka upp och sjud i 30–35 minuter tills linserna är mjuka. Tillsätt ärtorna och värm enligt förpackningen. Ta bort lagerbladet och smaka av. Låt fyllningen koka ihop utan lock om det finns mycket vätska kvar.
 3. Värm ugnen till 200 °C. Skär potatisen i cirka 4 cm stora bitar. Koka med den skalade vitlöken i saltat vatten i 10–12 minuter eller tills potatisen är mjuk. Häll av vattnet och mosa med smör och varm mjölk. Smaka av.
-4. Häll fyllningen i en ugnsform på cirka 2 liter och bred över moset. Grädda i cirka 15 minuter tills ytan får färg och fyllningen bubblar längs kanterna. Låt vila i 20 minuter före servering.
+4. Häll fyllningen i en ugnsform som rymmer minst 3 liter och bred över moset. Grädda i cirka 15 minuter tills ytan får färg och fyllningen bubblar längs kanterna. Låt vila i 20 minuter före servering.
 
 ## Anteckningar
 
