@@ -341,6 +341,26 @@ test("static and browser tests build the output before their focused runners", (
   assert.deepEqual(browserPlan.unitTests, []);
 });
 
+test("navigation and blog tests run once under the final CI event policy", () => {
+  const tests = ["tests/blog.test.ts", "tests/navigation.test.ts"];
+  const changedTests = tests.map(file => "site/" + file);
+  const targeted = applyEventPolicy(classifyPaths(changedTests), "pull_request");
+  assert.equal(targeted.runStatic, false);
+  assert.deepEqual(targeted.unitTests, tests);
+
+  const unrelatedTest = "tests/recipe-schema.test.ts";
+  const mixed = [...changedTests, "site/" + unrelatedTest];
+  const push = applyEventPolicy(classifyPaths(mixed), "push");
+  const staticPr = applyEventPolicy(
+    classifyPaths([...mixed, "site/tests/static-output.test.ts"]), "pull_request",
+  );
+  for (const plan of [push, staticPr]) {
+    assert.equal(plan.runBuild, true);
+    assert.equal(plan.runStatic, true);
+    assert.deepEqual(plan.unitTests, [unrelatedTest]);
+  }
+});
+
 test("translation partition and F25 checks run on direct edits or in the selected translation suite", () => {
   const tests = ["tests/translation-batch-partition.test.ts", "tests/f25-source-release-gate.test.ts"];
   const changedTests = tests.map(file => "site/" + file);
