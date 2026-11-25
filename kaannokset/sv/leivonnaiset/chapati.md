@@ -13,6 +13,11 @@ time_total_min: 45
 difficulty: "lätt"
 main_ingredient: ["vehnäjauho"]
 cooking_method: ["pannu"]
+image:
+  src: leivonnaiset/chapati.webp
+  alt: "En trave tunna chapatibröd med bruna stekfläckar (AI-illustration)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 140
     unit: "g"

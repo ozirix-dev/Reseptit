@@ -13,6 +13,11 @@ time_total_min: 45
 difficulty: "easy"
 main_ingredient: ["lehtitaikina"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/perinteiset-joulutortut.webp
+  alt: "Star-shaped Finnish Christmas pastries with prune jam centres (AI illustration)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "g"

@@ -12,6 +12,11 @@ servings: 3
 time_total_min: 135
 difficulty: "ง่าย"
 main_ingredient: ["kaurahiutale"]
+image:
+  src: valipalat/omenainen-tuorepuuro.webp
+  alt: "ข้าวโอ๊ตแช่เย็นในชามพร้อมแอปเปิลหั่นเต๋าและอบเชย (ภาพประกอบจาก AI)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 3
     unit: "dl"

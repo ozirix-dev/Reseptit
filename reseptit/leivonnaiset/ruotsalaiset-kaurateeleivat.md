@@ -10,6 +10,11 @@ time_total_min: 120
 difficulty: "helppo"
 main_ingredient: ["kaurahiutale"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/ruotsalaiset-kaurateeleivat.webp
+  alt: "Pyöreitä kullanruskeita kaurateeleipiä, pinnalla kaurahiutaleita (tekoälykuvitus)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 4
     unit: "dl"

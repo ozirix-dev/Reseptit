@@ -10,6 +10,11 @@ time_total_min: 45
 difficulty: "helppo"
 main_ingredient: ["lehtitaikina"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/perinteiset-joulutortut.webp
+  alt: "Tähden muotoisia joulutorttuja, joissa on luumuhillosilmä (tekoälykuvitus)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "g"

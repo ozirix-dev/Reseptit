@@ -12,6 +12,11 @@ servings: 3
 time_total_min: 135
 difficulty: "easy"
 main_ingredient: ["kaurahiutale"]
+image:
+  src: valipalat/omenainen-tuorepuuro.webp
+  alt: "A bowl of overnight oats with diced apple and cinnamon (AI illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 3
     unit: "dl"

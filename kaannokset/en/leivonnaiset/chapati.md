@@ -13,6 +13,11 @@ time_total_min: 45
 difficulty: "easy"
 main_ingredient: ["vehnäjauho"]
 cooking_method: ["pannu"]
+image:
+  src: leivonnaiset/chapati.webp
+  alt: "A stack of thin chapatis with brown toasted spots (AI illustration)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 140
     unit: "g"

@@ -12,6 +12,11 @@ servings: 3
 time_total_min: 135
 difficulty: "lätt"
 main_ingredient: ["kaurahiutale"]
+image:
+  src: valipalat/omenainen-tuorepuuro.webp
+  alt: "En skål med kall havregröt, tärnat äpple och kanel (AI-illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 3
     unit: "dl"

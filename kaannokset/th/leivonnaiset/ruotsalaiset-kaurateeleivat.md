@@ -13,6 +13,11 @@ time_total_min: 120
 difficulty: "ง่าย"
 main_ingredient: ["kaurahiutale"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/ruotsalaiset-kaurateeleivat.webp
+  alt: "ขนมปังเทคาคอร์ทรงกลมสีเหลืองทองโรยข้าวโอ๊ต (ภาพประกอบจาก AI)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 4
     unit: "dl"

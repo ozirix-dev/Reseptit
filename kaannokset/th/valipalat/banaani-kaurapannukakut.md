@@ -10,6 +10,11 @@ time_total_min: 25
 difficulty: "helppo"
 main_ingredient: ["banaani","kaurahiutale"]
 cooking_method: ["pannu"]
+image:
+  src: valipalat/banaani-kaurapannukakut.webp
+  alt: "แพนเค้กกล้วยข้าวโอ๊ตสีเหลืองทองวางซ้อนกัน (ภาพประกอบจาก AI)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 220
     unit: "กรัม"

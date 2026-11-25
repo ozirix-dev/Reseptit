@@ -10,6 +10,11 @@ time_total_min: 45
 difficulty: "helppo"
 main_ingredient: ["vehnäjauho"]
 cooking_method: ["pannu"]
+image:
+  src: leivonnaiset/chapati.webp
+  alt: "Ohuita chapati-leipiä pinossa ja pinnalla ruskeita paistopilkkuja (tekoälykuvitus)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 140
     unit: "g"

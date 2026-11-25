@@ -9,6 +9,11 @@ servings: 3
 time_total_min: 135
 difficulty: "helppo"
 main_ingredient: ["kaurahiutale"]
+image:
+  src: valipalat/omenainen-tuorepuuro.webp
+  alt: "Kulhollinen kauratuorepuuroa, omenakuutioita ja kanelia (tekoälykuvitus)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 3
     unit: "dl"

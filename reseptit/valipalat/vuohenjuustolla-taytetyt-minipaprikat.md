@@ -10,6 +10,11 @@ time_total_min: 40
 difficulty: "helppo"
 main_ingredient: ["paprika","vuohenjuusto"]
 cooking_method: ["uuni"]
+image:
+  src: valipalat/vuohenjuustolla-taytetyt-minipaprikat.webp
+  alt: "Paahdettuja värikkäitä minipaprikoita ja vaalea vuohenjuustotäyte (tekoälykuvitus)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 10
     unit: "kpl"

@@ -13,6 +13,11 @@ time_total_min: 45
 difficulty: "ง่าย"
 main_ingredient: ["vehnäjauho"]
 cooking_method: ["pannu"]
+image:
+  src: leivonnaiset/chapati.webp
+  alt: "จาปาตีแผ่นบางวางซ้อนกัน มีจุดสีน้ำตาลจากการจี่ (ภาพประกอบจาก AI)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 140
     unit: "g"

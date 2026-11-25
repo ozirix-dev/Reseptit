@@ -13,6 +13,11 @@ time_total_min: 120
 difficulty: "easy"
 main_ingredient: ["kaurahiutale"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/ruotsalaiset-kaurateeleivat.webp
+  alt: "Round, golden Swedish tea cakes sprinkled with oats (AI illustration)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 4
     unit: "dl"
