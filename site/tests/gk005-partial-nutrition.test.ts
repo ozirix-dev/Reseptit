@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { readFile } from "node:fs/promises";
+import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
 import path from "node:path";
 import test from "node:test";
 import manifest from "./history/gk005-partial-nutrition-transition.json";
@@ -101,6 +102,61 @@ test("GK-005 canonical calculation and verification keep only protein and fat as
     reject({ ...data, ingredients: data.ingredients.map((row, index) => index === 0 ? { ...row, unit: "kg" } : row) });
     reject(data, { ...evidence, scope: evidence.scope + " unreviewed edit" });
     reject(data, evidence, translations.map((target, index) => index === 0 ? { ...target, data: { ...target.data, fat_per_serving_g: 0 } } : target));
+  }
+});
+
+test("GK-005 projection requires a valid partial approval and leaves unrelated recipes unchanged", async () => {
+  const reviews = await loadReviewedPortions(root);
+  const fixtureRoot = await mkdtemp(path.join(tmpdir(), "recipavo-gk005-"));
+  try {
+    await mkdir(path.join(fixtureRoot, "docs/nutrition/calculations"), { recursive: true });
+    await mkdir(path.join(fixtureRoot, "docs/nutrition/batches"), { recursive: true });
+    const batchPath = path.join(fixtureRoot, "docs/nutrition/batches/batch-142.json");
+    for (const [id, entry] of Object.entries(manifest.recipes)) {
+      const file = `reseptit/paaruoat/${id}.md`;
+      const live = await read(file);
+      const prior = restoreGk005Source(file, live);
+      const review = { ...reviews[id], preparationSha256: entry.afterPreparation };
+      const original = await projectPortionEvidence(root, id, prior, {
+        ...review, preparationSha256: entry.beforePreparation,
+      });
+      const evidenceFile = `docs/nutrition/calculations/${id}.json`;
+      await writeFile(path.join(fixtureRoot, evidenceFile), await read(evidenceFile), "utf8");
+      const writeScope = async (scope?: unknown) => writeFile(batchPath, JSON.stringify({
+        batchId: "batch-142", recipes: [{ recipeId: id, ...(scope === undefined ? {} : { partialNutrition: scope }) }],
+      }), "utf8");
+      await writeScope(entry.approval);
+      assert.deepEqual(await projectPortionEvidence(fixtureRoot, id, live, review), original, id + ": valid approval");
+      await assert.rejects(projectPortionEvidence(fixtureRoot, id, live.replace(
+        `protein_per_serving_g: ${entry.protein}`, `protein_per_serving_g: ${entry.protein + 1}`), review),
+        /partial nutrition approval required/, id + ": incorrect protein");
+      await assert.rejects(projectPortionEvidence(fixtureRoot, id, live.replace(
+        `fat_per_serving_g: ${entry.fat}`, `fat_per_serving_g: ${entry.fat + 1}`), review),
+        /partial nutrition approval required/, id + ": incorrect fat");
+      await writeScope({ ...entry.approval, evidenceSha256: "0".repeat(64) });
+      await assert.rejects(projectPortionEvidence(fixtureRoot, id, live, review),
+        /partial nutrition approval required/, id + ": wrong evidence fingerprint");
+      await writeScope();
+      await assert.rejects(projectPortionEvidence(fixtureRoot, id, live, review),
+        /partial nutrition approval required/, id + ": absent field scope");
+      await rm(batchPath);
+      await assert.rejects(projectPortionEvidence(fixtureRoot, id, live, review),
+        /partial nutrition approval required/, id + ": absent batch manifest");
+    }
+
+    // An unrelated historical all-null recipe must keep its independently
+    // reviewed ingredient-only carbohydrate projection.
+    const id = "marokkolainen-couscous";
+    const markdown = await read(`reseptit/paaruoat/${id}.md`);
+    const evidenceFile = `docs/nutrition/calculations/${id}.json`;
+    await writeFile(path.join(fixtureRoot, evidenceFile), await read(evidenceFile), "utf8");
+    const control = await projectPortionEvidence(root, id, markdown, reviews[id]);
+    assert.equal(control.portion.availableCarbs, undefined);
+    assert.equal(control.portion.ingredientPortion?.amountPerServing, 62.5);
+    assert.equal(control.portion.ingredientPortion?.declaredCarbsGPerServing, 45);
+    assert.deepEqual(await projectPortionEvidence(fixtureRoot, id, markdown, reviews[id]), control);
+  } finally {
+    await rm(fixtureRoot, { recursive: true, force: true });
   }
 });
 

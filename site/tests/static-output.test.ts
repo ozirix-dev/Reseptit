@@ -760,12 +760,21 @@ test("modeled GL and ingredient carbs remain separate from withheld whole-servin
         assert.deepEqual(nutrition, { carbsNetG: null, carbsTotalG: null, ...partial }, routePath);
         const rendered = recipe.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
         assert.ok(rendered.includes(toolUi[locale].partialNutrition), routePath);
-        const macroList = rendered.match(/<dl class="nutrition-list">([\s\S]*?)<\/dl>/)?.[1];
-        assert.ok(macroList, routePath);
-        assert.ok(macroList.includes(recipeUi[locale].nutrients.proteinG), routePath);
-        assert.ok(macroList.includes(recipeUi[locale].nutrients.fatG), routePath);
-        assert.ok(!macroList.includes(recipeUi[locale].nutrients.carbsNetG), routePath);
-        assert.ok(!macroList.includes(recipeUi[locale].nutrients.carbsTotalG), routePath);
+        const summary = renderToStaticMarkup(createElement("summary", null, toolUi[locale].nutritionPerRecipeServing));
+        const startOfMacros = rendered.indexOf(summary);
+        assert.ok(startOfMacros >= 0, routePath + ": nutrition details summary");
+        const endOfMacros = rendered.indexOf("</details>", startOfMacros);
+        assert.ok(endOfMacros > startOfMacros, routePath + ": nutrition details end");
+        const macroDetails = rendered.slice(startOfMacros, endOfMacros);
+        const lists = [...macroDetails.matchAll(/<dl class="nutrition-list">([\s\S]*?)<\/dl>/g)];
+        assert.equal(lists.length, 1, routePath + ": one macro list in nutrition details");
+        const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[locale];
+        const expectedRows = (["proteinG", "fatG"] as const).map(key =>
+          renderToStaticMarkup(createElement("div", null,
+            createElement("dt", null, recipeUi[locale].nutrients[key]),
+            createElement("dd", null, new Intl.NumberFormat(numberLocale, { maximumFractionDigits: 2 }).format(partial[key]) + " g"),
+          ))).join("");
+        assert.equal(lists[0]![1]!.replaceAll("<!-- -->", ""), expectedRows, routePath + ": exact localized P/R rows, no CHO rows");
         const jsonLdMatch = recipe.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/);
         assert.ok(jsonLdMatch, routePath);
         assert.deepEqual(JSON.parse(jsonLdMatch[1]).nutrition, {
