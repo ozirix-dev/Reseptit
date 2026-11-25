@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "owner": "Chat 3",
+  "scope": "Candidate only; no active source or approval change",
+  "baselineCommit": "ab7443d8300886e1cdda7e40e79a65dd2641bd94",
+  "reviewReferences": [
+    "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7159402985",
+    "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7164550845",
+    "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7164681053"
+  ],
+  "blobs": {
+    "docs/nutrition/glycemic-load-pilot-input.json": "914b0fa604516f8585e616863bfff5dcaab3e729",
+    "docs/nutrition/food-records.json": "d7d6b83b45ed6b048582850f39425d08eb8d1ec6",
+    "docs/nutrition/glycemic-index-records.json": "719328765182a5058a513381bf5fc1cd0fd31651"
+  },
+  "expectedFingerprints": {
+    "pellava-puuro-pahkinoilla": {
+      "beforeInput": "da549b3ed90b9bce5a112e030ae3be4c142b2742d190a5b619917d8aabdc4666",
+      "beforeEvidence": "cbdd2e2f1dbac864a0081d6ec28e12ce1b83b6c470e99add4996465728dc41b4",
+      "afterInput": "c8c6fe315d2f11d873a7c2d801af510068584e497b48de5d41a707c04a8d3fa0",
+      "afterEvidence": "ac5f5d86ea71b3dc6f78eba800000fc3f5433f46c99f05662b026d8827582a35"
+    },
+    "char-siu": {
+      "beforeInput": "984fd22cfe25e6882100d4a91c368ff6d3d113166d6b624db264a640bd80ae43",
+      "beforeEvidence": "379d4e10fe642c9fb79b993cea1f19bbe1296aa32bd53f9e86649fd66a46cc22",
+      "afterInput": "0d6215d153ddfbc6792a49b4d2ba8e11d81e139d16a7d1b3fdc773a70fe34964",
+      "afterEvidence": "d802e1ac7bf1752fc716aa683bbe77fa86c33bed22cfb31a90e4ce5733b9d75e"
+    }
+  },
+  "rows": [
+    {
+      "recipeId": "pellava-puuro-pahkinoilla",
+      "index": 2,
+      "before": {
+        "name": "makeuttamatonta mantelimaitoa",
+        "grams": 250,
+        "fineliRecordId": "fineli-684-release-20",
+        "giRecordId": "dairy-category-mean-gi-35",
+        "massEvidence": "Recipe-listed 250 g, mapped to MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG (plain milk).",
+        "foodKey": "dairy",
+        "preparationKey": "unflavoured-dairy",
+        "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+      },
+      "after": {
+        "name": "makeuttamatonta mantelimaitoa",
+        "grams": 250,
+        "fineliRecordId": "fineli-34738-2026-10-25",
+        "giRecordId": null,
+        "massEvidence": "250 ml = 2.5 dl = 250 g; Fineli Release 20 food 34738, unsweetened Alpro almond beverage, DL 100 g; named product composition proxy, not dairy milk."
+      }
+    },
+    {
+      "recipeId": "char-siu",
+      "index": 1,
+      "before": {
+        "name": "hoisinkastiketta",
+        "grams": 45,
+        "fineliRecordId": "afcd-F008008-release-3",
+        "giRecordId": "asian-regional-category-mean-gi-65",
+        "massEvidence": "One level tablespoon of thick commercial sauce represented as 15 g.",
+        "giMatchEvidence": "undefined category mean/analogue, low confidence; not a measured ingredient-specific value."
+      },
+      "after": {
+        "name": "hoisinkastiketta",
+        "grams": 45,
+        "fineliRecordId": "afcd-F008008-release-3",
+        "giRecordId": null,
+        "massEvidence": "One level tablespoon of thick commercial sauce represented as 15 g."
+      }
+    },
+    {
+      "recipeId": "char-siu",
+      "index": 4,
+      "before": {
+        "name": "riisiviinietikkaa",
+        "grams": 15,
+        "fineliRecordId": "fineli-929-release-20",
+        "giRecordId": "rice-category-mean-gi-67",
+        "massEvidence": "Fineli record 929 lists 15 g per tablespoon (RKL).",
+        "giMatchEvidence": "Rice category mean category mean/analogue, low confidence; not a measured ingredient-specific value."
+      },
+      "after": {
+        "name": "riisiviinietikkaa",
+        "grams": 15,
+        "fineliRecordId": "fineli-929-release-20",
+        "giRecordId": null,
+        "massEvidence": "Fineli record 929 lists 15 g per tablespoon (RKL)."
+      }
+    }
+  ],
+  "priorityIds": [
+    "korealainen-yachaejuk-kasvisjuk",
+    "malesialainen-congee-inkivaarilla",
+    "kiinalainen-riisipuuro-kananmunalla",
+    "thai-jok-kanalla",
+    "thai-porsasjok",
+    "kiinalainen-tomaattimunakas-riisilla",
+    "korealainen-gyeranbap-riisikulho",
+    "korealainen-jumeokbap-merilevalla",
+    "japanilainen-onigiri-lohella",
+    "japanilainen-tamago-kake-gohan",
+    "intialainen-pesarattu-mungpavuista",
+    "souvlaki",
+    "lahi-ita-fattet-hummus",
+    "meksikolainen-molletes-pico-de-gallolla",
+    "vietnamilainen-banh-mi-munalla",
+    "lahi-ita-zaatar-munat",
+    "medu-vada",
+    "lahi-ita-kikhernejauho-yrttilettu",
+    "lahi-ita-ful-medames",
+    "marjakiisseli-vaniljakastikkeella",
+    "pannacotta-marjakastikkeella",
+    "hummus",
+    "vhh-kaalikaarryleet",
+    "malesialainen-mee-goreng-aamunuudeleilla",
+    "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+    "kiinalainen-hirssipuuro-taateleilla",
+    "karibia-mango-limejogurtti",
+    "marokkolainen-couscous",
+    "pasta-alla-norma",
+    "tomaatti-kananmuna-wokki",
+    "doner-kebab",
+    "pellava-puuro-pahkinoilla",
+    "char-siu"
+  ]
+}
