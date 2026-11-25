@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "paprikapopcorn",
+  "source_path": "reseptit/valipalat/paprikapopcorn.md",
+  "source_sha256": "fd37be6f3f325f9f3dd53f0e301220e265df4c1ae1a4fa12511a31672408e964",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.marthastewart.com/1122885/seasoned-popcorn"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/paprikapopcorn.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Oma 20 reseptin samankaltaisuusseulonta. Chat-2:n tarkastamissa viidessä heuristisessa osumassa ei ollut estettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset, niiden käyttötilat ja määrät säilyvät Chat-2:n katselmoimasta sisällöstä. "
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusvaiheet ja valmistuslähde säilyvät Chat-2:n katselmoimasta sisällöstä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaturvallisuusohjeet ja allergeenit säilyvät neljällä kielellä tarkastetusta revisiosta. Kirjallinen näyttö ilman Recipavon koekeittiötestiä. "
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 6 ja ilmoitettu kokonaisaika 10 min säilyvät. Arvot tarkistettu neljällä kielellä."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Raakamaissin tuoteseloste on saatavilla. Poksauttamatta jääneiden jyvien sekä kattilaan jäävän öljyn syötäväksi päätyvä määrä puuttuu. Kaikki neljä arvoa jäävät määrittämättömiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle annosversiolle ei ole hyväksyttyä soveltuvaa GI- tai ainesosasidosta eikä kanonista GK-näyttöä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/valipalat/paprikapopcorn.webp",
+    "bytes": 163954,
+    "sha256": "6063fba52d5f199680996365d4d66a1f1784b9291c8df1e6c8c12f0623aa7bad",
+    "width": 1200,
+    "height": 800,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161831506",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161957227",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/valipalat/paprikapopcorn.md",
+        "sha256": "d288155dc6fee781d71bff4e10875f5b1c2ea4ea06f0175a527ccfba901d8473"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/paprikapopcorn.md",
+        "sha256": "9e9c1746084993655189de4778decac30ffdc3cd024cd12bca93b89edc97ef9f"
+      },
+      {
+        "path": "kaannokset/th/valipalat/paprikapopcorn.md",
+        "sha256": "577db7b3d476271ad9f848cd3fc1c58a65314667d777e47b4834d84f5f0a42bd"
+      },
+      {
+        "path": "reseptit/valipalat/paprikapopcorn.md",
+        "sha256": "f852e50de8758a1be32e4c9ee049f55ca998f448ba26c43160d44d03b1da3c6c"
+      }
+    ],
+    "scope": "Ennen julkaisuehdokasta katselmoitu teksti, valmistus, turvallisuus ja kuva. Ravintoratkaisujen ehdot on kirjattu erillisessä katselmoinnissa."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "ef8e0337945bb7446846c036ab9942e91c17ddb820cbefa98993616631eb66ec"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/valipalat/paprikapopcorn.md",
+        "language": "fi",
+        "slug": "paprikapopcorn",
+        "sha256": "fd37be6f3f325f9f3dd53f0e301220e265df4c1ae1a4fa12511a31672408e964",
+        "semantic_sha256": "7eee24b21a4a7ace8f6c01c69edbdc0ee76df2ff581a4724c3294ee5302650ce"
+      },
+      {
+        "path": "kaannokset/en/valipalat/paprikapopcorn.md",
+        "language": "en",
+        "slug": "paprikapopcorn-en",
+        "sha256": "1aa56439e345bffbae9b270719b614828de213e19cf1a3af0fc6e66e81cd8d1d",
+        "semantic_sha256": "4ae491c336d00aa81ffc5001265f449b2e07e9a90da48eed8a1bfd50e73a065a"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/paprikapopcorn.md",
+        "language": "sv",
+        "slug": "paprikapopcorn-sv",
+        "sha256": "cf4924ad1c0a04caedd00c658d859d02471320dfb428417b8f91d71329879733",
+        "semantic_sha256": "34729088c156c14ca787922af1f49be14982641b1a43fd367e5d581f0ac809b3"
+      },
+      {
+        "path": "kaannokset/th/valipalat/paprikapopcorn.md",
+        "language": "th",
+        "slug": "paprikapopcorn-th",
+        "sha256": "988487f9f633d8edbdded81a3cbdbccafb3432df1b42ab3f55ed8f46d0220877",
+        "semantic_sha256": "c145b8f18ba44eaa9b51257817bf2630ce28e26bb2d6d73d1d7401177417d442"
+      }
+    ],
+    "final_independent_delta": "pending"
+  }
+}

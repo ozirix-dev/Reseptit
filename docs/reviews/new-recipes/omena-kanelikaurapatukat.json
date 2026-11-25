@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "omena-kanelikaurapatukat",
+  "source_path": "reseptit/valipalat/omena-kanelikaurapatukat.md",
+  "source_sha256": "0cc477381514c2e9d7770cb37bb060a27f978088cf5ff2239b2018c3224826f4",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://healthmatters.idaho.gov/recipes/apple-oatmeal-bars/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/omena-kanelikaurapatukat.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Oma 20 reseptin samankaltaisuusseulonta. Chat-2:n tarkastamissa viidessä heuristisessa osumassa ei ollut estettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset, niiden käyttötilat ja määrät säilyvät Chat-2:n katselmoimasta sisällöstä. Sisältää kauraa ja kananmunaa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusvaiheet ja valmistuslähde säilyvät Chat-2:n katselmoimasta sisällöstä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaturvallisuusohjeet ja allergeenit säilyvät neljällä kielellä tarkastetusta revisiosta. Kirjallinen näyttö ilman Recipavon koekeittiötestiä. Sisältää kauraa ja kananmunaa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 16 ja ilmoitettu kokonaisaika 80 min säilyvät. Arvot tarkistettu neljällä kielellä."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kananmunien syötävä massa ja vaahterasiirapin lähderivi puuttuvat tämän punnitun sovituksen kanonisesta laskennasta. Kaikki neljä arvoa jäävät määrittämättömiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle annosversiolle ei ole hyväksyttyä soveltuvaa GI- tai ainesosasidosta eikä kanonista GK-näyttöä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/valipalat/omena-kanelikaurapatukat.webp",
+    "bytes": 155924,
+    "sha256": "9865631a7928b95d30a2cf84128aa565a2e9abbc1cfd8b98f5f42dc18d4f7273",
+    "width": 1200,
+    "height": 800,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161831506",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161957227",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/valipalat/omena-kanelikaurapatukat.md",
+        "sha256": "7ba702342c62594de900d37ce587e3c6dbc87512dc4760fe1d0dcc2610b334a7"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/omena-kanelikaurapatukat.md",
+        "sha256": "01da375d5355b8af2d7931474249ea6a9a756dc56b50d8ce31d2dc6605b85a96"
+      },
+      {
+        "path": "kaannokset/th/valipalat/omena-kanelikaurapatukat.md",
+        "sha256": "cc5e47c21af6a52baff63be6f760e3ba3e36af418ebed7727ad0fa1241f5fea6"
+      },
+      {
+        "path": "reseptit/valipalat/omena-kanelikaurapatukat.md",
+        "sha256": "db5e5446e2664099f1a716e7a52984a0683e228fb4e4c3b1687f57d162286402"
+      }
+    ],
+    "scope": "Ennen julkaisuehdokasta katselmoitu teksti, valmistus, turvallisuus ja kuva. Ravintoratkaisujen ehdot on kirjattu erillisessä katselmoinnissa."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "10a88b1d6e3b630968e08591066dcd6531716c0b0b4d5498ac0763d1972b4e23"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/valipalat/omena-kanelikaurapatukat.md",
+        "language": "fi",
+        "slug": "omena-kanelikaurapatukat",
+        "sha256": "0cc477381514c2e9d7770cb37bb060a27f978088cf5ff2239b2018c3224826f4",
+        "semantic_sha256": "25b849a254ab179b37f12848e3e0346a9ec8d290997e8f44a843992c37aec49e"
+      },
+      {
+        "path": "kaannokset/en/valipalat/omena-kanelikaurapatukat.md",
+        "language": "en",
+        "slug": "omena-kanelikaurapatukat-en",
+        "sha256": "5ea4f144c90b49b572602bb897d6d0310f573f8c1fee494ef5dd7ad22ae73378",
+        "semantic_sha256": "b2ba80368462216a3bcfa872eb96d9b1cf77cad13e568a5c7962df6578db277d"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/omena-kanelikaurapatukat.md",
+        "language": "sv",
+        "slug": "omena-kanelikaurapatukat-sv",
+        "sha256": "417cfcda67f9116cfcd26b05754c6db1ecff263b8b5262336dd92f6c92c5ecc8",
+        "semantic_sha256": "54b886bab85630abc4624aaeab5b249fcd1264ebfc9d0862b97ec9e1e0034a33"
+      },
+      {
+        "path": "kaannokset/th/valipalat/omena-kanelikaurapatukat.md",
+        "language": "th",
+        "slug": "omena-kanelikaurapatukat-th",
+        "sha256": "b79f0447649b01bbd22c59aa9d64c9ce3cb387bac130a554e5e8fe83cd99c99a",
+        "semantic_sha256": "00eab0c25da728a3ab0718bae82167d2f020adb825ff8e040a825f3660cb39b1"
+      }
+    ],
+    "final_independent_delta": "pending"
+  }
+}

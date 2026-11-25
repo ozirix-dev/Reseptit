@@ -1,0 +1,118 @@
+{
+  "recipeId": "paahdettu-pahkina-siemensekoitus",
+  "sourceHash": "c3dea1335905e8c0a2ab16a48e76bd7c2c87c2fe1593d681b4baf4e485d8a671",
+  "calculatedAt": "2026-11-25",
+  "servings": 12,
+  "scope": "Kolmen perusainesosan osasumma. Öljyssä paahdettu maapähkinä yhtenä tuotetyyppinä ja täysi öljyretentio skenaariona. Mausteet ulkopuolella. Ei julkaistava annosarvio.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 145,
+      "unit": "g",
+      "item": "paahdettuja suolaamattomia maapähkinöitä",
+      "state": "Suolaamaton öljyssä paahdettu kuoreton maapähkinä, yksi mahdollinen paahdetun maapähkinän tyyppi",
+      "matchEvidence": "Suolaamaton öljyssä paahdettu kuoreton maapähkinä, yksi mahdollinen paahdetun maapähkinän tyyppi",
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptissä käytetty syötävä raaka-aine.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Lähtömäärien vertailuskenaario; pellille jäävää öljyä ei mitattu.",
+      "record": {
+        "id": "afcd-F006110-release-3",
+        "name": "Nut, peanut, without skin, roasted, with oil, unsalted",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "basis": "per100g-as-sold",
+        "state": "Suolaamaton öljyssä paahdettu kuoreton maapähkinä, yksi mahdollinen paahdetun maapähkinän tyyppi",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 14.1,
+          "polyols": 0,
+          "fibre": 6.2,
+          "fat": 52.8,
+          "protein": 25.1
+        }
+      }
+    },
+    {
+      "amount": 125,
+      "unit": "g",
+      "item": "kuorittuja kurpitsansiemeniä",
+      "state": "Kuorittu kurpitsansiemen ennen paahtoa",
+      "matchEvidence": "Kuorittu kurpitsansiemen ennen paahtoa",
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptissä käytetty syötävä raaka-aine.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Lähtömäärien vertailuskenaario; pellille jäävää öljyä ei mitattu.",
+      "record": {
+        "id": "fineli-31211-release-20",
+        "name": "KURPITSANSIEMEN",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/31211",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "state": "Kuorittu kurpitsansiemen ennen paahtoa",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 2.88,
+          "polyols": 0,
+          "fibre": null,
+          "fat": 48,
+          "protein": 35.1
+        }
+      }
+    },
+    {
+      "amount": 30,
+      "unit": "ml",
+      "item": "rypsiöljyä",
+      "state": "Rypsiöljy, skenaariossa koko mitattu määrä jää annoksiin",
+      "matchEvidence": "Rypsiöljy, skenaariossa koko mitattu määrä jää annoksiin",
+      "edibleFraction": 1,
+      "edibleEvidence": "Reseptissä käytetty syötävä raaka-aine.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Lähtömäärien vertailuskenaario; pellille jäävää öljyä ei mitattu.",
+      "gramsPerUnit": 0.9,
+      "conversionEvidence": "Fineli 535: 15 ml = 13.5 g (90 g/dl)",
+      "record": {
+        "id": "fineli-535-release-20",
+        "name": "RYPSIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/535",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "state": "Rypsiöljy, skenaariossa koko mitattu määrä jää annoksiin",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0,
+          "fat": 100,
+          "protein": 0
+        }
+      }
+    },
+    {
+      "amount": 0.5,
+      "unit": "tl",
+      "item": "cayennepippuria",
+      "excludedReason": "Cayennen tarkka tuotetieto puuttuu, ei lasketa perusainesosien osasummaan."
+    },
+    {
+      "amount": 5,
+      "unit": "g",
+      "item": "hienoa suolaa",
+      "excludedReason": "Lisätty suola rajataan perusainesosien osasummasta."
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Saatavilla olevan hiilihydraatin, proteiinin ja rasvan laskentaskenaario on tehty öljyssä paahdetulle vertailupähkinälle. Tuotetyyppi, kurpitsansiemenen kuitu ja pellille jäävä öljyosuus estävät julkiset arvot.",
+  "batchId": "batch-33310"
+}

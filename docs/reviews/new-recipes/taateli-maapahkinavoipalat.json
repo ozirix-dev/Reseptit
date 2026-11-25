@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "taateli-maapahkinavoipalat",
+  "source_path": "reseptit/valipalat/taateli-maapahkinavoipalat.md",
+  "source_sha256": "e1e604b660da4f0d2c837de0389ef1beba8885da3a400cc097169fc778cbeaab",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://feelgoodfoodie.net/recipe/date-bark/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/taateli-maapahkinavoipalat.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Oma 20 reseptin samankaltaisuusseulonta. Chat-2:n tarkastamissa viidessä heuristisessa osumassa ei ollut estettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset, niiden käyttötilat ja määrät säilyvät Chat-2:n katselmoimasta sisällöstä. Sisältää maapähkinää ja mantelia. Tarkista suklaan mahdollinen maito pakkausmerkinnästä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusvaiheet ja valmistuslähde säilyvät Chat-2:n katselmoimasta sisällöstä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaturvallisuusohjeet ja allergeenit säilyvät neljällä kielellä tarkastetusta revisiosta. Kirjallinen näyttö ilman Recipavon koekeittiötestiä. Sisältää maapähkinää ja mantelia. Tarkista suklaan mahdollinen maito pakkausmerkinnästä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 24 ja ilmoitettu kokonaisaika 50 min säilyvät. Arvot tarkistettu neljällä kielellä."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kivettömien taatelien ja käytetyn suklaan tuotekoostumukset ja yhtenevät hiilihydraattiperusteet puuttuvat. Kaikki neljä arvoa jäävät määrittämättömiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle annosversiolle ei ole hyväksyttyä soveltuvaa GI- tai ainesosasidosta eikä kanonista GK-näyttöä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/valipalat/taateli-maapahkinavoipalat.webp",
+    "bytes": 176282,
+    "sha256": "e5c8731e2644aa85603768d78b49bc3a17f0f0595ed4b1953094616b65bfc079",
+    "width": 1200,
+    "height": 800,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161831506",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161957227",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/valipalat/taateli-maapahkinavoipalat.md",
+        "sha256": "010143b78b35fcb5ece50e2b0af3ca76fce8ae138748792319806c5ffd8929b7"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/taateli-maapahkinavoipalat.md",
+        "sha256": "d03a7a4a1fd28f3cc0014580fc288de8a25b9fce49908fa99c9b6a6209236a81"
+      },
+      {
+        "path": "kaannokset/th/valipalat/taateli-maapahkinavoipalat.md",
+        "sha256": "6b1d28b358afbcf8a9f919c29ed2c6582ed6ffa7c86bb72172724d9f66484a02"
+      },
+      {
+        "path": "reseptit/valipalat/taateli-maapahkinavoipalat.md",
+        "sha256": "ae6e26f451e1e1e26f57b3f1b84299c7110c2186351537aba323ecb1c581cfa6"
+      }
+    ],
+    "scope": "Ennen julkaisuehdokasta katselmoitu teksti, valmistus, turvallisuus ja kuva. Ravintoratkaisujen ehdot on kirjattu erillisessä katselmoinnissa."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "4ac063132dc2e062278722997a334f49cb3193375e04b2fa98572af7346b1133"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/valipalat/taateli-maapahkinavoipalat.md",
+        "language": "fi",
+        "slug": "taateli-maapahkinavoipalat",
+        "sha256": "e1e604b660da4f0d2c837de0389ef1beba8885da3a400cc097169fc778cbeaab",
+        "semantic_sha256": "e1caf4d4bf3ef6e4abf3786319d66ce194967d0d0dddffe3384f1db2102a59bd"
+      },
+      {
+        "path": "kaannokset/en/valipalat/taateli-maapahkinavoipalat.md",
+        "language": "en",
+        "slug": "taateli-maapahkinavoipalat-en",
+        "sha256": "46e0df30a7bc292be1ae2b93c5059b4af73c3d905c53517c27aecfe354f2442b",
+        "semantic_sha256": "31a7a3dd1d4de2d3825b16eeb637a94a2e192a93393d04db0fc45a80bee9ec21"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/taateli-maapahkinavoipalat.md",
+        "language": "sv",
+        "slug": "taateli-maapahkinavoipalat-sv",
+        "sha256": "14fd2500684eee5af0db2dd8226595c9c66daa9a1172f204377e15f47ae8bc62",
+        "semantic_sha256": "213436a78bc3a6841943516e7aa69bdb2f3a69486240d1c4312956ed90961281"
+      },
+      {
+        "path": "kaannokset/th/valipalat/taateli-maapahkinavoipalat.md",
+        "language": "th",
+        "slug": "taateli-maapahkinavoipalat-th",
+        "sha256": "634f556c4c65f15876d5c238ec5ad80249507a439313dc65008eadb6740a7fd9",
+        "semantic_sha256": "eb649b842002a12e40cbbe9a00b3af006580e718df5641c605a6206089f7ecf8"
+      }
+    ],
+    "final_independent_delta": "pending"
+  }
+}

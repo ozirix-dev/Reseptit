@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "scones",
+  "source_path": "reseptit/leivonnaiset/scones.md",
+  "source_sha256": "3369fc04e37ab8a4c697a9d70332aeb9e00e7e65b6a1f835c4aef2f6657c7943",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.kingarthurbaking.com/recipes/classic-scones-recipe"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/scones.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Oma 20 reseptin samankaltaisuusseulonta. Chat-2:n tarkastamissa viidessä heuristisessa osumassa ei ollut estettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset, niiden käyttötilat ja määrät säilyvät Chat-2:n katselmoimasta sisällöstä. Sisältää vehnää ja maitoa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusvaiheet ja valmistuslähde säilyvät Chat-2:n katselmoimasta sisällöstä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaturvallisuusohjeet ja allergeenit säilyvät neljällä kielellä tarkastetusta revisiosta. Kirjallinen näyttö ilman Recipavon koekeittiötestiä. Sisältää vehnää ja maitoa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 12 ja ilmoitettu kokonaisaika 30 min säilyvät. Arvot tarkistettu neljällä kielellä."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Piimän koostumus sekä skonssien pinnalle tai pellille jäävän jauhon ja voiteluvoin osuudet ovat avoimia. Kaikki neljä arvoa jäävät määrittämättömiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle annosversiolle ei ole hyväksyttyä soveltuvaa GI- tai ainesosasidosta eikä kanonista GK-näyttöä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/scones.webp",
+    "bytes": 107302,
+    "sha256": "3f8ca4a58020af5c2642ce31ed141804b2499f979a0bc70aba35f78ca743dd06",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161831506",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161957227",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/leivonnaiset/scones.md",
+        "sha256": "cbcc1871b118249256ee5d6bf2386c4359e0491b4686e8b8002fa3ddefeac37a"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/scones.md",
+        "sha256": "1d3bd3a0c6d8b9975bedc40b718cf655349fe93a687250320a1969e83d12eaba"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/scones.md",
+        "sha256": "53c50b0e1f85dc630543da72a2469894861ce58f6098fef0e7d71389cd1531a0"
+      },
+      {
+        "path": "reseptit/leivonnaiset/scones.md",
+        "sha256": "71a8b1a98d57e71bca339016819a38445dc7a5a31b5d65f3befaba41d11a6365"
+      }
+    ],
+    "scope": "Ennen julkaisuehdokasta katselmoitu teksti, valmistus, turvallisuus ja kuva. Ravintoratkaisujen ehdot on kirjattu erillisessä katselmoinnissa."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "47b0e31e46223a93a8770a61b5d43e05aaba92a8aae1f3387fb287d5b92d13ed"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/scones.md",
+        "language": "fi",
+        "slug": "scones",
+        "sha256": "3369fc04e37ab8a4c697a9d70332aeb9e00e7e65b6a1f835c4aef2f6657c7943",
+        "semantic_sha256": "435f4f71a386be7965df738980bb4012ba5938ff6194738173d52d795583e70a"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/scones.md",
+        "language": "en",
+        "slug": "scones-en",
+        "sha256": "b09439337f525bf9c393390c42b51235231382f329e14bd7326664de4d138bac",
+        "semantic_sha256": "e398a7894f5cef9e79abd6dac0a0b7f356536eef2fc4983cc835145577b77346"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/scones.md",
+        "language": "sv",
+        "slug": "scones-sv",
+        "sha256": "2e496a6fbceb1d2d2a929747e6fa907cceaf6839e8772f0c98cc1fe23a79fa0c",
+        "semantic_sha256": "748a559fe31fdc9a8fe86731721a1226afe3da682db4edd580940d39b9cdf36c"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/scones.md",
+        "language": "th",
+        "slug": "scones-th",
+        "sha256": "fb5cb2e281ecd1e061cc3ffb42a92e1c9636226d75c6f169e49ed2c508985e1e",
+        "semantic_sha256": "0f1b05daa84b73742a0bcc9843b2356e2abcb47f8b055a25ccecf797c7b11f1f"
+      }
+    ],
+    "final_independent_delta": "pending"
+  }
+}
