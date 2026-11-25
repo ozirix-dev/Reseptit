@@ -54,7 +54,7 @@ translation_status:
 
 # Paistetut muikut ruisjauhoilla
 
-Perinteinen suomalainen kotikeittiön resepti.
+Muikut pyöräytetään ruisjauhon ja korppujauhon seoksessa ja paistetaan pannulla rapeiksi. Tarjoa kuumina keitettyjen perunoiden kanssa.
 
 ## Valmistus
 

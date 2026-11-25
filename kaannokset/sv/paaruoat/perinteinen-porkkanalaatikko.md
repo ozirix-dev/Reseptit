@@ -56,7 +56,7 @@ ingredients:
 
 # Traditionell finsk morotslåda med ris
 
-Ett traditionellt recept från det finska hemmaköket.
+Morotspuré och risgrynsgröt gräddas tillsammans i den här finska julrätten, som smaksätts med muskot.
 
 ## Tillagning
 

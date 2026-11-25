@@ -67,7 +67,7 @@ ingredients:
 
 # Traditionella finska kanelbullar
 
-Ett traditionellt recept från det finska hemmaköket.
+Kardemummadoftande bulldeg rullas kring en kanelfyllning. Bullarna toppas med pärlsocker före gräddning.
 
 ## Tillagning
 

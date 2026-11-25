@@ -56,7 +56,7 @@ ingredients:
 
 # Traditional Finnish Carrot and Rice Casserole
 
-A traditional Finnish home cooking recipe.
+Carrot purée and milky rice porridge are baked together in this Finnish Christmas side dish, seasoned with nutmeg.
 
 ## Preparation
 

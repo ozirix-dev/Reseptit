@@ -61,7 +61,7 @@ translation_status:
 
 # Perinteinen porkkanalaatikko
 
-Perinteinen suomalainen kotikeittiön resepti.
+Porkkanasose ja maitoinen riisipuuro sekoitetaan ja paistetaan vuoassa. Muskottipähkinä maustaa perinteisen joulupöydän lisukkeen.
 
 ## Valmistus
 

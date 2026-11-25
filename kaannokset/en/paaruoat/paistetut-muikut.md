@@ -49,7 +49,7 @@ ingredients:
 
 # Finnish Pan-Fried Vendace with Rye Flour and Breadcrumbs
 
-A traditional Finnish home cooking recipe.
+Vendace are coated in rye flour and breadcrumbs, then pan-fried until crisp. Serve them hot with boiled potatoes.
 
 ## Preparation
 

@@ -72,7 +72,7 @@ translation_status:
 
 # Perinteiset korvapuustit
 
-Perinteinen suomalainen kotikeittiön resepti.
+Kardemummalla maustettu pullataikina kääritään kanelitäytteen ympärille. Korvapuustit viimeistellään raesokerilla.
 
 ## Valmistus
 

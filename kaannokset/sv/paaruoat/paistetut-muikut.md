@@ -49,7 +49,7 @@ ingredients:
 
 # Smörstekta siklöjor med rågpanering
 
-Ett traditionellt recept från det finska hemmaköket.
+Siklöjorna vänds i rågmjöl och ströbröd och steks frasiga i panna. Servera dem varma med kokt potatis.
 
 ## Tillagning
 

@@ -67,7 +67,7 @@ ingredients:
 
 # Traditional Finnish Cinnamon Rolls
 
-A traditional Finnish home cooking recipe.
+Cardamom-scented dough is rolled around a cinnamon filling, then topped with pearl sugar before baking.
 
 ## Preparation
 
