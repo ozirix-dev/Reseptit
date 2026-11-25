@@ -1,0 +1,57 @@
+---
+title: "Mjuka pretzels"
+recipe_id: pehmeat-pretzelit
+url_slug: pehmeat-pretzelit
+category: leivonnainen
+language: sv
+status: draft
+servings: 16
+time_total_min: 130
+difficulty: "keskitaso"
+main_ingredient: ["vehnäjauho"]
+cooking_method: ["uuni"]
+ingredients:
+  - amount: 19
+    unit: "g"
+    item: "socker"
+  - amount: 454
+    unit: "g"
+    item: "rumstempererat vatten till degen"
+  - amount: 2
+    unit: "tsk"
+    item: "torrjäst"
+  - amount: 340
+    unit: "g"
+    item: "ljust fullkornsvetemjöl"
+  - amount: 330
+    unit: "g"
+    item: "vetemjöl med hög proteinhalt"
+  - amount: 18
+    unit: "g"
+    item: "fint salt till degen"
+  - amount: 1360
+    unit: "ml"
+    item: "vatten till kokningen"
+  - amount: 28
+    unit: "g"
+    item: "bikarbonat"
+  - amount: 4
+    unit: "g"
+    item: "grovt salt till topping"
+---
+
+# Mjuka pretzels
+
+Tvinnade vetebröd doppas i bikarbonatvatten före gräddningen.
+
+## Gör så här
+
+1. Blanda socker, degens vatten, jäst, mjöl och fint salt. Knåda till en mjuk, elastisk deg. Täck och låt jäsa i cirka 60 minuter tills degen är tydligt pösig.
+2. Dela i 16 delar och rulla till längder. Forma ett U, korsa ändarna två gånger och tryck fast dem längst ner i U:et. Sätt ugnen på 230 °C.
+3. Koka upp vattnet i en stor kastrull och tillsätt bikarbonaten lite i taget. Koka högst fyra pretzels åt gången i cirka 1 minut. Lyft upp med hålslev till bakplåtspapper och strö över grovt salt.
+4. Grädda i 12–15 minuter tills ytan har fått ordentligt med färg. Låt svalna på galler.
+
+## Anteckningar
+
+- Innehåller vete.
+- Tillagningskälla https://www.kingarthurbaking.com/recipes/classic-pretzels-recipe
