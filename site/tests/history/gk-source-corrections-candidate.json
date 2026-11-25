@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "owner": "Chat 3",
-  "scope": "Candidate only; no active source or approval change",
+  "scope": "Source-corrected draft, existing approval fingerprints deliberately stale; no new numeric GK approval",
   "baselineCommit": "ab7443d8300886e1cdda7e40e79a65dd2641bd94",
   "reviewReferences": [
     "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7159402985",
@@ -122,5 +122,754 @@
     "doner-kebab",
     "pellava-puuro-pahkinoilla",
     "char-siu"
-  ]
+  ],
+  "baselineEvidence": {
+    "runId": 45657679309,
+    "jobId": 139358670026,
+    "head": "c64b65d971f492be39d60500a6500323e0cf0eb9",
+    "base": "ab7443d8300886e1cdda7e40e79a65dd2641bd94"
+  },
+  "beforeFileSha256": "c74f7be2f6e7005c71f40c87f8fd64af70cbea3a83a54a2b1f535c4bc08decad",
+  "afterFileSha256": "d74a5c11589b8f4ad3abe6ef1df5f7e655d8f540df549d90611f45a6cb19a716",
+  "transitions": {
+    "pellava-puuro-pahkinoilla": {
+      "beforeInput": {
+        "recipeId": "pellava-puuro-pahkinoilla",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "pellavansiemenrouhetta",
+            "grams": 35,
+            "fineliRecordId": "afcd-F008210-release-3",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 35 g, mapped to Seed, linseed or flaxseed (linseed/flaxseed meal; whole-seed composition proxy, available carbohydrate is below 1 g per serving)."
+          },
+          {
+            "name": "kookosjauhoa",
+            "grams": 20,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "No source-matched composition and preparation was resolved for “kookosjauhoa”; it is not treated as zero.",
+            "massEvidence": "Recipe-listed 20 g kookosjauhoa."
+          },
+          {
+            "name": "makeuttamatonta mantelimaitoa",
+            "grams": 250,
+            "fineliRecordId": "fineli-684-release-20",
+            "giRecordId": "dairy-category-mean-gi-35",
+            "massEvidence": "Recipe-listed 250 g, mapped to MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG (plain milk).",
+            "foodKey": "dairy",
+            "preparationKey": "unflavoured-dairy",
+            "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          },
+          {
+            "name": "kuohukermaa",
+            "grams": 50,
+            "fineliRecordId": "fineli-631-release-20",
+            "giRecordId": "dairy-category-mean-gi-35",
+            "massEvidence": "Recipe-listed 50 g, mapped to KERMA, KUOHUKERMA, RASVAA 38 % (whipping cream, 38% fat).",
+            "foodKey": "dairy",
+            "preparationKey": "unflavoured-dairy",
+            "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          },
+          {
+            "name": "kanelia",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+            "estimatedAvailableCarbohydratePerServingG": 0.125,
+            "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+            "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          },
+          {
+            "name": "saksanpähkinöitä",
+            "grams": 20,
+            "fineliRecordId": "fineli-376-release-20",
+            "giRecordId": "nuts-category-mean-gi-22",
+            "massEvidence": "Recipe-listed 20 g, mapped to PÄHKINÄ, SAKSANPÄHKINÄ (walnuts as sold).",
+            "foodKey": "peanut",
+            "preparationKey": "nuts-category-mean",
+            "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+          },
+          {
+            "name": "vadelmia",
+            "grams": 30,
+            "fineliRecordId": "afcd-F007619-release-3",
+            "giRecordId": "fruit-category-mean-gi-51",
+            "massEvidence": "Recipe-listed 30 g, mapped to Raspberry, raw (fresh raw raspberries).",
+            "foodKey": "fruit-category-mean",
+            "preparationKey": "category-mean",
+            "giMatchEvidence": "Fruits and fruit products category mean: fruit category mean; used only as a broad tamarind-paste analogue; category/analogue estimate, low confidence."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Plain salt contributes no available carbohydrate.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+            "massEvidence": "Recipe-listed salt; not weighed."
+          }
+        ]
+      },
+      "afterInput": {
+        "recipeId": "pellava-puuro-pahkinoilla",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "pellavansiemenrouhetta",
+            "grams": 35,
+            "fineliRecordId": "afcd-F008210-release-3",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 35 g, mapped to Seed, linseed or flaxseed (linseed/flaxseed meal; whole-seed composition proxy, available carbohydrate is below 1 g per serving)."
+          },
+          {
+            "name": "kookosjauhoa",
+            "grams": 20,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "No source-matched composition and preparation was resolved for “kookosjauhoa”; it is not treated as zero.",
+            "massEvidence": "Recipe-listed 20 g kookosjauhoa."
+          },
+          {
+            "name": "makeuttamatonta mantelimaitoa",
+            "grams": 250,
+            "fineliRecordId": "fineli-34738-2026-10-25",
+            "giRecordId": null,
+            "massEvidence": "250 ml = 2.5 dl = 250 g; Fineli Release 20 food 34738, unsweetened Alpro almond beverage, DL 100 g; named product composition proxy, not dairy milk."
+          },
+          {
+            "name": "kuohukermaa",
+            "grams": 50,
+            "fineliRecordId": "fineli-631-release-20",
+            "giRecordId": "dairy-category-mean-gi-35",
+            "massEvidence": "Recipe-listed 50 g, mapped to KERMA, KUOHUKERMA, RASVAA 38 % (whipping cream, 38% fat).",
+            "foodKey": "dairy",
+            "preparationKey": "unflavoured-dairy",
+            "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          },
+          {
+            "name": "kanelia",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+            "estimatedAvailableCarbohydratePerServingG": 0.125,
+            "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+            "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          },
+          {
+            "name": "saksanpähkinöitä",
+            "grams": 20,
+            "fineliRecordId": "fineli-376-release-20",
+            "giRecordId": "nuts-category-mean-gi-22",
+            "massEvidence": "Recipe-listed 20 g, mapped to PÄHKINÄ, SAKSANPÄHKINÄ (walnuts as sold).",
+            "foodKey": "peanut",
+            "preparationKey": "nuts-category-mean",
+            "giMatchEvidence": "Nuts, category mean: Low-confidence category mean for peanuts.; category/analogue estimate, low confidence."
+          },
+          {
+            "name": "vadelmia",
+            "grams": 30,
+            "fineliRecordId": "afcd-F007619-release-3",
+            "giRecordId": "fruit-category-mean-gi-51",
+            "massEvidence": "Recipe-listed 30 g, mapped to Raspberry, raw (fresh raw raspberries).",
+            "foodKey": "fruit-category-mean",
+            "preparationKey": "category-mean",
+            "giMatchEvidence": "Fruits and fruit products category mean: fruit category mean; used only as a broad tamarind-paste analogue; category/analogue estimate, low confidence."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Plain salt contributes no available carbohydrate.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+            "massEvidence": "Recipe-listed salt; not weighed."
+          }
+        ]
+      },
+      "beforeResult": {
+        "recipeId": "pellava-puuro-pahkinoilla",
+        "servings": 4,
+        "status": "INSUFFICIENT SOURCE DATA",
+        "unroundedGlycemicLoadPerServing": null,
+        "glycemicLoadPerServing": null,
+        "glycemicLoadRangePerServing": null,
+        "omittedAvailableCarbohydratePerServingG": 0.37,
+        "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+        "confidence": null,
+        "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+        "ingredients": [
+          {
+            "name": "pellavansiemenrouhetta",
+            "grams": 35,
+            "fineliRecordId": "afcd-F008210-release-3",
+            "availableCarbohydratePer100g": 2.8,
+            "availableCarbohydratePerServingG": 0.245,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.245 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "kookosjauhoa",
+            "grams": 20,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "No source-matched composition and preparation was resolved for “kookosjauhoa”; it is not treated as zero.",
+            "issues": [
+              "No source-matched composition and preparation was resolved for “kookosjauhoa”; it is not treated as zero."
+            ]
+          },
+          {
+            "name": "makeuttamatonta mantelimaitoa",
+            "grams": 250,
+            "fineliRecordId": "fineli-684-release-20",
+            "availableCarbohydratePer100g": 4.8,
+            "availableCarbohydratePerServingG": 3,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 35,
+            "giRecordId": "dairy-category-mean-gi-35",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 1.05,
+            "giContributionRange": {
+              "min": 1.05,
+              "max": 1.05
+            },
+            "giCandidates": [
+              {
+                "id": "dairy-category-mean-gi-35",
+                "gi": 35,
+                "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "kuohukermaa",
+            "grams": 50,
+            "fineliRecordId": "fineli-631-release-20",
+            "availableCarbohydratePer100g": 2.9,
+            "availableCarbohydratePerServingG": 0.3625,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 35,
+            "giRecordId": "dairy-category-mean-gi-35",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 0.126875,
+            "giContributionRange": {
+              "min": 0.126875,
+              "max": 0.126875
+            },
+            "giCandidates": [
+              {
+                "id": "dairy-category-mean-gi-35",
+                "gi": 35,
+                "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "kanelia",
+            "grams": null,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": 0.125,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+            "issues": [
+              "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+            ]
+          },
+          {
+            "name": "saksanpähkinöitä",
+            "grams": 20,
+            "fineliRecordId": "fineli-376-release-20",
+            "availableCarbohydratePer100g": 3.2,
+            "availableCarbohydratePerServingG": 0.16,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 22,
+            "giRecordId": "nuts-category-mean-gi-22",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 0.0352,
+            "giContributionRange": {
+              "min": 0.0352,
+              "max": 0.0352
+            },
+            "giCandidates": [
+              {
+                "id": "nuts-category-mean-gi-22",
+                "gi": 22,
+                "preparation": "Nut category mean",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "vadelmia",
+            "grams": 30,
+            "fineliRecordId": "afcd-F007619-release-3",
+            "availableCarbohydratePer100g": 6.9,
+            "availableCarbohydratePerServingG": 0.5175,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 51,
+            "giRecordId": "fruit-category-mean-gi-51",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 0.26392499999999997,
+            "giContributionRange": {
+              "min": 0.26392499999999997,
+              "max": 0.26392499999999997
+            },
+            "giCandidates": [
+              {
+                "id": "fruit-category-mean-gi-51",
+                "gi": 51,
+                "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Plain salt contributes no available carbohydrate.",
+            "issues": [
+              "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
+            ]
+          }
+        ],
+        "blockers": [
+          "pellava-puuro-pahkinoilla: kookosjauhoa: No source-matched composition and preparation was resolved for “kookosjauhoa”; it is not treated as zero."
+        ]
+      },
+      "beforeResultSha256": "a9a19b85469e8379aaaee8506d590630452cd9b0dad387a4d75b03bc54eabd79",
+      "sourceSha256": "87221d992744cfeaf6e4aebd706a1e1e81af78550f0a681a013f8f53670231f5"
+    },
+    "char-siu": {
+      "beforeInput": {
+        "recipeId": "char-siu",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "näkyvästä rasvasta siistittyä porsaan ulkofileetä",
+            "grams": 800,
+            "fineliRecordId": "afcd-F007037-release-3",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 800 g; raw lean pork loin, visible fat trimmed."
+          },
+          {
+            "name": "hoisinkastiketta",
+            "grams": 45,
+            "fineliRecordId": "afcd-F008008-release-3",
+            "giRecordId": "asian-regional-category-mean-gi-65",
+            "massEvidence": "One level tablespoon of thick commercial sauce represented as 15 g.",
+            "giMatchEvidence": "undefined category mean/analogue, low confidence; not a measured ingredient-specific value."
+          },
+          {
+            "name": "soijakastiketta",
+            "grams": 36,
+            "fineliRecordId": "fineli-31-release-20",
+            "giRecordId": null,
+            "massEvidence": "Fineli record 31 lists 18 g per tablespoon (RKL)."
+          },
+          {
+            "name": "hunajaa",
+            "grams": 40,
+            "fineliRecordId": "afcd-F004380-release-3",
+            "giRecordId": "sugar-syrups-category-mean-gi-58",
+            "massEvidence": "Fineli honey record 4 lists 20 g per tablespoon; used only for the household-mass conversion.",
+            "giMatchEvidence": "Sugars and syrups category mean category mean/analogue, low confidence; not a measured ingredient-specific value."
+          },
+          {
+            "name": "riisiviinietikkaa",
+            "grams": 15,
+            "fineliRecordId": "fineli-929-release-20",
+            "giRecordId": "rice-category-mean-gi-67",
+            "massEvidence": "Fineli record 929 lists 15 g per tablespoon (RKL).",
+            "giMatchEvidence": "Rice category mean category mean/analogue, low confidence; not a measured ingredient-specific value."
+          },
+          {
+            "name": "kiinalaista viismaustetta",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "No complete source record for the blend was available locally; omit the seasoning's small nutrient contribution from this estimate.",
+            "estimatedAvailableCarbohydratePerServingG": 0.2,
+            "negligibleAssumption": "Small seasoning bound already documented in its source calculation.",
+            "massEvidence": "A 2 g teaspoon of dry spice blend per full recipe is conservatively bounded at under 4 kcal and 0.6 g total carbohydrate for the whole recipe."
+          },
+          {
+            "name": "valkosipulinkynttä",
+            "grams": 3,
+            "fineliRecordId": "afcd-F004193-release-3",
+            "giRecordId": null,
+            "massEvidence": "One medium garlic clove is represented by 3 g peeled edible garlic."
+          },
+          {
+            "name": "hunajaa",
+            "grams": 20,
+            "fineliRecordId": "afcd-F004380-release-3",
+            "giRecordId": "sugar-syrups-category-mean-gi-58",
+            "massEvidence": "Fineli honey record 4 lists 20 g per tablespoon; used only for the household-mass conversion.",
+            "giMatchEvidence": "Sugars and syrups category mean category mean/analogue, low confidence; not a measured ingredient-specific value."
+          },
+          {
+            "name": "keitettyä pitkäjyväistä valkoista riisiä",
+            "grams": 600,
+            "fineliRecordId": "fineli-30346-release-20",
+            "giRecordId": "rice-category-mean-gi-67",
+            "massEvidence": "Recipe-listed 600 g; cooked long-grain white rice, unsalted.",
+            "giMatchEvidence": "Rice category mean category mean/analogue, low confidence; not a measured ingredient-specific value."
+          }
+        ]
+      },
+      "afterInput": {
+        "recipeId": "char-siu",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "näkyvästä rasvasta siistittyä porsaan ulkofileetä",
+            "grams": 800,
+            "fineliRecordId": "afcd-F007037-release-3",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 800 g; raw lean pork loin, visible fat trimmed."
+          },
+          {
+            "name": "hoisinkastiketta",
+            "grams": 45,
+            "fineliRecordId": "afcd-F008008-release-3",
+            "giRecordId": null,
+            "massEvidence": "One level tablespoon of thick commercial sauce represented as 15 g."
+          },
+          {
+            "name": "soijakastiketta",
+            "grams": 36,
+            "fineliRecordId": "fineli-31-release-20",
+            "giRecordId": null,
+            "massEvidence": "Fineli record 31 lists 18 g per tablespoon (RKL)."
+          },
+          {
+            "name": "hunajaa",
+            "grams": 40,
+            "fineliRecordId": "afcd-F004380-release-3",
+            "giRecordId": "sugar-syrups-category-mean-gi-58",
+            "massEvidence": "Fineli honey record 4 lists 20 g per tablespoon; used only for the household-mass conversion.",
+            "giMatchEvidence": "Sugars and syrups category mean category mean/analogue, low confidence; not a measured ingredient-specific value."
+          },
+          {
+            "name": "riisiviinietikkaa",
+            "grams": 15,
+            "fineliRecordId": "fineli-929-release-20",
+            "giRecordId": null,
+            "massEvidence": "Fineli record 929 lists 15 g per tablespoon (RKL)."
+          },
+          {
+            "name": "kiinalaista viismaustetta",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "No complete source record for the blend was available locally; omit the seasoning's small nutrient contribution from this estimate.",
+            "estimatedAvailableCarbohydratePerServingG": 0.2,
+            "negligibleAssumption": "Small seasoning bound already documented in its source calculation.",
+            "massEvidence": "A 2 g teaspoon of dry spice blend per full recipe is conservatively bounded at under 4 kcal and 0.6 g total carbohydrate for the whole recipe."
+          },
+          {
+            "name": "valkosipulinkynttä",
+            "grams": 3,
+            "fineliRecordId": "afcd-F004193-release-3",
+            "giRecordId": null,
+            "massEvidence": "One medium garlic clove is represented by 3 g peeled edible garlic."
+          },
+          {
+            "name": "hunajaa",
+            "grams": 20,
+            "fineliRecordId": "afcd-F004380-release-3",
+            "giRecordId": "sugar-syrups-category-mean-gi-58",
+            "massEvidence": "Fineli honey record 4 lists 20 g per tablespoon; used only for the household-mass conversion.",
+            "giMatchEvidence": "Sugars and syrups category mean category mean/analogue, low confidence; not a measured ingredient-specific value."
+          },
+          {
+            "name": "keitettyä pitkäjyväistä valkoista riisiä",
+            "grams": 600,
+            "fineliRecordId": "fineli-30346-release-20",
+            "giRecordId": "rice-category-mean-gi-67",
+            "massEvidence": "Recipe-listed 600 g; cooked long-grain white rice, unsalted.",
+            "giMatchEvidence": "Rice category mean category mean/analogue, low confidence; not a measured ingredient-specific value."
+          }
+        ]
+      },
+      "beforeResult": {
+        "recipeId": "char-siu",
+        "servings": 4,
+        "status": "INSUFFICIENT SOURCE DATA",
+        "unroundedGlycemicLoadPerServing": null,
+        "glycemicLoadPerServing": null,
+        "glycemicLoadRangePerServing": null,
+        "omittedAvailableCarbohydratePerServingG": 1.1315,
+        "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+        "confidence": null,
+        "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+        "ingredients": [
+          {
+            "name": "näkyvästä rasvasta siistittyä porsaan ulkofileetä",
+            "grams": 800,
+            "fineliRecordId": "afcd-F007037-release-3",
+            "availableCarbohydratePer100g": 0,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "hoisinkastiketta",
+            "grams": 45,
+            "fineliRecordId": "afcd-F008008-release-3",
+            "availableCarbohydratePer100g": 37.2,
+            "availableCarbohydratePerServingG": 4.1850000000000005,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": "asian-regional-category-mean-gi-65",
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "undefined category mean/analogue, low confidence; not a measured ingredient-specific value."
+            ]
+          },
+          {
+            "name": "soijakastiketta",
+            "grams": 36,
+            "fineliRecordId": "fineli-31-release-20",
+            "availableCarbohydratePer100g": 9.5,
+            "availableCarbohydratePerServingG": 0.855,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.855 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "hunajaa",
+            "grams": 40,
+            "fineliRecordId": "afcd-F004380-release-3",
+            "availableCarbohydratePer100g": 72.3,
+            "availableCarbohydratePerServingG": 7.23,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 58,
+            "giRecordId": "sugar-syrups-category-mean-gi-58",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 4.1934000000000005,
+            "giContributionRange": {
+              "min": 4.1934000000000005,
+              "max": 4.1934000000000005
+            },
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "riisiviinietikkaa",
+            "grams": 15,
+            "fineliRecordId": "fineli-929-release-20",
+            "availableCarbohydratePer100g": 0.5,
+            "availableCarbohydratePerServingG": 0.01875,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 67,
+            "giRecordId": "rice-category-mean-gi-67",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 0.012562499999999999,
+            "giContributionRange": {
+              "min": 0.012562499999999999,
+              "max": 0.012562499999999999
+            },
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "kiinalaista viismaustetta",
+            "grams": null,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": 0.2,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "No complete source record for the blend was available locally; omit the seasoning's small nutrient contribution from this estimate.",
+            "issues": [
+              "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Small seasoning bound already documented in its source calculation."
+            ]
+          },
+          {
+            "name": "valkosipulinkynttä",
+            "grams": 3,
+            "fineliRecordId": "afcd-F004193-release-3",
+            "availableCarbohydratePer100g": 10.2,
+            "availableCarbohydratePerServingG": 0.0765,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.076 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "hunajaa",
+            "grams": 20,
+            "fineliRecordId": "afcd-F004380-release-3",
+            "availableCarbohydratePer100g": 72.3,
+            "availableCarbohydratePerServingG": 3.615,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 58,
+            "giRecordId": "sugar-syrups-category-mean-gi-58",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 2.0967000000000002,
+            "giContributionRange": {
+              "min": 2.0967000000000002,
+              "max": 2.0967000000000002
+            },
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "keitettyä pitkäjyväistä valkoista riisiä",
+            "grams": 600,
+            "fineliRecordId": "fineli-30346-release-20",
+            "availableCarbohydratePer100g": 23.561,
+            "availableCarbohydratePerServingG": 35.3415,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 67,
+            "giRecordId": "rice-category-mean-gi-67",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 23.678805,
+            "giContributionRange": {
+              "min": 23.678805,
+              "max": 23.678805
+            },
+            "giCandidates": [],
+            "issues": []
+          }
+        ],
+        "blockers": [
+          "char-siu: hoisinkastiketta: undefined category mean/analogue, low confidence; not a measured ingredient-specific value."
+        ]
+      },
+      "beforeResultSha256": "3bc58ff599fcb9cc29a0d5eb95fabeb7aaab235121428d40f4bd73c52411763a",
+      "sourceSha256": "69ce6f38c733ccdf30a99e128dae85388b4ee459105406e18a0411995d13689f"
+    }
+  }
 }

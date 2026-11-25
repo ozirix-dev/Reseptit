@@ -1,3 +1,5 @@
+import { predecessorForGkSourceCorrection } from "../scripts/gk-source-correction-history";
+import { restoreGkSourceCorrectionReport } from "./history/gk-source-correction-report";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
@@ -30,11 +32,13 @@ type Pilot = {
 };
 const publicRows=[...glycemicLoadPilotResults,...glycemicLoadAdditionalResults];
 
-// Candidate exercise in memory, using the actual engine. No writes to canonical
-// input, bindings, generated files or existing historical seals.
+// Validate the actual source-corrected input and replay the sealed predecessor.
+// Old approval fingerprints are intentionally not renewed.
 test("GK source correction A: exact three-row candidate, canonical model and scope", async () => {
-  for(const [p,pin] of Object.entries(manifest.blobs)) assert.equal(blob(await read(p)),pin,p);
-  const original = await json("docs/nutrition/glycemic-load-pilot-input.json") as {recipes:GlycemicLoadRecipeInput[]};
+  const liveText=await read("docs/nutrition/glycemic-load-pilot-input.json");
+  const predecessor=predecessorForGkSourceCorrection("docs/nutrition/glycemic-load-pilot-input.json",liveText);
+  for(const [p,pin] of Object.entries(manifest.blobs)) assert.equal(blob(p==="docs/nutrition/glycemic-load-pilot-input.json"?predecessor:await read(p)),pin,p);
+  const original=JSON.parse(predecessor) as {recipes:GlycemicLoadRecipeInput[]};
   const food = await json("docs/nutrition/food-records.json") as FoodRecord[];
   const gi = (await json("docs/nutrition/glycemic-index-records.json")).records as GlycemicIndexRecord[];
   const creamEvidence = await json("docs/nutrition/calculations/keto-joulutortut.json") as {ingredients:{record?:FoodRecord}[]};
@@ -67,12 +71,16 @@ test("GK source correction A: exact three-row candidate, canonical model and sco
   assert.equal(changedRows,3);
   const reversed=structuredClone(candidate);
   for(const change of manifest.rows) byId(reversed.recipes,change.recipeId).ingredients[change.index]=structuredClone(change.before);
-  assert.equal(JSON.stringify(reversed,null,2)+"\n",await read("docs/nutrition/glycemic-load-pilot-input.json"));
+  assert.equal(JSON.stringify(reversed,null,2)+"\n",predecessor);
+  assert.equal(JSON.stringify(candidate,null,2)+"\n",liveText);
+  assert.throws(()=>predecessorForGkSourceCorrection("docs/nutrition/glycemic-load-pilot-input.json",liveText+"\n"),/unreviewed source-correction successor/);
   const bindings=await json("docs/nutrition/glycemic-load-recipe-bindings.json");
   const pilot=await json("tmp/nutrition/glycemic-load-pilot.json") as Pilot;
+  const historical=restoreGkSourceCorrectionReport(structuredClone(pilot));
   for(const [id,pin] of Object.entries(manifest.expectedFingerprints)){
     const before=byId(original.recipes,id), after=byId(candidate.recipes,id);
-    assert.deepEqual(byId(pilot.calculationInputs,id),before,id+" canonical input");
+    assert.deepEqual(byId(pilot.calculationInputs,id),after,id+" corrected canonical input");
+    assert.deepEqual(byId(historical.calculationInputs,id),before,id+" restored historical input");
     assert.equal(glycemicLoadInputHash(before),pin.beforeInput);
     assert.equal(glycemicLoadEvidenceHash(before,foods,gi),pin.beforeEvidence);
     assert.equal(bindings.calculationInputs[id],pin.beforeInput);
@@ -89,6 +97,15 @@ test("GK source correction A: exact three-row candidate, canonical model and sco
     assert.equal(current.glycemicLoadPerServing,null,id+" existing original GK must be checked before migration");
     assert.ok(visible,id+" missing public original");
     assert.equal(visible.glycemicLoadPerServing,null,id+" existing public GK");
+    assert.equal(visible.glycemicLoadRangePerServing,null);
+    assert.equal(visible.confidence,null);
+    assert.deepEqual(visible.sourceReferences,[]);
+    assert.equal(pilot.gkOnlyVariants.filter(x=>x.recipeId===id).length,0);
+    assert.equal(pilot.originalReleaseBindings[id],undefined);
+    if(id==="pellava-puuro-pahkinoilla"){
+      assert.ok(visible.carbohydrateSources.some(x=>x.title.includes("MANTELIJUOMA")));
+      assert.ok(!visible.carbohydrateSources.some(x=>x.title.includes("KEVYTMAITO")));
+    }
     assert.equal(newModel.status,"INSUFFICIENT SOURCE DATA",id);
     assert.equal(newModel.glycemicLoadPerServing,null,id);
     assert.equal(newModel.glycemicLoadRangePerServing,null,id);
