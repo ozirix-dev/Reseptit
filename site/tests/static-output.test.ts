@@ -266,7 +266,7 @@ test("standalone carbohydrate and source warnings follow reviewed quantities and
 
 test("preparation and optional-side evidence stays visibly scoped", async () => {
   const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
-  for (const id of ["gazpacho", "medu-vada", "marjakiisseli-vaniljakastikkeella", "malesialainen-mee-goreng-aamunuudeleilla",
+  for (const id of ["gazpacho", "marjakiisseli-vaniljakastikkeella", "malesialainen-mee-goreng-aamunuudeleilla",
     "pannacotta-marjakastikkeella", "lahi-ita-kikhernejauho-yrttilettu", "kantonilainen-hoyrytetty-kala",
     "larb-moo-vhh", "pohjoisafrikkalainen-kuskus-aamiaiskulho", "ropa-vieja", "amritsari-kala", "kiinalainen-hirssipuuro-taateleilla",
     "lihapullat-kermakastikkeessa-vhh", "jauhelihakastike-kesakurpitsanuudeleilla", "kanakorma-kukkakaaliriisilla",
@@ -340,6 +340,45 @@ test("carbohydrate and GL describe their separate recipe assumptions before and 
     }
   }
   assert.equal(glycemicLoadFilterCategories["valimerellinen-jogurttikulho-hunajalla"], "low");
+});
+
+test("Medu vada wrong composition identity remains in sealed history but not public GK", async () => {
+  const id = "medu-vada";
+  const root = path.resolve(import.meta.dirname, "../..");
+  const reviews = await loadReviewedPortions(root);
+  assert.equal(reviews[id].legacyGkHold, true);
+  assert.equal(reviews[id].ingredientGkEvidenceSha256, undefined);
+  const original = glycemicLoadPilotResults.find(row => row.recipeId === id);
+  assert.ok(original);
+  assert.equal(original.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(original.glycemicLoadPerServing, null);
+  assert.equal(original.glycemicLoadRangePerServing, null);
+  assert.equal(original.confidence, null);
+  assert.deepEqual(original.sourceReferences, []);
+  assert.deepEqual(original.carbohydrateSources, []);
+  assert.equal(original.portionEvidence?.gkIngredientSubset, undefined);
+  assert.equal(glycemicLoadFilterCategories[id], undefined);
+  assert.ok(!gkVersionCoverage.numericRecipeIds.includes(id));
+  const audit = JSON.parse(await readFile(path.join(root, "tmp/nutrition/glycemic-load-pilot.json"), "utf8"));
+  const sealed = audit.results.filter((row: {recipeId:string}) => row.recipeId === id);
+  assert.equal(sealed.length, 1);
+  assert.equal(sealed[0].glycemicLoadPerServing, 10.77);
+  assert.equal(sealed[0].ingredients[0].fineliRecordId, "fineli-399-2026-10-24");
+  const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+  assert.deepEqual(entries.map(row => row.locale).sort(), ["en","fi","sv","th"]);
+  for (const { locale, routePath } of entries) {
+    const html = (await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8")).replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+    const guide = await readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8");
+    const start = guide.indexOf(`id="${id}"`);
+    assert.ok(start >= 0, routePath);
+    const end = guide.indexOf("<li ", start + 1);
+    const row = guide.slice(start, end < 0 ? undefined : end);
+    const note = reviews[id].condition![locale];
+    assert.ok(html.includes(renderToStaticMarkup(createElement("p", null, note)).slice(3,-4)), routePath);
+    assert.ok(row.includes(renderToStaticMarkup(createElement("p", null, note)).slice(3,-4)), routePath);
+    assert.doesNotMatch(html, /data-portion-gk=|data-gk-status="(?:CALCULATED|QUALITATIVE)"|data-original-gk-class=/, routePath);
+    assert.doesNotMatch(row, /gk-evidence__value|data-original-gk-class=|data-gk-ingredient-subset=/, routePath);
+  }
 });
 
 test("reviewed ingredient contributions and the dry risotto rice amount are visible beside the supported portion information", async () => {
@@ -517,7 +556,7 @@ test("guide coverage and recipe labels distinguish documented GK ingredient subs
     "gai-yang-vhh", "jauhelihakastike-kesakurpitsanuudeleilla", "kana-yakitori-kaalilla",
     "kanakorma-kukkakaaliriisilla", "khao-kha-moo-vhh", "khao-man-gai-vhh",
     "kiinalainen-soijamaito-aamiaisella", "lahi-ita-ful-medames", "larb-moo-vhh",
-    "lihapullat-kermakastikkeessa-vhh", "medu-vada",
+    "lihapullat-kermakastikkeessa-vhh",
   ];
   const numeric = [...glycemicLoadPilotResults, ...glycemicLoadAdditionalResults].filter(row => row.status === "CALCULATED");
   const tagged = numeric.filter(row => row.portionEvidence?.gkIngredientSubset);
