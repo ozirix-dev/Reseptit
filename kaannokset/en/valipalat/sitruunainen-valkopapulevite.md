@@ -12,6 +12,11 @@ servings: 4
 time_total_min: 10
 difficulty: "easy"
 main_ingredient: ["valkopapu"]
+image:
+  src: valipalat/sitruunainen-valkopapulevite.webp
+  alt: "Ivory white bean spread with vegetable sticks (AI illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 250
     unit: "g"

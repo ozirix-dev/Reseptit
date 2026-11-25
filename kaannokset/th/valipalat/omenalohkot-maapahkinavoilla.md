@@ -12,6 +12,11 @@ servings: 1
 time_total_min: 10
 difficulty: "ง่าย"
 main_ingredient: ["omena"]
+image:
+  src: valipalat/omenalohkot-maapahkinavoilla.webp
+  alt: "แอปเปิลเปลือกแดงหั่นเสี้ยวกับเนยถั่วลิสงถ้วยเล็ก (ภาพประกอบสร้างด้วย AI)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 130
     unit: "g"

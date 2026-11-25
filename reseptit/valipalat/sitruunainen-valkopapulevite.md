@@ -9,6 +9,11 @@ servings: 4
 time_total_min: 10
 difficulty: "helppo"
 main_ingredient: ["valkopapu"]
+image:
+  src: valipalat/sitruunainen-valkopapulevite.webp
+  alt: "Vaaleaa valkopapulevitettä ja kasvistikkuja (tekoälykuvitus)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 250
     unit: "g"

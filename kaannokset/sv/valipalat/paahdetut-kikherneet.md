@@ -13,6 +13,11 @@ time_total_min: 40
 difficulty: "lätt"
 main_ingredient: ["kikherne"]
 cooking_method: ["uuni"]
+image:
+  src: valipalat/paahdetut-kikherneet.webp
+  alt: "En skål med kryddade rostade kikärter (AI-illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 230
     unit: "g"

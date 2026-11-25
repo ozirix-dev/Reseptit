@@ -10,6 +10,11 @@ time_total_min: 40
 difficulty: "helppo"
 main_ingredient: ["kikherne"]
 cooking_method: ["uuni"]
+image:
+  src: valipalat/paahdetut-kikherneet.webp
+  alt: "Maustettuja paahdettuja kikherneitä kulhossa (tekoälykuvitus)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 230
     unit: "g"

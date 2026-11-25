@@ -12,6 +12,11 @@ servings: 2
 time_total_min: 10
 difficulty: "ง่าย"
 main_ingredient: ["mango"]
+image:
+  src: valipalat/mango-lassi.webp
+  alt: "ลาสซีมะม่วงสองแก้ว (ภาพประกอบสร้างด้วย AI)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 220
     unit: "g"

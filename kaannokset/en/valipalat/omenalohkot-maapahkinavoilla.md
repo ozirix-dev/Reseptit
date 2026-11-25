@@ -12,6 +12,11 @@ servings: 1
 time_total_min: 10
 difficulty: "easy"
 main_ingredient: ["omena"]
+image:
+  src: valipalat/omenalohkot-maapahkinavoilla.webp
+  alt: "Red-skinned apple wedges and a small bowl of peanut butter (AI illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 130
     unit: "g"

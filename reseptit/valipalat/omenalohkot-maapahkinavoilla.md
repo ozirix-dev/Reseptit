@@ -9,6 +9,11 @@ servings: 1
 time_total_min: 10
 difficulty: "helppo"
 main_ingredient: ["omena"]
+image:
+  src: valipalat/omenalohkot-maapahkinavoilla.webp
+  alt: "Punakuorisia omenalohkoja ja pieni kulho maapähkinävoita (tekoälykuvitus)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 130
     unit: "g"

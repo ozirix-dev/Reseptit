@@ -12,6 +12,11 @@ servings: 4
 time_total_min: 10
 difficulty: "ง่าย"
 main_ingredient: ["valkopapu"]
+image:
+  src: valipalat/sitruunainen-valkopapulevite.webp
+  alt: "ถั่วขาวบดสีอ่อนกับผักหั่นแท่ง (ภาพประกอบสร้างด้วย AI)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 250
     unit: "g"

@@ -13,6 +13,11 @@ time_total_min: 40
 difficulty: "easy"
 main_ingredient: ["kikherne"]
 cooking_method: ["uuni"]
+image:
+  src: valipalat/paahdetut-kikherneet.webp
+  alt: "A bowl of seasoned roasted chickpeas (AI illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 230
     unit: "g"

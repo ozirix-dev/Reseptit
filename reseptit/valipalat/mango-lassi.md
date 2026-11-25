@@ -9,6 +9,11 @@ servings: 2
 time_total_min: 10
 difficulty: "helppo"
 main_ingredient: ["mango"]
+image:
+  src: valipalat/mango-lassi.webp
+  alt: "Kaksi lasillista mangolassia (tekoälykuvitus)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 220
     unit: "g"

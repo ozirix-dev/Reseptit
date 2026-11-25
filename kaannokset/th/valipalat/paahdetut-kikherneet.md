@@ -13,6 +13,11 @@ time_total_min: 40
 difficulty: "ง่าย"
 main_ingredient: ["kikherne"]
 cooking_method: ["uuni"]
+image:
+  src: valipalat/paahdetut-kikherneet.webp
+  alt: "ถั่วลูกไก่อบปรุงรสในชาม (ภาพประกอบสร้างด้วย AI)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 230
     unit: "g"
