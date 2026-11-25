@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/jalkiruoat/puolukkakastike-jalkiruokiin.md
 translation_of: puolukkakastike-jalkiruokiin
-status: draft
+status: published
 servings: 6
 time_total_min: 20
 difficulty: "ง่าย"
@@ -23,6 +23,10 @@ image:
   alt: "ซอสลิงกอนเบอร์รีสีแดงเข้มในชามแก้วใส มีผลเบอร์รีบางส่วนเป็นลูก เป็นภาพที่สร้างด้วย AI"
   width: 960
   height: 640
+carbs_net_per_serving_g: 12.88
+carbs_total_per_serving_g: 13.92
+protein_per_serving_g: 0.23
+fat_per_serving_g: 0.27
 ingredients:
   - amount: 250
     unit: "g"
@@ -51,10 +55,9 @@ ingredients:
 
 ## หมายเหตุ
 
-- สูตรนี้ยังเป็นฉบับร่าง ยังไม่มีการอนุมัติหรือแสดงตัวเลขคุณค่าทางโภชนาการสำหรับเผยแพร่ ค่า GK ยังไม่ได้กำหนด และภาพประกอบที่สร้างด้วย AI ยังรอการอนุมัติขั้นสุดท้าย
+- ภาพประกอบสร้างด้วย AI ค่าทางโภชนาการเป็นค่าประมาณต่อหนึ่งหน่วยบริโภคจากส่วนผสม ยังไม่สามารถระบุค่าภาระน้ำตาลได้
 - Preparation reference: https://www.k-ruoka.fi/reseptit/puolukkakastike
 
-- ได้เปลี่ยนภาพประกอบที่ไม่ตรงกับสูตรแล้ว แต่ภาพ AI ใหม่ยังรอการอนุมัติจากบรรณาธิการ.
 - สูตรซอสเบอร์รีของ Martat ต้มน้ำเชื่อมก่อนใส่เบอร์รีปั่น ส่วนสูตรของ K-Ruoka ไม่ต้ม สูตร Recipavo นี้ต้มและเหลือผลเบอร์รีบางส่วนเป็นลูก เป็นสูตรดัดแปลงเอง ไม่ใช่สูตรที่แหล่งใดทดลองทำ. https://www.martat.fi/reseptit/marjakastike/
 - ส่วนผสมที่ระบุไม่ได้เติมนม ไข่ ข้าวสาลี หรือถั่วเปลือกแข็งโดยตั้งใจ โปรดตรวจฉลากเรื่องการปนเปื้อน และยังไม่มีการอนุมัติคำกล่าวอ้างว่าปราศจากกลูเตน.
 - เวลารวมที่ระบุใช้สำหรับการเสิร์ฟซอสแบบอุ่น หากต้องการเสิร์ฟเย็น ให้เผื่อเวลาทำให้เย็นและแช่ตู้เย็นเพิ่ม

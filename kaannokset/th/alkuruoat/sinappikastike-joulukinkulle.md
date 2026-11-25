@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/alkuruoat/sinappikastike-joulukinkulle.md
 translation_of: sinappikastike-joulukinkulle
-status: draft
+status: published
 servings: 6
 time_total_min: 20
 difficulty: "ง่าย"
@@ -63,7 +63,8 @@ ingredients:
 
 ## หมายเหตุ
 
-- ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพ AI อยู่ในสาขานี้แล้ว แต่ยังต้องตรวจภาพก่อนเผยแพร่
+- ตรวจสารก่อภูมิแพ้จากฉลาก
+- ภาพประกอบสร้างด้วย AI ยังระบุค่าทางโภชนาการต่อหนึ่งหน่วยบริโภคไม่ได้ ยังไม่สามารถระบุค่าภาระน้ำตาลได้
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kastike-kinkulle-ilman-paistolienta
 - ซอสแฮมที่ทดสอบโดย Martat ใช้แป้งสาลี มัสตาร์ด ครีมและน้ำจากการอบแฮม สูตรนี้ใช้น้ำซุปผักแทน จึงไม่ใช่สูตรเดียวกัน. https://www.martat.fi/reseptit/kinkun-kastike/
 - มี **นม ข้าวสาลี และมัสตาร์ด** น้ำซุปผักอาจมีขึ้นฉ่าย ตรวจฉลากน้ำซุปและมัสตาร์ด.

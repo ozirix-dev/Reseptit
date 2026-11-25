@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/alkuruoat/perinteinen-ruskea-kastike.md
 translation_of: perinteinen-ruskea-kastike
-status: draft
+status: published
 servings: 4
 time_total_min: 25
 difficulty: "enkel"
@@ -23,6 +23,8 @@ image:
   alt: "Blank brun sås i en vit såssnipa, med köttbullar och potatismos i bakgrunden"
   width: 960
   height: 640
+protein_per_serving_g: 6.23
+fat_per_serving_g: 7.38
 ingredients:
   - amount: 35
     unit: "g"
@@ -54,7 +56,8 @@ Brynt vetemjöl, smör och köttbuljong ger en fyllig sås till köttbullar och 
 
 ## Anteckningar
 
-- Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Den AI-genererade illustrationsbilden finns i denna gren och kräver fortfarande redaktionell granskning.
+- Kontrollera allergener på förpackningarna.
+- Illustrationen är AI-genererad. Protein och fett är uppskattade värden per portion. Kolhydratvärden saknas. Den glykemiska belastningen kunde inte fastställas.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/ruskea-kastike
 - Innehåller **mjölk, vete och soja**. Sojasås kan även innehålla vete, och buljong kan innehålla selleri. Kontrollera produktmärkningen.
 - Servera såsen varm direkt. Vid förberedelse i förväg: kyl snabbt i ett grunt kärl, förvara under +6 °C och värm igen tills såsen är genomvarm. Kontrollera buljong och soja för selleri, vete och soja.

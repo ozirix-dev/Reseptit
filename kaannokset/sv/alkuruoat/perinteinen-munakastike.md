@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/alkuruoat/perinteinen-munakastike.md
 translation_of: perinteinen-munakastike
-status: draft
+status: published
 servings: 4
 time_total_min: 20
 difficulty: "enkel"
@@ -23,6 +23,10 @@ image:
   alt: "Ljusgul äggsås med hackat kokt ägg och dill i skål"
   width: 960
   height: 640
+carbs_net_per_serving_g: 10.53
+carbs_total_per_serving_g: 10.9
+protein_per_serving_g: 7.89
+fat_per_serving_g: 12.52
 ingredients:
   - amount: 400
     unit: "g"
@@ -60,11 +64,9 @@ En mild mjölkbaserad sås med hackade hårdkokta ägg och färsk dill.
 
 ## Anteckningar
 
-- Redaktionellt utkast med Fineli-beräknade näringsvärden. Vitpepparns lilla bidrag är konservativt massbegränsat; glykemisk belastning och slutlig bildgranskning återstår.
+- Illustrationen är AI-genererad. Näringsvärdena är portionsuppskattningar baserade på ingredienserna. Den glykemiska belastningen kunde inte fastställas.
 - Preparation reference: https://www.martat.fi/reseptit/kananmunakastike/
 
-- Den AI-genererade bilden finns i denna gren och inväntar granskning.
 - Marttas provlagade äggsås använder mjölk, smör, vetemjöl och kokta ägg. Den tidigare Valio-källan gällde en annan gräddbaserad sås. https://www.martat.fi/reseptit/kananmunakastike/
 - Innehåller **ägg, mjölk och vete**. Använd genomkokta, skalade ägg; servera såsen varm eller kyl den snabbt och förvara i kylskåp.
 - Använd helt hårdkokta, skalade ägg och rena redskap. Servera ägg- och mjölksåsen varm direkt; kyl rester utan dröjsmål i ett grunt kärl och förvara i kylskåp under +6 °C. Håll kall mat kall och varm mat varm.
-- För näringsberäkningen vägs 400 g standardmjölk i stället för tidigare 400 ml. Använd 120 g skalade hårdkokta ägg som ätbar mängd. Bidraget från 0,3 g vitpeppar avgränsas konservativt enligt massan i stället för att antas vara noll.

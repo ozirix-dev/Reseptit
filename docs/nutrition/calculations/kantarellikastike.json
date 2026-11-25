@@ -1,0 +1,287 @@
+{
+  "recipeId": "kantarellikastike",
+  "sourceHash": "61bb6ce261bf3667c61d070968ef83a9aef7345e825768587a80066ebce2f6ab",
+  "calculatedAt": "2026-11-25",
+  "servings": 4,
+  "scope": "Yksi annos reseptin 4 annoksesta. Kastike ilman tarjoiluehdotusten lisukkeita.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "puhdistettuja kantarelleja",
+      "amount": 350,
+      "unit": "g",
+      "state": "puhdistettuja kantarelleja",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-367-release-20",
+        "name": "KANTARELLI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/367",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "puhdistettuja kantarelleja",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": false,
+        "per100g": {
+          "carbohydrate": 1.541,
+          "fibre": 2.3,
+          "polyols": null,
+          "protein": 1.957,
+          "fat": 0.692
+        }
+      }
+    },
+    {
+      "item": "keltasipulia",
+      "amount": 70,
+      "unit": "g",
+      "state": "keltasipulia",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-335-release-20",
+        "name": "SIPULI, KELTASIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "keltasipulia",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 1.2,
+          "polyols": 0,
+          "protein": 1.25,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "voita",
+      "amount": 25,
+      "unit": "g",
+      "state": "voita",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "voita",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.19,
+          "fat": 81.3
+        }
+      }
+    },
+    {
+      "item": "vehnäjauhoja",
+      "amount": 20,
+      "unit": "g",
+      "state": "vehnäjauhoja",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "vehnäjauhoja",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      }
+    },
+    {
+      "item": "kuohukermaa",
+      "amount": 200,
+      "unit": "ml",
+      "state": "kuohukermaa",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-29066-release-20",
+        "name": "KERMA, KUOHUKERMA, RASVAA 35 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29066",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "kuohukermaa",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 2,
+          "fat": 35
+        }
+      },
+      "gramsPerUnit": 1,
+      "conversionEvidence": "THL Fineli Release 20 #29066, aineskohtainen DL = 100 g. Kuohukermalle käytetään 35 %:n vertailuainesta."
+    },
+    {
+      "item": "vettä",
+      "amount": 75,
+      "unit": "ml",
+      "state": "vettä",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "vettä",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      },
+      "gramsPerUnit": 1,
+      "conversionEvidence": "THL Fineli Release 20 #922, aineskohtainen DL = 100 g."
+    },
+    {
+      "item": "suolaa",
+      "amount": 4,
+      "unit": "g",
+      "state": "suolaa",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "suolaa",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "mustapippuria",
+      "amount": 0.5,
+      "unit": "g",
+      "state": "mustapippuria",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "afcd-F006618-release-3",
+        "name": "Pepper, black, ground",
+        "state": "mustapippuria",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-11-25",
+        "licence": "FSANZ AFCD Release 3 Data User Licence, CC BY-SA 3.0 Australia. Australian food composition data may vary from Finnish products.",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD:n parillisten ilmoitettujen CHO-arvojen erotus samalla painoperustalla.",
+        "per100g": {
+          "carbohydrate": 38.6,
+          "fibre": 25.3,
+          "polyols": 0,
+          "protein": 10.4,
+          "fat": 3.3
+        }
+      }
+    },
+    {
+      "item": "persiljaa",
+      "amount": 7,
+      "unit": "g",
+      "state": "persiljaa",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-333-release-20",
+        "name": "PERSILJA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/333",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "persiljaa",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 1.1,
+          "fibre": 2.9,
+          "polyols": 0,
+          "protein": 1.38,
+          "fat": 0.2
+        }
+      }
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Raakaa kantarellia vastaavan Fineli 367:n SUGOH on tyhjä. Imeytyvä arvo vastaa Finelin omaa CHOAVL-arvoa. Kokonaishiilihydraatti edellyttäisi myös sienen polyolimäärää.",
+  "batchId": "batch-33308"
+}

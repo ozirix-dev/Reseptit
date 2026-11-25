@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/alkuruoat/kantarellikastike.md
 translation_of: kantarellikastike
-status: draft
+status: published
 servings: 4
 time_total_min: 30
 difficulty: "easy"
@@ -23,6 +23,9 @@ image:
   alt: "Creamy chanterelle sauce in a ceramic bowl, with golden chanterelles, onion and parsley; AI illustration"
   width: 960
   height: 640
+carbs_net_per_serving_g: 7.51
+protein_per_serving_g: 3.63
+fat_per_serving_g: 23.29
 ingredients:
   - amount: 350
     unit: "g"
@@ -66,7 +69,8 @@ Butter-fried chanterelles in cream pair with potatoes and roast meat.
 
 ## Notes
 
-- Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The AI-generated illustration is now in this branch, but editorial image review is pending.
+- Check packaging for allergens.
+- The illustration was generated with AI. Net carbohydrates, protein and fat are estimates per serving. Total carbohydrates are unavailable. Glycaemic load could not be determined.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kantarellikastike
 - Contains milk and wheat. Do not use an AI food illustration to identify wild mushrooms.
 - Use only positively identified edible chanterelles or commercially sold, correctly identified mushrooms. Never identify a foraged mushroom from the AI recipe image. Serve hot; cool leftovers promptly and refrigerate below +6°C.

@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/alkuruoat/sinappikastike-joulukinkulle.md
 translation_of: sinappikastike-joulukinkulle
-status: draft
+status: published
 servings: 6
 time_total_min: 20
 difficulty: "easy"
@@ -63,7 +63,8 @@ A warm, gentle mustard sauce for ham that needs no roasting juices.
 
 ## Notes
 
-- Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The AI-generated illustration is now in this branch, but editorial image review is pending.
+- Check packaging for allergens.
+- The illustration was generated with AI. Nutrition values per serving are unavailable. Glycaemic load could not be determined.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kastike-kinkulle-ilman-paistolienta
 - Martat's tested ham gravy uses wheat flour, mustard, cream and ham drippings. This version uses vegetable stock instead, so the recipes are not identical. https://www.martat.fi/reseptit/kinkun-kastike/
 - Contains **milk, wheat and mustard**. Vegetable stock may contain celery; check the stock and mustard labels.
