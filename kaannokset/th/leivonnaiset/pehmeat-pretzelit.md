@@ -38,7 +38,7 @@ ingredients:
     unit: "กรัม"
     item: "เกลือละเอียดสำหรับผสมแป้ง"
   - amount: 1360
-    unit: "มล."
+    unit: "ml"
     item: "น้ำสำหรับต้ม"
   - amount: 28
     unit: "กรัม"

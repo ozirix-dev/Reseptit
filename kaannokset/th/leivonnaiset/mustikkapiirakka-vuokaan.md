@@ -35,10 +35,10 @@ ingredients:
     unit: "ช้อนชา"
     item: "ผงฟู"
   - amount: 150
-    unit: "มล."
+    unit: "ml"
     item: "เนยผสมน้ำมันพืชชนิดเทได้"
   - amount: 100
-    unit: "มล."
+    unit: "ml"
     item: "นมพร่องมันเนย"
   - amount: 200
     unit: "กรัม"

@@ -23,13 +23,13 @@ ingredients:
     unit: "กรัม"
     item: "หัวเชื้อซาวร์โดไรย์ที่พร้อมใช้งาน"
   - amount: 200
-    unit: "มล."
+    unit: "ml"
     item: "น้ำอุ่นสำหรับแป้งหมัก"
   - amount: 110
     unit: "กรัม"
     item: "แป้งไรย์สำหรับแป้งหมัก"
   - amount: 600
-    unit: "มล."
+    unit: "ml"
     item: "น้ำอุ่นสำหรับแป้งหลัก"
   - amount: 12
     unit: "กรัม"

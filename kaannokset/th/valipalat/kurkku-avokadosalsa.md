@@ -32,10 +32,10 @@ ingredients:
     unit: "กรัม"
     item: "สะระแหน่สด"
   - amount: 25
-    unit: "มล."
+    unit: "ml"
     item: "น้ำมะนาว"
   - amount: 15
-    unit: "มล."
+    unit: "ml"
     item: "น้ำมันมะกอก"
   - amount: 0.25
     unit: "ช้อนชา"

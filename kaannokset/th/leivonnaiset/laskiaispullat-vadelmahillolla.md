@@ -20,7 +20,7 @@ image:
   height: 640
 ingredients:
   - amount: 500
-    unit: "มล."
+    unit: "ml"
     item: "นม"
   - amount: 50
     unit: "กรัม"
@@ -47,7 +47,7 @@ ingredients:
     unit: "กรัม"
     item: "แยมราสป์เบอร์รี"
   - amount: 400
-    unit: "มล."
+    unit: "ml"
     item: "วิปปิงครีม"
   - amount: 15
     unit: "กรัม"

@@ -35,7 +35,7 @@ ingredients:
     unit: "กรัม"
     item: "แครมแฟรชไขมัน 18%"
   - amount: 22.5
-    unit: "มล."
+    unit: "ml"
     item: "น้ำเลมอน"
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null

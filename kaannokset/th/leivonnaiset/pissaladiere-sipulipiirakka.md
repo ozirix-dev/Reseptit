@@ -29,13 +29,13 @@ ingredients:
     unit: "ช้อนชา"
     item: "ยีสต์แห้งสำเร็จรูป"
   - amount: 150
-    unit: "มล."
+    unit: "ml"
     item: "น้ำอุ่น"
   - amount: 15
-    unit: "มล."
+    unit: "ml"
     item: "น้ำมันมะกอกสำหรับผสมแป้ง"
   - amount: 60
-    unit: "มล."
+    unit: "ml"
     item: "น้ำมันมะกอกสำหรับผัดหัวหอม"
   - amount: 1000
     unit: "กรัม"
@@ -53,7 +53,7 @@ ingredients:
     unit: "กรัม"
     item: "มะกอกดำเอาเมล็ดออก น้ำหนักหลังสะเด็ดน้ำ"
   - amount: 5
-    unit: "มล."
+    unit: "ml"
     item: "น้ำมันมะกอกสำหรับทาพิมพ์"
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null

@@ -20,7 +20,7 @@ image:
   height: 640
 ingredients:
   - amount: 250
-    unit: "มล."
+    unit: "ml"
     item: "นม"
   - amount: 25
     unit: "กรัม"

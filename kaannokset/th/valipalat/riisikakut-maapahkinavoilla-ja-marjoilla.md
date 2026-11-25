@@ -20,7 +20,7 @@ image:
   height: 800
 ingredients:
   - amount: 4
-    unit: "แผ่น"
+    unit: "ชิ้น"
     item: "ข้าวพองแผ่นโฮลเกรนรสธรรมชาติ"
   - amount: 40
     unit: "กรัม"

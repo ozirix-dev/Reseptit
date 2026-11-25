@@ -60,7 +60,7 @@ Tvinnade vetebröd doppas i bikarbonatvatten före gräddningen.
 
 1. Blanda socker, degens vatten, jäst, mjöl och fint salt. Knåda till en mjuk, elastisk deg. Täck och låt jäsa i cirka 60 minuter tills degen är tydligt pösig.
 2. Dela i 16 delar och rulla till längder. Forma ett U, korsa ändarna två gånger och tryck fast dem längst ner i U:et. Sätt ugnen på 230 °C.
-3. Koka upp vattnet i en stor kastrull och tillsätt bikarbonaten lite i taget. Koka högst fyra pretzels åt gången i cirka 1 minut. Lyft upp med hålslev till bakplåtspapper och strö över grovt salt.
+3. Koka upp vattnet i en stor kastrull och tillsätt bikarbonaten lite i taget. Koka högst fyra pretzels åt gången i cirka 1 min. Lyft upp med hålslev till bakplåtspapper och strö över grovt salt.
 4. Grädda i 12–15 minuter tills ytan har fått ordentligt med färg. Låt svalna på galler.
 
 ## Anteckningar

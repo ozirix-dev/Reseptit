@@ -50,7 +50,7 @@ ingredients:
     unit: "ฟอง"
     item: "ไข่ไก่ฟองใหญ่"
   - amount: 80
-    unit: "มล."
+    unit: "ml"
     item: "เครื่องดื่มอัลมอนด์ไม่เติมน้ำตาล"
   - amount: 125
     unit: "กรัม"

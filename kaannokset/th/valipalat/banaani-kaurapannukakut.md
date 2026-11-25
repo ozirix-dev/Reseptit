@@ -26,7 +26,7 @@ ingredients:
     unit: "ฟอง"
     item: "ไข่ไก่"
   - amount: 120
-    unit: "มล."
+    unit: "ml"
     item: "เครื่องดื่มอัลมอนด์ไม่เติมน้ำตาล"
   - amount: 1
     unit: "ช้อนชา"
@@ -44,7 +44,7 @@ ingredients:
     unit: "ช้อนชา"
     item: "เกลือ"
   - amount: 10
-    unit: "มล."
+    unit: "ml"
     item: "น้ำมันมะกอกสำหรับทอด"
 carbs_net_per_serving_g: 41.64
 carbs_total_per_serving_g: 48.22

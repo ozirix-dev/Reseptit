@@ -35,10 +35,10 @@ ingredients:
     unit: "กรัม"
     item: "เนยจืดละลาย"
   - amount: 80
-    unit: "มล."
+    unit: "ml"
     item: "น้ำ"
   - amount: 10
-    unit: "มล."
+    unit: "ml"
     item: "น้ำมันเรพซีดสำหรับทอด"
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null

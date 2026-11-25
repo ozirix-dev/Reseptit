@@ -38,7 +38,7 @@ ingredients:
     unit: "กรัม"
     item: "บัตเตอร์มิลก์"
   - amount: 100
-    unit: "มล."
+    unit: "ml"
     item: "น้ำมันเมล็ดทานตะวัน"
 carbs_net_per_serving_g: 23.42
 carbs_total_per_serving_g: 24.79
