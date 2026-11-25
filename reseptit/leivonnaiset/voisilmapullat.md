@@ -10,6 +10,11 @@ time_total_min: 150
 difficulty: "keskitaso"
 main_ingredient: ["vehnäjauho","voi"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/voisilmapullat.webp
+  alt: "Kullanruskeita pullia, joiden keskellä on vaalea voisilmä (tekoälykuvitus)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 250
     unit: "ml"

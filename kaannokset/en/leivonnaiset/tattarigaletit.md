@@ -10,6 +10,11 @@ time_total_min: 155
 difficulty: "keskitaso"
 main_ingredient: ["tattarijauho"]
 cooking_method: ["pannu"]
+image:
+  src: leivonnaiset/tattarigaletit.webp
+  alt: "Stack of thin folded buckwheat galettes (AI illustration)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 120
     unit: "g"

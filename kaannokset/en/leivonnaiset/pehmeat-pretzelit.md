@@ -10,6 +10,11 @@ time_total_min: 130
 difficulty: "keskitaso"
 main_ingredient: ["vehnäjauho"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/pehmeat-pretzelit.webp
+  alt: "Golden pretzel knots with grains of coarse salt (AI illustration)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 19
     unit: "g"

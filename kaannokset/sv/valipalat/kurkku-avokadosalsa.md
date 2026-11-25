@@ -10,6 +10,11 @@ time_total_min: 10
 difficulty: "helppo"
 main_ingredient: ["kurkku","avokado"]
 cooking_method: ["sekoitus"]
+image:
+  src: valipalat/kurkku-avokadosalsa.webp
+  alt: "Skål med tärnad avokado, gurka och hackade örter (AI-illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 300
     unit: "g"

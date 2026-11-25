@@ -10,6 +10,11 @@ time_total_min: 10
 difficulty: "helppo"
 main_ingredient: ["riisikakku","maapähkinävoi","mansikka"]
 cooking_method: ["sekoitus"]
+image:
+  src: valipalat/riisikakut-maapahkinavoilla-ja-marjoilla.webp
+  alt: "Rice cakes topped with peanut butter, strawberries and blueberries (AI illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 4
     unit: "pc"

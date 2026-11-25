@@ -10,6 +10,11 @@ time_total_min: 175
 difficulty: "keskitaso"
 main_ingredient: ["vehnäjauho","vadelmahillo"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/laskiaispullat-vadelmahillolla.webp
+  alt: "Round Shrovetide buns with visible whipped cream and raspberry jam (AI illustration)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "ml"

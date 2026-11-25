@@ -10,6 +10,11 @@ time_total_min: 10
 difficulty: "helppo"
 main_ingredient: ["kurkku","avokado"]
 cooking_method: ["sekoitus"]
+image:
+  src: valipalat/kurkku-avokadosalsa.webp
+  alt: "อะโวคาโดและแตงกวาหั่นเต๋าในชาม คลุกสมุนไพรสับ (ภาพประกอบจาก AI)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 300
     unit: "กรัม"

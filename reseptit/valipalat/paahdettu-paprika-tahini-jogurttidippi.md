@@ -10,6 +10,11 @@ time_total_min: 15
 difficulty: "helppo"
 main_ingredient: ["paprika","tahini","jogurtti"]
 cooking_method: ["sekoitus"]
+image:
+  src: valipalat/paahdettu-paprika-tahini-jogurttidippi.webp
+  alt: "Oranssinpunainen paprikadippi vaaleassa kulhossa (tekoälykuvitus)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 180
     unit: "g"

@@ -10,6 +10,11 @@ time_total_min: 155
 difficulty: "keskitaso"
 main_ingredient: ["vehnäjauho","kardemumma"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/kolmisaikeinen-pullapitko.webp
+  alt: "ขนมปังพูลลาถักสามเส้นโรยน้ำตาลเกล็ดใหญ่ (ภาพประกอบจาก AI)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 250
     unit: "มล."

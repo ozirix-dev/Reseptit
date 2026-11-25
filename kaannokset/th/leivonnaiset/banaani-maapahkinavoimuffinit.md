@@ -10,6 +10,11 @@ time_total_min: 45
 difficulty: "helppo"
 main_ingredient: ["banaani","maapähkinävoi"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/banaani-maapahkinavoimuffinit.webp
+  alt: "มัฟฟินกล้วยสีเหลืองทองบนตะแกรง ผ่าหนึ่งชิ้นให้เห็นเนื้อ (ภาพประกอบจาก AI)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 220
     unit: "กรัม"

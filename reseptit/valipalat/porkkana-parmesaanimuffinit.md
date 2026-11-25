@@ -10,6 +10,11 @@ time_total_min: 45
 difficulty: "helppo"
 main_ingredient: ["porkkana","parmesaani"]
 cooking_method: ["uuni"]
+image:
+  src: valipalat/porkkana-parmesaanimuffinit.webp
+  alt: "Suolaisia muffineita, halkaistussa muffinissa näkyy porkkanaraastetta (tekoälykuvitus)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 350
     unit: "g"

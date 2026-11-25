@@ -10,6 +10,11 @@ time_total_min: 45
 difficulty: "helppo"
 main_ingredient: ["mustikka","vehnäjauho"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/mustikkapiirakka-vuokaan.webp
+  alt: "Rund blåbärspaj i form med en bit uppskuren (AI-illustration)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 2
     unit: "st"

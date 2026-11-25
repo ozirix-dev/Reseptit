@@ -10,6 +10,11 @@ time_total_min: 150
 difficulty: "keskitaso"
 main_ingredient: ["vehnäjauho","voi"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/voisilmapullat.webp
+  alt: "Golden buns with pale butter centres (AI illustration)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 250
     unit: "ml"

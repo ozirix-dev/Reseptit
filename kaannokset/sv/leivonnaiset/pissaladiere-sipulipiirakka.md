@@ -10,6 +10,11 @@ time_total_min: 140
 difficulty: "keskitaso"
 main_ingredient: ["sipuli","sardelli"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/pissaladiere-sipulipiirakka.webp
+  alt: "Rektangulär lökpaj med sardellrutnät och svarta oliver (AI-illustration)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 200
     unit: "g"

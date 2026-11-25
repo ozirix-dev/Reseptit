@@ -10,6 +10,11 @@ time_total_min: 45
 difficulty: "helppo"
 main_ingredient: ["banaani","maapähkinävoi"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/banaani-maapahkinavoimuffinit.webp
+  alt: "Ruskeita banaanimuffineita ritilällä, yksi halkaistuna (tekoälykuvitus)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 220
     unit: "g"

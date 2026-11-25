@@ -10,6 +10,11 @@ time_total_min: 1560
 difficulty: "keskitaso"
 main_ingredient: ["ruisjauho","hapanjuuri"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/ruislimppu-hapanjuurella.webp
+  alt: "ขนมปังไรย์สีเข้มโรยแป้ง พร้อมแผ่นขนมปังที่หั่นบาง (ภาพประกอบจาก AI)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 100
     unit: "กรัม"

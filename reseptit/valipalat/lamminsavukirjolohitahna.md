@@ -10,6 +10,11 @@ time_total_min: 15
 difficulty: "helppo"
 main_ingredient: ["kirjolohi","tuorejuusto"]
 cooking_method: ["sekoitus"]
+image:
+  src: valipalat/lamminsavukirjolohitahna.webp
+  alt: "Kirjolohitahnaa kulhossa, seassa tilliä ja punasipulia (tekoälykuvitus)"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 225
     unit: "g"

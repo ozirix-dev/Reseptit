@@ -10,6 +10,11 @@ time_total_min: 155
 difficulty: "keskitaso"
 main_ingredient: ["vehnäjauho","kardemumma"]
 cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/kolmisaikeinen-pullapitko.webp
+  alt: "Three-strand sweet bread braid topped with pearl sugar (AI illustration)"
+  width: 960
+  height: 640
 ingredients:
   - amount: 250
     unit: "ml"
