@@ -35,6 +35,7 @@ import path from "node:path";
 import { createHash } from "node:crypto";
 
 import type { FoodRecord } from "./nutrition-model";
+import { canonicalGkFoodRecords } from "./gk-food-records";
 import {
   calculateGlycemicLoad,
   CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G,
@@ -75,7 +76,9 @@ const correctedCreamCheese = (correctedCreamCheeseEvidence.ingredients as { reco
 if (!correctedCreamCheese || historicalFoodRecords.some(({ id }) => id === correctedCreamCheese.id)) {
   throw new Error("Expected one scoped composition record for the corrected joulutortut cream cheese.");
 }
-const foodRecords = [...historicalFoodRecords, correctedCreamCheese];
+// Keep the historical registry bytes untouched, but use one reviewed record
+// per ID for both the calculation/evidence and the public source projection.
+const foodRecords = canonicalGkFoodRecords([...historicalFoodRecords, correctedCreamCheese]);
 const publishedRecipeSources = new Map<string, { markdown: string; input: PublishedRecipeInputSource }>();
 for (const filename of await markdownFiles(path.join(root, "reseptit"))) {
   const markdown = (await readFile(filename, "utf8")).replaceAll("\r\n", "\n");
