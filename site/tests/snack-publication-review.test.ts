@@ -80,7 +80,12 @@ async function fixture(t: TestContext, locale: "en" | "sv" | "th" = "en") {
     scope: "One of two portions.",
     reviewerStatus: "AUTOMATED ONLY",
     carbohydrateOutput: "AVAILABLE_EXCLUDING_FIBRE",
-    ingredients: [{ ...sourceData.ingredients[0]!, excludedReason: "The product composition is unavailable." }],
+    ingredients: [{
+      ...sourceData.ingredients[0]!,
+      state: "As served",
+      matchEvidence: "The fixture identifies yogurt without a product composition.",
+      excludedReason: "The product composition is unavailable.",
+    }],
     publicationStatus: "WITHHELD_SOURCE_INCOMPLETE",
     withholdingReason: "The product composition is unavailable.",
   };
