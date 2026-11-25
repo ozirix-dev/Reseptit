@@ -1,0 +1,228 @@
+{
+  "recipeId": "porkkana-parmesaanimuffinit",
+  "sourceHash": "b4a2bc43cb585ff170ee8de740a743af9cd8334fd61dea9646414ca218c088de",
+  "calculatedAt": "2026-11-25",
+  "servings": 12,
+  "scope": "Kaksitoista yhtä suurta muffinssia. Raastettu parmesaani arvioidaan tuoreesta kovasta parmesaanista ja piimä 0,8-prosenttisesta talouspiimästä. Ei taikinan tai rasvan poistoa. Paistohöyryä käsitellään veden haihtumisena. Kahdesta kuorettomasta munasta arvioidaan 110 g.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 350,
+      "unit": "g",
+      "item": "vehnäjauhoja",
+      "state": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: JAUHO, VEHNÄJAUHO, PUOLIKARKEA. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "polyols": 0,
+          "fibre": 3.5,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      }
+    },
+    {
+      "amount": 3,
+      "unit": "tl",
+      "item": "leivinjauhetta",
+      "state": "Baking powder, dry powder",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Baking powder, dry powder. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 5,
+      "conversionEvidence": "Fineli 74 ilmoittaa leivinjauheen annosmassaksi 5 g/tl.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F000247-release-3",
+        "name": "Baking powder, dry powder",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F000247",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Baking powder, dry powder",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 19.8,
+          "polyols": 0,
+          "fibre": 0.4,
+          "protein": 0.8,
+          "fat": 0.3
+        }
+      }
+    },
+    {
+      "amount": 175,
+      "unit": "g",
+      "item": "kuorittua porkkanaa, raastettuna",
+      "state": "PORKKANA",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: PORKKANA. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-300-release-20",
+        "name": "PORKKANA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/300",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "PORKKANA",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 5.56,
+          "polyols": 0,
+          "fibre": 2.4,
+          "protein": 0.63,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "amount": 50,
+      "unit": "g",
+      "item": "raastettua parmesaania",
+      "state": "Cheese, parmesan, fresh, regular fat",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Cheese, parmesan, fresh, regular fat. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F002479-release-3",
+        "name": "Cheese, parmesan, fresh, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002479",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Cheese, parmesan, fresh, regular fat",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 32,
+          "fat": 27
+        }
+      }
+    },
+    {
+      "amount": 2,
+      "unit": "kpl",
+      "item": "kananmunaa",
+      "state": "KANANMUNA, KUORETON",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: KANANMUNA, KUORETON. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Fineli 858, KPL_M 55 g kuoretonta munaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "KANANMUNA, KUORETON",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      }
+    },
+    {
+      "amount": 250,
+      "unit": "g",
+      "item": "piimää",
+      "state": "PIIMÄ, TALOUSPIIMÄ, RASVAA 0,8 %",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: PIIMÄ, TALOUSPIIMÄ, RASVAA 0,8 %. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-611-release-20",
+        "name": "PIIMÄ, TALOUSPIIMÄ, RASVAA 0,8 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/611",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "PIIMÄ, TALOUSPIIMÄ, RASVAA 0,8 %",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 3.6,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 3.44,
+          "fat": 0.8
+        }
+      }
+    },
+    {
+      "amount": 100,
+      "unit": "ml",
+      "item": "auringonkukkaöljyä",
+      "state": "AURINGONKUKKAÖLJY",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: AURINGONKUKKAÖLJY. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 0.9,
+      "conversionEvidence": "Fineli 540, DL 90 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-540-release-20",
+        "name": "AURINGONKUKKAÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/540",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "AURINGONKUKKAÖLJY",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    }
+  ],
+  "batchId": "batch-33311"
+}

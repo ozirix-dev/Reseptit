@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "laskiaispullat-vadelmahillolla",
+  "source_path": "reseptit/leivonnaiset/laskiaispullat-vadelmahillolla.md",
+  "source_sha256": "9a4d02527bd6e5885d4a9e0e9e10ef65d4c91ef19f050c7de02a9c3e32f84a53",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/laskiaispulla/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/laskiaispullat-vadelmahillolla.json",
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/laskiaispullat-vadelmahillolla.webp",
+    "bytes": 85552,
+    "sha256": "53dc1a52f6a037dbc3cf753e000213f7165a3e0b4edf4cf205d210beaa5df565",
+    "width": 960,
+    "height": 640,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/laskiaispullat-vadelmahillolla.md",
+        "language": "fi",
+        "slug": "laskiaispullat-vadelmahillolla",
+        "sha256": "9a4d02527bd6e5885d4a9e0e9e10ef65d4c91ef19f050c7de02a9c3e32f84a53",
+        "semantic_sha256": "c223f0908b70385309b3b3c3792d480358401cde99cc452d5b1f103b2bb54128"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/laskiaispullat-vadelmahillolla.md",
+        "language": "en",
+        "slug": "laskiaispullat-vadelmahillolla-en",
+        "sha256": "cf2d82e574e194d0f9d9e6ab36ee53abc853f1801f10c9808c8833c6513439bf",
+        "semantic_sha256": "accda15e08e6c1b8b8899da2e9cdba00cb23c874ea518a7df4b392f64569073b"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/laskiaispullat-vadelmahillolla.md",
+        "language": "sv",
+        "slug": "laskiaispullat-vadelmahillolla-sv",
+        "sha256": "bd8acd250ad7b9cfa40a9f66a609d2294272e996de4c3189a729d39a171e5743",
+        "semantic_sha256": "9fa34b5370b490cb6c418b0f9a84d65f9e2e1e71ab0990b4a8a168a72b8bd054"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/laskiaispullat-vadelmahillolla.md",
+        "language": "th",
+        "slug": "laskiaispullat-vadelmahillolla-th",
+        "sha256": "662a152ac040caae3c1b850c3c01cb368a8ed59f288eb8653187673bee355b00",
+        "semantic_sha256": "b79ed3ef759d6ef286e2373e450a6555333632e1cba8a5d0dd1dba1a00a34fa0"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Jäähtyneet pullat halkaistaan ja täytetään hillolla ja kermalla. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 20 ja kokonaisaika 175 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Vadelmahillon ja leivontamargariinin nimetty koostumus sekä voitelun ja tomusokerin todellinen annosrajaus."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

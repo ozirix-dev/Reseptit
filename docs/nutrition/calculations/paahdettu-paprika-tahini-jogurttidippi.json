@@ -1,0 +1,226 @@
+{
+  "recipeId": "paahdettu-paprika-tahini-jogurttidippi",
+  "sourceHash": "6d68805ae1d4b8b0ee9110cca5b5f6d8cd9bf2c42e8efc02674c4836d0557440",
+  "calculatedAt": "2026-11-25",
+  "servings": 6,
+  "scope": "Kuusi annosta pelkkää dippiä. Säilykepaprikan paino valutettuna. Finelin punainen säilykepaprika toimii paahdetun säilykepaprikan vertailuna, 10-prosenttinen maustamaton jogurtti on laskennan tuoteskenaario. Tavallinen paprikajauhe arvioi savupaprikajauheen.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 180,
+      "unit": "g",
+      "item": "paahdettua punaista paprikaa säilykkeestä, valutettu paino",
+      "state": "PAPRIKA, PUNAINEN, SÄILYKE",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: PAPRIKA, PUNAINEN, SÄILYKE. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-33494-release-20",
+        "name": "PAPRIKA, PUNAINEN, SÄILYKE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/33494",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "PAPRIKA, PUNAINEN, SÄILYKE",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 2.7,
+          "polyols": 0,
+          "fibre": 1.71,
+          "protein": 0.8,
+          "fat": 0.3
+        }
+      }
+    },
+    {
+      "amount": 250,
+      "unit": "g",
+      "item": "maustamatonta kreikkalaista jogurttia",
+      "state": "JOGURTTI, TURKKILAINEN/KREIKKALAINEN, RASVAA 10 %",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: JOGURTTI, TURKKILAINEN/KREIKKALAINEN, RASVAA 10 %. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-32201-release-20",
+        "name": "JOGURTTI, TURKKILAINEN/KREIKKALAINEN, RASVAA 10 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/32201",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "JOGURTTI, TURKKILAINEN/KREIKKALAINEN, RASVAA 10 %",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 4.298,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 3.98,
+          "fat": 10.047
+        }
+      }
+    },
+    {
+      "amount": 10,
+      "unit": "g",
+      "item": "tahinia",
+      "state": "TAHINI, SEESAMTAHNA, EI LISÄTTYÄ SUOLAA",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: TAHINI, SEESAMTAHNA, EI LISÄTTYÄ SUOLAA. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-11087-release-20",
+        "name": "TAHINI, SEESAMTAHNA, EI LISÄTTYÄ SUOLAA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11087",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "TAHINI, SEESAMTAHNA, EI LISÄTTYÄ SUOLAA",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0.9,
+          "polyols": 0,
+          "fibre": 6.8,
+          "protein": 21.81,
+          "fat": 58
+        }
+      }
+    },
+    {
+      "amount": 10,
+      "unit": "g",
+      "item": "sitruunamehua",
+      "state": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-11557-release-20",
+        "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11557",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "polyols": 0,
+          "fibre": 0.1,
+          "protein": 0.31,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "amount": 3,
+      "unit": "g",
+      "item": "valkosipulia",
+      "state": "Garlic, peeled, fresh, raw",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Garlic, peeled, fresh, raw. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F004193-release-3",
+        "name": "Garlic, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F004193",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Garlic, peeled, fresh, raw",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 10.2,
+          "polyols": 0,
+          "fibre": 16.9,
+          "protein": 6.1,
+          "fat": 2.8
+        }
+      }
+    },
+    {
+      "amount": 0.5,
+      "unit": "tl",
+      "item": "savupaprikajauhetta",
+      "state": "Paprika, dry powder",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Paprika, dry powder. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "Fineli 11182 annosmassa on 2 g/tl.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F006316-release-3",
+        "name": "Paprika, dry powder",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006316",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Paprika, dry powder",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 19.1,
+          "polyols": 0,
+          "fibre": 34.9,
+          "protein": 14.1,
+          "fat": 12.9
+        }
+      }
+    },
+    {
+      "amount": 0.25,
+      "unit": "tl",
+      "item": "hienoa suolaa",
+      "state": "RUOKASUOLA, JODIOITU",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: RUOKASUOLA, JODIOITU. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 6.5,
+      "conversionEvidence": "Fineli 30, TL 6,5 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "RUOKASUOLA, JODIOITU",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 0.63,
+          "fat": 0
+        }
+      }
+    }
+  ],
+  "batchId": "batch-33311"
+}

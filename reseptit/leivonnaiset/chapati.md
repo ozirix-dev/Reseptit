@@ -1,0 +1,69 @@
+---
+title: "Chapati"
+recipe_id: chapati
+url_slug: chapati
+category: leivonnainen
+language: fi
+status: published
+servings: 10
+time_total_min: 45
+difficulty: "helppo"
+main_ingredient: ["vehnäjauho"]
+cooking_method: ["pannu"]
+image:
+  src: leivonnaiset/chapati.webp
+  alt: "Ohuita chapati-leipiä pinossa ja pinnalla ruskeita paistopilkkuja (tekoälykuvitus)"
+  width: 960
+  height: 640
+ingredients:
+  - amount: 140
+    unit: "g"
+    item: "täysjyvävehnäjauhoja"
+  - amount: 140
+    unit: "g"
+    item: "vehnäjauhoja taikinaan"
+  - amount: 1
+    unit: "tl"
+    item: "hienoa suolaa"
+  - amount: 30
+    unit: "ml"
+    item: "oliiviöljyä taikinaan"
+  - amount: 180
+    unit: "ml"
+    item: "kuumaa vettä"
+  - amount: 15
+    unit: "g"
+    item: "vehnäjauhoja kaulintaan, tarpeen mukaan"
+  - amount: 5
+    unit: "ml"
+    item: "oliiviöljyä pannun sivelyyn"
+carbs_net_per_serving_g: 20.11
+carbs_total_per_serving_g: 22.04
+protein_per_serving_g: 3.61
+fat_per_serving_g: 3.74
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
+---
+
+# Chapati
+
+Ohuet, hiivattomat vehnäleivät saavat pannulla ruskeita paistopilkkuja.
+
+## Valmistus
+
+1. Mittaa taikinan jauhot, suola ja öljy kulhoon. Lisää vettä vähitellen, kunnes taikina on pehmeä. Vaivaa jauhotetulla tasolla 5–10 minuuttia.
+2. Jaa taikina 10 palloon ja anna levätä peitettynä muutama minuutti. Kauli pallot vuorotellen hyvin ohuiksi pyörylöiksi.
+3. Kuumenna pannu keskilämmöllä ja sivele sen pinta ohuesti öljyllä. Paista yksi leipä kerrallaan noin puoli minuuttia ensimmäiseltä puolelta, kunnes pohjaan tulee ruskeita pilkkuja. Käännä ja paista toinen puoli kypsäksi.
+4. Pinoa leivät lautaselle liinan alle, jotta ne pysyvät pehmeinä.
+
+## Muistiinpanot
+
+- Sisältää vehnää.
+- Vertailulähde: https://www.bbcgoodfood.com/recipes/chapatis
+- Ravintoarvio koskee yhtä leipää ja sisältää koko ilmoitetun kaulintajauho- ja sivelyöljyvaran.
