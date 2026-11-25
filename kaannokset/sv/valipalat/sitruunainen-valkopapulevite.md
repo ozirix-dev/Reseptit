@@ -56,5 +56,5 @@ Cannellinibönor blir ett slätt pålägg smaksatt med citron och olivolja.
 
 ## Anteckningar
 
-- En portion är en fjärdedel av pålägget. Bröd och grönsaker serveras som tillbehör.
+- En portion är en fjärdedel av pålägget. Bröd och grönsaker som serveras till ingår inte i portionen.
 - Referens: https://www.loveandlemons.com/white-bean-dip/

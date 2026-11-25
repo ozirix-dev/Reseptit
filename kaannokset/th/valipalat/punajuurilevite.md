@@ -49,5 +49,5 @@ ingredients:
 
 ## หมายเหตุ
 
-- มีนม หนึ่งหน่วยบริโภคนับเฉพาะบีทรูตบด
+- มีนม หนึ่งหน่วยบริโภคนับเฉพาะสเปรดบีทรูตกับเฟตา
 - แหล่งอ้างอิง: https://cmcm.lu/en/insights/gesond-bleiwen/recipes/beetroot-feta-spread
