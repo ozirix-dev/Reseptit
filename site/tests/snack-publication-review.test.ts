@@ -6,7 +6,7 @@ import test, { type TestContext } from "node:test";
 import { stringify } from "yaml";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
-import { makeTemplate } from "../scripts/new-recipe-preflight.mjs";
+import { hashContent } from "../scripts/new-recipe-preflight.mjs";
 import { recipeNutritionInputHash } from "../scripts/nutrition-evidence";
 import type { Calculation } from "../scripts/nutrition-model";
 import { assertReviewedSnackPublication } from "../scripts/snack-publication-review";
@@ -54,17 +54,24 @@ async function fixture(t: TestContext, locale: "en" | "sv" | "th" = "en") {
   });
   const source = markdown(sourceData);
   const target = markdown(targetData);
-  const review = makeTemplate(sourcePath, source);
-  review.decision = "approved";
-  review.reviewed_by = "Test reviewer";
-  review.reviewed_at = "2026-11-25";
-  review.nutrition_evidence = calculationPath;
-  for (const [name, check] of Object.entries(review.checks)) {
-    Object.assign(check as object, {
-      status: name === "glycemic" ? "unavailable" : "pass",
-      notes: "The fixture has a documented editorial disposition.",
-    });
-  }
+  const review = {
+    schema_version: 1,
+    recipe_id: id,
+    source_path: sourcePath,
+    source_sha256: hashContent(source),
+    decision: "approved",
+    reviewed_by: "Test reviewer",
+    reviewed_at: "2026-11-25",
+    origin: { kind: "original", sources: [] },
+    nutrition_evidence: calculationPath,
+    checks: Object.fromEntries(
+      ["duplicates", "ingredients", "method", "food_safety", "servings_and_time", "nutrition", "glycemic"]
+        .map(name => [name, {
+          status: name === "glycemic" ? "unavailable" : "pass",
+          notes: "The fixture has a documented editorial disposition.",
+        }]),
+    ),
+  };
   const calculation: Calculation = {
     recipeId: id,
     sourceHash: recipeNutritionInputHash(sourceData),
