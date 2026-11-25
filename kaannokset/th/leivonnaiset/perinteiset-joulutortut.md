@@ -1,0 +1,52 @@
+---
+title: "พายดาวคริสต์มาสแบบฟินแลนด์"
+recipe_id: perinteiset-joulutortut
+url_slug: perinteiset-joulutortut-th
+category: leivonnainen
+language: th
+source_language: fi
+source_recipe: reseptit/leivonnaiset/perinteiset-joulutortut.md
+translation_of: perinteiset-joulutortut
+status: published
+servings: 10
+time_total_min: 45
+difficulty: "ง่าย"
+main_ingredient: ["lehtitaikina"]
+cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/perinteiset-joulutortut.webp
+  alt: "ขนมอบคริสต์มาสฟินแลนด์รูปดาว มีแยมลูกพรุนตรงกลาง (ภาพประกอบจาก AI)"
+  width: 960
+  height: 640
+ingredients:
+  - amount: 500
+    unit: "g"
+    item: "แป้งพัฟเนยแผ่นแช่แข็ง"
+  - amount: 100
+    unit: "g"
+    item: "แยมพรุนชนิดใช้สำหรับอบ"
+  - amount: 1
+    unit: "ฟอง"
+    item: "ไข่ไก่สำหรับทาผิว"
+carbs_net_per_serving_g: 21.07
+carbs_total_per_serving_g: 22.91
+protein_per_serving_g: 3.5
+fat_per_serving_g: 10.03
+---
+
+# พายดาวคริสต์มาสแบบฟินแลนด์
+
+พายแป้งพัฟรูปดาวกรอบ มีแยมพรุนทนความร้อนอยู่ตรงกลาง
+
+## วิธีทำ
+
+1. ละลายแป้งตามฉลาก เปิดเตาที่ 225 °C และรองถาดด้วยกระดาษรองอบ
+2. ตัดแป้งเป็นสี่เหลี่ยมจัตุรัสสิบชิ้น กรีดจากแต่ละมุมเข้าหากลางโดยเว้นตรงกลาง พับปลายเว้นปลายเข้าหากลางแล้วกดให้ติดกัน
+3. ตีไข่แล้วทาผิวแป้ง ตักแยมประมาณ 10 กรัมไว้ตรงกลางแต่ละชิ้น
+4. อบ 10–15 นาทีจนพองและเหลืองทอง พักให้เย็นลงก่อนเสิร์ฟเพราะไส้ยังร้อน
+
+## หมายเหตุ
+
+- มีข้าวสาลี นม และไข่
+- แหล่งอ้างอิง: https://www.martat.fi/reseptit/joulutortut/
+- ค่าประมาณต่อขนมหนึ่งชิ้นใช้ข้อมูลอ้างอิงของแป้งพัฟเนยก่อนอบและรวมไข่สำหรับทาหน้าทั้งฟอง

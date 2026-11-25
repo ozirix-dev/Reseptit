@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "recipe_id": "vuohenjuustolla-taytetyt-minipaprikat",
+  "source_path": "reseptit/valipalat/vuohenjuustolla-taytetyt-minipaprikat.md",
+  "source_sha256": "6bc329c0687af12d48e92753158079027118efc0aa24fc8f856161a21a0f4df9",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://mycasualpantry.com/roasted-mini-sweet-peppers-goat-cheese/",
+      "https://www.ruokavirasto.fi/globalassets/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/turvallisenkaytonohjeet_2025.pdf"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/vuohenjuustolla-taytetyt-minipaprikat.json",
+  "image_evidence": {
+    "path": "kuvat/valipalat/vuohenjuustolla-taytetyt-minipaprikat.webp",
+    "bytes": 144090,
+    "sha256": "bdc8737605939ecab7172f20644b78d5577e05fbee80797e1080b0cb57ba824d",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/valipalat/vuohenjuustolla-taytetyt-minipaprikat.md",
+        "language": "fi",
+        "slug": "vuohenjuustolla-taytetyt-minipaprikat",
+        "sha256": "6bc329c0687af12d48e92753158079027118efc0aa24fc8f856161a21a0f4df9",
+        "semantic_sha256": "e930edba1fab4ad5fa12a2fd2efe00d0947a98f331a60dde58bf3631f17c6e96"
+      },
+      {
+        "path": "kaannokset/en/valipalat/vuohenjuustolla-taytetyt-minipaprikat.md",
+        "language": "en",
+        "slug": "vuohenjuustolla-taytetyt-minipaprikat-en",
+        "sha256": "391628d54fd3b4161b11f70eb9115d64de8a37d6fbe35c58be09cc9e7a1acaa5",
+        "semantic_sha256": "57e981edf9615f4fc6cea6f644062ff7833c015517b2b3833419afa4e3ece3c1"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/vuohenjuustolla-taytetyt-minipaprikat.md",
+        "language": "sv",
+        "slug": "vuohenjuustolla-taytetyt-minipaprikat-sv",
+        "sha256": "fce2d9431acf4d4cd4bb50a989261417ccf46a9530954313116cf9fa336ff5f4",
+        "semantic_sha256": "d0697938eb6a9d7245f5cb2bcbc9026f8ad77976a1aea50dbe62e8debb09710f"
+      },
+      {
+        "path": "kaannokset/th/valipalat/vuohenjuustolla-taytetyt-minipaprikat.md",
+        "language": "th",
+        "slug": "vuohenjuustolla-taytetyt-minipaprikat-th",
+        "sha256": "7dd891f830e4a555f803d29df59aece01373f0a611990a5b5d29a2ad8267bee4",
+        "semantic_sha256": "9a272ef543363d809d01532fee18992b294f9e86e0313fd55cc99693b171b8fb"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Makeat paahdetut paprikat täytetään jäähtyneinä vuohenjuustolla. Lähin vertailu on tulinen jalapeño-pekonipopperi. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 5 ja kokonaisaika 40 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Tarvitaan minipaprikoiden syötävä paino ja ruohosipulituorejuuston tarkka koostumus."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

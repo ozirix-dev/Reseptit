@@ -1,0 +1,59 @@
+---
+title: "Apple overnight oats"
+recipe_id: omenainen-tuorepuuro
+url_slug: omenainen-tuorepuuro-en
+category: valipala
+language: en
+source_language: fi
+source_recipe: reseptit/valipalat/omenainen-tuorepuuro.md
+translation_of: omenainen-tuorepuuro
+status: published
+servings: 3
+time_total_min: 135
+difficulty: "easy"
+main_ingredient: ["kaurahiutale"]
+image:
+  src: valipalat/omenainen-tuorepuuro.webp
+  alt: "A bowl of overnight oats with diced apple and cinnamon (AI illustration)"
+  width: 1200
+  height: 800
+ingredients:
+  - amount: 3
+    unit: "dl"
+    item: "rolled oats"
+  - amount: 300
+    unit: "ml"
+    item: "plain oat drink"
+  - amount: 180
+    unit: "g"
+    item: "tart apple, cored"
+  - amount: 0.5
+    unit: "tsp"
+    item: "ground cinnamon"
+  - amount: 0.125
+    unit: "tsp"
+    item: "ground cardamom"
+  - amount: 0.5
+    unit: "g"
+    item: "salt"
+carbs_net_per_serving_g: 33.46
+carbs_total_per_serving_g: 38.93
+protein_per_serving_g: 6.21
+fat_per_serving_g: 4.94
+---
+
+# Apple overnight oats
+
+Grated and diced apple, cinnamon and cardamom flavour oats softened in the refrigerator.
+
+## Preparation
+
+1. Wash and core the apple. Grate 150 g and finely dice the remaining 30 g. Refrigerate the diced apple, covered, until serving.
+2. Stir together the oats, oat drink, grated apple, cinnamon, cardamom and salt. Cover and refrigerate for at least two hours.
+3. Stir the oats and divide into three portions. Serve cold. Top each serving with the diced apple just before serving.
+
+## Notes
+
+- Contains oats. The estimated time includes two hours of chilling.
+- Reference: https://www.valio.fi/reseptit/omena-kauratuorepuuro/
+- The nutrition estimate uses average values for plain oat drink and includes all the apple in the recipe.

@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "banaani-maapahkinavoimuffinit",
+  "source_path": "reseptit/leivonnaiset/banaani-maapahkinavoimuffinit.md",
+  "source_sha256": "86e6e6921dcfe02d08832b1ec71bd677dd93fe3b7d1874522db00e34f471c488",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://sallysbakingaddiction.com/peanut-butter-banana-muffins/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/banaani-maapahkinavoimuffinit.json",
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/banaani-maapahkinavoimuffinit.webp",
+    "bytes": 111228,
+    "sha256": "4cc164fab2d770590fe616f725ecfd24522e497cba0764251f3a45e5e0bfcae4",
+    "width": 960,
+    "height": 640,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/banaani-maapahkinavoimuffinit.md",
+        "language": "fi",
+        "slug": "banaani-maapahkinavoimuffinit",
+        "sha256": "86e6e6921dcfe02d08832b1ec71bd677dd93fe3b7d1874522db00e34f471c488",
+        "semantic_sha256": "4a28b67f3bf6daea902fad9f04e044cbe6e242f2856f866a966aac03e98599a4"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/banaani-maapahkinavoimuffinit.md",
+        "language": "en",
+        "slug": "banaani-maapahkinavoimuffinit-en",
+        "sha256": "e3d60867d3efe3cc06bb87ece82c232048b3fe746bafa45f1c25cad611fe4aea",
+        "semantic_sha256": "974646d17c0a48735e4ab9270b4604c3e3d5801446534c7cceea2769290ee96b"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/banaani-maapahkinavoimuffinit.md",
+        "language": "sv",
+        "slug": "banaani-maapahkinavoimuffinit-sv",
+        "sha256": "469a9330f1a495145113eb829cf59678aec05bdfbb1823126183f3b4347c7f79",
+        "semantic_sha256": "e6ff51d5616676bed22f0870082ead2f50eb97fc0ac55396e852d32b4fc1c78b"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/banaani-maapahkinavoimuffinit.md",
+        "language": "th",
+        "slug": "banaani-maapahkinavoimuffinit-th",
+        "sha256": "ba6bf48a749d102596b86ca4688fe537c7f399812b9fd91ec3d04e222e683754",
+        "semantic_sha256": "fb104e45a10007fd32ce0ad2848bcbf39283853e2b714dc90af2bbef8330e8b9"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Täysjyvävehnämuffinit maapähkinävoilla eroavat banaanileivistä ja #1005:n kaurapatukoista. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 12 ja kokonaisaika 45 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Makeuttamattoman mantelijuoman, jogurtin ja maapähkinävoin tuoteskenaario tarkistettava."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

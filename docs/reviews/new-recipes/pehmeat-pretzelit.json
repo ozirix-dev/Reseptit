@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "pehmeat-pretzelit",
+  "source_path": "reseptit/leivonnaiset/pehmeat-pretzelit.md",
+  "source_sha256": "16811d02fdda989c6f20c58abc0d6b8b379e8e8bd909e7d70b02ee5d6063b552",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.kingarthurbaking.com/recipes/classic-pretzels-recipe"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/pehmeat-pretzelit.json",
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/pehmeat-pretzelit.webp",
+    "bytes": 106102,
+    "sha256": "171b0d1371d86e69d770cb7c9ef7f08b8a069c2625d0cce934cb9c987693dfae",
+    "width": 960,
+    "height": 640,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/pehmeat-pretzelit.md",
+        "language": "fi",
+        "slug": "pehmeat-pretzelit",
+        "sha256": "16811d02fdda989c6f20c58abc0d6b8b379e8e8bd909e7d70b02ee5d6063b552",
+        "semantic_sha256": "6d5e6b213e4583c05268095fe9f53f10e1e00874eea0e966c81bebd6e97bf733"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/pehmeat-pretzelit.md",
+        "language": "en",
+        "slug": "pehmeat-pretzelit-en",
+        "sha256": "93d16c37e5b475dc88b01d7c5240ce903e659aa2ee29d9fafbf8341da6d9fa4d",
+        "semantic_sha256": "934b0a9a796b9ea3e52c213578b8dc5db8624f040bb27c06597c85563f984e3c"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/pehmeat-pretzelit.md",
+        "language": "sv",
+        "slug": "pehmeat-pretzelit-sv",
+        "sha256": "4270e7e431acb0c42267cfa6cfbbd6f8464751d1a2988f7864dba71fe4e79be9",
+        "semantic_sha256": "c10ed48d347ba27b71e10c3c853cc2abeada01888b3a04780c00eaf04808d650"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/pehmeat-pretzelit.md",
+        "language": "th",
+        "slug": "pehmeat-pretzelit-th",
+        "sha256": "afb6e5bf162ca7edb0966bfaf190444df4bee8c76ab7da04427eeeb40640ffa3",
+        "semantic_sha256": "1560a477df30ba90bb35e98e1cbd2f698fe695d608e9bbdf7b706492fe2c1f2f"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Solmu, soodavesikäsittely ja paisto muodostavat oman valmistustapansa. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 16 ja kokonaisaika 130 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Vaaleiden täysjyväjauhojen sekä vahvojen vehnäjauhojen lähderivit ja kylvystä tarttuva määrä vaativat täsmennyksen."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

@@ -1,0 +1,63 @@
+---
+title: "ขนมปังไรย์ซาวร์โดทรงกลม"
+recipe_id: ruislimppu-hapanjuurella
+url_slug: ruislimppu-hapanjuurella-th
+category: leivonnainen
+language: th
+source_language: fi
+source_recipe: reseptit/leivonnaiset/ruislimppu-hapanjuurella.md
+translation_of: ruislimppu-hapanjuurella
+status: published
+servings: 32
+time_total_min: 1560
+difficulty: "ปานกลาง"
+main_ingredient: ["ruisjauho","hapanjuuri"]
+cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/ruislimppu-hapanjuurella.webp
+  alt: "ขนมปังไรย์สีเข้มโรยแป้ง พร้อมแผ่นขนมปังที่หั่นบาง (ภาพประกอบจาก AI)"
+  width: 960
+  height: 640
+ingredients:
+  - amount: 100
+    unit: "กรัม"
+    item: "หัวเชื้อซาวร์โดไรย์ที่พร้อมใช้งาน"
+  - amount: 200
+    unit: "มล."
+    item: "น้ำอุ่นสำหรับแป้งหมัก"
+  - amount: 110
+    unit: "กรัม"
+    item: "แป้งไรย์สำหรับแป้งหมัก"
+  - amount: 600
+    unit: "มล."
+    item: "น้ำอุ่นสำหรับแป้งหลัก"
+  - amount: 12
+    unit: "กรัม"
+    item: "เกลือ"
+  - amount: 935
+    unit: "กรัม"
+    item: "แป้งไรย์สำหรับแป้งหลัก"
+  - amount: 30
+    unit: "กรัม"
+    item: "แป้งไรย์สำหรับขึ้นรูป"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
+---
+
+# ขนมปังไรย์ซาวร์โดทรงกลม
+
+หัวเชื้อไรย์ที่พร้อมใช้งานช่วยให้ขนมปังสีเข้มสองก้อนขึ้นฟู
+
+## วิธีทำ
+
+1. ผสมหัวเชื้อ น้ำ 200 มล. และแป้งไรย์ 110 กรัม ปิดหลวม ๆ พักในที่อุ่นข้ามคืนจนแป้งหมักมีฟองชัดเจนและมีกลิ่นเปรี้ยวอ่อน ๆ
+2. คนผสมน้ำ 600 มล. และเกลือ ค่อย ๆ ใส่แป้งสำหรับแป้งหลักแล้วนวดด้วยมือประมาณ 10 นาที คลุมไว้จนขึ้นฟูประมาณสองเท่า โดยทั่วไปใช้เวลา 3–6 ชั่วโมง
+3. แบ่งแป้งเป็นสองส่วนบนพื้นผิวที่โรยแป้ง แล้วปั้นเป็นก้อนกลม วางบนกระดาษรองอบ คลุมและพัก 2–3 ชั่วโมง ใช้ส้อมจิ้มผิวให้เป็นรู
+4. อบที่ 225 องศาเซลเซียสประมาณ 20 นาที แล้วลดเป็น 180 องศาเซลเซียส อบต่อประมาณ 40 นาที ขนมปังที่สุกจะมีเสียงโปร่งเมื่อเคาะด้านล่าง พักให้เย็นโดยคลุมด้วยผ้าแล้วหั่นก้อนละ 16 แผ่น
+
+## หมายเหตุ
+
+- มีข้าวไรย์ สูตรใช้หัวเชื้อที่พร้อมใช้งานแล้ว
+- แหล่งอ้างอิงวิธีทำ https://www.martat.fi/reseptit/ruisleipa-ruislimppu-hapanleipa/

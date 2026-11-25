@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "recipe_id": "paahdettu-paprika-tahini-jogurttidippi",
+  "source_path": "reseptit/valipalat/paahdettu-paprika-tahini-jogurttidippi.md",
+  "source_sha256": "5e64ce75d51a19625d17e149876596bc8796af21a65ed2565a0f482923f4c31b",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.ohsu.edu/sites/default/files/2019-05/Recipe-Roasted-Red-Pepper-Dip.pdf",
+      "https://vidarbergum.com/recipe/roast-peppers-with-yoghurt-herbs/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/paahdettu-paprika-tahini-jogurttidippi.json",
+  "image_evidence": {
+    "path": "kuvat/valipalat/paahdettu-paprika-tahini-jogurttidippi.webp",
+    "bytes": 118456,
+    "sha256": "53464e5f45181d1200561593bb8a65ab0cf517f23743ea8fa85967f8619b4deb",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/valipalat/paahdettu-paprika-tahini-jogurttidippi.md",
+        "language": "fi",
+        "slug": "paahdettu-paprika-tahini-jogurttidippi",
+        "sha256": "5e64ce75d51a19625d17e149876596bc8796af21a65ed2565a0f482923f4c31b",
+        "semantic_sha256": "6db5480a023d1072a4377be8601a02f94b0760d5c82b0e25b67b5b0eaeebd24a"
+      },
+      {
+        "path": "kaannokset/en/valipalat/paahdettu-paprika-tahini-jogurttidippi.md",
+        "language": "en",
+        "slug": "paahdettu-paprika-tahini-jogurttidippi-en",
+        "sha256": "e1f2b818f562c1d5c10287970b480731ac00107d7be094420df5978fa90523b7",
+        "semantic_sha256": "0ceb44be214a40df6adf19f53573fbf987fe11e10756cf48fbc688d0a5be789a"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/paahdettu-paprika-tahini-jogurttidippi.md",
+        "language": "sv",
+        "slug": "paahdettu-paprika-tahini-jogurttidippi-sv",
+        "sha256": "bf0df86319e3b3968330ec8713c80f885e6853cf1b336c615b393b73d7b8ec44",
+        "semantic_sha256": "c10e1559c69abd6bb56c125aba9a2ff70c691ec3c540cf93864accecdc103cb8"
+      },
+      {
+        "path": "kaannokset/th/valipalat/paahdettu-paprika-tahini-jogurttidippi.md",
+        "language": "th",
+        "slug": "paahdettu-paprika-tahini-jogurttidippi-th",
+        "sha256": "c4d369a427fa2bde346dc4aae3cdfeddfdb2987cf5ea109a59a80eae30c9ddf1",
+        "semantic_sha256": "e871d77dc19d04eff0c611ad2481ccf948a6b63752135249356668c6f62acc0f"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Pääraaka-aineet ja rakenne eroavat #1005:n fetavaahdosta ja paprikapopcornista. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 6 ja kokonaisaika 15 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kuusi annosta pelkkää dippiä. Säilykepaprikan paino valutettuna. Finelin punainen säilykepaprika toimii paahdetun säilykepaprikan vertailuna, 10-prosenttinen maustamaton jogurtti on laskennan tuoteskenaario. Tavallinen paprikajauhe arvioi savupaprikajauheen."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

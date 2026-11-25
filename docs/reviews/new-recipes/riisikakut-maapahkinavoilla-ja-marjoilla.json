@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "riisikakut-maapahkinavoilla-ja-marjoilla",
+  "source_path": "reseptit/valipalat/riisikakut-maapahkinavoilla-ja-marjoilla.md",
+  "source_sha256": "86c33c37084002d6ad15ef89e9afadeb2c2bc3657d5db7d0909ce252c7a64975",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.weightwatchers.com/ca/en/recipe/pb-and-strawberry-rice-cake/5e4c3f27610017012c0b4d32"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/riisikakut-maapahkinavoilla-ja-marjoilla.json",
+  "image_evidence": {
+    "path": "kuvat/valipalat/riisikakut-maapahkinavoilla-ja-marjoilla.webp",
+    "bytes": 149608,
+    "sha256": "fe8fd10cd7cbaf472041d48caa97f14e10e8abd6bdd8a3ffd12b030dbf9948fd",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/valipalat/riisikakut-maapahkinavoilla-ja-marjoilla.md",
+        "language": "fi",
+        "slug": "riisikakut-maapahkinavoilla-ja-marjoilla",
+        "sha256": "86c33c37084002d6ad15ef89e9afadeb2c2bc3657d5db7d0909ce252c7a64975",
+        "semantic_sha256": "58958b542ece026c829df28e41334a62686b78778e6d0f2a7e87e93e611735c3"
+      },
+      {
+        "path": "kaannokset/en/valipalat/riisikakut-maapahkinavoilla-ja-marjoilla.md",
+        "language": "en",
+        "slug": "riisikakut-maapahkinavoilla-ja-marjoilla-en",
+        "sha256": "903ed122b3da9536aa88ab73a2fc974e9ce42168a3458229a98345fc902025bd",
+        "semantic_sha256": "ff67bb52536c824d5e7ff0ca5b08edacc821cdf825c0bd1ab0d786ac51708b6f"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/riisikakut-maapahkinavoilla-ja-marjoilla.md",
+        "language": "sv",
+        "slug": "riisikakut-maapahkinavoilla-ja-marjoilla-sv",
+        "sha256": "7ef5ce9cd48a41ebc6da6fca498443c9c98ff42fee5544f674cebd16bfcf28d2",
+        "semantic_sha256": "1808cc7c53529f9a19c748e661115eeb977d1a0aa260ae11d706653bdf8b6f34"
+      },
+      {
+        "path": "kaannokset/th/valipalat/riisikakut-maapahkinavoilla-ja-marjoilla.md",
+        "language": "th",
+        "slug": "riisikakut-maapahkinavoilla-ja-marjoilla-th",
+        "sha256": "e4b7d25b0a3d3d69275f606d6aa80f121bbafb33caf74856dc7cd217b643a662",
+        "semantic_sha256": "a3f942d06b4cc744b41299df4892330e036a80bee3a2c56b92c95df0186e7f3b"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Täysjyväriisikakkupohjainen annos eroaa #1005:n omenalohkoista ja jogurttipaloista. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja kokonaisaika 10 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Neljä päällystettyä riisikakkua. Laskenta olettaa 8 g yhtä kakkua kohti ja sileän maapähkinävoin ilman lisättyä sokeria tai suolaa. AFCD:n täysjyväriisikakku, mansikka ja mustikka kuvaavat australialaisia vertailutuotteita. Tuotteen ja marjalajin vaihtelu voi muuttaa arviota."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

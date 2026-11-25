@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kurkku-avokadosalsa",
+  "source_path": "reseptit/valipalat/kurkku-avokadosalsa.md",
+  "source_sha256": "5aabc867fe951642912db2f7f17cec44807c203940a7dbbe9353908f59c945d7",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://weelicious.com/cucumber-avocado-salsa/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kurkku-avokadosalsa.json",
+  "image_evidence": {
+    "path": "kuvat/valipalat/kurkku-avokadosalsa.webp",
+    "bytes": 109766,
+    "sha256": "c3b3e109fc76c671095299ce77a5503d7f9a555ab60c5e19f5c7722a21713006",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/valipalat/kurkku-avokadosalsa.md",
+        "language": "fi",
+        "slug": "kurkku-avokadosalsa",
+        "sha256": "5aabc867fe951642912db2f7f17cec44807c203940a7dbbe9353908f59c945d7",
+        "semantic_sha256": "a774a63e077b7fa6db0d2499fbd97a0304f6769f32952891d4b2a287e997cb0b"
+      },
+      {
+        "path": "kaannokset/en/valipalat/kurkku-avokadosalsa.md",
+        "language": "en",
+        "slug": "kurkku-avokadosalsa-en",
+        "sha256": "b8de06d65cd739fc2275eb36fc6536d228e2b3626a193f9cf86343a1df326b5c",
+        "semantic_sha256": "d7b9a62b9cd76bb2d178b01e4cf93662cf9e6c91d67eba861b057a5f9df86060"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/kurkku-avokadosalsa.md",
+        "language": "sv",
+        "slug": "kurkku-avokadosalsa-sv",
+        "sha256": "75149d0223964529b4cb1c84e561f369da2941f5b824c479ca1e051282f84bb1",
+        "semantic_sha256": "be39c67dbb0c1ffcd98cc0cf7b549dd39f3df1abfd7acdb91a6b71bb22da4042"
+      },
+      {
+        "path": "kaannokset/th/valipalat/kurkku-avokadosalsa.md",
+        "language": "th",
+        "slug": "kurkku-avokadosalsa-th",
+        "sha256": "58718866e955cf798002dab4e6789ba646f57be91ec49a68d2d59d008e7cb7fc",
+        "semantic_sha256": "9771e5e22079b1d3e560531c14b51633f73de49b2654a1e4f44937262cbfe50a"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Kurkku on suurin ainesosa. Kuutiot pysyvät ehjinä ja minttu sekä limetti maustavat dippisalsan. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja kokonaisaika 10 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Neljä annosta pelkkää salsaa. Syötävät osat punnitaan ilman kuoria ja kiviä. Koko limetti-öljykastike sisältyy annoksiin. AFCD:n kurkku, minttu ja limettimehu ovat australialaisia vertailutuotteita. Limettimehulle käytetään laskennallista 1,0 g/ml arviota."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

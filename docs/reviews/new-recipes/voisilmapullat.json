@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "voisilmapullat",
+  "source_path": "reseptit/leivonnaiset/voisilmapullat.md",
+  "source_sha256": "123ff428ccb4f82036562ec5201c436964ddcee49f840b60b011c883084b1554",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.valio.fi/reseptit/voisilmapullat/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/voisilmapullat.json",
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/voisilmapullat.webp",
+    "bytes": 73432,
+    "sha256": "27dd8f00efa23c873a0d66b2c2d1dbe4fa9c9e3402e914219c8d1178b8443013",
+    "width": 960,
+    "height": 640,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/voisilmapullat.md",
+        "language": "fi",
+        "slug": "voisilmapullat",
+        "sha256": "123ff428ccb4f82036562ec5201c436964ddcee49f840b60b011c883084b1554",
+        "semantic_sha256": "16ca0f8598b20573cf3ce13f5a242c250b5acf3aae9930def2c5b8dc177a1e07"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/voisilmapullat.md",
+        "language": "en",
+        "slug": "voisilmapullat-en",
+        "sha256": "60a072598b3ff32e6f4bf03e0a544a9a7e02a69f9827a2e358d3d4849772ce8d",
+        "semantic_sha256": "49b63182ef604f785b4f15fad378e23b327d940e4fbb42a086434fe5b2b54e66"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/voisilmapullat.md",
+        "language": "sv",
+        "slug": "voisilmapullat-sv",
+        "sha256": "046e8388a419147dd560e52eb276116d0b937ce48c27533d3c1a7d8bad7a6a9e",
+        "semantic_sha256": "51720fa75641a7de97da050acfa5ab0f9e1bac5c358356327fd9c7dc73c52d60"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/voisilmapullat.md",
+        "language": "th",
+        "slug": "voisilmapullat-th",
+        "sha256": "7a589040fc09b244e5113c415c749309afdf877e9c2264cfd98c4efddef57908",
+        "semantic_sha256": "39ac0ff60204366ac493efeaccc9a579db6eaa1012689ebcf61c22a10717c7ac"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Täyte on pullan keskelle paistettu avoin voi-sokerikolo. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 16 ja kokonaisaika 150 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Jauhotuksen ja munavoitelun annosrajaus ratkaistava."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

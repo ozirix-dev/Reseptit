@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kolmisaikeinen-pullapitko",
+  "source_path": "reseptit/leivonnaiset/kolmisaikeinen-pullapitko.md",
+  "source_sha256": "a9327ba8be8b4a3ad5cb6c335b87ef23a85776886bc2ed637457b1dc8f4d7d23",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/pullapitko-eli-lettivehnanen/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kolmisaikeinen-pullapitko.json",
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/kolmisaikeinen-pullapitko.webp",
+    "bytes": 124592,
+    "sha256": "2f8bc0dad7ed02ee0da139770ed413c61f73d3e9127a8fcf57f985d5d61c1eea",
+    "width": 960,
+    "height": 640,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/kolmisaikeinen-pullapitko.md",
+        "language": "fi",
+        "slug": "kolmisaikeinen-pullapitko",
+        "sha256": "a9327ba8be8b4a3ad5cb6c335b87ef23a85776886bc2ed637457b1dc8f4d7d23",
+        "semantic_sha256": "a28026259b3bc39b750ac00de59b326f27cf6bf43881250c1472e0aa7cf513fd"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/kolmisaikeinen-pullapitko.md",
+        "language": "en",
+        "slug": "kolmisaikeinen-pullapitko-en",
+        "sha256": "93e227348dee04507669e6ff8678c3af3cb5735b1d958524947b6452377c5930",
+        "semantic_sha256": "57a0aa0a2a4cb4ee54c8add391509ba2c507217537889002ffcbd45f3636f89c"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/kolmisaikeinen-pullapitko.md",
+        "language": "sv",
+        "slug": "kolmisaikeinen-pullapitko-sv",
+        "sha256": "155bb9e4418f68dac668cc2d68ba9d336094616f02a07a393500279c2e95efe5",
+        "semantic_sha256": "e835b4acd4cb6c7dbd20fb7571316089d7378a866983e58ec2984d589cc2e804"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/kolmisaikeinen-pullapitko.md",
+        "language": "th",
+        "slug": "kolmisaikeinen-pullapitko-th",
+        "sha256": "158193a2805be3114ade4b2bdfe62d26646ae9724115a10ed93d56b506a228da",
+        "semantic_sha256": "e6650a5976a9e8b2c11e845159e10ef06282eb300d73a612754f880ef81fa54d"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Suuri letitetty ja viipaloitava kardemummapulla eroaa kierrepullista. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 30 ja kokonaisaika 155 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Jauhotuksen ja munavoitelun annosrajaus ratkaistava."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

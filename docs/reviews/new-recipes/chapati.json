@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "chapati",
+  "source_path": "reseptit/leivonnaiset/chapati.md",
+  "source_sha256": "cb89e23d3cb4f02f6cd62cc8378f6bd9f8dfc5c91734f584cd898c0f286dafba",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.bbcgoodfood.com/recipes/chapatis"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/chapati.json",
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/chapati.webp",
+    "bytes": 127044,
+    "sha256": "c492d3182f1e5c243df64486738501671e77fba0cd155fe6bb3c0eec7d833289",
+    "width": 960,
+    "height": 640,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/chapati.md",
+        "language": "fi",
+        "slug": "chapati",
+        "sha256": "cb89e23d3cb4f02f6cd62cc8378f6bd9f8dfc5c91734f584cd898c0f286dafba",
+        "semantic_sha256": "22accf42b8f61c25ba5f2c7126470d6a80a735072a7290f6278aa579b18f1a30"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/chapati.md",
+        "language": "en",
+        "slug": "chapati-en",
+        "sha256": "7b163789992d954291093ffe85ba77e83c4b339644ad6ee86ae33811dd62ad11",
+        "semantic_sha256": "68f678007069b79c44c0ef36a9f05552d3502a7f5ad646671202d3f6f33bb182"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/chapati.md",
+        "language": "sv",
+        "slug": "chapati-sv",
+        "sha256": "d45153f22a4ff2e2e041bfe7b60514adb0e73ead323c9c35d285ea7a7619118e",
+        "semantic_sha256": "b03a9477878056cb6092954d9df07d1b51dba93dbbb9bad4f2b0413dc56f94d6"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/chapati.md",
+        "language": "th",
+        "slug": "chapati-th",
+        "sha256": "6ea7a00d92201489515746ef2c6ac4907c0ef280e04b86865c0e83f3184e7052",
+        "semantic_sha256": "c174a66b15c4ee50ff62d3333cbbb682979c5b5ed679d3caec89c6c53d023ab9"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ohut hiivaton pannuleipä eroaa #1005:n naanista ja pitaleivästä. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 10 ja kokonaisaika 45 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kymmenen leipää. Laskentaskenaario laskee mukaan koko 15 g kaulintajauhovaran ja 5 ml pannun öljyvaran. Todellinen tarttunut määrä voi olla pienempi. Arvio on rasvalle ja hiilihydraateille näiden lisäysten osalta yläraja."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

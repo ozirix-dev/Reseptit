@@ -1,0 +1,75 @@
+---
+title: "ขนมปังกระวานลัสเกียสพูลาไส้แยมราสป์เบอร์รี"
+recipe_id: laskiaispullat-vadelmahillolla
+url_slug: laskiaispullat-vadelmahillolla-th
+category: leivonnainen
+language: th
+source_language: fi
+source_recipe: reseptit/leivonnaiset/laskiaispullat-vadelmahillolla.md
+translation_of: laskiaispullat-vadelmahillolla
+status: published
+servings: 20
+time_total_min: 175
+difficulty: "ปานกลาง"
+main_ingredient: ["vehnäjauho","vadelmahillo"]
+cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/laskiaispullat-vadelmahillolla.webp
+  alt: "ขนมปังลัสเกียสพูลาทรงกลม มีวิปครีมและแยมราสป์เบอร์รี (ภาพประกอบจาก AI)"
+  width: 960
+  height: 640
+ingredients:
+  - amount: 500
+    unit: "มล."
+    item: "นม"
+  - amount: 50
+    unit: "กรัม"
+    item: "ยีสต์สด"
+  - amount: 1
+    unit: "ช้อนชา"
+    item: "เกลือ"
+  - amount: 170
+    unit: "กรัม"
+    item: "น้ำตาล"
+  - amount: 3
+    unit: "ช้อนชา"
+    item: "กระวานป่น"
+  - amount: 950
+    unit: "กรัม"
+    item: "แป้งสาลีอเนกประสงค์"
+  - amount: 150
+    unit: "กรัม"
+    item: "มาการีนสำหรับทำขนมอบละลาย"
+  - amount: 1
+    unit: "ฟอง"
+    item: "ไข่ไก่สำหรับทาหน้า"
+  - amount: 200
+    unit: "กรัม"
+    item: "แยมราสป์เบอร์รี"
+  - amount: 400
+    unit: "มล."
+    item: "วิปปิงครีม"
+  - amount: 15
+    unit: "กรัม"
+    item: "น้ำตาลไอซิงสำหรับโรย"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
+---
+
+# ขนมปังกระวานลัสเกียสพูลาไส้แยมราสป์เบอร์รี
+
+ขนมปังกระวานแบบฟินแลนด์ผ่าครึ่งแล้วสอดไส้แยมราสป์เบอร์รีกับวิปครีม
+
+## วิธีทำ
+
+1. ละลายยีสต์ในนมอุ่นพอประมาณ ใส่เกลือ น้ำตาล และกระวาน ค่อย ๆ เติมแป้ง ช่วงท้ายให้ใส่มาการีนที่คลายร้อนแล้วและนวดจนเข้ากัน
+2. คลุมชามแล้วพักแป้งจนขึ้นฟูสองเท่า แบ่งเป็น 20 ส่วน ปั้นกลมแล้ววางบนกระดาษรองอบ คลุมพักจนขึ้นฟู
+3. ทาด้วยไข่ที่ตีแล้ว อบที่ 220 องศาเซลเซียส 12–15 นาทีจนเป็นสีเหลืองทอง แล้วพักให้เย็นสนิท
+4. ตีครีมเย็นจนตั้งยอดอ่อน ตัดด้านบนของขนมปังออกแล้วแบ่งแยมและครีมใส่ด้านล่าง วางส่วนที่ตัดออกกลับด้านบนและร่อนน้ำตาลไอซิงโรยหน้า ปิดภาชนะและเก็บขนมปังที่ใส่ไส้แล้วในตู้เย็นจนกว่าจะเสิร์ฟ
+
+## หมายเหตุ
+
+- มีข้าวสาลี นม และไข่
+- แหล่งอ้างอิงวิธีทำ https://www.martat.fi/reseptit/laskiaispulla/
