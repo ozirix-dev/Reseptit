@@ -723,13 +723,13 @@ test("weighed or measured ingredient portions remain separate from whole-serving
 
 test("modeled GL and ingredient carbs remain separate from withheld whole-serving carbohydrates", async () => {
   const cases = {
-    "janssoninkiusaus-juuriselleri": { gk: 3.05, ingredients: [{ amount: 175, available: 4.6375 }] },
+    "janssoninkiusaus-juuriselleri": { gk: 3.05, partial: { proteinG: 13.57, fatG: 33.56 }, ingredients: [{ amount: 175, available: 4.6375 }] },
     "marokkolainen-couscous": { gk: 37.5, ingredients: [{ amount: 62.5, declared: 45 }, { amount: 100, available: 17.6 }] },
-    "paprikainen-vhh-gulassi": { gk: 3.52, ingredients: [{ amount: 40, available: 1.8 }, { amount: 37.5, available: 0.825 }, { amount: 75 }] },
+    "paprikainen-vhh-gulassi": { gk: 3.52, partial: { proteinG: 40.79, fatG: 26.14 }, ingredients: [{ amount: 40, available: 1.8 }, { amount: 37.5, available: 0.825 }, { amount: 75 }] },
     "pasta-alla-norma": { gk: 30.05, ingredients: [{ amount: 87.5, declared: 60.375 }] },
     "rogan-josh": { gk: 1.11, ingredients: [{ amount: 50, available: 2.5 }] },
     "sitruuna-yrttikana-parsa": { gk: 0.88, ingredients: [{ amount: 100, available: 2 }] },
-  } satisfies Record<string, { gk: number; ingredients: { amount: number; available?: number; declared?: number }[] }>;
+  } satisfies Record<string, { gk: number; partial?: { proteinG: number; fatG: number }; ingredients: { amount: number; available?: number; declared?: number }[] }>;
   for (const [id, expected] of Object.entries(cases)) {
     const evidence: PortionEvidence | undefined = glycemicLoadPortions[id];
     assert.ok(evidence?.ingredientPortion, id);
@@ -753,7 +753,43 @@ test("modeled GL and ingredient carbs remain separate from withheld whole-servin
         readFile(path.join(dist, "data", filename), "utf8"),
       ]);
       assert.equal(parseRouteContent(JSON.parse(routeData), routePath).glycemicRecipe?.result?.glycemicLoadPerServing, expected.gk, routePath);
-      assert.ok(Object.values(nutrition).every(value => value === null), routePath);
+      assert.equal(nutrition.carbsNetG, null, routePath);
+      assert.equal(nutrition.carbsTotalG, null, routePath);
+      const partial = "partial" in expected ? expected.partial : undefined;
+      if (partial) {
+        assert.deepEqual(nutrition, { carbsNetG: null, carbsTotalG: null, ...partial }, routePath);
+        const rendered = recipe.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+        assert.ok(rendered.includes(toolUi[locale].partialNutrition), routePath);
+        const macroList = rendered.match(/<dl class="nutrition-list">([\s\S]*?)<\/dl>/)?.[1];
+        assert.ok(macroList, routePath);
+        assert.ok(macroList.includes(recipeUi[locale].nutrients.proteinG), routePath);
+        assert.ok(macroList.includes(recipeUi[locale].nutrients.fatG), routePath);
+        assert.ok(!macroList.includes(recipeUi[locale].nutrients.carbsNetG), routePath);
+        assert.ok(!macroList.includes(recipeUi[locale].nutrients.carbsTotalG), routePath);
+        const jsonLdMatch = recipe.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/);
+        assert.ok(jsonLdMatch, routePath);
+        assert.deepEqual(JSON.parse(jsonLdMatch[1]).nutrition, {
+          "@type": "NutritionInformation", proteinContent: `${partial.proteinG} g`, fatContent: `${partial.fatG} g`,
+        }, routePath);
+        const oldDisclosure = {
+          fi: "Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.",
+          en: "Nutrition values are temporarily withheld pending source verification.",
+          sv: "Näringsvärden visas tills vidare inte i väntan på källkontroll.",
+          th: "ข้อมูลโภชนาการยังไม่แสดงระหว่างตรวจสอบแหล่งข้อมูล",
+        }[locale];
+        assert.ok(!rendered.includes(oldDisclosure), routePath);
+        if (id === "paprikainen-vhh-gulassi") {
+          const stove = {
+            fi: "Valmistustapa: haudutus liedellä kannellisessa padassa.",
+            en: "Cooking method: simmering on the stovetop in a covered pot.",
+            sv: "Tillagningssätt: sjudning på spisen i en gryta med lock.",
+            th: "วิธีปรุง: เคี่ยวบนเตาในหม้อปิดฝา",
+          }[locale];
+          assert.ok(rendered.includes(stove), routePath + ": retain stovetop-only guidance");
+        }
+      } else {
+        assert.ok(Object.values(nutrition).every(value => value === null), routePath);
+      }
       assert.match(recipe, /data-gk-status="CALCULATED"/, routePath);
       assert.match(recipe, /data-portion-gk=/, routePath);
       const start = guide.indexOf('id="' + id + '" class="glycemic-pilot__recipe"');
