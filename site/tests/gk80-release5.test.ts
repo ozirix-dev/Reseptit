@@ -20,6 +20,6 @@ test('all8 exact source versions, typed food bindings, macros and published reci
  }
 });
 test('independent Decimal reproduces all8 release5 recipe contributions',()=>{
- assert.equal(JSON.parse(execFileSync(process.platform==='win32'?'python':'python3',[fileURLToPath(new URL('site/scripts/gk80-release5-decimal.py',root))],{encoding:'utf8'})).status,'PASS');
+ assert.deepEqual(JSON.parse(execFileSync(process.platform==='win32'?'python':'python3',[fileURLToPath(new URL('site/scripts/gk80-release5-decimal.py',root))],{encoding:'utf8'})),{status:'PASS',recipes:8,publicationMacros:8});
 });
 test('photograph scope is disclosed for every candidate',()=>{for(const r of recipes){const t=readFileSync(new URL(r.sourcePath,root),'utf8');assert.match(t,/Kuva on tarjoilua havainnollistava kuvituskuva/);assert.match(t,/kuvan ylimääräiset lisukkeet eivät kuulu arvioon/);}});

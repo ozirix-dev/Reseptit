@@ -19,7 +19,7 @@ test('variants, distinct porridge IDs and existing-language scope remain explici
  const bubur=recipes.find((r:{recipeId:string})=>r.recipeId.includes('bubur'));assert.match(bubur.proposedTitle,/perusversio/);
 });
 
-test('independent Decimal checks all release contribution terms',()=>{const output=execFileSync(process.platform==='win32'?'python':'python3',[fileURLToPath(new URL('site/scripts/gk80-release-decimal.py',root))],{encoding:'utf8'});assert.equal(JSON.parse(output).status,'PASS');});
+test('independent Decimal checks all release contribution terms',()=>{const output=execFileSync(process.platform==='win32'?'python':'python3',[fileURLToPath(new URL('site/scripts/gk80-release-decimal.py',root))],{encoding:'utf8'});assert.deepEqual(JSON.parse(output),{status:'PASS',recipes:4});});
 
 test('release sources distinguish human analogues, published coding and recipe scenarios',()=>{
  const results=JSON.parse(readFileSync(new URL('tmp/nutrition/glycemic-load-pilot.json',root),'utf8')).results;

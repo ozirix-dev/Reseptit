@@ -6,7 +6,6 @@ import { siteContent } from "../src/generated/content.generated";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { parseMarkdown } from "../src/content/markdown";
 import { material21MethodPaths, projectMaterial21MethodsFi } from "../scripts/material21-methods-public-display";
-import { projectSafeWontonFiDisplay } from "../scripts/wonton-fi-public-display";
 import { originalForThreeCanonicalHistory, reviewedThreeCanonicalPaths } from "./issue404-three-canonical-history";
 
 const root = path.resolve(import.meta.dirname, "../..");
@@ -28,7 +27,6 @@ test("two exact reviewed canonical FI methods preserve source-bound fields and G
     assert.ok(before && after);
     assert.deepEqual(recipeFrontmatterSchema.parse(after.data), recipeFrontmatterSchema.parse(before.data),id);
     assert.equal(projectMaterial21MethodsFi(relative,raw),raw);
-    assert.equal(projectSafeWontonFiDisplay(relative,raw),raw);
     const page=siteContent.recipes.find(r=>r.recipeId===id && r.locale==="fi");
     assert.ok(page,id);
     for (const word of expected[id]) assert.ok(page.instructionsText.join(" ").includes(word),id+"/"+word);

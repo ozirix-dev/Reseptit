@@ -8,7 +8,6 @@ import { recipeDifficultyLabel } from "../src/features/recipes/recipe-i18n";
 import { createHash } from "node:crypto";
 import { marked } from "marked";
 import { publicRecipeQualityHold } from "./recipe-quality-holds";
-import { projectSafeWontonFiDisplay } from "./wonton-fi-public-display";
 import { projectMaterial21FiDisplay } from "./material21-fi-public-display";
 import { projectMaterial21MethodsFi } from "./material21-methods-public-display";
 import { projectC13FiDisplay } from "./c13-fi-public-display";
@@ -202,7 +201,6 @@ const editorialProjections = [
   projectC20FiDisplay,
   projectMintWholeMilkFiDisplay,
   projectBreakfastFiQualityDisplay,
-  projectSafeWontonFiDisplay,
   projectMaterial21FiDisplay,
   projectMaterial21MethodsFi,
   projectC13FiDisplay,

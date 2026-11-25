@@ -12,7 +12,6 @@ import { parseMarkdown } from "../src/content/markdown";
 import { editorialHoldRecipeIds, publicRecipeQualityHold } from "../scripts/recipe-quality-holds";
 import { publicSafetyHold } from "../scripts/build-content";
 import { isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
-import { projectSafeWontonFiDisplay } from "../scripts/wonton-fi-public-display";
 import { originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { assertKarnivoreDraftSafe, karnivoreApprovedIngredients } from "../scripts/karnivore-draft-gate";
@@ -143,7 +142,6 @@ test("canonical wonton correction retains reviewed source and original GK histor
   const file = "reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md";
   const root = path.resolve(import.meta.dirname, "../..");
   const raw = await readFile(path.join(root, file), "utf8");
-  assert.equal(projectSafeWontonFiDisplay(file, raw), raw);
   const historical = originalForThreeCanonicalHistory(root,file,raw);
   const before = parseMarkdown(historical), after = parseMarkdown(raw);
   assert.ok(before && after);
