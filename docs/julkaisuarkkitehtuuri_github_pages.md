@@ -79,10 +79,12 @@ palauttaa odotetun revision ja samat tavut.
   sisältöbuildissa. Yksittäisen sovituksen lähtöversion ja laskennan
   tarkisteet säilyvät kunkin sovituksen ja hyväksynnän omissa tiedoissa.
 
-Pages otetaan käyttöön kerran repon Settings → Pages -asetuksissa valitsemalla
-Source: GitHub Actions. Julkaisuworkflow käyttää jo käyttöön otettua Pages-sivustoa;
-se ei yritä perustaa sitä `GITHUB_TOKEN`-tunnuksella. Uudessa repossa tämä
-käyttöönotto on tehtävä ennen ensimmäistä julkaisua.
+GitHub Pagesin Settings → Pages -käyttöönotto kuului aiempaan
+julkaisumalliin. Recipavon nykyinen tuotanto käyttää Cloudflare Pagesin
+Direct Upload -projektia `recipavo-site`. Recipe site / build on CI-tarkistus,
+ei automaattinen tuotantojulkaisu. Noudata nykyistä
+[suojattua tuotantojulkaisuohjetta](product/recipavo-actions-manual-release-2026-11-21.md).
+Aiemman siirtymän tausta säilyy [migraatiosuunnitelmassa](cloudflare-migration-plan.md).
 
 ## Sivureitit ja SEO
 
@@ -101,8 +103,8 @@ käyttöönotto on tehtävä ennen ensimmäistä julkaisua.
 Tuotannon [robots.txt](https://www.recipavo.com/robots.txt) osoittaa
 [tuotannon sivukarttaan](https://www.recipavo.com/sitemap.xml), joka sisältää
 julkaistut hakemistot ja reseptireitit. Esikatselusivuilla on
-`noindex, nofollow`. Stagingin `robots.txt` sijaitsee projektipolun alla
-`/Reseptit/robots.txt`.
+`noindex, nofollow`. Nykyinen Cloudflare-esikatselu käyttää juuripolkuja,
+ei vanhaa GitHub Pagesin `/Reseptit/`-projektipolkua.
 
 ### Google Search Console
 

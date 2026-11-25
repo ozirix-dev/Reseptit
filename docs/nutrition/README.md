@@ -118,10 +118,12 @@ seuraavaa laskentaa.
 
 ## Hiilihydraatit
 
-Laskennan `carbohydrate` tarkoittaa aina imeytyvää, kuidun poissulkevaa
-hiilihydraattia. `EU_AVAILABLE` kirjataan sellaisenaan.
-`US_TOTAL_INCLUDING_FIBRE` muunnetaan vähentämällä tunnettu kuitu täsmälleen
-kerran. Tuntematonta määritelmää ei yhdistetä laskelmaan.
+Lähdetietueen `carbohydrate` tulkitaan sen `carbohydrateDefinition`-kentän
+mukaan. Normalisoitu imeytyvä hiilihydraatti ei sisällä kuitua eikä polyoleja.
+`EU_AVAILABLE` kirjataan sellaisenaan. `EU_TOTAL_INCLUDING_POLYOLS`-arvosta
+vähennetään varmennettu polyoli kerran; `US_TOTAL_INCLUDING_FIBRE`-arvosta
+vähennetään tunnettu kuitu ja varmennettu polyoli kumpikin kerran.
+Tuntematonta määritelmää ei yhdistetä laskelmaan.
 
 Sivun `carbs_total_per_serving_g` tarkoittaa kokonaishiilihydraattia:
 imeytyvä hiilihydraatti + ravintokuitu + polyolit. Tulos voidaan laskea vain,
@@ -137,12 +139,25 @@ yhdistetään vain komponenttimetadatan tunnisteilla. Hakuvasteen yleistä
 nollia. Polyolit säilytetään omana komponenttinaan ja lasketaan mukaan
 kokonaishiilihydraattiin, kun niiden määrä tunnetaan.
 
-Sokerit, kuitu ja polyolit ovat erillisiä kenttiä. Nettohiilihydraatti
-lasketaan vähentämällä imeytyvästä hiilihydraatista vain lähteessä ilmoitettu,
-määrältään tunnettu polyoli. Tuntematon polyoliarvo ei ole nolla eikä sitä
-vähennetä. Jos polyolien määrä ylittää imeytyvän hiilihydraatin, tietue
-vaatii tarkistuksen. Tämä koskee myös erytritolia: vähennys tehdään vain
-tuotteen tai tietokannan nimenomaisen koostumustiedon perusteella.
+Sokerit, kuitu ja polyolit ovat erillisiä kenttiä. Finelin CHOAVL ja AFCD:n
+polyolit poissulkeva imeytyvä hiilihydraatti (`EU_AVAILABLE`) eivät tarvitse
+uutta polyolivähennystä. Polyoli vähennetään vain lähteen määritelmässä sen
+sisältävästä kokonaismäärästä, ei jo normalisoidusta imeytyvästä arvosta.
+Jos vähennettävä polyoli tai kuitu ylittää lähtömäärän, ristiriitaa ei
+hyväksytä laskentaan. Tämä koskee myös erytritolia.
+
+Tuntematon polyoliarvo ei ole nolla. Polyoleja sisältävissä
+kokonaishiilihydraattimääritelmissä puuttuva varmennettu polyoli estää
+imeytyvän arvon ja nettohiilihydraatin laskennan. `EU_AVAILABLE`-lähteen
+imeytyvä arvo voidaan säilyttää, mutta nettoarvo jää ilman varmennettua
+polyolia normaalisti tuntemattomaksi. Nykyinen kenttäkohtainen
+hyväksyntämenettely sallii lähteen alkuperäisestä viiteaineistosta
+varmennetun Fineli- tai AFCD-imeytyvän arvon myös nettoarvona. Sekään ei
+muuta tuntematonta polyolia nollaksi eikä oikeuta päättelemään
+kokonaishiilihydraattia.
+
+Toteutus: [normalizeCarbohydrate](../../site/scripts/nutrition-model.ts)
+ja [kenttäkohtainen hyväksyntä](../../site/scripts/nutrition-field-approval.ts).
 
 ## Lähteet ja käyttöehdot, tarkistettu 22.10.2026
 
