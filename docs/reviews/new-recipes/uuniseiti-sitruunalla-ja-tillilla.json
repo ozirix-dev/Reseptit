@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "uuniseiti-sitruunalla-ja-tillilla",
+  "source_path": "reseptit/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
+  "source_sha256": "0e49023ce9f9725f39f84ac84fa6e19389a9c649ade7ce85d9547d31d33b93c6",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/pikamarinoitu-uuniseiti"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/uuniseiti-sitruunalla-ja-tillilla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Kala sulatetaan jääkaapissa erillään valmistusajasta. Valutetut palat kypsennetään kauttaaltaan ja kala-allergeeni ilmoitetaan."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kala sulatetaan jääkaapissa erillään valmistusajasta. Valutetut palat kypsennetään kauttaaltaan ja kala-allergeeni ilmoitetaan."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kala sulatetaan jääkaapissa erillään valmistusajasta. Valutetut palat kypsennetään kauttaaltaan ja kala-allergeeni ilmoitetaan. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kala sulatetaan jääkaapissa erillään valmistusajasta. Valutetut palat kypsennetään kauttaaltaan ja kala-allergeeni ilmoitetaan. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Sulatuksen valumaa ei ole määrällistetty ja kuoriraasteen oma lähde puuttuu."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Ei valmistuskohtaista GI-näyttöä sitruuna-tilliannokselle.  GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/uuniseiti-sitruunalla-ja-tillilla.webp",
+    "bytes": 92184,
+    "sha256": "db6e591686bf17b73b1dba02a24d7cfa75d72884e0b9436e00414c11188a4df3",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
+        "sha256": "01b8d2c58a22afeeac2fc61c0d51d1d16090aeae18b36a524a43ace38378e1cc"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
+        "sha256": "1e54ec8a32584147b8ebf60f6ae75318ac070b8c1888d5c034a7dd87988eabc5"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
+        "sha256": "2c8d11dbc2c2ea480e928ff70251bdc853ed4654b9a9452523552bd24c735cf5"
+      },
+      {
+        "path": "reseptit/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
+        "sha256": "0a772eed376913c408a290e1e51dc620d43fbb1178c9046871461f560054cd3c"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
+        "language": "en",
+        "slug": "uuniseiti-sitruunalla-ja-tillilla-en",
+        "sha256": "48bb14826c397fba57fa28613664467882e79e2cd46f2da901baec24093c35fe",
+        "semantic_sha256": "5bc5359346d53a05ab540f25aa850df1ec27e89898a22d9f667c2a98c857c440"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
+        "language": "sv",
+        "slug": "uuniseiti-sitruunalla-ja-tillilla-sv",
+        "sha256": "dacff3d336eb8ec735f87e2463645da6434a005ceabd1f0de7bd11139b8f15a4",
+        "semantic_sha256": "652129b0e7b6815d46db102350b005e2ecfc39556ca4e248bdd854b340a3138b"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
+        "language": "th",
+        "slug": "uuniseiti-sitruunalla-ja-tillilla-th",
+        "sha256": "ff21049374851a940237f5b643399de093893f67cf5cbb97e144e9c29078534c",
+        "semantic_sha256": "82b949ccdc27ae5dc7580b24cd019728ce5ddccc062741ddaa9733078cebb221"
+      },
+      {
+        "path": "reseptit/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
+        "language": "fi",
+        "slug": "uuniseiti-sitruunalla-ja-tillilla",
+        "sha256": "0e49023ce9f9725f39f84ac84fa6e19389a9c649ade7ce85d9547d31d33b93c6",
+        "semantic_sha256": "27dfc3e51604697b58a5772316f9e80931a91e4c2b80738cbebbdc8b562a9eb9"
+      }
+    ]
+  }
+}
