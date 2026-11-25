@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perinteinen-lohilaatikko",
+  "source_path": "reseptit/paaruoat/perinteinen-lohilaatikko.md",
+  "source_sha256": "3710d726b0ff5eac306931ee96710fed5f3210e6415e3bd8edc777c88135edd8",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/lohi-perunalaatikko"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/perinteinen-lohilaatikko.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Kerroksellinen lohi-perunavuoka on sovitus kirjolohiversiosta. Kylmäketju, kalan kypsyys, hyytynyt munamaito sekä kala, muna ja maito huomioitu."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kerroksellinen lohi-perunavuoka on sovitus kirjolohiversiosta. Kylmäketju, kalan kypsyys, hyytynyt munamaito sekä kala, muna ja maito huomioitu."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kerroksellinen lohi-perunavuoka on sovitus kirjolohiversiosta. Kylmäketju, kalan kypsyys, hyytynyt munamaito sekä kala, muna ja maito huomioitu. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kerroksellinen lohi-perunavuoka on sovitus kirjolohiversiosta. Kylmäketju, kalan kypsyys, hyytynyt munamaito sekä kala, muna ja maito huomioitu. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Lohen rasva vaihtelee, ja maustepippurin tarkka ravintotietue puuttuu."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Laatikossa munamaidossa paistetulle perunalle ei ole täsmäävää GI-sidontaa. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/perinteinen-lohilaatikko.webp",
+    "bytes": 87694,
+    "sha256": "8074938693d4b5c558bff81b3996690f8d601e98b392ede17a4e187835b54a38",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/paaruoat/perinteinen-lohilaatikko.md",
+        "sha256": "252c30ef8ccae8d0cb654c22069b1042aa9a933723ffdd3ecbc8a937284222b9"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/perinteinen-lohilaatikko.md",
+        "sha256": "2c722d583eb4a2833d6450134d0e3054ae864d7461e56b42ffcb1b262f68d344"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/perinteinen-lohilaatikko.md",
+        "sha256": "c97500c5bffcba5b3b9b65c762dd54d30b290480f484c2340a9ae8b177139804"
+      },
+      {
+        "path": "reseptit/paaruoat/perinteinen-lohilaatikko.md",
+        "sha256": "dc16877f6e1eab9628518405c6187700982e3a20f644f65faf60748e03223b83"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/perinteinen-lohilaatikko.md",
+        "language": "en",
+        "slug": "perinteinen-lohilaatikko-en",
+        "sha256": "5ad08287ec1da7dc590a8013c128f4b3fafb5a047456e9414137d19d0be24bad",
+        "semantic_sha256": "a6269ac42032b67dbbd850344e89758d3d8f2eee8dd492240b1c7c519b606127"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/perinteinen-lohilaatikko.md",
+        "language": "sv",
+        "slug": "perinteinen-lohilaatikko-sv",
+        "sha256": "e42cfc74cb4d05ad12fcefa073e22398a8771abf5ea2c4b1a55108ab24c8b8d0",
+        "semantic_sha256": "2cb03dd4b7767539a0d1679328010ee595bf1f2834899113eedbd2b880a1cb34"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/perinteinen-lohilaatikko.md",
+        "language": "th",
+        "slug": "perinteinen-lohilaatikko-th",
+        "sha256": "be148481bef2196fda7b5519dccbb690e2ac5d694276f9f6407a9d81d8879847",
+        "semantic_sha256": "a97ea82d96590ac25634bc6f08b311857f695ba13717efd4d15c63e542ba31ca"
+      },
+      {
+        "path": "reseptit/paaruoat/perinteinen-lohilaatikko.md",
+        "language": "fi",
+        "slug": "perinteinen-lohilaatikko",
+        "sha256": "3710d726b0ff5eac306931ee96710fed5f3210e6415e3bd8edc777c88135edd8",
+        "semantic_sha256": "0883184a1b65952e1ea9f502fb9fe797bd169940d8cd09c3e38b814bd005e9d7"
+      }
+    ]
+  }
+}

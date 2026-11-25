@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md
 translation_of: lihapullat-ruskea-kastike-perunamuusi
-status: draft
+status: published
 servings: 4
 time_total_min: 70
 difficulty: "easy"
@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "Finnish"
   - "traditional"
+image:
+  src: paaruoat/lihapullat-ruskea-kastike-perunamuusi.webp
+  alt: "A plate of meatballs, brown gravy and mashed potatoes; AI illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "g"
@@ -74,5 +79,7 @@ This is a traditional Finnish home-cooking recipe.
 
 ## Notes
 
-- Editorial draft: no Recipavo cooking trial, image, recipe-specific nutrition or GK approval. Check allergens, including wheat and milk.
+- Contains milk, egg and wheat. Check the labels of the breadcrumbs and any stock you use.
 - https://www.martat.fi/reseptit/lihapullat-haudutetut-valkosipuliperunat-ja-ruskea-kastike/
+
+- Reliable nutrition values could not be determined for one serving.

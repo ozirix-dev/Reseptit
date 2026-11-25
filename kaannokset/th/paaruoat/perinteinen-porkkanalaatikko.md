@@ -12,13 +12,18 @@ language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-porkkanalaatikko.md
 translation_of: perinteinen-porkkanalaatikko
-status: draft
+status: published
 servings: 8
 time_total_min: 165
 difficulty: "ง่าย"
 tags:
   - "อาหารฟินแลนด์"
   - "อาหารพื้นบ้าน"
+image:
+  src: paaruoat/perinteinen-porkkanalaatikko.webp
+  alt: "แครอตอบข้าวในถาดสีอ่อน ภาพประกอบสร้างด้วยเอไอ"
+  width: 960
+  height: 640
 ingredients:
   - amount: 1000
     unit: "g"
@@ -51,7 +56,7 @@ ingredients:
 
 # แครอตอบกับข้าวแบบฟินแลนด์
 
-สูตรอาหารพื้นบ้านฟินแลนด์
+นำแครอตบดผสมกับข้าวต้มใส่นม ปรุงรสด้วยลูกจันทน์เทศแล้วอบ เป็นเครื่องเคียงคริสต์มาสของฟินแลนด์
 
 ## วิธีทำ
 
@@ -62,5 +67,7 @@ ingredients:
 
 ## หมายเหตุ
 
-- ฉบับร่างที่ยังไม่ได้ทดลองทำโดย Recipavo ยังไม่มีภาพ การคำนวณโภชนาการและ GK รวมถึงการตรวจภาษาและสารก่อภูมิแพ้ขั้นสุดท้าย
+- มีนมและไข่
 - แหล่งข้อมูลเปรียบเทียบ (เป็นสูตรคนละรูปแบบ): https://www.martat.fi/reseptit/porkkanalaatikko/ ja / and https://www.k-ruoka.fi/reseptit/porkkanalaatikko-soseesta
+
+- ยังระบุข้อมูลโภชนาการต่อหนึ่งที่อย่างน่าเชื่อถือไม่ได้

@@ -11,13 +11,18 @@ language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/paistetut-muikut.md
 translation_of: paistetut-muikut
-status: draft
+status: published
 servings: 4
 time_total_min: 30
 difficulty: "lätt"
 tags:
   - "finsk"
   - "traditionell"
+image:
+  src: paaruoat/paistetut-muikut.webp
+  alt: "En tallrik med rågpanerad stekt siklöja; AI-illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 700
     unit: "g"
@@ -39,12 +44,12 @@ ingredients:
     item: "smör till stekning"
   - amount: 20
     unit: "g"
-    item: "rybsolja till stekning"
+    item: "rapsolja till stekning"
 ---
 
 # Smörstekta siklöjor med rågpanering
 
-Ett traditionellt recept från det finska hemmaköket.
+Siklöjorna vänds i rågmjöl och ströbröd och steks frasiga i panna. Servera dem varma med kokt potatis.
 
 ## Tillagning
 
@@ -55,5 +60,7 @@ Ett traditionellt recept från det finska hemmaköket.
 
 ## Anteckningar
 
-- Redaktionellt utkast, inte provlagat av Recipavo. Bild, närings- och GK-beräkningar samt slutlig översättnings- och allergenkontroll återstår.
+- Innehåller fisk, råg och mjölk. Kontrollera om ströbrödet innehåller vete eller andra allergener.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/paistetut-muikut/
+
+- Det gick inte att fastställa tillförlitliga näringsvärden per portion.
