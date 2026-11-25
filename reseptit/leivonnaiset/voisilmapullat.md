@@ -1,0 +1,66 @@
+---
+title: "Voisilmäpullat"
+recipe_id: voisilmapullat
+url_slug: voisilmapullat
+category: leivonnainen
+language: fi
+status: draft
+servings: 16
+time_total_min: 150
+difficulty: "keskitaso"
+main_ingredient: ["vehnäjauho","voi"]
+cooking_method: ["uuni"]
+ingredients:
+  - amount: 250
+    unit: "ml"
+    item: "maitoa"
+  - amount: 25
+    unit: "g"
+    item: "tuorehiivaa"
+  - amount: 1
+    unit: "kpl"
+    item: "kananmuna taikinaan"
+  - amount: 85
+    unit: "g"
+    item: "sokeria taikinaan"
+  - amount: 0.5
+    unit: "tl"
+    item: "suolaa"
+  - amount: 1.5
+    unit: "tl"
+    item: "jauhettua kardemummaa"
+  - amount: 520
+    unit: "g"
+    item: "vehnäjauhoja taikinaan ja leivontaan"
+  - amount: 75
+    unit: "g"
+    item: "pehmeää voita taikinaan"
+  - amount: 75
+    unit: "g"
+    item: "voita täytteeseen"
+  - amount: 42
+    unit: "g"
+    item: "sokeria täytteeseen"
+  - amount: 32
+    unit: "g"
+    item: "vehnäjauhoja täytteeseen"
+  - amount: 1
+    unit: "kpl"
+    item: "kananmuna voiteluun"
+---
+
+# Voisilmäpullat
+
+Pehmeän kardemummapullan keskelle paistuu sokerinen voisilmä.
+
+## Valmistus
+
+1. Liuota hiiva kädenlämpöiseen maitoon. Lisää muna, sokeri, suola ja kardemumma. Lisää jauhot vähitellen ja säästä hieman leivontaan. Vaivaa mukaan pehmeä voi.
+2. Peitä taikina ja kohota lähes kaksinkertaiseksi. Jaa 16 palaan ja pyöritä pulliksi. Nosta pullat leivinpaperille ja kohota peitettyinä, kunnes ne ovat selvästi kuohkeita.
+3. Kuumenna uuni 200 °C:seen. Paina jokaisen pullan keskelle syvä kolo ja voitele vatkatulla munalla. Jaa koloihin tasan täytevoi, täytesokeri ja täytejauhot.
+4. Paista uunin keskitasolla 12–15 minuuttia, kunnes reunat ovat kullanruskeita. Anna voisilmien jäähtyä hetki ennen syömistä.
+
+## Muistiinpanot
+
+- Sisältää vehnää, maitoa ja kananmunaa.
+- Vertailulähde https://www.valio.fi/reseptit/voisilmapullat/
