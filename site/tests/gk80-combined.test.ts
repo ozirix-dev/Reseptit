@@ -19,7 +19,7 @@ test('Operation142 adds exactly ten candidates and preserves all133 current main
 
 test('all56 source bindings and Decimal goldens remain valid together; oil really is rapeseed',async()=>{const path=(await import('node:url')).fileURLToPath(root);for(const pack of await loadPacks(path))for(const r of pack.recipes){const h=createHash('sha256').update(readFileSync(new URL(r.sourcePath,root),'utf8').replaceAll('\r\n','\n')).digest('hex');const g=pack.golden.find((x:any)=>x.recipeId===r.recipeId);const out=calculateCandidate(r,pack.sources,h,g.inputHash,pack.comps);assert.equal(out.numericProposal,true);assert.equal(out.scenarios.length,g.scenarios.length);for(let i=0;i<out.scenarios.length;i++)assert.ok(Math.abs(out.scenarios[i].wholeGk!-g.scenarios[i].wholeGk)<1e-10);}const c=json('docs/nutrition/calculations/thai-kai-jiao-yrteilla.json');assert.equal(c.ingredients.find((i:any)=>i.item.includes('rypsi')).record.referenceRecord.source_id,'535');});
 
-test('all ten new versions bind current FI and30 translated files to new macro evidence',async()=>{
+test('all ten Operation142 versions retain their historical FI and 30 translated macro approvals',async()=>{
  const pack=json('docs/nutrition/gk80-operation142/integration.json');
  const {parseMarkdown}=await import('../src/content/markdown');
  const {verifyNutritionEvidence}=await import('../scripts/nutrition-evidence');
