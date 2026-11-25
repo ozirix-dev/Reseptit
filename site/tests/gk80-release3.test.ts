@@ -20,7 +20,7 @@ test('all12 exact source versions, typed food bindings, macros and published rec
  }
 });
 test('independent Decimal reproduces all12 release3 recipe contributions',()=>{
- assert.equal(JSON.parse(execFileSync(process.platform==='win32'?'python':'python3',[fileURLToPath(new URL('site/scripts/gk80-release3-decimal.py',root))],{encoding:'utf8'})).status,'PASS');
+ assert.deepEqual(JSON.parse(execFileSync(process.platform==='win32'?'python':'python3',[fileURLToPath(new URL('site/scripts/gk80-release3-decimal.py',root))],{encoding:'utf8'})),{status:'PASS',recipes:12,publicationMacros:12});
 });
 test('photographs are disclosed illustrations and the soup no longer uses the skewer photograph',()=>{
  for(const r of recipes){const text=readFileSync(new URL(r.sourcePath,root),'utf8');assert.match(text,/Kuva on tarjoilua havainnollistava kuvituskuva/);assert.match(text,/kuvan ylimääräiset lisukkeet eivät kuulu arvioon/);}
