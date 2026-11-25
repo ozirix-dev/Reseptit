@@ -1,0 +1,229 @@
+{
+  "recipeId": "chapati",
+  "sourceHash": "2a94150bd68eef028991af2f13549dd7ff158b5132bcb8e7f52cbe93a1bafead",
+  "calculatedAt": "2026-11-25",
+  "servings": 10,
+  "scope": "Kymmenen leipää. Laskentaskenaario laskee mukaan koko 15 g kaulintajauhovaran ja 5 ml pannun öljyvaran. Todellinen tarttunut määrä voi olla pienempi. Arvio on rasvalle ja hiilihydraateille näiden lisäysten osalta yläraja.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 140,
+      "unit": "g",
+      "item": "täysjyvävehnäjauhoja",
+      "state": "JAUHO, GRAHAMJAUHO",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: JAUHO, GRAHAMJAUHO. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-111-release-20",
+        "name": "JAUHO, GRAHAMJAUHO",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/111",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "JAUHO, GRAHAMJAUHO",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 61.723,
+          "polyols": 0,
+          "fibre": 9.9,
+          "protein": 12.9,
+          "fat": 2.46
+        }
+      }
+    },
+    {
+      "amount": 140,
+      "unit": "g",
+      "item": "vehnäjauhoja taikinaan",
+      "state": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: JAUHO, VEHNÄJAUHO, PUOLIKARKEA. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "polyols": 0,
+          "fibre": 3.5,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      }
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "hienoa suolaa",
+      "state": "RUOKASUOLA, JODIOITU",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: RUOKASUOLA, JODIOITU. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 6.5,
+      "conversionEvidence": "Fineli 30, TL 6,5 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "RUOKASUOLA, JODIOITU",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 0.63,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "amount": 30,
+      "unit": "ml",
+      "item": "oliiviöljyä taikinaan",
+      "state": "OLIIVIÖLJY",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: OLIIVIÖLJY. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 0.9,
+      "conversionEvidence": "Fineli 536, DL 90 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-536-release-20",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "OLIIVIÖLJY",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    },
+    {
+      "amount": 180,
+      "unit": "ml",
+      "item": "kuumaa vettä",
+      "state": "VESI, VESIJOHTOVESI",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: VESI, VESIJOHTOVESI. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Fineli 922, DL 100 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "VESI, VESIJOHTOVESI",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "amount": 15,
+      "unit": "g",
+      "item": "vehnäjauhoja kaulintaan, tarpeen mukaan",
+      "state": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: JAUHO, VEHNÄJAUHO, PUOLIKARKEA. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "polyols": 0,
+          "fibre": 3.5,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      }
+    },
+    {
+      "amount": 5,
+      "unit": "ml",
+      "item": "oliiviöljyä pannun sivelyyn",
+      "state": "OLIIVIÖLJY",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: OLIIVIÖLJY. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 0.9,
+      "conversionEvidence": "Fineli 536, DL 90 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-536-release-20",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "OLIIVIÖLJY",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    }
+  ]
+}
