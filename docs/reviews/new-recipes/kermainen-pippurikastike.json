@@ -3,9 +3,9 @@
   "recipe_id": "kermainen-pippurikastike",
   "source_path": "reseptit/alkuruoat/kermainen-pippurikastike.md",
   "source_sha256": "17c3b9b9b8418d67adfc8ab007b7079dbe3458c5e75011f674630ed5c9ac5d1a",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; kokonaisjulkaisun hyväksyntä puuttuu",
-  "reviewed_at": "2026-11-21",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -37,8 +37,8 @@
       "notes": "Neljä annosta / 25 min on perusteltu pilkkomisen, 3 min kuullotuksen, 30 s maustelämmityksen sekä 8–10 min haudutuksen pohjalta. Maku-ohjeen koko pihviaterian 35 min ei todista juuri tämän kastikkeen aikaa; lopullinen viskositeetti riippuu kerman ja liemen tuotteista."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Kanoninen laskenta tarkistettu. Lihaliemen ja Dijon-sinapin EU-merkinnöistä puuttuu varmennettu polyolimäärä. Proteiini ja rasva kattavat kaikki ainekset."
+      "status": "pass",
+      "notes": "Kanoninen laskenta tarkistettu. Lihaliemen ja Dijon-sinapin EU-merkinnöistä puuttuu varmennettu polyolimäärä. Proteiini ja rasva kattavat kaikki ainekset. Chat-2 vahvisti annosarvion ja pidätysten rajauksen tälle katselmoidulle versiolle."
     },
     "glycemic": {
       "status": "unavailable",
@@ -54,7 +54,7 @@
     ],
     "image_path": "kuvat/alkuruoat/kermainen-pippurikastike.webp",
     "image_sha256": "7530d5d848f8e0f09179f7af146da693e9021ca922b1372e6063915780d426ee",
-    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "image_review": "Kuvan ruokalajivastaavuus hyväksytty Chat-2:n katselmoinnissa. Kokki-Codex varmisti kuvan tavut ja dekoodauksen.",
     "physical_cook_test": false
   },
   "glycemic_evidence": {
@@ -87,7 +87,7 @@
     ]
   },
   "proposed_publication": {
-    "review_state": "PENDING_INDEPENDENT_REVIEW",
+    "review_state": "APPROVED",
     "recipe_markdown": [
       {
         "path": "reseptit/alkuruoat/kermainen-pippurikastike.md",
@@ -120,14 +120,13 @@
     ],
     "nutrition_sha256": "f7368b89ad16ee9b43bef480d0b9fe3a6b51e66d95027b0e3b10652a0fea5d9f",
     "batch_id": "batch-33308",
-    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat."
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154517398"
   },
   "independent_review": {
-    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
-    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
-    "decision": "hold",
-    "corrections_pending_review": [
-      "Poistettu kuvan versionhallintaa koskeva teksti SV- ja TH-sivuilta. Kuvakoristeiden rajaus säilyy."
-    ]
-  }
+    "reviewed_head": "75a90d0326e7145d89b984bcf929ae12d806051c",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154517398",
+    "decision": "pass"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154517398"
 }

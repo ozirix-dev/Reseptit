@@ -3,9 +3,9 @@
   "recipe_id": "perinteinen-vaniljakastike",
   "source_path": "reseptit/jalkiruoat/perinteinen-vaniljakastike.md",
   "source_sha256": "80b9f10ca12e98dd7795828d3b0ed94e008fde1bf3945cd66552c31826c70cca",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; ravinto- ja julkaisuhyväksyntä kesken",
-  "reviewed_at": "2026-11-21",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -37,8 +37,8 @@
       "notes": "Kuusi pientä kastikeannosta / 25 min koskee lämpimänä tarjoilua: mittaus, sekoitus ja miedolla lämmöllä saostaminen mahtuvat arvioon. Kylmänä tarjoilu edellyttää lisäksi nopeaa jäähdytystä ja jääkaappiaikaa; nelikielinen ohje on täsmennetty. Säilytys enintään +6 °C. Saanto on arvio."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Kanoninen laskenta tarkistettu. Aitoa vaniljaa sisältävän vaniljasokerin kuitua ja polyoleja ei ilmoiteta. Proteiini ja rasva kattavat kaikki ainekset."
+      "status": "pass",
+      "notes": "Kanoninen laskenta tarkistettu. Aitoa vaniljaa sisältävän vaniljasokerin kuitua ja polyoleja ei ilmoiteta. Proteiini ja rasva kattavat kaikki ainekset. Chat-2 vahvisti annosarvion ja pidätysten rajauksen tälle katselmoidulle versiolle."
     },
     "glycemic": {
       "status": "unavailable",
@@ -51,7 +51,7 @@
     ],
     "image_path": "kuvat/jalkiruoat/perinteinen-vaniljakastike.webp",
     "image_sha256": "6508c960e4858abfd4571303f0d3c5f81499a0f72fbbfb8b7851c9d0baa67734",
-    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "image_review": "Kuvan ruokalajivastaavuus hyväksytty Chat-2:n katselmoinnissa. Kokki-Codex varmisti kuvan tavut ja dekoodauksen.",
     "physical_cook_test": false
   },
   "glycemic_evidence": {
@@ -83,7 +83,7 @@
     ]
   },
   "proposed_publication": {
-    "review_state": "PENDING_INDEPENDENT_REVIEW",
+    "review_state": "APPROVED",
     "recipe_markdown": [
       {
         "path": "reseptit/jalkiruoat/perinteinen-vaniljakastike.md",
@@ -116,14 +116,13 @@
     ],
     "nutrition_sha256": "fad0b39f7b44276320147a6b37b2d4b440666f1addb54283da450f239909bb47",
     "batch_id": "batch-33308",
-    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat."
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154517398"
   },
   "independent_review": {
-    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
-    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
-    "decision": "hold",
-    "corrections_pending_review": [
-      "Poistettu vanhentunut kuvavaihtoa koskeva TH-muistiinpano. Tekoälykuvituksen ilmoitus säilyy."
-    ]
-  }
+    "reviewed_head": "75a90d0326e7145d89b984bcf929ae12d806051c",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154517398",
+    "decision": "pass"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154517398"
 }

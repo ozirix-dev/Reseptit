@@ -3,9 +3,9 @@
   "recipe_id": "kermainen-tillikastike",
   "source_path": "reseptit/alkuruoat/kermainen-tillikastike.md",
   "source_sha256": "dea3ef01bb6bc3ae6f8b12fbaefe8dae0a370375372b11506d36381f95fbff45",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
-  "reviewed_at": "2026-11-21",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -35,8 +35,8 @@
       "notes": "Recipavo 4 pientä lisukeannosta / 25 min sisältäen 15 minuutin kylmämaustumisen; Valion sekoitus 5 min. Kylmämaustuminen ja valmistelu selittävät aikaeron."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Kanoninen laskenta tarkistettu. Kaikki neljä annosarviota toistuvat lähtöaineiston Fineli- ja AFCD-riveiltä. Riippumaton julkaisukatselmointi odottaa."
+      "status": "pass",
+      "notes": "Kanoninen laskenta tarkistettu. Kaikki neljä annosarviota toistuvat lähtöaineiston Fineli- ja AFCD-riveiltä. Chat-2 vahvisti annosarvion ja pidätysten rajauksen tälle katselmoidulle versiolle."
     },
     "glycemic": {
       "status": "unavailable",
@@ -49,7 +49,7 @@
     ],
     "image_path": "kuvat/alkuruoat/kermainen-tillikastike.webp",
     "image_sha256": "53fb624ccf1e2d9d17a2751c1886118f89161e67c368c8c294ea85a76ce2a3b1",
-    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "image_review": "Kuvan ruokalajivastaavuus hyväksytty Chat-2:n katselmoinnissa. Kokki-Codex varmisti kuvan tavut ja dekoodauksen.",
     "physical_cook_test": false
   },
   "glycemic_evidence": {
@@ -81,7 +81,7 @@
     ]
   },
   "proposed_publication": {
-    "review_state": "PENDING_INDEPENDENT_REVIEW",
+    "review_state": "APPROVED",
     "recipe_markdown": [
       {
         "path": "reseptit/alkuruoat/kermainen-tillikastike.md",
@@ -114,14 +114,13 @@
     ],
     "nutrition_sha256": "125e247db4851cc3ffddf0e181910ca907dccdbeb241737fbb09505f28fcd087",
     "batch_id": "batch-33308",
-    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat."
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154517398"
   },
   "independent_review": {
-    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
-    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
-    "decision": "hold",
-    "corrections_pending_review": [
-      "Fineli #11152:n kermaviili korjattu vähälaktoosiseksi (VL) kaikilla neljällä kielellä ja laskentatodisteessa. Sitruunamehun todistettu annostus on 12 g. Neljä annosarviota säilyvät."
-    ]
-  }
+    "reviewed_head": "75a90d0326e7145d89b984bcf929ae12d806051c",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154517398",
+    "decision": "pass"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154517398"
 }
