@@ -46,6 +46,9 @@ ingredients:
   - amount: 28
     unit: "g"
     item: "smält ghee till pensling"
+  - amount: 10
+    unit: "g"
+    item: "vetemjöl till utbakning (använd vid behov)"
 ---
 
 # Naan i stekpanna

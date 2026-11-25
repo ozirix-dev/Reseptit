@@ -43,6 +43,12 @@ ingredients:
   - amount: 227
     unit: "g"
     item: "syrad kärnmjölk"
+  - amount: 10
+    unit: "g"
+    item: "vetemjöl till utbakning (använd vid behov)"
+  - amount: 5
+    unit: "g"
+    item: "smör till plåten"
 ---
 
 # Scones med kärnmjölk
@@ -51,7 +57,7 @@ Syrad kärnmjölk ger frisk syra åt trekantiga, smuliga scones.
 
 ## Tillagning
 
-1. Sätt ugnen på 260 °C. Smörj en plåt lätt. Blanda mjöl, bakpulver, bikarbonat, salt och socker.
+1. Sätt ugnen på 260 °C. Smörj en plåt lätt med smöret som avsatts till plåten. Blanda de båda mjölsorterna till degen, bakpulver, bikarbonat, salt och socker.
 2. Nyp in det kalla smöret i tärningar till ojämna smulor. Blanda snabbt ner kärnmjölken.
 3. Samla degen på ett lätt mjölat bord. Dela i två delar och tryck ut rundlar på cirka 15 cm. Skär varje rundel i sex trekanter med raka tryck nedåt.
 4. Flytta bitarna till plåten och sänk ugnen till 230 °C när plåten sätts in. Grädda 13–15 minuter tills ytan är ljust gyllene.

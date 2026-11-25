@@ -7,7 +7,7 @@ language: fi
 status: draft
 servings: 16
 time_total_min: 1320
-difficulty: "helppo"
+difficulty: "keskitaso"
 main_ingredient: ["vehnäjauho"]
 cooking_method: ["uuni"]
 image:
@@ -37,6 +37,9 @@ ingredients:
   - amount: 9
     unit: "g"
     item: "suolaa"
+  - amount: 20
+    unit: "g"
+    item: "vehnäjauhoja työpöydän jauhotukseen (käytä tarpeen mukaan)"
 ---
 
 # Ciabatta

@@ -40,6 +40,12 @@ ingredients:
   - amount: 227
     unit: "g"
     item: "piimää"
+  - amount: 10
+    unit: "g"
+    item: "vehnäjauhoja työpöydän jauhotukseen (käytä tarpeen mukaan)"
+  - amount: 5
+    unit: "g"
+    item: "voita pellin voiteluun"
 ---
 
 # Piimäskonssit
@@ -48,7 +54,7 @@ Piimä antaa mureneville, kolmionmuotoisille skonsseille raikkaan maun.
 
 ## Valmistus
 
-1. Kuumenna uuni 260 °C:seen. Voitele pelti kevyesti. Sekoita jauhot, leivinjauhe, sooda, suola ja sokeri.
+1. Kuumenna uuni 260 °C:seen. Voitele pelti kevyesti voiteluun varatulla voilla. Sekoita taikinan jauhot, leivinjauhe, sooda, suola ja sokeri.
 2. Nypi kuutioitu kylmä voi jauhoseokseen epätasaiseksi muruksi. Sekoita piimä nopeasti joukkoon.
 3. Kokoa taikina kevyesti jauhotetulla tasolla. Jaa kahteen osaan ja painele noin 15 cm:n pyörylöiksi. Leikkaa kumpikin kuuteen kolmioon suoralla painalluksella.
 4. Nosta kolmiot pellille ja laske uunin lämpö 230 °C:seen, kun laitat pellin uuniin. Paista 13–15 minuuttia, kunnes pinta on vaalean kullanruskea.

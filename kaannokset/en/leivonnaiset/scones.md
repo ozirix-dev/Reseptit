@@ -43,6 +43,12 @@ ingredients:
   - amount: 227
     unit: "g"
     item: "buttermilk"
+  - amount: 10
+    unit: "g"
+    item: "plain wheat flour for dusting (use as needed)"
+  - amount: 5
+    unit: "g"
+    item: "butter for greasing the tray"
 ---
 
 # Buttermilk scones
@@ -51,7 +57,7 @@ Buttermilk adds a fresh tang to these crumbly triangular scones.
 
 ## Preparation
 
-1. Heat the oven to 260 °C. Lightly grease a baking tray. Mix the flours, baking powder, soda, salt and sugar.
+1. Heat the oven to 260 °C. Lightly grease a baking tray with the butter set aside for it. Mix the dough flours, baking powder, soda, salt and sugar.
 2. Rub the diced cold butter into the flour mixture to form uneven crumbs. Stir in the buttermilk quickly.
 3. Bring the dough together on a lightly floured surface. Divide in two and press into rounds about 15 cm across. Press a cutter straight down to divide each round into six wedges.
 4. Transfer to the tray and turn the oven down to 230 °C as the tray goes in. Bake for 13–15 minutes, until pale gold.

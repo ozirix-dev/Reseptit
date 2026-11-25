@@ -10,7 +10,7 @@ translation_of: ciabatta
 status: draft
 servings: 16
 time_total_min: 1320
-difficulty: "ง่าย"
+difficulty: "ปานกลาง"
 main_ingredient: ["vehnäjauho"]
 cooking_method: ["uuni"]
 image:
@@ -40,6 +40,9 @@ ingredients:
   - amount: 9
     unit: "g"
     item: "เกลือ"
+  - amount: 20
+    unit: "g"
+    item: "แป้งสาลีอเนกประสงค์สำหรับโรยโต๊ะ (ใช้เท่าที่จำเป็น)"
 ---
 
 # ชาบัตตา

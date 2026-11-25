@@ -46,6 +46,9 @@ ingredients:
   - amount: 28
     unit: "g"
     item: "melted ghee for brushing"
+  - amount: 10
+    unit: "g"
+    item: "plain wheat flour for dusting (use as needed)"
 ---
 
 # Skillet naan

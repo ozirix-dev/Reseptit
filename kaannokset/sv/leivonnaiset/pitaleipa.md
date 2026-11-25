@@ -37,6 +37,9 @@ ingredients:
   - amount: 25
     unit: "g"
     item: "rapsolja"
+  - amount: 15
+    unit: "g"
+    item: "vetemjöl till utbakning (använd vid behov)"
 ---
 
 # Pitabröd
@@ -45,7 +48,7 @@ På den heta bakstenen blåser den tunna degen upp och bildar en ficka.
 
 ## Tillagning
 
-1. Blanda ingredienserna. Knåda för hand i cirka 10 minuter tills degen är slät. Täck över och jäs cirka en timme.
+1. Blanda ingredienserna till degen. Spara kavlingsmjölet till utbakningen. Knåda för hand i cirka 10 minuter tills degen är slät. Täck över och jäs cirka en timme.
 2. Värm ugnen och bakstenen till 260 °C. Dela degen i åtta delar och rulla bollar. Täck och låt vila i 15 minuter.
 3. Kavla på mjölat bord till rundlar som är cirka 18 cm breda och 3 mm tjocka. Skjut över två i taget på den heta stenen.
 4. Grädda i 3–4 minuter tills bröden puffat upp och ytan har stelnat. Lyft ur med tång och slå in bröden i en ren kökshandduk.

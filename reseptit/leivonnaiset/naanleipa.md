@@ -43,6 +43,9 @@ ingredients:
   - amount: 28
     unit: "g"
     item: "sulatettua gheetä sivelyyn"
+  - amount: 10
+    unit: "g"
+    item: "vehnäjauhoja työpöydän jauhotukseen (käytä tarpeen mukaan)"
 ---
 
 # Naanleipä pannulla

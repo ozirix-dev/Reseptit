@@ -37,6 +37,9 @@ ingredients:
   - amount: 25
     unit: "g"
     item: "rapeseed oil"
+  - amount: 15
+    unit: "g"
+    item: "plain wheat flour for dusting (use as needed)"
 ---
 
 # Pita bread
@@ -45,7 +48,7 @@ A hot baking stone makes the thin rounds puff, creating a pocket to fill.
 
 ## Preparation
 
-1. Mix all the ingredients. Knead by hand for about 10 minutes until smooth. Cover and rise for about an hour.
+1. Mix the dough ingredients, reserving the flour for rolling. Knead by hand for about 10 minutes until smooth. Cover and rise for about an hour.
 2. Heat the oven and baking stone to 260 °C. Divide the dough into eight and shape into balls. Cover and rest for 15 minutes.
 3. On a floured surface, roll the balls to discs about 18 cm across and 3 mm thick. Slide two at a time onto the hot stone.
 4. Bake for 3–4 minutes, until puffed and set on top. Lift out with tongs and wrap the breads in a clean kitchen towel.

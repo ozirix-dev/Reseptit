@@ -21,7 +21,7 @@ image:
 ingredients:
   - amount: 145
     unit: "g"
-    item: "råa skalade jordnötter"
+    item: "rostade osaltade jordnötter"
   - amount: 125
     unit: "g"
     item: "skalade pumpafrön"
@@ -43,7 +43,7 @@ Jordnötter och pumpafrön rostas i ugnen med lite cayennepeppar.
 ## Tillagning
 
 1. Sätt ugnen på 200 °C. Blanda jordnötter och frön med olja, cayenne och salt.
-2. Sprid ut blandningen i ett lager på en plåt. Rosta i cirka 5–7 minuter. Rör om ett par gånger och ta ut när blandningen är gyllenbrun.
+2. Sprid ut blandningen i ett lager på en plåt. Rosta i cirka 5–7 minuter och rör om då och då. Titta till fröna efter fyra minuter och ta ut plåten så snart de har fått färg.
 3. Låt svalna på plåten och dela i 12 portioner.
 
 ## Anteckningar

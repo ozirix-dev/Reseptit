@@ -21,7 +21,7 @@ image:
 ingredients:
   - amount: 145
     unit: "g"
-    item: "raw shelled peanuts"
+    item: "roasted unsalted peanuts"
   - amount: 125
     unit: "g"
     item: "hulled pumpkin seeds"
@@ -43,7 +43,7 @@ Peanuts and pumpkin seeds toast in the oven with a touch of cayenne.
 ## Preparation
 
 1. Heat the oven to 200 °C. Toss the peanuts and seeds with the oil, cayenne and salt.
-2. Spread the mix in a single layer on a tray. Roast for about 5–7 minutes. Stir a couple of times and remove when golden.
+2. Spread the mix in a single layer on a tray. Toast for about 5–7 minutes, stirring occasionally. Check after four minutes and remove as soon as the seeds turn golden.
 3. Cool on the tray and divide into 12 portions.
 
 ## Notes

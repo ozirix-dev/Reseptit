@@ -10,7 +10,7 @@ translation_of: ciabatta
 status: draft
 servings: 16
 time_total_min: 1320
-difficulty: "easy"
+difficulty: "medium"
 main_ingredient: ["vehnäjauho"]
 cooking_method: ["uuni"]
 image:
@@ -40,6 +40,9 @@ ingredients:
   - amount: 9
     unit: "g"
     item: "salt"
+  - amount: 20
+    unit: "g"
+    item: "plain wheat flour for dusting (use as needed)"
 ---
 
 # Ciabatta

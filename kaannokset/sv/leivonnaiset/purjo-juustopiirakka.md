@@ -60,7 +60,7 @@ Mjuk purjolök, ricotta och gruyère fyller det frasiga pajskalet.
 1. Sätt ugnen på 200 °C. Kavla degen och klä en form med löstagbar botten, 23 cm. Nagga botten och täck med bakplåtspapper och pajvikter.
 2. Förgrädda i 10 minuter. Ta bort vikter och papper. Grädda fem minuter till, tills botten fått lite färg. Sänk ugnen till 180 °C.
 3. Fräs purjolöken mjuk i smör i cirka 10 minuter. Vispa ihop ricotta, grädde, ägg, dragon, salt och peppar. Rör ner purjon och det mesta av osten.
-4. Häll fyllningen i skalet och strö över resten av osten. Grädda i 25–30 minuter, tills fyllningen stannat i mitten och ytan är gyllenbrun.
+4. Häll fyllningen i skalet och strö över resten av osten. Grädda i 25–30 minuter, tills fyllningen stannat i mitten och ytan är gyllenbrun. Kontrollera att fyllningen når minst 72 °C i mitten. Grädda längre vid behov.
 5. Låt stå i minst fem minuter innan pajen tas ur formen. Skär i åtta portioner.
 
 ## Anteckningar

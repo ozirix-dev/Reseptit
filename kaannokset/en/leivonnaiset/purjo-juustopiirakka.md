@@ -60,7 +60,7 @@ Soft leeks, ricotta and Gruyère fill a crisp pastry shell.
 1. Heat the oven to 200 °C. Roll out the pastry and line a 23 cm loose-bottomed tin. Prick the base and cover with parchment and baking weights.
 2. Blind-bake for 10 minutes. Remove the weights and paper. Bake for another five minutes until lightly coloured. Lower the oven to 180 °C.
 3. Soften the leeks in butter for about 10 minutes. Beat the ricotta, cream, eggs, tarragon, salt and pepper. Stir in the leeks and most of the grated cheese.
-4. Pour into the pastry shell and scatter the remaining cheese over the filling. Bake for 25–30 minutes, until set in the centre and golden.
+4. Pour into the pastry shell and scatter the remaining cheese over the filling. Bake for 25–30 minutes, until set in the centre and golden. Check that the centre of the filling reaches at least 72 °C. Bake longer if needed.
 5. Rest for at least five minutes before removing from the tin. Cut into eight portions.
 
 ## Notes

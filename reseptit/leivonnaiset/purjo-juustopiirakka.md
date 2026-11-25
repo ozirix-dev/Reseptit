@@ -57,7 +57,7 @@ Pehmeä purjo, ricotta ja gruyère täyttävät rapean piirakkapohjan.
 1. Kuumenna uuni 200 °C:seen. Kauli taikina ja vuoraa 23 cm:n irtopohjavuoka. Pistele pohja ja peitä leivinpaperilla ja paistopainoilla.
 2. Esipaista 10 minuuttia. Poista painot ja paperi. Paista vielä 5 minuuttia, kunnes pohja saa hieman väriä. Laske uunin lämpö 180 °C:seen.
 3. Kuullota purjoa voissa noin 10 minuuttia. Vatkaa ricotta, kerma, munat, rakuuna, suola ja pippuri. Sekoita joukkoon purjo ja valtaosa juustoraasteesta.
-4. Kaada täyte pohjalle ja ripottele loput juustosta päälle. Paista 25–30 minuuttia, kunnes täyte on hyytynyt myös keskeltä ja pinta on kullanruskea.
+4. Kaada täyte pohjalle ja ripottele loput juustosta päälle. Paista 25–30 minuuttia, kunnes täyte on hyytynyt myös keskeltä ja pinta on kullanruskea. Mittaa täytteen keskeltä vähintään 72 °C. Jatka tarvittaessa paistamista.
 5. Anna asettua vähintään viisi minuuttia ennen vuoasta irrottamista. Leikkaa kahdeksaan annokseen.
 
 ## Muistiinpanot

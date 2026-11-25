@@ -18,7 +18,7 @@ image:
 ingredients:
   - amount: 145
     unit: "g"
-    item: "raakoja kuorittuja maapähkinöitä"
+    item: "paahdettuja suolaamattomia maapähkinöitä"
   - amount: 125
     unit: "g"
     item: "kuorittuja kurpitsansiemeniä"
@@ -40,7 +40,7 @@ Maapähkinät ja kurpitsansiemenet saavat uunissa paahteisen pinnan ja ripauksen
 ## Valmistus
 
 1. Kuumenna uuni 200 °C:seen. Sekoita pähkinät ja siemenet öljyyn, cayenneen ja suolaan.
-2. Levitä seos pellille yhdeksi kerrokseksi. Paahda noin 5–7 minuuttia. Kääntele pari kertaa ja ota pois, kun seos on kullanruskea.
+2. Levitä seos pellille yhdeksi kerrokseksi. Paahda noin 5–7 minuuttia ja kääntele välillä. Tarkista väri neljän minuutin kohdalla ja ota pelti uunista heti, kun siemenet saavat väriä.
 3. Jäähdytä pellillä ja jaa 12 annokseen.
 
 ## Muistiinpanot

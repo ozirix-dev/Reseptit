@@ -34,6 +34,9 @@ ingredients:
   - amount: 25
     unit: "g"
     item: "rypsiöljyä"
+  - amount: 15
+    unit: "g"
+    item: "vehnäjauhoja työpöydän jauhotukseen (käytä tarpeen mukaan)"
 ---
 
 # Pitaleipä
@@ -42,7 +45,7 @@ Kuuma paistokivi pullistaa ohuen taikinan ja muodostaa leipään taskun.
 
 ## Valmistus
 
-1. Sekoita ainekset. Vaivaa käsin noin 10 minuuttia, kunnes taikina on sileä. Peitä ja kohota noin tunti.
+1. Sekoita taikinan ainekset. Säästä kaulintajauho muotoiluun. Vaivaa käsin noin 10 minuuttia, kunnes taikina on sileä. Peitä ja kohota noin tunti.
 2. Kuumenna uuni ja paistokivi 260 °C:seen. Jaa taikina kahdeksaan osaan ja pyöritä palloiksi. Lepuuta peitettynä 15 minuuttia.
 3. Kauli pallot jauhotetulla pöydällä noin 18 cm:n pyörylöiksi, noin 3 mm paksuiksi. Liu'uta kaksi kerrallaan kuumalle kivelle.
 4. Paista 3–4 minuuttia, kunnes leivät ovat pullistuneet ja pinta asettunut. Nosta pihdeillä liinalle ja kääri liina leipien ympärille.
