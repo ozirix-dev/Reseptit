@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
+import { predecessorForGk005History } from "./history/gk005-partial-nutrition-transition";
 import path from "node:path";
 import test from "node:test";
 import { siteContent } from "../src/generated/content.generated";
@@ -34,7 +35,8 @@ function blobSha(raw: string): string {
 for (const locale of ["fi", "en", "sv", "th"] as const) {
   test("#327 goulash: seal source and correct visible stovetop method (" + locale + ")", () => {
     const [sourcePath, expectedSha, heading] = sources[locale];
-    const raw = readFileSync(path.join(root, sourcePath), "utf8");
+    const live = readFileSync(path.join(root, sourcePath), "utf8");
+    const raw = predecessorForGk005History(sourcePath, live);
     assert.equal(blobSha(raw), expectedSha, "historic source must stay unchanged");
     const parsed = parseMarkdown(raw);
     assert.ok(parsed);
@@ -66,8 +68,8 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
       assert.equal(visible.ingredients[index].item, source.ingredients[index].item);
     }
     assert.deepEqual(visible.nutrition, {
-      carbsNetG: null, carbsTotalG: null, proteinG: null, fatG: null,
-    }, "unverified nutrition must remain hidden");
+      carbsNetG: null, carbsTotalG: null, proteinG: 40.79, fatG: 26.14,
+    }, "only the approved partial nutrition may be shown");
 
     const mark = "\n## " + heading + "\n";
     const start = parsed.content.indexOf(mark);

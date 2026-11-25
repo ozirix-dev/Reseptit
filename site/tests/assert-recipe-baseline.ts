@@ -1,4 +1,5 @@
 import { restoreRecipeAuditSnapshot } from "../scripts/restore-recipe-audit-snapshot";
+import { predecessorForGk005History } from "./history/gk005-partial-nutrition-transition";
 import { sourceReleaseGateDecision } from "../scripts/f25-source-release-gate";
 import { molletesHistoricalText } from "../scripts/molletes-reviewed-source";
 import { koreanRiceBowlHistoricalText } from "../scripts/korean-rice-bowls-reviewed-source";
@@ -306,10 +307,10 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
   for (const change of changes) {
     const [status, file] = change.split("\t");
     const readLive = () => readFileSync(path.join(root, file), "utf8");
-    const readFrozen = () => gazpachoThaiBeforeReviewedClove(file, restoreRecipeAuditSnapshot(file, readLive()));
+    const readFrozen = () => gazpachoThaiBeforeReviewedClove(file, restoreRecipeAuditSnapshot(file, predecessorForGk005History(file, readLive())));
     if (status === "M") {
       const live = readLive();
-      const prior = restoreRecipeAuditSnapshot(file, live);
+      const prior = restoreRecipeAuditSnapshot(file, predecessorForGk005History(file, live));
       if (prior !== live) {
         const pinned = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
         if (prior === pinned) continue;

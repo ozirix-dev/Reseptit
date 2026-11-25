@@ -72,8 +72,8 @@ source_recipe: reseptit/paaruoat/paprikainen-vhh-gulassi.md
 translation_of: paprikainen-vhh-gulassi
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+protein_per_serving_g: 40.79
+fat_per_serving_g: 26.14
 ---
 
 # Paprika Beef Goulash
@@ -86,4 +86,4 @@ fat_per_serving_g: null
 
 ## Notes
 
-Weigh the edible ingredients listed above. All listed food, sauce and cooking fat belong to the servings; separate side dishes are excluded. Nutrition values are temporarily withheld pending source verification.
+Weigh the edible ingredients listed above. All listed food, sauce and cooking fat belong to the servings; separate side dishes are excluded. Protein and fat values are calculated estimates. Whole-serving carbohydrate values are not reported because source data are incomplete. The composition of the beef stock and sour cream used may affect the estimates.

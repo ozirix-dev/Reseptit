@@ -72,8 +72,8 @@ source_recipe: reseptit/paaruoat/paprikainen-vhh-gulassi.md
 translation_of: paprikainen-vhh-gulassi
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+protein_per_serving_g: 40.79
+fat_per_serving_g: 26.14
 ---
 
 # Paprikagryta med nötkött
@@ -86,4 +86,4 @@ fat_per_serving_g: null
 
 ## Anteckningar
 
-Väg de ätliga ingredienserna ovan. All angiven mat, sås och stekfett ingår i portionerna; separata tillbehör ingår inte. Näringsvärden visas tills vidare inte i väntan på källkontroll.
+Väg de ätliga ingredienserna ovan. All angiven mat, sås och stekfett ingår i portionerna; separata tillbehör ingår inte. Värdena för protein och fett är beräknade uppskattningar. Kolhydratvärden för hela portionen anges inte eftersom källdata är ofullständiga. Sammansättningen av den köttbuljong och smetana som används kan påverka uppskattningarna.

@@ -1,7 +1,7 @@
 {
   "batchId": "batch-142",
   "calculatedAt": "2026-11-02",
-  "scope": "Operation142 ten exact weighed versions, refined by Operation143: six complete macro packages and four explicitly withheld; current evidence in the calculation files.",
+  "scope": "Operation142 ten exact weighed versions, refined by Operation143: six complete macro packages and four explicitly withheld; current evidence in the calculation files. Historical Operation142/143 status retained; GK-005 successor candidates add protein and fat only for Janssoninkiusaus and paprikainen VHH-gulassi; both carbohydrate fields remain withheld. Independent scoped review: PR #982 comments 7156716729 and 7157125652. Canonical test and final integration approval pending.",
   "recipes": [
     {
       "recipeId": "ratatouille"
@@ -19,13 +19,27 @@
       "recipeId": "munatacot-huevos-rancheros"
     },
     {
-      "recipeId": "paprikainen-vhh-gulassi"
+      "recipeId": "paprikainen-vhh-gulassi",
+      "partialNutrition": {
+        "evidenceSha256": "2f51918a0c35fd94155b06a3c6770d372dfc3245113d5ba0171daeaa450f8b73",
+        "fields": [
+          "protein_per_serving_g",
+          "fat_per_serving_g"
+        ]
+      }
     },
     {
       "recipeId": "caponata"
     },
     {
-      "recipeId": "janssoninkiusaus-juuriselleri"
+      "recipeId": "janssoninkiusaus-juuriselleri",
+      "partialNutrition": {
+        "evidenceSha256": "1aa9cb2b27eb61c12dcda48ccdec137e5cac2817d12975f7c0084c43fb752ea6",
+        "fields": [
+          "protein_per_serving_g",
+          "fat_per_serving_g"
+        ]
+      }
     },
     {
       "recipeId": "taytetyt-paprikat-vhh"
