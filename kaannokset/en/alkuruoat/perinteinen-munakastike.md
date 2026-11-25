@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/alkuruoat/perinteinen-munakastike.md
 translation_of: perinteinen-munakastike
-status: draft
+status: published
 servings: 4
 time_total_min: 20
 difficulty: "easy"
@@ -23,6 +23,10 @@ image:
   alt: "Creamy pale yellow egg sauce with chopped cooked egg and dill in a bowl"
   width: 960
   height: 640
+carbs_net_per_serving_g: 10.53
+carbs_total_per_serving_g: 10.9
+protein_per_serving_g: 7.89
+fat_per_serving_g: 12.52
 ingredients:
   - amount: 400
     unit: "g"
@@ -60,11 +64,9 @@ A mild milk-based sauce with chopped hard-boiled eggs and fresh dill.
 
 ## Notes
 
-- Editorial draft with Fineli-based estimated nutrition. White pepper's small contribution is conservatively mass-bounded; glycaemic load and final image approval are still pending.
+- The illustration was generated with AI. Nutrition values are ingredient-based estimates per serving. Glycaemic load could not be determined.
 - Preparation reference: https://www.martat.fi/reseptit/kananmunakastike/
 
-- The AI-generated image is included in this branch, pending approval.
 - Martat's tested egg sauce uses milk, butter, wheat flour and cooked eggs. The earlier Valio reference was a different cream-based sauce. https://www.martat.fi/reseptit/kananmunakastike/
 - Contains **eggs, milk and wheat**. Use fully cooked, peeled eggs; serve hot or cool promptly and refrigerate.
 - Use fully hard-boiled, peeled eggs and clean utensils. Serve the egg-and-milk sauce hot promptly; cool any leftovers without delay in a shallow container and refrigerate below +6°C. Keep cold food cold and hot food hot.
-- For nutrition calculations, weigh 400 g of whole milk instead of the former 400 ml. Use 120 g of peeled hard-boiled eggs as edible mass. The impact of 0.3 g white pepper is conservatively mass-bounded rather than assumed to have zero nutrients.

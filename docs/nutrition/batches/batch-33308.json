@@ -1,0 +1,73 @@
+{
+  "batchId": "batch-33308",
+  "calculatedAt": "2026-11-25",
+  "scope": "Pilotti 5. Kymmenen suomalaisen kastikkeen annosarvioiden ja ravintopidätysten resepti- ja kenttäkohtainen sidonta.",
+  "recipes": [
+    {
+      "recipeId": "perinteinen-ruskea-kastike",
+      "partialNutrition": {
+        "evidenceSha256": "81f9ca5cb17e0a99345356e1f91b694e844e9ec3c249b81a4d885a2c3cbabfe7",
+        "fields": [
+          "protein_per_serving_g",
+          "fat_per_serving_g"
+        ]
+      }
+    },
+    {
+      "recipeId": "kermainen-tillikastike"
+    },
+    {
+      "recipeId": "kantarellikastike",
+      "partialNutrition": {
+        "evidenceSha256": "4c17bc255a87f7aa9b24d6b21cacbdfe7d041257acd913189ace260fa11acbef",
+        "fields": [
+          "carbs_net_per_serving_g",
+          "protein_per_serving_g",
+          "fat_per_serving_g"
+        ]
+      }
+    },
+    {
+      "recipeId": "sinappikastike-joulukinkulle"
+    },
+    {
+      "recipeId": "kylma-piparjuurikastike",
+      "partialNutrition": {
+        "evidenceSha256": "845ed476437763e8dc1c6bf69d6f10e815bc90a8a2ee65db5b709f6fb74440ce",
+        "fields": [
+          "protein_per_serving_g",
+          "fat_per_serving_g"
+        ]
+      }
+    },
+    {
+      "recipeId": "perinteinen-munakastike"
+    },
+    {
+      "recipeId": "kermainen-pippurikastike",
+      "partialNutrition": {
+        "evidenceSha256": "8e2b284cd31d8c092222032bf392a57e63f19e46d8c68d435bc0e21367268ac6",
+        "fields": [
+          "protein_per_serving_g",
+          "fat_per_serving_g"
+        ]
+      }
+    },
+    {
+      "recipeId": "perinteinen-valkokastike"
+    },
+    {
+      "recipeId": "puolukkakastike-jalkiruokiin"
+    },
+    {
+      "recipeId": "perinteinen-vaniljakastike",
+      "partialNutrition": {
+        "evidenceSha256": "edb2864c08bce7d128f965bc49d76a8db6527bad9ca9a03d1907dee38d061e2c",
+        "fields": [
+          "protein_per_serving_g",
+          "fat_per_serving_g"
+        ]
+      }
+    }
+  ]
+}

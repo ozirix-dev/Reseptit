@@ -1,0 +1,198 @@
+{
+  "recipeId": "kermainen-pippurikastike",
+  "sourceHash": "91c2af86c2f138d9829a595927a599b1e683d2667f759dae3b395708e5535a17",
+  "calculatedAt": "2026-11-25",
+  "servings": 4,
+  "scope": "Yksi annos reseptin 4 annoksesta. Kastike ilman tarjoiluehdotusten lisukkeita.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kuohukermaa",
+      "amount": 250,
+      "unit": "ml",
+      "state": "kuohukermaa",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-29066-release-20",
+        "name": "KERMA, KUOHUKERMA, RASVAA 35 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29066",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "kuohukermaa",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 2,
+          "fat": 35
+        }
+      },
+      "gramsPerUnit": 1,
+      "conversionEvidence": "THL Fineli Release 20 #29066, aineskohtainen DL = 100 g. Kuohukermalle käytetään 35 %:n vertailuainesta."
+    },
+    {
+      "item": "Puljonki Signature Lihalientä, käyttövalmista (EAN 6416796728013)",
+      "amount": 150,
+      "unit": "ml",
+      "state": "Puljonki Signature Lihalientä, käyttövalmista (EAN 6416796728013)",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "puljonki-6416796728013",
+        "name": "Puljonki Signature Lihaliemi",
+        "sourceUrl": "https://www.oscarnordic.fi/puljonki-signature/367-signature-lihaliemi-1-l.html",
+        "state": "Puljonki Signature Lihalientä, käyttövalmista (EAN 6416796728013)",
+        "retrievedAt": "2026-11-25",
+        "licence": "Yksittäinen tuoteviite. Valmistajan tai pakkausmerkinnän ilmoittamat ravintoarvot, ei avointa tietokanta-aineistoa.",
+        "basis": "per100g-prepared",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "polyolsSourceVerified": false,
+        "per100g": {
+          "kcal": 19.7238658777,
+          "carbohydrate": 0.5917159763,
+          "protein": 3.9447731755,
+          "fat": 0.0986193294,
+          "fibre": 0.5917159763,
+          "polyols": null
+        }
+      },
+      "gramsPerUnit": 1.014,
+      "conversionEvidence": "Valmistaja, EAN 6416796728013: 1 l = 1014 g netto. S-kauppojen täsmä-EAN vahvistaa 100 ml:n perustan (https://www.s-kaupat.fi/tuote/puljonkir-lihaliemi-1-l-tetra/6416796728013). Lähdearvot / 1,014 → per 100 g. Annostilavuus × 1,014 → g."
+    },
+    {
+      "item": "salottisipulia hienonnettuna",
+      "amount": 50,
+      "unit": "g",
+      "state": "salottisipulia hienonnettuna",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "afcd-F008227-release-3",
+        "name": "Shallot, peeled, fresh, raw",
+        "state": "salottisipulia hienonnettuna",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-11-25",
+        "licence": "FSANZ AFCD Release 3 Data User Licence, CC BY-SA 3.0 Australia. Australian food composition data may vary from Finnish products.",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD:n parillisten ilmoitettujen CHO-arvojen erotus samalla painoperustalla.",
+        "per100g": {
+          "carbohydrate": 3.1,
+          "fibre": 2.9,
+          "polyols": 0,
+          "protein": 1.5,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "voita",
+      "amount": 15,
+      "unit": "g",
+      "state": "voita",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "voita",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.19,
+          "fat": 81.3
+        }
+      }
+    },
+    {
+      "item": "mustapippureita karkeasti murskattuna",
+      "amount": 5,
+      "unit": "g",
+      "state": "mustapippureita karkeasti murskattuna",
+      "matchEvidence": "Mustapippuri ilman lisäaineita. Karkea murskaus ei muuta reseptin käyttämän kuivan pippurin massakoostumusta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "afcd-F006618-release-3",
+        "name": "Pepper, black, ground",
+        "state": "mustapippureita karkeasti murskattuna",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-11-25",
+        "licence": "FSANZ AFCD Release 3 Data User Licence, CC BY-SA 3.0 Australia. Australian food composition data may vary from Finnish products.",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD:n parillisten ilmoitettujen CHO-arvojen erotus samalla painoperustalla.",
+        "per100g": {
+          "carbohydrate": 38.6,
+          "fibre": 25.3,
+          "polyols": 0,
+          "protein": 10.4,
+          "fat": 3.3
+        }
+      }
+    },
+    {
+      "item": "Maille Dijon Original -sinappia, sisältää sulfiitteja (EAN 8711200375684)",
+      "amount": 8,
+      "unit": "g",
+      "state": "Maille Dijon Original -sinappia, sisältää sulfiitteja (EAN 8711200375684)",
+      "matchEvidence": "Unileverin tuoteluettelon rivi vastaa reseptin Originale-tuotteen EAN:ia 8711200375684.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "maille-8711200375684",
+        "name": "Maille Dijon Originale",
+        "sourceUrl": "https://www.unileverfoodsolutions.fi/dam/global-ufs/mcos/nordics/finland/pdf/UFS_Tuoteluettelo_2023_LR.pdf",
+        "state": "Maille Dijon Original -sinappia, sisältää sulfiitteja (EAN 8711200375684)",
+        "retrievedAt": "2026-11-25",
+        "licence": "Yksittäinen tuoteviite. Valmistajan tai pakkausmerkinnän ilmoittamat ravintoarvot, ei avointa tietokanta-aineistoa.",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "polyolsSourceVerified": false,
+        "per100g": {
+          "kcal": 151,
+          "carbohydrate": 3.5,
+          "protein": 7,
+          "fat": 11,
+          "fibre": 2,
+          "polyols": null
+        }
+      }
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Lihaliemen ja Dijon-sinapin EU-merkinnöistä puuttuu varmennettu polyolimäärä. Proteiini ja rasva kattavat kaikki ainekset.",
+  "batchId": "batch-33308"
+}

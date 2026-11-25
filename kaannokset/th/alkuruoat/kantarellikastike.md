@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/alkuruoat/kantarellikastike.md
 translation_of: kantarellikastike
-status: draft
+status: published
 servings: 4
 time_total_min: 30
 difficulty: "ง่าย"
@@ -23,6 +23,9 @@ image:
   alt: "ซอสครีมเห็ดชานเทอเรลในชามเซรามิก มีเห็ดสีเหลืองทอง หัวหอมและพาร์สลีย์ เป็นภาพที่สร้างด้วย AI"
   width: 960
   height: 640
+carbs_net_per_serving_g: 7.51
+protein_per_serving_g: 3.63
+fat_per_serving_g: 23.29
 ingredients:
   - amount: 350
     unit: "g"
@@ -66,7 +69,8 @@ ingredients:
 
 ## หมายเหตุ
 
-- ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพ AI อยู่ในสาขานี้แล้ว แต่ยังต้องตรวจภาพก่อนเผยแพร่
+- ตรวจสารก่อภูมิแพ้จากฉลาก
+- ภาพประกอบสร้างด้วย AI ปริมาณคาร์โบไฮเดรตสุทธิ โปรตีน และไขมันเป็นค่าประมาณต่อหนึ่งหน่วยบริโภค ยังระบุปริมาณคาร์โบไฮเดรตทั้งหมดไม่ได้ ยังไม่สามารถระบุค่าภาระน้ำตาลได้
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kantarellikastike
 - มีนมและข้าวสาลี อย่าใช้ภาพอาหารที่สร้างด้วย AI เพื่อระบุชนิดเห็ดป่า
 - ใช้เฉพาะเห็ดชานเทอเรลที่ระบุชนิดกินได้อย่างมั่นใจหรือเห็ดจากร้านค้าที่ระบุชนิดชัดเจน ห้ามใช้ภาพ AI ของสูตรนี้ระบุชนิดเห็ดที่เก็บเอง เสิร์ฟร้อน ส่วนที่เหลือให้ทำให้เย็นเร็วและเก็บต่ำกว่า +6 °C

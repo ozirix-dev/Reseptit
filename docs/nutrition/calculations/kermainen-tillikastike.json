@@ -1,0 +1,232 @@
+{
+  "recipeId": "kermainen-tillikastike",
+  "sourceHash": "93b9135e76ac287fc5f6213cd145ab772d3e452de2bb18e7757d881063f32f83",
+  "calculatedAt": "2026-11-25",
+  "servings": 4,
+  "scope": "Four cold dill sauce portions with weighed edible ingredients, low-lactose sour cream (Fineli 11152 average 10–12% fat), fresh dill, undiluted lemon juice, table sugar, iodized salt and ground black pepper. All retained, no cooking loss. Independent editorial arithmetic only, not a laboratory measurement.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "vähälaktoosista kermaviiliä, rasvaa 10–12 %",
+      "amount": 200,
+      "unit": "g",
+      "state": "low-lactose cultured sour cream, fat 10-12%",
+      "matchEvidence": "Fineli #11152 low-lactose sour cream average 10-12% fat matched to the stated dairy category; actual commercial products may vary.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities are weighed as edible grams after washing/trimming.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Cold stirred sauce with no draining, cooking evaporation or ingredient discard after weighing.",
+      "record": {
+        "id": "fineli-11152-release-20",
+        "name": "KERMAVIILI, RASVAA 10-12 %, VL",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11152",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "low-lactose cultured sour cream, fat 10-12%",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20:n SUGOH-arvo ja Finelin alkuperäisen elintarvikesivun sokerialkoholirivi (0 g/100 g).",
+        "per100g": {
+          "carbohydrate": 4,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 2.63,
+          "fat": 12
+        }
+      }
+    },
+    {
+      "item": "tuoretta tilliä hienonnettuna",
+      "amount": 20,
+      "unit": "g",
+      "state": "fresh dill",
+      "matchEvidence": "Chopped fresh dill matches fresh edible Fineli #369.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities are weighed as edible grams after washing/trimming.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Cold stirred sauce with no draining, cooking evaporation or ingredient discard after weighing.",
+      "record": {
+        "id": "fineli-369-release-20",
+        "name": "TILLI, TUORE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/369",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh dill",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.9,
+          "FIBT": 2.8,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.9,
+          "fibre": 2.8,
+          "polyols": 0,
+          "protein": 3.69,
+          "fat": 0.8
+        }
+      }
+    },
+    {
+      "item": "sitruunamehua",
+      "amount": 12,
+      "unit": "g",
+      "state": "fresh lemon juice",
+      "matchEvidence": "Undiluted lemon juice weighed as 12 g, no estimated millilitre density; Fineli #11557.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities are weighed as edible grams after washing/trimming.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Cold stirred sauce with no draining, cooking evaporation or ingredient discard after weighing.",
+      "record": {
+        "id": "fineli-11557-release-20",
+        "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11557",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh lemon juice",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 1.6,
+          "FIBT": 0.1,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "fibre": 0.1,
+          "polyols": 0,
+          "protein": 0.31,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "sokeria",
+      "amount": 3,
+      "unit": "g",
+      "state": "raw/as listed",
+      "matchEvidence": "Unflavoured granulated sugar matches Fineli #1.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities are weighed as edible grams after washing/trimming.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Cold stirred sauce with no draining, cooking evaporation or ingredient discard after weighing.",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 99.9,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 2,
+      "unit": "g",
+      "state": "IND",
+      "matchEvidence": "Salt approximated by iodized table salt Fineli #30, a previously sourced repository record.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities are weighed as edible grams after washing/trimming.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Cold stirred sauce with no draining, cooking evaporation or ingredient discard after weighing.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      }
+    },
+    {
+      "item": "mustapippuria",
+      "amount": 0.5,
+      "unit": "g",
+      "state": "ground black pepper",
+      "matchEvidence": "Ground black pepper matched to AFCD F006618, a previously sourced repository record.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities are weighed as edible grams after washing/trimming.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Cold stirred sauce with no draining, cooking evaporation or ingredient discard after weighing.",
+      "record": {
+        "id": "afcd-F006618-release-3",
+        "name": "Pepper, black, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground black pepper",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 38.6,
+          "fibre": 25.3,
+          "polyols": 0,
+          "protein": 10.4,
+          "fat": 3.3
+        }
+      }
+    }
+  ],
+  "batchId": "batch-33308"
+}

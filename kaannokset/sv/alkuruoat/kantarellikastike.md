@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/alkuruoat/kantarellikastike.md
 translation_of: kantarellikastike
-status: draft
+status: published
 servings: 4
 time_total_min: 30
 difficulty: "enkel"
@@ -23,6 +23,9 @@ image:
   alt: "Krämig kantarellsås med gyllengula kantareller, lök och persilja i en keramikskål; AI-bild"
   width: 960
   height: 640
+carbs_net_per_serving_g: 7.51
+protein_per_serving_g: 3.63
+fat_per_serving_g: 23.29
 ingredients:
   - amount: 350
     unit: "g"
@@ -66,7 +69,8 @@ Smörstekta kantareller i grädde passar till potatis och stekt kött.
 
 ## Anteckningar
 
-- Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Den AI-genererade illustrationsbilden finns nu i grenen, men bildgranskning återstår.
+- Kontrollera allergener på förpackningarna.
+- Illustrationen är AI-genererad. Nettokolhydrater, protein och fett är uppskattade värden per portion. Totala kolhydrater kan inte anges. Den glykemiska belastningen kunde inte fastställas.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kantarellikastike
 - Innehåller mjölk och vete. En AI-bild ska inte användas för att identifiera vilda svampar.
 - Använd endast säkert identifierade ätliga kantareller eller korrekt märkta matsvampar från handeln. Identifiera aldrig plockad svamp utifrån receptets AI-bild. Servera varm; kyl rester snabbt och förvara under +6 °C.

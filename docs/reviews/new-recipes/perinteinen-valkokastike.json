@@ -2,17 +2,17 @@
   "schema_version": 1,
   "recipe_id": "perinteinen-valkokastike",
   "source_path": "reseptit/alkuruoat/perinteinen-valkokastike.md",
-  "source_sha256": "d37cecd828e21e6da7ced3d198ee1ef518fb5139365c9c0b475d874068521d69",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu kirjallinen valmistus- ja annoskatselmointi; julkaisuhyväksyntä avoin",
-  "reviewed_at": "2026-11-21",
+  "source_sha256": "f0586d37edf8c7acee621b38754a20a8c596e4cf0f2f53eaf78c277709419f75",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
       "https://www.valio.fi/reseptit/valkokastike/"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/perinteinen-valkokastike.json",
   "checks": {
     "duplicates": {
       "status": "pass",
@@ -35,12 +35,12 @@
       "notes": "Recipavo 6 pientä kastikeannosta / 15 min; Valion aktiivinen valmistus 10 min. Eri annosjaon vuoksi tarkka tarjottava saanto on edelleen arvio, mutta aika ja työjärjestys ovat perusteltuja."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Neljän makron ravintoarvio laskettu 6 annokselle Fineli Release20 #689 (täysmaito 500 g), #500 (voi 35 g), #110 (vehnäjauho 35 g), #30 (jodioitu suola 3 g). Valkopippuri 0,4 g ja muskottipähkinä 0,2 g on merkitty erikseen lähdepuutteisiksi, EI nolliksi. site/scripts/nutrition-model.ts sallii konservatiivisesti rajatun omissiovaikutuksen; molempien mausteiden yhteinen enimmäisvaikutus 0.90 kcal/annos ja enintään 0.11 g kutakin makroa/annos (<1g toleranssi). Arvio per annos: nettohiilihydraatit 8,36g, kokonaishiilihydraatit 8,57g, proteiini 3,25g, rasva 7,75g. Laskennan syötehash 019aa958cb6b055fae45c24cd47827e84fb3de2207439fa0b71b0310b68b7b64; tämä on source-backed arvio, ei laboratorion tai valitun maitomerkin mittaus. Koko reseptin julkaisupäätös on HOLD.\n22.11.2026 CI-yhteensopivuus: koska FI-lähde on edelleen status:draft, tämä täysin dokumentoitu AUTOMATED ONLY -laskentatodiste on siirretty pois ainoastaan julkaistuille FI-resepteille sallitusta docs/nutrition/calculations/-hakemistosta katselmointikandidaatiksi: docs/nutrition/candidates/draft-calculations/perinteinen-valkokastike.json. Neljä makroarvoa ovat edelleen ainoastaan Draft-luonnoksessa näkyvä ennakkoarvio. nutrition:pass ja virallinen nutrition_evidence eivät vielä ole myönnettyjä; paluu varsinaiseen calculations/-hakemistoon edellyttää hyväksyttyä julkaisuversiota ja täsmä-HEADin tarkistusta. Koko resepti pysyy decision:hold. Neljä ehdollista makrokenttää poistettu FI/EN/SV/TH-julkaisuluonnoksista 22.11.2026. Aiempi laskentaehdokas pysyy muuttumattomana docs/nutrition/candidates/draft-calculations/perinteinen-valkokastike.json -tiedostossa. Ei uutta hyväksyntää."
+      "status": "pass",
+      "notes": "Kanoninen laskenta tarkistettu. Kaikki neljä annosarviota toistuvat lähtöaineiston Fineli- ja AFCD-riveiltä. Chat-2 varmisti tämän ravintopäätöksen katselmoidulle versiolle."
     },
     "glycemic": {
       "status": "unavailable",
-      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+      "notes": "Jauhosuurusteen ja täysmaidon käyttöosuudet tunnetaan, mutta tälle kypsälle kastikeversiolle ei ole varmennettua GI-sidontaa."
     }
   },
   "supplementary_evidence": {
@@ -49,7 +49,78 @@
     ],
     "image_path": "kuvat/alkuruoat/perinteinen-valkokastike.webp",
     "image_sha256": "792ebe46aebc4ea49ce7865edc7a7502e73e2882c518fb75b10ed430c35d1b58",
-    "image_review": "Chat 3 22.11.2026: aiempi 6 942 B:n WebP korvattu samalla kuvatiedoston polulla uudelleen laadukkaammaksi pakatulla 960x640 AI-havainnekuvalla (43 930 B; SHA-256 792ebe46aebc4ea49ce7865edc7a7502e73e2882c518fb75b10ed430c35d1b58). Tarkka WebP Git-blob 28e55cac5e014c683dd0f3c8f29fa4436271258d on yhtäpitävä varmennetun lähdetiedoston kanssa. Suora kuva-arvio: sileä vaalea maitokastike ilman reseptiin kuulumattomia yrttejä; aikaisempi pikselöitymiseste poistettu. PRELIMINARY_VISUAL_QUALITY_OK; ei laboratoriokuva, eikä lopullinen ImageAssets/riippumaton julkaisu-/lisenssihyväksyntä. Päätös pysyy hold, status draft.",
+    "image_review": "Kuvan ruokalajivastaavuus hyväksytty Chat-2:n katselmoinnissa. Kokki-Codex varmisti kuvan tavut ja dekoodauksen.",
     "physical_cook_test": false
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 8.36,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/perinteinen-valkokastike.webp",
+    "bytes": 43930,
+    "sha256": "792ebe46aebc4ea49ce7865edc7a7502e73e2882c518fb75b10ed430c35d1b58",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI–EN/SV/TH. Vertailtu ainesosat ja määrät, käyttötila, valmistusvaiheet, lämpötilat ja ajat, allergeenit, säilytys, ravintokentät ja kuvan kuvaus.",
+    "findings": [
+      "FI/EN/SV/TH: maidon punnitseminen ilmaistu myös ensimmäisessä vaiheessa."
+    ]
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/perinteinen-valkokastike.md",
+        "language": "fi",
+        "slug": "perinteinen-valkokastike",
+        "sha256": "f0586d37edf8c7acee621b38754a20a8c596e4cf0f2f53eaf78c277709419f75",
+        "semantic_sha256": "ecd72c586a74d8df05d5062b86a083f305c16c2a63541fe8fa9230bec12b47cf"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/perinteinen-valkokastike.md",
+        "language": "en",
+        "slug": "perinteinen-valkokastike-en",
+        "sha256": "d548fcaf88abbd7a51da1b0c369945654a7846d339c017e3b7180d7902ed56b3",
+        "semantic_sha256": "dafda8dc6e2164321eba8aaf5a0d477ee8ccf521c6b1ab9dd04530352c8ada9b"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/perinteinen-valkokastike.md",
+        "language": "sv",
+        "slug": "perinteinen-valkokastike-sv",
+        "sha256": "ebabb72d7062b961e78d33145507d5c3b7c7cc58e2617941c11902319c50b7f9",
+        "semantic_sha256": "40be2ce3358dc9378862301ddabfe4412b373a15655f9421b2106540af8736ba"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/perinteinen-valkokastike.md",
+        "language": "th",
+        "slug": "perinteinen-valkokastike-th",
+        "sha256": "243d29d3e102c4c603384b34929311e16cd59db55edd3b8d66082bb1e24db266",
+        "semantic_sha256": "234cb29d7c430b7ee8c9baf62c56362a3ce061b5b1f50e8a873047b92e729cdf"
+      }
+    ],
+    "nutrition_sha256": "54ddd3c5f3e87010fcf6090ee888d150d33c2a1c942e1c108f1e715bd7e7243d",
+    "batch_id": "batch-33308",
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+  "independent_review": {
+    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+    "decision": "pass"
   }
 }

@@ -4,7 +4,7 @@ recipe_id: perinteinen-munakastike
 url_slug: perinteinen-munakastike
 category: alkuruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 20
 difficulty: "helppo"
@@ -20,14 +20,18 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 image:
   src: alkuruoat/perinteinen-munakastike.webp
   alt: "Keltaiseen vaaleaan munakastikkeeseen sekoitettuja kananmunan paloja ja tilliä kulhossa"
   width: 960
   height: 640
+carbs_net_per_serving_g: 10.53
+carbs_total_per_serving_g: 10.9
+protein_per_serving_g: 7.89
+fat_per_serving_g: 12.52
 ingredients:
   - amount: 400
     unit: "g"
@@ -65,11 +69,9 @@ Lempeä valkokastike, jossa on kovaksi keitettyä kananmunaa ja tuoretta tilliä
 
 ## Muistiinpanot
 
-- Sisältö on toimituksellinen luonnos. Ravintoarvot ovat Fineli-lähteistä laskettuja annosarvioita, ja valkopippurin pieni vaikutus on rajattu massan perusteella. GK ja kuvahyväksyntä puuttuvat.
+- Kuva on tekoälyllä luotu havainnekuva. Ravintoarvot ovat ainesosista laskettuja annosarvioita. Glykeemistä kuormaa (GK) ei ole voitu määrittää.
 - Valmistuksen vertailulähde: https://www.martat.fi/reseptit/kananmunakastike/
 
-- Kuva on tekoälyn luoma havainnekuva tässä haarassa. Hyväksyntä puuttuu.
 - Marttojen testattu kananmunakastike käyttää maitoa, voita, vehnäjauhoja ja keitettyjä munia. Valion aikaisempi lähde oli eri, kermapohjainen munakastike. https://www.martat.fi/reseptit/kananmunakastike/
 - Sisältää **kananmunaa, maitoa ja vehnää**. Käytä läpikypsiä, kuorittuja kananmunia; pidä kastike kuumana tarjoiltaessa tai jäähdytä nopeasti kylmäsäilytykseen.
 - Käytä valmiiksi täysin kovaksi keitettyjä, kuorittuja kananmunia ja puhtaita työvälineitä. Tarjoa munamaitokastike kuumana heti; jos säilytät ylijäämää, jäähdytä viipymättä matalassa astiassa ja säilytä jääkaapissa alle +6 °C:ssa. Pidä kylmä ruoka kylmänä ja kuuma kuumana.
-- Ravintolaskentaa varten maito punnitaan 400 gramman määränä aiemman 400 ml:n sijasta. Kovaksi keitetyt, kuoritut munat punnitaan 120 gramman syötävänä osana. Valkopippurin 0,3 g vaikutus rajataan varovaisella massaperusteisella enimmäisvirheellä, ei oletetulla nollaravintoarvolla.

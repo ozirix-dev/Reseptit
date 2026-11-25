@@ -1,0 +1,194 @@
+{
+  "recipeId": "perinteinen-vaniljakastike",
+  "sourceHash": "49e5a1e7149059baaf6b39e13b534ed179cacd632041eb07e8442d7b06cf11c7",
+  "calculatedAt": "2026-11-25",
+  "servings": 6,
+  "scope": "Yksi annos reseptin 6 annoksesta. Kastike ilman tarjoiluehdotusten lisukkeita.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "täysmaitoa",
+      "amount": 450,
+      "unit": "g",
+      "state": "täysmaitoa",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-689-release-20",
+        "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/689",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "täysmaitoa",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 3.5
+        }
+      }
+    },
+    {
+      "item": "sokeria",
+      "amount": 45,
+      "unit": "g",
+      "state": "sokeria",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/1",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "sokeria",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "maissitärkkelystä",
+      "amount": 18,
+      "unit": "g",
+      "state": "maissitärkkelystä",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-27-release-20",
+        "name": "JAUHO, MAISSITÄRKKELYS",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/27",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "maissitärkkelystä",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 86,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.35,
+          "fat": 0.6
+        }
+      }
+    },
+    {
+      "item": "kananmunan keltuaista",
+      "amount": 30,
+      "unit": "g",
+      "state": "kananmunan keltuaista",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-851-release-20",
+        "name": "KANANMUNAN KELTUAINEN, 34 % KANANMUNAN MASSASTA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/851",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "kananmunan keltuaista",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0.2,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 15.94,
+          "fat": 29.17
+        }
+      }
+    },
+    {
+      "item": "vaniljasokeria",
+      "amount": 8,
+      "unit": "g",
+      "state": "vaniljasokeria",
+      "matchEvidence": "Sokeripohjainen vertailutuote sisältää aitoa vaniljaa. Tuotemerkkien vaihtelu sisältyy annosarvion epävarmuuteen.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "dansukker-vaniljasokeri",
+        "name": "Dansukker Vaniljasokeri",
+        "sourceUrl": "https://www.dansukker.fi/fi/tuotteet/kaikki-tuotteet/vaniljasokeri",
+        "state": "vaniljasokeria",
+        "retrievedAt": "2026-11-25",
+        "licence": "Yksittäinen tuoteviite. Valmistajan tai pakkausmerkinnän ilmoittamat ravintoarvot, ei avointa tietokanta-aineistoa.",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "polyolsSourceVerified": false,
+        "per100g": {
+          "kcal": 384,
+          "carbohydrate": 96,
+          "protein": 0,
+          "fat": 0,
+          "fibre": null,
+          "polyols": null
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 0.3,
+      "unit": "g",
+      "state": "suolaa",
+      "matchEvidence": "Rivi vastaa reseptissä ilmoitettua elintarviketta ja käyttötilaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon määrä on kuorittu, puhdistettu tai käyttövalmis määrä.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Kastiketta ei valuteta eikä siivilöidä. Arvio perustuu käytettyihin aineksiin, veden haihtuminen ei vähennä laskettuja makroja.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+        "retrievedAt": "2026-11-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "suolaa",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "THL Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0
+        }
+      }
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Aitoa vaniljaa sisältävän vaniljasokerin kuitua ja polyoleja ei ilmoiteta. Proteiini ja rasva kattavat kaikki ainekset.",
+  "batchId": "batch-33308"
+}

@@ -2,17 +2,17 @@
   "schema_version": 1,
   "recipe_id": "kantarellikastike",
   "source_path": "reseptit/alkuruoat/kantarellikastike.md",
-  "source_sha256": "7a2cb2edec35a51efb3ecfb9c2f53fa6f93b4d51094fed91e3efd547effabf8b",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu kirjallinen aines- ja menetelmäkatselmointi; julkaisuhyväksyntä avoin",
-  "reviewed_at": "2026-11-21",
+  "source_sha256": "518bcd42cdd747f3a8f18336b294122ac1aced75431b3eaaba8c3b59d46a27da",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
       "https://www.k-ruoka.fi/reseptit/kantarellikastike"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/kantarellikastike.json",
   "checks": {
     "duplicates": {
       "status": "pass",
@@ -35,12 +35,12 @@
       "notes": "K-Ruoka 4 annosta / 15–30 minuuttia; Recipavo 4 annosta / 30 minuuttia. Aika on perusteltu arvio."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi."
+      "status": "pass",
+      "notes": "Kanoninen laskenta tarkistettu. Raakaa kantarellia vastaavan Fineli 367:n SUGOH on tyhjä. Imeytyvä arvo vastaa Finelin omaa CHOAVL-arvoa. Kokonaishiilihydraatti edellyttäisi myös sienen polyolimäärää. Chat-2 varmisti tämän ravintopäätöksen katselmoidulle versiolle."
     },
     "glycemic": {
       "status": "unavailable",
-      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+      "notes": "Vehnäjauhosuurusteen ja sienien hiilihydraattiosuuksille ei löytynyt valmistuskohtaisesti soveltuvaa hyväksyttyä GI-sidontaa."
     }
   },
   "supplementary_evidence": {
@@ -49,7 +49,76 @@
     ],
     "image_path": "kuvat/alkuruoat/kantarellikastike.webp",
     "image_sha256": "d1f220d63ec75ead2775744630fe5d42e8bc0e828b7a8aae6bf0a9d130a10d5d",
-    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "image_review": "Kuvan ruokalajivastaavuus hyväksytty Chat-2:n katselmoinnissa. Kokki-Codex varmisti kuvan tavut ja dekoodauksen.",
     "physical_cook_test": false
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 7.51,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/kantarellikastike.webp",
+    "bytes": 84866,
+    "sha256": "d1f220d63ec75ead2775744630fe5d42e8bc0e828b7a8aae6bf0a9d130a10d5d",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI–EN/SV/TH. Vertailtu ainesosat ja määrät, käyttötila, valmistusvaiheet, lämpötilat ja ajat, allergeenit, säilytys, ravintokentät ja kuvan kuvaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/kantarellikastike.md",
+        "language": "fi",
+        "slug": "kantarellikastike",
+        "sha256": "518bcd42cdd747f3a8f18336b294122ac1aced75431b3eaaba8c3b59d46a27da",
+        "semantic_sha256": "335cdbc0252251b45c40906e640cb31169dd1180f442069e4b5f6a8dbc7f509d"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/kantarellikastike.md",
+        "language": "en",
+        "slug": "kantarellikastike-en",
+        "sha256": "b4746f48c82e093024fd84ee07090f8a8b5e1d47598a643f128bfc0add003cd9",
+        "semantic_sha256": "f2cf1644c96ad87cbef49e71ef0a13cb5d185b687165c080595dc439b2a18738"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/kantarellikastike.md",
+        "language": "sv",
+        "slug": "kantarellikastike-sv",
+        "sha256": "729145645f09f1c6ff5e1803c9e23df7042a8817b09eac59c91c0bde3f68b10f",
+        "semantic_sha256": "03b3d519715802f5700f7ce243aac061133719f4df05319ee1fcaf04c4ec618d"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/kantarellikastike.md",
+        "language": "th",
+        "slug": "kantarellikastike-th",
+        "sha256": "5b8850360d0b95f5b600165e3cdf115133f608ca9694fa6653cb382ca79de0dc",
+        "semantic_sha256": "3f7ac0d0862d591516ca27294e009c27a9df7954b5fb67036180fd8211c93df7"
+      }
+    ],
+    "nutrition_sha256": "294f3a7b661ed18b90d77ea79e71712cba6e0d0e9b279a65156da4f55d528e0a",
+    "batch_id": "batch-33308",
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+  "independent_review": {
+    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+    "decision": "pass"
   }
 }
