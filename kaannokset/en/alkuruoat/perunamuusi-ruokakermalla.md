@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/alkuruoat/perunamuusi-ruokakermalla.md
 translation_of: perunamuusi-ruokakermalla
-status: draft
+status: published
 servings: 6
 time_total_min: 35
 difficulty: "easy"
@@ -45,3 +45,5 @@ Floury potatoes and warm cooking cream make a fluffy mash. Serve it with dishes 
 
 - Contains milk. Drain and discard the cooking water.
 - Method reference: https://www.valio.fi/reseptit/perunamuusi-ruokakermalla/
+
+- Reliable nutrition values could not be determined for one serving.

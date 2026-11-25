@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/tomaatti-valkopapupata.md
 translation_of: tomaatti-valkopapupata
-status: draft
+status: published
 servings: 4
 time_total_min: 35
 difficulty: "easy"
@@ -60,3 +60,5 @@ Tinned beans make this tomato stew quick. Garlic and oregano flavour the sauce.
 
 - Weigh the beans after rinsing and draining.
 - Method reference: https://www.k-ruoka.fi/reseptit/helppo-papupata
+
+- Reliable nutrition values could not be determined for one serving.

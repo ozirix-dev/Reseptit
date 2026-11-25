@@ -2,49 +2,71 @@
   "schema_version": 1,
   "recipe_id": "porkkana-omenaraaste",
   "source_path": "reseptit/alkuruoat/porkkana-omenaraaste.md",
-  "source_sha256": "069603f9c5af2a362cc6c7af3cd4f73f83fd8bf676383754e270e58081cdc21d",
-  "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "source_sha256": "a7dc4fe87e8f30495dad45765919947a47f12d2b142219a65c2a687cc7c5fa3d",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
       "https://www.martat.fi/reseptit/chilinen-porkkanasalaatti/"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/porkkana-omenaraaste.json",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Täsmälliset tunnisteet ja reitit verrataan mainiin ja tuotantoon. Lähin toimituksellinen vertailu kuuluu riippumattomaan sisältökatselmointiin."
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Vertaa raaka-ainemäärät ja -tilat, mukaan lukien vaihtoehdot ja allergeenit, alkuperäiseen valmistuslähteeseen ja kieliversioihin."
+      "status": "pass",
+      "notes": "Kuorittu porkkana ja kuorellinen, siemenkodaton omena punnitaan syötävinä. Tarjotaan viileänä samana päivänä. Vertailulähteen mausteet ja pähkinät eivät kuulu sovitukseen."
     },
     "method": {
-      "status": "pending",
-      "notes": "Recipavon toimituksellinen sovitus. Kuvitus ei ole osoitus valmistuskokeesta."
+      "status": "pass",
+      "notes": "Kuorittu porkkana ja kuorellinen, siemenkodaton omena punnitaan syötävinä. Tarjotaan viileänä samana päivänä. Vertailulähteen mausteet ja pähkinät eivät kuulu sovitukseen."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Tarkista reseptin kypsennys ja kylmäkäsittely sekä ainesosista ja tuotemerkinnöistä seuraavat allergeenit."
+      "status": "pass",
+      "notes": "Kuorittu porkkana ja kuorellinen, siemenkodaton omena punnitaan syötävinä. Tarjotaan viileänä samana päivänä. Vertailulähteen mausteet ja pähkinät eivät kuulu sovitukseen. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "4 annosta / 15 min, reseptin rajauksin. Arvio."
+      "status": "pass",
+      "notes": "Kuorittu porkkana ja kuorellinen, siemenkodaton omena punnitaan syötävinä. Tarjotaan viileänä samana päivänä. Vertailulähteen mausteet ja pähkinät eivät kuulu sovitukseen. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Laskentamalli sisältää kaikki kolme ainesosaa ilman hävikkivaihetta; kuorittu porkkana ja kuorineen punnittu omena ilman siemenkotaa."
+      "status": "pass",
+      "notes": "Neljä kanonisesti laskettua annosarvoa. Fineli 300, 28941 ja 11557. Kaikki kolme ainetta jaetaan neljään; omena kuorineen ja ilman siemenkotaa."
     },
     "glycemic": {
-      "status": "pending",
-      "notes": "Omenaa ja hienoksi raastettua raakaa porkkanaa vastaava annos- ja valmistuskohtainen GI-sidonta puuttuu."
+      "status": "unavailable",
+      "notes": "Raastetun porkkanan ja omenan reseptikohtainen GI-näyttö puuttuu. GK jää määrittämättömäksi."
     }
   },
-  "candidate_review": {
-    "markdown": [
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/porkkana-omenaraaste.webp",
+    "bytes": 86444,
+    "sha256": "095837a0c42412b568254c12e4261f51712e0b9261e1a39afd08f4b1def2de1b",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
       {
         "path": "kaannokset/en/alkuruoat/porkkana-omenaraaste.md",
         "sha256": "719c07e9129239e48eecd393d9c8da55c348b4a2762f3f63d38c0b27cdfecddc"
@@ -61,142 +83,45 @@
         "path": "reseptit/alkuruoat/porkkana-omenaraaste.md",
         "sha256": "069603f9c5af2a362cc6c7af3cd4f73f83fd8bf676383754e270e58081cdc21d"
       }
-    ],
-    "image": {
-      "path": "kuvat/alkuruoat/porkkana-omenaraaste.webp",
-      "bytes": 86444,
-      "sha256": "095837a0c42412b568254c12e4261f51712e0b9261e1a39afd08f4b1def2de1b",
-      "width": 960,
-      "height": 640,
-      "origin": "Tekoälyllä luotu havainnekuva"
-    },
-    "nutrition": {
-      "status": "COMPLETE_CALCULATION_CANDIDATE",
-      "calculation": {
-        "recipeId": "porkkana-omenaraaste",
-        "sourceHash": "e0358fc48ad61086a77ea2882a8124090896ea2e3d7c90df199bf1ff990351e6",
-        "calculatedAt": "2026-11-25",
-        "servings": 4,
-        "scope": "Yksi annos reseptin 4 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Laskentamalli sisältää kaikki kolme ainesosaa ilman hävikkivaihetta; kuorittu porkkana ja kuorineen punnittu omena ilman siemenkotaa.",
-        "reviewerStatus": "AUTOMATED ONLY",
-        "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
-        "ingredients": [
-          {
-            "item": "kuorittua porkkanaa",
-            "amount": 320,
-            "unit": "g",
-            "state": "kuorittua porkkanaa",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-300-release-20",
-              "name": "PORKKANA",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/300",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 5.56,
-                "fibre": 2.4,
-                "polyols": 0,
-                "protein": 0.63,
-                "fat": 0.2
-              },
-              "state": "kuorittua porkkanaa",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "hapanta omenaa kuorineen, ilman siemenkotaa",
-            "amount": 180,
-            "unit": "g",
-            "state": "hapanta omenaa kuorineen, ilman siemenkotaa",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-28941-release-20",
-              "name": "OMENA, KOTIMAINEN, KUORINEEN",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/28941",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 7.23,
-                "fibre": 1.566,
-                "polyols": 0,
-                "protein": 0.17,
-                "fat": 0.087
-              },
-              "state": "hapanta omenaa kuorineen, ilman siemenkotaa",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "sitruunamehua",
-            "amount": 18,
-            "unit": "g",
-            "state": "sitruunamehua",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-11557-release-20",
-              "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11557",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 1.6,
-                "fibre": 0.1,
-                "polyols": 0,
-                "protein": 0.31,
-                "fat": 0
-              },
-              "state": "sitruunamehua",
-              "retrievedAt": "2026-11-25"
-            }
-          }
-        ]
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/alkuruoat/porkkana-omenaraaste.md",
+        "language": "en",
+        "slug": "porkkana-omenaraaste-en",
+        "sha256": "b6db63e6b0defab8fbf63cdb4a8093685744751d770d748fbf3dd2dbdf3b4d82",
+        "semantic_sha256": "fe92ac1c9c71fe73b841e830260ad6acbbc0619367948e6b961e01e986022350"
       },
-      "preliminary_per_serving": {
-        "kcal": null,
-        "protein": 0.59,
-        "fat": 0.2,
-        "carbohydrate": 7.77,
-        "fibre": 2.63,
-        "sugars": null,
-        "polyols": 0,
-        "netCarbohydrate": 7.77
+      {
+        "path": "kaannokset/sv/alkuruoat/porkkana-omenaraaste.md",
+        "language": "sv",
+        "slug": "porkkana-omenaraaste-sv",
+        "sha256": "e854e2331003292a700b28e73f80a521962fd1e3ca76d0ca397bec444697a0f3",
+        "semantic_sha256": "dadbf0a632e2a52cee0cba1ae785dd760078519cf056dc8c78955e3e196d0463"
       },
-      "preliminary_total_carbohydrate_g": 10.4,
-      "possible_partial_fields": {
-        "netCarbohydrate": 7.77,
-        "protein": 0.59,
-        "fat": 0.2
+      {
+        "path": "kaannokset/th/alkuruoat/porkkana-omenaraaste.md",
+        "language": "th",
+        "slug": "porkkana-omenaraaste-th",
+        "sha256": "2ab6f4e13d462cb9d1b284b75472046150839cda8d4c7fa67ba32cfb583db9c1",
+        "semantic_sha256": "35a7aca053e454d4e6dce9c51b74c00ded2719b22dff9e1b73cda9cfd9ec2ce8"
       },
-      "limitations": "Laskentamalli sisältää kaikki kolme ainesosaa ilman hävikkivaihetta; kuorittu porkkana ja kuorineen punnittu omena ilman siemenkotaa.",
-      "issues": []
-    },
-    "glycemic": {
-      "decision": "UNREVIEWED_NO_RELIABLE_GK_CANDIDATE",
-      "reason": "Omenaa ja hienoksi raastettua raakaa porkkanaa vastaava annos- ja valmistuskohtainen GI-sidonta puuttuu.",
-      "value": null
-    },
-    "physical_cook_test": false
+      {
+        "path": "reseptit/alkuruoat/porkkana-omenaraaste.md",
+        "language": "fi",
+        "slug": "porkkana-omenaraaste",
+        "sha256": "a7dc4fe87e8f30495dad45765919947a47f12d2b142219a65c2a687cc7c5fa3d",
+        "semantic_sha256": "e177a7b7c9fdd5f15c947aa17a854f808ba01c164c4b4a4293c9c0813b17acc1"
+      }
+    ]
   }
 }

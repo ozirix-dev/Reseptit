@@ -2,49 +2,71 @@
   "schema_version": 1,
   "recipe_id": "perinteinen-rosolli",
   "source_path": "reseptit/alkuruoat/perinteinen-rosolli.md",
-  "source_sha256": "ed4ebc6bcdf6960ecf510170825b6cf753ccab99b805f7134854cb706fbc93d5",
-  "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "source_sha256": "cd17913c5ec965317bfc6549e56a053f4e4bbd7b04e0e73765664e6654f307b9",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
       "https://www.martat.fi/reseptit/rosolli/"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/perinteinen-rosolli.json",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Täsmälliset tunnisteet ja reitit verrataan mainiin ja tuotantoon. Lähin toimituksellinen vertailu kuuluu riippumattomaan sisältökatselmointiin."
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Vertaa raaka-ainemäärät ja -tilat, mukaan lukien vaihtoehdot ja allergeenit, alkuperäiseen valmistuslähteeseen ja kieliversioihin."
+      "status": "pass",
+      "notes": "Kypsät, jäähtyneet juurekset punnitaan käyttövalmiina. Maito on merkitty. Kylmäsäilytys alle +6 °C ja kastike erikseen."
     },
     "method": {
-      "status": "pending",
-      "notes": "Recipavon toimituksellinen sovitus. Kuvitus ei ole osoitus valmistuskokeesta."
+      "status": "pass",
+      "notes": "Kypsät, jäähtyneet juurekset punnitaan käyttövalmiina. Maito on merkitty. Kylmäsäilytys alle +6 °C ja kastike erikseen."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Tarkista reseptin kypsennys ja kylmäkäsittely sekä ainesosista ja tuotemerkinnöistä seuraavat allergeenit."
+      "status": "pass",
+      "notes": "Kypsät, jäähtyneet juurekset punnitaan käyttövalmiina. Maito on merkitty. Kylmäsäilytys alle +6 °C ja kastike erikseen. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "8 annosta / 50 min, reseptin rajauksin. Arvio."
+      "status": "pass",
+      "notes": "Kypsät, jäähtyneet juurekset punnitaan käyttövalmiina. Maito on merkitty. Kylmäsäilytys alle +6 °C ja kastike erikseen. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Valkopippurin kuitu ja polyolit puuttuvat. Annos sisältää kastikkeen. Maustekurkku on sokerisuolattu yleisviite."
+      "status": "pass",
+      "notes": "Julkaistaan vain sidotut kentät. Valkopippurin kuitu ja polyolit puuttuvat. Annos sisältää kastikkeen. Maustekurkku on sokerisuolattu yleisviite."
     },
     "glycemic": {
-      "status": "pending",
-      "notes": "Keitetyn ja jäähtyneen perunan lajike ja valmistus eivät vastaa varmennettua GI-sidontaa."
+      "status": "unavailable",
+      "notes": "Keitetyn ja jäähtyneen perunan lajike ja valmistus eivät vastaa varmennettua GI-sidontaa. GK jää määrittämättömäksi."
     }
   },
-  "candidate_review": {
-    "markdown": [
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/perinteinen-rosolli.webp",
+    "bytes": 108256,
+    "sha256": "07c53f340dcb00fd8cd23932e067cce6411883e682fd550043a54ae38575adf4",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
       {
         "path": "kaannokset/en/alkuruoat/perinteinen-rosolli.md",
         "sha256": "913568816a78bda659f843da5877896a1cd3b282ec590ad0191dcba1a635b886"
@@ -61,391 +83,45 @@
         "path": "reseptit/alkuruoat/perinteinen-rosolli.md",
         "sha256": "ed4ebc6bcdf6960ecf510170825b6cf753ccab99b805f7134854cb706fbc93d5"
       }
-    ],
-    "image": {
-      "path": "kuvat/alkuruoat/perinteinen-rosolli.webp",
-      "bytes": 108256,
-      "sha256": "07c53f340dcb00fd8cd23932e067cce6411883e682fd550043a54ae38575adf4",
-      "width": 960,
-      "height": 640,
-      "origin": "Tekoälyllä luotu havainnekuva"
-    },
-    "nutrition": {
-      "status": "PARTIAL_CANDIDATE",
-      "calculation": {
-        "recipeId": "perinteinen-rosolli",
-        "sourceHash": "a786a7d5b775f96225a8fd67945ca8053cfeba8e3d2ae925ad04eed7cd6f84b8",
-        "calculatedAt": "2026-11-25",
-        "servings": 8,
-        "scope": "Yksi annos reseptin 8 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Valkopippurin kuitu ja polyolit puuttuvat. Annos sisältää kastikkeen. Maustekurkku on sokerisuolattu yleisviite.",
-        "reviewerStatus": "AUTOMATED ONLY",
-        "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
-        "ingredients": [
-          {
-            "item": "keitettyjä ja kuorittuja perunoita",
-            "amount": 300,
-            "unit": "g",
-            "state": "keitettyjä ja kuorittuja perunoita",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-11511-release-20",
-              "name": "PERUNA, KUORITTU, KEITETTY, SUOLATON",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11511",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 15.5,
-                "fibre": 1.4,
-                "polyols": 0,
-                "protein": 1.88,
-                "fat": 0.114
-              },
-              "state": "keitettyjä ja kuorittuja perunoita",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "keitettyjä porkkanoita",
-            "amount": 250,
-            "unit": "g",
-            "state": "keitettyjä porkkanoita",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-29229-release-20",
-              "name": "PORKKANA, KEITETTY, SUOLATON",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29229",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 5.673,
-                "fibre": 2.449,
-                "polyols": 0,
-                "protein": 0.64,
-                "fat": 0.204
-              },
-              "state": "keitettyjä porkkanoita",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "keitettyjä, kuorittuja punajuuria (suolattomia ja valutettuja)",
-            "amount": 300,
-            "unit": "g",
-            "state": "keitettyjä, kuorittuja punajuuria (suolattomia ja valutettuja)",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-30382-release-20",
-              "name": "PUNAJUURI, KEITETTY, SUOLATON",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30382",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 8.163,
-                "fibre": 2.551,
-                "polyols": 0,
-                "protein": 1.43,
-                "fat": 0.102
-              },
-              "state": "keitettyjä, kuorittuja punajuuria (suolattomia ja valutettuja)",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "valutettua sokerisuolattua maustekurkkua",
-            "amount": 100,
-            "unit": "g",
-            "state": "valutettua sokerisuolattua maustekurkkua",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-348-release-20",
-              "name": "MAUSTEKURKKU, HERKKUKURKKU, SOKERISUOLATTU",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/348",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 3,
-                "fibre": 1.8,
-                "polyols": 0,
-                "protein": 0.69,
-                "fat": 0.1
-              },
-              "state": "valutettua sokerisuolattua maustekurkkua",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "hapanta omenaa kuorineen, ilman siemenkotaa",
-            "amount": 120,
-            "unit": "g",
-            "state": "hapanta omenaa kuorineen, ilman siemenkotaa",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-28941-release-20",
-              "name": "OMENA, KOTIMAINEN, KUORINEEN",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/28941",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 7.23,
-                "fibre": 1.566,
-                "polyols": 0,
-                "protein": 0.17,
-                "fat": 0.087
-              },
-              "state": "hapanta omenaa kuorineen, ilman siemenkotaa",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "punasipulia",
-            "amount": 60,
-            "unit": "g",
-            "state": "punasipulia",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-34234-release-20",
-              "name": "SIPULI, PUNASIPULI",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34234",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 5.447,
-                "fibre": 1.2,
-                "polyols": 0,
-                "protein": 1.506,
-                "fat": 0.114
-              },
-              "state": "punasipulia",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "kuohukermaa (rasvaa 35 %) kastikkeeseen",
-            "amount": 150,
-            "unit": "g",
-            "state": "kuohukermaa (rasvaa 35 %) kastikkeeseen",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-29066-release-20",
-              "name": "KERMA, KUOHUKERMA, RASVAA 35 %",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29066",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 3,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 2,
-                "fat": 35
-              },
-              "state": "kuohukermaa (rasvaa 35 %) kastikkeeseen",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "väkiviinaetikkaa kastikkeeseen",
-            "amount": 5,
-            "unit": "g",
-            "state": "väkiviinaetikkaa kastikkeeseen",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-933-release-20",
-              "name": "VÄKIVIINAETIKKA",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/933",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 0.5,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 0,
-                "fat": 0
-              },
-              "state": "väkiviinaetikkaa kastikkeeseen",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "sokeria kastikkeeseen",
-            "amount": 5,
-            "unit": "g",
-            "state": "sokeria kastikkeeseen",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-1-release-20",
-              "name": "SOKERI",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/1",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 99.9,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 0,
-                "fat": 0
-              },
-              "state": "sokeria kastikkeeseen",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "suolaa",
-            "amount": 3,
-            "unit": "g",
-            "state": "suolaa",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-79-release-20",
-              "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 0,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 0,
-                "fat": 0
-              },
-              "state": "suolaa",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "valkopippuria",
-            "amount": 0.5,
-            "unit": "g",
-            "state": "valkopippuria",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-11178-release-20",
-              "name": "VALKOPIPPURI",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11178",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": false,
-              "per100g": {
-                "carbohydrate": 42.41,
-                "fibre": null,
-                "polyols": null,
-                "protein": 10.4,
-                "fat": 2.1
-              },
-              "state": "valkopippuria",
-              "retrievedAt": "2026-11-25"
-            }
-          }
-        ]
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/alkuruoat/perinteinen-rosolli.md",
+        "language": "en",
+        "slug": "perinteinen-rosolli-en",
+        "sha256": "a3c100fef96a10a49d1e654e23053815e97a8ba317be5b5ca0e9383d878ca71b",
+        "semantic_sha256": "cce23c62ea3453ae262c8da674f24c446056690700f1ce7e6e0eee3c73221d5b"
       },
-      "preliminary_per_serving": {
-        "kcal": null,
-        "protein": 2.05,
-        "fat": 6.74,
-        "carbohydrate": 13.73,
-        "fibre": null,
-        "sugars": null,
-        "polyols": null,
-        "netCarbohydrate": null
+      {
+        "path": "kaannokset/sv/alkuruoat/perinteinen-rosolli.md",
+        "language": "sv",
+        "slug": "perinteinen-rosolli-sv",
+        "sha256": "7c99408db1264d914bff715a16f4ea6275312b466dafa6a5f234dd64f87c8017",
+        "semantic_sha256": "8a404b1ddb4bb315589edc17b9d1ea8710c2f4dcaec43db97b4d5271fce26dfd"
       },
-      "preliminary_total_carbohydrate_g": null,
-      "possible_partial_fields": {
-        "netCarbohydrate": 13.73,
-        "protein": 2.05,
-        "fat": 6.74
+      {
+        "path": "kaannokset/th/alkuruoat/perinteinen-rosolli.md",
+        "language": "th",
+        "slug": "perinteinen-rosolli-th",
+        "sha256": "d8b864f5cb1b692c86c3867e8f3f50b804ff531f7831d7361f713f77fbe7493d",
+        "semantic_sha256": "9ed517d69f0a176e1affe57ecf1814173aac844d779774ef575312bdb3471882"
       },
-      "limitations": "Valkopippurin kuitu ja polyolit puuttuvat. Annos sisältää kastikkeen. Maustekurkku on sokerisuolattu yleisviite.",
-      "issues": [
-        {
-          "ingredient": "valkopippuria",
-          "issues": [
-            "Unknown nutrient fibre",
-            "Unknown nutrient polyols",
-            "Unknown nutrient netCarbohydrate"
-          ],
-          "excluded": null
-        }
-      ]
-    },
-    "glycemic": {
-      "decision": "UNREVIEWED_NO_RELIABLE_GK_CANDIDATE",
-      "reason": "Keitetyn ja jäähtyneen perunan lajike ja valmistus eivät vastaa varmennettua GI-sidontaa.",
-      "value": null
-    },
-    "physical_cook_test": false
+      {
+        "path": "reseptit/alkuruoat/perinteinen-rosolli.md",
+        "language": "fi",
+        "slug": "perinteinen-rosolli",
+        "sha256": "cd17913c5ec965317bfc6549e56a053f4e4bbd7b04e0e73765664e6654f307b9",
+        "semantic_sha256": "34e4eec2ba40185e2575253b0b89b1740359f2123c203be567dca1bff0c855bc"
+      }
+    ]
   }
 }

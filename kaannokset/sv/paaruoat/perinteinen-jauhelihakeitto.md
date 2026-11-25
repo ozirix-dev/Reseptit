@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-jauhelihakeitto.md
 translation_of: perinteinen-jauhelihakeitto
-status: draft
+status: published
 servings: 6
 time_total_min: 60
 difficulty: "lätt"
@@ -25,6 +25,9 @@ image:
   alt: "En skål köttfärssoppa med potatis, rotfrukter, purjolök och persilja; AI-illustration"
   width: 960
   height: 640
+carbs_net_per_serving_g: 23.29
+protein_per_serving_g: 20.62
+fat_per_serving_g: 10.46
 ingredients:
   - amount: 500
     unit: "g"
@@ -70,10 +73,12 @@ En klassisk finsk vardagssoppa med potatis, rotfrukter och brynt köttfärs utan
 1. Skala och tärna potatis och rotfrukter. Hacka löken och skiva purjolöken. Väg grönsakerna efter skalning och ansning.
 2. Koka upp vatten och köttbuljongkoncentrat. Lägg i kålrot och morötter och sjud cirka 10 minuter.
 3. Tillsätt potatis och purjolök. Koka ytterligare cirka 15 minuter tills grönsakerna är mjuka.
-4. Bryn under tiden nötfärsen och löken i rybsolja. Genomstek färsen till minst 70 °C och lägg sedan i soppan.
+4. Bryn under tiden nötfärsen och löken i rapsolja. Genomstek färsen till minst 70 °C och häll sedan hela pannans innehåll i soppan.
 5. Låt sjuda 5 minuter, krydda med svartpeppar och tillsätt hackad persilja. Anpassa saltet efter buljongen.
 
 ## Anteckningar
 
 - Kontrollera allergener på förpackningarna; inget påstående om glutenfrihet har granskats.
 - Jämförelsekälla för tillagningen (inte kopierad): https://www.martat.fi/reseptit/jauhelihakeitto-10lle/
+
+- Tillgängliga näringsvärden per portion är uppskattningar utifrån ingredienserna.

@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/alkuruoat/sipulikeitto-juustoleivalla.md
 translation_of: sipulikeitto-juustoleivalla
-status: draft
+status: published
 servings: 4
 time_total_min: 70
 difficulty: "ง่าย"
@@ -19,6 +19,9 @@ image:
   alt: "ซุปหัวหอมในชามกับขนมปังอบชีส ภาพประกอบสร้างด้วยเอไอ"
   width: 960
   height: 640
+carbs_net_per_serving_g: 27.75
+protein_per_serving_g: 12.65
+fat_per_serving_g: 14.51
 ingredients:
   - amount: 650
     unit: g
@@ -57,3 +60,5 @@ ingredients:
 
 - มีข้าวสาลีและนม ตรวจฉลากน้ำซุปผัก
 - แหล่งอ้างอิงสำหรับเปรียบเทียบวิธีทำ: https://www.martat.fi/reseptit/suomalainen-sipulikeitto/
+
+- ข้อมูลโภชนาการที่แสดงเป็นค่าประมาณต่อหนึ่งที่จากส่วนผสม

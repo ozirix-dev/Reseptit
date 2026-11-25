@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/aamupalat/uuniohrapuuro-maitoon.md
 translation_of: uuniohrapuuro-maitoon
-status: draft
+status: published
 servings: 6
 time_total_min: 140
 difficulty: "ง่าย"
@@ -19,6 +19,10 @@ image:
   alt: "โจ๊กข้าวบาร์เลย์อบในถาด ภาพประกอบสร้างด้วยเอไอ"
   width: 960
   height: 640
+carbs_net_per_serving_g: 26.21
+carbs_total_per_serving_g: 28.11
+protein_per_serving_g: 8.6
+fat_per_serving_g: 6.19
 ingredients:
   - amount: 150
     unit: g
@@ -49,3 +53,6 @@ ingredients:
 
 - มีข้าวบาร์เลย์และนม เครื่องเคียงไม่ได้รวมอยู่ในสูตร
 - แหล่งอ้างอิงสำหรับเปรียบเทียบวิธีทำ: https://www.valio.fi/reseptit/luomu-uuniohrapuuro/
+
+- ข้อมูลโภชนาการต่อหนึ่งที่เป็นค่าประมาณจากส่วนผสม
+- ข้อมูลโภชนาการของข้าวบาร์เลย์อาจแตกต่างกันตามผลิตภัณฑ์

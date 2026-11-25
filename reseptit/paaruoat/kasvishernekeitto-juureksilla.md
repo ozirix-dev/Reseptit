@@ -4,7 +4,7 @@ recipe_id: kasvishernekeitto-juureksilla
 url_slug: kasvishernekeitto-juureksilla
 category: paaruoka
 language: fi
-status: draft
+status: published
 servings: 6
 time_total_min: 150
 difficulty: "helppo"
@@ -12,7 +12,7 @@ main_ingredient: ["herne", "porkkana", "palsternakka"]
 cooking_method: ["keitto"]
 tags: ["arkiruoka", "suomalainen"]
 translation_languages: [en, sv, th]
-translation_status: {en: draft, sv: draft, th: draft}
+translation_status: {en: published, sv: published, th: published}
 image:
   src: paaruoat/kasvishernekeitto-juureksilla.webp
   alt: "Kulhollinen vihreää hernekeittoa, jossa näkyy juureskuutioita; tekoälykuvitus"
@@ -56,3 +56,5 @@ Kuivatuista vihreistä herneistä keitetty ruokaisa keitto saa makeutta porkkana
 ## Muistiinpanot
 
 - Valmistuksen vertailulähde: https://www.martat.fi/reseptit/kasvishernekeitto/
+
+- Annoksen ravintoarvoja ei voitu määrittää luotettavasti.

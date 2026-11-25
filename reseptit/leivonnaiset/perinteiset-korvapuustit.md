@@ -8,7 +8,7 @@ main_ingredient:
 cooking_method:
   - "uuni"
 language: fi
-status: draft
+status: published
 servings: 30
 time_total_min: 150
 difficulty: "helppo"
@@ -65,9 +65,9 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 ---
 
 # Perinteiset korvapuustit
@@ -86,3 +86,5 @@ Perinteinen suomalainen kotikeittiön resepti.
 
 - Sisältää vehnää, maitoa ja kananmunaa.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/korvapuustit/
+
+- Annoksen ravintoarvoja ei voitu määrittää luotettavasti.

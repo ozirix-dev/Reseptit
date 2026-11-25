@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/alkuruoat/paahdetut-juurekset-timjamilla.md
 translation_of: paahdetut-juurekset-timjamilla
-status: draft
+status: published
 servings: 4
 time_total_min: 45
 difficulty: "easy"
@@ -19,6 +19,8 @@ image:
   alt: "A tray of roasted carrot, swede and parsnip pieces; AI illustration"
   width: 960
   height: 640
+carbs_net_per_serving_g: 13.07
+protein_per_serving_g: 1.73
 ingredients:
   - amount: 300
     unit: g
@@ -53,3 +55,5 @@ This swede-based side dish roasts with carrots and parsnips and has no potatoes.
 ## Notes
 
 - Method reference: https://www.martat.fi/reseptit/uunissa-paahdetut-juurekset/
+
+- Available nutrition values are ingredient-based estimates per serving.

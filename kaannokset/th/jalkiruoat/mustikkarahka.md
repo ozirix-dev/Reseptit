@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/jalkiruoat/mustikkarahka.md
 translation_of: mustikkarahka
-status: draft
+status: published
 servings: 4
 time_total_min: 15
 difficulty: "ง่าย"
@@ -19,6 +19,9 @@ image:
   alt: "ควาร์กสีม่วงกับบิลเบอร์รีทั้งผลในแก้ว ภาพประกอบสร้างด้วยเอไอ"
   width: 960
   height: 640
+carbs_net_per_serving_g: 14.22
+protein_per_serving_g: 9.04
+fat_per_serving_g: 0.93
 ingredients:
   - amount: 220
     unit: g
@@ -45,3 +48,5 @@ ingredients:
 
 - มีนม หากใช้เบอร์รีแช่แข็งนำเข้า ให้อุ่นให้ทั่วที่ 90 °C อย่างน้อย 5 นาที หรือต้มเดือด 2 นาที แล้วพักให้เย็นก่อนผสม
 - แหล่งอ้างอิงสำหรับเปรียบเทียบวิธีทำ: https://www.martat.fi/reseptit/marjarahka/
+
+- ข้อมูลโภชนาการที่แสดงเป็นค่าประมาณต่อหนึ่งที่จากส่วนผสม

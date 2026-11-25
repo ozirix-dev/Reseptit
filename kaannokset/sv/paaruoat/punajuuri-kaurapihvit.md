@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/punajuuri-kaurapihvit.md
 translation_of: punajuuri-kaurapihvit
-status: draft
+status: published
 servings: 4
 time_total_min: 45
 difficulty: "lätt"
@@ -54,3 +54,5 @@ Kokta rödbetor ger biffarna färg och havregrynen binder smeten. Receptet ger c
 
 - Innehåller havre och ägg.
 - Jämförelsekälla för tillagningen: https://www.martat.fi/reseptit/kauraiset-kasvispihvit/
+
+- Det gick inte att fastställa tillförlitliga näringsvärden per portion.

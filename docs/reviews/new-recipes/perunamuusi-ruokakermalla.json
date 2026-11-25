@@ -2,49 +2,71 @@
   "schema_version": 1,
   "recipe_id": "perunamuusi-ruokakermalla",
   "source_path": "reseptit/alkuruoat/perunamuusi-ruokakermalla.md",
-  "source_sha256": "c53b110b54a7692845598c916ab675da71ba7459604f23e2ea0c54d25e40d18e",
-  "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "source_sha256": "0a20d878a3a3d7f7ad75bb28cde32b22477cc86e6df4e877f215597e474aa16c",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
       "https://www.valio.fi/reseptit/perunamuusi-ruokakermalla/"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/perunamuusi-ruokakermalla.json",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Täsmälliset tunnisteet ja reitit verrataan mainiin ja tuotantoon. Lähin toimituksellinen vertailu kuuluu riippumattomaan sisältökatselmointiin."
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Vertaa raaka-ainemäärät ja -tilat, mukaan lukien vaihtoehdot ja allergeenit, alkuperäiseen valmistuslähteeseen ja kieliversioihin."
+      "status": "pass",
+      "notes": "Jauhoinen peruna keitetään, valutetaan ja survotaan lämpimän ruokakerman kanssa. Maito ilmoitetaan."
     },
     "method": {
-      "status": "pending",
-      "notes": "Recipavon toimituksellinen sovitus. Kuvitus ei ole osoitus valmistuskokeesta."
+      "status": "pass",
+      "notes": "Jauhoinen peruna keitetään, valutetaan ja survotaan lämpimän ruokakerman kanssa. Maito ilmoitetaan."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Tarkista reseptin kypsennys ja kylmäkäsittely sekä ainesosista ja tuotemerkinnöistä seuraavat allergeenit."
+      "status": "pass",
+      "notes": "Jauhoinen peruna keitetään, valutetaan ja survotaan lämpimän ruokakerman kanssa. Maito ilmoitetaan. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "6 annosta / 35 min, reseptin rajauksin. Arvio."
+      "status": "pass",
+      "notes": "Jauhoinen peruna keitetään, valutetaan ja survotaan lämpimän ruokakerman kanssa. Maito ilmoitetaan. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Ruokakerman EU-tuotetieto ei erittele kuitua ja polyoleja. Raakapainosta tehty arvio ei määrällistä keitinveden hävikkiä."
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Ruokakerman EU-tuotetieto ei erittele kuitua ja polyoleja. Raakapainosta tehty arvio ei määrällistä keitinveden hävikkiä."
     },
     "glycemic": {
-      "status": "pending",
-      "notes": "Jauhoisen perunan lajiketta, survausta ja kermaa vastaavaa GI-tietuetta ei ole sidottu."
+      "status": "unavailable",
+      "notes": "Jauhoisen perunan lajiketta, survausta ja kermaa vastaavaa GI-tietuetta ei ole sidottu. GK jää määrittämättömäksi."
     }
   },
-  "candidate_review": {
-    "markdown": [
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/perunamuusi-ruokakermalla.webp",
+    "bytes": 55116,
+    "sha256": "630884cc221de07206f8540de4995a8bf251e1982730ebb2c1047cb106f27243",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
       {
         "path": "kaannokset/en/alkuruoat/perunamuusi-ruokakermalla.md",
         "sha256": "e04e083a391b6d1f0efab16415e19519daf46ab1e435334973d8236731114670"
@@ -61,154 +83,45 @@
         "path": "reseptit/alkuruoat/perunamuusi-ruokakermalla.md",
         "sha256": "c53b110b54a7692845598c916ab675da71ba7459604f23e2ea0c54d25e40d18e"
       }
-    ],
-    "image": {
-      "path": "kuvat/alkuruoat/perunamuusi-ruokakermalla.webp",
-      "bytes": 55116,
-      "sha256": "630884cc221de07206f8540de4995a8bf251e1982730ebb2c1047cb106f27243",
-      "width": 960,
-      "height": 640,
-      "origin": "Tekoälyllä luotu havainnekuva"
-    },
-    "nutrition": {
-      "status": "PARTIAL_CANDIDATE",
-      "calculation": {
-        "recipeId": "perunamuusi-ruokakermalla",
-        "sourceHash": "47d1750d7dba3dc66f7a6d82b1f1ea07cdb5e1b8aec3fa615359b65ea73db65e",
-        "calculatedAt": "2026-11-25",
-        "servings": 6,
-        "scope": "Yksi annos reseptin 6 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Ruokakerman EU-tuotetieto ei erittele kuitua ja polyoleja. Raakapainosta tehty arvio ei määrällistä keitinveden hävikkiä.",
-        "reviewerStatus": "AUTOMATED ONLY",
-        "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
-        "ingredients": [
-          {
-            "item": "kuorittuja jauhoisia perunoita",
-            "amount": 1000,
-            "unit": "g",
-            "state": "kuorittuja jauhoisia perunoita",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-205-release-20",
-              "name": "PERUNA, VANHA, KUORITTU",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/205",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 15.5,
-                "fibre": 1.4,
-                "polyols": 0,
-                "protein": 1.88,
-                "fat": 0.114
-              },
-              "state": "kuorittuja jauhoisia perunoita",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "ruokakermaa (rasvaa 10 %)",
-            "amount": 250,
-            "unit": "g",
-            "state": "ruokakermaa (rasvaa 10 %)",
-            "matchEvidence": "Vertaile ainesosaan nimettyä esimerkkituotetta ja ilmoitusperustaa.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "valio-6408430014415",
-              "name": "Valio Keittiön ruokakerma 10 % laktoositon",
-              "sourceUrl": "https://www.valio.fi/tuotteet/valio-keittion-ruokakerma-10-laktoositon/",
-              "per100g": {
-                "kcal": 119,
-                "carbohydrate": 5.6,
-                "sugars": 2.5,
-                "protein": 1.7,
-                "fat": 10,
-                "fibre": null,
-                "polyols": null
-              },
-              "licence": "Valmistajan tai tuotemerkin julkinen tuotetieto.",
-              "basis": "per100g-as-sold",
-              "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
-              "polyolsSourceVerified": false,
-              "state": "ruokakermaa (rasvaa 10 %)",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "suolaa",
-            "amount": 4,
-            "unit": "g",
-            "state": "suolaa",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-79-release-20",
-              "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 0,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 0,
-                "fat": 0
-              },
-              "state": "suolaa",
-              "retrievedAt": "2026-11-25"
-            }
-          }
-        ]
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/alkuruoat/perunamuusi-ruokakermalla.md",
+        "language": "en",
+        "slug": "perunamuusi-ruokakermalla-en",
+        "sha256": "e881fecf0a555bcb4969426a4175c43635659ccc4b758d05c910ba1dc880e8fd",
+        "semantic_sha256": "c2affa3953eeb664d3df35e9928e003a0a9a2b4b8f7936c852018fa6c346591a"
       },
-      "preliminary_per_serving": {
-        "kcal": null,
-        "protein": 3.84,
-        "fat": 4.36,
-        "carbohydrate": null,
-        "fibre": null,
-        "sugars": null,
-        "polyols": null,
-        "netCarbohydrate": null
+      {
+        "path": "kaannokset/sv/alkuruoat/perunamuusi-ruokakermalla.md",
+        "language": "sv",
+        "slug": "perunamuusi-ruokakermalla-sv",
+        "sha256": "dff673210d5969fe239529ece0da4023ecd66715dfaa9022a0a6ffd56e2462ed",
+        "semantic_sha256": "f1bfeb6436e487384b0fa5ef8a1a64c5e10c317446639f63345b897aa9b77e4b"
       },
-      "preliminary_total_carbohydrate_g": null,
-      "possible_partial_fields": {
-        "netCarbohydrate": null,
-        "protein": 3.84,
-        "fat": 4.36
+      {
+        "path": "kaannokset/th/alkuruoat/perunamuusi-ruokakermalla.md",
+        "language": "th",
+        "slug": "perunamuusi-ruokakermalla-th",
+        "sha256": "b02cc7630fa15f7bbcae4d2ee1ae85c52aa59d749c7eb85b3b4d49ddc5af4638",
+        "semantic_sha256": "69653756c1ce7527d6515ef026bd876deded7f91f7194e93b4fe5946a4ce65b0"
       },
-      "limitations": "Ruokakerman EU-tuotetieto ei erittele kuitua ja polyoleja. Raakapainosta tehty arvio ei määrällistä keitinveden hävikkiä.",
-      "issues": [
-        {
-          "ingredient": "ruokakermaa (rasvaa 10 %)",
-          "issues": [
-            "Unknown nutrient carbohydrate",
-            "Unknown nutrient fibre",
-            "Unknown nutrient polyols",
-            "Unknown nutrient netCarbohydrate"
-          ],
-          "excluded": null
-        }
-      ]
-    },
-    "glycemic": {
-      "decision": "UNREVIEWED_NO_RELIABLE_GK_CANDIDATE",
-      "reason": "Jauhoisen perunan lajiketta, survausta ja kermaa vastaavaa GI-tietuetta ei ole sidottu.",
-      "value": null
-    },
-    "physical_cook_test": false
+      {
+        "path": "reseptit/alkuruoat/perunamuusi-ruokakermalla.md",
+        "language": "fi",
+        "slug": "perunamuusi-ruokakermalla",
+        "sha256": "0a20d878a3a3d7f7ad75bb28cde32b22477cc86e6df4e877f215597e474aa16c",
+        "semantic_sha256": "0decf02aedb9a9049a7dfc436f04085af8b3f404d82a90e7c3dbc8aa28e0bd8a"
+      }
+    ]
   }
 }

@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/alkuruoat/perinteinen-rosolli.md
 translation_of: perinteinen-rosolli
-status: draft
+status: published
 servings: 8
 time_total_min: 50
 difficulty: "ง่าย"
@@ -24,6 +24,9 @@ image:
   alt: "สลัดโรซอลลีหั่นเต๋าในชาม มีซอสครีมสีชมพูเสิร์ฟแยก ภาพประกอบสร้างด้วยเอไอ"
   width: 960
   height: 640
+carbs_net_per_serving_g: 13.73
+protein_per_serving_g: 2.05
+fat_per_serving_g: 6.74
 ingredients:
   - amount: 300
     unit: "g"
@@ -77,3 +80,5 @@ ingredients:
 - แหล่งข้อมูลที่ใช้เปรียบเทียบวิธีทำ (ไม่ได้คัดลอก): https://www.martat.fi/reseptit/rosolli/
 
 - เวลา 50 นาทีใช้กับผักหัวที่ต้มสุกและเย็นแล้ว หากใช้บีตรูตดิบต้องเผื่อเวลาเพิ่มสำหรับการต้มและทำให้เย็นอย่างรวดเร็ว ซอสครีมมีนม ใช้ครีมเย็นและอุปกรณ์สะอาด
+
+- ข้อมูลโภชนาการที่แสดงเป็นค่าประมาณต่อหนึ่งที่จากส่วนผสม

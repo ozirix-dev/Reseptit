@@ -4,7 +4,7 @@ recipe_id: uuniperunat-raejuusto-hernetaytteella
 url_slug: uuniperunat-raejuusto-hernetaytteella
 category: paaruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 80
 difficulty: "helppo"
@@ -12,7 +12,7 @@ main_ingredient: ["peruna", "raejuusto", "herne"]
 cooking_method: ["uuni"]
 tags: ["arkiruoka", "suomalainen"]
 translation_languages: [en, sv, th]
-translation_status: {en: draft, sv: draft, th: draft}
+translation_status: {en: published, sv: published, th: published}
 image:
   src: paaruoat/uuniperunat-raejuusto-hernetaytteella.webp
   alt: "Halkaistu uuniperuna, jossa on raejuusto-hernetäytettä; tekoälykuvitus"
@@ -57,3 +57,5 @@ Pehmeän uuniperunan täytteeksi lusikoidaan raejuustoa, kypsiä herneitä, till
 
 - Täyte sisältää maitoa. Yksi annos on yksi peruna ja neljännes täytteestä.
 - Valmistuksen vertailulähde: https://www.martat.fi/reseptit/uuniperunat-ja-jarvikalatayte/
+
+- Annoksen ravintoarvoja ei voitu määrittää luotettavasti.

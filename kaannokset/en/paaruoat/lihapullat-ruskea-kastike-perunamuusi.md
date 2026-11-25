@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md
 translation_of: lihapullat-ruskea-kastike-perunamuusi
-status: draft
+status: published
 servings: 4
 time_total_min: 70
 difficulty: "easy"
@@ -81,3 +81,5 @@ This is a traditional Finnish home-cooking recipe.
 
 - Contains milk, egg and wheat. Check the labels of the breadcrumbs and any stock you use.
 - https://www.martat.fi/reseptit/lihapullat-haudutetut-valkosipuliperunat-ja-ruskea-kastike/
+
+- Reliable nutrition values could not be determined for one serving.

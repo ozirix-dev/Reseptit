@@ -2,10 +2,10 @@
   "schema_version": 1,
   "recipe_id": "perinteinen-porkkanalaatikko",
   "source_path": "reseptit/paaruoat/perinteinen-porkkanalaatikko.md",
-  "source_sha256": "312ff037c2670e2b2b83a6f1e55b2b0b67bade7058639c6a93feb6087a178798",
-  "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "source_sha256": "1ca42b728204c362e027650546496eaa80782e0cc6981bd20ecde38b24c18a8e",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
@@ -13,39 +13,61 @@
       "https://www.k-ruoka.fi/reseptit/porkkanalaatikko-soseesta"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/perinteinen-porkkanalaatikko.json",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Täsmälliset tunnisteet ja reitit verrataan mainiin ja tuotantoon. Lähin toimituksellinen vertailu kuuluu riippumattomaan sisältökatselmointiin."
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Vertaa raaka-ainemäärät ja -tilat, mukaan lukien vaihtoehdot ja allergeenit, alkuperäiseen valmistuslähteeseen ja kieliversioihin."
+      "status": "pass",
+      "notes": "Porkkanasose ja riisipuuro yhdistetään ja kypsennetään, kunnes keskusta on hyytynyt. Muna ja maito ilmoitetaan."
     },
     "method": {
-      "status": "pending",
-      "notes": "Recipavon toimituksellinen sovitus. Kuvitus ei ole osoitus valmistuskokeesta."
+      "status": "pass",
+      "notes": "Porkkanasose ja riisipuuro yhdistetään ja kypsennetään, kunnes keskusta on hyytynyt. Muna ja maito ilmoitetaan."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Tarkista reseptin kypsennys ja kylmäkäsittely sekä ainesosista ja tuotemerkinnöistä seuraavat allergeenit."
+      "status": "pass",
+      "notes": "Porkkanasose ja riisipuuro yhdistetään ja kypsennetään, kunnes keskusta on hyytynyt. Muna ja maito ilmoitetaan. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "8 annosta / 165 min, reseptin rajauksin. Arvio."
+      "status": "pass",
+      "notes": "Porkkanasose ja riisipuuro yhdistetään ja kypsennetään, kunnes keskusta on hyytynyt. Muna ja maito ilmoitetaan. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Puuroriisin polyolit ja muskottipähkinän lähdetietue puuttuvat. Keitetyn porkkanan valumahävikkiä ei määrällistetty."
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Puuroriisin polyolit ja muskottipähkinän lähdetietue puuttuvat. Keitetyn porkkanan valumahävikkiä ei määrällistetty."
     },
     "glycemic": {
-      "status": "pending",
-      "notes": "Maitoon haudutetun ja sen jälkeen paistetun riisin GI-vastaavuus puuttuu."
+      "status": "unavailable",
+      "notes": "Maitoon haudutetun ja sen jälkeen paistetun riisin GI-vastaavuus puuttuu. GK jää määrittämättömäksi."
     }
   },
-  "candidate_review": {
-    "markdown": [
+  "image_evidence": {
+    "path": "kuvat/paaruoat/perinteinen-porkkanalaatikko.webp",
+    "bytes": 104084,
+    "sha256": "c849066bafc3cb4e48776f1024abe4e3c64bc526b3696b91582309672b979305",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
       {
         "path": "kaannokset/en/paaruoat/perinteinen-porkkanalaatikko.md",
         "sha256": "919cc328b5a1a2615338ac8cba9f338137fc052d417b0c90fc762c1e564f36d4"
@@ -62,318 +84,45 @@
         "path": "reseptit/paaruoat/perinteinen-porkkanalaatikko.md",
         "sha256": "312ff037c2670e2b2b83a6f1e55b2b0b67bade7058639c6a93feb6087a178798"
       }
-    ],
-    "image": {
-      "path": "kuvat/paaruoat/perinteinen-porkkanalaatikko.webp",
-      "bytes": 104084,
-      "sha256": "c849066bafc3cb4e48776f1024abe4e3c64bc526b3696b91582309672b979305",
-      "width": 960,
-      "height": 640,
-      "origin": "Tekoälyllä luotu havainnekuva"
-    },
-    "nutrition": {
-      "status": "WITHHOLD_CANDIDATE",
-      "calculation": {
-        "recipeId": "perinteinen-porkkanalaatikko",
-        "sourceHash": "8eae740a10003593f743cc7a770af90d7266e1792da4ab86158b5eff09927b17",
-        "calculatedAt": "2026-11-25",
-        "servings": 8,
-        "scope": "Yksi annos reseptin 8 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Puuroriisin polyolit ja muskottipähkinän lähdetietue puuttuvat. Keitetyn porkkanan valumahävikkiä ei määrällistetty.",
-        "reviewerStatus": "AUTOMATED ONLY",
-        "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
-        "ingredients": [
-          {
-            "item": "porkkanoita kuorittuna",
-            "amount": 1000,
-            "unit": "g",
-            "state": "porkkanoita kuorittuna",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-300-release-20",
-              "name": "PORKKANA",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/300",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 5.56,
-                "fibre": 2.4,
-                "polyols": 0,
-                "protein": 0.63,
-                "fat": 0.2
-              },
-              "state": "porkkanoita kuorittuna",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "kuivaa puuroriisiä",
-            "amount": 120,
-            "unit": "g",
-            "state": "kuivaa puuroriisiä",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-156-release-20",
-              "name": "RIISI PUUROUTUVA",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/156",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": false,
-              "per100g": {
-                "carbohydrate": 75.6,
-                "fibre": 2.3,
-                "polyols": null,
-                "protein": 6.06,
-                "fat": 0.7
-              },
-              "state": "kuivaa puuroriisiä",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "vettä riisin keittämiseen",
-            "amount": 300,
-            "unit": "ml",
-            "state": "vettä riisin keittämiseen",
-            "gramsPerUnit": 1,
-            "conversionEvidence": "Fineli 922, tuotekohtainen DL-annospaino 100 g/100 ml.",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-922-release-20",
-              "name": "VESI, VESIJOHTOVESI",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 0,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 0,
-                "fat": 0
-              },
-              "state": "vettä riisin keittämiseen",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "täysmaitoa",
-            "amount": 400,
-            "unit": "ml",
-            "state": "täysmaitoa",
-            "gramsPerUnit": 1,
-            "conversionEvidence": "Fineli 689, tuotekohtainen DL-annospaino 100 g/100 ml.",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-689-release-20",
-              "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/689",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 4.8,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 3,
-                "fat": 3.5
-              },
-              "state": "täysmaitoa",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "kananmuna",
-            "amount": 1,
-            "unit": "kpl",
-            "state": "kananmuna",
-            "gramsPerUnit": 55,
-            "conversionEvidence": "Fineli 858, keskikokoinen syötävä kappale 55 g.",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-858-release-20",
-              "name": "KANANMUNA, KUORETON",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 0.3,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 12.61,
-                "fat": 9.24
-              },
-              "state": "kananmuna",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "siirappia",
-            "amount": 25,
-            "unit": "g",
-            "state": "siirappia",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-3-release-20",
-              "name": "SIIRAPPI",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/3",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 74.1,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 0.1,
-                "fat": 0
-              },
-              "state": "siirappia",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "voita",
-            "amount": 30,
-            "unit": "g",
-            "state": "voita",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-500-release-20",
-              "name": "VOI",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 0.8,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 1.19,
-                "fat": 81.3
-              },
-              "state": "voita",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "suolaa",
-            "amount": 6,
-            "unit": "g",
-            "state": "suolaa",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-79-release-20",
-              "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 0,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 0,
-                "fat": 0
-              },
-              "state": "suolaa",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "jauhettua muskottipähkinää",
-            "amount": 0.5,
-            "unit": "g",
-            "state": "jauhettua muskottipähkinää",
-            "excludedReason": "Jauhetun muskottipähkinän ravintotietuetta ei varmistettu."
-          }
-        ]
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/perinteinen-porkkanalaatikko.md",
+        "language": "en",
+        "slug": "perinteinen-porkkanalaatikko-en",
+        "sha256": "93797a6d73cc7c64821df45e36f2d0e086b6a7483a96a4bae0cdfd31d88fbcaa",
+        "semantic_sha256": "8e3130f0dec21479b855bddf5fccee4d60180db99af52cd807b7cfaa1377f09e"
       },
-      "preliminary_per_serving": {
-        "kcal": null,
-        "protein": 4.11,
-        "fat": 5.79,
-        "carbohydrate": 23.06,
-        "fibre": 3.35,
-        "sugars": null,
-        "polyols": null,
-        "netCarbohydrate": null
+      {
+        "path": "kaannokset/sv/paaruoat/perinteinen-porkkanalaatikko.md",
+        "language": "sv",
+        "slug": "perinteinen-porkkanalaatikko-sv",
+        "sha256": "8514830b4d1d846d1b305d2bb60a5817a87a429f13a23b131e6abdfda5944fd9",
+        "semantic_sha256": "298340c6fdacd46fece22df9c2c444da0505c37219dabcc96d1bd3105de0c1fa"
       },
-      "preliminary_total_carbohydrate_g": null,
-      "possible_partial_fields": {
-        "netCarbohydrate": 23.06,
-        "protein": 4.11,
-        "fat": 5.79
+      {
+        "path": "kaannokset/th/paaruoat/perinteinen-porkkanalaatikko.md",
+        "language": "th",
+        "slug": "perinteinen-porkkanalaatikko-th",
+        "sha256": "977325bbfe1aee0ca6dc0c0384c76c1357947034229f6434f6854eca9f8c8bce",
+        "semantic_sha256": "5998e436eb30c0d668702bfb464c29b1ae0867ac63cd287940054da3012610f1"
       },
-      "limitations": "Puuroriisin polyolit ja muskottipähkinän lähdetietue puuttuvat. Keitetyn porkkanan valumahävikkiä ei määrällistetty.",
-      "issues": [
-        {
-          "ingredient": "kuivaa puuroriisiä",
-          "issues": [
-            "Unknown nutrient polyols",
-            "Unknown nutrient netCarbohydrate"
-          ],
-          "excluded": null
-        },
-        {
-          "ingredient": "jauhettua muskottipähkinää",
-          "issues": [],
-          "excluded": "Jauhetun muskottipähkinän ravintotietuetta ei varmistettu."
-        }
-      ]
-    },
-    "glycemic": {
-      "decision": "UNREVIEWED_NO_RELIABLE_GK_CANDIDATE",
-      "reason": "Maitoon haudutetun ja sen jälkeen paistetun riisin GI-vastaavuus puuttuu.",
-      "value": null
-    },
-    "physical_cook_test": false
+      {
+        "path": "reseptit/paaruoat/perinteinen-porkkanalaatikko.md",
+        "language": "fi",
+        "slug": "perinteinen-porkkanalaatikko",
+        "sha256": "1ca42b728204c362e027650546496eaa80782e0cc6981bd20ecde38b24c18a8e",
+        "semantic_sha256": "cd3f2ccc09861e3619c82a783280384bcd4f9c4215d0ff0aafe17eb038fd6923"
+      }
+    ]
   }
 }

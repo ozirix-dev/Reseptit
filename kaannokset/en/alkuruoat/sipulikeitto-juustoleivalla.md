@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/alkuruoat/sipulikeitto-juustoleivalla.md
 translation_of: sipulikeitto-juustoleivalla
-status: draft
+status: published
 servings: 4
 time_total_min: 70
 difficulty: "easy"
@@ -19,6 +19,9 @@ image:
   alt: "A bowl of onion soup topped with melted cheese toast; AI illustration"
   width: 960
   height: 640
+carbs_net_per_serving_g: 27.75
+protein_per_serving_g: 12.65
+fat_per_serving_g: 14.51
 ingredients:
   - amount: 650
     unit: g
@@ -57,3 +60,5 @@ Slow-softened onions sweeten the broth. Top each bowl with toast melted with Emm
 
 - Contains wheat and milk. Check the stock label.
 - Method reference: https://www.martat.fi/reseptit/suomalainen-sipulikeitto/
+
+- Available nutrition values are ingredient-based estimates per serving.

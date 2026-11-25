@@ -12,7 +12,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-porkkanalaatikko.md
 translation_of: perinteinen-porkkanalaatikko
-status: draft
+status: published
 servings: 8
 time_total_min: 165
 difficulty: "easy"
@@ -69,3 +69,5 @@ A traditional Finnish home cooking recipe.
 
 - Contains milk and egg.
 - Comparison sources (different recipe versions): https://www.martat.fi/reseptit/porkkanalaatikko/ ja / and https://www.k-ruoka.fi/reseptit/porkkanalaatikko-soseesta
+
+- Reliable nutrition values could not be determined for one serving.

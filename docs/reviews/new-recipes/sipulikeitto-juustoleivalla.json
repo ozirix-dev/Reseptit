@@ -2,49 +2,71 @@
   "schema_version": 1,
   "recipe_id": "sipulikeitto-juustoleivalla",
   "source_path": "reseptit/alkuruoat/sipulikeitto-juustoleivalla.md",
-  "source_sha256": "ab7f8f7948ec47ec672f3bf1a8de21fa99a0d31ae450551bbacccc5a2f64744b",
-  "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "source_sha256": "87e14b9f494bddc5e4dc53b5142f2e8619ddff842a6641348f8d7937843c1d07",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
       "https://www.martat.fi/reseptit/suomalainen-sipulikeitto/"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/sipulikeitto-juustoleivalla.json",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Täsmälliset tunnisteet ja reitit verrataan mainiin ja tuotantoon. Lähin toimituksellinen vertailu kuuluu riippumattomaan sisältökatselmointiin."
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Vertaa raaka-ainemäärät ja -tilat, mukaan lukien vaihtoehdot ja allergeenit, alkuperäiseen valmistuslähteeseen ja kieliversioihin."
+      "status": "pass",
+      "notes": "Liemi ja yksi juustoleipä per annos. Emmental 27–30 %, mahdolliset liemiallergeenit tarkistetaan pakkauksesta. Vehnä ja maito merkitty."
     },
     "method": {
-      "status": "pending",
-      "notes": "Recipavon toimituksellinen sovitus. Kuvitus ei ole osoitus valmistuskokeesta."
+      "status": "pass",
+      "notes": "Liemi ja yksi juustoleipä per annos. Emmental 27–30 %, mahdolliset liemiallergeenit tarkistetaan pakkauksesta. Vehnä ja maito merkitty."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Tarkista reseptin kypsennys ja kylmäkäsittely sekä ainesosista ja tuotemerkinnöistä seuraavat allergeenit."
+      "status": "pass",
+      "notes": "Liemi ja yksi juustoleipä per annos. Emmental 27–30 %, mahdolliset liemiallergeenit tarkistetaan pakkauksesta. Vehnä ja maito merkitty. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "4 annosta / 70 min, reseptin rajauksin. Arvio."
+      "status": "pass",
+      "notes": "Liemi ja yksi juustoleipä per annos. Emmental 27–30 %, mahdolliset liemiallergeenit tarkistetaan pakkauksesta. Vehnä ja maito merkitty. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Mustapippurin kuitu ja polyolit puuttuvat. Liemi ja vaalea leipä ovat yleisiä Fineli-viitteitä."
+      "status": "pass",
+      "notes": "Julkaistaan vain sidotut kentät. Mustapippurin kuitu ja polyolit puuttuvat. Liemi ja vaalea leipä ovat yleisiä Fineli-viitteitä."
     },
     "glycemic": {
-      "status": "pending",
-      "notes": "Leivän tuotetta, paahtokäsittelyä ja keittoannosta vastaava GI-sidonta puuttuu."
+      "status": "unavailable",
+      "notes": "Leivän tuotetta, paahtokäsittelyä ja keittoannosta vastaava GI-sidonta puuttuu. GK jää määrittämättömäksi."
     }
   },
-  "candidate_review": {
-    "markdown": [
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/sipulikeitto-juustoleivalla.webp",
+    "bytes": 112508,
+    "sha256": "f273214c0df39f70ac3953a927e992f1a633cc689ebd878715690238bef19aa2",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
       {
         "path": "kaannokset/en/alkuruoat/sipulikeitto-juustoleivalla.md",
         "sha256": "de01f454376098f521386ba7427415375a3cb54c4036d34442d9827719d6a788"
@@ -61,271 +83,45 @@
         "path": "reseptit/alkuruoat/sipulikeitto-juustoleivalla.md",
         "sha256": "ab7f8f7948ec47ec672f3bf1a8de21fa99a0d31ae450551bbacccc5a2f64744b"
       }
-    ],
-    "image": {
-      "path": "kuvat/alkuruoat/sipulikeitto-juustoleivalla.webp",
-      "bytes": 112508,
-      "sha256": "f273214c0df39f70ac3953a927e992f1a633cc689ebd878715690238bef19aa2",
-      "width": 960,
-      "height": 640,
-      "origin": "Tekoälyllä luotu havainnekuva"
-    },
-    "nutrition": {
-      "status": "PARTIAL_CANDIDATE",
-      "calculation": {
-        "recipeId": "sipulikeitto-juustoleivalla",
-        "sourceHash": "9ec27ad6bb1b7ae0371693351ebda28f6687e590a07cdaf449517ebfa2bd5c89",
-        "calculatedAt": "2026-11-25",
-        "servings": 4,
-        "scope": "Yksi annos reseptin 4 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Mustapippurin kuitu ja polyolit puuttuvat. Liemi ja vaalea leipä ovat yleisiä Fineli-viitteitä.",
-        "reviewerStatus": "AUTOMATED ONLY",
-        "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
-        "ingredients": [
-          {
-            "item": "kuorittua keltasipulia",
-            "amount": 650,
-            "unit": "g",
-            "state": "kuorittua keltasipulia",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-335-release-20",
-              "name": "SIPULI, KELTASIPULI",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 4.8,
-                "fibre": 1.2,
-                "polyols": 0,
-                "protein": 1.25,
-                "fat": 0.1
-              },
-              "state": "kuorittua keltasipulia",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "rypsiöljyä",
-            "amount": 20,
-            "unit": "g",
-            "state": "rypsiöljyä",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-535-release-20",
-              "name": "RYPSIÖLJY",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/535",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 0,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 0,
-                "fat": 100
-              },
-              "state": "rypsiöljyä",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "valmista kasvislientä",
-            "amount": 800,
-            "unit": "g",
-            "state": "valmista kasvislientä",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-29026-release-20",
-              "name": "KASVISLIEMI, LAIMENNETTU",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29026",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 0.411,
-                "fibre": 0.055,
-                "polyols": 0,
-                "protein": 0.29,
-                "fat": 0.716
-              },
-              "state": "valmista kasvislientä",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "vehnäjauhoja",
-            "amount": 12,
-            "unit": "g",
-            "state": "vehnäjauhoja",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-110-release-20",
-              "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 73.998,
-                "fibre": 3.5,
-                "polyols": 0,
-                "protein": 11.6,
-                "fat": 1.56
-              },
-              "state": "vehnäjauhoja",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "mustapippuria",
-            "amount": 1,
-            "unit": "g",
-            "state": "mustapippuria",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-11177-release-20",
-              "name": "MUSTAPIPPURI",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": false,
-              "per100g": {
-                "carbohydrate": 38.31,
-                "fibre": null,
-                "polyols": null,
-                "protein": 10.9,
-                "fat": 3.3
-              },
-              "state": "mustapippuria",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "vaaleaa vehnäleipää, 4 viipaletta",
-            "amount": 120,
-            "unit": "g",
-            "state": "vaaleaa vehnäleipää, 4 viipaletta",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-1309-release-20",
-              "name": "VAALEA LEIPÄ, PATONKI/RANSKANLEIPÄ, VESI, VEHNÄJAUHO, TEOLLINEN",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/1309",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 56.033,
-                "fibre": 2.746,
-                "polyols": 0,
-                "protein": 8.97,
-                "fat": 1.187
-              },
-              "state": "vaaleaa vehnäleipää, 4 viipaletta",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "emmentaljuustoa (rasvaa noin 27–30 %)",
-            "amount": 100,
-            "unit": "g",
-            "state": "emmentaljuustoa (rasvaa noin 27–30 %)",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-642-release-20",
-              "name": "JUUSTO, EMMENTALJUUSTO, RASVAA 27-30 %, PUNALEIMA",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/642",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 0,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 27.88,
-                "fat": 30
-              },
-              "state": "emmentaljuustoa (rasvaa noin 27–30 %)",
-              "retrievedAt": "2026-11-25"
-            }
-          }
-        ]
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/alkuruoat/sipulikeitto-juustoleivalla.md",
+        "language": "en",
+        "slug": "sipulikeitto-juustoleivalla-en",
+        "sha256": "00349e5f76f8df91562a00053ec729a8039696f8e0556788e8fb41a8a0219495",
+        "semantic_sha256": "ac7b79d1ea27d260f50d9fc020b69dd5a10b1519fec4dc880db9820a0bfad608"
       },
-      "preliminary_per_serving": {
-        "kcal": null,
-        "protein": 12.65,
-        "fat": 14.51,
-        "carbohydrate": 27.75,
-        "fibre": null,
-        "sugars": null,
-        "polyols": null,
-        "netCarbohydrate": null
+      {
+        "path": "kaannokset/sv/alkuruoat/sipulikeitto-juustoleivalla.md",
+        "language": "sv",
+        "slug": "sipulikeitto-juustoleivalla-sv",
+        "sha256": "50f3c2ac5524f04eeaf37077434b653abc7013c8ee9a4e87d412388e95f98302",
+        "semantic_sha256": "060525ca3f89c0f7df85621a92db442ff7f7ab11869665a0a918b046bad979fd"
       },
-      "preliminary_total_carbohydrate_g": null,
-      "possible_partial_fields": {
-        "netCarbohydrate": 27.75,
-        "protein": 12.65,
-        "fat": 14.51
+      {
+        "path": "kaannokset/th/alkuruoat/sipulikeitto-juustoleivalla.md",
+        "language": "th",
+        "slug": "sipulikeitto-juustoleivalla-th",
+        "sha256": "e2ef174db34958a7a113c306ebe0d1fbcc7ca9f2aaf82b8d778e66b7bb7610ca",
+        "semantic_sha256": "ecc8de0ebd951dd1a673dc0c3149040d8ac79f82bc6b639e9634ee84d12826b3"
       },
-      "limitations": "Mustapippurin kuitu ja polyolit puuttuvat. Liemi ja vaalea leipä ovat yleisiä Fineli-viitteitä.",
-      "issues": [
-        {
-          "ingredient": "mustapippuria",
-          "issues": [
-            "Unknown nutrient fibre",
-            "Unknown nutrient polyols",
-            "Unknown nutrient netCarbohydrate"
-          ],
-          "excluded": null
-        }
-      ]
-    },
-    "glycemic": {
-      "decision": "UNREVIEWED_NO_RELIABLE_GK_CANDIDATE",
-      "reason": "Leivän tuotetta, paahtokäsittelyä ja keittoannosta vastaava GI-sidonta puuttuu.",
-      "value": null
-    },
-    "physical_cook_test": false
+      {
+        "path": "reseptit/alkuruoat/sipulikeitto-juustoleivalla.md",
+        "language": "fi",
+        "slug": "sipulikeitto-juustoleivalla",
+        "sha256": "87e14b9f494bddc5e4dc53b5142f2e8619ddff842a6641348f8d7937843c1d07",
+        "semantic_sha256": "d18f1090b806a1467215b719c4654f2b7481ff3a14262408f5da6b867c71d117"
+      }
+    ]
   }
 }

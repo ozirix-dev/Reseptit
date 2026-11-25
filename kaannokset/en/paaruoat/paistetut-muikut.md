@@ -11,7 +11,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/paistetut-muikut.md
 translation_of: paistetut-muikut
-status: draft
+status: published
 servings: 4
 time_total_min: 30
 difficulty: "easy"
@@ -62,3 +62,5 @@ A traditional Finnish home cooking recipe.
 
 - Contains fish, rye and milk. Check the breadcrumbs for wheat and other possible allergens.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/paistetut-muikut/
+
+- Reliable nutrition values could not be determined for one serving.

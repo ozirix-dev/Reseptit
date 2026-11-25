@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/uuniperunat-raejuusto-hernetaytteella.md
 translation_of: uuniperunat-raejuusto-hernetaytteella
-status: draft
+status: published
 servings: 4
 time_total_min: 80
 difficulty: "lätt"
@@ -58,3 +58,5 @@ Fyll mjuk bakad potatis med keso, kokta ärter, dill och rödlök. Förvara fyll
 
 - Fyllningen innehåller mjölk. En portion är en potatis och en fjärdedel av fyllningen.
 - Jämförelsekälla för tillagningen: https://www.martat.fi/reseptit/uuniperunat-ja-jarvikalatayte/
+
+- Det gick inte att fastställa tillförlitliga näringsvärden per portion.

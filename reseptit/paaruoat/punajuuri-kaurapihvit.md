@@ -4,7 +4,7 @@ recipe_id: punajuuri-kaurapihvit
 url_slug: punajuuri-kaurapihvit
 category: paaruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 45
 difficulty: "helppo"
@@ -12,7 +12,7 @@ main_ingredient: ["punajuuri", "kaura"]
 cooking_method: ["paistaminen"]
 tags: ["arkiruoka"]
 translation_languages: [en, sv, th]
-translation_status: {en: draft, sv: draft, th: draft}
+translation_status: {en: published, sv: published, th: published}
 image:
   src: paaruoat/punajuuri-kaurapihvit.webp
   alt: "Pannulla paistettuja punajuuri-kaurapihvejä; tekoälykuvitus"
@@ -53,3 +53,5 @@ Kypsä punajuuri antaa pannupihveille syvän värin ja kaurahiutaleet sitovat ta
 
 - Sisältää kauraa ja kananmunaa.
 - Valmistuksen vertailulähde: https://www.martat.fi/reseptit/kauraiset-kasvispihvit/
+
+- Annoksen ravintoarvoja ei voitu määrittää luotettavasti.

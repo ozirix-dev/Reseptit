@@ -2,49 +2,71 @@
   "schema_version": 1,
   "recipe_id": "uuniseiti-sitruunalla-ja-tillilla",
   "source_path": "reseptit/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
-  "source_sha256": "0a772eed376913c408a290e1e51dc620d43fbb1178c9046871461f560054cd3c",
-  "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "source_sha256": "0e49023ce9f9725f39f84ac84fa6e19389a9c649ade7ce85d9547d31d33b93c6",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
       "https://www.k-ruoka.fi/reseptit/pikamarinoitu-uuniseiti"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/uuniseiti-sitruunalla-ja-tillilla.json",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Täsmälliset tunnisteet ja reitit verrataan mainiin ja tuotantoon. Lähin toimituksellinen vertailu kuuluu riippumattomaan sisältökatselmointiin."
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Vertaa raaka-ainemäärät ja -tilat, mukaan lukien vaihtoehdot ja allergeenit, alkuperäiseen valmistuslähteeseen ja kieliversioihin."
+      "status": "pass",
+      "notes": "Kala sulatetaan jääkaapissa erillään valmistusajasta. Valutetut palat kypsennetään kauttaaltaan ja kala-allergeeni ilmoitetaan."
     },
     "method": {
-      "status": "pending",
-      "notes": "Recipavon toimituksellinen sovitus. Kuvitus ei ole osoitus valmistuskokeesta."
+      "status": "pass",
+      "notes": "Kala sulatetaan jääkaapissa erillään valmistusajasta. Valutetut palat kypsennetään kauttaaltaan ja kala-allergeeni ilmoitetaan."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Tarkista reseptin kypsennys ja kylmäkäsittely sekä ainesosista ja tuotemerkinnöistä seuraavat allergeenit."
+      "status": "pass",
+      "notes": "Kala sulatetaan jääkaapissa erillään valmistusajasta. Valutetut palat kypsennetään kauttaaltaan ja kala-allergeeni ilmoitetaan. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "4 annosta / 35 min, reseptin rajauksin. Arvio."
+      "status": "pass",
+      "notes": "Kala sulatetaan jääkaapissa erillään valmistusajasta. Valutetut palat kypsennetään kauttaaltaan ja kala-allergeeni ilmoitetaan. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Sulatuksen valumaa ei ole määrällistetty ja kuoriraasteen oma lähde puuttuu."
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Sulatuksen valumaa ei ole määrällistetty ja kuoriraasteen oma lähde puuttuu."
     },
     "glycemic": {
-      "status": "pending",
-      "notes": "Sitruuna-tilliannoksen GI-sidonta puuttuu, eikä kalan 0 g hiilihydraatti nollaa koko reseptiä."
+      "status": "unavailable",
+      "notes": "Ei valmistuskohtaista GI-näyttöä sitruuna-tilliannokselle.  GK jää määrittämättömäksi."
     }
   },
-  "candidate_review": {
-    "markdown": [
+  "image_evidence": {
+    "path": "kuvat/paaruoat/uuniseiti-sitruunalla-ja-tillilla.webp",
+    "bytes": 92184,
+    "sha256": "db6e591686bf17b73b1dba02a24d7cfa75d72884e0b9436e00414c11188a4df3",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
       {
         "path": "kaannokset/en/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
         "sha256": "01b8d2c58a22afeeac2fc61c0d51d1d16090aeae18b36a524a43ace38378e1cc"
@@ -61,226 +83,45 @@
         "path": "reseptit/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
         "sha256": "0a772eed376913c408a290e1e51dc620d43fbb1178c9046871461f560054cd3c"
       }
-    ],
-    "image": {
-      "path": "kuvat/paaruoat/uuniseiti-sitruunalla-ja-tillilla.webp",
-      "bytes": 92184,
-      "sha256": "db6e591686bf17b73b1dba02a24d7cfa75d72884e0b9436e00414c11188a4df3",
-      "width": 960,
-      "height": 640,
-      "origin": "Tekoälyllä luotu havainnekuva"
-    },
-    "nutrition": {
-      "status": "WITHHOLD_CANDIDATE",
-      "calculation": {
-        "recipeId": "uuniseiti-sitruunalla-ja-tillilla",
-        "sourceHash": "dd8f52c21c4353b2023bcbc9225cf5b095c8abab8126d90be548a6e2b577eb8e",
-        "calculatedAt": "2026-11-25",
-        "servings": 4,
-        "scope": "Yksi annos reseptin 4 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Sulatuksen valumaa ei ole määrällistetty ja kuoriraasteen oma lähde puuttuu.",
-        "reviewerStatus": "AUTOMATED ONLY",
-        "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
-        "ingredients": [
-          {
-            "item": "sulatettua ruodotonta alaskanseitifileetä, valutettuna",
-            "amount": 500,
-            "unit": "g",
-            "state": "sulatettua ruodotonta alaskanseitifileetä, valutettuna",
-            "matchEvidence": "Vertaile ainesosaan nimettyä esimerkkituotetta ja ilmoitusperustaa.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "pirkka-6410405098672",
-              "name": "Pirkka alaskanseiti annospaloina",
-              "sourceUrl": "https://www.k-ruoka.fi/kauppa/tuote/pirkka-alaskanseiti-annospaloina-4x100g-6410405098672",
-              "per100g": {
-                "kcal": 77,
-                "carbohydrate": 0,
-                "sugars": 0,
-                "protein": 17,
-                "fat": 0.8,
-                "fibre": null,
-                "polyols": null
-              },
-              "licence": "Valmistajan tai tuotemerkin julkinen tuotetieto.",
-              "basis": "per100g-as-sold",
-              "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
-              "polyolsSourceVerified": false,
-              "state": "sulatettua ruodotonta alaskanseitifileetä, valutettuna",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "rypsiöljyä",
-            "amount": 20,
-            "unit": "g",
-            "state": "rypsiöljyä",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-535-release-20",
-              "name": "RYPSIÖLJY",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/535",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 0,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 0,
-                "fat": 100
-              },
-              "state": "rypsiöljyä",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "sitruunamehua",
-            "amount": 20,
-            "unit": "g",
-            "state": "sitruunamehua",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-11557-release-20",
-              "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11557",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 1.6,
-                "fibre": 0.1,
-                "polyols": 0,
-                "protein": 0.31,
-                "fat": 0
-              },
-              "state": "sitruunamehua",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "hienoksi raastettua sitruunankuoren keltaista osaa",
-            "amount": 2,
-            "unit": "g",
-            "state": "hienoksi raastettua sitruunankuoren keltaista osaa",
-            "excludedReason": "Keltaisen sitruunankuoren ravintotietuetta ei varmistettu."
-          },
-          {
-            "item": "tuoretta tilliä",
-            "amount": 10,
-            "unit": "g",
-            "state": "tuoretta tilliä",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-369-release-20",
-              "name": "TILLI, TUORE",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/369",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 0.9,
-                "fibre": 2.8,
-                "polyols": 0,
-                "protein": 3.69,
-                "fat": 0.8
-              },
-              "state": "tuoretta tilliä",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "suolaa",
-            "amount": 3,
-            "unit": "g",
-            "state": "suolaa",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-79-release-20",
-              "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 0,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 0,
-                "fat": 0
-              },
-              "state": "suolaa",
-              "retrievedAt": "2026-11-25"
-            }
-          }
-        ]
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
+        "language": "en",
+        "slug": "uuniseiti-sitruunalla-ja-tillilla-en",
+        "sha256": "6800626f723388393b61198794ec908d2b699cc390afa5b9a7206de28f258c96",
+        "semantic_sha256": "38a1170e95de5d5cec5613b375bff0b1c73209a182927ce219a3776333b90c48"
       },
-      "preliminary_per_serving": {
-        "kcal": null,
-        "protein": 21.36,
-        "fat": 6.02,
-        "carbohydrate": null,
-        "fibre": null,
-        "sugars": null,
-        "polyols": null,
-        "netCarbohydrate": null
+      {
+        "path": "kaannokset/sv/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
+        "language": "sv",
+        "slug": "uuniseiti-sitruunalla-ja-tillilla-sv",
+        "sha256": "dacff3d336eb8ec735f87e2463645da6434a005ceabd1f0de7bd11139b8f15a4",
+        "semantic_sha256": "c8d1c6a1596d59b9e646261a4f260324e3802680b88a289832f48472a333cf9c"
       },
-      "preliminary_total_carbohydrate_g": null,
-      "possible_partial_fields": {
-        "netCarbohydrate": null,
-        "protein": 21.36,
-        "fat": 6.02
+      {
+        "path": "kaannokset/th/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
+        "language": "th",
+        "slug": "uuniseiti-sitruunalla-ja-tillilla-th",
+        "sha256": "ff21049374851a940237f5b643399de093893f67cf5cbb97e144e9c29078534c",
+        "semantic_sha256": "78d424b7472434c4ccca2bd39fea10e751e042a3ebdc23f578ceaa3d835ec02c"
       },
-      "limitations": "Sulatuksen valumaa ei ole määrällistetty ja kuoriraasteen oma lähde puuttuu.",
-      "issues": [
-        {
-          "ingredient": "sulatettua ruodotonta alaskanseitifileetä, valutettuna",
-          "issues": [
-            "Unknown nutrient carbohydrate",
-            "Unknown nutrient fibre",
-            "Unknown nutrient polyols",
-            "Unknown nutrient netCarbohydrate"
-          ],
-          "excluded": null
-        },
-        {
-          "ingredient": "hienoksi raastettua sitruunankuoren keltaista osaa",
-          "issues": [],
-          "excluded": "Keltaisen sitruunankuoren ravintotietuetta ei varmistettu."
-        }
-      ]
-    },
-    "glycemic": {
-      "decision": "UNREVIEWED_NO_RELIABLE_GK_CANDIDATE",
-      "reason": "Sitruuna-tilliannoksen GI-sidonta puuttuu, eikä kalan 0 g hiilihydraatti nollaa koko reseptiä.",
-      "value": null
-    },
-    "physical_cook_test": false
+      {
+        "path": "reseptit/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md",
+        "language": "fi",
+        "slug": "uuniseiti-sitruunalla-ja-tillilla",
+        "sha256": "0e49023ce9f9725f39f84ac84fa6e19389a9c649ade7ce85d9547d31d33b93c6",
+        "semantic_sha256": "5798a1bfab0a2b04ac3abe1a22da2e1fb38ac15b5b3130e84aa5ad1dc89a866c"
+      }
+    ]
   }
 }

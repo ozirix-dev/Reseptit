@@ -4,7 +4,7 @@ recipe_id: perinteinen-jauhelihakeitto
 url_slug: perinteinen-jauhelihakeitto
 category: paaruoka
 language: fi
-status: draft
+status: published
 servings: 6
 time_total_min: 60
 difficulty: "helppo"
@@ -22,14 +22,17 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 image:
   src: paaruoat/perinteinen-jauhelihakeitto.webp
   alt: "Kulhollinen jauhelihakeittoa, jossa näkyy perunaa, juureksia, purjoa ja persiljaa; tekoälykuvitus"
   width: 960
   height: 640
+carbs_net_per_serving_g: 23.29
+protein_per_serving_g: 20.62
+fat_per_serving_g: 10.46
 ingredients:
   - amount: 500
     unit: "g"
@@ -82,3 +85,5 @@ Peruna ja juurekset kypsyvät samassa kattilassa. Pannulla ruskistettu paistijau
 
 - Ainekset sisältävät mahdollisia allergeeneja. Tarkista tuoteselosteet. Ei gluteeniton-väitettä ilman erillistä tarkistusta.
 - Valmistuksen vertailulähde (ohjetta ei kopioitu): https://www.martat.fi/reseptit/jauhelihakeitto-10lle/
+
+- Saatavilla olevat ravintoarvot ovat ainesosiin perustuvia arvioita annosta kohti.

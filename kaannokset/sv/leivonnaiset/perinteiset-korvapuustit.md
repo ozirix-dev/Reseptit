@@ -11,7 +11,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/leivonnaiset/perinteiset-korvapuustit.md
 translation_of: perinteiset-korvapuustit
-status: draft
+status: published
 servings: 30
 time_total_min: 150
 difficulty: "lätt"
@@ -81,3 +81,5 @@ Ett traditionellt recept från det finska hemmaköket.
 
 - Innehåller vete, mjölk och ägg.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/korvapuustit/
+
+- Det gick inte att fastställa tillförlitliga näringsvärden per portion.

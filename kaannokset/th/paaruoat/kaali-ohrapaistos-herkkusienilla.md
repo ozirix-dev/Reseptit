@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/kaali-ohrapaistos-herkkusienilla.md
 translation_of: kaali-ohrapaistos-herkkusienilla
-status: draft
+status: published
 servings: 6
 time_total_min: 105
 difficulty: "ง่าย"
@@ -61,3 +61,5 @@ ingredients:
 
 - มีข้าวบาร์เลย์และนม
 - แหล่งอ้างอิงสำหรับเปรียบเทียบวิธีทำ: https://www.martat.fi/reseptit/kasviskaalilaatikko/
+
+- ยังระบุข้อมูลโภชนาการต่อหนึ่งที่อย่างน่าเชื่อถือไม่ได้

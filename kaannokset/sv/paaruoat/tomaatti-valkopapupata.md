@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/tomaatti-valkopapupata.md
 translation_of: tomaatti-valkopapupata
-status: draft
+status: published
 servings: 4
 time_total_min: 35
 difficulty: "lätt"
@@ -60,3 +60,5 @@ Konserverade bönor gör tomatgrytan snabb. Vitlök och oregano smaksätter sås
 
 - Väg bönorna efter sköljning och avrinning.
 - Jämförelsekälla för tillagningen: https://www.k-ruoka.fi/reseptit/helppo-papupata
+
+- Det gick inte att fastställa tillförlitliga näringsvärden per portion.

@@ -4,7 +4,7 @@ recipe_id: sipulikeitto-juustoleivalla
 url_slug: sipulikeitto-juustoleivalla
 category: alkuruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 70
 difficulty: "helppo"
@@ -12,12 +12,15 @@ main_ingredient: ["keltasipuli", "emmental"]
 cooking_method: ["keitto", "uuni"]
 tags: ["arkiruoka"]
 translation_languages: [en, sv, th]
-translation_status: {en: draft, sv: draft, th: draft}
+translation_status: {en: published, sv: published, th: published}
 image:
   src: alkuruoat/sipulikeitto-juustoleivalla.webp
   alt: "Sipulikeittoa kulhossa sulatetulla juustoleivällä; tekoälykuvitus"
   width: 960
   height: 640
+carbs_net_per_serving_g: 27.75
+protein_per_serving_g: 12.65
+fat_per_serving_g: 14.51
 ingredients:
   - amount: 650
     unit: g
@@ -56,3 +59,5 @@ Hitaasti pehmennetty sipuli antaa liemelle makeutta. Uunissa sulatettu emmental-
 
 - Sisältää vehnää ja maitoa. Tarkista kasvisliemen tuoteseloste.
 - Valmistuksen vertailulähde: https://www.martat.fi/reseptit/suomalainen-sipulikeitto/
+
+- Saatavilla olevat ravintoarvot ovat ainesosiin perustuvia arvioita annosta kohti.

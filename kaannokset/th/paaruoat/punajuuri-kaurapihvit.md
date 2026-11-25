@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/punajuuri-kaurapihvit.md
 translation_of: punajuuri-kaurapihvit
-status: draft
+status: published
 servings: 4
 time_total_min: 45
 difficulty: "ง่าย"
@@ -54,3 +54,5 @@ ingredients:
 
 - มีข้าวโอ๊ตและไข่
 - แหล่งอ้างอิงสำหรับเปรียบเทียบวิธีทำ: https://www.martat.fi/reseptit/kauraiset-kasvispihvit/
+
+- ยังระบุข้อมูลโภชนาการต่อหนึ่งที่อย่างน่าเชื่อถือไม่ได้

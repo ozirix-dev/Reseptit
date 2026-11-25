@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/kasvishernekeitto-juureksilla.md
 translation_of: kasvishernekeitto-juureksilla
-status: draft
+status: published
 servings: 6
 time_total_min: 150
 difficulty: "lätt"
@@ -57,3 +57,5 @@ Morot och palsternacka ger sötma åt den matiga soppan på torkade gröna ärte
 ## Anteckningar
 
 - Jämförelsekälla för tillagningen: https://www.martat.fi/reseptit/kasvishernekeitto/
+
+- Det gick inte att fastställa tillförlitliga näringsvärden per portion.

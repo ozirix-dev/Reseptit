@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md
 translation_of: uuniseiti-sitruunalla-ja-tillilla
-status: draft
+status: published
 servings: 4
 time_total_min: 35
 difficulty: "easy"
@@ -54,3 +54,5 @@ Alaska pollock bakes quickly with lemon, dill and oil.
 
 - Contains fish. Thawing is outside the 35-minute preparation time.
 - Method reference: https://www.k-ruoka.fi/reseptit/pikamarinoitu-uuniseiti
+
+- Reliable nutrition values could not be determined for one serving.

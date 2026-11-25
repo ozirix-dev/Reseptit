@@ -11,7 +11,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/paistetut-muikut.md
 translation_of: paistetut-muikut
-status: draft
+status: published
 servings: 4
 time_total_min: 30
 difficulty: "lätt"
@@ -62,3 +62,5 @@ Ett traditionellt recept från det finska hemmaköket.
 
 - Innehåller fisk, råg och mjölk. Kontrollera om ströbrödet innehåller vete eller andra allergener.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/paistetut-muikut/
+
+- Det gick inte att fastställa tillförlitliga näringsvärden per portion.

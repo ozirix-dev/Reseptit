@@ -12,7 +12,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-porkkanalaatikko.md
 translation_of: perinteinen-porkkanalaatikko
-status: draft
+status: published
 servings: 8
 time_total_min: 165
 difficulty: "lätt"
@@ -69,3 +69,5 @@ Ett traditionellt recept från det finska hemmaköket.
 
 - Innehåller mjölk och ägg.
 - Jämförelsekällor (olika receptvarianter): https://www.martat.fi/reseptit/porkkanalaatikko/ ja / and https://www.k-ruoka.fi/reseptit/porkkanalaatikko-soseesta
+
+- Det gick inte att fastställa tillförlitliga näringsvärden per portion.

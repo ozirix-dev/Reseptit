@@ -4,7 +4,7 @@ recipe_id: tomaatti-valkopapupata
 url_slug: tomaatti-valkopapupata
 category: paaruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 35
 difficulty: "helppo"
@@ -12,7 +12,7 @@ main_ingredient: ["valkopapu", "tomaatti"]
 cooking_method: ["haudutus"]
 tags: ["arkiruoka"]
 translation_languages: [en, sv, th]
-translation_status: {en: draft, sv: draft, th: draft}
+translation_status: {en: published, sv: published, th: published}
 image:
   src: paaruoat/tomaatti-valkopapupata.webp
   alt: "Valkopapuja tomaattisessa padassa; tekoälykuvitus"
@@ -59,3 +59,5 @@ Tölkkipavut tekevät tomaattipadasta nopean. Oregano ja valkosipuli maustavat k
 
 - Punnitse pavut vasta huuhtelun ja valutuksen jälkeen.
 - Valmistuksen vertailulähde: https://www.k-ruoka.fi/reseptit/helppo-papupata
+
+- Annoksen ravintoarvoja ei voitu määrittää luotettavasti.

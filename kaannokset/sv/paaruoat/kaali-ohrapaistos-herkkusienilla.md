@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/kaali-ohrapaistos-herkkusienilla.md
 translation_of: kaali-ohrapaistos-herkkusienilla
-status: draft
+status: published
 servings: 6
 time_total_min: 105
 difficulty: "lätt"
@@ -61,3 +61,5 @@ Champinjoner och korngryn gör den mjukbakade kålrätten matig.
 
 - Innehåller korn och mjölk.
 - Jämförelsekälla för tillagningen: https://www.martat.fi/reseptit/kasviskaalilaatikko/
+
+- Det gick inte att fastställa tillförlitliga näringsvärden per portion.

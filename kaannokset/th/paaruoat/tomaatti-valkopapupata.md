@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/tomaatti-valkopapupata.md
 translation_of: tomaatti-valkopapupata
-status: draft
+status: published
 servings: 4
 time_total_min: 35
 difficulty: "ง่าย"
@@ -60,3 +60,5 @@ ingredients:
 
 - ชั่งถั่วหลังล้างและสะเด็ดน้ำ
 - แหล่งอ้างอิงสำหรับเปรียบเทียบวิธีทำ: https://www.k-ruoka.fi/reseptit/helppo-papupata
+
+- ยังระบุข้อมูลโภชนาการต่อหนึ่งที่อย่างน่าเชื่อถือไม่ได้

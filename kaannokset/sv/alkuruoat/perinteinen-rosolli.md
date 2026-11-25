@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/alkuruoat/perinteinen-rosolli.md
 translation_of: perinteinen-rosolli
-status: draft
+status: published
 servings: 8
 time_total_min: 50
 difficulty: "lätt"
@@ -24,6 +24,9 @@ image:
   alt: "Tärnad rosoll i en skål med rosa gräddsås vid sidan om; AI-illustration"
   width: 960
   height: 640
+carbs_net_per_serving_g: 13.73
+protein_per_serving_g: 2.05
+fat_per_serving_g: 6.74
 ingredients:
   - amount: 300
     unit: "g"
@@ -77,3 +80,5 @@ En finsk julsallad av tärnade rotfrukter och äpple med rosa gräddsås som ser
 - Jämförelsekälla för tillagningen (inte kopierad): https://www.martat.fi/reseptit/rosolli/
 
 - Tidsuppskattningen på 50 minuter förutsätter färdigkokta och avsvalnade rotfrukter. Att koka och snabbt kyla råa rödbetor tar längre tid. Gräddsåsen innehåller mjölk; använd kall grädde och rena redskap.
+
+- Tillgängliga näringsvärden per portion är uppskattningar utifrån ingredienserna.

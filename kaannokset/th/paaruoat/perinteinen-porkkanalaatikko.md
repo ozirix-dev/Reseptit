@@ -12,7 +12,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-porkkanalaatikko.md
 translation_of: perinteinen-porkkanalaatikko
-status: draft
+status: published
 servings: 8
 time_total_min: 165
 difficulty: "ง่าย"
@@ -69,3 +69,5 @@ ingredients:
 
 - มีนมและไข่
 - แหล่งข้อมูลเปรียบเทียบ (เป็นสูตรคนละรูปแบบ): https://www.martat.fi/reseptit/porkkanalaatikko/ ja / and https://www.k-ruoka.fi/reseptit/porkkanalaatikko-soseesta
+
+- ยังระบุข้อมูลโภชนาการต่อหนึ่งที่อย่างน่าเชื่อถือไม่ได้

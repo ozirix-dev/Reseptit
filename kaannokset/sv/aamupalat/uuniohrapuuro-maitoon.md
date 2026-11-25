@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/aamupalat/uuniohrapuuro-maitoon.md
 translation_of: uuniohrapuuro-maitoon
-status: draft
+status: published
 servings: 6
 time_total_min: 140
 difficulty: "lätt"
@@ -19,6 +19,10 @@ image:
   alt: "Ugnsbakad korngröt i en form; AI-illustration"
   width: 960
   height: 640
+carbs_net_per_serving_g: 26.21
+carbs_total_per_serving_g: 28.11
+protein_per_serving_g: 8.6
+fat_per_serving_g: 6.19
 ingredients:
   - amount: 150
     unit: g
@@ -49,3 +53,6 @@ Krossade korngryn mjuknar sakta i ugnen i den här finska gröten.
 
 - Innehåller korn och mjölk. Serveringstillbehör ingår inte i receptet.
 - Jämförelsekälla för tillagningen: https://www.valio.fi/reseptit/luomu-uuniohrapuuro/
+
+- Näringsvärdena per portion är uppskattningar utifrån ingredienserna.
+- Näringsinnehållet i korngryn kan variera mellan produkter.

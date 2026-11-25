@@ -4,7 +4,7 @@ recipe_id: paahdetut-juurekset-timjamilla
 url_slug: paahdettu-lanttu-porkkana-palsternakka
 category: alkuruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 45
 difficulty: "helppo"
@@ -12,12 +12,14 @@ main_ingredient: ["porkkana", "lanttu", "palsternakka"]
 cooking_method: ["uuni"]
 tags: ["arkiruoka", "suomalainen"]
 translation_languages: [en, sv, th]
-translation_status: {en: draft, sv: draft, th: draft}
+translation_status: {en: published, sv: published, th: published}
 image:
   src: alkuruoat/paahdetut-juurekset-timjamilla.webp
   alt: "Pellillinen paahdettuja porkkana-, lanttu- ja palsternakkapaloja; tekoälykuvitus"
   width: 960
   height: 640
+carbs_net_per_serving_g: 13.07
+protein_per_serving_g: 1.73
 ingredients:
   - amount: 300
     unit: g
@@ -52,3 +54,5 @@ Lanttupohjainen lisuke paahdetaan porkkanan ja palsternakan kanssa ilman perunaa
 ## Muistiinpanot
 
 - Valmistuksen vertailulähde: https://www.martat.fi/reseptit/uunissa-paahdetut-juurekset/
+
+- Saatavilla olevat ravintoarvot ovat ainesosiin perustuvia arvioita annosta kohti.

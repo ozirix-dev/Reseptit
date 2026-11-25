@@ -9,7 +9,7 @@ cooking_method:
   - "uuni"
   - "keitto"
 language: fi
-status: draft
+status: published
 servings: 8
 time_total_min: 165
 difficulty: "helppo"
@@ -54,9 +54,9 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 ---
 
 # Perinteinen porkkanalaatikko
@@ -74,3 +74,5 @@ Perinteinen suomalainen kotikeittiön resepti.
 
 - Sisältää maitoa ja kananmunaa.
 - Vertailulähteet (eri valmistusversioita): https://www.martat.fi/reseptit/porkkanalaatikko/ ja / and https://www.k-ruoka.fi/reseptit/porkkanalaatikko-soseesta
+
+- Annoksen ravintoarvoja ei voitu määrittää luotettavasti.

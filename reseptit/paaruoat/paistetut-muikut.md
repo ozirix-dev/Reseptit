@@ -8,7 +8,7 @@ main_ingredient:
 cooking_method:
   - "paisto"
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 30
 difficulty: "helppo"
@@ -47,9 +47,9 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 ---
 
 # Paistetut muikut ruisjauhoilla
@@ -67,3 +67,5 @@ Perinteinen suomalainen kotikeittiön resepti.
 
 - Sisältää kalaa, ruista ja maitoa. Tarkista korppujauhoista vehnä ja mahdolliset muut allergeenit.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/paistetut-muikut/
+
+- Annoksen ravintoarvoja ei voitu määrittää luotettavasti.

@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/alkuruoat/perinteinen-rosolli.md
 translation_of: perinteinen-rosolli
-status: draft
+status: published
 servings: 8
 time_total_min: 50
 difficulty: "easy"
@@ -24,6 +24,9 @@ image:
   alt: "Diced rosolli salad in a bowl with pink cream dressing on the side; AI illustration"
   width: 960
   height: 640
+carbs_net_per_serving_g: 13.73
+protein_per_serving_g: 2.05
+fat_per_serving_g: 6.74
 ingredients:
   - amount: 300
     unit: "g"
@@ -77,3 +80,5 @@ A traditional Finnish Christmas salad of diced root vegetables and apple, with p
 - Preparation comparison reference (not reproduced): https://www.martat.fi/reseptit/rosolli/
 
 - The 50-minute estimate assumes the root vegetables are already cooked and cooled. Cooking and cooling raw beetroot quickly adds time. The cream dressing contains milk; use cold cream and clean utensils.
+
+- Available nutrition values are ingredient-based estimates per serving.

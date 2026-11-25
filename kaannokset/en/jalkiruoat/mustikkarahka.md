@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/jalkiruoat/mustikkarahka.md
 translation_of: mustikkarahka
-status: draft
+status: published
 servings: 4
 time_total_min: 15
 difficulty: "easy"
@@ -19,6 +19,9 @@ image:
   alt: "Purple quark with whole bilberries in a glass; AI illustration"
   width: 960
   height: 640
+carbs_net_per_serving_g: 14.22
+protein_per_serving_g: 9.04
+fat_per_serving_g: 0.93
 ingredients:
   - amount: 220
     unit: g
@@ -45,3 +48,5 @@ Finnish wild bilberries turn plain quark (less than 0.5% fat) purple, with some 
 
 - Contains milk. If using imported frozen berries, heat them throughout at 90 °C for at least 5 minutes or boil for 2 minutes. Cool before mixing.
 - Method reference: https://www.martat.fi/reseptit/marjarahka/
+
+- Available nutrition values are ingredient-based estimates per serving.

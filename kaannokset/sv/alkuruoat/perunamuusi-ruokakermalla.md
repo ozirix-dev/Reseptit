@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/alkuruoat/perunamuusi-ruokakermalla.md
 translation_of: perunamuusi-ruokakermalla
-status: draft
+status: published
 servings: 6
 time_total_min: 35
 difficulty: "lätt"
@@ -45,3 +45,5 @@ Mjuk, mjölig potatis och varm matlagningsgrädde ger ett luftigt mos. Servera t
 
 - Innehåller mjölk. Häll bort kokvattnet.
 - Jämförelsekälla för tillagningen: https://www.valio.fi/reseptit/perunamuusi-ruokakermalla/
+
+- Det gick inte att fastställa tillförlitliga näringsvärden per portion.

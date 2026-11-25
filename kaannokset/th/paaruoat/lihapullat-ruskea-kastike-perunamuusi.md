@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md
 translation_of: lihapullat-ruskea-kastike-perunamuusi
-status: draft
+status: published
 servings: 4
 time_total_min: 70
 difficulty: "ง่าย"
@@ -81,3 +81,5 @@ ingredients:
 
 - มีนม ไข่ และข้าวสาลี ตรวจฉลากเกล็ดขนมปังและน้ำซุปถ้าใช้
 - https://www.martat.fi/reseptit/lihapullat-haudutetut-valkosipuliperunat-ja-ruskea-kastike/
+
+- ยังระบุข้อมูลโภชนาการต่อหนึ่งที่อย่างน่าเชื่อถือไม่ได้

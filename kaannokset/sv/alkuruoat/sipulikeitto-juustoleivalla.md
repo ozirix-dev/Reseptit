@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/alkuruoat/sipulikeitto-juustoleivalla.md
 translation_of: sipulikeitto-juustoleivalla
-status: draft
+status: published
 servings: 4
 time_total_min: 70
 difficulty: "lätt"
@@ -19,6 +19,9 @@ image:
   alt: "Löksoppa i en skål med gratinerat ostbröd; AI-illustration"
   width: 960
   height: 640
+carbs_net_per_serving_g: 27.75
+protein_per_serving_g: 12.65
+fat_per_serving_g: 14.51
 ingredients:
   - amount: 650
     unit: g
@@ -57,3 +60,5 @@ Lök som får mjukna långsamt ger buljongen sötma. Toppa varje skål med bröd
 
 - Innehåller vete och mjölk. Kontrollera buljongens märkning.
 - Jämförelsekälla för tillagningen: https://www.martat.fi/reseptit/suomalainen-sipulikeitto/
+
+- Tillgängliga näringsvärden per portion är uppskattningar utifrån ingredienserna.

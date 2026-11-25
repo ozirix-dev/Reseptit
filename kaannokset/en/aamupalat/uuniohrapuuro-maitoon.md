@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/aamupalat/uuniohrapuuro-maitoon.md
 translation_of: uuniohrapuuro-maitoon
-status: draft
+status: published
 servings: 6
 time_total_min: 140
 difficulty: "easy"
@@ -19,6 +19,10 @@ image:
   alt: "Oven-baked barley porridge in a casserole dish; AI illustration"
   width: 960
   height: 640
+carbs_net_per_serving_g: 26.21
+carbs_total_per_serving_g: 28.11
+protein_per_serving_g: 8.6
+fat_per_serving_g: 6.19
 ingredients:
   - amount: 150
     unit: g
@@ -49,3 +53,6 @@ Cracked barley grains soften slowly in the oven for this Finnish porridge.
 
 - Contains barley and milk. Serving accompaniments are outside the recipe.
 - Method reference: https://www.valio.fi/reseptit/luomu-uuniohrapuuro/
+
+- Nutrition values are ingredient-based estimates per serving.
+- The nutrition content of barley can vary by product.

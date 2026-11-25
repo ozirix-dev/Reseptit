@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/alkuruoat/porkkana-omenaraaste.md
 translation_of: porkkana-omenaraaste
-status: draft
+status: published
 servings: 4
 time_total_min: 15
 difficulty: "lätt"
@@ -19,6 +19,10 @@ image:
   alt: "Rivna morötter och äpple i en ljus skål; AI-illustration"
   width: 960
   height: 640
+carbs_net_per_serving_g: 7.77
+carbs_total_per_serving_g: 10.4
+protein_per_serving_g: 0.59
+fat_per_serving_g: 0.2
 ingredients:
   - amount: 320
     unit: g
@@ -45,3 +49,5 @@ Rivna morötter och äpple är ett friskt tillbehör till ugnsrätter eller stek
 
 - Servera samma dag. Täck över och förvara i kylen.
 - Jämförelsekälla för tillagningen: https://www.martat.fi/reseptit/chilinen-porkkanasalaatti/
+
+- Näringsvärdena per portion är uppskattningar utifrån ingredienserna.

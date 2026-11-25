@@ -4,7 +4,7 @@ recipe_id: munavoi-karjalanpiirakoille
 url_slug: munavoi-karjalanpiirakoille
 category: alkuruoka
 language: fi
-status: draft
+status: published
 servings: 6
 time_total_min: 25
 difficulty: "helppo"
@@ -12,12 +12,16 @@ main_ingredient: ["kananmuna", "voi"]
 cooking_method: ["keitto", "sekoittaminen"]
 tags: ["arkiruoka"]
 translation_languages: [en, sv, th]
-translation_status: {en: draft, sv: draft, th: draft}
+translation_status: {en: published, sv: published, th: published}
 image:
   src: alkuruoat/munavoi-karjalanpiirakoille.webp
   alt: "Karkeaa munavoita keraamisessa kulhossa; tekoälykuvitus"
   width: 960
   height: 640
+carbs_net_per_serving_g: 0.19
+carbs_total_per_serving_g: 0.19
+protein_per_serving_g: 4.34
+fat_per_serving_g: 12.57
 ingredients:
   - amount: 200
     unit: g
@@ -44,3 +48,5 @@ Kovaksi keitetty kananmuna ja pehmeä voi muodostavat karkeahkon levitteen.
 
 - Sisältää kananmunaa ja maitoa.
 - Valmistuksen vertailulähde: https://www.martat.fi/wp-content/uploads/2018/12/Yllatysmuna-aineisto-2019.pdf
+
+- Ravintoarvot ovat ainesosiin perustuvia arvioita annosta kohti.

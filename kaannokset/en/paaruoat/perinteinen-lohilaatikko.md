@@ -12,7 +12,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-lohilaatikko.md
 translation_of: perinteinen-lohilaatikko
-status: draft
+status: published
 servings: 5
 time_total_min: 105
 difficulty: "easy"
@@ -70,3 +70,5 @@ A traditional Finnish oven dish.
 
 - Contains fish, milk and eggs.
 - Valmistuksen vertailulähde / Reference: https://www.k-ruoka.fi/reseptit/lohi-perunalaatikko
+
+- Reliable nutrition values could not be determined for one serving.

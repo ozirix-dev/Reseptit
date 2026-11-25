@@ -2,49 +2,71 @@
   "schema_version": 1,
   "recipe_id": "paistetut-muikut",
   "source_path": "reseptit/paaruoat/paistetut-muikut.md",
-  "source_sha256": "74b6b07fa9dd8f7cab64e20e39c096c2d299e328ac2abc8af9095e87a7a39d42",
-  "decision": "hold",
-  "reviewed_by": "UNREVIEWED",
-  "reviewed_at": "",
+  "source_sha256": "429500f6d119c603704441e918940a2b19f458e9c5687bc1e360f2aa697555d2",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
       "https://www.martat.fi/reseptit/paistetut-muikut/"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/paistetut-muikut.json",
   "checks": {
     "duplicates": {
-      "status": "pending",
-      "notes": "Täsmälliset tunnisteet ja reitit verrataan mainiin ja tuotantoon. Lähin toimituksellinen vertailu kuuluu riippumattomaan sisältökatselmointiin."
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
     },
     "ingredients": {
-      "status": "pending",
-      "notes": "Vertaa raaka-ainemäärät ja -tilat, mukaan lukien vaihtoehdot ja allergeenit, alkuperäiseen valmistuslähteeseen ja kieliversioihin."
+      "status": "pass",
+      "notes": "Perattu muikku kypsennetään läpikypsäksi. TH-aineosa, SV-öljyn nimitys sekä EN-otsikko on tarkistettu. Kala, ruis, maito ja korppujauhon tarkistus ilmoitetaan."
     },
     "method": {
-      "status": "pending",
-      "notes": "Recipavon toimituksellinen sovitus. Kuvitus ei ole osoitus valmistuskokeesta."
+      "status": "pass",
+      "notes": "Perattu muikku kypsennetään läpikypsäksi. TH-aineosa, SV-öljyn nimitys sekä EN-otsikko on tarkistettu. Kala, ruis, maito ja korppujauhon tarkistus ilmoitetaan."
     },
     "food_safety": {
-      "status": "pending",
-      "notes": "Tarkista reseptin kypsennys ja kylmäkäsittely sekä ainesosista ja tuotemerkinnöistä seuraavat allergeenit."
+      "status": "pass",
+      "notes": "Perattu muikku kypsennetään läpikypsäksi. TH-aineosa, SV-öljyn nimitys sekä EN-otsikko on tarkistettu. Kala, ruis, maito ja korppujauhon tarkistus ilmoitetaan. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
     },
     "servings_and_time": {
-      "status": "pending",
-      "notes": "4 annosta / 30 min, reseptin rajauksin. Arvio."
+      "status": "pass",
+      "notes": "Perattu muikku kypsennetään läpikypsäksi. TH-aineosa, SV-öljyn nimitys sekä EN-otsikko on tarkistettu. Kala, ruis, maito ja korppujauhon tarkistus ilmoitetaan. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Leivityksen ja paistorasvan ruokaan jääviä määriä ei ole punnittu."
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Leivityksen ja paistorasvan ruokaan jääviä määriä ei ole punnittu."
     },
     "glycemic": {
-      "status": "pending",
-      "notes": "Leivityksen määrä ja GI-näyttö paistolle puuttuvat."
+      "status": "unavailable",
+      "notes": "Leivityksen määrä ja GI-näyttö paistolle puuttuvat. GK jää määrittämättömäksi."
     }
   },
-  "candidate_review": {
-    "markdown": [
+  "image_evidence": {
+    "path": "kuvat/paaruoat/paistetut-muikut.webp",
+    "bytes": 146188,
+    "sha256": "40914853b246918dd6ae8b693f44a286b3cd859a1e5ad69da67cc51f30bde467",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
       {
         "path": "kaannokset/en/paaruoat/paistetut-muikut.md",
         "sha256": "6e9147b4f07451714d1ba797e229cbc980c0707e26c34985e50205015b3a8e15"
@@ -61,199 +83,45 @@
         "path": "reseptit/paaruoat/paistetut-muikut.md",
         "sha256": "74b6b07fa9dd8f7cab64e20e39c096c2d299e328ac2abc8af9095e87a7a39d42"
       }
-    ],
-    "image": {
-      "path": "kuvat/paaruoat/paistetut-muikut.webp",
-      "bytes": 146188,
-      "sha256": "40914853b246918dd6ae8b693f44a286b3cd859a1e5ad69da67cc51f30bde467",
-      "width": 960,
-      "height": 640,
-      "origin": "Tekoälyllä luotu havainnekuva"
-    },
-    "nutrition": {
-      "status": "WITHHOLD_CANDIDATE",
-      "calculation": {
-        "recipeId": "paistetut-muikut",
-        "sourceHash": "6855b2fb48eda3c8d46ef843175506ffb1bc77303a42c8b9c1456b28f8542bb6",
-        "calculatedAt": "2026-11-25",
-        "servings": 4,
-        "scope": "Yksi annos reseptin 4 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Leivityksen ja paistorasvan ruokaan jääviä määriä ei ole punnittu.",
-        "reviewerStatus": "AUTOMATED ONLY",
-        "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
-        "ingredients": [
-          {
-            "item": "perattuja, kylmäsäilytettyjä muikkuja",
-            "amount": 700,
-            "unit": "g",
-            "state": "perattuja, kylmäsäilytettyjä muikkuja",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-809-release-20",
-              "name": "MUIKKU, JÄRVI",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/809",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 0,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 18.723,
-                "fat": 3.9
-              },
-              "state": "perattuja, kylmäsäilytettyjä muikkuja",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "ruisjauhoja",
-            "amount": 85,
-            "unit": "g",
-            "state": "ruisjauhoja",
-            "excludedReason": "Ruisjauhon tartuntamassaa ei punnittu."
-          },
-          {
-            "item": "korppujauhoja",
-            "amount": 35,
-            "unit": "g",
-            "state": "korppujauhoja",
-            "excludedReason": "Korppujauhon tartuntamassaa ei punnittu."
-          },
-          {
-            "item": "suolaa",
-            "amount": 7,
-            "unit": "g",
-            "state": "suolaa",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-79-release-20",
-              "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": true,
-              "polyolsEvidence": "Fineli Release 20, SUGOH.",
-              "per100g": {
-                "carbohydrate": 0,
-                "fibre": 0,
-                "polyols": 0,
-                "protein": 0,
-                "fat": 0
-              },
-              "state": "suolaa",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "valkopippuria",
-            "amount": 1,
-            "unit": "g",
-            "state": "valkopippuria",
-            "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
-            "edibleFraction": 1,
-            "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
-            "retainedFraction": 1,
-            "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
-            "record": {
-              "id": "fineli-11178-release-20",
-              "name": "VALKOPIPPURI",
-              "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11178",
-              "licence": "THL Fineli Release 20, CC BY 4.0",
-              "basis": "per100g-edible",
-              "carbohydrateDefinition": "EU_AVAILABLE",
-              "polyolsSourceVerified": false,
-              "per100g": {
-                "carbohydrate": 42.41,
-                "fibre": null,
-                "polyols": null,
-                "protein": 10.4,
-                "fat": 2.1
-              },
-              "state": "valkopippuria",
-              "retrievedAt": "2026-11-25"
-            }
-          },
-          {
-            "item": "voita paistamiseen",
-            "amount": 40,
-            "unit": "g",
-            "state": "voita paistamiseen",
-            "excludedReason": "Voin jäämää ruoassa ei punnittu."
-          },
-          {
-            "item": "rypsiöljyä paistamiseen",
-            "amount": 20,
-            "unit": "g",
-            "state": "rypsiöljyä paistamiseen",
-            "excludedReason": "Öljyn jäämää ruoassa ei punnittu."
-          }
-        ]
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/paistetut-muikut.md",
+        "language": "en",
+        "slug": "paistetut-muikut-en",
+        "sha256": "797ad34824c7262a68a8ab12a4d9289f39b57bb0ad7ccfdf0e15f112966d71a5",
+        "semantic_sha256": "0e26054b8f7bafc6a440a803db0c3c9c4c6a0995758a004ea928ff2b374965c7"
       },
-      "preliminary_per_serving": {
-        "kcal": null,
-        "protein": 32.79,
-        "fat": 6.83,
-        "carbohydrate": 0.11,
-        "fibre": null,
-        "sugars": null,
-        "polyols": null,
-        "netCarbohydrate": null
+      {
+        "path": "kaannokset/sv/paaruoat/paistetut-muikut.md",
+        "language": "sv",
+        "slug": "paistetut-muikut-sv",
+        "sha256": "840a284d0edc458170e91ee51840710736d2ea5c271959aad1eb052716c38832",
+        "semantic_sha256": "4fc38a1d57750912c301026ec5a4c4e1185c824708e243282e856258fd01eff9"
       },
-      "preliminary_total_carbohydrate_g": null,
-      "possible_partial_fields": {
-        "netCarbohydrate": 0.11,
-        "protein": 32.79,
-        "fat": 6.83
+      {
+        "path": "kaannokset/th/paaruoat/paistetut-muikut.md",
+        "language": "th",
+        "slug": "paistetut-muikut-th",
+        "sha256": "2a24af26b08bd1568620eeff5915a33aa1f4fd28d627f2c88940ff9e57a6448b",
+        "semantic_sha256": "cc36dd45d13bd6f09e01c95f5dbd8c0487257cb4f164ef2c93054666c84d3bf7"
       },
-      "limitations": "Leivityksen ja paistorasvan ruokaan jääviä määriä ei ole punnittu.",
-      "issues": [
-        {
-          "ingredient": "ruisjauhoja",
-          "issues": [],
-          "excluded": "Ruisjauhon tartuntamassaa ei punnittu."
-        },
-        {
-          "ingredient": "korppujauhoja",
-          "issues": [],
-          "excluded": "Korppujauhon tartuntamassaa ei punnittu."
-        },
-        {
-          "ingredient": "valkopippuria",
-          "issues": [
-            "Unknown nutrient fibre",
-            "Unknown nutrient polyols",
-            "Unknown nutrient netCarbohydrate"
-          ],
-          "excluded": null
-        },
-        {
-          "ingredient": "voita paistamiseen",
-          "issues": [],
-          "excluded": "Voin jäämää ruoassa ei punnittu."
-        },
-        {
-          "ingredient": "rypsiöljyä paistamiseen",
-          "issues": [],
-          "excluded": "Öljyn jäämää ruoassa ei punnittu."
-        }
-      ]
-    },
-    "glycemic": {
-      "decision": "UNREVIEWED_NO_RELIABLE_GK_CANDIDATE",
-      "reason": "Leivityksen määrä ja GI-näyttö paistolle puuttuvat.",
-      "value": null
-    },
-    "physical_cook_test": false
+      {
+        "path": "reseptit/paaruoat/paistetut-muikut.md",
+        "language": "fi",
+        "slug": "paistetut-muikut",
+        "sha256": "429500f6d119c603704441e918940a2b19f458e9c5687bc1e360f2aa697555d2",
+        "semantic_sha256": "bda4d0ffc4185cbe5f2ff8c3bb2d679e66ca056d192ef06dfe6a0f025af9e400"
+      }
+    ]
   }
 }

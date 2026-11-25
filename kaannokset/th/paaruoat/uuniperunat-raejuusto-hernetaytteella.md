@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/uuniperunat-raejuusto-hernetaytteella.md
 translation_of: uuniperunat-raejuusto-hernetaytteella
-status: draft
+status: published
 servings: 4
 time_total_min: 80
 difficulty: "ง่าย"
@@ -58,3 +58,5 @@ ingredients:
 
 - ไส้มีนม หนึ่งที่คือมันฝรั่งหนึ่งหัวกับไส้หนึ่งในสี่
 - แหล่งอ้างอิงสำหรับเปรียบเทียบวิธีทำ: https://www.martat.fi/reseptit/uuniperunat-ja-jarvikalatayte/
+
+- ยังระบุข้อมูลโภชนาการต่อหนึ่งที่อย่างน่าเชื่อถือไม่ได้

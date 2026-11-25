@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/kasvishernekeitto-juureksilla.md
 translation_of: kasvishernekeitto-juureksilla
-status: draft
+status: published
 servings: 6
 time_total_min: 150
 difficulty: "easy"
@@ -57,3 +57,5 @@ Carrots and parsnips lend sweetness to a hearty soup made with dried green peas.
 ## Notes
 
 - Method reference: https://www.martat.fi/reseptit/kasvishernekeitto/
+
+- Reliable nutrition values could not be determined for one serving.

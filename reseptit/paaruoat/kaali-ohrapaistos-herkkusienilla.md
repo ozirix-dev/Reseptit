@@ -4,7 +4,7 @@ recipe_id: kaali-ohrapaistos-herkkusienilla
 url_slug: kaali-ohrapaistos-herkkusienilla
 category: paaruoka
 language: fi
-status: draft
+status: published
 servings: 6
 time_total_min: 105
 difficulty: "helppo"
@@ -12,7 +12,7 @@ main_ingredient: ["keräkaali", "ohra", "herkkusieni"]
 cooking_method: ["keitto", "uuni"]
 tags: ["arkiruoka"]
 translation_languages: [en, sv, th]
-translation_status: {en: draft, sv: draft, th: draft}
+translation_status: {en: published, sv: published, th: published}
 image:
   src: paaruoat/kaali-ohrapaistos-herkkusienilla.webp
   alt: "Paistosta, jossa näkyy kaalia, ohraa ja herkkusieniä; tekoälykuvitus"
@@ -60,3 +60,5 @@ Herkkusienet ja ohrasuurimot tekevät pehmeäksi hautuneesta kaaliuuniruoasta ru
 
 - Sisältää ohraa ja maitoa.
 - Valmistuksen vertailulähde: https://www.martat.fi/reseptit/kasviskaalilaatikko/
+
+- Annoksen ravintoarvoja ei voitu määrittää luotettavasti.

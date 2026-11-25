@@ -4,7 +4,7 @@ recipe_id: perinteinen-rosolli
 url_slug: perinteinen-rosolli
 category: alkuruoka
 language: fi
-status: draft
+status: published
 servings: 8
 time_total_min: 50
 difficulty: "helppo"
@@ -21,14 +21,17 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 image:
   src: alkuruoat/perinteinen-rosolli.webp
   alt: "Kuutioitua rosollia kulhossa ja erillinen vaaleanpunainen kermakastike; tekoälykuvitus"
   width: 960
   height: 640
+carbs_net_per_serving_g: 13.73
+protein_per_serving_g: 2.05
+fat_per_serving_g: 6.74
 ingredients:
   - amount: 300
     unit: "g"
@@ -82,3 +85,5 @@ Joulupöydän kuutioitu juures-omenasalaatti ja erikseen tarjottava vaaleanpunai
 - Valmistuksen vertailulähde (ohjetta ei kopioitu): https://www.martat.fi/reseptit/rosolli/
 
 - Aika-arvio 50 min koskee valmiiksi keitettyjä ja jäähtyneitä juureksia. Raakojen punajuurten keittäminen ja nopea jäähdyttäminen pidentävät valmistusaikaa. Kastike sisältää maitoa; käytä kylmää kermaa ja puhtaita työvälineitä.
+
+- Saatavilla olevat ravintoarvot ovat ainesosiin perustuvia arvioita annosta kohti.

@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/kasvishernekeitto-juureksilla.md
 translation_of: kasvishernekeitto-juureksilla
-status: draft
+status: published
 servings: 6
 time_total_min: 150
 difficulty: "ง่าย"
@@ -57,3 +57,5 @@ ingredients:
 ## หมายเหตุ
 
 - แหล่งอ้างอิงสำหรับเปรียบเทียบวิธีทำ: https://www.martat.fi/reseptit/kasvishernekeitto/
+
+- ยังระบุข้อมูลโภชนาการต่อหนึ่งที่อย่างน่าเชื่อถือไม่ได้

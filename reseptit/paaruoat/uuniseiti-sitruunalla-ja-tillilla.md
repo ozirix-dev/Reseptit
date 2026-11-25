@@ -4,7 +4,7 @@ recipe_id: uuniseiti-sitruunalla-ja-tillilla
 url_slug: uuniseiti-sitruunalla-ja-tillilla
 category: paaruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 35
 difficulty: "helppo"
@@ -12,7 +12,7 @@ main_ingredient: ["alaskanseiti"]
 cooking_method: ["uuni"]
 tags: ["arkiruoka"]
 translation_languages: [en, sv, th]
-translation_status: {en: draft, sv: draft, th: draft}
+translation_status: {en: published, sv: published, th: published}
 image:
   src: paaruoat/uuniseiti-sitruunalla-ja-tillilla.webp
   alt: "Paistettuja vaaleita kalapaloja, tilliä ja sitruunankuoriraastetta; tekoälykuvitus"
@@ -53,3 +53,5 @@ Alaskanseiti kypsyy nopeasti uunissa sitruunan, tillin ja öljyn kanssa.
 
 - Sisältää kalaa. Sulatusaika ei sisälly 35 minuutin valmistusaikaan.
 - Valmistuksen vertailulähde: https://www.k-ruoka.fi/reseptit/pikamarinoitu-uuniseiti
+
+- Annoksen ravintoarvoja ei voitu määrittää luotettavasti.

@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md
 translation_of: uuniseiti-sitruunalla-ja-tillilla
-status: draft
+status: published
 servings: 4
 time_total_min: 35
 difficulty: "lätt"
@@ -54,3 +54,5 @@ Alaska pollock bakas snabbt i ugnen med citron, dill och olja.
 
 - Innehåller fisk. Upptining ingår inte i tillagningstiden på 35 minuter.
 - Jämförelsekälla för tillagningen: https://www.k-ruoka.fi/reseptit/pikamarinoitu-uuniseiti
+
+- Det gick inte att fastställa tillförlitliga näringsvärden per portion.

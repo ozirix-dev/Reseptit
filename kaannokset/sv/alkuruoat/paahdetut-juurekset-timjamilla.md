@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/alkuruoat/paahdetut-juurekset-timjamilla.md
 translation_of: paahdetut-juurekset-timjamilla
-status: draft
+status: published
 servings: 4
 time_total_min: 45
 difficulty: "lätt"
@@ -19,6 +19,8 @@ image:
   alt: "En plåt med rostade bitar av morot, kålrot och palsternacka; AI-illustration"
   width: 960
   height: 640
+carbs_net_per_serving_g: 13.07
+protein_per_serving_g: 1.73
 ingredients:
   - amount: 300
     unit: g
@@ -53,3 +55,5 @@ Kålrot är basen i det här tillbehöret med morot och palsternacka, utan potat
 ## Anteckningar
 
 - Jämförelsekälla för tillagningen: https://www.martat.fi/reseptit/uunissa-paahdetut-juurekset/
+
+- Tillgängliga näringsvärden per portion är uppskattningar utifrån ingredienserna.

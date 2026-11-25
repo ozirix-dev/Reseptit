@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/jalkiruoat/mustikkarahka.md
 translation_of: mustikkarahka
-status: draft
+status: published
 servings: 4
 time_total_min: 15
 difficulty: "lätt"
@@ -19,6 +19,9 @@ image:
   alt: "Lila blåbärskvarg med hela blåbär i ett glas; AI-illustration"
   width: 960
   height: 640
+carbs_net_per_serving_g: 14.22
+protein_per_serving_g: 9.04
+fat_per_serving_g: 0.93
 ingredients:
   - amount: 220
     unit: g
@@ -45,3 +48,5 @@ Finska blåbär färgar den naturella kvargen lila. En del av bären får vara h
 
 - Innehåller mjölk. Om du använder importerade frysta bär, värm dem helt igenom vid 90 °C i minst 5 minuter eller koka i 2 minuter. Kyl före blandning.
 - Jämförelsekälla för tillagningen: https://www.martat.fi/reseptit/marjarahka/
+
+- Tillgängliga näringsvärden per portion är uppskattningar utifrån ingredienserna.

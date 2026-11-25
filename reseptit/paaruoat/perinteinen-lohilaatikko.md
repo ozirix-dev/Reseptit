@@ -9,7 +9,7 @@ main_ingredient:
 cooking_method:
   - "uuni"
 language: fi
-status: draft
+status: published
 servings: 5
 time_total_min: 105
 difficulty: "helppo"
@@ -54,9 +54,9 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 ---
 
 # Perinteinen lohilaatikko munamaidolla
@@ -75,3 +75,5 @@ Perinteinen suomalainen uuniruoka.
 
 - Sisältää kalaa, maitoa ja kananmunaa.
 - Valmistuksen vertailulähde / Reference: https://www.k-ruoka.fi/reseptit/lohi-perunalaatikko
+
+- Annoksen ravintoarvoja ei voitu määrittää luotettavasti.

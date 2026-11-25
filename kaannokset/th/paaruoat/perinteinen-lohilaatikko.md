@@ -12,7 +12,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-lohilaatikko.md
 translation_of: perinteinen-lohilaatikko
-status: draft
+status: published
 servings: 5
 time_total_min: 105
 difficulty: "ง่าย"
@@ -70,3 +70,5 @@ ingredients:
 
 - มีปลา นม และไข่
 - Valmistuksen vertailulähde / Reference: https://www.k-ruoka.fi/reseptit/lohi-perunalaatikko
+
+- ยังระบุข้อมูลโภชนาการต่อหนึ่งที่อย่างน่าเชื่อถือไม่ได้

@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/uuniseiti-sitruunalla-ja-tillilla.md
 translation_of: uuniseiti-sitruunalla-ja-tillilla
-status: draft
+status: published
 servings: 4
 time_total_min: 35
 difficulty: "ง่าย"
@@ -54,3 +54,5 @@ ingredients:
 
 - มีปลา เวลาเตรียม 35 นาทีไม่รวมเวลาละลายปลา
 - แหล่งอ้างอิงสำหรับเปรียบเทียบวิธีทำ: https://www.k-ruoka.fi/reseptit/pikamarinoitu-uuniseiti
+
+- ยังระบุข้อมูลโภชนาการต่อหนึ่งที่อย่างน่าเชื่อถือไม่ได้

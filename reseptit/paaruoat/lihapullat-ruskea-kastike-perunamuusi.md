@@ -4,7 +4,7 @@ recipe_id: lihapullat-ruskea-kastike-perunamuusi
 url_slug: lihapullat-ruskea-kastike-perunamuusi
 category: paaruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 70
 difficulty: "helppo"
@@ -20,9 +20,9 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 image:
   src: paaruoat/lihapullat-ruskea-kastike-perunamuusi.webp
   alt: "Lihapullia, ruskeaa kastiketta ja perunamuusia lautasella; tekoälykuvitus"
@@ -86,3 +86,5 @@ Lihapullat, ruskea kastike ja perunamuusi on osa suomalaista perinneruokaa.
 
 - Sisältää maitoa, kananmunaa ja vehnää. Tarkista korppujauhon ja mahdollisen liemen tuoteselosteet.
 - https://www.martat.fi/reseptit/lihapullat-haudutetut-valkosipuliperunat-ja-ruskea-kastike/
+
+- Annoksen ravintoarvoja ei voitu määrittää luotettavasti.

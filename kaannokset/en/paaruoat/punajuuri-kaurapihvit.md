@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/punajuuri-kaurapihvit.md
 translation_of: punajuuri-kaurapihvit
-status: draft
+status: published
 servings: 4
 time_total_min: 45
 difficulty: "easy"
@@ -54,3 +54,5 @@ Cooked beetroot gives the patties their deep colour and oats bind the mixture. M
 
 - Contains oats and egg.
 - Method reference: https://www.martat.fi/reseptit/kauraiset-kasvispihvit/
+
+- Reliable nutrition values could not be determined for one serving.

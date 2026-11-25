@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/paaruoat/uuniperunat-raejuusto-hernetaytteella.md
 translation_of: uuniperunat-raejuusto-hernetaytteella
-status: draft
+status: published
 servings: 4
 time_total_min: 80
 difficulty: "easy"
@@ -58,3 +58,5 @@ Spoon cottage cheese with cooked peas, dill and red onion into fluffy baked pota
 
 - The filling contains milk. One serving is one potato and one quarter of the filling.
 - Method reference: https://www.martat.fi/reseptit/uuniperunat-ja-jarvikalatayte/
+
+- Reliable nutrition values could not be determined for one serving.

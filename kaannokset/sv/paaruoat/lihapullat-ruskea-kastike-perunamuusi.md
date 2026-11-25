@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md
 translation_of: lihapullat-ruskea-kastike-perunamuusi
-status: draft
+status: published
 servings: 4
 time_total_min: 70
 difficulty: "lätt"
@@ -81,3 +81,5 @@ Detta är ett traditionellt recept ur det finska hemmaköket.
 
 - Innehåller mjölk, ägg och vete. Kontrollera märkningen på ströbröd och eventuell buljong.
 - https://www.martat.fi/reseptit/lihapullat-haudutetut-valkosipuliperunat-ja-ruskea-kastike/
+
+- Det gick inte att fastställa tillförlitliga näringsvärden per portion.

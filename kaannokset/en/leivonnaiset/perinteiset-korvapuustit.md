@@ -11,7 +11,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/leivonnaiset/perinteiset-korvapuustit.md
 translation_of: perinteiset-korvapuustit
-status: draft
+status: published
 servings: 30
 time_total_min: 150
 difficulty: "easy"
@@ -81,3 +81,5 @@ A traditional Finnish home cooking recipe.
 
 - Contains wheat, milk and egg.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/korvapuustit/
+
+- Reliable nutrition values could not be determined for one serving.

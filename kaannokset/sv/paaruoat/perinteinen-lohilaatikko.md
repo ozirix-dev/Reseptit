@@ -12,7 +12,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/paaruoat/perinteinen-lohilaatikko.md
 translation_of: perinteinen-lohilaatikko
-status: draft
+status: published
 servings: 5
 time_total_min: 105
 difficulty: "lätt"
@@ -70,3 +70,5 @@ En traditionell finsk ugnsrätt.
 
 - Innehåller fisk, mjölk och ägg.
 - Valmistuksen vertailulähde / Reference: https://www.k-ruoka.fi/reseptit/lohi-perunalaatikko
+
+- Det gick inte att fastställa tillförlitliga näringsvärden per portion.

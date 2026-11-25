@@ -4,7 +4,7 @@ recipe_id: perunamuusi-ruokakermalla
 url_slug: perunamuusi-ruokakermalla
 category: alkuruoka
 language: fi
-status: draft
+status: published
 servings: 6
 time_total_min: 35
 difficulty: "helppo"
@@ -12,7 +12,7 @@ main_ingredient: ["peruna", "ruokakerma"]
 cooking_method: ["keitto"]
 tags: ["arkiruoka", "suomalainen"]
 translation_languages: [en, sv, th]
-translation_status: {en: draft, sv: draft, th: draft}
+translation_status: {en: published, sv: published, th: published}
 image:
   src: alkuruoat/perunamuusi-ruokakermalla.webp
   alt: "Vaaleaa perunamuusia keraamisessa kulhossa; tekoälykuvitus"
@@ -44,3 +44,5 @@ Kuohkea muusi syntyy jauhoisesta perunasta ja lämpimästä ruokakermasta. Muusi
 
 - Sisältää maitoa. Keitinvesi valutetaan pois eikä kuulu annokseen.
 - Valmistuksen vertailulähde: https://www.valio.fi/reseptit/perunamuusi-ruokakermalla/
+
+- Annoksen ravintoarvoja ei voitu määrittää luotettavasti.
