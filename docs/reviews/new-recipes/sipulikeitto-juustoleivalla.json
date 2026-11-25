@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "sipulikeitto-juustoleivalla",
+  "source_path": "reseptit/alkuruoat/sipulikeitto-juustoleivalla.md",
+  "source_sha256": "87e14b9f494bddc5e4dc53b5142f2e8619ddff842a6641348f8d7937843c1d07",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/suomalainen-sipulikeitto/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/sipulikeitto-juustoleivalla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Liemi ja yksi juustoleipä per annos. Emmental 27–30 %, mahdolliset liemiallergeenit tarkistetaan pakkauksesta. Vehnä ja maito merkitty."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Liemi ja yksi juustoleipä per annos. Emmental 27–30 %, mahdolliset liemiallergeenit tarkistetaan pakkauksesta. Vehnä ja maito merkitty."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Liemi ja yksi juustoleipä per annos. Emmental 27–30 %, mahdolliset liemiallergeenit tarkistetaan pakkauksesta. Vehnä ja maito merkitty. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Liemi ja yksi juustoleipä per annos. Emmental 27–30 %, mahdolliset liemiallergeenit tarkistetaan pakkauksesta. Vehnä ja maito merkitty. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Julkaistaan vain sidotut kentät. Mustapippurin kuitu ja polyolit puuttuvat. Liemi ja vaalea leipä ovat yleisiä Fineli-viitteitä."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Leivän tuotetta, paahtokäsittelyä ja keittoannosta vastaava GI-sidonta puuttuu. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/sipulikeitto-juustoleivalla.webp",
+    "bytes": 112508,
+    "sha256": "f273214c0df39f70ac3953a927e992f1a633cc689ebd878715690238bef19aa2",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/alkuruoat/sipulikeitto-juustoleivalla.md",
+        "sha256": "de01f454376098f521386ba7427415375a3cb54c4036d34442d9827719d6a788"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/sipulikeitto-juustoleivalla.md",
+        "sha256": "2633c13233e80923166b286692b50f703f5c5e7425d7b7dd4672196510ffd4ff"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/sipulikeitto-juustoleivalla.md",
+        "sha256": "f36246db22e63d17ed9d0bc86653ca49cf0202ed9d7370613799a647a39d37a9"
+      },
+      {
+        "path": "reseptit/alkuruoat/sipulikeitto-juustoleivalla.md",
+        "sha256": "ab7f8f7948ec47ec672f3bf1a8de21fa99a0d31ae450551bbacccc5a2f64744b"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/alkuruoat/sipulikeitto-juustoleivalla.md",
+        "language": "en",
+        "slug": "sipulikeitto-juustoleivalla-en",
+        "sha256": "cf209760092682a7137b33610021f9616db2c9975a860427f2e3b4cbdc97d3dc",
+        "semantic_sha256": "a237fede4b561a8f14ced7d19bd3953a0c61f0be806fab2b99ea5f3a1c87d314"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/sipulikeitto-juustoleivalla.md",
+        "language": "sv",
+        "slug": "sipulikeitto-juustoleivalla-sv",
+        "sha256": "50f3c2ac5524f04eeaf37077434b653abc7013c8ee9a4e87d412388e95f98302",
+        "semantic_sha256": "b496d4552efa7bdd4389895ae9d9fc7765c482c0541bedeca53ba2f372ccc350"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/sipulikeitto-juustoleivalla.md",
+        "language": "th",
+        "slug": "sipulikeitto-juustoleivalla-th",
+        "sha256": "e2ef174db34958a7a113c306ebe0d1fbcc7ca9f2aaf82b8d778e66b7bb7610ca",
+        "semantic_sha256": "cf34692aaf677632f19070cac7a37daf57983deaf75d6a10aa2fac83b86e25f7"
+      },
+      {
+        "path": "reseptit/alkuruoat/sipulikeitto-juustoleivalla.md",
+        "language": "fi",
+        "slug": "sipulikeitto-juustoleivalla",
+        "sha256": "87e14b9f494bddc5e4dc53b5142f2e8619ddff842a6641348f8d7937843c1d07",
+        "semantic_sha256": "180093a47b99e85a2f5f7c9c55050a09e19ebc6ab64efc09b7ca0025851aae28"
+      }
+    ]
+  }
+}

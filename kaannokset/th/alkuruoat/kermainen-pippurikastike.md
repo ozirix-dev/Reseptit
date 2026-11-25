@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/alkuruoat/kermainen-pippurikastike.md
 translation_of: kermainen-pippurikastike
-status: draft
+status: published
 servings: 4
 time_total_min: 25
 difficulty: "ง่าย"
@@ -23,6 +23,8 @@ image:
   alt: "ซอสพริกไทยครีมสีน้ำตาลอ่อนโรยพริกไทยบด"
   width: 960
   height: 640
+protein_per_serving_g: 3.25
+fat_per_serving_g: 25.24
 ingredients:
   - amount: 250
     unit: "ml"
@@ -57,10 +59,10 @@ ingredients:
 
 ## หมายเหตุ
 
-- นี่คือฉบับร่าง ยังไม่ได้ประเมินโภชนาการ ภาระน้ำตาล หรืออนุมัติภาพประกอบขั้นสุดท้าย
+- ภาพประกอบสร้างด้วย AI ปริมาณโปรตีนและไขมันเป็นค่าประมาณต่อหนึ่งหน่วยบริโภค ยังระบุค่าคาร์โบไฮเดรตไม่ได้ ยังไม่สามารถระบุค่าภาระน้ำตาลได้
 - Preparation reference: https://www.k-ruoka.fi/reseptit/naudan-pihvi-ja-pippurikastike
 
-- ภาพประกอบสร้างด้วย AI และอยู่ในระบบควบคุมเวอร์ชันแล้ว ของตกแต่งในภาพไม่รวมในปริมาณส่วนผสม
+- ของตกแต่งในภาพไม่รวมในปริมาณส่วนผสม
 - แหล่งเปรียบเทียบเพิ่มเติมคือซอสพริกไทยของ Valio ที่ใช้หอมแดง น้ำซุป ครีมและมัสตาร์ด สูตร Recipavo นี้ไม่มีคอนญักหรือครีมชีสพริกไทย https://www.valio.fi/reseptit/konjakki-pippurikastike-pihveille/
 - มี **นมและมัสตาร์ด** น้ำซุปเนื้ออาจมีขึ้นฉ่าย โปรดตรวจฉลากน้ำซุปและมัสตาร์ด.
 - เสิร์ฟซอสพริกไทยขณะร้อน ทำส่วนที่เหลือให้เย็นอย่างรวดเร็วในภาชนะตื้นและเก็บต่ำกว่า +6 °C ตรวจส่วนผสมน้ำซุปเนื้อว่ามีขึ้นฉ่ายหรือสารก่อภูมิแพ้อื่นหรือไม่ ซอสนี้มีนมและมัสตาร์ด

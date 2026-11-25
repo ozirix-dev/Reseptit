@@ -35,7 +35,9 @@ voidaan tehdä. Tämän lukutilan odotus ei tarvitse työvarausta.
 
 1. Valmistele lopullinen FI-markdown ja haluttu kielirekisteri. Valmistele indeksi nykyistä guarded commit -työnkulkua varten.
 2. Kun lopullinen FI-tiedosto on Git-indeksissä, luo katselmointipohja komennolla `npm run --silent recipe:publish -- --template reseptit/paaruoat/esimerkki.md`. SHA-256 tulee indeksin blobista. Pohjan päätös on `hold`.
-3. Kirjaa todellinen katselmointipäätös nykyiseen rekisteriin. Olennaisesti muuttuneen sisällön tarkistus uusitaan. Käännösten merkitystiivisteet luetaan nykyisen validoinnin muodostamasta ehdokkaasta.
+3. Anna riippumattomalle katselmoijalle ehdokkaan tarkat HEAD- ja base-SHA:t sekä resepti-, kuva- ja laskentatodisteet. Jaa tarvittaessa ehdokashaara ennen PR:n avaamista, jotta puuttuvat hyväksynnät eivät käynnistä julkaisuehdokkaan buildia.
+4. Kirjaa katselmointipäätös nykyiseen rekisteriin ja sido se lopulliseen sisältöön. Olennaisesti muuttuneen sisällön tarkistus uusitaan. Käännösten merkitystiivisteet luetaan nykyisen validoinnin muodostamasta ehdokkaasta.
+5. Aja alla kuvattu erävalmistelu ennen julkaisu-PR:n avaamista. Avaa Draft-PR, kun julkaisuehdokas läpäisee paikalliset portit.
 
 ## Yksi ehdokas valmiille kielille ja resepteille
 
@@ -49,7 +51,7 @@ Yhden reseptin julkaisu on perusteltu erikoistapaus. Kirjaa PR:ään, miksi rese
 npm run --silent recipe:publish -- --prepare --base APPROVED_BASE_SHA --head CANDIDATE_SHA
 ~~~
 
-Valmistelu edellyttää puhdasta työhaaraa ja GitHubin nykyistä main-SHA:ta. Komento tarkistaa SHA:n GitHub CLI:n lukuyhteydellä ennen paikallisia tarkistuksia ja niiden jälkeen. Muuttunut pohja pysäyttää valmistelun. Komento listaa muuttuneet resepti-identiteetit, julkaisutilassa olevat kielet ja ehdokasta koskevat virheet. Se käyttää uutta FI-julkaisua koskevaa toimitusporttia, muuttuneen sisällön validaattoria ja Git-kuvien overlay-varmenninta. `PROJECT_IMAGE_ROOT` voi osoittaa nykyisellä menettelyllä varmennettuun kuvalähteeseen.
+Valmistelu edellyttää puhdasta työhaaraa ja GitHubin nykyistä main-SHA:ta. Komento tarkistaa SHA:n GitHub CLI:n lukuyhteydellä ennen paikallisia tarkistuksia ja niiden jälkeen. Muuttunut pohja pysäyttää valmistelun. Komento listaa muuttuneet resepti-identiteetit, julkaisutilassa olevat kielet ja ehdokasta koskevat virheet. Se käyttää uutta FI-julkaisua koskevaa toimitusporttia, muuttuneen sisällön validaattoria ja Git-kuvien overlay-varmenninta. Muuttuneiden GK-pending-reseptien ravintotodisteilta vaaditaan sama kelpoisuus kuin CI:n GK-kattavuusauditoinnissa. `PROJECT_IMAGE_ROOT` voi osoittaa nykyisellä menettelyllä varmennettuun kuvalähteeseen.
 
 Jos osa resepteistä ei läpäise, komento näyttää läpäisseet ja pidätetyt identiteetit. Pidätetyille tai luonnoksille ei muodostu hyväksyttyä tiedostolistaa. Kokoa korjattu ehdokas omalle paikalliselle työhaaralle Guardilla ja tarkista myös jaetut manifestit. Uusi ehdokas tarkistetaan alusta ja päätökset sidotaan täsmällisiin versioihin. Valmistelu ei ole PR:n katselmointi, vaadittu CI tai tuotantopäätös.
 

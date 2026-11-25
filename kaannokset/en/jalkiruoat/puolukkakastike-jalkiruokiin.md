@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/jalkiruoat/puolukkakastike-jalkiruokiin.md
 translation_of: puolukkakastike-jalkiruokiin
-status: draft
+status: published
 servings: 6
 time_total_min: 20
 difficulty: "easy"
@@ -23,6 +23,10 @@ image:
   alt: "Deep-red lingonberry sauce in a clear glass bowl with some whole berries; AI illustration"
   width: 960
   height: 640
+carbs_net_per_serving_g: 12.88
+carbs_total_per_serving_g: 13.92
+protein_per_serving_g: 0.23
+fat_per_serving_g: 0.27
 ingredients:
   - amount: 250
     unit: "g"
@@ -51,10 +55,9 @@ A tart berry sauce for ice cream, cheesecake or baked desserts.
 
 ## Notes
 
-- This is an editorial draft. No numeric nutrition estimates have been approved for publication or displayed; glycaemic load remains undetermined. The AI-generated illustration still requires final approval.
+- The illustration was generated with AI. Nutrition values are ingredient-based estimates per serving. Glycaemic load could not be determined.
 - Preparation reference: https://www.k-ruoka.fi/reseptit/puolukkakastike
 
-- The previous mismatched illustration has been replaced. The new AI illustration remains subject to editorial approval.
 - Martat's tested berry sauce heats sugar syrup before adding berry purée; K-Ruoka's lingonberry sauce is not boiled. The cooked Recipavo version with some whole berries is an independent adaptation, not tested by either source. https://www.martat.fi/reseptit/marjakastike/
 - The listed ingredients contain no intentionally added milk, egg, wheat or nuts. Check labels for possible cross-contact; no gluten-free claim has been approved.
 - The stated total time is for serving the sauce warm. For cold serving, allow additional cooling and refrigeration time.

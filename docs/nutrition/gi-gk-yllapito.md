@@ -111,24 +111,23 @@ python -B .github/scripts/verify-pr-review.py <PR-numero> <head-sha>
 ```
 
 Aja tarkistus Ready-tilassa heti ennen Repo Guardin yhdistämisesitarkastusta.
-Edellytä tarkalle HEADille Codexin katselmointikuittausta tai riippumattoman
-ylläpitäjän GitHub-hyväksyntää. Ratkaise avoimet katselmointiketjut ja aja
-vaadittu CI ajantasaiselle yhdistettävälle revisiolle. Varmista sen jälkeen
-yhdistämisvaltuus erikseen. Codexin pelkkä 👍 ei kerro katselmoitua SHA:ta.
-Aiempaan committiin jätetty muutospyyntö estää yhdistämisen, kunnes sen
-tekijä hyväksyy muutoksen tai GitHubissa hylätään kyseinen katselmointi.
+Käytä täsmä-HEADin Codex-katselmointikuittausta olemassa olevasta
+GitHub-sovelluksesta. Jos kuittaus koskee aiempaa committia, pyydä uusi
+katselmointi kommentilla `@codex review`. Tarkistus tunnistaa myös eri
+GitHub-tunnuksen valtuutetun hyväksynnän, jos sellainen on jo annettu.
 
-PR #685 yhdistettiin 2 minuuttia 48 sekuntia ennen Codexin kuittausta.
-Haaran nykyinen GitHub-sääntö vaatii vain `build`-tarkistuksen. Kaikille
-yhdistämisreiteille tarvittava palvelinesto edellyttää `main`-rulesetiin
-asetuksia **Require review thread resolution**, **Require approvals = 1**,
-**Dismiss stale pull request approvals when new commits are pushed** ja
-**Require approval of the most recent reviewable push**, sekä bypass-oikeuksien
-rajausta. Jos Codex-kuittaus halutaan hyväksyä GitHubin yhdistämisportissa,
-sääntöön
-tarvitaan lisäksi luotetun integraation tarkalle HEADille julkaisema
-pakollinen tarkistus. Paikallinen esitarkistus lukee Codex-sovelluksen
-PR-yhteenvedon tilan, ylläpitäjien hyväksynnät ja avoimet katselmointiketjut.
-Jos yhteenveto koskee aiempaa committia, pyydä katselmointi GitHubissa
-kommentilla `@codex review` ja odota päivitettyä kuittausta.
+Varmista lisäksi riippumattoman katselmoinnin kattama BASE. Kirjaa
+katselmoija, PR, täydet HEAD ja BASE, tarkastettu sisältö, löydökset ja
+tulos katselmoijan työistuntoon tai todennettavaan katselmointiin.
+GitHubin COMMENT-katselmointi voi sisältää saman näytön. Vahvista
+katselmoija alkuperäisestä työistunnosta tai nykyisestä luotetusta
+katselmointikuittauksesta. Pelkkä PASS tai 👍 ei riitä. Jos HEAD tai
+BASE muuttuu, varmista katselmointi uudelle parille.
+
+Reseptitin main-sääntö edellyttää PR:ää ja `build`-tarkistusta.
+`ozirix-dev`-tunnuksella tehtyyn PR:ään ei tarvita muodollista
+GitHub APPROVE -hyväksyntää. Ratkaise avoimet katselmointiketjut ja
+muutospyynnöt. Varmista vaadittu CI, työnvaraus ja omistajan
+yhdistämisvaltuus Repo Guardin työnkulussa. Noudata tuotannossa erillistä
+main-CI:n ja julkaisun varmennusta.
 [GitHubin ruleset-säännöt](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets)

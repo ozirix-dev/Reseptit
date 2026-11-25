@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "paistetut-muikut",
+  "source_path": "reseptit/paaruoat/paistetut-muikut.md",
+  "source_sha256": "dd5fc342f9203a1779f84c2b5550855e6bb0c55c50bc9c02fca1ff1e4c89c3f4",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/paistetut-muikut/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/paistetut-muikut.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Perattu muikku kypsennetään läpikypsäksi. TH-aineosa, SV-öljyn nimitys sekä EN-otsikko on tarkistettu. Kala, ruis, maito ja korppujauhon tarkistus ilmoitetaan."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Perattu muikku kypsennetään läpikypsäksi. TH-aineosa, SV-öljyn nimitys sekä EN-otsikko on tarkistettu. Kala, ruis, maito ja korppujauhon tarkistus ilmoitetaan."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Perattu muikku kypsennetään läpikypsäksi. TH-aineosa, SV-öljyn nimitys sekä EN-otsikko on tarkistettu. Kala, ruis, maito ja korppujauhon tarkistus ilmoitetaan. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Perattu muikku kypsennetään läpikypsäksi. TH-aineosa, SV-öljyn nimitys sekä EN-otsikko on tarkistettu. Kala, ruis, maito ja korppujauhon tarkistus ilmoitetaan. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Leivityksen ja paistorasvan ruokaan jääviä määriä ei ole punnittu."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Leivityksen määrä ja GI-näyttö paistolle puuttuvat. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/paistetut-muikut.webp",
+    "bytes": 146188,
+    "sha256": "40914853b246918dd6ae8b693f44a286b3cd859a1e5ad69da67cc51f30bde467",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/paaruoat/paistetut-muikut.md",
+        "sha256": "6e9147b4f07451714d1ba797e229cbc980c0707e26c34985e50205015b3a8e15"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/paistetut-muikut.md",
+        "sha256": "245da670680d8d34172eb4c9bc21550eade3d30b35212f37c84254d66b494e2e"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/paistetut-muikut.md",
+        "sha256": "1296632cbb1872b29e264183935dd582ab3e25d1faeca6a31ba03a741e21cc7d"
+      },
+      {
+        "path": "reseptit/paaruoat/paistetut-muikut.md",
+        "sha256": "74b6b07fa9dd8f7cab64e20e39c096c2d299e328ac2abc8af9095e87a7a39d42"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/paistetut-muikut.md",
+        "language": "en",
+        "slug": "paistetut-muikut-en",
+        "sha256": "9fc45e68235d8fd5110d5258f8a6bd2c77b2d42674a573a942ace5a363a4d0a8",
+        "semantic_sha256": "491c6d70fc67bc1e731f4167aefa64f1f97609099af05cd591e286c226554954"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/paistetut-muikut.md",
+        "language": "sv",
+        "slug": "paistetut-muikut-sv",
+        "sha256": "bdb8fb0ed9b0930d31d766896b6db82842c04d37b9e5687d593af41e24aa6f06",
+        "semantic_sha256": "e328154eb4b76f190d959f9a9526749af27d32c5634827894a8cabda01552d59"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/paistetut-muikut.md",
+        "language": "th",
+        "slug": "paistetut-muikut-th",
+        "sha256": "96709cb19dc4fdb205185cdd2b296280f837406957be541964c08d876f2349be",
+        "semantic_sha256": "554cba60703bc2ceede0967f11dd753274ddfbbbaaf999640344102fc7e084ab"
+      },
+      {
+        "path": "reseptit/paaruoat/paistetut-muikut.md",
+        "language": "fi",
+        "slug": "paistetut-muikut",
+        "sha256": "dd5fc342f9203a1779f84c2b5550855e6bb0c55c50bc9c02fca1ff1e4c89c3f4",
+        "semantic_sha256": "cd7b99788c1796dddff4b9098405d76efd24dc2e118dc80aafdaac63808c1619"
+      }
+    ]
+  }
+}

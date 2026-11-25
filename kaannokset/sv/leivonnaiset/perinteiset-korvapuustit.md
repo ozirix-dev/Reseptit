@@ -11,13 +11,18 @@ language: sv
 source_language: fi
 source_recipe: reseptit/leivonnaiset/perinteiset-korvapuustit.md
 translation_of: perinteiset-korvapuustit
-status: draft
+status: published
 servings: 30
 time_total_min: 150
 difficulty: "lätt"
 tags:
   - "finsk"
   - "traditionell"
+image:
+  src: leivonnaiset/perinteiset-korvapuustit.webp
+  alt: "Finska kanelbullar med synliga kanelspiraler och pärlsocker; AI-illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "ml"
@@ -62,7 +67,7 @@ ingredients:
 
 # Traditionella finska kanelbullar
 
-Ett traditionellt recept från det finska hemmaköket.
+Kardemummadoftande bulldeg rullas kring en kanelfyllning. Bullarna toppas med pärlsocker före gräddning.
 
 ## Tillagning
 
@@ -74,5 +79,7 @@ Ett traditionellt recept från det finska hemmaköket.
 
 ## Anteckningar
 
-- Redaktionellt utkast, inte provlagat av Recipavo. Bild, närings- och GK-beräkningar samt slutlig översättnings- och allergenkontroll återstår.
+- Innehåller vete, mjölk och ägg.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/korvapuustit/
+
+- Det gick inte att fastställa tillförlitliga näringsvärden per portion.

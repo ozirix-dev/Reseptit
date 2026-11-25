@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/alkuruoat/sinappikastike-joulukinkulle.md
 translation_of: sinappikastike-joulukinkulle
-status: draft
+status: published
 servings: 6
 time_total_min: 20
 difficulty: "enkel"
@@ -63,7 +63,8 @@ En varm, mild senapssås till skinka utan steksky.
 
 ## Anteckningar
 
-- Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Den AI-genererade illustrationsbilden finns nu i grenen, men bildgranskning återstår.
+- Kontrollera allergener på förpackningarna.
+- Illustrationen är AI-genererad. Näringsvärden per portion kan inte anges. Den glykemiska belastningen kunde inte fastställas.
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/kastike-kinkulle-ilman-paistolienta
 - Marttas provlagade skinksås använder vetemjöl, senap, grädde och steksky. Här används i stället grönsaksbuljong, så recepten är inte identiska. https://www.martat.fi/reseptit/kinkun-kastike/
 - Innehåller **mjölk, vete och senap**. Grönsaksbuljong kan innehålla selleri; kontrollera buljongens och senapens märkning.

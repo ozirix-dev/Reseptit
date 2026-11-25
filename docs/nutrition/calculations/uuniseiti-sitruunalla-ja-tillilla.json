@@ -1,0 +1,172 @@
+{
+  "recipeId": "uuniseiti-sitruunalla-ja-tillilla",
+  "sourceHash": "dd8f52c21c4353b2023bcbc9225cf5b095c8abab8126d90be548a6e2b577eb8e",
+  "calculatedAt": "2026-11-25",
+  "servings": 4,
+  "scope": "Yksi annos reseptin 4 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Sulatuksen valumaa ei ole määrällistetty ja kuoriraasteen oma lähde puuttuu.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "sulatettua ruodotonta alaskanseitifileetä, valutettuna",
+      "amount": 500,
+      "unit": "g",
+      "state": "sulatettua ruodotonta alaskanseitifileetä, valutettuna",
+      "matchEvidence": "Vertaile ainesosaan nimettyä esimerkkituotetta ja ilmoitusperustaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "pirkka-6410405098672",
+        "name": "Pirkka alaskanseiti annospaloina",
+        "sourceUrl": "https://www.k-ruoka.fi/kauppa/tuote/pirkka-alaskanseiti-annospaloina-4x100g-6410405098672",
+        "per100g": {
+          "kcal": 77,
+          "carbohydrate": 0,
+          "sugars": 0,
+          "protein": 17,
+          "fat": 0.8,
+          "fibre": null,
+          "polyols": null
+        },
+        "licence": "Valmistajan tai tuotemerkin julkinen tuotetieto.",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "polyolsSourceVerified": false,
+        "state": "sulatettua ruodotonta alaskanseitifileetä, valutettuna",
+        "retrievedAt": "2026-11-25"
+      }
+    },
+    {
+      "item": "rypsiöljyä",
+      "amount": 20,
+      "unit": "g",
+      "state": "rypsiöljyä",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-535-release-20",
+        "name": "RYPSIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/535",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        },
+        "state": "rypsiöljyä",
+        "retrievedAt": "2026-11-25"
+      }
+    },
+    {
+      "item": "sitruunamehua",
+      "amount": 20,
+      "unit": "g",
+      "state": "sitruunamehua",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-11557-release-20",
+        "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11557",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "fibre": 0.1,
+          "polyols": 0,
+          "protein": 0.31,
+          "fat": 0
+        },
+        "state": "sitruunamehua",
+        "retrievedAt": "2026-11-25"
+      }
+    },
+    {
+      "item": "hienoksi raastettua sitruunankuoren keltaista osaa",
+      "amount": 2,
+      "unit": "g",
+      "state": "hienoksi raastettua sitruunankuoren keltaista osaa",
+      "excludedReason": "Keltaisen sitruunankuoren ravintotietuetta ei varmistettu."
+    },
+    {
+      "item": "tuoretta tilliä",
+      "amount": 10,
+      "unit": "g",
+      "state": "tuoretta tilliä",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-369-release-20",
+        "name": "TILLI, TUORE",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/369",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0.9,
+          "fibre": 2.8,
+          "polyols": 0,
+          "protein": 3.69,
+          "fat": 0.8
+        },
+        "state": "tuoretta tilliä",
+        "retrievedAt": "2026-11-25"
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 3,
+      "unit": "g",
+      "state": "suolaa",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-79-release-20",
+        "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "state": "suolaa",
+        "retrievedAt": "2026-11-25"
+      }
+    }
+  ],
+  "batchId": "batch-33309",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Sulatuksen valumaa ei ole määrällistetty ja kuoriraasteen oma lähde puuttuu."
+}

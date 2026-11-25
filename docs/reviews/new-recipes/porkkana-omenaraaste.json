@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "porkkana-omenaraaste",
+  "source_path": "reseptit/alkuruoat/porkkana-omenaraaste.md",
+  "source_sha256": "a7dc4fe87e8f30495dad45765919947a47f12d2b142219a65c2a687cc7c5fa3d",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/chilinen-porkkanasalaatti/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/porkkana-omenaraaste.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Kuorittu porkkana ja kuorellinen, siemenkodaton omena punnitaan syötävinä. Tarjotaan viileänä samana päivänä. Vertailulähteen mausteet ja pähkinät eivät kuulu sovitukseen."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kuorittu porkkana ja kuorellinen, siemenkodaton omena punnitaan syötävinä. Tarjotaan viileänä samana päivänä. Vertailulähteen mausteet ja pähkinät eivät kuulu sovitukseen."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kuorittu porkkana ja kuorellinen, siemenkodaton omena punnitaan syötävinä. Tarjotaan viileänä samana päivänä. Vertailulähteen mausteet ja pähkinät eivät kuulu sovitukseen. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kuorittu porkkana ja kuorellinen, siemenkodaton omena punnitaan syötävinä. Tarjotaan viileänä samana päivänä. Vertailulähteen mausteet ja pähkinät eivät kuulu sovitukseen. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Neljä kanonisesti laskettua annosarvoa. Fineli 300, 28941 ja 11557. Kaikki kolme ainetta jaetaan neljään; omena kuorineen ja ilman siemenkotaa."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Raastetun porkkanan ja omenan reseptikohtainen GI-näyttö puuttuu. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/porkkana-omenaraaste.webp",
+    "bytes": 86444,
+    "sha256": "095837a0c42412b568254c12e4261f51712e0b9261e1a39afd08f4b1def2de1b",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/alkuruoat/porkkana-omenaraaste.md",
+        "sha256": "719c07e9129239e48eecd393d9c8da55c348b4a2762f3f63d38c0b27cdfecddc"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/porkkana-omenaraaste.md",
+        "sha256": "11d6a276b2bba3d118bb4a3beddb4504f5ec3c6ac179303b21dcd60d29d0fdf5"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/porkkana-omenaraaste.md",
+        "sha256": "c1aa707e922a76c65a3c7e5484be65248cd05e4f7ed579846efc1e4b6972f5e2"
+      },
+      {
+        "path": "reseptit/alkuruoat/porkkana-omenaraaste.md",
+        "sha256": "069603f9c5af2a362cc6c7af3cd4f73f83fd8bf676383754e270e58081cdc21d"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/alkuruoat/porkkana-omenaraaste.md",
+        "language": "en",
+        "slug": "porkkana-omenaraaste-en",
+        "sha256": "6e02047912e041a4483e362457106472e2346a32e2fdc1f0ebeea661d1b5dac0",
+        "semantic_sha256": "0352f644a667586b6379bef216fd2de5d836239d539d5c2b7f9d85aba518a6a1"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/porkkana-omenaraaste.md",
+        "language": "sv",
+        "slug": "porkkana-omenaraaste-sv",
+        "sha256": "e854e2331003292a700b28e73f80a521962fd1e3ca76d0ca397bec444697a0f3",
+        "semantic_sha256": "4cfde4e5baaca00cf26eab36ae0b449a82904ea709cf5c4bfca5d5d8febc3692"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/porkkana-omenaraaste.md",
+        "language": "th",
+        "slug": "porkkana-omenaraaste-th",
+        "sha256": "2ab6f4e13d462cb9d1b284b75472046150839cda8d4c7fa67ba32cfb583db9c1",
+        "semantic_sha256": "c26b91a712dc848bb0f795e04d8fe68508e176e88eb67730bfee83218b9c3ec2"
+      },
+      {
+        "path": "reseptit/alkuruoat/porkkana-omenaraaste.md",
+        "language": "fi",
+        "slug": "porkkana-omenaraaste",
+        "sha256": "a7dc4fe87e8f30495dad45765919947a47f12d2b142219a65c2a687cc7c5fa3d",
+        "semantic_sha256": "8d267ae1acffe7da3e43ec918c9232f60c8cc2676e3325747a81cb5bd6832d3d"
+      }
+    ]
+  }
+}

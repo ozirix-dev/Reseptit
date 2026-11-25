@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "tomaatti-valkopapupata",
+  "source_path": "reseptit/paaruoat/tomaatti-valkopapupata.md",
+  "source_sha256": "cfa6b7c8a2088bf7918e5124df48947fbdc02c4d336bc3be332b902b316bf143",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/helppo-papupata"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/tomaatti-valkopapupata.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Kypsät säilykepavut huuhdellaan, valutetaan, punnitaan ja kuumennetaan loppuun asti tomaattipohjassa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kypsät säilykepavut huuhdellaan, valutetaan, punnitaan ja kuumennetaan loppuun asti tomaattipohjassa."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kypsät säilykepavut huuhdellaan, valutetaan, punnitaan ja kuumennetaan loppuun asti tomaattipohjassa. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kypsät säilykepavut huuhdellaan, valutetaan, punnitaan ja kuumennetaan loppuun asti tomaattipohjassa. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Valutettujen tölkkipapujen tarkka koostumus puuttuu, samoin oreganon kuitu/polyolit."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valkopavun lajia ja säilykekäsittelyä vastaava GI-sidonta puuttuu. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/tomaatti-valkopapupata.webp",
+    "bytes": 126188,
+    "sha256": "b630f4f4cf446a9738f2030f557cf9914ea9141aa86c764c6dda924b3a5b521b",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/paaruoat/tomaatti-valkopapupata.md",
+        "sha256": "93dd41dc1a0de508603eae9666f323b1f1485c35721713f7d46439d5181d6acd"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/tomaatti-valkopapupata.md",
+        "sha256": "5ec4c70cfef99e63fb89da524ccfc663fca51c051467a04c3be3900cfd2dda02"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/tomaatti-valkopapupata.md",
+        "sha256": "a223f439950b449a9cb203b92472f48943085f85e9c4ad2959a3c69cd2147022"
+      },
+      {
+        "path": "reseptit/paaruoat/tomaatti-valkopapupata.md",
+        "sha256": "a9c775d8634734899f89655c6ad78b17495a894fb1bde8f357253ff77bc225de"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/tomaatti-valkopapupata.md",
+        "language": "en",
+        "slug": "tomaatti-valkopapupata-en",
+        "sha256": "2be295e7231527c00cb509baa9dfa7a4280da91ed10381f78a768b0274909995",
+        "semantic_sha256": "a718be321dbcbf3f399f505c81feab9bfd70a2c4c17b6d0dc09f40574f054e93"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/tomaatti-valkopapupata.md",
+        "language": "sv",
+        "slug": "tomaatti-valkopapupata-sv",
+        "sha256": "7b02fc136b9806ddb222c0e5f023b23d0413c8d090c9b22314e45d41bd9d2c96",
+        "semantic_sha256": "0fa574d09497ed308e374c66f20f4121f3da716ab6d73aac50678faa8f0ce18c"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/tomaatti-valkopapupata.md",
+        "language": "th",
+        "slug": "tomaatti-valkopapupata-th",
+        "sha256": "eb84107acbe1c4c2644655aa1d662d41d731d96f721aaab4f9a09f6a24c32d7e",
+        "semantic_sha256": "d84293beb93854f1dd5482ba62db6f8771c66ddf95cca4b5d13affb2721dc5cf"
+      },
+      {
+        "path": "reseptit/paaruoat/tomaatti-valkopapupata.md",
+        "language": "fi",
+        "slug": "tomaatti-valkopapupata",
+        "sha256": "cfa6b7c8a2088bf7918e5124df48947fbdc02c4d336bc3be332b902b316bf143",
+        "semantic_sha256": "11d0b75ac4b2111d21844708d85fd9737b0db955afa6f5f63c95868c5078a1ea"
+      }
+    ]
+  }
+}

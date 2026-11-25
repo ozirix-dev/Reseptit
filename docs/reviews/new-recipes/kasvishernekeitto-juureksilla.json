@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kasvishernekeitto-juureksilla",
+  "source_path": "reseptit/paaruoat/kasvishernekeitto-juureksilla.md",
+  "source_sha256": "0e06aeb7062e3c9d584c620e709db45d963ff608be4e4e552bc7a5a8f3e4c833",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/kasvishernekeitto/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kasvishernekeitto-juureksilla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Herneet liotetaan jääkaapissa 8–12 tuntia kypsennysajan lisäksi. Liotusvesi vaihdetaan ja herneet kypsennetään läpikotaisin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Herneet liotetaan jääkaapissa 8–12 tuntia kypsennysajan lisäksi. Liotusvesi vaihdetaan ja herneet kypsennetään läpikotaisin."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Herneet liotetaan jääkaapissa 8–12 tuntia kypsennysajan lisäksi. Liotusvesi vaihdetaan ja herneet kypsennetään läpikotaisin. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Herneet liotetaan jääkaapissa 8–12 tuntia kypsennysajan lisäksi. Liotusvesi vaihdetaan ja herneet kypsennetään läpikotaisin. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Kuivan herneen 371 ei yksin vastaa liotettua hernettä, kun liotusvesi kaadetaan pois. Kypsää saantoa ei ole punnittu."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Kuivatun, liotetun ja keitetyn herneen annos- ja GI-sidonta puuttuu. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/kasvishernekeitto-juureksilla.webp",
+    "bytes": 83778,
+    "sha256": "308bb179057f19a13698d7b09dc30f79e3f6056ac134b84efebd925bc723bbe6",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/paaruoat/kasvishernekeitto-juureksilla.md",
+        "sha256": "e1783fb886b665c3646f0b2bac5fdc8ebd07bcaaad1d8611619a64b5aed2f00c"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kasvishernekeitto-juureksilla.md",
+        "sha256": "2b1fae431398d4f877f87d6357ff03d3361b3c6faea636163747c9fbde712f71"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kasvishernekeitto-juureksilla.md",
+        "sha256": "b6112c3893180d6ef61559ee0f8c44e19d22daa3aaab287fee72209d7b0443ad"
+      },
+      {
+        "path": "reseptit/paaruoat/kasvishernekeitto-juureksilla.md",
+        "sha256": "583fc906b8e762aa2c87bb16f28446498646785e8d902f4db4c32a5a55ffb04d"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/kasvishernekeitto-juureksilla.md",
+        "language": "en",
+        "slug": "kasvishernekeitto-juureksilla-en",
+        "sha256": "e628d57b5a6132e2ae0d3668f85e169b778065bad18840798a27af1a719193ee",
+        "semantic_sha256": "1f256c4ffbe7608ffffd327730c0c1f3efe0b1c63e6e9b2eedeb0ef3f1aa5ac0"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kasvishernekeitto-juureksilla.md",
+        "language": "sv",
+        "slug": "kasvishernekeitto-juureksilla-sv",
+        "sha256": "a854d6f6e460cb6509b668151998d42d1438c85686c36d088512fa84df01b1f1",
+        "semantic_sha256": "63ee6ec5b6a6382148249c89e69cfa91a7538542c18a199258c5262bf743b472"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kasvishernekeitto-juureksilla.md",
+        "language": "th",
+        "slug": "kasvishernekeitto-juureksilla-th",
+        "sha256": "feec8948e9fe774e7bd3c46471c13b99a17fa91c9a2768e5d387c22f435ad5c3",
+        "semantic_sha256": "ea7ee631e9fcfcaafc812df64094efa37f55f8fad054b863cf8c2bcd044a3bb7"
+      },
+      {
+        "path": "reseptit/paaruoat/kasvishernekeitto-juureksilla.md",
+        "language": "fi",
+        "slug": "kasvishernekeitto-juureksilla",
+        "sha256": "0e06aeb7062e3c9d584c620e709db45d963ff608be4e4e552bc7a5a8f3e4c833",
+        "semantic_sha256": "ae614a2b83cdf62171b0aec7b00547f4fc5c83ebe3015b396bcebc57dd15d5d0"
+      }
+    ]
+  }
+}

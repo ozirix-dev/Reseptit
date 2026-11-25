@@ -4,7 +4,7 @@ recipe_id: kermainen-pippurikastike
 url_slug: kermainen-pippurikastike
 category: alkuruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 25
 difficulty: "helppo"
@@ -20,14 +20,16 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 image:
   src: alkuruoat/kermainen-pippurikastike.webp
   alt: "Vaaleanruskeaa kermaista pippurikastiketta kulhossa, mustapippurirouhetta pinnalla"
   width: 960
   height: 640
+protein_per_serving_g: 3.25
+fat_per_serving_g: 25.24
 ingredients:
   - amount: 250
     unit: "ml"
@@ -62,10 +64,9 @@ Täyteläinen pippurikastike pihveille, porsaanfileelle ja perunalisukkeille.
 
 ## Muistiinpanot
 
-- Sisältö on toimituksellinen luonnos, ravintoarvo- ja GK-arvio sekä kuvan lopullinen hyväksyntä puuttuvat.
+- Kuva on tekoälyllä luotu havainnekuva. Ilmoitetut proteiini- ja rasvamäärät ovat annosarvioita. Hiilihydraattimäärät jäävät määrittämättä. Glykeemistä kuormaa (GK) ei ole voitu määrittää.
 - Valmistuksen vertailulähde: https://www.k-ruoka.fi/reseptit/naudan-pihvi-ja-pippurikastike
 
-- Kuva on tekoälyn tuottama havainnekuva, joka on nyt versionhallinnassa. Kuvan tarjoilukoristeet eivät kuulu ainesosamääriin.
 - Vertailulähde myös: Valion sipulia, lientä, kermaa ja sinappia sisältävä pippurikastike. Recipavon versio ei sisällä konjakkia eikä Valion pippurijuustokermaa. https://www.valio.fi/reseptit/konjakki-pippurikastike-pihveille/
 - Sisältää **maitoa ja sinappia**. Lihaliemi voi sisältää selleriä; tarkista liemen ja sinapin tuotetiedot.
 - Tarjoa pippurikastike kuumana. Jos sitä jää yli, jäähdytä nopeasti matalassa astiassa ja säilytä jääkaapissa alle +6 °C:ssa. Lihaliemen tarkka tuotekoostumus on tarkistettava mahdollisen sellerin ja muiden allergeenien vuoksi; kastikkeessa on maitoa ja sinappia.

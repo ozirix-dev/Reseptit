@@ -2,17 +2,17 @@
   "schema_version": 1,
   "recipe_id": "perinteinen-munakastike",
   "source_path": "reseptit/alkuruoat/perinteinen-munakastike.md",
-  "source_sha256": "7608f084d657282cd7deace77c96855542744961e8db090b8e130af9d9b5b197",
-  "decision": "hold",
-  "reviewed_by": "Chat 3 – rajattu kirjallinen aines- ja menetelmäkatselmointi; julkaisuhyväksyntä avoin",
-  "reviewed_at": "2026-11-21",
+  "source_sha256": "4e7e23ef9738e515f7cfede100c115d4d41d5c70135089efb3d02242bc5fb7f9",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
   "origin": {
     "kind": "adaptation",
     "sources": [
       "https://www.martat.fi/reseptit/kananmunakastike/"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/perinteinen-munakastike.json",
   "checks": {
     "duplicates": {
       "status": "pass",
@@ -35,12 +35,12 @@
       "notes": "Marttojen 4 annos: valmiiksi keitetyt munat; Recipavon 4 annosta / 20 min sisältää saman lähtötilan. Jos munat keitetään itse, ohje varaa lisäaikaa. Saanto edelleen arvio."
     },
     "nutrition": {
-      "status": "pending",
-      "notes": "Fineli Release20 #689 täysmaito 400g, #500 voi 30g, #110 vehnäjauhot 30g, #8513 täysin keitetty ja kuorittu kananmuna 120g, #369 tilli 15g, #30 suola 3g. Valkopippurin 0,3g ravintosisältö jätetty pois konservatiivisella massaan perustuvalla rajauksella, ei nollana: enintään 0,08g kutakin makroa/annos ja 0,68 kcal/annos; alle nutrition-model -toleranssin. Resepti 4 annosta. TäsmäinputHash 62e86f7d10d579ad254c652fb645c489ddd63449d72432b87ce8fe0c6256ea0c. Laskennalliset arvot annosta kohden netto 10,53g, kokonaisCH 10,90g, proteiini 7,89g, rasva 12,52g. Macro arithmetic reviewed independently against model formulas; not a laboratory measurement or approval of whole recipe. GK undetermined. Still HOLD.\n22.11.2026 CI-yhteensopivuus: koska FI-lähde on edelleen status:draft, tämä täysin dokumentoitu AUTOMATED ONLY -laskentatodiste on siirretty pois ainoastaan julkaistuille FI-resepteille sallitusta docs/nutrition/calculations/-hakemistosta katselmointikandidaatiksi: docs/nutrition/candidates/draft-calculations/perinteinen-munakastike.json. Neljä makroarvoa ovat edelleen ainoastaan Draft-luonnoksessa näkyvä ennakkoarvio. nutrition:pass ja virallinen nutrition_evidence eivät vielä ole myönnettyjä; paluu varsinaiseen calculations/-hakemistoon edellyttää hyväksyttyä julkaisuversiota ja täsmä-HEADin tarkistusta. Koko resepti pysyy decision:hold. Neljä ehdollista makrokenttää poistettu FI/EN/SV/TH-julkaisuluonnoksista 22.11.2026. Aiempi laskentaehdokas pysyy muuttumattomana docs/nutrition/candidates/draft-calculations/perinteinen-munakastike.json -tiedostossa. Ei uutta hyväksyntää."
+      "status": "pass",
+      "notes": "Kanoninen laskenta tarkistettu. Kaikki neljä annosarviota toistuvat lähtöaineiston Fineli- ja AFCD-riveiltä. Chat-2 varmisti tämän ravintopäätöksen katselmoidulle versiolle."
     },
     "glycemic": {
       "status": "unavailable",
-      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+      "notes": "Maito- ja vehnäjauhopohjalle tässä keitetyssä kastikkeessa ei ole varmennettua valmistusta vastaavaa GI-sidontaa."
     }
   },
   "supplementary_evidence": {
@@ -49,7 +49,76 @@
     ],
     "image_path": "kuvat/alkuruoat/perinteinen-munakastike.webp",
     "image_sha256": "fca180045177530f88bacfaf254e2f0716de7c604ea67b777014775256a8ea97",
-    "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
+    "image_review": "Kuvan ruokalajivastaavuus hyväksytty Chat-2:n katselmoinnissa. Kokki-Codex varmisti kuvan tavut ja dekoodauksen.",
     "physical_cook_test": false
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": 10.53,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/perinteinen-munakastike.webp",
+    "bytes": 42394,
+    "sha256": "fca180045177530f88bacfaf254e2f0716de7c604ea67b777014775256a8ea97",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI–EN/SV/TH. Vertailtu ainesosat ja määrät, käyttötila, valmistusvaiheet, lämpötilat ja ajat, allergeenit, säilytys, ravintokentät ja kuvan kuvaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/perinteinen-munakastike.md",
+        "language": "fi",
+        "slug": "perinteinen-munakastike",
+        "sha256": "4e7e23ef9738e515f7cfede100c115d4d41d5c70135089efb3d02242bc5fb7f9",
+        "semantic_sha256": "4d324cae95c82ca37c225329169568d72ae60bcef485c05b49586084fe465410"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/perinteinen-munakastike.md",
+        "language": "en",
+        "slug": "perinteinen-munakastike-en",
+        "sha256": "2914f364c10fae7629504d178a235e07b3f18f271503762311b03726e708a012",
+        "semantic_sha256": "83ca8eb86d30bacaf357bcb1baa9e768ba0f3734c37dbc69330b57e3cdaa389a"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/perinteinen-munakastike.md",
+        "language": "sv",
+        "slug": "perinteinen-munakastike-sv",
+        "sha256": "db4d8be7979a674f428d4d233c6cede3e1eef5fc5ea5e63e70a5705c20ce2f9c",
+        "semantic_sha256": "25a9c42ce490b8c215a7ad2e14d32d7c0f4eae7133b8116ecef4822444ee0080"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/perinteinen-munakastike.md",
+        "language": "th",
+        "slug": "perinteinen-munakastike-th",
+        "sha256": "2eea77ed2f9a811d76a36261f0fee29c0eb2791c02f22624f56229d5c1f43f61",
+        "semantic_sha256": "9ff1ff86b116943b1e43db2a8003da396ec976da0b776e92ea3fd7ba4080110b"
+      }
+    ],
+    "nutrition_sha256": "d46fdaccd71a9863206c5166b646617f89e5dabfc1b8fefb76cdf39f9e15a9c3",
+    "batch_id": "batch-33308",
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat.",
+    "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144"
+  },
+  "review_reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+  "independent_review": {
+    "reviewed_head": "a4fe57938bd3189032a0b7109fc25016391e5fc2",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/993#issuecomment-7154350144",
+    "decision": "pass"
   }
 }

@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/alkuruoat/perinteinen-ruskea-kastike.md
 translation_of: perinteinen-ruskea-kastike
-status: draft
+status: published
 servings: 4
 time_total_min: 25
 difficulty: "ง่าย"
@@ -23,6 +23,8 @@ image:
   alt: "ซอสเกรวี่สีน้ำตาลมันวาวในเหยือกซอสสีขาว มีมีตบอลและมันบดอยู่ด้านหลัง"
   width: 960
   height: 640
+protein_per_serving_g: 6.23
+fat_per_serving_g: 7.38
 ingredients:
   - amount: 35
     unit: "g"
@@ -54,7 +56,8 @@ ingredients:
 
 ## หมายเหตุ
 
-- ตรวจสารก่อภูมิแพ้จากฉลาก ยังไม่ได้คำนวณโภชนาการหรือค่าภาระน้ำตาล ภาพประกอบสร้างด้วย AI อยู่ในสาขานี้แล้ว แต่ยังต้องผ่านการตรวจทาน
+- ตรวจสารก่อภูมิแพ้จากฉลาก
+- ภาพประกอบสร้างด้วย AI ปริมาณโปรตีนและไขมันเป็นค่าประมาณต่อหนึ่งหน่วยบริโภค ยังระบุค่าคาร์โบไฮเดรตไม่ได้ ยังไม่สามารถระบุค่าภาระน้ำตาลได้
 - Preparation reference (independently adapted): https://www.k-ruoka.fi/reseptit/ruskea-kastike
 - มี **นม ข้าวสาลี และถั่วเหลือง** ซีอิ๊วอาจมีข้าวสาลี และน้ำซุปอาจมีขึ้นฉ่าย โปรดตรวจฉลากผลิตภัณฑ์.
 - เสิร์ฟซอสร้อนทันที หากเตรียมล่วงหน้าให้ทำให้เย็นอย่างรวดเร็วในภาชนะตื้น เก็บในตู้เย็นต่ำกว่า +6 °C แล้วอุ่นให้ร้อนทั่วก่อนเสิร์ฟ ตรวจฉลากน้ำซุปและซีอิ๊วว่ามีขึ้นฉ่าย ข้าวสาลี หรือถั่วเหลืองหรือไม่

@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/alkuruoat/kylma-piparjuurikastike.md
 translation_of: kylma-piparjuurikastike
-status: draft
+status: published
 servings: 4
 time_total_min: 20
 difficulty: "enkel"
@@ -23,6 +23,8 @@ image:
   alt: "Ljus pepparrotssås i glasskål med riven pepparrot och örter"
   width: 960
   height: 640
+protein_per_serving_g: 1.65
+fat_per_serving_g: 6.03
 ingredients:
   - amount: 200
     unit: "g"
@@ -57,7 +59,8 @@ En frisk pepparrotssås till rostbiff, rökt fisk och rödbetssallad.
 
 ## Anteckningar
 
-- Kontrollera allergener på förpackningarna. Receptspecifika näringsvärden och glykemisk belastning har inte beräknats. Den AI-genererade bilden finns i denna gren och inväntar granskning.
+- Kontrollera allergener på förpackningarna.
+- Illustrationen är AI-genererad. Protein och fett är uppskattade värden per portion. Kolhydratvärden saknas. Den glykemiska belastningen kunde inte fastställas.
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/piparjuurikastike/
 - En annan Valio-källa använder färskriven pepparrot i kall crème fraîche-sås medan den första använder pepparrotspasta. Kryddningen här är en egen anpassning. https://www.valio.fi/reseptit/graavattu-piparjuurilohi/
 - Innehåller **mjölk** (crème fraîche). Använd rengjord pepparrot avsedd som livsmedel och förvara såsen kall.
