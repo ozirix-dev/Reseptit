@@ -59,4 +59,3 @@ GK jätetään avoimeksi kaikille 20 luonnokselle. Ehtona on käytettävissä ol
 ## Aineiston tarkistus
 
 Jokaisella luonnoksella on yksi visuaalisesti tarkistettu 3:2-tekoälykuvitus ja kielikohtainen vaihtoehtoinen teksti. Välipalojen tiedostot ovat 1200 × 800 ja leivonnaisten 960 × 640. Kieli-, kuva- ja valmistuslähteet kuuluvat Chat-2:n riippumattomaan katselmointiin. Reseptit säilyvät luonnoksina ennen katselmointia ja julkaisumenettelyä.
-
