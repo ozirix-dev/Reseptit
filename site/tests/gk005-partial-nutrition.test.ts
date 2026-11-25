@@ -13,6 +13,7 @@ import { verifyNutritionEvidence } from "../scripts/nutrition-evidence";
 import { portionPreparationHash, loadReviewedPortions, projectPortionEvidence } from "../scripts/gk-portion-projection";
 import { recipeBindingHash, exactRecipeTextBindingMatches } from "../scripts/glycemic-load-recipe-binding";
 import { recipeTextForApprovedSnapshot } from "../scripts/approved-recipe-note-edits";
+import { semanticHash } from "../scripts/translation-semantic-review";
 import { siteContent } from "../src/generated/content.generated";
 import { glycemicLoadPilotResults, glycemicLoadPortions } from "../src/generated/glycemic-load-pilot.generated";
 
@@ -42,6 +43,8 @@ test("GK-005 reconstructs only eight exact predecessor files and rejects mutated
     assert.equal(after.carbs_net_per_serving_g, null);
     assert.equal(after.carbs_total_per_serving_g, null);
     assert.equal(sha(live.replaceAll("\r\n", "\n")), transition.afterSha256);
+    assert.equal(semanticHash({ data: before, content: parseMarkdown(prior)!.content }), transition.priorSemanticSha256, file);
+    assert.equal(semanticHash({ data: after, content: parseMarkdown(live)!.content }), transition.candidateSemanticSha256, file);
   }
   assert.throws(() => restoreGk005Source("reseptit/paaruoat/marokkolainen-couscous.md", ""), /unknown GK-005 source/);
 });

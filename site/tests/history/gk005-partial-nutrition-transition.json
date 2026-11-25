@@ -22,7 +22,9 @@
           "protein_per_serving_g: 13.57",
           "protein_per_serving_g: null"
         ]
-      ]
+      ],
+      "priorSemanticSha256": "47023f402b9d23e242898951eaead930673efecf63b2b084937cd83b294cfed3",
+      "candidateSemanticSha256": "1d8ca225d39fbc7c5ece9de4721ddb36efb56599a351fc3af580c292c4b4592f"
     },
     "kaannokset/en/paaruoat/janssoninkiusaus-juuriselleri.md": {
       "recipeId": "janssoninkiusaus-juuriselleri",
@@ -43,7 +45,9 @@
           "protein_per_serving_g: 13.57",
           "protein_per_serving_g: null"
         ]
-      ]
+      ],
+      "priorSemanticSha256": "6cc54f8014644d3657fa2f934eeaea1e2f4babb56b2793c25cec34ce9fa834e0",
+      "candidateSemanticSha256": "1d91c4af1acbc63531ef61b3d8897af584c97e67ebefc6c3eb1fc947353429e1"
     },
     "kaannokset/sv/paaruoat/janssoninkiusaus-juuriselleri.md": {
       "recipeId": "janssoninkiusaus-juuriselleri",
@@ -64,7 +68,9 @@
           "protein_per_serving_g: 13.57",
           "protein_per_serving_g: null"
         ]
-      ]
+      ],
+      "priorSemanticSha256": "718fcb5e0204f58709eb133e7738f3db8da0a4a7c3ab6f449f004c99bb965272",
+      "candidateSemanticSha256": "d1098d5b2911d15bce44b55cbc886cbd3a3c377f21250bd962bc4cfbe509296d"
     },
     "kaannokset/th/paaruoat/janssoninkiusaus-juuriselleri.md": {
       "recipeId": "janssoninkiusaus-juuriselleri",
@@ -85,7 +91,9 @@
           "protein_per_serving_g: 13.57",
           "protein_per_serving_g: null"
         ]
-      ]
+      ],
+      "priorSemanticSha256": "e5a247bbef76dc5890b3536072b63ffd0a0eb4c28b835f20168066ab5c205244",
+      "candidateSemanticSha256": "a708f4d454cb13680fd318890c380744ffdc19f65a9d7b7e54381a01acabf4a9"
     },
     "reseptit/paaruoat/paprikainen-vhh-gulassi.md": {
       "recipeId": "paprikainen-vhh-gulassi",
@@ -106,7 +114,9 @@
           "protein_per_serving_g: 40.79",
           "protein_per_serving_g: null"
         ]
-      ]
+      ],
+      "priorSemanticSha256": "f74e4286ebb3ff59537bc24203ed11125b597a82d97b81a3233dcaaef132b445",
+      "candidateSemanticSha256": "7d9214c960b10a56a8801c53030fb86383a949892ebaf1ceb3580935a55346ba"
     },
     "kaannokset/en/paaruoat/paprikainen-vhh-gulassi.md": {
       "recipeId": "paprikainen-vhh-gulassi",
@@ -127,7 +137,9 @@
           "protein_per_serving_g: 40.79",
           "protein_per_serving_g: null"
         ]
-      ]
+      ],
+      "priorSemanticSha256": "a65f312b8e9e0377df7492fa2a15bff0ca76ca6a8a6c0c86e5a9b160b29ba2e4",
+      "candidateSemanticSha256": "c987777f2e92c71894cd67052945d1d377941f2554b080a17405dd418dbee7ae"
     },
     "kaannokset/sv/paaruoat/paprikainen-vhh-gulassi.md": {
       "recipeId": "paprikainen-vhh-gulassi",
@@ -148,7 +160,9 @@
           "protein_per_serving_g: 40.79",
           "protein_per_serving_g: null"
         ]
-      ]
+      ],
+      "priorSemanticSha256": "19fb665caa574568db874507cd9b3ef4f838820bc6401b3969ef351c7493b1ca",
+      "candidateSemanticSha256": "624c8dbf03e4b1b83312bb4c2f7f87f49d082da6d6c4ceb02e58c5f59421b07c"
     },
     "kaannokset/th/paaruoat/paprikainen-vhh-gulassi.md": {
       "recipeId": "paprikainen-vhh-gulassi",
@@ -169,7 +183,9 @@
           "protein_per_serving_g: 40.79",
           "protein_per_serving_g: null"
         ]
-      ]
+      ],
+      "priorSemanticSha256": "22a842b00fc62de6b6cf2235f0e1f80111891404e0c3a76ed75d721ea731dc93",
+      "candidateSemanticSha256": "c40b6114e0098437b36f3711b1bfa92443d84b009b10d21f52795912e1c05ef2"
     }
   },
   "recipes": {
@@ -440,5 +456,9 @@
         }
       }
     }
-  }
+  },
+  "priorSemanticRegistryGitBlob": "28f59353138d1a5fe269ff1dfa710c75ca009a62",
+  "priorBatch142GitBlob": "37063efc231fcf17decaaa422049c330ef771ff2",
+  "priorExactGkRegistryGitBlob": "3b48f5608df58d88fb1a119966cf6090fe4c755b",
+  "priorPortionRegistryGitBlob": "8ad27e238236352ed8c52b959d797fe2a35a4bb1"
 }
