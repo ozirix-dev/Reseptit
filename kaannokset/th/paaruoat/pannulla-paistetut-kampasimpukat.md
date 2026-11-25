@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/pannulla-paistetut-kampasimpukat.md"
 translation_of: "pannulla-paistetut-kampasimpukat"
+image:
+  src: paaruoat/pannulla-paistetut-kampasimpukat.webp
+  alt: "หอยเชลล์จี่สามชิ้นผิวสีทองกับเลมอนหั่นเสี้ยว"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 12
     unit: "ชิ้น"

@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/kookoskalapata-pinaatilla.md"
 translation_of: "kookoskalapata-pinaatilla"
+image:
+  src: paaruoat/kookoskalapata-pinaatilla.webp
+  alt: "Coconut fish and spinach stew with rice, mango chutney and lime"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 1
     unit: "tbsp"

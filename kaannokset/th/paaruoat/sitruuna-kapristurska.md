@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/sitruuna-kapristurska.md"
 translation_of: "sitruuna-kapristurska"
+image:
+  src: paaruoat/sitruuna-kapristurska.webp
+  alt: "เนื้อปลาค็อดจี่สีทองในซอสเนยเลมอนกับเคเปอร์"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 2
     unit: "ชิ้น"

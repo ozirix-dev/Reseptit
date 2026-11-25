@@ -15,6 +15,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: paaruoat/katkarapusaganaki.webp
+  alt: "Tomaattikastikkeessa kypsennettyjä katkarapuja, murennettua fetaa ja basilikaa"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 500
     unit: "g"

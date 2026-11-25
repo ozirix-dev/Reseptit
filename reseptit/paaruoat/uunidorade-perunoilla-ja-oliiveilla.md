@@ -15,6 +15,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: paaruoat/uunidorade-perunoilla-ja-oliiveilla.webp
+  alt: "Kokonainen uunidorade perunoiden, mustien oliivien ja sitruunan kera"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 450
     unit: "g"

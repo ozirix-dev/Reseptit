@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/kalapiirakka-perunakuorrutteella.md"
 translation_of: "kalapiirakka-perunakuorrutteella"
+image:
+  src: paaruoat/kalapiirakka-perunakuorrutteella.webp
+  alt: "Fish pie with a browned mashed potato topping and a creamy fish and pea filling"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 700
     unit: "g"

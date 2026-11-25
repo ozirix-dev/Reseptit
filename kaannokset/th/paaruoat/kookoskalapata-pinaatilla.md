@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/kookoskalapata-pinaatilla.md"
 translation_of: "kookoskalapata-pinaatilla"
+image:
+  src: paaruoat/kookoskalapata-pinaatilla.webp
+  alt: "ปลาตุ๋นกะทิกับผักโขม เสิร์ฟคู่ข้าว ชัทนีย์มะม่วง และมะนาว"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 1
     unit: "ช้อนโต๊ะ"

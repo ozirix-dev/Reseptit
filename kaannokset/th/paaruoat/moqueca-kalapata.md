@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/moqueca-kalapata.md"
 translation_of: "moqueca-kalapata"
+image:
+  src: paaruoat/moqueca-kalapata.webp
+  alt: "เนื้อปลาสีขาวเป็นชิ้นกับพริกหวานแดงในน้ำซุปมะเขือเทศใส่กะทิ"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 500
     unit: "g"

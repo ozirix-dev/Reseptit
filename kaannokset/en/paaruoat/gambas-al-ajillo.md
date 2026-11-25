@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/gambas-al-ajillo.md"
 translation_of: "gambas-al-ajillo"
+image:
+  src: paaruoat/gambas-al-ajillo.webp
+  alt: "Prawns with garlic, chilli and parsley in olive oil"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 680
     unit: "g"

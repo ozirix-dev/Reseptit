@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/katkarapusaganaki.md"
 translation_of: "katkarapusaganaki"
+image:
+  src: paaruoat/katkarapusaganaki.webp
+  alt: "Räkor i tomatsås med smulad fetaost och basilika"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 500
     unit: "g"

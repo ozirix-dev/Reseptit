@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/makrilli-sinappi-parmesaanikuorrutteella.md"
 translation_of: "makrilli-sinappi-parmesaanikuorrutteella"
+image:
+  src: paaruoat/makrilli-sinappi-parmesaanikuorrutteella.webp
+  alt: "เนื้อปลาแมกเคอเรลอบหน้ามัสตาร์ดกับพาร์เมซานสีทอง"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 4
     unit: "ชิ้น"

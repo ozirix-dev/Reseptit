@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/kalasormet-ja-hernemuusi.md"
 translation_of: "kalasormet-ja-hernemuusi"
+image:
+  src: paaruoat/kalasormet-ja-hernemuusi.webp
+  alt: "Frasiga fiskpinnar, grönt ärtmos och en citronklyfta"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 600
     unit: "g"

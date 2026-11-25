@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/sardiinit-tomaatti-yrttikastikkeessa.md"
 translation_of: "sardiinit-tomaatti-yrttikastikkeessa"
+image:
+  src: paaruoat/sardiinit-tomaatti-yrttikastikkeessa.webp
+  alt: "Sardiner med silvrigt skinn uppåt i en röd tomatsås"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 750
     unit: "g"

@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/tonnikala-oliivipasta.md"
 translation_of: "tonnikala-oliivipasta"
+image:
+  src: paaruoat/tonnikala-oliivipasta.webp
+  alt: "สปาเกตตีใส่ทูน่า มะกอกดำ และผักโขม"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 240
     unit: "g"

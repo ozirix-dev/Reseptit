@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/kampelafileet-ruskistetulla-voilla.md"
 translation_of: "kampelafileet-ruskistetulla-voilla"
+image:
+  src: paaruoat/kampelafileet-ruskistetulla-voilla.webp
+  alt: "เนื้อปลาลิ้นหมาแผ่นบางกับเนยสีน้ำตาล เคเปอร์ และเลมอน"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 4
     unit: "ชิ้น"

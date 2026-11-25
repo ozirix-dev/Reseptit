@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/uunidorade-perunoilla-ja-oliiveilla.md"
 translation_of: "uunidorade-perunoilla-ja-oliiveilla"
+image:
+  src: paaruoat/uunidorade-perunoilla-ja-oliiveilla.webp
+  alt: "Whole baked sea bream with potatoes, black olives and lemon"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 450
     unit: "g"

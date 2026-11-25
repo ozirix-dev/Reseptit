@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/katkarapurisotto.md"
 translation_of: "katkarapurisotto"
+image:
+  src: paaruoat/katkarapurisotto.webp
+  alt: "Räk- och fänkålsrisotto med rucola på toppen"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 300
     unit: "g"
