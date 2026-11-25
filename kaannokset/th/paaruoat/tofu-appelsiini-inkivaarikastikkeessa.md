@@ -17,6 +17,11 @@ carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
+image:
+  src: paaruoat/tofu-appelsiini-inkivaarikastikkeessa.webp
+  alt: "เต้าหู้หั่นเต๋าผัดจนเหลืองกับพริกหวานแดงหั่นเส้นและผักสีเขียว"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 350
     unit: "g"

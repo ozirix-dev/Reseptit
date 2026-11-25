@@ -17,6 +17,11 @@ carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
+image:
+  src: paaruoat/palak-chana-pinaattikikherneet.webp
+  alt: "Chickpeas in a thick green spinach sauce"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 7.2
     unit: "dl"

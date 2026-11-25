@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
+image:
+  src: alkuruoat/halloumi-kasvisvartaat.webp
+  alt: "Vartaissa ruskistunutta halloumia, kesäkurpitsaa, keltaista paprikaa ja kirsikkatomaatteja"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 120
     unit: "g"

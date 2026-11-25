@@ -17,6 +17,11 @@ carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
+image:
+  src: alkuruoat/paahdettu-kaali-tahinikastikkeella.webp
+  alt: "Rostade kålklyftor ringlade med ljus tahinisås"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 0.5
     unit: "st"

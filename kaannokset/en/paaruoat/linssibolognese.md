@@ -17,6 +17,11 @@ carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
+image:
+  src: paaruoat/linssibolognese.webp
+  alt: "Spaghetti topped with tomato and lentil sauce"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 45
     unit: "ml"

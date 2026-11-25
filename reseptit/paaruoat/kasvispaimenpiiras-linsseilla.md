@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
+image:
+  src: paaruoat/kasvispaimenpiiras-linsseilla.webp
+  alt: "Uunivuoallinen linssipaistos perunamuusikuorella, josta nostetaan annosta"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 30
     unit: "ml"

@@ -17,6 +17,11 @@ carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
+image:
+  src: paaruoat/kukkakaali-mantelipihvit.webp
+  alt: "แผ่นดอกกะหล่ำทอดสีเหลืองทอง มีชิ้นหนึ่งผ่าให้เห็นด้านใน"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 0.5
     unit: "ชิ้น"

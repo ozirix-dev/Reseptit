@@ -17,6 +17,11 @@ carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
+image:
+  src: paaruoat/kvinoa-taytteiset-paprikat.webp
+  alt: "Red and yellow pepper halves filled with quinoa in a baking dish"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 2.4
     unit: "dl"
