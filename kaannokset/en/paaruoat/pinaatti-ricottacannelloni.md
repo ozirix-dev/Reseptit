@@ -73,10 +73,10 @@ Fresh lasagne sheets are rolled around spinach and ricotta, then baked with toma
 
 ## Preparation
 
-1. Heat the oven to 190 °C. Wash and drain the spinach. Wilt it in a saucepan in batches. Let it cool enough to handle, squeeze out excess water and chop.
+1. Heat the oven to 190 °C. Wash and drain the spinach. Wilt it in a saucepan in batches without adding oil. Let it cool enough to handle, squeeze out excess water and chop.
 2. Soften the chopped garlic in the oil. Add the passata, chopped tomatoes, balsamic vinegar and sugar. Cover and simmer for 10 minutes, stirring occasionally. Add the basil and spread the sauce in a large shallow baking dish.
 3. Mix the spinach with the ricotta, a quarter of the mascarpone, 50 g grated cheese and half the nutmeg. In another bowl mix the egg, the remaining mascarpone and 50 g grated cheese.
-4. Divide the spinach filling among the six lasagne sheets and roll them up. Cut each roll in half across the middle and arrange in the tomato sauce. Cover with the mascarpone mixture and sprinkle with the remaining cheese and nutmeg.
+4. Check the package to see whether the lasagne sheets need softening before rolling. Divide the spinach filling among the six lasagne sheets and roll them up. Cut each roll in half across the middle and arrange in the tomato sauce. Cover with the mascarpone mixture and sprinkle with the remaining cheese and nutmeg.
 5. Bake for 30–40 minutes until the pasta is soft, the sauce bubbles and the centre reaches at least 71 °C. Rest briefly before serving.
 
 ## Notes

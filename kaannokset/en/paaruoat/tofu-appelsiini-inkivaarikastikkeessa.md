@@ -43,7 +43,7 @@ ingredients:
     item: "red bell pepper"
   - amount: 250
     unit: "g"
-    item: "fresh snow peas"
+    item: "fresh flat snow pea pods"
   - amount: 2
     unit: "pcs"
     item: "spring onions"

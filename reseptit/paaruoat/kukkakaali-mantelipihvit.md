@@ -71,7 +71,7 @@ Höyrytetystä kukkakaalista paistetaan pieniä pihvejä, joissa maistuvat mintt
 
 1. Irrota kukkakaalin nuput ja höyrytä ne pehmeiksi niin, että ne vielä pitävät muotonsa. Valuta hyvin ja hienonna.
 2. Sekoita kulhossa mantelijauhe, tapiokatärkkelys, juustokumina, fenkoli, kurkuma, cayenne, suola ja mustapippuri. Lisää kevyesti vatkatut munat, hienonnettu valkosipuli, minttu, timjami ja kukkakaali.
-3. Kuumenna öljyä pannulla. Nosta pannulle kasaisia ruokalusikallisia taikinaa ja litistä ne kevyesti. Paista erissä noin 3 minuuttia kummaltakin puolelta, kunnes pinta on kullanruskea ja sisus on hyytynyt ja vähintään 71 °C. Säädä lämpöä tarvittaessa.
+3. Kuumenna öljyä pannulla. Nosta pannulle kukkurallisia ruokalusikallisia taikinaa ja litistä ne kevyesti. Paista erissä noin 3 minuuttia kummaltakin puolelta, kunnes pinta on kullanruskea ja sisus on hyytynyt ja vähintään 71 °C. Säädä lämpöä tarvittaessa.
 
 ## Muistiinpanot
 

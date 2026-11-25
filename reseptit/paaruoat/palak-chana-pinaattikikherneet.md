@@ -62,7 +62,7 @@ ingredients:
 
 # Palak chana eli pinaattikikherneet
 
-Hienonnettu pinaatti ja tuore korianteri sekoitetaan tomaattiin ja kikherneisiin loppukypsennyksessä.
+Soseutettu pinaatti ja tuore korianteri sekoitetaan tomaattiin ja kikherneisiin loppukypsennyksessä.
 
 ## Valmistus
 

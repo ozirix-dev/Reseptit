@@ -72,10 +72,10 @@ Tuorelasagnelevyt rullataan pinaatti-ricottatäytteen ympärille ja paistetaan t
 
 ## Valmistus
 
-1. Kuumenna uuni 190 °C:seen. Pese ja valuta pinaatti. Kuumenna se kattilassa muutamassa erässä, kunnes lehdet painuvat kasaan. Anna jäähtyä käsittelylämpöön, purista vesi pois ja hienonna.
+1. Kuumenna uuni 190 °C:seen. Pese ja valuta pinaatti. Kuumenna se kattilassa ilman lisäöljyä muutamassa erässä, kunnes lehdet painuvat kasaan. Anna jäähtyä käsittelylämpöön, purista vesi pois ja hienonna.
 2. Kuullota silputtu valkosipuli öljyssä. Lisää passata, tomaattimurska, balsamiviinietikka ja sokeri. Hauduta kannen alla 10 minuuttia ja sekoita välillä. Lisää basilika ja levitä kastike ison matalan uunivuoan pohjalle.
 3. Sekoita pinaatti, ricotta, neljännes mascarponesta, 50 g juustoraastetta ja puolet muskottipähkinästä. Sekoita toisessa kulhossa muna, loppu mascarpone ja 50 g juustoraastetta.
-4. Jaa pinaattitäyte kuudelle lasagnelevylle ja rullaa. Puolita rullat poikittain ja asettele ne tomaattikastikkeeseen. Peitä mascarponeseoksella ja ripottele pinnalle loput juustosta ja muskottipähkinästä.
+4. Tarkista pakkauksesta, pitääkö lasagnelevyt pehmentää ennen rullaamista. Jaa pinaattitäyte kuudelle lasagnelevylle ja rullaa. Puolita rullat poikittain ja asettele ne tomaattikastikkeeseen. Peitä mascarponeseoksella ja ripottele pinnalle loput juustosta ja muskottipähkinästä.
 5. Paista 30–40 minuuttia, kunnes pasta on pehmeää, kastike kuplii ja keskusta on vähintään 71 °C. Anna vetäytyä hetki ennen tarjoilua.
 
 ## Muistiinpanot

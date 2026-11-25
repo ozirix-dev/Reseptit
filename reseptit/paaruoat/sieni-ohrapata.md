@@ -54,7 +54,7 @@ ingredients:
     item: "laakerinlehteä"
   - amount: 1.2
     unit: "dl"
-    item: "kypsentämättömiä ohrasuurimoita"
+    item: "kypsentämättömiä hiottuja ohrasuurimoita eli helmiohraa"
   - amount: null
     unit: ""
     item: "suolaa ja mustapippuria maun mukaan"

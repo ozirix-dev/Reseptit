@@ -43,7 +43,7 @@ ingredients:
     item: "röd paprika"
   - amount: 250
     unit: "g"
-    item: "färska sockerärter"
+    item: "färska platta sockerärtskidor"
   - amount: 2
     unit: "st"
     item: "salladslökar"

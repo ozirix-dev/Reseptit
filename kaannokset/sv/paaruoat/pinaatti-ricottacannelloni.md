@@ -73,10 +73,10 @@ Färska lasagneplattor fylls med spenat och ricotta, rullas ihop och bakas i tom
 
 ## Tillagning
 
-1. Värm ugnen till 190 °C. Skölj och låt spenaten rinna av. Fräs den i en kastrull i omgångar tills den sjunker ihop. Låt svalna tills den går att hantera, krama ur vätskan och hacka.
+1. Värm ugnen till 190 °C. Skölj och låt spenaten rinna av. Värm den i en kastrull i omgångar utan extra olja tills den sjunker ihop. Låt svalna tills den går att hantera, krama ur vätskan och hacka.
 2. Fräs den hackade vitlöken i oljan tills den mjuknar. Tillsätt passerade tomater, krossade tomater, balsamvinäger och socker. Sjud under lock i 10 minuter och rör om då och då. Tillsätt basilikan och bred ut såsen i en stor grund ugnsform.
 3. Blanda spenaten med ricotta, en fjärdedel av mascarponen, 50 g riven ost och hälften av muskotnöten. Blanda ägget med resten av mascarponen och 50 g riven ost i en annan skål.
-4. Fördela spenatfyllningen på de sex lasagneplattorna och rulla ihop. Dela varje rulle på tvären och lägg i tomatsåsen. Täck med mascarponeblandningen och strö över resten av osten och muskotnöten.
+4. Läs på paketet om lasagneplattorna behöver mjukas upp innan de rullas. Fördela spenatfyllningen på de sex lasagneplattorna och rulla ihop. Dela varje rulle på tvären och lägg i tomatsåsen. Täck med mascarponeblandningen och strö över resten av osten och muskotnöten.
 5. Grädda i 30–40 minuter tills pastan är mjuk, såsen bubblar och mitten når minst 71 °C. Låt vila en stund före servering.
 
 ## Anteckningar

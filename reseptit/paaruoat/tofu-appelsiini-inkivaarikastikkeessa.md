@@ -42,7 +42,7 @@ ingredients:
     item: "punainen paprika"
   - amount: 250
     unit: "g"
-    item: "tuoreita sokeriherneenpalkoja"
+    item: "tuoreita litteitä sokeriherneenpalkoja"
   - amount: 2
     unit: "kpl"
     item: "kevätsipulia"
