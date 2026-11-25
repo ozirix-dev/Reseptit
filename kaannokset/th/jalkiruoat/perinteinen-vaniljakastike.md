@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/jalkiruoat/perinteinen-vaniljakastike.md
 translation_of: perinteinen-vaniljakastike
-status: draft
+status: published
 servings: 6
 time_total_min: 25
 difficulty: "ง่าย"
@@ -24,6 +24,8 @@ image:
   alt: "ซอสคัสตาร์ดวานิลลาสีเหลืองอ่อนเนื้อเนียนในชามแก้ว มีพายเบอร์รีอยู่ด้านหลัง เป็นภาพที่สร้างด้วย AI"
   width: 960
   height: 640
+protein_per_serving_g: 3.06
+fat_per_serving_g: 4.1
 ingredients:
   - amount: 450
     unit: "g"
@@ -58,7 +60,7 @@ ingredients:
 
 ## หมายเหตุ
 
-- นี่คือฉบับร่าง ยังไม่ได้ประเมินโภชนาการ ภาระน้ำตาล หรืออนุมัติภาพประกอบขั้นสุดท้าย
+- ภาพประกอบสร้างด้วย AI ปริมาณโปรตีนและไขมันเป็นค่าประมาณต่อหนึ่งหน่วยบริโภค ยังระบุค่าคาร์โบไฮเดรตไม่ได้ ยังไม่สามารถระบุค่าภาระน้ำตาลได้
 - Preparation reference: https://www.martat.fi/reseptit/vaniljakastike/
 
 - ภาพ AI เดิมที่ไม่ตรงกับสูตรถูกเปลี่ยนเป็นภาพซอสคัสตาร์ดวานิลลาเนื้อเนียนพร้อมพายแล้ว ภาพใหม่ยังต้องผ่านการอนุมัติขั้นสุดท้ายจากกองบรรณาธิการ

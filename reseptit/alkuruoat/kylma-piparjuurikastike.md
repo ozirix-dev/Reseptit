@@ -4,7 +4,7 @@ recipe_id: kylma-piparjuurikastike
 url_slug: kylma-piparjuurikastike
 category: alkuruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 20
 difficulty: "helppo"
@@ -20,14 +20,16 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 image:
   src: alkuruoat/kylma-piparjuurikastike.webp
   alt: "Vaaleaa piparjuurikastiketta lasikulhossa, pinnalla raastettua piparjuurta ja yrttejä"
   width: 960
   height: 640
+protein_per_serving_g: 1.65
+fat_per_serving_g: 6.03
 ingredients:
   - amount: 200
     unit: "g"
@@ -62,7 +64,8 @@ Raikas piparjuurikastike paahtopaistille, savukalalle ja rosollille.
 
 ## Muistiinpanot
 
-- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn luoma havainnekuva tässä haarassa. Hyväksyntä puuttuu.
+- Tarkista allergeenit pakkausmerkinnöistä.
+- Kuva on tekoälyllä luotu havainnekuva. Ilmoitetut proteiini- ja rasvamäärät ovat annosarvioita. Hiilihydraattimäärät jäävät määrittämättä. Glykeemistä kuormaa (GK) ei ole voitu määrittää.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.valio.fi/reseptit/piparjuurikastike/
 - Toinen Valion vertailuohje käyttää kylmässä crème fraîche -kastikkeessa tuoretta raastettua piparjuurta. Aiempi ohje käytti valmista piparjuuritahnaa. Maustaminen on tässä itsenäisesti sovitettu. https://www.valio.fi/reseptit/graavattu-piparjuurilohi/
 - Sisältää **maitoa** (crème fraîche). Käytä ainoastaan ruokakäyttöön tarkoitettua, puhdistettua piparjuurta; pidä valmis kastike kylmässä.

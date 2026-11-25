@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/alkuruoat/kylma-piparjuurikastike.md
 translation_of: kylma-piparjuurikastike
-status: draft
+status: published
 servings: 4
 time_total_min: 20
 difficulty: "easy"
@@ -23,6 +23,8 @@ image:
   alt: "Pale horseradish sauce in a glass bowl topped with grated horseradish and herbs"
   width: 960
   height: 640
+protein_per_serving_g: 1.65
+fat_per_serving_g: 6.03
 ingredients:
   - amount: 200
     unit: "g"
@@ -57,7 +59,8 @@ A tangy horseradish sauce for roast beef, smoked fish and beetroot salad.
 
 ## Notes
 
-- Check packaging for allergens. Recipe-specific nutrition and glycaemic load are not yet assessed. The AI-generated image is included in this branch, pending approval.
+- Check packaging for allergens.
+- The illustration was generated with AI. Protein and fat are estimates per serving. Carbohydrate values are unavailable. Glycaemic load could not be determined.
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/piparjuurikastike/
 - Another Valio reference uses freshly grated horseradish in cold crème fraîche sauce, whereas the earlier sauce uses horseradish paste. Seasoning here is independently adapted. https://www.valio.fi/reseptit/graavattu-piparjuurilohi/
 - Contains **milk** (crème fraîche). Use cleaned, food-grade horseradish only and keep the prepared sauce chilled.

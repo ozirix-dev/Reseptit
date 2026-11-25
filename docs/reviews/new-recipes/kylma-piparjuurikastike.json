@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "kylma-piparjuurikastike",
   "source_path": "reseptit/alkuruoat/kylma-piparjuurikastike.md",
-  "source_sha256": "9a577bfdf6e610f3dfee98ff802de6841a2b3b9e23cc30544cea65345ed03260",
+  "source_sha256": "f0a40277eca8531459f0a313807039044b3c86267334a9703ac7bc43b4196002",
   "decision": "hold",
   "reviewed_by": "Chat 3 – rajattu lähdepohjainen valmistusarvio; kokonaisjulkaisun hyväksyntä puuttuu",
   "reviewed_at": "2026-11-21",
@@ -13,7 +13,7 @@
       "https://www.valio.fi/reseptit/graavattu-piparjuurilohi/"
     ]
   },
-  "nutrition_evidence": "",
+  "nutrition_evidence": "docs/nutrition/calculations/kylma-piparjuurikastike.json",
   "checks": {
     "duplicates": {
       "status": "pass",
@@ -37,11 +37,11 @@
     },
     "nutrition": {
       "status": "pending",
-      "notes": "Reseptikohtainen Fineli-/tuotekoostumukseen sidottu laskentapaketti puuttuu. Kaikki neljä julkista makroarvoa pidätetään; puuttuvaa tietoa ei aseteta nollaksi."
+      "notes": "Kanoninen laskenta tarkistettu. 12-prosenttisen crème fraîchen merkinnästä puuttuvat kuitu ja polyolit. Proteiini ja rasva kattavat kaikki ainekset."
     },
     "glycemic": {
       "status": "unavailable",
-      "notes": "Tälle täsmälliselle kastikeversiolle ei ole hyväksyttyä valmistuskohtaista GI-/GK-arviota. Numeerista GK-arvoa ei julkaista; perusteltu määrittämätön tila odottaa julkaisupäätöstä."
+      "notes": "Crème fraîchen käytettävissä oleva hiilihydraatti jäi määrittämättä. Piparjuuri-maitotuotepohjalle ei ole hyväksyttyä GI-sidontaa."
     }
   },
   "supplementary_evidence": {
@@ -52,5 +52,67 @@
     "image_sha256": "843ae30ce36f68b36fcf82a07305cafcf62fb0656e2eac5d3fb860f6d6298909",
     "image_review": "AI-havainnekuva: Git-tracked- ja SHA-varmennettu teknisesti, sisällöllinen lopullinen hyväksyntä avoin.",
     "physical_cook_test": false
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "docs/nutrition/glycemic-index-records.json",
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "available_carbohydrate_per_serving_g": null,
+    "glycemic_load": null
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/kylma-piparjuurikastike.webp",
+    "bytes": 44136,
+    "sha256": "843ae30ce36f68b36fcf82a07305cafcf62fb0656e2eac5d3fb860f6d6298909",
+    "source": "git-tracked",
+    "approved": true,
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI–EN/SV/TH. Vertailtu ainesosat ja määrät, käyttötila, valmistusvaiheet, lämpötilat ja ajat, allergeenit, säilytys, ravintokentät ja kuvan kuvaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "PENDING_INDEPENDENT_REVIEW",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/kylma-piparjuurikastike.md",
+        "language": "fi",
+        "slug": "kylma-piparjuurikastike",
+        "sha256": "f0a40277eca8531459f0a313807039044b3c86267334a9703ac7bc43b4196002",
+        "semantic_sha256": "b4fa04ef5a1b8eec6a51073527c095024962574a936b528561315f4c3e6cdda9"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/kylma-piparjuurikastike.md",
+        "language": "en",
+        "slug": "kylma-piparjuurikastike-en",
+        "sha256": "e93cfda9016d7ff85d37fe1ed34150522cdad639e597f413fd8f78ea426cd95b",
+        "semantic_sha256": "aeb875f7219bc1af06ef70f14901a3d706ecce2f83a45943a7ae753b5594bd4e"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/kylma-piparjuurikastike.md",
+        "language": "sv",
+        "slug": "kylma-piparjuurikastike-sv",
+        "sha256": "ad7d1be7e09236a64464ff90a11677fea62332ad4ee2dc0ea4a0957a6dfcd1be",
+        "semantic_sha256": "ec90c3c7cca57433311d8ff4a2f4a0685278fc0b40a73e09ab39dbbe5d526de5"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/kylma-piparjuurikastike.md",
+        "language": "th",
+        "slug": "kylma-piparjuurikastike-th",
+        "sha256": "c4abf97d1b3ad84c275ac2f9a510de114d5bf4cb101e7ed6f514773d6032e8b1",
+        "semantic_sha256": "554cda2db80553a97eb96b2e6f6b2315b6da2e1e38f2e5f2c29ea4c45d3b33fc"
+      }
+    ],
+    "nutrition_sha256": "755f66ef34901d24f419f9ad0c55f24f633e2f6b86a91909ad592edbadc423e4",
+    "batch_id": "batch-33308",
+    "transform": "Julkaisuehdokas sisältää valmiit nelikieliset reseptit, annosarviot tai niiden perustellut pidätykset sekä version sidonnat."
   }
 }

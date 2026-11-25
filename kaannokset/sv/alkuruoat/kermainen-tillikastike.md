@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/alkuruoat/kermainen-tillikastike.md
 translation_of: kermainen-tillikastike
-status: draft
+status: published
 servings: 4
 time_total_min: 25
 difficulty: "enkel"
@@ -23,6 +23,10 @@ image:
   alt: "Ljus krämig dillsås i en glasskål med färsk dill"
   width: 960
   height: 640
+carbs_net_per_serving_g: 2.89
+carbs_total_per_serving_g: 3.07
+protein_per_serving_g: 1.52
+fat_per_serving_g: 6.04
 ingredients:
   - amount: 200
     unit: "g"
@@ -56,7 +60,8 @@ En kall, frisk dillsås till ugnsfisk, stekt fisk och färskpotatis.
 
 ## Anteckningar
 
-- Kontrollera allergener på förpackningarna. Näringsvärden är portionsuppskattningar beräknade med Fineli/AFCD; glykemisk belastning är inte fastställd. Den AI-genererade illustrationsbilden finns i denna gren och kräver fortfarande redaktionell granskning.
+- Kontrollera allergener på förpackningarna.
+- Illustrationen är AI-genererad. Näringsvärdena är portionsuppskattningar baserade på ingredienserna. Den glykemiska belastningen kunde inte fastställas.
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/tillikastike-kalalle/
 - Innehåller **mjölk** (gräddfil). Servera kall och förvara övertäckt i kylskåp.
 - Använd kall gräddfil, rena redskap och sköljd dill. Förvara den färdiga såsen övertäckt i kylskåp under +6 °C och ta fram små mängder först vid servering.

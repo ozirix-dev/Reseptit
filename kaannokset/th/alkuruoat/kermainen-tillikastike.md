@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/alkuruoat/kermainen-tillikastike.md
 translation_of: kermainen-tillikastike
-status: draft
+status: published
 servings: 4
 time_total_min: 25
 difficulty: "ง่าย"
@@ -23,6 +23,10 @@ image:
   alt: "ซอสครีมผักชีลาวสีอ่อนในถ้วยแก้วตกแต่งด้วยผักชีลาวสด"
   width: 960
   height: 640
+carbs_net_per_serving_g: 2.89
+carbs_total_per_serving_g: 3.07
+protein_per_serving_g: 1.52
+fat_per_serving_g: 6.04
 ingredients:
   - amount: 200
     unit: "g"
@@ -56,7 +60,8 @@ ingredients:
 
 ## หมายเหตุ
 
-- ตรวจสารก่อภูมิแพ้จากฉลาก ค่าทางโภชนาการเป็นค่าประมาณต่อหนึ่งส่วนจาก Fineli/AFCD ส่วนค่าภาระน้ำตาลยังไม่กำหนด ภาพประกอบสร้างด้วย AI อยู่ในสาขานี้แล้ว แต่ยังต้องผ่านการตรวจทาน
+- ตรวจสารก่อภูมิแพ้จากฉลาก
+- ภาพประกอบสร้างด้วย AI ค่าทางโภชนาการเป็นค่าประมาณต่อหนึ่งหน่วยบริโภคจากส่วนผสม ยังไม่สามารถระบุค่าภาระน้ำตาลได้
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/tillikastike-kalalle/
 - มี **นม** (ครีมเปรี้ยว) เสิร์ฟเย็นและเก็บในภาชนะปิดฝาในตู้เย็น.
 - ใช้ครีมเปรี้ยวที่แช่เย็น อุปกรณ์สะอาด และผักชีลาวที่ล้างแล้ว เก็บซอสที่ผสมเสร็จในภาชนะปิดฝาในตู้เย็นต่ำกว่า +6 °C นำออกมาเฉพาะตอนเสิร์ฟและแบ่งเสิร์ฟทีละน้อย

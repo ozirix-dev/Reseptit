@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/jalkiruoat/perinteinen-vaniljakastike.md
 translation_of: perinteinen-vaniljakastike
-status: draft
+status: published
 servings: 6
 time_total_min: 25
 difficulty: "enkel"
@@ -24,6 +24,8 @@ image:
   alt: "Slät ljusgul vaniljsås i en glasskål, med bärpaj i bakgrunden; AI-bild"
   width: 960
   height: 640
+protein_per_serving_g: 3.06
+fat_per_serving_g: 4.1
 ingredients:
   - amount: 450
     unit: "g"
@@ -58,10 +60,9 @@ En slät vaniljsås av mjölk och äggula till blåbärspaj eller äppelsmulpaj.
 
 ## Anteckningar
 
-- Detta är ett redaktionellt utkast; näringsvärden, glykemisk belastning och slutligt bildgodkännande återstår.
+- Illustrationen är AI-genererad. Protein och fett är uppskattade värden per portion. Kolhydratvärden saknas. Den glykemiska belastningen kunde inte fastställas.
 - Preparation reference: https://www.martat.fi/reseptit/vaniljakastike/
 
-- Den tidigare missvisande AI-illustrationen har ersatts med en ny bild av slät vaniljsås och paj. Den nya bilden inväntar fortfarande slutligt redaktionellt godkännande.
 - Ytterligare jämförelse: vaniljsåsen till K-Ruoas kexkorgar använder majsstärkelse och äggulor, medan Marttas recept använder potatismjöl. Mängder och tillagning här är en egen anpassning. https://www.k-ruoka.fi/reseptit/keksikorit
 - Innehåller **mjölk och ägg**. Värm varsamt enligt anvisningen; kyl snabbt och förvara i kylskåp om såsen inte serveras direkt.
 - Den angivna totaltiden gäller varm servering. För kall servering behövs extra tid för avsvalning och kylning.

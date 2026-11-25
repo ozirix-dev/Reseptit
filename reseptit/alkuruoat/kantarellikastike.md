@@ -4,7 +4,7 @@ recipe_id: kantarellikastike
 url_slug: kantarellikastike
 category: alkuruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 30
 difficulty: "helppo"
@@ -20,14 +20,17 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 image:
   src: alkuruoat/kantarellikastike.webp
   alt: "Vaalea kermainen kantarellikastike, jossa näkyy kullankeltaisia kantarelleja, sipulia ja persiljaa; tekoälykuvitus"
   width: 960
   height: 640
+carbs_net_per_serving_g: 7.51
+protein_per_serving_g: 3.63
+fat_per_serving_g: 23.29
 ingredients:
   - amount: 350
     unit: "g"
@@ -71,7 +74,8 @@ Voissa paistetut kantarellit ja kerma sopivat kotimaisille perunoille, pihveille
 
 ## Muistiinpanot
 
-- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn tuottama havainnekuva tässä haarassa; toimituksellinen kuvakatselmointi puuttuu.
+- Tarkista allergeenit pakkausmerkinnöistä.
+- Kuva on tekoälyllä luotu havainnekuva. Ilmoitetut nettohiilihydraatti-, proteiini- ja rasvamäärät ovat annosarvioita. Kokonaishiilihydraattimäärä jää määrittämättä. Glykeemistä kuormaa (GK) ei ole voitu määrittää.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.k-ruoka.fi/reseptit/kantarellikastike
 - Sisältää maitoa ja vehnää. Tekoälykuvasta ei voi tunnistaa metsässä poimittuja sieniä.
 - Käytä vain varmasti tunnistettuja syötäviä kantarelleja tai myyntiin tarkoitettuja, tunnistettuja kauppasieniä. Älä koskaan tunnista poimittua sientä reseptin tekoälykuvasta. Tarjoa kastike kuumana; jos sitä jää yli, jäähdytä nopeasti ja säilytä jääkaapissa alle +6 °C:ssa.

@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/alkuruoat/kermainen-tillikastike.md
 translation_of: kermainen-tillikastike
-status: draft
+status: published
 servings: 4
 time_total_min: 25
 difficulty: "easy"
@@ -23,6 +23,10 @@ image:
   alt: "Pale creamy dill sauce in a glass bowl topped with fresh dill"
   width: 960
   height: 640
+carbs_net_per_serving_g: 2.89
+carbs_total_per_serving_g: 3.07
+protein_per_serving_g: 1.52
+fat_per_serving_g: 6.04
 ingredients:
   - amount: 200
     unit: "g"
@@ -56,7 +60,8 @@ A cool, fresh dill sauce for baked fish, fried fish and new potatoes.
 
 ## Notes
 
-- Check packaging for allergens. Nutrition values are ingredient-based estimates calculated from Fineli/AFCD. Glycaemic load is undetermined. The AI-generated illustrative image is included in this branch and still requires editorial review.
+- Check packaging for allergens.
+- The illustration was generated with AI. Nutrition values are ingredient-based estimates per serving. Glycaemic load could not be determined.
 - Preparation reference (independently adapted): https://www.valio.fi/reseptit/tillikastike-kalalle/
 - Contains **milk** (cultured sour cream). Serve chilled and keep covered in the refrigerator.
 - Use chilled cultured sour cream, clean utensils and rinsed dill. Refrigerate the mixed sauce covered below +6°C; take it out only when serving and offer small batches.

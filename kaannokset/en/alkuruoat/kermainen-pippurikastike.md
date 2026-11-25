@@ -7,7 +7,7 @@ language: en
 source_language: fi
 source_recipe: reseptit/alkuruoat/kermainen-pippurikastike.md
 translation_of: kermainen-pippurikastike
-status: draft
+status: published
 servings: 4
 time_total_min: 25
 difficulty: "easy"
@@ -23,6 +23,8 @@ image:
   alt: "Creamy light-brown peppercorn sauce with crushed black pepper on top"
   width: 960
   height: 640
+protein_per_serving_g: 3.25
+fat_per_serving_g: 25.24
 ingredients:
   - amount: 250
     unit: "ml"
@@ -57,10 +59,9 @@ A rich peppercorn sauce for steaks, pork fillet and potato sides.
 
 ## Notes
 
-- This is an editorial draft; nutrition and glycaemic load assessments and final image approval are pending.
+- The illustration was generated with AI. Protein and fat are estimates per serving. Carbohydrate values are unavailable. Glycaemic load could not be determined.
 - Preparation reference: https://www.k-ruoka.fi/reseptit/naudan-pihvi-ja-pippurikastike
 
-- The AI-generated illustrative image is now versioned. Decorative garnishes shown in the picture are not part of the ingredient quantities.
 - Additional preparation comparison: Valio's pepper sauce using shallot, stock, cream and mustard. This Recipavo version has neither cognac nor pepper-flavoured cheese cream. https://www.valio.fi/reseptit/konjakki-pippurikastike-pihveille/
 - Contains **milk and mustard**. Meat stock may contain celery; check the stock and mustard labels.
 - Serve the pepper sauce hot. Cool leftovers promptly in a shallow container and refrigerate below +6°C. Check the exact meat stock ingredients for celery or other allergens; this sauce contains milk and mustard.

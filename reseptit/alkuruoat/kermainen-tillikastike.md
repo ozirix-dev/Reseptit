@@ -4,7 +4,7 @@ recipe_id: kermainen-tillikastike
 url_slug: kermainen-tillikastike
 category: alkuruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 25
 difficulty: "helppo"
@@ -20,14 +20,18 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 image:
   src: alkuruoat/kermainen-tillikastike.webp
   alt: "Vaaleaa kermaista tillikastiketta lasikulhossa, pinnalla tuoretta tilliä"
   width: 960
   height: 640
+carbs_net_per_serving_g: 2.89
+carbs_total_per_serving_g: 3.07
+protein_per_serving_g: 1.52
+fat_per_serving_g: 6.04
 ingredients:
   - amount: 200
     unit: "g"
@@ -61,7 +65,8 @@ Kylmä, raikas tillikastike uunilohelle, paistetulle kalalle ja uusille perunoil
 
 ## Muistiinpanot
 
-- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvot ovat aineksista Fineli-/AFCD-tiedoilla laskettuja annosarvioita. GK on määrittämätön. Kuva on tekoälyn tuottama havainnekuva, joka on mukana tässä haarassa ja vaatii toimituksellisen tarkistuksen.
+- Tarkista allergeenit pakkausmerkinnöistä.
+- Kuva on tekoälyllä luotu havainnekuva. Ravintoarvot ovat ainesosista laskettuja annosarvioita. Glykeemistä kuormaa (GK) ei ole voitu määrittää.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.valio.fi/reseptit/tillikastike-kalalle/
 - Sisältää **maitoa** (kermaviili). Tarjoa kylmänä ja säilytä peitettynä jääkaapissa.
 - Käytä kylmää kermaviiliä, puhtaita välineitä ja pestyä tilliä. Säilytä sekoitettu kastike peitettynä jääkaapissa alle +6 °C:ssa; nosta pöytään vasta tarjottaessa ja tarjoa vain pieni erä kerrallaan.

@@ -4,7 +4,7 @@ recipe_id: perinteinen-ruskea-kastike
 url_slug: perinteinen-ruskea-kastike
 category: alkuruoka
 language: fi
-status: draft
+status: published
 servings: 4
 time_total_min: 25
 difficulty: "helppo"
@@ -20,14 +20,16 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
 image:
   src: alkuruoat/perinteinen-ruskea-kastike.webp
   alt: "Ruskeaa kiiltävää kastiketta valkoisessa kastikekannussa, taustalla lihapullia ja perunamuusia"
   width: 960
   height: 640
+protein_per_serving_g: 6.23
+fat_per_serving_g: 7.38
 ingredients:
   - amount: 35
     unit: "g"
@@ -59,7 +61,8 @@ Voissa ruskistettu vehnäjauho ja lihaliemi tekevät täyteläisen kastikkeen li
 
 ## Muistiinpanot
 
-- Sisältää tai voi sisältää allergeeneja; tarkista tuotteiden pakkausmerkinnät. Ravintoarvio ja GK eivät ole vielä määritettyjä. Kuva on tekoälyn tuottama havainnekuva, joka on mukana tässä haarassa ja vaatii toimituksellisen tarkistuksen.
+- Tarkista allergeenit pakkausmerkinnöistä.
+- Kuva on tekoälyllä luotu havainnekuva. Ilmoitetut proteiini- ja rasvamäärät ovat annosarvioita. Hiilihydraattimäärät jäävät määrittämättä. Glykeemistä kuormaa (GK) ei ole voitu määrittää.
 - Vertailulähde (resepti laadittu itsenäisesti): https://www.k-ruoka.fi/reseptit/ruskea-kastike
 - Sisältää **maitoa, vehnää ja soijaa**. Soijakastike voi sisältää myös vehnää; lihaliemi voi sisältää esimerkiksi selleriä. Tarkista valittujen tuotteiden etiketit.
 - Tarjoa kastike kuumana heti. Jos valmistat sen etukäteen, jäähdytä nopeasti matalassa astiassa, säilytä jääkaapissa alle +6 °C ja kuumenna ennen tarjoilua uudelleen kauttaaltaan kuumaksi. Tarkista lihaliemen ja soijakastikkeen pakkausmerkinnät myös sellerin, vehnän ja soijan varalta.

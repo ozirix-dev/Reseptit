@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/alkuruoat/kermainen-pippurikastike.md
 translation_of: kermainen-pippurikastike
-status: draft
+status: published
 servings: 4
 time_total_min: 25
 difficulty: "enkel"
@@ -23,6 +23,8 @@ image:
   alt: "Krämig ljusbrun pepparsås med krossad svartpeppar på ytan"
   width: 960
   height: 640
+protein_per_serving_g: 3.25
+fat_per_serving_g: 25.24
 ingredients:
   - amount: 250
     unit: "ml"
@@ -52,12 +54,12 @@ En fyllig pepparsås till biff, fläskfilé och potatistillbehör.
 
 1. Finhacka schalottenlöken och grovkrossa pepparkornen.
 2. Smält smör i en kastrull. Fräs schalottenlöken i 3 minuter och rör ner pepparn i 30 sekunder utan att bränna den.
-3. Häll på buljong och grädde. Sjud på svag värme i 8–10 minuter under omrörning tills såsen tjocknar något.
+3. Häll på buljong och grädde. Sjud på svag värme i 8–10 minuter och rör om då och då tills såsen tjocknar något.
 4. Rör ner dijonsenapen och smaka av. Salta bara vid behov beroende på buljongen. Servera varm.
 
 ## Anteckningar
 
-- Detta är ett redaktionellt utkast; näringsvärden, glykemisk belastning och slutligt bildgodkännande återstår.
+- Illustrationen är AI-genererad. Protein och fett är uppskattade värden per portion. Kolhydratvärden saknas. Den glykemiska belastningen kunde inte fastställas.
 - Preparation reference: https://www.k-ruoka.fi/reseptit/naudan-pihvi-ja-pippurikastike
 
 - Den AI-genererade illustrationsbilden är nu versionshanterad. Dekorationer på bilden ingår inte i receptmängderna.
