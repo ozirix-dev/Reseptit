@@ -50,7 +50,7 @@ fat_per_serving_g: 15.11
 
 Crunchy cucumber, avocado and mint make a fresh, chunky dip.
 
-## Method
+## Preparation
 
 1. Dice the cucumber and avocado. Finely chop the coriander and mint.
 2. Whisk the lime juice, oil and salt in the bottom of a bowl. Add the cucumber and herbs. Fold in the avocado last so the cubes stay whole. Serve straight away.

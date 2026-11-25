@@ -50,7 +50,7 @@ fat_per_serving_g: null
 
 An active rye starter raises two dark round loaves.
 
-## Method
+## Preparation
 
 1. Mix the active starter, 200 ml of water and 110 g of rye flour. Cover loosely and leave in a warm spot overnight, until the preferment bubbles clearly and smells gently sour.
 2. Stir in 600 ml of water and the salt. Add the dough flour in batches and knead by hand for about 10 minutes. Cover and let it roughly double, usually 3–6 hours.

@@ -50,7 +50,7 @@ fat_per_serving_g: 10.13
 
 Grated carrot and Parmesan keep these savoury snack muffins moist.
 
-## Method
+## Preparation
 
 1. Heat the oven to 200°C. Line a 12-hole muffin tin with paper cases.
 2. Combine the flour, baking powder, grated carrot and Parmesan. In another bowl, whisk the eggs, buttermilk and oil.

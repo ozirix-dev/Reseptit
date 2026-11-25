@@ -62,7 +62,7 @@ fat_per_serving_g: null
 
 Cardamom buns are split and filled with raspberry jam and whipped cream.
 
-## Method
+## Preparation
 
 1. Dissolve the yeast in lukewarm milk. Add the salt, sugar and cardamom. Add the flour gradually. Knead in the lukewarm margarine towards the end of adding the flour.
 2. Cover the bowl and let the dough double. Divide into 20 pieces, roll into buns and place on baking parchment. Let rise, covered, until puffy.

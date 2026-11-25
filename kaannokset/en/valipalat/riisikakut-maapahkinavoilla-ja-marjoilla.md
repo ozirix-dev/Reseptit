@@ -41,7 +41,7 @@ fat_per_serving_g: 5.77
 
 Crunchy rice cakes are topped with peanut butter, fresh strawberries and blueberries.
 
-## Method
+## Preparation
 
 1. Rinse the berries and let them drain. Hull the strawberries and cut them into thin slices.
 2. Spread peanut butter over the rice cakes and divide the berries among them. Serve straight away while the bases are crisp.

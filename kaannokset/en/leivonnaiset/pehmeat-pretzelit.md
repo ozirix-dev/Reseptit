@@ -56,7 +56,7 @@ fat_per_serving_g: null
 
 Twisted wheat dough is dipped in a baking soda bath before baking.
 
-## Method
+## Preparation
 
 1. Mix the sugar, dough water, yeast, flours and fine salt. Knead until soft and elastic. Cover and rise for about 60 minutes, until visibly puffy.
 2. Divide into 16 pieces and roll each into a rope. Make a U, cross the ends twice and press them onto the bottom of the U. Heat the oven to 230°C.

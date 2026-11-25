@@ -65,7 +65,7 @@ fat_per_serving_g: null
 
 Soft cardamom buns bake around a sweet buttery centre.
 
-## Method
+## Preparation
 
 1. Dissolve the yeast in lukewarm milk. Add the egg, sugar, salt and cardamom. Add the flour gradually, reserving some for shaping. Knead in the soft butter.
 2. Cover and let the dough rise until almost doubled. Divide into 16 pieces and shape into buns. Let them rise, covered, on baking parchment, until visibly puffy.

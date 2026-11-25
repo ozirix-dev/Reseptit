@@ -53,7 +53,7 @@ fat_per_serving_g: null
 
 Wild bilberries bake on a soft wheat-flour batter.
 
-## Method
+## Preparation
 
 1. Heat the oven to 200°C. Line the base of a 24 cm pie tin with baking parchment.
 2. Beat the eggs lightly in a bowl and stir in both sugars. Mix the flour and baking powder separately. Add the flour mix, pourable fat and milk to the egg mixture and stir until smooth.

@@ -53,7 +53,7 @@ fat_per_serving_g: null
 
 Sweet peppers are roasted until tender and filled with lemon-scented goat cheese.
 
-## Method
+## Preparation
 
 1. Heat the oven to 200°C. Halve the peppers lengthwise and remove the seeds. Toss the halves with the oil, salt and pepper.
 2. Roast the halves on a baking sheet for about 15 minutes, until slightly soft and coloured. Let them cool to room temperature.

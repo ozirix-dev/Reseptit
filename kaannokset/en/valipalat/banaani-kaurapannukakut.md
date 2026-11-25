@@ -56,7 +56,7 @@ fat_per_serving_g: 11.64
 
 Ripe bananas flavour these small, pan-cooked oat pancakes.
 
-## Method
+## Preparation
 
 1. Blend all the ingredients except the oil until smooth. Let the batter rest while the pan heats up.
 2. Heat a non-stick frying pan over medium heat and brush it with a little oil. Divide the batter into about nine small pancakes and fry them in batches.

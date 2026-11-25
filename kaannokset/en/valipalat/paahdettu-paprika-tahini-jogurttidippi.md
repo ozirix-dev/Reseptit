@@ -50,7 +50,7 @@ fat_per_serving_g: 5.28
 
 Roasted red pepper sweetens the yoghurt and tahini dip, with smoked paprika for depth.
 
-## Method
+## Preparation
 
 1. Drain the roasted peppers thoroughly and pat them dry. Blend the peppers, garlic and lemon juice until smooth.
 2. Mix the yoghurt, tahini, smoked paprika and salt in a bowl. Fold in the pepper purée. Serve chilled.

@@ -68,7 +68,7 @@ fat_per_serving_g: null
 
 Banana, cinnamon and peanut butter flavour these wholemeal muffins.
 
-## Method
+## Preparation
 
 1. Heat the oven to 220°C. Line a 12-hole muffin tin with paper cases. Mix the flour, cinnamon, bicarbonate of soda, baking powder and salt in a bowl.
 2. Mash the banana. Whisk in the honey, yoghurt, oil, egg and almond drink. Stir in the peanut butter and vanilla.

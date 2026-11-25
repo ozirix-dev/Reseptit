@@ -47,7 +47,7 @@ fat_per_serving_g: null
 
 Smoked trout, dill and lemon flavour this creamy spread.
 
-## Method
+## Preparation
 
 1. Remove the skin and any bones from the trout. Flake the fish into a bowl with a fork. Finely chop the onion and dill.
 2. Stir together the cream cheese, crème fraîche and lemon juice. Fold in the fish, onion and dill, leaving some small pieces of fish intact.

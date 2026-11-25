@@ -56,7 +56,7 @@ fat_per_serving_g: null
 
 This Finnish sweet loaf is flavoured with cardamom and braided from three strands of dough.
 
-## Method
+## Preparation
 
 1. Warm the milk to lukewarm and dissolve the yeast in it. Add the sugar, salt and cardamom. Add the flour gradually, reserving a little for shaping. Knead in the butter and continue until the dough is elastic.
 2. Cover the bowl and let the dough rise away from draughts until roughly doubled.

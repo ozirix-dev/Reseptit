@@ -50,7 +50,7 @@ fat_per_serving_g: null
 
 Buckwheat flour gives these thin crêpes a nutty flavour suited to savoury fillings.
 
-## Method
+## Preparation
 
 1. Mix the buckwheat flour, salt, eggs, milk and melted butter until smooth. Cover and refrigerate for at least 2 hours.
 2. Stir the water into the batter. Heat a non-stick pan over medium-high heat. Brush it with a thin layer of oil.
