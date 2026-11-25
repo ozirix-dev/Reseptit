@@ -82,17 +82,26 @@ export async function resolveNutritionFieldApproval(
   return { scope, verifiedAvailableRows };
 }
 
-export async function readNutritionFieldApproval(root: string, evidence: Calculation) {
-  if (!/^batch-\d+$/.test(evidence.batchId ?? "")) return undefined;
+export async function readNutritionFieldApproval(
+  root: string, evidence: Calculation, { requireBatchMembership = false } = {},
+) {
+  const missingBatchEntry = () => {
+    if (requireBatchMembership) {
+      throw Error(`${evidence.recipeId}: calculation evidence is not listed in a matching batch manifest (${evidence.batchId ?? "missing batchId"})`);
+    }
+    return undefined;
+  };
+  if (!/^batch-\d+$/.test(evidence.batchId ?? "")) return missingBatchEntry();
   const file = path.join(root, "docs/nutrition/batches", evidence.batchId + ".json");
   const raw = await readFile(file, "utf8").catch((error: NodeJS.ErrnoException) => {
     if (error.code === "ENOENT") return null;
     throw error;
   });
-  if (raw === null) return undefined;
+  if (raw === null) return missingBatchEntry();
   const batch = JSON.parse(raw) as { batchId?: string; recipes?: NutritionBatchRecipe[] };
   if (batch.batchId !== evidence.batchId || !Array.isArray(batch.recipes)) throw Error("Invalid nutrition batch: " + evidence.batchId);
   const entries = batch.recipes.filter(row => row.recipeId === evidence.recipeId);
+  if (!entries.length) return missingBatchEntry();
   if (entries.length > 1 && entries.some(row => row.partialNutrition !== undefined)) {
     throw Error("Duplicate partial nutrition batch entry: " + evidence.recipeId);
   }

@@ -2,7 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { makeTemplate, readRecipeIdentity } from './new-recipe-preflight.mjs';
+import { isNewPublication, makeTemplate, readRecipeIdentity } from './new-recipe-preflight.mjs';
 
 const site = fileURLToPath(new URL('../', import.meta.url));
 const root = path.dirname(site);
@@ -10,7 +10,9 @@ const sourcePath = /^reseptit\/(?:alkuruoat|paaruoat|jalkiruoat|leivonnaiset|aam
 const translationPath = /^kaannokset\/(en|sv|th)\/(?:[^/\\:]+\/)+[^/\\:]+\.md$/;
 const imagePath = /^kuvat\/(?:[^/\\:]+\/)+[^/\\:]+\.webp$/;
 const shaPattern = /^[0-9a-f]{40}$/;
+const pendingGkPath = 'docs/nutrition/new-public-gk-pending-sources.json';
 const sharedPaths = new Set([
+  pendingGkPath,
   'assets/images.tracked-overlays.json',
   'meta/kaannokset/codex-review-evidence.json',
   'meta/kaannokset/published-translation-pairs.json',
@@ -88,6 +90,34 @@ export function collectCandidates(entries) {
   return { groups: [...groups.values()], shared, excluded };
 }
 
+// This is a recipe-only scope check, not approval of an unknown or numeric GK value.
+export function validatePendingGkChanges(previous, current, changedSources) {
+  for (const registry of [previous, current]) {
+    if (!registry || typeof registry !== 'object' || Array.isArray(registry) ||
+        Object.entries(registry).some(([id, sha]) =>
+          !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id) || typeof sha !== 'string' || !shaPattern.test(sha))) {
+      throw new Error('HOLD_GK_PENDING: invalid pending source registry.');
+    }
+  }
+  for (const id of Object.keys(previous)) {
+    if (!Object.hasOwn(current, id)) {
+      throw new Error('HOLD_GK_PENDING: removal requires a separate GK review: ' + id);
+    }
+  }
+  for (const [id, sha] of Object.entries(current)) {
+    const changed = changedSources.get(id);
+    const added = !Object.hasOwn(previous, id);
+    if (added || previous[id] !== sha) {
+      if (!changed || (added && !changed.newPublication)) {
+        throw new Error('HOLD_GK_PENDING: registry change is outside the new or pending FI candidate: ' + id);
+      }
+    }
+    if (changed && changed.sha !== sha) {
+      throw new Error('HOLD_GK_PENDING: source blob does not match the candidate: ' + id);
+    }
+  }
+}
+
 export function prepareBatch(base, expectedHead, directory = root) {
   if (!shaPattern.test(base) || !shaPattern.test(expectedHead)) {
     throw new Error('Preparation requires full --base and --head SHAs.');
@@ -106,7 +136,7 @@ export function prepareBatch(base, expectedHead, directory = root) {
   for (let i = 0; i < diff.length - 1; i += 2) {
     const [status, file] = diff.slice(i, i + 2);
     if (!['A', 'M'].includes(status)) throw new Error('Candidate contains an unsupported removal or type change: ' + file);
-    entries.push({ file, read: () => {
+    entries.push({ file, status, read: () => {
       const canonical = git(directory, ['show', head + ':' + file]);
       if (readFileSync(path.join(directory, file), 'utf8') !== canonical) {
         throw new Error('HOLD_BYTES: checked-out recipe differs from its canonical blob: ' + file);
@@ -116,6 +146,27 @@ export function prepareBatch(base, expectedHead, directory = root) {
   }
 
   const batch = collectCandidates(entries);
+  const pendingEntry = entries.find(entry => entry.file === pendingGkPath);
+  const changedFi = batch.groups.flatMap(group => group.published
+    .filter(version => version.locale === 'fi').map(version => ({ id: group.id, ...version })));
+  if (pendingEntry || changedFi.length) {
+    const previous = JSON.parse(git(directory, ['show', base + ':' + pendingGkPath]));
+    const current = pendingEntry ? JSON.parse(pendingEntry.read()) : previous;
+    const changedSources = new Map();
+    for (const version of changedFi) {
+      if (changedSources.has(version.id)) {
+        throw new Error('HOLD_GK_PENDING: multiple changed Finnish sources: ' + version.id);
+      }
+      const entry = entries.find(item => item.file === version.path);
+      const oldIdentity = entry.status === 'A' ? null
+        : readRecipeIdentity(git(directory, ['show', base + ':' + version.path]));
+      changedSources.set(version.id, {
+        sha: git(directory, ['rev-parse', head + ':' + version.path]).trim(),
+        newPublication: isNewPublication({ recipe_id: version.id, language: 'fi', status: 'published' }, oldIdentity),
+      });
+    }
+    validatePendingGkChanges(previous, current, changedSources);
+  }
   const env = { ...process.env, BASE_SHA: base, HEAD_SHA: head };
   const editorial = editorialResults(directory, base, head, env);
   const candidates = [];

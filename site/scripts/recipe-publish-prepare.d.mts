@@ -6,6 +6,9 @@ export function collectCandidates(entries: { file: string; read: () => string }[
   shared: string[];
   excluded: string[];
 };
+export function validatePendingGkChanges(previous: unknown, current: unknown, changedSources: ReadonlyMap<string, {
+  sha: string; newPublication: boolean;
+}>): void;
 export function templateFromIndex(file: string, directory?: string): {
   source_sha256: string;
   decision: 'hold';
