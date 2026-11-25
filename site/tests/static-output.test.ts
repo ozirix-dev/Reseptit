@@ -1356,6 +1356,8 @@ test("GK values link to centralized recipe details on every published translatio
   const historicalOnly = new Set([
     historicalMolletes?.recipeId, "lahi-ita-zaatar-munat", "pohjoisafrikkalainen-baghrir",
     "meksikolainen-aamiais-tacot-mustapavuilla",
+    // Sealed 10.77 uses the wrong food identity; only the public original is withheld.
+    "medu-vada",
   ]);
   const tacosId = "meksikolainen-aamiais-tacot-mustapavuilla";
   const archivedTacos = audit.results.find(result => result.recipeId === tacosId);
@@ -1394,6 +1396,13 @@ test("GK values link to centralized recipe details on every published translatio
     visibleReviewed.filter(result => result.status === "CALCULATED").length);
   assert.equal(glycemicLoadPilotResults.filter(result => result.status === "INSUFFICIENT SOURCE DATA").length,
     visibleReviewed.filter(result => result.status === "INSUFFICIENT SOURCE DATA").length);
+  // Counts alone could conceal one missing recipe and one unintended promotion.
+  // Keep the exact expected membership for both statuses, not a dynamic HOLD allowlist.
+  for (const status of ["CALCULATED", "INSUFFICIENT SOURCE DATA"] as const) {
+    assert.deepEqual(glycemicLoadPilotResults.filter(result => result.status === status).map(result => result.recipeId).sort(),
+      visibleReviewed.filter(result => result.status === status).map(result => result.recipeId).sort(),
+      `public ${status}: exact reviewed recipe membership`);
+  }
   for (const [id, expected] of [
     ["indonesialainen-ketoprak-aamiaiskulho", 26.67],
     ["japanilainen-onigiri-lohella", 26.47],
