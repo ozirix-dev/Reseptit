@@ -15,6 +15,13 @@ on:
       - "meta/recipe-successors.json"
       - ".github/dependabot.yml"
       - ".github/workflows/pages.yml"
+      - ".github/workflows/chat-owner-metadata.yml"
+      - ".github/workflows/chat5-derived-evidence-review.yml"
+      - ".github/workflows/feedback-pages-readiness.yml"
+      - ".github/workflows/recipavo-preview-guard.yml"
+      - ".github/workflows/recipavo-production-health.yml"
+      - ".github/workflows/recipavo-production-manual.yml"
+      - ".github/workflows/recipavo-release-guard.yml"
   pull_request:
   workflow_dispatch:
     inputs:
