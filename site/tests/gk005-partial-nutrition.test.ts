@@ -5,7 +5,8 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import test from "node:test";
 import manifest from "./history/gk005-partial-nutrition-transition.json";
-import { restoreGk005Source, restoreGk005Inventory } from "./history/gk005-partial-nutrition-transition";
+import { restoreGk005Source, restoreGk005Inventory, predecessorForGk005RegistryHistory } from "./history/gk005-partial-nutrition-transition";
+import { afcdSourceBeforeCorrection } from "./restore-pre-ehold";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { calculate, type Calculation } from "../scripts/nutrition-model";
@@ -225,4 +226,37 @@ test("GK-005 approved successor retains exact GK and portion evidence without hi
     const mutated = audit.inventory.map((item: { recipe_id: string; notes: string }) => item.recipe_id === id ? { ...item, notes: item.notes + " unreviewed" } : item);
     assert.throws(() => restoreGk005Inventory(mutated), /unreviewed GK-005 live inventory/);
   }
+});
+
+test("GK-005 exact registry reversal preserves the complete older AFCD history and rejects unreviewed changes", async () => {
+  const file = "docs/nutrition/glycemic-load-recipe-bindings.json";
+  const live = await read(file);
+  const prior = predecessorForGk005RegistryHistory(file, live);
+  assert.notEqual(prior, live);
+  assert.equal(predecessorForGk005RegistryHistory(file, prior), prior);
+  assert.equal(predecessorForGk005RegistryHistory(file, live.replaceAll("\r\n", "\n").replaceAll("\n", "\r\n")), prior);
+  assert.equal(predecessorForGk005RegistryHistory("other.json", live), live);
+
+  const actual = JSON.parse(live), restored = JSON.parse(prior);
+  for (const [id, entry] of Object.entries(manifest.recipes)) {
+    assert.deepEqual(actual.exactRecipeText[id], entry.candidateExactRecipeText);
+    assert.equal(restored.exactRecipeText[id].sourceSha256, manifest.files[entry.inventory.before.source_path as keyof typeof manifest.files].beforeSha256);
+    for (const [locale, target] of Object.entries(entry.candidateExactRecipeText.locales)) {
+      assert.equal(restored.exactRecipeText[id].locales[locale].sha256, manifest.files[target.path as keyof typeof manifest.files].beforeSha256);
+    }
+    actual.exactRecipeText[id] = restored.exactRecipeText[id];
+  }
+  assert.deepEqual(actual, restored, "only the two exact text rows may change");
+
+  // The three previously failing historical tests also exercise the original
+  // input/evidence assertions for Baozi and VHH cheesecake. Do not edit them.
+  assert.equal(afcdSourceBeforeCorrection(file, live), afcdSourceBeforeCorrection(file, prior));
+  const tampered = JSON.parse(live);
+  tampered.calculationInputs[Object.keys(tampered.calculationInputs)[0]!] = "0".repeat(64);
+  assert.throws(() => afcdSourceBeforeCorrection(file, JSON.stringify(tampered, null, 2) + "\n"), /unreviewed GK-005 registry successor/);
+  assert.throws(() => predecessorForGk005RegistryHistory(file, prior + "\n"), /unreviewed GK-005 registry successor/);
+  const mixed = JSON.parse(live);
+  const id = Object.keys(manifest.recipes)[0]!;
+  mixed.exactRecipeText[id] = restored.exactRecipeText[id];
+  assert.throws(() => predecessorForGk005RegistryHistory(file, JSON.stringify(mixed, null, 2) + "\n"), /unreviewed GK-005 registry successor/);
 });

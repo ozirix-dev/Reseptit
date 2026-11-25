@@ -59,3 +59,40 @@ export function restoreGk005Inventory<T extends { recipe_id: string; notes: stri
     return structuredClone(entry.before) as T;
   });
 }
+
+const gkRegistryPath = "docs/nutrition/glycemic-load-recipe-bindings.json";
+const gkRegistryBefore = "b8f934f49a43e586ceeda7ed3e3f0cd19a99c76d13e18541565075b8aa182996";
+const gkRegistryAfter = "713691ca88e8c6627e6c52a16a611dbfbe9f5076c94f27091523124d0a188d83";
+const gkRegistryAfterBlob = "28abe2f8ac00056969af44704353efbb1e893106";
+
+// Reverse only the exact GK-005 registry successor, before the older
+// frozen-release readers normalize or reconstruct the registry. A new
+// registry revision needs its own reviewed transition, not a relaxed seal.
+export function predecessorForGk005RegistryHistory(file: string, text: string): string {
+  if (file !== gkRegistryPath) return text;
+  const current = text.replaceAll("\r\n", "\n");
+  const currentHash = sha(current);
+  if (currentHash === gkRegistryBefore) {
+    assert.equal(blob(current), manifest.priorExactGkRegistryGitBlob, file + ": predecessor Git blob mismatch");
+    return current;
+  }
+  assert.equal(currentHash, gkRegistryAfter, file + ": unreviewed GK-005 registry successor");
+  assert.equal(blob(current), gkRegistryAfterBlob, file + ": successor Git blob mismatch");
+  const data = JSON.parse(current) as { exactRecipeText: Record<string, unknown> };
+  for (const [id, entry] of Object.entries(manifest.recipes)) {
+    const candidate = entry.candidateExactRecipeText;
+    assert.deepEqual(data.exactRecipeText[id], candidate, id + ": unexpected successor binding");
+    const source = records[entry.inventory.before.source_path];
+    assert.ok(source && source.recipeId === id && source.locale === "fi", id + ": missing FI transition");
+    const locales = Object.fromEntries(Object.entries(candidate.locales).map(([locale, target]) => {
+      const previous = records[target.path];
+      assert.ok(previous && previous.recipeId === id && previous.locale === locale, id + ": missing locale transition");
+      return [locale, { path: target.path, sha256: previous.beforeSha256 }];
+    }));
+    data.exactRecipeText[id] = { sourceSha256: source.beforeSha256, locales };
+  }
+  const predecessor = JSON.stringify(data, null, 2) + "\n";
+  assert.equal(sha(predecessor), gkRegistryBefore, file + ": historical registry SHA-256 mismatch");
+  assert.equal(blob(predecessor), manifest.priorExactGkRegistryGitBlob, file + ": historical registry Git blob mismatch");
+  return predecessor;
+}
