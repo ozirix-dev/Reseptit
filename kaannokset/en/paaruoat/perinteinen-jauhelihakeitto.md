@@ -20,10 +20,15 @@ cooking_method:
 tags:
   - "Finnish"
   - "traditional"
+image:
+  src: paaruoat/perinteinen-jauhelihakeitto.webp
+  alt: "A bowl of ground beef soup with potatoes, root vegetables, leek and parsley; AI illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "g"
-    item: "ground beef"
+    item: "lean ground beef (about 9% fat)"
   - amount: 700
     unit: "g"
     item: "peeled potatoes"
@@ -58,7 +63,7 @@ ingredients:
 
 # Traditional Finnish Minced Beef and Potato Soup
 
-An everyday Finnish soup of potatoes, root vegetables and browned ground meat without low-carb substitutions.
+Potatoes and root vegetables simmer in one pot. The lean beef is browned separately and stirred in towards the end.
 
 ## Preparation
 
@@ -71,5 +76,4 @@ An everyday Finnish soup of potatoes, root vegetables and browned ground meat wi
 ## Notes
 
 - Check packaging for allergens; no gluten-free claim has been reviewed.
-- Editorial draft: no Recipavo cooking trial, approved nutrition/GK calculation or image yet.
 - Preparation comparison reference (not reproduced): https://www.martat.fi/reseptit/jauhelihakeitto-10lle/

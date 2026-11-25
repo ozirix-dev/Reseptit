@@ -20,10 +20,15 @@ cooking_method:
 tags:
   - "finsk"
   - "traditionell"
+image:
+  src: paaruoat/perinteinen-jauhelihakeitto.webp
+  alt: "En skål köttfärssoppa med potatis, rotfrukter, purjolök och persilja; AI-illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "g"
-    item: "nötfärs"
+    item: "mager nötfärs (cirka 9 % fett)"
   - amount: 700
     unit: "g"
     item: "skalad potatis"
@@ -44,7 +49,7 @@ ingredients:
     item: "vatten"
   - amount: 15
     unit: "g"
-    item: "rybsolja"
+    item: "rapsolja"
   - amount: 10
     unit: "g"
     item: "buljongkoncentrat, kontrollera salthalten"
@@ -71,5 +76,4 @@ En klassisk finsk vardagssoppa med potatis, rotfrukter och brynt köttfärs utan
 ## Anteckningar
 
 - Kontrollera allergener på förpackningarna; inget påstående om glutenfrihet har granskats.
-- Redaktionellt utkast: ingen provlagning hos Recipavo, godkänd närings-/GK-beräkning eller bild ännu.
 - Jämförelsekälla för tillagningen (inte kopierad): https://www.martat.fi/reseptit/jauhelihakeitto-10lle/
