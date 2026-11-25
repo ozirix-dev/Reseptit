@@ -1365,6 +1365,9 @@ test("GK values link to centralized recipe details on every published translatio
       const verbalClass = verbalGkForPortion(result.portionEvidence?.verbal, 1);
       if (result.status === "CALCULATED" && result.glycemicLoadPerServing !== null) {
         assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoad));
+        if (!result.assessmentType) {
+          assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoadNote), `${result.recipeId}/${recipe.locale}: current ingredient-based estimate disclosure`);
+        }
         assert.ok(html.includes(gkCopy[recipe.locale].see));
         assert.ok(html.includes(methodPath));
         assert.ok(result.confidence && html.includes(gkCopy[recipe.locale].levelNotes[result.confidence]), `${result.recipeId}/${recipe.locale}: confidence is visible`);
@@ -1825,6 +1828,20 @@ test('modeled calculation details disclose omissions in every locale and retain 
     }
     assert.ok(omitted>=10,locale+': all ten new omission cases covered');assert.ok(complete>0,locale+': real omission-free control covered');
     const method=await readFile(path.join(dist,expected.path,'index.html'),'utf8');assert.ok(method.includes(expected.method),locale);assert.ok(!method.includes(expected.oldMethod),locale+': central method is consistent');
+    const disclosure = {
+      fi: { previous: "aiemmin hyväksytyissä arvioissa", current: "puuttuvan GI-tiedon vaikutus on rajattava lähteiden avulla", historicalMethod: "Vanhemmassa toleranssipolussa", thresholds: ["alle 1 g:n", "alle 2 g"] },
+      en: { previous: "previously approved estimates", current: "the effect of missing GI data must be bounded using evidence", historicalMethod: "In the older tolerance path", thresholds: ["less than 1 g", "below 2 g"] },
+      sv: { previous: "tidigare godkända uppskattningar", current: "effekten av saknade GI-uppgifter avgränsas med stöd av källor", historicalMethod: "I den äldre toleransmodellen", thresholds: ["under 1 g", "understiger 2 g"] },
+      th: { previous: "ผ่านการตรวจสอบก่อนหน้านี้", current: "กำหนดขอบเขตผลกระทบของค่า GI ที่ขาดหายไป", historicalMethod: "แนวทางเดิมที่ยอมให้ละเว้นปริมาณเล็กน้อย", thresholds: ["ต่ำกว่า 1 กรัม", "ต่ำกว่า 2 กรัม"] },
+    }[locale];
+    const note = recipeUi[locale].glycemicLoadNote;
+    assert.ok(note.includes(disclosure.previous), locale + ": historical omissions identified as historical");
+    assert.ok(note.includes(disclosure.current), locale + ": new estimates require bounded evidence");
+    assert.ok(method.includes(disclosure.historicalMethod), locale + ": method preserves historical context");
+    for (const threshold of disclosure.thresholds) {
+      assert.ok(!note.includes(threshold), locale + ": historical threshold is not presented as a general rule");
+      assert.ok(method.includes(threshold), locale + ": historical threshold remains documented");
+    }
     if (locale === 'en') {
       assert.match(method, /without a matching GI value.*less than 1 g of available carbohydrate per serving.*below 2 g per serving/);
       assert.match(method, /The amount left out is shown/);
