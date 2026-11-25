@@ -1,5 +1,5 @@
 ---
-title: "Ciabatta"
+title: "Rustic ciabatta"
 recipe_id: ciabatta
 url_slug: ciabatta-en
 category: leivonnainen
@@ -49,7 +49,7 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 ---
 
-# Ciabatta
+# Rustic ciabatta
 
 An overnight preferment and wet dough give ciabatta its open crumb.
 

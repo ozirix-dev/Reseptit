@@ -1,5 +1,5 @@
 ---
-title: "Ciabatta"
+title: "Ciabatta med fördeg"
 recipe_id: ciabatta
 url_slug: ciabatta-sv
 category: leivonnainen
@@ -49,7 +49,7 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 ---
 
-# Ciabatta
+# Ciabatta med fördeg
 
 En fördeg över natten och en fuktig deg ger ciabattan luftigt inkråm.
 
