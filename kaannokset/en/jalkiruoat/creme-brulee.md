@@ -48,7 +48,7 @@ Vanilla crème brûlée.
 ## Preparation
 
 1. Heat oven to 150 °C. Warm the milk, cream and split vanilla pod with its seeds until almost boiling; remove the pod.
-2. Stir yolks with sugar and gradually incorporate the hot dairy. Strain into four ramekins.
+2. Stir yolks with sugar and gradually incorporate the hot dairy. Strain into four ovenproof ramekins of about 150 ml each, leaving a little space at the top.
 3. Set in a deep pan and carefully pour hot water halfway up their sides. Bake 35–45 minutes or longer until just set and at least 71 °C in the centre.
 4. Lift out carefully, cool promptly and refrigerate covered for at least 3 hours. Just before serving, sprinkle 1 tsp cane sugar on each.
 5. Caramelise with a culinary torch following its instructions, on a heatproof surface away from flammable materials. Allow 2 minutes for the crust to harden.

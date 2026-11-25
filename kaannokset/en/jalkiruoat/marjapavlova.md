@@ -61,7 +61,7 @@ Berry pavlova.
 
 1. Heat oven to 120 °C. Mark a 20 cm circle on parchment and turn it over.
 2. In a clean grease-free bowl, whip the whites until foamy; add sugar gradually until glossy and dissolved. Add meringue lemon juice and starch.
-3. Spread into a circle with a hollow centre. Bake for about an hour, check doneness and extend if necessary.
+3. Spread into a circle with a hollow centre. Bake for about an hour. Check that the outer shell is dry and firm, with no visibly wet patches. If the shell has not dried, continue baking in 5–10 minute intervals. The centre should remain soft and marshmallow-like, but not runny.
 4. Switch off and cool fully inside with the door shut. Prepare berries, chop strawberries and combine with their sugar and lemon juice.
 5. Refrigerate for about 30 minutes. Whip crème fraîche with filling sugar and vanilla until airy.
 6. Assemble with berries just before serving. Keep chilled after assembly and eat the same day.

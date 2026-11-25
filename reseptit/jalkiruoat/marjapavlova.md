@@ -61,7 +61,7 @@ Rapea marenkikuori, pehmeä sisus ja raikkaat marjat.
 1. Kuumenna uuni 120 °C:seen. Merkitse leivinpaperiin 20 cm:n ympyrä ja käännä paperi.
 2. Vatkaa valkuainen puhtaassa rasvattomassa kulhossa kuohkeaksi. Lisää sokeri pienissä erissä, kunnes vaahto on kiiltävä ja sokeri liuennut.
 3. Lisää marengin sitruunamehu ja tärkkelys. Levitä ympyräksi ja tee keskelle syvennys.
-4. Paista noin tunti; varmista kypsyys ja jatka tarvittaessa. Sammuta uuni ja jäähdytä pohja kokonaan luukku suljettuna.
+4. Paista noin tunti. Tarkista, että marengin ulkokuori on kuivunut ja kiinteä eikä pinnalla näy märkiä kohtia. Jos kuori ei ole kuivunut, jatka paistamista 5–10 minuuttia kerrallaan. Sisus saa jäädä pehmeäksi ja vaahtokarkkimaiseksi, mutta ei juoksevaksi. Sammuta uuni ja jäähdytä pohja kokonaan luukku suljettuna.
 5. Puhdista marjat, pilko mansikat ja sekoita marjojen sokerin ja sitruunamehun kanssa. Anna maustua jääkaapissa noin 30 min.
 6. Vatkaa crème fraîche, täytteen sokeri ja vanilja kuohkeaksi. Täytä marenki juuri ennen tarjoilua ja lisää marjat.
 7. Pidä täytetty pavlova kylmässä ja käytä samana päivänä.

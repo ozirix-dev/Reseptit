@@ -62,7 +62,7 @@ Bärpavlova.
 1. Värm ugnen till 120 °C. Rita en 20 cm cirkel på bakplåtspapper och vänd papperet.
 2. Vispa äggvitan skummig i en ren fettfri skål. Tillsätt socker gradvis tills skummet är glansigt och sockret lösts upp.
 3. Tillsätt citronsaft och stärkelse till marängen. Forma en cirkel med fördjupning i mitten.
-4. Grädda cirka en timme, kontrollera att den är färdig och förläng vid behov. Stäng av ugnen och låt svalna helt med stängd lucka.
+4. Grädda cirka en timme. Kontrollera att marängens yttre skal är torrt och fast, utan synligt våta partier. Om skalet inte har torkat, fortsätt grädda i omgångar om 5–10 minuter. Insidan får vara mjuk och marshmallowliknande, men inte rinnig. Stäng av ugnen och låt svalna helt med stängd lucka.
 5. Rensa bären, skär jordgubbarna och blanda med bärens socker och citron. Kyl cirka 30 minuter.
 6. Vispa crème fraîche med fyllningens socker och vanilj fluffig. Lägg fyllning och bär på marängen precis före servering.
 7. Förvara kallt efter montering och ät samma dag.

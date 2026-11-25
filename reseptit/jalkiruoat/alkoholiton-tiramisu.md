@@ -47,7 +47,7 @@ Kahvin, kaakaon ja mascarponen kerrosjälkiruoka ilman raakaa kananmunaa täytte
 
 1. Sekoita mascarpone, sokeri ja vanilja sileäksi. Vatkaa kylmä kerma toisessa kulhossa muotonsa pitäväksi, mutta ei rakeiseksi.
 2. Kääntele se mascarponeen. Kaada viileä kahvi matalalle lautaselle.
-3. Kostuta keksit nopeasti molemmin puolin, asettele noin puolet vuoan pohjalle ja levitä puolet kermaseoksesta päälle. Tee toinen keksi- ja kermakerros.
+3. Kostuta keksit nopeasti molemmin puolin, asettele noin puolet 25 × 18 cm:n vuoan pohjalle ja levitä puolet kermaseoksesta päälle. Tee toinen keksi- ja kermakerros.
 4. Peitä ja jäähdytä 0–5 °C:ssa vähintään 4 h. Siivilöi kaakao pinnalle juuri ennen tarjoilua.
 5. Säilytä kylmässä, käytä kahden vuorokauden kuluessa. Tavalliset savoiardit sisältävät vehnää ja kananmunaa; tarkista pakkaus.
 6. Alkoholiton tarkoittaa myös vaniljatuotteen tarkistamista.

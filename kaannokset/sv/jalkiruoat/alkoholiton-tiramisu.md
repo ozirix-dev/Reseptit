@@ -48,7 +48,7 @@ Alkoholfri tiramisu.
 
 1. Rör mascarpone, socker och vanilj slätt. Vispa kall grädde separat tills den håller formen utan att bli grynig.
 2. Vänd ner i mascarponen. Doppa kexens båda sidor snabbt i kallt kaffe.
-3. Lägg ungefär hälften i formen och bred över hälften av krämen. Upprepa lagren.
+3. Lägg ungefär hälften i en form på 25 × 18 cm och bred över hälften av krämen. Upprepa lagren.
 4. Täck och kyl vid 0–5 °C i minst 4 timmar. Sikta kakao över precis före servering.
 5. Förvara i kyl och ät inom två dygn. Vanliga savoiardikex innehåller vete och ägg; läs förpackningen.
 6. Kontrollera att vaniljaromen är alkoholfri.

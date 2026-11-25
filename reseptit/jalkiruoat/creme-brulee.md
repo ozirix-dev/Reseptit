@@ -48,7 +48,7 @@ Vaniljainen kermavanukas ja ohut rapsahtava karamellipinta.
 
 1. Kuumenna uuni 150 °C:seen. Halkaise vaniljatanko ja lämmitä sen siemenet ja kuori kermamaidossa juuri kiehumisen rajalle.
 2. Poista tanko. Sekoita keltuaiset ja sokeri rauhallisesti; lisää lämmin kermamaito vähitellen samalla sekoittaen.
-3. Siivilöi neljään annosvuokaan. Nosta vuoat syvään uunipannuun ja lisää kuumaa vettä varovasti niiden puoliväliin.
+3. Siivilöi seos neljään noin 150 ml:n uuninkestävään annosvuokaan. Jätä hieman tilaa vuokien yläreunaan. Nosta vuoat syvään uunipannuun ja lisää kuumaa vettä varovasti niiden puoliväliin.
 4. Paista 35–45 min, tarvittaessa pidempään, kunnes vanukkaan keskusta on vähintään 71 °C ja rakenne juuri hyytynyt. Nosta vuoat vesihauteesta varoen.
 5. Jäähdytä nopeasti ja siirrä peitettyinä jääkaappiin vähintään 3 tunniksi. Ripottele ennen tarjoilua 1 tl ruokosokeria kuhunkin.
 6. Sulata pinta keittiökäyttöön tarkoitetulla kaasupolttimella valmistajan ohjeen mukaan kuumuutta kestävällä alustalla etäällä syttyvistä materiaaleista. Anna sokerikuoren kovettua 2 min.

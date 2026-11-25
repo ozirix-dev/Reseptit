@@ -48,7 +48,7 @@ Crème brûlée med vanilj.
 ## Tillagning
 
 1. Värm ugnen till 150 °C. Värm mjölk, grädde, delad vaniljstång och frön nästan till kokpunkten; ta bort stången.
-2. Rör ihop gulor och socker och tillsätt gräddmjölken gradvis. Sila i fyra portionsformar.
+2. Rör ihop gulor och socker och tillsätt gräddmjölken gradvis. Sila i fyra ugnsfasta portionsformar på cirka 150 ml vardera. Lämna lite utrymme upp till kanten.
 3. Ställ i en djup långpanna och häll försiktigt i hett vatten till halva formarnas höjd. Grädda 35–45 minuter eller längre tills krämen precis stelnat och mitten nått minst 71 °C.
 4. Lyft upp försiktigt, kyl snabbt och förvara övertäckt i kylskåp i minst 3 timmar. Strö 1 tsk rörsocker över varje portion.
 5. Karamellisera med en köksbrännare enligt bruksanvisningen, på värmetåligt underlag utan brännbart material i närheten. Låt ytan stelna i 2 minuter.
