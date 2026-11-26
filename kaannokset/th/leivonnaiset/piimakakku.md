@@ -19,7 +19,7 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 image:
   src: leivonnaiset/piimakakku.webp
-  alt: "เค้กเครื่องเทศรูปวงแหวนและเค้กบัตเตอร์มิลค์ลูกพลัมสองชิ้น"
+  alt: "เค้กเครื่องเทศรูปวงแหวนพร้อมเค้กตัดหนึ่งชิ้น เนื้อเค้กสีน้ำตาลสม่ำเสมอ"
   width: 1200
   height: 800
 ingredients:

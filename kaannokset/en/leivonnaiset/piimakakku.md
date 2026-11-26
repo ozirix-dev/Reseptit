@@ -19,7 +19,7 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 image:
   src: leivonnaiset/piimakakku.webp
-  alt: "Spiced ring cake and two slices of plum buttermilk cake"
+  alt: "Spiced ring cake and one slice with an evenly brown crumb"
   width: 1200
   height: 800
 ingredients:

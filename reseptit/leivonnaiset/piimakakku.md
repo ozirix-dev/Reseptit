@@ -18,7 +18,7 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 image:
   src: leivonnaiset/piimakakku.webp
-  alt: "Mausteinen rengaskakku ja kaksi luumumarmeladilla maustettua kakkupalaa"
+  alt: "Mausteinen rengaskakku ja yksi pala, jonka leikkauspinta on tasaisen ruskea"
   width: 1200
   height: 800
 ingredients:

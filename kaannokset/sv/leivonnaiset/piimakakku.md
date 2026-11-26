@@ -19,7 +19,7 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 image:
   src: leivonnaiset/piimakakku.webp
-  alt: "Kryddig ringkaka med två skivor av plommon- och kärnmjölkskakan"
+  alt: "Kryddig ringkaka och en skiva med jämnt brun smula"
   width: 1200
   height: 800
 ingredients:
