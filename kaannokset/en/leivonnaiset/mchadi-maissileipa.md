@@ -27,9 +27,6 @@ ingredients:
   - amount: 2.5
     unit: "ml"
     item: "fine salt"
-  - amount: 5
-    unit: "ml"
-    item: "rapeseed oil for the pan"
 image:
   src: leivonnaiset/mchadi-maissileipa.webp
   alt: "Two oval golden-brown maize breads on a dark plate."
@@ -45,7 +42,7 @@ These firm, oval breads are cooked in a pan and go well with bean stew. Makes ei
 
 1. Mix the maize flour and salt. Add 250 ml of the water and knead for 6–8 minutes. Add the reserved water a tablespoon at a time until the dough is soft and pliable and holds together when squeezed.
 2. Cover the bowl and rest the dough for 20 minutes. Divide it into eight equal pieces. With damp hands, shape ovals about 10 cm long and 1.5–2 cm thick.
-3. Warm a heavy pan over medium-low heat and brush it with the oil. Cook four breads at a time, covered, for about 8 minutes. Turn once the bases are firm and coloured. Cook uncovered for about 7 minutes until browned underneath and firm in the centre.
+3. Warm a dry heavy pan over medium-low heat. Cook four breads at a time, covered, for about 8 minutes. Turn once the bases are firm and coloured. Cook uncovered for about 7 minutes until browned underneath and firm in the centre.
 4. Cook the remaining breads the same way. Rest them for a few minutes before serving.
 
 ## Storage and safety

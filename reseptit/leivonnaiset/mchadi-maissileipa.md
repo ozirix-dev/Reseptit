@@ -26,9 +26,6 @@ ingredients:
   - amount: 2.5
     unit: "ml"
     item: "hienoa suolaa"
-  - amount: 5
-    unit: "ml"
-    item: "rypsiöljyä pannuun"
 image:
   src: leivonnaiset/mchadi-maissileipa.webp
   alt: "Kaksi soikeaa kullanruskeaa maissileipää tummalla lautasella."
@@ -44,7 +41,7 @@ Pannulla paistetut soikeat, tiiviit maissileivät sopivat papupadan seuraksi. Oh
 
 1. Sekoita maissijauho ja suola. Lisää ensin 250 ml vettä ja vaivaa 6–8 minuuttia. Lisää varattua vettä ruokalusikallinen kerrallaan, kunnes taikina on pehmeää ja muovailtavaa eikä murene puristettaessa.
 2. Peitä kulho ja anna taikinan levätä 20 minuuttia. Jaa taikina kahdeksaan yhtä suureen palaan. Muotoile kostein käsin soikeiksi, noin 10 cm pitkiksi ja 1,5–2 cm paksuiksi leiviksi.
-3. Kuumenna paksupohjainen pannu keskimiedolla lämmöllä. Sivele öljy pannuun. Paista neljä leipää kerrallaan kannen alla noin 8 minuuttia. Käännä, kun pohja on kiinteä ja saanut väriä. Paista ilman kantta noin 7 minuuttia, kunnes toinenkin puoli ruskistuu ja leivät tuntuvat keskeltä kiinteiltä.
+3. Kuumenna kuiva paksupohjainen pannu keskimiedolla lämmöllä. Paista neljä leipää kerrallaan kannen alla noin 8 minuuttia. Käännä, kun pohja on kiinteä ja saanut väriä. Paista ilman kantta noin 7 minuuttia, kunnes toinenkin puoli ruskistuu ja leivät tuntuvat keskeltä kiinteiltä.
 4. Paista loput samoin. Anna leipien vetäytyä muutama minuutti ennen tarjoamista.
 
 ## Säilytys ja turvallisuus

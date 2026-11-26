@@ -27,9 +27,6 @@ ingredients:
   - amount: 2.5
     unit: "ml"
     item: "fint salt"
-  - amount: 5
-    unit: "ml"
-    item: "rapsolja till pannan"
 image:
   src: leivonnaiset/mchadi-maissileipa.webp
   alt: "Två ovala gyllenbruna majsbröd på ett mörkt fat."
@@ -45,7 +42,7 @@ De fasta, ovala bröden steks i panna och passar till bönrätter. Det blir ått
 
 1. Blanda majsmjöl och salt. Tillsätt först 250 ml vatten och knåda i 6–8 minuter. Tillsätt det sparade vattnet en matsked i taget tills degen är mjuk och formbar och håller ihop när du trycker på den.
 2. Täck skålen och låt degen vila i 20 minuter. Dela den i åtta lika stora bitar. Forma ovaler med fuktiga händer, cirka 10 cm långa och 1,5–2 cm tjocka.
-3. Värm en tjockbottnad panna på medellåg värme och pensla den med oljan. Stek fyra bröd i taget under lock i cirka 8 minuter. Vänd när undersidorna är fasta och fått färg. Stek utan lock i cirka 7 minuter tills bröden har färg på andra sidan och känns fasta i mitten.
+3. Värm en torr, tjockbottnad panna på medellåg värme. Stek fyra bröd i taget under lock i cirka 8 minuter. Vänd när undersidorna är fasta och fått färg. Stek utan lock i cirka 7 minuter tills bröden har färg på andra sidan och känns fasta i mitten.
 4. Stek de återstående bröden på samma sätt. Låt dem vila några minuter före servering.
 
 ## Förvaring och säkerhet
