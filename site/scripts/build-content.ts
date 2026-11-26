@@ -102,13 +102,22 @@ function section(markdown: string, titles: string[]): string {
   return markdown.slice(start, next < 0 ? undefined : start + next).trim();
 }
 
+const noteHeadingKeys = new Set(noteHeadings.map(title => title.toLowerCase()));
+const safetyHeadingKeys = new Set(safetyHeadings.map(title => title.toLowerCase()));
+
 export function recipePreparationSections(markdown: string) {
-  const safety = section(markdown, safetyHeadings);
-  const safetyTitle = markdown.match(new RegExp(`^##[ \t]+(${safetyHeadings.join("|")})[ \t]*$`, "im"))?.[1];
-  return {
-    instructions: section(markdown, instructionHeadings),
-    notes: [section(markdown, noteHeadings), safety && safetyTitle && `### ${safetyTitle}\n\n${safety}`].filter(Boolean).join("\n\n"),
-  };
+  const headings = [...markdown.matchAll(/^##[ \t]+([^\r\n]+)\r?$/gm)];
+  const notes = headings.flatMap((heading, index) => {
+    const title = heading[1].trim();
+    const key = title.toLowerCase();
+    const safety = safetyHeadingKeys.has(key);
+    if (!safety && !noteHeadingKeys.has(key)) return [];
+    const start = heading.index + heading[0].length;
+    const content = markdown.slice(start, headings[index + 1]?.index).trim();
+    if (!content) return [];
+    return [safety ? `### ${title}\n\n${content}` : content];
+  });
+  return { instructions: section(markdown, instructionHeadings), notes: notes.join("\n\n") };
 }
 
 function stripHtml(value: string): string {
