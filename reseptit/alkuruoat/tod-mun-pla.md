@@ -47,4 +47,4 @@ Punacurrytahnalla ja limetinlehdillä maustetut kalakakut paistetaan pienissä e
 
 - Sisältää kalaa ja kananmunaa. Tarkista currytahnan äyriäiset, soija ja vehnä. Saanto ja öljymäärä ovat toimituksellisia; paistoöljyn imeytymistä ei ole mitattu. Älä maista raakaa massaa.
 - Vertailulähde: Praew, <https://hungryinthailand.com/tod-mun-pla-recipe/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

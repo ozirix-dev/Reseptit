@@ -50,4 +50,4 @@ Fläsksida sjuds med stjärnanis, kanel och två sorters soja.
 
 - Innehåller soja; kontrollera vete. Ris serveras separat. Ingen extra stekolja; använd tjockbottnad gryta på svag värme så sockret inte bränns.
 - Receptkälla: Praew, <https://hungryinthailand.com/moo-hong/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.
+- Recept baserat på den angivna källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.

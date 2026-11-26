@@ -60,4 +60,4 @@ Indonesialais-malesialainen mausteinen keitto, jossa on kookosmaitoa, kanaa, rii
 
 - Sisältää kananmunaa. Tarkista kanaliemen ja paahdetun salotin allergeenit, erityisesti selleri ja vehnä. Nuudelien, kanan, galangalin, inkiväärin, itujen ja sipulirouheen grammoitus on toimituksellinen sovitus lähteen epätarkoista määristä. Ei thaimaalaiseksi nimetty resepti.
 - Vertailulähde: Bee Yinn Low, <https://rasamalaysia.com/soto-ayam-recipe/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

@@ -55,4 +55,4 @@ Finfördelad kokt fisk ger den starka kokossåsen fyllighet. Här används torka
 
 - Innehåller fisk och kräftdjur. Fiskvikten avser hel fisk, inte ätbar mängd. 300 g torr vermicelli, spädningen och grönsaksmängderna är redaktionella val. Fiskens separata kokvatten ingår inte i såsen. Färska khanom jeen och friterad chili utelämnas.
 - Referenskälla: Mark Wiens, <https://www.eatingthaifood.com/thai-fish-curry-recipe-nam-ya/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GB är inte fastställda; Recipavo har inte provlagat rätten.
+- Recept baserat på den angivna källan. Näringsvärden och GB är inte fastställda; Recipavo har inte provlagat rätten.

@@ -55,4 +55,4 @@ Romainelehdille kootaan paahdettua kookosta, pähkinöitä, katkarapuja ja raikk
 
 - Sisältää maapähkinää, äyriäisiä ja kalaa. Romaine on lähteen sallima sovitus: alkuperäinen lehti on elintarvikekelpoinen Piper sarmentosum (bai cha plu), ei betel-lehti eikä koristekasvi. Tarkista kuivakatkarapujen syöntivalmius pakkauksesta.
 - Vertailulähde: Rachel, <https://rachelcooksthai.com/miang-kham/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

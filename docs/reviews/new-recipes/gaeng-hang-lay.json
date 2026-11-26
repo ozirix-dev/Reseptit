@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "gaeng-hang-lay",
   "source_path": "reseptit/paaruoat/gaeng-hang-lay.md",
-  "source_sha256": "637c72c11f92d8a8ef7d46a6e6ba7c27e025410e58070c5c9659d2099cbf8090",
+  "source_sha256": "fb58e15be2dc6587522c7d4a2edd41066c35234c71c8afbe60814003b3b27354",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/paaruoat/gaeng-hang-lay.md",
         "language": "fi",
         "slug": "gaeng-hang-lay",
-        "sha256": "637c72c11f92d8a8ef7d46a6e6ba7c27e025410e58070c5c9659d2099cbf8090",
-        "semantic_sha256": "07fe27e9bf8b0c59bd52aecb4b57ff1a40367043c72966a4fd06e9c74bc6de0d"
+        "sha256": "fb58e15be2dc6587522c7d4a2edd41066c35234c71c8afbe60814003b3b27354",
+        "semantic_sha256": "c0b71ef66d783cde744cf6c8c94740920ed7a4d9f0d0bb933d51722c7ff867f2"
       },
       {
         "path": "kaannokset/en/paaruoat/gaeng-hang-lay.md",
         "language": "en",
         "slug": "gaeng-hang-lay-en",
-        "sha256": "6541983e520ed5d2ea28fddea09dcf127062b2a2c7dbf665aba3346df4a10eba",
-        "semantic_sha256": "c86eff9bd131a5bcd3ca82ef05627a6d7fc99e2da1d798bde958d2520ede7358"
+        "sha256": "8a33794f50245f15701c8bee31c7fa7fd5c0b051d27a1c67c9e3312cad3c6e8e",
+        "semantic_sha256": "88ac47a2d7c37cecf235895b7b0e8addba6019e728b7100f50bdc23537191df5"
       },
       {
         "path": "kaannokset/sv/paaruoat/gaeng-hang-lay.md",
         "language": "sv",
         "slug": "gaeng-hang-lay-sv",
-        "sha256": "9a71e855bdbd52bd667050d40e6b6960741055ff19b1da75e263b755a4c5c00e",
-        "semantic_sha256": "20e1092859209a3c3ce2a50e0a1f4758ec175de388a18eb906fcb12c33a6c516"
+        "sha256": "8b0e544524bc00148dbec11fe887ec94649663f105a1da3209064503e770f604",
+        "semantic_sha256": "1de0181ae0958710b8d453c9e2e8b93edda756714da56aa87b683feb3ba153cc"
       },
       {
         "path": "kaannokset/th/paaruoat/gaeng-hang-lay.md",
         "language": "th",
         "slug": "gaeng-hang-lay-th",
-        "sha256": "9df94d42dc568fafa738d822fc1ba206bf79f3104262165485605bd19c5d34ba",
-        "semantic_sha256": "8f274b3078016f922a85f9439bfa22aa95ef6f5913b851f8f32f2365b5acde0d"
+        "sha256": "98a18590bb7e6e902b556afd3367562347755143aa0c2d92bf190c24e6b34777",
+        "semantic_sha256": "66c74753f6eeb3a03b9310145a6d934875e24e068004933437070371fd908a00"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "Tamarindi, makea soija, palmusokeri ja säilöntäliemi sekä tahnan todellinen osuus."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

@@ -56,4 +56,4 @@ Romaine leaves hold toasted coconut, peanuts, dried shrimp and fresh aromatics.
 
 - Contains peanuts, crustaceans and fish. Romaine is a source-supported adaptation: the original is edible Piper sarmentosum (bai cha plu), not betel or an ornamental plant. Check dried shrimp are ready to eat.
 - Recipe source: Rachel, <https://rachelcooksthai.com/miang-kham/>
-- Editorial draft based on the source. Nutrition and GL undetermined; no Recipavo kitchen trial.
+- Recipe adapted from the cited source. Nutrition and GL undetermined; no Recipavo kitchen trial.

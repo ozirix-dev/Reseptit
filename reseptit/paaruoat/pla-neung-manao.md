@@ -48,4 +48,4 @@ Kokonainen höyrytetty valkolihainen kala tarjoillaan hapokkaan maustekastikkeen
 
 - Sisältää kalaa ja selleriä. Kokonaispainoa ei käytetä syötävänä fileemassana. Riisi ei kuulu annokseen.
 - Vertailulähde: Praew, <https://hungryinthailand.com/thai-steamed-fish-recipe/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

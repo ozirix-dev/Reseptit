@@ -55,4 +55,4 @@ Rapea broileri ja cashewpähkinät wokataan paprikan kanssa makeansuolaisessa ka
 
 - Sisältää cashewpähkinää ja soijaa; tarkista vehnä soijakastikkeissa. Öljyvaraus ei ole syöty määrä.
 - Vertailulähde: Marion Grasby, <https://www.marionskitchen.com/thai-cashew-chicken/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

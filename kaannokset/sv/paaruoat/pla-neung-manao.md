@@ -49,4 +49,4 @@ Hel ångkokt vit fisk serveras med syrlig limesås.
 
 - Innehåller fisk och selleri. Helvikten är inte ätlig filévikt. Ris ingår inte.
 - Receptkälla: Praew, <https://hungryinthailand.com/thai-steamed-fish-recipe/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.
+- Recept baserat på den angivna källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.

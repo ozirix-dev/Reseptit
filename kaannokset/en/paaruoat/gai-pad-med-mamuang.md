@@ -56,4 +56,4 @@ Crisp chicken and cashews meet peppers in a sweet-savoury wok sauce.
 
 - Contains cashews and soy; check soy sauce for wheat. Frying oil allowance is not the consumed amount.
 - Recipe source: Marion Grasby, <https://www.marionskitchen.com/thai-cashew-chicken/>
-- Editorial draft based on the source. Nutrition and GL undetermined; no Recipavo kitchen trial.
+- Recipe adapted from the cited source. Nutrition and GL undetermined; no Recipavo kitchen trial.

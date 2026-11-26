@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "gaeng-som-bambunversoilla",
   "source_path": "reseptit/paaruoat/gaeng-som-bambunversoilla.md",
-  "source_sha256": "f27436835e9ce8c76ca8d75ce76fe928c0bc1c1055e2f9d4e64cc7da5ff92001",
+  "source_sha256": "e9a0e3b9f292548a55e0a52dc6d068a8779ac2db61e5077e9824b2f04e253ea0",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/paaruoat/gaeng-som-bambunversoilla.md",
         "language": "fi",
         "slug": "gaeng-som-bambunversoilla",
-        "sha256": "f27436835e9ce8c76ca8d75ce76fe928c0bc1c1055e2f9d4e64cc7da5ff92001",
-        "semantic_sha256": "be65fddfd97ae100961d6d7b43e324d9d0b3839c9319e6e6bde4ac8fd8b32bba"
+        "sha256": "e9a0e3b9f292548a55e0a52dc6d068a8779ac2db61e5077e9824b2f04e253ea0",
+        "semantic_sha256": "d288a55c595aa484ffd8bc3d3adf1a110f29b6f21901453d09d13c8cf42169c5"
       },
       {
         "path": "kaannokset/en/paaruoat/gaeng-som-bambunversoilla.md",
         "language": "en",
         "slug": "gaeng-som-bambunversoilla-en",
-        "sha256": "4e6f48ff48f3857b6edb8bb1b0189e30ff4c1b2d36eb0a5bc0c89590eaf028a8",
-        "semantic_sha256": "ed507ae1584ed138354d2b91107c6a964192cf3f4cd3987861950171c7e311d2"
+        "sha256": "3d2d625078a797e2a9c90f878ad84f0a7da92bb275c00b9fe5e8837cd2260c4f",
+        "semantic_sha256": "de87719c9e0878f7accc79458e4922638743b7ed615a3f5362d67e6ae7ac71f0"
       },
       {
         "path": "kaannokset/sv/paaruoat/gaeng-som-bambunversoilla.md",
         "language": "sv",
         "slug": "gaeng-som-bambunversoilla-sv",
-        "sha256": "f3b4c081cdae39b290f35800fbd46f23b65c41f5b7858107268fe36afd894b29",
-        "semantic_sha256": "4829332069a3182be18e02911505e1ed1fc658de44bb9a847bdc706c98a4357d"
+        "sha256": "2d33b4ba96beac5c4f4bff3a73d74370f953cfd24b6c9981935f00ad723775be",
+        "semantic_sha256": "3af661a2063984195f5224259553ea82d872c50fc4ef5d4f44e807ee74c53b5a"
       },
       {
         "path": "kaannokset/th/paaruoat/gaeng-som-bambunversoilla.md",
         "language": "th",
         "slug": "gaeng-som-bambunversoilla-th",
-        "sha256": "0c91e3247519bc839e31e188821a2bda6dd0be5314406a0b2b62b00ec2178af0",
-        "semantic_sha256": "57cdff3555c19af4becfeb5a40b19d7f45f75a9dbb092af18df105f53dda63ba"
+        "sha256": "0d8e9e39121eab95070d0b39c628caae1fd4c1f277c49cc467cb34d3be4e8f12",
+        "semantic_sha256": "39edbf4cac5992385472967274c7f5c4459f8ab9f9d5497773bcf6abe5550e3c"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "Bambunversojen ja chilin koostumus sekä kapi/limetti, ei arvioitua HH-annosta; ei riisiä."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

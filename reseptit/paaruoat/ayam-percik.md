@@ -54,4 +54,4 @@ Kurkumalla marinoitu kana kypsennetään höyryssä ja viimeistellään uunissa 
 
 - Sisältää äyriäisiä. Riisi ei sisälly annokseen. Neljän reisipalan kokonaispaino 1 kg, inkiväärin 15 g, kookosmaidon 500 ml ja 30 min jääkaappimarinointi ovat toimituksellisia täsmennyksiä; erillinen puhdas tarjoilukastike on turvallisuussovitus.
 - Vertailulähde: Emily Halim, Nyonya Cooking, <https://www.nyonyacooking.com/recipes/ayam-percik~2JIHfE6OLH>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

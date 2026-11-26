@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "gai-pad-med-mamuang",
   "source_path": "reseptit/paaruoat/gai-pad-med-mamuang.md",
-  "source_sha256": "0b971a9fecfd29742641fb4911ebe277a27107963642276b6932e3e81567b71a",
+  "source_sha256": "bc7e16dbefd6f7030b55ccd3a142841d0ed984230182107aa015c228f876cb39",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/paaruoat/gai-pad-med-mamuang.md",
         "language": "fi",
         "slug": "gai-pad-med-mamuang",
-        "sha256": "0b971a9fecfd29742641fb4911ebe277a27107963642276b6932e3e81567b71a",
-        "semantic_sha256": "3a38723ec375e151abfb7c77f0e484501e1eee11bf8d5ad081998a9d816f7e47"
+        "sha256": "bc7e16dbefd6f7030b55ccd3a142841d0ed984230182107aa015c228f876cb39",
+        "semantic_sha256": "4be8779ffcb3853e73e458c53198010af5b36aa08c5f324fd74c452b6765fb19"
       },
       {
         "path": "kaannokset/en/paaruoat/gai-pad-med-mamuang.md",
         "language": "en",
         "slug": "gai-pad-med-mamuang-en",
-        "sha256": "1d4820ae6bddd7b06e439313efa07100c97a16f2ac3d1c2e4326ffebdc495f4d",
-        "semantic_sha256": "4d24a9330403b29b3255b70ebdd77018401dbc25d1f9e18698f357b4695ea19e"
+        "sha256": "0c624b86c68acc8e974d8bc519e7dfcbe6a7b5655f567d0bc270fca891913911",
+        "semantic_sha256": "45f49f74d8b4872b2e69fa9cb0b226a23c35fb4be0778d708197983e3ffc4755"
       },
       {
         "path": "kaannokset/sv/paaruoat/gai-pad-med-mamuang.md",
         "language": "sv",
         "slug": "gai-pad-med-mamuang-sv",
-        "sha256": "f917ce6805de293ca545466e45e1bf4b8c497cc99da4b8c054b801f29baf92b3",
-        "semantic_sha256": "617b8c558143fe4d97b586dfeb5a4b788c00f02b825660f431756d2ca53f1fef"
+        "sha256": "0bdb9126c19f974c4863cdd15de8c829f0b41fc9f4f332ce21f7c0baba0812ba",
+        "semantic_sha256": "4873a1284a1085aff4188c0bee384b9ffde3af516f80ff16c81ad494a8580a9c"
       },
       {
         "path": "kaannokset/th/paaruoat/gai-pad-med-mamuang.md",
         "language": "th",
         "slug": "gai-pad-med-mamuang-th",
-        "sha256": "5d7734e6b7fac54018f3b46cf0fa7139fdc9738e7a388b20eaada380fd9944d2",
-        "semantic_sha256": "ed2711852d61d15b2d2c51d2f9ccf75531e6189f3c78c86bd73d0aa431e417d8"
+        "sha256": "e36bfc8e245d5d2c86b80074f6ffa1637562dc54e2a49fcb8e196627c9e4e62f",
+        "semantic_sha256": "aadab63e3116c5de686a325bbe542b830fc190e2a559ef313537efb9a1d5dceb"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "Paneroinnin todellinen tärkkelysmassa, cashew, sokeri ja soijakastikkeet; ei validoitua GI/HH-annosta."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

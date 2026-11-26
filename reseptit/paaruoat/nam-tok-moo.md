@@ -52,4 +52,4 @@ Grillattu porsas maustetaan limetillä, yrteillä ja paahdetulla riisillä.
 
 - Sisältää kalaa ja nilviäisiä, mahdollisesti soijaa ja vehnää. Lihan leikkauspaksuus on kotikeittiösovitus. Tahmariisi lisukkeena ei sisälly annokseen.
 - Vertailulähde: Suwanee Lennon, <https://www.simplysuwanee.com/moo-namtok/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

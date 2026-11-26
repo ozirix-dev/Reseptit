@@ -46,4 +46,4 @@ Kycklinglår bräseras i en syrlig sås med soja, vinäger, vitlök och lagerbla
 
 - Innehåller soja; kontrollera sojan för vete. Källans 4–5 pund har preciserats till 2 kg och 6–8 portioner till sex. Ris ingår inte; kycklingvikten inkluderar ben.
 - Referenskälla: Corinne Domingo, Food Network, <https://www.foodnetwork.com/recipes/filipino-chicken-adobo-recipe-1955818>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GB är inte fastställda; Recipavo har inte provlagat rätten.
+- Recept baserat på den angivna källan. Näringsvärden och GB är inte fastställda; Recipavo har inte provlagat rätten.

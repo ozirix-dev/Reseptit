@@ -52,4 +52,4 @@ Cooked jasmine rice, egg and real crab meat come together in a hot wok.
 
 - Contains crustaceans, egg, fish and soy; check sauces for wheat and crab for sulphites. Do not use surimi. Reheat precooked rice only once; do not keep reheated rice as new leftovers.
 - Recipe source: Suwanee Lennon, <https://www.simplysuwanee.com/crab-fried-rice/>
-- Editorial draft based on the source. Nutrition and GL undetermined; no Recipavo kitchen trial.
+- Recipe adapted from the cited source. Nutrition and GL undetermined; no Recipavo kitchen trial.

@@ -50,4 +50,4 @@ En buljonglik curry med gurkmeja, chili och lime, utan kokosmjölk.
 
 - Innehåller fisk och kräftdjur. Mycket stark. Fiskvikten avser hel fisk; ris ingår inte. Källan tillåter bambuskott i stället för grön papaya. 500 g avrunnen vikt och fyra portioner är redaktionella anpassningar; papayavarianten avvaktar inköpsunderlag.
 - Referenskälla: Mark Wiens, <https://www.eatingthaifood.com/thai-gaeng-som-recipe/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GB är inte fastställda; Recipavo har inte provlagat rätten.
+- Recept baserat på den angivna källan. Näringsvärden och GB är inte fastställda; Recipavo har inte provlagat rätten.

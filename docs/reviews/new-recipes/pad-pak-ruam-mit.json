@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "pad-pak-ruam-mit",
   "source_path": "reseptit/alkuruoat/pad-pak-ruam-mit.md",
-  "source_sha256": "a1b52e57e7227f89afba01987172c730e027ab9e9e2af94c458d50d6bdb2b4a9",
+  "source_sha256": "ad204d1344bf280d2dfb8469d8019a267ee833f3943ac66ae775111f261fde83",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/alkuruoat/pad-pak-ruam-mit.md",
         "language": "fi",
         "slug": "pad-pak-ruam-mit",
-        "sha256": "a1b52e57e7227f89afba01987172c730e027ab9e9e2af94c458d50d6bdb2b4a9",
-        "semantic_sha256": "48cdf124238fecc7378dd8f2a24634ee14301b4b9003eea176be0c78df919c9b"
+        "sha256": "ad204d1344bf280d2dfb8469d8019a267ee833f3943ac66ae775111f261fde83",
+        "semantic_sha256": "782fc5bc69c9d87172ffd102c280177d0963c7abd63fc656b2d79c0d344524ea"
       },
       {
         "path": "kaannokset/en/alkuruoat/pad-pak-ruam-mit.md",
         "language": "en",
         "slug": "pad-pak-ruam-mit-en",
-        "sha256": "b191ed54f9fc34eb6b092532d1c2ada2506a4999a135eb4a8a73cbe6d698cfda",
-        "semantic_sha256": "f7f0523323f46a42ce5edd7080bde87741b180cd955a50eec41aa415cce95ffc"
+        "sha256": "42be26d2b8fdd95ff44c63755d70bbf1109b8163a4d074f93bd14f5ade4a519f",
+        "semantic_sha256": "5b07ba2c51171d8c2d5438d71334a2ebcf7df351ca57f62b09157ff3d872abc1"
       },
       {
         "path": "kaannokset/sv/alkuruoat/pad-pak-ruam-mit.md",
         "language": "sv",
         "slug": "pad-pak-ruam-mit-sv",
-        "sha256": "b6cebb541329725d2c6dddea279c38640503efa536f048127ff05d8c7d558046",
-        "semantic_sha256": "1b6d94d88335360508dd3edc16da070c39602fd62eba8dbf3335911bc1e124d3"
+        "sha256": "4ca7eaeaefa9018d2b422e28f3de98128b115561c10bf5220771f46d1b50fc2c",
+        "semantic_sha256": "46ec7114dfb430a2de54ec2b7b7704d8dc60bde038c120fc2c1d31313546eb48"
       },
       {
         "path": "kaannokset/th/alkuruoat/pad-pak-ruam-mit.md",
         "language": "th",
         "slug": "pad-pak-ruam-mit-th",
-        "sha256": "1f4f67fd973161d9f21d39410875433ae2dd373712c8b1823b96ae908e17fb70",
-        "semantic_sha256": "e6858e3126ca81199a9df722004b9ed360aa7859b076f708b7acd895f0e4b2a1"
+        "sha256": "00baed95078e257b38a2df063aa464cfffd942a8c340bc86cff93d8a374668c7",
+        "semantic_sha256": "cd90fb16d123e93477a5e2efd498dbff790b521bbf34c43b6daa8c3b4715d8cf"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "Sokerin ja kastikkeiden HH sekä vihannesten todellinen massa/annos; ei luotettavaa yhdistelmä-GI:tä."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

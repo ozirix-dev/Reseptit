@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "khanom-jeen-nam-ya",
   "source_path": "reseptit/paaruoat/khanom-jeen-nam-ya.md",
-  "source_sha256": "79c4e95e69928d6751df72f5b980a3a9fee6d1fe1a5d7ead109516adc9d8af79",
+  "source_sha256": "6284731494eb33b1092896f28455dfa530c88288b9d0cce8e4da629c5038a138",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/paaruoat/khanom-jeen-nam-ya.md",
         "language": "fi",
         "slug": "khanom-jeen-nam-ya",
-        "sha256": "79c4e95e69928d6751df72f5b980a3a9fee6d1fe1a5d7ead109516adc9d8af79",
-        "semantic_sha256": "e278c909d8bf75687fcf537151caa3f617a60ccbb71a865aa085aa1aa1e72259"
+        "sha256": "6284731494eb33b1092896f28455dfa530c88288b9d0cce8e4da629c5038a138",
+        "semantic_sha256": "6ecd55a33c8babd4032c771c33d7f5002e4662a6d4a8837b6dc23b6952382f44"
       },
       {
         "path": "kaannokset/en/paaruoat/khanom-jeen-nam-ya.md",
         "language": "en",
         "slug": "khanom-jeen-nam-ya-en",
-        "sha256": "5d1efa376e0f69384abd1b9caf32316d78f38eb153ecb1d5b79989e552d00501",
-        "semantic_sha256": "ce97f6e7cb5256a53caaa667740d7494e18ac543ac69b089d94a28fd5a127c63"
+        "sha256": "492aeb279d02c683a6523601622609090403a7d50c532203d990450a448220b2",
+        "semantic_sha256": "3a0d895cef7abc49ced7fb5973ef562dbb76032ee4e8ee6307bd0a7c6d73fe8f"
       },
       {
         "path": "kaannokset/sv/paaruoat/khanom-jeen-nam-ya.md",
         "language": "sv",
         "slug": "khanom-jeen-nam-ya-sv",
-        "sha256": "1fb1254d7e818099795b32caab85b3b39cccde3b946f736158b5724985d0c11f",
-        "semantic_sha256": "4c032b5a38552eb12369b1531a19f8aed110eb87c6a51fb6fcb9311594ce650c"
+        "sha256": "d77e8e892b63d9af1b04580a67c5597d26a44ad3c2b227d2dfa9f3f81facafcd",
+        "semantic_sha256": "fad5b5b0f4ae070261783e1e617fabd3f14a06884f4ebc1817cb92525c7a63ac"
       },
       {
         "path": "kaannokset/th/paaruoat/khanom-jeen-nam-ya.md",
         "language": "th",
         "slug": "khanom-jeen-nam-ya-th",
-        "sha256": "b8c2acab5190963e18ac7eb39e73022c2cb1dcd346091aa0291a27e537b0dd99",
-        "semantic_sha256": "4b2f553d75321dc583ba8281492027f11b9ac97a6ad743049ba9ba7915915543"
+        "sha256": "8ae235f943344f6bb0d6d2b7c0a0ee2e2825f8b56c427b8d7f82012941b06253",
+        "semantic_sha256": "1abe59addcb3cd2bdd5f960a88d02e7fcc2974f2a545ed02e2234f12ac10c98e"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "300 g kuiva riisivermiselli eli 75 g kuivaa/annos; tuotteen HH ja valmistusmuotoon sopiva GI puuttuvat. Ei tuoreen khanom jeenin GI:n siirtoa."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

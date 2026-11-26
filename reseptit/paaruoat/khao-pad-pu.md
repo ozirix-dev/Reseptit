@@ -51,4 +51,4 @@ Kypsä jasmiiniriisi, muna ja aito taskuravunliha paistetaan nopeasti wokissa.
 
 - Sisältää äyriäisiä, kananmunaa, kalaa ja soijaa; tarkista kastikkeiden vehnä ja ravun mahdolliset sulfiitit. Älä käytä surimia. Etukäteen kypsennetty riisi kuumennetaan vain kerran; älä jäähdytä uudelleen lämmitettyä riisiä uudeksi tähteeksi.
 - Vertailulähde: Suwanee Lennon, <https://www.simplysuwanee.com/crab-fried-rice/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

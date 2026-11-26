@@ -52,4 +52,4 @@ A mild clear soup with ground pork, firm tofu and napa cabbage.
 
 - Contains fish and soy; check stock and soy sauce for wheat/celery. Napa cabbage, pork gram weight and oil are editorial adaptations; not vegetarian.
 - Recipe source: Rachel, <https://rachelcooksthai.com/pork-and-tofu-soup/>
-- Editorial draft based on the source. Nutrition and GL undetermined; no Recipavo kitchen trial.
+- Recipe adapted from the cited source. Nutrition and GL undetermined; no Recipavo kitchen trial.

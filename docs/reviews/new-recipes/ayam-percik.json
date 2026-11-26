@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "ayam-percik",
   "source_path": "reseptit/paaruoat/ayam-percik.md",
-  "source_sha256": "0e9209df3da7ea239ba51cfa539c02719b5e8347dad96350953a3b03ac971340",
+  "source_sha256": "4d575a11efebf62593c929ae288324aa8eab5338baa8860e031463dc8d85e581",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/paaruoat/ayam-percik.md",
         "language": "fi",
         "slug": "ayam-percik",
-        "sha256": "0e9209df3da7ea239ba51cfa539c02719b5e8347dad96350953a3b03ac971340",
-        "semantic_sha256": "1d52f047833e80f228c769ac7569ec4318c6614f7f0ffd749ace6bbbb1412d44"
+        "sha256": "4d575a11efebf62593c929ae288324aa8eab5338baa8860e031463dc8d85e581",
+        "semantic_sha256": "330d2f61c74ca8e1e098ff86cf658ab07bcae087bdf003ef9f91da782835c9b5"
       },
       {
         "path": "kaannokset/en/paaruoat/ayam-percik.md",
         "language": "en",
         "slug": "ayam-percik-en",
-        "sha256": "80fbfadb561e14ab0550d15ab8b9dc31d490ab8e3e07a64dd9dc8e203e928f6d",
-        "semantic_sha256": "391627eeb4a4927f46a8982f060057785a87082bebd07fd1011d8fe199b12092"
+        "sha256": "6237f92c1c5c95f6c7f405b3fc0dd161f0f40656813ec015efe3cc828781d9f7",
+        "semantic_sha256": "c9df317fbdc35b2fe346e6b97a92e08d2e4121af122b7a81612e63724502f072"
       },
       {
         "path": "kaannokset/sv/paaruoat/ayam-percik.md",
         "language": "sv",
         "slug": "ayam-percik-sv",
-        "sha256": "5c26d776cdbf8a6cad56d59e7b55eda768c7fd9c74291199942c2dc05bcbbbc9",
-        "semantic_sha256": "5e833bf9042389f0f5e77647b0fe7d7e2d26c6ce2af66cff90be2053ce7e3a56"
+        "sha256": "0a524635c001dc0dfd9a21e3858fa64f5e197f22856a919ff02bf6d00c82aa99",
+        "semantic_sha256": "5cfb2e587e4b3c2e9b8d4f5a4b1e4ff1eb561baeac41fc8d36fbc71678ef9e3f"
       },
       {
         "path": "kaannokset/th/paaruoat/ayam-percik.md",
         "language": "th",
         "slug": "ayam-percik-th",
-        "sha256": "59a99b1493418e9b975f4fb611f142c08b4b7ef8a7b2e1ff2450f8b42229ae9c",
-        "semantic_sha256": "e59285e062180a3ed3d6b3d757c657ad7eda5fc6c6793ccfc8d7335567c461bf"
+        "sha256": "69dc060a18009d9772603955c6acc928c964a570c2d666eb997fe39965300053",
+        "semantic_sha256": "fa0ffe06735560eda0642d66c7babb79cfbb2d3e8117ec78ba09e911bf176259"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "Sokeri, tamarindi, kookosmaito ja kastikkeen syöty osuus; ei lisukeriisiä."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

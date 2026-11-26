@@ -56,4 +56,4 @@ Romansalladsblad fylls med rostad kokos, jordnötter, torkade räkor och färska
 
 - Innehåller jordnötter, kräftdjur och fisk. Romansallad är en källstödd anpassning: originalet är ätlig Piper sarmentosum (bai cha plu), inte betel eller prydnadsväxt. Kontrollera att räkorna är ätfärdiga.
 - Receptkälla: Rachel, <https://rachelcooksthai.com/miang-kham/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.
+- Recept baserat på den angivna källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.

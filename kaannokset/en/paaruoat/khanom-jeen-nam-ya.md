@@ -55,4 +55,4 @@ Flaked cooked fish thickens a spicy coconut sauce, served here with dried rice v
 
 - Contains fish and crustaceans. Fish weight is whole-fish weight, not edible yield. The 300 g dried vermicelli, dilution and vegetable quantities are editorial choices. Separate fish cooking water is not used in the sauce. Fresh khanom jeen and fried chilli garnish are omitted.
 - Reference source: Mark Wiens, <https://www.eatingthaifood.com/thai-fish-curry-recipe-nam-ya/>
-- Editorial draft based on the source. Nutrition and GL are not determined; Recipavo has not tested it in its own kitchen.
+- Recipe adapted from the cited source. Nutrition and GL are not determined; Recipavo has not tested it in its own kitchen.

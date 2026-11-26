@@ -53,4 +53,4 @@ Keitetyt munat, porsaan kylki ja paistettu tofu hautuvat makeansuolaisessa viisi
 
 - Sisältää kananmunaa ja soijaa; tarkista vehnä soijakastikkeissa ja tofutuotteessa. Riisi ei sisälly annokseen. Valitse valmis paistettu tofu, älä korvaa samalla painolla kuivaa tofutuotetta.
 - Vertailulähde: Marion Grasby, <https://www.marionskitchen.com/thai-braised-pork-egg/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

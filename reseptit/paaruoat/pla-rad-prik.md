@@ -49,4 +49,4 @@ Rapeaksi paistettu valkolihainen kala saa päälleen makeanhappaman tulisen kast
 
 - Sisältää kalaa. Filee- ja matalampi paistotapa, tärkkelys- ja öljyvaraukset sekä puolikas kastikemitoitus ovat toimituksellisia sovituksia, eivät lähteen testattu kokonaiskalaversio. Öljyn imeytymistä ei mitattu.
 - Vertailulähde: Praew, <https://hungryinthailand.com/thai-crispy-fish-tamarind-sauce/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

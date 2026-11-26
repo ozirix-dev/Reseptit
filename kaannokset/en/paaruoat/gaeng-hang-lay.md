@@ -61,4 +61,4 @@ Ginger, tamarind and pickled garlic flavour this slowly braised pork curry.
 
 - Contains fish, crustaceans and soy; check soy sauce for wheat and pickled garlic for sulphites. Use Thai garlic in sweet-sour brine, not chilli-oil pickle. Actual paste yield and the mass of the 120 ml portion require measurement before nutrition calculation. Rice is not included.
 - Reference source: Suwanee, <https://www.simplysuwanee.com/gaeng-hung-lay/>
-- Editorial draft based on the source. Nutrition and GL are not determined; Recipavo has not tested it in its own kitchen.
+- Recipe adapted from the cited source. Nutrition and GL are not determined; Recipavo has not tested it in its own kitchen.

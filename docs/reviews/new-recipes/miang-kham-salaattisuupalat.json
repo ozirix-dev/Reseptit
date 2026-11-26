@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "miang-kham-salaattisuupalat",
   "source_path": "reseptit/alkuruoat/miang-kham-salaattisuupalat.md",
-  "source_sha256": "32e9bd78de1bb7914bd1b20408ab5deed4d3347617a99fb3aeaab84fd96a085b",
+  "source_sha256": "2056eea560a609b62fb8bda8a9a4327c51d1cf00523d77959d65fbafdef4e75b",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/alkuruoat/miang-kham-salaattisuupalat.md",
         "language": "fi",
         "slug": "miang-kham-salaattisuupalat",
-        "sha256": "32e9bd78de1bb7914bd1b20408ab5deed4d3347617a99fb3aeaab84fd96a085b",
-        "semantic_sha256": "6026522df8afae64aa408a37dcccaa81141517902487c6e8746ee2ec9007c576"
+        "sha256": "2056eea560a609b62fb8bda8a9a4327c51d1cf00523d77959d65fbafdef4e75b",
+        "semantic_sha256": "b15fefb4313437d9959f54b912025fbc09e605389b07986079f435c777a82b08"
       },
       {
         "path": "kaannokset/en/alkuruoat/miang-kham-salaattisuupalat.md",
         "language": "en",
         "slug": "miang-kham-salaattisuupalat-en",
-        "sha256": "c2449ad56ec50d724db85d2ec6033690710e1fe6b5e85547e03073ed963826c6",
-        "semantic_sha256": "e18a7b9284b0e76e41a1e4ff1b02d0d84227cdb77825474359704404f87c2d7d"
+        "sha256": "2fd17e862b292f8ec8683a1af480a8bdfe2cf571276fe52e699b27d4dd08c441",
+        "semantic_sha256": "716dafe4fe32a75e31545abd56a5494739a30674f4053f5280bb59a94c4ca4bc"
       },
       {
         "path": "kaannokset/sv/alkuruoat/miang-kham-salaattisuupalat.md",
         "language": "sv",
         "slug": "miang-kham-salaattisuupalat-sv",
-        "sha256": "0d9f674fd4e82e9fde89381e65b614c26b6153a383561ace9941183aff409e8b",
-        "semantic_sha256": "97d4c9649173645e9a4ed5759f455a4a77d57f5672d0f076eef0f4cd762cedc1"
+        "sha256": "bd2b2645dd4805b645d5d69f4a6c3a3f36a294f38bf0a97dd371fa84433383c4",
+        "semantic_sha256": "1b30f58eb0e7dfcba21c2a954b5bb8aea7f5afb487dfe19fc0a14f4fdf958413"
       },
       {
         "path": "kaannokset/th/alkuruoat/miang-kham-salaattisuupalat.md",
         "language": "th",
         "slug": "miang-kham-salaattisuupalat-th",
-        "sha256": "2dc18767c1182f75b78378dbe75303791d457ac138a6947dc7fc902d8b0294c0",
-        "semantic_sha256": "4b2fe67574fcba6b01d2cbccd2d0c897ed767b8dd94a43bee240d86bbd356ece"
+        "sha256": "5cc09bb48ec415dcfc06fac7bfddb380181e05a5687bc655b9f4fcdeb1e9f791",
+        "semantic_sha256": "9a98289499fbddb5cc5a20d015edb31d4c7670c87f2ff2d364b03d1be6fbbe85"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "Palmusokerin todellinen massa, kastikkeen jako ja täytteiden HH/GI; romaine ei alkuperäinen lehti."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

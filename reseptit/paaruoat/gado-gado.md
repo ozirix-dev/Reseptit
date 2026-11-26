@@ -56,4 +56,4 @@ Peruna, tempe, muna ja vihannekset tarjoillaan lämpimän maapähkinäkastikkeen
 
 - Sisältää maapähkinää, soijaa ja kananmunaa; currytahna voi sisältää äyriäisiä tai kalaa ja soijakastike vehnää. Ei kasvissyöjäväitettä ilman tuotekohtaista tarkistusta. Punainen thaicurrytahna on lähteen oikopolku; pinaatin, itujen ja kurkun painot täsmennetty toimituksellisesti. Ei valinnaisia katkarapusipsejä.
 - Vertailulähde: Nagi Maehashi, RecipeTin Eats, <https://www.recipetineats.com/gado-gado-indonesian-salad-with-peanut-sauce/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

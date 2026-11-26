@@ -61,4 +61,4 @@ Ingefära, tamarind och inlagd vitlök smaksätter långkokt fläsk.
 
 - Innehåller fisk, kräftdjur och soja; kontrollera vete i sojan och sulfiter i den inlagda vitlöken. Välj thailändsk vitlök i sötsyrlig lag, inte chilioljeinläggning. Pastasatsens verkliga utbyte och vikten av 120 ml behöver mätas före näringsberäkning. Ris ingår inte.
 - Referenskälla: Suwanee, <https://www.simplysuwanee.com/gaeng-hung-lay/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GB är inte fastställda; Recipavo har inte provlagat rätten.
+- Recept baserat på den angivna källan. Näringsvärden och GB är inte fastställda; Recipavo har inte provlagat rätten.

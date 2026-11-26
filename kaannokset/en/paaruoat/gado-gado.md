@@ -57,4 +57,4 @@ Potato, tempeh, egg and vegetables meet a warm peanut dressing.
 
 - Contains peanuts, soy and egg; curry paste may contain crustaceans or fish and soy sauce may contain wheat. No vegetarian claim without checking products. Red Thai curry paste is the source's shortcut; spinach, sprout and cucumber weights are editorial specifications. Optional prawn crackers omitted.
 - Reference source: Nagi Maehashi, RecipeTin Eats, <https://www.recipetineats.com/gado-gado-indonesian-salad-with-peanut-sauce/>
-- Editorial draft based on the source. Nutrition and GL are not determined; Recipavo has not tested it in its own kitchen.
+- Recipe adapted from the cited source. Nutrition and GL are not determined; Recipavo has not tested it in its own kitchen.
