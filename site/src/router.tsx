@@ -33,7 +33,7 @@ function SiteLayout() {
         </div>
       </header>
       <AnalyticsPrompt locale={locale} />
-      <main id="main" className="site-main"><Outlet /></main>
+      <main id="main" className="site-main" tabIndex={-1}><Outlet /></main>
       <footer className="site-footer"><div className="container"><p>{previewCopy?.footer ?? labels.footer}</p><p className="site-footer__contact"><Link to={privacyPaths[locale]}>{privacyCopy[locale].title}</Link><a href={`mailto:${privacyEmail}`}>{privacyEmail}</a><FeedbackFooterButton locale={locale} /></p><RecipeAbout locale={locale} /></div></footer>
       <ScrollRestoration />
       </div>
