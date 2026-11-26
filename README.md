@@ -282,5 +282,23 @@ Katso [terveystarkistuksen ohje](docs/product/recipavo-production-health-2026-11
 
 Tämä julkinen repo ei ole salaisuuksien tai yksityisten muistiinpanojen
 säilytyspaikka. Reseptit ja tekninen toteutus kuuluvat tänne; ReportHub
-kokoaa päätös- ja luovutuskontekstin. Lisenssiä ei ole lukittu: julkisuus
-ei yksin anna vapaata sisällön uudelleenkäyttöoikeutta.
+kokoaa päätös- ja luovutuskontekstin.
+
+Recipavon omisteinen oikeuksienpidätys on kuvattu
+[LICENSE-tiedostossa](https://github.com/ozirix-dev/Reseptit/blob/main/LICENSE).
+Julkinen saatavuus ei tarkoita avoimen lähdekoodin tai avoimen sisällön
+lisenssiä. Oikeudet pidätetään siltä osin kuin aineisto on sovellettavan
+lain suojaamaa ja oikeudet kuuluvat Recipavon oikeudenhaltijoille.
+
+Oikeuksienpidätys ei rajoita sovellettavan lain, [GitHubin käyttöehtojen](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
+tai erillisen lisenssin sallimaa käyttöä, kuten käyttöehtojen mukaista
+katselua ja forkkia, reseptien tavallista lukemista ja niiden mukaan
+ruoanlaittoa. Suojaamattomiin tietoihin, ainesosaluetteloihin, määriin,
+tavanomaisiin valmistusmenetelmiin tai muuhun lain suojaamattomaan aineistoon
+(mukaan lukien tekoälyn tuottama aineisto siltä osin kuin se on suojaamatonta)
+ei vaadita yksinoikeutta.
+
+Kolmansien osapuolten aineistoon sovelletaan niiden omia oikeuksia ja
+lisenssiehtoja. Erikseen lisensoitujen tiedostojen, komponenttien ja
+riippuvuuksien lisenssit ja oikeusmerkinnät säilyvät, eikä oikeuksienpidätys
+peruuta aiemmin pätevästi myönnettyjä oikeuksia.
