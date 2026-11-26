@@ -38,7 +38,7 @@ ingredients:
     item: "rapsolja till fritering"
 image:
   src: alkuruoat/kai-look-keuy.webp
-  alt: "Friterade ägghalvor med tamarindsås och krispig schalottenlök på ett fat."
+  alt: "Fyra friterade ägghalvor med tamarindsås och krispig schalottenlök."
   width: 1200
   height: 800
 ---
@@ -51,15 +51,16 @@ Hårdkokta ägg friteras gyllene och serveras med sötsyrlig tamarindsås och kr
 
 1. Sänk ner äggen i kokande vatten. Låt sjuda i ungefär 10 minuter tills både vita och gula är fasta. Kyl i kallt vatten, skala och torka äggen helt torra.
 2. Skiva schalottenlöken tunt. Hetta upp oljan i en djup kastrull till cirka 170 grader. Oljan får fylla högst en tredjedel av kastrullen. Sänk försiktigt ner äggen i omgångar med en hålslev. Vänd dem tills de är gyllenbruna och låt rinna av på hushållspapper.
-3. Fritera lökskivorna i samma olja tills de är ljust gyllene. Lyft upp dem på hushållspapper innan de mörknar. Ta oljekastrullen från värmen.
+3. Fritera lökskivorna i samma olja tills de är ljust gyllene. Lyft upp dem på hushållspapper innan de mörknar. Stäng av spisen.
 4. Värm palmsocker, tamarindpasta och fisksås i en liten kastrull. Rör om och låt sjuda 2–3 minuter. Dela äggen, skeda över såsen och strö över den friterade löken.
 
 ## Förvaring och säkerhet
 
-Innehåller ägg och fisk. Vatten får het olja att stänka. Torka äggen och redskapen, lämna inte kastrullen obevakad och ha ett lock nära till hands.
+Innehåller ägg och fisk. Vatten får het olja att stänka. Torka äggen och redskapen, håll uppsikt över kastrullen och ha ett torrt lock nära till hands. Låt oljan svalna i kastrullen på spisen. Om oljan börjar brinna, stäng av värmen och kväv elden med det torra locket om det kan göras säkert. Använd aldrig vatten.
 
 ## Källor
 
 - <https://hot-thai-kitchen.com/son-in-law-eggs/>
 - <https://hungryforthai.com/thai-son-in-law-eggs-kai-look-keuy/>
 - <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ruokamyrkytyksia-aiheuttavia-bakteereja/Salmonella/>
+- <https://www.spek.fi/turvallisuus/paloturvallisuus/liesiturvallisuus/>

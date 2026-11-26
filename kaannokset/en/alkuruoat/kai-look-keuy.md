@@ -38,7 +38,7 @@ ingredients:
     item: "rapeseed oil for deep-frying"
 image:
   src: alkuruoat/kai-look-keuy.webp
-  alt: "Fried egg halves with tamarind sauce and crisp shallots on a plate."
+  alt: "Four fried egg halves with tamarind sauce and crisp shallots."
   width: 1200
   height: 800
 ---
@@ -51,15 +51,16 @@ Hard-boiled eggs are fried until golden, then served with sweet and sour tamarin
 
 1. Lower the eggs into boiling water. Simmer for about 10 minutes until the whites and yolks are firm. Cool in cold water, peel and pat completely dry.
 2. Thinly slice the shallots. Heat the oil in a deep saucepan to about 170°C. The oil should fill no more than one third of the pan. Use a slotted spoon to lower the eggs into the oil in small batches. Turn until golden, then drain on paper towels.
-3. Fry the sliced shallots in the same oil until light golden. Lift them out onto paper towels before they darken. Take the oil pan off the heat.
+3. Fry the sliced shallots in the same oil until light golden. Lift them out onto paper towels before they darken. Turn off the hob.
 4. Heat the palm sugar, tamarind paste and fish sauce in a small saucepan. Stir and simmer for 2–3 minutes. Halve the eggs, spoon the sauce over them and scatter over the fried shallots.
 
 ## Storage and safety
 
-Contains eggs and fish. Water makes hot oil splash. Dry the eggs and utensils, stay by the pan and keep a lid nearby.
+Contains eggs and fish. Water makes hot oil splash. Dry the eggs and utensils, stay by the pan and keep a dry lid nearby. Let the oil cool in the pan on the hob. If the oil catches fire, turn off the heat and smother the flames with the dry lid if you can do so safely. Never use water.
 
 ## Sources
 
 - <https://hot-thai-kitchen.com/son-in-law-eggs/>
 - <https://hungryforthai.com/thai-son-in-law-eggs-kai-look-keuy/>
 - <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/ruokamyrkytykset/ruokamyrkytyksia-aiheuttavia-bakteereja/Salmonella/>
+- <https://www.spek.fi/turvallisuus/paloturvallisuus/liesiturvallisuus/>
