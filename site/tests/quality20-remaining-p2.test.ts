@@ -10,6 +10,7 @@ import test from "node:test";
 import { reviewedRecipeCopy, applyCopyEdits } from "../scripts/public-recipe-copy-r2";
 import { parseMarkdown } from "../src/content/markdown";
 import { siteContent } from "../src/generated/content.generated";
+import { beforeReviewedLocalePrecision } from "./history/reviewed-locale-precision";
 
 const root = path.resolve(import.meta.dirname, "../..");
 const locales = ["fi", "en", "sv", "th"] as const;
@@ -54,7 +55,8 @@ test("quality20: reviewed public copy resolves three P2 findings across all four
         ? `reseptit/${fixture.category}/${fixture.id}.md`
         : `kaannokset/${locale}/${fixture.category}/${fixture.id}.md`;
       const raw = readFileSync(path.join(root, sourcePath), "utf8");
-      assert.equal(gitBlob(raw), fixture.sources[i], sourcePath + ": sealed source drift");
+      const historical = beforeReviewedLocalePrecision(root, sourcePath, raw);
+      assert.equal(gitBlob(historical), fixture.sources[i], sourcePath + ": sealed source drift");
       const parsed = parseMarkdown(raw);
       assert.ok(parsed);
       assert.equal(parsed.data.status, "published");
