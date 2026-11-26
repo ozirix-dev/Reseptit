@@ -35,6 +35,11 @@ ingredients:
   - amount: 950
     unit: "ml"
     item: "rypsiöljyä uppopaistoon"
+image:
+  src: alkuruoat/kai-look-keuy.webp
+  alt: "Puolitettuja paistettuja kananmunia, tamarindikastiketta ja rapeaa salottisipulia lautasella."
+  width: 1200
+  height: 800
 ---
 
 # Thaimaalaiset tamarindimunat (kai look keuy)

@@ -36,6 +36,11 @@ ingredients:
   - amount: 950
     unit: "ml"
     item: "น้ำมันเรพซีดสำหรับทอด"
+image:
+  src: alkuruoat/kai-look-keuy.webp
+  alt: "ไข่ทอดผ่าครึ่งราดซอสมะขามและโรยหอมเจียวกรอบบนจาน"
+  width: 1200
+  height: 800
 ---
 
 # ไข่ลูกเขยราดซอสมะขาม

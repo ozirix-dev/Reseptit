@@ -36,6 +36,11 @@ ingredients:
   - amount: 1400
     unit: "ml"
     item: "prepared vegetable stock"
+image:
+  src: alkuruoat/sopa-de-fideo.webp
+  alt: "A light bowl of red tomato soup with short, thin noodles."
+  width: 1200
+  height: 800
 ---
 
 # Mexican tomato noodle soup (sopa de fideo)

@@ -36,6 +36,11 @@ ingredients:
   - amount: 950
     unit: "ml"
     item: "rapeseed oil for deep-frying"
+image:
+  src: alkuruoat/kai-look-keuy.webp
+  alt: "Fried egg halves with tamarind sauce and crisp shallots on a plate."
+  width: 1200
+  height: 800
 ---
 
 # Thai tamarind eggs (kai look keuy)

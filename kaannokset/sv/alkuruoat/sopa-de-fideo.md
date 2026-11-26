@@ -36,6 +36,11 @@ ingredients:
   - amount: 1400
     unit: "ml"
     item: "färdig grönsaksbuljong"
+image:
+  src: alkuruoat/sopa-de-fideo.webp
+  alt: "En ljus skål med röd tomatsoppa och korta, tunna nudlar."
+  width: 1200
+  height: 800
 ---
 
 # Mexikansk tomat- och nudelsoppa (sopa de fideo)

@@ -35,6 +35,11 @@ ingredients:
   - amount: 1400
     unit: "ml"
     item: "valmista kasvislientä"
+image:
+  src: alkuruoat/sopa-de-fideo.webp
+  alt: "Vaalea kulho, jossa on punaista tomaattikeittoa ja lyhyitä ohuita pastanpätkiä."
+  width: 1200
+  height: 800
 ---
 
 # Meksikolainen tomaatti-nuudelikeitto (sopa de fideo)

@@ -36,6 +36,11 @@ ingredients:
   - amount: 1400
     unit: "ml"
     item: "น้ำซุปผักพร้อมใช้"
+image:
+  src: alkuruoat/sopa-de-fideo.webp
+  alt: "ซุปมะเขือเทศสีแดงกับเส้นพาสต้าสั้น ๆ ในชามสีอ่อน"
+  width: 1200
+  height: 800
 ---
 
 # ซุปเส้นพาสต้ามะเขือเทศแบบเม็กซิกัน (sopa de fideo)

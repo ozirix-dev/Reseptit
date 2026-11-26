@@ -36,6 +36,11 @@ ingredients:
   - amount: 950
     unit: "ml"
     item: "rapsolja till fritering"
+image:
+  src: alkuruoat/kai-look-keuy.webp
+  alt: "Friterade ägghalvor med tamarindsås och krispig schalottenlök på ett fat."
+  width: 1200
+  height: 800
 ---
 
 # Thailändska tamarindägg (kai look keuy)
