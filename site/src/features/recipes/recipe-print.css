@@ -17,9 +17,9 @@
   /* Print essential nutrition and scope/uncertainty disclosures without
      changing the user's screen state or firing a toggle/analytics event.
      On older engines, opened disclosures still print normally. */
-  @supports selector(details::details-content) {
-    .recipe-page details[data-recipe-print-expanded] { display: block; }
-    .recipe-page details[data-recipe-print-expanded]::details-content {
+  @supports selector(details::details-content) and selector(details:has(> summary)) {
+    .recipe-page details:is([data-recipe-print-expanded], :has(> summary[data-recipe-print-expanded])) { display: block; }
+    .recipe-page details:is([data-recipe-print-expanded], :has(> summary[data-recipe-print-expanded]))::details-content {
       content-visibility: visible; display: block; height: auto;
     }
   }

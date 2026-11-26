@@ -869,7 +869,7 @@ test("WP-05 four-language recipe printing preserves selections, nutrition and co
         assert.equal(await page.evaluate(() => (window as unknown as { printCalls: number }).printCalls), 1);
 
         await page.emulateMedia({ media: "print" });
-        assert.equal(await page.evaluate(() => CSS.supports("selector(details::details-content)")), true);
+        assert.equal(await page.evaluate(() => CSS.supports("selector(details::details-content)") && CSS.supports("selector(details:has(> summary))")), true);
         assert.ok(await selection.isVisible(), locale);
         assert.equal(await selection.innerText(), portionCopy[locale].title + " · " + chosen);
         assert.equal(await page.locator(".print-servings").innerText(), toolUi[locale].servings + ": " + batch);
@@ -886,7 +886,7 @@ test("WP-05 four-language recipe printing preserves selections, nutrition and co
         assert.ok(await page.getByText(portionCopy[locale].scope, { exact: true }).isVisible());
         const controls = page.locator(".recipe-page select, .recipe-page button, .recipe-page input");
         for (const control of await controls.all()) assert.equal(await control.isVisible(), false, locale + ": no interactive controls on paper");
-        for (const optional of await page.locator(".recipe-page details:not([open]):not([data-recipe-print-expanded])").all()) {
+        for (const optional of await page.locator(".recipe-page details:not([open]):not([data-recipe-print-expanded]):not(:has(> summary[data-recipe-print-expanded]))").all()) {
           assert.equal(await optional.isVisible(), false, locale + ": no empty disclosure headings");
         }
         assert.deepEqual(await details.evaluateAll(nodes => nodes.map(node => (node as HTMLDetailsElement).open)), openStates);
