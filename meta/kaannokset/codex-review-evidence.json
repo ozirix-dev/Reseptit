@@ -1381,46 +1381,61 @@
   },
   "karjalanpiirakat-riisipuurolla:en": {
     "source_hash": "3dd2f1827e2f115f45a86336b306f951c35f62ea74716f050aaaa665c4e59112",
-    "translation_hash": "69d9648fd0423e60aad24b004787fddad2f782d85d9e7eb665fd96d673fb53a8",
-    "reviewed_at": "2026-11-15",
-    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
-    "correction_pr": 656,
+    "translation_hash": "51966642606b7160fa71c5785f59a6a01d3e8b155f71111356c534857ed7d43e",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale | Rajattu riippumaton Chat-2 sisältökatselmointi 25.11.2026: https://github.com/ozirix-dev/Reseptit/pull/1001#issuecomment-7157501899 (b8fab04fa041b944f4a34e745a6563848f20bc70); ehdokastiivisteet 7156209112, kanoninen CI vaaditaan.",
+    "correction_pr": 1001,
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "17.11.2026 verrattu julkista esittelyä ja kaulintahuomiota FI-ohjeeseen. Koeleivonta ja APT-vaatimusten tarkistus ovat kesken. Enintään 20 g kaulintajauhoa, 24 piirakkaa ja munavoin erillisyys säilyvät. Julkinen teksti muodostuu tiedostossa site/scripts/public-recipe-copy.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "EN Advanced vastaa FI vaativa -luokkaa. Rajattu muuttuneen kentän katselmointi; ei uutta kokonaissisältö-, ravinto- tai APT-hyväksyntää."
       }
     ]
   },
   "karjalanpiirakat-riisipuurolla:sv": {
     "source_hash": "3dd2f1827e2f115f45a86336b306f951c35f62ea74716f050aaaa665c4e59112",
-    "translation_hash": "4f3b6b02721d59e626380b6de525c7a858249954cab6ac6d438cf44cfe0ce9dd",
-    "reviewed_at": "2026-11-15",
-    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
-    "correction_pr": 656,
+    "translation_hash": "346e8ed44e41a33ff4add756088e24d2ecf8709b4535da757140b8af1d02e65a",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale | Rajattu riippumaton Chat-2 sisältökatselmointi 25.11.2026: https://github.com/ozirix-dev/Reseptit/pull/1001#issuecomment-7157501899 (b8fab04fa041b944f4a34e745a6563848f20bc70); ehdokastiivisteet 7156209112, kanoninen CI vaaditaan.",
+    "correction_pr": 1001,
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "17.11.2026 verrattu julkista esittelyä ja kaulintahuomiota FI-ohjeeseen. Koeleivonta ja APT-vaatimusten tarkistus ovat kesken. Enintään 20 g kaulintajauhoa, 24 piirakkaa ja munavoin erillisyys säilyvät. Julkinen teksti muodostuu tiedostossa site/scripts/public-recipe-copy.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "SV Avancerad vastaa FI vaativa -luokkaa. Rajattu muuttuneen kentän katselmointi; ei uutta kokonaissisältö-, ravinto- tai APT-hyväksyntää."
       }
     ]
   },
   "karjalanpiirakat-riisipuurolla:th": {
     "source_hash": "3dd2f1827e2f115f45a86336b306f951c35f62ea74716f050aaaa665c4e59112",
-    "translation_hash": "d8d7b998a367773d7e0e912c3b85751ce7f816a21c2a7bf101bbd3690ee02b38",
-    "reviewed_at": "2026-11-15",
-    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
-    "correction_pr": 656,
+    "translation_hash": "ef51f0eb7da1246fef3b84cb48bc616c75e4881fcb2c6104d3c8a345f083abb5",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale | Rajattu riippumaton Chat-2 sisältökatselmointi 25.11.2026: https://github.com/ozirix-dev/Reseptit/pull/1001#issuecomment-7157501899 (b8fab04fa041b944f4a34e745a6563848f20bc70); ehdokastiivisteet 7156209112, kanoninen CI vaaditaan.",
+    "correction_pr": 1001,
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "17.11.2026 verrattu julkista esittelyä ja kaulintahuomiota FI-ohjeeseen. Koeleivonta ja APT-vaatimusten tarkistus ovat kesken. Enintään 20 g kaulintajauhoa, 24 piirakkaa ja munavoin erillisyys säilyvät. Julkinen teksti muodostuu tiedostossa site/scripts/public-recipe-copy.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "TH ยาก vastaa FI vaativa -luokkaa. Rajattu muuttuneen kentän katselmointi; ei uutta kokonaissisältö-, ravinto- tai APT-hyväksyntää."
       }
     ]
   },
@@ -7398,17 +7413,23 @@
   },
   "pad-kra-pao-vhh:th": {
     "source_hash": "7485dc24c7e345695f02e69982a59749b48245c8b0709649fefdd873bac9a15b",
-    "translation_hash": "518491c19975f4709992452bde3ed4ecca6c9113c4c645a67c3bd621b97173aa",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Ohje edellyttää porsaan jauhelihan kypsentämistä kauttaaltaan. Thai-käännöksessä täsmennetään pannun käyttö ja basilikan kääntely.",
+    "translation_hash": "1aa44a131a98c61c7747ff2939a0cce8c9414d2707d0acedf446d986c31142aa",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Ohje edellyttää porsaan jauhelihan kypsentämistä kauttaaltaan. Thai-käännöksessä täsmennetään pannun käyttö ja basilikan kääntely. | Rajattu riippumaton Chat-2 sisältökatselmointi 25.11.2026: https://github.com/ozirix-dev/Reseptit/pull/1001#issuecomment-7157501899 (b8fab04fa041b944f4a34e745a6563848f20bc70); ehdokastiivisteet 7156209112, kanoninen CI vaaditaan.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "Ohje edellyttää porsaan jauhelihan kypsentämistä kauttaaltaan. Thai-käännöksessä täsmennetään pannun käyttö ja basilikan kääntely."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "TH title/H1 täsmentää porsaan jauhelihan ja thaibasilikan pyhän basilikan sijasta sekä kukkakaaliriisin. Aiemmat valmistus- ja turvallisuushavainnot säilyvät; alt ei kuulu tähän korjaukseen. Rajattu muuttuneen kentän katselmointi; ei uutta kokonaissisältö-, ravinto- tai APT-hyväksyntää."
       }
-    ]
+    ],
+    "correction_pr": 1001
   },
   "pad-thai-vhh-konjac:en": {
     "source_hash": "a33fb06792a348f0a9cc31c96c60bb42161cca3c85049addce7bc6d789026588",
