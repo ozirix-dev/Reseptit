@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kurpitsa-salviarisotto",
+  "source_path": "reseptit/paaruoat/kurpitsa-salviarisotto.md",
+  "source_sha256": "fe13c358b6bf329b0f715631ab50561b193f1c3189036d2cbeb1c0bdadfc3b24",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.bbcgoodfood.com/recipes/butternut-squash-sage-risotto",
+      "https://www.food.gov.uk/print/pdf/node/4286"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kurpitsa-salviarisotto.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/kurpitsa-salviarisotto.webp",
+    "bytes": 111790,
+    "sha256": "de42798e0eead27c08b5f1c1048e7cc48b229267699f4d6a80a149b988c69698",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/kurpitsa-salviarisotto.md",
+        "sha256": "75f5ec2a813f98959a1075cb61bc1c85d43ecd0f047e593fb5f4fd812f773991"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/kurpitsa-salviarisotto.md",
+        "sha256": "e39cf157ec3733f31aaa013ac032f271abfd62f7574777abeacf2df0cc61a08a"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kurpitsa-salviarisotto.md",
+        "sha256": "f3476c430b34e795a3e481cd5e91b52044d9a5eb3612af46ce526bf54d30e2ac"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kurpitsa-salviarisotto.md",
+        "sha256": "1138a1863cc39fdf14771a11f5e91777a40a87f6f0d07eb5583b3bd5665e3265"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "b662fa36d5dd69be32317a7ba5f29606e70a625e7161f3a0dc0cf87647f18b74"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/kurpitsa-salviarisotto.md",
+        "language": "fi",
+        "slug": "kurpitsa-salviarisotto",
+        "sha256": "fe13c358b6bf329b0f715631ab50561b193f1c3189036d2cbeb1c0bdadfc3b24",
+        "semantic_sha256": "2e1c1a6b57573caeb21235ea60dbd7d3151620f75183378918ab03674a3edaef"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/kurpitsa-salviarisotto.md",
+        "language": "en",
+        "slug": "kurpitsa-salviarisotto-en",
+        "sha256": "f08f781a7478662d229b763e5f30a80821990f9f77ed9104c7a9610ce8dd9500",
+        "semantic_sha256": "82370d3bdac9ad0e375a4835d8fc23f138260fd3f32031b551ca3cb592b61a90"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kurpitsa-salviarisotto.md",
+        "language": "sv",
+        "slug": "kurpitsa-salviarisotto-sv",
+        "sha256": "42ebb4ad3a96246b6ef7d345f353701730ba919d8f9319af739e9900420e46b3",
+        "semantic_sha256": "20ef166292b38dba4574230db4aa262b6073c53d2e53d93ed224df745d6db658"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kurpitsa-salviarisotto.md",
+        "language": "th",
+        "slug": "kurpitsa-salviarisotto-th",
+        "sha256": "816539d5cb9ac0f35830187c2760876e644de52742a72af7f43269693ca8bc11",
+        "semantic_sha256": "24f8198e0bca90d8206336f3413660f3250621a0de92960a9bbd573843aaf0e9"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja kokonaisaika 50 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "1kg kokonaisen myskikurpitsan malto ilman kuorta/siemeniä, 1.5l liemen todella käytetty määrä ja koostumus, arborioriisin lähde, juusto ja salviaöljyn retentio."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}

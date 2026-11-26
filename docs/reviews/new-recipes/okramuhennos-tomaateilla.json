@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "okramuhennos-tomaateilla",
+  "source_path": "reseptit/paaruoat/okramuhennos-tomaateilla.md",
+  "source_sha256": "b6a1002745662772c09a309daa558cce911c8302fb70d5e833b8c66c9b94f2c8",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.argiro.gr/en/recipe/bamies-laderes-greek-okra-in-tomato-sauce/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/okramuhennos-tomaateilla.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/okramuhennos-tomaateilla.webp",
+    "bytes": 195334,
+    "sha256": "433d18878091d351125c02114507103e0f7ea35875855128fe9a205e893a7685",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/okramuhennos-tomaateilla.md",
+        "sha256": "9b336410fe73ac0af5d06a9c902cda6f02b37ea5dea521e7eae9044e29d07b23"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/okramuhennos-tomaateilla.md",
+        "sha256": "13965c493abf03a9300224148f512aef181bb8d8c17c717aa55645795f64ffb8"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/okramuhennos-tomaateilla.md",
+        "sha256": "430eee37e6e5ca9e6b87948bdf700eab20b5fd923359411559738af9e69a7e55"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/okramuhennos-tomaateilla.md",
+        "sha256": "d3bb2514c5546113fde50d95901a921246219ba1977e0f641efbf949186a180c"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "f7571d5e59fb92a3c4fba9940821742cd64c6b57408963842b65951c3890d945"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/okramuhennos-tomaateilla.md",
+        "language": "fi",
+        "slug": "okramuhennos-tomaateilla",
+        "sha256": "b6a1002745662772c09a309daa558cce911c8302fb70d5e833b8c66c9b94f2c8",
+        "semantic_sha256": "da51fcfeb862d255d16186e31783e4accfe79c821590d448c1da4a8a683a76c2"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/okramuhennos-tomaateilla.md",
+        "language": "en",
+        "slug": "okramuhennos-tomaateilla-en",
+        "sha256": "1c97e8c3d57dc09175758f6109e4032aa2ae67d9e911a9c4a838137d3ea06fe1",
+        "semantic_sha256": "80c6ad7b901ba7c3530e5a0a7d01d08b4e44704e8865e49e4b1ed56b1a3b87e9"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/okramuhennos-tomaateilla.md",
+        "language": "sv",
+        "slug": "okramuhennos-tomaateilla-sv",
+        "sha256": "bf9fa7152f312beba31598d25fd0d9d8834bb414f1224071822f3f1107f50317",
+        "semantic_sha256": "45a77baa49c27bd6509a2d5d9eb6771a6d448487e27b0d6db85444a80e098243"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/okramuhennos-tomaateilla.md",
+        "language": "th",
+        "slug": "okramuhennos-tomaateilla-th",
+        "sha256": "d5aa8e7cdfa20abc65cc003c3da25d706e51595c241f1ecbf51f59290dfe404f",
+        "semantic_sha256": "423305cea08308bbec5d6377cf55b741f6d5bc2b1219e62ad6f08f2eff7ebae4"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 6 ja kokonaisaika 110 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "1 kg tuoretta okraa siistitään; syötävä massa ja okran koostumuskortti puuttuvat. 1 kg raastettujen tomaattien mahdollinen kuorijäämä, 80 ml etikan poisvalutettu osuus, 2 sipulin ja ½ persiljanipun massa sekä 80 ml oliiviöljyn ainekohtainen muunnos/retentio on sidottava."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}

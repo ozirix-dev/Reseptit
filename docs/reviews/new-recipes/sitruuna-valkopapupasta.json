@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "sitruuna-valkopapupasta",
+  "source_path": "reseptit/paaruoat/sitruuna-valkopapupasta.md",
+  "source_sha256": "0bd413642ca94e4f7986b95649ecad8f90f03159d417afa2bc068c361c1b8a79",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.tesco.com/recipes/en-GB/recipe/creamy-bean-and-lemon-spaghetti",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/viikon-visaiset-kysymykset/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/sitruuna-valkopapupasta.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/sitruuna-valkopapupasta.webp",
+    "bytes": 156638,
+    "sha256": "e5d356e481ffbe6a7c83a90a8af8784394949f6f09a7089435bcb13839f03832",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/sitruuna-valkopapupasta.md",
+        "sha256": "384b6ce3e73e7e1339e234a9157fbf148d993a59e386e6bb89ab31b3b7af0ad0"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/sitruuna-valkopapupasta.md",
+        "sha256": "46c4f40f72754f609b5489cfb9838dfdeadf528a71df4e77ad59d699a9e35fe4"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/sitruuna-valkopapupasta.md",
+        "sha256": "581eb3286f22fe9c00927711b44e5f9b67d48cce5119c1d1fcdfb742d8f28a67"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/sitruuna-valkopapupasta.md",
+        "sha256": "c59db1bcd17d1324c94d21565e01d842a68e2f27247b27c817d4684288b3fa0b"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "2020a340875def645eb778f6c9b9e39bfdf69b8ab648c5c0a7d3addc511927f5"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/sitruuna-valkopapupasta.md",
+        "language": "fi",
+        "slug": "sitruuna-valkopapupasta",
+        "sha256": "0bd413642ca94e4f7986b95649ecad8f90f03159d417afa2bc068c361c1b8a79",
+        "semantic_sha256": "ff98992f9213182b93388b01cbcad26caef3883009e25b8b91c38a8567c2e773"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/sitruuna-valkopapupasta.md",
+        "language": "en",
+        "slug": "sitruuna-valkopapupasta-en",
+        "sha256": "7ac6235bc633a78cff7e7b363c5d2a526b8cf915fd65587389c21e3842307519",
+        "semantic_sha256": "1e0b4c18d74daecd5a8f2ff2df7ccd6a927eeb5145a735ae83dabe434222a236"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/sitruuna-valkopapupasta.md",
+        "language": "sv",
+        "slug": "sitruuna-valkopapupasta-sv",
+        "sha256": "1c8859657e1b96ffa3d9eb3556af274c12c38dfd1246c5d6b804080e15ebde19",
+        "semantic_sha256": "845617785bb0e002c6a43ce277df403dc8b4004487d812addf42ff3ca49d7f18"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/sitruuna-valkopapupasta.md",
+        "language": "th",
+        "slug": "sitruuna-valkopapupasta-th",
+        "sha256": "327f47ec8da9db82c618a4b50d7970f81838b7e204af47d62b74f036b47f5929",
+        "semantic_sha256": "7d657ad493d109c87302b240c03671dc57b8534a7d90da0bbb6f529e218285df"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja kokonaisaika 25 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "400g cannellinitölkin valutettu massa, 400g kuivan spagetin tuote, sitruunamehun/kuoren saanto ja liemen koostumus."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "polenta-paahdetuilla-sienilla",
+  "source_path": "reseptit/paaruoat/polenta-paahdetuilla-sienilla.md",
+  "source_sha256": "73be53a0e6b941366df311913f3b6803dcc6b5c0acae1ed628f70a2beaf4881d",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.bonappetit.com/recipe/oven-polenta-with-roasted-mushrooms-and-thyme"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/polenta-paahdetuilla-sienilla.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/polenta-paahdetuilla-sienilla.webp",
+    "bytes": 204018,
+    "sha256": "af0bad72d14c56ffcc4062b844d1068d64d397301684cc8b850a77c9565455a6",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/polenta-paahdetuilla-sienilla.md",
+        "sha256": "492f452e8ac5568b1a1bc614e61ccc1f3fe24bcc0e7d9dd6579fda86ebc53ddf"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/polenta-paahdetuilla-sienilla.md",
+        "sha256": "5e09a287cff715c8a459bc7dafd17c6d7820452b426843aeb4b7b6ae14d17c63"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/polenta-paahdetuilla-sienilla.md",
+        "sha256": "2a9afa6b7b6cb72584d41ff6988d739597d2fe6738ea0113f9f9199c797b8031"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/polenta-paahdetuilla-sienilla.md",
+        "sha256": "d9a93d1a7ad5d9aba3ad37ad7edc62f9cb592e5a4c8c1033e6cffc29f7705845"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "c98d08243a7bfcb23b14106b508fac364cdfc2fef9ded3dfbf46bfac58e4aa56"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/polenta-paahdetuilla-sienilla.md",
+        "language": "fi",
+        "slug": "polenta-paahdetuilla-sienilla",
+        "sha256": "73be53a0e6b941366df311913f3b6803dcc6b5c0acae1ed628f70a2beaf4881d",
+        "semantic_sha256": "065b43d016303b9b83c4e489b49bddd796e7cc82b460bb74ca624412c2814807"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/polenta-paahdetuilla-sienilla.md",
+        "language": "en",
+        "slug": "polenta-paahdetuilla-sienilla-en",
+        "sha256": "7741559ae0c746ec1ff10935356ccb1cb946c57307ef21091449817031b31c19",
+        "semantic_sha256": "3742cafdeb33cc8abd5dc46588d59708a46e5f41a521cacbfb366adbcc4e49cc"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/polenta-paahdetuilla-sienilla.md",
+        "language": "sv",
+        "slug": "polenta-paahdetuilla-sienilla-sv",
+        "sha256": "de9d31de4fd93e4a99f01bd9f958e13788e5e553b565548096a9044de43ea14e",
+        "semantic_sha256": "495c71dbb053af11be1dc3d4f4492dba27c3ba193ee29ee152829e881be75162"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/polenta-paahdetuilla-sienilla.md",
+        "language": "th",
+        "slug": "polenta-paahdetuilla-sienilla-th",
+        "sha256": "9ab8e3011ee34adb1907bfca1a93a7fe1a4cdd4c12c747686a3dc8e49c6d02b1",
+        "semantic_sha256": "c97fa4f31215f760354edfd001132e0a3c6d343a87320eea95302d77248162d3"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja kokonaisaika 50 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kuivien polentaryynien 240 ml massa ja tuotteen jauhatus/koostumus, 680 g herkkusieni-osterivinokasseoksen suhde, 115 g kovan kasvisjuoksutejuuston tuote, 60 ml öljyn massa ja syöty osuus."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}
