@@ -32,8 +32,8 @@ ingredients:
     unit: "st"
     item: "rödlök"
   - amount: 2
-    unit: "burk"
-    item: "tonfisk i olivolja, 110 g/burk före avrinning"
+    unit: ""
+    item: "burkar tonfisk i olivolja, 110 g/burk före avrinning"
   - amount: 50
     unit: "g"
     item: "urkärnade svarta oliver"

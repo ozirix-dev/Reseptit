@@ -31,8 +31,8 @@ ingredients:
     unit: "kpl"
     item: "punasipulia"
   - amount: 2
-    unit: "tlk"
-    item: "tonnikalaa oliiviöljyssä, 110 g/tölkki ennen valuttamista"
+    unit: ""
+    item: "tonnikalatölkkiä oliiviöljyssä, 110 g/tölkki ennen valuttamista"
   - amount: 50
     unit: "g"
     item: "kivettömiä mustia oliiveja"

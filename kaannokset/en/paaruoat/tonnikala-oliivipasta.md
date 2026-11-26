@@ -32,8 +32,8 @@ ingredients:
     unit: "pcs"
     item: "red onion"
   - amount: 2
-    unit: "can"
-    item: "tuna in olive oil, 110 g/can before draining"
+    unit: ""
+    item: "cans of tuna in olive oil, 110 g/can before draining"
   - amount: 50
     unit: "g"
     item: "pitted black olives"

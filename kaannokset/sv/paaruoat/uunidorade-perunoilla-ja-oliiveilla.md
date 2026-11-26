@@ -32,8 +32,8 @@ ingredients:
     unit: "g"
     item: "urkärnade svarta oliver"
   - amount: 1
-    unit: "klyfta"
-    item: "vitlök"
+    unit: ""
+    item: "vitlöksklyfta"
   - amount: 20
     unit: "g"
     item: "persilja med stjälkar"
@@ -56,7 +56,7 @@ Hel fisk rostas över potatis och oliver som får smak av fisken.
 
 1. Värm ugnen till 220 °C. Koka potatis 10 min, häll av och skiva. Blanda i ugnsform med oliver, hackad vitlök, halva persiljebladen, citronskal och 1 msk olja.
 2. Kontrollera att fisken är urtagen och fjällad. Torka, lägg persiljestjälkar i buken, lägg på potatis och ringla över resten av oljan.
-3. Rosta 15 min, tillsätt buljong och fortsätt cirka 10 min eller tills tjockaste köttet når 63 °C utan att givaren nuddar ben. Lossa köttet, ta bort ben och dela med potatis i två portioner. Strö över persilja.
+3. Rosta 15 min, tillsätt buljong och fortsätt cirka 10 min eller tills tjockaste köttet når 63 °C utan att givaren nuddar ben. Lossa det ätbara fiskköttet och ta bort benen. Fördela fisken, potatisen och skyn jämnt i två portioner. Strö över resten av persiljebladen.
 
 ## Anteckningar
 
