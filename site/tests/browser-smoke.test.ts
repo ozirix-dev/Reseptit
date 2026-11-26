@@ -9,6 +9,9 @@ import path from "node:path";
 import test from "node:test";
 import type { Browser } from "playwright";
 import { launchBrowser } from "./launch-browser";
+import { localImageServer } from "./helpers/local-image-server";
+import { mkdir } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import { recipeUi } from "../src/features/recipes/recipe-i18n";
 import { toolUi } from "../src/features/recipes/recipe-tools";
 
@@ -794,5 +797,185 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
   } finally {
     if (browser) await browser.close();
     server?.kill();
+  }
+});
+
+
+// UX-009-002: use real published recipe routes, not a separate rendering
+// implementation. Generate an actual A4 PDF as well as inspecting print media.
+test("WP-05 four-language recipe printing preserves selections, nutrition and cooking state", async t => {
+  const server = await localImageServer("dist");
+  let printBrowser: Browser | undefined;
+  const output = path.resolve("../tmp/v15/wp05-print");
+  await mkdir(output, { recursive: true });
+  let completed = 0;
+  try {
+    printBrowser = await launchBrowser();
+    for (const locale of ["fi", "en", "sv", "th"] as const) {
+      const recipe = siteContent.recipes.find(row => row.recipeId === "valimerellinen-menemen-fetalla" && row.locale === locale);
+      assert.ok(recipe, locale + ": published menemen");
+      const context = await printBrowser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: "reduce", serviceWorkers: "block" });
+      try {
+        await context.route("**/*", route => new URL(route.request().url()).origin === server.base &&
+          route.request().method() === "GET" ? route.continue() : route.abort());
+        const page = await context.newPage();
+        const errors: string[] = [];
+        page.on("pageerror", error => errors.push(error.message));
+        const response = await page.goto(server.base + recipe.routePath);
+        assert.ok(response?.ok(), locale);
+        const portion = page.locator("#eaten-recipe-portion");
+        await portion.waitFor();
+        assert.equal(await portion.inputValue(), "1");
+        const ingredients = page.locator(".ingredient-list li");
+        const initialIngredients = await ingredients.allInnerTexts();
+        await page.getByRole("button", { name: recipeUi[locale].increase, exact: true }).click();
+        const batch = recipe.servings + 1;
+        assert.equal(await page.locator(".serving-control output").innerText(), String(batch));
+        const scaledIngredients = await ingredients.allInnerTexts();
+        assert.notDeepEqual(scaledIngredients, initialIngredients);
+        assert.equal(await portion.inputValue(), "1", locale + ": batch does not change eaten portion");
+        await portion.selectOption("1.5");
+        const chosen = await portion.locator("option:checked").innerText();
+        const selection = page.locator("[data-print-eaten-portion]");
+        assert.equal(await selection.isVisible(), false, locale + ": no duplicate selection on screen");
+        const carbs = page.locator("[data-portion-carbohydrate]");
+        const gl = page.locator("[data-portion-gk]");
+        const omissions = page.locator("[data-gk-omissions]");
+        const savedCarbs = await carbs.innerText(), savedGl = await gl.innerText(), savedOmissions = await omissions.innerText();
+        const steps = page.locator(".recipe-step-text");
+        const stepText = await steps.allInnerTexts();
+        assert.equal(stepText.length, 4);
+        await page.getByRole("link", { name: toolUi[locale].jump, exact: true }).focus();
+        await page.keyboard.press("Enter");
+        assert.equal(await page.locator("#recipe-instructions").evaluate(node => node === document.activeElement), true);
+        const firstStep = page.getByRole("checkbox", { name: toolUi[locale].completed + ": 1", exact: true });
+        await firstStep.check();
+        assert.ok(await firstStep.isChecked());
+        assert.match(await page.locator(".step-controls").innerText(), /1\/4/);
+
+        const nutrition = page.locator("[data-print-recipe-nutrition]");
+        assert.equal(await nutrition.evaluate((node: HTMLDetailsElement) => node.open), false);
+        const macroList = nutrition.locator("dl");
+        const macroValues = await macroList.locator("dd").allTextContents();
+        assert.equal(macroValues.length, 4, locale + ": complete original nutrition");
+        const details = page.locator(".recipe-page details");
+        const openStates = await details.evaluateAll(nodes => nodes.map(node => (node as HTMLDetailsElement).open));
+        await page.evaluate(() => {
+          const state = window as unknown as { printCalls: number };
+          state.printCalls = 0;
+          window.print = () => { state.printCalls++; };
+        });
+        await page.getByRole("button", { name: toolUi[locale].print, exact: true }).click();
+        assert.equal(await page.evaluate(() => (window as unknown as { printCalls: number }).printCalls), 1);
+
+        await page.emulateMedia({ media: "print" });
+        assert.equal(await page.evaluate(() => CSS.supports("selector(details::details-content)")), true);
+        assert.ok(await selection.isVisible(), locale);
+        assert.equal(await selection.innerText(), portionCopy[locale].title + " · " + chosen);
+        assert.equal(await page.locator(".print-servings").innerText(), toolUi[locale].servings + ": " + batch);
+        assert.deepEqual(await ingredients.allInnerTexts(), scaledIngredients);
+        assert.deepEqual(await steps.allInnerTexts(), stepText);
+        assert.equal(await steps.first().evaluate(node => getComputedStyle(node).textDecorationLine), "none");
+        assert.ok(await page.getByText(toolUi[locale].scaled(recipe.servings), { exact: true }).isVisible());
+        assert.equal(await carbs.innerText(), savedCarbs);
+        assert.equal(await gl.innerText(), savedGl);
+        assert.equal(await omissions.innerText(), savedOmissions);
+        assert.ok(await macroList.isVisible(), locale + ": closed nutrition has printed content");
+        assert.deepEqual(await macroList.locator("dd").allInnerTexts(), macroValues);
+        assert.ok(await nutrition.getByText(toolUi[locale].nutrition, { exact: true }).isVisible());
+        assert.ok(await page.getByText(portionCopy[locale].scope, { exact: true }).isVisible());
+        const controls = page.locator(".recipe-page select, .recipe-page button, .recipe-page input");
+        for (const control of await controls.all()) assert.equal(await control.isVisible(), false, locale + ": no interactive controls on paper");
+        for (const optional of await page.locator(".recipe-page details:not([open]):not([data-recipe-print-expanded])").all()) {
+          assert.equal(await optional.isVisible(), false, locale + ": no empty disclosure headings");
+        }
+        assert.deepEqual(await details.evaluateAll(nodes => nodes.map(node => (node as HTMLDetailsElement).open)), openStates);
+        const pdf = await page.pdf({ path: path.join(output, "menemen-" + locale + ".pdf"), format: "A4",
+          margin: { top: "10mm", right: "10mm", bottom: "10mm", left: "10mm" }, printBackground: false });
+        assert.ok(pdf.subarray(0, 5).toString() === "%PDF-" && pdf.length > 1000, locale + ": generated PDF");
+        const pdfStructure = pdf.toString("latin1");
+        const pages = [...pdfStructure.matchAll(/\/Type\s*\/Page\b/g)].length;
+        const boxes = [...pdfStructure.matchAll(/\/MediaBox\s*\[\s*0\s+0\s+([\d.]+)\s+([\d.]+)\s*\]/g)];
+        assert.ok(pages > 0 && boxes.length > 0, locale + ": PDF page dictionaries");
+        assert.ok(boxes.every(box => Math.abs(Number(box[1]) - 595.28) < 2 && Math.abs(Number(box[2]) - 841.89) < 2), locale + ": A4");
+        await page.emulateMedia({ media: "screen" });
+        assert.equal(await selection.isVisible(), false);
+        assert.ok(await portion.isVisible());
+        assert.equal(await portion.inputValue(), "1.5");
+        assert.deepEqual(await details.evaluateAll(nodes => nodes.map(node => (node as HTMLDetailsElement).open)), openStates);
+        assert.ok(await firstStep.isChecked(), locale + ": print did not reset step state");
+        await page.getByRole("button", { name: toolUi[locale].reset, exact: true }).click();
+        assert.equal(await firstStep.isChecked(), false);
+        await page.getByRole("button", { name: recipeUi[locale].decrease, exact: true }).click();
+        assert.deepEqual(await ingredients.allInnerTexts(), initialIngredients);
+        assert.deepEqual(errors, []);
+        completed++;
+        t.diagnostic("WP-05 print " + JSON.stringify({ locale, batch, eaten: chosen, ingredients: scaledIngredients.length,
+          steps: stepText.length, macroValues: macroValues.length, pages, pdfBytes: pdf.length,
+          pdfSha256: createHash("sha256").update(pdf).digest("hex"), screenStateRestored: true }));
+      } finally {
+        await context.close();
+      }
+      const noJs = await printBrowser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 844 } });
+      try {
+        await noJs.route("**/*", route => new URL(route.request().url()).origin === server.base &&
+          route.request().method() === "GET" ? route.continue() : route.abort());
+        const page = await noJs.newPage();
+        await page.goto(server.base + recipe.routePath);
+        await page.emulateMedia({ media: "print" });
+        assert.equal(await page.locator("[data-print-eaten-portion]").innerText(), portionCopy[locale].title + " · " + portionCopy[locale].single);
+        assert.ok(await page.locator("[data-print-recipe-nutrition] dl").isVisible(), locale + ": print styles available without hydration");
+        assert.ok(await page.locator(".ingredient-list").isVisible());
+        assert.ok(await page.locator("#recipe-instructions").isVisible());
+      } finally { await noJs.close(); }
+    }
+
+    // A chosen side still needs its weight and scope on paper even when the
+    // user has collapsed its disclosure. Missing values must stay missing.
+    const context = await printBrowser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: "reduce", serviceWorkers: "block" });
+    try {
+      await context.route("**/*", route => new URL(route.request().url()).origin === server.base &&
+        route.request().method() === "GET" ? route.continue() : route.abort());
+      const page = await context.newPage();
+      const curry = siteContent.recipes.find(row => row.recipeId === "kerala-kalacurry" && row.locale === "fi");
+      assert.ok(curry);
+      await page.goto(server.base + curry.routePath);
+      const side = page.locator("[data-side-comparison]");
+      await side.locator("summary").click();
+      await side.locator("#recipe-side-weight").selectOption("100");
+      const sideCarbs = await side.locator("[data-side-carbohydrate]").innerText();
+      const total = await side.locator("[data-side-combined-carbohydrate]").innerText();
+      await side.locator("summary").click();
+      assert.equal(await side.evaluate((node: HTMLDetailsElement) => node.open), false);
+      await page.emulateMedia({ media: "print" });
+      assert.ok(await side.locator("[data-print-side-weight]").isVisible());
+      assert.match(await side.locator("[data-print-side-weight]").innerText(), /100 g/);
+      assert.equal(await side.locator("[data-side-carbohydrate]").innerText(), sideCarbs);
+      assert.equal(await side.locator("[data-side-combined-carbohydrate]").innerText(), total);
+      assert.equal(await side.locator("#recipe-side-weight").isVisible(), false);
+      await page.emulateMedia({ media: "screen" });
+      assert.equal(await side.evaluate((node: HTMLDetailsElement) => node.open), false);
+      await side.locator("summary").click();
+      assert.equal(await side.locator("#recipe-side-weight").inputValue(), "100");
+
+      const partial = siteContent.recipes.find(row => row.locale === "fi" && row.recipeId === "gluteeniton-uunipannukakku");
+      assert.ok(partial);
+      await page.goto(server.base + partial.routePath);
+      await page.emulateMedia({ media: "print" });
+      const partialNutrition = page.locator("[data-print-recipe-nutrition]");
+      assert.ok(await partialNutrition.getByText(toolUi.fi.partialNutrition, { exact: true }).isVisible());
+      assert.equal(await partialNutrition.locator("dd").count(), Object.values(partial.nutrition).filter(value => value !== null).length);
+
+      const missing = siteContent.recipes.find(row => row.locale === "fi" && Object.values(row.nutrition).every(value => value === null));
+      assert.ok(missing, "published recipe without numeric nutrition");
+      await page.goto(server.base + missing.routePath);
+      const missingNutrition = page.locator("[data-print-recipe-nutrition]");
+      assert.ok(await missingNutrition.getByText(toolUi.fi.missing, { exact: true }).isVisible());
+      assert.equal(await missingNutrition.locator("dd").count(), 0);
+    } finally { await context.close(); }
+    assert.equal(completed, 4);
+    t.diagnostic("WP-05 summary " + JSON.stringify({ a4Prints: completed, cooking: completed, noJs: completed, side: "PASS", partial: "PASS", missing: "PASS" }));
+  } finally {
+    try { await printBrowser?.close(); } finally { await server.close(); }
   }
 });

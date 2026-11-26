@@ -3,6 +3,7 @@ import { hydrateRoot } from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import { contentErrorCopy, createSiteRouter } from "./router";
 import "./styles.css";
+import "./features/recipes/recipe-print.css";
 import { parseRouteContent, rememberContent } from "./lib/load-content";
 
 const root = document.getElementById("root");

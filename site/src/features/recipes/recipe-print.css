@@ -1,0 +1,26 @@
+/* The print selection mirrors React state without adding a second screen control. */
+.recipe-page .recipe-print-selection { display: none; }
+
+@media print {
+  .recipe-page .recipe-portion__control { display: none !important; }
+  .recipe-page .recipe-print-selection { display: block; }
+
+  /* Optional collapsed disclosures have no content on paper. Keep opened
+     disclosures, but remove the appearance of an interactive summary. */
+  .recipe-page details:not([open]) { display: none; }
+  .recipe-page details > summary {
+    display: block; list-style: none; min-height: 0; padding-block: .25rem;
+    cursor: auto; break-after: avoid;
+  }
+  .recipe-page details > summary::-webkit-details-marker { display: none; }
+
+  /* Print essential nutrition and scope/uncertainty disclosures without
+     changing the user's screen state or firing a toggle/analytics event.
+     On older engines, opened disclosures still print normally. */
+  @supports selector(details::details-content) {
+    .recipe-page details[data-recipe-print-expanded] { display: block; }
+    .recipe-page details[data-recipe-print-expanded]::details-content {
+      content-visibility: visible; display: block; height: auto;
+    }
+  }
+}

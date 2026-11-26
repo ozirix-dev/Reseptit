@@ -112,7 +112,7 @@ export function EstimateDetails({ result, locale, notes, technicalNotes }: {
   const text = gkCopy[locale];
   const kinds = [...new Set(result.sourceReferences.map(evidenceLabel))];
   return <>
-    <details className="gk-evidence__details" onToggle={event => { if (event.currentTarget.open) track("Open Glycemic Evidence"); }}>
+    <details className="gk-evidence__details" data-recipe-print-expanded onToggle={event => { if (event.currentTarget.open) track("Open Glycemic Evidence"); }}>
       <summary>{text.how}</summary>
       <p>{text.personal}</p>
       {result.ingredientEvidence?.length ? (
@@ -124,7 +124,7 @@ export function EstimateDetails({ result, locale, notes, technicalNotes }: {
       {notes}
     </details>
     {result.sourceReferences.length || result.carbohydrateSources.length || technicalNotes ? (
-      <details className="gk-evidence__details gk-evidence__technical">
+      <details className="gk-evidence__details gk-evidence__technical" data-recipe-print-expanded={technicalNotes ? true : undefined}>
         <summary>{text.sources}</summary>
         <p>{text.technicalNote}</p>
         {technicalNotes}
@@ -166,7 +166,7 @@ export function MissingEstimate({ result, locale, explanation }: {
   return <>
     <p><strong>{text.missing}</strong></p>
     <p>{explanation ?? text.missingBasis}</p>
-    {result.incompleteReasons.length ? <details className="gk-evidence__details">
+    {result.incompleteReasons.length ? <details className="gk-evidence__details" data-recipe-print-expanded>
       <summary>{text.why}</summary>
       {sharedPendingReview ? <p>{text.pendingReviewGroup}</p> : null}
       <ul>{result.incompleteReasons.map((reason, index) => {

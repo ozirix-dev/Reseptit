@@ -189,7 +189,7 @@ export function RecipePage() {
         </div>}
         {!withholdNutrition && portionEvidence?.sideCarbohydrate ? <SideCarbohydrateComparison key={`${recipe.recipeId}:${locale}`}
           side={portionEvidence.sideCarbohydrate} locale={locale} carbs={portionCarbs} multiplier={eatenPortion} interactive={hydrated} /> : null}
-        <details className="gk-evidence__details"><summary>{nutritionItems.length ? tools.nutritionPerRecipeServing : labels.nutrition}</summary>
+        <details className="gk-evidence__details" data-recipe-print-expanded data-print-recipe-nutrition><summary>{nutritionItems.length ? tools.nutritionPerRecipeServing : labels.nutrition}</summary>
           <p className="recipe-disclosure" data-f25-nutrition-status={withholdNutrition ? "SOURCE_REVIEW_WITHHELD" : undefined}>{withholdNutrition ? "Ravintoarvojen julkaisu on keskeytetty, koska annoksen ainesosakohtainen laskenta tai tuotematch ei ole vielä hyväksyttävä. Lähtöarvoja ei näytetä virheellisen tarkkoina. Katso reseptin lähdehuomautus." : nutritionItems.length ? tools.nutrition : tools.missing}</p>
           {nutritionItems.length > 0 && nutritionItems.length < Object.keys(recipe.nutrition).length
             ? <p className="recipe-disclosure">{tools.partialNutrition}</p> : null}
