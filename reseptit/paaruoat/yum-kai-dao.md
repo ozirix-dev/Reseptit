@@ -65,15 +65,16 @@ Rapeareunaiset paistetut munat nostetaan tomaattien ja sellerin sekaan. Limetti,
 
 1. Murskaa chili huhmareessa ja hiero joukkoon palmusokeri. Sekoita mukaan limettimehu ja kalakastike, kunnes sokeri liukenee.
 2. Suikaloi punasipuli, viipaloi varsiselleri ja hienonna sen lehdet. Sekoita ne kulhossa tomaatin ja korianterin kanssa. Rouhi pähkinät ja jätä ne odottamaan.
-3. Kuumenna öljy pienessä korkeareunaisessa pannussa, jonka pohja on noin 16 cm leveä, keskilämmön ja korkean lämmön välillä. Öljyä saa olla pohjalla noin 6 mm. Öljy on valmis, kun kuiva sipulipala kuplii siinä heti. Jos öljy alkaa savuta, vedä pannu pois levyltä ja anna sen jäähtyä hieman.
+3. Kuumenna öljy pienessä korkeareunaisessa pannussa, jonka pohja on noin 16 cm leveä, keskilämmön ja korkean lämmön välillä. Öljyä saa olla pohjalla noin 6 mm. Öljy on valmis, kun kuiva sipulipala kuplii siinä heti. Jos öljy alkaa savuta, katkaise liedestä virta ja anna öljyn jäähtyä pannussa. Jätä kuumaa öljyä sisältävä pannu paikalleen.
 4. Riko muna kerrallaan kuivaan pieneen kulhoon ja liu’uta muna varovasti öljyyn lähellä pintaa. Paista yksi muna kerrallaan. Lusikoi vähän kuumaa öljyä valkuaisen päälle, kunnes reunat rapeutuvat ja sekä valkuainen että keltuainen ovat täysin hyytyneet. Nosta muna reikäkauhalla talouspaperille ja paista loput samoin.
 5. Leikkaa munat suupaloiksi. Kääntele ne kasvisten ja kastikkeen joukkoon ja viimeistele pähkinöillä. Jaa kolmeen annokseen. Voit tarjota lisäksi erikseen keitettyä jasmiiniriisiä.
 
 ## Säilytys ja turvallisuus
 
-Sisältää kananmunaa, kalaa, selleriä ja maapähkinää. Pidä vesi poissa kuumasta öljystä. Tarjoa pian valmistuksen jälkeen tai jäähdytä nopeasti ja säilytä jääkaapissa.
+Sisältää kananmunaa, kalaa, selleriä ja maapähkinää. Jos öljy syttyy, katkaise lämpö ja tukahduta liekit kuivalla kannella vain, jos voit toimia turvallisesti. Älä käytä vettä äläkä siirrä pannua. Jos liekit eivät sammu heti tai et voi toimia turvallisesti, poistu ja soita hätänumeroon 112. Tarjoa pian valmistuksen jälkeen tai jäähdytä nopeasti ja säilytä jääkaapissa.
 
 ## Lähteet
 
 - <https://hot-thai-kitchen.com/fried-egg-salad/>
 - <https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures>
+- <https://www.spek.fi/turvallisuus/paloturvallisuus/liesiturvallisuus/>

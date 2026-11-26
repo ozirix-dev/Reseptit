@@ -66,15 +66,16 @@ Fried eggs with crisp edges are tossed with tomatoes and celery. Lime, fish sauc
 
 1. Crush the chile in a mortar and work in the palm sugar. Stir in the lime juice and fish sauce until the sugar dissolves.
 2. Thinly slice the red onion and celery stalks. Chop the celery leaves. Put them in a bowl with the tomato and coriander. Roughly chop the peanuts and set them aside.
-3. Heat the oil over medium-high heat in a small, high-sided pan about 16 cm across the base. The oil should be about 6 mm deep. It is ready when a dry piece of onion bubbles immediately. If the oil begins to smoke, take the pan off the heat and let it cool slightly.
+3. Heat the oil over medium-high heat in a small, high-sided pan about 16 cm across the base. The oil should be about 6 mm deep. It is ready when a dry piece of onion bubbles immediately. If the oil starts to smoke, turn off the heat and let the oil cool in the pan. Leave the pan with the hot oil where it is.
 4. Crack one egg at a time into a small dry bowl and gently slide it in just above the oil. Fry the eggs one at a time. Spoon a little hot oil over the white until the edges are crisp and both the white and yolk are fully set. Lift the egg onto kitchen paper with a slotted spoon and repeat.
 5. Cut the eggs into bite-size pieces. Toss them with the vegetables and dressing, then scatter over the peanuts. Divide into three servings. Serve with separately cooked jasmine rice if desired.
 
 ## Storage and safety
 
-Contains egg, fish, celery and peanuts. Keep water away from hot oil. Serve promptly, or cool quickly and refrigerate.
+Contains egg, fish, celery and peanuts. If the oil catches fire, turn off the heat and smother the flames with a dry lid only if you can do so safely. Never use water or move the pan. If the flames do not go out immediately or you cannot act safely, leave and call your local emergency number. Serve promptly, or cool quickly and refrigerate.
 
 ## Sources
 
 - <https://hot-thai-kitchen.com/fried-egg-salad/>
 - <https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures>
+- <https://www.spek.fi/turvallisuus/paloturvallisuus/liesiturvallisuus/>

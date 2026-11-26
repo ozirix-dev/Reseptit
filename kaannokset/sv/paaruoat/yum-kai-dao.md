@@ -66,15 +66,16 @@ Stekta ägg med frasiga kanter blandas med tomater och selleri. Lime, fisksås o
 
 1. Stöt chilin i en mortel och arbeta in palmsockret. Rör ner limejuice och fisksås tills sockret löser sig.
 2. Strimla rödlöken, skiva selleristjälkarna och hacka selleribladen. Blanda dem i en skål med tomat och koriander. Grovhacka jordnötterna och ställ åt sidan.
-3. Hetta upp oljan på medelhög till hög värme i en liten panna med höga kanter och cirka 16 cm botten. Oljan ska vara omkring 6 mm djup. Den är klar när en torr lökbit genast börjar bubbla. Om oljan börjar ryka, ta pannan från plattan och låt den svalna något.
+3. Hetta upp oljan på medelhög till hög värme i en liten panna med höga kanter och cirka 16 cm botten. Oljan ska vara omkring 6 mm djup. Den är klar när en torr lökbit genast börjar bubbla. Om oljan börjar ryka, stäng av plattan och låt oljan svalna i pannan. Låt pannan med het olja stå kvar.
 4. Knäck ett ägg i taget i en liten torr skål och låt det försiktigt glida ner precis ovanför oljan. Stek ett ägg i taget. Skeda lite het olja över vitan tills kanterna är frasiga och både vita och gula har stelnat helt. Lyft upp ägget med hålslev till hushållspapper och upprepa med resten.
 5. Skär äggen i munsbitar. Vänd ner dem bland grönsakerna och dressingen och strö över jordnötterna. Fördela i tre portioner. Servera gärna med separat kokt jasminris.
 
 ## Förvaring och säkerhet
 
-Innehåller ägg, fisk, selleri och jordnötter. Håll vatten borta från het olja. Servera snart efter tillagning eller kyl snabbt och ställ i kylskåp.
+Innehåller ägg, fisk, selleri och jordnötter. Om oljan börjar brinna, stäng av värmen och kväv lågorna med ett torrt lock endast om det kan göras säkert. Använd aldrig vatten och flytta inte pannan. Om lågorna inte slocknar direkt eller om du inte kan agera säkert, gå ut och ring 112. Servera snart efter tillagning eller kyl snabbt och ställ i kylskåp.
 
 ## Källor
 
 - <https://hot-thai-kitchen.com/fried-egg-salad/>
 - <https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures>
+- <https://www.spek.fi/turvallisuus/paloturvallisuus/liesiturvallisuus/>
