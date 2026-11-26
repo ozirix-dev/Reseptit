@@ -206,7 +206,7 @@ export function RecipePage() {
         variant={variant} locale={recipe.locale} servings={servings} originalHasGk={Boolean(glycemicLoad || portionEvidence?.verbal)}
         originalRecipe={recipe} alternatives={portionEvidence?.versionAlternatives} />)}
       <ChocolateComparison recipeId={recipe.recipeId} locale={recipe.locale} hasGlVariant={hasGkVariant} />
-      {notesHtml ? <section className="recipe-panel"><h2>{labels.notes}</h2><div className="rich-text" dangerouslySetInnerHTML={{ __html: notesHtml }} /></section> : null}
+      {notesHtml ? <section className="recipe-panel recipe-notes"><h2>{labels.notes}</h2><div className="rich-text" dangerouslySetInnerHTML={{ __html: notesHtml }} /></section> : null}
       {relatedGuides.length > 0 && <section className="recipe-panel" aria-labelledby="related-guides-title">
         <h2 id="related-guides-title">Aiheesta Ruokaoppaassa</h2>
         <ul>{relatedGuides.map(article => <li key={article.slug}><Link to={articlePath(article)}>{article.title}</Link></li>)}</ul>

@@ -2,6 +2,7 @@
 .recipe-page .recipe-print-selection, .recipe-print-fallback { display: none; }
 
 @media print {
+  .recipe-page .recipe-notes { break-inside: avoid; }
   .recipe-page .recipe-portion__control { display: none !important; }
   .recipe-page .recipe-print-selection { display: block; }
 
