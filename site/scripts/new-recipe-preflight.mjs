@@ -213,10 +213,10 @@ export function runCli(root = ROOT, argv = process.argv.slice(2), env = process.
     const errors = validateReview(file, source, review, all, successors);
     const code = errors.length ? 'HOLD_NEW_RECIPE_EVIDENCE' : 'EDITORIAL_EVIDENCE_CURRENT';
     assessments.push({ recipeId: current.recipe_id, path: file, code, reasons: errors });
-    if (!json) {
-      if (errors.length) console.error('HOLD ' + file + ':\n  - ' + errors.join('\n  - '));
-      else console.log('PASS ' + file + ': SHA-bound editorial approval verified');
-    }
+    // Keep structured stdout in JSON mode, but retain the actual blocking
+    // reasons on stderr for callers using execFileSync and ordinary CLI users.
+    if (errors.length) console.error('HOLD ' + file + ':\n  - ' + errors.join('\n  - '));
+    else if (!json) console.log('PASS ' + file + ': SHA-bound editorial approval verified');
   }
   const checked = assessments.length;
   const blocked = assessments.filter(row => row.reasons.length > 0).length;
