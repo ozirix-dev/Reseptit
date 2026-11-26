@@ -33,10 +33,10 @@ ingredients:
     unit: "กรัม"
     item: "ทาฮินีที่ทำจากงา 100%"
   - amount: 15
-    unit: "มล."
+    unit: "ml"
     item: "น้ำเลมอน"
   - amount: 30
-    unit: "มล."
+    unit: "ml"
     item: "น้ำเย็น ใช้เท่าที่จำเป็น"
   - amount: 0.5
     unit: "ช้อนชา"

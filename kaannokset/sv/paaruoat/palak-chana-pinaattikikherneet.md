@@ -35,9 +35,9 @@ ingredients:
   - amount: 160
     unit: "g"
     item: "hackad gul lök"
-  - amount: 2
-    unit: "cm"
-    item: "bit färsk ingefära"
+  - amount: 1
+    unit: "st"
+    item: "färsk ingefära, en cirka 2 cm lång bit"
   - amount: 2
     unit: "st"
     item: "vitlöksklyftor"

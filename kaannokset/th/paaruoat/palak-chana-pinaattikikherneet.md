@@ -35,9 +35,9 @@ ingredients:
   - amount: 160
     unit: "g"
     item: "หอมหัวใหญ่สับ"
-  - amount: 2
-    unit: "cm"
-    item: "ขิงสดหนึ่งชิ้น"
+  - amount: 1
+    unit: "ชิ้น"
+    item: "ขิงสดยาวประมาณ 2 เซนติเมตร"
   - amount: 2
     unit: "ชิ้น"
     item: "กระเทียมกลีบ"

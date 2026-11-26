@@ -35,9 +35,9 @@ ingredients:
   - amount: 160
     unit: "g"
     item: "chopped yellow onion"
-  - amount: 2
-    unit: "cm"
-    item: "piece of fresh ginger"
+  - amount: 1
+    unit: "piece"
+    item: "fresh ginger, about 2 cm long"
   - amount: 2
     unit: "pcs"
     item: "garlic cloves"

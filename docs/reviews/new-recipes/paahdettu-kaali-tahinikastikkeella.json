@@ -92,8 +92,8 @@
         "path": "kaannokset/th/alkuruoat/paahdettu-kaali-tahinikastikkeella.md",
         "language": "th",
         "slug": "paahdettu-kaali-tahinikastikkeella-th",
-        "sha256": "7c5e45501f15c44b449f755537fbfc1715e668eed1662aabf02b9f83d6b0bef5",
-        "semantic_sha256": "08596970bdd0bd47bd65c69c62c2042a926c4f10322417eb5874e22f8e430f5e"
+        "sha256": "69612a18fba22cb91301a2c7568df357280d954c1733adcc5ce22b755c37ab58",
+        "semantic_sha256": "ac09b12327f57a9507c633c329eef105b88e8d3449da65c46d01bbd6b650e607"
       }
     ]
   },
@@ -132,5 +132,23 @@
     "reviewed_at": "2026-11-26",
     "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
     "findings": []
+  },
+  "publication_delta_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7179673368",
+    "reviewed_by": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "priorHead": "475002da500aae6723d4ee63865a893420967614",
+    "reviewPackageSha256": "5e2ea181523cdb3586919a48a40d3b464fb08b00e3d5da5623950c6fe2cdfd69",
+    "changedFiles": [
+      {
+        "path": "kaannokset/th/alkuruoat/paahdettu-kaali-tahinikastikkeella.md",
+        "language": "th",
+        "slug": "paahdettu-kaali-tahinikastikkeella-th",
+        "sha256": "69612a18fba22cb91301a2c7568df357280d954c1733adcc5ce22b755c37ab58",
+        "semantic_sha256": "ac09b12327f57a9507c633c329eef105b88e8d3449da65c46d01bbd6b650e607"
+      }
+    ],
+    "nutritionCalculationSha256": "97cf07269bc5d3a569410a3855951d6f57abe01559775c24462f583ce8fe0bb3"
   }
 }

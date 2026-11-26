@@ -34,9 +34,9 @@ ingredients:
   - amount: 160
     unit: "g"
     item: "hienonnettua keltasipulia"
-  - amount: 2
-    unit: "cm"
-    item: "pala tuoretta inkivääriä"
+  - amount: 1
+    unit: "kpl"
+    item: "noin 2 cm pitkä pala tuoretta inkivääriä"
   - amount: 2
     unit: "kpl"
     item: "valkosipulinkynttä"

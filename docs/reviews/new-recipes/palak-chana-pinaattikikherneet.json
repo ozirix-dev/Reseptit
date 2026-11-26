@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "palak-chana-pinaattikikherneet",
   "source_path": "reseptit/paaruoat/palak-chana-pinaattikikherneet.md",
-  "source_sha256": "21b8dd9a7454f927d6f482f816b567ba4379beb435969207c6924e2b1e83890c",
+  "source_sha256": "9380a485c3d91a46093dfc24d5e6797efd19d1f84cff68b2e57419166497fb3d",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/paaruoat/palak-chana-pinaattikikherneet.md",
         "language": "fi",
         "slug": "palak-chana-pinaattikikherneet",
-        "sha256": "21b8dd9a7454f927d6f482f816b567ba4379beb435969207c6924e2b1e83890c",
-        "semantic_sha256": "b5e6783ebd9e4d9696ca3164cc2c97c5a09726a371ee6ebc624762270cb2545f"
+        "sha256": "9380a485c3d91a46093dfc24d5e6797efd19d1f84cff68b2e57419166497fb3d",
+        "semantic_sha256": "5d73c94406ad1fa020a93a8e1f0f1dfa7afe4d17bea8e231e9a8bd411fb20280"
       },
       {
         "path": "kaannokset/en/paaruoat/palak-chana-pinaattikikherneet.md",
         "language": "en",
         "slug": "palak-chana-pinaattikikherneet-en",
-        "sha256": "cb064a4fe889736cd21cbed72879d81e6e6a564cf7a182902e5b56aa1e271e18",
-        "semantic_sha256": "caccf67fca3e876b1c0ffeb3b12af15088dbf8e141488fee99e3dc384c29b854"
+        "sha256": "f08dac5654e9e16c38476634559b8e2a79d613ce0a46652d557636ffe3ef9cd6",
+        "semantic_sha256": "6e6362761a7e2d43aec0d3596b00696a36e98abcec11d44c75db455f3822f02a"
       },
       {
         "path": "kaannokset/sv/paaruoat/palak-chana-pinaattikikherneet.md",
         "language": "sv",
         "slug": "palak-chana-pinaattikikherneet-sv",
-        "sha256": "885f40b89ffdd2087c5e1a8861d74bcb882118c5eb3e20aa4515c2dbd98236f5",
-        "semantic_sha256": "c0879e6acc4fc92524b8eba9bb76ceea9cf07add694c99f619951c7fc85ce3c4"
+        "sha256": "9b471408d3cababf01d809d95d5355619dce4b0c169a9f90011af02adf564a35",
+        "semantic_sha256": "32fb1ed7a182ff3d8f8069a3cf5d2a007a79d9f27c3b4dd7065654fe8610657d"
       },
       {
         "path": "kaannokset/th/paaruoat/palak-chana-pinaattikikherneet.md",
         "language": "th",
         "slug": "palak-chana-pinaattikikherneet-th",
-        "sha256": "d0a20b11a3342bfc087522b96bb6a816c15658334c229a2cde391cdfca4fb36e",
-        "semantic_sha256": "b524ecc6f70bd6540b22790967079a7a4bad2d477b8fc2fe2b8cee4610bcc286"
+        "sha256": "c79382be8d45085de8175dbbefd928378b30f87453728d79697fcdb71f3f24a7",
+        "semantic_sha256": "ce7ed6c6157339183728cedc73885026545a04b06ffe5c292751c73041d2287a"
       }
     ]
   },
@@ -131,5 +131,44 @@
     "reviewed_at": "2026-11-26",
     "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
     "findings": []
+  },
+  "publication_delta_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7179673368",
+    "reviewed_by": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "priorHead": "475002da500aae6723d4ee63865a893420967614",
+    "reviewPackageSha256": "5e2ea181523cdb3586919a48a40d3b464fb08b00e3d5da5623950c6fe2cdfd69",
+    "changedFiles": [
+      {
+        "path": "reseptit/paaruoat/palak-chana-pinaattikikherneet.md",
+        "language": "fi",
+        "slug": "palak-chana-pinaattikikherneet",
+        "sha256": "9380a485c3d91a46093dfc24d5e6797efd19d1f84cff68b2e57419166497fb3d",
+        "semantic_sha256": "5d73c94406ad1fa020a93a8e1f0f1dfa7afe4d17bea8e231e9a8bd411fb20280"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/palak-chana-pinaattikikherneet.md",
+        "language": "en",
+        "slug": "palak-chana-pinaattikikherneet-en",
+        "sha256": "f08dac5654e9e16c38476634559b8e2a79d613ce0a46652d557636ffe3ef9cd6",
+        "semantic_sha256": "6e6362761a7e2d43aec0d3596b00696a36e98abcec11d44c75db455f3822f02a"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/palak-chana-pinaattikikherneet.md",
+        "language": "sv",
+        "slug": "palak-chana-pinaattikikherneet-sv",
+        "sha256": "9b471408d3cababf01d809d95d5355619dce4b0c169a9f90011af02adf564a35",
+        "semantic_sha256": "32fb1ed7a182ff3d8f8069a3cf5d2a007a79d9f27c3b4dd7065654fe8610657d"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/palak-chana-pinaattikikherneet.md",
+        "language": "th",
+        "slug": "palak-chana-pinaattikikherneet-th",
+        "sha256": "c79382be8d45085de8175dbbefd928378b30f87453728d79697fcdb71f3f24a7",
+        "semantic_sha256": "ce7ed6c6157339183728cedc73885026545a04b06ffe5c292751c73041d2287a"
+      }
+    ],
+    "nutritionCalculationSha256": "2193e8bf9f8676ed89b9b58a957a850e1c05dd93bf89b341792b6379e184eb16"
   }
 }
