@@ -36,16 +36,16 @@ ingredients:
     unit: "ฟอง"
     item: "ไข่ไก่ขนาดใหญ่"
   - amount: 180
-    unit: "มล."
+    unit: "ml"
     item: "เมล็ดข้าวโพดหวานสะเด็ดน้ำ"
   - amount: 60
-    unit: "มล."
+    unit: "ml"
     item: "ต้นหอมซอยบาง"
   - amount: 113
     unit: "กรัม"
     item: "เชดดาร์ขูด"
   - amount: 60
-    unit: "มล."
+    unit: "ml"
     item: "กุยช่ายฝรั่งซอย"
   - amount: 1
     unit: "ช้อนชา"

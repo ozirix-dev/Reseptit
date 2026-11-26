@@ -53,7 +53,7 @@ ingredients:
 
 Two quick breads divide into eight snack wedges. Finely grated carrot keeps the crumb moist.
 
-## Method
+## Preparation
 
 1. Heat the oven to 225°C and line a baking tray. Combine the flour, oats, seeds, baking powder and salt.
 2. Stir in the milk, carrot and oil. Divide the dough into two mounds on the tray and pat each into a round about 1.5 cm thick with floured hands.

@@ -56,7 +56,7 @@ ingredients:
 
 A soft Southern cornmeal side with Cheddar, sweetcorn and spring onion.
 
-## Method
+## Preparation
 
 1. Heat the oven to 200°C. Butter an ovenproof dish of about 1 litre.
 2. Whisk the milk, salt and cornmeal in a saucepan. Stir continuously over medium heat until thick and bubbling through the centre. Remove from the heat, cool to lukewarm and mix in the eggs one at a time.

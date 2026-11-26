@@ -24,10 +24,10 @@ image:
   height: 800
 ingredients:
   - amount: 200
-    unit: "มล."
+    unit: "ml"
     item: "นม"
   - amount: 100
-    unit: "มล."
+    unit: "ml"
     item: "เกล็ดขนมปังแห้ง"
   - amount: 400
     unit: "กรัม"
@@ -54,7 +54,7 @@ ingredients:
     unit: "กรัม"
     item: "คอตเทจชีส"
   - amount: 150
-    unit: "มล."
+    unit: "ml"
     item: "โยเกิร์ตรสธรรมชาติ"
   - amount: 2
     unit: "ช้อนโต๊ะ"

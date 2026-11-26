@@ -24,10 +24,10 @@ image:
   height: 800
 ingredients:
   - amount: 300
-    unit: "มล."
+    unit: "ml"
     item: "แป้งสาลีสำหรับทำขนมปังแบบสีน้ำตาล"
   - amount: 150
-    unit: "มล."
+    unit: "ml"
     item: "ข้าวโอ๊ตแผ่น"
   - amount: 2
     unit: "ช้อนโต๊ะ"
@@ -39,10 +39,10 @@ ingredients:
     unit: "ช้อนชา"
     item: "เกลือ"
   - amount: 200
-    unit: "มล."
+    unit: "ml"
     item: "นมเย็น"
   - amount: 200
-    unit: "มล."
+    unit: "ml"
     item: "แครอตขูดละเอียด"
   - amount: 2
     unit: "ช้อนโต๊ะ"

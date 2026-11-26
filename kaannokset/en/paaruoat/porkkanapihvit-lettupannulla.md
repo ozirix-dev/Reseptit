@@ -71,7 +71,7 @@ ingredients:
 
 Finely grated carrots make small pan-fried patties served with a chilled chive sauce.
 
-## Method
+## Preparation
 
 1. Mix the milk and breadcrumbs. While they soak, wash, peel and finely grate the carrots.
 2. Mix the carrot, eggs, flour, oregano, salt and the patties’ pepper into the soaked crumbs. In a separate bowl, stir the cottage cheese, yoghurt, chives, lemon juice and remaining pepper together. Refrigerate the sauce.
