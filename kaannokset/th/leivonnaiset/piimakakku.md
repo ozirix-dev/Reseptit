@@ -24,10 +24,10 @@ image:
   height: 800
 ingredients:
   - amount: 500
-    unit: "มล."
+    unit: "ml"
     item: "แป้งสาลี"
   - amount: 250
-    unit: "มล."
+    unit: "ml"
     item: "น้ำตาล"
   - amount: 1.5
     unit: "ช้อนโต๊ะ"
@@ -36,13 +36,13 @@ ingredients:
     unit: "ช้อนชา"
     item: "เบกกิ้งโซดา"
   - amount: 200
-    unit: "มล."
+    unit: "ml"
     item: "ผลิตภัณฑ์เนยผสมน้ำมันพืชชนิดเหลว"
   - amount: 100
-    unit: "มล."
+    unit: "ml"
     item: "แยมลูกพลัม"
   - amount: 200
-    unit: "มล."
+    unit: "ml"
     item: "บัตเตอร์มิลค์แบบหมัก"
   - amount: 1
     unit: "ช้อนชา"

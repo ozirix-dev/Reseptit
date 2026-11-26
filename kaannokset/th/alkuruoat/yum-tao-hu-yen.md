@@ -36,8 +36,8 @@ ingredients:
     unit: "ช้อนโต๊ะ"
     item: "น้ำตาลมะพร้าวสับละเอียด ตวงแบบกดแน่น"
   - amount: 1
-    unit: "เม็ด"
-    item: "พริกขี้หนูเม็ดเล็ก"
+    unit: "ชิ้น"
+    item: "พริกขี้หนูเม็ดเล็กทั้งเม็ด"
   - amount: 1
     unit: "ช้อนโต๊ะ"
     item: "หอมแดงหั่นเต๋าเล็ก"
@@ -48,13 +48,13 @@ ingredients:
     unit: "ช้อนโต๊ะ"
     item: "ต้นหอมซอย"
   - amount: 3
-    unit: "ก้าน"
-    item: "ผักชี"
+    unit: "ชิ้น"
+    item: "ก้านผักชี"
   - amount: 3
     unit: "ใบ"
     item: "สะระแหน่"
   - amount: 60
-    unit: "มล."
+    unit: "ml"
     item: "แตงกวาหั่นเต๋าเล็ก"
   - amount: 2
     unit: "ช้อนชา"

@@ -47,8 +47,8 @@ ingredients:
     unit: "rkl"
     item: "hienonnettua kevätsipulia"
   - amount: 3
-    unit: "oksaa"
-    item: "korianteria"
+    unit: "kpl"
+    item: "korianterin oksaa"
   - amount: 3
     unit: "lehteä"
     item: "minttua"

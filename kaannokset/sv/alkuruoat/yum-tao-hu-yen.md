@@ -48,8 +48,8 @@ ingredients:
     unit: "msk"
     item: "hackad salladslök"
   - amount: 3
-    unit: "kvistar"
-    item: "koriander"
+    unit: "st"
+    item: "korianderkvistar"
   - amount: 3
     unit: "blad"
     item: "mynta"

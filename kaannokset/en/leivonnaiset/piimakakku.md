@@ -56,7 +56,7 @@ ingredients:
 
 Cultured buttermilk and plum jam keep this spiced ring cake moist.
 
-## Method
+## Preparation
 
 1. Heat the oven to 175°C. Butter a 1.8-litre ring tin and dust its base and sides with breadcrumbs.
 2. Combine the flour, sugar, spice blend and baking soda. Stir in the fat blend, jam and buttermilk until no dry flour remains. Spread the batter in the tin.

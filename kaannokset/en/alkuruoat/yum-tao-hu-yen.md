@@ -48,8 +48,8 @@ ingredients:
     unit: "tbsp"
     item: "chopped spring onion"
   - amount: 3
-    unit: "sprigs"
-    item: "coriander"
+    unit: "pieces"
+    item: "sprigs of coriander"
   - amount: 3
     unit: "leaves"
     item: "mint"
@@ -68,7 +68,7 @@ ingredients:
 
 Soft tofu is topped with a lime, lemongrass and herb salad.
 
-## Method
+## Preparation
 
 1. Wash the vegetables and herbs. Drain the tofu, cut it into large cubes and arrange it on a chilled deep serving plate.
 2. Stir the soy sauce, lime juice and palm sugar until the sugar dissolves. Finely chop the chilli, coriander and mint. Mix them into the dressing with the shallot, lemongrass, spring onion, cucumber and red pepper.
