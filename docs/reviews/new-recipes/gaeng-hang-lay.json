@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "gaeng-hang-lay",
+  "source_path": "reseptit/paaruoat/gaeng-hang-lay.md",
+  "source_sha256": "637c72c11f92d8a8ef7d46a6e6ba7c27e025410e58070c5c9659d2099cbf8090",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.simplysuwanee.com/gaeng-hung-lay/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/gaeng-hang-lay.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/gaeng-hang-lay.webp",
+    "bytes": 160288,
+    "sha256": "0c8195dbce549d6b3bcf47f971af51356b26795ceb3c9463afce9e2694ed4ee7",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/gaeng-hang-lay.md",
+        "sha256": "265f57d079a60a744e4cb93479f3d2176fb039670ad86da794cb09670f2318ba"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/gaeng-hang-lay.md",
+        "sha256": "21086cc5baf8f8fe16790c4512d4042f5e9074bcb50413a98da468f47e92e57d"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/gaeng-hang-lay.md",
+        "sha256": "401a62e16f9ca5e1ab05a464656e5364bbc2e7729ce704e517eab2d9516b5a7e"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/gaeng-hang-lay.md",
+        "sha256": "30bdf2d7e8b8ccc8bc019820a08ae3e6bcf561795b1e0240373cbe555b7a4a16"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "db3fb4a856aaa7e02cef449662522866404c0e8340ff86c6f8c38f6012de140a"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/gaeng-hang-lay.md",
+        "language": "fi",
+        "slug": "gaeng-hang-lay",
+        "sha256": "637c72c11f92d8a8ef7d46a6e6ba7c27e025410e58070c5c9659d2099cbf8090",
+        "semantic_sha256": "07fe27e9bf8b0c59bd52aecb4b57ff1a40367043c72966a4fd06e9c74bc6de0d"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/gaeng-hang-lay.md",
+        "language": "en",
+        "slug": "gaeng-hang-lay-en",
+        "sha256": "6541983e520ed5d2ea28fddea09dcf127062b2a2c7dbf665aba3346df4a10eba",
+        "semantic_sha256": "c86eff9bd131a5bcd3ca82ef05627a6d7fc99e2da1d798bde958d2520ede7358"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/gaeng-hang-lay.md",
+        "language": "sv",
+        "slug": "gaeng-hang-lay-sv",
+        "sha256": "9a71e855bdbd52bd667050d40e6b6960741055ff19b1da75e263b755a4c5c00e",
+        "semantic_sha256": "20e1092859209a3c3ce2a50e0a1f4758ec175de388a18eb906fcb12c33a6c516"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/gaeng-hang-lay.md",
+        "language": "th",
+        "slug": "gaeng-hang-lay-th",
+        "sha256": "9df94d42dc568fafa738d822fc1ba206bf79f3104262165485605bd19c5d34ba",
+        "semantic_sha256": "8f274b3078016f922a85f9439bfa22aa95ef6f5913b851f8f32f2365b5acde0d"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 6 ja aika 165 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "120 ml käytettävän tahnan massa ja koko tahnaerän todellinen saanto, porsaan rasva, säilötty valkosipuli/liemi, tamarindi, palmusokeri."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tamarindi, makea soija, palmusokeri ja säilöntäliemi sekä tahnan todellinen osuus."
+    }
+  }
+}

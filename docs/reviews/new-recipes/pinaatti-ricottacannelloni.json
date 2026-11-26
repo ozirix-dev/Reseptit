@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "pinaatti-ricottacannelloni",
+  "source_path": "reseptit/paaruoat/pinaatti-ricottacannelloni.md",
+  "source_sha256": "c3a9a166feff6ed747e718f62d69eef57b4a78fd3957ab9b62020e54755abdfb",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.bbcgoodfood.com/recipes/spinach-nutmeg-cannelloni",
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/pinaatti-ricottacannelloni.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/pinaatti-ricottacannelloni.webp",
+    "bytes": 175434,
+    "sha256": "dd3c4d841c35d12097e85b557d3fed2aaee8925954c1afce58277cf9d7559835",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/pinaatti-ricottacannelloni.md",
+        "sha256": "231dff60b5bbb99926f9cd9bf5b5521924e12812817e8736137320ddda5295b5"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/pinaatti-ricottacannelloni.md",
+        "sha256": "428d20ed0003c5afec891e521181410fa7752e39671be2779992eda41aff3390"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/pinaatti-ricottacannelloni.md",
+        "sha256": "16cd99a22f82658e42786caf7129742509925d3be59f3c6dc7bc3404be60cbb9"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/pinaatti-ricottacannelloni.md",
+        "sha256": "9bb303189ea965926b29050f35c33b794cbe0fd8cfa3217d84cf6dd53cdfca98"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "4a38e9812447c13762c9f4342082e418b62068616117de16a0b5fc0d000e0fd4"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/pinaatti-ricottacannelloni.md",
+        "language": "fi",
+        "slug": "pinaatti-ricottacannelloni",
+        "sha256": "c3a9a166feff6ed747e718f62d69eef57b4a78fd3957ab9b62020e54755abdfb",
+        "semantic_sha256": "ff6c001f77eaf1b81b248f89a88037b0faf0ad5b1b68d00763d35dbd9c5a0e6b"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/pinaatti-ricottacannelloni.md",
+        "language": "en",
+        "slug": "pinaatti-ricottacannelloni-en",
+        "sha256": "843f96215c565ce8d300d8729fc5539f31b93aff9f8680b25ad0fa0d9774a2b7",
+        "semantic_sha256": "78861feefd2fa928fa4564f0b3f07c1e68ccc320a630c1ccd42b0c6b1d2e4fe2"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/pinaatti-ricottacannelloni.md",
+        "language": "sv",
+        "slug": "pinaatti-ricottacannelloni-sv",
+        "sha256": "7a5ee6d6630f1a9b40334cce2f57daf269f173a6591c0b00a87598078ac139cc",
+        "semantic_sha256": "b1605084cab7175232cc2746b152fe70b712924ca8634602631e19c6a67df29e"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/pinaatti-ricottacannelloni.md",
+        "language": "th",
+        "slug": "pinaatti-ricottacannelloni-th",
+        "sha256": "9d0aea706afe36ceb69ca9a1a1d8f19b466f7c9027ea9b177a1e945be518b1af",
+        "semantic_sha256": "3d2f2d33163b31534d9487437a59ff76afbdbbce7bca5978e125344e8cc7e924"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 6 ja kokonaisaika 80 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "250g tuoreiden munalasagnelevyjen tuotekoostumus, ricotta/mascarpone/kova juusto, 500g pinaatin puristushävikki, passatan tilavuusmassa, iso muna."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}

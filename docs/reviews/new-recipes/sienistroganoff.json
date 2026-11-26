@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "sienistroganoff",
+  "source_path": "reseptit/paaruoat/sienistroganoff.md",
+  "source_sha256": "d0d94e4b4ea752fa5789c31c193bdb3ab843b1ba4e8b9466eae13ad9bd2e782c",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.bbcgoodfood.com/recipes/mushroom-stroganoff"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/sienistroganoff.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/sienistroganoff.webp",
+    "bytes": 190348,
+    "sha256": "865890313354a377b73a9a8341b95d0e61cf8b73f0a60bfa0cc90ff4eea0b7f5",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/sienistroganoff.md",
+        "sha256": "641e891be8c3c7cb338e8d447e52b812dc4dcda34935e0d2ad42c023e0ad6999"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/sienistroganoff.md",
+        "sha256": "ef755664c2221fd4aca765709982152413cfa5e0f903885047e4d35874aa7be1"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/sienistroganoff.md",
+        "sha256": "230ff24954801f5d77b337c1a6dbf0cf2d2147cb98cccbd5f9f6f4de0c6b2bde"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/sienistroganoff.md",
+        "sha256": "e3a97157a546412695efe8ef7e445945509bc97b40f86aff7714fcee160cc294"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "eb9ae1478ede88bbacaaa34a5a3724ed0b3cc56a7efbe90c657779801c818151"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/sienistroganoff.md",
+        "language": "fi",
+        "slug": "sienistroganoff",
+        "sha256": "d0d94e4b4ea752fa5789c31c193bdb3ab843b1ba4e8b9466eae13ad9bd2e782c",
+        "semantic_sha256": "142d92213be79cd9acbd088bcf34d8a5b7ebb41de5eaacb9132e8c144aa8c614"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/sienistroganoff.md",
+        "language": "en",
+        "slug": "sienistroganoff-en",
+        "sha256": "e9412912b73df7f529a3a57376776cdd4f0640fb655ae4814feac34ec5423173",
+        "semantic_sha256": "04e085bedc868a5be9db49f44e94b7bcf144c6056603c3d39dab0329825bc9ff"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/sienistroganoff.md",
+        "language": "sv",
+        "slug": "sienistroganoff-sv",
+        "sha256": "98192813fb6d0076e239513e917aed0d6c8363ccd2adb28e92155c285424b166",
+        "semantic_sha256": "7ed8b106d57e4a880218f2ff08e5e4ac1ebab41c97dc6a11acf256064d64dd26"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/sienistroganoff.md",
+        "language": "th",
+        "slug": "sienistroganoff-th",
+        "sha256": "35f531bfd248c487e50db25b35a161bffe9d301aa478f19415e83f17869cdaea",
+        "semantic_sha256": "04f25f1df155a995a1445a3863b606d229c994f087155653442b28cd0acbbeb1"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 2 ja kokonaisaika 30 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "300 g herkkusienten ja osterivinokkaiden suhde määrittelemätön, 45 ml hapankerman rasva/tiheys, kasvisliemen ja vegetaristisen Worcestershiren tuote, sipulin/yrttien massat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}

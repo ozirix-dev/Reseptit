@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "pla-neung-manao",
+  "source_path": "reseptit/paaruoat/pla-neung-manao.md",
+  "source_sha256": "f923f1d55677f56305d640aefcdd8fe6a77c345e69425916ed5b95bb70a36458",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://hungryinthailand.com/thai-steamed-fish-recipe/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/pla-neung-manao.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/pla-neung-manao.webp",
+    "bytes": 157760,
+    "sha256": "4bd87a1b4e5abc18723715ff127f4f6694739c355e7af549240e74bc627f542a",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/pla-neung-manao.md",
+        "sha256": "88c8bec6cd62a4746422d89e67bf3c303be6ec554f7202136c827c11d98ef5db"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/pla-neung-manao.md",
+        "sha256": "fb39b0486a196a6ea31835f57ec5996371d4e4778b3032b960853484c78bdc5d"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/pla-neung-manao.md",
+        "sha256": "b3e0d1a269eda002f24360b4d1314187bda1fbd765d6a864315018bf39caa1df"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/pla-neung-manao.md",
+        "sha256": "c327697b3dc2482c95102497341c142643f1b6b4d77803eadd3b8dab5d37433e"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "2c5600814097bc88e452d1b2d9ae5a62bc531e2dbe3650e16fafedc39d3b1c39"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/pla-neung-manao.md",
+        "language": "fi",
+        "slug": "pla-neung-manao",
+        "sha256": "f923f1d55677f56305d640aefcdd8fe6a77c345e69425916ed5b95bb70a36458",
+        "semantic_sha256": "c6ce7e86bc3177465dd2c0ff9d3aa5f6c36a9b3becf127cac75e3bd37b5fc67e"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/pla-neung-manao.md",
+        "language": "en",
+        "slug": "pla-neung-manao-en",
+        "sha256": "b35bd41ebb6af6de05fce2b5f772bba69bc1ce45ea3db93f6cd0adcccbda8162",
+        "semantic_sha256": "a8e0d55435515f95fb8732b6500fb0fc8ae6c5ddcb44e8b7f2249df40729f246"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/pla-neung-manao.md",
+        "language": "sv",
+        "slug": "pla-neung-manao-sv",
+        "sha256": "a8df748550a5eb140dc7e85744542408af91af1e8ba1d665300f90fe4d0da070",
+        "semantic_sha256": "2485508c313c88c0353de01e703331251749be1daf9a8804316a733f987edcc4"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/pla-neung-manao.md",
+        "language": "th",
+        "slug": "pla-neung-manao-th",
+        "sha256": "919f60585124933cbbb52db0aca78a5b7883ebc17cb2ed966418201856fb108e",
+        "semantic_sha256": "8a52a073dcfee3ceaa0703b8c7374e1494dfcb3e3781e0095d6094a9f9b15dd1"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 3 ja aika 35 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "900 g kokonaiskalan syötävä massa ja tilapia/meribassi-vaihtoehto, kalakastike, palmusokerin massa."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Palmusokerin ja kastikkeen todellinen annos, valkosipulin/limetin HH; ei kalan perusteella nollaa."
+    }
+  }
+}
