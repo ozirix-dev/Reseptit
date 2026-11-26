@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "gado-gado",
+  "source_path": "reseptit/paaruoat/gado-gado.md",
+  "source_sha256": "cfa3faed2037ce25ff995e3ca3e14f96918159d5e0d136dcc2ddbae19096ba39",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.recipetineats.com/gado-gado-indonesian-salad-with-peanut-sauce/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/gado-gado.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/gado-gado.webp",
+    "bytes": 291838,
+    "sha256": "ca8157784911dd1b2e00ec40f9fdf67cacd9e5a4621b600a167cf43651e0ee0e",
+    "width": 1672,
+    "height": 941,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/gado-gado.md",
+        "sha256": "ce9df7da1e668d60e9a8cd34ca71b1c604af4c5b7675e9a0b50da06486aa9f31"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/gado-gado.md",
+        "sha256": "d066ae011f5100f15ffc53a3dd5fac307b7e8fa7a2a742c7ac985547993e8024"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/gado-gado.md",
+        "sha256": "029fe2964bc09f262da1dfa73e41baa429aca1fd20e510d2c72a7dba4801b73c"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/gado-gado.md",
+        "sha256": "d9f22e62e16a6c03dc0b7c48b7a6c9f464955b3be27ef7cead8084470b2c3008"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "063613bf5ff8a18253f87e810dd7a5f05e3599039e8311be9d62cee0a9eab292"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/gado-gado.md",
+        "language": "fi",
+        "slug": "gado-gado",
+        "sha256": "cfa3faed2037ce25ff995e3ca3e14f96918159d5e0d136dcc2ddbae19096ba39",
+        "semantic_sha256": "c89639205f8a1afe6dd8484c264fee1970cf0a2326ef994f34fd8c7f2f2a5644"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/gado-gado.md",
+        "language": "en",
+        "slug": "gado-gado-en",
+        "sha256": "74b203f5765bf92e9d13f0a8c1a0dcd1c6d4d8d8775a88d0dfec8cf736365045",
+        "semantic_sha256": "d64171468419f6773a1112dbb3d651df765d592e7ef6c54f38c64a76a1235322"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/gado-gado.md",
+        "language": "sv",
+        "slug": "gado-gado-sv",
+        "sha256": "01807565383000c5b1d1962a093b54dc3729db28d5a1aa221f9ab8239698eef7",
+        "semantic_sha256": "1b88efc94067275152786ca46328716805a96fb3c8ef11d4191025ff60c897b6"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/gado-gado.md",
+        "language": "th",
+        "slug": "gado-gado-th",
+        "sha256": "690de003c4cd49e66b082f688f72aa6a2ad884e5ab811006e7548f8ec63ba0ab",
+        "semantic_sha256": "8ea1c295874361c0be37528a96452ed8cc2d0665777228bd6dc3bc9fbdb3362c"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 2 ja aika 40 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Maapähkinävoin 80 ml massa, tempen ja tahnojen tuotteet, öljyretentio, perunan kypsä saanto."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Peruna, kecap manis ja maapähkinäkastike; perunan kypsennysmuodon GI ja koko annoksen HH puuttuvat."
+    }
+  }
+}

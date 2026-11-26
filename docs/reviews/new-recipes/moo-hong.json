@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "moo-hong",
+  "source_path": "reseptit/paaruoat/moo-hong.md",
+  "source_sha256": "1d0eaddf4989127a10af3b28a87bb7f797ca7640a0890d704276cecbbf3f8602",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://hungryinthailand.com/moo-hong/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/moo-hong.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/moo-hong.webp",
+    "bytes": 188604,
+    "sha256": "2f88221673b3f2c6039ce88f3b974d20cd5e312e002315f465059cddc87c3de8",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/moo-hong.md",
+        "sha256": "3c1dd891cdd9fb3926fe50e9be857fdfd7ef52f189a3ac333251e06eebba5835"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/moo-hong.md",
+        "sha256": "b0b552cffcedfe12b4a3f5d0319f714bfa7a309fb55ce3adfd6cb4c1c0cdb59c"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/moo-hong.md",
+        "sha256": "07b88d6a98a7a65eec504233966f3414c926a05a551dd8845354602c51286df9"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/moo-hong.md",
+        "sha256": "b1506c987957884f124795cda70ac0cef25a8f1eebfa20246200b7289b589a5c"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "bdb61b3de92660847b7255919bc80a74c3a188eba0d1b50395586da95490a9b5"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/moo-hong.md",
+        "language": "fi",
+        "slug": "moo-hong",
+        "sha256": "1d0eaddf4989127a10af3b28a87bb7f797ca7640a0890d704276cecbbf3f8602",
+        "semantic_sha256": "ec4da6c8da80f4b77457f96c4c8afccd67f34b7c8f788fd44c90b531168d9ffe"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/moo-hong.md",
+        "language": "en",
+        "slug": "moo-hong-en",
+        "sha256": "f3bee08337cab7ee6b597f34bdff0b711bfe8080f519ef03576567398165b371",
+        "semantic_sha256": "79fb3c3dd6cfffae167b987ab3d7717d78376478b8d9f6c14b129c1e487150b6"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/moo-hong.md",
+        "language": "sv",
+        "slug": "moo-hong-sv",
+        "sha256": "d40de591e2941abe42963628ab46cd7a11900adf58f9b3554a54fa5ce4d7b6d2",
+        "semantic_sha256": "e29b4294de7f89bb518e367f0dbca8563afc41dd1d0914471c358e46b5716831"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/moo-hong.md",
+        "language": "th",
+        "slug": "moo-hong-th",
+        "sha256": "39710092fc5881d098b9d10415ca446b684b42a6a41f30c0b686fd328e7c6a58",
+        "semantic_sha256": "69fed3b928dd39eece5d218b6a40054b87031f3b7c7e06d8c52872fc539845da"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja aika 210 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Porsaan kyljen rasvakoostumus ja haudutuksessa syöty kastike/rasva, palmusokerin massa ja soijat."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Palmusokerin, valkosipulin ja soijakastikkeen HH/annos; ei lisukeriisiä."
+    }
+  }
+}

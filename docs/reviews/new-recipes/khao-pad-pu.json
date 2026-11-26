@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "khao-pad-pu",
+  "source_path": "reseptit/paaruoat/khao-pad-pu.md",
+  "source_sha256": "2f1fd0ff4e28ca947d01e8c03405d79477c98bc1a4aece8b297ce23e160341f5",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.simplysuwanee.com/crab-fried-rice/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/khao-pad-pu.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/khao-pad-pu.webp",
+    "bytes": 220752,
+    "sha256": "b5baf52f2b5e175bcbe0e58aa5b9fc9d5f896005873c37dbf98a75e0804d9eba",
+    "width": 1672,
+    "height": 941,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/khao-pad-pu.md",
+        "sha256": "1a1873221b0e8289a26181fa95e0f50f9b9f42593f196b427cd2a4e5ad0267db"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/khao-pad-pu.md",
+        "sha256": "95f74946b8acc31a7f9322c2e606debc74edd2c2a37c1e1769eda4ff3233a277"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/khao-pad-pu.md",
+        "sha256": "480542bbdebca45b2b895a0fad2c935b7314ccfb51ca5291056f469f0cd34fae"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/khao-pad-pu.md",
+        "sha256": "ac923da74540d3072685fb20e93f44b21967a3e4407a4932b95b7631ca627b32"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "7a12883b99d8f533d56f85b70142b662de1c4fe5db9ea6e521d75e509ba10049"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/khao-pad-pu.md",
+        "language": "fi",
+        "slug": "khao-pad-pu",
+        "sha256": "2f1fd0ff4e28ca947d01e8c03405d79477c98bc1a4aece8b297ce23e160341f5",
+        "semantic_sha256": "c8a5d8fc3a7e7da0d24ad64bd838a368463b1bcb7b3e5de9722d55f33801ee89"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/khao-pad-pu.md",
+        "language": "en",
+        "slug": "khao-pad-pu-en",
+        "sha256": "2a0fa214ee49e879e71de90b5a50ef2272a98a01f59edcee3cad70214ad2014e",
+        "semantic_sha256": "438747083ab2fcce4e0148ed0d4a905fdc8171c878d0aa751f22016d7ce1cfaf"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/khao-pad-pu.md",
+        "language": "sv",
+        "slug": "khao-pad-pu-sv",
+        "sha256": "1c65ee59f46121c28343b608f89e6903ad7f62c981e9b119bc481cf4bc20258f",
+        "semantic_sha256": "3a6ff0f770571dc0fabd79d47e3f1945d173e38ecce187290c5163e9f48a37dd"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/khao-pad-pu.md",
+        "language": "th",
+        "slug": "khao-pad-pu-th",
+        "sha256": "0ac1e7eff115872937acf731e8e03a23bafdbf4180871338b8b792203ea3ee1c",
+        "semantic_sha256": "8bce71ba84f2a0ccbcc4d777c055d3bcc3716c2c446b7496e6a49f869a766647"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja aika 25 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "600 ml kypsän jasmiiniriisin todellinen massa, valutettu raputuote, öljyretentio ja kolme kastiketuotetta."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Kypsän jasmiiniriisin massa, jäähdytys/kuumennus ja sopiva GI; kastikkeet ja sokeri."
+    }
+  }
+}
