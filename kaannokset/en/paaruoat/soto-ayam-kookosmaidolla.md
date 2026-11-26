@@ -61,4 +61,4 @@ An Indonesian-Malaysian style spiced soup with coconut milk, chicken, rice noodl
 
 - Contains egg. Check stock and fried shallot labels for allergens, especially celery and wheat. Weights for noodles, chicken, galangal, ginger, sprouts and crispy shallots are editorial adaptations of unspecified source quantities. This is not presented as a Thai recipe.
 - Reference source: Bee Yinn Low, <https://rasamalaysia.com/soto-ayam-recipe/>
-- Editorial draft based on the source. Nutrition and GL are not determined; Recipavo has not tested it in its own kitchen.
+- Recipe adapted from the cited source. Nutrition and GL are not determined; Recipavo has not tested it in its own kitchen.

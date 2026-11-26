@@ -55,4 +55,4 @@ Turmeric-seasoned chicken is steamed and finished in the oven with a spiced coco
 
 - Contains crustaceans. Rice is not included. The 1 kg weight of four thighs, 15 g ginger, 500 ml coconut milk and 30-minute refrigerated marinade are editorial specifications; reserving clean serving sauce is a safety adaptation.
 - Reference source: Emily Halim, Nyonya Cooking, <https://www.nyonyacooking.com/recipes/ayam-percik~2JIHfE6OLH>
-- Editorial draft based on the source. Nutrition and GL are not determined; Recipavo has not tested it in its own kitchen.
+- Recipe adapted from the cited source. Nutrition and GL are not determined; Recipavo has not tested it in its own kitchen.

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "gaeng-jued-tofu-porsas",
   "source_path": "reseptit/paaruoat/gaeng-jued-tofu-porsas.md",
-  "source_sha256": "05eee9fc2c59a3071ca421c5e198f812cc8a6ab76bc0b3a52a373b8bccd30377",
+  "source_sha256": "e5383bb4da16e42959cabcd14ddd8410495c6dd79c4876b2437fd1a45326ea8f",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/paaruoat/gaeng-jued-tofu-porsas.md",
         "language": "fi",
         "slug": "gaeng-jued-tofu-porsas",
-        "sha256": "05eee9fc2c59a3071ca421c5e198f812cc8a6ab76bc0b3a52a373b8bccd30377",
-        "semantic_sha256": "2f6d864fccc0a8333483c121e552f7103c7c035ec0b64d7fc46e8610dadcb8fa"
+        "sha256": "e5383bb4da16e42959cabcd14ddd8410495c6dd79c4876b2437fd1a45326ea8f",
+        "semantic_sha256": "8cbe6ae506f42d2f9c115d26425c3f1d89c20e7707c53440117cc37c7585a234"
       },
       {
         "path": "kaannokset/en/paaruoat/gaeng-jued-tofu-porsas.md",
         "language": "en",
         "slug": "gaeng-jued-tofu-porsas-en",
-        "sha256": "4c69f490a3c834ce3ebe10d7ecc14aacec295e5b8ba96b8ed2e4bd2afa7f0fb4",
-        "semantic_sha256": "1f3bde1574d0a933e258d641579ff8bf650cbecdc065fb2b8396f9ae0855b0c2"
+        "sha256": "04eff1ff600f9a310e98bb7b3d14dab9e23677e3aa0c5d5da6a9b3d7c74633ee",
+        "semantic_sha256": "43a84269500cdcf762a2c9a26f6809f444ff902812c94db9ed457f1f79055038"
       },
       {
         "path": "kaannokset/sv/paaruoat/gaeng-jued-tofu-porsas.md",
         "language": "sv",
         "slug": "gaeng-jued-tofu-porsas-sv",
-        "sha256": "33584e9ead36b1e17fde3655fe96235e8e7901a99f1040033a499d1a22bbb8d1",
-        "semantic_sha256": "8337007651c71859e2ca286f69323e7ce68551bdbd0a31b5db1908630ea184b6"
+        "sha256": "c6738a04bfa8313150ac0ba86973d97ab78ff4394e1e7c81494694f0c337dbf2",
+        "semantic_sha256": "0f3f1e54a952933b913c8520921a1761f53ceecc1bf862cac6d28ff215008c07"
       },
       {
         "path": "kaannokset/th/paaruoat/gaeng-jued-tofu-porsas.md",
         "language": "th",
         "slug": "gaeng-jued-tofu-porsas-th",
-        "sha256": "5e2dea7c9633cd1950b63dc2482255e86883ae592d463b5d0f80542ba90c2e8e",
-        "semantic_sha256": "b94a1b3a5d6bad9070b947d83357848cba82d32f07b150252f3e79045c0bb675"
+        "sha256": "f95c4c7453f4a1a4553fdc0616cf7bab864279de864603b4a4ca449db0bff593",
+        "semantic_sha256": "2b5e63c66e8374da0de9a0d63278ff71ea00ffa90c4dc217c92dcb137d1c2d4f"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "Tofun, liemen, sipulin ja kastikkeiden HH/annos sekä GI-perusta; ei kasvis-/nollaoletusta."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

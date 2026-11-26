@@ -60,4 +60,4 @@ Inkivääri, tamarindi ja säilötty valkosipuli maustavat hitaasti haudutetun p
 
 - Sisältää kalaa, äyriäisiä ja soijaa; tarkista vehnä soijassa ja sulfiitit säilötyssä valkosipulissa. Valitse makeassa suolahappamassa liemessä säilötty thai-valkosipuli, ei chiliöljytuotetta. Tahnaerän todellinen saanto ja 120 ml:n massa jäävät mitattaviksi ennen ravintolaskentaa. Riisi ei sisälly annokseen.
 - Vertailulähde: Suwanee, <https://www.simplysuwanee.com/gaeng-hung-lay/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

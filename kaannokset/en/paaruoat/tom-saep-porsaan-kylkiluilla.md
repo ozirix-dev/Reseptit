@@ -51,4 +51,4 @@ Galangal, lemongrass and lime flavour a clear pork rib broth.
 
 - Contains fish. Toasted rice powder amount is an editorial clarification; do not use raw rice flour. Watch for bones.
 - Recipe source: Aree, <https://areekitchen.com/thai-pork-rib-soup-tom-saap/>
-- Editorial draft based on the source. Nutrition and GL undetermined; no Recipavo kitchen trial.
+- Recipe adapted from the cited source. Nutrition and GL undetermined; no Recipavo kitchen trial.

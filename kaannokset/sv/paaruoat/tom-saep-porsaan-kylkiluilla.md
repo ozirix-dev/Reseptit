@@ -51,4 +51,4 @@ Galangal, citrongräs och lime smaksätter en klar revbensbuljong.
 
 - Innehåller fisk. Mängden rostat rismjöl är redaktionell; använd inte rått rismjöl. Se upp för ben.
 - Receptkälla: Aree, <https://areekitchen.com/thai-pork-rib-soup-tom-saap/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.
+- Recept baserat på den angivna källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "filippiinilainen-kana-adobo",
   "source_path": "reseptit/paaruoat/filippiinilainen-kana-adobo.md",
-  "source_sha256": "da57ca3c8488cc6420d025a2e3df7294d9b8ba76a54aca83e934e714a43e021c",
+  "source_sha256": "e038b5326f69d9c1305de9f36509eb03b65cc867c12e427c0e7073d814f0f7b9",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/paaruoat/filippiinilainen-kana-adobo.md",
         "language": "fi",
         "slug": "filippiinilainen-kana-adobo",
-        "sha256": "da57ca3c8488cc6420d025a2e3df7294d9b8ba76a54aca83e934e714a43e021c",
-        "semantic_sha256": "b6c9b1459f74c3906f1f9dd324ced83b1f985943e52b31400450fbde9c2b2ef4"
+        "sha256": "e038b5326f69d9c1305de9f36509eb03b65cc867c12e427c0e7073d814f0f7b9",
+        "semantic_sha256": "f54c51704e567ea823e033b6003a6a13e0df08d9812abc8bfe6d7ae3995abc24"
       },
       {
         "path": "kaannokset/en/paaruoat/filippiinilainen-kana-adobo.md",
         "language": "en",
         "slug": "filippiinilainen-kana-adobo-en",
-        "sha256": "2e3a3d96cb89629b610c9d2e1c9d8f909a945f433261ae3fef2930ffa5ef5ef1",
-        "semantic_sha256": "3c7d10ee38f3f0fb47cd350fa57f093e64d52337cf5658de9e3c087878266d4a"
+        "sha256": "de711af5dc2bc6a8cfd07edf62220ed10fbfcbd26944e7ef9950874220c841ae",
+        "semantic_sha256": "d853f2eeffe2932ad1fb22f425144ef9c2cc3686cdb7eee15f10a9a1bbb61375"
       },
       {
         "path": "kaannokset/sv/paaruoat/filippiinilainen-kana-adobo.md",
         "language": "sv",
         "slug": "filippiinilainen-kana-adobo-sv",
-        "sha256": "9fe6ab8a0841a09257ab1a3bb215bf3eff512ebbe60213d65d49406b5d914232",
-        "semantic_sha256": "f1d08b4293646c182dd58e54f04a0292a4ec53794457670c5c459d575553b6e1"
+        "sha256": "b1614f4589ead368e5a1eb5573e7aaaae4e7c57b476f3f487d0339cdb5ab62e5",
+        "semantic_sha256": "8a80bc236f651b306ba81655aa5c303c3d66793beb95d1d6fa293484e42c76a3"
       },
       {
         "path": "kaannokset/th/paaruoat/filippiinilainen-kana-adobo.md",
         "language": "th",
         "slug": "filippiinilainen-kana-adobo-th",
-        "sha256": "08f5886e4e5fd5d2360aef7d05fad829ff3c7665f460136d268fce0ec8b4625a",
-        "semantic_sha256": "e9b83b186378a06f86396c1cfe7f86dae13be90f16dbbbd6e816898124d851f9"
+        "sha256": "ea888cf86dcbe3fd595b5cff06cefc876ddc409aed252cc8f13ccfed56d2c59f",
+        "semantic_sha256": "57458509040e708f08b80638f16783e4147c21b98584a32e145a8983ae5b0ab9"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "Soijakastikkeen ja valkosipulin annoskohtainen HH; mahdollinen vähäinen vaikutus vaatii nykyisten kynnysarvojen mukaisen näytön. Ei riisiä."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

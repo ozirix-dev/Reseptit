@@ -49,4 +49,4 @@ Kurkuman, chilin ja limetin maustama liemimäinen curry ilman kookosmaitoa.
 
 - Sisältää kalaa ja äyriäisiä. Hyvin tulinen. Kala on kokonaispaino; riisi ei sisälly annokseen. Lähde sallii bambunversot vihreän papaijan tilalle. 500 g valutettu määrä ja neljän annoksen jako ovat toimituksellinen sovitus; alkuperäinen papaijaversio jää erilliseen hankinta-HOLDiin.
 - Vertailulähde: Mark Wiens, <https://www.eatingthaifood.com/thai-gaeng-som-recipe/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

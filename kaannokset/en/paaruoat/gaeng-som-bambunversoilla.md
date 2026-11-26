@@ -50,4 +50,4 @@ A bright, broth-like curry of turmeric, chilli and lime, without coconut milk.
 
 - Contains fish and crustaceans. Very hot. Fish weight is whole-fish weight; rice is not included. The source allows bamboo shoots instead of green papaya. The 500 g drained quantity and four portions are editorial adaptations; the green-papaya version remains on a separate sourcing hold.
 - Reference source: Mark Wiens, <https://www.eatingthaifood.com/thai-gaeng-som-recipe/>
-- Editorial draft based on the source. Nutrition and GL are not determined; Recipavo has not tested it in its own kitchen.
+- Recipe adapted from the cited source. Nutrition and GL are not determined; Recipavo has not tested it in its own kitchen.

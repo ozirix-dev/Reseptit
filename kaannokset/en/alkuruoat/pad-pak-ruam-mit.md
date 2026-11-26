@@ -53,4 +53,4 @@ Mixed vegetables are quickly wok-fried with garlic and oyster sauce.
 
 - Contains molluscs and soy, possibly wheat. Ordinary oyster sauce is not vegetarian.
 - Recipe source: Praew, <https://hungryinthailand.com/thai-vegetables-stir-fry/>
-- Editorial draft based on the source. Nutrition and GL undetermined; no Recipavo kitchen trial.
+- Recipe adapted from the cited source. Nutrition and GL undetermined; no Recipavo kitchen trial.

@@ -50,4 +50,4 @@ Crisp white fish fillets are topped with a spicy sweet-sour sauce.
 
 - Contains fish. Fillets, shallower frying, starch/oil allowances and half sauce are editorial adaptations, not the tested whole-fish version. Oil uptake is unmeasured.
 - Recipe source: Praew, <https://hungryinthailand.com/thai-crispy-fish-tamarind-sauce/>
-- Editorial draft based on the source. Nutrition and GL undetermined; no Recipavo kitchen trial.
+- Recipe adapted from the cited source. Nutrition and GL undetermined; no Recipavo kitchen trial.

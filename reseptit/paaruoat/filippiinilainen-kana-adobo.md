@@ -45,4 +45,4 @@ Broilerin reisipalat hautuvat etikan, soijan, valkosipulin ja laakerinlehden mau
 
 - Sisältää soijaa; tarkista vehnä soijakastikkeesta. Lähteen 4–5 paunan määrä on täsmennetty 2 kg:aan ja 6–8 annoksen jako kuuteen. Riisi ei sisälly annokseen; lihan paino sisältää luut.
 - Vertailulähde: Corinne Domingo, Food Network, <https://www.foodnetwork.com/recipes/filipino-chicken-adobo-recipe-1955818>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

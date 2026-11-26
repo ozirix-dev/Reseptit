@@ -53,4 +53,4 @@ Grillat fläsk blandas med lime, örter och rostat ris.
 
 - Innehåller fisk och blötdjur, eventuellt soja och vete. Skivtjockleken är en köksanpassning. Extra klibbris ingår inte.
 - Receptkälla: Suwanee Lennon, <https://www.simplysuwanee.com/moo-namtok/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.
+- Recept baserat på den angivna källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.

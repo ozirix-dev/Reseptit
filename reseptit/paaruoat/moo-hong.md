@@ -49,4 +49,4 @@ Porsaan kylki haudutetaan tähtianiksen, kanelin ja soijakastikkeiden maustamass
 
 - Sisältää soijaa; tarkista mahdollinen vehnä. Riisi on erillinen lisuke. Valmistukseen ei lisätä erikseen paistoöljyä; käytä miedolla lämmöllä kattilaa, jossa sokeri ei pala.
 - Vertailulähde: Praew, <https://hungryinthailand.com/moo-hong/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

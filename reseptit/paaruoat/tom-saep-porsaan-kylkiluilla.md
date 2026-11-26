@@ -50,4 +50,4 @@ Galangal, sitruunaruoho ja limetti maustavat luullisen porsaan kirkkaan liemen.
 
 - Sisältää kalaa. Paahdetun riisijauheen määrä on toimituksellinen täsmennys lähteen puuttuvaan mittaan; älä käytä raakaa riisijauhoa. Varo luita.
 - Vertailulähde: Aree, <https://areekitchen.com/thai-pork-rib-soup-tom-saap/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

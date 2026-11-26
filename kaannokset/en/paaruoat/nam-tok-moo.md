@@ -53,4 +53,4 @@ Grilled pork is tossed with lime, herbs and toasted rice.
 
 - Contains fish and molluscs, possibly soy and wheat. Steak thickness is a home-kitchen adaptation. Extra sticky rice is not included.
 - Recipe source: Suwanee Lennon, <https://www.simplysuwanee.com/moo-namtok/>
-- Editorial draft based on the source. Nutrition and GL undetermined; no Recipavo kitchen trial.
+- Recipe adapted from the cited source. Nutrition and GL undetermined; no Recipavo kitchen trial.

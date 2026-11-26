@@ -57,4 +57,4 @@ Potatis, tempeh, ägg och grönsaker serveras med varm jordnötssås.
 
 - Innehåller jordnötter, soja och ägg; currypastan kan innehålla kräftdjur eller fisk och sojan vete. Ingen vegetarisk klassning utan produktkontroll. Röd thaicurrypasta är källans genväg; vikterna för spenat, groddar och gurka är redaktionella preciseringar. Valfria räkchips utelämnas.
 - Referenskälla: Nagi Maehashi, RecipeTin Eats, <https://www.recipetineats.com/gado-gado-indonesian-salad-with-peanut-sauce/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GB är inte fastställda; Recipavo har inte provlagat rätten.
+- Recept baserat på den angivna källan. Näringsvärden och GB är inte fastställda; Recipavo har inte provlagat rätten.

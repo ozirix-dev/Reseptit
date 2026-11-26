@@ -52,4 +52,4 @@ Mild klar soppa med fläskfärs, fast tofu och kinakål.
 
 - Innehåller fisk och soja; kontrollera buljong och soja för vete/selleri. Kinakål, färsvikt och olja är redaktionella anpassningar; inte vegetarisk.
 - Receptkälla: Rachel, <https://rachelcooksthai.com/pork-and-tofu-soup/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.
+- Recept baserat på den angivna källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.

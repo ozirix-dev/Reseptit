@@ -52,4 +52,4 @@ Kokt jasminris, ägg och riktigt krabbkött steks snabbt i wok.
 
 - Innehåller kräftdjur, ägg, fisk och soja; kontrollera såser för vete och krabba för sulfiter. Använd inte surimi. Värm förkokt ris bara en gång; spara inte uppvärmt ris som nya rester.
 - Receptkälla: Suwanee Lennon, <https://www.simplysuwanee.com/crab-fried-rice/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.
+- Recept baserat på den angivna källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.

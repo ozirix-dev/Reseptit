@@ -52,4 +52,4 @@ Rapeat kasvikset kypsyvät nopeasti valkosipuli-osterikastikkeessa.
 
 - Sisältää nilviäisiä ja soijaa, mahdollisesti vehnää. Tavallinen osterikastike ei ole kasvisruokavalioon sopiva.
 - Vertailulähde: Praew, <https://hungryinthailand.com/thai-vegetables-stir-fry/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

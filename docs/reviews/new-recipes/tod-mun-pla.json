@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "tod-mun-pla",
   "source_path": "reseptit/alkuruoat/tod-mun-pla.md",
-  "source_sha256": "a335d43eddac77c64ddd8534c1bfdc568a5029f64e25e600f0681f5f3b1e8ce2",
+  "source_sha256": "dc75c687a64ad327f498bf13c69bd374499f8287a6f1000ad01dc8d0a45ca7bb",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/alkuruoat/tod-mun-pla.md",
         "language": "fi",
         "slug": "tod-mun-pla",
-        "sha256": "a335d43eddac77c64ddd8534c1bfdc568a5029f64e25e600f0681f5f3b1e8ce2",
-        "semantic_sha256": "ccb53ff81f5c1f208d4b387a30b3e1db38dfb556579f2b2cc54640d0b63f1c7b"
+        "sha256": "dc75c687a64ad327f498bf13c69bd374499f8287a6f1000ad01dc8d0a45ca7bb",
+        "semantic_sha256": "02e678cec8bfdc08a83ed6b588de997dc72e94cbd24653fd144aa312a357d702"
       },
       {
         "path": "kaannokset/en/alkuruoat/tod-mun-pla.md",
         "language": "en",
         "slug": "tod-mun-pla-en",
-        "sha256": "9e9170db4445fe93bab6dd971a4d30cf9e5d9c30e15b85995bab5196ee5168a6",
-        "semantic_sha256": "350881273fd7d5491b2f804a413e1e14be417f5bc457f7cf2908492174cabcfd"
+        "sha256": "a5e74a5bb9f11681a629540ef5d87326b22c65aa5007d76da150d4dfe92ebe81",
+        "semantic_sha256": "4bc45a1529b96144441a1c8d875cf32c57cc25e4f065c4805056b15fa6db6d77"
       },
       {
         "path": "kaannokset/sv/alkuruoat/tod-mun-pla.md",
         "language": "sv",
         "slug": "tod-mun-pla-sv",
-        "sha256": "9756b38e3b70c549ec73e4df9f83da06ecd344ce85415166d8a305b5e8ef5203",
-        "semantic_sha256": "c1537583f8044da3e98b699d36cdb216fef6faad5a531081c28d556b0b650329"
+        "sha256": "23b4b403826d207a868ecbefef806ed59566e83aae66442036d95fb52a7f205e",
+        "semantic_sha256": "5b0b2fdc908102dca2636d1b1a44db292257552b54b3325d41232ce2f2376697"
       },
       {
         "path": "kaannokset/th/alkuruoat/tod-mun-pla.md",
         "language": "th",
         "slug": "tod-mun-pla-th",
-        "sha256": "8d03e3f082819511b31eccd7b358cabea7c8c89a4d3b1532be2a773f4ced0504",
-        "semantic_sha256": "5809d20eb617f8b344731aad70ad7fc2e20104758ee9aec0990743a418794106"
+        "sha256": "8d4c8582f9af4c6d502b63b57bca58f345f8e36a0f94b800c8ef51ef48f7ec7c",
+        "semantic_sha256": "a006b2aa729e81a7eab060e69389b3aed7c358a2c5ff1aa8dd064facbaf2f612"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "Tapiokatärkkelyksen valmistusmuoto ja massa, sokeri, currytahna; ei luotettavaa GI/HH-annosta."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

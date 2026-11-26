@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "pla-neung-manao",
   "source_path": "reseptit/paaruoat/pla-neung-manao.md",
-  "source_sha256": "f923f1d55677f56305d640aefcdd8fe6a77c345e69425916ed5b95bb70a36458",
+  "source_sha256": "b733ab85aaa73318eaafda28548195708b65c38c9be87d84d087064c105772d4",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/paaruoat/pla-neung-manao.md",
         "language": "fi",
         "slug": "pla-neung-manao",
-        "sha256": "f923f1d55677f56305d640aefcdd8fe6a77c345e69425916ed5b95bb70a36458",
-        "semantic_sha256": "c6ce7e86bc3177465dd2c0ff9d3aa5f6c36a9b3becf127cac75e3bd37b5fc67e"
+        "sha256": "b733ab85aaa73318eaafda28548195708b65c38c9be87d84d087064c105772d4",
+        "semantic_sha256": "ee52fb7ca7d73e6201d12d9aed1f9745d76c4cefa6985a1267a763b79bd6d25f"
       },
       {
         "path": "kaannokset/en/paaruoat/pla-neung-manao.md",
         "language": "en",
         "slug": "pla-neung-manao-en",
-        "sha256": "b35bd41ebb6af6de05fce2b5f772bba69bc1ce45ea3db93f6cd0adcccbda8162",
-        "semantic_sha256": "a8e0d55435515f95fb8732b6500fb0fc8ae6c5ddcb44e8b7f2249df40729f246"
+        "sha256": "7e3829abbe1c9346d4542d3a92c3a1ca925af7c8f12c0c51735f477d6242fee8",
+        "semantic_sha256": "05412a5111e3294daba2f42037e28cfcd7f683253638cbf7463fdf4642b3220b"
       },
       {
         "path": "kaannokset/sv/paaruoat/pla-neung-manao.md",
         "language": "sv",
         "slug": "pla-neung-manao-sv",
-        "sha256": "a8df748550a5eb140dc7e85744542408af91af1e8ba1d665300f90fe4d0da070",
-        "semantic_sha256": "2485508c313c88c0353de01e703331251749be1daf9a8804316a733f987edcc4"
+        "sha256": "d333978029d708f2b68f365892857db0ba5086cf631fd43c8b431fc9efb12dcf",
+        "semantic_sha256": "161eca06f50661747c268c4d1fc729e7ea1e251dcf22774c27083da1f2b0758a"
       },
       {
         "path": "kaannokset/th/paaruoat/pla-neung-manao.md",
         "language": "th",
         "slug": "pla-neung-manao-th",
-        "sha256": "919f60585124933cbbb52db0aca78a5b7883ebc17cb2ed966418201856fb108e",
-        "semantic_sha256": "8a52a073dcfee3ceaa0703b8c7374e1494dfcb3e3781e0095d6094a9f9b15dd1"
+        "sha256": "4f557bb07d59ee8dc8d78d9702f6fe00aa6cd4140740f78ed120f7acac3b44b8",
+        "semantic_sha256": "4c6e754992b7bea7907d02ba6d1022b43a51dd09d9e6c2c415003bea7ecf567b"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "Palmusokerin ja kastikkeen todellinen annos, valkosipulin/limetin HH; ei kalan perusteella nollaa."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

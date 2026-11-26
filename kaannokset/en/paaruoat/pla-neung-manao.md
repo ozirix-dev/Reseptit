@@ -49,4 +49,4 @@ A whole steamed white fish is dressed with a sharp, aromatic lime sauce.
 
 - Contains fish and celery. Whole weight is not edible fillet weight. Rice is not included.
 - Recipe source: Praew, <https://hungryinthailand.com/thai-steamed-fish-recipe/>
-- Editorial draft based on the source. Nutrition and GL undetermined; no Recipavo kitchen trial.
+- Recipe adapted from the cited source. Nutrition and GL undetermined; no Recipavo kitchen trial.

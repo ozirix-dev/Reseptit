@@ -50,4 +50,4 @@ Pork belly simmers with star anise, cinnamon and two soy sauces.
 
 - Contains soy; check for wheat. Rice is separate. No additional frying oil; use a heavy pot over gentle heat so sugar does not burn.
 - Recipe source: Praew, <https://hungryinthailand.com/moo-hong/>
-- Editorial draft based on the source. Nutrition and GL undetermined; no Recipavo kitchen trial.
+- Recipe adapted from the cited source. Nutrition and GL undetermined; no Recipavo kitchen trial.

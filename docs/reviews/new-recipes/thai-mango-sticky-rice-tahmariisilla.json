@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "thai-mango-sticky-rice-tahmariisilla",
   "source_path": "reseptit/jalkiruoat/thai-mango-sticky-rice-tahmariisilla.md",
-  "source_sha256": "c10cce2974e8c187c42189421034c352cb1f3c1c6bd96b5630d1d20ab7f035c6",
+  "source_sha256": "43beac743295bc18a5d2a9ac98c914c9e4b611eb46c83d20e0c2f2bf4c6df2ab",
   "decision": "approved",
   "reviewed_by": "Chat-1 – nykyisen FI-lähteen dokumentoitu toimituksellinen vertailu",
   "reviewed_at": "2026-11-23",
@@ -43,5 +43,11 @@
       "status": "unavailable",
       "notes": "Juuri tälle tahmariisille, kypsyydelle ja annoskokoonpanolle ei ole hyväksyttyä GI- ja GK-lähdeketjua. Numeerinen GK jätetään määrittämättä; vanhaa jasmiiniriisiannoksen GK:ta ei käytetä."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

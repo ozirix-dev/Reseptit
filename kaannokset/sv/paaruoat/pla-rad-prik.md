@@ -50,4 +50,4 @@ Krispiga vita fiskfiléer toppas med het sötsur sås.
 
 - Innehåller fisk. Filéer, grundare stekning, stärkelse-/oljereserv och halverad sås är redaktionella anpassningar, inte den testade helfiskversionen. Oljeupptag ej mätt.
 - Receptkälla: Praew, <https://hungryinthailand.com/thai-crispy-fish-tamarind-sauce/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.
+- Recept baserat på den angivna källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.

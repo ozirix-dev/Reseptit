@@ -48,4 +48,4 @@ Fish cakes seasoned with red curry paste and lime leaves are fried in small batc
 
 - Contains fish and egg. Check curry paste for crustaceans, soy and wheat. Yield and oil are editorial allowances; oil uptake has not been measured. Do not taste raw paste.
 - Recipe source: Praew, <https://hungryinthailand.com/tod-mun-pla-recipe/>
-- Editorial draft based on the source. Nutrition and GL undetermined; no Recipavo kitchen trial.
+- Recipe adapted from the cited source. Nutrition and GL undetermined; no Recipavo kitchen trial.

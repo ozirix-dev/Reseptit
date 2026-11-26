@@ -53,4 +53,4 @@ Blandade grönsaker wokas snabbt med vitlök och ostronsås.
 
 - Innehåller blötdjur och soja, eventuellt vete. Vanlig ostronsås är inte vegetarisk.
 - Receptkälla: Praew, <https://hungryinthailand.com/thai-vegetables-stir-fry/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.
+- Recept baserat på den angivna källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.

@@ -46,4 +46,4 @@ Chicken thighs braise in a tangy soy, vinegar, garlic and bay leaf sauce.
 
 - Contains soy; check soy sauce for wheat. The source's 4–5 lb quantity is specified as 2 kg and its 6–8 servings as six. Rice is excluded; chicken weight includes bones.
 - Reference source: Corinne Domingo, Food Network, <https://www.foodnetwork.com/recipes/filipino-chicken-adobo-recipe-1955818>
-- Editorial draft based on the source. Nutrition and GL are not determined; Recipavo has not tested it in its own kitchen.
+- Recipe adapted from the cited source. Nutrition and GL are not determined; Recipavo has not tested it in its own kitchen.

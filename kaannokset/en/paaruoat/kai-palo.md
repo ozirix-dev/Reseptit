@@ -54,4 +54,4 @@ Boiled eggs, pork belly and fried tofu simmer in a sweet-savoury five-spice brot
 
 - Contains egg and soy; check soy sauces and tofu product for wheat. Rice is not included. Use ready-fried tofu, not dry tofu at the same weight.
 - Recipe source: Marion Grasby, <https://www.marionskitchen.com/thai-braised-pork-egg/>
-- Editorial draft based on the source. Nutrition and GL undetermined; no Recipavo kitchen trial.
+- Recipe adapted from the cited source. Nutrition and GL undetermined; no Recipavo kitchen trial.

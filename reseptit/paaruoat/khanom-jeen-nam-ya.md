@@ -54,4 +54,4 @@ Murennettu kypsä kala antaa tuliselle kookoskastikkeelle rakennetta. Tässä ko
 
 - Sisältää kalaa ja äyriäisiä. Kalan paino on kokonaispaino, ei syötävä massa. Kuivan vermisellin 300 g, laimennus ja kasvismäärät ovat toimituksellisia valintoja. Erillinen kalan keittovesi ei sisälly kastikkeeseen. Ei tuoretta khanom jeen -nuudelia eikä uppopaistettua chililisuketta.
 - Vertailulähde: Mark Wiens, <https://www.eatingthaifood.com/thai-fish-curry-recipe-nam-ya/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

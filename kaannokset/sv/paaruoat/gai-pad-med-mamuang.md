@@ -56,4 +56,4 @@ Krispig kyckling och cashewnötter wokas med paprika i sötsalt sås.
 
 - Innehåller cashewnötter och soja; kontrollera vete i sojan. Oljemängden är en reserv, inte konsumerad mängd.
 - Receptkälla: Marion Grasby, <https://www.marionskitchen.com/thai-cashew-chicken/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.
+- Recept baserat på den angivna källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.

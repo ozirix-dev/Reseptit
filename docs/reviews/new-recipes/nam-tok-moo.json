@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "nam-tok-moo",
   "source_path": "reseptit/paaruoat/nam-tok-moo.md",
-  "source_sha256": "5830caf6d7b14cb7574895c83e0e782ca113cd56f33a4e70f5ba1bc8e8556d84",
+  "source_sha256": "c6026f643b54518096f2e80231ddc3a4ae8f3109affd3881251e13c61516b607",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/paaruoat/nam-tok-moo.md",
         "language": "fi",
         "slug": "nam-tok-moo",
-        "sha256": "5830caf6d7b14cb7574895c83e0e782ca113cd56f33a4e70f5ba1bc8e8556d84",
-        "semantic_sha256": "0ebadf800611bdf32ddc23d829abbfb249353cf4c0aecc88493937229ac577b8"
+        "sha256": "c6026f643b54518096f2e80231ddc3a4ae8f3109affd3881251e13c61516b607",
+        "semantic_sha256": "5ad6f61465186eed6b50f3d7d79b31fcb73975756931602dd9d8cff5015fccaf"
       },
       {
         "path": "kaannokset/en/paaruoat/nam-tok-moo.md",
         "language": "en",
         "slug": "nam-tok-moo-en",
-        "sha256": "7cd47949fae9341e82f98860722f187f2fe0c1f4b0a009d54d67f4d86e1fc45d",
-        "semantic_sha256": "42b90c469ec3bd77281350c62f284a18199b684131ae0f741d3eb88c48afa6b7"
+        "sha256": "a2f55ac7774fdff47e94e6c73c0b9dcda792038ea0db7f53208eb3e809295917",
+        "semantic_sha256": "a64b905791a6eeacc0ec7c0f1b78cf4af3edd7a984956fbcb3577f5e7db80f6e"
       },
       {
         "path": "kaannokset/sv/paaruoat/nam-tok-moo.md",
         "language": "sv",
         "slug": "nam-tok-moo-sv",
-        "sha256": "661f5fbcae7ba6700be3dc1ff4b6f72521d3fb50e27176c0e4665e51022806bb",
-        "semantic_sha256": "28cc84781a09b89ca0d09bab47b0cf85f910786b9b4401cdbba04bd0514e2ed1"
+        "sha256": "84f29406b4480107a969e2b708a787e0eca2867e534d62b1c04bdbdb610fca41",
+        "semantic_sha256": "35484c90b04aec7799168466fa317c8e73cbf0786c74777161b2b8998a1758dc"
       },
       {
         "path": "kaannokset/th/paaruoat/nam-tok-moo.md",
         "language": "th",
         "slug": "nam-tok-moo-th",
-        "sha256": "e73a2e32f9ea51ec88e2c38af370517343b1bc75771aa202b61366ff28867699",
-        "semantic_sha256": "ade48284ea687f2f222e29ca8b0558c176e8493fdf9a520ca33ea8687e4b2a05"
+        "sha256": "93f041585cbe0cd146fea4c68270786801219f85e229eb686ff2cb497e58d28d",
+        "semantic_sha256": "7632f599784c51f231fd15a0244647461a7dcfdf971d75e537c136d7db6b8a72"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "Tahmariisijauheen paahdetun muodon GI ja massa, marinadin retentio sekä kastikkeiden HH; ei lisukeriisiä."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

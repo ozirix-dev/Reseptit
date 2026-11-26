@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "soto-ayam-kookosmaidolla",
   "source_path": "reseptit/paaruoat/soto-ayam-kookosmaidolla.md",
-  "source_sha256": "bc3773b8e123b6db16d07ad571fee4aa17f88ce69017517e1a2cf9d3edd6499f",
+  "source_sha256": "1f0759e8c365c63a67ba921dd8403f422680fddba76a225e339a689c1f1dbc4c",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/paaruoat/soto-ayam-kookosmaidolla.md",
         "language": "fi",
         "slug": "soto-ayam-kookosmaidolla",
-        "sha256": "bc3773b8e123b6db16d07ad571fee4aa17f88ce69017517e1a2cf9d3edd6499f",
-        "semantic_sha256": "cf296c88ddbc5dd0d0187ba20d18fb77ad9fadc67b3dcf27d1a15fdfab41c85a"
+        "sha256": "1f0759e8c365c63a67ba921dd8403f422680fddba76a225e339a689c1f1dbc4c",
+        "semantic_sha256": "b5a51c02988a524d44b2b81c02bedc1e40de8c09b3407bf2784d06eed92cfb40"
       },
       {
         "path": "kaannokset/en/paaruoat/soto-ayam-kookosmaidolla.md",
         "language": "en",
         "slug": "soto-ayam-kookosmaidolla-en",
-        "sha256": "9f7b60ad6cacdd6f89ed35785507c1d9c760dd70968bf45dfdda3b6db1c7b8f1",
-        "semantic_sha256": "088a81a4cafd77f9a3a6a0c897901a3329588fea42ce2709383d76956b1cceb2"
+        "sha256": "345a8794304dfc724d23f5468ca2a4797fba9b5a737ffe521441ac5107f2fc6b",
+        "semantic_sha256": "dd2fd3048e4caa8166704e1df424b4c6d57430e8a143f0147a3bb2fb58a013c9"
       },
       {
         "path": "kaannokset/sv/paaruoat/soto-ayam-kookosmaidolla.md",
         "language": "sv",
         "slug": "soto-ayam-kookosmaidolla-sv",
-        "sha256": "a413b89844f72fda3d2a591726ea92db46ca54c74ccf44304f0cf27fdcd40162",
-        "semantic_sha256": "f57772c3695149f75000329bbfc12547bb7253a0a6545deefac2f2ca5c2dd886"
+        "sha256": "1a915ecabe17190fbc5bebfc5d195cde994ca6835212add535c78eaec64ad264",
+        "semantic_sha256": "bbc5b079e7eb1b59c0e9d15e0c782d0c900dd8ff055dd6efc37902487ba4fc4c"
       },
       {
         "path": "kaannokset/th/paaruoat/soto-ayam-kookosmaidolla.md",
         "language": "th",
         "slug": "soto-ayam-kookosmaidolla-th",
-        "sha256": "52dfb54bacd5c35fc5db324f3fbbffbd2e182d14632132a9a161f6d538c5b753",
-        "semantic_sha256": "3fcc5c36234624ef1347347b3b07ee7b19523a633e21f31aebdf6a83a39aaf88"
+        "sha256": "7be612d7b201b7310e5d3add5d2cc97ea821c80c6d125831b31d738abd4e70a9",
+        "semantic_sha256": "4fe5f45fd1f3c9603a36487c5ce5c0cf35d577e19df9ea62173501c1ec6f0780"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "200 g kuivaa vermiselliä eli 50 g/annos; tuote- ja valmistusmuotokohtainen GI/HH, liemi ja lisukkeet."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

@@ -48,4 +48,4 @@ Fiskkakor med röd currypasta och limeblad steks i små omgångar.
 
 - Innehåller fisk och ägg. Kontrollera currypastan för kräftdjur, soja och vete. Utbyte och olja är redaktionella; oljeupptag ej mätt. Smaka inte på rå färs.
 - Receptkälla: Praew, <https://hungryinthailand.com/tod-mun-pla-recipe/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.
+- Recept baserat på den angivna källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.

@@ -54,4 +54,4 @@ Kokta ägg, fläsksida och stekt tofu sjuds i sötsalt femkryddsbuljong.
 
 - Innehåller ägg och soja; kontrollera såser och tofu för vete. Ris ingår inte. Använd färdigstekt tofu, inte torr tofu med samma vikt.
 - Receptkälla: Marion Grasby, <https://www.marionskitchen.com/thai-braised-pork-egg/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.
+- Recept baserat på den angivna källan. Näringsvärden och GL ej fastställda; inget eget kökstest av Recipavo.

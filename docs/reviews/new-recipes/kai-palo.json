@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "kai-palo",
   "source_path": "reseptit/paaruoat/kai-palo.md",
-  "source_sha256": "28d2732beeefcba7a83fc00f603e4bfeb05c5f6a9fd237a91a59f8597f9604f5",
+  "source_sha256": "8da3376c6ba9e40d92f3f7c216b30a0c2711fc14764a8f7b47ad27b3c61c22fa",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/paaruoat/kai-palo.md",
         "language": "fi",
         "slug": "kai-palo",
-        "sha256": "28d2732beeefcba7a83fc00f603e4bfeb05c5f6a9fd237a91a59f8597f9604f5",
-        "semantic_sha256": "2a00a1cc389e3183be00d10df1fc6fa5b86503a2e27a0f5ab92a5642348e8646"
+        "sha256": "8da3376c6ba9e40d92f3f7c216b30a0c2711fc14764a8f7b47ad27b3c61c22fa",
+        "semantic_sha256": "b8b40ce727c12a9690cb2422199472e6a4f7e9b5bbb1b44dc2c536a5452aa25e"
       },
       {
         "path": "kaannokset/en/paaruoat/kai-palo.md",
         "language": "en",
         "slug": "kai-palo-en",
-        "sha256": "ad3c891a9ddc13226af0fff0646e0ae5d43619b0a1c65437ef6b12ec5406e661",
-        "semantic_sha256": "2a8cb4851dada165b76e58141d3911e4cda6576942d781f7a17e97c70394d811"
+        "sha256": "f444a4641b94dd714d451946f88c6f26d111a237ac53dbdd907989c805c9ad88",
+        "semantic_sha256": "e7b5e50ee6a9d9e9ecca59839930a3baab26b00a20b9f3f188f93219cf13a200"
       },
       {
         "path": "kaannokset/sv/paaruoat/kai-palo.md",
         "language": "sv",
         "slug": "kai-palo-sv",
-        "sha256": "5a5cf3b5aafd72707d8d106e8d9271b3b1328e1f596d54813a11b55c38602466",
-        "semantic_sha256": "92b2b7492fb1b32a83ba24865288f56758f0ce67c71ab5589acc3aabe5eaef2d"
+        "sha256": "b21f0b1d7cd4399624b6a2c858467e0860b4b7ae217ee0a8b305a884c66620cb",
+        "semantic_sha256": "7db8c6725c9ee25c56be35087eb4b2fd6ecce52089811f0a3343eb0cf12e59ad"
       },
       {
         "path": "kaannokset/th/paaruoat/kai-palo.md",
         "language": "th",
         "slug": "kai-palo-th",
-        "sha256": "e142b6f884b140d8ee7465691b50150f8521120df9dec6b9dc659bacff0574a6",
-        "semantic_sha256": "fc19ec663042ccd908261c63c08a42378a9a7814bc5e6c8932b5daf2e2f63580"
+        "sha256": "1770202b45304e134c7b841186ab0a6e5c4ca1096c5207ba17f56b765b6d42ab",
+        "semantic_sha256": "49febf83fc4b71bab92941ec8d7c53dd7a423ef50d22094ca2fbbbbca6b467d8"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "Sokerin, paistetun tofun ja makean soijan HH/annos; ei lisukeriisiä."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

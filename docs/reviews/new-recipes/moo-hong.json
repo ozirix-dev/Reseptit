@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "moo-hong",
   "source_path": "reseptit/paaruoat/moo-hong.md",
-  "source_sha256": "1d0eaddf4989127a10af3b28a87bb7f797ca7640a0890d704276cecbbf3f8602",
+  "source_sha256": "0ef8bdadd78dfe0ce3fd05e66544bbb1b68e4e24f9d86abe7ef77ffac0d013e4",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/paaruoat/moo-hong.md",
         "language": "fi",
         "slug": "moo-hong",
-        "sha256": "1d0eaddf4989127a10af3b28a87bb7f797ca7640a0890d704276cecbbf3f8602",
-        "semantic_sha256": "ec4da6c8da80f4b77457f96c4c8afccd67f34b7c8f788fd44c90b531168d9ffe"
+        "sha256": "0ef8bdadd78dfe0ce3fd05e66544bbb1b68e4e24f9d86abe7ef77ffac0d013e4",
+        "semantic_sha256": "fb7c53dd633f3160ffab9abe989c06c4eb0f20fea7cb1a594c43a459a774f98b"
       },
       {
         "path": "kaannokset/en/paaruoat/moo-hong.md",
         "language": "en",
         "slug": "moo-hong-en",
-        "sha256": "f3bee08337cab7ee6b597f34bdff0b711bfe8080f519ef03576567398165b371",
-        "semantic_sha256": "79fb3c3dd6cfffae167b987ab3d7717d78376478b8d9f6c14b129c1e487150b6"
+        "sha256": "a8ad7de050d65c38dc1ab1dfb678641f9fbf1133f26f5a9aeb6675a73d15b199",
+        "semantic_sha256": "c35fd2d2312b41e0577a133363e02b4f77511a76e190b9bf0ef2ca18c03fc602"
       },
       {
         "path": "kaannokset/sv/paaruoat/moo-hong.md",
         "language": "sv",
         "slug": "moo-hong-sv",
-        "sha256": "d40de591e2941abe42963628ab46cd7a11900adf58f9b3554a54fa5ce4d7b6d2",
-        "semantic_sha256": "e29b4294de7f89bb518e367f0dbca8563afc41dd1d0914471c358e46b5716831"
+        "sha256": "d52eb5a272ba55f43654086a81eed1aaa8f9a759b020246eaafea7be57a7c1fc",
+        "semantic_sha256": "60d67e6383323c9194dc5483be9374970e9a53f88bd64369b689897ba7523b27"
       },
       {
         "path": "kaannokset/th/paaruoat/moo-hong.md",
         "language": "th",
         "slug": "moo-hong-th",
-        "sha256": "39710092fc5881d098b9d10415ca446b684b42a6a41f30c0b686fd328e7c6a58",
-        "semantic_sha256": "69fed3b928dd39eece5d218b6a40054b87031f3b7c7e06d8c52872fc539845da"
+        "sha256": "758f4972ae3a1285172eed86a203b20212529df9afc0718b802847373a9b8126",
+        "semantic_sha256": "3a4532221a13d068511fc221abd3c7f143cb03308c130206b6e2f9f71b27ff8d"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "Palmusokerin, valkosipulin ja soijakastikkeen HH/annos; ei lisukeriisiä."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

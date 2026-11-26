@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "pla-rad-prik",
   "source_path": "reseptit/paaruoat/pla-rad-prik.md",
-  "source_sha256": "890286ea7034804de2461377b70cc910a2f2d9ae629e9bb64bde00b022b5bc86",
+  "source_sha256": "37097bb12454ee7202329875d4b81df663fca6ccd66fafe6051fe9fc1b2ff9a1",
   "decision": "approved",
   "reviewed_by": "Chat 2",
   "reviewed_at": "2026-11-26",
@@ -70,29 +70,29 @@
         "path": "reseptit/paaruoat/pla-rad-prik.md",
         "language": "fi",
         "slug": "pla-rad-prik",
-        "sha256": "890286ea7034804de2461377b70cc910a2f2d9ae629e9bb64bde00b022b5bc86",
-        "semantic_sha256": "5ab13da9b6179596adb39e32fcfc76ec24cc2505fd42dcc5303db578fe5214ad"
+        "sha256": "37097bb12454ee7202329875d4b81df663fca6ccd66fafe6051fe9fc1b2ff9a1",
+        "semantic_sha256": "71ce70ec154b9f13a35d4d615b20037d6c7519d5ee55b1bf5069bfed2fdd8c38"
       },
       {
         "path": "kaannokset/en/paaruoat/pla-rad-prik.md",
         "language": "en",
         "slug": "pla-rad-prik-en",
-        "sha256": "c285391287bd4203a0e5d75865d4ba32395fb6be8aa00574ca67c3008372a9c6",
-        "semantic_sha256": "7729ac32a6dd7cd7971966baf3608a0773b9f4c877e96aa2a98bac037e106b30"
+        "sha256": "d5b2f2416a36db2fe8537a391c19a666844ad2245604d0450621d01ba6671aee",
+        "semantic_sha256": "ddb9f33f5f910c40bb9684f662504d9c4622a92e192e5bf416c9f6c8b094eb7d"
       },
       {
         "path": "kaannokset/sv/paaruoat/pla-rad-prik.md",
         "language": "sv",
         "slug": "pla-rad-prik-sv",
-        "sha256": "54216d0db80e0c7001c721fc83f933952e327f9679a14361edf720ea471922e1",
-        "semantic_sha256": "3016f0b392888f52b54ba9c2fbc7e9544314e5390ca16db0382db73867b75b94"
+        "sha256": "f5a814f0f75d980a60191443a5a9b7134e254244ac593406096cc6121ac3105d",
+        "semantic_sha256": "b25e2e8d7f8082cfbd87c4489f69d6a31df9c397a1a333228452d03c0da6c999"
       },
       {
         "path": "kaannokset/th/paaruoat/pla-rad-prik.md",
         "language": "th",
         "slug": "pla-rad-prik-th",
-        "sha256": "26f21dd20671739163255a6406f0fd9ff672b1f319f60c9d085483a4d53acc02",
-        "semantic_sha256": "1535cc2a2561ead03651af7555e6c9e67c3d5cec922bff7d999edb9d2d429ada"
+        "sha256": "d9549fee2153ca2c1f1960063844e7f5ff6ad57dbe72ab626dfcdd041a97aa6e",
+        "semantic_sha256": "91be639e6fed2088fa0c36a896d2d31c29c9492c46c7078eea7b5d6b0b7e8c51"
       }
     ]
   },
@@ -131,5 +131,11 @@
       "status": "unavailable",
       "notes": "35 g palmusokeria, maissitärkkelyksen syöty osuus ja tamarindi; GI/HH-näyttö puuttuu."
     }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
   }
 }

@@ -51,4 +51,4 @@ Mieto kirkas keitto sisältää jauhelihaa, kiinteää tofua ja kiinankaalia.
 
 - Sisältää kalaa ja soijaa; tarkista liemen ja soijan vehnä/selleri. Kiinankaali, jauhelihan grammapaino ja kuullotusöljy ovat toimituksellisia sovituksia; ei kasvisruoka.
 - Vertailulähde: Rachel, <https://rachelcooksthai.com/pork-and-tofu-soup/>
-- Lähdepohjainen toimituksellinen luonnos. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.
+- Lähteisiin perustuva resepti. Ravintoarvot ja GK määrittämättä; Recipavon omaa valmistustestiä ei ole tehty.

@@ -61,4 +61,4 @@ En indonesisk-malaysisk kryddig soppa med kokosmjölk, kyckling, risnudlar och �
 
 - Innehåller ägg. Kontrollera buljong och rostad schalottenlök för allergener, särskilt selleri och vete. Vikterna för nudlar, kyckling, galangal, ingefära, groddar och rostad lök är redaktionella preciseringar av källans ungefärliga mängder. Rätten anges inte vara thailändsk.
 - Referenskälla: Bee Yinn Low, <https://rasamalaysia.com/soto-ayam-recipe/>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GB är inte fastställda; Recipavo har inte provlagat rätten.
+- Recept baserat på den angivna källan. Näringsvärden och GB är inte fastställda; Recipavo har inte provlagat rätten.

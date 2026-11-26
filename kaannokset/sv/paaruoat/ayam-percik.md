@@ -55,4 +55,4 @@ Gurkmejakryddad kyckling ångkokas och färdigställs i ugnen med kryddig kokoss
 
 - Innehåller kräftdjur. Ris ingår inte. 1 kg för fyra lår, 15 g ingefära, 500 ml kokosmjölk och 30 min kylmarinering är redaktionella preciseringar; separat ren serveringssås är en säkerhetsanpassning.
 - Referenskälla: Emily Halim, Nyonya Cooking, <https://www.nyonyacooking.com/recipes/ayam-percik~2JIHfE6OLH>
-- Redaktionellt utkast baserat på källan. Näringsvärden och GB är inte fastställda; Recipavo har inte provlagat rätten.
+- Recept baserat på den angivna källan. Näringsvärden och GB är inte fastställda; Recipavo har inte provlagat rätten.
