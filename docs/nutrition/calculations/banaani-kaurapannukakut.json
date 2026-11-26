@@ -1,0 +1,296 @@
+{
+  "recipeId": "banaani-kaurapannukakut",
+  "sourceHash": "d7f9ea35e49dcb27476c929576ff7ba99a7277ea79e9a566da76b20f0e14f796",
+  "calculatedAt": "2026-11-25",
+  "servings": 3,
+  "scope": "Kolme annosta. Per annos noin kolme pientä pannukakkua. Kaikki paistoöljy lasketaan mukaan rasvan ylärajan varmistamiseksi. Mantelijuoma, kaura, vaniljauute ja osa muista raaka-aineista ovat AFCD-vertailuja. Juoma arvioidaan alkuperäisen vertailureseptin 120 g puolikkaan kupin annosmassalla.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 220,
+      "unit": "g",
+      "item": "kypsää banaania, kuorittu paino",
+      "state": "Banana, cavendish, peeled, raw",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Banana, cavendish, peeled, raw. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F000262-release-3",
+        "name": "Banana, cavendish, peeled, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F000262",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Banana, cavendish, peeled, raw",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 19.9,
+          "polyols": 0,
+          "fibre": 2.2,
+          "protein": 1.4,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "amount": 2,
+      "unit": "kpl",
+      "item": "kananmunaa",
+      "state": "KANANMUNA, KUORETON",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: KANANMUNA, KUORETON. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Fineli 858, KPL_M 55 g kuoretonta munaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "KANANMUNA, KUORETON",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      }
+    },
+    {
+      "amount": 120,
+      "unit": "ml",
+      "item": "makeuttamatonta mantelijuomaa",
+      "state": "Almond beverage, no added sugar, unfortified",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Almond beverage, no added sugar, unfortified. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Valmistuslähde antaa käytetylle puolikkaalle kupille 120 g. Reseptin käytännön mittana 120 ml.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F009824-release-3",
+        "name": "Almond beverage, no added sugar, unfortified",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009824",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Almond beverage, no added sugar, unfortified",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0.5,
+          "protein": 0.5,
+          "fat": 1.4
+        }
+      }
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "vaniljauutetta",
+      "state": "Vanilla bean extract",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Vanilla bean extract. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 4.2,
+      "conversionEvidence": "USDA SR28 02050, https://www.ars.usda.gov/ARSUserFiles/80400525/Data/SR/SR28/reports/sr28fg02.pdf",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F009350-release-3",
+        "name": "Vanilla bean extract",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009350",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Vanilla bean extract",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 12.6,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 0.1,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "amount": 143,
+      "unit": "g",
+      "item": "kaurahiutaleita",
+      "state": "Oats, rolled, uncooked",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Oats, rolled, uncooked. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F006143-release-3",
+        "name": "Oats, rolled, uncooked",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006143",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Oats, rolled, uncooked",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 54.5,
+          "polyols": 0,
+          "fibre": 9.5,
+          "protein": 12.2,
+          "fat": 9.5
+        }
+      }
+    },
+    {
+      "amount": 2,
+      "unit": "tl",
+      "item": "leivinjauhetta",
+      "state": "Baking powder, dry powder",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Baking powder, dry powder. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 5,
+      "conversionEvidence": "Fineli 74, TL 5 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F000247-release-3",
+        "name": "Baking powder, dry powder",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F000247",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Baking powder, dry powder",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 19.8,
+          "polyols": 0,
+          "fibre": 0.4,
+          "protein": 0.8,
+          "fat": 0.3
+        }
+      }
+    },
+    {
+      "amount": 0.5,
+      "unit": "tl",
+      "item": "jauhettua kanelia",
+      "state": "Cinnamon, dried, ground",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Cinnamon, dried, ground. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 2.6,
+      "conversionEvidence": "USDA SR28 02010, https://ods.od.nih.gov/pubs/usdandb/Calcium-Food.pdf",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F002963-release-3",
+        "name": "Cinnamon, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002963",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Cinnamon, dried, ground",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 27.5,
+          "polyols": 0,
+          "fibre": 53.1,
+          "protein": 4,
+          "fat": 1.2
+        }
+      }
+    },
+    {
+      "amount": 0.25,
+      "unit": "tl",
+      "item": "suolaa",
+      "state": "RUOKASUOLA, JODIOITU",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: RUOKASUOLA, JODIOITU. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 6.5,
+      "conversionEvidence": "Fineli 30, TL 6,5 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "RUOKASUOLA, JODIOITU",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 0.63,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "amount": 10,
+      "unit": "ml",
+      "item": "oliiviöljyä paistamiseen",
+      "state": "OLIIVIÖLJY",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: OLIIVIÖLJY. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 0.9,
+      "conversionEvidence": "Fineli 536, DL 90 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-536-release-20",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "OLIIVIÖLJY",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    }
+  ],
+  "batchId": "batch-33311"
+}

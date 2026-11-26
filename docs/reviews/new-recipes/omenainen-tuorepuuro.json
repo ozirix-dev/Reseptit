@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "omenainen-tuorepuuro",
+  "source_path": "reseptit/valipalat/omenainen-tuorepuuro.md",
+  "source_sha256": "601db54b7ee951a2e9cc082f56127635aeab7aa210602b64113b1b0048435c75",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.valio.fi/reseptit/omena-kauratuorepuuro/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/omenainen-tuorepuuro.json",
+  "image_evidence": {
+    "path": "kuvat/valipalat/omenainen-tuorepuuro.webp",
+    "bytes": 124220,
+    "sha256": "3584b8cf2beec3b00d82052e15d43ade5c00dfd3443e611672347c8e99352b56",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/valipalat/omenainen-tuorepuuro.md",
+        "language": "fi",
+        "slug": "omenainen-tuorepuuro",
+        "sha256": "601db54b7ee951a2e9cc082f56127635aeab7aa210602b64113b1b0048435c75",
+        "semantic_sha256": "d5cefe33566e9faec6509a49d5c75e5443aedfcadfeb29dac17a905d81d5565d"
+      },
+      {
+        "path": "kaannokset/en/valipalat/omenainen-tuorepuuro.md",
+        "language": "en",
+        "slug": "omenainen-tuorepuuro-en",
+        "sha256": "2f89caeb894d34c9a2284f33de2e121cdc57ebf8ca434ef617ce6cc09d4ef1b3",
+        "semantic_sha256": "13cb82fa2a6891d9ff9a8ff224f8e6ff4838b4f4dc66abbcf6a4a0a9038f1795"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/omenainen-tuorepuuro.md",
+        "language": "sv",
+        "slug": "omenainen-tuorepuuro-sv",
+        "sha256": "b9fc816600d158bc5d63fc9387dfcd9db546eebac4bbe0965ce4569067306619",
+        "semantic_sha256": "cda041c884076fbeb050ccf80e4e64af4987336ca46777552cfb8f5371a2cba4"
+      },
+      {
+        "path": "kaannokset/th/valipalat/omenainen-tuorepuuro.md",
+        "language": "th",
+        "slug": "omenainen-tuorepuuro-th",
+        "sha256": "6a5558af7fa0e51e853d349873cf60e9af0446af5b878fc5730ea9d881e1a898",
+        "semantic_sha256": "3aec708e05b14e1968bad9ab8c083f2b71ba87d1734ec7082a2fe598fcd05271"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Jääkaapissa valmistuva lusikoitava puuro eroaa kuumasta puurosta ja #1005:n omena-kaurapatukoista. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 3 ja kokonaisaika 135 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Reseptin annosmäärän mukainen pelkkä tuorepuuro, ilman lisukkeita. Kuorellinen kotimainen omena siemenkodattomana. Kaurajuoma koostumustietokannan maustamattomana tuotekeskiarvona. Kypsentämättömät AFCD-kaurahiutaleet ja kuivat mausteet vertailutuotteina."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

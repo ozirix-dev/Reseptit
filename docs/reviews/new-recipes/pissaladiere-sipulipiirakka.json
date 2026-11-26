@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "pissaladiere-sipulipiirakka",
+  "source_path": "reseptit/leivonnaiset/pissaladiere-sipulipiirakka.md",
+  "source_sha256": "313b0a68372a429164c45cd5f55371165199a8e146c72342c8d922921409346c",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.bbcgoodfood.com/recipes/pissaladiere"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/pissaladiere-sipulipiirakka.json",
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/pissaladiere-sipulipiirakka.webp",
+    "bytes": 145608,
+    "sha256": "a18b386e7c1abb6ac171845f17f7ee49512f0162bae43cf13ef77cec2d151899",
+    "width": 960,
+    "height": 640,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/pissaladiere-sipulipiirakka.md",
+        "language": "fi",
+        "slug": "pissaladiere-sipulipiirakka",
+        "sha256": "313b0a68372a429164c45cd5f55371165199a8e146c72342c8d922921409346c",
+        "semantic_sha256": "297ded3d4602d5b174587aefc420ac77f703121562a988c0a2d38797ce63ae10"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/pissaladiere-sipulipiirakka.md",
+        "language": "en",
+        "slug": "pissaladiere-sipulipiirakka-en",
+        "sha256": "fa679bccefc55a4589652069ff9fa514bbc84cdc87c6c69fed7aefb163d02474",
+        "semantic_sha256": "997744fbc3322adac3dabf61b7d5be453859f0142e0bcd001945bbcf018e9a19"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/pissaladiere-sipulipiirakka.md",
+        "language": "sv",
+        "slug": "pissaladiere-sipulipiirakka-sv",
+        "sha256": "f307a92e8c50826cdf021eab194474d6de8c4cc1a38f4e4eb0a55d5f2ebb428b",
+        "semantic_sha256": "572b8aded0d15eeb498f1a7af44e45095855c33c33c5c97556317c4fda86a22a"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/pissaladiere-sipulipiirakka.md",
+        "language": "th",
+        "slug": "pissaladiere-sipulipiirakka-th",
+        "sha256": "656c001314d2492dc2949612d3afc24fee01e080023b106506762123f06d919d",
+        "semantic_sha256": "812789572768a900202c8034e136dd747472c49e46e52a0db4492cd98aa9fb42"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Hiivapohjainen sipulipiirakka sardelleilla ja oliiveilla eroaa #1005:n purjo-juustopiirakasta sekä focacciasta. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 8 ja kokonaisaika 140 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Sardellin ja oliivin valutettujen tuotteiden täsmärivit ja vuoan öljyn jäämä puuttuvat."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

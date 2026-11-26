@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perinteiset-joulutortut",
+  "source_path": "reseptit/leivonnaiset/perinteiset-joulutortut.md",
+  "source_sha256": "ca301a34f25b0f2aa1dafc32789c17c3a583ad9627bd3ca21491d17dad67cede",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/joulutortut/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/perinteiset-joulutortut.json",
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/perinteiset-joulutortut.webp",
+    "bytes": 117900,
+    "sha256": "3a50177cb45387c52dba41149700b496acd7538f082b4144e71c6a010048f605",
+    "width": 960,
+    "height": 640,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/perinteiset-joulutortut.md",
+        "language": "fi",
+        "slug": "perinteiset-joulutortut",
+        "sha256": "ca301a34f25b0f2aa1dafc32789c17c3a583ad9627bd3ca21491d17dad67cede",
+        "semantic_sha256": "b0ebeb9bc29e9f511f0d5096905ab6bb66f4ed18d70787ebc8345245cb963e69"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/perinteiset-joulutortut.md",
+        "language": "en",
+        "slug": "perinteiset-joulutortut-en",
+        "sha256": "7364a09f40112f237aa48eb73645348edad7250680175829a7b70c28113cf29e",
+        "semantic_sha256": "b9aff5c507f25c474a86bfc78c5b7133f18b03cf9ef7b607f6291d0d6d61c518"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/perinteiset-joulutortut.md",
+        "language": "sv",
+        "slug": "perinteiset-joulutortut-sv",
+        "sha256": "0cd4dc4e278adb276fd073aab0cd022265082b27a7f819e8022910bc5c0222b3",
+        "semantic_sha256": "6494b3295157eefe0b87ffde2c9da7be9521d5c59568ad9d6c1932f870bf7284"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/perinteiset-joulutortut.md",
+        "language": "th",
+        "slug": "perinteiset-joulutortut-th",
+        "sha256": "0e09a70c6de1e52fa63272354f510110eea4f74aec835d530e2f3038e151765a",
+        "semantic_sha256": "5be3ac78e9a9b8b7a41fb1be6001169305a80dc471aad92a5351b380d562fdc0"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Vehnävoitaikinasta viilletty tähtitorttu eroaa vähähiilihydraattisesta joulutortusta. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 10 ja kokonaisaika 45 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kymmenen tähtitorttua. AFCD:n australialainen raaka kaupallinen voitaikina on vertailutuote. Laskenta olettaa, että koko marmeladi ja kaikki voitelumuna käytetään. Kuorettoman munan 55 g on rasvan ja proteiinin osalta munasta tuleva yläraja."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "recipeId": "perinteiset-joulutortut",
+  "sourceHash": "daa5d35ba5893c5f643a6878a62443ae49f3fd795e1e4b6c6d6f5bdb45eebc9f",
+  "calculatedAt": "2026-11-25",
+  "servings": 10,
+  "scope": "Kymmenen tähtitorttua. AFCD:n australialainen raaka kaupallinen voitaikina on vertailutuote. Laskenta olettaa, että koko marmeladi ja kaikki voitelumuna käytetään. Kuorettoman munan 55 g on rasvan ja proteiinin osalta munasta tuleva yläraja.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 500,
+      "unit": "g",
+      "item": "pakastettua voitaikinaa levyinä",
+      "state": "Pastry, puff, with butter, commercial, raw",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Pastry, puff, with butter, commercial, raw. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F006505-release-3",
+        "name": "Pastry, puff, with butter, commercial, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006505",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Pastry, puff, with butter, commercial, raw",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 32.9,
+          "polyols": 0,
+          "fibre": 3.4,
+          "protein": 5.5,
+          "fat": 19
+        }
+      }
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "paistonkestävää luumumarmeladia",
+      "state": "LUUMUMARMELADI, LUUMUHILLO",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: LUUMUMARMELADI, LUUMUHILLO. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-32744-release-20",
+        "name": "LUUMUMARMELADI, LUUMUHILLO",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/32744",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "LUUMUMARMELADI, LUUMUHILLO",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 46.066,
+          "polyols": 0,
+          "fibre": 1.342,
+          "protein": 0.59,
+          "fat": 0.237
+        }
+      }
+    },
+    {
+      "amount": 1,
+      "unit": "kpl",
+      "item": "kananmuna voiteluun",
+      "state": "KANANMUNA, KUORETON",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: KANANMUNA, KUORETON. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 55,
+      "conversionEvidence": "Fineli 858, KPL_M 55 g kuoretonta munaa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "KANANMUNA, KUORETON",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      }
+    }
+  ],
+  "batchId": "batch-33311"
+}

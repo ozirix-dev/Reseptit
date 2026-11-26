@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "recipe_id": "gai-pad-med-mamuang",
+  "source_path": "reseptit/paaruoat/gai-pad-med-mamuang.md",
+  "source_sha256": "bc7e16dbefd6f7030b55ccd3a142841d0ed984230182107aa015c228f876cb39",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.marionskitchen.com/thai-cashew-chicken/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/gai-pad-med-mamuang.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/gai-pad-med-mamuang.webp",
+    "bytes": 328862,
+    "sha256": "e45b3b562583b465508fed337005ac952a8e9cb5699aea8898f5beeba1237d73",
+    "width": 1672,
+    "height": 941,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/gai-pad-med-mamuang.md",
+        "sha256": "6210a813753ae9b89fa883afc0c1b1763761cb610e85ec142113e566470fef0a"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/gai-pad-med-mamuang.md",
+        "sha256": "7d5567e03b89c0b79ead27f51b9e405a43967d416ddc5b19cd833de8bf9cf3b2"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/gai-pad-med-mamuang.md",
+        "sha256": "ee1490137dde9c08c7e9fa9b245f9ed2e8144639ee1385b6e6c0f53462568071"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/gai-pad-med-mamuang.md",
+        "sha256": "c8fc57afc6fca2c5aed28ee8e8ec343217cdbc3a1eb785988aea37be2489cc72"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "4e9780b19e7a1b1d4999d465ffc488d3a870e192342dcfa71c6e66e78bac4877"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/gai-pad-med-mamuang.md",
+        "language": "fi",
+        "slug": "gai-pad-med-mamuang",
+        "sha256": "bc7e16dbefd6f7030b55ccd3a142841d0ed984230182107aa015c228f876cb39",
+        "semantic_sha256": "4be8779ffcb3853e73e458c53198010af5b36aa08c5f324fd74c452b6765fb19"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/gai-pad-med-mamuang.md",
+        "language": "en",
+        "slug": "gai-pad-med-mamuang-en",
+        "sha256": "0c624b86c68acc8e974d8bc519e7dfcbe6a7b5655f567d0bc270fca891913911",
+        "semantic_sha256": "45f49f74d8b4872b2e69fa9cb0b226a23c35fb4be0778d708197983e3ffc4755"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/gai-pad-med-mamuang.md",
+        "language": "sv",
+        "slug": "gai-pad-med-mamuang-sv",
+        "sha256": "0bdb9126c19f974c4863cdd15de8c829f0b41fc9f4f332ce21f7c0baba0812ba",
+        "semantic_sha256": "4873a1284a1085aff4188c0bee384b9ffde3af516f80ff16c81ad494a8580a9c"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/gai-pad-med-mamuang.md",
+        "language": "th",
+        "slug": "gai-pad-med-mamuang-th",
+        "sha256": "e36bfc8e245d5d2c86b80074f6ffa1637562dc54e2a49fcb8e196627c9e4e62f",
+        "semantic_sha256": "aadab63e3116c5de686a325bbe542b830fc190e2a559ef313537efb9a1d5dceb"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja aika 40 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Paistoöljyn imeytymä, maissitärkkelyksen tarttuma, cashew-määrän ml→g ja soijatuotteiden koostumus."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Paneroinnin todellinen tärkkelysmassa, cashew, sokeri ja soijakastikkeet; ei validoitua GI/HH-annosta."
+    }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "ruotsalaiset-kaurateeleivat",
+  "source_path": "reseptit/leivonnaiset/ruotsalaiset-kaurateeleivat.md",
+  "source_sha256": "f2231821c3817c7c645653f75be5efc40cf4d0d9e874587d0f637fa578d2c9d8",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.arla.se/recept/tekakor-med-havregryn/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/ruotsalaiset-kaurateeleivat.json",
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/ruotsalaiset-kaurateeleivat.webp",
+    "bytes": 98734,
+    "sha256": "752b80db46f2765d44af206eb2eb716378d0156b5f7e52bc4382d3c39cbc0338",
+    "width": 960,
+    "height": 640,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/ruotsalaiset-kaurateeleivat.md",
+        "language": "fi",
+        "slug": "ruotsalaiset-kaurateeleivat",
+        "sha256": "f2231821c3817c7c645653f75be5efc40cf4d0d9e874587d0f637fa578d2c9d8",
+        "semantic_sha256": "a73fbf185a46c4f3fcff2826cf8867de44fe5968ce404c3eeddc9f9aa7a50ef6"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/ruotsalaiset-kaurateeleivat.md",
+        "language": "en",
+        "slug": "ruotsalaiset-kaurateeleivat-en",
+        "sha256": "149dd41bcce906d6013cd5d9c293eea33e5ee2a666f59c1d3e42ce8bc968b0f9",
+        "semantic_sha256": "501294ba9737ed61030b9f858c0334c55bd173e4231123cf0eaa60a6b0f5acc8"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/ruotsalaiset-kaurateeleivat.md",
+        "language": "sv",
+        "slug": "ruotsalaiset-kaurateeleivat-sv",
+        "sha256": "1ab58c944387876ff558c2970a4b5933aa1b69adc7b15943b20841ce84a808f9",
+        "semantic_sha256": "7f96dc53bfa8b3ff96eacca308ad2158f45eb0d92fc33aaf16fa4f9847afb4ea"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/ruotsalaiset-kaurateeleivat.md",
+        "language": "th",
+        "slug": "ruotsalaiset-kaurateeleivat-th",
+        "sha256": "8578c4d7a4ab2a865e7b22d68c20d505df0fc50390cd3b6eb9cdb88345d32db0",
+        "semantic_sha256": "4107516a0d50860f751fa5354477c92975c8fa91e2efcdb34d3091e8e67d7572"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Matalat pyöreät kauraleipäset eroavat #1005:n kauravuokaleivästä. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 16 ja kokonaisaika 120 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kauran ravintolähde, paistossa tarttuvat pintahiutaleet ja siirapin tuotelähde tarvitsevat vahvistuksen."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}
