@@ -61,9 +61,10 @@ Suolainen pekoni ja hapokkaat omenat pehmenevät samassa pannussa punasipulin ja
 
 ## Säilytys ja turvallisuus
 
-Ruisleipä sisältää gluteenia. Kypsennä pekoni pakkauksen ohjeen mukaan. Pidä raa’an pekonin välineet erillään leivistä ja valmiista ruoasta. Jäähdytä tähteet nopeasti ja säilytä jääkaapissa.
+Ruisleipä sisältää gluteenia. Kypsennä raaka pekoni kauttaaltaan vähintään 70 °C:seen ja noudata pakkauksen mahdollisia tiukempia kypsennysohjeita. Pidä raa’an pekonin välineet erillään leivistä ja valmiista ruoasta. Jäähdytä tähteet nopeasti ja säilytä jääkaapissa.
 
 ## Lähteet
 
 - <https://www.arla.dk/opskrifter/ableflask/>
 - <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/>
+- <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/>

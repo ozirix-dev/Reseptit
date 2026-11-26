@@ -53,7 +53,7 @@ image:
 
 Salty bacon and tart apples soften together with red onion and thyme. Spoon the mixture over rye bread.
 
-## Instructions
+## Preparation
 
 1. Peel the onions and cut them into wedges. Wash and core the apples, then cut them into wedges without peeling.
 2. Put the bacon in a cold frying pan. Bring it up to a fairly high heat for about 2 minutes. Turn the heat down to medium and fry, stirring, for about 5 minutes until nearly crisp.
@@ -62,9 +62,10 @@ Salty bacon and tart apples soften together with red onion and thyme. Spoon the 
 
 ## Storage and safety
 
-Rye bread contains gluten. Cook the bacon according to the package directions. Keep utensils used on raw bacon away from the bread and cooked food. Cool leftovers promptly and refrigerate.
+Rye bread contains gluten. Cook raw bacon thoroughly to at least 70 °C throughout and follow any stricter directions on the package. Keep utensils used on raw bacon away from the bread and cooked food. Cool leftovers promptly and refrigerate.
 
 ## Sources
 
 - <https://www.arla.dk/opskrifter/ableflask/>
 - <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/>
+- <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/>

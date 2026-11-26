@@ -74,10 +74,11 @@ Ohuen taikinakannen alla on mangoldia, pinaattia ja parmesaania. Tarjoa suorakai
 
 ## Säilytys ja turvallisuus
 
-Sisältää vehnää ja maitoa. Kypsennä pancetta pakkauksen ohjeen mukaan. Jäähdytä tähteet nopeasti ja säilytä jääkaapissa.
+Sisältää vehnää ja maitoa. Kypsennä raaka pancetta kauttaaltaan vähintään 70 °C:seen ja noudata pakkauksen mahdollisia tiukempia kypsennysohjeita. Pese raa’an pancettan käsittelyssä käytetyt välineet ennen kuin käytät niitä kypsään täytteeseen. Jäähdytä tähteet nopeasti ja säilytä jääkaapissa.
 
 ## Lähteet
 
 - <https://blog.giallozafferano.it/cuochinprogress/erbazzone-reggiano/>
 - <https://www.reggioemiliawelcome.it/it/enogastronomia/dalle-cucine-reggiane/erbazzone-reggiano>
 - <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/>
+- <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/>

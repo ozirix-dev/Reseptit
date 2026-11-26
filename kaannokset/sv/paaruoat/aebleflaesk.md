@@ -62,9 +62,10 @@ Salt bacon och syrliga äpplen får puttra med rödlök och timjan. Servera blan
 
 ## Förvaring och säkerhet
 
-Rågbröd innehåller gluten. Tillaga baconet enligt anvisningarna på förpackningen. Håll redskap som varit i kontakt med rått bacon borta från bröd och färdig mat. Kyl snabbt ned rester och förvara dem i kylskåp.
+Rågbröd innehåller gluten. Tillaga rått bacon så att det når minst 70 °C rakt igenom och följ eventuella strängare anvisningar på förpackningen. Håll redskap som varit i kontakt med rått bacon borta från bröd och färdig mat. Kyl snabbt ned rester och förvara dem i kylskåp.
 
 ## Källor
 
 - <https://www.arla.dk/opskrifter/ableflask/>
 - <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/>
+- <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/>

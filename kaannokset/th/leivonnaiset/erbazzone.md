@@ -75,10 +75,11 @@ image:
 
 ## การเก็บรักษาและความปลอดภัย
 
-มีข้าวสาลีและนม ปรุงแพนเชตตาตามคำแนะนำบนบรรจุภัณฑ์ ทำให้อาหารเหลือเย็นลงอย่างรวดเร็วแล้วแช่ตู้เย็น
+มีข้าวสาลีและนม ปรุงแพนเชตตาดิบให้สุกทั่วถึงอย่างน้อย 70 °C และปฏิบัติตามคำแนะนำบนบรรจุภัณฑ์หากกำหนดให้ใช้ความร้อนสูงกว่า ล้างอุปกรณ์ที่สัมผัสแพนเชตตาดิบก่อนใช้กับไส้ที่ปรุงสุกแล้ว ทำให้อาหารเหลือเย็นลงอย่างรวดเร็วแล้วแช่ตู้เย็น
 
 ## แหล่งอ้างอิง
 
 - <https://blog.giallozafferano.it/cuochinprogress/erbazzone-reggiano/>
 - <https://www.reggioemiliawelcome.it/it/enogastronomia/dalle-cucine-reggiane/erbazzone-reggiano>
 - <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/>
+- <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/>

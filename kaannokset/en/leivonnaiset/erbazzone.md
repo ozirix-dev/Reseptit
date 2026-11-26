@@ -65,7 +65,7 @@ image:
 
 A thin pastry lid covers a filling of chard, spinach and Parmesan. Serve in rectangular pieces.
 
-## Instructions
+## Preparation
 
 1. Knead the flour, 30 g of lard, 3 g of salt and the lukewarm water to form a smooth dough. Cover and rest for 30 minutes.
 2. Rinse and drain the spinach and chard. Remove the toughest chard ribs and roughly chop the leaves. Slice the spring onions and mince the garlic.
@@ -75,10 +75,11 @@ A thin pastry lid covers a filling of chard, spinach and Parmesan. Serve in rect
 
 ## Storage and safety
 
-Contains wheat and milk. Cook the pancetta according to the package directions. Cool leftovers promptly and refrigerate.
+Contains wheat and milk. Cook raw pancetta thoroughly to at least 70 °C throughout and follow any stricter directions on the package. Wash utensils that touched raw pancetta before using them on the cooked filling. Cool leftovers promptly and refrigerate.
 
 ## Sources
 
 - <https://blog.giallozafferano.it/cuochinprogress/erbazzone-reggiano/>
 - <https://www.reggioemiliawelcome.it/it/enogastronomia/dalle-cucine-reggiane/erbazzone-reggiano>
 - <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/>
+- <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/>

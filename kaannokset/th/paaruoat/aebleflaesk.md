@@ -62,9 +62,10 @@ image:
 
 ## การเก็บรักษาและความปลอดภัย
 
-ขนมปังไรย์มีกลูเตน ปรุงเบคอนตามคำแนะนำบนบรรจุภัณฑ์ แยกอุปกรณ์ที่สัมผัสเบคอนดิบออกจากขนมปังและอาหารที่ปรุงแล้ว ทำให้อาหารเหลือเย็นลงอย่างรวดเร็วแล้วแช่ตู้เย็น
+ขนมปังไรย์มีกลูเตน ปรุงเบคอนดิบให้สุกทั่วถึงอย่างน้อย 70 °C และปฏิบัติตามคำแนะนำบนบรรจุภัณฑ์หากกำหนดให้ใช้ความร้อนสูงกว่า แยกอุปกรณ์ที่สัมผัสเบคอนดิบออกจากขนมปังและอาหารที่ปรุงแล้ว ทำให้อาหารเหลือเย็นลงอย่างรวดเร็วแล้วแช่ตู้เย็น
 
 ## แหล่งอ้างอิง
 
 - <https://www.arla.dk/opskrifter/ableflask/>
 - <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/>
+- <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/>

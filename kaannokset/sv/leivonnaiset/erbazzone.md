@@ -75,10 +75,11 @@ Ett tunt deglock täcker fyllningen av mangold, spenat och parmesan. Servera i r
 
 ## Förvaring och säkerhet
 
-Innehåller vete och mjölk. Tillaga pancettan enligt förpackningen. Kyl snabbt ned rester och förvara dem i kylskåp.
+Innehåller vete och mjölk. Tillaga rå pancetta så att den når minst 70 °C rakt igenom och följ eventuella strängare anvisningar på förpackningen. Diska redskap som varit i kontakt med rå pancetta innan du använder dem till den tillagade fyllningen. Kyl snabbt ned rester och förvara dem i kylskåp.
 
 ## Källor
 
 - <https://blog.giallozafferano.it/cuochinprogress/erbazzone-reggiano/>
 - <https://www.reggioemiliawelcome.it/it/enogastronomia/dalle-cucine-reggiane/erbazzone-reggiano>
 - <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/lampotila/tietoa-elintarvikkeiden-sailytysajoista/>
+- <https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/>
