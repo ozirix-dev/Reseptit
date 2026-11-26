@@ -6,6 +6,94 @@ import { fileURLToPath } from "node:url";
 
 import { browserSuites, previewBrowserTest } from "./run-browser-suites.mjs";
 
+// Only the established, append-only four-language recipe batch is eligible for
+// narrower browser checks. Preserve all unit/domain checks and fail closed to
+// the ordinary full plan when any path, status or old record differs.
+const batchManifests = [
+  "assets/images.tracked-overlays.json",
+  "docs/nutrition/new-public-gk-pending-sources.json",
+  "meta/kaannokset/published-translation-pairs.json",
+  "meta/kaannokset/codex-review-evidence.json"
+];
+
+function recipeBatchPaths(paths) {
+  const fiPattern = /^reseptit\/(aamupalat|valipalat|alkuruoat|paaruoat|jalkiruoat|leivonnaiset)\/([a-z0-9]+(?:-[a-z0-9]+)*)\.md$/;
+  const sources = paths.map(file => fiPattern.exec(file)).filter(Boolean);
+  const batches = paths.filter(file => /^docs\/nutrition\/batches\/batch-[0-9]+\.json$/.test(file));
+  if (!sources.length || batches.length !== 1) return null;
+  const ids = new Set(sources.map(match => match[2]));
+  if (ids.size !== sources.length) return null;
+  const images = new Set();
+  const reviews = new Set();
+  const expected = new Set([...batchManifests, ...batches]);
+  for (const [, category, id] of sources) {
+    const image = `${category}/${id}.webp`;
+    images.add(image);
+    expected.add(`reseptit/${category}/${id}.md`);
+    expected.add(`kuvat/${image}`);
+    expected.add(`docs/nutrition/calculations/${id}.json`);
+    expected.add(`docs/reviews/new-recipes/${id}.json`);
+    for (const locale of ["en", "sv", "th"]) {
+      expected.add(`kaannokset/${locale}/${category}/${id}.md`);
+      reviews.add(`${id}:${locale}`);
+    }
+  }
+  if (paths.length !== expected.size || new Set(paths).size !== paths.length ||
+      paths.some(file => !expected.has(file))) return null;
+  return { ids, images, reviews };
+}
+
+function isRecord(value) {
+  return value !== null && typeof value === "object" && !Array.isArray(value);
+}
+
+function appendedKeys(before, after, expected) {
+  if (!isRecord(before) || !isRecord(after)) return false;
+  const previous = Object.keys(before);
+  if (previous.some(key => !Object.hasOwn(after, key) ||
+      JSON.stringify(before[key]) !== JSON.stringify(after[key]))) return false;
+  const added = Object.keys(after).filter(key => !Object.hasOwn(before, key));
+  return added.length === expected.size && added.every(key => expected.has(key));
+}
+
+function appendedRows(before, after, field, key, expected) {
+  if (!isRecord(before) || !isRecord(after) ||
+      !Array.isArray(before[field]) || !Array.isArray(after[field])) return false;
+  const metadata = value => Object.fromEntries(Object.entries(value).filter(([name]) => name !== field));
+  if (JSON.stringify(metadata(before)) !== JSON.stringify(metadata(after))) return false;
+  const map = rows => {
+    if (rows.some(row => !isRecord(row) || typeof row[key] !== "string" || !row[key])) return null;
+    if (new Set(rows.map(row => row[key])).size !== rows.length) return null;
+    return Object.fromEntries(rows.map(row => [row[key], row]));
+  };
+  return appendedKeys(map(before[field]), map(after[field]), expected);
+}
+
+function isAppendOnlyRecipeBatch(changes, before, after) {
+  const batch = recipeBatchPaths(changes.map(change => change.path));
+  if (!batch || changes.some(change =>
+    change.status !== (batchManifests.includes(change.path) ? "M" : "A"))) return false;
+  const [overlays, pending, pairs, reviews] = batchManifests;
+  return appendedRows(before[overlays], after[overlays], "files", "path", batch.images) &&
+    appendedKeys(before[pending], after[pending], batch.ids) &&
+    appendedRows(before[pairs], after[pairs], "sources", "recipe_id", batch.ids) &&
+    appendedKeys(before[reviews], after[reviews], batch.reviews);
+}
+
+function inspectAppendOnlyRecipeBatch(base, head, paths) {
+  if (!recipeBatchPaths(paths)) return false;
+  try {
+    const fields = execFileSync("git", ["diff", "--name-status", "-z", "--no-renames", "--diff-filter=ACDMRT", base, head], { encoding: "utf8" }).split("\0");
+    if (fields.pop() !== "" || fields.length % 2 !== 0) return false;
+    const changes = [];
+    for (let i = 0; i < fields.length; i += 2) changes.push({ status: fields[i], path: fields[i + 1] });
+    if (changes.length !== paths.length || changes.some(change => !paths.includes(change.path))) return false;
+    const read = revision => Object.fromEntries(batchManifests.map(file => [file,
+      JSON.parse(execFileSync("git", ["show", revision + ":" + file], { encoding: "utf8", maxBuffer: 16 * 1024 * 1024 }))]));
+    return isAppendOnlyRecipeBatch(changes, read(base), read(head));
+  } catch { return false; }
+}
+
 const glycemicDataFiles = new Set([
   "docs/nutrition/glycemic-index-records.json",
   "docs/nutrition/glycemic-load-pilot-input.json",
@@ -68,6 +156,7 @@ function addBrowserSuite(plan, suite) {
 function fullPlan(paths) {
   return {
     full: true,
+    wideTests: true,
     runContent: paths.some((file) =>
       (/^(?:reseptit|kaannokset)\/.+\.md$/i.test(file) && !file.includes("/_mallipohjat/")) ||
       /^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/i.test(file)),
@@ -86,14 +175,18 @@ function fullPlan(paths) {
   };
 }
 
-function classifyPaths(paths, { forceFull = false, classificationFailed = false, cacheIgnoreOnly = false } = {}) {
+function classifyPaths(paths, { forceFull = false, classificationFailed = false, cacheIgnoreOnly = false, appendOnlyRecipeBatch = false } = {}) {
   const valid = Array.isArray(paths) && paths.every(value => typeof value === "string" && value.trim());
   const normalized = valid ? paths.map((value) => value.replaceAll("\\", "/")) : [];
   const fallback = () => fullPlan(normalized);
   if (!valid || forceFull || classificationFailed || paths.length === 0) return fallback();
+  if (appendOnlyRecipeBatch && recipeBatchPaths(normalized)) {
+    return { ...fullPlan(normalized), full: false, browserSuites: ["smoke", "routes", "images"] };
+  }
 
   const plan = {
     full: false,
+    wideTests: false,
     runContent: false,
     runNutrition: false,
     runGlycemic: false,
@@ -334,7 +427,8 @@ function getChangedPaths() {
   if (!base || /^0+$/.test(base)) throw new Error("Base revision is unavailable.");
   const paths = execFileSync("git", ["diff", "--name-only", "-z", "--no-renames", "--diff-filter=ACDMRT", base, head], { encoding: "utf8" })
     .split("\0").filter(Boolean);
-  return { paths, cacheIgnoreOnly: paths.includes(".gitignore") && isCacheIgnoreOnly(base, head) };
+  return { paths, cacheIgnoreOnly: paths.includes(".gitignore") && isCacheIgnoreOnly(base, head),
+    appendOnlyRecipeBatch: inspectAppendOnlyRecipeBatch(base, head, paths) };
 }
 
 function isCacheIgnoreOnly(base, head) {
@@ -379,6 +473,7 @@ function writeGithubOutputs(plan, paths, classificationError) {
     ...Object.entries(plan).filter(([key]) => key !== "unitTests" && key !== "browserSuites").map(([key, value]) =>
       `${{
         full: "full",
+        wideTests: "wide_tests",
         runContent: "run_content",
         runNutrition: "run_nutrition",
         runGlycemic: "run_glycemic",
@@ -407,9 +502,10 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   let paths = [];
   let classificationError = null;
   let cacheIgnoreOnly = false;
+  let appendOnlyRecipeBatch = false;
   try {
     if (process.env.CHANGED_PATHS_JSON) paths = JSON.parse(process.env.CHANGED_PATHS_JSON);
-    else ({ paths, cacheIgnoreOnly } = getChangedPaths());
+    else ({ paths, cacheIgnoreOnly, appendOnlyRecipeBatch } = getChangedPaths());
     if (!Array.isArray(paths) || paths.some(file => typeof file !== "string" || !file.trim())) throw new Error("Changed paths must be non-empty strings.");
   } catch (error) {
     classificationError = error instanceof Error ? error.message : String(error);
@@ -421,10 +517,11 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     forceFull: process.env.FORCE_FULL === "true" || deletedTest,
     classificationFailed: Boolean(classificationError),
     cacheIgnoreOnly,
+    appendOnlyRecipeBatch,
   }), process.env.EVENT_NAME);
   writeGithubOutputs(plan, paths, classificationError);
   if (classificationError) console.warn(`Path classification failed; full checks selected: ${classificationError}`);
   console.log(JSON.stringify({ ...plan, unitTests: Array.isArray(plan.unitTests) ? plan.unitTests : ["all unit tests"], changedPaths: paths.length }, null, 2));
 }
 
-export { applyEventPolicy, classifyPaths, shouldRunFiEditorialAudit };
+export { applyEventPolicy, classifyPaths, shouldRunFiEditorialAudit, isAppendOnlyRecipeBatch };
