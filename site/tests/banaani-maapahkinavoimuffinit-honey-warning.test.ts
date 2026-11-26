@@ -32,6 +32,13 @@ const warnings = {
   th: "- ห้ามใช้น้ำผึ้งในอาหารสำหรับเด็กอายุต่ำกว่า 12 เดือน และห้ามให้กินน้ำผึ้งโดยตรง ([สำนักงานอาหารฟินแลนด์](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/))",
 } as const;
 
+const warningText = {
+  fi: "- Hunajaa ei saa käyttää alle 1-vuotiaiden ruoissa eikä antaa sellaisenaan",
+  en: "- Do not use honey in food for children under 12 months or give it to them on its own",
+  sv: "- Använd inte honung i mat för barn under 12 månader och ge den inte heller som den är",
+  th: "- ห้ามใช้น้ำผึ้งในอาหารสำหรับเด็กอายุต่ำกว่า 12 เดือน และห้ามให้กินน้ำผึ้งโดยตรง",
+} as const;
+
 function gitBlobSha(text: string): string {
   return createHash("sha1").update("blob " + Buffer.byteLength(text) + "\0" + text).digest("hex");
 }
@@ -64,7 +71,8 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
     const matches = siteContent.recipes.filter(recipe => recipe.recipeId === recipeId && recipe.locale === locale);
     assert.equal(matches.length, 1, "exactly one published locale route");
     const visible = matches[0];
-    assert.ok(visible.notesHtml.includes(warnings[locale]), "the public note contains the under-12-month restriction");
+    assert.ok(visible.notesHtml.includes(warningText[locale]), "the public note contains the under-12-month restriction");
+    assert.ok(visible.notesHtml.includes("https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/"), "the public warning links to the Finnish Food Authority");
     assert.equal(visible.servings, source.servings);
     assert.equal(visible.timeTotalMin, source.time_total_min);
     assert.equal(visible.ingredients.length, source.ingredients.length);
