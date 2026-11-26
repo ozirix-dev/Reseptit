@@ -42,7 +42,7 @@ ingredients:
     unit: "tsk"
     item: "hela vitpepparkorn"
   - amount: 1
-    unit: "knippe"
+    unit: "knippen"
     item: "knippe dill, stjälkar och blad för sig"
   - amount: 2.5
     unit: "msk"

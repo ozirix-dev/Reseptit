@@ -27,10 +27,10 @@ ingredients:
     unit: "กรัม"
     item: "มันฝรั่งเนื้อแน่น"
   - amount: 250
-    unit: "มล."
+    unit: "ml"
     item: "แป้งสาลี"
   - amount: 500
-    unit: "มล."
+    unit: "ml"
     item: "นมสดชนิดไขมันเต็ม"
   - amount: 1
     unit: "ช้อนชา"

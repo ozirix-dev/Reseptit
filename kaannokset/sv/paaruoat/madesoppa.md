@@ -57,7 +57,7 @@ ingredients:
     unit: "ml"
     item: "vispgrädde"
   - amount: 1
-    unit: "knippe"
+    unit: "knippen"
     item: "knippe dill"
 ---
 

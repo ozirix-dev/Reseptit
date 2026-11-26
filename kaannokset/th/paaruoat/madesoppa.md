@@ -27,7 +27,7 @@ ingredients:
     unit: "กรัม"
     item: "ปลาบอเบิตลอกหนังและควักไส้แล้ว"
   - amount: 1000
-    unit: "มล."
+    unit: "ml"
     item: "น้ำ"
   - amount: 1.5
     unit: "ช้อนชา"
@@ -54,7 +54,7 @@ ingredients:
     unit: "ช้อนโต๊ะ"
     item: "เนย"
   - amount: 150
-    unit: "มล."
+    unit: "ml"
     item: "วิปปิงครีม"
   - amount: 1
     unit: "กำ"

@@ -33,7 +33,7 @@ ingredients:
     unit: "ช้อนโต๊ะ"
     item: "แป้งสาลี"
   - amount: 400
-    unit: "มล."
+    unit: "ml"
     item: "น้ำ"
   - amount: 5
     unit: "ชิ้น"

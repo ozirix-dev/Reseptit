@@ -36,7 +36,7 @@ ingredients:
     unit: "ช้อนโต๊ะ"
     item: "เนย"
   - amount: 600
-    unit: "มล."
+    unit: "ml"
     item: "น้ำสำหรับเติมกระทะหลังจี่เนื้อ"
   - amount: 1
     unit: "ช้อนชา"
@@ -48,10 +48,10 @@ ingredients:
     unit: "ชิ้น"
     item: "ใบกระวาน"
   - amount: 50
-    unit: "มล."
+    unit: "ml"
     item: "วิปปิงครีม"
   - amount: 100
-    unit: "มล."
+    unit: "ml"
     item: "น้ำเย็นสำหรับละลายแป้ง"
   - amount: 2
     unit: "ช้อนโต๊ะ"

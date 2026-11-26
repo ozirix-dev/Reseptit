@@ -27,7 +27,7 @@ ingredients:
     unit: "กรัม"
     item: "เนื้อวัวส่วนไหล่"
   - amount: 1500
-    unit: "มล."
+    unit: "ml"
     item: "น้ำสำหรับทำน้ำซุป เติมเพิ่มให้ท่วมเนื้อถ้าจำเป็น"
   - amount: 1
     unit: "ชิ้น"
@@ -48,13 +48,13 @@ ingredients:
     unit: "ช้อนโต๊ะ"
     item: "แป้งสาลี"
   - amount: 30
-    unit: "มล."
+    unit: "ml"
     item: "น้ำเย็นสำหรับละลายแป้ง"
   - amount: 1
     unit: "ช้อนชา"
     item: "น้ำตาล"
   - amount: 15
-    unit: "มล."
+    unit: "ml"
     item: "น้ำส้มสายชูจากไวน์"
 ---
 

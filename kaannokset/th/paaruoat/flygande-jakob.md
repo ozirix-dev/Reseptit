@@ -42,13 +42,13 @@ ingredients:
     unit: "ชิ้น"
     item: "กล้วย"
   - amount: 250
-    unit: "มล."
+    unit: "ml"
     item: "ครีมสำหรับปรุงอาหาร"
   - amount: 100
-    unit: "มล."
+    unit: "ml"
     item: "ซอสพริกมะเขือเทศรสอ่อน"
   - amount: 100
-    unit: "มล."
+    unit: "ml"
     item: "ถั่วลิสงอบเกลือ"
 ---
 

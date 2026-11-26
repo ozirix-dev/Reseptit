@@ -33,16 +33,16 @@ ingredients:
     unit: "กรัม"
     item: "หอมหัวใหญ่"
   - amount: 30
-    unit: "มล."
+    unit: "ml"
     item: "น้ำมันเรพซีด"
   - amount: 500
-    unit: "มล."
+    unit: "ml"
     item: "น้ำ"
   - amount: 45
-    unit: "มล."
+    unit: "ml"
     item: "น้ำสต๊อกเนื้อวัวเข้มข้น"
   - amount: 330
-    unit: "มล."
+    unit: "ml"
     item: "เบียร์ดำ"
   - amount: 1.5
     unit: "ช้อนชา"
