@@ -35,6 +35,11 @@ ingredients:
   - amount: null
     unit: ""
     item: "svartpeppar efter smak"
+image:
+  src: "paaruoat/sinisimpukat-valkoviiniliemessa.webp"
+  alt: "Öppnade blåmusslor i ljus buljong med schalottenlök och persilja."
+  width: 1200
+  height: 800
 ---
 
 # Blåmusslor i vitt vin

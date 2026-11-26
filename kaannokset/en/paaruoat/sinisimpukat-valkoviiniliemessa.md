@@ -35,6 +35,11 @@ ingredients:
   - amount: null
     unit: ""
     item: "black pepper to taste"
+image:
+  src: "paaruoat/sinisimpukat-valkoviiniliemessa.webp"
+  alt: "Open blue mussels in a pale broth with shallots and parsley."
+  width: 1200
+  height: 800
 ---
 
 # Mussels in white wine

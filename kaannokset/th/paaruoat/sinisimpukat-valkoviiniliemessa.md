@@ -35,6 +35,11 @@ ingredients:
   - amount: null
     unit: ""
     item: "พริกไทยดำตามชอบ"
+image:
+  src: "paaruoat/sinisimpukat-valkoviiniliemessa.webp"
+  alt: "หอยแมลงภู่เปลือกเปิดในน้ำซุปสีอ่อนใส่หอมแดงและพาร์สลีย์"
+  width: 1200
+  height: 800
 ---
 
 # หอยแมลงภู่ตุ๋นไวน์ขาว

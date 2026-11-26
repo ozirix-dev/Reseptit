@@ -41,6 +41,11 @@ ingredients:
   - amount: 2
     unit: "ลูก"
     item: "อะโวคาโดสุก"
+image:
+  src: "paaruoat/katkarapu-avokadosalaatti-pinaatilla.webp"
+  alt: "กุ้งปอกเปลือกสุก อะโวคาโดหั่นชิ้น และผักโขมอ่อนบนจาน"
+  width: 1200
+  height: 800
 ---
 
 # สลัดกุ้งอะโวคาโดกับผักโขม

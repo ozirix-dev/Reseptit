@@ -41,6 +41,11 @@ ingredients:
   - amount: 2
     unit: "st"
     item: "mogna avokador"
+image:
+  src: "paaruoat/katkarapu-avokadosalaatti-pinaatilla.webp"
+  alt: "Kokta skalade räkor, avokadoskivor och babyspenat på ett fat."
+  width: 1200
+  height: 800
 ---
 
 # Räk- och avokadosallad med spenat

@@ -40,6 +40,11 @@ ingredients:
   - amount: 2
     unit: "kpl"
     item: "kypsää avokadoa"
+image:
+  src: "paaruoat/katkarapu-avokadosalaatti-pinaatilla.webp"
+  alt: "Kypsiä kuorittuja katkarapuja, avokadoviipaleita ja babypinaattia lautasella."
+  width: 1200
+  height: 800
 ---
 
 # Katkarapu-avokadosalaatti pinaatilla

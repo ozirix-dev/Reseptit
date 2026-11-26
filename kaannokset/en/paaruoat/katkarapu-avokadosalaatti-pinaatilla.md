@@ -41,6 +41,11 @@ ingredients:
   - amount: 2
     unit: "pcs"
     item: "ripe avocados"
+image:
+  src: "paaruoat/katkarapu-avokadosalaatti-pinaatilla.webp"
+  alt: "Cooked peeled shrimp, avocado slices and baby spinach on a plate."
+  width: 1200
+  height: 800
 ---
 
 # Prawn, avocado and spinach salad

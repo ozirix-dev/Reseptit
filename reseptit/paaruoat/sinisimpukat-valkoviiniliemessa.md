@@ -34,6 +34,11 @@ ingredients:
   - amount: null
     unit: ""
     item: "mustapippuria maun mukaan"
+image:
+  src: "paaruoat/sinisimpukat-valkoviiniliemessa.webp"
+  alt: "Avautuneita sinisimpukoita vaaleassa liemessä salottisipulin ja persiljan kanssa."
+  width: 1200
+  height: 800
 ---
 
 # Sinisimpukat valkoviiniliemessä
