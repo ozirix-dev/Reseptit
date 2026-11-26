@@ -17,6 +17,11 @@ carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
+image:
+  src: alkuruoat/sveitsilainen-perunarosti.webp
+  alt: "En rund gyllenbrun potatisrösti på en tallrik"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 1000
     unit: "g"

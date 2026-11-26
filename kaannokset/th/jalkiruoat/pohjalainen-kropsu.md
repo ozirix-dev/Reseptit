@@ -17,6 +17,11 @@ carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
+image:
+  src: jalkiruoat/pohjalainen-kropsu.webp
+  alt: "แพนเค้กอบแบบฟินแลนด์ในกระทะเหล็กหล่อ ตัดออกหนึ่งในสี่ชิ้น"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 19
     unit: "กรัม"
