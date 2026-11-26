@@ -183,9 +183,9 @@ createRoot(document.getElementById("fixture")).render(
   h(BrowserRouter, null, h("div", { className: "site-shell" },
     h("header", { className: "site-header" },
       h("div", { className: "container site-header__inner" }, h("a", { href: "#main" }, "Header"))),
-    h(AnalyticsPrompt, { locale }),
     h("main", { id: "main", className: "container site-main", tabIndex: -1 },
-      h("h1", null, "Recipe"), h("div", { style: { display: "grid", gap: "1rem" } }, buttons))
+      h("h1", null, "Recipe"), h("div", { style: { display: "grid", gap: "1rem" } }, buttons)),
+    h(AnalyticsPrompt, { locale })
   )));
 `;
   const result = await build({
@@ -264,7 +264,7 @@ createRoot(document.getElementById("fixture")).render(
             const banner = document.querySelector(".analytics-prompt .privacy-choice")!;
             const rect = banner.getBoundingClientRect();
             const main = document.querySelector("#main")!.getBoundingClientRect();
-            return rect.bottom <= main.top + 0.5 && document.documentElement.scrollWidth <= innerWidth;
+            return rect.top >= main.bottom - 0.5 && document.documentElement.scrollWidth <= innerWidth;
           }), true, `${locale} ${width}: prompt stays above content without overflow`);
           for (const key of ["Tab", "Shift+Tab"]) {
             for (let step = 0; step < 30; step++) {

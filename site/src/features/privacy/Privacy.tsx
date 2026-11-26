@@ -20,8 +20,8 @@ function AnalyticsChoice({ locale, prompt = false }: { locale: RecipeLocale; pro
   if (!available || (prompt && choice !== null)) return null;
 
   function choose(next: "granted" | "denied") {
-    // The prompt disappears after an explicit choice. Move focus to the
-    // following persistent landmark, not to the document body.
+    // The prompt disappears after an explicit choice. Return focus to
+    // the persistent main landmark.
     if (prompt) document.getElementById("main")?.focus();
     setAnalyticsChoice(next);
   }
