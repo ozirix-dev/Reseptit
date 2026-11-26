@@ -149,7 +149,7 @@ jobs:
           retention-days: 14
 
       - name: Check local GI and GK SQLite tools
-        if: steps.select.outputs.wide_tests == 'true' || contains(steps.select.outputs.changed_paths, 'gi_sqlite') || contains(steps.select.outputs.changed_paths, 'gi_gk_maintainer.py') || contains(steps.select.outputs.changed_paths, 'verify-pr-review.py')
+        if: steps.select.outputs.full == 'true' || contains(steps.select.outputs.changed_paths, 'gi_sqlite') || contains(steps.select.outputs.changed_paths, 'gi_gk_maintainer.py') || contains(steps.select.outputs.changed_paths, 'verify-pr-review.py')
         run: python3 -B -m unittest discover -s site/tests -p 'test_gi_sqlite*.py'
 
       - name: Require changed-path evidence
@@ -176,7 +176,7 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Pre-publication editorial evidence for new FI recipes
-        if: steps.select.outputs.wide_tests == 'true' || contains(steps.select.outputs.changed_paths, 'reseptit/') || contains(steps.select.outputs.changed_paths, 'new-recipe-preflight') || contains(steps.select.outputs.changed_paths, 'recipe-successors.json')
+        if: steps.select.outputs.full == 'true' || contains(steps.select.outputs.changed_paths, 'reseptit/') || contains(steps.select.outputs.changed_paths, 'new-recipe-preflight') || contains(steps.select.outputs.changed_paths, 'recipe-successors.json')
         env:
           BASE_SHA: ${{ github.event.before }}
           EVENT_NAME: ${{ github.event_name }}
@@ -195,7 +195,7 @@ jobs:
         working-directory: site
 
       - name: Verify that a new test's type error fails the compiler
-        if: steps.select.outputs.wide_tests == 'true'
+        if: steps.select.outputs.full == 'true'
         env:
           VERIFY_TYPECHECK: 'true'
         run: node --test --test-name-pattern="an added TypeScript test" site/scripts/select-ci-checks.test.mjs
@@ -421,7 +421,7 @@ jobs:
       # every historical nutrition record. Risky evidence/model changes still
       # fail closed under the same mandatory Recipe site job.
       - name: Audit published nutrition evidence (risk-based, strict)
-        if: steps.select.outputs.run_nutrition == 'true' || steps.select.outputs.run_glycemic == 'true' || steps.select.outputs.wide_tests == 'true'
+        if: steps.select.outputs.run_nutrition == 'true' || steps.select.outputs.run_glycemic == 'true' || steps.select.outputs.full == 'true'
         run: npm run audit:nutrition -- --strict
         working-directory: site
 
@@ -493,7 +493,7 @@ jobs:
         working-directory: site
 
       - name: Run GI/GK coverage audit
-        if: steps.select.outputs.run_glycemic == 'true' || steps.select.outputs.wide_tests == 'true'
+        if: steps.select.outputs.run_glycemic == 'true' || steps.select.outputs.full == 'true'
         run: npm run audit:glycemic-coverage
         working-directory: site
 
