@@ -41,6 +41,11 @@ ingredients:
   - amount: 8
     unit: "viipale"
     item: "ruisleipää"
+image:
+  src: paaruoat/aebleflaesk.webp
+  alt: "Pehmeitä omenalohkoja, punasipulia ja pekonikuutioita kahden ruisleipäviipaleen vieressä."
+  width: 1200
+  height: 800
 ---
 
 # Æbleflæsk eli tanskalainen pekoni-omenapannu

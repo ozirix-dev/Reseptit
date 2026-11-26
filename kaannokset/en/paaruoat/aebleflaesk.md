@@ -42,6 +42,11 @@ ingredients:
   - amount: 8
     unit: "viipale"
     item: "rye bread"
+image:
+  src: paaruoat/aebleflaesk.webp
+  alt: "Soft apple wedges, red onion and diced bacon beside two slices of rye bread."
+  width: 1200
+  height: 800
 ---
 
 # Æbleflæsk, Danish bacon and apples

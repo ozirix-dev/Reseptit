@@ -54,6 +54,11 @@ ingredients:
   - amount: 10
     unit: "g"
     item: "มันหมูสำหรับทาพิมพ์และหน้าพาย"
+image:
+  src: leivonnaiset/erbazzone.webp
+  alt: "พายแป้งบาง 2 ชิ้น เห็นไส้ผักใบเขียวเข้มตรงรอยตัด"
+  width: 1200
+  height: 800
 ---
 
 # เออร์บัซโซเน พายชาร์ดและผักโขมแบบอิตาลี

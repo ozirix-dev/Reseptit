@@ -42,6 +42,11 @@ ingredients:
   - amount: 8
     unit: "viipale"
     item: "rågbröd"
+image:
+  src: paaruoat/aebleflaesk.webp
+  alt: "Mjuka äppelklyftor, rödlök och tärnat bacon bredvid två skivor rågbröd."
+  width: 1200
+  height: 800
 ---
 
 # Æbleflæsk, dansk äppel- och baconpanna

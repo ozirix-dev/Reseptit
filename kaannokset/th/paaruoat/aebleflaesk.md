@@ -42,6 +42,11 @@ ingredients:
   - amount: 8
     unit: "viipale"
     item: "ขนมปังไรย์"
+image:
+  src: paaruoat/aebleflaesk.webp
+  alt: "แอปเปิลหั่นเสี้ยวนุ่ม หอมแดงหัวใหญ่ และเบคอนหั่นเต๋า ข้างขนมปังไรย์ 2 แผ่น"
+  width: 1200
+  height: 800
 ---
 
 # แอปเปิลผัดเบคอนแบบเดนมาร์ก (Æbleflæsk)

@@ -53,6 +53,11 @@ ingredients:
   - amount: 10
     unit: "g"
     item: "sianihraa vuokaan ja pintaan"
+image:
+  src: leivonnaiset/erbazzone.webp
+  alt: "Kaksi palaa ohutkuorista piirakkaa, jonka leikkauspinnassa näkyy tumma lehtivihannestäyte."
+  width: 1200
+  height: 800
 ---
 
 # Erbazzone, italialainen mangoldi-pinaattipiirakka

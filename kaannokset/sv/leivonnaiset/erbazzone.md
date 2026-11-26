@@ -54,6 +54,11 @@ ingredients:
   - amount: 10
     unit: "g"
     item: "ister till formen och ovansidan"
+image:
+  src: leivonnaiset/erbazzone.webp
+  alt: "Två bitar paj med tunt skal och mörk bladgrönsaksfyllning som syns i snittytan."
+  width: 1200
+  height: 800
 ---
 
 # Erbazzone, italiensk mangold- och spenatpaj

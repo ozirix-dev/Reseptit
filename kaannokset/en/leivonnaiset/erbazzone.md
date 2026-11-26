@@ -54,6 +54,11 @@ ingredients:
   - amount: 10
     unit: "g"
     item: "lard for the tin and top"
+image:
+  src: leivonnaiset/erbazzone.webp
+  alt: "Two pieces of thin-crusted pie with dark leafy greens visible at the cut edges."
+  width: 1200
+  height: 800
 ---
 
 # Erbazzone, Italian chard and spinach pie
