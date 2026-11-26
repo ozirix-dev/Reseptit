@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "misomunakoiso",
+  "source_path": "reseptit/alkuruoat/misomunakoiso.md",
+  "source_sha256": "c8c22af4af1c645c3c292a4c10227ebe53b8e64efa42d96b9e74f07c7e417d0b",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.justonecookbook.com/miso-glazed-eggplant/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/misomunakoiso.json",
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/misomunakoiso.webp",
+    "bytes": 153520,
+    "sha256": "0cb4cc60de528cca6656ba75781b2840ea51e450d6275e49a155b20eaf9b9593",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/alkuruoat/misomunakoiso.md",
+        "sha256": "450a9a4df3795a373c302a49f974b53e74af8644f6928ed188f7835a8a259cc2"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/misomunakoiso.md",
+        "sha256": "bb2b6e225f7487bec5692f6d3d0d4950e66bbf512cdd0bfd9946c4ed7a60c38c"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/misomunakoiso.md",
+        "sha256": "fe16851510c4382445bb6da999225376a4ace932d7e4fd2cd7cbe77b9bc10969"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/misomunakoiso.md",
+        "sha256": "a36c6a65eaf925abb05ccf3a0069edf5a83ddd139d387742642425a94decd089"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "106292948146819ed53f091d197c947d47da93fc55fb8b5f4c3320dbb4feb991"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/misomunakoiso.md",
+        "language": "fi",
+        "slug": "misomunakoiso",
+        "sha256": "c8c22af4af1c645c3c292a4c10227ebe53b8e64efa42d96b9e74f07c7e417d0b",
+        "semantic_sha256": "8ed8ecf6ca0d9e2b17b7cbe8702221778ab522c82406df22fbda9ebe8b455640"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/misomunakoiso.md",
+        "language": "en",
+        "slug": "misomunakoiso-en",
+        "sha256": "d3cdf7bc10849de9bd1ea44c15b4d2d55c4cf3ac010e9e5938094a20f38b150e",
+        "semantic_sha256": "9dd8f9482e9259d790598bd1549dc672553e2ecf9669431c0a4360c2d01ab917"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/misomunakoiso.md",
+        "language": "sv",
+        "slug": "misomunakoiso-sv",
+        "sha256": "1888b866d0a8fcd7e5c568352939f97084f235e1edd4678886153f1bb22f4894",
+        "semantic_sha256": "b862ef91bde6b8e2229a627731a527684c36af054bb26b89b2205564df7cdff1"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/misomunakoiso.md",
+        "language": "th",
+        "slug": "misomunakoiso-th",
+        "sha256": "669dd21b3ed9a0a14d32623990fc7f25ea9b5b1570d8ddcf4144c7399d3ac21a",
+        "semantic_sha256": "faa1d49936def5d17cb77e08f69e90f4c163f73a8c97490fa21ae1c7d00a29e0"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 3 ja kokonaisaika 35 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "520g japanilaisen munakoison syötävä massa, vaalean mison 3rkl koostumus ja massamuunnos, 15ml mirinin tuote ja sokeripitoisuus; kuorrutteen retentio."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}

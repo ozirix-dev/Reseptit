@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kai-palo",
+  "source_path": "reseptit/paaruoat/kai-palo.md",
+  "source_sha256": "28d2732beeefcba7a83fc00f603e4bfeb05c5f6a9fd237a91a59f8597f9604f5",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.marionskitchen.com/thai-braised-pork-egg/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kai-palo.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/kai-palo.webp",
+    "bytes": 158812,
+    "sha256": "2bd515e809f601c5d93da206ac7376f1de2be0b9040be8aca0961dc6ad9fef50",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/kai-palo.md",
+        "sha256": "e2a9cb0b6b09549082a5939df367d0d1c75f66807a653dd937cf88225ac958b9"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/kai-palo.md",
+        "sha256": "472e66012d4135eecbc63a38e35f71a219223de7ee59c68cb55eab1cf24324d6"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kai-palo.md",
+        "sha256": "29b204a662578d7b0a0acd1aa9d3898a33d1169b4e17401a328b5f975fca5966"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kai-palo.md",
+        "sha256": "8bdfaf143cd9a0f782c3d67f796e00de8be4b0f48ebb0af5cd6557068a067f3f"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "c281aa2a877fb0d4c532dee13b525fb9a069d78ec2eda9994b79c54d010f05d8"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/kai-palo.md",
+        "language": "fi",
+        "slug": "kai-palo",
+        "sha256": "28d2732beeefcba7a83fc00f603e4bfeb05c5f6a9fd237a91a59f8597f9604f5",
+        "semantic_sha256": "2a00a1cc389e3183be00d10df1fc6fa5b86503a2e27a0f5ab92a5642348e8646"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/kai-palo.md",
+        "language": "en",
+        "slug": "kai-palo-en",
+        "sha256": "ad3c891a9ddc13226af0fff0646e0ae5d43619b0a1c65437ef6b12ec5406e661",
+        "semantic_sha256": "2a8cb4851dada165b76e58141d3911e4cda6576942d781f7a17e97c70394d811"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kai-palo.md",
+        "language": "sv",
+        "slug": "kai-palo-sv",
+        "sha256": "5a5cf3b5aafd72707d8d106e8d9271b3b1328e1f596d54813a11b55c38602466",
+        "semantic_sha256": "92b2b7492fb1b32a83ba24865288f56758f0ce67c71ab5589acc3aabe5eaef2d"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kai-palo.md",
+        "language": "th",
+        "slug": "kai-palo-th",
+        "sha256": "e142b6f884b140d8ee7465691b50150f8521120df9dec6b9dc659bacff0574a6",
+        "semantic_sha256": "fc19ec663042ccd908261c63c08a42378a9a7814bc5e6c8932b5daf2e2f63580"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja aika 120 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Paistetun tofun tuotekoostumus ja öljy, porsaan kyljen rasva, munien massa, sokeri ja soijat."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Sokerin, paistetun tofun ja makean soijan HH/annos; ei lisukeriisiä."
+    }
+  }
+}
