@@ -1,29 +1,57 @@
 import { siteTarget } from "../src/content/site-target";
 import assert from "node:assert/strict";
 import test from "node:test";
-import { spawn } from "node:child_process";
+import { preview } from "vite";
 import path from "node:path";
 import { launchBrowser } from "./launch-browser";
 import { localImageServer } from "./helpers/local-image-server";
 import { siteContent } from "../src/generated/content.generated";
 import { localeIndexes } from "../src/content/route-data";
 
-test("bounded page data, navigation cache, failures, history and multilingual static HTML", async () => {
-  const base = "http://127.0.0.1:4175";
-  const server = spawn(process.execPath, [path.resolve("node_modules/vite/bin/vite.js"), "preview", "--host", "127.0.0.1", "--port", "4175", "--strictPort"], { stdio: "pipe" });
-  let output = "";
-  server.stdout.on("data", (data) => { output += data; });
-  server.stderr.on("data", (data) => { output += data; });
+// Bind directly to port 0: the OS selects and reserves the port in one
+// operation. Do not probe a free port and then release/rebind it.
+async function startRoutePreview() {
+  const server = await preview({
+    root: path.resolve(import.meta.dirname, ".."),
+    preview: { host: "127.0.0.1", port: 0, strictPort: true, open: false },
+    logLevel: "silent",
+  });
+  try {
+    const address = server.httpServer.address();
+    assert.ok(address && typeof address !== "string" && address.port > 0, "Preview must listen on an assigned port");
+    assert.equal(address.address, "127.0.0.1");
+    return { base: `http://127.0.0.1:${address.port}`, close: () => server.close() };
+  } catch (error) {
+    await server.close();
+    throw error;
+  }
+}
+
+test("route previews reserve distinct ports and close independently", async (t) => {
+  const first = await startRoutePreview();
+  t.after(() => first.close());
+  const second = await startRoutePreview();
+  t.after(() => second.close());
+  assert.notEqual(first.base, second.base, "Simultaneously listening previews cannot share a port");
+  const firstResponse = await fetch(first.base + "/");
+  const secondResponse = await fetch(second.base + "/");
+  assert.equal(firstResponse.status, 200);
+  assert.equal(secondResponse.status, 200);
+  const firstHtml = await firstResponse.text();
+  assert.match(firstHtml, /id="page-content"/);
+  assert.equal(await secondResponse.text(), firstHtml, "Both serve the same existing production build");
+  await first.close();
+  const remaining = await fetch(second.base + "/");
+  assert.equal(remaining.status, 200);
+  assert.equal(await remaining.text(), firstHtml);
+});
+
+test("bounded page data, navigation cache, failures, history and multilingual static HTML", async (t) => {
+  const server = await startRoutePreview();
+  const { base } = server;
+  t.after(() => server.close());
   const browser = await launchBrowser();
   try {
-    let ready = false;
-    for (let i = 0; i < 60; i++) {
-      if (server.exitCode !== null) throw Error(`Preview exited: ${output}`);
-      try { ready = (await fetch(`${base}/`)).ok; } catch { /* startup */ }
-      if (ready) break;
-      await new Promise((resolve) => setTimeout(resolve, 250));
-    }
-    assert.ok(ready, output);
     const context = await browser.newContext();
     await context.route(`${siteTarget.baseUrl}/kuvat/**`, async (route) => {
       await route.fulfill({ path: path.resolve("public/kuvat", new URL(route.request().url()).pathname.split("/kuvat/")[1]) });
@@ -143,7 +171,6 @@ test("bounded page data, navigation cache, failures, history and multilingual st
     await context.close();
   } finally {
     await browser.close();
-    server.kill();
   }
 });
 
