@@ -673,7 +673,13 @@ test("R2: edits, removals, malformed registries and unexpected additions keep fu
   }
   assert.equal(isAppendOnlyRecipeBatch(changes.slice(1), before, after), false);
   assert.equal(isAppendOnlyRecipeBatch([...changes, { path: "docs/research/unknown.json", status: "A" }], before, after), false);
-  for (const path of r2Manifests) assert.equal(classifyPaths([path]).full, true);
+  for (const path of [overlays, pending, pairs]) assert.equal(classifyPaths([path]).full, true, path);
+  // The existing review-evidence-only path has its own dedicated checks.
+  const reviewOnly = classifyPaths([reviews]);
+  assert.equal(reviewOnly.full, false);
+  assert.equal(reviewOnly.runTranslationReview, true);
+  assert.equal(reviewOnly.runBrowser, false);
+  assert.deepEqual(reviewOnly.unitTests, []);
 });
 
 test("R2: real Git status and pinned manifests, not caller-provided path lists, authorize the focused browser profile", () => {
