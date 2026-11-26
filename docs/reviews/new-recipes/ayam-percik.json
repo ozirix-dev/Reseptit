@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "ayam-percik",
+  "source_path": "reseptit/paaruoat/ayam-percik.md",
+  "source_sha256": "0e9209df3da7ea239ba51cfa539c02719b5e8347dad96350953a3b03ac971340",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.nyonyacooking.com/recipes/ayam-percik~2JIHfE6OLH"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/ayam-percik.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/ayam-percik.webp",
+    "bytes": 163882,
+    "sha256": "7bc9e33ee1a811b15252549ad0a24ba23d61727e20affe92db188231cac41e27",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/ayam-percik.md",
+        "sha256": "a1c6830006861022f9a00965d6129a7853bc15e73356a4a0b8d91005b6b3bb83"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/ayam-percik.md",
+        "sha256": "cafe1396e1e1efe98e8a9116e5496113bffc78e43ba534f3a7d21f39fc4bfb5c"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/ayam-percik.md",
+        "sha256": "41e36afc13e09e567a536d78c1f74bb5812671aaf9c1e3831cdf7ea8c4323577"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/ayam-percik.md",
+        "sha256": "409b2a89b78239b7e2933776474aecf784fd63705f146ed158eac21ea5b8da8c"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "be56ca4cc5bd0eef27f19bfef8c70128a5f6d4ad16b777c664fa7d43257c8320"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/ayam-percik.md",
+        "language": "fi",
+        "slug": "ayam-percik",
+        "sha256": "0e9209df3da7ea239ba51cfa539c02719b5e8347dad96350953a3b03ac971340",
+        "semantic_sha256": "1d52f047833e80f228c769ac7569ec4318c6614f7f0ffd749ace6bbbb1412d44"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/ayam-percik.md",
+        "language": "en",
+        "slug": "ayam-percik-en",
+        "sha256": "80fbfadb561e14ab0550d15ab8b9dc31d490ab8e3e07a64dd9dc8e203e928f6d",
+        "semantic_sha256": "391627eeb4a4927f46a8982f060057785a87082bebd07fd1011d8fe199b12092"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/ayam-percik.md",
+        "language": "sv",
+        "slug": "ayam-percik-sv",
+        "sha256": "5c26d776cdbf8a6cad56d59e7b55eda768c7fd9c74291199942c2dc05bcbbbc9",
+        "semantic_sha256": "5e833bf9042389f0f5e77647b0fe7d7e2d26c6ce2af66cff90be2053ce7e3a56"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/ayam-percik.md",
+        "language": "th",
+        "slug": "ayam-percik-th",
+        "sha256": "59a99b1493418e9b975f4fb611f142c08b4b7ef8a7b2e1ff2450f8b42229ae9c",
+        "semantic_sha256": "e59285e062180a3ed3d6b3d757c657ad7eda5fc6c6793ccfc8d7335567c461bf"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja aika 130 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "1 kg luullisten reisipalojen syötävä massa, kastikkeesta pois heitetyn osan määrä, kookosmaito ja sokerin massa."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Sokeri, tamarindi, kookosmaito ja kastikkeen syöty osuus; ei lisukeriisiä."
+    }
+  }
+}

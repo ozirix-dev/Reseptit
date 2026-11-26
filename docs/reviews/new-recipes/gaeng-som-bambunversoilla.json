@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "gaeng-som-bambunversoilla",
+  "source_path": "reseptit/paaruoat/gaeng-som-bambunversoilla.md",
+  "source_sha256": "f27436835e9ce8c76ca8d75ce76fe928c0bc1c1055e2f9d4e64cc7da5ff92001",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.eatingthaifood.com/thai-gaeng-som-recipe/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/gaeng-som-bambunversoilla.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/gaeng-som-bambunversoilla.webp",
+    "bytes": 97552,
+    "sha256": "611c82ca334b0245bb98305efcef9bd1ef3c5563f758af8a35be4e1be042dee6",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/gaeng-som-bambunversoilla.md",
+        "sha256": "24b1c958d5aa97bfc7db366ff04717057b6d2f50f796a855f961cf7f6dfb8e29"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/gaeng-som-bambunversoilla.md",
+        "sha256": "acf37892b4409083823ee97eb563825ec844f0cd0579a8e22fbbb904c5fd0a3d"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/gaeng-som-bambunversoilla.md",
+        "sha256": "17214a93b0245b78f33c2f253edead74260d7df794e8c62da35b51256b3746e8"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/gaeng-som-bambunversoilla.md",
+        "sha256": "b868e167bf03a3246a7ba410111ef24596fefcb7c97344245faf74bc4a0ef4c0"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "b9872ab3134f9516ab2756771bfdd3358b37391306c97dd1c4bd5600bd1e1f20"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/gaeng-som-bambunversoilla.md",
+        "language": "fi",
+        "slug": "gaeng-som-bambunversoilla",
+        "sha256": "f27436835e9ce8c76ca8d75ce76fe928c0bc1c1055e2f9d4e64cc7da5ff92001",
+        "semantic_sha256": "be65fddfd97ae100961d6d7b43e324d9d0b3839c9319e6e6bde4ac8fd8b32bba"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/gaeng-som-bambunversoilla.md",
+        "language": "en",
+        "slug": "gaeng-som-bambunversoilla-en",
+        "sha256": "4e6f48ff48f3857b6edb8bb1b0189e30ff4c1b2d36eb0a5bc0c89590eaf028a8",
+        "semantic_sha256": "ed507ae1584ed138354d2b91107c6a964192cf3f4cd3987861950171c7e311d2"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/gaeng-som-bambunversoilla.md",
+        "language": "sv",
+        "slug": "gaeng-som-bambunversoilla-sv",
+        "sha256": "f3b4c081cdae39b290f35800fbd46f23b65c41f5b7858107268fe36afd894b29",
+        "semantic_sha256": "4829332069a3182be18e02911505e1ed1fc658de44bb9a847bdc706c98a4357d"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/gaeng-som-bambunversoilla.md",
+        "language": "th",
+        "slug": "gaeng-som-bambunversoilla-th",
+        "sha256": "0c91e3247519bc839e31e188821a2bda6dd0be5314406a0b2b62b00ec2178af0",
+        "semantic_sha256": "57cdff3555c19af4becfeb5a40b19d7f45f75a9dbb092af18df105f53dda63ba"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja aika 50 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Meribassin syötävä saanto 600 g kokonaispainosta, bambunversotuote, valkosipulin massa, kapi ja limettimehu."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Bambunversojen ja chilin koostumus sekä kapi/limetti, ei arvioitua HH-annosta; ei riisiä."
+    }
+  }
+}

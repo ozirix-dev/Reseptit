@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "miang-kham-salaattisuupalat",
+  "source_path": "reseptit/alkuruoat/miang-kham-salaattisuupalat.md",
+  "source_sha256": "32e9bd78de1bb7914bd1b20408ab5deed4d3347617a99fb3aeaab84fd96a085b",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://rachelcooksthai.com/miang-kham/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/miang-kham-salaattisuupalat.json",
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/miang-kham-salaattisuupalat.webp",
+    "bytes": 320126,
+    "sha256": "be72fe284362a0cdf7fbd83667ac41d7ae22be2efbd8ea7c0381fc79ad4c9778",
+    "width": 1672,
+    "height": 941,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/alkuruoat/miang-kham-salaattisuupalat.md",
+        "sha256": "44ced233cc335a4f5a84fc7899c0b4a67d646383458d416b905f647578af7ea2"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/miang-kham-salaattisuupalat.md",
+        "sha256": "29711c87be99de72193653d20bdc9d2d1b40ae4347291c08cb4dabddd20f4734"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/miang-kham-salaattisuupalat.md",
+        "sha256": "87f79da0c6080368138d5c2339b03dee2b6fdef5d0c4a2de6a9bbc2a6f29ab81"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/miang-kham-salaattisuupalat.md",
+        "sha256": "7f2a0485c49cfe6b79f9f2278a1223358398881f994bfe351de97741b88a48a6"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "d27465f1119d15919e67005aecb99f54f672b35aa48a627b5cc6c30148577a7a"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/miang-kham-salaattisuupalat.md",
+        "language": "fi",
+        "slug": "miang-kham-salaattisuupalat",
+        "sha256": "32e9bd78de1bb7914bd1b20408ab5deed4d3347617a99fb3aeaab84fd96a085b",
+        "semantic_sha256": "6026522df8afae64aa408a37dcccaa81141517902487c6e8746ee2ec9007c576"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/miang-kham-salaattisuupalat.md",
+        "language": "en",
+        "slug": "miang-kham-salaattisuupalat-en",
+        "sha256": "c2449ad56ec50d724db85d2ec6033690710e1fe6b5e85547e03073ed963826c6",
+        "semantic_sha256": "e18a7b9284b0e76e41a1e4ff1b02d0d84227cdb77825474359704404f87c2d7d"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/miang-kham-salaattisuupalat.md",
+        "language": "sv",
+        "slug": "miang-kham-salaattisuupalat-sv",
+        "sha256": "0d9f674fd4e82e9fde89381e65b614c26b6153a383561ace9941183aff409e8b",
+        "semantic_sha256": "97d4c9649173645e9a4ed5759f455a4a77d57f5672d0f076eef0f4cd762cedc1"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/miang-kham-salaattisuupalat.md",
+        "language": "th",
+        "slug": "miang-kham-salaattisuupalat-th",
+        "sha256": "2dc18767c1182f75b78378dbe75303791d457ac138a6947dc7fc902d8b0294c0",
+        "semantic_sha256": "4b2fe67574fcba6b01d2cbccd2d0c897ed767b8dd94a43bee240d86bbd356ece"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja aika 80 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "120 ml palmusokerin, pähkinöiden, kookoksen ja kuivakatkarapujen massat, kastikkeen saanto ja salaatin syötävä massa."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Palmusokerin todellinen massa, kastikkeen jako ja täytteiden HH/GI; romaine ei alkuperäinen lehti."
+    }
+  }
+}

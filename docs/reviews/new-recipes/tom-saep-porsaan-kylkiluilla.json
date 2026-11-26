@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "tom-saep-porsaan-kylkiluilla",
+  "source_path": "reseptit/paaruoat/tom-saep-porsaan-kylkiluilla.md",
+  "source_sha256": "6152cfba7bdd657abe99366fcc1373ef6572cccb507530926a2a14d2360d086a",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://areekitchen.com/thai-pork-rib-soup-tom-saap/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/tom-saep-porsaan-kylkiluilla.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/tom-saep-porsaan-kylkiluilla.webp",
+    "bytes": 230166,
+    "sha256": "bb6aa8f8c1daf6f2755a0a335801121e3eb9e9e4f317b6b6370c7dbeae098d35",
+    "width": 1672,
+    "height": 941,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/tom-saep-porsaan-kylkiluilla.md",
+        "sha256": "86b162c33614e5af2da01446840b822df2b423083dde481357934781e62358b4"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/tom-saep-porsaan-kylkiluilla.md",
+        "sha256": "93a0e468b4a195beb7b926edf97ee649438e5434fb550ffe81ec18d3fc878302"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/tom-saep-porsaan-kylkiluilla.md",
+        "sha256": "0b502ab03276ba5fb2cc2dc7657392de1f52ecb8bcbfebe1d546e1e4bf1d55d7"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/tom-saep-porsaan-kylkiluilla.md",
+        "sha256": "43ae62a3482d13997d618a71d877460b82fd1edc7cba4bf0e36b55b6b89c34aa"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "b32e359cb9b84908855e53c6cfb3cbd9c9adcba5204658167ec8eb3dccf5baf0"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/tom-saep-porsaan-kylkiluilla.md",
+        "language": "fi",
+        "slug": "tom-saep-porsaan-kylkiluilla",
+        "sha256": "6152cfba7bdd657abe99366fcc1373ef6572cccb507530926a2a14d2360d086a",
+        "semantic_sha256": "80e8385edb60e115617fc71029d06e320edc7a853a7f52b40b25e7ebcf4342b1"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/tom-saep-porsaan-kylkiluilla.md",
+        "language": "en",
+        "slug": "tom-saep-porsaan-kylkiluilla-en",
+        "sha256": "08fc92e24f29ea99f85c5bfbfa461413da330b0da19770c893ba5417e2172394",
+        "semantic_sha256": "a43a0cfbb38ea7fc7ce51c59965dcd09abdc740fc09e57e0d131e4289fdaa1c1"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/tom-saep-porsaan-kylkiluilla.md",
+        "language": "sv",
+        "slug": "tom-saep-porsaan-kylkiluilla-sv",
+        "sha256": "d2ca6c6d5a125ba96528b96230b59123b3ac8b02145e7befc42d266957cc26cc",
+        "semantic_sha256": "1502189d2765768db1d9e622bc6fcd538294a683aa6a14acf8b229ee489d669e"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/tom-saep-porsaan-kylkiluilla.md",
+        "language": "th",
+        "slug": "tom-saep-porsaan-kylkiluilla-th",
+        "sha256": "8ee5747f0d2ae067b3bb7c9ce5ba15d5bb2180d8676909969e7d97ddef2a28b4",
+        "semantic_sha256": "092ca2520e70101383fe8a7d2aedde8ab452a1bcdca397ccbb64b1de816c8c70"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 2 ja aika 65 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Luullisen 400 g kylkiluun syötävä massa ja liemeen jäävä rasva, paahdetun riisijauheen tilavuus→massa, kalakastike."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Paahdetun tahmariisin todellinen annos ja valmistusmuotoon sopiva GI, muut mausteet; ei nollapäätelmää."
+    }
+  }
+}
