@@ -296,8 +296,9 @@ button { font: inherit; }
   .site-brand strong { font-size:1.12rem; }
   .site-brand small { display:none; }
   .site-brand__mark { width:2.15rem; }
-  .site-header__navigation { display:flex; align-items:center; flex-wrap:nowrap; gap:.4rem; margin-left:auto; }
-  .site-primary-menu, .site-language-menu { position:relative; padding:0; border:0; }
+  /* Both mobile panels share the right edge of the navigation group. */
+  .site-header__navigation { position:relative; display:flex; align-items:center; flex-wrap:nowrap; gap:.4rem; margin-left:auto; }
+  .site-primary-menu, .site-language-menu { position:static; padding:0; border:0; }
   .site-primary-menu > summary, .site-language-menu > summary { display:flex; min-height:44px; align-items:center; justify-content:center; gap:.2rem; cursor:pointer; list-style:none; padding:.4rem .6rem; border:1px solid var(--line); border-radius:.65rem; color:var(--accent); background:var(--surface); font-weight:700; }
   .site-primary-menu > summary::-webkit-details-marker, .site-language-menu > summary::-webkit-details-marker { display:none; }
   .site-primary-menu > nav, .site-language-menu > nav { display:none; position:absolute; z-index:20; top:calc(100% + .4rem); right:0; min-width:min(80vw,245px); padding:.45rem; border:1px solid var(--line); border-radius:.85rem; background:var(--surface); box-shadow:0 15px 30px rgba(25,51,46,.17); }
