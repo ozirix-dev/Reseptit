@@ -5,7 +5,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import assert from "node:assert/strict";
 import test from "node:test";
-import { applyEventPolicy, classifyPaths, shouldRunFiEditorialAudit } from "./select-ci-checks.mjs";
+import { applyEventPolicy, classifyPaths, shouldRunFiEditorialAudit, isAppendOnlyRecipeBatch } from "./select-ci-checks.mjs";
 import { selectUnitTests } from "./run-unit-tests.mjs";
 
 test("FI editorial audit detects recipe and projection changes without touching other chats' work", () => {
@@ -591,4 +591,133 @@ test("GK-only checks retain the nutrition inventory needed by GK coverage and te
   const workflow = readFileSync(new URL("../../.github/workflows/pages.yml", import.meta.url), "utf8");
   assert.match(workflow, /name: Generate nutrition and GK outputs required by isolated TypeScript checks[\s\S]*?npm run content:sync\s+npm run audit:nutrition -- --strict\s+npm run audit:glycemic-load/);
   assert.match(workflow, /name: Audit published nutrition evidence \(risk-based, strict\)\s+if: [^\n]*run_glycemic == 'true'/);
+});
+
+// R2-002/003: all existing non-browser domain checks remain selected; only
+// verified additions of complete, four-language recipe batches narrow browsers.
+const r2Manifests = [
+  "assets/images.tracked-overlays.json",
+  "docs/nutrition/new-public-gk-pending-sources.json",
+  "meta/kaannokset/published-translation-pairs.json",
+  "meta/kaannokset/codex-review-evidence.json"
+];
+function r2BatchFixture(count) {
+  const [overlays, pending, pairs, reviews] = r2Manifests;
+  const before = {
+    [overlays]: { schema_version: 1, repository: "ozirix-dev/Reseptit", files: [{ path: "paaruoat/old.webp", sha256: "old" }] },
+    [pending]: { old: "old-sha" },
+    [pairs]: { schemaVersion: 1, sources: [{ recipe_id: "old", locales: ["en"] }] },
+    [reviews]: { "old:en": { source_hash: "old" } },
+  };
+  const after = structuredClone(before);
+  const changes = r2Manifests.map(path => ({ path, status: "M" }));
+  changes.push({ path: "docs/nutrition/batches/batch-1.json", status: "A" });
+  for (let i = 0; i < count; i++) {
+    const id = "new-" + i;
+    const image = "valipalat/" + id + ".webp";
+    for (const path of [
+      "reseptit/valipalat/" + id + ".md", "kuvat/" + image,
+      "docs/nutrition/calculations/" + id + ".json", "docs/reviews/new-recipes/" + id + ".json",
+      ...["en", "sv", "th"].map(locale => "kaannokset/" + locale + "/valipalat/" + id + ".md"),
+    ]) changes.push({ path, status: "A" });
+    after[overlays].files.push({ path: image, sha256: "new" });
+    after[pending][id] = "new-sha";
+    after[pairs].sources.push({ recipe_id: id, locales: ["en", "sv", "th"] });
+    for (const locale of ["en", "sv", "th"]) after[reviews][id + ":" + locale] = { source_hash: "new" };
+  }
+  return { changes, before, after };
+}
+
+test("R2: exact append-only batches retain all wide domain checks and narrow only browser suites", () => {
+  for (const count of [1, 20]) {
+    const { changes, before, after } = r2BatchFixture(count);
+    const paths = changes.map(change => change.path);
+    assert.equal(paths.length, count * 7 + 5);
+    assert.equal(isAppendOnlyRecipeBatch(changes, before, after), true);
+    for (const event of ["pull_request", "push", "workflow_dispatch"]) {
+      const prior = applyEventPolicy(classifyPaths(paths), event);
+      const next = applyEventPolicy(classifyPaths(paths, { appendOnlyRecipeBatch: true }), event);
+      assert.equal(prior.full, true);
+      assert.deepEqual(next, { ...prior, full: false, browserSuites: ["smoke", "routes", "images"] });
+      assert.equal(next.wideTests, true);
+      assert.equal(next.runContent, true);
+      assert.deepEqual(next.unitTests, ["*"]);
+      assert.equal(classifyPaths(paths, { appendOnlyRecipeBatch: true, forceFull: true }).full, true);
+      assert.equal(classifyPaths(paths, { appendOnlyRecipeBatch: true, classificationFailed: true }).full, true);
+      assert.equal(classifyPaths([...paths, "site/src/router.tsx"], { appendOnlyRecipeBatch: true }).full, true);
+    }
+  }
+});
+
+test("R2: edits, removals, malformed registries and unexpected additions keep full checks", () => {
+  const { changes, before, after } = r2BatchFixture(1);
+  const [overlays, pending, pairs, reviews] = r2Manifests;
+  const source = changes.find(change => change.path.startsWith("reseptit/"));
+  for (const status of ["M", "D", "T"]) assert.equal(isAppendOnlyRecipeBatch(
+    changes.map(change => change === source ? { ...change, status } : change), before, after), false);
+  for (const edit of [
+    value => { value[overlays].files[0].sha256 = "changed"; },
+    value => { value[overlays].files.push(value[overlays].files[0]); },
+    value => { value[overlays].repository = "wrong"; },
+    value => { delete value[pending].old; },
+    value => { value[pending].old = "changed"; },
+    value => { value[pending].extra = "unexpected"; },
+    value => { value[pairs].sources[0].locales.push("sv"); },
+    value => { value[pairs].sources = null; },
+    value => { value[reviews]["old:en"].source_hash = "changed"; },
+    value => { delete value[reviews]["new-0:th"]; },
+  ]) {
+    const changed = structuredClone(after);
+    edit(changed);
+    assert.equal(isAppendOnlyRecipeBatch(changes, before, changed), false);
+  }
+  assert.equal(isAppendOnlyRecipeBatch(changes.slice(1), before, after), false);
+  assert.equal(isAppendOnlyRecipeBatch([...changes, { path: "docs/research/unknown.json", status: "A" }], before, after), false);
+  for (const path of r2Manifests) assert.equal(classifyPaths([path]).full, true);
+});
+
+test("R2: real Git status and pinned manifests, not caller-provided path lists, authorize the focused browser profile", () => {
+  const root = mkdtempSync(path.join(tmpdir(), "recipe-append-only-selector-"));
+  const selector = fileURLToPath(new URL("./select-ci-checks.mjs", import.meta.url));
+  const { changes, before, after } = r2BatchFixture(1);
+  const git = args => execFileSync("git", args, { cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim();
+  const write = (file, value) => {
+    const dest = path.join(root, file);
+    mkdirSync(path.dirname(dest), { recursive: true });
+    writeFileSync(dest, JSON.stringify(value) + "\n");
+  };
+  const commit = message => {
+    git(["add", "."]);
+    git(["-c", "user.name=Recipe Test", "-c", "user.email=test@example.invalid", "commit", "-m", message]);
+    return git(["rev-parse", "HEAD"]);
+  };
+  const run = (base, head, extra = {}) => JSON.parse(execFileSync(process.execPath, [selector], {
+    cwd: root, encoding: "utf8", env: { ...process.env, BASE_SHA: base, HEAD_SHA: head,
+      EVENT_NAME: "push", FORCE_FULL: "false", CHANGED_PATHS_JSON: "", GITHUB_OUTPUT: "", ...extra },
+  }));
+  try {
+    git(["init", "-q"]);
+    for (const file of r2Manifests) write(file, before[file]);
+    const base = commit("base");
+    for (const { path: file, status } of changes) write(file, status === "M" ? after[file] : { fixture: true });
+    const head = commit("new batch");
+    const result = run(base, head);
+    assert.equal(result.full, false);
+    assert.equal(result.wideTests, true);
+    assert.deepEqual(result.browserSuites, ["smoke", "routes", "images"]);
+    assert.equal(run(base, head, { FORCE_FULL: "true" }).full, true);
+    assert.equal(run(base, head, { CHANGED_PATHS_JSON: JSON.stringify(changes.map(change => change.path)) }).full, true);
+    const pending = r2Manifests[1];
+    write(pending, { ...after[pending], old: "changed" });
+    const changed = commit("edit old pending record");
+    assert.equal(run(base, changed).full, true);
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test("R2: overlay-only pushes trigger Recipe site and all five wide gates use the wide-test output", () => {
+  const workflow = readFileSync(new URL("../../.github/workflows/pages.yml", import.meta.url), "utf8");
+  const push = workflow.split("  pull_request:")[0];
+  assert.match(push, /^\s+- "assets\/images\.tracked-overlays\.json"$/m);
+  assert.equal((workflow.match(/steps\.select\.outputs\.wide_tests == 'true'/g) ?? []).length, 5);
+  assert.doesNotMatch(workflow, /steps\.select\.outputs\.full == 'true'/);
 });
