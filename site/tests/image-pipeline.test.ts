@@ -338,3 +338,42 @@ test("a failed final rename restores the previous image publication", async (t) 
     assert.deepEqual(await readdir(publicDir), ["kuvat"]);
   } finally { await rm(root, { recursive: true, force: true }); }
 });
+
+
+// DRAFT MEASUREMENT ONLY (R2-004): run this experiment on the current complete
+// CI-verified image corpus. Remove the invocation before considering Ready;
+// keep the verified-worker command as a standalone diagnostic if useful.
+test("R2-004 draft benchmark: actual corpus parity for 1, 2 and 4 workers", { timeout: 20 * 60_000 }, async () => {
+  const root = await mkdtemp(path.join(await realpath(os.tmpdir()), "recipavo-r2-verified-images-"));
+  try {
+    assert.ok(process.env.VERIFIED_IMAGE_ROOT, "R2-004 requires the complete verified image root");
+    const reference = path.join(productionSite, "dist/kuvat/_variants/manifest.json");
+    const expected = JSON.parse(await readFile(reference, "utf8"));
+    assert.ok(expected.images.length > 0);
+    const git = (...args: string[]) => execFileSync("git", args, { cwd: repoDir, encoding: "utf8" }).trim();
+    const testedHead = git("rev-parse", "HEAD");
+    const expectedHash = createHash("sha256").update(await readFile(reference)).digest("hex");
+    // First screening, one measurement per worker/phase; no worker default
+    // decision on this alone. Cold means empty output, not a flushed OS cache.
+    for (const workers of [2, 4, 1]) {
+      const output = path.join(root, "workers-" + workers, "public");
+      await mkdir(output, { recursive: true });
+      for (const phase of ["cold", "warm"]) {
+        const result = execFileSync(process.execPath, [
+          "--import", "tsx", path.join(siteDir, "scripts/scale-images.ts"), "verified-worker",
+          publishedSourceRoot, output, String(workers), reference,
+        ], { cwd: siteDir, encoding: "utf8", maxBuffer: 8 * 1024 * 1024, timeout: 240_000 });
+        const row = JSON.parse(result.trim());
+        assert.equal(row.workers, workers);
+        assert.equal(row.sources, expected.images.length);
+        assert.equal(row.manifestSha256, expectedHash);
+        assert.ok(row.filesVerified >= row.sources);
+        assert.ok(Number.isFinite(row.ms) && row.ms > 0 && Number.isFinite(row.maxRssKiB) && row.maxRssKiB > 0);
+        console.log("R2_IMAGE_BENCHMARK " + JSON.stringify({ testedHead, phase, ...row }));
+      }
+      // This is an owned scratch directory, not source or production output.
+      await rm(path.dirname(output), { recursive: true, force: true });
+    }
+    assert.equal(git("rev-parse", "HEAD"), testedHead);
+  } finally { await rm(root, { recursive: true, force: true }); }
+});
