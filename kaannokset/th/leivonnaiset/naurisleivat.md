@@ -27,13 +27,13 @@ ingredients:
     unit: "กรัม"
     item: "หัวผักกาดเทอร์นิพ"
   - amount: 1000
-    unit: "มล."
+    unit: "ml"
     item: "น้ำสำหรับต้มหัวผักกาด"
   - amount: 1
     unit: "ช้อนชา"
     item: "เกลือสำหรับน้ำต้ม"
   - amount: 250
-    unit: "มล."
+    unit: "ml"
     item: "บัตเตอร์มิลก์หมักสำหรับผสมแป้ง"
   - amount: 100
     unit: "กรัม"
@@ -48,19 +48,19 @@ ingredients:
     unit: "กรัม"
     item: "ยีสต์สด"
   - amount: 50
-    unit: "มล."
+    unit: "ml"
     item: "น้ำอุ่นพอประมาณสำหรับละลายยีสต์"
   - amount: 500
-    unit: "มล."
+    unit: "ml"
     item: "แป้งบาร์เลย์"
   - amount: 300
-    unit: "มล."
+    unit: "ml"
     item: "แป้งไรย์"
   - amount: 1000
-    unit: "มล."
+    unit: "ml"
     item: "แป้งสาลี"
   - amount: 100
-    unit: "มล."
+    unit: "ml"
     item: "บัตเตอร์มิลก์หมักสำหรับทาหน้า"
 ---
 

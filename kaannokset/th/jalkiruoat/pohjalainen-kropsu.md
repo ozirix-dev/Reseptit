@@ -30,7 +30,7 @@ ingredients:
     unit: "ช้อนชา"
     item: "เนยสำหรับทากระทะ"
   - amount: 150
-    unit: "มล."
+    unit: "ml"
     item: "นมชนิดไขมันต่ำ"
   - amount: 1
     unit: "ชิ้น"
@@ -42,7 +42,7 @@ ingredients:
     unit: "ช้อนชา"
     item: "เกลือ"
   - amount: 100
-    unit: "มล."
+    unit: "ml"
     item: "แป้งสาลี"
 ---
 
