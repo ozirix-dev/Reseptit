@@ -64,7 +64,11 @@ async function markdownFiles(dir: string): Promise<string[]> {
 
 const instructionHeadings = ["Valmistus", "Preparation", "Instructions", "Tillagning", "Gör så här", "การทำ", "วิธีทำ"];
 const descriptionHeadings = ["Kuvaus", "Description", "Beskrivning", "คำอธิบาย"];
-const noteHeadings = ["Muistiinpanot", "Huomioita", "Notes", "Anteckningar", "หมายเหตุ"];
+const noteHeadings = ["Muistiinpanot", "Huomioita", "Huomiot", "Notes", "Anteckningar", "Anmärkningar", "หมายเหตุ"];
+const safetyHeadings = [
+  "Säilytys ja turvallisuus", "Storage and safety", "Förvaring och säkerhet",
+  "การเก็บและความปลอดภัย", "การเก็บรักษาและความปลอดภัย",
+];
 const nutritionBasisHeading = "Ravintoarvojen laskentaperuste";
 const publicNutritionBasis = new Set([
   "karnivore-jauhelihakulho-munalla",
@@ -75,9 +79,10 @@ const sourceOnlyHeadings = [
   "Ainekset", "Ingredients", "Ingredienser", "ส่วนผสม", "วัตถุดิบ",
   "Täytteet ja kuorrutteet", "Annostus", "Perinne, lähde ja nimeäminen",
   "Tausta ja erottuvuus", "Tausta", "Toimituksellinen alkuperä", "Tekijän tunnustus",
+  "Lähteet", "Sources", "Källor", "แหล่งอ้างอิง", "แหล่งที่มา",
 ];
 const classifiedHeadings = new Set([
-  ...instructionHeadings, ...descriptionHeadings, ...noteHeadings, ...sourceOnlyHeadings, nutritionBasisHeading,
+  ...instructionHeadings, ...descriptionHeadings, ...noteHeadings, ...safetyHeadings, ...sourceOnlyHeadings, nutritionBasisHeading,
 ].map(heading => heading.toLowerCase()));
 
 function assertClassifiedRecipeSections(markdown: string, file: string): void {
@@ -98,7 +103,12 @@ function section(markdown: string, titles: string[]): string {
 }
 
 export function recipePreparationSections(markdown: string) {
-  return { instructions: section(markdown, instructionHeadings), notes: section(markdown, noteHeadings) };
+  const safety = section(markdown, safetyHeadings);
+  const safetyTitle = markdown.match(new RegExp(`^##[ \t]+(${safetyHeadings.join("|")})[ \t]*$`, "im"))?.[1];
+  return {
+    instructions: section(markdown, instructionHeadings),
+    notes: [section(markdown, noteHeadings), safety && safetyTitle && `### ${safetyTitle}\n\n${safety}`].filter(Boolean).join("\n\n"),
+  };
 }
 
 function stripHtml(value: string): string {
