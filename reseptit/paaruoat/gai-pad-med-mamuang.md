@@ -16,6 +16,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: paaruoat/gai-pad-med-mamuang.webp
+  alt: "Broileripaloja, cashewpähkinöitä ja paprikaa kiiltävässä wok-kastikkeessa (tekoälykuvitus)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":400,"unit":"g","item":"broilerin rintafileetä"}
   - {"amount":120,"unit":"ml","item":"maissitärkkelystä panerointiin"}

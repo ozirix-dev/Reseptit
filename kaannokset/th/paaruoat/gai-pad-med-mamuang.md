@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/gai-pad-med-mamuang.md"
 translation_of: "gai-pad-med-mamuang"
+image:
+  src: paaruoat/gai-pad-med-mamuang.webp
+  alt: "ไก่ผัดเม็ดมะม่วงหิมพานต์กับพริกหวานในซอสเงางาม (ภาพประกอบด้วย AI)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":400,"unit":"g","item":"อกไก่"}
   - {"amount":120,"unit":"ml","item":"แป้งข้าวโพดสำหรับคลุกไก่"}

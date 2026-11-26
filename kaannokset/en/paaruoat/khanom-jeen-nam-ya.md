@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/khanom-jeen-nam-ya.md"
 translation_of: "khanom-jeen-nam-ya"
+image:
+  src: paaruoat/khanom-jeen-nam-ya.webp
+  alt: "Rice vermicelli with yellow fish curry sauce, cucumber and Thai basil (AI illustration)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":800,"unit":"g","item":"whole gutted mackerel"}
   - {"amount":800,"unit":"ml","item":"unsweetened coconut cream"}

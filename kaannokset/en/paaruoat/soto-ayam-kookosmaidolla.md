@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/soto-ayam-kookosmaidolla.md"
 translation_of: "soto-ayam-kookosmaidolla"
+image:
+  src: paaruoat/soto-ayam-kookosmaidolla.webp
+  alt: "Chicken cubes, rice vermicelli and egg in yellow coconut broth (AI illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":200,"unit":"g","item":"dry rice vermicelli"}
   - {"amount":30,"unit":"ml","item":"rapeseed oil"}

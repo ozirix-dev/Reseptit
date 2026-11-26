@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/tom-saep-porsaan-kylkiluilla.md"
 translation_of: "tom-saep-porsaan-kylkiluilla"
+image:
+  src: paaruoat/tom-saep-porsaan-kylkiluilla.webp
+  alt: "ต้มแซ่บกระดูกหมูในน้ำซุปใสกับพริกและสมุนไพร (ภาพประกอบด้วย AI)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":400,"unit":"g","item":"กระดูกหมูติดเนื้อ"}
   - {"amount":1,"unit":"l","item":"น้ำ"}

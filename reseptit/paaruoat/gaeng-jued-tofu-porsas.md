@@ -16,6 +16,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: paaruoat/gaeng-jued-tofu-porsas.webp
+  alt: "Tofukuutioita, porsaan jauhelihaa ja kiinankaalia kirkkaassa liemessä (tekoälykuvitus)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":950,"unit":"ml","item":"vettä"}
   - {"amount":950,"unit":"ml","item":"kanalientä"}

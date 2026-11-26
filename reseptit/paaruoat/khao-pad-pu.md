@@ -16,6 +16,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: paaruoat/khao-pad-pu.webp
+  alt: "Paistettua riisiä, ravunlihaa, kananmunaa ja kevätsipulia (tekoälykuvitus)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":2,"unit":"kpl","item":"kananmunaa"}
   - {"amount":15,"unit":"ml","item":"Golden Mountain -maustekastiketta"}

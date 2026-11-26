@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/alkuruoat/pad-pak-ruam-mit.md"
 translation_of: "pad-pak-ruam-mit"
+image:
+  src: alkuruoat/pad-pak-ruam-mit.webp
+  alt: "Stir-fried vegetables and shiitake mushrooms on a plate (AI illustration)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":30,"unit":"ml","item":"rapeseed oil"}
   - {"amount":3,"unit":"pcs","item":"garlic cloves"}

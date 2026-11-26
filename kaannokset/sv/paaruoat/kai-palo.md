@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/kai-palo.md"
 translation_of: "kai-palo"
+image:
+  src: paaruoat/kai-palo.webp
+  alt: "Sidfläskbitar, stekt tofu och ett kokt ägg i mörk buljong (AI-illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":6,"unit":"st","item":"vitlöksklyftor"}
   - {"amount":2,"unit":"st","item":"korianderrötter"}

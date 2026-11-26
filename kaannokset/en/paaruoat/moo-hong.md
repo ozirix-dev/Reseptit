@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/moo-hong.md"
 translation_of: "moo-hong"
+image:
+  src: paaruoat/moo-hong.webp
+  alt: "Pieces of layered pork belly in a dark braising sauce (AI illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":4,"unit":"pcs","item":"garlic cloves"}
   - {"amount":1,"unit":"tsp","item":"black peppercorns"}

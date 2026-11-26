@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/gaeng-jued-tofu-porsas.md"
 translation_of: "gaeng-jued-tofu-porsas"
+image:
+  src: paaruoat/gaeng-jued-tofu-porsas.webp
+  alt: "แกงจืดเต้าหู้หั่นเต๋ากับหมูสับและผักกาดขาว (ภาพประกอบด้วย AI)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":950,"unit":"ml","item":"น้ำ"}
   - {"amount":950,"unit":"ml","item":"น้ำซุปไก่"}

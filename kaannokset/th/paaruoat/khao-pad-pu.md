@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/khao-pad-pu.md"
 translation_of: "khao-pad-pu"
+image:
+  src: paaruoat/khao-pad-pu.webp
+  alt: "ข้าวผัดปูกับไข่และต้นหอม (ภาพประกอบด้วย AI)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":2,"unit":"ชิ้น","item":"ไข่ไก่"}
   - {"amount":15,"unit":"ml","item":"ซอสปรุงรสภูเขาทอง"}

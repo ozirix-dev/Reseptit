@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/ayam-percik.md"
 translation_of: "ayam-percik"
+image:
+  src: paaruoat/ayam-percik.webp
+  alt: "Roasted chicken thigh coated in a reddish-brown spiced sauce (AI illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":1000,"unit":"g","item":"bone-in skinless chicken thighs, 4 pieces"}
   - {"amount":15,"unit":"g","item":"peeled ginger"}

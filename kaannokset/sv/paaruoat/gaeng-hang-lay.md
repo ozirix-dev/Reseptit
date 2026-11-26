@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/gaeng-hang-lay.md"
 translation_of: "gaeng-hang-lay"
+image:
+  src: paaruoat/gaeng-hang-lay.webp
+  alt: "Fläskcurry med ingefärsstrimlor och vitlök i rödbrun sås (AI-illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":680,"unit":"g","item":"benfri fläsksida"}
   - {"amount":680,"unit":"g","item":"benfri fläskbog"}

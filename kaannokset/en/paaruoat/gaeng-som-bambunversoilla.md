@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/gaeng-som-bambunversoilla.md"
 translation_of: "gaeng-som-bambunversoilla"
+image:
+  src: paaruoat/gaeng-som-bambunversoilla.webp
+  alt: "A cross-cut sea bass steak in yellow-orange broth with bamboo shoots (AI illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":600,"unit":"g","item":"whole gutted and scaled sea bass"}
   - {"amount":500,"unit":"g","item":"cooked canned bamboo shoots, drained"}

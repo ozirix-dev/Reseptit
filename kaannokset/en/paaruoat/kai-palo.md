@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/kai-palo.md"
 translation_of: "kai-palo"
+image:
+  src: paaruoat/kai-palo.webp
+  alt: "Pork belly pieces, fried tofu and a boiled egg in dark broth (AI illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":6,"unit":"pcs","item":"garlic cloves"}
   - {"amount":2,"unit":"pcs","item":"coriander roots"}

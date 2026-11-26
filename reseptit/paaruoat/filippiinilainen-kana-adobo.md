@@ -16,6 +16,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: paaruoat/filippiinilainen-kana-adobo.webp
+  alt: "Broilerin reisipala tummassa adobokastikkeessa (tekoälykuvitus)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":2000,"unit":"g","item":"luullisia nahallisia broilerin reisipaloja"}
   - {"amount":120,"unit":"ml","item":"väkiviinaetikkaa, 5 %"}

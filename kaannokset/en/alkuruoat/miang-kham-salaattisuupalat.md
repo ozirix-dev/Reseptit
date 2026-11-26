@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/alkuruoat/miang-kham-salaattisuupalat.md"
 translation_of: "miang-kham-salaattisuupalat"
+image:
+  src: alkuruoat/miang-kham-salaattisuupalat.webp
+  alt: "Five filled romaine lettuce leaves with peanuts and coconut (AI illustration)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":15,"unit":"ml","item":"chopped galangal for sauce"}
   - {"amount":30,"unit":"ml","item":"chopped shallot for sauce"}

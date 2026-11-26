@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/alkuruoat/tod-mun-pla.md"
 translation_of: "tod-mun-pla"
+image:
+  src: alkuruoat/tod-mun-pla.webp
+  alt: "ทอดมันปลาสามชิ้นสีเหลืองทอง (ภาพประกอบด้วย AI)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":450,"unit":"g","item":"เนื้อปลาสวายไม่มีก้างและหนัง"}
   - {"amount":30,"unit":"ml","item":"พริกแกงเผ็ด"}

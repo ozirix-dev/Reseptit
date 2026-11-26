@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/soto-ayam-kookosmaidolla.md"
 translation_of: "soto-ayam-kookosmaidolla"
+image:
+  src: paaruoat/soto-ayam-kookosmaidolla.webp
+  alt: "โซโตอายัมกับไก่หั่นเต๋า เส้นหมี่ข้าว และไข่ในน้ำซุปกะทิสีเหลือง (ภาพประกอบด้วย AI)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":200,"unit":"g","item":"เส้นหมี่ข้าวแห้ง"}
   - {"amount":30,"unit":"ml","item":"น้ำมันคาโนลา"}

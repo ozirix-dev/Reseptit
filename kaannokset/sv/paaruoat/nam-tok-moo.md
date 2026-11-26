@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/nam-tok-moo.md"
 translation_of: "nam-tok-moo"
+image:
+  src: paaruoat/nam-tok-moo.webp
+  alt: "Skivat grillat fläskkött med schalottenlök och färska örter (AI-illustration)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":680,"unit":"g","item":"benfri fläskbog"}
   - {"amount":30,"unit":"ml","item":"ostronsås till marinad"}

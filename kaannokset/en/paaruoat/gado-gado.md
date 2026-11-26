@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/gado-gado.md"
 translation_of: "gado-gado"
+image:
+  src: paaruoat/gado-gado.webp
+  alt: "Potatoes, vegetables, tempeh and egg with peanut sauce (AI illustration)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":80,"unit":"ml","item":"100% peanut butter"}
   - {"amount":20,"unit":"ml","item":"Thai red curry paste"}

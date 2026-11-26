@@ -16,6 +16,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: paaruoat/pla-neung-manao.webp
+  alt: "Kokonainen kala limetti-valkosipulikastikkeessa, chiliä ja yrttejä (tekoälykuvitus)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":900,"unit":"g","item":"kokonainen suomustettu ja perattu tilapia tai meribassi (kokonaispaino)"}
   - {"amount":82.5,"unit":"ml","item":"tuoretta limettimehua"}

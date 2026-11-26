@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/ayam-percik.md"
 translation_of: "ayam-percik"
+image:
+  src: paaruoat/ayam-percik.webp
+  alt: "ไก่ย่างส่วนสะโพกเคลือบซอสเครื่องเทศสีน้ำตาลแดง (ภาพประกอบด้วย AI)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":1000,"unit":"g","item":"สะโพกไก่ติดกระดูกไม่ติดหนัง 4 ชิ้น"}
   - {"amount":15,"unit":"g","item":"ขิงปอกเปลือก"}

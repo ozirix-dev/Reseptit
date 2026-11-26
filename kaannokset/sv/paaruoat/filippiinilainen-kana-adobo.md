@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/filippiinilainen-kana-adobo.md"
 translation_of: "filippiinilainen-kana-adobo"
+image:
+  src: paaruoat/filippiinilainen-kana-adobo.webp
+  alt: "Kycklinglår i mörk adobosås (AI-illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":2000,"unit":"g","item":"kycklinglår med ben och skinn"}
   - {"amount":120,"unit":"ml","item":"vit vinäger, 5 % syra"}

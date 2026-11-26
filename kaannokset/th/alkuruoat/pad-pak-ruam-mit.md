@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/alkuruoat/pad-pak-ruam-mit.md"
 translation_of: "pad-pak-ruam-mit"
+image:
+  src: alkuruoat/pad-pak-ruam-mit.webp
+  alt: "ผัดผักรวมกับเห็ดหอมบนจาน (ภาพประกอบด้วย AI)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":30,"unit":"ml","item":"น้ำมันคาโนลา"}
   - {"amount":3,"unit":"ชิ้น","item":"กระเทียมกลีบ"}

@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/alkuruoat/miang-kham-salaattisuupalat.md"
 translation_of: "miang-kham-salaattisuupalat"
+image:
+  src: alkuruoat/miang-kham-salaattisuupalat.webp
+  alt: "ผักกาดโรเมนห้าใบห่อเครื่องเมี่ยงคำกับถั่วลิสงและมะพร้าว (ภาพประกอบด้วย AI)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":15,"unit":"ml","item":"ข่าสับสำหรับน้ำเมี่ยง"}
   - {"amount":30,"unit":"ml","item":"หอมแดงสับสำหรับน้ำเมี่ยง"}

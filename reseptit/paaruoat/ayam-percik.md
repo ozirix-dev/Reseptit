@@ -16,6 +16,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: paaruoat/ayam-percik.webp
+  alt: "Paahdettu broilerin reisipala punaruskeassa maustekastikkeessa (tekoälykuvitus)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":1000,"unit":"g","item":"luullisia nahattomia broilerin reisipaloja, 4 kpl"}
   - {"amount":15,"unit":"g","item":"kuorittua inkivääriä"}

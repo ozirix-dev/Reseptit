@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/alkuruoat/miang-kham-salaattisuupalat.md"
 translation_of: "miang-kham-salaattisuupalat"
+image:
+  src: alkuruoat/miang-kham-salaattisuupalat.webp
+  alt: "Fem fyllda romansalladsblad med jordnötter och kokos (AI-illustration)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":15,"unit":"ml","item":"hackad galangal till såsen"}
   - {"amount":30,"unit":"ml","item":"hackad schalottenlök till såsen"}

@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/tom-saep-porsaan-kylkiluilla.md"
 translation_of: "tom-saep-porsaan-kylkiluilla"
+image:
+  src: paaruoat/tom-saep-porsaan-kylkiluilla.webp
+  alt: "Pork ribs in a light broth with chilli and herbs (AI illustration)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":400,"unit":"g","item":"bone-in pork ribs"}
   - {"amount":1,"unit":"l","item":"water"}

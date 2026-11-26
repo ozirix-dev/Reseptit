@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/gado-gado.md"
 translation_of: "gado-gado"
+image:
+  src: paaruoat/gado-gado.webp
+  alt: "กาโดกาโดกับมันฝรั่ง ผัก เทมเป้ ไข่ และซอสถั่วลิสง (ภาพประกอบด้วย AI)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":80,"unit":"ml","item":"เนยถั่วลิสง 100%"}
   - {"amount":20,"unit":"ml","item":"พริกแกงแดงไทย"}

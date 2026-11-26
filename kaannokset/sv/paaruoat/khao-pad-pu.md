@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/khao-pad-pu.md"
 translation_of: "khao-pad-pu"
+image:
+  src: paaruoat/khao-pad-pu.webp
+  alt: "Stekt ris med krabbkött, ägg och salladslök (AI-illustration)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":2,"unit":"st","item":"ägg"}
   - {"amount":15,"unit":"ml","item":"Golden Mountain kryddsås"}

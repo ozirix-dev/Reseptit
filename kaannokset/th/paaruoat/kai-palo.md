@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/kai-palo.md"
 translation_of: "kai-palo"
+image:
+  src: paaruoat/kai-palo.webp
+  alt: "ไข่พะโล้กับหมูสามชั้นและเต้าหู้ทอดในน้ำพะโล้สีเข้ม (ภาพประกอบด้วย AI)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":6,"unit":"ชิ้น","item":"กระเทียมกลีบ"}
   - {"amount":2,"unit":"ชิ้น","item":"รากผักชี"}

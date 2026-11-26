@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/gai-pad-med-mamuang.md"
 translation_of: "gai-pad-med-mamuang"
+image:
+  src: paaruoat/gai-pad-med-mamuang.webp
+  alt: "Kycklingbitar, cashewnötter och paprika i en glansig woksås (AI-illustration)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":400,"unit":"g","item":"kycklingbröstfilé"}
   - {"amount":120,"unit":"ml","item":"majsstärkelse till panering"}

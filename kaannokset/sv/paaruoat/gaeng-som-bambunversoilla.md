@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/gaeng-som-bambunversoilla.md"
 translation_of: "gaeng-som-bambunversoilla"
+image:
+  src: paaruoat/gaeng-som-bambunversoilla.webp
+  alt: "En tvärskuren havsabborreskiva i gulorange buljong med bambuskott (AI-illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":600,"unit":"g","item":"hel urtagen och fjällad havsabborre"}
   - {"amount":500,"unit":"g","item":"kokta konserverade bambuskott, avrunna"}

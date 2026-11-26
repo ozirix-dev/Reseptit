@@ -16,6 +16,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: paaruoat/gado-gado.webp
+  alt: "Perunaa, kasviksia, tempeä ja munaa maapähkinäkastikkeessa (tekoälykuvitus)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":80,"unit":"ml","item":"100-prosenttista maapähkinävoita"}
   - {"amount":20,"unit":"ml","item":"punaista thaicurrytahnaa"}

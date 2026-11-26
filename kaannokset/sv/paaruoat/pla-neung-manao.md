@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/pla-neung-manao.md"
 translation_of: "pla-neung-manao"
+image:
+  src: paaruoat/pla-neung-manao.webp
+  alt: "Hel fisk i lime- och vitlökssås med chili och örter (AI-illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":900,"unit":"g","item":"hel fjällad och urtagen tilapia eller havsabborre (helvikt)"}
   - {"amount":82.5,"unit":"ml","item":"färsk limejuice"}

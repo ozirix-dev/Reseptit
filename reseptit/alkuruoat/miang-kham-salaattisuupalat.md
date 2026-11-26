@@ -16,6 +16,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: alkuruoat/miang-kham-salaattisuupalat.webp
+  alt: "Viisi täytettyä romainesalaatin lehteä, pähkinöitä ja kookosta (tekoälykuvitus)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":15,"unit":"ml","item":"hienonnettua galangalia kastikkeeseen"}
   - {"amount":30,"unit":"ml","item":"hienonnettua salottisipulia kastikkeeseen"}

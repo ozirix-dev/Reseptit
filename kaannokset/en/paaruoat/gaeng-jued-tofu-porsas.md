@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/gaeng-jued-tofu-porsas.md"
 translation_of: "gaeng-jued-tofu-porsas"
+image:
+  src: paaruoat/gaeng-jued-tofu-porsas.webp
+  alt: "Tofu cubes, minced pork and Chinese cabbage in clear broth (AI illustration)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":950,"unit":"ml","item":"water"}
   - {"amount":950,"unit":"ml","item":"chicken stock"}

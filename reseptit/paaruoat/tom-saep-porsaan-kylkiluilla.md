@@ -16,6 +16,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: paaruoat/tom-saep-porsaan-kylkiluilla.webp
+  alt: "Porsaan kylkiluita vaaleassa liemessä chilin ja yrttien kanssa (tekoälykuvitus)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":400,"unit":"g","item":"luullisia porsaan kylkiluita"}
   - {"amount":1,"unit":"l","item":"vettä"}

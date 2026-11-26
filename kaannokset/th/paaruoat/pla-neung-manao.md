@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/pla-neung-manao.md"
 translation_of: "pla-neung-manao"
+image:
+  src: paaruoat/pla-neung-manao.webp
+  alt: "ปลาทั้งตัวราดน้ำมะนาวกระเทียมกับพริกและสมุนไพร (ภาพประกอบด้วย AI)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":900,"unit":"g","item":"ปลานิลหรือปลากะพงขอดเกล็ดควักไส้ (น้ำหนักทั้งตัว)"}
   - {"amount":82.5,"unit":"ml","item":"น้ำมะนาวสด"}

@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/gaeng-hang-lay.md"
 translation_of: "gaeng-hang-lay"
+image:
+  src: paaruoat/gaeng-hang-lay.webp
+  alt: "แกงฮังเลหมูกับขิงซอยและกระเทียมในน้ำแกงสีน้ำตาลแดง (ภาพประกอบด้วย AI)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":680,"unit":"g","item":"หมูสามชั้นไม่มีกระดูก"}
   - {"amount":680,"unit":"g","item":"หมูส่วนไหล่ไม่มีกระดูก"}

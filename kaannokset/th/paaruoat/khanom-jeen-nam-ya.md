@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/khanom-jeen-nam-ya.md"
 translation_of: "khanom-jeen-nam-ya"
+image:
+  src: paaruoat/khanom-jeen-nam-ya.webp
+  alt: "เส้นหมี่ข้าวราดน้ำยาปลาสีเหลืองกับแตงกวาและโหระพา (ภาพประกอบด้วย AI)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":800,"unit":"g","item":"ปลาแมคเคอเรลทั้งตัวที่ควักไส้แล้ว"}
   - {"amount":800,"unit":"ml","item":"หัวกะทิไม่เติมน้ำตาล"}

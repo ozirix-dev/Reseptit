@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/pla-rad-prik.md"
 translation_of: "pla-rad-prik"
+image:
+  src: paaruoat/pla-rad-prik.webp
+  alt: "Brynta fiskfiléer i rödbrun chilisås (AI-illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":600,"unit":"g","item":"tjocka benfria vita fiskfiléer"}
   - {"amount":60,"unit":"ml","item":"majsstärkelse till panering"}

@@ -16,6 +16,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: paaruoat/pla-rad-prik.webp
+  alt: "Ruskistuneita kalafileitä punaruskeassa chilikastikkeessa (tekoälykuvitus)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":600,"unit":"g","item":"ruodottomia paksuja valkolihaisia kalafileitä"}
   - {"amount":60,"unit":"ml","item":"maissitärkkelystä panerointiin"}

@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/nam-tok-moo.md"
 translation_of: "nam-tok-moo"
+image:
+  src: paaruoat/nam-tok-moo.webp
+  alt: "น้ำตกหมูย่างหั่นชิ้นกับหอมแดงและสมุนไพรสด (ภาพประกอบด้วย AI)"
+  width: 1672
+  height: 941
 ingredients:
   - {"amount":680,"unit":"g","item":"เนื้อไหล่หมูไม่มีกระดูก"}
   - {"amount":30,"unit":"ml","item":"ซอสหอยนางรมสำหรับหมัก"}

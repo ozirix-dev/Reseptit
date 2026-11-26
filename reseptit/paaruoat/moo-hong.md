@@ -16,6 +16,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: paaruoat/moo-hong.webp
+  alt: "Kerroksellisia porsaan kylkipaloja tummassa haudutusliemessä (tekoälykuvitus)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":4,"unit":"kpl","item":"valkosipulinkynttä"}
   - {"amount":1,"unit":"tl","item":"kokonaisia mustapippureita"}

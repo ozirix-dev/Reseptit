@@ -17,6 +17,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/paaruoat/ayam-percik.md"
 translation_of: "ayam-percik"
+image:
+  src: paaruoat/ayam-percik.webp
+  alt: "Stekt kycklinglår täckt av rödbrun kryddsås (AI-illustration)"
+  width: 1200
+  height: 800
 ingredients:
   - {"amount":1000,"unit":"g","item":"kycklinglår med ben utan skinn, 4 st"}
   - {"amount":15,"unit":"g","item":"skalad ingefära"}
