@@ -801,6 +801,26 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
 });
 
 
+async function usePrintDisclosureFallback(page: import("playwright").Page) {
+  const removed = await page.evaluate(() => {
+    let count = 0;
+    for (const sheet of document.styleSheets) {
+      for (const media of sheet.cssRules) {
+        if (!(media instanceof CSSMediaRule) || media.conditionText !== "print") continue;
+        for (let index = media.cssRules.length - 1; index >= 0; index--) {
+          const rule = media.cssRules[index];
+          if (rule instanceof CSSSupportsRule && rule.conditionText.includes("::details-content")) {
+            media.deleteRule(index);
+            count++;
+          }
+        }
+      }
+    }
+    return count;
+  });
+  assert.equal(removed, 1, "simulate a browser using the print fallback");
+}
+
 // UX-009-002: use real published recipe routes, not a separate rendering
 // implementation. Generate an actual A4 PDF as well as inspecting print media.
 test("WP-05 four-language recipe printing preserves selections, nutrition and cooking state", async t => {
@@ -883,6 +903,7 @@ test("WP-05 four-language recipe printing preserves selections, nutrition and co
         assert.ok(await macroList.isVisible(), locale + ": closed nutrition has printed content");
         assert.deepEqual(await macroList.locator("dd").allInnerTexts(), macroValues);
         assert.ok(await nutrition.getByText(toolUi[locale].nutrition, { exact: true }).isVisible());
+        assert.equal(await page.locator(".recipe-print-fallback:visible").count(), 0, locale + ": essential text appears once");
         assert.ok(await page.getByText(portionCopy[locale].scope, { exact: true }).isVisible());
         const controls = page.locator(".recipe-page select, .recipe-page button, .recipe-page input");
         for (const control of await controls.all()) assert.equal(await control.isVisible(), false, locale + ": no interactive controls on paper");
@@ -927,6 +948,14 @@ test("WP-05 four-language recipe printing preserves selections, nutrition and co
         assert.ok(await page.locator("[data-print-recipe-nutrition] dl").isVisible(), locale + ": print styles available without hydration");
         assert.ok(await page.locator(".ingredient-list").isVisible());
         assert.ok(await page.locator("#recipe-instructions").isVisible());
+        await usePrintDisclosureFallback(page);
+        const details = page.locator("[data-print-recipe-nutrition]");
+        const fallback = page.locator("[data-print-recipe-nutrition] + .recipe-print-fallback");
+        assert.equal(await details.isVisible(), false);
+        assert.ok(await fallback.isVisible());
+        assert.equal(await fallback.locator("dd:visible").count(), 4);
+        const estimate = page.locator(".recipe-glycemic-load .recipe-print-fallback:visible");
+        assert.ok(await estimate.count(), locale + ": GL explanation survives without JavaScript or disclosure support");
       } finally { await noJs.close(); }
     }
 
@@ -953,7 +982,14 @@ test("WP-05 four-language recipe printing preserves selections, nutrition and co
       assert.equal(await side.locator("[data-side-carbohydrate]").innerText(), sideCarbs);
       assert.equal(await side.locator("[data-side-combined-carbohydrate]").innerText(), total);
       assert.equal(await side.locator("#recipe-side-weight").isVisible(), false);
+      await usePrintDisclosureFallback(page);
+      const sideFallback = page.locator("[data-side-comparison] + .recipe-print-fallback");
+      assert.equal(await side.isVisible(), false);
+      assert.ok(await sideFallback.isVisible());
+      assert.match(await sideFallback.innerText(), /100 g/);
+      for (const amount of [sideCarbs, total]) assert.ok((await sideFallback.innerText()).includes(amount));
       await page.emulateMedia({ media: "screen" });
+      assert.equal(await sideFallback.isVisible(), false);
       assert.equal(await side.evaluate((node: HTMLDetailsElement) => node.open), false);
       await side.locator("summary").click();
       assert.equal(await side.locator("#recipe-side-weight").inputValue(), "100");
@@ -972,6 +1008,10 @@ test("WP-05 four-language recipe printing preserves selections, nutrition and co
       const missingNutrition = page.locator("[data-print-recipe-nutrition]");
       assert.ok(await missingNutrition.getByText(toolUi.fi.missing, { exact: true }).isVisible());
       assert.equal(await missingNutrition.locator("dd").count(), 0);
+      await usePrintDisclosureFallback(page);
+      const missingFallback = page.locator("[data-print-recipe-nutrition] + .recipe-print-fallback");
+      assert.ok(await missingFallback.getByText(toolUi.fi.missing, { exact: true }).isVisible());
+      assert.equal(await missingFallback.locator("dd").count(), 0);
     } finally { await context.close(); }
     assert.equal(completed, 4);
     t.diagnostic("WP-05 summary " + JSON.stringify({ a4Prints: completed, cooking: completed, noJs: completed, side: "PASS", partial: "PASS", missing: "PASS" }));
