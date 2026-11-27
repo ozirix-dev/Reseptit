@@ -64,7 +64,11 @@ async function markdownFiles(dir: string): Promise<string[]> {
 
 const instructionHeadings = ["Valmistus", "Preparation", "Instructions", "Tillagning", "Gör så här", "การทำ", "วิธีทำ"];
 const descriptionHeadings = ["Kuvaus", "Description", "Beskrivning", "คำอธิบาย"];
-const noteHeadings = ["Muistiinpanot", "Huomioita", "Notes", "Anteckningar", "หมายเหตุ"];
+const noteHeadings = ["Muistiinpanot", "Huomioita", "Huomiot", "Notes", "Anteckningar", "Anmärkningar", "หมายเหตุ"];
+const safetyHeadings = [
+  "Säilytys ja turvallisuus", "Storage and safety", "Förvaring och säkerhet",
+  "การเก็บและความปลอดภัย", "การเก็บรักษาและความปลอดภัย",
+];
 const nutritionBasisHeading = "Ravintoarvojen laskentaperuste";
 const publicNutritionBasis = new Set([
   "karnivore-jauhelihakulho-munalla",
@@ -75,9 +79,10 @@ const sourceOnlyHeadings = [
   "Ainekset", "Ingredients", "Ingredienser", "ส่วนผสม", "วัตถุดิบ",
   "Täytteet ja kuorrutteet", "Annostus", "Perinne, lähde ja nimeäminen",
   "Tausta ja erottuvuus", "Tausta", "Toimituksellinen alkuperä", "Tekijän tunnustus",
+  "Lähteet", "Sources", "Källor", "แหล่งอ้างอิง", "แหล่งที่มา",
 ];
 const classifiedHeadings = new Set([
-  ...instructionHeadings, ...descriptionHeadings, ...noteHeadings, ...sourceOnlyHeadings, nutritionBasisHeading,
+  ...instructionHeadings, ...descriptionHeadings, ...noteHeadings, ...safetyHeadings, ...sourceOnlyHeadings, nutritionBasisHeading,
 ].map(heading => heading.toLowerCase()));
 
 function assertClassifiedRecipeSections(markdown: string, file: string): void {
@@ -97,8 +102,22 @@ function section(markdown: string, titles: string[]): string {
   return markdown.slice(start, next < 0 ? undefined : start + next).trim();
 }
 
+const noteHeadingKeys = new Set(noteHeadings.map(title => title.toLowerCase()));
+const safetyHeadingKeys = new Set(safetyHeadings.map(title => title.toLowerCase()));
+
 export function recipePreparationSections(markdown: string) {
-  return { instructions: section(markdown, instructionHeadings), notes: section(markdown, noteHeadings) };
+  const headings = [...markdown.matchAll(/^##[ \t]+([^\r\n]+)\r?$/gm)];
+  const notes = headings.flatMap((heading, index) => {
+    const title = heading[1].trim();
+    const key = title.toLowerCase();
+    const safety = safetyHeadingKeys.has(key);
+    if (!safety && !noteHeadingKeys.has(key)) return [];
+    const start = heading.index + heading[0].length;
+    const content = markdown.slice(start, headings[index + 1]?.index).trim();
+    if (!content) return [];
+    return [safety ? `### ${title}\n\n${content}` : content];
+  });
+  return { instructions: section(markdown, instructionHeadings), notes: notes.join("\n\n") };
 }
 
 function stripHtml(value: string): string {

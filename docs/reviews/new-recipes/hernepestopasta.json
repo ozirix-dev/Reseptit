@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "hernepestopasta",
+  "source_path": "reseptit/paaruoat/hernepestopasta.md",
+  "source_sha256": "dd03c7512992bbd605175abe4359135fd8cb04726dc6a0d9c58b8bcf6426213d",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/hernepestopasta/",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/pakastevihannekset/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/hernepestopasta.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/hernepestopasta.webp",
+    "bytes": 111966,
+    "sha256": "ab228ca333c5e2ce6b5e75d85a76567fe5c46d7f5b07f1d310f013889f137ef5",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/hernepestopasta.md",
+        "sha256": "12d8ddc9b708a7f8836b7a98cc06184d843cad0d188474cb3325af8b45ddba86"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/hernepestopasta.md",
+        "sha256": "5ca5f1a8eb677dd35d99323ae8cd6e3b7080682f4b594b31e900c5073a27c193"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/hernepestopasta.md",
+        "sha256": "928543ce77e649850a0629d9c50de6259ecef3010a13ad7b393c8d8a641e31f3"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/hernepestopasta.md",
+        "sha256": "f4939d71c2a89af8d38c4855aed1acdf108925b70ab4ab30b463fd3c7202c03b"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "29a98c322f83a1b71bc2baff5f26e366ac3338c9e18185a946fad067cfdedcd1"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/hernepestopasta.md",
+        "language": "fi",
+        "slug": "hernepestopasta",
+        "sha256": "dd03c7512992bbd605175abe4359135fd8cb04726dc6a0d9c58b8bcf6426213d",
+        "semantic_sha256": "27939d9d15e3469803b07fbe0632a1df986da5abf0119432e02c68c06b752336"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/hernepestopasta.md",
+        "language": "en",
+        "slug": "hernepestopasta-en",
+        "sha256": "148f6cde485d9430cdc2534be1b97633bb4b62e9d141c37c2e8e04bec9c8024f",
+        "semantic_sha256": "50b708f92b76ed6e362889aaef0075d4847ce024a5c3fad7447b0ec000c3cdd6"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/hernepestopasta.md",
+        "language": "sv",
+        "slug": "hernepestopasta-sv",
+        "sha256": "21000372fe95998fd8f1769021b55eefe48d4c3e8cb9bb49a0161b67a0b54c99",
+        "semantic_sha256": "cc89be0c71e5c4c0bb8aec81fda440fb61951f718dd3b78daf89c354edeb1c33"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/hernepestopasta.md",
+        "language": "th",
+        "slug": "hernepestopasta-th",
+        "sha256": "c46b8ad211774812de38f1eb40bdd4333e54e3e1fab38d3b6048de7ffc3cd770",
+        "semantic_sha256": "00d0124dc29d0d17b1eb8c389ddc4ccb0f09eb97f1d5a14161d2b85028f789d4"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja kokonaisaika 30 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "1dl cashew'n ja basilikan massat, ranskankerman rasvapitoisuus, sipulien syötävät massat, pasta-/öljylähde."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}

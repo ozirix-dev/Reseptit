@@ -19,12 +19,19 @@ function AnalyticsChoice({ locale, prompt = false }: { locale: RecipeLocale; pro
   const labels = privacyCopy[locale];
   if (!available || (prompt && choice !== null)) return null;
 
+  function choose(next: "granted" | "denied") {
+    // The prompt disappears after an explicit choice. Return focus to
+    // the persistent main landmark.
+    if (prompt) document.getElementById("main")?.focus();
+    setAnalyticsChoice(next);
+  }
+
   return <div className="privacy-choice">
     <p aria-live={prompt ? undefined : "polite"}>{choice === "granted" ? labels.enabled : choice === "denied" ? labels.disabled : labels.consent}
       {prompt && <> <Link to={privacyPaths[locale]}>{labels.title}</Link></>}</p>
     <div className="recipe-actions">
-      <button type="button" aria-pressed={choice === "granted"} onClick={() => setAnalyticsChoice("granted")}>{labels.allow}</button>
-      <button type="button" aria-pressed={choice === "denied"} onClick={() => setAnalyticsChoice("denied")}>{labels.deny}</button>
+      <button type="button" aria-pressed={choice === "granted"} onClick={() => choose("granted")}>{labels.allow}</button>
+      <button type="button" aria-pressed={choice === "denied"} onClick={() => choose("denied")}>{labels.deny}</button>
     </div>
   </div>;
 }

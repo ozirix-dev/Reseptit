@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "recipe_id": "pla-rad-prik",
+  "source_path": "reseptit/paaruoat/pla-rad-prik.md",
+  "source_sha256": "37097bb12454ee7202329875d4b81df663fca6ccd66fafe6051fe9fc1b2ff9a1",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://hungryinthailand.com/thai-crispy-fish-tamarind-sauce/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/pla-rad-prik.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/pla-rad-prik.webp",
+    "bytes": 187780,
+    "sha256": "9d2412834d2e51430087dac497a6d557b7d2a99addeb9e9d2c6799414c459622",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/pla-rad-prik.md",
+        "sha256": "155a0a778f999573ca9507611fad23a41898e632e8c8bbc7c202d53944e5bb4b"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/pla-rad-prik.md",
+        "sha256": "c3a50058598806652194576a13ba8711044f10364f47a1b9d44335023305e5fc"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/pla-rad-prik.md",
+        "sha256": "f1b7df7f09018eec103aa021b97ea6fc72cbf03fb9c92f7c2708c49ffb478258"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/pla-rad-prik.md",
+        "sha256": "c91769c4c3be89cc86aedc6eebc3290f666dc6b2246febec23419fa6c3fcd09e"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "67506525b17200fa4668e9afaa0eee2c6c86ec160d3801f7153f8e63065c5400"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/pla-rad-prik.md",
+        "language": "fi",
+        "slug": "pla-rad-prik",
+        "sha256": "37097bb12454ee7202329875d4b81df663fca6ccd66fafe6051fe9fc1b2ff9a1",
+        "semantic_sha256": "71ce70ec154b9f13a35d4d615b20037d6c7519d5ee55b1bf5069bfed2fdd8c38"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/pla-rad-prik.md",
+        "language": "en",
+        "slug": "pla-rad-prik-en",
+        "sha256": "d5b2f2416a36db2fe8537a391c19a666844ad2245604d0450621d01ba6671aee",
+        "semantic_sha256": "ddb9f33f5f910c40bb9684f662504d9c4622a92e192e5bf416c9f6c8b094eb7d"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/pla-rad-prik.md",
+        "language": "sv",
+        "slug": "pla-rad-prik-sv",
+        "sha256": "f5a814f0f75d980a60191443a5a9b7134e254244ac593406096cc6121ac3105d",
+        "semantic_sha256": "b25e2e8d7f8082cfbd87c4489f69d6a31df9c397a1a333228452d03c0da6c999"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/pla-rad-prik.md",
+        "language": "th",
+        "slug": "pla-rad-prik-th",
+        "sha256": "d9549fee2153ca2c1f1960063844e7f5ff6ad57dbe72ab626dfcdd041a97aa6e",
+        "semantic_sha256": "91be639e6fed2088fa0c36a896d2d31c29c9492c46c7078eea7b5d6b0b7e8c51"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 2 ja aika 40 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kalalaji määrittelemätön, paistoon varatun 100 ml öljyn imeytymä ja tärkkelyksen tarttuma, tamarindituote."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "35 g palmusokeria, maissitärkkelyksen syöty osuus ja tamarindi; GI/HH-näyttö puuttuu."
+    }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
+  }
+}

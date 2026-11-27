@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "banaani-kaurapannukakut",
+  "source_path": "reseptit/valipalat/banaani-kaurapannukakut.md",
+  "source_sha256": "239c85f9e5ac091a265c4aa9c0cd2c3afc590af78ba4532035519f5cbd42eb66",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.ambitiouskitchen.com/banana-oatmeal-pancakes/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/banaani-kaurapannukakut.json",
+  "image_evidence": {
+    "path": "kuvat/valipalat/banaani-kaurapannukakut.webp",
+    "bytes": 119114,
+    "sha256": "37e31dc83ec017fb35ec20c0ca5f763c8c61ebcc5d44fc5cdefa68e9ba0ced7b",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/valipalat/banaani-kaurapannukakut.md",
+        "language": "fi",
+        "slug": "banaani-kaurapannukakut",
+        "sha256": "239c85f9e5ac091a265c4aa9c0cd2c3afc590af78ba4532035519f5cbd42eb66",
+        "semantic_sha256": "f68ed1b4000de41820da768c6d05405b274a1c6988508b4be19ace1f010a8ebd"
+      },
+      {
+        "path": "kaannokset/en/valipalat/banaani-kaurapannukakut.md",
+        "language": "en",
+        "slug": "banaani-kaurapannukakut-en",
+        "sha256": "b88adf138fd5725a2273a226641e90a4dd87ddd6752a968d5df9248c37db5f51",
+        "semantic_sha256": "60abbf9dd703b69b12c7e3f1d4dcbbcf1e27ab94224645786bc2e21e2d85a0f5"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/banaani-kaurapannukakut.md",
+        "language": "sv",
+        "slug": "banaani-kaurapannukakut-sv",
+        "sha256": "b35b4719fe31a5e10751a0756c6b42d3a7f3ab5a958c06fe880824c31c908e07",
+        "semantic_sha256": "e68cc328983e4799d79428de952ff2562144529a38a8615153bf44a21db3c669"
+      },
+      {
+        "path": "kaannokset/th/valipalat/banaani-kaurapannukakut.md",
+        "language": "th",
+        "slug": "banaani-kaurapannukakut-th",
+        "sha256": "4e8d876f7833770350fa869f0220d91674903cbc523e2c870c4f1687f3a63c51",
+        "semantic_sha256": "450e7719522818638e36f8b4716e79ec6f1d6ec90e6e175a24635e3d10d6d3d3"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Jauhetuista kaurahiutaleista tehtävä pannutaikina eroaa banaanimunakkaasta ja uunipannukakusta. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 3 ja kokonaisaika 25 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kolme annosta. Per annos noin kolme pientä pannukakkua. Kaikki paistoöljy lasketaan mukaan rasvan ylärajan varmistamiseksi. Mantelijuoma, kaura, vaniljauute ja osa muista raaka-aineista ovat AFCD-vertailuja. Juoma arvioidaan alkuperäisen vertailureseptin 120 g puolikkaan kupin annosmassalla."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

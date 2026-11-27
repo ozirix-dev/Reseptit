@@ -101,3 +101,53 @@ tarkistuksen läpäisemiseksi.
 Kokki-Codexin uusi tunniste koskee tulevia Codexille erikseen osoitettuja
 tehtäviä. Yhteiset ohjeet luetaan GitHubista; erillisiä chat-keskusteluja
 ei voi automaattisesti synkronoida pelkällä GitHub-päivityksellä.
+
+## 8. Codex- ja ChatGPT-keskustelujen viestintä
+
+GitHub on Reseptit-projektin työjonon ja päätösten totuuden lähde. Chat 1–n:n työjono on saatavilla myös [ReportHubissa](https://github.com/ozirix-dev/ReportHub). Kun viesti muuttaa PR:n tai työjonon tilaa, kirjaa päätös ja kuittaus sovittuun GitHub-PR:ään tai issueen. Käytä keskusteluviestissä linkkiä GitHub-merkintään.
+
+- **Codex N ↔ Chat N.** Käytä käyttäjän nimeämää Codex N:n ja Chat N:n
+  paria riippumatta numerosta. Osoita vastaus alkuperäiselle lähettäjälle.
+  Jos kuittausta ei voi välittää tai varmentaa, merkitse se odottavaksi.
+- **Kokki-Codex ↔ Chat 1–n.** Lähetä työkohtainen viesti sille Chat N:lle,
+  jonka vastuulle asia kuuluu. Chat 1 (Pääkokki) vastaanottaa Kokki-Codexin
+  Draft-PR-luovutukset ja vastaa yksin Ready-siirroista, mergeistä ja main-CI:stä.
+- **Kohteen tarkistus.** ChatGPT-kohde tarkistetaan kirjautuneessa Bravessa
+  projektin, roolin ja aktiivisen keskustelutunnisteen perusteella.
+  Codex-kohteesta tarkistetaan Reseptit-projekti ja chatin tunniste.
+  Jos keskustelu on vaihtunut, varmista ajantasainen tunniste ennen lähettämistä.
+  Käytä ChatGPT-kohteeseen Playwright-skillin viestintäohjetta ja Codex-kohteeseen
+  käytettävissä olevaa Codex-chatin viestityökalua.
+- **Lähetys ja kuittaus.** Lähetä käyttäjän valtuuttama viesti oikeaan
+  keskusteluun. Tarkista lähetyksen jälkeen, että viesti näkyy siellä.
+  Jos tulos jää epäselväksi, etsi sama viesti ennen uutta yritystä.
+  Kuittaus saadaan, kun vastaanottaja vahvistaa viestin vastaanoton.
+  Tee GitHub-toimet projektin omistajuus-, Repo Guard- ja hyväksyntäohjeiden mukaan.
+- **Kuittauksen paluureitti.** Jos Chat N vahvistaa vastaanoton Bravessa ja
+  suora lähetys Codex N:ään ei onnistu, välitä Chat N:n kuittaus käyttäjän
+  valtuuttamana sanatarkasti saman numeron Codex N:lle. Varmista Reseptit-projekti,
+  Codex-rooli ja keskustelutunniste. Kerro, mistä chatista kuittaus tuli, ja
+  pyydä Codex N:ää vahvistamaan vastaanotto samalla viestitunnisteella.
+  Tarkista Codex N:n vastaus ja merkitse paluu vahvistetuksi vasta, kun
+  tunniste täsmää. Kerro tarvittaessa, että paluu kulki välityksen kautta.
+
+### Kopioitava viestipohja
+
+```text
+Projekti: Reseptit / ozirix-dev/Reseptit
+Lähettäjä: <Kokki-Codex / Codex N / Chat N>
+Vastaanottaja: <Kokki-Codex / Codex N / Chat N>
+Asia: <tilannepäivitys, kysymys, luovutus tai kuittaus>
+Viestitunniste: <yksilöllinen tunniste>
+Tehtävä ja tulos: <lyhyt tilannekuva>
+PR tai issue: <linkki tai ei sovellu>
+Haara ja rajatut tiedostot: <haara ja tiedostot tai ei sovellu>
+HEAD/base-SHA: <täydet SHA:t tai ei sovellu>
+Testit ja CI: <tulokset ja testattu SHA; merkitse keskeneräiset>
+Esteet, HOLD-ehdot ja riippuvuudet: <olennaiset tiedot>
+Vastaanottajalta odotetaan: <täsmätoimi, vastaus, kuittaus tai tiedoksi>
+```
+
+Esimerkiksi Codex 12 lähettää Chat 12:lle työkohtaiseen kysymykseen
+liittyvän viestin, ja Chat 12 osoittaa vastauksen Codex 12:lle.
+Kokki-Codex osoittaa Draft-PR:n luovutuksen Chat 1:lle.
