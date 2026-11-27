@@ -38,9 +38,9 @@ ingredients:
   - amount: 140
     unit: "g"
     item: "baby spinach"
-  - amount: 2
-    unit: "pcs"
-    item: "ripe avocados"
+  - amount: 240
+    unit: "g"
+    item: "ripe avocado flesh (about 2 medium avocados)"
 image:
   src: "paaruoat/katkarapu-avokadosalaatti-pinaatilla.webp"
   alt: "Cooked peeled shrimp, avocado slices and baby spinach on a plate."
@@ -54,12 +54,12 @@ Cooked prawns, avocado and spinach are dressed with lime and sesame.
 
 ## Preparation
 
-1. Check the prawns are cooked and ready to eat. Thaw in fridge if necessary, drain and keep chilled.
+1. Check the prawns are cooked and ready to eat. Thaw in the fridge if needed. Drain, weigh out 200 g and keep the prawns chilled.
 2. Chop chilli and garlic. Mix the chopped chilli and garlic with lime zest and juice, soy sauce and sesame oil; toss prawns in some dressing.
-3. Wash and dry spinach, peel and slice avocados. Toss spinach in remaining dressing; add avocado and prawns. Serve four cold portions immediately.
+3. Wash and dry spinach, peel and pit the avocados, then weigh out 240 g of flesh and slice it. Toss spinach in remaining dressing; add avocado and prawns. Divide the salad and any dressing left in the bowls evenly among four plates. Serve chilled immediately.
 
 ## Notes
 
 - Contains crustaceans, soya and sesame; soy sauce may contain wheat. Follow use-by date and storage instructions.
 - Reference: https://www.bbcgoodfood.com/recipes/spinach-avocado-prawn-salad
-- Reference: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures
+- Reference: https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely

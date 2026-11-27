@@ -54,9 +54,9 @@ Fish and peas in a milk-based sauce are topped with mashed potatoes.
 
 ## Preparation
 
-1. Heat oven to 200 °C. Boil potato chunks 15–20 min, drain and mash with 30 ml milk.
+1. Heat the oven to 200 °C (180 °C fan). Boil potato chunks 15–20 min, drain and mash with 30 ml milk.
 2. Whisk remaining milk, spread and flour over heat until bubbling and thickened. Add peas and parsley.
-3. Cut thawed fish into 3 cm pieces and place in baking dish. Add sauce, mash and cheese. Bake 25–30 min or longer until the coldest part of filling reaches 74 °C. Divide into four.
+3. If using frozen fish, thaw it in the fridge first and drain it. Weigh out 300 g of fillet. Cut the fish into roughly 3 cm pieces and put them in an ovenproof dish. Add sauce, mash and cheese. Bake 25–30 min or longer until the coldest part of filling reaches 74 °C. Divide into four.
 
 ## Notes
 
