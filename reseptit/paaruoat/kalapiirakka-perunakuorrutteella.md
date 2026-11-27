@@ -44,7 +44,7 @@ ingredients:
     item: "ruodotonta nahatonta seitifileetä"
   - amount: 25
     unit: "g"
-    item: "raastettua kypsytettyä vähärasvaista cheddaria"
+    item: "raastettua kypsytettyä vähärasvaisempaa cheddaria"
 ---
 
 # Kalapiirakka perunakuorrutteella
