@@ -118,18 +118,6 @@ try {
         exit 3
     }
 
-    if (Test-Path -LiteralPath $receiptPath) {
-        $receipt = Get-Content -LiteralPath $receiptPath -Raw | ConvertFrom-Json -AsHashtable
-        if ($receipt.key -cne $key -or $receipt.state -ne 'CI_VERIFIED' -or
-            $receipt.testedCommit -cnotmatch '^[0-9a-f]{40}$') {
-            throw 'Existing receipt is invalid. Inspect it before trying again.'
-        }
-        Assert-CurrentRevision
-        $receipt.reused = $true
-        $receipt | ConvertTo-Json -Depth 4
-        exit 0
-    }
-
     $startedAt = [DateTime]::UtcNow.ToString('o')
     Write-Verbose "Checking GitHub release verification and exact Recipe site evidence for PR #$PullRequest."
     $releaseJobs = Read-Api "actions/runs/$ReleaseRun/attempts/$ReleaseAttempt/jobs"
@@ -151,7 +139,7 @@ try {
     }
     Assert-CurrentRevision
 
-    $receipt = [ordered]@{
+    $evidence = [ordered]@{
         state = 'CI_VERIFIED'
         key = $key
         pullRequest = "$baseUrl/pull/$PullRequest"
@@ -160,10 +148,27 @@ try {
         testedCommit = $testedCommit
         release = "$baseUrl/actions/runs/$ReleaseRun/attempts/$ReleaseAttempt"
         ci = "$baseUrl/actions/runs/$CiRun/attempts/$CiAttempt"
-        releaseUpdatedAt = $release.updated_at
-        startedAt = $startedAt
-        verifiedAt = [DateTime]::UtcNow.ToString('o')
     }
+
+    if (Test-Path -LiteralPath $receiptPath) {
+        $receipt = Get-Content -LiteralPath $receiptPath -Raw | ConvertFrom-Json -AsHashtable -NoEnumerate
+        if ($receipt -isnot [System.Collections.IDictionary]) {
+            throw 'Existing receipt is not a JSON object.'
+        }
+        foreach ($field in $evidence.Keys) {
+            if ($receipt[$field] -isnot [string] -or $receipt[$field] -cne $evidence[$field]) {
+                throw "Existing receipt conflicts with verified field '$field'."
+            }
+        }
+        $receipt.reused = $true
+        $receipt | ConvertTo-Json -Depth 4
+        exit 0
+    }
+
+    $receipt = $evidence
+    $receipt.releaseUpdatedAt = $release.updated_at
+    $receipt.startedAt = $startedAt
+    $receipt.verifiedAt = [DateTime]::UtcNow.ToString('o')
     $json = $receipt | ConvertTo-Json -Depth 4
     [IO.File]::WriteAllText("$receiptPath.tmp", $json)
     [IO.File]::Move("$receiptPath.tmp", $receiptPath)

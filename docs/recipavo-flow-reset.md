@@ -17,11 +17,13 @@ Oletuksena skripti tarkistaa tilan kerran. Parametri WaitSeconds jatkaa odotusta
 
 Aja samoilla parametreilla uudelleen, kun GitHub näyttää odotetun ajon valmistuneen. Rajatulla odotusajalla skripti siirtyy seuraavaan tarkistukseen saman prosessin aikana. Environmentin hyväksyntää odottava ajo palauttaa tilan heti.
 
-- **CI_VERIFIED, exit 0** tarkoittaa valmistunutta CI-tarkistusta. Samalla revisio- ja ajoparilla onnistunut uusinta käyttää olemassa olevaa kuittia, kun GitHubin tila täsmää.
+- **CI_VERIFIED, exit 0** tarkoittaa valmistunutta CI-tarkistusta. Uusinta lukee pinnatun tuotantoajon varmennuksen ja Recipe site -lokin GitHubista. Kuitti käytetään uudelleen vain, jos PR, HEAD, base, testattu commit ja ajoviitteet täsmäävät. Ristiriitainen kuitti hylätään.
 - **WAITING_RELEASE, WAITING_CI tai BUSY, exit 3** tarkoittaa, että GitHub-ajo tai saman PR:n paikallinen tarkistus on kesken.
 - **Virhe, exit 1** tarkoittaa esimerkiksi vanhentunutta revisiota, epäonnistunutta ajoa, puuttuvaa evidenssiä tai yhteysvirhettä kolmen lukuyrityksen jälkeen. Varmista virheen syy GitHubista ennen uusintaa.
 
-Kuitti on Windows-käyttäjän paikallinen kirjaus, jonka lähteet ovat GitHubissa. Polku on %LOCALAPPDATA%\Recipavo\Flow\v1. Saman PR:n rinnakkaiset ajot jakavat prosessilukon, jonka Windows vapauttaa prosessin päätyttyä. Uusi ajo voi aloittaa keskeytyneen tarkistuksen samoilla parametreilla. Tallennus tulee näkyviin kerralla. Skriptillä on ainoastaan GitHubin lukuoperaatioita. Käyttö voidaan lopettaa palaamalla aiempaan käsin tehtyyn tarkistukseen.
+Kuitti on Windows-käyttäjän paikallinen kirjaus. GitHubin pinnaama CI-yritys on testatun commitin lähde myös uusinnassa. Kuitin paikalliset aikaleimat säilyvät. Polku on %LOCALAPPDATA%\Recipavo\Flow\v1. Saman PR:n rinnakkaiset ajot jakavat prosessilukon, jonka Windows vapauttaa prosessin päätyttyä. Uusi ajo voi aloittaa keskeytyneen tarkistuksen samoilla parametreilla. Tallennus tulee näkyviin kerralla. Skriptillä on ainoastaan GitHubin lukuoperaatioita. Käyttö voidaan lopettaa palaamalla aiempaan käsin tehtyyn tarkistukseen.
+
+Kuitin Windows-regressiotesti toimii ilman GitHub-yhteyttä. Aja PowerShellissä `python -B scripts/test_recipavo_flow_receipt.py`.
 
 ## Pilotti 27.11.2026
 
