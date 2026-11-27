@@ -78,5 +78,5 @@ New potatoes, carrots, cauliflower, peas and dill make a mild Finnish summer sou
 ## Notes
 
 - Contains milk and wheat. Serve hot. Cool leftovers promptly in shallow containers and refrigerate below +6°C.
-- AI-generated illustration; editorial draft only. No physical cooking test, approved whole-recipe nutrition or GK calculation, or verified gluten-free claim.
+- This AI-generated image illustrates the recipe. Recipavo has not tested the recipe in its own kitchen. There is no approved nutrition calculation for the whole recipe. Glycemic load is undetermined, and no gluten-free claim has been approved. This translation remains a draft.
 - Reference: [Martat](https://www.martat.fi/reseptit/kesakeitto/). Independently adapted proportions and wording.
