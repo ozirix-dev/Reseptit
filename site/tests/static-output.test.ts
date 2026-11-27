@@ -28,6 +28,7 @@ import { glycemicLoadFilterCategories } from "../src/generated/glycemic-load-fil
 import { isPublicRecipeQuarantined, publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
 import { f25ExplicitUndefinedGkLabel, withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 import { loadReviewedPortions } from "../scripts/gk-portion-projection";
+import { menemenEvidenceNames } from "../scripts/menemen-evidence-names";
 import type { GlycemicLoadResult } from "../scripts/glycemic-load-model";
 
 const dist = path.resolve(import.meta.dirname, "../dist");
@@ -2058,6 +2059,59 @@ test("reviewed historical recipe links resolve to public routes in the reader's 
       assert.doesNotMatch(related, /href="https:\/\/ozirix-dev\.github\.io\//);
     }
   }
+});
+
+test("GL menemen evidence rejects ambiguous or unverified ingredient rows", () => {
+  const recipeId = "valimerellinen-menemen-fetalla";
+  const finnish = siteContent.recipes.find(entry => entry.recipeId === recipeId && entry.locale === "fi");
+  const english = siteContent.recipes.find(entry => entry.recipeId === recipeId && entry.locale === "en");
+  const swedish = siteContent.recipes.find(entry => entry.recipeId === recipeId && entry.locale === "sv");
+  assert.ok(finnish && english && swedish);
+  const tomato = { name: "tomaattia", giRecordId: "tomato-raw-cooked-sauce-analogue-gi-22", fineliRecordId: "fineli-352-2026-10-24" };
+  const pepper = { name: "vihreää paprikaa", giRecordId: "vegetables-category-mean-gi-66", fineliRecordId: "fineli-387-2026-10-24" };
+  const reordered = [...english.ingredients];
+  [reordered[1], reordered[2]] = [reordered[2], reordered[1]];
+  assert.equal(reordered[1].amount, reordered[2].amount);
+  assert.equal(reordered[1].unit, reordered[2].unit);
+  const translations = [{ ...english, ingredients: reordered }, swedish];
+  assert.deepEqual(menemenEvidenceNames(tomato, finnish.ingredients, translations), { fi: "tomaattia", sv: "tomat" });
+  assert.deepEqual(menemenEvidenceNames(pepper, finnish.ingredients, translations), { fi: "vihreää paprikaa", sv: "grön paprika" });
+
+  const duplicate = [...english.ingredients];
+  duplicate[2] = duplicate[1];
+  assert.deepEqual(menemenEvidenceNames(tomato, finnish.ingredients, [{ ...english, ingredients: duplicate }]), { fi: "tomaattia" });
+  const wrongUnit = english.ingredients.map((row, index) => index === 1 ? { ...row, unit: "g" } : row);
+  assert.deepEqual(menemenEvidenceNames(tomato, finnish.ingredients, [{ ...english, ingredients: wrongUnit }]), { fi: "tomaattia" });
+  const wrongFinnish = finnish.ingredients.map((row, index) => index === 1 ? { ...row, item: "vihreä paprika" } : row);
+  assert.deepEqual(menemenEvidenceNames(tomato, wrongFinnish, [english]), {});
+  assert.deepEqual(menemenEvidenceNames({ ...tomato, name: "tomaatti" }, finnish.ingredients, [english]), {});
+  assert.deepEqual(menemenEvidenceNames({ ...tomato, fineliRecordId: pepper.fineliRecordId }, finnish.ingredients, [english]), {});
+});
+
+test("GL evidence localizes the three sealed menemen source rows", () => {
+  const result = glycemicLoadPilotResults.find(entry => entry.recipeId === "valimerellinen-menemen-fetalla");
+  const rows = result?.ingredientEvidence?.map(({ name, giRecordId, foodRecordId, ingredientNames }) =>
+    ({ name, giRecordId, foodRecordId, ingredientNames }));
+  assert.deepEqual(rows, [
+    {
+      name: "tomaattia",
+      giRecordId: "tomato-raw-cooked-sauce-analogue-gi-22",
+      foodRecordId: "fineli-352-2026-10-24",
+      ingredientNames: { fi: "tomaattia", en: "tomato", sv: "tomat", th: "มะเขือเทศ" },
+    },
+    {
+      name: "vihreää paprikaa",
+      giRecordId: "vegetables-category-mean-gi-66",
+      foodRecordId: "fineli-387-2026-10-24",
+      ingredientNames: { fi: "vihreää paprikaa", en: "green bell pepper", sv: "grön paprika", th: "พริกหวานสีเขียว" },
+    },
+    {
+      name: "fetajuustoa",
+      giRecordId: "dairy-category-mean-gi-35",
+      foodRecordId: "fineli-11211-2026-10-24",
+      ingredientNames: { fi: "fetajuustoa", en: "feta", sv: "feta", th: "ชีสเฟตา" },
+    },
+  ]);
 });
 
 test("GL evidence keeps localized names when a Finnish ingredient is reformatted", () => {
