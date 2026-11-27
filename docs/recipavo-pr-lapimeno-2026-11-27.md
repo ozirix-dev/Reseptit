@@ -28,6 +28,8 @@ Aloitetaan olemassa olevalla Repo Guardilla, GitHub Actionsilla ja jonon nykyise
 
 ## Kolmen integraation pilotti
 
+Chat 1 ja Kokki-Codex hyväksyvät pilotin rajauksen ennen aloitusta. Kirjaa jonoon aloitushetki UTC-aikana sekä kolme mukaan valittua PR-numeroa sovitussa integraatiojärjestyksessä. Kuittaa rajaus kunkin PR:n omistajan kanssa ennen aloitusta. Jos valittu PR jää HOLDiin, säilytä se pilotin seurannassa ja kirjaa HOLDin alku, loppu ja syy erikseen. Näytä PR:n kokonaisläpimeno ja aktiivinen etenemisaika erikseen. Jos kolme integraatiota ei toteudu, raportoi pilotti keskeneräisenä. Tämän dokumentin yhdistäminen ei käynnistä pilottia.
+
 1. **Yksi näkyvä työjono.** Chat 1 säilyttää kullekin PR:lle omistajan, HEADin, BASEn, viimeisen kuitin, seuraavan toimenpiteen ja aikaleimat. Jonosta näkyy yhdellä silmäyksellä, voiko joku edistää työtä nyt. HOLDin syy ja päätöksentekijä kirjataan.
 2. **Kaksi ehdokasta valmisteluun, yksi integraatioon.** Omistajat valmistelevat seuraavat kaksi toisistaan riippumatonta PR:ää. Chat 2 katselmoi rajatut deltat ja Chat 3 tuo reseptien ravinto- ja GK-näytön. Toinen kirjoittaja samalle haaralle edellyttää nimenomaista työvuoron vaihtoa. Chat 1 siirtää vuoroa vain, kun riippuvuudet ja omistajien päätökset sen sallivat.
 3. **Katselmointikuitti kokoaa olemassa olevan näytön.** Sisältö, kuvat, ravinto/GK ja tekninen tarkastus sidotaan tarkastettuun ID:hen ja revisioon. Nykyisen HEADin ja BASEn riippumaton kuitti kattaa muuttuneen deltan. Muuttumattomien tiedostojen aiempi näyttö hyödynnetään portin vaatimalla tavalla.
