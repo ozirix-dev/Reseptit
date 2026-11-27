@@ -85,6 +85,12 @@ export function recipeSearchEntry(recipe: RecipeSummary): SearchRecipe {
   return { ...card, searchText };
 }
 
+// A targeted Swedish query alias: the singular rödbeta must also find
+// rödbetor, rödbetorna and rödbets- compounds (e.g. rödbetsröra).
+// Match word starts, not arbitrary substrings; leave the index and all
+// other query terms, locales and structured filters unchanged.
+const swedishBeetrootVariants = /(?:^|[^\p{L}\p{M}\p{N}])rodbet(?:or(?:na)?s?(?![\p{L}\p{M}\p{N}])|s)/u;
+
 export function filterRecipes<T extends RecipeSummary | SearchRecipe>(recipes: T[], filters: RecipeFilters, locale: RecipeLocale, glCategories: Readonly<Record<string, GlycemicLoadFilterCategory>> = {}): T[] {
   const terms = normalizeSearchText(filters.query, locale).split(" ").filter(Boolean);
   return recipes.filter((recipe) => {
@@ -99,6 +105,7 @@ export function filterRecipes<T extends RecipeSummary | SearchRecipe>(recipes: T
     if (filters.diet !== "all" && filters.diet !== "keto" && filters.diet !== "vhh" && !recipe.dietTags?.includes(filters.diet)) return false;
     if (!terms.length) return true;
     const haystack = "searchText" in recipe ? recipe.searchText : recipeSearchEntry(recipe).searchText;
-    return terms.every((term) => haystack.includes(term));
+    return terms.every((term) => haystack.includes(term) ||
+      (locale === "sv" && recipe.locale === "sv" && term === "rodbeta" && swedishBeetrootVariants.test(haystack)));
   });
 }

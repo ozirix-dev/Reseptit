@@ -2,7 +2,8 @@ import {originalGlycemicLoadCategory} from '../scripts/glycemic-load-filter';
 import assert from "node:assert/strict";
 import test from "node:test";
 import { siteContent } from "../src/generated/content.generated";
-import { emptyRecipeFilters, filterRecipes, normalizeSearchText, parseRecipeFilters, recipeFiltersToSearch } from "../src/features/recipes/recipe-search";
+import { emptyRecipeFilters, filterRecipes, normalizeSearchText, parseRecipeFilters, recipeFiltersToSearch, recipeSearchEntry, type RecipeCategory, type RecipeFilters, type SearchRecipe } from "../src/features/recipes/recipe-search";
+import { summarizeRecipe } from "../src/content/route-data";
 import { recipeFacets } from "../src/content/recipe-facets";
 import { isRecipavoHeroPreviewEnabled, recipavoHeroCopy } from "../src/features/recipes/recipavo-hero";
 import { homepageLabels, homepagePickLimit, homepagePicks, homepageTopics } from "../src/features/recipes/home-preview";
@@ -418,4 +419,174 @@ test("FI-only dietary approvals require a valid FI source and never fabricate EN
     },
   };
   assert.deepEqual(await reviewedDietTagsForVersion(withEnglishReview, "en", en, fi), ["vegetarian"]);
+});
+
+
+test("WP-03 Swedish beetroot singular matches plural and compound forms without widening other queries", () => {
+  const source = siteContent.recipes.find(recipe => recipe.recipeId === "punajuurilevite" && recipe.locale === "sv");
+  assert.ok(source, "published Swedish beetroot spread");
+  const summary = summarizeRecipe(source);
+  const entry = recipeSearchEntry(summary);
+  for (const query of ["rödbeta feta", "RÖDBETA FETA", "rodbeta feta", "feta rödbeta", "rödbetor feta", "rödbetsröra"]) {
+    const filters = { ...emptyRecipeFilters, query };
+    assert.deepEqual(filterRecipes([summary], filters, "sv").map(row => row.recipeId), [source.recipeId], query);
+    assert.deepEqual(filterRecipes([entry], filters, "sv").map(row => row.recipeId), [source.recipeId], query);
+  }
+
+  // Explicit, synthetic controls; none of these are public recipe metadata.
+  const positive = ["Rödbetor fetaost", "Rödbetorna fetaost", "Rödbetors fetaost", "Rödbetornas fetaost",
+    "Rödbetsröra fetaost", "Rödbets-sallad fetaost", "(rödbetor), fetaost", "2 rödbetor fetaost",
+    "Rödbeta fetaost", "Rödbetan fetaost"];
+  const negative = ["sockerbetor fetaost", "brodbetor fetaost", "rödbetorr fetaost", "2rödbetor fetaost",
+    "arödbetsröra fetaost", "rödbetor utan ost", "fetaost", "rödbetor"];
+  const sample = [...positive, ...negative].map((value, index): SearchRecipe => ({
+    ...entry, recipeId: "wp03-fixture-" + index, searchText: normalizeSearchText(value, "sv"),
+  }));
+  const filters = { ...emptyRecipeFilters, query: "rödbeta feta" };
+  assert.deepEqual(filterRecipes(sample, filters, "sv").map(row => row.recipeId),
+    sample.slice(0, positive.length).map(row => row.recipeId));
+  for (const query of ["rödbeta xyzqzv0819", "rödbta feta", "rödbeta feta kyckling"]) {
+    assert.deepEqual(filterRecipes([entry], { ...filters, query }, "sv"), [], query);
+  }
+  for (const locale of ["fi", "en", "th"] as const) {
+    const row = { ...sample[0], locale };
+    assert.deepEqual(filterRecipes([row], filters, locale), [], locale);
+    assert.deepEqual(filterRecipes([row], filters, "sv"), [], locale + " record outside Swedish directory");
+  }
+  const controlled: SearchRecipe = {
+    ...sample[0], recipeId: "wp03-filter-control", category: "valipala", additionalCategories: [],
+    timeTotalMin: 40, dietClass: "keto", dietTags: ["vegetarian"], glutenFree: true,
+    cuisine: "mediterranean", ingredientGroups: ["vegetables"],
+  };
+  const combined: RecipeFilters = {
+    ...filters, category: "valipala", maxTime: 60, diet: "keto", glutenFree: true,
+    cuisine: "mediterranean", ingredient: "vegetables", gl: "low",
+  };
+  const gl = { [controlled.recipeId]: "low" } as const;
+  assert.deepEqual(filterRecipes([controlled], combined, "sv", gl), [controlled]);
+  const exclusions: Partial<RecipeFilters>[] = [
+    { category: "paaruoka" }, { maxTime: 30 }, { diet: "vegan" },
+    { cuisine: "thai" }, { ingredient: "meat" }, { gl: "high" },
+  ];
+  for (const exclusion of exclusions) {
+    assert.deepEqual(filterRecipes([controlled], { ...combined, ...exclusion }, "sv", gl), [], JSON.stringify(exclusion));
+  }
+  assert.deepEqual(filterRecipes([controlled], combined, "sv", {}), [], "unknown GK fails closed");
+  assert.deepEqual(filterRecipes([{ ...controlled, glutenFree: undefined }], combined, "sv", gl), [], "unknown gluten-free fails closed");
+});
+
+test("WP-03 replays the 60 published-index UX scenarios and checks the narrow search delta", t => {
+  // Frozen query strings from Chat 5's production audit, 2026-11-26.
+  // Build the same indexed records in the same order as prepare-routes.ts.
+  // The eight empty/zero controls allow corpus growth; the 52 target cases
+  // require at least one expected identity in the first five, as in the audit.
+  const exactIds = [
+    "indialainen-poha-maapahkinoilla", "meksikolainen-quesadilla-sienilla",
+    "pad-see-ew-vhh-konjac", "punajuuri-suklaakakku", "siemengranola-jogurtilla",
+    "silakkapihvit-tilli-kermakastike",
+  ];
+  const exactTitles = {
+    fi: ["Mausteinen poha maapähkinöillä", "Aamiaisquesadilla sienillä ja maissilla",
+      "VHH-pad see ew kanalla ja konjaknuudeleilla", "Punajuuri-suklaakakku mantelijauhoilla",
+      "Paahdettu siemengranola jogurtilla", "Silakkapihvit tilli-kermakastikkeella"],
+    en: ["Spiced poha with peanuts", "Breakfast quesadilla with mushrooms and corn",
+      "Low-carb pad see ew with chicken and konjac noodles", "Beetroot and chocolate cake with almond flour",
+      "Toasted seed granola with yogurt", "Baltic herring patties with dill cream sauce"],
+    sv: ["Kryddig poha med jordnötter", "Frukostquesadilla med svamp och majs",
+      "Lågkolhydratversion av pad see ew med kyckling och konjaknudlar", "Chokladkaka med rödbetor och mandelmjöl",
+      "Rostad frögranola med yoghurt", "Strömmingsbiffar med dillgräddsås"],
+    th: ["โปฮารสเครื่องเทศใส่ถั่วลิสง", "เคซาดียามื้อเช้าใส่เห็ดและข้าวโพด",
+      "ผัดซีอิ๊วไก่เส้นบุกแบบคาร์โบไฮเดรตต่ำ", "เค้กช็อกโกแลตบีตรูตกับแป้งอัลมอนด์",
+      "กราโนลาเมล็ดพืชอบกับโยเกิร์ต", "ปลาเฮร์ริงบอลติกทอดกับซอสครีมผักชีลาว"],
+  };
+  const themes = {
+    fi: ["pinaatti feta", "kaakao kookos chia", "paella kana", "punajuuri feta"],
+    en: ["spinach feta", "cocoa coconut chia", "paella chicken", "beetroot feta"],
+    sv: ["spenat feta", "kakao kokos chia", "paella kyckling", "rödbeta feta"],
+    th: ["ผักโขม เฟตา", "โกโก้ มะพร้าว เจีย", "ปาเอญ่า ไก่", "บีทรูต เฟตา"],
+  };
+  const targets = ["valimerellinen-pinaatti-fetashakshuka", "kaakao-kookos-chia", "paella-valenciana", "punajuurilevite"];
+  const broad = {
+    fi: ["shakshuka", "chiavanukas"],
+    en: ["shakshuka", "chia pudding"],
+    sv: ["shakshuka", "chiapudding"],
+    th: ["ชักชูกา", "พุดดิ้ง เมล็ดเจีย"],
+  };
+  const broadIds = [
+    ["shakshuka", "lahi-ita-kikherne-shakshuka", "valimerellinen-pinaatti-fetashakshuka", "pohjoisafrikkalainen-harissa-shakshuka"],
+    ["marjainen-chiavanukas", "kaakao-kookos-chia", "lammin-chia-puuro-rouva-keto"],
+  ];
+  const exploratory = {
+    fi: ["punajuuria feta", "punajuurta feta", "punajuri feta", "pinaatti fetaa"],
+    en: ["beetroot feta", "beetrot feta", "beetroots feta", "spinach fetta"],
+    sv: ["rödbeta", "rodbeta feta", "rödbetor feta", "rödbetorna feta", "rödbetsröra feta", "rödbta feta"],
+    th: ["ผักโขมเฟตา", "ผักโขม เฟตา", "บีทรูตเฟตา", "บีทรูต เฟตา"],
+  };
+  let replayed = 0;
+  let unchanged = 0;
+  let targetsPassed = 0;
+  let controlsPassed = 0;
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const rows = siteContent.recipes.filter(recipe => recipe.locale === locale).map(summarizeRecipe).map(recipeSearchEntry);
+    assert.ok(rows.length > 0, locale);
+    assert.equal(new Set(rows.map(row => row.recipeId)).size, rows.length, locale);
+    const categories: RecipeCategory[] = ["all", ...new Set(rows.map(row => row.category))];
+    const cases: { query: string; expected: string[]; kind: "target" | "empty" | "zero"; maxTime?: number }[] = [
+      ...exactTitles[locale].map((query, index) => ({ query, expected: [exactIds[index]], kind: "target" as const })),
+      ...themes[locale].map((query, index) => ({ query, expected: [targets[index]], kind: "target" as const })),
+      ...broad[locale].map((query, index) => ({ query, expected: broadIds[index], kind: "target" as const })),
+      { query: "", expected: [], kind: "empty" },
+      { query: "xyzqzv0819", expected: [], kind: "zero" },
+      { query: exactTitles[locale][1], expected: [exactIds[1]], kind: "target", maxTime: 30 },
+    ];
+    const directHits = (filters: RecipeFilters) => {
+      const terms = normalizeSearchText(filters.query, locale).split(" ").filter(Boolean);
+      return filterRecipes(rows, { ...filters, query: "" }, locale).filter(row => terms.every(term => row.searchText.includes(term)));
+    };
+    const ids = (hits: SearchRecipe[]) => hits.map(row => row.recipeId);
+    const ranks: (number | null)[] = [];
+    for (const [index, item] of cases.entries()) {
+      const label = locale + "-" + (index + 1);
+      const filters = parseRecipeFilters(recipeFiltersToSearch({
+        ...emptyRecipeFilters, query: item.query, ...(item.maxTime ? { maxTime: item.maxTime } : {}),
+      }), categories);
+      const before = directHits(filters);
+      const after = filterRecipes(rows, filters, locale);
+      const rank = after.findIndex(row => item.expected.includes(row.recipeId)) + 1;
+      if (item.kind === "target") {
+        assert.ok(rank >= 1 && rank <= 5, label + " target missing from top five: " + item.query);
+        targetsPassed++;
+      } else {
+        assert.equal(after.length, item.kind === "empty" ? rows.length : 0, label);
+        controlsPassed++;
+      }
+      if (label === "sv-10") {
+        assert.ok(before.every(row => after.includes(row)), "no prior exact hits may be lost");
+        t.diagnostic("WP-03 sv-10 " + JSON.stringify({ before: ids(before), after: ids(after), rank }));
+      } else {
+        assert.deepEqual(ids(after), ids(before), label + " unchanged literal search and ordering");
+        unchanged++;
+      }
+      replayed++;
+      ranks.push(rank || null);
+    }
+    // Exploratory cases document limitations, not promised fuzzy matching or
+    // word segmentation. Non-alias queries must retain the old exact results.
+    for (const query of exploratory[locale]) {
+      const filters = { ...emptyRecipeFilters, query };
+      const before = directHits(filters);
+      const after = filterRecipes(rows, filters, locale);
+      const affected = locale === "sv" && normalizeSearchText(query, locale).split(" ").includes("rodbeta");
+      if (!affected) assert.deepEqual(ids(after), ids(before), locale + ": " + query);
+      else assert.ok(before.every(row => after.includes(row)), locale + ": " + query);
+      t.diagnostic("WP-03 exploratory " + JSON.stringify({ locale, query, before: before.length, after: after.length,
+        added: ids(after.filter(row => !before.includes(row))), top5: ids(after.slice(0, 5)) }));
+    }
+    t.diagnostic("WP-03 corpus " + JSON.stringify({ locale, entries: rows.length, replayed: cases.length, ranks }));
+  }
+  assert.equal(replayed, 60);
+  assert.equal(unchanged, 59);
+  assert.equal(targetsPassed, 52);
+  assert.equal(controlsPassed, 8);
+  t.diagnostic("WP-03 summary " + JSON.stringify({ replayed, unchanged, targetsPassed, controlsPassed }));
 });

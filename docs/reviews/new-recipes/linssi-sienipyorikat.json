@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "linssi-sienipyorikat",
+  "source_path": "reseptit/paaruoat/linssi-sienipyorikat.md",
+  "source_sha256": "400b352ae8564ac697459d79204754791c03dbf8a2df31cc9b62fda30db8ab2d",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.tastingpage.com/cooking/vegan-lentil-mushroom-meatballs"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/linssi-sienipyorikat.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/linssi-sienipyorikat.webp",
+    "bytes": 199186,
+    "sha256": "9516fb79072abe48676884cfd7e8873e16bb2e72c38ab0a64d6f9d992b965ac7",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/linssi-sienipyorikat.md",
+        "sha256": "d64e54a63aa76f6513cbb99a9d3e2d44f8c94c88c5da2e5c375c44c80e04f16e"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/linssi-sienipyorikat.md",
+        "sha256": "4327c109634a017d7187bc8aecfdb902faa7d915c4121851c8d8afab87268fe7"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/linssi-sienipyorikat.md",
+        "sha256": "aa824772d10effa1ce135a945902acd381ade056a8900ad9d449c377a0e735bb"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/linssi-sienipyorikat.md",
+        "sha256": "3d0764b35f9871490b85b3402ef114d0beb9c3a71919cf38018c2d8a93da8e27"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "3b1d5191adc7d1bc0565fbe5c1730d7df2785f8ce681f3c33f3f25573a4f3eb8"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/linssi-sienipyorikat.md",
+        "language": "fi",
+        "slug": "linssi-sienipyorikat",
+        "sha256": "400b352ae8564ac697459d79204754791c03dbf8a2df31cc9b62fda30db8ab2d",
+        "semantic_sha256": "65ca4d2faa0cfbd7466def52f6c6ecdf8e92c9493654a986fc50ffd9f3eb8f48"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/linssi-sienipyorikat.md",
+        "language": "en",
+        "slug": "linssi-sienipyorikat-en",
+        "sha256": "ec4799bf1aa0db3e4f5e8f9cf042b40cadcf97b50688f681b571df4c13e42afb",
+        "semantic_sha256": "cb3a83a5c9abc6b038c35b24d8fb1ff364e40d840092c4406a5521f4e4029be5"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/linssi-sienipyorikat.md",
+        "language": "sv",
+        "slug": "linssi-sienipyorikat-sv",
+        "sha256": "84e7075233f7628f9801f472b39eeb08f4d8e8182b7feeee143a3b0d875760a1",
+        "semantic_sha256": "58dcd4e41a6e7a73f232cf2a82445c52420b36f67adb2cf35258662b25b663e7"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/linssi-sienipyorikat.md",
+        "language": "th",
+        "slug": "linssi-sienipyorikat-th",
+        "sha256": "3d88b3eb912d66887f5c5300ea35e9edd8ce99ef227d62ffa4e4c620588fc64f",
+        "semantic_sha256": "0978a704dadd4b4b301880c93f4edb1fb6aef1d647dd1270f2bcf48f3d77841c"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja kokonaisaika 65 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kuivien vihreiden linssien 120 ml, kaurahiutaleiden 120 ml, saksanpähkinöiden 120 ml ja jauhetun pellavan 15 ml tarvitsevat aine-/tilakohtaiset massat; yrttien ja sipulin massat, kookosöljyn retentio."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}

@@ -1,20 +1,91 @@
-# Recipavo (Reseptit)
+# Recipavo
 
-**Recipavo** on nelikielinen reseptisivusto. Tämä `Reseptit`-repo sisältää
-kanoniset Markdown-reseptit ja staattisen verkkosovelluksen.
-[Tuotanto](https://www.recipavo.com/) toimii Cloudflare Pagesissa.
-Esikatselut tehdään paikallisesti tai Cloudflare Pagesin esikatseluosoitteessa.
-[Cloudflare Pages -esikatselu](https://final-recovery.recipavo-v1-preview.pages.dev/)
-on erillinen esikatseluympäristö. Katso [julkaisuohje](docs/julkaisuarkkitehtuuri_github_pages.md).
+[Recipavo](https://www.recipavo.com/) on nelikielinen reseptipalvelu, joka
+yhdistää käytännön ruoanlaiton, kansainvälisen reseptikirjaston ja
+lähteistetyn ravitsemustiedon. Tavoitteena on helpottaa sopivien ruokien
+löytämistä, annosten suunnittelua ja perusteltuja ruokavalintoja.
 
-Suomi on lähdekieli; englanti, ruotsi ja thai ovat reseptikohtaisia käännöksiä.
-Hakemisto, haku, suodattimet ja annoslaskuri ovat käytössä.
+Tämä repo on reseptisisällön ja verkkosovelluksen kanoninen lähde.
+
+## Palvelun ominaisuudet
+
+- Reseptit suomeksi, englanniksi, ruotsiksi ja thaiksi. Suomi on lähdekieli,
+  ja käännökset liittyvät samaan resepti-identiteettiin.
+- Sivutettu reseptikirjasto, kielikohtainen haku sekä raaka-aine-, aluekeittiö-
+  ja ruokavaliosuodattimet.
+- Annoslaskuri, joka mukauttaa ainesosien määrät valittuun annosmäärään.
+- Lähteistetyt annoskohtaiset ravintoarviot silloin, kun laskentaan on
+  riittävä näyttö.
+- Glykeemisen kuorman (GK) arviot ja erillinen
+  [glykeemisen kuorman opas](https://www.recipavo.com/glykeeminen-kuorma/).
+- Responsiiviset reseptikuvat, mobiilikäyttöön mukautuva käyttöliittymä
+  ja ilman JavaScriptiä selattava reseptikirjasto.
+
+Kieliversioiden ja ravintotietojen kattavuus vaihtelee resepteittäin.
+Käyttäjien yksityinen reseptikirja ja julkaisuehdotusten käsittely ovat
+[suunnitteilla](https://github.com/ozirix-dev/Reseptit/issues/969),
+eivät tämän dokumentin perusteella käytössä olevia ominaisuuksia.
+
+## Ravintolaskenta ja glykeeminen kuorma
+
+Ravintoarvioita muodostetaan reseptin ainesosista, määristä ja annosjaosta
+lähteisiin sidotulla laskennalla. Arvot ovat laskennallisia arvioita,
+eivät valmiista ruoasta tehtyjä laboratoriomittauksia.
+
+- Energia, proteiini, rasva ja hiilihydraatit voidaan arvioida annosta
+  kohden. Kenttäkohtainen näyttö mahdollistaa myös osittaiset ravintoarviot.
+- Glykeemisen indeksin (GI) lähteet ja reseptin imeytyvien hiilihydraattien
+  määrät tukevat glykeemisen kuorman arviointia, kun näyttö riittää.
+- Laskenta ja hyväksyntä sidotaan tarkastettuun reseptiversioon.
+- Puuttuvaa tai epäluotettavaa arvoa ei korvata nollalla. Numeerinen GK
+  jätetään perustellusti määrittämättä, jos luotettava arvio ei ole mahdollinen.
+
+Tiedot tukevat myös verensokeriaan seuraavien käyttäjien annosvalintoja.
+GK on arvio, ei ennuste yksittäisen henkilön verensokerivasteesta eikä
+yksilöllinen hoito-ohje.
+
+## Sisällön laadunvarmistus
+
+Sisältöä valmistellaan myös tekoälyavusteisesti. Toimituksellisessa
+katselmoinnissa arvioidaan lähteitä, ainesosia, määriä, valmistusmenetelmiä,
+ruokaturvallisuutta, allergeeneja, kieliversioiden vastaavuutta ja kuvia.
+Ravinto- ja GK-tietojen laskentaevidenssi tarkistetaan erikseen.
+
+Recipavolla ei ole omaa koekeittiötä. Kirjallinen lähde- ja
+menetelmävarmennus ei tarkoita, että Recipavo olisi itse valmistanut,
+maistanut tai laboratoriotestannut jokaisen reseptin.
+
+Automaattiset tarkistukset täydentävät sisällöllistä katselmointia.
+Olennaiset ratkaisemattomat virheet ja puuttuvat vaaditut hyväksynnät
+estävät julkaisun. Katso [käännösten tarkistuskäytäntö](docs/translation-review-policy.md)
+ja [projektin ylläpito-ohjeet](AGENTS.md).
+
+## Tekninen arkkitehtuuri
+
+Reseptit ja niiden YAML-metatiedot ovat versionhallinnassa. Node.js- ja
+TypeScript-pohjainen sisältöbuild validoi tietomallin Zodilla ja käsittelee
+kuvat Sharpilla. React- ja Vite-sovellus tuottaa esirenderöidyt HTML-sivut
+sekä selaimessa tarvittavan toiminnallisuuden.
+
+```text
+Markdown + YAML + ravintoevidenssi + varmennetut kuvat
+    -> sisällön validointi ja build
+    -> staattinen HTML, reittidata ja kuva-assetit
+    -> GitHub Actions -tarkistukset
+    -> erikseen hyväksytty Cloudflare Pages -tuotantojulkaisu
+```
+
+[Julkinen tuotanto](https://www.recipavo.com/) toimii Cloudflare Pagesissa.
+Esikatselut tehdään paikallisesti tai
+[erillisessä Cloudflare Pages -esikatselussa](https://final-recovery.recipavo-v1-preview.pages.dev/).
+Katso [julkaisuarkkitehtuuri](docs/julkaisuarkkitehtuuri_github_pages.md).
 
 ## Sisältö ja rakenne
 
-- `reseptit/{aamupalat,alkuruoat,paaruoat,jalkiruoat,leivonnaiset}/`: lähdereseptit.
+- `reseptit/{aamupalat,alkuruoat,paaruoat,jalkiruoat,leivonnaiset,valipalat}/`: lähdereseptit.
 - `kaannokset/{en,sv,th}/`: kieliversiot samalla `recipe_id`-tunnuksella.
-- `kuvat/`: versionoidut WebP-kuvat.
+- `kuvat/`: versionoidut WebP-kuvat ja hyväksytyt kuva-overlayt.
+- `assets/`: tarkistussummiin sidottu kuva-aineiston manifesti.
 - `site/`: Vite/React-sovellus, sisältöbuild, esirenderöinti ja testit.
 - `meta/`: luokitukset, ravintokentät ja käännössanasto.
 - `docs/`: ylläpito-ohjeet ja päivätyt tarkistusraportit.
@@ -38,8 +109,8 @@ additional_categories:
 
 Lisäkategoriat eivät saa toistaa pääkategoriaa tai toisiaan. Build kopioi
 lisäkategoriat FI-lähteestä julkaistuihin EN/SV/TH-kieliversioihin; niiden
-ei tarvitse ylläpitää erillistä listaa. Yksi reseptitunnus, URL, ravintolaskenta
-ja julkaisuportti säilyvät. Kategoriat vaikuttavat selailuun ja hakusuodattimeen,
+ei tarvitse ylläpitää erillistä listaa. Yksi reseptitunnus ja ravintolaskenta säilyvät; lisäkategoria ei luo uutta
+reseptireittiä tai muuta julkaisuporttia. Kategoriat vaikuttavat selailuun ja hakusuodattimeen,
 eivät ruokavalio- tai GK-luokitukseen.
 
 Ajantasainen määrä saadaan lähteistä, ei tästä dokumentista:
@@ -67,10 +138,11 @@ Päivätyt raportit ovat oman tarkistushetkensä tilannekuvia.
    ei julkaista ilman hyväksyttyä laskentaa; käytä sallittua
    `GK: ei määritetty` -tilaa, kun se on perusteltu. Tavallista riisiä,
    pastaa tai perunaa sisältävä ruoka ei saa keto-luokitusta.
-6. Lisää WebP-kuva `kuvat/`-hakemistoon. `image.src` on suhteellinen polku
-   kuvan juureen; `alt`, `width` ja `height` vastaavat oikeaa kuvaa.
-   Build generoi responsiiviset lisäresoluutiot automaattisesti; niitä ei tarvitse
-   ylläpitää reseptien metatiedoissa.
+6. Lisää ja varmenna WebP-kuva nykyisen
+   [kuva-aineiston työnkulun](docs/image-lifecycle-workflow.md) mukaisesti.
+   `image.src` on suhteellinen polku kuvan juureen; `alt`, `width` ja `height`
+   vastaavat oikeaa kuvaa. Build generoi responsiiviset lisäresoluutiot
+   automaattisesti; niitä ei tarvitse ylläpitää reseptien metatiedoissa.
 7. Pidä keskeneräinen resepti luonnoksena. Varmista valmistus, allergeenit,
    lähde- ja ravintoevidenssi sekä kuvan vastaavuus. Suorita muutoksen
    edellyttämät tarkistukset ennen PR:ää.
@@ -138,7 +210,7 @@ CI:tä ei ohiteta. Työhaarojen ja Repo Guardin säännöt ovat
 [AGENTS.md](AGENTS.md)-tiedostossa ja
 [rinnakkaisten Codex-ajojen ohjeessa](docs/rinnakkaiset-codex-ajot.md).
 
-## Lataus, SEO ja julkaisu
+## Suorituskyky, SEO ja saavutettavuus
 
 Build tuottaa jokaiselle julkaistulle reitille valmiin HTML:n ja turvallisesti
 upotetun lähtödatan. Etusivulla ja kirjaston sivuilla on rajattu määrä
@@ -152,6 +224,12 @@ HTML sisältää reseptit ja linkit myös ilman JavaScriptiä. Hydraation jälke
 annoslaskuri, haku ja query-osoitteet toimivat. Canonicalit, hreflang,
 Recipe-JSON-LD ja sitemap syntyvät julkaistusta sisällöstä.
 
+Saavutettavuuden ylläpidossa huomioidaan näppäimistökäyttö, näkyvä fokus,
+tekstin skaalautuvuus, kontrasti, vaihtoehtoiset kuvatekstit ja otsikkohierarkia.
+Katso [ulkoasu- ja käytettävyyslinja](docs/ulkoasu-ja-kaytettavyys.md).
+
+## Eräjulkaisut ja tuotannon valvonta
+
 GitHub Actions tarkistaa PR:t. `main`-haaran sivustomuutokset käynnistävät
 julkaisusta riippumattoman buildin ja staattiset tarkistukset. Cloudflare-tuotantoon siirretään erikseen hyväksytty, testattu revisio.
 Cloudflare Pages -esikatselu varmennetaan erikseen täsmälliseen versioon
@@ -163,9 +241,64 @@ Katso [julkaisuarkkitehtuuri](docs/julkaisuarkkitehtuuri_github_pages.md),
 [eräjulkaisujen toimintatapa](docs/rinnakkaiset-codex-ajot.md) ja
 [V1.4:n historialliset suorituskykymittaukset](docs/reports/2026-10-22-v1-4-performance.md).
 
-## Ylläpidon rajat
+Toimituksellisessa eräjulkaisussa voidaan valmistella ja tarkistaa useita
+reseptejä yhdellä PR:llä. `npm run recipe:publish` tukee erän valmistelua ja
+julkaisutilan tarkistamista. Yhdistäminen, onnistunut CI ja tuotantojulkaisu
+ovat erillisiä vaiheita; tuotanto edellyttää erillistä hyväksyntää.
 
-Tämä julkinen repo ei ole salaisuuksien tai yksityisten muistiinpanojen säilytyspaikka.
-Reseptit ja tekninen toteutus kuuluvat tänne; ReportHub kokoaa päätös- ja
-handoff-kontekstin. Lisenssiä ei ole lukittu: julkisuus ei yksin anna vapaata
-sisällön uudelleenkäyttöoikeutta.
+Kuva-aineiston tuotantobuild varmentaa hyväksytyn kuvajoukon ennen sivuston
+rakentamista. Tarvittaessa aineisto palautetaan tarkistussummiin sidotusta
+lähteestä. Katso [kuvien elinkaaren työnkulku](docs/image-lifecycle-workflow.md).
+
+```powershell
+cd site
+npm ci
+npm run build:production
+```
+
+Tuotantobuildin onnistuminen ei itsessään anna julkaisulupaa. Suojattu
+tuotantojulkaisu ja jälkivarmennus on kuvattu
+[käsijulkaisun ohjeessa](docs/product/recipavo-actions-manual-release-2026-11-21.md).
+
+Tuotannon kevyt, vain luku -terveystarkistus on ajastettu neljä kertaa
+vuorokaudessa. Se tarkistaa julkisia reittejä, julkaisurevision yhtenäisyyttä,
+robots.txt:n, sivukartan ja JavaScript-aloitustiedoston sekä odotetut
+virhevastaukset. Se ei julkaise tai muuta tuotantoa.
+Katso [terveystarkistuksen ohje](docs/product/recipavo-production-health-2026-11-22.md).
+
+## Dokumentaatio
+
+| Aihe | Ohje |
+| --- | --- |
+| Reseptin tietomalli | [schema.ts](site/src/content/schema.ts) |
+| Käännösten laadunvarmistus | [Tarkistuskäytäntö](docs/translation-review-policy.md) |
+| Kuvaputki | [Responsiiviset kuvat](docs/responsive-images.md), [kuva-aineiston työnkulku](docs/image-lifecycle-workflow.md) |
+| Käytettävyys ja saavutettavuus | [Ulkoasu- ja käytettävyyslinja](docs/ulkoasu-ja-kaytettavyys.md) |
+| Julkaisut | [Julkaisuarkkitehtuuri](docs/julkaisuarkkitehtuuri_github_pages.md) |
+| SEO | [SEO:n seuranta](docs/seo-monitoring.md) |
+| Ylläpito ja osallistuminen | [AGENTS.md](AGENTS.md) |
+
+## Lisenssi ja ylläpidon rajat
+
+Tämä julkinen repo ei ole salaisuuksien tai yksityisten muistiinpanojen
+säilytyspaikka. Reseptit ja tekninen toteutus kuuluvat tänne; ReportHub
+kokoaa päätös- ja luovutuskontekstin.
+
+Recipavon omisteinen oikeuksienpidätys on kuvattu
+[LICENSE-tiedostossa](https://github.com/ozirix-dev/Reseptit/blob/main/LICENSE).
+Julkinen saatavuus ei tarkoita avoimen lähdekoodin tai avoimen sisällön
+lisenssiä. Oikeudet pidätetään siltä osin kuin aineisto on sovellettavan
+lain suojaamaa ja oikeudet kuuluvat Recipavon oikeudenhaltijoille.
+
+Oikeuksienpidätys ei rajoita sovellettavan lain, [GitHubin käyttöehtojen](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
+tai erillisen lisenssin sallimaa käyttöä, kuten käyttöehtojen mukaista
+katselua ja forkkia, reseptien tavallista lukemista ja niiden mukaan
+ruoanlaittoa. Suojaamattomiin tietoihin, ainesosaluetteloihin, määriin,
+tavanomaisiin valmistusmenetelmiin tai muuhun lain suojaamattomaan aineistoon
+(mukaan lukien tekoälyn tuottama aineisto siltä osin kuin se on suojaamatonta)
+ei vaadita yksinoikeutta.
+
+Kolmansien osapuolten aineistoon sovelletaan niiden omia oikeuksia ja
+lisenssiehtoja. Erikseen lisensoitujen tiedostojen, komponenttien ja
+riippuvuuksien lisenssit ja oikeusmerkinnät säilyvät, eikä oikeuksienpidätys
+peruuta aiemmin pätevästi myönnettyjä oikeuksia.

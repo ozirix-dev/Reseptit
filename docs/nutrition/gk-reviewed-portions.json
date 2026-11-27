@@ -4478,22 +4478,16 @@
   "medu-vada": {
     "recipeBindingSha256": "aa3e9b70f93d1bf23392480de8646232e27ffa701d030ee4bdbfb8c9618c0e57",
     "preparationSha256": "8925157a3a4306a71686f5f3af8d9610723c7189015c0d9bf77432dd8c61354c",
-    "reviewedAt": "2026-11-18",
-    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9304465/",
-    "reasoning": "Urad dal contributes approximately 90% of the recipe's approved modeled GK 10.7739 using the broad Atkinson legume mean of 34, just above the medium boundary. User portion has one quarter of the fried rings. No sambar or chutney is in the ingredient accounting. Shakappa et al. test vada served with sambar at a standardized 50 g carbohydrate load against glucose; that is a separate mixed meal with different scope and its GI must not replace the plain recipe estimate. Retain the approved model value, identify the food and scope, and withhold its otherwise unconditional category.",
+    "reviewedAt": "2026-11-25",
+    "source": "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7164550845",
+    "reasoning": "The sealed original GK model uses Fineli 399 dried green/brown lentils (Lens culinaris) as the composition analogue for 250 g dehulled split urad dal (Vigna mungo). Identity and preparation are not a verified match. Canonical original/public evidence at #1007 run 45657679309 job 139358670026 shows a public numeric 10.77, no separate variant and no original release overlay. Hold the public original numeric GK, class and its source list; retain the unchanged internal historical audit and previous review in the exact predecessor Git revision. No new food card, GI, whole-recipe estimate or macro approval. Separate serving of sambar/chutney is outside the recipe calculation.",
+    "legacyGkHold": true,
     "condition": {
-      "fi": "GK-luku koskee neljäsosaa renkaista ja perustuu urad-daliin ja riisijauhoon. Chili, inkivääri ja valinnaiset currylehdet jäävät laskelmasta pois. Laske sambar tai chutney erikseen.",
-      "en": "The GL figure covers one quarter of the rings and uses only the urad dal and rice flour. It excludes the chili, ginger and optional curry leaves. Count any sambar or chutney separately.",
-      "sv": "GL-värdet gäller en fjärdedel av ringarna och bygger på urad dal och rismjöl. Chili, ingefära och valfria curryblad ingår inte i beräkningen. Räkna sambar eller chutney separat.",
-      "th": "ค่า GL สำหรับหนึ่งในสี่ของขนมทอดรูปวงคำนวณจากถั่วอูรัดและแป้งข้าวเจ้า ไม่รวมพริก ขิง และใบกะหรี่ที่ใส่ได้ตามชอบ หากเสิร์ฟกับซัมบาร์หรือชัทนีย์ให้คิดแยก"
-    },
-    "classLimitation": {
-      "fi": "Urad-dalin osuus perustuu palkokasviryhmän GI-keskiarvoon. Vertailututkimuksessa mitattiin vadaa sambarin kanssa. Reseptin omien renkaiden GK-luokka jää avoimeksi.",
-      "en": "The urad dal contribution uses an average GI for legumes. The comparison study tested vada served with sambar. The GL category of the rings in this recipe remains uncertain.",
-      "sv": "Bidraget från urad dal bygger på ett genomsnittligt GI för baljväxter. I jämförelsestudien testades vada serverad med sambar. GL-kategorin för ringarna i receptet är osäker.",
-      "th": "ส่วนของถั่วอูรัดใช้ค่า GI เฉลี่ยของกลุ่มถั่ว งานวิจัยที่ใช้เปรียบเทียบทดสอบวาดาที่เสิร์ฟกับซัมบาร์ ระดับ GL ของขนมถั่วทอดตามสูตรนี้ยังไม่แน่ชัด"
-    },
-    "ingredientGkEvidenceSha256": "c154d2fe9b60beb2fc7e77143c94dc5c7fe07f7762f6c9c4ac1d2d49b805b126"
+      "fi": "GK-arviota ei toistaiseksi ilmoiteta: aiemmassa laskennassa urad-dalin koostumus perustui eri linssilajiin. Resepti on neljälle annokselle. Laske sambar tai chutney erikseen.",
+      "en": "A GL estimate is not given for now: the previous calculation used composition data for a different type of lentil instead of urad dal. The recipe serves four. Count any sambar or chutney separately.",
+      "sv": "Ingen GL-uppskattning anges tills vidare: den tidigare beräkningen använde sammansättningsdata för en annan linstyp i stället för urad dal. Receptet ger fyra portioner. Räkna sambar eller chutney separat.",
+      "th": "ยังไม่แสดงค่าประมาณ GL เนื่องจากการคำนวณเดิมใช้ข้อมูลส่วนประกอบของถั่วเลนทิลต่างชนิดแทนถั่วอูรัด สูตรนี้สำหรับ 4 ที่ หากเสิร์ฟกับซัมบาร์หรือชัทนีย์ให้คิดแยก"
+    }
   },
   "mustikka-jogurttijaatelo": {
     "recipeBindingSha256": "059b4f0bd622c9a227ca6089cc7ae5874aabb775ba373519cb241dcb21c13125",
