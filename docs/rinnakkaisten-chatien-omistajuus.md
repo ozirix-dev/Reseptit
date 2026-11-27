@@ -104,10 +104,11 @@ ei voi automaattisesti synkronoida pelkällä GitHub-päivityksellä.
 
 ## 8. Codex- ja ChatGPT-keskustelujen viestintä
 
-- **Codex N ↔ Chat N.** Jokaisella käyttäjän nimeämällä Codex N:llä on
-  kaksisuuntainen viestiyhteys saman numeron Chat N:ään. Käytä käyttäjän
-  nimeämää paria riippumatta numerosta. Vastaus osoitetaan alkuperäiselle
-  lähettäjälle.
+GitHub on Reseptit-projektin työjonon ja päätösten totuuden lähde. Chat 1–n:n työjono on saatavilla myös [ReportHubissa](https://github.com/ozirix-dev/ReportHub). Kun viesti muuttaa PR:n tai työjonon tilaa, kirjaa päätös ja kuittaus sovittuun GitHub-PR:ään tai issueen. Käytä keskusteluviestissä linkkiä GitHub-merkintään.
+
+- **Codex N ↔ Chat N.** Käytä käyttäjän nimeämää Codex N:n ja Chat N:n
+  paria riippumatta numerosta. Osoita vastaus alkuperäiselle lähettäjälle.
+  Jos kuittausta ei voi välittää tai varmentaa, merkitse se odottavaksi.
 - **Kokki-Codex ↔ Chat 1–n.** Lähetä työkohtainen viesti sille Chat N:lle,
   jonka vastuulle asia kuuluu. Chat 1 (Pääkokki) vastaanottaa Kokki-Codexin
   Draft-PR-luovutukset ja vastaa yksin Ready-siirroista, mergeistä ja main-CI:stä.
@@ -137,6 +138,7 @@ Projekti: Reseptit / ozirix-dev/Reseptit
 Lähettäjä: <Kokki-Codex / Codex N / Chat N>
 Vastaanottaja: <Kokki-Codex / Codex N / Chat N>
 Asia: <tilannepäivitys, kysymys, luovutus tai kuittaus>
+Viestitunniste: <yksilöllinen tunniste>
 Tehtävä ja tulos: <lyhyt tilannekuva>
 PR tai issue: <linkki tai ei sovellu>
 Haara ja rajatut tiedostot: <haara ja tiedostot tai ei sovellu>
