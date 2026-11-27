@@ -54,12 +54,12 @@ Cooked prawns, avocado and spinach are dressed with lime and sesame.
 
 ## Preparation
 
-1. Check the prawns are cooked and ready to eat. Thaw in fridge if necessary, drain and keep chilled.
+1. Check the prawns are cooked and ready to eat. Thaw in the fridge if needed. Drain, weigh out 200 g and keep the prawns chilled.
 2. Chop chilli and garlic. Mix the chopped chilli and garlic with lime zest and juice, soy sauce and sesame oil; toss prawns in some dressing.
-3. Wash and dry spinach, peel and slice avocados. Toss spinach in remaining dressing; add avocado and prawns. Serve four cold portions immediately.
+3. Wash and dry spinach, peel and pit the avocados, then slice the flesh. Toss spinach in remaining dressing; add avocado and prawns. Serve four cold portions immediately.
 
 ## Notes
 
 - Contains crustaceans, soya and sesame; soy sauce may contain wheat. Follow use-by date and storage instructions.
 - Reference: https://www.bbcgoodfood.com/recipes/spinach-avocado-prawn-salad
-- Reference: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures
+- Reference: https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely

@@ -54,9 +54,9 @@ Fisk och ärter i mjölksås täcks med potatismos.
 
 ## Tillagning
 
-1. Värm ugnen till 200 °C. Koka potatisbitar 15–20 min, häll av och mosa med 30 ml mjölk.
+1. Värm ugnen till 200 °C (180 °C varmluft). Koka potatisbitar 15–20 min, häll av och mosa med 30 ml mjölk.
 2. Värm resten av mjölken, matfett och mjöl under vispning tills såsen bubblar och tjocknar. Tillsätt ärter och persilja.
-3. Skär tinad fisk i 3 cm bitar och lägg i ugnsform. Häll över sås, täck med mos och ost. Grädda 25–30 min eller längre tills kallaste delen av fyllningen når 74 °C. Dela i fyra.
+3. Tina först fisken i kylskåp om den är fryst. Skär fisken i ungefär 3 cm stora bitar och lägg dem i en ugnssäker form. Häll över sås, täck med mos och ost. Grädda 25–30 min eller längre tills kallaste delen av fyllningen når 74 °C. Dela i fyra.
 
 ## Anteckningar
 

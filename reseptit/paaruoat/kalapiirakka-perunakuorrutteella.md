@@ -44,7 +44,7 @@ ingredients:
     item: "ruodotonta nahatonta seitifileetä"
   - amount: 25
     unit: "g"
-    item: "raastettua vähärasvaisempaa cheddaria"
+    item: "raastettua kypsytettyä vähärasvaista cheddaria"
 ---
 
 # Kalapiirakka perunakuorrutteella
@@ -53,9 +53,9 @@ Kermattoman maitokastikkeen, kalan ja herneiden päälle levitetään perunamuus
 
 ## Valmistus
 
-1. Kuumenna uuni 200 °C. Keitä perunapaloja 15–20 min, valuta ja muussaa 30 ml:lla maitoa.
+1. Kuumenna uuni 200 °C:seen (kiertoilma 180 °C). Keitä perunapaloja 15–20 min, valuta ja muussaa 30 ml:lla maitoa.
 2. Kuumenna loput maidosta, levite ja jauhot vispaten, kunnes kastike kiehuu ja suurustuu. Lisää herneet ja persilja.
-3. Leikkaa sulatettu kala 3 cm paloiksi ja laita uunivuokaan. Kaada kastike päälle, peitä muusilla ja ripottele juusto. Paista 25–30 min tai pidempään, kunnes täytteen kylmin kohta saavuttaa 74 °C. Jaa neljään.
+3. Jos käytät pakastekalaa, sulata se ensin jääkaapissa. Leikkaa kala noin 3 cm:n paloiksi ja laita uuninkestävään vuokaan. Kaada kastike päälle, peitä muusilla ja ripottele juusto. Paista 25–30 min tai pidempään, kunnes täytteen kylmin kohta saavuttaa 74 °C. Jaa neljään.
 
 ## Muistiinpanot
 
