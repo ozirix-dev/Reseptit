@@ -2060,6 +2060,32 @@ test("reviewed historical recipe links resolve to public routes in the reader's 
   }
 });
 
+test("GL evidence localizes the three sealed menemen source rows", () => {
+  const result = glycemicLoadPilotResults.find(entry => entry.recipeId === "valimerellinen-menemen-fetalla");
+  const rows = result?.ingredientEvidence?.map(({ name, giRecordId, foodRecordId, ingredientNames }) =>
+    ({ name, giRecordId, foodRecordId, ingredientNames }));
+  assert.deepEqual(rows, [
+    {
+      name: "tomaattia",
+      giRecordId: "tomato-raw-cooked-sauce-analogue-gi-22",
+      foodRecordId: "fineli-352-2026-10-24",
+      ingredientNames: { fi: "tomaattia", en: "tomato", sv: "tomat", th: "มะเขือเทศ" },
+    },
+    {
+      name: "vihreää paprikaa",
+      giRecordId: "vegetables-category-mean-gi-66",
+      foodRecordId: "fineli-387-2026-10-24",
+      ingredientNames: { fi: "vihreää paprikaa", en: "green bell pepper", sv: "grön paprika", th: "พริกหวานสีเขียว" },
+    },
+    {
+      name: "fetajuustoa",
+      giRecordId: "dairy-category-mean-gi-35",
+      foodRecordId: "fineli-11211-2026-10-24",
+      ingredientNames: { fi: "fetajuustoa", en: "feta", sv: "feta", th: "ชีสเฟตา" },
+    },
+  ]);
+});
+
 test("GL evidence keeps localized names when a Finnish ingredient is reformatted", () => {
   const result = glycemicLoadPilotResults.find(entry => entry.recipeId === "jauhelihapihvit-vhh-kermakastikkeella");
   const cream = result?.ingredientEvidence?.find(ingredient => ingredient.ingredientNames.fi === "kuohukermaa pihveihin, 38 %");
