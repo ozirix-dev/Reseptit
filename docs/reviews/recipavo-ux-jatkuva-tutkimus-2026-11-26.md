@@ -1,7 +1,7 @@
 # RFC: Recipavo UX 2.0 – jatkuva käyttäjäkokemuksen tutkimus ja kehittäminen
 
-**Tila:** DRAFT / EHDOTUS / HOLD toteutukselle.  
-**Päiväys:** 26.11.2026. **Työn omistaja:** Chat 5.  
+**Tila:** DRAFT / EHDOTUS / HOLD toteutukselle.
+**Päiväys:** 26.11.2026. **Työn omistaja:** Chat 5.
 **Lähdeperusta:** main `45605d813980bd6c6a6af08e75e4678c68edf1b8` suunnitelman valmisteluhetkellä.
 
 Tämä dokumentti on tutkimusohjelma ja ehdotettu toimintamalli. Se ei ole normatiivinen projektiohje, käyttöliittymän muutospäätös, lupa analytiikan laajentamiseen, hyväksytty CI-portti tai julkaisulupa. Tutkimushypoteesit ja tavoiterajat eivät ole mitattuja tuloksia.
