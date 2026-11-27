@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/creme-caramel.md"
 translation_of: "creme-caramel"
+image:
+  src: jalkiruoat/creme-caramel.webp
+  alt: "Crème caramel, AI illustration"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 140
     unit: "g"

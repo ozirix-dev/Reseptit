@@ -15,6 +15,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: jalkiruoat/ranskalainen-sitruunatorttu.webp
+  alt: "Ranskalainen sitruunatorttu, tekoälykuvitus"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 120
     unit: "g"
@@ -67,5 +72,6 @@ Hapanmakea sitruunatäyte rapeassa murotaikinakuoressa.
 
 ## Muistiinpanot
 
+- Kuohukerma on toimituksellinen sovitus. Vertailulähteen reseptissä käytetään rasvaisempaa double cream -kermaa.
 - Sisältää vehnää, maitoa ja kananmunaa.
 - Vertailulähde: https://raymondblanc.com/recipes/lemon-tart/

@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/omenatarte-tatin.md"
 translation_of: "omenatarte-tatin"
+image:
+  src: jalkiruoat/omenatarte-tatin.webp
+  alt: "Apple tarte Tatin, AI illustration"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 225
     unit: "g"
@@ -44,7 +49,7 @@ Apple tarte Tatin.
 ## Preparation
 
 1. Heat oven to 190 °C. Roll the cold pastry into a 23 cm round on a lightly floured surface, prick and refrigerate.
-2. Peel, halve and core the apples; coat with 30 g melted butter and 25 g sugar. Heat 60 g butter, 100 g sugar and lemon juice in an ovenproof skillet.
+2. Peel, halve and core the apples; coat with 30 g melted butter and 25 g sugar. Use a 23 cm skillet rated by its manufacturer for both stovetop use and a 190 °C oven, including its handle. Heat 60 g butter, 100 g sugar and lemon juice in it.
 3. Pack apples in curved side down when bubbling. Heat 2–3 minutes, then bake uncovered for 15 minutes.
 4. With oven mitts, transfer pan to a heatproof surface, cover with chilled pastry and carefully tuck the edges. Bake another 30–35 minutes or longer until golden and cooked through.
 5. Rest 20–30 minutes. Loosen edges and invert onto a large rimmed plate using mitts, away from your face; hot caramel may spill.

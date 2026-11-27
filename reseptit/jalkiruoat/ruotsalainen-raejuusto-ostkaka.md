@@ -15,6 +15,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: jalkiruoat/ruotsalainen-raejuusto-ostkaka.webp
+  alt: "Ruotsalainen raejuusto-ostkaka, tekoälykuvitus"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 2
     unit: "kpl"
@@ -51,7 +56,7 @@ Ruotsalaistyylinen pehmeä paistettu raejuustojälkiruoka, jossa on mantelia ja 
 
 ## Valmistus
 
-1. Kuumenna uuni 175 °C:seen. Voitele neljä uuninkestävää annosvuokaa.
+1. Kuumenna uuni 175 °C:seen. Voitele neljä noin 200–250 ml:n uuninkestävää annosvuokaa.
 2. Vatkaa munat ja sokeri kevyesti, sekoita joukkoon raejuusto, 150 ml kermaa, jauhot ja mantelirouhe. Jaa seos tasan vuokiin, jätä kohoamisvaraa.
 3. Paista keskitasolla 30–40 min; keskiosan on oltava hyytynyt ja vähintään 71 °C, jatka tarvittaessa. Anna jäähtyä haaleaksi.
 4. Puhdista marjat, pilko mansikat ja vatkaa tarjoilukerma. Jaa marjat ja kerma tasan neljälle.
@@ -59,5 +64,7 @@ Ruotsalaistyylinen pehmeä paistettu raejuustojälkiruoka, jossa on mantelia ja 
 
 ## Muistiinpanot
 
+- Annosvuokien noin 200–250 ml:n koko on toimituksellinen arvio.
+- Lähdereseptin esimerkkituote on KESO crushed (4,3 % rasvaa). Muun hienorakeisen raejuuston käyttö on toimituksellinen sovitus.
 - Sisältää maitoa, kananmunaa, vehnää ja mantelia. Käytä makeamantelia, ei karvasmantelia.
 - Vertailulähde: https://www.arla.se/recept/ostkaka-med-bartopp/

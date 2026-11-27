@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/basbousa-mannasuurimokakku.md"
 translation_of: "basbousa-mannasuurimokakku"
+image:
+  src: jalkiruoat/basbousa-mannasuurimokakku.webp
+  alt: "Basbousa, mannagrynskaka med sockerlag, AI-illustration"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 272
     unit: "g"
@@ -68,7 +73,7 @@ Saftig kokos- och yoghurtkaka med mannagryn.
 
 ## Tillagning
 
-1. Klä formen med bakplåtspapper och smörj papperet. Värm ugnen till 175 °C.
+1. Klä en form på 23 × 33 cm med bakplåtspapper och smörj papperet. Värm ugnen till 175 °C.
 2. Blanda mannagryn, kokos, bakpulver och salt. Blanda smör, smetens socker, yoghurt, ägg och vanilj separat.
 3. Vänd ner de torra ingredienserna tills smeten är jämn. Bred ut i formen, markera 24 bitar och tryck en mandel i varje.
 4. Grädda i 30–35 minuter tills kakan är gyllene och mitten inte har våt smet. Värm ingredienserna till sockerlagen i 4–8 minuter tills sockret lösts upp och lagen börjar sjuda.

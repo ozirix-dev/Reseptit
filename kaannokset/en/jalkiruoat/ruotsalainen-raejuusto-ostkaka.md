@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/ruotsalainen-raejuusto-ostkaka.md"
 translation_of: "ruotsalainen-raejuusto-ostkaka"
+image:
+  src: jalkiruoat/ruotsalainen-raejuusto-ostkaka.webp
+  alt: "Swedish cottage cheese ostkaka, AI illustration"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 2
     unit: "pcs"
@@ -52,7 +57,7 @@ Swedish cottage cheese ostkaka.
 
 ## Preparation
 
-1. Heat oven to 175 °C. Butter four ovenproof ramekins.
+1. Heat oven to 175 °C. Butter four ovenproof ramekins of about 200–250 ml each.
 2. Lightly whisk eggs and sugar, then stir in cottage cheese, 150 ml cream, flour and almonds. Divide evenly, leaving headroom.
 3. Bake on middle shelf 30–40 minutes or longer until set and at least 71 °C in each centre. Cool until lukewarm.
 4. Prepare berries, chop strawberries and whip serving cream. Divide berries and cream equally.
@@ -60,5 +65,7 @@ Swedish cottage cheese ostkaka.
 
 ## Notes
 
+- The suggested ramekin capacity of approximately 200–250 ml is an editorial estimate.
+- The reference uses KESO crushed cottage cheese (4.3% fat). Other fine-curd cottage cheeses are an adaptation.
 - Contains milk, egg, wheat and almonds. Use sweet almonds, not bitter almonds.
 - Reference: https://www.arla.se/recept/ostkaka-med-bartopp/

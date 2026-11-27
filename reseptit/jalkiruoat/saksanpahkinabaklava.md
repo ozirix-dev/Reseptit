@@ -15,6 +15,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: jalkiruoat/saksanpahkinabaklava.webp
+  alt: "Saksanpähkinäbaklava, tekoälykuvitus"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 40
     unit: "arkkia"
@@ -49,7 +54,7 @@ Rapeita filokerroksia, kanelipähkinää ja hunajaista siirappia.
 ## Valmistus
 
 1. Sulata filo pakkauksen mukaan jääkaapissa, pidä arkit peitettyinä kuivumisen estämiseksi. Kuumenna uuni 160 °C:seen.
-2. Rouhi pähkinät ja kaneli, jaa neljään osaan. Voitele vuoka.
+2. Rouhi pähkinät ja kaneli, jaa neljään osaan. Voitele 23 × 33 cm:n uunivuoka.
 3. Kokoa 15 voideltua filoarkkia pohjaksi. Lisää neljäsosa pähkinöistä, sitten viisi voideltua arkkia; tee tämä pähkinä–filokerros yhteensä kolme kertaa.
 4. Lisää viimeinen neljäsosa pähkinöistä ja peitä 10 voidellulla arkilla. Leikkaa koottu leivonnainen 24 suorakulmioon ennen paistoa.
 5. Paista 60–75 min, kunnes kerrokset ovat kullanruskeita ja kypsiä. Keitä sokeri, vesi, sitruunamehu ja hunaja hiljaa 3 min sokerin liuettua, jäähdytä siirappi.

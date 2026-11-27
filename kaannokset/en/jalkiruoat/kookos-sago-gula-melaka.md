@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/kookos-sago-gula-melaka.md"
 translation_of: "kookos-sago-gula-melaka"
+image:
+  src: jalkiruoat/kookos-sago-gula-melaka.webp
+  alt: "Sago gula Melaka with coconut milk, AI illustration"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 1500
     unit: "ml"

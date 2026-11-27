@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/kardemumma-inkivaari-uunipaarynat.md"
 translation_of: "kardemumma-inkivaari-uunipaarynat"
+image:
+  src: jalkiruoat/kardemumma-inkivaari-uunipaarynat.webp
+  alt: "ลูกแพร์อบกระวานกับครีมขิง, ภาพประกอบสร้างด้วย AI"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 4
     unit: "ผล"

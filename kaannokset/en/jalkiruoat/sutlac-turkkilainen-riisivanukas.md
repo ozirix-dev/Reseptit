@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/sutlac-turkkilainen-riisivanukas.md"
 translation_of: "sutlac-turkkilainen-riisivanukas"
+image:
+  src: jalkiruoat/sutlac-turkkilainen-riisivanukas.webp
+  alt: "Turkish sütlaç rice pudding, AI illustration"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 90
     unit: "g"

@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/che-ba-mau.md"
 translation_of: "che-ba-mau"
+image:
+  src: jalkiruoat/che-ba-mau.webp
+  alt: "Vietnamese three-colour chè, AI illustration"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 100
     unit: "g"
@@ -32,9 +37,10 @@ ingredients:
   - amount: 480
     unit: "ml"
     item: "water for jelly"
-  - amount: 8
-    unit: "g"
-    item: "pure agar powder"
+  - amount: 1
+    unit: "tbsp"
+    item: "pure Telephone-brand agar-agar powder"
+    note: "level measure"
   - amount: 0.25
     unit: "tsp"
     item: "pandan extract"
@@ -43,7 +49,7 @@ ingredients:
     item: "sugar for jelly"
   - amount: 475
     unit: "g"
-    item: "cooked sweetened canned red beans"
+    item: "canned cooked sweetened whole red beans"
   - amount: 200
     unit: "g"
     item: "coconut cream"
@@ -68,7 +74,7 @@ Vietnamese three-colour chè.
 ## Preparation
 
 1. Rinse mung beans and refrigerate in 960 ml soaking water at least 4 hours; drain. Cook with 180 ml fresh water in a rice cooker for about 40 minutes until crushably soft.
-2. Observe the appliance's minimum fill and instructions; extend cooking with a little water if beans remain hard. Mash with their sugar.
+2. Observe the appliance's minimum fill and instructions; extend cooking with a little water if beans remain hard. Mash with their sugar. If the batch is below the rice cooker’s minimum fill, bring the drained mung beans and 180 ml fresh water to the boil in a small saucepan. Simmer for 15–20 minutes or longer until the beans mash easily with no hard centre. Stir occasionally and add a little hot water if needed. Drain any excess water and mash with the listed sugar.
 3. Cool promptly in a shallow container, cover and refrigerate. Boil jelly water, agar and jelly sugar, dissolving agar according to its packet, then add pandan.
 4. Pour into a shallow heatproof dish, cool, refrigerate at least 2 hours and dice. Mix coconut cream, sauce sugar, salt and tapioca starch cold in a pan.
 5. Bring to a gentle boil while stirring; cook 1–2 minutes and cool promptly. Keep components at 0–5 °C.
@@ -77,5 +83,6 @@ Vietnamese three-colour chè.
 
 ## Notes
 
+- For another pure agar product, follow the packet proportions for a firm jelly that can be cut. Do not use premixed jelly powder or gelatine. Dice only after the jelly is firm.
 - Use cooked sweetened canned beans and pure agar powder. Check agar instructions and the bean label.
 - Reference: https://www.hungryhuy.com/che-ba-mau/

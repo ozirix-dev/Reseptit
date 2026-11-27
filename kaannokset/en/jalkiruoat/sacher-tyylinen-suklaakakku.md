@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/sacher-tyylinen-suklaakakku.md"
 translation_of: "sacher-tyylinen-suklaakakku"
+image:
+  src: jalkiruoat/sacher-tyylinen-suklaakakku.webp
+  alt: "Sacher-style chocolate cake, AI illustration"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 170
     unit: "g"

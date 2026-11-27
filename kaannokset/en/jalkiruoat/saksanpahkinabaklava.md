@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/saksanpahkinabaklava.md"
 translation_of: "saksanpahkinabaklava"
+image:
+  src: jalkiruoat/saksanpahkinabaklava.webp
+  alt: "Walnut baklava, AI illustration"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 40
     unit: "sheets"
@@ -50,7 +55,7 @@ Walnut baklava.
 ## Preparation
 
 1. Thaw filo in the refrigerator according to the pack and keep sheets covered. Heat oven to 160 °C.
-2. Chop walnuts with cinnamon and divide into four equal portions. Butter the pan.
+2. Chop walnuts with cinnamon and divide into four equal portions. Butter a 23 × 33 cm baking pan.
 3. Layer 15 buttered sheets for the base. Add one quarter of the nuts and five buttered sheets; make three such nut-and-filo layers in total.
 4. Add the final quarter of nuts and top with ten buttered sheets. Cut into 24 rectangles before baking.
 5. Bake 60–75 minutes until golden and cooked through. Simmer sugar, water, lemon juice and honey for three minutes after sugar dissolves; cool syrup.

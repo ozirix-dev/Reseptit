@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/ruotsalainen-raejuusto-ostkaka.md"
 translation_of: "ruotsalainen-raejuusto-ostkaka"
+image:
+  src: jalkiruoat/ruotsalainen-raejuusto-ostkaka.webp
+  alt: "Enkel ostkaka med cottage cheese, AI-illustration"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 2
     unit: "st"
@@ -52,7 +57,7 @@ Enkel ostkaka med cottage cheese.
 
 ## Tillagning
 
-1. Värm ugnen till 175 °C. Smörj fyra ugnsfasta portionsformar.
+1. Värm ugnen till 175 °C. Smörj fyra ugnsfasta portionsformar på cirka 200–250 ml vardera.
 2. Vispa ägg och socker lätt, rör i cottage cheese, 150 ml grädde, mjöl och mandel. Fördela jämnt med plats att svälla.
 3. Grädda mitt i ugnen 30–40 minuter eller längre tills varje mitt stelnat och nått minst 71 °C. Låt svalna till ljummen.
 4. Rensa bären, skär jordgubbarna och vispa serveringsgrädden. Fördela bär och grädde jämnt.
@@ -60,5 +65,7 @@ Enkel ostkaka med cottage cheese.
 
 ## Anteckningar
 
+- Portionsformarnas föreslagna volym på cirka 200–250 ml är en redaktionell uppskattning.
+- Källreceptet använder KESO crushed (4,3 % fett). Annan finkornig cottage cheese är en anpassning.
 - Innehåller mjölk, ägg, vete och mandel. Använd sötmandel, inte bittermandel.
 - Referens: https://www.arla.se/recept/ostkaka-med-bartopp/

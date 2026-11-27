@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/muhallabia-ruusuvesimaitovanukas.md"
 translation_of: "muhallabia-ruusuvesimaitovanukas"
+image:
+  src: jalkiruoat/muhallabia-ruusuvesimaitovanukas.webp
+  alt: "มูฮัลลาบียา พุดดิ้งนมกลิ่นกุหลาบ, ภาพประกอบสร้างด้วย AI"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 960
     unit: "ml"

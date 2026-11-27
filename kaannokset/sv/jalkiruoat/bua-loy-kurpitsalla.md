@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/bua-loy-kurpitsalla.md"
 translation_of: "bua-loy-kurpitsalla"
+image:
+  src: jalkiruoat/bua-loy-kurpitsalla.webp
+  alt: "Bua loy med pumpa, AI-illustration"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 100
     unit: "g"

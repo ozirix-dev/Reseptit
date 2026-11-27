@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/alkoholiton-tiramisu.md"
 translation_of: "alkoholiton-tiramisu"
+image:
+  src: jalkiruoat/alkoholiton-tiramisu.webp
+  alt: "ทีรามิสุไม่มีแอลกอฮอล์, ภาพประกอบสร้างด้วย AI"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 225
     unit: "g"

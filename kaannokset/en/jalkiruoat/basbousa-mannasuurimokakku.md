@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/basbousa-mannasuurimokakku.md"
 translation_of: "basbousa-mannasuurimokakku"
+image:
+  src: jalkiruoat/basbousa-mannasuurimokakku.webp
+  alt: "Basbousa semolina cake, AI illustration"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 272
     unit: "g"
@@ -68,7 +73,7 @@ A coconut and yogurt semolina cake moistened with syrup.
 
 ## Preparation
 
-1. Line the pan with parchment and butter the lining. Heat the oven to 175 °C.
+1. Line a 23 × 33 cm baking pan with parchment and butter the lining. Heat the oven to 175 °C.
 2. Combine semolina, coconut, baking powder and salt. Separately mix butter, batter sugar, yogurt, eggs and vanilla.
 3. Fold in the dry mixture just until even. Spread in the pan, mark 24 pieces and press an almond into each.
 4. Bake 30–35 minutes until golden with no wet batter in the centre. Heat the syrup ingredients for 4–8 minutes until the sugar dissolves and the liquid starts bubbling.

@@ -15,6 +15,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: jalkiruoat/basbousa-mannasuurimokakku.webp
+  alt: "Basbousa, siirappinen mannakakku, tekoälykuvitus"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 272
     unit: "g"
@@ -67,7 +72,7 @@ Kookoksinen, jogurtilla pehmennetty suurimokakku, jonka kosteus syntyy sokerilie
 
 ## Valmistus
 
-1. Vuoraa vuoka leivinpaperilla ja voitele paperi. Lämmitä uuni 175 °C:seen.
+1. Vuoraa 23 × 33 cm:n vuoka leivinpaperilla ja voitele paperi. Lämmitä uuni 175 °C:seen.
 2. Yhdistä suurimot, kookos, leivinjauhe ja suola. Sekoita voi, taikinan sokeri, jogurtti, munat ja vanilja toisessa astiassa.
 3. Kääntele kuivat aineet joukkoon vain tasaiseksi. Levitä vuokaan.
 4. Merkitse pintaan 24 palaa ja paina kullekin manteli. Paista 30–35 min, kunnes pinta on kullanruskea ja keskellä ei ole märkää taikinaa.

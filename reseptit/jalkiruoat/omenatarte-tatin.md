@@ -15,6 +15,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: jalkiruoat/omenatarte-tatin.webp
+  alt: "Omenatarte Tatin, tekoälykuvitus"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 225
     unit: "g"
@@ -44,7 +49,7 @@ Ranskalainen nurinpäin paistettu omenatorttu, jossa omenat karamellisoituvat ta
 
 1. Kuumenna uuni 190 °C:seen. Kauli kylmä taikina kevyesti jauhotetulla alustalla 23 cm:n kiekoksi, pistele ja pidä jääkaapissa.
 2. Kuori ja puolita omenat, poista siemenkodat. Sekoita niihin 30 g sulatettua voita ja 25 g sokeria.
-3. Kuumenna pannussa 60 g voita, 100 g sokeria ja sitruunamehu. Kun seos kuplii, asettele omenat tiiviisti pyöreä puoli alaspäin.
+3. Käytä halkaisijaltaan 23 cm:n pannua, jonka valmistaja sallii sekä liedelle että 190 °C:n uuniin kahvoineen. Kuumenna pannussa 60 g voita, 100 g sokeria ja sitruunamehu. Kun seos kuplii, asettele omenat tiiviisti pyöreä puoli alaspäin.
 4. Kuumenna 2–3 min ja paista ilman taikinaa 15 min. Nosta pannu patakintailla kuumuutta kestävälle alustalle, aseta kylmä taikinakiekko omenoiden päälle ja työnnä reuna varoen hieman sisään.
 5. Paista vielä 30–35 min, tarvittaessa pidempään kunnes taikina on kypsä ja kullanruskea. Lepuuta pannussa 20–30 min.
 6. Irrota reunat. Aseta riittävän suuri reunallinen tarjoilulautanen pannun päälle ja käännä hallitusti patakintailla poispäin kasvoista; kuuma karamelli voi valua.

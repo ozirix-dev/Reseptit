@@ -15,6 +15,11 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 translation_languages: ["en","sv","th"]
 translation_status: {"en":"draft","sv":"draft","th":"draft"}
+image:
+  src: jalkiruoat/creme-caramel.webp
+  alt: "Crème caramel, karamellivanukas, tekoälykuvitus"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 140
     unit: "g"

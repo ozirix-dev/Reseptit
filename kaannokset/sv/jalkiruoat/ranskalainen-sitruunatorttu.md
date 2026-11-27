@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/ranskalainen-sitruunatorttu.md"
 translation_of: "ranskalainen-sitruunatorttu"
+image:
+  src: jalkiruoat/ranskalainen-sitruunatorttu.webp
+  alt: "Fransk citrontarte, AI-illustration"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 120
     unit: "g"
@@ -68,5 +73,6 @@ Fransk citrontarte.
 
 ## Anteckningar
 
+- Vispgrädde är en redaktionell anpassning. Källreceptet använder den fetare grädden double cream.
 - Innehåller vete, mjölk och ägg.
 - Referens: https://raymondblanc.com/recipes/lemon-tart/

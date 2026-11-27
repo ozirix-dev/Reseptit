@@ -16,6 +16,11 @@ fat_per_serving_g: null
 source_language: "fi"
 source_recipe: "reseptit/jalkiruoat/saksanpahkinabaklava.md"
 translation_of: "saksanpahkinabaklava"
+image:
+  src: jalkiruoat/saksanpahkinabaklava.webp
+  alt: "Baklava med valnötter, AI-illustration"
+  width: 1200
+  height: 800
 ingredients:
   - amount: 40
     unit: "ark"
@@ -50,7 +55,7 @@ Baklava med valnötter.
 ## Tillagning
 
 1. Tina filodegen i kylskåp enligt paketet och håll arken täckta. Värm ugnen till 160 °C.
-2. Hacka nötterna med kanel och dela i fyra lika delar. Smörj formen.
+2. Hacka nötterna med kanel och dela i fyra lika delar. Smörj en ugnsform på 23 × 33 cm.
 3. Lägg 15 smörpenslade ark i botten. Fördela en fjärdedel av nötterna och lägg på fem smörpenslade ark; gör sammanlagt tre sådana nöt- och filolager.
 4. Lägg på den sista fjärdedelen nötter och avsluta med tio smörpenslade ark. Skär i 24 rektanglar före gräddning.
 5. Grädda 60–75 minuter tills gyllene och genomgräddat. Sjud socker, vatten, citronsaft och honung tre minuter sedan sockret lösts upp; kyl lagen.
