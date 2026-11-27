@@ -46,6 +46,7 @@ import {
 import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches, exactRecipeTextBindingMatches, reviewedColdPuddingBindingText, reviewUnmatchedGiRanges, type GiRangeReview } from "./glycemic-load-recipe-binding";
 import { siteContent } from "../src/generated/content.generated";
 import { applyCopyEdits, reviewedRecipeCopy } from "./public-recipe-copy-r2";
+import { menemenEvidenceNames } from "./menemen-evidence-names";
 import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 import { parseMarkdown } from "../src/content/markdown";
 import { completePublishedRecipeInputs, type PublishedRecipeInputSource } from "./glycemic-load-pilot-input";
@@ -331,12 +332,6 @@ const coverageIngredientNames: Record<string, Record<string, string>> = {
   "paahdettu-aamiaismunakoiso": { munakoisoa: "munakoiso" },
   "valimerellinen-menemen-fetalla": { "vihreää paprikaa": "vihreä paprika" },
 };
-// The sealed menemen source uses older names than its six published ingredient rows.
-const menemenEvidenceBindings = [
-  { sourceName: "tomaattia", giId: "tomato-raw-cooked-sauce-analogue-gi-22", foodId: "fineli-352-2026-10-24", fiName: "tomaatti", index: 1 },
-  { sourceName: "vihreää paprikaa", giId: "vegetables-category-mean-gi-66", foodId: "fineli-387-2026-10-24", fiName: "vihreä paprika", index: 2 },
-  { sourceName: "fetajuustoa", giId: "dairy-category-mean-gi-35", foodId: "fineli-11211-2026-10-24", fiName: "feta", index: 3 },
-] as const;
 const legacyPublicResults = results.flatMap((result) => {
   const recipe = siteContent.recipes.find((entry) => entry.recipeId === result.recipeId && entry.locale === "fi");
   if (!recipe) {
@@ -435,21 +430,10 @@ const legacyPublicResults = results.flatMap((result) => {
   const ingredientEvidence = result.status === "CALCULATED" ? result.ingredients.flatMap((ingredient) => {
     if (!ingredient.matchKind || !ingredient.giRecordId || ingredient.gi === null) return [];
     const source = giRecords.find((record) => record.id === ingredient.giRecordId);
-    const binding = result.recipeId === "valimerellinen-menemen-fetalla"
-      ? menemenEvidenceBindings.find(row => row.sourceName === ingredient.name
-        && row.giId === ingredient.giRecordId && row.foodId === ingredient.fineliRecordId)
-      : undefined;
-    const boundRow = binding && recipe.ingredients[binding.index];
-    const matchesBoundRow = binding && boundRow && findIngredientIndex(binding.fiName) === binding.index
-      && recipe.ingredients.filter(row => row.item === boundRow.item).length === 1;
-    const index = matchesBoundRow ? binding.index : findIngredientIndex(ingredient.name);
-    const ingredientNames = Object.fromEntries(translations.map((entry) => {
-      const localized = entry.ingredients[index];
-      if (!matchesBoundRow) return [entry.locale, localized?.item];
-      if (entry.locale === "fi") return [entry.locale, ingredient.name];
-      const aligned = entry.ingredients.length === recipe.ingredients.length && localized?.amount === boundRow.amount;
-      return [entry.locale, aligned ? localized?.item : undefined];
-    }));
+    const index = findIngredientIndex(ingredient.name);
+    const ingredientNames = result.recipeId === "valimerellinen-menemen-fetalla"
+      ? menemenEvidenceNames(ingredient, recipe.ingredients, translations)
+      : Object.fromEntries(translations.map((entry) => [entry.locale, index >= 0 ? entry.ingredients[index]?.item : undefined]));
     return [{
       name: ingredient.name,
       ingredientNames,
