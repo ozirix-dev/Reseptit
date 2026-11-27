@@ -55,7 +55,7 @@ Kokonaisen kalan maku siirtyy paahdettuihin perunoihin ja oliiveihin.
 
 1. Kuumenna uuni 220 °C. Keitä perunoita 10 min, valuta ja viipaloi. Sekoita vuoassa perunat, oliivit, hienonnettu valkosipuli, puolet persiljan lehdistä, sitruunankuori ja 1 rkl öljyä.
 2. Tarkista kalan perkaus ja suomustus. Kuivaa, täytä vatsaontelo persiljan varsilla, aseta perunoille ja valuta loput öljystä päälle.
-3. Paista 15 min, lisää liemi ja jatka noin 10 min tai kunnes paksuimman lihaskohdan lämpö on 63 °C (anturi ei kosketa ruotoa). Irrota kalan syötävä liha ja poista ruodot. Jaa kalan liha, perunat ja vuoan liemi tasan kahteen annokseen. Viimeistele lopuilla persiljan lehdillä.
+3. Paista 15 min, lisää liemi ja jatka noin 10 min tai kunnes paksuimman lihaskohdan lämpö on 63 °C (anturi ei kosketa ruotoa). Irrota kalan syötävä liha ja poista ruodot. Poista vatsaontelosta persiljanvarret, jos niitä ei tarjoilla. Jaa kalan liha, perunat ja vuoan liemi tasan kahteen annokseen. Viimeistele lopuilla persiljan lehdillä.
 
 ## Muistiinpanot
 

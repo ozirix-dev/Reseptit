@@ -50,7 +50,7 @@ White wine, shallots and parsley flavour steamed mussels.
 
 1. Check refrigeration and pack labelling. Discard cracked shells, dead mussels and open ones that fail to close when tapped. Scrub under cold running water and remove beards. Do not soak in fresh water.
 2. Melt butter in a large lidded pot. Soften sliced shallots for 3–4 minutes.
-3. Add mussels and wine, cover and bring to a boil. Steam initially 4–5 minutes, gently shaking the pot occasionally. Do not fill more than halfway; work in batches if necessary. Continue until opened mussels are cooked through (63 °C if temperature can be measured reliably). Discard every shell that remains closed after cooking.
+3. Add mussels and wine, cover and bring to a boil. Do not fill more than halfway; work in batches if necessary. Start timing once the pot is steaming steadily again. Steam covered for 4–9 minutes depending on batch size, gently shaking the pot occasionally. Serve only fully opened mussels whose flesh is cooked through (63 °C if temperature can be measured reliably). Discard any closed or partly opened mussels after cooking. If doneness cannot be confirmed, do not serve.
 4. Add parsley and pepper. Divide opened cooked mussels and broth between four bowls; serve immediately.
 
 ## Notes
@@ -61,3 +61,4 @@ White wine, shallots and parsley flavour steamed mussels.
 - Reference: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures
 - Reference: https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely
 - Reference: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts
+- Reference: https://www.cdc.gov/vibrio/prevention/index.html

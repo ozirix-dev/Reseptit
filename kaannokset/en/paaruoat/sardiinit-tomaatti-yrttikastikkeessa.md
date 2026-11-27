@@ -24,7 +24,7 @@ image:
 ingredients:
   - amount: 750
     unit: "g"
-    item: "cleaned fresh sardines, heads and backbones removed"
+    item: "fresh gutted sardines, heads and backbones removed"
   - amount: 4
     unit: "pcs"
     item: "ripe tomatoes"
@@ -68,7 +68,7 @@ Roasted tomatoes and oregano flavour oven-baked sardines.
 
 1. Heat the oven to 220 °C fan. Slice garlic and chop onion and tomatoes into a roughly 28×38 cm baking dish.
 2. Mix in balsamic glaze, oregano, sauce oil, sugar, salt and pepper. Roast 20 minutes; stir in purée and crush softened tomatoes with a spoon.
-3. Check sardines for bones and pat dry. Place skin-side up over sauce, add fish oil and season.
+3. Check sardines for bones and pat dry. Place skin-side up over sauce, drizzle with the reserved olive oil for the sardines and season.
 4. Bake initially 10–12 minutes; extend until the thickest fish reaches 63 °C. Check for bones before serving and divide into four.
 
 ## Notes

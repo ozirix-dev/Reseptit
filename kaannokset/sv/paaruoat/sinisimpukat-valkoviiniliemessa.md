@@ -50,7 +50,7 @@ Vitt vin, schalottenlök och persilja smaksätter ångade blåmusslor.
 
 1. Kontrollera kylkedjan och märkningen. Kassera spruckna skal, döda musslor och öppna musslor som inte sluter sig vid knackning. Borsta under kallt rinnande vatten och dra bort skägget. Blötlägg inte i sötvatten.
 2. Smält smöret i en rymlig gryta med lock. Mjukstek skivad schalottenlök i 3–4 minuter.
-3. Tillsätt musslor och vin, lägg på lock och koka upp. Ånga först 4–5 minuter och skaka grytan försiktigt ibland. Fyll högst halvvägs; tillaga i omgångar vid behov. Fortsätt tills öppnade musslor är genomkokta (63 °C om temperaturen kan mätas tillförlitligt). Kassera alla som fortfarande är slutna efter tillagningen.
+3. Tillsätt musslor och vin, lägg på lock och koka upp. Fyll högst halvvägs; tillaga i omgångar vid behov. Börja ta tid när det åter bildas ordentligt med ånga i grytan. Ånga under lock i 4–9 minuter beroende på mängden och skaka grytan försiktigt ibland. Servera endast helt öppnade musslor vars kött är genomkokt (63 °C om temperaturen kan mätas tillförlitligt). Kassera slutna eller endast delvis öppnade musslor efter tillagningen. Servera inte om du inte kan säkerställa att musslorna är genomkokta.
 4. Tillsätt persilja och peppar. Fördela öppnade kokta musslor och spad i fyra skålar; servera genast.
 
 ## Anteckningar
@@ -61,3 +61,4 @@ Vitt vin, schalottenlök och persilja smaksätter ångade blåmusslor.
 - Referens: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures
 - Referens: https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely
 - Referens: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts
+- Referens: https://www.cdc.gov/vibrio/prevention/index.html

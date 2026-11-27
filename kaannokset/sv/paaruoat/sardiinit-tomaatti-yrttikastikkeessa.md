@@ -24,7 +24,7 @@ image:
 ingredients:
   - amount: 750
     unit: "g"
-    item: "rensade färska sardiner utan huvud och ryggben"
+    item: "färska urtagna sardiner utan huvud och ryggben"
   - amount: 4
     unit: "st"
     item: "mogna tomater"
@@ -68,7 +68,7 @@ Rostad tomat och oregano smaksätter ugnsbakade sardiner.
 
 1. Värm ugnen till 220 °C varmluft. Skiva vitlök och hacka lök och tomater i en cirka 28×38 cm ugnsform.
 2. Blanda i balsamicokräm, oregano, såsens olja, socker, salt och peppar. Rosta 20 minuter, rör i tomatpuré och mosa mjuka tomater med en sked.
-3. Kontrollera sardinerna för ben och torka. Lägg med skinnet uppåt över såsen, tillsätt fiskens olja och krydda.
+3. Kontrollera sardinerna för ben och torka. Lägg med skinnet uppåt över såsen, ringla över olivoljan som sparats till sardinerna och krydda.
 4. Grädda först 10–12 minuter; fortsätt tills tjockaste fisken når 63 °C. Kontrollera ben före servering och dela i fyra.
 
 ## Anteckningar

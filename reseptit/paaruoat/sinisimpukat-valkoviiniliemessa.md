@@ -49,7 +49,7 @@ Valkoviini, salottisipuli ja persilja maustavat höyrytetyt sinisimpukat.
 
 1. Tarkista kylmäketju ja pakkausmerkinnät. Hävitä rikkinäiset kuoret, kuolleet simpukat ja avoimet yksilöt, jotka eivät sulkeudu kopautettaessa. Harjaa kuoret kylmän juoksevan veden alla ja irrota parrat. Älä liota makeassa vedessä.
 2. Kuumenna voi kannellisessa tilavassa kattilassa. Kuullota viipaloidut salottisipulit 3–4 minuuttia.
-3. Lisää simpukat ja viini, peitä ja kuumenna kiehuvaksi. Höyrytä 4–5 minuuttia lähtöaikana, ravista kattilaa varoen välillä. Älä täytä kattilaa yli puolilleen; käytä tarvittaessa eriä. Jatka kunnes avautuneiden simpukoiden liha on kypsää (63 °C, jos lämpö voidaan mitata luotettavasti). Hävitä kaikki kypsennyksen jälkeen suljetut simpukat.
+3. Lisää simpukat ja viini, peitä ja kuumenna kiehuvaksi. Älä täytä kattilaa yli puolilleen; käytä tarvittaessa eriä. Laske höyrytysaika siitä, kun kattilassa muodostuu jälleen kunnolla höyryä. Höyrytä kannen alla 4–9 minuuttia erän koosta riippuen, ravista kattilaa varoen välillä. Tarjoa vain täysin avautuneet simpukat, joiden liha on kypsää (63 °C, jos lämpö voidaan mitata luotettavasti). Hävitä suljetut tai vain osittain avautuneet simpukat kypsennyksen jälkeen. Jos kypsyyttä ei voi varmistaa, älä tarjoa.
 4. Lisää persilja ja pippuri. Jaa avautuneet kypsät simpukat ja liemi neljään kulhoon, tarjoa heti.
 
 ## Muistiinpanot
@@ -60,3 +60,4 @@ Valkoviini, salottisipuli ja persilja maustavat höyrytetyt sinisimpukat.
 - Vertailulähde: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures
 - Vertailulähde: https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely
 - Vertailulähde: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts
+- Vertailulähde: https://www.cdc.gov/vibrio/prevention/index.html

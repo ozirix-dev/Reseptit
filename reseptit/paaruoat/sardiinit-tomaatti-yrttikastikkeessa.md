@@ -23,7 +23,7 @@ image:
 ingredients:
   - amount: 750
     unit: "g"
-    item: "puhdistettuja tuoreita sardiineja ilman päätä ja selkäruotoa"
+    item: "tuoreita päättömiä, perattuja ja selkäruodottomia sardiineja"
   - amount: 4
     unit: "kpl"
     item: "kypsää tomaattia"
@@ -67,7 +67,7 @@ Pehmeäksi paahdettu tomaatti ja oregano maustavat uunissa kypsyvät sardiinit.
 
 1. Kuumenna uuni 220 °C:seen kiertoilmalla. Viipaloi valkosipuli ja pilko sipuli sekä tomaatit noin 28×38 cm:n uunivuokaan.
 2. Sekoita kasvisten joukkoon balsamicokastike, oregano, kastikeöljy, sokeri, suola ja pippuri. Paahda 20 minuuttia, sekoita tomaattipyree ja murskaa pehmeät tomaatit lusikalla.
-3. Tarkista sardiinien ruodot ja kuivaa kala. Levitä kastikkeelle nahkapuoli ylöspäin, lisää kalalle varattu öljy ja mausta.
+3. Tarkista sardiinien ruodot ja kuivaa kala. Levitä kastikkeelle nahkapuoli ylöspäin, lisää kalalle varattu oliiviöljy ja mausta.
 4. Paista aluksi 10–12 minuuttia; jatka tarvittaessa, kunnes paksuimman kalan liha saavuttaa 63 °C. Tarkista ruodot ennen tarjoilua ja jaa neljään.
 
 ## Muistiinpanot

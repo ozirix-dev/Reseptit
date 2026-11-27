@@ -56,7 +56,7 @@ Whole fish roasts over potatoes and olives, flavouring them as it cooks.
 
 1. Heat oven to 220 °C. Boil potatoes 10 min, drain and slice. Toss in a baking dish with olives, chopped garlic, half the parsley leaves, lemon zest and 1 tbsp oil.
 2. Check fish is gutted and scaled. Pat dry, fill cavity with parsley stems, place on potatoes and drizzle remaining oil.
-3. Roast 15 min, add stock and cook about 10 min more or until thickest flesh reaches 63 °C without probe touching bone. Separate the edible flesh from the bones and discard the bones. Divide the fish, potatoes and cooking juices evenly between two portions. Finish with the remaining parsley leaves.
+3. Roast 15 min, add stock and cook about 10 min more or until thickest flesh reaches 63 °C without probe touching bone. Separate the edible flesh from the bones and discard the bones. Remove the parsley stems from the cavity if they will not be served. Divide the fish, potatoes and cooking juices evenly between two portions. Finish with the remaining parsley leaves.
 
 ## Notes
 
