@@ -76,6 +76,81 @@ test("rounded UI values cannot change the original GK category", () => {
   assert.deepEqual(originalPortionGk(withRange, 2).estimate, { type: "ESTIMATED_RANGE", range: { min: 8, max: 10 } });
 });
 
+test("public GK thresholds use unrounded points for every supported eaten portion", () => {
+  const multipliers = [0.5, 1, 1.5, 2] as const;
+  // Expected public classes are specified independently of the classifiers.
+  const cases = [
+    [0, "LOW", "LOW", "LOW", "LOW"],
+    [9.99, "LOW", "LOW", "MEDIUM", "MEDIUM"],
+    [10, "LOW", "LOW", "MEDIUM", "HIGH"],
+    [10.01, "LOW", "MEDIUM", "MEDIUM", "HIGH"],
+    [10.49, "LOW", "MEDIUM", "MEDIUM", "HIGH"],
+    [19.49, "LOW", "MEDIUM", "HIGH", "HIGH"],
+    [19.5, "LOW", "MEDIUM", "HIGH", "HIGH"],
+    [19.99, "LOW", "MEDIUM", "HIGH", "HIGH"],
+    [20, "LOW", "HIGH", "HIGH", "HIGH"],
+    [20.01, "MEDIUM", "HIGH", "HIGH", "HIGH"],
+  ] as const;
+  for (const [value, ...expected] of cases) {
+    const result = {
+      status: "CALCULATED", confidence: "LOW",
+      glycemicLoadPerServing: Number(value.toPrecision(1)),
+      unroundedGlycemicLoadPerServing: value,
+      glycemicLoadRangePerServing: null,
+      omittedAvailableCarbohydratePerServingG: 0,
+    };
+    assert.equal(originalGlycemicLoadCategory(result), expected[1]!.toLowerCase(), `listing: ${value}`);
+    for (const [index, multiplier] of multipliers.entries()) {
+      const label = `${value} GK × ${multiplier}`;
+      const portion = originalPortionGk(result, multiplier);
+      assert.equal(portion.category, expected[index], label);
+      assert.deepEqual(portion.estimate, { type: "EXACT_MODEL", value: value * multiplier }, label);
+      assert.equal(portion.omissionLimitsClass, false, label);
+      const omitted = { ...result, omittedAvailableCarbohydratePerServingG: 0.2 };
+      const limited = originalPortionGk(omitted, multiplier);
+      assert.equal(limited.category, expected[index], label + ": omission does not change the point class");
+      assert.equal(limited.omissionLimitsClass, expected[index] !== "HIGH", label + ": omission limits low and medium classes");
+    }
+    const omitted = { ...result, omittedAvailableCarbohydratePerServingG: 0.2 };
+    assert.equal(originalGlycemicLoadCategory(omitted), expected[1] === "HIGH" ? "high" : null,
+      `listing with unresolved omission: ${value}`);
+  }
+});
+
+test("public GK range endpoints preserve both thresholds through portion scaling", () => {
+  const multipliers = [0.5, 1, 1.5, 2] as const;
+  const cases = [
+    [9.99, 10, "LOW", "LOW", "MEDIUM", "CROSSES_BOUNDARY"],
+    [10, 10.01, "LOW", "CROSSES_BOUNDARY", "MEDIUM", "HIGH"],
+    [10.01, 19.99, "LOW", "MEDIUM", "CROSSES_BOUNDARY", "HIGH"],
+    [19.99, 20, "LOW", "CROSSES_BOUNDARY", "HIGH", "HIGH"],
+    [20, 20.01, "CROSSES_BOUNDARY", "HIGH", "HIGH", "HIGH"],
+  ] as const;
+  for (const [min, max, ...expected] of cases) {
+    const result = {
+      status: "CALCULATED", confidence: "LOW",
+      glycemicLoadPerServing: null,
+      unroundedGlycemicLoadPerServing: null,
+      glycemicLoadRangePerServing: { min, max },
+      omittedAvailableCarbohydratePerServingG: 0,
+    };
+    for (const [index, multiplier] of multipliers.entries()) {
+      const label = `${min}–${max} GK × ${multiplier}`;
+      const portion = originalPortionGk(result, multiplier);
+      assert.equal(portion.category, expected[index], label);
+      assert.equal(portion.rangeOnly, true, label);
+      assert.deepEqual(portion.estimate, {
+        type: "ESTIMATED_RANGE", range: { min: min * multiplier, max: max * multiplier },
+      }, label);
+    }
+    const standard = expected[1]!;
+    const listing = standard === "CROSSES_BOUNDARY" ? null : standard.toLowerCase();
+    assert.equal(originalGlycemicLoadCategory(result), listing, `listing: ${min}–${max}`);
+    assert.equal(originalGlycemicLoadCategory({ ...result, omittedAvailableCarbohydratePerServingG: 0.2 }),
+      standard === "HIGH" ? "high" : null, `listing with unresolved omission: ${min}–${max}`);
+  }
+});
+
 test("an approved range without a point keeps its class and both display endpoints", () => {
   const result = {
     status: "CALCULATED", confidence: "LOW", glycemicLoadPerServing: null,
