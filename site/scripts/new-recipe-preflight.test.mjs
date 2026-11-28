@@ -207,3 +207,33 @@ test('a second data-defined successor preserves the old URL without admitting an
   const active = [{ ...registry[0], predecessor_id: 'omena-puuro' }];
   assert.match(validateReview(successorPath, markdown, review, [previous], active)[0], /quarantined predecessor/);
 });
+
+// Explicit paths share the same complete duplicate inventory and evidence rules.
+test('explicit recipe batch matches singleton assessments and rejects a stale second receipt', () => {
+  const root = mkdtempSync(path.join(tmpdir(), 'recipe-explicit-batch-'));
+  try {
+    const second = 'reseptit/aamupalat/toinen-puuro.md';
+    const files = [recipePath, second];
+    const texts = [source(), source('published', 'toinen-puuro')];
+    const reviewDir = path.join(root, 'docs/reviews/new-recipes');
+    mkdirSync(path.join(root, 'reseptit/aamupalat'), { recursive: true });
+    mkdirSync(reviewDir, { recursive: true });
+    for (let i = 0; i < files.length; i++) {
+      writeFileSync(path.join(root, files[i]), texts[i]);
+      writeFileSync(path.join(reviewDir, readRecipeIdentity(texts[i]).recipe_id + '.json'),
+        JSON.stringify(approval(texts[i], files[i])));
+    }
+    const args = files.map(file => '--recipe=' + file);
+    const singles = args.flatMap(arg => runCli(root, [arg, '--json']).assessments);
+    const batch = runCli(root, [...args, '--json']);
+    assert.equal(batch.checked, 2);
+    assert.equal(batch.candidates, 2);
+    assert.equal(batch.blocked, 0);
+    assert.deepEqual(batch.assessments, singles);
+    assert.throws(() => runCli(root, [args[0], args[0]]), /duplicate recipe path/);
+    assert.throws(() => runCli(root, [args[0], '--recipe=../invalid.md']), /Invalid or duplicate recipe path/);
+    writeFileSync(path.join(root, second), texts[1] + '\nChanged after approval.\n');
+    assert.throws(() => runCli(root, [...args, '--json']), /publication blocked/);
+    assert.equal(runCli(root, [args[0], '--json']).checked, 1);
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
