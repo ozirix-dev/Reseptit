@@ -23,7 +23,7 @@ import { assertChangedRecipeAuditIsClean, duplicateRoutesForChangedRecipes, nutr
 import { assertReviewedSnackPublication } from "./snack-publication-review";
 import { parseMarkdown, renderInstructionSteps, renderSafeMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
-import { assertKarnivoreDraftSafe, assertKarnivoreTranslationReady } from "./karnivore-draft-gate";
+import { assertKarnivoreDraftSafe, assertKarnivoreTranslationReady, isHistoricalKarnivoreRecipe } from "./karnivore-draft-gate";
 import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
@@ -31,6 +31,10 @@ const repoRoot = path.resolve(siteDir, "..");
 const suppliedPaths = process.argv.slice(2);
 const recipePaths = suppliedPaths.filter((file) => /^(?:(?:reseptit|kaannokset)\/.+|tuonti\/karnivore\/paaruoat\/[^/]+)\.md$/i.test(file) && !file.includes("/_mallipohjat/"));
 const evidencePaths = suppliedPaths.filter((file) => /^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/i.test(file));
+const karnivoreReviewIds = new Set(suppliedPaths.flatMap(file => {
+  const match = /^docs\/reviews\/new-recipes\/(karnivore-[a-z0-9-]+)\.json$/.exec(file);
+  return match ? [match[1]] : [];
+}));
 const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset", "aamupalat", "valipalat"];
 const translationLocales = ["en", "sv", "th"];
 
@@ -54,6 +58,26 @@ function resolveRepoFile(relativePath: string): string {
     throw new Error(`Changed path escapes the repository: ${relativePath}`);
   }
   return fullPath;
+}
+
+async function reviewKarnivorePublication(recipeId: string, sourcePath: string, markdown: string): Promise<boolean> {
+  if (isHistoricalKarnivoreRecipe(recipeId)) return false;
+  const reviewPath = resolveRepoFile(`docs/reviews/new-recipes/${recipeId}.json`);
+  const reviewText = await readFile(reviewPath, "utf8").catch((error: NodeJS.ErrnoException) => {
+    if (error.code === "ENOENT") return null;
+    throw error;
+  });
+  const { validateReview } = await import("./new-recipe-preflight.mjs");
+  const review = reviewText === null ? null : JSON.parse(reviewText);
+  assert.deepEqual(validateReview(sourcePath, markdown, review), [], `${recipeId}: current Finnish publication review required`);
+  const animalOrigin = review.checks?.animal_origin;
+  assert(animalOrigin?.status === "pass"
+    && typeof animalOrigin.notes === "string" && animalOrigin.notes.trim().length >= 20,
+    `${recipeId}: publication requires documented Finnish animal-origin review`);
+  const evidencePath = `docs/nutrition/calculations/${recipeId}.json`;
+  assert.equal(review.nutrition_evidence, evidencePath, `${recipeId}: publication review must reference the recipe calculation`);
+  await access(resolveRepoFile(evidencePath));
+  return true;
 }
 
 function changedNutritionValues(relativePath: string): boolean {
@@ -93,19 +117,35 @@ for (const relativePath of recipePaths) {
   const parsed = parseMarkdown(markdown);
   assert(parsed, `${relativePath}: recipe frontmatter is missing or malformed`);
   const data = recipeFrontmatterSchema.parse(parsed.data);
+  const previous = previousRecipes.get(relativePath)?.data;
+  if (typeof previous?.recipe_id === "string" && isHistoricalKarnivoreRecipe(previous.recipe_id)) {
+    assert.equal(data.recipe_id, previous.recipe_id, `${relativePath}: historical karnivore recipe ID cannot change`);
+    assert.equal(data.language, previous.language, `${relativePath}: historical karnivore recipe language cannot change`);
+  }
   await assertReviewedSnackPublication(data, repoRoot, relativePath);
-  if (data.recipe_id.startsWith("karnivore-") && data.language !== "fi") {
-    const sourcePath = `reseptit/paaruoat/${data.recipe_id}.md`;
-    const source = parseMarkdown(await readFile(resolveRepoFile(sourcePath), "utf8"));
-    assert(source, `${sourcePath}: missing Finnish recipe source`);
-    semanticEvidence ??= await loadSemanticEvidence(repoRoot);
-    assertKarnivoreTranslationReady(
-      { data, content: parsed.content },
-      { data: recipeFrontmatterSchema.parse(source.data), content: source.content },
-      semanticEvidence[`${data.recipe_id}:${data.language}`],
-    );
-  } else {
-    assertKarnivoreDraftSafe(data, markdown);
+  if (data.recipe_id.startsWith("karnivore-")) {
+    if (data.language === "fi") {
+      const reviewed = data.status === "published"
+        && await reviewKarnivorePublication(data.recipe_id, relativePath, markdown);
+      assertKarnivoreDraftSafe(data, markdown, reviewed);
+    } else if (data.status === "published" || isHistoricalKarnivoreRecipe(data.recipe_id)) {
+      const sourcePath = isHistoricalKarnivoreRecipe(data.recipe_id)
+        ? `reseptit/paaruoat/${data.recipe_id}.md`
+        : data.source_recipe;
+      assert(sourcePath && sourcePath.startsWith("reseptit/"), `${relativePath}: missing canonical Finnish source path`);
+      const sourceText = await readFile(resolveRepoFile(sourcePath), "utf8");
+      const source = parseMarkdown(sourceText);
+      assert(source, `${sourcePath}: missing Finnish recipe source`);
+      semanticEvidence ??= await loadSemanticEvidence(repoRoot);
+      const reviewed = data.status === "published"
+        && await reviewKarnivorePublication(data.recipe_id, sourcePath, sourceText);
+      assertKarnivoreTranslationReady(
+        { data, content: parsed.content },
+        { data: recipeFrontmatterSchema.parse(source.data), content: source.content },
+        semanticEvidence[`${data.recipe_id}:${data.language}`],
+        reviewed,
+      );
+    }
   }
   if (data.status === "published") {
     const match = /^##\s+(?:Valmistus|Preparation|Instructions|Tillagning|Gör så här|การทำ|วิธีทำ)\s*$/im.exec(parsed.content);
@@ -137,6 +177,17 @@ for (const relativePath of recipePaths) {
   changedRecipes.push({ path: relativePath, data, markdown });
 }
 
+// Changed paths include both sides of a move. A replacement must still pass
+// validation using the historical recipe ID and language.
+const currentPaths = new Set(changedRecipes.map(recipe => recipe.path));
+for (const [previousPath, previous] of previousRecipes) {
+  const id = previous?.data.recipe_id;
+  if (typeof id !== "string" || !isHistoricalKarnivoreRecipe(id) || currentPaths.has(previousPath)) continue;
+  assert(changedRecipes.some(recipe => recipe.data.recipe_id === id && recipe.data.language === previous?.data.language
+    && !previousRecipes.get(recipe.path)),
+  `${previousPath}: historical karnivore recipe requires a replacement with the same ID and language`);
+}
+
 const evidenceIds = new Set<string>();
 for (const relativePath of evidencePaths) {
   const fullPath = resolveRepoFile(relativePath);
@@ -158,8 +209,9 @@ const recipeIds = new Set([
   ...changedRecipes.map((recipe) => recipe.data.recipe_id),
   ...[...previousRecipes.values()].map((recipe) => recipe?.data.recipe_id).filter((id): id is string => typeof id === "string"),
   ...evidenceIds,
+  ...karnivoreReviewIds,
 ]);
-assert(recipeIds.size > 0, "No changed recipe or nutrition evidence paths were supplied.");
+assert(recipeIds.size > 0, "No changed recipe or evidence paths were supplied.");
 const semanticallyChanged = new Set(changedRecipes.filter((recipe) => {
   if (recipe.data.status !== "published") return false;
   const previous = previousRecipes.get(recipe.path);
@@ -228,6 +280,10 @@ for (const recipeId of recipeIds) {
     assert(evidenceText === null, `${recipeId}: calculation evidence has no published Finnish source`);
     assert(!gkPending, `${recipeId}: new-public GK pending entry has no published Finnish source`);
     continue;
+  }
+
+  if (karnivoreReviewIds.has(recipeId) && !currentPaths.has(source.path)) {
+    await reviewKarnivorePublication(recipeId, source.path, await readFile(resolveRepoFile(source.path), "utf8"));
   }
 
   const translations = audit.publishedTranslations.filter((recipe) => recipe.data.recipe_id === recipeId);

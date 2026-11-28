@@ -71,5 +71,5 @@ En krämig finsk höstsoppa med färska trattkantareller (Craterellus tubaeformi
 ## Anteckningar
 
 - Innehåller mjölk och vete. Använd bara säkert identifierade matsvampar; upphettning gör inte en okänd giftsvamp säker. Servera varm; kyl rester snabbt i grunda kärl och förvara i kylskåp under +6 °C.
-- AI-genererad bild; ingen egen provlagning, receptspecifik närings-/GK-beräkning eller granskad glutenfrihet. Endast utkast.
+- AI-genererad illustration. Recipavo har inte provlagat receptet i eget kök och ingen näringsberäkning eller beräkning av glykemisk belastning för receptet har godkänts. Numeriska näringsvärden utelämnas. Den glykemiska belastningen är inte fastställd och inget påstående om glutenfrihet har godkänts. Översättningen är fortfarande ett utkast.
 - Jämförelsekällor: [Martat](https://www.martat.fi/reseptit/suppilovahverokeitto-2/) · [Ruokavirasto](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ruokasienet/sienten-tunnistaminen/). Egen bearbetning, ingen textkopia.

@@ -355,10 +355,10 @@ const descriptions: LocalizedCopy = {
     th: "เนื้อวัวตุ๋นจนนุ่มกับพริกหวาน มะเขือเทศ และยี่หร่า เสิร์ฟกับครีมเปรี้ยวสเมตานาและพาร์สลีย์",
   },
   "paprikauunimunakkaat": {
-    fi: "Punaiset paprikat toimivat uunissa pieninä vuokina kananmunalle ja juustolle. Päälle ripotellaan ruohosipulia.",
-    en: "Red peppers make edible baking cups for eggs and grated cheese. Chives go on top.",
-    sv: "Röda paprikor blir små formar för ägg och riven ost. Toppa med gräslök.",
-    th: "ใช้พริกหวานแดงเป็นถ้วยอบไข่กับชีสขูด แล้วโรยกุยช่ายฝรั่ง",
+    fi: "Punaiset paprikat toimivat uunissa pieninä vuokina kananmunalle ja juustolle. Ruohosipuli sekoitetaan munaseokseen.",
+    en: "Red peppers act as small baking cups for the eggs and cheese. The chives are mixed into the egg mixture.",
+    sv: "Röda paprikor fungerar som små formar för ägg och ost i ugnen. Gräslöken blandas i äggsmeten.",
+    th: "ใช้พริกหวานแดงเป็นถ้วยอบไข่กับชีส โดยผสมกุยช่ายฝรั่งลงในส่วนผสมไข่",
   },
   "parsakaali-sinihomejuustofrittata": {
     fi: "Parsakaali ja sipuli kypsyvät ensin pannulla. Kerma, kananmuna ja sinihomejuusto sitovat ne uunissa frittataksi.",

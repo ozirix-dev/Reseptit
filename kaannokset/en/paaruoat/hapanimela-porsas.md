@@ -99,4 +99,4 @@ Crispy fried pork and colorful vegetables get a tangy sweet sauce made from vine
 
 ## Notes
 
-- The sauce is sweet; adjust the amount of vinegar and sugar according to your taste.
+- The sauce is on the sweet side. For the standard recipe, use the amounts of sugar and vinegar listed in the ingredients. If desired, adjust them to taste to make a variation of the standard recipe.

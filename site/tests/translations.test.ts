@@ -125,9 +125,18 @@ test("a targeted translation audit contains only the requested recipe and its pa
   const recipeId = full.publishedSources[0]!.data.recipe_id;
   const targeted = await auditTranslations([recipeId]);
   assert.deepEqual(targeted.errors, []);
-  assert.ok(targeted.publishedSources.length <= 1);
-  assert.ok(targeted.publishedSources.every((recipe) => recipe.data.recipe_id === recipeId));
-  assert.ok(targeted.publishedTranslations.every((recipe) => recipe.data.recipe_id === recipeId));
+  assert.deepEqual(targeted.publishedSources, full.publishedSources.filter((recipe) => recipe.data.recipe_id === recipeId));
+  assert.deepEqual(targeted.publishedTranslations, full.publishedTranslations.filter((recipe) => recipe.data.recipe_id === recipeId));
+  assert.deepEqual(targeted.rows, full.rows.filter((row) => row.recipe_id === recipeId));
+
+  // A non-existent ID must not leak unrelated recipes into a targeted audit.
+  let missingId = "r2-missing-recipe-control";
+  while (full.publishedSources.some((recipe) => recipe.data.recipe_id === missingId) ||
+         full.publishedTranslations.some((recipe) => recipe.data.recipe_id === missingId)) {
+    missingId += "-x";
+  }
+  const missing = await auditTranslations([missingId]);
+  assert.deepEqual(missing, { publishedSources: [], publishedTranslations: [], rows: [], errors: [] });
 });
 
 test("metadata-driven pairs allow new sources and drafts but reject missing or duplicate published versions", async () => {
@@ -459,8 +468,22 @@ test("published snack sources are within the translation and nutrition audit inv
   const audit = await loadFullAudit();
   const snacks = audit.publishedSources.filter((source) => source.data.category === "valipala");
   assert.ok(snacks.every((source) => source.path.startsWith("reseptit/valipalat/")));
-  for (const recipe of snacks) {
-    const targeted = await auditTranslations([recipe.data.recipe_id]);
-    assert.ok(targeted.publishedSources.some((entry) => entry.path === recipe.path));
-  }
+  assert.ok(snacks.length > 0, "the published snack inventory must not be empty");
+  const snackIds = new Set(snacks.map((recipe) => recipe.data.recipe_id));
+  assert.equal(snackIds.size, snacks.length, "one published FI source per snack");
+  const targeted = await auditTranslations([...snackIds]);
+  assert.deepEqual(targeted.publishedSources, snacks);
+  assert.deepEqual(targeted.publishedTranslations,
+    audit.publishedTranslations.filter((recipe) => snackIds.has(recipe.data.recipe_id)));
+  assert.deepEqual(targeted.rows, audit.rows.filter((row) => snackIds.has(row.recipe_id)));
+  assert.deepEqual(targeted.errors, []);
+
+  // Retain an independent singleton check for the same snack-specific path.
+  const id = snacks[0].data.recipe_id;
+  const singleton = await auditTranslations([id]);
+  assert.deepEqual(singleton.publishedSources, snacks.filter((recipe) => recipe.data.recipe_id === id));
+  assert.deepEqual(singleton.publishedTranslations,
+    targeted.publishedTranslations.filter((recipe) => recipe.data.recipe_id === id));
+  assert.deepEqual(singleton.rows, targeted.rows.filter((row) => row.recipe_id === id));
+  assert.deepEqual(singleton.errors, []);
 });

@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "recipe_id": "soto-ayam-kookosmaidolla",
+  "source_path": "reseptit/paaruoat/soto-ayam-kookosmaidolla.md",
+  "source_sha256": "1f0759e8c365c63a67ba921dd8403f422680fddba76a225e339a689c1f1dbc4c",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://rasamalaysia.com/soto-ayam-recipe/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/soto-ayam-kookosmaidolla.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/soto-ayam-kookosmaidolla.webp",
+    "bytes": 124526,
+    "sha256": "9e34116eb12136a739185b4512bf3529d597cf82b43948ff90e25dfee0a24e36",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/soto-ayam-kookosmaidolla.md",
+        "sha256": "5c440c2cda97ff17cac50c946b3f9eb58e7d095bf76177c286b5b67567b3f86d"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/soto-ayam-kookosmaidolla.md",
+        "sha256": "14b89680e4c7ba17f0eb33cfabda19ca39fdf0ca0b8a9aa1cbc86216c471e767"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/soto-ayam-kookosmaidolla.md",
+        "sha256": "c048a3d570bec8b3733d28d48673b60aa621780e9c260c5b4b343e54561a740d"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/soto-ayam-kookosmaidolla.md",
+        "sha256": "e05f1b3235053361fa004f1589bac9f0ece3f58d8abf0382d3a101ba55bc6108"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "e8480420c34da101b721c9bc03817e03135e7b08ce75bdd36b6963a70d67cba7"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/soto-ayam-kookosmaidolla.md",
+        "language": "fi",
+        "slug": "soto-ayam-kookosmaidolla",
+        "sha256": "1f0759e8c365c63a67ba921dd8403f422680fddba76a225e339a689c1f1dbc4c",
+        "semantic_sha256": "b5a51c02988a524d44b2b81c02bedc1e40de8c09b3407bf2784d06eed92cfb40"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/soto-ayam-kookosmaidolla.md",
+        "language": "en",
+        "slug": "soto-ayam-kookosmaidolla-en",
+        "sha256": "345a8794304dfc724d23f5468ca2a4797fba9b5a737ffe521441ac5107f2fc6b",
+        "semantic_sha256": "dd2fd3048e4caa8166704e1df424b4c6d57430e8a143f0147a3bb2fb58a013c9"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/soto-ayam-kookosmaidolla.md",
+        "language": "sv",
+        "slug": "soto-ayam-kookosmaidolla-sv",
+        "sha256": "1a915ecabe17190fbc5bebfc5d195cde994ca6835212add535c78eaec64ad264",
+        "semantic_sha256": "bbc5b079e7eb1b59c0e9d15e0c782d0c900dd8ff055dd6efc37902487ba4fc4c"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/soto-ayam-kookosmaidolla.md",
+        "language": "th",
+        "slug": "soto-ayam-kookosmaidolla-th",
+        "sha256": "7be612d7b201b7310e5d3add5d2cc97ea821c80c6d125831b31d738abd4e70a9",
+        "semantic_sha256": "4fe5f45fd1f3c9603a36487c5ce5c0cf35d577e19df9ea62173501c1ec6f0780"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja aika 55 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kuivan vermisellin, kookosmaidon, liemen ja sipulirouheen täsmätuotteet, muna-/limettimassat ja öljyretentio."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "200 g kuivaa vermiselliä eli 50 g/annos; tuote- ja valmistusmuotokohtainen GI/HH, liemi ja lisukkeet."
+    }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
+  }
+}

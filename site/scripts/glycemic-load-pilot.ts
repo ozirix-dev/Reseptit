@@ -46,6 +46,7 @@ import {
 import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches, exactRecipeTextBindingMatches, reviewedColdPuddingBindingText, reviewUnmatchedGiRanges, type GiRangeReview } from "./glycemic-load-recipe-binding";
 import { siteContent } from "../src/generated/content.generated";
 import { applyCopyEdits, reviewedRecipeCopy } from "./public-recipe-copy-r2";
+import { menemenEvidenceNames } from "./menemen-evidence-names";
 import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 import { parseMarkdown } from "../src/content/markdown";
 import { completePublishedRecipeInputs, type PublishedRecipeInputSource } from "./glycemic-load-pilot-input";
@@ -430,7 +431,9 @@ const legacyPublicResults = results.flatMap((result) => {
     if (!ingredient.matchKind || !ingredient.giRecordId || ingredient.gi === null) return [];
     const source = giRecords.find((record) => record.id === ingredient.giRecordId);
     const index = findIngredientIndex(ingredient.name);
-    const ingredientNames = Object.fromEntries(translations.map((entry) => [entry.locale, index >= 0 ? entry.ingredients[index]?.item : undefined]));
+    const ingredientNames = result.recipeId === "valimerellinen-menemen-fetalla"
+      ? menemenEvidenceNames(ingredient, recipe.ingredients, translations)
+      : Object.fromEntries(translations.map((entry) => [entry.locale, index >= 0 ? entry.ingredients[index]?.item : undefined]));
     return [{
       name: ingredient.name,
       ingredientNames,
