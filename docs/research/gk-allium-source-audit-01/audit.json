@@ -1,0 +1,725 @@
+{
+  "baseCommit": "a0fbeb33d7fb84f4e0718ec57f1d5e4447a290dc",
+  "pins": {
+    "input": {
+      "path": "docs/nutrition/glycemic-load-pilot-input.json",
+      "blob": "914b0fa604516f8585e616863bfff5dcaab3e729"
+    },
+    "food": {
+      "path": "docs/nutrition/food-records.json",
+      "blob": "d7d6b83b45ed6b048582850f39425d08eb8d1ec6"
+    },
+    "falafelRecipe": {
+      "path": "reseptit/paaruoat/falafel.md",
+      "blob": "1bce7a03427ebfb6422c46eeef9f04e141359070"
+    },
+    "falafelCalc": {
+      "path": "docs/nutrition/calculations/falafel.json",
+      "blob": "f6ede7516470e2e5c2ccb7d3595270f669f2beee"
+    },
+    "bissaraRecipe": {
+      "path": "reseptit/aamupalat/pohjoisafrikkalainen-bissara.md",
+      "blob": "1c7fb66e7512d91bd986d3de8c20a4a5ee0251c6"
+    },
+    "bissaraCalc": {
+      "path": "docs/nutrition/calculations/pohjoisafrikkalainen-bissara.json",
+      "blob": "08ab461c196dfa1a8584d5e49e46500c27d16512"
+    }
+  },
+  "status": "HISTORICAL_INPUT_IDENTITY_SCREEN_NOT_RUNTIME_APPROVAL",
+  "scope": "Literal Finnish ingredient-name substring valkosipuli in the 326 pinned original inputs. Garlic record names are identity labels, not adequacy or preparation approvals. Unmapped rows are not zero. No public GK, variants, retained carbohydrate, new approval or complete source audit inferred.",
+  "summary": {
+    "inputRecipes": 326,
+    "matchedIngredientRows": 51,
+    "matchedRecipeIds": 50,
+    "classifications": {
+      "GARLIC_RECORD": 45,
+      "UNMAPPED": 4,
+      "ONION_NOT_GARLIC": 2,
+      "UNKNOWN_RECORD": 0,
+      "OTHER_REVIEW": 0
+    }
+  },
+  "rows": [
+    {
+      "recipeId": "hummus",
+      "ingredientIndex": 3,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 3.5,
+      "foodRecordId": "fineli-393-2026-10-24",
+      "giRecordId": null,
+      "recordName": "Valkosipuli",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "ratatouille",
+      "ingredientIndex": 4,
+      "servings": 4,
+      "name": "tuoretta kuorittua valkosipulia",
+      "grams": 9,
+      "foodRecordId": "op142-fineli-393",
+      "giRecordId": "op142-vegetable-imputation40",
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "jauheliha-makaronilaatikko",
+      "ingredientIndex": 10,
+      "servings": 8,
+      "name": "valkosipulijauhetta",
+      "grams": 3,
+      "foodRecordId": null,
+      "giRecordId": null,
+      "recordName": null,
+      "classification": "UNMAPPED",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "koshari",
+      "ingredientIndex": 7,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "afcd-F004193-2026-10-24",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "ingredientIndex": 3,
+      "servings": 4,
+      "name": "tuoretta kuorittua valkosipulia",
+      "grams": 6,
+      "foodRecordId": "ehold-fineli-393",
+      "giRecordId": "ehold-vegetable-imputation40",
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "bulgogi",
+      "ingredientIndex": 5,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 10.5,
+      "foodRecordId": "afcd-F004193-2026-10-24",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "doner-kebab",
+      "ingredientIndex": 3,
+      "servings": 4,
+      "name": "tuoretta kuorittua valkosipulia",
+      "grams": 6,
+      "foodRecordId": "ehold-fineli-393",
+      "giRecordId": "ehold-vegetable-imputation40",
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "souvlaki",
+      "ingredientIndex": 3,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "afcd-F004193-2026-10-24",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "souvlaki",
+      "ingredientIndex": 8,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 3.5,
+      "foodRecordId": "afcd-F004193-2026-10-24",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "gazpacho",
+      "ingredientIndex": 3,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 3.5,
+      "foodRecordId": "afcd-F004193-2026-10-24",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "chettinad-kana",
+      "ingredientIndex": 3,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "afcd-F004193-2026-10-24",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "ingredientIndex": 6,
+      "servings": 4,
+      "name": "valkosipulimurskaa",
+      "grams": null,
+      "foodRecordId": "afcd-F004193-2026-10-24",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "khao-man-gai-vhh",
+      "ingredientIndex": 9,
+      "servings": 4,
+      "name": "valkosipulia",
+      "grams": 3.5,
+      "foodRecordId": "afcd-F004193-2026-10-24",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "italian-pata",
+      "ingredientIndex": 5,
+      "servings": 4,
+      "name": "valkosipulia",
+      "grams": 3.5,
+      "foodRecordId": "fineli-393-2026-10-24",
+      "giRecordId": null,
+      "recordName": "Valkosipuli",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "broileri-kukkakaaligratiini",
+      "ingredientIndex": 6,
+      "servings": 4,
+      "name": "valkosipulijauhetta 1 tl",
+      "grams": null,
+      "foodRecordId": null,
+      "giRecordId": null,
+      "recordName": null,
+      "classification": "UNMAPPED",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "som-tam-vhh-kurkkuna",
+      "ingredientIndex": 4,
+      "servings": 4,
+      "name": "valkosipulia",
+      "grams": 3.5,
+      "foodRecordId": "afcd-F004193-2026-10-24",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "pad-kra-pao-vhh",
+      "ingredientIndex": 4,
+      "servings": 4,
+      "name": "valkosipulia",
+      "grams": 10.5,
+      "foodRecordId": "afcd-F004193-2026-10-24",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "kermainen-lohipata",
+      "ingredientIndex": 2,
+      "servings": 4,
+      "name": "valkosipulia",
+      "grams": 7,
+      "foodRecordId": "fineli-393-2026-10-24",
+      "giRecordId": null,
+      "recordName": "Valkosipuli",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "gai-yang-vhh",
+      "ingredientIndex": 3,
+      "servings": 4,
+      "name": "valkosipulia",
+      "grams": 10.5,
+      "foodRecordId": "afcd-F004193-2026-10-25",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "pad-kee-mao-vhh-konjac",
+      "ingredientIndex": 5,
+      "servings": 4,
+      "name": "valkosipulia",
+      "grams": 10.5,
+      "foodRecordId": "afcd-F004193-2026-10-25",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "pad-see-ew-vhh-konjac",
+      "ingredientIndex": 9,
+      "servings": 4,
+      "name": "valkosipulia",
+      "grams": 7,
+      "foodRecordId": "afcd-F004193-2026-10-25",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "moo-ping-vhh",
+      "ingredientIndex": 4,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-2026-10-25",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "bun-cha-hanoi",
+      "ingredientIndex": 5,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-2026-10-25",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "bibimbap",
+      "ingredientIndex": 10,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-2026-10-25",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "chow-mein",
+      "ingredientIndex": 3,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-2026-10-25",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "dan-dan-nuudelit",
+      "ingredientIndex": 3,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-2026-10-25",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "amritsari-kala",
+      "ingredientIndex": 8,
+      "servings": 4,
+      "name": "valkosipulinkynsi",
+      "grams": 3,
+      "foodRecordId": "afcd-F004193-release-3",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "paprikainen-vhh-gulassi",
+      "ingredientIndex": 2,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 9,
+      "foodRecordId": "op142-fineli-393",
+      "giRecordId": "op142-vegetable-imputation40-r11",
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "kerala-kalacurry",
+      "ingredientIndex": 3,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 6,
+      "foodRecordId": "afcd-F004193-release-3",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "sitruuna-yrttikana-parsa",
+      "ingredientIndex": 6,
+      "servings": 4,
+      "name": "valkosipulijauhetta, punnittuna3,1g",
+      "grams": 3.1,
+      "foodRecordId": null,
+      "giRecordId": null,
+      "recordName": null,
+      "classification": "UNMAPPED",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "thai-khao-tom-katkaravuilla",
+      "ingredientIndex": 2,
+      "servings": 2,
+      "name": "valkosipuli",
+      "grams": 3,
+      "foodRecordId": "afcd-F004193-release-3",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "char-siu",
+      "ingredientIndex": 6,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 3,
+      "foodRecordId": "afcd-F004193-release-3",
+      "giRecordId": null,
+      "recordName": "Garlic, peeled, fresh, raw",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "falafel",
+      "ingredientIndex": 2,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 165,
+      "foodRecordId": "fineli-335-release-20",
+      "giRecordId": null,
+      "recordName": "SIPULI, KELTASIPULI",
+      "classification": "ONION_NOT_GARLIC",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-bissara",
+      "ingredientIndex": 1,
+      "servings": 2,
+      "name": "valkosipuli",
+      "grams": null,
+      "foodRecordId": "fineli-335-release-20",
+      "giRecordId": null,
+      "recordName": "SIPULI, KELTASIPULI",
+      "classification": "ONION_NOT_GARLIC",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "dal-makhani",
+      "ingredientIndex": 5,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-release-20",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "kung-pao-kana",
+      "ingredientIndex": 5,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-release-20",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "mala-xiang-guo",
+      "ingredientIndex": 8,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-release-20",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "mapo-tofu",
+      "ingredientIndex": 4,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-release-20",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "bouillabaisse",
+      "ingredientIndex": 5,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-release-20",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "pav-bhaji",
+      "ingredientIndex": 7,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-release-20",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "sichuan-hot-pot",
+      "ingredientIndex": 3,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-release-20",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "tunisialainen-ojja",
+      "ingredientIndex": 2,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-release-20",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "sate-ayam",
+      "ingredientIndex": 4,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-release-20",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "carnitas-salaattitacot",
+      "ingredientIndex": 5,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-release-20",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "rogan-josh",
+      "ingredientIndex": 4,
+      "servings": 4,
+      "name": "tuoretta kuorittua valkosipulia",
+      "grams": 6,
+      "foodRecordId": "op142-fineli-393",
+      "giRecordId": "op142-vegetable-imputation40",
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "kana-tagine-sitruunalla",
+      "ingredientIndex": 2,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-release-20",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "palak-paneer",
+      "ingredientIndex": 3,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-release-20",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "hunaja-sinappikana-kaalilla",
+      "ingredientIndex": 5,
+      "servings": 4,
+      "name": "valkosipulijauhetta",
+      "grams": null,
+      "foodRecordId": "fineli-393-release-20",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "tandoorikana",
+      "ingredientIndex": 7,
+      "servings": 4,
+      "name": "valkosipulinkynttä",
+      "grams": 7,
+      "foodRecordId": "fineli-393-release-20",
+      "giRecordId": null,
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "munakoiso-kesakurpitsalasagne",
+      "ingredientIndex": 3,
+      "servings": 4,
+      "name": "valkosipuli",
+      "grams": null,
+      "foodRecordId": null,
+      "giRecordId": null,
+      "recordName": null,
+      "classification": "UNMAPPED",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "ingredientIndex": 6,
+      "servings": 6,
+      "name": "kuorittua valkosipulia",
+      "grams": 10.5,
+      "foodRecordId": "op146-fineli-393",
+      "giRecordId": "op142-vegetable-imputation40",
+      "recordName": "VALKOSIPULI",
+      "classification": "GARLIC_RECORD",
+      "newUseAuthorized": false
+    }
+  ],
+  "candidates": [
+    {
+      "recipeId": "falafel",
+      "ingredientIndex": 2,
+      "servings": 4,
+      "before": {
+        "name": "valkosipulinkynttä",
+        "grams": 165,
+        "fineliRecordId": "fineli-335-release-20",
+        "giRecordId": null,
+        "massEvidence": "3 kpl converted using Fineli food-specific portion mass; SIPULI, KELTASIPULI."
+      },
+      "proposedRowForReview": {
+        "name": "valkosipulinkynttä",
+        "grams": 9,
+        "fineliRecordId": "afcd-F004193-release-3",
+        "giRecordId": null,
+        "massEvidence": "Candidate only: 3 kpl x 3 g per unit per pinned recipe nutrition memo; AFCD F004193 raw peeled garlic, not onion."
+      },
+      "documentedConversion": {
+        "amount": 3,
+        "unit": "kpl",
+        "gramsPerUnit": 3,
+        "sourceReviewStatus": "AUTOMATED ONLY"
+      },
+      "compositionOnlyAvailableCarbGPerServing": {
+        "historical": 1.98,
+        "candidate": 0.2295,
+        "delta": -1.7505
+      },
+      "note": "Three cloves; current source recipe and nutrition memo use 3 g per clove. Other historical falafel rows (including chickpeas and oil) still require whole-recipe/version review.",
+      "newUseAuthorized": false
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-bissara",
+      "ingredientIndex": 1,
+      "servings": 2,
+      "before": {
+        "name": "valkosipuli",
+        "grams": null,
+        "fineliRecordId": "fineli-335-release-20",
+        "giRecordId": null,
+        "excludedReason": "The recipe gives 1 tl but SIPULI, KELTASIPULI has no matching Fineli food-specific unit mass; no general piece/spoon conversion is applied.",
+        "massEvidence": "Recipe-list amount and state: 1 tl; mapped food SIPULI, KELTASIPULI."
+      },
+      "proposedRowForReview": {
+        "name": "valkosipuli",
+        "grams": 3,
+        "fineliRecordId": "afcd-F004193-release-3",
+        "giRecordId": null,
+        "massEvidence": "Candidate only: 1 tl x 3 g per unit per pinned recipe nutrition memo; AFCD F004193 raw peeled garlic, not onion."
+      },
+      "documentedConversion": {
+        "amount": 1,
+        "unit": "tl",
+        "gramsPerUnit": 3,
+        "sourceReviewStatus": "AUTOMATED ONLY"
+      },
+      "compositionOnlyAvailableCarbGPerServing": {
+        "historical": null,
+        "candidate": 0.153,
+        "delta": null
+      },
+      "note": "One teaspoon; current nutrition memo uses 3 g minced garlic. The historical exclusion cites the wrong onion card, not a verified garlic conversion.",
+      "newUseAuthorized": false
+    }
+  ],
+  "newUseAuthorized": false
+}
