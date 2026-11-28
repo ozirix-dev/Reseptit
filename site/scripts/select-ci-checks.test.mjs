@@ -36,6 +36,17 @@ test("FI editorial audit detects recipe and projection changes without touching 
   assert.equal(shouldRunFiEditorialAudit(null), true); // Invalid selector input fails safe.
 });
 
+test("karnivore import and publication evidence changes run changed-content validation", () => {
+  for (const file of [
+    "tuonti/karnivore/paaruoat/example.md",
+    "docs/reviews/new-recipes/karnivore-example.json",
+  ]) {
+    assert.equal(classifyPaths([file]).runContent, true, file);
+    assert.equal(classifyPaths([file], { forceFull: true }).runContent, true, file);
+  }
+  assert.equal(classifyPaths(["docs/reviews/new-recipes/editorial-note.md"]).runContent, false);
+});
+
 test("exact quarantine JSON changes force the FI parity audit but not unrelated JSON", () => {
   const path = "site/scripts/public-recipe-quarantine.json";
   assert.equal(shouldRunFiEditorialAudit([path]), true);

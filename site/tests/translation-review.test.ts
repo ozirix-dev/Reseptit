@@ -15,9 +15,20 @@ function loadFullAudit() {
 }
 
 test("checked-in evidence is validated against real current file hashes", async () => {
-  const { audit, rows } = await loadCurrentReview();
+  const { audit, files, rows } = await loadCurrentReview();
   assert.deepEqual(audit.errors, []);
   assert.equal(rows.length, audit.publishedTranslations.length);
+  const entries = [...audit.publishedSources, ...audit.publishedTranslations];
+  assert.deepEqual(Object.keys(files).sort(), [...new Set(entries.map(r => r.path))].sort());
+  // The raw capture must preserve the source bytes, not the projected FI text.
+  for (const recipe of entries) {
+    const raw = await readFile(new URL("../../" + recipe.path, import.meta.url), "utf8");
+    assert.equal(files[recipe.path], raw, recipe.path);
+  }
+  for (const row of rows) {
+    assert.equal(row.source_content_hash, contentHash(files[row.source_path]));
+    if (row.translation_path) assert.equal(row.translation_content_hash, contentHash(files[row.translation_path]));
+  }
   for (const row of rows) if (row.human_review_status === "HUMAN REVIEW COMPLETE") {
     assert.ok(row.review_evidence_id); assert.ok(row.last_reviewed_at); assert.equal(row.structural_status, "PASS");
   }
@@ -216,4 +227,19 @@ test("Thai onion bulb counter is a valid FI kpl translation in besan-chilla", as
   assert.ok(thai, "The published Thai besan-chilla row must exist");
   assert.equal(audit.errors.length, 0, audit.errors.join(" | "));
   assert.doesNotMatch(thai.issues, /unit not recognized|ingredient 4 unit/);
+});
+
+// A caller cannot accidentally reuse a previous audit snapshot.
+test("raw capture is scoped to the requested audit and never reused", async () => {
+  const rawFiles = new Map<string, string>();
+  const id = "bouillabaisse";
+  const audit = await auditTranslations([id], rawFiles);
+  const entries = [...audit.publishedSources, ...audit.publishedTranslations];
+  assert.ok(entries.length > 1);
+  assert.deepEqual([...rawFiles.keys()].sort(), entries.map(r => r.path).sort());
+  assert.deepEqual(audit.errors, []);
+  await assert.rejects(auditTranslations([id], rawFiles), /raw capture must start empty/);
+  const fresh = new Map<string, string>();
+  assert.deepEqual(await auditTranslations([id], fresh), audit);
+  assert.deepEqual(fresh, rawFiles);
 });

@@ -78,5 +78,5 @@ Nypotatis, morötter, blomkål, ärter och dill blir en mild finsk sommarsoppa m
 ## Anteckningar
 
 - Innehåller mjölk och vete. Servera varm. Kyl rester snabbt i grunda kärl och förvara i kylskåp under +6 °C.
-- AI-genererad bild; redaktionellt utkast. Ingen egen provlagning, ingen godkänd närings- eller GK-beräkning för hela receptet och ingen godkänd glutenfrihetsmärkning.
+- Bilden är en AI-genererad illustration. Recipavo har inte provlagat receptet i eget kök. Det finns ingen godkänd näringsberäkning för hela receptet. Den glykemiska belastningen är inte fastställd, och inget påstående om glutenfrihet har godkänts. Översättningen är fortfarande ett utkast.
 - Jämförelsekälla: [Martat](https://www.martat.fi/reseptit/kesakeitto/). Eget bearbetat recept, ingen textkopia.

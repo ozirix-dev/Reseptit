@@ -1,0 +1,1698 @@
+{
+  "schemaVersion": 1,
+  "status": "AUDIT_SIDECAR_NOT_RUNTIME_MIGRATION",
+  "reviewDate": "2026-11-25",
+  "baseCommit": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+  "registry": {
+    "path": "docs/nutrition/glycemic-index-records.json",
+    "gitBlob": "719328765182a5058a513381bf5fc1cd0fd31651",
+    "records": 64,
+    "missingEvidenceKind": 45,
+    "alreadyClassified": 19
+  },
+  "previousPackage": {
+    "path": "docs/research/gi-source-integrity-01",
+    "artifactManifestGitBlob": "e7e297c962a1753a540fbd155d01296bc7867740",
+    "sourceClassificationsGitBlob": "7f61be6a709bc7a915f83aa9e9d2096ef495eebb"
+  },
+  "provenance": {
+    "reports": {
+      "A": "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265",
+      "B": "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158510764",
+      "C": "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+    },
+    "mode": "CONSOLIDATION_OF_REPORTED_REVIEWS_NOT_NEW_PRIMARY_SOURCE_VERIFICATION",
+    "primaryProtocolComplete": false
+  },
+  "coverage": {
+    "A": 20,
+    "B": 8,
+    "C": 17
+  },
+  "impact": {
+    "status": "PARTIAL_REPORTED_HISTORICAL_INPUT_ONLY",
+    "inputGitBlob": "914b0fa604516f8585e616863bfff5dcaab3e729",
+    "reportedHistoricalInputRecipes": 326,
+    "reportedMissingEvidenceKindReferencedRecords": 32,
+    "reportedUniqueRecipeIds": 262,
+    "reportedSecondBatchUniqueRecipeIds": 16,
+    "currentCanonicalCaptureRequired": true
+  },
+  "findings": [
+    {
+      "id": "GK006-F01",
+      "kind": "LOCATOR_ERROR",
+      "records": [
+        "mango-raw-mean-gi-51-2002"
+      ],
+      "proposed": "Table 1 p.31 entry 412, not Table 2",
+      "runtimeChangeAuthorized": false
+    },
+    {
+      "id": "GK006-F02",
+      "kind": "PRIMARY_VS_COMPILATION_PUBLICATION",
+      "records": [
+        "chickpea-canned-gi-35",
+        "dark-chocolate-international-tables-mean-gi-29",
+        "orange-navel-2021-gi-45"
+      ],
+      "proposed": "Record unpublished primary observation separately from published compilation; do not reclassify as in vitro",
+      "runtimeChangeAuthorized": false
+    },
+    {
+      "id": "GK006-F03",
+      "kind": "SOURCE_METADATA_GAP",
+      "records": [
+        "tomato-juice-canned-gi-38"
+      ],
+      "proposed": "Compilation reports glucose/2 h; database row originally lacked reference. Full unpublished protocol remains unavailable.",
+      "runtimeChangeAuthorized": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "whole-tomato-raw-gi-22",
+      "value": 22,
+      "registrySnapshot": {
+        "matchKind": null,
+        "evidenceKind": null,
+        "qualityTier": "STRONG",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": true,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Supplemental Table 1; article Results also reports the value"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_ARTICLE_VALUE_ONLY",
+      "locator": "Atkinson 2021 Discussion; exact supplemental row unresolved",
+      "note": "Whole raw tomato 22; no separate cherry cultivar or cooked sauce measurement. Exact row and original protocol unresolved.",
+      "applicationKind": "UNASSESSED",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "tomato-cherry-raw-analogue-gi-22",
+      "value": 22,
+      "registrySnapshot": {
+        "matchKind": "ANALOG",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": true,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Supplemental Table 1; whole tomatoes, raw, GI 22"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_ARTICLE_VALUE_ONLY",
+      "locator": "Atkinson 2021 Discussion; exact supplemental row unresolved",
+      "note": "Whole raw tomato 22; no separate cherry cultivar or cooked sauce measurement. Exact row and original protocol unresolved.",
+      "applicationKind": "FOOD_ANALOGUE",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "tomato-juice-canned-gi-38",
+      "value": 38,
+      "registrySnapshot": {
+        "matchKind": null,
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": false,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 10,
+        "sourceReferenceFood": "Not stated in the database entry",
+        "sourceUrl": "https://glycemicindex.com/gi-search/",
+        "sourceLocator": "Fruit and Fruit Products search entry; Sydney University GI Research Service unpublished observation, test year 2002"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "UNPUBLISHED_REPORTED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_COMPILATION_TABLE_IMAGE",
+      "locator": "Atkinson 2021 Supplemental Table 1 p.81 row 1202, UO5",
+      "additionalSourceUrls": [
+        "https://doi.org/10.1093/ajcn/nqab233"
+      ],
+      "spread": {
+        "kind": "SEM",
+        "value": 4
+      },
+      "note": "Ten people, 25 g carbohydrate, glucose/2 h in compilation; database record alone lacked reference. Original test unpublished; full protocol not established.",
+      "findingIds": [
+        "GK006-F03"
+      ],
+      "applicationKind": "UNASSESSED",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "potato-boiled-china-gi-66",
+      "value": 66,
+      "registrySnapshot": {
+        "matchKind": null,
+        "evidenceKind": null,
+        "qualityTier": "STRONG",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": true,
+        "sourceParticipants": 10,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Supplemental Table 1, entry 1842"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_COMPILATION_AND_PRIMARY_TABLE",
+      "locator": "Atkinson 2021 Supplemental Table 1 p.123 row 1842; Yang 2006 Table 3",
+      "additionalSourceUrls": [
+        "https://doi.org/10.3748/wjg.v12.i21.3430"
+      ],
+      "spread": {
+        "kind": "SEM",
+        "value": 1
+      },
+      "note": "Ten people, glucose/2h, 50 g carbohydrate; assay unspecified. Underlying cooked value 66.4 ± 3.8 SD. Exact boiling method and recipe equivalence not independently established.",
+      "applicationKind": "UNASSESSED",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "potato-cooked-china-nonwestern-gi-66-4",
+      "value": 66.4,
+      "registrySnapshot": {
+        "matchKind": null,
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 10,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430",
+        "sourceLocator": "Table 3, potato cooked; also listed as reference 101 in the 2021 non-western compendium"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "NOT_APPLICABLE_OR_UNASSESSED",
+      "depth": "REPORTED_PRIMARY_TABLE",
+      "locator": "Yang 2006 Table 3",
+      "note": "Cooked 66.4 and oil-fried crisp 60.3, n=10 per food, glucose reference. Precise cooking conditions or full ISO compliance not established; no new applicability.",
+      "applicationKind": "UNASSESSED",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "potato-fried-evoo-lady-rosetta-gi-114",
+      "value": 114,
+      "registrySnapshot": {
+        "matchKind": null,
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 8,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02",
+        "sourceLocator": "Results; Lady Rosetta fried in extra-virgin olive oil"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "NOT_APPLICABLE_OR_UNASSESSED",
+      "depth": "REPORTED_PRIMARY_STUDY",
+      "locator": "Chryssanthopoulos 2016 Results",
+      "spread": {
+        "kind": "AS_REPORTED_PLUS_MINUS_UNCLASSIFIED",
+        "value": 15
+      },
+      "note": "Eight healthy men, 50 g available carbohydrate, glucose reference, capillary samples over two hours. Difference p=0.20; neither is a direct measurement of tortilla potato. GI is not capped at 100.",
+      "applicationKind": "UNASSESSED",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "potato-fried-evoo-spunta-gi-83",
+      "value": 83,
+      "registrySnapshot": {
+        "matchKind": null,
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 8,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.12944/CRNFSJ.4.1.02",
+        "sourceLocator": "Results; Spunta fried in extra-virgin olive oil"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "NOT_APPLICABLE_OR_UNASSESSED",
+      "depth": "REPORTED_PRIMARY_STUDY",
+      "locator": "Chryssanthopoulos 2016 Results",
+      "spread": {
+        "kind": "AS_REPORTED_PLUS_MINUS_UNCLASSIFIED",
+        "value": 12
+      },
+      "note": "Eight healthy men, 50 g available carbohydrate, glucose reference, capillary samples over two hours. Difference p=0.20; neither is a direct measurement of tortilla potato. GI is not capped at 100.",
+      "applicationKind": "UNASSESSED",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "potato-crisp-fried-china-nonwestern-gi-60-3",
+      "value": 60.3,
+      "registrySnapshot": {
+        "matchKind": null,
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 10,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430",
+        "sourceLocator": "Table 1, entry 442 in the 2021 non-western compendium"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "NOT_APPLICABLE_OR_UNASSESSED",
+      "depth": "REPORTED_PRIMARY_TABLE",
+      "locator": "Yang 2006 Table 3",
+      "note": "Cooked 66.4 and oil-fried crisp 60.3, n=10 per food, glucose reference. Precise cooking conditions or full ISO compliance not established; no new applicability.",
+      "applicationKind": "UNASSESSED",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "potato-steamed-nishiyutaka-nonwestern-gi-64",
+      "value": 64,
+      "registrySnapshot": {
+        "matchKind": null,
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 12,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004",
+        "sourceLocator": "Table 1, row 344 in the 2021 non-western compendium"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_COMPILATION_ROW",
+      "locator": "Henry 2021 Table 1 row 344",
+      "additionalSourceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7791047/"
+      ],
+      "spread": {
+        "kind": "SD",
+        "value": 15
+      },
+      "note": "Twelve people, 50 g carbohydrate, glucose/2 h. Original 2010 protocol not inspected. Do not mix with separate three-hour observations.",
+      "applicationKind": "UNASSESSED",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "potato-steamed-ainoaka-nonwestern-gi-63",
+      "value": 63,
+      "registrySnapshot": {
+        "matchKind": null,
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 12,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004",
+        "sourceLocator": "Table 1, row 346 in the 2021 non-western compendium"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_COMPILATION_ROW",
+      "locator": "Henry 2021 Table 1 row 346",
+      "additionalSourceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7791047/"
+      ],
+      "spread": {
+        "kind": "SD",
+        "value": 19
+      },
+      "note": "Twelve people, 50 g carbohydrate, glucose/2 h. Original 2010 protocol not inspected. Do not mix with separate three-hour observations.",
+      "applicationKind": "UNASSESSED",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "potato-steamed-dejima-nonwestern-gi-54",
+      "value": 54,
+      "registrySnapshot": {
+        "matchKind": null,
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 12,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.1016/j.ijdm.2010.05.004",
+        "sourceLocator": "Table 1, row 348 in the 2021 non-western compendium"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_COMPILATION_ROW",
+      "locator": "Henry 2021 Table 1 row 348",
+      "additionalSourceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7791047/"
+      ],
+      "spread": {
+        "kind": "SD",
+        "value": 17
+      },
+      "note": "Twelve people, 50 g carbohydrate, glucose/2 h. Original 2010 protocol not inspected. Do not mix with separate three-hour observations.",
+      "applicationKind": "UNASSESSED",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "potato-boiled-tortilla-analogue-gi-66",
+      "value": 66,
+      "registrySnapshot": {
+        "matchKind": "ANALOG",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": true,
+        "sourceParticipants": 10,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Supplemental Table 1, entry 1842"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_COMPILATION_AND_PRIMARY_TABLE",
+      "locator": "Atkinson 2021 Supplemental Table 1 p.123 row 1842; Yang 2006 Table 3",
+      "additionalSourceUrls": [
+        "https://doi.org/10.3748/wjg.v12.i21.3430"
+      ],
+      "spread": {
+        "kind": "SEM",
+        "value": 1
+      },
+      "note": "Ten people, glucose/2h, 50 g carbohydrate; assay unspecified. Underlying cooked value 66.4 ± 3.8 SD. Exact boiling method and recipe equivalence not independently established.",
+      "applicationKind": "FOOD_ANALOGUE",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "tomato-raw-cooked-sauce-analogue-gi-22",
+      "value": 22,
+      "registrySnapshot": {
+        "matchKind": "ANALOG",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": true,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Supplemental Table 1; whole tomato, raw"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_ARTICLE_VALUE_ONLY",
+      "locator": "Atkinson 2021 Discussion; exact supplemental row unresolved",
+      "note": "Whole raw tomato 22; no separate cherry cultivar or cooked sauce measurement. Exact row and original protocol unresolved.",
+      "applicationKind": "FOOD_ANALOGUE",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "red-pepper-literature-analogue-gi-40",
+      "value": 40,
+      "registrySnapshot": {
+        "matchKind": "ANALOG",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": "REFERENCE_ONLY",
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.3390/nu12102989",
+        "sourceLocator": "Table 1: Pepper, serving 2 g, GI 40, carbohydrate 1 g; illustrative secondary table, no pepper-specific primary protocol"
+      },
+      "measurementKind": "UNASSESSED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SECONDARY_ILLUSTRATION",
+      "primaryPublication": "UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SECONDARY_TABLE",
+      "locator": "Carneiro and Leloup 2020 Table 1",
+      "note": "Generic food row in secondary illustration; no identified food-specific human protocol. Retain reference only; do not infer measurement or approval.",
+      "applicationKind": "REFERENCE_ONLY",
+      "calculationUse": "REFERENCE_ONLY",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "onion-literature-analogue-gi-15",
+      "value": 15,
+      "registrySnapshot": {
+        "matchKind": "ANALOG",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": "REFERENCE_ONLY",
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.3390/nu12102989",
+        "sourceLocator": "Table 1, generic onion entry (GI 15); secondary illustration, not a primary onion experiment"
+      },
+      "measurementKind": "UNASSESSED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SECONDARY_ILLUSTRATION",
+      "primaryPublication": "UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SECONDARY_TABLE",
+      "locator": "Carneiro and Leloup 2020 Table 1",
+      "note": "Generic food row in secondary illustration; no identified food-specific human protocol. Retain reference only; do not infer measurement or approval.",
+      "applicationKind": "REFERENCE_ONLY",
+      "calculationUse": "REFERENCE_ONLY",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "dairy-category-mean-gi-35",
+      "value": 35,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": true,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Table 1 summary: dairy products mean GI 35 ± 11 (n=186)"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SUMMARY_TABLE",
+      "locator": "Atkinson 2021 Table 1; category mean",
+      "observationCount": 186,
+      "spread": {
+        "kind": "SD",
+        "value": 11
+      },
+      "note": "Published group mean of food measurement entries; count is not participant count. Individual supplemental rows and publication statuses not verified in this review; no ingredient-specific equivalence.",
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "plain-yogurt-category-mean-gi-27-2017",
+      "value": 27,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.3945/jn.116.240770",
+        "sourceLocator": "Table 1: plain/artificially sweetened yogurt database mean 26.6 ± 10.9 (n=43), rounded to GI 27"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SUMMARY_TABLE",
+      "locator": "Wolever 2017 Table 1",
+      "observationCount": 43,
+      "spread": {
+        "kind": "SD",
+        "value": 10.9
+      },
+      "note": "Database mean 26.6 rounded to 27; plain/artificially sweetened yogurt entries, not a new test or a brand-specific match.",
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "chickpea-canned-gi-35",
+      "value": 35,
+      "registrySnapshot": {
+        "matchKind": "ANALOG",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": true,
+        "sourceParticipants": 12,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Supplemental Table 1, item 1284: chickpeas, canned, drained (Edgell), GI 35 ± 3"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "UNPUBLISHED_REPORTED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_COMPILATION_TABLE_IMAGE",
+      "locator": "Atkinson 2021 Supplemental Table 1 p.87 row 1284, UO5",
+      "spread": {
+        "kind": "SEM",
+        "value": 3
+      },
+      "note": "Edgell canned drained chickpeas; twelve people, 25 g carbohydrate, glucose/2 h. Published compilation of unpublished observation, not a generic chickpea measurement.",
+      "findingIds": [
+        "GK006-F02"
+      ],
+      "applicationKind": "FOOD_ANALOGUE",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "legumes-category-mean-gi-34",
+      "value": 34,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Table 1 summary: legumes mean GI 34 ± 14 (n=32), values from Supplemental Table 1"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SUMMARY_TABLE",
+      "locator": "Atkinson 2021 Table 1; category mean",
+      "observationCount": 32,
+      "spread": {
+        "kind": "SD",
+        "value": 14
+      },
+      "note": "Published group mean of food measurement entries; count is not participant count. Individual supplemental rows and publication statuses not verified in this review; no ingredient-specific equivalence.",
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "vegetables-category-mean-gi-66",
+      "value": 66,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Table 1 summary: vegetables other than potatoes mean GI 66 ± 19 (n=91), values from Supplemental Table 1"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SUMMARY_TABLE",
+      "locator": "Atkinson 2021 Table 1; category mean",
+      "observationCount": 91,
+      "spread": {
+        "kind": "SD",
+        "value": 19
+      },
+      "note": "Published group mean of food measurement entries; count is not participant count. Individual supplemental rows and publication statuses not verified in this review; no ingredient-specific equivalence.",
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "soups-category-mean-gi-49",
+      "value": 49,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Table 1 summary: soups mean GI 49 ± 10 (n=21), values from Supplemental Table 1"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SUMMARY_TABLE",
+      "locator": "Atkinson 2021 Table 1; category mean",
+      "observationCount": 21,
+      "spread": {
+        "kind": "SD",
+        "value": 10
+      },
+      "note": "Published group mean of food measurement entries; count is not participant count. Individual supplemental rows and publication statuses not verified in this review; no ingredient-specific equivalence.",
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "coconut-milk-porridge-gi-31",
+      "value": 31,
+      "registrySnapshot": {
+        "matchKind": "EXACT",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": "REFERENCE_ONLY",
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 10,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/22849311/",
+        "sourceLocator": "Original abstract: coconut-milk porridge GI 31 +/- 5; online publication 2012-07-31, journal 64(2):169-174 (2013)"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MIXED_MEAL",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "NOT_APPLICABLE_OR_UNASSESSED",
+      "depth": "REPORTED_PRIMARY_ABSTRACT",
+      "locator": "Senadheera and Ekanayake abstract",
+      "note": "Rice/coconut-milk porridge 31 ± 5; original full methods unavailable. Not GI of isolated coconut milk. Reference only.",
+      "applicationKind": "REFERENCE_ONLY",
+      "calculationUse": "REFERENCE_ONLY",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "asian-regional-category-mean-gi-60",
+      "value": 60,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 89,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Table 1, Asian foods: mean 60, SD 19, n=89"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SUMMARY_TABLE",
+      "locator": "Atkinson 2021 Table 1; category mean",
+      "observationCount": 89,
+      "spread": {
+        "kind": "SD",
+        "value": 19
+      },
+      "note": "Published group mean of food measurement entries; count is not participant count. Individual supplemental rows and publication statuses not verified in this review; no ingredient-specific equivalence.",
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "nuts-category-mean-gi-22",
+      "value": 22,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 3,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Table 1, nuts: mean 22, SD 2, n=3"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SUMMARY_TABLE",
+      "locator": "Atkinson 2021 Table 1; category mean",
+      "observationCount": 3,
+      "spread": {
+        "kind": "SD",
+        "value": 2
+      },
+      "note": "Published group mean of food measurement entries; count is not participant count. Individual supplemental rows and publication statuses not verified in this review; no ingredient-specific equivalence.",
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "bakery-products-category-mean-gi-58",
+      "value": 58,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": "REFERENCE_ONLY",
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Table 1; mean of Supplemental Table 1 entries for Bakery products (n=72)"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SUMMARY_TABLE",
+      "locator": "Atkinson 2021 Table 1; category mean",
+      "observationCount": 72,
+      "spread": null,
+      "note": "Published group mean of food measurement entries; count is not participant count. Individual supplemental rows and publication statuses not verified in this review; no ingredient-specific equivalence.",
+      "applicationKind": "REFERENCE_ONLY",
+      "calculationUse": "REFERENCE_ONLY",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "bread-category-mean-gi-64",
+      "value": 64,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Table 1; mean of Supplemental Table 1 entries for Breads (n=214)"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SUMMARY_TABLE",
+      "locator": "Atkinson 2021 Table 1; category mean",
+      "observationCount": 214,
+      "spread": null,
+      "note": "Published group mean of food measurement entries; count is not participant count. Individual supplemental rows and publication statuses not verified in this review; no ingredient-specific equivalence.",
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "potatoes-category-mean-gi-71",
+      "value": 71,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Table 1; mean of Supplemental Table 1 entries for Potatoes and potato products (n=66)"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SUMMARY_TABLE",
+      "locator": "Atkinson 2021 Table 1; category mean",
+      "observationCount": 66,
+      "spread": null,
+      "note": "Published group mean of food measurement entries; count is not participant count. Individual supplemental rows and publication statuses not verified in this review; no ingredient-specific equivalence.",
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "pasta-category-mean-gi-52",
+      "value": 52,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Table 1; mean of Supplemental Table 1 entries for Pasta (n=77)"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SUMMARY_TABLE",
+      "locator": "Atkinson 2021 Table 1; category mean",
+      "observationCount": 77,
+      "spread": null,
+      "note": "Published group mean of food measurement entries; count is not participant count. Individual supplemental rows and publication statuses not verified in this review; no ingredient-specific equivalence.",
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "rice-category-mean-gi-67",
+      "value": 67,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Table 1; mean of Supplemental Table 1 entries for Rice (n=128)"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SUMMARY_TABLE",
+      "locator": "Atkinson 2021 Table 1; category mean",
+      "observationCount": 128,
+      "spread": null,
+      "note": "Published group mean of food measurement entries; count is not participant count. Individual supplemental rows and publication statuses not verified in this review; no ingredient-specific equivalence.",
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "sugar-syrups-category-mean-gi-58",
+      "value": 58,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Table 1; mean of Supplemental Table 1 entries for Sugars and syrups (n=50)"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SUMMARY_TABLE",
+      "locator": "Atkinson 2021 Table 1; category mean",
+      "observationCount": 50,
+      "spread": null,
+      "note": "Published group mean of food measurement entries; count is not participant count. Individual supplemental rows and publication statuses not verified in this review; no ingredient-specific equivalence.",
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "fruit-category-mean-gi-51",
+      "value": 51,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Table 1; mean of Supplemental Table 1 entries for Fruits and fruit products (n=105)"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SUMMARY_TABLE",
+      "locator": "Atkinson 2021 Table 1; category mean",
+      "observationCount": 105,
+      "spread": null,
+      "note": "Published group mean of food measurement entries; count is not participant count. Individual supplemental rows and publication statuses not verified in this review; no ingredient-specific equivalence.",
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "asian-indian-category-mean-gi-65",
+      "value": 65,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Table 1; mean of Supplemental Table 1 entries for Asian Indian regional foods (n=19)"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_SUMMARY_TABLE",
+      "locator": "Atkinson 2021 Table 1; category mean",
+      "observationCount": 19,
+      "spread": null,
+      "note": "Published group mean of food measurement entries; count is not participant count. Individual supplemental rows and publication statuses not verified in this review; no ingredient-specific equivalence.",
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "potato-boiled-preparation-analogue-gi-66",
+      "value": 66,
+      "registrySnapshot": {
+        "matchKind": "ANALOG",
+        "evidenceKind": null,
+        "qualityTier": "STRONG",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": true,
+        "sourceParticipants": 10,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Supplemental Table 1, entry 1842"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_COMPILATION_AND_PRIMARY_TABLE",
+      "locator": "Atkinson 2021 Supplemental Table 1 p.123 row 1842; Yang 2006 Table 3",
+      "additionalSourceUrls": [
+        "https://doi.org/10.3748/wjg.v12.i21.3430"
+      ],
+      "spread": {
+        "kind": "SEM",
+        "value": 1
+      },
+      "note": "Ten people, glucose/2h, 50 g carbohydrate; assay unspecified. Underlying cooked value 66.4 ± 3.8 SD. Exact boiling method and recipe equivalence not independently established.",
+      "applicationKind": "FOOD_ANALOGUE",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "potato-mashed-preparation-analogue-gi-73",
+      "value": 73,
+      "registrySnapshot": {
+        "matchKind": "ANALOG",
+        "evidenceKind": null,
+        "qualityTier": "STRONG",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": true,
+        "sourceParticipants": 10,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Supplemental Table 1, entry 1861"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_COMPILATION_AND_PRIMARY_TABLE",
+      "locator": "Atkinson 2021 Supplemental Table 1 p.125 row 1861; Yang 2006 Table 3",
+      "additionalSourceUrls": [
+        "https://doi.org/10.3748/wjg.v12.i21.3430"
+      ],
+      "spread": {
+        "kind": "SEM",
+        "value": 3
+      },
+      "note": "Ten people; Yang reports 73.0 ± 9.2 SD. Mashed potato distinct from cooked potato; not universal preparation equivalence.",
+      "applicationKind": "FOOD_ANALOGUE",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "dark-chocolate-international-tables-mean-gi-29",
+      "value": 29,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "STRONG",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": true,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Supplemental Table 1, dark chocolate tests 1587–1590; mean GI 29"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "PRODUCT_MEAN",
+      "primaryPublication": "UNPUBLISHED_REPORTED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_COMPILATION_TABLE_IMAGE",
+      "locator": "Atkinson 2021 Supplemental Table 1 p.107 rows 1587–1590, UO5/UO18",
+      "observationCount": 4,
+      "componentValues": [
+        23,
+        44,
+        18,
+        29
+      ],
+      "note": "Four product values, mean 28.5 rounded to 29. Original observations unpublished; not cacao-percentage or brand-specific.",
+      "findingIds": [
+        "GK006-F02"
+      ],
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "corn-tortilla-noriega-2000-glucose-estimate",
+      "value": 52.4,
+      "registrySnapshot": {
+        "matchKind": "EXACT",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 8,
+        "sourceReferenceFood": "Bread",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/10824718/",
+        "sourceLocator": "Abstract; corn tortilla GI 73.8 ± 6.5 with bread=100 reference; converted ×0.71 as described by International Tables 2021"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_CONVERTED_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "NOT_APPLICABLE_OR_UNASSESSED",
+      "depth": "REPORTED_PRIMARY_ABSTRACT_AND_CONVERSION",
+      "locator": "Noriega 2000 abstract; Atkinson 2021 supplemental footnote 2 (report C)",
+      "scaleConversion": {
+        "originalScale": "BREAD_100",
+        "originalValue": 73.8,
+        "multiplier": 0.71,
+        "resultScale": "GLUCOSE_100",
+        "roundedResult": 52.4
+      },
+      "spread": {
+        "kind": "SEM_ORIGINAL_SCALE",
+        "value": 6.5
+      },
+      "note": "Eight healthy people; abstract does not confirm registry's three-hour duration. Conversion is not a direct glucose-reference test.",
+      "additionalSourceUrls": [
+        "https://doi.org/10.1093/ajcn/nqab233"
+      ],
+      "applicationKind": "UNASSESSED",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158510764",
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": [
+        "meksikolainen-aamiais-tacot-mustapavuilla",
+        "meksikolainen-paputostada-aamupalaksi",
+        "meksikolainen-chilaquiles-verdes",
+        "meksikolainen-quesadilla-sienilla",
+        "meksikolainen-munakokkeli-pico-de-gallolla"
+      ]
+    },
+    {
+      "id": "couscous-groats-rozanska-2020-gi-99",
+      "value": 99,
+      "registrySnapshot": {
+        "matchKind": "ANALOG",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 8,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.32394/rpzh.2020.0101",
+        "sourceLocator": "Table 4; mean GI 99.0 ± 36.0; 50 g available-carbohydrate portion; glucose reference described in Polish abstract"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "NOT_APPLICABLE_OR_UNASSESSED",
+      "depth": "REPORTED_PRIMARY_TABLE_IMAGE",
+      "locator": "Różańska 2020 Table 4 p.85",
+      "spread": {
+        "kind": "SD",
+        "value": 36
+      },
+      "observedRange": [
+        50.3,
+        153.5
+      ],
+      "note": "Eight people; measured study mean of Polish-market groats, not universal product GI. Observed range is not a recipe prediction interval.",
+      "applicationKind": "FOOD_ANALOGUE",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158510764"
+      ],
+      "originalRecipeIdsReported": [
+        "pohjoisafrikkalainen-kuskus-aamiaiskulho"
+      ]
+    },
+    {
+      "id": "millet-groats-rozanska-2020-gi-56-2",
+      "value": 56.2,
+      "registrySnapshot": {
+        "matchKind": "ANALOG",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 8,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://doi.org/10.32394/rpzh.2020.0101",
+        "sourceLocator": "Table 4; mean GI 56.2 ± 20.6; 50 g available-carbohydrate portion; glucose reference described in Polish abstract"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "NOT_APPLICABLE_OR_UNASSESSED",
+      "depth": "REPORTED_PRIMARY_TABLE_IMAGE",
+      "locator": "Różańska 2020 Table 4 p.85",
+      "spread": {
+        "kind": "SD",
+        "value": 20.6
+      },
+      "observedRange": [
+        32,
+        83.8
+      ],
+      "note": "Eight people; measured study mean of Polish-market groats, not universal product GI. Observed range is not a recipe prediction interval.",
+      "applicationKind": "FOOD_ANALOGUE",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158510764"
+      ],
+      "originalRecipeIdsReported": [
+        "kiinalainen-hirssipuuro-taateleilla"
+      ]
+    },
+    {
+      "id": "rice-noodles-dried-boiled-chan-2001-gi-61",
+      "value": 61,
+      "registrySnapshot": {
+        "matchKind": "EXACT",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 12,
+        "sourceReferenceFood": "Glucose",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/11781674/",
+        "sourceLocator": "Published study; rice-noodle values reported in the University of Sydney GI Search database; Thai World dried rice noodles boiled, GI 61"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_ABSTRACT_AND_COMPILATION_ROW",
+      "locator": "Chan 2001 abstract; Foster-Powell 2002 Table 1 entries 529/654",
+      "additionalSourceUrls": [
+        "https://doi.org/10.1093/ajcn/76.1.5"
+      ],
+      "note": "Twelve healthy adults; glucose reference twice, each food once. Dried boiled Thai World 61 ± 6; fresh boiled 40 ± 4. Full original table not inspected in reported review; recipe match not granted.",
+      "applicationKind": "UNASSESSED",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158510764"
+      ],
+      "originalRecipeIdsReported": [
+        "bun-cha-hanoi",
+        "indonesialainen-ketoprak-aamiaiskulho",
+        "vietnamilainen-pho-ga-aamuksi",
+        "thai-riisinuudelikeitto-aamuksi"
+      ]
+    },
+    {
+      "id": "honey-category-mean-gi-55-2002",
+      "value": 55,
+      "registrySnapshot": {
+        "matchKind": "CATEGORY_MEAN",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/76.1.5",
+        "sourceLocator": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "CATEGORY_MEAN",
+      "primaryPublication": "MIX_INCLUDES_UNPUBLISHED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_COMPILATION_TABLE_IMAGE",
+      "locator": "Foster-Powell 2002 Table 1 p.43 entry 586",
+      "observationCount": 11,
+      "observedRange": [
+        32,
+        87
+      ],
+      "note": "Mean 55 ± 5 across 11 honeys, includes unpublished observations; ten glucose and one bread reference. Count is food entries, not participants.",
+      "applicationKind": "CATEGORY_PROXY",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158510764"
+      ],
+      "originalRecipeIdsReported": [
+        "valimerellinen-jogurttikulho-hunajalla",
+        "hunaja-sinappikana-kaalilla"
+      ]
+    },
+    {
+      "id": "mango-raw-mean-gi-51-2002",
+      "value": 51,
+      "registrySnapshot": {
+        "matchKind": "ANALOG",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": null,
+        "sourceUrl": "https://doi.org/10.1093/ajcn/76.1.5",
+        "sourceLocator": "Table 2, entry 412, raw mango: mean of three studies, GI 51 ± 5 (glucose scale); individual entries include raw mango from the Philippines, Australia, and ripe mango from India."
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "MULTI_STUDY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_COMPILATION_TABLE_IMAGE",
+      "locator": "Foster-Powell 2002 Table 1 p.31 entry 412",
+      "observationCount": 3,
+      "componentValues": [
+        41,
+        51,
+        60
+      ],
+      "note": "Mean 51 ± 5; two bread and one glucose reference, varieties/populations/ripeness differ. Registry Table 2 locator is incorrect; value retained.",
+      "findingIds": [
+        "GK006-F01"
+      ],
+      "applicationKind": "FOOD_ANALOGUE",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158510764"
+      ],
+      "originalRecipeIdsReported": [
+        "thai-kookosriisi-mangolla",
+        "karibia-mango-limejogurtti"
+      ]
+    },
+    {
+      "id": "pear-raw-mean-gi-38-2002",
+      "value": 38,
+      "registrySnapshot": {
+        "matchKind": "ANALOG",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": null,
+        "sourceReferenceFood": "Glucose or values converted to glucose scale in the source table",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/76.1.5",
+        "sourceLocator": "Table 1, entries 423–426; mean of four raw-pear studies, GI 38 ± 2 on glucose scale"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "MULTI_STUDY_MEAN",
+      "primaryPublication": "MIX_UNASSESSED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_COMPILATION_TABLE_IMAGE",
+      "locator": "Foster-Powell 2002 Table 1 p.32 entries 423–426",
+      "observationCount": 4,
+      "componentValues": [
+        33,
+        34,
+        41,
+        42
+      ],
+      "note": "Mean 38 ± 2; diabetes/IGT groups, two glucose and two bread references; raw pear is not heated bulgogi marinade.",
+      "applicationKind": "FOOD_ANALOGUE",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158510764"
+      ],
+      "originalRecipeIdsReported": [
+        "bulgogi"
+      ]
+    },
+    {
+      "id": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
+      "value": 55.2,
+      "registrySnapshot": {
+        "matchKind": "ANALOG",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 19,
+        "sourceReferenceFood": "50 g glucose in water (GI = 100)",
+        "sourceUrl": "https://doi.org/10.5144/0256-4947.2016.397",
+        "sourceLocator": "Table 2; mean GI 55.2 (SEM 7.7), range 42.8–74.6 across 17 Tamer-stage varieties; glucose reference"
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MULTIPLE_TEST_OBJECTS",
+      "aggregationKind": "VARIETY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "NOT_APPLICABLE_OR_UNASSESSED",
+      "depth": "REPORTED_PRIMARY_STUDY",
+      "locator": "AlGeffari 2016 Table 2",
+      "observationCount": 17,
+      "observedRange": [
+        42.8,
+        74.6
+      ],
+      "note": "19 participants in study; each Tamer variety tested in 9–10. Mean 55.2 across varieties, not biological prediction interval or a single product.",
+      "applicationKind": "FOOD_ANALOGUE",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7156831265"
+      ],
+      "originalRecipeIdsReported": null
+    },
+    {
+      "id": "semolina-steamed-gelatinized-mani-1992-gi-55",
+      "value": 55,
+      "registrySnapshot": {
+        "matchKind": "ANALOG",
+        "evidenceKind": null,
+        "qualityTier": "SUPPLEMENTARY",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": false,
+        "sourceParticipants": 6,
+        "sourceReferenceFood": "50 g glucose (GI = 100)",
+        "sourceUrl": "https://doi.org/10.1079/BJN19920102",
+        "sourceLocator": "International Tables 2021 Supplemental Table 2 item 2762 and Mani et al. 1992 Table 3 meal R1: GI 55 ± 9; semolina steamed and gelatinized with 5 g groundnut oil; type 2 diabetes, n=6; 50 g available-carbohydrate portion; glucose reference; 0/60/120 minute timepoints."
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MIXED_MEAL",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "PUBLISHED_REPORTED",
+      "compilationPublication": "NOT_APPLICABLE_OR_UNASSESSED",
+      "depth": "REPORTED_PRIMARY_TABLE_IMAGE",
+      "locator": "Mani 1992 Table 3 p.448 R1",
+      "spread": {
+        "kind": "SE",
+        "value": 9
+      },
+      "note": "Six people with type 2 diabetes per group, steamed gelatinized semolina with 5 g groundnut oil; not oil-free water-boiled porridge. Roasted R5 76 ± 6; no transfer.",
+      "applicationKind": "FOOD_ANALOGUE",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158510764"
+      ],
+      "originalRecipeIdsReported": []
+    },
+    {
+      "id": "orange-navel-2021-gi-45",
+      "value": 45,
+      "registrySnapshot": {
+        "matchKind": "ANALOG",
+        "evidenceKind": null,
+        "qualityTier": "STRONG",
+        "calculationUse": null,
+        "sourcePublished": true,
+        "sourceIso26642Confirmed": true,
+        "sourceParticipants": 10,
+        "sourceReferenceFood": "Glucose, 2 h (GI = 100)",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "sourceLocator": "Supplemental Table 1 item 1150: navel oranges, Australia, GI 45 ± 5; 10 healthy adults; 50 g available carbohydrate; glucose, 2 h; ISO-consistent standard method."
+      },
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "aggregationKind": "SINGLE_TEST_FOOD_STUDY_MEAN",
+      "primaryPublication": "UNPUBLISHED_REPORTED",
+      "compilationPublication": "PUBLISHED",
+      "depth": "REPORTED_COMPILATION_TEXT_ONLY",
+      "locator": "Atkinson 2021 Supplemental Table 1 row 1150, UO5",
+      "spread": {
+        "kind": "SEM",
+        "value": 5
+      },
+      "note": "Ten people, 50 g carbohydrate, glucose/2 h. Page image unavailable (503); generic orange analogue. Original test unpublished.",
+      "findingIds": [
+        "GK006-F02"
+      ],
+      "applicationKind": "FOOD_ANALOGUE",
+      "calculationUse": "REVIEW_REQUIRED",
+      "newUseAuthorized": false,
+      "reviewReferences": [
+        "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158809342"
+      ],
+      "originalRecipeIdsReported": null
+    }
+  ]
+}

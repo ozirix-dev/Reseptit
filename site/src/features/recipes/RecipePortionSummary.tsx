@@ -1,3 +1,4 @@
+import { RecipePrintFallback } from "@/features/glycemic-load/GlycemicLoadEvidence";
 import { Link } from "react-router-dom";
 import { useId, useState } from "react";
 import type { RecipeEntry, RecipeLocale } from "../../types/content";
@@ -304,24 +305,35 @@ export function SideCarbohydrateComparison({ side, locale, carbs, multiplier, in
   const dish = carbs?.definition === "available" && !carbs.choices ? scalePortionRange(carbs.range, multiplier) : null;
   const total = dish ? { min: dish.min + available, max: dish.max + available } : null;
   const about = portionCopy[locale].about;
-  return <details className="gk-evidence__details" data-side-comparison>
-    <summary>{copy.title}</summary>
-    <SideCarbohydrateReference side={side} locale={locale} id={referenceId} />
-    {interactive ? <div className="recipe-portion__control">
-      <label htmlFor="recipe-side-weight">{copy.weight}</label>
-      <select id="recipe-side-weight" aria-describedby={referenceId} value={weight} onChange={event => setWeight(Number(event.currentTarget.value))}>
-        <option value={0}>{copy.without}</option>
-        {side.weightsG.map(value => <option key={value} value={value}>{formatCarbs(value, locale)} {gram}</option>)}
-      </select>
-    </div> : null}
-    <div aria-live="polite" aria-atomic="true">
+  const sideAmounts = (printOnly: boolean) => <>
+    {interactive ? <p className="recipe-print-selection" data-print-side-weight={printOnly ? undefined : true}><strong>{copy.weight}</strong> · {weight === 0 ? copy.without : `${formatCarbs(weight, locale)} ${gram}`}</p> : null}
+    <div aria-live={printOnly ? undefined : "polite"} aria-atomic={printOnly ? undefined : true}>
       {weight > 0 ? <dl className="nutrition-list">
-        <div><dt>{copy.component}</dt><dd data-side-carbohydrate>{about} {formatCarbs(available, locale)} {gram}</dd></div>
-        {total ? <div><dt>{copy.total}</dt><dd data-side-combined-carbohydrate>{about} {describeCarbs(total, locale)} {gram}</dd></div> : null}
+        <div><dt>{copy.component}</dt><dd data-side-carbohydrate={printOnly ? undefined : true}>{about} {formatCarbs(available, locale)} {gram}</dd></div>
+        {total ? <div><dt>{copy.total}</dt><dd data-side-combined-carbohydrate={printOnly ? undefined : true}>{about} {describeCarbs(total, locale)} {gram}</dd></div> : null}
       </dl> : null}
     </div>
-    <p className="recipe-disclosure">{copy.scope}</p>
-  </details>;
+  </>;
+  return <>
+    <details className="gk-evidence__details" data-side-comparison data-recipe-print-expanded={weight > 0 ? true : undefined}>
+      <summary>{copy.title}</summary>
+      <SideCarbohydrateReference side={side} locale={locale} id={referenceId} />
+      {interactive ? <div className="recipe-portion__control">
+        <label htmlFor="recipe-side-weight">{copy.weight}</label>
+        <select id="recipe-side-weight" aria-describedby={referenceId} value={weight} onChange={event => setWeight(Number(event.currentTarget.value))}>
+          <option value={0}>{copy.without}</option>
+          {side.weightsG.map(value => <option key={value} value={value}>{formatCarbs(value, locale)} {gram}</option>)}
+        </select>
+      </div> : null}
+      {sideAmounts(false)}
+      <p className="recipe-disclosure">{copy.scope}</p>
+    </details>
+    {weight > 0 ? <RecipePrintFallback title={copy.title}>
+      <SideCarbohydrateReference side={side} locale={locale} />
+      {sideAmounts(true)}
+      <p className="recipe-disclosure">{copy.scope}</p>
+    </RecipePrintFallback> : null}
+  </>;
 }
 
 export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batchServings, onChange }: {
@@ -335,6 +347,7 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batc
   const { locale } = recipe;
   const t = portionCopy[locale];
   const format = new Intl.NumberFormat(locale).format;
+  const portionLabel = (count: number) => count === 1 ? t.single : t.fraction(format(count));
   const ingredient = evidence?.driver && recipe.ingredients[evidence.driver.ingredientIndex]?.item;
   const ingredientPortions = reviewedIngredientPortions(evidence);
   const reviewedSource = evidence?.reviewedSource;
@@ -344,9 +357,10 @@ export function RecipePortionSummary({ recipe, evidence, carbs, multiplier, batc
     {onChange ? <div className="recipe-portion__control">
       <label htmlFor="eaten-recipe-portion">{t.title}</label>
       <select id="eaten-recipe-portion" value={multiplier} onChange={event => onChange(Number(event.currentTarget.value))}>
-        {eatenPortions.map(count => <option key={count} value={count}>{count === 1 ? t.single : t.fraction(format(count))}</option>)}
+        {eatenPortions.map(count => <option key={count} value={count}>{portionLabel(count)}</option>)}
       </select>
-    </div> : <p><strong>{t.title}</strong> · {multiplier === 1 ? t.single : t.fraction(format(multiplier))}</p>}
+    </div> : null}
+    <p className={onChange ? "recipe-print-selection" : undefined} data-print-eaten-portion><strong>{t.title}</strong> · {portionLabel(multiplier)}</p>
     <div aria-live="polite">
       {!evidence?.gramsPerServing && !evidence?.piecesPerServing ? <p>{t.batchShare(format(batchServings))}</p> : null}
       {evidence?.gramsPerServing ? <p>{t.about} {format(evidence.gramsPerServing * multiplier)} {locale === "th" ? "กรัม" : "g"}</p> : null}

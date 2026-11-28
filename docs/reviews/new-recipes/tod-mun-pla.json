@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "recipe_id": "tod-mun-pla",
+  "source_path": "reseptit/alkuruoat/tod-mun-pla.md",
+  "source_sha256": "dc75c687a64ad327f498bf13c69bd374499f8287a6f1000ad01dc8d0a45ca7bb",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://hungryinthailand.com/tod-mun-pla-recipe/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/tod-mun-pla.json",
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/tod-mun-pla.webp",
+    "bytes": 173704,
+    "sha256": "830e89f32c9777124175937b623bf4f0349dfd853b4a5b17baa09658a31d8935",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/alkuruoat/tod-mun-pla.md",
+        "sha256": "893599c6a2fddb9167884baca8c517d0bf7ad58802e7e36e0ea5693c7882c531"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/tod-mun-pla.md",
+        "sha256": "6d6c46c43661c0060189459b7c5d0532bffff710d6bd51e8d7fb71f4a168c5cf"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/tod-mun-pla.md",
+        "sha256": "c78bf6b46c9c9ecefa35cd4a5caddd11132d00c1eac4ba3287f0bc96156b9530"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/tod-mun-pla.md",
+        "sha256": "b145f2c1989cabcb47dad3a0222162648df306c9298ab54d704aae3d39ef8a8f"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "ea913d7f1f53fbc9d3067e05ec22475ec1e219fe273b71823e7d78968cb4b2a6"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/tod-mun-pla.md",
+        "language": "fi",
+        "slug": "tod-mun-pla",
+        "sha256": "dc75c687a64ad327f498bf13c69bd374499f8287a6f1000ad01dc8d0a45ca7bb",
+        "semantic_sha256": "02e678cec8bfdc08a83ed6b588de997dc72e94cbd24653fd144aa312a357d702"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/tod-mun-pla.md",
+        "language": "en",
+        "slug": "tod-mun-pla-en",
+        "sha256": "a5e74a5bb9f11681a629540ef5d87326b22c65aa5007d76da150d4dfe92ebe81",
+        "semantic_sha256": "4bc45a1529b96144441a1c8d875cf32c57cc25e4f065c4805056b15fa6db6d77"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/tod-mun-pla.md",
+        "language": "sv",
+        "slug": "tod-mun-pla-sv",
+        "sha256": "23b4b403826d207a868ecbefef806ed59566e83aae66442036d95fb52a7f205e",
+        "semantic_sha256": "5b0b2fdc908102dca2636d1b1a44db292257552b54b3325d41232ce2f2376697"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/tod-mun-pla.md",
+        "language": "th",
+        "slug": "tod-mun-pla-th",
+        "sha256": "8d4c8582f9af4c6d502b63b57bca58f345f8e36a0f94b800c8ef51ef48f7ec7c",
+        "semantic_sha256": "a006b2aa729e81a7eab060e69389b3aed7c358a2c5ff1aa8dd064facbaf2f612"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja aika 100 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "250 ml paistoöljyn imeytymä, tapiokatärkkelyksen massa, kalalajin/tuotteen koostumus ja currytahna."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tapiokatärkkelyksen valmistusmuoto ja massa, sokeri, currytahna; ei luotettavaa GI/HH-annosta."
+    }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
+  }
+}

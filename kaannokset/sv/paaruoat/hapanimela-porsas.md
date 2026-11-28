@@ -99,4 +99,4 @@ Krispigt stekt fläsk och färgglada grönsaker får en syrlig söt sås gjord p
 
 ## Anteckningar
 
-- Såsen är söt; justera mängden vinäger och socker efter din smak.
+- Såsen är ganska söt. Följ ingredienslistans mängder av socker och vinäger i grundreceptet. Du kan om du vill justera mängderna efter smak och på så sätt göra en variant av grundreceptet.
