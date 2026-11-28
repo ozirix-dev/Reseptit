@@ -1,14 +1,67 @@
 // Run from site/: node --import tsx scripts/scale-images.ts ../tmp/v15/scaling
 import { cp, mkdir, readFile, readdir, writeFile } from "node:fs/promises";
+import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
+import os from "node:os";
 import path from "node:path";
 import { spawn } from "node:child_process";
 import { performance } from "node:perf_hooks";
 import { parse, stringify } from "yaml";
-import { rebuildPublishedImages } from "../src/content/published-images";
+import { rebuildPublishedImages, imageSettings, type ImageManifest, type ImageVariant } from "../src/content/published-images";
 const site = path.resolve(import.meta.dirname, "..");
 const repo = path.dirname(site);
 
-if (process.argv[2] === "worker") {
+// Verified-corpus mode uses the normal build's manifest, not synthetic RIFF
+// clones. One fresh process per measurement makes peak RSS comparable.
+if (process.argv[2] === "verified-worker") {
+  const [source, output, workerCount, referencePath] = process.argv.slice(3);
+  const workers = Number(workerCount);
+  assert.ok([source, output, referencePath].every(value => typeof value === "string" && path.isAbsolute(value)),
+    "Verified worker requires absolute source, scratch output and reference manifest paths");
+  assert.ok([1, 2, 4].includes(workers), "Verified worker count must be 1, 2 or 4");
+  const raw = await readFile(referencePath, "utf8");
+  const expected = JSON.parse(raw) as ImageManifest;
+  assert.deepEqual(expected.settings, imageSettings);
+  assert.ok(expected.images.length > 0);
+  const paths = expected.images.map(image => image.path);
+  assert.equal(new Set(paths).size, paths.length);
+  // For a source <=720px, homepage selection cannot add a 720px variant.
+  // Hero and reviewed AVIF rules remain in the unmodified production pipeline.
+  const homepage = new Set(expected.images.filter(image => image.variants.some(v => v.width === 720)).map(image => image.path));
+  const start = performance.now();
+  const actual = await rebuildPublishedImages(source, output, paths, workers, homepage,
+    path.join(path.dirname(output), "stage-cache"));
+  const ms = performance.now() - start;
+  const maxRssKiB = process.resourceUsage().maxRSS;
+  assert.deepEqual(actual, expected, "Manifest parity failed against canonical build");
+  const outputDir = path.join(output, "kuvat");
+  const manifestBytes = await readFile(path.join(outputDir, "_variants", "manifest.json"), "utf8");
+  assert.equal(manifestBytes, raw, "Manifest bytes differ from canonical build");
+  const digest = (value: Buffer | string) => createHash("sha256").update(value).digest("hex");
+  const files = new Map<string, ImageVariant>();
+  for (const image of actual.images) {
+    for (const item of [image, ...image.variants, image.homeAvif, image.heroAvif]) {
+      if (!item) continue;
+      const prior = files.get(item.path);
+      if (prior) assert.deepEqual([item.bytes, item.sha256, item.width, item.height],
+        [prior.bytes, prior.sha256, prior.width, prior.height], item.path);
+      files.set(item.path, item);
+    }
+  }
+  for (const item of files.values()) {
+    const bytes = await readFile(path.join(outputDir, item.path));
+    assert.equal(bytes.length, item.bytes, item.path);
+    assert.equal(digest(bytes), item.sha256, item.path);
+  }
+  const actualPaths = (await readdir(outputDir, { recursive: true, withFileTypes: true }))
+    .filter(entry => entry.isFile())
+    .map(entry => path.relative(outputDir, path.join(entry.parentPath, entry.name)).split(path.sep).join("/"))
+    .sort();
+  assert.deepEqual(actualPaths, [...files.keys(), "_variants/manifest.json"].sort());
+  console.log(JSON.stringify({ workers, ms, maxRssKiB, filesVerified: files.size,
+    sources: paths.length, manifestSha256: digest(manifestBytes), node: process.version,
+    platform: process.platform, availableParallelism: os.availableParallelism(), encoder: imageSettings.encoder }));
+} else if (process.argv[2] === "worker") {
   const [source, output, workers] = process.argv.slice(3);
   const start = performance.now();
   const files = (await readdir(path.join(source, "kuvat"))).filter((f) => f.endsWith(".webp"));
