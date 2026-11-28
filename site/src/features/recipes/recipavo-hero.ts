@@ -2,7 +2,7 @@ import type { RecipeLocale } from "@/types/content";
 import { siteTarget } from "../../content/site-target";
 
 /**
- * Phase 1 preview copy. Not production launch permission.
+ * Homepage copy for the public Recipavo experience.
  * The public recipe finder remains functional without an account.
  */
 interface RecipavoHeroCopy {
@@ -19,38 +19,38 @@ export const recipavoHeroCopy: Record<RecipeLocale, RecipavoHeroCopy> = {
   fi: {
     brand: "Recipavo",
     brandHome: "Recipavo, etusivu",
-    tagline: "Reseptikirjasto",
-    title: "Maailman reseptit arkeen",
-    intro: "Hae ruokalajia tai raaka-ainetta ja rajaa tuloksia ruokavalion tai valmistusajan mukaan. Reseptissä voit muuttaa annosmäärää.",
-    details: "Reseptejä suomeksi, englanniksi, ruotsiksi ja thaiksi. Ravintoarvot ja glykeemisen kuorman (GK) arviot näytetään, kun tietoja on riittävästi.",
-    footer: "Recipavo · Reseptikirjasto",
+    tagline: "Reseptejä joka päivään",
+    title: "Maailman makuja kotikeittiöön",
+    intro: "Etsi reseptejä ruokalajin tai raaka-aineen mukaan. Rajaa vaihtoehtoja ruokavalion ja valmistusajan perusteella. Voit muuttaa annosmäärää reseptisivulla.",
+    details: "Reseptejä suomeksi, englanniksi, ruotsiksi ja thaiksi. Osasta reseptejä löydät myös ravintoarvot ja arvion annoksen glykeemisestä kuormasta (GK).",
+    footer: "Recipavo · Hyvää ruokaa arkeen",
   },
   en: {
     brand: "Recipavo",
     brandHome: "Recipavo, home",
-    tagline: "Recipe library",
-    title: "Recipes from around the world for everyday cooking",
-    intro: "Search by dish or ingredient and filter by diet or cooking time. You can adjust the number of servings on the recipe page.",
-    details: "Find recipes in Finnish, English, Swedish and Thai. Nutrition information and estimated glycemic load (GL) are shown where enough data is available.",
-    footer: "Recipavo · Recipe library",
+    tagline: "Recipes for every day",
+    title: "Flavours from around the world, for everyday cooking",
+    intro: "Find recipes by dish or ingredient. Narrow your choices by diet and cooking time, then adjust the servings on the recipe page.",
+    details: "Browse in Finnish, English, Swedish or Thai. Selected recipes also include nutrition information and an estimate of the glycemic load (GL) per serving.",
+    footer: "Recipavo · Everyday cooking inspiration",
   },
   sv: {
     brand: "Recipavo",
     brandHome: "Recipavo, startsida",
-    tagline: "Receptsamling",
-    title: "Vardagsrecept från hela världen",
-    intro: "Sök på maträtt eller ingrediens och filtrera efter kost eller tillagningstid. Du kan ändra antalet portioner på receptsidan.",
-    details: "Här finns recept på finska, engelska, svenska och thailändska. Näringsvärden och uppskattad glykemisk belastning (GL) visas när underlaget räcker.",
-    footer: "Recipavo · Receptsamling",
+    tagline: "Recept för varje dag",
+    title: "Smaker från hela världen, för vardagen",
+    intro: "Sök efter maträtt eller ingrediens. Filtrera efter kost och tillagningstid och ändra portionsantalet på receptsidan.",
+    details: "Recept finns på finska, engelska, svenska och thailändska. Vissa recept innehåller också näringsinformation och en uppskattning av den glykemiska belastningen (GL) per portion.",
+    footer: "Recipavo · Matinspiration för vardagen",
   },
   th: {
     brand: "Recipavo",
     brandHome: "Recipavo หน้าหลัก",
-    tagline: "คลังสูตรอาหาร",
-    title: "สูตรอาหารจากทั่วโลกสำหรับทุกวัน",
-    intro: "ค้นหาตามชื่อเมนูหรือวัตถุดิบ แล้วกรองตามรูปแบบการกินหรือเวลาที่ใช้ทำอาหาร ปรับจำนวนเสิร์ฟได้ในหน้าสูตร",
-    details: "มีสูตรอาหารภาษาฟินแลนด์ อังกฤษ สวีเดน และไทย พร้อมข้อมูลโภชนาการและค่าประมาณภาระน้ำตาล (GL) เมื่อมีข้อมูลเพียงพอ",
-    footer: "Recipavo · คลังสูตรอาหาร",
+    tagline: "สูตรอาหารสำหรับทุกวัน",
+    title: "รสชาติจากทั่วโลก สำหรับทุกวัน",
+    intro: "ค้นหาสูตรอาหารจากชื่อเมนูหรือวัตถุดิบ เลือกกรองตามรูปแบบอาหารและเวลาในการปรุง และปรับจำนวนที่เสิร์ฟได้ในหน้าสูตรอาหาร",
+    details: "มีสูตรอาหารภาษาฟินแลนด์ อังกฤษ สวีเดน และไทย บางสูตรยังมีข้อมูลโภชนาการและค่าประมาณภาระน้ำตาล (GL) ต่อหนึ่งหน่วยบริโภค",
+    footer: "Recipavo · ไอเดียอาหารสำหรับทุกวัน",
   },
 };
 
