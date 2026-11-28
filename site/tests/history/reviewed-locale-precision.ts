@@ -55,11 +55,12 @@ export function beforeReviewedLocalePrecision(root: string, file: string, text: 
   const transition = reviewedTransitions.get(file);
   if (!transition) return text;
 
+  const isPorkServiceNote = transition.predecessor === porkServiceNotePredecessor;
   assert.equal(gitBlob(text.replaceAll("\r\n", "\n")), transition.current,
-    file + ": unreviewed recipe or translation mutation");
+    file + (isPorkServiceNote ? ": unreviewed #1043 recipe or translation mutation" : ": unreviewed #1001 translation mutation"));
   const historical = execFileSync("git", ["show", (transition.predecessor ?? predecessor) + ":" + file], {
     cwd: root, encoding: "utf8",
   });
-  assert.equal(gitBlob(historical), transition.prior, file + ": historical recipe or translation blob changed");
+  assert.equal(gitBlob(historical), transition.prior, file + ": historical translation blob changed");
   return historical;
 }
