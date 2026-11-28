@@ -162,38 +162,32 @@ test("multilingual content, image loading, responsive layout and JavaScript-free
 });
 
 
-// UX-002-002: the production-only consent prompt must be exercised even
-// when the ordinary CI site build is a preview target. Bundle the real
-// component and stylesheet, using an isolated synthetic page and intercept
-// every request. No production network traffic or consent data is sent.
-test("production consent prompt does not cover keyboard focus and restores it on choice", async () => {
+// Production-host fixture with all requests intercepted.
+test("visitor analytics stays off in all languages regardless of old consent or storage errors", async () => {
   const production = resolveSiteTarget(undefined, "production");
-  const entry = "virtual:recipavo-consent-regression";
+  const entry = "virtual:recipavo-analytics-off-regression";
   const resolved = "\0" + entry;
   const fixture = `
 import { createElement as h } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import { AnalyticsPrompt } from "@/features/privacy/Privacy";
+import { PrivacyPage } from "@/features/privacy/Privacy";
+import { analyticsEvents, track } from "@/features/privacy/analytics";
 import "@/styles.css";
 const locale = new URLSearchParams(location.search).get("locale") || "fi";
-const buttons = Array.from({ length: 36 }, (_, index) =>
-  h("button", { key: index, type: "button", style: { minHeight: "44px" } }, String(index + 1)));
 createRoot(document.getElementById("fixture")).render(
-  h(BrowserRouter, null, h("div", { className: "site-shell" },
-    h("header", { className: "site-header" },
-      h("div", { className: "container site-header__inner" }, h("a", { href: "#main" }, "Header"))),
-    h("main", { id: "main", className: "container site-main", tabIndex: -1 },
-      h("h1", null, "Recipe"), h("div", { style: { display: "grid", gap: "1rem" } }, buttons)),
-    h(AnalyticsPrompt, { locale })
-  )));
+  h("main", { id: "main", className: "site-main" },
+    h(PrivacyPage, { locale }),
+    h("button", { type: "button", onClick: () => {
+      for (const event of analyticsEvents) track(event);
+    } }, "Exercise recipe events"))
+);
 `;
   const result = await build({
     configFile: false,
     root: process.cwd(),
     logLevel: "error",
     plugins: [react(), {
-      name: "recipavo-consent-regression",
+      name: "recipavo-analytics-off-regression",
       resolveId(id) { if (id === entry) return resolved; },
       load(id) { if (id === resolved) return fixture; },
     }],
@@ -225,81 +219,60 @@ createRoot(document.getElementById("fixture")).render(
   const browser = await launchBrowser();
   try {
     for (const locale of Object.keys(localeIndexes) as Array<keyof typeof localeIndexes>) {
-      for (const width of [320, 360, 390, 430, 768, 1024, 1440, 1920]) {
+      for (const storage of ["old-grant", "unavailable"] as const) {
         const context = await browser.newContext({
-          viewport: { width, height: 844 },
-          reducedMotion: "reduce",
+          viewport: { width: 390, height: 844 },
           serviceWorkers: "block",
         });
-        const sends: string[] = [];
+        const attempts: string[] = [];
         try {
+          await context.addInitScript(scenario => {
+            const key = "recipavo-analytics-choice";
+            if (scenario === "old-grant") {
+              localStorage.setItem(key, "granted:" + (Date.now() + 60_000));
+            } else {
+              Object.defineProperty(window, "localStorage", {
+                get() { throw new Error("storage unavailable"); },
+              });
+            }
+          }, storage);
           await context.route("**/*", async route => {
             const request = route.request();
             const url = new URL(request.url());
-            if (url.origin === "https://plausible.io" && url.pathname === "/api/event" && request.method() === "POST") {
-              sends.push(request.postData() ?? "");
-              await route.fulfill({ status: 204, headers: { "access-control-allow-origin": production.baseUrl } });
-              return;
-            }
-            if (url.origin !== production.baseUrl || request.method() !== "GET") {
+            if (url.hostname === "plausible.io" || request.method() !== "GET") {
+              attempts.push(request.url());
               await route.abort();
-              return;
-            }
-            if (url.pathname === "/") {
+            } else if (url.origin !== production.baseUrl) {
+              await route.abort();
+            } else if (url.pathname === "/") {
               await route.fulfill({ contentType: "text/html", body:
                 '<!doctype html><html lang="' + locale + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="canonical" href="' + production.baseUrl + '/">' +
                 styles.map(href => '<link rel="stylesheet" href="' + href + '">').join("") +
                 '</head><body><div id="fixture"></div><script type="module" src="' + script + '"></script></body></html>' });
-              return;
+            } else {
+              const file = files.get(url.pathname);
+              if (file) await route.fulfill(file);
+              else await route.fulfill({ status: 404 });
             }
-            const file = files.get(url.pathname);
-            if (file) await route.fulfill(file);
-            else await route.fulfill({ status: 404 });
           });
+          const address = production.baseUrl + "/?locale=" + locale;
+          const exercise = async (page: Awaited<ReturnType<typeof context.newPage>>) => {
+            const heading = page.getByRole("heading", { name: privacyCopy[locale].analytics, exact: true });
+            await heading.waitFor();
+            assert.equal(await page.getByText(privacyCopy[locale].measurement, { exact: true }).count(), 1);
+            assert.equal(await page.locator(".analytics-prompt, .privacy-choice").count(), 0);
+            await page.getByRole("button", { name: "Exercise recipe events" }).click();
+            await page.waitForLoadState("networkidle");
+            assert.deepEqual(attempts, [], locale + " " + storage);
+          };
           const page = await context.newPage();
-          await page.goto(production.baseUrl + "/?locale=" + locale);
-          const prompt = page.locator(".analytics-prompt .privacy-choice");
-          await prompt.waitFor();
-          assert.equal(await page.evaluate(() => {
-            const banner = document.querySelector(".analytics-prompt .privacy-choice")!;
-            const rect = banner.getBoundingClientRect();
-            const main = document.querySelector("#main")!.getBoundingClientRect();
-            return rect.top >= main.bottom - 0.5 && document.documentElement.scrollWidth <= innerWidth;
-          }), true, `${locale} ${width}: prompt stays above content without overflow`);
-          for (const key of ["Tab", "Shift+Tab"]) {
-            for (let step = 0; step < 30; step++) {
-              await page.keyboard.press(key);
-              const covered = await page.evaluate(() => {
-                const banner = document.querySelector(".analytics-prompt .privacy-choice");
-                const focused = document.activeElement;
-                if (!banner || !focused || focused === document.body || banner.contains(focused)) return false;
-                const b = banner.getBoundingClientRect(), f = focused.getBoundingClientRect();
-                return f.width > 0 && f.height > 0 && f.left >= b.left && f.right <= b.right &&
-                  f.top >= b.top && f.bottom <= b.bottom;
-              });
-              assert.equal(covered, false, `${locale} ${width} ${key} step ${step + 1}`);
-            }
-          }
-          assert.equal(sends.length, 0, "no analytics before explicit consent");
-          const grant = width === 390;
-          const button = prompt.getByRole("button", { name: grant ? privacyCopy[locale].allow : privacyCopy[locale].deny, exact: true });
-          await button.focus();
-          const sent = grant ? page.waitForRequest(request => request.url() === "https://plausible.io/api/event" && request.method() === "POST") : null;
-          await page.keyboard.press(grant ? "Space" : "Enter");
-          await prompt.waitFor({ state: "detached" });
-          assert.equal(await page.evaluate(() => document.activeElement?.id), "main", `${locale} ${width}: choice focus`);
-          assert.match(await page.evaluate(() => localStorage.getItem("recipavo-analytics-choice") ?? ""), grant ? /^granted:\d+$/ : /^denied:\d+$/);
-          if (sent) {
-            const request = await sent;
-            assert.deepEqual(request.postDataJSON(), { domain: "recipavo.com", name: "pageview", url: production.baseUrl + "/" });
-          } else assert.equal(sends.length, 0, "denied consent sends nothing");
-          await page.keyboard.press("Tab");
-          assert.equal(await page.locator("#main button").first().evaluate(node => node === document.activeElement), true,
-            `${locale} ${width}: Tab continues into content`);
+          await page.goto(address);
+          await exercise(page);
           await page.reload();
-          await page.locator("#main button").first().waitFor();
-          assert.equal(await prompt.count(), 0, "persisted choice does not show prompt again");
-          if (!grant) assert.equal(sends.length, 0, "persisted denial sends nothing");
+          await exercise(page);
+          const second = await context.newPage();
+          await second.goto(address);
+          await exercise(second);
         } finally {
           await context.close();
         }
