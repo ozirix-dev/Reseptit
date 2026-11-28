@@ -87,6 +87,73 @@ test("navigation keeps separate menus and restores scroll correctly across all l
   assert.ok(await mobile.locator(".site-language-nav a").first().isVisible());
   await mobile.close();
 
+  const focusPage = await browser.newPage({ viewport: { width: 700, height: 844 } });
+  try {
+    await focusPage.goto(base + "/");
+    const menu = focusPage.locator(".site-primary-menu > summary");
+    const languages = focusPage.locator(".site-language-menu > summary");
+    const primaryFirst = focusPage.locator(".site-primary-nav a").first();
+    const currentLanguage = focusPage.locator('.site-language-nav a[aria-current="page"]');
+    const assertFocused = async (target: typeof menu) => {
+      await target.and(focusPage.locator(":focus")).waitFor({ state: "visible" });
+      assert.equal(await target.evaluate(node => node === document.activeElement), true);
+    };
+    await focusPage.locator("#recipe-search").waitFor();
+    await focusPage.waitForFunction(() => !document.querySelector<HTMLDetailsElement>(".site-primary-menu")?.open);
+
+    await menu.focus();
+    await focusPage.setViewportSize({ width: 701, height: 844 });
+    await assertFocused(primaryFirst);
+    await focusPage.setViewportSize({ width: 700, height: 844 });
+    await assertFocused(menu);
+    await languages.focus();
+    await focusPage.setViewportSize({ width: 701, height: 844 });
+    await assertFocused(currentLanguage);
+    await focusPage.setViewportSize({ width: 700, height: 844 });
+    await assertFocused(languages);
+
+    await menu.press("Enter");
+    await primaryFirst.press("Enter");
+    await assertFocused(menu);
+    await menu.press("Enter");
+    await focusPage.locator('.site-primary-nav a[href="/ruokaopas/"]').press("Enter");
+    await focusPage.waitForURL(base + "/ruokaopas/");
+    await focusPage.waitForFunction(() => document.activeElement?.id === "main");
+    await focusPage.goBack();
+    await focusPage.waitForURL(base + "/");
+    const skipLink = focusPage.locator(".skip-link");
+    await skipLink.press("Enter");
+    await focusPage.waitForFunction(() => document.activeElement?.id === "main");
+  } finally {
+    await focusPage.close();
+  }
+
+  const delayedPage = await browser.newPage({ viewport: { width: 390, height: 844 } });
+  let finishLoad: () => void = () => {};
+  try {
+    await delayedPage.goto(base + "/");
+    await delayedPage.locator("#recipe-search").waitFor();
+    const requestStarted = delayedPage.waitForRequest("**/assets/BlogPages-*.js", { timeout: 10_000 });
+    const load = new Promise<void>(resolve => { finishLoad = resolve; });
+    await delayedPage.route("**/assets/BlogPages-*.js", async route => {
+      await load;
+      await route.continue();
+    });
+    const summary = delayedPage.locator(".site-primary-menu > summary");
+    await summary.press("Enter");
+    await delayedPage.locator('.site-primary-nav a[href="/ruokaopas/"]').press("Enter");
+    await requestStarted;
+    assert.equal(await summary.evaluate(node => node === document.activeElement), true);
+    const brand = delayedPage.locator(".site-brand");
+    await brand.focus();
+    finishLoad();
+    await delayedPage.waitForURL(base + "/ruokaopas/");
+    assert.equal(await brand.evaluate(node => node === document.activeElement), true);
+  } finally {
+    finishLoad();
+    await delayedPage.close();
+  }
+
   // UX-001-001: a mobile panel may extend past the left edge even when
   // document.scrollWidth fits. Check the actual panel and every link.
   const indexes = { fi: "/", en: "/en/recipes/", sv: "/sv/recept/", th: "/th/recipes/" };
