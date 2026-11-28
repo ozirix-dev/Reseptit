@@ -103,17 +103,23 @@ export function EstimateSummary({ result, locale }: { result: EvidenceResult; lo
 
 import { track } from "@/features/privacy/analytics";
 
-export function EstimateDetails({ result, locale, notes, technicalNotes }: {
+export function RecipePrintFallback({ title, children }: { title: ReactNode; children: ReactNode }) {
+  return <div className="recipe-print-fallback">
+    <p><strong>{title}</strong></p>
+    {children}
+  </div>;
+}
+
+export function EstimateDetails({ result, locale, notes, technicalNotes, recipePrint = false }: {
   result: EvidenceResult;
   locale: RecipeLocale;
   notes?: ReactNode;
   technicalNotes?: ReactNode;
+  recipePrint?: boolean;
 }) {
   const text = gkCopy[locale];
   const kinds = [...new Set(result.sourceReferences.map(evidenceLabel))];
-  return <>
-    <details className="gk-evidence__details" onToggle={event => { if (event.currentTarget.open) track("Open Glycemic Evidence"); }}>
-      <summary>{text.how}</summary>
+  const explanation = <>
       <p>{text.personal}</p>
       {result.ingredientEvidence?.length ? (
         <ul>{result.ingredientEvidence.map((ingredient, index) => <li key={index}>
@@ -122,10 +128,16 @@ export function EstimateDetails({ result, locale, notes, technicalNotes }: {
         </li>)}</ul>
       ) : kinds.length ? <ul>{kinds.map((kind) => <li key={kind}>{text.kinds[kind]}</li>)}</ul> : null}
       {notes}
+  </>;
+  return <>
+    <details className="gk-evidence__details" onToggle={event => { if (event.currentTarget.open) track("Open Glycemic Evidence"); }}>
+      <summary data-recipe-print-expanded>{text.how}</summary>
+      {explanation}
     </details>
+    {recipePrint ? <RecipePrintFallback title={text.how}>{explanation}</RecipePrintFallback> : null}
     {result.sourceReferences.length || result.carbohydrateSources.length || technicalNotes ? (
       <details className="gk-evidence__details gk-evidence__technical">
-        <summary>{text.sources}</summary>
+        <summary data-recipe-print-expanded={technicalNotes ? true : undefined}>{text.sources}</summary>
         <p>{text.technicalNote}</p>
         {technicalNotes}
         {result.ingredientEvidence?.length ? <ul>{result.ingredientEvidence.map((ingredient, index) => (
@@ -152,22 +164,23 @@ export function EstimateDetails({ result, locale, notes, technicalNotes }: {
         </> : null}
       </details>
     ) : null}
+    {recipePrint && technicalNotes ? <RecipePrintFallback title={text.sources}>
+      <p>{text.technicalNote}</p>
+      {technicalNotes}
+    </RecipePrintFallback> : null}
   </>;
 }
 
-export function MissingEstimate({ result, locale, explanation }: {
+export function MissingEstimate({ result, locale, explanation, recipePrint = false }: {
   result: Pick<GlycemicLoadPilotPublicResult, "incompleteReasons">;
   locale: RecipeLocale;
   explanation?: string;
+  recipePrint?: boolean;
 }) {
   const text = gkCopy[locale];
   const sharedPendingReview = result.incompleteReasons.length > 1 && result.incompleteReasons.every(reason =>
     reason.category === "REVIEW_PENDING" && (reason.ingredientNames[locale] ?? reason.ingredientNames.fi));
-  return <>
-    <p><strong>{text.missing}</strong></p>
-    <p>{explanation ?? text.missingBasis}</p>
-    {result.incompleteReasons.length ? <details className="gk-evidence__details">
-      <summary>{text.why}</summary>
+  const reasons = <>
       {sharedPendingReview ? <p>{text.pendingReviewGroup}</p> : null}
       <ul>{result.incompleteReasons.map((reason, index) => {
         const ingredient = reason.ingredientNames[locale] ?? reason.ingredientNames.fi;
@@ -176,6 +189,16 @@ export function MissingEstimate({ result, locale, explanation }: {
           {!sharedPendingReview ? <>{ingredient ? " · " : null}{missingReason(locale, reason.category)}</> : null}
         </li>;
       })}</ul>
-    </details> : null}
+  </>;
+  return <>
+    <p><strong>{text.missing}</strong></p>
+    <p>{explanation ?? text.missingBasis}</p>
+    {result.incompleteReasons.length ? <>
+      <details className="gk-evidence__details">
+        <summary data-recipe-print-expanded>{text.why}</summary>
+        {reasons}
+      </details>
+      {recipePrint ? <RecipePrintFallback title={text.why}>{reasons}</RecipePrintFallback> : null}
+    </> : null}
   </>;
 }

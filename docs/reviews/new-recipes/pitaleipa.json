@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "pitaleipa",
+  "source_path": "reseptit/leivonnaiset/pitaleipa.md",
+  "source_sha256": "7bc49bc5a832c7ed582b0c1de33a2b9789cfabc446ef760203c12338a57a9363",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.kingarthurbaking.com/recipes/golden-pita-bread-recipe"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/pitaleipa.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Oma 20 reseptin samankaltaisuusseulonta. Chat-2:n tarkastamissa viidessä heuristisessa osumassa ei ollut estettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset, niiden käyttötilat ja määrät säilyvät Chat-2:n katselmoimasta sisällöstä. Sisältää vehnää. Käytä lämpötilan kestävää paistokiveä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusvaiheet ja valmistuslähde säilyvät Chat-2:n katselmoimasta sisällöstä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaturvallisuusohjeet ja allergeenit säilyvät neljällä kielellä tarkastetusta revisiosta. Kirjallinen näyttö ilman Recipavon koekeittiötestiä. Sisältää vehnää. Käytä lämpötilan kestävää paistokiveä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 8 ja ilmoitettu kokonaisaika 130 min säilyvät. Arvot tarkistettu neljällä kielellä."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kuivahiivan lähderivi ja kaulinnassa paistettuihin leipiin päätyvä jauhokerros ovat avoimia. Kaikki neljä arvoa jäävät määrittämättömiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle annosversiolle ei ole hyväksyttyä soveltuvaa GI- tai ainesosasidosta eikä kanonista GK-näyttöä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/pitaleipa.webp",
+    "bytes": 101738,
+    "sha256": "96ce015552388ced5818342d0a25cd51824b8784183c0ce0d60339d5586c379a",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161831506",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161957227",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/leivonnaiset/pitaleipa.md",
+        "sha256": "0173a47b8b5bcc5b7317b243f050f57597b87c5e9d25981bfc98d83858f3a264"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/pitaleipa.md",
+        "sha256": "9e738d5dd90ed9fddfea8e2952573758720ab3a13b542781fe82735a758664c6"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/pitaleipa.md",
+        "sha256": "fbce1217fe813ff07b6bc02d7316cc404cc2cf78ff30e38d16ec9761438869ca"
+      },
+      {
+        "path": "reseptit/leivonnaiset/pitaleipa.md",
+        "sha256": "c28e3f5873f98ecd08c93d0d0b3db9617ece12d04862a6d002a3a93f0b7d978a"
+      }
+    ],
+    "scope": "Ennen julkaisuehdokasta katselmoitu teksti, valmistus, turvallisuus ja kuva. Ravintoratkaisujen ehdot on kirjattu erillisessä katselmoinnissa."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "c09e6071e5a15079ef8bcacc69d59e39ee75956f411f2ec87afcc6390972c0df"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/pitaleipa.md",
+        "language": "fi",
+        "slug": "pitaleipa",
+        "sha256": "7bc49bc5a832c7ed582b0c1de33a2b9789cfabc446ef760203c12338a57a9363",
+        "semantic_sha256": "3d130313d603c0d1c4892b9abca75b40e2d2b845ba7217694dd80b1649582b13"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/pitaleipa.md",
+        "language": "en",
+        "slug": "pitaleipa-en",
+        "sha256": "9ea3b2d1831ea79ffa41fa20aaddb52a5c1ef41c706c6d0d1c5e616066cf1f89",
+        "semantic_sha256": "9b2b98ba85759467065be7ee1bab6dcd865d02b3c74c8079cf20d9f33d9a7f93"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/pitaleipa.md",
+        "language": "sv",
+        "slug": "pitaleipa-sv",
+        "sha256": "00483e63178672e1a24118d1b9ff7c37910057c6b3b014791402f1038a83f78e",
+        "semantic_sha256": "c6cd3fd3165f4ee62435ad10802260ef89838329a254de4407c3c97d407fd5d8"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/pitaleipa.md",
+        "language": "th",
+        "slug": "pitaleipa-th",
+        "sha256": "afcf1593ab73ffa5290eadaca3c18d9500978e0a82b8b06d8c25d1d41acff5d3",
+        "semantic_sha256": "eb420cf7b4341f8a22db4e397bfc795577456ece2f38b303407e175d612329e3"
+      }
+    ],
+    "final_independent_delta": "pending"
+  }
+}

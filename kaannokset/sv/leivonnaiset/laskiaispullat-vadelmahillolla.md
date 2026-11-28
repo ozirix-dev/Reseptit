@@ -1,0 +1,75 @@
+---
+title: "Finska fastlagsbullar med hallonsylt"
+recipe_id: laskiaispullat-vadelmahillolla
+url_slug: laskiaispullat-vadelmahillolla-sv
+category: leivonnainen
+language: sv
+source_language: fi
+source_recipe: reseptit/leivonnaiset/laskiaispullat-vadelmahillolla.md
+translation_of: laskiaispullat-vadelmahillolla
+status: published
+servings: 20
+time_total_min: 175
+difficulty: "medel"
+main_ingredient: ["vehnäjauho","vadelmahillo"]
+cooking_method: ["uuni"]
+image:
+  src: leivonnaiset/laskiaispullat-vadelmahillolla.webp
+  alt: "Runda fastlagsbullar med synlig vispgrädde och hallonsylt (AI-illustration)"
+  width: 960
+  height: 640
+ingredients:
+  - amount: 500
+    unit: "ml"
+    item: "mjölk"
+  - amount: 50
+    unit: "g"
+    item: "färsk jäst"
+  - amount: 1
+    unit: "tsk"
+    item: "salt"
+  - amount: 170
+    unit: "g"
+    item: "socker"
+  - amount: 3
+    unit: "tsk"
+    item: "malen kardemumma"
+  - amount: 950
+    unit: "g"
+    item: "vetemjöl"
+  - amount: 150
+    unit: "g"
+    item: "smält bakmargarin"
+  - amount: 1
+    unit: "st"
+    item: "ägg till pensling"
+  - amount: 200
+    unit: "g"
+    item: "hallonsylt"
+  - amount: 400
+    unit: "ml"
+    item: "vispgrädde"
+  - amount: 15
+    unit: "g"
+    item: "florsocker till garnering"
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
+---
+
+# Finska fastlagsbullar med hallonsylt
+
+Kardemummabullar fyllda med hallonsylt och vispad grädde.
+
+## Gör så här
+
+1. Lös upp jästen i fingervarm mjölk. Tillsätt salt, socker och kardemumma. Tillsätt mjölet lite i taget. Arbeta in det ljumma margarinet mot slutet.
+2. Täck bunken och låt degen jäsa till dubbel storlek. Dela i 20 delar, rulla bullar och lägg på bakplåtspapper. Låt jäsa övertäckta tills de är pösiga.
+3. Pensla med uppvispat ägg. Grädda i 220 °C i 12–15 minuter tills bullarna är gyllenbruna. Låt svalna helt.
+4. Vispa den kalla grädden mjuk. Skär av locken på bullarna och fördela sylten och grädden på underdelarna. Lägg tillbaka locken och sikta över florsocker. Förvara de fyllda bullarna övertäckta i kylen fram till servering.
+
+## Anteckningar
+
+- Innehåller vete, mjölk och ägg.
+- Tillagningskälla https://www.martat.fi/reseptit/laskiaispulla/

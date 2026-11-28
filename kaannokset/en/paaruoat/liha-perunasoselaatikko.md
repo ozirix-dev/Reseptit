@@ -64,5 +64,5 @@ An everyday Finnish bake of buttery mashed potatoes layered with fully cooked be
 ## Notes
 
 - Contains milk. Cook the beef thoroughly; cool leftovers promptly in shallow containers and refrigerate below +6°C.
-- AI-generated illustration; no independent cooking test, recipe-specific nutrition or GK calculation, or gluten-free approval.
+- The image is an AI-generated illustration. Recipavo has not tested the recipe in its own kitchen, and there is no approved nutrition calculation for the whole recipe. Numerical nutrition values are omitted, glycemic load has not been determined, and no gluten-free claim has been approved.
 - Original adaptation based on: [K-Ruoka](https://www.k-ruoka.fi/reseptit/liha-perunasoselaatikko) · [Valio](https://www.valio.fi/reseptit/liha-perunasoselaatikko/)

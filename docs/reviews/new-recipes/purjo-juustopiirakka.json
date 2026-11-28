@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "purjo-juustopiirakka",
+  "source_path": "reseptit/leivonnaiset/purjo-juustopiirakka.md",
+  "source_sha256": "ffcc47c00f11f1e38658049192f216b3f61b0561930b5fab9b8f38b0d91f2a94",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.bbcgoodfood.com/recipes/leek-ricotta-gruyere-tart"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/purjo-juustopiirakka.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Oma 20 reseptin samankaltaisuusseulonta. Chat-2:n tarkastamissa viidessä heuristisessa osumassa ei ollut estettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset, niiden käyttötilat ja määrät säilyvät Chat-2:n katselmoimasta sisällöstä. Sisältää vehnää, maitoa ja kananmunaa. Paistopainot poistetaan ennen täyttöä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus ja kestot vastaavat Chat-2:n katselmoimaa sisältöä. Sama kesto on merkitty tarkistimen tunnistamana minuuttilukuna."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaturvallisuusohjeet ja allergeenit säilyvät neljällä kielellä tarkastetusta revisiosta. Kirjallinen näyttö ilman Recipavon koekeittiötestiä. Sisältää vehnää, maitoa ja kananmunaa. Paistopainot poistetaan ennen täyttöä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 8 ja ilmoitettu kokonaisaika 85 min säilyvät. Arvot tarkistettu neljällä kielellä."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Murotaikinan ja juustojen tuotekoostumus, vuoan ulkopuolelle jäävä taikina ja munien syötävä massa ovat avoimia. Kaikki neljä arvoa jäävät määrittämättömiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle annosversiolle ei ole hyväksyttyä soveltuvaa GI- tai ainesosasidosta eikä kanonista GK-näyttöä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/purjo-juustopiirakka.webp",
+    "bytes": 127590,
+    "sha256": "a5f2d7cc52f51e113861c126a7fddbde297f683b2ce2f903ba6708ff6a5b0cf0",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161831506",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161957227",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/leivonnaiset/purjo-juustopiirakka.md",
+        "sha256": "0f1ebf669d9832101c3e5e5e80bed4416abf1e26c986bffbc76a81e45735ce6a"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/purjo-juustopiirakka.md",
+        "sha256": "e2afa7637eccd82727f8baa16378fda6d62ff15676562131770032955e1665b5"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/purjo-juustopiirakka.md",
+        "sha256": "97c4aadffdf7f261a28f4816d44dc7bebac930711a59cb06423b5cc7c32f19fc"
+      },
+      {
+        "path": "reseptit/leivonnaiset/purjo-juustopiirakka.md",
+        "sha256": "7f50bb94836e05717f50c8b7c7fb1faaa2d0dc137a64aaffc6d8c6769f70fe76"
+      }
+    ],
+    "scope": "Ennen julkaisuehdokasta katselmoitu teksti, valmistus, turvallisuus ja kuva. Ravintoratkaisujen ehdot on kirjattu erillisessä katselmoinnissa."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "ebf94608d9c6dce056a132c93bee42b858c250a8954a2075cc151984639be6de"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu. Valmistusajan ilmaisun vastaavuus varmennettu.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/purjo-juustopiirakka.md",
+        "language": "fi",
+        "slug": "purjo-juustopiirakka",
+        "sha256": "ffcc47c00f11f1e38658049192f216b3f61b0561930b5fab9b8f38b0d91f2a94",
+        "semantic_sha256": "2c302f5f05f653da29faa6181c3681d9422e4f8f6db40c1383be26920f8ae206"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/purjo-juustopiirakka.md",
+        "language": "en",
+        "slug": "purjo-juustopiirakka-en",
+        "sha256": "eabd6078096c2aafc3911c6f4f74fc7ae95d88221d7e60d5406c382f8a0bb531",
+        "semantic_sha256": "d99512561019579713dfec95510da94b0b7d99ea6d79efab7889b3951ef94182"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/purjo-juustopiirakka.md",
+        "language": "sv",
+        "slug": "purjo-juustopiirakka-sv",
+        "sha256": "fd6697f3085d63b0b0eadadccddecadc6e46ab31f80c471f85fb929818eb55c7",
+        "semantic_sha256": "0165df7dd20c73782b854fb4500a4da58d204f1420e034c5416f257ac9744f93"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/purjo-juustopiirakka.md",
+        "language": "th",
+        "slug": "purjo-juustopiirakka-th",
+        "sha256": "6dbff6d9e9a30ed9d5f6a0892f5da857e6e0938c85a0f6ca64d0c0d03bb5c65c",
+        "semantic_sha256": "e27f62c341091deb5222a6422ba88076f146bbe2936faf3a8f73e127c84424b8"
+      }
+    ],
+    "final_independent_delta": "pending"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "recipe_id": "khanom-jeen-nam-ya",
+  "source_path": "reseptit/paaruoat/khanom-jeen-nam-ya.md",
+  "source_sha256": "6284731494eb33b1092896f28455dfa530c88288b9d0cce8e4da629c5038a138",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.eatingthaifood.com/thai-fish-curry-recipe-nam-ya/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/khanom-jeen-nam-ya.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/khanom-jeen-nam-ya.webp",
+    "bytes": 261318,
+    "sha256": "41a8ac91e6f48acc1a6d5f31017a788e52ae7576ffffd261a77af084047d2ed4",
+    "width": 1672,
+    "height": 941,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/khanom-jeen-nam-ya.md",
+        "sha256": "a7dbf8111da9c3ce779a982c0e8d08e9331e0e6ed09aea04cfc16d57baa37069"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/khanom-jeen-nam-ya.md",
+        "sha256": "67a285eec1a16c20f8ce12aaa70859192f8f205f424f18b2051d9779ebc135da"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/khanom-jeen-nam-ya.md",
+        "sha256": "ca520b0e44c34f47d028cb2527e0b44abead566ddf88386d68cc281d30832a92"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/khanom-jeen-nam-ya.md",
+        "sha256": "997fd5072e601e625e4820a73dc48f3cd329b378ac7ad8ef9dc6cb7335371382"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "2313b87963efcbf86b4ff1e45648193fb1a1ee511533a9653da040a6295de56d"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/khanom-jeen-nam-ya.md",
+        "language": "fi",
+        "slug": "khanom-jeen-nam-ya",
+        "sha256": "6284731494eb33b1092896f28455dfa530c88288b9d0cce8e4da629c5038a138",
+        "semantic_sha256": "6ecd55a33c8babd4032c771c33d7f5002e4662a6d4a8837b6dc23b6952382f44"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/khanom-jeen-nam-ya.md",
+        "language": "en",
+        "slug": "khanom-jeen-nam-ya-en",
+        "sha256": "492aeb279d02c683a6523601622609090403a7d50c532203d990450a448220b2",
+        "semantic_sha256": "3a0d895cef7abc49ced7fb5973ef562dbb76032ee4e8ee6307bd0a7c6d73fe8f"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/khanom-jeen-nam-ya.md",
+        "language": "sv",
+        "slug": "khanom-jeen-nam-ya-sv",
+        "sha256": "d77e8e892b63d9af1b04580a67c5597d26a44ad3c2b227d2dfa9f3f81facafcd",
+        "semantic_sha256": "fad5b5b0f4ae070261783e1e617fabd3f14a06884f4ebc1817cb92525c7a63ac"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/khanom-jeen-nam-ya.md",
+        "language": "th",
+        "slug": "khanom-jeen-nam-ya-th",
+        "sha256": "8ae235f943344f6bb0d6d2b7c0a0ee2e2825f8b56c427b8d7f82012941b06253",
+        "semantic_sha256": "1abe59addcb3cd2bdd5f960a88d02e7fcc2974f2a545ed02e2234f12ac10c98e"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja aika 90 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "800 g kokonaismakrillin syötävä saanto, kookoskerman ja laimennetun kookosmaidon tuotteet, nuudelituote ja annosjako."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "300 g kuiva riisivermiselli eli 75 g kuivaa/annos; tuotteen HH ja valmistusmuotoon sopiva GI puuttuvat. Ei tuoreen khanom jeenin GI:n siirtoa."
+    }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
+  }
+}

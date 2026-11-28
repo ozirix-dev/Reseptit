@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "tattarigaletit",
+  "source_path": "reseptit/leivonnaiset/tattarigaletit.md",
+  "source_sha256": "4ac727ce181f7557778f4b0ebeeb9c8e4a491f86d0dddcdc6fab54997932d37c",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.kingarthurbaking.com/recipes/buckwheat-crepes-recipe"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/tattarigaletit.json",
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/tattarigaletit.webp",
+    "bytes": 144586,
+    "sha256": "4b3be42a8c4bb2584358d71bf158336fcfd75a6397360be418a8ff08e254a75b",
+    "width": 960,
+    "height": 640,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/tattarigaletit.md",
+        "language": "fi",
+        "slug": "tattarigaletit",
+        "sha256": "4ac727ce181f7557778f4b0ebeeb9c8e4a491f86d0dddcdc6fab54997932d37c",
+        "semantic_sha256": "6f7fcc7d9d53cd6c7f1bdcc438e05d6f6412654d2d9ee4e006fd66237c0982d2"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/tattarigaletit.md",
+        "language": "en",
+        "slug": "tattarigaletit-en",
+        "sha256": "53f8c268104bfb5137735d2f0916e54a274bbc46c70070ae871d07805759b03d",
+        "semantic_sha256": "21f71d6ff840232bff892e7378d7d5acf3205619b0935be13d44b07efb1bcf92"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/tattarigaletit.md",
+        "language": "sv",
+        "slug": "tattarigaletit-sv",
+        "sha256": "0a031f4985d58f19edd6ef32e0ce171ed27273b9a334b6b621cbaccb2b68831e",
+        "semantic_sha256": "d21a9e0c5fbf1658c2c2837339c2f9f93356a7014e95c60fe9c9ab2a6e074236"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/tattarigaletit.md",
+        "language": "th",
+        "slug": "tattarigaletit-th",
+        "sha256": "d4d4bd9ea5fe85bf6a5afc58c8158f045135ae28ddc9005fd278406d4606ac8e",
+        "semantic_sha256": "9b78193461a77c4d0c8d6941aa9127b2d2c94e5330e86abba9d853aab485f360"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ohut suolainen tattarilettu. Vanhan kokoelman tattarin käyttö sakeuttajana ei tee samasta tuotteesta galettea. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 10 ja kokonaisaika 155 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Finelin tattarituotteen 161 polyolit ovat tyhjät. Paistorasvan toteutunut määrä avoin."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

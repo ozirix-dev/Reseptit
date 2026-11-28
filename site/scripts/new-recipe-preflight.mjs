@@ -184,12 +184,14 @@ export function runCli(root = ROOT, argv = process.argv.slice(2), env = process.
     console.log(JSON.stringify(makeTemplate(templatePath, source), null, 2));
     return { checked: 0, candidates: 0 };
   }
-  const single = argValue('--recipe');
+  const explicitRecipes = argv.filter(arg => arg.startsWith('--recipe=')).map(arg => arg.slice('--recipe='.length));
+  const single = explicitRecipes.length > 0;
   const base = argValue('--base') || env.BASE_SHA;
   const head = argValue('--head') || env.HEAD_SHA || 'HEAD';
   if (!single && !base) throw new Error('BASE_SHA is required (or use --recipe=path / --template=path)');
-  if (single && !isRecipePath(single)) throw new Error('Invalid recipe path');
-  const candidates = single ? [{ file: single, previousFile: null }] :
+  if (single && (explicitRecipes.some(file => !isRecipePath(file)) || new Set(explicitRecipes).size !== explicitRecipes.length))
+    throw new Error('Invalid or duplicate recipe path');
+  const candidates = single ? explicitRecipes.map(file => ({ file, previousFile: null })) :
     changesFromDiff(git(['diff', '--name-status', '-z', '--find-renames', base, head, '--', 'reseptit/'], root));
   const json = argv.includes('--json');
   const assessments = [];
@@ -211,10 +213,10 @@ export function runCli(root = ROOT, argv = process.argv.slice(2), env = process.
     const errors = validateReview(file, source, review, all, successors);
     const code = errors.length ? 'HOLD_NEW_RECIPE_EVIDENCE' : 'EDITORIAL_EVIDENCE_CURRENT';
     assessments.push({ recipeId: current.recipe_id, path: file, code, reasons: errors });
-    if (!json) {
-      if (errors.length) console.error('HOLD ' + file + ':\n  - ' + errors.join('\n  - '));
-      else console.log('PASS ' + file + ': SHA-bound editorial approval verified');
-    }
+    // Keep structured stdout in JSON mode, but retain the actual blocking
+    // reasons on stderr for callers using execFileSync and ordinary CLI users.
+    if (errors.length) console.error('HOLD ' + file + ':\n  - ' + errors.join('\n  - '));
+    else if (!json) console.log('PASS ' + file + ': SHA-bound editorial approval verified');
   }
   const checked = assessments.length;
   const blocked = assessments.filter(row => row.reasons.length > 0).length;

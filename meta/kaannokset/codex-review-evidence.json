@@ -1381,46 +1381,61 @@
   },
   "karjalanpiirakat-riisipuurolla:en": {
     "source_hash": "3dd2f1827e2f115f45a86336b306f951c35f62ea74716f050aaaa665c4e59112",
-    "translation_hash": "69d9648fd0423e60aad24b004787fddad2f782d85d9e7eb665fd96d673fb53a8",
-    "reviewed_at": "2026-11-15",
-    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
-    "correction_pr": 656,
+    "translation_hash": "51966642606b7160fa71c5785f59a6a01d3e8b155f71111356c534857ed7d43e",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale | Rajattu riippumaton Chat-2 sisältökatselmointi 25.11.2026: https://github.com/ozirix-dev/Reseptit/pull/1001#issuecomment-7157501899 (b8fab04fa041b944f4a34e745a6563848f20bc70); ehdokastiivisteet 7156209112, kanoninen CI vaaditaan.",
+    "correction_pr": 1001,
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "17.11.2026 verrattu julkista esittelyä ja kaulintahuomiota FI-ohjeeseen. Koeleivonta ja APT-vaatimusten tarkistus ovat kesken. Enintään 20 g kaulintajauhoa, 24 piirakkaa ja munavoin erillisyys säilyvät. Julkinen teksti muodostuu tiedostossa site/scripts/public-recipe-copy.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "EN Advanced vastaa FI vaativa -luokkaa. Rajattu muuttuneen kentän katselmointi; ei uutta kokonaissisältö-, ravinto- tai APT-hyväksyntää."
       }
     ]
   },
   "karjalanpiirakat-riisipuurolla:sv": {
     "source_hash": "3dd2f1827e2f115f45a86336b306f951c35f62ea74716f050aaaa665c4e59112",
-    "translation_hash": "4f3b6b02721d59e626380b6de525c7a858249954cab6ac6d438cf44cfe0ce9dd",
-    "reviewed_at": "2026-11-15",
-    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
-    "correction_pr": 656,
+    "translation_hash": "346e8ed44e41a33ff4add756088e24d2ecf8709b4535da757140b8af1d02e65a",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale | Rajattu riippumaton Chat-2 sisältökatselmointi 25.11.2026: https://github.com/ozirix-dev/Reseptit/pull/1001#issuecomment-7157501899 (b8fab04fa041b944f4a34e745a6563848f20bc70); ehdokastiivisteet 7156209112, kanoninen CI vaaditaan.",
+    "correction_pr": 1001,
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "17.11.2026 verrattu julkista esittelyä ja kaulintahuomiota FI-ohjeeseen. Koeleivonta ja APT-vaatimusten tarkistus ovat kesken. Enintään 20 g kaulintajauhoa, 24 piirakkaa ja munavoin erillisyys säilyvät. Julkinen teksti muodostuu tiedostossa site/scripts/public-recipe-copy.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "SV Avancerad vastaa FI vaativa -luokkaa. Rajattu muuttuneen kentän katselmointi; ei uutta kokonaissisältö-, ravinto- tai APT-hyväksyntää."
       }
     ]
   },
   "karjalanpiirakat-riisipuurolla:th": {
     "source_hash": "3dd2f1827e2f115f45a86336b306f951c35f62ea74716f050aaaa665c4e59112",
-    "translation_hash": "d8d7b998a367773d7e0e912c3b85751ce7f816a21c2a7bf101bbd3690ee02b38",
-    "reviewed_at": "2026-11-15",
-    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale",
-    "correction_pr": 656,
+    "translation_hash": "ef51f0eb7da1246fef3b84cb48bc616c75e4881fcb2c6104d3c8a345f083abb5",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/2026-11-15-recipe-correctness-audit-fixes.md | Independent Codex source comparison by recipe and locale | Rajattu riippumaton Chat-2 sisältökatselmointi 25.11.2026: https://github.com/ozirix-dev/Reseptit/pull/1001#issuecomment-7157501899 (b8fab04fa041b944f4a34e745a6563848f20bc70); ehdokastiivisteet 7156209112, kanoninen CI vaaditaan.",
+    "correction_pr": 1001,
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "17.11.2026 verrattu julkista esittelyä ja kaulintahuomiota FI-ohjeeseen. Koeleivonta ja APT-vaatimusten tarkistus ovat kesken. Enintään 20 g kaulintajauhoa, 24 piirakkaa ja munavoin erillisyys säilyvät. Julkinen teksti muodostuu tiedostossa site/scripts/public-recipe-copy.ts."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "TH ยาก vastaa FI vaativa -luokkaa. Rajattu muuttuneen kentän katselmointi; ei uutta kokonaissisältö-, ravinto- tai APT-hyväksyntää."
       }
     ]
   },
@@ -5978,10 +5993,10 @@
     ]
   },
   "hapanimela-porsas:en": {
-    "source_hash": "bada18816486f60fdc84608652e360df1e96dd3e0f7b1b5be80c65c65983c605",
-    "translation_hash": "c71e0cf59456bc3d403706e77d2e4160e2a0053c90d30ac595049e90e3c43645",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. Tuore punainen paprika, valutettu ananas, porsaan kypsyys ja kastikkeessa kääntely. Riisi on listattu.",
+    "source_hash": "f51bcf08511733af1c43b1869a566c466c83ca0e8a7ac682c0d501ae49dbd853",
+    "translation_hash": "f7cc1ca649c7e1cf22ac559853696e672b6c49c103af7cecde79e8c22c6d754a",
+    "reviewed_at": "2026-11-28",
+    "reference": "docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. Tuore punainen paprika, valutettu ananas, porsaan kypsyys ja kastikkeessa kääntely. Riisi on listattu. | 2026-11-28: riippumaton tekstideltan katselmointi, https://github.com/ozirix-dev/Reseptit/issues/327#issuecomment-7232356064",
     "outcome": "pass",
     "findings": [
       {
@@ -5992,10 +6007,10 @@
     ]
   },
   "hapanimela-porsas:sv": {
-    "source_hash": "bada18816486f60fdc84608652e360df1e96dd3e0f7b1b5be80c65c65983c605",
-    "translation_hash": "7f594cf4ba6eb0f4b6a2ffa310d28eb8904a7108be7be0b19e75123f2666700a",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. Tuore punainen paprika, valutettu ananas, porsaan kypsyys ja kastikkeessa kääntely. Riisi on listattu.",
+    "source_hash": "f51bcf08511733af1c43b1869a566c466c83ca0e8a7ac682c0d501ae49dbd853",
+    "translation_hash": "2cd6a67ca4e151200f8a99ba3f6af3ca895314764fad88de119c1704298b3ab4",
+    "reviewed_at": "2026-11-28",
+    "reference": "docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. Tuore punainen paprika, valutettu ananas, porsaan kypsyys ja kastikkeessa kääntely. Riisi on listattu. | 2026-11-28: riippumaton tekstideltan katselmointi, https://github.com/ozirix-dev/Reseptit/issues/327#issuecomment-7232356064",
     "outcome": "pass",
     "findings": [
       {
@@ -6006,10 +6021,10 @@
     ]
   },
   "hapanimela-porsas:th": {
-    "source_hash": "bada18816486f60fdc84608652e360df1e96dd3e0f7b1b5be80c65c65983c605",
-    "translation_hash": "41067a636f6d7e1b6e3c3e8f15f505f55a727bf69af5b88b16d25cf3e897c1c1",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. Tuore punainen paprika, valutettu ananas, porsaan kypsyys ja kastikkeessa kääntely. Riisi on listattu.",
+    "source_hash": "f51bcf08511733af1c43b1869a566c466c83ca0e8a7ac682c0d501ae49dbd853",
+    "translation_hash": "448921ebd925fe984120a64fc882f88db9830ed6e9bfe97cc2fc1e6b21119336",
+    "reviewed_at": "2026-11-28",
+    "reference": "docs/reviews/2026-11-13-reseptit-40-kielikatselmointi.md. Tuore punainen paprika, valutettu ananas, porsaan kypsyys ja kastikkeessa kääntely. Riisi on listattu. | 2026-11-28: riippumaton tekstideltan katselmointi, https://github.com/ozirix-dev/Reseptit/issues/327#issuecomment-7232356064",
     "outcome": "pass",
     "findings": [
       {
@@ -7398,17 +7413,23 @@
   },
   "pad-kra-pao-vhh:th": {
     "source_hash": "7485dc24c7e345695f02e69982a59749b48245c8b0709649fefdd873bac9a15b",
-    "translation_hash": "518491c19975f4709992452bde3ed4ecca6c9113c4c645a67c3bd621b97173aa",
-    "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Ohje edellyttää porsaan jauhelihan kypsentämistä kauttaaltaan. Thai-käännöksessä täsmennetään pannun käyttö ja basilikan kääntely.",
+    "translation_hash": "1aa44a131a98c61c7747ff2939a0cce8c9414d2707d0acedf446d986c31142aa",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-40-kielikatselmointi.md. Ohje edellyttää porsaan jauhelihan kypsentämistä kauttaaltaan. Thai-käännöksessä täsmennetään pannun käyttö ja basilikan kääntely. | Rajattu riippumaton Chat-2 sisältökatselmointi 25.11.2026: https://github.com/ozirix-dev/Reseptit/pull/1001#issuecomment-7157501899 (b8fab04fa041b944f4a34e745a6563848f20bc70); ehdokastiivisteet 7156209112, kanoninen CI vaaditaan.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
         "status": "fixed",
         "summary": "Ohje edellyttää porsaan jauhelihan kypsentämistä kauttaaltaan. Thai-käännöksessä täsmennetään pannun käyttö ja basilikan kääntely."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "TH title/H1 täsmentää porsaan jauhelihan ja thaibasilikan pyhän basilikan sijasta sekä kukkakaaliriisin. Aiemmat valmistus- ja turvallisuushavainnot säilyvät; alt ei kuulu tähän korjaukseen. Rajattu muuttuneen kentän katselmointi; ei uutta kokonaissisältö-, ravinto- tai APT-hyväksyntää."
       }
-    ]
+    ],
+    "correction_pr": 1001
   },
   "pad-thai-vhh-konjac:en": {
     "source_hash": "a33fb06792a348f0a9cc31c96c60bb42161cca3c85049addce7bc6d789026588",
@@ -12843,26 +12864,26 @@
     "findings": []
   },
   "thai-mango-sticky-rice-tahmariisilla:en": {
-    "source_hash": "2a01add24981f142eea7a67ab57ac1118d444292cc4540436a587bd85a0235ea",
-    "translation_hash": "add5ad814a59ff240eb2c4fae5b2e94265e61faf710ebe77c322e6845408a168",
-    "reviewed_at": "2026-11-23",
-    "reference": "docs/reviews/2026-11-23-issue326-mango-sticky-rice-julkaisukatselmointi.md",
+    "source_hash": "306033b1c4f1d15bb2c7a9ab618245550b0f6e5c903540f6fbe9c2607317a814",
+    "translation_hash": "dfb4a3435b5e3ce49b512df8258755c177a9e971e51fc4c2cd11c3399bb0a6f1",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
     "outcome": "pass",
     "findings": []
   },
   "thai-mango-sticky-rice-tahmariisilla:sv": {
-    "source_hash": "2a01add24981f142eea7a67ab57ac1118d444292cc4540436a587bd85a0235ea",
-    "translation_hash": "d46f38e8a90bc5c3bf5c6339335afa9357048561c3f71bb878cc770b7f21ff14",
-    "reviewed_at": "2026-11-23",
-    "reference": "docs/reviews/2026-11-23-issue326-mango-sticky-rice-julkaisukatselmointi.md",
+    "source_hash": "306033b1c4f1d15bb2c7a9ab618245550b0f6e5c903540f6fbe9c2607317a814",
+    "translation_hash": "4506f38a0ea6df9a1c3bdb5289d68f7548e62ebed0385f618c6b6e05ecd08ecf",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
     "outcome": "pass",
     "findings": []
   },
   "thai-mango-sticky-rice-tahmariisilla:th": {
-    "source_hash": "2a01add24981f142eea7a67ab57ac1118d444292cc4540436a587bd85a0235ea",
-    "translation_hash": "493cda2acb523d86b0e7dd3bada42befc09bec9f8121998b4d600ce1a5ce5f20",
-    "reviewed_at": "2026-11-23",
-    "reference": "docs/reviews/2026-11-23-issue326-mango-sticky-rice-julkaisukatselmointi.md",
+    "source_hash": "306033b1c4f1d15bb2c7a9ab618245550b0f6e5c903540f6fbe9c2607317a814",
+    "translation_hash": "c32fabd0730bbe16867cc78a9b6687a7db9844da5c815503f43bace2ad4834ba",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
     "outcome": "pass",
     "findings": []
   },
@@ -14176,6 +14197,1902 @@
     "translation_hash": "c26b91a712dc848bb0f795e04d8fe68508e176e88eb67730bfee83218b9c3ec2",
     "reviewed_at": "2026-11-25",
     "reference": "docs/reviews/new-recipes/porkkana-omenaraaste.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ciabatta:en": {
+    "source_hash": "50f5eceac5615ba46410b6f13afe96e244705328252db6347d947a7691a377a1",
+    "translation_hash": "8104e8a112f5f75e2b7f8d0cb431cadffcbff847fc595563668a27fdcbca4b02",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/ciabatta.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ciabatta:sv": {
+    "source_hash": "50f5eceac5615ba46410b6f13afe96e244705328252db6347d947a7691a377a1",
+    "translation_hash": "0e9a310ef55cfc1d9d3376cbbed1db9da151f937b9d67473482d17a699292049",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/ciabatta.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ciabatta:th": {
+    "source_hash": "50f5eceac5615ba46410b6f13afe96e244705328252db6347d947a7691a377a1",
+    "translation_hash": "77ed9216b59e3a04d78a8737208bb0b8f49e21f3c4bc3784c75bcd63d2e44b09",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/ciabatta.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "focaccia:en": {
+    "source_hash": "ec189f126a490d9d6abf3d7e4cb43118fa549e283f202bd986ce335456095dd5",
+    "translation_hash": "9fccea13f8c41d6c795874679ef568d8cbdeed8f2a0fbc64ff3a7c2cec9c27ea",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/focaccia.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "focaccia:sv": {
+    "source_hash": "ec189f126a490d9d6abf3d7e4cb43118fa549e283f202bd986ce335456095dd5",
+    "translation_hash": "874337c2cee22b4248fe2c1d5fc69e0905bfb0c7877d2f5600eb087cf1cafe5c",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/focaccia.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "focaccia:th": {
+    "source_hash": "ec189f126a490d9d6abf3d7e4cb43118fa549e283f202bd986ce335456095dd5",
+    "translation_hash": "9fc888f4eeb3c1d15a556854cec9a8f6539038c03634b2e9c19e9be87837d3b2",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/focaccia.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kauravuokaleipa:en": {
+    "source_hash": "22ec01977f841040447986cafb2663039626378962d2acb8275a99cfc6fa4324",
+    "translation_hash": "ef2464737beced2d3909d31c69e6175d9f2d1595908308f6150c19eb35db2349",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kauravuokaleipa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kauravuokaleipa:sv": {
+    "source_hash": "22ec01977f841040447986cafb2663039626378962d2acb8275a99cfc6fa4324",
+    "translation_hash": "d4eb6b5147916d27330cddfb4446e4f405db42a368c303eab8c13da2e60dc03b",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kauravuokaleipa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kauravuokaleipa:th": {
+    "source_hash": "22ec01977f841040447986cafb2663039626378962d2acb8275a99cfc6fa4324",
+    "translation_hash": "45429fd2b910f9a212168980ab50bd320b743b6f59b41a93e3892146c91a983b",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kauravuokaleipa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "naanleipa:en": {
+    "source_hash": "6838de8d3614c4ecefac7a39ac5ff2cb0db9a7fee5ae4d2be4186e3143429923",
+    "translation_hash": "0a268563ddf38e1b6da4a1b2ee3348e1d98ee61c3c0c179a5656fca12543751d",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/naanleipa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "naanleipa:sv": {
+    "source_hash": "6838de8d3614c4ecefac7a39ac5ff2cb0db9a7fee5ae4d2be4186e3143429923",
+    "translation_hash": "b9eb65e58f0c6171d9c938073498dc7537a5a1811f21571c6452c38c8b03f47f",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/naanleipa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "naanleipa:th": {
+    "source_hash": "6838de8d3614c4ecefac7a39ac5ff2cb0db9a7fee5ae4d2be4186e3143429923",
+    "translation_hash": "40d1ffb70a7c8a933c738d4c1033802e4cddce8944d7faf8d7d4fab8d01d2b12",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/naanleipa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pitaleipa:en": {
+    "source_hash": "3d130313d603c0d1c4892b9abca75b40e2d2b845ba7217694dd80b1649582b13",
+    "translation_hash": "9b2b98ba85759467065be7ee1bab6dcd865d02b3c74c8079cf20d9f33d9a7f93",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/pitaleipa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pitaleipa:sv": {
+    "source_hash": "3d130313d603c0d1c4892b9abca75b40e2d2b845ba7217694dd80b1649582b13",
+    "translation_hash": "c6cd3fd3165f4ee62435ad10802260ef89838329a254de4407c3c97d407fd5d8",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/pitaleipa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pitaleipa:th": {
+    "source_hash": "3d130313d603c0d1c4892b9abca75b40e2d2b845ba7217694dd80b1649582b13",
+    "translation_hash": "eb420cf7b4341f8a22db4e397bfc795577456ece2f38b303407e175d612329e3",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/pitaleipa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "purjo-juustopiirakka:en": {
+    "source_hash": "2c302f5f05f653da29faa6181c3681d9422e4f8f6db40c1383be26920f8ae206",
+    "translation_hash": "d99512561019579713dfec95510da94b0b7d99ea6d79efab7889b3951ef94182",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/purjo-juustopiirakka.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "purjo-juustopiirakka:sv": {
+    "source_hash": "2c302f5f05f653da29faa6181c3681d9422e4f8f6db40c1383be26920f8ae206",
+    "translation_hash": "0165df7dd20c73782b854fb4500a4da58d204f1420e034c5416f257ac9744f93",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/purjo-juustopiirakka.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "purjo-juustopiirakka:th": {
+    "source_hash": "2c302f5f05f653da29faa6181c3681d9422e4f8f6db40c1383be26920f8ae206",
+    "translation_hash": "e27f62c341091deb5222a6422ba88076f146bbe2936faf3a8f73e127c84424b8",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/purjo-juustopiirakka.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "saaristolaisleipa:en": {
+    "source_hash": "80ac55a82f7dd5013d0381c44518853584eecc2affe554195b2c35241f4e2a7c",
+    "translation_hash": "b0babf336757884edf5b0c05eb9309ba1b03cfb97133dd10e86ee5d428258812",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/saaristolaisleipa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "saaristolaisleipa:sv": {
+    "source_hash": "80ac55a82f7dd5013d0381c44518853584eecc2affe554195b2c35241f4e2a7c",
+    "translation_hash": "25a09b4ba6cade3593899ef264239b702f865a6a3c22617b78066f7c70bd3f51",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/saaristolaisleipa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "saaristolaisleipa:th": {
+    "source_hash": "80ac55a82f7dd5013d0381c44518853584eecc2affe554195b2c35241f4e2a7c",
+    "translation_hash": "e3f2392eadc9aa8ab1688ed2c528227473ab3a31bfda7f00deced99ea553d79d",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/saaristolaisleipa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "scones:en": {
+    "source_hash": "435f4f71a386be7965df738980bb4012ba5938ff6194738173d52d795583e70a",
+    "translation_hash": "e398a7894f5cef9e79abd6dac0a0b7f356536eef2fc4983cc835145577b77346",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/scones.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "scones:sv": {
+    "source_hash": "435f4f71a386be7965df738980bb4012ba5938ff6194738173d52d795583e70a",
+    "translation_hash": "748a559fe31fdc9a8fe86731721a1226afe3da682db4edd580940d39b9cdf36c",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/scones.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "scones:th": {
+    "source_hash": "435f4f71a386be7965df738980bb4012ba5938ff6194738173d52d795583e70a",
+    "translation_hash": "0f1b05daa84b73742a0bcc9843b2356e2abcb47f8b055a25ccecf797c7b11f1f",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/scones.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "jaadytetyt-jogurtti-marjapalat:en": {
+    "source_hash": "ece6aefded504449f8d0194a6894ac7d942921ba642cd3621b663fe21f7c14a6",
+    "translation_hash": "b36a4ee7d66d0e6271c8330d960a305288016dd42efbd2b3f06ce8ab10f2b999",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/jaadytetyt-jogurtti-marjapalat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "jaadytetyt-jogurtti-marjapalat:sv": {
+    "source_hash": "ece6aefded504449f8d0194a6894ac7d942921ba642cd3621b663fe21f7c14a6",
+    "translation_hash": "75601fd729fbbac641e2f9a2f2a740096de85e098a2b447e3f94ca27b26b0cee",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/jaadytetyt-jogurtti-marjapalat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "jaadytetyt-jogurtti-marjapalat:th": {
+    "source_hash": "ece6aefded504449f8d0194a6894ac7d942921ba642cd3621b663fe21f7c14a6",
+    "translation_hash": "15baad2c20313400e316d5e080df489e1670ace94a61b51efa48e58f2400813d",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/jaadytetyt-jogurtti-marjapalat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "mango-lassi:en": {
+    "source_hash": "bd6b1f9085d23348c3bd66a5e9461edb9ef532ee23ec87a28e465f34343dab7f",
+    "translation_hash": "ee805ed1b70cae532b2f7b273343c0074ffc57dede41e3a6a1df08c1fff4af22",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/mango-lassi.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "mango-lassi:sv": {
+    "source_hash": "bd6b1f9085d23348c3bd66a5e9461edb9ef532ee23ec87a28e465f34343dab7f",
+    "translation_hash": "02078c3fb9b363f4d757d86ce4e2d551c2c249490ab3dbab59c4b270463dad3a",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/mango-lassi.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "mango-lassi:th": {
+    "source_hash": "bd6b1f9085d23348c3bd66a5e9461edb9ef532ee23ec87a28e465f34343dab7f",
+    "translation_hash": "7e15f56240aa3cbaab02ab0442c8bef7f79918ea0ec805ec4378a1e03d6e45a5",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/mango-lassi.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "omena-kanelikaurapatukat:en": {
+    "source_hash": "25b849a254ab179b37f12848e3e0346a9ec8d290997e8f44a843992c37aec49e",
+    "translation_hash": "b2ba80368462216a3bcfa872eb96d9b1cf77cad13e568a5c7962df6578db277d",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/omena-kanelikaurapatukat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "omena-kanelikaurapatukat:sv": {
+    "source_hash": "25b849a254ab179b37f12848e3e0346a9ec8d290997e8f44a843992c37aec49e",
+    "translation_hash": "54b886bab85630abc4624aaeab5b249fcd1264ebfc9d0862b97ec9e1e0034a33",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/omena-kanelikaurapatukat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "omena-kanelikaurapatukat:th": {
+    "source_hash": "25b849a254ab179b37f12848e3e0346a9ec8d290997e8f44a843992c37aec49e",
+    "translation_hash": "00eab0c25da728a3ab0718bae82167d2f020adb825ff8e040a825f3660cb39b1",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/omena-kanelikaurapatukat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "omenalohkot-maapahkinavoilla:en": {
+    "source_hash": "4e9957fa3c84fa3beada9746981083e30a540a6cda2272eb2f1d3f2e66e91f66",
+    "translation_hash": "e0d45b2ccfe8311e0b1900266dc04133fcc5053ae3537f1759b1eb5af66bae8b",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/omenalohkot-maapahkinavoilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "omenalohkot-maapahkinavoilla:sv": {
+    "source_hash": "4e9957fa3c84fa3beada9746981083e30a540a6cda2272eb2f1d3f2e66e91f66",
+    "translation_hash": "a38c46c474363159a9ccab024944ff3cec34b4a5cef5bfbf44973d9a12e4f334",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/omenalohkot-maapahkinavoilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "omenalohkot-maapahkinavoilla:th": {
+    "source_hash": "4e9957fa3c84fa3beada9746981083e30a540a6cda2272eb2f1d3f2e66e91f66",
+    "translation_hash": "5d1ffa7cc2c617686f93974632f17d4ffc05311cf22eba252ff0706d92eb8532",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/omenalohkot-maapahkinavoilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdettu-pahkina-siemensekoitus:en": {
+    "source_hash": "c0e9a20bfc15c3f95149de3836eefb834d79e4951fede192be2d22a31917cbcb",
+    "translation_hash": "7626556e738c758868f439636e9898ffafb1ed57364c939c320a12169b96fed6",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paahdettu-pahkina-siemensekoitus.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdettu-pahkina-siemensekoitus:sv": {
+    "source_hash": "c0e9a20bfc15c3f95149de3836eefb834d79e4951fede192be2d22a31917cbcb",
+    "translation_hash": "810a8a89e398d45bf5d863b80433a8cb2debcfc2deffc797cdad2943ebe4623c",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paahdettu-pahkina-siemensekoitus.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdettu-pahkina-siemensekoitus:th": {
+    "source_hash": "c0e9a20bfc15c3f95149de3836eefb834d79e4951fede192be2d22a31917cbcb",
+    "translation_hash": "bb08296fb24eb1934974a66dee9db20b8082ff0c4d8efb9bafb5a68e701517c5",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paahdettu-pahkina-siemensekoitus.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdetut-edamamepavut:en": {
+    "source_hash": "3cca3acb627fa1d04b479e5f3ce4178ead91e85b5008ef71645efe43db079229",
+    "translation_hash": "49c82eb8647485beb8d10a4c5d3a7bb2d0f8592e558da516c0234942333e909c",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paahdetut-edamamepavut.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdetut-edamamepavut:sv": {
+    "source_hash": "3cca3acb627fa1d04b479e5f3ce4178ead91e85b5008ef71645efe43db079229",
+    "translation_hash": "33a844eea1e6e7aa1574b2a71be8d2afe5034d26bfd916520810df9baf74880a",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paahdetut-edamamepavut.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdetut-edamamepavut:th": {
+    "source_hash": "3cca3acb627fa1d04b479e5f3ce4178ead91e85b5008ef71645efe43db079229",
+    "translation_hash": "f9e0552cdf97be5c4e0d5314b0158227a34dbaf78164154f140c868a0038878f",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paahdetut-edamamepavut.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdetut-kikherneet:en": {
+    "source_hash": "1607cd4fa376941150bdcd2eec8aeb7fa183bf7a708efdd5d6422557e872c1b6",
+    "translation_hash": "4d73f6e99d5abc871035f986bdf1e3ca9cf42a6bf28a8150e4c2e03043dadeee",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paahdetut-kikherneet.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdetut-kikherneet:sv": {
+    "source_hash": "1607cd4fa376941150bdcd2eec8aeb7fa183bf7a708efdd5d6422557e872c1b6",
+    "translation_hash": "b6141c3a5fba8d2a7f0346448d378c3502b130122a370d533fa52d5c9af7179e",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paahdetut-kikherneet.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdetut-kikherneet:th": {
+    "source_hash": "1607cd4fa376941150bdcd2eec8aeb7fa183bf7a708efdd5d6422557e872c1b6",
+    "translation_hash": "dbfc3709b4f5de6b3cd260826645497a48309a15fdd515c9070fc6b4c6787fa9",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paahdetut-kikherneet.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paprikapopcorn:en": {
+    "source_hash": "7eee24b21a4a7ace8f6c01c69edbdc0ee76df2ff581a4724c3294ee5302650ce",
+    "translation_hash": "4ae491c336d00aa81ffc5001265f449b2e07e9a90da48eed8a1bfd50e73a065a",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paprikapopcorn.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paprikapopcorn:sv": {
+    "source_hash": "7eee24b21a4a7ace8f6c01c69edbdc0ee76df2ff581a4724c3294ee5302650ce",
+    "translation_hash": "34729088c156c14ca787922af1f49be14982641b1a43fd367e5d581f0ac809b3",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paprikapopcorn.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paprikapopcorn:th": {
+    "source_hash": "7eee24b21a4a7ace8f6c01c69edbdc0ee76df2ff581a4724c3294ee5302650ce",
+    "translation_hash": "c145b8f18ba44eaa9b51257817bf2630ce28e26bb2d6d73d1d7401177417d442",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paprikapopcorn.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "punajuurilevite:en": {
+    "source_hash": "fca24a36100dbd84eb99a9cdf51cc85fa2f6dfc0e2dce68392e9537c9cd9d4a6",
+    "translation_hash": "18e47afca88214a7e343c8956dda310025f0c9583071e5f8bfa3559601a4dfcc",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/punajuurilevite.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "punajuurilevite:sv": {
+    "source_hash": "fca24a36100dbd84eb99a9cdf51cc85fa2f6dfc0e2dce68392e9537c9cd9d4a6",
+    "translation_hash": "34eef0b02172c2112a30ed5ff6f62ec688bd7c93fa29b408de2f0f8b84ebb8e5",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/punajuurilevite.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "punajuurilevite:th": {
+    "source_hash": "fca24a36100dbd84eb99a9cdf51cc85fa2f6dfc0e2dce68392e9537c9cd9d4a6",
+    "translation_hash": "d91529edc6bc9c9f93470ae0b9ebd2c8dd0b3062c095e1099f63ef8cb8da0839",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/punajuurilevite.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "raejuusto-retiisiruisleipa:en": {
+    "source_hash": "9eefb60aff1ec0b530e88b3b74913a2c66122e2325d03ab4c0d83f468af36fce",
+    "translation_hash": "3d2bb107963852c6565a69c79cd8c0f112e6ec23d1f713172892b7fbe676dce4",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/raejuusto-retiisiruisleipa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "raejuusto-retiisiruisleipa:sv": {
+    "source_hash": "9eefb60aff1ec0b530e88b3b74913a2c66122e2325d03ab4c0d83f468af36fce",
+    "translation_hash": "00b0916646ee144d0a18c55fdd5f3ffd92330046195a19a32c35f829e4db5fca",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/raejuusto-retiisiruisleipa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "raejuusto-retiisiruisleipa:th": {
+    "source_hash": "9eefb60aff1ec0b530e88b3b74913a2c66122e2325d03ab4c0d83f468af36fce",
+    "translation_hash": "7dbaacc8311c592fc9ca292d22ca236d1ac152375d042e1439011af433e68f88",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/raejuusto-retiisiruisleipa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sitruunainen-valkopapulevite:en": {
+    "source_hash": "517a2157f4d989331ccdc085041c5c01ddca778e625be97d04370211bf808935",
+    "translation_hash": "6ce484bb0c3ca388a40bb397eb8a49784f21db8210d06e11281bce63d354437b",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/sitruunainen-valkopapulevite.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sitruunainen-valkopapulevite:sv": {
+    "source_hash": "517a2157f4d989331ccdc085041c5c01ddca778e625be97d04370211bf808935",
+    "translation_hash": "a07a682f791bd1c504be5334305009c3bb151f67851af00610a77ada81311e5d",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/sitruunainen-valkopapulevite.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sitruunainen-valkopapulevite:th": {
+    "source_hash": "517a2157f4d989331ccdc085041c5c01ddca778e625be97d04370211bf808935",
+    "translation_hash": "08d178ff19294ed45460a57e34cadba8248b25f30c90c4fd8c58bdd54131d8d1",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/sitruunainen-valkopapulevite.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "taateli-maapahkinavoipalat:en": {
+    "source_hash": "e1caf4d4bf3ef6e4abf3786319d66ce194967d0d0dddffe3384f1db2102a59bd",
+    "translation_hash": "31a7a3dd1d4de2d3825b16eeb637a94a2e192a93393d04db0fc45a80bee9ec21",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/taateli-maapahkinavoipalat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "taateli-maapahkinavoipalat:sv": {
+    "source_hash": "e1caf4d4bf3ef6e4abf3786319d66ce194967d0d0dddffe3384f1db2102a59bd",
+    "translation_hash": "213436a78bc3a6841943516e7aa69bdb2f3a69486240d1c4312956ed90961281",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/taateli-maapahkinavoipalat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "taateli-maapahkinavoipalat:th": {
+    "source_hash": "e1caf4d4bf3ef6e4abf3786319d66ce194967d0d0dddffe3384f1db2102a59bd",
+    "translation_hash": "eb649b842002a12e40cbbe9a00b3af006580e718df5641c605a6206089f7ecf8",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/taateli-maapahkinavoipalat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "banaani-kaurapannukakut:en": {
+    "source_hash": "f68ed1b4000de41820da768c6d05405b274a1c6988508b4be19ace1f010a8ebd",
+    "translation_hash": "60abbf9dd703b69b12c7e3f1d4dcbbcf1e27ab94224645786bc2e21e2d85a0f5",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/banaani-kaurapannukakut.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "banaani-kaurapannukakut:sv": {
+    "source_hash": "f68ed1b4000de41820da768c6d05405b274a1c6988508b4be19ace1f010a8ebd",
+    "translation_hash": "e68cc328983e4799d79428de952ff2562144529a38a8615153bf44a21db3c669",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/banaani-kaurapannukakut.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "banaani-kaurapannukakut:th": {
+    "source_hash": "f68ed1b4000de41820da768c6d05405b274a1c6988508b4be19ace1f010a8ebd",
+    "translation_hash": "450e7719522818638e36f8b4716e79ec6f1d6ec90e6e175a24635e3d10d6d3d3",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/banaani-kaurapannukakut.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "banaani-maapahkinavoimuffinit:en": {
+    "source_hash": "4a28b67f3bf6daea902fad9f04e044cbe6e242f2856f866a966aac03e98599a4",
+    "translation_hash": "0f9a579e03ab4a07926cba9abc88610833ed97cc04f790b440e27a752378f82a",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/banaani-maapahkinavoimuffinit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "banaani-maapahkinavoimuffinit:sv": {
+    "source_hash": "4a28b67f3bf6daea902fad9f04e044cbe6e242f2856f866a966aac03e98599a4",
+    "translation_hash": "e6ff51d5616676bed22f0870082ead2f50eb97fc0ac55396e852d32b4fc1c78b",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/banaani-maapahkinavoimuffinit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "banaani-maapahkinavoimuffinit:th": {
+    "source_hash": "4a28b67f3bf6daea902fad9f04e044cbe6e242f2856f866a966aac03e98599a4",
+    "translation_hash": "40bf3e35f89be7507a9c119560c8aa866d6099dea887726f62c8ed922327986c",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/banaani-maapahkinavoimuffinit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "chapati:en": {
+    "source_hash": "22accf42b8f61c25ba5f2c7126470d6a80a735072a7290f6278aa579b18f1a30",
+    "translation_hash": "68f678007069b79c44c0ef36a9f05552d3502a7f5ad646671202d3f6f33bb182",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/chapati.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "chapati:sv": {
+    "source_hash": "22accf42b8f61c25ba5f2c7126470d6a80a735072a7290f6278aa579b18f1a30",
+    "translation_hash": "b03a9477878056cb6092954d9df07d1b51dba93dbbb9bad4f2b0413dc56f94d6",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/chapati.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "chapati:th": {
+    "source_hash": "22accf42b8f61c25ba5f2c7126470d6a80a735072a7290f6278aa579b18f1a30",
+    "translation_hash": "c174a66b15c4ee50ff62d3333cbbb682979c5b5ed679d3caec89c6c53d023ab9",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/chapati.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kolmisaikeinen-pullapitko:en": {
+    "source_hash": "a28026259b3bc39b750ac00de59b326f27cf6bf43881250c1472e0aa7cf513fd",
+    "translation_hash": "e41ee619f084fcd2c0cdb7a447f66b0512beb1f23a5dafc02250d6ee6d5e4c3c",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kolmisaikeinen-pullapitko.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kolmisaikeinen-pullapitko:sv": {
+    "source_hash": "a28026259b3bc39b750ac00de59b326f27cf6bf43881250c1472e0aa7cf513fd",
+    "translation_hash": "e835b4acd4cb6c7dbd20fb7571316089d7378a866983e58ec2984d589cc2e804",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kolmisaikeinen-pullapitko.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kolmisaikeinen-pullapitko:th": {
+    "source_hash": "a28026259b3bc39b750ac00de59b326f27cf6bf43881250c1472e0aa7cf513fd",
+    "translation_hash": "72dbd80fc29d59f8a4165d1da839acf5ec1f5f152eece0e62e0fa631342f5daa",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kolmisaikeinen-pullapitko.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kurkku-avokadosalsa:en": {
+    "source_hash": "a774a63e077b7fa6db0d2499fbd97a0304f6769f32952891d4b2a287e997cb0b",
+    "translation_hash": "ea993d2d0d94ffef2f0e94d5bade749e516b6ed8e92f8d84390b2c784f748dfc",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kurkku-avokadosalsa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kurkku-avokadosalsa:sv": {
+    "source_hash": "a774a63e077b7fa6db0d2499fbd97a0304f6769f32952891d4b2a287e997cb0b",
+    "translation_hash": "be39c67dbb0c1ffcd98cc0cf7b549dd39f3df1abfd7acdb91a6b71bb22da4042",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kurkku-avokadosalsa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kurkku-avokadosalsa:th": {
+    "source_hash": "a774a63e077b7fa6db0d2499fbd97a0304f6769f32952891d4b2a287e997cb0b",
+    "translation_hash": "4817be3cf1edee25e23b869dde7c001a1c4f189595cb3befa7ee6453aaac45a4",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/kurkku-avokadosalsa.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "lamminsavukirjolohitahna:en": {
+    "source_hash": "0bfcd3266a74ac8acc950f373e3950bcb9df0f0c5181ddc529786ccc1bd51001",
+    "translation_hash": "cb991d2bb701d8e7374fc4d6ba4277f3c60f2b730539ddab606d7130d1d69726",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/lamminsavukirjolohitahna.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "lamminsavukirjolohitahna:sv": {
+    "source_hash": "0bfcd3266a74ac8acc950f373e3950bcb9df0f0c5181ddc529786ccc1bd51001",
+    "translation_hash": "98afc8f4af68cd7672ee4f886a7517e01de5a58ddcdcfe08ca38446e381e9362",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/lamminsavukirjolohitahna.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "lamminsavukirjolohitahna:th": {
+    "source_hash": "0bfcd3266a74ac8acc950f373e3950bcb9df0f0c5181ddc529786ccc1bd51001",
+    "translation_hash": "e8ffa7432d66cb7be0b38e52ee232d96016287af8d2a3354097d89fd5c9900b9",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/lamminsavukirjolohitahna.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "laskiaispullat-vadelmahillolla:en": {
+    "source_hash": "c223f0908b70385309b3b3c3792d480358401cde99cc452d5b1f103b2bb54128",
+    "translation_hash": "accda15e08e6c1b8b8899da2e9cdba00cb23c874ea518a7df4b392f64569073b",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/laskiaispullat-vadelmahillolla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "laskiaispullat-vadelmahillolla:sv": {
+    "source_hash": "c223f0908b70385309b3b3c3792d480358401cde99cc452d5b1f103b2bb54128",
+    "translation_hash": "9fa34b5370b490cb6c418b0f9a84d65f9e2e1e71ab0990b4a8a168a72b8bd054",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/laskiaispullat-vadelmahillolla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "laskiaispullat-vadelmahillolla:th": {
+    "source_hash": "c223f0908b70385309b3b3c3792d480358401cde99cc452d5b1f103b2bb54128",
+    "translation_hash": "b79ed3ef759d6ef286e2373e450a6555333632e1cba8a5d0dd1dba1a00a34fa0",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/laskiaispullat-vadelmahillolla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "mustikkapiirakka-vuokaan:en": {
+    "source_hash": "85f417fd71af33fbc19ade3fb786a6188811853880628209c7aa42a0252c345c",
+    "translation_hash": "456a87c687796bb23d58fc9e77211f9173dd491cca99c806e249d7117ae1a4ea",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/mustikkapiirakka-vuokaan.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "mustikkapiirakka-vuokaan:sv": {
+    "source_hash": "85f417fd71af33fbc19ade3fb786a6188811853880628209c7aa42a0252c345c",
+    "translation_hash": "f516e7e0cc15a7406c9b1e7ca980a72630f802aea0c41ffda846c09f3ed8caf0",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/mustikkapiirakka-vuokaan.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "mustikkapiirakka-vuokaan:th": {
+    "source_hash": "85f417fd71af33fbc19ade3fb786a6188811853880628209c7aa42a0252c345c",
+    "translation_hash": "4aad5b58d078d6a0dad206de0d49b5c676140f8d4d71f143439bc6b45a687369",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/mustikkapiirakka-vuokaan.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "omenainen-tuorepuuro:en": {
+    "source_hash": "d5cefe33566e9faec6509a49d5c75e5443aedfcadfeb29dac17a905d81d5565d",
+    "translation_hash": "13cb82fa2a6891d9ff9a8ff224f8e6ff4838b4f4dc66abbcf6a4a0a9038f1795",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/omenainen-tuorepuuro.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "omenainen-tuorepuuro:sv": {
+    "source_hash": "d5cefe33566e9faec6509a49d5c75e5443aedfcadfeb29dac17a905d81d5565d",
+    "translation_hash": "cda041c884076fbeb050ccf80e4e64af4987336ca46777552cfb8f5371a2cba4",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/omenainen-tuorepuuro.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "omenainen-tuorepuuro:th": {
+    "source_hash": "d5cefe33566e9faec6509a49d5c75e5443aedfcadfeb29dac17a905d81d5565d",
+    "translation_hash": "3aec708e05b14e1968bad9ab8c083f2b71ba87d1734ec7082a2fe598fcd05271",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/omenainen-tuorepuuro.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdettu-paprika-tahini-jogurttidippi:en": {
+    "source_hash": "6db5480a023d1072a4377be8601a02f94b0760d5c82b0e25b67b5b0eaeebd24a",
+    "translation_hash": "834ae2be17e16709d5ec79e8bb48cdef046e840f9802af8b27927cab1cfba3e2",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paahdettu-paprika-tahini-jogurttidippi.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdettu-paprika-tahini-jogurttidippi:sv": {
+    "source_hash": "6db5480a023d1072a4377be8601a02f94b0760d5c82b0e25b67b5b0eaeebd24a",
+    "translation_hash": "c10e1559c69abd6bb56c125aba9a2ff70c691ec3c540cf93864accecdc103cb8",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paahdettu-paprika-tahini-jogurttidippi.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdettu-paprika-tahini-jogurttidippi:th": {
+    "source_hash": "6db5480a023d1072a4377be8601a02f94b0760d5c82b0e25b67b5b0eaeebd24a",
+    "translation_hash": "e871d77dc19d04eff0c611ad2481ccf948a6b63752135249356668c6f62acc0f",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/paahdettu-paprika-tahini-jogurttidippi.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pehmeat-pretzelit:en": {
+    "source_hash": "6d5e6b213e4583c05268095fe9f53f10e1e00874eea0e966c81bebd6e97bf733",
+    "translation_hash": "d8f847807745466bee6ce03cf4e0d559c2917c7eed0b9df67d7946f6bf6be3d3",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/pehmeat-pretzelit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pehmeat-pretzelit:sv": {
+    "source_hash": "6d5e6b213e4583c05268095fe9f53f10e1e00874eea0e966c81bebd6e97bf733",
+    "translation_hash": "2a204860a0f4d7a187f64010c21f3d4cb230e513ad1a47f1419eec662183db7a",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/pehmeat-pretzelit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pehmeat-pretzelit:th": {
+    "source_hash": "6d5e6b213e4583c05268095fe9f53f10e1e00874eea0e966c81bebd6e97bf733",
+    "translation_hash": "0a1e2588736a14bb3a471c1b1d07e61f747828f261075226af2c8aa3a42ee83d",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/pehmeat-pretzelit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteiset-joulutortut:en": {
+    "source_hash": "b0ebeb9bc29e9f511f0d5096905ab6bb66f4ed18d70787ebc8345245cb963e69",
+    "translation_hash": "b9aff5c507f25c474a86bfc78c5b7133f18b03cf9ef7b607f6291d0d6d61c518",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteiset-joulutortut.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteiset-joulutortut:sv": {
+    "source_hash": "b0ebeb9bc29e9f511f0d5096905ab6bb66f4ed18d70787ebc8345245cb963e69",
+    "translation_hash": "6494b3295157eefe0b87ffde2c9da7be9521d5c59568ad9d6c1932f870bf7284",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteiset-joulutortut.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "perinteiset-joulutortut:th": {
+    "source_hash": "b0ebeb9bc29e9f511f0d5096905ab6bb66f4ed18d70787ebc8345245cb963e69",
+    "translation_hash": "5be3ac78e9a9b8b7a41fb1be6001169305a80dc471aad92a5351b380d562fdc0",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/perinteiset-joulutortut.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pissaladiere-sipulipiirakka:en": {
+    "source_hash": "297ded3d4602d5b174587aefc420ac77f703121562a988c0a2d38797ce63ae10",
+    "translation_hash": "997744fbc3322adac3dabf61b7d5be453859f0142e0bcd001945bbcf018e9a19",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/pissaladiere-sipulipiirakka.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pissaladiere-sipulipiirakka:sv": {
+    "source_hash": "297ded3d4602d5b174587aefc420ac77f703121562a988c0a2d38797ce63ae10",
+    "translation_hash": "572b8aded0d15eeb498f1a7af44e45095855c33c33c5c97556317c4fda86a22a",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/pissaladiere-sipulipiirakka.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pissaladiere-sipulipiirakka:th": {
+    "source_hash": "297ded3d4602d5b174587aefc420ac77f703121562a988c0a2d38797ce63ae10",
+    "translation_hash": "812789572768a900202c8034e136dd747472c49e46e52a0db4492cd98aa9fb42",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/pissaladiere-sipulipiirakka.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "porkkana-parmesaanimuffinit:en": {
+    "source_hash": "e1576d3009d546e33f889fde7951be7e0e9e49ae584c545b3780a93597f9a3e7",
+    "translation_hash": "844789b61b7632c40c80d33bdfc239513d0bba76991e2dcaa7e3caa30f686719",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/porkkana-parmesaanimuffinit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "porkkana-parmesaanimuffinit:sv": {
+    "source_hash": "e1576d3009d546e33f889fde7951be7e0e9e49ae584c545b3780a93597f9a3e7",
+    "translation_hash": "18512697764fad6fbf832856a36cc5c78ee1e05aaf3857a934870339ac39d9c3",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/porkkana-parmesaanimuffinit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "porkkana-parmesaanimuffinit:th": {
+    "source_hash": "e1576d3009d546e33f889fde7951be7e0e9e49ae584c545b3780a93597f9a3e7",
+    "translation_hash": "5c90dce00b317954ca4de7472e4519be7a79f7c62d75f24cce9699cd2edbe568",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/porkkana-parmesaanimuffinit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "riisikakut-maapahkinavoilla-ja-marjoilla:en": {
+    "source_hash": "58958b542ece026c829df28e41334a62686b78778e6d0f2a7e87e93e611735c3",
+    "translation_hash": "d761a0832ccc7170fec4e1e7fb455a8cb885dd2c807d7d4b371ee89eedf02bdc",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/riisikakut-maapahkinavoilla-ja-marjoilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "riisikakut-maapahkinavoilla-ja-marjoilla:sv": {
+    "source_hash": "58958b542ece026c829df28e41334a62686b78778e6d0f2a7e87e93e611735c3",
+    "translation_hash": "1808cc7c53529f9a19c748e661115eeb977d1a0aa260ae11d706653bdf8b6f34",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/riisikakut-maapahkinavoilla-ja-marjoilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "riisikakut-maapahkinavoilla-ja-marjoilla:th": {
+    "source_hash": "58958b542ece026c829df28e41334a62686b78778e6d0f2a7e87e93e611735c3",
+    "translation_hash": "8b83266437035c5cac51b84dee5d5c92cec82ead400101b88b8e7d116f1b213c",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/riisikakut-maapahkinavoilla-ja-marjoilla.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ruislimppu-hapanjuurella:en": {
+    "source_hash": "37a3eae658703c334f92bd4d84167a72f06583882deef6cb1f3281032b347c00",
+    "translation_hash": "75e3da3b701a0a183bf3da389693f4e2f1cf610092207d1a331fa16ac46816ae",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/ruislimppu-hapanjuurella.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ruislimppu-hapanjuurella:sv": {
+    "source_hash": "37a3eae658703c334f92bd4d84167a72f06583882deef6cb1f3281032b347c00",
+    "translation_hash": "79911306d5e3f22981b24dffb59c5aa49d8fca2ee66252331d342defe171738e",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/ruislimppu-hapanjuurella.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ruislimppu-hapanjuurella:th": {
+    "source_hash": "37a3eae658703c334f92bd4d84167a72f06583882deef6cb1f3281032b347c00",
+    "translation_hash": "489902e75027aa548d08e6bb15576876d3711597d52fbcb44526b3a8dc26dc57",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/ruislimppu-hapanjuurella.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ruotsalaiset-kaurateeleivat:en": {
+    "source_hash": "a73fbf185a46c4f3fcff2826cf8867de44fe5968ce404c3eeddc9f9aa7a50ef6",
+    "translation_hash": "501294ba9737ed61030b9f858c0334c55bd173e4231123cf0eaa60a6b0f5acc8",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/ruotsalaiset-kaurateeleivat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ruotsalaiset-kaurateeleivat:sv": {
+    "source_hash": "a73fbf185a46c4f3fcff2826cf8867de44fe5968ce404c3eeddc9f9aa7a50ef6",
+    "translation_hash": "7f96dc53bfa8b3ff96eacca308ad2158f45eb0d92fc33aaf16fa4f9847afb4ea",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/ruotsalaiset-kaurateeleivat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ruotsalaiset-kaurateeleivat:th": {
+    "source_hash": "a73fbf185a46c4f3fcff2826cf8867de44fe5968ce404c3eeddc9f9aa7a50ef6",
+    "translation_hash": "4107516a0d50860f751fa5354477c92975c8fa91e2efcdb34d3091e8e67d7572",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/ruotsalaiset-kaurateeleivat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tattarigaletit:en": {
+    "source_hash": "6f7fcc7d9d53cd6c7f1bdcc438e05d6f6412654d2d9ee4e006fd66237c0982d2",
+    "translation_hash": "21f71d6ff840232bff892e7378d7d5acf3205619b0935be13d44b07efb1bcf92",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/tattarigaletit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tattarigaletit:sv": {
+    "source_hash": "6f7fcc7d9d53cd6c7f1bdcc438e05d6f6412654d2d9ee4e006fd66237c0982d2",
+    "translation_hash": "d21a9e0c5fbf1658c2c2837339c2f9f93356a7014e95c60fe9c9ab2a6e074236",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/tattarigaletit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tattarigaletit:th": {
+    "source_hash": "6f7fcc7d9d53cd6c7f1bdcc438e05d6f6412654d2d9ee4e006fd66237c0982d2",
+    "translation_hash": "9b78193461a77c4d0c8d6941aa9127b2d2c94e5330e86abba9d853aab485f360",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/tattarigaletit.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "voisilmapullat:en": {
+    "source_hash": "16ca0f8598b20573cf3ce13f5a242c250b5acf3aae9930def2c5b8dc177a1e07",
+    "translation_hash": "46b586bbf18a92ec4e7ef559f3ef86987ac1d322633322296021705c6db03828",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/voisilmapullat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "voisilmapullat:sv": {
+    "source_hash": "16ca0f8598b20573cf3ce13f5a242c250b5acf3aae9930def2c5b8dc177a1e07",
+    "translation_hash": "51720fa75641a7de97da050acfa5ab0f9e1bac5c358356327fd9c7dc73c52d60",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/voisilmapullat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "voisilmapullat:th": {
+    "source_hash": "16ca0f8598b20573cf3ce13f5a242c250b5acf3aae9930def2c5b8dc177a1e07",
+    "translation_hash": "86eacf6b927f944a2023b45b21d6761f947c39d3f08ef30616274eb4ef9ef8d7",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/voisilmapullat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vuohenjuustolla-taytetyt-minipaprikat:en": {
+    "source_hash": "e930edba1fab4ad5fa12a2fd2efe00d0947a98f331a60dde58bf3631f17c6e96",
+    "translation_hash": "2d62789bb6ec402d9c6e582d3131e0074f19dd19c928c73524a094b4cba2814b",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/vuohenjuustolla-taytetyt-minipaprikat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vuohenjuustolla-taytetyt-minipaprikat:sv": {
+    "source_hash": "e930edba1fab4ad5fa12a2fd2efe00d0947a98f331a60dde58bf3631f17c6e96",
+    "translation_hash": "d0697938eb6a9d7245f5cb2bcbc9026f8ad77976a1aea50dbe62e8debb09710f",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/vuohenjuustolla-taytetyt-minipaprikat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vuohenjuustolla-taytetyt-minipaprikat:th": {
+    "source_hash": "e930edba1fab4ad5fa12a2fd2efe00d0947a98f331a60dde58bf3631f17c6e96",
+    "translation_hash": "9a272ef543363d809d01532fee18992b294f9e86e0313fd55cc99693b171b8fb",
+    "reviewed_at": "2026-11-25",
+    "reference": "docs/reviews/new-recipes/vuohenjuustolla-taytetyt-minipaprikat.json",
+    "outcome": "pass",
+    "findings": []
+  },
+  "halloumi-kasvisvartaat:en": {
+    "source_hash": "6aae939c52614d71374a0d5a1bc5243485c5e61ebac600eececfe3c91e9b7377",
+    "translation_hash": "19f05655b42be76285c7b29a8ae22e956b2d04f4f50d64ee14ccfe698a9eb17a",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "halloumi-kasvisvartaat:sv": {
+    "source_hash": "6aae939c52614d71374a0d5a1bc5243485c5e61ebac600eececfe3c91e9b7377",
+    "translation_hash": "cb8fe29f171e26b5158b8dbe4c7bc8ec224f3d9558238cbc6b8307b13d3ca70b",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "halloumi-kasvisvartaat:th": {
+    "source_hash": "6aae939c52614d71374a0d5a1bc5243485c5e61ebac600eececfe3c91e9b7377",
+    "translation_hash": "85e21ef01c8d30850fa1d88e4244bd331e4c96c114a2e8994b947d7feb03fed8",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "misomunakoiso:en": {
+    "source_hash": "8ed8ecf6ca0d9e2b17b7cbe8702221778ab522c82406df22fbda9ebe8b455640",
+    "translation_hash": "9dd8f9482e9259d790598bd1549dc672553e2ecf9669431c0a4360c2d01ab917",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "misomunakoiso:sv": {
+    "source_hash": "8ed8ecf6ca0d9e2b17b7cbe8702221778ab522c82406df22fbda9ebe8b455640",
+    "translation_hash": "b862ef91bde6b8e2229a627731a527684c36af054bb26b89b2205564df7cdff1",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "misomunakoiso:th": {
+    "source_hash": "8ed8ecf6ca0d9e2b17b7cbe8702221778ab522c82406df22fbda9ebe8b455640",
+    "translation_hash": "faa1d49936def5d17cb77e08f69e90f4c163f73a8c97490fa21ae1c7d00a29e0",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdettu-kaali-tahinikastikkeella:en": {
+    "source_hash": "2e81d6417d0e0d73f697a7461b1b0dbc43bd344c23c5521b528bd56c6a21269f",
+    "translation_hash": "9c3eed088a41b42ebd29f0f93756a46913fce2c5ce946af3d568e204647c51b7",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdettu-kaali-tahinikastikkeella:sv": {
+    "source_hash": "2e81d6417d0e0d73f697a7461b1b0dbc43bd344c23c5521b528bd56c6a21269f",
+    "translation_hash": "4786f11787cc56678c59dc37345a99281c8a151e8f032f5e24617aae565b66d4",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paahdettu-kaali-tahinikastikkeella:th": {
+    "source_hash": "2e81d6417d0e0d73f697a7461b1b0dbc43bd344c23c5521b528bd56c6a21269f",
+    "translation_hash": "ac09b12327f57a9507c633c329eef105b88e8d3449da65c46d01bbd6b650e607",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7179673368",
+    "outcome": "pass",
+    "findings": []
+  },
+  "hernepestopasta:en": {
+    "source_hash": "27939d9d15e3469803b07fbe0632a1df986da5abf0119432e02c68c06b752336",
+    "translation_hash": "50b708f92b76ed6e362889aaef0075d4847ce024a5c3fad7447b0ec000c3cdd6",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "hernepestopasta:sv": {
+    "source_hash": "27939d9d15e3469803b07fbe0632a1df986da5abf0119432e02c68c06b752336",
+    "translation_hash": "cc89be0c71e5c4c0bb8aec81fda440fb61951f718dd3b78daf89c354edeb1c33",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "hernepestopasta:th": {
+    "source_hash": "27939d9d15e3469803b07fbe0632a1df986da5abf0119432e02c68c06b752336",
+    "translation_hash": "00d0124dc29d0d17b1eb8c389ddc4ccb0f09eb97f1d5a14161d2b85028f789d4",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kasvispaimenpiiras-linsseilla:en": {
+    "source_hash": "d776f0faa151ed844243e00738155d562c34d2693eff68c2b4305bbd787ff6cb",
+    "translation_hash": "677f8ad6febe5bcc96a1d341d2770c22ea63bef31b136176e394835298416ed9",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kasvispaimenpiiras-linsseilla:sv": {
+    "source_hash": "d776f0faa151ed844243e00738155d562c34d2693eff68c2b4305bbd787ff6cb",
+    "translation_hash": "05544d1f32cfc205eb39ed1676b0efd1cbc94a2cbfb2c43b657da70ca7170f51",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kasvispaimenpiiras-linsseilla:th": {
+    "source_hash": "d776f0faa151ed844243e00738155d562c34d2693eff68c2b4305bbd787ff6cb",
+    "translation_hash": "6835571a814d2bbd7f86a03ffdf7019cf2a1975e6ee7ef2b5c7e79818359669d",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kikherne-bataatticurry:en": {
+    "source_hash": "1c0da9925d279350c7565a7e1ab97155bf0572b6ff8d4b888c9e455232364fae",
+    "translation_hash": "91f95d58f14b14490d62528764efbf015bb63c60af57c49ca5bdcb70f69aec72",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kikherne-bataatticurry:sv": {
+    "source_hash": "1c0da9925d279350c7565a7e1ab97155bf0572b6ff8d4b888c9e455232364fae",
+    "translation_hash": "161084a78da2fc924ee46063a160eb3ab2c06e4cd6e744d3d7e4f1cba08f6107",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kikherne-bataatticurry:th": {
+    "source_hash": "1c0da9925d279350c7565a7e1ab97155bf0572b6ff8d4b888c9e455232364fae",
+    "translation_hash": "4f1c10123ef4d42f81bcc222a3d8ed3d098188e1d1990433fb555882c8b1b349",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kukkakaali-mantelipihvit:en": {
+    "source_hash": "f53eb4f8d4ac77b60be99521d47a69e67a2a202187ba81f9e53fcf586e2dddac",
+    "translation_hash": "2b5e8b340a311508df06b443025226967c553f13db71cccfde80c9f96b839069",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kukkakaali-mantelipihvit:sv": {
+    "source_hash": "f53eb4f8d4ac77b60be99521d47a69e67a2a202187ba81f9e53fcf586e2dddac",
+    "translation_hash": "7810b91be1f26fe64cc79c7b90427f206d6c3af1b3ac681fc5aa9b43af81df94",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kukkakaali-mantelipihvit:th": {
+    "source_hash": "f53eb4f8d4ac77b60be99521d47a69e67a2a202187ba81f9e53fcf586e2dddac",
+    "translation_hash": "ae4516d96c074675fec7016eaba9fe23f9641a9011768827ffd80350c03044e5",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kukkakaali-mustapaputacot:en": {
+    "source_hash": "597729137aac11683807cc4ff8049d1fb7790e15d2392819a7d19a110bf948e9",
+    "translation_hash": "cbc8aed630666440d86ec9f7af80c65b39160036b7466eb99b0c5bd3cbc4ddb0",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kukkakaali-mustapaputacot:sv": {
+    "source_hash": "597729137aac11683807cc4ff8049d1fb7790e15d2392819a7d19a110bf948e9",
+    "translation_hash": "452b50f9261e92538b6428c4e285ae51f0648089e057430485a1841c4ba89ee6",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kukkakaali-mustapaputacot:th": {
+    "source_hash": "597729137aac11683807cc4ff8049d1fb7790e15d2392819a7d19a110bf948e9",
+    "translation_hash": "d117034ef3eef3de5d7ce5bef66de9e1d547b67b669af8f982edaaeda817b8c1",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kurpitsa-salviarisotto:en": {
+    "source_hash": "2e1c1a6b57573caeb21235ea60dbd7d3151620f75183378918ab03674a3edaef",
+    "translation_hash": "82370d3bdac9ad0e375a4835d8fc23f138260fd3f32031b551ca3cb592b61a90",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kurpitsa-salviarisotto:sv": {
+    "source_hash": "2e1c1a6b57573caeb21235ea60dbd7d3151620f75183378918ab03674a3edaef",
+    "translation_hash": "20ef166292b38dba4574230db4aa262b6073c53d2e53d93ed224df745d6db658",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kurpitsa-salviarisotto:th": {
+    "source_hash": "2e1c1a6b57573caeb21235ea60dbd7d3151620f75183378918ab03674a3edaef",
+    "translation_hash": "24f8198e0bca90d8206336f3413660f3250621a0de92960a9bbd573843aaf0e9",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kvinoa-taytteiset-paprikat:en": {
+    "source_hash": "bd88f068caa3e793d1da4064946cc189d8e11c13e66e79c652a42201fbc4e49f",
+    "translation_hash": "cd2f403a61d90f223d6ab8d7d0c10c00630e900bd594244f227fd5ca4cdfe341",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kvinoa-taytteiset-paprikat:sv": {
+    "source_hash": "bd88f068caa3e793d1da4064946cc189d8e11c13e66e79c652a42201fbc4e49f",
+    "translation_hash": "27538e839af055d541dafe0b6bc16e4fbcddd7a52bdb35e24badaa6402f84bc5",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kvinoa-taytteiset-paprikat:th": {
+    "source_hash": "bd88f068caa3e793d1da4064946cc189d8e11c13e66e79c652a42201fbc4e49f",
+    "translation_hash": "16472681b0d23d3595e6cad06dcba65c023d3a08582a713754a5b423bb1c248b",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "linssi-sienipyorikat:en": {
+    "source_hash": "65ca4d2faa0cfbd7466def52f6c6ecdf8e92c9493654a986fc50ffd9f3eb8f48",
+    "translation_hash": "cb3a83a5c9abc6b038c35b24d8fb1ff364e40d840092c4406a5521f4e4029be5",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "linssi-sienipyorikat:sv": {
+    "source_hash": "65ca4d2faa0cfbd7466def52f6c6ecdf8e92c9493654a986fc50ffd9f3eb8f48",
+    "translation_hash": "58dcd4e41a6e7a73f232cf2a82445c52420b36f67adb2cf35258662b25b663e7",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "linssi-sienipyorikat:th": {
+    "source_hash": "65ca4d2faa0cfbd7466def52f6c6ecdf8e92c9493654a986fc50ffd9f3eb8f48",
+    "translation_hash": "0978a704dadd4b4b301880c93f4edb1fb6aef1d647dd1270f2bcf48f3d77841c",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "linssibolognese:en": {
+    "source_hash": "fd262a1d7e19ce72225315caf2671f2215f17eb497d51713b396b7beba7f2663",
+    "translation_hash": "dc44830be921286defad75d6aef40041b889958ebd9f8a61f79771dd1707bf88",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "linssibolognese:sv": {
+    "source_hash": "fd262a1d7e19ce72225315caf2671f2215f17eb497d51713b396b7beba7f2663",
+    "translation_hash": "c9003bc458b39ac05cb71564c3ca7348fe25528af951db5775a30f44ca843a91",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "linssibolognese:th": {
+    "source_hash": "fd262a1d7e19ce72225315caf2671f2215f17eb497d51713b396b7beba7f2663",
+    "translation_hash": "84211ea73a806dd371df9223172cf7f3472de81d30f63fa1e8d470fe3fe53703",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "okramuhennos-tomaateilla:en": {
+    "source_hash": "da51fcfeb862d255d16186e31783e4accfe79c821590d448c1da4a8a683a76c2",
+    "translation_hash": "80c6ad7b901ba7c3530e5a0a7d01d08b4e44704e8865e49e4b1ed56b1a3b87e9",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "okramuhennos-tomaateilla:sv": {
+    "source_hash": "da51fcfeb862d255d16186e31783e4accfe79c821590d448c1da4a8a683a76c2",
+    "translation_hash": "45a77baa49c27bd6509a2d5d9eb6771a6d448487e27b0d6db85444a80e098243",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "okramuhennos-tomaateilla:th": {
+    "source_hash": "da51fcfeb862d255d16186e31783e4accfe79c821590d448c1da4a8a683a76c2",
+    "translation_hash": "423305cea08308bbec5d6377cf55b741f6d5bc2b1219e62ad6f08f2eff7ebae4",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "palak-chana-pinaattikikherneet:en": {
+    "source_hash": "5d73c94406ad1fa020a93a8e1f0f1dfa7afe4d17bea8e231e9a8bd411fb20280",
+    "translation_hash": "6e6362761a7e2d43aec0d3596b00696a36e98abcec11d44c75db455f3822f02a",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7179673368",
+    "outcome": "pass",
+    "findings": []
+  },
+  "palak-chana-pinaattikikherneet:sv": {
+    "source_hash": "5d73c94406ad1fa020a93a8e1f0f1dfa7afe4d17bea8e231e9a8bd411fb20280",
+    "translation_hash": "32fb1ed7a182ff3d8f8069a3cf5d2a007a79d9f27c3b4dd7065654fe8610657d",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7179673368",
+    "outcome": "pass",
+    "findings": []
+  },
+  "palak-chana-pinaattikikherneet:th": {
+    "source_hash": "5d73c94406ad1fa020a93a8e1f0f1dfa7afe4d17bea8e231e9a8bd411fb20280",
+    "translation_hash": "ce7ed6c6157339183728cedc73885026545a04b06ffe5c292751c73041d2287a",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7179673368",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pinaatti-ricottacannelloni:en": {
+    "source_hash": "ff6c001f77eaf1b81b248f89a88037b0faf0ad5b1b68d00763d35dbd9c5a0e6b",
+    "translation_hash": "78861feefd2fa928fa4564f0b3f07c1e68ccc320a630c1ccd42b0c6b1d2e4fe2",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pinaatti-ricottacannelloni:sv": {
+    "source_hash": "ff6c001f77eaf1b81b248f89a88037b0faf0ad5b1b68d00763d35dbd9c5a0e6b",
+    "translation_hash": "b1605084cab7175232cc2746b152fe70b712924ca8634602631e19c6a67df29e",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pinaatti-ricottacannelloni:th": {
+    "source_hash": "ff6c001f77eaf1b81b248f89a88037b0faf0ad5b1b68d00763d35dbd9c5a0e6b",
+    "translation_hash": "3d2f2d33163b31534d9487437a59ff76afbdbbce7bca5978e125344e8cc7e924",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "polenta-paahdetuilla-sienilla:en": {
+    "source_hash": "065b43d016303b9b83c4e489b49bddd796e7cc82b460bb74ca624412c2814807",
+    "translation_hash": "3742cafdeb33cc8abd5dc46588d59708a46e5f41a521cacbfb366adbcc4e49cc",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "polenta-paahdetuilla-sienilla:sv": {
+    "source_hash": "065b43d016303b9b83c4e489b49bddd796e7cc82b460bb74ca624412c2814807",
+    "translation_hash": "495c71dbb053af11be1dc3d4f4492dba27c3ba193ee29ee152829e881be75162",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "polenta-paahdetuilla-sienilla:th": {
+    "source_hash": "065b43d016303b9b83c4e489b49bddd796e7cc82b460bb74ca624412c2814807",
+    "translation_hash": "c97fa4f31215f760354edfd001132e0a3c6d343a87320eea95302d77248162d3",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sieni-ohrapata:en": {
+    "source_hash": "b53f925651b024cf9e8f0697d0d43447a7cae1a82bc3c7ff6e9bf13d36707f15",
+    "translation_hash": "1810df474bc7a1e6cfb5689d8ddedcb5a202d22925bbf5c8873afc21e3f0c9a8",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sieni-ohrapata:sv": {
+    "source_hash": "b53f925651b024cf9e8f0697d0d43447a7cae1a82bc3c7ff6e9bf13d36707f15",
+    "translation_hash": "9b9bcfbbc9c2528d6e280feb121c4e887a1715aaccb69adaed6320857925bcca",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sieni-ohrapata:th": {
+    "source_hash": "b53f925651b024cf9e8f0697d0d43447a7cae1a82bc3c7ff6e9bf13d36707f15",
+    "translation_hash": "c861021c2c746a7bf2e9c4f4ba92b1119171b256edccadd3ab21cbce4e7ff80b",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sienistroganoff:en": {
+    "source_hash": "142d92213be79cd9acbd088bcf34d8a5b7ebb41de5eaacb9132e8c144aa8c614",
+    "translation_hash": "04e085bedc868a5be9db49f44e94b7bcf144c6056603c3d39dab0329825bc9ff",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sienistroganoff:sv": {
+    "source_hash": "142d92213be79cd9acbd088bcf34d8a5b7ebb41de5eaacb9132e8c144aa8c614",
+    "translation_hash": "7ed8b106d57e4a880218f2ff08e5e4ac1ebab41c97dc6a11acf256064d64dd26",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sienistroganoff:th": {
+    "source_hash": "142d92213be79cd9acbd088bcf34d8a5b7ebb41de5eaacb9132e8c144aa8c614",
+    "translation_hash": "04f25f1df155a995a1445a3863b606d229c994f087155653442b28cd0acbbeb1",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sitruuna-valkopapupasta:en": {
+    "source_hash": "ff98992f9213182b93388b01cbcad26caef3883009e25b8b91c38a8567c2e773",
+    "translation_hash": "1e0b4c18d74daecd5a8f2ff2df7ccd6a927eeb5145a735ae83dabe434222a236",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sitruuna-valkopapupasta:sv": {
+    "source_hash": "ff98992f9213182b93388b01cbcad26caef3883009e25b8b91c38a8567c2e773",
+    "translation_hash": "845617785bb0e002c6a43ce277df403dc8b4004487d812addf42ff3ca49d7f18",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sitruuna-valkopapupasta:th": {
+    "source_hash": "ff98992f9213182b93388b01cbcad26caef3883009e25b8b91c38a8567c2e773",
+    "translation_hash": "7d657ad493d109c87302b240c03671dc57b8534a7d90da0bbb6f529e218285df",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tofu-appelsiini-inkivaarikastikkeessa:en": {
+    "source_hash": "990eed32884878686451907daaa9a6c6da9bdd519617dd190e13e849d8977f96",
+    "translation_hash": "71efef8418460a83999eb6240e4ab8984c28bcc1a99cfe406c30fb52e6720aee",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tofu-appelsiini-inkivaarikastikkeessa:sv": {
+    "source_hash": "990eed32884878686451907daaa9a6c6da9bdd519617dd190e13e849d8977f96",
+    "translation_hash": "7315a1c6bdeed23d6c11e100733361f7024de03443ec764feb8d07dc16f0d6e4",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tofu-appelsiini-inkivaarikastikkeessa:th": {
+    "source_hash": "990eed32884878686451907daaa9a6c6da9bdd519617dd190e13e849d8977f96",
+    "translation_hash": "97c6263a5d106a757f9438d6e1090dc857ded31c31d2729aa5524fdaf024e8d4",
+    "reviewed_at": "2026-11-26",
+    "reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ayam-percik:en": {
+    "source_hash": "330d2f61c74ca8e1e098ff86cf658ab07bcae087bdf003ef9f91da782835c9b5",
+    "translation_hash": "c9df317fbdc35b2fe346e6b97a92e08d2e4121af122b7a81612e63724502f072",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ayam-percik:sv": {
+    "source_hash": "330d2f61c74ca8e1e098ff86cf658ab07bcae087bdf003ef9f91da782835c9b5",
+    "translation_hash": "5cfb2e587e4b3c2e9b8d4f5a4b1e4ff1eb561baeac41fc8d36fbc71678ef9e3f",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ayam-percik:th": {
+    "source_hash": "330d2f61c74ca8e1e098ff86cf658ab07bcae087bdf003ef9f91da782835c9b5",
+    "translation_hash": "fa0ffe06735560eda0642d66c7babb79cfbb2d3e8117ec78ba09e911bf176259",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "filippiinilainen-kana-adobo:en": {
+    "source_hash": "f54c51704e567ea823e033b6003a6a13e0df08d9812abc8bfe6d7ae3995abc24",
+    "translation_hash": "d853f2eeffe2932ad1fb22f425144ef9c2cc3686cdb7eee15f10a9a1bbb61375",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "filippiinilainen-kana-adobo:sv": {
+    "source_hash": "f54c51704e567ea823e033b6003a6a13e0df08d9812abc8bfe6d7ae3995abc24",
+    "translation_hash": "8a80bc236f651b306ba81655aa5c303c3d66793beb95d1d6fa293484e42c76a3",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "filippiinilainen-kana-adobo:th": {
+    "source_hash": "f54c51704e567ea823e033b6003a6a13e0df08d9812abc8bfe6d7ae3995abc24",
+    "translation_hash": "57458509040e708f08b80638f16783e4147c21b98584a32e145a8983ae5b0ab9",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gado-gado:en": {
+    "source_hash": "b07bc35f5e51a901cfd9cd73f524df5a27c36882d9fafa8d8f0c999e5c68332f",
+    "translation_hash": "24520a769644df40bdd8e6469a81baa05d29d57f54e3dfd59836dfa1afe72315",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gado-gado:sv": {
+    "source_hash": "b07bc35f5e51a901cfd9cd73f524df5a27c36882d9fafa8d8f0c999e5c68332f",
+    "translation_hash": "68168173243b3a717490dfd779cc176447586b89794ad838659efdec6efd3c60",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gado-gado:th": {
+    "source_hash": "b07bc35f5e51a901cfd9cd73f524df5a27c36882d9fafa8d8f0c999e5c68332f",
+    "translation_hash": "920da6017045240f74a829357dc7c5852db7f7390139bc01cb7738b627221ebf",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gaeng-hang-lay:en": {
+    "source_hash": "c0b71ef66d783cde744cf6c8c94740920ed7a4d9f0d0bb933d51722c7ff867f2",
+    "translation_hash": "88ac47a2d7c37cecf235895b7b0e8addba6019e728b7100f50bdc23537191df5",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gaeng-hang-lay:sv": {
+    "source_hash": "c0b71ef66d783cde744cf6c8c94740920ed7a4d9f0d0bb933d51722c7ff867f2",
+    "translation_hash": "1de0181ae0958710b8d453c9e2e8b93edda756714da56aa87b683feb3ba153cc",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gaeng-hang-lay:th": {
+    "source_hash": "c0b71ef66d783cde744cf6c8c94740920ed7a4d9f0d0bb933d51722c7ff867f2",
+    "translation_hash": "66c74753f6eeb3a03b9310145a6d934875e24e068004933437070371fd908a00",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gaeng-jued-tofu-porsas:en": {
+    "source_hash": "8cbe6ae506f42d2f9c115d26425c3f1d89c20e7707c53440117cc37c7585a234",
+    "translation_hash": "43a84269500cdcf762a2c9a26f6809f444ff902812c94db9ed457f1f79055038",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gaeng-jued-tofu-porsas:sv": {
+    "source_hash": "8cbe6ae506f42d2f9c115d26425c3f1d89c20e7707c53440117cc37c7585a234",
+    "translation_hash": "0f3f1e54a952933b913c8520921a1761f53ceecc1bf862cac6d28ff215008c07",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gaeng-jued-tofu-porsas:th": {
+    "source_hash": "8cbe6ae506f42d2f9c115d26425c3f1d89c20e7707c53440117cc37c7585a234",
+    "translation_hash": "2b5e63c66e8374da0de9a0d63278ff71ea00ffa90c4dc217c92dcb137d1c2d4f",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gaeng-som-bambunversoilla:en": {
+    "source_hash": "d288a55c595aa484ffd8bc3d3adf1a110f29b6f21901453d09d13c8cf42169c5",
+    "translation_hash": "de87719c9e0878f7accc79458e4922638743b7ed615a3f5362d67e6ae7ac71f0",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gaeng-som-bambunversoilla:sv": {
+    "source_hash": "d288a55c595aa484ffd8bc3d3adf1a110f29b6f21901453d09d13c8cf42169c5",
+    "translation_hash": "3af661a2063984195f5224259553ea82d872c50fc4ef5d4f44e807ee74c53b5a",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gaeng-som-bambunversoilla:th": {
+    "source_hash": "d288a55c595aa484ffd8bc3d3adf1a110f29b6f21901453d09d13c8cf42169c5",
+    "translation_hash": "39edbf4cac5992385472967274c7f5c4459f8ab9f9d5497773bcf6abe5550e3c",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gai-pad-med-mamuang:en": {
+    "source_hash": "4be8779ffcb3853e73e458c53198010af5b36aa08c5f324fd74c452b6765fb19",
+    "translation_hash": "45f49f74d8b4872b2e69fa9cb0b226a23c35fb4be0778d708197983e3ffc4755",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gai-pad-med-mamuang:sv": {
+    "source_hash": "4be8779ffcb3853e73e458c53198010af5b36aa08c5f324fd74c452b6765fb19",
+    "translation_hash": "4873a1284a1085aff4188c0bee384b9ffde3af516f80ff16c81ad494a8580a9c",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gai-pad-med-mamuang:th": {
+    "source_hash": "4be8779ffcb3853e73e458c53198010af5b36aa08c5f324fd74c452b6765fb19",
+    "translation_hash": "aadab63e3116c5de686a325bbe542b830fc190e2a559ef313537efb9a1d5dceb",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kai-palo:en": {
+    "source_hash": "b8b40ce727c12a9690cb2422199472e6a4f7e9b5bbb1b44dc2c536a5452aa25e",
+    "translation_hash": "e7b5e50ee6a9d9e9ecca59839930a3baab26b00a20b9f3f188f93219cf13a200",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kai-palo:sv": {
+    "source_hash": "b8b40ce727c12a9690cb2422199472e6a4f7e9b5bbb1b44dc2c536a5452aa25e",
+    "translation_hash": "7db8c6725c9ee25c56be35087eb4b2fd6ecce52089811f0a3343eb0cf12e59ad",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kai-palo:th": {
+    "source_hash": "b8b40ce727c12a9690cb2422199472e6a4f7e9b5bbb1b44dc2c536a5452aa25e",
+    "translation_hash": "49febf83fc4b71bab92941ec8d7c53dd7a423ef50d22094ca2fbbbbca6b467d8",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "khanom-jeen-nam-ya:en": {
+    "source_hash": "6ecd55a33c8babd4032c771c33d7f5002e4662a6d4a8837b6dc23b6952382f44",
+    "translation_hash": "3a0d895cef7abc49ced7fb5973ef562dbb76032ee4e8ee6307bd0a7c6d73fe8f",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "khanom-jeen-nam-ya:sv": {
+    "source_hash": "6ecd55a33c8babd4032c771c33d7f5002e4662a6d4a8837b6dc23b6952382f44",
+    "translation_hash": "fad5b5b0f4ae070261783e1e617fabd3f14a06884f4ebc1817cb92525c7a63ac",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "khanom-jeen-nam-ya:th": {
+    "source_hash": "6ecd55a33c8babd4032c771c33d7f5002e4662a6d4a8837b6dc23b6952382f44",
+    "translation_hash": "1abe59addcb3cd2bdd5f960a88d02e7fcc2974f2a545ed02e2234f12ac10c98e",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "khao-pad-pu:en": {
+    "source_hash": "ae597def09591bc849ff62ec90c369028a3b2caf922a525f72b181f20ea31093",
+    "translation_hash": "8a7437cb1803cd4027d38862bed02e22689646a42ea8b973e6b0cf2e35e4ec6d",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "khao-pad-pu:sv": {
+    "source_hash": "ae597def09591bc849ff62ec90c369028a3b2caf922a525f72b181f20ea31093",
+    "translation_hash": "cc258acb4e19742f20a12318b740801adb49c88c0c550196a2411ea08f77c3fe",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "khao-pad-pu:th": {
+    "source_hash": "ae597def09591bc849ff62ec90c369028a3b2caf922a525f72b181f20ea31093",
+    "translation_hash": "b598250d23070c35db59e02004814775bfc9840f17013dc29f5288786df462a1",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "miang-kham-salaattisuupalat:en": {
+    "source_hash": "b15fefb4313437d9959f54b912025fbc09e605389b07986079f435c777a82b08",
+    "translation_hash": "716dafe4fe32a75e31545abd56a5494739a30674f4053f5280bb59a94c4ca4bc",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "miang-kham-salaattisuupalat:sv": {
+    "source_hash": "b15fefb4313437d9959f54b912025fbc09e605389b07986079f435c777a82b08",
+    "translation_hash": "1b30f58eb0e7dfcba21c2a954b5bb8aea7f5afb487dfe19fc0a14f4fdf958413",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "miang-kham-salaattisuupalat:th": {
+    "source_hash": "b15fefb4313437d9959f54b912025fbc09e605389b07986079f435c777a82b08",
+    "translation_hash": "9a98289499fbddb5cc5a20d015edb31d4c7670c87f2ff2d364b03d1be6fbbe85",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "moo-hong:en": {
+    "source_hash": "fb7c53dd633f3160ffab9abe989c06c4eb0f20fea7cb1a594c43a459a774f98b",
+    "translation_hash": "c35fd2d2312b41e0577a133363e02b4f77511a76e190b9bf0ef2ca18c03fc602",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "moo-hong:sv": {
+    "source_hash": "fb7c53dd633f3160ffab9abe989c06c4eb0f20fea7cb1a594c43a459a774f98b",
+    "translation_hash": "60d67e6383323c9194dc5483be9374970e9a53f88bd64369b689897ba7523b27",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "moo-hong:th": {
+    "source_hash": "fb7c53dd633f3160ffab9abe989c06c4eb0f20fea7cb1a594c43a459a774f98b",
+    "translation_hash": "3a4532221a13d068511fc221abd3c7f143cb03308c130206b6e2f9f71b27ff8d",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "nam-tok-moo:en": {
+    "source_hash": "5ad6f61465186eed6b50f3d7d79b31fcb73975756931602dd9d8cff5015fccaf",
+    "translation_hash": "a64b905791a6eeacc0ec7c0f1b78cf4af3edd7a984956fbcb3577f5e7db80f6e",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "nam-tok-moo:sv": {
+    "source_hash": "5ad6f61465186eed6b50f3d7d79b31fcb73975756931602dd9d8cff5015fccaf",
+    "translation_hash": "35484c90b04aec7799168466fa317c8e73cbf0786c74777161b2b8998a1758dc",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "nam-tok-moo:th": {
+    "source_hash": "5ad6f61465186eed6b50f3d7d79b31fcb73975756931602dd9d8cff5015fccaf",
+    "translation_hash": "7632f599784c51f231fd15a0244647461a7dcfdf971d75e537c136d7db6b8a72",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pad-pak-ruam-mit:en": {
+    "source_hash": "782fc5bc69c9d87172ffd102c280177d0963c7abd63fc656b2d79c0d344524ea",
+    "translation_hash": "5b07ba2c51171d8c2d5438d71334a2ebcf7df351ca57f62b09157ff3d872abc1",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pad-pak-ruam-mit:sv": {
+    "source_hash": "782fc5bc69c9d87172ffd102c280177d0963c7abd63fc656b2d79c0d344524ea",
+    "translation_hash": "46ec7114dfb430a2de54ec2b7b7704d8dc60bde038c120fc2c1d31313546eb48",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pad-pak-ruam-mit:th": {
+    "source_hash": "782fc5bc69c9d87172ffd102c280177d0963c7abd63fc656b2d79c0d344524ea",
+    "translation_hash": "cd90fb16d123e93477a5e2efd498dbff790b521bbf34c43b6daa8c3b4715d8cf",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pla-neung-manao:en": {
+    "source_hash": "ee52fb7ca7d73e6201d12d9aed1f9745d76c4cefa6985a1267a763b79bd6d25f",
+    "translation_hash": "05412a5111e3294daba2f42037e28cfcd7f683253638cbf7463fdf4642b3220b",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pla-neung-manao:sv": {
+    "source_hash": "ee52fb7ca7d73e6201d12d9aed1f9745d76c4cefa6985a1267a763b79bd6d25f",
+    "translation_hash": "161eca06f50661747c268c4d1fc729e7ea1e251dcf22774c27083da1f2b0758a",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pla-neung-manao:th": {
+    "source_hash": "ee52fb7ca7d73e6201d12d9aed1f9745d76c4cefa6985a1267a763b79bd6d25f",
+    "translation_hash": "4c6e754992b7bea7907d02ba6d1022b43a51dd09d9e6c2c415003bea7ecf567b",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pla-rad-prik:en": {
+    "source_hash": "71ce70ec154b9f13a35d4d615b20037d6c7519d5ee55b1bf5069bfed2fdd8c38",
+    "translation_hash": "ddb9f33f5f910c40bb9684f662504d9c4622a92e192e5bf416c9f6c8b094eb7d",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pla-rad-prik:sv": {
+    "source_hash": "71ce70ec154b9f13a35d4d615b20037d6c7519d5ee55b1bf5069bfed2fdd8c38",
+    "translation_hash": "b25e2e8d7f8082cfbd87c4489f69d6a31df9c397a1a333228452d03c0da6c999",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pla-rad-prik:th": {
+    "source_hash": "71ce70ec154b9f13a35d4d615b20037d6c7519d5ee55b1bf5069bfed2fdd8c38",
+    "translation_hash": "91be639e6fed2088fa0c36a896d2d31c29c9492c46c7078eea7b5d6b0b7e8c51",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "soto-ayam-kookosmaidolla:en": {
+    "source_hash": "b5a51c02988a524d44b2b81c02bedc1e40de8c09b3407bf2784d06eed92cfb40",
+    "translation_hash": "dd2fd3048e4caa8166704e1df424b4c6d57430e8a143f0147a3bb2fb58a013c9",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "soto-ayam-kookosmaidolla:sv": {
+    "source_hash": "b5a51c02988a524d44b2b81c02bedc1e40de8c09b3407bf2784d06eed92cfb40",
+    "translation_hash": "bbc5b079e7eb1b59c0e9d15e0c782d0c900dd8ff055dd6efc37902487ba4fc4c",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "soto-ayam-kookosmaidolla:th": {
+    "source_hash": "b5a51c02988a524d44b2b81c02bedc1e40de8c09b3407bf2784d06eed92cfb40",
+    "translation_hash": "4fe5f45fd1f3c9603a36487c5ce5c0cf35d577e19df9ea62173501c1ec6f0780",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tod-mun-pla:en": {
+    "source_hash": "02e678cec8bfdc08a83ed6b588de997dc72e94cbd24653fd144aa312a357d702",
+    "translation_hash": "4bc45a1529b96144441a1c8d875cf32c57cc25e4f065c4805056b15fa6db6d77",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tod-mun-pla:sv": {
+    "source_hash": "02e678cec8bfdc08a83ed6b588de997dc72e94cbd24653fd144aa312a357d702",
+    "translation_hash": "5b0b2fdc908102dca2636d1b1a44db292257552b54b3325d41232ce2f2376697",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tod-mun-pla:th": {
+    "source_hash": "02e678cec8bfdc08a83ed6b588de997dc72e94cbd24653fd144aa312a357d702",
+    "translation_hash": "a006b2aa729e81a7eab060e69389b3aed7c358a2c5ff1aa8dd064facbaf2f612",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tom-saep-porsaan-kylkiluilla:en": {
+    "source_hash": "80541f4b0c17f80118413359c709f9dab2c904911b1077f334205f7e5bb7c75c",
+    "translation_hash": "940af3e070b46dbb9e47784abf4ede76cea3644f456637318b793544167e89b2",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tom-saep-porsaan-kylkiluilla:sv": {
+    "source_hash": "80541f4b0c17f80118413359c709f9dab2c904911b1077f334205f7e5bb7c75c",
+    "translation_hash": "2661c3e046ce0eafb37badd251e0df8b7d2a1cdf721dfe45f148583666c588da",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tom-saep-porsaan-kylkiluilla:th": {
+    "source_hash": "80541f4b0c17f80118413359c709f9dab2c904911b1077f334205f7e5bb7c75c",
+    "translation_hash": "603f3c4d6e22e4da97d74412365f32471d9a00503569a89f147253c509680f84",
+    "reviewed_at": "2026-11-26",
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
     "outcome": "pass",
     "findings": []
   }

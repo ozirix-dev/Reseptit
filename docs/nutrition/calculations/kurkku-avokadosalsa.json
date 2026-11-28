@@ -1,0 +1,228 @@
+{
+  "recipeId": "kurkku-avokadosalsa",
+  "sourceHash": "52aeeb5a5e8acadc805609eb36f14d2a590708a1da96a4f29574d9400edc14b2",
+  "calculatedAt": "2026-11-25",
+  "servings": 4,
+  "scope": "Neljä annosta pelkkää salsaa. Syötävät osat punnitaan ilman kuoria ja kiviä. Koko limetti-öljykastike sisältyy annoksiin. AFCD:n kurkku, minttu ja limettimehu ovat australialaisia vertailutuotteita. Limettimehulle käytetään laskennallista 1,0 g/ml arviota.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 300,
+      "unit": "g",
+      "item": "kuorittua kurkkua",
+      "state": "Cucumber, common, peeled, raw",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Cucumber, common, peeled, raw. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F003319-release-3",
+        "name": "Cucumber, common, peeled, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F003319",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Cucumber, common, peeled, raw",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 2.1,
+          "polyols": 0,
+          "fibre": 0.6,
+          "protein": 0.4,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "amount": 240,
+      "unit": "g",
+      "item": "avokadon hedelmälihaa",
+      "state": "AVOKADO, KUORITTU, KIVETÖN",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: AVOKADO, KUORITTU, KIVETÖN. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-11057-release-20",
+        "name": "AVOKADO, KUORITTU, KIVETÖN",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11057",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "AVOKADO, KUORITTU, KIVETÖN",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0.77,
+          "polyols": 0,
+          "fibre": 3.6,
+          "protein": 2.63,
+          "fat": 19.4
+        }
+      }
+    },
+    {
+      "amount": 6,
+      "unit": "g",
+      "item": "tuoretta korianteria",
+      "state": "Coriander, fresh, raw",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Coriander, fresh, raw. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F003192-release-3",
+        "name": "Coriander, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F003192",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Coriander, fresh, raw",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.9,
+          "polyols": 0,
+          "fibre": 3.2,
+          "protein": 3.1,
+          "fat": 0.6
+        }
+      }
+    },
+    {
+      "amount": 3,
+      "unit": "g",
+      "item": "tuoretta minttua",
+      "state": "Mint, fresh, raw",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Mint, fresh, raw. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F005700-release-3",
+        "name": "Mint, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F005700",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Mint, fresh, raw",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.4,
+          "polyols": 0,
+          "fibre": 7.2,
+          "protein": 3.1,
+          "fat": 1.1
+        }
+      }
+    },
+    {
+      "amount": 25,
+      "unit": "ml",
+      "item": "limetinmehua",
+      "state": "Juice, lime",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Juice, lime. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 1,
+      "conversionEvidence": "Lähteen vastaavan Fineli-sitrusmehun 11557 annosmassa 100 g/dl toimii 1 g/ml vertailuna.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F004729-release-3",
+        "name": "Juice, lime",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F004729",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Juice, lime",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.2,
+          "polyols": 0,
+          "fibre": 3.6,
+          "protein": 0.8,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "amount": 15,
+      "unit": "ml",
+      "item": "oliiviöljyä",
+      "state": "OLIIVIÖLJY",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: OLIIVIÖLJY. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 0.9,
+      "conversionEvidence": "Fineli 536, DL 90 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-536-release-20",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "OLIIVIÖLJY",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    },
+    {
+      "amount": 0.25,
+      "unit": "tl",
+      "item": "hienoa suolaa",
+      "state": "RUOKASUOLA, JODIOITU",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: RUOKASUOLA, JODIOITU. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 6.5,
+      "conversionEvidence": "Fineli 30, TL 6,5 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "retrievedAt": "2026-11-25",
+        "state": "RUOKASUOLA, JODIOITU",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0,
+          "protein": 0.63,
+          "fat": 0
+        }
+      }
+    }
+  ],
+  "batchId": "batch-33311"
+}
