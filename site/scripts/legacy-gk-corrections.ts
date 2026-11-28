@@ -1,3 +1,4 @@
+import { predecessorForGkSourceCorrection } from './gk-source-correction-history';
 import {restoreRecipeAuditSnapshot} from './restore-recipe-audit-snapshot';
 import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
 import {createHash} from 'node:crypto';
@@ -48,7 +49,7 @@ export function prepareLegacyGkCandidates(root:string) {
  const read=(p:string)=>readFileSync(join(root,p),'utf8').replaceAll('\r\n','\n');
  const manifest=JSON.parse(read('docs/nutrition/gk-legacy-reconciliation/candidates.json'));
  const pilotInput='docs/nutrition/glycemic-load-pilot-input.json';
- const text=restoreRecipeAuditSnapshot(pilotInput,read(pilotInput));
+ const text=restoreRecipeAuditSnapshot(pilotInput,predecessorForGkSourceCorrection(pilotInput,read(pilotInput)));
  verifyLegacyCandidateScope(manifest);
  verifyLegacyCandidateInput(text,manifest.recipeSnapshotsSha256);
  if(manifest.publicationAuthorized!==false||manifest.sourceApprovalGranted!==false)throw Error('This adapter cannot grant approval');

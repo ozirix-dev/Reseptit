@@ -35,6 +35,8 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   const [filters, setFilters] = useState<RecipeFilters>(emptyRecipeFilters);
   const [hydrated, setHydrated] = useState(false);
   const searchInput = useRef<HTMLInputElement>(null);
+  const retryButton = useRef<HTMLButtonElement>(null);
+  const retryFocus = useRef<{ locationKey: string; file: string } | null>(null);
   const availableCategories = categories.filter(category => catalog?.categories.includes(category));
   const availableDiets = catalog?.diets ?? [];
   const searchFile = recipeFiltersToSearch(filters) && catalog?.searchFile;
@@ -57,6 +59,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   }, [location.search, catalog]);
 
   function updateFilters(patch: Partial<RecipeFilters>) {
+    retryFocus.current = null;
     if (!("query" in patch)) track("Filter Recipes");
     const next = { ...filters, ...patch };
     setFilters(next);
@@ -86,7 +89,31 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
     navigate(location.pathname, { replace: true, preventScrollReset: true });
   }
 
+  function retrySearch(button: HTMLButtonElement) {
+    const input = searchInput.current;
+    if (searchFile && input && document.activeElement === button) {
+      input.focus({ preventScroll: true });
+      retryFocus.current = { locationKey: location.key, file: searchFile };
+    }
+    setSearch(undefined);
+    setSearchAttempt(attempt => attempt + 1);
+  }
+
   const loadedSearch = search?.file === searchFile ? search : undefined;
+  useEffect(() => {
+    const pending = retryFocus.current;
+    if (!pending) return;
+    if (pending.locationKey !== location.key || pending.file !== searchFile) {
+      retryFocus.current = null;
+      return;
+    }
+    if (!loadedSearch) return;
+
+    retryFocus.current = null;
+    if (loadedSearch.entries === null && document.activeElement === searchInput.current) {
+      retryButton.current?.focus({ preventScroll: true });
+    }
+  }, [loadedSearch, location.key, searchFile]);
   const entries = loadedSearch?.entries;
   const filteredRecipes = useMemo(() => entries && filterRecipes(entries, filters, locale, glycemicLoadFilterCategories),
     [entries, filters, locale]);
@@ -128,10 +155,8 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
       results = <p role="status">{paginationText.loading}</p>;
     } else if (!filteredRecipes) {
       results = <div className="recipe-empty-state"><p role="alert">{paginationText.failed}</p>
-        <button type="button" className="recipe-filter-reset" onClick={() => {
-          setSearch(undefined);
-          setSearchAttempt(attempt => attempt + 1);
-        }}>{paginationText.retry}</button>
+        <button ref={retryButton} type="button" className="recipe-filter-reset"
+          onClick={event => retrySearch(event.currentTarget)}>{paginationText.retry}</button>
       </div>;
     } else if (filteredRecipes.length === 0) {
       results = <div className="recipe-empty-state"><p>{labels.noResults}</p>
@@ -166,7 +191,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
       <div className="recipe-search-field">
         <label htmlFor="recipe-search">{labels.search}</label>
         <div className="recipe-search-field__control">
-          <input ref={searchInput} id="recipe-search" type="search" value={filters.query} placeholder={labels.searchPlaceholder} onChange={(event) => updateFilters({ query: event.currentTarget.value })} />
+          <input ref={searchInput} id="recipe-search" type="search" value={filters.query} placeholder={labels.searchPlaceholder} onBlur={() => { retryFocus.current = null; }} onChange={(event) => updateFilters({ query: event.currentTarget.value })} />
           {filters.query ? <button type="button" className="recipe-search-field__clear" onClick={clearSearch}>{labels.clearSearch}</button> : null}
         </div>
       </div>
