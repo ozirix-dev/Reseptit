@@ -1,3 +1,5 @@
+import { predecessorForGkSourceCorrection } from "../scripts/gk-source-correction-history";
+import { restoreGkSourceCorrectionReport } from "./history/gk-source-correction-report";
 import { restoreRecipeAuditSnapshot } from "../scripts/restore-recipe-audit-snapshot";
 import { restoreAuditGk } from "./recipe-correctness-calculation-history";
 import assert from "node:assert/strict";
@@ -183,6 +185,7 @@ function restoreRows(rows: any[], field: "results" | "calculationInputs") {
 }
 
 export function restoreBeforeOriginalContent(report: any) {
+  restoreGkSourceCorrectionReport(report);
   restoreAuditGk(report);
   const isReviewedFiBreakfast = (row: { recipeId: string }) => reviewedFiBreakfastIds.has(row.recipeId);
   const addedBreakfasts = report.results?.filter(isReviewedFiBreakfast) ?? [];
@@ -243,7 +246,7 @@ export function restoreBeforeOriginalContent(report: any) {
 }
 
 export function originalContentSourceBefore(file: string, text: string): string {
-  text = restoreRecipeAuditSnapshot(file, text);
+  text = restoreRecipeAuditSnapshot(file, predecessorForGkSourceCorrection(file,text));
   if (file === "docs/nutrition/glycemic-load-pilot-input.json") {
     const data = JSON.parse(text);
     data.recipes = restoreRows(data.recipes, "calculationInputs");
@@ -285,7 +288,7 @@ function assertMainAddition(report: any) {
 }
 
 export function assertOriginalContentTransition(report: any) {
-  report = restoreAuditGk(structuredClone(report));
+  report = restoreAuditGk(restoreGkSourceCorrectionReport(structuredClone(report)));
   assertMainAddition(report);
   const addedBreakfasts = report.results.filter((row: { recipeId: string }) => reviewedFiBreakfastIds.has(row.recipeId));
   assert.deepEqual(addedBreakfasts.map((row: { recipeId: string }) => row.recipeId).sort(), [...reviewedFiBreakfastIds].sort());

@@ -1,0 +1,186 @@
+{
+  "recipeId": "kasvishernekeitto-juureksilla",
+  "sourceHash": "30b696369283e559a98a20ce43fe50fd2feef29b5be3f40a35ffc58d9d684628",
+  "calculatedAt": "2026-11-25",
+  "servings": 6,
+  "scope": "Yksi annos reseptin 6 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Kuivan herneen 371 ei yksin vastaa liotettua hernettä, kun liotusvesi kaadetaan pois. Kypsää saantoa ei ole punnittu.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kuivattuja kokonaisia vihreitä herneitä",
+      "amount": 350,
+      "unit": "g",
+      "state": "kuivattuja kokonaisia vihreitä herneitä",
+      "excludedReason": "Fineli 371 on kuivapaino, eikä liotusveden poistamisen vaikutusta ole määrällistetty."
+    },
+    {
+      "item": "vettä keittämiseen",
+      "amount": 1500,
+      "unit": "g",
+      "state": "vettä keittämiseen",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "state": "vettä keittämiseen",
+        "retrievedAt": "2026-11-25"
+      }
+    },
+    {
+      "item": "kuorittua keltasipulia",
+      "amount": 130,
+      "unit": "g",
+      "state": "kuorittua keltasipulia",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-335-release-20",
+        "name": "SIPULI, KELTASIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 1.2,
+          "polyols": 0,
+          "protein": 1.25,
+          "fat": 0.1
+        },
+        "state": "kuorittua keltasipulia",
+        "retrievedAt": "2026-11-25"
+      }
+    },
+    {
+      "item": "kuorittua porkkanaa",
+      "amount": 180,
+      "unit": "g",
+      "state": "kuorittua porkkanaa",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-300-release-20",
+        "name": "PORKKANA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/300",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 5.56,
+          "fibre": 2.4,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0.2
+        },
+        "state": "kuorittua porkkanaa",
+        "retrievedAt": "2026-11-25"
+      }
+    },
+    {
+      "item": "kuorittua palsternakkaa",
+      "amount": 120,
+      "unit": "g",
+      "state": "kuorittua palsternakkaa",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-309-release-20",
+        "name": "PALSTERNAKKA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/309",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 10.31,
+          "fibre": 4.5,
+          "polyols": 0,
+          "protein": 1.1,
+          "fat": 0.57
+        },
+        "state": "kuorittua palsternakkaa",
+        "retrievedAt": "2026-11-25"
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 5,
+      "unit": "g",
+      "state": "suolaa",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-79-release-20",
+        "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "state": "suolaa",
+        "retrievedAt": "2026-11-25"
+      }
+    },
+    {
+      "item": "kuivattua meiramia",
+      "amount": 1,
+      "unit": "g",
+      "state": "kuivattua meiramia",
+      "excludedReason": "Vastaavaa kuivatun meiramin tietuetta ei varmennettu.",
+      "omissionImpactEvidence": "Kunkin kentän konservatiivinen yläraja on mausteen koko massa annosta kohti. Energian yläraja on laskettu 9 kcal/g.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 1.5,
+        "netCarbohydrate": 0.16666666666666666,
+        "totalCarbohydrate": 0.16666666666666666,
+        "protein": 0.16666666666666666,
+        "fat": 0.16666666666666666
+      }
+    }
+  ],
+  "batchId": "batch-33309",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Kuivan herneen 371 ei yksin vastaa liotettua hernettä, kun liotusvesi kaadetaan pois. Kypsää saantoa ei ole punnittu."
+}

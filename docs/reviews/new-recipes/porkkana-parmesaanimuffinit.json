@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "porkkana-parmesaanimuffinit",
+  "source_path": "reseptit/valipalat/porkkana-parmesaanimuffinit.md",
+  "source_sha256": "af43e6cb2c5fc581175759ae2d8ac00ef773161cf6c648a89268d704da68c8ba",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://groceries.morrisons.com/recipes/savoury-carrot-and-parmesan-muffins/37014"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/porkkana-parmesaanimuffinit.json",
+  "image_evidence": {
+    "path": "kuvat/valipalat/porkkana-parmesaanimuffinit.webp",
+    "bytes": 146622,
+    "sha256": "a6b13b027432eb86b918ac1bef4777f7e32c2db658cc8f8e2219fdc3ab04b76b",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/valipalat/porkkana-parmesaanimuffinit.md",
+        "language": "fi",
+        "slug": "porkkana-parmesaanimuffinit",
+        "sha256": "af43e6cb2c5fc581175759ae2d8ac00ef773161cf6c648a89268d704da68c8ba",
+        "semantic_sha256": "e1576d3009d546e33f889fde7951be7e0e9e49ae584c545b3780a93597f9a3e7"
+      },
+      {
+        "path": "kaannokset/en/valipalat/porkkana-parmesaanimuffinit.md",
+        "language": "en",
+        "slug": "porkkana-parmesaanimuffinit-en",
+        "sha256": "d791081f9ddaea0f8218182483f2b331855c3769f87624c8e96064d4d3eb03f0",
+        "semantic_sha256": "844789b61b7632c40c80d33bdfc239513d0bba76991e2dcaa7e3caa30f686719"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/porkkana-parmesaanimuffinit.md",
+        "language": "sv",
+        "slug": "porkkana-parmesaanimuffinit-sv",
+        "sha256": "1b4d7d6b6b9645a50c66a92da98d4d0f228def9fdfe1fe94b69ab0fb989a9ba0",
+        "semantic_sha256": "18512697764fad6fbf832856a36cc5c78ee1e05aaf3857a934870339ac39d9c3"
+      },
+      {
+        "path": "kaannokset/th/valipalat/porkkana-parmesaanimuffinit.md",
+        "language": "th",
+        "slug": "porkkana-parmesaanimuffinit-th",
+        "sha256": "106273b42317797d8edc584202ca3ef9ccab26a2ca33857178bb2edd3195e20c",
+        "semantic_sha256": "5c90dce00b317954ca4de7472e4519be7a79f7c62d75f24cce9699cd2edbe568"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Jauhoista tehty parmesaanimuffini eroaa munavälipaloista ja porkkanarieskoista. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 12 ja kokonaisaika 45 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kaksitoista yhtä suurta muffinssia. Raastettu parmesaani arvioidaan tuoreesta kovasta parmesaanista ja piimä 0,8-prosenttisesta talouspiimästä. Ei taikinan tai rasvan poistoa. Paistohöyryä käsitellään veden haihtumisena. Kahdesta kuorettomasta munasta arvioidaan 110 g."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

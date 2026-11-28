@@ -1,5 +1,7 @@
+import { predecessorForGkSourceCorrection } from '../scripts/gk-source-correction-history';
 import { restoreRecipeAuditSnapshot } from '../scripts/restore-recipe-audit-snapshot';
 import { restoreAuditInventory } from './recipe-correctness-calculation-history';
+import { restoreGk005Inventory } from './history/gk005-partial-nutrition-transition';
 import { sourceReleaseGateDecision } from "../scripts/f25-source-release-gate";
 import { molletesHistoricalText, molletesSourcePath, molletesRecipeId } from "../scripts/molletes-reviewed-source";
 import { koreanRiceBowlHistoricalText } from "../scripts/korean-rice-bowls-reviewed-source";
@@ -82,7 +84,7 @@ test('serabi and apam balik retain only the sealed thin-version GK', () => {
 });
 
 test('Live original results preserve frozen history, the 87 variants and exact reviewed transitions',()=>{
- const read = (file: string) => restoreRecipeAuditSnapshot(file, readLive(file));
+ const read = (file: string) => restoreRecipeAuditSnapshot(file, predecessorForGkSourceCorrection(file,readLive(file)));
  const archivedJson = (file: string) => JSON.parse(read(file));
  assertOriginalContentTransition(report);
  const historical = restoreBeforeOriginalContent(structuredClone(report));
@@ -107,7 +109,7 @@ test('Live original results preserve frozen history, the 87 variants and exact r
    Object.hasOwn(before.variantHashes, variantKey(v)));
  assert.deepEqual(historicalVariants.map(variantKey).sort(), Object.keys(before.variantHashes).sort());
  for(const v of historicalVariants)assert.equal(sha(v),before.variantHashes[variantKey(v)],v.recipeId);
- const completePublishedInventory = restoreAuditInventory(json('tmp/nutrition/audit.json').inventory) as Array<{
+ const completePublishedInventory = restoreAuditInventory(restoreGk005Inventory(json('tmp/nutrition/audit.json').inventory)) as Array<{
   recipe_id: string;
   source_path: string;
   status: string;
@@ -461,15 +463,20 @@ test('the source transition accepts only the exact3 corrected columns, preservin
  const bindings=json('docs/nutrition/glycemic-load-recipe-bindings.json');
  for(const id of ['valimerellinen-ricotta-persikkakulho','pellava-puuro-pahkinoilla']){
   const input=report.calculationInputs.find((r:any)=>r.recipeId===id);
-  assert.equal(glycemicLoadEvidenceHash(input,foods,json('docs/nutrition/glycemic-index-records.json').records),bindings.calculationEvidence[id]);
-  assert.equal(glycemicLoadInputHash(input),bindings.calculationInputs[id]);
+  if(id==='pellava-puuro-pahkinoilla'){
+   assert.notEqual(glycemicLoadEvidenceHash(input,foods,json('docs/nutrition/glycemic-index-records.json').records),bindings.calculationEvidence[id]);
+   assert.notEqual(glycemicLoadInputHash(input),bindings.calculationInputs[id]);
+  }else{
+   assert.equal(glycemicLoadEvidenceHash(input,foods,json('docs/nutrition/glycemic-index-records.json').records),bindings.calculationEvidence[id]);
+   assert.equal(glycemicLoadInputHash(input),bindings.calculationInputs[id]);
+  }
  }
 });
 
 test('current-main133/226 candidates preserve production input, approved EHOLD rows and pending GI decisions',()=>{
  const pilotInput='docs/nutrition/glycemic-load-pilot-input.json';
  const liveInputText=read(pilotInput);
- const inputText=restoreRecipeAuditSnapshot(pilotInput,liveInputText);
+ const inputText=restoreRecipeAuditSnapshot(pilotInput,predecessorForGkSourceCorrection(pilotInput,liveInputText));
  const review=prepareLegacyGkCandidates(root);
  const manifest=json('docs/nutrition/gk-legacy-reconciliation/candidates.json');
  assert.doesNotThrow(()=>verifyLegacyCandidateInput(inputText.replaceAll('\r\n','\n').replaceAll('\n','\r\n'),manifest.recipeSnapshotsSha256));

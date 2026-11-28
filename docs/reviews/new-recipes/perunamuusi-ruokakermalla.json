@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perunamuusi-ruokakermalla",
+  "source_path": "reseptit/alkuruoat/perunamuusi-ruokakermalla.md",
+  "source_sha256": "0a20d878a3a3d7f7ad75bb28cde32b22477cc86e6df4e877f215597e474aa16c",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.valio.fi/reseptit/perunamuusi-ruokakermalla/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/perunamuusi-ruokakermalla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Jauhoinen peruna keitetään, valutetaan ja survotaan lämpimän ruokakerman kanssa. Maito ilmoitetaan."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Jauhoinen peruna keitetään, valutetaan ja survotaan lämpimän ruokakerman kanssa. Maito ilmoitetaan."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Jauhoinen peruna keitetään, valutetaan ja survotaan lämpimän ruokakerman kanssa. Maito ilmoitetaan. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Jauhoinen peruna keitetään, valutetaan ja survotaan lämpimän ruokakerman kanssa. Maito ilmoitetaan. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Ruokakerman EU-tuotetieto ei erittele kuitua ja polyoleja. Raakapainosta tehty arvio ei määrällistä keitinveden hävikkiä."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Jauhoisen perunan lajiketta, survausta ja kermaa vastaavaa GI-tietuetta ei ole sidottu. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/perunamuusi-ruokakermalla.webp",
+    "bytes": 55116,
+    "sha256": "630884cc221de07206f8540de4995a8bf251e1982730ebb2c1047cb106f27243",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/alkuruoat/perunamuusi-ruokakermalla.md",
+        "sha256": "e04e083a391b6d1f0efab16415e19519daf46ab1e435334973d8236731114670"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/perunamuusi-ruokakermalla.md",
+        "sha256": "2fa14557f25a225e9711394d623d5ddc45b9242f2b5a3f06fad48fe1a437c1f6"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/perunamuusi-ruokakermalla.md",
+        "sha256": "3f14afa83a3531f01c4bcf0e40d0d1da18cc576e65696bdfd1a67f5c1f9418ef"
+      },
+      {
+        "path": "reseptit/alkuruoat/perunamuusi-ruokakermalla.md",
+        "sha256": "c53b110b54a7692845598c916ab675da71ba7459604f23e2ea0c54d25e40d18e"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/alkuruoat/perunamuusi-ruokakermalla.md",
+        "language": "en",
+        "slug": "perunamuusi-ruokakermalla-en",
+        "sha256": "581a664be85c86eb3f7d1063d60c62472cf5037d6fc81a3c44631181c47c1df8",
+        "semantic_sha256": "a25fd9b508453d64b08fc5833187a1b50816117211a7ad1a2e7cddedea05496b"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/perunamuusi-ruokakermalla.md",
+        "language": "sv",
+        "slug": "perunamuusi-ruokakermalla-sv",
+        "sha256": "dff673210d5969fe239529ece0da4023ecd66715dfaa9022a0a6ffd56e2462ed",
+        "semantic_sha256": "b6d029a6f663f70de290a094fd6a66f3d5096256c4ff3750fbdb7ab4eeca8bb3"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/perunamuusi-ruokakermalla.md",
+        "language": "th",
+        "slug": "perunamuusi-ruokakermalla-th",
+        "sha256": "b02cc7630fa15f7bbcae4d2ee1ae85c52aa59d749c7eb85b3b4d49ddc5af4638",
+        "semantic_sha256": "e0a10d1682bbdd23797c00d6190e0e4f80acfce82a74541eb8d1509f88b39e60"
+      },
+      {
+        "path": "reseptit/alkuruoat/perunamuusi-ruokakermalla.md",
+        "language": "fi",
+        "slug": "perunamuusi-ruokakermalla",
+        "sha256": "0a20d878a3a3d7f7ad75bb28cde32b22477cc86e6df4e877f215597e474aa16c",
+        "semantic_sha256": "1d86c787e096bd6791cd266763247ef6ab3221464e52bd24c614b6c45e03029c"
+      }
+    ]
+  }
+}

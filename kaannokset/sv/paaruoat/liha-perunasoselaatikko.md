@@ -64,5 +64,5 @@ En klassisk finsk vardagslåda med smörigt potatismos, genomstekt nötfärs och
 ## Anteckningar
 
 - Innehåller mjölk. Genomstek nötfärsen, kyl rester snabbt i grunda kärl och förvara i kylskåp under +6 °C.
-- AI-genererad bild; ingen egen provlagning, receptspecifik närings-/GK-beräkning eller godkänd glutenfrihetsmärkning.
+- Bilden är en AI-genererad illustration. Recipavo har inte provlagat receptet i eget kök, och en godkänd näringsberäkning för hela receptet saknas. Näringsvärden i siffror utelämnas. Glykemisk belastning är inte fastställd och inget påstående om glutenfrihet har godkänts.
 - Självständig variant baserad på: [K-Ruoka](https://www.k-ruoka.fi/reseptit/liha-perunasoselaatikko) · [Valio](https://www.valio.fi/reseptit/liha-perunasoselaatikko/)

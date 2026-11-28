@@ -1,0 +1,196 @@
+{
+  "recipeId": "punajuurilevite",
+  "sourceHash": "272709beefc116d6c824a1bd036ca6993cf6ca1f16d25642e9818922d8340d3a",
+  "calculatedAt": "2026-11-25",
+  "servings": 6,
+  "scope": "Kuudesosa levitteestä. Suolattomana kypsennetty punajuuri, valutettu 25-prosenttinen vuohenmaitofeta ja kaikki valmiiseen levitteeseen lisätty öljy. Lisukkeet eivät sisälly. Annosarvio = syötävien ainesosien määrällä painotetut g/100 g -arvot yhteen laskettuina, jaettuna annosmäärällä. Käytetyillä lähderiveillä kokonais-HH on netto-HH:n ja kuidun summa.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 200,
+      "unit": "g",
+      "item": "kypsää kuorittua punajuurta",
+      "state": "Kypsä kuorittu suolaton punajuuri",
+      "matchEvidence": "Kypsä kuorittu suolaton punajuuri. Laskennassa käytetään Chat-2:n vertailutietuetta tälle rajatulle ainesosalle.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Valmistuksessa käytetty syötävä osa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko käytetty syötävä osa sisältyy tämän skenaarion annokseen.",
+      "record": {
+        "id": "fineli-30382-release-20",
+        "name": "PUNAJUURI, KEITETTY, SUOLATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30382",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "state": "Kypsä kuorittu suolaton punajuuri",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 8.163,
+          "polyols": 0,
+          "fibre": 2.551,
+          "fat": 0.102,
+          "protein": 1.43
+        }
+      }
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "valutettua fetaa",
+      "state": "Valutettu vuohenmaitofeta, rasvaa 25 %",
+      "matchEvidence": "Valutettu vuohenmaitofeta, rasvaa 25 %. Laskennassa käytetään Chat-2:n vertailutietuetta tälle rajatulle ainesosalle.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Valmistuksessa käytetty syötävä osa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko käytetty syötävä osa sisältyy tämän skenaarion annokseen.",
+      "record": {
+        "id": "fineli-11211-release-20",
+        "name": "JUUSTO, FETAJUUSTO, RASVAA 25 %, VUOHENMAITO, SUOLALIEMESSÄ",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11211",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "state": "Valutettu vuohenmaitofeta, rasvaa 25 %",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 1.2,
+          "polyols": 0,
+          "fibre": 0,
+          "fat": 25,
+          "protein": 18
+        }
+      }
+    },
+    {
+      "amount": 15,
+      "unit": "ml",
+      "item": "oliiviöljyä",
+      "state": "Oliiviöljy",
+      "matchEvidence": "Oliiviöljy. Laskennassa käytetään Chat-2:n vertailutietuetta tälle rajatulle ainesosalle.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Valmistuksessa käytetty syötävä osa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko käytetty syötävä osa sisältyy tämän skenaarion annokseen.",
+      "gramsPerUnit": 0.9,
+      "conversionEvidence": "Fineli 536, 90 g/dl",
+      "record": {
+        "id": "fineli-536-release-20",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "state": "Oliiviöljy",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 0,
+          "polyols": 0,
+          "fibre": 0,
+          "fat": 100,
+          "protein": 0
+        }
+      }
+    },
+    {
+      "amount": 30,
+      "unit": "g",
+      "item": "auringonkukansiemeniä",
+      "state": "Kuorittu auringonkukansiemen",
+      "matchEvidence": "Kuorittu auringonkukansiemen. Laskennassa käytetään Chat-2:n vertailutietuetta tälle rajatulle ainesosalle.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Valmistuksessa käytetty syötävä osa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko käytetty syötävä osa sisältyy tämän skenaarion annokseen.",
+      "record": {
+        "id": "fineli-11212-release-20",
+        "name": "AURINGONKUKANSIEMEN, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11212",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "state": "Kuorittu auringonkukansiemen",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 2.72,
+          "polyols": 0,
+          "fibre": 6.8,
+          "fat": 56.1,
+          "protein": 24.3
+        }
+      }
+    },
+    {
+      "amount": 10,
+      "unit": "g",
+      "item": "sitruunamehua",
+      "state": "Laimentamaton sitruunamehu",
+      "matchEvidence": "Laimentamaton sitruunamehu. Laskennassa käytetään Chat-2:n vertailutietuetta tälle rajatulle ainesosalle.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Valmistuksessa käytetty syötävä osa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko käytetty syötävä osa sisältyy tämän skenaarion annokseen.",
+      "record": {
+        "id": "fineli-11557-release-20",
+        "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11557",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "state": "Laimentamaton sitruunamehu",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "polyols": 0,
+          "fibre": 0.1,
+          "fat": 0,
+          "protein": 0.31
+        }
+      }
+    },
+    {
+      "amount": 0.125,
+      "unit": "tl",
+      "item": "mustapippuria",
+      "state": "Jauhettu mustapippuri",
+      "matchEvidence": "Jauhettu mustapippuri. Laskennassa käytetään Chat-2:n vertailutietuetta tälle rajatulle ainesosalle.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Valmistuksessa käytetty syötävä osa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Koko käytetty syötävä osa sisältyy tämän skenaarion annokseen.",
+      "gramsPerUnit": 2,
+      "conversionEvidence": "Fineli 11177, mustapippuri 2 g/tl",
+      "record": {
+        "id": "afcd-F006618-release-3",
+        "name": "Pepper, black, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006618",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "basis": "per100g-as-sold",
+        "state": "Jauhettu mustapippuri",
+        "retrievedAt": "2026-11-25",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 38.6,
+          "polyols": 0,
+          "fibre": 25.3,
+          "fat": 3.3,
+          "protein": 10.4
+        }
+      }
+    }
+  ],
+  "batchId": "batch-33310"
+}

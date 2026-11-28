@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "recipe_id": "jaadytetyt-jogurtti-marjapalat",
+  "source_path": "reseptit/valipalat/jaadytetyt-jogurtti-marjapalat.md",
+  "source_sha256": "304508fa1e16a494cad9a2196eb7fd88305dd66efa0e2bb569187be3dbee00e5",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://feelgoodfoodie.net/recipe/frozen-yogurt-bark/",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ulkomaiset-pakastemarjat/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/jaadytetyt-jogurtti-marjapalat.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Oma 20 reseptin samankaltaisuusseulonta. Chat-2:n tarkastamissa viidessä heuristisessa osumassa ei ollut estettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset, niiden käyttötilat ja määrät säilyvät Chat-2:n katselmoimasta sisällöstä. Sisältää maitoa. Tarkista granolan viljat ja muut allergeenit. Käytä tässä versiossa tuoreita marjoja."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusvaiheet ja valmistuslähde säilyvät Chat-2:n katselmoimasta sisällöstä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaturvallisuusohjeet ja allergeenit säilyvät neljällä kielellä tarkastetusta revisiosta. Kirjallinen näyttö ilman Recipavon koekeittiötestiä. Sisältää maitoa. Tarkista granolan viljat ja muut allergeenit. Käytä tässä versiossa tuoreita marjoja."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 12 ja ilmoitettu kokonaisaika 195 min säilyvät. Arvot tarkistettu neljällä kielellä."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Jogurtin ja granolan tuotekoostumus sekä valitun mustikkalajin koostumus eivät ole vielä sidottuja. Kaikki neljä arvoa jäävät määrittämättömiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle annosversiolle ei ole hyväksyttyä soveltuvaa GI- tai ainesosasidosta eikä kanonista GK-näyttöä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/valipalat/jaadytetyt-jogurtti-marjapalat.webp",
+    "bytes": 129368,
+    "sha256": "cb9361ea627237fddbb03652c3807ad39f7099b19a86abc7e02d47afd69f7515",
+    "width": 1200,
+    "height": 800,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161831506",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161957227",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/valipalat/jaadytetyt-jogurtti-marjapalat.md",
+        "sha256": "7ffc659be709ebe506f623490834ab0bc30ee8403dfa6b90a4f3d3aede712029"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/jaadytetyt-jogurtti-marjapalat.md",
+        "sha256": "7e0a407a4e4bb2d7ba7988f8af10a4c4963cb4184e3c9da85a644959e0a7046b"
+      },
+      {
+        "path": "kaannokset/th/valipalat/jaadytetyt-jogurtti-marjapalat.md",
+        "sha256": "15b953213f2bd9aa03badd144b510162f4bf6903ef04ecb28ff7ce9f1c58e6c5"
+      },
+      {
+        "path": "reseptit/valipalat/jaadytetyt-jogurtti-marjapalat.md",
+        "sha256": "c0982f4150ea5a3e8b3ce9ab3e5e63591a4c9883cb53134c8c5a8089d6da8e5f"
+      }
+    ],
+    "scope": "Ennen julkaisuehdokasta katselmoitu teksti, valmistus, turvallisuus ja kuva. Ravintoratkaisujen ehdot on kirjattu erillisessä katselmoinnissa."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "710d22120da8968b935630e098cb5b5c8b7b9df8f7b7d1a68df31aace322c78b"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/valipalat/jaadytetyt-jogurtti-marjapalat.md",
+        "language": "fi",
+        "slug": "jaadytetyt-jogurtti-marjapalat",
+        "sha256": "304508fa1e16a494cad9a2196eb7fd88305dd66efa0e2bb569187be3dbee00e5",
+        "semantic_sha256": "ece6aefded504449f8d0194a6894ac7d942921ba642cd3621b663fe21f7c14a6"
+      },
+      {
+        "path": "kaannokset/en/valipalat/jaadytetyt-jogurtti-marjapalat.md",
+        "language": "en",
+        "slug": "jaadytetyt-jogurtti-marjapalat-en",
+        "sha256": "a0fcc599206a2ffa02c3dfc12cc5568ea4e93e6f93ec208627b9dad09e2fd253",
+        "semantic_sha256": "b36a4ee7d66d0e6271c8330d960a305288016dd42efbd2b3f06ce8ab10f2b999"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/jaadytetyt-jogurtti-marjapalat.md",
+        "language": "sv",
+        "slug": "jaadytetyt-jogurtti-marjapalat-sv",
+        "sha256": "09cc16b53e4ea2de555a6640a807a28ac2481feae68f6fd87d39d1d9b4ac47b2",
+        "semantic_sha256": "75601fd729fbbac641e2f9a2f2a740096de85e098a2b447e3f94ca27b26b0cee"
+      },
+      {
+        "path": "kaannokset/th/valipalat/jaadytetyt-jogurtti-marjapalat.md",
+        "language": "th",
+        "slug": "jaadytetyt-jogurtti-marjapalat-th",
+        "sha256": "c6182ec1c45cc4a2f2cd1d4184601fb30e50d476a26093a1e8a6bb0f5c443345",
+        "semantic_sha256": "15baad2c20313400e316d5e080df489e1670ace94a61b51efa48e58f2400813d"
+      }
+    ],
+    "final_independent_delta": "pending"
+  }
+}

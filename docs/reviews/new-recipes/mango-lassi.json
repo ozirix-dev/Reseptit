@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "mango-lassi",
+  "source_path": "reseptit/valipalat/mango-lassi.md",
+  "source_sha256": "180c70f6952510bd23253c38db179f68bfcf10e10406610fed1a5b259353eb5f",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.bbcgoodfood.com/recipes/mango-lassi"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/mango-lassi.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Oma 20 reseptin samankaltaisuusseulonta. Chat-2:n tarkastamissa viidessä heuristisessa osumassa ei ollut estettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset, niiden käyttötilat ja määrät säilyvät Chat-2:n katselmoimasta sisällöstä. Sisältää maitoa. Hunajaa ei anneta alle yksivuotiaalle."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusvaiheet ja valmistuslähde säilyvät Chat-2:n katselmoimasta sisällöstä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaturvallisuusohjeet ja allergeenit säilyvät neljällä kielellä tarkastetusta revisiosta. Kirjallinen näyttö ilman Recipavon koekeittiötestiä. Sisältää maitoa. Hunajaa ei anneta alle yksivuotiaalle."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 2 ja ilmoitettu kokonaisaika 10 min säilyvät. Arvot tarkistettu neljällä kielellä."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Jogurttivertailun rasvapitoisuus ja limen sekä kardemumman lähderivit ovat avoimia. Mangon ja hunajan SUGOH-havainto puuttuu. Kaikki neljä arvoa jäävät määrittämättömiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle annosversiolle ei ole hyväksyttyä soveltuvaa GI- tai ainesosasidosta eikä kanonista GK-näyttöä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/valipalat/mango-lassi.webp",
+    "bytes": 77028,
+    "sha256": "86ebb0e2441ad0f85c268d7c38c9c603863c212b684040d4845b2c167c983d6a",
+    "width": 1200,
+    "height": 800,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161831506",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161957227",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/valipalat/mango-lassi.md",
+        "sha256": "88a8c5e8c8671c1ee9dba3f4598bcb1769d83f9aec8a4f05daea93959ffda474"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/mango-lassi.md",
+        "sha256": "4eee1196a5d25be326495ec58ece05fe479a076ff48acda8340613993e8306e4"
+      },
+      {
+        "path": "kaannokset/th/valipalat/mango-lassi.md",
+        "sha256": "495e7b0f8247c317dd3f3825e3bd0985d3b99859e48e984e5a5f90c1ac2fd359"
+      },
+      {
+        "path": "reseptit/valipalat/mango-lassi.md",
+        "sha256": "b0cba0455c34b44647c88f3d51d5931ad94bd1d06c4c5d64f2350065335fa870"
+      }
+    ],
+    "scope": "Ennen julkaisuehdokasta katselmoitu teksti, valmistus, turvallisuus ja kuva. Ravintoratkaisujen ehdot on kirjattu erillisessä katselmoinnissa."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "35f3cc894d6021b39b874987181d360f4100aba62d56ceab0423760b65f396b8"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/valipalat/mango-lassi.md",
+        "language": "fi",
+        "slug": "mango-lassi",
+        "sha256": "180c70f6952510bd23253c38db179f68bfcf10e10406610fed1a5b259353eb5f",
+        "semantic_sha256": "bd6b1f9085d23348c3bd66a5e9461edb9ef532ee23ec87a28e465f34343dab7f"
+      },
+      {
+        "path": "kaannokset/en/valipalat/mango-lassi.md",
+        "language": "en",
+        "slug": "mango-lassi-en",
+        "sha256": "b9b80d05df1b28195259b09ad768386ad59f16fa4d9b2c852f87b988e2bc842f",
+        "semantic_sha256": "ee805ed1b70cae532b2f7b273343c0074ffc57dede41e3a6a1df08c1fff4af22"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/mango-lassi.md",
+        "language": "sv",
+        "slug": "mango-lassi-sv",
+        "sha256": "4ae186a03399be75d7cbf9c680b7eef4baa4d5f8b4e625043ed3e9f0a0350fe6",
+        "semantic_sha256": "02078c3fb9b363f4d757d86ce4e2d551c2c249490ab3dbab59c4b270463dad3a"
+      },
+      {
+        "path": "kaannokset/th/valipalat/mango-lassi.md",
+        "language": "th",
+        "slug": "mango-lassi-th",
+        "sha256": "fce3de6a06b4af2e741d3e82628cfac37733bc579daefe2bd6ab82184cb5373e",
+        "semantic_sha256": "7e15f56240aa3cbaab02ab0442c8bef7f79918ea0ec805ec4378a1e03d6e45a5"
+      }
+    ],
+    "final_independent_delta": "pending"
+  }
+}

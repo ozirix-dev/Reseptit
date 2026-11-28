@@ -545,8 +545,8 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
     ],
     "notes": [
       [
-        "Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.",
-        "Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.\n\nValmistustapa: haudutus liedellä kannellisessa padassa. Naudanlihaa ruskistetaan ja pata hautuu liedellä miedolla lämmöllä 1,5 tuntia; ohjeessa ei ole uunivaihetta."
+        "Proteiini- ja rasva-arvot ovat laskennallisia arvioita. Koko annoksen hiilihydraattiarvoja ei ilmoiteta puutteellisten lähdetietojen vuoksi. Lihaliemen ja smetanan tuotekoostumus voi vaikuttaa arvioihin.",
+        "Proteiini- ja rasva-arvot ovat laskennallisia arvioita. Koko annoksen hiilihydraattiarvoja ei ilmoiteta puutteellisten lähdetietojen vuoksi. Lihaliemen ja smetanan tuotekoostumus voi vaikuttaa arvioihin.\n\nValmistustapa: haudutus liedellä kannellisessa padassa. Naudanlihaa ruskistetaan ja pata hautuu liedellä miedolla lämmöllä 1,5 tuntia; ohjeessa ei ole uunivaihetta."
       ]
     ]
   },
@@ -559,8 +559,8 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
     ],
     "notes": [
       [
-        "Nutrition values are temporarily withheld pending source verification.",
-        "Nutrition values are temporarily withheld pending source verification.\n\nCooking method: simmering on the stovetop in a covered pot. Brown the beef, then simmer the covered pot over low heat for 1.5 hours; the recipe has no oven stage."
+        "Protein and fat values are calculated estimates. Whole-serving carbohydrate values are not reported because source data are incomplete. The composition of the beef stock and sour cream used may affect the estimates.",
+        "Protein and fat values are calculated estimates. Whole-serving carbohydrate values are not reported because source data are incomplete. The composition of the beef stock and sour cream used may affect the estimates.\n\nCooking method: simmering on the stovetop in a covered pot. Brown the beef, then simmer the covered pot over low heat for 1.5 hours; the recipe has no oven stage."
       ]
     ]
   },
@@ -573,8 +573,8 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
     ],
     "notes": [
       [
-        "Näringsvärden visas tills vidare inte i väntan på källkontroll.",
-        "Näringsvärden visas tills vidare inte i väntan på källkontroll.\n\nTillagningssätt: sjudning på spisen i en gryta med lock. Bryn köttet och sjud sedan grytan på svag värme i 1,5 timmar; receptet har inget ugnssteg."
+        "Värdena för protein och fett är beräknade uppskattningar. Kolhydratvärden för hela portionen anges inte eftersom källdata är ofullständiga. Sammansättningen av den köttbuljong och smetana som används kan påverka uppskattningarna.",
+        "Värdena för protein och fett är beräknade uppskattningar. Kolhydratvärden för hela portionen anges inte eftersom källdata är ofullständiga. Sammansättningen av den köttbuljong och smetana som används kan påverka uppskattningarna.\n\nTillagningssätt: sjudning på spisen i en gryta med lock. Bryn köttet och sjud sedan grytan på svag värme i 1,5 timmar; receptet har inget ugnssteg."
       ]
     ]
   },
@@ -587,8 +587,8 @@ const reviewedCopy: Readonly<Record<string, ReviewedRecipeCopy>> = {
     ],
     "notes": [
       [
-        "ข้อมูลโภชนาการยังไม่แสดงระหว่างตรวจสอบแหล่งข้อมูล",
-        "ข้อมูลโภชนาการยังไม่แสดงระหว่างตรวจสอบแหล่งข้อมูล\n\nวิธีปรุง: เคี่ยวบนเตาในหม้อปิดฝา หลังจากผัดเนื้อให้เหลืองแล้วให้เคี่ยวในหม้อปิดฝาบนเตาด้วยไฟอ่อน 1.5 ชั่วโมง สูตรนี้ไม่มีขั้นตอนอบในเตาอบ"
+        "ปริมาณโปรตีนและไขมันเป็นค่าประมาณจากการคำนวณ ไม่แสดงปริมาณคาร์โบไฮเดรตของอาหารทั้งที่เนื่องจากข้อมูลจากแหล่งอ้างอิงยังไม่ครบถ้วน ส่วนประกอบของน้ำสต๊อกเนื้อวัวและสเมตานาที่ใช้สามารถส่งผลต่อค่าประมาณได้",
+        "ปริมาณโปรตีนและไขมันเป็นค่าประมาณจากการคำนวณ ไม่แสดงปริมาณคาร์โบไฮเดรตของอาหารทั้งที่เนื่องจากข้อมูลจากแหล่งอ้างอิงยังไม่ครบถ้วน ส่วนประกอบของน้ำสต๊อกเนื้อวัวและสเมตานาที่ใช้สามารถส่งผลต่อค่าประมาณได้\n\nวิธีปรุง: เคี่ยวบนเตาในหม้อปิดฝา หลังจากผัดเนื้อให้เหลืองแล้วให้เคี่ยวในหม้อปิดฝาบนเตาด้วยไฟอ่อน 1.5 ชั่วโมง สูตรนี้ไม่มีขั้นตอนอบในเตาอบ"
       ]
     ]
   },

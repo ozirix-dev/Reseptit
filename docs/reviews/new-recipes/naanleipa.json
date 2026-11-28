@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "naanleipa",
+  "source_path": "reseptit/leivonnaiset/naanleipa.md",
+  "source_sha256": "6be158fc3833bd55cbb203a3c13d04cc2b34ca76efa29323c6174c7be97941fa",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.kingarthurbaking.com/recipes/naan-recipe"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/naanleipa.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Oma 20 reseptin samankaltaisuusseulonta. Chat-2:n tarkastamissa viidessä heuristisessa osumassa ei ollut estettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset, niiden käyttötilat ja määrät säilyvät Chat-2:n katselmoimasta sisällöstä. Sisältää vehnää ja maitoa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusvaiheet ja valmistuslähde säilyvät Chat-2:n katselmoimasta sisällöstä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaturvallisuusohjeet ja allergeenit säilyvät neljällä kielellä tarkastetusta revisiosta. Kirjallinen näyttö ilman Recipavon koekeittiötestiä. Sisältää vehnää ja maitoa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 8 ja ilmoitettu kokonaisaika 120 min säilyvät. Arvot tarkistettu neljällä kielellä."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Leipäjauhon ja täysrasvaisen kreikkalaisen jogurtin koostumus sekä sivelygheen ja työpöytäjauhon syötäväksi jäävät osuudet ovat avoimia. Kaikki neljä arvoa jäävät määrittämättömiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle annosversiolle ei ole hyväksyttyä soveltuvaa GI- tai ainesosasidosta eikä kanonista GK-näyttöä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/naanleipa.webp",
+    "bytes": 121386,
+    "sha256": "24041aec8e002238efd931057bcbad73ff7753e92aeda651189a5dc2ca8a5e78",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161831506",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161957227",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/leivonnaiset/naanleipa.md",
+        "sha256": "52b1db39503f8534181e962968ecd0e082cb490fa10c9b48e7dbb15b0cdcdb2d"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/naanleipa.md",
+        "sha256": "60f63efa6a61038c345bc7f92e57d9bc184f60e58f535eb10658e63e98a3a809"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/naanleipa.md",
+        "sha256": "c98f262ca9aa5f8fa38652de859a11165986e1630d744e1ec376a12c48709b9f"
+      },
+      {
+        "path": "reseptit/leivonnaiset/naanleipa.md",
+        "sha256": "39571e603a3b6824eb3ba5bd460eea79e1181da98299f05f0dd3900b26a07462"
+      }
+    ],
+    "scope": "Ennen julkaisuehdokasta katselmoitu teksti, valmistus, turvallisuus ja kuva. Ravintoratkaisujen ehdot on kirjattu erillisessä katselmoinnissa."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "12a3bf6c42a475b480d9513e3919c8f6759e3200173a29e023917fd36685fc99"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/naanleipa.md",
+        "language": "fi",
+        "slug": "naanleipa",
+        "sha256": "6be158fc3833bd55cbb203a3c13d04cc2b34ca76efa29323c6174c7be97941fa",
+        "semantic_sha256": "6838de8d3614c4ecefac7a39ac5ff2cb0db9a7fee5ae4d2be4186e3143429923"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/naanleipa.md",
+        "language": "en",
+        "slug": "naanleipa-en",
+        "sha256": "e9c85d8bb70af922f76e7b6cf0e1676546301c0f8ae648bb280b063a35651c6f",
+        "semantic_sha256": "0a268563ddf38e1b6da4a1b2ee3348e1d98ee61c3c0c179a5656fca12543751d"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/naanleipa.md",
+        "language": "sv",
+        "slug": "naanleipa-sv",
+        "sha256": "3e9cbeabca02a7f74a14b038dd23b8a4127d0dcf3dc7d5d6666d8501a36e5c9a",
+        "semantic_sha256": "b9eb65e58f0c6171d9c938073498dc7537a5a1811f21571c6452c38c8b03f47f"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/naanleipa.md",
+        "language": "th",
+        "slug": "naanleipa-th",
+        "sha256": "c11e2a3ccb64a44feecad7f2098f29b7f40e9b3725ca2ee6d20a2ab03e1ffa13",
+        "semantic_sha256": "40d1ffb70a7c8a933c738d4c1033802e4cddce8944d7faf8d7d4fab8d01d2b12"
+      }
+    ],
+    "final_independent_delta": "pending"
+  }
+}

@@ -28,6 +28,7 @@ import { glycemicLoadFilterCategories } from "../src/generated/glycemic-load-fil
 import { isPublicRecipeQuarantined, publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
 import { f25ExplicitUndefinedGkLabel, withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 import { loadReviewedPortions } from "../scripts/gk-portion-projection";
+import { menemenEvidenceNames } from "../scripts/menemen-evidence-names";
 import type { GlycemicLoadResult } from "../scripts/glycemic-load-model";
 
 const dist = path.resolve(import.meta.dirname, "../dist");
@@ -266,7 +267,7 @@ test("standalone carbohydrate and source warnings follow reviewed quantities and
 
 test("preparation and optional-side evidence stays visibly scoped", async () => {
   const reviews = await loadReviewedPortions(path.resolve(import.meta.dirname, "../.."));
-  for (const id of ["gazpacho", "medu-vada", "marjakiisseli-vaniljakastikkeella", "malesialainen-mee-goreng-aamunuudeleilla",
+  for (const id of ["gazpacho", "marjakiisseli-vaniljakastikkeella", "malesialainen-mee-goreng-aamunuudeleilla",
     "pannacotta-marjakastikkeella", "lahi-ita-kikhernejauho-yrttilettu", "kantonilainen-hoyrytetty-kala",
     "larb-moo-vhh", "pohjoisafrikkalainen-kuskus-aamiaiskulho", "ropa-vieja", "amritsari-kala", "kiinalainen-hirssipuuro-taateleilla",
     "lihapullat-kermakastikkeessa-vhh", "jauhelihakastike-kesakurpitsanuudeleilla", "kanakorma-kukkakaaliriisilla",
@@ -340,6 +341,45 @@ test("carbohydrate and GL describe their separate recipe assumptions before and 
     }
   }
   assert.equal(glycemicLoadFilterCategories["valimerellinen-jogurttikulho-hunajalla"], "low");
+});
+
+test("Medu vada wrong composition identity remains in sealed history but not public GK", async () => {
+  const id = "medu-vada";
+  const root = path.resolve(import.meta.dirname, "../..");
+  const reviews = await loadReviewedPortions(root);
+  assert.equal(reviews[id].legacyGkHold, true);
+  assert.equal(reviews[id].ingredientGkEvidenceSha256, undefined);
+  const original = glycemicLoadPilotResults.find(row => row.recipeId === id);
+  assert.ok(original);
+  assert.equal(original.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(original.glycemicLoadPerServing, null);
+  assert.equal(original.glycemicLoadRangePerServing, null);
+  assert.equal(original.confidence, null);
+  assert.deepEqual(original.sourceReferences, []);
+  assert.deepEqual(original.carbohydrateSources, []);
+  assert.equal(original.portionEvidence?.gkIngredientSubset, undefined);
+  assert.equal(glycemicLoadFilterCategories[id], undefined);
+  assert.ok(!gkVersionCoverage.numericRecipeIds.includes(id));
+  const audit = JSON.parse(await readFile(path.join(root, "tmp/nutrition/glycemic-load-pilot.json"), "utf8"));
+  const sealed = audit.results.filter((row: {recipeId:string}) => row.recipeId === id);
+  assert.equal(sealed.length, 1);
+  assert.equal(sealed[0].glycemicLoadPerServing, 10.77);
+  assert.equal(sealed[0].ingredients[0].fineliRecordId, "fineli-399-2026-10-24");
+  const entries = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+  assert.deepEqual(entries.map(row => row.locale).sort(), ["en","fi","sv","th"]);
+  for (const { locale, routePath } of entries) {
+    const html = (await readFile(path.join(dist, routePath.slice(1), "index.html"), "utf8")).replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+    const guide = await readFile(path.join(dist, glycemicLoadPath(locale).slice(1), "index.html"), "utf8");
+    const start = guide.indexOf(`id="${id}"`);
+    assert.ok(start >= 0, routePath);
+    const end = guide.indexOf("<li ", start + 1);
+    const row = guide.slice(start, end < 0 ? undefined : end);
+    const note = reviews[id].condition![locale];
+    assert.ok(html.includes(renderToStaticMarkup(createElement("p", null, note)).slice(3,-4)), routePath);
+    assert.ok(row.includes(renderToStaticMarkup(createElement("p", null, note)).slice(3,-4)), routePath);
+    assert.doesNotMatch(html, /data-portion-gk=|data-gk-status="(?:CALCULATED|QUALITATIVE)"|data-original-gk-class=/, routePath);
+    assert.doesNotMatch(row, /gk-evidence__value|data-original-gk-class=|data-gk-ingredient-subset=/, routePath);
+  }
 });
 
 test("reviewed ingredient contributions and the dry risotto rice amount are visible beside the supported portion information", async () => {
@@ -517,7 +557,7 @@ test("guide coverage and recipe labels distinguish documented GK ingredient subs
     "gai-yang-vhh", "jauhelihakastike-kesakurpitsanuudeleilla", "kana-yakitori-kaalilla",
     "kanakorma-kukkakaaliriisilla", "khao-kha-moo-vhh", "khao-man-gai-vhh",
     "kiinalainen-soijamaito-aamiaisella", "lahi-ita-ful-medames", "larb-moo-vhh",
-    "lihapullat-kermakastikkeessa-vhh", "medu-vada",
+    "lihapullat-kermakastikkeessa-vhh",
   ];
   const numeric = [...glycemicLoadPilotResults, ...glycemicLoadAdditionalResults].filter(row => row.status === "CALCULATED");
   const tagged = numeric.filter(row => row.portionEvidence?.gkIngredientSubset);
@@ -723,13 +763,13 @@ test("weighed or measured ingredient portions remain separate from whole-serving
 
 test("modeled GL and ingredient carbs remain separate from withheld whole-serving carbohydrates", async () => {
   const cases = {
-    "janssoninkiusaus-juuriselleri": { gk: 3.05, ingredients: [{ amount: 175, available: 4.6375 }] },
+    "janssoninkiusaus-juuriselleri": { gk: 3.05, partial: { proteinG: 13.57, fatG: 33.56 }, ingredients: [{ amount: 175, available: 4.6375 }] },
     "marokkolainen-couscous": { gk: 37.5, ingredients: [{ amount: 62.5, declared: 45 }, { amount: 100, available: 17.6 }] },
-    "paprikainen-vhh-gulassi": { gk: 3.52, ingredients: [{ amount: 40, available: 1.8 }, { amount: 37.5, available: 0.825 }, { amount: 75 }] },
+    "paprikainen-vhh-gulassi": { gk: 3.52, partial: { proteinG: 40.79, fatG: 26.14 }, ingredients: [{ amount: 40, available: 1.8 }, { amount: 37.5, available: 0.825 }, { amount: 75 }] },
     "pasta-alla-norma": { gk: 30.05, ingredients: [{ amount: 87.5, declared: 60.375 }] },
     "rogan-josh": { gk: 1.11, ingredients: [{ amount: 50, available: 2.5 }] },
     "sitruuna-yrttikana-parsa": { gk: 0.88, ingredients: [{ amount: 100, available: 2 }] },
-  } satisfies Record<string, { gk: number; ingredients: { amount: number; available?: number; declared?: number }[] }>;
+  } satisfies Record<string, { gk: number; partial?: { proteinG: number; fatG: number }; ingredients: { amount: number; available?: number; declared?: number }[] }>;
   for (const [id, expected] of Object.entries(cases)) {
     const evidence: PortionEvidence | undefined = glycemicLoadPortions[id];
     assert.ok(evidence?.ingredientPortion, id);
@@ -753,7 +793,52 @@ test("modeled GL and ingredient carbs remain separate from withheld whole-servin
         readFile(path.join(dist, "data", filename), "utf8"),
       ]);
       assert.equal(parseRouteContent(JSON.parse(routeData), routePath).glycemicRecipe?.result?.glycemicLoadPerServing, expected.gk, routePath);
-      assert.ok(Object.values(nutrition).every(value => value === null), routePath);
+      assert.equal(nutrition.carbsNetG, null, routePath);
+      assert.equal(nutrition.carbsTotalG, null, routePath);
+      const partial = "partial" in expected ? expected.partial : undefined;
+      if (partial) {
+        assert.deepEqual(nutrition, { carbsNetG: null, carbsTotalG: null, ...partial }, routePath);
+        const rendered = recipe.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+        assert.ok(rendered.includes(toolUi[locale].partialNutrition), routePath);
+        const summary = renderToStaticMarkup(createElement("summary", null, toolUi[locale].nutritionPerRecipeServing));
+        const startOfMacros = rendered.indexOf(summary);
+        assert.ok(startOfMacros >= 0, routePath + ": nutrition details summary");
+        const endOfMacros = rendered.indexOf("</details>", startOfMacros);
+        assert.ok(endOfMacros > startOfMacros, routePath + ": nutrition details end");
+        const macroDetails = rendered.slice(startOfMacros, endOfMacros);
+        const lists = [...macroDetails.matchAll(/<dl class="nutrition-list">([\s\S]*?)<\/dl>/g)];
+        assert.equal(lists.length, 1, routePath + ": one macro list in nutrition details");
+        const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[locale];
+        const expectedRows = (["proteinG", "fatG"] as const).map(key =>
+          renderToStaticMarkup(createElement("div", null,
+            createElement("dt", null, recipeUi[locale].nutrients[key]),
+            createElement("dd", null, new Intl.NumberFormat(numberLocale, { maximumFractionDigits: 2 }).format(partial[key]) + " g"),
+          ))).join("");
+        assert.equal(lists[0]![1]!.replaceAll("<!-- -->", ""), expectedRows, routePath + ": exact localized P/R rows, no CHO rows");
+        const jsonLdMatch = recipe.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/);
+        assert.ok(jsonLdMatch, routePath);
+        assert.deepEqual(JSON.parse(jsonLdMatch[1]).nutrition, {
+          "@type": "NutritionInformation", proteinContent: `${partial.proteinG} g`, fatContent: `${partial.fatG} g`,
+        }, routePath);
+        const oldDisclosure = {
+          fi: "Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.",
+          en: "Nutrition values are temporarily withheld pending source verification.",
+          sv: "Näringsvärden visas tills vidare inte i väntan på källkontroll.",
+          th: "ข้อมูลโภชนาการยังไม่แสดงระหว่างตรวจสอบแหล่งข้อมูล",
+        }[locale];
+        assert.ok(!rendered.includes(oldDisclosure), routePath);
+        if (id === "paprikainen-vhh-gulassi") {
+          const stove = {
+            fi: "Valmistustapa: haudutus liedellä kannellisessa padassa.",
+            en: "Cooking method: simmering on the stovetop in a covered pot.",
+            sv: "Tillagningssätt: sjudning på spisen i en gryta med lock.",
+            th: "วิธีปรุง: เคี่ยวบนเตาในหม้อปิดฝา",
+          }[locale];
+          assert.ok(rendered.includes(stove), routePath + ": retain stovetop-only guidance");
+        }
+      } else {
+        assert.ok(Object.values(nutrition).every(value => value === null), routePath);
+      }
       assert.match(recipe, /data-gk-status="CALCULATED"/, routePath);
       assert.match(recipe, /data-portion-gk=/, routePath);
       const start = guide.indexOf('id="' + id + '" class="glycemic-pilot__recipe"');
@@ -1272,6 +1357,8 @@ test("GK values link to centralized recipe details on every published translatio
   const historicalOnly = new Set([
     historicalMolletes?.recipeId, "lahi-ita-zaatar-munat", "pohjoisafrikkalainen-baghrir",
     "meksikolainen-aamiais-tacot-mustapavuilla",
+    // Sealed 10.77 uses the wrong food identity; only the public original is withheld.
+    "medu-vada",
   ]);
   const tacosId = "meksikolainen-aamiais-tacot-mustapavuilla";
   const archivedTacos = audit.results.find(result => result.recipeId === tacosId);
@@ -1310,6 +1397,13 @@ test("GK values link to centralized recipe details on every published translatio
     visibleReviewed.filter(result => result.status === "CALCULATED").length);
   assert.equal(glycemicLoadPilotResults.filter(result => result.status === "INSUFFICIENT SOURCE DATA").length,
     visibleReviewed.filter(result => result.status === "INSUFFICIENT SOURCE DATA").length);
+  // Counts alone could conceal one missing recipe and one unintended promotion.
+  // Keep the exact expected membership for both statuses, not a dynamic HOLD allowlist.
+  for (const status of ["CALCULATED", "INSUFFICIENT SOURCE DATA"] as const) {
+    assert.deepEqual(glycemicLoadPilotResults.filter(result => result.status === status).map(result => result.recipeId).sort(),
+      visibleReviewed.filter(result => result.status === status).map(result => result.recipeId).sort(),
+      `public ${status}: exact reviewed recipe membership`);
+  }
   for (const [id, expected] of [
     ["indonesialainen-ketoprak-aamiaiskulho", 26.67],
     ["japanilainen-onigiri-lohella", 26.47],
@@ -1365,6 +1459,9 @@ test("GK values link to centralized recipe details on every published translatio
       const verbalClass = verbalGkForPortion(result.portionEvidence?.verbal, 1);
       if (result.status === "CALCULATED" && result.glycemicLoadPerServing !== null) {
         assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoad));
+        if (!result.assessmentType) {
+          assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoadNote), `${result.recipeId}/${recipe.locale}: current ingredient-based estimate disclosure`);
+        }
         assert.ok(html.includes(gkCopy[recipe.locale].see));
         assert.ok(html.includes(methodPath));
         assert.ok(result.confidence && html.includes(gkCopy[recipe.locale].levelNotes[result.confidence]), `${result.recipeId}/${recipe.locale}: confidence is visible`);
@@ -1825,6 +1922,20 @@ test('modeled calculation details disclose omissions in every locale and retain 
     }
     assert.ok(omitted>=10,locale+': all ten new omission cases covered');assert.ok(complete>0,locale+': real omission-free control covered');
     const method=await readFile(path.join(dist,expected.path,'index.html'),'utf8');assert.ok(method.includes(expected.method),locale);assert.ok(!method.includes(expected.oldMethod),locale+': central method is consistent');
+    const disclosure = {
+      fi: { previous: "aiemmin hyväksytyissä arvioissa", current: "puuttuvan GI-tiedon vaikutus on rajattava lähteiden avulla", historicalMethod: "Vanhemmassa toleranssipolussa", thresholds: ["alle 1 g:n", "alle 2 g"] },
+      en: { previous: "previously approved estimates", current: "the effect of missing GI data must be bounded using evidence", historicalMethod: "In the older tolerance path", thresholds: ["less than 1 g", "below 2 g"] },
+      sv: { previous: "tidigare godkända uppskattningar", current: "effekten av saknade GI-uppgifter avgränsas med stöd av källor", historicalMethod: "I den äldre toleransmodellen", thresholds: ["under 1 g", "understiger 2 g"] },
+      th: { previous: "ผ่านการตรวจสอบก่อนหน้านี้", current: "กำหนดขอบเขตผลกระทบของค่า GI ที่ขาดหายไป", historicalMethod: "แนวทางเดิมที่ยอมให้ละเว้นปริมาณเล็กน้อย", thresholds: ["ต่ำกว่า 1 กรัม", "ต่ำกว่า 2 กรัม"] },
+    }[locale];
+    const note = recipeUi[locale].glycemicLoadNote;
+    assert.ok(note.includes(disclosure.previous), locale + ": historical omissions identified as historical");
+    assert.ok(note.includes(disclosure.current), locale + ": new estimates require bounded evidence");
+    assert.ok(method.includes(disclosure.historicalMethod), locale + ": method preserves historical context");
+    for (const threshold of disclosure.thresholds) {
+      assert.ok(!note.includes(threshold), locale + ": historical threshold is not presented as a general rule");
+      assert.ok(method.includes(threshold), locale + ": historical threshold remains documented");
+    }
     if (locale === 'en') {
       assert.match(method, /without a matching GI value.*less than 1 g of available carbohydrate per serving.*below 2 g per serving/);
       assert.match(method, /The amount left out is shown/);
@@ -1948,6 +2059,59 @@ test("reviewed historical recipe links resolve to public routes in the reader's 
       assert.doesNotMatch(related, /href="https:\/\/ozirix-dev\.github\.io\//);
     }
   }
+});
+
+test("GL menemen evidence rejects ambiguous or unverified ingredient rows", () => {
+  const recipeId = "valimerellinen-menemen-fetalla";
+  const finnish = siteContent.recipes.find(entry => entry.recipeId === recipeId && entry.locale === "fi");
+  const english = siteContent.recipes.find(entry => entry.recipeId === recipeId && entry.locale === "en");
+  const swedish = siteContent.recipes.find(entry => entry.recipeId === recipeId && entry.locale === "sv");
+  assert.ok(finnish && english && swedish);
+  const tomato = { name: "tomaattia", giRecordId: "tomato-raw-cooked-sauce-analogue-gi-22", fineliRecordId: "fineli-352-2026-10-24" };
+  const pepper = { name: "vihreää paprikaa", giRecordId: "vegetables-category-mean-gi-66", fineliRecordId: "fineli-387-2026-10-24" };
+  const reordered = [...english.ingredients];
+  [reordered[1], reordered[2]] = [reordered[2], reordered[1]];
+  assert.equal(reordered[1].amount, reordered[2].amount);
+  assert.equal(reordered[1].unit, reordered[2].unit);
+  const translations = [{ ...english, ingredients: reordered }, swedish];
+  assert.deepEqual(menemenEvidenceNames(tomato, finnish.ingredients, translations), { fi: "tomaattia", sv: "tomat" });
+  assert.deepEqual(menemenEvidenceNames(pepper, finnish.ingredients, translations), { fi: "vihreää paprikaa", sv: "grön paprika" });
+
+  const duplicate = [...english.ingredients];
+  duplicate[2] = duplicate[1];
+  assert.deepEqual(menemenEvidenceNames(tomato, finnish.ingredients, [{ ...english, ingredients: duplicate }]), { fi: "tomaattia" });
+  const wrongUnit = english.ingredients.map((row, index) => index === 1 ? { ...row, unit: "g" } : row);
+  assert.deepEqual(menemenEvidenceNames(tomato, finnish.ingredients, [{ ...english, ingredients: wrongUnit }]), { fi: "tomaattia" });
+  const wrongFinnish = finnish.ingredients.map((row, index) => index === 1 ? { ...row, item: "vihreä paprika" } : row);
+  assert.deepEqual(menemenEvidenceNames(tomato, wrongFinnish, [english]), {});
+  assert.deepEqual(menemenEvidenceNames({ ...tomato, name: "tomaatti" }, finnish.ingredients, [english]), {});
+  assert.deepEqual(menemenEvidenceNames({ ...tomato, fineliRecordId: pepper.fineliRecordId }, finnish.ingredients, [english]), {});
+});
+
+test("GL evidence localizes the three sealed menemen source rows", () => {
+  const result = glycemicLoadPilotResults.find(entry => entry.recipeId === "valimerellinen-menemen-fetalla");
+  const rows = result?.ingredientEvidence?.map(({ name, giRecordId, foodRecordId, ingredientNames }) =>
+    ({ name, giRecordId, foodRecordId, ingredientNames }));
+  assert.deepEqual(rows, [
+    {
+      name: "tomaattia",
+      giRecordId: "tomato-raw-cooked-sauce-analogue-gi-22",
+      foodRecordId: "fineli-352-2026-10-24",
+      ingredientNames: { fi: "tomaattia", en: "tomato", sv: "tomat", th: "มะเขือเทศ" },
+    },
+    {
+      name: "vihreää paprikaa",
+      giRecordId: "vegetables-category-mean-gi-66",
+      foodRecordId: "fineli-387-2026-10-24",
+      ingredientNames: { fi: "vihreää paprikaa", en: "green bell pepper", sv: "grön paprika", th: "พริกหวานสีเขียว" },
+    },
+    {
+      name: "fetajuustoa",
+      giRecordId: "dairy-category-mean-gi-35",
+      foodRecordId: "fineli-11211-2026-10-24",
+      ingredientNames: { fi: "fetajuustoa", en: "feta", sv: "feta", th: "ชีสเฟตา" },
+    },
+  ]);
 });
 
 test("GL evidence keeps localized names when a Finnish ingredient is reformatted", () => {

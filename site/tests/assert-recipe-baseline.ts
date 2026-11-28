@@ -1,4 +1,5 @@
 import { restoreRecipeAuditSnapshot } from "../scripts/restore-recipe-audit-snapshot";
+import { predecessorForGk005History } from "./history/gk005-partial-nutrition-transition";
 import { sourceReleaseGateDecision } from "../scripts/f25-source-release-gate";
 import { molletesHistoricalText } from "../scripts/molletes-reviewed-source";
 import { koreanRiceBowlHistoricalText } from "../scripts/korean-rice-bowls-reviewed-source";
@@ -10,6 +11,7 @@ import { originalForC13CanonicalHistory } from "./c13-canonical-historical-trans
 import { originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
 import { originalForJumeokbapHistory } from "./jumeokbap-history";
 import { historicalSources, readHistoricalTransition } from "./history/historical-source-reader";
+import { beforeReviewedLocalePrecision } from "./history/reviewed-locale-precision";
 import { originalForTamagoKakeGohanHistory } from "./tamago-kake-gohan-history";
 import { originalForKetoprakHistory } from "./ketoprak-history";
 import { execFileSync } from "node:child_process";
@@ -224,7 +226,7 @@ function approvedNewTranslation(root: string, file: string, parsed: NonNullable<
   ) === "REVIEW CURRENT";
 }
 
-function checkedPostBaselineRelease(root: string, baseline: string, recipeId: string, sourcePath?: string): boolean {
+function checkedPostBaselineRelease(root: string, baseline: string, recipeId: string, preflightPaths: Set<string>, sourcePath?: string): boolean {
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(recipeId)) return false;
   const receipt = path.join(root, "docs/reviews/new-recipes", recipeId + ".json");
   if (!existsSync(receipt)) return false;
@@ -243,9 +245,9 @@ function checkedPostBaselineRelease(root: string, baseline: string, recipeId: st
     // Promoting the same historical FI draft does not mutate a published baseline recipe.
     if (old?.data.status !== "draft" || old.data.language !== "fi" || old.data.recipe_id !== recipeId) return false;
   }
-  execFileSync(process.execPath, [path.join(root, "site/scripts/new-recipe-preflight.mjs"), "--recipe=" + file], {
-    cwd: root, encoding: "utf8",
-  });
+  // Admission remains provisional until the shared preflight succeeds below.
+  // The set belongs to one baseline assertion, never to later tests or SHAs.
+  preflightPaths.add(file);
   return true;
 }
 
@@ -303,13 +305,16 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     { cwd: root, encoding: "utf8" },
   ).trim().split(/\r?\n/).filter(Boolean);
 
+  const preflightPaths = new Set<string>();
   for (const change of changes) {
     const [status, file] = change.split("\t");
     const readLive = () => readFileSync(path.join(root, file), "utf8");
-    const readFrozen = () => gazpachoThaiBeforeReviewedClove(file, restoreRecipeAuditSnapshot(file, readLive()));
+    const readFrozen = () => beforeReviewedLocalePrecision(root, file,
+      gazpachoThaiBeforeReviewedClove(file, restoreRecipeAuditSnapshot(file, predecessorForGk005History(file, readLive()))));
     if (status === "M") {
       const live = readLive();
-      const prior = restoreRecipeAuditSnapshot(file, live);
+      const prior = beforeReviewedLocalePrecision(root, file,
+        restoreRecipeAuditSnapshot(file, predecessorForGk005History(file, live)));
       if (prior !== live) {
         const pinned = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
         if (prior === pinned) continue;
@@ -455,7 +460,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       const parsed = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
       if (parsed?.data.status === "published") {
         const id = parsed.data.recipe_id;
-        if (typeof id === "string" && checkedPostBaselineRelease(root, baseline, id, file)) {
+        if (typeof id === "string" && checkedPostBaselineRelease(root, baseline, id, preflightPaths, file)) {
           recipeFrontmatterSchema.parse(parsed.data);
           continue;
         }
@@ -464,7 +469,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     if (status === "A" && /^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/.test(file)) {
       const id = path.basename(file, ".json");
       if (sourceReleaseGateDecision(id, undefined, root).reason === "REVIEWED_SOURCE_AND_EXACT_NUTRITION_AND_GK_BINDINGS") continue;
-      if (checkedPostBaselineRelease(root, baseline, id)) continue;
+      if (checkedPostBaselineRelease(root, baseline, id, preflightPaths)) continue;
     }
     if (status === "A" && file.startsWith("kaannokset/")) {
       const published = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
@@ -486,5 +491,23 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     } else {
       assert.equal(draft?.data.status, "draft", change);
     }
+  }
+
+  // Explicit-path mode runs the existing evidence gate against the complete
+  // FI inventory once per batch instead of once for every historical addition.
+  // Bound the command length for Windows; no result is reused across assertions.
+  const candidates = [...preflightPaths];
+  for (let offset = 0; offset < candidates.length; offset += 40) {
+    const files = candidates.slice(offset, offset + 40);
+    const result = JSON.parse(execFileSync(process.execPath, [
+      path.join(root, "site/scripts/new-recipe-preflight.mjs"), "--json",
+      ...files.map(file => "--recipe=" + file),
+    ], { cwd: root, encoding: "utf8", maxBuffer: 8 * 1024 * 1024 }));
+    assert.equal(result.candidates, files.length);
+    assert.equal(result.checked, files.length);
+    assert.equal(result.blocked, 0);
+    assert.deepEqual(result.assessments.map((row: { path: string }) => row.path), files);
+    assert.ok(result.assessments.every((row: { code: string; reasons: unknown[] }) =>
+      row.code === "EDITORIAL_EVIDENCE_CURRENT" && row.reasons.length === 0));
   }
 }

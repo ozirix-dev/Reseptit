@@ -7,7 +7,7 @@ language: en
 status: published
 servings: 24
 time_total_min: 150
-difficulty: "easy"
+difficulty: "Advanced"
 cooking_method: [uuni, keittäminen]
 source_language: fi
 source_recipe: reseptit/leivonnaiset/karjalanpiirakat-riisipuurolla.md

@@ -1,0 +1,4109 @@
+{
+  "schemaVersion": 1,
+  "status": "AUDIT_HISTORICAL_INPUT_ONLY_NOT_RUNTIME_APPROVAL",
+  "baseCommit": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+  "inputPath": "docs/nutrition/glycemic-load-pilot-input.json",
+  "inputGitBlob": "914b0fa604516f8585e616863bfff5dcaab3e729",
+  "registryGitBlob": "719328765182a5058a513381bf5fc1cd0fd31651",
+  "sourceClassificationsGitBlob": "2b410dedd2f128a1ebd035e67cff9e617b13c889",
+  "scope": "Exact direct giRecordId references in original committed input corpus only; no automatic inputs, current variant/range/unmatched bindings, publication status, or calculated impact inferred.",
+  "summary": {
+    "inputRecipes": 326,
+    "sourceCards": 45,
+    "referencedSourceCards": 32,
+    "unreferencedSourceCards": 13,
+    "uniqueRecipeIds": 262,
+    "ingredientRows": 576
+  },
+  "sources": [
+    {
+      "id": "whole-tomato-raw-gi-22",
+      "recipeCount": 3,
+      "ingredientRowCount": 3,
+      "references": [
+        {
+          "recipeId": "idli-sambar",
+          "ingredientIndex": 5,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "intialainen-rava-uttapam",
+          "ingredientIndex": 2,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "tacokulho-nauta-avokado",
+          "ingredientIndex": 4,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        }
+      ]
+    },
+    {
+      "id": "tomato-cherry-raw-analogue-gi-22",
+      "recipeCount": 1,
+      "ingredientRowCount": 1,
+      "references": [
+        {
+          "recipeId": "kanasalaatti-pesto-mozzarella",
+          "ingredientIndex": 3,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        }
+      ]
+    },
+    {
+      "id": "tomato-juice-canned-gi-38",
+      "recipeCount": 0,
+      "ingredientRowCount": 0,
+      "references": []
+    },
+    {
+      "id": "potato-boiled-china-gi-66",
+      "recipeCount": 1,
+      "ingredientRowCount": 1,
+      "references": [
+        {
+          "recipeId": "intialainen-aloo-paratha",
+          "ingredientIndex": 1,
+          "foodKey": "potato",
+          "preparationKey": "boiled-unspecified"
+        }
+      ]
+    },
+    {
+      "id": "potato-cooked-china-nonwestern-gi-66-4",
+      "recipeCount": 0,
+      "ingredientRowCount": 0,
+      "references": []
+    },
+    {
+      "id": "potato-fried-evoo-lady-rosetta-gi-114",
+      "recipeCount": 0,
+      "ingredientRowCount": 0,
+      "references": []
+    },
+    {
+      "id": "potato-fried-evoo-spunta-gi-83",
+      "recipeCount": 0,
+      "ingredientRowCount": 0,
+      "references": []
+    },
+    {
+      "id": "potato-crisp-fried-china-nonwestern-gi-60-3",
+      "recipeCount": 0,
+      "ingredientRowCount": 0,
+      "references": []
+    },
+    {
+      "id": "potato-steamed-nishiyutaka-nonwestern-gi-64",
+      "recipeCount": 0,
+      "ingredientRowCount": 0,
+      "references": []
+    },
+    {
+      "id": "potato-steamed-ainoaka-nonwestern-gi-63",
+      "recipeCount": 0,
+      "ingredientRowCount": 0,
+      "references": []
+    },
+    {
+      "id": "potato-steamed-dejima-nonwestern-gi-54",
+      "recipeCount": 0,
+      "ingredientRowCount": 0,
+      "references": []
+    },
+    {
+      "id": "potato-boiled-tortilla-analogue-gi-66",
+      "recipeCount": 2,
+      "ingredientRowCount": 2,
+      "references": [
+        {
+          "recipeId": "tortilla-de-patatas",
+          "ingredientIndex": 0,
+          "foodKey": "potato",
+          "preparationKey": "tortilla-slow-cooked-in-oil-and-pan-set-with-egg"
+        },
+        {
+          "recipeId": "valimerellinen-tortilla-espanola-aamupalaksi",
+          "ingredientIndex": 1,
+          "foodKey": "potato",
+          "preparationKey": "boiled-unspecified"
+        }
+      ]
+    },
+    {
+      "id": "tomato-raw-cooked-sauce-analogue-gi-22",
+      "recipeCount": 39,
+      "ingredientRowCount": 39,
+      "references": [
+        {
+          "recipeId": "chili-con-carne-kukkakaaliriisi",
+          "ingredientIndex": 3,
+          "foodKey": "tomato",
+          "preparationKey": "cooked-in-sauce"
+        },
+        {
+          "recipeId": "munakoiso-jauhelihavuoka-vhh",
+          "ingredientIndex": 2,
+          "foodKey": "tomato",
+          "preparationKey": "cooked-in-sauce"
+        },
+        {
+          "recipeId": "lahi-ita-kikherne-shakshuka",
+          "ingredientIndex": 1,
+          "foodKey": "tomato",
+          "preparationKey": "cooked-in-sauce"
+        },
+        {
+          "recipeId": "chole-bhature",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "butter-chicken",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "uunikanapasta-kesakurpitsa",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "pizza-margherita",
+          "ingredientIndex": 4,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "ingredientIndex": 4,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "souvlaki",
+          "ingredientIndex": 10,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "gazpacho",
+          "ingredientIndex": 0,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "tabbouleh",
+          "ingredientIndex": 2,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "chettinad-kana",
+          "ingredientIndex": 2,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "raejuusto-pesto-kasviskulho",
+          "ingredientIndex": 1,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "kesakurpitsalasagne-vhh",
+          "ingredientIndex": 2,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "italian-pata",
+          "ingredientIndex": 1,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "valimerellinen-menemen-fetalla",
+          "ingredientIndex": 1,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "som-tam-vhh-kurkkuna",
+          "ingredientIndex": 1,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "tom-yum-goong-vhh",
+          "ingredientIndex": 10,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "ketopizza-pofiber-pohjalla",
+          "ingredientIndex": 4,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "halloumimunakas",
+          "ingredientIndex": 2,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "yum-woon-sen-vhh",
+          "ingredientIndex": 3,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "kurkku-oliivi-aamiaiskulho",
+          "ingredientIndex": 2,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "kana-enchilada-kukkakaalivuoka",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kanapyorykat-tomaattikastike",
+          "ingredientIndex": 5,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "meksikolainen-huevos-divorciados",
+          "ingredientIndex": 1,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "meksikolainen-molletes-pico-de-gallolla",
+          "ingredientIndex": 3,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "intialainen-besan-chilla",
+          "ingredientIndex": 1,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "valimerellinen-halloumi-tomaattileipa",
+          "ingredientIndex": 1,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "meksikolainen-munakokkeli-pico-de-gallolla",
+          "ingredientIndex": 1,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "dal-makhani",
+          "ingredientIndex": 7,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "bouillabaisse",
+          "ingredientIndex": 6,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "pav-bhaji",
+          "ingredientIndex": 8,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "tunisialainen-ojja",
+          "ingredientIndex": 3,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "thai-kananmunat-kookoscurryssa",
+          "ingredientIndex": 3,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "meksikolainen-huevos-a-la-mexicana",
+          "ingredientIndex": 1,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "karibia-ackee-ja-suolakala",
+          "ingredientIndex": 2,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "karibia-jamaikalainen-munakokkeli",
+          "ingredientIndex": 1,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "valimerellinen-pinaatti-fetashakshuka",
+          "ingredientIndex": 1,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        },
+        {
+          "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
+          "ingredientIndex": 1,
+          "foodKey": "tomato",
+          "preparationKey": "whole-raw"
+        }
+      ]
+    },
+    {
+      "id": "red-pepper-literature-analogue-gi-40",
+      "recipeCount": 0,
+      "ingredientRowCount": 0,
+      "references": []
+    },
+    {
+      "id": "onion-literature-analogue-gi-15",
+      "recipeCount": 0,
+      "ingredientRowCount": 0,
+      "references": []
+    },
+    {
+      "id": "dairy-category-mean-gi-35",
+      "recipeCount": 86,
+      "ingredientRowCount": 109,
+      "references": [
+        {
+          "recipeId": "munakasrulla-pinaatti-tuorejuustolla",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "vhh-kaalilaatikko",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": "dairy-category"
+        },
+        {
+          "recipeId": "gulab-jamun",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "gulab-jamun",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "jauheliha-makaronilaatikko",
+          "ingredientIndex": 4,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "jauheliha-makaronilaatikko",
+          "ingredientIndex": 6,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "butter-chicken",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "butter-chicken",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "lihapullat-kermakastikkeessa-vhh",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kanakorma-kukkakaaliriisilla",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kanakorma-kukkakaaliriisilla",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "uunikanapasta-kesakurpitsa",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "jauhelihakastike-kesakurpitsanuudeleilla",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "meheva-suklaakakku",
+          "ingredientIndex": 8,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "marjakiisseli-vaniljakastikkeella",
+          "ingredientIndex": 5,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "marjakiisseli-vaniljakastikkeella",
+          "ingredientIndex": 6,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "pannacotta-marjakastikkeella",
+          "ingredientIndex": 0,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "pannacotta-marjakastikkeella",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "siemengranola-jogurtilla",
+          "ingredientIndex": 6,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "ingredientIndex": 9,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "ingredientIndex": 11,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "souvlaki",
+          "ingredientIndex": 6,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "spanakopita",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "poronkaristys-kukkakaalimuusilla",
+          "ingredientIndex": 7,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "vhh-omenapiirakka",
+          "ingredientIndex": 7,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "vhh-raparperipiirakka",
+          "ingredientIndex": 4,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "vhh-mansikkakakku",
+          "ingredientIndex": 4,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "vhh-mansikkakakku",
+          "ingredientIndex": 5,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kermainen-kanasienipannu",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kermainen-kanasienipannu",
+          "ingredientIndex": 5,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "raejuusto-pesto-kasviskulho",
+          "ingredientIndex": 0,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kana-parmesaanipannu-parsakaali",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kana-parmesaanipannu-parsakaali",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "vhh-juustokakku",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "vhh-juustokakku",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "vhh-brita-kakku",
+          "ingredientIndex": 7,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "rahkapiirakka-vhh",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "rahkapiirakka-vhh",
+          "ingredientIndex": 5,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "vhh-lihapiirakka",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "vhh-lihapiirakka",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "vhh-runebergintortut",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "keto-korvapuustit",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "keto-korvapuustit",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "vhh-mokkapalat",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "maksalaatikko-kukkakaalilla",
+          "ingredientIndex": 4,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "paistettu-maksa-pekonilla",
+          "ingredientIndex": 4,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kesakurpitsalasagne-vhh",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "rahka-marjakerroskulho",
+          "ingredientIndex": 0,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "rahka-marjakerroskulho",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "vhh-lohikeitto-kukkakaalilla",
+          "ingredientIndex": 6,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kana-fajita-pelti",
+          "ingredientIndex": 6,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kukkakaaligratiini-pekonilla",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "valimerellinen-menemen-fetalla",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "broileri-kukkakaaligratiini",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kanakeitto-pinaatti-sitruuna",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kermainen-lohipata",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kermainen-lohipata",
+          "ingredientIndex": 4,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "paahdettu-aamiaismunakoiso",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "ketopizza-pofiber-pohjalla",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "marjainen-chiavanukas",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "halloumimunakas",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "raejuusto-uunimunakas",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "raejuusto-uunimunakas",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "keto-kauralesesampylat",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "keto-kauralesesampylat",
+          "ingredientIndex": 5,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "keto-pannukakku",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "keto-pannukakku",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kaakao-kookos-chia",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "parsakaali-sinihomejuustofrittata",
+          "ingredientIndex": 4,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "keto-pinaattiletut",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kurkku-oliivi-aamiaiskulho",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "uunilohi-smetanakuorrutteella",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "savulohi-avokadokulho",
+          "ingredientIndex": 4,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "hyderabadi-kanabiryani",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "intialainen-rava-uttapam",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "lanttulaatikko-kermainen",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "silakkapihvit-tilli-kermakastike",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "lahi-ita-fattet-hummus",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "meksikolainen-chilaquiles-verdes",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "karibia-johnny-cake",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "lahi-ita-taatelipuuro-tahinilla",
+          "ingredientIndex": 4,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "valimerellinen-halloumi-tomaattileipa",
+          "ingredientIndex": 0,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "lahi-ita-manakish-zaatarilla",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-minttutee-kaurapuuro",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "meksikolainen-atole-maissipuuro",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "karibia-mango-limejogurtti",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "thai-papaijajogurtti",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "lahi-ita-pistaasijogurtti",
+          "ingredientIndex": 0,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "lahi-ita-zaatar-munat",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "keto-joulutortut",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+          "ingredientIndex": 0,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "valimerellinen-jogurttikulho-hunajalla",
+          "ingredientIndex": 0,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kanaviillokki-kukkakaalilla",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "valimerellinen-ricotta-persikkakulho",
+          "ingredientIndex": 0,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "paneer-tikka",
+          "ingredientIndex": 0,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "paneer-tikka",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+          "ingredientIndex": 0,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "pellava-puuro-pahkinoilla",
+          "ingredientIndex": 2,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "pellava-puuro-pahkinoilla",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "valimerellinen-pinaatti-fetashakshuka",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "yrttituorejuusto-kinkkurullat",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
+          "ingredientIndex": 3,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "palak-paneer",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "palak-paneer",
+          "ingredientIndex": 9,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        },
+        {
+          "recipeId": "tandoorikana",
+          "ingredientIndex": 1,
+          "foodKey": "dairy",
+          "preparationKey": "unflavoured-dairy"
+        }
+      ]
+    },
+    {
+      "id": "plain-yogurt-category-mean-gi-27-2017",
+      "recipeCount": 1,
+      "ingredientRowCount": 1,
+      "references": [
+        {
+          "recipeId": "tacokulho-nauta-avokado",
+          "ingredientIndex": 7,
+          "foodKey": "plain-yogurt-category-mean",
+          "preparationKey": "plain-unsweetened-yogurt"
+        }
+      ]
+    },
+    {
+      "id": "chickpea-canned-gi-35",
+      "recipeCount": 3,
+      "ingredientRowCount": 3,
+      "references": [
+        {
+          "recipeId": "hummus",
+          "ingredientIndex": 0,
+          "foodKey": "chickpea",
+          "preparationKey": "canned-drained"
+        },
+        {
+          "recipeId": "valimerellinen-kikherne-yrttiaamiainen",
+          "ingredientIndex": 0,
+          "foodKey": "chickpea",
+          "preparationKey": "canned-drained"
+        },
+        {
+          "recipeId": "lahi-ita-kikherne-shakshuka",
+          "ingredientIndex": 2,
+          "foodKey": "chickpea",
+          "preparationKey": "canned-drained"
+        }
+      ]
+    },
+    {
+      "id": "legumes-category-mean-gi-34",
+      "recipeCount": 35,
+      "ingredientRowCount": 36,
+      "references": [
+        {
+          "recipeId": "chili-con-carne-kukkakaaliriisi",
+          "ingredientIndex": 4,
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "recipeId": "chole-bhature",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "pani-puri",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "medu-vada",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "bulgogi",
+          "ingredientIndex": 2,
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "recipeId": "harira",
+          "ingredientIndex": 4,
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "recipeId": "harira",
+          "ingredientIndex": 5,
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "recipeId": "khao-man-gai-vhh",
+          "ingredientIndex": 6,
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "recipeId": "pad-kra-pao-vhh",
+          "ingredientIndex": 7,
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "recipeId": "idli-sambar",
+          "ingredientIndex": 3,
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "recipeId": "yangzhou-paistettu-riisi",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "amritsari-kala",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "karibia-kookosriisi-pavuilla",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "lahi-ita-kikhernejauho-yrttilettu",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "lahi-ita-fattet-hummus",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-lablabi",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "hernekeitto-savupotkalla",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "intialainen-ven-pongal",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "korealainen-kongjuk-soijapapu-riisipuuro",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "meksikolainen-aamiais-tacot-mustapavuilla",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "meksikolainen-paputostada-aamupalaksi",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "intialainen-pesarattu-mungpavuista",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "falafel",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "masala-dosa",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "intialainen-idli-kookoschutneylla",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "intialainen-masala-dosa",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "malesialainen-roti-canai-dhalilla",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "lahi-ita-ful-medames",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "meksikolainen-huevos-divorciados",
+          "ingredientIndex": 3,
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "recipeId": "meksikolainen-molletes-pico-de-gallolla",
+          "ingredientIndex": 1,
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "recipeId": "korealainen-bindaetteok-aamiaiseksi",
+          "ingredientIndex": 0,
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "recipeId": "intialainen-besan-chilla",
+          "ingredientIndex": 0,
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "recipeId": "valimerellinen-farinata-aamupalaksi",
+          "ingredientIndex": 0,
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "recipeId": "dal-makhani",
+          "ingredientIndex": 1,
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "recipeId": "indonesialainen-tempeh-munakulho",
+          "ingredientIndex": 0,
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        },
+        {
+          "recipeId": "kiinalainen-soijamaito-aamiaisella",
+          "ingredientIndex": 0,
+          "foodKey": "legume",
+          "preparationKey": "legume-category"
+        }
+      ]
+    },
+    {
+      "id": "vegetables-category-mean-gi-66",
+      "recipeCount": 119,
+      "ingredientRowCount": 157,
+      "references": [
+        {
+          "recipeId": "chili-con-carne-kukkakaaliriisi",
+          "ingredientIndex": 8,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "vhh-kaalikaarryleet",
+          "ingredientIndex": 0,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "vhh-kaalikaarryleet",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "jauheliha-kaalikeitto-vhh",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "vhh-kaalilaatikko",
+          "ingredientIndex": 0,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "munakoiso-jauhelihavuoka-vhh",
+          "ingredientIndex": 0,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "valimerellinen-kikherne-yrttiaamiainen",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "massaman-curry-kanalla-vhh",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "massaman-curry-kanalla-vhh",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "samosa",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "lohikeitto-kuohukermalla",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "punainen-kanacurry-vhh",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "punainen-kanacurry-vhh",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "thai-vihrea-curry-kanalla-vhh",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "thai-vihrea-curry-kanalla-vhh",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "thai-vihrea-curry-kanalla-vhh",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "panang-curry-kanalla-vhh",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "panang-curry-kanalla-vhh",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "lihapullat-kermakastikkeessa-vhh",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kanakorma-kukkakaaliriisilla",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "uunikanapasta-kesakurpitsa",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "khao-kha-moo-vhh",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "khao-kha-moo-vhh",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "larb-moo-vhh",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "jauhelihakastike-kesakurpitsanuudeleilla",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "baozi",
+          "ingredientIndex": 5,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "congee-riisipuuro",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "harira",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "ingredientIndex": 0,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "ingredientIndex": 13,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "souvlaki",
+          "ingredientIndex": 7,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "gazpacho",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "gazpacho",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "spanakopita",
+          "ingredientIndex": 0,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "spanakopita",
+          "ingredientIndex": 7,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "tabbouleh",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "tabbouleh",
+          "ingredientIndex": 4,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "tabbouleh",
+          "ingredientIndex": 8,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "poronkaristys-kukkakaalimuusilla",
+          "ingredientIndex": 5,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "poronkaristys-kukkakaalimuusilla",
+          "ingredientIndex": 6,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "kermainen-kanasienipannu",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "raejuusto-pesto-kasviskulho",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "kana-parmesaanipannu-parsakaali",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "vhh-lihapiirakka",
+          "ingredientIndex": 7,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "maksalaatikko-kukkakaalilla",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "khao-man-gai-vhh",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "khao-man-gai-vhh",
+          "ingredientIndex": 4,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "keltainen-kanacurry-vhh",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "kesakurpitsalasagne-vhh",
+          "ingredientIndex": 0,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "vhh-lohikeitto-kukkakaalilla",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "italian-pata",
+          "ingredientIndex": 6,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "kukkakaaligratiini-pekonilla",
+          "ingredientIndex": 0,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "valimerellinen-menemen-fetalla",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "broileri-kukkakaaligratiini",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "som-tam-vhh-kurkkuna",
+          "ingredientIndex": 0,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "som-tam-vhh-kurkkuna",
+          "ingredientIndex": 2,
+          "foodKey": "vegetables",
+          "preparationKey": "cooked"
+        },
+        {
+          "recipeId": "kanakeitto-pinaatti-sitruuna",
+          "ingredientIndex": 4,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "kanakeitto-pinaatti-sitruuna",
+          "ingredientIndex": 5,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "pad-kra-pao-vhh",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "kermainen-lohipata",
+          "ingredientIndex": 11,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "gai-yang-vhh",
+          "ingredientIndex": 8,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "gai-yang-vhh",
+          "ingredientIndex": 9,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "tom-yum-goong-vhh",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "pad-kee-mao-vhh-konjac",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "paahdettu-aamiaismunakoiso",
+          "ingredientIndex": 0,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "tom-kha-gai-vhh",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "pad-see-ew-vhh-konjac",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "parsakaali-sinihomejuustofrittata",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "moo-ping-vhh",
+          "ingredientIndex": 9,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "kai-jiew-vhh",
+          "ingredientIndex": 4,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "kai-jiew-vhh",
+          "ingredientIndex": 5,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "savulohi-avokadokulho",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "savulohi-avokadokulho",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "bun-cha-hanoi",
+          "ingredientIndex": 11,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "bibimbap",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "bibimbap",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "bibimbap",
+          "ingredientIndex": 4,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "bibimbap",
+          "ingredientIndex": 5,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "chow-mein",
+          "ingredientIndex": 4,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "chow-mein",
+          "ingredientIndex": 5,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "dan-dan-nuudelit",
+          "ingredientIndex": 11,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "goi-cuon",
+          "ingredientIndex": 6,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "hapanimela-porsas",
+          "ingredientIndex": 5,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "idli-sambar",
+          "ingredientIndex": 4,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "intialainen-aloo-paratha",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "lanttulaatikko-kermainen",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "uunimakkara-sipulipedilla",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "lindstrominpihvit-kaalilla",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "lindstrominpihvit-kaalilla",
+          "ingredientIndex": 7,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kana-yakitori-kaalilla",
+          "ingredientIndex": 5,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kana-yakitori-kaalilla",
+          "ingredientIndex": 8,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kana-enchilada-kukkakaalivuoka",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "karjalanpaisti-vhh",
+          "ingredientIndex": 7,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kerala-kalacurry",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kantonilainen-hoyrytetty-kala",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "thai-khao-tom-katkaravuilla",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "thai-khao-tom-katkaravuilla",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "lahi-ita-kikhernejauho-yrttilettu",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "lahi-ita-kikhernejauho-yrttilettu",
+          "ingredientIndex": 4,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "korealainen-yachaejuk-kasvisjuk",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "korealainen-yachaejuk-kasvisjuk",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "malesialainen-congee-inkivaarilla",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kiinalainen-tomaattimunakas-riisilla",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kiinalainen-tomaattimunakas-riisilla",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kiinalainen-tomaattimunakas-riisilla",
+          "ingredientIndex": 4,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kiinalainen-riisipuuro-kananmunalla",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "paella-valenciana",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "paella-valenciana",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "lanzhou-naudanliha-nuudelikeitto",
+          "ingredientIndex": 8,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "indialainen-poha-maapahkinoilla",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "meksikolainen-paputostada-aamupalaksi",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "intialainen-mannasuurimoupma",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "korealainen-bindaetteok-aamiaiseksi",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "vietnamilainen-banh-cuon-sienilla",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "vietnamilainen-hu-tieu-aamiaiskeitto",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "kiinalainen-bao-munalla",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "japanilainen-soba-aamiaiskeitto",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "indonesialainen-ketoprak-aamiaiskulho",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "meksikolainen-quesadilla-sienilla",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "vietnamilainen-banh-bao-kananmunalla",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "indonesialainen-bakwan-maissifritter",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "korealainen-jumeokbap-merilevalla",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "malesialainen-laksa-lemak-aamiaiseksi",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "malesialainen-mee-goreng-aamunuudeleilla",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "vietnamilainen-banh-mi-munalla",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "vietnamilainen-banh-mi-munalla",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "malesialainen-nasi-lemak-aamiaisella",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "tunisialainen-brik",
+          "ingredientIndex": 4,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "mala-xiang-guo",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "mala-xiang-guo",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "bouillabaisse",
+          "ingredientIndex": 4,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "pav-bhaji",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "pav-bhaji",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "pav-bhaji",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "pekingin-ankka",
+          "ingredientIndex": 5,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "sichuan-hot-pot",
+          "ingredientIndex": 10,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "tunisialainen-ojja",
+          "ingredientIndex": 9,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "japanilainen-miso-tofu-paksoi",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "japanilainen-curry-tofulla",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "japanilainen-curry-tofulla",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "japanilainen-curry-tofulla",
+          "ingredientIndex": 7,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "kookos-lime-kanacurry",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "okonomiyaki-kaaliletut",
+          "ingredientIndex": 0,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "karibia-callaloo-munakas",
+          "ingredientIndex": 0,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "korealainen-gyeran-mari-kasviksilla",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "lahi-ita-labneh-kulho-zaatarilla",
+          "ingredientIndex": 3,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "valimerellinen-pinaatti-fetashakshuka",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "yrttituorejuusto-kinkkurullat",
+          "ingredientIndex": 4,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "miso-lohi-paksoi",
+          "ingredientIndex": 5,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "palak-paneer",
+          "ingredientIndex": 0,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "shoyu-kanakeitto-konjac",
+          "ingredientIndex": 5,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "hunaja-sinappikana-kaalilla",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "vhh-pyttipannu",
+          "ingredientIndex": 1,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        },
+        {
+          "recipeId": "vhh-pyttipannu",
+          "ingredientIndex": 2,
+          "foodKey": "vegetable",
+          "preparationKey": "vegetable-category"
+        }
+      ]
+    },
+    {
+      "id": "soups-category-mean-gi-49",
+      "recipeCount": 9,
+      "ingredientRowCount": 9,
+      "references": [
+        {
+          "recipeId": "jauheliha-kaalikeitto-vhh",
+          "ingredientIndex": 3,
+          "foodKey": "soup",
+          "preparationKey": "soup-category"
+        },
+        {
+          "recipeId": "congee-riisipuuro",
+          "ingredientIndex": 1,
+          "foodKey": "soup",
+          "preparationKey": "soup-category"
+        },
+        {
+          "recipeId": "khao-soi-vhh-konjac",
+          "ingredientIndex": 5,
+          "foodKey": "soup",
+          "preparationKey": "soup-category"
+        },
+        {
+          "recipeId": "kanakeitto-pinaatti-sitruuna",
+          "ingredientIndex": 1,
+          "foodKey": "soup",
+          "preparationKey": "soup-category"
+        },
+        {
+          "recipeId": "tom-yum-goong-vhh",
+          "ingredientIndex": 3,
+          "foodKey": "soup",
+          "preparationKey": "soup-category"
+        },
+        {
+          "recipeId": "tom-kha-gai-vhh",
+          "ingredientIndex": 2,
+          "foodKey": "soup",
+          "preparationKey": "soup-category"
+        },
+        {
+          "recipeId": "thai-khao-tom-katkaravuilla",
+          "ingredientIndex": 4,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-lablabi",
+          "ingredientIndex": 4,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-bissara",
+          "ingredientIndex": 4,
+          "foodKey": null,
+          "preparationKey": null
+        }
+      ]
+    },
+    {
+      "id": "coconut-milk-porridge-gi-31",
+      "recipeCount": 0,
+      "ingredientRowCount": 0,
+      "references": []
+    },
+    {
+      "id": "asian-regional-category-mean-gi-60",
+      "recipeCount": 8,
+      "ingredientRowCount": 8,
+      "references": [
+        {
+          "recipeId": "massaman-curry-kanalla-vhh",
+          "ingredientIndex": 1,
+          "foodKey": "curry-paste",
+          "preparationKey": "asian-regional-food-category"
+        },
+        {
+          "recipeId": "punainen-kanacurry-vhh",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "thai-vihrea-curry-kanalla-vhh",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "panang-curry-kanalla-vhh",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "keltainen-kanacurry-vhh",
+          "ingredientIndex": 2,
+          "foodKey": "curry-paste",
+          "preparationKey": "asian-regional-food-category"
+        },
+        {
+          "recipeId": "khao-soi-vhh-konjac",
+          "ingredientIndex": 2,
+          "foodKey": "curry-paste",
+          "preparationKey": "asian-regional-food-category"
+        },
+        {
+          "recipeId": "kiinalainen-bao-munalla",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "pekingin-ankka",
+          "ingredientIndex": 7,
+          "foodKey": null,
+          "preparationKey": null
+        }
+      ]
+    },
+    {
+      "id": "nuts-category-mean-gi-22",
+      "recipeCount": 26,
+      "ingredientRowCount": 28,
+      "references": [
+        {
+          "recipeId": "massaman-curry-kanalla-vhh",
+          "ingredientIndex": 4,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "gulab-jamun",
+          "ingredientIndex": 4,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "pad-thai-vhh-konjac",
+          "ingredientIndex": 9,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "rahka-marjakerroskulho",
+          "ingredientIndex": 4,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "som-tam-vhh-kurkkuna",
+          "ingredientIndex": 3,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "vhh-mustikkapiirakka",
+          "ingredientIndex": 0,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "keto-kauralesesampylat",
+          "ingredientIndex": 2,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "dan-dan-nuudelit",
+          "ingredientIndex": 9,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "intialainen-ven-pongal",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "indonesialainen-ketoprak-aamiaiskulho",
+          "ingredientIndex": 3,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "japanilainen-kabocha-puuro",
+          "ingredientIndex": 3,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "korealainen-tofu-kimchi-aamiaiskulho",
+          "ingredientIndex": 3,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "valimerellinen-tahinipuuro",
+          "ingredientIndex": 1,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+          "ingredientIndex": 2,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "japanilainen-okayu-umeboshipluumulla",
+          "ingredientIndex": 3,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "vietnamilainen-xoi-maapahkinalla",
+          "ingredientIndex": 1,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "vietnamilainen-xoi-maapahkinalla",
+          "ingredientIndex": 2,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "kiinalainen-musta-seesamipuuro",
+          "ingredientIndex": 0,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "lahi-ita-pistaasijogurtti",
+          "ingredientIndex": 1,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "kung-pao-kana",
+          "ingredientIndex": 7,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "keto-joulutortut",
+          "ingredientIndex": 0,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "valimerellinen-jogurttikulho-hunajalla",
+          "ingredientIndex": 1,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "okonomiyaki-kaaliletut",
+          "ingredientIndex": 2,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "okonomiyaki-kaaliletut",
+          "ingredientIndex": 8,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "valimerellinen-ricotta-persikkakulho",
+          "ingredientIndex": 2,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+          "ingredientIndex": 3,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "pellava-puuro-pahkinoilla",
+          "ingredientIndex": 5,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        },
+        {
+          "recipeId": "miso-lohi-paksoi",
+          "ingredientIndex": 6,
+          "foodKey": "peanut",
+          "preparationKey": "nuts-category-mean"
+        }
+      ]
+    },
+    {
+      "id": "bakery-products-category-mean-gi-58",
+      "recipeCount": 0,
+      "ingredientRowCount": 0,
+      "references": []
+    },
+    {
+      "id": "bread-category-mean-gi-64",
+      "recipeCount": 12,
+      "ingredientRowCount": 12,
+      "references": [
+        {
+          "recipeId": "vada-pav",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "souvlaki",
+          "ingredientIndex": 9,
+          "foodKey": "bread-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "gazpacho",
+          "ingredientIndex": 8,
+          "foodKey": "bread-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "intialainen-aloo-paratha",
+          "ingredientIndex": 0,
+          "foodKey": "bread-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "lahi-ita-fattet-hummus",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-lablabi",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "meksikolainen-molletes-pico-de-gallolla",
+          "ingredientIndex": 0,
+          "foodKey": "bread-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "vietnamilainen-banh-mi-munalla",
+          "ingredientIndex": 0,
+          "foodKey": "bread-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "bouillabaisse",
+          "ingredientIndex": 12,
+          "foodKey": "bread-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "pav-bhaji",
+          "ingredientIndex": 11,
+          "foodKey": "bread-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "tunisialainen-ojja",
+          "ingredientIndex": 10,
+          "foodKey": "bread-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "lahi-ita-zaatar-munat",
+          "ingredientIndex": 1,
+          "foodKey": "bread-category-mean",
+          "preparationKey": "category-mean"
+        }
+      ]
+    },
+    {
+      "id": "potatoes-category-mean-gi-71",
+      "recipeCount": 8,
+      "ingredientRowCount": 8,
+      "references": [
+        {
+          "recipeId": "vada-pav",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "marjakiisseli-vaniljakastikkeella",
+          "ingredientIndex": 3,
+          "foodKey": "potatoes-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "kreikkalainen-moussaka",
+          "ingredientIndex": 1,
+          "foodKey": "potatoes-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-maakouda",
+          "ingredientIndex": 0,
+          "foodKey": "potatoes-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "intialainen-masala-dosa",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "korealainen-bataatti-riisikulho",
+          "ingredientIndex": 0,
+          "foodKey": "potatoes-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "bouillabaisse",
+          "ingredientIndex": 11,
+          "foodKey": "potatoes-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "pav-bhaji",
+          "ingredientIndex": 0,
+          "foodKey": "potatoes-category-mean",
+          "preparationKey": "category-mean"
+        }
+      ]
+    },
+    {
+      "id": "pasta-category-mean-gi-52",
+      "recipeCount": 7,
+      "ingredientRowCount": 7,
+      "references": [
+        {
+          "recipeId": "harira",
+          "ingredientIndex": 10,
+          "foodKey": "pasta-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "chow-mein",
+          "ingredientIndex": 0,
+          "foodKey": "pasta-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "dan-dan-nuudelit",
+          "ingredientIndex": 0,
+          "foodKey": "pasta-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "vietnamilainen-hu-tieu-aamiaiskeitto",
+          "ingredientIndex": 0,
+          "foodKey": "pasta-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "japanilainen-soba-aamiaiskeitto",
+          "ingredientIndex": 0,
+          "foodKey": "pasta-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "malesialainen-laksa-lemak-aamiaiseksi",
+          "ingredientIndex": 0,
+          "foodKey": "pasta-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "malesialainen-mee-goreng-aamunuudeleilla",
+          "ingredientIndex": 0,
+          "foodKey": "pasta-category-mean",
+          "preparationKey": "category-mean"
+        }
+      ]
+    },
+    {
+      "id": "rice-category-mean-gi-67",
+      "recipeCount": 49,
+      "ingredientRowCount": 50,
+      "references": [
+        {
+          "recipeId": "medu-vada",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "larb-moo-vhh",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "bulgogi",
+          "ingredientIndex": 1,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "congee-riisipuuro",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "hyderabadi-kanabiryani",
+          "ingredientIndex": 1,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "bibimbap",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "goi-cuon",
+          "ingredientIndex": 2,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "idli-sambar",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "indonesialainen-bubur-sumsum",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "indonesialainen-bubur-ayam-kanariisipuuro",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "indonesialainen-serabi-kookospannukakku",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "pho-bo",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "karibia-kookosriisi-pavuilla",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "thai-khao-tom-katkaravuilla",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "korealainen-yachaejuk-kasvisjuk",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "malesialainen-congee-inkivaarilla",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kiinalainen-tomaattimunakas-riisilla",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kiinalainen-riisipuuro-kananmunalla",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "thai-jok-kanalla",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "thai-porsasjok",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "paella-valenciana",
+          "ingredientIndex": 1,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "char-siu",
+          "ingredientIndex": 4,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "char-siu",
+          "ingredientIndex": 8,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "intialainen-ven-pongal",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "korealainen-kongjuk-soijapapu-riisipuuro",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "indialainen-poha-maapahkinoilla",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "intialainen-pesarattu-mungpavuista",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "masala-dosa",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "intialainen-idli-kookoschutneylla",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "intialainen-masala-dosa",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "vietnamilainen-chao-ga-kanapuuro",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "korealainen-gyeranbap-riisikulho",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "thai-kookosriisi-mangolla",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "korealainen-bataatti-riisikulho",
+          "ingredientIndex": 1,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "japanilainen-dashimaki-tamago-aamiaislautasella",
+          "ingredientIndex": 3,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "japanilainen-kabocha-puuro",
+          "ingredientIndex": 1,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "korealainen-tofu-kimchi-aamiaiskulho",
+          "ingredientIndex": 2,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "korealainen-jumeokbap-merilevalla",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "malesialainen-kuih-seri-muka",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "malesialainen-nasi-lemak-aamiaisella",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "japanilainen-natto-riisikulho",
+          "ingredientIndex": 1,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "japanilainen-okayu-umeboshipluumulla",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "japanilainen-onigiri-lohella",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "japanilainen-yaki-onigiri-misolla",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "kiinalainen-musta-seesamipuuro",
+          "ingredientIndex": 1,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "kung-pao-kana",
+          "ingredientIndex": 13,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "japanilainen-tamago-kake-gohan",
+          "ingredientIndex": 0,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "indonesialainen-tempeh-munakulho",
+          "ingredientIndex": 2,
+          "foodKey": "rice-category-mean",
+          "preparationKey": "category-mean"
+        }
+      ]
+    },
+    {
+      "id": "sugar-syrups-category-mean-gi-58",
+      "recipeCount": 22,
+      "ingredientRowCount": 29,
+      "references": [
+        {
+          "recipeId": "gulab-jamun",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "butter-chicken",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "meheva-suklaakakku",
+          "ingredientIndex": 3,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "marjakiisseli-vaniljakastikkeella",
+          "ingredientIndex": 2,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "marjakiisseli-vaniljakastikkeella",
+          "ingredientIndex": 8,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "marjakiisseli-vaniljakastikkeella",
+          "ingredientIndex": 9,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "pannacotta-marjakastikkeella",
+          "ingredientIndex": 2,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "pannacotta-marjakastikkeella",
+          "ingredientIndex": 3,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "pannacotta-marjakastikkeella",
+          "ingredientIndex": 6,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "baozi",
+          "ingredientIndex": 3,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "bulgogi",
+          "ingredientIndex": 3,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "bun-cha-hanoi",
+          "ingredientIndex": 4,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "bun-cha-hanoi",
+          "ingredientIndex": 9,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "chow-mein",
+          "ingredientIndex": 6,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "goi-cuon",
+          "ingredientIndex": 8,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "hapanimela-porsas",
+          "ingredientIndex": 10,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "indonesialainen-bubur-sumsum",
+          "ingredientIndex": 2,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "indonesialainen-serabi-kookospannukakku",
+          "ingredientIndex": 3,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "dim-sum",
+          "ingredientIndex": 3,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "dim-sum",
+          "ingredientIndex": 8,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "lanttulaatikko-kermainen",
+          "ingredientIndex": 4,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "pho-bo",
+          "ingredientIndex": 9,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "char-siu",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "char-siu",
+          "ingredientIndex": 7,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "hernekeitto-savupotkalla",
+          "ingredientIndex": 7,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-baghrir",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "kung-pao-kana",
+          "ingredientIndex": 11,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "keto-joulutortut",
+          "ingredientIndex": 4,
+          "foodKey": "sugar-syrups-category-mean",
+          "preparationKey": "category-mean"
+        }
+      ]
+    },
+    {
+      "id": "fruit-category-mean-gi-51",
+      "recipeCount": 41,
+      "ingredientRowCount": 46,
+      "references": [
+        {
+          "recipeId": "pani-puri",
+          "ingredientIndex": 4,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "marjakiisseli-vaniljakastikkeella",
+          "ingredientIndex": 0,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "pannacotta-marjakastikkeella",
+          "ingredientIndex": 5,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "siemengranola-jogurtilla",
+          "ingredientIndex": 7,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "harira",
+          "ingredientIndex": 12,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "souvlaki",
+          "ingredientIndex": 2,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "tabbouleh",
+          "ingredientIndex": 5,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "vhh-omenapiirakka",
+          "ingredientIndex": 4,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "vhh-raparperipiirakka",
+          "ingredientIndex": 3,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "vhh-mansikkakakku",
+          "ingredientIndex": 6,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "vhh-brita-kakku",
+          "ingredientIndex": 8,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "vhh-runebergintortut",
+          "ingredientIndex": 7,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "maksalaatikko-kukkakaalilla",
+          "ingredientIndex": 8,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "pad-thai-vhh-konjac",
+          "ingredientIndex": 5,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "rahka-marjakerroskulho",
+          "ingredientIndex": 2,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "rahka-marjakerroskulho",
+          "ingredientIndex": 3,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "kanakeitto-pinaatti-sitruuna",
+          "ingredientIndex": 7,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "vhh-mustikkapiirakka",
+          "ingredientIndex": 5,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "marjainen-chiavanukas",
+          "ingredientIndex": 3,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "marjainen-chiavanukas",
+          "ingredientIndex": 4,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "uunilohi-smetanakuorrutteella",
+          "ingredientIndex": 3,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "savulohi-avokadokulho",
+          "ingredientIndex": 5,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "goi-cuon",
+          "ingredientIndex": 10,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "hapanimela-porsas",
+          "ingredientIndex": 7,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "idli-sambar",
+          "ingredientIndex": 7,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "kerala-kalacurry",
+          "ingredientIndex": 5,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "falafel",
+          "ingredientIndex": 9,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "falafel",
+          "ingredientIndex": 13,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
+          "ingredientIndex": 1,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "valimerellinen-tahinipuuro",
+          "ingredientIndex": 3,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "thai-roti-munalla-banaanilla",
+          "ingredientIndex": 1,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "karibia-bammy-kassavaleipa",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "thai-papaijajogurtti",
+          "ingredientIndex": 0,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "thai-papaijajogurtti",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "lahi-ita-pistaasijogurtti",
+          "ingredientIndex": 3,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "karibia-plantain-aamiaislautanen",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "tunisialainen-brik",
+          "ingredientIndex": 7,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "vietnamilainen-papaija-kookospuuro",
+          "ingredientIndex": 2,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "vietnamilainen-papaija-kookospuuro",
+          "ingredientIndex": 3,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+          "ingredientIndex": 2,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "valimerellinen-jogurttikulho-hunajalla",
+          "ingredientIndex": 3,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "valimerellinen-ricotta-persikkakulho",
+          "ingredientIndex": 1,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+          "ingredientIndex": 1,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "pellava-puuro-pahkinoilla",
+          "ingredientIndex": 6,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
+          "ingredientIndex": 7,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "kana-tagine-sitruunalla",
+          "ingredientIndex": 6,
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean"
+        }
+      ]
+    },
+    {
+      "id": "asian-indian-category-mean-gi-65",
+      "recipeCount": 1,
+      "ingredientRowCount": 1,
+      "references": [
+        {
+          "recipeId": "vada-pav",
+          "ingredientIndex": 1,
+          "foodKey": null,
+          "preparationKey": null
+        }
+      ]
+    },
+    {
+      "id": "potato-boiled-preparation-analogue-gi-66",
+      "recipeCount": 3,
+      "ingredientRowCount": 3,
+      "references": [
+        {
+          "recipeId": "samosa",
+          "ingredientIndex": 1,
+          "foodKey": "potato",
+          "preparationKey": "boiled-unspecified"
+        },
+        {
+          "recipeId": "pani-puri",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "lohikeitto-kuohukermalla",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        }
+      ]
+    },
+    {
+      "id": "potato-mashed-preparation-analogue-gi-73",
+      "recipeCount": 1,
+      "ingredientRowCount": 1,
+      "references": [
+        {
+          "recipeId": "aloo-paratha",
+          "ingredientIndex": 1,
+          "foodKey": "potato",
+          "preparationKey": "mashed-unspecified"
+        }
+      ]
+    },
+    {
+      "id": "dark-chocolate-international-tables-mean-gi-29",
+      "recipeCount": 1,
+      "ingredientRowCount": 2,
+      "references": [
+        {
+          "recipeId": "meheva-suklaakakku",
+          "ingredientIndex": 0,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "meheva-suklaakakku",
+          "ingredientIndex": 7,
+          "foodKey": null,
+          "preparationKey": null
+        }
+      ]
+    },
+    {
+      "id": "corn-tortilla-noriega-2000-glucose-estimate",
+      "recipeCount": 5,
+      "ingredientRowCount": 5,
+      "references": [
+        {
+          "recipeId": "meksikolainen-aamiais-tacot-mustapavuilla",
+          "ingredientIndex": 3,
+          "foodKey": "corn-tortilla",
+          "preparationKey": "commercial-corn-tortilla"
+        },
+        {
+          "recipeId": "meksikolainen-paputostada-aamupalaksi",
+          "ingredientIndex": 2,
+          "foodKey": null,
+          "preparationKey": null
+        },
+        {
+          "recipeId": "meksikolainen-chilaquiles-verdes",
+          "ingredientIndex": 0,
+          "foodKey": "corn-tortilla",
+          "preparationKey": "commercial-corn-tortilla"
+        },
+        {
+          "recipeId": "meksikolainen-quesadilla-sienilla",
+          "ingredientIndex": 0,
+          "foodKey": "corn-tortilla",
+          "preparationKey": "commercial-corn-tortilla"
+        },
+        {
+          "recipeId": "meksikolainen-munakokkeli-pico-de-gallolla",
+          "ingredientIndex": 3,
+          "foodKey": "corn-tortilla",
+          "preparationKey": "commercial-corn-tortilla"
+        }
+      ]
+    },
+    {
+      "id": "couscous-groats-rozanska-2020-gi-99",
+      "recipeCount": 1,
+      "ingredientRowCount": 1,
+      "references": [
+        {
+          "recipeId": "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+          "ingredientIndex": 0,
+          "foodKey": "couscous-groats",
+          "preparationKey": "cooked-couscous-unspecified"
+        }
+      ]
+    },
+    {
+      "id": "millet-groats-rozanska-2020-gi-56-2",
+      "recipeCount": 1,
+      "ingredientRowCount": 1,
+      "references": [
+        {
+          "recipeId": "kiinalainen-hirssipuuro-taateleilla",
+          "ingredientIndex": 0,
+          "foodKey": "millet-groats",
+          "preparationKey": "cooked-millet-groats"
+        }
+      ]
+    },
+    {
+      "id": "rice-noodles-dried-boiled-chan-2001-gi-61",
+      "recipeCount": 4,
+      "ingredientRowCount": 4,
+      "references": [
+        {
+          "recipeId": "bun-cha-hanoi",
+          "ingredientIndex": 2,
+          "foodKey": "rice-noodles-dried",
+          "preparationKey": "dried-rice-noodles-boiled"
+        },
+        {
+          "recipeId": "indonesialainen-ketoprak-aamiaiskulho",
+          "ingredientIndex": 1,
+          "foodKey": "rice-noodles-dried",
+          "preparationKey": "dried-rice-noodles-boiled"
+        },
+        {
+          "recipeId": "vietnamilainen-pho-ga-aamuksi",
+          "ingredientIndex": 0,
+          "foodKey": "rice-noodles-dried",
+          "preparationKey": "dried-rice-noodles-boiled"
+        },
+        {
+          "recipeId": "thai-riisinuudelikeitto-aamuksi",
+          "ingredientIndex": 0,
+          "foodKey": "rice-noodles-dried",
+          "preparationKey": "dried-rice-noodles-boiled"
+        }
+      ]
+    },
+    {
+      "id": "honey-category-mean-gi-55-2002",
+      "recipeCount": 2,
+      "ingredientRowCount": 2,
+      "references": [
+        {
+          "recipeId": "valimerellinen-jogurttikulho-hunajalla",
+          "ingredientIndex": 2,
+          "foodKey": "honey-category-mean",
+          "preparationKey": "category-mean"
+        },
+        {
+          "recipeId": "hunaja-sinappikana-kaalilla",
+          "ingredientIndex": 3,
+          "foodKey": "honey-category-mean",
+          "preparationKey": "category-mean"
+        }
+      ]
+    },
+    {
+      "id": "mango-raw-mean-gi-51-2002",
+      "recipeCount": 2,
+      "ingredientRowCount": 2,
+      "references": [
+        {
+          "recipeId": "thai-kookosriisi-mangolla",
+          "ingredientIndex": 2,
+          "foodKey": "mango",
+          "preparationKey": "raw"
+        },
+        {
+          "recipeId": "karibia-mango-limejogurtti",
+          "ingredientIndex": 0,
+          "foodKey": "mango",
+          "preparationKey": "raw"
+        }
+      ]
+    },
+    {
+      "id": "pear-raw-mean-gi-38-2002",
+      "recipeCount": 1,
+      "ingredientRowCount": 1,
+      "references": [
+        {
+          "recipeId": "bulgogi",
+          "ingredientIndex": 6,
+          "foodKey": "pear",
+          "preparationKey": "raw"
+        }
+      ]
+    },
+    {
+      "id": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
+      "recipeCount": 3,
+      "ingredientRowCount": 3,
+      "references": [
+        {
+          "recipeId": "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+          "ingredientIndex": 1,
+          "foodKey": "dried-date-tamer",
+          "preparationKey": "tamer-stage-as-sold"
+        },
+        {
+          "recipeId": "kiinalainen-hirssipuuro-taateleilla",
+          "ingredientIndex": 1,
+          "foodKey": "dried-date-tamer",
+          "preparationKey": "tamer-stage-as-sold"
+        },
+        {
+          "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+          "ingredientIndex": 1,
+          "foodKey": "dried-date-tamer",
+          "preparationKey": "tamer-stage-as-sold"
+        }
+      ]
+    },
+    {
+      "id": "semolina-steamed-gelatinized-mani-1992-gi-55",
+      "recipeCount": 0,
+      "ingredientRowCount": 0,
+      "references": []
+    },
+    {
+      "id": "orange-navel-2021-gi-45",
+      "recipeCount": 1,
+      "ingredientRowCount": 1,
+      "references": [
+        {
+          "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+          "ingredientIndex": 2,
+          "foodKey": "orange",
+          "preparationKey": "raw-orange"
+        }
+      ]
+    }
+  ],
+  "tomatoReview": {
+    "id": "GK006-F04",
+    "sourceId": "tomato-raw-cooked-sauce-analogue-gi-22",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/pull/982#issuecomment-7158880520",
+    "scope": "Preparation assessment of 31 whole-raw rows reported by Chat-2; 3 cooked-in-sauce and 5 missing keys derived from original input. Not independently re-reviewed FI instructions in this compilation.",
+    "registryPreparationKey": "whole-raw",
+    "groups": {
+      "HEAT_TREATMENT_REPORTED": 20,
+      "NO_ACTUAL_COOKING_REPORTED": 10,
+      "AMBIGUOUS_REPORTED": 1,
+      "COOKED_IN_SAUCE_INPUT_KEY": 3,
+      "MISSING_PREPARATION_INPUT_KEY": 5
+    },
+    "references": [
+      {
+        "recipeId": "chili-con-carne-kukkakaaliriisi",
+        "ingredientIndex": 3,
+        "foodKey": "tomato",
+        "preparationKey": "cooked-in-sauce",
+        "reviewGroup": "COOKED_IN_SAUCE_INPUT_KEY",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "munakoiso-jauhelihavuoka-vhh",
+        "ingredientIndex": 2,
+        "foodKey": "tomato",
+        "preparationKey": "cooked-in-sauce",
+        "reviewGroup": "COOKED_IN_SAUCE_INPUT_KEY",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "lahi-ita-kikherne-shakshuka",
+        "ingredientIndex": 1,
+        "foodKey": "tomato",
+        "preparationKey": "cooked-in-sauce",
+        "reviewGroup": "COOKED_IN_SAUCE_INPUT_KEY",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "chole-bhature",
+        "ingredientIndex": 1,
+        "foodKey": null,
+        "preparationKey": null,
+        "reviewGroup": "MISSING_PREPARATION_INPUT_KEY",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "butter-chicken",
+        "ingredientIndex": 1,
+        "foodKey": null,
+        "preparationKey": null,
+        "reviewGroup": "MISSING_PREPARATION_INPUT_KEY",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "uunikanapasta-kesakurpitsa",
+        "ingredientIndex": 1,
+        "foodKey": null,
+        "preparationKey": null,
+        "reviewGroup": "MISSING_PREPARATION_INPUT_KEY",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "pizza-margherita",
+        "ingredientIndex": 4,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "kreikkalainen-moussaka",
+        "ingredientIndex": 4,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "souvlaki",
+        "ingredientIndex": 10,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "NO_ACTUAL_COOKING_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "gazpacho",
+        "ingredientIndex": 0,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "NO_ACTUAL_COOKING_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "tabbouleh",
+        "ingredientIndex": 2,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "NO_ACTUAL_COOKING_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "chettinad-kana",
+        "ingredientIndex": 2,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "raejuusto-pesto-kasviskulho",
+        "ingredientIndex": 1,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "NO_ACTUAL_COOKING_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "kesakurpitsalasagne-vhh",
+        "ingredientIndex": 2,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "italian-pata",
+        "ingredientIndex": 1,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "valimerellinen-menemen-fetalla",
+        "ingredientIndex": 1,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "som-tam-vhh-kurkkuna",
+        "ingredientIndex": 1,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "NO_ACTUAL_COOKING_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "tom-yum-goong-vhh",
+        "ingredientIndex": 10,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "ketopizza-pofiber-pohjalla",
+        "ingredientIndex": 4,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "halloumimunakas",
+        "ingredientIndex": 2,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "yum-woon-sen-vhh",
+        "ingredientIndex": 3,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "NO_ACTUAL_COOKING_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "kurkku-oliivi-aamiaiskulho",
+        "ingredientIndex": 2,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "NO_ACTUAL_COOKING_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "kana-enchilada-kukkakaalivuoka",
+        "ingredientIndex": 2,
+        "foodKey": null,
+        "preparationKey": null,
+        "reviewGroup": "MISSING_PREPARATION_INPUT_KEY",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "kanapyorykat-tomaattikastike",
+        "ingredientIndex": 5,
+        "foodKey": null,
+        "preparationKey": null,
+        "reviewGroup": "MISSING_PREPARATION_INPUT_KEY",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "meksikolainen-huevos-divorciados",
+        "ingredientIndex": 1,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "meksikolainen-molletes-pico-de-gallolla",
+        "ingredientIndex": 3,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "NO_ACTUAL_COOKING_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "intialainen-besan-chilla",
+        "ingredientIndex": 1,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "AMBIGUOUS_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "valimerellinen-halloumi-tomaattileipa",
+        "ingredientIndex": 1,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "NO_ACTUAL_COOKING_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "meksikolainen-munakokkeli-pico-de-gallolla",
+        "ingredientIndex": 1,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "NO_ACTUAL_COOKING_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "dal-makhani",
+        "ingredientIndex": 7,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "bouillabaisse",
+        "ingredientIndex": 6,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "pav-bhaji",
+        "ingredientIndex": 8,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "tunisialainen-ojja",
+        "ingredientIndex": 3,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "thai-kananmunat-kookoscurryssa",
+        "ingredientIndex": 3,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "meksikolainen-huevos-a-la-mexicana",
+        "ingredientIndex": 1,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "karibia-ackee-ja-suolakala",
+        "ingredientIndex": 2,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "karibia-jamaikalainen-munakokkeli",
+        "ingredientIndex": 1,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "valimerellinen-pinaatti-fetashakshuka",
+        "ingredientIndex": 1,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      },
+      {
+        "recipeId": "kreikkalainen-kanavuoka-oliiveilla",
+        "ingredientIndex": 1,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "reviewGroup": "HEAT_TREATMENT_REPORTED",
+        "newBindingAuthorized": false
+      }
+    ],
+    "action": "Prioritize canonical capture/source/impact/map and recipe-specific preparation/product review. No mass rebinding, no matchValid relaxation, no GI value change; determine retained reviewed analogue, explicit uncertainty or withholding only after exact review.",
+    "currentCanonicalCaptureRequired": true,
+    "runtimeChangeAuthorized": false
+  }
+}

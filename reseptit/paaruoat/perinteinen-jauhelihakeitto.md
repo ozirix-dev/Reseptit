@@ -4,7 +4,7 @@ recipe_id: perinteinen-jauhelihakeitto
 url_slug: perinteinen-jauhelihakeitto
 category: paaruoka
 language: fi
-status: draft
+status: published
 servings: 6
 time_total_min: 60
 difficulty: "helppo"
@@ -22,25 +22,33 @@ translation_languages:
   - sv
   - th
 translation_status:
-  en: draft
-  sv: draft
-  th: draft
+  en: published
+  sv: published
+  th: published
+image:
+  src: paaruoat/perinteinen-jauhelihakeitto.webp
+  alt: "Kulhollinen jauhelihakeittoa, jossa näkyy perunaa, juureksia, purjoa ja persiljaa; tekoälykuvitus"
+  width: 960
+  height: 640
+carbs_net_per_serving_g: 23.29
+protein_per_serving_g: 20.62
+fat_per_serving_g: 10.46
 ingredients:
   - amount: 500
     unit: "g"
-    item: "naudan jauhelihaa"
+    item: "naudan paistijauhelihaa (rasvaa noin 9 %)"
   - amount: 700
     unit: "g"
     item: "kuorittuja perunoita"
   - amount: 250
     unit: "g"
-    item: "porkkanoita"
+    item: "kuorittuja porkkanoita"
   - amount: 150
     unit: "g"
-    item: "lanttua"
+    item: "kuorittua lanttua"
   - amount: 100
     unit: "g"
-    item: "sipulia"
+    item: "kuorittua keltasipulia"
   - amount: 50
     unit: "g"
     item: "purjoa"
@@ -63,11 +71,11 @@ ingredients:
 
 # Perinteinen jauhelihakeitto
 
-Tavallinen suomalainen arkikeitto perunasta, juureksista ja ruskistetusta jauhelihasta ilman VHH-muutoksia.
+Peruna ja juurekset kypsyvät samassa kattilassa. Pannulla ruskistettu paistijauheliha lisätään loppuvaiheessa.
 
 ## Valmistus
 
-1. Kuori ja kuutioi perunat ja juurekset. Hienonna sipuli ja viipaloi purjo.
+1. Kuori ja kuutioi perunat ja juurekset. Hienonna sipuli ja viipaloi purjo. Punnitse kasvikset kuorittuina ja siistittyinä.
 2. Kuumenna vesi ja liemitiiviste. Lisää lanttu ja porkkana; keitä noin 10 minuuttia.
 3. Lisää perunat ja purjo. Keitä vielä noin 15 minuuttia, kunnes kasvikset ovat pehmeitä.
 4. Ruskista sillä välin jauheliha ja sipuli rypsiöljyssä. Kypsennä naudan jauheliha kauttaaltaan vähintään 70 °C:seen ja lisää pannun sisältö keittoon.
@@ -76,5 +84,6 @@ Tavallinen suomalainen arkikeitto perunasta, juureksista ja ruskistetusta jauhel
 ## Muistiinpanot
 
 - Ainekset sisältävät mahdollisia allergeeneja. Tarkista tuoteselosteet. Ei gluteeniton-väitettä ilman erillistä tarkistusta.
-- Resepti on toimituksellinen luonnos: ei Recipavon koekeittiötestiä, hyväksyttyä ravinto-/GK-laskelmaa eikä kuvaa.
 - Valmistuksen vertailulähde (ohjetta ei kopioitu): https://www.martat.fi/reseptit/jauhelihakeitto-10lle/
+
+- Saatavilla olevat ravintoarvot ovat ainesosiin perustuvia arvioita annosta kohti.

@@ -1,0 +1,102 @@
+{
+  "recipeId": "munavoi-karjalanpiirakoille",
+  "sourceHash": "a1b5d8282fbf76081e97c2bce8f340897b7e35106ed5a33bdc0a0e66f79d5b5c",
+  "calculatedAt": "2026-11-25",
+  "servings": 6,
+  "scope": "Yksi annos reseptin 6 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Neljä kenttää laskettavissa. Annos on kuudesosa levitteestä ilman piirakkaa.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kovaksi keitettyä kananmunaa kuorittuna, noin 4 munaa",
+      "amount": 200,
+      "unit": "g",
+      "state": "kovaksi keitettyä kananmunaa kuorittuna, noin 4 munaa",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-8513-release-20",
+        "name": "KANANMUNA, KEITETTY",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/8513",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        },
+        "state": "kovaksi keitettyä kananmunaa kuorittuna, noin 4 munaa",
+        "retrievedAt": "2026-11-25"
+      }
+    },
+    {
+      "item": "suolatonta voita",
+      "amount": 70,
+      "unit": "g",
+      "state": "suolatonta voita",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-576-release-20",
+        "name": "VOI, SUOLATON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/576",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.19,
+          "fat": 81.3
+        },
+        "state": "suolatonta voita",
+        "retrievedAt": "2026-11-25"
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 1,
+      "unit": "g",
+      "state": "suolaa",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-79-release-20",
+        "name": "RUOKASUOLA, JODIOIMATON, VUORISUOLA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/79",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "state": "suolaa",
+        "retrievedAt": "2026-11-25"
+      }
+    }
+  ],
+  "batchId": "batch-33309"
+}

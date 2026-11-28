@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "mustikkapiirakka-vuokaan",
+  "source_path": "reseptit/leivonnaiset/mustikkapiirakka-vuokaan.md",
+  "source_sha256": "f29ad5e4d90bc8cda2927b9e189bdf85c316a2c9c82b94488cdc8cda7c05e09d",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.valio.fi/reseptit/mustikkapiirakka/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/mustikkapiirakka-vuokaan.json",
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/mustikkapiirakka-vuokaan.webp",
+    "bytes": 135150,
+    "sha256": "d6a918d0bd26d0d6c14ee22402cef586eaaa75fee29f13777345f840c92ae54a",
+    "width": 960,
+    "height": 640,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/mustikkapiirakka-vuokaan.md",
+        "language": "fi",
+        "slug": "mustikkapiirakka-vuokaan",
+        "sha256": "f29ad5e4d90bc8cda2927b9e189bdf85c316a2c9c82b94488cdc8cda7c05e09d",
+        "semantic_sha256": "85f417fd71af33fbc19ade3fb786a6188811853880628209c7aa42a0252c345c"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/mustikkapiirakka-vuokaan.md",
+        "language": "en",
+        "slug": "mustikkapiirakka-vuokaan-en",
+        "sha256": "1af736871718a5eeabd042ae1fcc63ec71302ebcdd6cb9de60aef42d11492ac4",
+        "semantic_sha256": "456a87c687796bb23d58fc9e77211f9173dd491cca99c806e249d7117ae1a4ea"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/mustikkapiirakka-vuokaan.md",
+        "language": "sv",
+        "slug": "mustikkapiirakka-vuokaan-sv",
+        "sha256": "912d860f53abda449fbc60e171edbe6f6c8ac80d2cee0307f9681124a94554d0",
+        "semantic_sha256": "f516e7e0cc15a7406c9b1e7ca980a72630f802aea0c41ffda846c09f3ed8caf0"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/mustikkapiirakka-vuokaan.md",
+        "language": "th",
+        "slug": "mustikkapiirakka-vuokaan-th",
+        "sha256": "bba118eab908f0fe4d903b426feea3858e9f496b5d7fa68b3bc31d48f907e660",
+        "semantic_sha256": "4aad5b58d078d6a0dad206de0d49b5c676140f8d4d71f143439bc6b45a687369"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Pehmeä vehnätaikinapohja ja metsämarjat erottavat VHH-mustikkapiirakasta. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 8 ja kokonaisaika 45 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Juokseva voi-kasviöljyseos ja metsämarjojen täydellinen hiilihydraatti- ja polyolitieto vaativat täsmävertailun."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

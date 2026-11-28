@@ -11,13 +11,18 @@ language: th
 source_language: fi
 source_recipe: reseptit/leivonnaiset/perinteiset-korvapuustit.md
 translation_of: perinteiset-korvapuustit
-status: draft
+status: published
 servings: 30
 time_total_min: 150
 difficulty: "ง่าย"
 tags:
   - "อาหารฟินแลนด์"
   - "อาหารพื้นบ้าน"
+image:
+  src: leivonnaiset/perinteiset-korvapuustit.webp
+  alt: "ขนมปังอบเชยแบบฟินแลนด์ เห็นลายม้วนและน้ำตาลเม็ด ภาพประกอบสร้างด้วยเอไอ"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "ml"
@@ -62,7 +67,7 @@ ingredients:
 
 # ขนมปังอบซินนามอนโรลแบบฟินแลนด์
 
-สูตรอาหารพื้นบ้านฟินแลนด์
+ม้วนแป้งขนมปังหอมกระวานกับไส้อบเชย แล้วโรยน้ำตาลเม็ดก่อนอบ
 
 ## วิธีทำ
 
@@ -74,5 +79,7 @@ ingredients:
 
 ## หมายเหตุ
 
-- ฉบับร่างที่ยังไม่ได้ทดลองทำโดย Recipavo ยังไม่มีภาพ การคำนวณโภชนาการและ GK รวมถึงการตรวจภาษาและสารก่อภูมิแพ้ขั้นสุดท้าย
+- มีข้าวสาลี นม และไข่
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/korvapuustit/
+
+- ยังระบุข้อมูลโภชนาการต่อหนึ่งที่อย่างน่าเชื่อถือไม่ได้

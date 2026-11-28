@@ -1,0 +1,134 @@
+{
+  "recipeId": "riisikakut-maapahkinavoilla-ja-marjoilla",
+  "sourceHash": "3ae97a74d3ffc1b2fe9d5a2a92dd613d4c0dda3709fd500694a8f29fdf7cb766",
+  "calculatedAt": "2026-11-25",
+  "servings": 4,
+  "scope": "Neljä päällystettyä riisikakkua. Laskenta olettaa 8 g yhtä kakkua kohti ja sileän maapähkinävoin ilman lisättyä sokeria tai suolaa. AFCD:n täysjyväriisikakku, mansikka ja mustikka kuvaavat australialaisia vertailutuotteita. Tuotteen ja marjalajin vaihtelu voi muuttaa arviota.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 4,
+      "unit": "kpl",
+      "item": "maustamatonta täysjyväriisikakkua",
+      "state": "Biscuit, savoury, rice cake, from brown rice, plain",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Biscuit, savoury, rice cake, from brown rice, plain. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "gramsPerUnit": 8,
+      "conversionEvidence": "Fineli 31252 ilmoittaa keskikokoisen riisikakun annosmassaksi 8 g. Vertailu AFCD:n täysjyväriisikakulle.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F001147-release-3",
+        "name": "Biscuit, savoury, rice cake, from brown rice, plain",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F001147",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Biscuit, savoury, rice cake, from brown rice, plain",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 76.3,
+          "polyols": 0,
+          "fibre": 3.5,
+          "protein": 8.8,
+          "fat": 3.5
+        }
+      }
+    },
+    {
+      "amount": 40,
+      "unit": "g",
+      "item": "sileää maapähkinävoita",
+      "state": "Peanut butter, smooth & crunchy, no added sugar or salt",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Peanut butter, smooth & crunchy, no added sugar or salt. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F006579-release-3",
+        "name": "Peanut butter, smooth & crunchy, no added sugar or salt",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006579",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Peanut butter, smooth & crunchy, no added sugar or salt",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 9.4,
+          "polyols": 0,
+          "fibre": 6.5,
+          "protein": 24.3,
+          "fat": 54.3
+        }
+      }
+    },
+    {
+      "amount": 120,
+      "unit": "g",
+      "item": "tuoreita mansikoita",
+      "state": "Strawberry, raw",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Strawberry, raw. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F008952-release-3",
+        "name": "Strawberry, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F008952",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Strawberry, raw",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 5.6,
+          "polyols": 0,
+          "fibre": 2.1,
+          "protein": 0.7,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "amount": 40,
+      "unit": "g",
+      "item": "tuoreita mustikoita",
+      "state": "Blueberry, raw",
+      "matchEvidence": "Sovitus lähteen ravintoriviin: Blueberry, raw. Mahdollinen vertailutuotteen poikkeama on määritelty laskennan rajauksissa.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Syötävä osa tai vastaava syötävän annoksen massamuunnos.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Tarjoiltava annos kattaa koko tässä skenaariossa käytetyn syötävän ainesosan.",
+      "record": {
+        "id": "afcd-F001290-release-3",
+        "name": "Blueberry, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F001290",
+        "licence": "FSANZ AFCD Release 3, CC BY-SA 3.0 Australia, Australian-data limitation applies",
+        "retrievedAt": "2026-11-25",
+        "state": "Blueberry, raw",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 10.4,
+          "polyols": 0,
+          "fibre": 3,
+          "protein": 0.5,
+          "fat": 0
+        }
+      }
+    }
+  ],
+  "batchId": "batch-33311"
+}

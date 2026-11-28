@@ -11,17 +11,22 @@ language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/paistetut-muikut.md
 translation_of: paistetut-muikut
-status: draft
+status: published
 servings: 4
 time_total_min: 30
 difficulty: "ง่าย"
 tags:
   - "อาหารฟินแลนด์"
   - "อาหารพื้นบ้าน"
+image:
+  src: paaruoat/paistetut-muikut.webp
+  alt: "ปลาซิกเลอยาทอดคลุกแป้งไรย์บนจาน ภาพประกอบสร้างด้วยเอไอ"
+  width: 960
+  height: 640
 ingredients:
   - amount: 700
     unit: "g"
-    item: "ปลาวินเดซล้างเครื่องในแช่เย็น"
+    item: "ปลาวินเดซที่ควักไส้ออกแล้วและแช่เย็น"
   - amount: 85
     unit: "g"
     item: "แป้งไรย์"
@@ -44,7 +49,7 @@ ingredients:
 
 # ปลาวินเดซทอดคลุกแป้งไรย์แบบฟินแลนด์
 
-สูตรอาหารพื้นบ้านฟินแลนด์
+คลุกปลาวินเดซกับแป้งไรย์และเกล็ดขนมปัง แล้วทอดในกระทะจนกรอบ เสิร์ฟร้อน ๆ กับมันฝรั่งต้ม
 
 ## วิธีทำ
 
@@ -55,5 +60,7 @@ ingredients:
 
 ## หมายเหตุ
 
-- ฉบับร่างที่ยังไม่ได้ทดลองทำโดย Recipavo ยังไม่มีภาพ การคำนวณโภชนาการและ GK รวมถึงการตรวจภาษาและสารก่อภูมิแพ้ขั้นสุดท้าย
+- มีปลา ข้าวไรย์ และนม ตรวจฉลากเกล็ดขนมปังว่ามีข้าวสาลีหรือสารก่อภูมิแพ้อื่นหรือไม่
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/paistetut-muikut/
+
+- ยังระบุข้อมูลโภชนาการต่อหนึ่งที่อย่างน่าเชื่อถือไม่ได้

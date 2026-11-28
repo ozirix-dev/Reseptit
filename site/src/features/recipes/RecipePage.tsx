@@ -1,4 +1,4 @@
-import { EstimateDetails, EstimateSummary, MissingEstimate, OriginalGkCoverageNote } from "../glycemic-load/GlycemicLoadEvidence";
+import { EstimateDetails, EstimateSummary, MissingEstimate, OriginalGkCoverageNote, RecipePrintFallback } from "../glycemic-load/GlycemicLoadEvidence";
 import { RecipeFeedbackButton } from "../feedback/feedback-context";
 import { gkCopy } from "../glycemic-load/glycemic-load-copy";
 import { ChocolateComparison } from './ChocolateComparisonFi';
@@ -111,12 +111,19 @@ export function RecipePage() {
       ? recipe.notesHtml.replace("<strong>GK: ei määritetty.</strong>", "<strong>Numeerista GK-arvoa ei ole määritetty.</strong>")
       : recipe.notesHtml)
     : recipe.notesHtml;
+  const nutritionTitle = nutritionItems.length ? tools.nutritionPerRecipeServing : labels.nutrition;
+  const nutritionContent = (markWithheld: boolean) => <>
+    <p className="recipe-disclosure" data-f25-nutrition-status={markWithheld && withholdNutrition ? "SOURCE_REVIEW_WITHHELD" : undefined}>{withholdNutrition ? "Ravintoarvojen julkaisu on keskeytetty, koska annoksen ainesosakohtainen laskenta tai tuotematch ei ole vielä hyväksyttävä. Lähtöarvoja ei näytetä virheellisen tarkkoina. Katso reseptin lähdehuomautus." : nutritionItems.length ? tools.nutrition : tools.missing}</p>
+    {nutritionItems.length > 0 && nutritionItems.length < Object.keys(recipe.nutrition).length
+      ? <p className="recipe-disclosure">{tools.partialNutrition}</p> : null}
+    {nutritionItems.length ? <dl className="nutrition-list">{nutritionItems.map(([key, value]) => <div key={key}><dt>{labels.nutrients[key]}</dt><dd>{formatIngredientAmount(value, 1, 1, numberLocale)} g</dd></div>)}</dl> : null}
+  </>;
   return <article className="page-section recipe-page"><div className="container container--narrow">
     <nav className="article-breadcrumbs" aria-label={labels.breadcrumb}><Link to={recipe.locale === "fi" ? "/" : `/${recipe.locale === "sv" ? "sv/recept" : `${recipe.locale}/recipes`}/`}>{labels.indexTitle}</Link><span aria-hidden="true">/</span><span>{recipe.title}</span></nav>
     <header className="recipe-header"><p className="eyebrow">{[recipe.category, ...(recipe.additionalCategories ?? [])].map(category => labels.category[category]).join(" · ")}</p><h1>{recipe.title}</h1><p className="article-excerpt">{recipe.description}</p>
       <div className="recipe-actions"><a href="#recipe-instructions" onClick={() => { track("View Instructions"); document.getElementById("recipe-instructions")?.focus(); }}>{tools.jump}</a>{hydrated ? <button type="button" onClick={() => { track("Print Recipe"); window.print(); }}>{tools.print}</button> : null}<RecipeFeedbackButton locale={locale} recipeId={recipe.recipeId} pagePath={recipe.routePath} /></div>
       <div className="recipe-facts">{recipe.timeTotalMin ? <span>{recipe.timeTotalMin} {labels.minutes}</span> : null}{recipe.difficulty ? <span>{labels.difficulty}: {recipe.difficulty}</span> : null}</div>
-      {translations.length > 1 ? <nav className="recipe-languages" aria-label={labels.languages}>{translations.map((entry) => <Link key={entry.locale} hrefLang={entry.locale} aria-current={entry.locale === recipe.locale ? "page" : undefined} to={entry.routePath}>{recipeLocaleName(entry.locale)}</Link>)}</nav> : null}
+      {translations.length > 1 ? <nav className="recipe-languages" aria-label={labels.languages}>{translations.map((entry) => <Link key={entry.locale} lang={entry.locale} hrefLang={entry.locale} aria-current={entry.locale === recipe.locale ? "page" : undefined} to={entry.routePath}>{recipeLocaleName(entry.locale)}</Link>)}</nav> : null}
     </header>
     {reviewNotice ? <aside className="recipe-panel" role="note" data-f25-source-hold={recipe.recipeId}><h2>{reviewNotice.heading}</h2><p>{reviewNotice.details}</p><p>{reviewNotice.allergens}</p></aside> : null}
     {recipe.image ? <RecipeHeroImage key={recipe.image.src} image={recipe.image} /> : null}
@@ -168,7 +175,7 @@ export function RecipePage() {
           {portionEvidence?.alternatives ? <GkAlternatives choices={portionEvidence.alternatives} locale={locale} multiplier={eatenPortion} /> : null}
           {gkClass.rounding ? <p className="recipe-disclosure">{gkClass.rounding}</p> : null}
           {gkMethodLink}
-          <EstimateDetails result={glycemicLoad} locale={locale}
+          <EstimateDetails result={glycemicLoad} locale={locale} recipePrint
             notes={<>
               <EstimateSummary result={glycemicLoad} locale={locale} />
               {glycemicLoad.assessmentType && !ingredientGk && !glycemicLoad.closedRecoveryC && !glycemicLoad.boundedPolyolC ? <p>{modelledNote}</p> : null}
@@ -185,22 +192,21 @@ export function RecipePage() {
           {gkMethodLink}
         </div> : <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status="UNAVAILABLE">
           {glycemicRecipe?.pending ? <p>{portionWords.pending}</p> : null}
-          <MissingEstimate locale={locale} result={gkResult ?? { incompleteReasons: [] }} />
+          <MissingEstimate locale={locale} recipePrint result={gkResult ?? { incompleteReasons: [] }} />
         </div>}
         {!withholdNutrition && portionEvidence?.sideCarbohydrate ? <SideCarbohydrateComparison key={`${recipe.recipeId}:${locale}`}
           side={portionEvidence.sideCarbohydrate} locale={locale} carbs={portionCarbs} multiplier={eatenPortion} interactive={hydrated} /> : null}
-        <details className="gk-evidence__details"><summary>{nutritionItems.length ? tools.nutritionPerRecipeServing : labels.nutrition}</summary>
-          <p className="recipe-disclosure" data-f25-nutrition-status={withholdNutrition ? "SOURCE_REVIEW_WITHHELD" : undefined}>{withholdNutrition ? "Ravintoarvojen julkaisu on keskeytetty, koska annoksen ainesosakohtainen laskenta tai tuotematch ei ole vielä hyväksyttävä. Lähtöarvoja ei näytetä virheellisen tarkkoina. Katso reseptin lähdehuomautus." : nutritionItems.length ? tools.nutrition : tools.missing}</p>
-          {nutritionItems.length > 0 && nutritionItems.length < Object.keys(recipe.nutrition).length
-            ? <p className="recipe-disclosure">{tools.partialNutrition}</p> : null}
-          {nutritionItems.length ? <dl className="nutrition-list">{nutritionItems.map(([key, value]) => <div key={key}><dt>{labels.nutrients[key]}</dt><dd>{formatIngredientAmount(value, 1, 1, numberLocale)} g</dd></div>)}</dl> : null}
+        <details className="gk-evidence__details" data-recipe-print-expanded data-print-recipe-nutrition>
+          <summary>{nutritionTitle}</summary>
+          {nutritionContent(true)}
         </details>
+        <RecipePrintFallback title={nutritionTitle}>{nutritionContent(false)}</RecipePrintFallback>
         {recipe.dietClass ? <p className="recipe-disclosure">{tools.diet}</p> : null}</section>
       {gkVariants.map(variant => <GkOnlyVariantPanel key={variant.versionId}
         variant={variant} locale={recipe.locale} servings={servings} originalHasGk={Boolean(glycemicLoad || portionEvidence?.verbal)}
         originalRecipe={recipe} alternatives={portionEvidence?.versionAlternatives} />)}
       <ChocolateComparison recipeId={recipe.recipeId} locale={recipe.locale} hasGlVariant={hasGkVariant} />
-      {notesHtml ? <section className="recipe-panel"><h2>{labels.notes}</h2><div className="rich-text" dangerouslySetInnerHTML={{ __html: notesHtml }} /></section> : null}
+      {notesHtml ? <section className="recipe-panel recipe-notes"><h2>{labels.notes}</h2><div className="rich-text" dangerouslySetInnerHTML={{ __html: notesHtml }} /></section> : null}
       {relatedGuides.length > 0 && <section className="recipe-panel" aria-labelledby="related-guides-title">
         <h2 id="related-guides-title">Aiheesta Ruokaoppaassa</h2>
         <ul>{relatedGuides.map(article => <li key={article.slug}><Link to={articlePath(article)}>{article.title}</Link></li>)}</ul>

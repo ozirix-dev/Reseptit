@@ -14,6 +14,7 @@ test("suite runner unions and deduplicates matching suites", () => {
     "tests/navigation.browser.test.ts",
     "tests/content-layout.browser.test.ts",
     "tests/feedback.browser.test.ts",
+    "tests/search-retry-focus.browser.test.ts",
   ]);
 });
 
@@ -24,6 +25,7 @@ test("extended suite includes all existing browser checks once", () => {
     "tests/navigation.browser.test.ts",
     "tests/content-layout.browser.test.ts",
     "tests/feedback.browser.test.ts",
+    "tests/search-retry-focus.browser.test.ts",
     "tests/route-loading.browser.test.ts",
     "tests/responsive-images.browser.test.ts",
   ]);

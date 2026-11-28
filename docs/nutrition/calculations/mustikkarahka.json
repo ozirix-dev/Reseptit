@@ -1,0 +1,103 @@
+{
+  "recipeId": "mustikkarahka",
+  "sourceHash": "a9286784266e07cf1283f0914d364b335bd22bd6e1f274c07c3331115b4a5e90",
+  "calculatedAt": "2026-11-25",
+  "servings": 4,
+  "scope": "Yksi annos reseptin 4 annoksesta. Vain listatut ainekset; erikseen ehdotetut lisukkeet jäävät ulkopuolelle. Metsämustikan polyolikenttä puuttuu; rahka on geneerinen vähärasvainen maitorahka.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "tuoreita kotimaisia mustikoita",
+      "amount": 220,
+      "unit": "g",
+      "state": "tuoreita kotimaisia mustikoita",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-442-release-20",
+        "name": "MUSTIKKA, METSÄMUSTIKKA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/442",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": false,
+        "per100g": {
+          "carbohydrate": 10.182,
+          "fibre": 3.1,
+          "polyols": null,
+          "protein": 0.821,
+          "fat": 1.059
+        },
+        "state": "tuoreita kotimaisia mustikoita",
+        "retrievedAt": "2026-11-25"
+      }
+    },
+    {
+      "item": "maustamatonta maitorahkaa (rasvaa alle 0,5 %)",
+      "amount": 350,
+      "unit": "g",
+      "state": "maustamatonta maitorahkaa (rasvaa alle 0,5 %)",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-622-release-20",
+        "name": "RAHKA, MAITORAHKA, MAUSTAMATON, RASVAA <0,5 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/622",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 9.81,
+          "fat": 0.4
+        },
+        "state": "maustamatonta maitorahkaa (rasvaa alle 0,5 %)",
+        "retrievedAt": "2026-11-25"
+      }
+    },
+    {
+      "item": "sokeria",
+      "amount": 24,
+      "unit": "g",
+      "state": "sokeria",
+      "matchEvidence": "Vertaile ainesosaan nimettyä Fineli Release 20 -tietuetta.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Luettelon punnittu käyttömäärä tai syötävän kappaleen annosviite.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Alustava reseptin ainemääräpohjainen skenaario: tämä rivi lasketaan kokonaisuudessaan mukaan. Muun osuuden varmennus tarkastetaan ennen hyväksyntää.",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/1",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20, SUGOH.",
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "state": "sokeria",
+        "retrievedAt": "2026-11-25"
+      }
+    }
+  ],
+  "batchId": "batch-33309",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Metsämustikan polyolikenttä puuttuu; rahka on geneerinen vähärasvainen maitorahka."
+}

@@ -1,6 +1,10 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
 import snapshot from "../../docs/nutrition/recipe-correctness-calculation-history.json";
+import { projectTranslationAuditSource } from "../scripts/translation-audit";
+import { beforeReviewedLocalePrecision, porkServiceNoteSourcePath } from "./history/reviewed-locale-precision";
 
 type Change = { before: unknown; afterSha256: string };
 type Changes = Record<string, Change>;
@@ -36,9 +40,19 @@ export function restoreAuditGk(report: Record<string, any>) {
   return report;
 }
 
-export function restoreAuditInventory(rows: Array<{ recipe_id: string; notes: string }>) {
+export function restoreAuditInventory(rows: Array<{ recipe_id: string; notes: string; source_path: string; source_content_hash: string }>) {
   return rows.map(row => {
     const normalized = { ...row, notes: row.notes.replaceAll("\r\n", "\n") };
+    if (row.source_path === porkServiceNoteSourcePath) {
+      const root = fileURLToPath(new URL("../../", import.meta.url));
+      const source = readFileSync(new URL("../../" + row.source_path, import.meta.url), "utf8").replaceAll("\r\n", "\n");
+      const previous = beforeReviewedLocalePrecision(root, row.source_path, source);
+      const notes = (text: string) => text.split("## Muistiinpanot")[1]?.trim() ?? "";
+      assert.equal(row.source_content_hash, createHash("sha256").update(source).digest("hex"));
+      assert.equal(normalized.notes, notes(projectTranslationAuditSource(row.source_path, source)));
+      normalized.notes = notes(previous);
+      normalized.source_content_hash = createHash("sha256").update(previous).digest("hex");
+    }
     return restore(normalized, snapshot.inventory, row.recipe_id);
   });
 }
