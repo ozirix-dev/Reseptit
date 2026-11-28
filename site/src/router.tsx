@@ -10,7 +10,7 @@ import type { RouteContent } from "@/content/route-data";
 import { SeoMeta } from "@/SeoMeta";
 import { SiteNavigation } from "@/SiteNavigation";
 import { FeedbackFooterButton, FeedbackProvider } from "@/features/feedback/feedback-context";
-import { AnalyticsPrompt, PrivacyPage } from "@/features/privacy/Privacy";
+import { PrivacyPage } from "@/features/privacy/Privacy";
 import { privacyCopy, privacyEmail, privacyLocaleFromPath, privacyPaths } from "@/features/privacy/privacy-copy";
 import type { RecipeLocale } from "@/types/content";
 
@@ -33,7 +33,6 @@ function SiteLayout() {
         </div>
       </header>
       <main id="main" className="site-main" tabIndex={-1}><Outlet /></main>
-      <AnalyticsPrompt locale={locale} />
       <footer className="site-footer"><div className="container"><p>{previewCopy?.footer ?? labels.footer}</p><p className="site-footer__contact"><Link to={privacyPaths[locale]}>{privacyCopy[locale].title}</Link><a href={`mailto:${privacyEmail}`}>{privacyEmail}</a><FeedbackFooterButton locale={locale} /></p><RecipeAbout locale={locale} /></div></footer>
       <ScrollRestoration />
       </div>
