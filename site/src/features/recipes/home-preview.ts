@@ -67,10 +67,10 @@ export const homepageLabels: Record<RecipeLocale, {
   picks: string;
   allRecipes: (count: number) => string;
 }> = {
-  fi: { topics: "Mitä tänään kokattaisiin?", picks: "Poimintoja resepteistä", allRecipes: (count) => `Selaa koko reseptikirjastoa (${count} reseptiä)` },
-  en: { topics: "What shall we cook today?", picks: "Recipe picks", allRecipes: (count) => `Browse all recipes (${count})` },
-  sv: { topics: "Vad ska vi laga idag?", picks: "Recepttips", allRecipes: (count) => `Bläddra bland alla recept (${count})` },
-  th: { topics: "วันนี้ทำอะไรกินดี", picks: "สูตรอาหารที่แนะนำ", allRecipes: (count) => `ดูสูตรอาหารทั้งหมด (${count} สูตร)` },
+  fi: { topics: "Mitä tänään kokattaisiin?", picks: "Kokeile näitä reseptejä", allRecipes: (count) => `Selaa kaikkia reseptejä (${count})` },
+  en: { topics: "What shall we cook today?", picks: "Try these recipes", allRecipes: (count) => `See all recipes (${count})` },
+  sv: { topics: "Vad ska vi laga idag?", picks: "Prova de här recepten", allRecipes: (count) => `Se alla recept (${count})` },
+  th: { topics: "วันนี้ทำอะไรกินดี", picks: "ลองทำเมนูเหล่านี้", allRecipes: (count) => `ดูสูตรอาหารทั้งหมด (${count} สูตร)` },
 };
 
 export const libraryCopy = {
