@@ -65,12 +65,17 @@ function addBrowserSuite(plan, suite) {
   plan.browserSuites.add(suite);
 }
 
+function isKarnivoreGateInput(file) {
+  return /^tuonti\/karnivore\/paaruoat\/[^/]+\.md$/i.test(file) ||
+    /^docs\/reviews\/new-recipes\/karnivore-[a-z0-9-]+\.json$/.test(file);
+}
+
 function fullPlan(paths) {
   return {
     full: true,
     runContent: paths.some((file) =>
       (/^(?:reseptit|kaannokset)\/.+\.md$/i.test(file) && !file.includes("/_mallipohjat/")) ||
-      /^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/i.test(file)),
+      /^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/i.test(file) || isKarnivoreGateInput(file)),
     runNutrition: false,
     runGlycemic: false,
     runTranslationReview: true,
@@ -111,6 +116,10 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false,
   for (const file of normalized) {
     if (file === ".gitignore" && cacheIgnoreOnly) continue;
     if (planningJson.has(file)) continue;
+    if (isKarnivoreGateInput(file)) {
+      plan.runContent = true;
+      continue;
+    }
     // Review prose can also be a sealed approval input.
     if (file.startsWith("docs/research/")) return fallback();
     if (/^reseptit\/.+\.md$/i.test(file)) {
