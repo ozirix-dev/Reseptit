@@ -1,6 +1,7 @@
 import { siteTarget } from "../src/content/site-target";
 import assert from "node:assert/strict";
 import test from "node:test";
+import type { Server } from "node:http";
 import { preview } from "vite";
 import path from "node:path";
 import { launchBrowser } from "./launch-browser";
@@ -8,24 +9,99 @@ import { localImageServer } from "./helpers/local-image-server";
 import { siteContent } from "../src/generated/content.generated";
 import { localeIndexes } from "../src/content/route-data";
 
+type Cleanup = () => Promise<void>;
+
+async function closeResources(resources: Cleanup[], priorFailures: unknown[]) {
+  const failures = [...priorFailures];
+  for (const close of resources.reverse()) {
+    try {
+      await close();
+    } catch (error) {
+      failures.push(error);
+    }
+  }
+  if (failures.length === priorFailures.length) return;
+  if (failures.length === 1) throw failures[0];
+  throw new AggregateError(failures, "Resource cleanup failed", { cause: failures[0] });
+}
+
+async function withCleanup(run: (defer: (close: Cleanup) => void) => Promise<void>) {
+  const resources: Cleanup[] = [];
+  const failures: unknown[] = [];
+  try {
+    await run((close) => { resources.push(close); });
+  } catch (error) {
+    failures.push(error);
+    throw error;
+  } finally {
+    await closeResources(resources, failures);
+  }
+}
+
+type RoutePreview = { httpServer: Pick<Server, "address">; close: Cleanup };
+
 // Bind directly to port 0: the OS selects and reserves the port in one
 // operation. Do not probe a free port and then release/rebind it.
-async function startRoutePreview() {
-  const server = await preview({
-    root: path.resolve(import.meta.dirname, ".."),
-    preview: { host: "127.0.0.1", port: 0, strictPort: true, open: false },
-    logLevel: "silent",
-  });
+async function startRoutePreview(open: () => Promise<RoutePreview> = () => preview({
+  root: path.resolve(import.meta.dirname, ".."),
+  preview: { host: "127.0.0.1", port: 0, strictPort: true, open: false },
+  logLevel: "silent",
+})) {
+  const server = await open();
   try {
     const address = server.httpServer.address();
     assert.ok(address && typeof address !== "string" && address.port > 0, "Preview must listen on an assigned port");
     assert.equal(address.address, "127.0.0.1");
     return { base: `http://127.0.0.1:${address.port}`, close: () => server.close() };
   } catch (error) {
-    await server.close();
+    await closeResources([() => server.close()], [error]);
     throw error;
   }
 }
+
+test("preview startup preserves the primary error and reports cleanup failures", async () => {
+  const launchFailure = new Error("preview failed to start");
+  await assert.rejects(startRoutePreview(async () => { throw launchFailure; }),
+    (error) => error === launchFailure);
+
+  const closeFailure = new Error("preview failed to close");
+  let closes = 0;
+  await assert.rejects(startRoutePreview(async () => ({
+    httpServer: { address: () => null },
+    close: async () => { closes++; throw closeFailure; },
+  })), (error) => {
+    assert.ok(error instanceof AggregateError);
+    assert.ok(error.cause instanceof assert.AssertionError);
+    assert.match(error.cause.message, /Preview must listen on an assigned port/);
+    assert.deepEqual(error.errors, [error.cause, closeFailure]);
+    return true;
+  });
+  assert.equal(closes, 1);
+});
+
+test("browser cleanup closes acquired resources after launch or close fails", async () => {
+  const launchFailure = new Error("browser failed to launch");
+  const closed: string[] = [];
+  await assert.rejects(withCleanup(async (defer) => {
+    defer(async () => { closed.push("server after launch failure"); });
+    throw launchFailure;
+  }), (error) => error === launchFailure);
+  assert.deepEqual(closed, ["server after launch failure"]);
+
+  const testFailure = new Error("browser assertion failed");
+  const closeFailure = new Error("browser failed to close");
+  await assert.rejects(withCleanup(async (defer) => {
+    defer(async () => { closed.push("server"); });
+    defer(async () => { closed.push("browser"); throw closeFailure; });
+    throw testFailure;
+  }), (error) => {
+    assert.ok(error instanceof AggregateError);
+    assert.equal(error.cause, testFailure);
+    assert.deepEqual(error.errors, [testFailure, closeFailure]);
+    return true;
+  });
+  assert.deepEqual(closed, ["server after launch failure", "browser", "server"]);
+});
 
 test("route previews reserve distinct ports and close independently", async (t) => {
   const first = await startRoutePreview();
@@ -175,9 +251,11 @@ test("bounded page data, navigation cache, failures, history and multilingual st
 });
 
 test("mobile entry waits for the critical image and resumes on image failure or interaction", async () => {
-  const server = await localImageServer("dist");
-  const browser = await launchBrowser();
-  try {
+  await withCleanup(async (defer) => {
+    const server = await localImageServer("dist");
+    defer(() => server.close());
+    const browser = await launchBrowser();
+    defer(() => browser.close());
     for (const action of ["load", "error", "interaction"] as const) {
       const context = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
       const page = await context.newPage();
@@ -214,16 +292,15 @@ test("mobile entry waits for the critical image and resumes on image failure or 
         await context.close();
       }
     }
-  } finally {
-    await browser.close();
-    await server.close();
-  }
+  });
 });
 
 test("English mobile library gives the decoded first image a rendering opportunity", async () => {
-  const server = await localImageServer("dist");
-  const browser = await launchBrowser();
-  try {
+  await withCleanup(async (defer) => {
+    const server = await localImageServer("dist");
+    defer(() => server.close());
+    const browser = await launchBrowser();
+    defer(() => browser.close());
     const context = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
     const page = await context.newPage();
     await page.addInitScript(() => {
@@ -249,8 +326,5 @@ test("English mobile library gives the decoded first image a rendering opportuni
     await page.evaluate(() => window.dispatchEvent(new Event("test-release-card-decode")));
     assert.equal((await entryResponse).ok(), true);
     await context.close();
-  } finally {
-    await browser.close();
-    await server.close();
-  }
+  });
 });
