@@ -33,10 +33,10 @@ const warnings = {
 } as const;
 
 const warningText = {
-  fi: "- Hunajaa ei saa käyttää alle 1-vuotiaiden ruoissa eikä antaa sellaisenaan",
-  en: "- Do not use honey in food for children under 12 months or give it to them on its own",
-  sv: "- Använd inte honung i mat för barn under 12 månader och ge den inte heller som den är",
-  th: "- ห้ามใช้น้ำผึ้งในอาหารสำหรับเด็กอายุต่ำกว่า 12 เดือน และห้ามให้กินน้ำผึ้งโดยตรง",
+  fi: "Hunajaa ei saa käyttää alle 1-vuotiaiden ruoissa eikä antaa sellaisenaan",
+  en: "Do not use honey in food for children under 12 months or give it to them on its own",
+  sv: "Använd inte honung i mat för barn under 12 månader och ge den inte heller som den är",
+  th: "ห้ามใช้น้ำผึ้งในอาหารสำหรับเด็กอายุต่ำกว่า 12 เดือน และห้ามให้กินน้ำผึ้งโดยตรง",
 } as const;
 
 function gitBlobSha(text: string): string {
@@ -59,7 +59,7 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
     const honey = source.ingredients.find(item => /hunaj|honey|honung|น้ำผึ้ง/i.test(item.item));
     assert.ok(honey, "the source recipe contains honey");
     assert.equal(honey.amount, 170);
-    assert.equal(honey.unit, "g");
+    assert.equal(honey.unit, locale === "th" ? "กรัม" : "g");
     assert.ok(parsed.content.includes(sourceNotes[locale]), "the original allergen note stays intact");
 
     const edits = reviewedRecipeCopy(recipeId, locale)?.notes;
@@ -71,8 +71,15 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
     const matches = siteContent.recipes.filter(recipe => recipe.recipeId === recipeId && recipe.locale === locale);
     assert.equal(matches.length, 1, "exactly one published locale route");
     const visible = matches[0];
-    assert.ok(visible.notesHtml.includes(warningText[locale]), "the public note contains the under-12-month restriction");
-    assert.ok(visible.notesHtml.includes("https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/"), "the public warning links to the Finnish Food Authority");
+    // Markdown list markers are not part of rendered HTML. Require the warning
+    // and its authority link in the same list item, not somewhere on the page.
+    const noteItems = visible.notesHtml.match(/<li\b[^>]*>[\s\S]*?<\/li>/g) ?? [];
+    const warningItems = noteItems.filter(item => item.includes(warningText[locale]));
+    assert.equal(warningItems.length, 1, "exactly one rendered under-12-month warning");
+    const warningItem = warningItems[0];
+    assert.ok(warningItem);
+    assert.ok(warningItem.includes('<a href="https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/"'), "the rendered warning links to the Finnish Food Authority");
+    assert.ok(noteItems.some(item => item.includes(sourceNotes[locale].slice(2))), "the original allergen note remains visible");
     assert.equal(visible.servings, source.servings);
     assert.equal(visible.timeTotalMin, source.time_total_min);
     assert.equal(visible.ingredients.length, source.ingredients.length);
