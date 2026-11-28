@@ -102,4 +102,4 @@ Rapeaksi paistettu porsas ja värikkäät kasvikset saavat kirpeän makean kasti
 
 ## Muistiinpanot
 
-- Kastike on makeahko; säädä etikan ja sokerin määrää oman makusi mukaan.
+- Kastike on makeahko. Noudata vakio-ohjeessa ainesluettelon sokeri- ja etikkamääriä. Voit halutessasi säätää niitä makusi mukaan, jolloin kyseessä on vakio-ohjeen muunnelma.

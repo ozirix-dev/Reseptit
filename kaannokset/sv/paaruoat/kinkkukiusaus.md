@@ -64,6 +64,6 @@ En krämig finsk vardagsrätt i ugn med potatisstrimlor, rökt kokt skinka, lök
 ## Anteckningar
 
 - Innehåller mjölk. Kontrollera skinkans förpackning för andra allergener. Glutenfrihet har inte granskats.
-- Kyl rester snabbt i grunda kärl och förvara i kylskåp under +6 °C.
+- Kyl den färdiga rätten snabbt i grunda kärl och förvara i kylskåp under +6 °C.
 - Jämförelsekälla: [K-Ruoka kinkkukiusaus](https://www.k-ruoka.fi/reseptit/kinkkukiusaus). Text och mängder har bearbetats självständigt för Recipavo.
-- Bilden är AI-genererad illustration. Receptet är ett redaktionellt utkast och är inte provlagat eller näringsberäknat för just denna version.
+- Bilden är en AI-genererad illustration. Recipavo har tagit fram receptet redaktionellt och har inte provlagat det i eget kök. Näringsvärden i siffror utelämnas eftersom en godkänd beräkning saknas. Glykemisk belastning är inte fastställd.

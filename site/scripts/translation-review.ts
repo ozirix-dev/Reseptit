@@ -82,8 +82,13 @@ export function buildRegistry(audit: TranslationAuditResult, hashes: Record<stri
 }
 export const escapeHtml = (text: string) => text.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 export async function loadCurrentReview(asOf?: number) {
-  const audit = await auditTranslations();
-  const files: Record<string, string> = Object.fromEntries(await Promise.all([...audit.publishedSources, ...audit.publishedTranslations].map(async (r) => [r.path, await readFile(path.join(root, r.path), "utf8")] as const)));
+  const rawFiles = new Map<string, string>();
+  const audit = await auditTranslations(undefined, rawFiles);
+  const files: Record<string, string> = Object.fromEntries([...audit.publishedSources, ...audit.publishedTranslations].map((r) => {
+    const raw = rawFiles.get(r.path);
+    if (raw === undefined) throw Error("Missing audited raw Markdown: " + r.path);
+    return [r.path, raw];
+  }));
   const hashes = Object.fromEntries(Object.entries(files).map(([name, content]) => [name, contentHash(content)]));
   const evidence = evidenceSchema.parse(JSON.parse(await readFile(path.join(root, "meta/kaannokset/human-review-evidence.json"), "utf8")));
   return { audit, files, rows: buildRegistry(audit, hashes, evidence, await loadSemanticEvidence(root), asOf) };
