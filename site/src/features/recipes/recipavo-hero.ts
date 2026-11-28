@@ -22,7 +22,7 @@ export const recipavoHeroCopy: Record<RecipeLocale, RecipavoHeroCopy> = {
     tagline: "Reseptejä joka päivään",
     title: "Maailman makuja kotikeittiöön",
     intro: "Etsi reseptejä ruokalajin tai raaka-aineen mukaan. Rajaa vaihtoehtoja ruokavalion ja valmistusajan perusteella. Voit muuttaa annosmäärää reseptisivulla.",
-    details: "Reseptejä suomeksi, englanniksi, ruotsiksi ja thaiksi. Osasta löydät myös ravintoarvot ja arvion annoksen vaikutuksesta verensokeriin.",
+    details: "Reseptejä suomeksi, englanniksi, ruotsiksi ja thaiksi. Osasta reseptejä löydät myös ravintoarvot ja arvion annoksen glykeemisestä kuormasta (GK).",
     footer: "Recipavo · Hyvää ruokaa arkeen",
   },
   en: {
@@ -31,7 +31,7 @@ export const recipavoHeroCopy: Record<RecipeLocale, RecipavoHeroCopy> = {
     tagline: "Recipes for every day",
     title: "Flavours from around the world, for everyday cooking",
     intro: "Find recipes by dish or ingredient. Narrow your choices by diet and cooking time, then adjust the servings on the recipe page.",
-    details: "Browse in Finnish, English, Swedish or Thai. Selected recipes also include nutrition information and an estimate of how a serving may affect blood sugar.",
+    details: "Browse in Finnish, English, Swedish or Thai. Selected recipes also include nutrition information and an estimate of the glycemic load (GL) per serving.",
     footer: "Recipavo · Everyday cooking inspiration",
   },
   sv: {
@@ -40,7 +40,7 @@ export const recipavoHeroCopy: Record<RecipeLocale, RecipavoHeroCopy> = {
     tagline: "Recept för varje dag",
     title: "Smaker från hela världen, för vardagen",
     intro: "Sök efter maträtt eller ingrediens. Filtrera efter kost och tillagningstid och ändra portionsantalet på receptsidan.",
-    details: "Recept finns på finska, engelska, svenska och thailändska. Vissa recept innehåller också näringsinformation och en uppskattning av hur portionen kan påverka blodsockret.",
+    details: "Recept finns på finska, engelska, svenska och thailändska. Vissa recept innehåller också näringsinformation och en uppskattning av den glykemiska belastningen (GL) per portion.",
     footer: "Recipavo · Matinspiration för vardagen",
   },
   th: {
@@ -49,7 +49,7 @@ export const recipavoHeroCopy: Record<RecipeLocale, RecipavoHeroCopy> = {
     tagline: "สูตรอาหารสำหรับทุกวัน",
     title: "รสชาติจากทั่วโลก สำหรับทุกวัน",
     intro: "ค้นหาสูตรอาหารจากชื่อเมนูหรือวัตถุดิบ เลือกกรองตามรูปแบบอาหารและเวลาในการปรุง และปรับจำนวนที่เสิร์ฟได้ในหน้าสูตรอาหาร",
-    details: "มีสูตรอาหารภาษาฟินแลนด์ อังกฤษ สวีเดน และไทย บางสูตรยังมีข้อมูลโภชนาการและค่าประมาณว่าหนึ่งที่อาจส่งผลต่อระดับน้ำตาลในเลือดอย่างไร",
+    details: "มีสูตรอาหารภาษาฟินแลนด์ อังกฤษ สวีเดน และไทย บางสูตรยังมีข้อมูลโภชนาการและค่าประมาณภาระน้ำตาล (GL) ต่อหนึ่งหน่วยบริโภค",
     footer: "Recipavo · ไอเดียอาหารสำหรับทุกวัน",
   },
 };
