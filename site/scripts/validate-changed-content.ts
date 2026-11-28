@@ -123,7 +123,7 @@ for (const relativePath of recipePaths) {
       const sourcePath = isHistoricalKarnivoreRecipe(data.recipe_id)
         ? `reseptit/paaruoat/${data.recipe_id}.md`
         : data.source_recipe;
-      assert(sourcePath?.startsWith("reseptit/"), `${relativePath}: missing canonical Finnish source path`);
+      assert(sourcePath && sourcePath.startsWith("reseptit/"), `${relativePath}: missing canonical Finnish source path`);
       const sourceText = await readFile(resolveRepoFile(sourcePath), "utf8");
       const source = parseMarkdown(sourceText);
       assert(source, `${sourcePath}: missing Finnish recipe source`);
