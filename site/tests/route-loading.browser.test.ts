@@ -105,7 +105,10 @@ test("browser cleanup closes acquired resources after launch or close fails", as
 
 test("route previews reserve distinct ports and close independently", async (t) => {
   const first = await startRoutePreview();
-  t.after(() => first.close());
+  let firstCloseAttempted = false;
+  t.after(async () => {
+    if (!firstCloseAttempted) await first.close();
+  });
   const second = await startRoutePreview();
   t.after(() => second.close());
   assert.notEqual(first.base, second.base, "Simultaneously listening previews cannot share a port");
@@ -116,18 +119,20 @@ test("route previews reserve distinct ports and close independently", async (t) 
   const firstHtml = await firstResponse.text();
   assert.match(firstHtml, /id="page-content"/);
   assert.equal(await secondResponse.text(), firstHtml, "Both serve the same existing production build");
+  firstCloseAttempted = true;
   await first.close();
   const remaining = await fetch(second.base + "/");
   assert.equal(remaining.status, 200);
   assert.equal(await remaining.text(), firstHtml);
 });
 
-test("bounded page data, navigation cache, failures, history and multilingual static HTML", async (t) => {
-  const server = await startRoutePreview();
-  const { base } = server;
-  t.after(() => server.close());
-  const browser = await launchBrowser();
-  try {
+test("bounded page data, navigation cache, failures, history and multilingual static HTML", async () => {
+  await withCleanup(async (defer) => {
+    const server = await startRoutePreview();
+    const { base } = server;
+    defer(() => server.close());
+    const browser = await launchBrowser();
+    defer(() => browser.close());
     const context = await browser.newContext();
     await context.route(`${siteTarget.baseUrl}/kuvat/**`, async (route) => {
       await route.fulfill({ path: path.resolve("public/kuvat", new URL(route.request().url()).pathname.split("/kuvat/")[1]) });
@@ -245,9 +250,7 @@ test("bounded page data, navigation cache, failures, history and multilingual st
     await initialFailure.close();
 
     await context.close();
-  } finally {
-    await browser.close();
-  }
+  });
 });
 
 test("mobile entry waits for the critical image and resumes on image failure or interaction", async () => {
