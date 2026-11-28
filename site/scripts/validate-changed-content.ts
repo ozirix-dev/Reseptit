@@ -31,6 +31,10 @@ const repoRoot = path.resolve(siteDir, "..");
 const suppliedPaths = process.argv.slice(2);
 const recipePaths = suppliedPaths.filter((file) => /^(?:(?:reseptit|kaannokset)\/.+|tuonti\/karnivore\/paaruoat\/[^/]+)\.md$/i.test(file) && !file.includes("/_mallipohjat/"));
 const evidencePaths = suppliedPaths.filter((file) => /^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/i.test(file));
+const karnivoreReviewIds = new Set(suppliedPaths.flatMap(file => {
+  const match = /^docs\/reviews\/new-recipes\/(karnivore-[a-z0-9-]+)\.json$/.exec(file);
+  return match ? [match[1]] : [];
+}));
 const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset", "aamupalat", "valipalat"];
 const translationLocales = ["en", "sv", "th"];
 
@@ -113,6 +117,11 @@ for (const relativePath of recipePaths) {
   const parsed = parseMarkdown(markdown);
   assert(parsed, `${relativePath}: recipe frontmatter is missing or malformed`);
   const data = recipeFrontmatterSchema.parse(parsed.data);
+  const previous = previousRecipes.get(relativePath)?.data;
+  if (typeof previous?.recipe_id === "string" && isHistoricalKarnivoreRecipe(previous.recipe_id)) {
+    assert.equal(data.recipe_id, previous.recipe_id, `${relativePath}: historical karnivore recipe ID cannot change`);
+    assert.equal(data.language, previous.language, `${relativePath}: historical karnivore recipe language cannot change`);
+  }
   await assertReviewedSnackPublication(data, repoRoot, relativePath);
   if (data.recipe_id.startsWith("karnivore-")) {
     if (data.language === "fi") {
@@ -168,6 +177,17 @@ for (const relativePath of recipePaths) {
   changedRecipes.push({ path: relativePath, data, markdown });
 }
 
+// Changed paths include both sides of a move. A replacement must still pass
+// validation using the historical recipe ID and language.
+const currentPaths = new Set(changedRecipes.map(recipe => recipe.path));
+for (const [previousPath, previous] of previousRecipes) {
+  const id = previous?.data.recipe_id;
+  if (typeof id !== "string" || !isHistoricalKarnivoreRecipe(id) || currentPaths.has(previousPath)) continue;
+  assert(changedRecipes.some(recipe => recipe.data.recipe_id === id && recipe.data.language === previous?.data.language
+    && !previousRecipes.get(recipe.path)),
+  `${previousPath}: historical karnivore recipe requires a replacement with the same ID and language`);
+}
+
 const evidenceIds = new Set<string>();
 for (const relativePath of evidencePaths) {
   const fullPath = resolveRepoFile(relativePath);
@@ -189,8 +209,9 @@ const recipeIds = new Set([
   ...changedRecipes.map((recipe) => recipe.data.recipe_id),
   ...[...previousRecipes.values()].map((recipe) => recipe?.data.recipe_id).filter((id): id is string => typeof id === "string"),
   ...evidenceIds,
+  ...karnivoreReviewIds,
 ]);
-assert(recipeIds.size > 0, "No changed recipe or nutrition evidence paths were supplied.");
+assert(recipeIds.size > 0, "No changed recipe or evidence paths were supplied.");
 const semanticallyChanged = new Set(changedRecipes.filter((recipe) => {
   if (recipe.data.status !== "published") return false;
   const previous = previousRecipes.get(recipe.path);
@@ -259,6 +280,10 @@ for (const recipeId of recipeIds) {
     assert(evidenceText === null, `${recipeId}: calculation evidence has no published Finnish source`);
     assert(!gkPending, `${recipeId}: new-public GK pending entry has no published Finnish source`);
     continue;
+  }
+
+  if (karnivoreReviewIds.has(recipeId) && !currentPaths.has(source.path)) {
+    await reviewKarnivorePublication(recipeId, source.path, await readFile(resolveRepoFile(source.path), "utf8"));
   }
 
   const translations = audit.publishedTranslations.filter((recipe) => recipe.data.recipe_id === recipeId);
