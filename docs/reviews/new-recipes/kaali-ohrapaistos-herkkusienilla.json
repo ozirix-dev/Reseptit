@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kaali-ohrapaistos-herkkusienilla",
+  "source_path": "reseptit/paaruoat/kaali-ohrapaistos-herkkusienilla.md",
+  "source_sha256": "79bf99dc2505c876fb644efa4551b6db0001e4eac572ed02aa9e8f0d04c85f49",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/kasviskaalilaatikko/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kaali-ohrapaistos-herkkusienilla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Kaalista, ohrasta ja herkkusienestä tehty sovitus. Ohra keitetään ja valutetaan, paistos kypsennetään uunissa. Ohra ja maito ilmoitetaan."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kaalista, ohrasta ja herkkusienestä tehty sovitus. Ohra keitetään ja valutetaan, paistos kypsennetään uunissa. Ohra ja maito ilmoitetaan."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kaalista, ohrasta ja herkkusienestä tehty sovitus. Ohra keitetään ja valutetaan, paistos kypsennetään uunissa. Ohra ja maito ilmoitetaan. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kaalista, ohrasta ja herkkusienestä tehty sovitus. Ohra keitetään ja valutetaan, paistos kypsennetään uunissa. Ohra ja maito ilmoitetaan. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Ruokakermasta puuttuu kuitu-/polyolitietoa. Valutetusta ohrasta ja kaalista puuttuvat hävikkitiedot."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Ohran keittämisen ja edelleen paistamisen GI-vastaavuutta ei ole varmennettu. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/paaruoat/kaali-ohrapaistos-herkkusienilla.webp",
+    "bytes": 127736,
+    "sha256": "25b71e7af63ae25b48dd5961f62266de54d064784e57697776a612282173ee8f",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/paaruoat/kaali-ohrapaistos-herkkusienilla.md",
+        "sha256": "f0e40d6f9702bd2b844eb0e23595b24112679ff83cddb3ffbba5cb448cd6627d"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kaali-ohrapaistos-herkkusienilla.md",
+        "sha256": "390e9ed96cccce2e1970113ad595eb8947c097e1fc88d99f9a3f95286e315d1b"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kaali-ohrapaistos-herkkusienilla.md",
+        "sha256": "28c5aaa9f0e81b905827ee99085dd530050a1223ec3f9ec2949d5502fa207d62"
+      },
+      {
+        "path": "reseptit/paaruoat/kaali-ohrapaistos-herkkusienilla.md",
+        "sha256": "f4c45367b66221f377eb3b31799a1e3ea725aece9666534adef3d8b8ec62a5d5"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/paaruoat/kaali-ohrapaistos-herkkusienilla.md",
+        "language": "en",
+        "slug": "kaali-ohrapaistos-herkkusienilla-en",
+        "sha256": "6203108bc10c94e4c812c6cbb8c366d0d23ddfac8be5c60f63e58d236e62c9d4",
+        "semantic_sha256": "a3e1de49e8995a67fe4961a708d5cd096d76c356bef0316d2582927c33b8652e"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kaali-ohrapaistos-herkkusienilla.md",
+        "language": "sv",
+        "slug": "kaali-ohrapaistos-herkkusienilla-sv",
+        "sha256": "8ed446c0d835bfdff3d59c3fc500ab7bb8e80855e19636b3a1716b7c3b67f850",
+        "semantic_sha256": "2ac78f76994bba380dd57d076076d43ef6c4721219a0125b598d0ca01774678b"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kaali-ohrapaistos-herkkusienilla.md",
+        "language": "th",
+        "slug": "kaali-ohrapaistos-herkkusienilla-th",
+        "sha256": "af982faf518070d4f6d9587df059f5616a961820b6037e15c8d4ee4cfeddbdd5",
+        "semantic_sha256": "10f3d89acc5210da6c34b5254502c8cb8f1d99a6c75fc0671be0ada5eb0dddfc"
+      },
+      {
+        "path": "reseptit/paaruoat/kaali-ohrapaistos-herkkusienilla.md",
+        "language": "fi",
+        "slug": "kaali-ohrapaistos-herkkusienilla",
+        "sha256": "79bf99dc2505c876fb644efa4551b6db0001e4eac572ed02aa9e8f0d04c85f49",
+        "semantic_sha256": "e8f539f80813dc45479c7bfec251a0f87b21197ea62e777383f83a2a02f78ddd"
+      }
+    ]
+  }
+}

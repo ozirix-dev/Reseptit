@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "recipe_id": "nam-tok-moo",
+  "source_path": "reseptit/paaruoat/nam-tok-moo.md",
+  "source_sha256": "c6026f643b54518096f2e80231ddc3a4ae8f3109affd3881251e13c61516b607",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.simplysuwanee.com/moo-namtok/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/nam-tok-moo.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/nam-tok-moo.webp",
+    "bytes": 329422,
+    "sha256": "dddb971f78d10446fca41c18d0798053ff19cc96d857b80b3b7558c27b2bfe23",
+    "width": 1672,
+    "height": 941,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/nam-tok-moo.md",
+        "sha256": "5ae065cb15504591dd19dc837f47843ce78d490ca9c0589411d5c47ab07d38ed"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/nam-tok-moo.md",
+        "sha256": "30e0712f73ac6ef1fd9352627d7f50561f169e221a158c620b4b4d0c68831db1"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/nam-tok-moo.md",
+        "sha256": "57b67535e55d743cd5fc3e21c807c5e79edc777b62046489104f2333625e019a"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/nam-tok-moo.md",
+        "sha256": "4d0d822ba09eb2d2629c22069f273d4e4e4ce869f76a030911c83e6aaf4bf560"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "382164c8da40b34deb54749ec688a69263315d0c832619a5a88246358c33dd0f"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/nam-tok-moo.md",
+        "language": "fi",
+        "slug": "nam-tok-moo",
+        "sha256": "c6026f643b54518096f2e80231ddc3a4ae8f3109affd3881251e13c61516b607",
+        "semantic_sha256": "5ad6f61465186eed6b50f3d7d79b31fcb73975756931602dd9d8cff5015fccaf"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/nam-tok-moo.md",
+        "language": "en",
+        "slug": "nam-tok-moo-en",
+        "sha256": "a2f55ac7774fdff47e94e6c73c0b9dcda792038ea0db7f53208eb3e809295917",
+        "semantic_sha256": "a64b905791a6eeacc0ec7c0f1b78cf4af3edd7a984956fbcb3577f5e7db80f6e"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/nam-tok-moo.md",
+        "language": "sv",
+        "slug": "nam-tok-moo-sv",
+        "sha256": "84f29406b4480107a969e2b708a787e0eca2867e534d62b1c04bdbdb610fca41",
+        "semantic_sha256": "35484c90b04aec7799168466fa317c8e73cbf0786c74777161b2b8998a1758dc"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/nam-tok-moo.md",
+        "language": "th",
+        "slug": "nam-tok-moo-th",
+        "sha256": "93f041585cbe0cd146fea4c68270786801219f85e229eb686ff2cb497e58d28d",
+        "semantic_sha256": "7632f599784c51f231fd15a0244647461a7dcfdf971d75e537c136d7db6b8a72"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja aika 165 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Marinadin poisjäävä osuus, grillihävikki, 37,5 ml riisijauheen massa ja kastiketuotteet."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tahmariisijauheen paahdetun muodon GI ja massa, marinadin retentio sekä kastikkeiden HH; ei lisukeriisiä."
+    }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
+  }
+}

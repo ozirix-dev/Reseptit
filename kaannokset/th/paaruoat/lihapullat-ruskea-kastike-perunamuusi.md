@@ -7,7 +7,7 @@ language: th
 source_language: fi
 source_recipe: reseptit/paaruoat/lihapullat-ruskea-kastike-perunamuusi.md
 translation_of: lihapullat-ruskea-kastike-perunamuusi
-status: draft
+status: published
 servings: 4
 time_total_min: 70
 difficulty: "ง่าย"
@@ -18,6 +18,11 @@ cooking_method:
 tags:
   - "อาหารฟินแลนด์"
   - "อาหารพื้นบ้าน"
+image:
+  src: paaruoat/lihapullat-ruskea-kastike-perunamuusi.webp
+  alt: "มีตบอล ซอสเกรวีสีน้ำตาล และมันฝรั่งบดบนจาน ภาพประกอบสร้างด้วยเอไอ"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "g"
@@ -74,5 +79,7 @@ ingredients:
 
 ## หมายเหตุ
 
-- ฉบับร่าง ยังไม่มีการทดลองทำโดย Recipavo ภาพอาหาร การคำนวณโภชนาการหรือการอนุมัติ GK ตรวจสารก่อภูมิแพ้รวมถึงข้าวสาลีและนม
+- มีนม ไข่ และข้าวสาลี ตรวจฉลากเกล็ดขนมปังและน้ำซุปถ้าใช้
 - https://www.martat.fi/reseptit/lihapullat-haudutetut-valkosipuliperunat-ja-ruskea-kastike/
+
+- ยังระบุข้อมูลโภชนาการต่อหนึ่งที่อย่างน่าเชื่อถือไม่ได้

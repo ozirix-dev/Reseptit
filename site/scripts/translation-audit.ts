@@ -61,7 +61,7 @@ export async function markdownFiles(directory: string): Promise<string[]> {
   return nested.flat().sort();
 }
 
-async function readRecipes(paths: string[], recipeIds?: Set<string>): Promise<TranslationAuditResult["publishedSources"]> {
+async function readRecipes(paths: string[], recipeIds: Set<string> | undefined, rawFiles: Map<string, string>): Promise<TranslationAuditResult["publishedSources"]> {
   const result: TranslationAuditResult["publishedSources"] = [];
   for (const filePath of paths) {
     const raw = await readFile(filePath, "utf8");
@@ -71,7 +71,11 @@ async function readRecipes(paths: string[], recipeIds?: Set<string>): Promise<Tr
     if (parsed.data.status === "draft") continue;
     const checked = recipeFrontmatterSchema.safeParse(parsed.data);
     if (!checked.success) throw new Error(`Invalid recipe metadata in ${filePath}: ${checked.error.message}`);
-    if (checked.data.status === "published") result.push({ path: path.relative(repoRoot, filePath).replaceAll("\\", "/"), data: checked.data, content: parsed.content, sourceSha256: createHash("sha256").update(raw.replaceAll("\r\n", "\n")).digest("hex") });
+    if (checked.data.status === "published") {
+      const relativePath = path.relative(repoRoot, filePath).replaceAll("\\", "/");
+      rawFiles.set(relativePath, raw);
+      result.push({ path: relativePath, data: checked.data, content: parsed.content, sourceSha256: createHash("sha256").update(raw.replaceAll("\r\n", "\n")).digest("hex") });
+    }
   }
   return result;
 }
@@ -191,16 +195,24 @@ const projectedAuditPaths = new Set([
   "reseptit/aamupalat/meksikolainen-huevos-divorciados.md",
 ]);
 
-export async function auditTranslations(recipeIds?: string[]): Promise<TranslationAuditResult> {
+// Optional capture is scoped to this one audit. The caller receives only the
+// raw published Markdown that actually supplied the parsed and projected records.
+export async function auditTranslations(recipeIds?: string[], rawFiles = new Map<string, string>()): Promise<TranslationAuditResult> {
+  if (rawFiles.size) throw Error("Translation audit raw capture must start empty");
+  const rawFor = (file: string) => {
+    const raw = rawFiles.get(file);
+    if (raw === undefined) throw Error("Missing audited raw Markdown: " + file);
+    return raw;
+  };
   const filter = recipeIds ? new Set(recipeIds) : undefined;
   const sourcePaths = (await Promise.all(sourceCategories.map((category) => markdownFiles(path.join(repoRoot, "reseptit", category))))).flat();
-  const rawSources = await readRecipes(sourcePaths, filter);
+  const rawSources = await readRecipes(sourcePaths, filter, rawFiles);
   // Use the exact SHA-locked public FI display when auditing meaning and
   // generating source semantic hashes for translations. Raw FI files stay
   // untouched for the separate nutrition/GK and source-blob validation.
   const publicSources = await Promise.all(rawSources.map(async (source) => {
     if (!projectedAuditPaths.has(source.path)) return source;
-    const raw = await readFile(path.join(repoRoot, source.path), "utf8");
+    const raw = rawFor(source.path);
     const projected = parseMarkdown(projectTranslationAuditSource(source.path, raw));
     if (!projected) throw Error("FI_PROJECTED_AUDIT_NO_FRONTMATTER: " + source.path);
     const displayed = recipeFrontmatterSchema.parse(projected.data);
@@ -222,7 +234,7 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
   }));
   const sources = overlayTranslationPublicationIndex(publicSources, await loadTranslationPublicationIndex(repoRoot), filter);
   const translations = (await Promise.all(locales.map((locale) => markdownFiles(path.join(repoRoot, "kaannokset", locale))))).flat();
-  const publishedTranslations = await readRecipes(translations, filter);
+  const publishedTranslations = await readRecipes(translations, filter, rawFiles);
   // Fail closed even for standalone published language files absent from the sidecar.
   // Raw FI status: published does not override the public recipe quarantine.
   for (const translation of publishedTranslations) {
@@ -234,7 +246,7 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
   const reviewedMethods = new Map<string, readonly string[]>();
   for (const source of sources) {
     if (source.path !== "reseptit/aamupalat/thai-kookosriisi-mangolla.md") continue;
-    const raw = await readFile(path.join(repoRoot, source.path), "utf8");
+    const raw = rawFor(source.path);
     const projected = parseMarkdown(projectReviewedFiEditorialSource(source.path, raw));
     if (!projected) throw Error("EDITORIAL_COOKING_METHOD_NO_FRONTMATTER");
     const publicData = recipeFrontmatterSchema.parse(projected.data);
@@ -252,7 +264,7 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
     const isJerk = source.path === "reseptit/paaruoat/jerk-kana.md";
     const isShoyu = source.path === "reseptit/paaruoat/shoyu-kanakeitto-konjac.md";
     if (!isJerk && !isShoyu) continue;
-    const originalRaw = await readFile(path.join(repoRoot, source.path), "utf8");
+    const originalRaw = rawFor(source.path);
     const projected = parseMarkdown(projectA8FiEditorialSource(source.path, originalRaw));
     if (!projected) throw new Error("A8_AUDIT_NO_PUBLIC_FI_FRONTMATTER: " + source.path);
     const publicData = recipeFrontmatterSchema.parse(projected.data);
@@ -284,7 +296,7 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
   // Three narrowly reviewed, exact-raw-SHA C20 FI display corrections.
   for (const source of sources) {
     if (!c20FiDisplayPaths.includes(source.path)) continue;
-    const raw = await readFile(path.join(repoRoot, source.path), "utf8");
+    const raw = rawFor(source.path);
     const displayed = parseMarkdown(projectC20FiDisplay(source.path, raw));
     if (!displayed) throw Error("C20_FI_DISPLAY_NO_FRONTMATTER");
     const d = recipeFrontmatterSchema.parse(displayed.data);

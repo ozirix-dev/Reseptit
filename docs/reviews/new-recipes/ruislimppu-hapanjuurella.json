@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "recipe_id": "ruislimppu-hapanjuurella",
+  "source_path": "reseptit/leivonnaiset/ruislimppu-hapanjuurella.md",
+  "source_sha256": "b6632d0e085cb147f1203b2b3b606641ff89cbf313a98168a839a0b0f6e56ed2",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/ruisleipa-ruislimppu-hapanleipa/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/ruislimppu-hapanjuurella.json",
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/ruislimppu-hapanjuurella.webp",
+    "bytes": 166378,
+    "sha256": "4d1677c551d037595f4449fb4efe434e3c0945e81db9cb665a90fca79a10a449",
+    "width": 960,
+    "height": 640,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/ruislimppu-hapanjuurella.md",
+        "language": "fi",
+        "slug": "ruislimppu-hapanjuurella",
+        "sha256": "b6632d0e085cb147f1203b2b3b606641ff89cbf313a98168a839a0b0f6e56ed2",
+        "semantic_sha256": "37a3eae658703c334f92bd4d84167a72f06583882deef6cb1f3281032b347c00"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/ruislimppu-hapanjuurella.md",
+        "language": "en",
+        "slug": "ruislimppu-hapanjuurella-en",
+        "sha256": "e1784bb388ccfaacd6ff6e1431a873a997fc8d9a5b1ab4c76f29fd9467f48e9c",
+        "semantic_sha256": "75e3da3b701a0a183bf3da389693f4e2f1cf610092207d1a331fa16ac46816ae"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/ruislimppu-hapanjuurella.md",
+        "language": "sv",
+        "slug": "ruislimppu-hapanjuurella-sv",
+        "sha256": "99cfe4b7d1dbf1b5d24aa35345e61c1beedf0a634c7000413c0e3008afaa935e",
+        "semantic_sha256": "79911306d5e3f22981b24dffb59c5aa49d8fca2ee66252331d342defe171738e"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/ruislimppu-hapanjuurella.md",
+        "language": "th",
+        "slug": "ruislimppu-hapanjuurella-th",
+        "sha256": "a8f75faadaa53a406f9cc4ef62f0301425b8aba2cd4b50eb4abcb9d133250e56",
+        "semantic_sha256": "489902e75027aa548d08e6bb15576876d3711597d52fbcb44526b3a8dc26dc57"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Pelkästä ruisjauhosta hapanjuurella kohotettava pyöreä limppu eroaa #1005:n saaristolaisleivästä. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 32 ja kokonaisaika 1560 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Juuren ravintoarvion lähtökohdaksi tarvitaan juuren todellinen jauho-vesisuhde ja jauhotuksen käyttömäärä."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

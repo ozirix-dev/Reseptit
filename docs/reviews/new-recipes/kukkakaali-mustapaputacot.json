@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kukkakaali-mustapaputacot",
+  "source_path": "reseptit/paaruoat/kukkakaali-mustapaputacot.md",
+  "source_sha256": "44e8cacc905f448ca6f23914d5269fea685b825c3d87369b0f62528df60989fa",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://smittenkitchen.com/2020/10/simple-cauliflower-tacos/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kukkakaali-mustapaputacot.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/kukkakaali-mustapaputacot.webp",
+    "bytes": 146578,
+    "sha256": "50c98fbc55be1ef377db727fac636d4783964f56e8e3f4344033a6a45dde02a2",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/kukkakaali-mustapaputacot.md",
+        "sha256": "d7f0897c53e582de37dea0685bbff74524f15b482f59e984d3f1bcceaf3c8ce9"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/kukkakaali-mustapaputacot.md",
+        "sha256": "f3f7d9a5d697686f14d1c2a98dbaed765e057d9990beab39efe088d947c12df5"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kukkakaali-mustapaputacot.md",
+        "sha256": "9eb6cc25ee741e66ee68d889b100c88b851ea50e92732997c00a71e64e54cf01"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kukkakaali-mustapaputacot.md",
+        "sha256": "17a48152ed84e4b1cdfc0e9ddcbc63727bd8be8655c90ccf4866db08cf7216ee"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "b4efd6e3705fd3030a7ee8c0f454710e496ce7a134c05943e4a01d7c2b33a02f"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/kukkakaali-mustapaputacot.md",
+        "language": "fi",
+        "slug": "kukkakaali-mustapaputacot",
+        "sha256": "44e8cacc905f448ca6f23914d5269fea685b825c3d87369b0f62528df60989fa",
+        "semantic_sha256": "597729137aac11683807cc4ff8049d1fb7790e15d2392819a7d19a110bf948e9"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/kukkakaali-mustapaputacot.md",
+        "language": "en",
+        "slug": "kukkakaali-mustapaputacot-en",
+        "sha256": "fba83046319f984207352cd0c24be0c64c09894b089c3d0b3ba88465a14326a5",
+        "semantic_sha256": "cbc8aed630666440d86ec9f7af80c65b39160036b7466eb99b0c5bd3cbc4ddb0"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kukkakaali-mustapaputacot.md",
+        "language": "sv",
+        "slug": "kukkakaali-mustapaputacot-sv",
+        "sha256": "09729ae2346e687d6db0367490454fa78a54fa1a07ead9601a10dc527018fe3f",
+        "semantic_sha256": "452b50f9261e92538b6428c4e285ae51f0648089e057430485a1841c4ba89ee6"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kukkakaali-mustapaputacot.md",
+        "language": "th",
+        "slug": "kukkakaali-mustapaputacot-th",
+        "sha256": "6967e64aa70e71402888c825180e58218b59a730dcabf9ab9ed0306cab41d3ae",
+        "semantic_sha256": "d117034ef3eef3de5d7ce5bef66de9e1d547b67b669af8f982edaaeda817b8c1"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja kokonaisaika 40 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "8 keskikokoisen maissitortillan tuote ja kappalemassa, 400g mustapaputölkin valutettu massa, kukkakaalin/avokadon syötävä massa ja valutettu sipulimarinaadi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}

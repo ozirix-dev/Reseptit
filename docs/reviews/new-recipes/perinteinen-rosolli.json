@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perinteinen-rosolli",
+  "source_path": "reseptit/alkuruoat/perinteinen-rosolli.md",
+  "source_sha256": "cd17913c5ec965317bfc6549e56a053f4e4bbd7b04e0e73765664e6654f307b9",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/rosolli/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/perinteinen-rosolli.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Kypsät, jäähtyneet juurekset punnitaan käyttövalmiina. Maito on merkitty. Kylmäsäilytys alle +6 °C ja kastike erikseen."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kypsät, jäähtyneet juurekset punnitaan käyttövalmiina. Maito on merkitty. Kylmäsäilytys alle +6 °C ja kastike erikseen."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kypsät, jäähtyneet juurekset punnitaan käyttövalmiina. Maito on merkitty. Kylmäsäilytys alle +6 °C ja kastike erikseen. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kypsät, jäähtyneet juurekset punnitaan käyttövalmiina. Maito on merkitty. Kylmäsäilytys alle +6 °C ja kastike erikseen. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Julkaistaan vain sidotut kentät. Valkopippurin kuitu ja polyolit puuttuvat. Annos sisältää kastikkeen. Maustekurkku on sokerisuolattu yleisviite."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Keitetyn ja jäähtyneen perunan lajike ja valmistus eivät vastaa varmennettua GI-sidontaa. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/perinteinen-rosolli.webp",
+    "bytes": 108256,
+    "sha256": "07c53f340dcb00fd8cd23932e067cce6411883e682fd550043a54ae38575adf4",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/alkuruoat/perinteinen-rosolli.md",
+        "sha256": "913568816a78bda659f843da5877896a1cd3b282ec590ad0191dcba1a635b886"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/perinteinen-rosolli.md",
+        "sha256": "7bf7c2225c516997e241bb8236ce87a8bf06cd963317453fbf82075d41708e13"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/perinteinen-rosolli.md",
+        "sha256": "b864b51eadfd7106d1481000052c457641d4df1511c710f66edac65fd162f1b8"
+      },
+      {
+        "path": "reseptit/alkuruoat/perinteinen-rosolli.md",
+        "sha256": "ed4ebc6bcdf6960ecf510170825b6cf753ccab99b805f7134854cb706fbc93d5"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/alkuruoat/perinteinen-rosolli.md",
+        "language": "en",
+        "slug": "perinteinen-rosolli-en",
+        "sha256": "a3c100fef96a10a49d1e654e23053815e97a8ba317be5b5ca0e9383d878ca71b",
+        "semantic_sha256": "a886791631cf646818210bd28f30fcfc1a0f732714c898d8c1d7a4d161edbbb5"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/perinteinen-rosolli.md",
+        "language": "sv",
+        "slug": "perinteinen-rosolli-sv",
+        "sha256": "7c99408db1264d914bff715a16f4ea6275312b466dafa6a5f234dd64f87c8017",
+        "semantic_sha256": "15a7da7357864f4aaefd6173b559322885b40a2568ff29a8cb93ae7d291ecc32"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/perinteinen-rosolli.md",
+        "language": "th",
+        "slug": "perinteinen-rosolli-th",
+        "sha256": "d8b864f5cb1b692c86c3867e8f3f50b804ff531f7831d7361f713f77fbe7493d",
+        "semantic_sha256": "d36aafecccaebf78fdf0d79738839a6c3c08eace04f0aec9c669ed959980fe0f"
+      },
+      {
+        "path": "reseptit/alkuruoat/perinteinen-rosolli.md",
+        "language": "fi",
+        "slug": "perinteinen-rosolli",
+        "sha256": "cd17913c5ec965317bfc6549e56a053f4e4bbd7b04e0e73765664e6654f307b9",
+        "semantic_sha256": "87afb4375d47786310d1ceea858e3a229aa1154c0a9651388e4665b560f82310"
+      }
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "munavoi-karjalanpiirakoille",
+  "source_path": "reseptit/alkuruoat/munavoi-karjalanpiirakoille.md",
+  "source_sha256": "cbe7d5fe9f0dd665aed0597b3856e570a2a155433e72735183b08c5b7373aca7",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/wp-content/uploads/2018/12/Yllatysmuna-aineisto-2019.pdf"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/munavoi-karjalanpiirakoille.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Kypsä, kuorittu muna punnitaan. Munavoi jäähdytetään tai tarjotaan heti. Annos on kuudesosa levitteestä ilman piirakkaa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kypsä, kuorittu muna punnitaan. Munavoi jäähdytetään tai tarjotaan heti. Annos on kuudesosa levitteestä ilman piirakkaa."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kypsä, kuorittu muna punnitaan. Munavoi jäähdytetään tai tarjotaan heti. Annos on kuudesosa levitteestä ilman piirakkaa. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kypsä, kuorittu muna punnitaan. Munavoi jäähdytetään tai tarjotaan heti. Annos on kuudesosa levitteestä ilman piirakkaa. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Neljä kanonisesti laskettua annosarvoa. Neljä kenttää laskettavissa. Annos on kuudesosa levitteestä ilman piirakkaa."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Pienille voin ja munan hiilihydraattimäärille ei ole hyväksyttyä GI-sidontaa. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/munavoi-karjalanpiirakoille.webp",
+    "bytes": 67872,
+    "sha256": "081fbe3de7aeb263ffd9c5400b96b7b67da3a56f6eb65deac044245578b31d20",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/alkuruoat/munavoi-karjalanpiirakoille.md",
+        "sha256": "090e1307750d84c5eb1e2968539b6678b49d11ecec6c12912742cb08c65d9da7"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/munavoi-karjalanpiirakoille.md",
+        "sha256": "15dd42fd4c7295ebcef1b5de640059451c8f26d1051d3acadc67f4e7409234b6"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/munavoi-karjalanpiirakoille.md",
+        "sha256": "9fb6cd289f840c27a06cdaa5aec022114aa2946c8c81b960b1efc9d0efa7a012"
+      },
+      {
+        "path": "reseptit/alkuruoat/munavoi-karjalanpiirakoille.md",
+        "sha256": "58a976815d6d8cd7da05ba2a60d8afb392cb9d22ba3de90f7684d4247cc08502"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/alkuruoat/munavoi-karjalanpiirakoille.md",
+        "language": "en",
+        "slug": "munavoi-karjalanpiirakoille-en",
+        "sha256": "3d44d21ca83296b8d7417b7b973ffb365e8e258d3f52ebb3fe9b58f775b7af70",
+        "semantic_sha256": "9f83b51844b29575ed162bca8b2653b99b183b557da9bfe21f80f5799eae46e7"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/munavoi-karjalanpiirakoille.md",
+        "language": "sv",
+        "slug": "munavoi-karjalanpiirakoille-sv",
+        "sha256": "6ffe1b074a110cecdebe63b25a7032b6abae5fc7bc8eb6579def5ec2052fe771",
+        "semantic_sha256": "17cbeb2b1528d7fd453d0ea8588481a88445e716e0e6b9916c3c51eaf2af65ec"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/munavoi-karjalanpiirakoille.md",
+        "language": "th",
+        "slug": "munavoi-karjalanpiirakoille-th",
+        "sha256": "3650b38c004fd030c07e9bb1a87c6f1d412f7dd064e4268b0996b77f3fcaf2cc",
+        "semantic_sha256": "4af6786d56cbe5811e9a1d02eb530e5c83399c3088a4d171c8f386a7cb8b169b"
+      },
+      {
+        "path": "reseptit/alkuruoat/munavoi-karjalanpiirakoille.md",
+        "language": "fi",
+        "slug": "munavoi-karjalanpiirakoille",
+        "sha256": "cbe7d5fe9f0dd665aed0597b3856e570a2a155433e72735183b08c5b7373aca7",
+        "semantic_sha256": "4cea139668535800963de2a77dd410a94367c7a8e4dc9286f6ef0349b9404f69"
+      }
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "recipe_id": "pad-pak-ruam-mit",
+  "source_path": "reseptit/alkuruoat/pad-pak-ruam-mit.md",
+  "source_sha256": "ad204d1344bf280d2dfb8469d8019a267ee833f3943ac66ae775111f261fde83",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://hungryinthailand.com/thai-vegetables-stir-fry/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/pad-pak-ruam-mit.json",
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/pad-pak-ruam-mit.webp",
+    "bytes": 295748,
+    "sha256": "ac54780a7cc384427fa89e23ff569b883ea94e6d9ff887b767c8d8d95e22e3cc",
+    "width": 1672,
+    "height": 941,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/alkuruoat/pad-pak-ruam-mit.md",
+        "sha256": "7bdaf090e8964b393bebd4cfc40f24d217c645bb60c465d84c10c9a864b37598"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/pad-pak-ruam-mit.md",
+        "sha256": "7bfc740e56d3e3c12f1ea692590a32f6fdddb2eea79379c70f20d5ec76bb27d6"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/pad-pak-ruam-mit.md",
+        "sha256": "32c2f9a698cc42f5f0eea8830e89e4f13f744385f3c51f7fa89e5691a654df43"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/pad-pak-ruam-mit.md",
+        "sha256": "fc85f7a5da67d03292b6b838c191fc1e1f0f9c99dd60f531e02500b4f7576f5f"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "04008e29f82a8c2b45aaf58f5acb229b1495c38ffd958eba4f8e9ce5384561c0"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/pad-pak-ruam-mit.md",
+        "language": "fi",
+        "slug": "pad-pak-ruam-mit",
+        "sha256": "ad204d1344bf280d2dfb8469d8019a267ee833f3943ac66ae775111f261fde83",
+        "semantic_sha256": "782fc5bc69c9d87172ffd102c280177d0963c7abd63fc656b2d79c0d344524ea"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/pad-pak-ruam-mit.md",
+        "language": "en",
+        "slug": "pad-pak-ruam-mit-en",
+        "sha256": "42be26d2b8fdd95ff44c63755d70bbf1109b8163a4d074f93bd14f5ade4a519f",
+        "semantic_sha256": "5b07ba2c51171d8c2d5438d71334a2ebcf7df351ca57f62b09157ff3d872abc1"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/pad-pak-ruam-mit.md",
+        "language": "sv",
+        "slug": "pad-pak-ruam-mit-sv",
+        "sha256": "4ca7eaeaefa9018d2b422e28f3de98128b115561c10bf5220771f46d1b50fc2c",
+        "semantic_sha256": "46ec7114dfb430a2de54ec2b7b7704d8dc60bde038c120fc2c1d31313546eb48"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/pad-pak-ruam-mit.md",
+        "language": "th",
+        "slug": "pad-pak-ruam-mit-th",
+        "sha256": "00baed95078e257b38a2df063aa464cfffd942a8c340bc86cff93d8a374668c7",
+        "semantic_sha256": "cd90fb16d123e93477a5e2efd498dbff790b521bbf34c43b6daa8c3b4715d8cf"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 2 ja aika 25 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Tilavuusmitattujen kasvisten massat ja parsakaalivaihtoehto, öljyretentio, osteri-/soijatuotteet ja sokerin massa."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Sokerin ja kastikkeiden HH sekä vihannesten todellinen massa/annos; ei luotettavaa yhdistelmä-GI:tä."
+    }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perinteiset-korvapuustit",
+  "source_path": "reseptit/leivonnaiset/perinteiset-korvapuustit.md",
+  "source_sha256": "923f7372153d9cb776eb281057bd0fc0d42eb8b2fe411a2c1b829f2d448261d6",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/korvapuustit/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/perinteiset-korvapuustit.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Noin 30 pullaa. Hiivataikina valmistetaan kädenlämpöisestä maidosta, kohotetaan kahdesti ja kypsennetään 225 °C:ssa. Vehnä, muna ja maito ilmoitetaan."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Noin 30 pullaa. Hiivataikina valmistetaan kädenlämpöisestä maidosta, kohotetaan kahdesti ja kypsennetään 225 °C:ssa. Vehnä, muna ja maito ilmoitetaan."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Noin 30 pullaa. Hiivataikina valmistetaan kädenlämpöisestä maidosta, kohotetaan kahdesti ja kypsennetään 225 °C:ssa. Vehnä, muna ja maito ilmoitetaan. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Noin 30 pullaa. Hiivataikina valmistetaan kädenlämpöisestä maidosta, kohotetaan kahdesti ja kypsennetään 225 °C:ssa. Vehnä, muna ja maito ilmoitetaan. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kaikki neljä arvoa pidätetään. Mausteissa on puuttuvia kenttiä ja voitelumunan tartuntamassaa ei mitattu. Annos on yksi pala noin 30:stä."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Rikastetun kanelipullataikinan GI-vastaavuutta ei ole varmennettu. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/perinteiset-korvapuustit.webp",
+    "bytes": 133504,
+    "sha256": "cd3e724d4fff1ff19548a7426bfa12c3a205758a1e72c36d8600a5a25e0113d7",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/leivonnaiset/perinteiset-korvapuustit.md",
+        "sha256": "6180054f20f57b54a25ddbec6ddfe27cccb75e42003bab5ea950afec237a830e"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/perinteiset-korvapuustit.md",
+        "sha256": "f9386cd71e25fbbbff6a7cbefcb4ac09d515120d2486009c3193c68e852dfc10"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/perinteiset-korvapuustit.md",
+        "sha256": "c941d793f10b720b62d14ae30b67b6de31e04a8d1319fe977a81e6977a6daa62"
+      },
+      {
+        "path": "reseptit/leivonnaiset/perinteiset-korvapuustit.md",
+        "sha256": "aa0c2f3d58a978d5c70bbcf552c5da56a0939eff194784dd534e0cabc0743f68"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/leivonnaiset/perinteiset-korvapuustit.md",
+        "language": "en",
+        "slug": "perinteiset-korvapuustit-en",
+        "sha256": "748eb9b31693c75a58ecede528ca79dbba5ab5728d8347acf1dba9a05bf259ae",
+        "semantic_sha256": "d9ad7d14090e5661a9b6f51d0abcc50fb0e52f446d2d108fd7c6147d917e5a80"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/perinteiset-korvapuustit.md",
+        "language": "sv",
+        "slug": "perinteiset-korvapuustit-sv",
+        "sha256": "d9fdacd12a449a7e5b2cfc7061de0c747e9c2e68b4e197f651a28d51f0458e07",
+        "semantic_sha256": "3be040eb9797477ab2b41bbfd7f6808569695743445be9bf99118c19d10e293e"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/perinteiset-korvapuustit.md",
+        "language": "th",
+        "slug": "perinteiset-korvapuustit-th",
+        "sha256": "14fa3180b09d9d7fdc446e38d7b336bbf170d7bdb332b4088ee0fec52b9ff31c",
+        "semantic_sha256": "9dc982e4ba657f79b5ebf253c9623fc5be02d09a47fe38740d65fd1fa16b0cf4"
+      },
+      {
+        "path": "reseptit/leivonnaiset/perinteiset-korvapuustit.md",
+        "language": "fi",
+        "slug": "perinteiset-korvapuustit",
+        "sha256": "923f7372153d9cb776eb281057bd0fc0d42eb8b2fe411a2c1b829f2d448261d6",
+        "semantic_sha256": "7d1229c0165bce778c007c5fd4b3963ca5a7f751ae43557c4957572d3d42f8f3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "recipe_id": "palak-chana-pinaattikikherneet",
+  "source_path": "reseptit/paaruoat/palak-chana-pinaattikikherneet.md",
+  "source_sha256": "9380a485c3d91a46093dfc24d5e6797efd19d1f84cff68b2e57419166497fb3d",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.indianhealthyrecipes.com/chana-saag/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/palak-chana-pinaattikikherneet.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/palak-chana-pinaattikikherneet.webp",
+    "bytes": 197642,
+    "sha256": "4352c576b3f1c492ccb590a81ce2777bd21674eaa0ebf1d6325f5a84540fcc7d",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/palak-chana-pinaattikikherneet.md",
+        "sha256": "b9891268897832709c529ad175c61e5eda292629eca548a23f052413a2508f53"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/palak-chana-pinaattikikherneet.md",
+        "sha256": "1381d58a4e6503162087fc394b158c0861790a583d8668626a2bf6e1767d414d"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/palak-chana-pinaattikikherneet.md",
+        "sha256": "cbce5c979862637c5aa34c35dfeec78a0e4a8ea0b490715fa2ef0f17453d7b90"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/palak-chana-pinaattikikherneet.md",
+        "sha256": "35b9b6a54bbe7b46923f8f0b46c45b0f71f6e9adc986a054a97fd6f3d80460c7"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "fc241dbb8a3a020a8e638195b3e398b931a84243f60ed4411b2efe7507b7681b"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/palak-chana-pinaattikikherneet.md",
+        "language": "fi",
+        "slug": "palak-chana-pinaattikikherneet",
+        "sha256": "9380a485c3d91a46093dfc24d5e6797efd19d1f84cff68b2e57419166497fb3d",
+        "semantic_sha256": "5d73c94406ad1fa020a93a8e1f0f1dfa7afe4d17bea8e231e9a8bd411fb20280"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/palak-chana-pinaattikikherneet.md",
+        "language": "en",
+        "slug": "palak-chana-pinaattikikherneet-en",
+        "sha256": "f08dac5654e9e16c38476634559b8e2a79d613ce0a46652d557636ffe3ef9cd6",
+        "semantic_sha256": "6e6362761a7e2d43aec0d3596b00696a36e98abcec11d44c75db455f3822f02a"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/palak-chana-pinaattikikherneet.md",
+        "language": "sv",
+        "slug": "palak-chana-pinaattikikherneet-sv",
+        "sha256": "9b471408d3cababf01d809d95d5355619dce4b0c169a9f90011af02adf564a35",
+        "semantic_sha256": "32fb1ed7a182ff3d8f8069a3cf5d2a007a79d9f27c3b4dd7065654fe8610657d"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/palak-chana-pinaattikikherneet.md",
+        "language": "th",
+        "slug": "palak-chana-pinaattikikherneet-th",
+        "sha256": "c79382be8d45085de8175dbbefd928378b30f87453728d79697fcdb71f3f24a7",
+        "semantic_sha256": "ce7ed6c6157339183728cedc73885026545a04b06ffe5c292751c73041d2287a"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja kokonaisaika 40 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "7.2dl kypsien valutettujen säilykekikherneiden massa, 11dl ilmavasti mitatun pinaatin massa, 2cm inkiväärin syötävä massa ja mausteseoksen koostumus."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  },
+  "publication_delta_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7179673368",
+    "reviewed_by": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "priorHead": "475002da500aae6723d4ee63865a893420967614",
+    "reviewPackageSha256": "5e2ea181523cdb3586919a48a40d3b464fb08b00e3d5da5623950c6fe2cdfd69",
+    "changedFiles": [
+      {
+        "path": "reseptit/paaruoat/palak-chana-pinaattikikherneet.md",
+        "language": "fi",
+        "slug": "palak-chana-pinaattikikherneet",
+        "sha256": "9380a485c3d91a46093dfc24d5e6797efd19d1f84cff68b2e57419166497fb3d",
+        "semantic_sha256": "5d73c94406ad1fa020a93a8e1f0f1dfa7afe4d17bea8e231e9a8bd411fb20280"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/palak-chana-pinaattikikherneet.md",
+        "language": "en",
+        "slug": "palak-chana-pinaattikikherneet-en",
+        "sha256": "f08dac5654e9e16c38476634559b8e2a79d613ce0a46652d557636ffe3ef9cd6",
+        "semantic_sha256": "6e6362761a7e2d43aec0d3596b00696a36e98abcec11d44c75db455f3822f02a"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/palak-chana-pinaattikikherneet.md",
+        "language": "sv",
+        "slug": "palak-chana-pinaattikikherneet-sv",
+        "sha256": "9b471408d3cababf01d809d95d5355619dce4b0c169a9f90011af02adf564a35",
+        "semantic_sha256": "32fb1ed7a182ff3d8f8069a3cf5d2a007a79d9f27c3b4dd7065654fe8610657d"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/palak-chana-pinaattikikherneet.md",
+        "language": "th",
+        "slug": "palak-chana-pinaattikikherneet-th",
+        "sha256": "c79382be8d45085de8175dbbefd928378b30f87453728d79697fcdb71f3f24a7",
+        "semantic_sha256": "ce7ed6c6157339183728cedc73885026545a04b06ffe5c292751c73041d2287a"
+      }
+    ],
+    "nutritionCalculationSha256": "2193e8bf9f8676ed89b9b58a957a850e1c05dd93bf89b341792b6379e184eb16"
+  }
+}

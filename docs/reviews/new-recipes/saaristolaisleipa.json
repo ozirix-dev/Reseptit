@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "saaristolaisleipa",
+  "source_path": "reseptit/leivonnaiset/saaristolaisleipa.md",
+  "source_sha256": "b2e85ecb7e87f8391724feb8aa1c11c0c1a836ab4bc07a38e287e6cbfc77759e",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.valio.fi/reseptit/saaristolaisleipa/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/saaristolaisleipa.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Oma 20 reseptin samankaltaisuusseulonta. Chat-2:n tarkastamissa viidessä heuristisessa osumassa ei ollut estettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset, niiden käyttötilat ja määrät säilyvät Chat-2:n katselmoimasta sisällöstä. Sisältää ruista, vehnää ja maitoa. Säilytä jäähtynyt leipä jääkaapissa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus ja kestot vastaavat Chat-2:n katselmoimaa sisältöä. Sama kesto on merkitty tarkistimen tunnistamana minuuttilukuna."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaturvallisuusohjeet ja allergeenit säilyvät neljällä kielellä tarkastetusta revisiosta. Kirjallinen näyttö ilman Recipavon koekeittiötestiä. Sisältää ruista, vehnää ja maitoa. Säilytä jäähtynyt leipä jääkaapissa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 36 ja ilmoitettu kokonaisaika 260 min säilyvät. Arvot tarkistettu neljällä kielellä."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Käytetyn maltaan mitattu tilavuusmassa sekä siirappisivelyn ja vuokien jauhottamisen syötäväksi jäävät osuudet ovat avoimia. Kaikki neljä arvoa jäävät määrittämättömiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle annosversiolle ei ole hyväksyttyä soveltuvaa GI- tai ainesosasidosta eikä kanonista GK-näyttöä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/saaristolaisleipa.webp",
+    "bytes": 165434,
+    "sha256": "f2fa52401c79dfb00d3512a197008eaa8de2ec1c6e2c7586bfbd61c1f50517b9",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161831506",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161957227",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/leivonnaiset/saaristolaisleipa.md",
+        "sha256": "a049dcdfff5f100ab0c9e21626a629d98ea15102cf08c15d0a9cc1fd85c9c5c2"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/saaristolaisleipa.md",
+        "sha256": "bcc3101213ba4dd1ae342fe54ff5ae4ec87d53e391452589e0479bc40078a6ac"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/saaristolaisleipa.md",
+        "sha256": "fb71b61b2154f77722cd230a68ebfdb5fd9ffaba0af8a56d4eeaba4716c40c55"
+      },
+      {
+        "path": "reseptit/leivonnaiset/saaristolaisleipa.md",
+        "sha256": "91a4c2fde7e37977de4038fe5c11ca5dbc6c8b5a4f53fd033bbe631d63679630"
+      }
+    ],
+    "scope": "Ennen julkaisuehdokasta katselmoitu teksti, valmistus, turvallisuus ja kuva. Ravintoratkaisujen ehdot on kirjattu erillisessä katselmoinnissa."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "fdba525fcdd3191dc8693c065902e7f8ca97bc604f65df06f2f534658d768a61"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu. Valmistusajan ilmaisun vastaavuus varmennettu.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/saaristolaisleipa.md",
+        "language": "fi",
+        "slug": "saaristolaisleipa",
+        "sha256": "b2e85ecb7e87f8391724feb8aa1c11c0c1a836ab4bc07a38e287e6cbfc77759e",
+        "semantic_sha256": "80ac55a82f7dd5013d0381c44518853584eecc2affe554195b2c35241f4e2a7c"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/saaristolaisleipa.md",
+        "language": "en",
+        "slug": "saaristolaisleipa-en",
+        "sha256": "25046bf4e02f6c4052da5e72549f459ead5b41404458a34e5752ce0b2789a846",
+        "semantic_sha256": "b0babf336757884edf5b0c05eb9309ba1b03cfb97133dd10e86ee5d428258812"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/saaristolaisleipa.md",
+        "language": "sv",
+        "slug": "saaristolaisleipa-sv",
+        "sha256": "954c1770bf5e42dd0498d7c432ee164a14cf0f98dcd243ddcad14e6b8e449616",
+        "semantic_sha256": "25a09b4ba6cade3593899ef264239b702f865a6a3c22617b78066f7c70bd3f51"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/saaristolaisleipa.md",
+        "language": "th",
+        "slug": "saaristolaisleipa-th",
+        "sha256": "760ac86f2acf411974fc706387683dd95ae4f6e824f5265f6478aba54e8f9296",
+        "semantic_sha256": "e3f2392eadc9aa8ab1688ed2c528227473ab3a31bfda7f00deced99ea553d79d"
+      }
+    ],
+    "final_independent_delta": "pending"
+  }
+}

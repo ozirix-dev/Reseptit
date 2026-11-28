@@ -64,6 +64,6 @@ A creamy Finnish oven-baked family dish of potato strips, cooked smoked ham, oni
 ## Notes
 
 - Contains milk. Check the ham packaging for other possible allergens. No gluten-free claim has been reviewed.
-- Cool leftovers promptly in shallow containers and refrigerate below +6°C.
+- Cool the cooked dish promptly in shallow containers and refrigerate below +6°C.
 - Reference: [K-Ruoka ham and potato bake](https://www.k-ruoka.fi/reseptit/kinkkukiusaus). This is an independently written and proportion-adjusted Recipavo version, not a reproduction.
-- The photo is AI-generated illustrative imagery. This is an editorial draft; no cooking test or recipe-specific nutrient/GK calculation has been completed.
+- The image is an AI-generated illustration. Recipavo developed the recipe editorially and has not tested it in its own kitchen. Numerical nutrition values are omitted because no approved calculation is available. Glycemic load has not been determined.

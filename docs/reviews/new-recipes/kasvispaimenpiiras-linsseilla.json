@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kasvispaimenpiiras-linsseilla",
+  "source_path": "reseptit/paaruoat/kasvispaimenpiiras-linsseilla.md",
+  "source_sha256": "28d51f6f440925462c63cf4c5b797464366dca7773e6f9b2a015d25d1b09c690",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.marthastewart.com/1535235/vegetarian-shepherds-pie",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/pakastevihannekset/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kasvispaimenpiiras-linsseilla.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/kasvispaimenpiiras-linsseilla.webp",
+    "bytes": 121446,
+    "sha256": "a34cb874b8611d6e2d6b34b38217101c4e6938b145d7a769bc5370bd15b393d6",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/kasvispaimenpiiras-linsseilla.md",
+        "sha256": "a8d506196951fd41915d643fad9ac971bc7ada38b2c96227862d17663f1b641e"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/kasvispaimenpiiras-linsseilla.md",
+        "sha256": "ba936694a9334dcbbf00b548256860f21e7b8e914db1cc59c6ec56a69ff4dfe1"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kasvispaimenpiiras-linsseilla.md",
+        "sha256": "5ee8fee3294d8b7241c79c8774f9bd459435b044dadcceeeade04966c8a806d7"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kasvispaimenpiiras-linsseilla.md",
+        "sha256": "860cbbb88c16549d8599ab26b750e2148f1039d4c5a71de488b0b417f5c1fa17"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "5fca20f914ecf17aa9d897adfc573b779f78e2e7782d34f2a94011a5f192dacc"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/kasvispaimenpiiras-linsseilla.md",
+        "language": "fi",
+        "slug": "kasvispaimenpiiras-linsseilla",
+        "sha256": "28d51f6f440925462c63cf4c5b797464366dca7773e6f9b2a015d25d1b09c690",
+        "semantic_sha256": "d776f0faa151ed844243e00738155d562c34d2693eff68c2b4305bbd787ff6cb"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/kasvispaimenpiiras-linsseilla.md",
+        "language": "en",
+        "slug": "kasvispaimenpiiras-linsseilla-en",
+        "sha256": "fc63fcda5a2adf32706bf0b6cd746177a04f7c1dac79dbf1fb54ae867845ed1b",
+        "semantic_sha256": "677f8ad6febe5bcc96a1d341d2770c22ea63bef31b136176e394835298416ed9"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kasvispaimenpiiras-linsseilla.md",
+        "language": "sv",
+        "slug": "kasvispaimenpiiras-linsseilla-sv",
+        "sha256": "fd3e90501410863debba3f96871c5c3ad6fe9621bb99b64b7e09b5f9e1acbd8e",
+        "semantic_sha256": "05544d1f32cfc205eb39ed1676b0efd1cbc94a2cbfb2c43b657da70ca7170f51"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kasvispaimenpiiras-linsseilla.md",
+        "language": "th",
+        "slug": "kasvispaimenpiiras-linsseilla-th",
+        "sha256": "b4ed0480d0fbd75ba3e1ac399b093b5b29d3d3d4410757c1b6ea7c45aa0eb3a9",
+        "semantic_sha256": "6835571a814d2bbd7f86a03ffdf7019cf2a1975e6ee7ef2b5c7e79818359669d"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 8 ja kokonaisaika 120 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "2.4dl kuivien ranskalaisten linssien ja 2.4dl pakasteherneiden massat, sipuli/porkkana/selleri, perunan kuorinta- ja valutusrajaus sekä kasvis-Worcestershiren koostumus."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "uuniohrapuuro-maitoon",
+  "source_path": "reseptit/aamupalat/uuniohrapuuro-maitoon.md",
+  "source_sha256": "390425aa0119511e69da55ed1c3ca5501a17f8263fa89ed2dfb4461cf301e3c6",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.valio.fi/reseptit/luomu-uuniohrapuuro/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/uuniohrapuuro-maitoon.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Kuiva rikottu ohra ja kevytmaito kypsennetään uunissa koko eränä. Yksi annos on kuudesosa ilman lisukkeita. Ohra ja maito ilmoitetaan."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kuiva rikottu ohra ja kevytmaito kypsennetään uunissa koko eränä. Yksi annos on kuudesosa ilman lisukkeita. Ohra ja maito ilmoitetaan."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kuiva rikottu ohra ja kevytmaito kypsennetään uunissa koko eränä. Yksi annos on kuudesosa ilman lisukkeita. Ohra ja maito ilmoitetaan. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kuiva rikottu ohra ja kevytmaito kypsennetään uunissa koko eränä. Yksi annos on kuudesosa ilman lisukkeita. Ohra ja maito ilmoitetaan. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Neljä kanonisesti laskettua annosarvoa. Fineli 151 kuvaa kuivaa ohrasuurimoa. Helsingin Myllyn vuoden 2026 tuotekuvastossa sekä kokonainen 4321 että rikottu käsittelemätön 4322 ovat täysjyväohraa ja niiden ilmoitus on sama (65 g hiilihydraattia, 10 g kuitua, 10 g proteiinia ja 2 g rasvaa / 100 g). Se tukee kuivan yleissuurimon käyttöä rikotulle viljalle. Käytetty laskelma on Fineli-yleisarvio ja tuotekohtainen vaihtelu on mahdollinen. https://myllarin.fi/media/filer_public/f3/2d/f32da503-1d08-414c-8322-3807046bec8f/helsingin_myllyn_tuotekuvasto_2026.pdf"
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Keitetyn helmi- tai kokonaisen ohran GI ei vastaa rikotun suurimon pitkää maitokypsennystä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/aamupalat/uuniohrapuuro-maitoon.webp",
+    "bytes": 131824,
+    "sha256": "e22189778a5ec481a2e7a504f1344f82e143ec9d2a0b4adf84db9c90f9527c7b",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/aamupalat/uuniohrapuuro-maitoon.md",
+        "sha256": "fbf29380101dbc82f1dcc0ce90701ffa93ed52cac24158b39b329a8b76f5ebe2"
+      },
+      {
+        "path": "kaannokset/sv/aamupalat/uuniohrapuuro-maitoon.md",
+        "sha256": "9c822fc2f84aa6135ecf31288754c29f718ca0255c6fee62d24bd1a3535d948b"
+      },
+      {
+        "path": "kaannokset/th/aamupalat/uuniohrapuuro-maitoon.md",
+        "sha256": "a5e8da3cee29a6a0f316fb462cae50f1982a1fafacf1dc495507440b34328476"
+      },
+      {
+        "path": "reseptit/aamupalat/uuniohrapuuro-maitoon.md",
+        "sha256": "62702e4499b6e75930d953b4261d5893c0b837acda9db252f48d2f285df7ff0e"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/aamupalat/uuniohrapuuro-maitoon.md",
+        "language": "en",
+        "slug": "uuniohrapuuro-maitoon-en",
+        "sha256": "bea648931766ebe5724b014604e310901a8c6bc1e1ac6b17d0342416513cdf53",
+        "semantic_sha256": "64e8f5497c44ce2cddeaf3c7b3f012ce821f439c676cb1edd9c74055180c059e"
+      },
+      {
+        "path": "kaannokset/sv/aamupalat/uuniohrapuuro-maitoon.md",
+        "language": "sv",
+        "slug": "uuniohrapuuro-maitoon-sv",
+        "sha256": "9d3f9a5856b8322ef149a382476caf25fba168f8ec567b1c81f9e805db49274d",
+        "semantic_sha256": "4f59f7d7ad11d33e0fe38416b8f0527df0da7756abb868c01549121a8448d703"
+      },
+      {
+        "path": "kaannokset/th/aamupalat/uuniohrapuuro-maitoon.md",
+        "language": "th",
+        "slug": "uuniohrapuuro-maitoon-th",
+        "sha256": "0f7588a633f4752d1b04a2df1228946d68bb6643fdd683c094eab0bf2d0ff5d0",
+        "semantic_sha256": "dcacd1879e7a8d1f98e043ae39e035ea77a7b778fb346eceedde93bc60627ed0"
+      },
+      {
+        "path": "reseptit/aamupalat/uuniohrapuuro-maitoon.md",
+        "language": "fi",
+        "slug": "uuniohrapuuro-maitoon",
+        "sha256": "390425aa0119511e69da55ed1c3ca5501a17f8263fa89ed2dfb4461cf301e3c6",
+        "semantic_sha256": "0632c8c3724130bc8cadff25bfbda310bb14bc6f932e34d53e93ab174ba460a8"
+      }
+    ]
+  }
+}

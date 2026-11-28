@@ -1,5 +1,5 @@
 import { recipeCardAvifMedia, recipeCardSizes } from "./image-layout";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContent } from "@/lib/content";
 import type { RecipeLocale } from "@/types/content";
@@ -34,6 +34,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   const navigate = useNavigate();
   const [filters, setFilters] = useState<RecipeFilters>(emptyRecipeFilters);
   const [hydrated, setHydrated] = useState(false);
+  const searchInput = useRef<HTMLInputElement>(null);
   const availableCategories = categories.filter(category => catalog?.categories.includes(category));
   const availableDiets = catalog?.diets ?? [];
   const searchFile = recipeFiltersToSearch(filters) && catalog?.searchFile;
@@ -72,7 +73,14 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
     });
   }
 
+  function clearSearch() {
+    // Focus the persistent input before the clear button is removed.
+    searchInput.current?.focus();
+    updateFilters({ query: "" });
+  }
+
   function resetFilters() {
+    searchInput.current?.focus();
     track("Reset Filters");
     setFilters(emptyRecipeFilters);
     navigate(location.pathname, { replace: true, preventScrollReset: true });
@@ -158,8 +166,8 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
       <div className="recipe-search-field">
         <label htmlFor="recipe-search">{labels.search}</label>
         <div className="recipe-search-field__control">
-          <input id="recipe-search" type="search" value={filters.query} placeholder={labels.searchPlaceholder} onChange={(event) => updateFilters({ query: event.currentTarget.value })} />
-          {filters.query ? <button type="button" className="recipe-search-field__clear" onClick={() => updateFilters({ query: "" })}>{labels.clearSearch}</button> : null}
+          <input ref={searchInput} id="recipe-search" type="search" value={filters.query} placeholder={labels.searchPlaceholder} onChange={(event) => updateFilters({ query: event.currentTarget.value })} />
+          {filters.query ? <button type="button" className="recipe-search-field__clear" onClick={clearSearch}>{labels.clearSearch}</button> : null}
         </div>
       </div>
       <div className="recipe-filter-select">

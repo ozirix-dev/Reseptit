@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "recipe_id": "mustikkarahka",
+  "source_path": "reseptit/jalkiruoat/mustikkarahka.md",
+  "source_sha256": "8c23b368caa7cc9f77f6898a1b1ce8ebb29809a6d63ff9ca243b7b04f4694aa6",
+  "decision": "approved",
+  "reviewed_by": "Chat-2",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/marjarahka/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/mustikkarahka.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ehdokkaan identiteetti ja reitit tarkistettiin mainista ja tuotannosta. Chat-2:n valitulle reseptille ei jäänyt estävää päällekkäisyyttä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Tuore metsämustikka ja maustamaton alle 0,5 %:n maitorahka. Ulkomaisten pakastemarjojen kuumennusohje ja maito ilmoitetaan neljällä kielellä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Tuore metsämustikka ja maustamaton alle 0,5 %:n maitorahka. Ulkomaisten pakastemarjojen kuumennusohje ja maito ilmoitetaan neljällä kielellä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Tuore metsämustikka ja maustamaton alle 0,5 %:n maitorahka. Ulkomaisten pakastemarjojen kuumennusohje ja maito ilmoitetaan neljällä kielellä. Katselmointi perustuu kirjalliseen reseptiin ja valmistuslähteisiin, ilman Recipavon fyysistä koekeittiötestiä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Tuore metsämustikka ja maustamaton alle 0,5 %:n maitorahka. Ulkomaisten pakastemarjojen kuumennusohje ja maito ilmoitetaan neljällä kielellä. Annosmäärä ja valmistusaika yhtäpitävät neljällä kielellä. Aika on toimituksellinen arvio."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Julkaistaan vain sidotut kentät. Metsämustikan polyolikenttä puuttuu; rahka on geneerinen vähärasvainen maitorahka."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Kokonaisia ja murskattuja metsämustikoita sekä sokeria sisältävän rahkan GI-sidonta puuttuu. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/jalkiruoat/mustikkarahka.webp",
+    "bytes": 68958,
+    "sha256": "eb9ca15d64ea9510190c585833707ee7eac75be28aaca2736951cc597f107646",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://glycemicindex.com/gi-search/"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7157979196",
+    "head": "14afeff05d8e9aba16837bace6247dfe8e2de610",
+    "base": "2075b8430b6320feef6ebe181f3f84b6cd56c0ce",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/jalkiruoat/mustikkarahka.md",
+        "sha256": "c95534af7c8ddd090e8dd8e8694e5b6665c0af867648a375c1f572569595fc1c"
+      },
+      {
+        "path": "kaannokset/sv/jalkiruoat/mustikkarahka.md",
+        "sha256": "c9d279721a8510de67c439bfe56bcb3f9a29d481d43e6a685f6eeb7d97766995"
+      },
+      {
+        "path": "kaannokset/th/jalkiruoat/mustikkarahka.md",
+        "sha256": "3d26b852d2a143a7a32d3d41a8fae2c27025e2d6ccb4366544a1217260da0aa6"
+      },
+      {
+        "path": "reseptit/jalkiruoat/mustikkarahka.md",
+        "sha256": "578d1d5661125ac0739024b3ff82262e11aef0b0b02f08193f0fa350f54efccb"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Ainekset, määrät, vaiheet, aika, allergeenit ja ravintotiedon rajaus.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "kaannokset/en/jalkiruoat/mustikkarahka.md",
+        "language": "en",
+        "slug": "mustikkarahka-en",
+        "sha256": "d1c6d924328503b800342ad5f3547faa3aaba660ac8cf077762db92d78741328",
+        "semantic_sha256": "06f259afdb0cf497770066337190d846db248854b68874006e5f123fa49e5754"
+      },
+      {
+        "path": "kaannokset/sv/jalkiruoat/mustikkarahka.md",
+        "language": "sv",
+        "slug": "mustikkarahka-sv",
+        "sha256": "e5df48494b67325a7a908a54915cda494899018f547e5ae005c1e004e505b284",
+        "semantic_sha256": "784626de77dfb5e989173330ec43562f8c6f1d4967395916092d2688d9215842"
+      },
+      {
+        "path": "kaannokset/th/jalkiruoat/mustikkarahka.md",
+        "language": "th",
+        "slug": "mustikkarahka-th",
+        "sha256": "b16512b348fe20bb733b2d51150f0edd7bfd390c921963c854c44ae894f7b6e1",
+        "semantic_sha256": "c8fb36be6b401a37bc2803feb9eec2ae86003b020cfe721df83258be05f1af43"
+      },
+      {
+        "path": "reseptit/jalkiruoat/mustikkarahka.md",
+        "language": "fi",
+        "slug": "mustikkarahka",
+        "sha256": "8c23b368caa7cc9f77f6898a1b1ce8ebb29809a6d63ff9ca243b7b04f4694aa6",
+        "semantic_sha256": "df6a06ec6383aeedd300b2af0effc836bff249b0db1e177d4d7f6302a4af0835"
+      }
+    ]
+  }
+}

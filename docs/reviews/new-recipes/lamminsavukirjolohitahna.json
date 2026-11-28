@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "recipe_id": "lamminsavukirjolohitahna",
+  "source_path": "reseptit/valipalat/lamminsavukirjolohitahna.md",
+  "source_sha256": "bfdd3593df4a18e319663d25fdb20741404cace061a0376a6d92f011e8784f72",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/savulohitahna",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/kala/mikrobiologiset-vaarat-ja-muut-riskit/",
+      "https://www.ruokavirasto.fi/globalassets/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/turvallisenkaytonohjeet_2025.pdf"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/lamminsavukirjolohitahna.json",
+  "image_evidence": {
+    "path": "kuvat/valipalat/lamminsavukirjolohitahna.webp",
+    "bytes": 108972,
+    "sha256": "6bdf36835371f3d69b5735cc66e77eb9d8cf81e2ce9ada7261cce5869c94b2f6",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/blob/25f505692cb8e6f5926f3fa950e7721b02732e12/docs/reviews/ideapankki/era-02.md"
+    ],
+    "glycemic_load": null
+  },
+  "reviewed_content": {
+    "head": "25f505692cb8e6f5926f3fa950e7721b02732e12",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "reference": "https://chatgpt.com/g/g-p-6ad73c78d0248191b460c5be315478a6-reseptit/c/6b06c57b-dd48-83ed-bdb1-297c3b5e8c65",
+    "scope": "Sisältö, turvallisuus, kuva ja näkyvät ravintorajaukset",
+    "outcome": "pass",
+    "github_reference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7165247886"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/valipalat/lamminsavukirjolohitahna.md",
+        "language": "fi",
+        "slug": "lamminsavukirjolohitahna",
+        "sha256": "bfdd3593df4a18e319663d25fdb20741404cace061a0376a6d92f011e8784f72",
+        "semantic_sha256": "0bfcd3266a74ac8acc950f373e3950bcb9df0f0c5181ddc529786ccc1bd51001"
+      },
+      {
+        "path": "kaannokset/en/valipalat/lamminsavukirjolohitahna.md",
+        "language": "en",
+        "slug": "lamminsavukirjolohitahna-en",
+        "sha256": "50562c00484515f7fa93a9134ead430fc193e759863d165fc749490d6d94247f",
+        "semantic_sha256": "cb991d2bb701d8e7374fc4d6ba4277f3c60f2b730539ddab606d7130d1d69726"
+      },
+      {
+        "path": "kaannokset/sv/valipalat/lamminsavukirjolohitahna.md",
+        "language": "sv",
+        "slug": "lamminsavukirjolohitahna-sv",
+        "sha256": "a59a3caea89aa6e806bef40037c6234de700eaa7021d3f0f7010a7a687df1faa",
+        "semantic_sha256": "98afc8f4af68cd7672ee4f886a7517e01de5a58ddcdcfe08ca38446e381e9362"
+      },
+      {
+        "path": "kaannokset/th/valipalat/lamminsavukirjolohitahna.md",
+        "language": "th",
+        "slug": "lamminsavukirjolohitahna-th",
+        "sha256": "23a33357a0599a69642e0dd2a22ab587a13bd3666d90232dafeb63ec2f6e823a",
+        "semantic_sha256": "e8ffa7432d66cb7be0b38e52ee232d96016287af8d2a3354097d89fd5c9900b9"
+      }
+    ],
+    "final_independent_delta": "pending"
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Valmis lämminsavustettu kirjolohi ja tilli muodostavat levitteen, joka eroaa kylmäsavu- ja muista kalatäytteistä. Resepti tarkistetaan uudelleen julkaisupohjan vahvistuessa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Suomenkielinen katselmoitu ainesosajärjestys ja määrät säilyvät. Laskentasyötteet on verrattu julkaisuvalmistelun lähdetekstiin."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistus on toimituksellinen sovitus reseptiin linkitetyistä lähteistä. Ohjeen sisältö säilyy Chat-2:n tarkistamasta kieliversiosta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat-2:n korjauskatselmoima ohje, allergeenit ja mahdolliset säilytysohjeet säilyvät."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 5 ja kokonaisaika 15 minuuttia täsmäävät kieliversioissa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli 33414 jättää kirjolohen polyolit tyhjiksi. Tuorejuuston rasvapitoisuus vaihtelee."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Luotettava numeerinen GK jää määrittämättä. Perusteet sisältyvät erän katselmointiaineistoon."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan kielisidosten vertailu. Lopullinen riippumaton delta odottaa PR-katselmointia.",
+    "findings": []
+  }
+}

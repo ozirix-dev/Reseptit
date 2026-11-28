@@ -49,8 +49,8 @@ image:
   height: 1024
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+protein_per_serving_g: 13.57
+fat_per_serving_g: 33.56
 source_language: fi
 source_recipe: reseptit/paaruoat/janssoninkiusaus-juuriselleri.md
 translation_of: janssoninkiusaus-juuriselleri
@@ -67,4 +67,4 @@ translation_of: janssoninkiusaus-juuriselleri
 
 ## Notes
 
-Weigh the edible ingredients listed above. All listed food, sauce and cooking fat belong to the servings; separate side dishes are excluded. Nutrition values are temporarily withheld pending source verification.
+Weigh the edible ingredients listed above. All listed food, sauce and cooking fat belong to the servings; separate side dishes are excluded. Protein and fat values are calculated estimates. Whole-serving carbohydrate values are not reported because source data are incomplete.

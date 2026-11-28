@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kauravuokaleipa",
+  "source_path": "reseptit/leivonnaiset/kauravuokaleipa.md",
+  "source_sha256": "4c19c50cd68a6c0d2e03aef485877984f0a8b5da2bf4e00fae7be24e587e7f22",
+  "decision": "approved",
+  "reviewed_by": "Kokki-Codex",
+  "reviewed_at": "2026-11-25",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.kingarthurbaking.com/recipes/back-of-the-bag-oatmeal-bread-recipe"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kauravuokaleipa.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Oma 20 reseptin samankaltaisuusseulonta. Chat-2:n tarkastamissa viidessä heuristisessa osumassa ei ollut estettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset, niiden käyttötilat ja määrät säilyvät Chat-2:n katselmoimasta sisällöstä. Sisältää vehnää, kauraa, maitoa ja kananmunaa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusvaiheet ja valmistuslähde säilyvät Chat-2:n katselmoimasta sisällöstä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaturvallisuusohjeet ja allergeenit säilyvät neljällä kielellä tarkastetusta revisiosta. Kirjallinen näyttö ilman Recipavon koekeittiötestiä. Sisältää vehnää, kauraa, maitoa ja kananmunaa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 16 ja ilmoitettu kokonaisaika 245 min säilyvät. Arvot tarkistettu neljällä kielellä."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Käytetyn vahvan vehnäjauhon koostumus ja leivän pintaan jäävän valkuaissivelyn massa ovat avoimia. Kaikki neljä arvoa jäävät määrittämättömiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle annosversiolle ei ole hyväksyttyä soveltuvaa GI- tai ainesosasidosta eikä kanonista GK-näyttöä. GK jää määrittämättömäksi."
+    }
+  },
+  "image_evidence": {
+    "path": "kuvat/leivonnaiset/kauravuokaleipa.webp",
+    "bytes": 145630,
+    "sha256": "b3a5c87b77aaaf0f3f2a8a42ee14444f15276a4ce74cc76cd192802d5d53253d",
+    "width": 960,
+    "height": 640,
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "approved": true,
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161831506",
+    "source": "git-tracked"
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7161957227",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "source_blobs": [
+      {
+        "path": "kaannokset/en/leivonnaiset/kauravuokaleipa.md",
+        "sha256": "23091375bc6113bdc19b04938027651c8448622e20c84aa9a5f37c0e9688959c"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/kauravuokaleipa.md",
+        "sha256": "8739272248eb296e8337a86b89a82428462e85c46739c54836895663fd03ab22"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/kauravuokaleipa.md",
+        "sha256": "6118160818b5901af148ea94cb0475f90e0f762f7ec0a9df11fe9146c7eeffef"
+      },
+      {
+        "path": "reseptit/leivonnaiset/kauravuokaleipa.md",
+        "sha256": "5c4e0d002b8afed830dbecff947b5575bc9dc0a88bbfffde3f816dc9faf7002b"
+      }
+    ],
+    "scope": "Ennen julkaisuehdokasta katselmoitu teksti, valmistus, turvallisuus ja kuva. Ravintoratkaisujen ehdot on kirjattu erillisessä katselmoinnissa."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/1005#issuecomment-7162290507",
+    "head": "3bdebe0d40f4ba12a09cebf3ff8c61edb149c801",
+    "base": "2fbcd2799c25ae918a7046f125fc26814795df70",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "5e6639da009f3ac0506ff154553d8eef59b8b1c5bddc152395ead5507de88223"
+  },
+  "translation_semantic_review": {
+    "reviewer": "Kokki-Codex",
+    "reviewed_at": "2026-11-25",
+    "scope": "FI, EN, SV ja TH. Aiempi Chat-2:n sisältökatselmointi ja ehdokkaan ravintorajauksen kielivertailu.",
+    "findings": []
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/leivonnaiset/kauravuokaleipa.md",
+        "language": "fi",
+        "slug": "kauravuokaleipa",
+        "sha256": "4c19c50cd68a6c0d2e03aef485877984f0a8b5da2bf4e00fae7be24e587e7f22",
+        "semantic_sha256": "22ec01977f841040447986cafb2663039626378962d2acb8275a99cfc6fa4324"
+      },
+      {
+        "path": "kaannokset/en/leivonnaiset/kauravuokaleipa.md",
+        "language": "en",
+        "slug": "kauravuokaleipa-en",
+        "sha256": "2468c38afe3b596448121a4f4da0b4aebff2eada87c0fe2f5eee0e557eaf3c14",
+        "semantic_sha256": "ef2464737beced2d3909d31c69e6175d9f2d1595908308f6150c19eb35db2349"
+      },
+      {
+        "path": "kaannokset/sv/leivonnaiset/kauravuokaleipa.md",
+        "language": "sv",
+        "slug": "kauravuokaleipa-sv",
+        "sha256": "ea48e60fa69561deea9eb57e5c5105bf41e904585d31258b88e44a50253b6c97",
+        "semantic_sha256": "d4eb6b5147916d27330cddfb4446e4f405db42a368c303eab8c13da2e60dc03b"
+      },
+      {
+        "path": "kaannokset/th/leivonnaiset/kauravuokaleipa.md",
+        "language": "th",
+        "slug": "kauravuokaleipa-th",
+        "sha256": "8d12fa26e594f1eff1dd288056ab5b62959e2a163aa7f2f134aebd7dac92adb6",
+        "semantic_sha256": "45429fd2b910f9a212168980ab50bd320b743b6f59b41a93e3892146c91a983b"
+      }
+    ],
+    "final_independent_delta": "pending"
+  }
+}

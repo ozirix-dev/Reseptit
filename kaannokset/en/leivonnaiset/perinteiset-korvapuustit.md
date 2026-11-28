@@ -11,13 +11,18 @@ language: en
 source_language: fi
 source_recipe: reseptit/leivonnaiset/perinteiset-korvapuustit.md
 translation_of: perinteiset-korvapuustit
-status: draft
+status: published
 servings: 30
 time_total_min: 150
 difficulty: "easy"
 tags:
   - "Finnish"
   - "traditional"
+image:
+  src: leivonnaiset/perinteiset-korvapuustit.webp
+  alt: "Finnish cinnamon buns with visible swirls and pearl sugar; AI illustration"
+  width: 960
+  height: 640
 ingredients:
   - amount: 500
     unit: "ml"
@@ -62,7 +67,7 @@ ingredients:
 
 # Traditional Finnish Cinnamon Rolls
 
-A traditional Finnish home cooking recipe.
+Cardamom-scented dough is rolled around a cinnamon filling, then topped with pearl sugar before baking.
 
 ## Preparation
 
@@ -74,5 +79,7 @@ A traditional Finnish home cooking recipe.
 
 ## Notes
 
-- Editorial draft, not tested in a Recipavo kitchen. Image, nutrition and GK calculations, final translation and allergen checks are pending.
+- Contains wheat, milk and egg.
 - Vertailulähde / Reference: https://www.martat.fi/reseptit/korvapuustit/
+
+- Reliable nutrition values could not be determined for one serving.

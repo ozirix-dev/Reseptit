@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "recipe_id": "gaeng-jued-tofu-porsas",
+  "source_path": "reseptit/paaruoat/gaeng-jued-tofu-porsas.md",
+  "source_sha256": "e5383bb4da16e42959cabcd14ddd8410495c6dd79c4876b2437fd1a45326ea8f",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://rachelcooksthai.com/pork-and-tofu-soup/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/gaeng-jued-tofu-porsas.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/gaeng-jued-tofu-porsas.webp",
+    "bytes": 194118,
+    "sha256": "1102966f7d1cf42192846522515f0d8ecec4f4ae76022e4b2d2e6ed017b3f904",
+    "width": 1672,
+    "height": 941,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/gaeng-jued-tofu-porsas.md",
+        "sha256": "520df7938094c25ef5e893871eb971927d3e2c8be1deee116021af1c299882ce"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/gaeng-jued-tofu-porsas.md",
+        "sha256": "2eadcc6c2276df55a9bb3b7c4dd128fca027be37d3aa519df97610cc28032340"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/gaeng-jued-tofu-porsas.md",
+        "sha256": "e41b5a3a0000c70e694de1d5f97e18d25842e5be47270fe0ba0662d33c5c32d1"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/gaeng-jued-tofu-porsas.md",
+        "sha256": "c4f43b962751c41e22b64ccd0f7792e92d94f179324dda37cb83dacededb157d"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "ae3c2de326e9343f776a61e52bc4ab9b17151b036f32c5a2b573893aca889a8d"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/gaeng-jued-tofu-porsas.md",
+        "language": "fi",
+        "slug": "gaeng-jued-tofu-porsas",
+        "sha256": "e5383bb4da16e42959cabcd14ddd8410495c6dd79c4876b2437fd1a45326ea8f",
+        "semantic_sha256": "8cbe6ae506f42d2f9c115d26425c3f1d89c20e7707c53440117cc37c7585a234"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/gaeng-jued-tofu-porsas.md",
+        "language": "en",
+        "slug": "gaeng-jued-tofu-porsas-en",
+        "sha256": "04eff1ff600f9a310e98bb7b3d14dab9e23677e3aa0c5d5da6a9b3d7c74633ee",
+        "semantic_sha256": "43a84269500cdcf762a2c9a26f6809f444ff902812c94db9ed457f1f79055038"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/gaeng-jued-tofu-porsas.md",
+        "language": "sv",
+        "slug": "gaeng-jued-tofu-porsas-sv",
+        "sha256": "c6738a04bfa8313150ac0ba86973d97ab78ff4394e1e7c81494694f0c337dbf2",
+        "semantic_sha256": "0f3f1e54a952933b913c8520921a1761f53ceecc1bf862cac6d28ff215008c07"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/gaeng-jued-tofu-porsas.md",
+        "language": "th",
+        "slug": "gaeng-jued-tofu-porsas-th",
+        "sha256": "f95c4c7453f4a1a4553fdc0616cf7bab864279de864603b4a4ca449db0bff593",
+        "semantic_sha256": "2b5e63c66e8374da0de9a0d63278ff71ea00ffa90c4dc217c92dcb137d1c2d4f"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 6 ja aika 35 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Tofun ja jauhelihan täsmäkoostumus, 950 ml kanaliemi, sipulien ja kiinankaalin massat sekä kastikkeet."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tofun, liemen, sipulin ja kastikkeiden HH/annos sekä GI-perusta; ei kasvis-/nollaoletusta."
+    }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
+  }
+}

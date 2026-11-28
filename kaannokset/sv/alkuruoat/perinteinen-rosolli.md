@@ -7,7 +7,7 @@ language: sv
 source_language: fi
 source_recipe: reseptit/alkuruoat/perinteinen-rosolli.md
 translation_of: perinteinen-rosolli
-status: draft
+status: published
 servings: 8
 time_total_min: 50
 difficulty: "lätt"
@@ -19,6 +19,14 @@ cooking_method:
 tags:
   - "finsk"
   - "traditionell"
+image:
+  src: alkuruoat/perinteinen-rosolli.webp
+  alt: "Tärnad rosoll i en skål med rosa gräddsås vid sidan om; AI-illustration"
+  width: 960
+  height: 640
+carbs_net_per_serving_g: 13.73
+protein_per_serving_g: 2.05
+fat_per_serving_g: 6.74
 ingredients:
   - amount: 300
     unit: "g"
@@ -28,21 +36,21 @@ ingredients:
     item: "kokta morötter"
   - amount: 300
     unit: "g"
-    item: "kokta eller inlagda rödbetor, avrunna"
+    item: "kokta, skalade rödbetor, osaltade och avrunna"
   - amount: 100
     unit: "g"
-    item: "smörgåsgurka"
+    item: "avrunnen sötsalt smörgåsgurka"
   - amount: 120
     unit: "g"
-    item: "syrligt äpple, ätbar del utan kärnhus"
+    item: "syrligt äpple med skal, utan kärnhus"
   - amount: 60
     unit: "g"
     item: "rödlök"
   - amount: 150
-    unit: "ml"
-    item: "vispgrädde till såsen"
+    unit: "g"
+    item: "vispgrädde (35 % fett) till såsen"
   - amount: 5
-    unit: "ml"
+    unit: "g"
     item: "ättika till såsen"
   - amount: 5
     unit: "g"
@@ -64,12 +72,13 @@ En finsk julsallad av tärnade rotfrukter och äpple med rosa gräddsås som ser
 1. Använd färdigkokta, avsvalnade rotfrukter. Om du börjar med råa, koka dem mjuka, kyl snabbt i grunda kärl och skala. Väg de ätbara kokta mängderna; låt rödbetorna rinna av och ta bort äpplets kärnhus.
 2. Tärna rotfrukter, gurka, äpple och lök i små jämnstora bitar.
 3. Blanda salladen försiktigt och krydda med salt och vitpeppar. Täck och kyl i kylskåp i minst 30 minuter.
-4. Vispa kall grädde lätt. Rör ner ättika och socker; färga eventuellt med några droppar kallt spad som sparats separat enbart från receptets rödbetor. Servera såsen separat och förvara både sallad och gräddsås i kylskåp under +6 °C fram till servering.
+4. Vispa kall grädde lätt. Rör ner ättika och socker; mosa eventuellt ner en liten kokt rödbetstärning från salladen i såsen. Servera såsen separat och förvara både sallad och gräddsås i kylskåp under +6 °C fram till servering.
 
 ## Anteckningar
 
 - Kontrollera allergener på förpackningarna; inget påstående om glutenfrihet har granskats.
-- Redaktionellt utkast: ingen provlagning hos Recipavo, godkänd närings-/GK-beräkning eller bild ännu.
 - Jämförelsekälla för tillagningen (inte kopierad): https://www.martat.fi/reseptit/rosolli/
 
 - Tidsuppskattningen på 50 minuter förutsätter färdigkokta och avsvalnade rotfrukter. Att koka och snabbt kyla råa rödbetor tar längre tid. Gräddsåsen innehåller mjölk; använd kall grädde och rena redskap.
+
+- Tillgängliga näringsvärden per portion är uppskattningar utifrån ingredienserna.

@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "recipe_id": "miang-kham-salaattisuupalat",
+  "source_path": "reseptit/alkuruoat/miang-kham-salaattisuupalat.md",
+  "source_sha256": "2056eea560a609b62fb8bda8a9a4327c51d1cf00523d77959d65fbafdef4e75b",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://rachelcooksthai.com/miang-kham/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/miang-kham-salaattisuupalat.json",
+  "image_evidence": {
+    "path": "kuvat/alkuruoat/miang-kham-salaattisuupalat.webp",
+    "bytes": 320126,
+    "sha256": "be72fe284362a0cdf7fbd83667ac41d7ae22be2efbd8ea7c0381fc79ad4c9778",
+    "width": 1672,
+    "height": 941,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/alkuruoat/miang-kham-salaattisuupalat.md",
+        "sha256": "44ced233cc335a4f5a84fc7899c0b4a67d646383458d416b905f647578af7ea2"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/miang-kham-salaattisuupalat.md",
+        "sha256": "29711c87be99de72193653d20bdc9d2d1b40ae4347291c08cb4dabddd20f4734"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/miang-kham-salaattisuupalat.md",
+        "sha256": "87f79da0c6080368138d5c2339b03dee2b6fdef5d0c4a2de6a9bbc2a6f29ab81"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/miang-kham-salaattisuupalat.md",
+        "sha256": "7f2a0485c49cfe6b79f9f2278a1223358398881f994bfe351de97741b88a48a6"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "d27465f1119d15919e67005aecb99f54f672b35aa48a627b5cc6c30148577a7a"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/alkuruoat/miang-kham-salaattisuupalat.md",
+        "language": "fi",
+        "slug": "miang-kham-salaattisuupalat",
+        "sha256": "2056eea560a609b62fb8bda8a9a4327c51d1cf00523d77959d65fbafdef4e75b",
+        "semantic_sha256": "b15fefb4313437d9959f54b912025fbc09e605389b07986079f435c777a82b08"
+      },
+      {
+        "path": "kaannokset/en/alkuruoat/miang-kham-salaattisuupalat.md",
+        "language": "en",
+        "slug": "miang-kham-salaattisuupalat-en",
+        "sha256": "2fd17e862b292f8ec8683a1af480a8bdfe2cf571276fe52e699b27d4dd08c441",
+        "semantic_sha256": "716dafe4fe32a75e31545abd56a5494739a30674f4053f5280bb59a94c4ca4bc"
+      },
+      {
+        "path": "kaannokset/sv/alkuruoat/miang-kham-salaattisuupalat.md",
+        "language": "sv",
+        "slug": "miang-kham-salaattisuupalat-sv",
+        "sha256": "bd2b2645dd4805b645d5d69f4a6c3a3f36a294f38bf0a97dd371fa84433383c4",
+        "semantic_sha256": "1b30f58eb0e7dfcba21c2a954b5bb8aea7f5afb487dfe19fc0a14f4fdf958413"
+      },
+      {
+        "path": "kaannokset/th/alkuruoat/miang-kham-salaattisuupalat.md",
+        "language": "th",
+        "slug": "miang-kham-salaattisuupalat-th",
+        "sha256": "5cc09bb48ec415dcfc06fac7bfddb380181e05a5687bc655b9f4fcdeb1e9f791",
+        "semantic_sha256": "9a98289499fbddb5cc5a20d015edb31d4c7670c87f2ff2d364b03d1be6fbbe85"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja aika 80 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "120 ml palmusokerin, pähkinöiden, kookoksen ja kuivakatkarapujen massat, kastikkeen saanto ja salaatin syötävä massa."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Palmusokerin todellinen massa, kastikkeen jako ja täytteiden HH/GI; romaine ei alkuperäinen lehti."
+    }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
+  }
+}
