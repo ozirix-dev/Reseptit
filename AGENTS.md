@@ -19,6 +19,29 @@
   approved scope, Repo Guard, required CI, branch and worktree ownership,
   F25/GK approvals and deployment boundaries.
 
+## RECIPAVO-AUTONOMIA-V1
+
+- The owner has authorized routine Recipavo development within the existing
+  role, scope and ownership rules. Do not ask the user again for routine
+  branch work, guarded writes, commits, pushes, PRs, tests, CI or reviews
+  covered by the [standing decision](https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7212803624).
+- Chat 1 coordinates one main integration at a time and makes routine Ready,
+  merge and release decisions. Kokki-Codex 1 is the primary local operator.
+  Only publish an approved revision through the existing release process.
+  An explicit user HOLD or prohibition remains in force, including #1020.
+- Keep repository identity, one writer per branch, Repo Guard reservations,
+  risk-based independent review, revision-bound evidence, required CI,
+  food safety, publication approvals and production verification. Reuse
+  evidence for unchanged content and review material deltas. Verify both
+  the content and the resulting Git blob if line endings are normalized.
+- A mandatory system approval or denied technical gate still controls the
+  operation. Stop the affected action and continue independent work.
+  Do not switch tools, identities or execution routes to get around a denial.
+  User decisions outside normal scope follow section 4 of the standing decision.
+- GitHub holds decisions, ownership and queue status. ReportHub is a parallel
+  view. If a work cycle is scheduled, carry this decision into its existing
+  instructions and record any management-tool blocker in the work queue.
+
 ## Parallel ChatGPT sessions (Chat 1–n)
 
 - Every active ChatGPT work session must identify itself as `Chat N` where
@@ -124,7 +147,7 @@
 - Kevyt PR: **yksi todellinen, rajattu sisältökatselmointi** riittää. Sen voi kirjata yhteen GitHub-katselmointiin **tai** PR-kommenttiin; älä teetä samaa vertailua useassa chatissa, äläkä avaa erillisiä pelkkiä hyväksyntä-PR:iä. Katselmoija tarkistaa muuttuneet tiedostot, alkuperän ja sisäisen johdonmukaisuuden sekä esittää tuloksen, rajaukset, löydökset ja tarkistetun HEAD-SHA:n. Laskentamuistiossa tarkista ainesosat, määrät, annosjako ja laskut; erottele laskutoimituksen oikeellisuus ulkoisten lähteiden itsenäisestä varmentamisesta. Pelkkä botin 'no findings' tai vihreä CI ei korvaa sisällöllistä tarkistusta.
 - Jos pätevä, versioon sidottu katselmointi on jo kirjattu eikä aineisto ole sen jälkeen olennaisesti muuttunut, **Chat-1 ei toista katselmointia**: tarkista vain katselmoinnin kattavuus, uudet kommentit, täsmällinen nykyinen HEAD/base, CI, GitHubin vaaditut hyväksynnät ja Repo Guardin preflight; yhdistä vain suojatun menettelyn kautta. Jos branch protection vaatii muodollisen `APPROVE`-hyväksynnän, tavallinen kommentti ei korvaa sitä.
 - Materiaaliset ruoka-/elintarviketurvallisuus-, allergeeni-, ravinto-, GI/GK-, F25-, karanteeni-, lähde- ja käännösmuutokset sekä julkaisu- tai CI-porttien muutokset **eivät saa kevyen dokumentti-PR:n poikkeusta**. Noudata edelleen niiden todellisia riippumattomia evidenssi- ja hyväksyntävaatimuksia. Avoin P0/P1, vanhentunut evidenssi tai ratkaisematon lähderistiriita = HOLD. FI-lähdekatselmoinnin oma riippumaton päätösvaatimus (#369) säilyy.
-- HEADin muuttuessa arvioi, koskeeko muutos aiemmin tarkistettua sisältöä; uusi asiamuutos vaatii päivitetyn katselmoinnin. Pakollinen `Recipe site / build`, muut soveltuvat tarkistukset, täsmä-SHA, yksi kirjoittaja/haara, Repo Guardin paikallinen suostumus ja erillinen julkaisulupa **eivät muutu**. Älä käytä kevennystä suojauksen kiertämiseen.
+- HEADin muuttuessa arvioi, koskeeko muutos aiemmin tarkistettua sisältöä; uusi asiamuutos vaatii päivitetyn katselmoinnin. Pakollinen `Recipe site / build`, muut soveltuvat tarkistukset, täsmä-SHA, yksi kirjoittaja/haara, Repo Guardin paikallinen suostumus ja sovellettavat julkaisuhyväksynnät **säilyvät**. Älä käytä kevennystä suojauksen kiertämiseen.
 - Kirjaa lyhyesti **yksi päätös ja jäljelle jääneet HOLDit** samaan PR:ään. Ei useita osittain päällekkäisiä raportteja, hyväksyntäkierroksia tai ylimääräisiä CI-ajokertoja, ellei tarkistus paljasta konkreettista korjattavaa.
 
 ## Recipe review without an in-house test kitchen

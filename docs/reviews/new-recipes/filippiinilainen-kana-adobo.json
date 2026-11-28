@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "recipe_id": "filippiinilainen-kana-adobo",
+  "source_path": "reseptit/paaruoat/filippiinilainen-kana-adobo.md",
+  "source_sha256": "e038b5326f69d9c1305de9f36509eb03b65cc867c12e427c0e7073d814f0f7b9",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.foodnetwork.com/recipes/filipino-chicken-adobo-recipe-1955818"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/filippiinilainen-kana-adobo.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/filippiinilainen-kana-adobo.webp",
+    "bytes": 182630,
+    "sha256": "70492344812cecabac416167dfed9ea545d8951b606c248dd95894d983e61e66",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/filippiinilainen-kana-adobo.md",
+        "sha256": "48f5a056e78bd2d825eaff1b2c254a1c84089b6c418728aafb8591d1740fba73"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/filippiinilainen-kana-adobo.md",
+        "sha256": "a0d06c1b3ce4ff3d9c85bbcac9576dcc679772535ef3298267d55ce4fc968494"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/filippiinilainen-kana-adobo.md",
+        "sha256": "5012b2367440f6f34f7ae6110d71586117c4070cc3fd37c24fcf1ebb67c3eb6d"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/filippiinilainen-kana-adobo.md",
+        "sha256": "141eb425cc78cafd7dc79d86616883bda2c7f944bb34a89c7cfb265afca87100"
+      }
+    ],
+    "scope": "Aiempi sisältö, ruokaturvallisuus, kielet ja kuvat. Erillinen täsmäkatselmointi julkaisumuodon statuksille."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7180410941",
+    "head": "95e6c1b8f30ddfe13b1130bc971ce73f3fa1bd85",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "087378b9e9beeb4e09038697c518028cb54d5431fe10de87ca3764f4edbc91d1"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/filippiinilainen-kana-adobo.md",
+        "language": "fi",
+        "slug": "filippiinilainen-kana-adobo",
+        "sha256": "e038b5326f69d9c1305de9f36509eb03b65cc867c12e427c0e7073d814f0f7b9",
+        "semantic_sha256": "f54c51704e567ea823e033b6003a6a13e0df08d9812abc8bfe6d7ae3995abc24"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/filippiinilainen-kana-adobo.md",
+        "language": "en",
+        "slug": "filippiinilainen-kana-adobo-en",
+        "sha256": "de711af5dc2bc6a8cfd07edf62220ed10fbfcbd26944e7ef9950874220c841ae",
+        "semantic_sha256": "d853f2eeffe2932ad1fb22f425144ef9c2cc3686cdb7eee15f10a9a1bbb61375"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/filippiinilainen-kana-adobo.md",
+        "language": "sv",
+        "slug": "filippiinilainen-kana-adobo-sv",
+        "sha256": "b1614f4589ead368e5a1eb5573e7aaaae4e7c57b476f3f487d0339cdb5ab62e5",
+        "semantic_sha256": "8a80bc236f651b306ba81655aa5c303c3d66793beb95d1d6fa293484e42c76a3"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/filippiinilainen-kana-adobo.md",
+        "language": "th",
+        "slug": "filippiinilainen-kana-adobo-th",
+        "sha256": "ea888cf86dcbe3fd595b5cff06cefc876ddc409aed252cc8f13ccfed56d2c59f",
+        "semantic_sha256": "57458509040e708f08b80638f16783e4147c21b98584a32e145a8983ae5b0ab9"
+      }
+    ]
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI/EN/SV/TH sisältö ja julkaisutavan delta. Kokki-Codex varmisti kanoniset semanttiset hajautteet.",
+    "findings": []
+  },
+  "checks": {
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi reseptin ainesosat ja nelikielisen sisältövastaavuuden. Julkaisumuodon delta ei muuttanut ainesosia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen aiempi katselmointi säilyy. Julkaisumuodossa muuttuvat yksinomaan julkaisu- ja kielistatukset."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Chat 2 hyväksyi aiemman reseptin turvallisuusohjeen ja vahvisti, että julkaisuversioon ei tullut menetelmä- tai turvallisuusmuutoksia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 6 ja aika 120 minuuttia säilyivät alkuperäisessä katselmoidussa aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "2 kg luullisen nahallisen kanan syötävä saanto ja rasva/kastikkeen retentio, soijatuotteen koostumus."
+    },
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tunniste ja julkinen FI-osoitetunnus tarkistettu päähaaran 3e0fe341 resepti-inventaariota vasten."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Soijakastikkeen ja valkosipulin annoskohtainen HH; mahdollinen vähäinen vaikutus vaatii nykyisten kynnysarvojen mukaisen näytön. Ei riisiä."
+    }
+  },
+  "editorial_copy_review": {
+    "reference": "docs/reviews/2026-11-26-julkaistujen-reseptien-luonnossanasto.md",
+    "scope": "Published draft wording only. Earlier content, safety, nutrition and image decisions retained.",
+    "base": "89458a132f0d84bfc32917bb7a0c1b396abb1aa9",
+    "review_package_sha256": "0fa259b7c2b5cdbed1f5ab1a10d051b2e83cdc7ad8b924e470861aa621797335"
+  }
+}

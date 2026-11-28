@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "sieni-ohrapata",
+  "source_path": "reseptit/paaruoat/sieni-ohrapata.md",
+  "source_sha256": "3ef1dc07ad32eb7fdcaa6fbd53a33e4277f867fbb64df4039f259068b762f390",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://themom100.com/recipe/mushroom-barley-soup/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/sieni-ohrapata.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/sieni-ohrapata.webp",
+    "bytes": 133318,
+    "sha256": "737cf92c69231bd9d87089ea04c3c15383a0b1800a685bc3bab0e72aea079134",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/sieni-ohrapata.md",
+        "sha256": "db56d6ea58fc6c994e5bd821e2cc41f03812e9c5ddab055698566f4845cbc015"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/sieni-ohrapata.md",
+        "sha256": "902773275e69cd92b48c08d478dbab45c07afc4a618bad6773173685001d64e1"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/sieni-ohrapata.md",
+        "sha256": "e1eb753f91834779df3a8fc7a0d18060b626adc46a4beae82920dca37e5e44a7"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/sieni-ohrapata.md",
+        "sha256": "16fbf4e169b7fbd34022818e5531b058f41ab7c346ff4eadc617f05fc01c491c"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "b0222579f5520877246329ed80b117a4dd46403e22443cf613612ff83489f542"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/sieni-ohrapata.md",
+        "language": "fi",
+        "slug": "sieni-ohrapata",
+        "sha256": "3ef1dc07ad32eb7fdcaa6fbd53a33e4277f867fbb64df4039f259068b762f390",
+        "semantic_sha256": "b53f925651b024cf9e8f0697d0d43447a7cae1a82bc3c7ff6e9bf13d36707f15"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/sieni-ohrapata.md",
+        "language": "en",
+        "slug": "sieni-ohrapata-en",
+        "sha256": "8694c0176af96a624dc09a519c5b2d8e650a050f68a6686e0b6bfe0476db10fb",
+        "semantic_sha256": "1810df474bc7a1e6cfb5689d8ddedcb5a202d22925bbf5c8873afc21e3f0c9a8"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/sieni-ohrapata.md",
+        "language": "sv",
+        "slug": "sieni-ohrapata-sv",
+        "sha256": "86cdb17461d480af50d4f068809f37f407cfcd640e902322329521893a2c5144",
+        "semantic_sha256": "9b9bcfbbc9c2528d6e280feb121c4e887a1715aaccb69adaed6320857925bcca"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/sieni-ohrapata.md",
+        "language": "th",
+        "slug": "sieni-ohrapata-th",
+        "sha256": "23b4bf6b5a748a002bd82ac03b33425e4afe682e2ee0e045488d0af5c4e7e7e1",
+        "semantic_sha256": "c861021c2c746a7bf2e9c4f4ba92b1119171b256edccadd3ab21cbce4e7ff80b"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 6 ja kokonaisaika 90 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "2.4l viipaloitujen viljeltyjen herkkusienten massa, 1.2dl kuivan ohran laatu ja massa, kuivatun herkkutatin lähde, 1.9l kasvisliemen koostumus."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}

@@ -37,12 +37,6 @@ button { font: inherit; }
 .site-nav a:hover { color: var(--accent); background: #e8f0e9; }
 .site-nav a[aria-current="page"] { color: var(--accent); background: #e8f0e9; font-weight: 700; }
 .site-footer__contact { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
-.privacy-choice { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1rem; padding: .75rem 1rem; border: 1px solid var(--line); background: var(--surface); border-radius: .75rem; margin-block: 1rem; }
-.analytics-prompt { position: fixed; inset: auto 0 0; z-index: 10; pointer-events: none; }
-.analytics-prompt .privacy-choice { pointer-events: auto; max-height: 45dvh; overflow-y: auto; }
-.privacy-choice p { margin: 0; }
-.privacy-choice .recipe-actions { margin: 0; }
-.privacy-choice button[aria-pressed="true"] { border-color: var(--accent); font-weight: 700; }
 .site-footer { padding: 1.5rem 0; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: .9rem; }
 .glycemic-pilot__intro { gap: .65rem; margin-bottom: 1.4rem; }
 .glycemic-pilot__method-link { justify-self: start; color: var(--accent); min-height: 44px; padding-block: .5rem; }
@@ -168,7 +162,7 @@ button { font: inherit; }
 @media (max-width: 520px) { .site-header__inner { align-items: flex-start; } .site-nav { width: 100%; } .site-nav a { padding-inline: .45rem; } .recipe-panel { padding: .95rem; } .recipe-panel__heading { align-items: flex-start; } }
 @media print {
   :root, body { background: #fff; color: #000; }
-  .site-header, .site-footer, .privacy-choice, .skip-link, .article-breadcrumbs, .recipe-languages, .serving-control { display: none !important; }
+  .site-header, .site-footer, .skip-link, .article-breadcrumbs, .recipe-languages, .serving-control { display: none !important; }
   .page-section { padding: 0; }
   .container, .container--narrow { width: 100%; max-width: none; }
   .recipe-layout { display: block; }
@@ -296,8 +290,9 @@ button { font: inherit; }
   .site-brand strong { font-size:1.12rem; }
   .site-brand small { display:none; }
   .site-brand__mark { width:2.15rem; }
-  .site-header__navigation { display:flex; align-items:center; flex-wrap:nowrap; gap:.4rem; margin-left:auto; }
-  .site-primary-menu, .site-language-menu { position:relative; padding:0; border:0; }
+  /* Both mobile panels share the right edge of the navigation group. */
+  .site-header__navigation { position:relative; display:flex; align-items:center; flex-wrap:nowrap; gap:.4rem; margin-left:auto; }
+  .site-primary-menu, .site-language-menu { position:static; padding:0; border:0; }
   .site-primary-menu > summary, .site-language-menu > summary { display:flex; min-height:44px; align-items:center; justify-content:center; gap:.2rem; cursor:pointer; list-style:none; padding:.4rem .6rem; border:1px solid var(--line); border-radius:.65rem; color:var(--accent); background:var(--surface); font-weight:700; }
   .site-primary-menu > summary::-webkit-details-marker, .site-language-menu > summary::-webkit-details-marker { display:none; }
   .site-primary-menu > nav, .site-language-menu > nav { display:none; position:absolute; z-index:20; top:calc(100% + .4rem); right:0; min-width:min(80vw,245px); padding:.45rem; border:1px solid var(--line); border-radius:.85rem; background:var(--surface); box-shadow:0 15px 30px rgba(25,51,46,.17); }

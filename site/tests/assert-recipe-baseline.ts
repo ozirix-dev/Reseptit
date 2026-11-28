@@ -11,6 +11,7 @@ import { originalForC13CanonicalHistory } from "./c13-canonical-historical-trans
 import { originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
 import { originalForJumeokbapHistory } from "./jumeokbap-history";
 import { historicalSources, readHistoricalTransition } from "./history/historical-source-reader";
+import { beforeReviewedLocalePrecision } from "./history/reviewed-locale-precision";
 import { originalForTamagoKakeGohanHistory } from "./tamago-kake-gohan-history";
 import { originalForKetoprakHistory } from "./ketoprak-history";
 import { execFileSync } from "node:child_process";
@@ -308,10 +309,12 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
   for (const change of changes) {
     const [status, file] = change.split("\t");
     const readLive = () => readFileSync(path.join(root, file), "utf8");
-    const readFrozen = () => gazpachoThaiBeforeReviewedClove(file, restoreRecipeAuditSnapshot(file, predecessorForGk005History(file, readLive())));
+    const readFrozen = () => beforeReviewedLocalePrecision(root, file,
+      gazpachoThaiBeforeReviewedClove(file, restoreRecipeAuditSnapshot(file, predecessorForGk005History(file, readLive()))));
     if (status === "M") {
       const live = readLive();
-      const prior = restoreRecipeAuditSnapshot(file, predecessorForGk005History(file, live));
+      const prior = beforeReviewedLocalePrecision(root, file,
+        restoreRecipeAuditSnapshot(file, predecessorForGk005History(file, live)));
       if (prior !== live) {
         const pinned = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
         if (prior === pinned) continue;

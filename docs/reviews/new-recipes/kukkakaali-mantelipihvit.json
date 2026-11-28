@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kukkakaali-mantelipihvit",
+  "source_path": "reseptit/paaruoat/kukkakaali-mantelipihvit.md",
+  "source_sha256": "c9c880836ae5a27ad01dac53081bbe5616e5b5d1afdd667d47f43684e1caff12",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://dish.co.nz/recipes/spiced-cauliflower-fritters",
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kukkakaali-mantelipihvit.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/kukkakaali-mantelipihvit.webp",
+    "bytes": 207720,
+    "sha256": "ead329ff35de04f9039e1ed804f346f65fd6726bbdfec9e350938cb0bf32a8db",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/kukkakaali-mantelipihvit.md",
+        "sha256": "c72d3e0a9699a094eb7709b90be752254aadfe701ff647cf902934338a148213"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/kukkakaali-mantelipihvit.md",
+        "sha256": "13a5651a3f0863a6c715356826fee70e7c8d431c0767b6d5bdb2fc16c6c949f4"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kukkakaali-mantelipihvit.md",
+        "sha256": "6841cfefde20637502de809dde418cbe4fc602529be34468663267f4a5488398"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kukkakaali-mantelipihvit.md",
+        "sha256": "42683d9e3c08adfeb074896fee6e2355ee4fce559381aa97cefb364f7d07da41"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "d47bd37d655c1e7ca4e713a07e353e74401877afcf2594bdc64eeb69ba9dda37"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/kukkakaali-mantelipihvit.md",
+        "language": "fi",
+        "slug": "kukkakaali-mantelipihvit",
+        "sha256": "c9c880836ae5a27ad01dac53081bbe5616e5b5d1afdd667d47f43684e1caff12",
+        "semantic_sha256": "f53eb4f8d4ac77b60be99521d47a69e67a2a202187ba81f9e53fcf586e2dddac"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/kukkakaali-mantelipihvit.md",
+        "language": "en",
+        "slug": "kukkakaali-mantelipihvit-en",
+        "sha256": "404807d331aac39420d6703958a7cb0a0bfe2f040d1a300176082c47fd8754f6",
+        "semantic_sha256": "2b5e8b340a311508df06b443025226967c553f13db71cccfde80c9f96b839069"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/kukkakaali-mantelipihvit.md",
+        "language": "sv",
+        "slug": "kukkakaali-mantelipihvit-sv",
+        "sha256": "371cfd2cb4c6b6489eb8d201bddcbb90584abe351a7d01d5ff546f82c8021492",
+        "semantic_sha256": "7810b91be1f26fe64cc79c7b90427f206d6c3af1b3ac681fc5aa9b43af81df94"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/kukkakaali-mantelipihvit.md",
+        "language": "th",
+        "slug": "kukkakaali-mantelipihvit-th",
+        "sha256": "149399ebfd7666e738c8d2bbb2a54c4d4d610bb569aadf372bc30c0e98b363dd",
+        "semantic_sha256": "ae4516d96c074675fec7016eaba9fe23f9641a9011768827ffd80350c03044e5"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 4 ja kokonaisaika 35 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "½ kukkakaalin syötävä nuppumassa, 1.25dl mantelijauheen ja 62.5ml tapiokatärkkelyksen massat, 3 munan syötävä massa, 30ml paistoöljyn syöty määrä."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "recipe_id": "linssibolognese",
+  "source_path": "reseptit/paaruoat/linssibolognese.md",
+  "source_sha256": "a0886a303af205459681049d937be53db29fbeb34538b7e68b30c27a6cf7f214",
+  "decision": "approved",
+  "reviewed_by": "Chat 2",
+  "reviewed_at": "2026-11-26",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.bbcgoodfood.com/us/recipes/lentil-ragu"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/linssibolognese.json",
+  "image_evidence": {
+    "path": "kuvat/paaruoat/linssibolognese.webp",
+    "bytes": 125676,
+    "sha256": "542b133a7437a75e546c7601d7569d46d7c9f8154b5a116382f127912047aa56",
+    "width": 1200,
+    "height": 800,
+    "source": "git-tracked",
+    "origin": "Tekoälyllä luotu havainnekuva",
+    "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "approved": true
+  },
+  "glycemic_evidence": {
+    "decision": "NO_RELIABLE_GK",
+    "guidance": "docs/nutrition/gk-original-recipe-method.md",
+    "references": [
+      "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077"
+    ],
+    "glycemic_load": null
+  },
+  "independent_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177113084",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "source_blobs": [
+      {
+        "path": "reseptit/paaruoat/linssibolognese.md",
+        "sha256": "a0cdf6c99e0355b271f5d821079f4956cf594ad7f4a7cffad65b05b186925ff8"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/linssibolognese.md",
+        "sha256": "ea24c58e841fafce6a5dba892e6bfc1b5c5a0c5d8326381962aace8f752caa65"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/linssibolognese.md",
+        "sha256": "d3e4a9bc989850f30a62dcd000ce7d384e3bd9d2b2255317b50ca5edd7463f30"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/linssibolognese.md",
+        "sha256": "4563344cdd5bd00970985abfd1422a1a760fa0aa73eaec9efaa1f0ff3b657b82"
+      }
+    ],
+    "scope": "Sisältö, turvallisuus, kielivastaavuus ja kuvien näkyvä sisältö työrevision mukaan. Ehdokkaassa on lisäksi erikseen auditoitava julkaisutilan muutos."
+  },
+  "nutrition_review": {
+    "url": "https://github.com/ozirix-dev/Reseptit/issues/969#issuecomment-7177148077",
+    "head": "dc46f9a0cbfed3e75ac5a197906f513d89c59524",
+    "base": "3e0fe3418670cd02e283d6f59b5ef026ee7c8cc7",
+    "decision": "ALL_NULL",
+    "calculation_sha256": "eefab547a9a276ecbcd768f02fdc796d7954f5e3c3f4c95d9890a840697d4f1f"
+  },
+  "proposed_publication": {
+    "review_state": "APPROVED",
+    "recipe_markdown": [
+      {
+        "path": "reseptit/paaruoat/linssibolognese.md",
+        "language": "fi",
+        "slug": "linssibolognese",
+        "sha256": "a0886a303af205459681049d937be53db29fbeb34538b7e68b30c27a6cf7f214",
+        "semantic_sha256": "fd262a1d7e19ce72225315caf2671f2215f17eb497d51713b396b7beba7f2663"
+      },
+      {
+        "path": "kaannokset/en/paaruoat/linssibolognese.md",
+        "language": "en",
+        "slug": "linssibolognese-en",
+        "sha256": "a1afe999f99af9f68dd7f5949e2c59a6123abdb98707a9325be9a67771dd5ff7",
+        "semantic_sha256": "dc44830be921286defad75d6aef40041b889958ebd9f8a61f79771dd1707bf88"
+      },
+      {
+        "path": "kaannokset/sv/paaruoat/linssibolognese.md",
+        "language": "sv",
+        "slug": "linssibolognese-sv",
+        "sha256": "1f3e38e94ca7f725509845a2ba68af776886df6240c7f541888cd8b3de5d32bd",
+        "semantic_sha256": "c9003bc458b39ac05cb71564c3ca7348fe25528af951db5775a30f44ca843a91"
+      },
+      {
+        "path": "kaannokset/th/paaruoat/linssibolognese.md",
+        "language": "th",
+        "slug": "linssibolognese-th",
+        "sha256": "19ea61eae57ae3de1a881fb99089965a1bda1e33580748a299c49102196e3a9a",
+        "semantic_sha256": "84211ea73a806dd371df9223172cf7f3472de81d30f63fa1e8d470fe3fe53703"
+      }
+    ]
+  },
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkka tunniste ja julkinen slug tarkistettu nykyiseen päähaaraan. Työerän resepti erotettu samankaltaisista nimistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Chat 2 tarkasti ainesosat, määrät ja kielivastaavuuden. Näkyvässä reseptiaineistossa ei ole avoimia olennaisia löydöksiä."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusohjeen vaiheet katselmoitiin riippumattomasti toimitetulla täsmäaineistolla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Riippumattoman sisältökatselmoinnin tunnistamat turvallisuus- ja toteutettavuuskohdat korjattu. Tämän revision katselmoinnissa ei jäänyt sisältö-HOLDia."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Annosmäärä 6 ja kokonaisaika 90 minuuttia on kirjattu ja tarkistettu nelikielisessä aineistossa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "500g kuivien punaisten linssien ja 500g kuivan spagetin sopivat lähteet (linssikortissa polyolit null), juuresten/sipulien syötävät massat, 1l liemen ja pyreen koostumus."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Chat 2 hyväksyi lähdesyötteeseen sidotun reseptikohtaisen pidätyksen. Luotettavaa numeerista GK-arvoa ei esitetä."
+    }
+  },
+  "translation_semantic_review": {
+    "reviewer": "Chat 2",
+    "reviewed_at": "2026-11-26",
+    "scope": "FI, EN, SV ja TH yhdessä. Täsmärevision katselmointi ja sisällöltään rajattu julkaisutilan muutos.",
+    "findings": []
+  }
+}
